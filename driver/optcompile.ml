@@ -18,6 +18,21 @@ open Format
 open Typedtree
 open Compenv
 
+(* [begin tokuda] copipe from flag.ml *)
+module Dup_debug_flag = struct
+  let moded_t = false             (* affect compile.ml and optcompile.ml *)
+  let fun_trace = false           (* affect mod.ml *)
+  let var_trace = false           (* affect mod.ml *)
+  let too_big = true              (* affect mod.ml *)
+  let dup_fun_table = false       (* affect mod.ml *)
+  let stage_debug = false         (* affect compile and optcompile *)
+  let unification_result = false  (* affect dmod.ml *)
+  let dmod_stack_flag = true      (* affect dmod.ml *)
+  let dmod_dup_fun_table = true   (* affect dmod.ml *)
+  let inference = false           (* affect dmod.ml *)
+end
+(* [end tokuda] *)
+
 (* Compile a .mli file *)
 
 (* Keep in sync with the copy in compile.ml *)
@@ -74,10 +89,57 @@ let implementation ppf sourcefile outputprefix =
           Printtyped.implementation_with_coercion
       ++ (fun _ -> ())
     else begin
+      let ptree_ref = ref (Obj.magic 0) in (* [tokuda] *)
       ast
       ++ print_if ppf Clflags.dump_parsetree Printast.implementation
       ++ print_if ppf Clflags.dump_source Pprintast.structure
+      (* [begin tokuda] *)
+      ++ (fun ptree ->
+          Format.eprintf "[begin tokuda]\n%a\n[end tokuda]@." Pprintast.structure ptree;
+          ptree_ref := ptree;
+          ptree)
+      (* [end tokuda] *)
       ++ Typemod.type_implementation sourcefile outputprefix modulename env
+
+      (* [begin tokuda] do the duplication *)
+(*
+      ++ (fun (x, y) ->
+          (if Dup_debug_flag.stage_debug then Format.eprintf "DEBUG: before Dup_fundef.structure@."); (x,y))
+      ++ (fun (str, module_coercion) -> Dup_fundef.structure str, module_coercion)
+      ++ (fun (x, y) ->
+          (if Dup_debug_flag.stage_debug
+           then Format.eprintf "DEBUG: after Dup_fundef.structure@."); (x,y))
+*)
+      ++ (fun x ->
+          (if Dup_debug_flag.stage_debug
+           then Format.eprintf "DEBUG: before Untypeast.untype_structure@.");
+          x)
+      ++ (fun (str, module_coercion) -> (* for Dup_debug_flag.stage_debug *)
+          let ptree = Untypeast.untype_structure str in
+          Format.eprintf "[begin tokuda]\n%a\n[end tokuda]@." Pprintast.structure ptree;
+          (* assert (sourcefile <> "opcodes.ml" || ptree = !ptree_ref); *)
+          ptree)
+      ++ (fun x ->
+          (if Dup_debug_flag.stage_debug
+           then Format.eprintf "DEBUG: end Untypeast.untype_structure@.");
+          x)
+      (* 2nd typing *)
+      ++ (fun x ->
+          (if Dup_debug_flag.stage_debug
+           then Format.eprintf "DEBUG: before 2nd typing@.");
+          x)
+      ++ Typemod.type_implementation sourcefile outputprefix modulename env
+      ++ (fun x ->
+          (if Dup_debug_flag.stage_debug
+           then Format.eprintf "DEBUG: after 2nd typing@.");
+          x)
+      (* 2nd untyping *)
+      ++ (fun (str, module_coercion) -> (* for debug *)
+        let ptree = Untypeast.untype_structure str in
+        (if Dup_debug_flag.moded_t
+         then Format.eprintf "%a@." Pprintast.structure ptree);
+        str, module_coercion)
+      (* [end tokuda] *)
       ++ print_if ppf Clflags.dump_typedtree
           Printtyped.implementation_with_coercion
       ++ Translmod.transl_store_implementation modulename
