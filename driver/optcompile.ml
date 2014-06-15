@@ -89,14 +89,17 @@ let implementation ppf sourcefile outputprefix =
           Printtyped.implementation_with_coercion
       ++ (fun _ -> ())
     else begin
-      let ptree_ref = ref (Obj.magic 0) in (* [tokuda] *)
+      (* [begin tokuda] *)
+      let oldptree = ref (Obj.magic 0) in
+      let oldtyped = ref (Obj.magic 0) in
+      (* [end tokuda] *)
       ast
       ++ print_if ppf Clflags.dump_parsetree Printast.implementation
       ++ print_if ppf Clflags.dump_source Pprintast.structure
       (* [begin tokuda] *)
       ++ (fun ptree ->
           Format.eprintf "[begin tokuda]\n%a\n[end tokuda]@." Pprintast.structure ptree;
-          ptree_ref := ptree;
+          oldptree := ptree;
           ptree)
       (* [end tokuda] *)
       ++ Typemod.type_implementation sourcefile outputprefix modulename env
@@ -111,13 +114,14 @@ let implementation ppf sourcefile outputprefix =
            then Format.eprintf "DEBUG: after Dup_fundef.structure@."); (x,y))
 *)
       ++ (fun x ->
+	  oldtyped := x;
           (if Dup_debug_flag.stage_debug
            then Format.eprintf "DEBUG: before Untypeast.untype_structure@.");
           x)
       ++ (fun (str, module_coercion) -> (* for Dup_debug_flag.stage_debug *)
           let ptree = Untypeast.untype_structure str in
           Format.eprintf "[begin tokuda]\n%a\n[end tokuda]@." Pprintast.structure ptree;
-          (* assert (sourcefile <> "opcodes.ml" || ptree = !ptree_ref); *)
+          (* assert (sourcefile <> "opcodes.ml" || ptree = !oldptree); *)
           ptree)
       ++ (fun x ->
           (if Dup_debug_flag.stage_debug
@@ -128,18 +132,25 @@ let implementation ppf sourcefile outputprefix =
           (if Dup_debug_flag.stage_debug
            then Format.eprintf "DEBUG: before 2nd typing@.");
           x)
-      ++ Typemod.type_implementation sourcefile outputprefix modulename env
+      ++ (fun ptree ->
+	  (* [XXX] which of these initialiations are necessary? *)
+          Compmisc.init_path false;
+          Env.set_unit_name modulename;
+          let env = Compmisc.initial_env () in
+          Compilenv.reset ?packname:!Clflags.for_package modulename;
+	  Typemod.type_implementation sourcefile outputprefix modulename env ptree)
       ++ (fun x ->
           (if Dup_debug_flag.stage_debug
            then Format.eprintf "DEBUG: after 2nd typing@.");
           x)
       (* 2nd untyping *)
       ++ (fun (str, module_coercion) -> (* for debug *)
-        let ptree = Untypeast.untype_structure str in
-        (if Dup_debug_flag.moded_t
-         then Format.eprintf "%a@." Pprintast.structure ptree);
-        str, module_coercion)
+          let ptree = Untypeast.untype_structure str in
+          (if Dup_debug_flag.moded_t
+           then Format.eprintf "%a@." Pprintast.structure ptree);
+          str, module_coercion)
       (* [end tokuda] *)
+
       ++ print_if ppf Clflags.dump_typedtree
           Printtyped.implementation_with_coercion
       ++ Translmod.transl_store_implementation modulename
