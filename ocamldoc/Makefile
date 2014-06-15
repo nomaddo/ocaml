@@ -76,7 +76,7 @@ INCLUDES_NODEP=	-I $(OCAMLSRCDIR)/stdlib \
 
 INCLUDES=$(INCLUDES_DEP) $(INCLUDES_NODEP)
 
-COMPFLAGS=$(INCLUDES) -warn-error A -safe-string
+COMPFLAGS=$(INCLUDES) -warn-error A-26 -safe-string # [tokuda] [XXX] fix untypeast.ml so that this "-26" is not required?
 LINKFLAGS=$(INCLUDES) -nostdlib
 
 CMOFILES= odoc_config.cmo \
