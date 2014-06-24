@@ -881,6 +881,12 @@ driver/compmisc.cmx : typing/typemod.cmx utils/misc.cmx \
     parsing/longident.cmx parsing/location.cmx typing/ident.cmx \
     typing/env.cmx utils/config.cmx driver/compenv.cmx utils/clflags.cmx \
     parsing/asttypes.cmi driver/compmisc.cmi
+driver/dupfun.cmo : typing/types.cmi typing/typedtreeMap.cmi \
+    typing/typedtree.cmi parsing/longident.cmi parsing/location.cmi \
+    typing/ident.cmi typing/ctype.cmi parsing/asttypes.cmi
+driver/dupfun.cmx : typing/types.cmx typing/typedtreeMap.cmx \
+    typing/typedtree.cmx parsing/longident.cmx parsing/location.cmx \
+    typing/ident.cmx typing/ctype.cmx parsing/asttypes.cmi
 driver/errors.cmo : parsing/location.cmi driver/errors.cmi
 driver/errors.cmx : parsing/location.cmx driver/errors.cmi
 driver/main.cmo : utils/warnings.cmi utils/misc.cmi driver/main_args.cmi \
@@ -900,18 +906,18 @@ driver/optcompile.cmo : utils/warnings.cmi tools/untypeast.cmi \
     bytecomp/translmod.cmi typing/stypes.cmi bytecomp/simplif.cmi \
     typing/printtyped.cmi typing/printtyp.cmi bytecomp/printlambda.cmi \
     parsing/printast.cmi parsing/pprintast.cmi driver/pparse.cmi \
-    utils/misc.cmi typing/includemod.cmi typing/env.cmi utils/config.cmi \
-    driver/compmisc.cmi asmcomp/compilenv.cmi driver/compenv.cmi \
-    utils/clflags.cmi utils/ccomp.cmi asmcomp/asmgen.cmi \
+    utils/misc.cmi typing/includemod.cmi typing/env.cmi driver/dupfun.cmo \
+    utils/config.cmi driver/compmisc.cmi asmcomp/compilenv.cmi \
+    driver/compenv.cmi utils/clflags.cmi utils/ccomp.cmi asmcomp/asmgen.cmi \
     driver/optcompile.cmi
 driver/optcompile.cmx : utils/warnings.cmx tools/untypeast.cmx \
     typing/typemod.cmx typing/typedtree.cmx typing/typecore.cmx \
     bytecomp/translmod.cmx typing/stypes.cmx bytecomp/simplif.cmx \
     typing/printtyped.cmx typing/printtyp.cmx bytecomp/printlambda.cmx \
     parsing/printast.cmx parsing/pprintast.cmx driver/pparse.cmx \
-    utils/misc.cmx typing/includemod.cmx typing/env.cmx utils/config.cmx \
-    driver/compmisc.cmx asmcomp/compilenv.cmx driver/compenv.cmx \
-    utils/clflags.cmx utils/ccomp.cmx asmcomp/asmgen.cmx \
+    utils/misc.cmx typing/includemod.cmx typing/env.cmx driver/dupfun.cmx \
+    utils/config.cmx driver/compmisc.cmx asmcomp/compilenv.cmx \
+    driver/compenv.cmx utils/clflags.cmx utils/ccomp.cmx asmcomp/asmgen.cmx \
     driver/optcompile.cmi
 driver/opterrors.cmo : parsing/location.cmi driver/opterrors.cmi
 driver/opterrors.cmx : parsing/location.cmx driver/opterrors.cmi
