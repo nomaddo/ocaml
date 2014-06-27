@@ -25,7 +25,7 @@ module Dup_debug_flag = struct
   let var_trace = false           (* affect mod.ml *)
   let too_big = true              (* affect mod.ml *)
   let dup_fun_table = false       (* affect mod.ml *)
-  let stage_debug = false         (* affect compile and optcompile *)
+  let stage_debug = true         (* affect compile and optcompile *)
   let unification_result = false  (* affect dmod.ml *)
   let dmod_stack_flag = true      (* affect dmod.ml *)
   let dmod_dup_fun_table = true   (* affect dmod.ml *)
@@ -105,14 +105,9 @@ let implementation ppf sourcefile outputprefix =
       ++ Typemod.type_implementation sourcefile outputprefix modulename env
 
       (* [begin tokuda] do the duplication *)
-(*
-      ++ (fun (x, y) ->
-          (if Dup_debug_flag.stage_debug then Format.eprintf "DEBUG: before Dup_fundef.structure@."); (x,y))
-      ++ (fun (str, module_coercion) -> Dup_fundef.structure str, module_coercion)
-      ++ (fun (x, y) ->
-          (if Dup_debug_flag.stage_debug
-           then Format.eprintf "DEBUG: after Dup_fundef.structure@."); (x,y))
-*)
+      ++ (fun (typedtree, module_corcion) ->
+        Dupfun.structure typedtree, module_corcion)
+      (* [end tokuda] *)
       ++ (fun x ->
 	  oldtyped := x;
           (if Dup_debug_flag.stage_debug
@@ -120,8 +115,8 @@ let implementation ppf sourcefile outputprefix =
           x)
       ++ (fun (str, module_coercion) -> (* for Dup_debug_flag.stage_debug *)
           let ptree = Untypeast.untype_structure str in
-          Format.eprintf "[begin tokuda]\n%a\n[end tokuda]@." Pprintast.structure ptree;
-          (* assert (sourcefile <> "opcodes.ml" || ptree = !oldptree); *)
+          Format.eprintf "[begin tokuda]\n%a\n[end tokuda]@."
+            Pprintast.structure ptree;
           ptree)
       ++ (fun x ->
           (if Dup_debug_flag.stage_debug

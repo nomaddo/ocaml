@@ -17,7 +17,8 @@ include stdlib/StdlibModules
 
 CAMLC=boot/ocamlrun boot/ocamlc -nostdlib -I boot -g
 CAMLOPT=boot/ocamlrun ./ocamlopt -nostdlib -I stdlib -I otherlibs/dynlink -g
-COMPFLAGS=-strict-sequence -w +33..39+48 -warn-error A -bin-annot \
+# [tokuda] [XXX] add "-26" to not stop compiling
+COMPFLAGS=-strict-sequence -w +33..39+48 -warn-error A-26 -bin-annot \
           -safe-string $(INCLUDES)
 LINKFLAGS=
 
@@ -96,7 +97,7 @@ ASMCOMP=asmcomp/arch.cmo asmcomp/debuginfo.cmo \
   asmcomp/schedgen.cmo asmcomp/scheduling.cmo \
   asmcomp/emitaux.cmo asmcomp/emit.cmo asmcomp/asmgen.cmo \
   asmcomp/asmlink.cmo asmcomp/asmlibrarian.cmo asmcomp/asmpackager.cmo \
-  driver/opterrors.cmo driver/optcompile.cmo
+  driver/opterrors.cmo driver/dupfun.cmo driver/optcompile.cmo
 
 TOPLEVEL=toplevel/genprintval.cmo toplevel/toploop.cmo \
   toplevel/trace.cmo toplevel/topdirs.cmo toplevel/topmain.cmo
