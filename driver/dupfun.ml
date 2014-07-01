@@ -120,17 +120,20 @@ and rename_lidentloc lindentloc suffix =
   {lindentloc with txt = add_suffix lindentloc.txt suffix}
 
 (* XXX: value_binding return value_binding list. Must be flatten. *)
+(* XXX: freetyvars and gtyvars are int list! (Types.type_expr.id) *)
 let rec value_binding freetyvars vb =
   let ty = vb.vb_pat.pat_type in
   let gtyvars =
     Ctype.free_variables ty
-    |> List.filter (fun e -> List.for_all ((<>) e) freetyvars) in
+    |> List.map (fun e -> e.Types.id)
+    |> List.filter (fun i -> List.for_all ((<>) i) freetyvars) in
   let name_stamps =
     Typedtree.let_bound_idents [vb]
     |> List.map (fun ident -> (ident.name, ident.stamp)) in
   let () = begin
     List.iter (fun (s, i) -> Printf.printf "%s %d\n" s i) name_stamps;
-    List.iter (fun ty -> str_of_type ty |> print_endline) gtyvars;
+    print_string "gtyvars: "; print_int_list gtyvars;
+    print_string "freetyvars: "; print_int_list freetyvars;
     Printf.printf "%s\n\n" @| str_of_type ty
   end in
   let size =
@@ -152,7 +155,7 @@ let rec value_binding freetyvars vb =
 
 and map_vb gtyvars freetyvars vb suffix =
   let new_pat = rename_pat suffix vb.vb_pat in
-  let new_expr = expression freetyvars vb.vb_expr in
+  let new_expr = expression (freetyvars @ gtyvars) vb.vb_expr in
   {vb with vb_pat = new_pat; vb_expr = new_expr}
 
 and expression freetyvars exp =
@@ -164,8 +167,7 @@ and expression freetyvars exp =
       let gtyvars =
         List.map (fun vb -> Ctype.free_variables vb.vb_pat.pat_type) vbs
         |> List.flatten
-        |> List.map (fun e -> Printf.printf "%d " e.Types.id; e)
-        |> (fun l -> print_endline ""; l) in
+        |> List.map (fun e -> e.Types.id) in
       let new_exp = expression (freetyvars @ gtyvars) exp in
       Texp_let (rec_flag, new_vbs, new_exp)
     | Texp_function (label, cases, p) ->
