@@ -6,15 +6,24 @@ type literal = I | F | P
 type suffix = literal list
 type suffix_cell = {suffix: suffix; mutable is_used: bool}
 
+
 (* TODO: XXX: rename suffix_cell  *)
 
-(* bool : whether the suffixed function name is used
+(* orig_name : original name
+   ty : type
+   suffixes : suffix_cell list
    gtyvars : Types.type_expr.id list
    stamp : Ident.t.stamp
-   location : Location.t for debug
+   loc : Location.t for debug
 *)
+
+let cnt =
+  let r = ref 0 in
+  (fun () -> incr r; !r)
+
 type dupfun =
   {orig_name: string;
+   ty : Types.type_expr;
    suffixes: suffix_cell list;
    gtyvars: int list;
    stamp: int;
@@ -26,6 +35,14 @@ let (>>) e r = r := e::!r
 let (@|) f x = f x
 
 let max_size = 3
+
+(* entry table *)
+
+let entry_table ~orig_name ~suffixes ~gtyvars ~ty ~stamp ~loc =
+  let suffixes =
+    List.map (fun suffix -> {suffix; is_used=false}) suffixes in
+  {orig_name; suffixes; gtyvars; stamp; loc; ty}
+  >> dupfun_table
 
 (* for print dupfun_table *)
 let rec str_of_literal = function
@@ -45,11 +62,14 @@ and print_suffix_cell {suffix; is_used} =
   print_suffix suffix;
   Printf.printf " is_used: %b\n" is_used
 
-and print_dupfun {orig_name; suffixes; gtyvars; stamp; loc} =
-  Printf.printf "%s : %d : " orig_name stamp;
+and print_dupfun {orig_name; ty; suffixes; gtyvars; stamp; loc} =
+  Format.printf "$$$$$$$$$$$$$$$$$$$$$$$$$@.";
+  Printf.printf "name: %s, stamp: %d\n" orig_name stamp;
   List.iter print_suffix_cell suffixes;
-  print_int_list gtyvars;
-  Location.print Format.std_formatter loc
+  print_string "type: "; print_endline (str_of_type ty);
+  print_string "gtyvars: "; print_int_list gtyvars;
+  Location.print Format.std_formatter loc;
+  Format.printf "$$$$$$$$$$$$$$$$$$$$$$$$$@."
 
 and print_int_list = function
   | [] -> print_endline ""
@@ -57,7 +77,7 @@ and print_int_list = function
 
 (* print type *)
 
-let rec str_of_path = function
+and str_of_path = function
   | Path.Pident id -> id.Ident.name
   | Path.Pdot (t, str, int) -> str ^ "." ^ (str_of_path t)
   | Path.Papply (t1, t2) -> ""
@@ -120,18 +140,19 @@ and rename_lidentloc lindentloc suffix =
   {lindentloc with txt = add_suffix lindentloc.txt suffix}
 
 (* XXX: value_binding return value_binding list. Must be flatten. *)
-(* XXX: freetyvars and gtyvars are int list! (Types.type_expr.id) *)
+(* XXX: freetyvars and gtyvars are int list! (Types.type_expr.id list) *)
 let rec value_binding freetyvars vb =
   let ty = vb.vb_pat.pat_type in
   let gtyvars =
     Ctype.free_variables ty
     |> List.map (fun e -> e.Types.id)
     |> List.filter (fun i -> List.for_all ((<>) i) freetyvars) in
-  let name_stamps =
+  let names, stamps =
     Typedtree.let_bound_idents [vb]
-    |> List.map (fun ident -> (ident.name, ident.stamp)) in
+    |> List.map (fun ident -> (ident.name, ident.stamp))
+    |> List.split in
   let () = begin
-    List.iter (fun (s, i) -> Printf.printf "%s %d\n" s i) name_stamps;
+    List.iter2 (Printf.printf "%s %d\n") names stamps;
     print_string "gtyvars: "; print_int_list gtyvars;
     print_string "freetyvars: "; print_int_list freetyvars;
     Printf.printf "%s\n\n" @| str_of_type ty
@@ -141,7 +162,7 @@ let rec value_binding freetyvars vb =
     then List.length gtyvars
     else begin
       Format.eprintf "DEBGU: too big:@.";
-      List.iter (fun (s, i) -> Printf.eprintf "%s %d@." s i) name_stamps;
+      List.iter2 (Printf.eprintf "%s %d@.") names stamps;
       Format.eprintf "@.";
       0
     end in
@@ -149,7 +170,15 @@ let rec value_binding freetyvars vb =
     let suffixes = make_suffixes size in
     let new_vbs =
       List.map (map_vb gtyvars freetyvars vb) suffixes in
-    (* entry_table vb gtyvars ty; *)
+    let loc = vb.vb_pat.pat_loc in
+    List.iter2 (fun name stamp ->
+        entry_table
+          ~orig_name:name
+          ~suffixes:suffixes
+          ~gtyvars:gtyvars
+          ~stamp:stamp
+          ~loc:loc
+          ~ty:ty) names stamps;
     vb::new_vbs
   end
 
@@ -306,19 +335,38 @@ and rename_pat suffix pat =
   in
   {pat with pat_desc = desc}
 
-let structure_item str_item =
+let rec structure_item str_item =
   let desc =
     match str_item.str_desc with
     | Tstr_value (rec_flag, vbs) ->
-      let new_vbs = List.map (value_binding []) vbs
+        let new_vbs = List.map (value_binding []) vbs
                     |> List.flatten in
-      Tstr_value (rec_flag, new_vbs)
+        Tstr_value (rec_flag, new_vbs)
     | Tstr_eval (exp, attrs) ->
-      let new_exp = expression [] exp in
-      Tstr_eval (new_exp, attrs)
-    | _ as self -> self in
+        let new_exp = expression [] exp in
+        Tstr_eval (new_exp, attrs)
+    | Tstr_module mb ->
+        let mb_expr = module_expr mb.mb_expr in
+        Tstr_module {mb with mb_expr = mb_expr}
+    | _ as self -> self
+  in
   {str_item with str_desc = desc}
 
-let structure str =
+and module_expr mod_expr =
+  match mod_expr.mod_desc with
+  | Tmod_structure str ->
+      let new_str = structure str in
+      {mod_expr with mod_desc = Tmod_structure new_str}
+  | Tmod_constraint (mod_expr2, _, _, _) ->
+      module_expr mod_expr2
+  | _ -> mod_expr
+
+and structure str =
   let items = List.map structure_item str.str_items in
   {str with str_items = items}
+
+let structure str =
+  let str = structure str in
+  List.iter print_dupfun !dupfun_table;
+  List.length !dupfun_table |> Format.printf "%d@.";
+  str
