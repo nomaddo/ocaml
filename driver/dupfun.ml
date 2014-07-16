@@ -17,6 +17,48 @@ type suffix_cell = {suffix: suffix; mutable is_used: bool}
    loc : Location.t for debug
 *)
 
+module G = struct (* for get bound idents with type *)
+  let idents = ref([]: (Ident.t * Types.type_expr) list)
+
+  let rec bound_idents pat =
+    match pat.pat_desc with
+    | Tpat_var (id,s) ->
+        idents := (id, pat.pat_type) :: !idents
+    | Tpat_alias(p, id, s ) ->
+        bound_idents p;
+        idents := (id, pat.pat_type) :: !idents
+    | Tpat_or(p1, _, _) ->
+        (* Invariant : both arguments binds the same variables *)
+        bound_idents p1
+    | d -> Typedtree.iter_pattern_desc bound_idents d
+
+  let pat_bound_idents pat =
+    idents := []; bound_idents pat;
+    let res = !idents in idents := []; res
+
+  let rev_let_bound_idents bindings =
+    idents := [];
+    List.iter (fun vb -> bound_idents vb.vb_pat) bindings;
+    let res = !idents in idents := []; res
+
+  let let_bound_idents pat_expr_list =
+    List.rev(rev_let_bound_idents pat_expr_list)
+
+  let name_stamp_type pat_expr_list =
+    let (ids, types) = let_bound_idents pat_expr_list
+                       |> List.split in
+    let names = List.map (fun id -> id.name) ids
+    and stamps = List.map (fun id -> id.stamp) ids in
+    (names, stamps, types)
+end
+
+let rec iter3 f l1 l2 l3 =
+  match (l1, l2, l3) with
+    ([], [], []) -> ()
+  | (a1::l1, a2::l2, a3::l3) -> f a1 a2 a3; iter3 f l1 l2 l3
+  | (_, _, _) -> invalid_arg "List.iter3"
+
+
 let cnt =
   let r = ref 0 in
   (fun () -> incr r; !r)
@@ -147,22 +189,14 @@ let rec value_binding freetyvars vb =
     Ctype.free_variables ty
     |> List.map (fun e -> e.Types.id)
     |> List.filter (fun i -> List.for_all ((<>) i) freetyvars) in
-  let names, stamps =
-    Typedtree.let_bound_idents [vb]
-    |> List.map (fun ident -> (ident.name, ident.stamp))
-    |> List.split in
-  let () = begin
-    List.iter2 (Printf.printf "%s %d\n") names stamps;
-    print_string "gtyvars: "; print_int_list gtyvars;
-    print_string "freetyvars: "; print_int_list freetyvars;
-    Printf.printf "%s\n\n" @| str_of_type ty
-  end in
+  let names, stamps, types = G.name_stamp_type [vb] in
   let size =
     if List.length gtyvars <= max_size
     then List.length gtyvars
     else begin
-      Format.eprintf "DEBGU: too big:@.";
-      List.iter2 (Printf.eprintf "%s %d@.") names stamps;
+      Format.eprintf "DEBGU: too big: %d@." @| List.length gtyvars;
+      List.iter2 (Format.eprintf "%s %d@.") names stamps;
+      Format.eprintf "type: %s@." @| str_of_type ty;
       Format.eprintf "@.";
       0
     end in
@@ -171,14 +205,14 @@ let rec value_binding freetyvars vb =
     let new_vbs =
       List.map (map_vb gtyvars freetyvars vb) suffixes in
     let loc = vb.vb_pat.pat_loc in
-    List.iter2 (fun name stamp ->
+    iter3 (fun name stamp ty->
         entry_table
           ~orig_name:name
           ~suffixes:suffixes
           ~gtyvars:gtyvars
           ~stamp:stamp
           ~loc:loc
-          ~ty:ty) names stamps;
+          ~ty:ty) names stamps types;
     vb::new_vbs
   end
 
@@ -359,6 +393,10 @@ and module_expr mod_expr =
       {mod_expr with mod_desc = Tmod_structure new_str}
   | Tmod_constraint (mod_expr2, _, _, _) ->
       module_expr mod_expr2
+  | Tmod_functor (ident, strloc, modtyopt, mod_expr2) ->
+      let new_mod_expr = module_expr mod_expr2 in
+      let mod_desc = Tmod_functor (ident, strloc, modtyopt, new_mod_expr) in
+      {mod_expr with mod_desc}
   | _ -> mod_expr
 
 and structure str =
@@ -367,6 +405,5 @@ and structure str =
 
 let structure str =
   let str = structure str in
-  List.iter print_dupfun !dupfun_table;
-  List.length !dupfun_table |> Format.printf "%d@.";
+  if !Clflags.dump_typedtree then List.iter print_dupfun !dupfun_table;
   str
