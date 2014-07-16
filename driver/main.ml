@@ -136,6 +136,7 @@ module Options = Main_args.Make_bytecomp_options (struct
   let _dlambda = set dump_lambda
   let _dinstr = set dump_instr
   let anonymous = anonymous
+  let _mydump = set mydump
 end)
 
 let main () =
