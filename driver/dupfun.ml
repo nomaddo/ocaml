@@ -17,6 +17,21 @@ type suffix_cell = {suffix: suffix; mutable is_used: bool}
    loc : Location.t for debug
 *)
 
+type dupfun =
+  {orig_name: string;
+   ty : Types.type_expr;
+   suffixes: suffix_cell list;
+   gtyvars: int list;
+   stamp: int;
+   loc: Location.t}
+
+let dupfun_table : dupfun list ref = ref []
+
+let (>>) e r = r := e::!r
+let (@|) f x = f x
+
+let max_size = 3
+
 module G = struct (* for get bound idents with type *)
   let idents = ref([]: (Ident.t * Types.type_expr) list)
 
@@ -57,26 +72,6 @@ let rec iter3 f l1 l2 l3 =
     ([], [], []) -> ()
   | (a1::l1, a2::l2, a3::l3) -> f a1 a2 a3; iter3 f l1 l2 l3
   | (_, _, _) -> invalid_arg "List.iter3"
-
-
-let cnt =
-  let r = ref 0 in
-  (fun () -> incr r; !r)
-
-type dupfun =
-  {orig_name: string;
-   ty : Types.type_expr;
-   suffixes: suffix_cell list;
-   gtyvars: int list;
-   stamp: int;
-   loc: Location.t}
-
-let dupfun_table : dupfun list ref = ref []
-
-let (>>) e r = r := e::!r
-let (@|) f x = f x
-
-let max_size = 3
 
 (* entry table *)
 
