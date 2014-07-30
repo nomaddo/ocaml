@@ -654,11 +654,11 @@ and lookup_module ~load lid env : Path.t =
         p
       with Not_found ->
         if s = !current_unit then raise Not_found;
-	if !Clflags.transparent_modules && not load then
-	  try ignore (find_in_path_uncap !load_path (s ^ ".cmi"))
+        if !Clflags.transparent_modules && not load then
+          try ignore (find_in_path_uncap !load_path (s ^ ".cmi"))
           with Not_found ->
-	    Location.prerr_warning Location.none (Warnings.No_cmi_file s)
-	else ignore (find_pers_struct s);
+            Location.prerr_warning Location.none (Warnings.No_cmi_file s)
+        else ignore (find_pers_struct s);
         Pident(Ident.create_persistent s)
       end
   | Ldot(l, s) ->

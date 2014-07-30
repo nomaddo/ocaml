@@ -4,7 +4,11 @@ open Typedtree
 
 type literal = I | F | P
 type suffix = literal list
-type suffix_cell = {suffix: suffix; mutable is_used: bool}
+type suffix_cell = {
+  suffix: suffix;
+  context: (int * literal) list;
+  mutable is_used: bool
+}
 
 
 (* TODO: XXX: rename suffix_cell  *)
@@ -51,19 +55,19 @@ module G = struct (* for get bound idents with type *)
     idents := []; bound_idents pat;
     let res = !idents in idents := []; res
 
-  let rev_let_bound_idents bindings =
+  let rev_let_bound_idents vbs =
     idents := [];
-    List.iter (fun vb -> bound_idents vb.vb_pat) bindings;
+    List.iter (fun vb -> bound_idents vb.vb_pat) vbs;
     let res = !idents in idents := []; res
 
-  let let_bound_idents pat_expr_list =
-    List.rev(rev_let_bound_idents pat_expr_list)
+  let let_bound_idents vbs =
+    List.rev(rev_let_bound_idents vbs)
 
-  let name_stamp_type pat_expr_list =
-    let (ids, types) = let_bound_idents pat_expr_list
+  let name_stamp_type vbs =
+    let (ids, types) = let_bound_idents vbs
                        |> List.split in
-    let names = List.map (fun id -> id.name) ids
-    and stamps = List.map (fun id -> id.stamp) ids in
+    let names = List.map (fun id -> id.Ident.name) ids
+    and stamps = List.map (fun id -> id.Ident.stamp) ids in
     (names, stamps, types)
 end
 
@@ -76,8 +80,11 @@ let rec iter3 f l1 l2 l3 =
 (* entry table *)
 
 let entry_table ~orig_name ~suffixes ~gtyvars ~ty ~stamp ~loc =
+  let contexts =
+    List.map (fun suffix -> List.combine gtyvars suffix) suffixes in
   let suffixes =
-    List.map (fun suffix -> {suffix; is_used=false}) suffixes in
+    List.map2 (fun suffix context ->
+      {suffix; context; is_used=false}) suffixes contexts in
   {orig_name; suffixes; gtyvars; stamp; loc; ty}
   >> dupfun_table
 
@@ -105,7 +112,7 @@ and print_dupfun {orig_name; ty; suffixes; gtyvars; stamp; loc} =
   List.iter print_suffix_cell suffixes;
   print_string "type: "; print_endline (str_of_type ty);
   print_string "gtyvars: "; print_int_list gtyvars;
-  Location.print Format.std_formatter loc;
+  (* Location.print Format.std_formatter loc; *)
   Format.printf "$$$$$$$$$$$$$$$$$$$$$$$$$@."
 
 and print_int_list = function
@@ -208,7 +215,7 @@ let rec value_binding freetyvars vb =
           ~stamp:stamp
           ~loc:loc
           ~ty:ty) names stamps types;
-    vb::new_vbs
+    map_vb gtyvars freetyvars vb [] :: new_vbs
   end
 
 and map_vb gtyvars freetyvars vb suffix =
