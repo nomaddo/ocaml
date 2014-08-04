@@ -89,10 +89,6 @@ let implementation ppf sourcefile outputprefix =
           Printtyped.implementation_with_coercion
       ++ (fun _ -> ())
     else begin
-      (* [begin tokuda] *)
-      let oldptree = ref (Obj.magic 0) in
-      let oldtyped = ref (Obj.magic 0) in
-      (* [end tokuda] *)
       ast
       ++ print_if ppf Clflags.dump_parsetree Printast.implementation
       ++ print_if ppf Clflags.dump_source Pprintast.structure
@@ -101,23 +97,22 @@ let implementation ppf sourcefile outputprefix =
           if !Clflags.mydump then
             Format.eprintf "[begin tokuda]\n%a\n[end tokuda]@."
               Pprintast.structure ptree;
-          oldptree := ptree;
           ptree)
       (* [end tokuda] *)
       ++ Typemod.type_implementation sourcefile outputprefix modulename env
 
       (* [begin tokuda] do the duplication *)
       ++ (fun (typedtree, module_corcion) ->
-        Dupfun.structure typedtree, module_corcion)
+        Dupfun.structure typedtree
+        |> Rename_ident.structure, module_corcion)
       (* [end tokuda] *)
       ++ (fun x ->
-          oldtyped := x;
           (if Dup_debug_flag.stage_debug
            then Format.eprintf "DEBUG: before Untypeast.untype_structure@.");
           x)
       ++ (fun (str, module_coercion) -> (* for Dup_debug_flag.stage_debug *)
           let ptree = Untypeast.untype_structure str in
-          if !Clflags.mydump then
+          if true then
             Format.eprintf "[begin tokuda]\n%a\n[end tokuda]@."
               Pprintast.structure ptree;
           ptree)
@@ -136,7 +131,8 @@ let implementation ppf sourcefile outputprefix =
           Env.set_unit_name modulename;
           let env = Compmisc.initial_env () in
           Compilenv.reset ?packname:!Clflags.for_package modulename;
-          Typemod.type_implementation sourcefile outputprefix modulename env ptree)
+          Typemod.type_implementation sourcefile outputprefix modulename env ptree
+      )
       ++ (fun x ->
           (if Dup_debug_flag.stage_debug
            then Format.eprintf "DEBUG: after 2nd typing@.");
