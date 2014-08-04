@@ -28,6 +28,7 @@ module Unify = struct
       |> List.flatten
     | Tconstr (_, tylist, _),
       Tconstr (_, tylist', _) ->
+      (* [sumii] [XXX] assert that the constructors match *)
       List.map2 unify_typexpr tylist tylist'
       |> List.flatten
     | Tfield (_, _, tyx, tyy),
@@ -119,9 +120,12 @@ let get_context name stamp =
 let rec unalias_type env ty = (* Env.t -> type_expr -> type_expr *)
   match ty.desc with
   | Tconstr (path, types, abbrev_memo_ref) -> begin
+    (*
       try
         Ctype.nondep_type env (Path.head path) ty
       with Not_found -> ty
+    *)
+      Ctype.full_expand env ty
     end
   | Tvar _ -> ty
   | Tarrow (l, ty1, ty2, com) ->
