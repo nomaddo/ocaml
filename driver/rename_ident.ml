@@ -2,6 +2,7 @@ open Typedtree
 open Types
 
 exception Fail_to_unify
+exception Poly_variant
 
 let table = ref (Obj.magic 1)
 
@@ -26,23 +27,22 @@ module Unify = struct
     | Ttuple tylist, Ttuple tylist' ->
       List.map2 unify_typexpr tylist tylist'
       |> List.flatten
-    | Tconstr (_, tylist, _),
-      Tconstr (_, tylist', _) ->
-      (* [sumii] [XXX] assert that the constructors match *)
-      List.map2 unify_typexpr tylist tylist'
-      |> List.flatten
+    | Tconstr (p1, tylist, _),
+      Tconstr (p2, tylist', _) ->
+        assert(Path.head p1 = Path.head p2);
+        List.map2 unify_typexpr tylist tylist'
+        |> List.flatten
     | Tfield (_, _, tyx, tyy),
       Tfield (_, _, tyx', tyy') ->
-      unify_typexpr tyx tyx'
-      @ unify_typexpr tyy tyy'
+      unify_typexpr tyx tyx' @ unify_typexpr tyy tyy'
     | Tvariant r1, Tvariant r2 ->
-      unify_row r1 r2
+      raise Poly_variant
     | _ ->
       Format.eprintf "Error:@.ty1: %a@.ty2: %a@."
         Printtyp.type_expr ty1
         Printtyp.type_expr ty2;
       raise Fail_to_unify
-
+(*
   and unify_row r1 r2 =
     let rec _uni = function
       | [] -> []
@@ -55,7 +55,7 @@ module Unify = struct
     _uni r1.row_fields
     |> List.flatten
 
-  and row_field f1 f2 =
+  and row_field f1 f2 = (* f1のほうがgeneral *)
     match f1, f2 with
     | Rabsent, _ -> assert(false)
     | _, Rabsent -> assert(false)
@@ -64,16 +64,19 @@ module Unify = struct
     | Rpresent (Some tyexpr1), Rpresent (Some tyexpr2) ->
       unify_typexpr tyexpr1 tyexpr2
     | Rpresent (Some tyexpr), Reither (_, lty, _, _) ->
-      Format.eprintf "DEBUG: Reither occuar@."; []
-    (* assert(List.length lty = 1); *)
-    (* let h::_ = tyexprlist in *)
-    (* unify_typexpr tyexpr h *)
+      Format.eprintf "DEBUG: Reither occuar1@.";
+      assert(false)
     | Reither (_, lty1, _, _), Reither (_, lty2, _, _) ->
-      Format.eprintf "DEBUG: Reither occuar@."; []
+      Format.eprintf "DEBUG: Reither occuar2@."; []
     (* assert(List.length lty1 = 1); *)
     (* assert(List.length lty2 = 1); *)
-    | _ -> assert(false)
+    | Reither (_, lty1, _, _), Rpresent (Some tyexpr) ->
 
+    | _ ->
+        ignore f1;
+        ignore f2;
+        assert(false)
+*)
 end
 
 let name_mangle (lidentloc : Longident.t Asttypes.loc) suffix =
@@ -170,99 +173,34 @@ let name_inference context (id, optty) =
     | Tfield _ -> P
     | Tlink ty -> inference ty
     | Tvar _ -> begin
-      try
-        List.assoc ty.id context
-      with Not_found -> begin
-          str_of_type ty |> Format.printf "name_inference: %s@.";
-          Format.printf "context: ";
-          List.iter (fun (i, l) ->
-            Format.printf "%d %s, " i (str_of_literal l)) context;
-          Format.printf "@.%d@." id;
-          (* assert(false) *)
-          I
-        end
-    end
-    | _ -> assert(false) in
+        try
+          List.assoc ty.id context
+        with Not_found -> begin
+            str_of_type ty |> Format.printf "name_inference: %s@.";
+            Format.printf "context: ";
+            List.iter (fun (i, l) ->
+              Format.printf "%d %s, " i (str_of_literal l)) context;
+            Format.printf "@.%d@." id;
+            (* assert(false) *)
+            I
+          end
+      end
+    | _ -> begin
+        Format.eprintf "error. Unexpedted type [%a]@." Printtyp.type_expr ty;
+        assert(false)
+      end in
   match optty with
   | None -> I
   | Some ty -> inference ty
 
 let inference env gtyvars context gty ty = (* gty = more general type *)
   (* int list -> type_expr -> type_expr -> suffix *)
-  let ty1 = unalias_type env gty in
-  let ty2 = unalias_type env ty in
+  let ty1 = Ctype.full_expand env gty in
+  let ty2 = Ctype.full_expand env ty in
   let unif_result = Unify.unify_typexpr ty1 ty2
-    |> sort gtyvars in (* (int * opt type) list *)
+                    |> sort gtyvars in (* (int * opt type) list *)
   let suffix = List.map (name_inference context) unif_result in
   suffix
-
-(* let enter_expression exp = *)
-(*   let open Ident in *)
-(*   match exp.exp_desc with *)
-(*   | Texp_ident (path, lidentloc, vdesc) -> begin *)
-(*       let {name; stamp} = Path.head path in *)
-(*       Format.printf "%s@." name; *)
-(*       match access_table name stamp with *)
-(*       | None -> exp *)
-(*       | Some dupfun -> *)
-(*         let general_type = dupfun.Dupfun.ty in *)
-(*         let gtyvars = dupfun.Dupfun.gtyvars in *)
-(*         let context = if Stack.is_empty stack then [] else Stack.top stack in *)
-(*         let env = exp.exp_env |> Envaux.env_of_only_summary in *)
-(*         let suffix = inference env gtyvars context general_type exp.exp_type in *)
-(*         let lidentloc = name_mangle lidentloc suffix in *)
-(*         {exp with exp_desc = Texp_ident (path, lidentloc, vdesc)} *)
-(*     end *)
-(*   | Texp_let (_, vbs, _) -> *)
-(*     let (names, stamps, types) = *)
-(*       Dupfun.G.name_stamp_type vbs in *)
-(*     List.map2 (fun name stamp -> get_context name stamp) *)
-(*       names stamps *)
-(*     |> List.map (function Some e -> e | None -> []) *)
-(*     |> List.concat *)
-(*     |> (@) (if Stack.is_empty stack then [] else Stack.top stack) *)
-(*     |> (fun e -> Format.printf "now stack@."; e) *)
-(*     |> (fun l -> List.iter (fun (i, l) -> *)
-(*         Format.printf "%d, %s" i (Dupfun.str_of_literal l)) l; l) *)
-(*     |> (fun e -> Format.printf "stack end@."; e) *)
-(*     |> (fun e -> Stack.push e stack); *)
-(*     Format.printf "(in:"; *)
-(*     List.iter (Format.printf "%s ") names; *)
-(*     Format.printf "@."; *)
-(*     exp *)
-(*   | _ -> exp *)
-
-(* let leave_expression exp = *)
-(*   match exp.exp_desc with *)
-(*   | Texp_let _ -> *)
-(*     Format.printf "out)@."; *)
-(*     Stack.pop stack |> ignore; *)
-(*     exp *)
-(*   | _ -> exp *)
-
-(* let enter_structure_item sitem = *)
-(*   match sitem.str_desc with *)
-(*   | Tstr_value (_, vbs) -> *)
-(*     let (names, stamps, types) = *)
-(*       Dupfun.G.name_stamp_type vbs in *)
-(*     List.map2 (fun name stamp -> get_context name stamp) *)
-(*       names stamps *)
-(*     |> List.map (function Some e -> e | None -> []) *)
-(*     |> List.concat *)
-(*     |> (@) (if Stack.is_empty stack then [] else Stack.top stack) *)
-(*     |> (fun e -> Stack.push e stack); *)
-(*     Format.printf "(in:"; *)
-(*     List.iter (Format.printf "%s ") names; *)
-(*     Format.printf "@."; *)
-(*     sitem *)
-(*   | _ -> sitem *)
-
-(* let leave_structure_item sitem = *)
-(*   match sitem.str_desc with *)
-(*   | Tstr_value _ -> *)
-(*     Format.printf "out)@."; *)
-(*     sitem *)
-(*   | _ -> sitem *)
 
 let rec value_binding context vb =
   (* context -> vb -> vb * context *)
@@ -273,64 +211,66 @@ let rec value_binding context vb =
   in
   let names, stamps, _ = Dupfun.G.name_stamp_type [vb] in
   let c = List.map2 make_new_context names stamps
-          |> List.concat in
+    |> List.concat in
   let exp = expression (c @ context) vb.vb_expr in
   let new_vb = {vb with vb_expr = exp} in
   (new_vb, c @ context)
 
 and expression context exp =
-  let desc =
-    match exp.exp_desc with
-    | Texp_ident (path, lidentloc, vdesc) as self-> begin
-        try
-          let {Ident.name; stamp} = Path.head path in
-          match access_table name stamp with
-          | None -> self
-          | Some dupfun ->
-            let general_type = dupfun.Dupfun.ty in
-            let gtyvars = dupfun.Dupfun.gtyvars in
-            let env = exp.exp_env |> Envaux.env_of_only_summary in
-            let suffix = inference env gtyvars context general_type exp.exp_type in
-            let lidentloc = name_mangle lidentloc suffix in
-            Texp_ident (path, lidentloc, vdesc)
-        with Fail_to_unify -> Texp_ident (path, lidentloc, vdesc)
-      end
-    | Texp_let (rec_flag, vbs, exp) ->
-      let new_vbs, new_contexts = List.map (value_binding context) vbs
-                                |> List.split in
-      let new_context = List.flatten new_contexts in
-      let new_exp = expression new_context exp in
-      Texp_let (rec_flag, new_vbs, new_exp)
-    | Texp_function (label, cases, p) ->
+  try
+    let desc =
+      match exp.exp_desc with
+      | Texp_ident (path, lidentloc, vdesc) as self-> begin
+          try
+            let {Ident.name; stamp} = Path.head path in
+            match access_table name stamp with
+            | None -> self
+            | Some dupfun ->
+              let general_type = dupfun.Dupfun.ty in
+              let gtyvars = dupfun.Dupfun.gtyvars in
+              let env = exp.exp_env |> Envaux.env_of_only_summary in
+              let suffix = inference env gtyvars context general_type exp.exp_type in
+              let lidentloc = name_mangle lidentloc suffix in
+              Texp_ident (path, lidentloc, vdesc)
+          with Fail_to_unify | Poly_variant -> Texp_ident (path, lidentloc, vdesc)
+
+        end
+      | Texp_let (rec_flag, vbs, exp) ->
+        let new_vbs, new_contexts = List.map (value_binding context) vbs
+          |> List.split in
+        let new_context = List.flatten new_contexts in
+        let new_exp = expression new_context exp in
+        Texp_let (rec_flag, new_vbs, new_exp)
+      | Texp_function (label, cases, p) ->
         Texp_function (label, List.map (map_case context) cases, p)
-    | Texp_apply (exp, list) ->
+      | Texp_apply (exp, list) ->
         let new_list =
           List.map (fun (l, expopt, optional) ->
-              match expopt with
-              | None -> (l, expopt, optional)
-              | Some exp ->
-                  (l, Some (expression context exp), optional)) list in
+            match expopt with
+            | None -> (l, expopt, optional)
+            | Some exp ->
+              (l, Some (expression context exp), optional)) list in
         Texp_apply (expression context exp, new_list)
-    | Texp_match (exp, cases1, cases2, partial) ->
+      | Texp_match (exp, cases1, cases2, partial) ->
         let new_cases1 = List.map (map_case context) cases1 in
         let new_cases2 = List.map (map_case context) cases2 in
         let new_exp = expression context exp in
         Texp_match (new_exp, new_cases1, new_cases2, partial)
-    | Texp_try (exp, cases) ->
+      | Texp_try (exp, cases) ->
         let new_exp = expression context exp in
         let new_cases = List.map (map_case context) cases in
         Texp_try (new_exp, new_cases)
-    | Texp_tuple exps ->
+      | Texp_tuple exps ->
         Texp_tuple (List.map (expression context) exps)
-    | Texp_construct (lidentloc, cons_desc, exps) ->
+      | Texp_construct (lidentloc, cons_desc, exps) ->
         let new_exps = List.map (expression context) exps in
         Texp_construct (lidentloc, cons_desc, new_exps)
-    | Texp_variant (label, expopt) ->
+      | Texp_variant (label, expopt) ->
         let new_expopt = match expopt with
           | None -> None
           | Some exp -> Some (expression context exp) in
         Texp_variant (label, new_expopt)
-    | Texp_record (list, expopt) ->
+      | Texp_record (list, expopt) ->
         let new_list = List.map (fun (lidentloc, label_desc, exp) ->
             let new_exp = expression context exp in
             (lidentloc, label_desc, new_exp)) list in
@@ -338,52 +278,56 @@ and expression context exp =
           | None -> None
           | Some exp -> Some (expression context exp) in
         Texp_record (new_list, new_expopt)
-    | Texp_field (exp, lidentloc, label_desc) ->
+      | Texp_field (exp, lidentloc, label_desc) ->
         Texp_field (expression context exp, lidentloc, label_desc)
-    | Texp_setfield (exp1, lidentloc, label_desc, exp2) ->
+      | Texp_setfield (exp1, lidentloc, label_desc, exp2) ->
         let new_exp1 = expression context exp1 in
         let new_exp2 = expression context exp2 in
         Texp_setfield (new_exp1, lidentloc, label_desc, new_exp2)
-    | Texp_array exps ->
+      | Texp_array exps ->
         Texp_array (List.map (expression context) exps)
-    | Texp_ifthenelse (exp1, exp2, expopt) ->
+      | Texp_ifthenelse (exp1, exp2, expopt) ->
         let new_exp1 = expression context exp1 in
         let new_exp2 = expression context exp2 in
         let new_expopt = match expopt with
           | None -> None
           | Some exp -> Some (expression context exp) in
         Texp_ifthenelse (new_exp1, new_exp2, new_expopt)
-    | Texp_sequence (exp1, exp2) ->
+      | Texp_sequence (exp1, exp2) ->
         Texp_sequence(
-          expression context exp1,
-          expression context exp2)
-    | Texp_while (exp1, exp2) ->
+            expression context exp1,
+            expression context exp2)
+      | Texp_while (exp1, exp2) ->
         let new_exp1 = expression context exp1 in
         let new_exp2 = expression context exp2 in
         Texp_while (new_exp1, new_exp2)
-    | Texp_for (ident, ppat, exp1, exp2, dflag, exp3) ->
+      | Texp_for (ident, ppat, exp1, exp2, dflag, exp3) ->
         Texp_for (ident, ppat,
-                  expression context exp1,
-                  expression context exp2,
-                  dflag,
-                  expression context exp3)
-    | Texp_send (exp, meth, expopt) ->
+            expression context exp1,
+            expression context exp2,
+            dflag,
+            expression context exp3)
+      | Texp_send (exp, meth, expopt) ->
         let new_expopt = match expopt with
           | None -> None
           | Some exp -> Some (expression context exp) in
-      Texp_send (expression context exp,
-                 meth, new_expopt)
-    | Texp_setinstvar (p1, p2, strloc, exp) ->
-      Texp_setinstvar (p1, p2, strloc, expression context exp)
-    | Texp_assert exp ->
+        Texp_send (expression context exp,
+          meth, new_expopt)
+      | Texp_setinstvar (p1, p2, strloc, exp) ->
+        Texp_setinstvar (p1, p2, strloc, expression context exp)
+      | Texp_assert exp ->
         Texp_assert (expression context exp)
-    | Texp_lazy exp ->
+      | Texp_lazy exp ->
         Texp_lazy (expression context exp)
-    | Texp_constant _  | Texp_new _ | Texp_instvar _
-    | Texp_override _ | Texp_letmodule _
-    | Texp_object _ | Texp_pack _ as self -> self
-  in
-  {exp with exp_desc = desc}
+      | Texp_constant _  | Texp_new _ | Texp_instvar _
+      | Texp_override _ | Texp_letmodule _
+      | Texp_object _ | Texp_pack _ as self -> self
+    in
+    {exp with exp_desc = desc}
+  with exn -> begin
+      Format.eprintf "Error: expression at [%a]" Location.print exp.exp_loc;
+      raise exn
+    end
 
 and map_case context c =
   let c_guard = (function

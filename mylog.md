@@ -1,3 +1,10 @@
+## 2014年  8月 16日 土曜日 17:50:13 JST
+* rename_ident.ml のUnifyを変更、前言っていたAssertionでは落ちなくなった
+* 別のAssertionに失敗する、Unify.unify_typexprのTconstrのときのパターン
+問題は型の展開が完全でないせい。あらたに追加した/test_file/alias.mlでもAssertで
+落ちる。Ctype.full_expandではうまく展開できていない？
+
+
 ## 2014年  7月 31日 木曜日 02:26:54 JST
 
 * rename_ident.mlを作成
