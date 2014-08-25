@@ -47,8 +47,16 @@ val reinit: unit -> unit
 
 val print: Format.formatter -> t -> unit
 
-type 'a tbl
-        (* Association tables from identifiers to type 'a. *)
+(* tokuda modified *)
+type 'a tbl =
+    Empty
+  | Node of 'a tbl * 'a data * 'a tbl * int
+(* Association tables from identifiers to type 'a. *)
+
+and 'a data =
+  { ident: t;
+    data: 'a;
+    previous: 'a data option }
 
 val empty: 'a tbl
 val add: t -> 'a -> 'a tbl -> 'a tbl

@@ -64,13 +64,17 @@ exception Error of error
 let error err = raise (Error err)
 
 module EnvLazy : sig
-  type ('a,'b) t
+  type ('a,'b) eval =
+      Done of 'b
+    | Raise of exn
+    | Thunk of 'a
+
+  type ('a,'b) t = ('a,'b) eval ref
 
   val force : ('a -> 'b) -> ('a,'b) t -> 'b
   val create : 'a -> ('a,'b) t
   val is_val : ('a,'b) t -> bool
-
-end  = struct
+end = struct
 
   type ('a,'b) t = ('a,'b) eval ref
 

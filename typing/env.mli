@@ -13,6 +13,7 @@
 (* Environment handling *)
 
 open Types
+open Btype
 
 type summary =
     Env_empty
@@ -26,15 +27,100 @@ type summary =
   | Env_open of summary * Path.t
   | Env_functor_arg of summary * Ident.t
 
-type t
+module EnvLazy : sig
+  type ('a,'b) eval =
+      Done of 'b
+    | Raise of exn
+    | Thunk of 'a
+
+  type ('a,'b) t = ('a,'b) eval ref
+
+  val force : ('a -> 'b) -> ('a,'b) t -> 'b
+  val create : 'a -> ('a,'b) t
+  val is_val : ('a,'b) t -> bool
+end
+
+module EnvTbl :
+  sig
+    type 'a t = ('a * (unit -> unit)) Ident.tbl
+    val empty : 'a Ident.tbl
+    val nothing : unit -> unit
+    val already_defined : string -> 'a Ident.tbl -> bool
+    val add :
+      'a ->
+      ('a -> string -> bool -> unit) option ->
+      Ident.t ->
+      'b ->
+      ('b * (unit -> unit)) Ident.tbl ->
+      'c Ident.tbl -> ('b * (unit -> unit)) Ident.tbl
+    val add_dont_track :
+      Ident.t ->
+      'a ->
+      ('a * (unit -> unit)) Ident.tbl -> ('a * (unit -> unit)) Ident.tbl
+    val find_same_not_using : Ident.t -> ('a * 'b) Ident.tbl -> 'a
+    val find_same : Ident.t -> ('a * (unit -> unit)) Ident.tbl -> 'a
+    val find_name : string -> ('a * (unit -> unit)) Ident.tbl -> 'a
+    val find_all : string -> 'a Ident.tbl -> 'a list
+    val fold_name :
+      (Ident.t -> 'a -> 'b -> 'b) -> ('a * 'c) Ident.tbl -> 'b -> 'b
+    val keys : 'a Ident.tbl -> Ident.t list
+  end
+
+type type_descriptions =
+    constructor_description list * label_description list
+
+type t  = {
+  values: (Path.t * value_description) EnvTbl.t;
+  constrs: constructor_description EnvTbl.t;
+  labels: label_description EnvTbl.t;
+  types: (Path.t * (type_declaration * type_descriptions)) EnvTbl.t;
+  modules: (Path.t * module_declaration) EnvTbl.t;
+  modtypes: (Path.t * modtype_declaration) EnvTbl.t;
+  components: (Path.t * module_components) EnvTbl.t;
+  classes: (Path.t * class_declaration) EnvTbl.t;
+  cltypes: (Path.t * class_type_declaration) EnvTbl.t;
+  functor_args: unit Ident.tbl;
+  summary: summary;
+  local_constraints: bool;
+  gadt_instances: (int * TypeSet.t ref) list;
+  flags: int;
+}
+
+and module_components =
+  (t * Subst.t * Path.t * Types.module_type, module_components_repr) EnvLazy.t
+
+and module_components_repr =
+    Structure_comps of structure_components
+  | Functor_comps of functor_components
+
+and structure_components = {
+  mutable comp_values: (string, (value_description * int)) Tbl.t;
+  mutable comp_constrs: (string, (constructor_description * int) list) Tbl.t;
+  mutable comp_labels: (string, (label_description * int) list) Tbl.t;
+  mutable comp_types:
+   (string, ((type_declaration * type_descriptions) * int)) Tbl.t;
+  mutable comp_modules:
+   (string, ((Subst.t * Types.module_type,module_type) EnvLazy.t * int)) Tbl.t;
+  mutable comp_modtypes: (string, (modtype_declaration * int)) Tbl.t;
+  mutable comp_components: (string, (module_components * int)) Tbl.t;
+  mutable comp_classes: (string, (class_declaration * int)) Tbl.t;
+  mutable comp_cltypes: (string, (class_type_declaration * int)) Tbl.t
+}
+
+and functor_components = {
+  fcomp_param: Ident.t;                 (* Formal parameter *)
+  fcomp_arg: module_type option;        (* Argument signature *)
+  fcomp_res: module_type;               (* Result signature *)
+  fcomp_env: t;     (* Environment in which the result signature makes sense *)
+  fcomp_subst: Subst.t;  (* Prefixing substitution for the result signature *)
+  fcomp_cache: (Path.t, module_components) Hashtbl.t;  (* For memoization *)
+  fcomp_subst_cache: (Path.t, module_type) Hashtbl.t
+}
 
 val empty: t
 val initial_safe_string: t
 val initial_unsafe_string: t
 val diff: t -> t -> Ident.t list
-
-type type_descriptions =
-    constructor_description list * label_description list
 
 (* For short-paths *)
 val iter_types:

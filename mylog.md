@@ -1,3 +1,9 @@
+## 2014年  8月 18日 月曜日 21:27:16 JST
+* 型の展開、full_expandは恐らく最初の型のデータ構造しか見てないため
+(Head系の展開関数しか呼んでない)展開できてなかった模様
+ぜんぜんfull_expanではない、なんじゃこれ。
+* Env.tの型隠蔽がなくなるようにmliを編集
+
 ## 2014年  8月 16日 土曜日 17:50:13 JST
 * rename_ident.ml のUnifyを変更、前言っていたAssertionでは落ちなくなった
 * 別のAssertionに失敗する、Unify.unify_typexprのTconstrのときのパターン

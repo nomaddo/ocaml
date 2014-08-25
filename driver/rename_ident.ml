@@ -123,11 +123,9 @@ let get_context name stamp =
 let rec unalias_type env ty = (* Env.t -> type_expr -> type_expr *)
   match ty.desc with
   | Tconstr (path, types, abbrev_memo_ref) -> begin
-    (*
-      try
-        Ctype.nondep_type env (Path.head path) ty
-      with Not_found -> ty
-    *)
+      let types = List.map (unalias_type env) types in
+      let desc = Tconstr (path, types, abbrev_memo_ref) in
+      let ty = {ty with desc} in
       Ctype.full_expand env ty
     end
   | Tvar _ -> ty
@@ -195,8 +193,8 @@ let name_inference context (id, optty) =
 
 let inference env gtyvars context gty ty = (* gty = more general type *)
   (* int list -> type_expr -> type_expr -> suffix *)
-  let ty1 = Ctype.full_expand env gty in
-  let ty2 = Ctype.full_expand env ty in
+  let ty1 = unalias_type env gty in
+  let ty2 = unalias_type env ty in
   let unif_result = Unify.unify_typexpr ty1 ty2
                     |> sort gtyvars in (* (int * opt type) list *)
   let suffix = List.map (name_inference context) unif_result in
