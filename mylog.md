@@ -1,3 +1,17 @@
+## 2014年  8月 26日 火曜日 23:43:31 JST
+型の展開は何とかなったので、次の問題をとく
+コード生成部分をリンクするときにmake inconsistent assumptionをおこす
+
+boot/ocamlrun ./ocamlopt -nostdlib -I stdlib -I otherlibs/dynlink -g -strict-sequence -w +33..39+48 -warn-error A-26 -bin-annot -safe-string -I utils -I parsing -I typing -I bytecomp -I asmcomp -I driver -I toplevel -I tools -c asmcomp/mach.ml
+File "asmcomp/mach.ml", line 1:
+Error: The files asmcomp/arch.cmi and asmcomp/mach.cmi
+       make inconsistent assumptions over interface Arch
+
+しらべたことまとめ
+* origin/4.02とdiffをとってみるけどコード生成部分のコードは全く一緒である
+* mach.cmiとarch.cmiをrmしてからコンパイルすると通るがリンク時にcmoが不整合と言われる
+* http://caml.inria.fr/mantis/view.php?id=6344 に同様の問題があるが解決法が書いてない！
+
 ## 2014年  8月 18日 月曜日 21:27:16 JST
 * 型の展開、full_expandは恐らく最初の型のデータ構造しか見てないため
 (Head系の展開関数しか呼んでない)展開できてなかった模様
