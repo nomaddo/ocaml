@@ -1,0 +1,3300 @@
+"bigarray.ml" 18 1005 1013 "bigarray.ml" 18 1005 1017
+type(
+  unit -> unit
+)
+ident(
+  int_ref init "bigarray.ml" 16 958 958 "bigarray.ml" 16 958 1003
+)
+"bigarray.ml" 18 1005 1017 "bigarray.ml" 18 1005 1019
+type(
+  unit
+)
+"bigarray.ml" 18 1005 1013 "bigarray.ml" 18 1005 1019
+type(
+  unit
+)
+"bigarray.ml" 51 2107 2111 "bigarray.ml" 51 2107 2118
+type(
+  (float, float32_elt) kind
+)
+ident(
+  def float32 "bigarray.ml" 52 2129 2129 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 51 2107 2121 "bigarray.ml" 51 2107 2128
+type(
+  (float, float32_elt) kind
+)
+"bigarray.ml" 52 2129 2133 "bigarray.ml" 52 2129 2140
+type(
+  (float, float64_elt) kind
+)
+ident(
+  def float64 "bigarray.ml" 53 2151 2151 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 52 2129 2143 "bigarray.ml" 52 2129 2150
+type(
+  (float, float64_elt) kind
+)
+"bigarray.ml" 53 2151 2155 "bigarray.ml" 53 2151 2166
+type(
+  (int, int8_signed_elt) kind
+)
+ident(
+  def int8_signed "bigarray.ml" 54 2181 2181 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 53 2151 2169 "bigarray.ml" 53 2151 2180
+type(
+  (int, int8_signed_elt) kind
+)
+"bigarray.ml" 54 2181 2185 "bigarray.ml" 54 2181 2198
+type(
+  (int, int8_unsigned_elt) kind
+)
+ident(
+  def int8_unsigned "bigarray.ml" 55 2215 2215 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 54 2181 2201 "bigarray.ml" 54 2181 2214
+type(
+  (int, int8_unsigned_elt) kind
+)
+"bigarray.ml" 55 2215 2219 "bigarray.ml" 55 2215 2231
+type(
+  (int, int16_signed_elt) kind
+)
+ident(
+  def int16_signed "bigarray.ml" 56 2247 2247 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 55 2215 2234 "bigarray.ml" 55 2215 2246
+type(
+  (int, int16_signed_elt) kind
+)
+"bigarray.ml" 56 2247 2251 "bigarray.ml" 56 2247 2265
+type(
+  (int, int16_unsigned_elt) kind
+)
+ident(
+  def int16_unsigned "bigarray.ml" 57 2283 2283 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 56 2247 2268 "bigarray.ml" 56 2247 2282
+type(
+  (int, int16_unsigned_elt) kind
+)
+"bigarray.ml" 57 2283 2287 "bigarray.ml" 57 2283 2292
+type(
+  (int32, int32_elt) kind
+)
+ident(
+  def int32 "bigarray.ml" 58 2301 2301 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 57 2283 2295 "bigarray.ml" 57 2283 2300
+type(
+  (int32, int32_elt) kind
+)
+"bigarray.ml" 58 2301 2305 "bigarray.ml" 58 2301 2310
+type(
+  (int64, int64_elt) kind
+)
+ident(
+  def int64 "bigarray.ml" 59 2319 2319 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 58 2301 2313 "bigarray.ml" 58 2301 2318
+type(
+  (int64, int64_elt) kind
+)
+"bigarray.ml" 59 2319 2323 "bigarray.ml" 59 2319 2326
+type(
+  (int, int_elt) kind
+)
+ident(
+  def int "bigarray.ml" 60 2333 2333 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 59 2319 2329 "bigarray.ml" 59 2319 2332
+type(
+  (int, int_elt) kind
+)
+"bigarray.ml" 60 2333 2337 "bigarray.ml" 60 2333 2346
+type(
+  (nativeint, nativeint_elt) kind
+)
+ident(
+  def nativeint "bigarray.ml" 61 2359 2359 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 60 2333 2349 "bigarray.ml" 60 2333 2358
+type(
+  (nativeint, nativeint_elt) kind
+)
+"bigarray.ml" 61 2359 2363 "bigarray.ml" 61 2359 2372
+type(
+  (Complex.t, complex32_elt) kind
+)
+ident(
+  def complex32 "bigarray.ml" 62 2385 2385 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 61 2359 2375 "bigarray.ml" 61 2359 2384
+type(
+  (Complex.t, complex32_elt) kind
+)
+"bigarray.ml" 62 2385 2389 "bigarray.ml" 62 2385 2398
+type(
+  (Complex.t, complex64_elt) kind
+)
+ident(
+  def complex64 "bigarray.ml" 63 2411 2411 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 62 2385 2401 "bigarray.ml" 62 2385 2410
+type(
+  (Complex.t, complex64_elt) kind
+)
+"bigarray.ml" 63 2411 2415 "bigarray.ml" 63 2411 2419
+type(
+  (char, int8_unsigned_elt) kind
+)
+ident(
+  def char "bigarray.ml" 65 2428 2428 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 63 2411 2422 "bigarray.ml" 63 2411 2426
+type(
+  (char, int8_unsigned_elt) kind
+)
+"bigarray.ml" 75 2678 2682 "bigarray.ml" 75 2678 2690
+type(
+  c_layout layout
+)
+ident(
+  def c_layout "bigarray.ml" 76 2702 2702 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 75 2678 2693 "bigarray.ml" 75 2678 2701
+type(
+  c_layout layout
+)
+"bigarray.ml" 76 2702 2706 "bigarray.ml" 76 2702 2720
+type(
+  fortran_layout layout
+)
+ident(
+  def fortran_layout "bigarray.ml" 78 2739 2739 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 76 2702 2723 "bigarray.ml" 76 2702 2737
+type(
+  fortran_layout layout
+)
+"bigarray.ml" 88 3182 3188 "bigarray.ml" 88 3182 3192
+type(
+  ('a, 'b, 'c) t -> int array
+)
+ident(
+  def dims "bigarray.ml" 93 3310 3312 "bigarray.ml" 115 4398 4401
+)
+"bigarray.ml" 88 3182 3193 "bigarray.ml" 88 3182 3194
+type(
+  ('a, 'b, 'c) t
+)
+ident(
+  def a "bigarray.ml" 89 3197 3201 "bigarray.ml" 92 3304 3309
+)
+"bigarray.ml" 89 3197 3205 "bigarray.ml" 89 3197 3206
+type(
+  int
+)
+ident(
+  def n "bigarray.ml" 90 3223 3227 "bigarray.ml" 92 3304 3309
+)
+"bigarray.ml" 89 3197 3209 "bigarray.ml" 89 3197 3217
+type(
+  ('a, 'b, 'c) t -> int
+)
+ident(
+  int_ref num_dims "bigarray.ml" 86 3053 3055 "bigarray.ml" 86 3053 3116
+)
+"bigarray.ml" 89 3197 3218 "bigarray.ml" 89 3197 3219
+type(
+  ('a, 'b, 'c) t
+)
+ident(
+  int_ref a "bigarray.ml" 88 3182 3193 "bigarray.ml" 88 3182 3194
+)
+"bigarray.ml" 89 3197 3209 "bigarray.ml" 89 3197 3219
+type(
+  int
+)
+"bigarray.ml" 90 3223 3231 "bigarray.ml" 90 3223 3232
+type(
+  int array
+)
+ident(
+  def d "bigarray.ml" 91 3253 3257 "bigarray.ml" 92 3304 3309
+)
+"bigarray.ml" 90 3223 3235 "bigarray.ml" 90 3223 3245
+type(
+  int -> int -> int array
+)
+ident(
+  ext_ref Array.make
+)
+"bigarray.ml" 90 3223 3246 "bigarray.ml" 90 3223 3247
+type(
+  int
+)
+ident(
+  int_ref n "bigarray.ml" 89 3197 3205 "bigarray.ml" 89 3197 3206
+)
+"bigarray.ml" 90 3223 3248 "bigarray.ml" 90 3223 3249
+type(
+  int
+)
+"bigarray.ml" 90 3223 3235 "bigarray.ml" 90 3223 3249
+type(
+  int array
+)
+"bigarray.ml" 91 3253 3265 "bigarray.ml" 91 3253 3266
+type(
+  int
+)
+"bigarray.ml" 91 3253 3270 "bigarray.ml" 91 3253 3271
+type(
+  int
+)
+ident(
+  int_ref n "bigarray.ml" 89 3197 3205 "bigarray.ml" 89 3197 3206
+)
+"bigarray.ml" 91 3253 3271 "bigarray.ml" 91 3253 3272
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"bigarray.ml" 91 3253 3272 "bigarray.ml" 91 3253 3273
+type(
+  int
+)
+"bigarray.ml" 91 3253 3270 "bigarray.ml" 91 3253 3273
+type(
+  int
+)
+"bigarray.ml" 91 3253 3277 "bigarray.ml" 91 3253 3278
+type(
+  int array
+)
+ident(
+  int_ref d "bigarray.ml" 90 3223 3231 "bigarray.ml" 90 3223 3232
+)
+"bigarray.ml" 91 3253 3280 "bigarray.ml" 91 3253 3281
+type(
+  int
+)
+ident(
+  int_ref i "bigarray.ml" 91 3253 3257 "bigarray.ml" 91 3253 3302
+)
+"bigarray.ml" 91 3253 3286 "bigarray.ml" 91 3253 3293
+type(
+  ('a, 'b, 'c) t -> int -> int
+)
+ident(
+  int_ref nth_dim "bigarray.ml" 87 3117 3119 "bigarray.ml" 87 3117 3181
+)
+"bigarray.ml" 91 3253 3294 "bigarray.ml" 91 3253 3295
+type(
+  ('a, 'b, 'c) t
+)
+ident(
+  int_ref a "bigarray.ml" 88 3182 3193 "bigarray.ml" 88 3182 3194
+)
+"bigarray.ml" 91 3253 3296 "bigarray.ml" 91 3253 3297
+type(
+  int
+)
+ident(
+  int_ref i "bigarray.ml" 91 3253 3257 "bigarray.ml" 91 3253 3302
+)
+"bigarray.ml" 91 3253 3286 "bigarray.ml" 91 3253 3297
+type(
+  int
+)
+"bigarray.ml" 91 3253 3277 "bigarray.ml" 91 3253 3297
+type(
+  unit
+)
+"bigarray.ml" 91 3253 3257 "bigarray.ml" 91 3253 3302
+type(
+  unit
+)
+"bigarray.ml" 92 3304 3308 "bigarray.ml" 92 3304 3309
+type(
+  int array
+)
+ident(
+  int_ref d "bigarray.ml" 90 3223 3231 "bigarray.ml" 90 3223 3232
+)
+"bigarray.ml" 91 3253 3257 "bigarray.ml" 92 3304 3309
+type(
+  int array
+)
+"bigarray.ml" 90 3223 3227 "bigarray.ml" 92 3304 3309
+type(
+  int array
+)
+"bigarray.ml" 89 3197 3201 "bigarray.ml" 92 3304 3309
+type(
+  int array
+)
+"bigarray.ml" 113 4294 4300 "bigarray.ml" 113 4294 4308
+type(
+  Unix.file_descr ->
+  ?pos:int64 ->
+  ('d, 'e) kind -> 'f layout -> bool -> int array -> ('d, 'e, 'f) t
+)
+ident(
+  def map_file "bigarray.ml" 114 4350 4397 "bigarray.ml" 115 4398 4401
+)
+"bigarray.ml" 113 4294 4309 "bigarray.ml" 113 4294 4311
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "bigarray.ml" 113 4294 4312 "bigarray.ml" 114 4350 4397
+)
+"bigarray.ml" 113 4294 4314 "bigarray.ml" 113 4294 4317
+type(
+  int64
+)
+"bigarray.ml" 113 4294 4320 "bigarray.ml" 113 4294 4322
+type(
+  int64
+)
+type(
+  int64
+)
+ident(
+  int_ref *sth* "bigarray.ml" 113 4294 4320 "bigarray.ml" 113 4294 4322
+)
+type(
+  int64 option
+)
+type(
+  int64 option
+)
+type(
+  int64
+)
+"bigarray.ml" 113 4294 4324 "bigarray.ml" 113 4294 4328
+type(
+  ('d, 'e) kind
+)
+ident(
+  def kind "bigarray.ml" 113 4294 4329 "bigarray.ml" 114 4350 4397
+)
+"bigarray.ml" 113 4294 4329 "bigarray.ml" 113 4294 4335
+type(
+  'f layout
+)
+ident(
+  def layout "bigarray.ml" 113 4294 4336 "bigarray.ml" 114 4350 4397
+)
+"bigarray.ml" 113 4294 4336 "bigarray.ml" 113 4294 4342
+type(
+  bool
+)
+ident(
+  def shared "bigarray.ml" 113 4294 4343 "bigarray.ml" 114 4350 4397
+)
+"bigarray.ml" 113 4294 4343 "bigarray.ml" 113 4294 4347
+type(
+  int array
+)
+ident(
+  def dims "bigarray.ml" 114 4350 4354 "bigarray.ml" 114 4350 4397
+)
+"bigarray.ml" 114 4350 4354 "bigarray.ml" 114 4350 4366
+type(
+  Unix.file_descr ->
+  ('d, 'e) kind -> 'f layout -> bool -> int array -> int64 -> ('d, 'e, 'f) t
+)
+ident(
+  int_ref map_internal "bigarray.ml" 110 4100 4102 "bigarray.ml" 112 4240 4293
+)
+"bigarray.ml" 114 4350 4367 "bigarray.ml" 114 4350 4369
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "bigarray.ml" 113 4294 4309 "bigarray.ml" 113 4294 4311
+)
+"bigarray.ml" 114 4350 4370 "bigarray.ml" 114 4350 4374
+type(
+  ('d, 'e) kind
+)
+ident(
+  int_ref kind "bigarray.ml" 113 4294 4324 "bigarray.ml" 113 4294 4328
+)
+"bigarray.ml" 114 4350 4375 "bigarray.ml" 114 4350 4381
+type(
+  'f layout
+)
+ident(
+  int_ref layout "bigarray.ml" 113 4294 4329 "bigarray.ml" 113 4294 4335
+)
+"bigarray.ml" 114 4350 4382 "bigarray.ml" 114 4350 4388
+type(
+  bool
+)
+ident(
+  int_ref shared "bigarray.ml" 113 4294 4336 "bigarray.ml" 113 4294 4342
+)
+"bigarray.ml" 114 4350 4389 "bigarray.ml" 114 4350 4393
+type(
+  int array
+)
+ident(
+  int_ref dims "bigarray.ml" 113 4294 4343 "bigarray.ml" 113 4294 4347
+)
+"bigarray.ml" 114 4350 4394 "bigarray.ml" 114 4350 4397
+type(
+  int64
+)
+ident(
+  int_ref pos "bigarray.ml" 113 4294 4314 "bigarray.ml" 113 4294 4317
+)
+"bigarray.ml" 114 4350 4354 "bigarray.ml" 114 4350 4397
+type(
+  ('d, 'e, 'f) t
+)
+"bigarray.ml" 119 4474 4480 "bigarray.ml" 119 4474 4486
+type(
+  ('a, 'b) kind -> 'c layout -> int -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  def create "bigarray.ml" 121 4545 4547 "bigarray.ml" 143 5650 5653
+)
+"bigarray.ml" 119 4474 4487 "bigarray.ml" 119 4474 4491
+type(
+  ('a, 'b) kind
+)
+ident(
+  def kind "bigarray.ml" 119 4474 4492 "bigarray.ml" 120 4505 4544
+)
+"bigarray.ml" 119 4474 4492 "bigarray.ml" 119 4474 4498
+type(
+  'c layout
+)
+ident(
+  def layout "bigarray.ml" 119 4474 4499 "bigarray.ml" 120 4505 4544
+)
+"bigarray.ml" 119 4474 4499 "bigarray.ml" 119 4474 4502
+type(
+  int
+)
+ident(
+  def dim "bigarray.ml" 120 4505 4509 "bigarray.ml" 120 4505 4544
+)
+"bigarray.ml" 120 4505 4509 "bigarray.ml" 120 4505 4524
+type(
+  ('a, 'b) kind -> 'c layout -> int array -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  int_ref Genarray.create "bigarray.ml" 80 2786 2788 "bigarray.ml" 81 2863 2886
+)
+"bigarray.ml" 120 4505 4525 "bigarray.ml" 120 4505 4529
+type(
+  ('a, 'b) kind
+)
+ident(
+  int_ref kind "bigarray.ml" 119 4474 4487 "bigarray.ml" 119 4474 4491
+)
+"bigarray.ml" 120 4505 4530 "bigarray.ml" 120 4505 4536
+type(
+  'c layout
+)
+ident(
+  int_ref layout "bigarray.ml" 119 4474 4492 "bigarray.ml" 119 4474 4498
+)
+"bigarray.ml" 120 4505 4539 "bigarray.ml" 120 4505 4542
+type(
+  int
+)
+ident(
+  int_ref dim "bigarray.ml" 119 4474 4499 "bigarray.ml" 119 4474 4502
+)
+"bigarray.ml" 120 4505 4537 "bigarray.ml" 120 4505 4544
+type(
+  int array
+)
+"bigarray.ml" 120 4505 4509 "bigarray.ml" 120 4505 4544
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+"bigarray.ml" 132 5252 5258 "bigarray.ml" 132 5252 5266
+type(
+  ('d, 'e) kind -> 'f layout -> 'd array -> ('d, 'e, 'f) Genarray.t
+)
+ident(
+  def of_array "bigarray.ml" 141 5545 5547 "bigarray.ml" 143 5650 5653
+)
+"bigarray.ml" 132 5252 5276 "bigarray.ml" 132 5252 5280
+type(
+  ('d, 'e) kind
+)
+ident(
+  def kind "bigarray.ml" 132 5252 5281 "bigarray.ml" 140 5538 5544
+)
+"bigarray.ml" 132 5252 5282 "bigarray.ml" 132 5252 5288
+type(
+  t layout
+)
+ident(
+  def layout "bigarray.ml" 132 5252 5300 "bigarray.ml" 140 5538 5544
+)
+"bigarray.ml" 132 5252 5300 "bigarray.ml" 132 5252 5304
+type(
+  'd array
+)
+ident(
+  def data "bigarray.ml" 133 5307 5311 "bigarray.ml" 140 5538 5544
+)
+"bigarray.ml" 133 5307 5315 "bigarray.ml" 133 5307 5317
+type(
+  ('d, 'e, t) Genarray.t
+)
+ident(
+  def ba "bigarray.ml" 134 5362 5366 "bigarray.ml" 140 5538 5544
+)
+"bigarray.ml" 133 5307 5320 "bigarray.ml" 133 5307 5326
+type(
+  ('d, 'e) kind -> t layout -> int -> ('d, 'e, t) Genarray.t
+)
+ident(
+  int_ref create "bigarray.ml" 119 4474 4480 "bigarray.ml" 119 4474 4486
+)
+"bigarray.ml" 133 5307 5327 "bigarray.ml" 133 5307 5331
+type(
+  ('d, 'e) kind
+)
+ident(
+  int_ref kind "bigarray.ml" 132 5252 5276 "bigarray.ml" 132 5252 5280
+)
+"bigarray.ml" 133 5307 5332 "bigarray.ml" 133 5307 5338
+type(
+  t layout
+)
+ident(
+  int_ref layout "bigarray.ml" 132 5252 5282 "bigarray.ml" 132 5252 5288
+)
+"bigarray.ml" 133 5307 5340 "bigarray.ml" 133 5307 5352
+type(
+  'd array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"bigarray.ml" 133 5307 5353 "bigarray.ml" 133 5307 5357
+type(
+  'd array
+)
+ident(
+  int_ref data "bigarray.ml" 132 5252 5300 "bigarray.ml" 132 5252 5304
+)
+"bigarray.ml" 133 5307 5339 "bigarray.ml" 133 5307 5358
+type(
+  int
+)
+"bigarray.ml" 133 5307 5320 "bigarray.ml" 133 5307 5358
+call(
+  stack
+)
+type(
+  ('d, 'e, t) Genarray.t
+)
+"bigarray.ml" 134 5362 5370 "bigarray.ml" 134 5362 5373
+type(
+  int
+)
+ident(
+  def ofs "bigarray.ml" 139 5457 5461 "bigarray.ml" 140 5538 5544
+)
+"bigarray.ml" 135 5376 5388 "bigarray.ml" 135 5376 5394
+type(
+  t layout
+)
+ident(
+  int_ref layout "bigarray.ml" 132 5252 5282 "bigarray.ml" 132 5252 5288
+)
+"bigarray.ml" 136 5400 5408 "bigarray.ml" 136 5400 5416
+type(
+  t layout
+)
+"bigarray.ml" 136 5400 5420 "bigarray.ml" 136 5400 5421
+type(
+  int
+)
+"bigarray.ml" 137 5422 5430 "bigarray.ml" 137 5422 5444
+type(
+  t layout
+)
+"bigarray.ml" 137 5422 5448 "bigarray.ml" 137 5422 5449
+type(
+  int
+)
+"bigarray.ml" 135 5376 5382 "bigarray.ml" 137 5422 5449
+type(
+  int
+)
+"bigarray.ml" 139 5457 5469 "bigarray.ml" 139 5457 5470
+type(
+  int
+)
+"bigarray.ml" 139 5457 5474 "bigarray.ml" 139 5457 5486
+type(
+  'd array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"bigarray.ml" 139 5457 5487 "bigarray.ml" 139 5457 5491
+type(
+  'd array
+)
+ident(
+  int_ref data "bigarray.ml" 132 5252 5300 "bigarray.ml" 132 5252 5304
+)
+"bigarray.ml" 139 5457 5474 "bigarray.ml" 139 5457 5491
+type(
+  int
+)
+"bigarray.ml" 139 5457 5492 "bigarray.ml" 139 5457 5493
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"bigarray.ml" 139 5457 5494 "bigarray.ml" 139 5457 5495
+type(
+  int
+)
+"bigarray.ml" 139 5457 5474 "bigarray.ml" 139 5457 5495
+type(
+  int
+)
+"bigarray.ml" 139 5457 5499 "bigarray.ml" 139 5457 5509
+type(
+  ('d, 'e, t) t -> int -> 'd -> unit
+)
+ident(
+  int_ref unsafe_set "bigarray.ml" 124 4756 4758 "bigarray.ml" 125 4815 4845
+)
+"bigarray.ml" 139 5457 5510 "bigarray.ml" 139 5457 5512
+type(
+  ('d, 'e, t) t
+)
+ident(
+  int_ref ba "bigarray.ml" 133 5307 5315 "bigarray.ml" 133 5307 5317
+)
+"bigarray.ml" 139 5457 5514 "bigarray.ml" 139 5457 5515
+type(
+  int
+)
+ident(
+  int_ref i "bigarray.ml" 139 5457 5461 "bigarray.ml" 139 5457 5536
+)
+"bigarray.ml" 139 5457 5516 "bigarray.ml" 139 5457 5517
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"bigarray.ml" 139 5457 5518 "bigarray.ml" 139 5457 5521
+type(
+  int
+)
+ident(
+  int_ref ofs "bigarray.ml" 134 5362 5370 "bigarray.ml" 134 5362 5373
+)
+"bigarray.ml" 139 5457 5513 "bigarray.ml" 139 5457 5522
+type(
+  int
+)
+"bigarray.ml" 139 5457 5523 "bigarray.ml" 139 5457 5527
+type(
+  'd array
+)
+ident(
+  int_ref data "bigarray.ml" 132 5252 5300 "bigarray.ml" 132 5252 5304
+)
+"bigarray.ml" 139 5457 5529 "bigarray.ml" 139 5457 5530
+type(
+  int
+)
+ident(
+  int_ref i "bigarray.ml" 139 5457 5461 "bigarray.ml" 139 5457 5536
+)
+"bigarray.ml" 139 5457 5523 "bigarray.ml" 139 5457 5531
+type(
+  'd
+)
+"bigarray.ml" 139 5457 5499 "bigarray.ml" 139 5457 5531
+type(
+  unit
+)
+"bigarray.ml" 139 5457 5461 "bigarray.ml" 139 5457 5536
+type(
+  unit
+)
+"bigarray.ml" 140 5538 5542 "bigarray.ml" 140 5538 5544
+type(
+  ('d, 'e, t) Genarray.t
+)
+ident(
+  int_ref ba "bigarray.ml" 133 5307 5315 "bigarray.ml" 133 5307 5317
+)
+"bigarray.ml" 139 5457 5461 "bigarray.ml" 140 5538 5544
+type(
+  ('d, 'e, t) Genarray.t
+)
+"bigarray.ml" 134 5362 5366 "bigarray.ml" 140 5538 5544
+type(
+  ('d, 'e, t) Genarray.t
+)
+"bigarray.ml" 133 5307 5311 "bigarray.ml" 140 5538 5544
+type(
+  ('d, 'e, t) Genarray.t
+)
+"bigarray.ml" 132 5252 5267 "bigarray.ml" 140 5538 5544
+type(
+  ('d, 'e) kind -> 'f layout -> 'd array -> ('d, 'e, 'f) Genarray.t
+)
+"bigarray.ml" 141 5545 5551 "bigarray.ml" 141 5545 5559
+type(
+  Unix.file_descr ->
+  ?pos:int64 ->
+  ('g, 'h) kind -> 'i layout -> bool -> int -> ('g, 'h, 'i) Genarray.t
+)
+ident(
+  def map_file "bigarray.ml" 142 5593 5649 "bigarray.ml" 143 5650 5653
+)
+"bigarray.ml" 141 5545 5560 "bigarray.ml" 141 5545 5562
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "bigarray.ml" 141 5545 5563 "bigarray.ml" 142 5593 5649
+)
+"bigarray.ml" 141 5545 5564 "bigarray.ml" 141 5545 5567
+type(
+  int64 option
+)
+ident(
+  def pos "bigarray.ml" 141 5545 5568 "bigarray.ml" 142 5593 5649
+)
+"bigarray.ml" 141 5545 5568 "bigarray.ml" 141 5545 5572
+type(
+  ('g, 'h) kind
+)
+ident(
+  def kind "bigarray.ml" 141 5545 5573 "bigarray.ml" 142 5593 5649
+)
+"bigarray.ml" 141 5545 5573 "bigarray.ml" 141 5545 5579
+type(
+  'i layout
+)
+ident(
+  def layout "bigarray.ml" 141 5545 5580 "bigarray.ml" 142 5593 5649
+)
+"bigarray.ml" 141 5545 5580 "bigarray.ml" 141 5545 5586
+type(
+  bool
+)
+ident(
+  def shared "bigarray.ml" 141 5545 5587 "bigarray.ml" 142 5593 5649
+)
+"bigarray.ml" 141 5545 5587 "bigarray.ml" 141 5545 5590
+type(
+  int
+)
+ident(
+  def dim "bigarray.ml" 142 5593 5597 "bigarray.ml" 142 5593 5649
+)
+"bigarray.ml" 142 5593 5597 "bigarray.ml" 142 5593 5614
+type(
+  Unix.file_descr ->
+  ?pos:int64 ->
+  ('g, 'h) kind -> 'i layout -> bool -> int array -> ('g, 'h, 'i) Genarray.t
+)
+ident(
+  int_ref Genarray.map_file "bigarray.ml" 113 4294 4300 "bigarray.ml" 113 4294 4308
+)
+"bigarray.ml" 142 5593 5615 "bigarray.ml" 142 5593 5617
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "bigarray.ml" 141 5545 5560 "bigarray.ml" 141 5545 5562
+)
+"bigarray.ml" 142 5593 5619 "bigarray.ml" 142 5593 5622
+type(
+  int64 option
+)
+ident(
+  int_ref pos "bigarray.ml" 141 5545 5564 "bigarray.ml" 141 5545 5567
+)
+"bigarray.ml" 142 5593 5623 "bigarray.ml" 142 5593 5627
+type(
+  ('g, 'h) kind
+)
+ident(
+  int_ref kind "bigarray.ml" 141 5545 5568 "bigarray.ml" 141 5545 5572
+)
+"bigarray.ml" 142 5593 5628 "bigarray.ml" 142 5593 5634
+type(
+  'i layout
+)
+ident(
+  int_ref layout "bigarray.ml" 141 5545 5573 "bigarray.ml" 141 5545 5579
+)
+"bigarray.ml" 142 5593 5635 "bigarray.ml" 142 5593 5641
+type(
+  bool
+)
+ident(
+  int_ref shared "bigarray.ml" 141 5545 5580 "bigarray.ml" 141 5545 5586
+)
+"bigarray.ml" 142 5593 5644 "bigarray.ml" 142 5593 5647
+type(
+  int
+)
+ident(
+  int_ref dim "bigarray.ml" 141 5545 5587 "bigarray.ml" 141 5545 5590
+)
+"bigarray.ml" 142 5593 5642 "bigarray.ml" 142 5593 5649
+type(
+  int array
+)
+"bigarray.ml" 142 5593 5597 "bigarray.ml" 142 5593 5649
+call(
+  tail
+)
+type(
+  ('g, 'h, 'i) Genarray.t
+)
+"bigarray.ml" 147 5726 5732 "bigarray.ml" 147 5726 5738
+type(
+  ('a, 'b) kind -> 'c layout -> int -> int -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  def create "bigarray.ml" 149 5810 5812 "bigarray.ml" 188 7541 7544
+)
+"bigarray.ml" 147 5726 5739 "bigarray.ml" 147 5726 5743
+type(
+  ('a, 'b) kind
+)
+ident(
+  def kind "bigarray.ml" 147 5726 5744 "bigarray.ml" 148 5763 5809
+)
+"bigarray.ml" 147 5726 5744 "bigarray.ml" 147 5726 5750
+type(
+  'c layout
+)
+ident(
+  def layout "bigarray.ml" 147 5726 5751 "bigarray.ml" 148 5763 5809
+)
+"bigarray.ml" 147 5726 5751 "bigarray.ml" 147 5726 5755
+type(
+  int
+)
+ident(
+  def dim1 "bigarray.ml" 147 5726 5756 "bigarray.ml" 148 5763 5809
+)
+"bigarray.ml" 147 5726 5756 "bigarray.ml" 147 5726 5760
+type(
+  int
+)
+ident(
+  def dim2 "bigarray.ml" 148 5763 5767 "bigarray.ml" 148 5763 5809
+)
+"bigarray.ml" 148 5763 5767 "bigarray.ml" 148 5763 5782
+type(
+  ('a, 'b) kind -> 'c layout -> int array -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  int_ref Genarray.create "bigarray.ml" 80 2786 2788 "bigarray.ml" 81 2863 2886
+)
+"bigarray.ml" 148 5763 5783 "bigarray.ml" 148 5763 5787
+type(
+  ('a, 'b) kind
+)
+ident(
+  int_ref kind "bigarray.ml" 147 5726 5739 "bigarray.ml" 147 5726 5743
+)
+"bigarray.ml" 148 5763 5788 "bigarray.ml" 148 5763 5794
+type(
+  'c layout
+)
+ident(
+  int_ref layout "bigarray.ml" 147 5726 5744 "bigarray.ml" 147 5726 5750
+)
+"bigarray.ml" 148 5763 5797 "bigarray.ml" 148 5763 5801
+type(
+  int
+)
+ident(
+  int_ref dim1 "bigarray.ml" 147 5726 5751 "bigarray.ml" 147 5726 5755
+)
+"bigarray.ml" 148 5763 5803 "bigarray.ml" 148 5763 5807
+type(
+  int
+)
+ident(
+  int_ref dim2 "bigarray.ml" 147 5726 5756 "bigarray.ml" 147 5726 5760
+)
+"bigarray.ml" 148 5763 5795 "bigarray.ml" 148 5763 5809
+type(
+  int array
+)
+"bigarray.ml" 148 5763 5767 "bigarray.ml" 148 5763 5809
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+"bigarray.ml" 164 6611 6617 "bigarray.ml" 164 6611 6627
+type(
+  ('d, 'e, c_layout) Genarray.t -> int -> ('d, 'e, c_layout) Genarray.t
+)
+ident(
+  def slice_left "bigarray.ml" 165 6662 6664 "bigarray.ml" 188 7541 7544
+)
+"bigarray.ml" 164 6611 6628 "bigarray.ml" 164 6611 6629
+type(
+  ('d, 'e, c_layout) Genarray.t
+)
+ident(
+  def a "bigarray.ml" 164 6611 6630 "bigarray.ml" 164 6611 6661
+)
+"bigarray.ml" 164 6611 6630 "bigarray.ml" 164 6611 6631
+type(
+  int
+)
+ident(
+  def n "bigarray.ml" 164 6611 6634 "bigarray.ml" 164 6611 6661
+)
+"bigarray.ml" 164 6611 6634 "bigarray.ml" 164 6611 6653
+type(
+  ('d, 'e, c_layout) Genarray.t -> int array -> ('d, 'e, c_layout) Genarray.t
+)
+ident(
+  int_ref Genarray.slice_left "bigarray.ml" 101 3684 3686 "bigarray.ml" 103 3791 3813
+)
+"bigarray.ml" 164 6611 6654 "bigarray.ml" 164 6611 6655
+type(
+  ('d, 'e, c_layout) Genarray.t
+)
+ident(
+  int_ref a "bigarray.ml" 164 6611 6628 "bigarray.ml" 164 6611 6629
+)
+"bigarray.ml" 164 6611 6658 "bigarray.ml" 164 6611 6659
+type(
+  int
+)
+ident(
+  int_ref n "bigarray.ml" 164 6611 6630 "bigarray.ml" 164 6611 6631
+)
+"bigarray.ml" 164 6611 6656 "bigarray.ml" 164 6611 6661
+type(
+  int array
+)
+"bigarray.ml" 164 6611 6634 "bigarray.ml" 164 6611 6661
+type(
+  ('d, 'e, c_layout) Genarray.t
+)
+"bigarray.ml" 165 6662 6668 "bigarray.ml" 165 6662 6679
+type(
+  ('f, 'g, fortran_layout) Genarray.t ->
+  int -> ('f, 'g, fortran_layout) Genarray.t
+)
+ident(
+  def slice_right "bigarray.ml" 166 6715 6717 "bigarray.ml" 188 7541 7544
+)
+"bigarray.ml" 165 6662 6680 "bigarray.ml" 165 6662 6681
+type(
+  ('f, 'g, fortran_layout) Genarray.t
+)
+ident(
+  def a "bigarray.ml" 165 6662 6682 "bigarray.ml" 165 6662 6714
+)
+"bigarray.ml" 165 6662 6682 "bigarray.ml" 165 6662 6683
+type(
+  int
+)
+ident(
+  def n "bigarray.ml" 165 6662 6686 "bigarray.ml" 165 6662 6714
+)
+"bigarray.ml" 165 6662 6686 "bigarray.ml" 165 6662 6706
+type(
+  ('f, 'g, fortran_layout) Genarray.t ->
+  int array -> ('f, 'g, fortran_layout) Genarray.t
+)
+ident(
+  int_ref Genarray.slice_right "bigarray.ml" 104 3814 3816 "bigarray.ml" 106 3934 3956
+)
+"bigarray.ml" 165 6662 6707 "bigarray.ml" 165 6662 6708
+type(
+  ('f, 'g, fortran_layout) Genarray.t
+)
+ident(
+  int_ref a "bigarray.ml" 165 6662 6680 "bigarray.ml" 165 6662 6681
+)
+"bigarray.ml" 165 6662 6711 "bigarray.ml" 165 6662 6712
+type(
+  int
+)
+ident(
+  int_ref n "bigarray.ml" 165 6662 6682 "bigarray.ml" 165 6662 6683
+)
+"bigarray.ml" 165 6662 6709 "bigarray.ml" 165 6662 6714
+type(
+  int array
+)
+"bigarray.ml" 165 6662 6686 "bigarray.ml" 165 6662 6714
+type(
+  ('f, 'g, fortran_layout) Genarray.t
+)
+"bigarray.ml" 168 6853 6859 "bigarray.ml" 168 6853 6867
+type(
+  ('h, 'i) kind -> 'j layout -> 'h array array -> ('h, 'i, 'j) Genarray.t
+)
+ident(
+  def of_array "bigarray.ml" 186 7424 7426 "bigarray.ml" 188 7541 7544
+)
+"bigarray.ml" 168 6853 6877 "bigarray.ml" 168 6853 6881
+type(
+  ('h, 'i) kind
+)
+ident(
+  def kind "bigarray.ml" 168 6853 6882 "bigarray.ml" 185 7417 7423
+)
+"bigarray.ml" 168 6853 6883 "bigarray.ml" 168 6853 6889
+type(
+  t layout
+)
+ident(
+  def layout "bigarray.ml" 168 6853 6901 "bigarray.ml" 185 7417 7423
+)
+"bigarray.ml" 168 6853 6901 "bigarray.ml" 168 6853 6905
+type(
+  'h array array
+)
+ident(
+  def data "bigarray.ml" 169 6908 6912 "bigarray.ml" 185 7417 7423
+)
+"bigarray.ml" 169 6908 6916 "bigarray.ml" 169 6908 6920
+type(
+  int
+)
+ident(
+  def dim1 "bigarray.ml" 170 6944 6948 "bigarray.ml" 185 7417 7423
+)
+"bigarray.ml" 169 6908 6923 "bigarray.ml" 169 6908 6935
+type(
+  'h array array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"bigarray.ml" 169 6908 6936 "bigarray.ml" 169 6908 6940
+type(
+  'h array array
+)
+ident(
+  int_ref data "bigarray.ml" 168 6853 6901 "bigarray.ml" 168 6853 6905
+)
+"bigarray.ml" 169 6908 6923 "bigarray.ml" 169 6908 6940
+type(
+  int
+)
+"bigarray.ml" 170 6944 6952 "bigarray.ml" 170 6944 6956
+type(
+  int
+)
+ident(
+  def dim2 "bigarray.ml" 171 7008 7012 "bigarray.ml" 185 7417 7423
+)
+"bigarray.ml" 170 6944 6962 "bigarray.ml" 170 6944 6966
+type(
+  int
+)
+ident(
+  int_ref dim1 "bigarray.ml" 169 6908 6916 "bigarray.ml" 169 6908 6920
+)
+"bigarray.ml" 170 6944 6967 "bigarray.ml" 170 6944 6968
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"bigarray.ml" 170 6944 6969 "bigarray.ml" 170 6944 6970
+type(
+  int
+)
+"bigarray.ml" 170 6944 6962 "bigarray.ml" 170 6944 6970
+type(
+  bool
+)
+"bigarray.ml" 170 6944 6976 "bigarray.ml" 170 6944 6977
+type(
+  int
+)
+"bigarray.ml" 170 6944 6983 "bigarray.ml" 170 6944 6995
+type(
+  'h array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"bigarray.ml" 170 6944 6996 "bigarray.ml" 170 6944 7000
+type(
+  'h array array
+)
+ident(
+  int_ref data "bigarray.ml" 168 6853 6901 "bigarray.ml" 168 6853 6905
+)
+"bigarray.ml" 170 6944 7002 "bigarray.ml" 170 6944 7003
+type(
+  int
+)
+"bigarray.ml" 170 6944 6996 "bigarray.ml" 170 6944 7004
+type(
+  'h array
+)
+"bigarray.ml" 170 6944 6983 "bigarray.ml" 170 6944 7004
+type(
+  int
+)
+"bigarray.ml" 170 6944 6959 "bigarray.ml" 170 6944 7004
+type(
+  int
+)
+"bigarray.ml" 171 7008 7016 "bigarray.ml" 171 7008 7018
+type(
+  ('h, 'i, t) Genarray.t
+)
+ident(
+  def ba "bigarray.ml" 172 7053 7057 "bigarray.ml" 185 7417 7423
+)
+"bigarray.ml" 171 7008 7021 "bigarray.ml" 171 7008 7027
+type(
+  ('h, 'i) kind -> t layout -> int -> int -> ('h, 'i, t) Genarray.t
+)
+ident(
+  int_ref create "bigarray.ml" 147 5726 5732 "bigarray.ml" 147 5726 5738
+)
+"bigarray.ml" 171 7008 7028 "bigarray.ml" 171 7008 7032
+type(
+  ('h, 'i) kind
+)
+ident(
+  int_ref kind "bigarray.ml" 168 6853 6877 "bigarray.ml" 168 6853 6881
+)
+"bigarray.ml" 171 7008 7033 "bigarray.ml" 171 7008 7039
+type(
+  t layout
+)
+ident(
+  int_ref layout "bigarray.ml" 168 6853 6883 "bigarray.ml" 168 6853 6889
+)
+"bigarray.ml" 171 7008 7040 "bigarray.ml" 171 7008 7044
+type(
+  int
+)
+ident(
+  int_ref dim1 "bigarray.ml" 169 6908 6916 "bigarray.ml" 169 6908 6920
+)
+"bigarray.ml" 171 7008 7045 "bigarray.ml" 171 7008 7049
+type(
+  int
+)
+ident(
+  int_ref dim2 "bigarray.ml" 170 6944 6952 "bigarray.ml" 170 6944 6956
+)
+"bigarray.ml" 171 7008 7021 "bigarray.ml" 171 7008 7049
+call(
+  stack
+)
+type(
+  ('h, 'i, t) Genarray.t
+)
+"bigarray.ml" 172 7053 7061 "bigarray.ml" 172 7053 7064
+type(
+  int
+)
+ident(
+  def ofs "bigarray.ml" 177 7148 7152 "bigarray.ml" 185 7417 7423
+)
+"bigarray.ml" 173 7067 7079 "bigarray.ml" 173 7067 7085
+type(
+  t layout
+)
+ident(
+  int_ref layout "bigarray.ml" 168 6853 6883 "bigarray.ml" 168 6853 6889
+)
+"bigarray.ml" 174 7091 7099 "bigarray.ml" 174 7091 7107
+type(
+  t layout
+)
+"bigarray.ml" 174 7091 7111 "bigarray.ml" 174 7091 7112
+type(
+  int
+)
+"bigarray.ml" 175 7113 7121 "bigarray.ml" 175 7113 7135
+type(
+  t layout
+)
+"bigarray.ml" 175 7113 7139 "bigarray.ml" 175 7113 7140
+type(
+  int
+)
+"bigarray.ml" 173 7067 7073 "bigarray.ml" 175 7113 7140
+type(
+  int
+)
+"bigarray.ml" 177 7148 7160 "bigarray.ml" 177 7148 7161
+type(
+  int
+)
+"bigarray.ml" 177 7148 7165 "bigarray.ml" 177 7148 7169
+type(
+  int
+)
+ident(
+  int_ref dim1 "bigarray.ml" 169 6908 6916 "bigarray.ml" 169 6908 6920
+)
+"bigarray.ml" 177 7148 7170 "bigarray.ml" 177 7148 7171
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"bigarray.ml" 177 7148 7172 "bigarray.ml" 177 7148 7173
+type(
+  int
+)
+"bigarray.ml" 177 7148 7165 "bigarray.ml" 177 7148 7173
+type(
+  int
+)
+"bigarray.ml" 178 7177 7187 "bigarray.ml" 178 7177 7190
+type(
+  'h array
+)
+ident(
+  def row "bigarray.ml" 179 7205 7211 "bigarray.ml" 183 7396 7406
+)
+"bigarray.ml" 178 7177 7193 "bigarray.ml" 178 7177 7197
+type(
+  'h array array
+)
+ident(
+  int_ref data "bigarray.ml" 168 6853 6901 "bigarray.ml" 168 6853 6905
+)
+"bigarray.ml" 178 7177 7199 "bigarray.ml" 178 7177 7200
+type(
+  int
+)
+ident(
+  int_ref i "bigarray.ml" 177 7148 7152 "bigarray.ml" 184 7407 7415
+)
+"bigarray.ml" 178 7177 7193 "bigarray.ml" 178 7177 7201
+type(
+  'h array
+)
+"bigarray.ml" 179 7205 7214 "bigarray.ml" 179 7205 7226
+type(
+  'h array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"bigarray.ml" 179 7205 7227 "bigarray.ml" 179 7205 7230
+type(
+  'h array
+)
+ident(
+  int_ref row "bigarray.ml" 178 7177 7187 "bigarray.ml" 178 7177 7190
+)
+"bigarray.ml" 179 7205 7214 "bigarray.ml" 179 7205 7230
+type(
+  int
+)
+"bigarray.ml" 179 7205 7231 "bigarray.ml" 179 7205 7233
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"bigarray.ml" 179 7205 7234 "bigarray.ml" 179 7205 7238
+type(
+  int
+)
+ident(
+  int_ref dim2 "bigarray.ml" 170 6944 6952 "bigarray.ml" 170 6944 6956
+)
+"bigarray.ml" 179 7205 7214 "bigarray.ml" 179 7205 7238
+type(
+  bool
+)
+"bigarray.ml" 180 7244 7252 "bigarray.ml" 180 7244 7263
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"bigarray.ml" 180 7244 7263 "bigarray.ml" 180 7244 7313
+type(
+  string
+)
+"bigarray.ml" 180 7244 7252 "bigarray.ml" 180 7244 7313
+call(
+  stack
+)
+type(
+  unit
+)
+"bigarray.ml" 179 7205 7211 "bigarray.ml" 180 7244 7313
+type(
+  unit
+)
+"bigarray.ml" 181 7315 7329 "bigarray.ml" 181 7315 7330
+type(
+  int
+)
+"bigarray.ml" 181 7315 7334 "bigarray.ml" 181 7315 7338
+type(
+  int
+)
+ident(
+  int_ref dim2 "bigarray.ml" 170 6944 6952 "bigarray.ml" 170 6944 6956
+)
+"bigarray.ml" 181 7315 7339 "bigarray.ml" 181 7315 7340
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"bigarray.ml" 181 7315 7341 "bigarray.ml" 181 7315 7342
+type(
+  int
+)
+"bigarray.ml" 181 7315 7334 "bigarray.ml" 181 7315 7342
+type(
+  int
+)
+"bigarray.ml" 182 7346 7354 "bigarray.ml" 182 7346 7364
+type(
+  ('h, 'i, t) t -> int -> int -> 'h -> unit
+)
+ident(
+  int_ref unsafe_set "bigarray.ml" 153 6047 6049 "bigarray.ml" 154 6113 6143
+)
+"bigarray.ml" 182 7346 7365 "bigarray.ml" 182 7346 7367
+type(
+  ('h, 'i, t) t
+)
+ident(
+  int_ref ba "bigarray.ml" 171 7008 7016 "bigarray.ml" 171 7008 7018
+)
+"bigarray.ml" 182 7346 7369 "bigarray.ml" 182 7346 7370
+type(
+  int
+)
+ident(
+  int_ref i "bigarray.ml" 177 7148 7152 "bigarray.ml" 184 7407 7415
+)
+"bigarray.ml" 182 7346 7371 "bigarray.ml" 182 7346 7372
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"bigarray.ml" 182 7346 7373 "bigarray.ml" 182 7346 7376
+type(
+  int
+)
+ident(
+  int_ref ofs "bigarray.ml" 172 7053 7061 "bigarray.ml" 172 7053 7064
+)
+"bigarray.ml" 182 7346 7368 "bigarray.ml" 182 7346 7377
+type(
+  int
+)
+"bigarray.ml" 182 7346 7379 "bigarray.ml" 182 7346 7380
+type(
+  int
+)
+ident(
+  int_ref j "bigarray.ml" 181 7315 7321 "bigarray.ml" 183 7396 7406
+)
+"bigarray.ml" 182 7346 7381 "bigarray.ml" 182 7346 7382
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"bigarray.ml" 182 7346 7383 "bigarray.ml" 182 7346 7386
+type(
+  int
+)
+ident(
+  int_ref ofs "bigarray.ml" 172 7053 7061 "bigarray.ml" 172 7053 7064
+)
+"bigarray.ml" 182 7346 7378 "bigarray.ml" 182 7346 7387
+type(
+  int
+)
+"bigarray.ml" 182 7346 7388 "bigarray.ml" 182 7346 7391
+type(
+  'h array
+)
+ident(
+  int_ref row "bigarray.ml" 178 7177 7187 "bigarray.ml" 178 7177 7190
+)
+"bigarray.ml" 182 7346 7393 "bigarray.ml" 182 7346 7394
+type(
+  int
+)
+ident(
+  int_ref j "bigarray.ml" 181 7315 7321 "bigarray.ml" 183 7396 7406
+)
+"bigarray.ml" 182 7346 7388 "bigarray.ml" 182 7346 7395
+type(
+  'h
+)
+"bigarray.ml" 182 7346 7354 "bigarray.ml" 182 7346 7395
+type(
+  unit
+)
+"bigarray.ml" 181 7315 7321 "bigarray.ml" 183 7396 7406
+type(
+  unit
+)
+"bigarray.ml" 179 7205 7211 "bigarray.ml" 183 7396 7406
+type(
+  unit
+)
+"bigarray.ml" 178 7177 7183 "bigarray.ml" 183 7396 7406
+type(
+  unit
+)
+"bigarray.ml" 177 7148 7152 "bigarray.ml" 184 7407 7415
+type(
+  unit
+)
+"bigarray.ml" 185 7417 7421 "bigarray.ml" 185 7417 7423
+type(
+  ('h, 'i, t) Genarray.t
+)
+ident(
+  int_ref ba "bigarray.ml" 171 7008 7016 "bigarray.ml" 171 7008 7018
+)
+"bigarray.ml" 177 7148 7152 "bigarray.ml" 185 7417 7423
+type(
+  ('h, 'i, t) Genarray.t
+)
+"bigarray.ml" 172 7053 7057 "bigarray.ml" 185 7417 7423
+type(
+  ('h, 'i, t) Genarray.t
+)
+"bigarray.ml" 171 7008 7012 "bigarray.ml" 185 7417 7423
+type(
+  ('h, 'i, t) Genarray.t
+)
+"bigarray.ml" 170 6944 6948 "bigarray.ml" 185 7417 7423
+type(
+  ('h, 'i, t) Genarray.t
+)
+"bigarray.ml" 169 6908 6912 "bigarray.ml" 185 7417 7423
+type(
+  ('h, 'i, t) Genarray.t
+)
+"bigarray.ml" 168 6853 6868 "bigarray.ml" 185 7417 7423
+type(
+  ('h, 'i) kind -> 'j layout -> 'h array array -> ('h, 'i, 'j) Genarray.t
+)
+"bigarray.ml" 186 7424 7430 "bigarray.ml" 186 7424 7438
+type(
+  Unix.file_descr ->
+  ?pos:int64 ->
+  ('k, 'l) kind -> 'm layout -> bool -> int -> int -> ('k, 'l, 'm) Genarray.t
+)
+ident(
+  def map_file "bigarray.ml" 187 7478 7540 "bigarray.ml" 188 7541 7544
+)
+"bigarray.ml" 186 7424 7439 "bigarray.ml" 186 7424 7441
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "bigarray.ml" 186 7424 7442 "bigarray.ml" 187 7478 7540
+)
+"bigarray.ml" 186 7424 7443 "bigarray.ml" 186 7424 7446
+type(
+  int64 option
+)
+ident(
+  def pos "bigarray.ml" 186 7424 7447 "bigarray.ml" 187 7478 7540
+)
+"bigarray.ml" 186 7424 7447 "bigarray.ml" 186 7424 7451
+type(
+  ('k, 'l) kind
+)
+ident(
+  def kind "bigarray.ml" 186 7424 7452 "bigarray.ml" 187 7478 7540
+)
+"bigarray.ml" 186 7424 7452 "bigarray.ml" 186 7424 7458
+type(
+  'm layout
+)
+ident(
+  def layout "bigarray.ml" 186 7424 7459 "bigarray.ml" 187 7478 7540
+)
+"bigarray.ml" 186 7424 7459 "bigarray.ml" 186 7424 7465
+type(
+  bool
+)
+ident(
+  def shared "bigarray.ml" 186 7424 7466 "bigarray.ml" 187 7478 7540
+)
+"bigarray.ml" 186 7424 7466 "bigarray.ml" 186 7424 7470
+type(
+  int
+)
+ident(
+  def dim1 "bigarray.ml" 186 7424 7471 "bigarray.ml" 187 7478 7540
+)
+"bigarray.ml" 186 7424 7471 "bigarray.ml" 186 7424 7475
+type(
+  int
+)
+ident(
+  def dim2 "bigarray.ml" 187 7478 7482 "bigarray.ml" 187 7478 7540
+)
+"bigarray.ml" 187 7478 7482 "bigarray.ml" 187 7478 7499
+type(
+  Unix.file_descr ->
+  ?pos:int64 ->
+  ('k, 'l) kind -> 'm layout -> bool -> int array -> ('k, 'l, 'm) Genarray.t
+)
+ident(
+  int_ref Genarray.map_file "bigarray.ml" 113 4294 4300 "bigarray.ml" 113 4294 4308
+)
+"bigarray.ml" 187 7478 7500 "bigarray.ml" 187 7478 7502
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "bigarray.ml" 186 7424 7439 "bigarray.ml" 186 7424 7441
+)
+"bigarray.ml" 187 7478 7504 "bigarray.ml" 187 7478 7507
+type(
+  int64 option
+)
+ident(
+  int_ref pos "bigarray.ml" 186 7424 7443 "bigarray.ml" 186 7424 7446
+)
+"bigarray.ml" 187 7478 7508 "bigarray.ml" 187 7478 7512
+type(
+  ('k, 'l) kind
+)
+ident(
+  int_ref kind "bigarray.ml" 186 7424 7447 "bigarray.ml" 186 7424 7451
+)
+"bigarray.ml" 187 7478 7513 "bigarray.ml" 187 7478 7519
+type(
+  'm layout
+)
+ident(
+  int_ref layout "bigarray.ml" 186 7424 7452 "bigarray.ml" 186 7424 7458
+)
+"bigarray.ml" 187 7478 7520 "bigarray.ml" 187 7478 7526
+type(
+  bool
+)
+ident(
+  int_ref shared "bigarray.ml" 186 7424 7459 "bigarray.ml" 186 7424 7465
+)
+"bigarray.ml" 187 7478 7529 "bigarray.ml" 187 7478 7533
+type(
+  int
+)
+ident(
+  int_ref dim1 "bigarray.ml" 186 7424 7466 "bigarray.ml" 186 7424 7470
+)
+"bigarray.ml" 187 7478 7534 "bigarray.ml" 187 7478 7538
+type(
+  int
+)
+ident(
+  int_ref dim2 "bigarray.ml" 186 7424 7471 "bigarray.ml" 186 7424 7475
+)
+"bigarray.ml" 187 7478 7527 "bigarray.ml" 187 7478 7540
+type(
+  int array
+)
+"bigarray.ml" 187 7478 7482 "bigarray.ml" 187 7478 7540
+call(
+  tail
+)
+type(
+  ('k, 'l, 'm) Genarray.t
+)
+"bigarray.ml" 192 7617 7623 "bigarray.ml" 192 7617 7629
+type(
+  ('a, 'b) kind -> 'c layout -> int -> int -> int -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  def create "bigarray.ml" 194 7712 7714 "bigarray.ml" 243 9929 9932
+)
+"bigarray.ml" 192 7617 7630 "bigarray.ml" 192 7617 7634
+type(
+  ('a, 'b) kind
+)
+ident(
+  def kind "bigarray.ml" 192 7617 7635 "bigarray.ml" 193 7659 7711
+)
+"bigarray.ml" 192 7617 7635 "bigarray.ml" 192 7617 7641
+type(
+  'c layout
+)
+ident(
+  def layout "bigarray.ml" 192 7617 7642 "bigarray.ml" 193 7659 7711
+)
+"bigarray.ml" 192 7617 7642 "bigarray.ml" 192 7617 7646
+type(
+  int
+)
+ident(
+  def dim1 "bigarray.ml" 192 7617 7647 "bigarray.ml" 193 7659 7711
+)
+"bigarray.ml" 192 7617 7647 "bigarray.ml" 192 7617 7651
+type(
+  int
+)
+ident(
+  def dim2 "bigarray.ml" 192 7617 7652 "bigarray.ml" 193 7659 7711
+)
+"bigarray.ml" 192 7617 7652 "bigarray.ml" 192 7617 7656
+type(
+  int
+)
+ident(
+  def dim3 "bigarray.ml" 193 7659 7663 "bigarray.ml" 193 7659 7711
+)
+"bigarray.ml" 193 7659 7663 "bigarray.ml" 193 7659 7678
+type(
+  ('a, 'b) kind -> 'c layout -> int array -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  int_ref Genarray.create "bigarray.ml" 80 2786 2788 "bigarray.ml" 81 2863 2886
+)
+"bigarray.ml" 193 7659 7679 "bigarray.ml" 193 7659 7683
+type(
+  ('a, 'b) kind
+)
+ident(
+  int_ref kind "bigarray.ml" 192 7617 7630 "bigarray.ml" 192 7617 7634
+)
+"bigarray.ml" 193 7659 7684 "bigarray.ml" 193 7659 7690
+type(
+  'c layout
+)
+ident(
+  int_ref layout "bigarray.ml" 192 7617 7635 "bigarray.ml" 192 7617 7641
+)
+"bigarray.ml" 193 7659 7693 "bigarray.ml" 193 7659 7697
+type(
+  int
+)
+ident(
+  int_ref dim1 "bigarray.ml" 192 7617 7642 "bigarray.ml" 192 7617 7646
+)
+"bigarray.ml" 193 7659 7699 "bigarray.ml" 193 7659 7703
+type(
+  int
+)
+ident(
+  int_ref dim2 "bigarray.ml" 192 7617 7647 "bigarray.ml" 192 7617 7651
+)
+"bigarray.ml" 193 7659 7705 "bigarray.ml" 193 7659 7709
+type(
+  int
+)
+ident(
+  int_ref dim3 "bigarray.ml" 192 7617 7652 "bigarray.ml" 192 7617 7656
+)
+"bigarray.ml" 193 7659 7691 "bigarray.ml" 193 7659 7711
+type(
+  int array
+)
+"bigarray.ml" 193 7659 7663 "bigarray.ml" 193 7659 7711
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+"bigarray.ml" 211 8605 8611 "bigarray.ml" 211 8605 8623
+type(
+  ('d, 'e, c_layout) Genarray.t ->
+  int -> int -> ('d, 'e, c_layout) Genarray.t
+)
+ident(
+  def slice_left_1 "bigarray.ml" 212 8663 8665 "bigarray.ml" 243 9929 9932
+)
+"bigarray.ml" 211 8605 8624 "bigarray.ml" 211 8605 8625
+type(
+  ('d, 'e, c_layout) Genarray.t
+)
+ident(
+  def a "bigarray.ml" 211 8605 8626 "bigarray.ml" 211 8605 8662
+)
+"bigarray.ml" 211 8605 8626 "bigarray.ml" 211 8605 8627
+type(
+  int
+)
+ident(
+  def n "bigarray.ml" 211 8605 8628 "bigarray.ml" 211 8605 8662
+)
+"bigarray.ml" 211 8605 8628 "bigarray.ml" 211 8605 8629
+type(
+  int
+)
+ident(
+  def m "bigarray.ml" 211 8605 8632 "bigarray.ml" 211 8605 8662
+)
+"bigarray.ml" 211 8605 8632 "bigarray.ml" 211 8605 8651
+type(
+  ('d, 'e, c_layout) Genarray.t -> int array -> ('d, 'e, c_layout) Genarray.t
+)
+ident(
+  int_ref Genarray.slice_left "bigarray.ml" 101 3684 3686 "bigarray.ml" 103 3791 3813
+)
+"bigarray.ml" 211 8605 8652 "bigarray.ml" 211 8605 8653
+type(
+  ('d, 'e, c_layout) Genarray.t
+)
+ident(
+  int_ref a "bigarray.ml" 211 8605 8624 "bigarray.ml" 211 8605 8625
+)
+"bigarray.ml" 211 8605 8656 "bigarray.ml" 211 8605 8657
+type(
+  int
+)
+ident(
+  int_ref n "bigarray.ml" 211 8605 8626 "bigarray.ml" 211 8605 8627
+)
+"bigarray.ml" 211 8605 8659 "bigarray.ml" 211 8605 8660
+type(
+  int
+)
+ident(
+  int_ref m "bigarray.ml" 211 8605 8628 "bigarray.ml" 211 8605 8629
+)
+"bigarray.ml" 211 8605 8654 "bigarray.ml" 211 8605 8662
+type(
+  int array
+)
+"bigarray.ml" 211 8605 8632 "bigarray.ml" 211 8605 8662
+type(
+  ('d, 'e, c_layout) Genarray.t
+)
+"bigarray.ml" 212 8663 8669 "bigarray.ml" 212 8663 8682
+type(
+  ('f, 'g, fortran_layout) Genarray.t ->
+  int -> int -> ('f, 'g, fortran_layout) Genarray.t
+)
+ident(
+  def slice_right_1 "bigarray.ml" 213 8723 8725 "bigarray.ml" 243 9929 9932
+)
+"bigarray.ml" 212 8663 8683 "bigarray.ml" 212 8663 8684
+type(
+  ('f, 'g, fortran_layout) Genarray.t
+)
+ident(
+  def a "bigarray.ml" 212 8663 8685 "bigarray.ml" 212 8663 8722
+)
+"bigarray.ml" 212 8663 8685 "bigarray.ml" 212 8663 8686
+type(
+  int
+)
+ident(
+  def n "bigarray.ml" 212 8663 8687 "bigarray.ml" 212 8663 8722
+)
+"bigarray.ml" 212 8663 8687 "bigarray.ml" 212 8663 8688
+type(
+  int
+)
+ident(
+  def m "bigarray.ml" 212 8663 8691 "bigarray.ml" 212 8663 8722
+)
+"bigarray.ml" 212 8663 8691 "bigarray.ml" 212 8663 8711
+type(
+  ('f, 'g, fortran_layout) Genarray.t ->
+  int array -> ('f, 'g, fortran_layout) Genarray.t
+)
+ident(
+  int_ref Genarray.slice_right "bigarray.ml" 104 3814 3816 "bigarray.ml" 106 3934 3956
+)
+"bigarray.ml" 212 8663 8712 "bigarray.ml" 212 8663 8713
+type(
+  ('f, 'g, fortran_layout) Genarray.t
+)
+ident(
+  int_ref a "bigarray.ml" 212 8663 8683 "bigarray.ml" 212 8663 8684
+)
+"bigarray.ml" 212 8663 8716 "bigarray.ml" 212 8663 8717
+type(
+  int
+)
+ident(
+  int_ref n "bigarray.ml" 212 8663 8685 "bigarray.ml" 212 8663 8686
+)
+"bigarray.ml" 212 8663 8719 "bigarray.ml" 212 8663 8720
+type(
+  int
+)
+ident(
+  int_ref m "bigarray.ml" 212 8663 8687 "bigarray.ml" 212 8663 8688
+)
+"bigarray.ml" 212 8663 8714 "bigarray.ml" 212 8663 8722
+type(
+  int array
+)
+"bigarray.ml" 212 8663 8691 "bigarray.ml" 212 8663 8722
+type(
+  ('f, 'g, fortran_layout) Genarray.t
+)
+"bigarray.ml" 213 8723 8729 "bigarray.ml" 213 8723 8741
+type(
+  ('h, 'i, c_layout) Genarray.t -> int -> ('h, 'i, c_layout) Genarray.t
+)
+ident(
+  def slice_left_2 "bigarray.ml" 214 8776 8778 "bigarray.ml" 243 9929 9932
+)
+"bigarray.ml" 213 8723 8742 "bigarray.ml" 213 8723 8743
+type(
+  ('h, 'i, c_layout) Genarray.t
+)
+ident(
+  def a "bigarray.ml" 213 8723 8744 "bigarray.ml" 213 8723 8775
+)
+"bigarray.ml" 213 8723 8744 "bigarray.ml" 213 8723 8745
+type(
+  int
+)
+ident(
+  def n "bigarray.ml" 213 8723 8748 "bigarray.ml" 213 8723 8775
+)
+"bigarray.ml" 213 8723 8748 "bigarray.ml" 213 8723 8767
+type(
+  ('h, 'i, c_layout) Genarray.t -> int array -> ('h, 'i, c_layout) Genarray.t
+)
+ident(
+  int_ref Genarray.slice_left "bigarray.ml" 101 3684 3686 "bigarray.ml" 103 3791 3813
+)
+"bigarray.ml" 213 8723 8768 "bigarray.ml" 213 8723 8769
+type(
+  ('h, 'i, c_layout) Genarray.t
+)
+ident(
+  int_ref a "bigarray.ml" 213 8723 8742 "bigarray.ml" 213 8723 8743
+)
+"bigarray.ml" 213 8723 8772 "bigarray.ml" 213 8723 8773
+type(
+  int
+)
+ident(
+  int_ref n "bigarray.ml" 213 8723 8744 "bigarray.ml" 213 8723 8745
+)
+"bigarray.ml" 213 8723 8770 "bigarray.ml" 213 8723 8775
+type(
+  int array
+)
+"bigarray.ml" 213 8723 8748 "bigarray.ml" 213 8723 8775
+type(
+  ('h, 'i, c_layout) Genarray.t
+)
+"bigarray.ml" 214 8776 8782 "bigarray.ml" 214 8776 8795
+type(
+  ('j, 'k, fortran_layout) Genarray.t ->
+  int -> ('j, 'k, fortran_layout) Genarray.t
+)
+ident(
+  def slice_right_2 "bigarray.ml" 215 8831 8833 "bigarray.ml" 243 9929 9932
+)
+"bigarray.ml" 214 8776 8796 "bigarray.ml" 214 8776 8797
+type(
+  ('j, 'k, fortran_layout) Genarray.t
+)
+ident(
+  def a "bigarray.ml" 214 8776 8798 "bigarray.ml" 214 8776 8830
+)
+"bigarray.ml" 214 8776 8798 "bigarray.ml" 214 8776 8799
+type(
+  int
+)
+ident(
+  def n "bigarray.ml" 214 8776 8802 "bigarray.ml" 214 8776 8830
+)
+"bigarray.ml" 214 8776 8802 "bigarray.ml" 214 8776 8822
+type(
+  ('j, 'k, fortran_layout) Genarray.t ->
+  int array -> ('j, 'k, fortran_layout) Genarray.t
+)
+ident(
+  int_ref Genarray.slice_right "bigarray.ml" 104 3814 3816 "bigarray.ml" 106 3934 3956
+)
+"bigarray.ml" 214 8776 8823 "bigarray.ml" 214 8776 8824
+type(
+  ('j, 'k, fortran_layout) Genarray.t
+)
+ident(
+  int_ref a "bigarray.ml" 214 8776 8796 "bigarray.ml" 214 8776 8797
+)
+"bigarray.ml" 214 8776 8827 "bigarray.ml" 214 8776 8828
+type(
+  int
+)
+ident(
+  int_ref n "bigarray.ml" 214 8776 8798 "bigarray.ml" 214 8776 8799
+)
+"bigarray.ml" 214 8776 8825 "bigarray.ml" 214 8776 8830
+type(
+  int array
+)
+"bigarray.ml" 214 8776 8802 "bigarray.ml" 214 8776 8830
+type(
+  ('j, 'k, fortran_layout) Genarray.t
+)
+"bigarray.ml" 217 8969 8975 "bigarray.ml" 217 8969 8983
+type(
+  ('l, 'm) kind ->
+  'n layout -> 'l array array array -> ('l, 'm, 'n) Genarray.t
+)
+ident(
+  def of_array "bigarray.ml" 241 9802 9804 "bigarray.ml" 243 9929 9932
+)
+"bigarray.ml" 217 8969 8993 "bigarray.ml" 217 8969 8997
+type(
+  ('l, 'm) kind
+)
+ident(
+  def kind "bigarray.ml" 217 8969 8998 "bigarray.ml" 240 9795 9801
+)
+"bigarray.ml" 217 8969 8999 "bigarray.ml" 217 8969 9005
+type(
+  t layout
+)
+ident(
+  def layout "bigarray.ml" 217 8969 9017 "bigarray.ml" 240 9795 9801
+)
+"bigarray.ml" 217 8969 9017 "bigarray.ml" 217 8969 9021
+type(
+  'l array array array
+)
+ident(
+  def data "bigarray.ml" 218 9024 9028 "bigarray.ml" 240 9795 9801
+)
+"bigarray.ml" 218 9024 9032 "bigarray.ml" 218 9024 9036
+type(
+  int
+)
+ident(
+  def dim1 "bigarray.ml" 219 9060 9064 "bigarray.ml" 240 9795 9801
+)
+"bigarray.ml" 218 9024 9039 "bigarray.ml" 218 9024 9051
+type(
+  'l array array array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"bigarray.ml" 218 9024 9052 "bigarray.ml" 218 9024 9056
+type(
+  'l array array array
+)
+ident(
+  int_ref data "bigarray.ml" 217 8969 9017 "bigarray.ml" 217 8969 9021
+)
+"bigarray.ml" 218 9024 9039 "bigarray.ml" 218 9024 9056
+type(
+  int
+)
+"bigarray.ml" 219 9060 9068 "bigarray.ml" 219 9060 9072
+type(
+  int
+)
+ident(
+  def dim2 "bigarray.ml" 220 9124 9128 "bigarray.ml" 240 9795 9801
+)
+"bigarray.ml" 219 9060 9078 "bigarray.ml" 219 9060 9082
+type(
+  int
+)
+ident(
+  int_ref dim1 "bigarray.ml" 218 9024 9032 "bigarray.ml" 218 9024 9036
+)
+"bigarray.ml" 219 9060 9083 "bigarray.ml" 219 9060 9084
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"bigarray.ml" 219 9060 9085 "bigarray.ml" 219 9060 9086
+type(
+  int
+)
+"bigarray.ml" 219 9060 9078 "bigarray.ml" 219 9060 9086
+type(
+  bool
+)
+"bigarray.ml" 219 9060 9092 "bigarray.ml" 219 9060 9093
+type(
+  int
+)
+"bigarray.ml" 219 9060 9099 "bigarray.ml" 219 9060 9111
+type(
+  'l array array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"bigarray.ml" 219 9060 9112 "bigarray.ml" 219 9060 9116
+type(
+  'l array array array
+)
+ident(
+  int_ref data "bigarray.ml" 217 8969 9017 "bigarray.ml" 217 8969 9021
+)
+"bigarray.ml" 219 9060 9118 "bigarray.ml" 219 9060 9119
+type(
+  int
+)
+"bigarray.ml" 219 9060 9112 "bigarray.ml" 219 9060 9120
+type(
+  'l array array
+)
+"bigarray.ml" 219 9060 9099 "bigarray.ml" 219 9060 9120
+type(
+  int
+)
+"bigarray.ml" 219 9060 9075 "bigarray.ml" 219 9060 9120
+type(
+  int
+)
+"bigarray.ml" 220 9124 9132 "bigarray.ml" 220 9124 9136
+type(
+  int
+)
+ident(
+  def dim3 "bigarray.ml" 221 9192 9196 "bigarray.ml" 240 9795 9801
+)
+"bigarray.ml" 220 9124 9142 "bigarray.ml" 220 9124 9146
+type(
+  int
+)
+ident(
+  int_ref dim2 "bigarray.ml" 219 9060 9068 "bigarray.ml" 219 9060 9072
+)
+"bigarray.ml" 220 9124 9147 "bigarray.ml" 220 9124 9148
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"bigarray.ml" 220 9124 9149 "bigarray.ml" 220 9124 9150
+type(
+  int
+)
+"bigarray.ml" 220 9124 9142 "bigarray.ml" 220 9124 9150
+type(
+  bool
+)
+"bigarray.ml" 220 9124 9156 "bigarray.ml" 220 9124 9157
+type(
+  int
+)
+"bigarray.ml" 220 9124 9163 "bigarray.ml" 220 9124 9175
+type(
+  'l array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"bigarray.ml" 220 9124 9176 "bigarray.ml" 220 9124 9180
+type(
+  'l array array array
+)
+ident(
+  int_ref data "bigarray.ml" 217 8969 9017 "bigarray.ml" 217 8969 9021
+)
+"bigarray.ml" 220 9124 9182 "bigarray.ml" 220 9124 9183
+type(
+  int
+)
+"bigarray.ml" 220 9124 9176 "bigarray.ml" 220 9124 9184
+type(
+  'l array array
+)
+"bigarray.ml" 220 9124 9186 "bigarray.ml" 220 9124 9187
+type(
+  int
+)
+"bigarray.ml" 220 9124 9176 "bigarray.ml" 220 9124 9188
+type(
+  'l array
+)
+"bigarray.ml" 220 9124 9163 "bigarray.ml" 220 9124 9188
+type(
+  int
+)
+"bigarray.ml" 220 9124 9139 "bigarray.ml" 220 9124 9188
+type(
+  int
+)
+"bigarray.ml" 221 9192 9200 "bigarray.ml" 221 9192 9202
+type(
+  ('l, 'm, t) Genarray.t
+)
+ident(
+  def ba "bigarray.ml" 222 9242 9246 "bigarray.ml" 240 9795 9801
+)
+"bigarray.ml" 221 9192 9205 "bigarray.ml" 221 9192 9211
+type(
+  ('l, 'm) kind -> t layout -> int -> int -> int -> ('l, 'm, t) Genarray.t
+)
+ident(
+  int_ref create "bigarray.ml" 192 7617 7623 "bigarray.ml" 192 7617 7629
+)
+"bigarray.ml" 221 9192 9212 "bigarray.ml" 221 9192 9216
+type(
+  ('l, 'm) kind
+)
+ident(
+  int_ref kind "bigarray.ml" 217 8969 8993 "bigarray.ml" 217 8969 8997
+)
+"bigarray.ml" 221 9192 9217 "bigarray.ml" 221 9192 9223
+type(
+  t layout
+)
+ident(
+  int_ref layout "bigarray.ml" 217 8969 8999 "bigarray.ml" 217 8969 9005
+)
+"bigarray.ml" 221 9192 9224 "bigarray.ml" 221 9192 9228
+type(
+  int
+)
+ident(
+  int_ref dim1 "bigarray.ml" 218 9024 9032 "bigarray.ml" 218 9024 9036
+)
+"bigarray.ml" 221 9192 9229 "bigarray.ml" 221 9192 9233
+type(
+  int
+)
+ident(
+  int_ref dim2 "bigarray.ml" 219 9060 9068 "bigarray.ml" 219 9060 9072
+)
+"bigarray.ml" 221 9192 9234 "bigarray.ml" 221 9192 9238
+type(
+  int
+)
+ident(
+  int_ref dim3 "bigarray.ml" 220 9124 9132 "bigarray.ml" 220 9124 9136
+)
+"bigarray.ml" 221 9192 9205 "bigarray.ml" 221 9192 9238
+call(
+  stack
+)
+type(
+  ('l, 'm, t) Genarray.t
+)
+"bigarray.ml" 222 9242 9250 "bigarray.ml" 222 9242 9253
+type(
+  int
+)
+ident(
+  def ofs "bigarray.ml" 227 9337 9341 "bigarray.ml" 240 9795 9801
+)
+"bigarray.ml" 223 9256 9268 "bigarray.ml" 223 9256 9274
+type(
+  t layout
+)
+ident(
+  int_ref layout "bigarray.ml" 217 8969 8999 "bigarray.ml" 217 8969 9005
+)
+"bigarray.ml" 224 9280 9288 "bigarray.ml" 224 9280 9296
+type(
+  t layout
+)
+"bigarray.ml" 224 9280 9300 "bigarray.ml" 224 9280 9301
+type(
+  int
+)
+"bigarray.ml" 225 9302 9310 "bigarray.ml" 225 9302 9324
+type(
+  t layout
+)
+"bigarray.ml" 225 9302 9328 "bigarray.ml" 225 9302 9329
+type(
+  int
+)
+"bigarray.ml" 223 9256 9262 "bigarray.ml" 225 9302 9329
+type(
+  int
+)
+"bigarray.ml" 227 9337 9349 "bigarray.ml" 227 9337 9350
+type(
+  int
+)
+"bigarray.ml" 227 9337 9354 "bigarray.ml" 227 9337 9358
+type(
+  int
+)
+ident(
+  int_ref dim1 "bigarray.ml" 218 9024 9032 "bigarray.ml" 218 9024 9036
+)
+"bigarray.ml" 227 9337 9359 "bigarray.ml" 227 9337 9360
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"bigarray.ml" 227 9337 9361 "bigarray.ml" 227 9337 9362
+type(
+  int
+)
+"bigarray.ml" 227 9337 9354 "bigarray.ml" 227 9337 9362
+type(
+  int
+)
+"bigarray.ml" 228 9366 9376 "bigarray.ml" 228 9366 9379
+type(
+  'l array array
+)
+ident(
+  def row "bigarray.ml" 229 9394 9400 "bigarray.ml" 238 9774 9784
+)
+"bigarray.ml" 228 9366 9382 "bigarray.ml" 228 9366 9386
+type(
+  'l array array array
+)
+ident(
+  int_ref data "bigarray.ml" 217 8969 9017 "bigarray.ml" 217 8969 9021
+)
+"bigarray.ml" 228 9366 9388 "bigarray.ml" 228 9366 9389
+type(
+  int
+)
+ident(
+  int_ref i "bigarray.ml" 227 9337 9341 "bigarray.ml" 239 9785 9793
+)
+"bigarray.ml" 228 9366 9382 "bigarray.ml" 228 9366 9390
+type(
+  'l array array
+)
+"bigarray.ml" 229 9394 9403 "bigarray.ml" 229 9394 9415
+type(
+  'l array array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"bigarray.ml" 229 9394 9416 "bigarray.ml" 229 9394 9419
+type(
+  'l array array
+)
+ident(
+  int_ref row "bigarray.ml" 228 9366 9376 "bigarray.ml" 228 9366 9379
+)
+"bigarray.ml" 229 9394 9403 "bigarray.ml" 229 9394 9419
+type(
+  int
+)
+"bigarray.ml" 229 9394 9420 "bigarray.ml" 229 9394 9422
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"bigarray.ml" 229 9394 9423 "bigarray.ml" 229 9394 9427
+type(
+  int
+)
+ident(
+  int_ref dim2 "bigarray.ml" 219 9060 9068 "bigarray.ml" 219 9060 9072
+)
+"bigarray.ml" 229 9394 9403 "bigarray.ml" 229 9394 9427
+type(
+  bool
+)
+"bigarray.ml" 230 9433 9441 "bigarray.ml" 230 9433 9452
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"bigarray.ml" 230 9433 9452 "bigarray.ml" 230 9433 9496
+type(
+  string
+)
+"bigarray.ml" 230 9433 9441 "bigarray.ml" 230 9433 9496
+call(
+  stack
+)
+type(
+  unit
+)
+"bigarray.ml" 229 9394 9400 "bigarray.ml" 230 9433 9496
+type(
+  unit
+)
+"bigarray.ml" 231 9498 9512 "bigarray.ml" 231 9498 9513
+type(
+  int
+)
+"bigarray.ml" 231 9498 9517 "bigarray.ml" 231 9498 9521
+type(
+  int
+)
+ident(
+  int_ref dim2 "bigarray.ml" 219 9060 9068 "bigarray.ml" 219 9060 9072
+)
+"bigarray.ml" 231 9498 9522 "bigarray.ml" 231 9498 9523
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"bigarray.ml" 231 9498 9524 "bigarray.ml" 231 9498 9525
+type(
+  int
+)
+"bigarray.ml" 231 9498 9517 "bigarray.ml" 231 9498 9525
+type(
+  int
+)
+"bigarray.ml" 232 9529 9541 "bigarray.ml" 232 9529 9544
+type(
+  'l array
+)
+ident(
+  def col "bigarray.ml" 233 9558 9566 "bigarray.ml" 237 9761 9773
+)
+"bigarray.ml" 232 9529 9547 "bigarray.ml" 232 9529 9550
+type(
+  'l array array
+)
+ident(
+  int_ref row "bigarray.ml" 228 9366 9376 "bigarray.ml" 228 9366 9379
+)
+"bigarray.ml" 232 9529 9552 "bigarray.ml" 232 9529 9553
+type(
+  int
+)
+ident(
+  int_ref j "bigarray.ml" 231 9498 9504 "bigarray.ml" 238 9774 9784
+)
+"bigarray.ml" 232 9529 9547 "bigarray.ml" 232 9529 9554
+type(
+  'l array
+)
+"bigarray.ml" 233 9558 9569 "bigarray.ml" 233 9558 9581
+type(
+  'l array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"bigarray.ml" 233 9558 9582 "bigarray.ml" 233 9558 9585
+type(
+  'l array
+)
+ident(
+  int_ref col "bigarray.ml" 232 9529 9541 "bigarray.ml" 232 9529 9544
+)
+"bigarray.ml" 233 9558 9569 "bigarray.ml" 233 9558 9585
+type(
+  int
+)
+"bigarray.ml" 233 9558 9586 "bigarray.ml" 233 9558 9588
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"bigarray.ml" 233 9558 9589 "bigarray.ml" 233 9558 9593
+type(
+  int
+)
+ident(
+  int_ref dim3 "bigarray.ml" 220 9124 9132 "bigarray.ml" 220 9124 9136
+)
+"bigarray.ml" 233 9558 9569 "bigarray.ml" 233 9558 9593
+type(
+  bool
+)
+"bigarray.ml" 234 9599 9609 "bigarray.ml" 234 9599 9620
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"bigarray.ml" 234 9599 9620 "bigarray.ml" 234 9599 9664
+type(
+  string
+)
+"bigarray.ml" 234 9599 9609 "bigarray.ml" 234 9599 9664
+call(
+  stack
+)
+type(
+  unit
+)
+"bigarray.ml" 233 9558 9566 "bigarray.ml" 234 9599 9664
+type(
+  unit
+)
+"bigarray.ml" 235 9666 9682 "bigarray.ml" 235 9666 9683
+type(
+  int
+)
+"bigarray.ml" 235 9666 9687 "bigarray.ml" 235 9666 9691
+type(
+  int
+)
+ident(
+  int_ref dim3 "bigarray.ml" 220 9124 9132 "bigarray.ml" 220 9124 9136
+)
+"bigarray.ml" 235 9666 9692 "bigarray.ml" 235 9666 9693
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"bigarray.ml" 235 9666 9694 "bigarray.ml" 235 9666 9695
+type(
+  int
+)
+"bigarray.ml" 235 9666 9687 "bigarray.ml" 235 9666 9695
+type(
+  int
+)
+"bigarray.ml" 236 9699 9709 "bigarray.ml" 236 9699 9719
+type(
+  ('l, 'm, t) t -> int -> int -> int -> 'l -> unit
+)
+ident(
+  int_ref unsafe_set "bigarray.ml" 199 7975 7977 "bigarray.ml" 200 8048 8078
+)
+"bigarray.ml" 236 9699 9720 "bigarray.ml" 236 9699 9722
+type(
+  ('l, 'm, t) t
+)
+ident(
+  int_ref ba "bigarray.ml" 221 9192 9200 "bigarray.ml" 221 9192 9202
+)
+"bigarray.ml" 236 9699 9724 "bigarray.ml" 236 9699 9725
+type(
+  int
+)
+ident(
+  int_ref i "bigarray.ml" 227 9337 9341 "bigarray.ml" 239 9785 9793
+)
+"bigarray.ml" 236 9699 9726 "bigarray.ml" 236 9699 9727
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"bigarray.ml" 236 9699 9728 "bigarray.ml" 236 9699 9731
+type(
+  int
+)
+ident(
+  int_ref ofs "bigarray.ml" 222 9242 9250 "bigarray.ml" 222 9242 9253
+)
+"bigarray.ml" 236 9699 9723 "bigarray.ml" 236 9699 9732
+type(
+  int
+)
+"bigarray.ml" 236 9699 9734 "bigarray.ml" 236 9699 9735
+type(
+  int
+)
+ident(
+  int_ref j "bigarray.ml" 231 9498 9504 "bigarray.ml" 238 9774 9784
+)
+"bigarray.ml" 236 9699 9736 "bigarray.ml" 236 9699 9737
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"bigarray.ml" 236 9699 9738 "bigarray.ml" 236 9699 9741
+type(
+  int
+)
+ident(
+  int_ref ofs "bigarray.ml" 222 9242 9250 "bigarray.ml" 222 9242 9253
+)
+"bigarray.ml" 236 9699 9733 "bigarray.ml" 236 9699 9742
+type(
+  int
+)
+"bigarray.ml" 236 9699 9744 "bigarray.ml" 236 9699 9745
+type(
+  int
+)
+ident(
+  int_ref k "bigarray.ml" 235 9666 9674 "bigarray.ml" 237 9761 9773
+)
+"bigarray.ml" 236 9699 9746 "bigarray.ml" 236 9699 9747
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"bigarray.ml" 236 9699 9748 "bigarray.ml" 236 9699 9751
+type(
+  int
+)
+ident(
+  int_ref ofs "bigarray.ml" 222 9242 9250 "bigarray.ml" 222 9242 9253
+)
+"bigarray.ml" 236 9699 9743 "bigarray.ml" 236 9699 9752
+type(
+  int
+)
+"bigarray.ml" 236 9699 9753 "bigarray.ml" 236 9699 9756
+type(
+  'l array
+)
+ident(
+  int_ref col "bigarray.ml" 232 9529 9541 "bigarray.ml" 232 9529 9544
+)
+"bigarray.ml" 236 9699 9758 "bigarray.ml" 236 9699 9759
+type(
+  int
+)
+ident(
+  int_ref k "bigarray.ml" 235 9666 9674 "bigarray.ml" 237 9761 9773
+)
+"bigarray.ml" 236 9699 9753 "bigarray.ml" 236 9699 9760
+type(
+  'l
+)
+"bigarray.ml" 236 9699 9709 "bigarray.ml" 236 9699 9760
+type(
+  unit
+)
+"bigarray.ml" 235 9666 9674 "bigarray.ml" 237 9761 9773
+type(
+  unit
+)
+"bigarray.ml" 233 9558 9566 "bigarray.ml" 237 9761 9773
+type(
+  unit
+)
+"bigarray.ml" 232 9529 9537 "bigarray.ml" 237 9761 9773
+type(
+  unit
+)
+"bigarray.ml" 231 9498 9504 "bigarray.ml" 238 9774 9784
+type(
+  unit
+)
+"bigarray.ml" 229 9394 9400 "bigarray.ml" 238 9774 9784
+type(
+  unit
+)
+"bigarray.ml" 228 9366 9372 "bigarray.ml" 238 9774 9784
+type(
+  unit
+)
+"bigarray.ml" 227 9337 9341 "bigarray.ml" 239 9785 9793
+type(
+  unit
+)
+"bigarray.ml" 240 9795 9799 "bigarray.ml" 240 9795 9801
+type(
+  ('l, 'm, t) Genarray.t
+)
+ident(
+  int_ref ba "bigarray.ml" 221 9192 9200 "bigarray.ml" 221 9192 9202
+)
+"bigarray.ml" 227 9337 9341 "bigarray.ml" 240 9795 9801
+type(
+  ('l, 'm, t) Genarray.t
+)
+"bigarray.ml" 222 9242 9246 "bigarray.ml" 240 9795 9801
+type(
+  ('l, 'm, t) Genarray.t
+)
+"bigarray.ml" 221 9192 9196 "bigarray.ml" 240 9795 9801
+type(
+  ('l, 'm, t) Genarray.t
+)
+"bigarray.ml" 220 9124 9128 "bigarray.ml" 240 9795 9801
+type(
+  ('l, 'm, t) Genarray.t
+)
+"bigarray.ml" 219 9060 9064 "bigarray.ml" 240 9795 9801
+type(
+  ('l, 'm, t) Genarray.t
+)
+"bigarray.ml" 218 9024 9028 "bigarray.ml" 240 9795 9801
+type(
+  ('l, 'm, t) Genarray.t
+)
+"bigarray.ml" 217 8969 8984 "bigarray.ml" 240 9795 9801
+type(
+  ('l, 'm) kind ->
+  'n layout -> 'l array array array -> ('l, 'm, 'n) Genarray.t
+)
+"bigarray.ml" 241 9802 9808 "bigarray.ml" 241 9802 9816
+type(
+  Unix.file_descr ->
+  ?pos:int64 ->
+  ('o, 'p) kind ->
+  'q layout -> bool -> int -> int -> int -> ('o, 'p, 'q) Genarray.t
+)
+ident(
+  def map_file "bigarray.ml" 242 9861 9928 "bigarray.ml" 243 9929 9932
+)
+"bigarray.ml" 241 9802 9817 "bigarray.ml" 241 9802 9819
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "bigarray.ml" 241 9802 9820 "bigarray.ml" 242 9861 9928
+)
+"bigarray.ml" 241 9802 9821 "bigarray.ml" 241 9802 9824
+type(
+  int64 option
+)
+ident(
+  def pos "bigarray.ml" 241 9802 9825 "bigarray.ml" 242 9861 9928
+)
+"bigarray.ml" 241 9802 9825 "bigarray.ml" 241 9802 9829
+type(
+  ('o, 'p) kind
+)
+ident(
+  def kind "bigarray.ml" 241 9802 9830 "bigarray.ml" 242 9861 9928
+)
+"bigarray.ml" 241 9802 9830 "bigarray.ml" 241 9802 9836
+type(
+  'q layout
+)
+ident(
+  def layout "bigarray.ml" 241 9802 9837 "bigarray.ml" 242 9861 9928
+)
+"bigarray.ml" 241 9802 9837 "bigarray.ml" 241 9802 9843
+type(
+  bool
+)
+ident(
+  def shared "bigarray.ml" 241 9802 9844 "bigarray.ml" 242 9861 9928
+)
+"bigarray.ml" 241 9802 9844 "bigarray.ml" 241 9802 9848
+type(
+  int
+)
+ident(
+  def dim1 "bigarray.ml" 241 9802 9849 "bigarray.ml" 242 9861 9928
+)
+"bigarray.ml" 241 9802 9849 "bigarray.ml" 241 9802 9853
+type(
+  int
+)
+ident(
+  def dim2 "bigarray.ml" 241 9802 9854 "bigarray.ml" 242 9861 9928
+)
+"bigarray.ml" 241 9802 9854 "bigarray.ml" 241 9802 9858
+type(
+  int
+)
+ident(
+  def dim3 "bigarray.ml" 242 9861 9865 "bigarray.ml" 242 9861 9928
+)
+"bigarray.ml" 242 9861 9865 "bigarray.ml" 242 9861 9882
+type(
+  Unix.file_descr ->
+  ?pos:int64 ->
+  ('o, 'p) kind -> 'q layout -> bool -> int array -> ('o, 'p, 'q) Genarray.t
+)
+ident(
+  int_ref Genarray.map_file "bigarray.ml" 113 4294 4300 "bigarray.ml" 113 4294 4308
+)
+"bigarray.ml" 242 9861 9883 "bigarray.ml" 242 9861 9885
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "bigarray.ml" 241 9802 9817 "bigarray.ml" 241 9802 9819
+)
+"bigarray.ml" 242 9861 9887 "bigarray.ml" 242 9861 9890
+type(
+  int64 option
+)
+ident(
+  int_ref pos "bigarray.ml" 241 9802 9821 "bigarray.ml" 241 9802 9824
+)
+"bigarray.ml" 242 9861 9891 "bigarray.ml" 242 9861 9895
+type(
+  ('o, 'p) kind
+)
+ident(
+  int_ref kind "bigarray.ml" 241 9802 9825 "bigarray.ml" 241 9802 9829
+)
+"bigarray.ml" 242 9861 9896 "bigarray.ml" 242 9861 9902
+type(
+  'q layout
+)
+ident(
+  int_ref layout "bigarray.ml" 241 9802 9830 "bigarray.ml" 241 9802 9836
+)
+"bigarray.ml" 242 9861 9903 "bigarray.ml" 242 9861 9909
+type(
+  bool
+)
+ident(
+  int_ref shared "bigarray.ml" 241 9802 9837 "bigarray.ml" 241 9802 9843
+)
+"bigarray.ml" 242 9861 9912 "bigarray.ml" 242 9861 9916
+type(
+  int
+)
+ident(
+  int_ref dim1 "bigarray.ml" 241 9802 9844 "bigarray.ml" 241 9802 9848
+)
+"bigarray.ml" 242 9861 9917 "bigarray.ml" 242 9861 9921
+type(
+  int
+)
+ident(
+  int_ref dim2 "bigarray.ml" 241 9802 9849 "bigarray.ml" 241 9802 9853
+)
+"bigarray.ml" 242 9861 9922 "bigarray.ml" 242 9861 9926
+type(
+  int
+)
+ident(
+  int_ref dim3 "bigarray.ml" 241 9802 9854 "bigarray.ml" 241 9802 9858
+)
+"bigarray.ml" 242 9861 9910 "bigarray.ml" 242 9861 9928
+type(
+  int array
+)
+"bigarray.ml" 242 9861 9865 "bigarray.ml" 242 9861 9928
+call(
+  tail
+)
+type(
+  ('o, 'p, 'q) Genarray.t
+)
+"bigarray.ml" 251 10219 10223 "bigarray.ml" 251 10219 10241
+type(
+  ('a, 'b, 'c) Genarray.t -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  def array1_of_genarray "bigarray.ml" 254 10331 10331 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 251 10219 10242 "bigarray.ml" 251 10219 10243
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+ident(
+  def a "bigarray.ml" 252 10246 10248 "bigarray.ml" 253 10282 10330
+)
+"bigarray.ml" 252 10246 10251 "bigarray.ml" 252 10246 10268
+type(
+  ('a, 'b, 'c) Genarray.t -> int
+)
+ident(
+  int_ref Genarray.num_dims "bigarray.ml" 86 3053 3055 "bigarray.ml" 86 3053 3116
+)
+"bigarray.ml" 252 10246 10269 "bigarray.ml" 252 10246 10270
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+ident(
+  int_ref a "bigarray.ml" 251 10219 10242 "bigarray.ml" 251 10219 10243
+)
+"bigarray.ml" 252 10246 10251 "bigarray.ml" 252 10246 10270
+type(
+  int
+)
+"bigarray.ml" 252 10246 10271 "bigarray.ml" 252 10246 10272
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"bigarray.ml" 252 10246 10273 "bigarray.ml" 252 10246 10274
+type(
+  int
+)
+"bigarray.ml" 252 10246 10251 "bigarray.ml" 252 10246 10274
+type(
+  bool
+)
+"bigarray.ml" 252 10246 10280 "bigarray.ml" 252 10246 10281
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+ident(
+  int_ref a "bigarray.ml" 251 10219 10242 "bigarray.ml" 251 10219 10243
+)
+"bigarray.ml" 253 10282 10289 "bigarray.ml" 253 10282 10300
+type(
+  string -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"bigarray.ml" 253 10282 10301 "bigarray.ml" 253 10282 10330
+type(
+  string
+)
+"bigarray.ml" 253 10282 10289 "bigarray.ml" 253 10282 10330
+call(
+  tail
+)
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+"bigarray.ml" 252 10246 10248 "bigarray.ml" 253 10282 10330
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+"bigarray.ml" 254 10331 10335 "bigarray.ml" 254 10331 10353
+type(
+  ('a, 'b, 'c) Genarray.t -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  def array2_of_genarray "bigarray.ml" 257 10443 10443 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 254 10331 10354 "bigarray.ml" 254 10331 10355
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+ident(
+  def a "bigarray.ml" 255 10358 10360 "bigarray.ml" 256 10394 10442
+)
+"bigarray.ml" 255 10358 10363 "bigarray.ml" 255 10358 10380
+type(
+  ('a, 'b, 'c) Genarray.t -> int
+)
+ident(
+  int_ref Genarray.num_dims "bigarray.ml" 86 3053 3055 "bigarray.ml" 86 3053 3116
+)
+"bigarray.ml" 255 10358 10381 "bigarray.ml" 255 10358 10382
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+ident(
+  int_ref a "bigarray.ml" 254 10331 10354 "bigarray.ml" 254 10331 10355
+)
+"bigarray.ml" 255 10358 10363 "bigarray.ml" 255 10358 10382
+type(
+  int
+)
+"bigarray.ml" 255 10358 10383 "bigarray.ml" 255 10358 10384
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"bigarray.ml" 255 10358 10385 "bigarray.ml" 255 10358 10386
+type(
+  int
+)
+"bigarray.ml" 255 10358 10363 "bigarray.ml" 255 10358 10386
+type(
+  bool
+)
+"bigarray.ml" 255 10358 10392 "bigarray.ml" 255 10358 10393
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+ident(
+  int_ref a "bigarray.ml" 254 10331 10354 "bigarray.ml" 254 10331 10355
+)
+"bigarray.ml" 256 10394 10401 "bigarray.ml" 256 10394 10412
+type(
+  string -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"bigarray.ml" 256 10394 10413 "bigarray.ml" 256 10394 10442
+type(
+  string
+)
+"bigarray.ml" 256 10394 10401 "bigarray.ml" 256 10394 10442
+call(
+  tail
+)
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+"bigarray.ml" 255 10358 10360 "bigarray.ml" 256 10394 10442
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+"bigarray.ml" 257 10443 10447 "bigarray.ml" 257 10443 10465
+type(
+  ('a, 'b, 'c) Genarray.t -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  def array3_of_genarray "bigarray.ml" 261 10556 10556 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 257 10443 10466 "bigarray.ml" 257 10443 10467
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+ident(
+  def a "bigarray.ml" 258 10470 10472 "bigarray.ml" 259 10506 10554
+)
+"bigarray.ml" 258 10470 10475 "bigarray.ml" 258 10470 10492
+type(
+  ('a, 'b, 'c) Genarray.t -> int
+)
+ident(
+  int_ref Genarray.num_dims "bigarray.ml" 86 3053 3055 "bigarray.ml" 86 3053 3116
+)
+"bigarray.ml" 258 10470 10493 "bigarray.ml" 258 10470 10494
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+ident(
+  int_ref a "bigarray.ml" 257 10443 10466 "bigarray.ml" 257 10443 10467
+)
+"bigarray.ml" 258 10470 10475 "bigarray.ml" 258 10470 10494
+type(
+  int
+)
+"bigarray.ml" 258 10470 10495 "bigarray.ml" 258 10470 10496
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"bigarray.ml" 258 10470 10497 "bigarray.ml" 258 10470 10498
+type(
+  int
+)
+"bigarray.ml" 258 10470 10475 "bigarray.ml" 258 10470 10498
+type(
+  bool
+)
+"bigarray.ml" 258 10470 10504 "bigarray.ml" 258 10470 10505
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+ident(
+  int_ref a "bigarray.ml" 257 10443 10466 "bigarray.ml" 257 10443 10467
+)
+"bigarray.ml" 259 10506 10513 "bigarray.ml" 259 10506 10524
+type(
+  string -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"bigarray.ml" 259 10506 10525 "bigarray.ml" 259 10506 10554
+type(
+  string
+)
+"bigarray.ml" 259 10506 10513 "bigarray.ml" 259 10506 10554
+call(
+  tail
+)
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+"bigarray.ml" 258 10470 10472 "bigarray.ml" 259 10506 10554
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+"bigarray.ml" 264 10664 10668 "bigarray.ml" 264 10664 10677
+type(
+  ('a, 'b, 'c) Genarray.t -> int -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  def reshape_1 "bigarray.ml" 265 10706 10706 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 264 10664 10678 "bigarray.ml" 264 10664 10679
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+ident(
+  def a "bigarray.ml" 264 10664 10680 "bigarray.ml" 264 10664 10705
+)
+"bigarray.ml" 264 10664 10680 "bigarray.ml" 264 10664 10684
+type(
+  int
+)
+ident(
+  def dim1 "bigarray.ml" 264 10664 10687 "bigarray.ml" 264 10664 10705
+)
+"bigarray.ml" 264 10664 10687 "bigarray.ml" 264 10664 10694
+type(
+  ('a, 'b, 'c) Genarray.t -> int array -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  int_ref reshape "bigarray.ml" 261 10556 10556 "bigarray.ml" 263 10641 10663
+)
+"bigarray.ml" 264 10664 10695 "bigarray.ml" 264 10664 10696
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+ident(
+  int_ref a "bigarray.ml" 264 10664 10678 "bigarray.ml" 264 10664 10679
+)
+"bigarray.ml" 264 10664 10699 "bigarray.ml" 264 10664 10703
+type(
+  int
+)
+ident(
+  int_ref dim1 "bigarray.ml" 264 10664 10680 "bigarray.ml" 264 10664 10684
+)
+"bigarray.ml" 264 10664 10697 "bigarray.ml" 264 10664 10705
+type(
+  int array
+)
+"bigarray.ml" 264 10664 10687 "bigarray.ml" 264 10664 10705
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+"bigarray.ml" 265 10706 10710 "bigarray.ml" 265 10706 10719
+type(
+  ('a, 'b, 'c) Genarray.t -> int -> int -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  def reshape_2 "bigarray.ml" 266 10758 10758 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 265 10706 10720 "bigarray.ml" 265 10706 10721
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+ident(
+  def a "bigarray.ml" 265 10706 10722 "bigarray.ml" 265 10706 10757
+)
+"bigarray.ml" 265 10706 10722 "bigarray.ml" 265 10706 10726
+type(
+  int
+)
+ident(
+  def dim1 "bigarray.ml" 265 10706 10727 "bigarray.ml" 265 10706 10757
+)
+"bigarray.ml" 265 10706 10727 "bigarray.ml" 265 10706 10731
+type(
+  int
+)
+ident(
+  def dim2 "bigarray.ml" 265 10706 10734 "bigarray.ml" 265 10706 10757
+)
+"bigarray.ml" 265 10706 10734 "bigarray.ml" 265 10706 10741
+type(
+  ('a, 'b, 'c) Genarray.t -> int array -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  int_ref reshape "bigarray.ml" 261 10556 10556 "bigarray.ml" 263 10641 10663
+)
+"bigarray.ml" 265 10706 10742 "bigarray.ml" 265 10706 10743
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+ident(
+  int_ref a "bigarray.ml" 265 10706 10720 "bigarray.ml" 265 10706 10721
+)
+"bigarray.ml" 265 10706 10746 "bigarray.ml" 265 10706 10750
+type(
+  int
+)
+ident(
+  int_ref dim1 "bigarray.ml" 265 10706 10722 "bigarray.ml" 265 10706 10726
+)
+"bigarray.ml" 265 10706 10751 "bigarray.ml" 265 10706 10755
+type(
+  int
+)
+ident(
+  int_ref dim2 "bigarray.ml" 265 10706 10727 "bigarray.ml" 265 10706 10731
+)
+"bigarray.ml" 265 10706 10744 "bigarray.ml" 265 10706 10757
+type(
+  int array
+)
+"bigarray.ml" 265 10706 10734 "bigarray.ml" 265 10706 10757
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+"bigarray.ml" 266 10758 10762 "bigarray.ml" 266 10758 10771
+type(
+  ('a, 'b, 'c) Genarray.t -> int -> int -> int -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  def reshape_3 "bigarray.ml" 271 10939 10939 "bigarray.ml" 1 0 -1
+)
+"bigarray.ml" 266 10758 10772 "bigarray.ml" 266 10758 10773
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+ident(
+  def a "bigarray.ml" 266 10758 10774 "bigarray.ml" 266 10758 10819
+)
+"bigarray.ml" 266 10758 10774 "bigarray.ml" 266 10758 10778
+type(
+  int
+)
+ident(
+  def dim1 "bigarray.ml" 266 10758 10779 "bigarray.ml" 266 10758 10819
+)
+"bigarray.ml" 266 10758 10779 "bigarray.ml" 266 10758 10783
+type(
+  int
+)
+ident(
+  def dim2 "bigarray.ml" 266 10758 10784 "bigarray.ml" 266 10758 10819
+)
+"bigarray.ml" 266 10758 10784 "bigarray.ml" 266 10758 10788
+type(
+  int
+)
+ident(
+  def dim3 "bigarray.ml" 266 10758 10791 "bigarray.ml" 266 10758 10819
+)
+"bigarray.ml" 266 10758 10791 "bigarray.ml" 266 10758 10798
+type(
+  ('a, 'b, 'c) Genarray.t -> int array -> ('a, 'b, 'c) Genarray.t
+)
+ident(
+  int_ref reshape "bigarray.ml" 261 10556 10556 "bigarray.ml" 263 10641 10663
+)
+"bigarray.ml" 266 10758 10799 "bigarray.ml" 266 10758 10800
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+ident(
+  int_ref a "bigarray.ml" 266 10758 10772 "bigarray.ml" 266 10758 10773
+)
+"bigarray.ml" 266 10758 10803 "bigarray.ml" 266 10758 10807
+type(
+  int
+)
+ident(
+  int_ref dim1 "bigarray.ml" 266 10758 10774 "bigarray.ml" 266 10758 10778
+)
+"bigarray.ml" 266 10758 10808 "bigarray.ml" 266 10758 10812
+type(
+  int
+)
+ident(
+  int_ref dim2 "bigarray.ml" 266 10758 10779 "bigarray.ml" 266 10758 10783
+)
+"bigarray.ml" 266 10758 10813 "bigarray.ml" 266 10758 10817
+type(
+  int
+)
+ident(
+  int_ref dim3 "bigarray.ml" 266 10758 10784 "bigarray.ml" 266 10758 10788
+)
+"bigarray.ml" 266 10758 10801 "bigarray.ml" 266 10758 10819
+type(
+  int array
+)
+"bigarray.ml" 266 10758 10791 "bigarray.ml" 266 10758 10819
+type(
+  ('a, 'b, 'c) Genarray.t
+)
+"bigarray.ml" 272 10947 10953 "bigarray.ml" 272 10947 10954
+type(
+  ('a, 'b, 'c) Genarray.t -> int array -> 'a
+)
+"bigarray.ml" 272 10947 10957 "bigarray.ml" 272 10947 10969
+type(
+  ('a, 'b, 'c) Genarray.t -> int array -> 'a
+)
+ident(
+  int_ref Genarray.get "bigarray.ml" 82 2887 2889 "bigarray.ml" 83 2937 2965
+)
+"bigarray.ml" 273 10973 10979 "bigarray.ml" 273 10973 10980
+type(
+  ('d, 'e, 'f) Array1.t -> int -> 'd
+)
+"bigarray.ml" 273 10973 10983 "bigarray.ml" 273 10973 10993
+type(
+  ('d, 'e, 'f) Array1.t -> int -> 'd
+)
+ident(
+  int_ref Array1.get "bigarray.ml" 121 4545 4547 "bigarray.ml" 121 4545 4607
+)
+"bigarray.ml" 274 10997 11003 "bigarray.ml" 274 10997 11004
+type(
+  ('g, 'h, 'i) Array2.t -> int -> int -> 'g
+)
+"bigarray.ml" 274 10997 11007 "bigarray.ml" 274 10997 11017
+type(
+  ('g, 'h, 'i) Array2.t -> int -> int -> 'g
+)
+ident(
+  int_ref Array2.get "bigarray.ml" 149 5810 5812 "bigarray.ml" 149 5810 5879
+)
+"bigarray.ml" 275 11021 11027 "bigarray.ml" 275 11021 11028
+type(
+  ('j, 'k, 'l) Array3.t -> int -> int -> int -> 'j
+)
+"bigarray.ml" 275 11021 11031 "bigarray.ml" 275 11021 11041
+type(
+  ('j, 'k, 'l) Array3.t -> int -> int -> int -> 'j
+)
+ident(
+  int_ref Array3.get "bigarray.ml" 194 7712 7714 "bigarray.ml" 194 7712 7788
+)
+"bigarray.ml" 276 11045 11047 "bigarray.ml" 276 11045 11049
+type(
+  unit
+)
+"bigarray.ml" 275 11021 11023 "bigarray.ml" 276 11045 11049
+type(
+  unit
+)
+"bigarray.ml" 274 10997 10999 "bigarray.ml" 276 11045 11049
+type(
+  unit
+)
+"bigarray.ml" 273 10973 10975 "bigarray.ml" 276 11045 11049
+type(
+  unit
+)
+"bigarray.ml" 272 10947 10949 "bigarray.ml" 276 11045 11049
+type(
+  unit
+)

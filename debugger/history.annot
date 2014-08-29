@@ -1,0 +1,567 @@
+"history.ml" 19 958 962 "history.ml" 19 958 969
+type(
+  int64 list ref
+)
+ident(
+  def history "history.ml" 21 995 995 "history.ml" 1 0 -1
+)
+"history.ml" 19 958 972 "history.ml" 19 958 975
+type(
+  int64 list -> int64 list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"history.ml" 19 958 977 "history.ml" 19 958 979
+type(
+  int64 list
+)
+type(
+  int64 list
+)
+"history.ml" 19 958 972 "history.ml" 19 958 993
+type(
+  int64 list ref
+)
+"history.ml" 21 995 999 "history.ml" 21 995 1012
+type(
+  unit -> unit
+)
+ident(
+  def empty_history "history.ml" 24 1035 1035 "history.ml" 1 0 -1
+)
+"history.ml" 21 995 1013 "history.ml" 21 995 1015
+type(
+  unit
+)
+"history.ml" 22 1018 1020 "history.ml" 22 1018 1027
+type(
+  int64 list ref
+)
+ident(
+  int_ref history "history.ml" 19 958 962 "history.ml" 19 958 969
+)
+"history.ml" 22 1018 1028 "history.ml" 22 1018 1030
+type(
+  int64 list ref -> int64 list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"history.ml" 22 1018 1031 "history.ml" 22 1018 1033
+type(
+  int64 list
+)
+"history.ml" 22 1018 1020 "history.ml" 22 1018 1033
+type(
+  unit
+)
+"history.ml" 24 1035 1039 "history.ml" 24 1035 1055
+type(
+  unit -> unit
+)
+ident(
+  def add_current_time "history.ml" 31 1248 1248 "history.ml" 1 0 -1
+)
+"history.ml" 24 1035 1056 "history.ml" 24 1035 1058
+type(
+  unit
+)
+"history.ml" 25 1061 1067 "history.ml" 25 1061 1071
+type(
+  int64
+)
+ident(
+  def time "history.ml" 26 1093 1097 "history.ml" 29 1185 1246
+)
+"history.ml" 25 1061 1074 "history.ml" 25 1061 1086
+type(
+  unit -> int64
+)
+ident(
+  ext_ref Checkpoints.current_time
+)
+"history.ml" 25 1061 1087 "history.ml" 25 1061 1089
+type(
+  unit
+)
+"history.ml" 25 1061 1074 "history.ml" 25 1061 1089
+call(
+  stack
+)
+type(
+  int64
+)
+"history.ml" 26 1093 1100 "history.ml" 26 1093 1101
+type(
+  int64 list ref -> int64 list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"history.ml" 26 1093 1101 "history.ml" 26 1093 1108
+type(
+  int64 list ref
+)
+ident(
+  int_ref history "history.ml" 19 958 962 "history.ml" 19 958 969
+)
+"history.ml" 26 1093 1100 "history.ml" 26 1093 1108
+type(
+  int64 list
+)
+"history.ml" 26 1093 1109 "history.ml" 26 1093 1110
+type(
+  int64 list -> int64 list -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"history.ml" 26 1093 1111 "history.ml" 26 1093 1113
+type(
+  int64 list
+)
+"history.ml" 26 1093 1100 "history.ml" 26 1093 1113
+type(
+  bool
+)
+"history.ml" 27 1119 1125 "history.ml" 27 1119 1132
+type(
+  int64 list ref
+)
+ident(
+  int_ref history "history.ml" 19 958 962 "history.ml" 19 958 969
+)
+"history.ml" 27 1119 1133 "history.ml" 27 1119 1135
+type(
+  int64 list ref -> int64 list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"history.ml" 27 1119 1137 "history.ml" 27 1119 1141
+type(
+  int64
+)
+ident(
+  int_ref time "history.ml" 25 1061 1067 "history.ml" 25 1061 1071
+)
+"history.ml" 27 1119 1136 "history.ml" 27 1119 1142
+type(
+  int64 list
+)
+"history.ml" 27 1119 1125 "history.ml" 27 1119 1142
+type(
+  unit
+)
+"history.ml" 28 1143 1155 "history.ml" 28 1143 1159
+type(
+  int64
+)
+ident(
+  int_ref time "history.ml" 25 1061 1067 "history.ml" 25 1061 1071
+)
+"history.ml" 28 1143 1160 "history.ml" 28 1143 1162
+type(
+  int64 -> int64 -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"history.ml" 28 1143 1163 "history.ml" 28 1143 1170
+type(
+  int64 list -> int64
+)
+ident(
+  ext_ref List.hd
+)
+"history.ml" 28 1143 1171 "history.ml" 28 1143 1172
+type(
+  int64 list ref -> int64 list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"history.ml" 28 1143 1172 "history.ml" 28 1143 1179
+type(
+  int64 list ref
+)
+ident(
+  int_ref history "history.ml" 19 958 962 "history.ml" 19 958 969
+)
+"history.ml" 28 1143 1171 "history.ml" 28 1143 1179
+type(
+  int64 list
+)
+"history.ml" 28 1143 1163 "history.ml" 28 1143 1179
+call(
+  stack
+)
+type(
+  int64
+)
+"history.ml" 28 1143 1155 "history.ml" 28 1143 1179
+type(
+  bool
+)
+"history.ml" 29 1185 1191 "history.ml" 29 1185 1198
+type(
+  int64 list ref
+)
+ident(
+  int_ref history "history.ml" 19 958 962 "history.ml" 19 958 969
+)
+"history.ml" 29 1185 1199 "history.ml" 29 1185 1201
+type(
+  int64 list ref -> int64 list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"history.ml" 29 1185 1202 "history.ml" 29 1185 1215
+type(
+  int -> int64 list -> int64 list
+)
+ident(
+  ext_ref Primitives.list_truncate
+)
+"history.ml" 29 1185 1216 "history.ml" 29 1185 1217
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"history.ml" 29 1185 1217 "history.ml" 29 1185 1229
+type(
+  int ref
+)
+ident(
+  ext_ref Debugger_config.history_size
+)
+"history.ml" 29 1185 1216 "history.ml" 29 1185 1229
+type(
+  int
+)
+"history.ml" 29 1185 1231 "history.ml" 29 1185 1235
+type(
+  int64
+)
+ident(
+  int_ref time "history.ml" 25 1061 1067 "history.ml" 25 1061 1071
+)
+"history.ml" 29 1185 1237 "history.ml" 29 1185 1238
+type(
+  int64 list ref -> int64 list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"history.ml" 29 1185 1238 "history.ml" 29 1185 1245
+type(
+  int64 list ref
+)
+ident(
+  int_ref history "history.ml" 19 958 962 "history.ml" 19 958 969
+)
+"history.ml" 29 1185 1237 "history.ml" 29 1185 1245
+type(
+  int64 list
+)
+"history.ml" 29 1185 1230 "history.ml" 29 1185 1246
+type(
+  int64 list
+)
+"history.ml" 29 1185 1202 "history.ml" 29 1185 1246
+call(
+  stack
+)
+type(
+  int64 list
+)
+"history.ml" 29 1185 1191 "history.ml" 29 1185 1246
+type(
+  unit
+)
+"history.ml" 28 1143 1152 "history.ml" 29 1185 1246
+type(
+  unit
+)
+"history.ml" 26 1093 1097 "history.ml" 29 1185 1246
+type(
+  unit
+)
+"history.ml" 25 1061 1063 "history.ml" 29 1185 1246
+type(
+  unit
+)
+"history.ml" 31 1248 1252 "history.ml" 31 1248 1267
+type(
+  unit -> int64
+)
+ident(
+  def previous_time_1 "history.ml" 38 1422 1422 "history.ml" 1 0 -1
+)
+"history.ml" 31 1248 1268 "history.ml" 31 1248 1270
+type(
+  unit
+)
+"history.ml" 32 1273 1281 "history.ml" 32 1273 1282
+type(
+  int64 list ref -> int64 list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"history.ml" 32 1273 1282 "history.ml" 32 1273 1289
+type(
+  int64 list ref
+)
+ident(
+  int_ref history "history.ml" 19 958 962 "history.ml" 19 958 969
+)
+"history.ml" 32 1273 1281 "history.ml" 32 1273 1289
+type(
+  int64 list
+)
+"history.ml" 33 1295 1299 "history.ml" 33 1295 1300
+type(
+  int64
+)
+"history.ml" 33 1295 1304 "history.ml" 33 1295 1308
+type(
+  int64
+)
+ident(
+  def time "history.ml" 34 1325 1331 "history.ml" 34 1325 1352
+)
+"history.ml" 33 1295 1310 "history.ml" 33 1295 1311
+type(
+  int64 list
+)
+"history.ml" 33 1295 1303 "history.ml" 33 1295 1312
+type(
+  int64 list
+)
+"history.ml" 33 1295 1316 "history.ml" 33 1295 1320
+ident(
+  def hist "history.ml" 34 1325 1331 "history.ml" 34 1325 1352
+)
+"history.ml" 33 1295 1302 "history.ml" 33 1295 1321
+type(
+  int64 list
+)
+"history.ml" 33 1295 1299 "history.ml" 33 1295 1321
+type(
+  int64 list
+)
+"history.ml" 34 1325 1331 "history.ml" 34 1325 1338
+type(
+  int64 list ref
+)
+ident(
+  int_ref history "history.ml" 19 958 962 "history.ml" 19 958 969
+)
+"history.ml" 34 1325 1339 "history.ml" 34 1325 1341
+type(
+  int64 list ref -> int64 list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"history.ml" 34 1325 1342 "history.ml" 34 1325 1346
+type(
+  int64 list
+)
+ident(
+  int_ref hist "history.ml" 33 1295 1302 "history.ml" 33 1295 1321
+)
+"history.ml" 34 1325 1331 "history.ml" 34 1325 1346
+type(
+  unit
+)
+"history.ml" 34 1325 1348 "history.ml" 34 1325 1352
+type(
+  int64
+)
+ident(
+  int_ref time "history.ml" 33 1295 1304 "history.ml" 33 1295 1308
+)
+"history.ml" 34 1325 1331 "history.ml" 34 1325 1352
+type(
+  int64
+)
+"history.ml" 35 1353 1357 "history.ml" 35 1353 1358
+type(
+  int64 list
+)
+"history.ml" 36 1362 1368 "history.ml" 36 1362 1381
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"history.ml" 36 1362 1382 "history.ml" 36 1362 1404
+type(
+  string
+)
+"history.ml" 36 1362 1368 "history.ml" 36 1362 1404
+call(
+  stack
+)
+type(
+  unit
+)
+"history.ml" 36 1362 1406 "history.ml" 36 1362 1411
+type(
+  exn -> int64
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"history.ml" 36 1362 1412 "history.ml" 36 1362 1420
+type(
+  exn
+)
+"history.ml" 36 1362 1406 "history.ml" 36 1362 1420
+type(
+  int64
+)
+"history.ml" 36 1362 1368 "history.ml" 36 1362 1420
+type(
+  int64
+)
+"history.ml" 32 1273 1275 "history.ml" 36 1362 1420
+type(
+  int64
+)
+"history.ml" 38 1422 1430 "history.ml" 38 1422 1443
+type(
+  int64 -> int64
+)
+ident(
+  def previous_time "history.ml" 38 1422 1422 "history.ml" 1 0 -1
+)
+"history.ml" 38 1422 1444 "history.ml" 38 1422 1445
+type(
+  int64
+)
+ident(
+  def n "history.ml" 39 1448 1450 "history.ml" 41 1485 1551
+)
+"history.ml" 39 1448 1453 "history.ml" 39 1448 1454
+type(
+  int64
+)
+ident(
+  int_ref n "history.ml" 38 1422 1444 "history.ml" 38 1422 1445
+)
+"history.ml" 39 1448 1455 "history.ml" 39 1448 1456
+type(
+  int64 -> int64 -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"history.ml" 39 1448 1457 "history.ml" 39 1448 1459
+type(
+  int64
+)
+ident(
+  ext_ref Int64ops._1
+)
+"history.ml" 39 1448 1453 "history.ml" 39 1448 1459
+type(
+  bool
+)
+"history.ml" 40 1460 1467 "history.ml" 40 1460 1482
+type(
+  unit -> int64
+)
+ident(
+  int_ref previous_time_1 "history.ml" 31 1248 1252 "history.ml" 31 1248 1267
+)
+"history.ml" 40 1460 1482 "history.ml" 40 1460 1484
+type(
+  unit
+)
+"history.ml" 40 1460 1467 "history.ml" 40 1460 1484
+call(
+  tail
+)
+type(
+  int64
+)
+"history.ml" 41 1485 1498 "history.ml" 41 1485 1504
+type(
+  int64 -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"history.ml" 41 1485 1505 "history.ml" 41 1485 1520
+type(
+  unit -> int64
+)
+ident(
+  int_ref previous_time_1 "history.ml" 31 1248 1252 "history.ml" 31 1248 1267
+)
+"history.ml" 41 1485 1520 "history.ml" 41 1485 1522
+type(
+  unit
+)
+"history.ml" 41 1485 1504 "history.ml" 41 1485 1523
+call(
+  stack
+)
+type(
+  int64
+)
+"history.ml" 41 1485 1498 "history.ml" 41 1485 1523
+type(
+  unit
+)
+"history.ml" 41 1485 1525 "history.ml" 41 1485 1538
+type(
+  int64 -> int64
+)
+ident(
+  int_ref previous_time "history.ml" 38 1422 1430 "history.ml" 38 1422 1443
+)
+"history.ml" 41 1485 1539 "history.ml" 41 1485 1544
+type(
+  int64 -> int64
+)
+ident(
+  ext_ref Int64ops.pre64
+)
+"history.ml" 41 1485 1545 "history.ml" 41 1485 1546
+type(
+  int64
+)
+ident(
+  int_ref n "history.ml" 38 1422 1444 "history.ml" 38 1422 1445
+)
+"history.ml" 41 1485 1538 "history.ml" 41 1485 1547
+call(
+  stack
+)
+type(
+  int64
+)
+"history.ml" 41 1485 1525 "history.ml" 41 1485 1547
+call(
+  tail
+)
+type(
+  int64
+)
+"history.ml" 41 1485 1492 "history.ml" 41 1485 1551
+type(
+  int64
+)
+"history.ml" 39 1448 1450 "history.ml" 41 1485 1551
+type(
+  int64
+)

@@ -1,0 +1,4108 @@
+"stream.ml" 35 1554 1558 "stream.ml" 35 1554 1566
+type(
+  'a t -> 'a data -> unit
+)
+ident(
+  def set_data "stream.ml" 39 1642 1642 "stream.ml" 1 0 -1
+)
+"stream.ml" 35 1554 1568 "stream.ml" 35 1554 1569
+type(
+  'a t
+)
+ident(
+  def s "stream.ml" 35 1554 1578 "stream.ml" 36 1594 1637
+)
+"stream.ml" 35 1554 1579 "stream.ml" 35 1554 1580
+type(
+  'a data
+)
+ident(
+  def d "stream.ml" 36 1594 1596 "stream.ml" 36 1594 1637
+)
+"stream.ml" 36 1594 1596 "stream.ml" 36 1594 1609
+type(
+  Obj.t -> int -> Obj.t -> unit
+)
+ident(
+  ext_ref Obj.set_field
+)
+"stream.ml" 36 1594 1611 "stream.ml" 36 1594 1619
+type(
+  'a t -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"stream.ml" 36 1594 1620 "stream.ml" 36 1594 1621
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 35 1554 1568 "stream.ml" 35 1554 1569
+)
+"stream.ml" 36 1594 1610 "stream.ml" 36 1594 1622
+type(
+  Obj.t
+)
+"stream.ml" 36 1594 1623 "stream.ml" 36 1594 1624
+type(
+  int
+)
+"stream.ml" 36 1594 1626 "stream.ml" 36 1594 1634
+type(
+  'a data -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"stream.ml" 36 1594 1635 "stream.ml" 36 1594 1636
+type(
+  'a data
+)
+ident(
+  int_ref d "stream.ml" 35 1554 1579 "stream.ml" 35 1554 1580
+)
+"stream.ml" 36 1594 1625 "stream.ml" 36 1594 1637
+type(
+  Obj.t
+)
+"stream.ml" 36 1594 1596 "stream.ml" 36 1594 1637
+type(
+  unit
+)
+"stream.ml" 39 1642 1646 "stream.ml" 39 1642 1655
+type(
+  buffio -> unit
+)
+ident(
+  def fill_buff "stream.ml" 43 1729 1729 "stream.ml" 1 0 -1
+)
+"stream.ml" 39 1642 1656 "stream.ml" 39 1642 1657
+type(
+  buffio
+)
+ident(
+  def b "stream.ml" 40 1660 1662 "stream.ml" 40 1660 1724
+)
+"stream.ml" 40 1660 1662 "stream.ml" 40 1660 1663
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 39 1642 1656 "stream.ml" 39 1642 1657
+)
+"stream.ml" 40 1660 1671 "stream.ml" 40 1660 1676
+type(
+  in_channel -> bytes -> int -> int -> int
+)
+ident(
+  ext_ref Pervasives.input
+)
+"stream.ml" 40 1660 1677 "stream.ml" 40 1660 1678
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 39 1642 1656 "stream.ml" 39 1642 1657
+)
+"stream.ml" 40 1660 1677 "stream.ml" 40 1660 1681
+type(
+  in_channel
+)
+"stream.ml" 40 1660 1682 "stream.ml" 40 1660 1683
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 39 1642 1656 "stream.ml" 39 1642 1657
+)
+"stream.ml" 40 1660 1682 "stream.ml" 40 1660 1688
+type(
+  bytes
+)
+"stream.ml" 40 1660 1689 "stream.ml" 40 1660 1690
+type(
+  int
+)
+"stream.ml" 40 1660 1692 "stream.ml" 40 1660 1704
+type(
+  bytes -> int
+)
+ident(
+  ext_ref Bytes.length
+)
+"stream.ml" 40 1660 1705 "stream.ml" 40 1660 1706
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 39 1642 1656 "stream.ml" 39 1642 1657
+)
+"stream.ml" 40 1660 1705 "stream.ml" 40 1660 1711
+type(
+  bytes
+)
+"stream.ml" 40 1660 1691 "stream.ml" 40 1660 1712
+type(
+  int
+)
+"stream.ml" 40 1660 1671 "stream.ml" 40 1660 1712
+call(
+  stack
+)
+type(
+  int
+)
+"stream.ml" 40 1660 1662 "stream.ml" 40 1660 1712
+type(
+  unit
+)
+"stream.ml" 40 1660 1714 "stream.ml" 40 1660 1715
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 39 1642 1656 "stream.ml" 39 1642 1657
+)
+"stream.ml" 40 1660 1723 "stream.ml" 40 1660 1724
+type(
+  int
+)
+"stream.ml" 40 1660 1714 "stream.ml" 40 1660 1724
+type(
+  unit
+)
+"stream.ml" 40 1660 1662 "stream.ml" 40 1660 1724
+type(
+  unit
+)
+"stream.ml" 43 1729 1737 "stream.ml" 43 1729 1745
+type(
+  int -> 'a data -> 'a data
+)
+ident(
+  def get_data "stream.ml" 43 1729 1729 "stream.ml" 1 0 -1
+)
+"stream.ml" 43 1729 1746 "stream.ml" 43 1729 1751
+type(
+  int
+)
+ident(
+  def count "stream.ml" 43 1729 1752 "stream.ml" 70 2801 2844
+)
+"stream.ml" 43 1729 1752 "stream.ml" 43 1729 1753
+type(
+  'a data
+)
+ident(
+  def d "stream.ml" 43 1729 1756 "stream.ml" 70 2801 2844
+)
+"stream.ml" 43 1729 1762 "stream.ml" 43 1729 1763
+type(
+  'a data
+)
+ident(
+  int_ref d "stream.ml" 43 1729 1752 "stream.ml" 43 1729 1753
+)
+"stream.ml" 48 1993 1996 "stream.ml" 48 1993 2002
+type(
+  'a data
+)
+"stream.ml" 48 1993 2012 "stream.ml" 48 1993 2013
+type(
+  'a
+)
+"stream.ml" 48 1993 2015 "stream.ml" 48 1993 2016
+type(
+  'a data
+)
+"stream.ml" 48 1993 2005 "stream.ml" 48 1993 2017
+type(
+  'a data
+)
+"stream.ml" 48 1993 1996 "stream.ml" 48 1993 2017
+type(
+  'a data
+)
+"stream.ml" 48 1993 2021 "stream.ml" 48 1993 2022
+type(
+  'a data
+)
+ident(
+  int_ref d "stream.ml" 43 1729 1752 "stream.ml" 43 1729 1753
+)
+"stream.ml" 49 2023 2032 "stream.ml" 49 2023 2034
+type(
+  'a data
+)
+ident(
+  def d1 "stream.ml" 50 2043 2048 "stream.ml" 54 2194 2202
+)
+"stream.ml" 49 2023 2036 "stream.ml" 49 2023 2038
+type(
+  'a data
+)
+ident(
+  def d2 "stream.ml" 50 2043 2048 "stream.ml" 54 2194 2202
+)
+"stream.ml" 49 2023 2026 "stream.ml" 49 2023 2039
+type(
+  'a data
+)
+"stream.ml" 50 2043 2060 "stream.ml" 50 2043 2068
+type(
+  int -> 'a data -> 'a data
+)
+ident(
+  int_ref get_data "stream.ml" 43 1729 1737 "stream.ml" 43 1729 1745
+)
+"stream.ml" 50 2043 2069 "stream.ml" 50 2043 2074
+type(
+  int
+)
+ident(
+  int_ref count "stream.ml" 43 1729 1746 "stream.ml" 43 1729 1751
+)
+"stream.ml" 50 2043 2075 "stream.ml" 50 2043 2077
+type(
+  'a data
+)
+ident(
+  int_ref d1 "stream.ml" 49 2023 2032 "stream.ml" 49 2023 2034
+)
+"stream.ml" 50 2043 2060 "stream.ml" 50 2043 2077
+call(
+  stack
+)
+type(
+  'a data
+)
+"stream.ml" 51 2083 2097 "stream.ml" 51 2083 2098
+type(
+  'a
+)
+ident(
+  def a "stream.ml" 51 2083 2108 "stream.ml" 51 2083 2133
+)
+"stream.ml" 51 2083 2100 "stream.ml" 51 2083 2103
+type(
+  'a data
+)
+ident(
+  def d11 "stream.ml" 51 2083 2108 "stream.ml" 51 2083 2133
+)
+"stream.ml" 51 2083 2090 "stream.ml" 51 2083 2104
+type(
+  'a data
+)
+"stream.ml" 51 2083 2115 "stream.ml" 51 2083 2116
+type(
+  'a
+)
+ident(
+  int_ref a "stream.ml" 51 2083 2097 "stream.ml" 51 2083 2098
+)
+"stream.ml" 51 2083 2124 "stream.ml" 51 2083 2127
+type(
+  'a data
+)
+ident(
+  int_ref d11 "stream.ml" 51 2083 2100 "stream.ml" 51 2083 2103
+)
+"stream.ml" 51 2083 2129 "stream.ml" 51 2083 2131
+type(
+  'a data
+)
+ident(
+  int_ref d2 "stream.ml" 49 2023 2036 "stream.ml" 49 2023 2038
+)
+"stream.ml" 51 2083 2118 "stream.ml" 51 2083 2132
+type(
+  'a data
+)
+"stream.ml" 51 2083 2108 "stream.ml" 51 2083 2133
+type(
+  'a data
+)
+"stream.ml" 52 2134 2141 "stream.ml" 52 2134 2147
+type(
+  'a data
+)
+"stream.ml" 52 2134 2151 "stream.ml" 52 2134 2159
+type(
+  int -> 'a data -> 'a data
+)
+ident(
+  int_ref get_data "stream.ml" 43 1729 1737 "stream.ml" 43 1729 1745
+)
+"stream.ml" 52 2134 2160 "stream.ml" 52 2134 2165
+type(
+  int
+)
+ident(
+  int_ref count "stream.ml" 43 1729 1746 "stream.ml" 43 1729 1751
+)
+"stream.ml" 52 2134 2166 "stream.ml" 52 2134 2168
+type(
+  'a data
+)
+ident(
+  int_ref d2 "stream.ml" 49 2023 2036 "stream.ml" 49 2023 2038
+)
+"stream.ml" 52 2134 2151 "stream.ml" 52 2134 2168
+call(
+  tail
+)
+type(
+  'a data
+)
+"stream.ml" 53 2169 2176 "stream.ml" 53 2169 2177
+type(
+  'a data
+)
+"stream.ml" 53 2169 2188 "stream.ml" 53 2169 2193
+type(
+  bool
+)
+"stream.ml" 53 2169 2181 "stream.ml" 53 2169 2193
+type(
+  'a data
+)
+"stream.ml" 50 2043 2048 "stream.ml" 54 2194 2202
+type(
+  'a data
+)
+"stream.ml" 55 2203 2224 "stream.ml" 55 2203 2228
+type(
+  'a option
+)
+"stream.ml" 55 2203 2219 "stream.ml" 55 2203 2228
+type(
+  'a option option
+)
+"stream.ml" 55 2203 2237 "stream.ml" 55 2203 2238
+type(
+  int -> 'a option
+)
+"stream.ml" 55 2203 2211 "stream.ml" 55 2203 2240
+type(
+  'a gen
+)
+"stream.ml" 55 2203 2206 "stream.ml" 55 2203 2240
+type(
+  'a data
+)
+"stream.ml" 55 2203 2244 "stream.ml" 55 2203 2250
+type(
+  'a data
+)
+"stream.ml" 56 2251 2278 "stream.ml" 56 2251 2279
+type(
+  'a
+)
+ident(
+  def a "stream.ml" 57 2301 2306 "stream.ml" 57 2301 2333
+)
+"stream.ml" 56 2251 2272 "stream.ml" 56 2251 2280
+type(
+  'a option
+)
+"stream.ml" 56 2251 2268 "stream.ml" 56 2251 2280
+type(
+  'a option option
+)
+"stream.ml" 56 2251 2289 "stream.ml" 56 2251 2290
+type(
+  int -> 'a option
+)
+ident(
+  def f "stream.ml" 57 2301 2306 "stream.ml" 57 2301 2333
+)
+"stream.ml" 56 2251 2260 "stream.ml" 56 2251 2291
+type(
+  'a gen
+)
+"stream.ml" 56 2251 2295 "stream.ml" 56 2251 2296
+ident(
+  def g "stream.ml" 57 2301 2306 "stream.ml" 57 2301 2333
+)
+"stream.ml" 56 2251 2259 "stream.ml" 56 2251 2297
+type(
+  'a gen
+)
+"stream.ml" 56 2251 2254 "stream.ml" 56 2251 2297
+type(
+  'a data
+)
+"stream.ml" 57 2301 2306 "stream.ml" 57 2301 2307
+type(
+  'a gen
+)
+ident(
+  int_ref g "stream.ml" 56 2251 2259 "stream.ml" 56 2251 2297
+)
+"stream.ml" 57 2301 2316 "stream.ml" 57 2301 2320
+type(
+  'a option option
+)
+"stream.ml" 57 2301 2306 "stream.ml" 57 2301 2320
+type(
+  unit
+)
+"stream.ml" 57 2301 2328 "stream.ml" 57 2301 2329
+type(
+  'a
+)
+ident(
+  int_ref a "stream.ml" 56 2251 2278 "stream.ml" 56 2251 2279
+)
+"stream.ml" 57 2301 2331 "stream.ml" 57 2301 2332
+type(
+  'a data
+)
+ident(
+  int_ref d "stream.ml" 43 1729 1752 "stream.ml" 43 1729 1753
+)
+"stream.ml" 57 2301 2322 "stream.ml" 57 2301 2333
+type(
+  'a data
+)
+"stream.ml" 57 2301 2306 "stream.ml" 57 2301 2333
+type(
+  'a data
+)
+"stream.ml" 58 2334 2342 "stream.ml" 58 2334 2343
+type(
+  'a gen
+)
+ident(
+  def g "stream.ml" 59 2347 2352 "stream.ml" 63 2528 2536
+)
+"stream.ml" 58 2334 2337 "stream.ml" 58 2334 2343
+type(
+  'a data
+)
+"stream.ml" 59 2347 2364 "stream.ml" 59 2347 2365
+type(
+  'a gen
+)
+ident(
+  int_ref g "stream.ml" 58 2334 2342 "stream.ml" 58 2334 2343
+)
+"stream.ml" 59 2347 2364 "stream.ml" 59 2347 2370
+type(
+  int -> 'a option
+)
+"stream.ml" 59 2347 2371 "stream.ml" 59 2347 2376
+type(
+  int
+)
+ident(
+  int_ref count "stream.ml" 43 1729 1746 "stream.ml" 43 1729 1751
+)
+"stream.ml" 59 2347 2364 "stream.ml" 59 2347 2376
+call(
+  stack
+)
+type(
+  'a option
+)
+"stream.ml" 60 2382 2389 "stream.ml" 60 2382 2393
+type(
+  'a option
+)
+"stream.ml" 60 2382 2397 "stream.ml" 60 2382 2398
+type(
+  'a gen
+)
+ident(
+  int_ref g "stream.ml" 58 2334 2342 "stream.ml" 58 2334 2343
+)
+"stream.ml" 60 2382 2411 "stream.ml" 60 2382 2417
+type(
+  'a option
+)
+"stream.ml" 60 2382 2407 "stream.ml" 60 2382 2417
+type(
+  'a option option
+)
+"stream.ml" 60 2382 2397 "stream.ml" 60 2382 2417
+type(
+  unit
+)
+"stream.ml" 60 2382 2419 "stream.ml" 60 2382 2425
+type(
+  'a data
+)
+"stream.ml" 60 2382 2397 "stream.ml" 60 2382 2425
+type(
+  'a data
+)
+"stream.ml" 61 2426 2438 "stream.ml" 61 2426 2439
+type(
+  'a
+)
+ident(
+  def a "stream.ml" 61 2426 2443 "stream.ml" 61 2426 2454
+)
+"stream.ml" 61 2426 2433 "stream.ml" 61 2426 2439
+type(
+  'a option
+)
+"stream.ml" 61 2426 2449 "stream.ml" 61 2426 2450
+type(
+  'a
+)
+ident(
+  int_ref a "stream.ml" 61 2426 2438 "stream.ml" 61 2426 2439
+)
+"stream.ml" 61 2426 2452 "stream.ml" 61 2426 2453
+type(
+  'a data
+)
+ident(
+  int_ref d "stream.ml" 43 1729 1752 "stream.ml" 43 1729 1753
+)
+"stream.ml" 61 2426 2443 "stream.ml" 61 2426 2454
+type(
+  'a data
+)
+"stream.ml" 59 2347 2352 "stream.ml" 63 2528 2536
+type(
+  'a data
+)
+"stream.ml" 64 2537 2548 "stream.ml" 64 2537 2549
+type(
+  buffio
+)
+ident(
+  def b "stream.ml" 65 2553 2558 "stream.ml" 69 2761 2800
+)
+"stream.ml" 64 2537 2540 "stream.ml" 64 2537 2549
+type(
+  'a data
+)
+"stream.ml" 65 2553 2561 "stream.ml" 65 2553 2562
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 64 2537 2548 "stream.ml" 64 2537 2549
+)
+"stream.ml" 65 2553 2561 "stream.ml" 65 2553 2566
+type(
+  int
+)
+"stream.ml" 65 2553 2567 "stream.ml" 65 2553 2569
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"stream.ml" 65 2553 2570 "stream.ml" 65 2553 2571
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 64 2537 2548 "stream.ml" 64 2537 2549
+)
+"stream.ml" 65 2553 2570 "stream.ml" 65 2553 2575
+type(
+  int
+)
+"stream.ml" 65 2553 2561 "stream.ml" 65 2553 2575
+type(
+  bool
+)
+"stream.ml" 65 2553 2581 "stream.ml" 65 2553 2590
+type(
+  buffio -> unit
+)
+ident(
+  int_ref fill_buff "stream.ml" 39 1642 1646 "stream.ml" 39 1642 1655
+)
+"stream.ml" 65 2553 2591 "stream.ml" 65 2553 2592
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 64 2537 2548 "stream.ml" 64 2537 2549
+)
+"stream.ml" 65 2553 2581 "stream.ml" 65 2553 2592
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 65 2553 2558 "stream.ml" 65 2553 2592
+type(
+  unit
+)
+"stream.ml" 66 2594 2602 "stream.ml" 66 2594 2603
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 64 2537 2548 "stream.ml" 64 2537 2549
+)
+"stream.ml" 66 2594 2602 "stream.ml" 66 2594 2607
+type(
+  int
+)
+"stream.ml" 66 2594 2608 "stream.ml" 66 2594 2610
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( == )
+)
+"stream.ml" 66 2594 2611 "stream.ml" 66 2594 2612
+type(
+  int
+)
+"stream.ml" 66 2594 2602 "stream.ml" 66 2594 2612
+type(
+  bool
+)
+"stream.ml" 66 2594 2618 "stream.ml" 66 2594 2624
+type(
+  'a data
+)
+"stream.ml" 67 2630 2641 "stream.ml" 67 2630 2642
+type(
+  'b
+)
+ident(
+  def r "stream.ml" 69 2761 2768 "stream.ml" 69 2761 2800
+)
+"stream.ml" 67 2630 2645 "stream.ml" 67 2630 2654
+type(
+  char -> 'b
+)
+ident(
+  ext_ref Obj.magic
+)
+"stream.ml" 67 2630 2656 "stream.ml" 67 2630 2672
+type(
+  bytes -> int -> char
+)
+ident(
+  ext_ref Bytes.unsafe_get
+)
+"stream.ml" 67 2630 2673 "stream.ml" 67 2630 2674
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 64 2537 2548 "stream.ml" 64 2537 2549
+)
+"stream.ml" 67 2630 2673 "stream.ml" 67 2630 2679
+type(
+  bytes
+)
+"stream.ml" 67 2630 2680 "stream.ml" 67 2630 2681
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 64 2537 2548 "stream.ml" 64 2537 2549
+)
+"stream.ml" 67 2630 2680 "stream.ml" 67 2630 2685
+type(
+  int
+)
+"stream.ml" 67 2630 2655 "stream.ml" 67 2630 2686
+type(
+  char
+)
+"stream.ml" 67 2630 2645 "stream.ml" 67 2630 2686
+type(
+  'b
+)
+"stream.ml" 69 2761 2768 "stream.ml" 69 2761 2769
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 64 2537 2548 "stream.ml" 64 2537 2549
+)
+"stream.ml" 69 2761 2777 "stream.ml" 69 2761 2781
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.succ
+)
+"stream.ml" 69 2761 2782 "stream.ml" 69 2761 2783
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 64 2537 2548 "stream.ml" 64 2537 2549
+)
+"stream.ml" 69 2761 2782 "stream.ml" 69 2761 2787
+type(
+  int
+)
+"stream.ml" 69 2761 2777 "stream.ml" 69 2761 2787
+type(
+  int
+)
+"stream.ml" 69 2761 2768 "stream.ml" 69 2761 2787
+type(
+  unit
+)
+"stream.ml" 69 2761 2795 "stream.ml" 69 2761 2796
+type(
+  'a
+)
+ident(
+  int_ref r "stream.ml" 67 2630 2641 "stream.ml" 67 2630 2642
+)
+"stream.ml" 69 2761 2798 "stream.ml" 69 2761 2799
+type(
+  'a data
+)
+ident(
+  int_ref d "stream.ml" 43 1729 1752 "stream.ml" 43 1729 1753
+)
+"stream.ml" 69 2761 2789 "stream.ml" 69 2761 2800
+type(
+  'a data
+)
+"stream.ml" 69 2761 2768 "stream.ml" 69 2761 2800
+type(
+  'a data
+)
+"stream.ml" 67 2630 2637 "stream.ml" 69 2761 2800
+type(
+  'a data
+)
+"stream.ml" 66 2594 2599 "stream.ml" 69 2761 2800
+type(
+  'a data
+)
+"stream.ml" 65 2553 2558 "stream.ml" 69 2761 2800
+type(
+  'a data
+)
+"stream.ml" 70 2801 2810 "stream.ml" 70 2801 2811
+type(
+  'a data Lazy.t
+)
+ident(
+  def f "stream.ml" 70 2801 2815 "stream.ml" 70 2801 2844
+)
+"stream.ml" 70 2801 2804 "stream.ml" 70 2801 2811
+type(
+  'a data
+)
+"stream.ml" 70 2801 2815 "stream.ml" 70 2801 2823
+type(
+  int -> 'a data -> 'a data
+)
+ident(
+  int_ref get_data "stream.ml" 43 1729 1737 "stream.ml" 43 1729 1745
+)
+"stream.ml" 70 2801 2824 "stream.ml" 70 2801 2829
+type(
+  int
+)
+ident(
+  int_ref count "stream.ml" 43 1729 1746 "stream.ml" 43 1729 1751
+)
+"stream.ml" 70 2801 2831 "stream.ml" 70 2801 2841
+type(
+  'a data Lazy.t -> 'a data
+)
+ident(
+  ext_ref Lazy.force
+)
+"stream.ml" 70 2801 2842 "stream.ml" 70 2801 2843
+type(
+  'a data Lazy.t
+)
+ident(
+  int_ref f "stream.ml" 70 2801 2810 "stream.ml" 70 2801 2811
+)
+"stream.ml" 70 2801 2830 "stream.ml" 70 2801 2844
+call(
+  stack
+)
+type(
+  'a data
+)
+"stream.ml" 70 2801 2815 "stream.ml" 70 2801 2844
+call(
+  tail
+)
+type(
+  'a data
+)
+"stream.ml" 43 1729 1756 "stream.ml" 70 2801 2844
+type(
+  'a data
+)
+"stream.ml" 73 2849 2857 "stream.ml" 73 2849 2861
+type(
+  'a t -> 'a option
+)
+ident(
+  def peek "stream.ml" 73 2849 2849 "stream.ml" 1 0 -1
+)
+"stream.ml" 73 2849 2862 "stream.ml" 73 2849 2863
+type(
+  'a t
+)
+ident(
+  def s "stream.ml" 75 2901 2902 "stream.ml" 90 3383 3441
+)
+"stream.ml" 75 2901 2908 "stream.ml" 75 2901 2909
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 73 2849 2862 "stream.ml" 73 2849 2863
+)
+"stream.ml" 75 2901 2908 "stream.ml" 75 2901 2914
+type(
+  'a data
+)
+"stream.ml" 76 2920 2923 "stream.ml" 76 2920 2929
+type(
+  'a data
+)
+"stream.ml" 76 2920 2933 "stream.ml" 76 2920 2937
+type(
+  'a option
+)
+"stream.ml" 77 2938 2948 "stream.ml" 77 2938 2949
+type(
+  'a
+)
+ident(
+  def a "stream.ml" 77 2938 2957 "stream.ml" 77 2938 2963
+)
+"stream.ml" 77 2938 2951 "stream.ml" 77 2938 2952
+type(
+  'a data
+)
+"stream.ml" 77 2938 2941 "stream.ml" 77 2938 2953
+type(
+  'a data
+)
+"stream.ml" 77 2938 2962 "stream.ml" 77 2938 2963
+type(
+  'a
+)
+ident(
+  int_ref a "stream.ml" 77 2938 2948 "stream.ml" 77 2938 2949
+)
+"stream.ml" 77 2938 2957 "stream.ml" 77 2938 2963
+type(
+  'a option
+)
+"stream.ml" 78 2964 2973 "stream.ml" 78 2964 2974
+type(
+  'a data
+)
+"stream.ml" 78 2964 2976 "stream.ml" 78 2964 2977
+type(
+  'a data
+)
+"stream.ml" 78 2964 2967 "stream.ml" 78 2964 2978
+type(
+  'a data
+)
+"stream.ml" 79 2982 2999 "stream.ml" 79 2982 3007
+type(
+  int -> 'a data -> 'a data
+)
+ident(
+  int_ref get_data "stream.ml" 43 1729 1737 "stream.ml" 43 1729 1745
+)
+"stream.ml" 79 2982 3008 "stream.ml" 79 2982 3009
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 73 2849 2862 "stream.ml" 73 2849 2863
+)
+"stream.ml" 79 2982 3008 "stream.ml" 79 2982 3015
+type(
+  int
+)
+"stream.ml" 79 2982 3016 "stream.ml" 79 2982 3017
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 73 2849 2862 "stream.ml" 73 2849 2863
+)
+"stream.ml" 79 2982 3016 "stream.ml" 79 2982 3022
+type(
+  'a data
+)
+"stream.ml" 79 2982 2999 "stream.ml" 79 2982 3022
+call(
+  stack
+)
+type(
+  'a data
+)
+"stream.ml" 80 3028 3041 "stream.ml" 80 3028 3042
+type(
+  'a
+)
+ident(
+  def a "stream.ml" 80 3028 3055 "stream.ml" 80 3028 3075
+)
+"stream.ml" 80 3028 3044 "stream.ml" 80 3028 3045
+type(
+  'a data
+)
+"stream.ml" 80 3028 3035 "stream.ml" 80 3028 3046
+type(
+  'a data
+)
+"stream.ml" 80 3028 3050 "stream.ml" 80 3028 3051
+ident(
+  def d "stream.ml" 80 3028 3055 "stream.ml" 80 3028 3075
+)
+"stream.ml" 80 3028 3035 "stream.ml" 80 3028 3051
+type(
+  'a data
+)
+"stream.ml" 80 3028 3055 "stream.ml" 80 3028 3063
+type(
+  'a t -> 'a data -> unit
+)
+ident(
+  int_ref set_data "stream.ml" 35 1554 1558 "stream.ml" 35 1554 1566
+)
+"stream.ml" 80 3028 3064 "stream.ml" 80 3028 3065
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 73 2849 2862 "stream.ml" 73 2849 2863
+)
+"stream.ml" 80 3028 3066 "stream.ml" 80 3028 3067
+type(
+  'a data
+)
+ident(
+  int_ref d "stream.ml" 80 3028 3035 "stream.ml" 80 3028 3051
+)
+"stream.ml" 80 3028 3055 "stream.ml" 80 3028 3067
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 80 3028 3074 "stream.ml" 80 3028 3075
+type(
+  'a
+)
+ident(
+  int_ref a "stream.ml" 80 3028 3041 "stream.ml" 80 3028 3042
+)
+"stream.ml" 80 3028 3069 "stream.ml" 80 3028 3075
+type(
+  'a option
+)
+"stream.ml" 80 3028 3055 "stream.ml" 80 3028 3075
+type(
+  'a option
+)
+"stream.ml" 81 3076 3083 "stream.ml" 81 3076 3089
+type(
+  'a data
+)
+"stream.ml" 81 3076 3093 "stream.ml" 81 3076 3097
+type(
+  'a option
+)
+"stream.ml" 82 3098 3105 "stream.ml" 82 3098 3106
+type(
+  'a data
+)
+"stream.ml" 82 3098 3117 "stream.ml" 82 3098 3122
+type(
+  bool
+)
+"stream.ml" 82 3098 3110 "stream.ml" 82 3098 3122
+type(
+  'a option
+)
+"stream.ml" 79 2982 2987 "stream.ml" 83 3123 3131
+type(
+  'a option
+)
+"stream.ml" 84 3132 3141 "stream.ml" 84 3132 3142
+type(
+  'a data Lazy.t
+)
+ident(
+  def f "stream.ml" 84 3132 3146 "stream.ml" 84 3132 3179
+)
+"stream.ml" 84 3132 3135 "stream.ml" 84 3132 3142
+type(
+  'a data
+)
+"stream.ml" 84 3132 3146 "stream.ml" 84 3132 3154
+type(
+  'a t -> 'a data -> unit
+)
+ident(
+  int_ref set_data "stream.ml" 35 1554 1558 "stream.ml" 35 1554 1566
+)
+"stream.ml" 84 3132 3155 "stream.ml" 84 3132 3156
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 73 2849 2862 "stream.ml" 73 2849 2863
+)
+"stream.ml" 84 3132 3158 "stream.ml" 84 3132 3168
+type(
+  'a data Lazy.t -> 'a data
+)
+ident(
+  ext_ref Lazy.force
+)
+"stream.ml" 84 3132 3169 "stream.ml" 84 3132 3170
+type(
+  'a data Lazy.t
+)
+ident(
+  int_ref f "stream.ml" 84 3132 3141 "stream.ml" 84 3132 3142
+)
+"stream.ml" 84 3132 3157 "stream.ml" 84 3132 3171
+call(
+  stack
+)
+type(
+  'a data
+)
+"stream.ml" 84 3132 3146 "stream.ml" 84 3132 3171
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 84 3132 3173 "stream.ml" 84 3132 3177
+type(
+  'a t -> 'a option
+)
+ident(
+  int_ref peek "stream.ml" 73 2849 2857 "stream.ml" 73 2849 2861
+)
+"stream.ml" 84 3132 3178 "stream.ml" 84 3132 3179
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 73 2849 2862 "stream.ml" 73 2849 2863
+)
+"stream.ml" 84 3132 3173 "stream.ml" 84 3132 3179
+call(
+  tail
+)
+type(
+  'a option
+)
+"stream.ml" 84 3132 3146 "stream.ml" 84 3132 3179
+type(
+  'a option
+)
+"stream.ml" 85 3180 3201 "stream.ml" 85 3180 3202
+type(
+  'a option
+)
+ident(
+  def a "stream.ml" 85 3180 3207 "stream.ml" 85 3180 3208
+)
+"stream.ml" 85 3180 3196 "stream.ml" 85 3180 3202
+type(
+  'a option option
+)
+"stream.ml" 85 3180 3188 "stream.ml" 85 3180 3203
+type(
+  'a gen
+)
+"stream.ml" 85 3180 3183 "stream.ml" 85 3180 3203
+type(
+  'a data
+)
+"stream.ml" 85 3180 3207 "stream.ml" 85 3180 3208
+type(
+  'a option
+)
+ident(
+  int_ref a "stream.ml" 85 3180 3201 "stream.ml" 85 3180 3202
+)
+"stream.ml" 86 3209 3217 "stream.ml" 86 3209 3218
+type(
+  'a gen
+)
+ident(
+  def g "stream.ml" 86 3209 3222 "stream.ml" 86 3209 3267
+)
+"stream.ml" 86 3209 3212 "stream.ml" 86 3209 3218
+type(
+  'a data
+)
+"stream.ml" 86 3209 3226 "stream.ml" 86 3209 3227
+type(
+  'a option
+)
+ident(
+  def x "stream.ml" 86 3209 3248 "stream.ml" 86 3209 3267
+)
+"stream.ml" 86 3209 3230 "stream.ml" 86 3209 3231
+type(
+  'a gen
+)
+ident(
+  int_ref g "stream.ml" 86 3209 3217 "stream.ml" 86 3209 3218
+)
+"stream.ml" 86 3209 3230 "stream.ml" 86 3209 3236
+type(
+  int -> 'a option
+)
+"stream.ml" 86 3209 3237 "stream.ml" 86 3209 3238
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 73 2849 2862 "stream.ml" 73 2849 2863
+)
+"stream.ml" 86 3209 3237 "stream.ml" 86 3209 3244
+type(
+  int
+)
+"stream.ml" 86 3209 3230 "stream.ml" 86 3209 3244
+call(
+  stack
+)
+type(
+  'a option
+)
+"stream.ml" 86 3209 3248 "stream.ml" 86 3209 3249
+type(
+  'a gen
+)
+ident(
+  int_ref g "stream.ml" 86 3209 3217 "stream.ml" 86 3209 3218
+)
+"stream.ml" 86 3209 3263 "stream.ml" 86 3209 3264
+type(
+  'a option
+)
+ident(
+  int_ref x "stream.ml" 86 3209 3226 "stream.ml" 86 3209 3227
+)
+"stream.ml" 86 3209 3258 "stream.ml" 86 3209 3264
+type(
+  'a option option
+)
+"stream.ml" 86 3209 3248 "stream.ml" 86 3209 3264
+type(
+  unit
+)
+"stream.ml" 86 3209 3266 "stream.ml" 86 3209 3267
+type(
+  'a option
+)
+ident(
+  int_ref x "stream.ml" 86 3209 3226 "stream.ml" 86 3209 3227
+)
+"stream.ml" 86 3209 3248 "stream.ml" 86 3209 3267
+type(
+  'a option
+)
+"stream.ml" 86 3209 3222 "stream.ml" 86 3209 3267
+type(
+  'a option
+)
+"stream.ml" 87 3268 3279 "stream.ml" 87 3268 3280
+type(
+  buffio
+)
+ident(
+  def b "stream.ml" 88 3284 3289 "stream.ml" 90 3383 3441
+)
+"stream.ml" 87 3268 3271 "stream.ml" 87 3268 3280
+type(
+  'a data
+)
+"stream.ml" 88 3284 3292 "stream.ml" 88 3284 3293
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 87 3268 3279 "stream.ml" 87 3268 3280
+)
+"stream.ml" 88 3284 3292 "stream.ml" 88 3284 3297
+type(
+  int
+)
+"stream.ml" 88 3284 3298 "stream.ml" 88 3284 3300
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"stream.ml" 88 3284 3301 "stream.ml" 88 3284 3302
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 87 3268 3279 "stream.ml" 87 3268 3280
+)
+"stream.ml" 88 3284 3301 "stream.ml" 88 3284 3306
+type(
+  int
+)
+"stream.ml" 88 3284 3292 "stream.ml" 88 3284 3306
+type(
+  bool
+)
+"stream.ml" 88 3284 3312 "stream.ml" 88 3284 3321
+type(
+  buffio -> unit
+)
+ident(
+  int_ref fill_buff "stream.ml" 39 1642 1646 "stream.ml" 39 1642 1655
+)
+"stream.ml" 88 3284 3322 "stream.ml" 88 3284 3323
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 87 3268 3279 "stream.ml" 87 3268 3280
+)
+"stream.ml" 88 3284 3312 "stream.ml" 88 3284 3323
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 88 3284 3289 "stream.ml" 88 3284 3323
+type(
+  unit
+)
+"stream.ml" 89 3325 3333 "stream.ml" 89 3325 3334
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 87 3268 3279 "stream.ml" 87 3268 3280
+)
+"stream.ml" 89 3325 3333 "stream.ml" 89 3325 3338
+type(
+  int
+)
+"stream.ml" 89 3325 3339 "stream.ml" 89 3325 3341
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( == )
+)
+"stream.ml" 89 3325 3342 "stream.ml" 89 3325 3343
+type(
+  int
+)
+"stream.ml" 89 3325 3333 "stream.ml" 89 3325 3343
+type(
+  bool
+)
+"stream.ml" 89 3325 3355 "stream.ml" 89 3325 3363
+type(
+  'a t -> 'a data -> unit
+)
+ident(
+  int_ref set_data "stream.ml" 35 1554 1558 "stream.ml" 35 1554 1566
+)
+"stream.ml" 89 3325 3364 "stream.ml" 89 3325 3365
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 73 2849 2862 "stream.ml" 73 2849 2863
+)
+"stream.ml" 89 3325 3366 "stream.ml" 89 3325 3372
+type(
+  'a data
+)
+"stream.ml" 89 3325 3355 "stream.ml" 89 3325 3372
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 89 3325 3374 "stream.ml" 89 3325 3378
+type(
+  'a option
+)
+"stream.ml" 89 3325 3349 "stream.ml" 89 3325 3382
+type(
+  'a option
+)
+"stream.ml" 90 3383 3399 "stream.ml" 90 3383 3408
+type(
+  char -> 'a
+)
+ident(
+  ext_ref Obj.magic
+)
+"stream.ml" 90 3383 3410 "stream.ml" 90 3383 3426
+type(
+  bytes -> int -> char
+)
+ident(
+  ext_ref Bytes.unsafe_get
+)
+"stream.ml" 90 3383 3427 "stream.ml" 90 3383 3428
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 87 3268 3279 "stream.ml" 87 3268 3280
+)
+"stream.ml" 90 3383 3427 "stream.ml" 90 3383 3433
+type(
+  bytes
+)
+"stream.ml" 90 3383 3434 "stream.ml" 90 3383 3435
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 87 3268 3279 "stream.ml" 87 3268 3280
+)
+"stream.ml" 90 3383 3434 "stream.ml" 90 3383 3439
+type(
+  int
+)
+"stream.ml" 90 3383 3409 "stream.ml" 90 3383 3440
+type(
+  char
+)
+"stream.ml" 90 3383 3398 "stream.ml" 90 3383 3441
+type(
+  'a
+)
+"stream.ml" 90 3383 3393 "stream.ml" 90 3383 3441
+type(
+  'a option
+)
+"stream.ml" 89 3325 3330 "stream.ml" 90 3383 3441
+type(
+  'a option
+)
+"stream.ml" 88 3284 3289 "stream.ml" 90 3383 3441
+type(
+  'a option
+)
+"stream.ml" 75 2901 2902 "stream.ml" 90 3383 3441
+type(
+  'a option
+)
+"stream.ml" 93 3446 3454 "stream.ml" 93 3446 3458
+type(
+  'a t -> unit
+)
+ident(
+  def junk "stream.ml" 93 3446 3446 "stream.ml" 1 0 -1
+)
+"stream.ml" 93 3446 3459 "stream.ml" 93 3446 3460
+type(
+  'a t
+)
+ident(
+  def s "stream.ml" 94 3463 3465 "stream.ml" 101 3739 3763
+)
+"stream.ml" 94 3463 3471 "stream.ml" 94 3463 3472
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 93 3446 3459 "stream.ml" 93 3446 3460
+)
+"stream.ml" 94 3463 3471 "stream.ml" 94 3463 3477
+type(
+  'a data
+)
+"stream.ml" 95 3483 3494 "stream.ml" 95 3483 3495
+type(
+  'a
+)
+"stream.ml" 95 3483 3497 "stream.ml" 95 3483 3498
+type(
+  'a data
+)
+ident(
+  def d "stream.ml" 95 3483 3503 "stream.ml" 95 3483 3543
+)
+"stream.ml" 95 3483 3487 "stream.ml" 95 3483 3499
+type(
+  'a data
+)
+"stream.ml" 95 3483 3503 "stream.ml" 95 3483 3512
+type(
+  'a t -> int -> unit
+)
+ident(
+  int_ref set_count "stream.ml" 34 1496 1496 "stream.ml" 34 1496 1551
+)
+"stream.ml" 95 3483 3513 "stream.ml" 95 3483 3514
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 93 3446 3459 "stream.ml" 93 3446 3460
+)
+"stream.ml" 95 3483 3516 "stream.ml" 95 3483 3520
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.succ
+)
+"stream.ml" 95 3483 3521 "stream.ml" 95 3483 3522
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 93 3446 3459 "stream.ml" 93 3446 3460
+)
+"stream.ml" 95 3483 3521 "stream.ml" 95 3483 3528
+type(
+  int
+)
+"stream.ml" 95 3483 3515 "stream.ml" 95 3483 3529
+type(
+  int
+)
+"stream.ml" 95 3483 3503 "stream.ml" 95 3483 3529
+type(
+  unit
+)
+"stream.ml" 95 3483 3531 "stream.ml" 95 3483 3539
+type(
+  'a t -> 'a data -> unit
+)
+ident(
+  int_ref set_data "stream.ml" 35 1554 1558 "stream.ml" 35 1554 1566
+)
+"stream.ml" 95 3483 3540 "stream.ml" 95 3483 3541
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 93 3446 3459 "stream.ml" 93 3446 3460
+)
+"stream.ml" 95 3483 3542 "stream.ml" 95 3483 3543
+type(
+  'a data
+)
+ident(
+  int_ref d "stream.ml" 95 3483 3497 "stream.ml" 95 3483 3498
+)
+"stream.ml" 95 3483 3531 "stream.ml" 95 3483 3543
+call(
+  tail
+)
+type(
+  unit
+)
+"stream.ml" 95 3483 3503 "stream.ml" 95 3483 3543
+type(
+  unit
+)
+"stream.ml" 96 3544 3567 "stream.ml" 96 3544 3568
+type(
+  'a option
+)
+"stream.ml" 96 3544 3562 "stream.ml" 96 3544 3568
+type(
+  'a option option
+)
+"stream.ml" 96 3544 3554 "stream.ml" 96 3544 3569
+type(
+  'a gen
+)
+"stream.ml" 96 3544 3573 "stream.ml" 96 3544 3574
+ident(
+  def g "stream.ml" 96 3544 3579 "stream.ml" 96 3544 3621
+)
+"stream.ml" 96 3544 3553 "stream.ml" 96 3544 3575
+type(
+  'a gen
+)
+"stream.ml" 96 3544 3548 "stream.ml" 96 3544 3575
+type(
+  'a data
+)
+"stream.ml" 96 3544 3579 "stream.ml" 96 3544 3588
+type(
+  'a t -> int -> unit
+)
+ident(
+  int_ref set_count "stream.ml" 34 1496 1496 "stream.ml" 34 1496 1551
+)
+"stream.ml" 96 3544 3589 "stream.ml" 96 3544 3590
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 93 3446 3459 "stream.ml" 93 3446 3460
+)
+"stream.ml" 96 3544 3592 "stream.ml" 96 3544 3596
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.succ
+)
+"stream.ml" 96 3544 3597 "stream.ml" 96 3544 3598
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 93 3446 3459 "stream.ml" 93 3446 3460
+)
+"stream.ml" 96 3544 3597 "stream.ml" 96 3544 3604
+type(
+  int
+)
+"stream.ml" 96 3544 3591 "stream.ml" 96 3544 3605
+type(
+  int
+)
+"stream.ml" 96 3544 3579 "stream.ml" 96 3544 3605
+type(
+  unit
+)
+"stream.ml" 96 3544 3607 "stream.ml" 96 3544 3608
+type(
+  'a gen
+)
+ident(
+  int_ref g "stream.ml" 96 3544 3553 "stream.ml" 96 3544 3575
+)
+"stream.ml" 96 3544 3617 "stream.ml" 96 3544 3621
+type(
+  'a option option
+)
+"stream.ml" 96 3544 3607 "stream.ml" 96 3544 3621
+type(
+  unit
+)
+"stream.ml" 96 3544 3579 "stream.ml" 96 3544 3621
+type(
+  unit
+)
+"stream.ml" 97 3622 3634 "stream.ml" 97 3622 3635
+type(
+  buffio
+)
+ident(
+  def b "stream.ml" 97 3622 3639 "stream.ml" 97 3622 3686
+)
+"stream.ml" 97 3622 3626 "stream.ml" 97 3622 3635
+type(
+  'a data
+)
+"stream.ml" 97 3622 3639 "stream.ml" 97 3622 3648
+type(
+  'a t -> int -> unit
+)
+ident(
+  int_ref set_count "stream.ml" 34 1496 1496 "stream.ml" 34 1496 1551
+)
+"stream.ml" 97 3622 3649 "stream.ml" 97 3622 3650
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 93 3446 3459 "stream.ml" 93 3446 3460
+)
+"stream.ml" 97 3622 3652 "stream.ml" 97 3622 3656
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.succ
+)
+"stream.ml" 97 3622 3657 "stream.ml" 97 3622 3658
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 93 3446 3459 "stream.ml" 93 3446 3460
+)
+"stream.ml" 97 3622 3657 "stream.ml" 97 3622 3664
+type(
+  int
+)
+"stream.ml" 97 3622 3651 "stream.ml" 97 3622 3665
+type(
+  int
+)
+"stream.ml" 97 3622 3639 "stream.ml" 97 3622 3665
+type(
+  unit
+)
+"stream.ml" 97 3622 3667 "stream.ml" 97 3622 3668
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 97 3622 3634 "stream.ml" 97 3622 3635
+)
+"stream.ml" 97 3622 3676 "stream.ml" 97 3622 3680
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.succ
+)
+"stream.ml" 97 3622 3681 "stream.ml" 97 3622 3682
+type(
+  buffio
+)
+ident(
+  int_ref b "stream.ml" 97 3622 3634 "stream.ml" 97 3622 3635
+)
+"stream.ml" 97 3622 3681 "stream.ml" 97 3622 3686
+type(
+  int
+)
+"stream.ml" 97 3622 3676 "stream.ml" 97 3622 3686
+type(
+  int
+)
+"stream.ml" 97 3622 3667 "stream.ml" 97 3622 3686
+type(
+  unit
+)
+"stream.ml" 97 3622 3639 "stream.ml" 97 3622 3686
+type(
+  unit
+)
+"stream.ml" 98 3687 3691 "stream.ml" 98 3687 3692
+type(
+  'a data
+)
+"stream.ml" 99 3696 3708 "stream.ml" 99 3696 3712
+type(
+  'a t -> 'a option
+)
+ident(
+  int_ref peek "stream.ml" 73 2849 2857 "stream.ml" 73 2849 2861
+)
+"stream.ml" 99 3696 3713 "stream.ml" 99 3696 3714
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 93 3446 3459 "stream.ml" 93 3446 3460
+)
+"stream.ml" 99 3696 3708 "stream.ml" 99 3696 3714
+call(
+  stack
+)
+type(
+  'a option
+)
+"stream.ml" 100 3720 3728 "stream.ml" 100 3720 3732
+type(
+  'a option
+)
+"stream.ml" 100 3720 3736 "stream.ml" 100 3720 3738
+type(
+  unit
+)
+"stream.ml" 101 3739 3752 "stream.ml" 101 3739 3753
+type(
+  'a
+)
+"stream.ml" 101 3739 3747 "stream.ml" 101 3739 3753
+type(
+  'a option
+)
+"stream.ml" 101 3739 3757 "stream.ml" 101 3739 3761
+type(
+  'a t -> unit
+)
+ident(
+  int_ref junk "stream.ml" 93 3446 3454 "stream.ml" 93 3446 3458
+)
+"stream.ml" 101 3739 3762 "stream.ml" 101 3739 3763
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 93 3446 3459 "stream.ml" 93 3446 3460
+)
+"stream.ml" 101 3739 3757 "stream.ml" 101 3739 3763
+call(
+  tail
+)
+type(
+  unit
+)
+"stream.ml" 99 3696 3702 "stream.ml" 101 3739 3763
+type(
+  unit
+)
+"stream.ml" 94 3463 3465 "stream.ml" 101 3739 3763
+type(
+  unit
+)
+"stream.ml" 104 3768 3776 "stream.ml" 104 3768 3780
+type(
+  int -> 'a t -> 'a list * 'a data * int
+)
+ident(
+  def nget "stream.ml" 104 3768 3768 "stream.ml" 1 0 -1
+)
+"stream.ml" 104 3768 3781 "stream.ml" 104 3768 3782
+type(
+  int
+)
+ident(
+  def n "stream.ml" 104 3768 3783 "stream.ml" 111 3953 3980
+)
+"stream.ml" 104 3768 3783 "stream.ml" 104 3768 3784
+type(
+  'a t
+)
+ident(
+  def s "stream.ml" 105 3787 3789 "stream.ml" 111 3953 3980
+)
+"stream.ml" 105 3787 3792 "stream.ml" 105 3787 3793
+type(
+  int
+)
+ident(
+  int_ref n "stream.ml" 104 3768 3781 "stream.ml" 104 3768 3782
+)
+"stream.ml" 105 3787 3794 "stream.ml" 105 3787 3796
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"stream.ml" 105 3787 3797 "stream.ml" 105 3787 3798
+type(
+  int
+)
+"stream.ml" 105 3787 3792 "stream.ml" 105 3787 3798
+type(
+  bool
+)
+"stream.ml" 105 3787 3804 "stream.ml" 105 3787 3806
+type(
+  'a list
+)
+"stream.ml" 105 3787 3808 "stream.ml" 105 3787 3809
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 104 3768 3783 "stream.ml" 104 3768 3784
+)
+"stream.ml" 105 3787 3808 "stream.ml" 105 3787 3814
+type(
+  'a data
+)
+"stream.ml" 105 3787 3816 "stream.ml" 105 3787 3817
+type(
+  int
+)
+"stream.ml" 105 3787 3804 "stream.ml" 105 3787 3817
+type(
+  'a list * 'a data * int
+)
+"stream.ml" 107 3825 3835 "stream.ml" 107 3825 3839
+type(
+  'a t -> 'a option
+)
+ident(
+  int_ref peek "stream.ml" 73 2849 2857 "stream.ml" 73 2849 2861
+)
+"stream.ml" 107 3825 3840 "stream.ml" 107 3825 3841
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 104 3768 3783 "stream.ml" 104 3768 3784
+)
+"stream.ml" 107 3825 3835 "stream.ml" 107 3825 3841
+call(
+  stack
+)
+type(
+  'a option
+)
+"stream.ml" 108 3847 3858 "stream.ml" 108 3847 3859
+type(
+  'a
+)
+ident(
+  def a "stream.ml" 109 3863 3871 "stream.ml" 110 3879 3952
+)
+"stream.ml" 108 3847 3853 "stream.ml" 108 3847 3859
+type(
+  'a option
+)
+"stream.ml" 109 3863 3871 "stream.ml" 109 3863 3875
+type(
+  'a t -> unit
+)
+ident(
+  int_ref junk "stream.ml" 93 3446 3454 "stream.ml" 93 3446 3458
+)
+"stream.ml" 109 3863 3876 "stream.ml" 109 3863 3877
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 104 3768 3783 "stream.ml" 104 3768 3784
+)
+"stream.ml" 109 3863 3871 "stream.ml" 109 3863 3877
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 110 3879 3892 "stream.ml" 110 3879 3894
+type(
+  'a list
+)
+ident(
+  def al "stream.ml" 110 3879 3923 "stream.ml" 110 3879 3952
+)
+"stream.ml" 110 3879 3896 "stream.ml" 110 3879 3897
+type(
+  'a data
+)
+ident(
+  def d "stream.ml" 110 3879 3923 "stream.ml" 110 3879 3952
+)
+"stream.ml" 110 3879 3899 "stream.ml" 110 3879 3900
+type(
+  int
+)
+ident(
+  def k "stream.ml" 110 3879 3923 "stream.ml" 110 3879 3952
+)
+"stream.ml" 110 3879 3891 "stream.ml" 110 3879 3901
+type(
+  'a list * 'a data * int
+)
+"stream.ml" 110 3879 3904 "stream.ml" 110 3879 3908
+type(
+  int -> 'a t -> 'a list * 'a data * int
+)
+ident(
+  int_ref nget "stream.ml" 104 3768 3776 "stream.ml" 104 3768 3780
+)
+"stream.ml" 110 3879 3910 "stream.ml" 110 3879 3914
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.pred
+)
+"stream.ml" 110 3879 3915 "stream.ml" 110 3879 3916
+type(
+  int
+)
+ident(
+  int_ref n "stream.ml" 104 3768 3781 "stream.ml" 104 3768 3782
+)
+"stream.ml" 110 3879 3909 "stream.ml" 110 3879 3917
+type(
+  int
+)
+"stream.ml" 110 3879 3918 "stream.ml" 110 3879 3919
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 104 3768 3783 "stream.ml" 104 3768 3784
+)
+"stream.ml" 110 3879 3904 "stream.ml" 110 3879 3919
+call(
+  stack
+)
+type(
+  'a list * 'a data * int
+)
+"stream.ml" 110 3879 3923 "stream.ml" 110 3879 3924
+type(
+  'a
+)
+ident(
+  int_ref a "stream.ml" 108 3847 3858 "stream.ml" 108 3847 3859
+)
+"stream.ml" 110 3879 3928 "stream.ml" 110 3879 3930
+type(
+  'a list
+)
+ident(
+  int_ref al "stream.ml" 110 3879 3892 "stream.ml" 110 3879 3894
+)
+"stream.ml" 110 3879 3923 "stream.ml" 110 3879 3930
+type(
+  'a list
+)
+"stream.ml" 110 3879 3939 "stream.ml" 110 3879 3940
+type(
+  'a
+)
+ident(
+  int_ref a "stream.ml" 108 3847 3858 "stream.ml" 108 3847 3859
+)
+"stream.ml" 110 3879 3942 "stream.ml" 110 3879 3943
+type(
+  'a data
+)
+ident(
+  int_ref d "stream.ml" 110 3879 3896 "stream.ml" 110 3879 3897
+)
+"stream.ml" 110 3879 3932 "stream.ml" 110 3879 3944
+type(
+  'a data
+)
+"stream.ml" 110 3879 3946 "stream.ml" 110 3879 3950
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.succ
+)
+"stream.ml" 110 3879 3951 "stream.ml" 110 3879 3952
+type(
+  int
+)
+ident(
+  int_ref k "stream.ml" 110 3879 3899 "stream.ml" 110 3879 3900
+)
+"stream.ml" 110 3879 3946 "stream.ml" 110 3879 3952
+type(
+  int
+)
+"stream.ml" 110 3879 3923 "stream.ml" 110 3879 3952
+type(
+  'a list * 'a data * int
+)
+"stream.ml" 110 3879 3887 "stream.ml" 110 3879 3952
+type(
+  'a list * 'a data * int
+)
+"stream.ml" 109 3863 3871 "stream.ml" 110 3879 3952
+type(
+  'a list * 'a data * int
+)
+"stream.ml" 111 3953 3959 "stream.ml" 111 3953 3963
+type(
+  'a option
+)
+"stream.ml" 111 3953 3967 "stream.ml" 111 3953 3969
+type(
+  'a list
+)
+"stream.ml" 111 3953 3971 "stream.ml" 111 3953 3972
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 104 3768 3783 "stream.ml" 104 3768 3784
+)
+"stream.ml" 111 3953 3971 "stream.ml" 111 3953 3977
+type(
+  'a data
+)
+"stream.ml" 111 3953 3979 "stream.ml" 111 3953 3980
+type(
+  int
+)
+"stream.ml" 111 3953 3967 "stream.ml" 111 3953 3980
+type(
+  'a list * 'a data * int
+)
+"stream.ml" 107 3825 3829 "stream.ml" 111 3953 3980
+type(
+  'a list * 'a data * int
+)
+"stream.ml" 105 3787 3789 "stream.ml" 111 3953 3980
+type(
+  'a list * 'a data * int
+)
+"stream.ml" 114 3985 3989 "stream.ml" 114 3985 3994
+type(
+  int -> 'a t -> 'a list
+)
+ident(
+  def npeek "stream.ml" 118 4084 4084 "stream.ml" 1 0 -1
+)
+"stream.ml" 114 3985 3995 "stream.ml" 114 3985 3996
+type(
+  int
+)
+ident(
+  def n "stream.ml" 114 3985 3997 "stream.ml" 115 4001 4079
+)
+"stream.ml" 114 3985 3997 "stream.ml" 114 3985 3998
+type(
+  'a t
+)
+ident(
+  def s "stream.ml" 115 4001 4003 "stream.ml" 115 4001 4079
+)
+"stream.ml" 115 4001 4008 "stream.ml" 115 4001 4010
+type(
+  'a list
+)
+ident(
+  def al "stream.ml" 115 4001 4034 "stream.ml" 115 4001 4079
+)
+"stream.ml" 115 4001 4012 "stream.ml" 115 4001 4013
+type(
+  'a data
+)
+ident(
+  def d "stream.ml" 115 4001 4034 "stream.ml" 115 4001 4079
+)
+"stream.ml" 115 4001 4015 "stream.ml" 115 4001 4018
+type(
+  int
+)
+ident(
+  def len "stream.ml" 115 4001 4034 "stream.ml" 115 4001 4079
+)
+"stream.ml" 115 4001 4007 "stream.ml" 115 4001 4019
+type(
+  'a list * 'a data * int
+)
+"stream.ml" 115 4001 4022 "stream.ml" 115 4001 4026
+type(
+  int -> 'a t -> 'a list * 'a data * int
+)
+ident(
+  int_ref nget "stream.ml" 104 3768 3776 "stream.ml" 104 3768 3780
+)
+"stream.ml" 115 4001 4027 "stream.ml" 115 4001 4028
+type(
+  int
+)
+ident(
+  int_ref n "stream.ml" 114 3985 3995 "stream.ml" 114 3985 3996
+)
+"stream.ml" 115 4001 4029 "stream.ml" 115 4001 4030
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 114 3985 3997 "stream.ml" 114 3985 3998
+)
+"stream.ml" 115 4001 4022 "stream.ml" 115 4001 4030
+call(
+  stack
+)
+type(
+  'a list * 'a data * int
+)
+"stream.ml" 115 4001 4034 "stream.ml" 115 4001 4043
+type(
+  'a t -> int -> unit
+)
+ident(
+  int_ref set_count "stream.ml" 34 1496 1496 "stream.ml" 34 1496 1551
+)
+"stream.ml" 115 4001 4044 "stream.ml" 115 4001 4045
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 114 3985 3997 "stream.ml" 114 3985 3998
+)
+"stream.ml" 115 4001 4047 "stream.ml" 115 4001 4048
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 114 3985 3997 "stream.ml" 114 3985 3998
+)
+"stream.ml" 115 4001 4047 "stream.ml" 115 4001 4054
+type(
+  int
+)
+"stream.ml" 115 4001 4055 "stream.ml" 115 4001 4056
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"stream.ml" 115 4001 4057 "stream.ml" 115 4001 4060
+type(
+  int
+)
+ident(
+  int_ref len "stream.ml" 115 4001 4015 "stream.ml" 115 4001 4018
+)
+"stream.ml" 115 4001 4046 "stream.ml" 115 4001 4061
+type(
+  int
+)
+"stream.ml" 115 4001 4034 "stream.ml" 115 4001 4061
+type(
+  unit
+)
+"stream.ml" 115 4001 4063 "stream.ml" 115 4001 4071
+type(
+  'a t -> 'a data -> unit
+)
+ident(
+  int_ref set_data "stream.ml" 35 1554 1558 "stream.ml" 35 1554 1566
+)
+"stream.ml" 115 4001 4072 "stream.ml" 115 4001 4073
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 114 3985 3997 "stream.ml" 114 3985 3998
+)
+"stream.ml" 115 4001 4074 "stream.ml" 115 4001 4075
+type(
+  'a data
+)
+ident(
+  int_ref d "stream.ml" 115 4001 4012 "stream.ml" 115 4001 4013
+)
+"stream.ml" 115 4001 4063 "stream.ml" 115 4001 4075
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 115 4001 4077 "stream.ml" 115 4001 4079
+type(
+  'a list
+)
+ident(
+  int_ref al "stream.ml" 115 4001 4008 "stream.ml" 115 4001 4010
+)
+"stream.ml" 115 4001 4063 "stream.ml" 115 4001 4079
+type(
+  'a list
+)
+"stream.ml" 115 4001 4034 "stream.ml" 115 4001 4079
+type(
+  'a list
+)
+"stream.ml" 115 4001 4003 "stream.ml" 115 4001 4079
+type(
+  'a list
+)
+"stream.ml" 118 4084 4088 "stream.ml" 118 4084 4092
+type(
+  'a t -> 'a
+)
+ident(
+  def next "stream.ml" 124 4171 4171 "stream.ml" 1 0 -1
+)
+"stream.ml" 118 4084 4093 "stream.ml" 118 4084 4094
+type(
+  'a t
+)
+ident(
+  def s "stream.ml" 119 4097 4099 "stream.ml" 121 4141 4166
+)
+"stream.ml" 119 4097 4105 "stream.ml" 119 4097 4109
+type(
+  'a t -> 'a option
+)
+ident(
+  int_ref peek "stream.ml" 73 2849 2857 "stream.ml" 73 2849 2861
+)
+"stream.ml" 119 4097 4110 "stream.ml" 119 4097 4111
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 118 4084 4093 "stream.ml" 118 4084 4094
+)
+"stream.ml" 119 4097 4105 "stream.ml" 119 4097 4111
+call(
+  stack
+)
+type(
+  'a option
+)
+"stream.ml" 120 4117 4126 "stream.ml" 120 4117 4127
+type(
+  'a
+)
+ident(
+  def a "stream.ml" 120 4117 4131 "stream.ml" 120 4117 4140
+)
+"stream.ml" 120 4117 4121 "stream.ml" 120 4117 4127
+type(
+  'a option
+)
+"stream.ml" 120 4117 4131 "stream.ml" 120 4117 4135
+type(
+  'a t -> unit
+)
+ident(
+  int_ref junk "stream.ml" 93 3446 3454 "stream.ml" 93 3446 3458
+)
+"stream.ml" 120 4117 4136 "stream.ml" 120 4117 4137
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 118 4084 4093 "stream.ml" 118 4084 4094
+)
+"stream.ml" 120 4117 4131 "stream.ml" 120 4117 4137
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 120 4117 4139 "stream.ml" 120 4117 4140
+type(
+  'a
+)
+ident(
+  int_ref a "stream.ml" 120 4117 4126 "stream.ml" 120 4117 4127
+)
+"stream.ml" 120 4117 4131 "stream.ml" 120 4117 4140
+type(
+  'a
+)
+"stream.ml" 121 4141 4145 "stream.ml" 121 4141 4149
+type(
+  'a option
+)
+"stream.ml" 121 4141 4153 "stream.ml" 121 4141 4158
+type(
+  exn -> 'a
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"stream.ml" 121 4141 4159 "stream.ml" 121 4141 4166
+type(
+  exn
+)
+"stream.ml" 121 4141 4153 "stream.ml" 121 4141 4166
+type(
+  'a
+)
+"stream.ml" 119 4097 4099 "stream.ml" 121 4141 4166
+type(
+  'a
+)
+"stream.ml" 124 4171 4175 "stream.ml" 124 4171 4180
+type(
+  'a t -> unit
+)
+ident(
+  def empty "stream.ml" 130 4252 4252 "stream.ml" 1 0 -1
+)
+"stream.ml" 124 4171 4181 "stream.ml" 124 4171 4182
+type(
+  'a t
+)
+ident(
+  def s "stream.ml" 125 4185 4187 "stream.ml" 127 4233 4247
+)
+"stream.ml" 125 4185 4193 "stream.ml" 125 4185 4197
+type(
+  'a t -> 'a option
+)
+ident(
+  int_ref peek "stream.ml" 73 2849 2857 "stream.ml" 73 2849 2861
+)
+"stream.ml" 125 4185 4198 "stream.ml" 125 4185 4199
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 124 4171 4181 "stream.ml" 124 4171 4182
+)
+"stream.ml" 125 4185 4193 "stream.ml" 125 4185 4199
+call(
+  stack
+)
+type(
+  'a option
+)
+"stream.ml" 126 4205 4214 "stream.ml" 126 4205 4215
+type(
+  'a
+)
+"stream.ml" 126 4205 4209 "stream.ml" 126 4205 4215
+type(
+  'a option
+)
+"stream.ml" 126 4205 4219 "stream.ml" 126 4205 4224
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"stream.ml" 126 4205 4225 "stream.ml" 126 4205 4232
+type(
+  exn
+)
+"stream.ml" 126 4205 4219 "stream.ml" 126 4205 4232
+type(
+  unit
+)
+"stream.ml" 127 4233 4237 "stream.ml" 127 4233 4241
+type(
+  'a option
+)
+"stream.ml" 127 4233 4245 "stream.ml" 127 4233 4247
+type(
+  unit
+)
+"stream.ml" 125 4185 4187 "stream.ml" 127 4233 4247
+type(
+  unit
+)
+"stream.ml" 130 4252 4256 "stream.ml" 130 4252 4260
+type(
+  ('a -> 'b) -> 'a t -> unit
+)
+ident(
+  def iter "stream.ml" 141 4438 4438 "stream.ml" 1 0 -1
+)
+"stream.ml" 130 4252 4261 "stream.ml" 130 4252 4262
+type(
+  'a -> 'b
+)
+ident(
+  def f "stream.ml" 130 4252 4263 "stream.ml" 136 4389 4400
+)
+"stream.ml" 130 4252 4263 "stream.ml" 130 4252 4267
+type(
+  'a t
+)
+ident(
+  def strm "stream.ml" 131 4270 4272 "stream.ml" 136 4389 4400
+)
+"stream.ml" 131 4270 4280 "stream.ml" 131 4270 4286
+type(
+  unit -> unit
+)
+ident(
+  def do_rec "stream.ml" 131 4270 4272 "stream.ml" 136 4389 4400
+)
+"stream.ml" 131 4270 4287 "stream.ml" 131 4270 4289
+type(
+  unit
+)
+"stream.ml" 132 4292 4302 "stream.ml" 132 4292 4306
+type(
+  'a t -> 'a option
+)
+ident(
+  int_ref peek "stream.ml" 73 2849 2857 "stream.ml" 73 2849 2861
+)
+"stream.ml" 132 4292 4307 "stream.ml" 132 4292 4311
+type(
+  'a t
+)
+ident(
+  int_ref strm "stream.ml" 130 4252 4263 "stream.ml" 130 4252 4267
+)
+"stream.ml" 132 4292 4302 "stream.ml" 132 4292 4311
+call(
+  stack
+)
+type(
+  'a option
+)
+"stream.ml" 133 4317 4328 "stream.ml" 133 4317 4329
+type(
+  'a
+)
+ident(
+  def a "stream.ml" 133 4317 4333 "stream.ml" 133 4317 4366
+)
+"stream.ml" 133 4317 4323 "stream.ml" 133 4317 4329
+type(
+  'a option
+)
+"stream.ml" 133 4317 4333 "stream.ml" 133 4317 4337
+type(
+  'a t -> unit
+)
+ident(
+  int_ref junk "stream.ml" 93 3446 3454 "stream.ml" 93 3446 3458
+)
+"stream.ml" 133 4317 4338 "stream.ml" 133 4317 4342
+type(
+  'a t
+)
+ident(
+  int_ref strm "stream.ml" 130 4252 4263 "stream.ml" 130 4252 4267
+)
+"stream.ml" 133 4317 4333 "stream.ml" 133 4317 4342
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 133 4317 4344 "stream.ml" 133 4317 4350
+type(
+  'b -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"stream.ml" 133 4317 4351 "stream.ml" 133 4317 4352
+type(
+  'a -> 'b
+)
+ident(
+  int_ref f "stream.ml" 130 4252 4261 "stream.ml" 130 4252 4262
+)
+"stream.ml" 133 4317 4353 "stream.ml" 133 4317 4354
+type(
+  'a
+)
+ident(
+  int_ref a "stream.ml" 133 4317 4328 "stream.ml" 133 4317 4329
+)
+"stream.ml" 133 4317 4350 "stream.ml" 133 4317 4355
+call(
+  stack
+)
+type(
+  'b
+)
+"stream.ml" 133 4317 4344 "stream.ml" 133 4317 4355
+type(
+  unit
+)
+"stream.ml" 133 4317 4357 "stream.ml" 133 4317 4363
+type(
+  unit -> unit
+)
+ident(
+  int_ref do_rec "stream.ml" 131 4270 4280 "stream.ml" 131 4270 4286
+)
+"stream.ml" 133 4317 4364 "stream.ml" 133 4317 4366
+type(
+  unit
+)
+"stream.ml" 133 4317 4357 "stream.ml" 133 4317 4366
+call(
+  tail
+)
+type(
+  unit
+)
+"stream.ml" 133 4317 4344 "stream.ml" 133 4317 4366
+type(
+  unit
+)
+"stream.ml" 133 4317 4333 "stream.ml" 133 4317 4366
+type(
+  unit
+)
+"stream.ml" 134 4367 4373 "stream.ml" 134 4367 4377
+type(
+  'a option
+)
+"stream.ml" 134 4367 4381 "stream.ml" 134 4367 4383
+type(
+  unit
+)
+"stream.ml" 132 4292 4296 "stream.ml" 134 4367 4383
+type(
+  unit
+)
+"stream.ml" 136 4389 4391 "stream.ml" 136 4389 4397
+type(
+  unit -> unit
+)
+ident(
+  int_ref do_rec "stream.ml" 131 4270 4280 "stream.ml" 131 4270 4286
+)
+"stream.ml" 136 4389 4398 "stream.ml" 136 4389 4400
+type(
+  unit
+)
+"stream.ml" 136 4389 4391 "stream.ml" 136 4389 4400
+call(
+  tail
+)
+type(
+  unit
+)
+"stream.ml" 131 4270 4272 "stream.ml" 136 4389 4400
+type(
+  unit
+)
+"stream.ml" 141 4438 4442 "stream.ml" 141 4438 4446
+type(
+  (int -> 'a option) -> 'a t
+)
+ident(
+  def from "stream.ml" 143 4503 4503 "stream.ml" 1 0 -1
+)
+"stream.ml" 141 4438 4447 "stream.ml" 141 4438 4448
+type(
+  int -> 'a option
+)
+ident(
+  def f "stream.ml" 141 4438 4451 "stream.ml" 141 4438 4499
+)
+"stream.ml" 141 4438 4460 "stream.ml" 141 4438 4461
+type(
+  int
+)
+"stream.ml" 141 4438 4483 "stream.ml" 141 4438 4487
+type(
+  'a option option
+)
+"stream.ml" 141 4438 4496 "stream.ml" 141 4438 4497
+type(
+  int -> 'a option
+)
+ident(
+  int_ref f "stream.ml" 141 4438 4447 "stream.ml" 141 4438 4448
+)
+"stream.ml" 141 4438 4475 "stream.ml" 141 4438 4498
+type(
+  'a gen
+)
+"stream.ml" 141 4438 4470 "stream.ml" 141 4438 4498
+type(
+  'a data
+)
+"stream.ml" 141 4438 4451 "stream.ml" 141 4438 4499
+type(
+  'a t
+)
+"stream.ml" 143 4503 4507 "stream.ml" 143 4503 4514
+type(
+  'a list -> 'a t
+)
+ident(
+  def of_list "stream.ml" 147 4596 4596 "stream.ml" 1 0 -1
+)
+"stream.ml" 143 4503 4515 "stream.ml" 143 4503 4516
+type(
+  'a list
+)
+ident(
+  def l "stream.ml" 144 4519 4521 "stream.ml" 144 4519 4591
+)
+"stream.ml" 144 4519 4530 "stream.ml" 144 4519 4531
+type(
+  int
+)
+"stream.ml" 144 4519 4540 "stream.ml" 144 4519 4555
+type(
+  ('a -> 'a data -> 'a data) -> 'a list -> 'a data -> 'a data
+)
+ident(
+  ext_ref List.fold_right
+)
+"stream.ml" 144 4519 4561 "stream.ml" 144 4519 4562
+type(
+  'a
+)
+ident(
+  def x "stream.ml" 144 4519 4563 "stream.ml" 144 4519 4580
+)
+"stream.ml" 144 4519 4563 "stream.ml" 144 4519 4564
+type(
+  'a data
+)
+ident(
+  def l "stream.ml" 144 4519 4568 "stream.ml" 144 4519 4580
+)
+"stream.ml" 144 4519 4575 "stream.ml" 144 4519 4576
+type(
+  'a
+)
+ident(
+  int_ref x "stream.ml" 144 4519 4561 "stream.ml" 144 4519 4562
+)
+"stream.ml" 144 4519 4578 "stream.ml" 144 4519 4579
+type(
+  'a data
+)
+ident(
+  int_ref l "stream.ml" 144 4519 4563 "stream.ml" 144 4519 4564
+)
+"stream.ml" 144 4519 4568 "stream.ml" 144 4519 4580
+type(
+  'a data
+)
+"stream.ml" 144 4519 4556 "stream.ml" 144 4519 4581
+type(
+  'a -> 'a data -> 'a data
+)
+"stream.ml" 144 4519 4582 "stream.ml" 144 4519 4583
+type(
+  'a list
+)
+ident(
+  int_ref l "stream.ml" 143 4503 4515 "stream.ml" 143 4503 4516
+)
+"stream.ml" 144 4519 4584 "stream.ml" 144 4519 4590
+type(
+  'a data
+)
+"stream.ml" 144 4519 4540 "stream.ml" 144 4519 4590
+call(
+  stack
+)
+type(
+  'a data
+)
+"stream.ml" 144 4519 4521 "stream.ml" 144 4519 4591
+type(
+  'a t
+)
+"stream.ml" 147 4596 4600 "stream.ml" 147 4596 4609
+type(
+  string -> char t
+)
+ident(
+  def of_string "stream.ml" 162 5104 5104 "stream.ml" 1 0 -1
+)
+"stream.ml" 147 4596 4610 "stream.ml" 147 4596 4611
+type(
+  string
+)
+ident(
+  def s "stream.ml" 148 4614 4616 "stream.ml" 159 5085 5099
+)
+"stream.ml" 148 4614 4620 "stream.ml" 148 4614 4625
+type(
+  int ref
+)
+ident(
+  def count "stream.ml" 149 4637 4639 "stream.ml" 159 5085 5099
+)
+"stream.ml" 148 4614 4628 "stream.ml" 148 4614 4631
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"stream.ml" 148 4614 4632 "stream.ml" 148 4614 4633
+type(
+  int
+)
+"stream.ml" 148 4614 4628 "stream.ml" 148 4614 4633
+type(
+  int ref
+)
+"stream.ml" 149 4637 4639 "stream.ml" 149 4637 4643
+type(
+  (int -> char option) -> char t
+)
+ident(
+  int_ref from "stream.ml" 141 4438 4442 "stream.ml" 141 4438 4446
+)
+"stream.ml" 149 4637 4649 "stream.ml" 149 4637 4650
+type(
+  int
+)
+"stream.ml" 156 5002 5010 "stream.ml" 156 5002 5011
+type(
+  int
+)
+ident(
+  def c "stream.ml" 157 5024 5028 "stream.ml" 159 5085 5098
+)
+"stream.ml" 156 5002 5014 "stream.ml" 156 5002 5015
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"stream.ml" 156 5002 5015 "stream.ml" 156 5002 5020
+type(
+  int ref
+)
+ident(
+  int_ref count "stream.ml" 148 4614 4620 "stream.ml" 148 4614 4625
+)
+"stream.ml" 156 5002 5014 "stream.ml" 156 5002 5020
+type(
+  int
+)
+"stream.ml" 157 5024 5031 "stream.ml" 157 5024 5032
+type(
+  int
+)
+ident(
+  int_ref c "stream.ml" 156 5002 5010 "stream.ml" 156 5002 5011
+)
+"stream.ml" 157 5024 5033 "stream.ml" 157 5024 5034
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"stream.ml" 157 5024 5035 "stream.ml" 157 5024 5048
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"stream.ml" 157 5024 5049 "stream.ml" 157 5024 5050
+type(
+  string
+)
+ident(
+  int_ref s "stream.ml" 147 4596 4610 "stream.ml" 147 4596 4611
+)
+"stream.ml" 157 5024 5035 "stream.ml" 157 5024 5050
+type(
+  int
+)
+"stream.ml" 157 5024 5031 "stream.ml" 157 5024 5050
+type(
+  bool
+)
+"stream.ml" 158 5051 5061 "stream.ml" 158 5051 5065
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"stream.ml" 158 5051 5066 "stream.ml" 158 5051 5071
+type(
+  int ref
+)
+ident(
+  int_ref count "stream.ml" 148 4614 4620 "stream.ml" 148 4614 4625
+)
+"stream.ml" 158 5051 5061 "stream.ml" 158 5051 5071
+type(
+  unit
+)
+"stream.ml" 158 5051 5078 "stream.ml" 158 5051 5079
+type(
+  string
+)
+ident(
+  int_ref s "stream.ml" 147 4596 4610 "stream.ml" 147 4596 4611
+)
+"stream.ml" 158 5051 5081 "stream.ml" 158 5051 5082
+type(
+  int
+)
+ident(
+  int_ref c "stream.ml" 156 5002 5010 "stream.ml" 156 5002 5011
+)
+"stream.ml" 158 5051 5078 "stream.ml" 158 5051 5083
+type(
+  char
+)
+"stream.ml" 158 5051 5073 "stream.ml" 158 5051 5083
+type(
+  char option
+)
+"stream.ml" 158 5051 5060 "stream.ml" 158 5051 5084
+type(
+  char option
+)
+"stream.ml" 159 5085 5094 "stream.ml" 159 5085 5098
+type(
+  char option
+)
+"stream.ml" 157 5024 5028 "stream.ml" 159 5085 5098
+type(
+  char option
+)
+"stream.ml" 156 5002 5006 "stream.ml" 159 5085 5098
+type(
+  char option
+)
+"stream.ml" 149 4637 4644 "stream.ml" 159 5085 5099
+type(
+  int -> char option
+)
+"stream.ml" 149 4637 4639 "stream.ml" 159 5085 5099
+call(
+  tail
+)
+type(
+  char t
+)
+"stream.ml" 148 4614 4616 "stream.ml" 159 5085 5099
+type(
+  char t
+)
+"stream.ml" 162 5104 5108 "stream.ml" 162 5104 5116
+type(
+  bytes -> char t
+)
+ident(
+  def of_bytes "stream.ml" 171 5272 5272 "stream.ml" 1 0 -1
+)
+"stream.ml" 162 5104 5117 "stream.ml" 162 5104 5118
+type(
+  bytes
+)
+ident(
+  def s "stream.ml" 163 5121 5123 "stream.ml" 168 5253 5267
+)
+"stream.ml" 163 5121 5127 "stream.ml" 163 5121 5132
+type(
+  int ref
+)
+ident(
+  def count "stream.ml" 164 5144 5146 "stream.ml" 168 5253 5267
+)
+"stream.ml" 163 5121 5135 "stream.ml" 163 5121 5138
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"stream.ml" 163 5121 5139 "stream.ml" 163 5121 5140
+type(
+  int
+)
+"stream.ml" 163 5121 5135 "stream.ml" 163 5121 5140
+type(
+  int ref
+)
+"stream.ml" 164 5144 5146 "stream.ml" 164 5144 5150
+type(
+  (int -> char option) -> char t
+)
+ident(
+  int_ref from "stream.ml" 141 4438 4442 "stream.ml" 141 4438 4446
+)
+"stream.ml" 164 5144 5156 "stream.ml" 164 5144 5157
+type(
+  int
+)
+"stream.ml" 165 5161 5169 "stream.ml" 165 5161 5170
+type(
+  int
+)
+ident(
+  def c "stream.ml" 166 5183 5187 "stream.ml" 168 5253 5266
+)
+"stream.ml" 165 5161 5173 "stream.ml" 165 5161 5174
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"stream.ml" 165 5161 5174 "stream.ml" 165 5161 5179
+type(
+  int ref
+)
+ident(
+  int_ref count "stream.ml" 163 5121 5127 "stream.ml" 163 5121 5132
+)
+"stream.ml" 165 5161 5173 "stream.ml" 165 5161 5179
+type(
+  int
+)
+"stream.ml" 166 5183 5190 "stream.ml" 166 5183 5191
+type(
+  int
+)
+ident(
+  int_ref c "stream.ml" 165 5161 5169 "stream.ml" 165 5161 5170
+)
+"stream.ml" 166 5183 5192 "stream.ml" 166 5183 5193
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"stream.ml" 166 5183 5194 "stream.ml" 166 5183 5206
+type(
+  bytes -> int
+)
+ident(
+  ext_ref Bytes.length
+)
+"stream.ml" 166 5183 5207 "stream.ml" 166 5183 5208
+type(
+  bytes
+)
+ident(
+  int_ref s "stream.ml" 162 5104 5117 "stream.ml" 162 5104 5118
+)
+"stream.ml" 166 5183 5194 "stream.ml" 166 5183 5208
+type(
+  int
+)
+"stream.ml" 166 5183 5190 "stream.ml" 166 5183 5208
+type(
+  bool
+)
+"stream.ml" 167 5209 5219 "stream.ml" 167 5209 5223
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"stream.ml" 167 5209 5224 "stream.ml" 167 5209 5229
+type(
+  int ref
+)
+ident(
+  int_ref count "stream.ml" 163 5121 5127 "stream.ml" 163 5121 5132
+)
+"stream.ml" 167 5209 5219 "stream.ml" 167 5209 5229
+type(
+  unit
+)
+"stream.ml" 167 5209 5237 "stream.ml" 167 5209 5246
+type(
+  bytes -> int -> char
+)
+ident(
+  ext_ref Bytes.get
+)
+"stream.ml" 167 5209 5247 "stream.ml" 167 5209 5248
+type(
+  bytes
+)
+ident(
+  int_ref s "stream.ml" 162 5104 5117 "stream.ml" 162 5104 5118
+)
+"stream.ml" 167 5209 5249 "stream.ml" 167 5209 5250
+type(
+  int
+)
+ident(
+  int_ref c "stream.ml" 165 5161 5169 "stream.ml" 165 5161 5170
+)
+"stream.ml" 167 5209 5236 "stream.ml" 167 5209 5251
+type(
+  char
+)
+"stream.ml" 167 5209 5231 "stream.ml" 167 5209 5251
+type(
+  char option
+)
+"stream.ml" 167 5209 5218 "stream.ml" 167 5209 5252
+type(
+  char option
+)
+"stream.ml" 168 5253 5262 "stream.ml" 168 5253 5266
+type(
+  char option
+)
+"stream.ml" 166 5183 5187 "stream.ml" 168 5253 5266
+type(
+  char option
+)
+"stream.ml" 165 5161 5165 "stream.ml" 168 5253 5266
+type(
+  char option
+)
+"stream.ml" 164 5144 5151 "stream.ml" 168 5253 5267
+type(
+  int -> char option
+)
+"stream.ml" 164 5144 5146 "stream.ml" 168 5253 5267
+call(
+  tail
+)
+type(
+  char t
+)
+"stream.ml" 163 5121 5123 "stream.ml" 168 5253 5267
+type(
+  char t
+)
+"stream.ml" 171 5272 5276 "stream.ml" 171 5272 5286
+type(
+  in_channel -> 'a t
+)
+ident(
+  def of_channel "stream.ml" 178 5418 5418 "stream.ml" 1 0 -1
+)
+"stream.ml" 171 5272 5287 "stream.ml" 171 5272 5289
+type(
+  in_channel
+)
+ident(
+  def ic "stream.ml" 172 5292 5294 "stream.ml" 173 5306 5378
+)
+"stream.ml" 172 5292 5303 "stream.ml" 172 5292 5304
+type(
+  int
+)
+"stream.ml" 173 5306 5330 "stream.ml" 173 5306 5332
+type(
+  in_channel
+)
+ident(
+  int_ref ic "stream.ml" 171 5272 5287 "stream.ml" 171 5272 5289
+)
+"stream.ml" 173 5306 5341 "stream.ml" 173 5306 5353
+type(
+  int -> bytes
+)
+ident(
+  ext_ref Bytes.create
+)
+"stream.ml" 173 5306 5354 "stream.ml" 173 5306 5358
+type(
+  int
+)
+"stream.ml" 173 5306 5341 "stream.ml" 173 5306 5358
+type(
+  bytes
+)
+"stream.ml" 173 5306 5366 "stream.ml" 173 5306 5367
+type(
+  int
+)
+"stream.ml" 173 5306 5375 "stream.ml" 173 5306 5376
+type(
+  int
+)
+"stream.ml" 173 5306 5324 "stream.ml" 173 5306 5377
+type(
+  buffio
+)
+"stream.ml" 173 5306 5316 "stream.ml" 173 5306 5377
+type(
+  'a data
+)
+"stream.ml" 172 5292 5294 "stream.ml" 173 5306 5378
+type(
+  'a t
+)
+"stream.ml" 178 5418 5422 "stream.ml" 178 5418 5426
+type(
+  'a t -> 'a t -> 'a t
+)
+ident(
+  def iapp "stream.ml" 179 5477 5477 "stream.ml" 1 0 -1
+)
+"stream.ml" 178 5418 5427 "stream.ml" 178 5418 5428
+type(
+  'a t
+)
+ident(
+  def i "stream.ml" 178 5418 5429 "stream.ml" 178 5418 5474
+)
+"stream.ml" 178 5418 5429 "stream.ml" 178 5418 5430
+type(
+  'a t
+)
+ident(
+  def s "stream.ml" 178 5418 5433 "stream.ml" 178 5418 5474
+)
+"stream.ml" 178 5418 5442 "stream.ml" 178 5418 5443
+type(
+  int
+)
+"stream.ml" 178 5418 5458 "stream.ml" 178 5418 5459
+type(
+  'a t
+)
+ident(
+  int_ref i "stream.ml" 178 5418 5427 "stream.ml" 178 5418 5428
+)
+"stream.ml" 178 5418 5458 "stream.ml" 178 5418 5464
+type(
+  'a data
+)
+"stream.ml" 178 5418 5466 "stream.ml" 178 5418 5467
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 178 5418 5429 "stream.ml" 178 5418 5430
+)
+"stream.ml" 178 5418 5466 "stream.ml" 178 5418 5472
+type(
+  'a data
+)
+"stream.ml" 178 5418 5452 "stream.ml" 178 5418 5473
+type(
+  'a data
+)
+"stream.ml" 178 5418 5433 "stream.ml" 178 5418 5474
+type(
+  'a t
+)
+"stream.ml" 179 5477 5481 "stream.ml" 179 5477 5486
+type(
+  'a -> 'a t -> 'a t
+)
+ident(
+  def icons "stream.ml" 180 5533 5533 "stream.ml" 1 0 -1
+)
+"stream.ml" 179 5477 5487 "stream.ml" 179 5477 5488
+type(
+  'a
+)
+ident(
+  def i "stream.ml" 179 5477 5489 "stream.ml" 179 5477 5530
+)
+"stream.ml" 179 5477 5489 "stream.ml" 179 5477 5490
+type(
+  'a t
+)
+ident(
+  def s "stream.ml" 179 5477 5493 "stream.ml" 179 5477 5530
+)
+"stream.ml" 179 5477 5502 "stream.ml" 179 5477 5503
+type(
+  int
+)
+"stream.ml" 179 5477 5519 "stream.ml" 179 5477 5520
+type(
+  'a
+)
+ident(
+  int_ref i "stream.ml" 179 5477 5487 "stream.ml" 179 5477 5488
+)
+"stream.ml" 179 5477 5522 "stream.ml" 179 5477 5523
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 179 5477 5489 "stream.ml" 179 5477 5490
+)
+"stream.ml" 179 5477 5522 "stream.ml" 179 5477 5528
+type(
+  'a data
+)
+"stream.ml" 179 5477 5512 "stream.ml" 179 5477 5529
+type(
+  'a data
+)
+"stream.ml" 179 5477 5493 "stream.ml" 179 5477 5530
+type(
+  'a t
+)
+"stream.ml" 180 5533 5537 "stream.ml" 180 5533 5542
+type(
+  'a -> 'a t
+)
+ident(
+  def ising "stream.ml" 182 5588 5588 "stream.ml" 1 0 -1
+)
+"stream.ml" 180 5533 5543 "stream.ml" 180 5533 5544
+type(
+  'a
+)
+ident(
+  def i "stream.ml" 180 5533 5547 "stream.ml" 180 5533 5584
+)
+"stream.ml" 180 5533 5556 "stream.ml" 180 5533 5557
+type(
+  int
+)
+"stream.ml" 180 5533 5573 "stream.ml" 180 5533 5574
+type(
+  'a
+)
+ident(
+  int_ref i "stream.ml" 180 5533 5543 "stream.ml" 180 5533 5544
+)
+"stream.ml" 180 5533 5576 "stream.ml" 180 5533 5582
+type(
+  'a data
+)
+"stream.ml" 180 5533 5566 "stream.ml" 180 5533 5583
+type(
+  'a data
+)
+"stream.ml" 180 5533 5547 "stream.ml" 180 5533 5584
+type(
+  'a t
+)
+"stream.ml" 182 5588 5592 "stream.ml" 182 5588 5596
+type(
+  (unit -> 'a t) -> 'a t -> 'a t
+)
+ident(
+  def lapp "stream.ml" 185 5669 5669 "stream.ml" 1 0 -1
+)
+"stream.ml" 182 5588 5597 "stream.ml" 182 5588 5598
+type(
+  unit -> 'a t
+)
+ident(
+  def f "stream.ml" 182 5588 5599 "stream.ml" 183 5603 5665
+)
+"stream.ml" 182 5588 5599 "stream.ml" 182 5588 5600
+type(
+  'a t
+)
+ident(
+  def s "stream.ml" 183 5603 5605 "stream.ml" 183 5603 5665
+)
+"stream.ml" 183 5603 5614 "stream.ml" 183 5603 5615
+type(
+  int
+)
+"stream.ml" 183 5603 5643 "stream.ml" 183 5603 5644
+type(
+  unit -> 'a t
+)
+ident(
+  int_ref f "stream.ml" 182 5588 5597 "stream.ml" 182 5588 5598
+)
+"stream.ml" 183 5603 5645 "stream.ml" 183 5603 5647
+type(
+  unit
+)
+"stream.ml" 183 5603 5642 "stream.ml" 183 5603 5648
+call(
+  stack
+)
+type(
+  'a t
+)
+"stream.ml" 183 5603 5642 "stream.ml" 183 5603 5653
+type(
+  'a data
+)
+"stream.ml" 183 5603 5655 "stream.ml" 183 5603 5656
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 182 5588 5599 "stream.ml" 182 5588 5600
+)
+"stream.ml" 183 5603 5655 "stream.ml" 183 5603 5661
+type(
+  'a data
+)
+"stream.ml" 183 5603 5635 "stream.ml" 183 5603 5663
+type(
+  'a data
+)
+"stream.ml" 183 5603 5630 "stream.ml" 183 5603 5664
+type(
+  'a data Lazy.t
+)
+"stream.ml" 183 5603 5624 "stream.ml" 183 5603 5664
+type(
+  'a data
+)
+"stream.ml" 183 5603 5605 "stream.ml" 183 5603 5665
+type(
+  'a t
+)
+"stream.ml" 185 5669 5673 "stream.ml" 185 5669 5678
+type(
+  (unit -> 'a) -> 'a t -> 'a t
+)
+ident(
+  def lcons "stream.ml" 186 5742 5742 "stream.ml" 1 0 -1
+)
+"stream.ml" 185 5669 5679 "stream.ml" 185 5669 5680
+type(
+  unit -> 'a
+)
+ident(
+  def f "stream.ml" 185 5669 5681 "stream.ml" 185 5669 5739
+)
+"stream.ml" 185 5669 5681 "stream.ml" 185 5669 5682
+type(
+  'a t
+)
+ident(
+  def s "stream.ml" 185 5669 5685 "stream.ml" 185 5669 5739
+)
+"stream.ml" 185 5669 5694 "stream.ml" 185 5669 5695
+type(
+  int
+)
+"stream.ml" 185 5669 5723 "stream.ml" 185 5669 5724
+type(
+  unit -> 'a
+)
+ident(
+  int_ref f "stream.ml" 185 5669 5679 "stream.ml" 185 5669 5680
+)
+"stream.ml" 185 5669 5725 "stream.ml" 185 5669 5727
+type(
+  unit
+)
+"stream.ml" 185 5669 5723 "stream.ml" 185 5669 5727
+call(
+  stack
+)
+type(
+  'a
+)
+"stream.ml" 185 5669 5729 "stream.ml" 185 5669 5730
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 185 5669 5681 "stream.ml" 185 5669 5682
+)
+"stream.ml" 185 5669 5729 "stream.ml" 185 5669 5735
+type(
+  'a data
+)
+"stream.ml" 185 5669 5715 "stream.ml" 185 5669 5737
+type(
+  'a data
+)
+"stream.ml" 185 5669 5710 "stream.ml" 185 5669 5738
+type(
+  'a data Lazy.t
+)
+"stream.ml" 185 5669 5704 "stream.ml" 185 5669 5738
+type(
+  'a data
+)
+"stream.ml" 185 5669 5685 "stream.ml" 185 5669 5739
+type(
+  'a t
+)
+"stream.ml" 186 5742 5746 "stream.ml" 186 5742 5751
+type(
+  (unit -> 'a) -> 'a t
+)
+ident(
+  def lsing "stream.ml" 188 5814 5814 "stream.ml" 1 0 -1
+)
+"stream.ml" 186 5742 5752 "stream.ml" 186 5742 5753
+type(
+  unit -> 'a
+)
+ident(
+  def f "stream.ml" 186 5742 5756 "stream.ml" 186 5742 5810
+)
+"stream.ml" 186 5742 5765 "stream.ml" 186 5742 5766
+type(
+  int
+)
+"stream.ml" 186 5742 5794 "stream.ml" 186 5742 5795
+type(
+  unit -> 'a
+)
+ident(
+  int_ref f "stream.ml" 186 5742 5752 "stream.ml" 186 5742 5753
+)
+"stream.ml" 186 5742 5796 "stream.ml" 186 5742 5798
+type(
+  unit
+)
+"stream.ml" 186 5742 5794 "stream.ml" 186 5742 5798
+call(
+  stack
+)
+type(
+  'a
+)
+"stream.ml" 186 5742 5800 "stream.ml" 186 5742 5806
+type(
+  'a data
+)
+"stream.ml" 186 5742 5786 "stream.ml" 186 5742 5808
+type(
+  'a data
+)
+"stream.ml" 186 5742 5781 "stream.ml" 186 5742 5809
+type(
+  'a data Lazy.t
+)
+"stream.ml" 186 5742 5775 "stream.ml" 186 5742 5809
+type(
+  'a data
+)
+"stream.ml" 186 5742 5756 "stream.ml" 186 5742 5810
+type(
+  'a t
+)
+"stream.ml" 188 5814 5818 "stream.ml" 188 5814 5824
+type(
+  'a t
+)
+ident(
+  def sempty "stream.ml" 189 5856 5856 "stream.ml" 1 0 -1
+)
+"stream.ml" 188 5814 5836 "stream.ml" 188 5814 5837
+type(
+  int
+)
+"stream.ml" 188 5814 5846 "stream.ml" 188 5814 5852
+type(
+  'a data
+)
+"stream.ml" 188 5814 5827 "stream.ml" 188 5814 5853
+type(
+  'a t
+)
+"stream.ml" 189 5856 5860 "stream.ml" 189 5856 5865
+type(
+  (unit -> 'a t) -> 'a t
+)
+ident(
+  def slazy "stream.ml" 193 5942 5942 "stream.ml" 1 0 -1
+)
+"stream.ml" 189 5856 5866 "stream.ml" 189 5856 5867
+type(
+  unit -> 'a t
+)
+ident(
+  def f "stream.ml" 189 5856 5870 "stream.ml" 189 5856 5913
+)
+"stream.ml" 189 5856 5879 "stream.ml" 189 5856 5880
+type(
+  int
+)
+"stream.ml" 189 5856 5901 "stream.ml" 189 5856 5902
+type(
+  unit -> 'a t
+)
+ident(
+  int_ref f "stream.ml" 189 5856 5866 "stream.ml" 189 5856 5867
+)
+"stream.ml" 189 5856 5903 "stream.ml" 189 5856 5905
+type(
+  unit
+)
+"stream.ml" 189 5856 5900 "stream.ml" 189 5856 5906
+call(
+  stack
+)
+type(
+  'a t
+)
+"stream.ml" 189 5856 5900 "stream.ml" 189 5856 5911
+type(
+  'a data
+)
+"stream.ml" 189 5856 5895 "stream.ml" 189 5856 5912
+type(
+  'a data Lazy.t
+)
+"stream.ml" 189 5856 5889 "stream.ml" 189 5856 5912
+type(
+  'a data
+)
+"stream.ml" 189 5856 5870 "stream.ml" 189 5856 5913
+type(
+  'a t
+)
+"stream.ml" 193 5942 5950 "stream.ml" 193 5942 5954
+type(
+  ('a -> unit) -> 'a t -> unit
+)
+ident(
+  def dump "stream.ml" 193 5942 5942 "stream.ml" 1 0 -1
+)
+"stream.ml" 193 5942 5955 "stream.ml" 193 5942 5956
+type(
+  'a -> unit
+)
+ident(
+  def f "stream.ml" 193 5942 5957 "stream.ml" 199 6080 6098
+)
+"stream.ml" 193 5942 5957 "stream.ml" 193 5942 5958
+type(
+  'a t
+)
+ident(
+  def s "stream.ml" 194 5961 5963 "stream.ml" 199 6080 6098
+)
+"stream.ml" 194 5961 5963 "stream.ml" 194 5961 5975
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"stream.ml" 194 5961 5976 "stream.ml" 194 5961 5987
+type(
+  string
+)
+"stream.ml" 194 5961 5963 "stream.ml" 194 5961 5987
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 195 5989 5991 "stream.ml" 195 5989 6000
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.print_int
+)
+"stream.ml" 195 5989 6001 "stream.ml" 195 5989 6002
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 193 5942 5957 "stream.ml" 193 5942 5958
+)
+"stream.ml" 195 5989 6001 "stream.ml" 195 5989 6008
+type(
+  int
+)
+"stream.ml" 195 5989 5991 "stream.ml" 195 5989 6008
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 196 6010 6012 "stream.ml" 196 6010 6024
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"stream.ml" 196 6010 6025 "stream.ml" 196 6010 6036
+type(
+  string
+)
+"stream.ml" 196 6010 6012 "stream.ml" 196 6010 6036
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 197 6038 6040 "stream.ml" 197 6038 6049
+type(
+  ('a -> unit) -> 'a data -> unit
+)
+ident(
+  int_ref dump_data "stream.ml" 200 6099 6103 "stream.ml" 200 6099 6112
+)
+"stream.ml" 197 6038 6050 "stream.ml" 197 6038 6051
+type(
+  'a -> unit
+)
+ident(
+  int_ref f "stream.ml" 193 5942 5955 "stream.ml" 193 5942 5956
+)
+"stream.ml" 197 6038 6052 "stream.ml" 197 6038 6053
+type(
+  'a t
+)
+ident(
+  int_ref s "stream.ml" 193 5942 5957 "stream.ml" 193 5942 5958
+)
+"stream.ml" 197 6038 6052 "stream.ml" 197 6038 6058
+type(
+  'a data
+)
+"stream.ml" 197 6038 6040 "stream.ml" 197 6038 6058
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 198 6060 6062 "stream.ml" 198 6060 6074
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"stream.ml" 198 6060 6075 "stream.ml" 198 6060 6078
+type(
+  string
+)
+"stream.ml" 198 6060 6062 "stream.ml" 198 6060 6078
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 199 6080 6082 "stream.ml" 199 6080 6095
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"stream.ml" 199 6080 6096 "stream.ml" 199 6080 6098
+type(
+  unit
+)
+"stream.ml" 199 6080 6082 "stream.ml" 199 6080 6098
+call(
+  tail
+)
+type(
+  unit
+)
+"stream.ml" 198 6060 6062 "stream.ml" 199 6080 6098
+type(
+  unit
+)
+"stream.ml" 197 6038 6040 "stream.ml" 199 6080 6098
+type(
+  unit
+)
+"stream.ml" 196 6010 6012 "stream.ml" 199 6080 6098
+type(
+  unit
+)
+"stream.ml" 195 5989 5991 "stream.ml" 199 6080 6098
+type(
+  unit
+)
+"stream.ml" 194 5961 5963 "stream.ml" 199 6080 6098
+type(
+  unit
+)
+"stream.ml" 200 6099 6103 "stream.ml" 200 6099 6112
+type(
+  ('a -> unit) -> 'a data -> unit
+)
+ident(
+  def dump_data "stream.ml" 193 5942 5942 "stream.ml" 1 0 -1
+)
+"stream.ml" 200 6099 6113 "stream.ml" 200 6099 6114
+type(
+  'a -> unit
+)
+ident(
+  def f "stream.ml" 201 6117 6119 "stream.ml" 217 6506 6545
+)
+"stream.ml" 202 6128 6132 "stream.ml" 202 6128 6138
+type(
+  'a data
+)
+"stream.ml" 202 6128 6142 "stream.ml" 202 6128 6154
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"stream.ml" 202 6128 6155 "stream.ml" 202 6128 6163
+type(
+  string
+)
+"stream.ml" 202 6128 6142 "stream.ml" 202 6128 6163
+call(
+  tail
+)
+type(
+  unit
+)
+"stream.ml" 203 6164 6175 "stream.ml" 203 6164 6176
+type(
+  'a
+)
+ident(
+  def a "stream.ml" 204 6184 6190 "stream.ml" 208 6271 6293
+)
+"stream.ml" 203 6164 6178 "stream.ml" 203 6164 6179
+type(
+  'a data
+)
+ident(
+  def d "stream.ml" 204 6184 6190 "stream.ml" 208 6271 6293
+)
+"stream.ml" 203 6164 6168 "stream.ml" 203 6164 6180
+type(
+  'a data
+)
+"stream.ml" 204 6184 6190 "stream.ml" 204 6184 6202
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"stream.ml" 204 6184 6203 "stream.ml" 204 6184 6212
+type(
+  string
+)
+"stream.ml" 204 6184 6190 "stream.ml" 204 6184 6212
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 205 6214 6220 "stream.ml" 205 6214 6221
+type(
+  'a -> unit
+)
+ident(
+  int_ref f "stream.ml" 200 6099 6113 "stream.ml" 200 6099 6114
+)
+"stream.ml" 205 6214 6222 "stream.ml" 205 6214 6223
+type(
+  'a
+)
+ident(
+  int_ref a "stream.ml" 203 6164 6175 "stream.ml" 203 6164 6176
+)
+"stream.ml" 205 6214 6220 "stream.ml" 205 6214 6223
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 206 6225 6231 "stream.ml" 206 6225 6243
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"stream.ml" 206 6225 6244 "stream.ml" 206 6225 6248
+type(
+  string
+)
+"stream.ml" 206 6225 6231 "stream.ml" 206 6225 6248
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 207 6250 6256 "stream.ml" 207 6250 6265
+type(
+  ('a -> unit) -> 'a data -> unit
+)
+ident(
+  int_ref dump_data "stream.ml" 200 6099 6103 "stream.ml" 200 6099 6112
+)
+"stream.ml" 207 6250 6266 "stream.ml" 207 6250 6267
+type(
+  'a -> unit
+)
+ident(
+  int_ref f "stream.ml" 200 6099 6113 "stream.ml" 200 6099 6114
+)
+"stream.ml" 207 6250 6268 "stream.ml" 207 6250 6269
+type(
+  'a data
+)
+ident(
+  int_ref d "stream.ml" 203 6164 6178 "stream.ml" 203 6164 6179
+)
+"stream.ml" 207 6250 6256 "stream.ml" 207 6250 6269
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 208 6271 6277 "stream.ml" 208 6271 6289
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"stream.ml" 208 6271 6290 "stream.ml" 208 6271 6293
+type(
+  string
+)
+"stream.ml" 208 6271 6277 "stream.ml" 208 6271 6293
+call(
+  tail
+)
+type(
+  unit
+)
+"stream.ml" 207 6250 6256 "stream.ml" 208 6271 6293
+type(
+  unit
+)
+"stream.ml" 206 6225 6231 "stream.ml" 208 6271 6293
+type(
+  unit
+)
+"stream.ml" 205 6214 6220 "stream.ml" 208 6271 6293
+type(
+  unit
+)
+"stream.ml" 204 6184 6190 "stream.ml" 208 6271 6293
+type(
+  unit
+)
+"stream.ml" 209 6294 6304 "stream.ml" 209 6294 6306
+type(
+  'a data
+)
+ident(
+  def d1 "stream.ml" 210 6315 6321 "stream.ml" 214 6413 6435
+)
+"stream.ml" 209 6294 6308 "stream.ml" 209 6294 6310
+type(
+  'a data
+)
+ident(
+  def d2 "stream.ml" 210 6315 6321 "stream.ml" 214 6413 6435
+)
+"stream.ml" 209 6294 6298 "stream.ml" 209 6294 6311
+type(
+  'a data
+)
+"stream.ml" 210 6315 6321 "stream.ml" 210 6315 6333
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"stream.ml" 210 6315 6334 "stream.ml" 210 6315 6342
+type(
+  string
+)
+"stream.ml" 210 6315 6321 "stream.ml" 210 6315 6342
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 211 6344 6350 "stream.ml" 211 6344 6359
+type(
+  ('a -> unit) -> 'a data -> unit
+)
+ident(
+  int_ref dump_data "stream.ml" 200 6099 6103 "stream.ml" 200 6099 6112
+)
+"stream.ml" 211 6344 6360 "stream.ml" 211 6344 6361
+type(
+  'a -> unit
+)
+ident(
+  int_ref f "stream.ml" 200 6099 6113 "stream.ml" 200 6099 6114
+)
+"stream.ml" 211 6344 6362 "stream.ml" 211 6344 6364
+type(
+  'a data
+)
+ident(
+  int_ref d1 "stream.ml" 209 6294 6304 "stream.ml" 209 6294 6306
+)
+"stream.ml" 211 6344 6350 "stream.ml" 211 6344 6364
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 212 6366 6372 "stream.ml" 212 6366 6384
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"stream.ml" 212 6366 6385 "stream.ml" 212 6366 6389
+type(
+  string
+)
+"stream.ml" 212 6366 6372 "stream.ml" 212 6366 6389
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 213 6391 6397 "stream.ml" 213 6391 6406
+type(
+  ('a -> unit) -> 'a data -> unit
+)
+ident(
+  int_ref dump_data "stream.ml" 200 6099 6103 "stream.ml" 200 6099 6112
+)
+"stream.ml" 213 6391 6407 "stream.ml" 213 6391 6408
+type(
+  'a -> unit
+)
+ident(
+  int_ref f "stream.ml" 200 6099 6113 "stream.ml" 200 6099 6114
+)
+"stream.ml" 213 6391 6409 "stream.ml" 213 6391 6411
+type(
+  'a data
+)
+ident(
+  int_ref d2 "stream.ml" 209 6294 6308 "stream.ml" 209 6294 6310
+)
+"stream.ml" 213 6391 6397 "stream.ml" 213 6391 6411
+call(
+  stack
+)
+type(
+  unit
+)
+"stream.ml" 214 6413 6419 "stream.ml" 214 6413 6431
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"stream.ml" 214 6413 6432 "stream.ml" 214 6413 6435
+type(
+  string
+)
+"stream.ml" 214 6413 6419 "stream.ml" 214 6413 6435
+call(
+  tail
+)
+type(
+  unit
+)
+"stream.ml" 213 6391 6397 "stream.ml" 214 6413 6435
+type(
+  unit
+)
+"stream.ml" 212 6366 6372 "stream.ml" 214 6413 6435
+type(
+  unit
+)
+"stream.ml" 211 6344 6350 "stream.ml" 214 6413 6435
+type(
+  unit
+)
+"stream.ml" 210 6315 6321 "stream.ml" 214 6413 6435
+type(
+  unit
+)
+"stream.ml" 215 6436 6446 "stream.ml" 215 6436 6447
+type(
+  'a data Lazy.t
+)
+"stream.ml" 215 6436 6440 "stream.ml" 215 6436 6447
+type(
+  'a data
+)
+"stream.ml" 215 6436 6451 "stream.ml" 215 6436 6463
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"stream.ml" 215 6436 6464 "stream.ml" 215 6436 6471
+type(
+  string
+)
+"stream.ml" 215 6436 6451 "stream.ml" 215 6436 6471
+call(
+  tail
+)
+type(
+  unit
+)
+"stream.ml" 216 6472 6481 "stream.ml" 216 6472 6482
+type(
+  'a gen
+)
+"stream.ml" 216 6472 6476 "stream.ml" 216 6472 6482
+type(
+  'a data
+)
+"stream.ml" 216 6472 6486 "stream.ml" 216 6472 6498
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"stream.ml" 216 6472 6499 "stream.ml" 216 6472 6505
+type(
+  string
+)
+"stream.ml" 216 6472 6486 "stream.ml" 216 6472 6505
+call(
+  tail
+)
+type(
+  unit
+)
+"stream.ml" 217 6506 6518 "stream.ml" 217 6506 6519
+type(
+  buffio
+)
+ident(
+  def b "stream.ml" 217 6506 6523 "stream.ml" 217 6506 6545
+)
+"stream.ml" 217 6506 6510 "stream.ml" 217 6506 6519
+type(
+  'a data
+)
+"stream.ml" 217 6506 6523 "stream.ml" 217 6506 6535
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"stream.ml" 217 6506 6536 "stream.ml" 217 6506 6545
+type(
+  string
+)
+"stream.ml" 217 6506 6523 "stream.ml" 217 6506 6545
+call(
+  tail
+)
+type(
+  unit
+)
+"stream.ml" 201 6117 6119 "stream.ml" 217 6506 6545
+type(
+  'a data -> unit
+)

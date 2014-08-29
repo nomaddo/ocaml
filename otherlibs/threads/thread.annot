@@ -1,0 +1,1571 @@
+"thread.ml" 18 923 927 "thread.ml" 18 923 943
+type(
+  bool ref
+)
+ident(
+  def critical_section "thread.ml" 20 957 957 "thread.ml" 1 0 -1
+)
+"thread.ml" 18 923 946 "thread.ml" 18 923 949
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"thread.ml" 18 923 950 "thread.ml" 18 923 955
+type(
+  bool
+)
+"thread.ml" 18 923 946 "thread.ml" 18 923 955
+type(
+  bool ref
+)
+"thread.ml" 30 1216 1225 "thread.ml" 30 1216 1239
+type(
+  resumption_status
+)
+"thread.ml" 30 1216 1241 "thread.ml" 30 1216 1254
+type(
+  resumption_status
+)
+"thread.ml" 30 1216 1256 "thread.ml" 30 1216 1268
+type(
+  resumption_status
+)
+"thread.ml" 31 1270 1279 "thread.ml" 31 1270 1289
+type(
+  resumption_status
+)
+"thread.ml" 31 1270 1307 "thread.ml" 31 1270 1309
+type(
+  Unix.file_descr list
+)
+"thread.ml" 31 1270 1311 "thread.ml" 31 1270 1313
+type(
+  Unix.file_descr list
+)
+"thread.ml" 31 1270 1315 "thread.ml" 31 1270 1317
+type(
+  Unix.file_descr list
+)
+"thread.ml" 31 1270 1291 "thread.ml" 31 1270 1318
+type(
+  resumption_status
+)
+"thread.ml" 32 1320 1343 "thread.ml" 32 1320 1344
+type(
+  int
+)
+"thread.ml" 32 1320 1359 "thread.ml" 32 1320 1360
+type(
+  int
+)
+"thread.ml" 32 1320 1346 "thread.ml" 32 1320 1360
+type(
+  Unix.process_status
+)
+"thread.ml" 32 1320 1329 "thread.ml" 32 1320 1361
+type(
+  resumption_status
+)
+"thread.ml" 30 1216 1224 "thread.ml" 32 1320 1362
+type(
+  resumption_status list
+)
+"thread.ml" 77 3579 3583 "thread.ml" 77 3579 3588
+type(
+  unit -> unit
+)
+ident(
+  def yield "thread.ml" 78 3609 3609 "thread.ml" 1 0 -1
+)
+"thread.ml" 77 3579 3589 "thread.ml" 77 3579 3591
+type(
+  unit
+)
+"thread.ml" 77 3579 3594 "thread.ml" 77 3579 3606
+type(
+  unit -> unit
+)
+ident(
+  int_ref thread_yield "thread.ml" 48 2181 2181 "thread.ml" 48 2181 2234
+)
+"thread.ml" 77 3579 3606 "thread.ml" 77 3579 3608
+type(
+  unit
+)
+"thread.ml" 77 3579 3594 "thread.ml" 77 3579 3608
+type(
+  unit
+)
+"thread.ml" 78 3609 3613 "thread.ml" 78 3609 3618
+type(
+  unit -> unit
+)
+ident(
+  def sleep "thread.ml" 79 3666 3666 "thread.ml" 1 0 -1
+)
+"thread.ml" 78 3609 3619 "thread.ml" 78 3609 3621
+type(
+  unit
+)
+"thread.ml" 78 3609 3624 "thread.ml" 78 3609 3640
+type(
+  bool ref
+)
+ident(
+  int_ref critical_section "thread.ml" 18 923 927 "thread.ml" 18 923 943
+)
+"thread.ml" 78 3609 3641 "thread.ml" 78 3609 3643
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"thread.ml" 78 3609 3644 "thread.ml" 78 3609 3649
+type(
+  bool
+)
+"thread.ml" 78 3609 3624 "thread.ml" 78 3609 3649
+type(
+  unit
+)
+"thread.ml" 78 3609 3651 "thread.ml" 78 3609 3663
+type(
+  unit -> unit
+)
+ident(
+  int_ref thread_sleep "thread.ml" 50 2315 2315 "thread.ml" 50 2315 2368
+)
+"thread.ml" 78 3609 3663 "thread.ml" 78 3609 3665
+type(
+  unit
+)
+"thread.ml" 78 3609 3651 "thread.ml" 78 3609 3665
+type(
+  unit
+)
+"thread.ml" 78 3609 3624 "thread.ml" 78 3609 3665
+type(
+  unit
+)
+"thread.ml" 79 3666 3670 "thread.ml" 79 3666 3675
+type(
+  float -> unit
+)
+ident(
+  def delay "thread.ml" 80 3709 3709 "thread.ml" 1 0 -1
+)
+"thread.ml" 79 3666 3676 "thread.ml" 79 3666 3684
+type(
+  float
+)
+ident(
+  def duration "thread.ml" 79 3666 3687 "thread.ml" 79 3666 3708
+)
+"thread.ml" 79 3666 3687 "thread.ml" 79 3666 3699
+type(
+  float -> unit
+)
+ident(
+  int_ref thread_delay "thread.ml" 64 3016 3016 "thread.ml" 64 3016 3070
+)
+"thread.ml" 79 3666 3700 "thread.ml" 79 3666 3708
+type(
+  float
+)
+ident(
+  int_ref duration "thread.ml" 79 3666 3676 "thread.ml" 79 3666 3684
+)
+"thread.ml" 79 3666 3687 "thread.ml" 79 3666 3708
+type(
+  unit
+)
+"thread.ml" 80 3709 3713 "thread.ml" 80 3709 3717
+type(
+  t -> unit
+)
+ident(
+  def join "thread.ml" 81 3738 3738 "thread.ml" 1 0 -1
+)
+"thread.ml" 80 3709 3718 "thread.ml" 80 3709 3720
+type(
+  t
+)
+ident(
+  def th "thread.ml" 80 3709 3723 "thread.ml" 80 3709 3737
+)
+"thread.ml" 80 3709 3723 "thread.ml" 80 3709 3734
+type(
+  t -> unit
+)
+ident(
+  int_ref thread_join "thread.ml" 63 2967 2967 "thread.ml" 63 2967 3015
+)
+"thread.ml" 80 3709 3735 "thread.ml" 80 3709 3737
+type(
+  t
+)
+ident(
+  int_ref th "thread.ml" 80 3709 3718 "thread.ml" 80 3709 3720
+)
+"thread.ml" 80 3709 3723 "thread.ml" 80 3709 3737
+type(
+  unit
+)
+"thread.ml" 81 3738 3742 "thread.ml" 81 3738 3748
+type(
+  t -> unit
+)
+ident(
+  def wakeup "thread.ml" 82 3773 3773 "thread.ml" 1 0 -1
+)
+"thread.ml" 81 3738 3749 "thread.ml" 81 3738 3752
+type(
+  t
+)
+ident(
+  def pid "thread.ml" 81 3738 3755 "thread.ml" 81 3738 3772
+)
+"thread.ml" 81 3738 3755 "thread.ml" 81 3738 3768
+type(
+  t -> unit
+)
+ident(
+  int_ref thread_wakeup "thread.ml" 66 3143 3143 "thread.ml" 66 3143 3195
+)
+"thread.ml" 81 3738 3769 "thread.ml" 81 3738 3772
+type(
+  t
+)
+ident(
+  int_ref pid "thread.ml" 81 3738 3749 "thread.ml" 81 3738 3752
+)
+"thread.ml" 81 3738 3755 "thread.ml" 81 3738 3772
+type(
+  unit
+)
+"thread.ml" 82 3773 3777 "thread.ml" 82 3773 3781
+type(
+  unit -> t
+)
+ident(
+  def self "thread.ml" 83 3801 3801 "thread.ml" 1 0 -1
+)
+"thread.ml" 82 3773 3782 "thread.ml" 82 3773 3784
+type(
+  unit
+)
+"thread.ml" 82 3773 3787 "thread.ml" 82 3773 3798
+type(
+  unit -> t
+)
+ident(
+  int_ref thread_self "thread.ml" 67 3196 3196 "thread.ml" 67 3196 3244
+)
+"thread.ml" 82 3773 3798 "thread.ml" 82 3773 3800
+type(
+  unit
+)
+"thread.ml" 82 3773 3787 "thread.ml" 82 3773 3800
+type(
+  t
+)
+"thread.ml" 83 3801 3805 "thread.ml" 83 3801 3809
+type(
+  t -> unit
+)
+ident(
+  def kill "thread.ml" 84 3832 3832 "thread.ml" 1 0 -1
+)
+"thread.ml" 83 3801 3810 "thread.ml" 83 3801 3813
+type(
+  t
+)
+ident(
+  def pid "thread.ml" 83 3801 3816 "thread.ml" 83 3801 3831
+)
+"thread.ml" 83 3801 3816 "thread.ml" 83 3801 3827
+type(
+  t -> unit
+)
+ident(
+  int_ref thread_kill "thread.ml" 68 3245 3245 "thread.ml" 68 3245 3293
+)
+"thread.ml" 83 3801 3828 "thread.ml" 83 3801 3831
+type(
+  t
+)
+ident(
+  int_ref pid "thread.ml" 83 3801 3810 "thread.ml" 83 3801 3813
+)
+"thread.ml" 83 3801 3816 "thread.ml" 83 3801 3831
+type(
+  unit
+)
+"thread.ml" 84 3832 3836 "thread.ml" 84 3832 3840
+type(
+  unit -> unit
+)
+ident(
+  def exit "thread.ml" 86 3874 3874 "thread.ml" 1 0 -1
+)
+"thread.ml" 84 3832 3841 "thread.ml" 84 3832 3843
+type(
+  unit
+)
+"thread.ml" 84 3832 3846 "thread.ml" 84 3832 3857
+type(
+  t -> unit
+)
+ident(
+  int_ref thread_kill "thread.ml" 68 3245 3245 "thread.ml" 68 3245 3293
+)
+"thread.ml" 84 3832 3858 "thread.ml" 84 3832 3869
+type(
+  unit -> t
+)
+ident(
+  int_ref thread_self "thread.ml" 67 3196 3196 "thread.ml" 67 3196 3244
+)
+"thread.ml" 84 3832 3869 "thread.ml" 84 3832 3871
+type(
+  unit
+)
+"thread.ml" 84 3832 3857 "thread.ml" 84 3832 3872
+type(
+  t
+)
+"thread.ml" 84 3832 3846 "thread.ml" 84 3832 3872
+type(
+  unit
+)
+"thread.ml" 86 3874 3878 "thread.ml" 86 3874 3888
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list * float ->
+  resumption_status
+)
+ident(
+  def select_aux "thread.ml" 88 3914 3914 "thread.ml" 1 0 -1
+)
+"thread.ml" 86 3874 3889 "thread.ml" 86 3874 3892
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list * float
+)
+ident(
+  def arg "thread.ml" 86 3874 3895 "thread.ml" 86 3874 3912
+)
+"thread.ml" 86 3874 3895 "thread.ml" 86 3874 3908
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list * float ->
+  resumption_status
+)
+ident(
+  int_ref thread_select "thread.ml" 59 2791 2791 "thread.ml" 62 2947 2966
+)
+"thread.ml" 86 3874 3909 "thread.ml" 86 3874 3912
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list * float
+)
+ident(
+  int_ref arg "thread.ml" 86 3874 3889 "thread.ml" 86 3874 3892
+)
+"thread.ml" 86 3874 3895 "thread.ml" 86 3874 3912
+type(
+  resumption_status
+)
+"thread.ml" 88 3914 3918 "thread.ml" 88 3914 3924
+type(
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  float -> Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+ident(
+  def select "thread.ml" 93 4086 4086 "thread.ml" 1 0 -1
+)
+"thread.ml" 88 3914 3925 "thread.ml" 88 3914 3932
+type(
+  Unix.file_descr list
+)
+ident(
+  def readfds "thread.ml" 88 3914 3933 "thread.ml" 91 4063 4084
+)
+"thread.ml" 88 3914 3933 "thread.ml" 88 3914 3941
+type(
+  Unix.file_descr list
+)
+ident(
+  def writefds "thread.ml" 88 3914 3942 "thread.ml" 91 4063 4084
+)
+"thread.ml" 88 3914 3942 "thread.ml" 88 3914 3951
+type(
+  Unix.file_descr list
+)
+ident(
+  def exceptfds "thread.ml" 88 3914 3952 "thread.ml" 91 4063 4084
+)
+"thread.ml" 88 3914 3952 "thread.ml" 88 3914 3957
+type(
+  float
+)
+ident(
+  def delay "thread.ml" 89 3960 3962 "thread.ml" 91 4063 4084
+)
+"thread.ml" 89 3960 3968 "thread.ml" 89 3960 3978
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list * float ->
+  resumption_status
+)
+ident(
+  int_ref select_aux "thread.ml" 86 3874 3878 "thread.ml" 86 3874 3888
+)
+"thread.ml" 89 3960 3980 "thread.ml" 89 3960 3987
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref readfds "thread.ml" 88 3914 3925 "thread.ml" 88 3914 3932
+)
+"thread.ml" 89 3960 3989 "thread.ml" 89 3960 3997
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref writefds "thread.ml" 88 3914 3933 "thread.ml" 88 3914 3941
+)
+"thread.ml" 89 3960 3999 "thread.ml" 89 3960 4008
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref exceptfds "thread.ml" 88 3914 3942 "thread.ml" 88 3914 3951
+)
+"thread.ml" 89 3960 4010 "thread.ml" 89 3960 4015
+type(
+  float
+)
+ident(
+  int_ref delay "thread.ml" 88 3914 3952 "thread.ml" 88 3914 3957
+)
+"thread.ml" 89 3960 3979 "thread.ml" 89 3960 4016
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list * float
+)
+"thread.ml" 89 3960 3968 "thread.ml" 89 3960 4016
+call(
+  stack
+)
+type(
+  resumption_status
+)
+"thread.ml" 90 4022 4041 "thread.ml" 90 4022 4042
+type(
+  Unix.file_descr list
+)
+ident(
+  def r "thread.ml" 90 4022 4053 "thread.ml" 90 4022 4062
+)
+"thread.ml" 90 4022 4044 "thread.ml" 90 4022 4045
+type(
+  Unix.file_descr list
+)
+ident(
+  def w "thread.ml" 90 4022 4053 "thread.ml" 90 4022 4062
+)
+"thread.ml" 90 4022 4047 "thread.ml" 90 4022 4048
+type(
+  Unix.file_descr list
+)
+ident(
+  def e "thread.ml" 90 4022 4053 "thread.ml" 90 4022 4062
+)
+"thread.ml" 90 4022 4026 "thread.ml" 90 4022 4049
+type(
+  resumption_status
+)
+"thread.ml" 90 4022 4054 "thread.ml" 90 4022 4055
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref r "thread.ml" 90 4022 4041 "thread.ml" 90 4022 4042
+)
+"thread.ml" 90 4022 4057 "thread.ml" 90 4022 4058
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref w "thread.ml" 90 4022 4044 "thread.ml" 90 4022 4045
+)
+"thread.ml" 90 4022 4060 "thread.ml" 90 4022 4061
+type(
+  Unix.file_descr list
+)
+ident(
+  int_ref e "thread.ml" 90 4022 4047 "thread.ml" 90 4022 4048
+)
+"thread.ml" 90 4022 4053 "thread.ml" 90 4022 4062
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"thread.ml" 91 4063 4067 "thread.ml" 91 4063 4068
+type(
+  resumption_status
+)
+"thread.ml" 91 4063 4073 "thread.ml" 91 4063 4075
+type(
+  Unix.file_descr list
+)
+"thread.ml" 91 4063 4077 "thread.ml" 91 4063 4079
+type(
+  Unix.file_descr list
+)
+"thread.ml" 91 4063 4081 "thread.ml" 91 4063 4083
+type(
+  Unix.file_descr list
+)
+"thread.ml" 91 4063 4072 "thread.ml" 91 4063 4084
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"thread.ml" 89 3960 3962 "thread.ml" 91 4063 4084
+type(
+  Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+"thread.ml" 93 4086 4090 "thread.ml" 93 4086 4099
+type(
+  Unix.file_descr -> unit
+)
+ident(
+  def wait_read "thread.ml" 94 4125 4125 "thread.ml" 1 0 -1
+)
+"thread.ml" 93 4086 4100 "thread.ml" 93 4086 4102
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "thread.ml" 93 4086 4105 "thread.ml" 93 4086 4124
+)
+"thread.ml" 93 4086 4105 "thread.ml" 93 4086 4121
+type(
+  Unix.file_descr -> unit
+)
+ident(
+  int_ref thread_wait_read "thread.ml" 51 2369 2369 "thread.ml" 51 2369 2441
+)
+"thread.ml" 93 4086 4122 "thread.ml" 93 4086 4124
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "thread.ml" 93 4086 4100 "thread.ml" 93 4086 4102
+)
+"thread.ml" 93 4086 4105 "thread.ml" 93 4086 4124
+type(
+  unit
+)
+"thread.ml" 94 4125 4129 "thread.ml" 94 4125 4139
+type(
+  Unix.file_descr -> unit
+)
+ident(
+  def wait_write "thread.ml" 96 4167 4167 "thread.ml" 1 0 -1
+)
+"thread.ml" 94 4125 4140 "thread.ml" 94 4125 4142
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "thread.ml" 94 4125 4145 "thread.ml" 94 4125 4165
+)
+"thread.ml" 94 4125 4145 "thread.ml" 94 4125 4162
+type(
+  Unix.file_descr -> unit
+)
+ident(
+  int_ref thread_wait_write "thread.ml" 52 2442 2442 "thread.ml" 52 2442 2516
+)
+"thread.ml" 94 4125 4163 "thread.ml" 94 4125 4165
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "thread.ml" 94 4125 4140 "thread.ml" 94 4125 4142
+)
+"thread.ml" 94 4125 4145 "thread.ml" 94 4125 4165
+type(
+  unit
+)
+"thread.ml" 96 4167 4171 "thread.ml" 96 4167 4190
+type(
+  Unix.file_descr * float -> resumption_status
+)
+ident(
+  def wait_timed_read_aux "thread.ml" 97 4224 4224 "thread.ml" 1 0 -1
+)
+"thread.ml" 96 4167 4191 "thread.ml" 96 4167 4194
+type(
+  Unix.file_descr * float
+)
+ident(
+  def arg "thread.ml" 96 4167 4197 "thread.ml" 96 4167 4223
+)
+"thread.ml" 96 4167 4197 "thread.ml" 96 4167 4219
+type(
+  Unix.file_descr * float -> resumption_status
+)
+ident(
+  int_ref thread_wait_timed_read "thread.ml" 53 2517 2517 "thread.ml" 55 2624 2652
+)
+"thread.ml" 96 4167 4220 "thread.ml" 96 4167 4223
+type(
+  Unix.file_descr * float
+)
+ident(
+  int_ref arg "thread.ml" 96 4167 4191 "thread.ml" 96 4167 4194
+)
+"thread.ml" 96 4167 4197 "thread.ml" 96 4167 4223
+type(
+  resumption_status
+)
+"thread.ml" 97 4224 4228 "thread.ml" 97 4224 4248
+type(
+  Unix.file_descr * float -> resumption_status
+)
+ident(
+  def wait_timed_write_aux "thread.ml" 99 4284 4284 "thread.ml" 1 0 -1
+)
+"thread.ml" 97 4224 4249 "thread.ml" 97 4224 4252
+type(
+  Unix.file_descr * float
+)
+ident(
+  def arg "thread.ml" 97 4224 4255 "thread.ml" 97 4224 4282
+)
+"thread.ml" 97 4224 4255 "thread.ml" 97 4224 4278
+type(
+  Unix.file_descr * float -> resumption_status
+)
+ident(
+  int_ref thread_wait_timed_write "thread.ml" 56 2653 2653 "thread.ml" 58 2761 2790
+)
+"thread.ml" 97 4224 4279 "thread.ml" 97 4224 4282
+type(
+  Unix.file_descr * float
+)
+ident(
+  int_ref arg "thread.ml" 97 4224 4249 "thread.ml" 97 4224 4252
+)
+"thread.ml" 97 4224 4255 "thread.ml" 97 4224 4282
+type(
+  resumption_status
+)
+"thread.ml" 99 4284 4288 "thread.ml" 99 4284 4303
+type(
+  Unix.file_descr -> float -> bool
+)
+ident(
+  def wait_timed_read "thread.ml" 102 4393 4393 "thread.ml" 1 0 -1
+)
+"thread.ml" 99 4284 4304 "thread.ml" 99 4284 4306
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "thread.ml" 99 4284 4307 "thread.ml" 100 4315 4391
+)
+"thread.ml" 99 4284 4307 "thread.ml" 99 4284 4312
+type(
+  float
+)
+ident(
+  def delay "thread.ml" 100 4315 4317 "thread.ml" 100 4315 4391
+)
+"thread.ml" 100 4315 4323 "thread.ml" 100 4315 4342
+type(
+  Unix.file_descr * float -> resumption_status
+)
+ident(
+  int_ref wait_timed_read_aux "thread.ml" 96 4167 4171 "thread.ml" 96 4167 4190
+)
+"thread.ml" 100 4315 4344 "thread.ml" 100 4315 4346
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "thread.ml" 99 4284 4304 "thread.ml" 99 4284 4306
+)
+"thread.ml" 100 4315 4348 "thread.ml" 100 4315 4353
+type(
+  float
+)
+ident(
+  int_ref delay "thread.ml" 99 4284 4307 "thread.ml" 99 4284 4312
+)
+"thread.ml" 100 4315 4343 "thread.ml" 100 4315 4354
+type(
+  Unix.file_descr * float
+)
+"thread.ml" 100 4315 4323 "thread.ml" 100 4315 4354
+call(
+  stack
+)
+type(
+  resumption_status
+)
+"thread.ml" 100 4315 4360 "thread.ml" 100 4315 4370
+type(
+  resumption_status
+)
+"thread.ml" 100 4315 4374 "thread.ml" 100 4315 4378
+type(
+  bool
+)
+"thread.ml" 100 4315 4381 "thread.ml" 100 4315 4382
+type(
+  resumption_status
+)
+"thread.ml" 100 4315 4386 "thread.ml" 100 4315 4391
+type(
+  bool
+)
+"thread.ml" 100 4315 4317 "thread.ml" 100 4315 4391
+type(
+  bool
+)
+"thread.ml" 102 4393 4397 "thread.ml" 102 4393 4413
+type(
+  Unix.file_descr -> float -> bool
+)
+ident(
+  def wait_timed_write "thread.ml" 105 4504 4504 "thread.ml" 1 0 -1
+)
+"thread.ml" 102 4393 4414 "thread.ml" 102 4393 4416
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "thread.ml" 102 4393 4417 "thread.ml" 103 4425 4502
+)
+"thread.ml" 102 4393 4417 "thread.ml" 102 4393 4422
+type(
+  float
+)
+ident(
+  def delay "thread.ml" 103 4425 4427 "thread.ml" 103 4425 4502
+)
+"thread.ml" 103 4425 4433 "thread.ml" 103 4425 4453
+type(
+  Unix.file_descr * float -> resumption_status
+)
+ident(
+  int_ref wait_timed_write_aux "thread.ml" 97 4224 4228 "thread.ml" 97 4224 4248
+)
+"thread.ml" 103 4425 4455 "thread.ml" 103 4425 4457
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "thread.ml" 102 4393 4414 "thread.ml" 102 4393 4416
+)
+"thread.ml" 103 4425 4459 "thread.ml" 103 4425 4464
+type(
+  float
+)
+ident(
+  int_ref delay "thread.ml" 102 4393 4417 "thread.ml" 102 4393 4422
+)
+"thread.ml" 103 4425 4454 "thread.ml" 103 4425 4465
+type(
+  Unix.file_descr * float
+)
+"thread.ml" 103 4425 4433 "thread.ml" 103 4425 4465
+call(
+  stack
+)
+type(
+  resumption_status
+)
+"thread.ml" 103 4425 4471 "thread.ml" 103 4425 4481
+type(
+  resumption_status
+)
+"thread.ml" 103 4425 4485 "thread.ml" 103 4425 4489
+type(
+  bool
+)
+"thread.ml" 103 4425 4492 "thread.ml" 103 4425 4493
+type(
+  resumption_status
+)
+"thread.ml" 103 4425 4497 "thread.ml" 103 4425 4502
+type(
+  bool
+)
+"thread.ml" 103 4425 4427 "thread.ml" 103 4425 4502
+type(
+  bool
+)
+"thread.ml" 105 4504 4508 "thread.ml" 105 4504 4520
+type(
+  int -> resumption_status
+)
+ident(
+  def wait_pid_aux "thread.ml" 107 4548 4548 "thread.ml" 1 0 -1
+)
+"thread.ml" 105 4504 4521 "thread.ml" 105 4504 4524
+type(
+  int
+)
+ident(
+  def pid "thread.ml" 105 4504 4527 "thread.ml" 105 4504 4546
+)
+"thread.ml" 105 4504 4527 "thread.ml" 105 4504 4542
+type(
+  int -> resumption_status
+)
+ident(
+  int_ref thread_wait_pid "thread.ml" 65 3071 3071 "thread.ml" 65 3071 3142
+)
+"thread.ml" 105 4504 4543 "thread.ml" 105 4504 4546
+type(
+  int
+)
+ident(
+  int_ref pid "thread.ml" 105 4504 4521 "thread.ml" 105 4504 4524
+)
+"thread.ml" 105 4504 4527 "thread.ml" 105 4504 4546
+type(
+  resumption_status
+)
+"thread.ml" 107 4548 4552 "thread.ml" 107 4548 4560
+type(
+  int -> int * Unix.process_status
+)
+ident(
+  def wait_pid "thread.ml" 112 4684 4684 "thread.ml" 1 0 -1
+)
+"thread.ml" 107 4548 4561 "thread.ml" 107 4548 4564
+type(
+  int
+)
+ident(
+  def pid "thread.ml" 108 4567 4569 "thread.ml" 110 4644 4682
+)
+"thread.ml" 108 4567 4575 "thread.ml" 108 4567 4587
+type(
+  int -> resumption_status
+)
+ident(
+  int_ref wait_pid_aux "thread.ml" 105 4504 4508 "thread.ml" 105 4504 4520
+)
+"thread.ml" 108 4567 4588 "thread.ml" 108 4567 4591
+type(
+  int
+)
+ident(
+  int_ref pid "thread.ml" 107 4548 4561 "thread.ml" 107 4548 4564
+)
+"thread.ml" 108 4567 4575 "thread.ml" 108 4567 4591
+call(
+  stack
+)
+type(
+  resumption_status
+)
+"thread.ml" 109 4597 4614 "thread.ml" 109 4597 4617
+type(
+  int
+)
+ident(
+  def pid "thread.ml" 109 4597 4630 "thread.ml" 109 4597 4643
+)
+"thread.ml" 109 4597 4619 "thread.ml" 109 4597 4625
+type(
+  Unix.process_status
+)
+ident(
+  def status "thread.ml" 109 4597 4630 "thread.ml" 109 4597 4643
+)
+"thread.ml" 109 4597 4601 "thread.ml" 109 4597 4626
+type(
+  resumption_status
+)
+"thread.ml" 109 4597 4631 "thread.ml" 109 4597 4634
+type(
+  int
+)
+ident(
+  int_ref pid "thread.ml" 109 4597 4614 "thread.ml" 109 4597 4617
+)
+"thread.ml" 109 4597 4636 "thread.ml" 109 4597 4642
+type(
+  Unix.process_status
+)
+ident(
+  int_ref status "thread.ml" 109 4597 4619 "thread.ml" 109 4597 4625
+)
+"thread.ml" 109 4597 4630 "thread.ml" 109 4597 4643
+type(
+  int * Unix.process_status
+)
+"thread.ml" 110 4644 4648 "thread.ml" 110 4644 4649
+type(
+  resumption_status
+)
+"thread.ml" 110 4644 4653 "thread.ml" 110 4644 4664
+type(
+  string -> int * Unix.process_status
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"thread.ml" 110 4644 4665 "thread.ml" 110 4644 4682
+type(
+  string
+)
+"thread.ml" 110 4644 4653 "thread.ml" 110 4644 4682
+call(
+  tail
+)
+type(
+  int * Unix.process_status
+)
+"thread.ml" 108 4567 4569 "thread.ml" 110 4644 4682
+type(
+  int * Unix.process_status
+)
+"thread.ml" 112 4684 4688 "thread.ml" 112 4684 4699
+type(
+  int list -> int
+)
+ident(
+  def wait_signal "thread.ml" 125 5103 5103 "thread.ml" 1 0 -1
+)
+"thread.ml" 112 4684 4700 "thread.ml" 112 4684 4704
+type(
+  int list
+)
+ident(
+  def sigs "thread.ml" 113 4707 4709 "thread.ml" 120 4977 4986
+)
+"thread.ml" 113 4707 4713 "thread.ml" 113 4707 4719
+type(
+  int ref
+)
+ident(
+  def gotsig "thread.ml" 114 4731 4733 "thread.ml" 120 4977 4986
+)
+"thread.ml" 113 4707 4722 "thread.ml" 113 4707 4725
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"thread.ml" 113 4707 4726 "thread.ml" 113 4707 4727
+type(
+  int
+)
+"thread.ml" 113 4707 4722 "thread.ml" 113 4707 4727
+type(
+  int ref
+)
+"thread.ml" 114 4731 4737 "thread.ml" 114 4731 4741
+type(
+  t
+)
+ident(
+  def self "thread.ml" 115 4761 4763 "thread.ml" 120 4977 4986
+)
+"thread.ml" 114 4731 4744 "thread.ml" 114 4731 4755
+type(
+  unit -> t
+)
+ident(
+  int_ref thread_self "thread.ml" 67 3196 3196 "thread.ml" 67 3196 3244
+)
+"thread.ml" 114 4731 4755 "thread.ml" 114 4731 4757
+type(
+  unit
+)
+"thread.ml" 114 4731 4744 "thread.ml" 114 4731 4757
+type(
+  t
+)
+"thread.ml" 115 4761 4767 "thread.ml" 115 4761 4777
+type(
+  int -> unit
+)
+ident(
+  def sighandler "thread.ml" 116 4810 4812 "thread.ml" 120 4977 4986
+)
+"thread.ml" 115 4761 4778 "thread.ml" 115 4761 4779
+type(
+  int
+)
+ident(
+  def s "thread.ml" 115 4761 4782 "thread.ml" 115 4761 4806
+)
+"thread.ml" 115 4761 4782 "thread.ml" 115 4761 4788
+type(
+  int ref
+)
+ident(
+  int_ref gotsig "thread.ml" 113 4707 4713 "thread.ml" 113 4707 4719
+)
+"thread.ml" 115 4761 4789 "thread.ml" 115 4761 4791
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"thread.ml" 115 4761 4792 "thread.ml" 115 4761 4793
+type(
+  int
+)
+ident(
+  int_ref s "thread.ml" 115 4761 4778 "thread.ml" 115 4761 4779
+)
+"thread.ml" 115 4761 4782 "thread.ml" 115 4761 4793
+type(
+  unit
+)
+"thread.ml" 115 4761 4795 "thread.ml" 115 4761 4801
+type(
+  t -> unit
+)
+ident(
+  int_ref wakeup "thread.ml" 81 3738 3742 "thread.ml" 81 3738 3748
+)
+"thread.ml" 115 4761 4802 "thread.ml" 115 4761 4806
+type(
+  t
+)
+ident(
+  int_ref self "thread.ml" 114 4731 4737 "thread.ml" 114 4731 4741
+)
+"thread.ml" 115 4761 4795 "thread.ml" 115 4761 4806
+call(
+  tail
+)
+type(
+  unit
+)
+"thread.ml" 115 4761 4782 "thread.ml" 115 4761 4806
+type(
+  unit
+)
+"thread.ml" 116 4810 4816 "thread.ml" 116 4810 4824
+type(
+  Sys.signal_behavior list
+)
+ident(
+  def oldhdlrs "thread.ml" 118 4903 4905 "thread.ml" 120 4977 4986
+)
+"thread.ml" 117 4827 4831 "thread.ml" 117 4827 4839
+type(
+  (int -> Sys.signal_behavior) -> int list -> Sys.signal_behavior list
+)
+ident(
+  ext_ref List.map
+)
+"thread.ml" 117 4827 4845 "thread.ml" 117 4827 4846
+type(
+  int
+)
+ident(
+  def s "thread.ml" 117 4827 4850 "thread.ml" 117 4827 4893
+)
+"thread.ml" 117 4827 4850 "thread.ml" 117 4827 4860
+type(
+  int -> Sys.signal_behavior -> Sys.signal_behavior
+)
+ident(
+  ext_ref Sys.signal
+)
+"thread.ml" 117 4827 4861 "thread.ml" 117 4827 4862
+type(
+  int
+)
+ident(
+  int_ref s "thread.ml" 117 4827 4845 "thread.ml" 117 4827 4846
+)
+"thread.ml" 117 4827 4882 "thread.ml" 117 4827 4892
+type(
+  int -> unit
+)
+ident(
+  int_ref sighandler "thread.ml" 115 4761 4767 "thread.ml" 115 4761 4777
+)
+"thread.ml" 117 4827 4863 "thread.ml" 117 4827 4893
+type(
+  Sys.signal_behavior
+)
+"thread.ml" 117 4827 4850 "thread.ml" 117 4827 4893
+type(
+  Sys.signal_behavior
+)
+"thread.ml" 117 4827 4840 "thread.ml" 117 4827 4894
+type(
+  int -> Sys.signal_behavior
+)
+"thread.ml" 117 4827 4895 "thread.ml" 117 4827 4899
+type(
+  int list
+)
+ident(
+  int_ref sigs "thread.ml" 112 4684 4700 "thread.ml" 112 4684 4704
+)
+"thread.ml" 117 4827 4831 "thread.ml" 117 4827 4899
+call(
+  stack
+)
+type(
+  Sys.signal_behavior list
+)
+"thread.ml" 118 4903 4908 "thread.ml" 118 4903 4909
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"thread.ml" 118 4903 4909 "thread.ml" 118 4903 4915
+type(
+  int ref
+)
+ident(
+  int_ref gotsig "thread.ml" 113 4707 4713 "thread.ml" 113 4707 4719
+)
+"thread.ml" 118 4903 4908 "thread.ml" 118 4903 4915
+type(
+  int
+)
+"thread.ml" 118 4903 4916 "thread.ml" 118 4903 4917
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"thread.ml" 118 4903 4918 "thread.ml" 118 4903 4919
+type(
+  int
+)
+"thread.ml" 118 4903 4908 "thread.ml" 118 4903 4919
+type(
+  bool
+)
+"thread.ml" 118 4903 4925 "thread.ml" 118 4903 4930
+type(
+  unit -> unit
+)
+ident(
+  int_ref sleep "thread.ml" 78 3609 3613 "thread.ml" 78 3609 3618
+)
+"thread.ml" 118 4903 4930 "thread.ml" 118 4903 4932
+type(
+  unit
+)
+"thread.ml" 118 4903 4925 "thread.ml" 118 4903 4932
+call(
+  stack
+)
+type(
+  unit
+)
+"thread.ml" 118 4903 4905 "thread.ml" 118 4903 4932
+type(
+  unit
+)
+"thread.ml" 119 4934 4936 "thread.ml" 119 4934 4946
+type(
+  (int -> Sys.signal_behavior -> unit) ->
+  int list -> Sys.signal_behavior list -> unit
+)
+ident(
+  ext_ref List.iter2
+)
+"thread.ml" 119 4934 4947 "thread.ml" 119 4934 4961
+type(
+  int -> Sys.signal_behavior -> unit
+)
+ident(
+  ext_ref Sys.set_signal
+)
+"thread.ml" 119 4934 4962 "thread.ml" 119 4934 4966
+type(
+  int list
+)
+ident(
+  int_ref sigs "thread.ml" 112 4684 4700 "thread.ml" 112 4684 4704
+)
+"thread.ml" 119 4934 4967 "thread.ml" 119 4934 4975
+type(
+  Sys.signal_behavior list
+)
+ident(
+  int_ref oldhdlrs "thread.ml" 116 4810 4816 "thread.ml" 116 4810 4824
+)
+"thread.ml" 119 4934 4936 "thread.ml" 119 4934 4975
+call(
+  stack
+)
+type(
+  unit
+)
+"thread.ml" 120 4977 4979 "thread.ml" 120 4977 4980
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"thread.ml" 120 4977 4980 "thread.ml" 120 4977 4986
+type(
+  int ref
+)
+ident(
+  int_ref gotsig "thread.ml" 113 4707 4713 "thread.ml" 113 4707 4719
+)
+"thread.ml" 120 4977 4979 "thread.ml" 120 4977 4986
+type(
+  int
+)
+"thread.ml" 119 4934 4936 "thread.ml" 120 4977 4986
+type(
+  int
+)
+"thread.ml" 118 4903 4905 "thread.ml" 120 4977 4986
+type(
+  int
+)
+"thread.ml" 116 4810 4812 "thread.ml" 120 4977 4986
+type(
+  int
+)
+"thread.ml" 115 4761 4763 "thread.ml" 120 4977 4986
+type(
+  int
+)
+"thread.ml" 114 4731 4733 "thread.ml" 120 4977 4986
+type(
+  int
+)
+"thread.ml" 113 4707 4709 "thread.ml" 120 4977 4986
+type(
+  int
+)
+"thread.ml" 125 5103 5107 "thread.ml" 125 5103 5113
+type(
+  ('a -> 'b) -> 'a -> t
+)
+ident(
+  def create "thread.ml" 137 5308 5308 "thread.ml" 1 0 -1
+)
+"thread.ml" 125 5103 5114 "thread.ml" 125 5103 5116
+type(
+  'a -> 'b
+)
+ident(
+  def fn "thread.ml" 125 5103 5117 "thread.ml" 133 5273 5288
+)
+"thread.ml" 125 5103 5117 "thread.ml" 125 5103 5120
+type(
+  'a
+)
+ident(
+  def arg "thread.ml" 126 5123 5125 "thread.ml" 133 5273 5288
+)
+"thread.ml" 126 5123 5125 "thread.ml" 126 5123 5135
+type(
+  (unit -> unit) -> t
+)
+ident(
+  int_ref thread_new "thread.ml" 47 2124 2124 "thread.ml" 47 2124 2180
+)
+"thread.ml" 127 5136 5145 "thread.ml" 127 5136 5147
+type(
+  unit
+)
+"thread.ml" 129 5161 5169 "thread.ml" 129 5161 5171
+type(
+  'a -> 'b
+)
+ident(
+  int_ref fn "thread.ml" 125 5103 5114 "thread.ml" 125 5103 5116
+)
+"thread.ml" 129 5161 5172 "thread.ml" 129 5161 5175
+type(
+  'a
+)
+ident(
+  int_ref arg "thread.ml" 125 5103 5117 "thread.ml" 125 5103 5120
+)
+"thread.ml" 129 5161 5169 "thread.ml" 129 5161 5175
+call(
+  stack
+)
+type(
+  'b
+)
+"thread.ml" 129 5161 5177 "thread.ml" 129 5161 5181
+type(
+  unit -> unit
+)
+ident(
+  int_ref exit "thread.ml" 84 3832 3836 "thread.ml" 84 3832 3840
+)
+"thread.ml" 129 5161 5181 "thread.ml" 129 5161 5183
+type(
+  unit
+)
+"thread.ml" 129 5161 5177 "thread.ml" 129 5161 5183
+call(
+  stack
+)
+type(
+  unit
+)
+"thread.ml" 129 5161 5169 "thread.ml" 129 5161 5183
+type(
+  unit
+)
+"thread.ml" 130 5184 5195 "thread.ml" 130 5184 5196
+type(
+  exn
+)
+ident(
+  def x "thread.ml" 131 5200 5208 "thread.ml" 133 5273 5287
+)
+"thread.ml" 131 5200 5208 "thread.ml" 131 5200 5213
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"thread.ml" 131 5200 5214 "thread.ml" 131 5200 5220
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stdout
+)
+"thread.ml" 131 5200 5208 "thread.ml" 131 5200 5220
+call(
+  stack
+)
+type(
+  unit
+)
+"thread.ml" 131 5200 5222 "thread.ml" 131 5200 5227
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"thread.ml" 131 5200 5228 "thread.ml" 131 5200 5234
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stderr
+)
+"thread.ml" 131 5200 5222 "thread.ml" 131 5200 5234
+call(
+  stack
+)
+type(
+  unit
+)
+"thread.ml" 132 5236 5244 "thread.ml" 132 5236 5269
+type(
+  exn -> unit
+)
+ident(
+  int_ref thread_uncaught_exception "thread.ml" 69 3294 3294 "thread.ml" 69 3294 3372
+)
+"thread.ml" 132 5236 5270 "thread.ml" 132 5236 5271
+type(
+  exn
+)
+ident(
+  int_ref x "thread.ml" 130 5184 5195 "thread.ml" 130 5184 5196
+)
+"thread.ml" 132 5236 5244 "thread.ml" 132 5236 5271
+type(
+  unit
+)
+"thread.ml" 133 5273 5281 "thread.ml" 133 5273 5285
+type(
+  unit -> unit
+)
+ident(
+  int_ref exit "thread.ml" 84 3832 3836 "thread.ml" 84 3832 3840
+)
+"thread.ml" 133 5273 5285 "thread.ml" 133 5273 5287
+type(
+  unit
+)
+"thread.ml" 133 5273 5281 "thread.ml" 133 5273 5287
+call(
+  tail
+)
+type(
+  unit
+)
+"thread.ml" 132 5236 5244 "thread.ml" 133 5273 5287
+type(
+  unit
+)
+"thread.ml" 131 5200 5222 "thread.ml" 133 5273 5287
+type(
+  unit
+)
+"thread.ml" 131 5200 5208 "thread.ml" 133 5273 5287
+type(
+  unit
+)
+"thread.ml" 128 5151 5157 "thread.ml" 133 5273 5287
+type(
+  unit
+)
+"thread.ml" 127 5136 5140 "thread.ml" 133 5273 5288
+type(
+  unit -> unit
+)
+"thread.ml" 126 5123 5125 "thread.ml" 133 5273 5288
+type(
+  t
+)
+"thread.ml" 137 5308 5312 "thread.ml" 137 5308 5319
+type(
+  'a -> unit
+)
+ident(
+  def preempt "thread.ml" 142 5433 5433 "thread.ml" 1 0 -1
+)
+"thread.ml" 137 5308 5320 "thread.ml" 137 5308 5326
+type(
+  'a
+)
+ident(
+  def signal "thread.ml" 138 5329 5331 "thread.ml" 138 5329 5392
+)
+"thread.ml" 138 5329 5334 "thread.ml" 138 5329 5335
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"thread.ml" 138 5329 5335 "thread.ml" 138 5329 5351
+type(
+  bool ref
+)
+ident(
+  int_ref critical_section "thread.ml" 18 923 927 "thread.ml" 18 923 943
+)
+"thread.ml" 138 5329 5334 "thread.ml" 138 5329 5351
+type(
+  bool
+)
+"thread.ml" 138 5329 5357 "thread.ml" 138 5329 5359
+type(
+  unit
+)
+"thread.ml" 138 5329 5365 "thread.ml" 138 5329 5390
+type(
+  unit -> unit
+)
+ident(
+  int_ref thread_request_reschedule "thread.ml" 49 2235 2235 "thread.ml" 49 2235 2314
+)
+"thread.ml" 138 5329 5390 "thread.ml" 138 5329 5392
+type(
+  unit
+)
+"thread.ml" 138 5329 5365 "thread.ml" 138 5329 5392
+type(
+  unit
+)
+"thread.ml" 138 5329 5331 "thread.ml" 138 5329 5392
+type(
+  unit
+)
+"thread.ml" 143 5441 5443 "thread.ml" 143 5441 5460
+type(
+  unit -> unit
+)
+ident(
+  int_ref thread_initialize "thread.ml" 44 1971 1971 "thread.ml" 44 1971 2034
+)
+"thread.ml" 143 5441 5460 "thread.ml" 143 5441 5462
+type(
+  unit
+)
+"thread.ml" 143 5441 5443 "thread.ml" 143 5441 5462
+type(
+  unit
+)
+"thread.ml" 144 5464 5466 "thread.ml" 144 5464 5480
+type(
+  int -> Sys.signal_behavior -> unit
+)
+ident(
+  ext_ref Sys.set_signal
+)
+"thread.ml" 144 5464 5481 "thread.ml" 144 5464 5494
+type(
+  int
+)
+ident(
+  ext_ref Sys.sigvtalrm
+)
+"thread.ml" 144 5464 5514 "thread.ml" 144 5464 5521
+type(
+  int -> unit
+)
+ident(
+  int_ref preempt "thread.ml" 137 5308 5312 "thread.ml" 137 5308 5319
+)
+"thread.ml" 144 5464 5495 "thread.ml" 144 5464 5522
+type(
+  Sys.signal_behavior
+)
+"thread.ml" 144 5464 5466 "thread.ml" 144 5464 5522
+call(
+  stack
+)
+type(
+  unit
+)
+"thread.ml" 145 5524 5526 "thread.ml" 145 5524 5554
+type(
+  unit -> unit
+)
+ident(
+  int_ref thread_initialize_preemption "thread.ml" 45 2035 2035 "thread.ml" 46 2088 2123
+)
+"thread.ml" 145 5524 5554 "thread.ml" 145 5524 5556
+type(
+  unit
+)
+"thread.ml" 145 5524 5526 "thread.ml" 145 5524 5556
+type(
+  unit
+)
+"thread.ml" 144 5464 5466 "thread.ml" 145 5524 5556
+type(
+  unit
+)
+"thread.ml" 143 5441 5443 "thread.ml" 145 5524 5556
+type(
+  unit
+)

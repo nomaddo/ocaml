@@ -1,0 +1,3597 @@
+# Cmt_format.read_cmt "/home/tokuda/ocaml/test/functor.cmt";;
+- : Cmt_format.cmt_infos =
+{cmt_modname = "Functor";
+ cmt_annots =
+  Implementation
+   {str_items =
+     [{str_desc =
+        Tstr_module
+         {mb_id = {Ident.stamp = 1069; name = "M"; flags = 0};
+          mb_name =
+           {txt = "M";
+            loc =
+             {Location.loc_start =
+               {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1; pos_bol = 0;
+                pos_cnum = 7};
+              loc_end =
+               {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1; pos_bol = 0;
+                pos_cnum = 8};
+              loc_ghost = false}};
+          mb_expr =
+           {mod_desc =
+             Tmod_apply
+              ({mod_desc =
+                 Tmod_ident
+                  (Pdot (Pident {Ident.stamp = 0; name = "Set"; flags = 1},
+                    "Make", 0),
+                  {txt = Ldot (Lident "Set", "Make");
+                   loc =
+                    {Location.loc_start =
+                      {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                       pos_bol = 0; pos_cnum = 11};
+                     loc_end =
+                      {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                       pos_bol = 0; pos_cnum = 19};
+                     loc_ghost = false}});
+                mod_loc =
+                 {Location.loc_start =
+                   {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                    pos_bol = 0; pos_cnum = 11};
+                  loc_end =
+                   {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                    pos_bol = 0; pos_cnum = 19};
+                  loc_ghost = false};
+                mod_type =
+                 Mty_functor ({Ident.stamp = 1040; name = "Ord"; flags = 0},
+                  Some
+                   (Mty_ident
+                     (Pdot
+                       (Pident {Ident.stamp = 0; name = "Set"; flags = 1},
+                       "OrderedType", -1))),
+                  Mty_signature
+                   [Sig_type ({Ident.stamp = 1041; name = "elt"; flags = 0},
+                     {type_params = []; type_arity = 0;
+                      type_kind = Type_abstract; type_private = Public;
+                      type_manifest =
+                       Some
+                        {desc =
+                          Tconstr
+                           (Pdot
+                             (Pident
+                               {Ident.stamp = 1040; name = "Ord"; flags = 0},
+                             "t", -1),
+                           [], {contents = Mnil});
+                         level = 100000000; id = 898};
+                      type_variance = []; type_newtype_level = None;
+                      type_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      type_attributes = []},
+                     Trec_first);
+                    Sig_type ({Ident.stamp = 1042; name = "t"; flags = 0},
+                     {type_params = []; type_arity = 0;
+                      type_kind = Type_abstract; type_private = Public;
+                      type_manifest = None; type_variance = [];
+                      type_newtype_level = None;
+                      type_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      type_attributes = []},
+                     Trec_first);
+                    Sig_value
+                     ({Ident.stamp = 1043; name = "empty"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tconstr
+                          (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                          [], {contents = Mnil});
+                        level = 100000000; id = 899};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1044; name = "is_empty"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1042; name = "t"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 902},
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 5; name = "bool"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 901},
+                          Cok);
+                        level = 100000000; id = 900};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value ({Ident.stamp = 1045; name = "mem"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1041; name = "elt"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 907},
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 906},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 5; name = "bool"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 905},
+                             Cok);
+                           level = 100000000; id = 904},
+                          Cok);
+                        level = 100000000; id = 903};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value ({Ident.stamp = 1046; name = "add"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1041; name = "elt"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 912},
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 911},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 910},
+                             Cok);
+                           level = 100000000; id = 909},
+                          Cok);
+                        level = 100000000; id = 908};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1047; name = "singleton"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1041; name = "elt"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 915},
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1042; name = "t"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 914},
+                          Cok);
+                        level = 100000000; id = 913};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1048; name = "remove"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1041; name = "elt"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 920},
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 919},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 918},
+                             Cok);
+                           level = 100000000; id = 917},
+                          Cok);
+                        level = 100000000; id = 916};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1049; name = "union"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1042; name = "t"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 925},
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 924},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 923},
+                             Cok);
+                           level = 100000000; id = 922},
+                          Cok);
+                        level = 100000000; id = 921};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1050; name = "inter"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1042; name = "t"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 930},
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 929},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 928},
+                             Cok);
+                           level = 100000000; id = 927},
+                          Cok);
+                        level = 100000000; id = 926};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1051; name = "diff"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1042; name = "t"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 935},
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 934},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 933},
+                             Cok);
+                           level = 100000000; id = 932},
+                          Cok);
+                        level = 100000000; id = 931};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1052; name = "compare"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1042; name = "t"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 940},
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 939},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1; name = "int"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 938},
+                             Cok);
+                           level = 100000000; id = 937},
+                          Cok);
+                        level = 100000000; id = 936};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1053; name = "equal"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1042; name = "t"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 945},
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 944},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 5; name = "bool"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 943},
+                             Cok);
+                           level = 100000000; id = 942},
+                          Cok);
+                        level = 100000000; id = 941};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1054; name = "subset"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1042; name = "t"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 950},
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 949},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 5; name = "bool"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 948},
+                             Cok);
+                           level = 100000000; id = 947},
+                          Cok);
+                        level = 100000000; id = 946};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1055; name = "iter"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1041; name = "elt";
+                                   flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 957},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 6; name = "unit"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 956},
+                             Cok);
+                           level = 100000000; id = 955},
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 954},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 6; name = "unit"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 953},
+                             Cok);
+                           level = 100000000; id = 952},
+                          Cok);
+                        level = 100000000; id = 951};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1056; name = "fold"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1041; name = "elt";
+                                   flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 965},
+                             {desc =
+                               Tarrow ("",
+                                {desc = Tvar (Some "a"); level = 100000000;
+                                 id = 961},
+                                {desc = Tvar (Some "a"); level = 100000000;
+                                 id = 961},
+                                Cok);
+                              level = 100000000; id = 964},
+                             Cok);
+                           level = 100000000; id = 963},
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 962},
+                             {desc =
+                               Tarrow ("",
+                                {desc = Tvar (Some "a"); level = 100000000;
+                                 id = 961},
+                                {desc = Tvar (Some "a"); level = 100000000;
+                                 id = 961},
+                                Cok);
+                              level = 100000000; id = 960},
+                             Cok);
+                           level = 100000000; id = 959},
+                          Cok);
+                        level = 100000000; id = 958};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1057; name = "for_all"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1041; name = "elt";
+                                   flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 972},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 5; name = "bool"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 971},
+                             Cok);
+                           level = 100000000; id = 970},
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 969},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 5; name = "bool"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 968},
+                             Cok);
+                           level = 100000000; id = 967},
+                          Cok);
+                        level = 100000000; id = 966};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1058; name = "exists"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1041; name = "elt";
+                                   flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 979},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 5; name = "bool"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 978},
+                             Cok);
+                           level = 100000000; id = 977},
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 976},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 5; name = "bool"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 975},
+                             Cok);
+                           level = 100000000; id = 974},
+                          Cok);
+                        level = 100000000; id = 973};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1059; name = "filter"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1041; name = "elt";
+                                   flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 986},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 5; name = "bool"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 985},
+                             Cok);
+                           level = 100000000; id = 984},
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 983},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 982},
+                             Cok);
+                           level = 100000000; id = 981},
+                          Cok);
+                        level = 100000000; id = 980};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1060; name = "partition"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1041; name = "elt";
+                                   flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 995},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 5; name = "bool"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 994},
+                             Cok);
+                           level = 100000000; id = 993},
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 992},
+                             {desc =
+                               Ttuple
+                                [{desc =
+                                   Tconstr
+                                    (Pident
+                                      {Ident.stamp = 1042; name = "t";
+                                       flags = 0},
+                                    [], {contents = Mnil});
+                                  level = 100000000; id = 990};
+                                 {desc =
+                                   Tconstr
+                                    (Pident
+                                      {Ident.stamp = 1042; name = "t";
+                                       flags = 0},
+                                    [], {contents = Mnil});
+                                  level = 100000000; id = 991}];
+                              level = 100000000; id = 989},
+                             Cok);
+                           level = 100000000; id = 988},
+                          Cok);
+                        level = 100000000; id = 987};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1061; name = "cardinal"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1042; name = "t"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 998},
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1; name = "int"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 997},
+                          Cok);
+                        level = 100000000; id = 996};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1062; name = "elements"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1042; name = "t"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 1002},
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 9; name = "list"; flags = 0},
+                             [{desc =
+                                Tconstr
+                                 (Pident
+                                   {Ident.stamp = 1041; name = "elt";
+                                    flags = 0},
+                                 [], {contents = Mnil});
+                               level = 100000000; id = 1001}],
+                             {contents = Mnil});
+                           level = 100000000; id = 1000},
+                          Cok);
+                        level = 100000000; id = 999};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1063; name = "min_elt"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1042; name = "t"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 1005},
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1041; name = "elt"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 1004},
+                          Cok);
+                        level = 100000000; id = 1003};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1064; name = "max_elt"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1042; name = "t"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 1008},
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1041; name = "elt"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 1007},
+                          Cok);
+                        level = 100000000; id = 1006};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1065; name = "choose"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1042; name = "t"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 1011},
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1041; name = "elt"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 1010},
+                          Cok);
+                        level = 100000000; id = 1009};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1066; name = "split"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1041; name = "elt"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 1019},
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 1018},
+                             {desc =
+                               Ttuple
+                                [{desc =
+                                   Tconstr
+                                    (Pident
+                                      {Ident.stamp = 1042; name = "t";
+                                       flags = 0},
+                                    [], {contents = Mnil});
+                                  level = 100000000; id = 1015};
+                                 {desc =
+                                   Tconstr
+                                    (Pident
+                                      {Ident.stamp = 5; name = "bool";
+                                       flags = 0},
+                                    [], {contents = Mnil});
+                                  level = 100000000; id = 1016};
+                                 {desc =
+                                   Tconstr
+                                    (Pident
+                                      {Ident.stamp = 1042; name = "t";
+                                       flags = 0},
+                                    [], {contents = Mnil});
+                                  level = 100000000; id = 1017}];
+                              level = 100000000; id = 1014},
+                             Cok);
+                           level = 100000000; id = 1013},
+                          Cok);
+                        level = 100000000; id = 1012};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1067; name = "find"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1041; name = "elt"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 1024},
+                          {desc =
+                            Tarrow ("",
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1042; name = "t"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 1023},
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1041; name = "elt";
+                                   flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 1022},
+                             Cok);
+                           level = 100000000; id = 1021},
+                          Cok);
+                        level = 100000000; id = 1020};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []});
+                    Sig_value
+                     ({Ident.stamp = 1068; name = "of_list"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tarrow ("",
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 9; name = "list"; flags = 0},
+                             [{desc =
+                                Tconstr
+                                 (Pident
+                                   {Ident.stamp = 1041; name = "elt";
+                                    flags = 0},
+                                 [], {contents = Mnil});
+                               level = 100000000; id = 1028}],
+                             {contents = Mnil});
+                           level = 100000000; id = 1027},
+                          {desc =
+                            Tconstr
+                             (Pident
+                               {Ident.stamp = 1042; name = "t"; flags = 0},
+                             [], {contents = Mnil});
+                           level = 100000000; id = 1026},
+                          Cok);
+                        level = 100000000; id = 1025};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_end =
+                         {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = -1};
+                        loc_ghost = true};
+                      val_attributes = []})]);
+                mod_env = <abstr>; mod_attributes = []},
+              {mod_desc =
+                Tmod_structure
+                 {str_items =
+                   [{str_desc =
+                      Tstr_type
+                       [{typ_id = {Ident.stamp = 1008; name = "t"; flags = 0};
+                         typ_name =
+                          {txt = "t";
+                           loc =
+                            {Location.loc_start =
+                              {Lexing.pos_fname = "./functor.ml";
+                               pos_lnum = 1; pos_bol = 0; pos_cnum = 32};
+                             loc_end =
+                              {Lexing.pos_fname = "./functor.ml";
+                               pos_lnum = 1; pos_bol = 0; pos_cnum = 33};
+                             loc_ghost = false}};
+                         typ_params = [];
+                         typ_type =
+                          {type_params = []; type_arity = 0;
+                           type_kind = Type_abstract; type_private = Public;
+                           type_manifest =
+                            Some
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1; name = "int"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 747};
+                           type_variance = []; type_newtype_level = None;
+                           type_loc =
+                            {Location.loc_start =
+                              {Lexing.pos_fname = "./functor.ml";
+                               pos_lnum = 1; pos_bol = 0; pos_cnum = 32};
+                             loc_end =
+                              {Lexing.pos_fname = "./functor.ml";
+                               pos_lnum = 1; pos_bol = 0; pos_cnum = 39};
+                             loc_ghost = false};
+                           type_attributes = []};
+                         typ_cstrs = []; typ_kind = Ttype_abstract;
+                         typ_private = Public;
+                         typ_manifest =
+                          Some
+                           {ctyp_desc =
+                             Ttyp_constr
+                              (Pident
+                                {Ident.stamp = 1; name = "int"; flags = 0},
+                              {txt = Lident "int";
+                               loc =
+                                {Location.loc_start =
+                                  {Lexing.pos_fname = "./functor.ml";
+                                   pos_lnum = 1; pos_bol = 0; pos_cnum = 36};
+                                 loc_end =
+                                  {Lexing.pos_fname = "./functor.ml";
+                                   pos_lnum = 1; pos_bol = 0; pos_cnum = 39};
+                                 loc_ghost = false}},
+                              []);
+                            ctyp_type =
+                             {desc =
+                               Tconstr
+                                (Pident
+                                  {Ident.stamp = 1; name = "int"; flags = 0},
+                                [], {contents = Mnil});
+                              level = 100000000; id = 747};
+                            ctyp_env = <abstr>;
+                            ctyp_loc =
+                             {Location.loc_start =
+                               {Lexing.pos_fname = "./functor.ml";
+                                pos_lnum = 1; pos_bol = 0; pos_cnum = 36};
+                              loc_end =
+                               {Lexing.pos_fname = "./functor.ml";
+                                pos_lnum = 1; pos_bol = 0; pos_cnum = 39};
+                              loc_ghost = false};
+                            ctyp_attributes = []};
+                         typ_loc =
+                          {Location.loc_start =
+                            {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                             pos_bol = 0; pos_cnum = 32};
+                           loc_end =
+                            {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                             pos_bol = 0; pos_cnum = 39};
+                           loc_ghost = false};
+                         typ_attributes = []}];
+                     str_loc =
+                      {Location.loc_start =
+                        {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                         pos_bol = 0; pos_cnum = 27};
+                       loc_end =
+                        {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                         pos_bol = 0; pos_cnum = 39};
+                       loc_ghost = false};
+                     str_env = <abstr>};
+                    {str_desc =
+                      Tstr_value (Nonrecursive,
+                       [{vb_pat =
+                          {pat_desc =
+                            Tpat_var
+                             ({Ident.stamp = 1009; name = "compare";
+                               flags = 0},
+                             {txt = "compare";
+                              loc =
+                               {Location.loc_start =
+                                 {Lexing.pos_fname = "./functor.ml";
+                                  pos_lnum = 1; pos_bol = 0; pos_cnum = 44};
+                                loc_end =
+                                 {Lexing.pos_fname = "./functor.ml";
+                                  pos_lnum = 1; pos_bol = 0; pos_cnum = 51};
+                                loc_ghost = false}});
+                           pat_loc =
+                            {Location.loc_start =
+                              {Lexing.pos_fname = "./functor.ml";
+                               pos_lnum = 1; pos_bol = 0; pos_cnum = 44};
+                             loc_end =
+                              {Lexing.pos_fname = "./functor.ml";
+                               pos_lnum = 1; pos_bol = 0; pos_cnum = 51};
+                             loc_ghost = false};
+                           pat_extra = [];
+                           pat_type =
+                            {desc =
+                              Tlink
+                               {desc =
+                                 Tarrow ("",
+                                  {desc = Tvar None; level = 100000000;
+                                   id = 762},
+                                  {desc =
+                                    Tarrow ("",
+                                     {desc = Tvar None; level = 100000000;
+                                      id = 762},
+                                     {desc =
+                                       Tconstr
+                                        (Pident
+                                          {Ident.stamp = 1; name = "int";
+                                           flags = 0},
+                                        [], {contents = Mnil});
+                                      level = 100000000; id = 761},
+                                     Cok);
+                                   level = 100000000; id = 760},
+                                  Cok);
+                                level = 100000000; id = 759};
+                             level = 1009; id = 758};
+                           pat_env = <abstr>; pat_attributes = []};
+                         vb_expr =
+                          {exp_desc =
+                            Texp_ident
+                             (Pdot
+                               (Pident
+                                 {Ident.stamp = 0; name = "Pervasives";
+                                  flags = 1},
+                               "compare", 3),
+                             {txt = Lident "compare";
+                              loc =
+                               {Location.loc_start =
+                                 {Lexing.pos_fname = "./functor.ml";
+                                  pos_lnum = 1; pos_bol = 0; pos_cnum = 54};
+                                loc_end =
+                                 {Lexing.pos_fname = "./functor.ml";
+                                  pos_lnum = 1; pos_bol = 0; pos_cnum = 61};
+                                loc_ghost = false}},
+                             {val_type =
+                               {desc =
+                                 Tarrow ("",
+                                  {desc = Tvar (Some "a"); level = 100000000;
+                                   id = 77},
+                                  {desc =
+                                    Tarrow ("",
+                                     {desc = Tvar (Some "a");
+                                      level = 100000000; id = 77},
+                                     {desc =
+                                       Tconstr
+                                        (Pident
+                                          {Ident.stamp = 1; name = "int";
+                                           flags = 0},
+                                        [], {contents = Mnil});
+                                      level = 100000000; id = 76},
+                                     Cok);
+                                   level = 100000000; id = 75},
+                                  Cok);
+                                level = 100000000; id = 74};
+                              val_kind =
+                               Val_prim
+                                {Primitive.prim_name = "%compare";
+                                 prim_arity = 2; prim_alloc = true;
+                                 prim_native_name = "";
+                                 prim_native_float = false};
+                              val_loc =
+                               {Location.loc_start =
+                                 {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                                  pos_bol = 0; pos_cnum = -1};
+                                loc_end =
+                                 {Lexing.pos_fname = "_none_"; pos_lnum = 1;
+                                  pos_bol = 0; pos_cnum = -1};
+                                loc_ghost = true};
+                              val_attributes = []});
+                           exp_loc =
+                            {Location.loc_start =
+                              {Lexing.pos_fname = "./functor.ml";
+                               pos_lnum = 1; pos_bol = 0; pos_cnum = 54};
+                             loc_end =
+                              {Lexing.pos_fname = "./functor.ml";
+                               pos_lnum = 1; pos_bol = 0; pos_cnum = 61};
+                             loc_ghost = false};
+                           exp_extra = [];
+                           exp_type =
+                            {desc =
+                              Tarrow ("",
+                               {desc = Tvar None; level = 100000000;
+                                id = 762},
+                               {desc =
+                                 Tarrow ("",
+                                  {desc = Tvar None; level = 100000000;
+                                   id = 762},
+                                  {desc =
+                                    Tconstr
+                                     (Pident
+                                       {Ident.stamp = 1; name = "int";
+                                        flags = 0},
+                                     [], {contents = Mnil});
+                                   level = 100000000; id = 761},
+                                  Cok);
+                                level = 100000000; id = 760},
+                               Cok);
+                             level = 100000000; id = 759};
+                           exp_env = <abstr>; exp_attributes = []};
+                         vb_attributes = [];
+                         vb_loc =
+                          {Location.loc_start =
+                            {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                             pos_bol = 0; pos_cnum = 44};
+                           loc_end =
+                            {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                             pos_bol = 0; pos_cnum = 61};
+                           loc_ghost = false}}]);
+                     str_loc =
+                      {Location.loc_start =
+                        {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                         pos_bol = 0; pos_cnum = 40};
+                       loc_end =
+                        {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                         pos_bol = 0; pos_cnum = 61};
+                       loc_ghost = false};
+                     str_env = <abstr>}];
+                  str_type =
+                   [Sig_type ({Ident.stamp = 1008; name = "t"; flags = 0},
+                     {type_params = []; type_arity = 0;
+                      type_kind = Type_abstract; type_private = Public;
+                      type_manifest =
+                       Some
+                        {desc =
+                          Tconstr
+                           (Pident {Ident.stamp = 1; name = "int"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 747};
+                      type_variance = []; type_newtype_level = None;
+                      type_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = 32};
+                        loc_end =
+                         {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = 39};
+                        loc_ghost = false};
+                      type_attributes = []},
+                     Trec_first);
+                    Sig_value
+                     ({Ident.stamp = 1009; name = "compare"; flags = 0},
+                     {val_type =
+                       {desc =
+                         Tlink
+                          {desc =
+                            Tarrow ("",
+                             {desc = Tvar None; level = 100000000; id = 762},
+                             {desc =
+                               Tarrow ("",
+                                {desc = Tvar None; level = 100000000;
+                                 id = 762},
+                                {desc =
+                                  Tconstr
+                                   (Pident
+                                     {Ident.stamp = 1; name = "int";
+                                      flags = 0},
+                                   [], {contents = Mnil});
+                                 level = 100000000; id = 761},
+                                Cok);
+                              level = 100000000; id = 760},
+                             Cok);
+                           level = 100000000; id = 759};
+                        level = 1009; id = 758};
+                      val_kind = Val_reg;
+                      val_loc =
+                       {Location.loc_start =
+                         {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = 44};
+                        loc_end =
+                         {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                          pos_bol = 0; pos_cnum = 51};
+                        loc_ghost = false};
+                      val_attributes = []})];
+                  str_final_env = <abstr>};
+               mod_loc =
+                {Location.loc_start =
+                  {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                   pos_bol = 0; pos_cnum = 20};
+                 loc_end =
+                  {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                   pos_bol = 0; pos_cnum = 65};
+                 loc_ghost = false};
+               mod_type =
+                Mty_signature
+                 [Sig_type ({Ident.stamp = 1008; name = "t"; flags = 0},
+                   {type_params = []; type_arity = 0;
+                    type_kind = Type_abstract; type_private = Public;
+                    type_manifest =
+                     Some
+                      {desc =
+                        Tconstr
+                         (Pident {Ident.stamp = 1; name = "int"; flags = 0},
+                         [], {contents = Mnil});
+                       level = 100000000; id = 747};
+                    type_variance = []; type_newtype_level = None;
+                    type_loc =
+                     {Location.loc_start =
+                       {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                        pos_bol = 0; pos_cnum = 32};
+                      loc_end =
+                       {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                        pos_bol = 0; pos_cnum = 39};
+                      loc_ghost = false};
+                    type_attributes = []},
+                   Trec_first);
+                  Sig_value
+                   ({Ident.stamp = 1009; name = "compare"; flags = 0},
+                   {val_type =
+                     {desc =
+                       Tlink
+                        {desc =
+                          Tarrow ("",
+                           {desc = Tvar None; level = 100000000; id = 762},
+                           {desc =
+                             Tarrow ("",
+                              {desc = Tvar None; level = 100000000; id = 762},
+                              {desc =
+                                Tconstr
+                                 (Pident
+                                   {Ident.stamp = 1; name = "int"; flags = 0},
+                                 [], {contents = Mnil});
+                               level = 100000000; id = 761},
+                              Cok);
+                            level = 100000000; id = 760},
+                           Cok);
+                         level = 100000000; id = 759};
+                      level = 1009; id = 758};
+                    val_kind = Val_reg;
+                    val_loc =
+                     {Location.loc_start =
+                       {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                        pos_bol = 0; pos_cnum = 44};
+                      loc_end =
+                       {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1;
+                        pos_bol = 0; pos_cnum = 51};
+                      loc_ghost = false};
+                    val_attributes = []})];
+               mod_env = <abstr>; mod_attributes = []},
+              Tcoerce_none);
+            mod_loc =
+             {Location.loc_start =
+               {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1; pos_bol = 0;
+                pos_cnum = 11};
+              loc_end =
+               {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1; pos_bol = 0;
+                pos_cnum = 66};
+              loc_ghost = false};
+            mod_type =
+             Mty_signature
+              [Sig_type ({Ident.stamp = 1041; name = "elt"; flags = 0},
+                {type_params = []; type_arity = 0; type_kind = Type_abstract;
+                 type_private = Public;
+                 type_manifest =
+                  Some
+                   {desc =
+                     Tconstr
+                      (Pident {Ident.stamp = 1; name = "int"; flags = 0}, 
+                      [], {contents = Mnil});
+                    level = 100000000; id = 1186};
+                 type_variance = []; type_newtype_level = None;
+                 type_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 type_attributes = []},
+                Trec_first);
+               Sig_type ({Ident.stamp = 1042; name = "t"; flags = 0},
+                {type_params = []; type_arity = 0; type_kind = Type_abstract;
+                 type_private = Public; type_manifest = None;
+                 type_variance = []; type_newtype_level = None;
+                 type_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 type_attributes = []},
+                Trec_first);
+               Sig_value ({Ident.stamp = 1043; name = "empty"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tconstr
+                     (Pident {Ident.stamp = 1042; name = "t"; flags = 0}, 
+                     [], {contents = Mnil});
+                   level = 100000000; id = 1176};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1044; name = "is_empty"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1175},
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 5; name = "bool"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1174},
+                     Cok);
+                   level = 100000000; id = 1173};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1045; name = "mem"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1172},
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1171},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 5; name = "bool"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1170},
+                        Cok);
+                      level = 100000000; id = 1169},
+                     Cok);
+                   level = 100000000; id = 1168};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1046; name = "add"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1167},
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1166},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1165},
+                        Cok);
+                      level = 100000000; id = 1164},
+                     Cok);
+                   level = 100000000; id = 1163};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value
+                ({Ident.stamp = 1047; name = "singleton"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1162},
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1161},
+                     Cok);
+                   level = 100000000; id = 1160};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1048; name = "remove"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1159},
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1158},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1157},
+                        Cok);
+                      level = 100000000; id = 1156},
+                     Cok);
+                   level = 100000000; id = 1155};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1049; name = "union"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1154},
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1153},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1152},
+                        Cok);
+                      level = 100000000; id = 1151},
+                     Cok);
+                   level = 100000000; id = 1150};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1050; name = "inter"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1149},
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1148},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1147},
+                        Cok);
+                      level = 100000000; id = 1146},
+                     Cok);
+                   level = 100000000; id = 1145};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1051; name = "diff"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1144},
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1143},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1142},
+                        Cok);
+                      level = 100000000; id = 1141},
+                     Cok);
+                   level = 100000000; id = 1140};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1052; name = "compare"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1139},
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1138},
+                        {desc =
+                          Tconstr
+                           (Pident {Ident.stamp = 1; name = "int"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1137},
+                        Cok);
+                      level = 100000000; id = 1136},
+                     Cok);
+                   level = 100000000; id = 1135};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1053; name = "equal"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1134},
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1133},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 5; name = "bool"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1132},
+                        Cok);
+                      level = 100000000; id = 1131},
+                     Cok);
+                   level = 100000000; id = 1130};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1054; name = "subset"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1129},
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1128},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 5; name = "bool"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1127},
+                        Cok);
+                      level = 100000000; id = 1126},
+                     Cok);
+                   level = 100000000; id = 1125};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1055; name = "iter"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1041; name = "elt"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1124},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 6; name = "unit"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1123},
+                        Cok);
+                      level = 100000000; id = 1122},
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1121},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 6; name = "unit"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1120},
+                        Cok);
+                      level = 100000000; id = 1119},
+                     Cok);
+                   level = 100000000; id = 1118};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1056; name = "fold"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1041; name = "elt"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1117},
+                        {desc =
+                          Tarrow ("",
+                           {desc = Tvar (Some "a"); level = 100000000;
+                            id = 961},
+                           {desc = Tvar (Some "a"); level = 100000000;
+                            id = 961},
+                           Cok);
+                         level = 100000000; id = 1116},
+                        Cok);
+                      level = 100000000; id = 1115},
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1114},
+                        {desc =
+                          Tarrow ("",
+                           {desc = Tvar (Some "a"); level = 100000000;
+                            id = 961},
+                           {desc = Tvar (Some "a"); level = 100000000;
+                            id = 961},
+                           Cok);
+                         level = 100000000; id = 1113},
+                        Cok);
+                      level = 100000000; id = 1112},
+                     Cok);
+                   level = 100000000; id = 1111};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1057; name = "for_all"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1041; name = "elt"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1110},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 5; name = "bool"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1109},
+                        Cok);
+                      level = 100000000; id = 1108},
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1107},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 5; name = "bool"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1106},
+                        Cok);
+                      level = 100000000; id = 1105},
+                     Cok);
+                   level = 100000000; id = 1104};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1058; name = "exists"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1041; name = "elt"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1103},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 5; name = "bool"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1102},
+                        Cok);
+                      level = 100000000; id = 1101},
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1100},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 5; name = "bool"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1099},
+                        Cok);
+                      level = 100000000; id = 1098},
+                     Cok);
+                   level = 100000000; id = 1097};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1059; name = "filter"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1041; name = "elt"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1096},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 5; name = "bool"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1095},
+                        Cok);
+                      level = 100000000; id = 1094},
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1093},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1092},
+                        Cok);
+                      level = 100000000; id = 1091},
+                     Cok);
+                   level = 100000000; id = 1090};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value
+                ({Ident.stamp = 1060; name = "partition"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1041; name = "elt"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1089},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 5; name = "bool"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1088},
+                        Cok);
+                      level = 100000000; id = 1087},
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1086},
+                        {desc =
+                          Ttuple
+                           [{desc =
+                              Tconstr
+                               (Pident
+                                 {Ident.stamp = 1042; name = "t"; flags = 0},
+                               [], {contents = Mnil});
+                             level = 100000000; id = 1084};
+                            {desc =
+                              Tconstr
+                               (Pident
+                                 {Ident.stamp = 1042; name = "t"; flags = 0},
+                               [], {contents = Mnil});
+                             level = 100000000; id = 1085}];
+                         level = 100000000; id = 1083},
+                        Cok);
+                      level = 100000000; id = 1082},
+                     Cok);
+                   level = 100000000; id = 1081};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1061; name = "cardinal"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1080},
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1; name = "int"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1079},
+                     Cok);
+                   level = 100000000; id = 1078};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1062; name = "elements"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1077},
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 9; name = "list"; flags = 0},
+                        [{desc =
+                           Tconstr
+                            (Pident
+                              {Ident.stamp = 1041; name = "elt"; flags = 0},
+                            [], {contents = Mnil});
+                          level = 100000000; id = 1076}],
+                        {contents = Mnil});
+                      level = 100000000; id = 1075},
+                     Cok);
+                   level = 100000000; id = 1074};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1063; name = "min_elt"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1073},
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1072},
+                     Cok);
+                   level = 100000000; id = 1071};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1064; name = "max_elt"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1070},
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1069},
+                     Cok);
+                   level = 100000000; id = 1068};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1065; name = "choose"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1067},
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1066},
+                     Cok);
+                   level = 100000000; id = 1065};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1066; name = "split"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1064},
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1063},
+                        {desc =
+                          Ttuple
+                           [{desc =
+                              Tconstr
+                               (Pident
+                                 {Ident.stamp = 1042; name = "t"; flags = 0},
+                               [], {contents = Mnil});
+                             level = 100000000; id = 1060};
+                            {desc =
+                              Tconstr
+                               (Pident
+                                 {Ident.stamp = 5; name = "bool"; flags = 0},
+                               [], {contents = Mnil});
+                             level = 100000000; id = 1061};
+                            {desc =
+                              Tconstr
+                               (Pident
+                                 {Ident.stamp = 1042; name = "t"; flags = 0},
+                               [], {contents = Mnil});
+                             level = 100000000; id = 1062}];
+                         level = 100000000; id = 1059},
+                        Cok);
+                      level = 100000000; id = 1058},
+                     Cok);
+                   level = 100000000; id = 1057};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1067; name = "find"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1056},
+                     {desc =
+                       Tarrow ("",
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1055},
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1041; name = "elt"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1054},
+                        Cok);
+                      level = 100000000; id = 1053},
+                     Cok);
+                   level = 100000000; id = 1052};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []});
+               Sig_value ({Ident.stamp = 1068; name = "of_list"; flags = 0},
+                {val_type =
+                  {desc =
+                    Tarrow ("",
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 9; name = "list"; flags = 0},
+                        [{desc =
+                           Tconstr
+                            (Pident
+                              {Ident.stamp = 1041; name = "elt"; flags = 0},
+                            [], {contents = Mnil});
+                          level = 100000000; id = 1051}],
+                        {contents = Mnil});
+                      level = 100000000; id = 1050},
+                     {desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1049},
+                     Cok);
+                   level = 100000000; id = 1048};
+                 val_kind = Val_reg;
+                 val_loc =
+                  {Location.loc_start =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_end =
+                    {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                     pos_cnum = -1};
+                   loc_ghost = true};
+                 val_attributes = []})];
+            mod_env = <abstr>; mod_attributes = []};
+          mb_attributes = [];
+          mb_loc =
+           {Location.loc_start =
+             {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1; pos_bol = 0;
+              pos_cnum = 7};
+            loc_end =
+             {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1; pos_bol = 0;
+              pos_cnum = 66};
+            loc_ghost = false}};
+       str_loc =
+        {Location.loc_start =
+          {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1; pos_bol = 0;
+           pos_cnum = 0};
+         loc_end =
+          {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1; pos_bol = 0;
+           pos_cnum = 66};
+         loc_ghost = false};
+       str_env = <abstr>};
+      {str_desc =
+        Tstr_eval
+         ({exp_desc =
+            Texp_ident
+             (Pdot (Pident {Ident.stamp = 1069; name = "M"; flags = 0},
+               "empty", 0),
+             {txt = Ldot (Lident "M", "empty");
+              loc =
+               {Location.loc_start =
+                 {Lexing.pos_fname = "./functor.ml"; pos_lnum = 3;
+                  pos_bol = 68; pos_cnum = 76};
+                loc_end =
+                 {Lexing.pos_fname = "./functor.ml"; pos_lnum = 3;
+                  pos_bol = 68; pos_cnum = 83};
+                loc_ghost = false}},
+             {val_type =
+               {desc =
+                 Tconstr
+                  (Pdot (Pident {Ident.stamp = 1069; name = "M"; flags = 0},
+                    "t", -1),
+                  [], {contents = Mnil});
+                level = 100000000; id = 1190};
+              val_kind = Val_reg;
+              val_loc =
+               {Location.loc_start =
+                 {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                  pos_cnum = -1};
+                loc_end =
+                 {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                  pos_cnum = -1};
+                loc_ghost = true};
+              val_attributes = []});
+           exp_loc =
+            {Location.loc_start =
+              {Lexing.pos_fname = "./functor.ml"; pos_lnum = 3; pos_bol = 68;
+               pos_cnum = 76};
+             loc_end =
+              {Lexing.pos_fname = "./functor.ml"; pos_lnum = 3; pos_bol = 68;
+               pos_cnum = 83};
+             loc_ghost = false};
+           exp_extra = [];
+           exp_type =
+            {desc =
+              Tconstr
+               (Pdot (Pident {Ident.stamp = 1069; name = "M"; flags = 0},
+                 "t", -1),
+               [], {contents = Mnil});
+             level = 100000000; id = 1190};
+           exp_env = <abstr>; exp_attributes = []},
+         []);
+       str_loc =
+        {Location.loc_start =
+          {Lexing.pos_fname = "./functor.ml"; pos_lnum = 3; pos_bol = 68;
+           pos_cnum = 68};
+         loc_end =
+          {Lexing.pos_fname = "./functor.ml"; pos_lnum = 3; pos_bol = 68;
+           pos_cnum = 83};
+         loc_ghost = false};
+       str_env = <abstr>}];
+    str_type =
+     [Sig_module ({Ident.stamp = 1069; name = "M"; flags = 0},
+       {md_type =
+         Mty_signature
+          [Sig_type ({Ident.stamp = 1041; name = "elt"; flags = 0},
+            {type_params = []; type_arity = 0; type_kind = Type_abstract;
+             type_private = Public;
+             type_manifest =
+              Some
+               {desc =
+                 Tconstr (Pident {Ident.stamp = 1; name = "int"; flags = 0},
+                  [], {contents = Mnil});
+                level = 100000000; id = 1186};
+             type_variance = []; type_newtype_level = None;
+             type_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             type_attributes = []},
+            Trec_first);
+           Sig_type ({Ident.stamp = 1042; name = "t"; flags = 0},
+            {type_params = []; type_arity = 0; type_kind = Type_abstract;
+             type_private = Public; type_manifest = None; type_variance = [];
+             type_newtype_level = None;
+             type_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             type_attributes = []},
+            Trec_first);
+           Sig_value ({Ident.stamp = 1043; name = "empty"; flags = 0},
+            {val_type =
+              {desc =
+                Tconstr (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                 [], {contents = Mnil});
+               level = 100000000; id = 1176};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1044; name = "is_empty"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1042; name = "t"; flags = 0}, 
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1175},
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 5; name = "bool"; flags = 0}, 
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1174},
+                 Cok);
+               level = 100000000; id = 1173};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1045; name = "mem"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1172},
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1171},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 5; name = "bool"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1170},
+                    Cok);
+                  level = 100000000; id = 1169},
+                 Cok);
+               level = 100000000; id = 1168};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1046; name = "add"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1167},
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1166},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1165},
+                    Cok);
+                  level = 100000000; id = 1164},
+                 Cok);
+               level = 100000000; id = 1163};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1047; name = "singleton"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1162},
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1042; name = "t"; flags = 0}, 
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1161},
+                 Cok);
+               level = 100000000; id = 1160};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1048; name = "remove"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1159},
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1158},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1157},
+                    Cok);
+                  level = 100000000; id = 1156},
+                 Cok);
+               level = 100000000; id = 1155};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1049; name = "union"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1042; name = "t"; flags = 0}, 
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1154},
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1153},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1152},
+                    Cok);
+                  level = 100000000; id = 1151},
+                 Cok);
+               level = 100000000; id = 1150};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1050; name = "inter"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1042; name = "t"; flags = 0}, 
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1149},
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1148},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1147},
+                    Cok);
+                  level = 100000000; id = 1146},
+                 Cok);
+               level = 100000000; id = 1145};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1051; name = "diff"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1042; name = "t"; flags = 0}, 
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1144},
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1143},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1142},
+                    Cok);
+                  level = 100000000; id = 1141},
+                 Cok);
+               level = 100000000; id = 1140};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1052; name = "compare"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1042; name = "t"; flags = 0}, 
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1139},
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1138},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1; name = "int"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1137},
+                    Cok);
+                  level = 100000000; id = 1136},
+                 Cok);
+               level = 100000000; id = 1135};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1053; name = "equal"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1042; name = "t"; flags = 0}, 
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1134},
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1133},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 5; name = "bool"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1132},
+                    Cok);
+                  level = 100000000; id = 1131},
+                 Cok);
+               level = 100000000; id = 1130};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1054; name = "subset"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1042; name = "t"; flags = 0}, 
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1129},
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1128},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 5; name = "bool"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1127},
+                    Cok);
+                  level = 100000000; id = 1126},
+                 Cok);
+               level = 100000000; id = 1125};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1055; name = "iter"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1124},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 6; name = "unit"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1123},
+                    Cok);
+                  level = 100000000; id = 1122},
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1121},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 6; name = "unit"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1120},
+                    Cok);
+                  level = 100000000; id = 1119},
+                 Cok);
+               level = 100000000; id = 1118};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1056; name = "fold"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1117},
+                    {desc =
+                      Tarrow ("",
+                       {desc = Tvar (Some "a"); level = 100000000; id = 961},
+                       {desc = Tvar (Some "a"); level = 100000000; id = 961},
+                       Cok);
+                     level = 100000000; id = 1116},
+                    Cok);
+                  level = 100000000; id = 1115},
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1114},
+                    {desc =
+                      Tarrow ("",
+                       {desc = Tvar (Some "a"); level = 100000000; id = 961},
+                       {desc = Tvar (Some "a"); level = 100000000; id = 961},
+                       Cok);
+                     level = 100000000; id = 1113},
+                    Cok);
+                  level = 100000000; id = 1112},
+                 Cok);
+               level = 100000000; id = 1111};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1057; name = "for_all"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1110},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 5; name = "bool"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1109},
+                    Cok);
+                  level = 100000000; id = 1108},
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1107},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 5; name = "bool"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1106},
+                    Cok);
+                  level = 100000000; id = 1105},
+                 Cok);
+               level = 100000000; id = 1104};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1058; name = "exists"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1103},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 5; name = "bool"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1102},
+                    Cok);
+                  level = 100000000; id = 1101},
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1100},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 5; name = "bool"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1099},
+                    Cok);
+                  level = 100000000; id = 1098},
+                 Cok);
+               level = 100000000; id = 1097};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1059; name = "filter"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1096},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 5; name = "bool"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1095},
+                    Cok);
+                  level = 100000000; id = 1094},
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1093},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1092},
+                    Cok);
+                  level = 100000000; id = 1091},
+                 Cok);
+               level = 100000000; id = 1090};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1060; name = "partition"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1089},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 5; name = "bool"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1088},
+                    Cok);
+                  level = 100000000; id = 1087},
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1086},
+                    {desc =
+                      Ttuple
+                       [{desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1084};
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1085}];
+                     level = 100000000; id = 1083},
+                    Cok);
+                  level = 100000000; id = 1082},
+                 Cok);
+               level = 100000000; id = 1081};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1061; name = "cardinal"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1042; name = "t"; flags = 0}, 
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1080},
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1; name = "int"; flags = 0}, 
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1079},
+                 Cok);
+               level = 100000000; id = 1078};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1062; name = "elements"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1042; name = "t"; flags = 0}, 
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1077},
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 9; name = "list"; flags = 0},
+                    [{desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1076}],
+                    {contents = Mnil});
+                  level = 100000000; id = 1075},
+                 Cok);
+               level = 100000000; id = 1074};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1063; name = "min_elt"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1042; name = "t"; flags = 0}, 
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1073},
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1072},
+                 Cok);
+               level = 100000000; id = 1071};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1064; name = "max_elt"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1042; name = "t"; flags = 0}, 
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1070},
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1069},
+                 Cok);
+               level = 100000000; id = 1068};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1065; name = "choose"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1042; name = "t"; flags = 0}, 
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1067},
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1066},
+                 Cok);
+               level = 100000000; id = 1065};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1066; name = "split"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1064},
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1063},
+                    {desc =
+                      Ttuple
+                       [{desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1060};
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 5; name = "bool"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1061};
+                        {desc =
+                          Tconstr
+                           (Pident
+                             {Ident.stamp = 1042; name = "t"; flags = 0},
+                           [], {contents = Mnil});
+                         level = 100000000; id = 1062}];
+                     level = 100000000; id = 1059},
+                    Cok);
+                  level = 100000000; id = 1058},
+                 Cok);
+               level = 100000000; id = 1057};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1067; name = "find"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1056},
+                 {desc =
+                   Tarrow ("",
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1042; name = "t"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1055},
+                    {desc =
+                      Tconstr
+                       (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                       [], {contents = Mnil});
+                     level = 100000000; id = 1054},
+                    Cok);
+                  level = 100000000; id = 1053},
+                 Cok);
+               level = 100000000; id = 1052};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []});
+           Sig_value ({Ident.stamp = 1068; name = "of_list"; flags = 0},
+            {val_type =
+              {desc =
+                Tarrow ("",
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 9; name = "list"; flags = 0},
+                    [{desc =
+                       Tconstr
+                        (Pident {Ident.stamp = 1041; name = "elt"; flags = 0},
+                        [], {contents = Mnil});
+                      level = 100000000; id = 1051}],
+                    {contents = Mnil});
+                  level = 100000000; id = 1050},
+                 {desc =
+                   Tconstr
+                    (Pident {Ident.stamp = 1042; name = "t"; flags = 0}, 
+                    [], {contents = Mnil});
+                  level = 100000000; id = 1049},
+                 Cok);
+               level = 100000000; id = 1048};
+             val_kind = Val_reg;
+             val_loc =
+              {Location.loc_start =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_end =
+                {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+                 pos_cnum = -1};
+               loc_ghost = true};
+             val_attributes = []})];
+        md_attributes = [];
+        md_loc =
+         {Location.loc_start =
+           {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1; pos_bol = 0;
+            pos_cnum = 7};
+          loc_end =
+           {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1; pos_bol = 0;
+            pos_cnum = 66};
+          loc_ghost = false}},
+       Trec_not)];
+    str_final_env = <abstr>};
+ cmt_value_dependencies =
+  [({val_type =
+      {desc =
+        Tlink
+         {desc =
+           Tarrow ("", {desc = Tvar None; level = 100000000; id = 762},
+            {desc =
+              Tarrow ("", {desc = Tvar None; level = 100000000; id = 762},
+               {desc =
+                 Tconstr (Pident {Ident.stamp = 1; name = "int"; flags = 0},
+                  [], {contents = Mnil});
+                level = 100000000; id = 761},
+               Cok);
+             level = 100000000; id = 760},
+            Cok);
+          level = 100000000; id = 759};
+       level = 1009; id = 758};
+     val_kind = Val_reg;
+     val_loc =
+      {Location.loc_start =
+        {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1; pos_bol = 0;
+         pos_cnum = 44};
+       loc_end =
+        {Lexing.pos_fname = "./functor.ml"; pos_lnum = 1; pos_bol = 0;
+         pos_cnum = 51};
+       loc_ghost = false};
+     val_attributes = []},
+    {val_type =
+      {desc =
+        Tarrow ("",
+         {desc =
+           Tconstr (Pident {Ident.stamp = 1010; name = "t"; flags = 0}, 
+            [], {contents = Mnil});
+          level = 100000000; id = 767},
+         {desc =
+           Tarrow ("",
+            {desc =
+              Tconstr (Pident {Ident.stamp = 1010; name = "t"; flags = 0},
+               [], {contents = Mnil});
+             level = 100000000; id = 766},
+            {desc =
+              Tconstr (Pident {Ident.stamp = 1; name = "int"; flags = 0}, 
+               [], {contents = Mnil});
+             level = 100000000; id = 765},
+            Cok);
+          level = 100000000; id = 764},
+         Cok);
+       level = 100000000; id = 763};
+     val_kind = Val_reg;
+     val_loc =
+      {Location.loc_start =
+        {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+         pos_cnum = -1};
+       loc_end =
+        {Lexing.pos_fname = "_none_"; pos_lnum = 1; pos_bol = 0;
+         pos_cnum = -1};
+       loc_ghost = true};
+     val_attributes = []})];
+ cmt_comments = [];
+ cmt_args =
+  [|"/home/tokuda/.opam/4.02.0+trunk/bin/ocamlopt"; "./functor.ml"|];
+ cmt_sourcefile = Some "./functor.ml";
+ cmt_builddir = "/home/tokuda/Dropbox/ocaml/test";
+ cmt_loadpath = [""; "/home/tokuda/.opam/4.02.0+trunk/lib/ocaml"];
+ cmt_source_digest = Some "j\211n2\180[\166\170U+\129:\179\131\247R";
+ cmt_initial_env = <abstr>;
+ cmt_imports =
+  [("CamlinternalFormatBasics",
+    Some "\168\143\145\208\240O\214k\192\187\170\243G\b\030\149");
+   ("Functor", Some "\144\030]|\154+\"\137I\213\150\228F,\178o");
+   ("Pervasives", Some "C)\229\127\222\020\204\148\176*s\157%\149Qk");
+   ("Set", Some "Hq\151\204\210\254\166MR\241\205\145pa\202\242")];
+ cmt_interface_digest = Some "\144\030]|\154+\"\137I\213\150\228F,\178o";
+ cmt_use_summaries = true}
+# 

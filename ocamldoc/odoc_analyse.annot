@@ -1,0 +1,6468 @@
+"odoc_analyse.ml" 29 1231 1235 "odoc_analyse.ml" 29 1231 1244
+type(
+  unit -> unit
+)
+ident(
+  def init_path "odoc_analyse.ml" 35 1427 1427 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 29 1231 1245 "odoc_analyse.ml" 29 1231 1247
+type(
+  unit
+)
+"odoc_analyse.ml" 30 1250 1252 "odoc_analyse.ml" 30 1250 1261
+type(
+  string list ref
+)
+ident(
+  ext_ref Config.load_path
+)
+"odoc_analyse.ml" 30 1250 1262 "odoc_analyse.ml" 30 1250 1264
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_analyse.ml" 31 1265 1269 "odoc_analyse.ml" 31 1265 1271
+type(
+  string
+)
+"odoc_analyse.ml" 31 1265 1275 "odoc_analyse.ml" 31 1265 1283
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"odoc_analyse.ml" 31 1265 1285 "odoc_analyse.ml" 31 1265 1308
+type(
+  string
+)
+ident(
+  ext_ref Config.standard_library
+)
+"odoc_analyse.ml" 31 1265 1312 "odoc_analyse.ml" 31 1265 1313
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_analyse.ml" 31 1265 1313 "odoc_analyse.ml" 31 1265 1333
+type(
+  string list ref
+)
+ident(
+  ext_ref Clflags.include_dirs
+)
+"odoc_analyse.ml" 31 1265 1312 "odoc_analyse.ml" 31 1265 1333
+type(
+  string list
+)
+"odoc_analyse.ml" 31 1265 1284 "odoc_analyse.ml" 31 1265 1334
+type(
+  string list
+)
+"odoc_analyse.ml" 31 1265 1275 "odoc_analyse.ml" 31 1265 1334
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc_analyse.ml" 31 1265 1269 "odoc_analyse.ml" 31 1265 1334
+type(
+  string list
+)
+"odoc_analyse.ml" 30 1250 1252 "odoc_analyse.ml" 31 1265 1334
+type(
+  unit
+)
+"odoc_analyse.ml" 32 1336 1338 "odoc_analyse.ml" 32 1336 1353
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Env.reset_cache
+)
+"odoc_analyse.ml" 32 1336 1354 "odoc_analyse.ml" 32 1336 1356
+type(
+  unit
+)
+"odoc_analyse.ml" 32 1336 1338 "odoc_analyse.ml" 32 1336 1356
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 30 1250 1252 "odoc_analyse.ml" 32 1336 1356
+type(
+  unit
+)
+"odoc_analyse.ml" 35 1427 1431 "odoc_analyse.ml" 35 1427 1442
+type(
+  unit -> Env.t
+)
+ident(
+  def initial_env "odoc_analyse.ml" 47 1774 1774 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 35 1427 1443 "odoc_analyse.ml" 35 1427 1445
+type(
+  unit
+)
+"odoc_analyse.ml" 36 1448 1454 "odoc_analyse.ml" 36 1448 1461
+type(
+  Env.t
+)
+ident(
+  def initial "odoc_analyse.ml" 40 1563 1565 "odoc_analyse.ml" 44 1685 1729
+)
+"odoc_analyse.ml" 37 1464 1471 "odoc_analyse.ml" 37 1464 1472
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_analyse.ml" 37 1464 1472 "odoc_analyse.ml" 37 1464 1493
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.unsafe_string
+)
+"odoc_analyse.ml" 37 1464 1471 "odoc_analyse.ml" 37 1464 1493
+type(
+  bool
+)
+"odoc_analyse.ml" 37 1464 1499 "odoc_analyse.ml" 37 1464 1524
+type(
+  Env.t
+)
+ident(
+  ext_ref Env.initial_unsafe_string
+)
+"odoc_analyse.ml" 38 1525 1534 "odoc_analyse.ml" 38 1525 1557
+type(
+  Env.t
+)
+ident(
+  ext_ref Env.initial_safe_string
+)
+"odoc_analyse.ml" 37 1464 1468 "odoc_analyse.ml" 38 1525 1557
+type(
+  Env.t
+)
+"odoc_analyse.ml" 41 1569 1576 "odoc_analyse.ml" 41 1569 1577
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_analyse.ml" 41 1569 1577 "odoc_analyse.ml" 41 1569 1597
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.nopervasives
+)
+"odoc_analyse.ml" 41 1569 1576 "odoc_analyse.ml" 41 1569 1597
+type(
+  bool
+)
+"odoc_analyse.ml" 41 1569 1603 "odoc_analyse.ml" 41 1569 1610
+type(
+  Env.t
+)
+ident(
+  int_ref initial "odoc_analyse.ml" 36 1448 1454 "odoc_analyse.ml" 36 1448 1461
+)
+"odoc_analyse.ml" 42 1616 1620 "odoc_analyse.ml" 42 1616 1643
+type(
+  string -> Env.t -> Env.t
+)
+ident(
+  ext_ref Env.open_pers_signature
+)
+"odoc_analyse.ml" 42 1616 1644 "odoc_analyse.ml" 42 1616 1656
+type(
+  string
+)
+"odoc_analyse.ml" 42 1616 1657 "odoc_analyse.ml" 42 1616 1664
+type(
+  Env.t
+)
+ident(
+  int_ref initial "odoc_analyse.ml" 36 1448 1454 "odoc_analyse.ml" 36 1448 1461
+)
+"odoc_analyse.ml" 42 1616 1620 "odoc_analyse.ml" 42 1616 1664
+call(
+  stack
+)
+type(
+  Env.t
+)
+"odoc_analyse.ml" 41 1569 1573 "odoc_analyse.ml" 42 1616 1664
+type(
+  Env.t
+)
+"odoc_analyse.ml" 43 1665 1672 "odoc_analyse.ml" 43 1665 1681
+type(
+  exn
+)
+"odoc_analyse.ml" 44 1685 1689 "odoc_analyse.ml" 44 1685 1700
+type(
+  string -> Env.t
+)
+ident(
+  ext_ref Misc.fatal_error
+)
+"odoc_analyse.ml" 44 1685 1701 "odoc_analyse.ml" 44 1685 1729
+type(
+  string
+)
+"odoc_analyse.ml" 44 1685 1689 "odoc_analyse.ml" 44 1685 1729
+call(
+  tail
+)
+type(
+  Env.t
+)
+"odoc_analyse.ml" 40 1563 1565 "odoc_analyse.ml" 44 1685 1729
+type(
+  Env.t
+)
+"odoc_analyse.ml" 36 1448 1450 "odoc_analyse.ml" 44 1685 1729
+type(
+  Env.t
+)
+"odoc_analyse.ml" 47 1774 1778 "odoc_analyse.ml" 47 1774 1788
+type(
+  string -> string
+)
+ident(
+  def preprocess "odoc_analyse.ml" 55 1958 1958 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 47 1774 1789 "odoc_analyse.ml" 47 1774 1799
+type(
+  string
+)
+ident(
+  def sourcefile "odoc_analyse.ml" 48 1802 1804 "odoc_analyse.ml" 53 1946 1956
+)
+"odoc_analyse.ml" 49 1808 1812 "odoc_analyse.ml" 49 1808 1829
+type(
+  string -> string
+)
+ident(
+  ext_ref Pparse.preprocess
+)
+"odoc_analyse.ml" 49 1808 1830 "odoc_analyse.ml" 49 1808 1840
+type(
+  string
+)
+ident(
+  int_ref sourcefile "odoc_analyse.ml" 47 1774 1789 "odoc_analyse.ml" 47 1774 1799
+)
+"odoc_analyse.ml" 49 1808 1812 "odoc_analyse.ml" 49 1808 1840
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_analyse.ml" 50 1841 1861 "odoc_analyse.ml" 50 1841 1864
+type(
+  Pparse.error
+)
+ident(
+  def err "odoc_analyse.ml" 51 1868 1872 "odoc_analyse.ml" 53 1946 1956
+)
+"odoc_analyse.ml" 50 1841 1848 "odoc_analyse.ml" 50 1841 1864
+type(
+  exn
+)
+"odoc_analyse.ml" 51 1868 1872 "odoc_analyse.ml" 51 1868 1886
+type(
+  ((Format.formatter -> Pparse.error -> unit) -> Pparse.error -> unit,
+   Format.formatter, unit)
+  format ->
+  (Format.formatter -> Pparse.error -> unit) -> Pparse.error -> unit
+)
+ident(
+  ext_ref Format.eprintf
+)
+"odoc_analyse.ml" 51 1868 1887 "odoc_analyse.ml" 51 1868 1914
+type(
+  ((Format.formatter -> Pparse.error -> unit) -> Pparse.error -> unit,
+   Format.formatter, unit)
+  format
+)
+"odoc_analyse.ml" 52 1915 1921 "odoc_analyse.ml" 52 1915 1940
+type(
+  Format.formatter -> Pparse.error -> unit
+)
+ident(
+  ext_ref Pparse.report_error
+)
+"odoc_analyse.ml" 52 1915 1941 "odoc_analyse.ml" 52 1915 1944
+type(
+  Pparse.error
+)
+ident(
+  int_ref err "odoc_analyse.ml" 50 1841 1861 "odoc_analyse.ml" 50 1841 1864
+)
+"odoc_analyse.ml" 51 1868 1872 "odoc_analyse.ml" 52 1915 1944
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 53 1946 1950 "odoc_analyse.ml" 53 1946 1954
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"odoc_analyse.ml" 53 1946 1955 "odoc_analyse.ml" 53 1946 1956
+type(
+  int
+)
+"odoc_analyse.ml" 53 1946 1950 "odoc_analyse.ml" 53 1946 1956
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_analyse.ml" 51 1868 1872 "odoc_analyse.ml" 53 1946 1956
+type(
+  string
+)
+"odoc_analyse.ml" 48 1802 1804 "odoc_analyse.ml" 53 1946 1956
+type(
+  string
+)
+"odoc_analyse.ml" 55 1958 1962 "odoc_analyse.ml" 55 1958 1966
+type(
+  'a -> ('a -> 'b) -> 'b
+)
+ident(
+  def ++ "odoc_analyse.ml" 59 2112 2112 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 55 1958 1967 "odoc_analyse.ml" 55 1958 1968
+type(
+  'a
+)
+ident(
+  def x "odoc_analyse.ml" 55 1958 1969 "odoc_analyse.ml" 55 1958 1976
+)
+"odoc_analyse.ml" 55 1958 1969 "odoc_analyse.ml" 55 1958 1970
+type(
+  'a -> 'b
+)
+ident(
+  def f "odoc_analyse.ml" 55 1958 1973 "odoc_analyse.ml" 55 1958 1976
+)
+"odoc_analyse.ml" 55 1958 1973 "odoc_analyse.ml" 55 1958 1974
+type(
+  'a -> 'b
+)
+ident(
+  int_ref f "odoc_analyse.ml" 55 1958 1969 "odoc_analyse.ml" 55 1958 1970
+)
+"odoc_analyse.ml" 55 1958 1975 "odoc_analyse.ml" 55 1958 1976
+type(
+  'a
+)
+ident(
+  int_ref x "odoc_analyse.ml" 55 1958 1967 "odoc_analyse.ml" 55 1958 1968
+)
+"odoc_analyse.ml" 55 1958 1973 "odoc_analyse.ml" 55 1958 1976
+call(
+  tail
+)
+type(
+  'b
+)
+"odoc_analyse.ml" 59 2112 2116 "odoc_analyse.ml" 59 2112 2143
+type(
+  'a ->
+  string ->
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+ident(
+  def process_implementation_file "odoc_analyse.ml" 89 3138 3138 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 59 2112 2144 "odoc_analyse.ml" 59 2112 2147
+type(
+  'a
+)
+ident(
+  def ppf "odoc_analyse.ml" 59 2112 2148 "odoc_analyse.ml" 85 2990 3007
+)
+"odoc_analyse.ml" 59 2112 2148 "odoc_analyse.ml" 59 2112 2158
+type(
+  string
+)
+ident(
+  def sourcefile "odoc_analyse.ml" 60 2161 2163 "odoc_analyse.ml" 85 2990 3007
+)
+"odoc_analyse.ml" 60 2161 2163 "odoc_analyse.ml" 60 2161 2172
+type(
+  unit -> unit
+)
+ident(
+  int_ref init_path "odoc_analyse.ml" 29 1231 1235 "odoc_analyse.ml" 29 1231 1244
+)
+"odoc_analyse.ml" 60 2161 2173 "odoc_analyse.ml" 60 2161 2175
+type(
+  unit
+)
+"odoc_analyse.ml" 60 2161 2163 "odoc_analyse.ml" 60 2161 2175
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 61 2177 2183 "odoc_analyse.ml" 61 2177 2193
+type(
+  string
+)
+ident(
+  def prefixname "odoc_analyse.ml" 62 2234 2236 "odoc_analyse.ml" 85 2990 3007
+)
+"odoc_analyse.ml" 61 2177 2196 "odoc_analyse.ml" 61 2177 2219
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.chop_extension
+)
+"odoc_analyse.ml" 61 2177 2220 "odoc_analyse.ml" 61 2177 2230
+type(
+  string
+)
+ident(
+  int_ref sourcefile "odoc_analyse.ml" 59 2112 2148 "odoc_analyse.ml" 59 2112 2158
+)
+"odoc_analyse.ml" 61 2177 2196 "odoc_analyse.ml" 61 2177 2230
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_analyse.ml" 62 2234 2240 "odoc_analyse.ml" 62 2234 2250
+type(
+  string
+)
+ident(
+  def modulename "odoc_analyse.ml" 63 2304 2306 "odoc_analyse.ml" 85 2990 3007
+)
+"odoc_analyse.ml" 62 2234 2253 "odoc_analyse.ml" 62 2234 2270
+type(
+  string -> string
+)
+ident(
+  ext_ref String.capitalize
+)
+"odoc_analyse.ml" 62 2234 2271 "odoc_analyse.ml" 62 2234 2288
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.basename
+)
+"odoc_analyse.ml" 62 2234 2289 "odoc_analyse.ml" 62 2234 2299
+type(
+  string
+)
+ident(
+  int_ref prefixname "odoc_analyse.ml" 61 2177 2183 "odoc_analyse.ml" 61 2177 2193
+)
+"odoc_analyse.ml" 62 2234 2270 "odoc_analyse.ml" 62 2234 2300
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_analyse.ml" 62 2234 2253 "odoc_analyse.ml" 62 2234 2300
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_analyse.ml" 63 2304 2306 "odoc_analyse.ml" 63 2304 2323
+type(
+  string -> unit
+)
+ident(
+  ext_ref Env.set_unit_name
+)
+"odoc_analyse.ml" 63 2304 2324 "odoc_analyse.ml" 63 2304 2334
+type(
+  string
+)
+ident(
+  int_ref modulename "odoc_analyse.ml" 62 2234 2240 "odoc_analyse.ml" 62 2234 2250
+)
+"odoc_analyse.ml" 63 2304 2306 "odoc_analyse.ml" 63 2304 2334
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 64 2336 2342 "odoc_analyse.ml" 64 2336 2351
+type(
+  string
+)
+ident(
+  def inputfile "odoc_analyse.ml" 65 2379 2381 "odoc_analyse.ml" 85 2990 3007
+)
+"odoc_analyse.ml" 64 2336 2354 "odoc_analyse.ml" 64 2336 2364
+type(
+  string -> string
+)
+ident(
+  int_ref preprocess "odoc_analyse.ml" 47 1774 1778 "odoc_analyse.ml" 47 1774 1788
+)
+"odoc_analyse.ml" 64 2336 2365 "odoc_analyse.ml" 64 2336 2375
+type(
+  string
+)
+ident(
+  int_ref sourcefile "odoc_analyse.ml" 59 2112 2148 "odoc_analyse.ml" 59 2112 2158
+)
+"odoc_analyse.ml" 64 2336 2354 "odoc_analyse.ml" 64 2336 2375
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_analyse.ml" 65 2379 2385 "odoc_analyse.ml" 65 2379 2388
+type(
+  Env.t
+)
+ident(
+  def env "odoc_analyse.ml" 66 2409 2411 "odoc_analyse.ml" 85 2990 3007
+)
+"odoc_analyse.ml" 65 2379 2391 "odoc_analyse.ml" 65 2379 2402
+type(
+  unit -> Env.t
+)
+ident(
+  int_ref initial_env "odoc_analyse.ml" 35 1427 1431 "odoc_analyse.ml" 35 1427 1442
+)
+"odoc_analyse.ml" 65 2379 2403 "odoc_analyse.ml" 65 2379 2405
+type(
+  unit
+)
+"odoc_analyse.ml" 65 2379 2391 "odoc_analyse.ml" 65 2379 2405
+call(
+  stack
+)
+type(
+  Env.t
+)
+"odoc_analyse.ml" 67 2415 2423 "odoc_analyse.ml" 67 2415 2432
+type(
+  Parsetree.structure
+)
+ident(
+  def parsetree "odoc_analyse.ml" 68 2524 2528 "odoc_analyse.ml" 72 2640 2684
+)
+"odoc_analyse.ml" 67 2415 2435 "odoc_analyse.ml" 67 2415 2446
+type(
+  Format.formatter ->
+  string ->
+  (Lexing.lexbuf -> Parsetree.structure) -> string -> Parsetree.structure
+)
+ident(
+  ext_ref Pparse.file
+)
+"odoc_analyse.ml" 67 2415 2447 "odoc_analyse.ml" 67 2415 2467
+type(
+  Format.formatter
+)
+ident(
+  ext_ref Format.err_formatter
+)
+"odoc_analyse.ml" 67 2415 2468 "odoc_analyse.ml" 67 2415 2477
+type(
+  string
+)
+ident(
+  int_ref inputfile "odoc_analyse.ml" 64 2336 2342 "odoc_analyse.ml" 64 2336 2351
+)
+"odoc_analyse.ml" 67 2415 2478 "odoc_analyse.ml" 67 2415 2498
+type(
+  Lexing.lexbuf -> Parsetree.structure
+)
+ident(
+  ext_ref Parse.implementation
+)
+"odoc_analyse.ml" 67 2415 2499 "odoc_analyse.ml" 67 2415 2520
+type(
+  string
+)
+ident(
+  ext_ref Config.ast_impl_magic_number
+)
+"odoc_analyse.ml" 67 2415 2435 "odoc_analyse.ml" 67 2415 2520
+call(
+  stack
+)
+type(
+  Parsetree.structure
+)
+"odoc_analyse.ml" 68 2524 2532 "odoc_analyse.ml" 68 2524 2541
+type(
+  Typedtree.structure * Typedtree.module_coercion
+)
+ident(
+  def typedtree "odoc_analyse.ml" 72 2640 2644 "odoc_analyse.ml" 72 2640 2684
+)
+"odoc_analyse.ml" 69 2544 2550 "odoc_analyse.ml" 69 2544 2577
+type(
+  string ->
+  string ->
+  string ->
+  Env.t ->
+  Parsetree.structure -> Typedtree.structure * Typedtree.module_coercion
+)
+ident(
+  ext_ref Typemod.type_implementation
+)
+"odoc_analyse.ml" 70 2578 2586 "odoc_analyse.ml" 70 2578 2596
+type(
+  string
+)
+ident(
+  int_ref sourcefile "odoc_analyse.ml" 59 2112 2148 "odoc_analyse.ml" 59 2112 2158
+)
+"odoc_analyse.ml" 70 2578 2597 "odoc_analyse.ml" 70 2578 2607
+type(
+  string
+)
+ident(
+  int_ref prefixname "odoc_analyse.ml" 61 2177 2183 "odoc_analyse.ml" 61 2177 2193
+)
+"odoc_analyse.ml" 70 2578 2608 "odoc_analyse.ml" 70 2578 2618
+type(
+  string
+)
+ident(
+  int_ref modulename "odoc_analyse.ml" 62 2234 2240 "odoc_analyse.ml" 62 2234 2250
+)
+"odoc_analyse.ml" 70 2578 2619 "odoc_analyse.ml" 70 2578 2622
+type(
+  Env.t
+)
+ident(
+  int_ref env "odoc_analyse.ml" 65 2379 2385 "odoc_analyse.ml" 65 2379 2388
+)
+"odoc_analyse.ml" 70 2578 2623 "odoc_analyse.ml" 70 2578 2632
+type(
+  Parsetree.structure
+)
+ident(
+  int_ref parsetree "odoc_analyse.ml" 67 2415 2423 "odoc_analyse.ml" 67 2415 2432
+)
+"odoc_analyse.ml" 69 2544 2550 "odoc_analyse.ml" 70 2578 2632
+call(
+  stack
+)
+type(
+  Typedtree.structure * Typedtree.module_coercion
+)
+"odoc_analyse.ml" 72 2640 2651 "odoc_analyse.ml" 72 2640 2660
+type(
+  Parsetree.structure
+)
+ident(
+  int_ref parsetree "odoc_analyse.ml" 67 2415 2423 "odoc_analyse.ml" 67 2415 2432
+)
+"odoc_analyse.ml" 72 2640 2662 "odoc_analyse.ml" 72 2640 2671
+type(
+  Typedtree.structure * Typedtree.module_coercion
+)
+ident(
+  int_ref typedtree "odoc_analyse.ml" 68 2524 2532 "odoc_analyse.ml" 68 2524 2541
+)
+"odoc_analyse.ml" 72 2640 2650 "odoc_analyse.ml" 72 2640 2672
+type(
+  Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion)
+)
+"odoc_analyse.ml" 72 2640 2645 "odoc_analyse.ml" 72 2640 2672
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option
+)
+"odoc_analyse.ml" 72 2640 2674 "odoc_analyse.ml" 72 2640 2683
+type(
+  string
+)
+ident(
+  int_ref inputfile "odoc_analyse.ml" 64 2336 2342 "odoc_analyse.ml" 64 2336 2351
+)
+"odoc_analyse.ml" 72 2640 2644 "odoc_analyse.ml" 72 2640 2684
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 68 2524 2528 "odoc_analyse.ml" 72 2640 2684
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 67 2415 2419 "odoc_analyse.ml" 72 2640 2684
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 74 2692 2696 "odoc_analyse.ml" 74 2692 2697
+type(
+  exn
+)
+ident(
+  def e "odoc_analyse.ml" 75 2701 2707 "odoc_analyse.ml" 85 2990 3007
+)
+"odoc_analyse.ml" 75 2701 2713 "odoc_analyse.ml" 75 2701 2714
+type(
+  exn
+)
+ident(
+  int_ref e "odoc_analyse.ml" 74 2692 2696 "odoc_analyse.ml" 74 2692 2697
+)
+"odoc_analyse.ml" 76 2720 2744 "odoc_analyse.ml" 76 2720 2747
+type(
+  Syntaxerr.error
+)
+ident(
+  def err "odoc_analyse.ml" 77 2751 2761 "odoc_analyse.ml" 79 2841 2866
+)
+"odoc_analyse.ml" 76 2720 2728 "odoc_analyse.ml" 76 2720 2747
+type(
+  exn
+)
+"odoc_analyse.ml" 77 2751 2761 "odoc_analyse.ml" 77 2751 2768
+type(
+  Format.formatter ->
+  ((Format.formatter -> Syntaxerr.error -> unit) -> Syntaxerr.error -> unit,
+   Format.formatter, unit)
+  format ->
+  (Format.formatter -> Syntaxerr.error -> unit) -> Syntaxerr.error -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"odoc_analyse.ml" 77 2751 2769 "odoc_analyse.ml" 77 2751 2789
+type(
+  Format.formatter
+)
+ident(
+  ext_ref Format.err_formatter
+)
+"odoc_analyse.ml" 77 2751 2790 "odoc_analyse.ml" 77 2751 2800
+type(
+  ((Format.formatter -> Syntaxerr.error -> unit) -> Syntaxerr.error -> unit,
+   Format.formatter, unit)
+  format
+)
+"odoc_analyse.ml" 78 2801 2813 "odoc_analyse.ml" 78 2801 2835
+type(
+  Format.formatter -> Syntaxerr.error -> unit
+)
+ident(
+  ext_ref Syntaxerr.report_error
+)
+"odoc_analyse.ml" 78 2801 2836 "odoc_analyse.ml" 78 2801 2839
+type(
+  Syntaxerr.error
+)
+ident(
+  int_ref err "odoc_analyse.ml" 76 2720 2744 "odoc_analyse.ml" 76 2720 2747
+)
+"odoc_analyse.ml" 77 2751 2761 "odoc_analyse.ml" 78 2801 2839
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 79 2841 2851 "odoc_analyse.ml" 79 2841 2855
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option
+)
+"odoc_analyse.ml" 79 2841 2857 "odoc_analyse.ml" 79 2841 2866
+type(
+  string
+)
+ident(
+  int_ref inputfile "odoc_analyse.ml" 64 2336 2342 "odoc_analyse.ml" 64 2336 2351
+)
+"odoc_analyse.ml" 79 2841 2851 "odoc_analyse.ml" 79 2841 2866
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 77 2751 2761 "odoc_analyse.ml" 79 2841 2866
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 80 2867 2883 "odoc_analyse.ml" 80 2867 2884
+type(
+  string
+)
+ident(
+  def s "odoc_analyse.ml" 81 2888 2898 "odoc_analyse.ml" 83 2951 2976
+)
+"odoc_analyse.ml" 80 2867 2875 "odoc_analyse.ml" 80 2867 2884
+type(
+  exn
+)
+"odoc_analyse.ml" 81 2888 2898 "odoc_analyse.ml" 81 2888 2911
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"odoc_analyse.ml" 81 2888 2912 "odoc_analyse.ml" 81 2888 2913
+type(
+  string
+)
+ident(
+  int_ref s "odoc_analyse.ml" 80 2867 2883 "odoc_analyse.ml" 80 2867 2884
+)
+"odoc_analyse.ml" 81 2888 2898 "odoc_analyse.ml" 81 2888 2913
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 82 2915 2925 "odoc_analyse.ml" 82 2915 2929
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_analyse.ml" 82 2915 2930 "odoc_analyse.ml" 82 2915 2948
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc_analyse.ml" 82 2915 2925 "odoc_analyse.ml" 82 2915 2948
+type(
+  unit
+)
+"odoc_analyse.ml" 83 2951 2961 "odoc_analyse.ml" 83 2951 2965
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option
+)
+"odoc_analyse.ml" 83 2951 2967 "odoc_analyse.ml" 83 2951 2976
+type(
+  string
+)
+ident(
+  int_ref inputfile "odoc_analyse.ml" 64 2336 2342 "odoc_analyse.ml" 64 2336 2351
+)
+"odoc_analyse.ml" 83 2951 2961 "odoc_analyse.ml" 83 2951 2976
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 82 2915 2925 "odoc_analyse.ml" 83 2951 2976
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 81 2888 2898 "odoc_analyse.ml" 83 2951 2976
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 84 2977 2985 "odoc_analyse.ml" 84 2977 2986
+type(
+  exn
+)
+ident(
+  def e "odoc_analyse.ml" 85 2990 3000 "odoc_analyse.ml" 85 2990 3007
+)
+"odoc_analyse.ml" 85 2990 3000 "odoc_analyse.ml" 85 2990 3005
+type(
+  exn ->
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"odoc_analyse.ml" 85 2990 3006 "odoc_analyse.ml" 85 2990 3007
+type(
+  exn
+)
+ident(
+  int_ref e "odoc_analyse.ml" 84 2977 2985 "odoc_analyse.ml" 84 2977 2986
+)
+"odoc_analyse.ml" 85 2990 3000 "odoc_analyse.ml" 85 2990 3007
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 75 2701 2707 "odoc_analyse.ml" 85 2990 3007
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 66 2409 2411 "odoc_analyse.ml" 85 2990 3007
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 65 2379 2381 "odoc_analyse.ml" 85 2990 3007
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 64 2336 2338 "odoc_analyse.ml" 85 2990 3007
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 63 2304 2306 "odoc_analyse.ml" 85 2990 3007
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 62 2234 2236 "odoc_analyse.ml" 85 2990 3007
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 61 2177 2179 "odoc_analyse.ml" 85 2990 3007
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 60 2161 2163 "odoc_analyse.ml" 85 2990 3007
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 89 3138 3142 "odoc_analyse.ml" 89 3138 3164
+type(
+  'a -> string -> Parsetree.signature * Typedtree.signature * string
+)
+ident(
+  def process_interface_file "odoc_analyse.ml" 101 3692 3692 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 89 3138 3165 "odoc_analyse.ml" 89 3138 3168
+type(
+  'a
+)
+ident(
+  def ppf "odoc_analyse.ml" 89 3138 3169 "odoc_analyse.ml" 98 3580 3602
+)
+"odoc_analyse.ml" 89 3138 3169 "odoc_analyse.ml" 89 3138 3179
+type(
+  string
+)
+ident(
+  def sourcefile "odoc_analyse.ml" 90 3182 3184 "odoc_analyse.ml" 98 3580 3602
+)
+"odoc_analyse.ml" 90 3182 3184 "odoc_analyse.ml" 90 3182 3193
+type(
+  unit -> unit
+)
+ident(
+  int_ref init_path "odoc_analyse.ml" 29 1231 1235 "odoc_analyse.ml" 29 1231 1244
+)
+"odoc_analyse.ml" 90 3182 3194 "odoc_analyse.ml" 90 3182 3196
+type(
+  unit
+)
+"odoc_analyse.ml" 90 3182 3184 "odoc_analyse.ml" 90 3182 3196
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 91 3198 3204 "odoc_analyse.ml" 91 3198 3214
+type(
+  string
+)
+ident(
+  def prefixname "odoc_analyse.ml" 92 3255 3257 "odoc_analyse.ml" 98 3580 3602
+)
+"odoc_analyse.ml" 91 3198 3217 "odoc_analyse.ml" 91 3198 3240
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.chop_extension
+)
+"odoc_analyse.ml" 91 3198 3241 "odoc_analyse.ml" 91 3198 3251
+type(
+  string
+)
+ident(
+  int_ref sourcefile "odoc_analyse.ml" 89 3138 3169 "odoc_analyse.ml" 89 3138 3179
+)
+"odoc_analyse.ml" 91 3198 3217 "odoc_analyse.ml" 91 3198 3251
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_analyse.ml" 92 3255 3261 "odoc_analyse.ml" 92 3255 3271
+type(
+  string
+)
+ident(
+  def modulename "odoc_analyse.ml" 93 3325 3327 "odoc_analyse.ml" 98 3580 3602
+)
+"odoc_analyse.ml" 92 3255 3274 "odoc_analyse.ml" 92 3255 3291
+type(
+  string -> string
+)
+ident(
+  ext_ref String.capitalize
+)
+"odoc_analyse.ml" 92 3255 3292 "odoc_analyse.ml" 92 3255 3309
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.basename
+)
+"odoc_analyse.ml" 92 3255 3310 "odoc_analyse.ml" 92 3255 3320
+type(
+  string
+)
+ident(
+  int_ref prefixname "odoc_analyse.ml" 91 3198 3204 "odoc_analyse.ml" 91 3198 3214
+)
+"odoc_analyse.ml" 92 3255 3291 "odoc_analyse.ml" 92 3255 3321
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_analyse.ml" 92 3255 3274 "odoc_analyse.ml" 92 3255 3321
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_analyse.ml" 93 3325 3327 "odoc_analyse.ml" 93 3325 3344
+type(
+  string -> unit
+)
+ident(
+  ext_ref Env.set_unit_name
+)
+"odoc_analyse.ml" 93 3325 3345 "odoc_analyse.ml" 93 3325 3355
+type(
+  string
+)
+ident(
+  int_ref modulename "odoc_analyse.ml" 92 3255 3261 "odoc_analyse.ml" 92 3255 3271
+)
+"odoc_analyse.ml" 93 3325 3327 "odoc_analyse.ml" 93 3325 3355
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 94 3357 3363 "odoc_analyse.ml" 94 3357 3372
+type(
+  string
+)
+ident(
+  def inputfile "odoc_analyse.ml" 95 3400 3402 "odoc_analyse.ml" 98 3580 3602
+)
+"odoc_analyse.ml" 94 3357 3375 "odoc_analyse.ml" 94 3357 3385
+type(
+  string -> string
+)
+ident(
+  int_ref preprocess "odoc_analyse.ml" 47 1774 1778 "odoc_analyse.ml" 47 1774 1788
+)
+"odoc_analyse.ml" 94 3357 3386 "odoc_analyse.ml" 94 3357 3396
+type(
+  string
+)
+ident(
+  int_ref sourcefile "odoc_analyse.ml" 89 3138 3169 "odoc_analyse.ml" 89 3138 3179
+)
+"odoc_analyse.ml" 94 3357 3375 "odoc_analyse.ml" 94 3357 3396
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_analyse.ml" 95 3400 3406 "odoc_analyse.ml" 95 3400 3409
+type(
+  Parsetree.signature
+)
+ident(
+  def ast "odoc_analyse.ml" 96 3496 3498 "odoc_analyse.ml" 98 3580 3602
+)
+"odoc_analyse.ml" 95 3400 3412 "odoc_analyse.ml" 95 3400 3423
+type(
+  Format.formatter ->
+  string ->
+  (Lexing.lexbuf -> Parsetree.signature) -> string -> Parsetree.signature
+)
+ident(
+  ext_ref Pparse.file
+)
+"odoc_analyse.ml" 95 3400 3424 "odoc_analyse.ml" 95 3400 3444
+type(
+  Format.formatter
+)
+ident(
+  ext_ref Format.err_formatter
+)
+"odoc_analyse.ml" 95 3400 3445 "odoc_analyse.ml" 95 3400 3454
+type(
+  string
+)
+ident(
+  int_ref inputfile "odoc_analyse.ml" 94 3357 3363 "odoc_analyse.ml" 94 3357 3372
+)
+"odoc_analyse.ml" 95 3400 3455 "odoc_analyse.ml" 95 3400 3470
+type(
+  Lexing.lexbuf -> Parsetree.signature
+)
+ident(
+  ext_ref Parse.interface
+)
+"odoc_analyse.ml" 95 3400 3471 "odoc_analyse.ml" 95 3400 3492
+type(
+  string
+)
+ident(
+  ext_ref Config.ast_intf_magic_number
+)
+"odoc_analyse.ml" 95 3400 3412 "odoc_analyse.ml" 95 3400 3492
+call(
+  stack
+)
+type(
+  Parsetree.signature
+)
+"odoc_analyse.ml" 96 3496 3502 "odoc_analyse.ml" 96 3496 3504
+type(
+  Typedtree.signature
+)
+ident(
+  def sg "odoc_analyse.ml" 97 3553 3555 "odoc_analyse.ml" 98 3580 3602
+)
+"odoc_analyse.ml" 96 3496 3507 "odoc_analyse.ml" 96 3496 3529
+type(
+  Env.t -> Parsetree.signature -> Typedtree.signature
+)
+ident(
+  ext_ref Typemod.type_interface
+)
+"odoc_analyse.ml" 96 3496 3531 "odoc_analyse.ml" 96 3496 3542
+type(
+  unit -> Env.t
+)
+ident(
+  int_ref initial_env "odoc_analyse.ml" 35 1427 1431 "odoc_analyse.ml" 35 1427 1442
+)
+"odoc_analyse.ml" 96 3496 3542 "odoc_analyse.ml" 96 3496 3544
+type(
+  unit
+)
+"odoc_analyse.ml" 96 3496 3530 "odoc_analyse.ml" 96 3496 3545
+call(
+  stack
+)
+type(
+  Env.t
+)
+"odoc_analyse.ml" 96 3496 3546 "odoc_analyse.ml" 96 3496 3549
+type(
+  Parsetree.signature
+)
+ident(
+  int_ref ast "odoc_analyse.ml" 95 3400 3406 "odoc_analyse.ml" 95 3400 3409
+)
+"odoc_analyse.ml" 96 3496 3507 "odoc_analyse.ml" 96 3496 3549
+call(
+  stack
+)
+type(
+  Typedtree.signature
+)
+"odoc_analyse.ml" 97 3553 3555 "odoc_analyse.ml" 97 3553 3575
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Warnings.check_fatal
+)
+"odoc_analyse.ml" 97 3553 3576 "odoc_analyse.ml" 97 3553 3578
+type(
+  unit
+)
+"odoc_analyse.ml" 97 3553 3555 "odoc_analyse.ml" 97 3553 3578
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 98 3580 3583 "odoc_analyse.ml" 98 3580 3586
+type(
+  Parsetree.signature
+)
+ident(
+  int_ref ast "odoc_analyse.ml" 95 3400 3406 "odoc_analyse.ml" 95 3400 3409
+)
+"odoc_analyse.ml" 98 3580 3588 "odoc_analyse.ml" 98 3580 3590
+type(
+  Typedtree.signature
+)
+ident(
+  int_ref sg "odoc_analyse.ml" 96 3496 3502 "odoc_analyse.ml" 96 3496 3504
+)
+"odoc_analyse.ml" 98 3580 3592 "odoc_analyse.ml" 98 3580 3601
+type(
+  string
+)
+ident(
+  int_ref inputfile "odoc_analyse.ml" 94 3357 3363 "odoc_analyse.ml" 94 3357 3372
+)
+"odoc_analyse.ml" 98 3580 3582 "odoc_analyse.ml" 98 3580 3602
+type(
+  Parsetree.signature * Typedtree.signature * string
+)
+"odoc_analyse.ml" 97 3553 3555 "odoc_analyse.ml" 98 3580 3602
+type(
+  Parsetree.signature * Typedtree.signature * string
+)
+"odoc_analyse.ml" 96 3496 3498 "odoc_analyse.ml" 98 3580 3602
+type(
+  Parsetree.signature * Typedtree.signature * string
+)
+"odoc_analyse.ml" 95 3400 3402 "odoc_analyse.ml" 98 3580 3602
+type(
+  Parsetree.signature * Typedtree.signature * string
+)
+"odoc_analyse.ml" 94 3357 3359 "odoc_analyse.ml" 98 3580 3602
+type(
+  Parsetree.signature * Typedtree.signature * string
+)
+"odoc_analyse.ml" 93 3325 3327 "odoc_analyse.ml" 98 3580 3602
+type(
+  Parsetree.signature * Typedtree.signature * string
+)
+"odoc_analyse.ml" 92 3255 3257 "odoc_analyse.ml" 98 3580 3602
+type(
+  Parsetree.signature * Typedtree.signature * string
+)
+"odoc_analyse.ml" 91 3198 3200 "odoc_analyse.ml" 98 3580 3602
+type(
+  Parsetree.signature * Typedtree.signature * string
+)
+"odoc_analyse.ml" 90 3182 3184 "odoc_analyse.ml" 98 3580 3602
+type(
+  Parsetree.signature * Typedtree.signature * string
+)
+"odoc_analyse.ml" 101 3692 3714 "odoc_analyse.ml" 101 3692 3768
+call(
+  stack
+)
+"odoc_analyse.ml" 104 3855 3877 "odoc_analyse.ml" 104 3855 3931
+call(
+  stack
+)
+"odoc_analyse.ml" 108 3958 3962 "odoc_analyse.ml" 108 3958 3975
+type(
+  exn -> unit
+)
+ident(
+  def process_error "odoc_analyse.ml" 118 4364 4364 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 108 3958 3976 "odoc_analyse.ml" 108 3958 3979
+type(
+  exn
+)
+ident(
+  def exn "odoc_analyse.ml" 109 3982 3984 "odoc_analyse.ml" 115 4235 4267
+)
+"odoc_analyse.ml" 109 3982 3990 "odoc_analyse.ml" 109 3982 4011
+type(
+  exn -> Location.error option
+)
+ident(
+  ext_ref Location.error_of_exn
+)
+"odoc_analyse.ml" 109 3982 4012 "odoc_analyse.ml" 109 3982 4015
+type(
+  exn
+)
+ident(
+  int_ref exn "odoc_analyse.ml" 108 3958 3976 "odoc_analyse.ml" 108 3958 3979
+)
+"odoc_analyse.ml" 109 3982 3990 "odoc_analyse.ml" 109 3982 4015
+call(
+  stack
+)
+type(
+  Location.error option
+)
+"odoc_analyse.ml" 110 4021 4030 "odoc_analyse.ml" 110 4021 4033
+type(
+  Location.error
+)
+ident(
+  def err "odoc_analyse.ml" 111 4037 4043 "odoc_analyse.ml" 111 4037 4108
+)
+"odoc_analyse.ml" 110 4021 4025 "odoc_analyse.ml" 110 4021 4033
+type(
+  Location.error option
+)
+"odoc_analyse.ml" 111 4037 4043 "odoc_analyse.ml" 111 4037 4050
+type(
+  Format.formatter ->
+  ((Format.formatter -> Location.error -> unit) -> Location.error -> unit,
+   Format.formatter, unit)
+  format ->
+  (Format.formatter -> Location.error -> unit) -> Location.error -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"odoc_analyse.ml" 111 4037 4051 "odoc_analyse.ml" 111 4037 4071
+type(
+  Format.formatter
+)
+ident(
+  ext_ref Format.err_formatter
+)
+"odoc_analyse.ml" 111 4037 4072 "odoc_analyse.ml" 111 4037 4082
+type(
+  ((Format.formatter -> Location.error -> unit) -> Location.error -> unit,
+   Format.formatter, unit)
+  format
+)
+"odoc_analyse.ml" 111 4037 4083 "odoc_analyse.ml" 111 4037 4104
+type(
+  Format.formatter -> Location.error -> unit
+)
+ident(
+  ext_ref Location.report_error
+)
+"odoc_analyse.ml" 111 4037 4105 "odoc_analyse.ml" 111 4037 4108
+type(
+  Location.error
+)
+ident(
+  int_ref err "odoc_analyse.ml" 110 4021 4030 "odoc_analyse.ml" 110 4021 4033
+)
+"odoc_analyse.ml" 111 4037 4043 "odoc_analyse.ml" 111 4037 4108
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 112 4109 4113 "odoc_analyse.ml" 112 4109 4117
+type(
+  Location.error option
+)
+"odoc_analyse.ml" 113 4121 4127 "odoc_analyse.ml" 113 4121 4134
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"odoc_analyse.ml" 113 4121 4135 "odoc_analyse.ml" 113 4121 4155
+type(
+  Format.formatter
+)
+ident(
+  ext_ref Format.err_formatter
+)
+"odoc_analyse.ml" 114 4156 4164 "odoc_analyse.ml" 114 4156 4234
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"odoc_analyse.ml" 115 4235 4244 "odoc_analyse.ml" 115 4235 4262
+type(
+  exn -> string
+)
+ident(
+  ext_ref Printexc.to_string
+)
+"odoc_analyse.ml" 115 4235 4263 "odoc_analyse.ml" 115 4235 4266
+type(
+  exn
+)
+ident(
+  int_ref exn "odoc_analyse.ml" 108 3958 3976 "odoc_analyse.ml" 108 3958 3979
+)
+"odoc_analyse.ml" 115 4235 4243 "odoc_analyse.ml" 115 4235 4267
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_analyse.ml" 113 4121 4127 "odoc_analyse.ml" 115 4235 4267
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 109 3982 3984 "odoc_analyse.ml" 115 4235 4267
+type(
+  unit
+)
+"odoc_analyse.ml" 118 4364 4368 "odoc_analyse.ml" 118 4364 4380
+type(
+  'a -> Odoc_global.source_file -> Odoc_module.t_module option
+)
+ident(
+  def process_file "odoc_analyse.ml" 237 8057 8057 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 118 4364 4381 "odoc_analyse.ml" 118 4364 4384
+type(
+  'a
+)
+ident(
+  def ppf "odoc_analyse.ml" 118 4364 4385 "odoc_analyse.ml" 234 7972 7987
+)
+"odoc_analyse.ml" 118 4364 4385 "odoc_analyse.ml" 118 4364 4395
+type(
+  Odoc_global.source_file
+)
+ident(
+  def sourcefile "odoc_analyse.ml" 119 4398 4400 "odoc_analyse.ml" 234 7972 7987
+)
+"odoc_analyse.ml" 119 4398 4403 "odoc_analyse.ml" 119 4398 4404
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_analyse.ml" 119 4398 4404 "odoc_analyse.ml" 119 4398 4423
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.verbose
+)
+"odoc_analyse.ml" 119 4398 4403 "odoc_analyse.ml" 119 4398 4423
+type(
+  bool
+)
+"odoc_analyse.ml" 121 4435 4444 "odoc_analyse.ml" 121 4435 4445
+type(
+  string
+)
+ident(
+  def f "odoc_analyse.ml" 126 4581 4586 "odoc_analyse.ml" 127 4629 4651
+)
+"odoc_analyse.ml" 121 4435 4454 "odoc_analyse.ml" 121 4435 4464
+type(
+  Odoc_global.source_file
+)
+ident(
+  int_ref sourcefile "odoc_analyse.ml" 118 4364 4385 "odoc_analyse.ml" 118 4364 4395
+)
+"odoc_analyse.ml" 122 4470 4499 "odoc_analyse.ml" 122 4470 4500
+type(
+  string
+)
+ident(
+  def f "odoc_analyse.ml" 123 4501 4535 "odoc_analyse.ml" 123 4501 4536
+)
+"odoc_analyse.ml" 122 4470 4477 "odoc_analyse.ml" 122 4470 4500
+type(
+  Odoc_global.source_file
+)
+"odoc_analyse.ml" 123 4501 4530 "odoc_analyse.ml" 123 4501 4531
+type(
+  string
+)
+ident(
+  def f "odoc_analyse.ml" 123 4501 4535 "odoc_analyse.ml" 123 4501 4536
+)
+"odoc_analyse.ml" 123 4501 4508 "odoc_analyse.ml" 123 4501 4531
+type(
+  Odoc_global.source_file
+)
+"odoc_analyse.ml" 122 4470 4477 "odoc_analyse.ml" 123 4501 4531
+type(
+  Odoc_global.source_file
+)
+"odoc_analyse.ml" 123 4501 4535 "odoc_analyse.ml" 123 4501 4536
+type(
+  string
+)
+ident(
+  int_ref f "odoc_analyse.ml" 122 4470 4499 "odoc_analyse.ml" 122 4470 4500
+)
+"odoc_analyse.ml" 124 4537 4566 "odoc_analyse.ml" 124 4537 4567
+type(
+  string
+)
+ident(
+  def f "odoc_analyse.ml" 124 4537 4571 "odoc_analyse.ml" 124 4537 4572
+)
+"odoc_analyse.ml" 124 4537 4544 "odoc_analyse.ml" 124 4537 4567
+type(
+  Odoc_global.source_file
+)
+"odoc_analyse.ml" 124 4537 4571 "odoc_analyse.ml" 124 4537 4572
+type(
+  string
+)
+ident(
+  int_ref f "odoc_analyse.ml" 124 4537 4566 "odoc_analyse.ml" 124 4537 4567
+)
+"odoc_analyse.ml" 121 4435 4448 "odoc_analyse.ml" 124 4537 4572
+type(
+  string
+)
+"odoc_analyse.ml" 126 4581 4586 "odoc_analyse.ml" 126 4581 4598
+type(
+  string -> unit
+)
+ident(
+  ext_ref Format.print_string
+)
+"odoc_analyse.ml" 126 4581 4600 "odoc_analyse.ml" 126 4581 4623
+type(
+  string -> string
+)
+ident(
+  ext_ref Odoc_messages.analysing
+)
+"odoc_analyse.ml" 126 4581 4624 "odoc_analyse.ml" 126 4581 4625
+type(
+  string
+)
+ident(
+  int_ref f "odoc_analyse.ml" 121 4435 4444 "odoc_analyse.ml" 121 4435 4445
+)
+"odoc_analyse.ml" 126 4581 4599 "odoc_analyse.ml" 126 4581 4626
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_analyse.ml" 126 4581 4586 "odoc_analyse.ml" 126 4581 4626
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 127 4629 4634 "odoc_analyse.ml" 127 4629 4647
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Format.print_newline
+)
+"odoc_analyse.ml" 127 4629 4648 "odoc_analyse.ml" 127 4629 4650
+type(
+  unit
+)
+"odoc_analyse.ml" 127 4629 4634 "odoc_analyse.ml" 127 4629 4651
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 126 4581 4586 "odoc_analyse.ml" 127 4629 4651
+type(
+  unit
+)
+"odoc_analyse.ml" 120 4429 4433 "odoc_analyse.ml" 128 4652 4657
+type(
+  unit
+)
+"odoc_analyse.ml" 119 4398 4400 "odoc_analyse.ml" 128 4652 4657
+type(
+  unit
+)
+"odoc_analyse.ml" 129 4659 4667 "odoc_analyse.ml" 129 4659 4677
+type(
+  Odoc_global.source_file
+)
+ident(
+  int_ref sourcefile "odoc_analyse.ml" 118 4364 4385 "odoc_analyse.ml" 118 4364 4395
+)
+"odoc_analyse.ml" 130 4683 4709 "odoc_analyse.ml" 130 4683 4713
+type(
+  string
+)
+ident(
+  def file "odoc_analyse.ml" 131 4717 4723 "odoc_analyse.ml" 161 5693 5700
+)
+"odoc_analyse.ml" 130 4683 4687 "odoc_analyse.ml" 130 4683 4713
+type(
+  Odoc_global.source_file
+)
+"odoc_analyse.ml" 132 4725 4732 "odoc_analyse.ml" 132 4725 4751
+type(
+  string ref
+)
+ident(
+  ext_ref Location.input_name
+)
+"odoc_analyse.ml" 132 4725 4752 "odoc_analyse.ml" 132 4725 4754
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_analyse.ml" 132 4725 4755 "odoc_analyse.ml" 132 4725 4759
+type(
+  string
+)
+ident(
+  int_ref file "odoc_analyse.ml" 130 4683 4709 "odoc_analyse.ml" 130 4683 4713
+)
+"odoc_analyse.ml" 132 4725 4732 "odoc_analyse.ml" 132 4725 4759
+type(
+  unit
+)
+"odoc_analyse.ml" 134 4772 4786 "odoc_analyse.ml" 134 4772 4809
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option
+)
+ident(
+  def parsetree_typedtree_opt "odoc_analyse.ml" 135 4865 4874 "odoc_analyse.ml" 150 5430 5459
+)
+"odoc_analyse.ml" 134 4772 4811 "odoc_analyse.ml" 134 4772 4821
+type(
+  string
+)
+ident(
+  def input_file "odoc_analyse.ml" 135 4865 4874 "odoc_analyse.ml" 150 5430 5459
+)
+"odoc_analyse.ml" 134 4772 4785 "odoc_analyse.ml" 134 4772 4822
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 134 4772 4825 "odoc_analyse.ml" 134 4772 4852
+type(
+  'a ->
+  string ->
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+ident(
+  int_ref process_implementation_file "odoc_analyse.ml" 59 2112 2116 "odoc_analyse.ml" 59 2112 2143
+)
+"odoc_analyse.ml" 134 4772 4853 "odoc_analyse.ml" 134 4772 4856
+type(
+  'a
+)
+ident(
+  int_ref ppf "odoc_analyse.ml" 118 4364 4381 "odoc_analyse.ml" 118 4364 4384
+)
+"odoc_analyse.ml" 134 4772 4857 "odoc_analyse.ml" 134 4772 4861
+type(
+  string
+)
+ident(
+  int_ref file "odoc_analyse.ml" 130 4683 4709 "odoc_analyse.ml" 130 4683 4713
+)
+"odoc_analyse.ml" 134 4772 4825 "odoc_analyse.ml" 134 4772 4861
+call(
+  stack
+)
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option * string
+)
+"odoc_analyse.ml" 135 4865 4880 "odoc_analyse.ml" 135 4865 4903
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option
+)
+ident(
+  int_ref parsetree_typedtree_opt "odoc_analyse.ml" 134 4772 4786 "odoc_analyse.ml" 134 4772 4809
+)
+"odoc_analyse.ml" 136 4909 4920 "odoc_analyse.ml" 136 4909 4924
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option
+)
+"odoc_analyse.ml" 137 4928 4941 "odoc_analyse.ml" 137 4928 4945
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 138 4946 4963 "odoc_analyse.ml" 138 4946 4972
+type(
+  Parsetree.structure
+)
+ident(
+  def parsetree "odoc_analyse.ml" 139 4988 5001 "odoc_analyse.ml" 150 5430 5459
+)
+"odoc_analyse.ml" 138 4946 4974 "odoc_analyse.ml" 138 4946 4983
+type(
+  Typedtree.structure * Typedtree.module_coercion
+)
+ident(
+  def typedtree "odoc_analyse.ml" 139 4988 5001 "odoc_analyse.ml" 150 5430 5459
+)
+"odoc_analyse.ml" 138 4946 4962 "odoc_analyse.ml" 138 4946 4984
+type(
+  Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion)
+)
+"odoc_analyse.ml" 138 4946 4957 "odoc_analyse.ml" 138 4946 4984
+type(
+  (Parsetree.structure * (Typedtree.structure * Typedtree.module_coercion))
+  option
+)
+"odoc_analyse.ml" 139 4988 5005 "odoc_analyse.ml" 139 4988 5016
+type(
+  Odoc_module.t_module
+)
+ident(
+  def file_module "odoc_analyse.ml" 142 5130 5143 "odoc_analyse.ml" 150 5430 5459
+)
+"odoc_analyse.ml" 139 4988 5019 "odoc_analyse.ml" 139 4988 5050
+type(
+  string ->
+  string -> Parsetree.structure -> Odoc_ast.typedtree -> Odoc_module.t_module
+)
+ident(
+  ext_ref Ast_analyser.analyse_typed_tree
+)
+"odoc_analyse.ml" 139 4988 5051 "odoc_analyse.ml" 139 4988 5055
+type(
+  string
+)
+ident(
+  int_ref file "odoc_analyse.ml" 130 4683 4709 "odoc_analyse.ml" 130 4683 4713
+)
+"odoc_analyse.ml" 140 5056 5073 "odoc_analyse.ml" 140 5056 5074
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_analyse.ml" 140 5056 5074 "odoc_analyse.ml" 140 5056 5093
+type(
+  string ref
+)
+ident(
+  ext_ref Location.input_name
+)
+"odoc_analyse.ml" 140 5056 5073 "odoc_analyse.ml" 140 5056 5093
+type(
+  string
+)
+"odoc_analyse.ml" 140 5056 5094 "odoc_analyse.ml" 140 5056 5103
+type(
+  Parsetree.structure
+)
+ident(
+  int_ref parsetree "odoc_analyse.ml" 138 4946 4963 "odoc_analyse.ml" 138 4946 4972
+)
+"odoc_analyse.ml" 140 5056 5104 "odoc_analyse.ml" 140 5056 5113
+type(
+  Odoc_ast.typedtree
+)
+ident(
+  int_ref typedtree "odoc_analyse.ml" 138 4946 4974 "odoc_analyse.ml" 138 4946 4983
+)
+"odoc_analyse.ml" 139 4988 5019 "odoc_analyse.ml" 140 5056 5113
+call(
+  stack
+)
+type(
+  Odoc_module.t_module
+)
+"odoc_analyse.ml" 142 5130 5143 "odoc_analyse.ml" 142 5130 5154
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref file_module "odoc_analyse.ml" 139 4988 5005 "odoc_analyse.ml" 139 4988 5016
+)
+"odoc_analyse.ml" 142 5130 5181 "odoc_analyse.ml" 142 5130 5207
+type(
+  Parsetree.structure -> Odoc_module.Name.t list
+)
+ident(
+  ext_ref Odoc_dep.impl_dependencies
+)
+"odoc_analyse.ml" 142 5130 5208 "odoc_analyse.ml" 142 5130 5217
+type(
+  Parsetree.structure
+)
+ident(
+  int_ref parsetree "odoc_analyse.ml" 138 4946 4963 "odoc_analyse.ml" 138 4946 4972
+)
+"odoc_analyse.ml" 142 5130 5181 "odoc_analyse.ml" 142 5130 5217
+call(
+  stack
+)
+type(
+  Odoc_module.Name.t list
+)
+"odoc_analyse.ml" 142 5130 5143 "odoc_analyse.ml" 142 5130 5217
+type(
+  unit
+)
+"odoc_analyse.ml" 144 5221 5237 "odoc_analyse.ml" 144 5221 5238
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_analyse.ml" 144 5221 5238 "odoc_analyse.ml" 144 5221 5257
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.verbose
+)
+"odoc_analyse.ml" 144 5221 5237 "odoc_analyse.ml" 144 5221 5257
+type(
+  bool
+)
+"odoc_analyse.ml" 146 5280 5296 "odoc_analyse.ml" 146 5280 5308
+type(
+  string -> unit
+)
+ident(
+  ext_ref Format.print_string
+)
+"odoc_analyse.ml" 146 5280 5309 "odoc_analyse.ml" 146 5280 5325
+type(
+  string
+)
+ident(
+  ext_ref Odoc_messages.ok
+)
+"odoc_analyse.ml" 146 5280 5296 "odoc_analyse.ml" 146 5280 5325
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 147 5327 5343 "odoc_analyse.ml" 147 5327 5356
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Format.print_newline
+)
+"odoc_analyse.ml" 147 5327 5357 "odoc_analyse.ml" 147 5327 5359
+type(
+  unit
+)
+"odoc_analyse.ml" 147 5327 5343 "odoc_analyse.ml" 147 5327 5359
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 145 5263 5278 "odoc_analyse.ml" 148 5360 5376
+type(
+  unit
+)
+"odoc_analyse.ml" 144 5221 5234 "odoc_analyse.ml" 148 5360 5376
+type(
+  unit
+)
+"odoc_analyse.ml" 149 5378 5391 "odoc_analyse.ml" 149 5378 5417
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pparse.remove_preprocessed
+)
+"odoc_analyse.ml" 149 5378 5418 "odoc_analyse.ml" 149 5378 5428
+type(
+  string
+)
+ident(
+  int_ref input_file "odoc_analyse.ml" 134 4772 4811 "odoc_analyse.ml" 134 4772 4821
+)
+"odoc_analyse.ml" 149 5378 5391 "odoc_analyse.ml" 149 5378 5428
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 150 5430 5448 "odoc_analyse.ml" 150 5430 5459
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref file_module "odoc_analyse.ml" 139 4988 5005 "odoc_analyse.ml" 139 4988 5016
+)
+"odoc_analyse.ml" 150 5430 5443 "odoc_analyse.ml" 150 5430 5459
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 149 5378 5391 "odoc_analyse.ml" 150 5430 5459
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 144 5221 5234 "odoc_analyse.ml" 150 5430 5459
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 142 5130 5143 "odoc_analyse.ml" 150 5430 5459
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 139 4988 5001 "odoc_analyse.ml" 150 5430 5459
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 135 4865 4874 "odoc_analyse.ml" 150 5430 5459
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 134 4772 4781 "odoc_analyse.ml" 150 5430 5459
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 152 5472 5491 "odoc_analyse.ml" 152 5472 5492
+type(
+  string
+)
+ident(
+  def s "odoc_analyse.ml" 154 5515 5526 "odoc_analyse.ml" 156 5581 5596
+)
+"odoc_analyse.ml" 152 5472 5481 "odoc_analyse.ml" 152 5472 5492
+type(
+  exn
+)
+"odoc_analyse.ml" 153 5493 5510 "odoc_analyse.ml" 153 5493 5511
+type(
+  string
+)
+ident(
+  def s "odoc_analyse.ml" 154 5515 5526 "odoc_analyse.ml" 156 5581 5596
+)
+"odoc_analyse.ml" 153 5493 5502 "odoc_analyse.ml" 153 5493 5511
+type(
+  exn
+)
+"odoc_analyse.ml" 152 5472 5481 "odoc_analyse.ml" 153 5493 5511
+type(
+  exn
+)
+"odoc_analyse.ml" 154 5515 5526 "odoc_analyse.ml" 154 5515 5539
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"odoc_analyse.ml" 154 5515 5540 "odoc_analyse.ml" 154 5515 5541
+type(
+  string
+)
+ident(
+  int_ref s "odoc_analyse.ml" 152 5472 5491 "odoc_analyse.ml" 152 5472 5492
+)
+"odoc_analyse.ml" 154 5515 5526 "odoc_analyse.ml" 154 5515 5541
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 155 5544 5555 "odoc_analyse.ml" 155 5544 5559
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_analyse.ml" 155 5544 5560 "odoc_analyse.ml" 155 5544 5578
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc_analyse.ml" 155 5544 5555 "odoc_analyse.ml" 155 5544 5578
+type(
+  unit
+)
+"odoc_analyse.ml" 156 5581 5592 "odoc_analyse.ml" 156 5581 5596
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 155 5544 5555 "odoc_analyse.ml" 156 5581 5596
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 154 5515 5526 "odoc_analyse.ml" 156 5581 5596
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 157 5597 5606 "odoc_analyse.ml" 157 5597 5607
+type(
+  exn
+)
+ident(
+  def e "odoc_analyse.ml" 158 5611 5622 "odoc_analyse.ml" 160 5677 5692
+)
+"odoc_analyse.ml" 158 5611 5622 "odoc_analyse.ml" 158 5611 5635
+type(
+  exn -> unit
+)
+ident(
+  int_ref process_error "odoc_analyse.ml" 108 3958 3962 "odoc_analyse.ml" 108 3958 3975
+)
+"odoc_analyse.ml" 158 5611 5636 "odoc_analyse.ml" 158 5611 5637
+type(
+  exn
+)
+ident(
+  int_ref e "odoc_analyse.ml" 157 5597 5606 "odoc_analyse.ml" 157 5597 5607
+)
+"odoc_analyse.ml" 158 5611 5622 "odoc_analyse.ml" 158 5611 5637
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 159 5640 5651 "odoc_analyse.ml" 159 5640 5655
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_analyse.ml" 159 5640 5656 "odoc_analyse.ml" 159 5640 5674
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc_analyse.ml" 159 5640 5651 "odoc_analyse.ml" 159 5640 5674
+type(
+  unit
+)
+"odoc_analyse.ml" 160 5677 5688 "odoc_analyse.ml" 160 5677 5692
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 159 5640 5651 "odoc_analyse.ml" 160 5677 5692
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 158 5611 5622 "odoc_analyse.ml" 160 5677 5692
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 133 4761 4768 "odoc_analyse.ml" 160 5677 5692
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 131 4717 4723 "odoc_analyse.ml" 161 5693 5700
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 162 5701 5727 "odoc_analyse.ml" 162 5701 5731
+type(
+  string
+)
+ident(
+  def file "odoc_analyse.ml" 163 5735 5741 "odoc_analyse.ml" 190 6520 6527
+)
+"odoc_analyse.ml" 162 5701 5705 "odoc_analyse.ml" 162 5701 5731
+type(
+  Odoc_global.source_file
+)
+"odoc_analyse.ml" 164 5743 5750 "odoc_analyse.ml" 164 5743 5769
+type(
+  string ref
+)
+ident(
+  ext_ref Location.input_name
+)
+"odoc_analyse.ml" 164 5743 5770 "odoc_analyse.ml" 164 5743 5772
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_analyse.ml" 164 5743 5773 "odoc_analyse.ml" 164 5743 5777
+type(
+  string
+)
+ident(
+  int_ref file "odoc_analyse.ml" 162 5701 5727 "odoc_analyse.ml" 162 5701 5731
+)
+"odoc_analyse.ml" 164 5743 5750 "odoc_analyse.ml" 164 5743 5777
+type(
+  unit
+)
+"odoc_analyse.ml" 166 5790 5804 "odoc_analyse.ml" 166 5790 5807
+type(
+  Parsetree.signature
+)
+ident(
+  def ast "odoc_analyse.ml" 167 5866 5875 "odoc_analyse.ml" 179 6262 6287
+)
+"odoc_analyse.ml" 166 5790 5809 "odoc_analyse.ml" 166 5790 5815
+type(
+  Typedtree.signature
+)
+ident(
+  def signat "odoc_analyse.ml" 167 5866 5875 "odoc_analyse.ml" 179 6262 6287
+)
+"odoc_analyse.ml" 166 5790 5817 "odoc_analyse.ml" 166 5790 5827
+type(
+  string
+)
+ident(
+  def input_file "odoc_analyse.ml" 167 5866 5875 "odoc_analyse.ml" 179 6262 6287
+)
+"odoc_analyse.ml" 166 5790 5803 "odoc_analyse.ml" 166 5790 5828
+type(
+  Parsetree.signature * Typedtree.signature * string
+)
+"odoc_analyse.ml" 166 5790 5831 "odoc_analyse.ml" 166 5790 5853
+type(
+  'a -> string -> Parsetree.signature * Typedtree.signature * string
+)
+ident(
+  int_ref process_interface_file "odoc_analyse.ml" 89 3138 3142 "odoc_analyse.ml" 89 3138 3164
+)
+"odoc_analyse.ml" 166 5790 5854 "odoc_analyse.ml" 166 5790 5857
+type(
+  'a
+)
+ident(
+  int_ref ppf "odoc_analyse.ml" 118 4364 4381 "odoc_analyse.ml" 118 4364 4384
+)
+"odoc_analyse.ml" 166 5790 5858 "odoc_analyse.ml" 166 5790 5862
+type(
+  string
+)
+ident(
+  int_ref file "odoc_analyse.ml" 162 5701 5727 "odoc_analyse.ml" 162 5701 5731
+)
+"odoc_analyse.ml" 166 5790 5831 "odoc_analyse.ml" 166 5790 5862
+call(
+  stack
+)
+type(
+  Parsetree.signature * Typedtree.signature * string
+)
+"odoc_analyse.ml" 167 5866 5879 "odoc_analyse.ml" 167 5866 5890
+type(
+  Odoc_module.t_module
+)
+ident(
+  def file_module "odoc_analyse.ml" 171 5996 6005 "odoc_analyse.ml" 179 6262 6287
+)
+"odoc_analyse.ml" 167 5866 5893 "odoc_analyse.ml" 167 5866 5923
+type(
+  string ->
+  string -> Parsetree.signature -> Types.signature -> Odoc_module.t_module
+)
+ident(
+  ext_ref Sig_analyser.analyse_signature
+)
+"odoc_analyse.ml" 167 5866 5924 "odoc_analyse.ml" 167 5866 5928
+type(
+  string
+)
+ident(
+  int_ref file "odoc_analyse.ml" 162 5701 5727 "odoc_analyse.ml" 162 5701 5731
+)
+"odoc_analyse.ml" 168 5929 5942 "odoc_analyse.ml" 168 5929 5943
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_analyse.ml" 168 5929 5943 "odoc_analyse.ml" 168 5929 5962
+type(
+  string ref
+)
+ident(
+  ext_ref Location.input_name
+)
+"odoc_analyse.ml" 168 5929 5942 "odoc_analyse.ml" 168 5929 5962
+type(
+  string
+)
+"odoc_analyse.ml" 168 5929 5963 "odoc_analyse.ml" 168 5929 5966
+type(
+  Parsetree.signature
+)
+ident(
+  int_ref ast "odoc_analyse.ml" 166 5790 5804 "odoc_analyse.ml" 166 5790 5807
+)
+"odoc_analyse.ml" 168 5929 5967 "odoc_analyse.ml" 168 5929 5973
+type(
+  Typedtree.signature
+)
+ident(
+  int_ref signat "odoc_analyse.ml" 166 5790 5809 "odoc_analyse.ml" 166 5790 5815
+)
+"odoc_analyse.ml" 168 5929 5967 "odoc_analyse.ml" 168 5929 5982
+type(
+  Types.signature
+)
+"odoc_analyse.ml" 167 5866 5893 "odoc_analyse.ml" 168 5929 5982
+call(
+  stack
+)
+type(
+  Odoc_module.t_module
+)
+"odoc_analyse.ml" 171 5996 6005 "odoc_analyse.ml" 171 5996 6016
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref file_module "odoc_analyse.ml" 167 5866 5879 "odoc_analyse.ml" 167 5866 5890
+)
+"odoc_analyse.ml" 171 5996 6043 "odoc_analyse.ml" 171 5996 6069
+type(
+  Parsetree.signature -> Odoc_module.Name.t list
+)
+ident(
+  ext_ref Odoc_dep.intf_dependencies
+)
+"odoc_analyse.ml" 171 5996 6070 "odoc_analyse.ml" 171 5996 6073
+type(
+  Parsetree.signature
+)
+ident(
+  int_ref ast "odoc_analyse.ml" 166 5790 5804 "odoc_analyse.ml" 166 5790 5807
+)
+"odoc_analyse.ml" 171 5996 6043 "odoc_analyse.ml" 171 5996 6073
+call(
+  stack
+)
+type(
+  Odoc_module.Name.t list
+)
+"odoc_analyse.ml" 171 5996 6005 "odoc_analyse.ml" 171 5996 6073
+type(
+  unit
+)
+"odoc_analyse.ml" 173 6077 6089 "odoc_analyse.ml" 173 6077 6090
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_analyse.ml" 173 6077 6090 "odoc_analyse.ml" 173 6077 6109
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.verbose
+)
+"odoc_analyse.ml" 173 6077 6089 "odoc_analyse.ml" 173 6077 6109
+type(
+  bool
+)
+"odoc_analyse.ml" 175 6128 6140 "odoc_analyse.ml" 175 6128 6152
+type(
+  string -> unit
+)
+ident(
+  ext_ref Format.print_string
+)
+"odoc_analyse.ml" 175 6128 6153 "odoc_analyse.ml" 175 6128 6169
+type(
+  string
+)
+ident(
+  ext_ref Odoc_messages.ok
+)
+"odoc_analyse.ml" 175 6128 6140 "odoc_analyse.ml" 175 6128 6169
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 176 6171 6183 "odoc_analyse.ml" 176 6171 6196
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Format.print_newline
+)
+"odoc_analyse.ml" 176 6171 6197 "odoc_analyse.ml" 176 6171 6199
+type(
+  unit
+)
+"odoc_analyse.ml" 176 6171 6183 "odoc_analyse.ml" 176 6171 6199
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 174 6115 6126 "odoc_analyse.ml" 177 6200 6212
+type(
+  unit
+)
+"odoc_analyse.ml" 173 6077 6086 "odoc_analyse.ml" 177 6200 6212
+type(
+  unit
+)
+"odoc_analyse.ml" 178 6214 6223 "odoc_analyse.ml" 178 6214 6249
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pparse.remove_preprocessed
+)
+"odoc_analyse.ml" 178 6214 6250 "odoc_analyse.ml" 178 6214 6260
+type(
+  string
+)
+ident(
+  int_ref input_file "odoc_analyse.ml" 166 5790 5817 "odoc_analyse.ml" 166 5790 5827
+)
+"odoc_analyse.ml" 178 6214 6223 "odoc_analyse.ml" 178 6214 6260
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 179 6262 6276 "odoc_analyse.ml" 179 6262 6287
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref file_module "odoc_analyse.ml" 167 5866 5879 "odoc_analyse.ml" 167 5866 5890
+)
+"odoc_analyse.ml" 179 6262 6271 "odoc_analyse.ml" 179 6262 6287
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 178 6214 6223 "odoc_analyse.ml" 179 6262 6287
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 173 6077 6086 "odoc_analyse.ml" 179 6262 6287
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 171 5996 6005 "odoc_analyse.ml" 179 6262 6287
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 167 5866 5875 "odoc_analyse.ml" 179 6262 6287
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 166 5790 5799 "odoc_analyse.ml" 179 6262 6287
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 181 6300 6319 "odoc_analyse.ml" 181 6300 6320
+type(
+  string
+)
+ident(
+  def s "odoc_analyse.ml" 183 6343 6354 "odoc_analyse.ml" 185 6408 6423
+)
+"odoc_analyse.ml" 181 6300 6309 "odoc_analyse.ml" 181 6300 6320
+type(
+  exn
+)
+"odoc_analyse.ml" 182 6321 6338 "odoc_analyse.ml" 182 6321 6339
+type(
+  string
+)
+ident(
+  def s "odoc_analyse.ml" 183 6343 6354 "odoc_analyse.ml" 185 6408 6423
+)
+"odoc_analyse.ml" 182 6321 6330 "odoc_analyse.ml" 182 6321 6339
+type(
+  exn
+)
+"odoc_analyse.ml" 181 6300 6309 "odoc_analyse.ml" 182 6321 6339
+type(
+  exn
+)
+"odoc_analyse.ml" 183 6343 6354 "odoc_analyse.ml" 183 6343 6367
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"odoc_analyse.ml" 183 6343 6368 "odoc_analyse.ml" 183 6343 6369
+type(
+  string
+)
+ident(
+  int_ref s "odoc_analyse.ml" 181 6300 6319 "odoc_analyse.ml" 181 6300 6320
+)
+"odoc_analyse.ml" 183 6343 6354 "odoc_analyse.ml" 183 6343 6369
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 184 6371 6382 "odoc_analyse.ml" 184 6371 6386
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_analyse.ml" 184 6371 6387 "odoc_analyse.ml" 184 6371 6405
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc_analyse.ml" 184 6371 6382 "odoc_analyse.ml" 184 6371 6405
+type(
+  unit
+)
+"odoc_analyse.ml" 185 6408 6419 "odoc_analyse.ml" 185 6408 6423
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 184 6371 6382 "odoc_analyse.ml" 185 6408 6423
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 183 6343 6354 "odoc_analyse.ml" 185 6408 6423
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 186 6424 6433 "odoc_analyse.ml" 186 6424 6434
+type(
+  exn
+)
+ident(
+  def e "odoc_analyse.ml" 187 6438 6449 "odoc_analyse.ml" 189 6504 6519
+)
+"odoc_analyse.ml" 187 6438 6449 "odoc_analyse.ml" 187 6438 6462
+type(
+  exn -> unit
+)
+ident(
+  int_ref process_error "odoc_analyse.ml" 108 3958 3962 "odoc_analyse.ml" 108 3958 3975
+)
+"odoc_analyse.ml" 187 6438 6463 "odoc_analyse.ml" 187 6438 6464
+type(
+  exn
+)
+ident(
+  int_ref e "odoc_analyse.ml" 186 6424 6433 "odoc_analyse.ml" 186 6424 6434
+)
+"odoc_analyse.ml" 187 6438 6449 "odoc_analyse.ml" 187 6438 6464
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 188 6467 6478 "odoc_analyse.ml" 188 6467 6482
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_analyse.ml" 188 6467 6483 "odoc_analyse.ml" 188 6467 6501
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc_analyse.ml" 188 6467 6478 "odoc_analyse.ml" 188 6467 6501
+type(
+  unit
+)
+"odoc_analyse.ml" 189 6504 6515 "odoc_analyse.ml" 189 6504 6519
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 188 6467 6478 "odoc_analyse.ml" 189 6504 6519
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 187 6438 6449 "odoc_analyse.ml" 189 6504 6519
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 165 5779 5786 "odoc_analyse.ml" 189 6504 6519
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 163 5735 5741 "odoc_analyse.ml" 190 6520 6527
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 191 6528 6554 "odoc_analyse.ml" 191 6528 6558
+type(
+  string
+)
+ident(
+  def file "odoc_analyse.ml" 192 6562 6568 "odoc_analyse.ml" 234 7972 7987
+)
+"odoc_analyse.ml" 191 6528 6532 "odoc_analyse.ml" 191 6528 6558
+type(
+  Odoc_global.source_file
+)
+"odoc_analyse.ml" 192 6562 6568 "odoc_analyse.ml" 192 6562 6587
+type(
+  string ref
+)
+ident(
+  ext_ref Location.input_name
+)
+"odoc_analyse.ml" 192 6562 6588 "odoc_analyse.ml" 192 6562 6590
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_analyse.ml" 192 6562 6591 "odoc_analyse.ml" 192 6562 6595
+type(
+  string
+)
+ident(
+  int_ref file "odoc_analyse.ml" 191 6528 6554 "odoc_analyse.ml" 191 6528 6558
+)
+"odoc_analyse.ml" 192 6562 6568 "odoc_analyse.ml" 192 6562 6595
+type(
+  unit
+)
+"odoc_analyse.ml" 194 6607 6619 "odoc_analyse.ml" 194 6607 6627
+type(
+  string
+)
+ident(
+  def mod_name "odoc_analyse.ml" 201 6794 6802 "odoc_analyse.ml" 224 7742 7756
+)
+"odoc_analyse.ml" 195 6630 6644 "odoc_analyse.ml" 195 6630 6645
+type(
+  string
+)
+ident(
+  def s "odoc_analyse.ml" 199 6733 6743 "odoc_analyse.ml" 199 6733 6782
+)
+"odoc_analyse.ml" 196 6648 6664 "odoc_analyse.ml" 196 6648 6687
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.chop_extension
+)
+"odoc_analyse.ml" 196 6648 6688 "odoc_analyse.ml" 196 6648 6692
+type(
+  string
+)
+ident(
+  int_ref file "odoc_analyse.ml" 191 6528 6554 "odoc_analyse.ml" 191 6528 6558
+)
+"odoc_analyse.ml" 196 6648 6664 "odoc_analyse.ml" 196 6648 6692
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_analyse.ml" 197 6693 6710 "odoc_analyse.ml" 197 6693 6711
+type(
+  exn
+)
+"odoc_analyse.ml" 197 6693 6715 "odoc_analyse.ml" 197 6693 6719
+type(
+  string
+)
+ident(
+  int_ref file "odoc_analyse.ml" 191 6528 6554 "odoc_analyse.ml" 191 6528 6558
+)
+"odoc_analyse.ml" 196 6648 6660 "odoc_analyse.ml" 197 6693 6719
+type(
+  string
+)
+"odoc_analyse.ml" 199 6733 6743 "odoc_analyse.ml" 199 6733 6760
+type(
+  string -> string
+)
+ident(
+  ext_ref String.capitalize
+)
+"odoc_analyse.ml" 199 6733 6762 "odoc_analyse.ml" 199 6733 6779
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.basename
+)
+"odoc_analyse.ml" 199 6733 6780 "odoc_analyse.ml" 199 6733 6781
+type(
+  string
+)
+ident(
+  int_ref s "odoc_analyse.ml" 195 6630 6644 "odoc_analyse.ml" 195 6630 6645
+)
+"odoc_analyse.ml" 199 6733 6761 "odoc_analyse.ml" 199 6733 6782
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_analyse.ml" 199 6733 6743 "odoc_analyse.ml" 199 6733 6782
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_analyse.ml" 195 6630 6640 "odoc_analyse.ml" 199 6733 6782
+type(
+  string
+)
+"odoc_analyse.ml" 201 6794 6806 "odoc_analyse.ml" 201 6794 6809
+type(
+  Odoc_types.text
+)
+ident(
+  def txt "odoc_analyse.ml" 206 7024 7032 "odoc_analyse.ml" 224 7742 7756
+)
+"odoc_analyse.ml" 202 6812 6826 "odoc_analyse.ml" 202 6812 6857
+type(
+  string -> Odoc_types.text
+)
+ident(
+  ext_ref Odoc_text.Texter.text_of_string
+)
+"odoc_analyse.ml" 202 6812 6859 "odoc_analyse.ml" 202 6812 6889
+type(
+  string -> string
+)
+ident(
+  ext_ref Odoc_misc.input_file_as_string
+)
+"odoc_analyse.ml" 202 6812 6890 "odoc_analyse.ml" 202 6812 6894
+type(
+  string
+)
+ident(
+  int_ref file "odoc_analyse.ml" 191 6528 6554 "odoc_analyse.ml" 191 6528 6558
+)
+"odoc_analyse.ml" 202 6812 6858 "odoc_analyse.ml" 202 6812 6895
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_analyse.ml" 202 6812 6826 "odoc_analyse.ml" 202 6812 6895
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+"odoc_analyse.ml" 203 6896 6934 "odoc_analyse.ml" 203 6896 6935
+type(
+  int
+)
+ident(
+  def l "odoc_analyse.ml" 204 6946 6958 "odoc_analyse.ml" 204 6946 7012
+)
+"odoc_analyse.ml" 203 6896 6937 "odoc_analyse.ml" 203 6896 6938
+type(
+  int
+)
+ident(
+  def c "odoc_analyse.ml" 204 6946 6958 "odoc_analyse.ml" 204 6946 7012
+)
+"odoc_analyse.ml" 203 6896 6940 "odoc_analyse.ml" 203 6896 6941
+type(
+  string
+)
+ident(
+  def s "odoc_analyse.ml" 204 6946 6958 "odoc_analyse.ml" 204 6946 7012
+)
+"odoc_analyse.ml" 203 6896 6911 "odoc_analyse.ml" 203 6896 6942
+type(
+  exn
+)
+"odoc_analyse.ml" 204 6946 6958 "odoc_analyse.ml" 204 6946 6963
+type(
+  exn -> Odoc_types.text
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"odoc_analyse.ml" 204 6946 6974 "odoc_analyse.ml" 204 6946 7004
+type(
+  int -> int -> string -> string
+)
+ident(
+  ext_ref Odoc_messages.text_parse_error
+)
+"odoc_analyse.ml" 204 6946 7005 "odoc_analyse.ml" 204 6946 7006
+type(
+  int
+)
+ident(
+  int_ref l "odoc_analyse.ml" 203 6896 6934 "odoc_analyse.ml" 203 6896 6935
+)
+"odoc_analyse.ml" 204 6946 7007 "odoc_analyse.ml" 204 6946 7008
+type(
+  int
+)
+ident(
+  int_ref c "odoc_analyse.ml" 203 6896 6937 "odoc_analyse.ml" 203 6896 6938
+)
+"odoc_analyse.ml" 204 6946 7009 "odoc_analyse.ml" 204 6946 7010
+type(
+  string
+)
+ident(
+  int_ref s "odoc_analyse.ml" 203 6896 6940 "odoc_analyse.ml" 203 6896 6941
+)
+"odoc_analyse.ml" 204 6946 6973 "odoc_analyse.ml" 204 6946 7011
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_analyse.ml" 204 6946 6964 "odoc_analyse.ml" 204 6946 7012
+type(
+  exn
+)
+"odoc_analyse.ml" 204 6946 6958 "odoc_analyse.ml" 204 6946 7012
+type(
+  Odoc_types.text
+)
+"odoc_analyse.ml" 202 6812 6822 "odoc_analyse.ml" 204 6946 7012
+type(
+  Odoc_types.text
+)
+"odoc_analyse.ml" 206 7024 7036 "odoc_analyse.ml" 206 7024 7037
+type(
+  Odoc_module.t_module
+)
+ident(
+  def m "odoc_analyse.ml" 224 7742 7750 "odoc_analyse.ml" 224 7742 7756
+)
+"odoc_analyse.ml" 208 7052 7085 "odoc_analyse.ml" 208 7052 7093
+type(
+  Odoc_module.Name.t
+)
+ident(
+  int_ref mod_name "odoc_analyse.ml" 194 6607 6619 "odoc_analyse.ml" 194 6607 6627
+)
+"odoc_analyse.ml" 209 7096 7149 "odoc_analyse.ml" 209 7096 7151
+type(
+  Types.signature
+)
+"odoc_analyse.ml" 209 7096 7129 "odoc_analyse.ml" 209 7096 7151
+type(
+  Types.module_type
+)
+"odoc_analyse.ml" 210 7154 7187 "odoc_analyse.ml" 210 7154 7191
+type(
+  Odoc_types.info option
+)
+"odoc_analyse.ml" 211 7194 7235 "odoc_analyse.ml" 211 7194 7239
+type(
+  bool
+)
+"odoc_analyse.ml" 212 7242 7275 "odoc_analyse.ml" 212 7242 7279
+type(
+  string
+)
+ident(
+  int_ref file "odoc_analyse.ml" 191 6528 6554 "odoc_analyse.ml" 191 6528 6558
+)
+"odoc_analyse.ml" 214 7341 7391 "odoc_analyse.ml" 214 7341 7394
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref txt "odoc_analyse.ml" 201 6794 6806 "odoc_analyse.ml" 201 6794 6809
+)
+"odoc_analyse.ml" 214 7341 7356 "odoc_analyse.ml" 214 7341 7394
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 214 7341 7355 "odoc_analyse.ml" 214 7341 7395
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 213 7282 7315 "odoc_analyse.ml" 214 7341 7395
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 216 7430 7468 "odoc_analyse.ml" 216 7430 7472
+type(
+  Location.t option
+)
+"odoc_analyse.ml" 217 7475 7520 "odoc_analyse.ml" 217 7475 7536
+type(
+  string -> Location.t
+)
+ident(
+  ext_ref Location.in_file
+)
+"odoc_analyse.ml" 217 7475 7537 "odoc_analyse.ml" 217 7475 7541
+type(
+  string
+)
+ident(
+  int_ref file "odoc_analyse.ml" 191 6528 6554 "odoc_analyse.ml" 191 6528 6558
+)
+"odoc_analyse.ml" 217 7475 7519 "odoc_analyse.ml" 217 7475 7542
+call(
+  stack
+)
+type(
+  Location.t
+)
+"odoc_analyse.ml" 217 7475 7514 "odoc_analyse.ml" 217 7475 7542
+type(
+  Location.t option
+)
+"odoc_analyse.ml" 216 7430 7444 "odoc_analyse.ml" 217 7475 7544
+type(
+  Odoc_types.location
+)
+"odoc_analyse.ml" 218 7547 7584 "odoc_analyse.ml" 218 7547 7586
+type(
+  Odoc_module.Name.t list
+)
+"odoc_analyse.ml" 219 7589 7622 "odoc_analyse.ml" 219 7589 7626
+type(
+  string option
+)
+"odoc_analyse.ml" 220 7629 7667 "odoc_analyse.ml" 220 7629 7671
+type(
+  string option
+)
+"odoc_analyse.ml" 221 7674 7712 "odoc_analyse.ml" 221 7674 7716
+type(
+  bool
+)
+"odoc_analyse.ml" 207 7040 7050 "odoc_analyse.ml" 222 7719 7730
+type(
+  Odoc_module.t_module
+)
+"odoc_analyse.ml" 224 7742 7755 "odoc_analyse.ml" 224 7742 7756
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref m "odoc_analyse.ml" 206 7024 7036 "odoc_analyse.ml" 206 7024 7037
+)
+"odoc_analyse.ml" 224 7742 7750 "odoc_analyse.ml" 224 7742 7756
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 206 7024 7032 "odoc_analyse.ml" 224 7742 7756
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 201 6794 6802 "odoc_analyse.ml" 224 7742 7756
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 194 6607 6615 "odoc_analyse.ml" 224 7742 7756
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 226 7768 7787 "odoc_analyse.ml" 226 7768 7788
+type(
+  string
+)
+ident(
+  def s "odoc_analyse.ml" 228 7811 7822 "odoc_analyse.ml" 230 7876 7891
+)
+"odoc_analyse.ml" 226 7768 7777 "odoc_analyse.ml" 226 7768 7788
+type(
+  exn
+)
+"odoc_analyse.ml" 227 7789 7806 "odoc_analyse.ml" 227 7789 7807
+type(
+  string
+)
+ident(
+  def s "odoc_analyse.ml" 228 7811 7822 "odoc_analyse.ml" 230 7876 7891
+)
+"odoc_analyse.ml" 227 7789 7798 "odoc_analyse.ml" 227 7789 7807
+type(
+  exn
+)
+"odoc_analyse.ml" 226 7768 7777 "odoc_analyse.ml" 227 7789 7807
+type(
+  exn
+)
+"odoc_analyse.ml" 228 7811 7822 "odoc_analyse.ml" 228 7811 7835
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"odoc_analyse.ml" 228 7811 7836 "odoc_analyse.ml" 228 7811 7837
+type(
+  string
+)
+ident(
+  int_ref s "odoc_analyse.ml" 226 7768 7787 "odoc_analyse.ml" 226 7768 7788
+)
+"odoc_analyse.ml" 228 7811 7822 "odoc_analyse.ml" 228 7811 7837
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 229 7839 7850 "odoc_analyse.ml" 229 7839 7854
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_analyse.ml" 229 7839 7855 "odoc_analyse.ml" 229 7839 7873
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc_analyse.ml" 229 7839 7850 "odoc_analyse.ml" 229 7839 7873
+type(
+  unit
+)
+"odoc_analyse.ml" 230 7876 7887 "odoc_analyse.ml" 230 7876 7891
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 229 7839 7850 "odoc_analyse.ml" 230 7876 7891
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 228 7811 7822 "odoc_analyse.ml" 230 7876 7891
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 231 7892 7901 "odoc_analyse.ml" 231 7892 7902
+type(
+  exn
+)
+ident(
+  def e "odoc_analyse.ml" 232 7906 7917 "odoc_analyse.ml" 234 7972 7987
+)
+"odoc_analyse.ml" 232 7906 7917 "odoc_analyse.ml" 232 7906 7930
+type(
+  exn -> unit
+)
+ident(
+  int_ref process_error "odoc_analyse.ml" 108 3958 3962 "odoc_analyse.ml" 108 3958 3975
+)
+"odoc_analyse.ml" 232 7906 7931 "odoc_analyse.ml" 232 7906 7932
+type(
+  exn
+)
+ident(
+  int_ref e "odoc_analyse.ml" 231 7892 7901 "odoc_analyse.ml" 231 7892 7902
+)
+"odoc_analyse.ml" 232 7906 7917 "odoc_analyse.ml" 232 7906 7932
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 233 7935 7946 "odoc_analyse.ml" 233 7935 7950
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_analyse.ml" 233 7935 7951 "odoc_analyse.ml" 233 7935 7969
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc_analyse.ml" 233 7935 7946 "odoc_analyse.ml" 233 7935 7969
+type(
+  unit
+)
+"odoc_analyse.ml" 234 7972 7983 "odoc_analyse.ml" 234 7972 7987
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 233 7935 7946 "odoc_analyse.ml" 234 7972 7987
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 232 7906 7917 "odoc_analyse.ml" 234 7972 7987
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 193 6597 6603 "odoc_analyse.ml" 234 7972 7987
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 192 6562 6568 "odoc_analyse.ml" 234 7972 7987
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 129 4659 4661 "odoc_analyse.ml" 234 7972 7987
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 119 4398 4400 "odoc_analyse.ml" 234 7972 7987
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 237 8057 8065 "odoc_analyse.ml" 237 8057 8099
+type(
+  bool -> Odoc_class.class_element list -> Odoc_class.class_element list
+)
+ident(
+  def remove_class_elements_between_stop "odoc_analyse.ml" 237 8057 8057 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 237 8057 8100 "odoc_analyse.ml" 237 8057 8104
+type(
+  bool
+)
+ident(
+  def keep "odoc_analyse.ml" 237 8057 8105 "odoc_analyse.ml" 250 8508 8561
+)
+"odoc_analyse.ml" 237 8057 8105 "odoc_analyse.ml" 237 8057 8109
+type(
+  Odoc_class.class_element list
+)
+ident(
+  def eles "odoc_analyse.ml" 238 8112 8114 "odoc_analyse.ml" 250 8508 8561
+)
+"odoc_analyse.ml" 238 8112 8120 "odoc_analyse.ml" 238 8112 8124
+type(
+  Odoc_class.class_element list
+)
+ident(
+  int_ref eles "odoc_analyse.ml" 237 8057 8105 "odoc_analyse.ml" 237 8057 8109
+)
+"odoc_analyse.ml" 239 8130 8134 "odoc_analyse.ml" 239 8130 8136
+type(
+  Odoc_class.class_element list
+)
+"odoc_analyse.ml" 239 8130 8140 "odoc_analyse.ml" 239 8130 8142
+type(
+  Odoc_class.class_element list
+)
+"odoc_analyse.ml" 240 8143 8147 "odoc_analyse.ml" 240 8143 8150
+type(
+  Odoc_class.class_element
+)
+ident(
+  def ele "odoc_analyse.ml" 241 8159 8165 "odoc_analyse.ml" 250 8508 8561
+)
+"odoc_analyse.ml" 240 8143 8154 "odoc_analyse.ml" 240 8143 8155
+type(
+  Odoc_class.class_element list
+)
+ident(
+  def q "odoc_analyse.ml" 241 8159 8165 "odoc_analyse.ml" 250 8508 8561
+)
+"odoc_analyse.ml" 240 8143 8147 "odoc_analyse.ml" 240 8143 8155
+type(
+  Odoc_class.class_element list
+)
+"odoc_analyse.ml" 241 8159 8171 "odoc_analyse.ml" 241 8159 8174
+type(
+  Odoc_class.class_element
+)
+ident(
+  int_ref ele "odoc_analyse.ml" 240 8143 8147 "odoc_analyse.ml" 240 8143 8150
+)
+"odoc_analyse.ml" 242 8180 8230 "odoc_analyse.ml" 242 8180 8234
+type(
+  string
+)
+"odoc_analyse.ml" 242 8180 8215 "odoc_analyse.ml" 242 8180 8234
+type(
+  Odoc_types.text_element
+)
+"odoc_analyse.ml" 242 8180 8213 "odoc_analyse.ml" 242 8180 8236
+type(
+  Odoc_types.text
+)
+"odoc_analyse.ml" 242 8180 8188 "odoc_analyse.ml" 242 8180 8236
+type(
+  Odoc_class.class_element
+)
+"odoc_analyse.ml" 243 8240 8250 "odoc_analyse.ml" 243 8240 8284
+type(
+  bool -> Odoc_class.class_element list -> Odoc_class.class_element list
+)
+ident(
+  int_ref remove_class_elements_between_stop "odoc_analyse.ml" 237 8057 8065 "odoc_analyse.ml" 237 8057 8099
+)
+"odoc_analyse.ml" 243 8240 8286 "odoc_analyse.ml" 243 8240 8289
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"odoc_analyse.ml" 243 8240 8290 "odoc_analyse.ml" 243 8240 8294
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 237 8057 8100 "odoc_analyse.ml" 237 8057 8104
+)
+"odoc_analyse.ml" 243 8240 8285 "odoc_analyse.ml" 243 8240 8295
+type(
+  bool
+)
+"odoc_analyse.ml" 243 8240 8296 "odoc_analyse.ml" 243 8240 8297
+type(
+  Odoc_class.class_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 240 8143 8154 "odoc_analyse.ml" 240 8143 8155
+)
+"odoc_analyse.ml" 243 8240 8250 "odoc_analyse.ml" 243 8240 8297
+call(
+  tail
+)
+type(
+  Odoc_class.class_element list
+)
+"odoc_analyse.ml" 244 8298 8333 "odoc_analyse.ml" 244 8298 8334
+type(
+  Odoc_value.t_attribute
+)
+"odoc_analyse.ml" 244 8298 8306 "odoc_analyse.ml" 244 8298 8334
+type(
+  Odoc_class.class_element
+)
+"odoc_analyse.ml" 245 8335 8367 "odoc_analyse.ml" 245 8335 8368
+type(
+  Odoc_value.t_method
+)
+"odoc_analyse.ml" 245 8335 8343 "odoc_analyse.ml" 245 8335 8368
+type(
+  Odoc_class.class_element
+)
+"odoc_analyse.ml" 244 8298 8306 "odoc_analyse.ml" 245 8335 8368
+type(
+  Odoc_class.class_element
+)
+"odoc_analyse.ml" 246 8369 8402 "odoc_analyse.ml" 246 8369 8403
+type(
+  Odoc_types.text
+)
+"odoc_analyse.ml" 246 8369 8377 "odoc_analyse.ml" 246 8369 8403
+type(
+  Odoc_class.class_element
+)
+"odoc_analyse.ml" 244 8298 8306 "odoc_analyse.ml" 246 8369 8403
+type(
+  Odoc_class.class_element
+)
+"odoc_analyse.ml" 247 8407 8420 "odoc_analyse.ml" 247 8407 8424
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 237 8057 8100 "odoc_analyse.ml" 237 8057 8104
+)
+"odoc_analyse.ml" 248 8430 8442 "odoc_analyse.ml" 248 8430 8445
+type(
+  Odoc_class.class_element
+)
+ident(
+  int_ref ele "odoc_analyse.ml" 240 8143 8147 "odoc_analyse.ml" 240 8143 8150
+)
+"odoc_analyse.ml" 248 8430 8450 "odoc_analyse.ml" 248 8430 8484
+type(
+  bool -> Odoc_class.class_element list -> Odoc_class.class_element list
+)
+ident(
+  int_ref remove_class_elements_between_stop "odoc_analyse.ml" 237 8057 8065 "odoc_analyse.ml" 237 8057 8099
+)
+"odoc_analyse.ml" 248 8430 8485 "odoc_analyse.ml" 248 8430 8489
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 237 8057 8100 "odoc_analyse.ml" 237 8057 8104
+)
+"odoc_analyse.ml" 248 8430 8490 "odoc_analyse.ml" 248 8430 8491
+type(
+  Odoc_class.class_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 240 8143 8154 "odoc_analyse.ml" 240 8143 8155
+)
+"odoc_analyse.ml" 248 8430 8449 "odoc_analyse.ml" 248 8430 8492
+call(
+  stack
+)
+type(
+  Odoc_class.class_element list
+)
+"odoc_analyse.ml" 248 8430 8442 "odoc_analyse.ml" 248 8430 8492
+type(
+  Odoc_class.class_element list
+)
+"odoc_analyse.ml" 250 8508 8520 "odoc_analyse.ml" 250 8508 8554
+type(
+  bool -> Odoc_class.class_element list -> Odoc_class.class_element list
+)
+ident(
+  int_ref remove_class_elements_between_stop "odoc_analyse.ml" 237 8057 8065 "odoc_analyse.ml" 237 8057 8099
+)
+"odoc_analyse.ml" 250 8508 8555 "odoc_analyse.ml" 250 8508 8559
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 237 8057 8100 "odoc_analyse.ml" 237 8057 8104
+)
+"odoc_analyse.ml" 250 8508 8560 "odoc_analyse.ml" 250 8508 8561
+type(
+  Odoc_class.class_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 240 8143 8154 "odoc_analyse.ml" 240 8143 8155
+)
+"odoc_analyse.ml" 250 8508 8520 "odoc_analyse.ml" 250 8508 8561
+call(
+  tail
+)
+type(
+  Odoc_class.class_element list
+)
+"odoc_analyse.ml" 247 8407 8417 "odoc_analyse.ml" 250 8508 8561
+type(
+  Odoc_class.class_element list
+)
+"odoc_analyse.ml" 241 8159 8165 "odoc_analyse.ml" 250 8508 8561
+type(
+  Odoc_class.class_element list
+)
+"odoc_analyse.ml" 238 8112 8114 "odoc_analyse.ml" 250 8508 8561
+type(
+  Odoc_class.class_element list
+)
+"odoc_analyse.ml" 253 8647 8655 "odoc_analyse.ml" 253 8647 8703
+type(
+  Odoc_class.class_kind -> Odoc_class.class_kind
+)
+ident(
+  def remove_class_elements_between_stop_in_class_kind "odoc_analyse.ml" 253 8647 8647 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 253 8647 8704 "odoc_analyse.ml" 253 8647 8705
+type(
+  Odoc_class.class_kind
+)
+ident(
+  def k "odoc_analyse.ml" 254 8708 8710 "odoc_analyse.ml" 261 9054 9136
+)
+"odoc_analyse.ml" 254 8708 8716 "odoc_analyse.ml" 254 8708 8717
+type(
+  Odoc_class.class_kind
+)
+ident(
+  int_ref k "odoc_analyse.ml" 253 8647 8704 "odoc_analyse.ml" 253 8647 8705
+)
+"odoc_analyse.ml" 255 8723 8755 "odoc_analyse.ml" 255 8723 8760
+type(
+  Odoc_class.inherited_class list
+)
+ident(
+  def inher "odoc_analyse.ml" 256 8768 8774 "odoc_analyse.ml" 256 8768 8851
+)
+"odoc_analyse.ml" 255 8723 8762 "odoc_analyse.ml" 255 8723 8763
+type(
+  Odoc_class.class_element list
+)
+ident(
+  def l "odoc_analyse.ml" 256 8768 8774 "odoc_analyse.ml" 256 8768 8851
+)
+"odoc_analyse.ml" 255 8723 8727 "odoc_analyse.ml" 255 8723 8764
+type(
+  Odoc_class.class_kind
+)
+"odoc_analyse.ml" 256 8768 8802 "odoc_analyse.ml" 256 8768 8807
+type(
+  Odoc_class.inherited_class list
+)
+ident(
+  int_ref inher "odoc_analyse.ml" 255 8723 8755 "odoc_analyse.ml" 255 8723 8760
+)
+"odoc_analyse.ml" 256 8768 8809 "odoc_analyse.ml" 256 8768 8843
+type(
+  bool -> Odoc_class.class_element list -> Odoc_class.class_element list
+)
+ident(
+  int_ref remove_class_elements_between_stop "odoc_analyse.ml" 237 8057 8065 "odoc_analyse.ml" 237 8057 8099
+)
+"odoc_analyse.ml" 256 8768 8844 "odoc_analyse.ml" 256 8768 8848
+type(
+  bool
+)
+"odoc_analyse.ml" 256 8768 8849 "odoc_analyse.ml" 256 8768 8850
+type(
+  Odoc_class.class_element list
+)
+ident(
+  int_ref l "odoc_analyse.ml" 255 8723 8762 "odoc_analyse.ml" 255 8723 8763
+)
+"odoc_analyse.ml" 256 8768 8809 "odoc_analyse.ml" 256 8768 8850
+call(
+  stack
+)
+type(
+  Odoc_class.class_element list
+)
+"odoc_analyse.ml" 256 8768 8774 "odoc_analyse.ml" 256 8768 8851
+type(
+  Odoc_class.class_kind
+)
+"odoc_analyse.ml" 257 8852 8879 "odoc_analyse.ml" 257 8852 8880
+type(
+  Odoc_class.class_apply
+)
+"odoc_analyse.ml" 257 8852 8856 "odoc_analyse.ml" 257 8852 8880
+type(
+  Odoc_class.class_kind
+)
+"odoc_analyse.ml" 257 8852 8884 "odoc_analyse.ml" 257 8852 8885
+type(
+  Odoc_class.class_kind
+)
+ident(
+  int_ref k "odoc_analyse.ml" 253 8647 8704 "odoc_analyse.ml" 253 8647 8705
+)
+"odoc_analyse.ml" 258 8886 8914 "odoc_analyse.ml" 258 8886 8915
+type(
+  Odoc_class.class_constr
+)
+"odoc_analyse.ml" 258 8886 8890 "odoc_analyse.ml" 258 8886 8915
+type(
+  Odoc_class.class_kind
+)
+"odoc_analyse.ml" 258 8886 8919 "odoc_analyse.ml" 258 8886 8920
+type(
+  Odoc_class.class_kind
+)
+ident(
+  int_ref k "odoc_analyse.ml" 253 8647 8704 "odoc_analyse.ml" 253 8647 8705
+)
+"odoc_analyse.ml" 259 8921 8954 "odoc_analyse.ml" 259 8921 8956
+type(
+  Odoc_class.class_kind
+)
+ident(
+  def k1 "odoc_analyse.ml" 260 8966 8972 "odoc_analyse.ml" 261 9054 9136
+)
+"odoc_analyse.ml" 259 8921 8958 "odoc_analyse.ml" 259 8921 8961
+type(
+  Odoc_class.class_type_kind
+)
+ident(
+  def ctk "odoc_analyse.ml" 260 8966 8972 "odoc_analyse.ml" 261 9054 9136
+)
+"odoc_analyse.ml" 259 8921 8925 "odoc_analyse.ml" 259 8921 8962
+type(
+  Odoc_class.class_kind
+)
+"odoc_analyse.ml" 260 8966 9001 "odoc_analyse.ml" 260 8966 9049
+type(
+  Odoc_class.class_kind -> Odoc_class.class_kind
+)
+ident(
+  int_ref remove_class_elements_between_stop_in_class_kind "odoc_analyse.ml" 253 8647 8655 "odoc_analyse.ml" 253 8647 8703
+)
+"odoc_analyse.ml" 260 8966 9050 "odoc_analyse.ml" 260 8966 9052
+type(
+  Odoc_class.class_kind
+)
+ident(
+  int_ref k1 "odoc_analyse.ml" 259 8921 8954 "odoc_analyse.ml" 259 8921 8956
+)
+"odoc_analyse.ml" 260 8966 9001 "odoc_analyse.ml" 260 8966 9052
+call(
+  stack
+)
+type(
+  Odoc_class.class_kind
+)
+"odoc_analyse.ml" 261 9054 9078 "odoc_analyse.ml" 261 9054 9131
+type(
+  Odoc_class.class_type_kind -> Odoc_class.class_type_kind
+)
+ident(
+  int_ref remove_class_elements_between_stop_in_class_type_kind "odoc_analyse.ml" 264 9228 9232 "odoc_analyse.ml" 264 9228 9285
+)
+"odoc_analyse.ml" 261 9054 9132 "odoc_analyse.ml" 261 9054 9135
+type(
+  Odoc_class.class_type_kind
+)
+ident(
+  int_ref ctk "odoc_analyse.ml" 259 8921 8958 "odoc_analyse.ml" 259 8921 8961
+)
+"odoc_analyse.ml" 261 9054 9078 "odoc_analyse.ml" 261 9054 9135
+call(
+  stack
+)
+type(
+  Odoc_class.class_type_kind
+)
+"odoc_analyse.ml" 260 8966 8972 "odoc_analyse.ml" 261 9054 9136
+type(
+  Odoc_class.class_kind
+)
+"odoc_analyse.ml" 254 8708 8710 "odoc_analyse.ml" 261 9054 9136
+type(
+  Odoc_class.class_kind
+)
+"odoc_analyse.ml" 264 9228 9232 "odoc_analyse.ml" 264 9228 9285
+type(
+  Odoc_class.class_type_kind -> Odoc_class.class_type_kind
+)
+ident(
+  def remove_class_elements_between_stop_in_class_type_kind "odoc_analyse.ml" 253 8647 8647 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 264 9228 9286 "odoc_analyse.ml" 264 9228 9288
+type(
+  Odoc_class.class_type_kind
+)
+ident(
+  def tk "odoc_analyse.ml" 265 9291 9293 "odoc_analyse.ml" 268 9436 9469
+)
+"odoc_analyse.ml" 265 9291 9299 "odoc_analyse.ml" 265 9291 9301
+type(
+  Odoc_class.class_type_kind
+)
+ident(
+  int_ref tk "odoc_analyse.ml" 264 9228 9286 "odoc_analyse.ml" 264 9228 9288
+)
+"odoc_analyse.ml" 266 9307 9339 "odoc_analyse.ml" 266 9307 9344
+type(
+  Odoc_class.inherited_class list
+)
+ident(
+  def inher "odoc_analyse.ml" 267 9352 9358 "odoc_analyse.ml" 267 9352 9435
+)
+"odoc_analyse.ml" 266 9307 9346 "odoc_analyse.ml" 266 9307 9347
+type(
+  Odoc_class.class_element list
+)
+ident(
+  def l "odoc_analyse.ml" 267 9352 9358 "odoc_analyse.ml" 267 9352 9435
+)
+"odoc_analyse.ml" 266 9307 9311 "odoc_analyse.ml" 266 9307 9348
+type(
+  Odoc_class.class_type_kind
+)
+"odoc_analyse.ml" 267 9352 9386 "odoc_analyse.ml" 267 9352 9391
+type(
+  Odoc_class.inherited_class list
+)
+ident(
+  int_ref inher "odoc_analyse.ml" 266 9307 9339 "odoc_analyse.ml" 266 9307 9344
+)
+"odoc_analyse.ml" 267 9352 9393 "odoc_analyse.ml" 267 9352 9427
+type(
+  bool -> Odoc_class.class_element list -> Odoc_class.class_element list
+)
+ident(
+  int_ref remove_class_elements_between_stop "odoc_analyse.ml" 237 8057 8065 "odoc_analyse.ml" 237 8057 8099
+)
+"odoc_analyse.ml" 267 9352 9428 "odoc_analyse.ml" 267 9352 9432
+type(
+  bool
+)
+"odoc_analyse.ml" 267 9352 9433 "odoc_analyse.ml" 267 9352 9434
+type(
+  Odoc_class.class_element list
+)
+ident(
+  int_ref l "odoc_analyse.ml" 266 9307 9346 "odoc_analyse.ml" 266 9307 9347
+)
+"odoc_analyse.ml" 267 9352 9393 "odoc_analyse.ml" 267 9352 9434
+call(
+  stack
+)
+type(
+  Odoc_class.class_element list
+)
+"odoc_analyse.ml" 267 9352 9358 "odoc_analyse.ml" 267 9352 9435
+type(
+  Odoc_class.class_type_kind
+)
+"odoc_analyse.ml" 268 9436 9462 "odoc_analyse.ml" 268 9436 9463
+type(
+  Odoc_class.class_type_alias
+)
+"odoc_analyse.ml" 268 9436 9440 "odoc_analyse.ml" 268 9436 9463
+type(
+  Odoc_class.class_type_kind
+)
+"odoc_analyse.ml" 268 9436 9467 "odoc_analyse.ml" 268 9436 9469
+type(
+  Odoc_class.class_type_kind
+)
+ident(
+  int_ref tk "odoc_analyse.ml" 264 9228 9286 "odoc_analyse.ml" 264 9228 9288
+)
+"odoc_analyse.ml" 265 9291 9293 "odoc_analyse.ml" 268 9436 9469
+type(
+  Odoc_class.class_type_kind
+)
+"odoc_analyse.ml" 272 9541 9549 "odoc_analyse.ml" 272 9541 9584
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  def remove_module_elements_between_stop "odoc_analyse.ml" 272 9541 9541 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+type(
+  bool
+)
+ident(
+  def keep "odoc_analyse.ml" 272 9541 9590 "odoc_analyse.ml" 330 11566 11586
+)
+"odoc_analyse.ml" 272 9541 9590 "odoc_analyse.ml" 272 9541 9594
+type(
+  Odoc_module.module_element list
+)
+ident(
+  def eles "odoc_analyse.ml" 273 9597 9599 "odoc_analyse.ml" 330 11566 11586
+)
+"odoc_analyse.ml" 273 9597 9603 "odoc_analyse.ml" 273 9597 9604
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  def f "odoc_analyse.ml" 274 9646 9648 "odoc_analyse.ml" 330 11566 11586
+)
+"odoc_analyse.ml" 273 9597 9607 "odoc_analyse.ml" 273 9597 9642
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref remove_module_elements_between_stop "odoc_analyse.ml" 272 9541 9549 "odoc_analyse.ml" 272 9541 9584
+)
+"odoc_analyse.ml" 274 9646 9654 "odoc_analyse.ml" 274 9646 9658
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref eles "odoc_analyse.ml" 272 9541 9590 "odoc_analyse.ml" 272 9541 9594
+)
+"odoc_analyse.ml" 275 9664 9668 "odoc_analyse.ml" 275 9664 9670
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 275 9664 9674 "odoc_analyse.ml" 275 9664 9676
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 276 9677 9681 "odoc_analyse.ml" 276 9677 9684
+type(
+  Odoc_module.module_element
+)
+ident(
+  def ele "odoc_analyse.ml" 277 9693 9699 "odoc_analyse.ml" 330 11566 11586
+)
+"odoc_analyse.ml" 276 9677 9688 "odoc_analyse.ml" 276 9677 9689
+type(
+  Odoc_module.module_element list
+)
+ident(
+  def q "odoc_analyse.ml" 277 9693 9699 "odoc_analyse.ml" 330 11566 11586
+)
+"odoc_analyse.ml" 276 9677 9681 "odoc_analyse.ml" 276 9677 9689
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 277 9693 9705 "odoc_analyse.ml" 277 9693 9708
+type(
+  Odoc_module.module_element
+)
+ident(
+  int_ref ele "odoc_analyse.ml" 276 9677 9681 "odoc_analyse.ml" 276 9677 9684
+)
+"odoc_analyse.ml" 278 9714 9774 "odoc_analyse.ml" 278 9714 9778
+type(
+  string
+)
+"odoc_analyse.ml" 278 9714 9759 "odoc_analyse.ml" 278 9714 9778
+type(
+  Odoc_types.text_element
+)
+"odoc_analyse.ml" 278 9714 9757 "odoc_analyse.ml" 278 9714 9780
+type(
+  Odoc_types.text
+)
+"odoc_analyse.ml" 278 9714 9722 "odoc_analyse.ml" 278 9714 9780
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 279 9784 9794 "odoc_analyse.ml" 279 9784 9795
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref f "odoc_analyse.ml" 273 9597 9603 "odoc_analyse.ml" 273 9597 9604
+)
+"odoc_analyse.ml" 279 9784 9797 "odoc_analyse.ml" 279 9784 9800
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"odoc_analyse.ml" 279 9784 9801 "odoc_analyse.ml" 279 9784 9805
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 279 9784 9796 "odoc_analyse.ml" 279 9784 9806
+type(
+  bool
+)
+"odoc_analyse.ml" 279 9784 9807 "odoc_analyse.ml" 279 9784 9808
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 276 9677 9688 "odoc_analyse.ml" 276 9677 9689
+)
+"odoc_analyse.ml" 279 9784 9794 "odoc_analyse.ml" 279 9784 9808
+call(
+  tail
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 280 9809 9852 "odoc_analyse.ml" 280 9809 9853
+type(
+  Odoc_types.text
+)
+"odoc_analyse.ml" 280 9809 9817 "odoc_analyse.ml" 280 9809 9853
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 281 9857 9870 "odoc_analyse.ml" 281 9857 9874
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 282 9880 9892 "odoc_analyse.ml" 282 9880 9895
+type(
+  Odoc_module.module_element
+)
+ident(
+  int_ref ele "odoc_analyse.ml" 276 9677 9681 "odoc_analyse.ml" 276 9677 9684
+)
+"odoc_analyse.ml" 282 9880 9900 "odoc_analyse.ml" 282 9880 9901
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref f "odoc_analyse.ml" 273 9597 9603 "odoc_analyse.ml" 273 9597 9604
+)
+"odoc_analyse.ml" 282 9880 9902 "odoc_analyse.ml" 282 9880 9906
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 282 9880 9907 "odoc_analyse.ml" 282 9880 9908
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 276 9677 9688 "odoc_analyse.ml" 276 9677 9689
+)
+"odoc_analyse.ml" 282 9880 9899 "odoc_analyse.ml" 282 9880 9909
+call(
+  stack
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 282 9880 9892 "odoc_analyse.ml" 282 9880 9909
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 284 9925 9937 "odoc_analyse.ml" 284 9925 9938
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref f "odoc_analyse.ml" 273 9597 9603 "odoc_analyse.ml" 273 9597 9604
+)
+"odoc_analyse.ml" 284 9925 9939 "odoc_analyse.ml" 284 9925 9943
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 284 9925 9944 "odoc_analyse.ml" 284 9925 9945
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 276 9677 9688 "odoc_analyse.ml" 276 9677 9689
+)
+"odoc_analyse.ml" 284 9925 9937 "odoc_analyse.ml" 284 9925 9945
+call(
+  tail
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 281 9857 9867 "odoc_analyse.ml" 284 9925 9945
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 285 9946 9981 "odoc_analyse.ml" 285 9946 9982
+type(
+  Odoc_module.t_module
+)
+ident(
+  def m "odoc_analyse.ml" 286 9986 9996 "odoc_analyse.ml" 292 10221 10241
+)
+"odoc_analyse.ml" 285 9946 9954 "odoc_analyse.ml" 285 9946 9982
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 286 9986 9999 "odoc_analyse.ml" 286 9986 10003
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 288 10023 10036 "odoc_analyse.ml" 288 10023 10037
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref m "odoc_analyse.ml" 285 9946 9981 "odoc_analyse.ml" 285 9946 9982
+)
+"odoc_analyse.ml" 288 10023 10060 "odoc_analyse.ml" 288 10023 10110
+type(
+  Odoc_module.module_kind -> Odoc_module.module_kind
+)
+ident(
+  int_ref remove_module_elements_between_stop_in_module_kind "odoc_analyse.ml" 334 11684 11688 "odoc_analyse.ml" 334 11684 11738
+)
+"odoc_analyse.ml" 288 10023 10111 "odoc_analyse.ml" 288 10023 10112
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref m "odoc_analyse.ml" 285 9946 9981 "odoc_analyse.ml" 285 9946 9982
+)
+"odoc_analyse.ml" 288 10023 10111 "odoc_analyse.ml" 288 10023 10131
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 288 10023 10060 "odoc_analyse.ml" 288 10023 10131
+call(
+  stack
+)
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 288 10023 10036 "odoc_analyse.ml" 288 10023 10131
+type(
+  unit
+)
+"odoc_analyse.ml" 289 10134 10175 "odoc_analyse.ml" 289 10134 10176
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref m "odoc_analyse.ml" 285 9946 9981 "odoc_analyse.ml" 285 9946 9982
+)
+"odoc_analyse.ml" 289 10134 10147 "odoc_analyse.ml" 289 10134 10177
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 289 10134 10182 "odoc_analyse.ml" 289 10134 10183
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref f "odoc_analyse.ml" 273 9597 9603 "odoc_analyse.ml" 273 9597 9604
+)
+"odoc_analyse.ml" 289 10134 10184 "odoc_analyse.ml" 289 10134 10188
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 289 10134 10189 "odoc_analyse.ml" 289 10134 10190
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 276 9677 9688 "odoc_analyse.ml" 276 9677 9689
+)
+"odoc_analyse.ml" 289 10134 10181 "odoc_analyse.ml" 289 10134 10191
+call(
+  stack
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 289 10134 10147 "odoc_analyse.ml" 289 10134 10191
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 287 10009 10021 "odoc_analyse.ml" 290 10192 10205
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 292 10221 10233 "odoc_analyse.ml" 292 10221 10234
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref f "odoc_analyse.ml" 273 9597 9603 "odoc_analyse.ml" 273 9597 9604
+)
+"odoc_analyse.ml" 292 10221 10235 "odoc_analyse.ml" 292 10221 10239
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 292 10221 10240 "odoc_analyse.ml" 292 10221 10241
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 276 9677 9688 "odoc_analyse.ml" 276 9677 9689
+)
+"odoc_analyse.ml" 292 10221 10233 "odoc_analyse.ml" 292 10221 10241
+call(
+  tail
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 286 9986 9996 "odoc_analyse.ml" 292 10221 10241
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 293 10242 10282 "odoc_analyse.ml" 293 10242 10284
+type(
+  Odoc_module.t_module_type
+)
+ident(
+  def mt "odoc_analyse.ml" 294 10288 10298 "odoc_analyse.ml" 301 10575 10595
+)
+"odoc_analyse.ml" 293 10242 10250 "odoc_analyse.ml" 293 10242 10284
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 294 10288 10301 "odoc_analyse.ml" 294 10288 10305
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 296 10325 10338 "odoc_analyse.ml" 296 10325 10340
+type(
+  Odoc_module.t_module_type
+)
+ident(
+  int_ref mt "odoc_analyse.ml" 293 10242 10282 "odoc_analyse.ml" 293 10242 10284
+)
+"odoc_analyse.ml" 296 10325 10364 "odoc_analyse.ml" 296 10325 10383
+type(
+  (Odoc_module.module_type_kind -> Odoc_module.module_type_kind) ->
+  Odoc_module.module_type_kind option -> Odoc_module.module_type_kind option
+)
+ident(
+  ext_ref Odoc_misc.apply_opt
+)
+"odoc_analyse.ml" 297 10384 10401 "odoc_analyse.ml" 297 10384 10456
+type(
+  Odoc_module.module_type_kind -> Odoc_module.module_type_kind
+)
+ident(
+  int_ref remove_module_elements_between_stop_in_module_type_kind "odoc_analyse.ml" 352 12794 12798 "odoc_analyse.ml" 352 12794 12853
+)
+"odoc_analyse.ml" 297 10384 10457 "odoc_analyse.ml" 297 10384 10459
+type(
+  Odoc_module.t_module_type
+)
+ident(
+  int_ref mt "odoc_analyse.ml" 293 10242 10282 "odoc_analyse.ml" 293 10242 10284
+)
+"odoc_analyse.ml" 297 10384 10457 "odoc_analyse.ml" 297 10384 10479
+type(
+  Odoc_module.module_type_kind option
+)
+"odoc_analyse.ml" 296 10325 10364 "odoc_analyse.ml" 297 10384 10479
+call(
+  stack
+)
+type(
+  Odoc_module.module_type_kind option
+)
+"odoc_analyse.ml" 296 10325 10338 "odoc_analyse.ml" 297 10384 10479
+type(
+  unit
+)
+"odoc_analyse.ml" 298 10482 10528 "odoc_analyse.ml" 298 10482 10530
+type(
+  Odoc_module.t_module_type
+)
+ident(
+  int_ref mt "odoc_analyse.ml" 293 10242 10282 "odoc_analyse.ml" 293 10242 10284
+)
+"odoc_analyse.ml" 298 10482 10495 "odoc_analyse.ml" 298 10482 10531
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 298 10482 10536 "odoc_analyse.ml" 298 10482 10537
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref f "odoc_analyse.ml" 273 9597 9603 "odoc_analyse.ml" 273 9597 9604
+)
+"odoc_analyse.ml" 298 10482 10538 "odoc_analyse.ml" 298 10482 10542
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 298 10482 10543 "odoc_analyse.ml" 298 10482 10544
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 276 9677 9688 "odoc_analyse.ml" 276 9677 9689
+)
+"odoc_analyse.ml" 298 10482 10535 "odoc_analyse.ml" 298 10482 10545
+call(
+  stack
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 298 10482 10495 "odoc_analyse.ml" 298 10482 10545
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 295 10311 10323 "odoc_analyse.ml" 299 10546 10559
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 301 10575 10587 "odoc_analyse.ml" 301 10575 10588
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref f "odoc_analyse.ml" 273 9597 9603 "odoc_analyse.ml" 273 9597 9604
+)
+"odoc_analyse.ml" 301 10575 10589 "odoc_analyse.ml" 301 10575 10593
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 301 10575 10594 "odoc_analyse.ml" 301 10575 10595
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 276 9677 9688 "odoc_analyse.ml" 276 9677 9689
+)
+"odoc_analyse.ml" 301 10575 10587 "odoc_analyse.ml" 301 10575 10595
+call(
+  tail
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 294 10288 10298 "odoc_analyse.ml" 301 10575 10595
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 302 10596 10640 "odoc_analyse.ml" 302 10596 10641
+type(
+  Odoc_module.included_module
+)
+"odoc_analyse.ml" 302 10596 10604 "odoc_analyse.ml" 302 10596 10641
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 303 10645 10658 "odoc_analyse.ml" 303 10645 10662
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 304 10668 10680 "odoc_analyse.ml" 304 10668 10683
+type(
+  Odoc_module.module_element
+)
+ident(
+  int_ref ele "odoc_analyse.ml" 276 9677 9681 "odoc_analyse.ml" 276 9677 9684
+)
+"odoc_analyse.ml" 304 10668 10688 "odoc_analyse.ml" 304 10668 10689
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref f "odoc_analyse.ml" 273 9597 9603 "odoc_analyse.ml" 273 9597 9604
+)
+"odoc_analyse.ml" 304 10668 10690 "odoc_analyse.ml" 304 10668 10694
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 304 10668 10695 "odoc_analyse.ml" 304 10668 10696
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 276 9677 9688 "odoc_analyse.ml" 276 9677 9689
+)
+"odoc_analyse.ml" 304 10668 10687 "odoc_analyse.ml" 304 10668 10697
+call(
+  stack
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 304 10668 10680 "odoc_analyse.ml" 304 10668 10697
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 306 10713 10725 "odoc_analyse.ml" 306 10713 10726
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref f "odoc_analyse.ml" 273 9597 9603 "odoc_analyse.ml" 273 9597 9604
+)
+"odoc_analyse.ml" 306 10713 10727 "odoc_analyse.ml" 306 10713 10731
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 306 10713 10732 "odoc_analyse.ml" 306 10713 10733
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 276 9677 9688 "odoc_analyse.ml" 276 9677 9689
+)
+"odoc_analyse.ml" 306 10713 10725 "odoc_analyse.ml" 306 10713 10733
+call(
+  tail
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 303 10645 10655 "odoc_analyse.ml" 306 10713 10733
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 307 10734 10768 "odoc_analyse.ml" 307 10734 10769
+type(
+  Odoc_class.t_class
+)
+ident(
+  def c "odoc_analyse.ml" 308 10773 10783 "odoc_analyse.ml" 314 11005 11025
+)
+"odoc_analyse.ml" 307 10734 10742 "odoc_analyse.ml" 307 10734 10769
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 308 10773 10786 "odoc_analyse.ml" 308 10773 10790
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 310 10810 10823 "odoc_analyse.ml" 310 10810 10824
+type(
+  Odoc_class.t_class
+)
+ident(
+  int_ref c "odoc_analyse.ml" 307 10734 10768 "odoc_analyse.ml" 307 10734 10769
+)
+"odoc_analyse.ml" 310 10810 10847 "odoc_analyse.ml" 310 10810 10895
+type(
+  Odoc_class.class_kind -> Odoc_class.class_kind
+)
+ident(
+  int_ref remove_class_elements_between_stop_in_class_kind "odoc_analyse.ml" 253 8647 8655 "odoc_analyse.ml" 253 8647 8703
+)
+"odoc_analyse.ml" 310 10810 10896 "odoc_analyse.ml" 310 10810 10897
+type(
+  Odoc_class.t_class
+)
+ident(
+  int_ref c "odoc_analyse.ml" 307 10734 10768 "odoc_analyse.ml" 307 10734 10769
+)
+"odoc_analyse.ml" 310 10810 10896 "odoc_analyse.ml" 310 10810 10916
+type(
+  Odoc_class.class_kind
+)
+"odoc_analyse.ml" 310 10810 10847 "odoc_analyse.ml" 310 10810 10916
+call(
+  stack
+)
+type(
+  Odoc_class.class_kind
+)
+"odoc_analyse.ml" 310 10810 10823 "odoc_analyse.ml" 310 10810 10916
+type(
+  unit
+)
+"odoc_analyse.ml" 311 10919 10959 "odoc_analyse.ml" 311 10919 10960
+type(
+  Odoc_class.t_class
+)
+ident(
+  int_ref c "odoc_analyse.ml" 307 10734 10768 "odoc_analyse.ml" 307 10734 10769
+)
+"odoc_analyse.ml" 311 10919 10932 "odoc_analyse.ml" 311 10919 10961
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 311 10919 10966 "odoc_analyse.ml" 311 10919 10967
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref f "odoc_analyse.ml" 273 9597 9603 "odoc_analyse.ml" 273 9597 9604
+)
+"odoc_analyse.ml" 311 10919 10968 "odoc_analyse.ml" 311 10919 10972
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 311 10919 10973 "odoc_analyse.ml" 311 10919 10974
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 276 9677 9688 "odoc_analyse.ml" 276 9677 9689
+)
+"odoc_analyse.ml" 311 10919 10965 "odoc_analyse.ml" 311 10919 10975
+call(
+  stack
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 311 10919 10932 "odoc_analyse.ml" 311 10919 10975
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 309 10796 10808 "odoc_analyse.ml" 312 10976 10989
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 314 11005 11017 "odoc_analyse.ml" 314 11005 11018
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref f "odoc_analyse.ml" 273 9597 9603 "odoc_analyse.ml" 273 9597 9604
+)
+"odoc_analyse.ml" 314 11005 11019 "odoc_analyse.ml" 314 11005 11023
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 314 11005 11024 "odoc_analyse.ml" 314 11005 11025
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 276 9677 9688 "odoc_analyse.ml" 276 9677 9689
+)
+"odoc_analyse.ml" 314 11005 11017 "odoc_analyse.ml" 314 11005 11025
+call(
+  tail
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 308 10773 10783 "odoc_analyse.ml" 314 11005 11025
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 315 11026 11065 "odoc_analyse.ml" 315 11026 11067
+type(
+  Odoc_class.t_class_type
+)
+ident(
+  def ct "odoc_analyse.ml" 316 11071 11081 "odoc_analyse.ml" 322 11318 11338
+)
+"odoc_analyse.ml" 315 11026 11034 "odoc_analyse.ml" 315 11026 11067
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 316 11071 11084 "odoc_analyse.ml" 316 11071 11088
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 318 11108 11121 "odoc_analyse.ml" 318 11108 11123
+type(
+  Odoc_class.t_class_type
+)
+ident(
+  int_ref ct "odoc_analyse.ml" 315 11026 11065 "odoc_analyse.ml" 315 11026 11067
+)
+"odoc_analyse.ml" 318 11108 11147 "odoc_analyse.ml" 318 11108 11200
+type(
+  Odoc_class.class_type_kind -> Odoc_class.class_type_kind
+)
+ident(
+  int_ref remove_class_elements_between_stop_in_class_type_kind "odoc_analyse.ml" 264 9228 9232 "odoc_analyse.ml" 264 9228 9285
+)
+"odoc_analyse.ml" 318 11108 11201 "odoc_analyse.ml" 318 11108 11203
+type(
+  Odoc_class.t_class_type
+)
+ident(
+  int_ref ct "odoc_analyse.ml" 315 11026 11065 "odoc_analyse.ml" 315 11026 11067
+)
+"odoc_analyse.ml" 318 11108 11201 "odoc_analyse.ml" 318 11108 11223
+type(
+  Odoc_class.class_type_kind
+)
+"odoc_analyse.ml" 318 11108 11147 "odoc_analyse.ml" 318 11108 11223
+call(
+  stack
+)
+type(
+  Odoc_class.class_type_kind
+)
+"odoc_analyse.ml" 318 11108 11121 "odoc_analyse.ml" 318 11108 11223
+type(
+  unit
+)
+"odoc_analyse.ml" 319 11226 11271 "odoc_analyse.ml" 319 11226 11273
+type(
+  Odoc_class.t_class_type
+)
+ident(
+  int_ref ct "odoc_analyse.ml" 315 11026 11065 "odoc_analyse.ml" 315 11026 11067
+)
+"odoc_analyse.ml" 319 11226 11239 "odoc_analyse.ml" 319 11226 11274
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 319 11226 11279 "odoc_analyse.ml" 319 11226 11280
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref f "odoc_analyse.ml" 273 9597 9603 "odoc_analyse.ml" 273 9597 9604
+)
+"odoc_analyse.ml" 319 11226 11281 "odoc_analyse.ml" 319 11226 11285
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 319 11226 11286 "odoc_analyse.ml" 319 11226 11287
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 276 9677 9688 "odoc_analyse.ml" 276 9677 9689
+)
+"odoc_analyse.ml" 319 11226 11278 "odoc_analyse.ml" 319 11226 11288
+call(
+  stack
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 319 11226 11239 "odoc_analyse.ml" 319 11226 11288
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 317 11094 11106 "odoc_analyse.ml" 320 11289 11302
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 322 11318 11330 "odoc_analyse.ml" 322 11318 11331
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref f "odoc_analyse.ml" 273 9597 9603 "odoc_analyse.ml" 273 9597 9604
+)
+"odoc_analyse.ml" 322 11318 11332 "odoc_analyse.ml" 322 11318 11336
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 322 11318 11337 "odoc_analyse.ml" 322 11318 11338
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 276 9677 9688 "odoc_analyse.ml" 276 9677 9689
+)
+"odoc_analyse.ml" 322 11318 11330 "odoc_analyse.ml" 322 11318 11338
+call(
+  tail
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 316 11071 11081 "odoc_analyse.ml" 322 11318 11338
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 323 11339 11373 "odoc_analyse.ml" 323 11339 11374
+type(
+  Odoc_value.t_value
+)
+"odoc_analyse.ml" 323 11339 11347 "odoc_analyse.ml" 323 11339 11374
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 324 11375 11418 "odoc_analyse.ml" 324 11375 11419
+type(
+  Odoc_extension.t_type_extension
+)
+"odoc_analyse.ml" 324 11375 11383 "odoc_analyse.ml" 324 11375 11419
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 323 11339 11347 "odoc_analyse.ml" 324 11375 11419
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 325 11420 11458 "odoc_analyse.ml" 325 11420 11459
+type(
+  Odoc_exception.t_exception
+)
+"odoc_analyse.ml" 325 11420 11428 "odoc_analyse.ml" 325 11420 11459
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 323 11339 11347 "odoc_analyse.ml" 325 11420 11459
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 326 11460 11493 "odoc_analyse.ml" 326 11460 11494
+type(
+  Odoc_type.t_type
+)
+"odoc_analyse.ml" 326 11460 11468 "odoc_analyse.ml" 326 11460 11494
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 323 11339 11347 "odoc_analyse.ml" 326 11460 11494
+type(
+  Odoc_module.module_element
+)
+"odoc_analyse.ml" 327 11498 11511 "odoc_analyse.ml" 327 11498 11515
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 328 11521 11533 "odoc_analyse.ml" 328 11521 11536
+type(
+  Odoc_module.module_element
+)
+ident(
+  int_ref ele "odoc_analyse.ml" 276 9677 9681 "odoc_analyse.ml" 276 9677 9684
+)
+"odoc_analyse.ml" 328 11521 11541 "odoc_analyse.ml" 328 11521 11542
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref f "odoc_analyse.ml" 273 9597 9603 "odoc_analyse.ml" 273 9597 9604
+)
+"odoc_analyse.ml" 328 11521 11543 "odoc_analyse.ml" 328 11521 11547
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 328 11521 11548 "odoc_analyse.ml" 328 11521 11549
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 276 9677 9688 "odoc_analyse.ml" 276 9677 9689
+)
+"odoc_analyse.ml" 328 11521 11540 "odoc_analyse.ml" 328 11521 11550
+call(
+  stack
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 328 11521 11533 "odoc_analyse.ml" 328 11521 11550
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 330 11566 11578 "odoc_analyse.ml" 330 11566 11579
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref f "odoc_analyse.ml" 273 9597 9603 "odoc_analyse.ml" 273 9597 9604
+)
+"odoc_analyse.ml" 330 11566 11580 "odoc_analyse.ml" 330 11566 11584
+type(
+  bool
+)
+ident(
+  int_ref keep "odoc_analyse.ml" 272 9541 9585 "odoc_analyse.ml" 272 9541 9589
+)
+"odoc_analyse.ml" 330 11566 11585 "odoc_analyse.ml" 330 11566 11586
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref q "odoc_analyse.ml" 276 9677 9688 "odoc_analyse.ml" 276 9677 9689
+)
+"odoc_analyse.ml" 330 11566 11578 "odoc_analyse.ml" 330 11566 11586
+call(
+  tail
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 327 11498 11508 "odoc_analyse.ml" 330 11566 11586
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 277 9693 9699 "odoc_analyse.ml" 330 11566 11586
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 274 9646 9648 "odoc_analyse.ml" 330 11566 11586
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 273 9597 9599 "odoc_analyse.ml" 330 11566 11586
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 334 11684 11688 "odoc_analyse.ml" 334 11684 11738
+type(
+  Odoc_module.module_kind -> Odoc_module.module_kind
+)
+ident(
+  def remove_module_elements_between_stop_in_module_kind "odoc_analyse.ml" 272 9541 9541 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 334 11684 11739 "odoc_analyse.ml" 334 11684 11740
+type(
+  Odoc_module.module_kind
+)
+ident(
+  def k "odoc_analyse.ml" 335 11743 11745 "odoc_analyse.ml" 349 12657 12693
+)
+"odoc_analyse.ml" 335 11743 11751 "odoc_analyse.ml" 335 11743 11752
+type(
+  Odoc_module.module_kind
+)
+ident(
+  int_ref k "odoc_analyse.ml" 334 11684 11739 "odoc_analyse.ml" 334 11684 11740
+)
+"odoc_analyse.ml" 336 11758 11788 "odoc_analyse.ml" 336 11758 11789
+type(
+  Odoc_module.module_element list
+)
+ident(
+  def l "odoc_analyse.ml" 336 11758 11793 "odoc_analyse.ml" 336 11758 11863
+)
+"odoc_analyse.ml" 336 11758 11762 "odoc_analyse.ml" 336 11758 11789
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 336 11758 11820 "odoc_analyse.ml" 336 11758 11855
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref remove_module_elements_between_stop "odoc_analyse.ml" 272 9541 9549 "odoc_analyse.ml" 272 9541 9584
+)
+"odoc_analyse.ml" 336 11758 11856 "odoc_analyse.ml" 336 11758 11860
+type(
+  bool
+)
+"odoc_analyse.ml" 336 11758 11861 "odoc_analyse.ml" 336 11758 11862
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref l "odoc_analyse.ml" 336 11758 11788 "odoc_analyse.ml" 336 11758 11789
+)
+"odoc_analyse.ml" 336 11758 11819 "odoc_analyse.ml" 336 11758 11863
+call(
+  stack
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 336 11758 11793 "odoc_analyse.ml" 336 11758 11863
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 337 11864 11893 "odoc_analyse.ml" 337 11864 11894
+type(
+  Odoc_module.module_alias
+)
+"odoc_analyse.ml" 337 11864 11868 "odoc_analyse.ml" 337 11864 11894
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 337 11864 11898 "odoc_analyse.ml" 337 11864 11899
+type(
+  Odoc_module.module_kind
+)
+ident(
+  int_ref k "odoc_analyse.ml" 334 11684 11739 "odoc_analyse.ml" 334 11684 11740
+)
+"odoc_analyse.ml" 338 11900 11932 "odoc_analyse.ml" 338 11900 11938
+type(
+  Odoc_module.module_parameter
+)
+ident(
+  def params "odoc_analyse.ml" 339 11948 11954 "odoc_analyse.ml" 339 11948 12044
+)
+"odoc_analyse.ml" 338 11900 11940 "odoc_analyse.ml" 338 11900 11942
+type(
+  Odoc_module.module_kind
+)
+ident(
+  def k2 "odoc_analyse.ml" 339 11948 11954 "odoc_analyse.ml" 339 11948 12044
+)
+"odoc_analyse.ml" 338 11900 11904 "odoc_analyse.ml" 338 11900 11943
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 339 11948 11982 "odoc_analyse.ml" 339 11948 11988
+type(
+  Odoc_module.module_parameter
+)
+ident(
+  int_ref params "odoc_analyse.ml" 338 11900 11932 "odoc_analyse.ml" 338 11900 11938
+)
+"odoc_analyse.ml" 339 11948 11990 "odoc_analyse.ml" 339 11948 12040
+type(
+  Odoc_module.module_kind -> Odoc_module.module_kind
+)
+ident(
+  int_ref remove_module_elements_between_stop_in_module_kind "odoc_analyse.ml" 334 11684 11688 "odoc_analyse.ml" 334 11684 11738
+)
+"odoc_analyse.ml" 339 11948 12041 "odoc_analyse.ml" 339 11948 12043
+type(
+  Odoc_module.module_kind
+)
+ident(
+  int_ref k2 "odoc_analyse.ml" 338 11900 11940 "odoc_analyse.ml" 338 11900 11942
+)
+"odoc_analyse.ml" 339 11948 11990 "odoc_analyse.ml" 339 11948 12043
+call(
+  stack
+)
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 339 11948 11954 "odoc_analyse.ml" 339 11948 12044
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 340 12045 12075 "odoc_analyse.ml" 340 12045 12077
+type(
+  Odoc_module.module_kind
+)
+ident(
+  def k1 "odoc_analyse.ml" 341 12086 12092 "odoc_analyse.ml" 342 12173 12247
+)
+"odoc_analyse.ml" 340 12045 12079 "odoc_analyse.ml" 340 12045 12081
+type(
+  Odoc_module.module_kind
+)
+ident(
+  def k2 "odoc_analyse.ml" 341 12086 12092 "odoc_analyse.ml" 342 12173 12247
+)
+"odoc_analyse.ml" 340 12045 12049 "odoc_analyse.ml" 340 12045 12082
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 341 12086 12118 "odoc_analyse.ml" 341 12086 12168
+type(
+  Odoc_module.module_kind -> Odoc_module.module_kind
+)
+ident(
+  int_ref remove_module_elements_between_stop_in_module_kind "odoc_analyse.ml" 334 11684 11688 "odoc_analyse.ml" 334 11684 11738
+)
+"odoc_analyse.ml" 341 12086 12169 "odoc_analyse.ml" 341 12086 12171
+type(
+  Odoc_module.module_kind
+)
+ident(
+  int_ref k1 "odoc_analyse.ml" 340 12045 12075 "odoc_analyse.ml" 340 12045 12077
+)
+"odoc_analyse.ml" 341 12086 12118 "odoc_analyse.ml" 341 12086 12171
+call(
+  stack
+)
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 342 12173 12193 "odoc_analyse.ml" 342 12173 12243
+type(
+  Odoc_module.module_kind -> Odoc_module.module_kind
+)
+ident(
+  int_ref remove_module_elements_between_stop_in_module_kind "odoc_analyse.ml" 334 11684 11688 "odoc_analyse.ml" 334 11684 11738
+)
+"odoc_analyse.ml" 342 12173 12244 "odoc_analyse.ml" 342 12173 12246
+type(
+  Odoc_module.module_kind
+)
+ident(
+  int_ref k2 "odoc_analyse.ml" 340 12045 12079 "odoc_analyse.ml" 340 12045 12081
+)
+"odoc_analyse.ml" 342 12173 12193 "odoc_analyse.ml" 342 12173 12246
+call(
+  stack
+)
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 341 12086 12092 "odoc_analyse.ml" 342 12173 12247
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 343 12248 12277 "odoc_analyse.ml" 343 12248 12283
+type(
+  Odoc_module.module_type_kind
+)
+ident(
+  def mtkind "odoc_analyse.ml" 344 12291 12297 "odoc_analyse.ml" 344 12291 12388
+)
+"odoc_analyse.ml" 343 12248 12285 "odoc_analyse.ml" 343 12248 12286
+type(
+  string
+)
+ident(
+  def s "odoc_analyse.ml" 344 12291 12297 "odoc_analyse.ml" 344 12291 12388
+)
+"odoc_analyse.ml" 343 12248 12252 "odoc_analyse.ml" 343 12248 12287
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 344 12291 12322 "odoc_analyse.ml" 344 12291 12377
+type(
+  Odoc_module.module_type_kind -> Odoc_module.module_type_kind
+)
+ident(
+  int_ref remove_module_elements_between_stop_in_module_type_kind "odoc_analyse.ml" 352 12794 12798 "odoc_analyse.ml" 352 12794 12853
+)
+"odoc_analyse.ml" 344 12291 12378 "odoc_analyse.ml" 344 12291 12384
+type(
+  Odoc_module.module_type_kind
+)
+ident(
+  int_ref mtkind "odoc_analyse.ml" 343 12248 12277 "odoc_analyse.ml" 343 12248 12283
+)
+"odoc_analyse.ml" 344 12291 12322 "odoc_analyse.ml" 344 12291 12384
+call(
+  stack
+)
+type(
+  Odoc_module.module_type_kind
+)
+"odoc_analyse.ml" 344 12291 12386 "odoc_analyse.ml" 344 12291 12387
+type(
+  string
+)
+ident(
+  int_ref s "odoc_analyse.ml" 343 12248 12285 "odoc_analyse.ml" 343 12248 12286
+)
+"odoc_analyse.ml" 344 12291 12297 "odoc_analyse.ml" 344 12291 12388
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 345 12389 12424 "odoc_analyse.ml" 345 12389 12426
+type(
+  Odoc_module.module_kind
+)
+ident(
+  def k2 "odoc_analyse.ml" 346 12439 12445 "odoc_analyse.ml" 347 12531 12619
+)
+"odoc_analyse.ml" 345 12389 12428 "odoc_analyse.ml" 345 12389 12434
+type(
+  Odoc_module.module_type_kind
+)
+ident(
+  def mtkind "odoc_analyse.ml" 346 12439 12445 "odoc_analyse.ml" 347 12531 12619
+)
+"odoc_analyse.ml" 345 12389 12393 "odoc_analyse.ml" 345 12389 12435
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 346 12439 12476 "odoc_analyse.ml" 346 12439 12526
+type(
+  Odoc_module.module_kind -> Odoc_module.module_kind
+)
+ident(
+  int_ref remove_module_elements_between_stop_in_module_kind "odoc_analyse.ml" 334 11684 11688 "odoc_analyse.ml" 334 11684 11738
+)
+"odoc_analyse.ml" 346 12439 12527 "odoc_analyse.ml" 346 12439 12529
+type(
+  Odoc_module.module_kind
+)
+ident(
+  int_ref k2 "odoc_analyse.ml" 345 12389 12424 "odoc_analyse.ml" 345 12389 12426
+)
+"odoc_analyse.ml" 346 12439 12476 "odoc_analyse.ml" 346 12439 12529
+call(
+  stack
+)
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 347 12531 12556 "odoc_analyse.ml" 347 12531 12611
+type(
+  Odoc_module.module_type_kind -> Odoc_module.module_type_kind
+)
+ident(
+  int_ref remove_module_elements_between_stop_in_module_type_kind "odoc_analyse.ml" 352 12794 12798 "odoc_analyse.ml" 352 12794 12853
+)
+"odoc_analyse.ml" 347 12531 12612 "odoc_analyse.ml" 347 12531 12618
+type(
+  Odoc_module.module_type_kind
+)
+ident(
+  int_ref mtkind "odoc_analyse.ml" 345 12389 12428 "odoc_analyse.ml" 345 12389 12434
+)
+"odoc_analyse.ml" 347 12531 12556 "odoc_analyse.ml" 347 12531 12618
+call(
+  stack
+)
+type(
+  Odoc_module.module_type_kind
+)
+"odoc_analyse.ml" 346 12439 12445 "odoc_analyse.ml" 347 12531 12619
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 348 12620 12650 "odoc_analyse.ml" 348 12620 12651
+type(
+  string
+)
+"odoc_analyse.ml" 348 12620 12624 "odoc_analyse.ml" 348 12620 12651
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 348 12620 12655 "odoc_analyse.ml" 348 12620 12656
+type(
+  Odoc_module.module_kind
+)
+ident(
+  int_ref k "odoc_analyse.ml" 334 11684 11739 "odoc_analyse.ml" 334 11684 11740
+)
+"odoc_analyse.ml" 349 12657 12687 "odoc_analyse.ml" 349 12657 12688
+type(
+  Odoc_module.module_type_alias
+)
+type(
+  string
+)
+"odoc_analyse.ml" 349 12657 12661 "odoc_analyse.ml" 349 12657 12688
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 349 12657 12692 "odoc_analyse.ml" 349 12657 12693
+type(
+  Odoc_module.module_kind
+)
+ident(
+  int_ref k "odoc_analyse.ml" 334 11684 11739 "odoc_analyse.ml" 334 11684 11740
+)
+"odoc_analyse.ml" 335 11743 11745 "odoc_analyse.ml" 349 12657 12693
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 352 12794 12798 "odoc_analyse.ml" 352 12794 12853
+type(
+  Odoc_module.module_type_kind -> Odoc_module.module_type_kind
+)
+ident(
+  def remove_module_elements_between_stop_in_module_type_kind "odoc_analyse.ml" 272 9541 9541 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 352 12794 12854 "odoc_analyse.ml" 352 12794 12856
+type(
+  Odoc_module.module_type_kind
+)
+ident(
+  def tk "odoc_analyse.ml" 353 12859 12861 "odoc_analyse.ml" 360 13339 13381
+)
+"odoc_analyse.ml" 353 12859 12867 "odoc_analyse.ml" 353 12859 12869
+type(
+  Odoc_module.module_type_kind
+)
+ident(
+  int_ref tk "odoc_analyse.ml" 352 12794 12854 "odoc_analyse.ml" 352 12794 12856
+)
+"odoc_analyse.ml" 354 12875 12910 "odoc_analyse.ml" 354 12875 12911
+type(
+  Odoc_module.module_element list
+)
+ident(
+  def l "odoc_analyse.ml" 354 12875 12915 "odoc_analyse.ml" 354 12875 12990
+)
+"odoc_analyse.ml" 354 12875 12879 "odoc_analyse.ml" 354 12875 12911
+type(
+  Odoc_module.module_type_kind
+)
+"odoc_analyse.ml" 354 12875 12947 "odoc_analyse.ml" 354 12875 12982
+type(
+  bool -> Odoc_module.module_element list -> Odoc_module.module_element list
+)
+ident(
+  int_ref remove_module_elements_between_stop "odoc_analyse.ml" 272 9541 9549 "odoc_analyse.ml" 272 9541 9584
+)
+"odoc_analyse.ml" 354 12875 12983 "odoc_analyse.ml" 354 12875 12987
+type(
+  bool
+)
+"odoc_analyse.ml" 354 12875 12988 "odoc_analyse.ml" 354 12875 12989
+type(
+  Odoc_module.module_element list
+)
+ident(
+  int_ref l "odoc_analyse.ml" 354 12875 12910 "odoc_analyse.ml" 354 12875 12911
+)
+"odoc_analyse.ml" 354 12875 12946 "odoc_analyse.ml" 354 12875 12990
+call(
+  stack
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_analyse.ml" 354 12875 12915 "odoc_analyse.ml" 354 12875 12990
+type(
+  Odoc_module.module_type_kind
+)
+"odoc_analyse.ml" 355 12991 13028 "odoc_analyse.ml" 355 12991 13034
+type(
+  Odoc_module.module_parameter
+)
+ident(
+  def params "odoc_analyse.ml" 356 13044 13050 "odoc_analyse.ml" 356 13044 13151
+)
+"odoc_analyse.ml" 355 12991 13036 "odoc_analyse.ml" 355 12991 13039
+type(
+  Odoc_module.module_type_kind
+)
+ident(
+  def tk2 "odoc_analyse.ml" 356 13044 13050 "odoc_analyse.ml" 356 13044 13151
+)
+"odoc_analyse.ml" 355 12991 12995 "odoc_analyse.ml" 355 12991 13040
+type(
+  Odoc_module.module_type_kind
+)
+"odoc_analyse.ml" 356 13044 13083 "odoc_analyse.ml" 356 13044 13089
+type(
+  Odoc_module.module_parameter
+)
+ident(
+  int_ref params "odoc_analyse.ml" 355 12991 13028 "odoc_analyse.ml" 355 12991 13034
+)
+"odoc_analyse.ml" 356 13044 13091 "odoc_analyse.ml" 356 13044 13146
+type(
+  Odoc_module.module_type_kind -> Odoc_module.module_type_kind
+)
+ident(
+  int_ref remove_module_elements_between_stop_in_module_type_kind "odoc_analyse.ml" 352 12794 12798 "odoc_analyse.ml" 352 12794 12853
+)
+"odoc_analyse.ml" 356 13044 13147 "odoc_analyse.ml" 356 13044 13150
+type(
+  Odoc_module.module_type_kind
+)
+ident(
+  int_ref tk2 "odoc_analyse.ml" 355 12991 13036 "odoc_analyse.ml" 355 12991 13039
+)
+"odoc_analyse.ml" 356 13044 13091 "odoc_analyse.ml" 356 13044 13150
+call(
+  stack
+)
+type(
+  Odoc_module.module_type_kind
+)
+"odoc_analyse.ml" 356 13044 13050 "odoc_analyse.ml" 356 13044 13151
+type(
+  Odoc_module.module_type_kind
+)
+"odoc_analyse.ml" 357 13152 13186 "odoc_analyse.ml" 357 13152 13187
+type(
+  Odoc_module.module_type_alias
+)
+"odoc_analyse.ml" 357 13152 13156 "odoc_analyse.ml" 357 13152 13187
+type(
+  Odoc_module.module_type_kind
+)
+"odoc_analyse.ml" 357 13152 13191 "odoc_analyse.ml" 357 13152 13193
+type(
+  Odoc_module.module_type_kind
+)
+ident(
+  int_ref tk "odoc_analyse.ml" 352 12794 12854 "odoc_analyse.ml" 352 12794 12856
+)
+"odoc_analyse.ml" 358 13194 13228 "odoc_analyse.ml" 358 13194 13231
+type(
+  Odoc_module.module_type_kind
+)
+ident(
+  def tk2 "odoc_analyse.ml" 359 13239 13245 "odoc_analyse.ml" 359 13239 13338
+)
+"odoc_analyse.ml" 358 13194 13233 "odoc_analyse.ml" 358 13194 13234
+type(
+  string
+)
+ident(
+  def s "odoc_analyse.ml" 359 13239 13245 "odoc_analyse.ml" 359 13239 13338
+)
+"odoc_analyse.ml" 358 13194 13198 "odoc_analyse.ml" 358 13194 13235
+type(
+  Odoc_module.module_type_kind
+)
+"odoc_analyse.ml" 359 13239 13275 "odoc_analyse.ml" 359 13239 13330
+type(
+  Odoc_module.module_type_kind -> Odoc_module.module_type_kind
+)
+ident(
+  int_ref remove_module_elements_between_stop_in_module_type_kind "odoc_analyse.ml" 352 12794 12798 "odoc_analyse.ml" 352 12794 12853
+)
+"odoc_analyse.ml" 359 13239 13331 "odoc_analyse.ml" 359 13239 13334
+type(
+  Odoc_module.module_type_kind
+)
+ident(
+  int_ref tk2 "odoc_analyse.ml" 358 13194 13228 "odoc_analyse.ml" 358 13194 13231
+)
+"odoc_analyse.ml" 359 13239 13275 "odoc_analyse.ml" 359 13239 13334
+call(
+  stack
+)
+type(
+  Odoc_module.module_type_kind
+)
+"odoc_analyse.ml" 359 13239 13336 "odoc_analyse.ml" 359 13239 13337
+type(
+  string
+)
+ident(
+  int_ref s "odoc_analyse.ml" 358 13194 13233 "odoc_analyse.ml" 358 13194 13234
+)
+"odoc_analyse.ml" 359 13239 13245 "odoc_analyse.ml" 359 13239 13338
+type(
+  Odoc_module.module_type_kind
+)
+"odoc_analyse.ml" 360 13339 13374 "odoc_analyse.ml" 360 13339 13375
+type(
+  string
+)
+"odoc_analyse.ml" 360 13339 13343 "odoc_analyse.ml" 360 13339 13375
+type(
+  Odoc_module.module_type_kind
+)
+"odoc_analyse.ml" 360 13339 13379 "odoc_analyse.ml" 360 13339 13381
+type(
+  Odoc_module.module_type_kind
+)
+ident(
+  int_ref tk "odoc_analyse.ml" 352 12794 12854 "odoc_analyse.ml" 352 12794 12856
+)
+"odoc_analyse.ml" 353 12859 12861 "odoc_analyse.ml" 360 13339 13381
+type(
+  Odoc_module.module_type_kind
+)
+"odoc_analyse.ml" 363 13440 13444 "odoc_analyse.ml" 363 13440 13472
+type(
+  Odoc_module.t_module list -> Odoc_module.t_module list
+)
+ident(
+  def remove_elements_between_stop "odoc_analyse.ml" 372 13723 13723 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 363 13440 13473 "odoc_analyse.ml" 363 13440 13484
+type(
+  Odoc_module.t_module list
+)
+ident(
+  def module_list "odoc_analyse.ml" 364 13487 13489 "odoc_analyse.ml" 369 13629 13644
+)
+"odoc_analyse.ml" 364 13487 13489 "odoc_analyse.ml" 364 13487 13497
+type(
+  (Odoc_module.t_module -> Odoc_module.t_module) ->
+  Odoc_module.t_module list -> Odoc_module.t_module list
+)
+ident(
+  ext_ref List.map
+)
+"odoc_analyse.ml" 365 13498 13507 "odoc_analyse.ml" 365 13498 13508
+type(
+  Odoc_module.t_module
+)
+ident(
+  def m "odoc_analyse.ml" 366 13512 13518 "odoc_analyse.ml" 367 13615 13622
+)
+"odoc_analyse.ml" 366 13512 13518 "odoc_analyse.ml" 366 13512 13519
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref m "odoc_analyse.ml" 365 13498 13507 "odoc_analyse.ml" 365 13498 13508
+)
+"odoc_analyse.ml" 366 13512 13542 "odoc_analyse.ml" 366 13512 13592
+type(
+  Odoc_module.module_kind -> Odoc_module.module_kind
+)
+ident(
+  int_ref remove_module_elements_between_stop_in_module_kind "odoc_analyse.ml" 334 11684 11688 "odoc_analyse.ml" 334 11684 11738
+)
+"odoc_analyse.ml" 366 13512 13593 "odoc_analyse.ml" 366 13512 13594
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref m "odoc_analyse.ml" 365 13498 13507 "odoc_analyse.ml" 365 13498 13508
+)
+"odoc_analyse.ml" 366 13512 13593 "odoc_analyse.ml" 366 13512 13613
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 366 13512 13542 "odoc_analyse.ml" 366 13512 13613
+call(
+  stack
+)
+type(
+  Odoc_module.module_kind
+)
+"odoc_analyse.ml" 366 13512 13518 "odoc_analyse.ml" 366 13512 13613
+type(
+  unit
+)
+"odoc_analyse.ml" 367 13615 13621 "odoc_analyse.ml" 367 13615 13622
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref m "odoc_analyse.ml" 365 13498 13507 "odoc_analyse.ml" 365 13498 13508
+)
+"odoc_analyse.ml" 366 13512 13518 "odoc_analyse.ml" 367 13615 13622
+type(
+  Odoc_module.t_module
+)
+"odoc_analyse.ml" 365 13498 13502 "odoc_analyse.ml" 368 13623 13628
+type(
+  Odoc_module.t_module -> Odoc_module.t_module
+)
+"odoc_analyse.ml" 369 13629 13633 "odoc_analyse.ml" 369 13629 13644
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref module_list "odoc_analyse.ml" 363 13440 13473 "odoc_analyse.ml" 363 13440 13484
+)
+"odoc_analyse.ml" 364 13487 13489 "odoc_analyse.ml" 369 13629 13644
+call(
+  tail
+)
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 372 13723 13727 "odoc_analyse.ml" 372 13723 13740
+type(
+  ?init:Odoc_module.t_module list ->
+  Odoc_global.source_file list -> Odoc_module.t_module list
+)
+ident(
+  def analyse_files "odoc_analyse.ml" 438 15274 15274 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 372 13723 13743 "odoc_analyse.ml" 372 13723 13747
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 372 13723 13748 "odoc_analyse.ml" 372 13723 13750
+type(
+  Odoc_module.t_module list
+)
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref *sth* "odoc_analyse.ml" 372 13723 13748 "odoc_analyse.ml" 372 13723 13750
+)
+type(
+  Odoc_module.t_module list option
+)
+type(
+  Odoc_module.t_module list option
+)
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 372 13723 13752 "odoc_analyse.ml" 372 13723 13757
+type(
+  Odoc_global.source_file list
+)
+ident(
+  def files "odoc_analyse.ml" 373 13760 13762 "odoc_analyse.ml" 436 15254 15272
+)
+"odoc_analyse.ml" 373 13760 13766 "odoc_analyse.ml" 373 13760 13777
+type(
+  Odoc_module.t_module list
+)
+ident(
+  def modules_pre "odoc_analyse.ml" 394 14244 14246 "odoc_analyse.ml" 436 15254 15272
+)
+"odoc_analyse.ml" 374 13780 13784 "odoc_analyse.ml" 374 13780 13788
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref init "odoc_analyse.ml" 372 13723 13743 "odoc_analyse.ml" 372 13723 13747
+)
+"odoc_analyse.ml" 374 13780 13789 "odoc_analyse.ml" 374 13780 13790
+type(
+  Odoc_module.t_module list ->
+  Odoc_module.t_module list -> Odoc_module.t_module list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_analyse.ml" 375 13791 13796 "odoc_analyse.ml" 375 13791 13810
+type(
+  (Odoc_module.t_module list ->
+   Odoc_global.source_file -> Odoc_module.t_module list) ->
+  Odoc_module.t_module list ->
+  Odoc_global.source_file list -> Odoc_module.t_module list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_analyse.ml" 376 13811 13823 "odoc_analyse.ml" 376 13811 13826
+type(
+  Odoc_module.t_module list
+)
+ident(
+  def acc "odoc_analyse.ml" 376 13811 13830 "odoc_analyse.ml" 387 14114 14130
+)
+"odoc_analyse.ml" 376 13811 13834 "odoc_analyse.ml" 376 13811 13838
+type(
+  Odoc_global.source_file
+)
+ident(
+  def file "odoc_analyse.ml" 377 13842 13851 "odoc_analyse.ml" 387 14114 14130
+)
+"odoc_analyse.ml" 378 13855 13872 "odoc_analyse.ml" 378 13855 13884
+type(
+  Format.formatter -> Odoc_global.source_file -> Odoc_module.t_module option
+)
+ident(
+  int_ref process_file "odoc_analyse.ml" 118 4364 4368 "odoc_analyse.ml" 118 4364 4380
+)
+"odoc_analyse.ml" 378 13855 13885 "odoc_analyse.ml" 378 13855 13905
+type(
+  Format.formatter
+)
+ident(
+  ext_ref Format.err_formatter
+)
+"odoc_analyse.ml" 378 13855 13906 "odoc_analyse.ml" 378 13855 13910
+type(
+  Odoc_global.source_file
+)
+ident(
+  int_ref file "odoc_analyse.ml" 376 13811 13834 "odoc_analyse.ml" 376 13811 13838
+)
+"odoc_analyse.ml" 378 13855 13872 "odoc_analyse.ml" 378 13855 13910
+call(
+  stack
+)
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 379 13916 13929 "odoc_analyse.ml" 379 13916 13933
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 380 13937 13952 "odoc_analyse.ml" 380 13937 13955
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref acc "odoc_analyse.ml" 376 13811 13823 "odoc_analyse.ml" 376 13811 13826
+)
+"odoc_analyse.ml" 381 13956 13974 "odoc_analyse.ml" 381 13956 13975
+type(
+  Odoc_module.t_module
+)
+ident(
+  def m "odoc_analyse.ml" 382 13979 13994 "odoc_analyse.ml" 382 13979 14005
+)
+"odoc_analyse.ml" 381 13956 13969 "odoc_analyse.ml" 381 13956 13975
+type(
+  Odoc_module.t_module option
+)
+"odoc_analyse.ml" 382 13979 13994 "odoc_analyse.ml" 382 13979 13997
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref acc "odoc_analyse.ml" 376 13811 13823 "odoc_analyse.ml" 376 13811 13826
+)
+"odoc_analyse.ml" 382 13979 13998 "odoc_analyse.ml" 382 13979 13999
+type(
+  Odoc_module.t_module list ->
+  Odoc_module.t_module list -> Odoc_module.t_module list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_analyse.ml" 382 13979 14002 "odoc_analyse.ml" 382 13979 14003
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref m "odoc_analyse.ml" 381 13956 13974 "odoc_analyse.ml" 381 13956 13975
+)
+"odoc_analyse.ml" 382 13979 14000 "odoc_analyse.ml" 382 13979 14005
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 382 13979 13994 "odoc_analyse.ml" 382 13979 14005
+call(
+  stack
+)
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 378 13855 13866 "odoc_analyse.ml" 382 13979 14005
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 384 14020 14039 "odoc_analyse.ml" 384 14020 14040
+type(
+  string
+)
+ident(
+  def s "odoc_analyse.ml" 385 14044 14057 "odoc_analyse.ml" 387 14114 14130
+)
+"odoc_analyse.ml" 384 14020 14031 "odoc_analyse.ml" 384 14020 14040
+type(
+  exn
+)
+"odoc_analyse.ml" 385 14044 14057 "odoc_analyse.ml" 385 14044 14070
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"odoc_analyse.ml" 385 14044 14071 "odoc_analyse.ml" 385 14044 14072
+type(
+  string
+)
+ident(
+  int_ref s "odoc_analyse.ml" 384 14020 14039 "odoc_analyse.ml" 384 14020 14040
+)
+"odoc_analyse.ml" 385 14044 14057 "odoc_analyse.ml" 385 14044 14072
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 386 14075 14088 "odoc_analyse.ml" 386 14075 14092
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_analyse.ml" 386 14075 14093 "odoc_analyse.ml" 386 14075 14111
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc_analyse.ml" 386 14075 14088 "odoc_analyse.ml" 386 14075 14111
+type(
+  unit
+)
+"odoc_analyse.ml" 387 14114 14127 "odoc_analyse.ml" 387 14114 14130
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref acc "odoc_analyse.ml" 376 13811 13823 "odoc_analyse.ml" 376 13811 13826
+)
+"odoc_analyse.ml" 386 14075 14088 "odoc_analyse.ml" 387 14114 14130
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 385 14044 14057 "odoc_analyse.ml" 387 14114 14130
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 377 13842 13851 "odoc_analyse.ml" 387 14114 14130
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 376 13811 13830 "odoc_analyse.ml" 387 14114 14130
+type(
+  Odoc_global.source_file -> Odoc_module.t_module list
+)
+"odoc_analyse.ml" 376 13811 13818 "odoc_analyse.ml" 388 14131 14139
+type(
+  Odoc_module.t_module list ->
+  Odoc_global.source_file -> Odoc_module.t_module list
+)
+"odoc_analyse.ml" 389 14140 14147 "odoc_analyse.ml" 389 14140 14149
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 390 14150 14157 "odoc_analyse.ml" 390 14150 14162
+type(
+  Odoc_global.source_file list
+)
+ident(
+  int_ref files "odoc_analyse.ml" 372 13723 13752 "odoc_analyse.ml" 372 13723 13757
+)
+"odoc_analyse.ml" 375 13791 13795 "odoc_analyse.ml" 391 14163 14168
+call(
+  stack
+)
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 374 13780 13784 "odoc_analyse.ml" 391 14163 14168
+call(
+  stack
+)
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 394 14244 14250 "odoc_analyse.ml" 394 14244 14257
+type(
+  Odoc_module.t_module list
+)
+ident(
+  def modules "odoc_analyse.ml" 402 14374 14376 "odoc_analyse.ml" 436 15254 15272
+)
+"odoc_analyse.ml" 395 14260 14267 "odoc_analyse.ml" 395 14260 14268
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_analyse.ml" 395 14260 14268 "odoc_analyse.ml" 395 14260 14287
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.no_stop
+)
+"odoc_analyse.ml" 395 14260 14267 "odoc_analyse.ml" 395 14260 14287
+type(
+  bool
+)
+"odoc_analyse.ml" 396 14293 14299 "odoc_analyse.ml" 396 14293 14310
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref modules_pre "odoc_analyse.ml" 373 13760 13766 "odoc_analyse.ml" 373 13760 13777
+)
+"odoc_analyse.ml" 398 14320 14326 "odoc_analyse.ml" 398 14320 14354
+type(
+  Odoc_module.t_module list -> Odoc_module.t_module list
+)
+ident(
+  int_ref remove_elements_between_stop "odoc_analyse.ml" 363 13440 13444 "odoc_analyse.ml" 363 13440 13472
+)
+"odoc_analyse.ml" 398 14320 14355 "odoc_analyse.ml" 398 14320 14366
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref modules_pre "odoc_analyse.ml" 373 13760 13766 "odoc_analyse.ml" 373 13760 13777
+)
+"odoc_analyse.ml" 398 14320 14326 "odoc_analyse.ml" 398 14320 14366
+call(
+  stack
+)
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 395 14260 14264 "odoc_analyse.ml" 398 14320 14366
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 402 14374 14379 "odoc_analyse.ml" 402 14374 14380
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_analyse.ml" 402 14374 14380 "odoc_analyse.ml" 402 14374 14399
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.verbose
+)
+"odoc_analyse.ml" 402 14374 14379 "odoc_analyse.ml" 402 14374 14399
+type(
+  bool
+)
+"odoc_analyse.ml" 404 14411 14416 "odoc_analyse.ml" 404 14411 14428
+type(
+  string -> unit
+)
+ident(
+  ext_ref Format.print_string
+)
+"odoc_analyse.ml" 404 14411 14429 "odoc_analyse.ml" 404 14411 14450
+type(
+  string
+)
+ident(
+  ext_ref Odoc_messages.merging
+)
+"odoc_analyse.ml" 404 14411 14416 "odoc_analyse.ml" 404 14411 14450
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 405 14452 14457 "odoc_analyse.ml" 405 14452 14470
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Format.print_newline
+)
+"odoc_analyse.ml" 405 14452 14471 "odoc_analyse.ml" 405 14452 14473
+type(
+  unit
+)
+"odoc_analyse.ml" 405 14452 14457 "odoc_analyse.ml" 405 14452 14473
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 403 14405 14409 "odoc_analyse.ml" 406 14474 14479
+type(
+  unit
+)
+"odoc_analyse.ml" 402 14374 14376 "odoc_analyse.ml" 406 14474 14479
+type(
+  unit
+)
+"odoc_analyse.ml" 407 14481 14487 "odoc_analyse.ml" 407 14481 14501
+type(
+  Odoc_module.t_module list
+)
+ident(
+  def merged_modules "odoc_analyse.ml" 408 14559 14561 "odoc_analyse.ml" 436 15254 15272
+)
+"odoc_analyse.ml" 407 14481 14504 "odoc_analyse.ml" 407 14481 14520
+type(
+  Odoc_types.merge_option list ->
+  Odoc_module.t_module list -> Odoc_module.t_module list
+)
+ident(
+  ext_ref Odoc_merge.merge
+)
+"odoc_analyse.ml" 407 14481 14521 "odoc_analyse.ml" 407 14481 14522
+type(
+  Odoc_types.merge_option list ref -> Odoc_types.merge_option list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_analyse.ml" 407 14481 14522 "odoc_analyse.ml" 407 14481 14547
+type(
+  Odoc_types.merge_option list ref
+)
+ident(
+  ext_ref Odoc_global.merge_options
+)
+"odoc_analyse.ml" 407 14481 14521 "odoc_analyse.ml" 407 14481 14547
+type(
+  Odoc_types.merge_option list
+)
+"odoc_analyse.ml" 407 14481 14548 "odoc_analyse.ml" 407 14481 14555
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref modules "odoc_analyse.ml" 394 14244 14250 "odoc_analyse.ml" 394 14244 14257
+)
+"odoc_analyse.ml" 407 14481 14504 "odoc_analyse.ml" 407 14481 14555
+call(
+  stack
+)
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 408 14559 14564 "odoc_analyse.ml" 408 14559 14565
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_analyse.ml" 408 14559 14565 "odoc_analyse.ml" 408 14559 14584
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.verbose
+)
+"odoc_analyse.ml" 408 14559 14564 "odoc_analyse.ml" 408 14559 14584
+type(
+  bool
+)
+"odoc_analyse.ml" 410 14596 14601 "odoc_analyse.ml" 410 14596 14613
+type(
+  string -> unit
+)
+ident(
+  ext_ref Format.print_string
+)
+"odoc_analyse.ml" 410 14596 14614 "odoc_analyse.ml" 410 14596 14630
+type(
+  string
+)
+ident(
+  ext_ref Odoc_messages.ok
+)
+"odoc_analyse.ml" 410 14596 14601 "odoc_analyse.ml" 410 14596 14630
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 411 14632 14637 "odoc_analyse.ml" 411 14632 14650
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Format.print_newline
+)
+"odoc_analyse.ml" 411 14632 14651 "odoc_analyse.ml" 411 14632 14653
+type(
+  unit
+)
+"odoc_analyse.ml" 411 14632 14637 "odoc_analyse.ml" 411 14632 14654
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 409 14590 14594 "odoc_analyse.ml" 412 14655 14660
+type(
+  unit
+)
+"odoc_analyse.ml" 408 14559 14561 "odoc_analyse.ml" 412 14655 14660
+type(
+  unit
+)
+"odoc_analyse.ml" 413 14662 14668 "odoc_analyse.ml" 413 14662 14680
+type(
+  Odoc_module.t_module list
+)
+ident(
+  def modules_list "odoc_analyse.ml" 420 14845 14847 "odoc_analyse.ml" 436 15254 15272
+)
+"odoc_analyse.ml" 414 14683 14688 "odoc_analyse.ml" 414 14683 14702
+type(
+  (Odoc_module.t_module list ->
+   Odoc_module.t_module -> Odoc_module.t_module list) ->
+  Odoc_module.t_module list ->
+  Odoc_module.t_module list -> Odoc_module.t_module list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_analyse.ml" 415 14703 14715 "odoc_analyse.ml" 415 14703 14718
+type(
+  Odoc_module.t_module list
+)
+ident(
+  def acc "odoc_analyse.ml" 415 14703 14722 "odoc_analyse.ml" 415 14703 14788
+)
+"odoc_analyse.ml" 415 14703 14726 "odoc_analyse.ml" 415 14703 14727
+type(
+  Odoc_module.t_module
+)
+ident(
+  def m "odoc_analyse.ml" 415 14703 14731 "odoc_analyse.ml" 415 14703 14788
+)
+"odoc_analyse.ml" 415 14703 14731 "odoc_analyse.ml" 415 14703 14734
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref acc "odoc_analyse.ml" 415 14703 14715 "odoc_analyse.ml" 415 14703 14718
+)
+"odoc_analyse.ml" 415 14703 14735 "odoc_analyse.ml" 415 14703 14736
+type(
+  Odoc_module.t_module list ->
+  Odoc_module.t_module list -> Odoc_module.t_module list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_analyse.ml" 415 14703 14738 "odoc_analyse.ml" 415 14703 14771
+type(
+  ?trans:bool -> Odoc_module.t_module -> Odoc_module.t_module list
+)
+ident(
+  ext_ref Odoc_module.module_all_submodules
+)
+"odoc_analyse.ml" 415 14703 14780 "odoc_analyse.ml" 415 14703 14785
+type(
+  bool
+)
+"odoc_analyse.ml" 415 14703 14786 "odoc_analyse.ml" 415 14703 14787
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref m "odoc_analyse.ml" 415 14703 14726 "odoc_analyse.ml" 415 14703 14727
+)
+"odoc_analyse.ml" 415 14703 14737 "odoc_analyse.ml" 415 14703 14788
+call(
+  stack
+)
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 415 14703 14731 "odoc_analyse.ml" 415 14703 14788
+call(
+  tail
+)
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 415 14703 14722 "odoc_analyse.ml" 415 14703 14788
+type(
+  Odoc_module.t_module -> Odoc_module.t_module list
+)
+"odoc_analyse.ml" 415 14703 14710 "odoc_analyse.ml" 415 14703 14789
+type(
+  Odoc_module.t_module list ->
+  Odoc_module.t_module -> Odoc_module.t_module list
+)
+"odoc_analyse.ml" 416 14790 14797 "odoc_analyse.ml" 416 14790 14811
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref merged_modules "odoc_analyse.ml" 407 14481 14487 "odoc_analyse.ml" 407 14481 14501
+)
+"odoc_analyse.ml" 417 14812 14819 "odoc_analyse.ml" 417 14812 14833
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref merged_modules "odoc_analyse.ml" 407 14481 14487 "odoc_analyse.ml" 407 14481 14501
+)
+"odoc_analyse.ml" 414 14683 14687 "odoc_analyse.ml" 418 14834 14839
+call(
+  stack
+)
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 420 14845 14850 "odoc_analyse.ml" 420 14845 14851
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_analyse.ml" 420 14845 14851 "odoc_analyse.ml" 420 14845 14870
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.verbose
+)
+"odoc_analyse.ml" 420 14845 14850 "odoc_analyse.ml" 420 14845 14870
+type(
+  bool
+)
+"odoc_analyse.ml" 422 14882 14887 "odoc_analyse.ml" 422 14882 14899
+type(
+  string -> unit
+)
+ident(
+  ext_ref Format.print_string
+)
+"odoc_analyse.ml" 422 14882 14900 "odoc_analyse.ml" 422 14882 14931
+type(
+  string
+)
+ident(
+  ext_ref Odoc_messages.cross_referencing
+)
+"odoc_analyse.ml" 422 14882 14887 "odoc_analyse.ml" 422 14882 14931
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 423 14933 14938 "odoc_analyse.ml" 423 14933 14951
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Format.print_newline
+)
+"odoc_analyse.ml" 423 14933 14952 "odoc_analyse.ml" 423 14933 14954
+type(
+  unit
+)
+"odoc_analyse.ml" 423 14933 14938 "odoc_analyse.ml" 423 14933 14954
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 421 14876 14880 "odoc_analyse.ml" 424 14955 14960
+type(
+  unit
+)
+"odoc_analyse.ml" 420 14845 14847 "odoc_analyse.ml" 424 14955 14960
+type(
+  unit
+)
+"odoc_analyse.ml" 425 14962 14968 "odoc_analyse.ml" 425 14962 14969
+type(
+  unit
+)
+"odoc_analyse.ml" 425 14962 14972 "odoc_analyse.ml" 425 14962 14992
+type(
+  Odoc_module.t_module list -> unit
+)
+ident(
+  ext_ref Odoc_cross.associate
+)
+"odoc_analyse.ml" 425 14962 14993 "odoc_analyse.ml" 425 14962 15005
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref modules_list "odoc_analyse.ml" 413 14662 14668 "odoc_analyse.ml" 413 14662 14680
+)
+"odoc_analyse.ml" 425 14962 14972 "odoc_analyse.ml" 425 14962 15005
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 427 15010 15015 "odoc_analyse.ml" 427 15010 15016
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_analyse.ml" 427 15010 15016 "odoc_analyse.ml" 427 15010 15035
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.verbose
+)
+"odoc_analyse.ml" 427 15010 15015 "odoc_analyse.ml" 427 15010 15035
+type(
+  bool
+)
+"odoc_analyse.ml" 429 15047 15052 "odoc_analyse.ml" 429 15047 15064
+type(
+  string -> unit
+)
+ident(
+  ext_ref Format.print_string
+)
+"odoc_analyse.ml" 429 15047 15065 "odoc_analyse.ml" 429 15047 15081
+type(
+  string
+)
+ident(
+  ext_ref Odoc_messages.ok
+)
+"odoc_analyse.ml" 429 15047 15052 "odoc_analyse.ml" 429 15047 15081
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 430 15083 15088 "odoc_analyse.ml" 430 15083 15101
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Format.print_newline
+)
+"odoc_analyse.ml" 430 15083 15102 "odoc_analyse.ml" 430 15083 15104
+type(
+  unit
+)
+"odoc_analyse.ml" 430 15083 15088 "odoc_analyse.ml" 430 15083 15105
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 428 15041 15045 "odoc_analyse.ml" 431 15106 15111
+type(
+  unit
+)
+"odoc_analyse.ml" 427 15010 15012 "odoc_analyse.ml" 431 15106 15111
+type(
+  unit
+)
+"odoc_analyse.ml" 433 15114 15119 "odoc_analyse.ml" 433 15114 15120
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_analyse.ml" 433 15114 15120 "odoc_analyse.ml" 433 15114 15144
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.sort_modules
+)
+"odoc_analyse.ml" 433 15114 15119 "odoc_analyse.ml" 433 15114 15144
+type(
+  bool
+)
+"odoc_analyse.ml" 434 15150 15154 "odoc_analyse.ml" 434 15150 15163
+type(
+  (Odoc_module.t_module -> Odoc_module.t_module -> bool) ->
+  Odoc_module.t_module list -> Odoc_module.t_module list
+)
+ident(
+  ext_ref Sort.list
+)
+"odoc_analyse.ml" 434 15150 15169 "odoc_analyse.ml" 434 15150 15171
+type(
+  Odoc_module.t_module
+)
+ident(
+  def m1 "odoc_analyse.ml" 434 15150 15175 "odoc_analyse.ml" 434 15150 15230
+)
+"odoc_analyse.ml" 434 15150 15179 "odoc_analyse.ml" 434 15150 15181
+type(
+  Odoc_module.t_module
+)
+ident(
+  def m2 "odoc_analyse.ml" 434 15150 15185 "odoc_analyse.ml" 434 15150 15230
+)
+"odoc_analyse.ml" 434 15150 15185 "odoc_analyse.ml" 434 15150 15187
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref m1 "odoc_analyse.ml" 434 15150 15169 "odoc_analyse.ml" 434 15150 15171
+)
+"odoc_analyse.ml" 434 15150 15185 "odoc_analyse.ml" 434 15150 15206
+type(
+  Odoc_module.Name.t
+)
+"odoc_analyse.ml" 434 15150 15207 "odoc_analyse.ml" 434 15150 15208
+type(
+  Odoc_module.Name.t -> Odoc_module.Name.t -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"odoc_analyse.ml" 434 15150 15209 "odoc_analyse.ml" 434 15150 15211
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref m2 "odoc_analyse.ml" 434 15150 15179 "odoc_analyse.ml" 434 15150 15181
+)
+"odoc_analyse.ml" 434 15150 15209 "odoc_analyse.ml" 434 15150 15230
+type(
+  Odoc_module.Name.t
+)
+"odoc_analyse.ml" 434 15150 15185 "odoc_analyse.ml" 434 15150 15230
+type(
+  bool
+)
+"odoc_analyse.ml" 434 15150 15175 "odoc_analyse.ml" 434 15150 15230
+type(
+  Odoc_module.t_module -> bool
+)
+"odoc_analyse.ml" 434 15150 15164 "odoc_analyse.ml" 434 15150 15231
+type(
+  Odoc_module.t_module -> Odoc_module.t_module -> bool
+)
+"odoc_analyse.ml" 434 15150 15232 "odoc_analyse.ml" 434 15150 15246
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref merged_modules "odoc_analyse.ml" 407 14481 14487 "odoc_analyse.ml" 407 14481 14501
+)
+"odoc_analyse.ml" 434 15150 15154 "odoc_analyse.ml" 434 15150 15246
+call(
+  tail
+)
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 436 15254 15258 "odoc_analyse.ml" 436 15254 15272
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref merged_modules "odoc_analyse.ml" 407 14481 14487 "odoc_analyse.ml" 407 14481 14501
+)
+"odoc_analyse.ml" 433 15114 15116 "odoc_analyse.ml" 436 15254 15272
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 427 15010 15012 "odoc_analyse.ml" 436 15254 15272
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 425 14962 14964 "odoc_analyse.ml" 436 15254 15272
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 420 14845 14847 "odoc_analyse.ml" 436 15254 15272
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 413 14662 14664 "odoc_analyse.ml" 436 15254 15272
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 408 14559 14561 "odoc_analyse.ml" 436 15254 15272
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 407 14481 14483 "odoc_analyse.ml" 436 15254 15272
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 402 14374 14376 "odoc_analyse.ml" 436 15254 15272
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 394 14244 14246 "odoc_analyse.ml" 436 15254 15272
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 373 13760 13762 "odoc_analyse.ml" 436 15254 15272
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 438 15274 15278 "odoc_analyse.ml" 438 15274 15290
+type(
+  string -> Odoc_module.t_module list -> unit
+)
+ident(
+  def dump_modules "odoc_analyse.ml" 448 15532 15532 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 438 15274 15291 "odoc_analyse.ml" 438 15274 15295
+type(
+  string
+)
+ident(
+  def file "odoc_analyse.ml" 438 15274 15296 "odoc_analyse.ml" 446 15507 15530
+)
+"odoc_analyse.ml" 438 15274 15297 "odoc_analyse.ml" 438 15274 15304
+type(
+  Odoc_module.t_module list
+)
+ident(
+  def modules "odoc_analyse.ml" 439 15336 15338 "odoc_analyse.ml" 446 15507 15530
+)
+"odoc_analyse.ml" 440 15342 15350 "odoc_analyse.ml" 440 15342 15357
+type(
+  out_channel
+)
+ident(
+  def chanout "odoc_analyse.ml" 441 15381 15385 "odoc_analyse.ml" 443 15459 15480
+)
+"odoc_analyse.ml" 440 15342 15360 "odoc_analyse.ml" 440 15342 15372
+type(
+  string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out_bin
+)
+"odoc_analyse.ml" 440 15342 15373 "odoc_analyse.ml" 440 15342 15377
+type(
+  string
+)
+ident(
+  int_ref file "odoc_analyse.ml" 438 15274 15291 "odoc_analyse.ml" 438 15274 15295
+)
+"odoc_analyse.ml" 440 15342 15360 "odoc_analyse.ml" 440 15342 15377
+call(
+  stack
+)
+type(
+  out_channel
+)
+"odoc_analyse.ml" 441 15381 15389 "odoc_analyse.ml" 441 15381 15393
+type(
+  Odoc_module.t_module list Odoc_types.dump
+)
+ident(
+  def dump "odoc_analyse.ml" 442 15428 15432 "odoc_analyse.ml" 443 15459 15480
+)
+"odoc_analyse.ml" 441 15381 15396 "odoc_analyse.ml" 441 15381 15416
+type(
+  Odoc_module.t_module list -> Odoc_module.t_module list Odoc_types.dump
+)
+ident(
+  ext_ref Odoc_types.make_dump
+)
+"odoc_analyse.ml" 441 15381 15417 "odoc_analyse.ml" 441 15381 15424
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref modules "odoc_analyse.ml" 438 15274 15297 "odoc_analyse.ml" 438 15274 15304
+)
+"odoc_analyse.ml" 441 15381 15396 "odoc_analyse.ml" 441 15381 15424
+call(
+  stack
+)
+type(
+  Odoc_module.t_module list Odoc_types.dump
+)
+"odoc_analyse.ml" 442 15428 15432 "odoc_analyse.ml" 442 15428 15444
+type(
+  out_channel -> Odoc_module.t_module list Odoc_types.dump -> unit
+)
+ident(
+  ext_ref Pervasives.output_value
+)
+"odoc_analyse.ml" 442 15428 15445 "odoc_analyse.ml" 442 15428 15452
+type(
+  out_channel
+)
+ident(
+  int_ref chanout "odoc_analyse.ml" 440 15342 15350 "odoc_analyse.ml" 440 15342 15357
+)
+"odoc_analyse.ml" 442 15428 15453 "odoc_analyse.ml" 442 15428 15457
+type(
+  Odoc_module.t_module list Odoc_types.dump
+)
+ident(
+  int_ref dump "odoc_analyse.ml" 441 15381 15389 "odoc_analyse.ml" 441 15381 15393
+)
+"odoc_analyse.ml" 442 15428 15432 "odoc_analyse.ml" 442 15428 15457
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 443 15459 15463 "odoc_analyse.ml" 443 15459 15472
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"odoc_analyse.ml" 443 15459 15473 "odoc_analyse.ml" 443 15459 15480
+type(
+  out_channel
+)
+ident(
+  int_ref chanout "odoc_analyse.ml" 440 15342 15350 "odoc_analyse.ml" 440 15342 15357
+)
+"odoc_analyse.ml" 443 15459 15463 "odoc_analyse.ml" 443 15459 15480
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 442 15428 15432 "odoc_analyse.ml" 443 15459 15480
+type(
+  unit
+)
+"odoc_analyse.ml" 441 15381 15385 "odoc_analyse.ml" 443 15459 15480
+type(
+  unit
+)
+"odoc_analyse.ml" 440 15342 15346 "odoc_analyse.ml" 443 15459 15480
+type(
+  unit
+)
+"odoc_analyse.ml" 445 15488 15502 "odoc_analyse.ml" 445 15488 15503
+type(
+  string
+)
+ident(
+  def s "odoc_analyse.ml" 446 15507 15513 "odoc_analyse.ml" 446 15507 15530
+)
+"odoc_analyse.ml" 445 15488 15492 "odoc_analyse.ml" 445 15488 15503
+type(
+  exn
+)
+"odoc_analyse.ml" 446 15507 15513 "odoc_analyse.ml" 446 15507 15518
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"odoc_analyse.ml" 446 15507 15528 "odoc_analyse.ml" 446 15507 15529
+type(
+  string
+)
+ident(
+  int_ref s "odoc_analyse.ml" 445 15488 15502 "odoc_analyse.ml" 445 15488 15503
+)
+"odoc_analyse.ml" 446 15507 15519 "odoc_analyse.ml" 446 15507 15530
+type(
+  exn
+)
+"odoc_analyse.ml" 446 15507 15513 "odoc_analyse.ml" 446 15507 15530
+type(
+  unit
+)
+"odoc_analyse.ml" 439 15336 15338 "odoc_analyse.ml" 446 15507 15530
+type(
+  unit
+)
+"odoc_analyse.ml" 448 15532 15536 "odoc_analyse.ml" 448 15532 15548
+type(
+  string -> Odoc_module.t_module list
+)
+ident(
+  def load_modules "odoc_analyse.ml" 457 15761 15784 "odoc_analyse.ml" 1 0 -1
+)
+"odoc_analyse.ml" 448 15532 15549 "odoc_analyse.ml" 448 15532 15553
+type(
+  string
+)
+ident(
+  def file "odoc_analyse.ml" 449 15556 15558 "odoc_analyse.ml" 457 15761 15784
+)
+"odoc_analyse.ml" 450 15562 15570 "odoc_analyse.ml" 450 15562 15576
+type(
+  in_channel
+)
+ident(
+  def chanin "odoc_analyse.ml" 451 15599 15603 "odoc_analyse.ml" 454 15729 15734
+)
+"odoc_analyse.ml" 450 15562 15579 "odoc_analyse.ml" 450 15562 15590
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in_bin
+)
+"odoc_analyse.ml" 450 15562 15591 "odoc_analyse.ml" 450 15562 15595
+type(
+  string
+)
+ident(
+  int_ref file "odoc_analyse.ml" 448 15532 15549 "odoc_analyse.ml" 448 15532 15553
+)
+"odoc_analyse.ml" 450 15562 15579 "odoc_analyse.ml" 450 15562 15595
+call(
+  stack
+)
+type(
+  in_channel
+)
+"odoc_analyse.ml" 451 15599 15607 "odoc_analyse.ml" 451 15599 15611
+type(
+  'a
+)
+ident(
+  def dump "odoc_analyse.ml" 452 15636 15640 "odoc_analyse.ml" 454 15729 15734
+)
+"odoc_analyse.ml" 451 15599 15614 "odoc_analyse.ml" 451 15599 15625
+type(
+  in_channel -> 'a
+)
+ident(
+  ext_ref Pervasives.input_value
+)
+"odoc_analyse.ml" 451 15599 15626 "odoc_analyse.ml" 451 15599 15632
+type(
+  in_channel
+)
+ident(
+  int_ref chanin "odoc_analyse.ml" 450 15562 15570 "odoc_analyse.ml" 450 15562 15576
+)
+"odoc_analyse.ml" 451 15599 15614 "odoc_analyse.ml" 451 15599 15632
+call(
+  stack
+)
+type(
+  'a
+)
+"odoc_analyse.ml" 452 15636 15640 "odoc_analyse.ml" 452 15636 15648
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in
+)
+"odoc_analyse.ml" 452 15636 15649 "odoc_analyse.ml" 452 15636 15655
+type(
+  in_channel
+)
+ident(
+  int_ref chanin "odoc_analyse.ml" 450 15562 15570 "odoc_analyse.ml" 450 15562 15576
+)
+"odoc_analyse.ml" 452 15636 15640 "odoc_analyse.ml" 452 15636 15655
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_analyse.ml" 453 15658 15667 "odoc_analyse.ml" 453 15658 15668
+type(
+  Odoc_module.t_module list
+)
+ident(
+  def l "odoc_analyse.ml" 454 15729 15733 "odoc_analyse.ml" 454 15729 15734
+)
+"odoc_analyse.ml" 453 15658 15700 "odoc_analyse.ml" 453 15658 15720
+type(
+  Odoc_module.t_module list Odoc_types.dump -> Odoc_module.t_module list
+)
+ident(
+  ext_ref Odoc_types.open_dump
+)
+"odoc_analyse.ml" 453 15658 15721 "odoc_analyse.ml" 453 15658 15725
+type(
+  Odoc_module.t_module list Odoc_types.dump
+)
+ident(
+  int_ref dump "odoc_analyse.ml" 451 15599 15607 "odoc_analyse.ml" 451 15599 15611
+)
+"odoc_analyse.ml" 453 15658 15700 "odoc_analyse.ml" 453 15658 15725
+call(
+  stack
+)
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 454 15729 15733 "odoc_analyse.ml" 454 15729 15734
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref l "odoc_analyse.ml" 453 15658 15667 "odoc_analyse.ml" 453 15658 15668
+)
+"odoc_analyse.ml" 453 15658 15662 "odoc_analyse.ml" 454 15729 15734
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 452 15636 15640 "odoc_analyse.ml" 454 15729 15734
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 451 15599 15603 "odoc_analyse.ml" 454 15729 15734
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 450 15562 15566 "odoc_analyse.ml" 454 15729 15734
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 456 15742 15756 "odoc_analyse.ml" 456 15742 15757
+type(
+  string
+)
+ident(
+  def s "odoc_analyse.ml" 457 15761 15767 "odoc_analyse.ml" 457 15761 15784
+)
+"odoc_analyse.ml" 456 15742 15746 "odoc_analyse.ml" 456 15742 15757
+type(
+  exn
+)
+"odoc_analyse.ml" 457 15761 15767 "odoc_analyse.ml" 457 15761 15772
+type(
+  exn -> Odoc_module.t_module list
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"odoc_analyse.ml" 457 15761 15782 "odoc_analyse.ml" 457 15761 15783
+type(
+  string
+)
+ident(
+  int_ref s "odoc_analyse.ml" 456 15742 15756 "odoc_analyse.ml" 456 15742 15757
+)
+"odoc_analyse.ml" 457 15761 15773 "odoc_analyse.ml" 457 15761 15784
+type(
+  exn
+)
+"odoc_analyse.ml" 457 15761 15767 "odoc_analyse.ml" 457 15761 15784
+type(
+  Odoc_module.t_module list
+)
+"odoc_analyse.ml" 449 15556 15558 "odoc_analyse.ml" 457 15761 15784
+type(
+  Odoc_module.t_module list
+)

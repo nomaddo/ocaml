@@ -1,0 +1,6457 @@
+"odoc_module.ml" 110 4930 4934 "odoc_module.ml" 110 4930 4940
+type(
+  module_element list -> Odoc_value.t_value list
+)
+ident(
+  def values "odoc_module.ml" 121 5148 5148 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 110 4930 4941 "odoc_module.ml" 110 4930 4942
+type(
+  module_element list
+)
+ident(
+  def l "odoc_module.ml" 111 4945 4947 "odoc_module.ml" 118 5077 5082
+)
+"odoc_module.ml" 111 4945 4947 "odoc_module.ml" 111 4945 4961
+type(
+  (Odoc_value.t_value list -> module_element -> Odoc_value.t_value list) ->
+  Odoc_value.t_value list -> module_element list -> Odoc_value.t_value list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_module.ml" 112 4962 4971 "odoc_module.ml" 112 4962 4974
+type(
+  Odoc_value.t_value list
+)
+ident(
+  def acc "odoc_module.ml" 112 4962 4978 "odoc_module.ml" 115 5047 5063
+)
+"odoc_module.ml" 112 4962 4982 "odoc_module.ml" 112 4962 4985
+type(
+  module_element
+)
+ident(
+  def ele "odoc_module.ml" 113 4989 4995 "odoc_module.ml" 115 5047 5063
+)
+"odoc_module.ml" 113 4989 5001 "odoc_module.ml" 113 4989 5004
+type(
+  module_element
+)
+ident(
+  int_ref ele "odoc_module.ml" 112 4962 4982 "odoc_module.ml" 112 4962 4985
+)
+"odoc_module.ml" 114 5010 5032 "odoc_module.ml" 114 5010 5033
+type(
+  Odoc_value.t_value
+)
+ident(
+  def v "odoc_module.ml" 114 5010 5037 "odoc_module.ml" 114 5010 5046
+)
+"odoc_module.ml" 114 5010 5018 "odoc_module.ml" 114 5010 5033
+type(
+  module_element
+)
+"odoc_module.ml" 114 5010 5037 "odoc_module.ml" 114 5010 5040
+type(
+  Odoc_value.t_value list
+)
+ident(
+  int_ref acc "odoc_module.ml" 112 4962 4971 "odoc_module.ml" 112 4962 4974
+)
+"odoc_module.ml" 114 5010 5041 "odoc_module.ml" 114 5010 5042
+type(
+  Odoc_value.t_value list ->
+  Odoc_value.t_value list -> Odoc_value.t_value list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_module.ml" 114 5010 5044 "odoc_module.ml" 114 5010 5045
+type(
+  Odoc_value.t_value
+)
+ident(
+  int_ref v "odoc_module.ml" 114 5010 5032 "odoc_module.ml" 114 5010 5033
+)
+"odoc_module.ml" 114 5010 5043 "odoc_module.ml" 114 5010 5046
+type(
+  Odoc_value.t_value list
+)
+"odoc_module.ml" 114 5010 5037 "odoc_module.ml" 114 5010 5046
+call(
+  tail
+)
+type(
+  Odoc_value.t_value list
+)
+"odoc_module.ml" 115 5047 5055 "odoc_module.ml" 115 5047 5056
+type(
+  module_element
+)
+"odoc_module.ml" 115 5047 5060 "odoc_module.ml" 115 5047 5063
+type(
+  Odoc_value.t_value list
+)
+ident(
+  int_ref acc "odoc_module.ml" 112 4962 4971 "odoc_module.ml" 112 4962 4974
+)
+"odoc_module.ml" 113 4989 4995 "odoc_module.ml" 115 5047 5063
+type(
+  Odoc_value.t_value list
+)
+"odoc_module.ml" 112 4962 4978 "odoc_module.ml" 115 5047 5063
+type(
+  module_element -> Odoc_value.t_value list
+)
+"odoc_module.ml" 112 4962 4966 "odoc_module.ml" 116 5064 5069
+type(
+  Odoc_value.t_value list -> module_element -> Odoc_value.t_value list
+)
+"odoc_module.ml" 117 5070 5074 "odoc_module.ml" 117 5070 5076
+type(
+  Odoc_value.t_value list
+)
+"odoc_module.ml" 118 5077 5081 "odoc_module.ml" 118 5077 5082
+type(
+  module_element list
+)
+ident(
+  int_ref l "odoc_module.ml" 110 4930 4941 "odoc_module.ml" 110 4930 4942
+)
+"odoc_module.ml" 111 4945 4947 "odoc_module.ml" 118 5077 5082
+call(
+  tail
+)
+type(
+  Odoc_value.t_value list
+)
+"odoc_module.ml" 121 5148 5152 "odoc_module.ml" 121 5148 5157
+type(
+  module_element list -> Odoc_type.t_type list
+)
+ident(
+  def types "odoc_module.ml" 132 5374 5374 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 121 5148 5158 "odoc_module.ml" 121 5148 5159
+type(
+  module_element list
+)
+ident(
+  def l "odoc_module.ml" 122 5162 5164 "odoc_module.ml" 129 5293 5298
+)
+"odoc_module.ml" 122 5162 5164 "odoc_module.ml" 122 5162 5178
+type(
+  (Odoc_type.t_type list -> module_element -> Odoc_type.t_type list) ->
+  Odoc_type.t_type list -> module_element list -> Odoc_type.t_type list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_module.ml" 123 5179 5188 "odoc_module.ml" 123 5179 5191
+type(
+  Odoc_type.t_type list
+)
+ident(
+  def acc "odoc_module.ml" 123 5179 5195 "odoc_module.ml" 126 5263 5279
+)
+"odoc_module.ml" 123 5179 5199 "odoc_module.ml" 123 5179 5202
+type(
+  module_element
+)
+ident(
+  def ele "odoc_module.ml" 124 5206 5212 "odoc_module.ml" 126 5263 5279
+)
+"odoc_module.ml" 124 5206 5218 "odoc_module.ml" 124 5206 5221
+type(
+  module_element
+)
+ident(
+  int_ref ele "odoc_module.ml" 123 5179 5199 "odoc_module.ml" 123 5179 5202
+)
+"odoc_module.ml" 125 5227 5248 "odoc_module.ml" 125 5227 5249
+type(
+  Odoc_type.t_type
+)
+ident(
+  def t "odoc_module.ml" 125 5227 5253 "odoc_module.ml" 125 5227 5262
+)
+"odoc_module.ml" 125 5227 5235 "odoc_module.ml" 125 5227 5249
+type(
+  module_element
+)
+"odoc_module.ml" 125 5227 5253 "odoc_module.ml" 125 5227 5256
+type(
+  Odoc_type.t_type list
+)
+ident(
+  int_ref acc "odoc_module.ml" 123 5179 5188 "odoc_module.ml" 123 5179 5191
+)
+"odoc_module.ml" 125 5227 5257 "odoc_module.ml" 125 5227 5258
+type(
+  Odoc_type.t_type list -> Odoc_type.t_type list -> Odoc_type.t_type list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_module.ml" 125 5227 5260 "odoc_module.ml" 125 5227 5261
+type(
+  Odoc_type.t_type
+)
+ident(
+  int_ref t "odoc_module.ml" 125 5227 5248 "odoc_module.ml" 125 5227 5249
+)
+"odoc_module.ml" 125 5227 5259 "odoc_module.ml" 125 5227 5262
+type(
+  Odoc_type.t_type list
+)
+"odoc_module.ml" 125 5227 5253 "odoc_module.ml" 125 5227 5262
+call(
+  tail
+)
+type(
+  Odoc_type.t_type list
+)
+"odoc_module.ml" 126 5263 5271 "odoc_module.ml" 126 5263 5272
+type(
+  module_element
+)
+"odoc_module.ml" 126 5263 5276 "odoc_module.ml" 126 5263 5279
+type(
+  Odoc_type.t_type list
+)
+ident(
+  int_ref acc "odoc_module.ml" 123 5179 5188 "odoc_module.ml" 123 5179 5191
+)
+"odoc_module.ml" 124 5206 5212 "odoc_module.ml" 126 5263 5279
+type(
+  Odoc_type.t_type list
+)
+"odoc_module.ml" 123 5179 5195 "odoc_module.ml" 126 5263 5279
+type(
+  module_element -> Odoc_type.t_type list
+)
+"odoc_module.ml" 123 5179 5183 "odoc_module.ml" 127 5280 5285
+type(
+  Odoc_type.t_type list -> module_element -> Odoc_type.t_type list
+)
+"odoc_module.ml" 128 5286 5290 "odoc_module.ml" 128 5286 5292
+type(
+  Odoc_type.t_type list
+)
+"odoc_module.ml" 129 5293 5297 "odoc_module.ml" 129 5293 5298
+type(
+  module_element list
+)
+ident(
+  int_ref l "odoc_module.ml" 121 5148 5158 "odoc_module.ml" 121 5148 5159
+)
+"odoc_module.ml" 122 5162 5164 "odoc_module.ml" 129 5293 5298
+call(
+  tail
+)
+type(
+  Odoc_type.t_type list
+)
+"odoc_module.ml" 132 5374 5378 "odoc_module.ml" 132 5374 5393
+type(
+  module_element list -> Odoc_extension.t_type_extension list
+)
+ident(
+  def type_extensions "odoc_module.ml" 143 5615 5615 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 132 5374 5394 "odoc_module.ml" 132 5374 5395
+type(
+  module_element list
+)
+ident(
+  def l "odoc_module.ml" 133 5398 5400 "odoc_module.ml" 140 5539 5544
+)
+"odoc_module.ml" 133 5398 5400 "odoc_module.ml" 133 5398 5414
+type(
+  (Odoc_extension.t_type_extension list ->
+   module_element -> Odoc_extension.t_type_extension list) ->
+  Odoc_extension.t_type_extension list ->
+  module_element list -> Odoc_extension.t_type_extension list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_module.ml" 134 5415 5424 "odoc_module.ml" 134 5415 5427
+type(
+  Odoc_extension.t_type_extension list
+)
+ident(
+  def acc "odoc_module.ml" 134 5415 5431 "odoc_module.ml" 137 5509 5525
+)
+"odoc_module.ml" 134 5415 5435 "odoc_module.ml" 134 5415 5438
+type(
+  module_element
+)
+ident(
+  def ele "odoc_module.ml" 135 5442 5448 "odoc_module.ml" 137 5509 5525
+)
+"odoc_module.ml" 135 5442 5454 "odoc_module.ml" 135 5442 5457
+type(
+  module_element
+)
+ident(
+  int_ref ele "odoc_module.ml" 134 5415 5435 "odoc_module.ml" 134 5415 5438
+)
+"odoc_module.ml" 136 5463 5494 "odoc_module.ml" 136 5463 5495
+type(
+  Odoc_extension.t_type_extension
+)
+ident(
+  def x "odoc_module.ml" 136 5463 5499 "odoc_module.ml" 136 5463 5508
+)
+"odoc_module.ml" 136 5463 5471 "odoc_module.ml" 136 5463 5495
+type(
+  module_element
+)
+"odoc_module.ml" 136 5463 5499 "odoc_module.ml" 136 5463 5502
+type(
+  Odoc_extension.t_type_extension list
+)
+ident(
+  int_ref acc "odoc_module.ml" 134 5415 5424 "odoc_module.ml" 134 5415 5427
+)
+"odoc_module.ml" 136 5463 5503 "odoc_module.ml" 136 5463 5504
+type(
+  Odoc_extension.t_type_extension list ->
+  Odoc_extension.t_type_extension list ->
+  Odoc_extension.t_type_extension list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_module.ml" 136 5463 5506 "odoc_module.ml" 136 5463 5507
+type(
+  Odoc_extension.t_type_extension
+)
+ident(
+  int_ref x "odoc_module.ml" 136 5463 5494 "odoc_module.ml" 136 5463 5495
+)
+"odoc_module.ml" 136 5463 5505 "odoc_module.ml" 136 5463 5508
+type(
+  Odoc_extension.t_type_extension list
+)
+"odoc_module.ml" 136 5463 5499 "odoc_module.ml" 136 5463 5508
+call(
+  tail
+)
+type(
+  Odoc_extension.t_type_extension list
+)
+"odoc_module.ml" 137 5509 5517 "odoc_module.ml" 137 5509 5518
+type(
+  module_element
+)
+"odoc_module.ml" 137 5509 5522 "odoc_module.ml" 137 5509 5525
+type(
+  Odoc_extension.t_type_extension list
+)
+ident(
+  int_ref acc "odoc_module.ml" 134 5415 5424 "odoc_module.ml" 134 5415 5427
+)
+"odoc_module.ml" 135 5442 5448 "odoc_module.ml" 137 5509 5525
+type(
+  Odoc_extension.t_type_extension list
+)
+"odoc_module.ml" 134 5415 5431 "odoc_module.ml" 137 5509 5525
+type(
+  module_element -> Odoc_extension.t_type_extension list
+)
+"odoc_module.ml" 134 5415 5419 "odoc_module.ml" 138 5526 5531
+type(
+  Odoc_extension.t_type_extension list ->
+  module_element -> Odoc_extension.t_type_extension list
+)
+"odoc_module.ml" 139 5532 5536 "odoc_module.ml" 139 5532 5538
+type(
+  Odoc_extension.t_type_extension list
+)
+"odoc_module.ml" 140 5539 5543 "odoc_module.ml" 140 5539 5544
+type(
+  module_element list
+)
+ident(
+  int_ref l "odoc_module.ml" 132 5374 5394 "odoc_module.ml" 132 5374 5395
+)
+"odoc_module.ml" 133 5398 5400 "odoc_module.ml" 140 5539 5544
+call(
+  tail
+)
+type(
+  Odoc_extension.t_type_extension list
+)
+"odoc_module.ml" 143 5615 5619 "odoc_module.ml" 143 5615 5629
+type(
+  module_element list -> Odoc_exception.t_exception list
+)
+ident(
+  def exceptions "odoc_module.ml" 154 5843 5843 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 143 5615 5630 "odoc_module.ml" 143 5615 5631
+type(
+  module_element list
+)
+ident(
+  def l "odoc_module.ml" 144 5634 5636 "odoc_module.ml" 151 5770 5775
+)
+"odoc_module.ml" 144 5634 5636 "odoc_module.ml" 144 5634 5650
+type(
+  (Odoc_exception.t_exception list ->
+   module_element -> Odoc_exception.t_exception list) ->
+  Odoc_exception.t_exception list ->
+  module_element list -> Odoc_exception.t_exception list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_module.ml" 145 5651 5660 "odoc_module.ml" 145 5651 5663
+type(
+  Odoc_exception.t_exception list
+)
+ident(
+  def acc "odoc_module.ml" 145 5651 5667 "odoc_module.ml" 148 5740 5756
+)
+"odoc_module.ml" 145 5651 5671 "odoc_module.ml" 145 5651 5674
+type(
+  module_element
+)
+ident(
+  def ele "odoc_module.ml" 146 5678 5684 "odoc_module.ml" 148 5740 5756
+)
+"odoc_module.ml" 146 5678 5690 "odoc_module.ml" 146 5678 5693
+type(
+  module_element
+)
+ident(
+  int_ref ele "odoc_module.ml" 145 5651 5671 "odoc_module.ml" 145 5651 5674
+)
+"odoc_module.ml" 147 5699 5725 "odoc_module.ml" 147 5699 5726
+type(
+  Odoc_exception.t_exception
+)
+ident(
+  def e "odoc_module.ml" 147 5699 5730 "odoc_module.ml" 147 5699 5739
+)
+"odoc_module.ml" 147 5699 5707 "odoc_module.ml" 147 5699 5726
+type(
+  module_element
+)
+"odoc_module.ml" 147 5699 5730 "odoc_module.ml" 147 5699 5733
+type(
+  Odoc_exception.t_exception list
+)
+ident(
+  int_ref acc "odoc_module.ml" 145 5651 5660 "odoc_module.ml" 145 5651 5663
+)
+"odoc_module.ml" 147 5699 5734 "odoc_module.ml" 147 5699 5735
+type(
+  Odoc_exception.t_exception list ->
+  Odoc_exception.t_exception list -> Odoc_exception.t_exception list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_module.ml" 147 5699 5737 "odoc_module.ml" 147 5699 5738
+type(
+  Odoc_exception.t_exception
+)
+ident(
+  int_ref e "odoc_module.ml" 147 5699 5725 "odoc_module.ml" 147 5699 5726
+)
+"odoc_module.ml" 147 5699 5736 "odoc_module.ml" 147 5699 5739
+type(
+  Odoc_exception.t_exception list
+)
+"odoc_module.ml" 147 5699 5730 "odoc_module.ml" 147 5699 5739
+call(
+  tail
+)
+type(
+  Odoc_exception.t_exception list
+)
+"odoc_module.ml" 148 5740 5748 "odoc_module.ml" 148 5740 5749
+type(
+  module_element
+)
+"odoc_module.ml" 148 5740 5753 "odoc_module.ml" 148 5740 5756
+type(
+  Odoc_exception.t_exception list
+)
+ident(
+  int_ref acc "odoc_module.ml" 145 5651 5660 "odoc_module.ml" 145 5651 5663
+)
+"odoc_module.ml" 146 5678 5684 "odoc_module.ml" 148 5740 5756
+type(
+  Odoc_exception.t_exception list
+)
+"odoc_module.ml" 145 5651 5667 "odoc_module.ml" 148 5740 5756
+type(
+  module_element -> Odoc_exception.t_exception list
+)
+"odoc_module.ml" 145 5651 5655 "odoc_module.ml" 149 5757 5762
+type(
+  Odoc_exception.t_exception list ->
+  module_element -> Odoc_exception.t_exception list
+)
+"odoc_module.ml" 150 5763 5767 "odoc_module.ml" 150 5763 5769
+type(
+  Odoc_exception.t_exception list
+)
+"odoc_module.ml" 151 5770 5774 "odoc_module.ml" 151 5770 5775
+type(
+  module_element list
+)
+ident(
+  int_ref l "odoc_module.ml" 143 5615 5630 "odoc_module.ml" 143 5615 5631
+)
+"odoc_module.ml" 144 5634 5636 "odoc_module.ml" 151 5770 5775
+call(
+  tail
+)
+type(
+  Odoc_exception.t_exception list
+)
+"odoc_module.ml" 154 5843 5847 "odoc_module.ml" 154 5843 5854
+type(
+  module_element list -> Odoc_class.t_class list
+)
+ident(
+  def classes "odoc_module.ml" 165 6068 6068 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 154 5843 5855 "odoc_module.ml" 154 5843 5856
+type(
+  module_element list
+)
+ident(
+  def l "odoc_module.ml" 155 5859 5861 "odoc_module.ml" 162 5991 5996
+)
+"odoc_module.ml" 155 5859 5861 "odoc_module.ml" 155 5859 5875
+type(
+  (Odoc_class.t_class list -> module_element -> Odoc_class.t_class list) ->
+  Odoc_class.t_class list -> module_element list -> Odoc_class.t_class list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_module.ml" 156 5876 5885 "odoc_module.ml" 156 5876 5888
+type(
+  Odoc_class.t_class list
+)
+ident(
+  def acc "odoc_module.ml" 156 5876 5892 "odoc_module.ml" 159 5961 5977
+)
+"odoc_module.ml" 156 5876 5896 "odoc_module.ml" 156 5876 5899
+type(
+  module_element
+)
+ident(
+  def ele "odoc_module.ml" 157 5903 5909 "odoc_module.ml" 159 5961 5977
+)
+"odoc_module.ml" 157 5903 5915 "odoc_module.ml" 157 5903 5918
+type(
+  module_element
+)
+ident(
+  int_ref ele "odoc_module.ml" 156 5876 5896 "odoc_module.ml" 156 5876 5899
+)
+"odoc_module.ml" 158 5924 5946 "odoc_module.ml" 158 5924 5947
+type(
+  Odoc_class.t_class
+)
+ident(
+  def c "odoc_module.ml" 158 5924 5951 "odoc_module.ml" 158 5924 5960
+)
+"odoc_module.ml" 158 5924 5932 "odoc_module.ml" 158 5924 5947
+type(
+  module_element
+)
+"odoc_module.ml" 158 5924 5951 "odoc_module.ml" 158 5924 5954
+type(
+  Odoc_class.t_class list
+)
+ident(
+  int_ref acc "odoc_module.ml" 156 5876 5885 "odoc_module.ml" 156 5876 5888
+)
+"odoc_module.ml" 158 5924 5955 "odoc_module.ml" 158 5924 5956
+type(
+  Odoc_class.t_class list ->
+  Odoc_class.t_class list -> Odoc_class.t_class list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_module.ml" 158 5924 5958 "odoc_module.ml" 158 5924 5959
+type(
+  Odoc_class.t_class
+)
+ident(
+  int_ref c "odoc_module.ml" 158 5924 5946 "odoc_module.ml" 158 5924 5947
+)
+"odoc_module.ml" 158 5924 5957 "odoc_module.ml" 158 5924 5960
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 158 5924 5951 "odoc_module.ml" 158 5924 5960
+call(
+  tail
+)
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 159 5961 5969 "odoc_module.ml" 159 5961 5970
+type(
+  module_element
+)
+"odoc_module.ml" 159 5961 5974 "odoc_module.ml" 159 5961 5977
+type(
+  Odoc_class.t_class list
+)
+ident(
+  int_ref acc "odoc_module.ml" 156 5876 5885 "odoc_module.ml" 156 5876 5888
+)
+"odoc_module.ml" 157 5903 5909 "odoc_module.ml" 159 5961 5977
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 156 5876 5892 "odoc_module.ml" 159 5961 5977
+type(
+  module_element -> Odoc_class.t_class list
+)
+"odoc_module.ml" 156 5876 5880 "odoc_module.ml" 160 5978 5983
+type(
+  Odoc_class.t_class list -> module_element -> Odoc_class.t_class list
+)
+"odoc_module.ml" 161 5984 5988 "odoc_module.ml" 161 5984 5990
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 162 5991 5995 "odoc_module.ml" 162 5991 5996
+type(
+  module_element list
+)
+ident(
+  int_ref l "odoc_module.ml" 154 5843 5855 "odoc_module.ml" 154 5843 5856
+)
+"odoc_module.ml" 155 5859 5861 "odoc_module.ml" 162 5991 5996
+call(
+  tail
+)
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 165 6068 6072 "odoc_module.ml" 165 6068 6083
+type(
+  module_element list -> Odoc_class.t_class_type list
+)
+ident(
+  def class_types "odoc_module.ml" 176 6300 6300 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 165 6068 6084 "odoc_module.ml" 165 6068 6085
+type(
+  module_element list
+)
+ident(
+  def l "odoc_module.ml" 166 6088 6090 "odoc_module.ml" 173 6227 6232
+)
+"odoc_module.ml" 166 6088 6090 "odoc_module.ml" 166 6088 6104
+type(
+  (Odoc_class.t_class_type list ->
+   module_element -> Odoc_class.t_class_type list) ->
+  Odoc_class.t_class_type list ->
+  module_element list -> Odoc_class.t_class_type list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_module.ml" 167 6105 6114 "odoc_module.ml" 167 6105 6117
+type(
+  Odoc_class.t_class_type list
+)
+ident(
+  def acc "odoc_module.ml" 167 6105 6121 "odoc_module.ml" 170 6197 6213
+)
+"odoc_module.ml" 167 6105 6125 "odoc_module.ml" 167 6105 6128
+type(
+  module_element
+)
+ident(
+  def ele "odoc_module.ml" 168 6132 6138 "odoc_module.ml" 170 6197 6213
+)
+"odoc_module.ml" 168 6132 6144 "odoc_module.ml" 168 6132 6147
+type(
+  module_element
+)
+ident(
+  int_ref ele "odoc_module.ml" 167 6105 6125 "odoc_module.ml" 167 6105 6128
+)
+"odoc_module.ml" 169 6153 6180 "odoc_module.ml" 169 6153 6182
+type(
+  Odoc_class.t_class_type
+)
+ident(
+  def ct "odoc_module.ml" 169 6153 6186 "odoc_module.ml" 169 6153 6196
+)
+"odoc_module.ml" 169 6153 6161 "odoc_module.ml" 169 6153 6182
+type(
+  module_element
+)
+"odoc_module.ml" 169 6153 6186 "odoc_module.ml" 169 6153 6189
+type(
+  Odoc_class.t_class_type list
+)
+ident(
+  int_ref acc "odoc_module.ml" 167 6105 6114 "odoc_module.ml" 167 6105 6117
+)
+"odoc_module.ml" 169 6153 6190 "odoc_module.ml" 169 6153 6191
+type(
+  Odoc_class.t_class_type list ->
+  Odoc_class.t_class_type list -> Odoc_class.t_class_type list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_module.ml" 169 6153 6193 "odoc_module.ml" 169 6153 6195
+type(
+  Odoc_class.t_class_type
+)
+ident(
+  int_ref ct "odoc_module.ml" 169 6153 6180 "odoc_module.ml" 169 6153 6182
+)
+"odoc_module.ml" 169 6153 6192 "odoc_module.ml" 169 6153 6196
+type(
+  Odoc_class.t_class_type list
+)
+"odoc_module.ml" 169 6153 6186 "odoc_module.ml" 169 6153 6196
+call(
+  tail
+)
+type(
+  Odoc_class.t_class_type list
+)
+"odoc_module.ml" 170 6197 6205 "odoc_module.ml" 170 6197 6206
+type(
+  module_element
+)
+"odoc_module.ml" 170 6197 6210 "odoc_module.ml" 170 6197 6213
+type(
+  Odoc_class.t_class_type list
+)
+ident(
+  int_ref acc "odoc_module.ml" 167 6105 6114 "odoc_module.ml" 167 6105 6117
+)
+"odoc_module.ml" 168 6132 6138 "odoc_module.ml" 170 6197 6213
+type(
+  Odoc_class.t_class_type list
+)
+"odoc_module.ml" 167 6105 6121 "odoc_module.ml" 170 6197 6213
+type(
+  module_element -> Odoc_class.t_class_type list
+)
+"odoc_module.ml" 167 6105 6109 "odoc_module.ml" 171 6214 6219
+type(
+  Odoc_class.t_class_type list ->
+  module_element -> Odoc_class.t_class_type list
+)
+"odoc_module.ml" 172 6220 6224 "odoc_module.ml" 172 6220 6226
+type(
+  Odoc_class.t_class_type list
+)
+"odoc_module.ml" 173 6227 6231 "odoc_module.ml" 173 6227 6232
+type(
+  module_element list
+)
+ident(
+  int_ref l "odoc_module.ml" 165 6068 6084 "odoc_module.ml" 165 6068 6085
+)
+"odoc_module.ml" 166 6088 6090 "odoc_module.ml" 173 6227 6232
+call(
+  tail
+)
+type(
+  Odoc_class.t_class_type list
+)
+"odoc_module.ml" 176 6300 6304 "odoc_module.ml" 176 6300 6311
+type(
+  module_element list -> t_module list
+)
+ident(
+  def modules "odoc_module.ml" 187 6527 6527 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 176 6300 6312 "odoc_module.ml" 176 6300 6313
+type(
+  module_element list
+)
+ident(
+  def l "odoc_module.ml" 177 6316 6318 "odoc_module.ml" 184 6449 6454
+)
+"odoc_module.ml" 177 6316 6318 "odoc_module.ml" 177 6316 6332
+type(
+  (t_module list -> module_element -> t_module list) ->
+  t_module list -> module_element list -> t_module list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_module.ml" 178 6333 6342 "odoc_module.ml" 178 6333 6345
+type(
+  t_module list
+)
+ident(
+  def acc "odoc_module.ml" 178 6333 6349 "odoc_module.ml" 181 6419 6435
+)
+"odoc_module.ml" 178 6333 6353 "odoc_module.ml" 178 6333 6356
+type(
+  module_element
+)
+ident(
+  def ele "odoc_module.ml" 179 6360 6366 "odoc_module.ml" 181 6419 6435
+)
+"odoc_module.ml" 179 6360 6372 "odoc_module.ml" 179 6360 6375
+type(
+  module_element
+)
+ident(
+  int_ref ele "odoc_module.ml" 178 6333 6353 "odoc_module.ml" 178 6333 6356
+)
+"odoc_module.ml" 180 6381 6404 "odoc_module.ml" 180 6381 6405
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 180 6381 6409 "odoc_module.ml" 180 6381 6418
+)
+"odoc_module.ml" 180 6381 6389 "odoc_module.ml" 180 6381 6405
+type(
+  module_element
+)
+"odoc_module.ml" 180 6381 6409 "odoc_module.ml" 180 6381 6412
+type(
+  t_module list
+)
+ident(
+  int_ref acc "odoc_module.ml" 178 6333 6342 "odoc_module.ml" 178 6333 6345
+)
+"odoc_module.ml" 180 6381 6413 "odoc_module.ml" 180 6381 6414
+type(
+  t_module list -> t_module list -> t_module list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_module.ml" 180 6381 6416 "odoc_module.ml" 180 6381 6417
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 180 6381 6404 "odoc_module.ml" 180 6381 6405
+)
+"odoc_module.ml" 180 6381 6415 "odoc_module.ml" 180 6381 6418
+type(
+  t_module list
+)
+"odoc_module.ml" 180 6381 6409 "odoc_module.ml" 180 6381 6418
+call(
+  tail
+)
+type(
+  t_module list
+)
+"odoc_module.ml" 181 6419 6427 "odoc_module.ml" 181 6419 6428
+type(
+  module_element
+)
+"odoc_module.ml" 181 6419 6432 "odoc_module.ml" 181 6419 6435
+type(
+  t_module list
+)
+ident(
+  int_ref acc "odoc_module.ml" 178 6333 6342 "odoc_module.ml" 178 6333 6345
+)
+"odoc_module.ml" 179 6360 6366 "odoc_module.ml" 181 6419 6435
+type(
+  t_module list
+)
+"odoc_module.ml" 178 6333 6349 "odoc_module.ml" 181 6419 6435
+type(
+  module_element -> t_module list
+)
+"odoc_module.ml" 178 6333 6337 "odoc_module.ml" 182 6436 6441
+type(
+  t_module list -> module_element -> t_module list
+)
+"odoc_module.ml" 183 6442 6446 "odoc_module.ml" 183 6442 6448
+type(
+  t_module list
+)
+"odoc_module.ml" 184 6449 6453 "odoc_module.ml" 184 6449 6454
+type(
+  module_element list
+)
+ident(
+  int_ref l "odoc_module.ml" 176 6300 6312 "odoc_module.ml" 176 6300 6313
+)
+"odoc_module.ml" 177 6316 6318 "odoc_module.ml" 184 6449 6454
+call(
+  tail
+)
+type(
+  t_module list
+)
+"odoc_module.ml" 187 6527 6531 "odoc_module.ml" 187 6527 6540
+type(
+  module_element list -> t_module_type list
+)
+ident(
+  def mod_types "odoc_module.ml" 198 6765 6765 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 187 6527 6541 "odoc_module.ml" 187 6527 6542
+type(
+  module_element list
+)
+ident(
+  def l "odoc_module.ml" 188 6545 6547 "odoc_module.ml" 195 6685 6690
+)
+"odoc_module.ml" 188 6545 6547 "odoc_module.ml" 188 6545 6561
+type(
+  (t_module_type list -> module_element -> t_module_type list) ->
+  t_module_type list -> module_element list -> t_module_type list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_module.ml" 189 6562 6571 "odoc_module.ml" 189 6562 6574
+type(
+  t_module_type list
+)
+ident(
+  def acc "odoc_module.ml" 189 6562 6578 "odoc_module.ml" 192 6655 6671
+)
+"odoc_module.ml" 189 6562 6582 "odoc_module.ml" 189 6562 6585
+type(
+  module_element
+)
+ident(
+  def ele "odoc_module.ml" 190 6589 6595 "odoc_module.ml" 192 6655 6671
+)
+"odoc_module.ml" 190 6589 6601 "odoc_module.ml" 190 6589 6604
+type(
+  module_element
+)
+ident(
+  int_ref ele "odoc_module.ml" 189 6562 6582 "odoc_module.ml" 189 6562 6585
+)
+"odoc_module.ml" 191 6610 6638 "odoc_module.ml" 191 6610 6640
+type(
+  t_module_type
+)
+ident(
+  def mt "odoc_module.ml" 191 6610 6644 "odoc_module.ml" 191 6610 6654
+)
+"odoc_module.ml" 191 6610 6618 "odoc_module.ml" 191 6610 6640
+type(
+  module_element
+)
+"odoc_module.ml" 191 6610 6644 "odoc_module.ml" 191 6610 6647
+type(
+  t_module_type list
+)
+ident(
+  int_ref acc "odoc_module.ml" 189 6562 6571 "odoc_module.ml" 189 6562 6574
+)
+"odoc_module.ml" 191 6610 6648 "odoc_module.ml" 191 6610 6649
+type(
+  t_module_type list -> t_module_type list -> t_module_type list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_module.ml" 191 6610 6651 "odoc_module.ml" 191 6610 6653
+type(
+  t_module_type
+)
+ident(
+  int_ref mt "odoc_module.ml" 191 6610 6638 "odoc_module.ml" 191 6610 6640
+)
+"odoc_module.ml" 191 6610 6650 "odoc_module.ml" 191 6610 6654
+type(
+  t_module_type list
+)
+"odoc_module.ml" 191 6610 6644 "odoc_module.ml" 191 6610 6654
+call(
+  tail
+)
+type(
+  t_module_type list
+)
+"odoc_module.ml" 192 6655 6663 "odoc_module.ml" 192 6655 6664
+type(
+  module_element
+)
+"odoc_module.ml" 192 6655 6668 "odoc_module.ml" 192 6655 6671
+type(
+  t_module_type list
+)
+ident(
+  int_ref acc "odoc_module.ml" 189 6562 6571 "odoc_module.ml" 189 6562 6574
+)
+"odoc_module.ml" 190 6589 6595 "odoc_module.ml" 192 6655 6671
+type(
+  t_module_type list
+)
+"odoc_module.ml" 189 6562 6578 "odoc_module.ml" 192 6655 6671
+type(
+  module_element -> t_module_type list
+)
+"odoc_module.ml" 189 6562 6566 "odoc_module.ml" 193 6672 6677
+type(
+  t_module_type list -> module_element -> t_module_type list
+)
+"odoc_module.ml" 194 6678 6682 "odoc_module.ml" 194 6678 6684
+type(
+  t_module_type list
+)
+"odoc_module.ml" 195 6685 6689 "odoc_module.ml" 195 6685 6690
+type(
+  module_element list
+)
+ident(
+  int_ref l "odoc_module.ml" 187 6527 6541 "odoc_module.ml" 187 6527 6542
+)
+"odoc_module.ml" 188 6545 6547 "odoc_module.ml" 195 6685 6690
+call(
+  tail
+)
+type(
+  t_module_type list
+)
+"odoc_module.ml" 198 6765 6769 "odoc_module.ml" 198 6765 6777
+type(
+  module_element list -> Odoc_types.text list
+)
+ident(
+  def comments "odoc_module.ml" 209 7005 7005 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 198 6765 6778 "odoc_module.ml" 198 6765 6779
+type(
+  module_element list
+)
+ident(
+  def l "odoc_module.ml" 199 6782 6784 "odoc_module.ml" 206 6923 6928
+)
+"odoc_module.ml" 199 6782 6784 "odoc_module.ml" 199 6782 6798
+type(
+  (Odoc_types.text list -> module_element -> Odoc_types.text list) ->
+  Odoc_types.text list -> module_element list -> Odoc_types.text list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_module.ml" 200 6799 6808 "odoc_module.ml" 200 6799 6811
+type(
+  Odoc_types.text list
+)
+ident(
+  def acc "odoc_module.ml" 200 6799 6815 "odoc_module.ml" 203 6893 6909
+)
+"odoc_module.ml" 200 6799 6819 "odoc_module.ml" 200 6799 6822
+type(
+  module_element
+)
+ident(
+  def ele "odoc_module.ml" 201 6826 6832 "odoc_module.ml" 203 6893 6909
+)
+"odoc_module.ml" 201 6826 6838 "odoc_module.ml" 201 6826 6841
+type(
+  module_element
+)
+ident(
+  int_ref ele "odoc_module.ml" 200 6799 6819 "odoc_module.ml" 200 6799 6822
+)
+"odoc_module.ml" 202 6847 6878 "odoc_module.ml" 202 6847 6879
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_module.ml" 202 6847 6883 "odoc_module.ml" 202 6847 6892
+)
+"odoc_module.ml" 202 6847 6855 "odoc_module.ml" 202 6847 6879
+type(
+  module_element
+)
+"odoc_module.ml" 202 6847 6883 "odoc_module.ml" 202 6847 6886
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref acc "odoc_module.ml" 200 6799 6808 "odoc_module.ml" 200 6799 6811
+)
+"odoc_module.ml" 202 6847 6887 "odoc_module.ml" 202 6847 6888
+type(
+  Odoc_types.text list -> Odoc_types.text list -> Odoc_types.text list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_module.ml" 202 6847 6890 "odoc_module.ml" 202 6847 6891
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref t "odoc_module.ml" 202 6847 6878 "odoc_module.ml" 202 6847 6879
+)
+"odoc_module.ml" 202 6847 6889 "odoc_module.ml" 202 6847 6892
+type(
+  Odoc_types.text list
+)
+"odoc_module.ml" 202 6847 6883 "odoc_module.ml" 202 6847 6892
+call(
+  tail
+)
+type(
+  Odoc_types.text list
+)
+"odoc_module.ml" 203 6893 6901 "odoc_module.ml" 203 6893 6902
+type(
+  module_element
+)
+"odoc_module.ml" 203 6893 6906 "odoc_module.ml" 203 6893 6909
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref acc "odoc_module.ml" 200 6799 6808 "odoc_module.ml" 200 6799 6811
+)
+"odoc_module.ml" 201 6826 6832 "odoc_module.ml" 203 6893 6909
+type(
+  Odoc_types.text list
+)
+"odoc_module.ml" 200 6799 6815 "odoc_module.ml" 203 6893 6909
+type(
+  module_element -> Odoc_types.text list
+)
+"odoc_module.ml" 200 6799 6803 "odoc_module.ml" 204 6910 6915
+type(
+  Odoc_types.text list -> module_element -> Odoc_types.text list
+)
+"odoc_module.ml" 205 6916 6920 "odoc_module.ml" 205 6916 6922
+type(
+  Odoc_types.text list
+)
+"odoc_module.ml" 206 6923 6927 "odoc_module.ml" 206 6923 6928
+type(
+  module_element list
+)
+ident(
+  int_ref l "odoc_module.ml" 198 6765 6778 "odoc_module.ml" 198 6765 6779
+)
+"odoc_module.ml" 199 6782 6784 "odoc_module.ml" 206 6923 6928
+call(
+  tail
+)
+type(
+  Odoc_types.text list
+)
+"odoc_module.ml" 209 7005 7009 "odoc_module.ml" 209 7005 7025
+type(
+  module_element list -> included_module list
+)
+ident(
+  def included_modules "odoc_module.ml" 221 7315 7315 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 209 7005 7026 "odoc_module.ml" 209 7005 7027
+type(
+  module_element list
+)
+ident(
+  def l "odoc_module.ml" 210 7030 7032 "odoc_module.ml" 217 7172 7177
+)
+"odoc_module.ml" 210 7030 7032 "odoc_module.ml" 210 7030 7046
+type(
+  (included_module list -> module_element -> included_module list) ->
+  included_module list -> module_element list -> included_module list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_module.ml" 211 7047 7056 "odoc_module.ml" 211 7047 7059
+type(
+  included_module list
+)
+ident(
+  def acc "odoc_module.ml" 211 7047 7063 "odoc_module.ml" 214 7142 7158
+)
+"odoc_module.ml" 211 7047 7067 "odoc_module.ml" 211 7047 7070
+type(
+  module_element
+)
+ident(
+  def ele "odoc_module.ml" 212 7074 7080 "odoc_module.ml" 214 7142 7158
+)
+"odoc_module.ml" 212 7074 7086 "odoc_module.ml" 212 7074 7089
+type(
+  module_element
+)
+ident(
+  int_ref ele "odoc_module.ml" 211 7047 7067 "odoc_module.ml" 211 7047 7070
+)
+"odoc_module.ml" 213 7095 7127 "odoc_module.ml" 213 7095 7128
+type(
+  included_module
+)
+ident(
+  def m "odoc_module.ml" 213 7095 7132 "odoc_module.ml" 213 7095 7141
+)
+"odoc_module.ml" 213 7095 7103 "odoc_module.ml" 213 7095 7128
+type(
+  module_element
+)
+"odoc_module.ml" 213 7095 7132 "odoc_module.ml" 213 7095 7135
+type(
+  included_module list
+)
+ident(
+  int_ref acc "odoc_module.ml" 211 7047 7056 "odoc_module.ml" 211 7047 7059
+)
+"odoc_module.ml" 213 7095 7136 "odoc_module.ml" 213 7095 7137
+type(
+  included_module list -> included_module list -> included_module list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_module.ml" 213 7095 7139 "odoc_module.ml" 213 7095 7140
+type(
+  included_module
+)
+ident(
+  int_ref m "odoc_module.ml" 213 7095 7127 "odoc_module.ml" 213 7095 7128
+)
+"odoc_module.ml" 213 7095 7138 "odoc_module.ml" 213 7095 7141
+type(
+  included_module list
+)
+"odoc_module.ml" 213 7095 7132 "odoc_module.ml" 213 7095 7141
+call(
+  tail
+)
+type(
+  included_module list
+)
+"odoc_module.ml" 214 7142 7150 "odoc_module.ml" 214 7142 7151
+type(
+  module_element
+)
+"odoc_module.ml" 214 7142 7155 "odoc_module.ml" 214 7142 7158
+type(
+  included_module list
+)
+ident(
+  int_ref acc "odoc_module.ml" 211 7047 7056 "odoc_module.ml" 211 7047 7059
+)
+"odoc_module.ml" 212 7074 7080 "odoc_module.ml" 214 7142 7158
+type(
+  included_module list
+)
+"odoc_module.ml" 211 7047 7063 "odoc_module.ml" 214 7142 7158
+type(
+  module_element -> included_module list
+)
+"odoc_module.ml" 211 7047 7051 "odoc_module.ml" 215 7159 7164
+type(
+  included_module list -> module_element -> included_module list
+)
+"odoc_module.ml" 216 7165 7169 "odoc_module.ml" 216 7165 7171
+type(
+  included_module list
+)
+"odoc_module.ml" 217 7172 7176 "odoc_module.ml" 217 7172 7177
+type(
+  module_element list
+)
+ident(
+  int_ref l "odoc_module.ml" 209 7005 7026 "odoc_module.ml" 209 7005 7027
+)
+"odoc_module.ml" 210 7030 7032 "odoc_module.ml" 217 7172 7177
+call(
+  tail
+)
+type(
+  included_module list
+)
+"odoc_module.ml" 221 7315 7323 "odoc_module.ml" 221 7315 7338
+type(
+  ?trans:bool -> t_module -> module_element list
+)
+ident(
+  def module_elements "odoc_module.ml" 221 7315 7315 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 221 7315 7341 "odoc_module.ml" 221 7315 7346
+type(
+  bool
+)
+"odoc_module.ml" 221 7315 7347 "odoc_module.ml" 221 7315 7351
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 221 7315 7347 "odoc_module.ml" 221 7315 7351
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 221 7315 7353 "odoc_module.ml" 221 7315 7354
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 222 7357 7359 "odoc_module.ml" 269 8859 8879
+)
+"odoc_module.ml" 222 7357 7367 "odoc_module.ml" 222 7357 7376
+type(
+  module_kind -> module_element list
+)
+ident(
+  def iter_kind "odoc_module.ml" 222 7357 7359 "odoc_module.ml" 269 8859 8879
+)
+"odoc_module.ml" 223 7388 7408 "odoc_module.ml" 223 7388 7409
+type(
+  module_element list
+)
+ident(
+  def l "odoc_module.ml" 225 7443 7451 "odoc_module.ml" 225 7443 7452
+)
+"odoc_module.ml" 223 7388 7394 "odoc_module.ml" 223 7388 7409
+type(
+  module_kind
+)
+"odoc_module.ml" 225 7443 7451 "odoc_module.ml" 225 7443 7452
+type(
+  module_element list
+)
+ident(
+  int_ref l "odoc_module.ml" 223 7388 7408 "odoc_module.ml" 223 7388 7409
+)
+"odoc_module.ml" 226 7453 7472 "odoc_module.ml" 226 7453 7474
+type(
+  module_alias
+)
+ident(
+  def ma "odoc_module.ml" 228 7508 7516 "odoc_module.ml" 234 7703 7715
+)
+"odoc_module.ml" 226 7453 7459 "odoc_module.ml" 226 7453 7474
+type(
+  module_kind
+)
+"odoc_module.ml" 228 7508 7519 "odoc_module.ml" 228 7508 7524
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 221 7315 7341 "odoc_module.ml" 221 7315 7346
+)
+"odoc_module.ml" 229 7530 7546 "odoc_module.ml" 229 7530 7548
+type(
+  module_alias
+)
+ident(
+  int_ref ma "odoc_module.ml" 226 7453 7472 "odoc_module.ml" 226 7453 7474
+)
+"odoc_module.ml" 229 7530 7546 "odoc_module.ml" 229 7530 7558
+type(
+  mmt option
+)
+"odoc_module.ml" 230 7564 7576 "odoc_module.ml" 230 7564 7580
+type(
+  mmt option
+)
+"odoc_module.ml" 230 7564 7584 "odoc_module.ml" 230 7564 7586
+type(
+  module_element list
+)
+"odoc_module.ml" 231 7587 7609 "odoc_module.ml" 231 7587 7610
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 231 7587 7615 "odoc_module.ml" 231 7587 7632
+)
+"odoc_module.ml" 231 7587 7604 "odoc_module.ml" 231 7587 7611
+type(
+  mmt
+)
+"odoc_module.ml" 231 7587 7599 "odoc_module.ml" 231 7587 7611
+type(
+  mmt option
+)
+"odoc_module.ml" 231 7587 7615 "odoc_module.ml" 231 7587 7630
+type(
+  ?trans:bool -> t_module -> module_element list
+)
+ident(
+  int_ref module_elements "odoc_module.ml" 221 7315 7323 "odoc_module.ml" 221 7315 7338
+)
+"odoc_module.ml" 231 7587 7631 "odoc_module.ml" 231 7587 7632
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 231 7587 7609 "odoc_module.ml" 231 7587 7610
+)
+"odoc_module.ml" 231 7587 7615 "odoc_module.ml" 231 7587 7632
+call(
+  tail
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 232 7633 7659 "odoc_module.ml" 232 7633 7661
+type(
+  t_module_type
+)
+ident(
+  def mt "odoc_module.ml" 232 7633 7666 "odoc_module.ml" 232 7633 7689
+)
+"odoc_module.ml" 232 7633 7650 "odoc_module.ml" 232 7633 7662
+type(
+  mmt
+)
+"odoc_module.ml" 232 7633 7645 "odoc_module.ml" 232 7633 7662
+type(
+  mmt option
+)
+"odoc_module.ml" 232 7633 7666 "odoc_module.ml" 232 7633 7686
+type(
+  ?trans:bool -> t_module_type -> module_element list
+)
+ident(
+  int_ref module_type_elements "odoc_module.ml" 273 9022 9026 "odoc_module.ml" 273 9022 9046
+)
+"odoc_module.ml" 232 7633 7687 "odoc_module.ml" 232 7633 7689
+type(
+  t_module_type
+)
+ident(
+  int_ref mt "odoc_module.ml" 232 7633 7659 "odoc_module.ml" 232 7633 7661
+)
+"odoc_module.ml" 232 7633 7666 "odoc_module.ml" 232 7633 7689
+call(
+  tail
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 229 7530 7540 "odoc_module.ml" 232 7633 7689
+type(
+  module_element list
+)
+"odoc_module.ml" 234 7703 7713 "odoc_module.ml" 234 7703 7715
+type(
+  module_element list
+)
+"odoc_module.ml" 228 7508 7516 "odoc_module.ml" 234 7703 7715
+type(
+  module_element list
+)
+"odoc_module.ml" 235 7716 7738 "odoc_module.ml" 235 7716 7739
+type(
+  module_parameter
+)
+"odoc_module.ml" 235 7716 7741 "odoc_module.ml" 235 7716 7742
+type(
+  module_kind
+)
+ident(
+  def k "odoc_module.ml" 238 7803 7811 "odoc_module.ml" 238 7803 7822
+)
+"odoc_module.ml" 235 7716 7722 "odoc_module.ml" 235 7716 7743
+type(
+  module_kind
+)
+"odoc_module.ml" 236 7744 7764 "odoc_module.ml" 236 7744 7765
+type(
+  module_kind
+)
+ident(
+  def k "odoc_module.ml" 238 7803 7811 "odoc_module.ml" 238 7803 7822
+)
+"odoc_module.ml" 236 7744 7767 "odoc_module.ml" 236 7744 7768
+type(
+  module_kind
+)
+"odoc_module.ml" 236 7744 7750 "odoc_module.ml" 236 7744 7769
+type(
+  module_kind
+)
+"odoc_module.ml" 235 7716 7722 "odoc_module.ml" 236 7744 7769
+type(
+  module_kind
+)
+"odoc_module.ml" 238 7803 7811 "odoc_module.ml" 238 7803 7820
+type(
+  module_kind -> module_element list
+)
+ident(
+  int_ref iter_kind "odoc_module.ml" 222 7357 7367 "odoc_module.ml" 222 7357 7376
+)
+"odoc_module.ml" 238 7803 7821 "odoc_module.ml" 238 7803 7822
+type(
+  module_kind
+)
+ident(
+  int_ref k "odoc_module.ml" 235 7716 7741 "odoc_module.ml" 235 7716 7742
+)
+"odoc_module.ml" 238 7803 7811 "odoc_module.ml" 238 7803 7822
+call(
+  tail
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 239 7823 7842 "odoc_module.ml" 239 7823 7844
+type(
+  module_type_kind
+)
+ident(
+  def tk "odoc_module.ml" 241 7881 7889 "odoc_module.ml" 245 8102 8113
+)
+"odoc_module.ml" 239 7823 7845 "odoc_module.ml" 239 7823 7846
+type(
+  string
+)
+"odoc_module.ml" 239 7823 7829 "odoc_module.ml" 239 7823 7847
+type(
+  module_kind
+)
+"odoc_module.ml" 241 7881 7889 "odoc_module.ml" 241 7881 7909
+type(
+  ?trans:bool -> t_module_type -> module_element list
+)
+ident(
+  int_ref module_type_elements "odoc_module.ml" 273 9022 9026 "odoc_module.ml" 273 9022 9046
+)
+"odoc_module.ml" 241 7881 7918 "odoc_module.ml" 241 7881 7923
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 221 7315 7341 "odoc_module.ml" 221 7315 7346
+)
+"odoc_module.ml" 242 7924 7946 "odoc_module.ml" 242 7924 7948
+type(
+  Name.t
+)
+"odoc_module.ml" 242 7924 7961 "odoc_module.ml" 242 7924 7965
+type(
+  Odoc_types.info option
+)
+"odoc_module.ml" 242 7924 7978 "odoc_module.ml" 242 7924 7982
+type(
+  Types.module_type option
+)
+"odoc_module.ml" 243 7985 8015 "odoc_module.ml" 243 7985 8020
+type(
+  bool
+)
+"odoc_module.ml" 243 7985 8033 "odoc_module.ml" 243 7985 8035
+type(
+  string
+)
+"odoc_module.ml" 243 7985 8053 "odoc_module.ml" 243 7985 8055
+type(
+  module_type_kind
+)
+ident(
+  int_ref tk "odoc_module.ml" 239 7823 7842 "odoc_module.ml" 239 7823 7844
+)
+"odoc_module.ml" 243 7985 8048 "odoc_module.ml" 243 7985 8055
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 244 8058 8079 "odoc_module.ml" 244 8058 8099
+type(
+  Odoc_types.location
+)
+ident(
+  ext_ref Odoc_types.dummy_loc
+)
+"odoc_module.ml" 242 7924 7934 "odoc_module.ml" 245 8102 8113
+type(
+  t_module_type
+)
+"odoc_module.ml" 241 7881 7889 "odoc_module.ml" 245 8102 8113
+call(
+  tail
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 246 8114 8139 "odoc_module.ml" 246 8114 8140
+type(
+  module_kind
+)
+ident(
+  def k "odoc_module.ml" 249 8219 8227 "odoc_module.ml" 259 8589 8600
+)
+"odoc_module.ml" 246 8114 8142 "odoc_module.ml" 246 8114 8144
+type(
+  module_type_kind
+)
+ident(
+  def tk "odoc_module.ml" 249 8219 8227 "odoc_module.ml" 259 8589 8600
+)
+"odoc_module.ml" 246 8114 8120 "odoc_module.ml" 246 8114 8145
+type(
+  module_kind
+)
+"odoc_module.ml" 249 8219 8227 "odoc_module.ml" 249 8219 8242
+type(
+  ?trans:bool -> t_module -> module_element list
+)
+ident(
+  int_ref module_elements "odoc_module.ml" 221 7315 7323 "odoc_module.ml" 221 7315 7338
+)
+"odoc_module.ml" 249 8219 8251 "odoc_module.ml" 249 8219 8256
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 221 7315 7341 "odoc_module.ml" 221 7315 7346
+)
+"odoc_module.ml" 250 8257 8278 "odoc_module.ml" 250 8257 8280
+type(
+  Name.t
+)
+"odoc_module.ml" 251 8283 8304 "odoc_module.ml" 251 8283 8308
+type(
+  Odoc_types.info option
+)
+"odoc_module.ml" 252 8311 8352 "odoc_module.ml" 252 8311 8354
+type(
+  Types.signature
+)
+"odoc_module.ml" 252 8311 8332 "odoc_module.ml" 252 8311 8354
+type(
+  Types.module_type
+)
+"odoc_module.ml" 253 8357 8386 "odoc_module.ml" 253 8357 8391
+type(
+  bool
+)
+"odoc_module.ml" 253 8357 8403 "odoc_module.ml" 253 8357 8405
+type(
+  string
+)
+"odoc_module.ml" 253 8357 8417 "odoc_module.ml" 253 8357 8418
+type(
+  module_kind
+)
+ident(
+  int_ref k "odoc_module.ml" 246 8114 8139 "odoc_module.ml" 246 8114 8140
+)
+"odoc_module.ml" 254 8421 8441 "odoc_module.ml" 254 8421 8461
+type(
+  Odoc_types.location
+)
+ident(
+  ext_ref Odoc_types.dummy_loc
+)
+"odoc_module.ml" 255 8464 8489 "odoc_module.ml" 255 8464 8491
+type(
+  Name.t list
+)
+"odoc_module.ml" 256 8494 8515 "odoc_module.ml" 256 8494 8519
+type(
+  string option
+)
+"odoc_module.ml" 257 8522 8548 "odoc_module.ml" 257 8522 8552
+type(
+  string option
+)
+"odoc_module.ml" 258 8555 8581 "odoc_module.ml" 258 8555 8586
+type(
+  bool
+)
+"odoc_module.ml" 250 8257 8267 "odoc_module.ml" 259 8589 8600
+type(
+  t_module
+)
+"odoc_module.ml" 249 8219 8227 "odoc_module.ml" 259 8589 8600
+call(
+  tail
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 260 8601 8621 "odoc_module.ml" 260 8601 8622
+type(
+  string
+)
+"odoc_module.ml" 260 8601 8607 "odoc_module.ml" 260 8601 8622
+type(
+  module_kind
+)
+"odoc_module.ml" 260 8601 8626 "odoc_module.ml" 260 8601 8628
+type(
+  module_element list
+)
+"odoc_module.ml" 261 8629 8649 "odoc_module.ml" 261 8629 8650
+type(
+  module_type_alias
+)
+type(
+  string
+)
+"odoc_module.ml" 261 8629 8635 "odoc_module.ml" 261 8629 8650
+type(
+  module_kind
+)
+"odoc_module.ml" 261 8629 8654 "odoc_module.ml" 261 8629 8656
+type(
+  module_element list
+)
+"odoc_module.ml" 222 7357 7379 "odoc_module.ml" 261 8629 8656
+type(
+  module_kind -> module_element list
+)
+"odoc_module.ml" 269 8859 8861 "odoc_module.ml" 269 8859 8870
+type(
+  module_kind -> module_element list
+)
+ident(
+  int_ref iter_kind "odoc_module.ml" 222 7357 7367 "odoc_module.ml" 222 7357 7376
+)
+"odoc_module.ml" 269 8859 8871 "odoc_module.ml" 269 8859 8872
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 221 7315 7353 "odoc_module.ml" 221 7315 7354
+)
+"odoc_module.ml" 269 8859 8871 "odoc_module.ml" 269 8859 8879
+type(
+  module_kind
+)
+"odoc_module.ml" 269 8859 8861 "odoc_module.ml" 269 8859 8879
+call(
+  tail
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 222 7357 7359 "odoc_module.ml" 269 8859 8879
+type(
+  module_element list
+)
+"odoc_module.ml" 273 9022 9026 "odoc_module.ml" 273 9022 9046
+type(
+  ?trans:bool -> t_module_type -> module_element list
+)
+ident(
+  def module_type_elements "odoc_module.ml" 221 7315 7315 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 273 9022 9049 "odoc_module.ml" 273 9022 9054
+type(
+  bool
+)
+"odoc_module.ml" 273 9022 9055 "odoc_module.ml" 273 9022 9059
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 273 9022 9055 "odoc_module.ml" 273 9022 9059
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 273 9022 9061 "odoc_module.ml" 273 9022 9063
+type(
+  t_module_type
+)
+ident(
+  def mt "odoc_module.ml" 274 9066 9068 "odoc_module.ml" 292 9567 9589
+)
+"odoc_module.ml" 274 9066 9076 "odoc_module.ml" 274 9066 9085
+type(
+  module_type_kind option -> module_element list
+)
+ident(
+  def iter_kind "odoc_module.ml" 274 9066 9068 "odoc_module.ml" 292 9567 9589
+)
+"odoc_module.ml" 275 9097 9103 "odoc_module.ml" 275 9097 9107
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 275 9097 9111 "odoc_module.ml" 275 9097 9113
+type(
+  module_element list
+)
+"odoc_module.ml" 276 9114 9145 "odoc_module.ml" 276 9114 9146
+type(
+  module_element list
+)
+ident(
+  def l "odoc_module.ml" 276 9114 9151 "odoc_module.ml" 276 9114 9152
+)
+"odoc_module.ml" 276 9114 9125 "odoc_module.ml" 276 9114 9147
+type(
+  module_type_kind
+)
+"odoc_module.ml" 276 9114 9120 "odoc_module.ml" 276 9114 9147
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 276 9114 9151 "odoc_module.ml" 276 9114 9152
+type(
+  module_element list
+)
+ident(
+  int_ref l "odoc_module.ml" 276 9114 9145 "odoc_module.ml" 276 9114 9146
+)
+"odoc_module.ml" 277 9153 9186 "odoc_module.ml" 277 9153 9187
+type(
+  module_parameter
+)
+"odoc_module.ml" 277 9153 9189 "odoc_module.ml" 277 9153 9190
+type(
+  module_type_kind
+)
+ident(
+  def k "odoc_module.ml" 277 9153 9196 "odoc_module.ml" 277 9153 9214
+)
+"odoc_module.ml" 277 9153 9164 "odoc_module.ml" 277 9153 9192
+type(
+  module_type_kind
+)
+"odoc_module.ml" 277 9153 9159 "odoc_module.ml" 277 9153 9192
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 277 9153 9196 "odoc_module.ml" 277 9153 9205
+type(
+  module_type_kind option -> module_element list
+)
+ident(
+  int_ref iter_kind "odoc_module.ml" 274 9066 9076 "odoc_module.ml" 274 9066 9085
+)
+"odoc_module.ml" 277 9153 9212 "odoc_module.ml" 277 9153 9213
+type(
+  module_type_kind
+)
+ident(
+  int_ref k "odoc_module.ml" 277 9153 9189 "odoc_module.ml" 277 9153 9190
+)
+"odoc_module.ml" 277 9153 9206 "odoc_module.ml" 277 9153 9214
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 277 9153 9196 "odoc_module.ml" 277 9153 9214
+call(
+  tail
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 278 9215 9245 "odoc_module.ml" 278 9215 9246
+type(
+  module_type_kind
+)
+ident(
+  def k "odoc_module.ml" 279 9255 9263 "odoc_module.ml" 282 9319 9331
+)
+"odoc_module.ml" 278 9215 9248 "odoc_module.ml" 278 9215 9249
+type(
+  string
+)
+"odoc_module.ml" 278 9215 9226 "odoc_module.ml" 278 9215 9251
+type(
+  module_type_kind
+)
+"odoc_module.ml" 278 9215 9221 "odoc_module.ml" 278 9215 9251
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 279 9255 9266 "odoc_module.ml" 279 9255 9271
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 273 9022 9049 "odoc_module.ml" 273 9022 9054
+)
+"odoc_module.ml" 280 9277 9287 "odoc_module.ml" 280 9277 9296
+type(
+  module_type_kind option -> module_element list
+)
+ident(
+  int_ref iter_kind "odoc_module.ml" 274 9066 9076 "odoc_module.ml" 274 9066 9085
+)
+"odoc_module.ml" 280 9277 9303 "odoc_module.ml" 280 9277 9304
+type(
+  module_type_kind
+)
+ident(
+  int_ref k "odoc_module.ml" 278 9215 9245 "odoc_module.ml" 278 9215 9246
+)
+"odoc_module.ml" 280 9277 9297 "odoc_module.ml" 280 9277 9305
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 280 9277 9287 "odoc_module.ml" 280 9277 9305
+call(
+  tail
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 282 9319 9329 "odoc_module.ml" 282 9319 9331
+type(
+  module_element list
+)
+"odoc_module.ml" 279 9255 9263 "odoc_module.ml" 282 9319 9331
+type(
+  module_element list
+)
+"odoc_module.ml" 283 9332 9362 "odoc_module.ml" 283 9332 9365
+type(
+  module_type_alias
+)
+ident(
+  def mta "odoc_module.ml" 284 9370 9378 "odoc_module.ml" 289 9511 9523
+)
+"odoc_module.ml" 283 9332 9343 "odoc_module.ml" 283 9332 9366
+type(
+  module_type_kind
+)
+"odoc_module.ml" 283 9332 9338 "odoc_module.ml" 283 9332 9366
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 284 9370 9381 "odoc_module.ml" 284 9370 9386
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 273 9022 9049 "odoc_module.ml" 273 9022 9054
+)
+"odoc_module.ml" 285 9392 9408 "odoc_module.ml" 285 9392 9411
+type(
+  module_type_alias
+)
+ident(
+  int_ref mta "odoc_module.ml" 283 9332 9362 "odoc_module.ml" 283 9332 9365
+)
+"odoc_module.ml" 285 9392 9408 "odoc_module.ml" 285 9392 9422
+type(
+  t_module_type option
+)
+"odoc_module.ml" 286 9428 9440 "odoc_module.ml" 286 9428 9444
+type(
+  t_module_type option
+)
+"odoc_module.ml" 286 9428 9448 "odoc_module.ml" 286 9428 9450
+type(
+  module_element list
+)
+"odoc_module.ml" 287 9451 9468 "odoc_module.ml" 287 9451 9470
+type(
+  t_module_type
+)
+ident(
+  def mt "odoc_module.ml" 287 9451 9474 "odoc_module.ml" 287 9451 9497
+)
+"odoc_module.ml" 287 9451 9463 "odoc_module.ml" 287 9451 9470
+type(
+  t_module_type option
+)
+"odoc_module.ml" 287 9451 9474 "odoc_module.ml" 287 9451 9494
+type(
+  ?trans:bool -> t_module_type -> module_element list
+)
+ident(
+  int_ref module_type_elements "odoc_module.ml" 273 9022 9026 "odoc_module.ml" 273 9022 9046
+)
+"odoc_module.ml" 287 9451 9495 "odoc_module.ml" 287 9451 9497
+type(
+  t_module_type
+)
+ident(
+  int_ref mt "odoc_module.ml" 287 9451 9468 "odoc_module.ml" 287 9451 9470
+)
+"odoc_module.ml" 287 9451 9474 "odoc_module.ml" 287 9451 9497
+call(
+  tail
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 285 9392 9402 "odoc_module.ml" 287 9451 9497
+type(
+  module_element list
+)
+"odoc_module.ml" 289 9511 9521 "odoc_module.ml" 289 9511 9523
+type(
+  module_element list
+)
+"odoc_module.ml" 284 9370 9378 "odoc_module.ml" 289 9511 9523
+type(
+  module_element list
+)
+"odoc_module.ml" 290 9524 9553 "odoc_module.ml" 290 9524 9554
+type(
+  string
+)
+"odoc_module.ml" 290 9524 9533 "odoc_module.ml" 290 9524 9555
+type(
+  module_type_kind
+)
+"odoc_module.ml" 290 9524 9528 "odoc_module.ml" 290 9524 9555
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 290 9524 9559 "odoc_module.ml" 290 9524 9561
+type(
+  module_element list
+)
+"odoc_module.ml" 274 9066 9088 "odoc_module.ml" 290 9524 9561
+type(
+  module_type_kind option -> module_element list
+)
+"odoc_module.ml" 292 9567 9569 "odoc_module.ml" 292 9567 9578
+type(
+  module_type_kind option -> module_element list
+)
+ident(
+  int_ref iter_kind "odoc_module.ml" 274 9066 9076 "odoc_module.ml" 274 9066 9085
+)
+"odoc_module.ml" 292 9567 9579 "odoc_module.ml" 292 9567 9581
+type(
+  t_module_type
+)
+ident(
+  int_ref mt "odoc_module.ml" 273 9022 9061 "odoc_module.ml" 273 9022 9063
+)
+"odoc_module.ml" 292 9567 9579 "odoc_module.ml" 292 9567 9589
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 292 9567 9569 "odoc_module.ml" 292 9567 9589
+call(
+  tail
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 274 9066 9068 "odoc_module.ml" 292 9567 9589
+type(
+  module_element list
+)
+"odoc_module.ml" 296 9724 9728 "odoc_module.ml" 296 9724 9741
+type(
+  ?trans:bool -> t_module -> Odoc_value.t_value list
+)
+ident(
+  def module_values "odoc_module.ml" 300 9939 9939 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 296 9724 9744 "odoc_module.ml" 296 9724 9749
+type(
+  bool
+)
+"odoc_module.ml" 296 9724 9750 "odoc_module.ml" 296 9724 9754
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 296 9724 9750 "odoc_module.ml" 296 9724 9754
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 296 9724 9756 "odoc_module.ml" 296 9724 9757
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 296 9724 9760 "odoc_module.ml" 296 9724 9793
+)
+"odoc_module.ml" 296 9724 9760 "odoc_module.ml" 296 9724 9766
+type(
+  module_element list -> Odoc_value.t_value list
+)
+ident(
+  int_ref values "odoc_module.ml" 110 4930 4934 "odoc_module.ml" 110 4930 4940
+)
+"odoc_module.ml" 296 9724 9768 "odoc_module.ml" 296 9724 9783
+type(
+  ?trans:bool -> t_module -> module_element list
+)
+ident(
+  int_ref module_elements "odoc_module.ml" 221 7315 7323 "odoc_module.ml" 221 7315 7338
+)
+"odoc_module.ml" 296 9724 9785 "odoc_module.ml" 296 9724 9790
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 296 9724 9744 "odoc_module.ml" 296 9724 9749
+)
+"odoc_module.ml" 296 9724 9791 "odoc_module.ml" 296 9724 9792
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 296 9724 9756 "odoc_module.ml" 296 9724 9757
+)
+"odoc_module.ml" 296 9724 9767 "odoc_module.ml" 296 9724 9793
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 296 9724 9760 "odoc_module.ml" 296 9724 9793
+call(
+  tail
+)
+type(
+  Odoc_value.t_value list
+)
+"odoc_module.ml" 300 9939 9943 "odoc_module.ml" 300 9939 9959
+type(
+  ?trans:bool -> t_module -> Odoc_value.t_value list
+)
+ident(
+  def module_functions "odoc_module.ml" 307 10221 10221 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 300 9939 9962 "odoc_module.ml" 300 9939 9967
+type(
+  bool
+)
+"odoc_module.ml" 300 9939 9968 "odoc_module.ml" 300 9939 9972
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 300 9939 9968 "odoc_module.ml" 300 9939 9972
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 300 9939 9974 "odoc_module.ml" 300 9939 9975
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 301 9978 9980 "odoc_module.ml" 303 10032 10071
+)
+"odoc_module.ml" 301 9978 9980 "odoc_module.ml" 301 9978 9991
+type(
+  (Odoc_value.t_value -> bool) ->
+  Odoc_value.t_value list -> Odoc_value.t_value list
+)
+ident(
+  ext_ref List.filter
+)
+"odoc_module.ml" 302 9992 10001 "odoc_module.ml" 302 9992 10002
+type(
+  Odoc_value.t_value
+)
+ident(
+  def v "odoc_module.ml" 302 9992 10006 "odoc_module.ml" 302 9992 10030
+)
+"odoc_module.ml" 302 9992 10006 "odoc_module.ml" 302 9992 10028
+type(
+  Odoc_value.t_value -> bool
+)
+ident(
+  ext_ref Odoc_value.is_function
+)
+"odoc_module.ml" 302 9992 10029 "odoc_module.ml" 302 9992 10030
+type(
+  Odoc_value.t_value
+)
+ident(
+  int_ref v "odoc_module.ml" 302 9992 10001 "odoc_module.ml" 302 9992 10002
+)
+"odoc_module.ml" 302 9992 10006 "odoc_module.ml" 302 9992 10030
+call(
+  tail
+)
+type(
+  bool
+)
+"odoc_module.ml" 302 9992 9996 "odoc_module.ml" 302 9992 10031
+type(
+  Odoc_value.t_value -> bool
+)
+"odoc_module.ml" 303 10032 10037 "odoc_module.ml" 303 10032 10043
+type(
+  module_element list -> Odoc_value.t_value list
+)
+ident(
+  int_ref values "odoc_module.ml" 110 4930 4934 "odoc_module.ml" 110 4930 4940
+)
+"odoc_module.ml" 303 10032 10045 "odoc_module.ml" 303 10032 10060
+type(
+  ?trans:bool -> t_module -> module_element list
+)
+ident(
+  int_ref module_elements "odoc_module.ml" 221 7315 7323 "odoc_module.ml" 221 7315 7338
+)
+"odoc_module.ml" 303 10032 10062 "odoc_module.ml" 303 10032 10067
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 300 9939 9962 "odoc_module.ml" 300 9939 9967
+)
+"odoc_module.ml" 303 10032 10068 "odoc_module.ml" 303 10032 10069
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 300 9939 9974 "odoc_module.ml" 300 9939 9975
+)
+"odoc_module.ml" 303 10032 10044 "odoc_module.ml" 303 10032 10070
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 303 10032 10036 "odoc_module.ml" 303 10032 10071
+call(
+  stack
+)
+type(
+  Odoc_value.t_value list
+)
+"odoc_module.ml" 301 9978 9980 "odoc_module.ml" 303 10032 10071
+call(
+  tail
+)
+type(
+  Odoc_value.t_value list
+)
+"odoc_module.ml" 307 10221 10225 "odoc_module.ml" 307 10221 10245
+type(
+  ?trans:bool -> t_module -> Odoc_value.t_value list
+)
+ident(
+  def module_simple_values "odoc_module.ml" 314 10499 10499 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 307 10221 10248 "odoc_module.ml" 307 10221 10253
+type(
+  bool
+)
+"odoc_module.ml" 307 10221 10254 "odoc_module.ml" 307 10221 10258
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 307 10221 10254 "odoc_module.ml" 307 10221 10258
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 307 10221 10260 "odoc_module.ml" 307 10221 10261
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 308 10264 10268 "odoc_module.ml" 310 10326 10365
+)
+"odoc_module.ml" 308 10264 10268 "odoc_module.ml" 308 10264 10279
+type(
+  (Odoc_value.t_value -> bool) ->
+  Odoc_value.t_value list -> Odoc_value.t_value list
+)
+ident(
+  ext_ref List.filter
+)
+"odoc_module.ml" 309 10280 10289 "odoc_module.ml" 309 10280 10290
+type(
+  Odoc_value.t_value
+)
+ident(
+  def v "odoc_module.ml" 309 10280 10294 "odoc_module.ml" 309 10280 10324
+)
+"odoc_module.ml" 309 10280 10294 "odoc_module.ml" 309 10280 10297
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"odoc_module.ml" 309 10280 10299 "odoc_module.ml" 309 10280 10321
+type(
+  Odoc_value.t_value -> bool
+)
+ident(
+  ext_ref Odoc_value.is_function
+)
+"odoc_module.ml" 309 10280 10322 "odoc_module.ml" 309 10280 10323
+type(
+  Odoc_value.t_value
+)
+ident(
+  int_ref v "odoc_module.ml" 309 10280 10289 "odoc_module.ml" 309 10280 10290
+)
+"odoc_module.ml" 309 10280 10298 "odoc_module.ml" 309 10280 10324
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_module.ml" 309 10280 10294 "odoc_module.ml" 309 10280 10324
+type(
+  bool
+)
+"odoc_module.ml" 309 10280 10284 "odoc_module.ml" 309 10280 10325
+type(
+  Odoc_value.t_value -> bool
+)
+"odoc_module.ml" 310 10326 10331 "odoc_module.ml" 310 10326 10337
+type(
+  module_element list -> Odoc_value.t_value list
+)
+ident(
+  int_ref values "odoc_module.ml" 110 4930 4934 "odoc_module.ml" 110 4930 4940
+)
+"odoc_module.ml" 310 10326 10339 "odoc_module.ml" 310 10326 10354
+type(
+  ?trans:bool -> t_module -> module_element list
+)
+ident(
+  int_ref module_elements "odoc_module.ml" 221 7315 7323 "odoc_module.ml" 221 7315 7338
+)
+"odoc_module.ml" 310 10326 10356 "odoc_module.ml" 310 10326 10361
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 307 10221 10248 "odoc_module.ml" 307 10221 10253
+)
+"odoc_module.ml" 310 10326 10362 "odoc_module.ml" 310 10326 10363
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 307 10221 10260 "odoc_module.ml" 307 10221 10261
+)
+"odoc_module.ml" 310 10326 10338 "odoc_module.ml" 310 10326 10364
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 310 10326 10330 "odoc_module.ml" 310 10326 10365
+call(
+  stack
+)
+type(
+  Odoc_value.t_value list
+)
+"odoc_module.ml" 308 10264 10268 "odoc_module.ml" 310 10326 10365
+call(
+  tail
+)
+type(
+  Odoc_value.t_value list
+)
+"odoc_module.ml" 314 10499 10503 "odoc_module.ml" 314 10499 10515
+type(
+  ?trans:bool -> t_module -> Odoc_type.t_type list
+)
+ident(
+  def module_types "odoc_module.ml" 318 10710 10710 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 314 10499 10518 "odoc_module.ml" 314 10499 10523
+type(
+  bool
+)
+"odoc_module.ml" 314 10499 10524 "odoc_module.ml" 314 10499 10528
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 314 10499 10524 "odoc_module.ml" 314 10499 10528
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 314 10499 10530 "odoc_module.ml" 314 10499 10531
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 314 10499 10534 "odoc_module.ml" 314 10499 10566
+)
+"odoc_module.ml" 314 10499 10534 "odoc_module.ml" 314 10499 10539
+type(
+  module_element list -> Odoc_type.t_type list
+)
+ident(
+  int_ref types "odoc_module.ml" 121 5148 5152 "odoc_module.ml" 121 5148 5157
+)
+"odoc_module.ml" 314 10499 10541 "odoc_module.ml" 314 10499 10556
+type(
+  ?trans:bool -> t_module -> module_element list
+)
+ident(
+  int_ref module_elements "odoc_module.ml" 221 7315 7323 "odoc_module.ml" 221 7315 7338
+)
+"odoc_module.ml" 314 10499 10558 "odoc_module.ml" 314 10499 10563
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 314 10499 10518 "odoc_module.ml" 314 10499 10523
+)
+"odoc_module.ml" 314 10499 10564 "odoc_module.ml" 314 10499 10565
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 314 10499 10530 "odoc_module.ml" 314 10499 10531
+)
+"odoc_module.ml" 314 10499 10540 "odoc_module.ml" 314 10499 10566
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 314 10499 10534 "odoc_module.ml" 314 10499 10566
+call(
+  tail
+)
+type(
+  Odoc_type.t_type list
+)
+"odoc_module.ml" 318 10710 10714 "odoc_module.ml" 318 10710 10736
+type(
+  ?trans:bool -> t_module -> Odoc_extension.t_type_extension list
+)
+ident(
+  def module_type_extensions "odoc_module.ml" 322 10936 10936 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 318 10710 10739 "odoc_module.ml" 318 10710 10744
+type(
+  bool
+)
+"odoc_module.ml" 318 10710 10745 "odoc_module.ml" 318 10710 10749
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 318 10710 10745 "odoc_module.ml" 318 10710 10749
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 318 10710 10751 "odoc_module.ml" 318 10710 10752
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 318 10710 10755 "odoc_module.ml" 318 10710 10797
+)
+"odoc_module.ml" 318 10710 10755 "odoc_module.ml" 318 10710 10770
+type(
+  module_element list -> Odoc_extension.t_type_extension list
+)
+ident(
+  int_ref type_extensions "odoc_module.ml" 132 5374 5378 "odoc_module.ml" 132 5374 5393
+)
+"odoc_module.ml" 318 10710 10772 "odoc_module.ml" 318 10710 10787
+type(
+  ?trans:bool -> t_module -> module_element list
+)
+ident(
+  int_ref module_elements "odoc_module.ml" 221 7315 7323 "odoc_module.ml" 221 7315 7338
+)
+"odoc_module.ml" 318 10710 10789 "odoc_module.ml" 318 10710 10794
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 318 10710 10739 "odoc_module.ml" 318 10710 10744
+)
+"odoc_module.ml" 318 10710 10795 "odoc_module.ml" 318 10710 10796
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 318 10710 10751 "odoc_module.ml" 318 10710 10752
+)
+"odoc_module.ml" 318 10710 10771 "odoc_module.ml" 318 10710 10797
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 318 10710 10755 "odoc_module.ml" 318 10710 10797
+call(
+  tail
+)
+type(
+  Odoc_extension.t_type_extension list
+)
+"odoc_module.ml" 322 10936 10940 "odoc_module.ml" 322 10936 10957
+type(
+  ?trans:bool -> t_module -> Odoc_exception.t_exception list
+)
+ident(
+  def module_exceptions "odoc_module.ml" 326 11149 11149 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 322 10936 10960 "odoc_module.ml" 322 10936 10965
+type(
+  bool
+)
+"odoc_module.ml" 322 10936 10966 "odoc_module.ml" 322 10936 10970
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 322 10936 10966 "odoc_module.ml" 322 10936 10970
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 322 10936 10972 "odoc_module.ml" 322 10936 10973
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 322 10936 10976 "odoc_module.ml" 322 10936 11013
+)
+"odoc_module.ml" 322 10936 10976 "odoc_module.ml" 322 10936 10986
+type(
+  module_element list -> Odoc_exception.t_exception list
+)
+ident(
+  int_ref exceptions "odoc_module.ml" 143 5615 5619 "odoc_module.ml" 143 5615 5629
+)
+"odoc_module.ml" 322 10936 10988 "odoc_module.ml" 322 10936 11003
+type(
+  ?trans:bool -> t_module -> module_element list
+)
+ident(
+  int_ref module_elements "odoc_module.ml" 221 7315 7323 "odoc_module.ml" 221 7315 7338
+)
+"odoc_module.ml" 322 10936 11005 "odoc_module.ml" 322 10936 11010
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 322 10936 10960 "odoc_module.ml" 322 10936 10965
+)
+"odoc_module.ml" 322 10936 11011 "odoc_module.ml" 322 10936 11012
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 322 10936 10972 "odoc_module.ml" 322 10936 10973
+)
+"odoc_module.ml" 322 10936 10987 "odoc_module.ml" 322 10936 11013
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 322 10936 10976 "odoc_module.ml" 322 10936 11013
+call(
+  tail
+)
+type(
+  Odoc_exception.t_exception list
+)
+"odoc_module.ml" 326 11149 11153 "odoc_module.ml" 326 11149 11167
+type(
+  ?trans:bool -> t_module -> Odoc_class.t_class list
+)
+ident(
+  def module_classes "odoc_module.ml" 330 11360 11360 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 326 11149 11170 "odoc_module.ml" 326 11149 11175
+type(
+  bool
+)
+"odoc_module.ml" 326 11149 11176 "odoc_module.ml" 326 11149 11180
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 326 11149 11176 "odoc_module.ml" 326 11149 11180
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 326 11149 11182 "odoc_module.ml" 326 11149 11183
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 326 11149 11186 "odoc_module.ml" 326 11149 11220
+)
+"odoc_module.ml" 326 11149 11186 "odoc_module.ml" 326 11149 11193
+type(
+  module_element list -> Odoc_class.t_class list
+)
+ident(
+  int_ref classes "odoc_module.ml" 154 5843 5847 "odoc_module.ml" 154 5843 5854
+)
+"odoc_module.ml" 326 11149 11195 "odoc_module.ml" 326 11149 11210
+type(
+  ?trans:bool -> t_module -> module_element list
+)
+ident(
+  int_ref module_elements "odoc_module.ml" 221 7315 7323 "odoc_module.ml" 221 7315 7338
+)
+"odoc_module.ml" 326 11149 11212 "odoc_module.ml" 326 11149 11217
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 326 11149 11170 "odoc_module.ml" 326 11149 11175
+)
+"odoc_module.ml" 326 11149 11218 "odoc_module.ml" 326 11149 11219
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 326 11149 11182 "odoc_module.ml" 326 11149 11183
+)
+"odoc_module.ml" 326 11149 11194 "odoc_module.ml" 326 11149 11220
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 326 11149 11186 "odoc_module.ml" 326 11149 11220
+call(
+  tail
+)
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 330 11360 11364 "odoc_module.ml" 330 11360 11382
+type(
+  ?trans:bool -> t_module -> Odoc_class.t_class_type list
+)
+ident(
+  def module_class_types "odoc_module.ml" 334 11575 11575 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 330 11360 11385 "odoc_module.ml" 330 11360 11390
+type(
+  bool
+)
+"odoc_module.ml" 330 11360 11391 "odoc_module.ml" 330 11360 11395
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 330 11360 11391 "odoc_module.ml" 330 11360 11395
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 330 11360 11397 "odoc_module.ml" 330 11360 11398
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 330 11360 11401 "odoc_module.ml" 330 11360 11439
+)
+"odoc_module.ml" 330 11360 11401 "odoc_module.ml" 330 11360 11412
+type(
+  module_element list -> Odoc_class.t_class_type list
+)
+ident(
+  int_ref class_types "odoc_module.ml" 165 6068 6072 "odoc_module.ml" 165 6068 6083
+)
+"odoc_module.ml" 330 11360 11414 "odoc_module.ml" 330 11360 11429
+type(
+  ?trans:bool -> t_module -> module_element list
+)
+ident(
+  int_ref module_elements "odoc_module.ml" 221 7315 7323 "odoc_module.ml" 221 7315 7338
+)
+"odoc_module.ml" 330 11360 11431 "odoc_module.ml" 330 11360 11436
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 330 11360 11385 "odoc_module.ml" 330 11360 11390
+)
+"odoc_module.ml" 330 11360 11437 "odoc_module.ml" 330 11360 11438
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 330 11360 11397 "odoc_module.ml" 330 11360 11398
+)
+"odoc_module.ml" 330 11360 11413 "odoc_module.ml" 330 11360 11439
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 330 11360 11401 "odoc_module.ml" 330 11360 11439
+call(
+  tail
+)
+type(
+  Odoc_class.t_class_type list
+)
+"odoc_module.ml" 334 11575 11579 "odoc_module.ml" 334 11575 11593
+type(
+  ?trans:bool -> t_module -> t_module list
+)
+ident(
+  def module_modules "odoc_module.ml" 338 11787 11787 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 334 11575 11596 "odoc_module.ml" 334 11575 11601
+type(
+  bool
+)
+"odoc_module.ml" 334 11575 11602 "odoc_module.ml" 334 11575 11606
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 334 11575 11602 "odoc_module.ml" 334 11575 11606
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 334 11575 11608 "odoc_module.ml" 334 11575 11609
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 334 11575 11612 "odoc_module.ml" 334 11575 11646
+)
+"odoc_module.ml" 334 11575 11612 "odoc_module.ml" 334 11575 11619
+type(
+  module_element list -> t_module list
+)
+ident(
+  int_ref modules "odoc_module.ml" 176 6300 6304 "odoc_module.ml" 176 6300 6311
+)
+"odoc_module.ml" 334 11575 11621 "odoc_module.ml" 334 11575 11636
+type(
+  ?trans:bool -> t_module -> module_element list
+)
+ident(
+  int_ref module_elements "odoc_module.ml" 221 7315 7323 "odoc_module.ml" 221 7315 7338
+)
+"odoc_module.ml" 334 11575 11638 "odoc_module.ml" 334 11575 11643
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 334 11575 11596 "odoc_module.ml" 334 11575 11601
+)
+"odoc_module.ml" 334 11575 11644 "odoc_module.ml" 334 11575 11645
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 334 11575 11608 "odoc_module.ml" 334 11575 11609
+)
+"odoc_module.ml" 334 11575 11620 "odoc_module.ml" 334 11575 11646
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 334 11575 11612 "odoc_module.ml" 334 11575 11646
+call(
+  tail
+)
+type(
+  t_module list
+)
+"odoc_module.ml" 338 11787 11791 "odoc_module.ml" 338 11787 11810
+type(
+  ?trans:bool -> t_module -> t_module_type list
+)
+ident(
+  def module_module_types "odoc_module.ml" 342 12009 12009 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 338 11787 11813 "odoc_module.ml" 338 11787 11818
+type(
+  bool
+)
+"odoc_module.ml" 338 11787 11819 "odoc_module.ml" 338 11787 11823
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 338 11787 11819 "odoc_module.ml" 338 11787 11823
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 338 11787 11825 "odoc_module.ml" 338 11787 11826
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 338 11787 11829 "odoc_module.ml" 338 11787 11865
+)
+"odoc_module.ml" 338 11787 11829 "odoc_module.ml" 338 11787 11838
+type(
+  module_element list -> t_module_type list
+)
+ident(
+  int_ref mod_types "odoc_module.ml" 187 6527 6531 "odoc_module.ml" 187 6527 6540
+)
+"odoc_module.ml" 338 11787 11840 "odoc_module.ml" 338 11787 11855
+type(
+  ?trans:bool -> t_module -> module_element list
+)
+ident(
+  int_ref module_elements "odoc_module.ml" 221 7315 7323 "odoc_module.ml" 221 7315 7338
+)
+"odoc_module.ml" 338 11787 11857 "odoc_module.ml" 338 11787 11862
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 338 11787 11813 "odoc_module.ml" 338 11787 11818
+)
+"odoc_module.ml" 338 11787 11863 "odoc_module.ml" 338 11787 11864
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 338 11787 11825 "odoc_module.ml" 338 11787 11826
+)
+"odoc_module.ml" 338 11787 11839 "odoc_module.ml" 338 11787 11865
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 338 11787 11829 "odoc_module.ml" 338 11787 11865
+call(
+  tail
+)
+type(
+  t_module_type list
+)
+"odoc_module.ml" 342 12009 12013 "odoc_module.ml" 342 12009 12036
+type(
+  ?trans:bool -> t_module -> included_module list
+)
+ident(
+  def module_included_modules "odoc_module.ml" 346 12235 12235 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 342 12009 12039 "odoc_module.ml" 342 12009 12044
+type(
+  bool
+)
+"odoc_module.ml" 342 12009 12045 "odoc_module.ml" 342 12009 12049
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 342 12009 12045 "odoc_module.ml" 342 12009 12049
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 342 12009 12051 "odoc_module.ml" 342 12009 12052
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 342 12009 12055 "odoc_module.ml" 342 12009 12098
+)
+"odoc_module.ml" 342 12009 12055 "odoc_module.ml" 342 12009 12071
+type(
+  module_element list -> included_module list
+)
+ident(
+  int_ref included_modules "odoc_module.ml" 209 7005 7009 "odoc_module.ml" 209 7005 7025
+)
+"odoc_module.ml" 342 12009 12073 "odoc_module.ml" 342 12009 12088
+type(
+  ?trans:bool -> t_module -> module_element list
+)
+ident(
+  int_ref module_elements "odoc_module.ml" 221 7315 7323 "odoc_module.ml" 221 7315 7338
+)
+"odoc_module.ml" 342 12009 12090 "odoc_module.ml" 342 12009 12095
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 342 12009 12039 "odoc_module.ml" 342 12009 12044
+)
+"odoc_module.ml" 342 12009 12096 "odoc_module.ml" 342 12009 12097
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 342 12009 12051 "odoc_module.ml" 342 12009 12052
+)
+"odoc_module.ml" 342 12009 12072 "odoc_module.ml" 342 12009 12098
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 342 12009 12055 "odoc_module.ml" 342 12009 12098
+call(
+  tail
+)
+type(
+  included_module list
+)
+"odoc_module.ml" 346 12235 12239 "odoc_module.ml" 346 12235 12254
+type(
+  ?trans:bool -> t_module -> Odoc_types.text list
+)
+ident(
+  def module_comments "odoc_module.ml" 350 12449 12449 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 346 12235 12257 "odoc_module.ml" 346 12235 12262
+type(
+  bool
+)
+"odoc_module.ml" 346 12235 12263 "odoc_module.ml" 346 12235 12267
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 346 12235 12263 "odoc_module.ml" 346 12235 12267
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 346 12235 12269 "odoc_module.ml" 346 12235 12270
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 346 12235 12273 "odoc_module.ml" 346 12235 12308
+)
+"odoc_module.ml" 346 12235 12273 "odoc_module.ml" 346 12235 12281
+type(
+  module_element list -> Odoc_types.text list
+)
+ident(
+  int_ref comments "odoc_module.ml" 198 6765 6769 "odoc_module.ml" 198 6765 6777
+)
+"odoc_module.ml" 346 12235 12283 "odoc_module.ml" 346 12235 12298
+type(
+  ?trans:bool -> t_module -> module_element list
+)
+ident(
+  int_ref module_elements "odoc_module.ml" 221 7315 7323 "odoc_module.ml" 221 7315 7338
+)
+"odoc_module.ml" 346 12235 12300 "odoc_module.ml" 346 12235 12305
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 346 12235 12257 "odoc_module.ml" 346 12235 12262
+)
+"odoc_module.ml" 346 12235 12306 "odoc_module.ml" 346 12235 12307
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 346 12235 12269 "odoc_module.ml" 346 12235 12270
+)
+"odoc_module.ml" 346 12235 12282 "odoc_module.ml" 346 12235 12308
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 346 12235 12273 "odoc_module.ml" 346 12235 12308
+call(
+  tail
+)
+type(
+  Odoc_types.text list
+)
+"odoc_module.ml" 350 12449 12457 "odoc_module.ml" 350 12449 12479
+type(
+  ?trans:bool ->
+  t_module_type -> (module_parameter * Odoc_types.text option) list
+)
+ident(
+  def module_type_parameters "odoc_module.ml" 350 12449 12449 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 350 12449 12482 "odoc_module.ml" 350 12449 12487
+type(
+  bool
+)
+"odoc_module.ml" 350 12449 12488 "odoc_module.ml" 350 12449 12492
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 350 12449 12488 "odoc_module.ml" 350 12449 12492
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 350 12449 12494 "odoc_module.ml" 350 12449 12496
+type(
+  t_module_type
+)
+ident(
+  def mt "odoc_module.ml" 351 12499 12501 "odoc_module.ml" 386 13509 13526
+)
+"odoc_module.ml" 351 12499 12509 "odoc_module.ml" 351 12499 12513
+type(
+  module_type_kind option -> (module_parameter * Odoc_types.text option) list
+)
+ident(
+  def iter "odoc_module.ml" 351 12499 12501 "odoc_module.ml" 386 13509 13526
+)
+"odoc_module.ml" 351 12499 12514 "odoc_module.ml" 351 12499 12515
+type(
+  module_type_kind option
+)
+ident(
+  def k "odoc_module.ml" 352 12518 12522 "odoc_module.ml" 384 13493 13503
+)
+"odoc_module.ml" 352 12518 12528 "odoc_module.ml" 352 12518 12529
+type(
+  module_type_kind option
+)
+ident(
+  int_ref k "odoc_module.ml" 351 12499 12514 "odoc_module.ml" 351 12499 12515
+)
+"odoc_module.ml" 353 12535 12568 "odoc_module.ml" 353 12535 12569
+type(
+  module_parameter
+)
+ident(
+  def p "odoc_module.ml" 354 12579 12587 "odoc_module.ml" 367 13040 13073
+)
+"odoc_module.ml" 353 12535 12571 "odoc_module.ml" 353 12535 12573
+type(
+  module_type_kind
+)
+ident(
+  def k2 "odoc_module.ml" 354 12579 12587 "odoc_module.ml" 367 13040 13073
+)
+"odoc_module.ml" 353 12535 12546 "odoc_module.ml" 353 12535 12575
+type(
+  module_type_kind
+)
+"odoc_module.ml" 353 12535 12541 "odoc_module.ml" 353 12535 12575
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 354 12579 12591 "odoc_module.ml" 354 12579 12596
+type(
+  module_parameter * Odoc_types.text option
+)
+ident(
+  def param "odoc_module.ml" 367 13040 13048 "odoc_module.ml" 367 13040 13073
+)
+"odoc_module.ml" 357 12753 12769 "odoc_module.ml" 357 12753 12771
+type(
+  t_module_type
+)
+ident(
+  int_ref mt "odoc_module.ml" 350 12449 12494 "odoc_module.ml" 350 12449 12496
+)
+"odoc_module.ml" 357 12753 12769 "odoc_module.ml" 357 12753 12779
+type(
+  Odoc_types.info option
+)
+"odoc_module.ml" 358 12785 12797 "odoc_module.ml" 358 12785 12801
+type(
+  Odoc_types.info option
+)
+"odoc_module.ml" 358 12785 12806 "odoc_module.ml" 358 12785 12807
+type(
+  module_parameter
+)
+ident(
+  int_ref p "odoc_module.ml" 353 12535 12568 "odoc_module.ml" 353 12535 12569
+)
+"odoc_module.ml" 358 12785 12809 "odoc_module.ml" 358 12785 12813
+type(
+  Odoc_types.text option
+)
+"odoc_module.ml" 358 12785 12805 "odoc_module.ml" 358 12785 12814
+type(
+  module_parameter * Odoc_types.text option
+)
+"odoc_module.ml" 359 12815 12832 "odoc_module.ml" 359 12815 12833
+type(
+  Odoc_types.info
+)
+ident(
+  def i "odoc_module.ml" 360 12837 12851 "odoc_module.ml" 365 13001 13028
+)
+"odoc_module.ml" 359 12815 12827 "odoc_module.ml" 359 12815 12833
+type(
+  Odoc_types.info option
+)
+"odoc_module.ml" 361 12855 12875 "odoc_module.ml" 361 12855 12876
+type(
+  Odoc_types.text
+)
+ident(
+  def d "odoc_module.ml" 362 12925 12941 "odoc_module.ml" 362 12925 12952
+)
+"odoc_module.ml" 361 12855 12879 "odoc_module.ml" 361 12855 12889
+type(
+  string -> Odoc_types.param list -> Odoc_types.text
+)
+ident(
+  ext_ref List.assoc
+)
+"odoc_module.ml" 361 12855 12890 "odoc_module.ml" 361 12855 12891
+type(
+  module_parameter
+)
+ident(
+  int_ref p "odoc_module.ml" 353 12535 12568 "odoc_module.ml" 353 12535 12569
+)
+"odoc_module.ml" 361 12855 12890 "odoc_module.ml" 361 12855 12899
+type(
+  string
+)
+"odoc_module.ml" 361 12855 12900 "odoc_module.ml" 361 12855 12901
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref i "odoc_module.ml" 359 12815 12832 "odoc_module.ml" 359 12815 12833
+)
+"odoc_module.ml" 361 12855 12900 "odoc_module.ml" 361 12855 12921
+type(
+  Odoc_types.param list
+)
+"odoc_module.ml" 361 12855 12879 "odoc_module.ml" 361 12855 12921
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+"odoc_module.ml" 362 12925 12942 "odoc_module.ml" 362 12925 12943
+type(
+  module_parameter
+)
+ident(
+  int_ref p "odoc_module.ml" 353 12535 12568 "odoc_module.ml" 353 12535 12569
+)
+"odoc_module.ml" 362 12925 12950 "odoc_module.ml" 362 12925 12951
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref d "odoc_module.ml" 361 12855 12875 "odoc_module.ml" 361 12855 12876
+)
+"odoc_module.ml" 362 12925 12945 "odoc_module.ml" 362 12925 12951
+type(
+  Odoc_types.text option
+)
+"odoc_module.ml" 362 12925 12941 "odoc_module.ml" 362 12925 12952
+type(
+  module_parameter * Odoc_types.text option
+)
+"odoc_module.ml" 361 12855 12871 "odoc_module.ml" 362 12925 12952
+type(
+  module_parameter * Odoc_types.text option
+)
+"odoc_module.ml" 364 12972 12988 "odoc_module.ml" 364 12972 12997
+type(
+  exn
+)
+"odoc_module.ml" 365 13001 13020 "odoc_module.ml" 365 13001 13021
+type(
+  module_parameter
+)
+ident(
+  int_ref p "odoc_module.ml" 353 12535 12568 "odoc_module.ml" 353 12535 12569
+)
+"odoc_module.ml" 365 13001 13023 "odoc_module.ml" 365 13001 13027
+type(
+  Odoc_types.text option
+)
+"odoc_module.ml" 365 13001 13019 "odoc_module.ml" 365 13001 13028
+type(
+  module_parameter * Odoc_types.text option
+)
+"odoc_module.ml" 360 12837 12851 "odoc_module.ml" 365 13001 13028
+type(
+  module_parameter * Odoc_types.text option
+)
+"odoc_module.ml" 357 12753 12763 "odoc_module.ml" 365 13001 13028
+type(
+  module_parameter * Odoc_types.text option
+)
+"odoc_module.ml" 367 13040 13048 "odoc_module.ml" 367 13040 13053
+type(
+  module_parameter * Odoc_types.text option
+)
+ident(
+  int_ref param "odoc_module.ml" 354 12579 12591 "odoc_module.ml" 354 12579 12596
+)
+"odoc_module.ml" 367 13040 13058 "odoc_module.ml" 367 13040 13062
+type(
+  module_type_kind option -> (module_parameter * Odoc_types.text option) list
+)
+ident(
+  int_ref iter "odoc_module.ml" 351 12499 12509 "odoc_module.ml" 351 12499 12513
+)
+"odoc_module.ml" 367 13040 13069 "odoc_module.ml" 367 13040 13071
+type(
+  module_type_kind
+)
+ident(
+  int_ref k2 "odoc_module.ml" 353 12535 12571 "odoc_module.ml" 353 12535 12573
+)
+"odoc_module.ml" 367 13040 13063 "odoc_module.ml" 367 13040 13072
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 367 13040 13057 "odoc_module.ml" 367 13040 13073
+call(
+  stack
+)
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 367 13040 13048 "odoc_module.ml" 367 13040 13073
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 354 12579 12587 "odoc_module.ml" 367 13040 13073
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 368 13074 13104 "odoc_module.ml" 368 13074 13107
+type(
+  module_type_alias
+)
+ident(
+  def mta "odoc_module.ml" 369 13112 13120 "odoc_module.ml" 374 13264 13276
+)
+"odoc_module.ml" 368 13074 13085 "odoc_module.ml" 368 13074 13108
+type(
+  module_type_kind
+)
+"odoc_module.ml" 368 13074 13080 "odoc_module.ml" 368 13074 13108
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 369 13112 13123 "odoc_module.ml" 369 13112 13128
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 350 12449 12482 "odoc_module.ml" 350 12449 12487
+)
+"odoc_module.ml" 370 13134 13150 "odoc_module.ml" 370 13134 13153
+type(
+  module_type_alias
+)
+ident(
+  int_ref mta "odoc_module.ml" 368 13074 13104 "odoc_module.ml" 368 13074 13107
+)
+"odoc_module.ml" 370 13134 13150 "odoc_module.ml" 370 13134 13164
+type(
+  t_module_type option
+)
+"odoc_module.ml" 371 13170 13182 "odoc_module.ml" 371 13170 13186
+type(
+  t_module_type option
+)
+"odoc_module.ml" 371 13170 13190 "odoc_module.ml" 371 13170 13192
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 372 13193 13210 "odoc_module.ml" 372 13193 13213
+type(
+  t_module_type
+)
+ident(
+  def mt2 "odoc_module.ml" 372 13193 13217 "odoc_module.ml" 372 13193 13250
+)
+"odoc_module.ml" 372 13193 13205 "odoc_module.ml" 372 13193 13213
+type(
+  t_module_type option
+)
+"odoc_module.ml" 372 13193 13217 "odoc_module.ml" 372 13193 13239
+type(
+  ?trans:bool ->
+  t_module_type -> (module_parameter * Odoc_types.text option) list
+)
+ident(
+  int_ref module_type_parameters "odoc_module.ml" 350 12449 12457 "odoc_module.ml" 350 12449 12479
+)
+"odoc_module.ml" 372 13193 13241 "odoc_module.ml" 372 13193 13246
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 350 12449 12482 "odoc_module.ml" 350 12449 12487
+)
+"odoc_module.ml" 372 13193 13247 "odoc_module.ml" 372 13193 13250
+type(
+  t_module_type
+)
+ident(
+  int_ref mt2 "odoc_module.ml" 372 13193 13210 "odoc_module.ml" 372 13193 13213
+)
+"odoc_module.ml" 372 13193 13217 "odoc_module.ml" 372 13193 13250
+call(
+  tail
+)
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 370 13134 13144 "odoc_module.ml" 372 13193 13250
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 374 13264 13274 "odoc_module.ml" 374 13264 13276
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 369 13112 13120 "odoc_module.ml" 374 13264 13276
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 375 13277 13307 "odoc_module.ml" 375 13277 13308
+type(
+  module_type_kind
+)
+ident(
+  def k "odoc_module.ml" 376 13317 13325 "odoc_module.ml" 379 13376 13388
+)
+"odoc_module.ml" 375 13277 13310 "odoc_module.ml" 375 13277 13311
+type(
+  string
+)
+"odoc_module.ml" 375 13277 13288 "odoc_module.ml" 375 13277 13313
+type(
+  module_type_kind
+)
+"odoc_module.ml" 375 13277 13283 "odoc_module.ml" 375 13277 13313
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 376 13317 13328 "odoc_module.ml" 376 13317 13333
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 350 12449 12482 "odoc_module.ml" 350 12449 12487
+)
+"odoc_module.ml" 377 13339 13349 "odoc_module.ml" 377 13339 13353
+type(
+  module_type_kind option -> (module_parameter * Odoc_types.text option) list
+)
+ident(
+  int_ref iter "odoc_module.ml" 351 12499 12509 "odoc_module.ml" 351 12499 12513
+)
+"odoc_module.ml" 377 13339 13360 "odoc_module.ml" 377 13339 13361
+type(
+  module_type_kind
+)
+ident(
+  int_ref k "odoc_module.ml" 375 13277 13307 "odoc_module.ml" 375 13277 13308
+)
+"odoc_module.ml" 377 13339 13354 "odoc_module.ml" 377 13339 13362
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 377 13339 13349 "odoc_module.ml" 377 13339 13362
+call(
+  tail
+)
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 379 13376 13386 "odoc_module.ml" 379 13376 13388
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 376 13317 13325 "odoc_module.ml" 379 13376 13388
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 380 13389 13420 "odoc_module.ml" 380 13389 13421
+type(
+  module_element list
+)
+"odoc_module.ml" 380 13389 13400 "odoc_module.ml" 380 13389 13422
+type(
+  module_type_kind
+)
+"odoc_module.ml" 380 13389 13395 "odoc_module.ml" 380 13389 13422
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 381 13426 13434 "odoc_module.ml" 381 13426 13436
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 382 13437 13468 "odoc_module.ml" 382 13437 13469
+type(
+  string
+)
+"odoc_module.ml" 382 13437 13448 "odoc_module.ml" 382 13437 13470
+type(
+  module_type_kind
+)
+"odoc_module.ml" 382 13437 13443 "odoc_module.ml" 382 13437 13470
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 382 13437 13474 "odoc_module.ml" 382 13437 13476
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 383 13477 13485 "odoc_module.ml" 383 13477 13489
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 384 13493 13501 "odoc_module.ml" 384 13493 13503
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 352 12518 12522 "odoc_module.ml" 384 13493 13503
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 386 13509 13511 "odoc_module.ml" 386 13509 13515
+type(
+  module_type_kind option -> (module_parameter * Odoc_types.text option) list
+)
+ident(
+  int_ref iter "odoc_module.ml" 351 12499 12509 "odoc_module.ml" 351 12499 12513
+)
+"odoc_module.ml" 386 13509 13516 "odoc_module.ml" 386 13509 13518
+type(
+  t_module_type
+)
+ident(
+  int_ref mt "odoc_module.ml" 350 12449 12494 "odoc_module.ml" 350 12449 12496
+)
+"odoc_module.ml" 386 13509 13516 "odoc_module.ml" 386 13509 13526
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 386 13509 13511 "odoc_module.ml" 386 13509 13526
+call(
+  tail
+)
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 351 12499 12501 "odoc_module.ml" 386 13509 13526
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 390 13663 13667 "odoc_module.ml" 390 13663 13684
+type(
+  ?trans:bool -> t_module -> (module_parameter * Odoc_types.text option) list
+)
+ident(
+  def module_parameters "odoc_module.ml" 350 12449 12449 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 390 13663 13687 "odoc_module.ml" 390 13663 13692
+type(
+  bool
+)
+"odoc_module.ml" 390 13663 13693 "odoc_module.ml" 390 13663 13697
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 390 13663 13693 "odoc_module.ml" 390 13663 13697
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 390 13663 13699 "odoc_module.ml" 390 13663 13700
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 391 13703 13705 "odoc_module.ml" 427 14868 14883
+)
+"odoc_module.ml" 391 13703 13713 "odoc_module.ml" 391 13703 13717
+type(
+  module_kind -> (module_parameter * Odoc_types.text option) list
+)
+ident(
+  def iter "odoc_module.ml" 391 13703 13705 "odoc_module.ml" 427 14868 14883
+)
+"odoc_module.ml" 392 13729 13751 "odoc_module.ml" 392 13729 13752
+type(
+  module_parameter
+)
+ident(
+  def p "odoc_module.ml" 393 13760 13768 "odoc_module.ml" 406 14214 14239
+)
+"odoc_module.ml" 392 13729 13754 "odoc_module.ml" 392 13729 13755
+type(
+  module_kind
+)
+ident(
+  def k "odoc_module.ml" 393 13760 13768 "odoc_module.ml" 406 14214 14239
+)
+"odoc_module.ml" 392 13729 13735 "odoc_module.ml" 392 13729 13756
+type(
+  module_kind
+)
+"odoc_module.ml" 393 13760 13772 "odoc_module.ml" 393 13760 13777
+type(
+  module_parameter * Odoc_types.text option
+)
+ident(
+  def param "odoc_module.ml" 406 14214 14222 "odoc_module.ml" 406 14214 14239
+)
+"odoc_module.ml" 396 13930 13946 "odoc_module.ml" 396 13930 13947
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 390 13663 13699 "odoc_module.ml" 390 13663 13700
+)
+"odoc_module.ml" 396 13930 13946 "odoc_module.ml" 396 13930 13954
+type(
+  Odoc_types.info option
+)
+"odoc_module.ml" 397 13960 13972 "odoc_module.ml" 397 13960 13976
+type(
+  Odoc_types.info option
+)
+"odoc_module.ml" 397 13960 13980 "odoc_module.ml" 397 13960 13981
+type(
+  module_parameter
+)
+ident(
+  int_ref p "odoc_module.ml" 392 13729 13751 "odoc_module.ml" 392 13729 13752
+)
+"odoc_module.ml" 397 13960 13983 "odoc_module.ml" 397 13960 13987
+type(
+  Odoc_types.text option
+)
+"odoc_module.ml" 397 13960 13979 "odoc_module.ml" 397 13960 13988
+type(
+  module_parameter * Odoc_types.text option
+)
+"odoc_module.ml" 398 13989 14006 "odoc_module.ml" 398 13989 14007
+type(
+  Odoc_types.info
+)
+ident(
+  def i "odoc_module.ml" 399 14011 14025 "odoc_module.ml" 404 14175 14202
+)
+"odoc_module.ml" 398 13989 14001 "odoc_module.ml" 398 13989 14007
+type(
+  Odoc_types.info option
+)
+"odoc_module.ml" 400 14029 14049 "odoc_module.ml" 400 14029 14050
+type(
+  Odoc_types.text
+)
+ident(
+  def d "odoc_module.ml" 401 14099 14115 "odoc_module.ml" 401 14099 14126
+)
+"odoc_module.ml" 400 14029 14053 "odoc_module.ml" 400 14029 14063
+type(
+  string -> Odoc_types.param list -> Odoc_types.text
+)
+ident(
+  ext_ref List.assoc
+)
+"odoc_module.ml" 400 14029 14064 "odoc_module.ml" 400 14029 14065
+type(
+  module_parameter
+)
+ident(
+  int_ref p "odoc_module.ml" 392 13729 13751 "odoc_module.ml" 392 13729 13752
+)
+"odoc_module.ml" 400 14029 14064 "odoc_module.ml" 400 14029 14073
+type(
+  string
+)
+"odoc_module.ml" 400 14029 14074 "odoc_module.ml" 400 14029 14075
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref i "odoc_module.ml" 398 13989 14006 "odoc_module.ml" 398 13989 14007
+)
+"odoc_module.ml" 400 14029 14074 "odoc_module.ml" 400 14029 14095
+type(
+  Odoc_types.param list
+)
+"odoc_module.ml" 400 14029 14053 "odoc_module.ml" 400 14029 14095
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+"odoc_module.ml" 401 14099 14116 "odoc_module.ml" 401 14099 14117
+type(
+  module_parameter
+)
+ident(
+  int_ref p "odoc_module.ml" 392 13729 13751 "odoc_module.ml" 392 13729 13752
+)
+"odoc_module.ml" 401 14099 14124 "odoc_module.ml" 401 14099 14125
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref d "odoc_module.ml" 400 14029 14049 "odoc_module.ml" 400 14029 14050
+)
+"odoc_module.ml" 401 14099 14119 "odoc_module.ml" 401 14099 14125
+type(
+  Odoc_types.text option
+)
+"odoc_module.ml" 401 14099 14115 "odoc_module.ml" 401 14099 14126
+type(
+  module_parameter * Odoc_types.text option
+)
+"odoc_module.ml" 400 14029 14045 "odoc_module.ml" 401 14099 14126
+type(
+  module_parameter * Odoc_types.text option
+)
+"odoc_module.ml" 403 14146 14162 "odoc_module.ml" 403 14146 14171
+type(
+  exn
+)
+"odoc_module.ml" 404 14175 14194 "odoc_module.ml" 404 14175 14195
+type(
+  module_parameter
+)
+ident(
+  int_ref p "odoc_module.ml" 392 13729 13751 "odoc_module.ml" 392 13729 13752
+)
+"odoc_module.ml" 404 14175 14197 "odoc_module.ml" 404 14175 14201
+type(
+  Odoc_types.text option
+)
+"odoc_module.ml" 404 14175 14193 "odoc_module.ml" 404 14175 14202
+type(
+  module_parameter * Odoc_types.text option
+)
+"odoc_module.ml" 399 14011 14025 "odoc_module.ml" 404 14175 14202
+type(
+  module_parameter * Odoc_types.text option
+)
+"odoc_module.ml" 396 13930 13940 "odoc_module.ml" 404 14175 14202
+type(
+  module_parameter * Odoc_types.text option
+)
+"odoc_module.ml" 406 14214 14222 "odoc_module.ml" 406 14214 14227
+type(
+  module_parameter * Odoc_types.text option
+)
+ident(
+  int_ref param "odoc_module.ml" 393 13760 13772 "odoc_module.ml" 393 13760 13777
+)
+"odoc_module.ml" 406 14214 14232 "odoc_module.ml" 406 14214 14236
+type(
+  module_kind -> (module_parameter * Odoc_types.text option) list
+)
+ident(
+  int_ref iter "odoc_module.ml" 391 13703 13713 "odoc_module.ml" 391 13703 13717
+)
+"odoc_module.ml" 406 14214 14237 "odoc_module.ml" 406 14214 14238
+type(
+  module_kind
+)
+ident(
+  int_ref k "odoc_module.ml" 392 13729 13754 "odoc_module.ml" 392 13729 13755
+)
+"odoc_module.ml" 406 14214 14231 "odoc_module.ml" 406 14214 14239
+call(
+  stack
+)
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 406 14214 14222 "odoc_module.ml" 406 14214 14239
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 393 13760 13768 "odoc_module.ml" 406 14214 14239
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 408 14241 14260 "odoc_module.ml" 408 14241 14262
+type(
+  module_alias
+)
+ident(
+  def ma "odoc_module.ml" 409 14266 14274 "odoc_module.ml" 415 14479 14491
+)
+"odoc_module.ml" 408 14241 14247 "odoc_module.ml" 408 14241 14262
+type(
+  module_kind
+)
+"odoc_module.ml" 409 14266 14277 "odoc_module.ml" 409 14266 14282
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 390 13663 13687 "odoc_module.ml" 390 13663 13692
+)
+"odoc_module.ml" 410 14288 14304 "odoc_module.ml" 410 14288 14306
+type(
+  module_alias
+)
+ident(
+  int_ref ma "odoc_module.ml" 408 14241 14260 "odoc_module.ml" 408 14241 14262
+)
+"odoc_module.ml" 410 14288 14304 "odoc_module.ml" 410 14288 14316
+type(
+  mmt option
+)
+"odoc_module.ml" 411 14322 14334 "odoc_module.ml" 411 14322 14338
+type(
+  mmt option
+)
+"odoc_module.ml" 411 14322 14342 "odoc_module.ml" 411 14322 14344
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 412 14345 14367 "odoc_module.ml" 412 14345 14368
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 412 14345 14373 "odoc_module.ml" 412 14345 14399
+)
+"odoc_module.ml" 412 14345 14362 "odoc_module.ml" 412 14345 14369
+type(
+  mmt
+)
+"odoc_module.ml" 412 14345 14357 "odoc_module.ml" 412 14345 14369
+type(
+  mmt option
+)
+"odoc_module.ml" 412 14345 14373 "odoc_module.ml" 412 14345 14390
+type(
+  ?trans:bool -> t_module -> (module_parameter * Odoc_types.text option) list
+)
+ident(
+  int_ref module_parameters "odoc_module.ml" 390 13663 13667 "odoc_module.ml" 390 13663 13684
+)
+"odoc_module.ml" 412 14345 14392 "odoc_module.ml" 412 14345 14397
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 390 13663 13687 "odoc_module.ml" 390 13663 13692
+)
+"odoc_module.ml" 412 14345 14398 "odoc_module.ml" 412 14345 14399
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 412 14345 14367 "odoc_module.ml" 412 14345 14368
+)
+"odoc_module.ml" 412 14345 14373 "odoc_module.ml" 412 14345 14399
+call(
+  tail
+)
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 413 14400 14426 "odoc_module.ml" 413 14400 14428
+type(
+  t_module_type
+)
+ident(
+  def mt "odoc_module.ml" 413 14400 14433 "odoc_module.ml" 413 14400 14465
+)
+"odoc_module.ml" 413 14400 14417 "odoc_module.ml" 413 14400 14429
+type(
+  mmt
+)
+"odoc_module.ml" 413 14400 14412 "odoc_module.ml" 413 14400 14429
+type(
+  mmt option
+)
+"odoc_module.ml" 413 14400 14433 "odoc_module.ml" 413 14400 14455
+type(
+  ?trans:bool ->
+  t_module_type -> (module_parameter * Odoc_types.text option) list
+)
+ident(
+  int_ref module_type_parameters "odoc_module.ml" 350 12449 12457 "odoc_module.ml" 350 12449 12479
+)
+"odoc_module.ml" 413 14400 14457 "odoc_module.ml" 413 14400 14462
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 390 13663 13687 "odoc_module.ml" 390 13663 13692
+)
+"odoc_module.ml" 413 14400 14463 "odoc_module.ml" 413 14400 14465
+type(
+  t_module_type
+)
+ident(
+  int_ref mt "odoc_module.ml" 413 14400 14426 "odoc_module.ml" 413 14400 14428
+)
+"odoc_module.ml" 413 14400 14433 "odoc_module.ml" 413 14400 14465
+call(
+  tail
+)
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 410 14288 14298 "odoc_module.ml" 413 14400 14465
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 415 14479 14489 "odoc_module.ml" 415 14479 14491
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 409 14266 14274 "odoc_module.ml" 415 14479 14491
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 416 14492 14517 "odoc_module.ml" 416 14492 14518
+type(
+  module_kind
+)
+ident(
+  def k "odoc_module.ml" 417 14527 14535 "odoc_module.ml" 420 14706 14749
+)
+"odoc_module.ml" 416 14492 14520 "odoc_module.ml" 416 14492 14522
+type(
+  module_type_kind
+)
+ident(
+  def tk "odoc_module.ml" 417 14527 14535 "odoc_module.ml" 420 14706 14749
+)
+"odoc_module.ml" 416 14492 14498 "odoc_module.ml" 416 14492 14523
+type(
+  module_kind
+)
+"odoc_module.ml" 417 14527 14535 "odoc_module.ml" 417 14527 14557
+type(
+  ?trans:bool ->
+  t_module_type -> (module_parameter * Odoc_types.text option) list
+)
+ident(
+  int_ref module_type_parameters "odoc_module.ml" 350 12449 12457 "odoc_module.ml" 350 12449 12479
+)
+"odoc_module.ml" 417 14527 14566 "odoc_module.ml" 417 14527 14571
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 390 13663 13687 "odoc_module.ml" 390 13663 13692
+)
+"odoc_module.ml" 418 14572 14594 "odoc_module.ml" 418 14572 14596
+type(
+  Name.t
+)
+"odoc_module.ml" 418 14572 14609 "odoc_module.ml" 418 14572 14613
+type(
+  Odoc_types.info option
+)
+"odoc_module.ml" 418 14572 14626 "odoc_module.ml" 418 14572 14630
+type(
+  Types.module_type option
+)
+"odoc_module.ml" 419 14633 14663 "odoc_module.ml" 419 14633 14668
+type(
+  bool
+)
+"odoc_module.ml" 419 14633 14681 "odoc_module.ml" 419 14633 14683
+type(
+  string
+)
+"odoc_module.ml" 419 14633 14701 "odoc_module.ml" 419 14633 14703
+type(
+  module_type_kind
+)
+ident(
+  int_ref tk "odoc_module.ml" 416 14492 14520 "odoc_module.ml" 416 14492 14522
+)
+"odoc_module.ml" 419 14633 14696 "odoc_module.ml" 419 14633 14703
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 420 14706 14727 "odoc_module.ml" 420 14706 14747
+type(
+  Odoc_types.location
+)
+ident(
+  ext_ref Odoc_types.dummy_loc
+)
+"odoc_module.ml" 418 14572 14582 "odoc_module.ml" 420 14706 14749
+type(
+  t_module_type
+)
+"odoc_module.ml" 417 14527 14535 "odoc_module.ml" 420 14706 14749
+call(
+  tail
+)
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 421 14750 14770 "odoc_module.ml" 421 14750 14771
+type(
+  module_element list
+)
+"odoc_module.ml" 421 14750 14756 "odoc_module.ml" 421 14750 14771
+type(
+  module_kind
+)
+"odoc_module.ml" 422 14772 14791 "odoc_module.ml" 422 14772 14792
+type(
+  module_kind
+)
+type(
+  module_kind
+)
+"odoc_module.ml" 422 14772 14778 "odoc_module.ml" 422 14772 14792
+type(
+  module_kind
+)
+"odoc_module.ml" 421 14750 14756 "odoc_module.ml" 422 14772 14792
+type(
+  module_kind
+)
+"odoc_module.ml" 423 14793 14811 "odoc_module.ml" 423 14793 14812
+type(
+  string
+)
+type(
+  module_type_kind
+)
+"odoc_module.ml" 423 14793 14799 "odoc_module.ml" 423 14793 14812
+type(
+  module_kind
+)
+"odoc_module.ml" 421 14750 14756 "odoc_module.ml" 423 14793 14812
+type(
+  module_kind
+)
+"odoc_module.ml" 424 14813 14833 "odoc_module.ml" 424 14813 14834
+type(
+  string
+)
+"odoc_module.ml" 424 14813 14819 "odoc_module.ml" 424 14813 14834
+type(
+  module_kind
+)
+"odoc_module.ml" 421 14750 14756 "odoc_module.ml" 424 14813 14834
+type(
+  module_kind
+)
+"odoc_module.ml" 425 14835 14855 "odoc_module.ml" 425 14835 14856
+type(
+  module_type_alias
+)
+type(
+  string
+)
+"odoc_module.ml" 425 14835 14841 "odoc_module.ml" 425 14835 14856
+type(
+  module_kind
+)
+"odoc_module.ml" 421 14750 14756 "odoc_module.ml" 425 14835 14856
+type(
+  module_kind
+)
+"odoc_module.ml" 425 14835 14860 "odoc_module.ml" 425 14835 14862
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 391 13703 13720 "odoc_module.ml" 425 14835 14862
+type(
+  module_kind -> (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 427 14868 14870 "odoc_module.ml" 427 14868 14874
+type(
+  module_kind -> (module_parameter * Odoc_types.text option) list
+)
+ident(
+  int_ref iter "odoc_module.ml" 391 13703 13713 "odoc_module.ml" 391 13703 13717
+)
+"odoc_module.ml" 427 14868 14875 "odoc_module.ml" 427 14868 14876
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 390 13663 13699 "odoc_module.ml" 390 13663 13700
+)
+"odoc_module.ml" 427 14868 14875 "odoc_module.ml" 427 14868 14883
+type(
+  module_kind
+)
+"odoc_module.ml" 427 14868 14870 "odoc_module.ml" 427 14868 14883
+call(
+  tail
+)
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 391 13703 13705 "odoc_module.ml" 427 14868 14883
+type(
+  (module_parameter * Odoc_types.text option) list
+)
+"odoc_module.ml" 431 15057 15065 "odoc_module.ml" 431 15057 15086
+type(
+  ?trans:bool -> t_module -> t_module list
+)
+ident(
+  def module_all_submodules "odoc_module.ml" 431 15057 15057 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 431 15057 15089 "odoc_module.ml" 431 15057 15094
+type(
+  bool
+)
+"odoc_module.ml" 431 15057 15095 "odoc_module.ml" 431 15057 15099
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 431 15057 15095 "odoc_module.ml" 431 15057 15099
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 431 15057 15101 "odoc_module.ml" 431 15057 15102
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 432 15105 15107 "odoc_module.ml" 436 15230 15235
+)
+"odoc_module.ml" 432 15105 15111 "odoc_module.ml" 432 15105 15112
+type(
+  t_module list
+)
+ident(
+  def l "odoc_module.ml" 433 15142 15144 "odoc_module.ml" 436 15230 15235
+)
+"odoc_module.ml" 432 15105 15115 "odoc_module.ml" 432 15105 15129
+type(
+  ?trans:bool -> t_module -> t_module list
+)
+ident(
+  int_ref module_modules "odoc_module.ml" 334 11575 11579 "odoc_module.ml" 334 11575 11593
+)
+"odoc_module.ml" 432 15105 15131 "odoc_module.ml" 432 15105 15136
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 431 15057 15089 "odoc_module.ml" 431 15057 15094
+)
+"odoc_module.ml" 432 15105 15137 "odoc_module.ml" 432 15105 15138
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 431 15057 15101 "odoc_module.ml" 431 15057 15102
+)
+"odoc_module.ml" 432 15105 15115 "odoc_module.ml" 432 15105 15138
+call(
+  stack
+)
+type(
+  t_module list
+)
+"odoc_module.ml" 433 15142 15144 "odoc_module.ml" 433 15142 15158
+type(
+  (t_module list -> t_module -> t_module list) ->
+  t_module list -> t_module list -> t_module list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_module.ml" 434 15159 15168 "odoc_module.ml" 434 15159 15171
+type(
+  t_module list
+)
+ident(
+  def acc "odoc_module.ml" 434 15159 15175 "odoc_module.ml" 434 15159 15222
+)
+"odoc_module.ml" 434 15159 15179 "odoc_module.ml" 434 15159 15180
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 434 15159 15184 "odoc_module.ml" 434 15159 15222
+)
+"odoc_module.ml" 434 15159 15184 "odoc_module.ml" 434 15159 15187
+type(
+  t_module list
+)
+ident(
+  int_ref acc "odoc_module.ml" 434 15159 15168 "odoc_module.ml" 434 15159 15171
+)
+"odoc_module.ml" 434 15159 15188 "odoc_module.ml" 434 15159 15189
+type(
+  t_module list -> t_module list -> t_module list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_module.ml" 434 15159 15191 "odoc_module.ml" 434 15159 15212
+type(
+  ?trans:bool -> t_module -> t_module list
+)
+ident(
+  int_ref module_all_submodules "odoc_module.ml" 431 15057 15065 "odoc_module.ml" 431 15057 15086
+)
+"odoc_module.ml" 434 15159 15214 "odoc_module.ml" 434 15159 15219
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 431 15057 15089 "odoc_module.ml" 431 15057 15094
+)
+"odoc_module.ml" 434 15159 15220 "odoc_module.ml" 434 15159 15221
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 434 15159 15179 "odoc_module.ml" 434 15159 15180
+)
+"odoc_module.ml" 434 15159 15190 "odoc_module.ml" 434 15159 15222
+call(
+  stack
+)
+type(
+  t_module list
+)
+"odoc_module.ml" 434 15159 15184 "odoc_module.ml" 434 15159 15222
+call(
+  tail
+)
+type(
+  t_module list
+)
+"odoc_module.ml" 434 15159 15175 "odoc_module.ml" 434 15159 15222
+type(
+  t_module -> t_module list
+)
+"odoc_module.ml" 434 15159 15163 "odoc_module.ml" 434 15159 15223
+type(
+  t_module list -> t_module -> t_module list
+)
+"odoc_module.ml" 435 15224 15228 "odoc_module.ml" 435 15224 15229
+type(
+  t_module list
+)
+ident(
+  int_ref l "odoc_module.ml" 432 15105 15111 "odoc_module.ml" 432 15105 15112
+)
+"odoc_module.ml" 436 15230 15234 "odoc_module.ml" 436 15230 15235
+type(
+  t_module list
+)
+ident(
+  int_ref l "odoc_module.ml" 432 15105 15111 "odoc_module.ml" 432 15105 15112
+)
+"odoc_module.ml" 433 15142 15144 "odoc_module.ml" 436 15230 15235
+call(
+  tail
+)
+type(
+  t_module list
+)
+"odoc_module.ml" 432 15105 15107 "odoc_module.ml" 436 15230 15235
+type(
+  t_module list
+)
+"odoc_module.ml" 439 15336 15344 "odoc_module.ml" 439 15336 15366
+type(
+  t_module_type -> bool
+)
+ident(
+  def module_type_is_functor "odoc_module.ml" 439 15336 15336 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 439 15336 15367 "odoc_module.ml" 439 15336 15369
+type(
+  t_module_type
+)
+ident(
+  def mt "odoc_module.ml" 440 15372 15374 "odoc_module.ml" 455 15776 15793
+)
+"odoc_module.ml" 440 15372 15382 "odoc_module.ml" 440 15372 15386
+type(
+  module_type_kind option -> bool
+)
+ident(
+  def iter "odoc_module.ml" 440 15372 15374 "odoc_module.ml" 455 15776 15793
+)
+"odoc_module.ml" 440 15372 15387 "odoc_module.ml" 440 15372 15388
+type(
+  module_type_kind option
+)
+ident(
+  def k "odoc_module.ml" 441 15391 15395 "odoc_module.ml" 453 15751 15770
+)
+"odoc_module.ml" 441 15391 15401 "odoc_module.ml" 441 15391 15402
+type(
+  module_type_kind option
+)
+ident(
+  int_ref k "odoc_module.ml" 440 15372 15387 "odoc_module.ml" 440 15372 15388
+)
+"odoc_module.ml" 442 15408 15440 "odoc_module.ml" 442 15408 15441
+type(
+  module_type_kind
+)
+type(
+  module_parameter
+)
+"odoc_module.ml" 442 15408 15419 "odoc_module.ml" 442 15408 15442
+type(
+  module_type_kind
+)
+"odoc_module.ml" 442 15408 15414 "odoc_module.ml" 442 15408 15442
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 442 15408 15446 "odoc_module.ml" 442 15408 15450
+type(
+  bool
+)
+"odoc_module.ml" 443 15451 15481 "odoc_module.ml" 443 15451 15484
+type(
+  module_type_alias
+)
+ident(
+  def mta "odoc_module.ml" 444 15489 15497 "odoc_module.ml" 448 15611 15620
+)
+"odoc_module.ml" 443 15451 15462 "odoc_module.ml" 443 15451 15485
+type(
+  module_type_kind
+)
+"odoc_module.ml" 443 15451 15457 "odoc_module.ml" 443 15451 15485
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 445 15499 15514 "odoc_module.ml" 445 15499 15517
+type(
+  module_type_alias
+)
+ident(
+  int_ref mta "odoc_module.ml" 443 15451 15481 "odoc_module.ml" 443 15451 15484
+)
+"odoc_module.ml" 445 15499 15514 "odoc_module.ml" 445 15499 15528
+type(
+  t_module_type option
+)
+"odoc_module.ml" 446 15534 15545 "odoc_module.ml" 446 15534 15549
+type(
+  t_module_type option
+)
+"odoc_module.ml" 446 15534 15553 "odoc_module.ml" 446 15534 15558
+type(
+  bool
+)
+"odoc_module.ml" 447 15559 15575 "odoc_module.ml" 447 15559 15579
+type(
+  t_module_type
+)
+ident(
+  def mtyp "odoc_module.ml" 447 15559 15583 "odoc_module.ml" 447 15559 15610
+)
+"odoc_module.ml" 447 15559 15570 "odoc_module.ml" 447 15559 15579
+type(
+  t_module_type option
+)
+"odoc_module.ml" 447 15559 15583 "odoc_module.ml" 447 15559 15605
+type(
+  t_module_type -> bool
+)
+ident(
+  int_ref module_type_is_functor "odoc_module.ml" 439 15336 15344 "odoc_module.ml" 439 15336 15366
+)
+"odoc_module.ml" 447 15559 15606 "odoc_module.ml" 447 15559 15610
+type(
+  t_module_type
+)
+ident(
+  int_ref mtyp "odoc_module.ml" 447 15559 15575 "odoc_module.ml" 447 15559 15579
+)
+"odoc_module.ml" 447 15559 15583 "odoc_module.ml" 447 15559 15610
+call(
+  tail
+)
+type(
+  bool
+)
+"odoc_module.ml" 444 15489 15497 "odoc_module.ml" 448 15611 15620
+type(
+  bool
+)
+"odoc_module.ml" 449 15621 15651 "odoc_module.ml" 449 15621 15652
+type(
+  module_type_kind
+)
+ident(
+  def k "odoc_module.ml" 450 15661 15669 "odoc_module.ml" 450 15661 15682
+)
+"odoc_module.ml" 449 15621 15654 "odoc_module.ml" 449 15621 15655
+type(
+  string
+)
+"odoc_module.ml" 449 15621 15632 "odoc_module.ml" 449 15621 15657
+type(
+  module_type_kind
+)
+"odoc_module.ml" 449 15621 15627 "odoc_module.ml" 449 15621 15657
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 450 15661 15669 "odoc_module.ml" 450 15661 15673
+type(
+  module_type_kind option -> bool
+)
+ident(
+  int_ref iter "odoc_module.ml" 440 15372 15382 "odoc_module.ml" 440 15372 15386
+)
+"odoc_module.ml" 450 15661 15680 "odoc_module.ml" 450 15661 15681
+type(
+  module_type_kind
+)
+ident(
+  int_ref k "odoc_module.ml" 449 15621 15651 "odoc_module.ml" 449 15621 15652
+)
+"odoc_module.ml" 450 15661 15674 "odoc_module.ml" 450 15661 15682
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 450 15661 15669 "odoc_module.ml" 450 15661 15682
+call(
+  tail
+)
+type(
+  bool
+)
+"odoc_module.ml" 451 15683 15714 "odoc_module.ml" 451 15683 15715
+type(
+  module_element list
+)
+"odoc_module.ml" 451 15683 15694 "odoc_module.ml" 451 15683 15716
+type(
+  module_type_kind
+)
+"odoc_module.ml" 451 15683 15689 "odoc_module.ml" 451 15683 15716
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 452 15717 15748 "odoc_module.ml" 452 15717 15749
+type(
+  string
+)
+"odoc_module.ml" 452 15717 15728 "odoc_module.ml" 452 15717 15750
+type(
+  module_type_kind
+)
+"odoc_module.ml" 452 15717 15723 "odoc_module.ml" 452 15717 15750
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 451 15683 15689 "odoc_module.ml" 452 15717 15750
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 453 15751 15757 "odoc_module.ml" 453 15751 15761
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 451 15683 15689 "odoc_module.ml" 453 15751 15761
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 453 15751 15765 "odoc_module.ml" 453 15751 15770
+type(
+  bool
+)
+"odoc_module.ml" 441 15391 15395 "odoc_module.ml" 453 15751 15770
+type(
+  bool
+)
+"odoc_module.ml" 455 15776 15778 "odoc_module.ml" 455 15776 15782
+type(
+  module_type_kind option -> bool
+)
+ident(
+  int_ref iter "odoc_module.ml" 440 15372 15382 "odoc_module.ml" 440 15372 15386
+)
+"odoc_module.ml" 455 15776 15783 "odoc_module.ml" 455 15776 15785
+type(
+  t_module_type
+)
+ident(
+  int_ref mt "odoc_module.ml" 439 15336 15367 "odoc_module.ml" 439 15336 15369
+)
+"odoc_module.ml" 455 15776 15783 "odoc_module.ml" 455 15776 15793
+type(
+  module_type_kind option
+)
+"odoc_module.ml" 455 15776 15778 "odoc_module.ml" 455 15776 15793
+call(
+  tail
+)
+type(
+  bool
+)
+"odoc_module.ml" 440 15372 15374 "odoc_module.ml" 455 15776 15793
+type(
+  bool
+)
+"odoc_module.ml" 458 15889 15893 "odoc_module.ml" 458 15889 15910
+type(
+  t_module -> bool
+)
+ident(
+  def module_is_functor "odoc_module.ml" 476 16402 16402 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 458 15889 15911 "odoc_module.ml" 458 15889 15912
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 459 15915 15917 "odoc_module.ml" 472 16247 16262
+)
+"odoc_module.ml" 459 15915 15925 "odoc_module.ml" 459 15915 15929
+type(
+  module_kind -> bool
+)
+ident(
+  def iter "odoc_module.ml" 459 15915 15917 "odoc_module.ml" 472 16247 16262
+)
+"odoc_module.ml" 460 15941 15962 "odoc_module.ml" 460 15941 15963
+type(
+  module_kind
+)
+type(
+  module_parameter
+)
+"odoc_module.ml" 460 15941 15947 "odoc_module.ml" 460 15941 15963
+type(
+  module_kind
+)
+"odoc_module.ml" 460 15941 15967 "odoc_module.ml" 460 15941 15971
+type(
+  bool
+)
+"odoc_module.ml" 461 15972 15991 "odoc_module.ml" 461 15972 15993
+type(
+  module_alias
+)
+ident(
+  def ma "odoc_module.ml" 462 15997 16005 "odoc_module.ml" 467 16166 16175
+)
+"odoc_module.ml" 461 15972 15978 "odoc_module.ml" 461 15972 15993
+type(
+  module_kind
+)
+"odoc_module.ml" 463 16007 16022 "odoc_module.ml" 463 16007 16024
+type(
+  module_alias
+)
+ident(
+  int_ref ma "odoc_module.ml" 461 15972 15991 "odoc_module.ml" 461 15972 15993
+)
+"odoc_module.ml" 463 16007 16022 "odoc_module.ml" 463 16007 16034
+type(
+  mmt option
+)
+"odoc_module.ml" 464 16040 16051 "odoc_module.ml" 464 16040 16055
+type(
+  mmt option
+)
+"odoc_module.ml" 464 16040 16059 "odoc_module.ml" 464 16040 16064
+type(
+  bool
+)
+"odoc_module.ml" 465 16065 16086 "odoc_module.ml" 465 16065 16088
+type(
+  t_module
+)
+ident(
+  def mo "odoc_module.ml" 465 16065 16093 "odoc_module.ml" 465 16065 16107
+)
+"odoc_module.ml" 465 16065 16081 "odoc_module.ml" 465 16065 16089
+type(
+  mmt
+)
+"odoc_module.ml" 465 16065 16076 "odoc_module.ml" 465 16065 16089
+type(
+  mmt option
+)
+"odoc_module.ml" 465 16065 16093 "odoc_module.ml" 465 16065 16097
+type(
+  module_kind -> bool
+)
+ident(
+  int_ref iter "odoc_module.ml" 459 15915 15925 "odoc_module.ml" 459 15915 15929
+)
+"odoc_module.ml" 465 16065 16098 "odoc_module.ml" 465 16065 16100
+type(
+  t_module
+)
+ident(
+  int_ref mo "odoc_module.ml" 465 16065 16086 "odoc_module.ml" 465 16065 16088
+)
+"odoc_module.ml" 465 16065 16098 "odoc_module.ml" 465 16065 16107
+type(
+  module_kind
+)
+"odoc_module.ml" 465 16065 16093 "odoc_module.ml" 465 16065 16107
+call(
+  tail
+)
+type(
+  bool
+)
+"odoc_module.ml" 466 16108 16133 "odoc_module.ml" 466 16108 16135
+type(
+  t_module_type
+)
+ident(
+  def mt "odoc_module.ml" 466 16108 16140 "odoc_module.ml" 466 16108 16165
+)
+"odoc_module.ml" 466 16108 16124 "odoc_module.ml" 466 16108 16136
+type(
+  mmt
+)
+"odoc_module.ml" 466 16108 16119 "odoc_module.ml" 466 16108 16136
+type(
+  mmt option
+)
+"odoc_module.ml" 466 16108 16140 "odoc_module.ml" 466 16108 16162
+type(
+  t_module_type -> bool
+)
+ident(
+  int_ref module_type_is_functor "odoc_module.ml" 439 15336 15344 "odoc_module.ml" 439 15336 15366
+)
+"odoc_module.ml" 466 16108 16163 "odoc_module.ml" 466 16108 16165
+type(
+  t_module_type
+)
+ident(
+  int_ref mt "odoc_module.ml" 466 16108 16133 "odoc_module.ml" 466 16108 16135
+)
+"odoc_module.ml" 466 16108 16140 "odoc_module.ml" 466 16108 16165
+call(
+  tail
+)
+type(
+  bool
+)
+"odoc_module.ml" 462 15997 16005 "odoc_module.ml" 467 16166 16175
+type(
+  bool
+)
+"odoc_module.ml" 468 16176 16201 "odoc_module.ml" 468 16176 16202
+type(
+  module_kind
+)
+ident(
+  def k "odoc_module.ml" 469 16210 16218 "odoc_module.ml" 469 16210 16224
+)
+"odoc_module.ml" 468 16176 16204 "odoc_module.ml" 468 16176 16205
+type(
+  module_type_kind
+)
+"odoc_module.ml" 468 16176 16182 "odoc_module.ml" 468 16176 16206
+type(
+  module_kind
+)
+"odoc_module.ml" 469 16210 16218 "odoc_module.ml" 469 16210 16222
+type(
+  module_kind -> bool
+)
+ident(
+  int_ref iter "odoc_module.ml" 459 15915 15925 "odoc_module.ml" 459 15915 15929
+)
+"odoc_module.ml" 469 16210 16223 "odoc_module.ml" 469 16210 16224
+type(
+  module_kind
+)
+ident(
+  int_ref k "odoc_module.ml" 468 16176 16201 "odoc_module.ml" 468 16176 16202
+)
+"odoc_module.ml" 469 16210 16218 "odoc_module.ml" 469 16210 16224
+call(
+  tail
+)
+type(
+  bool
+)
+"odoc_module.ml" 470 16225 16231 "odoc_module.ml" 470 16225 16232
+type(
+  module_kind
+)
+"odoc_module.ml" 470 16225 16236 "odoc_module.ml" 470 16225 16241
+type(
+  bool
+)
+"odoc_module.ml" 459 15915 15932 "odoc_module.ml" 470 16225 16241
+type(
+  module_kind -> bool
+)
+"odoc_module.ml" 472 16247 16249 "odoc_module.ml" 472 16247 16253
+type(
+  module_kind -> bool
+)
+ident(
+  int_ref iter "odoc_module.ml" 459 15915 15925 "odoc_module.ml" 459 15915 15929
+)
+"odoc_module.ml" 472 16247 16254 "odoc_module.ml" 472 16247 16255
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 458 15889 15911 "odoc_module.ml" 458 15889 15912
+)
+"odoc_module.ml" 472 16247 16254 "odoc_module.ml" 472 16247 16262
+type(
+  module_kind
+)
+"odoc_module.ml" 472 16247 16249 "odoc_module.ml" 472 16247 16262
+call(
+  tail
+)
+type(
+  bool
+)
+"odoc_module.ml" 459 15915 15917 "odoc_module.ml" 472 16247 16262
+type(
+  bool
+)
+"odoc_module.ml" 476 16402 16406 "odoc_module.ml" 476 16402 16424
+type(
+  ?trans:bool -> t_module_type -> Odoc_value.t_value list
+)
+ident(
+  def module_type_values "odoc_module.ml" 480 16615 16615 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 476 16402 16427 "odoc_module.ml" 476 16402 16432
+type(
+  bool
+)
+"odoc_module.ml" 476 16402 16433 "odoc_module.ml" 476 16402 16437
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 476 16402 16433 "odoc_module.ml" 476 16402 16437
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 476 16402 16439 "odoc_module.ml" 476 16402 16440
+type(
+  t_module_type
+)
+ident(
+  def m "odoc_module.ml" 476 16402 16443 "odoc_module.ml" 476 16402 16481
+)
+"odoc_module.ml" 476 16402 16443 "odoc_module.ml" 476 16402 16449
+type(
+  module_element list -> Odoc_value.t_value list
+)
+ident(
+  int_ref values "odoc_module.ml" 110 4930 4934 "odoc_module.ml" 110 4930 4940
+)
+"odoc_module.ml" 476 16402 16451 "odoc_module.ml" 476 16402 16471
+type(
+  ?trans:bool -> t_module_type -> module_element list
+)
+ident(
+  int_ref module_type_elements "odoc_module.ml" 273 9022 9026 "odoc_module.ml" 273 9022 9046
+)
+"odoc_module.ml" 476 16402 16473 "odoc_module.ml" 476 16402 16478
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 476 16402 16427 "odoc_module.ml" 476 16402 16432
+)
+"odoc_module.ml" 476 16402 16479 "odoc_module.ml" 476 16402 16480
+type(
+  t_module_type
+)
+ident(
+  int_ref m "odoc_module.ml" 476 16402 16439 "odoc_module.ml" 476 16402 16440
+)
+"odoc_module.ml" 476 16402 16450 "odoc_module.ml" 476 16402 16481
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 476 16402 16443 "odoc_module.ml" 476 16402 16481
+call(
+  tail
+)
+type(
+  Odoc_value.t_value list
+)
+"odoc_module.ml" 480 16615 16619 "odoc_module.ml" 480 16615 16636
+type(
+  ?trans:bool -> t_module_type -> Odoc_type.t_type list
+)
+ident(
+  def module_type_types "odoc_module.ml" 484 16836 16836 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 480 16615 16639 "odoc_module.ml" 480 16615 16644
+type(
+  bool
+)
+"odoc_module.ml" 480 16615 16645 "odoc_module.ml" 480 16615 16649
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 480 16615 16645 "odoc_module.ml" 480 16615 16649
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 480 16615 16651 "odoc_module.ml" 480 16615 16652
+type(
+  t_module_type
+)
+ident(
+  def m "odoc_module.ml" 480 16615 16655 "odoc_module.ml" 480 16615 16692
+)
+"odoc_module.ml" 480 16615 16655 "odoc_module.ml" 480 16615 16660
+type(
+  module_element list -> Odoc_type.t_type list
+)
+ident(
+  int_ref types "odoc_module.ml" 121 5148 5152 "odoc_module.ml" 121 5148 5157
+)
+"odoc_module.ml" 480 16615 16662 "odoc_module.ml" 480 16615 16682
+type(
+  ?trans:bool -> t_module_type -> module_element list
+)
+ident(
+  int_ref module_type_elements "odoc_module.ml" 273 9022 9026 "odoc_module.ml" 273 9022 9046
+)
+"odoc_module.ml" 480 16615 16684 "odoc_module.ml" 480 16615 16689
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 480 16615 16639 "odoc_module.ml" 480 16615 16644
+)
+"odoc_module.ml" 480 16615 16690 "odoc_module.ml" 480 16615 16691
+type(
+  t_module_type
+)
+ident(
+  int_ref m "odoc_module.ml" 480 16615 16651 "odoc_module.ml" 480 16615 16652
+)
+"odoc_module.ml" 480 16615 16661 "odoc_module.ml" 480 16615 16692
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 480 16615 16655 "odoc_module.ml" 480 16615 16692
+call(
+  tail
+)
+type(
+  Odoc_type.t_type list
+)
+"odoc_module.ml" 484 16836 16840 "odoc_module.ml" 484 16836 16867
+type(
+  ?trans:bool -> t_module_type -> Odoc_extension.t_type_extension list
+)
+ident(
+  def module_type_type_extensions "odoc_module.ml" 488 17072 17072 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 484 16836 16870 "odoc_module.ml" 484 16836 16875
+type(
+  bool
+)
+"odoc_module.ml" 484 16836 16876 "odoc_module.ml" 484 16836 16880
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 484 16836 16876 "odoc_module.ml" 484 16836 16880
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 484 16836 16882 "odoc_module.ml" 484 16836 16883
+type(
+  t_module_type
+)
+ident(
+  def m "odoc_module.ml" 484 16836 16886 "odoc_module.ml" 484 16836 16933
+)
+"odoc_module.ml" 484 16836 16886 "odoc_module.ml" 484 16836 16901
+type(
+  module_element list -> Odoc_extension.t_type_extension list
+)
+ident(
+  int_ref type_extensions "odoc_module.ml" 132 5374 5378 "odoc_module.ml" 132 5374 5393
+)
+"odoc_module.ml" 484 16836 16903 "odoc_module.ml" 484 16836 16923
+type(
+  ?trans:bool -> t_module_type -> module_element list
+)
+ident(
+  int_ref module_type_elements "odoc_module.ml" 273 9022 9026 "odoc_module.ml" 273 9022 9046
+)
+"odoc_module.ml" 484 16836 16925 "odoc_module.ml" 484 16836 16930
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 484 16836 16870 "odoc_module.ml" 484 16836 16875
+)
+"odoc_module.ml" 484 16836 16931 "odoc_module.ml" 484 16836 16932
+type(
+  t_module_type
+)
+ident(
+  int_ref m "odoc_module.ml" 484 16836 16882 "odoc_module.ml" 484 16836 16883
+)
+"odoc_module.ml" 484 16836 16902 "odoc_module.ml" 484 16836 16933
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 484 16836 16886 "odoc_module.ml" 484 16836 16933
+call(
+  tail
+)
+type(
+  Odoc_extension.t_type_extension list
+)
+"odoc_module.ml" 488 17072 17076 "odoc_module.ml" 488 17072 17098
+type(
+  ?trans:bool -> t_module_type -> Odoc_exception.t_exception list
+)
+ident(
+  def module_type_exceptions "odoc_module.ml" 492 17295 17295 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 488 17072 17101 "odoc_module.ml" 488 17072 17106
+type(
+  bool
+)
+"odoc_module.ml" 488 17072 17107 "odoc_module.ml" 488 17072 17111
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 488 17072 17107 "odoc_module.ml" 488 17072 17111
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 488 17072 17113 "odoc_module.ml" 488 17072 17114
+type(
+  t_module_type
+)
+ident(
+  def m "odoc_module.ml" 488 17072 17117 "odoc_module.ml" 488 17072 17159
+)
+"odoc_module.ml" 488 17072 17117 "odoc_module.ml" 488 17072 17127
+type(
+  module_element list -> Odoc_exception.t_exception list
+)
+ident(
+  int_ref exceptions "odoc_module.ml" 143 5615 5619 "odoc_module.ml" 143 5615 5629
+)
+"odoc_module.ml" 488 17072 17129 "odoc_module.ml" 488 17072 17149
+type(
+  ?trans:bool -> t_module_type -> module_element list
+)
+ident(
+  int_ref module_type_elements "odoc_module.ml" 273 9022 9026 "odoc_module.ml" 273 9022 9046
+)
+"odoc_module.ml" 488 17072 17151 "odoc_module.ml" 488 17072 17156
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 488 17072 17101 "odoc_module.ml" 488 17072 17106
+)
+"odoc_module.ml" 488 17072 17157 "odoc_module.ml" 488 17072 17158
+type(
+  t_module_type
+)
+ident(
+  int_ref m "odoc_module.ml" 488 17072 17113 "odoc_module.ml" 488 17072 17114
+)
+"odoc_module.ml" 488 17072 17128 "odoc_module.ml" 488 17072 17159
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 488 17072 17117 "odoc_module.ml" 488 17072 17159
+call(
+  tail
+)
+type(
+  Odoc_exception.t_exception list
+)
+"odoc_module.ml" 492 17295 17299 "odoc_module.ml" 492 17295 17318
+type(
+  ?trans:bool -> t_module_type -> Odoc_class.t_class list
+)
+ident(
+  def module_type_classes "odoc_module.ml" 496 17516 17516 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 492 17295 17321 "odoc_module.ml" 492 17295 17326
+type(
+  bool
+)
+"odoc_module.ml" 492 17295 17327 "odoc_module.ml" 492 17295 17331
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 492 17295 17327 "odoc_module.ml" 492 17295 17331
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 492 17295 17333 "odoc_module.ml" 492 17295 17334
+type(
+  t_module_type
+)
+ident(
+  def m "odoc_module.ml" 492 17295 17337 "odoc_module.ml" 492 17295 17376
+)
+"odoc_module.ml" 492 17295 17337 "odoc_module.ml" 492 17295 17344
+type(
+  module_element list -> Odoc_class.t_class list
+)
+ident(
+  int_ref classes "odoc_module.ml" 154 5843 5847 "odoc_module.ml" 154 5843 5854
+)
+"odoc_module.ml" 492 17295 17346 "odoc_module.ml" 492 17295 17366
+type(
+  ?trans:bool -> t_module_type -> module_element list
+)
+ident(
+  int_ref module_type_elements "odoc_module.ml" 273 9022 9026 "odoc_module.ml" 273 9022 9046
+)
+"odoc_module.ml" 492 17295 17368 "odoc_module.ml" 492 17295 17373
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 492 17295 17321 "odoc_module.ml" 492 17295 17326
+)
+"odoc_module.ml" 492 17295 17374 "odoc_module.ml" 492 17295 17375
+type(
+  t_module_type
+)
+ident(
+  int_ref m "odoc_module.ml" 492 17295 17333 "odoc_module.ml" 492 17295 17334
+)
+"odoc_module.ml" 492 17295 17345 "odoc_module.ml" 492 17295 17376
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 492 17295 17337 "odoc_module.ml" 492 17295 17376
+call(
+  tail
+)
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 496 17516 17520 "odoc_module.ml" 496 17516 17543
+type(
+  ?trans:bool -> t_module_type -> Odoc_class.t_class_type list
+)
+ident(
+  def module_type_class_types "odoc_module.ml" 500 17741 17741 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 496 17516 17546 "odoc_module.ml" 496 17516 17551
+type(
+  bool
+)
+"odoc_module.ml" 496 17516 17552 "odoc_module.ml" 496 17516 17556
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 496 17516 17552 "odoc_module.ml" 496 17516 17556
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 496 17516 17558 "odoc_module.ml" 496 17516 17559
+type(
+  t_module_type
+)
+ident(
+  def m "odoc_module.ml" 496 17516 17562 "odoc_module.ml" 496 17516 17605
+)
+"odoc_module.ml" 496 17516 17562 "odoc_module.ml" 496 17516 17573
+type(
+  module_element list -> Odoc_class.t_class_type list
+)
+ident(
+  int_ref class_types "odoc_module.ml" 165 6068 6072 "odoc_module.ml" 165 6068 6083
+)
+"odoc_module.ml" 496 17516 17575 "odoc_module.ml" 496 17516 17595
+type(
+  ?trans:bool -> t_module_type -> module_element list
+)
+ident(
+  int_ref module_type_elements "odoc_module.ml" 273 9022 9026 "odoc_module.ml" 273 9022 9046
+)
+"odoc_module.ml" 496 17516 17597 "odoc_module.ml" 496 17516 17602
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 496 17516 17546 "odoc_module.ml" 496 17516 17551
+)
+"odoc_module.ml" 496 17516 17603 "odoc_module.ml" 496 17516 17604
+type(
+  t_module_type
+)
+ident(
+  int_ref m "odoc_module.ml" 496 17516 17558 "odoc_module.ml" 496 17516 17559
+)
+"odoc_module.ml" 496 17516 17574 "odoc_module.ml" 496 17516 17605
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 496 17516 17562 "odoc_module.ml" 496 17516 17605
+call(
+  tail
+)
+type(
+  Odoc_class.t_class_type list
+)
+"odoc_module.ml" 500 17741 17745 "odoc_module.ml" 500 17741 17764
+type(
+  ?trans:bool -> t_module_type -> t_module list
+)
+ident(
+  def module_type_modules "odoc_module.ml" 504 17964 17964 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 500 17741 17767 "odoc_module.ml" 500 17741 17772
+type(
+  bool
+)
+"odoc_module.ml" 500 17741 17773 "odoc_module.ml" 500 17741 17777
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 500 17741 17773 "odoc_module.ml" 500 17741 17777
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 500 17741 17780 "odoc_module.ml" 500 17741 17781
+type(
+  t_module_type
+)
+ident(
+  def m "odoc_module.ml" 500 17741 17784 "odoc_module.ml" 500 17741 17823
+)
+"odoc_module.ml" 500 17741 17784 "odoc_module.ml" 500 17741 17791
+type(
+  module_element list -> t_module list
+)
+ident(
+  int_ref modules "odoc_module.ml" 176 6300 6304 "odoc_module.ml" 176 6300 6311
+)
+"odoc_module.ml" 500 17741 17793 "odoc_module.ml" 500 17741 17813
+type(
+  ?trans:bool -> t_module_type -> module_element list
+)
+ident(
+  int_ref module_type_elements "odoc_module.ml" 273 9022 9026 "odoc_module.ml" 273 9022 9046
+)
+"odoc_module.ml" 500 17741 17815 "odoc_module.ml" 500 17741 17820
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 500 17741 17767 "odoc_module.ml" 500 17741 17772
+)
+"odoc_module.ml" 500 17741 17821 "odoc_module.ml" 500 17741 17822
+type(
+  t_module_type
+)
+ident(
+  int_ref m "odoc_module.ml" 500 17741 17780 "odoc_module.ml" 500 17741 17781
+)
+"odoc_module.ml" 500 17741 17792 "odoc_module.ml" 500 17741 17823
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 500 17741 17784 "odoc_module.ml" 500 17741 17823
+call(
+  tail
+)
+type(
+  t_module list
+)
+"odoc_module.ml" 504 17964 17968 "odoc_module.ml" 504 17964 17992
+type(
+  ?trans:bool -> t_module_type -> t_module_type list
+)
+ident(
+  def module_type_module_types "odoc_module.ml" 508 18196 18196 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 504 17964 17995 "odoc_module.ml" 504 17964 18000
+type(
+  bool
+)
+"odoc_module.ml" 504 17964 18001 "odoc_module.ml" 504 17964 18005
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 504 17964 18001 "odoc_module.ml" 504 17964 18005
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 504 17964 18007 "odoc_module.ml" 504 17964 18008
+type(
+  t_module_type
+)
+ident(
+  def m "odoc_module.ml" 504 17964 18011 "odoc_module.ml" 504 17964 18052
+)
+"odoc_module.ml" 504 17964 18011 "odoc_module.ml" 504 17964 18020
+type(
+  module_element list -> t_module_type list
+)
+ident(
+  int_ref mod_types "odoc_module.ml" 187 6527 6531 "odoc_module.ml" 187 6527 6540
+)
+"odoc_module.ml" 504 17964 18022 "odoc_module.ml" 504 17964 18042
+type(
+  ?trans:bool -> t_module_type -> module_element list
+)
+ident(
+  int_ref module_type_elements "odoc_module.ml" 273 9022 9026 "odoc_module.ml" 273 9022 9046
+)
+"odoc_module.ml" 504 17964 18044 "odoc_module.ml" 504 17964 18049
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 504 17964 17995 "odoc_module.ml" 504 17964 18000
+)
+"odoc_module.ml" 504 17964 18050 "odoc_module.ml" 504 17964 18051
+type(
+  t_module_type
+)
+ident(
+  int_ref m "odoc_module.ml" 504 17964 18007 "odoc_module.ml" 504 17964 18008
+)
+"odoc_module.ml" 504 17964 18021 "odoc_module.ml" 504 17964 18052
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 504 17964 18011 "odoc_module.ml" 504 17964 18052
+call(
+  tail
+)
+type(
+  t_module_type list
+)
+"odoc_module.ml" 508 18196 18200 "odoc_module.ml" 508 18196 18228
+type(
+  ?trans:bool -> t_module_type -> included_module list
+)
+ident(
+  def module_type_included_modules "odoc_module.ml" 512 18432 18432 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 508 18196 18231 "odoc_module.ml" 508 18196 18236
+type(
+  bool
+)
+"odoc_module.ml" 508 18196 18237 "odoc_module.ml" 508 18196 18241
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 508 18196 18237 "odoc_module.ml" 508 18196 18241
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 508 18196 18243 "odoc_module.ml" 508 18196 18244
+type(
+  t_module_type
+)
+ident(
+  def m "odoc_module.ml" 508 18196 18247 "odoc_module.ml" 508 18196 18295
+)
+"odoc_module.ml" 508 18196 18247 "odoc_module.ml" 508 18196 18263
+type(
+  module_element list -> included_module list
+)
+ident(
+  int_ref included_modules "odoc_module.ml" 209 7005 7009 "odoc_module.ml" 209 7005 7025
+)
+"odoc_module.ml" 508 18196 18265 "odoc_module.ml" 508 18196 18285
+type(
+  ?trans:bool -> t_module_type -> module_element list
+)
+ident(
+  int_ref module_type_elements "odoc_module.ml" 273 9022 9026 "odoc_module.ml" 273 9022 9046
+)
+"odoc_module.ml" 508 18196 18287 "odoc_module.ml" 508 18196 18292
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 508 18196 18231 "odoc_module.ml" 508 18196 18236
+)
+"odoc_module.ml" 508 18196 18293 "odoc_module.ml" 508 18196 18294
+type(
+  t_module_type
+)
+ident(
+  int_ref m "odoc_module.ml" 508 18196 18243 "odoc_module.ml" 508 18196 18244
+)
+"odoc_module.ml" 508 18196 18264 "odoc_module.ml" 508 18196 18295
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 508 18196 18247 "odoc_module.ml" 508 18196 18295
+call(
+  tail
+)
+type(
+  included_module list
+)
+"odoc_module.ml" 512 18432 18436 "odoc_module.ml" 512 18432 18456
+type(
+  ?trans:bool -> t_module_type -> Odoc_types.text list
+)
+ident(
+  def module_type_comments "odoc_module.ml" 516 18666 18666 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 512 18432 18459 "odoc_module.ml" 512 18432 18464
+type(
+  bool
+)
+"odoc_module.ml" 512 18432 18465 "odoc_module.ml" 512 18432 18469
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 512 18432 18465 "odoc_module.ml" 512 18432 18469
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 512 18432 18471 "odoc_module.ml" 512 18432 18472
+type(
+  t_module_type
+)
+ident(
+  def m "odoc_module.ml" 512 18432 18475 "odoc_module.ml" 512 18432 18515
+)
+"odoc_module.ml" 512 18432 18475 "odoc_module.ml" 512 18432 18483
+type(
+  module_element list -> Odoc_types.text list
+)
+ident(
+  int_ref comments "odoc_module.ml" 198 6765 6769 "odoc_module.ml" 198 6765 6777
+)
+"odoc_module.ml" 512 18432 18485 "odoc_module.ml" 512 18432 18505
+type(
+  ?trans:bool -> t_module_type -> module_element list
+)
+ident(
+  int_ref module_type_elements "odoc_module.ml" 273 9022 9026 "odoc_module.ml" 273 9022 9046
+)
+"odoc_module.ml" 512 18432 18507 "odoc_module.ml" 512 18432 18512
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 512 18432 18459 "odoc_module.ml" 512 18432 18464
+)
+"odoc_module.ml" 512 18432 18513 "odoc_module.ml" 512 18432 18514
+type(
+  t_module_type
+)
+ident(
+  int_ref m "odoc_module.ml" 512 18432 18471 "odoc_module.ml" 512 18432 18472
+)
+"odoc_module.ml" 512 18432 18484 "odoc_module.ml" 512 18432 18515
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 512 18432 18475 "odoc_module.ml" 512 18432 18515
+call(
+  tail
+)
+type(
+  Odoc_types.text list
+)
+"odoc_module.ml" 516 18666 18670 "odoc_module.ml" 516 18666 18691
+type(
+  ?trans:bool -> t_module_type -> Odoc_value.t_value list
+)
+ident(
+  def module_type_functions "odoc_module.ml" 523 18965 18965 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 516 18666 18694 "odoc_module.ml" 516 18666 18699
+type(
+  bool
+)
+"odoc_module.ml" 516 18666 18700 "odoc_module.ml" 516 18666 18704
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 516 18666 18700 "odoc_module.ml" 516 18666 18704
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 516 18666 18706 "odoc_module.ml" 516 18666 18708
+type(
+  t_module_type
+)
+ident(
+  def mt "odoc_module.ml" 517 18711 18713 "odoc_module.ml" 519 18765 18810
+)
+"odoc_module.ml" 517 18711 18713 "odoc_module.ml" 517 18711 18724
+type(
+  (Odoc_value.t_value -> bool) ->
+  Odoc_value.t_value list -> Odoc_value.t_value list
+)
+ident(
+  ext_ref List.filter
+)
+"odoc_module.ml" 518 18725 18734 "odoc_module.ml" 518 18725 18735
+type(
+  Odoc_value.t_value
+)
+ident(
+  def v "odoc_module.ml" 518 18725 18739 "odoc_module.ml" 518 18725 18763
+)
+"odoc_module.ml" 518 18725 18739 "odoc_module.ml" 518 18725 18761
+type(
+  Odoc_value.t_value -> bool
+)
+ident(
+  ext_ref Odoc_value.is_function
+)
+"odoc_module.ml" 518 18725 18762 "odoc_module.ml" 518 18725 18763
+type(
+  Odoc_value.t_value
+)
+ident(
+  int_ref v "odoc_module.ml" 518 18725 18734 "odoc_module.ml" 518 18725 18735
+)
+"odoc_module.ml" 518 18725 18739 "odoc_module.ml" 518 18725 18763
+call(
+  tail
+)
+type(
+  bool
+)
+"odoc_module.ml" 518 18725 18729 "odoc_module.ml" 518 18725 18764
+type(
+  Odoc_value.t_value -> bool
+)
+"odoc_module.ml" 519 18765 18770 "odoc_module.ml" 519 18765 18776
+type(
+  module_element list -> Odoc_value.t_value list
+)
+ident(
+  int_ref values "odoc_module.ml" 110 4930 4934 "odoc_module.ml" 110 4930 4940
+)
+"odoc_module.ml" 519 18765 18778 "odoc_module.ml" 519 18765 18798
+type(
+  ?trans:bool -> t_module_type -> module_element list
+)
+ident(
+  int_ref module_type_elements "odoc_module.ml" 273 9022 9026 "odoc_module.ml" 273 9022 9046
+)
+"odoc_module.ml" 519 18765 18800 "odoc_module.ml" 519 18765 18805
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 516 18666 18694 "odoc_module.ml" 516 18666 18699
+)
+"odoc_module.ml" 519 18765 18806 "odoc_module.ml" 519 18765 18808
+type(
+  t_module_type
+)
+ident(
+  int_ref mt "odoc_module.ml" 516 18666 18706 "odoc_module.ml" 516 18666 18708
+)
+"odoc_module.ml" 519 18765 18777 "odoc_module.ml" 519 18765 18809
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 519 18765 18769 "odoc_module.ml" 519 18765 18810
+call(
+  stack
+)
+type(
+  Odoc_value.t_value list
+)
+"odoc_module.ml" 517 18711 18713 "odoc_module.ml" 519 18765 18810
+call(
+  tail
+)
+type(
+  Odoc_value.t_value list
+)
+"odoc_module.ml" 523 18965 18969 "odoc_module.ml" 523 18965 18994
+type(
+  ?trans:bool -> t_module_type -> Odoc_value.t_value list
+)
+ident(
+  def module_type_simple_values "odoc_module.ml" 532 19346 19346 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 523 18965 18997 "odoc_module.ml" 523 18965 19002
+type(
+  bool
+)
+"odoc_module.ml" 523 18965 19003 "odoc_module.ml" 523 18965 19007
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 523 18965 19003 "odoc_module.ml" 523 18965 19007
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 523 18965 19009 "odoc_module.ml" 523 18965 19011
+type(
+  t_module_type
+)
+ident(
+  def mt "odoc_module.ml" 524 19014 19018 "odoc_module.ml" 526 19076 19121
+)
+"odoc_module.ml" 524 19014 19018 "odoc_module.ml" 524 19014 19029
+type(
+  (Odoc_value.t_value -> bool) ->
+  Odoc_value.t_value list -> Odoc_value.t_value list
+)
+ident(
+  ext_ref List.filter
+)
+"odoc_module.ml" 525 19030 19039 "odoc_module.ml" 525 19030 19040
+type(
+  Odoc_value.t_value
+)
+ident(
+  def v "odoc_module.ml" 525 19030 19044 "odoc_module.ml" 525 19030 19074
+)
+"odoc_module.ml" 525 19030 19044 "odoc_module.ml" 525 19030 19047
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"odoc_module.ml" 525 19030 19049 "odoc_module.ml" 525 19030 19071
+type(
+  Odoc_value.t_value -> bool
+)
+ident(
+  ext_ref Odoc_value.is_function
+)
+"odoc_module.ml" 525 19030 19072 "odoc_module.ml" 525 19030 19073
+type(
+  Odoc_value.t_value
+)
+ident(
+  int_ref v "odoc_module.ml" 525 19030 19039 "odoc_module.ml" 525 19030 19040
+)
+"odoc_module.ml" 525 19030 19048 "odoc_module.ml" 525 19030 19074
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_module.ml" 525 19030 19044 "odoc_module.ml" 525 19030 19074
+type(
+  bool
+)
+"odoc_module.ml" 525 19030 19034 "odoc_module.ml" 525 19030 19075
+type(
+  Odoc_value.t_value -> bool
+)
+"odoc_module.ml" 526 19076 19081 "odoc_module.ml" 526 19076 19087
+type(
+  module_element list -> Odoc_value.t_value list
+)
+ident(
+  int_ref values "odoc_module.ml" 110 4930 4934 "odoc_module.ml" 110 4930 4940
+)
+"odoc_module.ml" 526 19076 19089 "odoc_module.ml" 526 19076 19109
+type(
+  ?trans:bool -> t_module_type -> module_element list
+)
+ident(
+  int_ref module_type_elements "odoc_module.ml" 273 9022 9026 "odoc_module.ml" 273 9022 9046
+)
+"odoc_module.ml" 526 19076 19111 "odoc_module.ml" 526 19076 19116
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 523 18965 18997 "odoc_module.ml" 523 18965 19002
+)
+"odoc_module.ml" 526 19076 19117 "odoc_module.ml" 526 19076 19119
+type(
+  t_module_type
+)
+ident(
+  int_ref mt "odoc_module.ml" 523 18965 19009 "odoc_module.ml" 523 18965 19011
+)
+"odoc_module.ml" 526 19076 19088 "odoc_module.ml" 526 19076 19120
+call(
+  stack
+)
+type(
+  module_element list
+)
+"odoc_module.ml" 526 19076 19080 "odoc_module.ml" 526 19076 19121
+call(
+  stack
+)
+type(
+  Odoc_value.t_value list
+)
+"odoc_module.ml" 524 19014 19018 "odoc_module.ml" 526 19076 19121
+call(
+  tail
+)
+type(
+  Odoc_value.t_value list
+)
+"odoc_module.ml" 532 19346 19354 "odoc_module.ml" 532 19346 19372
+type(
+  ?trans:bool -> t_module -> Odoc_class.t_class list
+)
+ident(
+  def module_all_classes "odoc_module.ml" 532 19346 19346 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 532 19346 19375 "odoc_module.ml" 532 19346 19380
+type(
+  bool
+)
+"odoc_module.ml" 532 19346 19381 "odoc_module.ml" 532 19346 19385
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 532 19346 19381 "odoc_module.ml" 532 19346 19385
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 532 19346 19387 "odoc_module.ml" 532 19346 19388
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 533 19391 19393 "odoc_module.ml" 541 19651 19680
+)
+"odoc_module.ml" 533 19391 19393 "odoc_module.ml" 533 19391 19407
+type(
+  (Odoc_class.t_class list -> t_module -> Odoc_class.t_class list) ->
+  Odoc_class.t_class list -> t_module list -> Odoc_class.t_class list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_module.ml" 534 19408 19417 "odoc_module.ml" 534 19408 19420
+type(
+  Odoc_class.t_class list
+)
+ident(
+  def acc "odoc_module.ml" 534 19408 19424 "odoc_module.ml" 534 19408 19468
+)
+"odoc_module.ml" 534 19408 19428 "odoc_module.ml" 534 19408 19429
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 534 19408 19433 "odoc_module.ml" 534 19408 19468
+)
+"odoc_module.ml" 534 19408 19433 "odoc_module.ml" 534 19408 19436
+type(
+  Odoc_class.t_class list
+)
+ident(
+  int_ref acc "odoc_module.ml" 534 19408 19417 "odoc_module.ml" 534 19408 19420
+)
+"odoc_module.ml" 534 19408 19437 "odoc_module.ml" 534 19408 19438
+type(
+  Odoc_class.t_class list ->
+  Odoc_class.t_class list -> Odoc_class.t_class list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_module.ml" 534 19408 19440 "odoc_module.ml" 534 19408 19458
+type(
+  ?trans:bool -> t_module -> Odoc_class.t_class list
+)
+ident(
+  int_ref module_all_classes "odoc_module.ml" 532 19346 19354 "odoc_module.ml" 532 19346 19372
+)
+"odoc_module.ml" 534 19408 19460 "odoc_module.ml" 534 19408 19465
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 532 19346 19375 "odoc_module.ml" 532 19346 19380
+)
+"odoc_module.ml" 534 19408 19466 "odoc_module.ml" 534 19408 19467
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 534 19408 19428 "odoc_module.ml" 534 19408 19429
+)
+"odoc_module.ml" 534 19408 19439 "odoc_module.ml" 534 19408 19468
+call(
+  stack
+)
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 534 19408 19433 "odoc_module.ml" 534 19408 19468
+call(
+  tail
+)
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 534 19408 19424 "odoc_module.ml" 534 19408 19468
+type(
+  t_module -> Odoc_class.t_class list
+)
+"odoc_module.ml" 534 19408 19412 "odoc_module.ml" 534 19408 19469
+type(
+  Odoc_class.t_class list -> t_module -> Odoc_class.t_class list
+)
+"odoc_module.ml" 536 19476 19483 "odoc_module.ml" 536 19476 19497
+type(
+  (Odoc_class.t_class list -> t_module_type -> Odoc_class.t_class list) ->
+  Odoc_class.t_class list -> t_module_type list -> Odoc_class.t_class list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_module.ml" 537 19498 19510 "odoc_module.ml" 537 19498 19513
+type(
+  Odoc_class.t_class list
+)
+ident(
+  def acc "odoc_module.ml" 537 19498 19517 "odoc_module.ml" 537 19498 19572
+)
+"odoc_module.ml" 537 19498 19521 "odoc_module.ml" 537 19498 19525
+type(
+  t_module_type
+)
+ident(
+  def mtyp "odoc_module.ml" 537 19498 19529 "odoc_module.ml" 537 19498 19572
+)
+"odoc_module.ml" 537 19498 19529 "odoc_module.ml" 537 19498 19532
+type(
+  Odoc_class.t_class list
+)
+ident(
+  int_ref acc "odoc_module.ml" 537 19498 19510 "odoc_module.ml" 537 19498 19513
+)
+"odoc_module.ml" 537 19498 19533 "odoc_module.ml" 537 19498 19534
+type(
+  Odoc_class.t_class list ->
+  Odoc_class.t_class list -> Odoc_class.t_class list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_module.ml" 537 19498 19536 "odoc_module.ml" 537 19498 19559
+type(
+  ?trans:bool -> t_module_type -> Odoc_class.t_class list
+)
+ident(
+  int_ref module_type_all_classes "odoc_module.ml" 545 19859 19863 "odoc_module.ml" 545 19859 19886
+)
+"odoc_module.ml" 537 19498 19561 "odoc_module.ml" 537 19498 19566
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 532 19346 19375 "odoc_module.ml" 532 19346 19380
+)
+"odoc_module.ml" 537 19498 19567 "odoc_module.ml" 537 19498 19571
+type(
+  t_module_type
+)
+ident(
+  int_ref mtyp "odoc_module.ml" 537 19498 19521 "odoc_module.ml" 537 19498 19525
+)
+"odoc_module.ml" 537 19498 19535 "odoc_module.ml" 537 19498 19572
+call(
+  stack
+)
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 537 19498 19529 "odoc_module.ml" 537 19498 19572
+call(
+  tail
+)
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 537 19498 19517 "odoc_module.ml" 537 19498 19572
+type(
+  t_module_type -> Odoc_class.t_class list
+)
+"odoc_module.ml" 537 19498 19505 "odoc_module.ml" 537 19498 19573
+type(
+  Odoc_class.t_class list -> t_module_type -> Odoc_class.t_class list
+)
+"odoc_module.ml" 538 19574 19582 "odoc_module.ml" 538 19574 19596
+type(
+  ?trans:bool -> t_module -> Odoc_class.t_class list
+)
+ident(
+  int_ref module_classes "odoc_module.ml" 326 11149 11153 "odoc_module.ml" 326 11149 11167
+)
+"odoc_module.ml" 538 19574 19598 "odoc_module.ml" 538 19574 19603
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 532 19346 19375 "odoc_module.ml" 532 19346 19380
+)
+"odoc_module.ml" 538 19574 19604 "odoc_module.ml" 538 19574 19605
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 532 19346 19387 "odoc_module.ml" 532 19346 19388
+)
+"odoc_module.ml" 538 19574 19581 "odoc_module.ml" 538 19574 19606
+call(
+  stack
+)
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 539 19607 19615 "odoc_module.ml" 539 19607 19634
+type(
+  ?trans:bool -> t_module -> t_module_type list
+)
+ident(
+  int_ref module_module_types "odoc_module.ml" 338 11787 11791 "odoc_module.ml" 338 11787 11810
+)
+"odoc_module.ml" 539 19607 19636 "odoc_module.ml" 539 19607 19641
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 532 19346 19375 "odoc_module.ml" 532 19346 19380
+)
+"odoc_module.ml" 539 19607 19642 "odoc_module.ml" 539 19607 19643
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 532 19346 19387 "odoc_module.ml" 532 19346 19388
+)
+"odoc_module.ml" 539 19607 19614 "odoc_module.ml" 539 19607 19644
+call(
+  stack
+)
+type(
+  t_module_type list
+)
+"odoc_module.ml" 535 19470 19474 "odoc_module.ml" 540 19645 19650
+call(
+  stack
+)
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 541 19651 19656 "odoc_module.ml" 541 19651 19670
+type(
+  ?trans:bool -> t_module -> t_module list
+)
+ident(
+  int_ref module_modules "odoc_module.ml" 334 11575 11579 "odoc_module.ml" 334 11575 11593
+)
+"odoc_module.ml" 541 19651 19672 "odoc_module.ml" 541 19651 19677
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 532 19346 19375 "odoc_module.ml" 532 19346 19380
+)
+"odoc_module.ml" 541 19651 19678 "odoc_module.ml" 541 19651 19679
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 532 19346 19387 "odoc_module.ml" 532 19346 19388
+)
+"odoc_module.ml" 541 19651 19655 "odoc_module.ml" 541 19651 19680
+call(
+  stack
+)
+type(
+  t_module list
+)
+"odoc_module.ml" 533 19391 19393 "odoc_module.ml" 541 19651 19680
+call(
+  tail
+)
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 545 19859 19863 "odoc_module.ml" 545 19859 19886
+type(
+  ?trans:bool -> t_module_type -> Odoc_class.t_class list
+)
+ident(
+  def module_type_all_classes "odoc_module.ml" 532 19346 19346 "odoc_module.ml" 1 0 -1
+)
+"odoc_module.ml" 545 19859 19889 "odoc_module.ml" 545 19859 19894
+type(
+  bool
+)
+"odoc_module.ml" 545 19859 19895 "odoc_module.ml" 545 19859 19899
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_module.ml" 545 19859 19895 "odoc_module.ml" 545 19859 19899
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_module.ml" 545 19859 19901 "odoc_module.ml" 545 19859 19903
+type(
+  t_module_type
+)
+ident(
+  def mt "odoc_module.ml" 546 19906 19908 "odoc_module.ml" 554 20176 20211
+)
+"odoc_module.ml" 546 19906 19908 "odoc_module.ml" 546 19906 19922
+type(
+  (Odoc_class.t_class list -> t_module -> Odoc_class.t_class list) ->
+  Odoc_class.t_class list -> t_module list -> Odoc_class.t_class list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_module.ml" 547 19923 19932 "odoc_module.ml" 547 19923 19935
+type(
+  Odoc_class.t_class list
+)
+ident(
+  def acc "odoc_module.ml" 547 19923 19939 "odoc_module.ml" 547 19923 19983
+)
+"odoc_module.ml" 547 19923 19943 "odoc_module.ml" 547 19923 19944
+type(
+  t_module
+)
+ident(
+  def m "odoc_module.ml" 547 19923 19948 "odoc_module.ml" 547 19923 19983
+)
+"odoc_module.ml" 547 19923 19948 "odoc_module.ml" 547 19923 19951
+type(
+  Odoc_class.t_class list
+)
+ident(
+  int_ref acc "odoc_module.ml" 547 19923 19932 "odoc_module.ml" 547 19923 19935
+)
+"odoc_module.ml" 547 19923 19952 "odoc_module.ml" 547 19923 19953
+type(
+  Odoc_class.t_class list ->
+  Odoc_class.t_class list -> Odoc_class.t_class list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_module.ml" 547 19923 19955 "odoc_module.ml" 547 19923 19973
+type(
+  ?trans:bool -> t_module -> Odoc_class.t_class list
+)
+ident(
+  int_ref module_all_classes "odoc_module.ml" 532 19346 19354 "odoc_module.ml" 532 19346 19372
+)
+"odoc_module.ml" 547 19923 19975 "odoc_module.ml" 547 19923 19980
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 545 19859 19889 "odoc_module.ml" 545 19859 19894
+)
+"odoc_module.ml" 547 19923 19981 "odoc_module.ml" 547 19923 19982
+type(
+  t_module
+)
+ident(
+  int_ref m "odoc_module.ml" 547 19923 19943 "odoc_module.ml" 547 19923 19944
+)
+"odoc_module.ml" 547 19923 19954 "odoc_module.ml" 547 19923 19983
+call(
+  stack
+)
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 547 19923 19948 "odoc_module.ml" 547 19923 19983
+call(
+  tail
+)
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 547 19923 19939 "odoc_module.ml" 547 19923 19983
+type(
+  t_module -> Odoc_class.t_class list
+)
+"odoc_module.ml" 547 19923 19927 "odoc_module.ml" 547 19923 19984
+type(
+  Odoc_class.t_class list -> t_module -> Odoc_class.t_class list
+)
+"odoc_module.ml" 549 19991 19996 "odoc_module.ml" 549 19991 20010
+type(
+  (Odoc_class.t_class list -> t_module_type -> Odoc_class.t_class list) ->
+  Odoc_class.t_class list -> t_module_type list -> Odoc_class.t_class list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_module.ml" 550 20011 20023 "odoc_module.ml" 550 20011 20026
+type(
+  Odoc_class.t_class list
+)
+ident(
+  def acc "odoc_module.ml" 550 20011 20030 "odoc_module.ml" 550 20011 20085
+)
+"odoc_module.ml" 550 20011 20034 "odoc_module.ml" 550 20011 20038
+type(
+  t_module_type
+)
+ident(
+  def mtyp "odoc_module.ml" 550 20011 20042 "odoc_module.ml" 550 20011 20085
+)
+"odoc_module.ml" 550 20011 20042 "odoc_module.ml" 550 20011 20045
+type(
+  Odoc_class.t_class list
+)
+ident(
+  int_ref acc "odoc_module.ml" 550 20011 20023 "odoc_module.ml" 550 20011 20026
+)
+"odoc_module.ml" 550 20011 20046 "odoc_module.ml" 550 20011 20047
+type(
+  Odoc_class.t_class list ->
+  Odoc_class.t_class list -> Odoc_class.t_class list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_module.ml" 550 20011 20049 "odoc_module.ml" 550 20011 20072
+type(
+  ?trans:bool -> t_module_type -> Odoc_class.t_class list
+)
+ident(
+  int_ref module_type_all_classes "odoc_module.ml" 545 19859 19863 "odoc_module.ml" 545 19859 19886
+)
+"odoc_module.ml" 550 20011 20074 "odoc_module.ml" 550 20011 20079
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 545 19859 19889 "odoc_module.ml" 545 19859 19894
+)
+"odoc_module.ml" 550 20011 20080 "odoc_module.ml" 550 20011 20084
+type(
+  t_module_type
+)
+ident(
+  int_ref mtyp "odoc_module.ml" 550 20011 20034 "odoc_module.ml" 550 20011 20038
+)
+"odoc_module.ml" 550 20011 20048 "odoc_module.ml" 550 20011 20085
+call(
+  stack
+)
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 550 20011 20042 "odoc_module.ml" 550 20011 20085
+call(
+  tail
+)
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 550 20011 20030 "odoc_module.ml" 550 20011 20085
+type(
+  t_module_type -> Odoc_class.t_class list
+)
+"odoc_module.ml" 550 20011 20018 "odoc_module.ml" 550 20011 20086
+type(
+  Odoc_class.t_class list -> t_module_type -> Odoc_class.t_class list
+)
+"odoc_module.ml" 551 20087 20095 "odoc_module.ml" 551 20087 20114
+type(
+  ?trans:bool -> t_module_type -> Odoc_class.t_class list
+)
+ident(
+  int_ref module_type_classes "odoc_module.ml" 492 17295 17299 "odoc_module.ml" 492 17295 17318
+)
+"odoc_module.ml" 551 20087 20116 "odoc_module.ml" 551 20087 20121
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 545 19859 19889 "odoc_module.ml" 545 19859 19894
+)
+"odoc_module.ml" 551 20087 20122 "odoc_module.ml" 551 20087 20124
+type(
+  t_module_type
+)
+ident(
+  int_ref mt "odoc_module.ml" 545 19859 19901 "odoc_module.ml" 545 19859 19903
+)
+"odoc_module.ml" 551 20087 20094 "odoc_module.ml" 551 20087 20125
+call(
+  stack
+)
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 552 20126 20134 "odoc_module.ml" 552 20126 20158
+type(
+  ?trans:bool -> t_module_type -> t_module_type list
+)
+ident(
+  int_ref module_type_module_types "odoc_module.ml" 504 17964 17968 "odoc_module.ml" 504 17964 17992
+)
+"odoc_module.ml" 552 20126 20160 "odoc_module.ml" 552 20126 20165
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 545 19859 19889 "odoc_module.ml" 545 19859 19894
+)
+"odoc_module.ml" 552 20126 20166 "odoc_module.ml" 552 20126 20168
+type(
+  t_module_type
+)
+ident(
+  int_ref mt "odoc_module.ml" 545 19859 19901 "odoc_module.ml" 545 19859 19903
+)
+"odoc_module.ml" 552 20126 20133 "odoc_module.ml" 552 20126 20169
+call(
+  stack
+)
+type(
+  t_module_type list
+)
+"odoc_module.ml" 548 19985 19989 "odoc_module.ml" 553 20170 20175
+call(
+  stack
+)
+type(
+  Odoc_class.t_class list
+)
+"odoc_module.ml" 554 20176 20181 "odoc_module.ml" 554 20176 20200
+type(
+  ?trans:bool -> t_module_type -> t_module list
+)
+ident(
+  int_ref module_type_modules "odoc_module.ml" 500 17741 17745 "odoc_module.ml" 500 17741 17764
+)
+"odoc_module.ml" 554 20176 20202 "odoc_module.ml" 554 20176 20207
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_module.ml" 545 19859 19889 "odoc_module.ml" 545 19859 19894
+)
+"odoc_module.ml" 554 20176 20208 "odoc_module.ml" 554 20176 20210
+type(
+  t_module_type
+)
+ident(
+  int_ref mt "odoc_module.ml" 545 19859 19901 "odoc_module.ml" 545 19859 19903
+)
+"odoc_module.ml" 554 20176 20180 "odoc_module.ml" 554 20176 20211
+call(
+  stack
+)
+type(
+  t_module list
+)
+"odoc_module.ml" 546 19906 19908 "odoc_module.ml" 554 20176 20211
+call(
+  tail
+)
+type(
+  Odoc_class.t_class list
+)

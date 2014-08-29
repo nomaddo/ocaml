@@ -1,0 +1,4154 @@
+"outputbis.ml" 19 902 906 "outputbis.ml" 19 902 922
+type(
+  out_channel -> bool -> unit
+)
+ident(
+  def output_auto_defs "outputbis.ml" 68 2404 2404 "outputbis.ml" 1 0 -1
+)
+"outputbis.ml" 19 902 923 "outputbis.ml" 19 902 925
+type(
+  out_channel
+)
+ident(
+  def oc "outputbis.ml" 19 902 926 "outputbis.ml" 65 2396 2401
+)
+"outputbis.ml" 19 902 926 "outputbis.ml" 19 902 936
+type(
+  bool
+)
+ident(
+  def has_refill "outputbis.ml" 20 939 941 "outputbis.ml" 65 2396 2401
+)
+"outputbis.ml" 20 939 941 "outputbis.ml" 20 939 954
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"outputbis.ml" 20 939 955 "outputbis.ml" 20 939 957
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 19 902 923 "outputbis.ml" 19 902 925
+)
+"outputbis.ml" 21 958 962 "outputbis.ml" 28 1244 1245
+type(
+  string
+)
+"outputbis.ml" 20 939 941 "outputbis.ml" 28 1244 1245
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 30 1249 1254 "outputbis.ml" 30 1249 1264
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 19 902 926 "outputbis.ml" 19 902 936
+)
+"outputbis.ml" 31 1270 1274 "outputbis.ml" 31 1270 1287
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"outputbis.ml" 31 1270 1288 "outputbis.ml" 31 1270 1290
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 19 902 923 "outputbis.ml" 19 902 925
+)
+"outputbis.ml" 32 1291 1297 "outputbis.ml" 48 1885 1890
+type(
+  string
+)
+"outputbis.ml" 31 1270 1274 "outputbis.ml" 48 1885 1890
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 50 1898 1902 "outputbis.ml" 50 1898 1915
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"outputbis.ml" 50 1898 1916 "outputbis.ml" 50 1898 1918
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 19 902 923 "outputbis.ml" 19 902 925
+)
+"outputbis.ml" 51 1919 1925 "outputbis.ml" 65 2396 2401
+type(
+  string
+)
+"outputbis.ml" 50 1898 1902 "outputbis.ml" 65 2396 2401
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 30 1249 1251 "outputbis.ml" 65 2396 2401
+type(
+  unit
+)
+"outputbis.ml" 20 939 941 "outputbis.ml" 65 2396 2401
+type(
+  unit
+)
+"outputbis.ml" 68 2404 2408 "outputbis.ml" 68 2404 2419
+type(
+  out_channel -> int list -> unit
+)
+ident(
+  def output_pats "outputbis.ml" 70 2476 2476 "outputbis.ml" 1 0 -1
+)
+"outputbis.ml" 68 2404 2420 "outputbis.ml" 68 2404 2422
+type(
+  out_channel
+)
+ident(
+  def oc "outputbis.ml" 68 2404 2423 "outputbis.ml" 68 2404 2474
+)
+"outputbis.ml" 68 2404 2423 "outputbis.ml" 68 2404 2427
+type(
+  int list
+)
+ident(
+  def pats "outputbis.ml" 68 2404 2430 "outputbis.ml" 68 2404 2474
+)
+"outputbis.ml" 68 2404 2430 "outputbis.ml" 68 2404 2439
+type(
+  (int -> unit) -> int list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"outputbis.ml" 68 2404 2445 "outputbis.ml" 68 2404 2446
+type(
+  int
+)
+ident(
+  def p "outputbis.ml" 68 2404 2450 "outputbis.ml" 68 2404 2468
+)
+"outputbis.ml" 68 2404 2450 "outputbis.ml" 68 2404 2457
+type(
+  out_channel -> (int -> unit, out_channel, unit) format -> int -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 68 2404 2458 "outputbis.ml" 68 2404 2460
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 68 2404 2420 "outputbis.ml" 68 2404 2422
+)
+"outputbis.ml" 68 2404 2461 "outputbis.ml" 68 2404 2466
+type(
+  (int -> unit, out_channel, unit) format
+)
+"outputbis.ml" 68 2404 2467 "outputbis.ml" 68 2404 2468
+type(
+  int
+)
+ident(
+  int_ref p "outputbis.ml" 68 2404 2445 "outputbis.ml" 68 2404 2446
+)
+"outputbis.ml" 68 2404 2450 "outputbis.ml" 68 2404 2468
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 68 2404 2440 "outputbis.ml" 68 2404 2469
+type(
+  int -> unit
+)
+"outputbis.ml" 68 2404 2470 "outputbis.ml" 68 2404 2474
+type(
+  int list
+)
+ident(
+  int_ref pats "outputbis.ml" 68 2404 2423 "outputbis.ml" 68 2404 2427
+)
+"outputbis.ml" 68 2404 2430 "outputbis.ml" 68 2404 2474
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 70 2476 2480 "outputbis.ml" 70 2476 2493
+type(
+  out_channel ->
+  bool -> Lexgen.memory_action list -> Lexgen.automata_move -> unit
+)
+ident(
+  def output_action "outputbis.ml" 84 2940 2940 "outputbis.ml" 1 0 -1
+)
+"outputbis.ml" 70 2476 2494 "outputbis.ml" 70 2476 2496
+type(
+  out_channel
+)
+ident(
+  def oc "outputbis.ml" 70 2476 2497 "outputbis.ml" 82 2899 2938
+)
+"outputbis.ml" 70 2476 2497 "outputbis.ml" 70 2476 2507
+type(
+  bool
+)
+ident(
+  def has_refill "outputbis.ml" 70 2476 2508 "outputbis.ml" 82 2899 2938
+)
+"outputbis.ml" 70 2476 2508 "outputbis.ml" 70 2476 2512
+type(
+  Lexgen.memory_action list
+)
+ident(
+  def mems "outputbis.ml" 70 2476 2513 "outputbis.ml" 82 2899 2938
+)
+"outputbis.ml" 70 2476 2513 "outputbis.ml" 70 2476 2514
+type(
+  Lexgen.automata_move
+)
+ident(
+  def r "outputbis.ml" 71 2517 2519 "outputbis.ml" 82 2899 2938
+)
+"outputbis.ml" 71 2517 2519 "outputbis.ml" 71 2517 2540
+type(
+  string -> out_channel -> Lexgen.memory_action list -> unit
+)
+ident(
+  ext_ref Common.output_memory_actions
+)
+"outputbis.ml" 71 2517 2541 "outputbis.ml" 71 2517 2547
+type(
+  string
+)
+"outputbis.ml" 71 2517 2548 "outputbis.ml" 71 2517 2550
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 70 2476 2494 "outputbis.ml" 70 2476 2496
+)
+"outputbis.ml" 71 2517 2551 "outputbis.ml" 71 2517 2555
+type(
+  Lexgen.memory_action list
+)
+ident(
+  int_ref mems "outputbis.ml" 70 2476 2508 "outputbis.ml" 70 2476 2512
+)
+"outputbis.ml" 71 2517 2519 "outputbis.ml" 71 2517 2555
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 72 2558 2566 "outputbis.ml" 72 2558 2567
+type(
+  Lexgen.automata_move
+)
+ident(
+  int_ref r "outputbis.ml" 70 2476 2513 "outputbis.ml" 70 2476 2514
+)
+"outputbis.ml" 73 2573 2577 "outputbis.ml" 73 2573 2586
+type(
+  Lexgen.automata_move
+)
+"outputbis.ml" 74 2590 2594 "outputbis.ml" 74 2590 2601
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 74 2590 2602 "outputbis.ml" 74 2590 2604
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 70 2476 2494 "outputbis.ml" 70 2476 2496
+)
+"outputbis.ml" 75 2605 2611 "outputbis.ml" 75 2605 2677
+type(
+  (unit, out_channel, unit) format
+)
+"outputbis.ml" 74 2590 2594 "outputbis.ml" 75 2605 2677
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 76 2680 2687 "outputbis.ml" 76 2680 2697
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 70 2476 2497 "outputbis.ml" 70 2476 2507
+)
+"outputbis.ml" 77 2703 2709 "outputbis.ml" 77 2703 2716
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 77 2703 2717 "outputbis.ml" 77 2703 2719
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 70 2476 2494 "outputbis.ml" 70 2476 2496
+)
+"outputbis.ml" 77 2703 2720 "outputbis.ml" 77 2703 2766
+type(
+  (unit, out_channel, unit) format
+)
+"outputbis.ml" 77 2703 2709 "outputbis.ml" 77 2703 2766
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 79 2776 2782 "outputbis.ml" 79 2776 2789
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 79 2776 2790 "outputbis.ml" 79 2776 2792
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 70 2476 2494 "outputbis.ml" 70 2476 2496
+)
+"outputbis.ml" 79 2776 2793 "outputbis.ml" 79 2776 2830
+type(
+  (unit, out_channel, unit) format
+)
+"outputbis.ml" 79 2776 2782 "outputbis.ml" 79 2776 2830
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 76 2680 2684 "outputbis.ml" 79 2776 2830
+type(
+  unit
+)
+"outputbis.ml" 74 2590 2594 "outputbis.ml" 79 2776 2830
+type(
+  unit
+)
+"outputbis.ml" 80 2831 2840 "outputbis.ml" 80 2831 2841
+type(
+  int
+)
+ident(
+  def n "outputbis.ml" 81 2845 2849 "outputbis.ml" 82 2899 2938
+)
+"outputbis.ml" 80 2831 2835 "outputbis.ml" 80 2831 2841
+type(
+  Lexgen.automata_move
+)
+"outputbis.ml" 81 2845 2849 "outputbis.ml" 81 2845 2856
+type(
+  out_channel ->
+  (int -> string -> unit, out_channel, unit) format -> int -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 81 2845 2857 "outputbis.ml" 81 2845 2859
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 70 2476 2494 "outputbis.ml" 70 2476 2496
+)
+"outputbis.ml" 81 2845 2860 "outputbis.ml" 81 2845 2896
+type(
+  (int -> string -> unit, out_channel, unit) format
+)
+"outputbis.ml" 81 2845 2897 "outputbis.ml" 81 2845 2898
+type(
+  int
+)
+ident(
+  int_ref n "outputbis.ml" 80 2831 2840 "outputbis.ml" 80 2831 2841
+)
+"outputbis.ml" 82 2899 2909 "outputbis.ml" 82 2899 2919
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 70 2476 2497 "outputbis.ml" 70 2476 2507
+)
+"outputbis.ml" 82 2899 2925 "outputbis.ml" 82 2899 2929
+type(
+  string
+)
+"outputbis.ml" 82 2899 2935 "outputbis.ml" 82 2899 2937
+type(
+  string
+)
+"outputbis.ml" 82 2899 2905 "outputbis.ml" 82 2899 2938
+type(
+  string
+)
+"outputbis.ml" 81 2845 2849 "outputbis.ml" 82 2899 2938
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 72 2558 2560 "outputbis.ml" 82 2899 2938
+type(
+  unit
+)
+"outputbis.ml" 71 2517 2519 "outputbis.ml" 82 2899 2938
+type(
+  unit
+)
+"outputbis.ml" 84 2940 2944 "outputbis.ml" 84 2940 2954
+type(
+  out_channel -> int -> unit
+)
+ident(
+  def output_pat "outputbis.ml" 90 3062 3062 "outputbis.ml" 1 0 -1
+)
+"outputbis.ml" 84 2940 2955 "outputbis.ml" 84 2940 2957
+type(
+  out_channel
+)
+ident(
+  def oc "outputbis.ml" 84 2940 2958 "outputbis.ml" 88 3010 3060
+)
+"outputbis.ml" 84 2940 2958 "outputbis.ml" 84 2940 2959
+type(
+  int
+)
+ident(
+  def i "outputbis.ml" 85 2962 2964 "outputbis.ml" 88 3010 3060
+)
+"outputbis.ml" 85 2962 2967 "outputbis.ml" 85 2962 2968
+type(
+  int
+)
+ident(
+  int_ref i "outputbis.ml" 84 2940 2958 "outputbis.ml" 84 2940 2959
+)
+"outputbis.ml" 85 2962 2969 "outputbis.ml" 85 2962 2971
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"outputbis.ml" 85 2962 2972 "outputbis.ml" 85 2962 2975
+type(
+  int
+)
+"outputbis.ml" 85 2962 2967 "outputbis.ml" 85 2962 2975
+type(
+  bool
+)
+"outputbis.ml" 86 2981 2985 "outputbis.ml" 86 2981 2992
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 86 2981 2993 "outputbis.ml" 86 2981 2995
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 84 2940 2955 "outputbis.ml" 84 2940 2957
+)
+"outputbis.ml" 86 2981 2996 "outputbis.ml" 86 2981 3002
+type(
+  (unit, out_channel, unit) format
+)
+"outputbis.ml" 86 2981 2985 "outputbis.ml" 86 2981 3002
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 88 3010 3014 "outputbis.ml" 88 3010 3021
+type(
+  out_channel -> (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 88 3010 3022 "outputbis.ml" 88 3010 3024
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 84 2940 2955 "outputbis.ml" 84 2940 2957
+)
+"outputbis.ml" 88 3010 3025 "outputbis.ml" 88 3010 3032
+type(
+  (string -> unit, out_channel, unit) format
+)
+"outputbis.ml" 88 3010 3034 "outputbis.ml" 88 3010 3046
+type(
+  char -> string
+)
+ident(
+  ext_ref Char.escaped
+)
+"outputbis.ml" 88 3010 3048 "outputbis.ml" 88 3010 3056
+type(
+  int -> char
+)
+ident(
+  ext_ref Char.chr
+)
+"outputbis.ml" 88 3010 3057 "outputbis.ml" 88 3010 3058
+type(
+  int
+)
+ident(
+  int_ref i "outputbis.ml" 84 2940 2958 "outputbis.ml" 84 2940 2959
+)
+"outputbis.ml" 88 3010 3047 "outputbis.ml" 88 3010 3059
+call(
+  stack
+)
+type(
+  char
+)
+"outputbis.ml" 88 3010 3033 "outputbis.ml" 88 3010 3060
+call(
+  stack
+)
+type(
+  string
+)
+"outputbis.ml" 88 3010 3014 "outputbis.ml" 88 3010 3060
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 85 2962 2964 "outputbis.ml" 88 3010 3060
+type(
+  unit
+)
+"outputbis.ml" 90 3062 3066 "outputbis.ml" 90 3062 3079
+type(
+  out_channel ->
+  bool ->
+  int list -> Lexgen.memory_action list -> Lexgen.automata_move -> unit
+)
+ident(
+  def output_clause "outputbis.ml" 97 3269 3269 "outputbis.ml" 1 0 -1
+)
+"outputbis.ml" 90 3062 3080 "outputbis.ml" 90 3062 3082
+type(
+  out_channel
+)
+ident(
+  def oc "outputbis.ml" 90 3062 3083 "outputbis.ml" 95 3231 3267
+)
+"outputbis.ml" 90 3062 3083 "outputbis.ml" 90 3062 3093
+type(
+  bool
+)
+ident(
+  def has_refill "outputbis.ml" 90 3062 3094 "outputbis.ml" 95 3231 3267
+)
+"outputbis.ml" 90 3062 3094 "outputbis.ml" 90 3062 3098
+type(
+  int list
+)
+ident(
+  def pats "outputbis.ml" 90 3062 3099 "outputbis.ml" 95 3231 3267
+)
+"outputbis.ml" 90 3062 3099 "outputbis.ml" 90 3062 3103
+type(
+  Lexgen.memory_action list
+)
+ident(
+  def mems "outputbis.ml" 90 3062 3104 "outputbis.ml" 95 3231 3267
+)
+"outputbis.ml" 90 3062 3104 "outputbis.ml" 90 3062 3105
+type(
+  Lexgen.automata_move
+)
+ident(
+  def r "outputbis.ml" 91 3108 3110 "outputbis.ml" 95 3231 3267
+)
+"outputbis.ml" 91 3108 3110 "outputbis.ml" 91 3108 3117
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 91 3108 3118 "outputbis.ml" 91 3108 3120
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 90 3062 3080 "outputbis.ml" 90 3062 3082
+)
+"outputbis.ml" 91 3108 3121 "outputbis.ml" 91 3108 3126
+type(
+  (unit, out_channel, unit) format
+)
+"outputbis.ml" 91 3108 3110 "outputbis.ml" 91 3108 3126
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 92 3129 3131 "outputbis.ml" 92 3129 3140
+type(
+  (int -> unit) -> int list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"outputbis.ml" 92 3129 3142 "outputbis.ml" 92 3129 3152
+type(
+  out_channel -> int -> unit
+)
+ident(
+  int_ref output_pat "outputbis.ml" 84 2940 2944 "outputbis.ml" 84 2940 2954
+)
+"outputbis.ml" 92 3129 3153 "outputbis.ml" 92 3129 3155
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 90 3062 3080 "outputbis.ml" 90 3062 3082
+)
+"outputbis.ml" 92 3129 3141 "outputbis.ml" 92 3129 3156
+call(
+  stack
+)
+type(
+  int -> unit
+)
+"outputbis.ml" 92 3129 3157 "outputbis.ml" 92 3129 3161
+type(
+  int list
+)
+ident(
+  int_ref pats "outputbis.ml" 90 3062 3094 "outputbis.ml" 90 3062 3098
+)
+"outputbis.ml" 92 3129 3131 "outputbis.ml" 92 3129 3161
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 93 3164 3166 "outputbis.ml" 93 3164 3173
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 93 3164 3174 "outputbis.ml" 93 3164 3176
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 90 3062 3080 "outputbis.ml" 90 3062 3082
+)
+"outputbis.ml" 93 3164 3177 "outputbis.ml" 93 3164 3184
+type(
+  (unit, out_channel, unit) format
+)
+"outputbis.ml" 93 3164 3166 "outputbis.ml" 93 3164 3184
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 94 3187 3189 "outputbis.ml" 94 3187 3196
+type(
+  out_channel ->
+  ((out_channel -> int list -> unit) -> int list -> unit, out_channel, unit)
+  format -> (out_channel -> int list -> unit) -> int list -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 94 3187 3197 "outputbis.ml" 94 3187 3199
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 90 3062 3080 "outputbis.ml" 90 3062 3082
+)
+"outputbis.ml" 94 3187 3200 "outputbis.ml" 94 3187 3211
+type(
+  ((out_channel -> int list -> unit) -> int list -> unit, out_channel, unit)
+  format
+)
+"outputbis.ml" 94 3187 3212 "outputbis.ml" 94 3187 3223
+type(
+  out_channel -> int list -> unit
+)
+ident(
+  int_ref output_pats "outputbis.ml" 68 2404 2408 "outputbis.ml" 68 2404 2419
+)
+"outputbis.ml" 94 3187 3224 "outputbis.ml" 94 3187 3228
+type(
+  int list
+)
+ident(
+  int_ref pats "outputbis.ml" 90 3062 3094 "outputbis.ml" 90 3062 3098
+)
+"outputbis.ml" 94 3187 3189 "outputbis.ml" 94 3187 3228
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 95 3231 3233 "outputbis.ml" 95 3231 3246
+type(
+  out_channel ->
+  bool -> Lexgen.memory_action list -> Lexgen.automata_move -> unit
+)
+ident(
+  int_ref output_action "outputbis.ml" 70 2476 2480 "outputbis.ml" 70 2476 2493
+)
+"outputbis.ml" 95 3231 3247 "outputbis.ml" 95 3231 3249
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 90 3062 3080 "outputbis.ml" 90 3062 3082
+)
+"outputbis.ml" 95 3231 3250 "outputbis.ml" 95 3231 3260
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 90 3062 3083 "outputbis.ml" 90 3062 3093
+)
+"outputbis.ml" 95 3231 3261 "outputbis.ml" 95 3231 3265
+type(
+  Lexgen.memory_action list
+)
+ident(
+  int_ref mems "outputbis.ml" 90 3062 3099 "outputbis.ml" 90 3062 3103
+)
+"outputbis.ml" 95 3231 3266 "outputbis.ml" 95 3231 3267
+type(
+  Lexgen.automata_move
+)
+ident(
+  int_ref r "outputbis.ml" 90 3062 3104 "outputbis.ml" 90 3062 3105
+)
+"outputbis.ml" 95 3231 3233 "outputbis.ml" 95 3231 3267
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 94 3187 3189 "outputbis.ml" 95 3231 3267
+type(
+  unit
+)
+"outputbis.ml" 93 3164 3166 "outputbis.ml" 95 3231 3267
+type(
+  unit
+)
+"outputbis.ml" 92 3129 3131 "outputbis.ml" 95 3231 3267
+type(
+  unit
+)
+"outputbis.ml" 91 3108 3110 "outputbis.ml" 95 3231 3267
+type(
+  unit
+)
+"outputbis.ml" 97 3269 3273 "outputbis.ml" 97 3269 3294
+type(
+  out_channel ->
+  bool -> Lexgen.memory_action list -> Lexgen.automata_move -> unit
+)
+ident(
+  def output_default_clause "outputbis.ml" 101 3383 3383 "outputbis.ml" 1 0 -1
+)
+"outputbis.ml" 97 3269 3295 "outputbis.ml" 97 3269 3297
+type(
+  out_channel
+)
+ident(
+  def oc "outputbis.ml" 97 3269 3298 "outputbis.ml" 98 3318 3380
+)
+"outputbis.ml" 97 3269 3298 "outputbis.ml" 97 3269 3308
+type(
+  bool
+)
+ident(
+  def has_refill "outputbis.ml" 97 3269 3309 "outputbis.ml" 98 3318 3380
+)
+"outputbis.ml" 97 3269 3309 "outputbis.ml" 97 3269 3313
+type(
+  Lexgen.memory_action list
+)
+ident(
+  def mems "outputbis.ml" 97 3269 3314 "outputbis.ml" 98 3318 3380
+)
+"outputbis.ml" 97 3269 3314 "outputbis.ml" 97 3269 3315
+type(
+  Lexgen.automata_move
+)
+ident(
+  def r "outputbis.ml" 98 3318 3320 "outputbis.ml" 98 3318 3380
+)
+"outputbis.ml" 98 3318 3320 "outputbis.ml" 98 3318 3327
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 98 3318 3328 "outputbis.ml" 98 3318 3330
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 97 3269 3295 "outputbis.ml" 97 3269 3297
+)
+"outputbis.ml" 98 3318 3331 "outputbis.ml" 98 3318 3343
+type(
+  (unit, out_channel, unit) format
+)
+"outputbis.ml" 98 3318 3320 "outputbis.ml" 98 3318 3343
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 98 3318 3346 "outputbis.ml" 98 3318 3359
+type(
+  out_channel ->
+  bool -> Lexgen.memory_action list -> Lexgen.automata_move -> unit
+)
+ident(
+  int_ref output_action "outputbis.ml" 70 2476 2480 "outputbis.ml" 70 2476 2493
+)
+"outputbis.ml" 98 3318 3360 "outputbis.ml" 98 3318 3362
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 97 3269 3295 "outputbis.ml" 97 3269 3297
+)
+"outputbis.ml" 98 3318 3363 "outputbis.ml" 98 3318 3373
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 97 3269 3298 "outputbis.ml" 97 3269 3308
+)
+"outputbis.ml" 98 3318 3374 "outputbis.ml" 98 3318 3378
+type(
+  Lexgen.memory_action list
+)
+ident(
+  int_ref mems "outputbis.ml" 97 3269 3309 "outputbis.ml" 97 3269 3313
+)
+"outputbis.ml" 98 3318 3379 "outputbis.ml" 98 3318 3380
+type(
+  Lexgen.automata_move
+)
+ident(
+  int_ref r "outputbis.ml" 97 3269 3314 "outputbis.ml" 97 3269 3315
+)
+"outputbis.ml" 98 3318 3346 "outputbis.ml" 98 3318 3380
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 98 3318 3320 "outputbis.ml" 98 3318 3380
+type(
+  unit
+)
+"outputbis.ml" 101 3383 3387 "outputbis.ml" 101 3383 3399
+type(
+  out_channel ->
+  bool -> (Lexgen.automata_move * Lexgen.memory_action list) array -> unit
+)
+ident(
+  def output_moves "outputbis.ml" 131 4155 4155 "outputbis.ml" 1 0 -1
+)
+"outputbis.ml" 101 3383 3400 "outputbis.ml" 101 3383 3402
+type(
+  out_channel
+)
+ident(
+  def oc "outputbis.ml" 101 3383 3403 "outputbis.ml" 128 4089 4152
+)
+"outputbis.ml" 101 3383 3403 "outputbis.ml" 101 3383 3413
+type(
+  bool
+)
+ident(
+  def has_refill "outputbis.ml" 101 3383 3414 "outputbis.ml" 128 4089 4152
+)
+"outputbis.ml" 101 3383 3414 "outputbis.ml" 101 3383 3419
+type(
+  (Lexgen.automata_move * Lexgen.memory_action list) array
+)
+ident(
+  def moves "outputbis.ml" 102 3422 3424 "outputbis.ml" 128 4089 4152
+)
+"outputbis.ml" 102 3422 3428 "outputbis.ml" 102 3422 3429
+type(
+  (Lexgen.automata_move, Lexgen.memory_action list * int list) Hashtbl.t
+)
+ident(
+  def t "outputbis.ml" 103 3453 3455 "outputbis.ml" 128 4089 4152
+)
+"outputbis.ml" 102 3422 3432 "outputbis.ml" 102 3422 3446
+type(
+  ?random:bool ->
+  int ->
+  (Lexgen.automata_move, Lexgen.memory_action list * int list) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"outputbis.ml" 102 3422 3447 "outputbis.ml" 102 3422 3449
+type(
+  int
+)
+"outputbis.ml" 102 3422 3432 "outputbis.ml" 102 3422 3449
+call(
+  stack
+)
+type(
+  (Lexgen.automata_move, Lexgen.memory_action list * int list) Hashtbl.t
+)
+"outputbis.ml" 103 3453 3459 "outputbis.ml" 103 3453 3467
+type(
+  int -> Lexgen.automata_move * Lexgen.memory_action list -> unit
+)
+ident(
+  def add_move "outputbis.ml" 107 3590 3592 "outputbis.ml" 128 4089 4152
+)
+"outputbis.ml" 103 3453 3468 "outputbis.ml" 103 3453 3469
+type(
+  int
+)
+ident(
+  def i "outputbis.ml" 103 3453 3470 "outputbis.ml" 105 3548 3585
+)
+"outputbis.ml" 103 3453 3471 "outputbis.ml" 103 3453 3472
+type(
+  Lexgen.automata_move
+)
+ident(
+  def m "outputbis.ml" 104 3481 3485 "outputbis.ml" 105 3548 3585
+)
+"outputbis.ml" 103 3453 3473 "outputbis.ml" 103 3453 3477
+type(
+  Lexgen.memory_action list
+)
+ident(
+  def mems "outputbis.ml" 104 3481 3485 "outputbis.ml" 105 3548 3585
+)
+"outputbis.ml" 103 3453 3470 "outputbis.ml" 103 3453 3478
+type(
+  Lexgen.automata_move * Lexgen.memory_action list
+)
+"outputbis.ml" 104 3481 3489 "outputbis.ml" 104 3481 3493
+type(
+  Lexgen.memory_action list
+)
+ident(
+  def mems "outputbis.ml" 105 3548 3552 "outputbis.ml" 105 3548 3585
+)
+"outputbis.ml" 104 3481 3494 "outputbis.ml" 104 3481 3495
+type(
+  int list
+)
+ident(
+  def r "outputbis.ml" 105 3548 3552 "outputbis.ml" 105 3548 3585
+)
+"outputbis.ml" 104 3481 3489 "outputbis.ml" 104 3481 3495
+type(
+  Lexgen.memory_action list * int list
+)
+"outputbis.ml" 104 3481 3502 "outputbis.ml" 104 3481 3514
+type(
+  (Lexgen.automata_move, Lexgen.memory_action list * int list) Hashtbl.t ->
+  Lexgen.automata_move -> Lexgen.memory_action list * int list
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"outputbis.ml" 104 3481 3515 "outputbis.ml" 104 3481 3516
+type(
+  (Lexgen.automata_move, Lexgen.memory_action list * int list) Hashtbl.t
+)
+ident(
+  int_ref t "outputbis.ml" 102 3422 3428 "outputbis.ml" 102 3422 3429
+)
+"outputbis.ml" 104 3481 3517 "outputbis.ml" 104 3481 3518
+type(
+  Lexgen.automata_move
+)
+ident(
+  int_ref m "outputbis.ml" 103 3453 3471 "outputbis.ml" 103 3453 3472
+)
+"outputbis.ml" 104 3481 3502 "outputbis.ml" 104 3481 3518
+call(
+  stack
+)
+type(
+  Lexgen.memory_action list * int list
+)
+"outputbis.ml" 104 3481 3524 "outputbis.ml" 104 3481 3533
+type(
+  exn
+)
+"outputbis.ml" 104 3481 3537 "outputbis.ml" 104 3481 3541
+type(
+  Lexgen.memory_action list
+)
+ident(
+  int_ref mems "outputbis.ml" 103 3453 3473 "outputbis.ml" 103 3453 3477
+)
+"outputbis.ml" 104 3481 3542 "outputbis.ml" 104 3481 3544
+type(
+  int list
+)
+"outputbis.ml" 104 3481 3537 "outputbis.ml" 104 3481 3544
+type(
+  Lexgen.memory_action list * int list
+)
+"outputbis.ml" 104 3481 3498 "outputbis.ml" 104 3481 3544
+type(
+  Lexgen.memory_action list * int list
+)
+"outputbis.ml" 105 3548 3552 "outputbis.ml" 105 3548 3567
+type(
+  (Lexgen.automata_move, Lexgen.memory_action list * int list) Hashtbl.t ->
+  Lexgen.automata_move -> Lexgen.memory_action list * int list -> unit
+)
+ident(
+  ext_ref Hashtbl.replace
+)
+"outputbis.ml" 105 3548 3568 "outputbis.ml" 105 3548 3569
+type(
+  (Lexgen.automata_move, Lexgen.memory_action list * int list) Hashtbl.t
+)
+ident(
+  int_ref t "outputbis.ml" 102 3422 3428 "outputbis.ml" 102 3422 3429
+)
+"outputbis.ml" 105 3548 3570 "outputbis.ml" 105 3548 3571
+type(
+  Lexgen.automata_move
+)
+ident(
+  int_ref m "outputbis.ml" 103 3453 3471 "outputbis.ml" 103 3453 3472
+)
+"outputbis.ml" 105 3548 3573 "outputbis.ml" 105 3548 3577
+type(
+  Lexgen.memory_action list
+)
+ident(
+  int_ref mems "outputbis.ml" 104 3481 3489 "outputbis.ml" 104 3481 3493
+)
+"outputbis.ml" 105 3548 3579 "outputbis.ml" 105 3548 3580
+type(
+  int
+)
+ident(
+  int_ref i "outputbis.ml" 103 3453 3468 "outputbis.ml" 103 3453 3469
+)
+"outputbis.ml" 105 3548 3582 "outputbis.ml" 105 3548 3583
+type(
+  int list
+)
+ident(
+  int_ref r "outputbis.ml" 104 3481 3494 "outputbis.ml" 104 3481 3495
+)
+"outputbis.ml" 105 3548 3578 "outputbis.ml" 105 3548 3584
+type(
+  int list
+)
+"outputbis.ml" 105 3548 3572 "outputbis.ml" 105 3548 3585
+type(
+  Lexgen.memory_action list * int list
+)
+"outputbis.ml" 105 3548 3552 "outputbis.ml" 105 3548 3585
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 104 3481 3485 "outputbis.ml" 105 3548 3585
+type(
+  unit
+)
+"outputbis.ml" 107 3590 3600 "outputbis.ml" 107 3590 3601
+type(
+  int
+)
+"outputbis.ml" 107 3590 3605 "outputbis.ml" 107 3590 3608
+type(
+  int
+)
+"outputbis.ml" 108 3612 3616 "outputbis.ml" 108 3612 3624
+type(
+  int -> Lexgen.automata_move * Lexgen.memory_action list -> unit
+)
+ident(
+  int_ref add_move "outputbis.ml" 103 3453 3459 "outputbis.ml" 103 3453 3467
+)
+"outputbis.ml" 108 3612 3625 "outputbis.ml" 108 3612 3626
+type(
+  int
+)
+ident(
+  int_ref i "outputbis.ml" 107 3590 3592 "outputbis.ml" 109 3637 3643
+)
+"outputbis.ml" 108 3612 3627 "outputbis.ml" 108 3612 3632
+type(
+  (Lexgen.automata_move * Lexgen.memory_action list) array
+)
+ident(
+  int_ref moves "outputbis.ml" 101 3383 3414 "outputbis.ml" 101 3383 3419
+)
+"outputbis.ml" 108 3612 3634 "outputbis.ml" 108 3612 3635
+type(
+  int
+)
+ident(
+  int_ref i "outputbis.ml" 107 3590 3592 "outputbis.ml" 109 3637 3643
+)
+"outputbis.ml" 108 3612 3627 "outputbis.ml" 108 3612 3636
+type(
+  Lexgen.automata_move * Lexgen.memory_action list
+)
+"outputbis.ml" 108 3612 3616 "outputbis.ml" 108 3612 3636
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 107 3590 3592 "outputbis.ml" 109 3637 3643
+type(
+  unit
+)
+"outputbis.ml" 111 3647 3653 "outputbis.ml" 111 3647 3666
+type(
+  Lexgen.automata_move ref
+)
+ident(
+  def most_frequent "outputbis.ml" 114 3730 3732 "outputbis.ml" 128 4089 4152
+)
+"outputbis.ml" 111 3647 3669 "outputbis.ml" 111 3647 3672
+type(
+  Lexgen.automata_move -> Lexgen.automata_move ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"outputbis.ml" 111 3647 3673 "outputbis.ml" 111 3647 3682
+type(
+  Lexgen.automata_move
+)
+"outputbis.ml" 111 3647 3669 "outputbis.ml" 111 3647 3682
+type(
+  Lexgen.automata_move ref
+)
+"outputbis.ml" 112 3683 3689 "outputbis.ml" 112 3683 3698
+type(
+  Lexgen.memory_action list ref
+)
+ident(
+  def most_mems "outputbis.ml" 114 3730 3732 "outputbis.ml" 128 4089 4152
+)
+"outputbis.ml" 112 3683 3701 "outputbis.ml" 112 3683 3704
+type(
+  Lexgen.memory_action list -> Lexgen.memory_action list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"outputbis.ml" 112 3683 3705 "outputbis.ml" 112 3683 3707
+type(
+  Lexgen.memory_action list
+)
+"outputbis.ml" 112 3683 3701 "outputbis.ml" 112 3683 3707
+type(
+  Lexgen.memory_action list ref
+)
+"outputbis.ml" 113 3708 3714 "outputbis.ml" 113 3708 3718
+type(
+  int ref
+)
+ident(
+  def size "outputbis.ml" 114 3730 3732 "outputbis.ml" 128 4089 4152
+)
+"outputbis.ml" 113 3708 3721 "outputbis.ml" 113 3708 3724
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"outputbis.ml" 113 3708 3725 "outputbis.ml" 113 3708 3726
+type(
+  int
+)
+"outputbis.ml" 113 3708 3721 "outputbis.ml" 113 3708 3726
+type(
+  int ref
+)
+"outputbis.ml" 114 3730 3732 "outputbis.ml" 114 3730 3744
+type(
+  (Lexgen.automata_move -> Lexgen.memory_action list * int list -> unit) ->
+  (Lexgen.automata_move, Lexgen.memory_action list * int list) Hashtbl.t ->
+  unit
+)
+ident(
+  ext_ref Hashtbl.iter
+)
+"outputbis.ml" 115 3745 3754 "outputbis.ml" 115 3745 3755
+type(
+  Lexgen.automata_move
+)
+ident(
+  def m "outputbis.ml" 115 3745 3756 "outputbis.ml" 121 3925 3934
+)
+"outputbis.ml" 115 3745 3757 "outputbis.ml" 115 3745 3761
+type(
+  Lexgen.memory_action list
+)
+ident(
+  def mems "outputbis.ml" 116 3771 3777 "outputbis.ml" 121 3925 3934
+)
+"outputbis.ml" 115 3745 3762 "outputbis.ml" 115 3745 3766
+type(
+  int list
+)
+ident(
+  def pats "outputbis.ml" 116 3771 3777 "outputbis.ml" 121 3925 3934
+)
+"outputbis.ml" 115 3745 3756 "outputbis.ml" 115 3745 3767
+type(
+  Lexgen.memory_action list * int list
+)
+"outputbis.ml" 116 3771 3781 "outputbis.ml" 116 3771 3787
+type(
+  int
+)
+ident(
+  def size_m "outputbis.ml" 117 3810 3816 "outputbis.ml" 121 3925 3934
+)
+"outputbis.ml" 116 3771 3790 "outputbis.ml" 116 3771 3801
+type(
+  int list -> int
+)
+ident(
+  ext_ref List.length
+)
+"outputbis.ml" 116 3771 3802 "outputbis.ml" 116 3771 3806
+type(
+  int list
+)
+ident(
+  int_ref pats "outputbis.ml" 115 3745 3762 "outputbis.ml" 115 3745 3766
+)
+"outputbis.ml" 116 3771 3790 "outputbis.ml" 116 3771 3806
+call(
+  stack
+)
+type(
+  int
+)
+"outputbis.ml" 117 3810 3819 "outputbis.ml" 117 3810 3825
+type(
+  int
+)
+ident(
+  int_ref size_m "outputbis.ml" 116 3771 3781 "outputbis.ml" 116 3771 3787
+)
+"outputbis.ml" 117 3810 3826 "outputbis.ml" 117 3810 3827
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"outputbis.ml" 117 3810 3828 "outputbis.ml" 117 3810 3829
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"outputbis.ml" 117 3810 3829 "outputbis.ml" 117 3810 3833
+type(
+  int ref
+)
+ident(
+  int_ref size "outputbis.ml" 113 3708 3714 "outputbis.ml" 113 3708 3718
+)
+"outputbis.ml" 117 3810 3828 "outputbis.ml" 117 3810 3833
+type(
+  int
+)
+"outputbis.ml" 117 3810 3819 "outputbis.ml" 117 3810 3833
+type(
+  bool
+)
+"outputbis.ml" 118 3845 3853 "outputbis.ml" 118 3845 3866
+type(
+  Lexgen.automata_move ref
+)
+ident(
+  int_ref most_frequent "outputbis.ml" 111 3647 3653 "outputbis.ml" 111 3647 3666
+)
+"outputbis.ml" 118 3845 3867 "outputbis.ml" 118 3845 3869
+type(
+  Lexgen.automata_move ref -> Lexgen.automata_move -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"outputbis.ml" 118 3845 3870 "outputbis.ml" 118 3845 3871
+type(
+  Lexgen.automata_move
+)
+ident(
+  int_ref m "outputbis.ml" 115 3745 3754 "outputbis.ml" 115 3745 3755
+)
+"outputbis.ml" 118 3845 3853 "outputbis.ml" 118 3845 3871
+type(
+  unit
+)
+"outputbis.ml" 119 3874 3882 "outputbis.ml" 119 3874 3891
+type(
+  Lexgen.memory_action list ref
+)
+ident(
+  int_ref most_mems "outputbis.ml" 112 3683 3689 "outputbis.ml" 112 3683 3698
+)
+"outputbis.ml" 119 3874 3892 "outputbis.ml" 119 3874 3894
+type(
+  Lexgen.memory_action list ref -> Lexgen.memory_action list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"outputbis.ml" 119 3874 3895 "outputbis.ml" 119 3874 3899
+type(
+  Lexgen.memory_action list
+)
+ident(
+  int_ref mems "outputbis.ml" 115 3745 3757 "outputbis.ml" 115 3745 3761
+)
+"outputbis.ml" 119 3874 3882 "outputbis.ml" 119 3874 3899
+type(
+  unit
+)
+"outputbis.ml" 120 3902 3910 "outputbis.ml" 120 3902 3914
+type(
+  int ref
+)
+ident(
+  int_ref size "outputbis.ml" 113 3708 3714 "outputbis.ml" 113 3708 3718
+)
+"outputbis.ml" 120 3902 3915 "outputbis.ml" 120 3902 3917
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"outputbis.ml" 120 3902 3918 "outputbis.ml" 120 3902 3924
+type(
+  int
+)
+ident(
+  int_ref size_m "outputbis.ml" 116 3771 3781 "outputbis.ml" 116 3771 3787
+)
+"outputbis.ml" 120 3902 3910 "outputbis.ml" 120 3902 3924
+type(
+  unit
+)
+"outputbis.ml" 119 3874 3882 "outputbis.ml" 120 3902 3924
+type(
+  unit
+)
+"outputbis.ml" 117 3810 3839 "outputbis.ml" 121 3925 3934
+type(
+  unit
+)
+"outputbis.ml" 117 3810 3816 "outputbis.ml" 121 3925 3934
+type(
+  unit
+)
+"outputbis.ml" 116 3771 3777 "outputbis.ml" 121 3925 3934
+type(
+  unit
+)
+"outputbis.ml" 115 3745 3749 "outputbis.ml" 121 3925 3935
+type(
+  Lexgen.automata_move -> Lexgen.memory_action list * int list -> unit
+)
+"outputbis.ml" 122 3936 3940 "outputbis.ml" 122 3936 3941
+type(
+  (Lexgen.automata_move, Lexgen.memory_action list * int list) Hashtbl.t
+)
+ident(
+  int_ref t "outputbis.ml" 102 3422 3428 "outputbis.ml" 102 3422 3429
+)
+"outputbis.ml" 114 3730 3732 "outputbis.ml" 122 3936 3941
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 123 3944 3946 "outputbis.ml" 123 3944 3958
+type(
+  (Lexgen.automata_move -> Lexgen.memory_action list * int list -> unit) ->
+  (Lexgen.automata_move, Lexgen.memory_action list * int list) Hashtbl.t ->
+  unit
+)
+ident(
+  ext_ref Hashtbl.iter
+)
+"outputbis.ml" 124 3959 3968 "outputbis.ml" 124 3959 3969
+type(
+  Lexgen.automata_move
+)
+ident(
+  def m "outputbis.ml" 124 3959 3970 "outputbis.ml" 126 4020 4079
+)
+"outputbis.ml" 124 3959 3971 "outputbis.ml" 124 3959 3975
+type(
+  Lexgen.memory_action list
+)
+ident(
+  def mems "outputbis.ml" 125 3985 3992 "outputbis.ml" 126 4020 4079
+)
+"outputbis.ml" 124 3959 3976 "outputbis.ml" 124 3959 3980
+type(
+  int list
+)
+ident(
+  def pats "outputbis.ml" 125 3985 3992 "outputbis.ml" 126 4020 4079
+)
+"outputbis.ml" 124 3959 3970 "outputbis.ml" 124 3959 3981
+type(
+  Lexgen.memory_action list * int list
+)
+"outputbis.ml" 125 3985 3995 "outputbis.ml" 125 3985 3996
+type(
+  Lexgen.automata_move
+)
+ident(
+  int_ref m "outputbis.ml" 124 3959 3968 "outputbis.ml" 124 3959 3969
+)
+"outputbis.ml" 125 3985 3997 "outputbis.ml" 125 3985 3999
+type(
+  Lexgen.automata_move -> Lexgen.automata_move -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"outputbis.ml" 125 3985 4000 "outputbis.ml" 125 3985 4001
+type(
+  Lexgen.automata_move ref -> Lexgen.automata_move
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"outputbis.ml" 125 3985 4001 "outputbis.ml" 125 3985 4014
+type(
+  Lexgen.automata_move ref
+)
+ident(
+  int_ref most_frequent "outputbis.ml" 111 3647 3653 "outputbis.ml" 111 3647 3666
+)
+"outputbis.ml" 125 3985 4000 "outputbis.ml" 125 3985 4014
+type(
+  Lexgen.automata_move
+)
+"outputbis.ml" 125 3985 3995 "outputbis.ml" 125 3985 4014
+type(
+  bool
+)
+"outputbis.ml" 126 4020 4029 "outputbis.ml" 126 4020 4042
+type(
+  out_channel ->
+  bool ->
+  int list -> Lexgen.memory_action list -> Lexgen.automata_move -> unit
+)
+ident(
+  int_ref output_clause "outputbis.ml" 90 3062 3066 "outputbis.ml" 90 3062 3079
+)
+"outputbis.ml" 126 4020 4043 "outputbis.ml" 126 4020 4045
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 101 3383 3400 "outputbis.ml" 101 3383 3402
+)
+"outputbis.ml" 126 4020 4046 "outputbis.ml" 126 4020 4056
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 101 3383 3403 "outputbis.ml" 101 3383 3413
+)
+"outputbis.ml" 126 4020 4058 "outputbis.ml" 126 4020 4066
+type(
+  int list -> int list
+)
+ident(
+  ext_ref List.rev
+)
+"outputbis.ml" 126 4020 4067 "outputbis.ml" 126 4020 4071
+type(
+  int list
+)
+ident(
+  int_ref pats "outputbis.ml" 124 3959 3976 "outputbis.ml" 124 3959 3980
+)
+"outputbis.ml" 126 4020 4057 "outputbis.ml" 126 4020 4072
+call(
+  stack
+)
+type(
+  int list
+)
+"outputbis.ml" 126 4020 4073 "outputbis.ml" 126 4020 4077
+type(
+  Lexgen.memory_action list
+)
+ident(
+  int_ref mems "outputbis.ml" 124 3959 3971 "outputbis.ml" 124 3959 3975
+)
+"outputbis.ml" 126 4020 4078 "outputbis.ml" 126 4020 4079
+type(
+  Lexgen.automata_move
+)
+ident(
+  int_ref m "outputbis.ml" 124 3959 3968 "outputbis.ml" 124 3959 3969
+)
+"outputbis.ml" 126 4020 4029 "outputbis.ml" 126 4020 4079
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 125 3985 3992 "outputbis.ml" 126 4020 4079
+type(
+  unit
+)
+"outputbis.ml" 124 3959 3963 "outputbis.ml" 126 4020 4080
+type(
+  Lexgen.automata_move -> Lexgen.memory_action list * int list -> unit
+)
+"outputbis.ml" 127 4081 4085 "outputbis.ml" 127 4081 4086
+type(
+  (Lexgen.automata_move, Lexgen.memory_action list * int list) Hashtbl.t
+)
+ident(
+  int_ref t "outputbis.ml" 102 3422 3428 "outputbis.ml" 102 3422 3429
+)
+"outputbis.ml" 123 3944 3946 "outputbis.ml" 127 4081 4086
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 128 4089 4091 "outputbis.ml" 128 4089 4112
+type(
+  out_channel ->
+  bool -> Lexgen.memory_action list -> Lexgen.automata_move -> unit
+)
+ident(
+  int_ref output_default_clause "outputbis.ml" 97 3269 3273 "outputbis.ml" 97 3269 3294
+)
+"outputbis.ml" 128 4089 4113 "outputbis.ml" 128 4089 4115
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 101 3383 3400 "outputbis.ml" 101 3383 3402
+)
+"outputbis.ml" 128 4089 4116 "outputbis.ml" 128 4089 4126
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 101 3383 3403 "outputbis.ml" 101 3383 3413
+)
+"outputbis.ml" 128 4089 4127 "outputbis.ml" 128 4089 4128
+type(
+  Lexgen.memory_action list ref -> Lexgen.memory_action list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"outputbis.ml" 128 4089 4128 "outputbis.ml" 128 4089 4137
+type(
+  Lexgen.memory_action list ref
+)
+ident(
+  int_ref most_mems "outputbis.ml" 112 3683 3689 "outputbis.ml" 112 3683 3698
+)
+"outputbis.ml" 128 4089 4127 "outputbis.ml" 128 4089 4137
+type(
+  Lexgen.memory_action list
+)
+"outputbis.ml" 128 4089 4138 "outputbis.ml" 128 4089 4139
+type(
+  Lexgen.automata_move ref -> Lexgen.automata_move
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"outputbis.ml" 128 4089 4139 "outputbis.ml" 128 4089 4152
+type(
+  Lexgen.automata_move ref
+)
+ident(
+  int_ref most_frequent "outputbis.ml" 111 3647 3653 "outputbis.ml" 111 3647 3666
+)
+"outputbis.ml" 128 4089 4138 "outputbis.ml" 128 4089 4152
+type(
+  Lexgen.automata_move
+)
+"outputbis.ml" 128 4089 4091 "outputbis.ml" 128 4089 4152
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 123 3944 3946 "outputbis.ml" 128 4089 4152
+type(
+  unit
+)
+"outputbis.ml" 114 3730 3732 "outputbis.ml" 128 4089 4152
+type(
+  unit
+)
+"outputbis.ml" 111 3647 3649 "outputbis.ml" 128 4089 4152
+type(
+  unit
+)
+"outputbis.ml" 107 3590 3592 "outputbis.ml" 128 4089 4152
+type(
+  unit
+)
+"outputbis.ml" 103 3453 3455 "outputbis.ml" 128 4089 4152
+type(
+  unit
+)
+"outputbis.ml" 102 3422 3424 "outputbis.ml" 128 4089 4152
+type(
+  unit
+)
+"outputbis.ml" 131 4155 4159 "outputbis.ml" 131 4155 4177
+type(
+  string -> out_channel -> Lexgen.tag_action list -> unit
+)
+ident(
+  def output_tag_actions "outputbis.ml" 149 4653 4653 "outputbis.ml" 1 0 -1
+)
+"outputbis.ml" 131 4155 4178 "outputbis.ml" 131 4155 4182
+type(
+  string
+)
+ident(
+  def pref "outputbis.ml" 131 4155 4183 "outputbis.ml" 147 4644 4651
+)
+"outputbis.ml" 131 4155 4183 "outputbis.ml" 131 4155 4185
+type(
+  out_channel
+)
+ident(
+  def oc "outputbis.ml" 131 4155 4186 "outputbis.ml" 147 4644 4651
+)
+"outputbis.ml" 131 4155 4186 "outputbis.ml" 131 4155 4189
+type(
+  Lexgen.tag_action list
+)
+ident(
+  def mvs "outputbis.ml" 132 4192 4194 "outputbis.ml" 147 4644 4651
+)
+"outputbis.ml" 132 4192 4194 "outputbis.ml" 132 4192 4207
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"outputbis.ml" 132 4192 4208 "outputbis.ml" 132 4192 4210
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 131 4155 4183 "outputbis.ml" 131 4155 4185
+)
+"outputbis.ml" 132 4192 4211 "outputbis.ml" 132 4192 4215
+type(
+  string
+)
+"outputbis.ml" 132 4192 4194 "outputbis.ml" 132 4192 4215
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 133 4218 4220 "outputbis.ml" 133 4218 4229
+type(
+  (Lexgen.tag_action -> unit) -> Lexgen.tag_action list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"outputbis.ml" 134 4230 4239 "outputbis.ml" 134 4230 4240
+type(
+  Lexgen.tag_action
+)
+ident(
+  def i "outputbis.ml" 134 4230 4244 "outputbis.ml" 136 4311 4358
+)
+"outputbis.ml" 134 4230 4250 "outputbis.ml" 134 4230 4251
+type(
+  Lexgen.tag_action
+)
+ident(
+  int_ref i "outputbis.ml" 134 4230 4239 "outputbis.ml" 134 4230 4240
+)
+"outputbis.ml" 135 4257 4271 "outputbis.ml" 135 4257 4272
+type(
+  int
+)
+ident(
+  def t "outputbis.ml" 135 4257 4279 "outputbis.ml" 135 4257 4310
+)
+"outputbis.ml" 135 4257 4273 "outputbis.ml" 135 4257 4274
+type(
+  int
+)
+ident(
+  def m "outputbis.ml" 135 4257 4279 "outputbis.ml" 135 4257 4310
+)
+"outputbis.ml" 135 4257 4263 "outputbis.ml" 135 4257 4275
+type(
+  Lexgen.tag_action
+)
+"outputbis.ml" 135 4257 4279 "outputbis.ml" 135 4257 4286
+type(
+  out_channel ->
+  (int -> int -> unit, out_channel, unit) format -> int -> int -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 135 4257 4287 "outputbis.ml" 135 4257 4289
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 131 4155 4183 "outputbis.ml" 131 4155 4185
+)
+"outputbis.ml" 135 4257 4290 "outputbis.ml" 135 4257 4306
+type(
+  (int -> int -> unit, out_channel, unit) format
+)
+"outputbis.ml" 135 4257 4307 "outputbis.ml" 135 4257 4308
+type(
+  int
+)
+ident(
+  int_ref t "outputbis.ml" 135 4257 4271 "outputbis.ml" 135 4257 4272
+)
+"outputbis.ml" 135 4257 4309 "outputbis.ml" 135 4257 4310
+type(
+  int
+)
+ident(
+  int_ref m "outputbis.ml" 135 4257 4273 "outputbis.ml" 135 4257 4274
+)
+"outputbis.ml" 135 4257 4279 "outputbis.ml" 135 4257 4310
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 136 4311 4326 "outputbis.ml" 136 4311 4327
+type(
+  int
+)
+ident(
+  def t "outputbis.ml" 136 4311 4331 "outputbis.ml" 136 4311 4358
+)
+"outputbis.ml" 136 4311 4317 "outputbis.ml" 136 4311 4327
+type(
+  Lexgen.tag_action
+)
+"outputbis.ml" 136 4311 4331 "outputbis.ml" 136 4311 4338
+type(
+  out_channel -> (int -> unit, out_channel, unit) format -> int -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 136 4311 4339 "outputbis.ml" 136 4311 4341
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 131 4155 4183 "outputbis.ml" 131 4155 4185
+)
+"outputbis.ml" 136 4311 4342 "outputbis.ml" 136 4311 4356
+type(
+  (int -> unit, out_channel, unit) format
+)
+"outputbis.ml" 136 4311 4357 "outputbis.ml" 136 4311 4358
+type(
+  int
+)
+ident(
+  int_ref t "outputbis.ml" 136 4311 4326 "outputbis.ml" 136 4311 4327
+)
+"outputbis.ml" 136 4311 4331 "outputbis.ml" 136 4311 4358
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 134 4230 4244 "outputbis.ml" 136 4311 4358
+type(
+  unit
+)
+"outputbis.ml" 134 4230 4234 "outputbis.ml" 136 4311 4359
+type(
+  Lexgen.tag_action -> unit
+)
+"outputbis.ml" 137 4360 4364 "outputbis.ml" 137 4360 4367
+type(
+  Lexgen.tag_action list
+)
+ident(
+  int_ref mvs "outputbis.ml" 131 4155 4186 "outputbis.ml" 131 4155 4189
+)
+"outputbis.ml" 133 4218 4220 "outputbis.ml" 137 4360 4367
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 138 4370 4372 "outputbis.ml" 138 4370 4385
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"outputbis.ml" 138 4370 4386 "outputbis.ml" 138 4370 4388
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 131 4155 4183 "outputbis.ml" 131 4155 4185
+)
+"outputbis.ml" 138 4370 4389 "outputbis.ml" 138 4370 4396
+type(
+  string
+)
+"outputbis.ml" 138 4370 4372 "outputbis.ml" 138 4370 4396
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 139 4399 4401 "outputbis.ml" 139 4399 4410
+type(
+  (Lexgen.tag_action -> unit) -> Lexgen.tag_action list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"outputbis.ml" 140 4411 4420 "outputbis.ml" 140 4411 4421
+type(
+  Lexgen.tag_action
+)
+ident(
+  def i "outputbis.ml" 140 4411 4426 "outputbis.ml" 146 4608 4642
+)
+"outputbis.ml" 140 4411 4432 "outputbis.ml" 140 4411 4433
+type(
+  Lexgen.tag_action
+)
+ident(
+  int_ref i "outputbis.ml" 140 4411 4420 "outputbis.ml" 140 4411 4421
+)
+"outputbis.ml" 141 4439 4453 "outputbis.ml" 141 4439 4454
+type(
+  int
+)
+ident(
+  def t "outputbis.ml" 142 4461 4469 "outputbis.ml" 143 4497 4551
+)
+"outputbis.ml" 141 4439 4455 "outputbis.ml" 141 4439 4456
+type(
+  int
+)
+ident(
+  def m "outputbis.ml" 142 4461 4469 "outputbis.ml" 143 4497 4551
+)
+"outputbis.ml" 141 4439 4445 "outputbis.ml" 141 4439 4457
+type(
+  Lexgen.tag_action
+)
+"outputbis.ml" 142 4461 4469 "outputbis.ml" 142 4461 4476
+type(
+  out_channel ->
+  (string ->
+   (out_channel -> int -> unit) ->
+   int -> (out_channel -> int -> unit) -> int -> unit, out_channel, unit)
+  format ->
+  string ->
+  (out_channel -> int -> unit) ->
+  int -> (out_channel -> int -> unit) -> int -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 142 4461 4477 "outputbis.ml" 142 4461 4479
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 131 4155 4183 "outputbis.ml" 131 4155 4185
+)
+"outputbis.ml" 142 4461 4480 "outputbis.ml" 142 4461 4496
+type(
+  (string ->
+   (out_channel -> int -> unit) ->
+   int -> (out_channel -> int -> unit) -> int -> unit, out_channel, unit)
+  format
+)
+"outputbis.ml" 143 4497 4507 "outputbis.ml" 143 4497 4511
+type(
+  string
+)
+ident(
+  int_ref pref "outputbis.ml" 131 4155 4178 "outputbis.ml" 131 4155 4182
+)
+"outputbis.ml" 143 4497 4512 "outputbis.ml" 143 4497 4529
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Common.output_mem_access
+)
+"outputbis.ml" 143 4497 4530 "outputbis.ml" 143 4497 4531
+type(
+  int
+)
+ident(
+  int_ref t "outputbis.ml" 141 4439 4453 "outputbis.ml" 141 4439 4454
+)
+"outputbis.ml" 143 4497 4532 "outputbis.ml" 143 4497 4549
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Common.output_mem_access
+)
+"outputbis.ml" 143 4497 4550 "outputbis.ml" 143 4497 4551
+type(
+  int
+)
+ident(
+  int_ref m "outputbis.ml" 141 4439 4455 "outputbis.ml" 141 4439 4456
+)
+"outputbis.ml" 142 4461 4469 "outputbis.ml" 143 4497 4551
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 144 4552 4567 "outputbis.ml" 144 4552 4568
+type(
+  int
+)
+ident(
+  def t "outputbis.ml" 145 4572 4580 "outputbis.ml" 146 4608 4642
+)
+"outputbis.ml" 144 4552 4558 "outputbis.ml" 144 4552 4568
+type(
+  Lexgen.tag_action
+)
+"outputbis.ml" 145 4572 4580 "outputbis.ml" 145 4572 4587
+type(
+  out_channel ->
+  (string -> (out_channel -> int -> unit) -> int -> unit, out_channel, unit)
+  format -> string -> (out_channel -> int -> unit) -> int -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 145 4572 4588 "outputbis.ml" 145 4572 4590
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 131 4155 4183 "outputbis.ml" 131 4155 4185
+)
+"outputbis.ml" 145 4572 4591 "outputbis.ml" 145 4572 4607
+type(
+  (string -> (out_channel -> int -> unit) -> int -> unit, out_channel, unit)
+  format
+)
+"outputbis.ml" 146 4608 4618 "outputbis.ml" 146 4608 4622
+type(
+  string
+)
+ident(
+  int_ref pref "outputbis.ml" 131 4155 4178 "outputbis.ml" 131 4155 4182
+)
+"outputbis.ml" 146 4608 4623 "outputbis.ml" 146 4608 4640
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Common.output_mem_access
+)
+"outputbis.ml" 146 4608 4641 "outputbis.ml" 146 4608 4642
+type(
+  int
+)
+ident(
+  int_ref t "outputbis.ml" 144 4552 4567 "outputbis.ml" 144 4552 4568
+)
+"outputbis.ml" 145 4572 4580 "outputbis.ml" 146 4608 4642
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 140 4411 4426 "outputbis.ml" 146 4608 4642
+type(
+  unit
+)
+"outputbis.ml" 140 4411 4415 "outputbis.ml" 146 4608 4643
+type(
+  Lexgen.tag_action -> unit
+)
+"outputbis.ml" 147 4644 4648 "outputbis.ml" 147 4644 4651
+type(
+  Lexgen.tag_action list
+)
+ident(
+  int_ref mvs "outputbis.ml" 131 4155 4186 "outputbis.ml" 131 4155 4189
+)
+"outputbis.ml" 139 4399 4401 "outputbis.ml" 147 4644 4651
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 138 4370 4372 "outputbis.ml" 147 4644 4651
+type(
+  unit
+)
+"outputbis.ml" 133 4218 4220 "outputbis.ml" 147 4644 4651
+type(
+  unit
+)
+"outputbis.ml" 132 4192 4194 "outputbis.ml" 147 4644 4651
+type(
+  unit
+)
+"outputbis.ml" 149 4653 4657 "outputbis.ml" 149 4653 4669
+type(
+  string -> out_channel -> bool -> int -> Lexgen.automata -> unit
+)
+ident(
+  def output_trans "outputbis.ml" 176 5607 5607 "outputbis.ml" 1 0 -1
+)
+"outputbis.ml" 149 4653 4670 "outputbis.ml" 149 4653 4674
+type(
+  string
+)
+ident(
+  def pref "outputbis.ml" 149 4653 4675 "outputbis.ml" 174 5570 5605
+)
+"outputbis.ml" 149 4653 4675 "outputbis.ml" 149 4653 4677
+type(
+  out_channel
+)
+ident(
+  def oc "outputbis.ml" 149 4653 4678 "outputbis.ml" 174 5570 5605
+)
+"outputbis.ml" 149 4653 4678 "outputbis.ml" 149 4653 4688
+type(
+  bool
+)
+ident(
+  def has_refill "outputbis.ml" 149 4653 4689 "outputbis.ml" 174 5570 5605
+)
+"outputbis.ml" 149 4653 4689 "outputbis.ml" 149 4653 4690
+type(
+  int
+)
+ident(
+  def i "outputbis.ml" 149 4653 4691 "outputbis.ml" 174 5570 5605
+)
+"outputbis.ml" 149 4653 4691 "outputbis.ml" 149 4653 4696
+type(
+  Lexgen.automata
+)
+ident(
+  def trans "outputbis.ml" 150 4699 4701 "outputbis.ml" 174 5570 5605
+)
+"outputbis.ml" 150 4699 4705 "outputbis.ml" 150 4699 4710
+type(
+  string
+)
+ident(
+  def entry "outputbis.ml" 151 4748 4750 "outputbis.ml" 174 5570 5605
+)
+"outputbis.ml" 150 4699 4713 "outputbis.ml" 150 4699 4720
+type(
+  (int -> string, unit, string) format -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"outputbis.ml" 150 4699 4721 "outputbis.ml" 150 4699 4742
+type(
+  (int -> string, unit, string) format
+)
+"outputbis.ml" 150 4699 4743 "outputbis.ml" 150 4699 4744
+type(
+  int
+)
+ident(
+  int_ref i "outputbis.ml" 149 4653 4689 "outputbis.ml" 149 4653 4690
+)
+"outputbis.ml" 150 4699 4713 "outputbis.ml" 150 4699 4744
+call(
+  stack
+)
+type(
+  string
+)
+"outputbis.ml" 151 4748 4750 "outputbis.ml" 151 4748 4757
+type(
+  out_channel ->
+  (string -> string -> string -> unit, out_channel, unit) format ->
+  string -> string -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 151 4748 4758 "outputbis.ml" 151 4748 4760
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 149 4653 4675 "outputbis.ml" 149 4653 4677
+)
+"outputbis.ml" 151 4748 4761 "outputbis.ml" 151 4748 4780
+type(
+  (string -> string -> string -> unit, out_channel, unit) format
+)
+"outputbis.ml" 151 4748 4781 "outputbis.ml" 151 4748 4785
+type(
+  string
+)
+ident(
+  int_ref pref "outputbis.ml" 149 4653 4670 "outputbis.ml" 149 4653 4674
+)
+"outputbis.ml" 151 4748 4786 "outputbis.ml" 151 4748 4791
+type(
+  string
+)
+ident(
+  int_ref entry "outputbis.ml" 150 4699 4705 "outputbis.ml" 150 4699 4710
+)
+"outputbis.ml" 152 4792 4800 "outputbis.ml" 152 4792 4810
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 149 4653 4678 "outputbis.ml" 149 4653 4688
+)
+"outputbis.ml" 152 4792 4816 "outputbis.ml" 152 4792 4820
+type(
+  string
+)
+"outputbis.ml" 152 4792 4826 "outputbis.ml" 152 4792 4828
+type(
+  string
+)
+"outputbis.ml" 152 4792 4796 "outputbis.ml" 152 4792 4829
+type(
+  string
+)
+"outputbis.ml" 151 4748 4750 "outputbis.ml" 152 4792 4829
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 153 4831 4839 "outputbis.ml" 153 4831 4844
+type(
+  Lexgen.automata
+)
+ident(
+  int_ref trans "outputbis.ml" 149 4653 4691 "outputbis.ml" 149 4653 4696
+)
+"outputbis.ml" 154 4850 4863 "outputbis.ml" 154 4850 4864
+type(
+  int
+)
+ident(
+  def n "outputbis.ml" 155 4873 4879 "outputbis.ml" 158 4989 4998
+)
+"outputbis.ml" 154 4850 4865 "outputbis.ml" 154 4850 4868
+type(
+  Lexgen.tag_action list
+)
+ident(
+  def mvs "outputbis.ml" 155 4873 4879 "outputbis.ml" 158 4989 4998
+)
+"outputbis.ml" 154 4850 4854 "outputbis.ml" 154 4850 4869
+type(
+  Lexgen.automata
+)
+"outputbis.ml" 155 4873 4879 "outputbis.ml" 155 4873 4897
+type(
+  string -> out_channel -> Lexgen.tag_action list -> unit
+)
+ident(
+  int_ref output_tag_actions "outputbis.ml" 131 4155 4159 "outputbis.ml" 131 4155 4177
+)
+"outputbis.ml" 155 4873 4898 "outputbis.ml" 155 4873 4902
+type(
+  string
+)
+"outputbis.ml" 155 4873 4903 "outputbis.ml" 155 4873 4905
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 149 4653 4675 "outputbis.ml" 149 4653 4677
+)
+"outputbis.ml" 155 4873 4906 "outputbis.ml" 155 4873 4909
+type(
+  Lexgen.tag_action list
+)
+ident(
+  int_ref mvs "outputbis.ml" 154 4850 4865 "outputbis.ml" 154 4850 4868
+)
+"outputbis.ml" 155 4873 4879 "outputbis.ml" 155 4873 4909
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 156 4912 4918 "outputbis.ml" 156 4912 4925
+type(
+  out_channel ->
+  (string -> int -> unit, out_channel, unit) format -> string -> int -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 156 4912 4926 "outputbis.ml" 156 4912 4928
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 149 4653 4675 "outputbis.ml" 149 4653 4677
+)
+"outputbis.ml" 156 4912 4929 "outputbis.ml" 156 4912 4939
+type(
+  (string -> int -> unit, out_channel, unit) format
+)
+"outputbis.ml" 157 4940 4952 "outputbis.ml" 157 4940 4962
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 149 4653 4678 "outputbis.ml" 149 4653 4688
+)
+"outputbis.ml" 157 4940 4968 "outputbis.ml" 157 4940 4979
+type(
+  string
+)
+"outputbis.ml" 157 4940 4985 "outputbis.ml" 157 4940 4987
+type(
+  string
+)
+"outputbis.ml" 157 4940 4948 "outputbis.ml" 157 4940 4988
+type(
+  string
+)
+"outputbis.ml" 158 4989 4997 "outputbis.ml" 158 4989 4998
+type(
+  int
+)
+ident(
+  int_ref n "outputbis.ml" 154 4850 4863 "outputbis.ml" 154 4850 4864
+)
+"outputbis.ml" 156 4912 4918 "outputbis.ml" 158 4989 4998
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 155 4873 4879 "outputbis.ml" 158 4989 4998
+type(
+  unit
+)
+"outputbis.ml" 159 4999 5010 "outputbis.ml" 159 4999 5015
+type(
+  Lexgen.automata_trans
+)
+ident(
+  def trans "outputbis.ml" 160 5026 5030 "outputbis.ml" 174 5570 5605
+)
+"outputbis.ml" 159 4999 5017 "outputbis.ml" 159 4999 5021
+type(
+  (Lexgen.automata_move * Lexgen.memory_action list) array
+)
+ident(
+  def move "outputbis.ml" 160 5026 5030 "outputbis.ml" 174 5570 5605
+)
+"outputbis.ml" 159 4999 5003 "outputbis.ml" 159 4999 5022
+type(
+  Lexgen.automata
+)
+"outputbis.ml" 160 5026 5042 "outputbis.ml" 160 5026 5047
+type(
+  Lexgen.automata_trans
+)
+ident(
+  int_ref trans "outputbis.ml" 159 4999 5010 "outputbis.ml" 159 4999 5015
+)
+"outputbis.ml" 161 5053 5071 "outputbis.ml" 161 5053 5072
+type(
+  int
+)
+ident(
+  def n "outputbis.ml" 162 5081 5089 "outputbis.ml" 165 5218 5283
+)
+"outputbis.ml" 161 5053 5073 "outputbis.ml" 161 5053 5076
+type(
+  Lexgen.tag_action list
+)
+ident(
+  def mvs "outputbis.ml" 162 5081 5089 "outputbis.ml" 165 5218 5283
+)
+"outputbis.ml" 161 5053 5061 "outputbis.ml" 161 5053 5077
+type(
+  Lexgen.automata_trans
+)
+"outputbis.ml" 162 5081 5089 "outputbis.ml" 162 5081 5107
+type(
+  string -> out_channel -> Lexgen.tag_action list -> unit
+)
+ident(
+  int_ref output_tag_actions "outputbis.ml" 131 4155 4159 "outputbis.ml" 131 4155 4177
+)
+"outputbis.ml" 162 5081 5108 "outputbis.ml" 162 5081 5112
+type(
+  string
+)
+"outputbis.ml" 162 5081 5113 "outputbis.ml" 162 5081 5115
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 149 4653 4675 "outputbis.ml" 149 4653 4677
+)
+"outputbis.ml" 162 5081 5116 "outputbis.ml" 162 5081 5119
+type(
+  Lexgen.tag_action list
+)
+ident(
+  int_ref mvs "outputbis.ml" 161 5053 5073 "outputbis.ml" 161 5053 5076
+)
+"outputbis.ml" 162 5081 5089 "outputbis.ml" 162 5081 5119
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 163 5122 5130 "outputbis.ml" 163 5122 5137
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 163 5122 5138 "outputbis.ml" 163 5122 5140
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 149 4653 4675 "outputbis.ml" 149 4653 4677
+)
+"outputbis.ml" 164 5141 5151 "outputbis.ml" 164 5141 5215
+type(
+  (unit, out_channel, unit) format
+)
+"outputbis.ml" 163 5122 5130 "outputbis.ml" 164 5141 5215
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 165 5218 5226 "outputbis.ml" 165 5218 5233
+type(
+  out_channel -> (int -> unit, out_channel, unit) format -> int -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 165 5218 5234 "outputbis.ml" 165 5218 5236
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 149 4653 4675 "outputbis.ml" 149 4653 4677
+)
+"outputbis.ml" 165 5218 5237 "outputbis.ml" 165 5218 5280
+type(
+  (int -> unit, out_channel, unit) format
+)
+"outputbis.ml" 165 5218 5281 "outputbis.ml" 165 5218 5282
+type(
+  int
+)
+ident(
+  int_ref n "outputbis.ml" 161 5053 5071 "outputbis.ml" 161 5053 5072
+)
+"outputbis.ml" 165 5218 5226 "outputbis.ml" 165 5218 5283
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 163 5122 5130 "outputbis.ml" 165 5218 5283
+type(
+  unit
+)
+"outputbis.ml" 162 5081 5089 "outputbis.ml" 165 5218 5283
+type(
+  unit
+)
+"outputbis.ml" 166 5284 5292 "outputbis.ml" 166 5284 5303
+type(
+  Lexgen.automata_trans
+)
+"outputbis.ml" 166 5284 5307 "outputbis.ml" 166 5284 5309
+type(
+  unit
+)
+"outputbis.ml" 160 5026 5030 "outputbis.ml" 167 5310 5317
+type(
+  unit
+)
+"outputbis.ml" 168 5319 5326 "outputbis.ml" 168 5319 5336
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 149 4653 4678 "outputbis.ml" 149 4653 4688
+)
+"outputbis.ml" 169 5342 5352 "outputbis.ml" 169 5342 5356
+type(
+  string
+)
+ident(
+  def next "outputbis.ml" 170 5378 5384 "outputbis.ml" 171 5441 5492
+)
+"outputbis.ml" 169 5342 5359 "outputbis.ml" 169 5342 5364
+type(
+  string
+)
+ident(
+  int_ref entry "outputbis.ml" 150 4699 4705 "outputbis.ml" 150 4699 4710
+)
+"outputbis.ml" 169 5342 5365 "outputbis.ml" 169 5342 5366
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"outputbis.ml" 169 5342 5367 "outputbis.ml" 169 5342 5374
+type(
+  string
+)
+"outputbis.ml" 169 5342 5359 "outputbis.ml" 169 5342 5374
+call(
+  stack
+)
+type(
+  string
+)
+"outputbis.ml" 170 5378 5384 "outputbis.ml" 170 5378 5391
+type(
+  out_channel -> (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 170 5378 5392 "outputbis.ml" 170 5378 5394
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 149 4653 4675 "outputbis.ml" 149 4653 4677
+)
+"outputbis.ml" 170 5378 5395 "outputbis.ml" 170 5378 5434
+type(
+  (string -> unit, out_channel, unit) format
+)
+"outputbis.ml" 170 5378 5435 "outputbis.ml" 170 5378 5439
+type(
+  string
+)
+ident(
+  int_ref next "outputbis.ml" 169 5342 5352 "outputbis.ml" 169 5342 5356
+)
+"outputbis.ml" 170 5378 5384 "outputbis.ml" 170 5378 5439
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 171 5441 5447 "outputbis.ml" 171 5441 5454
+type(
+  out_channel -> (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 171 5441 5455 "outputbis.ml" 171 5441 5457
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 149 4653 4675 "outputbis.ml" 149 4653 4677
+)
+"outputbis.ml" 171 5441 5458 "outputbis.ml" 171 5441 5487
+type(
+  (string -> unit, out_channel, unit) format
+)
+"outputbis.ml" 171 5441 5488 "outputbis.ml" 171 5441 5492
+type(
+  string
+)
+ident(
+  int_ref next "outputbis.ml" 169 5342 5352 "outputbis.ml" 169 5342 5356
+)
+"outputbis.ml" 171 5441 5447 "outputbis.ml" 171 5441 5492
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 170 5378 5384 "outputbis.ml" 171 5441 5492
+type(
+  unit
+)
+"outputbis.ml" 169 5342 5348 "outputbis.ml" 171 5441 5492
+type(
+  unit
+)
+"outputbis.ml" 173 5502 5508 "outputbis.ml" 173 5502 5521
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"outputbis.ml" 173 5502 5522 "outputbis.ml" 173 5502 5524
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 149 4653 4675 "outputbis.ml" 149 4653 4677
+)
+"outputbis.ml" 173 5502 5525 "outputbis.ml" 173 5502 5568
+type(
+  string
+)
+"outputbis.ml" 173 5502 5508 "outputbis.ml" 173 5502 5568
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 168 5319 5323 "outputbis.ml" 173 5502 5568
+type(
+  unit
+)
+"outputbis.ml" 174 5570 5574 "outputbis.ml" 174 5570 5586
+type(
+  out_channel ->
+  bool -> (Lexgen.automata_move * Lexgen.memory_action list) array -> unit
+)
+ident(
+  int_ref output_moves "outputbis.ml" 101 3383 3387 "outputbis.ml" 101 3383 3399
+)
+"outputbis.ml" 174 5570 5587 "outputbis.ml" 174 5570 5589
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 149 4653 4675 "outputbis.ml" 149 4653 4677
+)
+"outputbis.ml" 174 5570 5590 "outputbis.ml" 174 5570 5600
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 149 4653 4678 "outputbis.ml" 149 4653 4688
+)
+"outputbis.ml" 174 5570 5601 "outputbis.ml" 174 5570 5605
+type(
+  (Lexgen.automata_move * Lexgen.memory_action list) array
+)
+ident(
+  int_ref move "outputbis.ml" 159 4999 5017 "outputbis.ml" 159 4999 5021
+)
+"outputbis.ml" 174 5570 5574 "outputbis.ml" 174 5570 5605
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 168 5319 5323 "outputbis.ml" 174 5570 5605
+type(
+  unit
+)
+"outputbis.ml" 160 5026 5030 "outputbis.ml" 174 5570 5605
+type(
+  unit
+)
+"outputbis.ml" 153 4831 4833 "outputbis.ml" 174 5570 5605
+type(
+  unit
+)
+"outputbis.ml" 151 4748 4750 "outputbis.ml" 174 5570 5605
+type(
+  unit
+)
+"outputbis.ml" 150 4699 4701 "outputbis.ml" 174 5570 5605
+type(
+  unit
+)
+"outputbis.ml" 176 5607 5611 "outputbis.ml" 176 5607 5626
+type(
+  out_channel -> bool -> Lexgen.automata array -> unit
+)
+ident(
+  def output_automata "outputbis.ml" 188 5896 5896 "outputbis.ml" 1 0 -1
+)
+"outputbis.ml" 176 5607 5627 "outputbis.ml" 176 5607 5629
+type(
+  out_channel
+)
+ident(
+  def oc "outputbis.ml" 176 5607 5630 "outputbis.ml" 183 5846 5867
+)
+"outputbis.ml" 176 5607 5630 "outputbis.ml" 176 5607 5640
+type(
+  bool
+)
+ident(
+  def has_refill "outputbis.ml" 176 5607 5641 "outputbis.ml" 183 5846 5867
+)
+"outputbis.ml" 176 5607 5641 "outputbis.ml" 176 5607 5645
+type(
+  Lexgen.automata array
+)
+ident(
+  def auto "outputbis.ml" 177 5648 5650 "outputbis.ml" 183 5846 5867
+)
+"outputbis.ml" 177 5648 5650 "outputbis.ml" 177 5648 5666
+type(
+  out_channel -> bool -> unit
+)
+ident(
+  int_ref output_auto_defs "outputbis.ml" 19 902 906 "outputbis.ml" 19 902 922
+)
+"outputbis.ml" 177 5648 5667 "outputbis.ml" 177 5648 5669
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 176 5607 5627 "outputbis.ml" 176 5607 5629
+)
+"outputbis.ml" 177 5648 5670 "outputbis.ml" 177 5648 5680
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 176 5607 5630 "outputbis.ml" 176 5607 5640
+)
+"outputbis.ml" 177 5648 5650 "outputbis.ml" 177 5648 5680
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 178 5682 5688 "outputbis.ml" 178 5682 5689
+type(
+  int
+)
+ident(
+  def n "outputbis.ml" 179 5713 5715 "outputbis.ml" 183 5846 5867
+)
+"outputbis.ml" 178 5682 5692 "outputbis.ml" 178 5682 5704
+type(
+  Lexgen.automata array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"outputbis.ml" 178 5682 5705 "outputbis.ml" 178 5682 5709
+type(
+  Lexgen.automata array
+)
+ident(
+  int_ref auto "outputbis.ml" 176 5607 5641 "outputbis.ml" 176 5607 5645
+)
+"outputbis.ml" 178 5682 5692 "outputbis.ml" 178 5682 5709
+type(
+  int
+)
+"outputbis.ml" 179 5713 5715 "outputbis.ml" 179 5713 5727
+type(
+  string -> out_channel -> bool -> int -> Lexgen.automata -> unit
+)
+ident(
+  int_ref output_trans "outputbis.ml" 149 4653 4657 "outputbis.ml" 149 4653 4669
+)
+"outputbis.ml" 179 5713 5728 "outputbis.ml" 179 5713 5737
+type(
+  string
+)
+"outputbis.ml" 179 5713 5738 "outputbis.ml" 179 5713 5740
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 176 5607 5627 "outputbis.ml" 176 5607 5629
+)
+"outputbis.ml" 179 5713 5741 "outputbis.ml" 179 5713 5751
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 176 5607 5630 "outputbis.ml" 176 5607 5640
+)
+"outputbis.ml" 179 5713 5752 "outputbis.ml" 179 5713 5753
+type(
+  int
+)
+"outputbis.ml" 179 5713 5754 "outputbis.ml" 179 5713 5758
+type(
+  Lexgen.automata array
+)
+ident(
+  int_ref auto "outputbis.ml" 176 5607 5641 "outputbis.ml" 176 5607 5645
+)
+"outputbis.ml" 179 5713 5760 "outputbis.ml" 179 5713 5761
+type(
+  int
+)
+"outputbis.ml" 179 5713 5754 "outputbis.ml" 179 5713 5762
+type(
+  Lexgen.automata
+)
+"outputbis.ml" 179 5713 5715 "outputbis.ml" 179 5713 5762
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 180 5765 5775 "outputbis.ml" 180 5765 5776
+type(
+  int
+)
+"outputbis.ml" 180 5765 5780 "outputbis.ml" 180 5765 5781
+type(
+  int
+)
+ident(
+  int_ref n "outputbis.ml" 178 5682 5688 "outputbis.ml" 178 5682 5689
+)
+"outputbis.ml" 180 5765 5781 "outputbis.ml" 180 5765 5782
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"outputbis.ml" 180 5765 5782 "outputbis.ml" 180 5765 5783
+type(
+  int
+)
+"outputbis.ml" 180 5765 5780 "outputbis.ml" 180 5765 5783
+type(
+  int
+)
+"outputbis.ml" 181 5787 5791 "outputbis.ml" 181 5787 5803
+type(
+  string -> out_channel -> bool -> int -> Lexgen.automata -> unit
+)
+ident(
+  int_ref output_trans "outputbis.ml" 149 4653 4657 "outputbis.ml" 149 4653 4669
+)
+"outputbis.ml" 181 5787 5804 "outputbis.ml" 181 5787 5811
+type(
+  string
+)
+"outputbis.ml" 181 5787 5812 "outputbis.ml" 181 5787 5814
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 176 5607 5627 "outputbis.ml" 176 5607 5629
+)
+"outputbis.ml" 181 5787 5815 "outputbis.ml" 181 5787 5825
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 176 5607 5630 "outputbis.ml" 176 5607 5640
+)
+"outputbis.ml" 181 5787 5826 "outputbis.ml" 181 5787 5827
+type(
+  int
+)
+ident(
+  int_ref i "outputbis.ml" 180 5765 5767 "outputbis.ml" 182 5837 5843
+)
+"outputbis.ml" 181 5787 5828 "outputbis.ml" 181 5787 5832
+type(
+  Lexgen.automata array
+)
+ident(
+  int_ref auto "outputbis.ml" 176 5607 5641 "outputbis.ml" 176 5607 5645
+)
+"outputbis.ml" 181 5787 5834 "outputbis.ml" 181 5787 5835
+type(
+  int
+)
+ident(
+  int_ref i "outputbis.ml" 180 5765 5767 "outputbis.ml" 182 5837 5843
+)
+"outputbis.ml" 181 5787 5828 "outputbis.ml" 181 5787 5836
+type(
+  Lexgen.automata
+)
+"outputbis.ml" 181 5787 5791 "outputbis.ml" 181 5787 5836
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 180 5765 5767 "outputbis.ml" 182 5837 5843
+type(
+  unit
+)
+"outputbis.ml" 183 5846 5848 "outputbis.ml" 183 5846 5859
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"outputbis.ml" 183 5846 5860 "outputbis.ml" 183 5846 5862
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 176 5607 5627 "outputbis.ml" 176 5607 5629
+)
+"outputbis.ml" 183 5846 5863 "outputbis.ml" 183 5846 5867
+type(
+  char
+)
+"outputbis.ml" 183 5846 5848 "outputbis.ml" 183 5846 5867
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 180 5765 5767 "outputbis.ml" 183 5846 5867
+type(
+  unit
+)
+"outputbis.ml" 179 5713 5715 "outputbis.ml" 183 5846 5867
+type(
+  unit
+)
+"outputbis.ml" 178 5682 5684 "outputbis.ml" 183 5846 5867
+type(
+  unit
+)
+"outputbis.ml" 177 5648 5650 "outputbis.ml" 183 5846 5867
+type(
+  unit
+)
+"outputbis.ml" 188 5896 5900 "outputbis.ml" 188 5896 5912
+type(
+  'a ->
+  in_channel ->
+  out_channel ->
+  bool ->
+  Common.line_tracker ->
+  (string list, Syntax.location) Lexgen.automata_entry -> unit
+)
+ident(
+  def output_entry "outputbis.ml" 221 7027 7027 "outputbis.ml" 1 0 -1
+)
+"outputbis.ml" 188 5896 5913 "outputbis.ml" 188 5896 5923
+type(
+  'a
+)
+ident(
+  def sourcefile "outputbis.ml" 188 5896 5924 "outputbis.ml" 216 6969 6996
+)
+"outputbis.ml" 188 5896 5924 "outputbis.ml" 188 5896 5926
+type(
+  in_channel
+)
+ident(
+  def ic "outputbis.ml" 188 5896 5927 "outputbis.ml" 216 6969 6996
+)
+"outputbis.ml" 188 5896 5927 "outputbis.ml" 188 5896 5929
+type(
+  out_channel
+)
+ident(
+  def oc "outputbis.ml" 188 5896 5930 "outputbis.ml" 216 6969 6996
+)
+"outputbis.ml" 188 5896 5930 "outputbis.ml" 188 5896 5940
+type(
+  bool
+)
+ident(
+  def has_refill "outputbis.ml" 188 5896 5941 "outputbis.ml" 216 6969 6996
+)
+"outputbis.ml" 188 5896 5941 "outputbis.ml" 188 5896 5943
+type(
+  Common.line_tracker
+)
+ident(
+  def tr "outputbis.ml" 188 5896 5944 "outputbis.ml" 216 6969 6996
+)
+"outputbis.ml" 188 5896 5944 "outputbis.ml" 188 5896 5945
+type(
+  (string list, Syntax.location) Lexgen.automata_entry
+)
+ident(
+  def e "outputbis.ml" 189 5948 5950 "outputbis.ml" 216 6969 6996
+)
+"outputbis.ml" 189 5948 5954 "outputbis.ml" 189 5948 5962
+type(
+  int
+)
+ident(
+  def init_num "outputbis.ml" 190 6001 6003 "outputbis.ml" 216 6969 6996
+)
+"outputbis.ml" 189 5948 5964 "outputbis.ml" 189 5948 5974
+type(
+  Lexgen.memory_action list
+)
+ident(
+  def init_moves "outputbis.ml" 190 6001 6003 "outputbis.ml" 216 6969 6996
+)
+"outputbis.ml" 189 5948 5954 "outputbis.ml" 189 5948 5974
+type(
+  int * Lexgen.memory_action list
+)
+"outputbis.ml" 189 5948 5977 "outputbis.ml" 189 5948 5978
+type(
+  (string list, Syntax.location) Lexgen.automata_entry
+)
+ident(
+  int_ref e "outputbis.ml" 188 5896 5944 "outputbis.ml" 188 5896 5945
+)
+"outputbis.ml" 189 5948 5977 "outputbis.ml" 189 5948 5997
+type(
+  int * Lexgen.memory_action list
+)
+"outputbis.ml" 190 6001 6003 "outputbis.ml" 190 6001 6010
+type(
+  out_channel ->
+  (string ->
+   (out_channel -> string list -> unit) ->
+   string list ->
+   int ->
+   (out_channel -> Lexgen.memory_action list -> unit) ->
+   Lexgen.memory_action list -> unit, out_channel, unit)
+  format ->
+  string ->
+  (out_channel -> string list -> unit) ->
+  string list ->
+  int ->
+  (out_channel -> Lexgen.memory_action list -> unit) ->
+  Lexgen.memory_action list -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 190 6001 6011 "outputbis.ml" 190 6001 6013
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 188 5896 5927 "outputbis.ml" 188 5896 5929
+)
+"outputbis.ml" 190 6001 6014 "outputbis.ml" 190 6001 6070
+type(
+  (string ->
+   (out_channel -> string list -> unit) ->
+   string list ->
+   int ->
+   (out_channel -> Lexgen.memory_action list -> unit) ->
+   Lexgen.memory_action list -> unit, out_channel, unit)
+  format
+)
+"outputbis.ml" 191 6071 6075 "outputbis.ml" 191 6071 6076
+type(
+  (string list, Syntax.location) Lexgen.automata_entry
+)
+ident(
+  int_ref e "outputbis.ml" 188 5896 5944 "outputbis.ml" 188 5896 5945
+)
+"outputbis.ml" 191 6071 6075 "outputbis.ml" 191 6071 6086
+type(
+  string
+)
+"outputbis.ml" 191 6071 6087 "outputbis.ml" 191 6071 6098
+type(
+  out_channel -> string list -> unit
+)
+ident(
+  ext_ref Common.output_args
+)
+"outputbis.ml" 191 6071 6099 "outputbis.ml" 191 6071 6100
+type(
+  (string list, Syntax.location) Lexgen.automata_entry
+)
+ident(
+  int_ref e "outputbis.ml" 188 5896 5944 "outputbis.ml" 188 5896 5945
+)
+"outputbis.ml" 191 6071 6099 "outputbis.ml" 191 6071 6110
+type(
+  string list
+)
+"outputbis.ml" 192 6111 6115 "outputbis.ml" 192 6111 6116
+type(
+  (string list, Syntax.location) Lexgen.automata_entry
+)
+ident(
+  int_ref e "outputbis.ml" 188 5896 5944 "outputbis.ml" 188 5896 5945
+)
+"outputbis.ml" 192 6111 6115 "outputbis.ml" 192 6111 6130
+type(
+  int
+)
+"outputbis.ml" 193 6131 6136 "outputbis.ml" 193 6131 6157
+type(
+  string -> out_channel -> Lexgen.memory_action list -> unit
+)
+ident(
+  ext_ref Common.output_memory_actions
+)
+"outputbis.ml" 193 6131 6158 "outputbis.ml" 193 6131 6162
+type(
+  string
+)
+"outputbis.ml" 193 6131 6135 "outputbis.ml" 193 6131 6163
+call(
+  stack
+)
+type(
+  out_channel -> Lexgen.memory_action list -> unit
+)
+"outputbis.ml" 193 6131 6164 "outputbis.ml" 193 6131 6174
+type(
+  Lexgen.memory_action list
+)
+ident(
+  int_ref init_moves "outputbis.ml" 189 5948 5964 "outputbis.ml" 189 5948 5974
+)
+"outputbis.ml" 190 6001 6003 "outputbis.ml" 193 6131 6174
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 194 6176 6178 "outputbis.ml" 194 6176 6185
+type(
+  out_channel -> (int -> unit, out_channel, unit) format -> int -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 194 6176 6186 "outputbis.ml" 194 6176 6188
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 188 5896 5927 "outputbis.ml" 188 5896 5929
+)
+"outputbis.ml" 195 6189 6197 "outputbis.ml" 195 6189 6207
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 188 5896 5930 "outputbis.ml" 188 5896 5940
+)
+"outputbis.ml" 196 6208 6218 "outputbis.ml" 196 6208 6284
+type(
+  (int -> unit, out_channel, unit) format
+)
+"outputbis.ml" 197 6285 6295 "outputbis.ml" 197 6285 6355
+type(
+  (int -> unit, out_channel, unit) format
+)
+"outputbis.ml" 195 6189 6193 "outputbis.ml" 197 6285 6356
+type(
+  (int -> unit, out_channel, unit) format
+)
+"outputbis.ml" 198 6357 6361 "outputbis.ml" 198 6357 6369
+type(
+  int
+)
+ident(
+  int_ref init_num "outputbis.ml" 189 5948 5954 "outputbis.ml" 189 5948 5962
+)
+"outputbis.ml" 194 6176 6178 "outputbis.ml" 198 6357 6369
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 199 6371 6373 "outputbis.ml" 199 6371 6386
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"outputbis.ml" 199 6371 6387 "outputbis.ml" 199 6371 6389
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 188 5896 5927 "outputbis.ml" 188 5896 5929
+)
+"outputbis.ml" 199 6371 6390 "outputbis.ml" 203 6597 6633
+type(
+  string
+)
+"outputbis.ml" 199 6371 6373 "outputbis.ml" 203 6597 6633
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 204 6635 6637 "outputbis.ml" 204 6635 6646
+type(
+  (int * Lexgen.t_env * Syntax.location -> unit) ->
+  (int * Lexgen.t_env * Syntax.location) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"outputbis.ml" 205 6647 6657 "outputbis.ml" 205 6647 6660
+type(
+  int
+)
+ident(
+  def num "outputbis.ml" 206 6675 6681 "outputbis.ml" 210 6800 6821
+)
+"outputbis.ml" 205 6647 6662 "outputbis.ml" 205 6647 6665
+type(
+  Lexgen.t_env
+)
+ident(
+  def env "outputbis.ml" 206 6675 6681 "outputbis.ml" 210 6800 6821
+)
+"outputbis.ml" 205 6647 6667 "outputbis.ml" 205 6647 6670
+type(
+  Syntax.location
+)
+ident(
+  def loc "outputbis.ml" 206 6675 6681 "outputbis.ml" 210 6800 6821
+)
+"outputbis.ml" 205 6647 6656 "outputbis.ml" 205 6647 6671
+type(
+  int * Lexgen.t_env * Syntax.location
+)
+"outputbis.ml" 206 6675 6681 "outputbis.ml" 206 6675 6688
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 206 6675 6689 "outputbis.ml" 206 6675 6691
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 188 5896 5927 "outputbis.ml" 188 5896 5929
+)
+"outputbis.ml" 206 6675 6692 "outputbis.ml" 206 6675 6698
+type(
+  (unit, out_channel, unit) format
+)
+"outputbis.ml" 206 6675 6681 "outputbis.ml" 206 6675 6698
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 207 6700 6706 "outputbis.ml" 207 6700 6713
+type(
+  out_channel -> (int -> unit, out_channel, unit) format -> int -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 207 6700 6714 "outputbis.ml" 207 6700 6716
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 188 5896 5927 "outputbis.ml" 188 5896 5929
+)
+"outputbis.ml" 207 6700 6717 "outputbis.ml" 207 6700 6726
+type(
+  (int -> unit, out_channel, unit) format
+)
+"outputbis.ml" 207 6700 6727 "outputbis.ml" 207 6700 6730
+type(
+  int
+)
+ident(
+  int_ref num "outputbis.ml" 205 6647 6657 "outputbis.ml" 205 6647 6660
+)
+"outputbis.ml" 207 6700 6706 "outputbis.ml" 207 6700 6730
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 208 6732 6738 "outputbis.ml" 208 6732 6748
+type(
+  in_channel -> out_channel -> Common.line_tracker -> Lexgen.t_env -> unit
+)
+ident(
+  ext_ref Common.output_env
+)
+"outputbis.ml" 208 6732 6749 "outputbis.ml" 208 6732 6751
+type(
+  in_channel
+)
+ident(
+  int_ref ic "outputbis.ml" 188 5896 5924 "outputbis.ml" 188 5896 5926
+)
+"outputbis.ml" 208 6732 6752 "outputbis.ml" 208 6732 6754
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 188 5896 5927 "outputbis.ml" 188 5896 5929
+)
+"outputbis.ml" 208 6732 6755 "outputbis.ml" 208 6732 6757
+type(
+  Common.line_tracker
+)
+ident(
+  int_ref tr "outputbis.ml" 188 5896 5941 "outputbis.ml" 188 5896 5943
+)
+"outputbis.ml" 208 6732 6758 "outputbis.ml" 208 6732 6761
+type(
+  Lexgen.t_env
+)
+ident(
+  int_ref env "outputbis.ml" 205 6647 6662 "outputbis.ml" 205 6647 6665
+)
+"outputbis.ml" 208 6732 6738 "outputbis.ml" 208 6732 6761
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 209 6764 6770 "outputbis.ml" 209 6764 6780
+type(
+  in_channel ->
+  out_channel -> Common.line_tracker -> Syntax.location -> bool -> unit
+)
+ident(
+  ext_ref Common.copy_chunk
+)
+"outputbis.ml" 209 6764 6781 "outputbis.ml" 209 6764 6783
+type(
+  in_channel
+)
+ident(
+  int_ref ic "outputbis.ml" 188 5896 5924 "outputbis.ml" 188 5896 5926
+)
+"outputbis.ml" 209 6764 6784 "outputbis.ml" 209 6764 6786
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 188 5896 5927 "outputbis.ml" 188 5896 5929
+)
+"outputbis.ml" 209 6764 6787 "outputbis.ml" 209 6764 6789
+type(
+  Common.line_tracker
+)
+ident(
+  int_ref tr "outputbis.ml" 188 5896 5941 "outputbis.ml" 188 5896 5943
+)
+"outputbis.ml" 209 6764 6790 "outputbis.ml" 209 6764 6793
+type(
+  Syntax.location
+)
+ident(
+  int_ref loc "outputbis.ml" 205 6647 6667 "outputbis.ml" 205 6647 6670
+)
+"outputbis.ml" 209 6764 6794 "outputbis.ml" 209 6764 6798
+type(
+  bool
+)
+"outputbis.ml" 209 6764 6770 "outputbis.ml" 209 6764 6798
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 210 6800 6806 "outputbis.ml" 210 6800 6813
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 210 6800 6814 "outputbis.ml" 210 6800 6816
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 188 5896 5927 "outputbis.ml" 188 5896 5929
+)
+"outputbis.ml" 210 6800 6817 "outputbis.ml" 210 6800 6821
+type(
+  (unit, out_channel, unit) format
+)
+"outputbis.ml" 210 6800 6806 "outputbis.ml" 210 6800 6821
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 209 6764 6770 "outputbis.ml" 210 6800 6821
+type(
+  unit
+)
+"outputbis.ml" 208 6732 6738 "outputbis.ml" 210 6800 6821
+type(
+  unit
+)
+"outputbis.ml" 207 6700 6706 "outputbis.ml" 210 6800 6821
+type(
+  unit
+)
+"outputbis.ml" 206 6675 6681 "outputbis.ml" 210 6800 6821
+type(
+  unit
+)
+"outputbis.ml" 205 6647 6651 "outputbis.ml" 210 6800 6822
+type(
+  int * Lexgen.t_env * Syntax.location -> unit
+)
+"outputbis.ml" 211 6823 6827 "outputbis.ml" 211 6823 6828
+type(
+  (string list, Syntax.location) Lexgen.automata_entry
+)
+ident(
+  int_ref e "outputbis.ml" 188 5896 5944 "outputbis.ml" 188 5896 5945
+)
+"outputbis.ml" 211 6823 6827 "outputbis.ml" 211 6823 6841
+type(
+  (int * Lexgen.t_env * Syntax.location) list
+)
+"outputbis.ml" 204 6635 6637 "outputbis.ml" 211 6823 6841
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 212 6843 6845 "outputbis.ml" 212 6843 6852
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"outputbis.ml" 212 6843 6853 "outputbis.ml" 212 6843 6855
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 188 5896 5927 "outputbis.ml" 188 5896 5929
+)
+"outputbis.ml" 212 6843 6856 "outputbis.ml" 212 6843 6908
+type(
+  (unit, out_channel, unit) format
+)
+"outputbis.ml" 212 6843 6845 "outputbis.ml" 212 6843 6908
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 213 6910 6915 "outputbis.ml" 213 6910 6925
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 188 5896 5930 "outputbis.ml" 188 5896 5940
+)
+"outputbis.ml" 214 6931 6935 "outputbis.ml" 214 6931 6948
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"outputbis.ml" 214 6931 6949 "outputbis.ml" 214 6931 6951
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 188 5896 5927 "outputbis.ml" 188 5896 5929
+)
+"outputbis.ml" 214 6931 6952 "outputbis.ml" 214 6931 6961
+type(
+  string
+)
+"outputbis.ml" 214 6931 6935 "outputbis.ml" 214 6931 6961
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 216 6969 6973 "outputbis.ml" 216 6969 6986
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"outputbis.ml" 216 6969 6987 "outputbis.ml" 216 6969 6989
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 188 5896 5927 "outputbis.ml" 188 5896 5929
+)
+"outputbis.ml" 216 6969 6990 "outputbis.ml" 216 6969 6996
+type(
+  string
+)
+"outputbis.ml" 216 6969 6973 "outputbis.ml" 216 6969 6996
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 213 6910 6912 "outputbis.ml" 216 6969 6996
+type(
+  unit
+)
+"outputbis.ml" 212 6843 6845 "outputbis.ml" 216 6969 6996
+type(
+  unit
+)
+"outputbis.ml" 204 6635 6637 "outputbis.ml" 216 6969 6996
+type(
+  unit
+)
+"outputbis.ml" 199 6371 6373 "outputbis.ml" 216 6969 6996
+type(
+  unit
+)
+"outputbis.ml" 194 6176 6178 "outputbis.ml" 216 6969 6996
+type(
+  unit
+)
+"outputbis.ml" 190 6001 6003 "outputbis.ml" 216 6969 6996
+type(
+  unit
+)
+"outputbis.ml" 189 5948 5950 "outputbis.ml" 216 6969 6996
+type(
+  unit
+)
+"outputbis.ml" 221 7027 7031 "outputbis.ml" 221 7027 7044
+type(
+  'a ->
+  in_channel ->
+  out_channel ->
+  Common.line_tracker ->
+  Syntax.location ->
+  Syntax.location option ->
+  (string list, Syntax.location) Lexgen.automata_entry list ->
+  Lexgen.automata array -> Syntax.location -> unit
+)
+ident(
+  def output_lexdef "outputbis.ml" 238 7598 7633 "outputbis.ml" 1 0 -1
+)
+"outputbis.ml" 221 7027 7045 "outputbis.ml" 221 7027 7055
+type(
+  'a
+)
+ident(
+  def sourcefile "outputbis.ml" 221 7027 7056 "outputbis.ml" 238 7598 7633
+)
+"outputbis.ml" 221 7027 7056 "outputbis.ml" 221 7027 7058
+type(
+  in_channel
+)
+ident(
+  def ic "outputbis.ml" 221 7027 7059 "outputbis.ml" 238 7598 7633
+)
+"outputbis.ml" 221 7027 7059 "outputbis.ml" 221 7027 7061
+type(
+  out_channel
+)
+ident(
+  def oc "outputbis.ml" 221 7027 7062 "outputbis.ml" 238 7598 7633
+)
+"outputbis.ml" 221 7027 7062 "outputbis.ml" 221 7027 7064
+type(
+  Common.line_tracker
+)
+ident(
+  def tr "outputbis.ml" 221 7027 7065 "outputbis.ml" 238 7598 7633
+)
+"outputbis.ml" 221 7027 7065 "outputbis.ml" 221 7027 7071
+type(
+  Syntax.location
+)
+ident(
+  def header "outputbis.ml" 221 7027 7072 "outputbis.ml" 238 7598 7633
+)
+"outputbis.ml" 221 7027 7072 "outputbis.ml" 221 7027 7074
+type(
+  Syntax.location option
+)
+ident(
+  def rh "outputbis.ml" 222 7075 7093 "outputbis.ml" 238 7598 7633
+)
+"outputbis.ml" 222 7075 7093 "outputbis.ml" 222 7075 7105
+type(
+  (string list, Syntax.location) Lexgen.automata_entry list
+)
+ident(
+  def entry_points "outputbis.ml" 222 7075 7106 "outputbis.ml" 238 7598 7633
+)
+"outputbis.ml" 222 7075 7106 "outputbis.ml" 222 7075 7117
+type(
+  Lexgen.automata array
+)
+ident(
+  def transitions "outputbis.ml" 222 7075 7118 "outputbis.ml" 238 7598 7633
+)
+"outputbis.ml" 222 7075 7118 "outputbis.ml" 222 7075 7125
+type(
+  Syntax.location
+)
+ident(
+  def trailer "outputbis.ml" 224 7129 7131 "outputbis.ml" 238 7598 7633
+)
+"outputbis.ml" 224 7129 7131 "outputbis.ml" 224 7129 7141
+type(
+  in_channel ->
+  out_channel -> Common.line_tracker -> Syntax.location -> bool -> unit
+)
+ident(
+  ext_ref Common.copy_chunk
+)
+"outputbis.ml" 224 7129 7142 "outputbis.ml" 224 7129 7144
+type(
+  in_channel
+)
+ident(
+  int_ref ic "outputbis.ml" 221 7027 7056 "outputbis.ml" 221 7027 7058
+)
+"outputbis.ml" 224 7129 7145 "outputbis.ml" 224 7129 7147
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 221 7027 7059 "outputbis.ml" 221 7027 7061
+)
+"outputbis.ml" 224 7129 7148 "outputbis.ml" 224 7129 7150
+type(
+  Common.line_tracker
+)
+ident(
+  int_ref tr "outputbis.ml" 221 7027 7062 "outputbis.ml" 221 7027 7064
+)
+"outputbis.ml" 224 7129 7151 "outputbis.ml" 224 7129 7157
+type(
+  Syntax.location
+)
+ident(
+  int_ref header "outputbis.ml" 221 7027 7065 "outputbis.ml" 221 7027 7071
+)
+"outputbis.ml" 224 7129 7158 "outputbis.ml" 224 7129 7163
+type(
+  bool
+)
+"outputbis.ml" 224 7129 7131 "outputbis.ml" 224 7129 7163
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 225 7165 7171 "outputbis.ml" 225 7165 7181
+type(
+  bool
+)
+ident(
+  def has_refill "outputbis.ml" 226 7221 7223 "outputbis.ml" 238 7598 7633
+)
+"outputbis.ml" 225 7165 7184 "outputbis.ml" 225 7165 7205
+type(
+  in_channel ->
+  out_channel -> Common.line_tracker -> Syntax.location option -> bool
+)
+ident(
+  ext_ref Common.output_refill_handler
+)
+"outputbis.ml" 225 7165 7206 "outputbis.ml" 225 7165 7208
+type(
+  in_channel
+)
+ident(
+  int_ref ic "outputbis.ml" 221 7027 7056 "outputbis.ml" 221 7027 7058
+)
+"outputbis.ml" 225 7165 7209 "outputbis.ml" 225 7165 7211
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 221 7027 7059 "outputbis.ml" 221 7027 7061
+)
+"outputbis.ml" 225 7165 7212 "outputbis.ml" 225 7165 7214
+type(
+  Common.line_tracker
+)
+ident(
+  int_ref tr "outputbis.ml" 221 7027 7062 "outputbis.ml" 221 7027 7064
+)
+"outputbis.ml" 225 7165 7215 "outputbis.ml" 225 7165 7217
+type(
+  Syntax.location option
+)
+ident(
+  int_ref rh "outputbis.ml" 221 7027 7072 "outputbis.ml" 221 7027 7074
+)
+"outputbis.ml" 225 7165 7184 "outputbis.ml" 225 7165 7217
+call(
+  stack
+)
+type(
+  bool
+)
+"outputbis.ml" 226 7221 7223 "outputbis.ml" 226 7221 7238
+type(
+  out_channel -> bool -> Lexgen.automata array -> unit
+)
+ident(
+  int_ref output_automata "outputbis.ml" 176 5607 5611 "outputbis.ml" 176 5607 5626
+)
+"outputbis.ml" 226 7221 7239 "outputbis.ml" 226 7221 7241
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 221 7027 7059 "outputbis.ml" 221 7027 7061
+)
+"outputbis.ml" 226 7221 7242 "outputbis.ml" 226 7221 7252
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 225 7165 7171 "outputbis.ml" 225 7165 7181
+)
+"outputbis.ml" 226 7221 7253 "outputbis.ml" 226 7221 7264
+type(
+  Lexgen.automata array
+)
+ident(
+  int_ref transitions "outputbis.ml" 222 7075 7106 "outputbis.ml" 222 7075 7117
+)
+"outputbis.ml" 226 7221 7223 "outputbis.ml" 226 7221 7264
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 227 7266 7280 "outputbis.ml" 227 7266 7292
+type(
+  (string list, Syntax.location) Lexgen.automata_entry list
+)
+ident(
+  int_ref entry_points "outputbis.ml" 222 7075 7093 "outputbis.ml" 222 7075 7105
+)
+"outputbis.ml" 228 7298 7302 "outputbis.ml" 228 7298 7304
+type(
+  (string list, Syntax.location) Lexgen.automata_entry list
+)
+"outputbis.ml" 228 7298 7308 "outputbis.ml" 228 7298 7310
+type(
+  unit
+)
+"outputbis.ml" 229 7311 7315 "outputbis.ml" 229 7311 7321
+type(
+  (string list, Syntax.location) Lexgen.automata_entry
+)
+ident(
+  def entry1 "outputbis.ml" 230 7336 7340 "outputbis.ml" 236 7558 7590
+)
+"outputbis.ml" 229 7311 7325 "outputbis.ml" 229 7311 7332
+type(
+  (string list, Syntax.location) Lexgen.automata_entry list
+)
+ident(
+  def entries "outputbis.ml" 230 7336 7340 "outputbis.ml" 236 7558 7590
+)
+"outputbis.ml" 229 7311 7315 "outputbis.ml" 229 7311 7332
+type(
+  (string list, Syntax.location) Lexgen.automata_entry list
+)
+"outputbis.ml" 230 7336 7340 "outputbis.ml" 230 7336 7353
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"outputbis.ml" 230 7336 7354 "outputbis.ml" 230 7336 7356
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 221 7027 7059 "outputbis.ml" 221 7027 7061
+)
+"outputbis.ml" 230 7336 7357 "outputbis.ml" 230 7336 7367
+type(
+  string
+)
+"outputbis.ml" 230 7336 7340 "outputbis.ml" 230 7336 7367
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 231 7369 7373 "outputbis.ml" 231 7369 7385
+type(
+  'a ->
+  in_channel ->
+  out_channel ->
+  bool ->
+  Common.line_tracker ->
+  (string list, Syntax.location) Lexgen.automata_entry -> unit
+)
+ident(
+  int_ref output_entry "outputbis.ml" 188 5896 5900 "outputbis.ml" 188 5896 5912
+)
+"outputbis.ml" 231 7369 7386 "outputbis.ml" 231 7369 7396
+type(
+  'a
+)
+ident(
+  int_ref sourcefile "outputbis.ml" 221 7027 7045 "outputbis.ml" 221 7027 7055
+)
+"outputbis.ml" 231 7369 7397 "outputbis.ml" 231 7369 7399
+type(
+  in_channel
+)
+ident(
+  int_ref ic "outputbis.ml" 221 7027 7056 "outputbis.ml" 221 7027 7058
+)
+"outputbis.ml" 231 7369 7400 "outputbis.ml" 231 7369 7402
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 221 7027 7059 "outputbis.ml" 221 7027 7061
+)
+"outputbis.ml" 231 7369 7403 "outputbis.ml" 231 7369 7413
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 225 7165 7171 "outputbis.ml" 225 7165 7181
+)
+"outputbis.ml" 231 7369 7414 "outputbis.ml" 231 7369 7416
+type(
+  Common.line_tracker
+)
+ident(
+  int_ref tr "outputbis.ml" 221 7027 7062 "outputbis.ml" 221 7027 7064
+)
+"outputbis.ml" 231 7369 7417 "outputbis.ml" 231 7369 7423
+type(
+  (string list, Syntax.location) Lexgen.automata_entry
+)
+ident(
+  int_ref entry1 "outputbis.ml" 229 7311 7315 "outputbis.ml" 229 7311 7321
+)
+"outputbis.ml" 231 7369 7373 "outputbis.ml" 231 7369 7423
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 232 7425 7431 "outputbis.ml" 232 7425 7440
+type(
+  ((string list, Syntax.location) Lexgen.automata_entry -> unit) ->
+  (string list, Syntax.location) Lexgen.automata_entry list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"outputbis.ml" 233 7441 7454 "outputbis.ml" 233 7441 7455
+type(
+  (string list, Syntax.location) Lexgen.automata_entry
+)
+ident(
+  def e "outputbis.ml" 233 7441 7459 "outputbis.ml" 234 7484 7539
+)
+"outputbis.ml" 233 7441 7459 "outputbis.ml" 233 7441 7472
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"outputbis.ml" 233 7441 7473 "outputbis.ml" 233 7441 7475
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 221 7027 7059 "outputbis.ml" 221 7027 7061
+)
+"outputbis.ml" 233 7441 7476 "outputbis.ml" 233 7441 7482
+type(
+  string
+)
+"outputbis.ml" 233 7441 7459 "outputbis.ml" 233 7441 7482
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 234 7484 7494 "outputbis.ml" 234 7484 7506
+type(
+  'a ->
+  in_channel ->
+  out_channel ->
+  bool ->
+  Common.line_tracker ->
+  (string list, Syntax.location) Lexgen.automata_entry -> unit
+)
+ident(
+  int_ref output_entry "outputbis.ml" 188 5896 5900 "outputbis.ml" 188 5896 5912
+)
+"outputbis.ml" 234 7484 7507 "outputbis.ml" 234 7484 7517
+type(
+  'a
+)
+ident(
+  int_ref sourcefile "outputbis.ml" 221 7027 7045 "outputbis.ml" 221 7027 7055
+)
+"outputbis.ml" 234 7484 7518 "outputbis.ml" 234 7484 7520
+type(
+  in_channel
+)
+ident(
+  int_ref ic "outputbis.ml" 221 7027 7056 "outputbis.ml" 221 7027 7058
+)
+"outputbis.ml" 234 7484 7521 "outputbis.ml" 234 7484 7523
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 221 7027 7059 "outputbis.ml" 221 7027 7061
+)
+"outputbis.ml" 234 7484 7524 "outputbis.ml" 234 7484 7534
+type(
+  bool
+)
+ident(
+  int_ref has_refill "outputbis.ml" 225 7165 7171 "outputbis.ml" 225 7165 7181
+)
+"outputbis.ml" 234 7484 7535 "outputbis.ml" 234 7484 7537
+type(
+  Common.line_tracker
+)
+ident(
+  int_ref tr "outputbis.ml" 221 7027 7062 "outputbis.ml" 221 7027 7064
+)
+"outputbis.ml" 234 7484 7538 "outputbis.ml" 234 7484 7539
+type(
+  (string list, Syntax.location) Lexgen.automata_entry
+)
+ident(
+  int_ref e "outputbis.ml" 233 7441 7454 "outputbis.ml" 233 7441 7455
+)
+"outputbis.ml" 234 7484 7494 "outputbis.ml" 234 7484 7539
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 233 7441 7459 "outputbis.ml" 234 7484 7539
+type(
+  unit
+)
+"outputbis.ml" 233 7441 7449 "outputbis.ml" 234 7484 7540
+type(
+  (string list, Syntax.location) Lexgen.automata_entry -> unit
+)
+"outputbis.ml" 235 7541 7549 "outputbis.ml" 235 7541 7556
+type(
+  (string list, Syntax.location) Lexgen.automata_entry list
+)
+ident(
+  int_ref entries "outputbis.ml" 229 7311 7325 "outputbis.ml" 229 7311 7332
+)
+"outputbis.ml" 232 7425 7431 "outputbis.ml" 235 7541 7556
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 236 7558 7564 "outputbis.ml" 236 7558 7577
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"outputbis.ml" 236 7558 7578 "outputbis.ml" 236 7558 7580
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 221 7027 7059 "outputbis.ml" 221 7027 7061
+)
+"outputbis.ml" 236 7558 7581 "outputbis.ml" 236 7558 7589
+type(
+  string
+)
+"outputbis.ml" 236 7558 7564 "outputbis.ml" 236 7558 7590
+call(
+  stack
+)
+type(
+  unit
+)
+"outputbis.ml" 232 7425 7431 "outputbis.ml" 236 7558 7590
+type(
+  unit
+)
+"outputbis.ml" 231 7369 7373 "outputbis.ml" 236 7558 7590
+type(
+  unit
+)
+"outputbis.ml" 230 7336 7340 "outputbis.ml" 236 7558 7590
+type(
+  unit
+)
+"outputbis.ml" 227 7266 7268 "outputbis.ml" 237 7591 7596
+type(
+  unit
+)
+"outputbis.ml" 238 7598 7600 "outputbis.ml" 238 7598 7610
+type(
+  in_channel ->
+  out_channel -> Common.line_tracker -> Syntax.location -> bool -> unit
+)
+ident(
+  ext_ref Common.copy_chunk
+)
+"outputbis.ml" 238 7598 7611 "outputbis.ml" 238 7598 7613
+type(
+  in_channel
+)
+ident(
+  int_ref ic "outputbis.ml" 221 7027 7056 "outputbis.ml" 221 7027 7058
+)
+"outputbis.ml" 238 7598 7614 "outputbis.ml" 238 7598 7616
+type(
+  out_channel
+)
+ident(
+  int_ref oc "outputbis.ml" 221 7027 7059 "outputbis.ml" 221 7027 7061
+)
+"outputbis.ml" 238 7598 7617 "outputbis.ml" 238 7598 7619
+type(
+  Common.line_tracker
+)
+ident(
+  int_ref tr "outputbis.ml" 221 7027 7062 "outputbis.ml" 221 7027 7064
+)
+"outputbis.ml" 238 7598 7620 "outputbis.ml" 238 7598 7627
+type(
+  Syntax.location
+)
+ident(
+  int_ref trailer "outputbis.ml" 222 7075 7118 "outputbis.ml" 222 7075 7125
+)
+"outputbis.ml" 238 7598 7628 "outputbis.ml" 238 7598 7633
+type(
+  bool
+)
+"outputbis.ml" 238 7598 7600 "outputbis.ml" 238 7598 7633
+call(
+  tail
+)
+type(
+  unit
+)
+"outputbis.ml" 227 7266 7268 "outputbis.ml" 238 7598 7633
+type(
+  unit
+)
+"outputbis.ml" 226 7221 7223 "outputbis.ml" 238 7598 7633
+type(
+  unit
+)
+"outputbis.ml" 225 7165 7167 "outputbis.ml" 238 7598 7633
+type(
+  unit
+)
+"outputbis.ml" 224 7129 7131 "outputbis.ml" 238 7598 7633
+type(
+  unit
+)

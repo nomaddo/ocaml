@@ -1,0 +1,2091 @@
+"string.ml" 29 1569 1573 "string.ml" 29 1569 1577
+type(
+  int -> char -> string
+)
+ident(
+  def make "string.ml" 30 1623 1623 "string.ml" 1 0 -1
+)
+type(
+  int -> char -> string
+)
+ident(
+  def make "string.ml" 30 1623 1623 "string.ml" 1 0 -1
+)
+"string.ml" 29 1569 1581 "string.ml" 29 1569 1590
+type(
+  (int -> char -> bytes) -> int -> char -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  (int -> char -> bytes) -> int -> char -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 29 1569 1591 "string.ml" 29 1569 1597
+type(
+  int -> char -> bytes
+)
+ident(
+  ext_ref B.make
+)
+type(
+  int -> char -> bytes
+)
+ident(
+  ext_ref B.make
+)
+"string.ml" 29 1569 1581 "string.ml" 29 1569 1597
+type(
+  int -> char -> string
+)
+type(
+  int -> char -> string
+)
+type(
+  int -> char -> string
+)
+type(
+  int -> char -> string
+)
+"string.ml" 30 1623 1627 "string.ml" 30 1623 1631
+type(
+  string -> string
+)
+ident(
+  def copy "string.ml" 31 1672 1672 "string.ml" 1 0 -1
+)
+type(
+  string -> string
+)
+ident(
+  def copy "string.ml" 31 1672 1672 "string.ml" 1 0 -1
+)
+"string.ml" 30 1623 1635 "string.ml" 30 1623 1644
+type(
+  (bytes -> bytes) -> string -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  (bytes -> bytes) -> string -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 30 1623 1645 "string.ml" 30 1623 1651
+type(
+  bytes -> bytes
+)
+ident(
+  ext_ref B.copy
+)
+type(
+  bytes -> bytes
+)
+ident(
+  ext_ref B.copy
+)
+"string.ml" 30 1623 1635 "string.ml" 30 1623 1651
+type(
+  string -> string
+)
+type(
+  string -> string
+)
+type(
+  string -> string
+)
+type(
+  string -> string
+)
+"string.ml" 31 1672 1676 "string.ml" 31 1672 1679
+type(
+  string -> int -> int -> string
+)
+ident(
+  def sub "string.ml" 32 1733 1733 "string.ml" 1 0 -1
+)
+type(
+  string -> int -> int -> string
+)
+ident(
+  def sub "string.ml" 32 1733 1733 "string.ml" 1 0 -1
+)
+"string.ml" 31 1672 1683 "string.ml" 31 1672 1692
+type(
+  (bytes -> int -> int -> bytes) -> string -> int -> int -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  (bytes -> int -> int -> bytes) -> string -> int -> int -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 31 1672 1693 "string.ml" 31 1672 1698
+type(
+  bytes -> int -> int -> bytes
+)
+ident(
+  ext_ref B.sub
+)
+type(
+  bytes -> int -> int -> bytes
+)
+ident(
+  ext_ref B.sub
+)
+"string.ml" 31 1672 1683 "string.ml" 31 1672 1698
+type(
+  string -> int -> int -> string
+)
+type(
+  string -> int -> int -> string
+)
+type(
+  string -> int -> int -> string
+)
+type(
+  string -> int -> int -> string
+)
+"string.ml" 32 1733 1737 "string.ml" 32 1733 1741
+type(
+  bytes -> int -> int -> char -> unit
+)
+ident(
+  def fill "string.ml" 33 1751 1751 "string.ml" 1 0 -1
+)
+type(
+  bytes -> int -> int -> char -> unit
+)
+ident(
+  def fill "string.ml" 33 1751 1751 "string.ml" 1 0 -1
+)
+"string.ml" 32 1733 1744 "string.ml" 32 1733 1750
+type(
+  bytes -> int -> int -> char -> unit
+)
+ident(
+  ext_ref B.fill
+)
+type(
+  bytes -> int -> int -> char -> unit
+)
+ident(
+  ext_ref B.fill
+)
+"string.ml" 33 1751 1755 "string.ml" 33 1751 1759
+type(
+  string -> int -> bytes -> int -> int -> unit
+)
+ident(
+  def blit "string.ml" 34 1776 1776 "string.ml" 1 0 -1
+)
+type(
+  string -> int -> bytes -> int -> int -> unit
+)
+ident(
+  def blit "string.ml" 34 1776 1776 "string.ml" 1 0 -1
+)
+"string.ml" 33 1751 1762 "string.ml" 33 1751 1775
+type(
+  string -> int -> bytes -> int -> int -> unit
+)
+ident(
+  ext_ref B.blit_string
+)
+type(
+  string -> int -> bytes -> int -> int -> unit
+)
+ident(
+  ext_ref B.blit_string
+)
+"string.ml" 34 1776 1780 "string.ml" 34 1776 1786
+type(
+  string -> string list -> string
+)
+ident(
+  def concat "string.ml" 35 1844 1844 "string.ml" 1 0 -1
+)
+type(
+  string -> string list -> string
+)
+ident(
+  def concat "string.ml" 35 1844 1844 "string.ml" 1 0 -1
+)
+"string.ml" 34 1776 1790 "string.ml" 34 1776 1799
+type(
+  (bytes -> bytes list -> bytes) -> string -> string list -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  (bytes -> bytes list -> bytes) -> string -> string list -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 34 1776 1800 "string.ml" 34 1776 1808
+type(
+  bytes -> bytes list -> bytes
+)
+ident(
+  ext_ref B.concat
+)
+type(
+  bytes -> bytes list -> bytes
+)
+ident(
+  ext_ref B.concat
+)
+"string.ml" 34 1776 1790 "string.ml" 34 1776 1808
+type(
+  string -> string list -> string
+)
+type(
+  string -> string list -> string
+)
+type(
+  string -> string list -> string
+)
+type(
+  string -> string list -> string
+)
+"string.ml" 35 1844 1848 "string.ml" 35 1844 1852
+type(
+  (char -> unit) -> string -> unit
+)
+ident(
+  def iter "string.ml" 36 1909 1909 "string.ml" 1 0 -1
+)
+type(
+  (char -> unit) -> string -> unit
+)
+ident(
+  def iter "string.ml" 36 1909 1909 "string.ml" 1 0 -1
+)
+"string.ml" 35 1844 1856 "string.ml" 35 1844 1865
+type(
+  ((char -> unit) -> bytes -> unit) -> (char -> unit) -> string -> unit
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  ((char -> unit) -> bytes -> unit) -> (char -> unit) -> string -> unit
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 35 1844 1866 "string.ml" 35 1844 1872
+type(
+  (char -> unit) -> bytes -> unit
+)
+ident(
+  ext_ref B.iter
+)
+type(
+  (char -> unit) -> bytes -> unit
+)
+ident(
+  ext_ref B.iter
+)
+"string.ml" 35 1844 1856 "string.ml" 35 1844 1872
+type(
+  (char -> unit) -> string -> unit
+)
+type(
+  (char -> unit) -> string -> unit
+)
+type(
+  (char -> unit) -> string -> unit
+)
+type(
+  (char -> unit) -> string -> unit
+)
+"string.ml" 36 1909 1913 "string.ml" 36 1909 1918
+type(
+  (int -> char -> unit) -> string -> unit
+)
+ident(
+  def iteri "string.ml" 37 1983 1983 "string.ml" 1 0 -1
+)
+type(
+  (int -> char -> unit) -> string -> unit
+)
+ident(
+  def iteri "string.ml" 37 1983 1983 "string.ml" 1 0 -1
+)
+"string.ml" 36 1909 1922 "string.ml" 36 1909 1931
+type(
+  ((int -> char -> unit) -> bytes -> unit) ->
+  (int -> char -> unit) -> string -> unit
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  ((int -> char -> unit) -> bytes -> unit) ->
+  (int -> char -> unit) -> string -> unit
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 36 1909 1932 "string.ml" 36 1909 1939
+type(
+  (int -> char -> unit) -> bytes -> unit
+)
+ident(
+  ext_ref B.iteri
+)
+type(
+  (int -> char -> unit) -> bytes -> unit
+)
+ident(
+  ext_ref B.iteri
+)
+"string.ml" 36 1909 1922 "string.ml" 36 1909 1939
+type(
+  (int -> char -> unit) -> string -> unit
+)
+type(
+  (int -> char -> unit) -> string -> unit
+)
+type(
+  (int -> char -> unit) -> string -> unit
+)
+type(
+  (int -> char -> unit) -> string -> unit
+)
+"string.ml" 37 1983 1987 "string.ml" 37 1983 1990
+type(
+  (char -> char) -> string -> string
+)
+ident(
+  def map "string.ml" 43 2214 2214 "string.ml" 1 0 -1
+)
+type(
+  (char -> char) -> string -> string
+)
+ident(
+  def map "string.ml" 43 2214 2214 "string.ml" 1 0 -1
+)
+"string.ml" 37 1983 1994 "string.ml" 37 1983 2003
+type(
+  ((char -> char) -> bytes -> bytes) -> (char -> char) -> string -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  ((char -> char) -> bytes -> bytes) -> (char -> char) -> string -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 37 1983 2004 "string.ml" 37 1983 2009
+type(
+  (char -> char) -> bytes -> bytes
+)
+ident(
+  ext_ref B.map
+)
+type(
+  (char -> char) -> bytes -> bytes
+)
+ident(
+  ext_ref B.map
+)
+"string.ml" 37 1983 1994 "string.ml" 37 1983 2009
+type(
+  (char -> char) -> string -> string
+)
+type(
+  (char -> char) -> string -> string
+)
+type(
+  (char -> char) -> string -> string
+)
+type(
+  (char -> char) -> string -> string
+)
+"string.ml" 45 2273 2277 "string.ml" 45 2273 2285
+type(
+  char -> bool
+)
+ident(
+  def is_space "string.ml" 49 2359 2359 "string.ml" 1 0 -1
+)
+type(
+  char -> bool
+)
+ident(
+  def is_space "string.ml" 49 2359 2359 "string.ml" 1 0 -1
+)
+"string.ml" 46 2297 2301 "string.ml" 46 2297 2304
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 46 2297 2307 "string.ml" 46 2297 2313
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 46 2297 2301 "string.ml" 46 2297 2313
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 46 2297 2316 "string.ml" 46 2297 2320
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 46 2297 2301 "string.ml" 46 2297 2320
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 46 2297 2323 "string.ml" 46 2297 2327
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 46 2297 2301 "string.ml" 46 2297 2327
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 46 2297 2330 "string.ml" 46 2297 2334
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 46 2297 2301 "string.ml" 46 2297 2334
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 46 2297 2338 "string.ml" 46 2297 2342
+type(
+  bool
+)
+type(
+  bool
+)
+"string.ml" 47 2343 2347 "string.ml" 47 2343 2348
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 47 2343 2352 "string.ml" 47 2343 2357
+type(
+  bool
+)
+type(
+  bool
+)
+"string.ml" 45 2273 2288 "string.ml" 47 2343 2357
+type(
+  char -> bool
+)
+type(
+  char -> bool
+)
+"string.ml" 49 2359 2363 "string.ml" 49 2359 2367
+type(
+  string -> string
+)
+ident(
+  def trim "string.ml" 55 2539 2539 "string.ml" 1 0 -1
+)
+type(
+  string -> string
+)
+ident(
+  def trim "string.ml" 55 2539 2539 "string.ml" 1 0 -1
+)
+"string.ml" 49 2359 2368 "string.ml" 49 2359 2369
+type(
+  string
+)
+ident(
+  def s "string.ml" 50 2372 2374 "string.ml" 53 2529 2537
+)
+type(
+  string
+)
+ident(
+  def s "string.ml" 50 2372 2374 "string.ml" 53 2529 2537
+)
+"string.ml" 50 2372 2377 "string.ml" 50 2372 2378
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 49 2359 2368 "string.ml" 49 2359 2369
+)
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 49 2359 2368 "string.ml" 49 2359 2369
+)
+"string.ml" 50 2372 2379 "string.ml" 50 2372 2380
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"string.ml" 50 2372 2381 "string.ml" 50 2372 2383
+type(
+  string
+)
+type(
+  string
+)
+"string.ml" 50 2372 2377 "string.ml" 50 2372 2383
+type(
+  bool
+)
+type(
+  bool
+)
+"string.ml" 50 2372 2389 "string.ml" 50 2372 2390
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 49 2359 2368 "string.ml" 49 2359 2369
+)
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 49 2359 2368 "string.ml" 49 2359 2369
+)
+"string.ml" 51 2391 2401 "string.ml" 51 2391 2409
+type(
+  char -> bool
+)
+ident(
+  int_ref is_space "string.ml" 45 2273 2277 "string.ml" 45 2273 2285
+)
+type(
+  char -> bool
+)
+ident(
+  int_ref is_space "string.ml" 45 2273 2277 "string.ml" 45 2273 2285
+)
+"string.ml" 51 2391 2411 "string.ml" 51 2391 2421
+type(
+  string -> int -> char
+)
+ident(
+  int_ref unsafe_get "string.ml" 20 1177 1177 "string.ml" 20 1177 1243
+)
+type(
+  string -> int -> char
+)
+ident(
+  int_ref unsafe_get "string.ml" 20 1177 1177 "string.ml" 20 1177 1243
+)
+"string.ml" 51 2391 2422 "string.ml" 51 2391 2423
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 49 2359 2368 "string.ml" 49 2359 2369
+)
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 49 2359 2368 "string.ml" 49 2359 2369
+)
+"string.ml" 51 2391 2424 "string.ml" 51 2391 2425
+type(
+  int
+)
+type(
+  int
+)
+"string.ml" 51 2391 2410 "string.ml" 51 2391 2426
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 51 2391 2401 "string.ml" 51 2391 2426
+call(
+  stack
+)
+type(
+  bool
+)
+type(
+  bool
+)
+"string.ml" 51 2391 2427 "string.ml" 51 2391 2429
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"string.ml" 51 2391 2430 "string.ml" 51 2391 2438
+type(
+  char -> bool
+)
+ident(
+  int_ref is_space "string.ml" 45 2273 2277 "string.ml" 45 2273 2285
+)
+type(
+  char -> bool
+)
+ident(
+  int_ref is_space "string.ml" 45 2273 2277 "string.ml" 45 2273 2285
+)
+"string.ml" 51 2391 2440 "string.ml" 51 2391 2450
+type(
+  string -> int -> char
+)
+ident(
+  int_ref unsafe_get "string.ml" 20 1177 1177 "string.ml" 20 1177 1243
+)
+type(
+  string -> int -> char
+)
+ident(
+  int_ref unsafe_get "string.ml" 20 1177 1177 "string.ml" 20 1177 1243
+)
+"string.ml" 51 2391 2451 "string.ml" 51 2391 2452
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 49 2359 2368 "string.ml" 49 2359 2369
+)
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 49 2359 2368 "string.ml" 49 2359 2369
+)
+"string.ml" 51 2391 2454 "string.ml" 51 2391 2460
+type(
+  string -> int
+)
+ident(
+  int_ref length "string.ml" 16 949 949 "string.ml" 16 949 999
+)
+type(
+  string -> int
+)
+ident(
+  int_ref length "string.ml" 16 949 949 "string.ml" 16 949 999
+)
+"string.ml" 51 2391 2461 "string.ml" 51 2391 2462
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 49 2359 2368 "string.ml" 49 2359 2369
+)
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 49 2359 2368 "string.ml" 49 2359 2369
+)
+"string.ml" 51 2391 2454 "string.ml" 51 2391 2462
+type(
+  int
+)
+type(
+  int
+)
+"string.ml" 51 2391 2463 "string.ml" 51 2391 2464
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"string.ml" 51 2391 2465 "string.ml" 51 2391 2466
+type(
+  int
+)
+type(
+  int
+)
+"string.ml" 51 2391 2453 "string.ml" 51 2391 2467
+type(
+  int
+)
+type(
+  int
+)
+"string.ml" 51 2391 2439 "string.ml" 51 2391 2468
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 51 2391 2430 "string.ml" 51 2391 2468
+call(
+  stack
+)
+type(
+  bool
+)
+type(
+  bool
+)
+"string.ml" 51 2391 2401 "string.ml" 51 2391 2468
+type(
+  bool
+)
+type(
+  bool
+)
+"string.ml" 52 2469 2478 "string.ml" 52 2469 2496
+type(
+  bytes -> string
+)
+ident(
+  ext_ref B.unsafe_to_string
+)
+type(
+  bytes -> string
+)
+ident(
+  ext_ref B.unsafe_to_string
+)
+"string.ml" 52 2469 2498 "string.ml" 52 2469 2504
+type(
+  bytes -> bytes
+)
+ident(
+  ext_ref B.trim
+)
+type(
+  bytes -> bytes
+)
+ident(
+  ext_ref B.trim
+)
+"string.ml" 52 2469 2506 "string.ml" 52 2469 2524
+type(
+  string -> bytes
+)
+ident(
+  ext_ref B.unsafe_of_string
+)
+type(
+  string -> bytes
+)
+ident(
+  ext_ref B.unsafe_of_string
+)
+"string.ml" 52 2469 2525 "string.ml" 52 2469 2526
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 49 2359 2368 "string.ml" 49 2359 2369
+)
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 49 2359 2368 "string.ml" 49 2359 2369
+)
+"string.ml" 52 2469 2505 "string.ml" 52 2469 2527
+type(
+  bytes
+)
+type(
+  bytes
+)
+"string.ml" 52 2469 2497 "string.ml" 52 2469 2528
+call(
+  tail
+)
+type(
+  bytes
+)
+type(
+  bytes
+)
+"string.ml" 52 2469 2478 "string.ml" 52 2469 2528
+type(
+  string
+)
+type(
+  string
+)
+"string.ml" 53 2529 2536 "string.ml" 53 2529 2537
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 49 2359 2368 "string.ml" 49 2359 2369
+)
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 49 2359 2368 "string.ml" 49 2359 2369
+)
+"string.ml" 51 2391 2398 "string.ml" 53 2529 2537
+type(
+  string
+)
+type(
+  string
+)
+"string.ml" 50 2372 2374 "string.ml" 53 2529 2537
+type(
+  string
+)
+type(
+  string
+)
+"string.ml" 55 2539 2543 "string.ml" 55 2539 2550
+type(
+  string -> string
+)
+ident(
+  def escaped "string.ml" 68 2878 2878 "string.ml" 1 0 -1
+)
+type(
+  string -> string
+)
+ident(
+  def escaped "string.ml" 68 2878 2878 "string.ml" 1 0 -1
+)
+"string.ml" 55 2539 2551 "string.ml" 55 2539 2552
+type(
+  string
+)
+ident(
+  def s "string.ml" 56 2555 2557 "string.ml" 66 2871 2876
+)
+type(
+  string
+)
+ident(
+  def s "string.ml" 56 2555 2557 "string.ml" 66 2871 2876
+)
+"string.ml" 56 2555 2565 "string.ml" 56 2555 2577
+type(
+  int -> bool
+)
+ident(
+  def needs_escape "string.ml" 56 2555 2557 "string.ml" 66 2871 2876
+)
+type(
+  int -> bool
+)
+ident(
+  def needs_escape "string.ml" 56 2555 2557 "string.ml" 66 2871 2876
+)
+"string.ml" 56 2555 2578 "string.ml" 56 2555 2579
+type(
+  int
+)
+ident(
+  def i "string.ml" 57 2582 2586 "string.ml" 61 2758 2775
+)
+type(
+  int
+)
+ident(
+  def i "string.ml" 57 2582 2586 "string.ml" 61 2758 2775
+)
+"string.ml" 57 2582 2589 "string.ml" 57 2582 2590
+type(
+  int
+)
+ident(
+  int_ref i "string.ml" 56 2555 2578 "string.ml" 56 2555 2579
+)
+type(
+  int
+)
+ident(
+  int_ref i "string.ml" 56 2555 2578 "string.ml" 56 2555 2579
+)
+"string.ml" 57 2582 2591 "string.ml" 57 2582 2593
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"string.ml" 57 2582 2594 "string.ml" 57 2582 2600
+type(
+  string -> int
+)
+ident(
+  int_ref length "string.ml" 16 949 949 "string.ml" 16 949 999
+)
+type(
+  string -> int
+)
+ident(
+  int_ref length "string.ml" 16 949 949 "string.ml" 16 949 999
+)
+"string.ml" 57 2582 2601 "string.ml" 57 2582 2602
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 55 2539 2551 "string.ml" 55 2539 2552
+)
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 55 2539 2551 "string.ml" 55 2539 2552
+)
+"string.ml" 57 2582 2594 "string.ml" 57 2582 2602
+type(
+  int
+)
+type(
+  int
+)
+"string.ml" 57 2582 2589 "string.ml" 57 2582 2602
+type(
+  bool
+)
+type(
+  bool
+)
+"string.ml" 57 2582 2608 "string.ml" 57 2582 2613
+type(
+  bool
+)
+type(
+  bool
+)
+"string.ml" 58 2619 2631 "string.ml" 58 2619 2641
+type(
+  string -> int -> char
+)
+ident(
+  int_ref unsafe_get "string.ml" 20 1177 1177 "string.ml" 20 1177 1243
+)
+type(
+  string -> int -> char
+)
+ident(
+  int_ref unsafe_get "string.ml" 20 1177 1177 "string.ml" 20 1177 1243
+)
+"string.ml" 58 2619 2642 "string.ml" 58 2619 2643
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 55 2539 2551 "string.ml" 55 2539 2552
+)
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 55 2539 2551 "string.ml" 55 2539 2552
+)
+"string.ml" 58 2619 2644 "string.ml" 58 2619 2645
+type(
+  int
+)
+ident(
+  int_ref i "string.ml" 56 2555 2578 "string.ml" 56 2555 2579
+)
+type(
+  int
+)
+ident(
+  int_ref i "string.ml" 56 2555 2578 "string.ml" 56 2555 2579
+)
+"string.ml" 58 2619 2631 "string.ml" 58 2619 2645
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 59 2651 2659 "string.ml" 59 2651 2662
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 59 2651 2665 "string.ml" 59 2651 2669
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 59 2651 2659 "string.ml" 59 2651 2669
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 59 2651 2672 "string.ml" 59 2651 2676
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 59 2651 2659 "string.ml" 59 2651 2676
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 59 2651 2679 "string.ml" 59 2651 2683
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 59 2651 2659 "string.ml" 59 2651 2683
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 59 2651 2686 "string.ml" 59 2651 2690
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 59 2651 2659 "string.ml" 59 2651 2690
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 59 2651 2693 "string.ml" 59 2651 2697
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 59 2651 2659 "string.ml" 59 2651 2697
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 59 2651 2701 "string.ml" 59 2651 2705
+type(
+  bool
+)
+type(
+  bool
+)
+"string.ml" 60 2706 2714 "string.ml" 60 2706 2715
+type(
+  char
+)
+ident(
+  def c "string.ml" 60 2706 2721 "string.ml" 60 2706 2757
+)
+type(
+  char
+)
+ident(
+  def c "string.ml" 60 2706 2721 "string.ml" 60 2706 2757
+)
+"string.ml" 60 2706 2721 "string.ml" 60 2706 2733
+type(
+  char -> bool
+)
+ident(
+  int_ref is_printable "string.ml" 43 2214 2214 "string.ml" 43 2214 2271
+)
+type(
+  char -> bool
+)
+ident(
+  int_ref is_printable "string.ml" 43 2214 2214 "string.ml" 43 2214 2271
+)
+"string.ml" 60 2706 2734 "string.ml" 60 2706 2735
+type(
+  char
+)
+ident(
+  int_ref c "string.ml" 60 2706 2714 "string.ml" 60 2706 2715
+)
+type(
+  char
+)
+ident(
+  int_ref c "string.ml" 60 2706 2714 "string.ml" 60 2706 2715
+)
+"string.ml" 60 2706 2721 "string.ml" 60 2706 2735
+type(
+  bool
+)
+type(
+  bool
+)
+"string.ml" 60 2706 2739 "string.ml" 60 2706 2751
+type(
+  int -> bool
+)
+ident(
+  int_ref needs_escape "string.ml" 56 2555 2565 "string.ml" 56 2555 2577
+)
+type(
+  int -> bool
+)
+ident(
+  int_ref needs_escape "string.ml" 56 2555 2565 "string.ml" 56 2555 2577
+)
+"string.ml" 60 2706 2753 "string.ml" 60 2706 2754
+type(
+  int
+)
+ident(
+  int_ref i "string.ml" 56 2555 2578 "string.ml" 56 2555 2579
+)
+type(
+  int
+)
+ident(
+  int_ref i "string.ml" 56 2555 2578 "string.ml" 56 2555 2579
+)
+"string.ml" 60 2706 2754 "string.ml" 60 2706 2755
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"string.ml" 60 2706 2755 "string.ml" 60 2706 2756
+type(
+  int
+)
+type(
+  int
+)
+"string.ml" 60 2706 2752 "string.ml" 60 2706 2757
+type(
+  int
+)
+type(
+  int
+)
+"string.ml" 60 2706 2739 "string.ml" 60 2706 2757
+call(
+  tail
+)
+type(
+  bool
+)
+type(
+  bool
+)
+"string.ml" 61 2758 2766 "string.ml" 61 2758 2767
+type(
+  char
+)
+type(
+  char
+)
+"string.ml" 61 2758 2771 "string.ml" 61 2758 2775
+type(
+  bool
+)
+type(
+  bool
+)
+"string.ml" 58 2619 2625 "string.ml" 61 2758 2775
+type(
+  bool
+)
+type(
+  bool
+)
+"string.ml" 57 2582 2586 "string.ml" 61 2758 2775
+type(
+  bool
+)
+type(
+  bool
+)
+"string.ml" 63 2781 2786 "string.ml" 63 2781 2798
+type(
+  int -> bool
+)
+ident(
+  int_ref needs_escape "string.ml" 56 2555 2565 "string.ml" 56 2555 2577
+)
+type(
+  int -> bool
+)
+ident(
+  int_ref needs_escape "string.ml" 56 2555 2565 "string.ml" 56 2555 2577
+)
+"string.ml" 63 2781 2799 "string.ml" 63 2781 2800
+type(
+  int
+)
+type(
+  int
+)
+"string.ml" 63 2781 2786 "string.ml" 63 2781 2800
+call(
+  stack
+)
+type(
+  bool
+)
+type(
+  bool
+)
+"string.ml" 64 2806 2810 "string.ml" 64 2806 2828
+type(
+  bytes -> string
+)
+ident(
+  ext_ref B.unsafe_to_string
+)
+type(
+  bytes -> string
+)
+ident(
+  ext_ref B.unsafe_to_string
+)
+"string.ml" 64 2806 2830 "string.ml" 64 2806 2839
+type(
+  bytes -> bytes
+)
+ident(
+  ext_ref B.escaped
+)
+type(
+  bytes -> bytes
+)
+ident(
+  ext_ref B.escaped
+)
+"string.ml" 64 2806 2841 "string.ml" 64 2806 2859
+type(
+  string -> bytes
+)
+ident(
+  ext_ref B.unsafe_of_string
+)
+type(
+  string -> bytes
+)
+ident(
+  ext_ref B.unsafe_of_string
+)
+"string.ml" 64 2806 2860 "string.ml" 64 2806 2861
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 55 2539 2551 "string.ml" 55 2539 2552
+)
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 55 2539 2551 "string.ml" 55 2539 2552
+)
+"string.ml" 64 2806 2840 "string.ml" 64 2806 2862
+type(
+  bytes
+)
+type(
+  bytes
+)
+"string.ml" 64 2806 2829 "string.ml" 64 2806 2863
+call(
+  tail
+)
+type(
+  bytes
+)
+type(
+  bytes
+)
+"string.ml" 64 2806 2810 "string.ml" 64 2806 2863
+type(
+  string
+)
+type(
+  string
+)
+"string.ml" 66 2871 2875 "string.ml" 66 2871 2876
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 55 2539 2551 "string.ml" 55 2539 2552
+)
+type(
+  string
+)
+ident(
+  int_ref s "string.ml" 55 2539 2551 "string.ml" 55 2539 2552
+)
+"string.ml" 63 2781 2783 "string.ml" 66 2871 2876
+type(
+  string
+)
+type(
+  string
+)
+"string.ml" 56 2555 2557 "string.ml" 66 2871 2876
+type(
+  string
+)
+type(
+  string
+)
+"string.ml" 68 2878 2882 "string.ml" 68 2878 2887
+type(
+  string -> char -> int
+)
+ident(
+  def index "string.ml" 69 2934 2934 "string.ml" 1 0 -1
+)
+type(
+  string -> char -> int
+)
+ident(
+  def index "string.ml" 69 2934 2934 "string.ml" 1 0 -1
+)
+"string.ml" 68 2878 2891 "string.ml" 68 2878 2900
+type(
+  (bytes -> char -> int) -> string -> char -> int
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  (bytes -> char -> int) -> string -> char -> int
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 68 2878 2901 "string.ml" 68 2878 2908
+type(
+  bytes -> char -> int
+)
+ident(
+  ext_ref B.index
+)
+type(
+  bytes -> char -> int
+)
+ident(
+  ext_ref B.index
+)
+"string.ml" 68 2878 2891 "string.ml" 68 2878 2908
+type(
+  string -> char -> int
+)
+type(
+  string -> char -> int
+)
+type(
+  string -> char -> int
+)
+type(
+  string -> char -> int
+)
+"string.ml" 69 2934 2938 "string.ml" 69 2934 2944
+type(
+  string -> char -> int
+)
+ident(
+  def rindex "string.ml" 70 2992 2992 "string.ml" 1 0 -1
+)
+type(
+  string -> char -> int
+)
+ident(
+  def rindex "string.ml" 70 2992 2992 "string.ml" 1 0 -1
+)
+"string.ml" 69 2934 2948 "string.ml" 69 2934 2957
+type(
+  (bytes -> char -> int) -> string -> char -> int
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  (bytes -> char -> int) -> string -> char -> int
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 69 2934 2958 "string.ml" 69 2934 2966
+type(
+  bytes -> char -> int
+)
+ident(
+  ext_ref B.rindex
+)
+type(
+  bytes -> char -> int
+)
+ident(
+  ext_ref B.rindex
+)
+"string.ml" 69 2934 2948 "string.ml" 69 2934 2966
+type(
+  string -> char -> int
+)
+type(
+  string -> char -> int
+)
+type(
+  string -> char -> int
+)
+type(
+  string -> char -> int
+)
+"string.ml" 70 2992 2996 "string.ml" 70 2992 3006
+type(
+  string -> int -> char -> int
+)
+ident(
+  def index_from "string.ml" 71 3065 3065 "string.ml" 1 0 -1
+)
+type(
+  string -> int -> char -> int
+)
+ident(
+  def index_from "string.ml" 71 3065 3065 "string.ml" 1 0 -1
+)
+"string.ml" 70 2992 3010 "string.ml" 70 2992 3019
+type(
+  (bytes -> int -> char -> int) -> string -> int -> char -> int
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  (bytes -> int -> char -> int) -> string -> int -> char -> int
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 70 2992 3020 "string.ml" 70 2992 3032
+type(
+  bytes -> int -> char -> int
+)
+ident(
+  ext_ref B.index_from
+)
+type(
+  bytes -> int -> char -> int
+)
+ident(
+  ext_ref B.index_from
+)
+"string.ml" 70 2992 3010 "string.ml" 70 2992 3032
+type(
+  string -> int -> char -> int
+)
+type(
+  string -> int -> char -> int
+)
+type(
+  string -> int -> char -> int
+)
+type(
+  string -> int -> char -> int
+)
+"string.ml" 71 3065 3069 "string.ml" 71 3065 3080
+type(
+  string -> int -> char -> int
+)
+ident(
+  def rindex_from "string.ml" 72 3140 3140 "string.ml" 1 0 -1
+)
+type(
+  string -> int -> char -> int
+)
+ident(
+  def rindex_from "string.ml" 72 3140 3140 "string.ml" 1 0 -1
+)
+"string.ml" 71 3065 3084 "string.ml" 71 3065 3093
+type(
+  (bytes -> int -> char -> int) -> string -> int -> char -> int
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  (bytes -> int -> char -> int) -> string -> int -> char -> int
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 71 3065 3094 "string.ml" 71 3065 3107
+type(
+  bytes -> int -> char -> int
+)
+ident(
+  ext_ref B.rindex_from
+)
+type(
+  bytes -> int -> char -> int
+)
+ident(
+  ext_ref B.rindex_from
+)
+"string.ml" 71 3065 3084 "string.ml" 71 3065 3107
+type(
+  string -> int -> char -> int
+)
+type(
+  string -> int -> char -> int
+)
+type(
+  string -> int -> char -> int
+)
+type(
+  string -> int -> char -> int
+)
+"string.ml" 72 3140 3144 "string.ml" 72 3140 3152
+type(
+  string -> char -> bool
+)
+ident(
+  def contains "string.ml" 73 3203 3203 "string.ml" 1 0 -1
+)
+type(
+  string -> char -> bool
+)
+ident(
+  def contains "string.ml" 73 3203 3203 "string.ml" 1 0 -1
+)
+"string.ml" 72 3140 3156 "string.ml" 72 3140 3165
+type(
+  (bytes -> char -> bool) -> string -> char -> bool
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  (bytes -> char -> bool) -> string -> char -> bool
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 72 3140 3166 "string.ml" 72 3140 3176
+type(
+  bytes -> char -> bool
+)
+ident(
+  ext_ref B.contains
+)
+type(
+  bytes -> char -> bool
+)
+ident(
+  ext_ref B.contains
+)
+"string.ml" 72 3140 3156 "string.ml" 72 3140 3176
+type(
+  string -> char -> bool
+)
+type(
+  string -> char -> bool
+)
+type(
+  string -> char -> bool
+)
+type(
+  string -> char -> bool
+)
+"string.ml" 73 3203 3207 "string.ml" 73 3203 3220
+type(
+  string -> int -> char -> bool
+)
+ident(
+  def contains_from "string.ml" 74 3283 3283 "string.ml" 1 0 -1
+)
+type(
+  string -> int -> char -> bool
+)
+ident(
+  def contains_from "string.ml" 74 3283 3283 "string.ml" 1 0 -1
+)
+"string.ml" 73 3203 3224 "string.ml" 73 3203 3233
+type(
+  (bytes -> int -> char -> bool) -> string -> int -> char -> bool
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  (bytes -> int -> char -> bool) -> string -> int -> char -> bool
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 73 3203 3234 "string.ml" 73 3203 3249
+type(
+  bytes -> int -> char -> bool
+)
+ident(
+  ext_ref B.contains_from
+)
+type(
+  bytes -> int -> char -> bool
+)
+ident(
+  ext_ref B.contains_from
+)
+"string.ml" 73 3203 3224 "string.ml" 73 3203 3249
+type(
+  string -> int -> char -> bool
+)
+type(
+  string -> int -> char -> bool
+)
+type(
+  string -> int -> char -> bool
+)
+type(
+  string -> int -> char -> bool
+)
+"string.ml" 74 3283 3287 "string.ml" 74 3283 3301
+type(
+  string -> int -> char -> bool
+)
+ident(
+  def rcontains_from "string.ml" 76 3367 3367 "string.ml" 1 0 -1
+)
+type(
+  string -> int -> char -> bool
+)
+ident(
+  def rcontains_from "string.ml" 76 3367 3367 "string.ml" 1 0 -1
+)
+"string.ml" 75 3304 3307 "string.ml" 75 3304 3316
+type(
+  (bytes -> int -> char -> bool) -> string -> int -> char -> bool
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  (bytes -> int -> char -> bool) -> string -> int -> char -> bool
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 75 3304 3317 "string.ml" 75 3304 3333
+type(
+  bytes -> int -> char -> bool
+)
+ident(
+  ext_ref B.rcontains_from
+)
+type(
+  bytes -> int -> char -> bool
+)
+ident(
+  ext_ref B.rcontains_from
+)
+"string.ml" 75 3304 3307 "string.ml" 75 3304 3333
+type(
+  string -> int -> char -> bool
+)
+type(
+  string -> int -> char -> bool
+)
+type(
+  string -> int -> char -> bool
+)
+type(
+  string -> int -> char -> bool
+)
+"string.ml" 76 3367 3371 "string.ml" 76 3367 3380
+type(
+  string -> string
+)
+ident(
+  def uppercase "string.ml" 77 3426 3426 "string.ml" 1 0 -1
+)
+type(
+  string -> string
+)
+ident(
+  def uppercase "string.ml" 77 3426 3426 "string.ml" 1 0 -1
+)
+"string.ml" 76 3367 3384 "string.ml" 76 3367 3393
+type(
+  (bytes -> bytes) -> string -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  (bytes -> bytes) -> string -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 76 3367 3394 "string.ml" 76 3367 3405
+type(
+  bytes -> bytes
+)
+ident(
+  ext_ref B.uppercase
+)
+type(
+  bytes -> bytes
+)
+ident(
+  ext_ref B.uppercase
+)
+"string.ml" 76 3367 3384 "string.ml" 76 3367 3405
+type(
+  string -> string
+)
+type(
+  string -> string
+)
+type(
+  string -> string
+)
+type(
+  string -> string
+)
+"string.ml" 77 3426 3430 "string.ml" 77 3426 3439
+type(
+  string -> string
+)
+ident(
+  def lowercase "string.ml" 78 3485 3485 "string.ml" 1 0 -1
+)
+type(
+  string -> string
+)
+ident(
+  def lowercase "string.ml" 78 3485 3485 "string.ml" 1 0 -1
+)
+"string.ml" 77 3426 3443 "string.ml" 77 3426 3452
+type(
+  (bytes -> bytes) -> string -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  (bytes -> bytes) -> string -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 77 3426 3453 "string.ml" 77 3426 3464
+type(
+  bytes -> bytes
+)
+ident(
+  ext_ref B.lowercase
+)
+type(
+  bytes -> bytes
+)
+ident(
+  ext_ref B.lowercase
+)
+"string.ml" 77 3426 3443 "string.ml" 77 3426 3464
+type(
+  string -> string
+)
+type(
+  string -> string
+)
+type(
+  string -> string
+)
+type(
+  string -> string
+)
+"string.ml" 78 3485 3489 "string.ml" 78 3485 3499
+type(
+  string -> string
+)
+ident(
+  def capitalize "string.ml" 79 3546 3546 "string.ml" 1 0 -1
+)
+type(
+  string -> string
+)
+ident(
+  def capitalize "string.ml" 79 3546 3546 "string.ml" 1 0 -1
+)
+"string.ml" 78 3485 3503 "string.ml" 78 3485 3512
+type(
+  (bytes -> bytes) -> string -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  (bytes -> bytes) -> string -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 78 3485 3513 "string.ml" 78 3485 3525
+type(
+  bytes -> bytes
+)
+ident(
+  ext_ref B.capitalize
+)
+type(
+  bytes -> bytes
+)
+ident(
+  ext_ref B.capitalize
+)
+"string.ml" 78 3485 3503 "string.ml" 78 3485 3525
+type(
+  string -> string
+)
+type(
+  string -> string
+)
+type(
+  string -> string
+)
+type(
+  string -> string
+)
+"string.ml" 79 3546 3550 "string.ml" 79 3546 3562
+type(
+  string -> string
+)
+ident(
+  def uncapitalize "string.ml" 81 3612 3612 "string.ml" 1 0 -1
+)
+type(
+  string -> string
+)
+ident(
+  def uncapitalize "string.ml" 81 3612 3612 "string.ml" 1 0 -1
+)
+"string.ml" 79 3546 3566 "string.ml" 79 3546 3575
+type(
+  (bytes -> bytes) -> string -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  (bytes -> bytes) -> string -> string
+)
+ident(
+  ext_ref Obj.magic
+)
+"string.ml" 79 3546 3576 "string.ml" 79 3546 3590
+type(
+  bytes -> bytes
+)
+ident(
+  ext_ref B.uncapitalize
+)
+type(
+  bytes -> bytes
+)
+ident(
+  ext_ref B.uncapitalize
+)
+"string.ml" 79 3546 3566 "string.ml" 79 3546 3590
+type(
+  string -> string
+)
+type(
+  string -> string
+)
+type(
+  string -> string
+)
+type(
+  string -> string
+)
+"string.ml" 83 3629 3633 "string.ml" 83 3629 3640
+type(
+  t -> t -> int
+)
+ident(
+  def compare "string.ml" 83 3629 3679 "string.ml" 1 0 -1
+)
+type(
+  t -> t -> int
+)
+ident(
+  def compare "string.ml" 83 3629 3679 "string.ml" 1 0 -1
+)
+"string.ml" 83 3629 3642 "string.ml" 83 3629 3643
+type(
+  t
+)
+ident(
+  def x "string.ml" 83 3629 3648 "string.ml" 83 3629 3679
+)
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  def x "string.ml" 83 3629 3648 "string.ml" 83 3629 3679
+)
+"string.ml" 83 3629 3649 "string.ml" 83 3629 3650
+type(
+  t
+)
+ident(
+  def y "string.ml" 83 3629 3657 "string.ml" 83 3629 3679
+)
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  def y "string.ml" 83 3629 3657 "string.ml" 83 3629 3679
+)
+"string.ml" 83 3629 3657 "string.ml" 83 3629 3675
+type(
+  t -> t -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+type(
+  t -> t -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"string.ml" 83 3629 3676 "string.ml" 83 3629 3677
+type(
+  t
+)
+ident(
+  int_ref x "string.ml" 83 3629 3642 "string.ml" 83 3629 3643
+)
+type(
+  t
+)
+ident(
+  int_ref x "string.ml" 83 3629 3642 "string.ml" 83 3629 3643
+)
+"string.ml" 83 3629 3678 "string.ml" 83 3629 3679
+type(
+  t
+)
+ident(
+  int_ref y "string.ml" 83 3629 3649 "string.ml" 83 3629 3650
+)
+type(
+  t
+)
+ident(
+  int_ref y "string.ml" 83 3629 3649 "string.ml" 83 3629 3650
+)
+"string.ml" 83 3629 3657 "string.ml" 83 3629 3679
+type(
+  int
+)
+type(
+  int
+)

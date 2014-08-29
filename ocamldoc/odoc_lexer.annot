@@ -1,0 +1,6642 @@
+"odoc_lexer.mll" 18 854 858 "odoc_lexer.mll" 18 854 869
+type(
+  int ref
+)
+ident(
+  def line_number "odoc_lexer.mll" 21 880 880 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.mll" 18 854 872 "odoc_lexer.mll" 18 854 875
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"odoc_lexer.mll" 18 854 876 "odoc_lexer.mll" 18 854 877
+type(
+  int
+)
+"odoc_lexer.mll" 18 854 872 "odoc_lexer.mll" 18 854 877
+type(
+  int ref
+)
+"odoc_lexer.mll" 21 880 884 "odoc_lexer.mll" 21 880 897
+type(
+  Buffer.t
+)
+ident(
+  def string_buffer "odoc_lexer.mll" 24 985 985 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.mll" 21 880 900 "odoc_lexer.mll" 21 880 913
+type(
+  int -> Buffer.t
+)
+ident(
+  ext_ref Buffer.create
+)
+"odoc_lexer.mll" 21 880 914 "odoc_lexer.mll" 21 880 916
+type(
+  int
+)
+"odoc_lexer.mll" 21 880 900 "odoc_lexer.mll" 21 880 916
+call(
+  stack
+)
+type(
+  Buffer.t
+)
+"odoc_lexer.mll" 24 985 989 "odoc_lexer.mll" 24 985 1008
+type(
+  unit -> unit
+)
+ident(
+  def reset_string_buffer "odoc_lexer.mll" 27 1117 1117 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.mll" 24 985 1009 "odoc_lexer.mll" 24 985 1011
+type(
+  unit
+)
+"odoc_lexer.mll" 24 985 1014 "odoc_lexer.mll" 24 985 1026
+type(
+  Buffer.t -> unit
+)
+ident(
+  ext_ref Buffer.reset
+)
+"odoc_lexer.mll" 24 985 1027 "odoc_lexer.mll" 24 985 1040
+type(
+  Buffer.t
+)
+ident(
+  int_ref string_buffer "odoc_lexer.mll" 21 880 884 "odoc_lexer.mll" 21 880 897
+)
+"odoc_lexer.mll" 24 985 1014 "odoc_lexer.mll" 24 985 1040
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_lexer.mll" 27 1117 1121 "odoc_lexer.mll" 27 1117 1138
+type(
+  char -> unit
+)
+ident(
+  def ajout_char_string "odoc_lexer.mll" 30 1207 1207 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.mll" 27 1117 1141 "odoc_lexer.mll" 27 1117 1156
+type(
+  Buffer.t -> char -> unit
+)
+ident(
+  ext_ref Buffer.add_char
+)
+"odoc_lexer.mll" 27 1117 1157 "odoc_lexer.mll" 27 1117 1170
+type(
+  Buffer.t
+)
+ident(
+  int_ref string_buffer "odoc_lexer.mll" 21 880 884 "odoc_lexer.mll" 21 880 897
+)
+"odoc_lexer.mll" 27 1117 1141 "odoc_lexer.mll" 27 1117 1170
+call(
+  stack
+)
+type(
+  char -> unit
+)
+"odoc_lexer.mll" 30 1207 1211 "odoc_lexer.mll" 30 1207 1223
+type(
+  string -> unit
+)
+ident(
+  def ajout_string "odoc_lexer.mll" 32 1259 1259 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.mll" 30 1207 1226 "odoc_lexer.mll" 30 1207 1243
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"odoc_lexer.mll" 30 1207 1244 "odoc_lexer.mll" 30 1207 1257
+type(
+  Buffer.t
+)
+ident(
+  int_ref string_buffer "odoc_lexer.mll" 21 880 884 "odoc_lexer.mll" 21 880 897
+)
+"odoc_lexer.mll" 30 1207 1226 "odoc_lexer.mll" 30 1207 1257
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"odoc_lexer.mll" 32 1259 1263 "odoc_lexer.mll" 32 1259 1277
+type(
+  unit -> string
+)
+ident(
+  def lecture_string "odoc_lexer.mll" 36 1445 1445 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.mll" 32 1259 1278 "odoc_lexer.mll" 32 1259 1280
+type(
+  unit
+)
+"odoc_lexer.mll" 32 1259 1283 "odoc_lexer.mll" 32 1259 1298
+type(
+  Buffer.t -> string
+)
+ident(
+  ext_ref Buffer.contents
+)
+"odoc_lexer.mll" 32 1259 1299 "odoc_lexer.mll" 32 1259 1312
+type(
+  Buffer.t
+)
+ident(
+  int_ref string_buffer "odoc_lexer.mll" 21 880 884 "odoc_lexer.mll" 21 880 897
+)
+"odoc_lexer.mll" 32 1259 1283 "odoc_lexer.mll" 32 1259 1312
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_lexer.mll" 36 1445 1449 "odoc_lexer.mll" 36 1445 1460
+type(
+  string ref
+)
+ident(
+  def description "odoc_lexer.mll" 38 1471 1471 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.mll" 36 1445 1463 "odoc_lexer.mll" 36 1445 1466
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"odoc_lexer.mll" 36 1445 1467 "odoc_lexer.mll" 36 1445 1469
+type(
+  string
+)
+"odoc_lexer.mll" 36 1445 1463 "odoc_lexer.mll" 36 1445 1469
+type(
+  string ref
+)
+"odoc_lexer.mll" 38 1471 1475 "odoc_lexer.mll" 38 1471 1480
+type(
+  string
+)
+ident(
+  def blank "odoc_lexer.mll" 41 1536 1536 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.mll" 38 1471 1483 "odoc_lexer.mll" 38 1471 1500
+type(
+  string
+)
+"odoc_lexer.mll" 41 1536 1540 "odoc_lexer.mll" 41 1536 1554
+type(
+  int ref
+)
+ident(
+  def comments_level "odoc_lexer.mll" 46 1681 1681 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.mll" 41 1536 1557 "odoc_lexer.mll" 41 1536 1560
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"odoc_lexer.mll" 41 1536 1561 "odoc_lexer.mll" 41 1536 1562
+type(
+  int
+)
+"odoc_lexer.mll" 41 1536 1557 "odoc_lexer.mll" 41 1536 1562
+type(
+  int ref
+)
+"odoc_lexer.mll" 46 1681 1685 "odoc_lexer.mll" 46 1681 1698
+type(
+  string -> string
+)
+ident(
+  def remove_blanks "odoc_lexer.mll" 89 2904 2904 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.mll" 46 1681 1699 "odoc_lexer.mll" 46 1681 1700
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 48 1733 1735 "odoc_lexer.mll" 86 2796 2819
+)
+"odoc_lexer.mll" 48 1733 1739 "odoc_lexer.mll" 48 1733 1740
+type(
+  string list
+)
+ident(
+  def l "odoc_lexer.mll" 49 1782 1784 "odoc_lexer.mll" 86 2796 2819
+)
+"odoc_lexer.mll" 48 1733 1743 "odoc_lexer.mll" 48 1733 1758
+type(
+  Str.regexp -> string -> string list
+)
+ident(
+  ext_ref Str.split_delim
+)
+"odoc_lexer.mll" 48 1733 1760 "odoc_lexer.mll" 48 1733 1770
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"odoc_lexer.mll" 48 1733 1771 "odoc_lexer.mll" 48 1733 1775
+type(
+  string
+)
+"odoc_lexer.mll" 48 1733 1759 "odoc_lexer.mll" 48 1733 1776
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"odoc_lexer.mll" 48 1733 1777 "odoc_lexer.mll" 48 1733 1778
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 46 1681 1699 "odoc_lexer.mll" 46 1681 1700
+)
+"odoc_lexer.mll" 48 1733 1743 "odoc_lexer.mll" 48 1733 1778
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc_lexer.mll" 49 1782 1788 "odoc_lexer.mll" 49 1782 1790
+type(
+  string list
+)
+ident(
+  def l2 "odoc_lexer.mll" 67 2276 2278 "odoc_lexer.mll" 86 2796 2819
+)
+"odoc_lexer.mll" 50 1793 1805 "odoc_lexer.mll" 50 1793 1809
+type(
+  string list -> string list
+)
+ident(
+  def iter "odoc_lexer.mll" 50 1793 1797 "odoc_lexer.mll" 65 2257 2270
+)
+"odoc_lexer.mll" 50 1793 1810 "odoc_lexer.mll" 50 1793 1815
+type(
+  string list
+)
+ident(
+  def liste "odoc_lexer.mll" 51 1818 1824 "odoc_lexer.mll" 64 2244 2256
+)
+"odoc_lexer.mll" 51 1818 1830 "odoc_lexer.mll" 51 1818 1835
+type(
+  string list
+)
+ident(
+  int_ref liste "odoc_lexer.mll" 50 1793 1810 "odoc_lexer.mll" 50 1793 1815
+)
+"odoc_lexer.mll" 52 1841 1849 "odoc_lexer.mll" 52 1841 1850
+type(
+  string
+)
+ident(
+  def h "odoc_lexer.mll" 53 1859 1869 "odoc_lexer.mll" 62 2211 2230
+)
+"odoc_lexer.mll" 52 1841 1854 "odoc_lexer.mll" 52 1841 1855
+type(
+  string list
+)
+ident(
+  def q "odoc_lexer.mll" 53 1859 1869 "odoc_lexer.mll" 62 2211 2230
+)
+"odoc_lexer.mll" 52 1841 1849 "odoc_lexer.mll" 52 1841 1855
+type(
+  string list
+)
+"odoc_lexer.mll" 53 1859 1873 "odoc_lexer.mll" 53 1859 1875
+type(
+  string
+)
+ident(
+  def h2 "odoc_lexer.mll" 54 1934 1944 "odoc_lexer.mll" 62 2211 2230
+)
+"odoc_lexer.mll" 53 1859 1878 "odoc_lexer.mll" 53 1859 1896
+type(
+  Str.regexp -> string -> string -> string
+)
+ident(
+  ext_ref Str.global_replace
+)
+"odoc_lexer.mll" 53 1859 1898 "odoc_lexer.mll" 53 1859 1908
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"odoc_lexer.mll" 53 1859 1910 "odoc_lexer.mll" 53 1859 1913
+type(
+  string
+)
+"odoc_lexer.mll" 53 1859 1913 "odoc_lexer.mll" 53 1859 1914
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_lexer.mll" 53 1859 1914 "odoc_lexer.mll" 53 1859 1919
+type(
+  string
+)
+ident(
+  int_ref blank "odoc_lexer.mll" 38 1471 1475 "odoc_lexer.mll" 38 1471 1480
+)
+"odoc_lexer.mll" 53 1859 1919 "odoc_lexer.mll" 53 1859 1920
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_lexer.mll" 53 1859 1920 "odoc_lexer.mll" 53 1859 1923
+type(
+  string
+)
+"odoc_lexer.mll" 53 1859 1914 "odoc_lexer.mll" 53 1859 1923
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 53 1859 1909 "odoc_lexer.mll" 53 1859 1924
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 53 1859 1897 "odoc_lexer.mll" 53 1859 1925
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"odoc_lexer.mll" 53 1859 1926 "odoc_lexer.mll" 53 1859 1928
+type(
+  string
+)
+"odoc_lexer.mll" 53 1859 1929 "odoc_lexer.mll" 53 1859 1930
+type(
+  string
+)
+ident(
+  int_ref h "odoc_lexer.mll" 52 1841 1849 "odoc_lexer.mll" 52 1841 1850
+)
+"odoc_lexer.mll" 53 1859 1878 "odoc_lexer.mll" 53 1859 1930
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 54 1934 1947 "odoc_lexer.mll" 54 1934 1949
+type(
+  string
+)
+ident(
+  int_ref h2 "odoc_lexer.mll" 53 1859 1873 "odoc_lexer.mll" 53 1859 1875
+)
+"odoc_lexer.mll" 54 1934 1950 "odoc_lexer.mll" 54 1934 1951
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"odoc_lexer.mll" 54 1934 1952 "odoc_lexer.mll" 54 1934 1954
+type(
+  string
+)
+"odoc_lexer.mll" 54 1934 1947 "odoc_lexer.mll" 54 1934 1954
+type(
+  bool
+)
+"odoc_lexer.mll" 58 2090 2103 "odoc_lexer.mll" 58 2090 2107
+type(
+  string list -> string list
+)
+ident(
+  int_ref iter "odoc_lexer.mll" 50 1793 1805 "odoc_lexer.mll" 50 1793 1809
+)
+"odoc_lexer.mll" 58 2090 2108 "odoc_lexer.mll" 58 2090 2109
+type(
+  string list
+)
+ident(
+  int_ref q "odoc_lexer.mll" 52 1841 1854 "odoc_lexer.mll" 52 1841 1855
+)
+"odoc_lexer.mll" 55 1960 1972 "odoc_lexer.mll" 59 2110 2123
+call(
+  tail
+)
+type(
+  string list
+)
+"odoc_lexer.mll" 62 2211 2223 "odoc_lexer.mll" 62 2211 2225
+type(
+  string
+)
+ident(
+  int_ref h2 "odoc_lexer.mll" 53 1859 1873 "odoc_lexer.mll" 53 1859 1875
+)
+"odoc_lexer.mll" 62 2211 2229 "odoc_lexer.mll" 62 2211 2230
+type(
+  string list
+)
+ident(
+  int_ref q "odoc_lexer.mll" 52 1841 1854 "odoc_lexer.mll" 52 1841 1855
+)
+"odoc_lexer.mll" 62 2211 2223 "odoc_lexer.mll" 62 2211 2230
+type(
+  string list
+)
+"odoc_lexer.mll" 54 1934 1944 "odoc_lexer.mll" 62 2211 2230
+type(
+  string list
+)
+"odoc_lexer.mll" 53 1859 1869 "odoc_lexer.mll" 62 2211 2230
+type(
+  string list
+)
+"odoc_lexer.mll" 63 2231 2239 "odoc_lexer.mll" 63 2231 2240
+type(
+  string list
+)
+"odoc_lexer.mll" 64 2244 2254 "odoc_lexer.mll" 64 2244 2256
+type(
+  string list
+)
+"odoc_lexer.mll" 51 1818 1824 "odoc_lexer.mll" 64 2244 2256
+type(
+  string list
+)
+"odoc_lexer.mll" 65 2257 2264 "odoc_lexer.mll" 65 2257 2268
+type(
+  string list -> string list
+)
+ident(
+  int_ref iter "odoc_lexer.mll" 50 1793 1805 "odoc_lexer.mll" 50 1793 1809
+)
+"odoc_lexer.mll" 65 2257 2269 "odoc_lexer.mll" 65 2257 2270
+type(
+  string list
+)
+ident(
+  int_ref l "odoc_lexer.mll" 48 1733 1739 "odoc_lexer.mll" 48 1733 1740
+)
+"odoc_lexer.mll" 65 2257 2264 "odoc_lexer.mll" 65 2257 2270
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc_lexer.mll" 50 1793 1797 "odoc_lexer.mll" 65 2257 2270
+type(
+  string list
+)
+"odoc_lexer.mll" 67 2276 2282 "odoc_lexer.mll" 67 2276 2284
+type(
+  string list
+)
+ident(
+  def l3 "odoc_lexer.mll" 86 2796 2798 "odoc_lexer.mll" 86 2796 2819
+)
+"odoc_lexer.mll" 68 2287 2299 "odoc_lexer.mll" 68 2287 2303
+type(
+  string list -> string list
+)
+ident(
+  def iter "odoc_lexer.mll" 68 2287 2291 "odoc_lexer.mll" 84 2757 2790
+)
+"odoc_lexer.mll" 68 2287 2304 "odoc_lexer.mll" 68 2287 2309
+type(
+  string list
+)
+ident(
+  def liste "odoc_lexer.mll" 69 2312 2318 "odoc_lexer.mll" 82 2737 2749
+)
+"odoc_lexer.mll" 69 2312 2324 "odoc_lexer.mll" 69 2312 2329
+type(
+  string list
+)
+ident(
+  int_ref liste "odoc_lexer.mll" 68 2287 2304 "odoc_lexer.mll" 68 2287 2309
+)
+"odoc_lexer.mll" 70 2335 2343 "odoc_lexer.mll" 70 2335 2344
+type(
+  string
+)
+ident(
+  def h "odoc_lexer.mll" 71 2353 2363 "odoc_lexer.mll" 80 2704 2723
+)
+"odoc_lexer.mll" 70 2335 2348 "odoc_lexer.mll" 70 2335 2349
+type(
+  string list
+)
+ident(
+  def q "odoc_lexer.mll" 71 2353 2363 "odoc_lexer.mll" 80 2704 2723
+)
+"odoc_lexer.mll" 70 2335 2343 "odoc_lexer.mll" 70 2335 2349
+type(
+  string list
+)
+"odoc_lexer.mll" 71 2353 2367 "odoc_lexer.mll" 71 2353 2369
+type(
+  string
+)
+ident(
+  def h2 "odoc_lexer.mll" 72 2425 2435 "odoc_lexer.mll" 80 2704 2723
+)
+"odoc_lexer.mll" 71 2353 2372 "odoc_lexer.mll" 71 2353 2390
+type(
+  Str.regexp -> string -> string -> string
+)
+ident(
+  ext_ref Str.global_replace
+)
+"odoc_lexer.mll" 71 2353 2392 "odoc_lexer.mll" 71 2353 2402
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"odoc_lexer.mll" 71 2353 2404 "odoc_lexer.mll" 71 2353 2409
+type(
+  string
+)
+ident(
+  int_ref blank "odoc_lexer.mll" 38 1471 1475 "odoc_lexer.mll" 38 1471 1480
+)
+"odoc_lexer.mll" 71 2353 2409 "odoc_lexer.mll" 71 2353 2410
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_lexer.mll" 71 2353 2410 "odoc_lexer.mll" 71 2353 2414
+type(
+  string
+)
+"odoc_lexer.mll" 71 2353 2403 "odoc_lexer.mll" 71 2353 2415
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 71 2353 2391 "odoc_lexer.mll" 71 2353 2416
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"odoc_lexer.mll" 71 2353 2417 "odoc_lexer.mll" 71 2353 2419
+type(
+  string
+)
+"odoc_lexer.mll" 71 2353 2420 "odoc_lexer.mll" 71 2353 2421
+type(
+  string
+)
+ident(
+  int_ref h "odoc_lexer.mll" 70 2335 2343 "odoc_lexer.mll" 70 2335 2344
+)
+"odoc_lexer.mll" 71 2353 2372 "odoc_lexer.mll" 71 2353 2421
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 72 2425 2438 "odoc_lexer.mll" 72 2425 2440
+type(
+  string
+)
+ident(
+  int_ref h2 "odoc_lexer.mll" 71 2353 2367 "odoc_lexer.mll" 71 2353 2369
+)
+"odoc_lexer.mll" 72 2425 2441 "odoc_lexer.mll" 72 2425 2442
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"odoc_lexer.mll" 72 2425 2443 "odoc_lexer.mll" 72 2425 2445
+type(
+  string
+)
+"odoc_lexer.mll" 72 2425 2438 "odoc_lexer.mll" 72 2425 2445
+type(
+  bool
+)
+"odoc_lexer.mll" 76 2582 2595 "odoc_lexer.mll" 76 2582 2599
+type(
+  string list -> string list
+)
+ident(
+  int_ref iter "odoc_lexer.mll" 68 2287 2299 "odoc_lexer.mll" 68 2287 2303
+)
+"odoc_lexer.mll" 76 2582 2600 "odoc_lexer.mll" 76 2582 2601
+type(
+  string list
+)
+ident(
+  int_ref q "odoc_lexer.mll" 70 2335 2348 "odoc_lexer.mll" 70 2335 2349
+)
+"odoc_lexer.mll" 73 2451 2463 "odoc_lexer.mll" 77 2602 2615
+call(
+  tail
+)
+type(
+  string list
+)
+"odoc_lexer.mll" 80 2704 2716 "odoc_lexer.mll" 80 2704 2718
+type(
+  string
+)
+ident(
+  int_ref h2 "odoc_lexer.mll" 71 2353 2367 "odoc_lexer.mll" 71 2353 2369
+)
+"odoc_lexer.mll" 80 2704 2722 "odoc_lexer.mll" 80 2704 2723
+type(
+  string list
+)
+ident(
+  int_ref q "odoc_lexer.mll" 70 2335 2348 "odoc_lexer.mll" 70 2335 2349
+)
+"odoc_lexer.mll" 80 2704 2716 "odoc_lexer.mll" 80 2704 2723
+type(
+  string list
+)
+"odoc_lexer.mll" 72 2425 2435 "odoc_lexer.mll" 80 2704 2723
+type(
+  string list
+)
+"odoc_lexer.mll" 71 2353 2363 "odoc_lexer.mll" 80 2704 2723
+type(
+  string list
+)
+"odoc_lexer.mll" 81 2724 2732 "odoc_lexer.mll" 81 2724 2733
+type(
+  string list
+)
+"odoc_lexer.mll" 82 2737 2747 "odoc_lexer.mll" 82 2737 2749
+type(
+  string list
+)
+"odoc_lexer.mll" 69 2312 2318 "odoc_lexer.mll" 82 2737 2749
+type(
+  string list
+)
+"odoc_lexer.mll" 84 2757 2761 "odoc_lexer.mll" 84 2757 2769
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"odoc_lexer.mll" 84 2757 2771 "odoc_lexer.mll" 84 2757 2775
+type(
+  string list -> string list
+)
+ident(
+  int_ref iter "odoc_lexer.mll" 68 2287 2299 "odoc_lexer.mll" 68 2287 2303
+)
+"odoc_lexer.mll" 84 2757 2777 "odoc_lexer.mll" 84 2757 2785
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"odoc_lexer.mll" 84 2757 2786 "odoc_lexer.mll" 84 2757 2788
+type(
+  string list
+)
+ident(
+  int_ref l2 "odoc_lexer.mll" 49 1782 1788 "odoc_lexer.mll" 49 1782 1790
+)
+"odoc_lexer.mll" 84 2757 2776 "odoc_lexer.mll" 84 2757 2789
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc_lexer.mll" 84 2757 2770 "odoc_lexer.mll" 84 2757 2790
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc_lexer.mll" 84 2757 2761 "odoc_lexer.mll" 84 2757 2790
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc_lexer.mll" 68 2287 2291 "odoc_lexer.mll" 84 2757 2790
+type(
+  string list
+)
+"odoc_lexer.mll" 86 2796 2798 "odoc_lexer.mll" 86 2796 2811
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"odoc_lexer.mll" 86 2796 2812 "odoc_lexer.mll" 86 2796 2816
+type(
+  string
+)
+"odoc_lexer.mll" 86 2796 2817 "odoc_lexer.mll" 86 2796 2819
+type(
+  string list
+)
+ident(
+  int_ref l3 "odoc_lexer.mll" 67 2276 2282 "odoc_lexer.mll" 67 2276 2284
+)
+"odoc_lexer.mll" 86 2796 2798 "odoc_lexer.mll" 86 2796 2819
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_lexer.mll" 67 2276 2278 "odoc_lexer.mll" 86 2796 2819
+type(
+  string
+)
+"odoc_lexer.mll" 49 1782 1784 "odoc_lexer.mll" 86 2796 2819
+type(
+  string
+)
+"odoc_lexer.mll" 48 1733 1735 "odoc_lexer.mll" 86 2796 2819
+type(
+  string
+)
+"odoc_lexer.mll" 89 2904 2908 "odoc_lexer.mll" 89 2904 2920
+type(
+  string -> string
+)
+ident(
+  def remove_stars "odoc_lexer.ml" 95 3022 3022 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.mll" 89 2904 2921 "odoc_lexer.mll" 89 2904 2922
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 90 2925 2927 "odoc_lexer.mll" 91 2995 2999
+)
+"odoc_lexer.mll" 90 2925 2931 "odoc_lexer.mll" 90 2925 2933
+type(
+  string
+)
+ident(
+  def s2 "odoc_lexer.mll" 91 2995 2997 "odoc_lexer.mll" 91 2995 2999
+)
+"odoc_lexer.mll" 90 2925 2936 "odoc_lexer.mll" 90 2925 2954
+type(
+  Str.regexp -> string -> string -> string
+)
+ident(
+  ext_ref Str.global_replace
+)
+"odoc_lexer.mll" 90 2925 2956 "odoc_lexer.mll" 90 2925 2966
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"odoc_lexer.mll" 90 2925 2968 "odoc_lexer.mll" 90 2925 2971
+type(
+  string
+)
+"odoc_lexer.mll" 90 2925 2971 "odoc_lexer.mll" 90 2925 2972
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_lexer.mll" 90 2925 2972 "odoc_lexer.mll" 90 2925 2977
+type(
+  string
+)
+ident(
+  int_ref blank "odoc_lexer.mll" 38 1471 1475 "odoc_lexer.mll" 38 1471 1480
+)
+"odoc_lexer.mll" 90 2925 2977 "odoc_lexer.mll" 90 2925 2978
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_lexer.mll" 90 2925 2978 "odoc_lexer.mll" 90 2925 2984
+type(
+  string
+)
+"odoc_lexer.mll" 90 2925 2972 "odoc_lexer.mll" 90 2925 2984
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 90 2925 2967 "odoc_lexer.mll" 90 2925 2985
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 90 2925 2955 "odoc_lexer.mll" 90 2925 2986
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"odoc_lexer.mll" 90 2925 2987 "odoc_lexer.mll" 90 2925 2989
+type(
+  string
+)
+"odoc_lexer.mll" 90 2925 2990 "odoc_lexer.mll" 90 2925 2991
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 89 2904 2921 "odoc_lexer.mll" 89 2904 2922
+)
+"odoc_lexer.mll" 90 2925 2936 "odoc_lexer.mll" 90 2925 2991
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_lexer.mll" 91 2995 2997 "odoc_lexer.mll" 91 2995 2999
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_lexer.mll" 90 2925 2931 "odoc_lexer.mll" 90 2925 2933
+)
+"odoc_lexer.mll" 90 2925 2927 "odoc_lexer.mll" 91 2995 2999
+type(
+  string
+)
+"odoc_lexer.ml" 95 3022 3026 "odoc_lexer.ml" 95 3022 3044
+type(
+  Lexing.lex_tables
+)
+ident(
+  def __ocaml_lex_tables "odoc_lexer.ml" 290 15445 15445 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.ml" 97 3070 3073 "odoc_lexer.ml" 103 3490 3511
+type(
+  string
+)
+"odoc_lexer.ml" 105 3537 3540 "odoc_lexer.ml" 111 3957 3978
+type(
+  string
+)
+"odoc_lexer.ml" 113 4004 4007 "odoc_lexer.ml" 119 4424 4445
+type(
+  string
+)
+"odoc_lexer.ml" 121 4469 4472 "odoc_lexer.ml" 197 9789 9842
+type(
+  string
+)
+"odoc_lexer.ml" 199 9866 9869 "odoc_lexer.ml" 275 15186 15239
+type(
+  string
+)
+"odoc_lexer.ml" 277 15267 15270 "odoc_lexer.ml" 277 15267 15272
+type(
+  string
+)
+"odoc_lexer.ml" 279 15303 15306 "odoc_lexer.ml" 279 15303 15308
+type(
+  string
+)
+"odoc_lexer.ml" 281 15339 15342 "odoc_lexer.ml" 281 15339 15344
+type(
+  string
+)
+"odoc_lexer.ml" 283 15373 15376 "odoc_lexer.ml" 283 15373 15378
+type(
+  string
+)
+"odoc_lexer.ml" 285 15407 15410 "odoc_lexer.ml" 285 15407 15412
+type(
+  string
+)
+"odoc_lexer.ml" 287 15435 15438 "odoc_lexer.ml" 287 15435 15440
+type(
+  string
+)
+"odoc_lexer.ml" 95 3022 3047 "odoc_lexer.ml" 288 15442 15443
+type(
+  Lexing.lex_tables
+)
+"odoc_lexer.ml" 290 15445 15453 "odoc_lexer.ml" 290 15445 15457
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  def main "odoc_lexer.ml" 290 15445 15445 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.ml" 290 15445 15458 "odoc_lexer.ml" 290 15445 15464
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_lexer.ml" 291 15467 15471 "odoc_lexer.ml" 291 15467 15500
+)
+"odoc_lexer.ml" 291 15467 15471 "odoc_lexer.ml" 291 15467 15491
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_main_rec "odoc_lexer.ml" 292 15501 15505 "odoc_lexer.ml" 292 15501 15525
+)
+"odoc_lexer.ml" 291 15467 15492 "odoc_lexer.ml" 291 15467 15498
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 290 15445 15458 "odoc_lexer.ml" 290 15445 15464
+)
+"odoc_lexer.ml" 291 15467 15499 "odoc_lexer.ml" 291 15467 15500
+type(
+  int
+)
+"odoc_lexer.ml" 291 15467 15471 "odoc_lexer.ml" 291 15467 15500
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 292 15501 15505 "odoc_lexer.ml" 292 15501 15525
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  def __ocaml_lex_main_rec "odoc_lexer.ml" 290 15445 15445 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_lexer.ml" 292 15501 15533 "odoc_lexer.ml" 384 17791 17842
+)
+"odoc_lexer.ml" 292 15501 15533 "odoc_lexer.ml" 292 15501 15550
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_lexer.ml" 293 15553 15555 "odoc_lexer.ml" 384 17791 17842
+)
+"odoc_lexer.ml" 293 15553 15561 "odoc_lexer.ml" 293 15553 15574
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"odoc_lexer.ml" 293 15553 15575 "odoc_lexer.ml" 293 15553 15593
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "odoc_lexer.ml" 95 3022 3026 "odoc_lexer.ml" 95 3022 3044
+)
+"odoc_lexer.ml" 293 15553 15594 "odoc_lexer.ml" 293 15553 15611
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_lexer.ml" 292 15501 15533 "odoc_lexer.ml" 292 15501 15550
+)
+"odoc_lexer.ml" 293 15553 15612 "odoc_lexer.ml" 293 15553 15618
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.ml" 293 15553 15561 "odoc_lexer.ml" 293 15553 15618
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_lexer.ml" 294 15624 15632 "odoc_lexer.ml" 294 15624 15633
+type(
+  int
+)
+"odoc_lexer.mll" 102 15668 15676 "odoc_lexer.mll" 102 15668 15705
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 102 15668 15706 "odoc_lexer.mll" 102 15668 15708
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 102 15668 15709 "odoc_lexer.mll" 102 15668 15710
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 102 15668 15710 "odoc_lexer.mll" 102 15668 15739
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 102 15668 15709 "odoc_lexer.mll" 102 15668 15739
+type(
+  int
+)
+"odoc_lexer.mll" 102 15668 15740 "odoc_lexer.mll" 102 15668 15741
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 102 15668 15743 "odoc_lexer.mll" 102 15668 15756
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 102 15668 15758 "odoc_lexer.mll" 102 15668 15771
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 102 15668 15772 "odoc_lexer.mll" 102 15668 15778
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.mll" 102 15668 15757 "odoc_lexer.mll" 102 15668 15779
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 102 15668 15742 "odoc_lexer.mll" 102 15668 15780
+type(
+  int
+)
+"odoc_lexer.mll" 102 15668 15709 "odoc_lexer.mll" 102 15668 15780
+type(
+  int
+)
+"odoc_lexer.mll" 102 15668 15676 "odoc_lexer.mll" 102 15668 15780
+type(
+  unit
+)
+"odoc_lexer.mll" 103 15782 15790 "odoc_lexer.mll" 103 15782 15794
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref main "odoc_lexer.ml" 290 15445 15453 "odoc_lexer.ml" 290 15445 15457
+)
+"odoc_lexer.mll" 103 15782 15795 "odoc_lexer.mll" 103 15782 15801
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.mll" 103 15782 15790 "odoc_lexer.mll" 103 15782 15801
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 101 15660 15666 "odoc_lexer.mll" 104 15802 15809
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 302 15833 15837 "odoc_lexer.ml" 302 15833 15838
+type(
+  int
+)
+"odoc_lexer.mll" 108 15873 15881 "odoc_lexer.mll" 108 15873 15885
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 108 15873 15886 "odoc_lexer.mll" 108 15873 15897
+type(
+  int ref
+)
+ident(
+  int_ref line_number "odoc_lexer.mll" 18 854 858 "odoc_lexer.mll" 18 854 869
+)
+"odoc_lexer.mll" 108 15873 15881 "odoc_lexer.mll" 108 15873 15897
+type(
+  unit
+)
+"odoc_lexer.mll" 109 15899 15907 "odoc_lexer.mll" 109 15899 15911
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 109 15899 15912 "odoc_lexer.mll" 109 15899 15941
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 109 15899 15907 "odoc_lexer.mll" 109 15899 15941
+type(
+  unit
+)
+"odoc_lexer.mll" 110 15943 15951 "odoc_lexer.mll" 110 15943 15955
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref main "odoc_lexer.ml" 290 15445 15453 "odoc_lexer.ml" 290 15445 15457
+)
+"odoc_lexer.mll" 110 15943 15956 "odoc_lexer.mll" 110 15943 15962
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.mll" 110 15943 15951 "odoc_lexer.mll" 110 15943 15962
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 109 15899 15907 "odoc_lexer.mll" 110 15943 15962
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 107 15865 15871 "odoc_lexer.mll" 111 15963 15970
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 311 15994 15998 "odoc_lexer.ml" 311 15994 15999
+type(
+  int
+)
+"odoc_lexer.mll" 114 16034 16042 "odoc_lexer.mll" 114 16034 16071
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 114 16034 16072 "odoc_lexer.mll" 114 16034 16074
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 114 16034 16075 "odoc_lexer.mll" 114 16034 16076
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 114 16034 16076 "odoc_lexer.mll" 114 16034 16105
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 114 16034 16075 "odoc_lexer.mll" 114 16034 16105
+type(
+  int
+)
+"odoc_lexer.mll" 114 16034 16106 "odoc_lexer.mll" 114 16034 16107
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 114 16034 16109 "odoc_lexer.mll" 114 16034 16122
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 114 16034 16124 "odoc_lexer.mll" 114 16034 16137
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 114 16034 16138 "odoc_lexer.mll" 114 16034 16144
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.mll" 114 16034 16123 "odoc_lexer.mll" 114 16034 16145
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 114 16034 16108 "odoc_lexer.mll" 114 16034 16146
+type(
+  int
+)
+"odoc_lexer.mll" 114 16034 16075 "odoc_lexer.mll" 114 16034 16146
+type(
+  int
+)
+"odoc_lexer.mll" 114 16034 16042 "odoc_lexer.mll" 114 16034 16146
+type(
+  unit
+)
+"odoc_lexer.mll" 115 16148 16169 "odoc_lexer.mll" 115 16148 16171
+type(
+  string
+)
+"odoc_lexer.mll" 115 16148 16173 "odoc_lexer.mll" 115 16148 16177
+type(
+  string option
+)
+"odoc_lexer.mll" 115 16148 16168 "odoc_lexer.mll" 115 16148 16178
+type(
+  string * string option
+)
+"odoc_lexer.mll" 115 16148 16156 "odoc_lexer.mll" 115 16148 16178
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 113 16026 16032 "odoc_lexer.mll" 116 16179 16186
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 319 16210 16214 "odoc_lexer.ml" 319 16210 16215
+type(
+  int
+)
+"odoc_lexer.mll" 120 16250 16258 "odoc_lexer.mll" 120 16250 16287
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 120 16250 16288 "odoc_lexer.mll" 120 16250 16290
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 120 16250 16291 "odoc_lexer.mll" 120 16250 16292
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 120 16250 16292 "odoc_lexer.mll" 120 16250 16321
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 120 16250 16291 "odoc_lexer.mll" 120 16250 16321
+type(
+  int
+)
+"odoc_lexer.mll" 120 16250 16322 "odoc_lexer.mll" 120 16250 16323
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 120 16250 16325 "odoc_lexer.mll" 120 16250 16338
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 120 16250 16340 "odoc_lexer.mll" 120 16250 16353
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 120 16250 16354 "odoc_lexer.mll" 120 16250 16360
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.mll" 120 16250 16339 "odoc_lexer.mll" 120 16250 16361
+type(
+  string
+)
+"odoc_lexer.mll" 120 16250 16324 "odoc_lexer.mll" 120 16250 16362
+type(
+  int
+)
+"odoc_lexer.mll" 120 16250 16291 "odoc_lexer.mll" 120 16250 16362
+type(
+  int
+)
+"odoc_lexer.mll" 120 16250 16258 "odoc_lexer.mll" 120 16250 16362
+type(
+  unit
+)
+"odoc_lexer.mll" 121 16364 16372 "odoc_lexer.mll" 121 16364 16376
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref main "odoc_lexer.ml" 290 15445 15453 "odoc_lexer.ml" 290 15445 15457
+)
+"odoc_lexer.mll" 121 16364 16377 "odoc_lexer.mll" 121 16364 16383
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.mll" 121 16364 16372 "odoc_lexer.mll" 121 16364 16383
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 119 16242 16248 "odoc_lexer.mll" 122 16384 16391
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 327 16415 16419 "odoc_lexer.ml" 327 16415 16420
+type(
+  int
+)
+"odoc_lexer.mll" 126 16455 16463 "odoc_lexer.mll" 126 16455 16492
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 126 16455 16493 "odoc_lexer.mll" 126 16455 16495
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 126 16455 16496 "odoc_lexer.mll" 126 16455 16497
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 126 16455 16497 "odoc_lexer.mll" 126 16455 16526
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 126 16455 16496 "odoc_lexer.mll" 126 16455 16526
+type(
+  int
+)
+"odoc_lexer.mll" 126 16455 16527 "odoc_lexer.mll" 126 16455 16528
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 126 16455 16530 "odoc_lexer.mll" 126 16455 16543
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 126 16455 16545 "odoc_lexer.mll" 126 16455 16558
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 126 16455 16559 "odoc_lexer.mll" 126 16455 16565
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.mll" 126 16455 16544 "odoc_lexer.mll" 126 16455 16566
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 126 16455 16529 "odoc_lexer.mll" 126 16455 16567
+type(
+  int
+)
+"odoc_lexer.mll" 126 16455 16496 "odoc_lexer.mll" 126 16455 16567
+type(
+  int
+)
+"odoc_lexer.mll" 126 16455 16463 "odoc_lexer.mll" 126 16455 16567
+type(
+  unit
+)
+"odoc_lexer.mll" 127 16569 16577 "odoc_lexer.mll" 127 16569 16581
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 127 16569 16582 "odoc_lexer.mll" 127 16569 16596
+type(
+  int ref
+)
+ident(
+  int_ref comments_level "odoc_lexer.mll" 41 1536 1540 "odoc_lexer.mll" 41 1536 1554
+)
+"odoc_lexer.mll" 127 16569 16577 "odoc_lexer.mll" 127 16569 16596
+type(
+  unit
+)
+"odoc_lexer.mll" 128 16598 16606 "odoc_lexer.mll" 128 16598 16610
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref main "odoc_lexer.ml" 290 15445 15453 "odoc_lexer.ml" 290 15445 15457
+)
+"odoc_lexer.mll" 128 16598 16611 "odoc_lexer.mll" 128 16598 16617
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.mll" 128 16598 16606 "odoc_lexer.mll" 128 16598 16617
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 127 16569 16577 "odoc_lexer.mll" 128 16598 16617
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 125 16447 16453 "odoc_lexer.mll" 129 16618 16625
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 336 16649 16653 "odoc_lexer.ml" 336 16649 16654
+type(
+  int
+)
+"odoc_lexer.mll" 133 16689 16697 "odoc_lexer.mll" 133 16689 16726
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 133 16689 16727 "odoc_lexer.mll" 133 16689 16729
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 133 16689 16730 "odoc_lexer.mll" 133 16689 16731
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 133 16689 16731 "odoc_lexer.mll" 133 16689 16760
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 133 16689 16730 "odoc_lexer.mll" 133 16689 16760
+type(
+  int
+)
+"odoc_lexer.mll" 133 16689 16761 "odoc_lexer.mll" 133 16689 16762
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 133 16689 16764 "odoc_lexer.mll" 133 16689 16777
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 133 16689 16779 "odoc_lexer.mll" 133 16689 16792
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 133 16689 16793 "odoc_lexer.mll" 133 16689 16799
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.mll" 133 16689 16778 "odoc_lexer.mll" 133 16689 16800
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 133 16689 16763 "odoc_lexer.mll" 133 16689 16801
+type(
+  int
+)
+"odoc_lexer.mll" 133 16689 16730 "odoc_lexer.mll" 133 16689 16801
+type(
+  int
+)
+"odoc_lexer.mll" 133 16689 16697 "odoc_lexer.mll" 133 16689 16801
+type(
+  unit
+)
+"odoc_lexer.mll" 134 16803 16811 "odoc_lexer.mll" 134 16803 16815
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 134 16803 16816 "odoc_lexer.mll" 134 16803 16830
+type(
+  int ref
+)
+ident(
+  int_ref comments_level "odoc_lexer.mll" 41 1536 1540 "odoc_lexer.mll" 41 1536 1554
+)
+"odoc_lexer.mll" 134 16803 16811 "odoc_lexer.mll" 134 16803 16830
+type(
+  unit
+)
+"odoc_lexer.mll" 135 16832 16843 "odoc_lexer.mll" 135 16832 16844
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 135 16832 16844 "odoc_lexer.mll" 135 16832 16858
+type(
+  int ref
+)
+ident(
+  int_ref comments_level "odoc_lexer.mll" 41 1536 1540 "odoc_lexer.mll" 41 1536 1554
+)
+"odoc_lexer.mll" 135 16832 16843 "odoc_lexer.mll" 135 16832 16858
+type(
+  int
+)
+"odoc_lexer.mll" 135 16832 16859 "odoc_lexer.mll" 135 16832 16860
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"odoc_lexer.mll" 135 16832 16861 "odoc_lexer.mll" 135 16832 16862
+type(
+  int
+)
+"odoc_lexer.mll" 135 16832 16843 "odoc_lexer.mll" 135 16832 16862
+type(
+  bool
+)
+"odoc_lexer.mll" 137 16880 16891 "odoc_lexer.mll" 137 16880 16910
+type(
+  unit -> unit
+)
+ident(
+  int_ref reset_string_buffer "odoc_lexer.mll" 24 985 989 "odoc_lexer.mll" 24 985 1008
+)
+"odoc_lexer.mll" 137 16880 16911 "odoc_lexer.mll" 137 16880 16913
+type(
+  unit
+)
+"odoc_lexer.mll" 137 16880 16891 "odoc_lexer.mll" 137 16880 16913
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_lexer.mll" 138 16915 16926 "odoc_lexer.mll" 138 16915 16937
+type(
+  string ref
+)
+ident(
+  int_ref description "odoc_lexer.mll" 36 1445 1449 "odoc_lexer.mll" 36 1445 1460
+)
+"odoc_lexer.mll" 138 16915 16938 "odoc_lexer.mll" 138 16915 16940
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 138 16915 16941 "odoc_lexer.mll" 138 16915 16943
+type(
+  string
+)
+"odoc_lexer.mll" 138 16915 16926 "odoc_lexer.mll" 138 16915 16943
+type(
+  unit
+)
+"odoc_lexer.mll" 139 16945 16956 "odoc_lexer.mll" 139 16945 16971
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref special_comment "odoc_lexer.ml" 386 17844 17848 "odoc_lexer.ml" 386 17844 17863
+)
+"odoc_lexer.mll" 139 16945 16972 "odoc_lexer.mll" 139 16945 16978
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.mll" 139 16945 16956 "odoc_lexer.mll" 139 16945 16978
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 138 16915 16926 "odoc_lexer.mll" 139 16945 16978
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 136 16868 16878 "odoc_lexer.mll" 140 16979 16990
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 142 17004 17014 "odoc_lexer.mll" 142 17004 17018
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref main "odoc_lexer.ml" 290 15445 15453 "odoc_lexer.ml" 290 15445 15457
+)
+"odoc_lexer.mll" 142 17004 17019 "odoc_lexer.mll" 142 17004 17025
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.mll" 142 17004 17014 "odoc_lexer.mll" 142 17004 17025
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 135 16832 16840 "odoc_lexer.mll" 142 17004 17025
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 134 16803 16811 "odoc_lexer.mll" 142 17004 17025
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 132 16681 16687 "odoc_lexer.mll" 143 17026 17033
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 352 17057 17061 "odoc_lexer.ml" 352 17057 17062
+type(
+  int
+)
+"odoc_lexer.mll" 146 17089 17095 "odoc_lexer.mll" 146 17089 17102
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 357 17126 17130 "odoc_lexer.ml" 357 17126 17131
+type(
+  int
+)
+"odoc_lexer.mll" 150 17166 17174 "odoc_lexer.mll" 150 17166 17203
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 150 17166 17204 "odoc_lexer.mll" 150 17166 17206
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 150 17166 17207 "odoc_lexer.mll" 150 17166 17208
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 150 17166 17208 "odoc_lexer.mll" 150 17166 17237
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 150 17166 17207 "odoc_lexer.mll" 150 17166 17237
+type(
+  int
+)
+"odoc_lexer.mll" 150 17166 17238 "odoc_lexer.mll" 150 17166 17239
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 150 17166 17241 "odoc_lexer.mll" 150 17166 17254
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 150 17166 17256 "odoc_lexer.mll" 150 17166 17269
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 150 17166 17270 "odoc_lexer.mll" 150 17166 17276
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.mll" 150 17166 17255 "odoc_lexer.mll" 150 17166 17277
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 150 17166 17240 "odoc_lexer.mll" 150 17166 17278
+type(
+  int
+)
+"odoc_lexer.mll" 150 17166 17207 "odoc_lexer.mll" 150 17166 17278
+type(
+  int
+)
+"odoc_lexer.mll" 150 17166 17174 "odoc_lexer.mll" 150 17166 17278
+type(
+  unit
+)
+"odoc_lexer.mll" 151 17280 17288 "odoc_lexer.mll" 151 17280 17292
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.decr
+)
+"odoc_lexer.mll" 151 17280 17293 "odoc_lexer.mll" 151 17280 17307
+type(
+  int ref
+)
+ident(
+  int_ref comments_level "odoc_lexer.mll" 41 1536 1540 "odoc_lexer.mll" 41 1536 1554
+)
+"odoc_lexer.mll" 151 17280 17288 "odoc_lexer.mll" 151 17280 17307
+type(
+  unit
+)
+"odoc_lexer.mll" 152 17310 17318 "odoc_lexer.mll" 152 17310 17322
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref main "odoc_lexer.ml" 290 15445 15453 "odoc_lexer.ml" 290 15445 15457
+)
+"odoc_lexer.mll" 152 17310 17323 "odoc_lexer.mll" 152 17310 17329
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.mll" 152 17310 17318 "odoc_lexer.mll" 152 17310 17329
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 151 17280 17288 "odoc_lexer.mll" 152 17310 17329
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 149 17158 17164 "odoc_lexer.mll" 153 17330 17337
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 366 17361 17365 "odoc_lexer.ml" 366 17361 17366
+type(
+  int
+)
+"odoc_lexer.mll" 157 17401 17409 "odoc_lexer.mll" 157 17401 17438
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 157 17401 17439 "odoc_lexer.mll" 157 17401 17441
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 157 17401 17442 "odoc_lexer.mll" 157 17401 17443
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 157 17401 17443 "odoc_lexer.mll" 157 17401 17472
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 157 17401 17442 "odoc_lexer.mll" 157 17401 17472
+type(
+  int
+)
+"odoc_lexer.mll" 157 17401 17473 "odoc_lexer.mll" 157 17401 17474
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 157 17401 17476 "odoc_lexer.mll" 157 17401 17489
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 157 17401 17491 "odoc_lexer.mll" 157 17401 17504
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 157 17401 17505 "odoc_lexer.mll" 157 17401 17511
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.mll" 157 17401 17490 "odoc_lexer.mll" 157 17401 17512
+type(
+  string
+)
+"odoc_lexer.mll" 157 17401 17475 "odoc_lexer.mll" 157 17401 17513
+type(
+  int
+)
+"odoc_lexer.mll" 157 17401 17442 "odoc_lexer.mll" 157 17401 17513
+type(
+  int
+)
+"odoc_lexer.mll" 157 17401 17409 "odoc_lexer.mll" 157 17401 17513
+type(
+  unit
+)
+"odoc_lexer.mll" 158 17515 17523 "odoc_lexer.mll" 158 17515 17527
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 158 17515 17528 "odoc_lexer.mll" 158 17515 17542
+type(
+  int ref
+)
+ident(
+  int_ref comments_level "odoc_lexer.mll" 41 1536 1540 "odoc_lexer.mll" 41 1536 1554
+)
+"odoc_lexer.mll" 158 17515 17523 "odoc_lexer.mll" 158 17515 17542
+type(
+  unit
+)
+"odoc_lexer.mll" 159 17545 17553 "odoc_lexer.mll" 159 17545 17557
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref main "odoc_lexer.ml" 290 15445 15453 "odoc_lexer.ml" 290 15445 15457
+)
+"odoc_lexer.mll" 159 17545 17558 "odoc_lexer.mll" 159 17545 17564
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.mll" 159 17545 17553 "odoc_lexer.mll" 159 17545 17564
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 158 17515 17523 "odoc_lexer.mll" 159 17545 17564
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 156 17393 17399 "odoc_lexer.mll" 160 17565 17572
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 375 17596 17600 "odoc_lexer.ml" 375 17596 17601
+type(
+  int
+)
+"odoc_lexer.mll" 164 17636 17644 "odoc_lexer.mll" 164 17636 17648
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 164 17636 17649 "odoc_lexer.mll" 164 17636 17678
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 164 17636 17644 "odoc_lexer.mll" 164 17636 17678
+type(
+  unit
+)
+"odoc_lexer.mll" 165 17680 17688 "odoc_lexer.mll" 165 17680 17692
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref main "odoc_lexer.ml" 290 15445 15453 "odoc_lexer.ml" 290 15445 15457
+)
+"odoc_lexer.mll" 165 17680 17693 "odoc_lexer.mll" 165 17680 17699
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.mll" 165 17680 17688 "odoc_lexer.mll" 165 17680 17699
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 163 17628 17634 "odoc_lexer.mll" 166 17700 17707
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 383 17731 17735 "odoc_lexer.ml" 383 17731 17752
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_lexer.ml" 383 17731 17756 "odoc_lexer.ml" 384 17791 17842
+)
+"odoc_lexer.ml" 383 17731 17756 "odoc_lexer.ml" 383 17731 17762
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.ml" 383 17731 17756 "odoc_lexer.ml" 383 17731 17781
+type(
+  Lexing.lexbuf -> unit
+)
+"odoc_lexer.ml" 383 17731 17782 "odoc_lexer.ml" 383 17731 17788
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.ml" 383 17731 17756 "odoc_lexer.ml" 383 17731 17788
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_lexer.ml" 384 17791 17797 "odoc_lexer.ml" 384 17791 17817
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_main_rec "odoc_lexer.ml" 292 15501 15505 "odoc_lexer.ml" 292 15501 15525
+)
+"odoc_lexer.ml" 384 17791 17818 "odoc_lexer.ml" 384 17791 17824
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 292 15501 15526 "odoc_lexer.ml" 292 15501 15532
+)
+"odoc_lexer.ml" 384 17791 17825 "odoc_lexer.ml" 384 17791 17842
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_lexer.ml" 383 17731 17735 "odoc_lexer.ml" 383 17731 17752
+)
+"odoc_lexer.ml" 384 17791 17797 "odoc_lexer.ml" 384 17791 17842
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 383 17731 17756 "odoc_lexer.ml" 384 17791 17842
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 293 15553 15555 "odoc_lexer.ml" 384 17791 17842
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 386 17844 17848 "odoc_lexer.ml" 386 17844 17863
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  def special_comment "odoc_lexer.ml" 290 15445 15445 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.ml" 386 17844 17864 "odoc_lexer.ml" 386 17844 17870
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_lexer.ml" 387 17873 17877 "odoc_lexer.ml" 387 17873 17918
+)
+"odoc_lexer.ml" 387 17873 17877 "odoc_lexer.ml" 387 17873 17908
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_special_comment_rec "odoc_lexer.ml" 388 17919 17923 "odoc_lexer.ml" 388 17919 17954
+)
+"odoc_lexer.ml" 387 17873 17909 "odoc_lexer.ml" 387 17873 17915
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 386 17844 17864 "odoc_lexer.ml" 386 17844 17870
+)
+"odoc_lexer.ml" 387 17873 17916 "odoc_lexer.ml" 387 17873 17918
+type(
+  int
+)
+"odoc_lexer.ml" 387 17873 17877 "odoc_lexer.ml" 387 17873 17918
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 388 17919 17923 "odoc_lexer.ml" 388 17919 17954
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  def __ocaml_lex_special_comment_rec "odoc_lexer.ml" 290 15445 15445 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_lexer.ml" 388 17919 17962 "odoc_lexer.ml" 469 20318 20380
+)
+"odoc_lexer.ml" 388 17919 17962 "odoc_lexer.ml" 388 17919 17979
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_lexer.ml" 389 17982 17984 "odoc_lexer.ml" 469 20318 20380
+)
+"odoc_lexer.ml" 389 17982 17990 "odoc_lexer.ml" 389 17982 18003
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"odoc_lexer.ml" 389 17982 18004 "odoc_lexer.ml" 389 17982 18022
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "odoc_lexer.ml" 95 3022 3026 "odoc_lexer.ml" 95 3022 3044
+)
+"odoc_lexer.ml" 389 17982 18023 "odoc_lexer.ml" 389 17982 18040
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_lexer.ml" 388 17919 17962 "odoc_lexer.ml" 388 17919 17979
+)
+"odoc_lexer.ml" 389 17982 18041 "odoc_lexer.ml" 389 17982 18047
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.ml" 389 17982 17990 "odoc_lexer.ml" 389 17982 18047
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_lexer.ml" 390 18053 18061 "odoc_lexer.ml" 390 18053 18062
+type(
+  int
+)
+"odoc_lexer.mll" 171 18097 18109 "odoc_lexer.mll" 171 18097 18110
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 172 18137 18145 "odoc_lexer.mll" 191 18716 18727
+)
+"odoc_lexer.mll" 171 18097 18113 "odoc_lexer.mll" 171 18097 18126
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 171 18097 18127 "odoc_lexer.mll" 171 18097 18133
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.mll" 171 18097 18113 "odoc_lexer.mll" 171 18097 18133
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 172 18137 18145 "odoc_lexer.mll" 172 18137 18174
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 172 18137 18175 "odoc_lexer.mll" 172 18137 18177
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 172 18137 18178 "odoc_lexer.mll" 172 18137 18179
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 172 18137 18179 "odoc_lexer.mll" 172 18137 18208
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 172 18137 18178 "odoc_lexer.mll" 172 18137 18208
+type(
+  int
+)
+"odoc_lexer.mll" 172 18137 18209 "odoc_lexer.mll" 172 18137 18210
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 172 18137 18212 "odoc_lexer.mll" 172 18137 18225
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 172 18137 18226 "odoc_lexer.mll" 172 18137 18227
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 171 18097 18109 "odoc_lexer.mll" 171 18097 18110
+)
+"odoc_lexer.mll" 172 18137 18211 "odoc_lexer.mll" 172 18137 18228
+type(
+  int
+)
+"odoc_lexer.mll" 172 18137 18178 "odoc_lexer.mll" 172 18137 18228
+type(
+  int
+)
+"odoc_lexer.mll" 172 18137 18145 "odoc_lexer.mll" 172 18137 18228
+type(
+  unit
+)
+"odoc_lexer.mll" 173 18230 18241 "odoc_lexer.mll" 173 18230 18242
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 173 18230 18242 "odoc_lexer.mll" 173 18230 18256
+type(
+  int ref
+)
+ident(
+  int_ref comments_level "odoc_lexer.mll" 41 1536 1540 "odoc_lexer.mll" 41 1536 1554
+)
+"odoc_lexer.mll" 173 18230 18241 "odoc_lexer.mll" 173 18230 18256
+type(
+  int
+)
+"odoc_lexer.mll" 173 18230 18257 "odoc_lexer.mll" 173 18230 18258
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"odoc_lexer.mll" 173 18230 18259 "odoc_lexer.mll" 173 18230 18260
+type(
+  int
+)
+"odoc_lexer.mll" 173 18230 18241 "odoc_lexer.mll" 173 18230 18260
+type(
+  bool
+)
+"odoc_lexer.mll" 176 18323 18338 "odoc_lexer.mll" 176 18323 18340
+type(
+  string
+)
+ident(
+  def s2 "odoc_lexer.mll" 177 18364 18375 "odoc_lexer.mll" 184 18552 18585
+)
+"odoc_lexer.mll" 176 18323 18343 "odoc_lexer.mll" 176 18323 18357
+type(
+  unit -> string
+)
+ident(
+  int_ref lecture_string "odoc_lexer.mll" 32 1259 1263 "odoc_lexer.mll" 32 1259 1277
+)
+"odoc_lexer.mll" 176 18323 18358 "odoc_lexer.mll" 176 18323 18360
+type(
+  unit
+)
+"odoc_lexer.mll" 176 18323 18343 "odoc_lexer.mll" 176 18323 18360
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 177 18364 18379 "odoc_lexer.mll" 177 18364 18381
+type(
+  string
+)
+ident(
+  def s3 "odoc_lexer.mll" 178 18404 18415 "odoc_lexer.mll" 184 18552 18585
+)
+"odoc_lexer.mll" 177 18364 18384 "odoc_lexer.mll" 177 18364 18397
+type(
+  string -> string
+)
+ident(
+  int_ref remove_blanks "odoc_lexer.mll" 46 1681 1685 "odoc_lexer.mll" 46 1681 1698
+)
+"odoc_lexer.mll" 177 18364 18398 "odoc_lexer.mll" 177 18364 18400
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_lexer.mll" 176 18323 18338 "odoc_lexer.mll" 176 18323 18340
+)
+"odoc_lexer.mll" 177 18364 18384 "odoc_lexer.mll" 177 18364 18400
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 178 18404 18419 "odoc_lexer.mll" 178 18404 18421
+type(
+  string
+)
+ident(
+  def s4 "odoc_lexer.mll" 184 18552 18563 "odoc_lexer.mll" 184 18552 18585
+)
+"odoc_lexer.mll" 179 18424 18440 "odoc_lexer.mll" 179 18424 18441
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 179 18424 18441 "odoc_lexer.mll" 179 18424 18465
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.remove_stars
+)
+"odoc_lexer.mll" 179 18424 18440 "odoc_lexer.mll" 179 18424 18465
+type(
+  bool
+)
+"odoc_lexer.mll" 180 18471 18486 "odoc_lexer.mll" 180 18471 18498
+type(
+  string -> string
+)
+ident(
+  int_ref remove_stars "odoc_lexer.mll" 89 2904 2908 "odoc_lexer.mll" 89 2904 2920
+)
+"odoc_lexer.mll" 180 18471 18499 "odoc_lexer.mll" 180 18471 18501
+type(
+  string
+)
+ident(
+  int_ref s3 "odoc_lexer.mll" 177 18364 18379 "odoc_lexer.mll" 177 18364 18381
+)
+"odoc_lexer.mll" 180 18471 18486 "odoc_lexer.mll" 180 18471 18501
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 182 18520 18535 "odoc_lexer.mll" 182 18520 18537
+type(
+  string
+)
+ident(
+  int_ref s3 "odoc_lexer.mll" 177 18364 18379 "odoc_lexer.mll" 177 18364 18381
+)
+"odoc_lexer.mll" 179 18424 18437 "odoc_lexer.mll" 182 18520 18537
+type(
+  string
+)
+"odoc_lexer.mll" 184 18552 18576 "odoc_lexer.mll" 184 18552 18578
+type(
+  string
+)
+ident(
+  int_ref s4 "odoc_lexer.mll" 178 18404 18419 "odoc_lexer.mll" 178 18404 18421
+)
+"odoc_lexer.mll" 184 18552 18580 "odoc_lexer.mll" 184 18552 18584
+type(
+  string option
+)
+"odoc_lexer.mll" 184 18552 18575 "odoc_lexer.mll" 184 18552 18585
+type(
+  string * string option
+)
+"odoc_lexer.mll" 184 18552 18563 "odoc_lexer.mll" 184 18552 18585
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 178 18404 18415 "odoc_lexer.mll" 184 18552 18585
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 177 18364 18375 "odoc_lexer.mll" 184 18552 18585
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 174 18266 18276 "odoc_lexer.mll" 185 18586 18597
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 188 18623 18634 "odoc_lexer.mll" 188 18623 18646
+type(
+  string -> unit
+)
+ident(
+  int_ref ajout_string "odoc_lexer.mll" 30 1207 1211 "odoc_lexer.mll" 30 1207 1223
+)
+"odoc_lexer.mll" 188 18623 18647 "odoc_lexer.mll" 188 18623 18648
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 171 18097 18109 "odoc_lexer.mll" 171 18097 18110
+)
+"odoc_lexer.mll" 188 18623 18634 "odoc_lexer.mll" 188 18623 18648
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_lexer.mll" 189 18650 18661 "odoc_lexer.mll" 189 18650 18665
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.decr
+)
+"odoc_lexer.mll" 189 18650 18666 "odoc_lexer.mll" 189 18650 18680
+type(
+  int ref
+)
+ident(
+  int_ref comments_level "odoc_lexer.mll" 41 1536 1540 "odoc_lexer.mll" 41 1536 1554
+)
+"odoc_lexer.mll" 189 18650 18661 "odoc_lexer.mll" 189 18650 18680
+type(
+  unit
+)
+"odoc_lexer.mll" 190 18682 18693 "odoc_lexer.mll" 190 18682 18708
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref special_comment "odoc_lexer.ml" 386 17844 17848 "odoc_lexer.ml" 386 17844 17863
+)
+"odoc_lexer.mll" 190 18682 18709 "odoc_lexer.mll" 190 18682 18715
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.mll" 190 18682 18693 "odoc_lexer.mll" 190 18682 18715
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 189 18650 18661 "odoc_lexer.mll" 190 18682 18715
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 187 18611 18621 "odoc_lexer.mll" 191 18716 18727
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 173 18230 18238 "odoc_lexer.mll" 191 18716 18727
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 172 18137 18145 "odoc_lexer.mll" 191 18716 18727
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 170 18089 18095 "odoc_lexer.mll" 192 18728 18735
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 417 18759 18763 "odoc_lexer.ml" 417 18759 18764
+type(
+  int
+)
+"odoc_lexer.mll" 196 18799 18811 "odoc_lexer.mll" 196 18799 18812
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 197 18839 18847 "odoc_lexer.mll" 200 18986 19016
+)
+"odoc_lexer.mll" 196 18799 18815 "odoc_lexer.mll" 196 18799 18828
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 196 18799 18829 "odoc_lexer.mll" 196 18799 18835
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.mll" 196 18799 18815 "odoc_lexer.mll" 196 18799 18835
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 197 18839 18847 "odoc_lexer.mll" 197 18839 18876
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 197 18839 18877 "odoc_lexer.mll" 197 18839 18879
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 197 18839 18880 "odoc_lexer.mll" 197 18839 18881
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 197 18839 18881 "odoc_lexer.mll" 197 18839 18910
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 197 18839 18880 "odoc_lexer.mll" 197 18839 18910
+type(
+  int
+)
+"odoc_lexer.mll" 197 18839 18911 "odoc_lexer.mll" 197 18839 18912
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 197 18839 18914 "odoc_lexer.mll" 197 18839 18927
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 197 18839 18928 "odoc_lexer.mll" 197 18839 18929
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 196 18799 18811 "odoc_lexer.mll" 196 18799 18812
+)
+"odoc_lexer.mll" 197 18839 18913 "odoc_lexer.mll" 197 18839 18930
+type(
+  int
+)
+"odoc_lexer.mll" 197 18839 18880 "odoc_lexer.mll" 197 18839 18930
+type(
+  int
+)
+"odoc_lexer.mll" 197 18839 18847 "odoc_lexer.mll" 197 18839 18930
+type(
+  unit
+)
+"odoc_lexer.mll" 198 18932 18940 "odoc_lexer.mll" 198 18932 18944
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 198 18932 18945 "odoc_lexer.mll" 198 18932 18959
+type(
+  int ref
+)
+ident(
+  int_ref comments_level "odoc_lexer.mll" 41 1536 1540 "odoc_lexer.mll" 41 1536 1554
+)
+"odoc_lexer.mll" 198 18932 18940 "odoc_lexer.mll" 198 18932 18959
+type(
+  unit
+)
+"odoc_lexer.mll" 199 18962 18970 "odoc_lexer.mll" 199 18962 18982
+type(
+  string -> unit
+)
+ident(
+  int_ref ajout_string "odoc_lexer.mll" 30 1207 1211 "odoc_lexer.mll" 30 1207 1223
+)
+"odoc_lexer.mll" 199 18962 18983 "odoc_lexer.mll" 199 18962 18984
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 196 18799 18811 "odoc_lexer.mll" 196 18799 18812
+)
+"odoc_lexer.mll" 199 18962 18970 "odoc_lexer.mll" 199 18962 18984
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_lexer.mll" 200 18986 18994 "odoc_lexer.mll" 200 18986 19009
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref special_comment "odoc_lexer.ml" 386 17844 17848 "odoc_lexer.ml" 386 17844 17863
+)
+"odoc_lexer.mll" 200 18986 19010 "odoc_lexer.mll" 200 18986 19016
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.mll" 200 18986 18994 "odoc_lexer.mll" 200 18986 19016
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 199 18962 18970 "odoc_lexer.mll" 200 18986 19016
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 198 18932 18940 "odoc_lexer.mll" 200 18986 19016
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 197 18839 18847 "odoc_lexer.mll" 200 18986 19016
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 195 18791 18797 "odoc_lexer.mll" 201 19017 19024
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 428 19048 19052 "odoc_lexer.ml" 428 19048 19053
+type(
+  int
+)
+"odoc_lexer.mll" 205 19088 19100 "odoc_lexer.mll" 205 19088 19101
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 206 19128 19136 "odoc_lexer.mll" 209 19299 19329
+)
+"odoc_lexer.mll" 205 19088 19104 "odoc_lexer.mll" 205 19088 19117
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 205 19088 19118 "odoc_lexer.mll" 205 19088 19124
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.mll" 205 19088 19104 "odoc_lexer.mll" 205 19088 19124
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 206 19128 19140 "odoc_lexer.mll" 206 19128 19141
+type(
+  char
+)
+ident(
+  def c "odoc_lexer.mll" 207 19177 19185 "odoc_lexer.mll" 209 19299 19329
+)
+"odoc_lexer.mll" 206 19128 19145 "odoc_lexer.mll" 206 19128 19163
+type(
+  Lexing.lexbuf -> int -> char
+)
+ident(
+  ext_ref Lexing.lexeme_char
+)
+"odoc_lexer.mll" 206 19128 19164 "odoc_lexer.mll" 206 19128 19170
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.mll" 206 19128 19171 "odoc_lexer.mll" 206 19128 19172
+type(
+  int
+)
+"odoc_lexer.mll" 206 19128 19144 "odoc_lexer.mll" 206 19128 19173
+call(
+  stack
+)
+type(
+  char
+)
+"odoc_lexer.mll" 207 19177 19185 "odoc_lexer.mll" 207 19177 19202
+type(
+  char -> unit
+)
+ident(
+  int_ref ajout_char_string "odoc_lexer.mll" 27 1117 1121 "odoc_lexer.mll" 27 1117 1138
+)
+"odoc_lexer.mll" 207 19177 19203 "odoc_lexer.mll" 207 19177 19204
+type(
+  char
+)
+ident(
+  int_ref c "odoc_lexer.mll" 206 19128 19140 "odoc_lexer.mll" 206 19128 19141
+)
+"odoc_lexer.mll" 207 19177 19185 "odoc_lexer.mll" 207 19177 19204
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_lexer.mll" 208 19206 19214 "odoc_lexer.mll" 208 19206 19243
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 208 19206 19244 "odoc_lexer.mll" 208 19206 19246
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 208 19206 19247 "odoc_lexer.mll" 208 19206 19248
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 208 19206 19248 "odoc_lexer.mll" 208 19206 19277
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 208 19206 19247 "odoc_lexer.mll" 208 19206 19277
+type(
+  int
+)
+"odoc_lexer.mll" 208 19206 19278 "odoc_lexer.mll" 208 19206 19279
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 208 19206 19281 "odoc_lexer.mll" 208 19206 19294
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 208 19206 19295 "odoc_lexer.mll" 208 19206 19296
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 205 19088 19100 "odoc_lexer.mll" 205 19088 19101
+)
+"odoc_lexer.mll" 208 19206 19280 "odoc_lexer.mll" 208 19206 19297
+type(
+  int
+)
+"odoc_lexer.mll" 208 19206 19247 "odoc_lexer.mll" 208 19206 19297
+type(
+  int
+)
+"odoc_lexer.mll" 208 19206 19214 "odoc_lexer.mll" 208 19206 19297
+type(
+  unit
+)
+"odoc_lexer.mll" 209 19299 19307 "odoc_lexer.mll" 209 19299 19322
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref special_comment "odoc_lexer.ml" 386 17844 17848 "odoc_lexer.ml" 386 17844 17863
+)
+"odoc_lexer.mll" 209 19299 19323 "odoc_lexer.mll" 209 19299 19329
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.mll" 209 19299 19307 "odoc_lexer.mll" 209 19299 19329
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 208 19206 19214 "odoc_lexer.mll" 209 19299 19329
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 207 19177 19185 "odoc_lexer.mll" 209 19299 19329
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 206 19128 19136 "odoc_lexer.mll" 209 19299 19329
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 204 19080 19086 "odoc_lexer.mll" 210 19330 19337
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 439 19361 19365 "odoc_lexer.ml" 439 19361 19366
+type(
+  int
+)
+"odoc_lexer.mll" 215 19460 19472 "odoc_lexer.mll" 215 19460 19473
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 216 19497 19505 "odoc_lexer.mll" 225 19921 19957
+)
+"odoc_lexer.mll" 215 19460 19476 "odoc_lexer.mll" 215 19460 19490
+type(
+  unit -> string
+)
+ident(
+  int_ref lecture_string "odoc_lexer.mll" 32 1259 1263 "odoc_lexer.mll" 32 1259 1277
+)
+"odoc_lexer.mll" 215 19460 19491 "odoc_lexer.mll" 215 19460 19493
+type(
+  unit
+)
+"odoc_lexer.mll" 215 19460 19476 "odoc_lexer.mll" 215 19460 19493
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 216 19497 19505 "odoc_lexer.mll" 216 19497 19516
+type(
+  string ref
+)
+ident(
+  int_ref description "odoc_lexer.mll" 36 1445 1449 "odoc_lexer.mll" 36 1445 1460
+)
+"odoc_lexer.mll" 216 19497 19517 "odoc_lexer.mll" 216 19497 19519
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 216 19497 19520 "odoc_lexer.mll" 216 19497 19533
+type(
+  string -> string
+)
+ident(
+  int_ref remove_blanks "odoc_lexer.mll" 46 1681 1685 "odoc_lexer.mll" 46 1681 1698
+)
+"odoc_lexer.mll" 216 19497 19534 "odoc_lexer.mll" 216 19497 19535
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 215 19460 19472 "odoc_lexer.mll" 215 19460 19473
+)
+"odoc_lexer.mll" 216 19497 19520 "odoc_lexer.mll" 216 19497 19535
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 216 19497 19505 "odoc_lexer.mll" 216 19497 19535
+type(
+  unit
+)
+"odoc_lexer.mll" 217 19537 19545 "odoc_lexer.mll" 217 19537 19564
+type(
+  unit -> unit
+)
+ident(
+  int_ref reset_string_buffer "odoc_lexer.mll" 24 985 989 "odoc_lexer.mll" 24 985 1008
+)
+"odoc_lexer.mll" 217 19537 19565 "odoc_lexer.mll" 217 19537 19567
+type(
+  unit
+)
+"odoc_lexer.mll" 217 19537 19545 "odoc_lexer.mll" 217 19537 19567
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_lexer.mll" 218 19569 19581 "odoc_lexer.mll" 218 19569 19584
+type(
+  int
+)
+ident(
+  def len "odoc_lexer.mll" 219 19627 19635 "odoc_lexer.mll" 225 19921 19957
+)
+"odoc_lexer.mll" 218 19569 19587 "odoc_lexer.mll" 218 19569 19600
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 218 19569 19602 "odoc_lexer.mll" 218 19569 19615
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 218 19569 19616 "odoc_lexer.mll" 218 19569 19622
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.mll" 218 19569 19601 "odoc_lexer.mll" 218 19569 19623
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 218 19569 19587 "odoc_lexer.mll" 218 19569 19623
+type(
+  int
+)
+"odoc_lexer.mll" 219 19627 19635 "odoc_lexer.mll" 219 19627 19641
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.mll" 219 19627 19665 "odoc_lexer.mll" 219 19627 19671
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.mll" 219 19627 19665 "odoc_lexer.mll" 219 19627 19691
+type(
+  int
+)
+"odoc_lexer.mll" 219 19627 19692 "odoc_lexer.mll" 219 19627 19693
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"odoc_lexer.mll" 219 19627 19694 "odoc_lexer.mll" 219 19627 19697
+type(
+  int
+)
+ident(
+  int_ref len "odoc_lexer.mll" 218 19569 19581 "odoc_lexer.mll" 218 19569 19584
+)
+"odoc_lexer.mll" 219 19627 19665 "odoc_lexer.mll" 219 19627 19697
+type(
+  int
+)
+"odoc_lexer.mll" 219 19627 19635 "odoc_lexer.mll" 219 19627 19697
+type(
+  unit
+)
+"odoc_lexer.mll" 220 19699 19707 "odoc_lexer.mll" 220 19699 19713
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.mll" 221 19735 19747 "odoc_lexer.mll" 221 19735 19753
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.mll" 221 19735 19747 "odoc_lexer.mll" 221 19735 19771
+type(
+  Lexing.position
+)
+"odoc_lexer.mll" 222 19777 19800 "odoc_lexer.mll" 222 19777 19806
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.mll" 222 19777 19800 "odoc_lexer.mll" 222 19777 19824
+type(
+  Lexing.position
+)
+"odoc_lexer.mll" 222 19777 19800 "odoc_lexer.mll" 222 19777 19833
+type(
+  int
+)
+"odoc_lexer.mll" 222 19777 19834 "odoc_lexer.mll" 222 19777 19835
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"odoc_lexer.mll" 222 19777 19836 "odoc_lexer.mll" 222 19777 19839
+type(
+  int
+)
+ident(
+  int_ref len "odoc_lexer.mll" 218 19569 19581 "odoc_lexer.mll" 218 19569 19584
+)
+"odoc_lexer.mll" 222 19777 19800 "odoc_lexer.mll" 222 19777 19839
+type(
+  int
+)
+"odoc_lexer.mll" 221 19735 19745 "odoc_lexer.mll" 223 19840 19851
+type(
+  Lexing.position
+)
+"odoc_lexer.mll" 220 19699 19707 "odoc_lexer.mll" 223 19840 19851
+type(
+  unit
+)
+"odoc_lexer.mll" 225 19921 19929 "odoc_lexer.mll" 225 19921 19950
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref special_comment_part2 "odoc_lexer.ml" 471 20382 20386 "odoc_lexer.ml" 471 20382 20407
+)
+"odoc_lexer.mll" 225 19921 19951 "odoc_lexer.mll" 225 19921 19957
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.mll" 225 19921 19929 "odoc_lexer.mll" 225 19921 19957
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 220 19699 19707 "odoc_lexer.mll" 225 19921 19957
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 219 19627 19635 "odoc_lexer.mll" 225 19921 19957
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 218 19569 19577 "odoc_lexer.mll" 225 19921 19957
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 217 19537 19545 "odoc_lexer.mll" 225 19921 19957
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 216 19497 19505 "odoc_lexer.mll" 225 19921 19957
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 213 19393 19399 "odoc_lexer.mll" 226 19958 19965
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 457 19989 19993 "odoc_lexer.ml" 457 19989 19994
+type(
+  int
+)
+"odoc_lexer.mll" 230 20029 20041 "odoc_lexer.mll" 230 20029 20042
+type(
+  char
+)
+ident(
+  def c "odoc_lexer.mll" 231 20078 20086 "odoc_lexer.mll" 234 20196 20226
+)
+"odoc_lexer.mll" 230 20029 20046 "odoc_lexer.mll" 230 20029 20064
+type(
+  Lexing.lexbuf -> int -> char
+)
+ident(
+  ext_ref Lexing.lexeme_char
+)
+"odoc_lexer.mll" 230 20029 20065 "odoc_lexer.mll" 230 20029 20071
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.mll" 230 20029 20072 "odoc_lexer.mll" 230 20029 20073
+type(
+  int
+)
+"odoc_lexer.mll" 230 20029 20045 "odoc_lexer.mll" 230 20029 20074
+call(
+  stack
+)
+type(
+  char
+)
+"odoc_lexer.mll" 231 20078 20086 "odoc_lexer.mll" 231 20078 20103
+type(
+  char -> unit
+)
+ident(
+  int_ref ajout_char_string "odoc_lexer.mll" 27 1117 1121 "odoc_lexer.mll" 27 1117 1138
+)
+"odoc_lexer.mll" 231 20078 20104 "odoc_lexer.mll" 231 20078 20105
+type(
+  char
+)
+ident(
+  int_ref c "odoc_lexer.mll" 230 20029 20041 "odoc_lexer.mll" 230 20029 20042
+)
+"odoc_lexer.mll" 231 20078 20086 "odoc_lexer.mll" 231 20078 20105
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_lexer.mll" 232 20107 20118 "odoc_lexer.mll" 232 20107 20119
+type(
+  char
+)
+ident(
+  int_ref c "odoc_lexer.mll" 230 20029 20041 "odoc_lexer.mll" 230 20029 20042
+)
+"odoc_lexer.mll" 232 20107 20120 "odoc_lexer.mll" 232 20107 20121
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"odoc_lexer.mll" 232 20107 20122 "odoc_lexer.mll" 232 20107 20128
+type(
+  char
+)
+"odoc_lexer.mll" 232 20107 20118 "odoc_lexer.mll" 232 20107 20128
+type(
+  bool
+)
+"odoc_lexer.mll" 232 20107 20134 "odoc_lexer.mll" 232 20107 20138
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 232 20107 20139 "odoc_lexer.mll" 232 20107 20150
+type(
+  int ref
+)
+ident(
+  int_ref line_number "odoc_lexer.mll" 18 854 858 "odoc_lexer.mll" 18 854 869
+)
+"odoc_lexer.mll" 232 20107 20134 "odoc_lexer.mll" 232 20107 20150
+type(
+  unit
+)
+"odoc_lexer.mll" 232 20107 20115 "odoc_lexer.mll" 232 20107 20150
+type(
+  unit
+)
+"odoc_lexer.mll" 233 20152 20160 "odoc_lexer.mll" 233 20152 20164
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 233 20152 20165 "odoc_lexer.mll" 233 20152 20194
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 233 20152 20160 "odoc_lexer.mll" 233 20152 20194
+type(
+  unit
+)
+"odoc_lexer.mll" 234 20196 20204 "odoc_lexer.mll" 234 20196 20219
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref special_comment "odoc_lexer.ml" 386 17844 17848 "odoc_lexer.ml" 386 17844 17863
+)
+"odoc_lexer.mll" 234 20196 20220 "odoc_lexer.mll" 234 20196 20226
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.mll" 234 20196 20204 "odoc_lexer.mll" 234 20196 20226
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 233 20152 20160 "odoc_lexer.mll" 234 20196 20226
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 232 20107 20115 "odoc_lexer.mll" 234 20196 20226
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 231 20078 20086 "odoc_lexer.mll" 234 20196 20226
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 229 20021 20027 "odoc_lexer.mll" 235 20227 20234
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 468 20258 20262 "odoc_lexer.ml" 468 20258 20279
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_lexer.ml" 468 20258 20283 "odoc_lexer.ml" 469 20318 20380
+)
+"odoc_lexer.ml" 468 20258 20283 "odoc_lexer.ml" 468 20258 20289
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.ml" 468 20258 20283 "odoc_lexer.ml" 468 20258 20308
+type(
+  Lexing.lexbuf -> unit
+)
+"odoc_lexer.ml" 468 20258 20309 "odoc_lexer.ml" 468 20258 20315
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.ml" 468 20258 20283 "odoc_lexer.ml" 468 20258 20315
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_lexer.ml" 469 20318 20324 "odoc_lexer.ml" 469 20318 20355
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_special_comment_rec "odoc_lexer.ml" 388 17919 17923 "odoc_lexer.ml" 388 17919 17954
+)
+"odoc_lexer.ml" 469 20318 20356 "odoc_lexer.ml" 469 20318 20362
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 388 17919 17955 "odoc_lexer.ml" 388 17919 17961
+)
+"odoc_lexer.ml" 469 20318 20363 "odoc_lexer.ml" 469 20318 20380
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_lexer.ml" 468 20258 20262 "odoc_lexer.ml" 468 20258 20279
+)
+"odoc_lexer.ml" 469 20318 20324 "odoc_lexer.ml" 469 20318 20380
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 468 20258 20283 "odoc_lexer.ml" 469 20318 20380
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 389 17982 17984 "odoc_lexer.ml" 469 20318 20380
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 471 20382 20386 "odoc_lexer.ml" 471 20382 20407
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  def special_comment_part2 "odoc_lexer.ml" 290 15445 15445 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.ml" 471 20382 20408 "odoc_lexer.ml" 471 20382 20414
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_lexer.ml" 472 20417 20421 "odoc_lexer.ml" 472 20417 20468
+)
+"odoc_lexer.ml" 472 20417 20421 "odoc_lexer.ml" 472 20417 20458
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_special_comment_part2_rec "odoc_lexer.ml" 473 20469 20473 "odoc_lexer.ml" 473 20469 20510
+)
+"odoc_lexer.ml" 472 20417 20459 "odoc_lexer.ml" 472 20417 20465
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 471 20382 20408 "odoc_lexer.ml" 471 20382 20414
+)
+"odoc_lexer.ml" 472 20417 20466 "odoc_lexer.ml" 472 20417 20468
+type(
+  int
+)
+"odoc_lexer.ml" 472 20417 20421 "odoc_lexer.ml" 472 20417 20468
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 473 20469 20473 "odoc_lexer.ml" 473 20469 20510
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  def __ocaml_lex_special_comment_part2_rec "odoc_lexer.ml" 290 15445 15445 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.ml" 473 20469 20511 "odoc_lexer.ml" 473 20469 20517
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_lexer.ml" 473 20469 20518 "odoc_lexer.ml" 528 22088 22156
+)
+"odoc_lexer.ml" 473 20469 20518 "odoc_lexer.ml" 473 20469 20535
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_lexer.ml" 474 20538 20540 "odoc_lexer.ml" 528 22088 22156
+)
+"odoc_lexer.ml" 474 20538 20546 "odoc_lexer.ml" 474 20538 20559
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"odoc_lexer.ml" 474 20538 20560 "odoc_lexer.ml" 474 20538 20578
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "odoc_lexer.ml" 95 3022 3026 "odoc_lexer.ml" 95 3022 3044
+)
+"odoc_lexer.ml" 474 20538 20579 "odoc_lexer.ml" 474 20538 20596
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_lexer.ml" 473 20469 20518 "odoc_lexer.ml" 473 20469 20535
+)
+"odoc_lexer.ml" 474 20538 20597 "odoc_lexer.ml" 474 20538 20603
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 473 20469 20511 "odoc_lexer.ml" 473 20469 20517
+)
+"odoc_lexer.ml" 474 20538 20546 "odoc_lexer.ml" 474 20538 20603
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_lexer.ml" 475 20609 20617 "odoc_lexer.ml" 475 20609 20618
+type(
+  int
+)
+"odoc_lexer.mll" 240 20653 20665 "odoc_lexer.mll" 240 20653 20666
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 241 20693 20701 "odoc_lexer.mll" 263 21415 21426
+)
+"odoc_lexer.mll" 240 20653 20669 "odoc_lexer.mll" 240 20653 20682
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 240 20653 20683 "odoc_lexer.mll" 240 20653 20689
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 473 20469 20511 "odoc_lexer.ml" 473 20469 20517
+)
+"odoc_lexer.mll" 240 20653 20669 "odoc_lexer.mll" 240 20653 20689
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 241 20693 20701 "odoc_lexer.mll" 241 20693 20730
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 241 20693 20731 "odoc_lexer.mll" 241 20693 20733
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 241 20693 20734 "odoc_lexer.mll" 241 20693 20735
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 241 20693 20735 "odoc_lexer.mll" 241 20693 20764
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 241 20693 20734 "odoc_lexer.mll" 241 20693 20764
+type(
+  int
+)
+"odoc_lexer.mll" 241 20693 20765 "odoc_lexer.mll" 241 20693 20766
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 241 20693 20768 "odoc_lexer.mll" 241 20693 20781
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 241 20693 20782 "odoc_lexer.mll" 241 20693 20783
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 240 20653 20665 "odoc_lexer.mll" 240 20653 20666
+)
+"odoc_lexer.mll" 241 20693 20767 "odoc_lexer.mll" 241 20693 20784
+type(
+  int
+)
+"odoc_lexer.mll" 241 20693 20734 "odoc_lexer.mll" 241 20693 20784
+type(
+  int
+)
+"odoc_lexer.mll" 241 20693 20701 "odoc_lexer.mll" 241 20693 20784
+type(
+  unit
+)
+"odoc_lexer.mll" 242 20786 20797 "odoc_lexer.mll" 242 20786 20798
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 242 20786 20798 "odoc_lexer.mll" 242 20786 20812
+type(
+  int ref
+)
+ident(
+  int_ref comments_level "odoc_lexer.mll" 41 1536 1540 "odoc_lexer.mll" 41 1536 1554
+)
+"odoc_lexer.mll" 242 20786 20797 "odoc_lexer.mll" 242 20786 20812
+type(
+  int
+)
+"odoc_lexer.mll" 242 20786 20813 "odoc_lexer.mll" 242 20786 20814
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"odoc_lexer.mll" 242 20786 20815 "odoc_lexer.mll" 242 20786 20816
+type(
+  int
+)
+"odoc_lexer.mll" 242 20786 20797 "odoc_lexer.mll" 242 20786 20816
+type(
+  bool
+)
+"odoc_lexer.mll" 244 20880 20894 "odoc_lexer.mll" 244 20880 20898
+type(
+  string
+)
+ident(
+  def desc "odoc_lexer.mll" 250 21045 21055 "odoc_lexer.mll" 257 21246 21288
+)
+"odoc_lexer.mll" 245 20901 20916 "odoc_lexer.mll" 245 20901 20917
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 245 20901 20917 "odoc_lexer.mll" 245 20901 20941
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.remove_stars
+)
+"odoc_lexer.mll" 245 20901 20916 "odoc_lexer.mll" 245 20901 20941
+type(
+  bool
+)
+"odoc_lexer.mll" 246 20947 20961 "odoc_lexer.mll" 246 20947 20973
+type(
+  string -> string
+)
+ident(
+  int_ref remove_stars "odoc_lexer.mll" 89 2904 2908 "odoc_lexer.mll" 89 2904 2920
+)
+"odoc_lexer.mll" 246 20947 20974 "odoc_lexer.mll" 246 20947 20975
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 246 20947 20975 "odoc_lexer.mll" 246 20947 20986
+type(
+  string ref
+)
+ident(
+  int_ref description "odoc_lexer.mll" 36 1445 1449 "odoc_lexer.mll" 36 1445 1460
+)
+"odoc_lexer.mll" 246 20947 20974 "odoc_lexer.mll" 246 20947 20986
+type(
+  string
+)
+"odoc_lexer.mll" 246 20947 20961 "odoc_lexer.mll" 246 20947 20986
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 248 21005 21019 "odoc_lexer.mll" 248 21005 21020
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 248 21005 21020 "odoc_lexer.mll" 248 21005 21031
+type(
+  string ref
+)
+ident(
+  int_ref description "odoc_lexer.mll" 36 1445 1449 "odoc_lexer.mll" 36 1445 1460
+)
+"odoc_lexer.mll" 248 21005 21019 "odoc_lexer.mll" 248 21005 21031
+type(
+  string
+)
+"odoc_lexer.mll" 245 20901 20913 "odoc_lexer.mll" 248 21005 21031
+type(
+  string
+)
+"odoc_lexer.mll" 250 21045 21059 "odoc_lexer.mll" 250 21045 21065
+type(
+  string
+)
+ident(
+  def remain "odoc_lexer.mll" 251 21089 21099 "odoc_lexer.mll" 257 21246 21288
+)
+"odoc_lexer.mll" 250 21045 21068 "odoc_lexer.mll" 250 21045 21082
+type(
+  unit -> string
+)
+ident(
+  int_ref lecture_string "odoc_lexer.mll" 32 1259 1263 "odoc_lexer.mll" 32 1259 1277
+)
+"odoc_lexer.mll" 250 21045 21083 "odoc_lexer.mll" 250 21045 21085
+type(
+  unit
+)
+"odoc_lexer.mll" 250 21045 21068 "odoc_lexer.mll" 250 21045 21085
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 251 21089 21103 "odoc_lexer.mll" 251 21089 21110
+type(
+  string
+)
+ident(
+  def remain2 "odoc_lexer.mll" 257 21246 21256 "odoc_lexer.mll" 257 21246 21288
+)
+"odoc_lexer.mll" 252 21113 21128 "odoc_lexer.mll" 252 21113 21129
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 252 21113 21129 "odoc_lexer.mll" 252 21113 21153
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.remove_stars
+)
+"odoc_lexer.mll" 252 21113 21128 "odoc_lexer.mll" 252 21113 21153
+type(
+  bool
+)
+"odoc_lexer.mll" 253 21159 21173 "odoc_lexer.mll" 253 21159 21185
+type(
+  string -> string
+)
+ident(
+  int_ref remove_stars "odoc_lexer.mll" 89 2904 2908 "odoc_lexer.mll" 89 2904 2920
+)
+"odoc_lexer.mll" 253 21159 21186 "odoc_lexer.mll" 253 21159 21192
+type(
+  string
+)
+ident(
+  int_ref remain "odoc_lexer.mll" 250 21045 21059 "odoc_lexer.mll" 250 21045 21065
+)
+"odoc_lexer.mll" 253 21159 21173 "odoc_lexer.mll" 253 21159 21192
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 255 21211 21226 "odoc_lexer.mll" 255 21211 21232
+type(
+  string
+)
+ident(
+  int_ref remain "odoc_lexer.mll" 250 21045 21059 "odoc_lexer.mll" 250 21045 21065
+)
+"odoc_lexer.mll" 252 21113 21125 "odoc_lexer.mll" 255 21211 21232
+type(
+  string
+)
+"odoc_lexer.mll" 257 21246 21269 "odoc_lexer.mll" 257 21246 21273
+type(
+  string
+)
+ident(
+  int_ref desc "odoc_lexer.mll" 244 20880 20894 "odoc_lexer.mll" 244 20880 20898
+)
+"odoc_lexer.mll" 257 21246 21280 "odoc_lexer.mll" 257 21246 21287
+type(
+  string
+)
+ident(
+  int_ref remain2 "odoc_lexer.mll" 251 21089 21103 "odoc_lexer.mll" 251 21089 21110
+)
+"odoc_lexer.mll" 257 21246 21275 "odoc_lexer.mll" 257 21246 21287
+type(
+  string option
+)
+"odoc_lexer.mll" 257 21246 21268 "odoc_lexer.mll" 257 21246 21288
+type(
+  string * string option
+)
+"odoc_lexer.mll" 257 21246 21256 "odoc_lexer.mll" 257 21246 21288
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 251 21089 21099 "odoc_lexer.mll" 257 21246 21288
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 250 21045 21055 "odoc_lexer.mll" 257 21246 21288
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 244 20880 20890 "odoc_lexer.mll" 257 21246 21288
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 260 21314 21325 "odoc_lexer.mll" 260 21314 21337
+type(
+  string -> unit
+)
+ident(
+  int_ref ajout_string "odoc_lexer.mll" 30 1207 1211 "odoc_lexer.mll" 30 1207 1223
+)
+"odoc_lexer.mll" 260 21314 21338 "odoc_lexer.mll" 260 21314 21339
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 240 20653 20665 "odoc_lexer.mll" 240 20653 20666
+)
+"odoc_lexer.mll" 260 21314 21325 "odoc_lexer.mll" 260 21314 21339
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_lexer.mll" 261 21342 21353 "odoc_lexer.mll" 261 21342 21357
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.decr
+)
+"odoc_lexer.mll" 261 21342 21358 "odoc_lexer.mll" 261 21342 21372
+type(
+  int ref
+)
+ident(
+  int_ref comments_level "odoc_lexer.mll" 41 1536 1540 "odoc_lexer.mll" 41 1536 1554
+)
+"odoc_lexer.mll" 261 21342 21353 "odoc_lexer.mll" 261 21342 21372
+type(
+  unit
+)
+"odoc_lexer.mll" 262 21375 21386 "odoc_lexer.mll" 262 21375 21407
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref special_comment_part2 "odoc_lexer.ml" 471 20382 20386 "odoc_lexer.ml" 471 20382 20407
+)
+"odoc_lexer.mll" 262 21375 21408 "odoc_lexer.mll" 262 21375 21414
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 473 20469 20511 "odoc_lexer.ml" 473 20469 20517
+)
+"odoc_lexer.mll" 262 21375 21386 "odoc_lexer.mll" 262 21375 21414
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 261 21342 21353 "odoc_lexer.mll" 262 21375 21414
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 259 21302 21312 "odoc_lexer.mll" 263 21415 21426
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 242 20786 20794 "odoc_lexer.mll" 263 21415 21426
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 241 20693 20701 "odoc_lexer.mll" 263 21415 21426
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 239 20645 20651 "odoc_lexer.mll" 264 21427 21434
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 505 21458 21462 "odoc_lexer.ml" 505 21458 21463
+type(
+  int
+)
+"odoc_lexer.mll" 268 21498 21510 "odoc_lexer.mll" 268 21498 21511
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 269 21538 21546 "odoc_lexer.mll" 272 21685 21721
+)
+"odoc_lexer.mll" 268 21498 21514 "odoc_lexer.mll" 268 21498 21527
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 268 21498 21528 "odoc_lexer.mll" 268 21498 21534
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 473 20469 20511 "odoc_lexer.ml" 473 20469 20517
+)
+"odoc_lexer.mll" 268 21498 21514 "odoc_lexer.mll" 268 21498 21534
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 269 21538 21546 "odoc_lexer.mll" 269 21538 21575
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 269 21538 21576 "odoc_lexer.mll" 269 21538 21578
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 269 21538 21579 "odoc_lexer.mll" 269 21538 21580
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 269 21538 21580 "odoc_lexer.mll" 269 21538 21609
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 269 21538 21579 "odoc_lexer.mll" 269 21538 21609
+type(
+  int
+)
+"odoc_lexer.mll" 269 21538 21610 "odoc_lexer.mll" 269 21538 21611
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 269 21538 21613 "odoc_lexer.mll" 269 21538 21626
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 269 21538 21627 "odoc_lexer.mll" 269 21538 21628
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 268 21498 21510 "odoc_lexer.mll" 268 21498 21511
+)
+"odoc_lexer.mll" 269 21538 21612 "odoc_lexer.mll" 269 21538 21629
+type(
+  int
+)
+"odoc_lexer.mll" 269 21538 21579 "odoc_lexer.mll" 269 21538 21629
+type(
+  int
+)
+"odoc_lexer.mll" 269 21538 21546 "odoc_lexer.mll" 269 21538 21629
+type(
+  unit
+)
+"odoc_lexer.mll" 270 21631 21639 "odoc_lexer.mll" 270 21631 21651
+type(
+  string -> unit
+)
+ident(
+  int_ref ajout_string "odoc_lexer.mll" 30 1207 1211 "odoc_lexer.mll" 30 1207 1223
+)
+"odoc_lexer.mll" 270 21631 21652 "odoc_lexer.mll" 270 21631 21653
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 268 21498 21510 "odoc_lexer.mll" 268 21498 21511
+)
+"odoc_lexer.mll" 270 21631 21639 "odoc_lexer.mll" 270 21631 21653
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_lexer.mll" 271 21655 21663 "odoc_lexer.mll" 271 21655 21667
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 271 21655 21668 "odoc_lexer.mll" 271 21655 21682
+type(
+  int ref
+)
+ident(
+  int_ref comments_level "odoc_lexer.mll" 41 1536 1540 "odoc_lexer.mll" 41 1536 1554
+)
+"odoc_lexer.mll" 271 21655 21663 "odoc_lexer.mll" 271 21655 21682
+type(
+  unit
+)
+"odoc_lexer.mll" 272 21685 21693 "odoc_lexer.mll" 272 21685 21714
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref special_comment_part2 "odoc_lexer.ml" 471 20382 20386 "odoc_lexer.ml" 471 20382 20407
+)
+"odoc_lexer.mll" 272 21685 21715 "odoc_lexer.mll" 272 21685 21721
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 473 20469 20511 "odoc_lexer.ml" 473 20469 20517
+)
+"odoc_lexer.mll" 272 21685 21693 "odoc_lexer.mll" 272 21685 21721
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 271 21655 21663 "odoc_lexer.mll" 272 21685 21721
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 270 21631 21639 "odoc_lexer.mll" 272 21685 21721
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 269 21538 21546 "odoc_lexer.mll" 272 21685 21721
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 267 21490 21496 "odoc_lexer.mll" 273 21722 21729
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 516 21753 21757 "odoc_lexer.ml" 516 21753 21758
+type(
+  int
+)
+"odoc_lexer.mll" 277 21793 21805 "odoc_lexer.mll" 277 21793 21806
+type(
+  char
+)
+ident(
+  def c "odoc_lexer.mll" 278 21842 21850 "odoc_lexer.mll" 281 21960 21996
+)
+"odoc_lexer.mll" 277 21793 21810 "odoc_lexer.mll" 277 21793 21828
+type(
+  Lexing.lexbuf -> int -> char
+)
+ident(
+  ext_ref Lexing.lexeme_char
+)
+"odoc_lexer.mll" 277 21793 21829 "odoc_lexer.mll" 277 21793 21835
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 473 20469 20511 "odoc_lexer.ml" 473 20469 20517
+)
+"odoc_lexer.mll" 277 21793 21836 "odoc_lexer.mll" 277 21793 21837
+type(
+  int
+)
+"odoc_lexer.mll" 277 21793 21809 "odoc_lexer.mll" 277 21793 21838
+call(
+  stack
+)
+type(
+  char
+)
+"odoc_lexer.mll" 278 21842 21850 "odoc_lexer.mll" 278 21842 21867
+type(
+  char -> unit
+)
+ident(
+  int_ref ajout_char_string "odoc_lexer.mll" 27 1117 1121 "odoc_lexer.mll" 27 1117 1138
+)
+"odoc_lexer.mll" 278 21842 21868 "odoc_lexer.mll" 278 21842 21869
+type(
+  char
+)
+ident(
+  int_ref c "odoc_lexer.mll" 277 21793 21805 "odoc_lexer.mll" 277 21793 21806
+)
+"odoc_lexer.mll" 278 21842 21850 "odoc_lexer.mll" 278 21842 21869
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_lexer.mll" 279 21871 21882 "odoc_lexer.mll" 279 21871 21883
+type(
+  char
+)
+ident(
+  int_ref c "odoc_lexer.mll" 277 21793 21805 "odoc_lexer.mll" 277 21793 21806
+)
+"odoc_lexer.mll" 279 21871 21884 "odoc_lexer.mll" 279 21871 21885
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"odoc_lexer.mll" 279 21871 21886 "odoc_lexer.mll" 279 21871 21892
+type(
+  char
+)
+"odoc_lexer.mll" 279 21871 21882 "odoc_lexer.mll" 279 21871 21892
+type(
+  bool
+)
+"odoc_lexer.mll" 279 21871 21898 "odoc_lexer.mll" 279 21871 21902
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 279 21871 21903 "odoc_lexer.mll" 279 21871 21914
+type(
+  int ref
+)
+ident(
+  int_ref line_number "odoc_lexer.mll" 18 854 858 "odoc_lexer.mll" 18 854 869
+)
+"odoc_lexer.mll" 279 21871 21898 "odoc_lexer.mll" 279 21871 21914
+type(
+  unit
+)
+"odoc_lexer.mll" 279 21871 21879 "odoc_lexer.mll" 279 21871 21914
+type(
+  unit
+)
+"odoc_lexer.mll" 280 21916 21924 "odoc_lexer.mll" 280 21916 21928
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 280 21916 21929 "odoc_lexer.mll" 280 21916 21958
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 280 21916 21924 "odoc_lexer.mll" 280 21916 21958
+type(
+  unit
+)
+"odoc_lexer.mll" 281 21960 21968 "odoc_lexer.mll" 281 21960 21989
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref special_comment_part2 "odoc_lexer.ml" 471 20382 20386 "odoc_lexer.ml" 471 20382 20407
+)
+"odoc_lexer.mll" 281 21960 21990 "odoc_lexer.mll" 281 21960 21996
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 473 20469 20511 "odoc_lexer.ml" 473 20469 20517
+)
+"odoc_lexer.mll" 281 21960 21968 "odoc_lexer.mll" 281 21960 21996
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 280 21916 21924 "odoc_lexer.mll" 281 21960 21996
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 279 21871 21879 "odoc_lexer.mll" 281 21960 21996
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 278 21842 21850 "odoc_lexer.mll" 281 21960 21996
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 276 21785 21791 "odoc_lexer.mll" 282 21997 22004
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 527 22028 22032 "odoc_lexer.ml" 527 22028 22049
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_lexer.ml" 527 22028 22053 "odoc_lexer.ml" 528 22088 22156
+)
+"odoc_lexer.ml" 527 22028 22053 "odoc_lexer.ml" 527 22028 22059
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 473 20469 20511 "odoc_lexer.ml" 473 20469 20517
+)
+"odoc_lexer.ml" 527 22028 22053 "odoc_lexer.ml" 527 22028 22078
+type(
+  Lexing.lexbuf -> unit
+)
+"odoc_lexer.ml" 527 22028 22079 "odoc_lexer.ml" 527 22028 22085
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 473 20469 20511 "odoc_lexer.ml" 473 20469 20517
+)
+"odoc_lexer.ml" 527 22028 22053 "odoc_lexer.ml" 527 22028 22085
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_lexer.ml" 528 22088 22094 "odoc_lexer.ml" 528 22088 22131
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_special_comment_part2_rec "odoc_lexer.ml" 473 20469 20473 "odoc_lexer.ml" 473 20469 20510
+)
+"odoc_lexer.ml" 528 22088 22132 "odoc_lexer.ml" 528 22088 22138
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 473 20469 20511 "odoc_lexer.ml" 473 20469 20517
+)
+"odoc_lexer.ml" 528 22088 22139 "odoc_lexer.ml" 528 22088 22156
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_lexer.ml" 527 22028 22032 "odoc_lexer.ml" 527 22028 22049
+)
+"odoc_lexer.ml" 528 22088 22094 "odoc_lexer.ml" 528 22088 22156
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 527 22028 22053 "odoc_lexer.ml" 528 22088 22156
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 474 20538 20540 "odoc_lexer.ml" 528 22088 22156
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 530 22158 22162 "odoc_lexer.ml" 530 22158 22170
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  def elements "odoc_lexer.ml" 290 15445 15445 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.ml" 530 22158 22171 "odoc_lexer.ml" 530 22158 22177
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_lexer.ml" 531 22180 22184 "odoc_lexer.ml" 531 22180 22218
+)
+"odoc_lexer.ml" 531 22180 22184 "odoc_lexer.ml" 531 22180 22208
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_elements_rec "odoc_lexer.ml" 532 22219 22223 "odoc_lexer.ml" 532 22219 22247
+)
+"odoc_lexer.ml" 531 22180 22209 "odoc_lexer.ml" 531 22180 22215
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 530 22158 22171 "odoc_lexer.ml" 530 22158 22177
+)
+"odoc_lexer.ml" 531 22180 22216 "odoc_lexer.ml" 531 22180 22218
+type(
+  int
+)
+"odoc_lexer.ml" 531 22180 22184 "odoc_lexer.ml" 531 22180 22218
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 532 22219 22223 "odoc_lexer.ml" 532 22219 22247
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  def __ocaml_lex_elements_rec "odoc_lexer.ml" 290 15445 15445 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.ml" 532 22219 22248 "odoc_lexer.ml" 532 22219 22254
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_lexer.ml" 532 22219 22255 "odoc_lexer.ml" 619 24442 24497
+)
+"odoc_lexer.ml" 532 22219 22255 "odoc_lexer.ml" 532 22219 22272
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_lexer.ml" 533 22275 22277 "odoc_lexer.ml" 619 24442 24497
+)
+"odoc_lexer.ml" 533 22275 22283 "odoc_lexer.ml" 533 22275 22296
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"odoc_lexer.ml" 533 22275 22297 "odoc_lexer.ml" 533 22275 22315
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "odoc_lexer.ml" 95 3022 3026 "odoc_lexer.ml" 95 3022 3044
+)
+"odoc_lexer.ml" 533 22275 22316 "odoc_lexer.ml" 533 22275 22333
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_lexer.ml" 532 22219 22255 "odoc_lexer.ml" 532 22219 22272
+)
+"odoc_lexer.ml" 533 22275 22334 "odoc_lexer.ml" 533 22275 22340
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 532 22219 22248 "odoc_lexer.ml" 532 22219 22254
+)
+"odoc_lexer.ml" 533 22275 22283 "odoc_lexer.ml" 533 22275 22340
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_lexer.ml" 534 22346 22354 "odoc_lexer.ml" 534 22346 22355
+type(
+  int
+)
+"odoc_lexer.mll" 287 22390 22398 "odoc_lexer.mll" 287 22390 22427
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 287 22390 22428 "odoc_lexer.mll" 287 22390 22430
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 287 22390 22431 "odoc_lexer.mll" 287 22390 22432
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 287 22390 22432 "odoc_lexer.mll" 287 22390 22461
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 287 22390 22431 "odoc_lexer.mll" 287 22390 22461
+type(
+  int
+)
+"odoc_lexer.mll" 287 22390 22462 "odoc_lexer.mll" 287 22390 22463
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 287 22390 22465 "odoc_lexer.mll" 287 22390 22478
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 287 22390 22480 "odoc_lexer.mll" 287 22390 22493
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 287 22390 22494 "odoc_lexer.mll" 287 22390 22500
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 532 22219 22248 "odoc_lexer.ml" 532 22219 22254
+)
+"odoc_lexer.mll" 287 22390 22479 "odoc_lexer.mll" 287 22390 22501
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 287 22390 22464 "odoc_lexer.mll" 287 22390 22502
+type(
+  int
+)
+"odoc_lexer.mll" 287 22390 22431 "odoc_lexer.mll" 287 22390 22502
+type(
+  int
+)
+"odoc_lexer.mll" 287 22390 22398 "odoc_lexer.mll" 287 22390 22502
+type(
+  unit
+)
+"odoc_lexer.mll" 288 22504 22512 "odoc_lexer.mll" 288 22504 22520
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref elements "odoc_lexer.ml" 530 22158 22162 "odoc_lexer.ml" 530 22158 22170
+)
+"odoc_lexer.mll" 288 22504 22521 "odoc_lexer.mll" 288 22504 22527
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 532 22219 22248 "odoc_lexer.ml" 532 22219 22254
+)
+"odoc_lexer.mll" 288 22504 22512 "odoc_lexer.mll" 288 22504 22527
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 286 22382 22388 "odoc_lexer.mll" 289 22528 22535
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 542 22559 22563 "odoc_lexer.ml" 542 22559 22564
+type(
+  int
+)
+"odoc_lexer.mll" 292 22591 22599 "odoc_lexer.mll" 292 22591 22603
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 292 22591 22604 "odoc_lexer.mll" 292 22591 22615
+type(
+  int ref
+)
+ident(
+  int_ref line_number "odoc_lexer.mll" 18 854 858 "odoc_lexer.mll" 18 854 869
+)
+"odoc_lexer.mll" 292 22591 22599 "odoc_lexer.mll" 292 22591 22615
+type(
+  unit
+)
+"odoc_lexer.mll" 293 22617 22625 "odoc_lexer.mll" 293 22617 22629
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 293 22617 22630 "odoc_lexer.mll" 293 22617 22659
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 293 22617 22625 "odoc_lexer.mll" 293 22617 22659
+type(
+  unit
+)
+"odoc_lexer.mll" 295 22691 22699 "odoc_lexer.mll" 295 22691 22707
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref elements "odoc_lexer.ml" 530 22158 22162 "odoc_lexer.ml" 530 22158 22170
+)
+"odoc_lexer.mll" 295 22691 22708 "odoc_lexer.mll" 295 22691 22714
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 532 22219 22248 "odoc_lexer.ml" 532 22219 22254
+)
+"odoc_lexer.mll" 295 22691 22699 "odoc_lexer.mll" 295 22691 22714
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 293 22617 22625 "odoc_lexer.mll" 295 22691 22714
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 292 22591 22597 "odoc_lexer.mll" 295 22691 22716
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 550 22740 22744 "odoc_lexer.ml" 550 22740 22745
+type(
+  int
+)
+"odoc_lexer.mll" 298 22780 22788 "odoc_lexer.mll" 298 22780 22793
+type(
+  exn -> Odoc_parser.token
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"odoc_lexer.mll" 298 22780 22803 "odoc_lexer.mll" 298 22780 22840
+type(
+  string
+)
+ident(
+  ext_ref Odoc_messages.should_escape_at_sign
+)
+"odoc_lexer.mll" 298 22780 22794 "odoc_lexer.mll" 298 22780 22841
+type(
+  exn
+)
+"odoc_lexer.mll" 297 22772 22778 "odoc_lexer.mll" 299 22842 22849
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 557 22873 22877 "odoc_lexer.ml" 557 22873 22878
+type(
+  int
+)
+"odoc_lexer.mll" 303 22913 22925 "odoc_lexer.mll" 303 22913 22926
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 304 22953 22961 "odoc_lexer.mll" 330 23706 23731
+)
+"odoc_lexer.mll" 303 22913 22929 "odoc_lexer.mll" 303 22913 22942
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 303 22913 22943 "odoc_lexer.mll" 303 22913 22949
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 532 22219 22248 "odoc_lexer.ml" 532 22219 22254
+)
+"odoc_lexer.mll" 303 22913 22929 "odoc_lexer.mll" 303 22913 22949
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 304 22953 22961 "odoc_lexer.mll" 304 22953 22990
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 304 22953 22991 "odoc_lexer.mll" 304 22953 22993
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 304 22953 22994 "odoc_lexer.mll" 304 22953 22995
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 304 22953 22995 "odoc_lexer.mll" 304 22953 23024
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 304 22953 22994 "odoc_lexer.mll" 304 22953 23024
+type(
+  int
+)
+"odoc_lexer.mll" 304 22953 23025 "odoc_lexer.mll" 304 22953 23026
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 304 22953 23028 "odoc_lexer.mll" 304 22953 23041
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 304 22953 23042 "odoc_lexer.mll" 304 22953 23043
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 303 22913 22925 "odoc_lexer.mll" 303 22913 22926
+)
+"odoc_lexer.mll" 304 22953 23027 "odoc_lexer.mll" 304 22953 23044
+type(
+  int
+)
+"odoc_lexer.mll" 304 22953 22994 "odoc_lexer.mll" 304 22953 23044
+type(
+  int
+)
+"odoc_lexer.mll" 304 22953 22961 "odoc_lexer.mll" 304 22953 23044
+type(
+  unit
+)
+"odoc_lexer.mll" 305 23046 23058 "odoc_lexer.mll" 305 23046 23060
+type(
+  string
+)
+ident(
+  def s2 "odoc_lexer.mll" 307 23135 23143 "odoc_lexer.mll" 330 23706 23731
+)
+"odoc_lexer.mll" 305 23046 23063 "odoc_lexer.mll" 305 23046 23073
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"odoc_lexer.mll" 305 23046 23074 "odoc_lexer.mll" 305 23046 23075
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 303 22913 22925 "odoc_lexer.mll" 303 22913 22926
+)
+"odoc_lexer.mll" 305 23046 23076 "odoc_lexer.mll" 305 23046 23077
+type(
+  int
+)
+"odoc_lexer.mll" 305 23046 23080 "odoc_lexer.mll" 305 23046 23093
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 305 23046 23094 "odoc_lexer.mll" 305 23046 23095
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 303 22913 22925 "odoc_lexer.mll" 303 22913 22926
+)
+"odoc_lexer.mll" 305 23046 23079 "odoc_lexer.mll" 305 23046 23096
+type(
+  int
+)
+"odoc_lexer.mll" 305 23046 23097 "odoc_lexer.mll" 305 23046 23098
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"odoc_lexer.mll" 305 23046 23099 "odoc_lexer.mll" 305 23046 23100
+type(
+  int
+)
+"odoc_lexer.mll" 305 23046 23078 "odoc_lexer.mll" 305 23046 23101
+type(
+  int
+)
+"odoc_lexer.mll" 305 23046 23063 "odoc_lexer.mll" 305 23046 23101
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 307 23135 23149 "odoc_lexer.mll" 307 23135 23151
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_lexer.mll" 305 23046 23058 "odoc_lexer.mll" 305 23046 23060
+)
+"odoc_lexer.mll" 308 23157 23167 "odoc_lexer.mll" 308 23157 23174
+type(
+  string
+)
+"odoc_lexer.mll" 309 23178 23190 "odoc_lexer.mll" 309 23178 23197
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 310 23198 23209 "odoc_lexer.mll" 310 23198 23217
+type(
+  string
+)
+"odoc_lexer.mll" 311 23221 23233 "odoc_lexer.mll" 311 23221 23241
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 312 23242 23253 "odoc_lexer.mll" 312 23242 23262
+type(
+  string
+)
+"odoc_lexer.mll" 313 23266 23279 "odoc_lexer.mll" 313 23266 23288
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 314 23289 23300 "odoc_lexer.mll" 314 23289 23305
+type(
+  string
+)
+"odoc_lexer.mll" 315 23309 23322 "odoc_lexer.mll" 315 23309 23327
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 316 23328 23339 "odoc_lexer.mll" 316 23328 23346
+type(
+  string
+)
+"odoc_lexer.mll" 317 23350 23363 "odoc_lexer.mll" 317 23350 23370
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 318 23371 23382 "odoc_lexer.mll" 318 23371 23390
+type(
+  string
+)
+"odoc_lexer.mll" 319 23394 23407 "odoc_lexer.mll" 319 23394 23415
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 320 23416 23427 "odoc_lexer.mll" 320 23416 23439
+type(
+  string
+)
+"odoc_lexer.mll" 321 23443 23456 "odoc_lexer.mll" 321 23443 23468
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 322 23469 23480 "odoc_lexer.mll" 322 23469 23487
+type(
+  string
+)
+"odoc_lexer.mll" 323 23491 23504 "odoc_lexer.mll" 323 23491 23512
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 324 23513 23524 "odoc_lexer.mll" 324 23513 23532
+type(
+  string
+)
+"odoc_lexer.mll" 325 23536 23549 "odoc_lexer.mll" 325 23536 23557
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 326 23558 23569 "odoc_lexer.mll" 326 23558 23570
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 327 23574 23587 "odoc_lexer.mll" 330 23706 23731
+)
+"odoc_lexer.mll" 327 23574 23590 "odoc_lexer.mll" 327 23574 23591
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 327 23574 23591 "odoc_lexer.mll" 327 23574 23617
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.no_custom_tags
+)
+"odoc_lexer.mll" 327 23574 23590 "odoc_lexer.mll" 327 23574 23617
+type(
+  bool
+)
+"odoc_lexer.mll" 328 23623 23638 "odoc_lexer.mll" 328 23623 23643
+type(
+  exn -> Odoc_parser.token
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"odoc_lexer.mll" 328 23623 23654 "odoc_lexer.mll" 328 23623 23683
+type(
+  string -> string
+)
+ident(
+  ext_ref Odoc_messages.not_a_valid_tag
+)
+"odoc_lexer.mll" 328 23623 23684 "odoc_lexer.mll" 328 23623 23685
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 326 23558 23569 "odoc_lexer.mll" 326 23558 23570
+)
+"odoc_lexer.mll" 328 23623 23653 "odoc_lexer.mll" 328 23623 23686
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 328 23623 23644 "odoc_lexer.mll" 328 23623 23687
+type(
+  exn
+)
+"odoc_lexer.mll" 328 23623 23638 "odoc_lexer.mll" 328 23623 23687
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 330 23706 23730 "odoc_lexer.mll" 330 23706 23731
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 326 23558 23569 "odoc_lexer.mll" 326 23558 23570
+)
+"odoc_lexer.mll" 330 23706 23721 "odoc_lexer.mll" 330 23706 23731
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 327 23574 23587 "odoc_lexer.mll" 330 23706 23731
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 307 23135 23143 "odoc_lexer.mll" 330 23706 23731
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 305 23046 23054 "odoc_lexer.mll" 330 23706 23731
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 304 22953 22961 "odoc_lexer.mll" 330 23706 23731
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 302 22905 22911 "odoc_lexer.mll" 331 23732 23739
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 591 23763 23767 "odoc_lexer.ml" 591 23763 23768
+type(
+  int
+)
+"odoc_lexer.mll" 335 23803 23811 "odoc_lexer.mll" 335 23803 23840
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 335 23803 23841 "odoc_lexer.mll" 335 23803 23843
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 335 23803 23844 "odoc_lexer.mll" 335 23803 23845
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 335 23803 23845 "odoc_lexer.mll" 335 23803 23874
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 335 23803 23844 "odoc_lexer.mll" 335 23803 23874
+type(
+  int
+)
+"odoc_lexer.mll" 335 23803 23875 "odoc_lexer.mll" 335 23803 23876
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 335 23803 23878 "odoc_lexer.mll" 335 23803 23891
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 335 23803 23893 "odoc_lexer.mll" 335 23803 23906
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 335 23803 23907 "odoc_lexer.mll" 335 23803 23913
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 532 22219 22248 "odoc_lexer.ml" 532 22219 22254
+)
+"odoc_lexer.mll" 335 23803 23892 "odoc_lexer.mll" 335 23803 23914
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 335 23803 23877 "odoc_lexer.mll" 335 23803 23915
+type(
+  int
+)
+"odoc_lexer.mll" 335 23803 23844 "odoc_lexer.mll" 335 23803 23915
+type(
+  int
+)
+"odoc_lexer.mll" 335 23803 23811 "odoc_lexer.mll" 335 23803 23915
+type(
+  unit
+)
+"odoc_lexer.mll" 336 23917 23929 "odoc_lexer.mll" 336 23917 23930
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 337 23957 23965 "odoc_lexer.mll" 340 24092 24106
+)
+"odoc_lexer.mll" 336 23917 23933 "odoc_lexer.mll" 336 23917 23946
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 336 23917 23947 "odoc_lexer.mll" 336 23917 23953
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 532 22219 22248 "odoc_lexer.ml" 532 22219 22254
+)
+"odoc_lexer.mll" 336 23917 23933 "odoc_lexer.mll" 336 23917 23953
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 337 23957 23969 "odoc_lexer.mll" 337 23957 23970
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 338 24027 24035 "odoc_lexer.mll" 340 24092 24106
+)
+"odoc_lexer.mll" 337 23957 23973 "odoc_lexer.mll" 337 23957 23991
+type(
+  Str.regexp -> string -> string -> string
+)
+ident(
+  ext_ref Str.global_replace
+)
+"odoc_lexer.mll" 337 23957 23993 "odoc_lexer.mll" 337 23957 24010
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp_string
+)
+"odoc_lexer.mll" 337 23957 24011 "odoc_lexer.mll" 337 23957 24016
+type(
+  string
+)
+"odoc_lexer.mll" 337 23957 23992 "odoc_lexer.mll" 337 23957 24017
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"odoc_lexer.mll" 337 23957 24018 "odoc_lexer.mll" 337 23957 24021
+type(
+  string
+)
+"odoc_lexer.mll" 337 23957 24022 "odoc_lexer.mll" 337 23957 24023
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 336 23917 23929 "odoc_lexer.mll" 336 23917 23930
+)
+"odoc_lexer.mll" 337 23957 23973 "odoc_lexer.mll" 337 23957 24023
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 338 24027 24039 "odoc_lexer.mll" 338 24027 24040
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 340 24092 24100 "odoc_lexer.mll" 340 24092 24106
+)
+"odoc_lexer.mll" 338 24027 24043 "odoc_lexer.mll" 338 24027 24056
+type(
+  string -> string
+)
+ident(
+  int_ref remove_blanks "odoc_lexer.mll" 46 1681 1685 "odoc_lexer.mll" 46 1681 1698
+)
+"odoc_lexer.mll" 338 24027 24057 "odoc_lexer.mll" 338 24027 24058
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 337 23957 23969 "odoc_lexer.mll" 337 23957 23970
+)
+"odoc_lexer.mll" 338 24027 24043 "odoc_lexer.mll" 338 24027 24058
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 340 24092 24105 "odoc_lexer.mll" 340 24092 24106
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 338 24027 24039 "odoc_lexer.mll" 338 24027 24040
+)
+"odoc_lexer.mll" 340 24092 24100 "odoc_lexer.mll" 340 24092 24106
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 338 24027 24035 "odoc_lexer.mll" 340 24092 24106
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 337 23957 23965 "odoc_lexer.mll" 340 24092 24106
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 336 23917 23925 "odoc_lexer.mll" 340 24092 24106
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 334 23795 23801 "odoc_lexer.mll" 341 24107 24114
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 603 24138 24142 "odoc_lexer.ml" 603 24138 24143
+type(
+  int
+)
+"odoc_lexer.mll" 343 24170 24176 "odoc_lexer.mll" 345 24190 24197
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 610 24221 24225 "odoc_lexer.ml" 610 24221 24226
+type(
+  int
+)
+"odoc_lexer.mll" 347 24261 24273 "odoc_lexer.mll" 347 24261 24274
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 348 24301 24309 "odoc_lexer.mll" 348 24301 24350
+)
+"odoc_lexer.mll" 347 24261 24277 "odoc_lexer.mll" 347 24261 24290
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 347 24261 24291 "odoc_lexer.mll" 347 24261 24297
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 532 22219 22248 "odoc_lexer.ml" 532 22219 22254
+)
+"odoc_lexer.mll" 347 24261 24277 "odoc_lexer.mll" 347 24261 24297
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 348 24301 24309 "odoc_lexer.mll" 348 24301 24317
+type(
+  string -> Odoc_parser.token
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"odoc_lexer.mll" 348 24301 24319 "odoc_lexer.mll" 348 24301 24343
+type(
+  string
+)
+"odoc_lexer.mll" 348 24301 24343 "odoc_lexer.mll" 348 24301 24344
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_lexer.mll" 348 24301 24344 "odoc_lexer.mll" 348 24301 24345
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 347 24261 24273 "odoc_lexer.mll" 347 24261 24274
+)
+"odoc_lexer.mll" 348 24301 24345 "odoc_lexer.mll" 348 24301 24346
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_lexer.mll" 348 24301 24346 "odoc_lexer.mll" 348 24301 24349
+type(
+  string
+)
+"odoc_lexer.mll" 348 24301 24344 "odoc_lexer.mll" 348 24301 24349
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 348 24301 24318 "odoc_lexer.mll" 348 24301 24350
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 348 24301 24309 "odoc_lexer.mll" 348 24301 24350
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 346 24253 24259 "odoc_lexer.mll" 349 24351 24358
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 618 24382 24386 "odoc_lexer.ml" 618 24382 24403
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_lexer.ml" 618 24382 24407 "odoc_lexer.ml" 619 24442 24497
+)
+"odoc_lexer.ml" 618 24382 24407 "odoc_lexer.ml" 618 24382 24413
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 532 22219 22248 "odoc_lexer.ml" 532 22219 22254
+)
+"odoc_lexer.ml" 618 24382 24407 "odoc_lexer.ml" 618 24382 24432
+type(
+  Lexing.lexbuf -> unit
+)
+"odoc_lexer.ml" 618 24382 24433 "odoc_lexer.ml" 618 24382 24439
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 532 22219 22248 "odoc_lexer.ml" 532 22219 22254
+)
+"odoc_lexer.ml" 618 24382 24407 "odoc_lexer.ml" 618 24382 24439
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_lexer.ml" 619 24442 24448 "odoc_lexer.ml" 619 24442 24472
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_elements_rec "odoc_lexer.ml" 532 22219 22223 "odoc_lexer.ml" 532 22219 22247
+)
+"odoc_lexer.ml" 619 24442 24473 "odoc_lexer.ml" 619 24442 24479
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 532 22219 22248 "odoc_lexer.ml" 532 22219 22254
+)
+"odoc_lexer.ml" 619 24442 24480 "odoc_lexer.ml" 619 24442 24497
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_lexer.ml" 618 24382 24386 "odoc_lexer.ml" 618 24382 24403
+)
+"odoc_lexer.ml" 619 24442 24448 "odoc_lexer.ml" 619 24442 24497
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 618 24382 24407 "odoc_lexer.ml" 619 24442 24497
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 533 22275 22277 "odoc_lexer.ml" 619 24442 24497
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 621 24499 24503 "odoc_lexer.ml" 621 24499 24509
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  def simple "odoc_lexer.ml" 290 15445 15445 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.ml" 621 24499 24510 "odoc_lexer.ml" 621 24499 24516
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_lexer.ml" 622 24519 24523 "odoc_lexer.ml" 622 24519 24555
+)
+"odoc_lexer.ml" 622 24519 24523 "odoc_lexer.ml" 622 24519 24545
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_simple_rec "odoc_lexer.ml" 623 24556 24560 "odoc_lexer.ml" 623 24556 24582
+)
+"odoc_lexer.ml" 622 24519 24546 "odoc_lexer.ml" 622 24519 24552
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 621 24499 24510 "odoc_lexer.ml" 621 24499 24516
+)
+"odoc_lexer.ml" 622 24519 24553 "odoc_lexer.ml" 622 24519 24555
+type(
+  int
+)
+"odoc_lexer.ml" 622 24519 24523 "odoc_lexer.ml" 622 24519 24555
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 623 24556 24560 "odoc_lexer.ml" 623 24556 24582
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  def __ocaml_lex_simple_rec "odoc_lexer.ml" 290 15445 15445 "odoc_lexer.ml" 1 0 -1
+)
+"odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_lexer.ml" 623 24556 24590 "odoc_lexer.ml" 713 26767 26820
+)
+"odoc_lexer.ml" 623 24556 24590 "odoc_lexer.ml" 623 24556 24607
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_lexer.ml" 624 24610 24612 "odoc_lexer.ml" 713 26767 26820
+)
+"odoc_lexer.ml" 624 24610 24618 "odoc_lexer.ml" 624 24610 24631
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"odoc_lexer.ml" 624 24610 24632 "odoc_lexer.ml" 624 24610 24650
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "odoc_lexer.ml" 95 3022 3026 "odoc_lexer.ml" 95 3022 3044
+)
+"odoc_lexer.ml" 624 24610 24651 "odoc_lexer.ml" 624 24610 24668
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_lexer.ml" 623 24556 24590 "odoc_lexer.ml" 623 24556 24607
+)
+"odoc_lexer.ml" 624 24610 24669 "odoc_lexer.ml" 624 24610 24675
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.ml" 624 24610 24618 "odoc_lexer.ml" 624 24610 24675
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_lexer.ml" 625 24681 24689 "odoc_lexer.ml" 625 24681 24690
+type(
+  int
+)
+"odoc_lexer.mll" 355 24725 24733 "odoc_lexer.mll" 355 24725 24762
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 355 24725 24763 "odoc_lexer.mll" 355 24725 24765
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 355 24725 24766 "odoc_lexer.mll" 355 24725 24767
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 355 24725 24767 "odoc_lexer.mll" 355 24725 24796
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 355 24725 24766 "odoc_lexer.mll" 355 24725 24796
+type(
+  int
+)
+"odoc_lexer.mll" 355 24725 24797 "odoc_lexer.mll" 355 24725 24798
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 355 24725 24800 "odoc_lexer.mll" 355 24725 24813
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 355 24725 24815 "odoc_lexer.mll" 355 24725 24828
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 355 24725 24829 "odoc_lexer.mll" 355 24725 24835
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.mll" 355 24725 24814 "odoc_lexer.mll" 355 24725 24836
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 355 24725 24799 "odoc_lexer.mll" 355 24725 24837
+type(
+  int
+)
+"odoc_lexer.mll" 355 24725 24766 "odoc_lexer.mll" 355 24725 24837
+type(
+  int
+)
+"odoc_lexer.mll" 355 24725 24733 "odoc_lexer.mll" 355 24725 24837
+type(
+  unit
+)
+"odoc_lexer.mll" 356 24839 24847 "odoc_lexer.mll" 356 24839 24853
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref simple "odoc_lexer.ml" 621 24499 24503 "odoc_lexer.ml" 621 24499 24509
+)
+"odoc_lexer.mll" 356 24839 24854 "odoc_lexer.mll" 356 24839 24860
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.mll" 356 24839 24847 "odoc_lexer.mll" 356 24839 24860
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 354 24717 24723 "odoc_lexer.mll" 357 24861 24868
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 633 24892 24896 "odoc_lexer.ml" 633 24892 24897
+type(
+  int
+)
+"odoc_lexer.mll" 360 24924 24932 "odoc_lexer.mll" 360 24924 24936
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 360 24924 24937 "odoc_lexer.mll" 360 24924 24948
+type(
+  int ref
+)
+ident(
+  int_ref line_number "odoc_lexer.mll" 18 854 858 "odoc_lexer.mll" 18 854 869
+)
+"odoc_lexer.mll" 360 24924 24932 "odoc_lexer.mll" 360 24924 24948
+type(
+  unit
+)
+"odoc_lexer.mll" 361 24950 24958 "odoc_lexer.mll" 361 24950 24962
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 361 24950 24963 "odoc_lexer.mll" 361 24950 24992
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 361 24950 24958 "odoc_lexer.mll" 361 24950 24992
+type(
+  unit
+)
+"odoc_lexer.mll" 362 24994 25002 "odoc_lexer.mll" 362 24994 25008
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref simple "odoc_lexer.ml" 621 24499 24503 "odoc_lexer.ml" 621 24499 24509
+)
+"odoc_lexer.mll" 362 24994 25009 "odoc_lexer.mll" 362 24994 25015
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.mll" 362 24994 25002 "odoc_lexer.mll" 362 24994 25015
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 361 24950 24958 "odoc_lexer.mll" 362 24994 25015
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 360 24924 24930 "odoc_lexer.mll" 363 25016 25023
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 641 25047 25051 "odoc_lexer.ml" 641 25047 25052
+type(
+  int
+)
+"odoc_lexer.mll" 367 25087 25095 "odoc_lexer.mll" 367 25087 25124
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 367 25087 25125 "odoc_lexer.mll" 367 25087 25127
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 367 25087 25128 "odoc_lexer.mll" 367 25087 25129
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 367 25087 25129 "odoc_lexer.mll" 367 25087 25158
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 367 25087 25128 "odoc_lexer.mll" 367 25087 25158
+type(
+  int
+)
+"odoc_lexer.mll" 367 25087 25159 "odoc_lexer.mll" 367 25087 25160
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 367 25087 25162 "odoc_lexer.mll" 367 25087 25175
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 367 25087 25177 "odoc_lexer.mll" 367 25087 25190
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 367 25087 25191 "odoc_lexer.mll" 367 25087 25197
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.mll" 367 25087 25176 "odoc_lexer.mll" 367 25087 25198
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 367 25087 25161 "odoc_lexer.mll" 367 25087 25199
+type(
+  int
+)
+"odoc_lexer.mll" 367 25087 25128 "odoc_lexer.mll" 367 25087 25199
+type(
+  int
+)
+"odoc_lexer.mll" 367 25087 25095 "odoc_lexer.mll" 367 25087 25199
+type(
+  unit
+)
+"odoc_lexer.mll" 368 25201 25209 "odoc_lexer.mll" 368 25201 25213
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 368 25201 25214 "odoc_lexer.mll" 368 25201 25228
+type(
+  int ref
+)
+ident(
+  int_ref comments_level "odoc_lexer.mll" 41 1536 1540 "odoc_lexer.mll" 41 1536 1554
+)
+"odoc_lexer.mll" 368 25201 25209 "odoc_lexer.mll" 368 25201 25228
+type(
+  unit
+)
+"odoc_lexer.mll" 369 25230 25238 "odoc_lexer.mll" 369 25230 25244
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref simple "odoc_lexer.ml" 621 24499 24503 "odoc_lexer.ml" 621 24499 24509
+)
+"odoc_lexer.mll" 369 25230 25245 "odoc_lexer.mll" 369 25230 25251
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.mll" 369 25230 25238 "odoc_lexer.mll" 369 25230 25251
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 368 25201 25209 "odoc_lexer.mll" 369 25230 25251
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 366 25079 25085 "odoc_lexer.mll" 370 25252 25259
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 650 25283 25287 "odoc_lexer.ml" 650 25283 25288
+type(
+  int
+)
+"odoc_lexer.mll" 374 25323 25335 "odoc_lexer.mll" 374 25323 25336
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 375 25363 25371 "odoc_lexer.mll" 376 25456 25477
+)
+"odoc_lexer.mll" 374 25323 25339 "odoc_lexer.mll" 374 25323 25352
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 374 25323 25353 "odoc_lexer.mll" 374 25323 25359
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.mll" 374 25323 25339 "odoc_lexer.mll" 374 25323 25359
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 375 25363 25371 "odoc_lexer.mll" 375 25363 25400
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 375 25363 25401 "odoc_lexer.mll" 375 25363 25403
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 375 25363 25404 "odoc_lexer.mll" 375 25363 25405
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 375 25363 25405 "odoc_lexer.mll" 375 25363 25434
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 375 25363 25404 "odoc_lexer.mll" 375 25363 25434
+type(
+  int
+)
+"odoc_lexer.mll" 375 25363 25435 "odoc_lexer.mll" 375 25363 25436
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 375 25363 25438 "odoc_lexer.mll" 375 25363 25451
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 375 25363 25452 "odoc_lexer.mll" 375 25363 25453
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 374 25323 25335 "odoc_lexer.mll" 374 25323 25336
+)
+"odoc_lexer.mll" 375 25363 25437 "odoc_lexer.mll" 375 25363 25454
+type(
+  int
+)
+"odoc_lexer.mll" 375 25363 25404 "odoc_lexer.mll" 375 25363 25454
+type(
+  int
+)
+"odoc_lexer.mll" 375 25363 25371 "odoc_lexer.mll" 375 25363 25454
+type(
+  unit
+)
+"odoc_lexer.mll" 376 25456 25464 "odoc_lexer.mll" 376 25456 25470
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref simple "odoc_lexer.ml" 621 24499 24503 "odoc_lexer.ml" 621 24499 24509
+)
+"odoc_lexer.mll" 376 25456 25471 "odoc_lexer.mll" 376 25456 25477
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.mll" 376 25456 25464 "odoc_lexer.mll" 376 25456 25477
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 375 25363 25371 "odoc_lexer.mll" 376 25456 25477
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 373 25315 25321 "odoc_lexer.mll" 377 25478 25485
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 659 25509 25513 "odoc_lexer.ml" 659 25509 25514
+type(
+  int
+)
+"odoc_lexer.mll" 380 25549 25561 "odoc_lexer.mll" 380 25549 25562
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 381 25589 25597 "odoc_lexer.mll" 383 25711 25732
+)
+"odoc_lexer.mll" 380 25549 25565 "odoc_lexer.mll" 380 25549 25578
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 380 25549 25579 "odoc_lexer.mll" 380 25549 25585
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.mll" 380 25549 25565 "odoc_lexer.mll" 380 25549 25585
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 381 25589 25597 "odoc_lexer.mll" 381 25589 25626
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 381 25589 25627 "odoc_lexer.mll" 381 25589 25629
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 381 25589 25630 "odoc_lexer.mll" 381 25589 25631
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 381 25589 25631 "odoc_lexer.mll" 381 25589 25660
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 381 25589 25630 "odoc_lexer.mll" 381 25589 25660
+type(
+  int
+)
+"odoc_lexer.mll" 381 25589 25661 "odoc_lexer.mll" 381 25589 25662
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 381 25589 25664 "odoc_lexer.mll" 381 25589 25677
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 381 25589 25678 "odoc_lexer.mll" 381 25589 25679
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 380 25549 25561 "odoc_lexer.mll" 380 25549 25562
+)
+"odoc_lexer.mll" 381 25589 25663 "odoc_lexer.mll" 381 25589 25680
+type(
+  int
+)
+"odoc_lexer.mll" 381 25589 25630 "odoc_lexer.mll" 381 25589 25680
+type(
+  int
+)
+"odoc_lexer.mll" 381 25589 25597 "odoc_lexer.mll" 381 25589 25680
+type(
+  unit
+)
+"odoc_lexer.mll" 382 25682 25690 "odoc_lexer.mll" 382 25682 25694
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 382 25682 25695 "odoc_lexer.mll" 382 25682 25709
+type(
+  int ref
+)
+ident(
+  int_ref comments_level "odoc_lexer.mll" 41 1536 1540 "odoc_lexer.mll" 41 1536 1554
+)
+"odoc_lexer.mll" 382 25682 25690 "odoc_lexer.mll" 382 25682 25709
+type(
+  unit
+)
+"odoc_lexer.mll" 383 25711 25719 "odoc_lexer.mll" 383 25711 25725
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref simple "odoc_lexer.ml" 621 24499 24503 "odoc_lexer.ml" 621 24499 24509
+)
+"odoc_lexer.mll" 383 25711 25726 "odoc_lexer.mll" 383 25711 25732
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.mll" 383 25711 25719 "odoc_lexer.mll" 383 25711 25732
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 382 25682 25690 "odoc_lexer.mll" 383 25711 25732
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 381 25589 25597 "odoc_lexer.mll" 383 25711 25732
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 379 25541 25547 "odoc_lexer.mll" 384 25733 25740
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 669 25764 25768 "odoc_lexer.ml" 669 25764 25769
+type(
+  int
+)
+"odoc_lexer.mll" 388 25804 25816 "odoc_lexer.mll" 388 25804 25817
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 389 25844 25852 "odoc_lexer.mll" 401 26202 26213
+)
+"odoc_lexer.mll" 388 25804 25820 "odoc_lexer.mll" 388 25804 25833
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 388 25804 25834 "odoc_lexer.mll" 388 25804 25840
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.mll" 388 25804 25820 "odoc_lexer.mll" 388 25804 25840
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 389 25844 25852 "odoc_lexer.mll" 389 25844 25881
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 389 25844 25882 "odoc_lexer.mll" 389 25844 25884
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 389 25844 25885 "odoc_lexer.mll" 389 25844 25886
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 389 25844 25886 "odoc_lexer.mll" 389 25844 25915
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 389 25844 25885 "odoc_lexer.mll" 389 25844 25915
+type(
+  int
+)
+"odoc_lexer.mll" 389 25844 25916 "odoc_lexer.mll" 389 25844 25917
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 389 25844 25919 "odoc_lexer.mll" 389 25844 25932
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 389 25844 25933 "odoc_lexer.mll" 389 25844 25934
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 388 25804 25816 "odoc_lexer.mll" 388 25804 25817
+)
+"odoc_lexer.mll" 389 25844 25918 "odoc_lexer.mll" 389 25844 25935
+type(
+  int
+)
+"odoc_lexer.mll" 389 25844 25885 "odoc_lexer.mll" 389 25844 25935
+type(
+  int
+)
+"odoc_lexer.mll" 389 25844 25852 "odoc_lexer.mll" 389 25844 25935
+type(
+  unit
+)
+"odoc_lexer.mll" 390 25937 25945 "odoc_lexer.mll" 390 25937 25949
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 390 25937 25950 "odoc_lexer.mll" 390 25937 25964
+type(
+  int ref
+)
+ident(
+  int_ref comments_level "odoc_lexer.mll" 41 1536 1540 "odoc_lexer.mll" 41 1536 1554
+)
+"odoc_lexer.mll" 390 25937 25945 "odoc_lexer.mll" 390 25937 25964
+type(
+  unit
+)
+"odoc_lexer.mll" 391 25966 25977 "odoc_lexer.mll" 391 25966 25978
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 391 25966 25978 "odoc_lexer.mll" 391 25966 25992
+type(
+  int ref
+)
+ident(
+  int_ref comments_level "odoc_lexer.mll" 41 1536 1540 "odoc_lexer.mll" 41 1536 1554
+)
+"odoc_lexer.mll" 391 25966 25977 "odoc_lexer.mll" 391 25966 25992
+type(
+  int
+)
+"odoc_lexer.mll" 391 25966 25993 "odoc_lexer.mll" 391 25966 25994
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"odoc_lexer.mll" 391 25966 25995 "odoc_lexer.mll" 391 25966 25996
+type(
+  int
+)
+"odoc_lexer.mll" 391 25966 25977 "odoc_lexer.mll" 391 25966 25996
+type(
+  bool
+)
+"odoc_lexer.mll" 393 26014 26025 "odoc_lexer.mll" 393 26014 26044
+type(
+  unit -> unit
+)
+ident(
+  int_ref reset_string_buffer "odoc_lexer.mll" 24 985 989 "odoc_lexer.mll" 24 985 1008
+)
+"odoc_lexer.mll" 393 26014 26045 "odoc_lexer.mll" 393 26014 26047
+type(
+  unit
+)
+"odoc_lexer.mll" 393 26014 26025 "odoc_lexer.mll" 393 26014 26047
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_lexer.mll" 394 26049 26060 "odoc_lexer.mll" 394 26049 26071
+type(
+  string ref
+)
+ident(
+  int_ref description "odoc_lexer.mll" 36 1445 1449 "odoc_lexer.mll" 36 1445 1460
+)
+"odoc_lexer.mll" 394 26049 26072 "odoc_lexer.mll" 394 26049 26074
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 394 26049 26075 "odoc_lexer.mll" 394 26049 26077
+type(
+  string
+)
+"odoc_lexer.mll" 394 26049 26060 "odoc_lexer.mll" 394 26049 26077
+type(
+  unit
+)
+"odoc_lexer.mll" 395 26079 26090 "odoc_lexer.mll" 395 26079 26105
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref special_comment "odoc_lexer.ml" 386 17844 17848 "odoc_lexer.ml" 386 17844 17863
+)
+"odoc_lexer.mll" 395 26079 26106 "odoc_lexer.mll" 395 26079 26112
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.mll" 395 26079 26090 "odoc_lexer.mll" 395 26079 26112
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 394 26049 26060 "odoc_lexer.mll" 395 26079 26112
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 392 26002 26012 "odoc_lexer.mll" 396 26113 26124
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 399 26150 26161 "odoc_lexer.mll" 399 26150 26173
+type(
+  string -> unit
+)
+ident(
+  int_ref ajout_string "odoc_lexer.mll" 30 1207 1211 "odoc_lexer.mll" 30 1207 1223
+)
+"odoc_lexer.mll" 399 26150 26174 "odoc_lexer.mll" 399 26150 26175
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 388 25804 25816 "odoc_lexer.mll" 388 25804 25817
+)
+"odoc_lexer.mll" 399 26150 26161 "odoc_lexer.mll" 399 26150 26175
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_lexer.mll" 400 26177 26188 "odoc_lexer.mll" 400 26177 26194
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref simple "odoc_lexer.ml" 621 24499 24503 "odoc_lexer.ml" 621 24499 24509
+)
+"odoc_lexer.mll" 400 26177 26195 "odoc_lexer.mll" 400 26177 26201
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.mll" 400 26177 26188 "odoc_lexer.mll" 400 26177 26201
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 398 26138 26148 "odoc_lexer.mll" 401 26202 26213
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 391 25966 25974 "odoc_lexer.mll" 401 26202 26213
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 390 25937 25945 "odoc_lexer.mll" 401 26202 26213
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 389 25844 25852 "odoc_lexer.mll" 401 26202 26213
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 387 25796 25802 "odoc_lexer.mll" 402 26214 26221
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 689 26245 26249 "odoc_lexer.ml" 689 26245 26250
+type(
+  int
+)
+"odoc_lexer.mll" 405 26277 26283 "odoc_lexer.mll" 405 26277 26290
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 694 26314 26318 "odoc_lexer.ml" 694 26314 26319
+type(
+  int
+)
+"odoc_lexer.mll" 409 26354 26366 "odoc_lexer.mll" 409 26354 26367
+type(
+  string
+)
+ident(
+  def s "odoc_lexer.mll" 410 26394 26402 "odoc_lexer.mll" 412 26517 26538
+)
+"odoc_lexer.mll" 409 26354 26370 "odoc_lexer.mll" 409 26354 26383
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_lexer.mll" 409 26354 26384 "odoc_lexer.mll" 409 26354 26390
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.mll" 409 26354 26370 "odoc_lexer.mll" 409 26354 26390
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_lexer.mll" 410 26394 26402 "odoc_lexer.mll" 410 26394 26431
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 410 26394 26432 "odoc_lexer.mll" 410 26394 26434
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_lexer.mll" 410 26394 26435 "odoc_lexer.mll" 410 26394 26436
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_lexer.mll" 410 26394 26436 "odoc_lexer.mll" 410 26394 26465
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 410 26394 26435 "odoc_lexer.mll" 410 26394 26465
+type(
+  int
+)
+"odoc_lexer.mll" 410 26394 26466 "odoc_lexer.mll" 410 26394 26467
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_lexer.mll" 410 26394 26469 "odoc_lexer.mll" 410 26394 26482
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_lexer.mll" 410 26394 26483 "odoc_lexer.mll" 410 26394 26484
+type(
+  string
+)
+ident(
+  int_ref s "odoc_lexer.mll" 409 26354 26366 "odoc_lexer.mll" 409 26354 26367
+)
+"odoc_lexer.mll" 410 26394 26468 "odoc_lexer.mll" 410 26394 26485
+type(
+  int
+)
+"odoc_lexer.mll" 410 26394 26435 "odoc_lexer.mll" 410 26394 26485
+type(
+  int
+)
+"odoc_lexer.mll" 410 26394 26402 "odoc_lexer.mll" 410 26394 26485
+type(
+  unit
+)
+"odoc_lexer.mll" 411 26487 26495 "odoc_lexer.mll" 411 26487 26499
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.decr
+)
+"odoc_lexer.mll" 411 26487 26500 "odoc_lexer.mll" 411 26487 26514
+type(
+  int ref
+)
+ident(
+  int_ref comments_level "odoc_lexer.mll" 41 1536 1540 "odoc_lexer.mll" 41 1536 1554
+)
+"odoc_lexer.mll" 411 26487 26495 "odoc_lexer.mll" 411 26487 26514
+type(
+  unit
+)
+"odoc_lexer.mll" 412 26517 26525 "odoc_lexer.mll" 412 26517 26531
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref simple "odoc_lexer.ml" 621 24499 24503 "odoc_lexer.ml" 621 24499 24509
+)
+"odoc_lexer.mll" 412 26517 26532 "odoc_lexer.mll" 412 26517 26538
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.mll" 412 26517 26525 "odoc_lexer.mll" 412 26517 26538
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 411 26487 26495 "odoc_lexer.mll" 412 26517 26538
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 410 26394 26402 "odoc_lexer.mll" 412 26517 26538
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 408 26346 26352 "odoc_lexer.mll" 413 26539 26546
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 704 26570 26574 "odoc_lexer.ml" 704 26570 26575
+type(
+  int
+)
+"odoc_lexer.mll" 417 26610 26618 "odoc_lexer.mll" 417 26610 26622
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_lexer.mll" 417 26610 26623 "odoc_lexer.mll" 417 26610 26652
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_lexer.mll" 417 26610 26618 "odoc_lexer.mll" 417 26610 26652
+type(
+  unit
+)
+"odoc_lexer.mll" 418 26654 26662 "odoc_lexer.mll" 418 26654 26668
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref simple "odoc_lexer.ml" 621 24499 24503 "odoc_lexer.ml" 621 24499 24509
+)
+"odoc_lexer.mll" 418 26654 26669 "odoc_lexer.mll" 418 26654 26675
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.mll" 418 26654 26662 "odoc_lexer.mll" 418 26654 26675
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.mll" 416 26602 26608 "odoc_lexer.mll" 419 26676 26683
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 712 26707 26711 "odoc_lexer.ml" 712 26707 26728
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_lexer.ml" 712 26707 26732 "odoc_lexer.ml" 713 26767 26820
+)
+"odoc_lexer.ml" 712 26707 26732 "odoc_lexer.ml" 712 26707 26738
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.ml" 712 26707 26732 "odoc_lexer.ml" 712 26707 26757
+type(
+  Lexing.lexbuf -> unit
+)
+"odoc_lexer.ml" 712 26707 26758 "odoc_lexer.ml" 712 26707 26764
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.ml" 712 26707 26732 "odoc_lexer.ml" 712 26707 26764
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_lexer.ml" 713 26767 26773 "odoc_lexer.ml" 713 26767 26795
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_simple_rec "odoc_lexer.ml" 623 24556 24560 "odoc_lexer.ml" 623 24556 24582
+)
+"odoc_lexer.ml" 713 26767 26796 "odoc_lexer.ml" 713 26767 26802
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_lexer.ml" 623 24556 24583 "odoc_lexer.ml" 623 24556 24589
+)
+"odoc_lexer.ml" 713 26767 26803 "odoc_lexer.ml" 713 26767 26820
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_lexer.ml" 712 26707 26711 "odoc_lexer.ml" 712 26707 26728
+)
+"odoc_lexer.ml" 713 26767 26773 "odoc_lexer.ml" 713 26767 26820
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 712 26707 26732 "odoc_lexer.ml" 713 26767 26820
+type(
+  Odoc_parser.token
+)
+"odoc_lexer.ml" 624 24610 24612 "odoc_lexer.ml" 713 26767 26820
+type(
+  Odoc_parser.token
+)

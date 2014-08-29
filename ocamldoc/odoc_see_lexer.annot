@@ -1,0 +1,1515 @@
+"odoc_see_lexer.mll" 20 893 897 "odoc_see_lexer.mll" 20 893 900
+type(
+  Buffer.t
+)
+ident(
+  def buf "odoc_see_lexer.ml" 25 947 947 "odoc_see_lexer.ml" 1 0 -1
+)
+"odoc_see_lexer.mll" 20 893 903 "odoc_see_lexer.mll" 20 893 916
+type(
+  int -> Buffer.t
+)
+ident(
+  ext_ref Buffer.create
+)
+"odoc_see_lexer.mll" 20 893 917 "odoc_see_lexer.mll" 20 893 919
+type(
+  int
+)
+"odoc_see_lexer.mll" 20 893 903 "odoc_see_lexer.mll" 20 893 919
+call(
+  stack
+)
+type(
+  Buffer.t
+)
+"odoc_see_lexer.ml" 25 947 951 "odoc_see_lexer.ml" 25 947 969
+type(
+  Lexing.lex_tables
+)
+ident(
+  def __ocaml_lex_tables "odoc_see_lexer.ml" 122 6462 6462 "odoc_see_lexer.ml" 1 0 -1
+)
+"odoc_see_lexer.ml" 27 995 998 "odoc_see_lexer.ml" 29 1135 1172
+type(
+  string
+)
+"odoc_see_lexer.ml" 31 1198 1201 "odoc_see_lexer.ml" 33 1338 1375
+type(
+  string
+)
+"odoc_see_lexer.ml" 35 1401 1404 "odoc_see_lexer.ml" 37 1541 1578
+type(
+  string
+)
+"odoc_see_lexer.ml" 39 1602 1605 "odoc_see_lexer.ml" 72 3912 3917
+type(
+  string
+)
+"odoc_see_lexer.ml" 74 3941 3944 "odoc_see_lexer.ml" 107 6251 6256
+type(
+  string
+)
+"odoc_see_lexer.ml" 109 6284 6287 "odoc_see_lexer.ml" 109 6284 6289
+type(
+  string
+)
+"odoc_see_lexer.ml" 111 6320 6323 "odoc_see_lexer.ml" 111 6320 6325
+type(
+  string
+)
+"odoc_see_lexer.ml" 113 6356 6359 "odoc_see_lexer.ml" 113 6356 6361
+type(
+  string
+)
+"odoc_see_lexer.ml" 115 6390 6393 "odoc_see_lexer.ml" 115 6390 6395
+type(
+  string
+)
+"odoc_see_lexer.ml" 117 6424 6427 "odoc_see_lexer.ml" 117 6424 6429
+type(
+  string
+)
+"odoc_see_lexer.ml" 119 6452 6455 "odoc_see_lexer.ml" 119 6452 6457
+type(
+  string
+)
+"odoc_see_lexer.ml" 25 947 972 "odoc_see_lexer.ml" 120 6459 6460
+type(
+  Lexing.lex_tables
+)
+"odoc_see_lexer.ml" 122 6462 6470 "odoc_see_lexer.ml" 122 6462 6474
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  def main "odoc_see_lexer.ml" 122 6462 6462 "odoc_see_lexer.ml" 1 0 -1
+)
+"odoc_see_lexer.ml" 122 6462 6475 "odoc_see_lexer.ml" 122 6462 6481
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_see_lexer.ml" 123 6484 6488 "odoc_see_lexer.ml" 123 6484 6517
+)
+"odoc_see_lexer.ml" 123 6484 6488 "odoc_see_lexer.ml" 123 6484 6508
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_main_rec "odoc_see_lexer.ml" 124 6518 6522 "odoc_see_lexer.ml" 124 6518 6542
+)
+"odoc_see_lexer.ml" 123 6484 6509 "odoc_see_lexer.ml" 123 6484 6515
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 122 6462 6475 "odoc_see_lexer.ml" 122 6462 6481
+)
+"odoc_see_lexer.ml" 123 6484 6516 "odoc_see_lexer.ml" 123 6484 6517
+type(
+  int
+)
+"odoc_see_lexer.ml" 123 6484 6488 "odoc_see_lexer.ml" 123 6484 6517
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 124 6518 6522 "odoc_see_lexer.ml" 124 6518 6542
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  def __ocaml_lex_main_rec "odoc_see_lexer.ml" 122 6462 6462 "odoc_see_lexer.ml" 1 0 -1
+)
+"odoc_see_lexer.ml" 124 6518 6543 "odoc_see_lexer.ml" 124 6518 6549
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_see_lexer.ml" 124 6518 6550 "odoc_see_lexer.ml" 184 7630 7681
+)
+"odoc_see_lexer.ml" 124 6518 6550 "odoc_see_lexer.ml" 124 6518 6567
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_see_lexer.ml" 125 6570 6572 "odoc_see_lexer.ml" 184 7630 7681
+)
+"odoc_see_lexer.ml" 125 6570 6578 "odoc_see_lexer.ml" 125 6570 6591
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"odoc_see_lexer.ml" 125 6570 6592 "odoc_see_lexer.ml" 125 6570 6610
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "odoc_see_lexer.ml" 25 947 951 "odoc_see_lexer.ml" 25 947 969
+)
+"odoc_see_lexer.ml" 125 6570 6611 "odoc_see_lexer.ml" 125 6570 6628
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_see_lexer.ml" 124 6518 6550 "odoc_see_lexer.ml" 124 6518 6567
+)
+"odoc_see_lexer.ml" 125 6570 6629 "odoc_see_lexer.ml" 125 6570 6635
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 124 6518 6543 "odoc_see_lexer.ml" 124 6518 6549
+)
+"odoc_see_lexer.ml" 125 6570 6578 "odoc_see_lexer.ml" 125 6570 6635
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_see_lexer.ml" 126 6641 6649 "odoc_see_lexer.ml" 126 6641 6650
+type(
+  int
+)
+"odoc_see_lexer.mll" 28 6714 6718 "odoc_see_lexer.mll" 28 6714 6722
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref main "odoc_see_lexer.ml" 122 6462 6470 "odoc_see_lexer.ml" 122 6462 6474
+)
+"odoc_see_lexer.mll" 28 6714 6723 "odoc_see_lexer.mll" 28 6714 6729
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 124 6518 6543 "odoc_see_lexer.ml" 124 6518 6549
+)
+"odoc_see_lexer.mll" 26 6680 6682 "odoc_see_lexer.mll" 29 6730 6733
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 134 6761 6765 "odoc_see_lexer.ml" 134 6761 6766
+type(
+  int
+)
+"odoc_see_lexer.mll" 34 6834 6842 "odoc_see_lexer.mll" 34 6834 6846
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref main "odoc_see_lexer.ml" 122 6462 6470 "odoc_see_lexer.ml" 122 6462 6474
+)
+"odoc_see_lexer.mll" 34 6834 6847 "odoc_see_lexer.mll" 34 6834 6853
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 124 6518 6543 "odoc_see_lexer.ml" 124 6518 6549
+)
+"odoc_see_lexer.mll" 32 6796 6802 "odoc_see_lexer.mll" 35 6854 6861
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 142 6889 6893 "odoc_see_lexer.ml" 142 6889 6894
+type(
+  int
+)
+"odoc_see_lexer.mll" 40 6962 6970 "odoc_see_lexer.mll" 40 6962 6973
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref url "odoc_see_lexer.ml" 186 7683 7687 "odoc_see_lexer.ml" 186 7683 7690
+)
+"odoc_see_lexer.mll" 40 6962 6974 "odoc_see_lexer.mll" 40 6962 6980
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 124 6518 6543 "odoc_see_lexer.ml" 124 6518 6549
+)
+"odoc_see_lexer.mll" 38 6924 6930 "odoc_see_lexer.mll" 41 6981 6988
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 150 7016 7020 "odoc_see_lexer.ml" 150 7016 7021
+type(
+  int
+)
+"odoc_see_lexer.mll" 46 7089 7097 "odoc_see_lexer.mll" 46 7089 7100
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref doc "odoc_see_lexer.ml" 202 8175 8179 "odoc_see_lexer.ml" 202 8175 8182
+)
+"odoc_see_lexer.mll" 46 7089 7101 "odoc_see_lexer.mll" 46 7089 7107
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 124 6518 6543 "odoc_see_lexer.ml" 124 6518 6549
+)
+"odoc_see_lexer.mll" 44 7051 7057 "odoc_see_lexer.mll" 47 7108 7115
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 158 7143 7147 "odoc_see_lexer.ml" 158 7143 7148
+type(
+  int
+)
+"odoc_see_lexer.mll" 53 7216 7224 "odoc_see_lexer.mll" 53 7216 7228
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref file "odoc_see_lexer.ml" 217 8638 8642 "odoc_see_lexer.ml" 217 8638 8646
+)
+"odoc_see_lexer.mll" 53 7216 7229 "odoc_see_lexer.mll" 53 7216 7235
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 124 6518 6543 "odoc_see_lexer.ml" 124 6518 6549
+)
+"odoc_see_lexer.mll" 51 7178 7184 "odoc_see_lexer.mll" 54 7236 7243
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 166 7271 7275 "odoc_see_lexer.ml" 166 7271 7276
+type(
+  int
+)
+"odoc_see_lexer.mll" 57 7306 7312 "odoc_see_lexer.mll" 60 7356 7363
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 174 7391 7395 "odoc_see_lexer.ml" 174 7391 7396
+type(
+  int
+)
+"odoc_see_lexer.mll" 64 7434 7442 "odoc_see_lexer.mll" 64 7434 7454
+type(
+  Buffer.t -> unit
+)
+ident(
+  ext_ref Buffer.reset
+)
+"odoc_see_lexer.mll" 64 7434 7455 "odoc_see_lexer.mll" 64 7434 7458
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "odoc_see_lexer.mll" 20 893 897 "odoc_see_lexer.mll" 20 893 900
+)
+"odoc_see_lexer.mll" 64 7434 7442 "odoc_see_lexer.mll" 64 7434 7458
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_see_lexer.mll" 65 7461 7469 "odoc_see_lexer.mll" 65 7461 7486
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"odoc_see_lexer.mll" 65 7461 7487 "odoc_see_lexer.mll" 65 7461 7490
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "odoc_see_lexer.mll" 20 893 897 "odoc_see_lexer.mll" 20 893 900
+)
+"odoc_see_lexer.mll" 65 7461 7492 "odoc_see_lexer.mll" 65 7461 7505
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_see_lexer.mll" 65 7461 7506 "odoc_see_lexer.mll" 65 7461 7512
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 124 6518 6543 "odoc_see_lexer.ml" 124 6518 6549
+)
+"odoc_see_lexer.mll" 65 7461 7491 "odoc_see_lexer.mll" 65 7461 7513
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_see_lexer.mll" 65 7461 7469 "odoc_see_lexer.mll" 65 7461 7513
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_see_lexer.mll" 66 7515 7523 "odoc_see_lexer.mll" 66 7515 7527
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref desc "odoc_see_lexer.ml" 232 9106 9110 "odoc_see_lexer.ml" 232 9106 9114
+)
+"odoc_see_lexer.mll" 66 7515 7528 "odoc_see_lexer.mll" 66 7515 7534
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 124 6518 6543 "odoc_see_lexer.ml" 124 6518 6549
+)
+"odoc_see_lexer.mll" 66 7515 7523 "odoc_see_lexer.mll" 66 7515 7534
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.mll" 65 7461 7469 "odoc_see_lexer.mll" 66 7515 7534
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.mll" 63 7426 7432 "odoc_see_lexer.mll" 67 7535 7542
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 183 7570 7574 "odoc_see_lexer.ml" 183 7570 7591
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_see_lexer.ml" 183 7570 7595 "odoc_see_lexer.ml" 184 7630 7681
+)
+"odoc_see_lexer.ml" 183 7570 7595 "odoc_see_lexer.ml" 183 7570 7601
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 124 6518 6543 "odoc_see_lexer.ml" 124 6518 6549
+)
+"odoc_see_lexer.ml" 183 7570 7595 "odoc_see_lexer.ml" 183 7570 7620
+type(
+  Lexing.lexbuf -> unit
+)
+"odoc_see_lexer.ml" 183 7570 7621 "odoc_see_lexer.ml" 183 7570 7627
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 124 6518 6543 "odoc_see_lexer.ml" 124 6518 6549
+)
+"odoc_see_lexer.ml" 183 7570 7595 "odoc_see_lexer.ml" 183 7570 7627
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_see_lexer.ml" 184 7630 7636 "odoc_see_lexer.ml" 184 7630 7656
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_main_rec "odoc_see_lexer.ml" 124 6518 6522 "odoc_see_lexer.ml" 124 6518 6542
+)
+"odoc_see_lexer.ml" 184 7630 7657 "odoc_see_lexer.ml" 184 7630 7663
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 124 6518 6543 "odoc_see_lexer.ml" 124 6518 6549
+)
+"odoc_see_lexer.ml" 184 7630 7664 "odoc_see_lexer.ml" 184 7630 7681
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_see_lexer.ml" 183 7570 7574 "odoc_see_lexer.ml" 183 7570 7591
+)
+"odoc_see_lexer.ml" 184 7630 7636 "odoc_see_lexer.ml" 184 7630 7681
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 183 7570 7595 "odoc_see_lexer.ml" 184 7630 7681
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 125 6570 6572 "odoc_see_lexer.ml" 184 7630 7681
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 186 7683 7687 "odoc_see_lexer.ml" 186 7683 7690
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  def url "odoc_see_lexer.ml" 122 6462 6462 "odoc_see_lexer.ml" 1 0 -1
+)
+"odoc_see_lexer.ml" 186 7683 7691 "odoc_see_lexer.ml" 186 7683 7697
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_see_lexer.ml" 187 7700 7704 "odoc_see_lexer.ml" 187 7700 7732
+)
+"odoc_see_lexer.ml" 187 7700 7704 "odoc_see_lexer.ml" 187 7700 7723
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_url_rec "odoc_see_lexer.ml" 188 7733 7737 "odoc_see_lexer.ml" 188 7733 7756
+)
+"odoc_see_lexer.ml" 187 7700 7724 "odoc_see_lexer.ml" 187 7700 7730
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 186 7683 7691 "odoc_see_lexer.ml" 186 7683 7697
+)
+"odoc_see_lexer.ml" 187 7700 7731 "odoc_see_lexer.ml" 187 7700 7732
+type(
+  int
+)
+"odoc_see_lexer.ml" 187 7700 7704 "odoc_see_lexer.ml" 187 7700 7732
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 188 7733 7737 "odoc_see_lexer.ml" 188 7733 7756
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  def __ocaml_lex_url_rec "odoc_see_lexer.ml" 122 6462 6462 "odoc_see_lexer.ml" 1 0 -1
+)
+"odoc_see_lexer.ml" 188 7733 7757 "odoc_see_lexer.ml" 188 7733 7763
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_see_lexer.ml" 188 7733 7764 "odoc_see_lexer.ml" 200 8123 8173
+)
+"odoc_see_lexer.ml" 188 7733 7764 "odoc_see_lexer.ml" 188 7733 7781
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_see_lexer.ml" 189 7784 7786 "odoc_see_lexer.ml" 200 8123 8173
+)
+"odoc_see_lexer.ml" 189 7784 7792 "odoc_see_lexer.ml" 189 7784 7805
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"odoc_see_lexer.ml" 189 7784 7806 "odoc_see_lexer.ml" 189 7784 7824
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "odoc_see_lexer.ml" 25 947 951 "odoc_see_lexer.ml" 25 947 969
+)
+"odoc_see_lexer.ml" 189 7784 7825 "odoc_see_lexer.ml" 189 7784 7842
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_see_lexer.ml" 188 7733 7764 "odoc_see_lexer.ml" 188 7733 7781
+)
+"odoc_see_lexer.ml" 189 7784 7843 "odoc_see_lexer.ml" 189 7784 7849
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 188 7733 7757 "odoc_see_lexer.ml" 188 7733 7763
+)
+"odoc_see_lexer.ml" 189 7784 7792 "odoc_see_lexer.ml" 189 7784 7849
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_see_lexer.ml" 190 7855 7863 "odoc_see_lexer.ml" 190 7855 7864
+type(
+  int
+)
+"odoc_see_lexer.mll" 72 7902 7914 "odoc_see_lexer.mll" 72 7902 7915
+type(
+  string
+)
+ident(
+  def s "odoc_see_lexer.mll" 74 7972 7980 "odoc_see_lexer.mll" 74 7972 8027
+)
+"odoc_see_lexer.mll" 72 7902 7918 "odoc_see_lexer.mll" 72 7902 7931
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_see_lexer.mll" 72 7902 7932 "odoc_see_lexer.mll" 72 7902 7938
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 188 7733 7757 "odoc_see_lexer.ml" 188 7733 7763
+)
+"odoc_see_lexer.mll" 72 7902 7918 "odoc_see_lexer.mll" 72 7902 7938
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_see_lexer.mll" 74 7972 7989 "odoc_see_lexer.mll" 74 7972 7999
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"odoc_see_lexer.mll" 74 7972 8000 "odoc_see_lexer.mll" 74 7972 8001
+type(
+  string
+)
+ident(
+  int_ref s "odoc_see_lexer.mll" 72 7902 7914 "odoc_see_lexer.mll" 72 7902 7915
+)
+"odoc_see_lexer.mll" 74 7972 8002 "odoc_see_lexer.mll" 74 7972 8003
+type(
+  int
+)
+"odoc_see_lexer.mll" 74 7972 8006 "odoc_see_lexer.mll" 74 7972 8019
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_see_lexer.mll" 74 7972 8020 "odoc_see_lexer.mll" 74 7972 8021
+type(
+  string
+)
+ident(
+  int_ref s "odoc_see_lexer.mll" 72 7902 7914 "odoc_see_lexer.mll" 72 7902 7915
+)
+"odoc_see_lexer.mll" 74 7972 8005 "odoc_see_lexer.mll" 74 7972 8022
+type(
+  int
+)
+"odoc_see_lexer.mll" 74 7972 8023 "odoc_see_lexer.mll" 74 7972 8024
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"odoc_see_lexer.mll" 74 7972 8024 "odoc_see_lexer.mll" 74 7972 8025
+type(
+  int
+)
+"odoc_see_lexer.mll" 74 7972 8004 "odoc_see_lexer.mll" 74 7972 8026
+type(
+  int
+)
+"odoc_see_lexer.mll" 74 7972 7988 "odoc_see_lexer.mll" 74 7972 8027
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_see_lexer.mll" 74 7972 7980 "odoc_see_lexer.mll" 74 7972 8027
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.mll" 71 7894 7900 "odoc_see_lexer.mll" 75 8028 8035
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 199 8063 8067 "odoc_see_lexer.ml" 199 8063 8084
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_see_lexer.ml" 199 8063 8088 "odoc_see_lexer.ml" 200 8123 8173
+)
+"odoc_see_lexer.ml" 199 8063 8088 "odoc_see_lexer.ml" 199 8063 8094
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 188 7733 7757 "odoc_see_lexer.ml" 188 7733 7763
+)
+"odoc_see_lexer.ml" 199 8063 8088 "odoc_see_lexer.ml" 199 8063 8113
+type(
+  Lexing.lexbuf -> unit
+)
+"odoc_see_lexer.ml" 199 8063 8114 "odoc_see_lexer.ml" 199 8063 8120
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 188 7733 7757 "odoc_see_lexer.ml" 188 7733 7763
+)
+"odoc_see_lexer.ml" 199 8063 8088 "odoc_see_lexer.ml" 199 8063 8120
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_see_lexer.ml" 200 8123 8129 "odoc_see_lexer.ml" 200 8123 8148
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_url_rec "odoc_see_lexer.ml" 188 7733 7737 "odoc_see_lexer.ml" 188 7733 7756
+)
+"odoc_see_lexer.ml" 200 8123 8149 "odoc_see_lexer.ml" 200 8123 8155
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 188 7733 7757 "odoc_see_lexer.ml" 188 7733 7763
+)
+"odoc_see_lexer.ml" 200 8123 8156 "odoc_see_lexer.ml" 200 8123 8173
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_see_lexer.ml" 199 8063 8067 "odoc_see_lexer.ml" 199 8063 8084
+)
+"odoc_see_lexer.ml" 200 8123 8129 "odoc_see_lexer.ml" 200 8123 8173
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 199 8063 8088 "odoc_see_lexer.ml" 200 8123 8173
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 189 7784 7786 "odoc_see_lexer.ml" 200 8123 8173
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 202 8175 8179 "odoc_see_lexer.ml" 202 8175 8182
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  def doc "odoc_see_lexer.ml" 122 6462 6462 "odoc_see_lexer.ml" 1 0 -1
+)
+"odoc_see_lexer.ml" 202 8175 8183 "odoc_see_lexer.ml" 202 8175 8189
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_see_lexer.ml" 203 8192 8196 "odoc_see_lexer.ml" 203 8192 8225
+)
+"odoc_see_lexer.ml" 203 8192 8196 "odoc_see_lexer.ml" 203 8192 8215
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_doc_rec "odoc_see_lexer.ml" 204 8226 8230 "odoc_see_lexer.ml" 204 8226 8249
+)
+"odoc_see_lexer.ml" 203 8192 8216 "odoc_see_lexer.ml" 203 8192 8222
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 202 8175 8183 "odoc_see_lexer.ml" 202 8175 8189
+)
+"odoc_see_lexer.ml" 203 8192 8223 "odoc_see_lexer.ml" 203 8192 8225
+type(
+  int
+)
+"odoc_see_lexer.ml" 203 8192 8196 "odoc_see_lexer.ml" 203 8192 8225
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 204 8226 8230 "odoc_see_lexer.ml" 204 8226 8249
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  def __ocaml_lex_doc_rec "odoc_see_lexer.ml" 122 6462 6462 "odoc_see_lexer.ml" 1 0 -1
+)
+"odoc_see_lexer.ml" 204 8226 8250 "odoc_see_lexer.ml" 204 8226 8256
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_see_lexer.ml" 204 8226 8257 "odoc_see_lexer.ml" 215 8586 8636
+)
+"odoc_see_lexer.ml" 204 8226 8257 "odoc_see_lexer.ml" 204 8226 8274
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_see_lexer.ml" 205 8277 8279 "odoc_see_lexer.ml" 215 8586 8636
+)
+"odoc_see_lexer.ml" 205 8277 8285 "odoc_see_lexer.ml" 205 8277 8298
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"odoc_see_lexer.ml" 205 8277 8299 "odoc_see_lexer.ml" 205 8277 8317
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "odoc_see_lexer.ml" 25 947 951 "odoc_see_lexer.ml" 25 947 969
+)
+"odoc_see_lexer.ml" 205 8277 8318 "odoc_see_lexer.ml" 205 8277 8335
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_see_lexer.ml" 204 8226 8257 "odoc_see_lexer.ml" 204 8226 8274
+)
+"odoc_see_lexer.ml" 205 8277 8336 "odoc_see_lexer.ml" 205 8277 8342
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 204 8226 8250 "odoc_see_lexer.ml" 204 8226 8256
+)
+"odoc_see_lexer.ml" 205 8277 8285 "odoc_see_lexer.ml" 205 8277 8342
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_see_lexer.ml" 206 8348 8356 "odoc_see_lexer.ml" 206 8348 8357
+type(
+  int
+)
+"odoc_see_lexer.mll" 81 8395 8407 "odoc_see_lexer.mll" 81 8395 8408
+type(
+  string
+)
+ident(
+  def s "odoc_see_lexer.mll" 82 8435 8443 "odoc_see_lexer.mll" 82 8435 8490
+)
+"odoc_see_lexer.mll" 81 8395 8411 "odoc_see_lexer.mll" 81 8395 8424
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_see_lexer.mll" 81 8395 8425 "odoc_see_lexer.mll" 81 8395 8431
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 204 8226 8250 "odoc_see_lexer.ml" 204 8226 8256
+)
+"odoc_see_lexer.mll" 81 8395 8411 "odoc_see_lexer.mll" 81 8395 8431
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_see_lexer.mll" 82 8435 8452 "odoc_see_lexer.mll" 82 8435 8462
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"odoc_see_lexer.mll" 82 8435 8463 "odoc_see_lexer.mll" 82 8435 8464
+type(
+  string
+)
+ident(
+  int_ref s "odoc_see_lexer.mll" 81 8395 8407 "odoc_see_lexer.mll" 81 8395 8408
+)
+"odoc_see_lexer.mll" 82 8435 8465 "odoc_see_lexer.mll" 82 8435 8466
+type(
+  int
+)
+"odoc_see_lexer.mll" 82 8435 8469 "odoc_see_lexer.mll" 82 8435 8482
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_see_lexer.mll" 82 8435 8483 "odoc_see_lexer.mll" 82 8435 8484
+type(
+  string
+)
+ident(
+  int_ref s "odoc_see_lexer.mll" 81 8395 8407 "odoc_see_lexer.mll" 81 8395 8408
+)
+"odoc_see_lexer.mll" 82 8435 8468 "odoc_see_lexer.mll" 82 8435 8485
+type(
+  int
+)
+"odoc_see_lexer.mll" 82 8435 8486 "odoc_see_lexer.mll" 82 8435 8487
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"odoc_see_lexer.mll" 82 8435 8487 "odoc_see_lexer.mll" 82 8435 8488
+type(
+  int
+)
+"odoc_see_lexer.mll" 82 8435 8467 "odoc_see_lexer.mll" 82 8435 8489
+type(
+  int
+)
+"odoc_see_lexer.mll" 82 8435 8451 "odoc_see_lexer.mll" 82 8435 8490
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_see_lexer.mll" 82 8435 8443 "odoc_see_lexer.mll" 82 8435 8490
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.mll" 80 8387 8393 "odoc_see_lexer.mll" 83 8491 8498
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 214 8526 8530 "odoc_see_lexer.ml" 214 8526 8547
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_see_lexer.ml" 214 8526 8551 "odoc_see_lexer.ml" 215 8586 8636
+)
+"odoc_see_lexer.ml" 214 8526 8551 "odoc_see_lexer.ml" 214 8526 8557
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 204 8226 8250 "odoc_see_lexer.ml" 204 8226 8256
+)
+"odoc_see_lexer.ml" 214 8526 8551 "odoc_see_lexer.ml" 214 8526 8576
+type(
+  Lexing.lexbuf -> unit
+)
+"odoc_see_lexer.ml" 214 8526 8577 "odoc_see_lexer.ml" 214 8526 8583
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 204 8226 8250 "odoc_see_lexer.ml" 204 8226 8256
+)
+"odoc_see_lexer.ml" 214 8526 8551 "odoc_see_lexer.ml" 214 8526 8583
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_see_lexer.ml" 215 8586 8592 "odoc_see_lexer.ml" 215 8586 8611
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_doc_rec "odoc_see_lexer.ml" 204 8226 8230 "odoc_see_lexer.ml" 204 8226 8249
+)
+"odoc_see_lexer.ml" 215 8586 8612 "odoc_see_lexer.ml" 215 8586 8618
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 204 8226 8250 "odoc_see_lexer.ml" 204 8226 8256
+)
+"odoc_see_lexer.ml" 215 8586 8619 "odoc_see_lexer.ml" 215 8586 8636
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_see_lexer.ml" 214 8526 8530 "odoc_see_lexer.ml" 214 8526 8547
+)
+"odoc_see_lexer.ml" 215 8586 8592 "odoc_see_lexer.ml" 215 8586 8636
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 214 8526 8551 "odoc_see_lexer.ml" 215 8586 8636
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 205 8277 8279 "odoc_see_lexer.ml" 215 8586 8636
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 217 8638 8642 "odoc_see_lexer.ml" 217 8638 8646
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  def file "odoc_see_lexer.ml" 122 6462 6462 "odoc_see_lexer.ml" 1 0 -1
+)
+"odoc_see_lexer.ml" 217 8638 8647 "odoc_see_lexer.ml" 217 8638 8653
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_see_lexer.ml" 218 8656 8660 "odoc_see_lexer.ml" 218 8656 8690
+)
+"odoc_see_lexer.ml" 218 8656 8660 "odoc_see_lexer.ml" 218 8656 8680
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_file_rec "odoc_see_lexer.ml" 219 8691 8695 "odoc_see_lexer.ml" 219 8691 8715
+)
+"odoc_see_lexer.ml" 218 8656 8681 "odoc_see_lexer.ml" 218 8656 8687
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 217 8638 8647 "odoc_see_lexer.ml" 217 8638 8653
+)
+"odoc_see_lexer.ml" 218 8656 8688 "odoc_see_lexer.ml" 218 8656 8690
+type(
+  int
+)
+"odoc_see_lexer.ml" 218 8656 8660 "odoc_see_lexer.ml" 218 8656 8690
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 219 8691 8695 "odoc_see_lexer.ml" 219 8691 8715
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  def __ocaml_lex_file_rec "odoc_see_lexer.ml" 122 6462 6462 "odoc_see_lexer.ml" 1 0 -1
+)
+"odoc_see_lexer.ml" 219 8691 8716 "odoc_see_lexer.ml" 219 8691 8722
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_see_lexer.ml" 219 8691 8723 "odoc_see_lexer.ml" 230 9053 9104
+)
+"odoc_see_lexer.ml" 219 8691 8723 "odoc_see_lexer.ml" 219 8691 8740
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_see_lexer.ml" 220 8743 8745 "odoc_see_lexer.ml" 230 9053 9104
+)
+"odoc_see_lexer.ml" 220 8743 8751 "odoc_see_lexer.ml" 220 8743 8764
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"odoc_see_lexer.ml" 220 8743 8765 "odoc_see_lexer.ml" 220 8743 8783
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "odoc_see_lexer.ml" 25 947 951 "odoc_see_lexer.ml" 25 947 969
+)
+"odoc_see_lexer.ml" 220 8743 8784 "odoc_see_lexer.ml" 220 8743 8801
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_see_lexer.ml" 219 8691 8723 "odoc_see_lexer.ml" 219 8691 8740
+)
+"odoc_see_lexer.ml" 220 8743 8802 "odoc_see_lexer.ml" 220 8743 8808
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 219 8691 8716 "odoc_see_lexer.ml" 219 8691 8722
+)
+"odoc_see_lexer.ml" 220 8743 8751 "odoc_see_lexer.ml" 220 8743 8808
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_see_lexer.ml" 221 8814 8822 "odoc_see_lexer.ml" 221 8814 8823
+type(
+  int
+)
+"odoc_see_lexer.mll" 88 8861 8873 "odoc_see_lexer.mll" 88 8861 8874
+type(
+  string
+)
+ident(
+  def s "odoc_see_lexer.mll" 89 8901 8909 "odoc_see_lexer.mll" 89 8901 8957
+)
+"odoc_see_lexer.mll" 88 8861 8877 "odoc_see_lexer.mll" 88 8861 8890
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_see_lexer.mll" 88 8861 8891 "odoc_see_lexer.mll" 88 8861 8897
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 219 8691 8716 "odoc_see_lexer.ml" 219 8691 8722
+)
+"odoc_see_lexer.mll" 88 8861 8877 "odoc_see_lexer.mll" 88 8861 8897
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_see_lexer.mll" 89 8901 8919 "odoc_see_lexer.mll" 89 8901 8929
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"odoc_see_lexer.mll" 89 8901 8930 "odoc_see_lexer.mll" 89 8901 8931
+type(
+  string
+)
+ident(
+  int_ref s "odoc_see_lexer.mll" 88 8861 8873 "odoc_see_lexer.mll" 88 8861 8874
+)
+"odoc_see_lexer.mll" 89 8901 8932 "odoc_see_lexer.mll" 89 8901 8933
+type(
+  int
+)
+"odoc_see_lexer.mll" 89 8901 8936 "odoc_see_lexer.mll" 89 8901 8949
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_see_lexer.mll" 89 8901 8950 "odoc_see_lexer.mll" 89 8901 8951
+type(
+  string
+)
+ident(
+  int_ref s "odoc_see_lexer.mll" 88 8861 8873 "odoc_see_lexer.mll" 88 8861 8874
+)
+"odoc_see_lexer.mll" 89 8901 8935 "odoc_see_lexer.mll" 89 8901 8952
+type(
+  int
+)
+"odoc_see_lexer.mll" 89 8901 8953 "odoc_see_lexer.mll" 89 8901 8954
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"odoc_see_lexer.mll" 89 8901 8954 "odoc_see_lexer.mll" 89 8901 8955
+type(
+  int
+)
+"odoc_see_lexer.mll" 89 8901 8934 "odoc_see_lexer.mll" 89 8901 8956
+type(
+  int
+)
+"odoc_see_lexer.mll" 89 8901 8918 "odoc_see_lexer.mll" 89 8901 8957
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_see_lexer.mll" 89 8901 8909 "odoc_see_lexer.mll" 89 8901 8957
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.mll" 87 8853 8859 "odoc_see_lexer.mll" 90 8958 8965
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 229 8993 8997 "odoc_see_lexer.ml" 229 8993 9014
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_see_lexer.ml" 229 8993 9018 "odoc_see_lexer.ml" 230 9053 9104
+)
+"odoc_see_lexer.ml" 229 8993 9018 "odoc_see_lexer.ml" 229 8993 9024
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 219 8691 8716 "odoc_see_lexer.ml" 219 8691 8722
+)
+"odoc_see_lexer.ml" 229 8993 9018 "odoc_see_lexer.ml" 229 8993 9043
+type(
+  Lexing.lexbuf -> unit
+)
+"odoc_see_lexer.ml" 229 8993 9044 "odoc_see_lexer.ml" 229 8993 9050
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 219 8691 8716 "odoc_see_lexer.ml" 219 8691 8722
+)
+"odoc_see_lexer.ml" 229 8993 9018 "odoc_see_lexer.ml" 229 8993 9050
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_see_lexer.ml" 230 9053 9059 "odoc_see_lexer.ml" 230 9053 9079
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_file_rec "odoc_see_lexer.ml" 219 8691 8695 "odoc_see_lexer.ml" 219 8691 8715
+)
+"odoc_see_lexer.ml" 230 9053 9080 "odoc_see_lexer.ml" 230 9053 9086
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 219 8691 8716 "odoc_see_lexer.ml" 219 8691 8722
+)
+"odoc_see_lexer.ml" 230 9053 9087 "odoc_see_lexer.ml" 230 9053 9104
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_see_lexer.ml" 229 8993 8997 "odoc_see_lexer.ml" 229 8993 9014
+)
+"odoc_see_lexer.ml" 230 9053 9059 "odoc_see_lexer.ml" 230 9053 9104
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 229 8993 9018 "odoc_see_lexer.ml" 230 9053 9104
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 220 8743 8745 "odoc_see_lexer.ml" 230 9053 9104
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 232 9106 9110 "odoc_see_lexer.ml" 232 9106 9114
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  def desc "odoc_see_lexer.ml" 122 6462 6462 "odoc_see_lexer.ml" 1 0 -1
+)
+"odoc_see_lexer.ml" 232 9106 9115 "odoc_see_lexer.ml" 232 9106 9121
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_see_lexer.ml" 233 9124 9128 "odoc_see_lexer.ml" 233 9124 9158
+)
+"odoc_see_lexer.ml" 233 9124 9128 "odoc_see_lexer.ml" 233 9124 9148
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_desc_rec "odoc_see_lexer.ml" 234 9159 9163 "odoc_see_lexer.ml" 234 9159 9183
+)
+"odoc_see_lexer.ml" 233 9124 9149 "odoc_see_lexer.ml" 233 9124 9155
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 232 9106 9115 "odoc_see_lexer.ml" 232 9106 9121
+)
+"odoc_see_lexer.ml" 233 9124 9156 "odoc_see_lexer.ml" 233 9124 9158
+type(
+  int
+)
+"odoc_see_lexer.ml" 233 9124 9128 "odoc_see_lexer.ml" 233 9124 9158
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 234 9159 9163 "odoc_see_lexer.ml" 234 9159 9183
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  def __ocaml_lex_desc_rec "odoc_see_lexer.ml" 122 6462 6462 "odoc_see_lexer.ml" 1 0 -1
+)
+"odoc_see_lexer.ml" 234 9159 9184 "odoc_see_lexer.ml" 234 9159 9190
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_see_lexer.ml" 234 9159 9191 "odoc_see_lexer.ml" 250 9597 9648
+)
+"odoc_see_lexer.ml" 234 9159 9191 "odoc_see_lexer.ml" 234 9159 9208
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_see_lexer.ml" 235 9211 9213 "odoc_see_lexer.ml" 250 9597 9648
+)
+"odoc_see_lexer.ml" 235 9211 9219 "odoc_see_lexer.ml" 235 9211 9232
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"odoc_see_lexer.ml" 235 9211 9233 "odoc_see_lexer.ml" 235 9211 9251
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "odoc_see_lexer.ml" 25 947 951 "odoc_see_lexer.ml" 25 947 969
+)
+"odoc_see_lexer.ml" 235 9211 9252 "odoc_see_lexer.ml" 235 9211 9269
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_see_lexer.ml" 234 9159 9191 "odoc_see_lexer.ml" 234 9159 9208
+)
+"odoc_see_lexer.ml" 235 9211 9270 "odoc_see_lexer.ml" 235 9211 9276
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 234 9159 9184 "odoc_see_lexer.ml" 234 9159 9190
+)
+"odoc_see_lexer.ml" 235 9211 9219 "odoc_see_lexer.ml" 235 9211 9276
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_see_lexer.ml" 236 9282 9290 "odoc_see_lexer.ml" 236 9282 9291
+type(
+  int
+)
+"odoc_see_lexer.mll" 95 9321 9335 "odoc_see_lexer.mll" 95 9321 9350
+type(
+  Buffer.t -> string
+)
+ident(
+  ext_ref Buffer.contents
+)
+"odoc_see_lexer.mll" 95 9321 9351 "odoc_see_lexer.mll" 95 9321 9354
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "odoc_see_lexer.mll" 20 893 897 "odoc_see_lexer.mll" 20 893 900
+)
+"odoc_see_lexer.mll" 95 9321 9334 "odoc_see_lexer.mll" 95 9321 9355
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_see_lexer.mll" 95 9321 9327 "odoc_see_lexer.mll" 95 9321 9357
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 241 9385 9389 "odoc_see_lexer.ml" 241 9385 9390
+type(
+  int
+)
+"odoc_see_lexer.mll" 98 9428 9436 "odoc_see_lexer.mll" 98 9428 9453
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"odoc_see_lexer.mll" 98 9428 9454 "odoc_see_lexer.mll" 98 9428 9457
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "odoc_see_lexer.mll" 20 893 897 "odoc_see_lexer.mll" 20 893 900
+)
+"odoc_see_lexer.mll" 98 9428 9459 "odoc_see_lexer.mll" 98 9428 9472
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"odoc_see_lexer.mll" 98 9428 9473 "odoc_see_lexer.mll" 98 9428 9479
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 234 9159 9184 "odoc_see_lexer.ml" 234 9159 9190
+)
+"odoc_see_lexer.mll" 98 9428 9458 "odoc_see_lexer.mll" 98 9428 9480
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_see_lexer.mll" 98 9428 9436 "odoc_see_lexer.mll" 98 9428 9480
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_see_lexer.mll" 99 9482 9490 "odoc_see_lexer.mll" 99 9482 9494
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref desc "odoc_see_lexer.ml" 232 9106 9110 "odoc_see_lexer.ml" 232 9106 9114
+)
+"odoc_see_lexer.mll" 99 9482 9495 "odoc_see_lexer.mll" 99 9482 9501
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 234 9159 9184 "odoc_see_lexer.ml" 234 9159 9190
+)
+"odoc_see_lexer.mll" 99 9482 9490 "odoc_see_lexer.mll" 99 9482 9501
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.mll" 97 9420 9426 "odoc_see_lexer.mll" 100 9502 9509
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 249 9537 9541 "odoc_see_lexer.ml" 249 9537 9558
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "odoc_see_lexer.ml" 249 9537 9562 "odoc_see_lexer.ml" 250 9597 9648
+)
+"odoc_see_lexer.ml" 249 9537 9562 "odoc_see_lexer.ml" 249 9537 9568
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 234 9159 9184 "odoc_see_lexer.ml" 234 9159 9190
+)
+"odoc_see_lexer.ml" 249 9537 9562 "odoc_see_lexer.ml" 249 9537 9587
+type(
+  Lexing.lexbuf -> unit
+)
+"odoc_see_lexer.ml" 249 9537 9588 "odoc_see_lexer.ml" 249 9537 9594
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 234 9159 9184 "odoc_see_lexer.ml" 234 9159 9190
+)
+"odoc_see_lexer.ml" 249 9537 9562 "odoc_see_lexer.ml" 249 9537 9594
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_see_lexer.ml" 250 9597 9603 "odoc_see_lexer.ml" 250 9597 9623
+type(
+  Lexing.lexbuf -> int -> Odoc_parser.token
+)
+ident(
+  int_ref __ocaml_lex_desc_rec "odoc_see_lexer.ml" 234 9159 9163 "odoc_see_lexer.ml" 234 9159 9183
+)
+"odoc_see_lexer.ml" 250 9597 9624 "odoc_see_lexer.ml" 250 9597 9630
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_see_lexer.ml" 234 9159 9184 "odoc_see_lexer.ml" 234 9159 9190
+)
+"odoc_see_lexer.ml" 250 9597 9631 "odoc_see_lexer.ml" 250 9597 9648
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "odoc_see_lexer.ml" 249 9537 9541 "odoc_see_lexer.ml" 249 9537 9558
+)
+"odoc_see_lexer.ml" 250 9597 9603 "odoc_see_lexer.ml" 250 9597 9648
+call(
+  tail
+)
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 249 9537 9562 "odoc_see_lexer.ml" 250 9597 9648
+type(
+  Odoc_parser.token
+)
+"odoc_see_lexer.ml" 235 9211 9213 "odoc_see_lexer.ml" 250 9597 9648
+type(
+  Odoc_parser.token
+)

@@ -1,0 +1,8092 @@
+"rule.ml" 41 1568 1572 "rule.ml" 41 1568 1584
+type(
+  'a gen_rule -> string
+)
+ident(
+  def name_of_rule "rule.ml" 42 1596 1596 "rule.ml" 1 0 -1
+)
+"rule.ml" 41 1568 1585 "rule.ml" 41 1568 1586
+type(
+  'a gen_rule
+)
+ident(
+  def r "rule.ml" 41 1568 1589 "rule.ml" 41 1568 1595
+)
+"rule.ml" 41 1568 1589 "rule.ml" 41 1568 1590
+type(
+  'a gen_rule
+)
+ident(
+  int_ref r "rule.ml" 41 1568 1585 "rule.ml" 41 1568 1586
+)
+"rule.ml" 41 1568 1589 "rule.ml" 41 1568 1595
+type(
+  string
+)
+"rule.ml" 42 1596 1600 "rule.ml" 42 1596 1612
+type(
+  'a gen_rule -> Pathname.t list
+)
+ident(
+  def deps_of_rule "rule.ml" 43 1624 1624 "rule.ml" 1 0 -1
+)
+"rule.ml" 42 1596 1613 "rule.ml" 42 1596 1614
+type(
+  'a gen_rule
+)
+ident(
+  def r "rule.ml" 42 1596 1617 "rule.ml" 42 1596 1623
+)
+"rule.ml" 42 1596 1617 "rule.ml" 42 1596 1618
+type(
+  'a gen_rule
+)
+ident(
+  int_ref r "rule.ml" 42 1596 1613 "rule.ml" 42 1596 1614
+)
+"rule.ml" 42 1596 1617 "rule.ml" 42 1596 1623
+type(
+  Pathname.t list
+)
+"rule.ml" 43 1624 1628 "rule.ml" 43 1624 1641
+type(
+  'a gen_rule -> 'a list
+)
+ident(
+  def prods_of_rule "rule.ml" 44 1654 1654 "rule.ml" 1 0 -1
+)
+"rule.ml" 43 1624 1642 "rule.ml" 43 1624 1643
+type(
+  'a gen_rule
+)
+ident(
+  def r "rule.ml" 43 1624 1646 "rule.ml" 43 1624 1653
+)
+"rule.ml" 43 1624 1646 "rule.ml" 43 1624 1647
+type(
+  'a gen_rule
+)
+ident(
+  int_ref r "rule.ml" 43 1624 1642 "rule.ml" 43 1624 1643
+)
+"rule.ml" 43 1624 1646 "rule.ml" 43 1624 1653
+type(
+  'a list
+)
+"rule.ml" 44 1654 1658 "rule.ml" 44 1654 1671
+type(
+  'a gen_rule -> 'a option
+)
+ident(
+  def stamp_of_rule "rule.ml" 45 1684 1684 "rule.ml" 1 0 -1
+)
+"rule.ml" 44 1654 1672 "rule.ml" 44 1654 1673
+type(
+  'a gen_rule
+)
+ident(
+  def r "rule.ml" 44 1654 1676 "rule.ml" 44 1654 1683
+)
+"rule.ml" 44 1654 1676 "rule.ml" 44 1654 1677
+type(
+  'a gen_rule
+)
+ident(
+  int_ref r "rule.ml" 44 1654 1672 "rule.ml" 44 1654 1673
+)
+"rule.ml" 44 1654 1676 "rule.ml" 44 1654 1683
+type(
+  'a option
+)
+"rule.ml" 45 1684 1688 "rule.ml" 45 1684 1699
+type(
+  'a gen_rule -> string option
+)
+ident(
+  def doc_of_rule "rule.ml" 47 1711 1711 "rule.ml" 1 0 -1
+)
+"rule.ml" 45 1684 1700 "rule.ml" 45 1684 1701
+type(
+  'a gen_rule
+)
+ident(
+  def r "rule.ml" 45 1684 1704 "rule.ml" 45 1684 1709
+)
+"rule.ml" 45 1684 1704 "rule.ml" 45 1684 1705
+type(
+  'a gen_rule
+)
+ident(
+  int_ref r "rule.ml" 45 1684 1700 "rule.ml" 45 1684 1701
+)
+"rule.ml" 45 1684 1704 "rule.ml" 45 1684 1709
+type(
+  string option
+)
+"rule.ml" 49 1811 1815 "rule.ml" 49 1811 1822
+type(
+  'a -> 'b -> 'c
+)
+ident(
+  def compare "rule.ml" 51 1843 1843 "rule.ml" 1 0 -1
+)
+"rule.ml" 49 1811 1823 "rule.ml" 49 1811 1824
+type(
+  'a
+)
+"rule.ml" 49 1811 1825 "rule.ml" 49 1811 1826
+type(
+  'b
+)
+"rule.ml" 49 1811 1836 "rule.ml" 49 1811 1841
+type(
+  bool
+)
+"rule.ml" 49 1811 1829 "rule.ml" 49 1811 1841
+type(
+  'c
+)
+"rule.ml" 51 1843 1847 "rule.ml" 51 1843 1862
+type(
+  Format.formatter -> 'a gen_rule -> unit
+)
+ident(
+  def print_rule_name "rule.ml" 53 1895 1895 "rule.ml" 1 0 -1
+)
+"rule.ml" 51 1843 1863 "rule.ml" 51 1843 1864
+type(
+  Format.formatter
+)
+ident(
+  def f "rule.ml" 51 1843 1865 "rule.ml" 51 1843 1893
+)
+"rule.ml" 51 1843 1865 "rule.ml" 51 1843 1866
+type(
+  'a gen_rule
+)
+ident(
+  def r "rule.ml" 51 1843 1869 "rule.ml" 51 1843 1893
+)
+"rule.ml" 51 1843 1869 "rule.ml" 51 1843 1884
+type(
+  Format.formatter -> string -> unit
+)
+ident(
+  ext_ref Format.pp_print_string
+)
+"rule.ml" 51 1843 1885 "rule.ml" 51 1843 1886
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "rule.ml" 51 1843 1863 "rule.ml" 51 1843 1864
+)
+"rule.ml" 51 1843 1887 "rule.ml" 51 1843 1888
+type(
+  'a gen_rule
+)
+ident(
+  int_ref r "rule.ml" 51 1843 1865 "rule.ml" 51 1843 1866
+)
+"rule.ml" 51 1843 1887 "rule.ml" 51 1843 1893
+type(
+  string
+)
+"rule.ml" 51 1843 1869 "rule.ml" 51 1843 1893
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 53 1895 1899 "rule.ml" 53 1895 1918
+type(
+  Format.formatter -> Pathname.t list -> unit
+)
+ident(
+  def print_resource_list "rule.ml" 55 1948 1948 "rule.ml" 1 0 -1
+)
+"rule.ml" 53 1895 1921 "rule.ml" 53 1895 1931
+type(
+  (Format.formatter -> Pathname.t -> unit) ->
+  Format.formatter -> Pathname.t list -> unit
+)
+ident(
+  ext_ref My_std.List.print
+)
+"rule.ml" 53 1895 1932 "rule.ml" 53 1895 1946
+type(
+  Format.formatter -> Pathname.t -> unit
+)
+ident(
+  ext_ref Resource.print
+)
+"rule.ml" 53 1895 1921 "rule.ml" 53 1895 1946
+call(
+  stack
+)
+type(
+  Format.formatter -> Pathname.t list -> unit
+)
+"rule.ml" 55 1948 1952 "rule.ml" 55 1948 1971
+type(
+  (Format.formatter -> 'a -> 'b) -> Format.formatter -> 'a gen_rule -> unit
+)
+ident(
+  def print_rule_contents "rule.ml" 63 2276 2276 "rule.ml" 1 0 -1
+)
+"rule.ml" 55 1948 1972 "rule.ml" 55 1948 1977
+type(
+  Format.formatter -> 'a -> 'b
+)
+ident(
+  def ppelt "rule.ml" 55 1948 1978 "rule.ml" 61 2232 2274
+)
+"rule.ml" 55 1948 1978 "rule.ml" 55 1948 1979
+type(
+  Format.formatter
+)
+ident(
+  def f "rule.ml" 55 1948 1980 "rule.ml" 61 2232 2274
+)
+"rule.ml" 55 1948 1980 "rule.ml" 55 1948 1981
+type(
+  'a gen_rule
+)
+ident(
+  def r "rule.ml" 56 1984 1986 "rule.ml" 61 2232 2274
+)
+"rule.ml" 56 1984 1986 "rule.ml" 56 1984 1993
+type(
+  Format.formatter ->
+  (string ->
+   (Format.formatter -> Pathname.t list -> unit) ->
+   Pathname.t list ->
+   (Format.formatter -> 'a list -> unit) -> 'a list -> string -> unit,
+   Format.formatter, unit)
+  format ->
+  string ->
+  (Format.formatter -> Pathname.t list -> unit) ->
+  Pathname.t list ->
+  (Format.formatter -> 'a list -> unit) -> 'a list -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"rule.ml" 56 1984 1994 "rule.ml" 56 1984 1995
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "rule.ml" 55 1948 1978 "rule.ml" 55 1948 1979
+)
+"rule.ml" 56 1984 1996 "rule.ml" 56 1984 2117
+type(
+  (string ->
+   (Format.formatter -> Pathname.t list -> unit) ->
+   Pathname.t list ->
+   (Format.formatter -> 'a list -> unit) -> 'a list -> string -> unit,
+   Format.formatter, unit)
+  format
+)
+"rule.ml" 57 2118 2122 "rule.ml" 57 2118 2123
+type(
+  'a gen_rule
+)
+ident(
+  int_ref r "rule.ml" 55 1948 1980 "rule.ml" 55 1948 1981
+)
+"rule.ml" 57 2118 2122 "rule.ml" 57 2118 2128
+type(
+  string
+)
+"rule.ml" 57 2118 2129 "rule.ml" 57 2118 2148
+type(
+  Format.formatter -> Pathname.t list -> unit
+)
+ident(
+  int_ref print_resource_list "rule.ml" 53 1895 1899 "rule.ml" 53 1895 1918
+)
+"rule.ml" 57 2118 2149 "rule.ml" 57 2118 2150
+type(
+  'a gen_rule
+)
+ident(
+  int_ref r "rule.ml" 55 1948 1980 "rule.ml" 55 1948 1981
+)
+"rule.ml" 57 2118 2149 "rule.ml" 57 2118 2155
+type(
+  Pathname.t list
+)
+"rule.ml" 57 2118 2157 "rule.ml" 57 2118 2167
+type(
+  (Format.formatter -> 'a -> 'b) -> Format.formatter -> 'a list -> unit
+)
+ident(
+  ext_ref My_std.List.print
+)
+"rule.ml" 57 2118 2168 "rule.ml" 57 2118 2173
+type(
+  Format.formatter -> 'a -> 'b
+)
+ident(
+  int_ref ppelt "rule.ml" 55 1948 1972 "rule.ml" 55 1948 1977
+)
+"rule.ml" 57 2118 2156 "rule.ml" 57 2118 2174
+call(
+  stack
+)
+type(
+  Format.formatter -> 'a list -> unit
+)
+"rule.ml" 58 2175 2179 "rule.ml" 58 2175 2180
+type(
+  'a gen_rule
+)
+ident(
+  int_ref r "rule.ml" 55 1948 1980 "rule.ml" 55 1948 1981
+)
+"rule.ml" 58 2175 2179 "rule.ml" 58 2175 2186
+type(
+  'a list
+)
+"rule.ml" 59 2187 2198 "rule.ml" 59 2187 2199
+type(
+  'a gen_rule
+)
+ident(
+  int_ref r "rule.ml" 55 1948 1980 "rule.ml" 55 1948 1981
+)
+"rule.ml" 59 2187 2198 "rule.ml" 59 2187 2203
+type(
+  string option
+)
+"rule.ml" 60 2209 2217 "rule.ml" 60 2209 2221
+type(
+  string option
+)
+"rule.ml" 60 2209 2225 "rule.ml" 60 2209 2231
+type(
+  string
+)
+"rule.ml" 61 2232 2245 "rule.ml" 61 2232 2248
+type(
+  string
+)
+ident(
+  def doc "rule.ml" 61 2232 2252 "rule.ml" 61 2232 2273
+)
+"rule.ml" 61 2232 2240 "rule.ml" 61 2232 2248
+type(
+  string option
+)
+"rule.ml" 61 2232 2252 "rule.ml" 61 2232 2259
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Format.sprintf
+)
+"rule.ml" 61 2232 2260 "rule.ml" 61 2232 2269
+type(
+  (string -> string, unit, string) format
+)
+"rule.ml" 61 2232 2270 "rule.ml" 61 2232 2273
+type(
+  string
+)
+ident(
+  int_ref doc "rule.ml" 61 2232 2245 "rule.ml" 61 2232 2248
+)
+"rule.ml" 61 2232 2252 "rule.ml" 61 2232 2273
+call(
+  stack
+)
+type(
+  string
+)
+"rule.ml" 59 2187 2191 "rule.ml" 61 2232 2274
+type(
+  string
+)
+"rule.ml" 56 1984 1986 "rule.ml" 61 2232 2274
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 63 2276 2280 "rule.ml" 63 2276 2292
+type(
+  (Format.formatter -> 'a -> 'b) -> Format.formatter -> 'a gen_rule -> unit
+)
+ident(
+  def pretty_print "rule.ml" 72 2568 2568 "rule.ml" 1 0 -1
+)
+"rule.ml" 63 2276 2293 "rule.ml" 63 2276 2298
+type(
+  Format.formatter -> 'a -> 'b
+)
+ident(
+  def ppelt "rule.ml" 63 2276 2299 "rule.ml" 70 2543 2564
+)
+"rule.ml" 63 2276 2299 "rule.ml" 63 2276 2300
+type(
+  Format.formatter
+)
+ident(
+  def f "rule.ml" 63 2276 2301 "rule.ml" 70 2543 2564
+)
+"rule.ml" 63 2276 2301 "rule.ml" 63 2276 2302
+type(
+  'a gen_rule
+)
+ident(
+  def r "rule.ml" 64 2305 2307 "rule.ml" 70 2543 2564
+)
+"rule.ml" 64 2305 2307 "rule.ml" 64 2305 2314
+type(
+  Format.formatter ->
+  (string ->
+   (Format.formatter -> Pathname.t list -> unit) ->
+   Pathname.t list ->
+   (Format.formatter -> 'a list -> unit) -> 'a list -> unit,
+   Format.formatter, unit)
+  format ->
+  string ->
+  (Format.formatter -> Pathname.t list -> unit) ->
+  Pathname.t list -> (Format.formatter -> 'a list -> unit) -> 'a list -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"rule.ml" 64 2305 2315 "rule.ml" 64 2305 2316
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "rule.ml" 63 2276 2299 "rule.ml" 63 2276 2300
+)
+"rule.ml" 64 2305 2317 "rule.ml" 64 2305 2356
+type(
+  (string ->
+   (Format.formatter -> Pathname.t list -> unit) ->
+   Pathname.t list ->
+   (Format.formatter -> 'a list -> unit) -> 'a list -> unit,
+   Format.formatter, unit)
+  format
+)
+"rule.ml" 65 2357 2361 "rule.ml" 65 2357 2362
+type(
+  'a gen_rule
+)
+ident(
+  int_ref r "rule.ml" 63 2276 2301 "rule.ml" 63 2276 2302
+)
+"rule.ml" 65 2357 2361 "rule.ml" 65 2357 2367
+type(
+  string
+)
+"rule.ml" 65 2357 2368 "rule.ml" 65 2357 2387
+type(
+  Format.formatter -> Pathname.t list -> unit
+)
+ident(
+  int_ref print_resource_list "rule.ml" 53 1895 1899 "rule.ml" 53 1895 1918
+)
+"rule.ml" 65 2357 2388 "rule.ml" 65 2357 2389
+type(
+  'a gen_rule
+)
+ident(
+  int_ref r "rule.ml" 63 2276 2301 "rule.ml" 63 2276 2302
+)
+"rule.ml" 65 2357 2388 "rule.ml" 65 2357 2394
+type(
+  Pathname.t list
+)
+"rule.ml" 65 2357 2396 "rule.ml" 65 2357 2406
+type(
+  (Format.formatter -> 'a -> 'b) -> Format.formatter -> 'a list -> unit
+)
+ident(
+  ext_ref My_std.List.print
+)
+"rule.ml" 65 2357 2407 "rule.ml" 65 2357 2412
+type(
+  Format.formatter -> 'a -> 'b
+)
+ident(
+  int_ref ppelt "rule.ml" 63 2276 2293 "rule.ml" 63 2276 2298
+)
+"rule.ml" 65 2357 2395 "rule.ml" 65 2357 2413
+call(
+  stack
+)
+type(
+  Format.formatter -> 'a list -> unit
+)
+"rule.ml" 65 2357 2414 "rule.ml" 65 2357 2415
+type(
+  'a gen_rule
+)
+ident(
+  int_ref r "rule.ml" 63 2276 2301 "rule.ml" 63 2276 2302
+)
+"rule.ml" 65 2357 2414 "rule.ml" 65 2357 2421
+type(
+  'a list
+)
+"rule.ml" 64 2305 2307 "rule.ml" 65 2357 2421
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 66 2423 2437 "rule.ml" 66 2423 2438
+type(
+  'a gen_rule
+)
+ident(
+  int_ref r "rule.ml" 63 2276 2301 "rule.ml" 63 2276 2302
+)
+"rule.ml" 66 2423 2437 "rule.ml" 66 2423 2442
+type(
+  string option
+)
+"rule.ml" 67 2448 2454 "rule.ml" 67 2448 2458
+type(
+  string option
+)
+"rule.ml" 67 2448 2462 "rule.ml" 67 2448 2464
+type(
+  unit
+)
+"rule.ml" 68 2465 2476 "rule.ml" 68 2465 2479
+type(
+  string
+)
+ident(
+  def doc "rule.ml" 68 2465 2483 "rule.ml" 68 2465 2535
+)
+"rule.ml" 68 2465 2471 "rule.ml" 68 2465 2479
+type(
+  string option
+)
+"rule.ml" 68 2465 2483 "rule.ml" 68 2465 2490
+type(
+  Format.formatter ->
+  ((Format.formatter -> string -> unit) -> string -> unit, Format.formatter,
+   unit)
+  format -> (Format.formatter -> string -> unit) -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"rule.ml" 68 2465 2491 "rule.ml" 68 2465 2492
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "rule.ml" 63 2276 2299 "rule.ml" 63 2276 2300
+)
+"rule.ml" 68 2465 2493 "rule.ml" 68 2465 2517
+type(
+  ((Format.formatter -> string -> unit) -> string -> unit, Format.formatter,
+   unit)
+  format
+)
+"rule.ml" 68 2465 2518 "rule.ml" 68 2465 2531
+type(
+  Format.formatter -> string -> unit
+)
+ident(
+  ext_ref Format.pp_print_text
+)
+"rule.ml" 68 2465 2532 "rule.ml" 68 2465 2535
+type(
+  string
+)
+ident(
+  int_ref doc "rule.ml" 68 2465 2476 "rule.ml" 68 2465 2479
+)
+"rule.ml" 68 2465 2483 "rule.ml" 68 2465 2535
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 66 2423 2425 "rule.ml" 69 2536 2541
+type(
+  unit
+)
+"rule.ml" 70 2543 2545 "rule.ml" 70 2543 2552
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"rule.ml" 70 2543 2553 "rule.ml" 70 2543 2554
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "rule.ml" 63 2276 2299 "rule.ml" 63 2276 2300
+)
+"rule.ml" 70 2543 2555 "rule.ml" 70 2543 2564
+type(
+  (unit, Format.formatter, unit) format
+)
+"rule.ml" 70 2543 2545 "rule.ml" 70 2543 2564
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 66 2423 2425 "rule.ml" 70 2543 2564
+type(
+  unit
+)
+"rule.ml" 64 2305 2307 "rule.ml" 70 2543 2564
+type(
+  unit
+)
+"rule.ml" 72 2568 2572 "rule.ml" 72 2568 2577
+type(
+  Format.formatter -> 'a gen_rule -> unit
+)
+ident(
+  def print "rule.ml" 74 2597 2597 "rule.ml" 1 0 -1
+)
+"rule.ml" 72 2568 2580 "rule.ml" 72 2568 2595
+type(
+  Format.formatter -> 'a gen_rule -> unit
+)
+ident(
+  int_ref print_rule_name "rule.ml" 51 1843 1847 "rule.ml" 51 1843 1862
+)
+"rule.ml" 74 2597 2601 "rule.ml" 74 2597 2606
+type(
+  Resource.env -> Resource.resource_pattern gen_rule -> Pathname.t gen_rule
+)
+ident(
+  def subst "rule.ml" 89 3258 3258 "rule.ml" 1 0 -1
+)
+"rule.ml" 74 2597 2607 "rule.ml" 74 2597 2610
+type(
+  Resource.env
+)
+ident(
+  def env "rule.ml" 74 2597 2611 "rule.ml" 87 3208 3256
+)
+"rule.ml" 74 2597 2611 "rule.ml" 74 2597 2615
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  def rule "rule.ml" 75 2618 2620 "rule.ml" 87 3208 3256
+)
+"rule.ml" 75 2618 2624 "rule.ml" 75 2618 2639
+type(
+  Pathname.t list -> Pathname.t list
+)
+ident(
+  def subst_resources "rule.ml" 76 2675 2677 "rule.ml" 87 3208 3256
+)
+"rule.ml" 75 2618 2642 "rule.ml" 75 2618 2650
+type(
+  (Pathname.t -> Pathname.t) -> Pathname.t list -> Pathname.t list
+)
+ident(
+  ext_ref My_std.List.map
+)
+"rule.ml" 75 2618 2652 "rule.ml" 75 2618 2666
+type(
+  Resource.env -> Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Resource.subst
+)
+"rule.ml" 75 2618 2667 "rule.ml" 75 2618 2670
+type(
+  Resource.env
+)
+ident(
+  int_ref env "rule.ml" 74 2597 2607 "rule.ml" 74 2597 2610
+)
+"rule.ml" 75 2618 2651 "rule.ml" 75 2618 2671
+call(
+  stack
+)
+type(
+  Pathname.t -> Pathname.t
+)
+"rule.ml" 75 2618 2642 "rule.ml" 75 2618 2671
+call(
+  stack
+)
+type(
+  Pathname.t list -> Pathname.t list
+)
+"rule.ml" 76 2675 2681 "rule.ml" 76 2675 2704
+type(
+  Resource.resource_pattern list -> Pathname.t list
+)
+ident(
+  def subst_resource_patterns "rule.ml" 77 2748 2750 "rule.ml" 87 3208 3256
+)
+"rule.ml" 76 2675 2707 "rule.ml" 76 2675 2715
+type(
+  (Resource.resource_pattern -> Pathname.t) ->
+  Resource.resource_pattern list -> Pathname.t list
+)
+ident(
+  ext_ref My_std.List.map
+)
+"rule.ml" 76 2675 2717 "rule.ml" 76 2675 2739
+type(
+  Resource.env -> Resource.resource_pattern -> Pathname.t
+)
+ident(
+  ext_ref Resource.subst_pattern
+)
+"rule.ml" 76 2675 2740 "rule.ml" 76 2675 2743
+type(
+  Resource.env
+)
+ident(
+  int_ref env "rule.ml" 74 2597 2607 "rule.ml" 74 2597 2610
+)
+"rule.ml" 76 2675 2716 "rule.ml" 76 2675 2744
+call(
+  stack
+)
+type(
+  Resource.resource_pattern -> Pathname.t
+)
+"rule.ml" 76 2675 2707 "rule.ml" 76 2675 2744
+call(
+  stack
+)
+type(
+  Resource.resource_pattern list -> Pathname.t list
+)
+"rule.ml" 77 2748 2754 "rule.ml" 77 2748 2760
+type(
+  (Pathname.t -> 'a) -> Pathname.t -> 'a
+)
+ident(
+  def finder "rule.ml" 78 2819 2821 "rule.ml" 87 3208 3256
+)
+"rule.ml" 77 2748 2761 "rule.ml" 77 2748 2772
+type(
+  Pathname.t -> 'a
+)
+ident(
+  def next_finder "rule.ml" 77 2748 2773 "rule.ml" 77 2748 2815
+)
+"rule.ml" 77 2748 2773 "rule.ml" 77 2748 2774
+type(
+  Pathname.t
+)
+ident(
+  def p "rule.ml" 77 2748 2777 "rule.ml" 77 2748 2815
+)
+"rule.ml" 77 2748 2777 "rule.ml" 77 2748 2788
+type(
+  Pathname.t -> 'a
+)
+ident(
+  int_ref next_finder "rule.ml" 77 2748 2761 "rule.ml" 77 2748 2772
+)
+"rule.ml" 77 2748 2790 "rule.ml" 77 2748 2808
+type(
+  Resource.env -> Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Resource.subst_any
+)
+"rule.ml" 77 2748 2809 "rule.ml" 77 2748 2812
+type(
+  Resource.env
+)
+ident(
+  int_ref env "rule.ml" 74 2597 2607 "rule.ml" 74 2597 2610
+)
+"rule.ml" 77 2748 2813 "rule.ml" 77 2748 2814
+type(
+  Pathname.t
+)
+ident(
+  int_ref p "rule.ml" 77 2748 2773 "rule.ml" 77 2748 2774
+)
+"rule.ml" 77 2748 2789 "rule.ml" 77 2748 2815
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"rule.ml" 77 2748 2777 "rule.ml" 77 2748 2815
+call(
+  tail
+)
+type(
+  'a
+)
+"rule.ml" 78 2819 2825 "rule.ml" 78 2819 2830
+type(
+  Pathname.t option
+)
+ident(
+  def stamp "rule.ml" 79 2919 2921 "rule.ml" 87 3208 3256
+)
+"rule.ml" 78 2819 2839 "rule.ml" 78 2819 2843
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref rule "rule.ml" 74 2597 2611 "rule.ml" 74 2597 2615
+)
+"rule.ml" 78 2819 2839 "rule.ml" 78 2819 2849
+type(
+  Resource.resource_pattern option
+)
+"rule.ml" 78 2819 2855 "rule.ml" 78 2819 2859
+type(
+  Resource.resource_pattern option
+)
+"rule.ml" 78 2819 2863 "rule.ml" 78 2819 2867
+type(
+  Pathname.t option
+)
+"rule.ml" 78 2819 2875 "rule.ml" 78 2819 2876
+type(
+  Resource.resource_pattern
+)
+ident(
+  def x "rule.ml" 78 2819 2880 "rule.ml" 78 2819 2915
+)
+"rule.ml" 78 2819 2870 "rule.ml" 78 2819 2876
+type(
+  Resource.resource_pattern option
+)
+"rule.ml" 78 2819 2886 "rule.ml" 78 2819 2908
+type(
+  Resource.env -> Resource.resource_pattern -> Pathname.t
+)
+ident(
+  ext_ref Resource.subst_pattern
+)
+"rule.ml" 78 2819 2909 "rule.ml" 78 2819 2912
+type(
+  Resource.env
+)
+ident(
+  int_ref env "rule.ml" 74 2597 2607 "rule.ml" 74 2597 2610
+)
+"rule.ml" 78 2819 2913 "rule.ml" 78 2819 2914
+type(
+  Resource.resource_pattern
+)
+ident(
+  int_ref x "rule.ml" 78 2819 2875 "rule.ml" 78 2819 2876
+)
+"rule.ml" 78 2819 2885 "rule.ml" 78 2819 2915
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"rule.ml" 78 2819 2880 "rule.ml" 78 2819 2915
+type(
+  Pathname.t option
+)
+"rule.ml" 78 2819 2833 "rule.ml" 78 2819 2915
+type(
+  Pathname.t option
+)
+"rule.ml" 79 2919 2925 "rule.ml" 79 2919 2930
+type(
+  Pathname.t list
+)
+ident(
+  def prods "rule.ml" 80 2971 2973 "rule.ml" 87 3208 3256
+)
+"rule.ml" 79 2919 2933 "rule.ml" 79 2919 2956
+type(
+  Resource.resource_pattern list -> Pathname.t list
+)
+ident(
+  int_ref subst_resource_patterns "rule.ml" 76 2675 2681 "rule.ml" 76 2675 2704
+)
+"rule.ml" 79 2919 2957 "rule.ml" 79 2919 2961
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref rule "rule.ml" 74 2597 2611 "rule.ml" 74 2597 2615
+)
+"rule.ml" 79 2919 2957 "rule.ml" 79 2919 2967
+type(
+  Resource.resource_pattern list
+)
+"rule.ml" 79 2919 2933 "rule.ml" 79 2919 2967
+call(
+  stack
+)
+type(
+  Pathname.t list
+)
+"rule.ml" 80 2971 2982 "rule.ml" 80 2971 2990
+type(
+  (string ->
+   (Format.formatter -> Resource.env -> unit) -> Resource.env -> string,
+   Format.formatter, unit, string)
+  format4 ->
+  string ->
+  (Format.formatter -> Resource.env -> unit) -> Resource.env -> string
+)
+ident(
+  ext_ref My_std.sbprintf
+)
+"rule.ml" 80 2971 2991 "rule.ml" 80 2971 3000
+type(
+  (string ->
+   (Format.formatter -> Resource.env -> unit) -> Resource.env -> string,
+   Format.formatter, unit, string)
+  format4
+)
+"rule.ml" 80 2971 3001 "rule.ml" 80 2971 3005
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref rule "rule.ml" 74 2597 2611 "rule.ml" 74 2597 2615
+)
+"rule.ml" 80 2971 3001 "rule.ml" 80 2971 3010
+type(
+  string
+)
+"rule.ml" 80 2971 3011 "rule.ml" 80 2971 3029
+type(
+  Format.formatter -> Resource.env -> unit
+)
+ident(
+  ext_ref Resource.print_env
+)
+"rule.ml" 80 2971 3030 "rule.ml" 80 2971 3033
+type(
+  Resource.env
+)
+ident(
+  int_ref env "rule.ml" 74 2597 2607 "rule.ml" 74 2597 2610
+)
+"rule.ml" 80 2971 2982 "rule.ml" 80 2971 3033
+call(
+  stack
+)
+type(
+  string
+)
+"rule.ml" 81 3035 3047 "rule.ml" 81 3035 3052
+type(
+  Pathname.t list
+)
+ident(
+  int_ref prods "rule.ml" 79 2919 2925 "rule.ml" 79 2919 2930
+)
+"rule.ml" 84 3135 3141 "rule.ml" 84 3135 3156
+type(
+  Pathname.t list -> Pathname.t list
+)
+ident(
+  int_ref subst_resources "rule.ml" 75 2618 2624 "rule.ml" 75 2618 2639
+)
+"rule.ml" 84 3135 3157 "rule.ml" 84 3135 3161
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref rule "rule.ml" 74 2597 2611 "rule.ml" 74 2597 2615
+)
+"rule.ml" 84 3135 3157 "rule.ml" 84 3135 3166
+type(
+  Pathname.t list
+)
+"rule.ml" 84 3135 3141 "rule.ml" 84 3135 3166
+call(
+  stack
+)
+type(
+  Pathname.t list
+)
+"rule.ml" 85 3169 3181 "rule.ml" 85 3169 3186
+type(
+  Pathname.t option
+)
+ident(
+  int_ref stamp "rule.ml" 78 2819 2825 "rule.ml" 78 2819 2830
+)
+"rule.ml" 86 3188 3198 "rule.ml" 86 3188 3202
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref rule "rule.ml" 74 2597 2611 "rule.ml" 74 2597 2615
+)
+"rule.ml" 86 3188 3198 "rule.ml" 86 3188 3206
+type(
+  string option
+)
+"rule.ml" 87 3208 3224 "rule.ml" 87 3208 3227
+type(
+  env
+)
+ident(
+  def env "rule.ml" 87 3208 3231 "rule.ml" 87 3208 3253
+)
+"rule.ml" 87 3208 3231 "rule.ml" 87 3208 3235
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref rule "rule.ml" 74 2597 2611 "rule.ml" 74 2597 2615
+)
+"rule.ml" 87 3208 3231 "rule.ml" 87 3208 3240
+type(
+  env -> builder -> digest_command
+)
+"rule.ml" 87 3208 3242 "rule.ml" 87 3208 3248
+type(
+  env -> env
+)
+ident(
+  int_ref finder "rule.ml" 77 2748 2754 "rule.ml" 77 2748 2760
+)
+"rule.ml" 87 3208 3249 "rule.ml" 87 3208 3252
+type(
+  env
+)
+ident(
+  int_ref env "rule.ml" 87 3208 3224 "rule.ml" 87 3208 3227
+)
+"rule.ml" 87 3208 3241 "rule.ml" 87 3208 3253
+call(
+  stack
+)
+type(
+  env
+)
+"rule.ml" 87 3208 3231 "rule.ml" 87 3208 3253
+call(
+  tail
+)
+type(
+  builder -> digest_command
+)
+"rule.ml" 87 3208 3219 "rule.ml" 87 3208 3254
+type(
+  env -> builder -> digest_command
+)
+"rule.ml" 80 2971 2973 "rule.ml" 87 3208 3256
+type(
+  Pathname.t gen_rule
+)
+"rule.ml" 79 2919 2921 "rule.ml" 87 3208 3256
+type(
+  Pathname.t gen_rule
+)
+"rule.ml" 78 2819 2821 "rule.ml" 87 3208 3256
+type(
+  Pathname.t gen_rule
+)
+"rule.ml" 77 2748 2750 "rule.ml" 87 3208 3256
+type(
+  Pathname.t gen_rule
+)
+"rule.ml" 76 2675 2677 "rule.ml" 87 3208 3256
+type(
+  Pathname.t gen_rule
+)
+"rule.ml" 75 2618 2620 "rule.ml" 87 3208 3256
+type(
+  Pathname.t gen_rule
+)
+"rule.ml" 91 3289 3293 "rule.ml" 91 3289 3304
+type(
+  Pathname.t -> Resource.resource_pattern gen_rule -> rule option
+)
+ident(
+  def can_produce "rule.ml" 100 3544 3544 "rule.ml" 1 0 -1
+)
+"rule.ml" 91 3289 3305 "rule.ml" 91 3289 3311
+type(
+  Pathname.t
+)
+ident(
+  def target "rule.ml" 91 3289 3312 "rule.ml" 98 3512 3542
+)
+"rule.ml" 91 3289 3312 "rule.ml" 91 3289 3316
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  def rule "rule.ml" 92 3319 3321 "rule.ml" 98 3512 3542
+)
+"rule.ml" 93 3325 3329 "rule.ml" 93 3325 3338
+type(
+  (Resource.resource_pattern -> unit) ->
+  Resource.resource_pattern list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"rule.ml" 93 3325 3349 "rule.ml" 93 3325 3357
+type(
+  Resource.resource_pattern
+)
+ident(
+  def resource "rule.ml" 94 3361 3367 "rule.ml" 96 3468 3486
+)
+"rule.ml" 94 3361 3373 "rule.ml" 94 3361 3389
+type(
+  Resource.resource_pattern -> Pathname.t -> Resource.env option
+)
+ident(
+  ext_ref Resource.matchit
+)
+"rule.ml" 94 3361 3390 "rule.ml" 94 3361 3398
+type(
+  Resource.resource_pattern
+)
+ident(
+  int_ref resource "rule.ml" 93 3325 3349 "rule.ml" 93 3325 3357
+)
+"rule.ml" 94 3361 3399 "rule.ml" 94 3361 3405
+type(
+  Pathname.t
+)
+ident(
+  int_ref target "rule.ml" 91 3289 3305 "rule.ml" 91 3289 3311
+)
+"rule.ml" 94 3361 3373 "rule.ml" 94 3361 3405
+call(
+  stack
+)
+type(
+  Resource.env option
+)
+"rule.ml" 95 3411 3424 "rule.ml" 95 3411 3427
+type(
+  Resource.env
+)
+ident(
+  def env "rule.ml" 95 3411 3431 "rule.ml" 95 3411 3467
+)
+"rule.ml" 95 3411 3419 "rule.ml" 95 3411 3427
+type(
+  Resource.env option
+)
+"rule.ml" 95 3411 3431 "rule.ml" 95 3411 3436
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"rule.ml" 95 3411 3451 "rule.ml" 95 3411 3456
+type(
+  Resource.env -> Resource.resource_pattern gen_rule -> rule
+)
+ident(
+  int_ref subst "rule.ml" 74 2597 2601 "rule.ml" 74 2597 2606
+)
+"rule.ml" 95 3411 3457 "rule.ml" 95 3411 3460
+type(
+  Resource.env
+)
+ident(
+  int_ref env "rule.ml" 95 3411 3424 "rule.ml" 95 3411 3427
+)
+"rule.ml" 95 3411 3461 "rule.ml" 95 3411 3465
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref rule "rule.ml" 91 3289 3312 "rule.ml" 91 3289 3316
+)
+"rule.ml" 95 3411 3450 "rule.ml" 95 3411 3466
+call(
+  stack
+)
+type(
+  rule
+)
+"rule.ml" 95 3411 3437 "rule.ml" 95 3411 3467
+type(
+  exn
+)
+"rule.ml" 95 3411 3431 "rule.ml" 95 3411 3467
+type(
+  unit
+)
+"rule.ml" 96 3468 3476 "rule.ml" 96 3468 3480
+type(
+  Resource.env option
+)
+"rule.ml" 96 3468 3484 "rule.ml" 96 3468 3486
+type(
+  unit
+)
+"rule.ml" 94 3361 3367 "rule.ml" 96 3468 3486
+type(
+  unit
+)
+"rule.ml" 93 3325 3339 "rule.ml" 97 3487 3494
+type(
+  Resource.resource_pattern -> unit
+)
+"rule.ml" 97 3487 3495 "rule.ml" 97 3487 3499
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref rule "rule.ml" 91 3289 3312 "rule.ml" 91 3289 3316
+)
+"rule.ml" 97 3487 3495 "rule.ml" 97 3487 3505
+type(
+  Resource.resource_pattern list
+)
+"rule.ml" 93 3325 3329 "rule.ml" 97 3487 3505
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 97 3487 3507 "rule.ml" 97 3487 3511
+type(
+  rule option
+)
+"rule.ml" 93 3325 3329 "rule.ml" 97 3487 3511
+type(
+  rule option
+)
+"rule.ml" 98 3512 3531 "rule.ml" 98 3512 3532
+type(
+  rule
+)
+ident(
+  def r "rule.ml" 98 3512 3536 "rule.ml" 98 3512 3542
+)
+"rule.ml" 98 3512 3519 "rule.ml" 98 3512 3532
+type(
+  exn
+)
+"rule.ml" 98 3512 3541 "rule.ml" 98 3512 3542
+type(
+  rule
+)
+ident(
+  int_ref r "rule.ml" 98 3512 3531 "rule.ml" 98 3512 3532
+)
+"rule.ml" 98 3512 3536 "rule.ml" 98 3512 3542
+type(
+  rule option
+)
+"rule.ml" 92 3319 3321 "rule.ml" 98 3512 3542
+type(
+  rule option
+)
+"rule.ml" 100 3544 3548 "rule.ml" 100 3544 3560
+type(
+  Pathname.t gen_rule -> (string * My_std.Digest.t) list
+)
+ident(
+  def digest_prods "rule.ml" 106 3745 3745 "rule.ml" 1 0 -1
+)
+"rule.ml" 100 3544 3561 "rule.ml" 100 3544 3562
+type(
+  Pathname.t gen_rule
+)
+ident(
+  def r "rule.ml" 101 3565 3567 "rule.ml" 104 3727 3743
+)
+"rule.ml" 101 3565 3567 "rule.ml" 101 3565 3582
+type(
+  (Pathname.t ->
+   (string * My_std.Digest.t) list -> (string * My_std.Digest.t) list) ->
+  Pathname.t list ->
+  (string * My_std.Digest.t) list -> (string * My_std.Digest.t) list
+)
+ident(
+  ext_ref My_std.List.fold_right
+)
+"rule.ml" 101 3565 3593 "rule.ml" 101 3565 3594
+type(
+  Pathname.t
+)
+ident(
+  def p "rule.ml" 101 3565 3595 "rule.ml" 103 3662 3726
+)
+"rule.ml" 101 3565 3595 "rule.ml" 101 3565 3598
+type(
+  (string * My_std.Digest.t) list
+)
+ident(
+  def acc "rule.ml" 102 3602 3606 "rule.ml" 103 3662 3726
+)
+"rule.ml" 102 3602 3610 "rule.ml" 102 3602 3611
+type(
+  string
+)
+ident(
+  def f "rule.ml" 103 3662 3666 "rule.ml" 103 3662 3726
+)
+"rule.ml" 102 3602 3614 "rule.ml" 102 3602 3632
+type(
+  Pathname.t -> string
+)
+ident(
+  ext_ref Pathname.to_string
+)
+"rule.ml" 102 3602 3634 "rule.ml" 102 3602 3655
+type(
+  Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Resource.in_build_dir
+)
+"rule.ml" 102 3602 3656 "rule.ml" 102 3602 3657
+type(
+  Pathname.t
+)
+ident(
+  int_ref p "rule.ml" 101 3565 3593 "rule.ml" 101 3565 3594
+)
+"rule.ml" 102 3602 3633 "rule.ml" 102 3602 3658
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"rule.ml" 102 3602 3614 "rule.ml" 102 3602 3658
+call(
+  stack
+)
+type(
+  string
+)
+"rule.ml" 103 3662 3669 "rule.ml" 103 3662 3684
+type(
+  string -> bool
+)
+ident(
+  ext_ref My_std.sys_file_exists
+)
+"rule.ml" 103 3662 3685 "rule.ml" 103 3662 3686
+type(
+  string
+)
+ident(
+  int_ref f "rule.ml" 102 3602 3610 "rule.ml" 102 3602 3611
+)
+"rule.ml" 103 3662 3669 "rule.ml" 103 3662 3686
+call(
+  stack
+)
+type(
+  bool
+)
+"rule.ml" 103 3662 3693 "rule.ml" 103 3662 3694
+type(
+  string
+)
+ident(
+  int_ref f "rule.ml" 102 3602 3610 "rule.ml" 102 3602 3611
+)
+"rule.ml" 103 3662 3696 "rule.ml" 103 3662 3707
+type(
+  string -> My_std.Digest.t
+)
+ident(
+  ext_ref My_std.Digest.file
+)
+"rule.ml" 103 3662 3708 "rule.ml" 103 3662 3709
+type(
+  string
+)
+ident(
+  int_ref f "rule.ml" 102 3602 3610 "rule.ml" 102 3602 3611
+)
+"rule.ml" 103 3662 3696 "rule.ml" 103 3662 3709
+call(
+  stack
+)
+type(
+  My_std.Digest.t
+)
+"rule.ml" 103 3662 3692 "rule.ml" 103 3662 3710
+type(
+  string * My_std.Digest.t
+)
+"rule.ml" 103 3662 3714 "rule.ml" 103 3662 3717
+type(
+  (string * My_std.Digest.t) list
+)
+ident(
+  int_ref acc "rule.ml" 101 3565 3595 "rule.ml" 101 3565 3598
+)
+"rule.ml" 103 3662 3692 "rule.ml" 103 3662 3717
+type(
+  (string * My_std.Digest.t) list
+)
+"rule.ml" 103 3662 3723 "rule.ml" 103 3662 3726
+type(
+  (string * My_std.Digest.t) list
+)
+ident(
+  int_ref acc "rule.ml" 101 3565 3595 "rule.ml" 101 3565 3598
+)
+"rule.ml" 103 3662 3666 "rule.ml" 103 3662 3726
+type(
+  (string * My_std.Digest.t) list
+)
+"rule.ml" 102 3602 3606 "rule.ml" 103 3662 3726
+type(
+  (string * My_std.Digest.t) list
+)
+"rule.ml" 101 3565 3583 "rule.ml" 104 3727 3732
+type(
+  Pathname.t ->
+  (string * My_std.Digest.t) list -> (string * My_std.Digest.t) list
+)
+"rule.ml" 104 3727 3733 "rule.ml" 104 3727 3734
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 100 3544 3561 "rule.ml" 100 3544 3562
+)
+"rule.ml" 104 3727 3733 "rule.ml" 104 3727 3740
+type(
+  Pathname.t list
+)
+"rule.ml" 104 3727 3741 "rule.ml" 104 3727 3743
+type(
+  (string * My_std.Digest.t) list
+)
+"rule.ml" 101 3565 3567 "rule.ml" 104 3727 3743
+call(
+  tail
+)
+type(
+  (string * My_std.Digest.t) list
+)
+"rule.ml" 106 3745 3749 "rule.ml" 106 3745 3760
+type(
+  'a gen_rule -> Resources.t -> string
+)
+ident(
+  def digest_deps "rule.ml" 115 4087 4087 "rule.ml" 1 0 -1
+)
+"rule.ml" 106 3745 3761 "rule.ml" 106 3745 3762
+type(
+  'a gen_rule
+)
+ident(
+  def r "rule.ml" 106 3745 3763 "rule.ml" 113 4032 4085
+)
+"rule.ml" 106 3745 3763 "rule.ml" 106 3745 3770
+type(
+  Resources.t
+)
+ident(
+  def dyndeps "rule.ml" 107 3773 3775 "rule.ml" 113 4032 4085
+)
+"rule.ml" 107 3773 3779 "rule.ml" 107 3773 3782
+type(
+  Buffer.t
+)
+ident(
+  def buf "rule.ml" 108 3807 3809 "rule.ml" 113 4032 4085
+)
+"rule.ml" 107 3773 3785 "rule.ml" 107 3773 3798
+type(
+  int -> Buffer.t
+)
+ident(
+  ext_ref Buffer.create
+)
+"rule.ml" 107 3773 3799 "rule.ml" 107 3773 3803
+type(
+  int
+)
+"rule.ml" 107 3773 3785 "rule.ml" 107 3773 3803
+call(
+  stack
+)
+type(
+  Buffer.t
+)
+"rule.ml" 108 3807 3813 "rule.ml" 108 3807 3825
+type(
+  Pathname.t -> unit
+)
+ident(
+  def add_resource "rule.ml" 109 3891 3893 "rule.ml" 113 4032 4085
+)
+"rule.ml" 108 3807 3826 "rule.ml" 108 3807 3827
+type(
+  Pathname.t
+)
+ident(
+  def r "rule.ml" 108 3807 3830 "rule.ml" 108 3807 3887
+)
+"rule.ml" 108 3807 3830 "rule.ml" 108 3807 3847
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"rule.ml" 108 3807 3848 "rule.ml" 108 3807 3851
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "rule.ml" 107 3773 3779 "rule.ml" 107 3773 3782
+)
+"rule.ml" 108 3807 3853 "rule.ml" 108 3807 3866
+type(
+  My_std.Digest.t -> string
+)
+ident(
+  ext_ref My_std.Digest.to_hex
+)
+"rule.ml" 108 3807 3868 "rule.ml" 108 3807 3883
+type(
+  Pathname.t -> My_std.Digest.t
+)
+ident(
+  ext_ref Resource.digest
+)
+"rule.ml" 108 3807 3884 "rule.ml" 108 3807 3885
+type(
+  Pathname.t
+)
+ident(
+  int_ref r "rule.ml" 108 3807 3826 "rule.ml" 108 3807 3827
+)
+"rule.ml" 108 3807 3867 "rule.ml" 108 3807 3886
+call(
+  stack
+)
+type(
+  My_std.Digest.t
+)
+"rule.ml" 108 3807 3852 "rule.ml" 108 3807 3887
+call(
+  stack
+)
+type(
+  string
+)
+"rule.ml" 108 3807 3830 "rule.ml" 108 3807 3887
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 109 3891 3893 "rule.ml" 109 3891 3910
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"rule.ml" 109 3891 3911 "rule.ml" 109 3891 3914
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "rule.ml" 107 3773 3779 "rule.ml" 107 3773 3782
+)
+"rule.ml" 109 3891 3915 "rule.ml" 109 3891 3922
+type(
+  string
+)
+"rule.ml" 109 3891 3893 "rule.ml" 109 3891 3922
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 110 3924 3926 "rule.ml" 110 3924 3935
+type(
+  (Pathname.t -> unit) -> Pathname.t list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"rule.ml" 110 3924 3936 "rule.ml" 110 3924 3948
+type(
+  Pathname.t -> unit
+)
+ident(
+  int_ref add_resource "rule.ml" 108 3807 3813 "rule.ml" 108 3807 3825
+)
+"rule.ml" 110 3924 3949 "rule.ml" 110 3924 3950
+type(
+  'a gen_rule
+)
+ident(
+  int_ref r "rule.ml" 106 3745 3761 "rule.ml" 106 3745 3762
+)
+"rule.ml" 110 3924 3949 "rule.ml" 110 3924 3955
+type(
+  Pathname.t list
+)
+"rule.ml" 110 3924 3926 "rule.ml" 110 3924 3955
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 111 3957 3959 "rule.ml" 111 3957 3976
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"rule.ml" 111 3957 3977 "rule.ml" 111 3957 3980
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "rule.ml" 107 3773 3779 "rule.ml" 107 3773 3782
+)
+"rule.ml" 111 3957 3981 "rule.ml" 111 3957 3991
+type(
+  string
+)
+"rule.ml" 111 3957 3959 "rule.ml" 111 3957 3991
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 112 3993 3995 "rule.ml" 112 3993 4009
+type(
+  (Resources.elt -> unit) -> Resources.t -> unit
+)
+ident(
+  ext_ref Resources.iter
+)
+"rule.ml" 112 3993 4010 "rule.ml" 112 3993 4022
+type(
+  Resources.elt -> unit
+)
+ident(
+  int_ref add_resource "rule.ml" 108 3807 3813 "rule.ml" 108 3807 3825
+)
+"rule.ml" 112 3993 4023 "rule.ml" 112 3993 4030
+type(
+  Resources.t
+)
+ident(
+  int_ref dyndeps "rule.ml" 106 3745 3763 "rule.ml" 106 3745 3770
+)
+"rule.ml" 112 3993 3995 "rule.ml" 112 3993 4030
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 113 4032 4034 "rule.ml" 113 4032 4047
+type(
+  My_std.Digest.t -> string
+)
+ident(
+  ext_ref My_std.Digest.to_hex
+)
+"rule.ml" 113 4032 4049 "rule.ml" 113 4032 4062
+type(
+  string -> My_std.Digest.t
+)
+ident(
+  ext_ref My_std.Digest.string
+)
+"rule.ml" 113 4032 4064 "rule.ml" 113 4032 4079
+type(
+  Buffer.t -> string
+)
+ident(
+  ext_ref Buffer.contents
+)
+"rule.ml" 113 4032 4080 "rule.ml" 113 4032 4083
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "rule.ml" 107 3773 3779 "rule.ml" 107 3773 3782
+)
+"rule.ml" 113 4032 4063 "rule.ml" 113 4032 4084
+call(
+  stack
+)
+type(
+  string
+)
+"rule.ml" 113 4032 4048 "rule.ml" 113 4032 4085
+call(
+  stack
+)
+type(
+  My_std.Digest.t
+)
+"rule.ml" 113 4032 4034 "rule.ml" 113 4032 4085
+call(
+  tail
+)
+type(
+  string
+)
+"rule.ml" 112 3993 3995 "rule.ml" 113 4032 4085
+type(
+  string
+)
+"rule.ml" 111 3957 3959 "rule.ml" 113 4032 4085
+type(
+  string
+)
+"rule.ml" 110 3924 3926 "rule.ml" 113 4032 4085
+type(
+  string
+)
+"rule.ml" 109 3891 3893 "rule.ml" 113 4032 4085
+type(
+  string
+)
+"rule.ml" 108 3807 3809 "rule.ml" 113 4032 4085
+type(
+  string
+)
+"rule.ml" 107 3773 3775 "rule.ml" 113 4032 4085
+type(
+  string
+)
+"rule.ml" 115 4087 4091 "rule.ml" 115 4087 4102
+type(
+  Pathname.t gen_rule -> Resources.t -> digest_command -> My_std.Digest.t
+)
+ident(
+  def digest_rule "rule.ml" 127 4511 4511 "rule.ml" 1 0 -1
+)
+"rule.ml" 115 4087 4103 "rule.ml" 115 4087 4104
+type(
+  Pathname.t gen_rule
+)
+ident(
+  def r "rule.ml" 115 4087 4105 "rule.ml" 125 4472 4509
+)
+"rule.ml" 115 4087 4105 "rule.ml" 115 4087 4112
+type(
+  Resources.t
+)
+ident(
+  def dyndeps "rule.ml" 115 4087 4113 "rule.ml" 125 4472 4509
+)
+"rule.ml" 115 4087 4113 "rule.ml" 115 4087 4119
+type(
+  digest_command
+)
+ident(
+  def action "rule.ml" 116 4122 4124 "rule.ml" 125 4472 4509
+)
+"rule.ml" 116 4122 4128 "rule.ml" 116 4122 4131
+type(
+  Buffer.t
+)
+ident(
+  def buf "rule.ml" 117 4156 4158 "rule.ml" 125 4472 4509
+)
+"rule.ml" 116 4122 4134 "rule.ml" 116 4122 4147
+type(
+  int -> Buffer.t
+)
+ident(
+  ext_ref Buffer.create
+)
+"rule.ml" 116 4122 4148 "rule.ml" 116 4122 4152
+type(
+  int
+)
+"rule.ml" 116 4122 4134 "rule.ml" 116 4122 4152
+call(
+  stack
+)
+type(
+  Buffer.t
+)
+"rule.ml" 117 4156 4158 "rule.ml" 117 4156 4175
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"rule.ml" 117 4156 4176 "rule.ml" 117 4156 4179
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "rule.ml" 116 4122 4128 "rule.ml" 116 4122 4131
+)
+"rule.ml" 117 4156 4180 "rule.ml" 117 4156 4186
+type(
+  digest_command
+)
+ident(
+  int_ref action "rule.ml" 115 4087 4113 "rule.ml" 115 4087 4119
+)
+"rule.ml" 117 4156 4180 "rule.ml" 117 4156 4193
+type(
+  string
+)
+"rule.ml" 117 4156 4158 "rule.ml" 117 4156 4193
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 118 4195 4201 "rule.ml" 118 4195 4213
+type(
+  Pathname.t -> unit
+)
+ident(
+  def add_resource "rule.ml" 119 4263 4265 "rule.ml" 125 4472 4509
+)
+"rule.ml" 118 4195 4214 "rule.ml" 118 4195 4215
+type(
+  Pathname.t
+)
+ident(
+  def r "rule.ml" 118 4195 4218 "rule.ml" 118 4195 4259
+)
+"rule.ml" 118 4195 4218 "rule.ml" 118 4195 4235
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"rule.ml" 118 4195 4236 "rule.ml" 118 4195 4239
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "rule.ml" 116 4122 4128 "rule.ml" 116 4122 4131
+)
+"rule.ml" 118 4195 4241 "rule.ml" 118 4195 4256
+type(
+  Pathname.t -> string
+)
+ident(
+  ext_ref Resource.digest
+)
+"rule.ml" 118 4195 4257 "rule.ml" 118 4195 4258
+type(
+  Pathname.t
+)
+ident(
+  int_ref r "rule.ml" 118 4195 4214 "rule.ml" 118 4195 4215
+)
+"rule.ml" 118 4195 4240 "rule.ml" 118 4195 4259
+call(
+  stack
+)
+type(
+  string
+)
+"rule.ml" 118 4195 4218 "rule.ml" 118 4195 4259
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 119 4263 4265 "rule.ml" 119 4263 4282
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"rule.ml" 119 4263 4283 "rule.ml" 119 4263 4286
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "rule.ml" 116 4122 4128 "rule.ml" 116 4122 4131
+)
+"rule.ml" 119 4263 4287 "rule.ml" 119 4263 4295
+type(
+  string
+)
+"rule.ml" 119 4263 4265 "rule.ml" 119 4263 4295
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 120 4297 4299 "rule.ml" 120 4297 4308
+type(
+  (Pathname.t -> unit) -> Pathname.t list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"rule.ml" 120 4297 4309 "rule.ml" 120 4297 4321
+type(
+  Pathname.t -> unit
+)
+ident(
+  int_ref add_resource "rule.ml" 118 4195 4201 "rule.ml" 118 4195 4213
+)
+"rule.ml" 120 4297 4322 "rule.ml" 120 4297 4323
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 115 4087 4103 "rule.ml" 115 4087 4104
+)
+"rule.ml" 120 4297 4322 "rule.ml" 120 4297 4329
+type(
+  Pathname.t list
+)
+"rule.ml" 120 4297 4299 "rule.ml" 120 4297 4329
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 121 4331 4333 "rule.ml" 121 4331 4350
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"rule.ml" 121 4331 4351 "rule.ml" 121 4331 4354
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "rule.ml" 116 4122 4128 "rule.ml" 116 4122 4131
+)
+"rule.ml" 121 4331 4355 "rule.ml" 121 4331 4362
+type(
+  string
+)
+"rule.ml" 121 4331 4333 "rule.ml" 121 4331 4362
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 122 4364 4366 "rule.ml" 122 4364 4375
+type(
+  (Pathname.t -> unit) -> Pathname.t list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"rule.ml" 122 4364 4376 "rule.ml" 122 4364 4388
+type(
+  Pathname.t -> unit
+)
+ident(
+  int_ref add_resource "rule.ml" 118 4195 4201 "rule.ml" 118 4195 4213
+)
+"rule.ml" 122 4364 4389 "rule.ml" 122 4364 4390
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 115 4087 4103 "rule.ml" 115 4087 4104
+)
+"rule.ml" 122 4364 4389 "rule.ml" 122 4364 4395
+type(
+  Pathname.t list
+)
+"rule.ml" 122 4364 4366 "rule.ml" 122 4364 4395
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 123 4397 4399 "rule.ml" 123 4397 4416
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"rule.ml" 123 4397 4417 "rule.ml" 123 4397 4420
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "rule.ml" 116 4122 4128 "rule.ml" 116 4122 4131
+)
+"rule.ml" 123 4397 4421 "rule.ml" 123 4397 4431
+type(
+  string
+)
+"rule.ml" 123 4397 4399 "rule.ml" 123 4397 4431
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 124 4433 4435 "rule.ml" 124 4433 4449
+type(
+  (Resources.elt -> unit) -> Resources.t -> unit
+)
+ident(
+  ext_ref Resources.iter
+)
+"rule.ml" 124 4433 4450 "rule.ml" 124 4433 4462
+type(
+  Resources.elt -> unit
+)
+ident(
+  int_ref add_resource "rule.ml" 118 4195 4201 "rule.ml" 118 4195 4213
+)
+"rule.ml" 124 4433 4463 "rule.ml" 124 4433 4470
+type(
+  Resources.t
+)
+ident(
+  int_ref dyndeps "rule.ml" 115 4087 4105 "rule.ml" 115 4087 4112
+)
+"rule.ml" 124 4433 4435 "rule.ml" 124 4433 4470
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 125 4472 4474 "rule.ml" 125 4472 4487
+type(
+  string -> My_std.Digest.t
+)
+ident(
+  ext_ref My_std.Digest.string
+)
+"rule.ml" 125 4472 4489 "rule.ml" 125 4472 4504
+type(
+  Buffer.t -> string
+)
+ident(
+  ext_ref Buffer.contents
+)
+"rule.ml" 125 4472 4505 "rule.ml" 125 4472 4508
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "rule.ml" 116 4122 4128 "rule.ml" 116 4122 4131
+)
+"rule.ml" 125 4472 4488 "rule.ml" 125 4472 4509
+call(
+  stack
+)
+type(
+  string
+)
+"rule.ml" 125 4472 4474 "rule.ml" 125 4472 4509
+call(
+  tail
+)
+type(
+  My_std.Digest.t
+)
+"rule.ml" 124 4433 4435 "rule.ml" 125 4472 4509
+type(
+  My_std.Digest.t
+)
+"rule.ml" 123 4397 4399 "rule.ml" 125 4472 4509
+type(
+  My_std.Digest.t
+)
+"rule.ml" 122 4364 4366 "rule.ml" 125 4472 4509
+type(
+  My_std.Digest.t
+)
+"rule.ml" 121 4331 4333 "rule.ml" 125 4472 4509
+type(
+  My_std.Digest.t
+)
+"rule.ml" 120 4297 4299 "rule.ml" 125 4472 4509
+type(
+  My_std.Digest.t
+)
+"rule.ml" 119 4263 4265 "rule.ml" 125 4472 4509
+type(
+  My_std.Digest.t
+)
+"rule.ml" 118 4195 4197 "rule.ml" 125 4472 4509
+type(
+  My_std.Digest.t
+)
+"rule.ml" 117 4156 4158 "rule.ml" 125 4472 4509
+type(
+  My_std.Digest.t
+)
+"rule.ml" 116 4122 4124 "rule.ml" 125 4472 4509
+type(
+  My_std.Digest.t
+)
+"rule.ml" 127 4511 4515 "rule.ml" 127 4511 4528
+type(
+  'a gen_rule -> string option
+)
+ident(
+  def cached_digest "rule.ml" 131 4609 4609 "rule.ml" 1 0 -1
+)
+"rule.ml" 127 4511 4529 "rule.ml" 127 4511 4530
+type(
+  'a gen_rule
+)
+ident(
+  def r "rule.ml" 128 4533 4535 "rule.ml" 129 4583 4607
+)
+"rule.ml" 128 4533 4545 "rule.ml" 128 4533 4561
+type(
+  string -> string
+)
+ident(
+  ext_ref Digest_cache.get
+)
+"rule.ml" 128 4533 4563 "rule.ml" 128 4533 4571
+type(
+  string
+)
+"rule.ml" 128 4533 4572 "rule.ml" 128 4533 4573
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"rule.ml" 128 4533 4574 "rule.ml" 128 4533 4575
+type(
+  'a gen_rule
+)
+ident(
+  int_ref r "rule.ml" 127 4511 4529 "rule.ml" 127 4511 4530
+)
+"rule.ml" 128 4533 4574 "rule.ml" 128 4533 4580
+type(
+  string
+)
+"rule.ml" 128 4533 4562 "rule.ml" 128 4533 4581
+call(
+  stack
+)
+type(
+  string
+)
+"rule.ml" 128 4533 4544 "rule.ml" 128 4533 4582
+call(
+  stack
+)
+type(
+  string
+)
+"rule.ml" 128 4533 4539 "rule.ml" 128 4533 4582
+type(
+  string option
+)
+"rule.ml" 129 4583 4590 "rule.ml" 129 4583 4599
+type(
+  exn
+)
+"rule.ml" 129 4583 4603 "rule.ml" 129 4583 4607
+type(
+  string option
+)
+"rule.ml" 128 4533 4535 "rule.ml" 129 4583 4607
+type(
+  string option
+)
+"rule.ml" 131 4609 4613 "rule.ml" 131 4609 4625
+type(
+  'a gen_rule -> string -> unit
+)
+ident(
+  def store_digest "rule.ml" 133 4682 4682 "rule.ml" 1 0 -1
+)
+"rule.ml" 131 4609 4626 "rule.ml" 131 4609 4627
+type(
+  'a gen_rule
+)
+ident(
+  def r "rule.ml" 131 4609 4628 "rule.ml" 131 4609 4680
+)
+"rule.ml" 131 4609 4628 "rule.ml" 131 4609 4634
+type(
+  string
+)
+ident(
+  def digest "rule.ml" 131 4609 4637 "rule.ml" 131 4609 4680
+)
+"rule.ml" 131 4609 4637 "rule.ml" 131 4609 4653
+type(
+  string -> string -> unit
+)
+ident(
+  ext_ref Digest_cache.put
+)
+"rule.ml" 131 4609 4655 "rule.ml" 131 4609 4663
+type(
+  string
+)
+"rule.ml" 131 4609 4664 "rule.ml" 131 4609 4665
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"rule.ml" 131 4609 4666 "rule.ml" 131 4609 4667
+type(
+  'a gen_rule
+)
+ident(
+  int_ref r "rule.ml" 131 4609 4626 "rule.ml" 131 4609 4627
+)
+"rule.ml" 131 4609 4666 "rule.ml" 131 4609 4672
+type(
+  string
+)
+"rule.ml" 131 4609 4654 "rule.ml" 131 4609 4673
+call(
+  stack
+)
+type(
+  string
+)
+"rule.ml" 131 4609 4674 "rule.ml" 131 4609 4680
+type(
+  string
+)
+ident(
+  int_ref digest "rule.ml" 131 4609 4628 "rule.ml" 131 4609 4634
+)
+"rule.ml" 131 4609 4637 "rule.ml" 131 4609 4680
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 133 4682 4686 "rule.ml" 133 4682 4698
+type(
+  Format.formatter -> My_std.Digest.t -> unit
+)
+ident(
+  def print_digest "rule.ml" 135 4742 4742 "rule.ml" 1 0 -1
+)
+"rule.ml" 133 4682 4699 "rule.ml" 133 4682 4700
+type(
+  Format.formatter
+)
+ident(
+  def f "rule.ml" 133 4682 4701 "rule.ml" 133 4682 4740
+)
+"rule.ml" 133 4682 4701 "rule.ml" 133 4682 4702
+type(
+  My_std.Digest.t
+)
+ident(
+  def x "rule.ml" 133 4682 4705 "rule.ml" 133 4682 4740
+)
+"rule.ml" 133 4682 4705 "rule.ml" 133 4682 4720
+type(
+  Format.formatter -> string -> unit
+)
+ident(
+  ext_ref Format.pp_print_string
+)
+"rule.ml" 133 4682 4721 "rule.ml" 133 4682 4722
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "rule.ml" 133 4682 4699 "rule.ml" 133 4682 4700
+)
+"rule.ml" 133 4682 4724 "rule.ml" 133 4682 4737
+type(
+  My_std.Digest.t -> string
+)
+ident(
+  ext_ref My_std.Digest.to_hex
+)
+"rule.ml" 133 4682 4738 "rule.ml" 133 4682 4739
+type(
+  My_std.Digest.t
+)
+ident(
+  int_ref x "rule.ml" 133 4682 4701 "rule.ml" 133 4682 4702
+)
+"rule.ml" 133 4682 4723 "rule.ml" 133 4682 4740
+call(
+  stack
+)
+type(
+  string
+)
+"rule.ml" 133 4682 4705 "rule.ml" 133 4682 4740
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 135 4742 4746 "rule.ml" 135 4742 4753
+type(
+  ('a -> 'b -> 'c) -> 'a -> 'b -> 'c option
+)
+ident(
+  def exists2 "rule.ml" 138 4813 4813 "rule.ml" 1 0 -1
+)
+"rule.ml" 135 4742 4754 "rule.ml" 135 4742 4758
+type(
+  'a -> 'b -> 'c
+)
+ident(
+  def find "rule.ml" 135 4742 4759 "rule.ml" 136 4766 4811
+)
+"rule.ml" 135 4742 4759 "rule.ml" 135 4742 4760
+type(
+  'a
+)
+ident(
+  def p "rule.ml" 135 4742 4761 "rule.ml" 136 4766 4811
+)
+"rule.ml" 135 4742 4761 "rule.ml" 135 4742 4763
+type(
+  'b
+)
+ident(
+  def rs "rule.ml" 136 4766 4768 "rule.ml" 136 4766 4811
+)
+"rule.ml" 136 4766 4778 "rule.ml" 136 4766 4782
+type(
+  'a -> 'b -> 'c
+)
+ident(
+  int_ref find "rule.ml" 135 4742 4754 "rule.ml" 135 4742 4758
+)
+"rule.ml" 136 4766 4783 "rule.ml" 136 4766 4784
+type(
+  'a
+)
+ident(
+  int_ref p "rule.ml" 135 4742 4759 "rule.ml" 135 4742 4760
+)
+"rule.ml" 136 4766 4785 "rule.ml" 136 4766 4787
+type(
+  'b
+)
+ident(
+  int_ref rs "rule.ml" 135 4742 4761 "rule.ml" 135 4742 4763
+)
+"rule.ml" 136 4766 4777 "rule.ml" 136 4766 4788
+call(
+  stack
+)
+type(
+  'c
+)
+"rule.ml" 136 4766 4772 "rule.ml" 136 4766 4788
+type(
+  'c option
+)
+"rule.ml" 136 4766 4794 "rule.ml" 136 4766 4803
+type(
+  exn
+)
+"rule.ml" 136 4766 4807 "rule.ml" 136 4766 4811
+type(
+  'c option
+)
+"rule.ml" 136 4766 4768 "rule.ml" 136 4766 4811
+type(
+  'c option
+)
+"rule.ml" 138 4813 4817 "rule.ml" 138 4813 4835
+type(
+  (Command.pathname list list -> ('a, exn) My_std.Outcome.t list) ->
+  Tags.t -> 'a list
+)
+ident(
+  def build_deps_of_tags "rule.ml" 143 4979 4979 "rule.ml" 1 0 -1
+)
+"rule.ml" 138 4813 4836 "rule.ml" 138 4813 4843
+type(
+  Command.pathname list list -> ('a, exn) My_std.Outcome.t list
+)
+ident(
+  def builder "rule.ml" 138 4813 4844 "rule.ml" 141 4903 4977
+)
+"rule.ml" 138 4813 4844 "rule.ml" 138 4813 4848
+type(
+  Tags.t
+)
+ident(
+  def tags "rule.ml" 139 4851 4853 "rule.ml" 141 4903 4977
+)
+"rule.ml" 139 4851 4859 "rule.ml" 139 4851 4879
+type(
+  Tags.t -> Command.pathname list
+)
+ident(
+  ext_ref Command.deps_of_tags
+)
+"rule.ml" 139 4851 4880 "rule.ml" 139 4851 4884
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "rule.ml" 138 4813 4844 "rule.ml" 138 4813 4848
+)
+"rule.ml" 139 4851 4859 "rule.ml" 139 4851 4884
+call(
+  stack
+)
+type(
+  Command.pathname list
+)
+"rule.ml" 140 4890 4894 "rule.ml" 140 4890 4896
+type(
+  Command.pathname list
+)
+"rule.ml" 140 4890 4900 "rule.ml" 140 4890 4902
+type(
+  'a list
+)
+"rule.ml" 141 4903 4907 "rule.ml" 141 4903 4911
+type(
+  Command.pathname list
+)
+ident(
+  def deps "rule.ml" 141 4903 4915 "rule.ml" 141 4903 4977
+)
+"rule.ml" 141 4903 4915 "rule.ml" 141 4903 4923
+type(
+  (('a, exn) My_std.Outcome.t -> 'a) ->
+  ('a, exn) My_std.Outcome.t list -> 'a list
+)
+ident(
+  ext_ref My_std.List.map
+)
+"rule.ml" 141 4903 4924 "rule.ml" 141 4903 4936
+type(
+  ('a, exn) My_std.Outcome.t -> 'a
+)
+ident(
+  ext_ref My_std.Outcome.good
+)
+"rule.ml" 141 4903 4938 "rule.ml" 141 4903 4945
+type(
+  Command.pathname list list -> ('a, exn) My_std.Outcome.t list
+)
+ident(
+  int_ref builder "rule.ml" 138 4813 4836 "rule.ml" 138 4813 4843
+)
+"rule.ml" 141 4903 4947 "rule.ml" 141 4903 4955
+type(
+  (Command.pathname -> Command.pathname list) ->
+  Command.pathname list -> Command.pathname list list
+)
+ident(
+  ext_ref My_std.List.map
+)
+"rule.ml" 141 4903 4961 "rule.ml" 141 4903 4962
+type(
+  Command.pathname
+)
+ident(
+  def x "rule.ml" 141 4903 4966 "rule.ml" 141 4903 4969
+)
+"rule.ml" 141 4903 4967 "rule.ml" 141 4903 4968
+type(
+  Command.pathname
+)
+ident(
+  int_ref x "rule.ml" 141 4903 4961 "rule.ml" 141 4903 4962
+)
+"rule.ml" 141 4903 4966 "rule.ml" 141 4903 4969
+type(
+  Command.pathname list
+)
+"rule.ml" 141 4903 4956 "rule.ml" 141 4903 4970
+type(
+  Command.pathname -> Command.pathname list
+)
+"rule.ml" 141 4903 4971 "rule.ml" 141 4903 4975
+type(
+  Command.pathname list
+)
+ident(
+  int_ref deps "rule.ml" 141 4903 4907 "rule.ml" 141 4903 4911
+)
+"rule.ml" 141 4903 4946 "rule.ml" 141 4903 4976
+call(
+  stack
+)
+type(
+  Command.pathname list list
+)
+"rule.ml" 141 4903 4937 "rule.ml" 141 4903 4977
+call(
+  stack
+)
+type(
+  ('a, exn) My_std.Outcome.t list
+)
+"rule.ml" 141 4903 4915 "rule.ml" 141 4903 4977
+call(
+  tail
+)
+type(
+  'a list
+)
+"rule.ml" 139 4851 4853 "rule.ml" 141 4903 4977
+type(
+  'a list
+)
+"rule.ml" 143 4979 4983 "rule.ml" 143 4979 5008
+type(
+  (Command.pathname list list -> ('a, exn) My_std.Outcome.t list) ->
+  Command.t -> unit
+)
+ident(
+  def build_deps_of_tags_on_cmd "rule.ml" 150 5197 5197 "rule.ml" 1 0 -1
+)
+"rule.ml" 143 4979 5009 "rule.ml" 143 4979 5016
+type(
+  Command.pathname list list -> ('a, exn) My_std.Outcome.t list
+)
+ident(
+  def builder "rule.ml" 144 5019 5021 "rule.ml" 148 5190 5195
+)
+"rule.ml" 144 5019 5021 "rule.ml" 144 5019 5038
+type(
+  (Tags.t -> unit) -> Command.t -> unit
+)
+ident(
+  ext_ref Command.iter_tags
+)
+"rule.ml" 144 5019 5049 "rule.ml" 144 5019 5053
+type(
+  Tags.t
+)
+ident(
+  def tags "rule.ml" 145 5057 5061 "rule.ml" 147 5113 5189
+)
+"rule.ml" 145 5057 5067 "rule.ml" 145 5057 5087
+type(
+  Tags.t -> Command.pathname list
+)
+ident(
+  ext_ref Command.deps_of_tags
+)
+"rule.ml" 145 5057 5088 "rule.ml" 145 5057 5092
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "rule.ml" 144 5019 5049 "rule.ml" 144 5019 5053
+)
+"rule.ml" 145 5057 5067 "rule.ml" 145 5057 5092
+call(
+  stack
+)
+type(
+  Command.pathname list
+)
+"rule.ml" 146 5098 5104 "rule.ml" 146 5098 5106
+type(
+  Command.pathname list
+)
+"rule.ml" 146 5098 5110 "rule.ml" 146 5098 5112
+type(
+  unit
+)
+"rule.ml" 147 5113 5119 "rule.ml" 147 5113 5123
+type(
+  Command.pathname list
+)
+ident(
+  def deps "rule.ml" 147 5113 5127 "rule.ml" 147 5113 5189
+)
+"rule.ml" 147 5113 5127 "rule.ml" 147 5113 5136
+type(
+  (('a, exn) My_std.Outcome.t -> unit) ->
+  ('a, exn) My_std.Outcome.t list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"rule.ml" 147 5113 5137 "rule.ml" 147 5113 5148
+type(
+  ('a, exn) My_std.Outcome.t -> unit
+)
+ident(
+  ext_ref My_std.Outcome.ignore_good
+)
+"rule.ml" 147 5113 5150 "rule.ml" 147 5113 5157
+type(
+  Command.pathname list list -> ('a, exn) My_std.Outcome.t list
+)
+ident(
+  int_ref builder "rule.ml" 143 4979 5009 "rule.ml" 143 4979 5016
+)
+"rule.ml" 147 5113 5159 "rule.ml" 147 5113 5167
+type(
+  (Command.pathname -> Command.pathname list) ->
+  Command.pathname list -> Command.pathname list list
+)
+ident(
+  ext_ref My_std.List.map
+)
+"rule.ml" 147 5113 5173 "rule.ml" 147 5113 5174
+type(
+  Command.pathname
+)
+ident(
+  def x "rule.ml" 147 5113 5178 "rule.ml" 147 5113 5181
+)
+"rule.ml" 147 5113 5179 "rule.ml" 147 5113 5180
+type(
+  Command.pathname
+)
+ident(
+  int_ref x "rule.ml" 147 5113 5173 "rule.ml" 147 5113 5174
+)
+"rule.ml" 147 5113 5178 "rule.ml" 147 5113 5181
+type(
+  Command.pathname list
+)
+"rule.ml" 147 5113 5168 "rule.ml" 147 5113 5182
+type(
+  Command.pathname -> Command.pathname list
+)
+"rule.ml" 147 5113 5183 "rule.ml" 147 5113 5187
+type(
+  Command.pathname list
+)
+ident(
+  int_ref deps "rule.ml" 147 5113 5119 "rule.ml" 147 5113 5123
+)
+"rule.ml" 147 5113 5158 "rule.ml" 147 5113 5188
+call(
+  stack
+)
+type(
+  Command.pathname list list
+)
+"rule.ml" 147 5113 5149 "rule.ml" 147 5113 5189
+call(
+  stack
+)
+type(
+  ('a, exn) My_std.Outcome.t list
+)
+"rule.ml" 147 5113 5127 "rule.ml" 147 5113 5189
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 145 5057 5061 "rule.ml" 147 5113 5189
+type(
+  unit
+)
+"rule.ml" 144 5019 5039 "rule.ml" 148 5190 5195
+type(
+  Tags.t -> unit
+)
+"rule.ml" 144 5019 5021 "rule.ml" 148 5190 5195
+call(
+  tail
+)
+type(
+  Command.t -> unit
+)
+"rule.ml" 150 5197 5201 "rule.ml" 150 5197 5205
+type(
+  (Command.pathname list list -> (Pathname.t, exn) My_std.Outcome.t list) ->
+  Pathname.t gen_rule -> unit
+)
+ident(
+  def call "rule.ml" 242 9201 9201 "rule.ml" 1 0 -1
+)
+"rule.ml" 150 5197 5206 "rule.ml" 150 5197 5213
+type(
+  Command.pathname list list -> (Pathname.t, exn) My_std.Outcome.t list
+)
+ident(
+  def builder "rule.ml" 150 5197 5214 "rule.ml" 240 9101 9199
+)
+"rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+type(
+  Pathname.t gen_rule
+)
+ident(
+  def r "rule.ml" 151 5218 5220 "rule.ml" 240 9101 9199
+)
+"rule.ml" 151 5218 5224 "rule.ml" 151 5218 5231
+type(
+  Resources.t ref
+)
+ident(
+  def dyndeps "rule.ml" 152 5257 5259 "rule.ml" 240 9101 9199
+)
+"rule.ml" 151 5218 5234 "rule.ml" 151 5218 5237
+type(
+  Resources.t -> Resources.t ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"rule.ml" 151 5218 5238 "rule.ml" 151 5218 5253
+type(
+  Resources.t
+)
+ident(
+  ext_ref Resources.empty
+)
+"rule.ml" 151 5218 5234 "rule.ml" 151 5218 5253
+type(
+  Resources.t ref
+)
+"rule.ml" 152 5257 5263 "rule.ml" 152 5257 5270
+type(
+  Command.pathname list list -> (Pathname.t, exn) My_std.Outcome.t list
+)
+ident(
+  def builder "rule.ml" 163 5662 5664 "rule.ml" 240 9101 9199
+)
+"rule.ml" 152 5257 5271 "rule.ml" 152 5257 5273
+type(
+  Command.pathname list list
+)
+ident(
+  def rs "rule.ml" 153 5276 5280 "rule.ml" 162 5643 5658
+)
+"rule.ml" 153 5276 5284 "rule.ml" 153 5276 5291
+type(
+  (Pathname.t, exn) My_std.Outcome.t list
+)
+ident(
+  def results "rule.ml" 154 5308 5312 "rule.ml" 162 5643 5658
+)
+"rule.ml" 153 5276 5294 "rule.ml" 153 5276 5301
+type(
+  Command.pathname list list -> (Pathname.t, exn) My_std.Outcome.t list
+)
+ident(
+  int_ref builder "rule.ml" 150 5197 5206 "rule.ml" 150 5197 5213
+)
+"rule.ml" 153 5276 5302 "rule.ml" 153 5276 5304
+type(
+  Command.pathname list list
+)
+ident(
+  int_ref rs "rule.ml" 152 5257 5271 "rule.ml" 152 5257 5273
+)
+"rule.ml" 153 5276 5294 "rule.ml" 153 5276 5304
+call(
+  stack
+)
+type(
+  (Pathname.t, exn) My_std.Outcome.t list
+)
+"rule.ml" 154 5308 5312 "rule.ml" 154 5308 5320
+type(
+  ((Pathname.t, exn) My_std.Outcome.t -> (Pathname.t, exn) My_std.Outcome.t) ->
+  (Pathname.t, exn) My_std.Outcome.t list ->
+  (Pathname.t, exn) My_std.Outcome.t list
+)
+ident(
+  ext_ref My_std.List.map
+)
+"rule.ml" 154 5308 5331 "rule.ml" 154 5308 5334
+type(
+  (Pathname.t, exn) My_std.Outcome.t
+)
+ident(
+  def res "rule.ml" 155 5338 5344 "rule.ml" 161 5622 5642
+)
+"rule.ml" 155 5338 5350 "rule.ml" 155 5338 5353
+type(
+  (Pathname.t, exn) My_std.Outcome.t
+)
+ident(
+  int_ref res "rule.ml" 154 5308 5331 "rule.ml" 154 5308 5334
+)
+"rule.ml" 156 5359 5372 "rule.ml" 156 5359 5376
+type(
+  Resources.elt
+)
+ident(
+  def res' "rule.ml" 157 5380 5390 "rule.ml" 160 5608 5621
+)
+"rule.ml" 156 5359 5367 "rule.ml" 156 5359 5376
+type(
+  (Pathname.t, exn) My_std.Outcome.t
+)
+"rule.ml" 157 5380 5394 "rule.ml" 157 5380 5396
+type(
+  unit
+)
+"rule.ml" 157 5380 5399 "rule.ml" 157 5380 5406
+type(
+  int ->
+  (string ->
+   (Format.formatter -> Pathname.t list -> unit) ->
+   Pathname.t list -> Resources.elt -> unit, Format.formatter, unit)
+  format ->
+  string ->
+  (Format.formatter -> Pathname.t list -> unit) ->
+  Pathname.t list -> Resources.elt -> unit
+)
+ident(
+  ext_ref Log.dprintf
+)
+"rule.ml" 157 5380 5407 "rule.ml" 157 5380 5409
+type(
+  int
+)
+"rule.ml" 157 5380 5410 "rule.ml" 157 5380 5437
+type(
+  (string ->
+   (Format.formatter -> Pathname.t list -> unit) ->
+   Pathname.t list -> Resources.elt -> unit, Format.formatter, unit)
+  format
+)
+"rule.ml" 157 5380 5438 "rule.ml" 157 5380 5439
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 157 5380 5438 "rule.ml" 157 5380 5444
+type(
+  string
+)
+"rule.ml" 157 5380 5445 "rule.ml" 157 5380 5464
+type(
+  Format.formatter -> Pathname.t list -> unit
+)
+ident(
+  int_ref print_resource_list "rule.ml" 53 1895 1899 "rule.ml" 53 1895 1918
+)
+"rule.ml" 157 5380 5465 "rule.ml" 157 5380 5466
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 157 5380 5465 "rule.ml" 157 5380 5472
+type(
+  Pathname.t list
+)
+"rule.ml" 157 5380 5473 "rule.ml" 157 5380 5477
+type(
+  Resources.elt
+)
+ident(
+  int_ref res' "rule.ml" 156 5359 5372 "rule.ml" 156 5359 5376
+)
+"rule.ml" 157 5380 5399 "rule.ml" 157 5380 5477
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 158 5481 5491 "rule.ml" 158 5481 5498
+type(
+  Resources.t ref
+)
+ident(
+  int_ref dyndeps "rule.ml" 151 5218 5224 "rule.ml" 151 5218 5231
+)
+"rule.ml" 158 5481 5499 "rule.ml" 158 5481 5501
+type(
+  Resources.t ref -> Resources.t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"rule.ml" 158 5481 5502 "rule.ml" 158 5481 5515
+type(
+  Resources.elt -> Resources.t -> Resources.t
+)
+ident(
+  ext_ref Resources.add
+)
+"rule.ml" 158 5481 5516 "rule.ml" 158 5481 5520
+type(
+  Resources.elt
+)
+ident(
+  int_ref res' "rule.ml" 156 5359 5372 "rule.ml" 156 5359 5376
+)
+"rule.ml" 158 5481 5521 "rule.ml" 158 5481 5522
+type(
+  Resources.t ref -> Resources.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"rule.ml" 158 5481 5522 "rule.ml" 158 5481 5529
+type(
+  Resources.t ref
+)
+ident(
+  int_ref dyndeps "rule.ml" 151 5218 5224 "rule.ml" 151 5218 5231
+)
+"rule.ml" 158 5481 5521 "rule.ml" 158 5481 5529
+type(
+  Resources.t
+)
+"rule.ml" 158 5481 5502 "rule.ml" 158 5481 5529
+call(
+  stack
+)
+type(
+  Resources.t
+)
+"rule.ml" 158 5481 5491 "rule.ml" 158 5481 5529
+type(
+  unit
+)
+"rule.ml" 159 5531 5541 "rule.ml" 159 5531 5550
+type(
+  (Pathname.t -> unit) -> Pathname.t list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"rule.ml" 159 5531 5556 "rule.ml" 159 5531 5557
+type(
+  Pathname.t
+)
+ident(
+  def x "rule.ml" 159 5531 5561 "rule.ml" 159 5531 5597
+)
+"rule.ml" 159 5531 5561 "rule.ml" 159 5531 5590
+type(
+  Pathname.t -> Pathname.t -> unit
+)
+ident(
+  ext_ref Resource.Cache.add_dependency
+)
+"rule.ml" 159 5531 5591 "rule.ml" 159 5531 5592
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "rule.ml" 159 5531 5556 "rule.ml" 159 5531 5557
+)
+"rule.ml" 159 5531 5593 "rule.ml" 159 5531 5597
+type(
+  Resources.elt
+)
+ident(
+  int_ref res' "rule.ml" 156 5359 5372 "rule.ml" 156 5359 5376
+)
+"rule.ml" 159 5531 5561 "rule.ml" 159 5531 5597
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 159 5531 5551 "rule.ml" 159 5531 5598
+type(
+  Pathname.t -> unit
+)
+"rule.ml" 159 5531 5599 "rule.ml" 159 5531 5600
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 159 5531 5599 "rule.ml" 159 5531 5606
+type(
+  Pathname.t list
+)
+"rule.ml" 159 5531 5541 "rule.ml" 159 5531 5606
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 160 5608 5618 "rule.ml" 160 5608 5621
+type(
+  (Pathname.t, exn) My_std.Outcome.t
+)
+ident(
+  int_ref res "rule.ml" 154 5308 5331 "rule.ml" 154 5308 5334
+)
+"rule.ml" 159 5531 5541 "rule.ml" 160 5608 5621
+type(
+  (Pathname.t, exn) My_std.Outcome.t
+)
+"rule.ml" 158 5481 5491 "rule.ml" 160 5608 5621
+type(
+  (Pathname.t, exn) My_std.Outcome.t
+)
+"rule.ml" 157 5380 5390 "rule.ml" 160 5608 5621
+type(
+  (Pathname.t, exn) My_std.Outcome.t
+)
+"rule.ml" 161 5622 5634 "rule.ml" 161 5622 5635
+type(
+  exn
+)
+"rule.ml" 161 5622 5630 "rule.ml" 161 5622 5635
+type(
+  (Pathname.t, exn) My_std.Outcome.t
+)
+"rule.ml" 161 5622 5639 "rule.ml" 161 5622 5642
+type(
+  (Pathname.t, exn) My_std.Outcome.t
+)
+ident(
+  int_ref res "rule.ml" 154 5308 5331 "rule.ml" 154 5308 5334
+)
+"rule.ml" 155 5338 5344 "rule.ml" 161 5622 5642
+type(
+  (Pathname.t, exn) My_std.Outcome.t
+)
+"rule.ml" 154 5308 5321 "rule.ml" 162 5643 5650
+type(
+  (Pathname.t, exn) My_std.Outcome.t -> (Pathname.t, exn) My_std.Outcome.t
+)
+"rule.ml" 162 5643 5651 "rule.ml" 162 5643 5658
+type(
+  (Pathname.t, exn) My_std.Outcome.t list
+)
+ident(
+  int_ref results "rule.ml" 153 5276 5284 "rule.ml" 153 5276 5291
+)
+"rule.ml" 154 5308 5312 "rule.ml" 162 5643 5658
+call(
+  tail
+)
+type(
+  (Pathname.t, exn) My_std.Outcome.t list
+)
+"rule.ml" 153 5276 5280 "rule.ml" 162 5643 5658
+type(
+  (Pathname.t, exn) My_std.Outcome.t list
+)
+"rule.ml" 163 5662 5668 "rule.ml" 163 5662 5670
+type(
+  unit
+)
+"rule.ml" 163 5662 5673 "rule.ml" 163 5662 5680
+type(
+  int ->
+  ((Format.formatter -> Pathname.t gen_rule -> unit) ->
+   Pathname.t gen_rule -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Pathname.t gen_rule -> unit) ->
+  Pathname.t gen_rule -> unit
+)
+ident(
+  ext_ref Log.dprintf
+)
+"rule.ml" 163 5662 5681 "rule.ml" 163 5662 5682
+type(
+  int
+)
+"rule.ml" 163 5662 5683 "rule.ml" 163 5662 5698
+type(
+  ((Format.formatter -> Pathname.t gen_rule -> unit) ->
+   Pathname.t gen_rule -> unit, Format.formatter, unit)
+  format
+)
+"rule.ml" 163 5662 5699 "rule.ml" 163 5662 5704
+type(
+  Format.formatter -> Pathname.t gen_rule -> unit
+)
+ident(
+  int_ref print "rule.ml" 72 2568 2572 "rule.ml" 72 2568 2577
+)
+"rule.ml" 163 5662 5705 "rule.ml" 163 5662 5706
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 163 5662 5673 "rule.ml" 163 5662 5706
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 164 5710 5716 "rule.ml" 164 5710 5722
+type(
+  digest_command
+)
+ident(
+  def action "rule.ml" 165 5756 5758 "rule.ml" 240 9101 9199
+)
+"rule.ml" 164 5710 5725 "rule.ml" 164 5710 5726
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 164 5710 5725 "rule.ml" 164 5710 5731
+type(
+  env -> builder -> digest_command
+)
+"rule.ml" 164 5710 5737 "rule.ml" 164 5710 5738
+type(
+  Pathname.t
+)
+ident(
+  def x "rule.ml" 164 5710 5742 "rule.ml" 164 5710 5743
+)
+"rule.ml" 164 5710 5742 "rule.ml" 164 5710 5743
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "rule.ml" 164 5710 5737 "rule.ml" 164 5710 5738
+)
+"rule.ml" 164 5710 5732 "rule.ml" 164 5710 5744
+type(
+  env
+)
+"rule.ml" 164 5710 5745 "rule.ml" 164 5710 5752
+type(
+  builder
+)
+ident(
+  int_ref builder "rule.ml" 152 5257 5263 "rule.ml" 152 5257 5270
+)
+"rule.ml" 164 5710 5725 "rule.ml" 164 5710 5752
+call(
+  stack
+)
+type(
+  digest_command
+)
+"rule.ml" 165 5756 5758 "rule.ml" 165 5756 5783
+type(
+  (Command.pathname list list -> (Pathname.t, exn) My_std.Outcome.t list) ->
+  Command.t -> unit
+)
+ident(
+  int_ref build_deps_of_tags_on_cmd "rule.ml" 143 4979 4983 "rule.ml" 143 4979 5008
+)
+"rule.ml" 165 5756 5784 "rule.ml" 165 5756 5791
+type(
+  Command.pathname list list -> (Pathname.t, exn) My_std.Outcome.t list
+)
+ident(
+  int_ref builder "rule.ml" 152 5257 5263 "rule.ml" 152 5257 5270
+)
+"rule.ml" 165 5756 5792 "rule.ml" 165 5756 5798
+type(
+  digest_command
+)
+ident(
+  int_ref action "rule.ml" 164 5710 5716 "rule.ml" 164 5710 5722
+)
+"rule.ml" 165 5756 5792 "rule.ml" 165 5756 5806
+type(
+  Command.t
+)
+"rule.ml" 165 5756 5758 "rule.ml" 165 5756 5806
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 166 5808 5814 "rule.ml" 166 5808 5821
+type(
+  Resources.t
+)
+ident(
+  def dyndeps "rule.ml" 167 5836 5838 "rule.ml" 240 9101 9199
+)
+"rule.ml" 166 5808 5824 "rule.ml" 166 5808 5825
+type(
+  Resources.t ref -> Resources.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"rule.ml" 166 5808 5825 "rule.ml" 166 5808 5832
+type(
+  Resources.t ref
+)
+ident(
+  int_ref dyndeps "rule.ml" 151 5218 5224 "rule.ml" 151 5218 5231
+)
+"rule.ml" 166 5808 5824 "rule.ml" 166 5808 5832
+type(
+  Resources.t
+)
+"rule.ml" 167 5836 5842 "rule.ml" 167 5836 5844
+type(
+  unit
+)
+"rule.ml" 167 5836 5847 "rule.ml" 167 5836 5854
+type(
+  int ->
+  ((Format.formatter -> Resources.t -> unit) -> Resources.t -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> Resources.t -> unit) -> Resources.t -> unit
+)
+ident(
+  ext_ref Log.dprintf
+)
+"rule.ml" 167 5836 5855 "rule.ml" 167 5836 5857
+type(
+  int
+)
+"rule.ml" 167 5836 5858 "rule.ml" 167 5836 5871
+type(
+  ((Format.formatter -> Resources.t -> unit) -> Resources.t -> unit,
+   Format.formatter, unit)
+  format
+)
+"rule.ml" 167 5836 5872 "rule.ml" 167 5836 5887
+type(
+  Format.formatter -> Resources.t -> unit
+)
+ident(
+  ext_ref Resources.print
+)
+"rule.ml" 167 5836 5888 "rule.ml" 167 5836 5895
+type(
+  Resources.t
+)
+ident(
+  int_ref dyndeps "rule.ml" 166 5808 5814 "rule.ml" 166 5808 5821
+)
+"rule.ml" 167 5836 5847 "rule.ml" 167 5836 5895
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 168 5899 5906 "rule.ml" 168 5899 5912
+type(
+  [> `cache_hit
+   | `cache_miss_changed_dep of Pathname.t
+   | `cache_miss_changed_dyn_dep of Resources.elt
+   | `cache_miss_digest_changed of string * My_std.Digest.t
+   | `cache_miss_missing_prod of Pathname.t
+   | `cache_miss_no_digest ]
+)
+ident(
+  def reason "rule.ml" 188 6759 6761 "rule.ml" 240 9101 9199
+)
+"rule.ml" 168 5899 5914 "rule.ml" 168 5899 5920
+type(
+  bool
+)
+ident(
+  def cached "rule.ml" 188 6759 6761 "rule.ml" 240 9101 9199
+)
+"rule.ml" 168 5899 5905 "rule.ml" 168 5899 5921
+type(
+  ([> `cache_hit
+    | `cache_miss_changed_dep of Pathname.t
+    | `cache_miss_changed_dyn_dep of Resources.elt
+    | `cache_miss_digest_changed of string * My_std.Digest.t
+    | `cache_miss_missing_prod of Pathname.t
+    | `cache_miss_no_digest ]
+   as 'a) *
+  bool
+)
+"rule.ml" 169 5924 5934 "rule.ml" 169 5924 5941
+type(
+  ((Pathname.t -> bool) -> Pathname.t list -> Pathname.t) ->
+  (Pathname.t -> bool) -> Pathname.t list -> Pathname.t option
+)
+ident(
+  int_ref exists2 "rule.ml" 135 4742 4746 "rule.ml" 135 4742 4753
+)
+"rule.ml" 169 5924 5942 "rule.ml" 169 5924 5951
+type(
+  (Pathname.t -> bool) -> Pathname.t list -> Pathname.t
+)
+ident(
+  ext_ref My_std.List.find
+)
+"rule.ml" 169 5924 5957 "rule.ml" 169 5924 5958
+type(
+  Pathname.t
+)
+ident(
+  def r "rule.ml" 169 5924 5962 "rule.ml" 169 5924 5998
+)
+"rule.ml" 169 5924 5962 "rule.ml" 169 5924 5965
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"rule.ml" 169 5924 5967 "rule.ml" 169 5924 5995
+type(
+  Pathname.t -> bool
+)
+ident(
+  ext_ref Resource.exists_in_build_dir
+)
+"rule.ml" 169 5924 5996 "rule.ml" 169 5924 5997
+type(
+  Pathname.t
+)
+ident(
+  int_ref r "rule.ml" 169 5924 5957 "rule.ml" 169 5924 5958
+)
+"rule.ml" 169 5924 5966 "rule.ml" 169 5924 5998
+call(
+  stack
+)
+type(
+  bool
+)
+"rule.ml" 169 5924 5962 "rule.ml" 169 5924 5998
+type(
+  bool
+)
+"rule.ml" 169 5924 5952 "rule.ml" 169 5924 5999
+type(
+  Pathname.t -> bool
+)
+"rule.ml" 169 5924 6000 "rule.ml" 169 5924 6001
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 169 5924 6000 "rule.ml" 169 5924 6007
+type(
+  Pathname.t list
+)
+"rule.ml" 169 5924 5934 "rule.ml" 169 5924 6007
+call(
+  stack
+)
+type(
+  Pathname.t option
+)
+"rule.ml" 170 6013 6024 "rule.ml" 170 6013 6025
+type(
+  Pathname.t
+)
+ident(
+  def r "rule.ml" 170 6013 6029 "rule.ml" 170 6013 6064
+)
+"rule.ml" 170 6013 6019 "rule.ml" 170 6013 6025
+type(
+  Pathname.t option
+)
+"rule.ml" 170 6013 6055 "rule.ml" 170 6013 6056
+type(
+  Pathname.t
+)
+ident(
+  int_ref r "rule.ml" 170 6013 6024 "rule.ml" 170 6013 6025
+)
+"rule.ml" 170 6013 6030 "rule.ml" 170 6013 6056
+type(
+  'a
+)
+"rule.ml" 170 6013 6058 "rule.ml" 170 6013 6063
+type(
+  bool
+)
+"rule.ml" 170 6013 6029 "rule.ml" 170 6013 6064
+type(
+  'a * bool
+)
+"rule.ml" 171 6065 6071 "rule.ml" 171 6065 6072
+type(
+  Pathname.t option
+)
+"rule.ml" 172 6076 6094 "rule.ml" 172 6076 6101
+type(
+  ((Pathname.t -> bool) -> Pathname.t list -> Pathname.t) ->
+  (Pathname.t -> bool) -> Pathname.t list -> Pathname.t option
+)
+ident(
+  int_ref exists2 "rule.ml" 135 4742 4746 "rule.ml" 135 4742 4753
+)
+"rule.ml" 172 6076 6102 "rule.ml" 172 6076 6111
+type(
+  (Pathname.t -> bool) -> Pathname.t list -> Pathname.t
+)
+ident(
+  ext_ref My_std.List.find
+)
+"rule.ml" 172 6076 6112 "rule.ml" 172 6076 6147
+type(
+  Pathname.t -> bool
+)
+ident(
+  ext_ref Resource.Cache.resource_has_changed
+)
+"rule.ml" 172 6076 6148 "rule.ml" 172 6076 6149
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 172 6076 6148 "rule.ml" 172 6076 6154
+type(
+  Pathname.t list
+)
+"rule.ml" 172 6076 6094 "rule.ml" 172 6076 6154
+call(
+  stack
+)
+type(
+  Pathname.t option
+)
+"rule.ml" 173 6160 6173 "rule.ml" 173 6160 6174
+type(
+  Pathname.t
+)
+ident(
+  def r "rule.ml" 173 6160 6178 "rule.ml" 173 6160 6212
+)
+"rule.ml" 173 6160 6168 "rule.ml" 173 6160 6174
+type(
+  Pathname.t option
+)
+"rule.ml" 173 6160 6203 "rule.ml" 173 6160 6204
+type(
+  Pathname.t
+)
+ident(
+  int_ref r "rule.ml" 173 6160 6173 "rule.ml" 173 6160 6174
+)
+"rule.ml" 173 6160 6179 "rule.ml" 173 6160 6204
+type(
+  'a
+)
+"rule.ml" 173 6160 6206 "rule.ml" 173 6160 6211
+type(
+  bool
+)
+"rule.ml" 173 6160 6178 "rule.ml" 173 6160 6212
+type(
+  'a * bool
+)
+"rule.ml" 174 6213 6221 "rule.ml" 174 6213 6222
+type(
+  Pathname.t option
+)
+"rule.ml" 175 6226 6246 "rule.ml" 175 6226 6253
+type(
+  ((Resources.elt -> bool) -> Resources.t -> Resources.elt) ->
+  (Resources.elt -> bool) -> Resources.t -> Resources.elt option
+)
+ident(
+  int_ref exists2 "rule.ml" 135 4742 4746 "rule.ml" 135 4742 4753
+)
+"rule.ml" 175 6226 6254 "rule.ml" 175 6226 6272
+type(
+  (Resources.elt -> bool) -> Resources.t -> Resources.elt
+)
+ident(
+  ext_ref Resources.find_elt
+)
+"rule.ml" 175 6226 6273 "rule.ml" 175 6226 6308
+type(
+  Resources.elt -> bool
+)
+ident(
+  ext_ref Resource.Cache.resource_has_changed
+)
+"rule.ml" 175 6226 6309 "rule.ml" 175 6226 6316
+type(
+  Resources.t
+)
+ident(
+  int_ref dyndeps "rule.ml" 166 5808 5814 "rule.ml" 166 5808 5821
+)
+"rule.ml" 175 6226 6246 "rule.ml" 175 6226 6316
+call(
+  stack
+)
+type(
+  Resources.elt option
+)
+"rule.ml" 176 6322 6337 "rule.ml" 176 6322 6338
+type(
+  Resources.elt
+)
+ident(
+  def r "rule.ml" 176 6322 6342 "rule.ml" 176 6322 6380
+)
+"rule.ml" 176 6322 6332 "rule.ml" 176 6322 6338
+type(
+  Resources.elt option
+)
+"rule.ml" 176 6322 6371 "rule.ml" 176 6322 6372
+type(
+  Resources.elt
+)
+ident(
+  int_ref r "rule.ml" 176 6322 6337 "rule.ml" 176 6322 6338
+)
+"rule.ml" 176 6322 6343 "rule.ml" 176 6322 6372
+type(
+  'a
+)
+"rule.ml" 176 6322 6374 "rule.ml" 176 6322 6379
+type(
+  bool
+)
+"rule.ml" 176 6322 6342 "rule.ml" 176 6322 6380
+type(
+  'a * bool
+)
+"rule.ml" 177 6381 6391 "rule.ml" 177 6381 6392
+type(
+  Resources.elt option
+)
+"rule.ml" 178 6396 6420 "rule.ml" 178 6396 6433
+type(
+  Pathname.t gen_rule -> string option
+)
+ident(
+  int_ref cached_digest "rule.ml" 127 4511 4515 "rule.ml" 127 4511 4528
+)
+"rule.ml" 178 6396 6434 "rule.ml" 178 6396 6435
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 178 6396 6420 "rule.ml" 178 6396 6435
+call(
+  stack
+)
+type(
+  string option
+)
+"rule.ml" 179 6441 6455 "rule.ml" 179 6441 6459
+type(
+  string option
+)
+"rule.ml" 179 6441 6464 "rule.ml" 179 6441 6485
+type(
+  'a
+)
+"rule.ml" 179 6441 6487 "rule.ml" 179 6441 6492
+type(
+  bool
+)
+"rule.ml" 179 6441 6463 "rule.ml" 179 6441 6493
+type(
+  'a * bool
+)
+"rule.ml" 180 6494 6513 "rule.ml" 180 6494 6514
+type(
+  string
+)
+ident(
+  def d "rule.ml" 181 6518 6534 "rule.ml" 183 6643 6715
+)
+"rule.ml" 180 6494 6508 "rule.ml" 180 6494 6514
+type(
+  string option
+)
+"rule.ml" 181 6518 6538 "rule.ml" 181 6518 6549
+type(
+  My_std.Digest.t
+)
+ident(
+  def rule_digest "rule.ml" 182 6584 6600 "rule.ml" 183 6643 6715
+)
+"rule.ml" 181 6518 6552 "rule.ml" 181 6518 6563
+type(
+  Pathname.t gen_rule -> Resources.t -> digest_command -> My_std.Digest.t
+)
+ident(
+  int_ref digest_rule "rule.ml" 115 4087 4091 "rule.ml" 115 4087 4102
+)
+"rule.ml" 181 6518 6564 "rule.ml" 181 6518 6565
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 181 6518 6566 "rule.ml" 181 6518 6573
+type(
+  Resources.t
+)
+ident(
+  int_ref dyndeps "rule.ml" 166 5808 5814 "rule.ml" 166 5808 5821
+)
+"rule.ml" 181 6518 6574 "rule.ml" 181 6518 6580
+type(
+  digest_command
+)
+ident(
+  int_ref action "rule.ml" 164 5710 5716 "rule.ml" 164 5710 5722
+)
+"rule.ml" 181 6518 6552 "rule.ml" 181 6518 6580
+call(
+  stack
+)
+type(
+  My_std.Digest.t
+)
+"rule.ml" 182 6584 6603 "rule.ml" 182 6584 6604
+type(
+  My_std.Digest.t
+)
+ident(
+  int_ref d "rule.ml" 180 6494 6513 "rule.ml" 180 6494 6514
+)
+"rule.ml" 182 6584 6605 "rule.ml" 182 6584 6606
+type(
+  My_std.Digest.t -> My_std.Digest.t -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"rule.ml" 182 6584 6607 "rule.ml" 182 6584 6618
+type(
+  My_std.Digest.t
+)
+ident(
+  int_ref rule_digest "rule.ml" 181 6518 6538 "rule.ml" 181 6518 6549
+)
+"rule.ml" 182 6584 6603 "rule.ml" 182 6584 6618
+type(
+  bool
+)
+"rule.ml" 182 6584 6625 "rule.ml" 182 6584 6635
+type(
+  'a
+)
+"rule.ml" 182 6584 6637 "rule.ml" 182 6584 6641
+type(
+  bool
+)
+"rule.ml" 182 6584 6624 "rule.ml" 182 6584 6642
+type(
+  'a * bool
+)
+"rule.ml" 183 6643 6692 "rule.ml" 183 6643 6693
+type(
+  string
+)
+ident(
+  int_ref d "rule.ml" 180 6494 6513 "rule.ml" 180 6494 6514
+)
+"rule.ml" 183 6643 6695 "rule.ml" 183 6643 6706
+type(
+  My_std.Digest.t
+)
+ident(
+  int_ref rule_digest "rule.ml" 181 6518 6538 "rule.ml" 181 6518 6549
+)
+"rule.ml" 183 6643 6691 "rule.ml" 183 6643 6707
+type(
+  string * My_std.Digest.t
+)
+"rule.ml" 183 6643 6665 "rule.ml" 183 6643 6707
+type(
+  'a
+)
+"rule.ml" 183 6643 6709 "rule.ml" 183 6643 6714
+type(
+  bool
+)
+"rule.ml" 183 6643 6664 "rule.ml" 183 6643 6715
+type(
+  'a * bool
+)
+"rule.ml" 182 6584 6600 "rule.ml" 183 6643 6715
+type(
+  'a * bool
+)
+"rule.ml" 181 6518 6534 "rule.ml" 183 6643 6715
+type(
+  'a * bool
+)
+"rule.ml" 178 6396 6408 "rule.ml" 184 6716 6731
+type(
+  'a * bool
+)
+"rule.ml" 175 6226 6234 "rule.ml" 185 6732 6743
+type(
+  'a * bool
+)
+"rule.ml" 172 6076 6082 "rule.ml" 186 6744 6753
+type(
+  'a * bool
+)
+"rule.ml" 169 5924 5928 "rule.ml" 186 6744 6753
+type(
+  'a * bool
+)
+"rule.ml" 188 6759 6765 "rule.ml" 188 6759 6779
+type(
+  int -> unit
+)
+ident(
+  def explain_reason "rule.ml" 205 7642 7644 "rule.ml" 240 9101 9199
+)
+"rule.ml" 188 6759 6780 "rule.ml" 188 6759 6781
+type(
+  int
+)
+ident(
+  def l "rule.ml" 189 6784 6788 "rule.ml" 203 7580 7636
+)
+"rule.ml" 189 6784 6788 "rule.ml" 189 6784 6799
+type(
+  int ->
+  ((Format.formatter -> Pathname.t gen_rule -> unit) ->
+   Pathname.t gen_rule -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Pathname.t gen_rule -> unit) ->
+  Pathname.t gen_rule -> unit
+)
+ident(
+  ext_ref Log.raw_dprintf
+)
+"rule.ml" 189 6784 6801 "rule.ml" 189 6784 6802
+type(
+  int
+)
+ident(
+  int_ref l "rule.ml" 188 6759 6780 "rule.ml" 188 6759 6781
+)
+"rule.ml" 189 6784 6802 "rule.ml" 189 6784 6803
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"rule.ml" 189 6784 6803 "rule.ml" 189 6784 6804
+type(
+  int
+)
+"rule.ml" 189 6784 6800 "rule.ml" 189 6784 6805
+type(
+  int
+)
+"rule.ml" 189 6784 6806 "rule.ml" 189 6784 6821
+type(
+  ((Format.formatter -> Pathname.t gen_rule -> unit) ->
+   Pathname.t gen_rule -> unit, Format.formatter, unit)
+  format
+)
+"rule.ml" 189 6784 6822 "rule.ml" 189 6784 6827
+type(
+  Format.formatter -> Pathname.t gen_rule -> unit
+)
+ident(
+  int_ref print "rule.ml" 72 2568 2572 "rule.ml" 72 2568 2577
+)
+"rule.ml" 189 6784 6828 "rule.ml" 189 6784 6829
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 189 6784 6788 "rule.ml" 189 6784 6829
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 190 6831 6841 "rule.ml" 190 6831 6847
+type(
+  [> `cache_hit
+   | `cache_miss_changed_dep of Pathname.t
+   | `cache_miss_changed_dyn_dep of Resources.elt
+   | `cache_miss_digest_changed of string * My_std.Digest.t
+   | `cache_miss_missing_prod of Pathname.t
+   | `cache_miss_no_digest ]
+)
+ident(
+  int_ref reason "rule.ml" 168 5899 5906 "rule.ml" 168 5899 5912
+)
+"rule.ml" 191 6853 6884 "rule.ml" 191 6853 6885
+type(
+  Pathname.t
+)
+ident(
+  def r "rule.ml" 192 6889 6899 "rule.ml" 192 6889 6974
+)
+"rule.ml" 191 6853 6859 "rule.ml" 191 6853 6885
+type(
+  [ `cache_hit
+  | `cache_miss_changed_dep of Pathname.t
+  | `cache_miss_changed_dyn_dep of Resources.elt
+  | `cache_miss_digest_changed of string * My_std.Digest.t
+  | `cache_miss_missing_prod of Pathname.t
+  | `cache_miss_no_digest ]
+)
+"rule.ml" 192 6889 6899 "rule.ml" 192 6889 6906
+type(
+  int ->
+  ((Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit
+)
+ident(
+  ext_ref Log.dprintf
+)
+"rule.ml" 192 6889 6907 "rule.ml" 192 6889 6908
+type(
+  int
+)
+ident(
+  int_ref l "rule.ml" 188 6759 6780 "rule.ml" 188 6759 6781
+)
+"rule.ml" 192 6889 6909 "rule.ml" 192 6889 6957
+type(
+  ((Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit,
+   Format.formatter, unit)
+  format
+)
+"rule.ml" 192 6889 6958 "rule.ml" 192 6889 6972
+type(
+  Format.formatter -> Pathname.t -> unit
+)
+ident(
+  ext_ref Resource.print
+)
+"rule.ml" 192 6889 6973 "rule.ml" 192 6889 6974
+type(
+  Pathname.t
+)
+ident(
+  int_ref r "rule.ml" 191 6853 6884 "rule.ml" 191 6853 6885
+)
+"rule.ml" 192 6889 6899 "rule.ml" 192 6889 6974
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 193 6975 7005 "rule.ml" 193 6975 7006
+type(
+  Pathname.t
+)
+ident(
+  def r "rule.ml" 194 7010 7020 "rule.ml" 194 7010 7090
+)
+"rule.ml" 193 6975 6981 "rule.ml" 193 6975 7006
+type(
+  [ `cache_hit
+  | `cache_miss_changed_dep of Pathname.t
+  | `cache_miss_changed_dyn_dep of Resources.elt
+  | `cache_miss_digest_changed of string * My_std.Digest.t
+  | `cache_miss_missing_prod of Pathname.t
+  | `cache_miss_no_digest ]
+)
+"rule.ml" 194 7010 7020 "rule.ml" 194 7010 7027
+type(
+  int ->
+  ((Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit
+)
+ident(
+  ext_ref Log.dprintf
+)
+"rule.ml" 194 7010 7028 "rule.ml" 194 7010 7029
+type(
+  int
+)
+ident(
+  int_ref l "rule.ml" 188 6759 6780 "rule.ml" 188 6759 6781
+)
+"rule.ml" 194 7010 7030 "rule.ml" 194 7010 7073
+type(
+  ((Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit,
+   Format.formatter, unit)
+  format
+)
+"rule.ml" 194 7010 7074 "rule.ml" 194 7010 7088
+type(
+  Format.formatter -> Pathname.t -> unit
+)
+ident(
+  ext_ref Resource.print
+)
+"rule.ml" 194 7010 7089 "rule.ml" 194 7010 7090
+type(
+  Pathname.t
+)
+ident(
+  int_ref r "rule.ml" 193 6975 7005 "rule.ml" 193 6975 7006
+)
+"rule.ml" 194 7010 7020 "rule.ml" 194 7010 7090
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 195 7091 7125 "rule.ml" 195 7091 7126
+type(
+  Resources.elt
+)
+ident(
+  def r "rule.ml" 196 7130 7140 "rule.ml" 196 7130 7218
+)
+"rule.ml" 195 7091 7097 "rule.ml" 195 7091 7126
+type(
+  [ `cache_hit
+  | `cache_miss_changed_dep of Pathname.t
+  | `cache_miss_changed_dyn_dep of Resources.elt
+  | `cache_miss_digest_changed of string * My_std.Digest.t
+  | `cache_miss_missing_prod of Pathname.t
+  | `cache_miss_no_digest ]
+)
+"rule.ml" 196 7130 7140 "rule.ml" 196 7130 7147
+type(
+  int ->
+  ((Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit
+)
+ident(
+  ext_ref Log.dprintf
+)
+"rule.ml" 196 7130 7148 "rule.ml" 196 7130 7149
+type(
+  int
+)
+ident(
+  int_ref l "rule.ml" 188 6759 6780 "rule.ml" 188 6759 6781
+)
+"rule.ml" 196 7130 7150 "rule.ml" 196 7130 7201
+type(
+  ((Format.formatter -> Pathname.t -> unit) -> Pathname.t -> unit,
+   Format.formatter, unit)
+  format
+)
+"rule.ml" 196 7130 7202 "rule.ml" 196 7130 7216
+type(
+  Format.formatter -> Pathname.t -> unit
+)
+ident(
+  ext_ref Resource.print
+)
+"rule.ml" 196 7130 7217 "rule.ml" 196 7130 7218
+type(
+  Resources.elt
+)
+ident(
+  int_ref r "rule.ml" 195 7091 7125 "rule.ml" 195 7091 7126
+)
+"rule.ml" 196 7130 7140 "rule.ml" 196 7130 7218
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 197 7219 7225 "rule.ml" 197 7219 7246
+type(
+  [ `cache_hit
+  | `cache_miss_changed_dep of Pathname.t
+  | `cache_miss_changed_dyn_dep of Resources.elt
+  | `cache_miss_digest_changed of string * My_std.Digest.t
+  | `cache_miss_missing_prod of Pathname.t
+  | `cache_miss_no_digest ]
+)
+"rule.ml" 198 7250 7260 "rule.ml" 198 7250 7267
+type(
+  int -> (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Log.dprintf
+)
+"rule.ml" 198 7250 7268 "rule.ml" 198 7250 7269
+type(
+  int
+)
+ident(
+  int_ref l "rule.ml" 188 6759 6780 "rule.ml" 188 6759 6781
+)
+"rule.ml" 198 7250 7270 "rule.ml" 198 7250 7348
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"rule.ml" 199 7349 7361 "rule.ml" 199 7349 7362
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 199 7349 7361 "rule.ml" 199 7349 7367
+type(
+  string
+)
+"rule.ml" 198 7250 7260 "rule.ml" 199 7349 7367
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 200 7368 7374 "rule.ml" 200 7368 7384
+type(
+  [ `cache_hit
+  | `cache_miss_changed_dep of Pathname.t
+  | `cache_miss_changed_dyn_dep of Resources.elt
+  | `cache_miss_digest_changed of string * My_std.Digest.t
+  | `cache_miss_missing_prod of Pathname.t
+  | `cache_miss_no_digest ]
+)
+"rule.ml" 200 7368 7388 "rule.ml" 200 7368 7395
+type(
+  int -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Log.dprintf
+)
+"rule.ml" 200 7368 7397 "rule.ml" 200 7368 7398
+type(
+  int
+)
+ident(
+  int_ref l "rule.ml" 188 6759 6780 "rule.ml" 188 6759 6781
+)
+"rule.ml" 200 7368 7398 "rule.ml" 200 7368 7399
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"rule.ml" 200 7368 7399 "rule.ml" 200 7368 7400
+type(
+  int
+)
+"rule.ml" 200 7368 7396 "rule.ml" 200 7368 7401
+type(
+  int
+)
+"rule.ml" 200 7368 7402 "rule.ml" 200 7368 7413
+type(
+  (unit, Format.formatter, unit) format
+)
+"rule.ml" 200 7368 7388 "rule.ml" 200 7368 7413
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 201 7414 7447 "rule.ml" 201 7414 7452
+type(
+  string
+)
+ident(
+  def old_d "rule.ml" 202 7464 7474 "rule.ml" 203 7580 7636
+)
+"rule.ml" 201 7414 7454 "rule.ml" 201 7414 7459
+type(
+  My_std.Digest.t
+)
+ident(
+  def new_d "rule.ml" 202 7464 7474 "rule.ml" 203 7580 7636
+)
+"rule.ml" 201 7414 7446 "rule.ml" 201 7414 7460
+type(
+  string * My_std.Digest.t
+)
+"rule.ml" 201 7414 7420 "rule.ml" 201 7414 7460
+type(
+  [ `cache_hit
+  | `cache_miss_changed_dep of Pathname.t
+  | `cache_miss_changed_dyn_dep of Resources.elt
+  | `cache_miss_digest_changed of string * My_std.Digest.t
+  | `cache_miss_missing_prod of Pathname.t
+  | `cache_miss_no_digest ]
+)
+"rule.ml" 202 7464 7474 "rule.ml" 202 7464 7481
+type(
+  int ->
+  (string ->
+   (Format.formatter -> My_std.Digest.t -> unit) ->
+   My_std.Digest.t ->
+   (Format.formatter -> My_std.Digest.t -> unit) -> My_std.Digest.t -> unit,
+   Format.formatter, unit)
+  format ->
+  string ->
+  (Format.formatter -> My_std.Digest.t -> unit) ->
+  My_std.Digest.t ->
+  (Format.formatter -> My_std.Digest.t -> unit) -> My_std.Digest.t -> unit
+)
+ident(
+  ext_ref Log.dprintf
+)
+"rule.ml" 202 7464 7482 "rule.ml" 202 7464 7483
+type(
+  int
+)
+ident(
+  int_ref l "rule.ml" 188 6759 6780 "rule.ml" 188 6759 6781
+)
+"rule.ml" 202 7464 7484 "rule.ml" 202 7464 7579
+type(
+  (string ->
+   (Format.formatter -> My_std.Digest.t -> unit) ->
+   My_std.Digest.t ->
+   (Format.formatter -> My_std.Digest.t -> unit) -> My_std.Digest.t -> unit,
+   Format.formatter, unit)
+  format
+)
+"rule.ml" 203 7580 7592 "rule.ml" 203 7580 7593
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 203 7580 7592 "rule.ml" 203 7580 7598
+type(
+  string
+)
+"rule.ml" 203 7580 7599 "rule.ml" 203 7580 7611
+type(
+  Format.formatter -> My_std.Digest.t -> unit
+)
+ident(
+  int_ref print_digest "rule.ml" 133 4682 4686 "rule.ml" 133 4682 4698
+)
+"rule.ml" 203 7580 7612 "rule.ml" 203 7580 7617
+type(
+  My_std.Digest.t
+)
+ident(
+  int_ref old_d "rule.ml" 201 7414 7447 "rule.ml" 201 7414 7452
+)
+"rule.ml" 203 7580 7618 "rule.ml" 203 7580 7630
+type(
+  Format.formatter -> My_std.Digest.t -> unit
+)
+ident(
+  int_ref print_digest "rule.ml" 133 4682 4686 "rule.ml" 133 4682 4698
+)
+"rule.ml" 203 7580 7631 "rule.ml" 203 7580 7636
+type(
+  My_std.Digest.t
+)
+ident(
+  int_ref new_d "rule.ml" 201 7414 7454 "rule.ml" 201 7414 7459
+)
+"rule.ml" 202 7464 7474 "rule.ml" 203 7580 7636
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 190 6831 6835 "rule.ml" 203 7580 7636
+type(
+  unit
+)
+"rule.ml" 189 6784 6788 "rule.ml" 203 7580 7636
+type(
+  unit
+)
+"rule.ml" 205 7642 7648 "rule.ml" 205 7642 7660
+type(
+  (string * My_std.Digest.t) list
+)
+ident(
+  def prod_digests "rule.ml" 206 7681 7683 "rule.ml" 240 9101 9199
+)
+"rule.ml" 205 7642 7663 "rule.ml" 205 7642 7675
+type(
+  Pathname.t gen_rule -> (string * My_std.Digest.t) list
+)
+ident(
+  int_ref digest_prods "rule.ml" 100 3544 3548 "rule.ml" 100 3544 3560
+)
+"rule.ml" 205 7642 7676 "rule.ml" 205 7642 7677
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 205 7642 7663 "rule.ml" 205 7642 7677
+call(
+  stack
+)
+type(
+  (string * My_std.Digest.t) list
+)
+"rule.ml" 206 7681 7687 "rule.ml" 206 7681 7690
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"rule.ml" 206 7681 7691 "rule.ml" 206 7681 7697
+type(
+  bool
+)
+ident(
+  int_ref cached "rule.ml" 168 5899 5914 "rule.ml" 168 5899 5920
+)
+"rule.ml" 206 7681 7687 "rule.ml" 206 7681 7697
+type(
+  bool
+)
+"rule.ml" 206 7681 7703 "rule.ml" 206 7681 7712
+type(
+  (Pathname.t -> unit) -> Pathname.t list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"rule.ml" 206 7681 7713 "rule.ml" 206 7681 7727
+type(
+  Pathname.t -> unit
+)
+ident(
+  ext_ref Resource.clean
+)
+"rule.ml" 206 7681 7728 "rule.ml" 206 7681 7729
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 206 7681 7728 "rule.ml" 206 7681 7735
+type(
+  Pathname.t list
+)
+"rule.ml" 206 7681 7703 "rule.ml" 206 7681 7735
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 206 7681 7683 "rule.ml" 206 7681 7736
+type(
+  unit
+)
+"rule.ml" 207 7738 7744 "rule.ml" 207 7738 7745
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"rule.ml" 207 7738 7745 "rule.ml" 207 7738 7778
+type(
+  bool ref
+)
+ident(
+  ext_ref Options.nothing_should_be_rebuilt
+)
+"rule.ml" 207 7738 7744 "rule.ml" 207 7738 7778
+type(
+  bool
+)
+"rule.ml" 207 7738 7779 "rule.ml" 207 7738 7781
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"rule.ml" 207 7738 7782 "rule.ml" 207 7738 7785
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"rule.ml" 207 7738 7786 "rule.ml" 207 7738 7792
+type(
+  bool
+)
+ident(
+  int_ref cached "rule.ml" 168 5899 5914 "rule.ml" 168 5899 5920
+)
+"rule.ml" 207 7738 7782 "rule.ml" 207 7738 7792
+type(
+  bool
+)
+"rule.ml" 207 7738 7744 "rule.ml" 207 7738 7792
+type(
+  bool
+)
+"rule.ml" 208 7798 7803 "rule.ml" 208 7798 7817
+type(
+  int -> unit
+)
+ident(
+  int_ref explain_reason "rule.ml" 188 6759 6765 "rule.ml" 188 6759 6779
+)
+"rule.ml" 208 7798 7818 "rule.ml" 208 7798 7822
+type(
+  int
+)
+"rule.ml" 208 7798 7803 "rule.ml" 208 7798 7822
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 209 7824 7833 "rule.ml" 209 7824 7836
+type(
+  string
+)
+ident(
+  def msg "rule.ml" 210 7930 7935 "rule.ml" 210 7930 7962
+)
+"rule.ml" 209 7824 7839 "rule.ml" 209 7824 7847
+type(
+  ((Format.formatter -> Pathname.t list -> unit) ->
+   Pathname.t list ->
+   (Format.formatter -> Pathname.t gen_rule -> unit) ->
+   Pathname.t gen_rule -> string, Format.formatter, unit, string)
+  format4 ->
+  (Format.formatter -> Pathname.t list -> unit) ->
+  Pathname.t list ->
+  (Format.formatter -> Pathname.t gen_rule -> unit) ->
+  Pathname.t gen_rule -> string
+)
+ident(
+  ext_ref My_std.sbprintf
+)
+"rule.ml" 209 7824 7848 "rule.ml" 209 7824 7890
+type(
+  ((Format.formatter -> Pathname.t list -> unit) ->
+   Pathname.t list ->
+   (Format.formatter -> Pathname.t gen_rule -> unit) ->
+   Pathname.t gen_rule -> string, Format.formatter, unit, string)
+  format4
+)
+"rule.ml" 209 7824 7891 "rule.ml" 209 7824 7910
+type(
+  Format.formatter -> Pathname.t list -> unit
+)
+ident(
+  int_ref print_resource_list "rule.ml" 53 1895 1899 "rule.ml" 53 1895 1918
+)
+"rule.ml" 209 7824 7911 "rule.ml" 209 7824 7912
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 209 7824 7911 "rule.ml" 209 7824 7918
+type(
+  Pathname.t list
+)
+"rule.ml" 209 7824 7919 "rule.ml" 209 7824 7924
+type(
+  Format.formatter -> Pathname.t gen_rule -> unit
+)
+ident(
+  int_ref print "rule.ml" 72 2568 2572 "rule.ml" 72 2568 2577
+)
+"rule.ml" 209 7824 7925 "rule.ml" 209 7824 7926
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 209 7824 7839 "rule.ml" 209 7824 7926
+call(
+  stack
+)
+type(
+  string
+)
+"rule.ml" 210 7930 7935 "rule.ml" 210 7930 7940
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"rule.ml" 210 7930 7958 "rule.ml" 210 7930 7961
+type(
+  string
+)
+ident(
+  int_ref msg "rule.ml" 209 7824 7833 "rule.ml" 209 7824 7836
+)
+"rule.ml" 210 7930 7941 "rule.ml" 210 7930 7962
+type(
+  exn
+)
+"rule.ml" 210 7930 7935 "rule.ml" 210 7930 7962
+type(
+  unit
+)
+"rule.ml" 209 7824 7829 "rule.ml" 210 7930 7962
+type(
+  unit
+)
+"rule.ml" 208 7798 7802 "rule.ml" 210 7930 7963
+type(
+  unit
+)
+"rule.ml" 207 7738 7740 "rule.ml" 210 7930 7964
+type(
+  unit
+)
+"rule.ml" 211 7966 7968 "rule.ml" 211 7966 7982
+type(
+  int -> unit
+)
+ident(
+  int_ref explain_reason "rule.ml" 188 6759 6765 "rule.ml" 188 6759 6779
+)
+"rule.ml" 211 7966 7983 "rule.ml" 211 7966 7984
+type(
+  int
+)
+"rule.ml" 211 7966 7968 "rule.ml" 211 7966 7984
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 212 7986 7992 "rule.ml" 212 7986 7997
+type(
+  unit -> unit
+)
+ident(
+  def thunk "rule.ml" 238 9073 9075 "rule.ml" 240 9101 9199
+)
+"rule.ml" 212 7986 7998 "rule.ml" 212 7986 8000
+type(
+  unit
+)
+"rule.ml" 214 8011 8020 "rule.ml" 214 8011 8026
+type(
+  bool
+)
+ident(
+  int_ref cached "rule.ml" 168 5899 5914 "rule.ml" 168 5899 5920
+)
+"rule.ml" 214 8011 8032 "rule.ml" 214 8011 8047
+type(
+  ?quiet:bool -> ?pretend:bool -> Command.t -> unit
+)
+ident(
+  ext_ref Command.execute
+)
+"rule.ml" 214 8011 8057 "rule.ml" 214 8011 8061
+type(
+  bool
+)
+"rule.ml" 214 8011 8062 "rule.ml" 214 8011 8068
+type(
+  digest_command
+)
+ident(
+  int_ref action "rule.ml" 164 5710 5716 "rule.ml" 164 5710 5722
+)
+"rule.ml" 214 8011 8062 "rule.ml" 214 8011 8076
+type(
+  Command.t
+)
+"rule.ml" 214 8011 8032 "rule.ml" 214 8011 8076
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 216 8088 8108 "rule.ml" 216 8088 8109
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 216 8088 8108 "rule.ml" 216 8088 8115
+type(
+  Pathname.t option
+)
+"rule.ml" 217 8121 8136 "rule.ml" 217 8121 8141
+type(
+  Pathname.t
+)
+ident(
+  def stamp "rule.ml" 218 8145 8157 "rule.ml" 220 8236 8311
+)
+"rule.ml" 217 8121 8131 "rule.ml" 217 8121 8141
+type(
+  Pathname.t option
+)
+"rule.ml" 218 8145 8157 "rule.ml" 218 8145 8176
+type(
+  unit -> unit
+)
+ident(
+  ext_ref My_std.reset_filesys_cache
+)
+"rule.ml" 218 8145 8177 "rule.ml" 218 8145 8179
+type(
+  unit
+)
+"rule.ml" 218 8145 8157 "rule.ml" 218 8145 8179
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 219 8181 8197 "rule.ml" 219 8181 8208
+type(
+  string
+)
+ident(
+  def digest_deps "rule.ml" 220 8236 8248 "rule.ml" 220 8236 8311
+)
+"rule.ml" 219 8181 8211 "rule.ml" 219 8181 8222
+type(
+  Pathname.t gen_rule -> Resources.t -> string
+)
+ident(
+  int_ref digest_deps "rule.ml" 106 3745 3749 "rule.ml" 106 3745 3760
+)
+"rule.ml" 219 8181 8223 "rule.ml" 219 8181 8224
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 219 8181 8225 "rule.ml" 219 8181 8232
+type(
+  Resources.t
+)
+ident(
+  int_ref dyndeps "rule.ml" 166 5808 5814 "rule.ml" 166 5808 5821
+)
+"rule.ml" 219 8181 8211 "rule.ml" 219 8181 8232
+call(
+  stack
+)
+type(
+  string
+)
+"rule.ml" 220 8236 8248 "rule.ml" 220 8236 8264
+type(
+  ?bin:bool -> Pathname.t -> (out_channel -> unit) -> unit
+)
+ident(
+  ext_ref My_std.with_output_file
+)
+"rule.ml" 220 8236 8265 "rule.ml" 220 8236 8270
+type(
+  Pathname.t
+)
+ident(
+  int_ref stamp "rule.ml" 217 8121 8136 "rule.ml" 217 8121 8141
+)
+"rule.ml" 220 8236 8276 "rule.ml" 220 8236 8278
+type(
+  out_channel
+)
+ident(
+  def oc "rule.ml" 220 8236 8282 "rule.ml" 220 8236 8310
+)
+"rule.ml" 220 8236 8282 "rule.ml" 220 8236 8295
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"rule.ml" 220 8236 8296 "rule.ml" 220 8236 8298
+type(
+  out_channel
+)
+ident(
+  int_ref oc "rule.ml" 220 8236 8276 "rule.ml" 220 8236 8278
+)
+"rule.ml" 220 8236 8299 "rule.ml" 220 8236 8310
+type(
+  string
+)
+ident(
+  int_ref digest_deps "rule.ml" 219 8181 8197 "rule.ml" 219 8181 8208
+)
+"rule.ml" 220 8236 8282 "rule.ml" 220 8236 8310
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 220 8236 8271 "rule.ml" 220 8236 8311
+type(
+  out_channel -> unit
+)
+"rule.ml" 220 8236 8248 "rule.ml" 220 8236 8311
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 219 8181 8193 "rule.ml" 220 8236 8311
+type(
+  unit
+)
+"rule.ml" 218 8145 8157 "rule.ml" 220 8236 8311
+type(
+  unit
+)
+"rule.ml" 221 8312 8322 "rule.ml" 221 8312 8326
+type(
+  Pathname.t option
+)
+"rule.ml" 221 8312 8330 "rule.ml" 221 8312 8332
+type(
+  unit
+)
+"rule.ml" 216 8088 8096 "rule.ml" 222 8333 8344
+type(
+  unit
+)
+"rule.ml" 214 8011 8017 "rule.ml" 222 8333 8344
+type(
+  unit
+)
+"rule.ml" 223 8346 8352 "rule.ml" 223 8346 8361
+type(
+  (Pathname.t -> unit) -> Pathname.t list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"rule.ml" 223 8346 8367 "rule.ml" 223 8346 8368
+type(
+  Pathname.t
+)
+ident(
+  def r "rule.ml" 223 8346 8372 "rule.ml" 223 8346 8403
+)
+"rule.ml" 223 8346 8372 "rule.ml" 223 8346 8401
+type(
+  Pathname.t -> unit
+)
+ident(
+  ext_ref Resource.Cache.resource_built
+)
+"rule.ml" 223 8346 8402 "rule.ml" 223 8346 8403
+type(
+  Pathname.t
+)
+ident(
+  int_ref r "rule.ml" 223 8346 8367 "rule.ml" 223 8346 8368
+)
+"rule.ml" 223 8346 8372 "rule.ml" 223 8346 8403
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 223 8346 8362 "rule.ml" 223 8346 8404
+type(
+  Pathname.t -> unit
+)
+"rule.ml" 223 8346 8405 "rule.ml" 223 8346 8406
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 223 8346 8405 "rule.ml" 223 8346 8412
+type(
+  Pathname.t list
+)
+"rule.ml" 223 8346 8352 "rule.ml" 223 8346 8412
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 224 8414 8424 "rule.ml" 224 8414 8427
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"rule.ml" 224 8414 8428 "rule.ml" 224 8414 8434
+type(
+  bool
+)
+ident(
+  int_ref cached "rule.ml" 168 5899 5914 "rule.ml" 168 5899 5920
+)
+"rule.ml" 224 8414 8424 "rule.ml" 224 8414 8434
+type(
+  bool
+)
+"rule.ml" 225 8440 8452 "rule.ml" 225 8440 8467
+type(
+  My_std.Digest.t
+)
+ident(
+  def new_rule_digest "rule.ml" 226 8502 8510 "rule.ml" 234 8946 8965
+)
+"rule.ml" 225 8440 8470 "rule.ml" 225 8440 8481
+type(
+  Pathname.t gen_rule -> Resources.t -> digest_command -> My_std.Digest.t
+)
+ident(
+  int_ref digest_rule "rule.ml" 115 4087 4091 "rule.ml" 115 4087 4102
+)
+"rule.ml" 225 8440 8482 "rule.ml" 225 8440 8483
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 225 8440 8484 "rule.ml" 225 8440 8491
+type(
+  Resources.t
+)
+ident(
+  int_ref dyndeps "rule.ml" 166 5808 5814 "rule.ml" 166 5808 5821
+)
+"rule.ml" 225 8440 8492 "rule.ml" 225 8440 8498
+type(
+  digest_command
+)
+ident(
+  int_ref action "rule.ml" 164 5710 5716 "rule.ml" 164 5710 5722
+)
+"rule.ml" 225 8440 8470 "rule.ml" 225 8440 8498
+call(
+  stack
+)
+type(
+  My_std.Digest.t
+)
+"rule.ml" 226 8502 8514 "rule.ml" 226 8502 8530
+type(
+  (string * My_std.Digest.t) list
+)
+ident(
+  def new_prod_digests "rule.ml" 227 8551 8559 "rule.ml" 234 8946 8965
+)
+"rule.ml" 226 8502 8533 "rule.ml" 226 8502 8545
+type(
+  Pathname.t gen_rule -> (string * My_std.Digest.t) list
+)
+ident(
+  int_ref digest_prods "rule.ml" 100 3544 3548 "rule.ml" 100 3544 3560
+)
+"rule.ml" 226 8502 8546 "rule.ml" 226 8502 8547
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 226 8502 8533 "rule.ml" 226 8502 8547
+call(
+  stack
+)
+type(
+  (string * My_std.Digest.t) list
+)
+"rule.ml" 227 8551 8563 "rule.ml" 227 8551 8565
+type(
+  unit
+)
+"rule.ml" 227 8551 8568 "rule.ml" 227 8551 8580
+type(
+  Pathname.t gen_rule -> My_std.Digest.t -> unit
+)
+ident(
+  int_ref store_digest "rule.ml" 131 4609 4613 "rule.ml" 131 4609 4625
+)
+"rule.ml" 227 8551 8581 "rule.ml" 227 8551 8582
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 227 8551 8583 "rule.ml" 227 8551 8598
+type(
+  My_std.Digest.t
+)
+ident(
+  int_ref new_rule_digest "rule.ml" 225 8440 8452 "rule.ml" 225 8440 8467
+)
+"rule.ml" 227 8551 8568 "rule.ml" 227 8551 8598
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 228 8602 8610 "rule.ml" 228 8602 8619
+type(
+  (Pathname.t -> unit) -> Pathname.t list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"rule.ml" 228 8602 8630 "rule.ml" 228 8602 8631
+type(
+  Pathname.t
+)
+ident(
+  def p "rule.ml" 229 8635 8645 "rule.ml" 233 8883 8945
+)
+"rule.ml" 229 8635 8649 "rule.ml" 229 8635 8650
+type(
+  string
+)
+ident(
+  def f "rule.ml" 230 8701 8711 "rule.ml" 233 8883 8945
+)
+"rule.ml" 229 8635 8653 "rule.ml" 229 8635 8671
+type(
+  Pathname.t -> string
+)
+ident(
+  ext_ref Pathname.to_string
+)
+"rule.ml" 229 8635 8673 "rule.ml" 229 8635 8694
+type(
+  Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Resource.in_build_dir
+)
+"rule.ml" 229 8635 8695 "rule.ml" 229 8635 8696
+type(
+  Pathname.t
+)
+ident(
+  int_ref p "rule.ml" 228 8602 8630 "rule.ml" 228 8602 8631
+)
+"rule.ml" 229 8635 8672 "rule.ml" 229 8635 8697
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"rule.ml" 229 8635 8653 "rule.ml" 229 8635 8697
+call(
+  stack
+)
+type(
+  string
+)
+"rule.ml" 230 8701 8720 "rule.ml" 230 8701 8726
+type(
+  My_std.Digest.t
+)
+ident(
+  def digest "rule.ml" 231 8758 8773 "rule.ml" 232 8823 8882
+)
+"rule.ml" 230 8701 8729 "rule.ml" 230 8701 8739
+type(
+  string -> (string * My_std.Digest.t) list -> My_std.Digest.t
+)
+ident(
+  ext_ref My_std.List.assoc
+)
+"rule.ml" 230 8701 8740 "rule.ml" 230 8701 8741
+type(
+  string
+)
+ident(
+  int_ref f "rule.ml" 229 8635 8649 "rule.ml" 229 8635 8650
+)
+"rule.ml" 230 8701 8742 "rule.ml" 230 8701 8754
+type(
+  (string * My_std.Digest.t) list
+)
+ident(
+  int_ref prod_digests "rule.ml" 205 7642 7648 "rule.ml" 205 7642 7660
+)
+"rule.ml" 230 8701 8729 "rule.ml" 230 8701 8754
+call(
+  stack
+)
+type(
+  My_std.Digest.t
+)
+"rule.ml" 231 8758 8777 "rule.ml" 231 8758 8787
+type(
+  My_std.Digest.t
+)
+ident(
+  def new_digest "rule.ml" 232 8823 8838 "rule.ml" 232 8823 8882
+)
+"rule.ml" 231 8758 8790 "rule.ml" 231 8758 8800
+type(
+  string -> (string * My_std.Digest.t) list -> My_std.Digest.t
+)
+ident(
+  ext_ref My_std.List.assoc
+)
+"rule.ml" 231 8758 8801 "rule.ml" 231 8758 8802
+type(
+  string
+)
+ident(
+  int_ref f "rule.ml" 229 8635 8649 "rule.ml" 229 8635 8650
+)
+"rule.ml" 231 8758 8803 "rule.ml" 231 8758 8819
+type(
+  (string * My_std.Digest.t) list
+)
+ident(
+  int_ref new_prod_digests "rule.ml" 226 8502 8514 "rule.ml" 226 8502 8530
+)
+"rule.ml" 231 8758 8790 "rule.ml" 231 8758 8819
+call(
+  stack
+)
+type(
+  My_std.Digest.t
+)
+"rule.ml" 232 8823 8841 "rule.ml" 232 8823 8847
+type(
+  My_std.Digest.t
+)
+ident(
+  int_ref digest "rule.ml" 230 8701 8720 "rule.ml" 230 8701 8726
+)
+"rule.ml" 232 8823 8848 "rule.ml" 232 8823 8850
+type(
+  My_std.Digest.t -> My_std.Digest.t -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"rule.ml" 232 8823 8851 "rule.ml" 232 8823 8861
+type(
+  My_std.Digest.t
+)
+ident(
+  int_ref new_digest "rule.ml" 231 8758 8777 "rule.ml" 231 8758 8787
+)
+"rule.ml" 232 8823 8841 "rule.ml" 232 8823 8861
+type(
+  bool
+)
+"rule.ml" 232 8823 8867 "rule.ml" 232 8823 8872
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"rule.ml" 232 8823 8873 "rule.ml" 232 8823 8882
+type(
+  exn
+)
+"rule.ml" 232 8823 8867 "rule.ml" 232 8823 8882
+type(
+  unit
+)
+"rule.ml" 232 8823 8838 "rule.ml" 232 8823 8882
+type(
+  unit
+)
+"rule.ml" 231 8758 8773 "rule.ml" 232 8823 8882
+type(
+  unit
+)
+"rule.ml" 230 8701 8716 "rule.ml" 232 8823 8882
+type(
+  unit
+)
+"rule.ml" 233 8883 8898 "rule.ml" 233 8883 8907
+type(
+  exn
+)
+"rule.ml" 233 8883 8911 "rule.ml" 233 8883 8942
+type(
+  Pathname.t -> unit
+)
+ident(
+  ext_ref Resource.Cache.resource_changed
+)
+"rule.ml" 233 8883 8943 "rule.ml" 233 8883 8944
+type(
+  Pathname.t
+)
+ident(
+  int_ref p "rule.ml" 228 8602 8630 "rule.ml" 228 8602 8631
+)
+"rule.ml" 233 8883 8911 "rule.ml" 233 8883 8944
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 230 8701 8711 "rule.ml" 233 8883 8945
+type(
+  unit
+)
+"rule.ml" 229 8635 8645 "rule.ml" 233 8883 8945
+type(
+  unit
+)
+"rule.ml" 228 8602 8620 "rule.ml" 234 8946 8957
+type(
+  Pathname.t -> unit
+)
+"rule.ml" 234 8946 8958 "rule.ml" 234 8946 8959
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 234 8946 8958 "rule.ml" 234 8946 8965
+type(
+  Pathname.t list
+)
+"rule.ml" 228 8602 8610 "rule.ml" 234 8946 8965
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 227 8551 8559 "rule.ml" 234 8946 8965
+type(
+  unit
+)
+"rule.ml" 226 8502 8510 "rule.ml" 234 8946 8965
+type(
+  unit
+)
+"rule.ml" 225 8440 8448 "rule.ml" 234 8946 8965
+type(
+  unit
+)
+"rule.ml" 224 8414 8420 "rule.ml" 234 8946 8966
+type(
+  unit
+)
+"rule.ml" 235 8968 8974 "rule.ml" 235 8968 8981
+type(
+  int ->
+  ((Format.formatter -> Pathname.t gen_rule -> unit) ->
+   Pathname.t gen_rule -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Pathname.t gen_rule -> unit) ->
+  Pathname.t gen_rule -> unit
+)
+ident(
+  ext_ref Log.dprintf
+)
+"rule.ml" 235 8968 8982 "rule.ml" 235 8968 8983
+type(
+  int
+)
+"rule.ml" 235 8968 8984 "rule.ml" 235 8968 8997
+type(
+  ((Format.formatter -> Pathname.t gen_rule -> unit) ->
+   Pathname.t gen_rule -> unit, Format.formatter, unit)
+  format
+)
+"rule.ml" 235 8968 8998 "rule.ml" 235 8968 9003
+type(
+  Format.formatter -> Pathname.t gen_rule -> unit
+)
+ident(
+  int_ref print "rule.ml" 72 2568 2572 "rule.ml" 72 2568 2577
+)
+"rule.ml" 235 8968 9004 "rule.ml" 235 8968 9005
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 235 8968 8974 "rule.ml" 235 8968 9005
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 224 8414 8420 "rule.ml" 235 8968 9005
+type(
+  unit
+)
+"rule.ml" 223 8346 8352 "rule.ml" 235 8968 9005
+type(
+  unit
+)
+"rule.ml" 214 8011 8017 "rule.ml" 235 8968 9005
+type(
+  unit
+)
+"rule.ml" 236 9006 9015 "rule.ml" 236 9006 9018
+type(
+  exn
+)
+ident(
+  def exn "rule.ml" 236 9006 9022 "rule.ml" 236 9006 9067
+)
+"rule.ml" 236 9006 9023 "rule.ml" 236 9006 9032
+type(
+  (Pathname.t -> unit) -> Pathname.t list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"rule.ml" 236 9006 9033 "rule.ml" 236 9006 9047
+type(
+  Pathname.t -> unit
+)
+ident(
+  ext_ref Resource.clean
+)
+"rule.ml" 236 9006 9048 "rule.ml" 236 9006 9049
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 236 9006 9048 "rule.ml" 236 9006 9055
+type(
+  Pathname.t list
+)
+"rule.ml" 236 9006 9023 "rule.ml" 236 9006 9055
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 236 9006 9057 "rule.ml" 236 9006 9062
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"rule.ml" 236 9006 9063 "rule.ml" 236 9006 9066
+type(
+  exn
+)
+ident(
+  int_ref exn "rule.ml" 236 9006 9015 "rule.ml" 236 9006 9018
+)
+"rule.ml" 236 9006 9057 "rule.ml" 236 9006 9066
+type(
+  unit
+)
+"rule.ml" 236 9006 9022 "rule.ml" 236 9006 9067
+type(
+  unit
+)
+"rule.ml" 213 8003 8007 "rule.ml" 236 9006 9067
+type(
+  unit
+)
+"rule.ml" 238 9073 9078 "rule.ml" 238 9073 9084
+type(
+  bool
+)
+ident(
+  int_ref cached "rule.ml" 168 5899 5914 "rule.ml" 168 5899 5920
+)
+"rule.ml" 239 9085 9092 "rule.ml" 239 9085 9097
+type(
+  unit -> unit
+)
+ident(
+  int_ref thunk "rule.ml" 212 7986 7992 "rule.ml" 212 7986 7997
+)
+"rule.ml" 239 9085 9098 "rule.ml" 239 9085 9100
+type(
+  unit
+)
+"rule.ml" 239 9085 9092 "rule.ml" 239 9085 9100
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 240 9101 9108 "rule.ml" 240 9101 9117
+type(
+  (Pathname.t -> unit) -> Pathname.t list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"rule.ml" 240 9101 9123 "rule.ml" 240 9101 9124
+type(
+  Pathname.t
+)
+ident(
+  def x "rule.ml" 240 9101 9128 "rule.ml" 240 9101 9190
+)
+"rule.ml" 240 9101 9128 "rule.ml" 240 9101 9159
+type(
+  Pathname.t -> Command.t -> (unit -> unit) -> Pathname.t list -> unit
+)
+ident(
+  ext_ref Resource.Cache.suspend_resource
+)
+"rule.ml" 240 9101 9160 "rule.ml" 240 9101 9161
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "rule.ml" 240 9101 9123 "rule.ml" 240 9101 9124
+)
+"rule.ml" 240 9101 9162 "rule.ml" 240 9101 9168
+type(
+  digest_command
+)
+ident(
+  int_ref action "rule.ml" 164 5710 5716 "rule.ml" 164 5710 5722
+)
+"rule.ml" 240 9101 9162 "rule.ml" 240 9101 9176
+type(
+  Command.t
+)
+"rule.ml" 240 9101 9177 "rule.ml" 240 9101 9182
+type(
+  unit -> unit
+)
+ident(
+  int_ref thunk "rule.ml" 212 7986 7992 "rule.ml" 212 7986 7997
+)
+"rule.ml" 240 9101 9183 "rule.ml" 240 9101 9184
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 240 9101 9183 "rule.ml" 240 9101 9190
+type(
+  Pathname.t list
+)
+"rule.ml" 240 9101 9128 "rule.ml" 240 9101 9190
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 240 9101 9118 "rule.ml" 240 9101 9191
+type(
+  Pathname.t -> unit
+)
+"rule.ml" 240 9101 9192 "rule.ml" 240 9101 9193
+type(
+  Pathname.t gen_rule
+)
+ident(
+  int_ref r "rule.ml" 150 5197 5214 "rule.ml" 150 5197 5215
+)
+"rule.ml" 240 9101 9192 "rule.ml" 240 9101 9199
+type(
+  Pathname.t list
+)
+"rule.ml" 240 9101 9108 "rule.ml" 240 9101 9199
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 238 9073 9075 "rule.ml" 240 9101 9199
+type(
+  unit
+)
+"rule.ml" 212 7986 7988 "rule.ml" 240 9101 9199
+type(
+  unit
+)
+"rule.ml" 211 7966 7968 "rule.ml" 240 9101 9199
+type(
+  unit
+)
+"rule.ml" 207 7738 7740 "rule.ml" 240 9101 9199
+type(
+  unit
+)
+"rule.ml" 206 7681 7683 "rule.ml" 240 9101 9199
+type(
+  unit
+)
+"rule.ml" 205 7642 7644 "rule.ml" 240 9101 9199
+type(
+  unit
+)
+"rule.ml" 188 6759 6761 "rule.ml" 240 9101 9199
+type(
+  unit
+)
+"rule.ml" 168 5899 5901 "rule.ml" 240 9101 9199
+type(
+  unit
+)
+"rule.ml" 167 5836 5838 "rule.ml" 240 9101 9199
+type(
+  unit
+)
+"rule.ml" 166 5808 5810 "rule.ml" 240 9101 9199
+type(
+  unit
+)
+"rule.ml" 165 5756 5758 "rule.ml" 240 9101 9199
+type(
+  unit
+)
+"rule.ml" 164 5710 5712 "rule.ml" 240 9101 9199
+type(
+  unit
+)
+"rule.ml" 163 5662 5664 "rule.ml" 240 9101 9199
+type(
+  unit
+)
+"rule.ml" 152 5257 5259 "rule.ml" 240 9101 9199
+type(
+  unit
+)
+"rule.ml" 151 5218 5220 "rule.ml" 240 9101 9199
+type(
+  unit
+)
+"rule.ml" 242 9201 9206 "rule.ml" 242 9201 9215
+type(
+  unit -> Resource.resource_pattern gen_rule list
+)
+ident(
+  def get_rules "rule.ml" 266 9967 9967 "rule.ml" 1 0 -1
+)
+"rule.ml" 242 9201 9217 "rule.ml" 242 9201 9225
+type(
+  [ `after of string | `before of string | `bottom | `top ] ->
+  Resource.resource_pattern gen_rule -> unit
+)
+ident(
+  def add_rule "rule.ml" 266 9967 9967 "rule.ml" 1 0 -1
+)
+"rule.ml" 242 9201 9227 "rule.ml" 242 9201 9238
+type(
+  unit -> unit
+)
+ident(
+  def clear_rules "rule.ml" 266 9967 9967 "rule.ml" 1 0 -1
+)
+"rule.ml" 242 9201 9205 "rule.ml" 242 9201 9239
+type(
+  (unit -> Resource.resource_pattern gen_rule list) *
+  ([ `after of string | `before of string | `bottom | `top ] ->
+   Resource.resource_pattern gen_rule -> unit) *
+  (unit -> unit)
+)
+"rule.ml" 243 9242 9248 "rule.ml" 243 9242 9253
+type(
+  Resource.resource_pattern gen_rule list ref
+)
+ident(
+  def rules "rule.ml" 244 9266 9268 "rule.ml" 264 9940 9965
+)
+"rule.ml" 243 9242 9256 "rule.ml" 243 9242 9259
+type(
+  Resource.resource_pattern gen_rule list ->
+  Resource.resource_pattern gen_rule list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"rule.ml" 243 9242 9260 "rule.ml" 243 9242 9262
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 243 9242 9256 "rule.ml" 243 9242 9262
+type(
+  Resource.resource_pattern gen_rule list ref
+)
+"rule.ml" 244 9266 9273 "rule.ml" 244 9266 9275
+type(
+  unit
+)
+"rule.ml" 244 9266 9279 "rule.ml" 244 9266 9280
+type(
+  Resource.resource_pattern gen_rule list ref ->
+  Resource.resource_pattern gen_rule list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"rule.ml" 244 9266 9280 "rule.ml" 244 9266 9285
+type(
+  Resource.resource_pattern gen_rule list ref
+)
+ident(
+  int_ref rules "rule.ml" 243 9242 9248 "rule.ml" 243 9242 9253
+)
+"rule.ml" 244 9266 9279 "rule.ml" 244 9266 9285
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 244 9266 9268 "rule.ml" 244 9266 9286
+type(
+  unit -> Resource.resource_pattern gen_rule list
+)
+"rule.ml" 245 9288 9300 "rule.ml" 245 9288 9303
+type(
+  [ `after of string | `before of string | `bottom | `top ]
+)
+ident(
+  def pos "rule.ml" 245 9288 9304 "rule.ml" 262 9907 9932
+)
+"rule.ml" 245 9288 9304 "rule.ml" 245 9288 9305
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  def r "rule.ml" 246 9309 9313 "rule.ml" 262 9907 9932
+)
+"rule.ml" 247 9317 9327 "rule.ml" 247 9317 9328
+type(
+  Resource.resource_pattern gen_rule
+)
+"rule.ml" 247 9317 9331 "rule.ml" 247 9317 9340
+type(
+  (Resource.resource_pattern gen_rule -> bool) ->
+  Resource.resource_pattern gen_rule list ->
+  Resource.resource_pattern gen_rule
+)
+ident(
+  ext_ref My_std.List.find
+)
+"rule.ml" 247 9317 9346 "rule.ml" 247 9317 9347
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  def x "rule.ml" 247 9317 9351 "rule.ml" 247 9317 9366
+)
+"rule.ml" 247 9317 9351 "rule.ml" 247 9317 9352
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref x "rule.ml" 247 9317 9346 "rule.ml" 247 9317 9347
+)
+"rule.ml" 247 9317 9351 "rule.ml" 247 9317 9357
+type(
+  string
+)
+"rule.ml" 247 9317 9358 "rule.ml" 247 9317 9359
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"rule.ml" 247 9317 9360 "rule.ml" 247 9317 9361
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref r "rule.ml" 245 9288 9304 "rule.ml" 245 9288 9305
+)
+"rule.ml" 247 9317 9360 "rule.ml" 247 9317 9366
+type(
+  string
+)
+"rule.ml" 247 9317 9351 "rule.ml" 247 9317 9366
+type(
+  bool
+)
+"rule.ml" 247 9317 9341 "rule.ml" 247 9317 9367
+type(
+  Resource.resource_pattern gen_rule -> bool
+)
+"rule.ml" 247 9317 9368 "rule.ml" 247 9317 9369
+type(
+  Resource.resource_pattern gen_rule list ref ->
+  Resource.resource_pattern gen_rule list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"rule.ml" 247 9317 9369 "rule.ml" 247 9317 9374
+type(
+  Resource.resource_pattern gen_rule list ref
+)
+ident(
+  int_ref rules "rule.ml" 243 9242 9248 "rule.ml" 243 9242 9253
+)
+"rule.ml" 247 9317 9368 "rule.ml" 247 9317 9374
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 247 9317 9331 "rule.ml" 247 9317 9374
+call(
+  stack
+)
+type(
+  Resource.resource_pattern gen_rule
+)
+"rule.ml" 248 9378 9384 "rule.ml" 248 9378 9389
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"rule.ml" 248 9378 9408 "rule.ml" 248 9378 9416
+type(
+  ((Format.formatter -> Resource.resource_pattern gen_rule -> unit) ->
+   Resource.resource_pattern gen_rule -> string, Format.formatter, unit,
+   string)
+  format4 ->
+  (Format.formatter -> Resource.resource_pattern gen_rule -> unit) ->
+  Resource.resource_pattern gen_rule -> string
+)
+ident(
+  ext_ref My_std.sbprintf
+)
+"rule.ml" 248 9378 9417 "rule.ml" 248 9378 9454
+type(
+  ((Format.formatter -> Resource.resource_pattern gen_rule -> unit) ->
+   Resource.resource_pattern gen_rule -> string, Format.formatter, unit,
+   string)
+  format4
+)
+"rule.ml" 248 9378 9455 "rule.ml" 248 9378 9460
+type(
+  Format.formatter -> Resource.resource_pattern gen_rule -> unit
+)
+ident(
+  int_ref print "rule.ml" 72 2568 2572 "rule.ml" 72 2568 2577
+)
+"rule.ml" 248 9378 9461 "rule.ml" 248 9378 9462
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref r "rule.ml" 245 9288 9304 "rule.ml" 245 9288 9305
+)
+"rule.ml" 248 9378 9407 "rule.ml" 248 9378 9463
+call(
+  stack
+)
+type(
+  string
+)
+"rule.ml" 248 9378 9390 "rule.ml" 248 9378 9464
+type(
+  exn
+)
+"rule.ml" 248 9378 9384 "rule.ml" 248 9378 9464
+type(
+  unit
+)
+"rule.ml" 247 9317 9323 "rule.ml" 248 9378 9464
+type(
+  unit
+)
+"rule.ml" 249 9465 9474 "rule.ml" 249 9465 9483
+type(
+  exn
+)
+"rule.ml" 250 9487 9499 "rule.ml" 250 9487 9502
+type(
+  [ `after of string | `before of string | `bottom | `top ]
+)
+ident(
+  int_ref pos "rule.ml" 245 9288 9300 "rule.ml" 245 9288 9303
+)
+"rule.ml" 251 9508 9516 "rule.ml" 251 9508 9523
+type(
+  [ `after of string | `before of string | `bottom | `top ]
+)
+"rule.ml" 251 9508 9527 "rule.ml" 251 9508 9532
+type(
+  Resource.resource_pattern gen_rule list ref
+)
+ident(
+  int_ref rules "rule.ml" 243 9242 9248 "rule.ml" 243 9242 9253
+)
+"rule.ml" 251 9508 9533 "rule.ml" 251 9508 9535
+type(
+  Resource.resource_pattern gen_rule list ref ->
+  Resource.resource_pattern gen_rule list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"rule.ml" 251 9508 9536 "rule.ml" 251 9508 9537
+type(
+  Resource.resource_pattern gen_rule list ref ->
+  Resource.resource_pattern gen_rule list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"rule.ml" 251 9508 9537 "rule.ml" 251 9508 9542
+type(
+  Resource.resource_pattern gen_rule list ref
+)
+ident(
+  int_ref rules "rule.ml" 243 9242 9248 "rule.ml" 243 9242 9253
+)
+"rule.ml" 251 9508 9536 "rule.ml" 251 9508 9542
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 251 9508 9543 "rule.ml" 251 9508 9544
+type(
+  Resource.resource_pattern gen_rule list ->
+  Resource.resource_pattern gen_rule list ->
+  Resource.resource_pattern gen_rule list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"rule.ml" 251 9508 9546 "rule.ml" 251 9508 9547
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref r "rule.ml" 245 9288 9304 "rule.ml" 245 9288 9305
+)
+"rule.ml" 251 9508 9545 "rule.ml" 251 9508 9548
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 251 9508 9536 "rule.ml" 251 9508 9548
+call(
+  stack
+)
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 251 9508 9527 "rule.ml" 251 9508 9548
+type(
+  unit
+)
+"rule.ml" 252 9549 9557 "rule.ml" 252 9549 9561
+type(
+  [ `after of string | `before of string | `bottom | `top ]
+)
+"rule.ml" 252 9549 9565 "rule.ml" 252 9549 9570
+type(
+  Resource.resource_pattern gen_rule list ref
+)
+ident(
+  int_ref rules "rule.ml" 243 9242 9248 "rule.ml" 243 9242 9253
+)
+"rule.ml" 252 9549 9571 "rule.ml" 252 9549 9573
+type(
+  Resource.resource_pattern gen_rule list ref ->
+  Resource.resource_pattern gen_rule list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"rule.ml" 252 9549 9574 "rule.ml" 252 9549 9575
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref r "rule.ml" 245 9288 9304 "rule.ml" 245 9288 9305
+)
+"rule.ml" 252 9549 9579 "rule.ml" 252 9549 9580
+type(
+  Resource.resource_pattern gen_rule list ref ->
+  Resource.resource_pattern gen_rule list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"rule.ml" 252 9549 9580 "rule.ml" 252 9549 9585
+type(
+  Resource.resource_pattern gen_rule list ref
+)
+ident(
+  int_ref rules "rule.ml" 243 9242 9248 "rule.ml" 243 9242 9253
+)
+"rule.ml" 252 9549 9579 "rule.ml" 252 9549 9585
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 252 9549 9574 "rule.ml" 252 9549 9585
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 252 9549 9565 "rule.ml" 252 9549 9585
+type(
+  unit
+)
+"rule.ml" 253 9586 9601 "rule.ml" 253 9586 9602
+type(
+  string
+)
+ident(
+  def s "rule.ml" 254 9606 9616 "rule.ml" 257 9733 9758
+)
+"rule.ml" 253 9586 9594 "rule.ml" 253 9586 9602
+type(
+  [ `after of string | `before of string | `bottom | `top ]
+)
+"rule.ml" 254 9606 9616 "rule.ml" 254 9606 9621
+type(
+  Resource.resource_pattern gen_rule list ref
+)
+ident(
+  int_ref rules "rule.ml" 243 9242 9248 "rule.ml" 243 9242 9253
+)
+"rule.ml" 254 9606 9622 "rule.ml" 254 9606 9624
+type(
+  Resource.resource_pattern gen_rule list ref ->
+  Resource.resource_pattern gen_rule list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"rule.ml" 255 9625 9637 "rule.ml" 255 9625 9652
+type(
+  (Resource.resource_pattern gen_rule ->
+   Resource.resource_pattern gen_rule list ->
+   Resource.resource_pattern gen_rule list) ->
+  Resource.resource_pattern gen_rule list ->
+  Resource.resource_pattern gen_rule list ->
+  Resource.resource_pattern gen_rule list
+)
+ident(
+  ext_ref My_std.List.fold_right
+)
+"rule.ml" 255 9625 9663 "rule.ml" 255 9625 9664
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  def x "rule.ml" 255 9625 9665 "rule.ml" 256 9672 9732
+)
+"rule.ml" 255 9625 9665 "rule.ml" 255 9625 9668
+type(
+  Resource.resource_pattern gen_rule list
+)
+ident(
+  def acc "rule.ml" 256 9672 9686 "rule.ml" 256 9672 9732
+)
+"rule.ml" 256 9672 9689 "rule.ml" 256 9672 9690
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref x "rule.ml" 255 9625 9663 "rule.ml" 255 9625 9664
+)
+"rule.ml" 256 9672 9689 "rule.ml" 256 9672 9695
+type(
+  string
+)
+"rule.ml" 256 9672 9696 "rule.ml" 256 9672 9697
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"rule.ml" 256 9672 9698 "rule.ml" 256 9672 9699
+type(
+  string
+)
+ident(
+  int_ref s "rule.ml" 253 9586 9601 "rule.ml" 253 9586 9602
+)
+"rule.ml" 256 9672 9689 "rule.ml" 256 9672 9699
+type(
+  bool
+)
+"rule.ml" 256 9672 9705 "rule.ml" 256 9672 9706
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref x "rule.ml" 255 9625 9663 "rule.ml" 255 9625 9664
+)
+"rule.ml" 256 9672 9710 "rule.ml" 256 9672 9711
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref r "rule.ml" 245 9288 9304 "rule.ml" 245 9288 9305
+)
+"rule.ml" 256 9672 9715 "rule.ml" 256 9672 9718
+type(
+  Resource.resource_pattern gen_rule list
+)
+ident(
+  int_ref acc "rule.ml" 255 9625 9665 "rule.ml" 255 9625 9668
+)
+"rule.ml" 256 9672 9710 "rule.ml" 256 9672 9718
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 256 9672 9705 "rule.ml" 256 9672 9718
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 256 9672 9724 "rule.ml" 256 9672 9725
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref x "rule.ml" 255 9625 9663 "rule.ml" 255 9625 9664
+)
+"rule.ml" 256 9672 9729 "rule.ml" 256 9672 9732
+type(
+  Resource.resource_pattern gen_rule list
+)
+ident(
+  int_ref acc "rule.ml" 255 9625 9665 "rule.ml" 255 9625 9668
+)
+"rule.ml" 256 9672 9724 "rule.ml" 256 9672 9732
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 256 9672 9686 "rule.ml" 256 9672 9732
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 255 9625 9653 "rule.ml" 257 9733 9748
+type(
+  Resource.resource_pattern gen_rule ->
+  Resource.resource_pattern gen_rule list ->
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 257 9733 9749 "rule.ml" 257 9733 9750
+type(
+  Resource.resource_pattern gen_rule list ref ->
+  Resource.resource_pattern gen_rule list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"rule.ml" 257 9733 9750 "rule.ml" 257 9733 9755
+type(
+  Resource.resource_pattern gen_rule list ref
+)
+ident(
+  int_ref rules "rule.ml" 243 9242 9248 "rule.ml" 243 9242 9253
+)
+"rule.ml" 257 9733 9749 "rule.ml" 257 9733 9755
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 257 9733 9756 "rule.ml" 257 9733 9758
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 255 9625 9637 "rule.ml" 257 9733 9758
+call(
+  stack
+)
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 254 9606 9616 "rule.ml" 257 9733 9758
+type(
+  unit
+)
+"rule.ml" 258 9759 9775 "rule.ml" 258 9759 9776
+type(
+  string
+)
+ident(
+  def s "rule.ml" 259 9780 9790 "rule.ml" 262 9907 9932
+)
+"rule.ml" 258 9759 9767 "rule.ml" 258 9759 9776
+type(
+  [ `after of string | `before of string | `bottom | `top ]
+)
+"rule.ml" 259 9780 9790 "rule.ml" 259 9780 9795
+type(
+  Resource.resource_pattern gen_rule list ref
+)
+ident(
+  int_ref rules "rule.ml" 243 9242 9248 "rule.ml" 243 9242 9253
+)
+"rule.ml" 259 9780 9796 "rule.ml" 259 9780 9798
+type(
+  Resource.resource_pattern gen_rule list ref ->
+  Resource.resource_pattern gen_rule list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"rule.ml" 260 9799 9811 "rule.ml" 260 9799 9826
+type(
+  (Resource.resource_pattern gen_rule ->
+   Resource.resource_pattern gen_rule list ->
+   Resource.resource_pattern gen_rule list) ->
+  Resource.resource_pattern gen_rule list ->
+  Resource.resource_pattern gen_rule list ->
+  Resource.resource_pattern gen_rule list
+)
+ident(
+  ext_ref My_std.List.fold_right
+)
+"rule.ml" 260 9799 9837 "rule.ml" 260 9799 9838
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  def x "rule.ml" 260 9799 9839 "rule.ml" 261 9846 9906
+)
+"rule.ml" 260 9799 9839 "rule.ml" 260 9799 9842
+type(
+  Resource.resource_pattern gen_rule list
+)
+ident(
+  def acc "rule.ml" 261 9846 9860 "rule.ml" 261 9846 9906
+)
+"rule.ml" 261 9846 9863 "rule.ml" 261 9846 9864
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref x "rule.ml" 260 9799 9837 "rule.ml" 260 9799 9838
+)
+"rule.ml" 261 9846 9863 "rule.ml" 261 9846 9869
+type(
+  string
+)
+"rule.ml" 261 9846 9870 "rule.ml" 261 9846 9871
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"rule.ml" 261 9846 9872 "rule.ml" 261 9846 9873
+type(
+  string
+)
+ident(
+  int_ref s "rule.ml" 258 9759 9775 "rule.ml" 258 9759 9776
+)
+"rule.ml" 261 9846 9863 "rule.ml" 261 9846 9873
+type(
+  bool
+)
+"rule.ml" 261 9846 9879 "rule.ml" 261 9846 9880
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref r "rule.ml" 245 9288 9304 "rule.ml" 245 9288 9305
+)
+"rule.ml" 261 9846 9884 "rule.ml" 261 9846 9885
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref x "rule.ml" 260 9799 9837 "rule.ml" 260 9799 9838
+)
+"rule.ml" 261 9846 9889 "rule.ml" 261 9846 9892
+type(
+  Resource.resource_pattern gen_rule list
+)
+ident(
+  int_ref acc "rule.ml" 260 9799 9839 "rule.ml" 260 9799 9842
+)
+"rule.ml" 261 9846 9884 "rule.ml" 261 9846 9892
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 261 9846 9879 "rule.ml" 261 9846 9892
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 261 9846 9898 "rule.ml" 261 9846 9899
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref x "rule.ml" 260 9799 9837 "rule.ml" 260 9799 9838
+)
+"rule.ml" 261 9846 9903 "rule.ml" 261 9846 9906
+type(
+  Resource.resource_pattern gen_rule list
+)
+ident(
+  int_ref acc "rule.ml" 260 9799 9839 "rule.ml" 260 9799 9842
+)
+"rule.ml" 261 9846 9898 "rule.ml" 261 9846 9906
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 261 9846 9860 "rule.ml" 261 9846 9906
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 260 9799 9827 "rule.ml" 262 9907 9922
+type(
+  Resource.resource_pattern gen_rule ->
+  Resource.resource_pattern gen_rule list ->
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 262 9907 9923 "rule.ml" 262 9907 9924
+type(
+  Resource.resource_pattern gen_rule list ref ->
+  Resource.resource_pattern gen_rule list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"rule.ml" 262 9907 9924 "rule.ml" 262 9907 9929
+type(
+  Resource.resource_pattern gen_rule list ref
+)
+ident(
+  int_ref rules "rule.ml" 243 9242 9248 "rule.ml" 243 9242 9253
+)
+"rule.ml" 262 9907 9923 "rule.ml" 262 9907 9929
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 262 9907 9930 "rule.ml" 262 9907 9932
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 260 9799 9811 "rule.ml" 262 9907 9932
+call(
+  stack
+)
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 259 9780 9790 "rule.ml" 262 9907 9932
+type(
+  unit
+)
+"rule.ml" 250 9487 9493 "rule.ml" 262 9907 9932
+type(
+  unit
+)
+"rule.ml" 246 9309 9313 "rule.ml" 262 9907 9932
+type(
+  unit
+)
+"rule.ml" 245 9288 9290 "rule.ml" 263 9933 9938
+type(
+  [ `after of string | `before of string | `bottom | `top ] ->
+  Resource.resource_pattern gen_rule -> unit
+)
+"rule.ml" 264 9940 9947 "rule.ml" 264 9940 9949
+type(
+  unit
+)
+"rule.ml" 264 9940 9953 "rule.ml" 264 9940 9958
+type(
+  Resource.resource_pattern gen_rule list ref
+)
+ident(
+  int_ref rules "rule.ml" 243 9242 9248 "rule.ml" 243 9242 9253
+)
+"rule.ml" 264 9940 9959 "rule.ml" 264 9940 9961
+type(
+  Resource.resource_pattern gen_rule list ref ->
+  Resource.resource_pattern gen_rule list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"rule.ml" 264 9940 9962 "rule.ml" 264 9940 9964
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 264 9940 9953 "rule.ml" 264 9940 9964
+type(
+  unit
+)
+"rule.ml" 264 9940 9942 "rule.ml" 264 9940 9965
+type(
+  unit -> unit
+)
+"rule.ml" 244 9266 9268 "rule.ml" 264 9940 9965
+type(
+  (unit -> Resource.resource_pattern gen_rule list) *
+  ([ `after of string | `before of string | `bottom | `top ] ->
+   Resource.resource_pattern gen_rule -> unit) *
+  (unit -> unit)
+)
+"rule.ml" 243 9242 9244 "rule.ml" 264 9940 9965
+type(
+  (unit -> Resource.resource_pattern gen_rule list) *
+  ([ `after of string | `before of string | `bottom | `top ] ->
+   Resource.resource_pattern gen_rule -> unit) *
+  (unit -> unit)
+)
+"rule.ml" 266 9967 9971 "rule.ml" 266 9967 9975
+type(
+  string ->
+  ?tags:'a ->
+  ?prods:string list ->
+  ?deps:string list ->
+  ?prod:string ->
+  ?dep:string ->
+  ?stamp:string ->
+  ?insert:[ `after of string | `before of string | `bottom | `top ] ->
+  ?doc:string -> (env -> builder -> Command.t) -> unit
+)
+ident(
+  def rule "rule.ml" 309 11257 11257 "rule.ml" 1 0 -1
+)
+"rule.ml" 266 9967 9976 "rule.ml" 266 9967 9980
+type(
+  string
+)
+ident(
+  def name "rule.ml" 266 9967 9981 "rule.ml" 307 11237 11255
+)
+"rule.ml" 266 9967 9982 "rule.ml" 266 9967 9986
+type(
+  'a option
+)
+ident(
+  def tags "rule.ml" 266 9967 9987 "rule.ml" 307 11237 11255
+)
+"rule.ml" 266 9967 9989 "rule.ml" 266 9967 9994
+type(
+  string list
+)
+"rule.ml" 266 9967 9995 "rule.ml" 266 9967 9997
+type(
+  string list
+)
+type(
+  string list
+)
+ident(
+  int_ref *sth* "rule.ml" 266 9967 9995 "rule.ml" 266 9967 9997
+)
+type(
+  string list option
+)
+type(
+  string list option
+)
+type(
+  string list
+)
+"rule.ml" 266 9967 10001 "rule.ml" 266 9967 10005
+type(
+  string list
+)
+"rule.ml" 266 9967 10006 "rule.ml" 266 9967 10008
+type(
+  string list
+)
+type(
+  string list
+)
+ident(
+  int_ref *sth* "rule.ml" 266 9967 10006 "rule.ml" 266 9967 10008
+)
+type(
+  string list option
+)
+type(
+  string list option
+)
+type(
+  string list
+)
+"rule.ml" 266 9967 10011 "rule.ml" 266 9967 10015
+type(
+  string option
+)
+ident(
+  def prod "rule.ml" 266 9967 10016 "rule.ml" 307 11237 11255
+)
+"rule.ml" 266 9967 10017 "rule.ml" 266 9967 10020
+type(
+  string option
+)
+ident(
+  def dep "rule.ml" 266 9967 10021 "rule.ml" 307 11237 11255
+)
+"rule.ml" 266 9967 10022 "rule.ml" 266 9967 10027
+type(
+  string option
+)
+ident(
+  def stamp "rule.ml" 266 9967 10028 "rule.ml" 307 11237 11255
+)
+"rule.ml" 266 9967 10030 "rule.ml" 266 9967 10036
+type(
+  [ `after of string | `before of string | `bottom | `top ]
+)
+"rule.ml" 266 9967 10039 "rule.ml" 266 9967 10046
+type(
+  [ `after of string | `before of string | `bottom | `top ]
+)
+type(
+  [ `after of string | `before of string | `bottom | `top ]
+)
+ident(
+  int_ref *sth* "rule.ml" 266 9967 10039 "rule.ml" 266 9967 10046
+)
+type(
+  [ `after of string | `before of string | `bottom | `top ] option
+)
+type(
+  [ `after of string | `before of string | `bottom | `top ] option
+)
+type(
+  [ `after of string | `before of string | `bottom | `top ]
+)
+"rule.ml" 266 9967 10049 "rule.ml" 266 9967 10052
+type(
+  string option
+)
+ident(
+  def doc "rule.ml" 266 9967 10053 "rule.ml" 307 11237 11255
+)
+"rule.ml" 266 9967 10053 "rule.ml" 266 9967 10057
+type(
+  env -> builder -> Command.t
+)
+ident(
+  def code "rule.ml" 267 10060 10062 "rule.ml" 307 11237 11255
+)
+"rule.ml" 267 10060 10066 "rule.ml" 267 10060 10068
+type(
+  unit
+)
+"rule.ml" 268 10071 10081 "rule.ml" 268 10071 10085
+type(
+  'a option
+)
+ident(
+  int_ref tags "rule.ml" 266 9967 9982 "rule.ml" 266 9967 9986
+)
+"rule.ml" 269 10091 10099 "rule.ml" 269 10091 10103
+type(
+  'a option
+)
+"rule.ml" 269 10091 10107 "rule.ml" 269 10091 10109
+type(
+  unit
+)
+"rule.ml" 270 10110 10123 "rule.ml" 270 10110 10124
+type(
+  'a
+)
+"rule.ml" 270 10110 10118 "rule.ml" 270 10110 10124
+type(
+  'a option
+)
+"rule.ml" 271 10128 10136 "rule.ml" 271 10128 10147
+type(
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Log.eprintf
+)
+"rule.ml" 271 10128 10148 "rule.ml" 272 10208 10262
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"rule.ml" 273 10263 10273 "rule.ml" 273 10263 10277
+type(
+  string
+)
+ident(
+  int_ref name "rule.ml" 266 9967 9976 "rule.ml" 266 9967 9980
+)
+"rule.ml" 271 10128 10136 "rule.ml" 273 10263 10277
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 268 10071 10075 "rule.ml" 273 10263 10277
+type(
+  unit
+)
+"rule.ml" 275 10283 10289 "rule.ml" 275 10283 10296
+type(
+  (string -> 'b) -> string list -> string option -> 'b list
+)
+ident(
+  def res_add "rule.ml" 288 10629 10631 "rule.ml" 307 11237 11255
+)
+"rule.ml" 275 10283 10297 "rule.ml" 275 10283 10303
+type(
+  string -> 'b
+)
+ident(
+  def import "rule.ml" 275 10283 10304 "rule.ml" 286 10608 10623
+)
+"rule.ml" 275 10283 10304 "rule.ml" 275 10283 10306
+type(
+  string list
+)
+ident(
+  def xs "rule.ml" 275 10283 10307 "rule.ml" 286 10608 10623
+)
+"rule.ml" 275 10283 10307 "rule.ml" 275 10283 10311
+type(
+  string option
+)
+ident(
+  def xopt "rule.ml" 276 10314 10318 "rule.ml" 286 10608 10623
+)
+"rule.ml" 276 10314 10322 "rule.ml" 276 10314 10326
+type(
+  'b list
+)
+ident(
+  def init "rule.ml" 281 10406 10410 "rule.ml" 286 10608 10623
+)
+"rule.ml" 277 10329 10341 "rule.ml" 277 10329 10345
+type(
+  string option
+)
+ident(
+  int_ref xopt "rule.ml" 275 10283 10307 "rule.ml" 275 10283 10311
+)
+"rule.ml" 278 10351 10359 "rule.ml" 278 10351 10363
+type(
+  string option
+)
+"rule.ml" 278 10351 10367 "rule.ml" 278 10351 10369
+type(
+  'b list
+)
+"rule.ml" 279 10370 10383 "rule.ml" 279 10370 10384
+type(
+  string
+)
+ident(
+  def r "rule.ml" 279 10370 10388 "rule.ml" 279 10370 10398
+)
+"rule.ml" 279 10370 10378 "rule.ml" 279 10370 10384
+type(
+  string option
+)
+"rule.ml" 279 10370 10389 "rule.ml" 279 10370 10395
+type(
+  string -> 'b
+)
+ident(
+  int_ref import "rule.ml" 275 10283 10297 "rule.ml" 275 10283 10303
+)
+"rule.ml" 279 10370 10396 "rule.ml" 279 10370 10397
+type(
+  string
+)
+ident(
+  int_ref r "rule.ml" 279 10370 10383 "rule.ml" 279 10370 10384
+)
+"rule.ml" 279 10370 10389 "rule.ml" 279 10370 10397
+call(
+  stack
+)
+type(
+  'b
+)
+"rule.ml" 279 10370 10388 "rule.ml" 279 10370 10398
+type(
+  'b list
+)
+"rule.ml" 277 10329 10335 "rule.ml" 279 10370 10398
+type(
+  'b list
+)
+"rule.ml" 281 10406 10410 "rule.ml" 281 10406 10425
+type(
+  (string -> 'b list -> 'b list) -> string list -> 'b list -> 'b list
+)
+ident(
+  ext_ref My_std.List.fold_right
+)
+"rule.ml" 281 10406 10436 "rule.ml" 281 10406 10437
+type(
+  string
+)
+ident(
+  def x "rule.ml" 281 10406 10438 "rule.ml" 285 10588 10607
+)
+"rule.ml" 281 10406 10438 "rule.ml" 281 10406 10441
+type(
+  'b list
+)
+ident(
+  def acc "rule.ml" 282 10445 10451 "rule.ml" 285 10588 10607
+)
+"rule.ml" 282 10445 10455 "rule.ml" 282 10445 10456
+type(
+  'b
+)
+ident(
+  def r "rule.ml" 283 10471 10477 "rule.ml" 285 10588 10607
+)
+"rule.ml" 282 10445 10459 "rule.ml" 282 10445 10465
+type(
+  string -> 'b
+)
+ident(
+  int_ref import "rule.ml" 275 10283 10297 "rule.ml" 275 10283 10303
+)
+"rule.ml" 282 10445 10466 "rule.ml" 282 10445 10467
+type(
+  string
+)
+ident(
+  int_ref x "rule.ml" 281 10406 10436 "rule.ml" 281 10406 10437
+)
+"rule.ml" 282 10445 10459 "rule.ml" 282 10445 10467
+call(
+  stack
+)
+type(
+  'b
+)
+"rule.ml" 283 10471 10480 "rule.ml" 283 10471 10488
+type(
+  'b -> 'b list -> bool
+)
+ident(
+  ext_ref My_std.List.mem
+)
+"rule.ml" 283 10471 10489 "rule.ml" 283 10471 10490
+type(
+  'b
+)
+ident(
+  int_ref r "rule.ml" 282 10445 10455 "rule.ml" 282 10445 10456
+)
+"rule.ml" 283 10471 10491 "rule.ml" 283 10471 10494
+type(
+  'b list
+)
+ident(
+  int_ref acc "rule.ml" 281 10406 10438 "rule.ml" 281 10406 10441
+)
+"rule.ml" 283 10471 10480 "rule.ml" 283 10471 10494
+call(
+  stack
+)
+type(
+  bool
+)
+"rule.ml" 284 10500 10508 "rule.ml" 284 10500 10516
+type(
+  string -> 'b list
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"rule.ml" 284 10500 10518 "rule.ml" 284 10500 10525
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Format.sprintf
+)
+"rule.ml" 284 10500 10526 "rule.ml" 284 10500 10579
+type(
+  (string -> string -> string, unit, string) format
+)
+"rule.ml" 284 10500 10580 "rule.ml" 284 10500 10584
+type(
+  string
+)
+ident(
+  int_ref name "rule.ml" 266 9967 9976 "rule.ml" 266 9967 9980
+)
+"rule.ml" 284 10500 10585 "rule.ml" 284 10500 10586
+type(
+  string
+)
+ident(
+  int_ref x "rule.ml" 281 10406 10436 "rule.ml" 281 10406 10437
+)
+"rule.ml" 284 10500 10517 "rule.ml" 284 10500 10587
+call(
+  stack
+)
+type(
+  string
+)
+"rule.ml" 284 10500 10508 "rule.ml" 284 10500 10587
+call(
+  tail
+)
+type(
+  'b list
+)
+"rule.ml" 285 10588 10599 "rule.ml" 285 10588 10600
+type(
+  'b
+)
+ident(
+  int_ref r "rule.ml" 282 10445 10455 "rule.ml" 282 10445 10456
+)
+"rule.ml" 285 10588 10604 "rule.ml" 285 10588 10607
+type(
+  'b list
+)
+ident(
+  int_ref acc "rule.ml" 281 10406 10438 "rule.ml" 281 10406 10441
+)
+"rule.ml" 285 10588 10599 "rule.ml" 285 10588 10607
+type(
+  'b list
+)
+"rule.ml" 283 10471 10477 "rule.ml" 285 10588 10607
+type(
+  'b list
+)
+"rule.ml" 282 10445 10451 "rule.ml" 285 10588 10607
+type(
+  'b list
+)
+"rule.ml" 281 10406 10426 "rule.ml" 286 10608 10615
+type(
+  string -> 'b list -> 'b list
+)
+"rule.ml" 286 10608 10616 "rule.ml" 286 10608 10618
+type(
+  string list
+)
+ident(
+  int_ref xs "rule.ml" 275 10283 10304 "rule.ml" 275 10283 10306
+)
+"rule.ml" 286 10608 10619 "rule.ml" 286 10608 10623
+type(
+  'b list
+)
+ident(
+  int_ref init "rule.ml" 276 10314 10322 "rule.ml" 276 10314 10326
+)
+"rule.ml" 281 10406 10410 "rule.ml" 286 10608 10623
+call(
+  tail
+)
+type(
+  'b list
+)
+"rule.ml" 276 10314 10318 "rule.ml" 286 10608 10623
+type(
+  'b list
+)
+"rule.ml" 288 10629 10634 "rule.ml" 288 10629 10639
+type(
+  string list
+)
+ident(
+  int_ref prods "rule.ml" 266 9967 9989 "rule.ml" 266 9967 9994
+)
+"rule.ml" 288 10629 10640 "rule.ml" 288 10629 10641
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"rule.ml" 288 10629 10642 "rule.ml" 288 10629 10644
+type(
+  string list
+)
+"rule.ml" 288 10629 10634 "rule.ml" 288 10629 10644
+type(
+  bool
+)
+"rule.ml" 288 10629 10645 "rule.ml" 288 10629 10647
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"rule.ml" 288 10629 10648 "rule.ml" 288 10629 10652
+type(
+  string option
+)
+ident(
+  int_ref prod "rule.ml" 266 9967 10011 "rule.ml" 266 9967 10015
+)
+"rule.ml" 288 10629 10653 "rule.ml" 288 10629 10654
+type(
+  string option -> string option -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"rule.ml" 288 10629 10655 "rule.ml" 288 10629 10659
+type(
+  string option
+)
+"rule.ml" 288 10629 10648 "rule.ml" 288 10629 10659
+type(
+  bool
+)
+"rule.ml" 288 10629 10660 "rule.ml" 288 10629 10662
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"rule.ml" 288 10629 10663 "rule.ml" 288 10629 10668
+type(
+  string option
+)
+ident(
+  int_ref stamp "rule.ml" 266 9967 10022 "rule.ml" 266 9967 10027
+)
+"rule.ml" 288 10629 10669 "rule.ml" 288 10629 10670
+type(
+  string option -> string option -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"rule.ml" 288 10629 10671 "rule.ml" 288 10629 10675
+type(
+  string option
+)
+"rule.ml" 288 10629 10663 "rule.ml" 288 10629 10675
+type(
+  bool
+)
+"rule.ml" 288 10629 10648 "rule.ml" 288 10629 10675
+type(
+  bool
+)
+"rule.ml" 288 10629 10634 "rule.ml" 288 10629 10675
+type(
+  bool
+)
+"rule.ml" 288 10629 10681 "rule.ml" 288 10629 10686
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"rule.ml" 288 10629 10704 "rule.ml" 288 10629 10745
+type(
+  string
+)
+"rule.ml" 288 10629 10687 "rule.ml" 288 10629 10746
+type(
+  exn
+)
+"rule.ml" 288 10629 10681 "rule.ml" 288 10629 10746
+type(
+  unit
+)
+"rule.ml" 288 10629 10631 "rule.ml" 288 10629 10746
+type(
+  unit
+)
+"rule.ml" 289 10748 10754 "rule.ml" 289 10748 10759
+type(
+  Resource.resource_pattern option
+)
+ident(
+  def stamp "rule.ml" 295 10902 10904 "rule.ml" 307 11237 11255
+)
+"rule.ml" 289 10748 10761 "rule.ml" 289 10748 10766
+type(
+  string list
+)
+ident(
+  def prods "rule.ml" 295 10902 10904 "rule.ml" 307 11237 11255
+)
+"rule.ml" 289 10748 10754 "rule.ml" 289 10748 10766
+type(
+  Resource.resource_pattern option * string list
+)
+"rule.ml" 290 10769 10779 "rule.ml" 290 10769 10784
+type(
+  string option
+)
+ident(
+  int_ref stamp "rule.ml" 266 9967 10022 "rule.ml" 266 9967 10027
+)
+"rule.ml" 291 10790 10796 "rule.ml" 291 10790 10800
+type(
+  string option
+)
+"rule.ml" 291 10790 10804 "rule.ml" 291 10790 10808
+type(
+  Resource.resource_pattern option
+)
+"rule.ml" 291 10790 10810 "rule.ml" 291 10790 10815
+type(
+  string list
+)
+ident(
+  int_ref prods "rule.ml" 266 9967 9989 "rule.ml" 266 9967 9994
+)
+"rule.ml" 291 10790 10804 "rule.ml" 291 10790 10815
+type(
+  Resource.resource_pattern option * string list
+)
+"rule.ml" 292 10816 10827 "rule.ml" 292 10816 10832
+type(
+  string
+)
+ident(
+  def stamp "rule.ml" 293 10836 10844 "rule.ml" 293 10836 10896
+)
+"rule.ml" 292 10816 10822 "rule.ml" 292 10816 10832
+type(
+  string option
+)
+"rule.ml" 293 10836 10850 "rule.ml" 293 10836 10873
+type(
+  string -> Resource.resource_pattern
+)
+ident(
+  ext_ref Resource.import_pattern
+)
+"rule.ml" 293 10836 10874 "rule.ml" 293 10836 10879
+type(
+  string
+)
+ident(
+  int_ref stamp "rule.ml" 292 10816 10827 "rule.ml" 292 10816 10832
+)
+"rule.ml" 293 10836 10849 "rule.ml" 293 10836 10880
+call(
+  stack
+)
+type(
+  Resource.resource_pattern
+)
+"rule.ml" 293 10836 10844 "rule.ml" 293 10836 10880
+type(
+  Resource.resource_pattern option
+)
+"rule.ml" 293 10836 10882 "rule.ml" 293 10836 10887
+type(
+  string
+)
+ident(
+  int_ref stamp "rule.ml" 292 10816 10827 "rule.ml" 292 10816 10832
+)
+"rule.ml" 293 10836 10891 "rule.ml" 293 10836 10896
+type(
+  string list
+)
+ident(
+  int_ref prods "rule.ml" 266 9967 9989 "rule.ml" 266 9967 9994
+)
+"rule.ml" 293 10836 10882 "rule.ml" 293 10836 10896
+type(
+  string list
+)
+"rule.ml" 293 10836 10844 "rule.ml" 293 10836 10896
+type(
+  Resource.resource_pattern option * string list
+)
+"rule.ml" 290 10769 10773 "rule.ml" 293 10836 10896
+type(
+  Resource.resource_pattern option * string list
+)
+"rule.ml" 295 10902 10908 "rule.ml" 295 10902 10913
+type(
+  Resource.resource_pattern list
+)
+ident(
+  def prods "rule.ml" 296 10962 10964 "rule.ml" 307 11237 11255
+)
+"rule.ml" 295 10902 10916 "rule.ml" 295 10902 10923
+type(
+  (string -> Resource.resource_pattern) ->
+  string list -> string option -> Resource.resource_pattern list
+)
+ident(
+  int_ref res_add "rule.ml" 275 10283 10289 "rule.ml" 275 10283 10296
+)
+"rule.ml" 295 10902 10924 "rule.ml" 295 10902 10947
+type(
+  string -> Resource.resource_pattern
+)
+ident(
+  ext_ref Resource.import_pattern
+)
+"rule.ml" 295 10902 10948 "rule.ml" 295 10902 10953
+type(
+  string list
+)
+ident(
+  int_ref prods "rule.ml" 289 10748 10761 "rule.ml" 289 10748 10766
+)
+"rule.ml" 295 10902 10954 "rule.ml" 295 10902 10958
+type(
+  string option
+)
+ident(
+  int_ref prod "rule.ml" 266 9967 10011 "rule.ml" 266 9967 10015
+)
+"rule.ml" 295 10902 10916 "rule.ml" 295 10902 10958
+call(
+  stack
+)
+type(
+  Resource.resource_pattern list
+)
+"rule.ml" 296 10962 10968 "rule.ml" 296 10962 10972
+type(
+  env -> builder -> digest_command
+)
+ident(
+  def code "rule.ml" 301 11079 11081 "rule.ml" 307 11237 11255
+)
+"rule.ml" 296 10962 10973 "rule.ml" 296 10962 10976
+type(
+  env
+)
+ident(
+  def env "rule.ml" 296 10962 10977 "rule.ml" 299 11052 11073
+)
+"rule.ml" 296 10962 10977 "rule.ml" 296 10962 10982
+type(
+  builder
+)
+ident(
+  def build "rule.ml" 297 10985 10989 "rule.ml" 299 11052 11073
+)
+"rule.ml" 297 10985 10993 "rule.ml" 297 10985 10996
+type(
+  Command.t
+)
+ident(
+  def cmd "rule.ml" 298 11017 11021 "rule.ml" 299 11052 11073
+)
+"rule.ml" 297 10985 10999 "rule.ml" 297 10985 11003
+type(
+  env -> builder -> Command.t
+)
+ident(
+  int_ref code "rule.ml" 266 9967 10053 "rule.ml" 266 9967 10057
+)
+"rule.ml" 297 10985 11004 "rule.ml" 297 10985 11007
+type(
+  env
+)
+ident(
+  int_ref env "rule.ml" 296 10962 10973 "rule.ml" 296 10962 10976
+)
+"rule.ml" 297 10985 11008 "rule.ml" 297 10985 11013
+type(
+  builder
+)
+ident(
+  int_ref build "rule.ml" 296 10962 10977 "rule.ml" 296 10962 10982
+)
+"rule.ml" 297 10985 10999 "rule.ml" 297 10985 11013
+call(
+  stack
+)
+type(
+  Command.t
+)
+"rule.ml" 298 11017 11033 "rule.ml" 298 11017 11047
+type(
+  Command.t -> Digest.t
+)
+ident(
+  ext_ref Command.digest
+)
+"rule.ml" 298 11017 11048 "rule.ml" 298 11017 11051
+type(
+  Command.t
+)
+ident(
+  int_ref cmd "rule.ml" 297 10985 10993 "rule.ml" 297 10985 10996
+)
+"rule.ml" 298 11017 11033 "rule.ml" 298 11017 11051
+call(
+  stack
+)
+type(
+  Digest.t
+)
+"rule.ml" 299 11052 11068 "rule.ml" 299 11052 11071
+type(
+  Command.t
+)
+ident(
+  int_ref cmd "rule.ml" 297 10985 10993 "rule.ml" 297 10985 10996
+)
+"rule.ml" 298 11017 11021 "rule.ml" 299 11052 11073
+type(
+  digest_command
+)
+"rule.ml" 297 10985 10989 "rule.ml" 299 11052 11073
+type(
+  digest_command
+)
+"rule.ml" 301 11079 11081 "rule.ml" 301 11079 11089
+type(
+  [ `after of string | `before of string | `bottom | `top ] ->
+  Resource.resource_pattern gen_rule -> unit
+)
+ident(
+  int_ref add_rule "rule.ml" 242 9201 9217 "rule.ml" 242 9201 9225
+)
+"rule.ml" 301 11079 11090 "rule.ml" 301 11079 11096
+type(
+  [ `after of string | `before of string | `bottom | `top ]
+)
+ident(
+  int_ref insert "rule.ml" 266 9967 10030 "rule.ml" 266 9967 10036
+)
+"rule.ml" 302 11097 11109 "rule.ml" 302 11097 11113
+type(
+  string
+)
+ident(
+  int_ref name "rule.ml" 266 9967 9976 "rule.ml" 266 9967 9980
+)
+"rule.ml" 303 11115 11127 "rule.ml" 303 11115 11134
+type(
+  (string -> Pathname.t) -> string list -> string option -> Pathname.t list
+)
+ident(
+  int_ref res_add "rule.ml" 275 10283 10289 "rule.ml" 275 10283 10296
+)
+"rule.ml" 303 11115 11135 "rule.ml" 303 11115 11150
+type(
+  string -> Pathname.t
+)
+ident(
+  ext_ref Resource.import
+)
+"rule.ml" 303 11115 11174 "rule.ml" 303 11115 11178
+type(
+  string list
+)
+ident(
+  int_ref deps "rule.ml" 266 9967 10001 "rule.ml" 266 9967 10005
+)
+"rule.ml" 303 11115 11179 "rule.ml" 303 11115 11182
+type(
+  string option
+)
+ident(
+  int_ref dep "rule.ml" 266 9967 10017 "rule.ml" 266 9967 10020
+)
+"rule.ml" 303 11115 11127 "rule.ml" 303 11115 11182
+call(
+  stack
+)
+type(
+  Pathname.t list
+)
+"rule.ml" 304 11184 11196 "rule.ml" 304 11184 11201
+type(
+  Resource.resource_pattern option
+)
+ident(
+  int_ref stamp "rule.ml" 289 10748 10754 "rule.ml" 289 10748 10759
+)
+"rule.ml" 305 11203 11213 "rule.ml" 305 11203 11216
+type(
+  string option
+)
+ident(
+  int_ref doc "rule.ml" 266 9967 10049 "rule.ml" 266 9967 10052
+)
+"rule.ml" 306 11218 11230 "rule.ml" 306 11218 11235
+type(
+  Resource.resource_pattern list
+)
+ident(
+  int_ref prods "rule.ml" 295 10902 10908 "rule.ml" 295 10902 10913
+)
+"rule.ml" 307 11237 11249 "rule.ml" 307 11237 11253
+type(
+  env -> builder -> digest_command
+)
+ident(
+  int_ref code "rule.ml" 296 10962 10968 "rule.ml" 296 10962 10972
+)
+"rule.ml" 302 11097 11099 "rule.ml" 307 11237 11255
+type(
+  Resource.resource_pattern gen_rule
+)
+"rule.ml" 301 11079 11081 "rule.ml" 307 11237 11255
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 296 10962 10964 "rule.ml" 307 11237 11255
+type(
+  unit
+)
+"rule.ml" 295 10902 10904 "rule.ml" 307 11237 11255
+type(
+  unit
+)
+"rule.ml" 289 10748 10750 "rule.ml" 307 11237 11255
+type(
+  unit
+)
+"rule.ml" 288 10629 10631 "rule.ml" 307 11237 11255
+type(
+  unit
+)
+"rule.ml" 275 10283 10285 "rule.ml" 307 11237 11255
+type(
+  unit
+)
+"rule.ml" 267 10060 10062 "rule.ml" 307 11237 11255
+type(
+  unit
+)
+"rule.ml" 311 11304 11310 "rule.ml" 311 11304 11312
+type(
+  Command.pathname -> Command.pathname -> Command.t
+)
+ident(
+  def mv "rule.ml" 312 11356 11358 "rule.ml" 319 11762 11765
+)
+"rule.ml" 311 11304 11313 "rule.ml" 311 11304 11316
+type(
+  Command.pathname
+)
+ident(
+  def src "rule.ml" 311 11304 11317 "rule.ml" 311 11304 11355
+)
+"rule.ml" 311 11304 11317 "rule.ml" 311 11304 11321
+type(
+  Command.pathname
+)
+ident(
+  def dest "rule.ml" 311 11304 11324 "rule.ml" 311 11304 11355
+)
+"rule.ml" 311 11304 11333 "rule.ml" 311 11304 11337
+type(
+  string
+)
+"rule.ml" 311 11304 11332 "rule.ml" 311 11304 11337
+type(
+  Command.spec
+)
+"rule.ml" 311 11304 11341 "rule.ml" 311 11304 11344
+type(
+  Command.pathname
+)
+ident(
+  int_ref src "rule.ml" 311 11304 11313 "rule.ml" 311 11304 11316
+)
+"rule.ml" 311 11304 11339 "rule.ml" 311 11304 11344
+type(
+  Command.spec
+)
+"rule.ml" 311 11304 11349 "rule.ml" 311 11304 11353
+type(
+  Command.pathname
+)
+ident(
+  int_ref dest "rule.ml" 311 11304 11317 "rule.ml" 311 11304 11321
+)
+"rule.ml" 311 11304 11346 "rule.ml" 311 11304 11353
+type(
+  Command.spec
+)
+"rule.ml" 311 11304 11331 "rule.ml" 311 11304 11354
+type(
+  Command.spec list
+)
+"rule.ml" 311 11304 11328 "rule.ml" 311 11304 11355
+type(
+  Command.spec
+)
+"rule.ml" 311 11304 11324 "rule.ml" 311 11304 11355
+type(
+  Command.t
+)
+"rule.ml" 312 11356 11362 "rule.ml" 312 11356 11364
+type(
+  Command.pathname -> Command.pathname -> Command.t
+)
+ident(
+  def cp "rule.ml" 313 11408 11410 "rule.ml" 319 11762 11765
+)
+"rule.ml" 312 11356 11365 "rule.ml" 312 11356 11368
+type(
+  Command.pathname
+)
+ident(
+  def src "rule.ml" 312 11356 11369 "rule.ml" 312 11356 11407
+)
+"rule.ml" 312 11356 11369 "rule.ml" 312 11356 11373
+type(
+  Command.pathname
+)
+ident(
+  def dest "rule.ml" 312 11356 11376 "rule.ml" 312 11356 11407
+)
+"rule.ml" 312 11356 11385 "rule.ml" 312 11356 11389
+type(
+  string
+)
+"rule.ml" 312 11356 11384 "rule.ml" 312 11356 11389
+type(
+  Command.spec
+)
+"rule.ml" 312 11356 11393 "rule.ml" 312 11356 11396
+type(
+  Command.pathname
+)
+ident(
+  int_ref src "rule.ml" 312 11356 11365 "rule.ml" 312 11356 11368
+)
+"rule.ml" 312 11356 11391 "rule.ml" 312 11356 11396
+type(
+  Command.spec
+)
+"rule.ml" 312 11356 11401 "rule.ml" 312 11356 11405
+type(
+  Command.pathname
+)
+ident(
+  int_ref dest "rule.ml" 312 11356 11369 "rule.ml" 312 11356 11373
+)
+"rule.ml" 312 11356 11398 "rule.ml" 312 11356 11405
+type(
+  Command.spec
+)
+"rule.ml" 312 11356 11383 "rule.ml" 312 11356 11406
+type(
+  Command.spec list
+)
+"rule.ml" 312 11356 11380 "rule.ml" 312 11356 11407
+type(
+  Command.spec
+)
+"rule.ml" 312 11356 11376 "rule.ml" 312 11356 11407
+type(
+  Command.t
+)
+"rule.ml" 313 11408 11414 "rule.ml" 313 11408 11418
+type(
+  Command.pathname -> Command.pathname -> Command.t
+)
+ident(
+  def cp_p "rule.ml" 314 11469 11471 "rule.ml" 319 11762 11765
+)
+"rule.ml" 313 11408 11419 "rule.ml" 313 11408 11422
+type(
+  Command.pathname
+)
+ident(
+  def src "rule.ml" 313 11408 11423 "rule.ml" 313 11408 11468
+)
+"rule.ml" 313 11408 11423 "rule.ml" 313 11408 11427
+type(
+  Command.pathname
+)
+ident(
+  def dest "rule.ml" 313 11408 11430 "rule.ml" 313 11408 11468
+)
+"rule.ml" 313 11408 11439 "rule.ml" 313 11408 11443
+type(
+  string
+)
+"rule.ml" 313 11408 11438 "rule.ml" 313 11408 11443
+type(
+  Command.spec
+)
+"rule.ml" 313 11408 11446 "rule.ml" 313 11408 11450
+type(
+  string
+)
+"rule.ml" 313 11408 11445 "rule.ml" 313 11408 11450
+type(
+  Command.spec
+)
+"rule.ml" 313 11408 11454 "rule.ml" 313 11408 11457
+type(
+  Command.pathname
+)
+ident(
+  int_ref src "rule.ml" 313 11408 11419 "rule.ml" 313 11408 11422
+)
+"rule.ml" 313 11408 11452 "rule.ml" 313 11408 11457
+type(
+  Command.spec
+)
+"rule.ml" 313 11408 11462 "rule.ml" 313 11408 11466
+type(
+  Command.pathname
+)
+ident(
+  int_ref dest "rule.ml" 313 11408 11423 "rule.ml" 313 11408 11427
+)
+"rule.ml" 313 11408 11459 "rule.ml" 313 11408 11466
+type(
+  Command.spec
+)
+"rule.ml" 313 11408 11437 "rule.ml" 313 11408 11467
+type(
+  Command.spec list
+)
+"rule.ml" 313 11408 11434 "rule.ml" 313 11408 11468
+type(
+  Command.spec
+)
+"rule.ml" 313 11408 11430 "rule.ml" 313 11408 11468
+type(
+  Command.t
+)
+"rule.ml" 314 11469 11475 "rule.ml" 314 11469 11479
+type(
+  Command.pathname -> Command.pathname -> Command.t
+)
+ident(
+  def ln_f "rule.ml" 315 11544 11546 "rule.ml" 319 11762 11765
+)
+"rule.ml" 314 11469 11480 "rule.ml" 314 11469 11487
+type(
+  Command.pathname
+)
+ident(
+  def pointed "rule.ml" 314 11469 11488 "rule.ml" 314 11469 11543
+)
+"rule.ml" 314 11469 11488 "rule.ml" 314 11469 11495
+type(
+  Command.pathname
+)
+ident(
+  def pointer "rule.ml" 314 11469 11498 "rule.ml" 314 11469 11543
+)
+"rule.ml" 314 11469 11507 "rule.ml" 314 11469 11511
+type(
+  string
+)
+"rule.ml" 314 11469 11506 "rule.ml" 314 11469 11511
+type(
+  Command.spec
+)
+"rule.ml" 314 11469 11514 "rule.ml" 314 11469 11518
+type(
+  string
+)
+"rule.ml" 314 11469 11513 "rule.ml" 314 11469 11518
+type(
+  Command.spec
+)
+"rule.ml" 314 11469 11522 "rule.ml" 314 11469 11529
+type(
+  Command.pathname
+)
+ident(
+  int_ref pointed "rule.ml" 314 11469 11480 "rule.ml" 314 11469 11487
+)
+"rule.ml" 314 11469 11520 "rule.ml" 314 11469 11529
+type(
+  Command.spec
+)
+"rule.ml" 314 11469 11534 "rule.ml" 314 11469 11541
+type(
+  Command.pathname
+)
+ident(
+  int_ref pointer "rule.ml" 314 11469 11488 "rule.ml" 314 11469 11495
+)
+"rule.ml" 314 11469 11531 "rule.ml" 314 11469 11541
+type(
+  Command.spec
+)
+"rule.ml" 314 11469 11505 "rule.ml" 314 11469 11542
+type(
+  Command.spec list
+)
+"rule.ml" 314 11469 11502 "rule.ml" 314 11469 11543
+type(
+  Command.spec
+)
+"rule.ml" 314 11469 11498 "rule.ml" 314 11469 11543
+type(
+  Command.t
+)
+"rule.ml" 315 11544 11550 "rule.ml" 315 11544 11554
+type(
+  Command.pathname -> Command.pathname -> Command.t
+)
+ident(
+  def ln_s "rule.ml" 316 11618 11620 "rule.ml" 319 11762 11765
+)
+"rule.ml" 315 11544 11555 "rule.ml" 315 11544 11562
+type(
+  Command.pathname
+)
+ident(
+  def pointed "rule.ml" 315 11544 11563 "rule.ml" 315 11544 11617
+)
+"rule.ml" 315 11544 11563 "rule.ml" 315 11544 11570
+type(
+  Command.pathname
+)
+ident(
+  def pointer "rule.ml" 315 11544 11573 "rule.ml" 315 11544 11617
+)
+"rule.ml" 315 11544 11581 "rule.ml" 315 11544 11585
+type(
+  string
+)
+"rule.ml" 315 11544 11580 "rule.ml" 315 11544 11585
+type(
+  Command.spec
+)
+"rule.ml" 315 11544 11588 "rule.ml" 315 11544 11592
+type(
+  string
+)
+"rule.ml" 315 11544 11587 "rule.ml" 315 11544 11592
+type(
+  Command.spec
+)
+"rule.ml" 315 11544 11596 "rule.ml" 315 11544 11603
+type(
+  Command.pathname
+)
+ident(
+  int_ref pointed "rule.ml" 315 11544 11555 "rule.ml" 315 11544 11562
+)
+"rule.ml" 315 11544 11594 "rule.ml" 315 11544 11603
+type(
+  Command.spec
+)
+"rule.ml" 315 11544 11608 "rule.ml" 315 11544 11615
+type(
+  Command.pathname
+)
+ident(
+  int_ref pointer "rule.ml" 315 11544 11563 "rule.ml" 315 11544 11570
+)
+"rule.ml" 315 11544 11605 "rule.ml" 315 11544 11615
+type(
+  Command.spec
+)
+"rule.ml" 315 11544 11579 "rule.ml" 315 11544 11616
+type(
+  Command.spec list
+)
+"rule.ml" 315 11544 11577 "rule.ml" 315 11544 11617
+type(
+  Command.spec
+)
+"rule.ml" 315 11544 11573 "rule.ml" 315 11544 11617
+type(
+  Command.t
+)
+"rule.ml" 316 11618 11624 "rule.ml" 316 11618 11628
+type(
+  Command.pathname -> Command.t
+)
+ident(
+  def rm_f "rule.ml" 317 11662 11664 "rule.ml" 319 11762 11765
+)
+"rule.ml" 316 11618 11629 "rule.ml" 316 11618 11630
+type(
+  Command.pathname
+)
+ident(
+  def x "rule.ml" 316 11618 11633 "rule.ml" 316 11618 11661
+)
+"rule.ml" 316 11618 11642 "rule.ml" 316 11618 11646
+type(
+  string
+)
+"rule.ml" 316 11618 11641 "rule.ml" 316 11618 11646
+type(
+  Command.spec
+)
+"rule.ml" 316 11618 11649 "rule.ml" 316 11618 11653
+type(
+  string
+)
+"rule.ml" 316 11618 11648 "rule.ml" 316 11618 11653
+type(
+  Command.spec
+)
+"rule.ml" 316 11618 11658 "rule.ml" 316 11618 11659
+type(
+  Command.pathname
+)
+ident(
+  int_ref x "rule.ml" 316 11618 11629 "rule.ml" 316 11618 11630
+)
+"rule.ml" 316 11618 11655 "rule.ml" 316 11618 11659
+type(
+  Command.spec
+)
+"rule.ml" 316 11618 11640 "rule.ml" 316 11618 11660
+type(
+  Command.spec list
+)
+"rule.ml" 316 11618 11637 "rule.ml" 316 11618 11661
+type(
+  Command.spec
+)
+"rule.ml" 316 11618 11633 "rule.ml" 316 11618 11661
+type(
+  Command.t
+)
+"rule.ml" 317 11662 11668 "rule.ml" 317 11662 11673
+type(
+  Command.spec -> Command.pathname -> Command.t
+)
+ident(
+  def chmod "rule.ml" 318 11719 11721 "rule.ml" 319 11762 11765
+)
+"rule.ml" 317 11662 11674 "rule.ml" 317 11662 11678
+type(
+  Command.spec
+)
+ident(
+  def opts "rule.ml" 317 11662 11679 "rule.ml" 317 11662 11718
+)
+"rule.ml" 317 11662 11679 "rule.ml" 317 11662 11683
+type(
+  Command.pathname
+)
+ident(
+  def file "rule.ml" 317 11662 11686 "rule.ml" 317 11662 11718
+)
+"rule.ml" 317 11662 11694 "rule.ml" 317 11662 11701
+type(
+  string
+)
+"rule.ml" 317 11662 11693 "rule.ml" 317 11662 11701
+type(
+  Command.spec
+)
+"rule.ml" 317 11662 11703 "rule.ml" 317 11662 11707
+type(
+  Command.spec
+)
+ident(
+  int_ref opts "rule.ml" 317 11662 11674 "rule.ml" 317 11662 11678
+)
+"rule.ml" 317 11662 11712 "rule.ml" 317 11662 11716
+type(
+  Command.pathname
+)
+ident(
+  int_ref file "rule.ml" 317 11662 11679 "rule.ml" 317 11662 11683
+)
+"rule.ml" 317 11662 11709 "rule.ml" 317 11662 11716
+type(
+  Command.spec
+)
+"rule.ml" 317 11662 11692 "rule.ml" 317 11662 11717
+type(
+  Command.spec list
+)
+"rule.ml" 317 11662 11690 "rule.ml" 317 11662 11718
+type(
+  Command.spec
+)
+"rule.ml" 317 11662 11686 "rule.ml" 317 11662 11718
+type(
+  Command.t
+)
+"rule.ml" 318 11719 11725 "rule.ml" 318 11719 11728
+type(
+  Command.pathname -> Command.pathname -> Command.t
+)
+ident(
+  def cmp "rule.ml" 318 11719 11761 "rule.ml" 319 11762 11765
+)
+"rule.ml" 318 11719 11729 "rule.ml" 318 11719 11730
+type(
+  Command.pathname
+)
+ident(
+  def a "rule.ml" 318 11719 11731 "rule.ml" 318 11719 11761
+)
+"rule.ml" 318 11719 11731 "rule.ml" 318 11719 11732
+type(
+  Command.pathname
+)
+ident(
+  def b "rule.ml" 318 11719 11735 "rule.ml" 318 11719 11761
+)
+"rule.ml" 318 11719 11743 "rule.ml" 318 11719 11748
+type(
+  string
+)
+"rule.ml" 318 11719 11742 "rule.ml" 318 11719 11748
+type(
+  Command.spec
+)
+"rule.ml" 318 11719 11752 "rule.ml" 318 11719 11753
+type(
+  Command.pathname
+)
+ident(
+  int_ref a "rule.ml" 318 11719 11729 "rule.ml" 318 11719 11730
+)
+"rule.ml" 318 11719 11750 "rule.ml" 318 11719 11753
+type(
+  Command.spec
+)
+"rule.ml" 318 11719 11758 "rule.ml" 318 11719 11759
+type(
+  Command.pathname
+)
+ident(
+  int_ref b "rule.ml" 318 11719 11731 "rule.ml" 318 11719 11732
+)
+"rule.ml" 318 11719 11755 "rule.ml" 318 11719 11759
+type(
+  Command.spec
+)
+"rule.ml" 318 11719 11741 "rule.ml" 318 11719 11760
+type(
+  Command.spec list
+)
+"rule.ml" 318 11719 11739 "rule.ml" 318 11719 11761
+type(
+  Command.spec
+)
+"rule.ml" 318 11719 11735 "rule.ml" 318 11719 11761
+type(
+  Command.t
+)
+"rule.ml" 322 11788 11792 "rule.ml" 322 11788 11801
+type(
+  string ->
+  ?insert:[ `after of string | `before of string | `bottom | `top ] ->
+  Pathname.t -> Pathname.t -> unit
+)
+ident(
+  def copy_rule "rule.ml" 330 12010 12010 "rule.ml" 1 0 -1
+)
+"rule.ml" 322 11788 11802 "rule.ml" 322 11788 11806
+type(
+  string
+)
+ident(
+  def name "rule.ml" 322 11788 11807 "rule.ml" 328 12001 12008
+)
+"rule.ml" 322 11788 11808 "rule.ml" 322 11788 11814
+type(
+  [ `after of string | `before of string | `bottom | `top ] option
+)
+ident(
+  def insert "rule.ml" 322 11788 11815 "rule.ml" 328 12001 12008
+)
+"rule.ml" 322 11788 11815 "rule.ml" 322 11788 11818
+type(
+  Pathname.t
+)
+ident(
+  def src "rule.ml" 322 11788 11819 "rule.ml" 328 12001 12008
+)
+"rule.ml" 322 11788 11819 "rule.ml" 322 11788 11823
+type(
+  Pathname.t
+)
+ident(
+  def dest "rule.ml" 323 11826 11828 "rule.ml" 328 12001 12008
+)
+"rule.ml" 323 11826 11828 "rule.ml" 323 11826 11832
+type(
+  string ->
+  ?tags:'_a ->
+  ?prods:Pathname.t list ->
+  ?deps:Pathname.t list ->
+  ?prod:Pathname.t ->
+  ?dep:Pathname.t ->
+  ?stamp:Pathname.t ->
+  ?insert:[ `after of string | `before of string | `bottom | `top ] ->
+  ?doc:string -> (env -> builder -> Command.t) -> unit
+)
+ident(
+  int_ref rule "rule.ml" 266 9967 9971 "rule.ml" 266 9967 9975
+)
+"rule.ml" 323 11826 11833 "rule.ml" 323 11826 11837
+type(
+  string
+)
+ident(
+  int_ref name "rule.ml" 322 11788 11802 "rule.ml" 322 11788 11806
+)
+"rule.ml" 323 11826 11839 "rule.ml" 323 11826 11845
+type(
+  [ `after of string | `before of string | `bottom | `top ] option
+)
+ident(
+  int_ref insert "rule.ml" 322 11788 11808 "rule.ml" 322 11788 11814
+)
+"rule.ml" 323 11826 11852 "rule.ml" 323 11826 11856
+type(
+  Pathname.t
+)
+ident(
+  int_ref dest "rule.ml" 322 11788 11819 "rule.ml" 322 11788 11823
+)
+"rule.ml" 323 11826 11862 "rule.ml" 323 11826 11865
+type(
+  Pathname.t
+)
+ident(
+  int_ref src "rule.ml" 322 11788 11815 "rule.ml" 322 11788 11818
+)
+"rule.ml" 324 11866 11880 "rule.ml" 324 11866 11883
+type(
+  env
+)
+ident(
+  def env "rule.ml" 324 11866 11884 "rule.ml" 327 11981 12000
+)
+"rule.ml" 324 11866 11884 "rule.ml" 324 11866 11885
+type(
+  builder
+)
+"rule.ml" 325 11889 11899 "rule.ml" 325 11889 11902
+type(
+  Pathname.t
+)
+ident(
+  def src "rule.ml" 326 11936 11942 "rule.ml" 327 11981 12000
+)
+"rule.ml" 325 11889 11905 "rule.ml" 325 11889 11908
+type(
+  env
+)
+ident(
+  int_ref env "rule.ml" 324 11866 11880 "rule.ml" 324 11866 11883
+)
+"rule.ml" 325 11889 11909 "rule.ml" 325 11889 11912
+type(
+  Pathname.t
+)
+ident(
+  int_ref src "rule.ml" 322 11788 11815 "rule.ml" 322 11788 11818
+)
+"rule.ml" 325 11889 11905 "rule.ml" 325 11889 11912
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"rule.ml" 325 11889 11917 "rule.ml" 325 11889 11921
+type(
+  Pathname.t
+)
+ident(
+  def dest "rule.ml" 326 11936 11942 "rule.ml" 327 11981 12000
+)
+"rule.ml" 325 11889 11924 "rule.ml" 325 11889 11927
+type(
+  env
+)
+ident(
+  int_ref env "rule.ml" 324 11866 11880 "rule.ml" 324 11866 11883
+)
+"rule.ml" 325 11889 11928 "rule.ml" 325 11889 11932
+type(
+  Pathname.t
+)
+ident(
+  int_ref dest "rule.ml" 322 11788 11819 "rule.ml" 322 11788 11823
+)
+"rule.ml" 325 11889 11924 "rule.ml" 325 11889 11932
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"rule.ml" 326 11936 11942 "rule.ml" 326 11936 11955
+type(
+  Pathname.t -> unit
+)
+ident(
+  ext_ref Shell.mkdir_p
+)
+"rule.ml" 326 11936 11957 "rule.ml" 326 11936 11973
+type(
+  Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Pathname.dirname
+)
+"rule.ml" 326 11936 11974 "rule.ml" 326 11936 11978
+type(
+  Pathname.t
+)
+ident(
+  int_ref dest "rule.ml" 325 11889 11917 "rule.ml" 325 11889 11921
+)
+"rule.ml" 326 11936 11956 "rule.ml" 326 11936 11979
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"rule.ml" 326 11936 11942 "rule.ml" 326 11936 11979
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 327 11981 11987 "rule.ml" 327 11981 11991
+type(
+  Command.pathname -> Command.pathname -> Command.t
+)
+ident(
+  int_ref Common_commands.cp_p "rule.ml" 313 11408 11414 "rule.ml" 313 11408 11418
+)
+"rule.ml" 327 11981 11992 "rule.ml" 327 11981 11995
+type(
+  Pathname.t
+)
+ident(
+  int_ref src "rule.ml" 325 11889 11899 "rule.ml" 325 11889 11902
+)
+"rule.ml" 327 11981 11996 "rule.ml" 327 11981 12000
+type(
+  Pathname.t
+)
+ident(
+  int_ref dest "rule.ml" 325 11889 11917 "rule.ml" 325 11889 11921
+)
+"rule.ml" 327 11981 11987 "rule.ml" 327 11981 12000
+call(
+  tail
+)
+type(
+  Command.t
+)
+"rule.ml" 326 11936 11942 "rule.ml" 327 11981 12000
+type(
+  Command.t
+)
+"rule.ml" 325 11889 11895 "rule.ml" 327 11981 12000
+type(
+  Command.t
+)
+"rule.ml" 324 11866 11870 "rule.ml" 328 12001 12008
+type(
+  env -> builder -> Command.t
+)
+"rule.ml" 323 11826 11828 "rule.ml" 328 12001 12008
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 330 12010 12014 "rule.ml" 330 12010 12032
+type(
+  unit -> unit
+)
+ident(
+  def show_documentation "rule.ml" 336 12209 12218 "rule.ml" 1 0 -1
+)
+"rule.ml" 330 12010 12033 "rule.ml" 330 12010 12035
+type(
+  unit
+)
+"rule.ml" 331 12038 12044 "rule.ml" 331 12038 12046
+type(
+  ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  def pp "rule.ml" 332 12081 12083 "rule.ml" 336 12209 12218
+)
+"rule.ml" 331 12038 12047 "rule.ml" 331 12038 12050
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  def fmt "rule.ml" 331 12038 12053 "rule.ml" 331 12038 12077
+)
+"rule.ml" 331 12038 12053 "rule.ml" 331 12038 12068
+type(
+  int -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Log.raw_dprintf
+)
+"rule.ml" 331 12038 12069 "rule.ml" 331 12038 12073
+type(
+  int
+)
+"rule.ml" 331 12038 12074 "rule.ml" 331 12038 12077
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  int_ref fmt "rule.ml" 331 12038 12047 "rule.ml" 331 12038 12050
+)
+"rule.ml" 331 12038 12053 "rule.ml" 331 12038 12077
+call(
+  tail
+)
+type(
+  'a
+)
+"rule.ml" 332 12081 12087 "rule.ml" 332 12081 12092
+type(
+  Resource.resource_pattern gen_rule list
+)
+ident(
+  def rules "rule.ml" 333 12111 12113 "rule.ml" 336 12209 12218
+)
+"rule.ml" 332 12081 12095 "rule.ml" 332 12081 12104
+type(
+  unit -> Resource.resource_pattern gen_rule list
+)
+ident(
+  int_ref get_rules "rule.ml" 242 9201 9206 "rule.ml" 242 9201 9215
+)
+"rule.ml" 332 12081 12105 "rule.ml" 332 12081 12107
+type(
+  unit
+)
+"rule.ml" 332 12081 12095 "rule.ml" 332 12081 12107
+call(
+  stack
+)
+type(
+  Resource.resource_pattern gen_rule list
+)
+"rule.ml" 333 12111 12113 "rule.ml" 333 12111 12122
+type(
+  (Resource.resource_pattern gen_rule -> unit) ->
+  Resource.resource_pattern gen_rule list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"rule.ml" 334 12123 12132 "rule.ml" 334 12123 12136
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  def rule "rule.ml" 334 12123 12140 "rule.ml" 334 12123 12196
+)
+"rule.ml" 334 12123 12140 "rule.ml" 334 12123 12142
+type(
+  ((Format.formatter -> Resource.resource_pattern gen_rule -> unit) ->
+   Resource.resource_pattern gen_rule -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Resource.resource_pattern gen_rule -> unit) ->
+  Resource.resource_pattern gen_rule -> unit
+)
+ident(
+  int_ref pp "rule.ml" 331 12038 12044 "rule.ml" 331 12038 12046
+)
+"rule.ml" 334 12123 12143 "rule.ml" 334 12123 12153
+type(
+  ((Format.formatter -> Resource.resource_pattern gen_rule -> unit) ->
+   Resource.resource_pattern gen_rule -> unit, Format.formatter, unit)
+  format
+)
+"rule.ml" 334 12123 12155 "rule.ml" 334 12123 12167
+type(
+  (Format.formatter -> Resource.resource_pattern -> unit) ->
+  Format.formatter -> Resource.resource_pattern gen_rule -> unit
+)
+ident(
+  int_ref pretty_print "rule.ml" 63 2276 2280 "rule.ml" 63 2276 2292
+)
+"rule.ml" 334 12123 12168 "rule.ml" 334 12123 12190
+type(
+  Format.formatter -> Resource.resource_pattern -> unit
+)
+ident(
+  ext_ref Resource.print_pattern
+)
+"rule.ml" 334 12123 12154 "rule.ml" 334 12123 12191
+call(
+  stack
+)
+type(
+  Format.formatter -> Resource.resource_pattern gen_rule -> unit
+)
+"rule.ml" 334 12123 12192 "rule.ml" 334 12123 12196
+type(
+  Resource.resource_pattern gen_rule
+)
+ident(
+  int_ref rule "rule.ml" 334 12123 12132 "rule.ml" 334 12123 12136
+)
+"rule.ml" 334 12123 12140 "rule.ml" 334 12123 12196
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 334 12123 12127 "rule.ml" 334 12123 12197
+type(
+  Resource.resource_pattern gen_rule -> unit
+)
+"rule.ml" 335 12198 12202 "rule.ml" 335 12198 12207
+type(
+  Resource.resource_pattern gen_rule list
+)
+ident(
+  int_ref rules "rule.ml" 332 12081 12087 "rule.ml" 332 12081 12092
+)
+"rule.ml" 333 12111 12113 "rule.ml" 335 12198 12207
+call(
+  stack
+)
+type(
+  unit
+)
+"rule.ml" 336 12209 12211 "rule.ml" 336 12209 12213
+type(
+  (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  int_ref pp "rule.ml" 331 12038 12044 "rule.ml" 331 12038 12046
+)
+"rule.ml" 336 12209 12214 "rule.ml" 336 12209 12218
+type(
+  (unit, Format.formatter, unit) format
+)
+"rule.ml" 336 12209 12211 "rule.ml" 336 12209 12218
+call(
+  tail
+)
+type(
+  unit
+)
+"rule.ml" 333 12111 12113 "rule.ml" 336 12209 12218
+type(
+  unit
+)
+"rule.ml" 332 12081 12083 "rule.ml" 336 12209 12218
+type(
+  unit
+)
+"rule.ml" 331 12038 12040 "rule.ml" 336 12209 12218
+type(
+  unit
+)

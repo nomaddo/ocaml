@@ -1,0 +1,811 @@
+"marshal.ml" 30 1413 1417 "marshal.ml" 30 1413 1426
+type(
+  bytes -> int -> int -> 'a -> extern_flags list -> int
+)
+ident(
+  def to_buffer "marshal.ml" 41 1847 1847 "marshal.ml" 1 0 -1
+)
+"marshal.ml" 30 1413 1427 "marshal.ml" 30 1413 1431
+type(
+  bytes
+)
+ident(
+  def buff "marshal.ml" 30 1413 1432 "marshal.ml" 33 1571 1615
+)
+"marshal.ml" 30 1413 1432 "marshal.ml" 30 1413 1435
+type(
+  int
+)
+ident(
+  def ofs "marshal.ml" 30 1413 1436 "marshal.ml" 33 1571 1615
+)
+"marshal.ml" 30 1413 1436 "marshal.ml" 30 1413 1439
+type(
+  int
+)
+ident(
+  def len "marshal.ml" 30 1413 1440 "marshal.ml" 33 1571 1615
+)
+"marshal.ml" 30 1413 1440 "marshal.ml" 30 1413 1441
+type(
+  'a
+)
+ident(
+  def v "marshal.ml" 30 1413 1442 "marshal.ml" 33 1571 1615
+)
+"marshal.ml" 30 1413 1442 "marshal.ml" 30 1413 1447
+type(
+  extern_flags list
+)
+ident(
+  def flags "marshal.ml" 31 1450 1452 "marshal.ml" 33 1571 1615
+)
+"marshal.ml" 31 1450 1455 "marshal.ml" 31 1450 1458
+type(
+  int
+)
+ident(
+  int_ref ofs "marshal.ml" 30 1413 1432 "marshal.ml" 30 1413 1435
+)
+"marshal.ml" 31 1450 1459 "marshal.ml" 31 1450 1460
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"marshal.ml" 31 1450 1461 "marshal.ml" 31 1450 1462
+type(
+  int
+)
+"marshal.ml" 31 1450 1455 "marshal.ml" 31 1450 1462
+type(
+  bool
+)
+"marshal.ml" 31 1450 1463 "marshal.ml" 31 1450 1465
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"marshal.ml" 31 1450 1466 "marshal.ml" 31 1450 1469
+type(
+  int
+)
+ident(
+  int_ref len "marshal.ml" 30 1413 1436 "marshal.ml" 30 1413 1439
+)
+"marshal.ml" 31 1450 1470 "marshal.ml" 31 1450 1471
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"marshal.ml" 31 1450 1472 "marshal.ml" 31 1450 1473
+type(
+  int
+)
+"marshal.ml" 31 1450 1466 "marshal.ml" 31 1450 1473
+type(
+  bool
+)
+"marshal.ml" 31 1450 1474 "marshal.ml" 31 1450 1476
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"marshal.ml" 31 1450 1477 "marshal.ml" 31 1450 1480
+type(
+  int
+)
+ident(
+  int_ref ofs "marshal.ml" 30 1413 1432 "marshal.ml" 30 1413 1435
+)
+"marshal.ml" 31 1450 1481 "marshal.ml" 31 1450 1482
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"marshal.ml" 31 1450 1483 "marshal.ml" 31 1450 1495
+type(
+  bytes -> int
+)
+ident(
+  ext_ref Bytes.length
+)
+"marshal.ml" 31 1450 1496 "marshal.ml" 31 1450 1500
+type(
+  bytes
+)
+ident(
+  int_ref buff "marshal.ml" 30 1413 1427 "marshal.ml" 30 1413 1431
+)
+"marshal.ml" 31 1450 1483 "marshal.ml" 31 1450 1500
+type(
+  int
+)
+"marshal.ml" 31 1450 1501 "marshal.ml" 31 1450 1502
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"marshal.ml" 31 1450 1503 "marshal.ml" 31 1450 1506
+type(
+  int
+)
+ident(
+  int_ref len "marshal.ml" 30 1413 1436 "marshal.ml" 30 1413 1439
+)
+"marshal.ml" 31 1450 1483 "marshal.ml" 31 1450 1506
+type(
+  int
+)
+"marshal.ml" 31 1450 1477 "marshal.ml" 31 1450 1506
+type(
+  bool
+)
+"marshal.ml" 31 1450 1466 "marshal.ml" 31 1450 1506
+type(
+  bool
+)
+"marshal.ml" 31 1450 1455 "marshal.ml" 31 1450 1506
+type(
+  bool
+)
+"marshal.ml" 32 1507 1514 "marshal.ml" 32 1507 1525
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"marshal.ml" 32 1507 1526 "marshal.ml" 32 1507 1570
+type(
+  string
+)
+"marshal.ml" 32 1507 1514 "marshal.ml" 32 1507 1570
+call(
+  tail
+)
+type(
+  int
+)
+"marshal.ml" 33 1571 1578 "marshal.ml" 33 1571 1594
+type(
+  bytes -> int -> int -> 'a -> extern_flags list -> int
+)
+ident(
+  int_ref to_buffer_unsafe "marshal.ml" 26 1289 1289 "marshal.ml" 28 1376 1411
+)
+"marshal.ml" 33 1571 1595 "marshal.ml" 33 1571 1599
+type(
+  bytes
+)
+ident(
+  int_ref buff "marshal.ml" 30 1413 1427 "marshal.ml" 30 1413 1431
+)
+"marshal.ml" 33 1571 1600 "marshal.ml" 33 1571 1603
+type(
+  int
+)
+ident(
+  int_ref ofs "marshal.ml" 30 1413 1432 "marshal.ml" 30 1413 1435
+)
+"marshal.ml" 33 1571 1604 "marshal.ml" 33 1571 1607
+type(
+  int
+)
+ident(
+  int_ref len "marshal.ml" 30 1413 1436 "marshal.ml" 30 1413 1439
+)
+"marshal.ml" 33 1571 1608 "marshal.ml" 33 1571 1609
+type(
+  'a
+)
+ident(
+  int_ref v "marshal.ml" 30 1413 1440 "marshal.ml" 30 1413 1441
+)
+"marshal.ml" 33 1571 1610 "marshal.ml" 33 1571 1615
+type(
+  extern_flags list
+)
+ident(
+  int_ref flags "marshal.ml" 30 1413 1442 "marshal.ml" 30 1413 1447
+)
+"marshal.ml" 33 1571 1578 "marshal.ml" 33 1571 1615
+type(
+  int
+)
+"marshal.ml" 31 1450 1452 "marshal.ml" 33 1571 1615
+type(
+  int
+)
+"marshal.ml" 46 2090 2094 "marshal.ml" 46 2090 2105
+type(
+  int
+)
+ident(
+  def header_size "marshal.ml" 47 2111 2111 "marshal.ml" 1 0 -1
+)
+"marshal.ml" 46 2090 2108 "marshal.ml" 46 2090 2110
+type(
+  int
+)
+"marshal.ml" 47 2111 2115 "marshal.ml" 47 2111 2124
+type(
+  bytes -> int -> int
+)
+ident(
+  def data_size "marshal.ml" 51 2262 2262 "marshal.ml" 1 0 -1
+)
+"marshal.ml" 47 2111 2125 "marshal.ml" 47 2111 2129
+type(
+  bytes
+)
+ident(
+  def buff "marshal.ml" 47 2111 2130 "marshal.ml" 50 2229 2261
+)
+"marshal.ml" 47 2111 2130 "marshal.ml" 47 2111 2133
+type(
+  int
+)
+ident(
+  def ofs "marshal.ml" 48 2136 2138 "marshal.ml" 50 2229 2261
+)
+"marshal.ml" 48 2136 2141 "marshal.ml" 48 2136 2144
+type(
+  int
+)
+ident(
+  int_ref ofs "marshal.ml" 47 2111 2130 "marshal.ml" 47 2111 2133
+)
+"marshal.ml" 48 2136 2145 "marshal.ml" 48 2136 2146
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"marshal.ml" 48 2136 2147 "marshal.ml" 48 2136 2148
+type(
+  int
+)
+"marshal.ml" 48 2136 2141 "marshal.ml" 48 2136 2148
+type(
+  bool
+)
+"marshal.ml" 48 2136 2149 "marshal.ml" 48 2136 2151
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"marshal.ml" 48 2136 2152 "marshal.ml" 48 2136 2155
+type(
+  int
+)
+ident(
+  int_ref ofs "marshal.ml" 47 2111 2130 "marshal.ml" 47 2111 2133
+)
+"marshal.ml" 48 2136 2156 "marshal.ml" 48 2136 2157
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"marshal.ml" 48 2136 2158 "marshal.ml" 48 2136 2170
+type(
+  bytes -> int
+)
+ident(
+  ext_ref Bytes.length
+)
+"marshal.ml" 48 2136 2171 "marshal.ml" 48 2136 2175
+type(
+  bytes
+)
+ident(
+  int_ref buff "marshal.ml" 47 2111 2125 "marshal.ml" 47 2111 2129
+)
+"marshal.ml" 48 2136 2158 "marshal.ml" 48 2136 2175
+type(
+  int
+)
+"marshal.ml" 48 2136 2176 "marshal.ml" 48 2136 2177
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"marshal.ml" 48 2136 2178 "marshal.ml" 48 2136 2189
+type(
+  int
+)
+ident(
+  int_ref header_size "marshal.ml" 46 2090 2094 "marshal.ml" 46 2090 2105
+)
+"marshal.ml" 48 2136 2158 "marshal.ml" 48 2136 2189
+type(
+  int
+)
+"marshal.ml" 48 2136 2152 "marshal.ml" 48 2136 2189
+type(
+  bool
+)
+"marshal.ml" 48 2136 2141 "marshal.ml" 48 2136 2189
+type(
+  bool
+)
+"marshal.ml" 49 2190 2197 "marshal.ml" 49 2190 2208
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"marshal.ml" 49 2190 2209 "marshal.ml" 49 2190 2228
+type(
+  string
+)
+"marshal.ml" 49 2190 2197 "marshal.ml" 49 2190 2228
+call(
+  tail
+)
+type(
+  int
+)
+"marshal.ml" 50 2229 2236 "marshal.ml" 50 2229 2252
+type(
+  bytes -> int -> int
+)
+ident(
+  int_ref data_size_unsafe "marshal.ml" 44 2015 2015 "marshal.ml" 44 2015 2088
+)
+"marshal.ml" 50 2229 2253 "marshal.ml" 50 2229 2257
+type(
+  bytes
+)
+ident(
+  int_ref buff "marshal.ml" 47 2111 2125 "marshal.ml" 47 2111 2129
+)
+"marshal.ml" 50 2229 2258 "marshal.ml" 50 2229 2261
+type(
+  int
+)
+ident(
+  int_ref ofs "marshal.ml" 47 2111 2130 "marshal.ml" 47 2111 2133
+)
+"marshal.ml" 50 2229 2236 "marshal.ml" 50 2229 2261
+type(
+  int
+)
+"marshal.ml" 48 2136 2138 "marshal.ml" 50 2229 2261
+type(
+  int
+)
+"marshal.ml" 51 2262 2266 "marshal.ml" 51 2262 2276
+type(
+  bytes -> int -> int
+)
+ident(
+  def total_size "marshal.ml" 53 2322 2322 "marshal.ml" 1 0 -1
+)
+"marshal.ml" 51 2262 2277 "marshal.ml" 51 2262 2281
+type(
+  bytes
+)
+ident(
+  def buff "marshal.ml" 51 2262 2282 "marshal.ml" 51 2262 2320
+)
+"marshal.ml" 51 2262 2282 "marshal.ml" 51 2262 2285
+type(
+  int
+)
+ident(
+  def ofs "marshal.ml" 51 2262 2288 "marshal.ml" 51 2262 2320
+)
+"marshal.ml" 51 2262 2288 "marshal.ml" 51 2262 2299
+type(
+  int
+)
+ident(
+  int_ref header_size "marshal.ml" 46 2090 2094 "marshal.ml" 46 2090 2105
+)
+"marshal.ml" 51 2262 2300 "marshal.ml" 51 2262 2301
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"marshal.ml" 51 2262 2302 "marshal.ml" 51 2262 2311
+type(
+  bytes -> int -> int
+)
+ident(
+  int_ref data_size "marshal.ml" 47 2111 2115 "marshal.ml" 47 2111 2124
+)
+"marshal.ml" 51 2262 2312 "marshal.ml" 51 2262 2316
+type(
+  bytes
+)
+ident(
+  int_ref buff "marshal.ml" 51 2262 2277 "marshal.ml" 51 2262 2281
+)
+"marshal.ml" 51 2262 2317 "marshal.ml" 51 2262 2320
+type(
+  int
+)
+ident(
+  int_ref ofs "marshal.ml" 51 2262 2282 "marshal.ml" 51 2262 2285
+)
+"marshal.ml" 51 2262 2302 "marshal.ml" 51 2262 2320
+call(
+  stack
+)
+type(
+  int
+)
+"marshal.ml" 51 2262 2288 "marshal.ml" 51 2262 2320
+type(
+  int
+)
+"marshal.ml" 53 2322 2326 "marshal.ml" 53 2322 2336
+type(
+  bytes -> int -> 'a
+)
+ident(
+  def from_bytes "marshal.ml" 63 2636 2636 "marshal.ml" 1 0 -1
+)
+"marshal.ml" 53 2322 2337 "marshal.ml" 53 2322 2341
+type(
+  bytes
+)
+ident(
+  def buff "marshal.ml" 53 2322 2342 "marshal.ml" 61 2629 2634
+)
+"marshal.ml" 53 2322 2342 "marshal.ml" 53 2322 2345
+type(
+  int
+)
+ident(
+  def ofs "marshal.ml" 54 2348 2350 "marshal.ml" 61 2629 2634
+)
+"marshal.ml" 54 2348 2353 "marshal.ml" 54 2348 2356
+type(
+  int
+)
+ident(
+  int_ref ofs "marshal.ml" 53 2322 2342 "marshal.ml" 53 2322 2345
+)
+"marshal.ml" 54 2348 2357 "marshal.ml" 54 2348 2358
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"marshal.ml" 54 2348 2359 "marshal.ml" 54 2348 2360
+type(
+  int
+)
+"marshal.ml" 54 2348 2353 "marshal.ml" 54 2348 2360
+type(
+  bool
+)
+"marshal.ml" 54 2348 2361 "marshal.ml" 54 2348 2363
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"marshal.ml" 54 2348 2364 "marshal.ml" 54 2348 2367
+type(
+  int
+)
+ident(
+  int_ref ofs "marshal.ml" 53 2322 2342 "marshal.ml" 53 2322 2345
+)
+"marshal.ml" 54 2348 2368 "marshal.ml" 54 2348 2369
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"marshal.ml" 54 2348 2370 "marshal.ml" 54 2348 2382
+type(
+  bytes -> int
+)
+ident(
+  ext_ref Bytes.length
+)
+"marshal.ml" 54 2348 2383 "marshal.ml" 54 2348 2387
+type(
+  bytes
+)
+ident(
+  int_ref buff "marshal.ml" 53 2322 2337 "marshal.ml" 53 2322 2341
+)
+"marshal.ml" 54 2348 2370 "marshal.ml" 54 2348 2387
+type(
+  int
+)
+"marshal.ml" 54 2348 2388 "marshal.ml" 54 2348 2389
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"marshal.ml" 54 2348 2390 "marshal.ml" 54 2348 2401
+type(
+  int
+)
+ident(
+  int_ref header_size "marshal.ml" 46 2090 2094 "marshal.ml" 46 2090 2105
+)
+"marshal.ml" 54 2348 2370 "marshal.ml" 54 2348 2401
+type(
+  int
+)
+"marshal.ml" 54 2348 2364 "marshal.ml" 54 2348 2401
+type(
+  bool
+)
+"marshal.ml" 54 2348 2353 "marshal.ml" 54 2348 2401
+type(
+  bool
+)
+"marshal.ml" 55 2402 2409 "marshal.ml" 55 2402 2420
+type(
+  string -> 'a
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"marshal.ml" 55 2402 2421 "marshal.ml" 55 2402 2441
+type(
+  string
+)
+"marshal.ml" 55 2402 2409 "marshal.ml" 55 2402 2441
+call(
+  tail
+)
+type(
+  'a
+)
+"marshal.ml" 57 2455 2463 "marshal.ml" 57 2455 2466
+type(
+  int
+)
+ident(
+  def len "marshal.ml" 58 2498 2502 "marshal.ml" 60 2593 2628
+)
+"marshal.ml" 57 2455 2469 "marshal.ml" 57 2455 2485
+type(
+  bytes -> int -> int
+)
+ident(
+  int_ref data_size_unsafe "marshal.ml" 44 2015 2015 "marshal.ml" 44 2015 2088
+)
+"marshal.ml" 57 2455 2486 "marshal.ml" 57 2455 2490
+type(
+  bytes
+)
+ident(
+  int_ref buff "marshal.ml" 53 2322 2337 "marshal.ml" 53 2322 2341
+)
+"marshal.ml" 57 2455 2491 "marshal.ml" 57 2455 2494
+type(
+  int
+)
+ident(
+  int_ref ofs "marshal.ml" 53 2322 2342 "marshal.ml" 53 2322 2345
+)
+"marshal.ml" 57 2455 2469 "marshal.ml" 57 2455 2494
+type(
+  int
+)
+"marshal.ml" 58 2498 2505 "marshal.ml" 58 2498 2508
+type(
+  int
+)
+ident(
+  int_ref ofs "marshal.ml" 53 2322 2342 "marshal.ml" 53 2322 2345
+)
+"marshal.ml" 58 2498 2509 "marshal.ml" 58 2498 2510
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"marshal.ml" 58 2498 2511 "marshal.ml" 58 2498 2523
+type(
+  bytes -> int
+)
+ident(
+  ext_ref Bytes.length
+)
+"marshal.ml" 58 2498 2524 "marshal.ml" 58 2498 2528
+type(
+  bytes
+)
+ident(
+  int_ref buff "marshal.ml" 53 2322 2337 "marshal.ml" 53 2322 2341
+)
+"marshal.ml" 58 2498 2511 "marshal.ml" 58 2498 2528
+type(
+  int
+)
+"marshal.ml" 58 2498 2529 "marshal.ml" 58 2498 2530
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"marshal.ml" 58 2498 2532 "marshal.ml" 58 2498 2543
+type(
+  int
+)
+ident(
+  int_ref header_size "marshal.ml" 46 2090 2094 "marshal.ml" 46 2090 2105
+)
+"marshal.ml" 58 2498 2544 "marshal.ml" 58 2498 2545
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"marshal.ml" 58 2498 2546 "marshal.ml" 58 2498 2549
+type(
+  int
+)
+ident(
+  int_ref len "marshal.ml" 57 2455 2463 "marshal.ml" 57 2455 2466
+)
+"marshal.ml" 58 2498 2531 "marshal.ml" 58 2498 2550
+type(
+  int
+)
+"marshal.ml" 58 2498 2511 "marshal.ml" 58 2498 2550
+type(
+  int
+)
+"marshal.ml" 58 2498 2505 "marshal.ml" 58 2498 2550
+type(
+  bool
+)
+"marshal.ml" 59 2551 2560 "marshal.ml" 59 2551 2571
+type(
+  string -> 'a
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"marshal.ml" 59 2551 2572 "marshal.ml" 59 2551 2592
+type(
+  string
+)
+"marshal.ml" 59 2551 2560 "marshal.ml" 59 2551 2592
+call(
+  tail
+)
+type(
+  'a
+)
+"marshal.ml" 60 2593 2602 "marshal.ml" 60 2593 2619
+type(
+  bytes -> int -> 'a
+)
+ident(
+  int_ref from_bytes_unsafe "marshal.ml" 42 1908 1908 "marshal.ml" 43 1955 2014
+)
+"marshal.ml" 60 2593 2620 "marshal.ml" 60 2593 2624
+type(
+  bytes
+)
+ident(
+  int_ref buff "marshal.ml" 53 2322 2337 "marshal.ml" 53 2322 2341
+)
+"marshal.ml" 60 2593 2625 "marshal.ml" 60 2593 2628
+type(
+  int
+)
+ident(
+  int_ref ofs "marshal.ml" 53 2322 2342 "marshal.ml" 53 2322 2345
+)
+"marshal.ml" 60 2593 2602 "marshal.ml" 60 2593 2628
+type(
+  'a
+)
+"marshal.ml" 58 2498 2502 "marshal.ml" 60 2593 2628
+type(
+  'a
+)
+"marshal.ml" 56 2442 2449 "marshal.ml" 61 2629 2634
+type(
+  'a
+)
+"marshal.ml" 54 2348 2350 "marshal.ml" 61 2629 2634
+type(
+  'a
+)
+"marshal.ml" 63 2636 2640 "marshal.ml" 63 2636 2651
+type(
+  string -> int -> 'a
+)
+ident(
+  def from_string "marshal.ml" 66 2760 2806 "marshal.ml" 1 0 -1
+)
+"marshal.ml" 63 2636 2652 "marshal.ml" 63 2636 2656
+type(
+  string
+)
+ident(
+  def buff "marshal.ml" 63 2636 2657 "marshal.ml" 66 2760 2806
+)
+"marshal.ml" 63 2636 2657 "marshal.ml" 63 2636 2660
+type(
+  int
+)
+ident(
+  def ofs "marshal.ml" 66 2760 2762 "marshal.ml" 66 2760 2806
+)
+"marshal.ml" 66 2760 2762 "marshal.ml" 66 2760 2772
+type(
+  bytes -> int -> 'a
+)
+ident(
+  int_ref from_bytes "marshal.ml" 53 2322 2326 "marshal.ml" 53 2322 2336
+)
+"marshal.ml" 66 2760 2774 "marshal.ml" 66 2760 2796
+type(
+  string -> bytes
+)
+ident(
+  ext_ref Bytes.unsafe_of_string
+)
+"marshal.ml" 66 2760 2797 "marshal.ml" 66 2760 2801
+type(
+  string
+)
+ident(
+  int_ref buff "marshal.ml" 63 2636 2652 "marshal.ml" 63 2636 2656
+)
+"marshal.ml" 66 2760 2773 "marshal.ml" 66 2760 2802
+call(
+  stack
+)
+type(
+  bytes
+)
+"marshal.ml" 66 2760 2803 "marshal.ml" 66 2760 2806
+type(
+  int
+)
+ident(
+  int_ref ofs "marshal.ml" 63 2636 2657 "marshal.ml" 63 2636 2660
+)
+"marshal.ml" 66 2760 2762 "marshal.ml" 66 2760 2806
+call(
+  tail
+)
+type(
+  'a
+)

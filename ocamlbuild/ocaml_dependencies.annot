@@ -1,0 +1,4519 @@
+"ocaml_dependencies.ml" 20 907 911 "ocaml_dependencies.ml" 20 907 920
+type(
+  ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  def mydprintf "ocaml_dependencies.ml" 22 943 943 "ocaml_dependencies.ml" 1 0 -1
+)
+"ocaml_dependencies.ml" 20 907 921 "ocaml_dependencies.ml" 20 907 924
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  def fmt "ocaml_dependencies.ml" 20 907 927 "ocaml_dependencies.ml" 20 907 941
+)
+"ocaml_dependencies.ml" 20 907 927 "ocaml_dependencies.ml" 20 907 934
+type(
+  int -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Log.dprintf
+)
+"ocaml_dependencies.ml" 20 907 935 "ocaml_dependencies.ml" 20 907 937
+type(
+  int
+)
+"ocaml_dependencies.ml" 20 907 938 "ocaml_dependencies.ml" 20 907 941
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  int_ref fmt "ocaml_dependencies.ml" 20 907 921 "ocaml_dependencies.ml" 20 907 924
+)
+"ocaml_dependencies.ml" 20 907 927 "ocaml_dependencies.ml" 20 907 941
+call(
+  tail
+)
+type(
+  'a
+)
+"ocaml_dependencies.ml" 33 1282 1298 "ocaml_dependencies.ml" 33 1282 1314
+call(
+  stack
+)
+"ocaml_dependencies.ml" 38 1381 1389 "ocaml_dependencies.ml" 38 1381 1392
+type(
+  SMap.key -> 'a -> 'a SMap.t -> 'a SMap.t
+)
+ident(
+  def add "ocaml_dependencies.ml" 40 1405 1409 "ocaml_dependencies.ml" 86 2720 2725
+)
+"ocaml_dependencies.ml" 38 1381 1395 "ocaml_dependencies.ml" 38 1381 1403
+type(
+  SMap.key -> 'a -> 'a SMap.t -> 'a SMap.t
+)
+ident(
+  ext_ref SMap.add
+)
+"ocaml_dependencies.ml" 40 1405 1413 "ocaml_dependencies.ml" 40 1405 1418
+type(
+  'b SMap.t
+)
+ident(
+  def empty "ocaml_dependencies.ml" 42 1433 1437 "ocaml_dependencies.ml" 86 2720 2725
+)
+"ocaml_dependencies.ml" 40 1405 1421 "ocaml_dependencies.ml" 40 1405 1431
+type(
+  'b SMap.t
+)
+ident(
+  ext_ref SMap.empty
+)
+"ocaml_dependencies.ml" 42 1433 1441 "ocaml_dependencies.ml" 42 1433 1453
+type(
+  SMap.key -> Resources.t SMap.t -> Resources.t
+)
+ident(
+  def find_all_set "ocaml_dependencies.ml" 45 1523 1527 "ocaml_dependencies.ml" 86 2720 2725
+)
+"ocaml_dependencies.ml" 42 1433 1454 "ocaml_dependencies.ml" 42 1433 1455
+type(
+  SMap.key
+)
+ident(
+  def x "ocaml_dependencies.ml" 42 1433 1456 "ocaml_dependencies.ml" 43 1462 1521
+)
+"ocaml_dependencies.ml" 42 1433 1456 "ocaml_dependencies.ml" 42 1433 1459
+type(
+  Resources.t SMap.t
+)
+ident(
+  def acc "ocaml_dependencies.ml" 43 1462 1468 "ocaml_dependencies.ml" 43 1462 1521
+)
+"ocaml_dependencies.ml" 43 1462 1472 "ocaml_dependencies.ml" 43 1462 1481
+type(
+  SMap.key -> Resources.t SMap.t -> Resources.t
+)
+ident(
+  ext_ref SMap.find
+)
+"ocaml_dependencies.ml" 43 1462 1482 "ocaml_dependencies.ml" 43 1462 1483
+type(
+  SMap.key
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 42 1433 1454 "ocaml_dependencies.ml" 42 1433 1455
+)
+"ocaml_dependencies.ml" 43 1462 1484 "ocaml_dependencies.ml" 43 1462 1487
+type(
+  Resources.t SMap.t
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 42 1433 1456 "ocaml_dependencies.ml" 42 1433 1459
+)
+"ocaml_dependencies.ml" 43 1462 1472 "ocaml_dependencies.ml" 43 1462 1487
+call(
+  stack
+)
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 43 1462 1493 "ocaml_dependencies.ml" 43 1462 1502
+type(
+  exn
+)
+"ocaml_dependencies.ml" 43 1462 1506 "ocaml_dependencies.ml" 43 1462 1521
+type(
+  Resources.t
+)
+ident(
+  ext_ref Resources.empty
+)
+"ocaml_dependencies.ml" 43 1462 1468 "ocaml_dependencies.ml" 43 1462 1521
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 45 1523 1531 "ocaml_dependencies.ml" 45 1523 1543
+type(
+  SMap.key -> Resources.elt -> Resources.t SMap.t -> Resources.t SMap.t
+)
+ident(
+  def smap_add_set "ocaml_dependencies.ml" 48 1625 1629 "ocaml_dependencies.ml" 86 2720 2725
+)
+"ocaml_dependencies.ml" 45 1523 1544 "ocaml_dependencies.ml" 45 1523 1547
+type(
+  SMap.key
+)
+ident(
+  def src "ocaml_dependencies.ml" 45 1523 1548 "ocaml_dependencies.ml" 46 1558 1623
+)
+"ocaml_dependencies.ml" 45 1523 1548 "ocaml_dependencies.ml" 45 1523 1551
+type(
+  Resources.elt
+)
+ident(
+  def dst "ocaml_dependencies.ml" 45 1523 1552 "ocaml_dependencies.ml" 46 1558 1623
+)
+"ocaml_dependencies.ml" 45 1523 1552 "ocaml_dependencies.ml" 45 1523 1555
+type(
+  Resources.t SMap.t
+)
+ident(
+  def acc "ocaml_dependencies.ml" 46 1558 1564 "ocaml_dependencies.ml" 46 1558 1623
+)
+"ocaml_dependencies.ml" 46 1558 1564 "ocaml_dependencies.ml" 46 1558 1572
+type(
+  SMap.key -> Resources.t -> Resources.t SMap.t -> Resources.t SMap.t
+)
+ident(
+  ext_ref SMap.add
+)
+"ocaml_dependencies.ml" 46 1558 1573 "ocaml_dependencies.ml" 46 1558 1576
+type(
+  SMap.key
+)
+ident(
+  int_ref src "ocaml_dependencies.ml" 45 1523 1544 "ocaml_dependencies.ml" 45 1523 1547
+)
+"ocaml_dependencies.ml" 46 1558 1578 "ocaml_dependencies.ml" 46 1558 1591
+type(
+  Resources.elt -> Resources.t -> Resources.t
+)
+ident(
+  ext_ref Resources.add
+)
+"ocaml_dependencies.ml" 46 1558 1592 "ocaml_dependencies.ml" 46 1558 1595
+type(
+  Resources.elt
+)
+ident(
+  int_ref dst "ocaml_dependencies.ml" 45 1523 1548 "ocaml_dependencies.ml" 45 1523 1551
+)
+"ocaml_dependencies.ml" 46 1558 1597 "ocaml_dependencies.ml" 46 1558 1609
+type(
+  SMap.key -> Resources.t SMap.t -> Resources.t
+)
+ident(
+  int_ref find_all_set "ocaml_dependencies.ml" 42 1433 1441 "ocaml_dependencies.ml" 42 1433 1453
+)
+"ocaml_dependencies.ml" 46 1558 1610 "ocaml_dependencies.ml" 46 1558 1613
+type(
+  SMap.key
+)
+ident(
+  int_ref src "ocaml_dependencies.ml" 45 1523 1544 "ocaml_dependencies.ml" 45 1523 1547
+)
+"ocaml_dependencies.ml" 46 1558 1614 "ocaml_dependencies.ml" 46 1558 1617
+type(
+  Resources.t SMap.t
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 45 1523 1552 "ocaml_dependencies.ml" 45 1523 1555
+)
+"ocaml_dependencies.ml" 46 1558 1596 "ocaml_dependencies.ml" 46 1558 1618
+call(
+  stack
+)
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 46 1558 1577 "ocaml_dependencies.ml" 46 1558 1619
+call(
+  stack
+)
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 46 1558 1620 "ocaml_dependencies.ml" 46 1558 1623
+type(
+  Resources.t SMap.t
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 45 1523 1552 "ocaml_dependencies.ml" 45 1523 1555
+)
+"ocaml_dependencies.ml" 46 1558 1564 "ocaml_dependencies.ml" 46 1558 1623
+call(
+  tail
+)
+type(
+  Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 48 1625 1633 "ocaml_dependencies.ml" 48 1625 1643
+type(
+  (Format.formatter -> 'c -> unit) -> Format.formatter -> 'c SMap.t -> unit
+)
+ident(
+  def print_smap "ocaml_dependencies.ml" 55 1837 1841 "ocaml_dependencies.ml" 86 2720 2725
+)
+"ocaml_dependencies.ml" 48 1625 1644 "ocaml_dependencies.ml" 48 1625 1646
+type(
+  Format.formatter -> 'c -> unit
+)
+ident(
+  def pp "ocaml_dependencies.ml" 48 1625 1647 "ocaml_dependencies.ml" 53 1802 1835
+)
+"ocaml_dependencies.ml" 48 1625 1647 "ocaml_dependencies.ml" 48 1625 1648
+type(
+  Format.formatter
+)
+ident(
+  def f "ocaml_dependencies.ml" 48 1625 1649 "ocaml_dependencies.ml" 53 1802 1835
+)
+"ocaml_dependencies.ml" 48 1625 1649 "ocaml_dependencies.ml" 48 1625 1653
+type(
+  'c SMap.t
+)
+ident(
+  def smap "ocaml_dependencies.ml" 49 1656 1662 "ocaml_dependencies.ml" 53 1802 1835
+)
+"ocaml_dependencies.ml" 49 1656 1662 "ocaml_dependencies.ml" 49 1656 1676
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocaml_dependencies.ml" 49 1656 1677 "ocaml_dependencies.ml" 49 1656 1678
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocaml_dependencies.ml" 48 1625 1647 "ocaml_dependencies.ml" 48 1625 1648
+)
+"ocaml_dependencies.ml" 49 1656 1679 "ocaml_dependencies.ml" 49 1656 1697
+type(
+  (unit, Format.formatter, unit) format
+)
+"ocaml_dependencies.ml" 49 1656 1662 "ocaml_dependencies.ml" 49 1656 1697
+call(
+  stack
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 50 1699 1705 "ocaml_dependencies.ml" 50 1699 1714
+type(
+  (SMap.key -> 'c -> unit) -> 'c SMap.t -> unit
+)
+ident(
+  ext_ref SMap.iter
+)
+"ocaml_dependencies.ml" 50 1699 1725 "ocaml_dependencies.ml" 50 1699 1726
+type(
+  SMap.key
+)
+ident(
+  def k "ocaml_dependencies.ml" 50 1699 1727 "ocaml_dependencies.ml" 51 1732 1785
+)
+"ocaml_dependencies.ml" 50 1699 1727 "ocaml_dependencies.ml" 50 1699 1728
+type(
+  'c
+)
+ident(
+  def v "ocaml_dependencies.ml" 51 1732 1740 "ocaml_dependencies.ml" 51 1732 1785
+)
+"ocaml_dependencies.ml" 51 1732 1740 "ocaml_dependencies.ml" 51 1732 1754
+type(
+  Format.formatter ->
+  (SMap.key -> (Format.formatter -> 'c -> unit) -> 'c -> unit,
+   Format.formatter, unit)
+  format -> SMap.key -> (Format.formatter -> 'c -> unit) -> 'c -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocaml_dependencies.ml" 51 1732 1755 "ocaml_dependencies.ml" 51 1732 1756
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocaml_dependencies.ml" 48 1625 1647 "ocaml_dependencies.ml" 48 1625 1648
+)
+"ocaml_dependencies.ml" 51 1732 1757 "ocaml_dependencies.ml" 51 1732 1778
+type(
+  (SMap.key -> (Format.formatter -> 'c -> unit) -> 'c -> unit,
+   Format.formatter, unit)
+  format
+)
+"ocaml_dependencies.ml" 51 1732 1779 "ocaml_dependencies.ml" 51 1732 1780
+type(
+  SMap.key
+)
+ident(
+  int_ref k "ocaml_dependencies.ml" 50 1699 1725 "ocaml_dependencies.ml" 50 1699 1726
+)
+"ocaml_dependencies.ml" 51 1732 1781 "ocaml_dependencies.ml" 51 1732 1783
+type(
+  Format.formatter -> 'c -> unit
+)
+ident(
+  int_ref pp "ocaml_dependencies.ml" 48 1625 1644 "ocaml_dependencies.ml" 48 1625 1646
+)
+"ocaml_dependencies.ml" 51 1732 1784 "ocaml_dependencies.ml" 51 1732 1785
+type(
+  'c
+)
+ident(
+  int_ref v "ocaml_dependencies.ml" 50 1699 1727 "ocaml_dependencies.ml" 50 1699 1728
+)
+"ocaml_dependencies.ml" 51 1732 1740 "ocaml_dependencies.ml" 51 1732 1785
+call(
+  tail
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 50 1699 1715 "ocaml_dependencies.ml" 52 1786 1795
+type(
+  SMap.key -> 'c -> unit
+)
+"ocaml_dependencies.ml" 52 1786 1796 "ocaml_dependencies.ml" 52 1786 1800
+type(
+  'c SMap.t
+)
+ident(
+  int_ref smap "ocaml_dependencies.ml" 48 1625 1649 "ocaml_dependencies.ml" 48 1625 1653
+)
+"ocaml_dependencies.ml" 50 1699 1705 "ocaml_dependencies.ml" 52 1786 1800
+call(
+  stack
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 53 1802 1808 "ocaml_dependencies.ml" 53 1802 1822
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"ocaml_dependencies.ml" 53 1802 1823 "ocaml_dependencies.ml" 53 1802 1824
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "ocaml_dependencies.ml" 48 1625 1647 "ocaml_dependencies.ml" 48 1625 1648
+)
+"ocaml_dependencies.ml" 53 1802 1825 "ocaml_dependencies.ml" 53 1802 1835
+type(
+  (unit, Format.formatter, unit) format
+)
+"ocaml_dependencies.ml" 53 1802 1808 "ocaml_dependencies.ml" 53 1802 1835
+call(
+  tail
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 50 1699 1705 "ocaml_dependencies.ml" 53 1802 1835
+type(
+  unit
+)
+"ocaml_dependencies.ml" 49 1656 1662 "ocaml_dependencies.ml" 53 1802 1835
+type(
+  unit
+)
+"ocaml_dependencies.ml" 55 1837 1845 "ocaml_dependencies.ml" 55 1837 1860
+type(
+  Format.formatter -> string list SMap.t -> unit
+)
+ident(
+  def print_smap_list "ocaml_dependencies.ml" 57 1880 1884 "ocaml_dependencies.ml" 86 2720 2725
+)
+"ocaml_dependencies.ml" 55 1837 1863 "ocaml_dependencies.ml" 55 1837 1873
+type(
+  (Format.formatter -> string list -> unit) ->
+  Format.formatter -> string list SMap.t -> unit
+)
+ident(
+  int_ref print_smap "ocaml_dependencies.ml" 48 1625 1633 "ocaml_dependencies.ml" 48 1625 1643
+)
+"ocaml_dependencies.ml" 55 1837 1874 "ocaml_dependencies.ml" 55 1837 1878
+type(
+  Format.formatter -> string list -> unit
+)
+ident(
+  ext_ref Tools.pp_l
+)
+"ocaml_dependencies.ml" 55 1837 1863 "ocaml_dependencies.ml" 55 1837 1878
+call(
+  stack
+)
+type(
+  Format.formatter -> string list SMap.t -> unit
+)
+"ocaml_dependencies.ml" 57 1880 1888 "ocaml_dependencies.ml" 57 1880 1902
+type(
+  Format.formatter -> Resources.t SMap.t -> unit
+)
+ident(
+  def print_smap_set "ocaml_dependencies.ml" 59 1933 1937 "ocaml_dependencies.ml" 86 2720 2725
+)
+"ocaml_dependencies.ml" 57 1880 1905 "ocaml_dependencies.ml" 57 1880 1915
+type(
+  (Format.formatter -> Resources.t -> unit) ->
+  Format.formatter -> Resources.t SMap.t -> unit
+)
+ident(
+  int_ref print_smap "ocaml_dependencies.ml" 48 1625 1633 "ocaml_dependencies.ml" 48 1625 1643
+)
+"ocaml_dependencies.ml" 57 1880 1916 "ocaml_dependencies.ml" 57 1880 1931
+type(
+  Format.formatter -> Resources.t -> unit
+)
+ident(
+  ext_ref Resources.print
+)
+"ocaml_dependencies.ml" 57 1880 1905 "ocaml_dependencies.ml" 57 1880 1931
+call(
+  stack
+)
+type(
+  Format.formatter -> Resources.t SMap.t -> unit
+)
+"ocaml_dependencies.ml" 59 1933 1941 "ocaml_dependencies.ml" 59 1933 1951
+type(
+  ('d -> 'e -> 'f) -> 'd -> 'e Lazy.t -> 'f
+)
+ident(
+  def print_lazy "ocaml_dependencies.ml" 61 1971 1975 "ocaml_dependencies.ml" 86 2720 2725
+)
+"ocaml_dependencies.ml" 59 1933 1952 "ocaml_dependencies.ml" 59 1933 1954
+type(
+  'd -> 'e -> 'f
+)
+ident(
+  def pp "ocaml_dependencies.ml" 59 1933 1955 "ocaml_dependencies.ml" 59 1933 1969
+)
+"ocaml_dependencies.ml" 59 1933 1955 "ocaml_dependencies.ml" 59 1933 1956
+type(
+  'd
+)
+ident(
+  def f "ocaml_dependencies.ml" 59 1933 1957 "ocaml_dependencies.ml" 59 1933 1969
+)
+"ocaml_dependencies.ml" 59 1933 1957 "ocaml_dependencies.ml" 59 1933 1958
+type(
+  'e Lazy.t
+)
+ident(
+  def l "ocaml_dependencies.ml" 59 1933 1961 "ocaml_dependencies.ml" 59 1933 1969
+)
+"ocaml_dependencies.ml" 59 1933 1961 "ocaml_dependencies.ml" 59 1933 1963
+type(
+  'd -> 'e -> 'f
+)
+ident(
+  int_ref pp "ocaml_dependencies.ml" 59 1933 1952 "ocaml_dependencies.ml" 59 1933 1954
+)
+"ocaml_dependencies.ml" 59 1933 1964 "ocaml_dependencies.ml" 59 1933 1965
+type(
+  'd
+)
+ident(
+  int_ref f "ocaml_dependencies.ml" 59 1933 1955 "ocaml_dependencies.ml" 59 1933 1956
+)
+"ocaml_dependencies.ml" 59 1933 1966 "ocaml_dependencies.ml" 59 1933 1968
+type(
+  'e Lazy.t -> 'e
+)
+ident(
+  ext_ref My_std.( !* )
+)
+"ocaml_dependencies.ml" 59 1933 1968 "ocaml_dependencies.ml" 59 1933 1969
+type(
+  'e Lazy.t
+)
+ident(
+  int_ref l "ocaml_dependencies.ml" 59 1933 1957 "ocaml_dependencies.ml" 59 1933 1958
+)
+"ocaml_dependencies.ml" 59 1933 1966 "ocaml_dependencies.ml" 59 1933 1969
+call(
+  stack
+)
+type(
+  'e
+)
+"ocaml_dependencies.ml" 59 1933 1961 "ocaml_dependencies.ml" 59 1933 1969
+call(
+  tail
+)
+type(
+  'f
+)
+"ocaml_dependencies.ml" 61 1971 1979 "ocaml_dependencies.ml" 61 1971 1992
+type(
+  SMap.key -> 'g list SMap.t -> 'g list
+)
+ident(
+  def find_all_list "ocaml_dependencies.ml" 64 2049 2053 "ocaml_dependencies.ml" 86 2720 2725
+)
+"ocaml_dependencies.ml" 61 1971 1993 "ocaml_dependencies.ml" 61 1971 1994
+type(
+  SMap.key
+)
+ident(
+  def x "ocaml_dependencies.ml" 61 1971 1995 "ocaml_dependencies.ml" 62 2001 2047
+)
+"ocaml_dependencies.ml" 61 1971 1995 "ocaml_dependencies.ml" 61 1971 1998
+type(
+  'g list SMap.t
+)
+ident(
+  def acc "ocaml_dependencies.ml" 62 2001 2007 "ocaml_dependencies.ml" 62 2001 2047
+)
+"ocaml_dependencies.ml" 62 2001 2011 "ocaml_dependencies.ml" 62 2001 2020
+type(
+  SMap.key -> 'g list SMap.t -> 'g list
+)
+ident(
+  ext_ref SMap.find
+)
+"ocaml_dependencies.ml" 62 2001 2021 "ocaml_dependencies.ml" 62 2001 2022
+type(
+  SMap.key
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 61 1971 1993 "ocaml_dependencies.ml" 61 1971 1994
+)
+"ocaml_dependencies.ml" 62 2001 2023 "ocaml_dependencies.ml" 62 2001 2026
+type(
+  'g list SMap.t
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 61 1971 1995 "ocaml_dependencies.ml" 61 1971 1998
+)
+"ocaml_dependencies.ml" 62 2001 2011 "ocaml_dependencies.ml" 62 2001 2026
+call(
+  stack
+)
+type(
+  'g list
+)
+"ocaml_dependencies.ml" 62 2001 2032 "ocaml_dependencies.ml" 62 2001 2041
+type(
+  exn
+)
+"ocaml_dependencies.ml" 62 2001 2045 "ocaml_dependencies.ml" 62 2001 2047
+type(
+  'g list
+)
+"ocaml_dependencies.ml" 62 2001 2007 "ocaml_dependencies.ml" 62 2001 2047
+type(
+  'g list
+)
+"ocaml_dependencies.ml" 64 2049 2057 "ocaml_dependencies.ml" 64 2049 2069
+type(
+  Resources.elt list -> Resources.t SMap.t -> Resources.t
+)
+ident(
+  def find_all_rec "ocaml_dependencies.ml" 76 2444 2448 "ocaml_dependencies.ml" 86 2720 2725
+)
+"ocaml_dependencies.ml" 64 2049 2070 "ocaml_dependencies.ml" 64 2049 2072
+type(
+  Resources.elt list
+)
+ident(
+  def xs "ocaml_dependencies.ml" 64 2049 2073 "ocaml_dependencies.ml" 74 2394 2442
+)
+"ocaml_dependencies.ml" 64 2049 2073 "ocaml_dependencies.ml" 64 2049 2076
+type(
+  Resources.t SMap.t
+)
+ident(
+  def map "ocaml_dependencies.ml" 65 2079 2085 "ocaml_dependencies.ml" 74 2394 2442
+)
+"ocaml_dependencies.ml" 65 2079 2089 "ocaml_dependencies.ml" 65 2079 2096
+type(
+  (Resources.elt, unit) Hashtbl.t
+)
+ident(
+  def visited "ocaml_dependencies.ml" 66 2120 2126 "ocaml_dependencies.ml" 74 2394 2442
+)
+"ocaml_dependencies.ml" 65 2079 2099 "ocaml_dependencies.ml" 65 2079 2113
+type(
+  ?random:bool -> int -> (Resources.elt, unit) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"ocaml_dependencies.ml" 65 2079 2114 "ocaml_dependencies.ml" 65 2079 2116
+type(
+  int
+)
+"ocaml_dependencies.ml" 65 2079 2099 "ocaml_dependencies.ml" 65 2079 2116
+call(
+  stack
+)
+type(
+  (Resources.elt, unit) Hashtbl.t
+)
+"ocaml_dependencies.ml" 66 2120 2134 "ocaml_dependencies.ml" 66 2120 2138
+type(
+  Resources.elt -> Resources.t -> Resources.t
+)
+ident(
+  def self "ocaml_dependencies.ml" 66 2120 2126 "ocaml_dependencies.ml" 74 2394 2442
+)
+"ocaml_dependencies.ml" 66 2120 2139 "ocaml_dependencies.ml" 66 2120 2140
+type(
+  Resources.elt
+)
+ident(
+  def x "ocaml_dependencies.ml" 66 2120 2141 "ocaml_dependencies.ml" 73 2362 2393
+)
+"ocaml_dependencies.ml" 66 2120 2141 "ocaml_dependencies.ml" 66 2120 2144
+type(
+  Resources.t
+)
+ident(
+  def acc "ocaml_dependencies.ml" 67 2147 2155 "ocaml_dependencies.ml" 73 2362 2393
+)
+"ocaml_dependencies.ml" 68 2159 2169 "ocaml_dependencies.ml" 68 2159 2181
+type(
+  (Resources.elt, unit) Hashtbl.t -> Resources.elt -> unit
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"ocaml_dependencies.ml" 68 2159 2182 "ocaml_dependencies.ml" 68 2159 2189
+type(
+  (Resources.elt, unit) Hashtbl.t
+)
+ident(
+  int_ref visited "ocaml_dependencies.ml" 65 2079 2089 "ocaml_dependencies.ml" 65 2079 2096
+)
+"ocaml_dependencies.ml" 68 2159 2190 "ocaml_dependencies.ml" 68 2159 2191
+type(
+  Resources.elt
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 66 2120 2139 "ocaml_dependencies.ml" 66 2120 2140
+)
+"ocaml_dependencies.ml" 68 2159 2169 "ocaml_dependencies.ml" 68 2159 2191
+call(
+  stack
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 68 2159 2193 "ocaml_dependencies.ml" 68 2159 2196
+type(
+  Resources.t
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 66 2120 2141 "ocaml_dependencies.ml" 66 2120 2144
+)
+"ocaml_dependencies.ml" 68 2159 2169 "ocaml_dependencies.ml" 68 2159 2196
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 69 2197 2210 "ocaml_dependencies.ml" 69 2197 2219
+type(
+  exn
+)
+"ocaml_dependencies.ml" 70 2223 2233 "ocaml_dependencies.ml" 70 2223 2248
+type(
+  (Resources.elt, unit) Hashtbl.t -> Resources.elt -> unit -> unit
+)
+ident(
+  ext_ref Hashtbl.replace
+)
+"ocaml_dependencies.ml" 70 2223 2249 "ocaml_dependencies.ml" 70 2223 2256
+type(
+  (Resources.elt, unit) Hashtbl.t
+)
+ident(
+  int_ref visited "ocaml_dependencies.ml" 65 2079 2089 "ocaml_dependencies.ml" 65 2079 2096
+)
+"ocaml_dependencies.ml" 70 2223 2257 "ocaml_dependencies.ml" 70 2223 2258
+type(
+  Resources.elt
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 66 2120 2139 "ocaml_dependencies.ml" 66 2120 2140
+)
+"ocaml_dependencies.ml" 70 2223 2259 "ocaml_dependencies.ml" 70 2223 2261
+type(
+  unit
+)
+"ocaml_dependencies.ml" 70 2223 2233 "ocaml_dependencies.ml" 70 2223 2261
+call(
+  stack
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 71 2263 2277 "ocaml_dependencies.ml" 71 2263 2280
+type(
+  Resources.t
+)
+ident(
+  def acc "ocaml_dependencies.ml" 72 2306 2316 "ocaml_dependencies.ml" 73 2362 2393
+)
+"ocaml_dependencies.ml" 71 2263 2283 "ocaml_dependencies.ml" 71 2263 2296
+type(
+  Resources.elt -> Resources.t -> Resources.t
+)
+ident(
+  ext_ref Resources.add
+)
+"ocaml_dependencies.ml" 71 2263 2297 "ocaml_dependencies.ml" 71 2263 2298
+type(
+  Resources.elt
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 66 2120 2139 "ocaml_dependencies.ml" 66 2120 2140
+)
+"ocaml_dependencies.ml" 71 2263 2299 "ocaml_dependencies.ml" 71 2263 2302
+type(
+  Resources.t
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 66 2120 2141 "ocaml_dependencies.ml" 66 2120 2144
+)
+"ocaml_dependencies.ml" 71 2263 2283 "ocaml_dependencies.ml" 71 2263 2302
+call(
+  stack
+)
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 72 2306 2320 "ocaml_dependencies.ml" 72 2306 2334
+type(
+  (Resources.elt -> Resources.t -> Resources.t) ->
+  Resources.t -> Resources.t -> Resources.t
+)
+ident(
+  ext_ref Resources.fold
+)
+"ocaml_dependencies.ml" 72 2306 2335 "ocaml_dependencies.ml" 72 2306 2339
+type(
+  Resources.elt -> Resources.t -> Resources.t
+)
+ident(
+  int_ref self "ocaml_dependencies.ml" 66 2120 2134 "ocaml_dependencies.ml" 66 2120 2138
+)
+"ocaml_dependencies.ml" 72 2306 2341 "ocaml_dependencies.ml" 72 2306 2350
+type(
+  SMap.key -> Resources.t SMap.t -> Resources.t
+)
+ident(
+  ext_ref SMap.find
+)
+"ocaml_dependencies.ml" 72 2306 2351 "ocaml_dependencies.ml" 72 2306 2352
+type(
+  Resources.elt
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 66 2120 2139 "ocaml_dependencies.ml" 66 2120 2140
+)
+"ocaml_dependencies.ml" 72 2306 2353 "ocaml_dependencies.ml" 72 2306 2356
+type(
+  Resources.t SMap.t
+)
+ident(
+  int_ref map "ocaml_dependencies.ml" 64 2049 2073 "ocaml_dependencies.ml" 64 2049 2076
+)
+"ocaml_dependencies.ml" 72 2306 2340 "ocaml_dependencies.ml" 72 2306 2357
+call(
+  stack
+)
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 72 2306 2358 "ocaml_dependencies.ml" 72 2306 2361
+type(
+  Resources.t
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 71 2263 2277 "ocaml_dependencies.ml" 71 2263 2280
+)
+"ocaml_dependencies.ml" 72 2306 2320 "ocaml_dependencies.ml" 72 2306 2361
+call(
+  stack
+)
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 73 2362 2377 "ocaml_dependencies.ml" 73 2362 2386
+type(
+  exn
+)
+"ocaml_dependencies.ml" 73 2362 2390 "ocaml_dependencies.ml" 73 2362 2393
+type(
+  Resources.t
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 71 2263 2277 "ocaml_dependencies.ml" 71 2263 2280
+)
+"ocaml_dependencies.ml" 72 2306 2316 "ocaml_dependencies.ml" 73 2362 2393
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 71 2263 2273 "ocaml_dependencies.ml" 73 2362 2393
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 70 2223 2233 "ocaml_dependencies.ml" 73 2362 2393
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 67 2147 2155 "ocaml_dependencies.ml" 73 2362 2393
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 74 2394 2403 "ocaml_dependencies.ml" 74 2394 2418
+type(
+  (Resources.elt -> Resources.t -> Resources.t) ->
+  Resources.elt list -> Resources.t -> Resources.t
+)
+ident(
+  ext_ref My_std.List.fold_right
+)
+"ocaml_dependencies.ml" 74 2394 2419 "ocaml_dependencies.ml" 74 2394 2423
+type(
+  Resources.elt -> Resources.t -> Resources.t
+)
+ident(
+  int_ref self "ocaml_dependencies.ml" 66 2120 2134 "ocaml_dependencies.ml" 66 2120 2138
+)
+"ocaml_dependencies.ml" 74 2394 2424 "ocaml_dependencies.ml" 74 2394 2426
+type(
+  Resources.elt list
+)
+ident(
+  int_ref xs "ocaml_dependencies.ml" 64 2049 2070 "ocaml_dependencies.ml" 64 2049 2072
+)
+"ocaml_dependencies.ml" 74 2394 2427 "ocaml_dependencies.ml" 74 2394 2442
+type(
+  Resources.t
+)
+ident(
+  ext_ref Resources.empty
+)
+"ocaml_dependencies.ml" 74 2394 2403 "ocaml_dependencies.ml" 74 2394 2442
+call(
+  tail
+)
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 66 2120 2126 "ocaml_dependencies.ml" 74 2394 2442
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 65 2079 2085 "ocaml_dependencies.ml" 74 2394 2442
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 76 2444 2452 "ocaml_dependencies.ml" 76 2444 2459
+type(
+  (('h -> SMap.key list -> 'h list SMap.t -> 'h list SMap.t) ->
+   'i SMap.t -> 'j) ->
+  ('h -> bool) -> 'j
+)
+ident(
+  def mkindex "ocaml_dependencies.ml" 84 2703 2718 "ocaml_dependencies.ml" 86 2720 2725
+)
+"ocaml_dependencies.ml" 76 2444 2460 "ocaml_dependencies.ml" 76 2444 2464
+type(
+  ('h -> SMap.key list -> 'h list SMap.t -> 'h list SMap.t) ->
+  'i SMap.t -> 'j
+)
+ident(
+  def fold "ocaml_dependencies.ml" 76 2444 2465 "ocaml_dependencies.ml" 84 2703 2718
+)
+"ocaml_dependencies.ml" 76 2444 2465 "ocaml_dependencies.ml" 76 2444 2471
+type(
+  'h -> bool
+)
+ident(
+  def filter "ocaml_dependencies.ml" 77 2474 2480 "ocaml_dependencies.ml" 84 2703 2718
+)
+"ocaml_dependencies.ml" 77 2474 2480 "ocaml_dependencies.ml" 77 2474 2484
+type(
+  ('h -> SMap.key list -> 'h list SMap.t -> 'h list SMap.t) ->
+  'i SMap.t -> 'j
+)
+ident(
+  int_ref fold "ocaml_dependencies.ml" 76 2444 2460 "ocaml_dependencies.ml" 76 2444 2464
+)
+"ocaml_dependencies.ml" 77 2474 2495 "ocaml_dependencies.ml" 77 2474 2499
+type(
+  'h
+)
+ident(
+  def name "ocaml_dependencies.ml" 77 2474 2500 "ocaml_dependencies.ml" 83 2689 2702
+)
+"ocaml_dependencies.ml" 77 2474 2500 "ocaml_dependencies.ml" 77 2474 2508
+type(
+  SMap.key list
+)
+ident(
+  def contents "ocaml_dependencies.ml" 77 2474 2509 "ocaml_dependencies.ml" 83 2689 2702
+)
+"ocaml_dependencies.ml" 77 2474 2509 "ocaml_dependencies.ml" 77 2474 2512
+type(
+  'h list SMap.t
+)
+ident(
+  def acc "ocaml_dependencies.ml" 78 2516 2524 "ocaml_dependencies.ml" 83 2689 2702
+)
+"ocaml_dependencies.ml" 78 2516 2527 "ocaml_dependencies.ml" 78 2516 2533
+type(
+  'h -> bool
+)
+ident(
+  int_ref filter "ocaml_dependencies.ml" 76 2444 2465 "ocaml_dependencies.ml" 76 2444 2471
+)
+"ocaml_dependencies.ml" 78 2516 2534 "ocaml_dependencies.ml" 78 2516 2538
+type(
+  'h
+)
+ident(
+  int_ref name "ocaml_dependencies.ml" 77 2474 2495 "ocaml_dependencies.ml" 77 2474 2499
+)
+"ocaml_dependencies.ml" 78 2516 2527 "ocaml_dependencies.ml" 78 2516 2538
+call(
+  stack
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 79 2544 2554 "ocaml_dependencies.ml" 79 2544 2569
+type(
+  (SMap.key -> 'h list SMap.t -> 'h list SMap.t) ->
+  SMap.key list -> 'h list SMap.t -> 'h list SMap.t
+)
+ident(
+  ext_ref My_std.List.fold_right
+)
+"ocaml_dependencies.ml" 79 2544 2580 "ocaml_dependencies.ml" 79 2544 2583
+type(
+  SMap.key
+)
+ident(
+  def elt "ocaml_dependencies.ml" 79 2544 2584 "ocaml_dependencies.ml" 80 2591 2648
+)
+"ocaml_dependencies.ml" 79 2544 2584 "ocaml_dependencies.ml" 79 2544 2587
+type(
+  'h list SMap.t
+)
+ident(
+  def acc "ocaml_dependencies.ml" 80 2591 2603 "ocaml_dependencies.ml" 80 2591 2648
+)
+"ocaml_dependencies.ml" 80 2591 2603 "ocaml_dependencies.ml" 80 2591 2606
+type(
+  SMap.key -> 'h list -> 'h list SMap.t -> 'h list SMap.t
+)
+ident(
+  int_ref add "ocaml_dependencies.ml" 38 1381 1389 "ocaml_dependencies.ml" 38 1381 1392
+)
+"ocaml_dependencies.ml" 80 2591 2607 "ocaml_dependencies.ml" 80 2591 2610
+type(
+  SMap.key
+)
+ident(
+  int_ref elt "ocaml_dependencies.ml" 79 2544 2580 "ocaml_dependencies.ml" 79 2544 2583
+)
+"ocaml_dependencies.ml" 80 2591 2612 "ocaml_dependencies.ml" 80 2591 2616
+type(
+  'h
+)
+ident(
+  int_ref name "ocaml_dependencies.ml" 77 2474 2495 "ocaml_dependencies.ml" 77 2474 2499
+)
+"ocaml_dependencies.ml" 80 2591 2621 "ocaml_dependencies.ml" 80 2591 2634
+type(
+  SMap.key -> 'h list SMap.t -> 'h list
+)
+ident(
+  int_ref find_all_list "ocaml_dependencies.ml" 61 1971 1979 "ocaml_dependencies.ml" 61 1971 1992
+)
+"ocaml_dependencies.ml" 80 2591 2635 "ocaml_dependencies.ml" 80 2591 2638
+type(
+  SMap.key
+)
+ident(
+  int_ref elt "ocaml_dependencies.ml" 79 2544 2580 "ocaml_dependencies.ml" 79 2544 2583
+)
+"ocaml_dependencies.ml" 80 2591 2639 "ocaml_dependencies.ml" 80 2591 2642
+type(
+  'h list SMap.t
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 79 2544 2584 "ocaml_dependencies.ml" 79 2544 2587
+)
+"ocaml_dependencies.ml" 80 2591 2620 "ocaml_dependencies.ml" 80 2591 2643
+call(
+  stack
+)
+type(
+  'h list
+)
+"ocaml_dependencies.ml" 80 2591 2611 "ocaml_dependencies.ml" 80 2591 2644
+type(
+  'h list
+)
+"ocaml_dependencies.ml" 80 2591 2645 "ocaml_dependencies.ml" 80 2591 2648
+type(
+  'h list SMap.t
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 79 2544 2584 "ocaml_dependencies.ml" 79 2544 2587
+)
+"ocaml_dependencies.ml" 80 2591 2603 "ocaml_dependencies.ml" 80 2591 2648
+call(
+  tail
+)
+type(
+  'h list SMap.t
+)
+"ocaml_dependencies.ml" 79 2544 2570 "ocaml_dependencies.ml" 81 2649 2662
+type(
+  SMap.key -> 'h list SMap.t -> 'h list SMap.t
+)
+"ocaml_dependencies.ml" 81 2649 2663 "ocaml_dependencies.ml" 81 2649 2671
+type(
+  SMap.key list
+)
+ident(
+  int_ref contents "ocaml_dependencies.ml" 77 2474 2500 "ocaml_dependencies.ml" 77 2474 2508
+)
+"ocaml_dependencies.ml" 81 2649 2672 "ocaml_dependencies.ml" 81 2649 2675
+type(
+  'h list SMap.t
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 77 2474 2509 "ocaml_dependencies.ml" 77 2474 2512
+)
+"ocaml_dependencies.ml" 79 2544 2554 "ocaml_dependencies.ml" 81 2649 2675
+call(
+  tail
+)
+type(
+  'h list SMap.t
+)
+"ocaml_dependencies.ml" 83 2689 2699 "ocaml_dependencies.ml" 83 2689 2702
+type(
+  'h list SMap.t
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 77 2474 2509 "ocaml_dependencies.ml" 77 2474 2512
+)
+"ocaml_dependencies.ml" 78 2516 2524 "ocaml_dependencies.ml" 83 2689 2702
+type(
+  'h list SMap.t
+)
+"ocaml_dependencies.ml" 77 2474 2485 "ocaml_dependencies.ml" 84 2703 2712
+type(
+  'h -> SMap.key list -> 'h list SMap.t -> 'h list SMap.t
+)
+"ocaml_dependencies.ml" 84 2703 2713 "ocaml_dependencies.ml" 84 2703 2718
+type(
+  'i SMap.t
+)
+ident(
+  int_ref empty "ocaml_dependencies.ml" 40 1405 1413 "ocaml_dependencies.ml" 40 1405 1418
+)
+"ocaml_dependencies.ml" 77 2474 2480 "ocaml_dependencies.ml" 84 2703 2718
+call(
+  tail
+)
+type(
+  'j
+)
+"ocaml_dependencies.ml" 89 2740 2746 "ocaml_dependencies.ml" 89 2740 2769
+type(
+  ?caml_obj_ext:string ->
+  ?caml_lib_ext:string ->
+  ?pack_mode:bool ->
+  ?used_libraries:Pathname.t list ->
+  ?hidden_packages:Resources.elt list -> Pathname.t list -> Pathname.t list
+)
+ident(
+  def caml_transitive_closure "ocaml_dependencies.ml" 218 7259 7279 "ocaml_dependencies.ml" 220 7281 7284
+)
+"ocaml_dependencies.ml" 90 2770 2780 "ocaml_dependencies.ml" 90 2770 2792
+type(
+  string
+)
+"ocaml_dependencies.ml" 90 2770 2793 "ocaml_dependencies.ml" 90 2770 2798
+type(
+  string
+)
+type(
+  string
+)
+ident(
+  int_ref *sth* "ocaml_dependencies.ml" 90 2770 2793 "ocaml_dependencies.ml" 90 2770 2798
+)
+type(
+  string option
+)
+type(
+  string option
+)
+type(
+  string
+)
+"ocaml_dependencies.ml" 91 2800 2810 "ocaml_dependencies.ml" 91 2800 2822
+type(
+  string
+)
+"ocaml_dependencies.ml" 91 2800 2823 "ocaml_dependencies.ml" 91 2800 2828
+type(
+  string
+)
+type(
+  string
+)
+ident(
+  int_ref *sth* "ocaml_dependencies.ml" 91 2800 2823 "ocaml_dependencies.ml" 91 2800 2828
+)
+type(
+  string option
+)
+type(
+  string option
+)
+type(
+  string
+)
+"ocaml_dependencies.ml" 92 2830 2840 "ocaml_dependencies.ml" 92 2830 2849
+type(
+  bool
+)
+"ocaml_dependencies.ml" 92 2830 2850 "ocaml_dependencies.ml" 92 2830 2855
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "ocaml_dependencies.ml" 92 2830 2850 "ocaml_dependencies.ml" 92 2830 2855
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 93 2857 2867 "ocaml_dependencies.ml" 93 2857 2881
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 93 2857 2882 "ocaml_dependencies.ml" 93 2857 2884
+type(
+  Pathname.t list
+)
+type(
+  Pathname.t list
+)
+ident(
+  int_ref *sth* "ocaml_dependencies.ml" 93 2857 2882 "ocaml_dependencies.ml" 93 2857 2884
+)
+type(
+  Pathname.t list option
+)
+type(
+  Pathname.t list option
+)
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 94 2886 2896 "ocaml_dependencies.ml" 94 2886 2911
+type(
+  Resources.elt list
+)
+"ocaml_dependencies.ml" 94 2886 2912 "ocaml_dependencies.ml" 94 2886 2914
+type(
+  Resources.elt list
+)
+type(
+  Resources.elt list
+)
+ident(
+  int_ref *sth* "ocaml_dependencies.ml" 94 2886 2912 "ocaml_dependencies.ml" 94 2886 2914
+)
+type(
+  Resources.elt list option
+)
+type(
+  Resources.elt list option
+)
+type(
+  Resources.elt list
+)
+"ocaml_dependencies.ml" 94 2886 2916 "ocaml_dependencies.ml" 94 2886 2919
+type(
+  Pathname.t list
+)
+ident(
+  def fns "ocaml_dependencies.ml" 96 2923 2927 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 96 2923 2931 "ocaml_dependencies.ml" 96 2923 2946
+type(
+  string list
+)
+ident(
+  def valid_link_exts "ocaml_dependencies.ml" 100 3039 3043 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 97 2949 2958 "ocaml_dependencies.ml" 97 2949 2967
+type(
+  bool
+)
+ident(
+  int_ref pack_mode "ocaml_dependencies.ml" 92 2830 2840 "ocaml_dependencies.ml" 92 2830 2849
+)
+"ocaml_dependencies.ml" 97 2949 2974 "ocaml_dependencies.ml" 97 2949 2986
+type(
+  string
+)
+ident(
+  int_ref caml_obj_ext "ocaml_dependencies.ml" 90 2770 2780 "ocaml_dependencies.ml" 90 2770 2792
+)
+"ocaml_dependencies.ml" 97 2949 2988 "ocaml_dependencies.ml" 97 2949 2993
+type(
+  string
+)
+"ocaml_dependencies.ml" 97 2949 2973 "ocaml_dependencies.ml" 97 2949 2994
+type(
+  string list
+)
+"ocaml_dependencies.ml" 98 2995 3007 "ocaml_dependencies.ml" 98 2995 3019
+type(
+  string
+)
+ident(
+  int_ref caml_obj_ext "ocaml_dependencies.ml" 90 2770 2780 "ocaml_dependencies.ml" 90 2770 2792
+)
+"ocaml_dependencies.ml" 98 2995 3021 "ocaml_dependencies.ml" 98 2995 3033
+type(
+  string
+)
+ident(
+  int_ref caml_lib_ext "ocaml_dependencies.ml" 91 2800 2810 "ocaml_dependencies.ml" 91 2800 2822
+)
+"ocaml_dependencies.ml" 98 2995 3006 "ocaml_dependencies.ml" 98 2995 3034
+type(
+  string list
+)
+"ocaml_dependencies.ml" 97 2949 2955 "ocaml_dependencies.ml" 98 2995 3034
+type(
+  string list
+)
+"ocaml_dependencies.ml" 100 3039 3043 "ocaml_dependencies.ml" 100 3039 3052
+type(
+  (string ->
+   bool ->
+   (Format.formatter -> Pathname.t list -> unit) ->
+   Pathname.t list ->
+   (Format.formatter -> Pathname.t list -> unit) -> Pathname.t list -> unit,
+   Format.formatter, unit)
+  format ->
+  string ->
+  bool ->
+  (Format.formatter -> Pathname.t list -> unit) ->
+  Pathname.t list ->
+  (Format.formatter -> Pathname.t list -> unit) -> Pathname.t list -> unit
+)
+ident(
+  int_ref mydprintf "ocaml_dependencies.ml" 20 907 911 "ocaml_dependencies.ml" 20 907 920
+)
+"ocaml_dependencies.ml" 100 3039 3053 "ocaml_dependencies.ml" 100 3039 3135
+type(
+  (string ->
+   bool ->
+   (Format.formatter -> Pathname.t list -> unit) ->
+   Pathname.t list ->
+   (Format.formatter -> Pathname.t list -> unit) -> Pathname.t list -> unit,
+   Format.formatter, unit)
+  format
+)
+"ocaml_dependencies.ml" 101 3136 3142 "ocaml_dependencies.ml" 101 3136 3154
+type(
+  string
+)
+ident(
+  int_ref caml_obj_ext "ocaml_dependencies.ml" 90 2770 2780 "ocaml_dependencies.ml" 90 2770 2792
+)
+"ocaml_dependencies.ml" 101 3136 3155 "ocaml_dependencies.ml" 101 3136 3164
+type(
+  bool
+)
+ident(
+  int_ref pack_mode "ocaml_dependencies.ml" 92 2830 2840 "ocaml_dependencies.ml" 92 2830 2849
+)
+"ocaml_dependencies.ml" 101 3136 3165 "ocaml_dependencies.ml" 101 3136 3169
+type(
+  Format.formatter -> Pathname.t list -> unit
+)
+ident(
+  ext_ref Tools.pp_l
+)
+"ocaml_dependencies.ml" 101 3136 3170 "ocaml_dependencies.ml" 101 3136 3184
+type(
+  Pathname.t list
+)
+ident(
+  int_ref used_libraries "ocaml_dependencies.ml" 93 2857 2867 "ocaml_dependencies.ml" 93 2857 2881
+)
+"ocaml_dependencies.ml" 101 3136 3185 "ocaml_dependencies.ml" 101 3136 3189
+type(
+  Format.formatter -> Pathname.t list -> unit
+)
+ident(
+  ext_ref Tools.pp_l
+)
+"ocaml_dependencies.ml" 101 3136 3190 "ocaml_dependencies.ml" 101 3136 3193
+type(
+  Pathname.t list
+)
+ident(
+  int_ref fns "ocaml_dependencies.ml" 94 2886 2916 "ocaml_dependencies.ml" 94 2886 2919
+)
+"ocaml_dependencies.ml" 100 3039 3043 "ocaml_dependencies.ml" 101 3136 3193
+call(
+  stack
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 103 3196 3204 "ocaml_dependencies.ml" 103 3196 3212
+type(
+  Resources.t
+)
+ident(
+  def packages "ocaml_dependencies.ml" 104 3283 3287 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 103 3196 3215 "ocaml_dependencies.ml" 103 3196 3228
+type(
+  (Resources.elt -> string list -> Resources.t -> Resources.t) ->
+  Resources.t -> Resources.t
+)
+ident(
+  int_ref I.fold_packages "ocaml_dependencies.ml" 27 1164 1166 "ocaml_dependencies.ml" 27 1164 1233
+)
+"ocaml_dependencies.ml" 103 3196 3234 "ocaml_dependencies.ml" 103 3196 3238
+type(
+  Resources.elt
+)
+ident(
+  def name "ocaml_dependencies.ml" 103 3196 3239 "ocaml_dependencies.ml" 103 3196 3262
+)
+"ocaml_dependencies.ml" 103 3196 3239 "ocaml_dependencies.ml" 103 3196 3240
+type(
+  string list
+)
+"ocaml_dependencies.ml" 103 3196 3244 "ocaml_dependencies.ml" 103 3196 3257
+type(
+  Resources.elt -> Resources.t -> Resources.t
+)
+ident(
+  ext_ref Resources.add
+)
+"ocaml_dependencies.ml" 103 3196 3258 "ocaml_dependencies.ml" 103 3196 3262
+type(
+  Resources.elt
+)
+ident(
+  int_ref name "ocaml_dependencies.ml" 103 3196 3234 "ocaml_dependencies.ml" 103 3196 3238
+)
+"ocaml_dependencies.ml" 103 3196 3244 "ocaml_dependencies.ml" 103 3196 3262
+call(
+  tail
+)
+type(
+  Resources.t -> Resources.t
+)
+"ocaml_dependencies.ml" 103 3196 3229 "ocaml_dependencies.ml" 103 3196 3263
+type(
+  Resources.elt -> string list -> Resources.t -> Resources.t
+)
+"ocaml_dependencies.ml" 103 3196 3264 "ocaml_dependencies.ml" 103 3196 3279
+type(
+  Resources.t
+)
+ident(
+  ext_ref Resources.empty
+)
+"ocaml_dependencies.ml" 103 3196 3215 "ocaml_dependencies.ml" 103 3196 3279
+call(
+  stack
+)
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 104 3283 3287 "ocaml_dependencies.ml" 104 3283 3296
+type(
+  ((Format.formatter -> Resources.t -> unit) -> Resources.t -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> Resources.t -> unit) -> Resources.t -> unit
+)
+ident(
+  int_ref mydprintf "ocaml_dependencies.ml" 20 907 911 "ocaml_dependencies.ml" 20 907 920
+)
+"ocaml_dependencies.ml" 104 3283 3297 "ocaml_dependencies.ml" 104 3283 3312
+type(
+  ((Format.formatter -> Resources.t -> unit) -> Resources.t -> unit,
+   Format.formatter, unit)
+  format
+)
+"ocaml_dependencies.ml" 104 3283 3313 "ocaml_dependencies.ml" 104 3283 3328
+type(
+  Format.formatter -> Resources.t -> unit
+)
+ident(
+  ext_ref Resources.print
+)
+"ocaml_dependencies.ml" 104 3283 3329 "ocaml_dependencies.ml" 104 3283 3337
+type(
+  Resources.t
+)
+ident(
+  int_ref packages "ocaml_dependencies.ml" 103 3196 3204 "ocaml_dependencies.ml" 103 3196 3212
+)
+"ocaml_dependencies.ml" 104 3283 3287 "ocaml_dependencies.ml" 104 3283 3337
+call(
+  stack
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 106 3340 3348 "ocaml_dependencies.ml" 106 3340 3367
+type(
+  Pathname.t -> Pathname.t
+)
+ident(
+  def caml_obj_ext_of_cmi "ocaml_dependencies.ml" 111 3484 3488 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 106 3340 3368 "ocaml_dependencies.ml" 106 3340 3369
+type(
+  Pathname.t
+)
+ident(
+  def x "ocaml_dependencies.ml" 107 3372 3378 "ocaml_dependencies.ml" 109 3467 3479
+)
+"ocaml_dependencies.ml" 107 3372 3381 "ocaml_dependencies.ml" 107 3372 3402
+type(
+  Pathname.t -> string -> bool
+)
+ident(
+  ext_ref Filename.check_suffix
+)
+"ocaml_dependencies.ml" 107 3372 3403 "ocaml_dependencies.ml" 107 3372 3404
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 106 3340 3368 "ocaml_dependencies.ml" 106 3340 3369
+)
+"ocaml_dependencies.ml" 107 3372 3405 "ocaml_dependencies.ml" 107 3372 3411
+type(
+  string
+)
+"ocaml_dependencies.ml" 107 3372 3381 "ocaml_dependencies.ml" 107 3372 3411
+call(
+  stack
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 108 3417 3425 "ocaml_dependencies.ml" 108 3417 3451
+type(
+  string -> Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Pathname.update_extensions
+)
+"ocaml_dependencies.ml" 108 3417 3452 "ocaml_dependencies.ml" 108 3417 3464
+type(
+  string
+)
+ident(
+  int_ref caml_obj_ext "ocaml_dependencies.ml" 90 2770 2780 "ocaml_dependencies.ml" 90 2770 2792
+)
+"ocaml_dependencies.ml" 108 3417 3465 "ocaml_dependencies.ml" 108 3417 3466
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 106 3340 3368 "ocaml_dependencies.ml" 106 3340 3369
+)
+"ocaml_dependencies.ml" 108 3417 3425 "ocaml_dependencies.ml" 108 3417 3466
+call(
+  tail
+)
+type(
+  Pathname.t
+)
+"ocaml_dependencies.ml" 109 3467 3478 "ocaml_dependencies.ml" 109 3467 3479
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 106 3340 3368 "ocaml_dependencies.ml" 106 3340 3369
+)
+"ocaml_dependencies.ml" 107 3372 3378 "ocaml_dependencies.ml" 109 3467 3479
+type(
+  Pathname.t
+)
+"ocaml_dependencies.ml" 111 3484 3492 "ocaml_dependencies.ml" 111 3484 3517
+type(
+  Pathname.t -> Pathname.t
+)
+ident(
+  def maybe_caml_obj_ext_of_cmi "ocaml_dependencies.ml" 126 3923 3927 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 111 3484 3518 "ocaml_dependencies.ml" 111 3484 3519
+type(
+  Pathname.t
+)
+ident(
+  def x "ocaml_dependencies.ml" 112 3522 3528 "ocaml_dependencies.ml" 124 3904 3918
+)
+"ocaml_dependencies.ml" 112 3522 3531 "ocaml_dependencies.ml" 112 3522 3540
+type(
+  bool
+)
+ident(
+  int_ref pack_mode "ocaml_dependencies.ml" 92 2830 2840 "ocaml_dependencies.ml" 92 2830 2849
+)
+"ocaml_dependencies.ml" 113 3546 3557 "ocaml_dependencies.ml" 113 3546 3578
+type(
+  Pathname.t -> string -> bool
+)
+ident(
+  ext_ref Filename.check_suffix
+)
+"ocaml_dependencies.ml" 113 3546 3579 "ocaml_dependencies.ml" 113 3546 3580
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 111 3484 3518 "ocaml_dependencies.ml" 111 3484 3519
+)
+"ocaml_dependencies.ml" 113 3546 3581 "ocaml_dependencies.ml" 113 3546 3587
+type(
+  string
+)
+"ocaml_dependencies.ml" 113 3546 3557 "ocaml_dependencies.ml" 113 3546 3587
+call(
+  stack
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 114 3593 3607 "ocaml_dependencies.ml" 114 3593 3615
+type(
+  Pathname.t
+)
+ident(
+  def caml_obj "ocaml_dependencies.ml" 115 3663 3673 "ocaml_dependencies.ml" 118 3755 3768
+)
+"ocaml_dependencies.ml" 114 3593 3618 "ocaml_dependencies.ml" 114 3593 3644
+type(
+  string -> Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Pathname.update_extensions
+)
+"ocaml_dependencies.ml" 114 3593 3645 "ocaml_dependencies.ml" 114 3593 3657
+type(
+  string
+)
+ident(
+  int_ref caml_obj_ext "ocaml_dependencies.ml" 90 2770 2780 "ocaml_dependencies.ml" 90 2770 2792
+)
+"ocaml_dependencies.ml" 114 3593 3658 "ocaml_dependencies.ml" 114 3593 3659
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 111 3484 3518 "ocaml_dependencies.ml" 111 3484 3519
+)
+"ocaml_dependencies.ml" 114 3593 3618 "ocaml_dependencies.ml" 114 3593 3659
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"ocaml_dependencies.ml" 115 3663 3676 "ocaml_dependencies.ml" 115 3663 3704
+type(
+  Pathname.t -> bool
+)
+ident(
+  ext_ref Resource.exists_in_build_dir
+)
+"ocaml_dependencies.ml" 115 3663 3705 "ocaml_dependencies.ml" 115 3663 3713
+type(
+  Pathname.t
+)
+ident(
+  int_ref caml_obj "ocaml_dependencies.ml" 114 3593 3607 "ocaml_dependencies.ml" 114 3593 3615
+)
+"ocaml_dependencies.ml" 115 3663 3676 "ocaml_dependencies.ml" 115 3663 3713
+call(
+  stack
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 116 3719 3731 "ocaml_dependencies.ml" 116 3719 3739
+type(
+  Pathname.t
+)
+ident(
+  int_ref caml_obj "ocaml_dependencies.ml" 114 3593 3607 "ocaml_dependencies.ml" 114 3593 3615
+)
+"ocaml_dependencies.ml" 118 3755 3767 "ocaml_dependencies.ml" 118 3755 3768
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 111 3484 3518 "ocaml_dependencies.ml" 111 3484 3519
+)
+"ocaml_dependencies.ml" 115 3663 3673 "ocaml_dependencies.ml" 118 3755 3768
+type(
+  Pathname.t
+)
+"ocaml_dependencies.ml" 114 3593 3603 "ocaml_dependencies.ml" 118 3755 3768
+type(
+  Pathname.t
+)
+"ocaml_dependencies.ml" 120 3782 3792 "ocaml_dependencies.ml" 120 3782 3793
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 111 3484 3518 "ocaml_dependencies.ml" 111 3484 3519
+)
+"ocaml_dependencies.ml" 113 3546 3554 "ocaml_dependencies.ml" 120 3782 3793
+type(
+  Pathname.t
+)
+"ocaml_dependencies.ml" 122 3805 3816 "ocaml_dependencies.ml" 122 3805 3837
+type(
+  Pathname.t -> string -> bool
+)
+ident(
+  ext_ref Filename.check_suffix
+)
+"ocaml_dependencies.ml" 122 3805 3838 "ocaml_dependencies.ml" 122 3805 3839
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 111 3484 3518 "ocaml_dependencies.ml" 111 3484 3519
+)
+"ocaml_dependencies.ml" 122 3805 3840 "ocaml_dependencies.ml" 122 3805 3846
+type(
+  string
+)
+"ocaml_dependencies.ml" 122 3805 3816 "ocaml_dependencies.ml" 122 3805 3846
+call(
+  stack
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 123 3852 3862 "ocaml_dependencies.ml" 123 3852 3888
+type(
+  string -> Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Pathname.update_extensions
+)
+"ocaml_dependencies.ml" 123 3852 3889 "ocaml_dependencies.ml" 123 3852 3901
+type(
+  string
+)
+ident(
+  int_ref caml_obj_ext "ocaml_dependencies.ml" 90 2770 2780 "ocaml_dependencies.ml" 90 2770 2792
+)
+"ocaml_dependencies.ml" 123 3852 3902 "ocaml_dependencies.ml" 123 3852 3903
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 111 3484 3518 "ocaml_dependencies.ml" 111 3484 3519
+)
+"ocaml_dependencies.ml" 123 3852 3862 "ocaml_dependencies.ml" 123 3852 3903
+call(
+  tail
+)
+type(
+  Pathname.t
+)
+"ocaml_dependencies.ml" 124 3904 3917 "ocaml_dependencies.ml" 124 3904 3918
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 111 3484 3518 "ocaml_dependencies.ml" 111 3484 3519
+)
+"ocaml_dependencies.ml" 122 3805 3813 "ocaml_dependencies.ml" 124 3904 3918
+type(
+  Pathname.t
+)
+"ocaml_dependencies.ml" 112 3522 3528 "ocaml_dependencies.ml" 124 3904 3918
+type(
+  Pathname.t
+)
+"ocaml_dependencies.ml" 126 3923 3931 "ocaml_dependencies.ml" 126 3923 3943
+type(
+  Pathname.t -> bool
+)
+ident(
+  def not_linkable "ocaml_dependencies.ml" 129 4021 4025 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 126 3923 3944 "ocaml_dependencies.ml" 126 3923 3945
+type(
+  Pathname.t
+)
+ident(
+  def x "ocaml_dependencies.ml" 127 3948 3954 "ocaml_dependencies.ml" 127 3948 4016
+)
+"ocaml_dependencies.ml" 127 3948 3954 "ocaml_dependencies.ml" 127 3948 3957
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"ocaml_dependencies.ml" 127 3948 3959 "ocaml_dependencies.ml" 127 3948 3970
+type(
+  (string -> bool) -> string list -> bool
+)
+ident(
+  ext_ref My_std.List.exists
+)
+"ocaml_dependencies.ml" 127 3948 3972 "ocaml_dependencies.ml" 127 3948 3996
+type(
+  Pathname.t -> string -> bool
+)
+ident(
+  ext_ref Pathname.check_extension
+)
+"ocaml_dependencies.ml" 127 3948 3997 "ocaml_dependencies.ml" 127 3948 3998
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 126 3923 3944 "ocaml_dependencies.ml" 126 3923 3945
+)
+"ocaml_dependencies.ml" 127 3948 3971 "ocaml_dependencies.ml" 127 3948 3999
+call(
+  stack
+)
+type(
+  string -> bool
+)
+"ocaml_dependencies.ml" 127 3948 4000 "ocaml_dependencies.ml" 127 3948 4015
+type(
+  string list
+)
+ident(
+  int_ref valid_link_exts "ocaml_dependencies.ml" 96 2923 2931 "ocaml_dependencies.ml" 96 2923 2946
+)
+"ocaml_dependencies.ml" 127 3948 3958 "ocaml_dependencies.ml" 127 3948 4016
+call(
+  stack
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 127 3948 3954 "ocaml_dependencies.ml" 127 3948 4016
+type(
+  bool
+)
+"ocaml_dependencies.ml" 129 4021 4029 "ocaml_dependencies.ml" 129 4021 4043
+type(
+  Resources.t SMap.t
+)
+ident(
+  def dependency_map "ocaml_dependencies.ml" 136 4302 4306 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 130 4046 4052 "ocaml_dependencies.ml" 130 4046 4069
+type(
+  (Pathname.t -> Pathname.t -> Resources.t SMap.t -> Resources.t SMap.t) ->
+  Resources.t SMap.t -> Resources.t SMap.t
+)
+ident(
+  int_ref I.fold_dependencies "ocaml_dependencies.ml" 25 1024 1026 "ocaml_dependencies.ml" 25 1024 1092
+)
+"ocaml_dependencies.ml" 130 4046 4080 "ocaml_dependencies.ml" 130 4046 4081
+type(
+  Pathname.t
+)
+ident(
+  def x "ocaml_dependencies.ml" 130 4046 4082 "ocaml_dependencies.ml" 134 4244 4277
+)
+"ocaml_dependencies.ml" 130 4046 4082 "ocaml_dependencies.ml" 130 4046 4083
+type(
+  Pathname.t
+)
+ident(
+  def y "ocaml_dependencies.ml" 130 4046 4084 "ocaml_dependencies.ml" 134 4244 4277
+)
+"ocaml_dependencies.ml" 130 4046 4084 "ocaml_dependencies.ml" 130 4046 4087
+type(
+  Resources.t SMap.t
+)
+ident(
+  def acc "ocaml_dependencies.ml" 131 4091 4099 "ocaml_dependencies.ml" 134 4244 4277
+)
+"ocaml_dependencies.ml" 131 4091 4103 "ocaml_dependencies.ml" 131 4091 4104
+type(
+  Pathname.t
+)
+ident(
+  def x "ocaml_dependencies.ml" 133 4182 4190 "ocaml_dependencies.ml" 134 4244 4277
+)
+"ocaml_dependencies.ml" 131 4091 4107 "ocaml_dependencies.ml" 131 4091 4132
+type(
+  Pathname.t -> Pathname.t
+)
+ident(
+  int_ref maybe_caml_obj_ext_of_cmi "ocaml_dependencies.ml" 111 3484 3492 "ocaml_dependencies.ml" 111 3484 3517
+)
+"ocaml_dependencies.ml" 131 4091 4133 "ocaml_dependencies.ml" 131 4091 4134
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 130 4046 4080 "ocaml_dependencies.ml" 130 4046 4081
+)
+"ocaml_dependencies.ml" 131 4091 4107 "ocaml_dependencies.ml" 131 4091 4134
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"ocaml_dependencies.ml" 132 4135 4147 "ocaml_dependencies.ml" 132 4135 4148
+type(
+  Pathname.t
+)
+ident(
+  def y "ocaml_dependencies.ml" 133 4182 4190 "ocaml_dependencies.ml" 134 4244 4277
+)
+"ocaml_dependencies.ml" 132 4135 4151 "ocaml_dependencies.ml" 132 4135 4176
+type(
+  Pathname.t -> Pathname.t
+)
+ident(
+  int_ref maybe_caml_obj_ext_of_cmi "ocaml_dependencies.ml" 111 3484 3492 "ocaml_dependencies.ml" 111 3484 3517
+)
+"ocaml_dependencies.ml" 132 4135 4177 "ocaml_dependencies.ml" 132 4135 4178
+type(
+  Pathname.t
+)
+ident(
+  int_ref y "ocaml_dependencies.ml" 130 4046 4082 "ocaml_dependencies.ml" 130 4046 4083
+)
+"ocaml_dependencies.ml" 132 4135 4151 "ocaml_dependencies.ml" 132 4135 4178
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"ocaml_dependencies.ml" 133 4182 4193 "ocaml_dependencies.ml" 133 4182 4194
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 131 4091 4103 "ocaml_dependencies.ml" 131 4091 4104
+)
+"ocaml_dependencies.ml" 133 4182 4195 "ocaml_dependencies.ml" 133 4182 4196
+type(
+  Pathname.t -> Pathname.t -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"ocaml_dependencies.ml" 133 4182 4197 "ocaml_dependencies.ml" 133 4182 4198
+type(
+  Pathname.t
+)
+ident(
+  int_ref y "ocaml_dependencies.ml" 132 4135 4147 "ocaml_dependencies.ml" 132 4135 4148
+)
+"ocaml_dependencies.ml" 133 4182 4193 "ocaml_dependencies.ml" 133 4182 4198
+type(
+  bool
+)
+"ocaml_dependencies.ml" 133 4182 4199 "ocaml_dependencies.ml" 133 4182 4201
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"ocaml_dependencies.ml" 133 4182 4202 "ocaml_dependencies.ml" 133 4182 4214
+type(
+  Pathname.t -> bool
+)
+ident(
+  int_ref not_linkable "ocaml_dependencies.ml" 126 3923 3931 "ocaml_dependencies.ml" 126 3923 3943
+)
+"ocaml_dependencies.ml" 133 4182 4215 "ocaml_dependencies.ml" 133 4182 4216
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 131 4091 4103 "ocaml_dependencies.ml" 131 4091 4104
+)
+"ocaml_dependencies.ml" 133 4182 4202 "ocaml_dependencies.ml" 133 4182 4216
+call(
+  stack
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 133 4182 4217 "ocaml_dependencies.ml" 133 4182 4219
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"ocaml_dependencies.ml" 133 4182 4220 "ocaml_dependencies.ml" 133 4182 4232
+type(
+  Pathname.t -> bool
+)
+ident(
+  int_ref not_linkable "ocaml_dependencies.ml" 126 3923 3931 "ocaml_dependencies.ml" 126 3923 3943
+)
+"ocaml_dependencies.ml" 133 4182 4233 "ocaml_dependencies.ml" 133 4182 4234
+type(
+  Pathname.t
+)
+ident(
+  int_ref y "ocaml_dependencies.ml" 132 4135 4147 "ocaml_dependencies.ml" 132 4135 4148
+)
+"ocaml_dependencies.ml" 133 4182 4220 "ocaml_dependencies.ml" 133 4182 4234
+call(
+  stack
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 133 4182 4202 "ocaml_dependencies.ml" 133 4182 4234
+type(
+  bool
+)
+"ocaml_dependencies.ml" 133 4182 4193 "ocaml_dependencies.ml" 133 4182 4234
+type(
+  bool
+)
+"ocaml_dependencies.ml" 133 4182 4240 "ocaml_dependencies.ml" 133 4182 4243
+type(
+  Resources.t SMap.t
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 130 4046 4084 "ocaml_dependencies.ml" 130 4046 4087
+)
+"ocaml_dependencies.ml" 134 4244 4257 "ocaml_dependencies.ml" 134 4244 4269
+type(
+  SMap.key -> Resources.elt -> Resources.t SMap.t -> Resources.t SMap.t
+)
+ident(
+  int_ref Utils.smap_add_set "ocaml_dependencies.ml" 45 1523 1531 "ocaml_dependencies.ml" 45 1523 1543
+)
+"ocaml_dependencies.ml" 134 4244 4270 "ocaml_dependencies.ml" 134 4244 4271
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 131 4091 4103 "ocaml_dependencies.ml" 131 4091 4104
+)
+"ocaml_dependencies.ml" 134 4244 4272 "ocaml_dependencies.ml" 134 4244 4273
+type(
+  Pathname.t
+)
+ident(
+  int_ref y "ocaml_dependencies.ml" 132 4135 4147 "ocaml_dependencies.ml" 132 4135 4148
+)
+"ocaml_dependencies.ml" 134 4244 4274 "ocaml_dependencies.ml" 134 4244 4277
+type(
+  Resources.t SMap.t
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 130 4046 4084 "ocaml_dependencies.ml" 130 4046 4087
+)
+"ocaml_dependencies.ml" 134 4244 4257 "ocaml_dependencies.ml" 134 4244 4277
+call(
+  tail
+)
+type(
+  Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 133 4182 4190 "ocaml_dependencies.ml" 134 4244 4277
+type(
+  Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 131 4091 4099 "ocaml_dependencies.ml" 134 4244 4277
+type(
+  Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 130 4046 4070 "ocaml_dependencies.ml" 135 4278 4287
+type(
+  Pathname.t -> Pathname.t -> Resources.t SMap.t -> Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 135 4278 4288 "ocaml_dependencies.ml" 135 4278 4298
+type(
+  Resources.t SMap.t
+)
+ident(
+  ext_ref SMap.empty
+)
+"ocaml_dependencies.ml" 130 4046 4052 "ocaml_dependencies.ml" 135 4278 4298
+call(
+  stack
+)
+type(
+  Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 136 4302 4306 "ocaml_dependencies.ml" 136 4302 4315
+type(
+  ((Format.formatter -> Resources.t SMap.t -> unit) ->
+   Resources.t SMap.t -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Resources.t SMap.t -> unit) ->
+  Resources.t SMap.t -> unit
+)
+ident(
+  int_ref mydprintf "ocaml_dependencies.ml" 20 907 911 "ocaml_dependencies.ml" 20 907 920
+)
+"ocaml_dependencies.ml" 136 4302 4316 "ocaml_dependencies.ml" 136 4302 4337
+type(
+  ((Format.formatter -> Resources.t SMap.t -> unit) ->
+   Resources.t SMap.t -> unit, Format.formatter, unit)
+  format
+)
+"ocaml_dependencies.ml" 136 4302 4338 "ocaml_dependencies.ml" 136 4302 4352
+type(
+  Format.formatter -> Resources.t SMap.t -> unit
+)
+ident(
+  int_ref Utils.print_smap_set "ocaml_dependencies.ml" 57 1880 1888 "ocaml_dependencies.ml" 57 1880 1902
+)
+"ocaml_dependencies.ml" 136 4302 4353 "ocaml_dependencies.ml" 136 4302 4367
+type(
+  Resources.t SMap.t
+)
+ident(
+  int_ref dependency_map "ocaml_dependencies.ml" 129 4021 4029 "ocaml_dependencies.ml" 129 4021 4043
+)
+"ocaml_dependencies.ml" 136 4302 4306 "ocaml_dependencies.ml" 136 4302 4367
+call(
+  stack
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 138 4370 4378 "ocaml_dependencies.ml" 138 4370 4388
+type(
+  Resources.t
+)
+ident(
+  def used_files "ocaml_dependencies.ml" 139 4426 4430 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 138 4370 4391 "ocaml_dependencies.ml" 138 4370 4403
+type(
+  Pathname.t list -> Resources.t SMap.t -> Resources.t
+)
+ident(
+  int_ref Utils.find_all_rec "ocaml_dependencies.ml" 64 2049 2057 "ocaml_dependencies.ml" 64 2049 2069
+)
+"ocaml_dependencies.ml" 138 4370 4404 "ocaml_dependencies.ml" 138 4370 4407
+type(
+  Pathname.t list
+)
+ident(
+  int_ref fns "ocaml_dependencies.ml" 94 2886 2916 "ocaml_dependencies.ml" 94 2886 2919
+)
+"ocaml_dependencies.ml" 138 4370 4408 "ocaml_dependencies.ml" 138 4370 4422
+type(
+  Resources.t SMap.t
+)
+ident(
+  int_ref dependency_map "ocaml_dependencies.ml" 129 4021 4029 "ocaml_dependencies.ml" 129 4021 4043
+)
+"ocaml_dependencies.ml" 138 4370 4391 "ocaml_dependencies.ml" 138 4370 4422
+call(
+  stack
+)
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 139 4426 4430 "ocaml_dependencies.ml" 139 4426 4439
+type(
+  ((Format.formatter -> Resources.t -> unit) -> Resources.t -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> Resources.t -> unit) -> Resources.t -> unit
+)
+ident(
+  int_ref mydprintf "ocaml_dependencies.ml" 20 907 911 "ocaml_dependencies.ml" 20 907 920
+)
+"ocaml_dependencies.ml" 139 4426 4440 "ocaml_dependencies.ml" 139 4426 4457
+type(
+  ((Format.formatter -> Resources.t -> unit) -> Resources.t -> unit,
+   Format.formatter, unit)
+  format
+)
+"ocaml_dependencies.ml" 139 4426 4458 "ocaml_dependencies.ml" 139 4426 4473
+type(
+  Format.formatter -> Resources.t -> unit
+)
+ident(
+  ext_ref Resources.print
+)
+"ocaml_dependencies.ml" 139 4426 4474 "ocaml_dependencies.ml" 139 4426 4484
+type(
+  Resources.t
+)
+ident(
+  int_ref used_files "ocaml_dependencies.ml" 138 4370 4378 "ocaml_dependencies.ml" 138 4370 4388
+)
+"ocaml_dependencies.ml" 139 4426 4430 "ocaml_dependencies.ml" 139 4426 4484
+call(
+  stack
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 141 4487 4495 "ocaml_dependencies.ml" 141 4487 4508
+type(
+  Resources.elt list
+)
+ident(
+  def open_packages "ocaml_dependencies.ml" 146 4693 4697 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 142 4511 4517 "ocaml_dependencies.ml" 142 4511 4531
+type(
+  (Resources.elt -> Resources.elt list -> Resources.elt list) ->
+  Resources.t -> Resources.elt list -> Resources.elt list
+)
+ident(
+  ext_ref Resources.fold
+)
+"ocaml_dependencies.ml" 142 4511 4542 "ocaml_dependencies.ml" 142 4511 4546
+type(
+  Resources.elt
+)
+ident(
+  def file "ocaml_dependencies.ml" 142 4511 4547 "ocaml_dependencies.ml" 144 4632 4665
+)
+"ocaml_dependencies.ml" 142 4511 4547 "ocaml_dependencies.ml" 142 4511 4550
+type(
+  Resources.elt list
+)
+ident(
+  def acc "ocaml_dependencies.ml" 143 4554 4562 "ocaml_dependencies.ml" 144 4632 4665
+)
+"ocaml_dependencies.ml" 143 4554 4565 "ocaml_dependencies.ml" 143 4554 4578
+type(
+  Resources.elt -> Resources.t -> bool
+)
+ident(
+  ext_ref Resources.mem
+)
+"ocaml_dependencies.ml" 143 4554 4579 "ocaml_dependencies.ml" 143 4554 4583
+type(
+  Resources.elt
+)
+ident(
+  int_ref file "ocaml_dependencies.ml" 142 4511 4542 "ocaml_dependencies.ml" 142 4511 4546
+)
+"ocaml_dependencies.ml" 143 4554 4584 "ocaml_dependencies.ml" 143 4554 4592
+type(
+  Resources.t
+)
+ident(
+  int_ref packages "ocaml_dependencies.ml" 103 3196 3204 "ocaml_dependencies.ml" 103 3196 3212
+)
+"ocaml_dependencies.ml" 143 4554 4565 "ocaml_dependencies.ml" 143 4554 4592
+call(
+  stack
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 143 4554 4593 "ocaml_dependencies.ml" 143 4554 4595
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"ocaml_dependencies.ml" 143 4554 4596 "ocaml_dependencies.ml" 143 4554 4599
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"ocaml_dependencies.ml" 143 4554 4601 "ocaml_dependencies.ml" 143 4554 4609
+type(
+  Resources.elt -> Resources.elt list -> bool
+)
+ident(
+  ext_ref My_std.List.mem
+)
+"ocaml_dependencies.ml" 143 4554 4610 "ocaml_dependencies.ml" 143 4554 4614
+type(
+  Resources.elt
+)
+ident(
+  int_ref file "ocaml_dependencies.ml" 142 4511 4542 "ocaml_dependencies.ml" 142 4511 4546
+)
+"ocaml_dependencies.ml" 143 4554 4615 "ocaml_dependencies.ml" 143 4554 4630
+type(
+  Resources.elt list
+)
+ident(
+  int_ref hidden_packages "ocaml_dependencies.ml" 94 2886 2896 "ocaml_dependencies.ml" 94 2886 2911
+)
+"ocaml_dependencies.ml" 143 4554 4600 "ocaml_dependencies.ml" 143 4554 4631
+call(
+  stack
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 143 4554 4596 "ocaml_dependencies.ml" 143 4554 4631
+type(
+  bool
+)
+"ocaml_dependencies.ml" 143 4554 4565 "ocaml_dependencies.ml" 143 4554 4631
+type(
+  bool
+)
+"ocaml_dependencies.ml" 144 4632 4645 "ocaml_dependencies.ml" 144 4632 4649
+type(
+  Resources.elt
+)
+ident(
+  int_ref file "ocaml_dependencies.ml" 142 4511 4542 "ocaml_dependencies.ml" 142 4511 4546
+)
+"ocaml_dependencies.ml" 144 4632 4653 "ocaml_dependencies.ml" 144 4632 4656
+type(
+  Resources.elt list
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 142 4511 4547 "ocaml_dependencies.ml" 142 4511 4550
+)
+"ocaml_dependencies.ml" 144 4632 4645 "ocaml_dependencies.ml" 144 4632 4656
+type(
+  Resources.elt list
+)
+"ocaml_dependencies.ml" 144 4632 4662 "ocaml_dependencies.ml" 144 4632 4665
+type(
+  Resources.elt list
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 142 4511 4547 "ocaml_dependencies.ml" 142 4511 4550
+)
+"ocaml_dependencies.ml" 143 4554 4562 "ocaml_dependencies.ml" 144 4632 4665
+type(
+  Resources.elt list
+)
+"ocaml_dependencies.ml" 142 4511 4532 "ocaml_dependencies.ml" 145 4666 4675
+type(
+  Resources.elt -> Resources.elt list -> Resources.elt list
+)
+"ocaml_dependencies.ml" 145 4666 4676 "ocaml_dependencies.ml" 145 4666 4686
+type(
+  Resources.t
+)
+ident(
+  int_ref used_files "ocaml_dependencies.ml" 138 4370 4378 "ocaml_dependencies.ml" 138 4370 4388
+)
+"ocaml_dependencies.ml" 145 4666 4687 "ocaml_dependencies.ml" 145 4666 4689
+type(
+  Resources.elt list
+)
+"ocaml_dependencies.ml" 142 4511 4517 "ocaml_dependencies.ml" 145 4666 4689
+call(
+  stack
+)
+type(
+  Resources.elt list
+)
+"ocaml_dependencies.ml" 146 4693 4697 "ocaml_dependencies.ml" 146 4693 4706
+type(
+  ((Format.formatter -> Resources.elt list -> unit) ->
+   Resources.elt list -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Resources.elt list -> unit) ->
+  Resources.elt list -> unit
+)
+ident(
+  int_ref mydprintf "ocaml_dependencies.ml" 20 907 911 "ocaml_dependencies.ml" 20 907 920
+)
+"ocaml_dependencies.ml" 146 4693 4707 "ocaml_dependencies.ml" 146 4693 4727
+type(
+  ((Format.formatter -> Resources.elt list -> unit) ->
+   Resources.elt list -> unit, Format.formatter, unit)
+  format
+)
+"ocaml_dependencies.ml" 146 4693 4728 "ocaml_dependencies.ml" 146 4693 4732
+type(
+  Format.formatter -> Resources.elt list -> unit
+)
+ident(
+  ext_ref Tools.pp_l
+)
+"ocaml_dependencies.ml" 146 4693 4733 "ocaml_dependencies.ml" 146 4693 4746
+type(
+  Resources.elt list
+)
+ident(
+  int_ref open_packages "ocaml_dependencies.ml" 141 4487 4495 "ocaml_dependencies.ml" 141 4487 4508
+)
+"ocaml_dependencies.ml" 146 4693 4697 "ocaml_dependencies.ml" 146 4693 4746
+call(
+  stack
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 148 4749 4757 "ocaml_dependencies.ml" 148 4749 4769
+type(
+  string -> Pathname.t list -> Pathname.t -> bool
+)
+ident(
+  def index_filter "ocaml_dependencies.ml" 151 4843 4847 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 148 4749 4770 "ocaml_dependencies.ml" 148 4749 4773
+type(
+  string
+)
+ident(
+  def ext "ocaml_dependencies.ml" 148 4749 4774 "ocaml_dependencies.ml" 149 4783 4838
+)
+"ocaml_dependencies.ml" 148 4749 4774 "ocaml_dependencies.ml" 148 4749 4778
+type(
+  Pathname.t list
+)
+ident(
+  def list "ocaml_dependencies.ml" 148 4749 4779 "ocaml_dependencies.ml" 149 4783 4838
+)
+"ocaml_dependencies.ml" 148 4749 4779 "ocaml_dependencies.ml" 148 4749 4780
+type(
+  Pathname.t
+)
+ident(
+  def x "ocaml_dependencies.ml" 149 4783 4789 "ocaml_dependencies.ml" 149 4783 4838
+)
+"ocaml_dependencies.ml" 149 4783 4789 "ocaml_dependencies.ml" 149 4783 4813
+type(
+  Pathname.t -> string -> bool
+)
+ident(
+  ext_ref Pathname.check_extension
+)
+"ocaml_dependencies.ml" 149 4783 4814 "ocaml_dependencies.ml" 149 4783 4815
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 148 4749 4779 "ocaml_dependencies.ml" 148 4749 4780
+)
+"ocaml_dependencies.ml" 149 4783 4816 "ocaml_dependencies.ml" 149 4783 4819
+type(
+  string
+)
+ident(
+  int_ref ext "ocaml_dependencies.ml" 148 4749 4770 "ocaml_dependencies.ml" 148 4749 4773
+)
+"ocaml_dependencies.ml" 149 4783 4789 "ocaml_dependencies.ml" 149 4783 4819
+call(
+  stack
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 149 4783 4820 "ocaml_dependencies.ml" 149 4783 4822
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"ocaml_dependencies.ml" 149 4783 4823 "ocaml_dependencies.ml" 149 4783 4831
+type(
+  Pathname.t -> Pathname.t list -> bool
+)
+ident(
+  ext_ref My_std.List.mem
+)
+"ocaml_dependencies.ml" 149 4783 4832 "ocaml_dependencies.ml" 149 4783 4833
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 148 4749 4779 "ocaml_dependencies.ml" 148 4749 4780
+)
+"ocaml_dependencies.ml" 149 4783 4834 "ocaml_dependencies.ml" 149 4783 4838
+type(
+  Pathname.t list
+)
+ident(
+  int_ref list "ocaml_dependencies.ml" 148 4749 4774 "ocaml_dependencies.ml" 148 4749 4778
+)
+"ocaml_dependencies.ml" 149 4783 4823 "ocaml_dependencies.ml" 149 4783 4838
+call(
+  tail
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 149 4783 4789 "ocaml_dependencies.ml" 149 4783 4838
+type(
+  bool
+)
+"ocaml_dependencies.ml" 151 4843 4851 "ocaml_dependencies.ml" 151 4843 4860
+type(
+  Pathname.t list SMap.t lazy_t
+)
+ident(
+  def lib_index "ocaml_dependencies.ml" 153 4945 4949 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 152 4863 4875 "ocaml_dependencies.ml" 152 4863 4882
+type(
+  ((Pathname.t ->
+    SMap.key list -> Pathname.t list SMap.t -> Pathname.t list SMap.t) ->
+   Pathname.t list SMap.t -> Pathname.t list SMap.t) ->
+  (Pathname.t -> bool) -> Pathname.t list SMap.t
+)
+ident(
+  int_ref Utils.mkindex "ocaml_dependencies.ml" 76 2444 2452 "ocaml_dependencies.ml" 76 2444 2459
+)
+"ocaml_dependencies.ml" 152 4863 4883 "ocaml_dependencies.ml" 152 4863 4897
+type(
+  (Pathname.t ->
+   SMap.key list -> Pathname.t list SMap.t -> Pathname.t list SMap.t) ->
+  Pathname.t list SMap.t -> Pathname.t list SMap.t
+)
+ident(
+  int_ref I.fold_libraries "ocaml_dependencies.ml" 26 1093 1095 "ocaml_dependencies.ml" 26 1093 1163
+)
+"ocaml_dependencies.ml" 152 4863 4899 "ocaml_dependencies.ml" 152 4863 4911
+type(
+  string -> Pathname.t list -> Pathname.t -> bool
+)
+ident(
+  int_ref index_filter "ocaml_dependencies.ml" 148 4749 4757 "ocaml_dependencies.ml" 148 4749 4769
+)
+"ocaml_dependencies.ml" 152 4863 4912 "ocaml_dependencies.ml" 152 4863 4924
+type(
+  string
+)
+ident(
+  int_ref caml_lib_ext "ocaml_dependencies.ml" 91 2800 2810 "ocaml_dependencies.ml" 91 2800 2822
+)
+"ocaml_dependencies.ml" 152 4863 4925 "ocaml_dependencies.ml" 152 4863 4939
+type(
+  Pathname.t list
+)
+ident(
+  int_ref used_libraries "ocaml_dependencies.ml" 93 2857 2867 "ocaml_dependencies.ml" 93 2857 2881
+)
+"ocaml_dependencies.ml" 152 4863 4898 "ocaml_dependencies.ml" 152 4863 4940
+call(
+  stack
+)
+type(
+  Pathname.t -> bool
+)
+"ocaml_dependencies.ml" 152 4863 4874 "ocaml_dependencies.ml" 152 4863 4941
+call(
+  tail
+)
+type(
+  Pathname.t list SMap.t
+)
+"ocaml_dependencies.ml" 152 4863 4869 "ocaml_dependencies.ml" 152 4863 4941
+type(
+  Pathname.t list SMap.t lazy_t
+)
+"ocaml_dependencies.ml" 153 4945 4949 "ocaml_dependencies.ml" 153 4945 4958
+type(
+  ((Format.formatter -> Pathname.t list SMap.t Lazy.t -> unit) ->
+   Pathname.t list SMap.t Lazy.t -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Pathname.t list SMap.t Lazy.t -> unit) ->
+  Pathname.t list SMap.t Lazy.t -> unit
+)
+ident(
+  int_ref mydprintf "ocaml_dependencies.ml" 20 907 911 "ocaml_dependencies.ml" 20 907 920
+)
+"ocaml_dependencies.ml" 153 4945 4959 "ocaml_dependencies.ml" 153 4945 4975
+type(
+  ((Format.formatter -> Pathname.t list SMap.t Lazy.t -> unit) ->
+   Pathname.t list SMap.t Lazy.t -> unit, Format.formatter, unit)
+  format
+)
+"ocaml_dependencies.ml" 153 4945 4977 "ocaml_dependencies.ml" 153 4945 4987
+type(
+  (Format.formatter -> Pathname.t list SMap.t -> unit) ->
+  Format.formatter -> Pathname.t list SMap.t Lazy.t -> unit
+)
+ident(
+  int_ref Utils.print_lazy "ocaml_dependencies.ml" 59 1933 1941 "ocaml_dependencies.ml" 59 1933 1951
+)
+"ocaml_dependencies.ml" 153 4945 4988 "ocaml_dependencies.ml" 153 4945 5003
+type(
+  Format.formatter -> Pathname.t list SMap.t -> unit
+)
+ident(
+  int_ref Utils.print_smap_list "ocaml_dependencies.ml" 55 1837 1845 "ocaml_dependencies.ml" 55 1837 1860
+)
+"ocaml_dependencies.ml" 153 4945 4976 "ocaml_dependencies.ml" 153 4945 5004
+call(
+  stack
+)
+type(
+  Format.formatter -> Pathname.t list SMap.t Lazy.t -> unit
+)
+"ocaml_dependencies.ml" 153 4945 5005 "ocaml_dependencies.ml" 153 4945 5014
+type(
+  Pathname.t list SMap.t Lazy.t
+)
+ident(
+  int_ref lib_index "ocaml_dependencies.ml" 151 4843 4851 "ocaml_dependencies.ml" 151 4843 4860
+)
+"ocaml_dependencies.ml" 153 4945 4949 "ocaml_dependencies.ml" 153 4945 5014
+call(
+  stack
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 155 5017 5025 "ocaml_dependencies.ml" 155 5017 5038
+type(
+  Pathname.t list SMap.t lazy_t
+)
+ident(
+  def package_index "ocaml_dependencies.ml" 158 5122 5126 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 156 5041 5053 "ocaml_dependencies.ml" 156 5041 5060
+type(
+  ((Pathname.t ->
+    SMap.key list -> Pathname.t list SMap.t -> Pathname.t list SMap.t) ->
+   Pathname.t list SMap.t -> Pathname.t list SMap.t) ->
+  (Pathname.t -> bool) -> Pathname.t list SMap.t
+)
+ident(
+  int_ref Utils.mkindex "ocaml_dependencies.ml" 76 2444 2452 "ocaml_dependencies.ml" 76 2444 2459
+)
+"ocaml_dependencies.ml" 156 5041 5061 "ocaml_dependencies.ml" 156 5041 5074
+type(
+  (Pathname.t ->
+   SMap.key list -> Pathname.t list SMap.t -> Pathname.t list SMap.t) ->
+  Pathname.t list SMap.t -> Pathname.t list SMap.t
+)
+ident(
+  int_ref I.fold_packages "ocaml_dependencies.ml" 27 1164 1166 "ocaml_dependencies.ml" 27 1164 1233
+)
+"ocaml_dependencies.ml" 156 5041 5076 "ocaml_dependencies.ml" 156 5041 5088
+type(
+  string -> Pathname.t list -> Pathname.t -> bool
+)
+ident(
+  int_ref index_filter "ocaml_dependencies.ml" 148 4749 4757 "ocaml_dependencies.ml" 148 4749 4769
+)
+"ocaml_dependencies.ml" 156 5041 5089 "ocaml_dependencies.ml" 156 5041 5101
+type(
+  string
+)
+ident(
+  int_ref caml_obj_ext "ocaml_dependencies.ml" 90 2770 2780 "ocaml_dependencies.ml" 90 2770 2792
+)
+"ocaml_dependencies.ml" 156 5041 5102 "ocaml_dependencies.ml" 156 5041 5115
+type(
+  Pathname.t list
+)
+ident(
+  int_ref open_packages "ocaml_dependencies.ml" 141 4487 4495 "ocaml_dependencies.ml" 141 4487 4508
+)
+"ocaml_dependencies.ml" 156 5041 5075 "ocaml_dependencies.ml" 156 5041 5116
+call(
+  stack
+)
+type(
+  Pathname.t -> bool
+)
+"ocaml_dependencies.ml" 156 5041 5052 "ocaml_dependencies.ml" 156 5041 5117
+call(
+  tail
+)
+type(
+  Pathname.t list SMap.t
+)
+"ocaml_dependencies.ml" 156 5041 5047 "ocaml_dependencies.ml" 156 5041 5117
+type(
+  Pathname.t list SMap.t lazy_t
+)
+"ocaml_dependencies.ml" 158 5122 5134 "ocaml_dependencies.ml" 158 5122 5150
+type(
+  SMap.key -> SMap.key
+)
+ident(
+  def resolve_packages "ocaml_dependencies.ml" 158 5122 5126 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 158 5122 5151 "ocaml_dependencies.ml" 158 5122 5152
+type(
+  SMap.key
+)
+ident(
+  def x "ocaml_dependencies.ml" 159 5155 5161 "ocaml_dependencies.ml" 164 5367 5408
+)
+"ocaml_dependencies.ml" 159 5155 5167 "ocaml_dependencies.ml" 159 5155 5180
+type(
+  SMap.key -> Pathname.t list SMap.t -> Pathname.t list
+)
+ident(
+  int_ref Utils.find_all_list "ocaml_dependencies.ml" 61 1971 1979 "ocaml_dependencies.ml" 61 1971 1992
+)
+"ocaml_dependencies.ml" 159 5155 5181 "ocaml_dependencies.ml" 159 5155 5182
+type(
+  SMap.key
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 158 5122 5151 "ocaml_dependencies.ml" 158 5122 5152
+)
+"ocaml_dependencies.ml" 159 5155 5183 "ocaml_dependencies.ml" 159 5155 5185
+type(
+  Pathname.t list SMap.t Lazy.t -> Pathname.t list SMap.t
+)
+ident(
+  ext_ref My_std.( !* )
+)
+"ocaml_dependencies.ml" 159 5155 5185 "ocaml_dependencies.ml" 159 5155 5198
+type(
+  Pathname.t list SMap.t Lazy.t
+)
+ident(
+  int_ref package_index "ocaml_dependencies.ml" 155 5017 5025 "ocaml_dependencies.ml" 155 5017 5038
+)
+"ocaml_dependencies.ml" 159 5155 5183 "ocaml_dependencies.ml" 159 5155 5198
+call(
+  stack
+)
+type(
+  Pathname.t list SMap.t
+)
+"ocaml_dependencies.ml" 159 5155 5167 "ocaml_dependencies.ml" 159 5155 5198
+call(
+  stack
+)
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 160 5204 5212 "ocaml_dependencies.ml" 160 5204 5214
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 160 5204 5218 "ocaml_dependencies.ml" 160 5204 5219
+type(
+  SMap.key
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 158 5122 5151 "ocaml_dependencies.ml" 158 5122 5152
+)
+"ocaml_dependencies.ml" 161 5220 5229 "ocaml_dependencies.ml" 161 5220 5230
+type(
+  Pathname.t
+)
+ident(
+  def x "ocaml_dependencies.ml" 161 5220 5235 "ocaml_dependencies.ml" 161 5220 5253
+)
+"ocaml_dependencies.ml" 161 5220 5228 "ocaml_dependencies.ml" 161 5220 5231
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 161 5220 5235 "ocaml_dependencies.ml" 161 5220 5251
+type(
+  SMap.key -> SMap.key
+)
+ident(
+  int_ref resolve_packages "ocaml_dependencies.ml" 158 5122 5134 "ocaml_dependencies.ml" 158 5122 5150
+)
+"ocaml_dependencies.ml" 161 5220 5252 "ocaml_dependencies.ml" 161 5220 5253
+type(
+  Pathname.t
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 161 5220 5229 "ocaml_dependencies.ml" 161 5220 5230
+)
+"ocaml_dependencies.ml" 161 5220 5235 "ocaml_dependencies.ml" 161 5220 5253
+call(
+  tail
+)
+type(
+  SMap.key
+)
+"ocaml_dependencies.ml" 162 5254 5262 "ocaml_dependencies.ml" 162 5254 5266
+type(
+  Pathname.t list
+)
+ident(
+  def pkgs "ocaml_dependencies.ml" 163 5270 5280 "ocaml_dependencies.ml" 164 5367 5408
+)
+"ocaml_dependencies.ml" 163 5270 5280 "ocaml_dependencies.ml" 163 5270 5288
+type(
+  string -> SMap.key
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"ocaml_dependencies.ml" 163 5270 5290 "ocaml_dependencies.ml" 163 5270 5298
+type(
+  (SMap.key ->
+   (Format.formatter -> Pathname.t list -> unit) -> Pathname.t list -> string,
+   Format.formatter, unit, string)
+  format4 ->
+  SMap.key ->
+  (Format.formatter -> Pathname.t list -> unit) -> Pathname.t list -> string
+)
+ident(
+  ext_ref My_std.sbprintf
+)
+"ocaml_dependencies.ml" 163 5270 5299 "ocaml_dependencies.ml" 163 5270 5366
+type(
+  (SMap.key ->
+   (Format.formatter -> Pathname.t list -> unit) -> Pathname.t list -> string,
+   Format.formatter, unit, string)
+  format4
+)
+"ocaml_dependencies.ml" 164 5367 5396 "ocaml_dependencies.ml" 164 5367 5397
+type(
+  SMap.key
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 158 5122 5151 "ocaml_dependencies.ml" 158 5122 5152
+)
+"ocaml_dependencies.ml" 164 5367 5398 "ocaml_dependencies.ml" 164 5367 5402
+type(
+  Format.formatter -> Pathname.t list -> unit
+)
+ident(
+  ext_ref Tools.pp_l
+)
+"ocaml_dependencies.ml" 164 5367 5403 "ocaml_dependencies.ml" 164 5367 5407
+type(
+  Pathname.t list
+)
+ident(
+  int_ref pkgs "ocaml_dependencies.ml" 162 5254 5262 "ocaml_dependencies.ml" 162 5254 5266
+)
+"ocaml_dependencies.ml" 163 5270 5289 "ocaml_dependencies.ml" 164 5367 5408
+call(
+  stack
+)
+type(
+  string
+)
+"ocaml_dependencies.ml" 163 5270 5280 "ocaml_dependencies.ml" 164 5367 5408
+call(
+  tail
+)
+type(
+  SMap.key
+)
+"ocaml_dependencies.ml" 159 5155 5161 "ocaml_dependencies.ml" 164 5367 5408
+type(
+  SMap.key
+)
+"ocaml_dependencies.ml" 166 5413 5421 "ocaml_dependencies.ml" 166 5413 5428
+type(
+  SMap.key -> Pathname.t list
+)
+ident(
+  def libs_of "ocaml_dependencies.ml" 168 5465 5469 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 166 5413 5429 "ocaml_dependencies.ml" 166 5413 5430
+type(
+  SMap.key
+)
+ident(
+  def x "ocaml_dependencies.ml" 166 5413 5433 "ocaml_dependencies.ml" 166 5413 5460
+)
+"ocaml_dependencies.ml" 166 5413 5433 "ocaml_dependencies.ml" 166 5413 5446
+type(
+  SMap.key -> Pathname.t list SMap.t -> Pathname.t list
+)
+ident(
+  int_ref Utils.find_all_list "ocaml_dependencies.ml" 61 1971 1979 "ocaml_dependencies.ml" 61 1971 1992
+)
+"ocaml_dependencies.ml" 166 5413 5447 "ocaml_dependencies.ml" 166 5413 5448
+type(
+  SMap.key
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 166 5413 5429 "ocaml_dependencies.ml" 166 5413 5430
+)
+"ocaml_dependencies.ml" 166 5413 5449 "ocaml_dependencies.ml" 166 5413 5451
+type(
+  Pathname.t list SMap.t Lazy.t -> Pathname.t list SMap.t
+)
+ident(
+  ext_ref My_std.( !* )
+)
+"ocaml_dependencies.ml" 166 5413 5451 "ocaml_dependencies.ml" 166 5413 5460
+type(
+  Pathname.t list SMap.t Lazy.t
+)
+ident(
+  int_ref lib_index "ocaml_dependencies.ml" 151 4843 4851 "ocaml_dependencies.ml" 151 4843 4860
+)
+"ocaml_dependencies.ml" 166 5413 5449 "ocaml_dependencies.ml" 166 5413 5460
+call(
+  stack
+)
+type(
+  Pathname.t list SMap.t
+)
+"ocaml_dependencies.ml" 166 5413 5433 "ocaml_dependencies.ml" 166 5413 5460
+call(
+  tail
+)
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 168 5465 5473 "ocaml_dependencies.ml" 168 5465 5479
+type(
+  SMap.key -> Pathname.t option
+)
+ident(
+  def lib_of "ocaml_dependencies.ml" 176 5711 5715 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 168 5465 5480 "ocaml_dependencies.ml" 168 5465 5481
+type(
+  SMap.key
+)
+ident(
+  def x "ocaml_dependencies.ml" 169 5484 5490 "ocaml_dependencies.ml" 174 5665 5706
+)
+"ocaml_dependencies.ml" 169 5484 5496 "ocaml_dependencies.ml" 169 5484 5503
+type(
+  SMap.key -> Pathname.t list
+)
+ident(
+  int_ref libs_of "ocaml_dependencies.ml" 166 5413 5421 "ocaml_dependencies.ml" 166 5413 5428
+)
+"ocaml_dependencies.ml" 169 5484 5504 "ocaml_dependencies.ml" 169 5484 5505
+type(
+  SMap.key
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 168 5465 5480 "ocaml_dependencies.ml" 168 5465 5481
+)
+"ocaml_dependencies.ml" 169 5484 5496 "ocaml_dependencies.ml" 169 5484 5505
+call(
+  stack
+)
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 170 5511 5519 "ocaml_dependencies.ml" 170 5511 5521
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 170 5511 5525 "ocaml_dependencies.ml" 170 5511 5529
+type(
+  Pathname.t option
+)
+"ocaml_dependencies.ml" 171 5530 5539 "ocaml_dependencies.ml" 171 5530 5542
+type(
+  Pathname.t
+)
+ident(
+  def lib "ocaml_dependencies.ml" 171 5530 5547 "ocaml_dependencies.ml" 171 5530 5556
+)
+"ocaml_dependencies.ml" 171 5530 5538 "ocaml_dependencies.ml" 171 5530 5543
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 171 5530 5551 "ocaml_dependencies.ml" 171 5530 5556
+type(
+  Pathname.t
+)
+ident(
+  int_ref lib "ocaml_dependencies.ml" 171 5530 5539 "ocaml_dependencies.ml" 171 5530 5542
+)
+"ocaml_dependencies.ml" 171 5530 5547 "ocaml_dependencies.ml" 171 5530 5556
+type(
+  Pathname.t option
+)
+"ocaml_dependencies.ml" 172 5557 5565 "ocaml_dependencies.ml" 172 5557 5569
+type(
+  Pathname.t list
+)
+ident(
+  def libs "ocaml_dependencies.ml" 173 5573 5583 "ocaml_dependencies.ml" 174 5665 5706
+)
+"ocaml_dependencies.ml" 173 5573 5583 "ocaml_dependencies.ml" 173 5573 5591
+type(
+  string -> Pathname.t option
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"ocaml_dependencies.ml" 173 5573 5593 "ocaml_dependencies.ml" 173 5573 5601
+type(
+  (SMap.key ->
+   (Format.formatter -> Pathname.t list -> unit) -> Pathname.t list -> string,
+   Format.formatter, unit, string)
+  format4 ->
+  SMap.key ->
+  (Format.formatter -> Pathname.t list -> unit) -> Pathname.t list -> string
+)
+ident(
+  ext_ref My_std.sbprintf
+)
+"ocaml_dependencies.ml" 173 5573 5602 "ocaml_dependencies.ml" 173 5573 5664
+type(
+  (SMap.key ->
+   (Format.formatter -> Pathname.t list -> unit) -> Pathname.t list -> string,
+   Format.formatter, unit, string)
+  format4
+)
+"ocaml_dependencies.ml" 174 5665 5694 "ocaml_dependencies.ml" 174 5665 5695
+type(
+  SMap.key
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 168 5465 5480 "ocaml_dependencies.ml" 168 5465 5481
+)
+"ocaml_dependencies.ml" 174 5665 5696 "ocaml_dependencies.ml" 174 5665 5700
+type(
+  Format.formatter -> Pathname.t list -> unit
+)
+ident(
+  ext_ref Tools.pp_l
+)
+"ocaml_dependencies.ml" 174 5665 5701 "ocaml_dependencies.ml" 174 5665 5705
+type(
+  Pathname.t list
+)
+ident(
+  int_ref libs "ocaml_dependencies.ml" 172 5557 5565 "ocaml_dependencies.ml" 172 5557 5569
+)
+"ocaml_dependencies.ml" 173 5573 5592 "ocaml_dependencies.ml" 174 5665 5706
+call(
+  stack
+)
+type(
+  string
+)
+"ocaml_dependencies.ml" 173 5573 5583 "ocaml_dependencies.ml" 174 5665 5706
+call(
+  tail
+)
+type(
+  Pathname.t option
+)
+"ocaml_dependencies.ml" 169 5484 5490 "ocaml_dependencies.ml" 174 5665 5706
+type(
+  Pathname.t option
+)
+"ocaml_dependencies.ml" 176 5711 5719 "ocaml_dependencies.ml" 176 5711 5737
+type(
+  SMap.key -> SMap.key -> Resources.t SMap.t -> Resources.t SMap.t
+)
+ident(
+  def convert_dependency "ocaml_dependencies.ml" 186 6145 6149 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 176 5711 5738 "ocaml_dependencies.ml" 176 5711 5741
+type(
+  SMap.key
+)
+ident(
+  def src "ocaml_dependencies.ml" 176 5711 5742 "ocaml_dependencies.ml" 184 6094 6140
+)
+"ocaml_dependencies.ml" 176 5711 5742 "ocaml_dependencies.ml" 176 5711 5745
+type(
+  SMap.key
+)
+ident(
+  def dst "ocaml_dependencies.ml" 176 5711 5746 "ocaml_dependencies.ml" 184 6094 6140
+)
+"ocaml_dependencies.ml" 176 5711 5746 "ocaml_dependencies.ml" 176 5711 5749
+type(
+  Resources.t SMap.t
+)
+ident(
+  def acc "ocaml_dependencies.ml" 177 5752 5758 "ocaml_dependencies.ml" 184 6094 6140
+)
+"ocaml_dependencies.ml" 177 5752 5762 "ocaml_dependencies.ml" 177 5752 5765
+type(
+  SMap.key
+)
+ident(
+  def src "ocaml_dependencies.ml" 178 5792 5798 "ocaml_dependencies.ml" 184 6094 6140
+)
+"ocaml_dependencies.ml" 177 5752 5768 "ocaml_dependencies.ml" 177 5752 5784
+type(
+  SMap.key -> SMap.key
+)
+ident(
+  int_ref resolve_packages "ocaml_dependencies.ml" 158 5122 5134 "ocaml_dependencies.ml" 158 5122 5150
+)
+"ocaml_dependencies.ml" 177 5752 5785 "ocaml_dependencies.ml" 177 5752 5788
+type(
+  SMap.key
+)
+ident(
+  int_ref src "ocaml_dependencies.ml" 176 5711 5738 "ocaml_dependencies.ml" 176 5711 5741
+)
+"ocaml_dependencies.ml" 177 5752 5768 "ocaml_dependencies.ml" 177 5752 5788
+call(
+  stack
+)
+type(
+  SMap.key
+)
+"ocaml_dependencies.ml" 178 5792 5802 "ocaml_dependencies.ml" 178 5792 5805
+type(
+  SMap.key
+)
+ident(
+  def dst "ocaml_dependencies.ml" 179 5832 5838 "ocaml_dependencies.ml" 184 6094 6140
+)
+"ocaml_dependencies.ml" 178 5792 5808 "ocaml_dependencies.ml" 178 5792 5824
+type(
+  SMap.key -> SMap.key
+)
+ident(
+  int_ref resolve_packages "ocaml_dependencies.ml" 158 5122 5134 "ocaml_dependencies.ml" 158 5122 5150
+)
+"ocaml_dependencies.ml" 178 5792 5825 "ocaml_dependencies.ml" 178 5792 5828
+type(
+  SMap.key
+)
+ident(
+  int_ref dst "ocaml_dependencies.ml" 176 5711 5742 "ocaml_dependencies.ml" 176 5711 5745
+)
+"ocaml_dependencies.ml" 178 5792 5808 "ocaml_dependencies.ml" 178 5792 5828
+call(
+  stack
+)
+type(
+  SMap.key
+)
+"ocaml_dependencies.ml" 179 5832 5842 "ocaml_dependencies.ml" 179 5832 5853
+type(
+  SMap.key -> SMap.key -> Resources.t SMap.t
+)
+ident(
+  def add_if_diff "ocaml_dependencies.ml" 180 5907 5913 "ocaml_dependencies.ml" 184 6094 6140
+)
+"ocaml_dependencies.ml" 179 5832 5854 "ocaml_dependencies.ml" 179 5832 5855
+type(
+  SMap.key
+)
+ident(
+  def x "ocaml_dependencies.ml" 179 5832 5856 "ocaml_dependencies.ml" 179 5832 5903
+)
+"ocaml_dependencies.ml" 179 5832 5856 "ocaml_dependencies.ml" 179 5832 5857
+type(
+  SMap.key
+)
+ident(
+  def y "ocaml_dependencies.ml" 179 5832 5860 "ocaml_dependencies.ml" 179 5832 5903
+)
+"ocaml_dependencies.ml" 179 5832 5863 "ocaml_dependencies.ml" 179 5832 5864
+type(
+  SMap.key
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 179 5832 5854 "ocaml_dependencies.ml" 179 5832 5855
+)
+"ocaml_dependencies.ml" 179 5832 5865 "ocaml_dependencies.ml" 179 5832 5866
+type(
+  SMap.key -> SMap.key -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"ocaml_dependencies.ml" 179 5832 5867 "ocaml_dependencies.ml" 179 5832 5868
+type(
+  SMap.key
+)
+ident(
+  int_ref y "ocaml_dependencies.ml" 179 5832 5856 "ocaml_dependencies.ml" 179 5832 5857
+)
+"ocaml_dependencies.ml" 179 5832 5863 "ocaml_dependencies.ml" 179 5832 5868
+type(
+  bool
+)
+"ocaml_dependencies.ml" 179 5832 5874 "ocaml_dependencies.ml" 179 5832 5877
+type(
+  Resources.t SMap.t
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 176 5711 5746 "ocaml_dependencies.ml" 176 5711 5749
+)
+"ocaml_dependencies.ml" 179 5832 5883 "ocaml_dependencies.ml" 179 5832 5895
+type(
+  SMap.key -> Resources.elt -> Resources.t SMap.t -> Resources.t SMap.t
+)
+ident(
+  int_ref Utils.smap_add_set "ocaml_dependencies.ml" 45 1523 1531 "ocaml_dependencies.ml" 45 1523 1543
+)
+"ocaml_dependencies.ml" 179 5832 5896 "ocaml_dependencies.ml" 179 5832 5897
+type(
+  SMap.key
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 179 5832 5854 "ocaml_dependencies.ml" 179 5832 5855
+)
+"ocaml_dependencies.ml" 179 5832 5898 "ocaml_dependencies.ml" 179 5832 5899
+type(
+  SMap.key
+)
+ident(
+  int_ref y "ocaml_dependencies.ml" 179 5832 5856 "ocaml_dependencies.ml" 179 5832 5857
+)
+"ocaml_dependencies.ml" 179 5832 5900 "ocaml_dependencies.ml" 179 5832 5903
+type(
+  Resources.t SMap.t
+)
+ident(
+  int_ref acc "ocaml_dependencies.ml" 176 5711 5746 "ocaml_dependencies.ml" 176 5711 5749
+)
+"ocaml_dependencies.ml" 179 5832 5883 "ocaml_dependencies.ml" 179 5832 5903
+call(
+  tail
+)
+type(
+  Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 179 5832 5860 "ocaml_dependencies.ml" 179 5832 5903
+type(
+  Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 180 5907 5920 "ocaml_dependencies.ml" 180 5907 5926
+type(
+  SMap.key -> Pathname.t option
+)
+ident(
+  int_ref lib_of "ocaml_dependencies.ml" 168 5465 5473 "ocaml_dependencies.ml" 168 5465 5479
+)
+"ocaml_dependencies.ml" 180 5907 5927 "ocaml_dependencies.ml" 180 5907 5930
+type(
+  SMap.key
+)
+ident(
+  int_ref src "ocaml_dependencies.ml" 177 5752 5762 "ocaml_dependencies.ml" 177 5752 5765
+)
+"ocaml_dependencies.ml" 180 5907 5920 "ocaml_dependencies.ml" 180 5907 5930
+call(
+  stack
+)
+type(
+  Pathname.t option
+)
+"ocaml_dependencies.ml" 180 5907 5932 "ocaml_dependencies.ml" 180 5907 5938
+type(
+  SMap.key -> Pathname.t option
+)
+ident(
+  int_ref lib_of "ocaml_dependencies.ml" 168 5465 5473 "ocaml_dependencies.ml" 168 5465 5479
+)
+"ocaml_dependencies.ml" 180 5907 5939 "ocaml_dependencies.ml" 180 5907 5942
+type(
+  SMap.key
+)
+ident(
+  int_ref dst "ocaml_dependencies.ml" 178 5792 5802 "ocaml_dependencies.ml" 178 5792 5805
+)
+"ocaml_dependencies.ml" 180 5907 5932 "ocaml_dependencies.ml" 180 5907 5942
+call(
+  stack
+)
+type(
+  Pathname.t option
+)
+"ocaml_dependencies.ml" 180 5907 5919 "ocaml_dependencies.ml" 180 5907 5943
+type(
+  Pathname.t option * Pathname.t option
+)
+"ocaml_dependencies.ml" 181 5949 5957 "ocaml_dependencies.ml" 181 5949 5961
+type(
+  Pathname.t option
+)
+"ocaml_dependencies.ml" 181 5949 5963 "ocaml_dependencies.ml" 181 5949 5967
+type(
+  Pathname.t option
+)
+"ocaml_dependencies.ml" 181 5949 5957 "ocaml_dependencies.ml" 181 5949 5967
+type(
+  Pathname.t option * Pathname.t option
+)
+"ocaml_dependencies.ml" 181 5949 5971 "ocaml_dependencies.ml" 181 5949 5982
+type(
+  SMap.key -> SMap.key -> Resources.t SMap.t
+)
+ident(
+  int_ref add_if_diff "ocaml_dependencies.ml" 179 5832 5842 "ocaml_dependencies.ml" 179 5832 5853
+)
+"ocaml_dependencies.ml" 181 5949 5983 "ocaml_dependencies.ml" 181 5949 5986
+type(
+  SMap.key
+)
+ident(
+  int_ref src "ocaml_dependencies.ml" 177 5752 5762 "ocaml_dependencies.ml" 177 5752 5765
+)
+"ocaml_dependencies.ml" 181 5949 5987 "ocaml_dependencies.ml" 181 5949 5990
+type(
+  SMap.key
+)
+ident(
+  int_ref dst "ocaml_dependencies.ml" 178 5792 5802 "ocaml_dependencies.ml" 178 5792 5805
+)
+"ocaml_dependencies.ml" 181 5949 5971 "ocaml_dependencies.ml" 181 5949 5990
+call(
+  tail
+)
+type(
+  Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 182 5991 6004 "ocaml_dependencies.ml" 182 5991 6008
+ident(
+  def liba "ocaml_dependencies.ml" 182 5991 6025 "ocaml_dependencies.ml" 182 5991 6046
+)
+"ocaml_dependencies.ml" 182 5991 6003 "ocaml_dependencies.ml" 182 5991 6009
+type(
+  Pathname.t
+)
+"ocaml_dependencies.ml" 182 5991 5999 "ocaml_dependencies.ml" 182 5991 6009
+type(
+  Pathname.t option
+)
+"ocaml_dependencies.ml" 182 5991 6016 "ocaml_dependencies.ml" 182 5991 6020
+ident(
+  def libb "ocaml_dependencies.ml" 182 5991 6025 "ocaml_dependencies.ml" 182 5991 6046
+)
+"ocaml_dependencies.ml" 182 5991 6015 "ocaml_dependencies.ml" 182 5991 6021
+type(
+  Pathname.t
+)
+"ocaml_dependencies.ml" 182 5991 6011 "ocaml_dependencies.ml" 182 5991 6021
+type(
+  Pathname.t option
+)
+"ocaml_dependencies.ml" 182 5991 5999 "ocaml_dependencies.ml" 182 5991 6021
+type(
+  Pathname.t option * Pathname.t option
+)
+"ocaml_dependencies.ml" 182 5991 6025 "ocaml_dependencies.ml" 182 5991 6036
+type(
+  SMap.key -> SMap.key -> Resources.t SMap.t
+)
+ident(
+  int_ref add_if_diff "ocaml_dependencies.ml" 179 5832 5842 "ocaml_dependencies.ml" 179 5832 5853
+)
+"ocaml_dependencies.ml" 182 5991 6037 "ocaml_dependencies.ml" 182 5991 6041
+type(
+  Pathname.t
+)
+ident(
+  int_ref liba "ocaml_dependencies.ml" 182 5991 6003 "ocaml_dependencies.ml" 182 5991 6009
+)
+"ocaml_dependencies.ml" 182 5991 6042 "ocaml_dependencies.ml" 182 5991 6046
+type(
+  Pathname.t
+)
+ident(
+  int_ref libb "ocaml_dependencies.ml" 182 5991 6015 "ocaml_dependencies.ml" 182 5991 6021
+)
+"ocaml_dependencies.ml" 182 5991 6025 "ocaml_dependencies.ml" 182 5991 6046
+call(
+  tail
+)
+type(
+  Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 183 6047 6060 "ocaml_dependencies.ml" 183 6047 6063
+ident(
+  def lib "ocaml_dependencies.ml" 183 6047 6074 "ocaml_dependencies.ml" 183 6047 6093
+)
+"ocaml_dependencies.ml" 183 6047 6059 "ocaml_dependencies.ml" 183 6047 6064
+type(
+  Pathname.t
+)
+"ocaml_dependencies.ml" 183 6047 6055 "ocaml_dependencies.ml" 183 6047 6064
+type(
+  Pathname.t option
+)
+"ocaml_dependencies.ml" 183 6047 6066 "ocaml_dependencies.ml" 183 6047 6070
+type(
+  Pathname.t option
+)
+"ocaml_dependencies.ml" 183 6047 6055 "ocaml_dependencies.ml" 183 6047 6070
+type(
+  Pathname.t option * Pathname.t option
+)
+"ocaml_dependencies.ml" 183 6047 6074 "ocaml_dependencies.ml" 183 6047 6085
+type(
+  SMap.key -> SMap.key -> Resources.t SMap.t
+)
+ident(
+  int_ref add_if_diff "ocaml_dependencies.ml" 179 5832 5842 "ocaml_dependencies.ml" 179 5832 5853
+)
+"ocaml_dependencies.ml" 183 6047 6086 "ocaml_dependencies.ml" 183 6047 6089
+type(
+  Pathname.t
+)
+ident(
+  int_ref lib "ocaml_dependencies.ml" 183 6047 6059 "ocaml_dependencies.ml" 183 6047 6064
+)
+"ocaml_dependencies.ml" 183 6047 6090 "ocaml_dependencies.ml" 183 6047 6093
+type(
+  SMap.key
+)
+ident(
+  int_ref dst "ocaml_dependencies.ml" 178 5792 5802 "ocaml_dependencies.ml" 178 5792 5805
+)
+"ocaml_dependencies.ml" 183 6047 6074 "ocaml_dependencies.ml" 183 6047 6093
+call(
+  tail
+)
+type(
+  Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 184 6094 6102 "ocaml_dependencies.ml" 184 6094 6106
+type(
+  Pathname.t option
+)
+"ocaml_dependencies.ml" 184 6094 6113 "ocaml_dependencies.ml" 184 6094 6116
+ident(
+  def lib "ocaml_dependencies.ml" 184 6094 6121 "ocaml_dependencies.ml" 184 6094 6140
+)
+"ocaml_dependencies.ml" 184 6094 6112 "ocaml_dependencies.ml" 184 6094 6117
+type(
+  Pathname.t
+)
+"ocaml_dependencies.ml" 184 6094 6108 "ocaml_dependencies.ml" 184 6094 6117
+type(
+  Pathname.t option
+)
+"ocaml_dependencies.ml" 184 6094 6102 "ocaml_dependencies.ml" 184 6094 6117
+type(
+  Pathname.t option * Pathname.t option
+)
+"ocaml_dependencies.ml" 184 6094 6121 "ocaml_dependencies.ml" 184 6094 6132
+type(
+  SMap.key -> SMap.key -> Resources.t SMap.t
+)
+ident(
+  int_ref add_if_diff "ocaml_dependencies.ml" 179 5832 5842 "ocaml_dependencies.ml" 179 5832 5853
+)
+"ocaml_dependencies.ml" 184 6094 6133 "ocaml_dependencies.ml" 184 6094 6136
+type(
+  SMap.key
+)
+ident(
+  int_ref src "ocaml_dependencies.ml" 177 5752 5762 "ocaml_dependencies.ml" 177 5752 5765
+)
+"ocaml_dependencies.ml" 184 6094 6137 "ocaml_dependencies.ml" 184 6094 6140
+type(
+  Pathname.t
+)
+ident(
+  int_ref lib "ocaml_dependencies.ml" 184 6094 6112 "ocaml_dependencies.ml" 184 6094 6117
+)
+"ocaml_dependencies.ml" 184 6094 6121 "ocaml_dependencies.ml" 184 6094 6140
+call(
+  tail
+)
+type(
+  Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 180 5907 5913 "ocaml_dependencies.ml" 184 6094 6140
+type(
+  Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 179 5832 5838 "ocaml_dependencies.ml" 184 6094 6140
+type(
+  Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 178 5792 5798 "ocaml_dependencies.ml" 184 6094 6140
+type(
+  Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 177 5752 5758 "ocaml_dependencies.ml" 184 6094 6140
+type(
+  Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 186 6145 6153 "ocaml_dependencies.ml" 186 6145 6165
+type(
+  Resources.t SMap.t lazy_t
+)
+ident(
+  def dependencies "ocaml_dependencies.ml" 192 6299 6303 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 187 6179 6185 "ocaml_dependencies.ml" 187 6179 6194
+type(
+  (SMap.key -> Resources.t -> Resources.t SMap.t -> Resources.t SMap.t) ->
+  Resources.t SMap.t -> Resources.t SMap.t -> Resources.t SMap.t
+)
+ident(
+  ext_ref SMap.fold
+)
+"ocaml_dependencies.ml" 187 6179 6205 "ocaml_dependencies.ml" 187 6179 6206
+type(
+  SMap.key
+)
+ident(
+  def k "ocaml_dependencies.ml" 188 6210 6218 "ocaml_dependencies.ml" 188 6210 6255
+)
+"ocaml_dependencies.ml" 188 6210 6218 "ocaml_dependencies.ml" 188 6210 6232
+type(
+  (Resources.elt -> Resources.t SMap.t -> Resources.t SMap.t) ->
+  Resources.t -> Resources.t SMap.t -> Resources.t SMap.t
+)
+ident(
+  ext_ref Resources.fold
+)
+"ocaml_dependencies.ml" 188 6210 6234 "ocaml_dependencies.ml" 188 6210 6252
+type(
+  SMap.key -> Resources.elt -> Resources.t SMap.t -> Resources.t SMap.t
+)
+ident(
+  int_ref convert_dependency "ocaml_dependencies.ml" 176 5711 5719 "ocaml_dependencies.ml" 176 5711 5737
+)
+"ocaml_dependencies.ml" 188 6210 6253 "ocaml_dependencies.ml" 188 6210 6254
+type(
+  SMap.key
+)
+ident(
+  int_ref k "ocaml_dependencies.ml" 187 6179 6205 "ocaml_dependencies.ml" 187 6179 6206
+)
+"ocaml_dependencies.ml" 188 6210 6233 "ocaml_dependencies.ml" 188 6210 6255
+call(
+  stack
+)
+type(
+  Resources.elt -> Resources.t SMap.t -> Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 188 6210 6218 "ocaml_dependencies.ml" 188 6210 6255
+call(
+  tail
+)
+type(
+  Resources.t -> Resources.t SMap.t -> Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 187 6179 6195 "ocaml_dependencies.ml" 189 6256 6265
+type(
+  SMap.key -> Resources.t -> Resources.t SMap.t -> Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 189 6256 6266 "ocaml_dependencies.ml" 189 6256 6280
+type(
+  Resources.t SMap.t
+)
+ident(
+  int_ref dependency_map "ocaml_dependencies.ml" 129 4021 4029 "ocaml_dependencies.ml" 129 4021 4043
+)
+"ocaml_dependencies.ml" 189 6256 6281 "ocaml_dependencies.ml" 189 6256 6286
+type(
+  Resources.t SMap.t
+)
+ident(
+  int_ref Utils.empty "ocaml_dependencies.ml" 40 1405 1413 "ocaml_dependencies.ml" 40 1405 1418
+)
+"ocaml_dependencies.ml" 186 6145 6173 "ocaml_dependencies.ml" 190 6287 6294
+call(
+  tail
+)
+type(
+  Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 186 6145 6168 "ocaml_dependencies.ml" 190 6287 6294
+type(
+  Resources.t SMap.t lazy_t
+)
+"ocaml_dependencies.ml" 192 6299 6303 "ocaml_dependencies.ml" 192 6299 6312
+type(
+  ((Format.formatter -> Resources.t SMap.t Lazy.t -> unit) ->
+   Resources.t SMap.t Lazy.t -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Resources.t SMap.t Lazy.t -> unit) ->
+  Resources.t SMap.t Lazy.t -> unit
+)
+ident(
+  int_ref mydprintf "ocaml_dependencies.ml" 20 907 911 "ocaml_dependencies.ml" 20 907 920
+)
+"ocaml_dependencies.ml" 192 6299 6313 "ocaml_dependencies.ml" 192 6299 6332
+type(
+  ((Format.formatter -> Resources.t SMap.t Lazy.t -> unit) ->
+   Resources.t SMap.t Lazy.t -> unit, Format.formatter, unit)
+  format
+)
+"ocaml_dependencies.ml" 192 6299 6334 "ocaml_dependencies.ml" 192 6299 6344
+type(
+  (Format.formatter -> Resources.t SMap.t -> unit) ->
+  Format.formatter -> Resources.t SMap.t Lazy.t -> unit
+)
+ident(
+  int_ref Utils.print_lazy "ocaml_dependencies.ml" 59 1933 1941 "ocaml_dependencies.ml" 59 1933 1951
+)
+"ocaml_dependencies.ml" 192 6299 6345 "ocaml_dependencies.ml" 192 6299 6359
+type(
+  Format.formatter -> Resources.t SMap.t -> unit
+)
+ident(
+  int_ref Utils.print_smap_set "ocaml_dependencies.ml" 57 1880 1888 "ocaml_dependencies.ml" 57 1880 1902
+)
+"ocaml_dependencies.ml" 192 6299 6333 "ocaml_dependencies.ml" 192 6299 6360
+call(
+  stack
+)
+type(
+  Format.formatter -> Resources.t SMap.t Lazy.t -> unit
+)
+"ocaml_dependencies.ml" 192 6299 6361 "ocaml_dependencies.ml" 192 6299 6373
+type(
+  Resources.t SMap.t Lazy.t
+)
+ident(
+  int_ref dependencies "ocaml_dependencies.ml" 186 6145 6153 "ocaml_dependencies.ml" 186 6145 6165
+)
+"ocaml_dependencies.ml" 192 6299 6303 "ocaml_dependencies.ml" 192 6299 6373
+call(
+  stack
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 194 6376 6384 "ocaml_dependencies.ml" 194 6376 6399
+type(
+  SMap.key -> Resources.t
+)
+ident(
+  def dependencies_of "ocaml_dependencies.ml" 197 6479 6483 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 194 6376 6400 "ocaml_dependencies.ml" 194 6376 6401
+type(
+  SMap.key
+)
+ident(
+  def x "ocaml_dependencies.ml" 195 6404 6410 "ocaml_dependencies.ml" 195 6404 6474
+)
+"ocaml_dependencies.ml" 195 6404 6414 "ocaml_dependencies.ml" 195 6404 6423
+type(
+  SMap.key -> Resources.t SMap.t -> Resources.t
+)
+ident(
+  ext_ref SMap.find
+)
+"ocaml_dependencies.ml" 195 6404 6424 "ocaml_dependencies.ml" 195 6404 6425
+type(
+  SMap.key
+)
+ident(
+  int_ref x "ocaml_dependencies.ml" 194 6376 6400 "ocaml_dependencies.ml" 194 6376 6401
+)
+"ocaml_dependencies.ml" 195 6404 6426 "ocaml_dependencies.ml" 195 6404 6428
+type(
+  Resources.t SMap.t Lazy.t -> Resources.t SMap.t
+)
+ident(
+  ext_ref My_std.( !* )
+)
+"ocaml_dependencies.ml" 195 6404 6428 "ocaml_dependencies.ml" 195 6404 6440
+type(
+  Resources.t SMap.t Lazy.t
+)
+ident(
+  int_ref dependencies "ocaml_dependencies.ml" 186 6145 6153 "ocaml_dependencies.ml" 186 6145 6165
+)
+"ocaml_dependencies.ml" 195 6404 6426 "ocaml_dependencies.ml" 195 6404 6440
+call(
+  stack
+)
+type(
+  Resources.t SMap.t
+)
+"ocaml_dependencies.ml" 195 6404 6414 "ocaml_dependencies.ml" 195 6404 6440
+call(
+  stack
+)
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 195 6404 6446 "ocaml_dependencies.ml" 195 6404 6455
+type(
+  exn
+)
+"ocaml_dependencies.ml" 195 6404 6459 "ocaml_dependencies.ml" 195 6404 6474
+type(
+  Resources.t
+)
+ident(
+  ext_ref Resources.empty
+)
+"ocaml_dependencies.ml" 195 6404 6410 "ocaml_dependencies.ml" 195 6404 6474
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 197 6479 6487 "ocaml_dependencies.ml" 197 6479 6493
+type(
+  Pathname.t list ref
+)
+ident(
+  def needed "ocaml_dependencies.ml" 198 6506 6510 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 197 6479 6496 "ocaml_dependencies.ml" 197 6479 6499
+type(
+  Pathname.t list -> Pathname.t list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"ocaml_dependencies.ml" 197 6479 6500 "ocaml_dependencies.ml" 197 6479 6502
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 197 6479 6496 "ocaml_dependencies.ml" 197 6479 6502
+type(
+  Pathname.t list ref
+)
+"ocaml_dependencies.ml" 198 6506 6514 "ocaml_dependencies.ml" 198 6506 6518
+type(
+  Pathname.t list ref
+)
+ident(
+  def seen "ocaml_dependencies.ml" 199 6531 6535 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 198 6506 6521 "ocaml_dependencies.ml" 198 6506 6524
+type(
+  Pathname.t list -> Pathname.t list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"ocaml_dependencies.ml" 198 6506 6525 "ocaml_dependencies.ml" 198 6506 6527
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 198 6506 6521 "ocaml_dependencies.ml" 198 6506 6527
+type(
+  Pathname.t list ref
+)
+"ocaml_dependencies.ml" 199 6531 6543 "ocaml_dependencies.ml" 199 6531 6546
+type(
+  Pathname.t -> unit
+)
+ident(
+  def aux "ocaml_dependencies.ml" 199 6531 6535 "ocaml_dependencies.ml" 218 7259 7279
+)
+"ocaml_dependencies.ml" 199 6531 6547 "ocaml_dependencies.ml" 199 6531 6549
+type(
+  Pathname.t
+)
+ident(
+  def fn "ocaml_dependencies.ml" 200 6552 6558 "ocaml_dependencies.ml" 214 7144 7153
+)
+"ocaml_dependencies.ml" 200 6552 6561 "ocaml_dependencies.ml" 200 6552 6576
+type(
+  Pathname.t -> bool
+)
+ident(
+  ext_ref My_std.sys_file_exists
+)
+"ocaml_dependencies.ml" 200 6552 6577 "ocaml_dependencies.ml" 200 6552 6579
+type(
+  Pathname.t
+)
+ident(
+  int_ref fn "ocaml_dependencies.ml" 199 6531 6547 "ocaml_dependencies.ml" 199 6531 6549
+)
+"ocaml_dependencies.ml" 200 6552 6561 "ocaml_dependencies.ml" 200 6552 6579
+call(
+  stack
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 200 6552 6580 "ocaml_dependencies.ml" 200 6552 6582
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"ocaml_dependencies.ml" 200 6552 6583 "ocaml_dependencies.ml" 200 6552 6586
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"ocaml_dependencies.ml" 200 6552 6588 "ocaml_dependencies.ml" 200 6552 6596
+type(
+  Pathname.t -> Pathname.t list -> bool
+)
+ident(
+  ext_ref My_std.List.mem
+)
+"ocaml_dependencies.ml" 200 6552 6597 "ocaml_dependencies.ml" 200 6552 6599
+type(
+  Pathname.t
+)
+ident(
+  int_ref fn "ocaml_dependencies.ml" 199 6531 6547 "ocaml_dependencies.ml" 199 6531 6549
+)
+"ocaml_dependencies.ml" 200 6552 6600 "ocaml_dependencies.ml" 200 6552 6601
+type(
+  Pathname.t list ref -> Pathname.t list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocaml_dependencies.ml" 200 6552 6601 "ocaml_dependencies.ml" 200 6552 6607
+type(
+  Pathname.t list ref
+)
+ident(
+  int_ref needed "ocaml_dependencies.ml" 197 6479 6487 "ocaml_dependencies.ml" 197 6479 6493
+)
+"ocaml_dependencies.ml" 200 6552 6600 "ocaml_dependencies.ml" 200 6552 6607
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 200 6552 6587 "ocaml_dependencies.ml" 200 6552 6608
+call(
+  stack
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 200 6552 6583 "ocaml_dependencies.ml" 200 6552 6608
+type(
+  bool
+)
+"ocaml_dependencies.ml" 200 6552 6561 "ocaml_dependencies.ml" 200 6552 6608
+type(
+  bool
+)
+"ocaml_dependencies.ml" 201 6620 6631 "ocaml_dependencies.ml" 201 6620 6639
+type(
+  Pathname.t -> Pathname.t list -> bool
+)
+ident(
+  ext_ref My_std.List.mem
+)
+"ocaml_dependencies.ml" 201 6620 6640 "ocaml_dependencies.ml" 201 6620 6642
+type(
+  Pathname.t
+)
+ident(
+  int_ref fn "ocaml_dependencies.ml" 199 6531 6547 "ocaml_dependencies.ml" 199 6531 6549
+)
+"ocaml_dependencies.ml" 201 6620 6643 "ocaml_dependencies.ml" 201 6620 6644
+type(
+  Pathname.t list ref -> Pathname.t list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocaml_dependencies.ml" 201 6620 6644 "ocaml_dependencies.ml" 201 6620 6648
+type(
+  Pathname.t list ref
+)
+ident(
+  int_ref seen "ocaml_dependencies.ml" 198 6506 6514 "ocaml_dependencies.ml" 198 6506 6518
+)
+"ocaml_dependencies.ml" 201 6620 6643 "ocaml_dependencies.ml" 201 6620 6648
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 201 6620 6631 "ocaml_dependencies.ml" 201 6620 6648
+call(
+  stack
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 201 6620 6654 "ocaml_dependencies.ml" 201 6620 6659
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"ocaml_dependencies.ml" 201 6620 6684 "ocaml_dependencies.ml" 201 6620 6685
+type(
+  Pathname.t list ref -> Pathname.t list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocaml_dependencies.ml" 201 6620 6685 "ocaml_dependencies.ml" 201 6620 6689
+type(
+  Pathname.t list ref
+)
+ident(
+  int_ref seen "ocaml_dependencies.ml" 198 6506 6514 "ocaml_dependencies.ml" 198 6506 6518
+)
+"ocaml_dependencies.ml" 201 6620 6684 "ocaml_dependencies.ml" 201 6620 6689
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 201 6620 6691 "ocaml_dependencies.ml" 201 6620 6693
+type(
+  Pathname.t
+)
+ident(
+  int_ref fn "ocaml_dependencies.ml" 199 6531 6547 "ocaml_dependencies.ml" 199 6531 6549
+)
+"ocaml_dependencies.ml" 201 6620 6660 "ocaml_dependencies.ml" 201 6620 6695
+type(
+  exn
+)
+"ocaml_dependencies.ml" 201 6620 6654 "ocaml_dependencies.ml" 201 6620 6695
+type(
+  unit
+)
+"ocaml_dependencies.ml" 201 6620 6628 "ocaml_dependencies.ml" 201 6620 6695
+type(
+  unit
+)
+"ocaml_dependencies.ml" 202 6697 6705 "ocaml_dependencies.ml" 202 6697 6709
+type(
+  Pathname.t list ref
+)
+ident(
+  int_ref seen "ocaml_dependencies.ml" 198 6506 6514 "ocaml_dependencies.ml" 198 6506 6518
+)
+"ocaml_dependencies.ml" 202 6697 6710 "ocaml_dependencies.ml" 202 6697 6712
+type(
+  Pathname.t list ref -> Pathname.t list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"ocaml_dependencies.ml" 202 6697 6713 "ocaml_dependencies.ml" 202 6697 6715
+type(
+  Pathname.t
+)
+ident(
+  int_ref fn "ocaml_dependencies.ml" 199 6531 6547 "ocaml_dependencies.ml" 199 6531 6549
+)
+"ocaml_dependencies.ml" 202 6697 6719 "ocaml_dependencies.ml" 202 6697 6720
+type(
+  Pathname.t list ref -> Pathname.t list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocaml_dependencies.ml" 202 6697 6720 "ocaml_dependencies.ml" 202 6697 6724
+type(
+  Pathname.t list ref
+)
+ident(
+  int_ref seen "ocaml_dependencies.ml" 198 6506 6514 "ocaml_dependencies.ml" 198 6506 6518
+)
+"ocaml_dependencies.ml" 202 6697 6719 "ocaml_dependencies.ml" 202 6697 6724
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 202 6697 6713 "ocaml_dependencies.ml" 202 6697 6724
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 202 6697 6705 "ocaml_dependencies.ml" 202 6697 6724
+type(
+  unit
+)
+"ocaml_dependencies.ml" 203 6726 6734 "ocaml_dependencies.ml" 203 6726 6748
+type(
+  (Resources.elt -> unit) -> Resources.t -> unit
+)
+ident(
+  ext_ref Resources.iter
+)
+"ocaml_dependencies.ml" 203 6726 6759 "ocaml_dependencies.ml" 203 6726 6760
+type(
+  Resources.elt
+)
+ident(
+  def f "ocaml_dependencies.ml" 204 6764 6774 "ocaml_dependencies.ml" 211 7055 7077
+)
+"ocaml_dependencies.ml" 204 6764 6777 "ocaml_dependencies.ml" 204 6764 6792
+type(
+  Resources.elt -> bool
+)
+ident(
+  ext_ref My_std.sys_file_exists
+)
+"ocaml_dependencies.ml" 204 6764 6793 "ocaml_dependencies.ml" 204 6764 6794
+type(
+  Resources.elt
+)
+ident(
+  int_ref f "ocaml_dependencies.ml" 203 6726 6759 "ocaml_dependencies.ml" 203 6726 6760
+)
+"ocaml_dependencies.ml" 204 6764 6777 "ocaml_dependencies.ml" 204 6764 6794
+call(
+  stack
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 205 6800 6815 "ocaml_dependencies.ml" 205 6800 6836
+type(
+  Resources.elt -> string -> bool
+)
+ident(
+  ext_ref Filename.check_suffix
+)
+"ocaml_dependencies.ml" 205 6800 6837 "ocaml_dependencies.ml" 205 6800 6838
+type(
+  Resources.elt
+)
+ident(
+  int_ref f "ocaml_dependencies.ml" 203 6726 6759 "ocaml_dependencies.ml" 203 6726 6760
+)
+"ocaml_dependencies.ml" 205 6800 6839 "ocaml_dependencies.ml" 205 6800 6845
+type(
+  string
+)
+"ocaml_dependencies.ml" 205 6800 6815 "ocaml_dependencies.ml" 205 6800 6845
+call(
+  stack
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 206 6851 6869 "ocaml_dependencies.ml" 206 6851 6871
+type(
+  Pathname.t
+)
+ident(
+  def f' "ocaml_dependencies.ml" 207 6899 6913 "ocaml_dependencies.ml" 210 7033 7054
+)
+"ocaml_dependencies.ml" 206 6851 6874 "ocaml_dependencies.ml" 206 6851 6893
+type(
+  Pathname.t -> Pathname.t
+)
+ident(
+  int_ref caml_obj_ext_of_cmi "ocaml_dependencies.ml" 106 3340 3348 "ocaml_dependencies.ml" 106 3340 3367
+)
+"ocaml_dependencies.ml" 206 6851 6894 "ocaml_dependencies.ml" 206 6851 6895
+type(
+  Resources.elt
+)
+ident(
+  int_ref f "ocaml_dependencies.ml" 203 6726 6759 "ocaml_dependencies.ml" 203 6726 6760
+)
+"ocaml_dependencies.ml" 206 6851 6874 "ocaml_dependencies.ml" 206 6851 6895
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"ocaml_dependencies.ml" 207 6899 6916 "ocaml_dependencies.ml" 207 6899 6918
+type(
+  Pathname.t
+)
+ident(
+  int_ref f' "ocaml_dependencies.ml" 206 6851 6869 "ocaml_dependencies.ml" 206 6851 6871
+)
+"ocaml_dependencies.ml" 207 6899 6919 "ocaml_dependencies.ml" 207 6899 6921
+type(
+  Pathname.t -> Pathname.t -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"ocaml_dependencies.ml" 207 6899 6922 "ocaml_dependencies.ml" 207 6899 6924
+type(
+  Pathname.t
+)
+ident(
+  int_ref fn "ocaml_dependencies.ml" 199 6531 6547 "ocaml_dependencies.ml" 199 6531 6549
+)
+"ocaml_dependencies.ml" 207 6899 6916 "ocaml_dependencies.ml" 207 6899 6924
+type(
+  bool
+)
+"ocaml_dependencies.ml" 208 6930 6949 "ocaml_dependencies.ml" 208 6930 6964
+type(
+  Pathname.t -> bool
+)
+ident(
+  ext_ref My_std.sys_file_exists
+)
+"ocaml_dependencies.ml" 208 6930 6965 "ocaml_dependencies.ml" 208 6930 6967
+type(
+  Pathname.t
+)
+ident(
+  int_ref f' "ocaml_dependencies.ml" 206 6851 6869 "ocaml_dependencies.ml" 206 6851 6871
+)
+"ocaml_dependencies.ml" 208 6930 6949 "ocaml_dependencies.ml" 208 6930 6967
+call(
+  stack
+)
+type(
+  bool
+)
+"ocaml_dependencies.ml" 208 6930 6973 "ocaml_dependencies.ml" 208 6930 6976
+type(
+  Pathname.t -> unit
+)
+ident(
+  int_ref aux "ocaml_dependencies.ml" 199 6531 6543 "ocaml_dependencies.ml" 199 6531 6546
+)
+"ocaml_dependencies.ml" 208 6930 6977 "ocaml_dependencies.ml" 208 6930 6979
+type(
+  Pathname.t
+)
+ident(
+  int_ref f' "ocaml_dependencies.ml" 206 6851 6869 "ocaml_dependencies.ml" 206 6851 6871
+)
+"ocaml_dependencies.ml" 208 6930 6973 "ocaml_dependencies.ml" 208 6930 6979
+call(
+  tail
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 209 6980 7004 "ocaml_dependencies.ml" 209 6980 7013
+type(
+  bool
+)
+ident(
+  int_ref pack_mode "ocaml_dependencies.ml" 92 2830 2840 "ocaml_dependencies.ml" 92 2830 2849
+)
+"ocaml_dependencies.ml" 209 6980 7019 "ocaml_dependencies.ml" 209 6980 7022
+type(
+  Pathname.t -> unit
+)
+ident(
+  int_ref aux "ocaml_dependencies.ml" 199 6531 6543 "ocaml_dependencies.ml" 199 6531 6546
+)
+"ocaml_dependencies.ml" 209 6980 7023 "ocaml_dependencies.ml" 209 6980 7024
+type(
+  Resources.elt
+)
+ident(
+  int_ref f "ocaml_dependencies.ml" 203 6726 6759 "ocaml_dependencies.ml" 203 6726 6760
+)
+"ocaml_dependencies.ml" 209 6980 7019 "ocaml_dependencies.ml" 209 6980 7024
+call(
+  tail
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 209 6980 7030 "ocaml_dependencies.ml" 209 6980 7032
+type(
+  unit
+)
+"ocaml_dependencies.ml" 209 6980 7001 "ocaml_dependencies.ml" 209 6980 7032
+type(
+  unit
+)
+"ocaml_dependencies.ml" 208 6930 6946 "ocaml_dependencies.ml" 209 6980 7032
+type(
+  unit
+)
+"ocaml_dependencies.ml" 210 7033 7052 "ocaml_dependencies.ml" 210 7033 7054
+type(
+  unit
+)
+"ocaml_dependencies.ml" 207 6899 6913 "ocaml_dependencies.ml" 210 7033 7054
+type(
+  unit
+)
+"ocaml_dependencies.ml" 206 6851 6865 "ocaml_dependencies.ml" 210 7033 7054
+type(
+  unit
+)
+"ocaml_dependencies.ml" 211 7055 7072 "ocaml_dependencies.ml" 211 7055 7075
+type(
+  Pathname.t -> unit
+)
+ident(
+  int_ref aux "ocaml_dependencies.ml" 199 6531 6543 "ocaml_dependencies.ml" 199 6531 6546
+)
+"ocaml_dependencies.ml" 211 7055 7076 "ocaml_dependencies.ml" 211 7055 7077
+type(
+  Resources.elt
+)
+ident(
+  int_ref f "ocaml_dependencies.ml" 203 6726 6759 "ocaml_dependencies.ml" 203 6726 6760
+)
+"ocaml_dependencies.ml" 211 7055 7072 "ocaml_dependencies.ml" 211 7055 7077
+call(
+  tail
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 205 6800 6812 "ocaml_dependencies.ml" 211 7055 7077
+type(
+  unit
+)
+"ocaml_dependencies.ml" 204 6764 6774 "ocaml_dependencies.ml" 211 7055 7077
+type(
+  unit
+)
+"ocaml_dependencies.ml" 203 6726 6749 "ocaml_dependencies.ml" 212 7078 7089
+type(
+  Resources.elt -> unit
+)
+"ocaml_dependencies.ml" 212 7078 7091 "ocaml_dependencies.ml" 212 7078 7106
+type(
+  SMap.key -> Resources.t
+)
+ident(
+  int_ref dependencies_of "ocaml_dependencies.ml" 194 6376 6384 "ocaml_dependencies.ml" 194 6376 6399
+)
+"ocaml_dependencies.ml" 212 7078 7107 "ocaml_dependencies.ml" 212 7078 7109
+type(
+  Pathname.t
+)
+ident(
+  int_ref fn "ocaml_dependencies.ml" 199 6531 6547 "ocaml_dependencies.ml" 199 6531 6549
+)
+"ocaml_dependencies.ml" 212 7078 7090 "ocaml_dependencies.ml" 212 7078 7110
+call(
+  stack
+)
+type(
+  Resources.t
+)
+"ocaml_dependencies.ml" 203 6726 6734 "ocaml_dependencies.ml" 212 7078 7110
+call(
+  stack
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 213 7112 7120 "ocaml_dependencies.ml" 213 7112 7126
+type(
+  Pathname.t list ref
+)
+ident(
+  int_ref needed "ocaml_dependencies.ml" 197 6479 6487 "ocaml_dependencies.ml" 197 6479 6493
+)
+"ocaml_dependencies.ml" 213 7112 7127 "ocaml_dependencies.ml" 213 7112 7129
+type(
+  Pathname.t list ref -> Pathname.t list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"ocaml_dependencies.ml" 213 7112 7130 "ocaml_dependencies.ml" 213 7112 7132
+type(
+  Pathname.t
+)
+ident(
+  int_ref fn "ocaml_dependencies.ml" 199 6531 6547 "ocaml_dependencies.ml" 199 6531 6549
+)
+"ocaml_dependencies.ml" 213 7112 7136 "ocaml_dependencies.ml" 213 7112 7137
+type(
+  Pathname.t list ref -> Pathname.t list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocaml_dependencies.ml" 213 7112 7137 "ocaml_dependencies.ml" 213 7112 7143
+type(
+  Pathname.t list ref
+)
+ident(
+  int_ref needed "ocaml_dependencies.ml" 197 6479 6487 "ocaml_dependencies.ml" 197 6479 6493
+)
+"ocaml_dependencies.ml" 213 7112 7136 "ocaml_dependencies.ml" 213 7112 7143
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 213 7112 7130 "ocaml_dependencies.ml" 213 7112 7143
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 213 7112 7120 "ocaml_dependencies.ml" 213 7112 7143
+type(
+  unit
+)
+"ocaml_dependencies.ml" 203 6726 6734 "ocaml_dependencies.ml" 213 7112 7143
+type(
+  unit
+)
+"ocaml_dependencies.ml" 202 6697 6705 "ocaml_dependencies.ml" 213 7112 7143
+type(
+  unit
+)
+"ocaml_dependencies.ml" 200 6552 6614 "ocaml_dependencies.ml" 214 7144 7153
+type(
+  unit
+)
+"ocaml_dependencies.ml" 200 6552 6558 "ocaml_dependencies.ml" 214 7144 7153
+type(
+  unit
+)
+"ocaml_dependencies.ml" 216 7161 7165 "ocaml_dependencies.ml" 216 7161 7174
+type(
+  (Pathname.t -> unit) -> Pathname.t list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"ocaml_dependencies.ml" 216 7161 7175 "ocaml_dependencies.ml" 216 7161 7178
+type(
+  Pathname.t -> unit
+)
+ident(
+  int_ref aux "ocaml_dependencies.ml" 199 6531 6543 "ocaml_dependencies.ml" 199 6531 6546
+)
+"ocaml_dependencies.ml" 216 7161 7179 "ocaml_dependencies.ml" 216 7161 7182
+type(
+  Pathname.t list
+)
+ident(
+  int_ref fns "ocaml_dependencies.ml" 94 2886 2916 "ocaml_dependencies.ml" 94 2886 2919
+)
+"ocaml_dependencies.ml" 216 7161 7165 "ocaml_dependencies.ml" 216 7161 7182
+call(
+  stack
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 217 7184 7188 "ocaml_dependencies.ml" 217 7184 7197
+type(
+  ((Format.formatter -> Pathname.t list -> unit) ->
+   Pathname.t list ->
+   (Format.formatter -> Pathname.t list -> unit) -> Pathname.t list -> unit,
+   Format.formatter, unit)
+  format ->
+  (Format.formatter -> Pathname.t list -> unit) ->
+  Pathname.t list ->
+  (Format.formatter -> Pathname.t list -> unit) -> Pathname.t list -> unit
+)
+ident(
+  int_ref mydprintf "ocaml_dependencies.ml" 20 907 911 "ocaml_dependencies.ml" 20 907 920
+)
+"ocaml_dependencies.ml" 217 7184 7198 "ocaml_dependencies.ml" 217 7184 7235
+type(
+  ((Format.formatter -> Pathname.t list -> unit) ->
+   Pathname.t list ->
+   (Format.formatter -> Pathname.t list -> unit) -> Pathname.t list -> unit,
+   Format.formatter, unit)
+  format
+)
+"ocaml_dependencies.ml" 217 7184 7236 "ocaml_dependencies.ml" 217 7184 7240
+type(
+  Format.formatter -> Pathname.t list -> unit
+)
+ident(
+  ext_ref Tools.pp_l
+)
+"ocaml_dependencies.ml" 217 7184 7241 "ocaml_dependencies.ml" 217 7184 7244
+type(
+  Pathname.t list
+)
+ident(
+  int_ref fns "ocaml_dependencies.ml" 94 2886 2916 "ocaml_dependencies.ml" 94 2886 2919
+)
+"ocaml_dependencies.ml" 217 7184 7245 "ocaml_dependencies.ml" 217 7184 7249
+type(
+  Format.formatter -> Pathname.t list -> unit
+)
+ident(
+  ext_ref Tools.pp_l
+)
+"ocaml_dependencies.ml" 217 7184 7250 "ocaml_dependencies.ml" 217 7184 7251
+type(
+  Pathname.t list ref -> Pathname.t list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocaml_dependencies.ml" 217 7184 7251 "ocaml_dependencies.ml" 217 7184 7257
+type(
+  Pathname.t list ref
+)
+ident(
+  int_ref needed "ocaml_dependencies.ml" 197 6479 6487 "ocaml_dependencies.ml" 197 6479 6493
+)
+"ocaml_dependencies.ml" 217 7184 7250 "ocaml_dependencies.ml" 217 7184 7257
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 217 7184 7188 "ocaml_dependencies.ml" 217 7184 7257
+call(
+  stack
+)
+type(
+  unit
+)
+"ocaml_dependencies.ml" 218 7259 7263 "ocaml_dependencies.ml" 218 7259 7271
+type(
+  Pathname.t list -> Pathname.t list
+)
+ident(
+  ext_ref My_std.List.rev
+)
+"ocaml_dependencies.ml" 218 7259 7272 "ocaml_dependencies.ml" 218 7259 7273
+type(
+  Pathname.t list ref -> Pathname.t list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"ocaml_dependencies.ml" 218 7259 7273 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list ref
+)
+ident(
+  int_ref needed "ocaml_dependencies.ml" 197 6479 6487 "ocaml_dependencies.ml" 197 6479 6493
+)
+"ocaml_dependencies.ml" 218 7259 7272 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 218 7259 7263 "ocaml_dependencies.ml" 218 7259 7279
+call(
+  tail
+)
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 217 7184 7188 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 216 7161 7165 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 199 6531 6535 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 198 6506 6510 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 197 6479 6483 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 194 6376 6380 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 192 6299 6303 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 186 6145 6149 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 176 5711 5715 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 168 5465 5469 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 166 5413 5417 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 158 5122 5126 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 155 5017 5021 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 153 4945 4949 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 151 4843 4847 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 148 4749 4753 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 146 4693 4697 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 141 4487 4491 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 139 4426 4430 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 138 4370 4374 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 136 4302 4306 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 129 4021 4025 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 126 3923 3927 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 111 3484 3488 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 106 3340 3344 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 104 3283 3287 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 103 3196 3200 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 100 3039 3043 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)
+"ocaml_dependencies.ml" 96 2923 2927 "ocaml_dependencies.ml" 218 7259 7279
+type(
+  Pathname.t list
+)

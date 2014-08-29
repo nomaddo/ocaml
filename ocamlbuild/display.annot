@@ -1,0 +1,5624 @@
+"display.ml" 20 896 900 "display.ml" 20 896 902
+type(
+  out_channel -> ('a, out_channel, unit) format -> 'a
+)
+ident(
+  def fp "display.ml" 23 936 936 "display.ml" 1 0 -1
+)
+"display.ml" 20 896 905 "display.ml" 20 896 919
+type(
+  out_channel -> ('a, out_channel, unit) format -> 'a
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"display.ml" 25 959 967 "display.ml" 25 959 969
+type(
+  out_channel -> int -> unit
+)
+ident(
+  def up "display.ml" 26 998 1002 "display.ml" 35 1276 1281
+)
+"display.ml" 25 959 970 "display.ml" 25 959 972
+type(
+  out_channel
+)
+ident(
+  def oc "display.ml" 25 959 973 "display.ml" 25 959 995
+)
+"display.ml" 25 959 973 "display.ml" 25 959 974
+type(
+  int
+)
+ident(
+  def n "display.ml" 25 959 977 "display.ml" 25 959 995
+)
+"display.ml" 25 959 977 "display.ml" 25 959 979
+type(
+  out_channel -> (int -> unit, out_channel, unit) format -> int -> unit
+)
+ident(
+  int_ref fp "display.ml" 20 896 900 "display.ml" 20 896 902
+)
+"display.ml" 25 959 980 "display.ml" 25 959 982
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 25 959 970 "display.ml" 25 959 972
+)
+"display.ml" 25 959 983 "display.ml" 25 959 993
+type(
+  (int -> unit, out_channel, unit) format
+)
+"display.ml" 25 959 994 "display.ml" 25 959 995
+type(
+  int
+)
+ident(
+  int_ref n "display.ml" 25 959 973 "display.ml" 25 959 974
+)
+"display.ml" 25 959 977 "display.ml" 25 959 995
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 26 998 1006 "display.ml" 26 998 1018
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  def clear_to_eol "display.ml" 27 1044 1048 "display.ml" 35 1276 1281
+)
+"display.ml" 26 998 1019 "display.ml" 26 998 1021
+type(
+  out_channel
+)
+ident(
+  def oc "display.ml" 26 998 1022 "display.ml" 26 998 1041
+)
+"display.ml" 26 998 1022 "display.ml" 26 998 1024
+type(
+  unit
+)
+"display.ml" 26 998 1027 "display.ml" 26 998 1029
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  int_ref fp "display.ml" 20 896 900 "display.ml" 20 896 902
+)
+"display.ml" 26 998 1030 "display.ml" 26 998 1032
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 26 998 1019 "display.ml" 26 998 1021
+)
+"display.ml" 26 998 1033 "display.ml" 26 998 1041
+type(
+  (unit, out_channel, unit) format
+)
+"display.ml" 26 998 1027 "display.ml" 26 998 1041
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 27 1044 1052 "display.ml" 27 1044 1055
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  def bol "display.ml" 28 1077 1081 "display.ml" 35 1276 1281
+)
+"display.ml" 27 1044 1056 "display.ml" 27 1044 1058
+type(
+  out_channel
+)
+ident(
+  def oc "display.ml" 27 1044 1059 "display.ml" 27 1044 1074
+)
+"display.ml" 27 1044 1059 "display.ml" 27 1044 1061
+type(
+  unit
+)
+"display.ml" 27 1044 1064 "display.ml" 27 1044 1066
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  int_ref fp "display.ml" 20 896 900 "display.ml" 20 896 902
+)
+"display.ml" 27 1044 1067 "display.ml" 27 1044 1069
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 27 1044 1056 "display.ml" 27 1044 1058
+)
+"display.ml" 27 1044 1070 "display.ml" 27 1044 1074
+type(
+  (unit, out_channel, unit) format
+)
+"display.ml" 27 1044 1064 "display.ml" 27 1044 1074
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 28 1077 1085 "display.ml" 28 1077 1096
+type(
+  unit -> int
+)
+ident(
+  def get_columns "display.ml" 34 1262 1275 "display.ml" 35 1276 1281
+)
+"display.ml" 28 1077 1097 "display.ml" 28 1077 1099
+type(
+  unit
+)
+"display.ml" 29 1102 1111 "display.ml" 29 1102 1122
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"display.ml" 29 1102 1123 "display.ml" 29 1102 1124
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"display.ml" 29 1102 1125 "display.ml" 29 1102 1131
+type(
+  string
+)
+"display.ml" 29 1102 1111 "display.ml" 29 1102 1131
+type(
+  bool
+)
+"display.ml" 31 1149 1159 "display.ml" 31 1149 1172
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"display.ml" 31 1149 1174 "display.ml" 31 1149 1186
+type(
+  string -> string
+)
+ident(
+  ext_ref My_std.String.chomp
+)
+"display.ml" 31 1149 1188 "display.ml" 31 1149 1208
+type(
+  string -> string
+)
+ident(
+  ext_ref My_unix.run_and_read
+)
+"display.ml" 31 1149 1209 "display.ml" 31 1149 1220
+type(
+  string
+)
+"display.ml" 31 1149 1187 "display.ml" 31 1149 1221
+call(
+  stack
+)
+type(
+  string
+)
+"display.ml" 31 1149 1173 "display.ml" 31 1149 1222
+call(
+  stack
+)
+type(
+  string
+)
+"display.ml" 31 1149 1159 "display.ml" 31 1149 1222
+type(
+  int
+)
+"display.ml" 33 1236 1254 "display.ml" 33 1236 1255
+type(
+  string
+)
+"display.ml" 33 1236 1246 "display.ml" 33 1236 1255
+type(
+  exn
+)
+"display.ml" 33 1236 1259 "display.ml" 33 1236 1261
+type(
+  int
+)
+"display.ml" 30 1137 1145 "display.ml" 33 1236 1261
+type(
+  int
+)
+"display.ml" 34 1262 1273 "display.ml" 34 1262 1275
+type(
+  int
+)
+"display.ml" 29 1102 1108 "display.ml" 34 1262 1275
+type(
+  int
+)
+"display.ml" 76 3246 3250 "display.ml" 76 3246 3273
+type(
+  float
+)
+ident(
+  def default_update_interval "display.ml" 77 3283 3283 "display.ml" 1 0 -1
+)
+"display.ml" 76 3246 3276 "display.ml" 76 3246 3280
+type(
+  float
+)
+"display.ml" 77 3283 3287 "display.ml" 77 3283 3314
+type(
+  (string * char) list
+)
+ident(
+  def default_tagline_description "display.ml" 89 3511 3511 "display.ml" 1 0 -1
+)
+"display.ml" 78 3319 3321 "display.ml" 78 3319 3328
+type(
+  string
+)
+"display.ml" 78 3319 3334 "display.ml" 78 3319 3337
+type(
+  char
+)
+"display.ml" 78 3319 3321 "display.ml" 78 3319 3337
+type(
+  string * char
+)
+"display.ml" 79 3339 3341 "display.ml" 79 3339 3349
+type(
+  string
+)
+"display.ml" 79 3339 3354 "display.ml" 79 3339 3357
+type(
+  char
+)
+"display.ml" 79 3339 3341 "display.ml" 79 3339 3357
+type(
+  string * char
+)
+"display.ml" 80 3359 3361 "display.ml" 80 3359 3367
+type(
+  string
+)
+"display.ml" 80 3359 3374 "display.ml" 80 3359 3377
+type(
+  char
+)
+"display.ml" 80 3359 3361 "display.ml" 80 3359 3377
+type(
+  string * char
+)
+"display.ml" 81 3379 3381 "display.ml" 81 3379 3390
+type(
+  string
+)
+"display.ml" 81 3379 3394 "display.ml" 81 3379 3397
+type(
+  char
+)
+"display.ml" 81 3379 3381 "display.ml" 81 3379 3397
+type(
+  string * char
+)
+"display.ml" 82 3399 3401 "display.ml" 82 3399 3405
+type(
+  string
+)
+"display.ml" 82 3399 3414 "display.ml" 82 3399 3417
+type(
+  char
+)
+"display.ml" 82 3399 3401 "display.ml" 82 3399 3417
+type(
+  string * char
+)
+"display.ml" 83 3419 3421 "display.ml" 83 3419 3428
+type(
+  string
+)
+"display.ml" 83 3419 3434 "display.ml" 83 3419 3437
+type(
+  char
+)
+"display.ml" 83 3419 3421 "display.ml" 83 3419 3437
+type(
+  string * char
+)
+"display.ml" 84 3439 3441 "display.ml" 84 3439 3449
+type(
+  string
+)
+"display.ml" 84 3439 3454 "display.ml" 84 3439 3457
+type(
+  char
+)
+"display.ml" 84 3439 3441 "display.ml" 84 3439 3457
+type(
+  string * char
+)
+"display.ml" 85 3459 3461 "display.ml" 85 3459 3467
+type(
+  string
+)
+"display.ml" 85 3459 3474 "display.ml" 85 3459 3477
+type(
+  char
+)
+"display.ml" 85 3459 3461 "display.ml" 85 3459 3477
+type(
+  string * char
+)
+"display.ml" 77 3283 3317 "display.ml" 86 3479 3480
+type(
+  (string * char) list
+)
+"display.ml" 89 3511 3515 "display.ml" 89 3511 3530
+type(
+  int
+)
+ident(
+  def countdown_chars "display.ml" 90 3537 3537 "display.ml" 1 0 -1
+)
+"display.ml" 89 3511 3533 "display.ml" 89 3511 3534
+type(
+  int
+)
+"display.ml" 90 3537 3541 "display.ml" 90 3537 3551
+type(
+  int
+)
+ident(
+  def jobs_chars "display.ml" 91 3558 3558 "display.ml" 1 0 -1
+)
+"display.ml" 90 3537 3554 "display.ml" 90 3537 3555
+type(
+  int
+)
+"display.ml" 91 3558 3562 "display.ml" 91 3558 3579
+type(
+  int
+)
+ident(
+  def jobs_cached_chars "display.ml" 92 3586 3586 "display.ml" 1 0 -1
+)
+"display.ml" 91 3558 3582 "display.ml" 91 3558 3583
+type(
+  int
+)
+"display.ml" 92 3586 3590 "display.ml" 92 3586 3594
+type(
+  string
+)
+ident(
+  def dots "display.ml" 93 3605 3605 "display.ml" 1 0 -1
+)
+"display.ml" 92 3586 3597 "display.ml" 92 3586 3602
+type(
+  string
+)
+"display.ml" 93 3605 3609 "display.ml" 93 3605 3621
+type(
+  string
+)
+ident(
+  def start_target "display.ml" 94 3637 3637 "display.ml" 1 0 -1
+)
+"display.ml" 93 3605 3624 "display.ml" 93 3605 3634
+type(
+  string
+)
+"display.ml" 94 3637 3641 "display.ml" 94 3637 3654
+type(
+  string
+)
+ident(
+  def finish_target "display.ml" 95 3670 3670 "display.ml" 1 0 -1
+)
+"display.ml" 94 3637 3657 "display.ml" 94 3637 3667
+type(
+  string
+)
+"display.ml" 95 3670 3674 "display.ml" 95 3670 3686
+type(
+  int
+)
+ident(
+  def ticker_chars "display.ml" 96 3693 3693 "display.ml" 1 0 -1
+)
+"display.ml" 95 3670 3689 "display.ml" 95 3670 3690
+type(
+  int
+)
+"display.ml" 96 3693 3697 "display.ml" 96 3693 3710
+type(
+  float
+)
+ident(
+  def ticker_period "display.ml" 97 3720 3720 "display.ml" 1 0 -1
+)
+"display.ml" 96 3693 3713 "display.ml" 96 3693 3717
+type(
+  float
+)
+"display.ml" 97 3720 3724 "display.ml" 97 3720 3740
+type(
+  string array
+)
+ident(
+  def ticker_animation "display.ml" 103 3780 3780 "display.ml" 1 0 -1
+)
+"display.ml" 98 3746 3748 "display.ml" 98 3746 3752
+type(
+  string
+)
+"display.ml" 99 3754 3756 "display.ml" 99 3754 3759
+type(
+  string
+)
+"display.ml" 100 3761 3763 "display.ml" 100 3761 3766
+type(
+  string
+)
+"display.ml" 101 3768 3770 "display.ml" 101 3768 3773
+type(
+  string
+)
+"display.ml" 97 3720 3743 "display.ml" 102 3775 3777
+type(
+  string array
+)
+"display.ml" 103 3780 3784 "display.ml" 103 3780 3790
+type(
+  string
+)
+ident(
+  def cached "display.ml" 104 3799 3799 "display.ml" 1 0 -1
+)
+"display.ml" 103 3780 3793 "display.ml" 103 3780 3796
+type(
+  string
+)
+"display.ml" 104 3799 3803 "display.ml" 104 3799 3811
+type(
+  string
+)
+ident(
+  def uncached "display.ml" 105 3820 3820 "display.ml" 1 0 -1
+)
+"display.ml" 104 3799 3814 "display.ml" 104 3799 3817
+type(
+  string
+)
+"display.ml" 105 3820 3824 "display.ml" 105 3820 3835
+type(
+  int
+)
+ident(
+  def cache_chars "display.ml" 108 3873 3873 "display.ml" 1 0 -1
+)
+"display.ml" 105 3820 3838 "display.ml" 105 3820 3839
+type(
+  int
+)
+"display.ml" 108 3873 3877 "display.ml" 108 3873 3891
+type(
+  'a list -> bytes
+)
+ident(
+  def create_tagline "display.ml" 111 3972 3972 "display.ml" 1 0 -1
+)
+"display.ml" 108 3873 3892 "display.ml" 108 3873 3903
+type(
+  'a list
+)
+ident(
+  def description "display.ml" 108 3873 3906 "display.ml" 108 3873 3946
+)
+"display.ml" 108 3873 3906 "display.ml" 108 3873 3916
+type(
+  int -> char -> bytes
+)
+ident(
+  ext_ref Bytes.make
+)
+"display.ml" 108 3873 3918 "display.ml" 108 3873 3929
+type(
+  'a list -> int
+)
+ident(
+  ext_ref My_std.List.length
+)
+"display.ml" 108 3873 3930 "display.ml" 108 3873 3941
+type(
+  'a list
+)
+ident(
+  int_ref description "display.ml" 108 3873 3892 "display.ml" 108 3873 3903
+)
+"display.ml" 108 3873 3917 "display.ml" 108 3873 3942
+call(
+  stack
+)
+type(
+  int
+)
+"display.ml" 108 3873 3943 "display.ml" 108 3873 3946
+type(
+  char
+)
+"display.ml" 108 3873 3906 "display.ml" 108 3873 3946
+call(
+  tail
+)
+type(
+  bytes
+)
+"display.ml" 111 3972 3976 "display.ml" 111 3972 3982
+type(
+  ?channel:out_channel ->
+  ?mode:[ `Classic | `Sophisticated ] ->
+  ?columns:int ->
+  ?description:tagline_description ->
+  ?log_file:string -> ?log_level:int -> unit -> display
+)
+ident(
+  def create "display.ml" 165 5783 5783 "display.ml" 1 0 -1
+)
+"display.ml" 112 3983 3987 "display.ml" 112 3983 3994
+type(
+  out_channel
+)
+"display.ml" 112 3983 3995 "display.ml" 112 3983 4001
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stdout
+)
+type(
+  out_channel
+)
+ident(
+  int_ref *sth* "display.ml" 112 3983 3995 "display.ml" 112 3983 4001
+)
+type(
+  out_channel option
+)
+type(
+  out_channel option
+)
+type(
+  out_channel
+)
+"display.ml" 113 4003 4007 "display.ml" 113 4003 4011
+type(
+  [ `Classic | `Sophisticated ]
+)
+"display.ml" 113 4003 4040 "display.ml" 113 4003 4054
+type(
+  [ `Classic | `Sophisticated ]
+)
+type(
+  [ `Classic | `Sophisticated ]
+)
+ident(
+  int_ref *sth* "display.ml" 113 4003 4040 "display.ml" 113 4003 4054
+)
+type(
+  [ `Classic | `Sophisticated ] option
+)
+type(
+  [ `Classic | `Sophisticated ] option
+)
+type(
+  [ `Classic | `Sophisticated ]
+)
+"display.ml" 114 4056 4068 "display.ml" 114 4056 4076
+type(
+  int
+)
+"display.ml" 114 4056 4077 "display.ml" 114 4056 4079
+type(
+  int
+)
+type(
+  int
+)
+ident(
+  int_ref *sth* "display.ml" 114 4056 4077 "display.ml" 114 4056 4079
+)
+type(
+  int option
+)
+type(
+  int option
+)
+type(
+  int
+)
+"display.ml" 115 4081 4085 "display.ml" 115 4081 4096
+type(
+  tagline_description
+)
+"display.ml" 115 4081 4099 "display.ml" 115 4081 4126
+type(
+  tagline_description
+)
+ident(
+  int_ref default_tagline_description "display.ml" 77 3283 3287 "display.ml" 77 3283 3314
+)
+type(
+  tagline_description
+)
+ident(
+  int_ref *sth* "display.ml" 115 4081 4099 "display.ml" 115 4081 4126
+)
+type(
+  tagline_description option
+)
+type(
+  tagline_description option
+)
+type(
+  tagline_description
+)
+"display.ml" 116 4128 4131 "display.ml" 116 4128 4139
+type(
+  string option
+)
+ident(
+  def log_file "display.ml" 117 4140 4142 "display.ml" 161 5723 5752
+)
+"display.ml" 117 4140 4144 "display.ml" 117 4140 4153
+type(
+  int
+)
+"display.ml" 117 4140 4154 "display.ml" 117 4140 4155
+type(
+  int
+)
+type(
+  int
+)
+ident(
+  int_ref *sth* "display.ml" 117 4140 4154 "display.ml" 117 4140 4155
+)
+type(
+  int option
+)
+type(
+  int option
+)
+type(
+  int
+)
+"display.ml" 118 4157 4159 "display.ml" 118 4157 4161
+type(
+  unit
+)
+"display.ml" 120 4166 4172 "display.ml" 120 4166 4183
+type(
+  (Format.formatter * out_channel) option
+)
+ident(
+  def log_channel "display.ml" 130 4468 4470 "display.ml" 161 5723 5752
+)
+"display.ml" 121 4186 4196 "display.ml" 121 4186 4204
+type(
+  string option
+)
+ident(
+  int_ref log_file "display.ml" 116 4128 4131 "display.ml" 116 4128 4139
+)
+"display.ml" 122 4210 4216 "display.ml" 122 4210 4220
+type(
+  string option
+)
+"display.ml" 122 4210 4224 "display.ml" 122 4210 4228
+type(
+  (Format.formatter * out_channel) option
+)
+"display.ml" 123 4229 4240 "display.ml" 123 4229 4242
+type(
+  string
+)
+ident(
+  def fn "display.ml" 124 4246 4254 "display.ml" 127 4441 4461
+)
+"display.ml" 123 4229 4235 "display.ml" 123 4229 4242
+type(
+  string option
+)
+"display.ml" 124 4246 4258 "display.ml" 124 4246 4260
+type(
+  out_channel
+)
+ident(
+  def oc "display.ml" 125 4337 4345 "display.ml" 127 4441 4461
+)
+"display.ml" 124 4246 4263 "display.ml" 124 4246 4275
+type(
+  open_flag list -> int -> string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out_gen
+)
+"display.ml" 124 4246 4277 "display.ml" 124 4246 4286
+type(
+  open_flag
+)
+"display.ml" 124 4246 4288 "display.ml" 124 4246 4299
+type(
+  open_flag
+)
+"display.ml" 124 4246 4301 "display.ml" 124 4246 4311
+type(
+  open_flag
+)
+"display.ml" 124 4246 4313 "display.ml" 124 4246 4323
+type(
+  open_flag
+)
+"display.ml" 124 4246 4276 "display.ml" 124 4246 4324
+type(
+  open_flag list
+)
+"display.ml" 124 4246 4325 "display.ml" 124 4246 4330
+type(
+  int
+)
+"display.ml" 124 4246 4331 "display.ml" 124 4246 4333
+type(
+  string
+)
+ident(
+  int_ref fn "display.ml" 123 4229 4240 "display.ml" 123 4229 4242
+)
+"display.ml" 124 4246 4263 "display.ml" 124 4246 4333
+call(
+  stack
+)
+type(
+  out_channel
+)
+"display.ml" 125 4337 4349 "display.ml" 125 4337 4350
+type(
+  Format.formatter
+)
+ident(
+  def f "display.ml" 126 4391 4399 "display.ml" 127 4441 4461
+)
+"display.ml" 125 4337 4353 "display.ml" 125 4337 4384
+type(
+  out_channel -> Format.formatter
+)
+ident(
+  ext_ref Format.formatter_of_out_channel
+)
+"display.ml" 125 4337 4385 "display.ml" 125 4337 4387
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 124 4246 4258 "display.ml" 124 4246 4260
+)
+"display.ml" 125 4337 4353 "display.ml" 125 4337 4387
+call(
+  stack
+)
+type(
+  Format.formatter
+)
+"display.ml" 126 4391 4399 "display.ml" 126 4391 4413
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"display.ml" 126 4391 4414 "display.ml" 126 4391 4415
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "display.ml" 125 4337 4349 "display.ml" 125 4337 4350
+)
+"display.ml" 126 4391 4416 "display.ml" 126 4391 4439
+type(
+  (unit, Format.formatter, unit) format
+)
+"display.ml" 126 4391 4399 "display.ml" 126 4391 4439
+call(
+  stack
+)
+type(
+  unit
+)
+"display.ml" 127 4441 4455 "display.ml" 127 4441 4456
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "display.ml" 125 4337 4349 "display.ml" 125 4337 4350
+)
+"display.ml" 127 4441 4458 "display.ml" 127 4441 4460
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 124 4246 4258 "display.ml" 124 4246 4260
+)
+"display.ml" 127 4441 4454 "display.ml" 127 4441 4461
+type(
+  Format.formatter * out_channel
+)
+"display.ml" 127 4441 4449 "display.ml" 127 4441 4461
+type(
+  (Format.formatter * out_channel) option
+)
+"display.ml" 126 4391 4399 "display.ml" 127 4441 4461
+type(
+  (Format.formatter * out_channel) option
+)
+"display.ml" 125 4337 4345 "display.ml" 127 4441 4461
+type(
+  (Format.formatter * out_channel) option
+)
+"display.ml" 124 4246 4254 "display.ml" 127 4441 4461
+type(
+  (Format.formatter * out_channel) option
+)
+"display.ml" 121 4186 4190 "display.ml" 127 4441 4461
+type(
+  (Format.formatter * out_channel) option
+)
+"display.ml" 130 4468 4474 "display.ml" 130 4468 4486
+type(
+  display_line
+)
+ident(
+  def display_line "display.ml" 156 5525 5527 "display.ml" 161 5723 5752
+)
+"display.ml" 131 4489 4499 "display.ml" 131 4489 4503
+type(
+  [ `Classic | `Sophisticated ]
+)
+ident(
+  int_ref mode "display.ml" 113 4003 4007 "display.ml" 113 4003 4011
+)
+"display.ml" 132 4509 4515 "display.ml" 132 4509 4523
+type(
+  [ `Classic | `Sophisticated ]
+)
+"display.ml" 132 4509 4527 "display.ml" 132 4509 4534
+type(
+  display_line
+)
+"display.ml" 133 4535 4541 "display.ml" 133 4535 4555
+type(
+  [ `Classic | `Sophisticated ]
+)
+"display.ml" 135 4603 4613 "display.ml" 135 4603 4614
+type(
+  int
+)
+ident(
+  def n "display.ml" 136 4640 4646 "display.ml" 154 5475 5519
+)
+"display.ml" 135 4603 4617 "display.ml" 135 4603 4633
+type(
+  unit -> int
+)
+ident(
+  int_ref ANSI.get_columns "display.ml" 28 1077 1085 "display.ml" 28 1077 1096
+)
+"display.ml" 135 4603 4634 "display.ml" 135 4603 4636
+type(
+  unit
+)
+"display.ml" 135 4603 4617 "display.ml" 135 4603 4636
+call(
+  stack
+)
+type(
+  int
+)
+"display.ml" 136 4640 4650 "display.ml" 136 4640 4659
+type(
+  int
+)
+ident(
+  def tag_chars "display.ml" 137 4689 4695 "display.ml" 154 5475 5519
+)
+"display.ml" 136 4640 4662 "display.ml" 136 4640 4673
+type(
+  tagline_description -> int
+)
+ident(
+  ext_ref My_std.List.length
+)
+"display.ml" 136 4640 4674 "display.ml" 136 4640 4685
+type(
+  tagline_description
+)
+ident(
+  int_ref description "display.ml" 115 4081 4085 "display.ml" 115 4081 4096
+)
+"display.ml" 136 4640 4662 "display.ml" 136 4640 4685
+call(
+  stack
+)
+type(
+  int
+)
+"display.ml" 138 4709 4740 "display.ml" 138 4709 4746
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stdout
+)
+"display.ml" 139 4748 4779 "display.ml" 139 4748 4791
+type(
+  unit -> float
+)
+ident(
+  ext_ref My_unix.gettimeofday
+)
+"display.ml" 139 4748 4792 "display.ml" 139 4748 4794
+type(
+  unit
+)
+"display.ml" 139 4748 4779 "display.ml" 139 4748 4794
+call(
+  stack
+)
+type(
+  float
+)
+"display.ml" 140 4796 4827 "display.ml" 140 4796 4830
+type(
+  float
+)
+"display.ml" 141 4832 4863 "display.ml" 141 4832 4875
+type(
+  string
+)
+ident(
+  int_ref start_target "display.ml" 93 3605 3609 "display.ml" 93 3605 3621
+)
+"display.ml" 142 4877 4908 "display.ml" 142 4877 4918
+type(
+  Tags.t
+)
+ident(
+  ext_ref Tags.empty
+)
+"display.ml" 143 4920 4951 "display.ml" 143 4920 4956
+type(
+  bool
+)
+"display.ml" 144 4958 4989 "display.ml" 144 4958 4994
+type(
+  bool
+)
+"display.ml" 145 4996 5027 "display.ml" 145 4996 5050
+type(
+  float
+)
+ident(
+  int_ref default_update_interval "display.ml" 76 3246 3250 "display.ml" 76 3246 3273
+)
+"display.ml" 146 5052 5083 "display.ml" 146 5052 5084
+type(
+  int
+)
+ident(
+  int_ref n "display.ml" 135 4603 4613 "display.ml" 135 4603 4614
+)
+"display.ml" 147 5086 5117 "display.ml" 147 5086 5118
+type(
+  int
+)
+"display.ml" 148 5120 5151 "display.ml" 148 5120 5152
+type(
+  int
+)
+"display.ml" 149 5154 5185 "display.ml" 149 5154 5199
+type(
+  tagline_description -> bytes
+)
+ident(
+  int_ref create_tagline "display.ml" 108 3873 3877 "display.ml" 108 3873 3891
+)
+"display.ml" 149 5154 5200 "display.ml" 149 5154 5211
+type(
+  tagline_description
+)
+ident(
+  int_ref description "display.ml" 115 4081 4085 "display.ml" 115 4081 4096
+)
+"display.ml" 149 5154 5185 "display.ml" 149 5154 5211
+call(
+  stack
+)
+type(
+  bytes
+)
+"display.ml" 150 5213 5244 "display.ml" 150 5213 5254
+type(
+  Tags.t
+)
+ident(
+  ext_ref Tags.empty
+)
+"display.ml" 151 5256 5287 "display.ml" 151 5256 5288
+type(
+  int
+)
+ident(
+  int_ref n "display.ml" 135 4603 4613 "display.ml" 135 4603 4614
+)
+"display.ml" 151 5256 5289 "display.ml" 151 5256 5290
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"display.ml" 152 5291 5325 "display.ml" 152 5291 5340
+type(
+  int
+)
+ident(
+  int_ref countdown_chars "display.ml" 89 3511 3515 "display.ml" 89 3511 3530
+)
+"display.ml" 152 5291 5341 "display.ml" 152 5291 5342
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"display.ml" 152 5291 5343 "display.ml" 152 5291 5344
+type(
+  int
+)
+"display.ml" 152 5291 5325 "display.ml" 152 5291 5344
+type(
+  int
+)
+"display.ml" 152 5291 5345 "display.ml" 152 5291 5346
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"display.ml" 152 5291 5347 "display.ml" 152 5291 5357
+type(
+  int
+)
+ident(
+  int_ref jobs_chars "display.ml" 90 3537 3541 "display.ml" 90 3537 3551
+)
+"display.ml" 152 5291 5325 "display.ml" 152 5291 5357
+type(
+  int
+)
+"display.ml" 152 5291 5358 "display.ml" 152 5291 5359
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"display.ml" 152 5291 5360 "display.ml" 152 5291 5361
+type(
+  int
+)
+"display.ml" 152 5291 5325 "display.ml" 152 5291 5361
+type(
+  int
+)
+"display.ml" 152 5291 5362 "display.ml" 152 5291 5363
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"display.ml" 152 5291 5364 "display.ml" 152 5291 5381
+type(
+  int
+)
+ident(
+  int_ref jobs_cached_chars "display.ml" 91 3558 3562 "display.ml" 91 3558 3579
+)
+"display.ml" 152 5291 5325 "display.ml" 152 5291 5381
+type(
+  int
+)
+"display.ml" 152 5291 5382 "display.ml" 152 5291 5383
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"display.ml" 152 5291 5384 "display.ml" 152 5291 5385
+type(
+  int
+)
+"display.ml" 152 5291 5325 "display.ml" 152 5291 5385
+type(
+  int
+)
+"display.ml" 152 5291 5386 "display.ml" 152 5291 5387
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"display.ml" 153 5388 5422 "display.ml" 153 5388 5433
+type(
+  int
+)
+ident(
+  int_ref cache_chars "display.ml" 105 3820 3824 "display.ml" 105 3820 3835
+)
+"display.ml" 152 5291 5325 "display.ml" 153 5388 5433
+type(
+  int
+)
+"display.ml" 153 5388 5434 "display.ml" 153 5388 5435
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"display.ml" 153 5388 5436 "display.ml" 153 5388 5437
+type(
+  int
+)
+"display.ml" 152 5291 5325 "display.ml" 153 5388 5437
+type(
+  int
+)
+"display.ml" 153 5388 5438 "display.ml" 153 5388 5439
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"display.ml" 153 5388 5440 "display.ml" 153 5388 5449
+type(
+  int
+)
+ident(
+  int_ref tag_chars "display.ml" 136 4640 4650 "display.ml" 136 4640 4659
+)
+"display.ml" 152 5291 5325 "display.ml" 153 5388 5449
+type(
+  int
+)
+"display.ml" 153 5388 5450 "display.ml" 153 5388 5451
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"display.ml" 153 5388 5452 "display.ml" 153 5388 5453
+type(
+  int
+)
+"display.ml" 152 5291 5325 "display.ml" 153 5388 5453
+type(
+  int
+)
+"display.ml" 153 5388 5454 "display.ml" 153 5388 5455
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"display.ml" 153 5388 5456 "display.ml" 153 5388 5468
+type(
+  int
+)
+ident(
+  int_ref ticker_chars "display.ml" 95 3670 3674 "display.ml" 95 3670 3686
+)
+"display.ml" 152 5291 5325 "display.ml" 153 5388 5468
+type(
+  int
+)
+"display.ml" 153 5388 5469 "display.ml" 153 5388 5470
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"display.ml" 153 5388 5471 "display.ml" 153 5388 5472
+type(
+  int
+)
+"display.ml" 152 5291 5324 "display.ml" 153 5388 5473
+type(
+  int
+)
+"display.ml" 151 5256 5287 "display.ml" 153 5388 5473
+type(
+  int
+)
+"display.ml" 154 5475 5506 "display.ml" 154 5475 5517
+type(
+  tagline_description
+)
+ident(
+  int_ref description "display.ml" 115 4081 4085 "display.ml" 115 4081 4096
+)
+"display.ml" 138 4709 4717 "display.ml" 154 5475 5519
+type(
+  sophisticated_display
+)
+"display.ml" 137 4689 4695 "display.ml" 154 5475 5519
+type(
+  display_line
+)
+"display.ml" 136 4640 4646 "display.ml" 154 5475 5519
+type(
+  display_line
+)
+"display.ml" 135 4603 4609 "display.ml" 154 5475 5519
+type(
+  display_line
+)
+"display.ml" 131 4489 4493 "display.ml" 154 5475 5519
+type(
+  display_line
+)
+"display.ml" 156 5525 5547 "display.ml" 156 5525 5556
+type(
+  int
+)
+ident(
+  int_ref log_level "display.ml" 117 4140 4144 "display.ml" 117 4140 4153
+)
+"display.ml" 157 5558 5580 "display.ml" 157 5558 5591
+type(
+  (Format.formatter * out_channel) option
+)
+ident(
+  int_ref log_channel "display.ml" 120 4166 4172 "display.ml" 120 4166 4183
+)
+"display.ml" 158 5593 5615 "display.ml" 158 5593 5622
+type(
+  out_channel
+)
+ident(
+  int_ref channel "display.ml" 112 3983 3987 "display.ml" 112 3983 3994
+)
+"display.ml" 159 5624 5646 "display.ml" 159 5624 5677
+type(
+  out_channel -> Format.formatter
+)
+ident(
+  ext_ref Format.formatter_of_out_channel
+)
+"display.ml" 159 5624 5678 "display.ml" 159 5624 5685
+type(
+  out_channel
+)
+ident(
+  int_ref channel "display.ml" 112 3983 3987 "display.ml" 112 3983 3994
+)
+"display.ml" 159 5624 5646 "display.ml" 159 5624 5685
+call(
+  stack
+)
+type(
+  Format.formatter
+)
+"display.ml" 160 5687 5709 "display.ml" 160 5687 5721
+type(
+  display_line
+)
+ident(
+  int_ref display_line "display.ml" 130 4468 4474 "display.ml" 130 4468 4486
+)
+"display.ml" 161 5723 5745 "display.ml" 161 5723 5750
+type(
+  bool
+)
+"display.ml" 156 5525 5527 "display.ml" 161 5723 5752
+type(
+  display
+)
+"display.ml" 130 4468 4470 "display.ml" 161 5723 5752
+type(
+  display
+)
+"display.ml" 120 4166 4168 "display.ml" 161 5723 5752
+type(
+  display
+)
+"display.ml" 165 5783 5787 "display.ml" 165 5783 5797
+type(
+  out_channel -> float -> unit
+)
+ident(
+  def print_time "display.ml" 174 5981 5981 "display.ml" 1 0 -1
+)
+"display.ml" 165 5783 5798 "display.ml" 165 5783 5800
+type(
+  out_channel
+)
+ident(
+  def oc "display.ml" 165 5783 5801 "display.ml" 170 5906 5936
+)
+"display.ml" 165 5783 5801 "display.ml" 165 5783 5802
+type(
+  float
+)
+ident(
+  def t "display.ml" 166 5805 5807 "display.ml" 170 5906 5936
+)
+"display.ml" 166 5805 5811 "display.ml" 166 5805 5812
+type(
+  int
+)
+ident(
+  def t "display.ml" 167 5833 5835 "display.ml" 170 5906 5936
+)
+"display.ml" 166 5805 5815 "display.ml" 166 5805 5827
+type(
+  float -> int
+)
+ident(
+  ext_ref Pervasives.int_of_float
+)
+"display.ml" 166 5805 5828 "display.ml" 166 5805 5829
+type(
+  float
+)
+ident(
+  int_ref t "display.ml" 165 5783 5801 "display.ml" 165 5783 5802
+)
+"display.ml" 166 5805 5815 "display.ml" 166 5805 5829
+type(
+  int
+)
+"display.ml" 167 5833 5839 "display.ml" 167 5833 5840
+type(
+  int
+)
+ident(
+  def s "display.ml" 168 5855 5857 "display.ml" 170 5906 5936
+)
+"display.ml" 167 5833 5843 "display.ml" 167 5833 5844
+type(
+  int
+)
+ident(
+  int_ref t "display.ml" 166 5805 5811 "display.ml" 166 5805 5812
+)
+"display.ml" 167 5833 5845 "display.ml" 167 5833 5848
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( mod )
+)
+"display.ml" 167 5833 5849 "display.ml" 167 5833 5851
+type(
+  int
+)
+"display.ml" 167 5833 5843 "display.ml" 167 5833 5851
+type(
+  int
+)
+"display.ml" 168 5855 5861 "display.ml" 168 5855 5862
+type(
+  int
+)
+ident(
+  def m "display.ml" 169 5884 5886 "display.ml" 170 5906 5936
+)
+"display.ml" 168 5855 5866 "display.ml" 168 5855 5867
+type(
+  int
+)
+ident(
+  int_ref t "display.ml" 166 5805 5811 "display.ml" 166 5805 5812
+)
+"display.ml" 168 5855 5868 "display.ml" 168 5855 5869
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"display.ml" 168 5855 5870 "display.ml" 168 5855 5872
+type(
+  int
+)
+"display.ml" 168 5855 5865 "display.ml" 168 5855 5873
+type(
+  int
+)
+"display.ml" 168 5855 5874 "display.ml" 168 5855 5877
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( mod )
+)
+"display.ml" 168 5855 5878 "display.ml" 168 5855 5880
+type(
+  int
+)
+"display.ml" 168 5855 5865 "display.ml" 168 5855 5880
+type(
+  int
+)
+"display.ml" 169 5884 5890 "display.ml" 169 5884 5891
+type(
+  int
+)
+ident(
+  def h "display.ml" 170 5906 5908 "display.ml" 170 5906 5936
+)
+"display.ml" 169 5884 5894 "display.ml" 169 5884 5895
+type(
+  int
+)
+ident(
+  int_ref t "display.ml" 166 5805 5811 "display.ml" 166 5805 5812
+)
+"display.ml" 169 5884 5896 "display.ml" 169 5884 5897
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"display.ml" 169 5884 5898 "display.ml" 169 5884 5902
+type(
+  int
+)
+"display.ml" 169 5884 5894 "display.ml" 169 5884 5902
+type(
+  int
+)
+"display.ml" 170 5906 5908 "display.ml" 170 5906 5910
+type(
+  out_channel ->
+  (int -> int -> int -> unit, out_channel, unit) format ->
+  int -> int -> int -> unit
+)
+ident(
+  int_ref fp "display.ml" 20 896 900 "display.ml" 20 896 902
+)
+"display.ml" 170 5906 5911 "display.ml" 170 5906 5913
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 165 5783 5798 "display.ml" 165 5783 5800
+)
+"display.ml" 170 5906 5914 "display.ml" 170 5906 5930
+type(
+  (int -> int -> int -> unit, out_channel, unit) format
+)
+"display.ml" 170 5906 5931 "display.ml" 170 5906 5932
+type(
+  int
+)
+ident(
+  int_ref h "display.ml" 169 5884 5890 "display.ml" 169 5884 5891
+)
+"display.ml" 170 5906 5933 "display.ml" 170 5906 5934
+type(
+  int
+)
+ident(
+  int_ref m "display.ml" 168 5855 5861 "display.ml" 168 5855 5862
+)
+"display.ml" 170 5906 5935 "display.ml" 170 5906 5936
+type(
+  int
+)
+ident(
+  int_ref s "display.ml" 167 5833 5839 "display.ml" 167 5833 5840
+)
+"display.ml" 170 5906 5908 "display.ml" 170 5906 5936
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 169 5884 5886 "display.ml" 170 5906 5936
+type(
+  unit
+)
+"display.ml" 168 5855 5857 "display.ml" 170 5906 5936
+type(
+  unit
+)
+"display.ml" 167 5833 5835 "display.ml" 170 5906 5936
+type(
+  unit
+)
+"display.ml" 166 5805 5807 "display.ml" 170 5906 5936
+type(
+  unit
+)
+"display.ml" 174 5981 5985 "display.ml" 174 5981 6009
+type(
+  int -> out_channel -> string -> unit
+)
+ident(
+  def print_shortened_pathname "display.ml" 205 6912 6912 "display.ml" 1 0 -1
+)
+"display.ml" 174 5981 6010 "display.ml" 174 5981 6016
+type(
+  int
+)
+ident(
+  def length "display.ml" 174 5981 6017 "display.ml" 188 6325 6332
+)
+"display.ml" 174 5981 6017 "display.ml" 174 5981 6019
+type(
+  out_channel
+)
+ident(
+  def oc "display.ml" 174 5981 6020 "display.ml" 188 6325 6332
+)
+"display.ml" 174 5981 6020 "display.ml" 174 5981 6021
+type(
+  string
+)
+ident(
+  def u "display.ml" 175 6024 6026 "display.ml" 188 6325 6332
+)
+"display.ml" 175 6024 6033 "display.ml" 175 6024 6039
+type(
+  int
+)
+ident(
+  int_ref length "display.ml" 174 5981 6010 "display.ml" 174 5981 6016
+)
+"display.ml" 175 6024 6040 "display.ml" 175 6024 6042
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"display.ml" 175 6024 6043 "display.ml" 175 6024 6044
+type(
+  int
+)
+"display.ml" 175 6024 6032 "display.ml" 175 6024 6045
+type(
+  bool
+)
+"display.ml" 175 6024 6026 "display.ml" 175 6024 6045
+type(
+  unit
+)
+"display.ml" 176 6047 6053 "display.ml" 176 6047 6054
+type(
+  int
+)
+ident(
+  def m "display.ml" 177 6076 6078 "display.ml" 188 6325 6332
+)
+"display.ml" 176 6047 6057 "display.ml" 176 6047 6070
+type(
+  string -> int
+)
+ident(
+  ext_ref My_std.String.length
+)
+"display.ml" 176 6047 6071 "display.ml" 176 6047 6072
+type(
+  string
+)
+ident(
+  int_ref u "display.ml" 174 5981 6020 "display.ml" 174 5981 6021
+)
+"display.ml" 176 6047 6057 "display.ml" 176 6047 6072
+type(
+  int
+)
+"display.ml" 177 6076 6081 "display.ml" 177 6076 6082
+type(
+  int
+)
+ident(
+  int_ref m "display.ml" 176 6047 6053 "display.ml" 176 6047 6054
+)
+"display.ml" 177 6076 6083 "display.ml" 177 6076 6085
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"display.ml" 177 6076 6086 "display.ml" 177 6076 6092
+type(
+  int
+)
+ident(
+  int_ref length "display.ml" 174 5981 6010 "display.ml" 174 5981 6016
+)
+"display.ml" 177 6076 6081 "display.ml" 177 6076 6092
+type(
+  bool
+)
+"display.ml" 179 6108 6114 "display.ml" 179 6108 6127
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"display.ml" 179 6108 6128 "display.ml" 179 6108 6130
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 174 5981 6017 "display.ml" 174 5981 6019
+)
+"display.ml" 179 6108 6131 "display.ml" 179 6108 6132
+type(
+  string
+)
+ident(
+  int_ref u "display.ml" 174 5981 6020 "display.ml" 174 5981 6021
+)
+"display.ml" 179 6108 6114 "display.ml" 179 6108 6132
+call(
+  stack
+)
+type(
+  unit
+)
+"display.ml" 180 6134 6140 "display.ml" 180 6134 6142
+type(
+  out_channel ->
+  (int -> string -> unit, out_channel, unit) format -> int -> string -> unit
+)
+ident(
+  int_ref fp "display.ml" 20 896 900 "display.ml" 20 896 902
+)
+"display.ml" 180 6134 6143 "display.ml" 180 6134 6145
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 174 5981 6017 "display.ml" 174 5981 6019
+)
+"display.ml" 180 6134 6146 "display.ml" 180 6134 6151
+type(
+  (int -> string -> unit, out_channel, unit) format
+)
+"display.ml" 180 6134 6153 "display.ml" 180 6134 6159
+type(
+  int
+)
+ident(
+  int_ref length "display.ml" 174 5981 6010 "display.ml" 174 5981 6016
+)
+"display.ml" 180 6134 6160 "display.ml" 180 6134 6161
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"display.ml" 180 6134 6162 "display.ml" 180 6134 6163
+type(
+  int
+)
+ident(
+  int_ref m "display.ml" 176 6047 6053 "display.ml" 176 6047 6054
+)
+"display.ml" 180 6134 6152 "display.ml" 180 6134 6164
+type(
+  int
+)
+"display.ml" 180 6134 6165 "display.ml" 180 6134 6167
+type(
+  string
+)
+"display.ml" 180 6134 6140 "display.ml" 180 6134 6167
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 178 6098 6102 "display.ml" 181 6168 6175
+type(
+  unit
+)
+"display.ml" 184 6193 6203 "display.ml" 184 6193 6204
+type(
+  int
+)
+ident(
+  def n "display.ml" 185 6229 6235 "display.ml" 187 6286 6324
+)
+"display.ml" 184 6193 6207 "display.ml" 184 6193 6220
+type(
+  string -> int
+)
+ident(
+  ext_ref My_std.String.length
+)
+"display.ml" 184 6193 6221 "display.ml" 184 6193 6225
+type(
+  string
+)
+ident(
+  int_ref dots "display.ml" 92 3586 3590 "display.ml" 92 3586 3594
+)
+"display.ml" 184 6193 6207 "display.ml" 184 6193 6225
+type(
+  int
+)
+"display.ml" 185 6229 6239 "display.ml" 185 6229 6240
+type(
+  int
+)
+ident(
+  def k "display.ml" 186 6257 6263 "display.ml" 187 6286 6324
+)
+"display.ml" 185 6229 6243 "display.ml" 185 6229 6249
+type(
+  int
+)
+ident(
+  int_ref length "display.ml" 174 5981 6010 "display.ml" 174 5981 6016
+)
+"display.ml" 185 6229 6250 "display.ml" 185 6229 6251
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"display.ml" 185 6229 6252 "display.ml" 185 6229 6253
+type(
+  int
+)
+ident(
+  int_ref n "display.ml" 184 6193 6203 "display.ml" 184 6193 6204
+)
+"display.ml" 185 6229 6243 "display.ml" 185 6229 6253
+type(
+  int
+)
+"display.ml" 186 6257 6263 "display.ml" 186 6257 6276
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"display.ml" 186 6257 6277 "display.ml" 186 6257 6279
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 174 5981 6017 "display.ml" 174 5981 6019
+)
+"display.ml" 186 6257 6280 "display.ml" 186 6257 6284
+type(
+  string
+)
+ident(
+  int_ref dots "display.ml" 92 3586 3590 "display.ml" 92 3586 3594
+)
+"display.ml" 186 6257 6263 "display.ml" 186 6257 6284
+call(
+  stack
+)
+type(
+  unit
+)
+"display.ml" 187 6286 6292 "display.ml" 187 6286 6308
+type(
+  out_channel -> string -> int -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output_substring
+)
+"display.ml" 187 6286 6309 "display.ml" 187 6286 6311
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 174 5981 6017 "display.ml" 174 5981 6019
+)
+"display.ml" 187 6286 6312 "display.ml" 187 6286 6313
+type(
+  string
+)
+ident(
+  int_ref u "display.ml" 174 5981 6020 "display.ml" 174 5981 6021
+)
+"display.ml" 187 6286 6315 "display.ml" 187 6286 6316
+type(
+  int
+)
+ident(
+  int_ref m "display.ml" 176 6047 6053 "display.ml" 176 6047 6054
+)
+"display.ml" 187 6286 6317 "display.ml" 187 6286 6318
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"display.ml" 187 6286 6319 "display.ml" 187 6286 6320
+type(
+  int
+)
+ident(
+  int_ref k "display.ml" 185 6229 6239 "display.ml" 185 6229 6240
+)
+"display.ml" 187 6286 6314 "display.ml" 187 6286 6321
+type(
+  int
+)
+"display.ml" 187 6286 6322 "display.ml" 187 6286 6323
+type(
+  int
+)
+ident(
+  int_ref k "display.ml" 185 6229 6239 "display.ml" 185 6229 6240
+)
+"display.ml" 187 6286 6292 "display.ml" 187 6286 6324
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 186 6257 6263 "display.ml" 187 6286 6324
+type(
+  unit
+)
+"display.ml" 185 6229 6235 "display.ml" 187 6286 6324
+type(
+  unit
+)
+"display.ml" 183 6183 6187 "display.ml" 188 6325 6332
+type(
+  unit
+)
+"display.ml" 177 6076 6078 "display.ml" 188 6325 6332
+type(
+  unit
+)
+"display.ml" 176 6047 6049 "display.ml" 188 6325 6332
+type(
+  unit
+)
+"display.ml" 175 6024 6026 "display.ml" 188 6325 6332
+type(
+  unit
+)
+"display.ml" 205 6912 6916 "display.ml" 205 6912 6936
+type(
+  sophisticated_display -> unit
+)
+ident(
+  def redraw_sophisticated "display.ml" 225 7573 7573 "display.ml" 1 0 -1
+)
+"display.ml" 205 6912 6937 "display.ml" 205 6912 6939
+type(
+  sophisticated_display
+)
+ident(
+  def ds "display.ml" 206 6942 6944 "display.ml" 221 7511 7546
+)
+"display.ml" 206 6942 6948 "display.ml" 206 6942 6949
+type(
+  float
+)
+ident(
+  def t "display.ml" 207 6971 6973 "display.ml" 221 7511 7546
+)
+"display.ml" 206 6942 6952 "display.ml" 206 6942 6964
+type(
+  unit -> float
+)
+ident(
+  ext_ref My_unix.gettimeofday
+)
+"display.ml" 206 6942 6965 "display.ml" 206 6942 6967
+type(
+  unit
+)
+"display.ml" 206 6942 6952 "display.ml" 206 6942 6967
+call(
+  stack
+)
+type(
+  float
+)
+"display.ml" 207 6971 6977 "display.ml" 207 6971 6979
+type(
+  out_channel
+)
+ident(
+  def oc "display.ml" 208 6999 7001 "display.ml" 221 7511 7546
+)
+"display.ml" 207 6971 6982 "display.ml" 207 6971 6984
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 205 6912 6937 "display.ml" 205 6912 6939
+)
+"display.ml" 207 6971 6982 "display.ml" 207 6971 6995
+type(
+  out_channel
+)
+"display.ml" 208 6999 7005 "display.ml" 208 6999 7007
+type(
+  float
+)
+ident(
+  def dt "display.ml" 209 7035 7037 "display.ml" 221 7511 7546
+)
+"display.ml" 208 6999 7010 "display.ml" 208 6999 7011
+type(
+  float
+)
+ident(
+  int_ref t "display.ml" 206 6942 6948 "display.ml" 206 6942 6949
+)
+"display.ml" 208 6999 7012 "display.ml" 208 6999 7014
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"display.ml" 208 6999 7015 "display.ml" 208 6999 7017
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 205 6912 6937 "display.ml" 205 6912 6939
+)
+"display.ml" 208 6999 7015 "display.ml" 208 6999 7031
+type(
+  float
+)
+"display.ml" 208 6999 7010 "display.ml" 208 6999 7031
+type(
+  float
+)
+"display.ml" 209 7035 7037 "display.ml" 209 7035 7039
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 205 6912 6937 "display.ml" 205 6912 6939
+)
+"display.ml" 209 7035 7058 "display.ml" 209 7035 7059
+type(
+  float
+)
+ident(
+  int_ref t "display.ml" 206 6942 6948 "display.ml" 206 6942 6949
+)
+"display.ml" 209 7035 7037 "display.ml" 209 7035 7059
+type(
+  unit
+)
+"display.ml" 210 7061 7063 "display.ml" 210 7061 7065
+type(
+  out_channel ->
+  ((out_channel -> unit -> unit) -> unit -> unit, out_channel, unit) format ->
+  (out_channel -> unit -> unit) -> unit -> unit
+)
+ident(
+  int_ref fp "display.ml" 20 896 900 "display.ml" 20 896 902
+)
+"display.ml" 210 7061 7066 "display.ml" 210 7061 7068
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 207 6971 6977 "display.ml" 207 6971 6979
+)
+"display.ml" 210 7061 7069 "display.ml" 210 7061 7073
+type(
+  ((out_channel -> unit -> unit) -> unit -> unit, out_channel, unit) format
+)
+"display.ml" 210 7061 7074 "display.ml" 210 7061 7082
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  int_ref ANSI.bol "display.ml" 27 1044 1052 "display.ml" 27 1044 1055
+)
+"display.ml" 210 7061 7083 "display.ml" 210 7061 7085
+type(
+  unit
+)
+"display.ml" 210 7061 7063 "display.ml" 210 7061 7085
+call(
+  stack
+)
+type(
+  unit
+)
+"display.ml" 211 7087 7093 "display.ml" 211 7087 7105
+type(
+  int
+)
+ident(
+  def ticker_phase "display.ml" 212 7197 7199 "display.ml" 221 7511 7546
+)
+"display.ml" 211 7087 7109 "display.ml" 211 7087 7112
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.abs
+)
+"display.ml" 211 7087 7114 "display.ml" 211 7087 7126
+type(
+  float -> int
+)
+ident(
+  ext_ref Pervasives.int_of_float
+)
+"display.ml" 211 7087 7128 "display.ml" 211 7087 7132
+type(
+  float -> float
+)
+ident(
+  ext_ref Pervasives.ceil
+)
+"display.ml" 211 7087 7134 "display.ml" 211 7087 7136
+type(
+  float
+)
+ident(
+  int_ref dt "display.ml" 208 6999 7005 "display.ml" 208 6999 7007
+)
+"display.ml" 211 7087 7137 "display.ml" 211 7087 7139
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( /. )
+)
+"display.ml" 211 7087 7140 "display.ml" 211 7087 7153
+type(
+  float
+)
+ident(
+  int_ref ticker_period "display.ml" 96 3693 3697 "display.ml" 96 3693 3710
+)
+"display.ml" 211 7087 7133 "display.ml" 211 7087 7154
+type(
+  float
+)
+"display.ml" 211 7087 7127 "display.ml" 211 7087 7155
+type(
+  float
+)
+"display.ml" 211 7087 7113 "display.ml" 211 7087 7156
+type(
+  int
+)
+"display.ml" 211 7087 7108 "display.ml" 211 7087 7157
+call(
+  stack
+)
+type(
+  int
+)
+"display.ml" 211 7087 7158 "display.ml" 211 7087 7161
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( mod )
+)
+"display.ml" 211 7087 7163 "display.ml" 211 7087 7175
+type(
+  string array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"display.ml" 211 7087 7176 "display.ml" 211 7087 7192
+type(
+  string array
+)
+ident(
+  int_ref ticker_animation "display.ml" 97 3720 3724 "display.ml" 97 3720 3740
+)
+"display.ml" 211 7087 7162 "display.ml" 211 7087 7193
+type(
+  int
+)
+"display.ml" 211 7087 7108 "display.ml" 211 7087 7193
+type(
+  int
+)
+"display.ml" 212 7197 7203 "display.ml" 212 7197 7209
+type(
+  string
+)
+ident(
+  def ticker "display.ml" 213 7247 7249 "display.ml" 221 7511 7546
+)
+"display.ml" 212 7197 7212 "display.ml" 212 7197 7228
+type(
+  string array
+)
+ident(
+  int_ref ticker_animation "display.ml" 97 3720 3724 "display.ml" 97 3720 3740
+)
+"display.ml" 212 7197 7230 "display.ml" 212 7197 7242
+type(
+  int
+)
+ident(
+  int_ref ticker_phase "display.ml" 211 7087 7093 "display.ml" 211 7087 7105
+)
+"display.ml" 212 7197 7212 "display.ml" 212 7197 7243
+type(
+  string
+)
+"display.ml" 213 7247 7249 "display.ml" 213 7247 7251
+type(
+  out_channel ->
+  ((out_channel -> float -> unit) ->
+   float ->
+   int ->
+   int ->
+   (out_channel -> string -> unit) ->
+   string -> string -> string -> string -> unit, out_channel, unit)
+  format ->
+  (out_channel -> float -> unit) ->
+  float ->
+  int ->
+  int ->
+  (out_channel -> string -> unit) ->
+  string -> string -> string -> string -> unit
+)
+ident(
+  int_ref fp "display.ml" 20 896 900 "display.ml" 20 896 902
+)
+"display.ml" 213 7247 7252 "display.ml" 213 7247 7254
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 207 6971 6977 "display.ml" 207 6971 6979
+)
+"display.ml" 213 7247 7255 "display.ml" 213 7247 7283
+type(
+  ((out_channel -> float -> unit) ->
+   float ->
+   int ->
+   int ->
+   (out_channel -> string -> unit) ->
+   string -> string -> string -> string -> unit, out_channel, unit)
+  format
+)
+"display.ml" 214 7284 7288 "display.ml" 214 7284 7298
+type(
+  out_channel -> float -> unit
+)
+ident(
+  int_ref print_time "display.ml" 165 5783 5787 "display.ml" 165 5783 5797
+)
+"display.ml" 214 7284 7299 "display.ml" 214 7284 7301
+type(
+  float
+)
+ident(
+  int_ref dt "display.ml" 208 6999 7005 "display.ml" 208 6999 7007
+)
+"display.ml" 215 7302 7306 "display.ml" 215 7302 7308
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 205 6912 6937 "display.ml" 205 6912 6939
+)
+"display.ml" 215 7302 7306 "display.ml" 215 7302 7316
+type(
+  int
+)
+"display.ml" 216 7317 7321 "display.ml" 216 7317 7323
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 205 6912 6937 "display.ml" 205 6912 6939
+)
+"display.ml" 216 7317 7321 "display.ml" 216 7317 7338
+type(
+  int
+)
+"display.ml" 217 7339 7344 "display.ml" 217 7339 7368
+type(
+  int -> out_channel -> string -> unit
+)
+ident(
+  int_ref print_shortened_pathname "display.ml" 174 5981 5985 "display.ml" 174 5981 6009
+)
+"display.ml" 217 7339 7369 "display.ml" 217 7339 7371
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 205 6912 6937 "display.ml" 205 6912 6939
+)
+"display.ml" 217 7339 7369 "display.ml" 217 7339 7390
+type(
+  int
+)
+"display.ml" 217 7339 7343 "display.ml" 217 7339 7391
+call(
+  stack
+)
+type(
+  out_channel -> string -> unit
+)
+"display.ml" 217 7339 7392 "display.ml" 217 7339 7394
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 205 6912 6937 "display.ml" 205 6912 6939
+)
+"display.ml" 217 7339 7392 "display.ml" 217 7339 7409
+type(
+  string
+)
+"display.ml" 218 7410 7418 "display.ml" 218 7410 7420
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 205 6912 6937 "display.ml" 205 6912 6939
+)
+"display.ml" 218 7410 7418 "display.ml" 218 7410 7435
+type(
+  bool
+)
+"display.ml" 218 7410 7441 "display.ml" 218 7410 7447
+type(
+  string
+)
+ident(
+  int_ref cached "display.ml" 103 3780 3784 "display.ml" 103 3780 3790
+)
+"display.ml" 218 7410 7453 "display.ml" 218 7410 7461
+type(
+  string
+)
+ident(
+  int_ref uncached "display.ml" 104 3799 3803 "display.ml" 104 3799 3811
+)
+"display.ml" 218 7410 7414 "display.ml" 218 7410 7462
+type(
+  string
+)
+"display.ml" 219 7463 7468 "display.ml" 219 7463 7483
+type(
+  bytes -> string
+)
+ident(
+  ext_ref Bytes.to_string
+)
+"display.ml" 219 7463 7484 "display.ml" 219 7463 7486
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 205 6912 6937 "display.ml" 205 6912 6939
+)
+"display.ml" 219 7463 7484 "display.ml" 219 7463 7497
+type(
+  bytes
+)
+"display.ml" 219 7463 7467 "display.ml" 219 7463 7498
+call(
+  stack
+)
+type(
+  string
+)
+"display.ml" 220 7499 7503 "display.ml" 220 7499 7509
+type(
+  string
+)
+ident(
+  int_ref ticker "display.ml" 212 7197 7203 "display.ml" 212 7197 7209
+)
+"display.ml" 213 7247 7249 "display.ml" 220 7499 7509
+call(
+  stack
+)
+type(
+  unit
+)
+"display.ml" 221 7511 7513 "display.ml" 221 7511 7515
+type(
+  out_channel ->
+  ((out_channel -> unit -> unit) -> unit -> unit, out_channel, unit) format ->
+  (out_channel -> unit -> unit) -> unit -> unit
+)
+ident(
+  int_ref fp "display.ml" 20 896 900 "display.ml" 20 896 902
+)
+"display.ml" 221 7511 7516 "display.ml" 221 7511 7518
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 207 6971 6977 "display.ml" 207 6971 6979
+)
+"display.ml" 221 7511 7519 "display.ml" 221 7511 7525
+type(
+  ((out_channel -> unit -> unit) -> unit -> unit, out_channel, unit) format
+)
+"display.ml" 221 7511 7526 "display.ml" 221 7511 7543
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  int_ref ANSI.clear_to_eol "display.ml" 26 998 1006 "display.ml" 26 998 1018
+)
+"display.ml" 221 7511 7544 "display.ml" 221 7511 7546
+type(
+  unit
+)
+"display.ml" 221 7511 7513 "display.ml" 221 7511 7546
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 213 7247 7249 "display.ml" 221 7511 7546
+type(
+  unit
+)
+"display.ml" 212 7197 7199 "display.ml" 221 7511 7546
+type(
+  unit
+)
+"display.ml" 211 7087 7089 "display.ml" 221 7511 7546
+type(
+  unit
+)
+"display.ml" 210 7061 7063 "display.ml" 221 7511 7546
+type(
+  unit
+)
+"display.ml" 209 7035 7037 "display.ml" 221 7511 7546
+type(
+  unit
+)
+"display.ml" 208 6999 7001 "display.ml" 221 7511 7546
+type(
+  unit
+)
+"display.ml" 207 6971 6973 "display.ml" 221 7511 7546
+type(
+  unit
+)
+"display.ml" 206 6942 6944 "display.ml" 221 7511 7546
+type(
+  unit
+)
+"display.ml" 225 7573 7577 "display.ml" 225 7573 7583
+type(
+  display_line -> unit
+)
+ident(
+  def redraw "display.ml" 231 7701 7701 "display.ml" 1 0 -1
+)
+"display.ml" 226 7595 7599 "display.ml" 226 7595 7606
+type(
+  display_line
+)
+"display.ml" 226 7595 7610 "display.ml" 226 7595 7612
+type(
+  unit
+)
+"display.ml" 227 7613 7631 "display.ml" 227 7613 7633
+type(
+  sophisticated_display
+)
+ident(
+  def ds "display.ml" 227 7613 7637 "display.ml" 227 7613 7660
+)
+"display.ml" 227 7613 7617 "display.ml" 227 7613 7633
+type(
+  display_line
+)
+"display.ml" 227 7613 7637 "display.ml" 227 7613 7657
+type(
+  sophisticated_display -> unit
+)
+ident(
+  int_ref redraw_sophisticated "display.ml" 205 6912 6916 "display.ml" 205 6912 6936
+)
+"display.ml" 227 7613 7658 "display.ml" 227 7613 7660
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 227 7613 7631 "display.ml" 227 7613 7633
+)
+"display.ml" 227 7613 7637 "display.ml" 227 7613 7660
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 225 7573 7586 "display.ml" 227 7613 7660
+type(
+  display_line -> unit
+)
+"display.ml" 231 7701 7705 "display.ml" 231 7701 7725
+type(
+  ?how:[< `Error | `Quiet | `Success > `Error `Success ] ->
+  sophisticated_display -> unit
+)
+ident(
+  def finish_sophisticated "display.ml" 253 8319 8319 "display.ml" 1 0 -1
+)
+"display.ml" 231 7701 7728 "display.ml" 231 7701 7731
+type(
+  [< `Error | `Quiet | `Success > `Error `Success ] as 'a
+)
+"display.ml" 231 7701 7732 "display.ml" 231 7701 7740
+type(
+  'a
+)
+type(
+  'a
+)
+ident(
+  int_ref *sth* "display.ml" 231 7701 7732 "display.ml" 231 7701 7740
+)
+type(
+  'a option
+)
+type(
+  'a option
+)
+type(
+  'a
+)
+"display.ml" 231 7701 7742 "display.ml" 231 7701 7744
+type(
+  sophisticated_display
+)
+ident(
+  def ds "display.ml" 232 7747 7749 "display.ml" 249 8225 8277
+)
+"display.ml" 232 7747 7753 "display.ml" 232 7747 7754
+type(
+  float
+)
+ident(
+  def t "display.ml" 233 7776 7778 "display.ml" 249 8225 8277
+)
+"display.ml" 232 7747 7757 "display.ml" 232 7747 7769
+type(
+  unit -> float
+)
+ident(
+  ext_ref My_unix.gettimeofday
+)
+"display.ml" 232 7747 7770 "display.ml" 232 7747 7772
+type(
+  unit
+)
+"display.ml" 232 7747 7757 "display.ml" 232 7747 7772
+call(
+  stack
+)
+type(
+  float
+)
+"display.ml" 233 7776 7782 "display.ml" 233 7776 7784
+type(
+  out_channel
+)
+ident(
+  def oc "display.ml" 234 7804 7806 "display.ml" 249 8225 8277
+)
+"display.ml" 233 7776 7787 "display.ml" 233 7776 7789
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 231 7701 7742 "display.ml" 231 7701 7744
+)
+"display.ml" 233 7776 7787 "display.ml" 233 7776 7800
+type(
+  out_channel
+)
+"display.ml" 234 7804 7810 "display.ml" 234 7804 7812
+type(
+  float
+)
+ident(
+  def dt "display.ml" 235 7840 7842 "display.ml" 249 8225 8277
+)
+"display.ml" 234 7804 7815 "display.ml" 234 7804 7816
+type(
+  float
+)
+ident(
+  int_ref t "display.ml" 232 7747 7753 "display.ml" 232 7747 7754
+)
+"display.ml" 234 7804 7817 "display.ml" 234 7804 7819
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"display.ml" 234 7804 7820 "display.ml" 234 7804 7822
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 231 7701 7742 "display.ml" 231 7701 7744
+)
+"display.ml" 234 7804 7820 "display.ml" 234 7804 7836
+type(
+  float
+)
+"display.ml" 234 7804 7815 "display.ml" 234 7804 7836
+type(
+  float
+)
+"display.ml" 235 7840 7848 "display.ml" 235 7840 7851
+type(
+  'a
+)
+ident(
+  int_ref how "display.ml" 231 7701 7728 "display.ml" 231 7701 7731
+)
+"display.ml" 236 7857 7861 "display.ml" 236 7857 7869
+type(
+  'a
+)
+"display.ml" 236 7857 7870 "display.ml" 236 7857 7876
+type(
+  'a
+)
+"display.ml" 236 7857 7861 "display.ml" 236 7857 7876
+type(
+  'a
+)
+"display.ml" 237 7880 7884 "display.ml" 237 7880 7886
+type(
+  out_channel ->
+  ((out_channel -> unit -> unit) -> unit -> unit, out_channel, unit) format ->
+  (out_channel -> unit -> unit) -> unit -> unit
+)
+ident(
+  int_ref fp "display.ml" 20 896 900 "display.ml" 20 896 902
+)
+"display.ml" 237 7880 7887 "display.ml" 237 7880 7889
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 233 7776 7782 "display.ml" 233 7776 7784
+)
+"display.ml" 237 7880 7890 "display.ml" 237 7880 7894
+type(
+  ((out_channel -> unit -> unit) -> unit -> unit, out_channel, unit) format
+)
+"display.ml" 237 7880 7895 "display.ml" 237 7880 7903
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  int_ref ANSI.bol "display.ml" 27 1044 1052 "display.ml" 27 1044 1055
+)
+"display.ml" 237 7880 7904 "display.ml" 237 7880 7906
+type(
+  unit
+)
+"display.ml" 237 7880 7884 "display.ml" 237 7880 7906
+call(
+  stack
+)
+type(
+  unit
+)
+"display.ml" 238 7908 7912 "display.ml" 238 7908 7914
+type(
+  out_channel ->
+  (string ->
+   int -> string -> int -> (out_channel -> float -> unit) -> float -> unit,
+   out_channel, unit)
+  format ->
+  string ->
+  int -> string -> int -> (out_channel -> float -> unit) -> float -> unit
+)
+ident(
+  int_ref fp "display.ml" 20 896 900 "display.ml" 20 896 902
+)
+"display.ml" 238 7908 7915 "display.ml" 238 7908 7917
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 233 7776 7782 "display.ml" 233 7776 7784
+)
+"display.ml" 238 7908 7918 "display.ml" 238 7908 7953
+type(
+  (string ->
+   int -> string -> int -> (out_channel -> float -> unit) -> float -> unit,
+   out_channel, unit)
+  format
+)
+"display.ml" 239 7954 7964 "display.ml" 239 7954 7967
+type(
+  'a
+)
+ident(
+  int_ref how "display.ml" 231 7701 7728 "display.ml" 231 7701 7731
+)
+"display.ml" 239 7954 7968 "display.ml" 239 7954 7969
+type(
+  'a -> 'a -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"display.ml" 239 7954 7970 "display.ml" 239 7954 7976
+type(
+  'a
+)
+"display.ml" 239 7954 7964 "display.ml" 239 7954 7976
+type(
+  bool
+)
+"display.ml" 240 7982 7990 "display.ml" 240 7982 8031
+type(
+  string
+)
+"display.ml" 242 8044 8053 "display.ml" 242 8044 8064
+type(
+  string
+)
+"display.ml" 239 7954 7960 "display.ml" 242 8044 8065
+type(
+  string
+)
+"display.ml" 243 8066 8072 "display.ml" 243 8066 8074
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 231 7701 7742 "display.ml" 231 7701 7744
+)
+"display.ml" 243 8066 8072 "display.ml" 243 8066 8082
+type(
+  int
+)
+"display.ml" 244 8083 8093 "display.ml" 244 8083 8095
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 231 7701 7742 "display.ml" 231 7701 7744
+)
+"display.ml" 244 8083 8093 "display.ml" 244 8083 8103
+type(
+  int
+)
+"display.ml" 244 8083 8104 "display.ml" 244 8083 8105
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"display.ml" 244 8083 8106 "display.ml" 244 8083 8107
+type(
+  int
+)
+"display.ml" 244 8083 8093 "display.ml" 244 8083 8107
+type(
+  bool
+)
+"display.ml" 244 8083 8113 "display.ml" 244 8083 8115
+type(
+  string
+)
+"display.ml" 244 8083 8121 "display.ml" 244 8083 8124
+type(
+  string
+)
+"display.ml" 244 8083 8089 "display.ml" 244 8083 8125
+type(
+  string
+)
+"display.ml" 245 8126 8132 "display.ml" 245 8126 8134
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 231 7701 7742 "display.ml" 231 7701 7744
+)
+"display.ml" 245 8126 8132 "display.ml" 245 8126 8149
+type(
+  int
+)
+"display.ml" 246 8150 8156 "display.ml" 246 8150 8166
+type(
+  out_channel -> float -> unit
+)
+ident(
+  int_ref print_time "display.ml" 165 5783 5787 "display.ml" 165 5783 5797
+)
+"display.ml" 246 8150 8167 "display.ml" 246 8150 8169
+type(
+  float
+)
+ident(
+  int_ref dt "display.ml" 234 7804 7810 "display.ml" 234 7804 7812
+)
+"display.ml" 238 7908 7912 "display.ml" 246 8150 8169
+call(
+  stack
+)
+type(
+  unit
+)
+"display.ml" 247 8171 8175 "display.ml" 247 8171 8177
+type(
+  out_channel ->
+  ((out_channel -> unit -> unit) -> unit -> unit, out_channel, unit) format ->
+  (out_channel -> unit -> unit) -> unit -> unit
+)
+ident(
+  int_ref fp "display.ml" 20 896 900 "display.ml" 20 896 902
+)
+"display.ml" 247 8171 8178 "display.ml" 247 8171 8180
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 233 7776 7782 "display.ml" 233 7776 7784
+)
+"display.ml" 247 8171 8181 "display.ml" 247 8171 8189
+type(
+  ((out_channel -> unit -> unit) -> unit -> unit, out_channel, unit) format
+)
+"display.ml" 247 8171 8190 "display.ml" 247 8171 8207
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  int_ref ANSI.clear_to_eol "display.ml" 26 998 1006 "display.ml" 26 998 1018
+)
+"display.ml" 247 8171 8208 "display.ml" 247 8171 8210
+type(
+  unit
+)
+"display.ml" 247 8171 8175 "display.ml" 247 8171 8210
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 238 7908 7912 "display.ml" 247 8171 8210
+type(
+  unit
+)
+"display.ml" 237 7880 7884 "display.ml" 247 8171 8210
+type(
+  unit
+)
+"display.ml" 248 8211 8215 "display.ml" 248 8211 8221
+type(
+  'a
+)
+"display.ml" 249 8225 8229 "display.ml" 249 8225 8231
+type(
+  out_channel ->
+  ((out_channel -> unit -> unit) ->
+   unit -> (out_channel -> unit -> unit) -> unit -> unit, out_channel, 
+   unit)
+  format ->
+  (out_channel -> unit -> unit) ->
+  unit -> (out_channel -> unit -> unit) -> unit -> unit
+)
+ident(
+  int_ref fp "display.ml" 20 896 900 "display.ml" 20 896 902
+)
+"display.ml" 249 8225 8232 "display.ml" 249 8225 8234
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 233 7776 7782 "display.ml" 233 7776 7784
+)
+"display.ml" 249 8225 8235 "display.ml" 249 8225 8243
+type(
+  ((out_channel -> unit -> unit) ->
+   unit -> (out_channel -> unit -> unit) -> unit -> unit, out_channel, 
+   unit)
+  format
+)
+"display.ml" 249 8225 8244 "display.ml" 249 8225 8252
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  int_ref ANSI.bol "display.ml" 27 1044 1052 "display.ml" 27 1044 1055
+)
+"display.ml" 249 8225 8253 "display.ml" 249 8225 8255
+type(
+  unit
+)
+"display.ml" 249 8225 8256 "display.ml" 249 8225 8273
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  int_ref ANSI.clear_to_eol "display.ml" 26 998 1006 "display.ml" 26 998 1018
+)
+"display.ml" 249 8225 8274 "display.ml" 249 8225 8276
+type(
+  unit
+)
+"display.ml" 249 8225 8229 "display.ml" 249 8225 8277
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 235 7840 7842 "display.ml" 249 8225 8277
+type(
+  unit
+)
+"display.ml" 234 7804 7806 "display.ml" 249 8225 8277
+type(
+  unit
+)
+"display.ml" 233 7776 7778 "display.ml" 249 8225 8277
+type(
+  unit
+)
+"display.ml" 232 7747 7749 "display.ml" 249 8225 8277
+type(
+  unit
+)
+"display.ml" 253 8319 8323 "display.ml" 253 8319 8344
+type(
+  sophisticated_display -> (out_channel -> 'a) -> 'a
+)
+ident(
+  def sophisticated_display "display.ml" 259 8459 8459 "display.ml" 1 0 -1
+)
+"display.ml" 253 8319 8345 "display.ml" 253 8319 8347
+type(
+  sophisticated_display
+)
+ident(
+  def ds "display.ml" 253 8319 8348 "display.ml" 255 8414 8431
+)
+"display.ml" 253 8319 8348 "display.ml" 253 8319 8349
+type(
+  out_channel -> 'a
+)
+ident(
+  def f "display.ml" 254 8352 8354 "display.ml" 255 8414 8431
+)
+"display.ml" 254 8352 8354 "display.ml" 254 8352 8356
+type(
+  out_channel ->
+  ((out_channel -> unit -> unit) ->
+   unit -> (out_channel -> unit -> unit) -> unit -> unit, out_channel, 
+   unit)
+  format ->
+  (out_channel -> unit -> unit) ->
+  unit -> (out_channel -> unit -> unit) -> unit -> unit
+)
+ident(
+  int_ref fp "display.ml" 20 896 900 "display.ml" 20 896 902
+)
+"display.ml" 254 8352 8357 "display.ml" 254 8352 8359
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 253 8319 8345 "display.ml" 253 8319 8347
+)
+"display.ml" 254 8352 8357 "display.ml" 254 8352 8370
+type(
+  out_channel
+)
+"display.ml" 254 8352 8371 "display.ml" 254 8352 8379
+type(
+  ((out_channel -> unit -> unit) ->
+   unit -> (out_channel -> unit -> unit) -> unit -> unit, out_channel, 
+   unit)
+  format
+)
+"display.ml" 254 8352 8380 "display.ml" 254 8352 8388
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  int_ref ANSI.bol "display.ml" 27 1044 1052 "display.ml" 27 1044 1055
+)
+"display.ml" 254 8352 8389 "display.ml" 254 8352 8391
+type(
+  unit
+)
+"display.ml" 254 8352 8392 "display.ml" 254 8352 8409
+type(
+  out_channel -> unit -> unit
+)
+ident(
+  int_ref ANSI.clear_to_eol "display.ml" 26 998 1006 "display.ml" 26 998 1018
+)
+"display.ml" 254 8352 8410 "display.ml" 254 8352 8412
+type(
+  unit
+)
+"display.ml" 254 8352 8354 "display.ml" 254 8352 8412
+call(
+  stack
+)
+type(
+  unit
+)
+"display.ml" 255 8414 8416 "display.ml" 255 8414 8417
+type(
+  out_channel -> 'a
+)
+ident(
+  int_ref f "display.ml" 253 8319 8348 "display.ml" 253 8319 8349
+)
+"display.ml" 255 8414 8418 "display.ml" 255 8414 8420
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 253 8319 8345 "display.ml" 253 8319 8347
+)
+"display.ml" 255 8414 8418 "display.ml" 255 8414 8431
+type(
+  out_channel
+)
+"display.ml" 255 8414 8416 "display.ml" 255 8414 8431
+call(
+  tail
+)
+type(
+  'a
+)
+"display.ml" 254 8352 8354 "display.ml" 255 8414 8431
+type(
+  'a
+)
+"display.ml" 259 8459 8463 "display.ml" 259 8459 8470
+type(
+  'a option -> ('a -> unit) -> unit
+)
+ident(
+  def call_if "display.ml" 266 8572 8572 "display.ml" 1 0 -1
+)
+"display.ml" 259 8459 8471 "display.ml" 259 8459 8482
+type(
+  'a option
+)
+ident(
+  def log_channel "display.ml" 259 8459 8483 "display.ml" 262 8527 8544
+)
+"display.ml" 259 8459 8483 "display.ml" 259 8459 8484
+type(
+  'a -> unit
+)
+ident(
+  def f "display.ml" 260 8487 8489 "display.ml" 262 8527 8544
+)
+"display.ml" 260 8487 8495 "display.ml" 260 8487 8506
+type(
+  'a option
+)
+ident(
+  int_ref log_channel "display.ml" 259 8459 8471 "display.ml" 259 8459 8482
+)
+"display.ml" 261 8512 8516 "display.ml" 261 8512 8520
+type(
+  'a option
+)
+"display.ml" 261 8512 8524 "display.ml" 261 8512 8526
+type(
+  unit
+)
+"display.ml" 262 8527 8536 "display.ml" 262 8527 8537
+type(
+  'a
+)
+ident(
+  def x "display.ml" 262 8527 8541 "display.ml" 262 8527 8544
+)
+"display.ml" 262 8527 8531 "display.ml" 262 8527 8537
+type(
+  'a option
+)
+"display.ml" 262 8527 8541 "display.ml" 262 8527 8542
+type(
+  'a -> unit
+)
+ident(
+  int_ref f "display.ml" 259 8459 8483 "display.ml" 259 8459 8484
+)
+"display.ml" 262 8527 8543 "display.ml" 262 8527 8544
+type(
+  'a
+)
+ident(
+  int_ref x "display.ml" 262 8527 8536 "display.ml" 262 8527 8537
+)
+"display.ml" 262 8527 8541 "display.ml" 262 8527 8544
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 260 8487 8489 "display.ml" 262 8527 8544
+type(
+  unit
+)
+"display.ml" 266 8572 8576 "display.ml" 266 8572 8583
+type(
+  display -> (out_channel -> unit) -> unit
+)
+ident(
+  def display "display.ml" 274 8782 8782 "display.ml" 1 0 -1
+)
+"display.ml" 266 8572 8584 "display.ml" 266 8572 8586
+type(
+  display
+)
+ident(
+  def di "display.ml" 266 8572 8587 "display.ml" 270 8705 8755
+)
+"display.ml" 266 8572 8587 "display.ml" 266 8572 8588
+type(
+  out_channel -> unit
+)
+ident(
+  def f "display.ml" 267 8591 8593 "display.ml" 270 8705 8755
+)
+"display.ml" 267 8591 8593 "display.ml" 267 8591 8600
+type(
+  (Format.formatter * out_channel) option ->
+  (Format.formatter * out_channel -> unit) -> unit
+)
+ident(
+  int_ref call_if "display.ml" 259 8459 8463 "display.ml" 259 8459 8470
+)
+"display.ml" 267 8591 8601 "display.ml" 267 8591 8603
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 266 8572 8584 "display.ml" 266 8572 8586
+)
+"display.ml" 267 8591 8601 "display.ml" 267 8591 8618
+type(
+  (Format.formatter * out_channel) option
+)
+"display.ml" 267 8591 8625 "display.ml" 267 8591 8626
+type(
+  Format.formatter
+)
+"display.ml" 267 8591 8628 "display.ml" 267 8591 8630
+type(
+  out_channel
+)
+ident(
+  def oc "display.ml" 267 8591 8635 "display.ml" 267 8591 8639
+)
+"display.ml" 267 8591 8624 "display.ml" 267 8591 8631
+type(
+  Format.formatter * out_channel
+)
+"display.ml" 267 8591 8635 "display.ml" 267 8591 8636
+type(
+  out_channel -> unit
+)
+ident(
+  int_ref f "display.ml" 266 8572 8587 "display.ml" 266 8572 8588
+)
+"display.ml" 267 8591 8637 "display.ml" 267 8591 8639
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 267 8591 8628 "display.ml" 267 8591 8630
+)
+"display.ml" 267 8591 8635 "display.ml" 267 8591 8639
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 267 8591 8619 "display.ml" 267 8591 8640
+type(
+  Format.formatter * out_channel -> unit
+)
+"display.ml" 267 8591 8593 "display.ml" 267 8591 8640
+call(
+  stack
+)
+type(
+  unit
+)
+"display.ml" 268 8642 8650 "display.ml" 268 8642 8652
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 266 8572 8584 "display.ml" 266 8572 8586
+)
+"display.ml" 268 8642 8650 "display.ml" 268 8642 8668
+type(
+  display_line
+)
+"display.ml" 269 8674 8678 "display.ml" 269 8674 8685
+type(
+  display_line
+)
+"display.ml" 269 8674 8689 "display.ml" 269 8674 8690
+type(
+  out_channel -> unit
+)
+ident(
+  int_ref f "display.ml" 266 8572 8587 "display.ml" 266 8572 8588
+)
+"display.ml" 269 8674 8691 "display.ml" 269 8674 8693
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 266 8572 8584 "display.ml" 266 8572 8586
+)
+"display.ml" 269 8674 8691 "display.ml" 269 8674 8704
+type(
+  out_channel
+)
+"display.ml" 269 8674 8689 "display.ml" 269 8674 8704
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 270 8705 8723 "display.ml" 270 8705 8725
+type(
+  sophisticated_display
+)
+ident(
+  def ds "display.ml" 270 8705 8729 "display.ml" 270 8705 8755
+)
+"display.ml" 270 8705 8709 "display.ml" 270 8705 8725
+type(
+  display_line
+)
+"display.ml" 270 8705 8729 "display.ml" 270 8705 8750
+type(
+  sophisticated_display -> (out_channel -> unit) -> unit
+)
+ident(
+  int_ref sophisticated_display "display.ml" 253 8319 8323 "display.ml" 253 8319 8344
+)
+"display.ml" 270 8705 8751 "display.ml" 270 8705 8753
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 270 8705 8723 "display.ml" 270 8705 8725
+)
+"display.ml" 270 8705 8754 "display.ml" 270 8705 8755
+type(
+  out_channel -> unit
+)
+ident(
+  int_ref f "display.ml" 266 8572 8587 "display.ml" 266 8572 8588
+)
+"display.ml" 270 8705 8729 "display.ml" 270 8705 8755
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 268 8642 8644 "display.ml" 270 8705 8755
+type(
+  unit
+)
+"display.ml" 267 8591 8593 "display.ml" 270 8705 8755
+type(
+  unit
+)
+"display.ml" 274 8782 8786 "display.ml" 274 8782 8792
+type(
+  ?how:[< `Error | `Quiet | `Success > `Error `Success ] -> display -> unit
+)
+ident(
+  def finish "display.ml" 290 9258 9258 "display.ml" 1 0 -1
+)
+"display.ml" 274 8782 8795 "display.ml" 274 8782 8798
+type(
+  [< `Error | `Quiet | `Success > `Error `Success ] as 'a
+)
+"display.ml" 274 8782 8799 "display.ml" 274 8782 8807
+type(
+  'a
+)
+type(
+  'a
+)
+ident(
+  int_ref *sth* "display.ml" 274 8782 8799 "display.ml" 274 8782 8807
+)
+type(
+  'a option
+)
+type(
+  'a option
+)
+type(
+  'a
+)
+"display.ml" 274 8782 8809 "display.ml" 274 8782 8811
+type(
+  display
+)
+ident(
+  def di "display.ml" 275 8814 8816 "display.ml" 286 9208 9213
+)
+"display.ml" 275 8814 8819 "display.ml" 275 8814 8822
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"display.ml" 275 8814 8823 "display.ml" 275 8814 8825
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 274 8782 8809 "display.ml" 274 8782 8811
+)
+"display.ml" 275 8814 8823 "display.ml" 275 8814 8837
+type(
+  bool
+)
+"display.ml" 275 8814 8819 "display.ml" 275 8814 8837
+type(
+  bool
+)
+"display.ml" 276 8849 8853 "display.ml" 276 8849 8855
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 274 8782 8809 "display.ml" 274 8782 8811
+)
+"display.ml" 276 8849 8871 "display.ml" 276 8849 8875
+type(
+  bool
+)
+"display.ml" 276 8849 8853 "display.ml" 276 8849 8875
+type(
+  unit
+)
+"display.ml" 277 8877 8881 "display.ml" 277 8877 8888
+type(
+  (Format.formatter * out_channel) option ->
+  (Format.formatter * out_channel -> unit) -> unit
+)
+ident(
+  int_ref call_if "display.ml" 259 8459 8463 "display.ml" 259 8459 8470
+)
+"display.ml" 277 8877 8889 "display.ml" 277 8877 8891
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 274 8782 8809 "display.ml" 274 8782 8811
+)
+"display.ml" 277 8877 8889 "display.ml" 277 8877 8906
+type(
+  (Format.formatter * out_channel) option
+)
+"display.ml" 278 8907 8924 "display.ml" 278 8907 8927
+type(
+  Format.formatter
+)
+ident(
+  def fmt "display.ml" 279 8936 8944 "display.ml" 281 9054 9087
+)
+"display.ml" 278 8907 8929 "display.ml" 278 8907 8931
+type(
+  out_channel
+)
+ident(
+  def oc "display.ml" 279 8936 8944 "display.ml" 281 9054 9087
+)
+"display.ml" 278 8907 8923 "display.ml" 278 8907 8932
+type(
+  Format.formatter * out_channel
+)
+"display.ml" 279 8936 8944 "display.ml" 279 8936 8958
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"display.ml" 279 8936 8959 "display.ml" 279 8936 8962
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "display.ml" 278 8907 8924 "display.ml" 278 8907 8927
+)
+"display.ml" 279 8936 8963 "display.ml" 279 8936 8994
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"display.ml" 279 8936 8999 "display.ml" 279 8936 9002
+type(
+  'a
+)
+ident(
+  int_ref how "display.ml" 274 8782 8795 "display.ml" 274 8782 8798
+)
+"display.ml" 279 8936 9003 "display.ml" 279 8936 9004
+type(
+  'a -> 'a -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"display.ml" 279 8936 9005 "display.ml" 279 8936 9011
+type(
+  'a
+)
+"display.ml" 279 8936 8999 "display.ml" 279 8936 9011
+type(
+  bool
+)
+"display.ml" 279 8936 9017 "display.ml" 279 8936 9021
+type(
+  string
+)
+"display.ml" 279 8936 9027 "display.ml" 279 8936 9029
+type(
+  string
+)
+"display.ml" 279 8936 8995 "display.ml" 279 8936 9030
+type(
+  string
+)
+"display.ml" 279 8936 8944 "display.ml" 279 8936 9030
+call(
+  stack
+)
+type(
+  unit
+)
+"display.ml" 280 9032 9040 "display.ml" 280 9032 9049
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"display.ml" 280 9032 9050 "display.ml" 280 9032 9052
+type(
+  out_channel
+)
+ident(
+  int_ref oc "display.ml" 278 8907 8929 "display.ml" 278 8907 8931
+)
+"display.ml" 280 9032 9040 "display.ml" 280 9032 9052
+call(
+  stack
+)
+type(
+  unit
+)
+"display.ml" 281 9054 9062 "display.ml" 281 9054 9064
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 274 8782 8809 "display.ml" 274 8782 8811
+)
+"display.ml" 281 9054 9083 "display.ml" 281 9054 9087
+type(
+  (Format.formatter * out_channel) option
+)
+"display.ml" 281 9054 9062 "display.ml" 281 9054 9087
+type(
+  unit
+)
+"display.ml" 280 9032 9040 "display.ml" 281 9054 9087
+type(
+  unit
+)
+"display.ml" 279 8936 8944 "display.ml" 281 9054 9087
+type(
+  unit
+)
+"display.ml" 278 8907 8913 "display.ml" 282 9088 9097
+type(
+  Format.formatter * out_channel -> unit
+)
+"display.ml" 277 8877 8881 "display.ml" 282 9088 9097
+call(
+  stack
+)
+type(
+  unit
+)
+"display.ml" 283 9099 9109 "display.ml" 283 9099 9111
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 274 8782 8809 "display.ml" 274 8782 8811
+)
+"display.ml" 283 9099 9109 "display.ml" 283 9099 9127
+type(
+  display_line
+)
+"display.ml" 284 9133 9139 "display.ml" 284 9133 9146
+type(
+  display_line
+)
+"display.ml" 284 9133 9150 "display.ml" 284 9133 9152
+type(
+  unit
+)
+"display.ml" 285 9153 9173 "display.ml" 285 9153 9175
+type(
+  sophisticated_display
+)
+ident(
+  def ds "display.ml" 285 9153 9179 "display.ml" 285 9153 9207
+)
+"display.ml" 285 9153 9159 "display.ml" 285 9153 9175
+type(
+  display_line
+)
+"display.ml" 285 9153 9179 "display.ml" 285 9153 9199
+type(
+  ?how:'a -> sophisticated_display -> unit
+)
+ident(
+  int_ref finish_sophisticated "display.ml" 231 7701 7705 "display.ml" 231 7701 7725
+)
+"display.ml" 285 9153 9201 "display.ml" 285 9153 9204
+type(
+  'a
+)
+ident(
+  int_ref how "display.ml" 274 8782 8795 "display.ml" 274 8782 8798
+)
+"display.ml" 285 9153 9205 "display.ml" 285 9153 9207
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 285 9153 9173 "display.ml" 285 9153 9175
+)
+"display.ml" 285 9153 9179 "display.ml" 285 9153 9207
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 283 9099 9103 "display.ml" 285 9153 9207
+type(
+  unit
+)
+"display.ml" 277 8877 8881 "display.ml" 285 9153 9207
+type(
+  unit
+)
+"display.ml" 275 8814 8843 "display.ml" 286 9208 9213
+type(
+  unit
+)
+"display.ml" 275 8814 8816 "display.ml" 286 9208 9213
+type(
+  unit
+)
+"display.ml" 290 9258 9262 "display.ml" 290 9258 9286
+type(
+  sophisticated_display -> unit
+)
+ident(
+  def update_tagline_from_tags "display.ml" 312 9856 9856 "display.ml" 1 0 -1
+)
+"display.ml" 290 9258 9287 "display.ml" 290 9258 9289
+type(
+  sophisticated_display
+)
+ident(
+  def ds "display.ml" 291 9292 9294 "display.ml" 308 9796 9815
+)
+"display.ml" 291 9292 9298 "display.ml" 291 9292 9305
+type(
+  bytes
+)
+ident(
+  def tagline "display.ml" 292 9325 9327 "display.ml" 308 9796 9815
+)
+"display.ml" 291 9292 9308 "display.ml" 291 9292 9310
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 290 9258 9287 "display.ml" 290 9258 9289
+)
+"display.ml" 291 9292 9308 "display.ml" 291 9292 9321
+type(
+  bytes
+)
+"display.ml" 292 9325 9331 "display.ml" 292 9325 9335
+type(
+  Tags.t
+)
+ident(
+  def tags "display.ml" 293 9357 9359 "display.ml" 308 9796 9815
+)
+"display.ml" 292 9325 9338 "display.ml" 292 9325 9340
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 290 9258 9287 "display.ml" 290 9258 9289
+)
+"display.ml" 292 9325 9338 "display.ml" 292 9325 9353
+type(
+  Tags.t
+)
+"display.ml" 293 9357 9367 "display.ml" 293 9357 9371
+type(
+  int -> (Tags.elt * char) list -> unit
+)
+ident(
+  def loop "display.ml" 293 9357 9359 "display.ml" 308 9796 9815
+)
+"display.ml" 293 9357 9372 "display.ml" 293 9357 9373
+type(
+  int
+)
+ident(
+  def i "display.ml" 293 9357 9376 "display.ml" 306 9765 9790
+)
+"display.ml" 294 9385 9391 "display.ml" 294 9385 9393
+type(
+  (Tags.elt * char) list
+)
+"display.ml" 295 9397 9413 "display.ml" 295 9397 9414
+type(
+  int
+)
+ident(
+  int_ref i "display.ml" 293 9357 9372 "display.ml" 293 9357 9373
+)
+"display.ml" 295 9397 9418 "display.ml" 295 9397 9430
+type(
+  bytes -> int
+)
+ident(
+  ext_ref Bytes.length
+)
+"display.ml" 295 9397 9431 "display.ml" 295 9397 9438
+type(
+  bytes
+)
+ident(
+  int_ref tagline "display.ml" 291 9292 9298 "display.ml" 291 9292 9305
+)
+"display.ml" 295 9397 9418 "display.ml" 295 9397 9438
+type(
+  int
+)
+"display.ml" 295 9397 9439 "display.ml" 295 9397 9440
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"display.ml" 295 9397 9441 "display.ml" 295 9397 9442
+type(
+  int
+)
+"display.ml" 295 9397 9418 "display.ml" 295 9397 9442
+type(
+  int
+)
+"display.ml" 296 9446 9456 "display.ml" 296 9446 9465
+type(
+  bytes -> int -> char -> unit
+)
+ident(
+  ext_ref Bytes.set
+)
+"display.ml" 296 9446 9466 "display.ml" 296 9446 9473
+type(
+  bytes
+)
+ident(
+  int_ref tagline "display.ml" 291 9292 9298 "display.ml" 291 9292 9305
+)
+"display.ml" 296 9446 9474 "display.ml" 296 9446 9475
+type(
+  int
+)
+ident(
+  int_ref j "display.ml" 295 9397 9405 "display.ml" 297 9480 9492
+)
+"display.ml" 296 9446 9476 "display.ml" 296 9446 9479
+type(
+  char
+)
+"display.ml" 296 9446 9456 "display.ml" 296 9446 9479
+type(
+  unit
+)
+"display.ml" 295 9397 9405 "display.ml" 297 9480 9492
+type(
+  unit
+)
+"display.ml" 298 9493 9500 "display.ml" 298 9493 9503
+type(
+  Tags.elt
+)
+ident(
+  def tag "display.ml" 299 9519 9527 "display.ml" 306 9765 9790
+)
+"display.ml" 298 9493 9505 "display.ml" 298 9493 9506
+type(
+  char
+)
+ident(
+  def c "display.ml" 299 9519 9527 "display.ml" 306 9765 9790
+)
+"display.ml" 298 9493 9499 "display.ml" 298 9493 9507
+type(
+  Tags.elt * char
+)
+"display.ml" 298 9493 9511 "display.ml" 298 9493 9515
+type(
+  (Tags.elt * char) list
+)
+ident(
+  def rest "display.ml" 299 9519 9527 "display.ml" 306 9765 9790
+)
+"display.ml" 298 9493 9499 "display.ml" 298 9493 9515
+type(
+  (Tags.elt * char) list
+)
+"display.ml" 299 9519 9530 "display.ml" 299 9519 9538
+type(
+  Tags.elt -> Tags.t -> bool
+)
+ident(
+  ext_ref Tags.mem
+)
+"display.ml" 299 9519 9539 "display.ml" 299 9519 9542
+type(
+  Tags.elt
+)
+ident(
+  int_ref tag "display.ml" 298 9493 9500 "display.ml" 298 9493 9503
+)
+"display.ml" 299 9519 9543 "display.ml" 299 9519 9547
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "display.ml" 292 9325 9331 "display.ml" 292 9325 9335
+)
+"display.ml" 299 9519 9530 "display.ml" 299 9519 9547
+call(
+  stack
+)
+type(
+  bool
+)
+"display.ml" 300 9553 9563 "display.ml" 300 9553 9572
+type(
+  bytes -> int -> char -> unit
+)
+ident(
+  ext_ref Bytes.set
+)
+"display.ml" 300 9553 9573 "display.ml" 300 9553 9580
+type(
+  bytes
+)
+ident(
+  int_ref tagline "display.ml" 291 9292 9298 "display.ml" 291 9292 9305
+)
+"display.ml" 300 9553 9581 "display.ml" 300 9553 9582
+type(
+  int
+)
+ident(
+  int_ref i "display.ml" 293 9357 9372 "display.ml" 293 9357 9373
+)
+"display.ml" 300 9553 9584 "display.ml" 300 9553 9598
+type(
+  char -> char
+)
+ident(
+  ext_ref Char.uppercase
+)
+"display.ml" 300 9553 9599 "display.ml" 300 9553 9600
+type(
+  char
+)
+ident(
+  int_ref c "display.ml" 298 9493 9505 "display.ml" 298 9493 9506
+)
+"display.ml" 300 9553 9583 "display.ml" 300 9553 9601
+call(
+  stack
+)
+type(
+  char
+)
+"display.ml" 300 9553 9563 "display.ml" 300 9553 9601
+type(
+  unit
+)
+"display.ml" 302 9615 9628 "display.ml" 302 9615 9636
+type(
+  Tags.elt -> Tags.t -> bool
+)
+ident(
+  ext_ref Tags.mem
+)
+"display.ml" 302 9615 9637 "display.ml" 302 9615 9640
+type(
+  Tags.elt
+)
+ident(
+  int_ref tag "display.ml" 298 9493 9500 "display.ml" 298 9493 9503
+)
+"display.ml" 302 9615 9641 "display.ml" 302 9615 9643
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 290 9258 9287 "display.ml" 290 9258 9289
+)
+"display.ml" 302 9615 9641 "display.ml" 302 9615 9656
+type(
+  Tags.t
+)
+"display.ml" 302 9615 9628 "display.ml" 302 9615 9656
+call(
+  stack
+)
+type(
+  bool
+)
+"display.ml" 303 9662 9674 "display.ml" 303 9662 9683
+type(
+  bytes -> int -> char -> unit
+)
+ident(
+  ext_ref Bytes.set
+)
+"display.ml" 303 9662 9684 "display.ml" 303 9662 9691
+type(
+  bytes
+)
+ident(
+  int_ref tagline "display.ml" 291 9292 9298 "display.ml" 291 9292 9305
+)
+"display.ml" 303 9662 9692 "display.ml" 303 9662 9693
+type(
+  int
+)
+ident(
+  int_ref i "display.ml" 293 9357 9372 "display.ml" 293 9357 9373
+)
+"display.ml" 303 9662 9695 "display.ml" 303 9662 9709
+type(
+  char -> char
+)
+ident(
+  ext_ref Char.lowercase
+)
+"display.ml" 303 9662 9710 "display.ml" 303 9662 9711
+type(
+  char
+)
+ident(
+  int_ref c "display.ml" 298 9493 9505 "display.ml" 298 9493 9506
+)
+"display.ml" 303 9662 9694 "display.ml" 303 9662 9712
+call(
+  stack
+)
+type(
+  char
+)
+"display.ml" 303 9662 9674 "display.ml" 303 9662 9712
+type(
+  unit
+)
+"display.ml" 305 9728 9740 "display.ml" 305 9728 9749
+type(
+  bytes -> int -> char -> unit
+)
+ident(
+  ext_ref Bytes.set
+)
+"display.ml" 305 9728 9750 "display.ml" 305 9728 9757
+type(
+  bytes
+)
+ident(
+  int_ref tagline "display.ml" 291 9292 9298 "display.ml" 291 9292 9305
+)
+"display.ml" 305 9728 9758 "display.ml" 305 9728 9759
+type(
+  int
+)
+ident(
+  int_ref i "display.ml" 293 9357 9372 "display.ml" 293 9357 9373
+)
+"display.ml" 305 9728 9760 "display.ml" 305 9728 9763
+type(
+  char
+)
+"display.ml" 305 9728 9740 "display.ml" 305 9728 9763
+type(
+  unit
+)
+"display.ml" 302 9615 9625 "display.ml" 305 9728 9763
+type(
+  unit
+)
+"display.ml" 299 9519 9527 "display.ml" 305 9728 9763
+type(
+  unit
+)
+"display.ml" 306 9765 9773 "display.ml" 306 9765 9777
+type(
+  int -> (Tags.elt * char) list -> unit
+)
+ident(
+  int_ref loop "display.ml" 293 9357 9367 "display.ml" 293 9357 9371
+)
+"display.ml" 306 9765 9779 "display.ml" 306 9765 9780
+type(
+  int
+)
+ident(
+  int_ref i "display.ml" 293 9357 9372 "display.ml" 293 9357 9373
+)
+"display.ml" 306 9765 9781 "display.ml" 306 9765 9782
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"display.ml" 306 9765 9783 "display.ml" 306 9765 9784
+type(
+  int
+)
+"display.ml" 306 9765 9778 "display.ml" 306 9765 9785
+type(
+  int
+)
+"display.ml" 306 9765 9786 "display.ml" 306 9765 9790
+type(
+  (Tags.elt * char) list
+)
+ident(
+  int_ref rest "display.ml" 298 9493 9511 "display.ml" 298 9493 9515
+)
+"display.ml" 306 9765 9773 "display.ml" 306 9765 9790
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 299 9519 9527 "display.ml" 306 9765 9790
+type(
+  unit
+)
+"display.ml" 293 9357 9376 "display.ml" 306 9765 9790
+type(
+  (Tags.elt * char) list -> unit
+)
+"display.ml" 308 9796 9798 "display.ml" 308 9796 9802
+type(
+  int -> tagline_description -> unit
+)
+ident(
+  int_ref loop "display.ml" 293 9357 9367 "display.ml" 293 9357 9371
+)
+"display.ml" 308 9796 9803 "display.ml" 308 9796 9804
+type(
+  int
+)
+"display.ml" 308 9796 9805 "display.ml" 308 9796 9807
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 290 9258 9287 "display.ml" 290 9258 9289
+)
+"display.ml" 308 9796 9805 "display.ml" 308 9796 9814
+type(
+  tagline_description
+)
+"display.ml" 308 9796 9798 "display.ml" 308 9796 9815
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 293 9357 9359 "display.ml" 308 9796 9815
+type(
+  unit
+)
+"display.ml" 292 9325 9327 "display.ml" 308 9796 9815
+type(
+  unit
+)
+"display.ml" 291 9292 9294 "display.ml" 308 9796 9815
+type(
+  unit
+)
+"display.ml" 312 9856 9860 "display.ml" 312 9856 9880
+type(
+  sophisticated_display -> unit
+)
+ident(
+  def update_sophisticated "display.ml" 329 10222 10222 "display.ml" 1 0 -1
+)
+"display.ml" 312 9856 9881 "display.ml" 312 9856 9883
+type(
+  sophisticated_display
+)
+ident(
+  def ds "display.ml" 313 9886 9888 "display.ml" 325 10171 10177
+)
+"display.ml" 313 9886 9892 "display.ml" 313 9886 9893
+type(
+  float
+)
+ident(
+  def t "display.ml" 314 9915 9917 "display.ml" 325 10171 10177
+)
+"display.ml" 313 9886 9896 "display.ml" 313 9886 9908
+type(
+  unit -> float
+)
+ident(
+  ext_ref My_unix.gettimeofday
+)
+"display.ml" 313 9886 9909 "display.ml" 313 9886 9911
+type(
+  unit
+)
+"display.ml" 313 9886 9896 "display.ml" 313 9886 9911
+call(
+  stack
+)
+type(
+  float
+)
+"display.ml" 314 9915 9921 "display.ml" 314 9915 9923
+type(
+  float
+)
+ident(
+  def dt "display.ml" 315 9952 9954 "display.ml" 325 10171 10177
+)
+"display.ml" 314 9915 9926 "display.ml" 314 9915 9927
+type(
+  float
+)
+ident(
+  int_ref t "display.ml" 313 9886 9892 "display.ml" 313 9886 9893
+)
+"display.ml" 314 9915 9928 "display.ml" 314 9915 9930
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"display.ml" 314 9915 9931 "display.ml" 314 9915 9933
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 312 9856 9881 "display.ml" 312 9856 9883
+)
+"display.ml" 314 9915 9931 "display.ml" 314 9915 9948
+type(
+  float
+)
+"display.ml" 314 9915 9926 "display.ml" 314 9915 9948
+type(
+  float
+)
+"display.ml" 315 9952 9957 "display.ml" 315 9952 9959
+type(
+  float
+)
+ident(
+  int_ref dt "display.ml" 314 9915 9921 "display.ml" 314 9915 9923
+)
+"display.ml" 315 9952 9960 "display.ml" 315 9952 9961
+type(
+  float -> float -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"display.ml" 315 9952 9962 "display.ml" 315 9952 9964
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 312 9856 9881 "display.ml" 312 9856 9883
+)
+"display.ml" 315 9952 9962 "display.ml" 315 9952 9983
+type(
+  float
+)
+"display.ml" 315 9952 9957 "display.ml" 315 9952 9983
+type(
+  bool
+)
+"display.ml" 317 9999 10008 "display.ml" 317 9999 10010
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 312 9856 9881 "display.ml" 312 9856 9883
+)
+"display.ml" 317 9999 10008 "display.ml" 317 9999 10021
+type(
+  bool
+)
+"display.ml" 319 10041 10051 "display.ml" 319 10041 10075
+type(
+  sophisticated_display -> unit
+)
+ident(
+  int_ref update_tagline_from_tags "display.ml" 290 9258 9262 "display.ml" 290 9258 9286
+)
+"display.ml" 319 10041 10076 "display.ml" 319 10041 10078
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 312 9856 9881 "display.ml" 312 9856 9883
+)
+"display.ml" 319 10041 10051 "display.ml" 319 10041 10078
+call(
+  stack
+)
+type(
+  unit
+)
+"display.ml" 320 10080 10090 "display.ml" 320 10080 10092
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 312 9856 9881 "display.ml" 312 9856 9883
+)
+"display.ml" 320 10080 10107 "display.ml" 320 10080 10112
+type(
+  bool
+)
+"display.ml" 320 10080 10090 "display.ml" 320 10080 10112
+type(
+  unit
+)
+"display.ml" 318 10027 10035 "display.ml" 321 10113 10124
+type(
+  unit
+)
+"display.ml" 317 9999 10005 "display.ml" 321 10113 10124
+type(
+  unit
+)
+"display.ml" 322 10126 10132 "display.ml" 322 10126 10152
+type(
+  sophisticated_display -> unit
+)
+ident(
+  int_ref redraw_sophisticated "display.ml" 205 6912 6916 "display.ml" 205 6912 6936
+)
+"display.ml" 322 10126 10153 "display.ml" 322 10126 10155
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 312 9856 9881 "display.ml" 312 9856 9883
+)
+"display.ml" 322 10126 10132 "display.ml" 322 10126 10155
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 316 9989 9993 "display.ml" 323 10156 10163
+type(
+  unit
+)
+"display.ml" 325 10171 10175 "display.ml" 325 10171 10177
+type(
+  unit
+)
+"display.ml" 315 9952 9954 "display.ml" 325 10171 10177
+type(
+  unit
+)
+"display.ml" 314 9915 9917 "display.ml" 325 10171 10177
+type(
+  unit
+)
+"display.ml" 313 9886 9888 "display.ml" 325 10171 10177
+type(
+  unit
+)
+"display.ml" 329 10222 10226 "display.ml" 329 10222 10250
+type(
+  sophisticated_display -> string -> Tags.t -> bool -> unit
+)
+ident(
+  def set_target_sophisticated "display.ml" 340 10577 10577 "display.ml" 1 0 -1
+)
+"display.ml" 329 10222 10251 "display.ml" 329 10222 10253
+type(
+  sophisticated_display
+)
+ident(
+  def ds "display.ml" 329 10222 10254 "display.ml" 337 10547 10572
+)
+"display.ml" 329 10222 10254 "display.ml" 329 10222 10260
+type(
+  string
+)
+ident(
+  def target "display.ml" 329 10222 10261 "display.ml" 337 10547 10572
+)
+"display.ml" 329 10222 10261 "display.ml" 329 10222 10265
+type(
+  Tags.t
+)
+ident(
+  def tags "display.ml" 329 10222 10266 "display.ml" 337 10547 10572
+)
+"display.ml" 329 10222 10266 "display.ml" 329 10222 10272
+type(
+  bool
+)
+ident(
+  def cached "display.ml" 330 10275 10277 "display.ml" 337 10547 10572
+)
+"display.ml" 330 10275 10277 "display.ml" 330 10275 10279
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 329 10222 10251 "display.ml" 329 10222 10253
+)
+"display.ml" 330 10275 10294 "display.ml" 330 10275 10298
+type(
+  bool
+)
+"display.ml" 330 10275 10277 "display.ml" 330 10275 10298
+type(
+  unit
+)
+"display.ml" 331 10300 10302 "display.ml" 331 10300 10304
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 329 10222 10251 "display.ml" 329 10222 10253
+)
+"display.ml" 331 10300 10323 "display.ml" 331 10300 10329
+type(
+  string
+)
+ident(
+  int_ref target "display.ml" 329 10222 10254 "display.ml" 329 10222 10260
+)
+"display.ml" 331 10300 10302 "display.ml" 331 10300 10329
+type(
+  unit
+)
+"display.ml" 332 10331 10333 "display.ml" 332 10331 10335
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 329 10222 10251 "display.ml" 329 10222 10253
+)
+"display.ml" 332 10331 10352 "display.ml" 332 10331 10356
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "display.ml" 329 10222 10261 "display.ml" 329 10222 10265
+)
+"display.ml" 332 10331 10333 "display.ml" 332 10331 10356
+type(
+  unit
+)
+"display.ml" 333 10358 10360 "display.ml" 333 10358 10362
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 329 10222 10251 "display.ml" 329 10222 10253
+)
+"display.ml" 333 10358 10374 "display.ml" 333 10358 10375
+type(
+  int
+)
+"display.ml" 333 10358 10376 "display.ml" 333 10358 10377
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"display.ml" 333 10358 10378 "display.ml" 333 10358 10380
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 329 10222 10251 "display.ml" 329 10222 10253
+)
+"display.ml" 333 10358 10378 "display.ml" 333 10358 10388
+type(
+  int
+)
+"display.ml" 333 10358 10374 "display.ml" 333 10358 10388
+type(
+  int
+)
+"display.ml" 333 10358 10360 "display.ml" 333 10358 10388
+type(
+  unit
+)
+"display.ml" 334 10390 10395 "display.ml" 334 10390 10401
+type(
+  bool
+)
+ident(
+  int_ref cached "display.ml" 329 10222 10266 "display.ml" 329 10222 10272
+)
+"display.ml" 334 10390 10407 "display.ml" 334 10390 10409
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 329 10222 10251 "display.ml" 329 10222 10253
+)
+"display.ml" 334 10390 10428 "display.ml" 334 10390 10429
+type(
+  int
+)
+"display.ml" 334 10390 10430 "display.ml" 334 10390 10431
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"display.ml" 334 10390 10432 "display.ml" 334 10390 10434
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 329 10222 10251 "display.ml" 329 10222 10253
+)
+"display.ml" 334 10390 10432 "display.ml" 334 10390 10449
+type(
+  int
+)
+"display.ml" 334 10390 10428 "display.ml" 334 10390 10449
+type(
+  int
+)
+"display.ml" 334 10390 10407 "display.ml" 334 10390 10449
+type(
+  unit
+)
+"display.ml" 334 10390 10392 "display.ml" 334 10390 10449
+type(
+  unit
+)
+"display.ml" 335 10451 10453 "display.ml" 335 10451 10455
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 329 10222 10251 "display.ml" 329 10222 10253
+)
+"display.ml" 335 10451 10474 "display.ml" 335 10451 10480
+type(
+  bool
+)
+ident(
+  int_ref cached "display.ml" 329 10222 10266 "display.ml" 329 10222 10272
+)
+"display.ml" 335 10451 10453 "display.ml" 335 10451 10480
+type(
+  unit
+)
+"display.ml" 336 10482 10484 "display.ml" 336 10482 10486
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 329 10222 10251 "display.ml" 329 10222 10253
+)
+"display.ml" 336 10482 10503 "display.ml" 336 10482 10513
+type(
+  Tags.t -> Tags.t -> Tags.t
+)
+ident(
+  ext_ref Tags.union
+)
+"display.ml" 336 10482 10514 "display.ml" 336 10482 10516
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 329 10222 10251 "display.ml" 329 10222 10253
+)
+"display.ml" 336 10482 10514 "display.ml" 336 10482 10529
+type(
+  Tags.t
+)
+"display.ml" 336 10482 10530 "display.ml" 336 10482 10532
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 329 10222 10251 "display.ml" 329 10222 10253
+)
+"display.ml" 336 10482 10530 "display.ml" 336 10482 10545
+type(
+  Tags.t
+)
+"display.ml" 336 10482 10503 "display.ml" 336 10482 10545
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"display.ml" 336 10482 10484 "display.ml" 336 10482 10545
+type(
+  unit
+)
+"display.ml" 337 10547 10549 "display.ml" 337 10547 10569
+type(
+  sophisticated_display -> unit
+)
+ident(
+  int_ref update_sophisticated "display.ml" 312 9856 9860 "display.ml" 312 9856 9880
+)
+"display.ml" 337 10547 10570 "display.ml" 337 10547 10572
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 329 10222 10251 "display.ml" 329 10222 10253
+)
+"display.ml" 337 10547 10549 "display.ml" 337 10547 10572
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 336 10482 10484 "display.ml" 337 10547 10572
+type(
+  unit
+)
+"display.ml" 335 10451 10453 "display.ml" 337 10547 10572
+type(
+  unit
+)
+"display.ml" 334 10390 10392 "display.ml" 337 10547 10572
+type(
+  unit
+)
+"display.ml" 333 10358 10360 "display.ml" 337 10547 10572
+type(
+  unit
+)
+"display.ml" 332 10331 10333 "display.ml" 337 10547 10572
+type(
+  unit
+)
+"display.ml" 331 10300 10302 "display.ml" 337 10547 10572
+type(
+  unit
+)
+"display.ml" 330 10275 10277 "display.ml" 337 10547 10572
+type(
+  unit
+)
+"display.ml" 340 10577 10581 "display.ml" 340 10577 10591
+type(
+  Format.formatter -> Tags.t -> unit
+)
+ident(
+  def print_tags "display.ml" 351 10813 10813 "display.ml" 1 0 -1
+)
+"display.ml" 340 10577 10592 "display.ml" 340 10577 10593
+type(
+  Format.formatter
+)
+ident(
+  def f "display.ml" 340 10577 10594 "display.ml" 347 10776 10786
+)
+"display.ml" 340 10577 10594 "display.ml" 340 10577 10598
+type(
+  Tags.t
+)
+ident(
+  def tags "display.ml" 341 10601 10603 "display.ml" 347 10776 10786
+)
+"display.ml" 341 10601 10607 "display.ml" 341 10601 10612
+type(
+  bool ref
+)
+ident(
+  def first "display.ml" 342 10627 10629 "display.ml" 347 10776 10786
+)
+"display.ml" 341 10601 10615 "display.ml" 341 10601 10618
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"display.ml" 341 10601 10619 "display.ml" 341 10601 10623
+type(
+  bool
+)
+"display.ml" 341 10601 10615 "display.ml" 341 10601 10623
+type(
+  bool ref
+)
+"display.ml" 342 10627 10629 "display.ml" 342 10627 10638
+type(
+  (Tags.elt -> unit) -> Tags.t -> unit
+)
+ident(
+  ext_ref Tags.iter
+)
+"display.ml" 342 10627 10649 "display.ml" 342 10627 10652
+type(
+  Tags.elt
+)
+ident(
+  def tag "display.ml" 343 10656 10660 "display.ml" 346 10735 10775
+)
+"display.ml" 343 10656 10663 "display.ml" 343 10656 10664
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"display.ml" 343 10656 10664 "display.ml" 343 10656 10669
+type(
+  bool ref
+)
+ident(
+  int_ref first "display.ml" 341 10601 10607 "display.ml" 341 10601 10612
+)
+"display.ml" 343 10656 10663 "display.ml" 343 10656 10669
+type(
+  bool
+)
+"display.ml" 344 10681 10687 "display.ml" 344 10681 10692
+type(
+  bool ref
+)
+ident(
+  int_ref first "display.ml" 341 10601 10607 "display.ml" 341 10601 10612
+)
+"display.ml" 344 10681 10693 "display.ml" 344 10681 10695
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"display.ml" 344 10681 10696 "display.ml" 344 10681 10701
+type(
+  bool
+)
+"display.ml" 344 10681 10687 "display.ml" 344 10681 10701
+type(
+  unit
+)
+"display.ml" 345 10703 10709 "display.ml" 345 10703 10723
+type(
+  Format.formatter ->
+  (Tags.elt -> unit, Format.formatter, unit) format -> Tags.elt -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"display.ml" 345 10703 10724 "display.ml" 345 10703 10725
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "display.ml" 340 10577 10592 "display.ml" 340 10577 10593
+)
+"display.ml" 345 10703 10726 "display.ml" 345 10703 10730
+type(
+  (Tags.elt -> unit, Format.formatter, unit) format
+)
+"display.ml" 345 10703 10731 "display.ml" 345 10703 10734
+type(
+  Tags.elt
+)
+ident(
+  int_ref tag "display.ml" 342 10627 10649 "display.ml" 342 10627 10652
+)
+"display.ml" 345 10703 10709 "display.ml" 345 10703 10734
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 343 10656 10675 "display.ml" 346 10735 10742
+type(
+  unit
+)
+"display.ml" 346 10735 10748 "display.ml" 346 10735 10762
+type(
+  Format.formatter ->
+  (Tags.elt -> unit, Format.formatter, unit) format -> Tags.elt -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"display.ml" 346 10735 10763 "display.ml" 346 10735 10764
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "display.ml" 340 10577 10592 "display.ml" 340 10577 10593
+)
+"display.ml" 346 10735 10765 "display.ml" 346 10735 10771
+type(
+  (Tags.elt -> unit, Format.formatter, unit) format
+)
+"display.ml" 346 10735 10772 "display.ml" 346 10735 10775
+type(
+  Tags.elt
+)
+ident(
+  int_ref tag "display.ml" 342 10627 10649 "display.ml" 342 10627 10652
+)
+"display.ml" 346 10735 10748 "display.ml" 346 10735 10775
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 343 10656 10660 "display.ml" 346 10735 10775
+type(
+  unit
+)
+"display.ml" 342 10627 10639 "display.ml" 347 10776 10781
+type(
+  Tags.elt -> unit
+)
+"display.ml" 347 10776 10782 "display.ml" 347 10776 10786
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "display.ml" 340 10577 10594 "display.ml" 340 10577 10598
+)
+"display.ml" 342 10627 10629 "display.ml" 347 10776 10786
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 341 10601 10603 "display.ml" 347 10776 10786
+type(
+  unit
+)
+"display.ml" 351 10813 10817 "display.ml" 351 10813 10823
+type(
+  display -> unit
+)
+ident(
+  def update "display.ml" 358 10952 10952 "display.ml" 1 0 -1
+)
+"display.ml" 351 10813 10824 "display.ml" 351 10813 10826
+type(
+  display
+)
+ident(
+  def di "display.ml" 352 10829 10831 "display.ml" 354 10879 10926
+)
+"display.ml" 352 10829 10837 "display.ml" 352 10829 10839
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 351 10813 10824 "display.ml" 351 10813 10826
+)
+"display.ml" 352 10829 10837 "display.ml" 352 10829 10855
+type(
+  display_line
+)
+"display.ml" 353 10861 10865 "display.ml" 353 10861 10872
+type(
+  display_line
+)
+"display.ml" 353 10861 10876 "display.ml" 353 10861 10878
+type(
+  unit
+)
+"display.ml" 354 10879 10897 "display.ml" 354 10879 10899
+type(
+  sophisticated_display
+)
+ident(
+  def ds "display.ml" 354 10879 10903 "display.ml" 354 10879 10926
+)
+"display.ml" 354 10879 10883 "display.ml" 354 10879 10899
+type(
+  display_line
+)
+"display.ml" 354 10879 10903 "display.ml" 354 10879 10923
+type(
+  sophisticated_display -> unit
+)
+ident(
+  int_ref update_sophisticated "display.ml" 312 9856 9860 "display.ml" 312 9856 9880
+)
+"display.ml" 354 10879 10924 "display.ml" 354 10879 10926
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 354 10879 10897 "display.ml" 354 10879 10899
+)
+"display.ml" 354 10879 10903 "display.ml" 354 10879 10926
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 352 10829 10831 "display.ml" 354 10879 10926
+type(
+  unit
+)
+"display.ml" 358 10952 10956 "display.ml" 358 10952 10961
+type(
+  display -> ?pretend:bool -> string -> string -> Tags.t -> unit
+)
+ident(
+  def event "display.ml" 379 11746 11746 "display.ml" 1 0 -1
+)
+"display.ml" 358 10952 10962 "display.ml" 358 10952 10964
+type(
+  display
+)
+ident(
+  def di "display.ml" 358 10952 10965 "display.ml" 375 11689 11718
+)
+"display.ml" 358 10952 10967 "display.ml" 358 10952 10974
+type(
+  bool
+)
+"display.ml" 358 10952 10975 "display.ml" 358 10952 10980
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "display.ml" 358 10952 10975 "display.ml" 358 10952 10980
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"display.ml" 358 10952 10982 "display.ml" 358 10952 10989
+type(
+  string
+)
+ident(
+  def command "display.ml" 358 10952 10990 "display.ml" 375 11689 11718
+)
+"display.ml" 358 10952 10990 "display.ml" 358 10952 10996
+type(
+  string
+)
+ident(
+  def target "display.ml" 358 10952 10997 "display.ml" 375 11689 11718
+)
+"display.ml" 358 10952 10997 "display.ml" 358 10952 11001
+type(
+  Tags.t
+)
+ident(
+  def tags "display.ml" 359 11004 11006 "display.ml" 375 11689 11718
+)
+"display.ml" 359 11004 11006 "display.ml" 359 11004 11013
+type(
+  (Format.formatter * out_channel) option ->
+  (Format.formatter * out_channel -> unit) -> unit
+)
+ident(
+  int_ref call_if "display.ml" 259 8459 8463 "display.ml" 259 8459 8470
+)
+"display.ml" 359 11004 11014 "display.ml" 359 11004 11016
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 358 10952 10962 "display.ml" 358 10952 10964
+)
+"display.ml" 359 11004 11014 "display.ml" 359 11004 11031
+type(
+  (Format.formatter * out_channel) option
+)
+"display.ml" 360 11032 11042 "display.ml" 360 11032 11045
+type(
+  Format.formatter
+)
+ident(
+  def fmt "display.ml" 361 11053 11059 "display.ml" 362 11133 11212
+)
+"display.ml" 360 11032 11047 "display.ml" 360 11032 11048
+type(
+  out_channel
+)
+"display.ml" 360 11032 11041 "display.ml" 360 11032 11049
+type(
+  Format.formatter * out_channel
+)
+"display.ml" 361 11053 11059 "display.ml" 361 11053 11073
+type(
+  Format.formatter ->
+  (string -> (Format.formatter -> Tags.t -> unit) -> Tags.t -> unit,
+   Format.formatter, unit)
+  format -> string -> (Format.formatter -> Tags.t -> unit) -> Tags.t -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"display.ml" 361 11053 11074 "display.ml" 361 11053 11077
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "display.ml" 360 11032 11042 "display.ml" 360 11032 11045
+)
+"display.ml" 361 11053 11078 "display.ml" 361 11053 11108
+type(
+  (string -> (Format.formatter -> Tags.t -> unit) -> Tags.t -> unit,
+   Format.formatter, unit)
+  format
+)
+"display.ml" 361 11053 11109 "display.ml" 361 11053 11115
+type(
+  string
+)
+ident(
+  int_ref target "display.ml" 358 10952 10990 "display.ml" 358 10952 10996
+)
+"display.ml" 361 11053 11116 "display.ml" 361 11053 11126
+type(
+  Format.formatter -> Tags.t -> unit
+)
+ident(
+  int_ref print_tags "display.ml" 340 10577 10581 "display.ml" 340 10577 10591
+)
+"display.ml" 361 11053 11127 "display.ml" 361 11053 11131
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "display.ml" 358 10952 10997 "display.ml" 358 10952 11001
+)
+"display.ml" 361 11053 11059 "display.ml" 361 11053 11131
+call(
+  stack
+)
+type(
+  unit
+)
+"display.ml" 362 11133 11139 "display.ml" 362 11133 11153
+type(
+  Format.formatter ->
+  (string -> string -> unit, Format.formatter, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"display.ml" 362 11133 11154 "display.ml" 362 11133 11157
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "display.ml" 360 11032 11042 "display.ml" 360 11032 11045
+)
+"display.ml" 362 11133 11158 "display.ml" 362 11133 11166
+type(
+  (string -> string -> unit, Format.formatter, unit) format
+)
+"display.ml" 362 11133 11167 "display.ml" 362 11133 11174
+type(
+  string
+)
+ident(
+  int_ref command "display.ml" 358 10952 10982 "display.ml" 358 10952 10989
+)
+"display.ml" 362 11133 11179 "display.ml" 362 11133 11186
+type(
+  bool
+)
+ident(
+  int_ref pretend "display.ml" 358 10952 10967 "display.ml" 358 10952 10974
+)
+"display.ml" 362 11133 11192 "display.ml" 362 11133 11203
+type(
+  string
+)
+"display.ml" 362 11133 11209 "display.ml" 362 11133 11211
+type(
+  string
+)
+"display.ml" 362 11133 11175 "display.ml" 362 11133 11212
+type(
+  string
+)
+"display.ml" 362 11133 11139 "display.ml" 362 11133 11212
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 361 11053 11059 "display.ml" 362 11133 11212
+type(
+  unit
+)
+"display.ml" 360 11032 11036 "display.ml" 362 11133 11213
+type(
+  Format.formatter * out_channel -> unit
+)
+"display.ml" 359 11004 11006 "display.ml" 362 11133 11213
+call(
+  stack
+)
+type(
+  unit
+)
+"display.ml" 363 11215 11223 "display.ml" 363 11215 11225
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 358 10952 10962 "display.ml" 358 10952 10964
+)
+"display.ml" 363 11215 11223 "display.ml" 363 11215 11241
+type(
+  display_line
+)
+"display.ml" 364 11247 11251 "display.ml" 364 11247 11258
+type(
+  display_line
+)
+"display.ml" 365 11262 11271 "display.ml" 365 11262 11278
+type(
+  bool
+)
+ident(
+  int_ref pretend "display.ml" 358 10952 10967 "display.ml" 358 10952 10974
+)
+"display.ml" 368 11348 11362 "display.ml" 368 11348 11369
+type(
+  string
+)
+ident(
+  def command "display.ml" 369 11401 11411 "display.ml" 369 11401 11499
+)
+"display.ml" 368 11348 11372 "display.ml" 368 11348 11389
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.basename
+)
+"display.ml" 368 11348 11390 "display.ml" 368 11348 11397
+type(
+  string
+)
+ident(
+  int_ref command "display.ml" 358 10952 10982 "display.ml" 358 10952 10989
+)
+"display.ml" 368 11348 11372 "display.ml" 368 11348 11397
+call(
+  stack
+)
+type(
+  string
+)
+"display.ml" 369 11401 11414 "display.ml" 369 11401 11416
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 358 10952 10962 "display.ml" 358 10952 10964
+)
+"display.ml" 369 11401 11414 "display.ml" 369 11401 11429
+type(
+  int
+)
+"display.ml" 369 11401 11430 "display.ml" 369 11401 11432
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"display.ml" 369 11401 11433 "display.ml" 369 11401 11434
+type(
+  int
+)
+"display.ml" 369 11401 11414 "display.ml" 369 11401 11434
+type(
+  bool
+)
+"display.ml" 369 11401 11440 "display.ml" 369 11401 11454
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"display.ml" 369 11401 11455 "display.ml" 369 11401 11457
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 358 10952 10962 "display.ml" 358 10952 10964
+)
+"display.ml" 369 11401 11455 "display.ml" 369 11401 11470
+type(
+  Format.formatter
+)
+"display.ml" 369 11401 11471 "display.ml" 369 11401 11491
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"display.ml" 369 11401 11492 "display.ml" 369 11401 11499
+type(
+  string
+)
+ident(
+  int_ref command "display.ml" 368 11348 11362 "display.ml" 368 11348 11369
+)
+"display.ml" 369 11401 11440 "display.ml" 369 11401 11499
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 369 11401 11411 "display.ml" 369 11401 11499
+type(
+  unit
+)
+"display.ml" 366 11284 11292 "display.ml" 370 11500 11511
+type(
+  unit
+)
+"display.ml" 372 11523 11535 "display.ml" 372 11523 11537
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 358 10952 10962 "display.ml" 358 10952 10964
+)
+"display.ml" 372 11523 11535 "display.ml" 372 11523 11550
+type(
+  int
+)
+"display.ml" 372 11523 11551 "display.ml" 372 11523 11553
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"display.ml" 372 11523 11554 "display.ml" 372 11523 11555
+type(
+  int
+)
+"display.ml" 372 11523 11535 "display.ml" 372 11523 11555
+type(
+  bool
+)
+"display.ml" 372 11523 11561 "display.ml" 372 11523 11575
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"display.ml" 372 11523 11576 "display.ml" 372 11523 11578
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 358 10952 10962 "display.ml" 358 10952 10964
+)
+"display.ml" 372 11523 11576 "display.ml" 372 11523 11591
+type(
+  Format.formatter
+)
+"display.ml" 372 11523 11592 "display.ml" 372 11523 11600
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"display.ml" 372 11523 11601 "display.ml" 372 11523 11608
+type(
+  string
+)
+ident(
+  int_ref command "display.ml" 358 10952 10982 "display.ml" 358 10952 10989
+)
+"display.ml" 372 11523 11561 "display.ml" 372 11523 11608
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 372 11523 11531 "display.ml" 372 11523 11609
+type(
+  unit
+)
+"display.ml" 365 11262 11268 "display.ml" 372 11523 11609
+type(
+  unit
+)
+"display.ml" 373 11610 11628 "display.ml" 373 11610 11630
+type(
+  sophisticated_display
+)
+ident(
+  def ds "display.ml" 374 11634 11640 "display.ml" 375 11689 11718
+)
+"display.ml" 373 11610 11614 "display.ml" 373 11610 11630
+type(
+  display_line
+)
+"display.ml" 374 11634 11640 "display.ml" 374 11634 11664
+type(
+  sophisticated_display -> string -> Tags.t -> bool -> unit
+)
+ident(
+  int_ref set_target_sophisticated "display.ml" 329 10222 10226 "display.ml" 329 10222 10250
+)
+"display.ml" 374 11634 11665 "display.ml" 374 11634 11667
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 373 11610 11628 "display.ml" 373 11610 11630
+)
+"display.ml" 374 11634 11668 "display.ml" 374 11634 11674
+type(
+  string
+)
+ident(
+  int_ref target "display.ml" 358 10952 10990 "display.ml" 358 10952 10996
+)
+"display.ml" 374 11634 11675 "display.ml" 374 11634 11679
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "display.ml" 358 10952 10997 "display.ml" 358 10952 11001
+)
+"display.ml" 374 11634 11680 "display.ml" 374 11634 11687
+type(
+  bool
+)
+ident(
+  int_ref pretend "display.ml" 358 10952 10967 "display.ml" 358 10952 10974
+)
+"display.ml" 374 11634 11640 "display.ml" 374 11634 11687
+call(
+  stack
+)
+type(
+  unit
+)
+"display.ml" 375 11689 11695 "display.ml" 375 11689 11715
+type(
+  sophisticated_display -> unit
+)
+ident(
+  int_ref update_sophisticated "display.ml" 312 9856 9860 "display.ml" 312 9856 9880
+)
+"display.ml" 375 11689 11716 "display.ml" 375 11689 11718
+type(
+  sophisticated_display
+)
+ident(
+  int_ref ds "display.ml" 373 11610 11628 "display.ml" 373 11610 11630
+)
+"display.ml" 375 11689 11695 "display.ml" 375 11689 11718
+call(
+  tail
+)
+type(
+  unit
+)
+"display.ml" 374 11634 11640 "display.ml" 375 11689 11718
+type(
+  unit
+)
+"display.ml" 363 11215 11217 "display.ml" 375 11689 11718
+type(
+  unit
+)
+"display.ml" 359 11004 11006 "display.ml" 375 11689 11718
+type(
+  unit
+)
+"display.ml" 379 11746 11750 "display.ml" 379 11746 11757
+type(
+  ?log_level:int -> display -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  def dprintf "display.ml" 392 12186 12237 "display.ml" 1 0 -1
+)
+"display.ml" 379 11746 11760 "display.ml" 379 11746 11769
+type(
+  int
+)
+"display.ml" 379 11746 11770 "display.ml" 379 11746 11771
+type(
+  int
+)
+type(
+  int
+)
+ident(
+  int_ref *sth* "display.ml" 379 11746 11770 "display.ml" 379 11746 11771
+)
+type(
+  int option
+)
+type(
+  int option
+)
+type(
+  int
+)
+"display.ml" 379 11746 11773 "display.ml" 379 11746 11775
+type(
+  display
+)
+ident(
+  def di "display.ml" 379 11746 11776 "display.ml" 392 12186 12237
+)
+"display.ml" 379 11746 11776 "display.ml" 379 11746 11779
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  def fmt "display.ml" 380 11782 11784 "display.ml" 392 12186 12237
+)
+"display.ml" 380 11782 11787 "display.ml" 380 11782 11796
+type(
+  int
+)
+ident(
+  int_ref log_level "display.ml" 379 11746 11760 "display.ml" 379 11746 11769
+)
+"display.ml" 380 11782 11797 "display.ml" 380 11782 11798
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"display.ml" 380 11782 11799 "display.ml" 380 11782 11801
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 379 11746 11773 "display.ml" 379 11746 11775
+)
+"display.ml" 380 11782 11799 "display.ml" 380 11782 11814
+type(
+  int
+)
+"display.ml" 380 11782 11787 "display.ml" 380 11782 11814
+type(
+  bool
+)
+"display.ml" 380 11782 11820 "display.ml" 380 11782 11849
+type(
+  ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Discard_printf.discard_printf
+)
+"display.ml" 380 11782 11850 "display.ml" 380 11782 11853
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  int_ref fmt "display.ml" 379 11746 11776 "display.ml" 379 11746 11779
+)
+"display.ml" 380 11782 11820 "display.ml" 380 11782 11853
+call(
+  tail
+)
+type(
+  'a
+)
+"display.ml" 381 11859 11867 "display.ml" 381 11859 11869
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 379 11746 11773 "display.ml" 379 11746 11775
+)
+"display.ml" 381 11859 11867 "display.ml" 381 11859 11885
+type(
+  display_line
+)
+"display.ml" 382 11891 11895 "display.ml" 382 11891 11902
+type(
+  display_line
+)
+"display.ml" 382 11891 11906 "display.ml" 382 11891 11920
+type(
+  Format.formatter -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Format.fprintf
+)
+"display.ml" 382 11891 11921 "display.ml" 382 11891 11923
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 379 11746 11773 "display.ml" 379 11746 11775
+)
+"display.ml" 382 11891 11921 "display.ml" 382 11891 11936
+type(
+  Format.formatter
+)
+"display.ml" 382 11891 11937 "display.ml" 382 11891 11940
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  int_ref fmt "display.ml" 379 11746 11776 "display.ml" 379 11746 11779
+)
+"display.ml" 382 11891 11906 "display.ml" 382 11891 11940
+call(
+  tail
+)
+type(
+  'a
+)
+"display.ml" 383 11941 11959 "display.ml" 383 11941 11960
+type(
+  sophisticated_display
+)
+"display.ml" 383 11941 11945 "display.ml" 383 11941 11960
+type(
+  display_line
+)
+"display.ml" 384 11964 11973 "display.ml" 384 11964 11982
+type(
+  int
+)
+ident(
+  int_ref log_level "display.ml" 379 11746 11760 "display.ml" 379 11746 11769
+)
+"display.ml" 384 11964 11983 "display.ml" 384 11964 11984
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"display.ml" 384 11964 11985 "display.ml" 384 11964 11986
+type(
+  int
+)
+"display.ml" 384 11964 11973 "display.ml" 384 11964 11986
+type(
+  bool
+)
+"display.ml" 386 12006 12016 "display.ml" 386 12006 12023
+type(
+  display -> (out_channel -> unit) -> unit
+)
+ident(
+  int_ref display "display.ml" 266 8572 8576 "display.ml" 266 8572 8583
+)
+"display.ml" 386 12006 12024 "display.ml" 386 12006 12026
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 379 11746 11773 "display.ml" 379 11746 11775
+)
+"display.ml" 386 12006 12027 "display.ml" 386 12006 12033
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"display.ml" 386 12006 12016 "display.ml" 386 12006 12033
+call(
+  stack
+)
+type(
+  unit
+)
+"display.ml" 387 12035 12045 "display.ml" 387 12035 12059
+type(
+  Format.formatter -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Format.fprintf
+)
+"display.ml" 387 12035 12060 "display.ml" 387 12035 12062
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 379 11746 11773 "display.ml" 379 11746 11775
+)
+"display.ml" 387 12035 12060 "display.ml" 387 12035 12075
+type(
+  Format.formatter
+)
+"display.ml" 387 12035 12076 "display.ml" 387 12035 12079
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  int_ref fmt "display.ml" 379 11746 11776 "display.ml" 379 11746 11779
+)
+"display.ml" 387 12035 12045 "display.ml" 387 12035 12079
+call(
+  tail
+)
+type(
+  'a
+)
+"display.ml" 385 11992 12000 "display.ml" 388 12080 12091
+type(
+  'a
+)
+"display.ml" 390 12103 12117 "display.ml" 390 12103 12119
+type(
+  display
+)
+ident(
+  int_ref di "display.ml" 379 11746 11773 "display.ml" 379 11746 11775
+)
+"display.ml" 390 12103 12117 "display.ml" 390 12103 12134
+type(
+  (Format.formatter * out_channel) option
+)
+"display.ml" 391 12140 12156 "display.ml" 391 12140 12157
+type(
+  Format.formatter
+)
+ident(
+  def f "display.ml" 391 12140 12165 "display.ml" 391 12140 12185
+)
+"display.ml" 391 12140 12159 "display.ml" 391 12140 12160
+type(
+  out_channel
+)
+"display.ml" 391 12140 12155 "display.ml" 391 12140 12161
+type(
+  Format.formatter * out_channel
+)
+"display.ml" 391 12140 12150 "display.ml" 391 12140 12161
+type(
+  (Format.formatter * out_channel) option
+)
+"display.ml" 391 12140 12165 "display.ml" 391 12140 12179
+type(
+  Format.formatter -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Format.fprintf
+)
+"display.ml" 391 12140 12180 "display.ml" 391 12140 12181
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "display.ml" 391 12140 12156 "display.ml" 391 12140 12157
+)
+"display.ml" 391 12140 12182 "display.ml" 391 12140 12185
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  int_ref fmt "display.ml" 379 11746 11776 "display.ml" 379 11746 11779
+)
+"display.ml" 391 12140 12165 "display.ml" 391 12140 12185
+call(
+  tail
+)
+type(
+  'a
+)
+"display.ml" 392 12186 12196 "display.ml" 392 12186 12200
+type(
+  (Format.formatter * out_channel) option
+)
+"display.ml" 392 12186 12204 "display.ml" 392 12186 12233
+type(
+  ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Discard_printf.discard_printf
+)
+"display.ml" 392 12186 12234 "display.ml" 392 12186 12237
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  int_ref fmt "display.ml" 379 11746 11776 "display.ml" 379 11746 11779
+)
+"display.ml" 392 12186 12204 "display.ml" 392 12186 12237
+call(
+  tail
+)
+type(
+  'a
+)
+"display.ml" 390 12103 12111 "display.ml" 392 12186 12237
+type(
+  'a
+)
+"display.ml" 384 11964 11970 "display.ml" 392 12186 12237
+type(
+  'a
+)
+"display.ml" 381 11859 11861 "display.ml" 392 12186 12237
+type(
+  'a
+)
+"display.ml" 380 11782 11784 "display.ml" 392 12186 12237
+type(
+  'a
+)

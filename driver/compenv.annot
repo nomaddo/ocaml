@@ -1,0 +1,5577 @@
+"driver/compenv.ml" 15 829 833 "driver/compenv.ml" 15 829 846
+type(
+  string -> string
+)
+ident(
+  def output_prefix "driver/compenv.ml" 22 1027 1027 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 15 829 847 "driver/compenv.ml" 15 829 851
+type(
+  string
+)
+ident(
+  def name "driver/compenv.ml" 16 854 856 "driver/compenv.ml" 20 991 1025
+)
+"driver/compenv.ml" 16 854 860 "driver/compenv.ml" 16 854 865
+type(
+  string
+)
+ident(
+  def oname "driver/compenv.ml" 20 991 993 "driver/compenv.ml" 20 991 1025
+)
+"driver/compenv.ml" 17 868 878 "driver/compenv.ml" 17 868 879
+type(
+  string option ref -> string option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 17 868 879 "driver/compenv.ml" 17 868 890
+type(
+  string option ref
+)
+ident(
+  ext_ref Clflags.output_name
+)
+"driver/compenv.ml" 17 868 878 "driver/compenv.ml" 17 868 890
+type(
+  string option
+)
+"driver/compenv.ml" 18 896 902 "driver/compenv.ml" 18 896 906
+type(
+  string option
+)
+"driver/compenv.ml" 18 896 910 "driver/compenv.ml" 18 896 914
+type(
+  string
+)
+ident(
+  int_ref name "driver/compenv.ml" 15 829 847 "driver/compenv.ml" 15 829 851
+)
+"driver/compenv.ml" 19 915 926 "driver/compenv.ml" 19 915 927
+type(
+  string
+)
+ident(
+  def n "driver/compenv.ml" 19 915 931 "driver/compenv.ml" 19 915 987
+)
+"driver/compenv.ml" 19 915 921 "driver/compenv.ml" 19 915 927
+type(
+  string option
+)
+"driver/compenv.ml" 19 915 934 "driver/compenv.ml" 19 915 935
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 19 915 935 "driver/compenv.ml" 19 915 947
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.compile_only
+)
+"driver/compenv.ml" 19 915 934 "driver/compenv.ml" 19 915 947
+type(
+  bool
+)
+"driver/compenv.ml" 19 915 954 "driver/compenv.ml" 19 915 965
+type(
+  string option ref
+)
+ident(
+  ext_ref Clflags.output_name
+)
+"driver/compenv.ml" 19 915 966 "driver/compenv.ml" 19 915 968
+type(
+  string option ref -> string option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 19 915 969 "driver/compenv.ml" 19 915 973
+type(
+  string option
+)
+"driver/compenv.ml" 19 915 954 "driver/compenv.ml" 19 915 973
+type(
+  unit
+)
+"driver/compenv.ml" 19 915 975 "driver/compenv.ml" 19 915 976
+type(
+  string
+)
+ident(
+  int_ref n "driver/compenv.ml" 19 915 926 "driver/compenv.ml" 19 915 927
+)
+"driver/compenv.ml" 19 915 953 "driver/compenv.ml" 19 915 977
+type(
+  string
+)
+"driver/compenv.ml" 19 915 983 "driver/compenv.ml" 19 915 987
+type(
+  string
+)
+ident(
+  int_ref name "driver/compenv.ml" 15 829 847 "driver/compenv.ml" 15 829 851
+)
+"driver/compenv.ml" 19 915 931 "driver/compenv.ml" 19 915 987
+type(
+  string
+)
+"driver/compenv.ml" 17 868 872 "driver/compenv.ml" 19 915 987
+type(
+  string
+)
+"driver/compenv.ml" 20 991 993 "driver/compenv.ml" 20 991 1019
+type(
+  string -> string
+)
+ident(
+  ext_ref Misc.chop_extension_if_any
+)
+"driver/compenv.ml" 20 991 1020 "driver/compenv.ml" 20 991 1025
+type(
+  string
+)
+ident(
+  int_ref oname "driver/compenv.ml" 16 854 860 "driver/compenv.ml" 16 854 865
+)
+"driver/compenv.ml" 20 991 993 "driver/compenv.ml" 20 991 1025
+call(
+  tail
+)
+type(
+  string
+)
+"driver/compenv.ml" 16 854 856 "driver/compenv.ml" 20 991 1025
+type(
+  string
+)
+"driver/compenv.ml" 22 1027 1031 "driver/compenv.ml" 22 1027 1056
+type(
+  string -> 'a
+)
+ident(
+  def print_version_and_library "driver/compenv.ml" 29 1281 1281 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 22 1027 1057 "driver/compenv.ml" 22 1027 1065
+type(
+  string
+)
+ident(
+  def compiler "driver/compenv.ml" 23 1068 1070 "driver/compenv.ml" 27 1271 1279
+)
+"driver/compenv.ml" 23 1068 1070 "driver/compenv.ml" 23 1068 1083
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"driver/compenv.ml" 23 1068 1084 "driver/compenv.ml" 23 1068 1108
+type(
+  (string -> unit, out_channel, unit) format
+)
+"driver/compenv.ml" 23 1068 1109 "driver/compenv.ml" 23 1068 1117
+type(
+  string
+)
+ident(
+  int_ref compiler "driver/compenv.ml" 22 1027 1057 "driver/compenv.ml" 22 1027 1065
+)
+"driver/compenv.ml" 23 1068 1070 "driver/compenv.ml" 23 1068 1117
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 24 1119 1121 "driver/compenv.ml" 24 1119 1133
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"driver/compenv.ml" 24 1119 1134 "driver/compenv.ml" 24 1119 1148
+type(
+  string
+)
+ident(
+  ext_ref Config.version
+)
+"driver/compenv.ml" 24 1119 1121 "driver/compenv.ml" 24 1119 1148
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 24 1119 1150 "driver/compenv.ml" 24 1119 1163
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"driver/compenv.ml" 24 1119 1163 "driver/compenv.ml" 24 1119 1165
+type(
+  unit
+)
+"driver/compenv.ml" 24 1119 1150 "driver/compenv.ml" 24 1119 1165
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 25 1167 1169 "driver/compenv.ml" 25 1167 1181
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"driver/compenv.ml" 25 1167 1182 "driver/compenv.ml" 25 1167 1212
+type(
+  string
+)
+"driver/compenv.ml" 25 1167 1169 "driver/compenv.ml" 25 1167 1212
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 26 1214 1216 "driver/compenv.ml" 26 1214 1228
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"driver/compenv.ml" 26 1214 1229 "driver/compenv.ml" 26 1214 1252
+type(
+  string
+)
+ident(
+  ext_ref Config.standard_library
+)
+"driver/compenv.ml" 26 1214 1216 "driver/compenv.ml" 26 1214 1252
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 26 1214 1254 "driver/compenv.ml" 26 1214 1267
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"driver/compenv.ml" 26 1214 1267 "driver/compenv.ml" 26 1214 1269
+type(
+  unit
+)
+"driver/compenv.ml" 26 1214 1254 "driver/compenv.ml" 26 1214 1269
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 27 1271 1273 "driver/compenv.ml" 27 1271 1277
+type(
+  int -> 'a
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"driver/compenv.ml" 27 1271 1278 "driver/compenv.ml" 27 1271 1279
+type(
+  int
+)
+"driver/compenv.ml" 27 1271 1273 "driver/compenv.ml" 27 1271 1279
+call(
+  tail
+)
+type(
+  'a
+)
+"driver/compenv.ml" 26 1214 1254 "driver/compenv.ml" 27 1271 1279
+type(
+  'a
+)
+"driver/compenv.ml" 26 1214 1216 "driver/compenv.ml" 27 1271 1279
+type(
+  'a
+)
+"driver/compenv.ml" 25 1167 1169 "driver/compenv.ml" 27 1271 1279
+type(
+  'a
+)
+"driver/compenv.ml" 24 1119 1150 "driver/compenv.ml" 27 1271 1279
+type(
+  'a
+)
+"driver/compenv.ml" 24 1119 1121 "driver/compenv.ml" 27 1271 1279
+type(
+  'a
+)
+"driver/compenv.ml" 23 1068 1070 "driver/compenv.ml" 27 1271 1279
+type(
+  'a
+)
+"driver/compenv.ml" 29 1281 1285 "driver/compenv.ml" 29 1281 1305
+type(
+  unit -> 'a
+)
+ident(
+  def print_version_string "driver/compenv.ml" 32 1367 1367 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 29 1281 1306 "driver/compenv.ml" 29 1281 1308
+type(
+  unit
+)
+"driver/compenv.ml" 30 1311 1313 "driver/compenv.ml" 30 1311 1325
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"driver/compenv.ml" 30 1311 1326 "driver/compenv.ml" 30 1311 1340
+type(
+  string
+)
+ident(
+  ext_ref Config.version
+)
+"driver/compenv.ml" 30 1311 1313 "driver/compenv.ml" 30 1311 1340
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 30 1311 1342 "driver/compenv.ml" 30 1311 1355
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"driver/compenv.ml" 30 1311 1355 "driver/compenv.ml" 30 1311 1357
+type(
+  unit
+)
+"driver/compenv.ml" 30 1311 1342 "driver/compenv.ml" 30 1311 1357
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 30 1311 1359 "driver/compenv.ml" 30 1311 1363
+type(
+  int -> 'a
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"driver/compenv.ml" 30 1311 1364 "driver/compenv.ml" 30 1311 1365
+type(
+  int
+)
+"driver/compenv.ml" 30 1311 1359 "driver/compenv.ml" 30 1311 1365
+call(
+  tail
+)
+type(
+  'a
+)
+"driver/compenv.ml" 30 1311 1342 "driver/compenv.ml" 30 1311 1365
+type(
+  'a
+)
+"driver/compenv.ml" 30 1311 1313 "driver/compenv.ml" 30 1311 1365
+type(
+  'a
+)
+"driver/compenv.ml" 32 1367 1371 "driver/compenv.ml" 32 1367 1393
+type(
+  unit -> 'a
+)
+ident(
+  def print_standard_library "driver/compenv.ml" 35 1464 1464 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 32 1367 1394 "driver/compenv.ml" 32 1367 1396
+type(
+  unit
+)
+"driver/compenv.ml" 33 1399 1401 "driver/compenv.ml" 33 1399 1413
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"driver/compenv.ml" 33 1399 1414 "driver/compenv.ml" 33 1399 1437
+type(
+  string
+)
+ident(
+  ext_ref Config.standard_library
+)
+"driver/compenv.ml" 33 1399 1401 "driver/compenv.ml" 33 1399 1437
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 33 1399 1439 "driver/compenv.ml" 33 1399 1452
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"driver/compenv.ml" 33 1399 1452 "driver/compenv.ml" 33 1399 1454
+type(
+  unit
+)
+"driver/compenv.ml" 33 1399 1439 "driver/compenv.ml" 33 1399 1454
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 33 1399 1456 "driver/compenv.ml" 33 1399 1460
+type(
+  int -> 'a
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"driver/compenv.ml" 33 1399 1461 "driver/compenv.ml" 33 1399 1462
+type(
+  int
+)
+"driver/compenv.ml" 33 1399 1456 "driver/compenv.ml" 33 1399 1462
+call(
+  tail
+)
+type(
+  'a
+)
+"driver/compenv.ml" 33 1399 1439 "driver/compenv.ml" 33 1399 1462
+type(
+  'a
+)
+"driver/compenv.ml" 33 1399 1401 "driver/compenv.ml" 33 1399 1462
+type(
+  'a
+)
+"driver/compenv.ml" 35 1464 1468 "driver/compenv.ml" 35 1464 1473
+type(
+  string -> 'a
+)
+ident(
+  def fatal "driver/compenv.ml" 39 1511 1511 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 35 1464 1474 "driver/compenv.ml" 35 1464 1477
+type(
+  string
+)
+ident(
+  def err "driver/compenv.ml" 36 1480 1482 "driver/compenv.ml" 37 1501 1509
+)
+"driver/compenv.ml" 36 1480 1482 "driver/compenv.ml" 36 1480 1495
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"driver/compenv.ml" 36 1480 1496 "driver/compenv.ml" 36 1480 1499
+type(
+  string
+)
+ident(
+  int_ref err "driver/compenv.ml" 35 1464 1474 "driver/compenv.ml" 35 1464 1477
+)
+"driver/compenv.ml" 36 1480 1482 "driver/compenv.ml" 36 1480 1499
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 37 1501 1503 "driver/compenv.ml" 37 1501 1507
+type(
+  int -> 'a
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"driver/compenv.ml" 37 1501 1508 "driver/compenv.ml" 37 1501 1509
+type(
+  int
+)
+"driver/compenv.ml" 37 1501 1503 "driver/compenv.ml" 37 1501 1509
+call(
+  tail
+)
+type(
+  'a
+)
+"driver/compenv.ml" 36 1480 1482 "driver/compenv.ml" 37 1501 1509
+type(
+  'a
+)
+"driver/compenv.ml" 39 1511 1515 "driver/compenv.ml" 39 1511 1529
+type(
+  'a option -> 'a
+)
+ident(
+  def extract_output "driver/compenv.ml" 44 1644 1644 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 40 1541 1550 "driver/compenv.ml" 40 1541 1551
+type(
+  'a
+)
+ident(
+  def s "driver/compenv.ml" 40 1541 1555 "driver/compenv.ml" 40 1541 1556
+)
+"driver/compenv.ml" 40 1541 1545 "driver/compenv.ml" 40 1541 1551
+type(
+  'a option
+)
+"driver/compenv.ml" 40 1541 1555 "driver/compenv.ml" 40 1541 1556
+type(
+  'a
+)
+ident(
+  int_ref s "driver/compenv.ml" 40 1541 1550 "driver/compenv.ml" 40 1541 1551
+)
+"driver/compenv.ml" 41 1557 1561 "driver/compenv.ml" 41 1557 1565
+type(
+  'a option
+)
+"driver/compenv.ml" 42 1569 1575 "driver/compenv.ml" 42 1569 1580
+type(
+  string -> 'a
+)
+ident(
+  int_ref fatal "driver/compenv.ml" 35 1464 1468 "driver/compenv.ml" 35 1464 1473
+)
+"driver/compenv.ml" 42 1569 1581 "driver/compenv.ml" 42 1569 1642
+type(
+  string
+)
+"driver/compenv.ml" 42 1569 1575 "driver/compenv.ml" 42 1569 1642
+call(
+  tail
+)
+type(
+  'a
+)
+"driver/compenv.ml" 39 1511 1532 "driver/compenv.ml" 42 1569 1642
+type(
+  'a option -> 'a
+)
+"driver/compenv.ml" 44 1644 1648 "driver/compenv.ml" 44 1644 1662
+type(
+  string option -> string
+)
+ident(
+  def default_output "driver/compenv.ml" 48 1734 1734 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 45 1674 1683 "driver/compenv.ml" 45 1674 1684
+type(
+  string
+)
+ident(
+  def s "driver/compenv.ml" 45 1674 1688 "driver/compenv.ml" 45 1674 1689
+)
+"driver/compenv.ml" 45 1674 1678 "driver/compenv.ml" 45 1674 1684
+type(
+  string option
+)
+"driver/compenv.ml" 45 1674 1688 "driver/compenv.ml" 45 1674 1689
+type(
+  string
+)
+ident(
+  int_ref s "driver/compenv.ml" 45 1674 1683 "driver/compenv.ml" 45 1674 1684
+)
+"driver/compenv.ml" 46 1690 1694 "driver/compenv.ml" 46 1690 1698
+type(
+  string option
+)
+"driver/compenv.ml" 46 1690 1702 "driver/compenv.ml" 46 1690 1732
+type(
+  string
+)
+ident(
+  ext_ref Config.default_executable_name
+)
+"driver/compenv.ml" 44 1644 1665 "driver/compenv.ml" 46 1690 1732
+type(
+  string option -> string
+)
+"driver/compenv.ml" 48 1734 1738 "driver/compenv.ml" 48 1734 1754
+type(
+  string list ref
+)
+ident(
+  def implicit_modules "driver/compenv.ml" 49 1764 1764 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 48 1734 1757 "driver/compenv.ml" 48 1734 1760
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"driver/compenv.ml" 48 1734 1761 "driver/compenv.ml" 48 1734 1763
+type(
+  string list
+)
+"driver/compenv.ml" 48 1734 1757 "driver/compenv.ml" 48 1734 1763
+type(
+  string list ref
+)
+"driver/compenv.ml" 49 1764 1768 "driver/compenv.ml" 49 1764 1786
+type(
+  string list ref
+)
+ident(
+  def first_include_dirs "driver/compenv.ml" 50 1796 1796 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 49 1764 1789 "driver/compenv.ml" 49 1764 1792
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"driver/compenv.ml" 49 1764 1793 "driver/compenv.ml" 49 1764 1795
+type(
+  string list
+)
+"driver/compenv.ml" 49 1764 1789 "driver/compenv.ml" 49 1764 1795
+type(
+  string list ref
+)
+"driver/compenv.ml" 50 1796 1800 "driver/compenv.ml" 50 1796 1817
+type(
+  string list ref
+)
+ident(
+  def last_include_dirs "driver/compenv.ml" 51 1827 1827 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 50 1796 1820 "driver/compenv.ml" 50 1796 1823
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"driver/compenv.ml" 50 1796 1824 "driver/compenv.ml" 50 1796 1826
+type(
+  string list
+)
+"driver/compenv.ml" 50 1796 1820 "driver/compenv.ml" 50 1796 1826
+type(
+  string list ref
+)
+"driver/compenv.ml" 51 1827 1831 "driver/compenv.ml" 51 1827 1843
+type(
+  string list ref
+)
+ident(
+  def first_ccopts "driver/compenv.ml" 52 1853 1853 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 51 1827 1846 "driver/compenv.ml" 51 1827 1849
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"driver/compenv.ml" 51 1827 1850 "driver/compenv.ml" 51 1827 1852
+type(
+  string list
+)
+"driver/compenv.ml" 51 1827 1846 "driver/compenv.ml" 51 1827 1852
+type(
+  string list ref
+)
+"driver/compenv.ml" 52 1853 1857 "driver/compenv.ml" 52 1853 1868
+type(
+  string list ref
+)
+ident(
+  def last_ccopts "driver/compenv.ml" 53 1878 1878 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 52 1853 1871 "driver/compenv.ml" 52 1853 1874
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"driver/compenv.ml" 52 1853 1875 "driver/compenv.ml" 52 1853 1877
+type(
+  string list
+)
+"driver/compenv.ml" 52 1853 1871 "driver/compenv.ml" 52 1853 1877
+type(
+  string list ref
+)
+"driver/compenv.ml" 53 1878 1882 "driver/compenv.ml" 53 1878 1891
+type(
+  string list ref
+)
+ident(
+  def first_ppx "driver/compenv.ml" 54 1901 1901 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 53 1878 1894 "driver/compenv.ml" 53 1878 1897
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"driver/compenv.ml" 53 1878 1898 "driver/compenv.ml" 53 1878 1900
+type(
+  string list
+)
+"driver/compenv.ml" 53 1878 1894 "driver/compenv.ml" 53 1878 1900
+type(
+  string list ref
+)
+"driver/compenv.ml" 54 1901 1905 "driver/compenv.ml" 54 1901 1913
+type(
+  string list ref
+)
+ident(
+  def last_ppx "driver/compenv.ml" 55 1923 1923 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 54 1901 1916 "driver/compenv.ml" 54 1901 1919
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"driver/compenv.ml" 54 1901 1920 "driver/compenv.ml" 54 1901 1922
+type(
+  string list
+)
+"driver/compenv.ml" 54 1901 1916 "driver/compenv.ml" 54 1901 1922
+type(
+  string list ref
+)
+"driver/compenv.ml" 55 1923 1927 "driver/compenv.ml" 55 1923 1941
+type(
+  string list ref
+)
+ident(
+  def first_objfiles "driver/compenv.ml" 56 1951 1951 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 55 1923 1944 "driver/compenv.ml" 55 1923 1947
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"driver/compenv.ml" 55 1923 1948 "driver/compenv.ml" 55 1923 1950
+type(
+  string list
+)
+"driver/compenv.ml" 55 1923 1944 "driver/compenv.ml" 55 1923 1950
+type(
+  string list ref
+)
+"driver/compenv.ml" 56 1951 1955 "driver/compenv.ml" 56 1951 1968
+type(
+  string list ref
+)
+ident(
+  def last_objfiles "driver/compenv.ml" 59 2015 2015 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 56 1951 1971 "driver/compenv.ml" 56 1951 1974
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"driver/compenv.ml" 56 1951 1975 "driver/compenv.ml" 56 1951 1977
+type(
+  string list
+)
+"driver/compenv.ml" 56 1951 1971 "driver/compenv.ml" 56 1951 1977
+type(
+  string list ref
+)
+"driver/compenv.ml" 59 2015 2019 "driver/compenv.ml" 59 2015 2034
+type(
+  Format.formatter -> string -> string -> unit
+)
+ident(
+  def check_unit_name "driver/compenv.ml" 80 2606 2606 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 59 2015 2035 "driver/compenv.ml" 59 2015 2038
+type(
+  Format.formatter
+)
+ident(
+  def ppf "driver/compenv.ml" 59 2015 2039 "driver/compenv.ml" 76 2533 2550
+)
+"driver/compenv.ml" 59 2015 2039 "driver/compenv.ml" 59 2015 2047
+type(
+  string
+)
+ident(
+  def filename "driver/compenv.ml" 59 2015 2048 "driver/compenv.ml" 76 2533 2550
+)
+"driver/compenv.ml" 59 2015 2048 "driver/compenv.ml" 59 2015 2052
+type(
+  string
+)
+ident(
+  def name "driver/compenv.ml" 60 2055 2057 "driver/compenv.ml" 76 2533 2550
+)
+"driver/compenv.ml" 61 2061 2077 "driver/compenv.ml" 61 2061 2081
+type(
+  string
+)
+ident(
+  int_ref name "driver/compenv.ml" 59 2015 2048 "driver/compenv.ml" 59 2015 2052
+)
+"driver/compenv.ml" 61 2061 2083 "driver/compenv.ml" 61 2061 2084
+type(
+  int
+)
+"driver/compenv.ml" 61 2061 2077 "driver/compenv.ml" 61 2061 2085
+type(
+  char
+)
+"driver/compenv.ml" 62 2091 2097 "driver/compenv.ml" 62 2091 2105
+type(
+  char
+)
+"driver/compenv.ml" 62 2091 2109 "driver/compenv.ml" 62 2091 2111
+type(
+  unit
+)
+"driver/compenv.ml" 63 2112 2118 "driver/compenv.ml" 63 2112 2119
+type(
+  char
+)
+"driver/compenv.ml" 64 2123 2130 "driver/compenv.ml" 64 2123 2152
+type(
+  Location.t -> Format.formatter -> Warnings.t -> unit
+)
+ident(
+  ext_ref Location.print_warning
+)
+"driver/compenv.ml" 64 2123 2154 "driver/compenv.ml" 64 2123 2170
+type(
+  string -> Location.t
+)
+ident(
+  ext_ref Location.in_file
+)
+"driver/compenv.ml" 64 2123 2171 "driver/compenv.ml" 64 2123 2179
+type(
+  string
+)
+ident(
+  int_ref filename "driver/compenv.ml" 59 2015 2039 "driver/compenv.ml" 59 2015 2047
+)
+"driver/compenv.ml" 64 2123 2153 "driver/compenv.ml" 64 2123 2180
+call(
+  stack
+)
+type(
+  Location.t
+)
+"driver/compenv.ml" 64 2123 2181 "driver/compenv.ml" 64 2123 2184
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "driver/compenv.ml" 59 2015 2035 "driver/compenv.ml" 59 2015 2038
+)
+"driver/compenv.ml" 65 2185 2219 "driver/compenv.ml" 65 2185 2223
+type(
+  string
+)
+ident(
+  int_ref name "driver/compenv.ml" 59 2015 2048 "driver/compenv.ml" 59 2015 2052
+)
+"driver/compenv.ml" 65 2185 2193 "driver/compenv.ml" 65 2185 2224
+type(
+  Warnings.t
+)
+"driver/compenv.ml" 64 2123 2130 "driver/compenv.ml" 65 2185 2224
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 66 2226 2233 "driver/compenv.ml" 66 2226 2238
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"driver/compenv.ml" 66 2226 2239 "driver/compenv.ml" 66 2226 2243
+type(
+  exn
+)
+"driver/compenv.ml" 66 2226 2233 "driver/compenv.ml" 66 2226 2244
+type(
+  unit
+)
+"driver/compenv.ml" 64 2123 2130 "driver/compenv.ml" 66 2226 2244
+type(
+  unit
+)
+"driver/compenv.ml" 61 2061 2065 "driver/compenv.ml" 67 2245 2252
+type(
+  unit
+)
+"driver/compenv.ml" 68 2254 2266 "driver/compenv.ml" 68 2254 2267
+type(
+  int
+)
+"driver/compenv.ml" 68 2254 2271 "driver/compenv.ml" 68 2254 2284
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"driver/compenv.ml" 68 2254 2285 "driver/compenv.ml" 68 2254 2289
+type(
+  string
+)
+ident(
+  int_ref name "driver/compenv.ml" 59 2015 2048 "driver/compenv.ml" 59 2015 2052
+)
+"driver/compenv.ml" 68 2254 2271 "driver/compenv.ml" 68 2254 2289
+type(
+  int
+)
+"driver/compenv.ml" 68 2254 2290 "driver/compenv.ml" 68 2254 2291
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"driver/compenv.ml" 68 2254 2292 "driver/compenv.ml" 68 2254 2293
+type(
+  int
+)
+"driver/compenv.ml" 68 2254 2271 "driver/compenv.ml" 68 2254 2293
+type(
+  int
+)
+"driver/compenv.ml" 69 2297 2309 "driver/compenv.ml" 69 2297 2313
+type(
+  string
+)
+ident(
+  int_ref name "driver/compenv.ml" 59 2015 2048 "driver/compenv.ml" 59 2015 2052
+)
+"driver/compenv.ml" 69 2297 2315 "driver/compenv.ml" 69 2297 2316
+type(
+  int
+)
+ident(
+  int_ref i "driver/compenv.ml" 68 2254 2258 "driver/compenv.ml" 75 2523 2532
+)
+"driver/compenv.ml" 69 2297 2309 "driver/compenv.ml" 69 2297 2317
+type(
+  char
+)
+"driver/compenv.ml" 70 2323 2331 "driver/compenv.ml" 70 2323 2339
+type(
+  char
+)
+"driver/compenv.ml" 70 2323 2342 "driver/compenv.ml" 70 2323 2350
+type(
+  char
+)
+"driver/compenv.ml" 70 2323 2331 "driver/compenv.ml" 70 2323 2350
+type(
+  char
+)
+"driver/compenv.ml" 70 2323 2353 "driver/compenv.ml" 70 2323 2361
+type(
+  char
+)
+"driver/compenv.ml" 70 2323 2331 "driver/compenv.ml" 70 2323 2361
+type(
+  char
+)
+"driver/compenv.ml" 70 2323 2364 "driver/compenv.ml" 70 2323 2367
+type(
+  char
+)
+"driver/compenv.ml" 70 2323 2331 "driver/compenv.ml" 70 2323 2367
+type(
+  char
+)
+"driver/compenv.ml" 70 2323 2370 "driver/compenv.ml" 70 2323 2374
+type(
+  char
+)
+"driver/compenv.ml" 70 2323 2331 "driver/compenv.ml" 70 2323 2374
+type(
+  char
+)
+"driver/compenv.ml" 70 2323 2378 "driver/compenv.ml" 70 2323 2380
+type(
+  unit
+)
+"driver/compenv.ml" 71 2381 2389 "driver/compenv.ml" 71 2381 2390
+type(
+  char
+)
+"driver/compenv.ml" 72 2394 2403 "driver/compenv.ml" 72 2394 2425
+type(
+  Location.t -> Format.formatter -> Warnings.t -> unit
+)
+ident(
+  ext_ref Location.print_warning
+)
+"driver/compenv.ml" 72 2394 2427 "driver/compenv.ml" 72 2394 2443
+type(
+  string -> Location.t
+)
+ident(
+  ext_ref Location.in_file
+)
+"driver/compenv.ml" 72 2394 2444 "driver/compenv.ml" 72 2394 2452
+type(
+  string
+)
+ident(
+  int_ref filename "driver/compenv.ml" 59 2015 2039 "driver/compenv.ml" 59 2015 2047
+)
+"driver/compenv.ml" 72 2394 2426 "driver/compenv.ml" 72 2394 2453
+call(
+  stack
+)
+type(
+  Location.t
+)
+"driver/compenv.ml" 72 2394 2454 "driver/compenv.ml" 72 2394 2457
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "driver/compenv.ml" 59 2015 2035 "driver/compenv.ml" 59 2015 2038
+)
+"driver/compenv.ml" 73 2458 2495 "driver/compenv.ml" 73 2458 2499
+type(
+  string
+)
+ident(
+  int_ref name "driver/compenv.ml" 59 2015 2048 "driver/compenv.ml" 59 2015 2052
+)
+"driver/compenv.ml" 73 2458 2469 "driver/compenv.ml" 73 2458 2500
+type(
+  Warnings.t
+)
+"driver/compenv.ml" 72 2394 2403 "driver/compenv.ml" 73 2458 2500
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 74 2502 2511 "driver/compenv.ml" 74 2502 2516
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"driver/compenv.ml" 74 2502 2517 "driver/compenv.ml" 74 2502 2521
+type(
+  exn
+)
+"driver/compenv.ml" 74 2502 2511 "driver/compenv.ml" 74 2502 2522
+type(
+  unit
+)
+"driver/compenv.ml" 72 2394 2403 "driver/compenv.ml" 74 2502 2522
+type(
+  unit
+)
+"driver/compenv.ml" 69 2297 2303 "driver/compenv.ml" 74 2502 2522
+type(
+  unit
+)
+"driver/compenv.ml" 68 2254 2258 "driver/compenv.ml" 75 2523 2532
+type(
+  unit
+)
+"driver/compenv.ml" 61 2061 2065 "driver/compenv.ml" 75 2523 2532
+type(
+  unit
+)
+"driver/compenv.ml" 76 2533 2540 "driver/compenv.ml" 76 2533 2544
+type(
+  exn
+)
+"driver/compenv.ml" 76 2533 2548 "driver/compenv.ml" 76 2533 2550
+type(
+  unit
+)
+"driver/compenv.ml" 60 2055 2057 "driver/compenv.ml" 76 2533 2550
+type(
+  unit
+)
+"driver/compenv.ml" 80 2606 2610 "driver/compenv.ml" 80 2606 2628
+type(
+  Format.formatter -> string -> string -> string
+)
+ident(
+  def module_of_filename "driver/compenv.ml" 94 2932 2932 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 80 2606 2629 "driver/compenv.ml" 80 2606 2632
+type(
+  Format.formatter
+)
+ident(
+  def ppf "driver/compenv.ml" 80 2606 2633 "driver/compenv.ml" 90 2920 2926
+)
+"driver/compenv.ml" 80 2606 2633 "driver/compenv.ml" 80 2606 2642
+type(
+  string
+)
+ident(
+  def inputfile "driver/compenv.ml" 80 2606 2643 "driver/compenv.ml" 90 2920 2926
+)
+"driver/compenv.ml" 80 2606 2643 "driver/compenv.ml" 80 2606 2655
+type(
+  string
+)
+ident(
+  def outputprefix "driver/compenv.ml" 81 2658 2660 "driver/compenv.ml" 90 2920 2926
+)
+"driver/compenv.ml" 81 2658 2664 "driver/compenv.ml" 81 2658 2672
+type(
+  string
+)
+ident(
+  def basename "driver/compenv.ml" 82 2709 2711 "driver/compenv.ml" 90 2920 2926
+)
+"driver/compenv.ml" 81 2658 2675 "driver/compenv.ml" 81 2658 2692
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.basename
+)
+"driver/compenv.ml" 81 2658 2693 "driver/compenv.ml" 81 2658 2705
+type(
+  string
+)
+ident(
+  int_ref outputprefix "driver/compenv.ml" 80 2606 2643 "driver/compenv.ml" 80 2606 2655
+)
+"driver/compenv.ml" 81 2658 2675 "driver/compenv.ml" 81 2658 2705
+call(
+  stack
+)
+type(
+  string
+)
+"driver/compenv.ml" 82 2709 2715 "driver/compenv.ml" 82 2709 2719
+type(
+  string
+)
+ident(
+  def name "driver/compenv.ml" 88 2843 2845 "driver/compenv.ml" 90 2920 2926
+)
+"driver/compenv.ml" 84 2730 2740 "driver/compenv.ml" 84 2730 2743
+type(
+  int
+)
+ident(
+  def pos "driver/compenv.ml" 85 2775 2781 "driver/compenv.ml" 85 2775 2806
+)
+"driver/compenv.ml" 84 2730 2746 "driver/compenv.ml" 84 2730 2758
+type(
+  string -> char -> int
+)
+ident(
+  ext_ref String.index
+)
+"driver/compenv.ml" 84 2730 2759 "driver/compenv.ml" 84 2730 2767
+type(
+  string
+)
+ident(
+  int_ref basename "driver/compenv.ml" 81 2658 2664 "driver/compenv.ml" 81 2658 2672
+)
+"driver/compenv.ml" 84 2730 2768 "driver/compenv.ml" 84 2730 2771
+type(
+  char
+)
+"driver/compenv.ml" 84 2730 2746 "driver/compenv.ml" 84 2730 2771
+call(
+  stack
+)
+type(
+  int
+)
+"driver/compenv.ml" 85 2775 2781 "driver/compenv.ml" 85 2775 2791
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"driver/compenv.ml" 85 2775 2792 "driver/compenv.ml" 85 2775 2800
+type(
+  string
+)
+ident(
+  int_ref basename "driver/compenv.ml" 81 2658 2664 "driver/compenv.ml" 81 2658 2672
+)
+"driver/compenv.ml" 85 2775 2801 "driver/compenv.ml" 85 2775 2802
+type(
+  int
+)
+"driver/compenv.ml" 85 2775 2803 "driver/compenv.ml" 85 2775 2806
+type(
+  int
+)
+ident(
+  int_ref pos "driver/compenv.ml" 84 2730 2740 "driver/compenv.ml" 84 2730 2743
+)
+"driver/compenv.ml" 85 2775 2781 "driver/compenv.ml" 85 2775 2806
+call(
+  stack
+)
+type(
+  string
+)
+"driver/compenv.ml" 84 2730 2736 "driver/compenv.ml" 85 2775 2806
+type(
+  string
+)
+"driver/compenv.ml" 86 2807 2816 "driver/compenv.ml" 86 2807 2825
+type(
+  exn
+)
+"driver/compenv.ml" 86 2807 2829 "driver/compenv.ml" 86 2807 2837
+type(
+  string
+)
+ident(
+  int_ref basename "driver/compenv.ml" 81 2658 2664 "driver/compenv.ml" 81 2658 2672
+)
+"driver/compenv.ml" 83 2722 2726 "driver/compenv.ml" 86 2807 2837
+type(
+  string
+)
+"driver/compenv.ml" 88 2843 2849 "driver/compenv.ml" 88 2843 2853
+type(
+  string
+)
+ident(
+  def name "driver/compenv.ml" 89 2882 2884 "driver/compenv.ml" 90 2920 2926
+)
+"driver/compenv.ml" 88 2843 2856 "driver/compenv.ml" 88 2843 2873
+type(
+  string -> string
+)
+ident(
+  ext_ref String.capitalize
+)
+"driver/compenv.ml" 88 2843 2874 "driver/compenv.ml" 88 2843 2878
+type(
+  string
+)
+ident(
+  int_ref name "driver/compenv.ml" 82 2709 2715 "driver/compenv.ml" 82 2709 2719
+)
+"driver/compenv.ml" 88 2843 2856 "driver/compenv.ml" 88 2843 2878
+call(
+  stack
+)
+type(
+  string
+)
+"driver/compenv.ml" 89 2882 2884 "driver/compenv.ml" 89 2882 2899
+type(
+  Format.formatter -> string -> string -> unit
+)
+ident(
+  int_ref check_unit_name "driver/compenv.ml" 59 2015 2019 "driver/compenv.ml" 59 2015 2034
+)
+"driver/compenv.ml" 89 2882 2900 "driver/compenv.ml" 89 2882 2903
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "driver/compenv.ml" 80 2606 2629 "driver/compenv.ml" 80 2606 2632
+)
+"driver/compenv.ml" 89 2882 2904 "driver/compenv.ml" 89 2882 2913
+type(
+  string
+)
+ident(
+  int_ref inputfile "driver/compenv.ml" 80 2606 2633 "driver/compenv.ml" 80 2606 2642
+)
+"driver/compenv.ml" 89 2882 2914 "driver/compenv.ml" 89 2882 2918
+type(
+  string
+)
+ident(
+  int_ref name "driver/compenv.ml" 88 2843 2849 "driver/compenv.ml" 88 2843 2853
+)
+"driver/compenv.ml" 89 2882 2884 "driver/compenv.ml" 89 2882 2918
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 90 2920 2922 "driver/compenv.ml" 90 2920 2926
+type(
+  string
+)
+ident(
+  int_ref name "driver/compenv.ml" 88 2843 2849 "driver/compenv.ml" 88 2843 2853
+)
+"driver/compenv.ml" 89 2882 2884 "driver/compenv.ml" 90 2920 2926
+type(
+  string
+)
+"driver/compenv.ml" 88 2843 2845 "driver/compenv.ml" 90 2920 2926
+type(
+  string
+)
+"driver/compenv.ml" 82 2709 2711 "driver/compenv.ml" 90 2920 2926
+type(
+  string
+)
+"driver/compenv.ml" 81 2658 2660 "driver/compenv.ml" 90 2920 2926
+type(
+  string
+)
+"driver/compenv.ml" 101 3133 3137 "driver/compenv.ml" 101 3133 3147
+type(
+  string -> (string * string) list * (string * string) list
+)
+ident(
+  def parse_args "driver/compenv.ml" 125 3849 3849 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 101 3133 3148 "driver/compenv.ml" 101 3133 3149
+type(
+  string
+)
+ident(
+  def s "driver/compenv.ml" 102 3152 3154 "driver/compenv.ml" 123 3824 3847
+)
+"driver/compenv.ml" 102 3152 3158 "driver/compenv.ml" 102 3152 3162
+type(
+  string list
+)
+ident(
+  def args "driver/compenv.ml" 103 3185 3187 "driver/compenv.ml" 123 3824 3847
+)
+"driver/compenv.ml" 102 3152 3165 "driver/compenv.ml" 102 3152 3175
+type(
+  string -> char -> string list
+)
+ident(
+  ext_ref Misc.split
+)
+"driver/compenv.ml" 102 3152 3176 "driver/compenv.ml" 102 3152 3177
+type(
+  string
+)
+ident(
+  int_ref s "driver/compenv.ml" 101 3133 3148 "driver/compenv.ml" 101 3133 3149
+)
+"driver/compenv.ml" 102 3152 3178 "driver/compenv.ml" 102 3152 3181
+type(
+  char
+)
+"driver/compenv.ml" 102 3152 3165 "driver/compenv.ml" 102 3152 3181
+call(
+  stack
+)
+type(
+  string list
+)
+"driver/compenv.ml" 103 3185 3195 "driver/compenv.ml" 103 3185 3199
+type(
+  bool ->
+  string list ->
+  (string * string) list ->
+  (string * string) list -> (string * string) list * (string * string) list
+)
+ident(
+  def iter "driver/compenv.ml" 103 3185 3187 "driver/compenv.ml" 123 3824 3847
+)
+"driver/compenv.ml" 103 3185 3200 "driver/compenv.ml" 103 3185 3208
+type(
+  bool
+)
+ident(
+  def is_after "driver/compenv.ml" 103 3185 3209 "driver/compenv.ml" 121 3766 3818
+)
+"driver/compenv.ml" 103 3185 3209 "driver/compenv.ml" 103 3185 3213
+type(
+  string list
+)
+ident(
+  def args "driver/compenv.ml" 103 3185 3214 "driver/compenv.ml" 121 3766 3818
+)
+"driver/compenv.ml" 103 3185 3214 "driver/compenv.ml" 103 3185 3220
+type(
+  (string * string) list
+)
+ident(
+  def before "driver/compenv.ml" 103 3185 3221 "driver/compenv.ml" 121 3766 3818
+)
+"driver/compenv.ml" 103 3185 3221 "driver/compenv.ml" 103 3185 3226
+type(
+  (string * string) list
+)
+ident(
+  def after "driver/compenv.ml" 104 3229 3233 "driver/compenv.ml" 121 3766 3818
+)
+"driver/compenv.ml" 104 3229 3239 "driver/compenv.ml" 104 3229 3243
+type(
+  string list
+)
+ident(
+  int_ref args "driver/compenv.ml" 103 3185 3209 "driver/compenv.ml" 103 3185 3213
+)
+"driver/compenv.ml" 105 3249 3255 "driver/compenv.ml" 105 3249 3257
+type(
+  string list
+)
+"driver/compenv.ml" 106 3261 3270 "driver/compenv.ml" 106 3261 3273
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"driver/compenv.ml" 106 3261 3274 "driver/compenv.ml" 106 3261 3282
+type(
+  bool
+)
+ident(
+  int_ref is_after "driver/compenv.ml" 103 3185 3200 "driver/compenv.ml" 103 3185 3208
+)
+"driver/compenv.ml" 106 3261 3270 "driver/compenv.ml" 106 3261 3282
+type(
+  bool
+)
+"driver/compenv.ml" 107 3288 3296 "driver/compenv.ml" 107 3288 3301
+type(
+  exn -> (string * string) list * (string * string) list
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"driver/compenv.ml" 107 3288 3315 "driver/compenv.ml" 107 3288 3339
+type(
+  string
+)
+"driver/compenv.ml" 107 3288 3302 "driver/compenv.ml" 107 3288 3340
+type(
+  exn
+)
+"driver/compenv.ml" 107 3288 3296 "driver/compenv.ml" 107 3288 3340
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 109 3352 3359 "driver/compenv.ml" 109 3352 3367
+type(
+  (string * string) list -> (string * string) list
+)
+ident(
+  ext_ref List.rev
+)
+"driver/compenv.ml" 109 3352 3368 "driver/compenv.ml" 109 3352 3374
+type(
+  (string * string) list
+)
+ident(
+  int_ref before "driver/compenv.ml" 103 3185 3214 "driver/compenv.ml" 103 3185 3220
+)
+"driver/compenv.ml" 109 3352 3359 "driver/compenv.ml" 109 3352 3374
+call(
+  stack
+)
+type(
+  (string * string) list
+)
+"driver/compenv.ml" 109 3352 3376 "driver/compenv.ml" 109 3352 3384
+type(
+  (string * string) list -> (string * string) list
+)
+ident(
+  ext_ref List.rev
+)
+"driver/compenv.ml" 109 3352 3385 "driver/compenv.ml" 109 3352 3390
+type(
+  (string * string) list
+)
+ident(
+  int_ref after "driver/compenv.ml" 103 3185 3221 "driver/compenv.ml" 103 3185 3226
+)
+"driver/compenv.ml" 109 3352 3376 "driver/compenv.ml" 109 3352 3390
+call(
+  stack
+)
+type(
+  (string * string) list
+)
+"driver/compenv.ml" 109 3352 3358 "driver/compenv.ml" 109 3352 3391
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 106 3261 3267 "driver/compenv.ml" 109 3352 3391
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 110 3392 3398 "driver/compenv.ml" 110 3392 3401
+type(
+  string
+)
+"driver/compenv.ml" 110 3392 3405 "driver/compenv.ml" 110 3392 3406
+type(
+  string list
+)
+"driver/compenv.ml" 110 3392 3398 "driver/compenv.ml" 110 3392 3406
+type(
+  string list
+)
+"driver/compenv.ml" 110 3392 3412 "driver/compenv.ml" 110 3392 3420
+type(
+  bool
+)
+ident(
+  int_ref is_after "driver/compenv.ml" 103 3185 3200 "driver/compenv.ml" 103 3185 3208
+)
+"driver/compenv.ml" 110 3392 3424 "driver/compenv.ml" 110 3392 3429
+type(
+  exn -> (string * string) list * (string * string) list
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"driver/compenv.ml" 110 3392 3443 "driver/compenv.ml" 110 3392 3468
+type(
+  string
+)
+"driver/compenv.ml" 110 3392 3430 "driver/compenv.ml" 110 3392 3469
+type(
+  exn
+)
+"driver/compenv.ml" 110 3392 3424 "driver/compenv.ml" 110 3392 3469
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 111 3470 3476 "driver/compenv.ml" 111 3470 3479
+type(
+  string
+)
+"driver/compenv.ml" 111 3470 3483 "driver/compenv.ml" 111 3470 3487
+type(
+  string list
+)
+ident(
+  def tail "driver/compenv.ml" 111 3470 3491 "driver/compenv.ml" 111 3470 3518
+)
+"driver/compenv.ml" 111 3470 3476 "driver/compenv.ml" 111 3470 3487
+type(
+  string list
+)
+"driver/compenv.ml" 111 3470 3491 "driver/compenv.ml" 111 3470 3495
+type(
+  bool ->
+  string list ->
+  (string * string) list ->
+  (string * string) list -> (string * string) list * (string * string) list
+)
+ident(
+  int_ref iter "driver/compenv.ml" 103 3185 3195 "driver/compenv.ml" 103 3185 3199
+)
+"driver/compenv.ml" 111 3470 3496 "driver/compenv.ml" 111 3470 3500
+type(
+  bool
+)
+"driver/compenv.ml" 111 3470 3501 "driver/compenv.ml" 111 3470 3505
+type(
+  string list
+)
+ident(
+  int_ref tail "driver/compenv.ml" 111 3470 3483 "driver/compenv.ml" 111 3470 3487
+)
+"driver/compenv.ml" 111 3470 3506 "driver/compenv.ml" 111 3470 3512
+type(
+  (string * string) list
+)
+ident(
+  int_ref before "driver/compenv.ml" 103 3185 3214 "driver/compenv.ml" 103 3185 3220
+)
+"driver/compenv.ml" 111 3470 3513 "driver/compenv.ml" 111 3470 3518
+type(
+  (string * string) list
+)
+ident(
+  int_ref after "driver/compenv.ml" 103 3185 3221 "driver/compenv.ml" 103 3185 3226
+)
+"driver/compenv.ml" 111 3470 3491 "driver/compenv.ml" 111 3470 3518
+call(
+  tail
+)
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 112 3519 3525 "driver/compenv.ml" 112 3519 3528
+type(
+  string
+)
+ident(
+  def arg "driver/compenv.ml" 113 3540 3546 "driver/compenv.ml" 121 3766 3818
+)
+"driver/compenv.ml" 112 3519 3532 "driver/compenv.ml" 112 3519 3536
+type(
+  string list
+)
+ident(
+  def tail "driver/compenv.ml" 113 3540 3546 "driver/compenv.ml" 121 3766 3818
+)
+"driver/compenv.ml" 112 3519 3525 "driver/compenv.ml" 112 3519 3536
+type(
+  string list
+)
+"driver/compenv.ml" 113 3540 3550 "driver/compenv.ml" 113 3540 3557
+type(
+  string * string
+)
+ident(
+  def binding "driver/compenv.ml" 118 3679 3685 "driver/compenv.ml" 121 3766 3818
+)
+"driver/compenv.ml" 114 3564 3572 "driver/compenv.ml" 114 3564 3583
+type(
+  string -> char -> string * string
+)
+ident(
+  ext_ref Misc.cut_at
+)
+"driver/compenv.ml" 114 3564 3584 "driver/compenv.ml" 114 3564 3587
+type(
+  string
+)
+ident(
+  int_ref arg "driver/compenv.ml" 112 3519 3525 "driver/compenv.ml" 112 3519 3528
+)
+"driver/compenv.ml" 114 3564 3588 "driver/compenv.ml" 114 3564 3591
+type(
+  char
+)
+"driver/compenv.ml" 114 3564 3572 "driver/compenv.ml" 114 3564 3591
+call(
+  stack
+)
+type(
+  string * string
+)
+"driver/compenv.ml" 115 3592 3603 "driver/compenv.ml" 115 3592 3612
+type(
+  exn
+)
+"driver/compenv.ml" 116 3616 3624 "driver/compenv.ml" 116 3616 3629
+type(
+  exn -> string * string
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"driver/compenv.ml" 116 3616 3644 "driver/compenv.ml" 116 3616 3661
+type(
+  string
+)
+"driver/compenv.ml" 116 3616 3662 "driver/compenv.ml" 116 3616 3663
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"driver/compenv.ml" 116 3616 3664 "driver/compenv.ml" 116 3616 3667
+type(
+  string
+)
+ident(
+  int_ref arg "driver/compenv.ml" 112 3519 3525 "driver/compenv.ml" 112 3519 3528
+)
+"driver/compenv.ml" 116 3616 3643 "driver/compenv.ml" 116 3616 3668
+call(
+  stack
+)
+type(
+  string
+)
+"driver/compenv.ml" 116 3616 3630 "driver/compenv.ml" 116 3616 3669
+type(
+  exn
+)
+"driver/compenv.ml" 116 3616 3624 "driver/compenv.ml" 116 3616 3669
+type(
+  string * string
+)
+"driver/compenv.ml" 113 3540 3560 "driver/compenv.ml" 116 3616 3669
+type(
+  string * string
+)
+"driver/compenv.ml" 118 3679 3688 "driver/compenv.ml" 118 3679 3696
+type(
+  bool
+)
+ident(
+  int_ref is_after "driver/compenv.ml" 103 3185 3200 "driver/compenv.ml" 103 3185 3208
+)
+"driver/compenv.ml" 119 3702 3710 "driver/compenv.ml" 119 3702 3714
+type(
+  bool ->
+  string list ->
+  (string * string) list ->
+  (string * string) list -> (string * string) list * (string * string) list
+)
+ident(
+  int_ref iter "driver/compenv.ml" 103 3185 3195 "driver/compenv.ml" 103 3185 3199
+)
+"driver/compenv.ml" 119 3702 3715 "driver/compenv.ml" 119 3702 3723
+type(
+  bool
+)
+ident(
+  int_ref is_after "driver/compenv.ml" 103 3185 3200 "driver/compenv.ml" 103 3185 3208
+)
+"driver/compenv.ml" 119 3702 3724 "driver/compenv.ml" 119 3702 3728
+type(
+  string list
+)
+ident(
+  int_ref tail "driver/compenv.ml" 112 3519 3532 "driver/compenv.ml" 112 3519 3536
+)
+"driver/compenv.ml" 119 3702 3729 "driver/compenv.ml" 119 3702 3735
+type(
+  (string * string) list
+)
+ident(
+  int_ref before "driver/compenv.ml" 103 3185 3214 "driver/compenv.ml" 103 3185 3220
+)
+"driver/compenv.ml" 119 3702 3737 "driver/compenv.ml" 119 3702 3744
+type(
+  string * string
+)
+ident(
+  int_ref binding "driver/compenv.ml" 113 3540 3550 "driver/compenv.ml" 113 3540 3557
+)
+"driver/compenv.ml" 119 3702 3748 "driver/compenv.ml" 119 3702 3753
+type(
+  (string * string) list
+)
+ident(
+  int_ref after "driver/compenv.ml" 103 3185 3221 "driver/compenv.ml" 103 3185 3226
+)
+"driver/compenv.ml" 119 3702 3736 "driver/compenv.ml" 119 3702 3754
+type(
+  (string * string) list
+)
+"driver/compenv.ml" 119 3702 3710 "driver/compenv.ml" 119 3702 3754
+call(
+  tail
+)
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 121 3766 3774 "driver/compenv.ml" 121 3766 3778
+type(
+  bool ->
+  string list ->
+  (string * string) list ->
+  (string * string) list -> (string * string) list * (string * string) list
+)
+ident(
+  int_ref iter "driver/compenv.ml" 103 3185 3195 "driver/compenv.ml" 103 3185 3199
+)
+"driver/compenv.ml" 121 3766 3779 "driver/compenv.ml" 121 3766 3787
+type(
+  bool
+)
+ident(
+  int_ref is_after "driver/compenv.ml" 103 3185 3200 "driver/compenv.ml" 103 3185 3208
+)
+"driver/compenv.ml" 121 3766 3788 "driver/compenv.ml" 121 3766 3792
+type(
+  string list
+)
+ident(
+  int_ref tail "driver/compenv.ml" 112 3519 3532 "driver/compenv.ml" 112 3519 3536
+)
+"driver/compenv.ml" 121 3766 3794 "driver/compenv.ml" 121 3766 3801
+type(
+  string * string
+)
+ident(
+  int_ref binding "driver/compenv.ml" 113 3540 3550 "driver/compenv.ml" 113 3540 3557
+)
+"driver/compenv.ml" 121 3766 3805 "driver/compenv.ml" 121 3766 3811
+type(
+  (string * string) list
+)
+ident(
+  int_ref before "driver/compenv.ml" 103 3185 3214 "driver/compenv.ml" 103 3185 3220
+)
+"driver/compenv.ml" 121 3766 3793 "driver/compenv.ml" 121 3766 3812
+type(
+  (string * string) list
+)
+"driver/compenv.ml" 121 3766 3813 "driver/compenv.ml" 121 3766 3818
+type(
+  (string * string) list
+)
+ident(
+  int_ref after "driver/compenv.ml" 103 3185 3221 "driver/compenv.ml" 103 3185 3226
+)
+"driver/compenv.ml" 121 3766 3774 "driver/compenv.ml" 121 3766 3818
+call(
+  tail
+)
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 118 3679 3685 "driver/compenv.ml" 121 3766 3818
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 113 3540 3546 "driver/compenv.ml" 121 3766 3818
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 104 3229 3233 "driver/compenv.ml" 121 3766 3818
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 123 3824 3826 "driver/compenv.ml" 123 3824 3830
+type(
+  bool ->
+  string list ->
+  (string * string) list ->
+  (string * string) list -> (string * string) list * (string * string) list
+)
+ident(
+  int_ref iter "driver/compenv.ml" 103 3185 3195 "driver/compenv.ml" 103 3185 3199
+)
+"driver/compenv.ml" 123 3824 3831 "driver/compenv.ml" 123 3824 3836
+type(
+  bool
+)
+"driver/compenv.ml" 123 3824 3837 "driver/compenv.ml" 123 3824 3841
+type(
+  string list
+)
+ident(
+  int_ref args "driver/compenv.ml" 102 3152 3158 "driver/compenv.ml" 102 3152 3162
+)
+"driver/compenv.ml" 123 3824 3842 "driver/compenv.ml" 123 3824 3844
+type(
+  (string * string) list
+)
+"driver/compenv.ml" 123 3824 3845 "driver/compenv.ml" 123 3824 3847
+type(
+  (string * string) list
+)
+"driver/compenv.ml" 123 3824 3826 "driver/compenv.ml" 123 3824 3847
+call(
+  tail
+)
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 103 3185 3187 "driver/compenv.ml" 123 3824 3847
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 102 3152 3154 "driver/compenv.ml" 123 3824 3847
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 125 3849 3853 "driver/compenv.ml" 125 3849 3859
+type(
+  Format.formatter -> (bool -> 'a) -> string -> 'a ref list -> string -> unit
+)
+ident(
+  def setter "driver/compenv.ml" 140 4370 4370 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 125 3849 3860 "driver/compenv.ml" 125 3849 3863
+type(
+  Format.formatter
+)
+ident(
+  def ppf "driver/compenv.ml" 125 3849 3864 "driver/compenv.ml" 136 4152 4226
+)
+"driver/compenv.ml" 125 3849 3864 "driver/compenv.ml" 125 3849 3865
+type(
+  bool -> 'a
+)
+ident(
+  def f "driver/compenv.ml" 125 3849 3866 "driver/compenv.ml" 136 4152 4226
+)
+"driver/compenv.ml" 125 3849 3866 "driver/compenv.ml" 125 3849 3870
+type(
+  string
+)
+ident(
+  def name "driver/compenv.ml" 125 3849 3871 "driver/compenv.ml" 136 4152 4226
+)
+"driver/compenv.ml" 125 3849 3871 "driver/compenv.ml" 125 3849 3878
+type(
+  'a ref list
+)
+ident(
+  def options "driver/compenv.ml" 125 3849 3879 "driver/compenv.ml" 136 4152 4226
+)
+"driver/compenv.ml" 125 3849 3879 "driver/compenv.ml" 125 3849 3880
+type(
+  string
+)
+ident(
+  def s "driver/compenv.ml" 126 3883 3885 "driver/compenv.ml" 136 4152 4226
+)
+"driver/compenv.ml" 127 3889 3897 "driver/compenv.ml" 127 3889 3901
+type(
+  bool
+)
+ident(
+  def bool "driver/compenv.ml" 132 3994 3998 "driver/compenv.ml" 132 3994 4038
+)
+"driver/compenv.ml" 127 3889 3910 "driver/compenv.ml" 127 3889 3911
+type(
+  string
+)
+ident(
+  int_ref s "driver/compenv.ml" 125 3849 3879 "driver/compenv.ml" 125 3849 3880
+)
+"driver/compenv.ml" 128 3917 3925 "driver/compenv.ml" 128 3917 3928
+type(
+  string
+)
+"driver/compenv.ml" 128 3917 3932 "driver/compenv.ml" 128 3917 3937
+type(
+  bool
+)
+"driver/compenv.ml" 129 3938 3946 "driver/compenv.ml" 129 3938 3949
+type(
+  string
+)
+"driver/compenv.ml" 129 3938 3953 "driver/compenv.ml" 129 3938 3957
+type(
+  bool
+)
+"driver/compenv.ml" 130 3958 3966 "driver/compenv.ml" 130 3958 3967
+type(
+  string
+)
+"driver/compenv.ml" 130 3958 3971 "driver/compenv.ml" 130 3958 3976
+type(
+  exn -> bool
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"driver/compenv.ml" 130 3958 3977 "driver/compenv.ml" 130 3958 3986
+type(
+  exn
+)
+"driver/compenv.ml" 130 3958 3971 "driver/compenv.ml" 130 3958 3986
+type(
+  bool
+)
+"driver/compenv.ml" 127 3889 3904 "driver/compenv.ml" 130 3958 3986
+type(
+  bool
+)
+"driver/compenv.ml" 132 3994 3998 "driver/compenv.ml" 132 3994 4007
+type(
+  ('a ref -> unit) -> 'a ref list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"driver/compenv.ml" 132 3994 4013 "driver/compenv.ml" 132 3994 4014
+type(
+  'a ref
+)
+ident(
+  def b "driver/compenv.ml" 132 3994 4018 "driver/compenv.ml" 132 3994 4029
+)
+"driver/compenv.ml" 132 3994 4018 "driver/compenv.ml" 132 3994 4019
+type(
+  'a ref
+)
+ident(
+  int_ref b "driver/compenv.ml" 132 3994 4013 "driver/compenv.ml" 132 3994 4014
+)
+"driver/compenv.ml" 132 3994 4020 "driver/compenv.ml" 132 3994 4022
+type(
+  'a ref -> 'a -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 132 3994 4023 "driver/compenv.ml" 132 3994 4024
+type(
+  bool -> 'a
+)
+ident(
+  int_ref f "driver/compenv.ml" 125 3849 3864 "driver/compenv.ml" 125 3849 3865
+)
+"driver/compenv.ml" 132 3994 4025 "driver/compenv.ml" 132 3994 4029
+type(
+  bool
+)
+ident(
+  int_ref bool "driver/compenv.ml" 127 3889 3897 "driver/compenv.ml" 127 3889 3901
+)
+"driver/compenv.ml" 132 3994 4023 "driver/compenv.ml" 132 3994 4029
+call(
+  stack
+)
+type(
+  'a
+)
+"driver/compenv.ml" 132 3994 4018 "driver/compenv.ml" 132 3994 4029
+type(
+  unit
+)
+"driver/compenv.ml" 132 3994 4008 "driver/compenv.ml" 132 3994 4030
+type(
+  'a ref -> unit
+)
+"driver/compenv.ml" 132 3994 4031 "driver/compenv.ml" 132 3994 4038
+type(
+  'a ref list
+)
+ident(
+  int_ref options "driver/compenv.ml" 125 3849 3871 "driver/compenv.ml" 125 3849 3878
+)
+"driver/compenv.ml" 132 3994 3998 "driver/compenv.ml" 132 3994 4038
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 127 3889 3893 "driver/compenv.ml" 132 3994 4038
+type(
+  unit
+)
+"driver/compenv.ml" 133 4039 4046 "driver/compenv.ml" 133 4039 4055
+type(
+  exn
+)
+"driver/compenv.ml" 134 4059 4063 "driver/compenv.ml" 134 4059 4085
+type(
+  Location.t -> Format.formatter -> Warnings.t -> unit
+)
+ident(
+  ext_ref Location.print_warning
+)
+"driver/compenv.ml" 134 4059 4086 "driver/compenv.ml" 134 4059 4099
+type(
+  Location.t
+)
+ident(
+  ext_ref Location.none
+)
+"driver/compenv.ml" 134 4059 4100 "driver/compenv.ml" 134 4059 4103
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "driver/compenv.ml" 125 3849 3860 "driver/compenv.ml" 125 3849 3863
+)
+"driver/compenv.ml" 135 4104 4138 "driver/compenv.ml" 135 4104 4150
+type(
+  string
+)
+"driver/compenv.ml" 136 4152 4186 "driver/compenv.ml" 136 4152 4200
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"driver/compenv.ml" 136 4152 4201 "driver/compenv.ml" 136 4152 4219
+type(
+  (string -> string, unit, string) format
+)
+"driver/compenv.ml" 136 4152 4220 "driver/compenv.ml" 136 4152 4224
+type(
+  string
+)
+ident(
+  int_ref name "driver/compenv.ml" 125 3849 3866 "driver/compenv.ml" 125 3849 3870
+)
+"driver/compenv.ml" 136 4152 4186 "driver/compenv.ml" 136 4152 4224
+call(
+  stack
+)
+type(
+  string
+)
+"driver/compenv.ml" 135 4104 4110 "driver/compenv.ml" 136 4152 4226
+type(
+  Warnings.t
+)
+"driver/compenv.ml" 134 4059 4063 "driver/compenv.ml" 136 4152 4226
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 126 3883 3885 "driver/compenv.ml" 136 4152 4226
+type(
+  unit
+)
+"driver/compenv.ml" 140 4370 4374 "driver/compenv.ml" 140 4370 4385
+type(
+  string list ref
+)
+ident(
+  def can_discard "driver/compenv.ml" 142 4396 4396 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 140 4370 4388 "driver/compenv.ml" 140 4370 4391
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"driver/compenv.ml" 140 4370 4392 "driver/compenv.ml" 140 4370 4394
+type(
+  string list
+)
+"driver/compenv.ml" 140 4370 4388 "driver/compenv.ml" 140 4370 4394
+type(
+  string list ref
+)
+"driver/compenv.ml" 142 4396 4400 "driver/compenv.ml" 142 4396 4415
+type(
+  Format.formatter -> readenv_position -> unit
+)
+ident(
+  def read_OCAMLPARAM "driver/compenv.ml" 283 9407 9407 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 142 4396 4416 "driver/compenv.ml" 142 4396 4419
+type(
+  Format.formatter
+)
+ident(
+  def ppf "driver/compenv.ml" 142 4396 4420 "driver/compenv.ml" 281 9383 9405
+)
+"driver/compenv.ml" 142 4396 4420 "driver/compenv.ml" 142 4396 4428
+type(
+  readenv_position
+)
+ident(
+  def position "driver/compenv.ml" 143 4431 4433 "driver/compenv.ml" 281 9383 9405
+)
+"driver/compenv.ml" 144 4437 4445 "driver/compenv.ml" 144 4437 4446
+type(
+  string
+)
+ident(
+  def s "driver/compenv.ml" 145 4476 4480 "driver/compenv.ml" 280 9336 9382
+)
+"driver/compenv.ml" 144 4437 4449 "driver/compenv.ml" 144 4437 4459
+type(
+  string -> string
+)
+ident(
+  ext_ref Sys.getenv
+)
+"driver/compenv.ml" 144 4437 4460 "driver/compenv.ml" 144 4437 4472
+type(
+  string
+)
+"driver/compenv.ml" 144 4437 4449 "driver/compenv.ml" 144 4437 4472
+type(
+  string
+)
+"driver/compenv.ml" 145 4476 4485 "driver/compenv.ml" 145 4476 4491
+type(
+  (string * string) list
+)
+ident(
+  def before "driver/compenv.ml" 153 4691 4695 "driver/compenv.ml" 280 9336 9382
+)
+"driver/compenv.ml" 145 4476 4493 "driver/compenv.ml" 145 4476 4498
+type(
+  (string * string) list
+)
+ident(
+  def after "driver/compenv.ml" 153 4691 4695 "driver/compenv.ml" 280 9336 9382
+)
+"driver/compenv.ml" 145 4476 4484 "driver/compenv.ml" 145 4476 4499
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 147 4512 4520 "driver/compenv.ml" 147 4512 4530
+type(
+  string -> (string * string) list * (string * string) list
+)
+ident(
+  int_ref parse_args "driver/compenv.ml" 101 3133 3137 "driver/compenv.ml" 101 3133 3147
+)
+"driver/compenv.ml" 147 4512 4531 "driver/compenv.ml" 147 4512 4532
+type(
+  string
+)
+ident(
+  int_ref s "driver/compenv.ml" 144 4437 4445 "driver/compenv.ml" 144 4437 4446
+)
+"driver/compenv.ml" 147 4512 4520 "driver/compenv.ml" 147 4512 4532
+call(
+  stack
+)
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 148 4533 4556 "driver/compenv.ml" 148 4533 4557
+type(
+  string
+)
+ident(
+  def s "driver/compenv.ml" 149 4561 4570 "driver/compenv.ml" 151 4669 4683
+)
+"driver/compenv.ml" 148 4533 4544 "driver/compenv.ml" 148 4533 4557
+type(
+  exn
+)
+"driver/compenv.ml" 149 4561 4570 "driver/compenv.ml" 149 4561 4592
+type(
+  Location.t -> Format.formatter -> Warnings.t -> unit
+)
+ident(
+  ext_ref Location.print_warning
+)
+"driver/compenv.ml" 149 4561 4593 "driver/compenv.ml" 149 4561 4606
+type(
+  Location.t
+)
+ident(
+  ext_ref Location.none
+)
+"driver/compenv.ml" 149 4561 4607 "driver/compenv.ml" 149 4561 4610
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "driver/compenv.ml" 142 4396 4416 "driver/compenv.ml" 142 4396 4419
+)
+"driver/compenv.ml" 150 4611 4650 "driver/compenv.ml" 150 4611 4662
+type(
+  string
+)
+"driver/compenv.ml" 150 4611 4664 "driver/compenv.ml" 150 4611 4665
+type(
+  string
+)
+ident(
+  int_ref s "driver/compenv.ml" 148 4533 4556 "driver/compenv.ml" 148 4533 4557
+)
+"driver/compenv.ml" 150 4611 4622 "driver/compenv.ml" 150 4611 4667
+type(
+  Warnings.t
+)
+"driver/compenv.ml" 149 4561 4570 "driver/compenv.ml" 150 4611 4667
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 151 4669 4678 "driver/compenv.ml" 151 4669 4680
+type(
+  (string * string) list
+)
+"driver/compenv.ml" 151 4669 4681 "driver/compenv.ml" 151 4669 4683
+type(
+  (string * string) list
+)
+"driver/compenv.ml" 151 4669 4678 "driver/compenv.ml" 151 4669 4683
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 149 4561 4570 "driver/compenv.ml" 151 4669 4683
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 146 4502 4508 "driver/compenv.ml" 151 4669 4683
+type(
+  (string * string) list * (string * string) list
+)
+"driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  def set "driver/compenv.ml" 154 4763 4767 "driver/compenv.ml" 280 9336 9382
+)
+"driver/compenv.ml" 153 4691 4703 "driver/compenv.ml" 153 4691 4707
+type(
+  string
+)
+ident(
+  def name "driver/compenv.ml" 153 4691 4708 "driver/compenv.ml" 153 4691 4759
+)
+"driver/compenv.ml" 153 4691 4708 "driver/compenv.ml" 153 4691 4715
+type(
+  bool ref list
+)
+ident(
+  def options "driver/compenv.ml" 153 4691 4716 "driver/compenv.ml" 153 4691 4759
+)
+"driver/compenv.ml" 153 4691 4716 "driver/compenv.ml" 153 4691 4717
+type(
+  string
+)
+ident(
+  def s "driver/compenv.ml" 153 4691 4721 "driver/compenv.ml" 153 4691 4759
+)
+"driver/compenv.ml" 153 4691 4721 "driver/compenv.ml" 153 4691 4727
+type(
+  Format.formatter ->
+  (bool -> bool) -> string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref setter "driver/compenv.ml" 125 3849 3853 "driver/compenv.ml" 125 3849 3859
+)
+"driver/compenv.ml" 153 4691 4728 "driver/compenv.ml" 153 4691 4731
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "driver/compenv.ml" 142 4396 4416 "driver/compenv.ml" 142 4396 4419
+)
+"driver/compenv.ml" 153 4691 4737 "driver/compenv.ml" 153 4691 4738
+type(
+  bool
+)
+ident(
+  def b "driver/compenv.ml" 153 4691 4742 "driver/compenv.ml" 153 4691 4743
+)
+"driver/compenv.ml" 153 4691 4742 "driver/compenv.ml" 153 4691 4743
+type(
+  bool
+)
+ident(
+  int_ref b "driver/compenv.ml" 153 4691 4737 "driver/compenv.ml" 153 4691 4738
+)
+"driver/compenv.ml" 153 4691 4732 "driver/compenv.ml" 153 4691 4744
+type(
+  bool -> bool
+)
+"driver/compenv.ml" 153 4691 4745 "driver/compenv.ml" 153 4691 4749
+type(
+  string
+)
+ident(
+  int_ref name "driver/compenv.ml" 153 4691 4703 "driver/compenv.ml" 153 4691 4707
+)
+"driver/compenv.ml" 153 4691 4750 "driver/compenv.ml" 153 4691 4757
+type(
+  bool ref list
+)
+ident(
+  int_ref options "driver/compenv.ml" 153 4691 4708 "driver/compenv.ml" 153 4691 4715
+)
+"driver/compenv.ml" 153 4691 4758 "driver/compenv.ml" 153 4691 4759
+type(
+  string
+)
+ident(
+  int_ref s "driver/compenv.ml" 153 4691 4716 "driver/compenv.ml" 153 4691 4717
+)
+"driver/compenv.ml" 153 4691 4721 "driver/compenv.ml" 153 4691 4759
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 154 4763 4771 "driver/compenv.ml" 154 4763 4776
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  def clear "driver/compenv.ml" 155 4840 4844 "driver/compenv.ml" 280 9336 9382
+)
+"driver/compenv.ml" 154 4763 4777 "driver/compenv.ml" 154 4763 4781
+type(
+  string
+)
+ident(
+  def name "driver/compenv.ml" 154 4763 4782 "driver/compenv.ml" 154 4763 4836
+)
+"driver/compenv.ml" 154 4763 4782 "driver/compenv.ml" 154 4763 4789
+type(
+  bool ref list
+)
+ident(
+  def options "driver/compenv.ml" 154 4763 4790 "driver/compenv.ml" 154 4763 4836
+)
+"driver/compenv.ml" 154 4763 4790 "driver/compenv.ml" 154 4763 4791
+type(
+  string
+)
+ident(
+  def s "driver/compenv.ml" 154 4763 4794 "driver/compenv.ml" 154 4763 4836
+)
+"driver/compenv.ml" 154 4763 4794 "driver/compenv.ml" 154 4763 4800
+type(
+  Format.formatter ->
+  (bool -> bool) -> string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref setter "driver/compenv.ml" 125 3849 3853 "driver/compenv.ml" 125 3849 3859
+)
+"driver/compenv.ml" 154 4763 4801 "driver/compenv.ml" 154 4763 4804
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "driver/compenv.ml" 142 4396 4416 "driver/compenv.ml" 142 4396 4419
+)
+"driver/compenv.ml" 154 4763 4810 "driver/compenv.ml" 154 4763 4811
+type(
+  bool
+)
+ident(
+  def b "driver/compenv.ml" 154 4763 4815 "driver/compenv.ml" 154 4763 4820
+)
+"driver/compenv.ml" 154 4763 4815 "driver/compenv.ml" 154 4763 4818
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"driver/compenv.ml" 154 4763 4819 "driver/compenv.ml" 154 4763 4820
+type(
+  bool
+)
+ident(
+  int_ref b "driver/compenv.ml" 154 4763 4810 "driver/compenv.ml" 154 4763 4811
+)
+"driver/compenv.ml" 154 4763 4815 "driver/compenv.ml" 154 4763 4820
+type(
+  bool
+)
+"driver/compenv.ml" 154 4763 4805 "driver/compenv.ml" 154 4763 4821
+type(
+  bool -> bool
+)
+"driver/compenv.ml" 154 4763 4822 "driver/compenv.ml" 154 4763 4826
+type(
+  string
+)
+ident(
+  int_ref name "driver/compenv.ml" 154 4763 4777 "driver/compenv.ml" 154 4763 4781
+)
+"driver/compenv.ml" 154 4763 4827 "driver/compenv.ml" 154 4763 4834
+type(
+  bool ref list
+)
+ident(
+  int_ref options "driver/compenv.ml" 154 4763 4782 "driver/compenv.ml" 154 4763 4789
+)
+"driver/compenv.ml" 154 4763 4835 "driver/compenv.ml" 154 4763 4836
+type(
+  string
+)
+ident(
+  int_ref s "driver/compenv.ml" 154 4763 4790 "driver/compenv.ml" 154 4763 4791
+)
+"driver/compenv.ml" 154 4763 4794 "driver/compenv.ml" 154 4763 4836
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 155 4840 4844 "driver/compenv.ml" 155 4840 4853
+type(
+  (string * string -> unit) -> (string * string) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"driver/compenv.ml" 155 4840 4860 "driver/compenv.ml" 155 4840 4864
+type(
+  string
+)
+ident(
+  def name "driver/compenv.ml" 156 4872 4878 "driver/compenv.ml" 277 9267 9278
+)
+"driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+type(
+  string
+)
+ident(
+  def v "driver/compenv.ml" 156 4872 4878 "driver/compenv.ml" 277 9267 9278
+)
+"driver/compenv.ml" 155 4840 4859 "driver/compenv.ml" 155 4840 4868
+type(
+  string * string
+)
+"driver/compenv.ml" 156 4872 4884 "driver/compenv.ml" 156 4872 4888
+type(
+  string
+)
+ident(
+  int_ref name "driver/compenv.ml" 155 4840 4860 "driver/compenv.ml" 155 4840 4864
+)
+"driver/compenv.ml" 157 4894 4902 "driver/compenv.ml" 157 4894 4905
+type(
+  string
+)
+"driver/compenv.ml" 157 4894 4909 "driver/compenv.ml" 157 4894 4912
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 157 4894 4913 "driver/compenv.ml" 157 4894 4916
+type(
+  string
+)
+"driver/compenv.ml" 157 4894 4919 "driver/compenv.ml" 157 4894 4932
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.debug
+)
+"driver/compenv.ml" 157 4894 4917 "driver/compenv.ml" 157 4894 4934
+type(
+  bool ref list
+)
+"driver/compenv.ml" 157 4894 4935 "driver/compenv.ml" 157 4894 4936
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 157 4894 4909 "driver/compenv.ml" 157 4894 4936
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 158 4937 4945 "driver/compenv.ml" 158 4937 4948
+type(
+  string
+)
+"driver/compenv.ml" 158 4937 4952 "driver/compenv.ml" 158 4937 4955
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 158 4937 4956 "driver/compenv.ml" 158 4937 4959
+type(
+  string
+)
+"driver/compenv.ml" 158 4937 4962 "driver/compenv.ml" 158 4937 4978
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.gprofile
+)
+"driver/compenv.ml" 158 4937 4960 "driver/compenv.ml" 158 4937 4980
+type(
+  bool ref list
+)
+"driver/compenv.ml" 158 4937 4981 "driver/compenv.ml" 158 4937 4982
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 158 4937 4952 "driver/compenv.ml" 158 4937 4982
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 159 4983 4991 "driver/compenv.ml" 159 4983 5002
+type(
+  string
+)
+"driver/compenv.ml" 159 4983 5006 "driver/compenv.ml" 159 4983 5009
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 159 4983 5010 "driver/compenv.ml" 159 4983 5021
+type(
+  string
+)
+"driver/compenv.ml" 159 4983 5024 "driver/compenv.ml" 159 4983 5050
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.binary_annotations
+)
+"driver/compenv.ml" 159 4983 5022 "driver/compenv.ml" 159 4983 5052
+type(
+  bool ref list
+)
+"driver/compenv.ml" 159 4983 5053 "driver/compenv.ml" 159 4983 5054
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 159 4983 5006 "driver/compenv.ml" 159 4983 5054
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 160 5055 5063 "driver/compenv.ml" 160 5055 5070
+type(
+  string
+)
+"driver/compenv.ml" 160 5055 5074 "driver/compenv.ml" 160 5055 5077
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 160 5055 5078 "driver/compenv.ml" 160 5055 5085
+type(
+  string
+)
+"driver/compenv.ml" 160 5055 5088 "driver/compenv.ml" 160 5055 5107
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.annotations
+)
+"driver/compenv.ml" 160 5055 5086 "driver/compenv.ml" 160 5055 5109
+type(
+  bool ref list
+)
+"driver/compenv.ml" 160 5055 5110 "driver/compenv.ml" 160 5055 5111
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 160 5055 5074 "driver/compenv.ml" 160 5055 5111
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 161 5112 5120 "driver/compenv.ml" 161 5112 5129
+type(
+  string
+)
+"driver/compenv.ml" 161 5112 5133 "driver/compenv.ml" 161 5112 5136
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 161 5112 5137 "driver/compenv.ml" 161 5112 5146
+type(
+  string
+)
+"driver/compenv.ml" 161 5112 5149 "driver/compenv.ml" 161 5112 5165
+type(
+  bool ref
+)
+ident(
+  ext_ref Location.absname
+)
+"driver/compenv.ml" 161 5112 5147 "driver/compenv.ml" 161 5112 5167
+type(
+  bool ref list
+)
+"driver/compenv.ml" 161 5112 5168 "driver/compenv.ml" 161 5112 5169
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 161 5112 5133 "driver/compenv.ml" 161 5112 5169
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 162 5170 5178 "driver/compenv.ml" 162 5170 5189
+type(
+  string
+)
+"driver/compenv.ml" 162 5170 5193 "driver/compenv.ml" 162 5170 5196
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 162 5170 5197 "driver/compenv.ml" 162 5170 5208
+type(
+  string
+)
+"driver/compenv.ml" 162 5170 5211 "driver/compenv.ml" 162 5170 5233
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.bytecode_compatible_32
+)
+"driver/compenv.ml" 162 5170 5209 "driver/compenv.ml" 162 5170 5235
+type(
+  bool ref list
+)
+"driver/compenv.ml" 162 5170 5236 "driver/compenv.ml" 162 5170 5237
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 162 5170 5193 "driver/compenv.ml" 162 5170 5237
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 163 5238 5246 "driver/compenv.ml" 163 5238 5256
+type(
+  string
+)
+"driver/compenv.ml" 163 5238 5260 "driver/compenv.ml" 163 5238 5263
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 163 5238 5264 "driver/compenv.ml" 163 5238 5274
+type(
+  string
+)
+"driver/compenv.ml" 163 5238 5277 "driver/compenv.ml" 163 5238 5285
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.noassert
+)
+"driver/compenv.ml" 163 5238 5275 "driver/compenv.ml" 163 5238 5287
+type(
+  bool ref list
+)
+"driver/compenv.ml" 163 5238 5288 "driver/compenv.ml" 163 5238 5289
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 163 5238 5260 "driver/compenv.ml" 163 5238 5289
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 164 5290 5298 "driver/compenv.ml" 164 5290 5310
+type(
+  string
+)
+"driver/compenv.ml" 164 5290 5314 "driver/compenv.ml" 164 5290 5317
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 164 5290 5318 "driver/compenv.ml" 164 5290 5330
+type(
+  string
+)
+"driver/compenv.ml" 164 5290 5333 "driver/compenv.ml" 164 5290 5345
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.no_auto_link
+)
+"driver/compenv.ml" 164 5290 5331 "driver/compenv.ml" 164 5290 5347
+type(
+  bool ref list
+)
+"driver/compenv.ml" 164 5290 5348 "driver/compenv.ml" 164 5290 5349
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 164 5290 5314 "driver/compenv.ml" 164 5290 5349
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 165 5350 5358 "driver/compenv.ml" 165 5350 5368
+type(
+  string
+)
+"driver/compenv.ml" 165 5350 5372 "driver/compenv.ml" 165 5350 5375
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 165 5350 5376 "driver/compenv.ml" 165 5350 5386
+type(
+  string
+)
+"driver/compenv.ml" 165 5350 5389 "driver/compenv.ml" 165 5350 5403
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.no_std_include
+)
+"driver/compenv.ml" 165 5350 5387 "driver/compenv.ml" 165 5350 5405
+type(
+  bool ref list
+)
+"driver/compenv.ml" 165 5350 5406 "driver/compenv.ml" 165 5350 5407
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 165 5350 5372 "driver/compenv.ml" 165 5350 5407
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 166 5408 5416 "driver/compenv.ml" 166 5408 5425
+type(
+  string
+)
+"driver/compenv.ml" 166 5408 5429 "driver/compenv.ml" 166 5408 5432
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 166 5408 5433 "driver/compenv.ml" 166 5408 5442
+type(
+  string
+)
+"driver/compenv.ml" 166 5408 5445 "driver/compenv.ml" 166 5408 5460
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.link_everything
+)
+"driver/compenv.ml" 166 5408 5443 "driver/compenv.ml" 166 5408 5462
+type(
+  bool ref list
+)
+"driver/compenv.ml" 166 5408 5463 "driver/compenv.ml" 166 5408 5464
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 166 5408 5429 "driver/compenv.ml" 166 5408 5464
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 167 5465 5473 "driver/compenv.ml" 167 5465 5483
+type(
+  string
+)
+"driver/compenv.ml" 167 5465 5487 "driver/compenv.ml" 167 5465 5490
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 167 5465 5491 "driver/compenv.ml" 167 5465 5501
+type(
+  string
+)
+"driver/compenv.ml" 167 5465 5504 "driver/compenv.ml" 167 5465 5511
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.classic
+)
+"driver/compenv.ml" 167 5465 5502 "driver/compenv.ml" 167 5465 5513
+type(
+  bool ref list
+)
+"driver/compenv.ml" 167 5465 5514 "driver/compenv.ml" 167 5465 5515
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 167 5465 5487 "driver/compenv.ml" 167 5465 5515
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 168 5516 5524 "driver/compenv.ml" 168 5516 5535
+type(
+  string
+)
+"driver/compenv.ml" 168 5516 5539 "driver/compenv.ml" 168 5516 5542
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 168 5516 5543 "driver/compenv.ml" 168 5516 5554
+type(
+  string
+)
+"driver/compenv.ml" 168 5516 5558 "driver/compenv.ml" 168 5516 5567
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.principal
+)
+"driver/compenv.ml" 168 5516 5556 "driver/compenv.ml" 168 5516 5569
+type(
+  bool ref list
+)
+"driver/compenv.ml" 168 5516 5570 "driver/compenv.ml" 168 5516 5571
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 168 5516 5539 "driver/compenv.ml" 168 5516 5571
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 169 5572 5580 "driver/compenv.ml" 169 5572 5590
+type(
+  string
+)
+"driver/compenv.ml" 169 5572 5594 "driver/compenv.ml" 169 5572 5597
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 169 5572 5598 "driver/compenv.ml" 169 5572 5608
+type(
+  string
+)
+"driver/compenv.ml" 169 5572 5611 "driver/compenv.ml" 169 5572 5626
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.recursive_types
+)
+"driver/compenv.ml" 169 5572 5609 "driver/compenv.ml" 169 5572 5628
+type(
+  bool ref list
+)
+"driver/compenv.ml" 169 5572 5629 "driver/compenv.ml" 169 5572 5630
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 169 5572 5594 "driver/compenv.ml" 169 5572 5630
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 170 5631 5639 "driver/compenv.ml" 170 5631 5652
+type(
+  string
+)
+"driver/compenv.ml" 170 5631 5656 "driver/compenv.ml" 170 5631 5661
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref clear "driver/compenv.ml" 154 4763 4771 "driver/compenv.ml" 154 4763 4776
+)
+"driver/compenv.ml" 170 5631 5662 "driver/compenv.ml" 170 5631 5675
+type(
+  string
+)
+"driver/compenv.ml" 170 5631 5678 "driver/compenv.ml" 170 5631 5691
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.unsafe_string
+)
+"driver/compenv.ml" 170 5631 5676 "driver/compenv.ml" 170 5631 5693
+type(
+  bool ref list
+)
+"driver/compenv.ml" 170 5631 5694 "driver/compenv.ml" 170 5631 5695
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 170 5631 5656 "driver/compenv.ml" 170 5631 5695
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 171 5696 5704 "driver/compenv.ml" 171 5696 5721
+type(
+  string
+)
+"driver/compenv.ml" 171 5696 5725 "driver/compenv.ml" 171 5696 5728
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 171 5696 5729 "driver/compenv.ml" 171 5696 5746
+type(
+  string
+)
+"driver/compenv.ml" 171 5696 5749 "driver/compenv.ml" 171 5696 5764
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.strict_sequence
+)
+"driver/compenv.ml" 171 5696 5747 "driver/compenv.ml" 171 5696 5766
+type(
+  bool ref list
+)
+"driver/compenv.ml" 171 5696 5767 "driver/compenv.ml" 171 5696 5768
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 171 5696 5725 "driver/compenv.ml" 171 5696 5768
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 172 5769 5777 "driver/compenv.ml" 172 5769 5793
+type(
+  string
+)
+"driver/compenv.ml" 172 5769 5797 "driver/compenv.ml" 172 5769 5800
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 172 5769 5801 "driver/compenv.ml" 172 5769 5817
+type(
+  string
+)
+"driver/compenv.ml" 172 5769 5820 "driver/compenv.ml" 172 5769 5834
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.strict_formats
+)
+"driver/compenv.ml" 172 5769 5818 "driver/compenv.ml" 172 5769 5836
+type(
+  bool ref list
+)
+"driver/compenv.ml" 172 5769 5837 "driver/compenv.ml" 172 5769 5838
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 172 5769 5797 "driver/compenv.ml" 172 5769 5838
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 173 5839 5847 "driver/compenv.ml" 173 5839 5855
+type(
+  string
+)
+"driver/compenv.ml" 173 5839 5859 "driver/compenv.ml" 173 5839 5862
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 173 5839 5863 "driver/compenv.ml" 173 5839 5871
+type(
+  string
+)
+"driver/compenv.ml" 173 5839 5874 "driver/compenv.ml" 173 5839 5885
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.use_threads
+)
+"driver/compenv.ml" 173 5839 5872 "driver/compenv.ml" 173 5839 5887
+type(
+  bool ref list
+)
+"driver/compenv.ml" 173 5839 5888 "driver/compenv.ml" 173 5839 5889
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 173 5839 5859 "driver/compenv.ml" 173 5839 5889
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 174 5890 5898 "driver/compenv.ml" 174 5890 5906
+type(
+  string
+)
+"driver/compenv.ml" 174 5890 5910 "driver/compenv.ml" 174 5890 5913
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 174 5890 5914 "driver/compenv.ml" 174 5890 5922
+type(
+  string
+)
+"driver/compenv.ml" 174 5890 5925 "driver/compenv.ml" 174 5890 5929
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.fast
+)
+"driver/compenv.ml" 174 5890 5923 "driver/compenv.ml" 174 5890 5931
+type(
+  bool ref list
+)
+"driver/compenv.ml" 174 5890 5932 "driver/compenv.ml" 174 5890 5933
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 174 5890 5910 "driver/compenv.ml" 174 5890 5933
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 175 5934 5942 "driver/compenv.ml" 175 5934 5951
+type(
+  string
+)
+"driver/compenv.ml" 175 5934 5955 "driver/compenv.ml" 175 5934 5958
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 175 5934 5959 "driver/compenv.ml" 175 5934 5968
+type(
+  string
+)
+"driver/compenv.ml" 175 5934 5971 "driver/compenv.ml" 175 5934 5978
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.verbose
+)
+"driver/compenv.ml" 175 5934 5969 "driver/compenv.ml" 175 5934 5980
+type(
+  bool ref list
+)
+"driver/compenv.ml" 175 5934 5981 "driver/compenv.ml" 175 5934 5982
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 175 5934 5955 "driver/compenv.ml" 175 5934 5982
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 176 5983 5991 "driver/compenv.ml" 176 5983 6005
+type(
+  string
+)
+"driver/compenv.ml" 176 5983 6009 "driver/compenv.ml" 176 5983 6012
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 176 5983 6013 "driver/compenv.ml" 176 5983 6027
+type(
+  string
+)
+"driver/compenv.ml" 176 5983 6030 "driver/compenv.ml" 176 5983 6042
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.nopervasives
+)
+"driver/compenv.ml" 176 5983 6028 "driver/compenv.ml" 176 5983 6044
+type(
+  bool ref list
+)
+"driver/compenv.ml" 176 5983 6045 "driver/compenv.ml" 176 5983 6046
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 176 5983 6009 "driver/compenv.ml" 176 5983 6046
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 177 6047 6055 "driver/compenv.ml" 177 6047 6062
+type(
+  string
+)
+"driver/compenv.ml" 177 6047 6066 "driver/compenv.ml" 177 6047 6069
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 177 6047 6070 "driver/compenv.ml" 177 6047 6077
+type(
+  string
+)
+"driver/compenv.ml" 177 6047 6080 "driver/compenv.ml" 177 6047 6091
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.force_slash
+)
+"driver/compenv.ml" 177 6047 6078 "driver/compenv.ml" 177 6047 6093
+type(
+  bool ref list
+)
+"driver/compenv.ml" 177 6047 6094 "driver/compenv.ml" 177 6047 6095
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 177 6047 6066 "driver/compenv.ml" 177 6047 6095
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 178 6115 6123 "driver/compenv.ml" 178 6115 6134
+type(
+  string
+)
+"driver/compenv.ml" 178 6115 6138 "driver/compenv.ml" 178 6115 6141
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 178 6115 6142 "driver/compenv.ml" 178 6115 6153
+type(
+  string
+)
+"driver/compenv.ml" 178 6115 6156 "driver/compenv.ml" 178 6115 6173
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.keep_locs
+)
+"driver/compenv.ml" 178 6115 6154 "driver/compenv.ml" 178 6115 6175
+type(
+  bool ref list
+)
+"driver/compenv.ml" 178 6115 6176 "driver/compenv.ml" 178 6115 6177
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 178 6115 6138 "driver/compenv.ml" 178 6115 6177
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 180 6179 6187 "driver/compenv.ml" 180 6179 6196
+type(
+  string
+)
+"driver/compenv.ml" 180 6179 6200 "driver/compenv.ml" 180 6179 6205
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref clear "driver/compenv.ml" 154 4763 4771 "driver/compenv.ml" 154 4763 4776
+)
+"driver/compenv.ml" 180 6179 6206 "driver/compenv.ml" 180 6179 6215
+type(
+  string
+)
+"driver/compenv.ml" 180 6179 6218 "driver/compenv.ml" 180 6179 6236
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.optimize_for_speed
+)
+"driver/compenv.ml" 180 6179 6216 "driver/compenv.ml" 180 6179 6238
+type(
+  bool ref list
+)
+"driver/compenv.ml" 180 6179 6239 "driver/compenv.ml" 180 6179 6240
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 180 6179 6200 "driver/compenv.ml" 180 6179 6240
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 181 6241 6249 "driver/compenv.ml" 181 6241 6263
+type(
+  string
+)
+"driver/compenv.ml" 181 6241 6267 "driver/compenv.ml" 181 6241 6272
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref clear "driver/compenv.ml" 154 4763 4771 "driver/compenv.ml" 154 4763 4776
+)
+"driver/compenv.ml" 181 6241 6273 "driver/compenv.ml" 181 6241 6287
+type(
+  string
+)
+"driver/compenv.ml" 181 6241 6290 "driver/compenv.ml" 181 6241 6310
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.applicative_functors
+)
+"driver/compenv.ml" 181 6241 6288 "driver/compenv.ml" 181 6241 6312
+type(
+  bool ref list
+)
+"driver/compenv.ml" 181 6241 6313 "driver/compenv.ml" 181 6241 6314
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 181 6241 6267 "driver/compenv.ml" 181 6241 6314
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 182 6315 6323 "driver/compenv.ml" 182 6315 6334
+type(
+  string
+)
+"driver/compenv.ml" 182 6315 6338 "driver/compenv.ml" 182 6315 6343
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref clear "driver/compenv.ml" 154 4763 4771 "driver/compenv.ml" 154 4763 4776
+)
+"driver/compenv.ml" 182 6315 6344 "driver/compenv.ml" 182 6315 6355
+type(
+  string
+)
+"driver/compenv.ml" 182 6315 6358 "driver/compenv.ml" 182 6315 6364
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.dlcode
+)
+"driver/compenv.ml" 182 6315 6356 "driver/compenv.ml" 182 6315 6366
+type(
+  bool ref list
+)
+"driver/compenv.ml" 182 6315 6367 "driver/compenv.ml" 182 6315 6368
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 182 6315 6338 "driver/compenv.ml" 182 6315 6368
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 183 6369 6377 "driver/compenv.ml" 183 6369 6390
+type(
+  string
+)
+"driver/compenv.ml" 183 6369 6394 "driver/compenv.ml" 183 6369 6399
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref clear "driver/compenv.ml" 154 4763 4771 "driver/compenv.ml" 154 4763 4776
+)
+"driver/compenv.ml" 183 6369 6400 "driver/compenv.ml" 183 6369 6413
+type(
+  string
+)
+"driver/compenv.ml" 183 6369 6416 "driver/compenv.ml" 183 6369 6426
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.real_paths
+)
+"driver/compenv.ml" 183 6369 6414 "driver/compenv.ml" 183 6369 6428
+type(
+  bool ref list
+)
+"driver/compenv.ml" 183 6369 6429 "driver/compenv.ml" 183 6369 6430
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 183 6369 6394 "driver/compenv.ml" 183 6369 6430
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 184 6431 6439 "driver/compenv.ml" 184 6431 6450
+type(
+  string
+)
+"driver/compenv.ml" 184 6431 6454 "driver/compenv.ml" 184 6431 6457
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 184 6431 6458 "driver/compenv.ml" 184 6431 6469
+type(
+  string
+)
+"driver/compenv.ml" 184 6431 6472 "driver/compenv.ml" 184 6431 6491
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.transparent_modules
+)
+"driver/compenv.ml" 184 6431 6470 "driver/compenv.ml" 184 6431 6493
+type(
+  bool ref list
+)
+"driver/compenv.ml" 184 6431 6494 "driver/compenv.ml" 184 6431 6495
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 184 6431 6454 "driver/compenv.ml" 184 6431 6495
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 186 6497 6505 "driver/compenv.ml" 186 6497 6509
+type(
+  string
+)
+"driver/compenv.ml" 186 6497 6513 "driver/compenv.ml" 186 6497 6525
+type(
+  string option ref
+)
+ident(
+  ext_ref Clflags.preprocessor
+)
+"driver/compenv.ml" 186 6497 6526 "driver/compenv.ml" 186 6497 6528
+type(
+  string option ref -> string option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 186 6497 6534 "driver/compenv.ml" 186 6497 6535
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 186 6497 6529 "driver/compenv.ml" 186 6497 6535
+type(
+  string option
+)
+"driver/compenv.ml" 186 6497 6513 "driver/compenv.ml" 186 6497 6535
+type(
+  unit
+)
+"driver/compenv.ml" 187 6536 6544 "driver/compenv.ml" 187 6536 6561
+type(
+  string
+)
+"driver/compenv.ml" 187 6536 6565 "driver/compenv.ml" 187 6536 6580
+type(
+  string ref
+)
+ident(
+  ext_ref Clflags.runtime_variant
+)
+"driver/compenv.ml" 187 6536 6581 "driver/compenv.ml" 187 6536 6583
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 187 6536 6584 "driver/compenv.ml" 187 6536 6585
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 187 6536 6565 "driver/compenv.ml" 187 6536 6585
+type(
+  unit
+)
+"driver/compenv.ml" 188 6586 6594 "driver/compenv.ml" 188 6586 6598
+type(
+  string
+)
+"driver/compenv.ml" 188 6586 6602 "driver/compenv.ml" 188 6586 6612
+type(
+  string option ref
+)
+ident(
+  ext_ref Clflags.c_compiler
+)
+"driver/compenv.ml" 188 6586 6613 "driver/compenv.ml" 188 6586 6615
+type(
+  string option ref -> string option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 188 6586 6621 "driver/compenv.ml" 188 6586 6622
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 188 6586 6616 "driver/compenv.ml" 188 6586 6622
+type(
+  string option
+)
+"driver/compenv.ml" 188 6586 6602 "driver/compenv.ml" 188 6586 6622
+type(
+  unit
+)
+"driver/compenv.ml" 191 6653 6662 "driver/compenv.ml" 191 6653 6665
+type(
+  string
+)
+"driver/compenv.ml" 192 6669 6677 "driver/compenv.ml" 192 6669 6680
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 192 6669 6681 "driver/compenv.ml" 192 6669 6684
+type(
+  string
+)
+"driver/compenv.ml" 192 6669 6687 "driver/compenv.ml" 192 6669 6708
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.keep_asm_file
+)
+"driver/compenv.ml" 192 6669 6711 "driver/compenv.ml" 192 6669 6736
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.keep_startup_file
+)
+"driver/compenv.ml" 192 6669 6685 "driver/compenv.ml" 192 6669 6738
+type(
+  bool ref list
+)
+"driver/compenv.ml" 192 6669 6739 "driver/compenv.ml" 192 6669 6740
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 192 6669 6677 "driver/compenv.ml" 192 6669 6740
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 193 6741 6750 "driver/compenv.ml" 193 6741 6753
+type(
+  string
+)
+"driver/compenv.ml" 193 6741 6757 "driver/compenv.ml" 193 6741 6760
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 193 6741 6761 "driver/compenv.ml" 193 6741 6764
+type(
+  string
+)
+"driver/compenv.ml" 193 6741 6767 "driver/compenv.ml" 193 6741 6788
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.keep_asm_file
+)
+"driver/compenv.ml" 193 6741 6765 "driver/compenv.ml" 193 6741 6790
+type(
+  bool ref list
+)
+"driver/compenv.ml" 193 6741 6791 "driver/compenv.ml" 193 6741 6792
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 193 6741 6757 "driver/compenv.ml" 193 6741 6792
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 194 6793 6802 "driver/compenv.ml" 194 6793 6812
+type(
+  string
+)
+"driver/compenv.ml" 194 6793 6816 "driver/compenv.ml" 194 6793 6819
+type(
+  string -> bool ref list -> string -> unit
+)
+ident(
+  int_ref set "driver/compenv.ml" 153 4691 4699 "driver/compenv.ml" 153 4691 4702
+)
+"driver/compenv.ml" 194 6793 6820 "driver/compenv.ml" 194 6793 6830
+type(
+  string
+)
+"driver/compenv.ml" 194 6793 6833 "driver/compenv.ml" 194 6793 6858
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.keep_startup_file
+)
+"driver/compenv.ml" 194 6793 6831 "driver/compenv.ml" 194 6793 6860
+type(
+  bool ref list
+)
+"driver/compenv.ml" 194 6793 6861 "driver/compenv.ml" 194 6793 6862
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 194 6793 6816 "driver/compenv.ml" 194 6793 6862
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 197 6888 6896 "driver/compenv.ml" 197 6888 6900
+type(
+  string
+)
+"driver/compenv.ml" 197 6888 6903 "driver/compenv.ml" 197 6888 6915
+type(
+  string
+)
+"driver/compenv.ml" 197 6888 6896 "driver/compenv.ml" 197 6888 6915
+type(
+  string
+)
+"driver/compenv.ml" 197 6888 6919 "driver/compenv.ml" 197 6888 6941
+type(
+  bool -> string -> unit
+)
+ident(
+  ext_ref Warnings.parse_options
+)
+"driver/compenv.ml" 197 6888 6942 "driver/compenv.ml" 197 6888 6946
+type(
+  bool
+)
+"driver/compenv.ml" 197 6888 6947 "driver/compenv.ml" 197 6888 6948
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 197 6888 6919 "driver/compenv.ml" 197 6888 6948
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 199 6970 6979 "driver/compenv.ml" 199 6970 6982
+type(
+  string
+)
+"driver/compenv.ml" 199 6970 7001 "driver/compenv.ml" 199 6970 7023
+type(
+  bool -> string -> unit
+)
+ident(
+  ext_ref Warnings.parse_options
+)
+"driver/compenv.ml" 199 6970 7024 "driver/compenv.ml" 199 6970 7029
+type(
+  bool
+)
+"driver/compenv.ml" 199 6970 7030 "driver/compenv.ml" 199 6970 7031
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 199 6970 7001 "driver/compenv.ml" 199 6970 7031
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 201 7056 7064 "driver/compenv.ml" 201 7056 7069
+type(
+  string
+)
+"driver/compenv.ml" 201 7056 7087 "driver/compenv.ml" 201 7056 7109
+type(
+  bool -> string -> unit
+)
+ident(
+  ext_ref Warnings.parse_options
+)
+"driver/compenv.ml" 201 7056 7110 "driver/compenv.ml" 201 7056 7115
+type(
+  bool
+)
+"driver/compenv.ml" 201 7056 7116 "driver/compenv.ml" 201 7056 7117
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 201 7056 7087 "driver/compenv.ml" 201 7056 7117
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 204 7140 7148 "driver/compenv.ml" 204 7140 7156
+type(
+  string
+)
+"driver/compenv.ml" 205 7170 7180 "driver/compenv.ml" 205 7170 7196
+type(
+  int ref
+)
+ident(
+  ext_ref Clflags.inline_threshold
+)
+"driver/compenv.ml" 205 7170 7197 "driver/compenv.ml" 205 7170 7199
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 205 7170 7200 "driver/compenv.ml" 205 7170 7201
+type(
+  int
+)
+"driver/compenv.ml" 205 7170 7202 "driver/compenv.ml" 205 7170 7203
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"driver/compenv.ml" 205 7170 7204 "driver/compenv.ml" 205 7170 7217
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"driver/compenv.ml" 205 7170 7218 "driver/compenv.ml" 205 7170 7219
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 205 7170 7204 "driver/compenv.ml" 205 7170 7219
+type(
+  int
+)
+"driver/compenv.ml" 205 7170 7200 "driver/compenv.ml" 205 7170 7219
+type(
+  int
+)
+"driver/compenv.ml" 205 7170 7180 "driver/compenv.ml" 205 7170 7219
+type(
+  unit
+)
+"driver/compenv.ml" 206 7220 7233 "driver/compenv.ml" 206 7220 7234
+type(
+  exn
+)
+"driver/compenv.ml" 207 7238 7248 "driver/compenv.ml" 207 7238 7270
+type(
+  Location.t -> Format.formatter -> Warnings.t -> unit
+)
+ident(
+  ext_ref Location.print_warning
+)
+"driver/compenv.ml" 207 7238 7271 "driver/compenv.ml" 207 7238 7284
+type(
+  Location.t
+)
+ident(
+  ext_ref Location.none
+)
+"driver/compenv.ml" 207 7238 7285 "driver/compenv.ml" 207 7238 7288
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "driver/compenv.ml" 142 4396 4416 "driver/compenv.ml" 142 4396 4419
+)
+"driver/compenv.ml" 208 7289 7329 "driver/compenv.ml" 208 7289 7341
+type(
+  string
+)
+"driver/compenv.ml" 209 7343 7383 "driver/compenv.ml" 209 7343 7421
+type(
+  string
+)
+"driver/compenv.ml" 208 7289 7301 "driver/compenv.ml" 209 7343 7423
+type(
+  Warnings.t
+)
+"driver/compenv.ml" 207 7238 7248 "driver/compenv.ml" 209 7343 7423
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 204 7140 7160 "driver/compenv.ml" 210 7424 7435
+type(
+  unit
+)
+"driver/compenv.ml" 212 7437 7445 "driver/compenv.ml" 212 7437 7458
+type(
+  string
+)
+"driver/compenv.ml" 212 7437 7462 "driver/compenv.ml" 212 7437 7485
+type(
+  string ref
+)
+ident(
+  ext_ref Config.interface_suffix
+)
+"driver/compenv.ml" 212 7437 7486 "driver/compenv.ml" 212 7437 7488
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 212 7437 7489 "driver/compenv.ml" 212 7437 7490
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 212 7437 7462 "driver/compenv.ml" 212 7437 7490
+type(
+  unit
+)
+"driver/compenv.ml" 214 7492 7500 "driver/compenv.ml" 214 7492 7503
+type(
+  string
+)
+"driver/compenv.ml" 215 7513 7529 "driver/compenv.ml" 215 7513 7537
+type(
+  readenv_position
+)
+ident(
+  int_ref position "driver/compenv.ml" 142 4396 4420 "driver/compenv.ml" 142 4396 4428
+)
+"driver/compenv.ml" 216 7543 7555 "driver/compenv.ml" 216 7543 7566
+type(
+  readenv_position
+)
+"driver/compenv.ml" 216 7543 7570 "driver/compenv.ml" 216 7543 7588
+type(
+  string list ref
+)
+ident(
+  int_ref first_include_dirs "driver/compenv.ml" 49 1764 1768 "driver/compenv.ml" 49 1764 1786
+)
+"driver/compenv.ml" 216 7543 7589 "driver/compenv.ml" 216 7543 7591
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 216 7543 7592 "driver/compenv.ml" 216 7543 7593
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 216 7543 7597 "driver/compenv.ml" 216 7543 7598
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 216 7543 7598 "driver/compenv.ml" 216 7543 7616
+type(
+  string list ref
+)
+ident(
+  int_ref first_include_dirs "driver/compenv.ml" 49 1764 1768 "driver/compenv.ml" 49 1764 1786
+)
+"driver/compenv.ml" 216 7543 7597 "driver/compenv.ml" 216 7543 7616
+type(
+  string list
+)
+"driver/compenv.ml" 216 7543 7592 "driver/compenv.ml" 216 7543 7616
+type(
+  string list
+)
+"driver/compenv.ml" 216 7543 7570 "driver/compenv.ml" 216 7543 7616
+type(
+  unit
+)
+"driver/compenv.ml" 217 7617 7629 "driver/compenv.ml" 217 7617 7640
+type(
+  readenv_position
+)
+"driver/compenv.ml" 217 7617 7643 "driver/compenv.ml" 217 7617 7657
+type(
+  readenv_position
+)
+"driver/compenv.ml" 217 7617 7629 "driver/compenv.ml" 217 7617 7657
+type(
+  readenv_position
+)
+"driver/compenv.ml" 218 7661 7673 "driver/compenv.ml" 218 7661 7690
+type(
+  string list ref
+)
+ident(
+  int_ref last_include_dirs "driver/compenv.ml" 50 1796 1800 "driver/compenv.ml" 50 1796 1817
+)
+"driver/compenv.ml" 218 7661 7691 "driver/compenv.ml" 218 7661 7693
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 218 7661 7694 "driver/compenv.ml" 218 7661 7695
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 218 7661 7699 "driver/compenv.ml" 218 7661 7700
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 218 7661 7700 "driver/compenv.ml" 218 7661 7717
+type(
+  string list ref
+)
+ident(
+  int_ref last_include_dirs "driver/compenv.ml" 50 1796 1800 "driver/compenv.ml" 50 1796 1817
+)
+"driver/compenv.ml" 218 7661 7699 "driver/compenv.ml" 218 7661 7717
+type(
+  string list
+)
+"driver/compenv.ml" 218 7661 7694 "driver/compenv.ml" 218 7661 7717
+type(
+  string list
+)
+"driver/compenv.ml" 218 7661 7673 "driver/compenv.ml" 218 7661 7717
+type(
+  unit
+)
+"driver/compenv.ml" 214 7492 7507 "driver/compenv.ml" 219 7718 7729
+type(
+  unit
+)
+"driver/compenv.ml" 221 7731 7739 "driver/compenv.ml" 221 7731 7746
+type(
+  string
+)
+"driver/compenv.ml" 223 7764 7780 "driver/compenv.ml" 223 7764 7788
+type(
+  readenv_position
+)
+ident(
+  int_ref position "driver/compenv.ml" 142 4396 4420 "driver/compenv.ml" 142 4396 4428
+)
+"driver/compenv.ml" 224 7794 7806 "driver/compenv.ml" 224 7794 7820
+type(
+  readenv_position
+)
+"driver/compenv.ml" 224 7794 7824 "driver/compenv.ml" 224 7794 7826
+type(
+  unit
+)
+"driver/compenv.ml" 225 7827 7839 "driver/compenv.ml" 225 7827 7850
+type(
+  readenv_position
+)
+"driver/compenv.ml" 225 7827 7853 "driver/compenv.ml" 225 7827 7864
+type(
+  readenv_position
+)
+"driver/compenv.ml" 225 7827 7839 "driver/compenv.ml" 225 7827 7864
+type(
+  readenv_position
+)
+"driver/compenv.ml" 226 7868 7880 "driver/compenv.ml" 226 7868 7886
+type(
+  string list ref
+)
+ident(
+  ext_ref Clflags.ccobjs
+)
+"driver/compenv.ml" 226 7868 7887 "driver/compenv.ml" 226 7868 7889
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 226 7868 7890 "driver/compenv.ml" 226 7868 7910
+type(
+  string -> string list
+)
+ident(
+  ext_ref Misc.rev_split_words
+)
+"driver/compenv.ml" 226 7868 7911 "driver/compenv.ml" 226 7868 7912
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 226 7868 7890 "driver/compenv.ml" 226 7868 7912
+call(
+  stack
+)
+type(
+  string list
+)
+"driver/compenv.ml" 226 7868 7913 "driver/compenv.ml" 226 7868 7914
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"driver/compenv.ml" 226 7868 7915 "driver/compenv.ml" 226 7868 7916
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 226 7868 7916 "driver/compenv.ml" 226 7868 7922
+type(
+  string list ref
+)
+ident(
+  ext_ref Clflags.ccobjs
+)
+"driver/compenv.ml" 226 7868 7915 "driver/compenv.ml" 226 7868 7922
+type(
+  string list
+)
+"driver/compenv.ml" 226 7868 7890 "driver/compenv.ml" 226 7868 7922
+call(
+  stack
+)
+type(
+  string list
+)
+"driver/compenv.ml" 226 7868 7880 "driver/compenv.ml" 226 7868 7922
+type(
+  unit
+)
+"driver/compenv.ml" 222 7750 7758 "driver/compenv.ml" 227 7923 7934
+type(
+  unit
+)
+"driver/compenv.ml" 229 7936 7944 "driver/compenv.ml" 229 7936 7952
+type(
+  string
+)
+"driver/compenv.ml" 231 7970 7986 "driver/compenv.ml" 231 7970 7994
+type(
+  readenv_position
+)
+ident(
+  int_ref position "driver/compenv.ml" 142 4396 4420 "driver/compenv.ml" 142 4396 4428
+)
+"driver/compenv.ml" 232 8000 8012 "driver/compenv.ml" 232 8000 8023
+type(
+  readenv_position
+)
+"driver/compenv.ml" 232 8000 8026 "driver/compenv.ml" 232 8000 8040
+type(
+  readenv_position
+)
+"driver/compenv.ml" 232 8000 8012 "driver/compenv.ml" 232 8000 8040
+type(
+  readenv_position
+)
+"driver/compenv.ml" 233 8044 8056 "driver/compenv.ml" 233 8044 8067
+type(
+  string list ref
+)
+ident(
+  int_ref last_ccopts "driver/compenv.ml" 52 1853 1857 "driver/compenv.ml" 52 1853 1868
+)
+"driver/compenv.ml" 233 8044 8068 "driver/compenv.ml" 233 8044 8070
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 233 8044 8071 "driver/compenv.ml" 233 8044 8072
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 233 8044 8076 "driver/compenv.ml" 233 8044 8077
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 233 8044 8077 "driver/compenv.ml" 233 8044 8088
+type(
+  string list ref
+)
+ident(
+  int_ref last_ccopts "driver/compenv.ml" 52 1853 1857 "driver/compenv.ml" 52 1853 1868
+)
+"driver/compenv.ml" 233 8044 8076 "driver/compenv.ml" 233 8044 8088
+type(
+  string list
+)
+"driver/compenv.ml" 233 8044 8071 "driver/compenv.ml" 233 8044 8088
+type(
+  string list
+)
+"driver/compenv.ml" 233 8044 8056 "driver/compenv.ml" 233 8044 8088
+type(
+  unit
+)
+"driver/compenv.ml" 234 8089 8101 "driver/compenv.ml" 234 8089 8112
+type(
+  readenv_position
+)
+"driver/compenv.ml" 235 8116 8128 "driver/compenv.ml" 235 8116 8140
+type(
+  string list ref
+)
+ident(
+  int_ref first_ccopts "driver/compenv.ml" 51 1827 1831 "driver/compenv.ml" 51 1827 1843
+)
+"driver/compenv.ml" 235 8116 8141 "driver/compenv.ml" 235 8116 8143
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 235 8116 8144 "driver/compenv.ml" 235 8116 8145
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 235 8116 8149 "driver/compenv.ml" 235 8116 8150
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 235 8116 8150 "driver/compenv.ml" 235 8116 8162
+type(
+  string list ref
+)
+ident(
+  int_ref first_ccopts "driver/compenv.ml" 51 1827 1831 "driver/compenv.ml" 51 1827 1843
+)
+"driver/compenv.ml" 235 8116 8149 "driver/compenv.ml" 235 8116 8162
+type(
+  string list
+)
+"driver/compenv.ml" 235 8116 8144 "driver/compenv.ml" 235 8116 8162
+type(
+  string list
+)
+"driver/compenv.ml" 235 8116 8128 "driver/compenv.ml" 235 8116 8162
+type(
+  unit
+)
+"driver/compenv.ml" 230 7956 7964 "driver/compenv.ml" 236 8163 8174
+type(
+  unit
+)
+"driver/compenv.ml" 238 8176 8184 "driver/compenv.ml" 238 8176 8189
+type(
+  string
+)
+"driver/compenv.ml" 240 8207 8223 "driver/compenv.ml" 240 8207 8231
+type(
+  readenv_position
+)
+ident(
+  int_ref position "driver/compenv.ml" 142 4396 4420 "driver/compenv.ml" 142 4396 4428
+)
+"driver/compenv.ml" 241 8237 8249 "driver/compenv.ml" 241 8237 8260
+type(
+  readenv_position
+)
+"driver/compenv.ml" 241 8237 8263 "driver/compenv.ml" 241 8237 8277
+type(
+  readenv_position
+)
+"driver/compenv.ml" 241 8237 8249 "driver/compenv.ml" 241 8237 8277
+type(
+  readenv_position
+)
+"driver/compenv.ml" 242 8281 8293 "driver/compenv.ml" 242 8281 8301
+type(
+  string list ref
+)
+ident(
+  int_ref last_ppx "driver/compenv.ml" 54 1901 1905 "driver/compenv.ml" 54 1901 1913
+)
+"driver/compenv.ml" 242 8281 8302 "driver/compenv.ml" 242 8281 8304
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 242 8281 8305 "driver/compenv.ml" 242 8281 8306
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 242 8281 8310 "driver/compenv.ml" 242 8281 8311
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 242 8281 8311 "driver/compenv.ml" 242 8281 8319
+type(
+  string list ref
+)
+ident(
+  int_ref last_ppx "driver/compenv.ml" 54 1901 1905 "driver/compenv.ml" 54 1901 1913
+)
+"driver/compenv.ml" 242 8281 8310 "driver/compenv.ml" 242 8281 8319
+type(
+  string list
+)
+"driver/compenv.ml" 242 8281 8305 "driver/compenv.ml" 242 8281 8319
+type(
+  string list
+)
+"driver/compenv.ml" 242 8281 8293 "driver/compenv.ml" 242 8281 8319
+type(
+  unit
+)
+"driver/compenv.ml" 243 8320 8332 "driver/compenv.ml" 243 8320 8343
+type(
+  readenv_position
+)
+"driver/compenv.ml" 244 8347 8359 "driver/compenv.ml" 244 8347 8368
+type(
+  string list ref
+)
+ident(
+  int_ref first_ppx "driver/compenv.ml" 53 1878 1882 "driver/compenv.ml" 53 1878 1891
+)
+"driver/compenv.ml" 244 8347 8369 "driver/compenv.ml" 244 8347 8371
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 244 8347 8372 "driver/compenv.ml" 244 8347 8373
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 244 8347 8377 "driver/compenv.ml" 244 8347 8378
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 244 8347 8378 "driver/compenv.ml" 244 8347 8387
+type(
+  string list ref
+)
+ident(
+  int_ref first_ppx "driver/compenv.ml" 53 1878 1882 "driver/compenv.ml" 53 1878 1891
+)
+"driver/compenv.ml" 244 8347 8377 "driver/compenv.ml" 244 8347 8387
+type(
+  string list
+)
+"driver/compenv.ml" 244 8347 8372 "driver/compenv.ml" 244 8347 8387
+type(
+  string list
+)
+"driver/compenv.ml" 244 8347 8359 "driver/compenv.ml" 244 8347 8387
+type(
+  unit
+)
+"driver/compenv.ml" 239 8193 8201 "driver/compenv.ml" 245 8388 8399
+type(
+  unit
+)
+"driver/compenv.ml" 248 8402 8410 "driver/compenv.ml" 248 8402 8415
+type(
+  string
+)
+"driver/compenv.ml" 248 8402 8418 "driver/compenv.ml" 248 8402 8423
+type(
+  string
+)
+"driver/compenv.ml" 248 8402 8410 "driver/compenv.ml" 248 8402 8423
+type(
+  string
+)
+"driver/compenv.ml" 249 8427 8438 "driver/compenv.ml" 249 8427 8441
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"driver/compenv.ml" 249 8427 8442 "driver/compenv.ml" 249 8427 8443
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 249 8427 8443 "driver/compenv.ml" 249 8427 8454
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.native_code
+)
+"driver/compenv.ml" 249 8427 8442 "driver/compenv.ml" 249 8427 8454
+type(
+  bool
+)
+"driver/compenv.ml" 249 8427 8438 "driver/compenv.ml" 249 8427 8454
+type(
+  bool
+)
+"driver/compenv.ml" 251 8474 8490 "driver/compenv.ml" 251 8474 8498
+type(
+  readenv_position
+)
+ident(
+  int_ref position "driver/compenv.ml" 142 4396 4420 "driver/compenv.ml" 142 4396 4428
+)
+"driver/compenv.ml" 252 8504 8516 "driver/compenv.ml" 252 8504 8527
+type(
+  readenv_position
+)
+"driver/compenv.ml" 252 8504 8530 "driver/compenv.ml" 252 8504 8544
+type(
+  readenv_position
+)
+"driver/compenv.ml" 252 8504 8516 "driver/compenv.ml" 252 8504 8544
+type(
+  readenv_position
+)
+"driver/compenv.ml" 253 8548 8560 "driver/compenv.ml" 253 8548 8573
+type(
+  string list ref
+)
+ident(
+  int_ref last_objfiles "driver/compenv.ml" 56 1951 1955 "driver/compenv.ml" 56 1951 1968
+)
+"driver/compenv.ml" 253 8548 8574 "driver/compenv.ml" 253 8548 8576
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 253 8548 8577 "driver/compenv.ml" 253 8548 8578
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 253 8548 8581 "driver/compenv.ml" 253 8548 8582
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 253 8548 8583 "driver/compenv.ml" 253 8548 8596
+type(
+  string list ref
+)
+ident(
+  int_ref last_objfiles "driver/compenv.ml" 56 1951 1955 "driver/compenv.ml" 56 1951 1968
+)
+"driver/compenv.ml" 253 8548 8581 "driver/compenv.ml" 253 8548 8596
+type(
+  string list
+)
+"driver/compenv.ml" 253 8548 8577 "driver/compenv.ml" 253 8548 8596
+type(
+  string list
+)
+"driver/compenv.ml" 253 8548 8560 "driver/compenv.ml" 253 8548 8596
+type(
+  unit
+)
+"driver/compenv.ml" 254 8597 8609 "driver/compenv.ml" 254 8597 8620
+type(
+  readenv_position
+)
+"driver/compenv.ml" 255 8624 8636 "driver/compenv.ml" 255 8624 8650
+type(
+  string list ref
+)
+ident(
+  int_ref first_objfiles "driver/compenv.ml" 55 1923 1927 "driver/compenv.ml" 55 1923 1941
+)
+"driver/compenv.ml" 255 8624 8651 "driver/compenv.ml" 255 8624 8653
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 255 8624 8654 "driver/compenv.ml" 255 8624 8655
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 255 8624 8659 "driver/compenv.ml" 255 8624 8660
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 255 8624 8660 "driver/compenv.ml" 255 8624 8674
+type(
+  string list ref
+)
+ident(
+  int_ref first_objfiles "driver/compenv.ml" 55 1923 1927 "driver/compenv.ml" 55 1923 1941
+)
+"driver/compenv.ml" 255 8624 8659 "driver/compenv.ml" 255 8624 8674
+type(
+  string list
+)
+"driver/compenv.ml" 255 8624 8654 "driver/compenv.ml" 255 8624 8674
+type(
+  string list
+)
+"driver/compenv.ml" 255 8624 8636 "driver/compenv.ml" 255 8624 8674
+type(
+  unit
+)
+"driver/compenv.ml" 250 8460 8468 "driver/compenv.ml" 256 8675 8686
+type(
+  unit
+)
+"driver/compenv.ml" 249 8427 8435 "driver/compenv.ml" 256 8675 8686
+type(
+  unit
+)
+"driver/compenv.ml" 258 8688 8696 "driver/compenv.ml" 258 8688 8701
+type(
+  string
+)
+"driver/compenv.ml" 258 8688 8704 "driver/compenv.ml" 258 8688 8710
+type(
+  string
+)
+"driver/compenv.ml" 258 8688 8696 "driver/compenv.ml" 258 8688 8710
+type(
+  string
+)
+"driver/compenv.ml" 259 8714 8725 "driver/compenv.ml" 259 8714 8726
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 259 8714 8726 "driver/compenv.ml" 259 8714 8737
+type(
+  bool ref
+)
+ident(
+  ext_ref Clflags.native_code
+)
+"driver/compenv.ml" 259 8714 8725 "driver/compenv.ml" 259 8714 8737
+type(
+  bool
+)
+"driver/compenv.ml" 261 8757 8773 "driver/compenv.ml" 261 8757 8781
+type(
+  readenv_position
+)
+ident(
+  int_ref position "driver/compenv.ml" 142 4396 4420 "driver/compenv.ml" 142 4396 4428
+)
+"driver/compenv.ml" 262 8787 8799 "driver/compenv.ml" 262 8787 8810
+type(
+  readenv_position
+)
+"driver/compenv.ml" 262 8787 8813 "driver/compenv.ml" 262 8787 8827
+type(
+  readenv_position
+)
+"driver/compenv.ml" 262 8787 8799 "driver/compenv.ml" 262 8787 8827
+type(
+  readenv_position
+)
+"driver/compenv.ml" 263 8831 8843 "driver/compenv.ml" 263 8831 8856
+type(
+  string list ref
+)
+ident(
+  int_ref last_objfiles "driver/compenv.ml" 56 1951 1955 "driver/compenv.ml" 56 1951 1968
+)
+"driver/compenv.ml" 263 8831 8857 "driver/compenv.ml" 263 8831 8859
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 263 8831 8860 "driver/compenv.ml" 263 8831 8861
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 263 8831 8864 "driver/compenv.ml" 263 8831 8865
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 263 8831 8866 "driver/compenv.ml" 263 8831 8879
+type(
+  string list ref
+)
+ident(
+  int_ref last_objfiles "driver/compenv.ml" 56 1951 1955 "driver/compenv.ml" 56 1951 1968
+)
+"driver/compenv.ml" 263 8831 8864 "driver/compenv.ml" 263 8831 8879
+type(
+  string list
+)
+"driver/compenv.ml" 263 8831 8860 "driver/compenv.ml" 263 8831 8879
+type(
+  string list
+)
+"driver/compenv.ml" 263 8831 8843 "driver/compenv.ml" 263 8831 8879
+type(
+  unit
+)
+"driver/compenv.ml" 264 8880 8892 "driver/compenv.ml" 264 8880 8903
+type(
+  readenv_position
+)
+"driver/compenv.ml" 265 8907 8919 "driver/compenv.ml" 265 8907 8933
+type(
+  string list ref
+)
+ident(
+  int_ref first_objfiles "driver/compenv.ml" 55 1923 1927 "driver/compenv.ml" 55 1923 1941
+)
+"driver/compenv.ml" 265 8907 8934 "driver/compenv.ml" 265 8907 8936
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 265 8907 8937 "driver/compenv.ml" 265 8907 8938
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 265 8907 8942 "driver/compenv.ml" 265 8907 8943
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 265 8907 8943 "driver/compenv.ml" 265 8907 8957
+type(
+  string list ref
+)
+ident(
+  int_ref first_objfiles "driver/compenv.ml" 55 1923 1927 "driver/compenv.ml" 55 1923 1941
+)
+"driver/compenv.ml" 265 8907 8942 "driver/compenv.ml" 265 8907 8957
+type(
+  string list
+)
+"driver/compenv.ml" 265 8907 8937 "driver/compenv.ml" 265 8907 8957
+type(
+  string list
+)
+"driver/compenv.ml" 265 8907 8919 "driver/compenv.ml" 265 8907 8957
+type(
+  unit
+)
+"driver/compenv.ml" 260 8743 8751 "driver/compenv.ml" 266 8958 8969
+type(
+  unit
+)
+"driver/compenv.ml" 259 8714 8722 "driver/compenv.ml" 266 8958 8969
+type(
+  unit
+)
+"driver/compenv.ml" 268 8971 8979 "driver/compenv.ml" 268 8971 8992
+type(
+  string
+)
+"driver/compenv.ml" 269 8996 9004 "driver/compenv.ml" 269 8996 9015
+type(
+  string list ref
+)
+ident(
+  int_ref can_discard "driver/compenv.ml" 140 4370 4374 "driver/compenv.ml" 140 4370 4385
+)
+"driver/compenv.ml" 269 8996 9016 "driver/compenv.ml" 269 8996 9018
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 269 8996 9019 "driver/compenv.ml" 269 8996 9020
+type(
+  string
+)
+ident(
+  int_ref v "driver/compenv.ml" 155 4840 4866 "driver/compenv.ml" 155 4840 4867
+)
+"driver/compenv.ml" 269 8996 9023 "driver/compenv.ml" 269 8996 9024
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 269 8996 9024 "driver/compenv.ml" 269 8996 9035
+type(
+  string list ref
+)
+ident(
+  int_ref can_discard "driver/compenv.ml" 140 4370 4374 "driver/compenv.ml" 140 4370 4385
+)
+"driver/compenv.ml" 269 8996 9023 "driver/compenv.ml" 269 8996 9035
+type(
+  string list
+)
+"driver/compenv.ml" 269 8996 9019 "driver/compenv.ml" 269 8996 9035
+type(
+  string list
+)
+"driver/compenv.ml" 269 8996 9004 "driver/compenv.ml" 269 8996 9035
+type(
+  unit
+)
+"driver/compenv.ml" 271 9037 9045 "driver/compenv.ml" 271 9037 9046
+type(
+  string
+)
+"driver/compenv.ml" 272 9050 9061 "driver/compenv.ml" 272 9050 9064
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"driver/compenv.ml" 272 9050 9066 "driver/compenv.ml" 272 9050 9074
+type(
+  string -> string list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"driver/compenv.ml" 272 9050 9075 "driver/compenv.ml" 272 9050 9079
+type(
+  string
+)
+ident(
+  int_ref name "driver/compenv.ml" 155 4840 4860 "driver/compenv.ml" 155 4840 4864
+)
+"driver/compenv.ml" 272 9050 9080 "driver/compenv.ml" 272 9050 9081
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 272 9050 9081 "driver/compenv.ml" 272 9050 9092
+type(
+  string list ref
+)
+ident(
+  int_ref can_discard "driver/compenv.ml" 140 4370 4374 "driver/compenv.ml" 140 4370 4385
+)
+"driver/compenv.ml" 272 9050 9080 "driver/compenv.ml" 272 9050 9092
+type(
+  string list
+)
+"driver/compenv.ml" 272 9050 9065 "driver/compenv.ml" 272 9050 9093
+call(
+  stack
+)
+type(
+  bool
+)
+"driver/compenv.ml" 272 9050 9061 "driver/compenv.ml" 272 9050 9093
+type(
+  bool
+)
+"driver/compenv.ml" 273 9105 9115 "driver/compenv.ml" 273 9105 9126
+type(
+  string list ref
+)
+ident(
+  int_ref can_discard "driver/compenv.ml" 140 4370 4374 "driver/compenv.ml" 140 4370 4385
+)
+"driver/compenv.ml" 273 9105 9127 "driver/compenv.ml" 273 9105 9129
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 273 9105 9130 "driver/compenv.ml" 273 9105 9134
+type(
+  string
+)
+ident(
+  int_ref name "driver/compenv.ml" 155 4840 4860 "driver/compenv.ml" 155 4840 4864
+)
+"driver/compenv.ml" 273 9105 9138 "driver/compenv.ml" 273 9105 9139
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 273 9105 9139 "driver/compenv.ml" 273 9105 9150
+type(
+  string list ref
+)
+ident(
+  int_ref can_discard "driver/compenv.ml" 140 4370 4374 "driver/compenv.ml" 140 4370 4385
+)
+"driver/compenv.ml" 273 9105 9138 "driver/compenv.ml" 273 9105 9150
+type(
+  string list
+)
+"driver/compenv.ml" 273 9105 9130 "driver/compenv.ml" 273 9105 9150
+type(
+  string list
+)
+"driver/compenv.ml" 273 9105 9115 "driver/compenv.ml" 273 9105 9150
+type(
+  unit
+)
+"driver/compenv.ml" 274 9152 9162 "driver/compenv.ml" 274 9152 9176
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"driver/compenv.ml" 275 9177 9189 "driver/compenv.ml" 275 9177 9249
+type(
+  (string -> unit, out_channel, unit) format
+)
+"driver/compenv.ml" 276 9250 9262 "driver/compenv.ml" 276 9250 9266
+type(
+  string
+)
+ident(
+  int_ref name "driver/compenv.ml" 155 4840 4860 "driver/compenv.ml" 155 4840 4864
+)
+"driver/compenv.ml" 274 9152 9162 "driver/compenv.ml" 276 9250 9266
+call(
+  tail
+)
+type(
+  unit
+)
+"driver/compenv.ml" 272 9050 9099 "driver/compenv.ml" 277 9267 9278
+type(
+  unit
+)
+"driver/compenv.ml" 272 9050 9058 "driver/compenv.ml" 277 9267 9278
+type(
+  unit
+)
+"driver/compenv.ml" 156 4872 4878 "driver/compenv.ml" 277 9267 9278
+type(
+  unit
+)
+"driver/compenv.ml" 155 4840 4854 "driver/compenv.ml" 278 9279 9284
+type(
+  string * string -> unit
+)
+"driver/compenv.ml" 278 9279 9292 "driver/compenv.ml" 278 9279 9300
+type(
+  readenv_position
+)
+ident(
+  int_ref position "driver/compenv.ml" 142 4396 4420 "driver/compenv.ml" 142 4396 4428
+)
+"driver/compenv.ml" 279 9306 9314 "driver/compenv.ml" 279 9306 9325
+type(
+  readenv_position
+)
+"driver/compenv.ml" 279 9306 9329 "driver/compenv.ml" 279 9306 9335
+type(
+  (string * string) list
+)
+ident(
+  int_ref before "driver/compenv.ml" 145 4476 4485 "driver/compenv.ml" 145 4476 4491
+)
+"driver/compenv.ml" 280 9336 9344 "driver/compenv.ml" 280 9336 9358
+type(
+  readenv_position
+)
+"driver/compenv.ml" 280 9336 9361 "driver/compenv.ml" 280 9336 9372
+type(
+  readenv_position
+)
+"driver/compenv.ml" 280 9336 9344 "driver/compenv.ml" 280 9336 9372
+type(
+  readenv_position
+)
+"driver/compenv.ml" 280 9336 9376 "driver/compenv.ml" 280 9336 9381
+type(
+  (string * string) list
+)
+ident(
+  int_ref after "driver/compenv.ml" 145 4476 4493 "driver/compenv.ml" 145 4476 4498
+)
+"driver/compenv.ml" 278 9279 9285 "driver/compenv.ml" 280 9336 9382
+type(
+  (string * string) list
+)
+"driver/compenv.ml" 155 4840 4844 "driver/compenv.ml" 280 9336 9382
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 154 4763 4767 "driver/compenv.ml" 280 9336 9382
+type(
+  unit
+)
+"driver/compenv.ml" 153 4691 4695 "driver/compenv.ml" 280 9336 9382
+type(
+  unit
+)
+"driver/compenv.ml" 145 4476 4480 "driver/compenv.ml" 280 9336 9382
+type(
+  unit
+)
+"driver/compenv.ml" 144 4437 4441 "driver/compenv.ml" 280 9336 9382
+type(
+  unit
+)
+"driver/compenv.ml" 281 9383 9390 "driver/compenv.ml" 281 9383 9399
+type(
+  exn
+)
+"driver/compenv.ml" 281 9383 9403 "driver/compenv.ml" 281 9383 9405
+type(
+  unit
+)
+"driver/compenv.ml" 143 4431 4433 "driver/compenv.ml" 281 9383 9405
+type(
+  unit
+)
+"driver/compenv.ml" 283 9407 9411 "driver/compenv.ml" 283 9407 9418
+type(
+  Format.formatter -> readenv_position -> unit
+)
+ident(
+  def readenv "driver/compenv.ml" 292 9638 9638 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 283 9407 9419 "driver/compenv.ml" 283 9407 9422
+type(
+  Format.formatter
+)
+ident(
+  def ppf "driver/compenv.ml" 283 9407 9423 "driver/compenv.ml" 290 9601 9636
+)
+"driver/compenv.ml" 283 9407 9423 "driver/compenv.ml" 283 9407 9431
+type(
+  readenv_position
+)
+ident(
+  def position "driver/compenv.ml" 284 9434 9436 "driver/compenv.ml" 290 9601 9636
+)
+"driver/compenv.ml" 284 9434 9436 "driver/compenv.ml" 284 9434 9453
+type(
+  string list ref
+)
+ident(
+  int_ref last_include_dirs "driver/compenv.ml" 50 1796 1800 "driver/compenv.ml" 50 1796 1817
+)
+"driver/compenv.ml" 284 9434 9454 "driver/compenv.ml" 284 9434 9456
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 284 9434 9457 "driver/compenv.ml" 284 9434 9459
+type(
+  string list
+)
+"driver/compenv.ml" 284 9434 9436 "driver/compenv.ml" 284 9434 9459
+type(
+  unit
+)
+"driver/compenv.ml" 285 9461 9463 "driver/compenv.ml" 285 9461 9474
+type(
+  string list ref
+)
+ident(
+  int_ref last_ccopts "driver/compenv.ml" 52 1853 1857 "driver/compenv.ml" 52 1853 1868
+)
+"driver/compenv.ml" 285 9461 9475 "driver/compenv.ml" 285 9461 9477
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 285 9461 9478 "driver/compenv.ml" 285 9461 9480
+type(
+  string list
+)
+"driver/compenv.ml" 285 9461 9463 "driver/compenv.ml" 285 9461 9480
+type(
+  unit
+)
+"driver/compenv.ml" 286 9482 9484 "driver/compenv.ml" 286 9482 9492
+type(
+  string list ref
+)
+ident(
+  int_ref last_ppx "driver/compenv.ml" 54 1901 1905 "driver/compenv.ml" 54 1901 1913
+)
+"driver/compenv.ml" 286 9482 9493 "driver/compenv.ml" 286 9482 9495
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 286 9482 9496 "driver/compenv.ml" 286 9482 9498
+type(
+  string list
+)
+"driver/compenv.ml" 286 9482 9484 "driver/compenv.ml" 286 9482 9498
+type(
+  unit
+)
+"driver/compenv.ml" 287 9500 9502 "driver/compenv.ml" 287 9500 9515
+type(
+  string list ref
+)
+ident(
+  int_ref last_objfiles "driver/compenv.ml" 56 1951 1955 "driver/compenv.ml" 56 1951 1968
+)
+"driver/compenv.ml" 287 9500 9516 "driver/compenv.ml" 287 9500 9518
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 287 9500 9519 "driver/compenv.ml" 287 9500 9521
+type(
+  string list
+)
+"driver/compenv.ml" 287 9500 9502 "driver/compenv.ml" 287 9500 9521
+type(
+  unit
+)
+"driver/compenv.ml" 288 9523 9525 "driver/compenv.ml" 288 9523 9540
+type(
+  Format.formatter -> readenv_position -> unit
+)
+ident(
+  int_ref read_OCAMLPARAM "driver/compenv.ml" 142 4396 4400 "driver/compenv.ml" 142 4396 4415
+)
+"driver/compenv.ml" 288 9523 9541 "driver/compenv.ml" 288 9523 9544
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "driver/compenv.ml" 283 9407 9419 "driver/compenv.ml" 283 9407 9422
+)
+"driver/compenv.ml" 288 9523 9545 "driver/compenv.ml" 288 9523 9553
+type(
+  readenv_position
+)
+ident(
+  int_ref position "driver/compenv.ml" 283 9407 9423 "driver/compenv.ml" 283 9407 9431
+)
+"driver/compenv.ml" 288 9523 9525 "driver/compenv.ml" 288 9523 9553
+call(
+  stack
+)
+type(
+  unit
+)
+"driver/compenv.ml" 289 9555 9557 "driver/compenv.ml" 289 9555 9567
+type(
+  string list ref
+)
+ident(
+  ext_ref Clflags.all_ccopts
+)
+"driver/compenv.ml" 289 9555 9568 "driver/compenv.ml" 289 9555 9570
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 289 9555 9571 "driver/compenv.ml" 289 9555 9572
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 289 9555 9572 "driver/compenv.ml" 289 9555 9583
+type(
+  string list ref
+)
+ident(
+  int_ref last_ccopts "driver/compenv.ml" 52 1853 1857 "driver/compenv.ml" 52 1853 1868
+)
+"driver/compenv.ml" 289 9555 9571 "driver/compenv.ml" 289 9555 9583
+type(
+  string list
+)
+"driver/compenv.ml" 289 9555 9584 "driver/compenv.ml" 289 9555 9585
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"driver/compenv.ml" 289 9555 9586 "driver/compenv.ml" 289 9555 9587
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 289 9555 9587 "driver/compenv.ml" 289 9555 9599
+type(
+  string list ref
+)
+ident(
+  int_ref first_ccopts "driver/compenv.ml" 51 1827 1831 "driver/compenv.ml" 51 1827 1843
+)
+"driver/compenv.ml" 289 9555 9586 "driver/compenv.ml" 289 9555 9599
+type(
+  string list
+)
+"driver/compenv.ml" 289 9555 9571 "driver/compenv.ml" 289 9555 9599
+call(
+  stack
+)
+type(
+  string list
+)
+"driver/compenv.ml" 289 9555 9557 "driver/compenv.ml" 289 9555 9599
+type(
+  unit
+)
+"driver/compenv.ml" 290 9601 9603 "driver/compenv.ml" 290 9601 9610
+type(
+  string list ref
+)
+ident(
+  ext_ref Clflags.all_ppx
+)
+"driver/compenv.ml" 290 9601 9611 "driver/compenv.ml" 290 9601 9613
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"driver/compenv.ml" 290 9601 9614 "driver/compenv.ml" 290 9601 9615
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 290 9601 9615 "driver/compenv.ml" 290 9601 9623
+type(
+  string list ref
+)
+ident(
+  int_ref last_ppx "driver/compenv.ml" 54 1901 1905 "driver/compenv.ml" 54 1901 1913
+)
+"driver/compenv.ml" 290 9601 9614 "driver/compenv.ml" 290 9601 9623
+type(
+  string list
+)
+"driver/compenv.ml" 290 9601 9624 "driver/compenv.ml" 290 9601 9625
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"driver/compenv.ml" 290 9601 9626 "driver/compenv.ml" 290 9601 9627
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 290 9601 9627 "driver/compenv.ml" 290 9601 9636
+type(
+  string list ref
+)
+ident(
+  int_ref first_ppx "driver/compenv.ml" 53 1878 1882 "driver/compenv.ml" 53 1878 1891
+)
+"driver/compenv.ml" 290 9601 9626 "driver/compenv.ml" 290 9601 9636
+type(
+  string list
+)
+"driver/compenv.ml" 290 9601 9614 "driver/compenv.ml" 290 9601 9636
+call(
+  stack
+)
+type(
+  string list
+)
+"driver/compenv.ml" 290 9601 9603 "driver/compenv.ml" 290 9601 9636
+type(
+  unit
+)
+"driver/compenv.ml" 289 9555 9557 "driver/compenv.ml" 290 9601 9636
+type(
+  unit
+)
+"driver/compenv.ml" 288 9523 9525 "driver/compenv.ml" 290 9601 9636
+type(
+  unit
+)
+"driver/compenv.ml" 287 9500 9502 "driver/compenv.ml" 290 9601 9636
+type(
+  unit
+)
+"driver/compenv.ml" 286 9482 9484 "driver/compenv.ml" 290 9601 9636
+type(
+  unit
+)
+"driver/compenv.ml" 285 9461 9463 "driver/compenv.ml" 290 9601 9636
+type(
+  unit
+)
+"driver/compenv.ml" 284 9434 9436 "driver/compenv.ml" 290 9601 9636
+type(
+  unit
+)
+"driver/compenv.ml" 292 9638 9642 "driver/compenv.ml" 292 9638 9654
+type(
+  unit -> string list
+)
+ident(
+  def get_objfiles "driver/compenv.ml" 293 9660 9717 "driver/compenv.ml" 1 0 -1
+)
+"driver/compenv.ml" 292 9638 9655 "driver/compenv.ml" 292 9638 9657
+type(
+  unit
+)
+"driver/compenv.ml" 293 9660 9662 "driver/compenv.ml" 293 9660 9670
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"driver/compenv.ml" 293 9660 9672 "driver/compenv.ml" 293 9660 9673
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 293 9660 9673 "driver/compenv.ml" 293 9660 9686
+type(
+  string list ref
+)
+ident(
+  int_ref last_objfiles "driver/compenv.ml" 56 1951 1955 "driver/compenv.ml" 56 1951 1968
+)
+"driver/compenv.ml" 293 9660 9672 "driver/compenv.ml" 293 9660 9686
+type(
+  string list
+)
+"driver/compenv.ml" 293 9660 9687 "driver/compenv.ml" 293 9660 9688
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"driver/compenv.ml" 293 9660 9689 "driver/compenv.ml" 293 9660 9690
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 293 9660 9690 "driver/compenv.ml" 293 9660 9698
+type(
+  string list ref
+)
+ident(
+  ext_ref Clflags.objfiles
+)
+"driver/compenv.ml" 293 9660 9689 "driver/compenv.ml" 293 9660 9698
+type(
+  string list
+)
+"driver/compenv.ml" 293 9660 9699 "driver/compenv.ml" 293 9660 9700
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"driver/compenv.ml" 293 9660 9701 "driver/compenv.ml" 293 9660 9702
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"driver/compenv.ml" 293 9660 9702 "driver/compenv.ml" 293 9660 9716
+type(
+  string list ref
+)
+ident(
+  int_ref first_objfiles "driver/compenv.ml" 55 1923 1927 "driver/compenv.ml" 55 1923 1941
+)
+"driver/compenv.ml" 293 9660 9701 "driver/compenv.ml" 293 9660 9716
+type(
+  string list
+)
+"driver/compenv.ml" 293 9660 9689 "driver/compenv.ml" 293 9660 9716
+call(
+  stack
+)
+type(
+  string list
+)
+"driver/compenv.ml" 293 9660 9671 "driver/compenv.ml" 293 9660 9717
+call(
+  stack
+)
+type(
+  string list
+)
+"driver/compenv.ml" 293 9660 9662 "driver/compenv.ml" 293 9660 9717
+call(
+  tail
+)
+type(
+  string list
+)

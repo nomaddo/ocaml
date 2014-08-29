@@ -1,0 +1,3129 @@
+"common.ml" 28 1073 1077 "common.ml" 28 1073 1089
+type(
+  string -> out_channel -> line_tracker
+)
+ident(
+  def open_tracker "common.ml" 35 1174 1174 "common.ml" 1 0 -1
+)
+"common.ml" 28 1073 1090 "common.ml" 28 1073 1094
+type(
+  string
+)
+ident(
+  def file "common.ml" 28 1073 1095 "common.ml" 33 1169 1170
+)
+"common.ml" 28 1073 1095 "common.ml" 28 1073 1097
+type(
+  out_channel
+)
+ident(
+  def oc "common.ml" 28 1073 1100 "common.ml" 33 1169 1170
+)
+"common.ml" 29 1102 1111 "common.ml" 29 1102 1115
+type(
+  string
+)
+ident(
+  int_ref file "common.ml" 28 1073 1090 "common.ml" 28 1073 1094
+)
+"common.ml" 30 1117 1124 "common.ml" 30 1117 1126
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 28 1073 1095 "common.ml" 28 1073 1097
+)
+"common.ml" 31 1128 1135 "common.ml" 31 1128 1146
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in_bin
+)
+"common.ml" 31 1128 1147 "common.ml" 31 1128 1151
+type(
+  string
+)
+ident(
+  int_ref file "common.ml" 28 1073 1090 "common.ml" 28 1073 1094
+)
+"common.ml" 31 1128 1135 "common.ml" 31 1128 1151
+call(
+  stack
+)
+type(
+  in_channel
+)
+"common.ml" 32 1153 1166 "common.ml" 32 1153 1167
+type(
+  int
+)
+"common.ml" 28 1073 1100 "common.ml" 33 1169 1170
+type(
+  line_tracker
+)
+"common.ml" 35 1174 1178 "common.ml" 35 1174 1191
+type(
+  line_tracker -> unit
+)
+ident(
+  def close_tracker "common.ml" 37 1221 1221 "common.ml" 1 0 -1
+)
+"common.ml" 35 1174 1192 "common.ml" 35 1174 1194
+type(
+  line_tracker
+)
+ident(
+  def tr "common.ml" 35 1174 1197 "common.ml" 35 1174 1217
+)
+"common.ml" 35 1174 1197 "common.ml" 35 1174 1211
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in_noerr
+)
+"common.ml" 35 1174 1212 "common.ml" 35 1174 1214
+type(
+  line_tracker
+)
+ident(
+  int_ref tr "common.ml" 35 1174 1192 "common.ml" 35 1174 1194
+)
+"common.ml" 35 1174 1212 "common.ml" 35 1174 1217
+type(
+  in_channel
+)
+"common.ml" 35 1174 1197 "common.ml" 35 1174 1217
+call(
+  tail
+)
+type(
+  unit
+)
+"common.ml" 37 1221 1225 "common.ml" 37 1221 1239
+type(
+  line_tracker -> unit
+)
+ident(
+  def update_tracker "common.ml" 50 1611 1611 "common.ml" 1 0 -1
+)
+"common.ml" 37 1221 1240 "common.ml" 37 1221 1242
+type(
+  line_tracker
+)
+ident(
+  def tr "common.ml" 38 1245 1247 "common.ml" 47 1550 1606
+)
+"common.ml" 38 1245 1247 "common.ml" 38 1245 1254
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"common.ml" 38 1245 1255 "common.ml" 38 1245 1257
+type(
+  line_tracker
+)
+ident(
+  int_ref tr "common.ml" 37 1221 1240 "common.ml" 37 1221 1242
+)
+"common.ml" 38 1245 1255 "common.ml" 38 1245 1260
+type(
+  out_channel
+)
+"common.ml" 38 1245 1261 "common.ml" 38 1245 1265
+type(
+  (unit, out_channel, unit) format
+)
+"common.ml" 38 1245 1247 "common.ml" 38 1245 1265
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 39 1267 1269 "common.ml" 39 1267 1274
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"common.ml" 39 1267 1275 "common.ml" 39 1267 1277
+type(
+  line_tracker
+)
+ident(
+  int_ref tr "common.ml" 37 1221 1240 "common.ml" 37 1221 1242
+)
+"common.ml" 39 1267 1275 "common.ml" 39 1267 1280
+type(
+  out_channel
+)
+"common.ml" 39 1267 1269 "common.ml" 39 1267 1280
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 40 1282 1288 "common.ml" 40 1282 1295
+type(
+  bool ref
+)
+ident(
+  def cr_seen "common.ml" 41 1311 1313 "common.ml" 47 1550 1606
+)
+"common.ml" 40 1282 1298 "common.ml" 40 1282 1301
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"common.ml" 40 1282 1302 "common.ml" 40 1282 1307
+type(
+  bool
+)
+"common.ml" 40 1282 1298 "common.ml" 40 1282 1307
+type(
+  bool ref
+)
+"common.ml" 41 1311 1323 "common.ml" 41 1311 1327
+type(
+  bool
+)
+"common.ml" 42 1331 1341 "common.ml" 42 1331 1351
+type(
+  in_channel -> char
+)
+ident(
+  ext_ref Pervasives.input_char
+)
+"common.ml" 42 1331 1352 "common.ml" 42 1331 1354
+type(
+  line_tracker
+)
+ident(
+  int_ref tr "common.ml" 37 1221 1240 "common.ml" 37 1221 1242
+)
+"common.ml" 42 1331 1352 "common.ml" 42 1331 1357
+type(
+  in_channel
+)
+"common.ml" 42 1331 1341 "common.ml" 42 1331 1357
+call(
+  stack
+)
+type(
+  char
+)
+"common.ml" 43 1363 1369 "common.ml" 43 1363 1375
+type(
+  char
+)
+"common.ml" 43 1363 1381 "common.ml" 43 1363 1384
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"common.ml" 43 1363 1385 "common.ml" 43 1363 1386
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"common.ml" 43 1363 1386 "common.ml" 43 1363 1393
+type(
+  bool ref
+)
+ident(
+  int_ref cr_seen "common.ml" 40 1282 1288 "common.ml" 40 1282 1295
+)
+"common.ml" 43 1363 1385 "common.ml" 43 1363 1393
+type(
+  bool
+)
+"common.ml" 43 1363 1381 "common.ml" 43 1363 1393
+type(
+  bool
+)
+"common.ml" 43 1363 1397 "common.ml" 43 1363 1399
+type(
+  line_tracker
+)
+ident(
+  int_ref tr "common.ml" 37 1221 1240 "common.ml" 37 1221 1242
+)
+"common.ml" 43 1363 1412 "common.ml" 43 1363 1414
+type(
+  line_tracker
+)
+ident(
+  int_ref tr "common.ml" 37 1221 1240 "common.ml" 37 1221 1242
+)
+"common.ml" 43 1363 1412 "common.ml" 43 1363 1423
+type(
+  int
+)
+"common.ml" 43 1363 1424 "common.ml" 43 1363 1425
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"common.ml" 43 1363 1426 "common.ml" 43 1363 1427
+type(
+  int
+)
+"common.ml" 43 1363 1412 "common.ml" 43 1363 1427
+type(
+  int
+)
+"common.ml" 43 1363 1397 "common.ml" 43 1363 1428
+type(
+  unit
+)
+"common.ml" 44 1429 1435 "common.ml" 44 1429 1441
+type(
+  char
+)
+"common.ml" 44 1429 1445 "common.ml" 44 1429 1452
+type(
+  bool ref
+)
+ident(
+  int_ref cr_seen "common.ml" 40 1282 1288 "common.ml" 40 1282 1295
+)
+"common.ml" 44 1429 1453 "common.ml" 44 1429 1455
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"common.ml" 44 1429 1456 "common.ml" 44 1429 1460
+type(
+  bool
+)
+"common.ml" 44 1429 1445 "common.ml" 44 1429 1460
+type(
+  unit
+)
+"common.ml" 44 1429 1462 "common.ml" 44 1429 1464
+type(
+  line_tracker
+)
+ident(
+  int_ref tr "common.ml" 37 1221 1240 "common.ml" 37 1221 1242
+)
+"common.ml" 44 1429 1477 "common.ml" 44 1429 1479
+type(
+  line_tracker
+)
+ident(
+  int_ref tr "common.ml" 37 1221 1240 "common.ml" 37 1221 1242
+)
+"common.ml" 44 1429 1477 "common.ml" 44 1429 1488
+type(
+  int
+)
+"common.ml" 44 1429 1489 "common.ml" 44 1429 1490
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"common.ml" 44 1429 1491 "common.ml" 44 1429 1492
+type(
+  int
+)
+"common.ml" 44 1429 1477 "common.ml" 44 1429 1492
+type(
+  int
+)
+"common.ml" 44 1429 1462 "common.ml" 44 1429 1493
+type(
+  unit
+)
+"common.ml" 44 1429 1445 "common.ml" 44 1429 1493
+type(
+  unit
+)
+"common.ml" 45 1494 1500 "common.ml" 45 1494 1501
+type(
+  char
+)
+"common.ml" 45 1494 1505 "common.ml" 45 1494 1512
+type(
+  bool ref
+)
+ident(
+  int_ref cr_seen "common.ml" 40 1282 1288 "common.ml" 40 1282 1295
+)
+"common.ml" 45 1494 1513 "common.ml" 45 1494 1515
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"common.ml" 45 1494 1516 "common.ml" 45 1494 1521
+type(
+  bool
+)
+"common.ml" 45 1494 1505 "common.ml" 45 1494 1522
+type(
+  unit
+)
+"common.ml" 42 1331 1335 "common.ml" 45 1494 1522
+type(
+  unit
+)
+"common.ml" 41 1311 1317 "common.ml" 46 1523 1529
+type(
+  unit
+)
+"common.ml" 46 1523 1535 "common.ml" 46 1523 1546
+type(
+  exn
+)
+"common.ml" 47 1550 1552 "common.ml" 47 1550 1559
+type(
+  out_channel ->
+  (int -> string -> unit, out_channel, unit) format -> int -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"common.ml" 47 1550 1560 "common.ml" 47 1550 1562
+type(
+  line_tracker
+)
+ident(
+  int_ref tr "common.ml" 37 1221 1240 "common.ml" 37 1221 1242
+)
+"common.ml" 47 1550 1560 "common.ml" 47 1550 1565
+type(
+  out_channel
+)
+"common.ml" 47 1550 1566 "common.ml" 47 1550 1581
+type(
+  (int -> string -> unit, out_channel, unit) format
+)
+"common.ml" 47 1550 1583 "common.ml" 47 1550 1585
+type(
+  line_tracker
+)
+ident(
+  int_ref tr "common.ml" 37 1221 1240 "common.ml" 37 1221 1242
+)
+"common.ml" 47 1550 1583 "common.ml" 47 1550 1594
+type(
+  int
+)
+"common.ml" 47 1550 1594 "common.ml" 47 1550 1595
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"common.ml" 47 1550 1595 "common.ml" 47 1550 1596
+type(
+  int
+)
+"common.ml" 47 1550 1582 "common.ml" 47 1550 1597
+type(
+  int
+)
+"common.ml" 47 1550 1598 "common.ml" 47 1550 1600
+type(
+  line_tracker
+)
+ident(
+  int_ref tr "common.ml" 37 1221 1240 "common.ml" 37 1221 1242
+)
+"common.ml" 47 1550 1598 "common.ml" 47 1550 1605
+type(
+  string
+)
+"common.ml" 47 1550 1552 "common.ml" 47 1550 1606
+call(
+  tail
+)
+type(
+  unit
+)
+"common.ml" 41 1311 1313 "common.ml" 47 1550 1606
+type(
+  unit
+)
+"common.ml" 40 1282 1284 "common.ml" 47 1550 1606
+type(
+  unit
+)
+"common.ml" 39 1267 1269 "common.ml" 47 1550 1606
+type(
+  unit
+)
+"common.ml" 38 1245 1247 "common.ml" 47 1550 1606
+type(
+  unit
+)
+"common.ml" 50 1611 1615 "common.ml" 50 1611 1626
+type(
+  bytes
+)
+ident(
+  def copy_buffer "common.ml" 52 1648 1648 "common.ml" 1 0 -1
+)
+"common.ml" 50 1611 1629 "common.ml" 50 1611 1641
+type(
+  int -> bytes
+)
+ident(
+  ext_ref Bytes.create
+)
+"common.ml" 50 1611 1642 "common.ml" 50 1611 1646
+type(
+  int
+)
+"common.ml" 50 1611 1629 "common.ml" 50 1611 1646
+type(
+  bytes
+)
+"common.ml" 52 1648 1652 "common.ml" 52 1648 1667
+type(
+  in_channel -> out_channel -> int -> int -> unit
+)
+ident(
+  def copy_chars_unix "common.ml" 60 1844 1844 "common.ml" 1 0 -1
+)
+"common.ml" 52 1648 1668 "common.ml" 52 1648 1670
+type(
+  in_channel
+)
+ident(
+  def ic "common.ml" 52 1648 1671 "common.ml" 58 1836 1842
+)
+"common.ml" 52 1648 1671 "common.ml" 52 1648 1673
+type(
+  out_channel
+)
+ident(
+  def oc "common.ml" 52 1648 1674 "common.ml" 58 1836 1842
+)
+"common.ml" 52 1648 1674 "common.ml" 52 1648 1679
+type(
+  int
+)
+ident(
+  def start "common.ml" 52 1648 1680 "common.ml" 58 1836 1842
+)
+"common.ml" 52 1648 1680 "common.ml" 52 1648 1684
+type(
+  int
+)
+ident(
+  def stop "common.ml" 53 1687 1689 "common.ml" 58 1836 1842
+)
+"common.ml" 53 1687 1693 "common.ml" 53 1687 1694
+type(
+  int ref
+)
+ident(
+  def n "common.ml" 54 1719 1721 "common.ml" 58 1836 1842
+)
+"common.ml" 53 1687 1697 "common.ml" 53 1687 1700
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"common.ml" 53 1687 1702 "common.ml" 53 1687 1706
+type(
+  int
+)
+ident(
+  int_ref stop "common.ml" 52 1648 1680 "common.ml" 52 1648 1684
+)
+"common.ml" 53 1687 1707 "common.ml" 53 1687 1708
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"common.ml" 53 1687 1709 "common.ml" 53 1687 1714
+type(
+  int
+)
+ident(
+  int_ref start "common.ml" 52 1648 1674 "common.ml" 52 1648 1679
+)
+"common.ml" 53 1687 1701 "common.ml" 53 1687 1715
+type(
+  int
+)
+"common.ml" 53 1687 1697 "common.ml" 53 1687 1715
+type(
+  int ref
+)
+"common.ml" 54 1719 1727 "common.ml" 54 1719 1728
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"common.ml" 54 1719 1728 "common.ml" 54 1719 1729
+type(
+  int ref
+)
+ident(
+  int_ref n "common.ml" 53 1687 1693 "common.ml" 53 1687 1694
+)
+"common.ml" 54 1719 1727 "common.ml" 54 1719 1729
+type(
+  int
+)
+"common.ml" 54 1719 1730 "common.ml" 54 1719 1731
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"common.ml" 54 1719 1732 "common.ml" 54 1719 1733
+type(
+  int
+)
+"common.ml" 54 1719 1727 "common.ml" 54 1719 1733
+type(
+  bool
+)
+"common.ml" 55 1737 1745 "common.ml" 55 1737 1746
+type(
+  int
+)
+ident(
+  def m "common.ml" 56 1789 1793 "common.ml" 57 1820 1835
+)
+"common.ml" 55 1737 1749 "common.ml" 55 1737 1754
+type(
+  in_channel -> bytes -> int -> int -> int
+)
+ident(
+  ext_ref Pervasives.input
+)
+"common.ml" 55 1737 1755 "common.ml" 55 1737 1757
+type(
+  in_channel
+)
+ident(
+  int_ref ic "common.ml" 52 1648 1668 "common.ml" 52 1648 1670
+)
+"common.ml" 55 1737 1758 "common.ml" 55 1737 1769
+type(
+  bytes
+)
+ident(
+  int_ref copy_buffer "common.ml" 50 1611 1615 "common.ml" 50 1611 1626
+)
+"common.ml" 55 1737 1770 "common.ml" 55 1737 1771
+type(
+  int
+)
+"common.ml" 55 1737 1773 "common.ml" 55 1737 1776
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.min
+)
+"common.ml" 55 1737 1777 "common.ml" 55 1737 1778
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"common.ml" 55 1737 1778 "common.ml" 55 1737 1779
+type(
+  int ref
+)
+ident(
+  int_ref n "common.ml" 53 1687 1693 "common.ml" 53 1687 1694
+)
+"common.ml" 55 1737 1777 "common.ml" 55 1737 1779
+type(
+  int
+)
+"common.ml" 55 1737 1780 "common.ml" 55 1737 1784
+type(
+  int
+)
+"common.ml" 55 1737 1772 "common.ml" 55 1737 1785
+call(
+  stack
+)
+type(
+  int
+)
+"common.ml" 55 1737 1749 "common.ml" 55 1737 1785
+call(
+  stack
+)
+type(
+  int
+)
+"common.ml" 56 1789 1793 "common.ml" 56 1789 1799
+type(
+  out_channel -> bytes -> int -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output
+)
+"common.ml" 56 1789 1800 "common.ml" 56 1789 1802
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 52 1648 1671 "common.ml" 52 1648 1673
+)
+"common.ml" 56 1789 1803 "common.ml" 56 1789 1814
+type(
+  bytes
+)
+ident(
+  int_ref copy_buffer "common.ml" 50 1611 1615 "common.ml" 50 1611 1626
+)
+"common.ml" 56 1789 1815 "common.ml" 56 1789 1816
+type(
+  int
+)
+"common.ml" 56 1789 1817 "common.ml" 56 1789 1818
+type(
+  int
+)
+ident(
+  int_ref m "common.ml" 55 1737 1745 "common.ml" 55 1737 1746
+)
+"common.ml" 56 1789 1793 "common.ml" 56 1789 1818
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 57 1820 1824 "common.ml" 57 1820 1825
+type(
+  int ref
+)
+ident(
+  int_ref n "common.ml" 53 1687 1693 "common.ml" 53 1687 1694
+)
+"common.ml" 57 1820 1826 "common.ml" 57 1820 1828
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"common.ml" 57 1820 1829 "common.ml" 57 1820 1830
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"common.ml" 57 1820 1830 "common.ml" 57 1820 1831
+type(
+  int ref
+)
+ident(
+  int_ref n "common.ml" 53 1687 1693 "common.ml" 53 1687 1694
+)
+"common.ml" 57 1820 1829 "common.ml" 57 1820 1831
+type(
+  int
+)
+"common.ml" 57 1820 1832 "common.ml" 57 1820 1833
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"common.ml" 57 1820 1834 "common.ml" 57 1820 1835
+type(
+  int
+)
+ident(
+  int_ref m "common.ml" 55 1737 1745 "common.ml" 55 1737 1746
+)
+"common.ml" 57 1820 1829 "common.ml" 57 1820 1835
+type(
+  int
+)
+"common.ml" 57 1820 1824 "common.ml" 57 1820 1835
+type(
+  unit
+)
+"common.ml" 56 1789 1793 "common.ml" 57 1820 1835
+type(
+  unit
+)
+"common.ml" 55 1737 1741 "common.ml" 57 1820 1835
+type(
+  unit
+)
+"common.ml" 54 1719 1721 "common.ml" 58 1836 1842
+type(
+  unit
+)
+"common.ml" 53 1687 1689 "common.ml" 58 1836 1842
+type(
+  unit
+)
+"common.ml" 60 1844 1848 "common.ml" 60 1844 1864
+type(
+  in_channel -> out_channel -> int -> int -> unit
+)
+ident(
+  def copy_chars_win32 "common.ml" 66 1992 1992 "common.ml" 1 0 -1
+)
+"common.ml" 60 1844 1865 "common.ml" 60 1844 1867
+type(
+  in_channel
+)
+ident(
+  def ic "common.ml" 60 1844 1868 "common.ml" 64 1984 1990
+)
+"common.ml" 60 1844 1868 "common.ml" 60 1844 1870
+type(
+  out_channel
+)
+ident(
+  def oc "common.ml" 60 1844 1871 "common.ml" 64 1984 1990
+)
+"common.ml" 60 1844 1871 "common.ml" 60 1844 1876
+type(
+  int
+)
+ident(
+  def start "common.ml" 60 1844 1877 "common.ml" 64 1984 1990
+)
+"common.ml" 60 1844 1877 "common.ml" 60 1844 1881
+type(
+  int
+)
+ident(
+  def stop "common.ml" 61 1884 1886 "common.ml" 64 1984 1990
+)
+"common.ml" 61 1884 1895 "common.ml" 61 1884 1900
+type(
+  int
+)
+ident(
+  int_ref start "common.ml" 60 1844 1871 "common.ml" 60 1844 1876
+)
+"common.ml" 61 1884 1904 "common.ml" 61 1884 1908
+type(
+  int
+)
+ident(
+  int_ref stop "common.ml" 60 1844 1877 "common.ml" 60 1844 1881
+)
+"common.ml" 61 1884 1909 "common.ml" 61 1884 1910
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"common.ml" 61 1884 1911 "common.ml" 61 1884 1912
+type(
+  int
+)
+"common.ml" 61 1884 1904 "common.ml" 61 1884 1912
+type(
+  int
+)
+"common.ml" 62 1916 1924 "common.ml" 62 1916 1925
+type(
+  char
+)
+ident(
+  def c "common.ml" 63 1945 1949 "common.ml" 63 1945 1983
+)
+"common.ml" 62 1916 1928 "common.ml" 62 1916 1938
+type(
+  in_channel -> char
+)
+ident(
+  ext_ref Pervasives.input_char
+)
+"common.ml" 62 1916 1939 "common.ml" 62 1916 1941
+type(
+  in_channel
+)
+ident(
+  int_ref ic "common.ml" 60 1844 1865 "common.ml" 60 1844 1867
+)
+"common.ml" 62 1916 1928 "common.ml" 62 1916 1941
+call(
+  stack
+)
+type(
+  char
+)
+"common.ml" 63 1945 1952 "common.ml" 63 1945 1953
+type(
+  char
+)
+ident(
+  int_ref c "common.ml" 62 1916 1924 "common.ml" 62 1916 1925
+)
+"common.ml" 63 1945 1954 "common.ml" 63 1945 1956
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"common.ml" 63 1945 1957 "common.ml" 63 1945 1961
+type(
+  char
+)
+"common.ml" 63 1945 1952 "common.ml" 63 1945 1961
+type(
+  bool
+)
+"common.ml" 63 1945 1967 "common.ml" 63 1945 1978
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"common.ml" 63 1945 1979 "common.ml" 63 1945 1981
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 60 1844 1868 "common.ml" 60 1844 1870
+)
+"common.ml" 63 1945 1982 "common.ml" 63 1945 1983
+type(
+  char
+)
+ident(
+  int_ref c "common.ml" 62 1916 1924 "common.ml" 62 1916 1925
+)
+"common.ml" 63 1945 1967 "common.ml" 63 1945 1983
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 63 1945 1949 "common.ml" 63 1945 1983
+type(
+  unit
+)
+"common.ml" 62 1916 1920 "common.ml" 63 1945 1983
+type(
+  unit
+)
+"common.ml" 61 1884 1886 "common.ml" 64 1984 1990
+type(
+  unit
+)
+"common.ml" 66 1992 1996 "common.ml" 66 1992 2006
+type(
+  in_channel -> out_channel -> int -> int -> unit
+)
+ident(
+  def copy_chars "common.ml" 71 2109 2109 "common.ml" 1 0 -1
+)
+"common.ml" 67 2009 2017 "common.ml" 67 2009 2028
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"common.ml" 68 2034 2038 "common.ml" 68 2034 2045
+type(
+  string
+)
+"common.ml" 68 2034 2048 "common.ml" 68 2034 2056
+type(
+  string
+)
+"common.ml" 68 2034 2038 "common.ml" 68 2034 2056
+type(
+  string
+)
+"common.ml" 68 2034 2060 "common.ml" 68 2034 2076
+type(
+  in_channel -> out_channel -> int -> int -> unit
+)
+ident(
+  int_ref copy_chars_win32 "common.ml" 60 1844 1848 "common.ml" 60 1844 1864
+)
+"common.ml" 69 2077 2081 "common.ml" 69 2077 2082
+type(
+  string
+)
+"common.ml" 69 2077 2092 "common.ml" 69 2077 2107
+type(
+  in_channel -> out_channel -> int -> int -> unit
+)
+ident(
+  int_ref copy_chars_unix "common.ml" 52 1648 1652 "common.ml" 52 1648 1667
+)
+"common.ml" 67 2009 2011 "common.ml" 69 2077 2107
+type(
+  in_channel -> out_channel -> int -> int -> unit
+)
+"common.ml" 71 2109 2113 "common.ml" 71 2109 2123
+type(
+  in_channel ->
+  out_channel -> line_tracker -> Syntax.location -> bool -> unit
+)
+ident(
+  def copy_chunk "common.ml" 88 2662 2662 "common.ml" 1 0 -1
+)
+"common.ml" 71 2109 2124 "common.ml" 71 2109 2126
+type(
+  in_channel
+)
+ident(
+  def ic "common.ml" 71 2109 2127 "common.ml" 84 2625 2630
+)
+"common.ml" 71 2109 2127 "common.ml" 71 2109 2129
+type(
+  out_channel
+)
+ident(
+  def oc "common.ml" 71 2109 2130 "common.ml" 84 2625 2630
+)
+"common.ml" 71 2109 2130 "common.ml" 71 2109 2133
+type(
+  line_tracker
+)
+ident(
+  def trl "common.ml" 71 2109 2134 "common.ml" 84 2625 2630
+)
+"common.ml" 71 2109 2134 "common.ml" 71 2109 2137
+type(
+  Syntax.location
+)
+ident(
+  def loc "common.ml" 71 2109 2138 "common.ml" 84 2625 2630
+)
+"common.ml" 71 2109 2138 "common.ml" 71 2109 2148
+type(
+  bool
+)
+ident(
+  def add_parens "common.ml" 72 2151 2153 "common.ml" 84 2625 2630
+)
+"common.ml" 72 2151 2156 "common.ml" 72 2151 2159
+type(
+  Syntax.location
+)
+ident(
+  int_ref loc "common.ml" 71 2109 2134 "common.ml" 71 2109 2137
+)
+"common.ml" 72 2151 2156 "common.ml" 72 2151 2169
+type(
+  int
+)
+"common.ml" 72 2151 2170 "common.ml" 72 2151 2171
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"common.ml" 72 2151 2172 "common.ml" 72 2151 2175
+type(
+  Syntax.location
+)
+ident(
+  int_ref loc "common.ml" 71 2109 2134 "common.ml" 71 2109 2137
+)
+"common.ml" 72 2151 2172 "common.ml" 72 2151 2183
+type(
+  int
+)
+"common.ml" 72 2151 2156 "common.ml" 72 2151 2183
+type(
+  bool
+)
+"common.ml" 72 2151 2184 "common.ml" 72 2151 2186
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"common.ml" 72 2151 2187 "common.ml" 72 2151 2197
+type(
+  bool
+)
+ident(
+  int_ref add_parens "common.ml" 71 2109 2138 "common.ml" 71 2109 2148
+)
+"common.ml" 72 2151 2156 "common.ml" 72 2151 2197
+type(
+  bool
+)
+"common.ml" 73 2209 2213 "common.ml" 73 2209 2220
+type(
+  out_channel ->
+  (int -> string -> unit, out_channel, unit) format -> int -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"common.ml" 73 2209 2221 "common.ml" 73 2209 2223
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 71 2109 2127 "common.ml" 71 2109 2129
+)
+"common.ml" 73 2209 2224 "common.ml" 73 2209 2239
+type(
+  (int -> string -> unit, out_channel, unit) format
+)
+"common.ml" 73 2209 2240 "common.ml" 73 2209 2243
+type(
+  Syntax.location
+)
+ident(
+  int_ref loc "common.ml" 71 2109 2134 "common.ml" 71 2109 2137
+)
+"common.ml" 73 2209 2240 "common.ml" 73 2209 2254
+type(
+  int
+)
+"common.ml" 73 2209 2255 "common.ml" 73 2209 2258
+type(
+  Syntax.location
+)
+ident(
+  int_ref loc "common.ml" 71 2109 2134 "common.ml" 71 2109 2137
+)
+"common.ml" 73 2209 2255 "common.ml" 73 2209 2267
+type(
+  string
+)
+"common.ml" 73 2209 2213 "common.ml" 73 2209 2267
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 74 2269 2276 "common.ml" 74 2269 2286
+type(
+  bool
+)
+ident(
+  int_ref add_parens "common.ml" 71 2109 2138 "common.ml" 71 2109 2148
+)
+"common.ml" 75 2298 2313 "common.ml" 75 2298 2314
+type(
+  int
+)
+"common.ml" 75 2298 2318 "common.ml" 75 2298 2321
+type(
+  Syntax.location
+)
+ident(
+  int_ref loc "common.ml" 71 2109 2134 "common.ml" 71 2109 2137
+)
+"common.ml" 75 2298 2318 "common.ml" 75 2298 2331
+type(
+  int
+)
+"common.ml" 75 2298 2332 "common.ml" 75 2298 2333
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"common.ml" 75 2298 2334 "common.ml" 75 2298 2335
+type(
+  int
+)
+"common.ml" 75 2298 2318 "common.ml" 75 2298 2335
+type(
+  int
+)
+"common.ml" 75 2298 2339 "common.ml" 75 2298 2350
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"common.ml" 75 2298 2351 "common.ml" 75 2298 2353
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 71 2109 2127 "common.ml" 71 2109 2129
+)
+"common.ml" 75 2298 2354 "common.ml" 75 2298 2357
+type(
+  char
+)
+"common.ml" 75 2298 2339 "common.ml" 75 2298 2357
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 75 2298 2304 "common.ml" 75 2298 2362
+type(
+  unit
+)
+"common.ml" 76 2364 2370 "common.ml" 76 2364 2381
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"common.ml" 76 2364 2382 "common.ml" 76 2364 2384
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 71 2109 2127 "common.ml" 71 2109 2129
+)
+"common.ml" 76 2364 2385 "common.ml" 76 2364 2388
+type(
+  char
+)
+"common.ml" 76 2364 2370 "common.ml" 76 2364 2389
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 74 2269 2292 "common.ml" 77 2390 2397
+type(
+  unit
+)
+"common.ml" 78 2409 2424 "common.ml" 78 2409 2425
+type(
+  int
+)
+"common.ml" 78 2409 2429 "common.ml" 78 2409 2432
+type(
+  Syntax.location
+)
+ident(
+  int_ref loc "common.ml" 71 2109 2134 "common.ml" 71 2109 2137
+)
+"common.ml" 78 2409 2429 "common.ml" 78 2409 2442
+type(
+  int
+)
+"common.ml" 78 2409 2446 "common.ml" 78 2409 2457
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"common.ml" 78 2409 2458 "common.ml" 78 2409 2460
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 71 2109 2127 "common.ml" 71 2109 2129
+)
+"common.ml" 78 2409 2461 "common.ml" 78 2409 2464
+type(
+  char
+)
+"common.ml" 78 2409 2446 "common.ml" 78 2409 2464
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 77 2390 2403 "common.ml" 79 2471 2478
+type(
+  unit
+)
+"common.ml" 74 2269 2273 "common.ml" 79 2471 2478
+type(
+  unit
+)
+"common.ml" 80 2480 2484 "common.ml" 80 2480 2491
+type(
+  in_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.seek_in
+)
+"common.ml" 80 2480 2492 "common.ml" 80 2480 2494
+type(
+  in_channel
+)
+ident(
+  int_ref ic "common.ml" 71 2109 2124 "common.ml" 71 2109 2126
+)
+"common.ml" 80 2480 2495 "common.ml" 80 2480 2498
+type(
+  Syntax.location
+)
+ident(
+  int_ref loc "common.ml" 71 2109 2134 "common.ml" 71 2109 2137
+)
+"common.ml" 80 2480 2495 "common.ml" 80 2480 2508
+type(
+  int
+)
+"common.ml" 80 2480 2484 "common.ml" 80 2480 2508
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 81 2510 2514 "common.ml" 81 2510 2524
+type(
+  in_channel -> out_channel -> int -> int -> unit
+)
+ident(
+  int_ref copy_chars "common.ml" 66 1992 1996 "common.ml" 66 1992 2006
+)
+"common.ml" 81 2510 2525 "common.ml" 81 2510 2527
+type(
+  in_channel
+)
+ident(
+  int_ref ic "common.ml" 71 2109 2124 "common.ml" 71 2109 2126
+)
+"common.ml" 81 2510 2528 "common.ml" 81 2510 2530
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 71 2109 2127 "common.ml" 71 2109 2129
+)
+"common.ml" 81 2510 2531 "common.ml" 81 2510 2534
+type(
+  Syntax.location
+)
+ident(
+  int_ref loc "common.ml" 71 2109 2134 "common.ml" 71 2109 2137
+)
+"common.ml" 81 2510 2531 "common.ml" 81 2510 2544
+type(
+  int
+)
+"common.ml" 81 2510 2545 "common.ml" 81 2510 2548
+type(
+  Syntax.location
+)
+ident(
+  int_ref loc "common.ml" 71 2109 2134 "common.ml" 71 2109 2137
+)
+"common.ml" 81 2510 2545 "common.ml" 81 2510 2556
+type(
+  int
+)
+"common.ml" 81 2510 2514 "common.ml" 81 2510 2556
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 82 2558 2565 "common.ml" 82 2558 2575
+type(
+  bool
+)
+ident(
+  int_ref add_parens "common.ml" 71 2109 2138 "common.ml" 71 2109 2148
+)
+"common.ml" 82 2558 2581 "common.ml" 82 2558 2592
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"common.ml" 82 2558 2593 "common.ml" 82 2558 2595
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 71 2109 2127 "common.ml" 71 2109 2129
+)
+"common.ml" 82 2558 2596 "common.ml" 82 2558 2599
+type(
+  char
+)
+"common.ml" 82 2558 2581 "common.ml" 82 2558 2599
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 82 2558 2562 "common.ml" 82 2558 2599
+type(
+  unit
+)
+"common.ml" 83 2601 2605 "common.ml" 83 2601 2619
+type(
+  line_tracker -> unit
+)
+ident(
+  int_ref update_tracker "common.ml" 37 1221 1225 "common.ml" 37 1221 1239
+)
+"common.ml" 83 2601 2620 "common.ml" 83 2601 2623
+type(
+  line_tracker
+)
+ident(
+  int_ref trl "common.ml" 71 2109 2130 "common.ml" 71 2109 2133
+)
+"common.ml" 83 2601 2605 "common.ml" 83 2601 2624
+call(
+  tail
+)
+type(
+  unit
+)
+"common.ml" 82 2558 2562 "common.ml" 83 2601 2624
+type(
+  unit
+)
+"common.ml" 81 2510 2514 "common.ml" 83 2601 2624
+type(
+  unit
+)
+"common.ml" 80 2480 2484 "common.ml" 83 2601 2624
+type(
+  unit
+)
+"common.ml" 74 2269 2273 "common.ml" 83 2601 2624
+type(
+  unit
+)
+"common.ml" 72 2151 2203 "common.ml" 84 2625 2630
+type(
+  unit
+)
+"common.ml" 72 2151 2153 "common.ml" 84 2625 2630
+type(
+  unit
+)
+"common.ml" 88 2662 2666 "common.ml" 88 2662 2683
+type(
+  out_channel -> int -> unit
+)
+ident(
+  def output_mem_access "common.ml" 90 2734 2734 "common.ml" 1 0 -1
+)
+"common.ml" 88 2662 2684 "common.ml" 88 2662 2686
+type(
+  out_channel
+)
+ident(
+  def oc "common.ml" 88 2662 2687 "common.ml" 88 2662 2732
+)
+"common.ml" 88 2662 2687 "common.ml" 88 2662 2688
+type(
+  int
+)
+ident(
+  def i "common.ml" 88 2662 2691 "common.ml" 88 2662 2732
+)
+"common.ml" 88 2662 2691 "common.ml" 88 2662 2698
+type(
+  out_channel -> (int -> unit, out_channel, unit) format -> int -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"common.ml" 88 2662 2699 "common.ml" 88 2662 2701
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 88 2662 2684 "common.ml" 88 2662 2686
+)
+"common.ml" 88 2662 2702 "common.ml" 88 2662 2730
+type(
+  (int -> unit, out_channel, unit) format
+)
+"common.ml" 88 2662 2731 "common.ml" 88 2662 2732
+type(
+  int
+)
+ident(
+  int_ref i "common.ml" 88 2662 2687 "common.ml" 88 2662 2688
+)
+"common.ml" 88 2662 2691 "common.ml" 88 2662 2732
+call(
+  tail
+)
+type(
+  unit
+)
+"common.ml" 90 2734 2738 "common.ml" 90 2734 2759
+type(
+  string -> out_channel -> Lexgen.memory_action list -> unit
+)
+ident(
+  def output_memory_actions "common.ml" 114 3376 3376 "common.ml" 1 0 -1
+)
+"common.ml" 90 2734 2760 "common.ml" 90 2734 2764
+type(
+  string
+)
+ident(
+  def pref "common.ml" 90 2734 2765 "common.ml" 112 3367 3374
+)
+"common.ml" 90 2734 2765 "common.ml" 90 2734 2767
+type(
+  out_channel
+)
+ident(
+  def oc "common.ml" 90 2734 2770 "common.ml" 112 3367 3374
+)
+"common.ml" 91 2779 2783 "common.ml" 91 2779 2785
+type(
+  Lexgen.memory_action list
+)
+"common.ml" 91 2779 2790 "common.ml" 91 2779 2792
+type(
+  unit
+)
+"common.ml" 92 2793 2797 "common.ml" 92 2793 2800
+type(
+  Lexgen.memory_action list
+)
+ident(
+  def mvs "common.ml" 93 2804 2810 "common.ml" 112 3367 3374
+)
+"common.ml" 93 2804 2810 "common.ml" 93 2804 2823
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"common.ml" 93 2804 2824 "common.ml" 93 2804 2826
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 90 2734 2765 "common.ml" 90 2734 2767
+)
+"common.ml" 93 2804 2827 "common.ml" 93 2804 2832
+type(
+  string
+)
+"common.ml" 93 2804 2810 "common.ml" 93 2804 2832
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 94 2835 2837 "common.ml" 94 2835 2844
+type(
+  out_channel -> (int -> unit, out_channel, unit) format -> int -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"common.ml" 94 2835 2845 "common.ml" 94 2835 2847
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 90 2734 2765 "common.ml" 90 2734 2767
+)
+"common.ml" 94 2835 2848 "common.ml" 94 2835 2855
+type(
+  (int -> unit, out_channel, unit) format
+)
+"common.ml" 94 2835 2857 "common.ml" 94 2835 2868
+type(
+  Lexgen.memory_action list -> int
+)
+ident(
+  ext_ref List.length
+)
+"common.ml" 94 2835 2869 "common.ml" 94 2835 2872
+type(
+  Lexgen.memory_action list
+)
+ident(
+  int_ref mvs "common.ml" 92 2793 2797 "common.ml" 92 2793 2800
+)
+"common.ml" 94 2835 2856 "common.ml" 94 2835 2873
+call(
+  stack
+)
+type(
+  int
+)
+"common.ml" 94 2835 2837 "common.ml" 94 2835 2873
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 95 2876 2878 "common.ml" 95 2876 2887
+type(
+  (Lexgen.memory_action -> unit) -> Lexgen.memory_action list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"common.ml" 96 2888 2897 "common.ml" 96 2888 2899
+type(
+  Lexgen.memory_action
+)
+ident(
+  def mv "common.ml" 96 2888 2903 "common.ml" 100 3003 3040
+)
+"common.ml" 96 2888 2909 "common.ml" 96 2888 2911
+type(
+  Lexgen.memory_action
+)
+ident(
+  int_ref mv "common.ml" 96 2888 2897 "common.ml" 96 2888 2899
+)
+"common.ml" 97 2917 2929 "common.ml" 97 2917 2932
+type(
+  int
+)
+ident(
+  def tgt "common.ml" 98 2942 2950 "common.ml" 98 2942 2985
+)
+"common.ml" 97 2917 2934 "common.ml" 97 2917 2937
+type(
+  int
+)
+ident(
+  def src "common.ml" 98 2942 2950 "common.ml" 98 2942 2985
+)
+"common.ml" 97 2917 2923 "common.ml" 97 2917 2938
+type(
+  Lexgen.memory_action
+)
+"common.ml" 98 2942 2950 "common.ml" 98 2942 2957
+type(
+  out_channel ->
+  (int -> int -> unit, out_channel, unit) format -> int -> int -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"common.ml" 98 2942 2958 "common.ml" 98 2942 2960
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 90 2734 2765 "common.ml" 90 2734 2767
+)
+"common.ml" 98 2942 2961 "common.ml" 98 2942 2977
+type(
+  (int -> int -> unit, out_channel, unit) format
+)
+"common.ml" 98 2942 2978 "common.ml" 98 2942 2981
+type(
+  int
+)
+ident(
+  int_ref tgt "common.ml" 97 2917 2929 "common.ml" 97 2917 2932
+)
+"common.ml" 98 2942 2982 "common.ml" 98 2942 2985
+type(
+  int
+)
+ident(
+  int_ref src "common.ml" 97 2917 2934 "common.ml" 97 2917 2937
+)
+"common.ml" 98 2942 2950 "common.ml" 98 2942 2985
+call(
+  tail
+)
+type(
+  unit
+)
+"common.ml" 99 2986 2996 "common.ml" 99 2986 2999
+type(
+  int
+)
+ident(
+  def tgt "common.ml" 100 3003 3011 "common.ml" 100 3003 3040
+)
+"common.ml" 99 2986 2992 "common.ml" 99 2986 2999
+type(
+  Lexgen.memory_action
+)
+"common.ml" 100 3003 3011 "common.ml" 100 3003 3018
+type(
+  out_channel -> (int -> unit, out_channel, unit) format -> int -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"common.ml" 100 3003 3019 "common.ml" 100 3003 3021
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 90 2734 2765 "common.ml" 90 2734 2767
+)
+"common.ml" 100 3003 3022 "common.ml" 100 3003 3036
+type(
+  (int -> unit, out_channel, unit) format
+)
+"common.ml" 100 3003 3037 "common.ml" 100 3003 3040
+type(
+  int
+)
+ident(
+  int_ref tgt "common.ml" 99 2986 2996 "common.ml" 99 2986 2999
+)
+"common.ml" 100 3003 3011 "common.ml" 100 3003 3040
+call(
+  tail
+)
+type(
+  unit
+)
+"common.ml" 96 2888 2903 "common.ml" 100 3003 3040
+type(
+  unit
+)
+"common.ml" 96 2888 2892 "common.ml" 100 3003 3041
+type(
+  Lexgen.memory_action -> unit
+)
+"common.ml" 101 3042 3046 "common.ml" 101 3042 3049
+type(
+  Lexgen.memory_action list
+)
+ident(
+  int_ref mvs "common.ml" 92 2793 2797 "common.ml" 92 2793 2800
+)
+"common.ml" 95 2876 2878 "common.ml" 101 3042 3049
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 102 3052 3054 "common.ml" 102 3052 3067
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"common.ml" 102 3052 3068 "common.ml" 102 3052 3070
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 90 2734 2765 "common.ml" 90 2734 2767
+)
+"common.ml" 102 3052 3071 "common.ml" 102 3052 3078
+type(
+  string
+)
+"common.ml" 102 3052 3054 "common.ml" 102 3052 3078
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 103 3081 3083 "common.ml" 103 3081 3092
+type(
+  (Lexgen.memory_action -> unit) -> Lexgen.memory_action list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"common.ml" 104 3093 3102 "common.ml" 104 3093 3104
+type(
+  Lexgen.memory_action
+)
+ident(
+  def mv "common.ml" 104 3093 3108 "common.ml" 111 3329 3365
+)
+"common.ml" 104 3093 3114 "common.ml" 104 3093 3116
+type(
+  Lexgen.memory_action
+)
+ident(
+  int_ref mv "common.ml" 104 3093 3102 "common.ml" 104 3093 3104
+)
+"common.ml" 105 3122 3134 "common.ml" 105 3122 3137
+type(
+  int
+)
+ident(
+  def tgt "common.ml" 106 3147 3155 "common.ml" 108 3193 3251
+)
+"common.ml" 105 3122 3139 "common.ml" 105 3122 3142
+type(
+  int
+)
+ident(
+  def src "common.ml" 106 3147 3155 "common.ml" 108 3193 3251
+)
+"common.ml" 105 3122 3128 "common.ml" 105 3122 3143
+type(
+  Lexgen.memory_action
+)
+"common.ml" 106 3147 3155 "common.ml" 106 3147 3162
+type(
+  out_channel ->
+  (string ->
+   (out_channel -> int -> unit) ->
+   int -> (out_channel -> int -> unit) -> int -> unit, out_channel, unit)
+  format ->
+  string ->
+  (out_channel -> int -> unit) ->
+  int -> (out_channel -> int -> unit) -> int -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"common.ml" 106 3147 3163 "common.ml" 106 3147 3165
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 90 2734 2765 "common.ml" 90 2734 2767
+)
+"common.ml" 107 3166 3176 "common.ml" 107 3166 3192
+type(
+  (string ->
+   (out_channel -> int -> unit) ->
+   int -> (out_channel -> int -> unit) -> int -> unit, out_channel, unit)
+  format
+)
+"common.ml" 108 3193 3203 "common.ml" 108 3193 3207
+type(
+  string
+)
+ident(
+  int_ref pref "common.ml" 90 2734 2760 "common.ml" 90 2734 2764
+)
+"common.ml" 108 3193 3208 "common.ml" 108 3193 3225
+type(
+  out_channel -> int -> unit
+)
+ident(
+  int_ref output_mem_access "common.ml" 88 2662 2666 "common.ml" 88 2662 2683
+)
+"common.ml" 108 3193 3226 "common.ml" 108 3193 3229
+type(
+  int
+)
+ident(
+  int_ref tgt "common.ml" 105 3122 3134 "common.ml" 105 3122 3137
+)
+"common.ml" 108 3193 3230 "common.ml" 108 3193 3247
+type(
+  out_channel -> int -> unit
+)
+ident(
+  int_ref output_mem_access "common.ml" 88 2662 2666 "common.ml" 88 2662 2683
+)
+"common.ml" 108 3193 3248 "common.ml" 108 3193 3251
+type(
+  int
+)
+ident(
+  int_ref src "common.ml" 105 3122 3139 "common.ml" 105 3122 3142
+)
+"common.ml" 106 3147 3155 "common.ml" 108 3193 3251
+call(
+  tail
+)
+type(
+  unit
+)
+"common.ml" 109 3252 3262 "common.ml" 109 3252 3265
+type(
+  int
+)
+ident(
+  def tgt "common.ml" 110 3269 3277 "common.ml" 111 3329 3365
+)
+"common.ml" 109 3252 3258 "common.ml" 109 3252 3265
+type(
+  Lexgen.memory_action
+)
+"common.ml" 110 3269 3277 "common.ml" 110 3269 3284
+type(
+  out_channel ->
+  (string -> (out_channel -> int -> unit) -> int -> unit, out_channel, unit)
+  format -> string -> (out_channel -> int -> unit) -> int -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"common.ml" 110 3269 3285 "common.ml" 110 3269 3287
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 90 2734 2765 "common.ml" 90 2734 2767
+)
+"common.ml" 110 3269 3288 "common.ml" 110 3269 3328
+type(
+  (string -> (out_channel -> int -> unit) -> int -> unit, out_channel, unit)
+  format
+)
+"common.ml" 111 3329 3339 "common.ml" 111 3329 3343
+type(
+  string
+)
+ident(
+  int_ref pref "common.ml" 90 2734 2760 "common.ml" 90 2734 2764
+)
+"common.ml" 111 3329 3344 "common.ml" 111 3329 3361
+type(
+  out_channel -> int -> unit
+)
+ident(
+  int_ref output_mem_access "common.ml" 88 2662 2666 "common.ml" 88 2662 2683
+)
+"common.ml" 111 3329 3362 "common.ml" 111 3329 3365
+type(
+  int
+)
+ident(
+  int_ref tgt "common.ml" 109 3252 3262 "common.ml" 109 3252 3265
+)
+"common.ml" 110 3269 3277 "common.ml" 111 3329 3365
+call(
+  tail
+)
+type(
+  unit
+)
+"common.ml" 104 3093 3108 "common.ml" 111 3329 3365
+type(
+  unit
+)
+"common.ml" 104 3093 3097 "common.ml" 111 3329 3366
+type(
+  Lexgen.memory_action -> unit
+)
+"common.ml" 112 3367 3371 "common.ml" 112 3367 3374
+type(
+  Lexgen.memory_action list
+)
+ident(
+  int_ref mvs "common.ml" 92 2793 2797 "common.ml" 92 2793 2800
+)
+"common.ml" 103 3081 3083 "common.ml" 112 3367 3374
+call(
+  tail
+)
+type(
+  unit
+)
+"common.ml" 102 3052 3054 "common.ml" 112 3367 3374
+type(
+  unit
+)
+"common.ml" 95 2876 2878 "common.ml" 112 3367 3374
+type(
+  unit
+)
+"common.ml" 94 2835 2837 "common.ml" 112 3367 3374
+type(
+  unit
+)
+"common.ml" 93 2804 2810 "common.ml" 112 3367 3374
+type(
+  unit
+)
+"common.ml" 90 2734 2770 "common.ml" 112 3367 3374
+type(
+  Lexgen.memory_action list -> unit
+)
+"common.ml" 114 3376 3380 "common.ml" 114 3376 3395
+type(
+  out_channel -> Lexgen.tag_base -> unit
+)
+ident(
+  def output_base_mem "common.ml" 119 3555 3555 "common.ml" 1 0 -1
+)
+"common.ml" 114 3376 3396 "common.ml" 114 3376 3398
+type(
+  out_channel
+)
+ident(
+  def oc "common.ml" 114 3376 3401 "common.ml" 117 3500 3553
+)
+"common.ml" 115 3410 3418 "common.ml" 115 3410 3419
+type(
+  int
+)
+ident(
+  def i "common.ml" 115 3410 3423 "common.ml" 115 3410 3445
+)
+"common.ml" 115 3410 3414 "common.ml" 115 3410 3419
+type(
+  Lexgen.tag_base
+)
+"common.ml" 115 3410 3423 "common.ml" 115 3410 3440
+type(
+  out_channel -> int -> unit
+)
+ident(
+  int_ref output_mem_access "common.ml" 88 2662 2666 "common.ml" 88 2662 2683
+)
+"common.ml" 115 3410 3441 "common.ml" 115 3410 3443
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 114 3376 3396 "common.ml" 114 3376 3398
+)
+"common.ml" 115 3410 3444 "common.ml" 115 3410 3445
+type(
+  int
+)
+ident(
+  int_ref i "common.ml" 115 3410 3418 "common.ml" 115 3410 3419
+)
+"common.ml" 115 3410 3423 "common.ml" 115 3410 3445
+call(
+  tail
+)
+type(
+  unit
+)
+"common.ml" 116 3446 3450 "common.ml" 116 3446 3455
+type(
+  Lexgen.tag_base
+)
+"common.ml" 116 3446 3459 "common.ml" 116 3446 3466
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"common.ml" 116 3446 3467 "common.ml" 116 3446 3469
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 114 3376 3396 "common.ml" 114 3376 3398
+)
+"common.ml" 116 3446 3470 "common.ml" 116 3446 3499
+type(
+  (unit, out_channel, unit) format
+)
+"common.ml" 116 3446 3459 "common.ml" 116 3446 3499
+call(
+  tail
+)
+type(
+  unit
+)
+"common.ml" 117 3500 3504 "common.ml" 117 3500 3507
+type(
+  Lexgen.tag_base
+)
+"common.ml" 117 3500 3513 "common.ml" 117 3500 3520
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"common.ml" 117 3500 3521 "common.ml" 117 3500 3523
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 114 3376 3396 "common.ml" 114 3376 3398
+)
+"common.ml" 117 3500 3525 "common.ml" 117 3500 3553
+type(
+  (unit, out_channel, unit) format
+)
+"common.ml" 117 3500 3513 "common.ml" 117 3500 3553
+call(
+  tail
+)
+type(
+  unit
+)
+"common.ml" 114 3376 3401 "common.ml" 117 3500 3553
+type(
+  Lexgen.tag_base -> unit
+)
+"common.ml" 119 3555 3559 "common.ml" 119 3555 3576
+type(
+  out_channel -> Lexgen.tag_addr -> unit
+)
+ident(
+  def output_tag_access "common.ml" 125 3702 3702 "common.ml" 1 0 -1
+)
+"common.ml" 119 3555 3577 "common.ml" 119 3555 3579
+type(
+  out_channel
+)
+ident(
+  def oc "common.ml" 119 3555 3582 "common.ml" 123 3652 3700
+)
+"common.ml" 120 3591 3600 "common.ml" 120 3591 3601
+type(
+  Lexgen.tag_base
+)
+ident(
+  def a "common.ml" 121 3608 3614 "common.ml" 121 3608 3634
+)
+"common.ml" 120 3591 3602 "common.ml" 120 3591 3603
+type(
+  int
+)
+"common.ml" 120 3591 3599 "common.ml" 120 3591 3604
+type(
+  Lexgen.tag_base * int
+)
+"common.ml" 120 3591 3595 "common.ml" 120 3591 3604
+type(
+  Lexgen.tag_addr
+)
+"common.ml" 121 3608 3614 "common.ml" 121 3608 3629
+type(
+  out_channel -> Lexgen.tag_base -> unit
+)
+ident(
+  int_ref output_base_mem "common.ml" 114 3376 3380 "common.ml" 114 3376 3395
+)
+"common.ml" 121 3608 3630 "common.ml" 121 3608 3632
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 119 3555 3577 "common.ml" 119 3555 3579
+)
+"common.ml" 121 3608 3633 "common.ml" 121 3608 3634
+type(
+  Lexgen.tag_base
+)
+ident(
+  int_ref a "common.ml" 120 3591 3600 "common.ml" 120 3591 3601
+)
+"common.ml" 121 3608 3614 "common.ml" 121 3608 3634
+call(
+  tail
+)
+type(
+  unit
+)
+"common.ml" 122 3635 3644 "common.ml" 122 3635 3645
+type(
+  Lexgen.tag_base
+)
+ident(
+  def a "common.ml" 123 3652 3658 "common.ml" 123 3652 3700
+)
+"common.ml" 122 3635 3646 "common.ml" 122 3635 3647
+type(
+  int
+)
+ident(
+  def i "common.ml" 123 3652 3658 "common.ml" 123 3652 3700
+)
+"common.ml" 122 3635 3643 "common.ml" 122 3635 3648
+type(
+  Lexgen.tag_base * int
+)
+"common.ml" 122 3635 3639 "common.ml" 122 3635 3648
+type(
+  Lexgen.tag_addr
+)
+"common.ml" 123 3652 3658 "common.ml" 123 3652 3665
+type(
+  out_channel ->
+  ((out_channel -> Lexgen.tag_base -> unit) -> Lexgen.tag_base -> int -> unit,
+   out_channel, unit)
+  format ->
+  (out_channel -> Lexgen.tag_base -> unit) -> Lexgen.tag_base -> int -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"common.ml" 123 3652 3666 "common.ml" 123 3652 3668
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 119 3555 3577 "common.ml" 119 3555 3579
+)
+"common.ml" 123 3652 3669 "common.ml" 123 3652 3680
+type(
+  ((out_channel -> Lexgen.tag_base -> unit) -> Lexgen.tag_base -> int -> unit,
+   out_channel, unit)
+  format
+)
+"common.ml" 123 3652 3681 "common.ml" 123 3652 3696
+type(
+  out_channel -> Lexgen.tag_base -> unit
+)
+ident(
+  int_ref output_base_mem "common.ml" 114 3376 3380 "common.ml" 114 3376 3395
+)
+"common.ml" 123 3652 3697 "common.ml" 123 3652 3698
+type(
+  Lexgen.tag_base
+)
+ident(
+  int_ref a "common.ml" 122 3635 3644 "common.ml" 122 3635 3645
+)
+"common.ml" 123 3652 3699 "common.ml" 123 3652 3700
+type(
+  int
+)
+ident(
+  int_ref i "common.ml" 122 3635 3646 "common.ml" 122 3635 3647
+)
+"common.ml" 123 3652 3658 "common.ml" 123 3652 3700
+call(
+  tail
+)
+type(
+  unit
+)
+"common.ml" 119 3555 3582 "common.ml" 123 3652 3700
+type(
+  Lexgen.tag_addr -> unit
+)
+"common.ml" 125 3702 3706 "common.ml" 125 3702 3716
+type(
+  in_channel ->
+  out_channel ->
+  line_tracker -> (('a * Syntax.location) * Lexgen.ident_info) list -> unit
+)
+ident(
+  def output_env "common.ml" 159 4732 4732 "common.ml" 1 0 -1
+)
+"common.ml" 125 3702 3717 "common.ml" 125 3702 3719
+type(
+  in_channel
+)
+ident(
+  def ic "common.ml" 125 3702 3720 "common.ml" 156 4674 4698
+)
+"common.ml" 125 3702 3720 "common.ml" 125 3702 3722
+type(
+  out_channel
+)
+ident(
+  def oc "common.ml" 125 3702 3723 "common.ml" 156 4674 4698
+)
+"common.ml" 125 3702 3723 "common.ml" 125 3702 3725
+type(
+  line_tracker
+)
+ident(
+  def tr "common.ml" 125 3702 3726 "common.ml" 156 4674 4698
+)
+"common.ml" 125 3702 3726 "common.ml" 125 3702 3729
+type(
+  (('a * Syntax.location) * Lexgen.ident_info) list
+)
+ident(
+  def env "common.ml" 126 3732 3734 "common.ml" 156 4674 4698
+)
+"common.ml" 126 3732 3738 "common.ml" 126 3732 3742
+type(
+  string ref
+)
+ident(
+  def pref "common.ml" 127 3758 3760 "common.ml" 156 4674 4698
+)
+"common.ml" 126 3732 3745 "common.ml" 126 3732 3748
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"common.ml" 126 3732 3749 "common.ml" 126 3732 3754
+type(
+  string
+)
+"common.ml" 126 3732 3745 "common.ml" 126 3732 3754
+type(
+  string ref
+)
+"common.ml" 127 3758 3766 "common.ml" 127 3758 3769
+type(
+  (('a * Syntax.location) * Lexgen.ident_info) list
+)
+ident(
+  int_ref env "common.ml" 125 3702 3726 "common.ml" 125 3702 3729
+)
+"common.ml" 128 3775 3779 "common.ml" 128 3775 3781
+type(
+  (('a * Syntax.location) * Lexgen.ident_info) list
+)
+"common.ml" 128 3775 3785 "common.ml" 128 3775 3787
+type(
+  unit
+)
+"common.ml" 129 3788 3792 "common.ml" 129 3788 3793
+type(
+  (('a * Syntax.location) * Lexgen.ident_info) list
+)
+"common.ml" 132 3885 3895 "common.ml" 132 3885 3898
+type(
+  (('a * Syntax.location) * Lexgen.ident_info) list
+)
+ident(
+  def env "common.ml" 138 4036 4042 "common.ml" 156 4674 4698
+)
+"common.ml" 133 3901 3909 "common.ml" 133 3901 3918
+type(
+  (('a * Syntax.location) * Lexgen.ident_info ->
+   ('a * Syntax.location) * Lexgen.ident_info -> int) ->
+  (('a * Syntax.location) * Lexgen.ident_info) list ->
+  (('a * Syntax.location) * Lexgen.ident_info) list
+)
+ident(
+  ext_ref List.sort
+)
+"common.ml" 134 3919 3936 "common.ml" 134 3919 3937
+type(
+  'a
+)
+"common.ml" 134 3919 3938 "common.ml" 134 3919 3940
+type(
+  Syntax.location
+)
+ident(
+  def p1 "common.ml" 134 3919 3945 "common.ml" 135 3959 4016
+)
+"common.ml" 134 3919 3935 "common.ml" 134 3919 3941
+type(
+  'a * Syntax.location
+)
+"common.ml" 134 3919 3942 "common.ml" 134 3919 3943
+type(
+  Lexgen.ident_info
+)
+"common.ml" 134 3919 3934 "common.ml" 134 3919 3944
+type(
+  ('a * Syntax.location) * Lexgen.ident_info
+)
+"common.ml" 134 3919 3947 "common.ml" 134 3919 3948
+type(
+  'a
+)
+"common.ml" 134 3919 3949 "common.ml" 134 3919 3951
+type(
+  Syntax.location
+)
+ident(
+  def p2 "common.ml" 135 3959 3971 "common.ml" 135 3959 4016
+)
+"common.ml" 134 3919 3946 "common.ml" 134 3919 3952
+type(
+  'a * Syntax.location
+)
+"common.ml" 134 3919 3953 "common.ml" 134 3919 3954
+type(
+  Lexgen.ident_info
+)
+"common.ml" 134 3919 3945 "common.ml" 134 3919 3955
+type(
+  ('a * Syntax.location) * Lexgen.ident_info
+)
+"common.ml" 135 3959 3971 "common.ml" 135 3959 3989
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"common.ml" 135 3959 3990 "common.ml" 135 3959 3992
+type(
+  Syntax.location
+)
+ident(
+  int_ref p1 "common.ml" 134 3919 3938 "common.ml" 134 3919 3940
+)
+"common.ml" 135 3959 3990 "common.ml" 135 3959 4002
+type(
+  int
+)
+"common.ml" 135 3959 4004 "common.ml" 135 3959 4006
+type(
+  Syntax.location
+)
+ident(
+  int_ref p2 "common.ml" 134 3919 3949 "common.ml" 134 3919 3951
+)
+"common.ml" 135 3959 4004 "common.ml" 135 3959 4016
+type(
+  int
+)
+"common.ml" 135 3959 3971 "common.ml" 135 3959 4016
+type(
+  int
+)
+"common.ml" 134 3919 3929 "common.ml" 135 3959 4017
+type(
+  ('a * Syntax.location) * Lexgen.ident_info ->
+  ('a * Syntax.location) * Lexgen.ident_info -> int
+)
+"common.ml" 136 4018 4028 "common.ml" 136 4018 4031
+type(
+  (('a * Syntax.location) * Lexgen.ident_info) list
+)
+ident(
+  int_ref env "common.ml" 125 3702 3726 "common.ml" 125 3702 3729
+)
+"common.ml" 133 3901 3909 "common.ml" 136 4018 4031
+call(
+  stack
+)
+type(
+  (('a * Syntax.location) * Lexgen.ident_info) list
+)
+"common.ml" 138 4036 4042 "common.ml" 138 4036 4051
+type(
+  (('a * Syntax.location) * Lexgen.ident_info -> unit) ->
+  (('a * Syntax.location) * Lexgen.ident_info) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"common.ml" 139 4052 4067 "common.ml" 139 4052 4068
+type(
+  'a
+)
+ident(
+  def x "common.ml" 140 4080 4090 "common.ml" 154 4633 4658
+)
+"common.ml" 139 4052 4069 "common.ml" 139 4052 4072
+type(
+  Syntax.location
+)
+ident(
+  def pos "common.ml" 140 4080 4090 "common.ml" 154 4633 4658
+)
+"common.ml" 139 4052 4066 "common.ml" 139 4052 4073
+type(
+  'a * Syntax.location
+)
+"common.ml" 139 4052 4074 "common.ml" 139 4052 4075
+type(
+  Lexgen.ident_info
+)
+ident(
+  def v "common.ml" 140 4080 4090 "common.ml" 154 4633 4658
+)
+"common.ml" 139 4052 4065 "common.ml" 139 4052 4076
+type(
+  ('a * Syntax.location) * Lexgen.ident_info
+)
+"common.ml" 140 4080 4090 "common.ml" 140 4080 4097
+type(
+  out_channel -> (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"common.ml" 140 4080 4098 "common.ml" 140 4080 4100
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 125 3702 3720 "common.ml" 125 3702 3722
+)
+"common.ml" 140 4080 4101 "common.ml" 140 4080 4107
+type(
+  (string -> unit, out_channel, unit) format
+)
+"common.ml" 140 4080 4108 "common.ml" 140 4080 4109
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"common.ml" 140 4080 4109 "common.ml" 140 4080 4113
+type(
+  string ref
+)
+ident(
+  int_ref pref "common.ml" 126 3732 3738 "common.ml" 126 3732 3742
+)
+"common.ml" 140 4080 4108 "common.ml" 140 4080 4113
+type(
+  string
+)
+"common.ml" 140 4080 4090 "common.ml" 140 4080 4113
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 141 4116 4126 "common.ml" 141 4116 4136
+type(
+  in_channel ->
+  out_channel -> line_tracker -> Syntax.location -> bool -> unit
+)
+ident(
+  int_ref copy_chunk "common.ml" 71 2109 2113 "common.ml" 71 2109 2123
+)
+"common.ml" 141 4116 4137 "common.ml" 141 4116 4139
+type(
+  in_channel
+)
+ident(
+  int_ref ic "common.ml" 125 3702 3717 "common.ml" 125 3702 3719
+)
+"common.ml" 141 4116 4140 "common.ml" 141 4116 4142
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 125 3702 3720 "common.ml" 125 3702 3722
+)
+"common.ml" 141 4116 4143 "common.ml" 141 4116 4145
+type(
+  line_tracker
+)
+ident(
+  int_ref tr "common.ml" 125 3702 3723 "common.ml" 125 3702 3725
+)
+"common.ml" 141 4116 4146 "common.ml" 141 4116 4149
+type(
+  Syntax.location
+)
+ident(
+  int_ref pos "common.ml" 139 4052 4069 "common.ml" 139 4052 4072
+)
+"common.ml" 141 4116 4150 "common.ml" 141 4116 4155
+type(
+  bool
+)
+"common.ml" 141 4116 4126 "common.ml" 141 4116 4155
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 142 4158 4180 "common.ml" 142 4158 4181
+type(
+  Lexgen.ident_info
+)
+ident(
+  int_ref v "common.ml" 139 4052 4074 "common.ml" 139 4052 4075
+)
+"common.ml" 143 4187 4213 "common.ml" 143 4187 4214
+type(
+  bool
+)
+ident(
+  def o "common.ml" 144 4231 4245 "common.ml" 147 4352 4415
+)
+"common.ml" 143 4187 4215 "common.ml" 143 4187 4221
+type(
+  Lexgen.tag_addr
+)
+ident(
+  def nstart "common.ml" 144 4231 4245 "common.ml" 147 4352 4415
+)
+"common.ml" 143 4187 4222 "common.ml" 143 4187 4226
+type(
+  Lexgen.tag_addr
+)
+ident(
+  def nend "common.ml" 144 4231 4245 "common.ml" 147 4352 4415
+)
+"common.ml" 143 4187 4199 "common.ml" 143 4187 4227
+type(
+  Lexgen.ident_info
+)
+"common.ml" 144 4231 4245 "common.ml" 144 4231 4252
+type(
+  out_channel ->
+  (string ->
+   (out_channel -> Lexgen.tag_addr -> unit) ->
+   Lexgen.tag_addr ->
+   (out_channel -> Lexgen.tag_addr -> unit) -> Lexgen.tag_addr -> unit,
+   out_channel, unit)
+  format ->
+  string ->
+  (out_channel -> Lexgen.tag_addr -> unit) ->
+  Lexgen.tag_addr ->
+  (out_channel -> Lexgen.tag_addr -> unit) -> Lexgen.tag_addr -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"common.ml" 144 4231 4253 "common.ml" 144 4231 4255
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 125 3702 3720 "common.ml" 125 3702 3722
+)
+"common.ml" 145 4256 4272 "common.ml" 145 4256 4308
+type(
+  (string ->
+   (out_channel -> Lexgen.tag_addr -> unit) ->
+   Lexgen.tag_addr ->
+   (out_channel -> Lexgen.tag_addr -> unit) -> Lexgen.tag_addr -> unit,
+   out_channel, unit)
+  format
+)
+"common.ml" 146 4309 4329 "common.ml" 146 4309 4330
+type(
+  bool
+)
+ident(
+  int_ref o "common.ml" 143 4187 4213 "common.ml" 143 4187 4214
+)
+"common.ml" 146 4309 4336 "common.ml" 146 4309 4342
+type(
+  string
+)
+"common.ml" 146 4309 4348 "common.ml" 146 4309 4350
+type(
+  string
+)
+"common.ml" 146 4309 4325 "common.ml" 146 4309 4351
+type(
+  string
+)
+"common.ml" 147 4352 4368 "common.ml" 147 4352 4385
+type(
+  out_channel -> Lexgen.tag_addr -> unit
+)
+ident(
+  int_ref output_tag_access "common.ml" 119 3555 3559 "common.ml" 119 3555 3576
+)
+"common.ml" 147 4352 4386 "common.ml" 147 4352 4392
+type(
+  Lexgen.tag_addr
+)
+ident(
+  int_ref nstart "common.ml" 143 4187 4215 "common.ml" 143 4187 4221
+)
+"common.ml" 147 4352 4393 "common.ml" 147 4352 4410
+type(
+  out_channel -> Lexgen.tag_addr -> unit
+)
+ident(
+  int_ref output_tag_access "common.ml" 119 3555 3559 "common.ml" 119 3555 3576
+)
+"common.ml" 147 4352 4411 "common.ml" 147 4352 4415
+type(
+  Lexgen.tag_addr
+)
+ident(
+  int_ref nend "common.ml" 143 4187 4222 "common.ml" 143 4187 4226
+)
+"common.ml" 144 4231 4245 "common.ml" 147 4352 4415
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 148 4416 4440 "common.ml" 148 4416 4441
+type(
+  bool
+)
+ident(
+  def o "common.ml" 149 4453 4467 "common.ml" 152 4576 4616
+)
+"common.ml" 148 4416 4442 "common.ml" 148 4416 4448
+type(
+  Lexgen.tag_addr
+)
+ident(
+  def nstart "common.ml" 149 4453 4467 "common.ml" 152 4576 4616
+)
+"common.ml" 148 4416 4428 "common.ml" 148 4416 4449
+type(
+  Lexgen.ident_info
+)
+"common.ml" 149 4453 4467 "common.ml" 149 4453 4474
+type(
+  out_channel ->
+  (string ->
+   (out_channel -> Lexgen.tag_addr -> unit) -> Lexgen.tag_addr -> unit,
+   out_channel, unit)
+  format ->
+  string ->
+  (out_channel -> Lexgen.tag_addr -> unit) -> Lexgen.tag_addr -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"common.ml" 149 4453 4475 "common.ml" 149 4453 4477
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 125 3702 3720 "common.ml" 125 3702 3722
+)
+"common.ml" 150 4478 4494 "common.ml" 150 4478 4532
+type(
+  (string ->
+   (out_channel -> Lexgen.tag_addr -> unit) -> Lexgen.tag_addr -> unit,
+   out_channel, unit)
+  format
+)
+"common.ml" 151 4533 4553 "common.ml" 151 4533 4554
+type(
+  bool
+)
+ident(
+  int_ref o "common.ml" 148 4416 4440 "common.ml" 148 4416 4441
+)
+"common.ml" 151 4533 4560 "common.ml" 151 4533 4566
+type(
+  string
+)
+"common.ml" 151 4533 4572 "common.ml" 151 4533 4574
+type(
+  string
+)
+"common.ml" 151 4533 4549 "common.ml" 151 4533 4575
+type(
+  string
+)
+"common.ml" 152 4576 4592 "common.ml" 152 4576 4609
+type(
+  out_channel -> Lexgen.tag_addr -> unit
+)
+ident(
+  int_ref output_tag_access "common.ml" 119 3555 3559 "common.ml" 119 3555 3576
+)
+"common.ml" 152 4576 4610 "common.ml" 152 4576 4616
+type(
+  Lexgen.tag_addr
+)
+ident(
+  int_ref nstart "common.ml" 148 4416 4442 "common.ml" 148 4416 4448
+)
+"common.ml" 149 4453 4467 "common.ml" 152 4576 4616
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 142 4158 4168 "common.ml" 153 4617 4630
+type(
+  unit
+)
+"common.ml" 154 4633 4643 "common.ml" 154 4633 4647
+type(
+  string ref
+)
+ident(
+  int_ref pref "common.ml" 126 3732 3738 "common.ml" 126 3732 3742
+)
+"common.ml" 154 4633 4648 "common.ml" 154 4633 4650
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"common.ml" 154 4633 4651 "common.ml" 154 4633 4658
+type(
+  string
+)
+"common.ml" 154 4633 4643 "common.ml" 154 4633 4658
+type(
+  unit
+)
+"common.ml" 142 4158 4168 "common.ml" 154 4633 4658
+type(
+  unit
+)
+"common.ml" 141 4116 4126 "common.ml" 154 4633 4658
+type(
+  unit
+)
+"common.ml" 140 4080 4090 "common.ml" 154 4633 4658
+type(
+  unit
+)
+"common.ml" 139 4052 4060 "common.ml" 154 4633 4659
+type(
+  ('a * Syntax.location) * Lexgen.ident_info -> unit
+)
+"common.ml" 155 4660 4668 "common.ml" 155 4660 4671
+type(
+  (('a * Syntax.location) * Lexgen.ident_info) list
+)
+ident(
+  int_ref env "common.ml" 132 3885 3895 "common.ml" 132 3885 3898
+)
+"common.ml" 138 4036 4042 "common.ml" 155 4660 4671
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 156 4674 4680 "common.ml" 156 4674 4687
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"common.ml" 156 4674 4688 "common.ml" 156 4674 4690
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 125 3702 3720 "common.ml" 125 3702 3722
+)
+"common.ml" 156 4674 4691 "common.ml" 156 4674 4698
+type(
+  (unit, out_channel, unit) format
+)
+"common.ml" 156 4674 4680 "common.ml" 156 4674 4698
+call(
+  tail
+)
+type(
+  unit
+)
+"common.ml" 138 4036 4042 "common.ml" 156 4674 4698
+type(
+  unit
+)
+"common.ml" 132 3885 3891 "common.ml" 156 4674 4698
+type(
+  unit
+)
+"common.ml" 127 3758 3760 "common.ml" 156 4674 4698
+type(
+  unit
+)
+"common.ml" 126 3732 3734 "common.ml" 156 4674 4698
+type(
+  unit
+)
+"common.ml" 159 4732 4736 "common.ml" 159 4732 4747
+type(
+  out_channel -> string list -> unit
+)
+ident(
+  def output_args "common.ml" 162 4828 4828 "common.ml" 1 0 -1
+)
+"common.ml" 159 4732 4748 "common.ml" 159 4732 4750
+type(
+  out_channel
+)
+ident(
+  def oc "common.ml" 159 4732 4751 "common.ml" 160 4758 4826
+)
+"common.ml" 159 4732 4751 "common.ml" 159 4732 4755
+type(
+  string list
+)
+ident(
+  def args "common.ml" 160 4758 4760 "common.ml" 160 4758 4826
+)
+"common.ml" 160 4758 4760 "common.ml" 160 4758 4769
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"common.ml" 160 4758 4775 "common.ml" 160 4758 4776
+type(
+  string
+)
+ident(
+  def x "common.ml" 160 4758 4780 "common.ml" 160 4758 4820
+)
+"common.ml" 160 4758 4781 "common.ml" 160 4758 4794
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"common.ml" 160 4758 4795 "common.ml" 160 4758 4797
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 159 4732 4748 "common.ml" 159 4732 4750
+)
+"common.ml" 160 4758 4798 "common.ml" 160 4758 4799
+type(
+  string
+)
+ident(
+  int_ref x "common.ml" 160 4758 4775 "common.ml" 160 4758 4776
+)
+"common.ml" 160 4758 4781 "common.ml" 160 4758 4799
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 160 4758 4801 "common.ml" 160 4758 4812
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"common.ml" 160 4758 4813 "common.ml" 160 4758 4815
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 159 4732 4748 "common.ml" 159 4732 4750
+)
+"common.ml" 160 4758 4816 "common.ml" 160 4758 4819
+type(
+  char
+)
+"common.ml" 160 4758 4801 "common.ml" 160 4758 4819
+call(
+  tail
+)
+type(
+  unit
+)
+"common.ml" 160 4758 4780 "common.ml" 160 4758 4820
+type(
+  unit
+)
+"common.ml" 160 4758 4770 "common.ml" 160 4758 4821
+type(
+  string -> unit
+)
+"common.ml" 160 4758 4822 "common.ml" 160 4758 4826
+type(
+  string list
+)
+ident(
+  int_ref args "common.ml" 159 4732 4751 "common.ml" 159 4732 4755
+)
+"common.ml" 160 4758 4760 "common.ml" 160 4758 4826
+call(
+  tail
+)
+type(
+  unit
+)
+"common.ml" 162 4828 4832 "common.ml" 162 4828 4853
+type(
+  in_channel -> out_channel -> line_tracker -> Syntax.location option -> bool
+)
+ident(
+  def output_refill_handler "common.ml" 171 5105 5105 "common.ml" 1 0 -1
+)
+"common.ml" 162 4828 4854 "common.ml" 162 4828 4856
+type(
+  in_channel
+)
+ident(
+  def ic "common.ml" 162 4828 4857 "common.ml" 168 5078 5086
+)
+"common.ml" 162 4828 4857 "common.ml" 162 4828 4859
+type(
+  out_channel
+)
+ident(
+  def oc "common.ml" 162 4828 4860 "common.ml" 168 5078 5086
+)
+"common.ml" 162 4828 4860 "common.ml" 162 4828 4863
+type(
+  line_tracker
+)
+ident(
+  def oci "common.ml" 162 4828 4866 "common.ml" 168 5078 5086
+)
+"common.ml" 163 4875 4879 "common.ml" 163 4875 4883
+type(
+  Syntax.location option
+)
+"common.ml" 163 4875 4887 "common.ml" 163 4875 4892
+type(
+  bool
+)
+"common.ml" 164 4893 4902 "common.ml" 164 4893 4910
+type(
+  Syntax.location
+)
+ident(
+  def location "common.ml" 165 4914 4918 "common.ml" 168 5078 5086
+)
+"common.ml" 164 4893 4897 "common.ml" 164 4893 4910
+type(
+  Syntax.location option
+)
+"common.ml" 165 4914 4918 "common.ml" 165 4914 4931
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"common.ml" 165 4914 4932 "common.ml" 165 4914 4934
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 162 4828 4857 "common.ml" 162 4828 4859
+)
+"common.ml" 165 4914 4935 "common.ml" 166 4963 5036
+type(
+  string
+)
+"common.ml" 165 4914 4918 "common.ml" 166 4963 5036
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 167 5038 5042 "common.ml" 167 5038 5052
+type(
+  in_channel ->
+  out_channel -> line_tracker -> Syntax.location -> bool -> unit
+)
+ident(
+  int_ref copy_chunk "common.ml" 71 2109 2113 "common.ml" 71 2109 2123
+)
+"common.ml" 167 5038 5053 "common.ml" 167 5038 5055
+type(
+  in_channel
+)
+ident(
+  int_ref ic "common.ml" 162 4828 4854 "common.ml" 162 4828 4856
+)
+"common.ml" 167 5038 5056 "common.ml" 167 5038 5058
+type(
+  out_channel
+)
+ident(
+  int_ref oc "common.ml" 162 4828 4857 "common.ml" 162 4828 4859
+)
+"common.ml" 167 5038 5059 "common.ml" 167 5038 5062
+type(
+  line_tracker
+)
+ident(
+  int_ref oci "common.ml" 162 4828 4860 "common.ml" 162 4828 4863
+)
+"common.ml" 167 5038 5063 "common.ml" 167 5038 5071
+type(
+  Syntax.location
+)
+ident(
+  int_ref location "common.ml" 164 4893 4902 "common.ml" 164 4893 4910
+)
+"common.ml" 167 5038 5072 "common.ml" 167 5038 5076
+type(
+  bool
+)
+"common.ml" 167 5038 5042 "common.ml" 167 5038 5076
+call(
+  stack
+)
+type(
+  unit
+)
+"common.ml" 168 5078 5082 "common.ml" 168 5078 5086
+type(
+  bool
+)
+"common.ml" 167 5038 5042 "common.ml" 168 5078 5086
+type(
+  bool
+)
+"common.ml" 165 4914 4918 "common.ml" 168 5078 5086
+type(
+  bool
+)
+"common.ml" 162 4828 4866 "common.ml" 168 5078 5086
+type(
+  Syntax.location option -> bool
+)
+"common.ml" 171 5105 5109 "common.ml" 171 5105 5119
+type(
+  bool ref
+)
+ident(
+  def quiet_mode "common.ml" 171 5105 5131 "common.ml" 1 0 -1
+)
+"common.ml" 171 5105 5122 "common.ml" 171 5105 5125
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"common.ml" 171 5105 5126 "common.ml" 171 5105 5131
+type(
+  bool
+)
+"common.ml" 171 5105 5122 "common.ml" 171 5105 5131
+type(
+  bool ref
+)

@@ -1,0 +1,363 @@
+"condition.ml" 16 934 938 "condition.ml" 16 934 944
+type(
+  unit -> t
+)
+ident(
+  def create "condition.ml" 18 968 968 "condition.ml" 1 0 -1
+)
+"condition.ml" 16 934 945 "condition.ml" 16 934 947
+type(
+  unit
+)
+"condition.ml" 16 934 962 "condition.ml" 16 934 964
+type(
+  Thread.t list
+)
+"condition.ml" 16 934 950 "condition.ml" 16 934 966
+type(
+  t
+)
+"condition.ml" 18 968 972 "condition.ml" 18 968 976
+type(
+  t -> Mutex.t -> unit
+)
+ident(
+  def wait "condition.ml" 25 1128 1128 "condition.ml" 1 0 -1
+)
+"condition.ml" 18 968 977 "condition.ml" 18 968 981
+type(
+  t
+)
+ident(
+  def cond "condition.ml" 18 968 982 "condition.ml" 23 1110 1126
+)
+"condition.ml" 18 968 982 "condition.ml" 18 968 985
+type(
+  Mutex.t
+)
+ident(
+  def mut "condition.ml" 19 988 990 "condition.ml" 23 1110 1126
+)
+"condition.ml" 19 988 990 "condition.ml" 19 988 1013
+type(
+  bool ref
+)
+ident(
+  ext_ref Thread.critical_section
+)
+"condition.ml" 19 988 1014 "condition.ml" 19 988 1016
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"condition.ml" 19 988 1017 "condition.ml" 19 988 1021
+type(
+  bool
+)
+"condition.ml" 19 988 990 "condition.ml" 19 988 1021
+type(
+  unit
+)
+"condition.ml" 20 1023 1025 "condition.ml" 20 1023 1037
+type(
+  Mutex.t -> unit
+)
+ident(
+  ext_ref Mutex.unlock
+)
+"condition.ml" 20 1023 1038 "condition.ml" 20 1023 1041
+type(
+  Mutex.t
+)
+ident(
+  int_ref mut "condition.ml" 18 968 982 "condition.ml" 18 968 985
+)
+"condition.ml" 20 1023 1025 "condition.ml" 20 1023 1041
+call(
+  stack
+)
+type(
+  unit
+)
+"condition.ml" 21 1043 1045 "condition.ml" 21 1043 1049
+type(
+  t
+)
+ident(
+  int_ref cond "condition.ml" 18 968 977 "condition.ml" 18 968 981
+)
+"condition.ml" 21 1043 1061 "condition.ml" 21 1043 1072
+type(
+  unit -> Thread.t
+)
+ident(
+  ext_ref Thread.self
+)
+"condition.ml" 21 1043 1072 "condition.ml" 21 1043 1074
+type(
+  unit
+)
+"condition.ml" 21 1043 1061 "condition.ml" 21 1043 1074
+call(
+  stack
+)
+type(
+  Thread.t
+)
+"condition.ml" 21 1043 1078 "condition.ml" 21 1043 1082
+type(
+  t
+)
+ident(
+  int_ref cond "condition.ml" 18 968 977 "condition.ml" 18 968 981
+)
+"condition.ml" 21 1043 1078 "condition.ml" 21 1043 1090
+type(
+  Thread.t list
+)
+"condition.ml" 21 1043 1061 "condition.ml" 21 1043 1090
+type(
+  Thread.t list
+)
+"condition.ml" 21 1043 1045 "condition.ml" 21 1043 1090
+type(
+  unit
+)
+"condition.ml" 22 1092 1094 "condition.ml" 22 1092 1106
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Thread.sleep
+)
+"condition.ml" 22 1092 1106 "condition.ml" 22 1092 1108
+type(
+  unit
+)
+"condition.ml" 22 1092 1094 "condition.ml" 22 1092 1108
+call(
+  stack
+)
+type(
+  unit
+)
+"condition.ml" 23 1110 1112 "condition.ml" 23 1110 1122
+type(
+  Mutex.t -> unit
+)
+ident(
+  ext_ref Mutex.lock
+)
+"condition.ml" 23 1110 1123 "condition.ml" 23 1110 1126
+type(
+  Mutex.t
+)
+ident(
+  int_ref mut "condition.ml" 18 968 982 "condition.ml" 18 968 985
+)
+"condition.ml" 23 1110 1112 "condition.ml" 23 1110 1126
+call(
+  tail
+)
+type(
+  unit
+)
+"condition.ml" 22 1092 1094 "condition.ml" 23 1110 1126
+type(
+  unit
+)
+"condition.ml" 21 1043 1045 "condition.ml" 23 1110 1126
+type(
+  unit
+)
+"condition.ml" 20 1023 1025 "condition.ml" 23 1110 1126
+type(
+  unit
+)
+"condition.ml" 19 988 990 "condition.ml" 23 1110 1126
+type(
+  unit
+)
+"condition.ml" 25 1128 1132 "condition.ml" 25 1128 1138
+type(
+  t -> unit
+)
+ident(
+  def signal "condition.ml" 30 1281 1281 "condition.ml" 1 0 -1
+)
+"condition.ml" 25 1128 1139 "condition.ml" 25 1128 1143
+type(
+  t
+)
+ident(
+  def cond "condition.ml" 26 1146 1148 "condition.ml" 28 1212 1279
+)
+"condition.ml" 26 1146 1154 "condition.ml" 26 1146 1158
+type(
+  t
+)
+ident(
+  int_ref cond "condition.ml" 25 1128 1139 "condition.ml" 25 1128 1143
+)
+"condition.ml" 26 1146 1154 "condition.ml" 26 1146 1166
+type(
+  Thread.t list
+)
+"condition.ml" 27 1199 1203 "condition.ml" 27 1199 1205
+type(
+  Thread.t list
+)
+"condition.ml" 27 1199 1209 "condition.ml" 27 1199 1211
+type(
+  unit
+)
+"condition.ml" 28 1212 1216 "condition.ml" 28 1212 1218
+type(
+  Thread.t
+)
+ident(
+  def th "condition.ml" 28 1212 1229 "condition.ml" 28 1212 1279
+)
+"condition.ml" 28 1212 1222 "condition.ml" 28 1212 1225
+type(
+  Thread.t list
+)
+ident(
+  def rem "condition.ml" 28 1212 1229 "condition.ml" 28 1212 1279
+)
+"condition.ml" 28 1212 1216 "condition.ml" 28 1212 1225
+type(
+  Thread.t list
+)
+"condition.ml" 28 1212 1229 "condition.ml" 28 1212 1233
+type(
+  t
+)
+ident(
+  int_ref cond "condition.ml" 25 1128 1139 "condition.ml" 25 1128 1143
+)
+"condition.ml" 28 1212 1245 "condition.ml" 28 1212 1248
+type(
+  Thread.t list
+)
+ident(
+  int_ref rem "condition.ml" 28 1212 1222 "condition.ml" 28 1212 1225
+)
+"condition.ml" 28 1212 1229 "condition.ml" 28 1212 1248
+type(
+  unit
+)
+"condition.ml" 28 1212 1263 "condition.ml" 28 1212 1276
+type(
+  Thread.t -> unit
+)
+ident(
+  ext_ref Thread.wakeup
+)
+"condition.ml" 28 1212 1277 "condition.ml" 28 1212 1279
+type(
+  Thread.t
+)
+ident(
+  int_ref th "condition.ml" 28 1212 1216 "condition.ml" 28 1212 1218
+)
+"condition.ml" 28 1212 1263 "condition.ml" 28 1212 1279
+call(
+  tail
+)
+type(
+  unit
+)
+"condition.ml" 28 1212 1229 "condition.ml" 28 1212 1279
+type(
+  unit
+)
+"condition.ml" 26 1146 1148 "condition.ml" 28 1212 1279
+type(
+  unit
+)
+"condition.ml" 30 1281 1285 "condition.ml" 30 1281 1294
+type(
+  t -> unit
+)
+ident(
+  def broadcast "condition.ml" 33 1414 1441 "condition.ml" 1 0 -1
+)
+"condition.ml" 30 1281 1295 "condition.ml" 30 1281 1299
+type(
+  t
+)
+ident(
+  def cond "condition.ml" 31 1302 1304 "condition.ml" 33 1414 1441
+)
+"condition.ml" 31 1302 1308 "condition.ml" 31 1302 1309
+type(
+  Thread.t list
+)
+ident(
+  def w "condition.ml" 32 1358 1360 "condition.ml" 33 1414 1441
+)
+"condition.ml" 31 1302 1312 "condition.ml" 31 1302 1316
+type(
+  t
+)
+ident(
+  int_ref cond "condition.ml" 30 1281 1295 "condition.ml" 30 1281 1299
+)
+"condition.ml" 31 1302 1312 "condition.ml" 31 1302 1324
+type(
+  Thread.t list
+)
+"condition.ml" 32 1358 1360 "condition.ml" 32 1358 1364
+type(
+  t
+)
+ident(
+  int_ref cond "condition.ml" 30 1281 1295 "condition.ml" 30 1281 1299
+)
+"condition.ml" 32 1358 1376 "condition.ml" 32 1358 1378
+type(
+  Thread.t list
+)
+"condition.ml" 32 1358 1360 "condition.ml" 32 1358 1378
+type(
+  unit
+)
+"condition.ml" 33 1414 1416 "condition.ml" 33 1414 1425
+type(
+  (Thread.t -> unit) -> Thread.t list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"condition.ml" 33 1414 1426 "condition.ml" 33 1414 1439
+type(
+  Thread.t -> unit
+)
+ident(
+  ext_ref Thread.wakeup
+)
+"condition.ml" 33 1414 1440 "condition.ml" 33 1414 1441
+type(
+  Thread.t list
+)
+ident(
+  int_ref w "condition.ml" 31 1302 1308 "condition.ml" 31 1302 1309
+)
+"condition.ml" 33 1414 1416 "condition.ml" 33 1414 1441
+call(
+  tail
+)
+type(
+  unit
+)
+"condition.ml" 32 1358 1360 "condition.ml" 33 1414 1441
+type(
+  unit
+)
+"condition.ml" 31 1302 1304 "condition.ml" 33 1414 1441
+type(
+  unit
+)

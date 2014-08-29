@@ -1,0 +1,342 @@
+"mutex.ml" 16 956 960 "mutex.ml" 16 956 966
+type(
+  unit -> t
+)
+ident(
+  def create "mutex.ml" 18 1006 1006 "mutex.ml" 1 0 -1
+)
+"mutex.ml" 16 956 967 "mutex.ml" 16 956 969
+type(
+  unit
+)
+"mutex.ml" 16 956 983 "mutex.ml" 16 956 988
+type(
+  bool
+)
+"mutex.ml" 16 956 1000 "mutex.ml" 16 956 1002
+type(
+  Thread.t list
+)
+"mutex.ml" 16 956 972 "mutex.ml" 16 956 1004
+type(
+  t
+)
+"mutex.ml" 18 1006 1014 "mutex.ml" 18 1006 1018
+type(
+  t -> unit
+)
+ident(
+  def lock "mutex.ml" 18 1006 1006 "mutex.ml" 1 0 -1
+)
+"mutex.ml" 18 1006 1019 "mutex.ml" 18 1006 1020
+type(
+  t
+)
+ident(
+  def m "mutex.ml" 19 1023 1025 "mutex.ml" 26 1285 1290
+)
+"mutex.ml" 19 1023 1028 "mutex.ml" 19 1023 1029
+type(
+  t
+)
+ident(
+  int_ref m "mutex.ml" 18 1006 1019 "mutex.ml" 18 1006 1020
+)
+"mutex.ml" 19 1023 1028 "mutex.ml" 19 1023 1036
+type(
+  bool
+)
+"mutex.ml" 20 1089 1093 "mutex.ml" 20 1089 1116
+type(
+  bool ref
+)
+ident(
+  ext_ref Thread.critical_section
+)
+"mutex.ml" 20 1089 1117 "mutex.ml" 20 1089 1119
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"mutex.ml" 20 1089 1120 "mutex.ml" 20 1089 1124
+type(
+  bool
+)
+"mutex.ml" 20 1089 1093 "mutex.ml" 20 1089 1124
+type(
+  unit
+)
+"mutex.ml" 21 1126 1130 "mutex.ml" 21 1126 1131
+type(
+  t
+)
+ident(
+  int_ref m "mutex.ml" 18 1006 1019 "mutex.ml" 18 1006 1020
+)
+"mutex.ml" 21 1126 1143 "mutex.ml" 21 1126 1154
+type(
+  unit -> Thread.t
+)
+ident(
+  ext_ref Thread.self
+)
+"mutex.ml" 21 1126 1154 "mutex.ml" 21 1126 1156
+type(
+  unit
+)
+"mutex.ml" 21 1126 1143 "mutex.ml" 21 1126 1156
+call(
+  stack
+)
+type(
+  Thread.t
+)
+"mutex.ml" 21 1126 1160 "mutex.ml" 21 1126 1161
+type(
+  t
+)
+ident(
+  int_ref m "mutex.ml" 18 1006 1019 "mutex.ml" 18 1006 1020
+)
+"mutex.ml" 21 1126 1160 "mutex.ml" 21 1126 1169
+type(
+  Thread.t list
+)
+"mutex.ml" 21 1126 1143 "mutex.ml" 21 1126 1169
+type(
+  Thread.t list
+)
+"mutex.ml" 21 1126 1130 "mutex.ml" 21 1126 1169
+type(
+  unit
+)
+"mutex.ml" 22 1171 1175 "mutex.ml" 22 1171 1187
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Thread.sleep
+)
+"mutex.ml" 22 1171 1187 "mutex.ml" 22 1171 1189
+type(
+  unit
+)
+"mutex.ml" 22 1171 1175 "mutex.ml" 22 1171 1189
+call(
+  stack
+)
+type(
+  unit
+)
+"mutex.ml" 23 1191 1195 "mutex.ml" 23 1191 1199
+type(
+  t -> unit
+)
+ident(
+  int_ref lock "mutex.ml" 18 1006 1014 "mutex.ml" 18 1006 1018
+)
+"mutex.ml" 23 1191 1200 "mutex.ml" 23 1191 1201
+type(
+  t
+)
+ident(
+  int_ref m "mutex.ml" 18 1006 1019 "mutex.ml" 18 1006 1020
+)
+"mutex.ml" 23 1191 1195 "mutex.ml" 23 1191 1201
+call(
+  tail
+)
+type(
+  unit
+)
+"mutex.ml" 22 1171 1175 "mutex.ml" 23 1191 1201
+type(
+  unit
+)
+"mutex.ml" 21 1126 1130 "mutex.ml" 23 1191 1201
+type(
+  unit
+)
+"mutex.ml" 19 1023 1042 "mutex.ml" 24 1202 1207
+type(
+  unit
+)
+"mutex.ml" 25 1219 1223 "mutex.ml" 25 1219 1224
+type(
+  t
+)
+ident(
+  int_ref m "mutex.ml" 18 1006 1019 "mutex.ml" 18 1006 1020
+)
+"mutex.ml" 25 1219 1235 "mutex.ml" 25 1219 1239
+type(
+  bool
+)
+"mutex.ml" 24 1202 1213 "mutex.ml" 26 1285 1290
+type(
+  unit
+)
+"mutex.ml" 19 1023 1025 "mutex.ml" 26 1285 1290
+type(
+  unit
+)
+"mutex.ml" 28 1292 1296 "mutex.ml" 28 1292 1304
+type(
+  t -> bool
+)
+ident(
+  def try_lock "mutex.ml" 31 1422 1422 "mutex.ml" 1 0 -1
+)
+"mutex.ml" 28 1292 1305 "mutex.ml" 28 1292 1306
+type(
+  t
+)
+ident(
+  def m "mutex.ml" 29 1358 1360 "mutex.ml" 29 1358 1420
+)
+"mutex.ml" 29 1358 1363 "mutex.ml" 29 1358 1364
+type(
+  t
+)
+ident(
+  int_ref m "mutex.ml" 28 1292 1305 "mutex.ml" 28 1292 1306
+)
+"mutex.ml" 29 1358 1363 "mutex.ml" 29 1358 1371
+type(
+  bool
+)
+"mutex.ml" 29 1358 1377 "mutex.ml" 29 1358 1382
+type(
+  bool
+)
+"mutex.ml" 29 1358 1394 "mutex.ml" 29 1358 1395
+type(
+  t
+)
+ident(
+  int_ref m "mutex.ml" 28 1292 1305 "mutex.ml" 28 1292 1306
+)
+"mutex.ml" 29 1358 1406 "mutex.ml" 29 1358 1410
+type(
+  bool
+)
+"mutex.ml" 29 1358 1394 "mutex.ml" 29 1358 1410
+type(
+  unit
+)
+"mutex.ml" 29 1358 1412 "mutex.ml" 29 1358 1416
+type(
+  bool
+)
+"mutex.ml" 29 1358 1388 "mutex.ml" 29 1358 1420
+type(
+  bool
+)
+"mutex.ml" 29 1358 1360 "mutex.ml" 29 1358 1420
+type(
+  bool
+)
+"mutex.ml" 31 1422 1426 "mutex.ml" 31 1422 1432
+type(
+  t -> unit
+)
+ident(
+  def unlock "mutex.ml" 36 1675 1702 "mutex.ml" 1 0 -1
+)
+"mutex.ml" 31 1422 1433 "mutex.ml" 31 1422 1434
+type(
+  t
+)
+ident(
+  def m "mutex.ml" 33 1516 1518 "mutex.ml" 36 1675 1702
+)
+"mutex.ml" 33 1516 1522 "mutex.ml" 33 1516 1523
+type(
+  Thread.t list
+)
+ident(
+  def w "mutex.ml" 34 1569 1571 "mutex.ml" 36 1675 1702
+)
+"mutex.ml" 33 1516 1526 "mutex.ml" 33 1516 1527
+type(
+  t
+)
+ident(
+  int_ref m "mutex.ml" 31 1422 1433 "mutex.ml" 31 1422 1434
+)
+"mutex.ml" 33 1516 1526 "mutex.ml" 33 1516 1535
+type(
+  Thread.t list
+)
+"mutex.ml" 34 1569 1571 "mutex.ml" 34 1569 1572
+type(
+  t
+)
+ident(
+  int_ref m "mutex.ml" 31 1422 1433 "mutex.ml" 31 1422 1434
+)
+"mutex.ml" 34 1569 1584 "mutex.ml" 34 1569 1586
+type(
+  Thread.t list
+)
+"mutex.ml" 34 1569 1571 "mutex.ml" 34 1569 1586
+type(
+  unit
+)
+"mutex.ml" 35 1622 1624 "mutex.ml" 35 1622 1625
+type(
+  t
+)
+ident(
+  int_ref m "mutex.ml" 31 1422 1433 "mutex.ml" 31 1422 1434
+)
+"mutex.ml" 35 1622 1636 "mutex.ml" 35 1622 1641
+type(
+  bool
+)
+"mutex.ml" 35 1622 1624 "mutex.ml" 35 1622 1641
+type(
+  unit
+)
+"mutex.ml" 36 1675 1677 "mutex.ml" 36 1675 1686
+type(
+  (Thread.t -> unit) -> Thread.t list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"mutex.ml" 36 1675 1687 "mutex.ml" 36 1675 1700
+type(
+  Thread.t -> unit
+)
+ident(
+  ext_ref Thread.wakeup
+)
+"mutex.ml" 36 1675 1701 "mutex.ml" 36 1675 1702
+type(
+  Thread.t list
+)
+ident(
+  int_ref w "mutex.ml" 33 1516 1522 "mutex.ml" 33 1516 1523
+)
+"mutex.ml" 36 1675 1677 "mutex.ml" 36 1675 1702
+call(
+  tail
+)
+type(
+  unit
+)
+"mutex.ml" 35 1622 1624 "mutex.ml" 36 1675 1702
+type(
+  unit
+)
+"mutex.ml" 34 1569 1571 "mutex.ml" 36 1675 1702
+type(
+  unit
+)
+"mutex.ml" 33 1516 1518 "mutex.ml" 36 1675 1702
+type(
+  unit
+)

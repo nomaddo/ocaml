@@ -1,0 +1,1822 @@
+"bytecomp/bytesections.ml" 17 918 922 "bytecomp/bytesections.ml" 17 918 935
+type(
+  (string * int) list ref
+)
+ident(
+  def section_table "bytecomp/bytesections.ml" 21 996 996 "bytecomp/bytesections.ml" 1 0 -1
+)
+"bytecomp/bytesections.ml" 17 918 938 "bytecomp/bytesections.ml" 17 918 941
+type(
+  (string * int) list -> (string * int) list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"bytecomp/bytesections.ml" 17 918 943 "bytecomp/bytesections.ml" 17 918 945
+type(
+  (string * int) list
+)
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 17 918 938 "bytecomp/bytesections.ml" 17 918 968
+type(
+  (string * int) list ref
+)
+"bytecomp/bytesections.ml" 21 996 1000 "bytecomp/bytesections.ml" 21 996 1017
+type(
+  int ref
+)
+ident(
+  def section_beginning "bytecomp/bytesections.ml" 23 1027 1027 "bytecomp/bytesections.ml" 1 0 -1
+)
+"bytecomp/bytesections.ml" 21 996 1020 "bytecomp/bytesections.ml" 21 996 1023
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"bytecomp/bytesections.ml" 21 996 1024 "bytecomp/bytesections.ml" 21 996 1025
+type(
+  int
+)
+"bytecomp/bytesections.ml" 21 996 1020 "bytecomp/bytesections.ml" 21 996 1025
+type(
+  int ref
+)
+"bytecomp/bytesections.ml" 23 1027 1031 "bytecomp/bytesections.ml" 23 1027 1042
+type(
+  out_channel -> unit
+)
+ident(
+  def init_record "bytecomp/bytesections.ml" 27 1116 1116 "bytecomp/bytesections.ml" 1 0 -1
+)
+"bytecomp/bytesections.ml" 23 1027 1043 "bytecomp/bytesections.ml" 23 1027 1050
+type(
+  out_channel
+)
+ident(
+  def outchan "bytecomp/bytesections.ml" 24 1053 1055 "bytecomp/bytesections.ml" 25 1093 1114
+)
+"bytecomp/bytesections.ml" 24 1053 1055 "bytecomp/bytesections.ml" 24 1053 1072
+type(
+  int ref
+)
+ident(
+  int_ref section_beginning "bytecomp/bytesections.ml" 21 996 1000 "bytecomp/bytesections.ml" 21 996 1017
+)
+"bytecomp/bytesections.ml" 24 1053 1073 "bytecomp/bytesections.ml" 24 1053 1075
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"bytecomp/bytesections.ml" 24 1053 1076 "bytecomp/bytesections.ml" 24 1053 1083
+type(
+  out_channel -> int
+)
+ident(
+  ext_ref Pervasives.pos_out
+)
+"bytecomp/bytesections.ml" 24 1053 1084 "bytecomp/bytesections.ml" 24 1053 1091
+type(
+  out_channel
+)
+ident(
+  int_ref outchan "bytecomp/bytesections.ml" 23 1027 1043 "bytecomp/bytesections.ml" 23 1027 1050
+)
+"bytecomp/bytesections.ml" 24 1053 1076 "bytecomp/bytesections.ml" 24 1053 1091
+call(
+  stack
+)
+type(
+  int
+)
+"bytecomp/bytesections.ml" 24 1053 1055 "bytecomp/bytesections.ml" 24 1053 1091
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 25 1093 1095 "bytecomp/bytesections.ml" 25 1093 1108
+type(
+  (string * int) list ref
+)
+ident(
+  int_ref section_table "bytecomp/bytesections.ml" 17 918 922 "bytecomp/bytesections.ml" 17 918 935
+)
+"bytecomp/bytesections.ml" 25 1093 1109 "bytecomp/bytesections.ml" 25 1093 1111
+type(
+  (string * int) list ref -> (string * int) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"bytecomp/bytesections.ml" 25 1093 1112 "bytecomp/bytesections.ml" 25 1093 1114
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 25 1093 1095 "bytecomp/bytesections.ml" 25 1093 1114
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 24 1053 1055 "bytecomp/bytesections.ml" 25 1093 1114
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 27 1116 1120 "bytecomp/bytesections.ml" 27 1116 1126
+type(
+  out_channel -> string -> unit
+)
+ident(
+  def record "bytecomp/bytesections.ml" 32 1272 1272 "bytecomp/bytesections.ml" 1 0 -1
+)
+"bytecomp/bytesections.ml" 27 1116 1127 "bytecomp/bytesections.ml" 27 1116 1134
+type(
+  out_channel
+)
+ident(
+  def outchan "bytecomp/bytesections.ml" 27 1116 1135 "bytecomp/bytesections.ml" 30 1244 1270
+)
+"bytecomp/bytesections.ml" 27 1116 1135 "bytecomp/bytesections.ml" 27 1116 1139
+type(
+  string
+)
+ident(
+  def name "bytecomp/bytesections.ml" 28 1142 1144 "bytecomp/bytesections.ml" 30 1244 1270
+)
+"bytecomp/bytesections.ml" 28 1142 1148 "bytecomp/bytesections.ml" 28 1142 1151
+type(
+  int
+)
+ident(
+  def pos "bytecomp/bytesections.ml" 29 1173 1175 "bytecomp/bytesections.ml" 30 1244 1270
+)
+"bytecomp/bytesections.ml" 28 1142 1154 "bytecomp/bytesections.ml" 28 1142 1161
+type(
+  out_channel -> int
+)
+ident(
+  ext_ref Pervasives.pos_out
+)
+"bytecomp/bytesections.ml" 28 1142 1162 "bytecomp/bytesections.ml" 28 1142 1169
+type(
+  out_channel
+)
+ident(
+  int_ref outchan "bytecomp/bytesections.ml" 27 1116 1127 "bytecomp/bytesections.ml" 27 1116 1134
+)
+"bytecomp/bytesections.ml" 28 1142 1154 "bytecomp/bytesections.ml" 28 1142 1169
+call(
+  stack
+)
+type(
+  int
+)
+"bytecomp/bytesections.ml" 29 1173 1175 "bytecomp/bytesections.ml" 29 1173 1188
+type(
+  (string * int) list ref
+)
+ident(
+  int_ref section_table "bytecomp/bytesections.ml" 17 918 922 "bytecomp/bytesections.ml" 17 918 935
+)
+"bytecomp/bytesections.ml" 29 1173 1189 "bytecomp/bytesections.ml" 29 1173 1191
+type(
+  (string * int) list ref -> (string * int) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"bytecomp/bytesections.ml" 29 1173 1193 "bytecomp/bytesections.ml" 29 1173 1197
+type(
+  string
+)
+ident(
+  int_ref name "bytecomp/bytesections.ml" 27 1116 1135 "bytecomp/bytesections.ml" 27 1116 1139
+)
+"bytecomp/bytesections.ml" 29 1173 1199 "bytecomp/bytesections.ml" 29 1173 1202
+type(
+  int
+)
+ident(
+  int_ref pos "bytecomp/bytesections.ml" 28 1142 1148 "bytecomp/bytesections.ml" 28 1142 1151
+)
+"bytecomp/bytesections.ml" 29 1173 1203 "bytecomp/bytesections.ml" 29 1173 1204
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"bytecomp/bytesections.ml" 29 1173 1205 "bytecomp/bytesections.ml" 29 1173 1206
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"bytecomp/bytesections.ml" 29 1173 1206 "bytecomp/bytesections.ml" 29 1173 1223
+type(
+  int ref
+)
+ident(
+  int_ref section_beginning "bytecomp/bytesections.ml" 21 996 1000 "bytecomp/bytesections.ml" 21 996 1017
+)
+"bytecomp/bytesections.ml" 29 1173 1205 "bytecomp/bytesections.ml" 29 1173 1223
+type(
+  int
+)
+"bytecomp/bytesections.ml" 29 1173 1199 "bytecomp/bytesections.ml" 29 1173 1223
+type(
+  int
+)
+"bytecomp/bytesections.ml" 29 1173 1192 "bytecomp/bytesections.ml" 29 1173 1224
+type(
+  string * int
+)
+"bytecomp/bytesections.ml" 29 1173 1228 "bytecomp/bytesections.ml" 29 1173 1229
+type(
+  (string * int) list ref -> (string * int) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"bytecomp/bytesections.ml" 29 1173 1229 "bytecomp/bytesections.ml" 29 1173 1242
+type(
+  (string * int) list ref
+)
+ident(
+  int_ref section_table "bytecomp/bytesections.ml" 17 918 922 "bytecomp/bytesections.ml" 17 918 935
+)
+"bytecomp/bytesections.ml" 29 1173 1228 "bytecomp/bytesections.ml" 29 1173 1242
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 29 1173 1192 "bytecomp/bytesections.ml" 29 1173 1242
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 29 1173 1175 "bytecomp/bytesections.ml" 29 1173 1242
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 30 1244 1246 "bytecomp/bytesections.ml" 30 1244 1263
+type(
+  int ref
+)
+ident(
+  int_ref section_beginning "bytecomp/bytesections.ml" 21 996 1000 "bytecomp/bytesections.ml" 21 996 1017
+)
+"bytecomp/bytesections.ml" 30 1244 1264 "bytecomp/bytesections.ml" 30 1244 1266
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"bytecomp/bytesections.ml" 30 1244 1267 "bytecomp/bytesections.ml" 30 1244 1270
+type(
+  int
+)
+ident(
+  int_ref pos "bytecomp/bytesections.ml" 28 1142 1148 "bytecomp/bytesections.ml" 28 1142 1151
+)
+"bytecomp/bytesections.ml" 30 1244 1246 "bytecomp/bytesections.ml" 30 1244 1270
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 29 1173 1175 "bytecomp/bytesections.ml" 30 1244 1270
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 28 1142 1144 "bytecomp/bytesections.ml" 30 1244 1270
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 32 1272 1276 "bytecomp/bytesections.ml" 32 1272 1297
+type(
+  out_channel -> unit
+)
+ident(
+  def write_toc_and_trailer "bytecomp/bytesections.ml" 43 1633 1633 "bytecomp/bytesections.ml" 1 0 -1
+)
+"bytecomp/bytesections.ml" 32 1272 1298 "bytecomp/bytesections.ml" 32 1272 1305
+type(
+  out_channel
+)
+ident(
+  def outchan "bytecomp/bytesections.ml" 33 1308 1310 "bytecomp/bytesections.ml" 39 1548 1570
+)
+"bytecomp/bytesections.ml" 33 1308 1310 "bytecomp/bytesections.ml" 33 1308 1319
+type(
+  (string * int -> unit) -> (string * int) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"bytecomp/bytesections.ml" 34 1320 1330 "bytecomp/bytesections.ml" 34 1320 1334
+type(
+  string
+)
+ident(
+  def name "bytecomp/bytesections.ml" 35 1344 1350 "bytecomp/bytesections.ml" 35 1344 1407
+)
+"bytecomp/bytesections.ml" 34 1320 1336 "bytecomp/bytesections.ml" 34 1320 1339
+type(
+  int
+)
+ident(
+  def len "bytecomp/bytesections.ml" 35 1344 1350 "bytecomp/bytesections.ml" 35 1344 1407
+)
+"bytecomp/bytesections.ml" 34 1320 1329 "bytecomp/bytesections.ml" 34 1320 1340
+type(
+  string * int
+)
+"bytecomp/bytesections.ml" 35 1344 1350 "bytecomp/bytesections.ml" 35 1344 1363
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"bytecomp/bytesections.ml" 35 1344 1364 "bytecomp/bytesections.ml" 35 1344 1371
+type(
+  out_channel
+)
+ident(
+  int_ref outchan "bytecomp/bytesections.ml" 32 1272 1298 "bytecomp/bytesections.ml" 32 1272 1305
+)
+"bytecomp/bytesections.ml" 35 1344 1372 "bytecomp/bytesections.ml" 35 1344 1376
+type(
+  string
+)
+ident(
+  int_ref name "bytecomp/bytesections.ml" 34 1320 1330 "bytecomp/bytesections.ml" 34 1320 1334
+)
+"bytecomp/bytesections.ml" 35 1344 1350 "bytecomp/bytesections.ml" 35 1344 1376
+call(
+  stack
+)
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 35 1344 1378 "bytecomp/bytesections.ml" 35 1344 1395
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output_binary_int
+)
+"bytecomp/bytesections.ml" 35 1344 1396 "bytecomp/bytesections.ml" 35 1344 1403
+type(
+  out_channel
+)
+ident(
+  int_ref outchan "bytecomp/bytesections.ml" 32 1272 1298 "bytecomp/bytesections.ml" 32 1272 1305
+)
+"bytecomp/bytesections.ml" 35 1344 1404 "bytecomp/bytesections.ml" 35 1344 1407
+type(
+  int
+)
+ident(
+  int_ref len "bytecomp/bytesections.ml" 34 1320 1336 "bytecomp/bytesections.ml" 34 1320 1339
+)
+"bytecomp/bytesections.ml" 35 1344 1378 "bytecomp/bytesections.ml" 35 1344 1407
+call(
+  tail
+)
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 35 1344 1350 "bytecomp/bytesections.ml" 35 1344 1407
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 34 1320 1324 "bytecomp/bytesections.ml" 35 1344 1408
+type(
+  string * int -> unit
+)
+"bytecomp/bytesections.ml" 36 1409 1414 "bytecomp/bytesections.ml" 36 1409 1422
+type(
+  (string * int) list -> (string * int) list
+)
+ident(
+  ext_ref List.rev
+)
+"bytecomp/bytesections.ml" 36 1409 1423 "bytecomp/bytesections.ml" 36 1409 1424
+type(
+  (string * int) list ref -> (string * int) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"bytecomp/bytesections.ml" 36 1409 1424 "bytecomp/bytesections.ml" 36 1409 1437
+type(
+  (string * int) list ref
+)
+ident(
+  int_ref section_table "bytecomp/bytesections.ml" 17 918 922 "bytecomp/bytesections.ml" 17 918 935
+)
+"bytecomp/bytesections.ml" 36 1409 1423 "bytecomp/bytesections.ml" 36 1409 1437
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 36 1409 1413 "bytecomp/bytesections.ml" 36 1409 1438
+call(
+  stack
+)
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 33 1308 1310 "bytecomp/bytesections.ml" 36 1409 1438
+call(
+  stack
+)
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 37 1440 1442 "bytecomp/bytesections.ml" 37 1440 1459
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output_binary_int
+)
+"bytecomp/bytesections.ml" 37 1440 1460 "bytecomp/bytesections.ml" 37 1440 1467
+type(
+  out_channel
+)
+ident(
+  int_ref outchan "bytecomp/bytesections.ml" 32 1272 1298 "bytecomp/bytesections.ml" 32 1272 1305
+)
+"bytecomp/bytesections.ml" 37 1440 1469 "bytecomp/bytesections.ml" 37 1440 1480
+type(
+  (string * int) list -> int
+)
+ident(
+  ext_ref List.length
+)
+"bytecomp/bytesections.ml" 37 1440 1481 "bytecomp/bytesections.ml" 37 1440 1482
+type(
+  (string * int) list ref -> (string * int) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"bytecomp/bytesections.ml" 37 1440 1482 "bytecomp/bytesections.ml" 37 1440 1495
+type(
+  (string * int) list ref
+)
+ident(
+  int_ref section_table "bytecomp/bytesections.ml" 17 918 922 "bytecomp/bytesections.ml" 17 918 935
+)
+"bytecomp/bytesections.ml" 37 1440 1481 "bytecomp/bytesections.ml" 37 1440 1495
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 37 1440 1468 "bytecomp/bytesections.ml" 37 1440 1496
+call(
+  stack
+)
+type(
+  int
+)
+"bytecomp/bytesections.ml" 37 1440 1442 "bytecomp/bytesections.ml" 37 1440 1496
+call(
+  stack
+)
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 38 1498 1500 "bytecomp/bytesections.ml" 38 1498 1513
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"bytecomp/bytesections.ml" 38 1498 1514 "bytecomp/bytesections.ml" 38 1498 1521
+type(
+  out_channel
+)
+ident(
+  int_ref outchan "bytecomp/bytesections.ml" 32 1272 1298 "bytecomp/bytesections.ml" 32 1272 1305
+)
+"bytecomp/bytesections.ml" 38 1498 1522 "bytecomp/bytesections.ml" 38 1498 1546
+type(
+  string
+)
+ident(
+  ext_ref Config.exec_magic_number
+)
+"bytecomp/bytesections.ml" 38 1498 1500 "bytecomp/bytesections.ml" 38 1498 1546
+call(
+  stack
+)
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 39 1548 1550 "bytecomp/bytesections.ml" 39 1548 1563
+type(
+  (string * int) list ref
+)
+ident(
+  int_ref section_table "bytecomp/bytesections.ml" 17 918 922 "bytecomp/bytesections.ml" 17 918 935
+)
+"bytecomp/bytesections.ml" 39 1548 1564 "bytecomp/bytesections.ml" 39 1548 1566
+type(
+  (string * int) list ref -> (string * int) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"bytecomp/bytesections.ml" 39 1548 1567 "bytecomp/bytesections.ml" 39 1548 1569
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 39 1548 1550 "bytecomp/bytesections.ml" 39 1548 1570
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 38 1498 1500 "bytecomp/bytesections.ml" 39 1548 1570
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 37 1440 1442 "bytecomp/bytesections.ml" 39 1548 1570
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 33 1308 1310 "bytecomp/bytesections.ml" 39 1548 1570
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 45 1661 1665 "bytecomp/bytesections.ml" 45 1661 1673
+type(
+  in_channel -> unit
+)
+ident(
+  def read_toc "bytecomp/bytesections.ml" 63 2240 2240 "bytecomp/bytesections.ml" 1 0 -1
+)
+"bytecomp/bytesections.ml" 45 1661 1674 "bytecomp/bytesections.ml" 45 1661 1676
+type(
+  in_channel
+)
+ident(
+  def ic "bytecomp/bytesections.ml" 46 1679 1681 "bytecomp/bytesections.ml" 59 2188 2194
+)
+"bytecomp/bytesections.ml" 46 1679 1685 "bytecomp/bytesections.ml" 46 1679 1696
+type(
+  int
+)
+ident(
+  def pos_trailer "bytecomp/bytesections.ml" 47 1728 1730 "bytecomp/bytesections.ml" 59 2188 2194
+)
+"bytecomp/bytesections.ml" 46 1679 1699 "bytecomp/bytesections.ml" 46 1679 1716
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.in_channel_length
+)
+"bytecomp/bytesections.ml" 46 1679 1717 "bytecomp/bytesections.ml" 46 1679 1719
+type(
+  in_channel
+)
+ident(
+  int_ref ic "bytecomp/bytesections.ml" 45 1661 1674 "bytecomp/bytesections.ml" 45 1661 1676
+)
+"bytecomp/bytesections.ml" 46 1679 1699 "bytecomp/bytesections.ml" 46 1679 1719
+call(
+  stack
+)
+type(
+  int
+)
+"bytecomp/bytesections.ml" 46 1679 1720 "bytecomp/bytesections.ml" 46 1679 1721
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"bytecomp/bytesections.ml" 46 1679 1722 "bytecomp/bytesections.ml" 46 1679 1724
+type(
+  int
+)
+"bytecomp/bytesections.ml" 46 1679 1699 "bytecomp/bytesections.ml" 46 1679 1724
+type(
+  int
+)
+"bytecomp/bytesections.ml" 47 1728 1730 "bytecomp/bytesections.ml" 47 1728 1737
+type(
+  in_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.seek_in
+)
+"bytecomp/bytesections.ml" 47 1728 1738 "bytecomp/bytesections.ml" 47 1728 1740
+type(
+  in_channel
+)
+ident(
+  int_ref ic "bytecomp/bytesections.ml" 45 1661 1674 "bytecomp/bytesections.ml" 45 1661 1676
+)
+"bytecomp/bytesections.ml" 47 1728 1741 "bytecomp/bytesections.ml" 47 1728 1752
+type(
+  int
+)
+ident(
+  int_ref pos_trailer "bytecomp/bytesections.ml" 46 1679 1685 "bytecomp/bytesections.ml" 46 1679 1696
+)
+"bytecomp/bytesections.ml" 47 1728 1730 "bytecomp/bytesections.ml" 47 1728 1752
+call(
+  stack
+)
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 48 1754 1760 "bytecomp/bytesections.ml" 48 1754 1772
+type(
+  int
+)
+ident(
+  def num_sections "bytecomp/bytesections.ml" 49 1798 1800 "bytecomp/bytesections.ml" 59 2188 2194
+)
+"bytecomp/bytesections.ml" 48 1754 1775 "bytecomp/bytesections.ml" 48 1754 1791
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"bytecomp/bytesections.ml" 48 1754 1792 "bytecomp/bytesections.ml" 48 1754 1794
+type(
+  in_channel
+)
+ident(
+  int_ref ic "bytecomp/bytesections.ml" 45 1661 1674 "bytecomp/bytesections.ml" 45 1661 1676
+)
+"bytecomp/bytesections.ml" 48 1754 1775 "bytecomp/bytesections.ml" 48 1754 1794
+call(
+  stack
+)
+type(
+  int
+)
+"bytecomp/bytesections.ml" 49 1798 1804 "bytecomp/bytesections.ml" 49 1798 1810
+type(
+  string
+)
+ident(
+  def header "bytecomp/bytesections.ml" 52 1886 1888 "bytecomp/bytesections.ml" 59 2188 2194
+)
+"bytecomp/bytesections.ml" 50 1813 1817 "bytecomp/bytesections.ml" 50 1813 1836
+type(
+  in_channel -> int -> string
+)
+ident(
+  ext_ref Pervasives.really_input_string
+)
+"bytecomp/bytesections.ml" 50 1813 1837 "bytecomp/bytesections.ml" 50 1813 1839
+type(
+  in_channel
+)
+ident(
+  int_ref ic "bytecomp/bytesections.ml" 45 1661 1674 "bytecomp/bytesections.ml" 45 1661 1676
+)
+"bytecomp/bytesections.ml" 50 1813 1841 "bytecomp/bytesections.ml" 50 1813 1854
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"bytecomp/bytesections.ml" 50 1813 1855 "bytecomp/bytesections.ml" 50 1813 1879
+type(
+  string
+)
+ident(
+  ext_ref Config.exec_magic_number
+)
+"bytecomp/bytesections.ml" 50 1813 1840 "bytecomp/bytesections.ml" 50 1813 1880
+type(
+  int
+)
+"bytecomp/bytesections.ml" 50 1813 1817 "bytecomp/bytesections.ml" 50 1813 1880
+call(
+  stack
+)
+type(
+  string
+)
+"bytecomp/bytesections.ml" 52 1886 1891 "bytecomp/bytesections.ml" 52 1886 1897
+type(
+  string
+)
+ident(
+  int_ref header "bytecomp/bytesections.ml" 49 1798 1804 "bytecomp/bytesections.ml" 49 1798 1810
+)
+"bytecomp/bytesections.ml" 52 1886 1898 "bytecomp/bytesections.ml" 52 1886 1900
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"bytecomp/bytesections.ml" 52 1886 1901 "bytecomp/bytesections.ml" 52 1886 1925
+type(
+  string
+)
+ident(
+  ext_ref Config.exec_magic_number
+)
+"bytecomp/bytesections.ml" 52 1886 1891 "bytecomp/bytesections.ml" 52 1886 1925
+type(
+  bool
+)
+"bytecomp/bytesections.ml" 52 1886 1931 "bytecomp/bytesections.ml" 52 1886 1936
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"bytecomp/bytesections.ml" 52 1886 1937 "bytecomp/bytesections.ml" 52 1886 1953
+type(
+  exn
+)
+"bytecomp/bytesections.ml" 52 1886 1931 "bytecomp/bytesections.ml" 52 1886 1953
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 52 1886 1888 "bytecomp/bytesections.ml" 52 1886 1953
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 53 1955 1957 "bytecomp/bytesections.ml" 53 1955 1964
+type(
+  in_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.seek_in
+)
+"bytecomp/bytesections.ml" 53 1955 1965 "bytecomp/bytesections.ml" 53 1955 1967
+type(
+  in_channel
+)
+ident(
+  int_ref ic "bytecomp/bytesections.ml" 45 1661 1674 "bytecomp/bytesections.ml" 45 1661 1676
+)
+"bytecomp/bytesections.ml" 53 1955 1969 "bytecomp/bytesections.ml" 53 1955 1980
+type(
+  int
+)
+ident(
+  int_ref pos_trailer "bytecomp/bytesections.ml" 46 1679 1685 "bytecomp/bytesections.ml" 46 1679 1696
+)
+"bytecomp/bytesections.ml" 53 1955 1981 "bytecomp/bytesections.ml" 53 1955 1982
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"bytecomp/bytesections.ml" 53 1955 1983 "bytecomp/bytesections.ml" 53 1955 1984
+type(
+  int
+)
+"bytecomp/bytesections.ml" 53 1955 1985 "bytecomp/bytesections.ml" 53 1955 1986
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"bytecomp/bytesections.ml" 53 1955 1987 "bytecomp/bytesections.ml" 53 1955 1999
+type(
+  int
+)
+ident(
+  int_ref num_sections "bytecomp/bytesections.ml" 48 1754 1760 "bytecomp/bytesections.ml" 48 1754 1772
+)
+"bytecomp/bytesections.ml" 53 1955 1983 "bytecomp/bytesections.ml" 53 1955 1999
+type(
+  int
+)
+"bytecomp/bytesections.ml" 53 1955 1968 "bytecomp/bytesections.ml" 53 1955 2000
+type(
+  int
+)
+"bytecomp/bytesections.ml" 53 1955 1957 "bytecomp/bytesections.ml" 53 1955 2000
+call(
+  stack
+)
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 54 2002 2004 "bytecomp/bytesections.ml" 54 2002 2017
+type(
+  (string * int) list ref
+)
+ident(
+  int_ref section_table "bytecomp/bytesections.ml" 17 918 922 "bytecomp/bytesections.ml" 17 918 935
+)
+"bytecomp/bytesections.ml" 54 2002 2018 "bytecomp/bytesections.ml" 54 2002 2020
+type(
+  (string * int) list ref -> (string * int) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"bytecomp/bytesections.ml" 54 2002 2021 "bytecomp/bytesections.ml" 54 2002 2023
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 54 2002 2004 "bytecomp/bytesections.ml" 54 2002 2023
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 55 2025 2036 "bytecomp/bytesections.ml" 55 2025 2037
+type(
+  int
+)
+"bytecomp/bytesections.ml" 55 2025 2041 "bytecomp/bytesections.ml" 55 2025 2053
+type(
+  int
+)
+ident(
+  int_ref num_sections "bytecomp/bytesections.ml" 48 1754 1760 "bytecomp/bytesections.ml" 48 1754 1772
+)
+"bytecomp/bytesections.ml" 56 2057 2065 "bytecomp/bytesections.ml" 56 2057 2069
+type(
+  string
+)
+ident(
+  def name "bytecomp/bytesections.ml" 57 2100 2104 "bytecomp/bytesections.ml" 58 2137 2187
+)
+"bytecomp/bytesections.ml" 56 2057 2072 "bytecomp/bytesections.ml" 56 2057 2091
+type(
+  in_channel -> int -> string
+)
+ident(
+  ext_ref Pervasives.really_input_string
+)
+"bytecomp/bytesections.ml" 56 2057 2092 "bytecomp/bytesections.ml" 56 2057 2094
+type(
+  in_channel
+)
+ident(
+  int_ref ic "bytecomp/bytesections.ml" 45 1661 1674 "bytecomp/bytesections.ml" 45 1661 1676
+)
+"bytecomp/bytesections.ml" 56 2057 2095 "bytecomp/bytesections.ml" 56 2057 2096
+type(
+  int
+)
+"bytecomp/bytesections.ml" 56 2057 2072 "bytecomp/bytesections.ml" 56 2057 2096
+call(
+  stack
+)
+type(
+  string
+)
+"bytecomp/bytesections.ml" 57 2100 2108 "bytecomp/bytesections.ml" 57 2100 2111
+type(
+  int
+)
+ident(
+  def len "bytecomp/bytesections.ml" 58 2137 2141 "bytecomp/bytesections.ml" 58 2137 2187
+)
+"bytecomp/bytesections.ml" 57 2100 2114 "bytecomp/bytesections.ml" 57 2100 2130
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"bytecomp/bytesections.ml" 57 2100 2131 "bytecomp/bytesections.ml" 57 2100 2133
+type(
+  in_channel
+)
+ident(
+  int_ref ic "bytecomp/bytesections.ml" 45 1661 1674 "bytecomp/bytesections.ml" 45 1661 1676
+)
+"bytecomp/bytesections.ml" 57 2100 2114 "bytecomp/bytesections.ml" 57 2100 2133
+call(
+  stack
+)
+type(
+  int
+)
+"bytecomp/bytesections.ml" 58 2137 2141 "bytecomp/bytesections.ml" 58 2137 2154
+type(
+  (string * int) list ref
+)
+ident(
+  int_ref section_table "bytecomp/bytesections.ml" 17 918 922 "bytecomp/bytesections.ml" 17 918 935
+)
+"bytecomp/bytesections.ml" 58 2137 2155 "bytecomp/bytesections.ml" 58 2137 2157
+type(
+  (string * int) list ref -> (string * int) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"bytecomp/bytesections.ml" 58 2137 2159 "bytecomp/bytesections.ml" 58 2137 2163
+type(
+  string
+)
+ident(
+  int_ref name "bytecomp/bytesections.ml" 56 2057 2065 "bytecomp/bytesections.ml" 56 2057 2069
+)
+"bytecomp/bytesections.ml" 58 2137 2165 "bytecomp/bytesections.ml" 58 2137 2168
+type(
+  int
+)
+ident(
+  int_ref len "bytecomp/bytesections.ml" 57 2100 2108 "bytecomp/bytesections.ml" 57 2100 2111
+)
+"bytecomp/bytesections.ml" 58 2137 2158 "bytecomp/bytesections.ml" 58 2137 2169
+type(
+  string * int
+)
+"bytecomp/bytesections.ml" 58 2137 2173 "bytecomp/bytesections.ml" 58 2137 2174
+type(
+  (string * int) list ref -> (string * int) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"bytecomp/bytesections.ml" 58 2137 2174 "bytecomp/bytesections.ml" 58 2137 2187
+type(
+  (string * int) list ref
+)
+ident(
+  int_ref section_table "bytecomp/bytesections.ml" 17 918 922 "bytecomp/bytesections.ml" 17 918 935
+)
+"bytecomp/bytesections.ml" 58 2137 2173 "bytecomp/bytesections.ml" 58 2137 2187
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 58 2137 2158 "bytecomp/bytesections.ml" 58 2137 2187
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 58 2137 2141 "bytecomp/bytesections.ml" 58 2137 2187
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 57 2100 2104 "bytecomp/bytesections.ml" 58 2137 2187
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 56 2057 2061 "bytecomp/bytesections.ml" 58 2137 2187
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 55 2025 2027 "bytecomp/bytesections.ml" 59 2188 2194
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 54 2002 2004 "bytecomp/bytesections.ml" 59 2188 2194
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 53 1955 1957 "bytecomp/bytesections.ml" 59 2188 2194
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 52 1886 1888 "bytecomp/bytesections.ml" 59 2188 2194
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 49 1798 1800 "bytecomp/bytesections.ml" 59 2188 2194
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 48 1754 1756 "bytecomp/bytesections.ml" 59 2188 2194
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 47 1728 1730 "bytecomp/bytesections.ml" 59 2188 2194
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 46 1679 1681 "bytecomp/bytesections.ml" 59 2188 2194
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 63 2240 2244 "bytecomp/bytesections.ml" 63 2240 2247
+type(
+  unit -> (string * int) list
+)
+ident(
+  def toc "bytecomp/bytesections.ml" 69 2432 2432 "bytecomp/bytesections.ml" 1 0 -1
+)
+"bytecomp/bytesections.ml" 63 2240 2248 "bytecomp/bytesections.ml" 63 2240 2250
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 63 2240 2253 "bytecomp/bytesections.ml" 63 2240 2261
+type(
+  (string * int) list -> (string * int) list
+)
+ident(
+  ext_ref List.rev
+)
+"bytecomp/bytesections.ml" 63 2240 2262 "bytecomp/bytesections.ml" 63 2240 2263
+type(
+  (string * int) list ref -> (string * int) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"bytecomp/bytesections.ml" 63 2240 2263 "bytecomp/bytesections.ml" 63 2240 2276
+type(
+  (string * int) list ref
+)
+ident(
+  int_ref section_table "bytecomp/bytesections.ml" 17 918 922 "bytecomp/bytesections.ml" 17 918 935
+)
+"bytecomp/bytesections.ml" 63 2240 2262 "bytecomp/bytesections.ml" 63 2240 2276
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 63 2240 2253 "bytecomp/bytesections.ml" 63 2240 2276
+call(
+  tail
+)
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 69 2432 2436 "bytecomp/bytesections.ml" 69 2432 2448
+type(
+  in_channel -> string -> int
+)
+ident(
+  def seek_section "bytecomp/bytesections.ml" 81 2815 2815 "bytecomp/bytesections.ml" 1 0 -1
+)
+"bytecomp/bytesections.ml" 69 2432 2449 "bytecomp/bytesections.ml" 69 2432 2451
+type(
+  in_channel
+)
+ident(
+  def ic "bytecomp/bytesections.ml" 69 2432 2452 "bytecomp/bytesections.ml" 77 2735 2760
+)
+"bytecomp/bytesections.ml" 69 2432 2452 "bytecomp/bytesections.ml" 69 2432 2456
+type(
+  string
+)
+ident(
+  def name "bytecomp/bytesections.ml" 70 2459 2461 "bytecomp/bytesections.ml" 77 2735 2760
+)
+"bytecomp/bytesections.ml" 70 2459 2469 "bytecomp/bytesections.ml" 70 2459 2477
+type(
+  int -> (string * int) list -> int
+)
+ident(
+  def seek_sec "bytecomp/bytesections.ml" 70 2459 2461 "bytecomp/bytesections.ml" 77 2735 2760
+)
+"bytecomp/bytesections.ml" 70 2459 2478 "bytecomp/bytesections.ml" 70 2459 2486
+type(
+  int
+)
+ident(
+  def curr_ofs "bytecomp/bytesections.ml" 70 2459 2489 "bytecomp/bytesections.ml" 75 2619 2659
+)
+"bytecomp/bytesections.ml" 71 2498 2502 "bytecomp/bytesections.ml" 71 2498 2504
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 71 2498 2508 "bytecomp/bytesections.ml" 71 2498 2513
+type(
+  exn -> int
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"bytecomp/bytesections.ml" 71 2498 2514 "bytecomp/bytesections.ml" 71 2498 2523
+type(
+  exn
+)
+"bytecomp/bytesections.ml" 71 2498 2508 "bytecomp/bytesections.ml" 71 2498 2523
+type(
+  int
+)
+"bytecomp/bytesections.ml" 72 2524 2529 "bytecomp/bytesections.ml" 72 2524 2530
+type(
+  string
+)
+ident(
+  def n "bytecomp/bytesections.ml" 73 2547 2553 "bytecomp/bytesections.ml" 75 2619 2659
+)
+"bytecomp/bytesections.ml" 72 2524 2532 "bytecomp/bytesections.ml" 72 2524 2535
+type(
+  int
+)
+ident(
+  def len "bytecomp/bytesections.ml" 73 2547 2553 "bytecomp/bytesections.ml" 75 2619 2659
+)
+"bytecomp/bytesections.ml" 72 2524 2528 "bytecomp/bytesections.ml" 72 2524 2536
+type(
+  string * int
+)
+"bytecomp/bytesections.ml" 72 2524 2540 "bytecomp/bytesections.ml" 72 2524 2543
+type(
+  (string * int) list
+)
+ident(
+  def rem "bytecomp/bytesections.ml" 73 2547 2553 "bytecomp/bytesections.ml" 75 2619 2659
+)
+"bytecomp/bytesections.ml" 72 2524 2528 "bytecomp/bytesections.ml" 72 2524 2543
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 73 2547 2556 "bytecomp/bytesections.ml" 73 2547 2557
+type(
+  string
+)
+ident(
+  int_ref n "bytecomp/bytesections.ml" 72 2524 2529 "bytecomp/bytesections.ml" 72 2524 2530
+)
+"bytecomp/bytesections.ml" 73 2547 2558 "bytecomp/bytesections.ml" 73 2547 2559
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"bytecomp/bytesections.ml" 73 2547 2560 "bytecomp/bytesections.ml" 73 2547 2564
+type(
+  string
+)
+ident(
+  int_ref name "bytecomp/bytesections.ml" 69 2432 2452 "bytecomp/bytesections.ml" 69 2432 2456
+)
+"bytecomp/bytesections.ml" 73 2547 2556 "bytecomp/bytesections.ml" 73 2547 2564
+type(
+  bool
+)
+"bytecomp/bytesections.ml" 74 2565 2582 "bytecomp/bytesections.ml" 74 2565 2589
+type(
+  in_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.seek_in
+)
+"bytecomp/bytesections.ml" 74 2565 2590 "bytecomp/bytesections.ml" 74 2565 2592
+type(
+  in_channel
+)
+ident(
+  int_ref ic "bytecomp/bytesections.ml" 69 2432 2449 "bytecomp/bytesections.ml" 69 2432 2451
+)
+"bytecomp/bytesections.ml" 74 2565 2594 "bytecomp/bytesections.ml" 74 2565 2602
+type(
+  int
+)
+ident(
+  int_ref curr_ofs "bytecomp/bytesections.ml" 70 2459 2478 "bytecomp/bytesections.ml" 70 2459 2486
+)
+"bytecomp/bytesections.ml" 74 2565 2603 "bytecomp/bytesections.ml" 74 2565 2604
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"bytecomp/bytesections.ml" 74 2565 2605 "bytecomp/bytesections.ml" 74 2565 2608
+type(
+  int
+)
+ident(
+  int_ref len "bytecomp/bytesections.ml" 72 2524 2532 "bytecomp/bytesections.ml" 72 2524 2535
+)
+"bytecomp/bytesections.ml" 74 2565 2593 "bytecomp/bytesections.ml" 74 2565 2609
+type(
+  int
+)
+"bytecomp/bytesections.ml" 74 2565 2582 "bytecomp/bytesections.ml" 74 2565 2609
+call(
+  stack
+)
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 74 2565 2611 "bytecomp/bytesections.ml" 74 2565 2614
+type(
+  int
+)
+ident(
+  int_ref len "bytecomp/bytesections.ml" 72 2524 2532 "bytecomp/bytesections.ml" 72 2524 2535
+)
+"bytecomp/bytesections.ml" 74 2565 2576 "bytecomp/bytesections.ml" 74 2565 2618
+type(
+  int
+)
+"bytecomp/bytesections.ml" 75 2619 2630 "bytecomp/bytesections.ml" 75 2619 2638
+type(
+  int -> (string * int) list -> int
+)
+ident(
+  int_ref seek_sec "bytecomp/bytesections.ml" 70 2459 2469 "bytecomp/bytesections.ml" 70 2459 2477
+)
+"bytecomp/bytesections.ml" 75 2619 2640 "bytecomp/bytesections.ml" 75 2619 2648
+type(
+  int
+)
+ident(
+  int_ref curr_ofs "bytecomp/bytesections.ml" 70 2459 2478 "bytecomp/bytesections.ml" 70 2459 2486
+)
+"bytecomp/bytesections.ml" 75 2619 2649 "bytecomp/bytesections.ml" 75 2619 2650
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"bytecomp/bytesections.ml" 75 2619 2651 "bytecomp/bytesections.ml" 75 2619 2654
+type(
+  int
+)
+ident(
+  int_ref len "bytecomp/bytesections.ml" 72 2524 2532 "bytecomp/bytesections.ml" 72 2524 2535
+)
+"bytecomp/bytesections.ml" 75 2619 2639 "bytecomp/bytesections.ml" 75 2619 2655
+type(
+  int
+)
+"bytecomp/bytesections.ml" 75 2619 2656 "bytecomp/bytesections.ml" 75 2619 2659
+type(
+  (string * int) list
+)
+ident(
+  int_ref rem "bytecomp/bytesections.ml" 72 2524 2540 "bytecomp/bytesections.ml" 72 2524 2543
+)
+"bytecomp/bytesections.ml" 75 2619 2630 "bytecomp/bytesections.ml" 75 2619 2659
+call(
+  tail
+)
+type(
+  int
+)
+"bytecomp/bytesections.ml" 73 2547 2553 "bytecomp/bytesections.ml" 75 2619 2659
+type(
+  int
+)
+"bytecomp/bytesections.ml" 70 2459 2489 "bytecomp/bytesections.ml" 75 2619 2659
+type(
+  (string * int) list -> int
+)
+"bytecomp/bytesections.ml" 76 2663 2665 "bytecomp/bytesections.ml" 76 2663 2673
+type(
+  int -> (string * int) list -> int
+)
+ident(
+  int_ref seek_sec "bytecomp/bytesections.ml" 70 2459 2469 "bytecomp/bytesections.ml" 70 2459 2477
+)
+"bytecomp/bytesections.ml" 76 2663 2675 "bytecomp/bytesections.ml" 76 2663 2692
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.in_channel_length
+)
+"bytecomp/bytesections.ml" 76 2663 2693 "bytecomp/bytesections.ml" 76 2663 2695
+type(
+  in_channel
+)
+ident(
+  int_ref ic "bytecomp/bytesections.ml" 69 2432 2449 "bytecomp/bytesections.ml" 69 2432 2451
+)
+"bytecomp/bytesections.ml" 76 2663 2675 "bytecomp/bytesections.ml" 76 2663 2695
+call(
+  stack
+)
+type(
+  int
+)
+"bytecomp/bytesections.ml" 76 2663 2696 "bytecomp/bytesections.ml" 76 2663 2697
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"bytecomp/bytesections.ml" 76 2663 2698 "bytecomp/bytesections.ml" 76 2663 2700
+type(
+  int
+)
+"bytecomp/bytesections.ml" 76 2663 2675 "bytecomp/bytesections.ml" 76 2663 2700
+type(
+  int
+)
+"bytecomp/bytesections.ml" 76 2663 2701 "bytecomp/bytesections.ml" 76 2663 2702
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"bytecomp/bytesections.ml" 76 2663 2703 "bytecomp/bytesections.ml" 76 2663 2704
+type(
+  int
+)
+"bytecomp/bytesections.ml" 76 2663 2705 "bytecomp/bytesections.ml" 76 2663 2706
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"bytecomp/bytesections.ml" 76 2663 2707 "bytecomp/bytesections.ml" 76 2663 2718
+type(
+  (string * int) list -> int
+)
+ident(
+  ext_ref List.length
+)
+"bytecomp/bytesections.ml" 76 2663 2719 "bytecomp/bytesections.ml" 76 2663 2720
+type(
+  (string * int) list ref -> (string * int) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"bytecomp/bytesections.ml" 76 2663 2720 "bytecomp/bytesections.ml" 76 2663 2733
+type(
+  (string * int) list ref
+)
+ident(
+  int_ref section_table "bytecomp/bytesections.ml" 17 918 922 "bytecomp/bytesections.ml" 17 918 935
+)
+"bytecomp/bytesections.ml" 76 2663 2719 "bytecomp/bytesections.ml" 76 2663 2733
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 76 2663 2707 "bytecomp/bytesections.ml" 76 2663 2733
+call(
+  stack
+)
+type(
+  int
+)
+"bytecomp/bytesections.ml" 76 2663 2703 "bytecomp/bytesections.ml" 76 2663 2733
+type(
+  int
+)
+"bytecomp/bytesections.ml" 76 2663 2674 "bytecomp/bytesections.ml" 76 2663 2734
+type(
+  int
+)
+"bytecomp/bytesections.ml" 77 2735 2746 "bytecomp/bytesections.ml" 77 2735 2747
+type(
+  (string * int) list ref -> (string * int) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"bytecomp/bytesections.ml" 77 2735 2747 "bytecomp/bytesections.ml" 77 2735 2760
+type(
+  (string * int) list ref
+)
+ident(
+  int_ref section_table "bytecomp/bytesections.ml" 17 918 922 "bytecomp/bytesections.ml" 17 918 935
+)
+"bytecomp/bytesections.ml" 77 2735 2746 "bytecomp/bytesections.ml" 77 2735 2760
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 76 2663 2665 "bytecomp/bytesections.ml" 77 2735 2760
+call(
+  tail
+)
+type(
+  int
+)
+"bytecomp/bytesections.ml" 70 2459 2461 "bytecomp/bytesections.ml" 77 2735 2760
+type(
+  int
+)
+"bytecomp/bytesections.ml" 81 2815 2819 "bytecomp/bytesections.ml" 81 2815 2838
+type(
+  in_channel -> string -> string
+)
+ident(
+  def read_section_string "bytecomp/bytesections.ml" 86 2958 2958 "bytecomp/bytesections.ml" 1 0 -1
+)
+"bytecomp/bytesections.ml" 81 2815 2839 "bytecomp/bytesections.ml" 81 2815 2841
+type(
+  in_channel
+)
+ident(
+  def ic "bytecomp/bytesections.ml" 81 2815 2842 "bytecomp/bytesections.ml" 82 2849 2896
+)
+"bytecomp/bytesections.ml" 81 2815 2842 "bytecomp/bytesections.ml" 81 2815 2846
+type(
+  string
+)
+ident(
+  def name "bytecomp/bytesections.ml" 82 2849 2851 "bytecomp/bytesections.ml" 82 2849 2896
+)
+"bytecomp/bytesections.ml" 82 2849 2851 "bytecomp/bytesections.ml" 82 2849 2870
+type(
+  in_channel -> int -> string
+)
+ident(
+  ext_ref Pervasives.really_input_string
+)
+"bytecomp/bytesections.ml" 82 2849 2871 "bytecomp/bytesections.ml" 82 2849 2873
+type(
+  in_channel
+)
+ident(
+  int_ref ic "bytecomp/bytesections.ml" 81 2815 2839 "bytecomp/bytesections.ml" 81 2815 2841
+)
+"bytecomp/bytesections.ml" 82 2849 2875 "bytecomp/bytesections.ml" 82 2849 2887
+type(
+  in_channel -> string -> int
+)
+ident(
+  int_ref seek_section "bytecomp/bytesections.ml" 69 2432 2436 "bytecomp/bytesections.ml" 69 2432 2448
+)
+"bytecomp/bytesections.ml" 82 2849 2888 "bytecomp/bytesections.ml" 82 2849 2890
+type(
+  in_channel
+)
+ident(
+  int_ref ic "bytecomp/bytesections.ml" 81 2815 2839 "bytecomp/bytesections.ml" 81 2815 2841
+)
+"bytecomp/bytesections.ml" 82 2849 2891 "bytecomp/bytesections.ml" 82 2849 2895
+type(
+  string
+)
+ident(
+  int_ref name "bytecomp/bytesections.ml" 81 2815 2842 "bytecomp/bytesections.ml" 81 2815 2846
+)
+"bytecomp/bytesections.ml" 82 2849 2874 "bytecomp/bytesections.ml" 82 2849 2896
+call(
+  stack
+)
+type(
+  int
+)
+"bytecomp/bytesections.ml" 82 2849 2851 "bytecomp/bytesections.ml" 82 2849 2896
+call(
+  tail
+)
+type(
+  string
+)
+"bytecomp/bytesections.ml" 86 2958 2962 "bytecomp/bytesections.ml" 86 2958 2981
+type(
+  in_channel -> string -> 'a
+)
+ident(
+  def read_section_struct "bytecomp/bytesections.ml" 92 3108 3108 "bytecomp/bytesections.ml" 1 0 -1
+)
+"bytecomp/bytesections.ml" 86 2958 2982 "bytecomp/bytesections.ml" 86 2958 2984
+type(
+  in_channel
+)
+ident(
+  def ic "bytecomp/bytesections.ml" 86 2958 2985 "bytecomp/bytesections.ml" 88 3025 3041
+)
+"bytecomp/bytesections.ml" 86 2958 2985 "bytecomp/bytesections.ml" 86 2958 2989
+type(
+  string
+)
+ident(
+  def name "bytecomp/bytesections.ml" 87 2992 2994 "bytecomp/bytesections.ml" 88 3025 3041
+)
+"bytecomp/bytesections.ml" 87 2992 2994 "bytecomp/bytesections.ml" 87 2992 3000
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"bytecomp/bytesections.ml" 87 2992 3002 "bytecomp/bytesections.ml" 87 2992 3014
+type(
+  in_channel -> string -> int
+)
+ident(
+  int_ref seek_section "bytecomp/bytesections.ml" 69 2432 2436 "bytecomp/bytesections.ml" 69 2432 2448
+)
+"bytecomp/bytesections.ml" 87 2992 3015 "bytecomp/bytesections.ml" 87 2992 3017
+type(
+  in_channel
+)
+ident(
+  int_ref ic "bytecomp/bytesections.ml" 86 2958 2982 "bytecomp/bytesections.ml" 86 2958 2984
+)
+"bytecomp/bytesections.ml" 87 2992 3018 "bytecomp/bytesections.ml" 87 2992 3022
+type(
+  string
+)
+ident(
+  int_ref name "bytecomp/bytesections.ml" 86 2958 2985 "bytecomp/bytesections.ml" 86 2958 2989
+)
+"bytecomp/bytesections.ml" 87 2992 3001 "bytecomp/bytesections.ml" 87 2992 3023
+call(
+  stack
+)
+type(
+  int
+)
+"bytecomp/bytesections.ml" 87 2992 2994 "bytecomp/bytesections.ml" 87 2992 3023
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 88 3025 3027 "bytecomp/bytesections.ml" 88 3025 3038
+type(
+  in_channel -> 'a
+)
+ident(
+  ext_ref Pervasives.input_value
+)
+"bytecomp/bytesections.ml" 88 3025 3039 "bytecomp/bytesections.ml" 88 3025 3041
+type(
+  in_channel
+)
+ident(
+  int_ref ic "bytecomp/bytesections.ml" 86 2958 2982 "bytecomp/bytesections.ml" 86 2958 2984
+)
+"bytecomp/bytesections.ml" 88 3025 3027 "bytecomp/bytesections.ml" 88 3025 3041
+call(
+  tail
+)
+type(
+  'a
+)
+"bytecomp/bytesections.ml" 87 2992 2994 "bytecomp/bytesections.ml" 88 3025 3041
+type(
+  'a
+)
+"bytecomp/bytesections.ml" 92 3108 3112 "bytecomp/bytesections.ml" 92 3108 3129
+type(
+  in_channel -> int
+)
+ident(
+  def pos_first_section "bytecomp/bytesections.ml" 96 3272 3272 "bytecomp/bytesections.ml" 1 0 -1
+)
+"bytecomp/bytesections.ml" 92 3108 3130 "bytecomp/bytesections.ml" 92 3108 3132
+type(
+  in_channel
+)
+ident(
+  def ic "bytecomp/bytesections.ml" 93 3135 3137 "bytecomp/bytesections.ml" 94 3198 3270
+)
+"bytecomp/bytesections.ml" 93 3135 3137 "bytecomp/bytesections.ml" 93 3135 3154
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.in_channel_length
+)
+"bytecomp/bytesections.ml" 93 3135 3155 "bytecomp/bytesections.ml" 93 3135 3157
+type(
+  in_channel
+)
+ident(
+  int_ref ic "bytecomp/bytesections.ml" 92 3108 3130 "bytecomp/bytesections.ml" 92 3108 3132
+)
+"bytecomp/bytesections.ml" 93 3135 3137 "bytecomp/bytesections.ml" 93 3135 3157
+call(
+  stack
+)
+type(
+  int
+)
+"bytecomp/bytesections.ml" 93 3135 3158 "bytecomp/bytesections.ml" 93 3135 3159
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"bytecomp/bytesections.ml" 93 3135 3160 "bytecomp/bytesections.ml" 93 3135 3162
+type(
+  int
+)
+"bytecomp/bytesections.ml" 93 3135 3137 "bytecomp/bytesections.ml" 93 3135 3162
+type(
+  int
+)
+"bytecomp/bytesections.ml" 93 3135 3163 "bytecomp/bytesections.ml" 93 3135 3164
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"bytecomp/bytesections.ml" 93 3135 3165 "bytecomp/bytesections.ml" 93 3135 3166
+type(
+  int
+)
+"bytecomp/bytesections.ml" 93 3135 3167 "bytecomp/bytesections.ml" 93 3135 3168
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"bytecomp/bytesections.ml" 93 3135 3169 "bytecomp/bytesections.ml" 93 3135 3180
+type(
+  (string * int) list -> int
+)
+ident(
+  ext_ref List.length
+)
+"bytecomp/bytesections.ml" 93 3135 3181 "bytecomp/bytesections.ml" 93 3135 3182
+type(
+  (string * int) list ref -> (string * int) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"bytecomp/bytesections.ml" 93 3135 3182 "bytecomp/bytesections.ml" 93 3135 3195
+type(
+  (string * int) list ref
+)
+ident(
+  int_ref section_table "bytecomp/bytesections.ml" 17 918 922 "bytecomp/bytesections.ml" 17 918 935
+)
+"bytecomp/bytesections.ml" 93 3135 3181 "bytecomp/bytesections.ml" 93 3135 3195
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 93 3135 3169 "bytecomp/bytesections.ml" 93 3135 3195
+call(
+  stack
+)
+type(
+  int
+)
+"bytecomp/bytesections.ml" 93 3135 3165 "bytecomp/bytesections.ml" 93 3135 3195
+type(
+  int
+)
+"bytecomp/bytesections.ml" 93 3135 3137 "bytecomp/bytesections.ml" 93 3135 3195
+type(
+  int
+)
+"bytecomp/bytesections.ml" 93 3135 3196 "bytecomp/bytesections.ml" 93 3135 3197
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"bytecomp/bytesections.ml" 94 3198 3200 "bytecomp/bytesections.ml" 94 3198 3214
+type(
+  (int -> string * int -> int) -> int -> (string * int) list -> int
+)
+ident(
+  ext_ref List.fold_left
+)
+"bytecomp/bytesections.ml" 94 3198 3220 "bytecomp/bytesections.ml" 94 3198 3225
+type(
+  int
+)
+ident(
+  def total "bytecomp/bytesections.ml" 94 3198 3226 "bytecomp/bytesections.ml" 94 3198 3252
+)
+"bytecomp/bytesections.ml" 94 3198 3227 "bytecomp/bytesections.ml" 94 3198 3231
+type(
+  string
+)
+ident(
+  def name "bytecomp/bytesections.ml" 94 3198 3241 "bytecomp/bytesections.ml" 94 3198 3252
+)
+"bytecomp/bytesections.ml" 94 3198 3233 "bytecomp/bytesections.ml" 94 3198 3236
+type(
+  int
+)
+ident(
+  def len "bytecomp/bytesections.ml" 94 3198 3241 "bytecomp/bytesections.ml" 94 3198 3252
+)
+"bytecomp/bytesections.ml" 94 3198 3226 "bytecomp/bytesections.ml" 94 3198 3237
+type(
+  string * int
+)
+"bytecomp/bytesections.ml" 94 3198 3241 "bytecomp/bytesections.ml" 94 3198 3246
+type(
+  int
+)
+ident(
+  int_ref total "bytecomp/bytesections.ml" 94 3198 3220 "bytecomp/bytesections.ml" 94 3198 3225
+)
+"bytecomp/bytesections.ml" 94 3198 3247 "bytecomp/bytesections.ml" 94 3198 3248
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"bytecomp/bytesections.ml" 94 3198 3249 "bytecomp/bytesections.ml" 94 3198 3252
+type(
+  int
+)
+ident(
+  int_ref len "bytecomp/bytesections.ml" 94 3198 3233 "bytecomp/bytesections.ml" 94 3198 3236
+)
+"bytecomp/bytesections.ml" 94 3198 3241 "bytecomp/bytesections.ml" 94 3198 3252
+type(
+  int
+)
+"bytecomp/bytesections.ml" 94 3198 3215 "bytecomp/bytesections.ml" 94 3198 3253
+type(
+  int -> string * int -> int
+)
+"bytecomp/bytesections.ml" 94 3198 3254 "bytecomp/bytesections.ml" 94 3198 3255
+type(
+  int
+)
+"bytecomp/bytesections.ml" 94 3198 3256 "bytecomp/bytesections.ml" 94 3198 3257
+type(
+  (string * int) list ref -> (string * int) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"bytecomp/bytesections.ml" 94 3198 3257 "bytecomp/bytesections.ml" 94 3198 3270
+type(
+  (string * int) list ref
+)
+ident(
+  int_ref section_table "bytecomp/bytesections.ml" 17 918 922 "bytecomp/bytesections.ml" 17 918 935
+)
+"bytecomp/bytesections.ml" 94 3198 3256 "bytecomp/bytesections.ml" 94 3198 3270
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 94 3198 3200 "bytecomp/bytesections.ml" 94 3198 3270
+call(
+  stack
+)
+type(
+  int
+)
+"bytecomp/bytesections.ml" 93 3135 3137 "bytecomp/bytesections.ml" 94 3198 3270
+type(
+  int
+)
+"bytecomp/bytesections.ml" 96 3272 3276 "bytecomp/bytesections.ml" 96 3272 3281
+type(
+  unit -> unit
+)
+ident(
+  def reset "bytecomp/bytesections.ml" 98 3310 3334 "bytecomp/bytesections.ml" 1 0 -1
+)
+"bytecomp/bytesections.ml" 96 3272 3282 "bytecomp/bytesections.ml" 96 3272 3284
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 97 3287 3289 "bytecomp/bytesections.ml" 97 3287 3302
+type(
+  (string * int) list ref
+)
+ident(
+  int_ref section_table "bytecomp/bytesections.ml" 17 918 922 "bytecomp/bytesections.ml" 17 918 935
+)
+"bytecomp/bytesections.ml" 97 3287 3303 "bytecomp/bytesections.ml" 97 3287 3305
+type(
+  (string * int) list ref -> (string * int) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"bytecomp/bytesections.ml" 97 3287 3306 "bytecomp/bytesections.ml" 97 3287 3308
+type(
+  (string * int) list
+)
+"bytecomp/bytesections.ml" 97 3287 3289 "bytecomp/bytesections.ml" 97 3287 3308
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 98 3310 3312 "bytecomp/bytesections.ml" 98 3310 3329
+type(
+  int ref
+)
+ident(
+  int_ref section_beginning "bytecomp/bytesections.ml" 21 996 1000 "bytecomp/bytesections.ml" 21 996 1017
+)
+"bytecomp/bytesections.ml" 98 3310 3330 "bytecomp/bytesections.ml" 98 3310 3332
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"bytecomp/bytesections.ml" 98 3310 3333 "bytecomp/bytesections.ml" 98 3310 3334
+type(
+  int
+)
+"bytecomp/bytesections.ml" 98 3310 3312 "bytecomp/bytesections.ml" 98 3310 3334
+type(
+  unit
+)
+"bytecomp/bytesections.ml" 97 3287 3289 "bytecomp/bytesections.ml" 98 3310 3334
+type(
+  unit
+)

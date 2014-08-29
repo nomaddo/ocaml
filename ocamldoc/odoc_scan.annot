@@ -1,0 +1,2062 @@
+"odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+type(
+  < scan_attribute : Odoc_value.t_attribute -> unit;
+    scan_class : Odoc_class.t_class -> unit;
+    scan_class_comment : Odoc_types.text -> unit;
+    scan_class_elements : Odoc_class.t_class -> unit;
+    scan_class_pre : Odoc_class.t_class -> bool;
+    scan_class_type : Odoc_class.t_class_type -> unit;
+    scan_class_type_comment : Odoc_types.text -> unit;
+    scan_class_type_elements : Odoc_class.t_class_type -> unit;
+    scan_class_type_pre : Odoc_class.t_class_type -> bool;
+    scan_exception : Odoc_exception.t_exception -> unit;
+    scan_extension_constructor : Odoc_extension.t_extension_constructor ->
+                                 unit;
+    scan_included_module : Odoc_module.included_module -> unit;
+    scan_method : Odoc_value.t_method -> unit;
+    scan_module : Odoc_module.t_module -> unit;
+    scan_module_comment : Odoc_types.text -> unit;
+    scan_module_elements : Odoc_module.t_module -> unit;
+    scan_module_list : Odoc_module.t_module list -> unit;
+    scan_module_pre : Odoc_module.t_module -> bool;
+    scan_module_type : Odoc_module.t_module_type -> unit;
+    scan_module_type_comment : Odoc_types.text -> unit;
+    scan_module_type_elements : Odoc_module.t_module_type -> unit;
+    scan_module_type_pre : Odoc_module.t_module_type -> bool;
+    scan_type : Odoc_type.t_type -> unit;
+    scan_type_const : Odoc_type.t_type ->
+                      Odoc_type.variant_constructor -> unit;
+    scan_type_extension : Odoc_extension.t_type_extension -> unit;
+    scan_type_extension_constructors : Odoc_extension.t_type_extension ->
+                                       unit;
+    scan_type_extension_pre : Odoc_extension.t_type_extension -> bool;
+    scan_type_pre : Odoc_type.t_type -> bool;
+    scan_type_recfield : Odoc_type.t_type -> Odoc_type.record_field -> unit;
+    scan_value : Odoc_value.t_value -> unit; .. >
+)
+"odoc_scan.ml" 29 1266 1289 "odoc_scan.ml" 29 1266 1290
+type(
+  Odoc_value.t_value
+)
+ident(
+  def v "odoc_scan.ml" 29 1266 1315 "odoc_scan.ml" 29 1266 1317
+)
+"odoc_scan.ml" 29 1266 1315 "odoc_scan.ml" 29 1266 1317
+type(
+  unit
+)
+"odoc_scan.ml" 31 1319 1345 "odoc_scan.ml" 31 1319 1346
+type(
+  Odoc_type.t_type
+)
+ident(
+  def t "odoc_scan.ml" 31 1319 1369 "odoc_scan.ml" 31 1319 1373
+)
+"odoc_scan.ml" 31 1319 1369 "odoc_scan.ml" 31 1319 1373
+type(
+  bool
+)
+"odoc_scan.ml" 33 1375 1405 "odoc_scan.ml" 33 1375 1406
+type(
+  Odoc_type.t_type
+)
+ident(
+  def t "odoc_scan.ml" 33 1375 1407 "odoc_scan.ml" 33 1375 1440
+)
+"odoc_scan.ml" 33 1375 1408 "odoc_scan.ml" 33 1375 1409
+type(
+  Odoc_type.record_field
+)
+ident(
+  def f "odoc_scan.ml" 33 1375 1438 "odoc_scan.ml" 33 1375 1440
+)
+"odoc_scan.ml" 33 1375 1438 "odoc_scan.ml" 33 1375 1440
+type(
+  unit
+)
+"odoc_scan.ml" 34 1441 1468 "odoc_scan.ml" 34 1441 1469
+type(
+  Odoc_type.t_type
+)
+ident(
+  def t "odoc_scan.ml" 34 1441 1470 "odoc_scan.ml" 34 1441 1510
+)
+"odoc_scan.ml" 34 1441 1471 "odoc_scan.ml" 34 1441 1472
+type(
+  Odoc_type.variant_constructor
+)
+ident(
+  def f "odoc_scan.ml" 34 1441 1508 "odoc_scan.ml" 34 1441 1510
+)
+"odoc_scan.ml" 34 1441 1508 "odoc_scan.ml" 34 1441 1510
+type(
+  unit
+)
+"odoc_scan.ml" 35 1511 1533 "odoc_scan.ml" 35 1511 1534
+type(
+  Odoc_type.t_type
+)
+ident(
+  def t "odoc_scan.ml" 36 1557 1563 "odoc_scan.ml" 41 1823 1858
+)
+"odoc_scan.ml" 36 1557 1566 "odoc_scan.ml" 36 1557 1570
+type(
+  < scan_attribute : Odoc_value.t_attribute -> unit;
+    scan_class : Odoc_class.t_class -> unit;
+    scan_class_comment : Odoc_types.text -> unit;
+    scan_class_elements : Odoc_class.t_class -> unit;
+    scan_class_pre : Odoc_class.t_class -> bool;
+    scan_class_type : Odoc_class.t_class_type -> unit;
+    scan_class_type_comment : Odoc_types.text -> unit;
+    scan_class_type_elements : Odoc_class.t_class_type -> unit;
+    scan_class_type_pre : Odoc_class.t_class_type -> bool;
+    scan_exception : Odoc_exception.t_exception -> unit;
+    scan_extension_constructor : Odoc_extension.t_extension_constructor ->
+                                 unit;
+    scan_included_module : Odoc_module.included_module -> unit;
+    scan_method : Odoc_value.t_method -> unit;
+    scan_module : Odoc_module.t_module -> unit;
+    scan_module_comment : Odoc_types.text -> unit;
+    scan_module_elements : Odoc_module.t_module -> unit;
+    scan_module_list : Odoc_module.t_module list -> unit;
+    scan_module_pre : Odoc_module.t_module -> bool;
+    scan_module_type : Odoc_module.t_module_type -> unit;
+    scan_module_type_comment : Odoc_types.text -> unit;
+    scan_module_type_elements : Odoc_module.t_module_type -> unit;
+    scan_module_type_pre : Odoc_module.t_module_type -> bool;
+    scan_type : Odoc_type.t_type -> unit;
+    scan_type_const : Odoc_type.t_type ->
+                      Odoc_type.variant_constructor -> unit;
+    scan_type_extension : Odoc_extension.t_type_extension -> unit;
+    scan_type_extension_constructors : Odoc_extension.t_type_extension ->
+                                       unit;
+    scan_type_extension_pre : Odoc_extension.t_type_extension -> bool;
+    scan_type_pre : Odoc_type.t_type -> bool;
+    scan_type_recfield : Odoc_type.t_type -> Odoc_type.record_field -> unit;
+    scan_value : Odoc_value.t_value -> unit; .. >
+  as 'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 36 1557 1566 "odoc_scan.ml" 36 1557 1584
+call(
+  stack
+)
+type(
+  Odoc_type.t_type -> bool
+)
+"odoc_scan.ml" 36 1557 1585 "odoc_scan.ml" 36 1557 1586
+type(
+  Odoc_type.t_type
+)
+ident(
+  int_ref t "odoc_scan.ml" 35 1511 1533 "odoc_scan.ml" 35 1511 1534
+)
+"odoc_scan.ml" 36 1557 1566 "odoc_scan.ml" 36 1557 1586
+type(
+  bool
+)
+"odoc_scan.ml" 37 1592 1606 "odoc_scan.ml" 37 1592 1607
+type(
+  Odoc_type.t_type
+)
+ident(
+  int_ref t "odoc_scan.ml" 35 1511 1533 "odoc_scan.ml" 35 1511 1534
+)
+"odoc_scan.ml" 37 1592 1606 "odoc_scan.ml" 37 1592 1625
+type(
+  Odoc_type.type_kind
+)
+"odoc_scan.ml" 38 1631 1641 "odoc_scan.ml" 38 1631 1664
+type(
+  Odoc_type.type_kind
+)
+"odoc_scan.ml" 38 1631 1668 "odoc_scan.ml" 38 1631 1670
+type(
+  unit
+)
+"odoc_scan.ml" 39 1671 1704 "odoc_scan.ml" 39 1671 1705
+type(
+  Odoc_type.variant_constructor list
+)
+ident(
+  def l "odoc_scan.ml" 39 1671 1709 "odoc_scan.ml" 39 1671 1745
+)
+"odoc_scan.ml" 39 1671 1681 "odoc_scan.ml" 39 1671 1705
+type(
+  Odoc_type.type_kind
+)
+"odoc_scan.ml" 39 1671 1709 "odoc_scan.ml" 39 1671 1718
+type(
+  (Odoc_type.variant_constructor -> unit) ->
+  Odoc_type.variant_constructor list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_scan.ml" 39 1671 1720 "odoc_scan.ml" 39 1671 1724
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 39 1671 1720 "odoc_scan.ml" 39 1671 1740
+call(
+  stack
+)
+type(
+  Odoc_type.t_type -> Odoc_type.variant_constructor -> unit
+)
+"odoc_scan.ml" 39 1671 1741 "odoc_scan.ml" 39 1671 1742
+type(
+  Odoc_type.t_type
+)
+ident(
+  int_ref t "odoc_scan.ml" 35 1511 1533 "odoc_scan.ml" 35 1511 1534
+)
+"odoc_scan.ml" 39 1671 1719 "odoc_scan.ml" 39 1671 1743
+type(
+  Odoc_type.variant_constructor -> unit
+)
+"odoc_scan.ml" 39 1671 1744 "odoc_scan.ml" 39 1671 1745
+type(
+  Odoc_type.variant_constructor list
+)
+ident(
+  int_ref l "odoc_scan.ml" 39 1671 1704 "odoc_scan.ml" 39 1671 1705
+)
+"odoc_scan.ml" 39 1671 1709 "odoc_scan.ml" 39 1671 1745
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_scan.ml" 40 1746 1778 "odoc_scan.ml" 40 1746 1779
+type(
+  Odoc_type.record_field list
+)
+ident(
+  def l "odoc_scan.ml" 40 1746 1783 "odoc_scan.ml" 40 1746 1822
+)
+"odoc_scan.ml" 40 1746 1756 "odoc_scan.ml" 40 1746 1779
+type(
+  Odoc_type.type_kind
+)
+"odoc_scan.ml" 40 1746 1783 "odoc_scan.ml" 40 1746 1792
+type(
+  (Odoc_type.record_field -> unit) -> Odoc_type.record_field list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_scan.ml" 40 1746 1794 "odoc_scan.ml" 40 1746 1798
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 40 1746 1794 "odoc_scan.ml" 40 1746 1817
+call(
+  stack
+)
+type(
+  Odoc_type.t_type -> Odoc_type.record_field -> unit
+)
+"odoc_scan.ml" 40 1746 1818 "odoc_scan.ml" 40 1746 1819
+type(
+  Odoc_type.t_type
+)
+ident(
+  int_ref t "odoc_scan.ml" 35 1511 1533 "odoc_scan.ml" 35 1511 1534
+)
+"odoc_scan.ml" 40 1746 1793 "odoc_scan.ml" 40 1746 1820
+type(
+  Odoc_type.record_field -> unit
+)
+"odoc_scan.ml" 40 1746 1821 "odoc_scan.ml" 40 1746 1822
+type(
+  Odoc_type.record_field list
+)
+ident(
+  int_ref l "odoc_scan.ml" 40 1746 1778 "odoc_scan.ml" 40 1746 1779
+)
+"odoc_scan.ml" 40 1746 1783 "odoc_scan.ml" 40 1746 1822
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_scan.ml" 41 1823 1833 "odoc_scan.ml" 41 1823 1852
+type(
+  Odoc_type.type_kind
+)
+"odoc_scan.ml" 41 1823 1856 "odoc_scan.ml" 41 1823 1858
+type(
+  unit
+)
+"odoc_scan.ml" 37 1592 1600 "odoc_scan.ml" 41 1823 1858
+type(
+  unit
+)
+"odoc_scan.ml" 36 1557 1563 "odoc_scan.ml" 41 1823 1858
+type(
+  unit
+)
+"odoc_scan.ml" 43 1860 1899 "odoc_scan.ml" 43 1860 1900
+type(
+  Odoc_extension.t_extension_constructor
+)
+ident(
+  def e "odoc_scan.ml" 43 1860 1945 "odoc_scan.ml" 43 1860 1947
+)
+"odoc_scan.ml" 43 1860 1945 "odoc_scan.ml" 43 1860 1947
+type(
+  unit
+)
+"odoc_scan.ml" 44 1948 1975 "odoc_scan.ml" 44 1948 1976
+type(
+  Odoc_exception.t_exception
+)
+ident(
+  def e "odoc_scan.ml" 44 1948 2009 "odoc_scan.ml" 44 1948 2011
+)
+"odoc_scan.ml" 44 1948 2009 "odoc_scan.ml" 44 1948 2011
+type(
+  unit
+)
+"odoc_scan.ml" 45 2012 2039 "odoc_scan.ml" 45 2012 2040
+type(
+  Odoc_value.t_attribute
+)
+ident(
+  def a "odoc_scan.ml" 45 2012 2069 "odoc_scan.ml" 45 2012 2071
+)
+"odoc_scan.ml" 45 2012 2069 "odoc_scan.ml" 45 2012 2071
+type(
+  unit
+)
+"odoc_scan.ml" 46 2072 2096 "odoc_scan.ml" 46 2072 2097
+type(
+  Odoc_value.t_method
+)
+ident(
+  def m "odoc_scan.ml" 46 2072 2123 "odoc_scan.ml" 46 2072 2125
+)
+"odoc_scan.ml" 46 2072 2123 "odoc_scan.ml" 46 2072 2125
+type(
+  unit
+)
+"odoc_scan.ml" 47 2126 2159 "odoc_scan.ml" 47 2126 2161
+type(
+  Odoc_module.included_module
+)
+ident(
+  def im "odoc_scan.ml" 47 2126 2195 "odoc_scan.ml" 47 2126 2197
+)
+"odoc_scan.ml" 47 2126 2195 "odoc_scan.ml" 47 2126 2197
+type(
+  unit
+)
+"odoc_scan.ml" 55 2482 2518 "odoc_scan.ml" 55 2482 2519
+type(
+  Odoc_extension.t_type_extension
+)
+ident(
+  def x "odoc_scan.ml" 55 2482 2556 "odoc_scan.ml" 55 2482 2560
+)
+"odoc_scan.ml" 55 2482 2556 "odoc_scan.ml" 55 2482 2560
+type(
+  bool
+)
+"odoc_scan.ml" 58 2637 2682 "odoc_scan.ml" 58 2637 2683
+type(
+  Odoc_extension.t_type_extension
+)
+ident(
+  def x "odoc_scan.ml" 59 2720 2726 "odoc_scan.ml" 59 2720 2809
+)
+"odoc_scan.ml" 59 2720 2726 "odoc_scan.ml" 59 2720 2735
+type(
+  (Odoc_extension.t_extension_constructor -> unit) ->
+  Odoc_extension.t_extension_constructor list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_scan.ml" 59 2720 2736 "odoc_scan.ml" 59 2720 2740
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 59 2720 2736 "odoc_scan.ml" 59 2720 2767
+call(
+  stack
+)
+type(
+  Odoc_extension.t_extension_constructor -> unit
+)
+"odoc_scan.ml" 59 2720 2769 "odoc_scan.ml" 59 2720 2806
+type(
+  Odoc_extension.t_type_extension ->
+  Odoc_extension.t_extension_constructor list
+)
+ident(
+  ext_ref Odoc_extension.extension_constructors
+)
+"odoc_scan.ml" 59 2720 2807 "odoc_scan.ml" 59 2720 2808
+type(
+  Odoc_extension.t_type_extension
+)
+ident(
+  int_ref x "odoc_scan.ml" 58 2637 2682 "odoc_scan.ml" 58 2637 2683
+)
+"odoc_scan.ml" 59 2720 2768 "odoc_scan.ml" 59 2720 2809
+call(
+  stack
+)
+type(
+  Odoc_extension.t_extension_constructor list
+)
+"odoc_scan.ml" 59 2720 2726 "odoc_scan.ml" 59 2720 2809
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_scan.ml" 63 3011 3043 "odoc_scan.ml" 63 3011 3044
+type(
+  Odoc_extension.t_type_extension
+)
+ident(
+  def x "odoc_scan.ml" 64 3081 3087 "odoc_scan.ml" 64 3081 3165
+)
+"odoc_scan.ml" 64 3081 3090 "odoc_scan.ml" 64 3081 3094
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 64 3081 3090 "odoc_scan.ml" 64 3081 3118
+call(
+  stack
+)
+type(
+  Odoc_extension.t_type_extension -> bool
+)
+"odoc_scan.ml" 64 3081 3119 "odoc_scan.ml" 64 3081 3120
+type(
+  Odoc_extension.t_type_extension
+)
+ident(
+  int_ref x "odoc_scan.ml" 63 3011 3043 "odoc_scan.ml" 63 3011 3044
+)
+"odoc_scan.ml" 64 3081 3090 "odoc_scan.ml" 64 3081 3120
+type(
+  bool
+)
+"odoc_scan.ml" 64 3081 3126 "odoc_scan.ml" 64 3081 3130
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 64 3081 3126 "odoc_scan.ml" 64 3081 3163
+call(
+  tail
+)
+type(
+  Odoc_extension.t_type_extension -> unit
+)
+"odoc_scan.ml" 64 3081 3164 "odoc_scan.ml" 64 3081 3165
+type(
+  Odoc_extension.t_type_extension
+)
+ident(
+  int_ref x "odoc_scan.ml" 63 3011 3043 "odoc_scan.ml" 63 3011 3044
+)
+"odoc_scan.ml" 64 3081 3126 "odoc_scan.ml" 64 3081 3165
+type(
+  unit
+)
+"odoc_scan.ml" 64 3081 3087 "odoc_scan.ml" 64 3081 3165
+type(
+  unit
+)
+"odoc_scan.ml" 70 3240 3271 "odoc_scan.ml" 70 3240 3272
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_scan.ml" 70 3240 3283 "odoc_scan.ml" 70 3240 3285
+)
+"odoc_scan.ml" 70 3240 3283 "odoc_scan.ml" 70 3240 3285
+type(
+  unit
+)
+"odoc_scan.ml" 75 3495 3522 "odoc_scan.ml" 75 3495 3523
+type(
+  Odoc_class.t_class
+)
+ident(
+  def c "odoc_scan.ml" 75 3495 3548 "odoc_scan.ml" 75 3495 3552
+)
+"odoc_scan.ml" 75 3495 3548 "odoc_scan.ml" 75 3495 3552
+type(
+  bool
+)
+"odoc_scan.ml" 79 3657 3688 "odoc_scan.ml" 79 3657 3689
+type(
+  Odoc_class.t_class
+)
+ident(
+  def c "odoc_scan.ml" 80 3692 3698 "odoc_scan.ml" 87 3957 3994
+)
+"odoc_scan.ml" 80 3692 3698 "odoc_scan.ml" 80 3692 3707
+type(
+  (Odoc_class.class_element -> unit) -> Odoc_class.class_element list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_scan.ml" 81 3708 3721 "odoc_scan.ml" 81 3708 3724
+type(
+  Odoc_class.class_element
+)
+ident(
+  def ele "odoc_scan.ml" 82 3728 3738 "odoc_scan.ml" 85 3879 3946
+)
+"odoc_scan.ml" 82 3728 3744 "odoc_scan.ml" 82 3728 3747
+type(
+  Odoc_class.class_element
+)
+ident(
+  int_ref ele "odoc_scan.ml" 81 3708 3721 "odoc_scan.ml" 81 3708 3724
+)
+"odoc_scan.ml" 83 3753 3792 "odoc_scan.ml" 83 3753 3793
+type(
+  Odoc_value.t_attribute
+)
+ident(
+  def a "odoc_scan.ml" 83 3753 3797 "odoc_scan.ml" 83 3753 3818
+)
+"odoc_scan.ml" 83 3753 3765 "odoc_scan.ml" 83 3753 3793
+type(
+  Odoc_class.class_element
+)
+"odoc_scan.ml" 83 3753 3797 "odoc_scan.ml" 83 3753 3801
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 83 3753 3797 "odoc_scan.ml" 83 3753 3816
+call(
+  tail
+)
+type(
+  Odoc_value.t_attribute -> unit
+)
+"odoc_scan.ml" 83 3753 3817 "odoc_scan.ml" 83 3753 3818
+type(
+  Odoc_value.t_attribute
+)
+ident(
+  int_ref a "odoc_scan.ml" 83 3753 3792 "odoc_scan.ml" 83 3753 3793
+)
+"odoc_scan.ml" 83 3753 3797 "odoc_scan.ml" 83 3753 3818
+type(
+  unit
+)
+"odoc_scan.ml" 84 3819 3855 "odoc_scan.ml" 84 3819 3856
+type(
+  Odoc_value.t_method
+)
+ident(
+  def m "odoc_scan.ml" 84 3819 3860 "odoc_scan.ml" 84 3819 3878
+)
+"odoc_scan.ml" 84 3819 3831 "odoc_scan.ml" 84 3819 3856
+type(
+  Odoc_class.class_element
+)
+"odoc_scan.ml" 84 3819 3860 "odoc_scan.ml" 84 3819 3864
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 84 3819 3860 "odoc_scan.ml" 84 3819 3876
+call(
+  tail
+)
+type(
+  Odoc_value.t_method -> unit
+)
+"odoc_scan.ml" 84 3819 3877 "odoc_scan.ml" 84 3819 3878
+type(
+  Odoc_value.t_method
+)
+ident(
+  int_ref m "odoc_scan.ml" 84 3819 3855 "odoc_scan.ml" 84 3819 3856
+)
+"odoc_scan.ml" 84 3819 3860 "odoc_scan.ml" 84 3819 3878
+type(
+  unit
+)
+"odoc_scan.ml" 85 3879 3916 "odoc_scan.ml" 85 3879 3917
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_scan.ml" 85 3879 3921 "odoc_scan.ml" 85 3879 3946
+)
+"odoc_scan.ml" 85 3879 3891 "odoc_scan.ml" 85 3879 3917
+type(
+  Odoc_class.class_element
+)
+"odoc_scan.ml" 85 3879 3921 "odoc_scan.ml" 85 3879 3925
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 85 3879 3921 "odoc_scan.ml" 85 3879 3944
+call(
+  tail
+)
+type(
+  Odoc_types.text -> unit
+)
+"odoc_scan.ml" 85 3879 3945 "odoc_scan.ml" 85 3879 3946
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref t "odoc_scan.ml" 85 3879 3916 "odoc_scan.ml" 85 3879 3917
+)
+"odoc_scan.ml" 85 3879 3921 "odoc_scan.ml" 85 3879 3946
+type(
+  unit
+)
+"odoc_scan.ml" 82 3728 3738 "odoc_scan.ml" 85 3879 3946
+type(
+  unit
+)
+"odoc_scan.ml" 81 3708 3716 "odoc_scan.ml" 86 3947 3956
+type(
+  Odoc_class.class_element -> unit
+)
+"odoc_scan.ml" 87 3957 3966 "odoc_scan.ml" 87 3957 3991
+type(
+  ?trans:bool -> Odoc_class.t_class -> Odoc_class.class_element list
+)
+ident(
+  ext_ref Odoc_class.class_elements
+)
+"odoc_scan.ml" 87 3957 3992 "odoc_scan.ml" 87 3957 3993
+type(
+  Odoc_class.t_class
+)
+ident(
+  int_ref c "odoc_scan.ml" 79 3657 3688 "odoc_scan.ml" 79 3657 3689
+)
+"odoc_scan.ml" 87 3957 3965 "odoc_scan.ml" 87 3957 3994
+call(
+  stack
+)
+type(
+  Odoc_class.class_element list
+)
+"odoc_scan.ml" 80 3692 3698 "odoc_scan.ml" 87 3957 3994
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_scan.ml" 91 4156 4178 "odoc_scan.ml" 91 4156 4179
+type(
+  Odoc_class.t_class
+)
+ident(
+  def c "odoc_scan.ml" 91 4156 4182 "odoc_scan.ml" 91 4156 4238
+)
+"odoc_scan.ml" 91 4156 4185 "odoc_scan.ml" 91 4156 4189
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 91 4156 4185 "odoc_scan.ml" 91 4156 4204
+call(
+  stack
+)
+type(
+  Odoc_class.t_class -> bool
+)
+"odoc_scan.ml" 91 4156 4205 "odoc_scan.ml" 91 4156 4206
+type(
+  Odoc_class.t_class
+)
+ident(
+  int_ref c "odoc_scan.ml" 91 4156 4178 "odoc_scan.ml" 91 4156 4179
+)
+"odoc_scan.ml" 91 4156 4185 "odoc_scan.ml" 91 4156 4206
+type(
+  bool
+)
+"odoc_scan.ml" 91 4156 4212 "odoc_scan.ml" 91 4156 4216
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 91 4156 4212 "odoc_scan.ml" 91 4156 4236
+call(
+  tail
+)
+type(
+  Odoc_class.t_class -> unit
+)
+"odoc_scan.ml" 91 4156 4237 "odoc_scan.ml" 91 4156 4238
+type(
+  Odoc_class.t_class
+)
+ident(
+  int_ref c "odoc_scan.ml" 91 4156 4178 "odoc_scan.ml" 91 4156 4179
+)
+"odoc_scan.ml" 91 4156 4212 "odoc_scan.ml" 91 4156 4238
+type(
+  unit
+)
+"odoc_scan.ml" 91 4156 4182 "odoc_scan.ml" 91 4156 4238
+type(
+  unit
+)
+"odoc_scan.ml" 96 4322 4358 "odoc_scan.ml" 96 4322 4359
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_scan.ml" 96 4322 4370 "odoc_scan.ml" 96 4322 4372
+)
+"odoc_scan.ml" 96 4322 4370 "odoc_scan.ml" 96 4322 4372
+type(
+  unit
+)
+"odoc_scan.ml" 101 4595 4627 "odoc_scan.ml" 101 4595 4629
+type(
+  Odoc_class.t_class_type
+)
+ident(
+  def ct "odoc_scan.ml" 101 4595 4659 "odoc_scan.ml" 101 4595 4663
+)
+"odoc_scan.ml" 101 4595 4659 "odoc_scan.ml" 101 4595 4663
+type(
+  bool
+)
+"odoc_scan.ml" 105 4773 4809 "odoc_scan.ml" 105 4773 4811
+type(
+  Odoc_class.t_class_type
+)
+ident(
+  def ct "odoc_scan.ml" 106 4814 4820 "odoc_scan.ml" 113 5084 5127
+)
+"odoc_scan.ml" 106 4814 4820 "odoc_scan.ml" 106 4814 4829
+type(
+  (Odoc_class.class_element -> unit) -> Odoc_class.class_element list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_scan.ml" 107 4830 4843 "odoc_scan.ml" 107 4830 4846
+type(
+  Odoc_class.class_element
+)
+ident(
+  def ele "odoc_scan.ml" 108 4850 4860 "odoc_scan.ml" 111 5001 5073
+)
+"odoc_scan.ml" 108 4850 4866 "odoc_scan.ml" 108 4850 4869
+type(
+  Odoc_class.class_element
+)
+ident(
+  int_ref ele "odoc_scan.ml" 107 4830 4843 "odoc_scan.ml" 107 4830 4846
+)
+"odoc_scan.ml" 109 4875 4914 "odoc_scan.ml" 109 4875 4915
+type(
+  Odoc_value.t_attribute
+)
+ident(
+  def a "odoc_scan.ml" 109 4875 4919 "odoc_scan.ml" 109 4875 4940
+)
+"odoc_scan.ml" 109 4875 4887 "odoc_scan.ml" 109 4875 4915
+type(
+  Odoc_class.class_element
+)
+"odoc_scan.ml" 109 4875 4919 "odoc_scan.ml" 109 4875 4923
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 109 4875 4919 "odoc_scan.ml" 109 4875 4938
+call(
+  tail
+)
+type(
+  Odoc_value.t_attribute -> unit
+)
+"odoc_scan.ml" 109 4875 4939 "odoc_scan.ml" 109 4875 4940
+type(
+  Odoc_value.t_attribute
+)
+ident(
+  int_ref a "odoc_scan.ml" 109 4875 4914 "odoc_scan.ml" 109 4875 4915
+)
+"odoc_scan.ml" 109 4875 4919 "odoc_scan.ml" 109 4875 4940
+type(
+  unit
+)
+"odoc_scan.ml" 110 4941 4977 "odoc_scan.ml" 110 4941 4978
+type(
+  Odoc_value.t_method
+)
+ident(
+  def m "odoc_scan.ml" 110 4941 4982 "odoc_scan.ml" 110 4941 5000
+)
+"odoc_scan.ml" 110 4941 4953 "odoc_scan.ml" 110 4941 4978
+type(
+  Odoc_class.class_element
+)
+"odoc_scan.ml" 110 4941 4982 "odoc_scan.ml" 110 4941 4986
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 110 4941 4982 "odoc_scan.ml" 110 4941 4998
+call(
+  tail
+)
+type(
+  Odoc_value.t_method -> unit
+)
+"odoc_scan.ml" 110 4941 4999 "odoc_scan.ml" 110 4941 5000
+type(
+  Odoc_value.t_method
+)
+ident(
+  int_ref m "odoc_scan.ml" 110 4941 4977 "odoc_scan.ml" 110 4941 4978
+)
+"odoc_scan.ml" 110 4941 4982 "odoc_scan.ml" 110 4941 5000
+type(
+  unit
+)
+"odoc_scan.ml" 111 5001 5038 "odoc_scan.ml" 111 5001 5039
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_scan.ml" 111 5001 5043 "odoc_scan.ml" 111 5001 5073
+)
+"odoc_scan.ml" 111 5001 5013 "odoc_scan.ml" 111 5001 5039
+type(
+  Odoc_class.class_element
+)
+"odoc_scan.ml" 111 5001 5043 "odoc_scan.ml" 111 5001 5047
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 111 5001 5043 "odoc_scan.ml" 111 5001 5071
+call(
+  tail
+)
+type(
+  Odoc_types.text -> unit
+)
+"odoc_scan.ml" 111 5001 5072 "odoc_scan.ml" 111 5001 5073
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref t "odoc_scan.ml" 111 5001 5038 "odoc_scan.ml" 111 5001 5039
+)
+"odoc_scan.ml" 111 5001 5043 "odoc_scan.ml" 111 5001 5073
+type(
+  unit
+)
+"odoc_scan.ml" 108 4850 4860 "odoc_scan.ml" 111 5001 5073
+type(
+  unit
+)
+"odoc_scan.ml" 107 4830 4838 "odoc_scan.ml" 112 5074 5083
+type(
+  Odoc_class.class_element -> unit
+)
+"odoc_scan.ml" 113 5084 5093 "odoc_scan.ml" 113 5084 5123
+type(
+  ?trans:bool -> Odoc_class.t_class_type -> Odoc_class.class_element list
+)
+ident(
+  ext_ref Odoc_class.class_type_elements
+)
+"odoc_scan.ml" 113 5084 5124 "odoc_scan.ml" 113 5084 5126
+type(
+  Odoc_class.t_class_type
+)
+ident(
+  int_ref ct "odoc_scan.ml" 105 4773 4809 "odoc_scan.ml" 105 4773 4811
+)
+"odoc_scan.ml" 113 5084 5092 "odoc_scan.ml" 113 5084 5127
+call(
+  stack
+)
+type(
+  Odoc_class.class_element list
+)
+"odoc_scan.ml" 106 4814 4820 "odoc_scan.ml" 113 5084 5127
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_scan.ml" 117 5309 5336 "odoc_scan.ml" 117 5309 5338
+type(
+  Odoc_class.t_class_type
+)
+ident(
+  def ct "odoc_scan.ml" 117 5309 5341 "odoc_scan.ml" 117 5309 5409
+)
+"odoc_scan.ml" 117 5309 5344 "odoc_scan.ml" 117 5309 5348
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 117 5309 5344 "odoc_scan.ml" 117 5309 5368
+call(
+  stack
+)
+type(
+  Odoc_class.t_class_type -> bool
+)
+"odoc_scan.ml" 117 5309 5369 "odoc_scan.ml" 117 5309 5371
+type(
+  Odoc_class.t_class_type
+)
+ident(
+  int_ref ct "odoc_scan.ml" 117 5309 5336 "odoc_scan.ml" 117 5309 5338
+)
+"odoc_scan.ml" 117 5309 5344 "odoc_scan.ml" 117 5309 5371
+type(
+  bool
+)
+"odoc_scan.ml" 117 5309 5377 "odoc_scan.ml" 117 5309 5381
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 117 5309 5377 "odoc_scan.ml" 117 5309 5406
+call(
+  tail
+)
+type(
+  Odoc_class.t_class_type -> unit
+)
+"odoc_scan.ml" 117 5309 5407 "odoc_scan.ml" 117 5309 5409
+type(
+  Odoc_class.t_class_type
+)
+ident(
+  int_ref ct "odoc_scan.ml" 117 5309 5336 "odoc_scan.ml" 117 5309 5338
+)
+"odoc_scan.ml" 117 5309 5377 "odoc_scan.ml" 117 5309 5409
+type(
+  unit
+)
+"odoc_scan.ml" 117 5309 5341 "odoc_scan.ml" 117 5309 5409
+type(
+  unit
+)
+"odoc_scan.ml" 122 5484 5516 "odoc_scan.ml" 122 5484 5517
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_scan.ml" 122 5484 5528 "odoc_scan.ml" 122 5484 5530
+)
+"odoc_scan.ml" 122 5484 5528 "odoc_scan.ml" 122 5484 5530
+type(
+  unit
+)
+"odoc_scan.ml" 127 5741 5769 "odoc_scan.ml" 127 5741 5770
+type(
+  Odoc_module.t_module
+)
+ident(
+  def m "odoc_scan.ml" 127 5741 5797 "odoc_scan.ml" 127 5741 5801
+)
+"odoc_scan.ml" 127 5741 5797 "odoc_scan.ml" 127 5741 5801
+type(
+  bool
+)
+"odoc_scan.ml" 130 5865 5897 "odoc_scan.ml" 130 5865 5898
+type(
+  Odoc_module.t_module
+)
+ident(
+  def m "odoc_scan.ml" 131 5901 5907 "odoc_scan.ml" 145 6674 6713
+)
+"odoc_scan.ml" 131 5901 5907 "odoc_scan.ml" 131 5901 5916
+type(
+  (Odoc_module.module_element -> unit) ->
+  Odoc_module.module_element list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_scan.ml" 132 5917 5930 "odoc_scan.ml" 132 5917 5933
+type(
+  Odoc_module.module_element
+)
+ident(
+  def ele "odoc_scan.ml" 133 5937 5947 "odoc_scan.ml" 143 6585 6663
+)
+"odoc_scan.ml" 133 5937 5953 "odoc_scan.ml" 133 5937 5956
+type(
+  Odoc_module.module_element
+)
+ident(
+  int_ref ele "odoc_scan.ml" 132 5917 5930 "odoc_scan.ml" 132 5917 5933
+)
+"odoc_scan.ml" 134 5962 6001 "odoc_scan.ml" 134 5962 6002
+type(
+  Odoc_module.t_module
+)
+ident(
+  def m "odoc_scan.ml" 134 5962 6006 "odoc_scan.ml" 134 5962 6024
+)
+"odoc_scan.ml" 134 5962 5974 "odoc_scan.ml" 134 5962 6002
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 134 5962 6006 "odoc_scan.ml" 134 5962 6010
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 134 5962 6006 "odoc_scan.ml" 134 5962 6022
+call(
+  tail
+)
+type(
+  Odoc_module.t_module -> unit
+)
+"odoc_scan.ml" 134 5962 6023 "odoc_scan.ml" 134 5962 6024
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref m "odoc_scan.ml" 134 5962 6001 "odoc_scan.ml" 134 5962 6002
+)
+"odoc_scan.ml" 134 5962 6006 "odoc_scan.ml" 134 5962 6024
+type(
+  unit
+)
+"odoc_scan.ml" 135 6025 6069 "odoc_scan.ml" 135 6025 6071
+type(
+  Odoc_module.t_module_type
+)
+ident(
+  def mt "odoc_scan.ml" 135 6025 6075 "odoc_scan.ml" 135 6025 6099
+)
+"odoc_scan.ml" 135 6025 6037 "odoc_scan.ml" 135 6025 6071
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 135 6025 6075 "odoc_scan.ml" 135 6025 6079
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 135 6025 6075 "odoc_scan.ml" 135 6025 6096
+call(
+  tail
+)
+type(
+  Odoc_module.t_module_type -> unit
+)
+"odoc_scan.ml" 135 6025 6097 "odoc_scan.ml" 135 6025 6099
+type(
+  Odoc_module.t_module_type
+)
+ident(
+  int_ref mt "odoc_scan.ml" 135 6025 6069 "odoc_scan.ml" 135 6025 6071
+)
+"odoc_scan.ml" 135 6025 6075 "odoc_scan.ml" 135 6025 6099
+type(
+  unit
+)
+"odoc_scan.ml" 136 6100 6148 "odoc_scan.ml" 136 6100 6150
+type(
+  Odoc_module.included_module
+)
+ident(
+  def im "odoc_scan.ml" 136 6100 6154 "odoc_scan.ml" 136 6100 6182
+)
+"odoc_scan.ml" 136 6100 6112 "odoc_scan.ml" 136 6100 6150
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 136 6100 6154 "odoc_scan.ml" 136 6100 6158
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 136 6100 6154 "odoc_scan.ml" 136 6100 6179
+call(
+  tail
+)
+type(
+  Odoc_module.included_module -> unit
+)
+"odoc_scan.ml" 136 6100 6180 "odoc_scan.ml" 136 6100 6182
+type(
+  Odoc_module.included_module
+)
+ident(
+  int_ref im "odoc_scan.ml" 136 6100 6148 "odoc_scan.ml" 136 6100 6150
+)
+"odoc_scan.ml" 136 6100 6154 "odoc_scan.ml" 136 6100 6182
+type(
+  unit
+)
+"odoc_scan.ml" 137 6183 6221 "odoc_scan.ml" 137 6183 6222
+type(
+  Odoc_class.t_class
+)
+ident(
+  def c "odoc_scan.ml" 137 6183 6226 "odoc_scan.ml" 137 6183 6243
+)
+"odoc_scan.ml" 137 6183 6195 "odoc_scan.ml" 137 6183 6222
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 137 6183 6226 "odoc_scan.ml" 137 6183 6230
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 137 6183 6226 "odoc_scan.ml" 137 6183 6241
+call(
+  tail
+)
+type(
+  Odoc_class.t_class -> unit
+)
+"odoc_scan.ml" 137 6183 6242 "odoc_scan.ml" 137 6183 6243
+type(
+  Odoc_class.t_class
+)
+ident(
+  int_ref c "odoc_scan.ml" 137 6183 6221 "odoc_scan.ml" 137 6183 6222
+)
+"odoc_scan.ml" 137 6183 6226 "odoc_scan.ml" 137 6183 6243
+type(
+  unit
+)
+"odoc_scan.ml" 138 6244 6287 "odoc_scan.ml" 138 6244 6289
+type(
+  Odoc_class.t_class_type
+)
+ident(
+  def ct "odoc_scan.ml" 138 6244 6293 "odoc_scan.ml" 138 6244 6316
+)
+"odoc_scan.ml" 138 6244 6256 "odoc_scan.ml" 138 6244 6289
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 138 6244 6293 "odoc_scan.ml" 138 6244 6297
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 138 6244 6293 "odoc_scan.ml" 138 6244 6313
+call(
+  tail
+)
+type(
+  Odoc_class.t_class_type -> unit
+)
+"odoc_scan.ml" 138 6244 6314 "odoc_scan.ml" 138 6244 6316
+type(
+  Odoc_class.t_class_type
+)
+ident(
+  int_ref ct "odoc_scan.ml" 138 6244 6287 "odoc_scan.ml" 138 6244 6289
+)
+"odoc_scan.ml" 138 6244 6293 "odoc_scan.ml" 138 6244 6316
+type(
+  unit
+)
+"odoc_scan.ml" 139 6317 6355 "odoc_scan.ml" 139 6317 6356
+type(
+  Odoc_value.t_value
+)
+ident(
+  def v "odoc_scan.ml" 139 6317 6360 "odoc_scan.ml" 139 6317 6377
+)
+"odoc_scan.ml" 139 6317 6329 "odoc_scan.ml" 139 6317 6356
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 139 6317 6360 "odoc_scan.ml" 139 6317 6364
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 139 6317 6360 "odoc_scan.ml" 139 6317 6375
+call(
+  tail
+)
+type(
+  Odoc_value.t_value -> unit
+)
+"odoc_scan.ml" 139 6317 6376 "odoc_scan.ml" 139 6317 6377
+type(
+  Odoc_value.t_value
+)
+ident(
+  int_ref v "odoc_scan.ml" 139 6317 6355 "odoc_scan.ml" 139 6317 6356
+)
+"odoc_scan.ml" 139 6317 6360 "odoc_scan.ml" 139 6317 6377
+type(
+  unit
+)
+"odoc_scan.ml" 140 6378 6425 "odoc_scan.ml" 140 6378 6426
+type(
+  Odoc_extension.t_type_extension
+)
+ident(
+  def x "odoc_scan.ml" 140 6378 6430 "odoc_scan.ml" 140 6378 6456
+)
+"odoc_scan.ml" 140 6378 6390 "odoc_scan.ml" 140 6378 6426
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 140 6378 6430 "odoc_scan.ml" 140 6378 6434
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 140 6378 6430 "odoc_scan.ml" 140 6378 6454
+call(
+  tail
+)
+type(
+  Odoc_extension.t_type_extension -> unit
+)
+"odoc_scan.ml" 140 6378 6455 "odoc_scan.ml" 140 6378 6456
+type(
+  Odoc_extension.t_type_extension
+)
+ident(
+  int_ref x "odoc_scan.ml" 140 6378 6425 "odoc_scan.ml" 140 6378 6426
+)
+"odoc_scan.ml" 140 6378 6430 "odoc_scan.ml" 140 6378 6456
+type(
+  unit
+)
+"odoc_scan.ml" 141 6457 6499 "odoc_scan.ml" 141 6457 6500
+type(
+  Odoc_exception.t_exception
+)
+ident(
+  def e "odoc_scan.ml" 141 6457 6504 "odoc_scan.ml" 141 6457 6525
+)
+"odoc_scan.ml" 141 6457 6469 "odoc_scan.ml" 141 6457 6500
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 141 6457 6504 "odoc_scan.ml" 141 6457 6508
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 141 6457 6504 "odoc_scan.ml" 141 6457 6523
+call(
+  tail
+)
+type(
+  Odoc_exception.t_exception -> unit
+)
+"odoc_scan.ml" 141 6457 6524 "odoc_scan.ml" 141 6457 6525
+type(
+  Odoc_exception.t_exception
+)
+ident(
+  int_ref e "odoc_scan.ml" 141 6457 6499 "odoc_scan.ml" 141 6457 6500
+)
+"odoc_scan.ml" 141 6457 6504 "odoc_scan.ml" 141 6457 6525
+type(
+  unit
+)
+"odoc_scan.ml" 142 6526 6563 "odoc_scan.ml" 142 6526 6564
+type(
+  Odoc_type.t_type
+)
+ident(
+  def t "odoc_scan.ml" 142 6526 6568 "odoc_scan.ml" 142 6526 6584
+)
+"odoc_scan.ml" 142 6526 6538 "odoc_scan.ml" 142 6526 6564
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 142 6526 6568 "odoc_scan.ml" 142 6526 6572
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 142 6526 6568 "odoc_scan.ml" 142 6526 6582
+call(
+  tail
+)
+type(
+  Odoc_type.t_type -> unit
+)
+"odoc_scan.ml" 142 6526 6583 "odoc_scan.ml" 142 6526 6584
+type(
+  Odoc_type.t_type
+)
+ident(
+  int_ref t "odoc_scan.ml" 142 6526 6563 "odoc_scan.ml" 142 6526 6564
+)
+"odoc_scan.ml" 142 6526 6568 "odoc_scan.ml" 142 6526 6584
+type(
+  unit
+)
+"odoc_scan.ml" 143 6585 6632 "odoc_scan.ml" 143 6585 6633
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_scan.ml" 143 6585 6637 "odoc_scan.ml" 143 6585 6663
+)
+"odoc_scan.ml" 143 6585 6597 "odoc_scan.ml" 143 6585 6633
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 143 6585 6637 "odoc_scan.ml" 143 6585 6641
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 143 6585 6637 "odoc_scan.ml" 143 6585 6661
+call(
+  tail
+)
+type(
+  Odoc_types.text -> unit
+)
+"odoc_scan.ml" 143 6585 6662 "odoc_scan.ml" 143 6585 6663
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref t "odoc_scan.ml" 143 6585 6632 "odoc_scan.ml" 143 6585 6633
+)
+"odoc_scan.ml" 143 6585 6637 "odoc_scan.ml" 143 6585 6663
+type(
+  unit
+)
+"odoc_scan.ml" 133 5937 5947 "odoc_scan.ml" 143 6585 6663
+type(
+  unit
+)
+"odoc_scan.ml" 132 5917 5925 "odoc_scan.ml" 144 6664 6673
+type(
+  Odoc_module.module_element -> unit
+)
+"odoc_scan.ml" 145 6674 6683 "odoc_scan.ml" 145 6674 6710
+type(
+  ?trans:bool -> Odoc_module.t_module -> Odoc_module.module_element list
+)
+ident(
+  ext_ref Odoc_module.module_elements
+)
+"odoc_scan.ml" 145 6674 6711 "odoc_scan.ml" 145 6674 6712
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref m "odoc_scan.ml" 130 5865 5897 "odoc_scan.ml" 130 5865 5898
+)
+"odoc_scan.ml" 145 6674 6682 "odoc_scan.ml" 145 6674 6713
+call(
+  stack
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_scan.ml" 131 5901 5907 "odoc_scan.ml" 145 6674 6713
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_scan.ml" 149 6879 6902 "odoc_scan.ml" 149 6879 6903
+type(
+  Odoc_module.t_module
+)
+ident(
+  def m "odoc_scan.ml" 149 6879 6906 "odoc_scan.ml" 149 6879 6964
+)
+"odoc_scan.ml" 149 6879 6909 "odoc_scan.ml" 149 6879 6913
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 149 6879 6909 "odoc_scan.ml" 149 6879 6929
+call(
+  stack
+)
+type(
+  Odoc_module.t_module -> bool
+)
+"odoc_scan.ml" 149 6879 6930 "odoc_scan.ml" 149 6879 6931
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref m "odoc_scan.ml" 149 6879 6902 "odoc_scan.ml" 149 6879 6903
+)
+"odoc_scan.ml" 149 6879 6909 "odoc_scan.ml" 149 6879 6931
+type(
+  bool
+)
+"odoc_scan.ml" 149 6879 6937 "odoc_scan.ml" 149 6879 6941
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 149 6879 6937 "odoc_scan.ml" 149 6879 6962
+call(
+  tail
+)
+type(
+  Odoc_module.t_module -> unit
+)
+"odoc_scan.ml" 149 6879 6963 "odoc_scan.ml" 149 6879 6964
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref m "odoc_scan.ml" 149 6879 6902 "odoc_scan.ml" 149 6879 6903
+)
+"odoc_scan.ml" 149 6879 6937 "odoc_scan.ml" 149 6879 6964
+type(
+  unit
+)
+"odoc_scan.ml" 149 6879 6906 "odoc_scan.ml" 149 6879 6964
+type(
+  unit
+)
+"odoc_scan.ml" 154 7049 7086 "odoc_scan.ml" 154 7049 7087
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_scan.ml" 154 7049 7098 "odoc_scan.ml" 154 7049 7100
+)
+"odoc_scan.ml" 154 7049 7098 "odoc_scan.ml" 154 7049 7100
+type(
+  unit
+)
+"odoc_scan.ml" 159 7327 7360 "odoc_scan.ml" 159 7327 7362
+type(
+  Odoc_module.t_module_type
+)
+ident(
+  def mt "odoc_scan.ml" 159 7327 7394 "odoc_scan.ml" 159 7327 7398
+)
+"odoc_scan.ml" 159 7327 7394 "odoc_scan.ml" 159 7327 7398
+type(
+  bool
+)
+"odoc_scan.ml" 162 7467 7504 "odoc_scan.ml" 162 7467 7506
+type(
+  Odoc_module.t_module_type
+)
+ident(
+  def mt "odoc_scan.ml" 163 7509 7515 "odoc_scan.ml" 177 8282 8327
+)
+"odoc_scan.ml" 163 7509 7515 "odoc_scan.ml" 163 7509 7524
+type(
+  (Odoc_module.module_element -> unit) ->
+  Odoc_module.module_element list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_scan.ml" 164 7525 7538 "odoc_scan.ml" 164 7525 7541
+type(
+  Odoc_module.module_element
+)
+ident(
+  def ele "odoc_scan.ml" 165 7545 7555 "odoc_scan.ml" 175 8193 8271
+)
+"odoc_scan.ml" 165 7545 7561 "odoc_scan.ml" 165 7545 7564
+type(
+  Odoc_module.module_element
+)
+ident(
+  int_ref ele "odoc_scan.ml" 164 7525 7538 "odoc_scan.ml" 164 7525 7541
+)
+"odoc_scan.ml" 166 7570 7609 "odoc_scan.ml" 166 7570 7610
+type(
+  Odoc_module.t_module
+)
+ident(
+  def m "odoc_scan.ml" 166 7570 7614 "odoc_scan.ml" 166 7570 7632
+)
+"odoc_scan.ml" 166 7570 7582 "odoc_scan.ml" 166 7570 7610
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 166 7570 7614 "odoc_scan.ml" 166 7570 7618
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 166 7570 7614 "odoc_scan.ml" 166 7570 7630
+call(
+  tail
+)
+type(
+  Odoc_module.t_module -> unit
+)
+"odoc_scan.ml" 166 7570 7631 "odoc_scan.ml" 166 7570 7632
+type(
+  Odoc_module.t_module
+)
+ident(
+  int_ref m "odoc_scan.ml" 166 7570 7609 "odoc_scan.ml" 166 7570 7610
+)
+"odoc_scan.ml" 166 7570 7614 "odoc_scan.ml" 166 7570 7632
+type(
+  unit
+)
+"odoc_scan.ml" 167 7633 7677 "odoc_scan.ml" 167 7633 7679
+type(
+  Odoc_module.t_module_type
+)
+ident(
+  def mt "odoc_scan.ml" 167 7633 7683 "odoc_scan.ml" 167 7633 7707
+)
+"odoc_scan.ml" 167 7633 7645 "odoc_scan.ml" 167 7633 7679
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 167 7633 7683 "odoc_scan.ml" 167 7633 7687
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 167 7633 7683 "odoc_scan.ml" 167 7633 7704
+call(
+  tail
+)
+type(
+  Odoc_module.t_module_type -> unit
+)
+"odoc_scan.ml" 167 7633 7705 "odoc_scan.ml" 167 7633 7707
+type(
+  Odoc_module.t_module_type
+)
+ident(
+  int_ref mt "odoc_scan.ml" 167 7633 7677 "odoc_scan.ml" 167 7633 7679
+)
+"odoc_scan.ml" 167 7633 7683 "odoc_scan.ml" 167 7633 7707
+type(
+  unit
+)
+"odoc_scan.ml" 168 7708 7756 "odoc_scan.ml" 168 7708 7758
+type(
+  Odoc_module.included_module
+)
+ident(
+  def im "odoc_scan.ml" 168 7708 7762 "odoc_scan.ml" 168 7708 7790
+)
+"odoc_scan.ml" 168 7708 7720 "odoc_scan.ml" 168 7708 7758
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 168 7708 7762 "odoc_scan.ml" 168 7708 7766
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 168 7708 7762 "odoc_scan.ml" 168 7708 7787
+call(
+  tail
+)
+type(
+  Odoc_module.included_module -> unit
+)
+"odoc_scan.ml" 168 7708 7788 "odoc_scan.ml" 168 7708 7790
+type(
+  Odoc_module.included_module
+)
+ident(
+  int_ref im "odoc_scan.ml" 168 7708 7756 "odoc_scan.ml" 168 7708 7758
+)
+"odoc_scan.ml" 168 7708 7762 "odoc_scan.ml" 168 7708 7790
+type(
+  unit
+)
+"odoc_scan.ml" 169 7791 7829 "odoc_scan.ml" 169 7791 7830
+type(
+  Odoc_class.t_class
+)
+ident(
+  def c "odoc_scan.ml" 169 7791 7834 "odoc_scan.ml" 169 7791 7851
+)
+"odoc_scan.ml" 169 7791 7803 "odoc_scan.ml" 169 7791 7830
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 169 7791 7834 "odoc_scan.ml" 169 7791 7838
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 169 7791 7834 "odoc_scan.ml" 169 7791 7849
+call(
+  tail
+)
+type(
+  Odoc_class.t_class -> unit
+)
+"odoc_scan.ml" 169 7791 7850 "odoc_scan.ml" 169 7791 7851
+type(
+  Odoc_class.t_class
+)
+ident(
+  int_ref c "odoc_scan.ml" 169 7791 7829 "odoc_scan.ml" 169 7791 7830
+)
+"odoc_scan.ml" 169 7791 7834 "odoc_scan.ml" 169 7791 7851
+type(
+  unit
+)
+"odoc_scan.ml" 170 7852 7895 "odoc_scan.ml" 170 7852 7897
+type(
+  Odoc_class.t_class_type
+)
+ident(
+  def ct "odoc_scan.ml" 170 7852 7901 "odoc_scan.ml" 170 7852 7924
+)
+"odoc_scan.ml" 170 7852 7864 "odoc_scan.ml" 170 7852 7897
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 170 7852 7901 "odoc_scan.ml" 170 7852 7905
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 170 7852 7901 "odoc_scan.ml" 170 7852 7921
+call(
+  tail
+)
+type(
+  Odoc_class.t_class_type -> unit
+)
+"odoc_scan.ml" 170 7852 7922 "odoc_scan.ml" 170 7852 7924
+type(
+  Odoc_class.t_class_type
+)
+ident(
+  int_ref ct "odoc_scan.ml" 170 7852 7895 "odoc_scan.ml" 170 7852 7897
+)
+"odoc_scan.ml" 170 7852 7901 "odoc_scan.ml" 170 7852 7924
+type(
+  unit
+)
+"odoc_scan.ml" 171 7925 7963 "odoc_scan.ml" 171 7925 7964
+type(
+  Odoc_value.t_value
+)
+ident(
+  def v "odoc_scan.ml" 171 7925 7968 "odoc_scan.ml" 171 7925 7985
+)
+"odoc_scan.ml" 171 7925 7937 "odoc_scan.ml" 171 7925 7964
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 171 7925 7968 "odoc_scan.ml" 171 7925 7972
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 171 7925 7968 "odoc_scan.ml" 171 7925 7983
+call(
+  tail
+)
+type(
+  Odoc_value.t_value -> unit
+)
+"odoc_scan.ml" 171 7925 7984 "odoc_scan.ml" 171 7925 7985
+type(
+  Odoc_value.t_value
+)
+ident(
+  int_ref v "odoc_scan.ml" 171 7925 7963 "odoc_scan.ml" 171 7925 7964
+)
+"odoc_scan.ml" 171 7925 7968 "odoc_scan.ml" 171 7925 7985
+type(
+  unit
+)
+"odoc_scan.ml" 172 7986 8033 "odoc_scan.ml" 172 7986 8034
+type(
+  Odoc_extension.t_type_extension
+)
+ident(
+  def x "odoc_scan.ml" 172 7986 8038 "odoc_scan.ml" 172 7986 8064
+)
+"odoc_scan.ml" 172 7986 7998 "odoc_scan.ml" 172 7986 8034
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 172 7986 8038 "odoc_scan.ml" 172 7986 8042
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 172 7986 8038 "odoc_scan.ml" 172 7986 8062
+call(
+  tail
+)
+type(
+  Odoc_extension.t_type_extension -> unit
+)
+"odoc_scan.ml" 172 7986 8063 "odoc_scan.ml" 172 7986 8064
+type(
+  Odoc_extension.t_type_extension
+)
+ident(
+  int_ref x "odoc_scan.ml" 172 7986 8033 "odoc_scan.ml" 172 7986 8034
+)
+"odoc_scan.ml" 172 7986 8038 "odoc_scan.ml" 172 7986 8064
+type(
+  unit
+)
+"odoc_scan.ml" 173 8065 8107 "odoc_scan.ml" 173 8065 8108
+type(
+  Odoc_exception.t_exception
+)
+ident(
+  def e "odoc_scan.ml" 173 8065 8112 "odoc_scan.ml" 173 8065 8133
+)
+"odoc_scan.ml" 173 8065 8077 "odoc_scan.ml" 173 8065 8108
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 173 8065 8112 "odoc_scan.ml" 173 8065 8116
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 173 8065 8112 "odoc_scan.ml" 173 8065 8131
+call(
+  tail
+)
+type(
+  Odoc_exception.t_exception -> unit
+)
+"odoc_scan.ml" 173 8065 8132 "odoc_scan.ml" 173 8065 8133
+type(
+  Odoc_exception.t_exception
+)
+ident(
+  int_ref e "odoc_scan.ml" 173 8065 8107 "odoc_scan.ml" 173 8065 8108
+)
+"odoc_scan.ml" 173 8065 8112 "odoc_scan.ml" 173 8065 8133
+type(
+  unit
+)
+"odoc_scan.ml" 174 8134 8171 "odoc_scan.ml" 174 8134 8172
+type(
+  Odoc_type.t_type
+)
+ident(
+  def t "odoc_scan.ml" 174 8134 8176 "odoc_scan.ml" 174 8134 8192
+)
+"odoc_scan.ml" 174 8134 8146 "odoc_scan.ml" 174 8134 8172
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 174 8134 8176 "odoc_scan.ml" 174 8134 8180
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 174 8134 8176 "odoc_scan.ml" 174 8134 8190
+call(
+  tail
+)
+type(
+  Odoc_type.t_type -> unit
+)
+"odoc_scan.ml" 174 8134 8191 "odoc_scan.ml" 174 8134 8192
+type(
+  Odoc_type.t_type
+)
+ident(
+  int_ref t "odoc_scan.ml" 174 8134 8171 "odoc_scan.ml" 174 8134 8172
+)
+"odoc_scan.ml" 174 8134 8176 "odoc_scan.ml" 174 8134 8192
+type(
+  unit
+)
+"odoc_scan.ml" 175 8193 8240 "odoc_scan.ml" 175 8193 8241
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_scan.ml" 175 8193 8245 "odoc_scan.ml" 175 8193 8271
+)
+"odoc_scan.ml" 175 8193 8205 "odoc_scan.ml" 175 8193 8241
+type(
+  Odoc_module.module_element
+)
+"odoc_scan.ml" 175 8193 8245 "odoc_scan.ml" 175 8193 8249
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 175 8193 8245 "odoc_scan.ml" 175 8193 8269
+call(
+  tail
+)
+type(
+  Odoc_types.text -> unit
+)
+"odoc_scan.ml" 175 8193 8270 "odoc_scan.ml" 175 8193 8271
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref t "odoc_scan.ml" 175 8193 8240 "odoc_scan.ml" 175 8193 8241
+)
+"odoc_scan.ml" 175 8193 8245 "odoc_scan.ml" 175 8193 8271
+type(
+  unit
+)
+"odoc_scan.ml" 165 7545 7555 "odoc_scan.ml" 175 8193 8271
+type(
+  unit
+)
+"odoc_scan.ml" 164 7525 7533 "odoc_scan.ml" 176 8272 8281
+type(
+  Odoc_module.module_element -> unit
+)
+"odoc_scan.ml" 177 8282 8291 "odoc_scan.ml" 177 8282 8323
+type(
+  ?trans:bool -> Odoc_module.t_module_type -> Odoc_module.module_element list
+)
+ident(
+  ext_ref Odoc_module.module_type_elements
+)
+"odoc_scan.ml" 177 8282 8324 "odoc_scan.ml" 177 8282 8326
+type(
+  Odoc_module.t_module_type
+)
+ident(
+  int_ref mt "odoc_scan.ml" 162 7467 7504 "odoc_scan.ml" 162 7467 7506
+)
+"odoc_scan.ml" 177 8282 8290 "odoc_scan.ml" 177 8282 8327
+call(
+  stack
+)
+type(
+  Odoc_module.module_element list
+)
+"odoc_scan.ml" 163 7509 7515 "odoc_scan.ml" 177 8282 8327
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_scan.ml" 181 8513 8541 "odoc_scan.ml" 181 8513 8543
+type(
+  Odoc_module.t_module_type
+)
+ident(
+  def mt "odoc_scan.ml" 182 8546 8552 "odoc_scan.ml" 182 8546 8622
+)
+"odoc_scan.ml" 182 8546 8555 "odoc_scan.ml" 182 8546 8559
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 182 8546 8555 "odoc_scan.ml" 182 8546 8580
+call(
+  stack
+)
+type(
+  Odoc_module.t_module_type -> bool
+)
+"odoc_scan.ml" 182 8546 8581 "odoc_scan.ml" 182 8546 8583
+type(
+  Odoc_module.t_module_type
+)
+ident(
+  int_ref mt "odoc_scan.ml" 181 8513 8541 "odoc_scan.ml" 181 8513 8543
+)
+"odoc_scan.ml" 182 8546 8555 "odoc_scan.ml" 182 8546 8583
+type(
+  bool
+)
+"odoc_scan.ml" 182 8546 8589 "odoc_scan.ml" 182 8546 8593
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 182 8546 8589 "odoc_scan.ml" 182 8546 8619
+call(
+  tail
+)
+type(
+  Odoc_module.t_module_type -> unit
+)
+"odoc_scan.ml" 182 8546 8620 "odoc_scan.ml" 182 8546 8622
+type(
+  Odoc_module.t_module_type
+)
+ident(
+  int_ref mt "odoc_scan.ml" 181 8513 8541 "odoc_scan.ml" 181 8513 8543
+)
+"odoc_scan.ml" 182 8546 8589 "odoc_scan.ml" 182 8546 8622
+type(
+  unit
+)
+"odoc_scan.ml" 182 8546 8552 "odoc_scan.ml" 182 8546 8622
+type(
+  unit
+)
+"odoc_scan.ml" 187 8691 8719 "odoc_scan.ml" 187 8691 8720
+type(
+  Odoc_module.t_module list
+)
+ident(
+  def l "odoc_scan.ml" 187 8691 8723 "odoc_scan.ml" 187 8691 8751
+)
+"odoc_scan.ml" 187 8691 8723 "odoc_scan.ml" 187 8691 8732
+type(
+  (Odoc_module.t_module -> unit) -> Odoc_module.t_module list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_scan.ml" 187 8691 8733 "odoc_scan.ml" 187 8691 8737
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_scan.ml" 26 1215 1224 "odoc_scan.ml" 26 1215 1230
+)
+"odoc_scan.ml" 187 8691 8733 "odoc_scan.ml" 187 8691 8749
+call(
+  stack
+)
+type(
+  Odoc_module.t_module -> unit
+)
+"odoc_scan.ml" 187 8691 8750 "odoc_scan.ml" 187 8691 8751
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref l "odoc_scan.ml" 187 8691 8719 "odoc_scan.ml" 187 8691 8720
+)
+"odoc_scan.ml" 187 8691 8723 "odoc_scan.ml" 187 8691 8751
+call(
+  tail
+)
+type(
+  unit
+)

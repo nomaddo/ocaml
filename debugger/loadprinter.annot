@@ -1,0 +1,2600 @@
+"loadprinter.ml" 35 1339 1343 "loadprinter.ml" 35 1339 1360
+type(
+  Symtable.global_map option ref
+)
+ident(
+  def debugger_symtable "loadprinter.ml" 37 1403 1403 "loadprinter.ml" 1 0 -1
+)
+"loadprinter.ml" 35 1339 1363 "loadprinter.ml" 35 1339 1366
+type(
+  Symtable.global_map option -> Symtable.global_map option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"loadprinter.ml" 35 1339 1368 "loadprinter.ml" 35 1339 1372
+type(
+  Symtable.global_map option
+)
+type(
+  Symtable.global_map option
+)
+"loadprinter.ml" 35 1339 1363 "loadprinter.ml" 35 1339 1401
+type(
+  Symtable.global_map option ref
+)
+"loadprinter.ml" 37 1403 1407 "loadprinter.ml" 37 1403 1428
+type(
+  ('a -> 'b) -> 'a -> 'b
+)
+ident(
+  def use_debugger_symtable "loadprinter.ml" 58 1956 1956 "loadprinter.ml" 1 0 -1
+)
+"loadprinter.ml" 37 1403 1429 "loadprinter.ml" 37 1403 1431
+type(
+  'a -> 'b
+)
+ident(
+  def fn "loadprinter.ml" 37 1403 1432 "loadprinter.ml" 54 1909 1922
+)
+"loadprinter.ml" 37 1403 1432 "loadprinter.ml" 37 1403 1435
+type(
+  'a
+)
+ident(
+  def arg "loadprinter.ml" 38 1438 1440 "loadprinter.ml" 54 1909 1922
+)
+"loadprinter.ml" 38 1438 1444 "loadprinter.ml" 38 1438 1456
+type(
+  Symtable.global_map
+)
+ident(
+  def old_symtable "loadprinter.ml" 39 1487 1489 "loadprinter.ml" 54 1909 1922
+)
+"loadprinter.ml" 38 1438 1459 "loadprinter.ml" 38 1438 1481
+type(
+  unit -> Symtable.global_map
+)
+ident(
+  ext_ref Symtable.current_state
+)
+"loadprinter.ml" 38 1438 1481 "loadprinter.ml" 38 1438 1483
+type(
+  unit
+)
+"loadprinter.ml" 38 1438 1459 "loadprinter.ml" 38 1438 1483
+call(
+  stack
+)
+type(
+  Symtable.global_map
+)
+"loadprinter.ml" 39 1487 1501 "loadprinter.ml" 39 1487 1502
+type(
+  Symtable.global_map option ref -> Symtable.global_map option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"loadprinter.ml" 39 1487 1502 "loadprinter.ml" 39 1487 1519
+type(
+  Symtable.global_map option ref
+)
+ident(
+  int_ref debugger_symtable "loadprinter.ml" 35 1339 1343 "loadprinter.ml" 35 1339 1360
+)
+"loadprinter.ml" 39 1487 1501 "loadprinter.ml" 39 1487 1519
+type(
+  Symtable.global_map option
+)
+"loadprinter.ml" 40 1525 1529 "loadprinter.ml" 40 1525 1533
+type(
+  Symtable.global_map option
+)
+"loadprinter.ml" 41 1537 1543 "loadprinter.ml" 41 1537 1555
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Dynlink.init
+)
+"loadprinter.ml" 41 1537 1555 "loadprinter.ml" 41 1537 1557
+type(
+  unit
+)
+"loadprinter.ml" 41 1537 1543 "loadprinter.ml" 41 1537 1557
+call(
+  stack
+)
+type(
+  unit
+)
+"loadprinter.ml" 42 1559 1565 "loadprinter.ml" 42 1559 1593
+type(
+  bool -> unit
+)
+ident(
+  ext_ref Dynlink.allow_unsafe_modules
+)
+"loadprinter.ml" 42 1559 1594 "loadprinter.ml" 42 1559 1598
+type(
+  bool
+)
+"loadprinter.ml" 42 1559 1565 "loadprinter.ml" 42 1559 1598
+call(
+  stack
+)
+type(
+  unit
+)
+"loadprinter.ml" 43 1600 1606 "loadprinter.ml" 43 1600 1623
+type(
+  Symtable.global_map option ref
+)
+ident(
+  int_ref debugger_symtable "loadprinter.ml" 35 1339 1343 "loadprinter.ml" 35 1339 1360
+)
+"loadprinter.ml" 43 1600 1624 "loadprinter.ml" 43 1600 1626
+type(
+  Symtable.global_map option ref -> Symtable.global_map option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"loadprinter.ml" 43 1600 1632 "loadprinter.ml" 43 1600 1654
+type(
+  unit -> Symtable.global_map
+)
+ident(
+  ext_ref Symtable.current_state
+)
+"loadprinter.ml" 43 1600 1654 "loadprinter.ml" 43 1600 1656
+type(
+  unit
+)
+"loadprinter.ml" 43 1600 1631 "loadprinter.ml" 43 1600 1657
+call(
+  stack
+)
+type(
+  Symtable.global_map
+)
+"loadprinter.ml" 43 1600 1627 "loadprinter.ml" 43 1600 1657
+type(
+  Symtable.global_map option
+)
+"loadprinter.ml" 43 1600 1606 "loadprinter.ml" 43 1600 1657
+type(
+  unit
+)
+"loadprinter.ml" 42 1559 1565 "loadprinter.ml" 43 1600 1657
+type(
+  unit
+)
+"loadprinter.ml" 41 1537 1543 "loadprinter.ml" 43 1600 1657
+type(
+  unit
+)
+"loadprinter.ml" 44 1658 1667 "loadprinter.ml" 44 1658 1669
+type(
+  Symtable.global_map
+)
+ident(
+  def st "loadprinter.ml" 45 1673 1679 "loadprinter.ml" 45 1673 1704
+)
+"loadprinter.ml" 44 1658 1662 "loadprinter.ml" 44 1658 1669
+type(
+  Symtable.global_map option
+)
+"loadprinter.ml" 45 1673 1679 "loadprinter.ml" 45 1673 1701
+type(
+  Symtable.global_map -> unit
+)
+ident(
+  ext_ref Symtable.restore_state
+)
+"loadprinter.ml" 45 1673 1702 "loadprinter.ml" 45 1673 1704
+type(
+  Symtable.global_map
+)
+ident(
+  int_ref st "loadprinter.ml" 44 1658 1667 "loadprinter.ml" 44 1658 1669
+)
+"loadprinter.ml" 45 1673 1679 "loadprinter.ml" 45 1673 1704
+call(
+  stack
+)
+type(
+  unit
+)
+"loadprinter.ml" 39 1487 1489 "loadprinter.ml" 46 1705 1710
+type(
+  unit
+)
+"loadprinter.ml" 48 1718 1726 "loadprinter.ml" 48 1718 1732
+type(
+  'b
+)
+ident(
+  def result "loadprinter.ml" 49 1745 1749 "loadprinter.ml" 51 1843 1853
+)
+"loadprinter.ml" 48 1718 1735 "loadprinter.ml" 48 1718 1737
+type(
+  'a -> 'b
+)
+ident(
+  int_ref fn "loadprinter.ml" 37 1403 1429 "loadprinter.ml" 37 1403 1431
+)
+"loadprinter.ml" 48 1718 1738 "loadprinter.ml" 48 1718 1741
+type(
+  'a
+)
+ident(
+  int_ref arg "loadprinter.ml" 37 1403 1432 "loadprinter.ml" 37 1403 1435
+)
+"loadprinter.ml" 48 1718 1735 "loadprinter.ml" 48 1718 1741
+call(
+  stack
+)
+type(
+  'b
+)
+"loadprinter.ml" 49 1745 1749 "loadprinter.ml" 49 1745 1766
+type(
+  Symtable.global_map option ref
+)
+ident(
+  int_ref debugger_symtable "loadprinter.ml" 35 1339 1343 "loadprinter.ml" 35 1339 1360
+)
+"loadprinter.ml" 49 1745 1767 "loadprinter.ml" 49 1745 1769
+type(
+  Symtable.global_map option ref -> Symtable.global_map option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"loadprinter.ml" 49 1745 1775 "loadprinter.ml" 49 1745 1797
+type(
+  unit -> Symtable.global_map
+)
+ident(
+  ext_ref Symtable.current_state
+)
+"loadprinter.ml" 49 1745 1797 "loadprinter.ml" 49 1745 1799
+type(
+  unit
+)
+"loadprinter.ml" 49 1745 1774 "loadprinter.ml" 49 1745 1800
+call(
+  stack
+)
+type(
+  Symtable.global_map
+)
+"loadprinter.ml" 49 1745 1770 "loadprinter.ml" 49 1745 1800
+type(
+  Symtable.global_map option
+)
+"loadprinter.ml" 49 1745 1749 "loadprinter.ml" 49 1745 1800
+type(
+  unit
+)
+"loadprinter.ml" 50 1802 1806 "loadprinter.ml" 50 1802 1828
+type(
+  Symtable.global_map -> unit
+)
+ident(
+  ext_ref Symtable.restore_state
+)
+"loadprinter.ml" 50 1802 1829 "loadprinter.ml" 50 1802 1841
+type(
+  Symtable.global_map
+)
+ident(
+  int_ref old_symtable "loadprinter.ml" 38 1438 1444 "loadprinter.ml" 38 1438 1456
+)
+"loadprinter.ml" 50 1802 1806 "loadprinter.ml" 50 1802 1841
+call(
+  stack
+)
+type(
+  unit
+)
+"loadprinter.ml" 51 1843 1847 "loadprinter.ml" 51 1843 1853
+type(
+  'b
+)
+ident(
+  int_ref result "loadprinter.ml" 48 1718 1726 "loadprinter.ml" 48 1718 1732
+)
+"loadprinter.ml" 50 1802 1806 "loadprinter.ml" 51 1843 1853
+type(
+  'b
+)
+"loadprinter.ml" 49 1745 1749 "loadprinter.ml" 51 1843 1853
+type(
+  'b
+)
+"loadprinter.ml" 48 1718 1722 "loadprinter.ml" 51 1843 1853
+type(
+  'b
+)
+"loadprinter.ml" 52 1854 1861 "loadprinter.ml" 52 1854 1864
+type(
+  exn
+)
+ident(
+  def exn "loadprinter.ml" 53 1868 1872 "loadprinter.ml" 54 1909 1922
+)
+"loadprinter.ml" 53 1868 1872 "loadprinter.ml" 53 1868 1894
+type(
+  Symtable.global_map -> unit
+)
+ident(
+  ext_ref Symtable.restore_state
+)
+"loadprinter.ml" 53 1868 1895 "loadprinter.ml" 53 1868 1907
+type(
+  Symtable.global_map
+)
+ident(
+  int_ref old_symtable "loadprinter.ml" 38 1438 1444 "loadprinter.ml" 38 1438 1456
+)
+"loadprinter.ml" 53 1868 1872 "loadprinter.ml" 53 1868 1907
+call(
+  stack
+)
+type(
+  unit
+)
+"loadprinter.ml" 54 1909 1913 "loadprinter.ml" 54 1909 1918
+type(
+  exn -> 'b
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"loadprinter.ml" 54 1909 1919 "loadprinter.ml" 54 1909 1922
+type(
+  exn
+)
+ident(
+  int_ref exn "loadprinter.ml" 52 1854 1861 "loadprinter.ml" 52 1854 1864
+)
+"loadprinter.ml" 54 1909 1913 "loadprinter.ml" 54 1909 1922
+type(
+  'b
+)
+"loadprinter.ml" 53 1868 1872 "loadprinter.ml" 54 1909 1922
+type(
+  'b
+)
+"loadprinter.ml" 47 1712 1714 "loadprinter.ml" 54 1909 1922
+type(
+  'b
+)
+"loadprinter.ml" 39 1487 1489 "loadprinter.ml" 54 1909 1922
+type(
+  'b
+)
+"loadprinter.ml" 38 1438 1440 "loadprinter.ml" 54 1909 1922
+type(
+  'b
+)
+"loadprinter.ml" 60 1969 1977 "loadprinter.ml" 60 1969 1986
+type(
+  Format.formatter -> string -> bool
+)
+ident(
+  def loadfiles "loadprinter.ml" 60 1969 1969 "loadprinter.ml" 1 0 -1
+)
+"loadprinter.ml" 60 1969 1987 "loadprinter.ml" 60 1969 1990
+type(
+  Format.formatter
+)
+ident(
+  def ppf "loadprinter.ml" 60 1969 1991 "loadprinter.ml" 80 2617 2651
+)
+"loadprinter.ml" 60 1969 1991 "loadprinter.ml" 60 1969 1995
+type(
+  string
+)
+ident(
+  def name "loadprinter.ml" 61 1998 2000 "loadprinter.ml" 80 2617 2651
+)
+"loadprinter.ml" 62 2004 2012 "loadprinter.ml" 62 2004 2020
+type(
+  string
+)
+ident(
+  def filename "loadprinter.ml" 63 2062 2066 "loadprinter.ml" 70 2356 2364
+)
+"loadprinter.ml" 62 2004 2023 "loadprinter.ml" 62 2004 2035
+type(
+  string list -> string -> string
+)
+ident(
+  ext_ref Misc.find_in_path
+)
+"loadprinter.ml" 62 2004 2036 "loadprinter.ml" 62 2004 2037
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"loadprinter.ml" 62 2004 2037 "loadprinter.ml" 62 2004 2053
+type(
+  string list ref
+)
+ident(
+  ext_ref Config.load_path
+)
+"loadprinter.ml" 62 2004 2036 "loadprinter.ml" 62 2004 2053
+type(
+  string list
+)
+"loadprinter.ml" 62 2004 2054 "loadprinter.ml" 62 2004 2058
+type(
+  string
+)
+ident(
+  int_ref name "loadprinter.ml" 60 1969 1991 "loadprinter.ml" 60 1969 1995
+)
+"loadprinter.ml" 62 2004 2023 "loadprinter.ml" 62 2004 2058
+call(
+  stack
+)
+type(
+  string
+)
+"loadprinter.ml" 63 2062 2066 "loadprinter.ml" 63 2062 2087
+type(
+  (string -> unit) -> string -> unit
+)
+ident(
+  int_ref use_debugger_symtable "loadprinter.ml" 37 1403 1407 "loadprinter.ml" 37 1403 1428
+)
+"loadprinter.ml" 63 2062 2088 "loadprinter.ml" 63 2062 2104
+type(
+  string -> unit
+)
+ident(
+  ext_ref Dynlink.loadfile
+)
+"loadprinter.ml" 63 2062 2105 "loadprinter.ml" 63 2062 2113
+type(
+  string
+)
+ident(
+  int_ref filename "loadprinter.ml" 62 2004 2012 "loadprinter.ml" 62 2004 2020
+)
+"loadprinter.ml" 63 2062 2066 "loadprinter.ml" 63 2062 2113
+call(
+  stack
+)
+type(
+  unit
+)
+"loadprinter.ml" 64 2115 2123 "loadprinter.ml" 64 2115 2124
+type(
+  string
+)
+ident(
+  def d "loadprinter.ml" 65 2152 2156 "loadprinter.ml" 70 2356 2364
+)
+"loadprinter.ml" 64 2115 2127 "loadprinter.ml" 64 2115 2143
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.dirname
+)
+"loadprinter.ml" 64 2115 2144 "loadprinter.ml" 64 2115 2148
+type(
+  string
+)
+ident(
+  int_ref name "loadprinter.ml" 60 1969 1991 "loadprinter.ml" 60 1969 1995
+)
+"loadprinter.ml" 64 2115 2127 "loadprinter.ml" 64 2115 2148
+call(
+  stack
+)
+type(
+  string
+)
+"loadprinter.ml" 65 2152 2159 "loadprinter.ml" 65 2152 2160
+type(
+  string
+)
+ident(
+  int_ref d "loadprinter.ml" 64 2115 2123 "loadprinter.ml" 64 2115 2124
+)
+"loadprinter.ml" 65 2152 2161 "loadprinter.ml" 65 2152 2163
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"loadprinter.ml" 65 2152 2164 "loadprinter.ml" 65 2152 2189
+type(
+  string
+)
+ident(
+  ext_ref Filename.current_dir_name
+)
+"loadprinter.ml" 65 2152 2159 "loadprinter.ml" 65 2152 2189
+type(
+  bool
+)
+"loadprinter.ml" 66 2201 2210 "loadprinter.ml" 66 2201 2213
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"loadprinter.ml" 66 2201 2215 "loadprinter.ml" 66 2201 2223
+type(
+  string -> string list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"loadprinter.ml" 66 2201 2224 "loadprinter.ml" 66 2201 2225
+type(
+  string
+)
+ident(
+  int_ref d "loadprinter.ml" 64 2115 2123 "loadprinter.ml" 64 2115 2124
+)
+"loadprinter.ml" 66 2201 2226 "loadprinter.ml" 66 2201 2227
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"loadprinter.ml" 66 2201 2227 "loadprinter.ml" 66 2201 2243
+type(
+  string list ref
+)
+ident(
+  ext_ref Config.load_path
+)
+"loadprinter.ml" 66 2201 2226 "loadprinter.ml" 66 2201 2243
+type(
+  string list
+)
+"loadprinter.ml" 66 2201 2214 "loadprinter.ml" 66 2201 2244
+call(
+  stack
+)
+type(
+  bool
+)
+"loadprinter.ml" 66 2201 2210 "loadprinter.ml" 66 2201 2244
+type(
+  bool
+)
+"loadprinter.ml" 67 2250 2258 "loadprinter.ml" 67 2250 2274
+type(
+  string list ref
+)
+ident(
+  ext_ref Config.load_path
+)
+"loadprinter.ml" 67 2250 2275 "loadprinter.ml" 67 2250 2277
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"loadprinter.ml" 67 2250 2278 "loadprinter.ml" 67 2250 2279
+type(
+  string
+)
+ident(
+  int_ref d "loadprinter.ml" 64 2115 2123 "loadprinter.ml" 64 2115 2124
+)
+"loadprinter.ml" 67 2250 2283 "loadprinter.ml" 67 2250 2284
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"loadprinter.ml" 67 2250 2284 "loadprinter.ml" 67 2250 2300
+type(
+  string list ref
+)
+ident(
+  ext_ref Config.load_path
+)
+"loadprinter.ml" 67 2250 2283 "loadprinter.ml" 67 2250 2300
+type(
+  string list
+)
+"loadprinter.ml" 67 2250 2278 "loadprinter.ml" 67 2250 2300
+type(
+  string list
+)
+"loadprinter.ml" 67 2250 2258 "loadprinter.ml" 67 2250 2300
+type(
+  unit
+)
+"loadprinter.ml" 65 2152 2195 "loadprinter.ml" 68 2302 2309
+type(
+  unit
+)
+"loadprinter.ml" 65 2152 2156 "loadprinter.ml" 68 2302 2309
+type(
+  unit
+)
+"loadprinter.ml" 69 2311 2315 "loadprinter.ml" 69 2311 2322
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"loadprinter.ml" 69 2311 2323 "loadprinter.ml" 69 2311 2326
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "loadprinter.ml" 60 1969 1987 "loadprinter.ml" 60 1969 1990
+)
+"loadprinter.ml" 69 2311 2327 "loadprinter.ml" 69 2311 2345
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"loadprinter.ml" 69 2311 2346 "loadprinter.ml" 69 2311 2354
+type(
+  string
+)
+ident(
+  int_ref filename "loadprinter.ml" 62 2004 2012 "loadprinter.ml" 62 2004 2020
+)
+"loadprinter.ml" 69 2311 2315 "loadprinter.ml" 69 2311 2354
+call(
+  stack
+)
+type(
+  unit
+)
+"loadprinter.ml" 70 2356 2360 "loadprinter.ml" 70 2356 2364
+type(
+  bool
+)
+"loadprinter.ml" 69 2311 2315 "loadprinter.ml" 70 2356 2364
+type(
+  bool
+)
+"loadprinter.ml" 65 2152 2156 "loadprinter.ml" 70 2356 2364
+type(
+  bool
+)
+"loadprinter.ml" 64 2115 2119 "loadprinter.ml" 70 2356 2364
+type(
+  bool
+)
+"loadprinter.ml" 63 2062 2066 "loadprinter.ml" 70 2356 2364
+type(
+  bool
+)
+"loadprinter.ml" 62 2004 2008 "loadprinter.ml" 70 2356 2364
+type(
+  bool
+)
+"loadprinter.ml" 72 2372 2416 "loadprinter.ml" 72 2372 2420
+type(
+  string
+)
+ident(
+  def unit "loadprinter.ml" 73 2425 2431 "loadprinter.ml" 75 2492 2516
+)
+"loadprinter.ml" 72 2372 2390 "loadprinter.ml" 72 2372 2421
+type(
+  Dynlink.error
+)
+"loadprinter.ml" 72 2372 2376 "loadprinter.ml" 72 2372 2421
+type(
+  exn
+)
+"loadprinter.ml" 73 2425 2431 "loadprinter.ml" 73 2425 2440
+type(
+  Format.formatter -> string -> bool
+)
+ident(
+  int_ref loadfiles "loadprinter.ml" 60 1969 1977 "loadprinter.ml" 60 1969 1986
+)
+"loadprinter.ml" 73 2425 2441 "loadprinter.ml" 73 2425 2444
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "loadprinter.ml" 60 1969 1987 "loadprinter.ml" 60 1969 1990
+)
+"loadprinter.ml" 73 2425 2446 "loadprinter.ml" 73 2425 2465
+type(
+  string -> string
+)
+ident(
+  ext_ref String.uncapitalize
+)
+"loadprinter.ml" 73 2425 2466 "loadprinter.ml" 73 2425 2470
+type(
+  string
+)
+ident(
+  int_ref unit "loadprinter.ml" 72 2372 2416 "loadprinter.ml" 72 2372 2420
+)
+"loadprinter.ml" 73 2425 2446 "loadprinter.ml" 73 2425 2470
+call(
+  stack
+)
+type(
+  string
+)
+"loadprinter.ml" 73 2425 2471 "loadprinter.ml" 73 2425 2472
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"loadprinter.ml" 73 2425 2473 "loadprinter.ml" 73 2425 2479
+type(
+  string
+)
+"loadprinter.ml" 73 2425 2445 "loadprinter.ml" 73 2425 2480
+call(
+  stack
+)
+type(
+  string
+)
+"loadprinter.ml" 73 2425 2431 "loadprinter.ml" 73 2425 2480
+call(
+  stack
+)
+type(
+  bool
+)
+"loadprinter.ml" 74 2481 2489 "loadprinter.ml" 74 2481 2491
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"loadprinter.ml" 75 2492 2498 "loadprinter.ml" 75 2492 2507
+type(
+  Format.formatter -> string -> bool
+)
+ident(
+  int_ref loadfiles "loadprinter.ml" 60 1969 1977 "loadprinter.ml" 60 1969 1986
+)
+"loadprinter.ml" 75 2492 2508 "loadprinter.ml" 75 2492 2511
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "loadprinter.ml" 60 1969 1987 "loadprinter.ml" 60 1969 1990
+)
+"loadprinter.ml" 75 2492 2512 "loadprinter.ml" 75 2492 2516
+type(
+  string
+)
+ident(
+  int_ref name "loadprinter.ml" 60 1969 1991 "loadprinter.ml" 60 1969 1995
+)
+"loadprinter.ml" 75 2492 2498 "loadprinter.ml" 75 2492 2516
+call(
+  tail
+)
+type(
+  bool
+)
+"loadprinter.ml" 73 2425 2431 "loadprinter.ml" 75 2492 2516
+type(
+  bool
+)
+"loadprinter.ml" 76 2517 2521 "loadprinter.ml" 76 2517 2530
+type(
+  exn
+)
+"loadprinter.ml" 77 2534 2540 "loadprinter.ml" 77 2534 2547
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"loadprinter.ml" 77 2534 2548 "loadprinter.ml" 77 2534 2551
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "loadprinter.ml" 60 1969 1987 "loadprinter.ml" 60 1969 1990
+)
+"loadprinter.ml" 77 2534 2552 "loadprinter.ml" 77 2534 2575
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"loadprinter.ml" 77 2534 2576 "loadprinter.ml" 77 2534 2580
+type(
+  string
+)
+ident(
+  int_ref name "loadprinter.ml" 60 1969 1991 "loadprinter.ml" 60 1969 1995
+)
+"loadprinter.ml" 77 2534 2540 "loadprinter.ml" 77 2534 2580
+call(
+  stack
+)
+type(
+  unit
+)
+"loadprinter.ml" 78 2582 2588 "loadprinter.ml" 78 2582 2593
+type(
+  bool
+)
+"loadprinter.ml" 77 2534 2540 "loadprinter.ml" 78 2582 2593
+type(
+  bool
+)
+"loadprinter.ml" 79 2594 2612 "loadprinter.ml" 79 2594 2613
+type(
+  Dynlink.error
+)
+ident(
+  def e "loadprinter.ml" 80 2617 2623 "loadprinter.ml" 80 2617 2651
+)
+"loadprinter.ml" 79 2594 2598 "loadprinter.ml" 79 2594 2613
+type(
+  exn
+)
+"loadprinter.ml" 80 2617 2623 "loadprinter.ml" 80 2617 2628
+type(
+  exn -> bool
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"loadprinter.ml" 80 2617 2648 "loadprinter.ml" 80 2617 2649
+type(
+  Dynlink.error
+)
+ident(
+  int_ref e "loadprinter.ml" 79 2594 2612 "loadprinter.ml" 79 2594 2613
+)
+"loadprinter.ml" 80 2617 2634 "loadprinter.ml" 80 2617 2650
+type(
+  error
+)
+"loadprinter.ml" 80 2617 2628 "loadprinter.ml" 80 2617 2651
+type(
+  exn
+)
+"loadprinter.ml" 80 2617 2623 "loadprinter.ml" 80 2617 2651
+type(
+  bool
+)
+"loadprinter.ml" 61 1998 2000 "loadprinter.ml" 80 2617 2651
+type(
+  bool
+)
+"loadprinter.ml" 82 2653 2657 "loadprinter.ml" 82 2653 2665
+type(
+  Format.formatter -> string -> unit
+)
+ident(
+  def loadfile "loadprinter.ml" 89 2864 2864 "loadprinter.ml" 1 0 -1
+)
+"loadprinter.ml" 82 2653 2666 "loadprinter.ml" 82 2653 2669
+type(
+  Format.formatter
+)
+ident(
+  def ppf "loadprinter.ml" 82 2653 2670 "loadprinter.ml" 83 2677 2705
+)
+"loadprinter.ml" 82 2653 2670 "loadprinter.ml" 82 2653 2674
+type(
+  string
+)
+ident(
+  def name "loadprinter.ml" 83 2677 2679 "loadprinter.ml" 83 2677 2705
+)
+"loadprinter.ml" 83 2677 2679 "loadprinter.ml" 83 2677 2685
+type(
+  bool -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"loadprinter.ml" 83 2677 2686 "loadprinter.ml" 83 2677 2695
+type(
+  Format.formatter -> string -> bool
+)
+ident(
+  int_ref loadfiles "loadprinter.ml" 60 1969 1977 "loadprinter.ml" 60 1969 1986
+)
+"loadprinter.ml" 83 2677 2696 "loadprinter.ml" 83 2677 2699
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "loadprinter.ml" 82 2653 2666 "loadprinter.ml" 82 2653 2669
+)
+"loadprinter.ml" 83 2677 2700 "loadprinter.ml" 83 2677 2704
+type(
+  string
+)
+ident(
+  int_ref name "loadprinter.ml" 82 2653 2670 "loadprinter.ml" 82 2653 2674
+)
+"loadprinter.ml" 83 2677 2685 "loadprinter.ml" 83 2677 2705
+call(
+  stack
+)
+type(
+  bool
+)
+"loadprinter.ml" 83 2677 2679 "loadprinter.ml" 83 2677 2705
+type(
+  unit
+)
+"loadprinter.ml" 89 2864 2872 "loadprinter.ml" 89 2864 2881
+type(
+  Path.t -> Obj.t
+)
+ident(
+  def eval_path "loadprinter.ml" 89 2864 2864 "loadprinter.ml" 1 0 -1
+)
+"loadprinter.ml" 90 2893 2904 "loadprinter.ml" 90 2893 2906
+type(
+  Ident.t
+)
+ident(
+  def id "loadprinter.ml" 90 2893 2910 "loadprinter.ml" 90 2893 2938
+)
+"loadprinter.ml" 90 2893 2897 "loadprinter.ml" 90 2893 2906
+type(
+  Path.t
+)
+"loadprinter.ml" 90 2893 2910 "loadprinter.ml" 90 2893 2935
+type(
+  Ident.t -> Obj.t
+)
+ident(
+  ext_ref Symtable.get_global_value
+)
+"loadprinter.ml" 90 2893 2936 "loadprinter.ml" 90 2893 2938
+type(
+  Ident.t
+)
+ident(
+  int_ref id "loadprinter.ml" 90 2893 2904 "loadprinter.ml" 90 2893 2906
+)
+"loadprinter.ml" 90 2893 2910 "loadprinter.ml" 90 2893 2938
+call(
+  tail
+)
+type(
+  Obj.t
+)
+"loadprinter.ml" 91 2939 2948 "loadprinter.ml" 91 2939 2949
+type(
+  Path.t
+)
+ident(
+  def p "loadprinter.ml" 91 2939 2962 "loadprinter.ml" 91 2939 2989
+)
+"loadprinter.ml" 91 2939 2951 "loadprinter.ml" 91 2939 2952
+type(
+  string
+)
+ident(
+  def s "loadprinter.ml" 91 2939 2962 "loadprinter.ml" 91 2939 2989
+)
+"loadprinter.ml" 91 2939 2954 "loadprinter.ml" 91 2939 2957
+type(
+  int
+)
+ident(
+  def pos "loadprinter.ml" 91 2939 2962 "loadprinter.ml" 91 2939 2989
+)
+"loadprinter.ml" 91 2939 2943 "loadprinter.ml" 91 2939 2958
+type(
+  Path.t
+)
+"loadprinter.ml" 91 2939 2962 "loadprinter.ml" 91 2939 2971
+type(
+  Obj.t -> int -> Obj.t
+)
+ident(
+  ext_ref Obj.field
+)
+"loadprinter.ml" 91 2939 2973 "loadprinter.ml" 91 2939 2982
+type(
+  Path.t -> Obj.t
+)
+ident(
+  int_ref eval_path "loadprinter.ml" 89 2864 2872 "loadprinter.ml" 89 2864 2881
+)
+"loadprinter.ml" 91 2939 2983 "loadprinter.ml" 91 2939 2984
+type(
+  Path.t
+)
+ident(
+  int_ref p "loadprinter.ml" 91 2939 2948 "loadprinter.ml" 91 2939 2949
+)
+"loadprinter.ml" 91 2939 2972 "loadprinter.ml" 91 2939 2985
+call(
+  stack
+)
+type(
+  Obj.t
+)
+"loadprinter.ml" 91 2939 2986 "loadprinter.ml" 91 2939 2989
+type(
+  int
+)
+ident(
+  int_ref pos "loadprinter.ml" 91 2939 2954 "loadprinter.ml" 91 2939 2957
+)
+"loadprinter.ml" 91 2939 2962 "loadprinter.ml" 91 2939 2989
+type(
+  Obj.t
+)
+"loadprinter.ml" 92 2990 3001 "loadprinter.ml" 92 2990 3003
+type(
+  Path.t
+)
+ident(
+  def p1 "loadprinter.ml" 92 2990 3012 "loadprinter.ml" 92 2990 3047
+)
+"loadprinter.ml" 92 2990 3005 "loadprinter.ml" 92 2990 3007
+type(
+  Path.t
+)
+ident(
+  def p2 "loadprinter.ml" 92 2990 3012 "loadprinter.ml" 92 2990 3047
+)
+"loadprinter.ml" 92 2990 2994 "loadprinter.ml" 92 2990 3008
+type(
+  Path.t
+)
+"loadprinter.ml" 92 2990 3012 "loadprinter.ml" 92 2990 3023
+type(
+  string -> Obj.t
+)
+ident(
+  ext_ref Misc.fatal_error
+)
+"loadprinter.ml" 92 2990 3024 "loadprinter.ml" 92 2990 3047
+type(
+  string
+)
+"loadprinter.ml" 92 2990 3012 "loadprinter.ml" 92 2990 3047
+call(
+  tail
+)
+type(
+  Obj.t
+)
+"loadprinter.ml" 89 2864 2884 "loadprinter.ml" 92 2990 3047
+type(
+  Path.t -> Obj.t
+)
+"loadprinter.ml" 98 3261 3265 "loadprinter.ml" 98 3261 3267
+type(
+  unit
+)
+"loadprinter.ml" 99 3270 3276 "loadprinter.ml" 99 3270 3289
+type(
+  string
+)
+ident(
+  def compiler_libs "loadprinter.ml" 101 3355 3357 "loadprinter.ml" 103 3422 3469
+)
+"loadprinter.ml" 100 3292 3296 "loadprinter.ml" 100 3292 3311
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Filename.concat
+)
+"loadprinter.ml" 100 3292 3312 "loadprinter.ml" 100 3292 3335
+type(
+  string
+)
+ident(
+  ext_ref Config.standard_library
+)
+"loadprinter.ml" 100 3292 3336 "loadprinter.ml" 100 3292 3351
+type(
+  string
+)
+"loadprinter.ml" 100 3292 3296 "loadprinter.ml" 100 3292 3351
+call(
+  stack
+)
+type(
+  string
+)
+"loadprinter.ml" 101 3355 3361 "loadprinter.ml" 101 3355 3368
+type(
+  string
+)
+ident(
+  def topdirs "loadprinter.ml" 103 3422 3424 "loadprinter.ml" 103 3422 3469
+)
+"loadprinter.ml" 102 3371 3375 "loadprinter.ml" 102 3371 3390
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Filename.concat
+)
+"loadprinter.ml" 102 3371 3391 "loadprinter.ml" 102 3371 3404
+type(
+  string
+)
+ident(
+  int_ref compiler_libs "loadprinter.ml" 99 3270 3276 "loadprinter.ml" 99 3270 3289
+)
+"loadprinter.ml" 102 3371 3405 "loadprinter.ml" 102 3371 3418
+type(
+  string
+)
+"loadprinter.ml" 102 3371 3375 "loadprinter.ml" 102 3371 3418
+call(
+  stack
+)
+type(
+  string
+)
+"loadprinter.ml" 103 3422 3424 "loadprinter.ml" 103 3422 3430
+type(
+  Types.signature -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"loadprinter.ml" 103 3422 3432 "loadprinter.ml" 103 3422 3450
+type(
+  string -> string -> Types.signature
+)
+ident(
+  ext_ref Env.read_signature
+)
+"loadprinter.ml" 103 3422 3451 "loadprinter.ml" 103 3422 3460
+type(
+  string
+)
+"loadprinter.ml" 103 3422 3461 "loadprinter.ml" 103 3422 3468
+type(
+  string
+)
+ident(
+  int_ref topdirs "loadprinter.ml" 101 3355 3361 "loadprinter.ml" 101 3355 3368
+)
+"loadprinter.ml" 103 3422 3431 "loadprinter.ml" 103 3422 3469
+call(
+  stack
+)
+type(
+  Types.signature
+)
+"loadprinter.ml" 103 3422 3424 "loadprinter.ml" 103 3422 3469
+type(
+  unit
+)
+"loadprinter.ml" 101 3355 3357 "loadprinter.ml" 103 3422 3469
+type(
+  unit
+)
+"loadprinter.ml" 99 3270 3272 "loadprinter.ml" 103 3422 3469
+type(
+  unit
+)
+"loadprinter.ml" 105 3471 3475 "loadprinter.ml" 105 3471 3493
+type(
+  Types.value_description -> string -> Types.type_expr
+)
+ident(
+  def match_printer_type "loadprinter.ml" 121 3974 3974 "loadprinter.ml" 1 0 -1
+)
+"loadprinter.ml" 105 3471 3494 "loadprinter.ml" 105 3471 3498
+type(
+  Types.value_description
+)
+ident(
+  def desc "loadprinter.ml" 105 3471 3499 "loadprinter.ml" 119 3964 3972
+)
+"loadprinter.ml" 105 3471 3499 "loadprinter.ml" 105 3471 3507
+type(
+  string
+)
+ident(
+  def typename "loadprinter.ml" 106 3510 3512 "loadprinter.ml" 119 3964 3972
+)
+"loadprinter.ml" 106 3510 3517 "loadprinter.ml" 106 3510 3529
+type(
+  Path.t
+)
+ident(
+  def printer_type "loadprinter.ml" 111 3710 3712 "loadprinter.ml" 119 3964 3972
+)
+"loadprinter.ml" 106 3510 3531 "loadprinter.ml" 106 3510 3532
+type(
+  Types.type_declaration
+)
+"loadprinter.ml" 106 3510 3516 "loadprinter.ml" 106 3510 3533
+type(
+  Path.t * Types.type_declaration
+)
+"loadprinter.ml" 108 3544 3550 "loadprinter.ml" 108 3544 3565
+type(
+  Longident.t -> Env.t -> Path.t * Types.type_declaration
+)
+ident(
+  ext_ref Env.lookup_type
+)
+"loadprinter.ml" 108 3544 3579 "loadprinter.ml" 108 3544 3588
+type(
+  string
+)
+"loadprinter.ml" 108 3544 3572 "loadprinter.ml" 108 3544 3588
+type(
+  Longident.t
+)
+"loadprinter.ml" 108 3544 3590 "loadprinter.ml" 108 3544 3598
+type(
+  string
+)
+ident(
+  int_ref typename "loadprinter.ml" 105 3471 3499 "loadprinter.ml" 105 3471 3507
+)
+"loadprinter.ml" 108 3544 3566 "loadprinter.ml" 108 3544 3600
+type(
+  Longident.t
+)
+"loadprinter.ml" 108 3544 3601 "loadprinter.ml" 108 3544 3610
+type(
+  Env.t
+)
+ident(
+  ext_ref Env.empty
+)
+"loadprinter.ml" 108 3544 3550 "loadprinter.ml" 108 3544 3610
+call(
+  stack
+)
+type(
+  Path.t * Types.type_declaration
+)
+"loadprinter.ml" 109 3611 3620 "loadprinter.ml" 109 3611 3629
+type(
+  exn
+)
+"loadprinter.ml" 110 3633 3639 "loadprinter.ml" 110 3633 3644
+type(
+  exn -> Path.t * Types.type_declaration
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"loadprinter.ml" 110 3633 3683 "loadprinter.ml" 110 3633 3692
+type(
+  string
+)
+"loadprinter.ml" 110 3633 3676 "loadprinter.ml" 110 3633 3692
+type(
+  Longident.t
+)
+"loadprinter.ml" 110 3633 3694 "loadprinter.ml" 110 3633 3702
+type(
+  string
+)
+ident(
+  int_ref typename "loadprinter.ml" 105 3471 3499 "loadprinter.ml" 105 3471 3507
+)
+"loadprinter.ml" 110 3633 3670 "loadprinter.ml" 110 3633 3704
+type(
+  Longident.t
+)
+"loadprinter.ml" 110 3633 3651 "loadprinter.ml" 110 3633 3705
+type(
+  error
+)
+"loadprinter.ml" 110 3633 3645 "loadprinter.ml" 110 3633 3706
+type(
+  exn
+)
+"loadprinter.ml" 110 3633 3639 "loadprinter.ml" 110 3633 3706
+type(
+  Path.t * Types.type_declaration
+)
+"loadprinter.ml" 107 3536 3540 "loadprinter.ml" 110 3633 3706
+type(
+  Path.t * Types.type_declaration
+)
+"loadprinter.ml" 111 3710 3712 "loadprinter.ml" 111 3710 3726
+type(
+  int -> unit
+)
+ident(
+  ext_ref Ctype.init_def
+)
+"loadprinter.ml" 111 3710 3727 "loadprinter.ml" 111 3710 3745
+type(
+  unit -> int
+)
+ident(
+  ext_ref Ident.current_time
+)
+"loadprinter.ml" 111 3710 3745 "loadprinter.ml" 111 3710 3747
+type(
+  unit
+)
+"loadprinter.ml" 111 3710 3726 "loadprinter.ml" 111 3710 3748
+call(
+  stack
+)
+type(
+  int
+)
+"loadprinter.ml" 111 3710 3712 "loadprinter.ml" 111 3710 3748
+call(
+  stack
+)
+type(
+  unit
+)
+"loadprinter.ml" 112 3750 3752 "loadprinter.ml" 112 3750 3767
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Ctype.begin_def
+)
+"loadprinter.ml" 112 3750 3767 "loadprinter.ml" 112 3750 3769
+type(
+  unit
+)
+"loadprinter.ml" 112 3750 3752 "loadprinter.ml" 112 3750 3769
+call(
+  stack
+)
+type(
+  unit
+)
+"loadprinter.ml" 113 3771 3777 "loadprinter.ml" 113 3771 3783
+type(
+  Types.type_expr
+)
+ident(
+  def ty_arg "loadprinter.ml" 114 3804 3806 "loadprinter.ml" 119 3964 3972
+)
+"loadprinter.ml" 113 3771 3786 "loadprinter.ml" 113 3771 3798
+type(
+  ?name:string -> unit -> Types.type_expr
+)
+ident(
+  ext_ref Ctype.newvar
+)
+"loadprinter.ml" 113 3771 3798 "loadprinter.ml" 113 3771 3800
+type(
+  unit
+)
+"loadprinter.ml" 113 3771 3786 "loadprinter.ml" 113 3771 3800
+call(
+  stack
+)
+type(
+  Types.type_expr
+)
+"loadprinter.ml" 114 3804 3806 "loadprinter.ml" 114 3804 3817
+type(
+  Env.t -> Types.type_expr -> Types.type_expr -> unit
+)
+ident(
+  ext_ref Ctype.unify
+)
+"loadprinter.ml" 114 3804 3818 "loadprinter.ml" 114 3804 3827
+type(
+  Env.t
+)
+ident(
+  ext_ref Env.empty
+)
+"loadprinter.ml" 115 3828 3833 "loadprinter.ml" 115 3828 3848
+type(
+  Path.t -> Types.type_expr list -> Types.type_expr
+)
+ident(
+  ext_ref Ctype.newconstr
+)
+"loadprinter.ml" 115 3828 3849 "loadprinter.ml" 115 3828 3861
+type(
+  Path.t
+)
+ident(
+  int_ref printer_type "loadprinter.ml" 106 3510 3517 "loadprinter.ml" 106 3510 3529
+)
+"loadprinter.ml" 115 3828 3863 "loadprinter.ml" 115 3828 3869
+type(
+  Types.type_expr
+)
+ident(
+  int_ref ty_arg "loadprinter.ml" 113 3771 3777 "loadprinter.ml" 113 3771 3783
+)
+"loadprinter.ml" 115 3828 3862 "loadprinter.ml" 115 3828 3870
+type(
+  Types.type_expr list
+)
+"loadprinter.ml" 115 3828 3832 "loadprinter.ml" 115 3828 3871
+call(
+  stack
+)
+type(
+  Types.type_expr
+)
+"loadprinter.ml" 116 3872 3877 "loadprinter.ml" 116 3872 3891
+type(
+  ?partial:bool -> Env.t -> Types.type_expr -> Types.type_expr
+)
+ident(
+  ext_ref Ctype.instance
+)
+"loadprinter.ml" 116 3872 3892 "loadprinter.ml" 116 3872 3901
+type(
+  Env.t
+)
+ident(
+  ext_ref Env.empty
+)
+"loadprinter.ml" 116 3872 3902 "loadprinter.ml" 116 3872 3906
+type(
+  Types.value_description
+)
+ident(
+  int_ref desc "loadprinter.ml" 105 3471 3494 "loadprinter.ml" 105 3471 3498
+)
+"loadprinter.ml" 116 3872 3902 "loadprinter.ml" 116 3872 3915
+type(
+  Types.type_expr
+)
+"loadprinter.ml" 116 3872 3876 "loadprinter.ml" 116 3872 3916
+call(
+  stack
+)
+type(
+  Types.type_expr
+)
+"loadprinter.ml" 114 3804 3806 "loadprinter.ml" 116 3872 3916
+call(
+  stack
+)
+type(
+  unit
+)
+"loadprinter.ml" 117 3918 3920 "loadprinter.ml" 117 3918 3933
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Ctype.end_def
+)
+"loadprinter.ml" 117 3918 3933 "loadprinter.ml" 117 3918 3935
+type(
+  unit
+)
+"loadprinter.ml" 117 3918 3920 "loadprinter.ml" 117 3918 3935
+call(
+  stack
+)
+type(
+  unit
+)
+"loadprinter.ml" 118 3937 3939 "loadprinter.ml" 118 3937 3955
+type(
+  Types.type_expr -> unit
+)
+ident(
+  ext_ref Ctype.generalize
+)
+"loadprinter.ml" 118 3937 3956 "loadprinter.ml" 118 3937 3962
+type(
+  Types.type_expr
+)
+ident(
+  int_ref ty_arg "loadprinter.ml" 113 3771 3777 "loadprinter.ml" 113 3771 3783
+)
+"loadprinter.ml" 118 3937 3939 "loadprinter.ml" 118 3937 3962
+call(
+  stack
+)
+type(
+  unit
+)
+"loadprinter.ml" 119 3964 3966 "loadprinter.ml" 119 3964 3972
+type(
+  Types.type_expr
+)
+ident(
+  int_ref ty_arg "loadprinter.ml" 113 3771 3777 "loadprinter.ml" 113 3771 3783
+)
+"loadprinter.ml" 118 3937 3939 "loadprinter.ml" 119 3964 3972
+type(
+  Types.type_expr
+)
+"loadprinter.ml" 117 3918 3920 "loadprinter.ml" 119 3964 3972
+type(
+  Types.type_expr
+)
+"loadprinter.ml" 114 3804 3806 "loadprinter.ml" 119 3964 3972
+type(
+  Types.type_expr
+)
+"loadprinter.ml" 113 3771 3773 "loadprinter.ml" 119 3964 3972
+type(
+  Types.type_expr
+)
+"loadprinter.ml" 112 3750 3752 "loadprinter.ml" 119 3964 3972
+type(
+  Types.type_expr
+)
+"loadprinter.ml" 111 3710 3712 "loadprinter.ml" 119 3964 3972
+type(
+  Types.type_expr
+)
+"loadprinter.ml" 106 3510 3512 "loadprinter.ml" 119 3964 3972
+type(
+  Types.type_expr
+)
+"loadprinter.ml" 121 3974 3978 "loadprinter.ml" 121 3974 3995
+type(
+  Longident.t -> Types.type_expr * Path.t * bool
+)
+ident(
+  def find_printer_type "loadprinter.ml" 134 4403 4403 "loadprinter.ml" 1 0 -1
+)
+"loadprinter.ml" 121 3974 3996 "loadprinter.ml" 121 3974 3999
+type(
+  Longident.t
+)
+ident(
+  def lid "loadprinter.ml" 122 4002 4004 "loadprinter.ml" 132 4352 4401
+)
+"loadprinter.ml" 123 4008 4017 "loadprinter.ml" 123 4008 4021
+type(
+  Path.t
+)
+ident(
+  def path "loadprinter.ml" 124 4065 4069 "loadprinter.ml" 129 4258 4290
+)
+"loadprinter.ml" 123 4008 4023 "loadprinter.ml" 123 4008 4027
+type(
+  Types.value_description
+)
+ident(
+  def desc "loadprinter.ml" 124 4065 4069 "loadprinter.ml" 129 4258 4290
+)
+"loadprinter.ml" 123 4008 4016 "loadprinter.ml" 123 4008 4028
+type(
+  Path.t * Types.value_description
+)
+"loadprinter.ml" 123 4008 4031 "loadprinter.ml" 123 4008 4047
+type(
+  Longident.t -> Env.t -> Path.t * Types.value_description
+)
+ident(
+  ext_ref Env.lookup_value
+)
+"loadprinter.ml" 123 4008 4048 "loadprinter.ml" 123 4008 4051
+type(
+  Longident.t
+)
+ident(
+  int_ref lid "loadprinter.ml" 121 3974 3996 "loadprinter.ml" 121 3974 3999
+)
+"loadprinter.ml" 123 4008 4052 "loadprinter.ml" 123 4008 4061
+type(
+  Env.t
+)
+ident(
+  ext_ref Env.empty
+)
+"loadprinter.ml" 123 4008 4031 "loadprinter.ml" 123 4008 4061
+call(
+  stack
+)
+type(
+  Path.t * Types.value_description
+)
+"loadprinter.ml" 124 4065 4074 "loadprinter.ml" 124 4065 4080
+type(
+  Types.type_expr
+)
+ident(
+  def ty_arg "loadprinter.ml" 129 4258 4262 "loadprinter.ml" 129 4258 4290
+)
+"loadprinter.ml" 124 4065 4082 "loadprinter.ml" 124 4065 4094
+type(
+  bool
+)
+ident(
+  def is_old_style "loadprinter.ml" 129 4258 4262 "loadprinter.ml" 129 4258 4290
+)
+"loadprinter.ml" 124 4065 4073 "loadprinter.ml" 124 4065 4095
+type(
+  Types.type_expr * bool
+)
+"loadprinter.ml" 126 4108 4117 "loadprinter.ml" 126 4108 4135
+type(
+  Types.value_description -> string -> Types.type_expr
+)
+ident(
+  int_ref match_printer_type "loadprinter.ml" 105 3471 3475 "loadprinter.ml" 105 3471 3493
+)
+"loadprinter.ml" 126 4108 4136 "loadprinter.ml" 126 4108 4140
+type(
+  Types.value_description
+)
+ident(
+  int_ref desc "loadprinter.ml" 123 4008 4023 "loadprinter.ml" 123 4008 4027
+)
+"loadprinter.ml" 126 4108 4141 "loadprinter.ml" 126 4108 4159
+type(
+  string
+)
+"loadprinter.ml" 126 4108 4117 "loadprinter.ml" 126 4108 4159
+call(
+  stack
+)
+type(
+  Types.type_expr
+)
+"loadprinter.ml" 126 4108 4161 "loadprinter.ml" 126 4108 4166
+type(
+  bool
+)
+"loadprinter.ml" 126 4108 4116 "loadprinter.ml" 126 4108 4167
+type(
+  Types.type_expr * bool
+)
+"loadprinter.ml" 127 4168 4191 "loadprinter.ml" 127 4168 4192
+type(
+  (Types.type_expr * Types.type_expr) list
+)
+"loadprinter.ml" 127 4168 4179 "loadprinter.ml" 127 4168 4192
+type(
+  exn
+)
+"loadprinter.ml" 128 4196 4205 "loadprinter.ml" 128 4196 4223
+type(
+  Types.value_description -> string -> Types.type_expr
+)
+ident(
+  int_ref match_printer_type "loadprinter.ml" 105 3471 3475 "loadprinter.ml" 105 3471 3493
+)
+"loadprinter.ml" 128 4196 4224 "loadprinter.ml" 128 4196 4228
+type(
+  Types.value_description
+)
+ident(
+  int_ref desc "loadprinter.ml" 123 4008 4023 "loadprinter.ml" 123 4008 4027
+)
+"loadprinter.ml" 128 4196 4229 "loadprinter.ml" 128 4196 4247
+type(
+  string
+)
+"loadprinter.ml" 128 4196 4205 "loadprinter.ml" 128 4196 4247
+call(
+  stack
+)
+type(
+  Types.type_expr
+)
+"loadprinter.ml" 128 4196 4249 "loadprinter.ml" 128 4196 4253
+type(
+  bool
+)
+"loadprinter.ml" 128 4196 4204 "loadprinter.ml" 128 4196 4254
+type(
+  Types.type_expr * bool
+)
+"loadprinter.ml" 125 4098 4104 "loadprinter.ml" 128 4196 4254
+type(
+  Types.type_expr * bool
+)
+"loadprinter.ml" 129 4258 4263 "loadprinter.ml" 129 4258 4269
+type(
+  Types.type_expr
+)
+ident(
+  int_ref ty_arg "loadprinter.ml" 124 4065 4074 "loadprinter.ml" 124 4065 4080
+)
+"loadprinter.ml" 129 4258 4271 "loadprinter.ml" 129 4258 4275
+type(
+  Path.t
+)
+ident(
+  int_ref path "loadprinter.ml" 123 4008 4017 "loadprinter.ml" 123 4008 4021
+)
+"loadprinter.ml" 129 4258 4277 "loadprinter.ml" 129 4258 4289
+type(
+  bool
+)
+ident(
+  int_ref is_old_style "loadprinter.ml" 124 4065 4082 "loadprinter.ml" 124 4065 4094
+)
+"loadprinter.ml" 129 4258 4262 "loadprinter.ml" 129 4258 4290
+type(
+  Types.type_expr * Path.t * bool
+)
+"loadprinter.ml" 124 4065 4069 "loadprinter.ml" 129 4258 4290
+type(
+  Types.type_expr * Path.t * bool
+)
+"loadprinter.ml" 123 4008 4012 "loadprinter.ml" 129 4258 4290
+type(
+  Types.type_expr * Path.t * bool
+)
+"loadprinter.ml" 131 4298 4302 "loadprinter.ml" 131 4298 4311
+type(
+  exn
+)
+"loadprinter.ml" 131 4298 4315 "loadprinter.ml" 131 4298 4320
+type(
+  exn -> Types.type_expr * Path.t * bool
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"loadprinter.ml" 131 4298 4346 "loadprinter.ml" 131 4298 4349
+type(
+  Longident.t
+)
+ident(
+  int_ref lid "loadprinter.ml" 121 3974 3996 "loadprinter.ml" 121 3974 3999
+)
+"loadprinter.ml" 131 4298 4326 "loadprinter.ml" 131 4298 4350
+type(
+  error
+)
+"loadprinter.ml" 131 4298 4320 "loadprinter.ml" 131 4298 4351
+type(
+  exn
+)
+"loadprinter.ml" 131 4298 4315 "loadprinter.ml" 131 4298 4351
+type(
+  Types.type_expr * Path.t * bool
+)
+"loadprinter.ml" 132 4352 4368 "loadprinter.ml" 132 4352 4369
+type(
+  (Types.type_expr * Types.type_expr) list
+)
+"loadprinter.ml" 132 4352 4356 "loadprinter.ml" 132 4352 4369
+type(
+  exn
+)
+"loadprinter.ml" 132 4352 4373 "loadprinter.ml" 132 4352 4378
+type(
+  exn -> Types.type_expr * Path.t * bool
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"loadprinter.ml" 132 4352 4396 "loadprinter.ml" 132 4352 4399
+type(
+  Longident.t
+)
+ident(
+  int_ref lid "loadprinter.ml" 121 3974 3996 "loadprinter.ml" 121 3974 3999
+)
+"loadprinter.ml" 132 4352 4384 "loadprinter.ml" 132 4352 4400
+type(
+  error
+)
+"loadprinter.ml" 132 4352 4378 "loadprinter.ml" 132 4352 4401
+type(
+  exn
+)
+"loadprinter.ml" 132 4352 4373 "loadprinter.ml" 132 4352 4401
+type(
+  Types.type_expr * Path.t * bool
+)
+"loadprinter.ml" 122 4002 4004 "loadprinter.ml" 132 4352 4401
+type(
+  Types.type_expr * Path.t * bool
+)
+"loadprinter.ml" 134 4403 4407 "loadprinter.ml" 134 4403 4422
+type(
+  Format.formatter -> Longident.t -> unit
+)
+ident(
+  def install_printer "loadprinter.ml" 148 4901 4901 "loadprinter.ml" 1 0 -1
+)
+"loadprinter.ml" 134 4403 4423 "loadprinter.ml" 134 4403 4426
+type(
+  Format.formatter
+)
+ident(
+  def ppf "loadprinter.ml" 134 4403 4427 "loadprinter.ml" 146 4842 4899
+)
+"loadprinter.ml" 134 4403 4427 "loadprinter.ml" 134 4403 4430
+type(
+  Longident.t
+)
+ident(
+  def lid "loadprinter.ml" 135 4433 4435 "loadprinter.ml" 146 4842 4899
+)
+"loadprinter.ml" 135 4433 4440 "loadprinter.ml" 135 4433 4446
+type(
+  Types.type_expr
+)
+ident(
+  def ty_arg "loadprinter.ml" 136 4495 4497 "loadprinter.ml" 146 4842 4899
+)
+"loadprinter.ml" 135 4433 4448 "loadprinter.ml" 135 4433 4452
+type(
+  Path.t
+)
+ident(
+  def path "loadprinter.ml" 136 4495 4497 "loadprinter.ml" 146 4842 4899
+)
+"loadprinter.ml" 135 4433 4454 "loadprinter.ml" 135 4433 4466
+type(
+  bool
+)
+ident(
+  def is_old_style "loadprinter.ml" 136 4495 4497 "loadprinter.ml" 146 4842 4899
+)
+"loadprinter.ml" 135 4433 4439 "loadprinter.ml" 135 4433 4467
+type(
+  Types.type_expr * Path.t * bool
+)
+"loadprinter.ml" 135 4433 4470 "loadprinter.ml" 135 4433 4487
+type(
+  Longident.t -> Types.type_expr * Path.t * bool
+)
+ident(
+  int_ref find_printer_type "loadprinter.ml" 121 3974 3978 "loadprinter.ml" 121 3974 3995
+)
+"loadprinter.ml" 135 4433 4488 "loadprinter.ml" 135 4433 4491
+type(
+  Longident.t
+)
+ident(
+  int_ref lid "loadprinter.ml" 134 4403 4427 "loadprinter.ml" 134 4403 4430
+)
+"loadprinter.ml" 135 4433 4470 "loadprinter.ml" 135 4433 4491
+call(
+  stack
+)
+type(
+  Types.type_expr * Path.t * bool
+)
+"loadprinter.ml" 136 4495 4501 "loadprinter.ml" 136 4495 4502
+type(
+  Obj.t
+)
+ident(
+  def v "loadprinter.ml" 141 4662 4664 "loadprinter.ml" 146 4842 4899
+)
+"loadprinter.ml" 138 4513 4519 "loadprinter.ml" 138 4513 4540
+type(
+  (Path.t -> Obj.t) -> Path.t -> Obj.t
+)
+ident(
+  int_ref use_debugger_symtable "loadprinter.ml" 37 1403 1407 "loadprinter.ml" 37 1403 1428
+)
+"loadprinter.ml" 138 4513 4541 "loadprinter.ml" 138 4513 4550
+type(
+  Path.t -> Obj.t
+)
+ident(
+  int_ref eval_path "loadprinter.ml" 89 2864 2872 "loadprinter.ml" 89 2864 2881
+)
+"loadprinter.ml" 138 4513 4551 "loadprinter.ml" 138 4513 4555
+type(
+  Path.t
+)
+ident(
+  int_ref path "loadprinter.ml" 135 4433 4448 "loadprinter.ml" 135 4433 4452
+)
+"loadprinter.ml" 138 4513 4519 "loadprinter.ml" 138 4513 4555
+call(
+  stack
+)
+type(
+  Obj.t
+)
+"loadprinter.ml" 139 4556 4606 "loadprinter.ml" 139 4556 4607
+type(
+  string
+)
+ident(
+  def s "loadprinter.ml" 140 4612 4618 "loadprinter.ml" 140 4612 4658
+)
+"loadprinter.ml" 139 4556 4579 "loadprinter.ml" 139 4556 4608
+type(
+  Symtable.error
+)
+"loadprinter.ml" 139 4556 4565 "loadprinter.ml" 139 4556 4608
+type(
+  exn
+)
+"loadprinter.ml" 140 4612 4618 "loadprinter.ml" 140 4612 4623
+type(
+  exn -> Obj.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"loadprinter.ml" 140 4612 4649 "loadprinter.ml" 140 4612 4650
+type(
+  string
+)
+ident(
+  int_ref s "loadprinter.ml" 139 4556 4606 "loadprinter.ml" 139 4556 4607
+)
+"loadprinter.ml" 140 4612 4652 "loadprinter.ml" 140 4612 4655
+type(
+  Longident.t
+)
+ident(
+  int_ref lid "loadprinter.ml" 134 4403 4427 "loadprinter.ml" 134 4403 4430
+)
+"loadprinter.ml" 140 4612 4629 "loadprinter.ml" 140 4612 4657
+type(
+  error
+)
+"loadprinter.ml" 140 4612 4623 "loadprinter.ml" 140 4612 4658
+type(
+  exn
+)
+"loadprinter.ml" 140 4612 4618 "loadprinter.ml" 140 4612 4658
+type(
+  Obj.t
+)
+"loadprinter.ml" 137 4505 4509 "loadprinter.ml" 140 4612 4658
+type(
+  Obj.t
+)
+"loadprinter.ml" 141 4662 4668 "loadprinter.ml" 141 4662 4682
+type(
+  'a -> Obj.t -> 'b
+)
+ident(
+  def print_function "loadprinter.ml" 146 4842 4844 "loadprinter.ml" 146 4842 4899
+)
+"loadprinter.ml" 142 4685 4692 "loadprinter.ml" 142 4685 4704
+type(
+  bool
+)
+ident(
+  int_ref is_old_style "loadprinter.ml" 135 4433 4454 "loadprinter.ml" 135 4433 4466
+)
+"loadprinter.ml" 143 4710 4721 "loadprinter.ml" 143 4710 4730
+type(
+  'a
+)
+ident(
+  def formatter "loadprinter.ml" 143 4710 4731 "loadprinter.ml" 143 4710 4763
+)
+"loadprinter.ml" 143 4710 4731 "loadprinter.ml" 143 4710 4735
+type(
+  Obj.t
+)
+ident(
+  def repr "loadprinter.ml" 143 4710 4739 "loadprinter.ml" 143 4710 4763
+)
+"loadprinter.ml" 143 4710 4739 "loadprinter.ml" 143 4710 4746
+type(
+  Obj.t -> '_c -> 'b
+)
+ident(
+  ext_ref Obj.obj
+)
+"loadprinter.ml" 143 4710 4747 "loadprinter.ml" 143 4710 4748
+type(
+  Obj.t
+)
+ident(
+  int_ref v "loadprinter.ml" 136 4495 4501 "loadprinter.ml" 136 4495 4502
+)
+"loadprinter.ml" 143 4710 4750 "loadprinter.ml" 143 4710 4757
+type(
+  Obj.t -> '_c
+)
+ident(
+  ext_ref Obj.obj
+)
+"loadprinter.ml" 143 4710 4758 "loadprinter.ml" 143 4710 4762
+type(
+  Obj.t
+)
+ident(
+  int_ref repr "loadprinter.ml" 143 4710 4731 "loadprinter.ml" 143 4710 4735
+)
+"loadprinter.ml" 143 4710 4749 "loadprinter.ml" 143 4710 4763
+type(
+  '_c
+)
+"loadprinter.ml" 143 4710 4739 "loadprinter.ml" 143 4710 4763
+call(
+  tail
+)
+type(
+  'b
+)
+"loadprinter.ml" 143 4710 4716 "loadprinter.ml" 143 4710 4764
+type(
+  'a -> Obj.t -> 'b
+)
+"loadprinter.ml" 145 4774 4785 "loadprinter.ml" 145 4774 4794
+type(
+  'a
+)
+ident(
+  def formatter "loadprinter.ml" 145 4774 4795 "loadprinter.ml" 145 4774 4837
+)
+"loadprinter.ml" 145 4774 4795 "loadprinter.ml" 145 4774 4799
+type(
+  Obj.t
+)
+ident(
+  def repr "loadprinter.ml" 145 4774 4803 "loadprinter.ml" 145 4774 4837
+)
+"loadprinter.ml" 145 4774 4803 "loadprinter.ml" 145 4774 4810
+type(
+  Obj.t -> 'a -> '_d -> 'b
+)
+ident(
+  ext_ref Obj.obj
+)
+"loadprinter.ml" 145 4774 4811 "loadprinter.ml" 145 4774 4812
+type(
+  Obj.t
+)
+ident(
+  int_ref v "loadprinter.ml" 136 4495 4501 "loadprinter.ml" 136 4495 4502
+)
+"loadprinter.ml" 145 4774 4813 "loadprinter.ml" 145 4774 4822
+type(
+  'a
+)
+ident(
+  int_ref formatter "loadprinter.ml" 145 4774 4785 "loadprinter.ml" 145 4774 4794
+)
+"loadprinter.ml" 145 4774 4824 "loadprinter.ml" 145 4774 4831
+type(
+  Obj.t -> '_d
+)
+ident(
+  ext_ref Obj.obj
+)
+"loadprinter.ml" 145 4774 4832 "loadprinter.ml" 145 4774 4836
+type(
+  Obj.t
+)
+ident(
+  int_ref repr "loadprinter.ml" 145 4774 4795 "loadprinter.ml" 145 4774 4799
+)
+"loadprinter.ml" 145 4774 4823 "loadprinter.ml" 145 4774 4837
+type(
+  '_d
+)
+"loadprinter.ml" 145 4774 4803 "loadprinter.ml" 145 4774 4837
+call(
+  tail
+)
+type(
+  'b
+)
+"loadprinter.ml" 145 4774 4780 "loadprinter.ml" 145 4774 4838
+type(
+  'a -> Obj.t -> 'b
+)
+"loadprinter.ml" 142 4685 4689 "loadprinter.ml" 145 4774 4838
+type(
+  'a -> Obj.t -> 'b
+)
+"loadprinter.ml" 146 4842 4844 "loadprinter.ml" 146 4842 4868
+type(
+  Path.t ->
+  Types.type_expr ->
+  Format.formatter -> (Format.formatter -> Obj.t -> unit) -> unit
+)
+ident(
+  ext_ref Printval.install_printer
+)
+"loadprinter.ml" 146 4842 4869 "loadprinter.ml" 146 4842 4873
+type(
+  Path.t
+)
+ident(
+  int_ref path "loadprinter.ml" 135 4433 4448 "loadprinter.ml" 135 4433 4452
+)
+"loadprinter.ml" 146 4842 4874 "loadprinter.ml" 146 4842 4880
+type(
+  Types.type_expr
+)
+ident(
+  int_ref ty_arg "loadprinter.ml" 135 4433 4440 "loadprinter.ml" 135 4433 4446
+)
+"loadprinter.ml" 146 4842 4881 "loadprinter.ml" 146 4842 4884
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "loadprinter.ml" 134 4403 4423 "loadprinter.ml" 134 4403 4426
+)
+"loadprinter.ml" 146 4842 4885 "loadprinter.ml" 146 4842 4899
+type(
+  Format.formatter -> Obj.t -> unit
+)
+ident(
+  int_ref print_function "loadprinter.ml" 141 4662 4668 "loadprinter.ml" 141 4662 4682
+)
+"loadprinter.ml" 146 4842 4844 "loadprinter.ml" 146 4842 4899
+call(
+  tail
+)
+type(
+  unit
+)
+"loadprinter.ml" 141 4662 4664 "loadprinter.ml" 146 4842 4899
+type(
+  unit
+)
+"loadprinter.ml" 136 4495 4497 "loadprinter.ml" 146 4842 4899
+type(
+  unit
+)
+"loadprinter.ml" 135 4433 4435 "loadprinter.ml" 146 4842 4899
+type(
+  unit
+)
+"loadprinter.ml" 148 4901 4905 "loadprinter.ml" 148 4901 4919
+type(
+  Longident.t -> unit
+)
+ident(
+  def remove_printer "loadprinter.ml" 157 5108 5108 "loadprinter.ml" 1 0 -1
+)
+"loadprinter.ml" 148 4901 4920 "loadprinter.ml" 148 4901 4923
+type(
+  Longident.t
+)
+ident(
+  def lid "loadprinter.ml" 149 4926 4928 "loadprinter.ml" 153 5047 5086
+)
+"loadprinter.ml" 149 4926 4933 "loadprinter.ml" 149 4926 4939
+type(
+  Types.type_expr
+)
+ident(
+  def ty_arg "loadprinter.ml" 150 4988 4990 "loadprinter.ml" 153 5047 5086
+)
+"loadprinter.ml" 149 4926 4941 "loadprinter.ml" 149 4926 4945
+type(
+  Path.t
+)
+ident(
+  def path "loadprinter.ml" 150 4988 4990 "loadprinter.ml" 153 5047 5086
+)
+"loadprinter.ml" 149 4926 4947 "loadprinter.ml" 149 4926 4959
+type(
+  bool
+)
+ident(
+  def is_old_style "loadprinter.ml" 150 4988 4990 "loadprinter.ml" 153 5047 5086
+)
+"loadprinter.ml" 149 4926 4932 "loadprinter.ml" 149 4926 4960
+type(
+  Types.type_expr * Path.t * bool
+)
+"loadprinter.ml" 149 4926 4963 "loadprinter.ml" 149 4926 4980
+type(
+  Longident.t -> Types.type_expr * Path.t * bool
+)
+ident(
+  int_ref find_printer_type "loadprinter.ml" 121 3974 3978 "loadprinter.ml" 121 3974 3995
+)
+"loadprinter.ml" 149 4926 4981 "loadprinter.ml" 149 4926 4984
+type(
+  Longident.t
+)
+ident(
+  int_ref lid "loadprinter.ml" 148 4901 4920 "loadprinter.ml" 148 4901 4923
+)
+"loadprinter.ml" 149 4926 4963 "loadprinter.ml" 149 4926 4984
+call(
+  stack
+)
+type(
+  Types.type_expr * Path.t * bool
+)
+"loadprinter.ml" 151 4994 4998 "loadprinter.ml" 151 4994 5021
+type(
+  Path.t -> unit
+)
+ident(
+  ext_ref Printval.remove_printer
+)
+"loadprinter.ml" 151 4994 5022 "loadprinter.ml" 151 4994 5026
+type(
+  Path.t
+)
+ident(
+  int_ref path "loadprinter.ml" 149 4926 4941 "loadprinter.ml" 149 4926 4945
+)
+"loadprinter.ml" 151 4994 4998 "loadprinter.ml" 151 4994 5026
+call(
+  stack
+)
+type(
+  unit
+)
+"loadprinter.ml" 152 5027 5034 "loadprinter.ml" 152 5027 5043
+type(
+  exn
+)
+"loadprinter.ml" 153 5047 5051 "loadprinter.ml" 153 5047 5056
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"loadprinter.ml" 153 5047 5081 "loadprinter.ml" 153 5047 5084
+type(
+  Longident.t
+)
+ident(
+  int_ref lid "loadprinter.ml" 148 4901 4920 "loadprinter.ml" 148 4901 4923
+)
+"loadprinter.ml" 153 5047 5062 "loadprinter.ml" 153 5047 5085
+type(
+  error
+)
+"loadprinter.ml" 153 5047 5056 "loadprinter.ml" 153 5047 5086
+type(
+  exn
+)
+"loadprinter.ml" 153 5047 5051 "loadprinter.ml" 153 5047 5086
+type(
+  unit
+)
+"loadprinter.ml" 150 4988 4990 "loadprinter.ml" 153 5047 5086
+type(
+  unit
+)
+"loadprinter.ml" 149 4926 4928 "loadprinter.ml" 153 5047 5086
+type(
+  unit
+)
+"loadprinter.ml" 159 5121 5125 "loadprinter.ml" 159 5121 5137
+type(
+  Format.formatter -> error -> unit
+)
+ident(
+  def report_error "loadprinter.ml" 176 5810 5838 "loadprinter.ml" 1 0 -1
+)
+"loadprinter.ml" 159 5121 5138 "loadprinter.ml" 159 5121 5141
+type(
+  Format.formatter
+)
+ident(
+  def ppf "loadprinter.ml" 159 5121 5144 "loadprinter.ml" 176 5810 5838
+)
+"loadprinter.ml" 160 5153 5170 "loadprinter.ml" 160 5153 5171
+type(
+  Dynlink.error
+)
+ident(
+  def e "loadprinter.ml" 161 5175 5181 "loadprinter.ml" 162 5231 5264
+)
+"loadprinter.ml" 160 5153 5157 "loadprinter.ml" 160 5153 5171
+type(
+  error
+)
+"loadprinter.ml" 161 5175 5181 "loadprinter.ml" 161 5175 5188
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"loadprinter.ml" 161 5175 5189 "loadprinter.ml" 161 5175 5192
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "loadprinter.ml" 159 5121 5138 "loadprinter.ml" 159 5121 5141
+)
+"loadprinter.ml" 161 5175 5193 "loadprinter.ml" 161 5175 5230
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"loadprinter.ml" 162 5231 5240 "loadprinter.ml" 162 5231 5261
+type(
+  Dynlink.error -> string
+)
+ident(
+  ext_ref Dynlink.error_message
+)
+"loadprinter.ml" 162 5231 5262 "loadprinter.ml" 162 5231 5263
+type(
+  Dynlink.error
+)
+ident(
+  int_ref e "loadprinter.ml" 160 5153 5170 "loadprinter.ml" 160 5153 5171
+)
+"loadprinter.ml" 162 5231 5239 "loadprinter.ml" 162 5231 5264
+call(
+  stack
+)
+type(
+  string
+)
+"loadprinter.ml" 161 5175 5181 "loadprinter.ml" 162 5231 5264
+call(
+  tail
+)
+type(
+  unit
+)
+"loadprinter.ml" 163 5265 5288 "loadprinter.ml" 163 5265 5291
+type(
+  Longident.t
+)
+ident(
+  def lid "loadprinter.ml" 164 5295 5301 "loadprinter.ml" 165 5343 5371
+)
+"loadprinter.ml" 163 5265 5269 "loadprinter.ml" 163 5265 5291
+type(
+  error
+)
+"loadprinter.ml" 164 5295 5301 "loadprinter.ml" 164 5295 5308
+type(
+  Format.formatter ->
+  ((Format.formatter -> Longident.t -> unit) -> Longident.t -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> Longident.t -> unit) -> Longident.t -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"loadprinter.ml" 164 5295 5309 "loadprinter.ml" 164 5295 5312
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "loadprinter.ml" 159 5121 5138 "loadprinter.ml" 159 5121 5141
+)
+"loadprinter.ml" 164 5295 5313 "loadprinter.ml" 164 5295 5342
+type(
+  ((Format.formatter -> Longident.t -> unit) -> Longident.t -> unit,
+   Format.formatter, unit)
+  format
+)
+"loadprinter.ml" 165 5343 5349 "loadprinter.ml" 165 5343 5367
+type(
+  Format.formatter -> Longident.t -> unit
+)
+ident(
+  ext_ref Printtyp.longident
+)
+"loadprinter.ml" 165 5343 5368 "loadprinter.ml" 165 5343 5371
+type(
+  Longident.t
+)
+ident(
+  int_ref lid "loadprinter.ml" 163 5265 5288 "loadprinter.ml" 163 5265 5291
+)
+"loadprinter.ml" 164 5295 5301 "loadprinter.ml" 165 5343 5371
+call(
+  tail
+)
+type(
+  unit
+)
+"loadprinter.ml" 166 5372 5395 "loadprinter.ml" 166 5372 5397
+type(
+  string
+)
+ident(
+  def md "loadprinter.ml" 167 5407 5413 "loadprinter.ml" 170 5546 5579
+)
+"loadprinter.ml" 166 5372 5399 "loadprinter.ml" 166 5372 5402
+type(
+  Longident.t
+)
+ident(
+  def lid "loadprinter.ml" 167 5407 5413 "loadprinter.ml" 170 5546 5579
+)
+"loadprinter.ml" 166 5372 5376 "loadprinter.ml" 166 5372 5403
+type(
+  error
+)
+"loadprinter.ml" 167 5407 5413 "loadprinter.ml" 167 5407 5420
+type(
+  Format.formatter ->
+  ((Format.formatter -> Longident.t -> unit) -> Longident.t -> string -> unit,
+   Format.formatter, unit)
+  format ->
+  (Format.formatter -> Longident.t -> unit) -> Longident.t -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"loadprinter.ml" 167 5407 5421 "loadprinter.ml" 167 5407 5424
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "loadprinter.ml" 159 5121 5138 "loadprinter.ml" 159 5121 5141
+)
+"loadprinter.ml" 168 5425 5433 "loadprinter.ml" 169 5487 5545
+type(
+  ((Format.formatter -> Longident.t -> unit) -> Longident.t -> string -> unit,
+   Format.formatter, unit)
+  format
+)
+"loadprinter.ml" 170 5546 5554 "loadprinter.ml" 170 5546 5572
+type(
+  Format.formatter -> Longident.t -> unit
+)
+ident(
+  ext_ref Printtyp.longident
+)
+"loadprinter.ml" 170 5546 5573 "loadprinter.ml" 170 5546 5576
+type(
+  Longident.t
+)
+ident(
+  int_ref lid "loadprinter.ml" 166 5372 5399 "loadprinter.ml" 166 5372 5402
+)
+"loadprinter.ml" 170 5546 5577 "loadprinter.ml" 170 5546 5579
+type(
+  string
+)
+ident(
+  int_ref md "loadprinter.ml" 166 5372 5395 "loadprinter.ml" 166 5372 5397
+)
+"loadprinter.ml" 167 5407 5413 "loadprinter.ml" 170 5546 5579
+call(
+  tail
+)
+type(
+  unit
+)
+"loadprinter.ml" 171 5580 5595 "loadprinter.ml" 171 5580 5598
+type(
+  Longident.t
+)
+ident(
+  def lid "loadprinter.ml" 172 5602 5608 "loadprinter.ml" 173 5675 5703
+)
+"loadprinter.ml" 171 5580 5584 "loadprinter.ml" 171 5580 5598
+type(
+  error
+)
+"loadprinter.ml" 172 5602 5608 "loadprinter.ml" 172 5602 5615
+type(
+  Format.formatter ->
+  ((Format.formatter -> Longident.t -> unit) -> Longident.t -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> Longident.t -> unit) -> Longident.t -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"loadprinter.ml" 172 5602 5616 "loadprinter.ml" 172 5602 5619
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "loadprinter.ml" 159 5121 5138 "loadprinter.ml" 159 5121 5141
+)
+"loadprinter.ml" 172 5602 5620 "loadprinter.ml" 172 5602 5674
+type(
+  ((Format.formatter -> Longident.t -> unit) -> Longident.t -> unit,
+   Format.formatter, unit)
+  format
+)
+"loadprinter.ml" 173 5675 5681 "loadprinter.ml" 173 5675 5699
+type(
+  Format.formatter -> Longident.t -> unit
+)
+ident(
+  ext_ref Printtyp.longident
+)
+"loadprinter.ml" 173 5675 5700 "loadprinter.ml" 173 5675 5703
+type(
+  Longident.t
+)
+ident(
+  int_ref lid "loadprinter.ml" 171 5580 5595 "loadprinter.ml" 171 5580 5598
+)
+"loadprinter.ml" 172 5602 5608 "loadprinter.ml" 173 5675 5703
+call(
+  tail
+)
+type(
+  unit
+)
+"loadprinter.ml" 174 5704 5726 "loadprinter.ml" 174 5704 5729
+type(
+  Longident.t
+)
+ident(
+  def lid "loadprinter.ml" 175 5733 5739 "loadprinter.ml" 176 5810 5838
+)
+"loadprinter.ml" 174 5704 5708 "loadprinter.ml" 174 5704 5729
+type(
+  error
+)
+"loadprinter.ml" 175 5733 5739 "loadprinter.ml" 175 5733 5746
+type(
+  Format.formatter ->
+  ((Format.formatter -> Longident.t -> unit) -> Longident.t -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> Longident.t -> unit) -> Longident.t -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"loadprinter.ml" 175 5733 5747 "loadprinter.ml" 175 5733 5750
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "loadprinter.ml" 159 5121 5138 "loadprinter.ml" 159 5121 5141
+)
+"loadprinter.ml" 175 5733 5751 "loadprinter.ml" 175 5733 5809
+type(
+  ((Format.formatter -> Longident.t -> unit) -> Longident.t -> unit,
+   Format.formatter, unit)
+  format
+)
+"loadprinter.ml" 176 5810 5816 "loadprinter.ml" 176 5810 5834
+type(
+  Format.formatter -> Longident.t -> unit
+)
+ident(
+  ext_ref Printtyp.longident
+)
+"loadprinter.ml" 176 5810 5835 "loadprinter.ml" 176 5810 5838
+type(
+  Longident.t
+)
+ident(
+  int_ref lid "loadprinter.ml" 174 5704 5726 "loadprinter.ml" 174 5704 5729
+)
+"loadprinter.ml" 175 5733 5739 "loadprinter.ml" 176 5810 5838
+call(
+  tail
+)
+type(
+  unit
+)
+"loadprinter.ml" 159 5121 5144 "loadprinter.ml" 176 5810 5838
+type(
+  error -> unit
+)

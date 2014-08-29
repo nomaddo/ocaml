@@ -1,0 +1,376 @@
+"checkpoints.ml" 49 1872 1880 "checkpoints.ml" 49 1872 1884
+type(
+  checkpoint
+)
+ident(
+  def root "checkpoints.ml" 49 1872 1872 "checkpoints.ml" 1 0 -1
+)
+"checkpoints.ml" 50 1889 1900 "checkpoints.ml" 50 1889 1902
+type(
+  int64
+)
+ident(
+  ext_ref Int64ops._0
+)
+"checkpoints.ml" 51 1904 1914 "checkpoints.ml" 51 1904 1916
+type(
+  int
+)
+"checkpoints.ml" 52 1918 1927 "checkpoints.ml" 52 1918 1933
+type(
+  Primitives.io_channel
+)
+ident(
+  ext_ref Primitives.std_io
+)
+"checkpoints.ml" 53 1935 1947 "checkpoints.ml" 53 1935 1952
+type(
+  bool
+)
+"checkpoints.ml" 54 1954 1967 "checkpoints.ml" 54 1954 1971
+type(
+  Debugcom.report option
+)
+"checkpoints.ml" 55 1973 1985 "checkpoints.ml" 55 1973 1994
+type(
+  checkpoint_state
+)
+"checkpoints.ml" 56 1996 2009 "checkpoints.ml" 56 1996 2013
+type(
+  checkpoint
+)
+ident(
+  int_ref root "checkpoints.ml" 49 1872 1880 "checkpoints.ml" 49 1872 1884
+)
+"checkpoints.ml" 57 2015 2040 "checkpoints.ml" 57 2015 2041
+type(
+  int
+)
+"checkpoints.ml" 58 2043 2061 "checkpoints.ml" 58 2043 2063
+type(
+  (int * int ref) list
+)
+"checkpoints.ml" 59 2065 2084 "checkpoints.ml" 59 2065 2085
+type(
+  int
+)
+"checkpoints.ml" 49 1872 1887 "checkpoints.ml" 60 2086 2089
+type(
+  checkpoint
+)
+"checkpoints.ml" 63 2115 2119 "checkpoints.ml" 63 2115 2130
+type(
+  checkpoint list ref
+)
+ident(
+  def checkpoints "checkpoints.ml" 66 2163 2163 "checkpoints.ml" 1 0 -1
+)
+"checkpoints.ml" 64 2133 2135 "checkpoints.ml" 64 2133 2138
+type(
+  checkpoint list -> checkpoint list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"checkpoints.ml" 64 2133 2140 "checkpoints.ml" 64 2133 2142
+type(
+  checkpoint list
+)
+type(
+  checkpoint list
+)
+"checkpoints.ml" 64 2133 2135 "checkpoints.ml" 64 2133 2161
+type(
+  checkpoint list ref
+)
+"checkpoints.ml" 66 2163 2167 "checkpoints.ml" 66 2163 2185
+type(
+  checkpoint ref
+)
+ident(
+  def current_checkpoint "checkpoints.ml" 69 2200 2200 "checkpoints.ml" 1 0 -1
+)
+"checkpoints.ml" 67 2188 2190 "checkpoints.ml" 67 2188 2193
+type(
+  checkpoint -> checkpoint ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"checkpoints.ml" 67 2188 2194 "checkpoints.ml" 67 2188 2198
+type(
+  checkpoint
+)
+ident(
+  int_ref root "checkpoints.ml" 49 1872 1880 "checkpoints.ml" 49 1872 1884
+)
+"checkpoints.ml" 67 2188 2190 "checkpoints.ml" 67 2188 2198
+type(
+  checkpoint ref
+)
+"checkpoints.ml" 69 2200 2204 "checkpoints.ml" 69 2200 2216
+type(
+  unit -> int64
+)
+ident(
+  def current_time "checkpoints.ml" 72 2252 2252 "checkpoints.ml" 1 0 -1
+)
+"checkpoints.ml" 69 2200 2217 "checkpoints.ml" 69 2200 2219
+type(
+  unit
+)
+"checkpoints.ml" 70 2222 2224 "checkpoints.ml" 70 2222 2225
+type(
+  checkpoint ref -> checkpoint
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"checkpoints.ml" 70 2222 2225 "checkpoints.ml" 70 2222 2243
+type(
+  checkpoint ref
+)
+ident(
+  int_ref current_checkpoint "checkpoints.ml" 66 2163 2167 "checkpoints.ml" 66 2163 2185
+)
+"checkpoints.ml" 70 2222 2224 "checkpoints.ml" 70 2222 2243
+type(
+  checkpoint
+)
+"checkpoints.ml" 70 2222 2224 "checkpoints.ml" 70 2222 2250
+type(
+  int64
+)
+"checkpoints.ml" 72 2252 2256 "checkpoints.ml" 72 2252 2270
+type(
+  unit -> Debugcom.report option
+)
+ident(
+  def current_report "checkpoints.ml" 75 2308 2308 "checkpoints.ml" 1 0 -1
+)
+"checkpoints.ml" 72 2252 2271 "checkpoints.ml" 72 2252 2273
+type(
+  unit
+)
+"checkpoints.ml" 73 2276 2278 "checkpoints.ml" 73 2276 2279
+type(
+  checkpoint ref -> checkpoint
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"checkpoints.ml" 73 2276 2279 "checkpoints.ml" 73 2276 2297
+type(
+  checkpoint ref
+)
+ident(
+  int_ref current_checkpoint "checkpoints.ml" 66 2163 2167 "checkpoints.ml" 66 2163 2185
+)
+"checkpoints.ml" 73 2276 2278 "checkpoints.ml" 73 2276 2297
+type(
+  checkpoint
+)
+"checkpoints.ml" 73 2276 2278 "checkpoints.ml" 73 2276 2306
+type(
+  Debugcom.report option
+)
+"checkpoints.ml" 75 2308 2312 "checkpoints.ml" 75 2308 2322
+type(
+  unit -> int option
+)
+ident(
+  def current_pc "checkpoints.ml" 80 2467 2467 "checkpoints.ml" 1 0 -1
+)
+"checkpoints.ml" 75 2308 2323 "checkpoints.ml" 75 2308 2325
+type(
+  unit
+)
+"checkpoints.ml" 76 2328 2336 "checkpoints.ml" 76 2328 2350
+type(
+  unit -> Debugcom.report option
+)
+ident(
+  int_ref current_report "checkpoints.ml" 72 2252 2256 "checkpoints.ml" 72 2252 2270
+)
+"checkpoints.ml" 76 2328 2351 "checkpoints.ml" 76 2328 2353
+type(
+  unit
+)
+"checkpoints.ml" 76 2328 2336 "checkpoints.ml" 76 2328 2353
+call(
+  stack
+)
+type(
+  Debugcom.report option
+)
+"checkpoints.ml" 77 2359 2363 "checkpoints.ml" 77 2359 2367
+type(
+  Debugcom.report option
+)
+"checkpoints.ml" 77 2359 2387 "checkpoints.ml" 77 2359 2393
+type(
+  Debugcom.execution_summary
+)
+"checkpoints.ml" 77 2359 2396 "checkpoints.ml" 77 2359 2408
+type(
+  Debugcom.execution_summary
+)
+"checkpoints.ml" 77 2359 2387 "checkpoints.ml" 77 2359 2408
+type(
+  Debugcom.execution_summary
+)
+"checkpoints.ml" 77 2359 2375 "checkpoints.ml" 77 2359 2409
+type(
+  Debugcom.report
+)
+"checkpoints.ml" 77 2359 2370 "checkpoints.ml" 77 2359 2409
+type(
+  Debugcom.report option
+)
+"checkpoints.ml" 77 2359 2363 "checkpoints.ml" 77 2359 2409
+type(
+  Debugcom.report option
+)
+"checkpoints.ml" 77 2359 2413 "checkpoints.ml" 77 2359 2417
+type(
+  int option
+)
+"checkpoints.ml" 78 2418 2450 "checkpoints.ml" 78 2418 2452
+type(
+  int
+)
+ident(
+  def pc "checkpoints.ml" 78 2418 2458 "checkpoints.ml" 78 2418 2465
+)
+"checkpoints.ml" 78 2418 2427 "checkpoints.ml" 78 2418 2454
+type(
+  Debugcom.report
+)
+"checkpoints.ml" 78 2418 2422 "checkpoints.ml" 78 2418 2454
+type(
+  Debugcom.report option
+)
+"checkpoints.ml" 78 2418 2463 "checkpoints.ml" 78 2418 2465
+type(
+  int
+)
+ident(
+  int_ref pc "checkpoints.ml" 78 2418 2450 "checkpoints.ml" 78 2418 2452
+)
+"checkpoints.ml" 78 2418 2458 "checkpoints.ml" 78 2418 2465
+type(
+  int option
+)
+"checkpoints.ml" 76 2328 2330 "checkpoints.ml" 78 2418 2465
+type(
+  int option
+)
+"checkpoints.ml" 80 2467 2471 "checkpoints.ml" 80 2467 2484
+type(
+  unit -> (int * int) option
+)
+ident(
+  def current_pc_sp "checkpoints.ml" 83 2580 2657 "checkpoints.ml" 1 0 -1
+)
+"checkpoints.ml" 80 2467 2485 "checkpoints.ml" 80 2467 2487
+type(
+  unit
+)
+"checkpoints.ml" 81 2490 2498 "checkpoints.ml" 81 2490 2512
+type(
+  unit -> Debugcom.report option
+)
+ident(
+  int_ref current_report "checkpoints.ml" 72 2252 2256 "checkpoints.ml" 72 2252 2270
+)
+"checkpoints.ml" 81 2490 2513 "checkpoints.ml" 81 2490 2515
+type(
+  unit
+)
+"checkpoints.ml" 81 2490 2498 "checkpoints.ml" 81 2490 2515
+call(
+  stack
+)
+type(
+  Debugcom.report option
+)
+"checkpoints.ml" 82 2521 2525 "checkpoints.ml" 82 2521 2529
+type(
+  Debugcom.report option
+)
+"checkpoints.ml" 82 2521 2549 "checkpoints.ml" 82 2521 2555
+type(
+  Debugcom.execution_summary
+)
+"checkpoints.ml" 82 2521 2558 "checkpoints.ml" 82 2521 2570
+type(
+  Debugcom.execution_summary
+)
+"checkpoints.ml" 82 2521 2549 "checkpoints.ml" 82 2521 2570
+type(
+  Debugcom.execution_summary
+)
+"checkpoints.ml" 82 2521 2537 "checkpoints.ml" 82 2521 2571
+type(
+  Debugcom.report
+)
+"checkpoints.ml" 82 2521 2532 "checkpoints.ml" 82 2521 2571
+type(
+  Debugcom.report option
+)
+"checkpoints.ml" 82 2521 2525 "checkpoints.ml" 82 2521 2571
+type(
+  Debugcom.report option
+)
+"checkpoints.ml" 82 2521 2575 "checkpoints.ml" 82 2521 2579
+type(
+  (int * int) option
+)
+"checkpoints.ml" 83 2580 2612 "checkpoints.ml" 83 2580 2614
+type(
+  int
+)
+ident(
+  def pc "checkpoints.ml" 83 2580 2644 "checkpoints.ml" 83 2580 2657
+)
+"checkpoints.ml" 83 2580 2636 "checkpoints.ml" 83 2580 2638
+type(
+  int
+)
+ident(
+  def sp "checkpoints.ml" 83 2580 2644 "checkpoints.ml" 83 2580 2657
+)
+"checkpoints.ml" 83 2580 2589 "checkpoints.ml" 83 2580 2640
+type(
+  Debugcom.report
+)
+"checkpoints.ml" 83 2580 2584 "checkpoints.ml" 83 2580 2640
+type(
+  Debugcom.report option
+)
+"checkpoints.ml" 83 2580 2650 "checkpoints.ml" 83 2580 2652
+type(
+  int
+)
+ident(
+  int_ref pc "checkpoints.ml" 83 2580 2612 "checkpoints.ml" 83 2580 2614
+)
+"checkpoints.ml" 83 2580 2654 "checkpoints.ml" 83 2580 2656
+type(
+  int
+)
+ident(
+  int_ref sp "checkpoints.ml" 83 2580 2636 "checkpoints.ml" 83 2580 2638
+)
+"checkpoints.ml" 83 2580 2649 "checkpoints.ml" 83 2580 2657
+type(
+  int * int
+)
+"checkpoints.ml" 83 2580 2644 "checkpoints.ml" 83 2580 2657
+type(
+  (int * int) option
+)
+"checkpoints.ml" 81 2490 2492 "checkpoints.ml" 83 2580 2657
+type(
+  (int * int) option
+)

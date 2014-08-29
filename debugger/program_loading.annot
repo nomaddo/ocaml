@@ -1,0 +1,2178 @@
+"program_loading.ml" 23 1002 1006 "program_loading.ml" 23 1002 1019
+type(
+  bool ref
+)
+ident(
+  def debug_loading "program_loading.ml" 28 1107 1107 "program_loading.ml" 1 0 -1
+)
+"program_loading.ml" 23 1002 1022 "program_loading.ml" 23 1002 1025
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"program_loading.ml" 23 1002 1026 "program_loading.ml" 23 1002 1031
+type(
+  bool
+)
+"program_loading.ml" 23 1002 1022 "program_loading.ml" 23 1002 1031
+type(
+  bool ref
+)
+"program_loading.ml" 28 1107 1111 "program_loading.ml" 28 1107 1125
+type(
+  (unit -> unit) ref
+)
+ident(
+  def launching_func "program_loading.ml" 30 1153 1153 "program_loading.ml" 1 0 -1
+)
+"program_loading.ml" 28 1107 1128 "program_loading.ml" 28 1107 1131
+type(
+  (unit -> unit) -> (unit -> unit) ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"program_loading.ml" 28 1107 1142 "program_loading.ml" 28 1107 1144
+type(
+  unit
+)
+"program_loading.ml" 28 1107 1148 "program_loading.ml" 28 1107 1150
+type(
+  unit
+)
+"program_loading.ml" 28 1107 1132 "program_loading.ml" 28 1107 1151
+type(
+  unit -> unit
+)
+"program_loading.ml" 28 1107 1128 "program_loading.ml" 28 1107 1151
+type(
+  (unit -> unit) ref
+)
+"program_loading.ml" 30 1153 1157 "program_loading.ml" 30 1153 1169
+type(
+  unit -> unit
+)
+ident(
+  def load_program "program_loading.ml" 37 1317 1317 "program_loading.ml" 1 0 -1
+)
+"program_loading.ml" 30 1153 1170 "program_loading.ml" 30 1153 1172
+type(
+  unit
+)
+"program_loading.ml" 31 1175 1177 "program_loading.ml" 31 1175 1178
+type(
+  (unit -> unit) ref -> unit -> unit
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 31 1175 1178 "program_loading.ml" 31 1175 1192
+type(
+  (unit -> unit) ref
+)
+ident(
+  int_ref launching_func "program_loading.ml" 28 1107 1111 "program_loading.ml" 28 1107 1125
+)
+"program_loading.ml" 31 1175 1177 "program_loading.ml" 31 1175 1192
+type(
+  unit -> unit
+)
+"program_loading.ml" 31 1175 1193 "program_loading.ml" 31 1175 1195
+type(
+  unit
+)
+"program_loading.ml" 31 1175 1177 "program_loading.ml" 31 1175 1195
+call(
+  stack
+)
+type(
+  unit
+)
+"program_loading.ml" 32 1197 1199 "program_loading.ml" 32 1197 1208
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Input_handling.main_loop
+)
+"program_loading.ml" 32 1197 1209 "program_loading.ml" 32 1197 1211
+type(
+  unit
+)
+"program_loading.ml" 32 1197 1199 "program_loading.ml" 32 1197 1211
+call(
+  tail
+)
+type(
+  unit
+)
+"program_loading.ml" 31 1175 1177 "program_loading.ml" 32 1197 1211
+type(
+  unit
+)
+"program_loading.ml" 37 1317 1321 "program_loading.ml" 37 1317 1341
+type(
+  unit -> string
+)
+ident(
+  def get_unix_environment "program_loading.ml" 54 1997 1997 "program_loading.ml" 1 0 -1
+)
+"program_loading.ml" 37 1317 1342 "program_loading.ml" 37 1317 1344
+type(
+  unit
+)
+"program_loading.ml" 38 1347 1353 "program_loading.ml" 38 1347 1354
+type(
+  string * string -> string
+)
+ident(
+  def f "program_loading.ml" 41 1436 1438 "program_loading.ml" 41 1436 1496
+)
+"program_loading.ml" 38 1347 1356 "program_loading.ml" 38 1347 1361
+type(
+  string
+)
+ident(
+  def vname "program_loading.ml" 39 1373 1377 "program_loading.ml" 39 1373 1430
+)
+"program_loading.ml" 38 1347 1363 "program_loading.ml" 38 1347 1369
+type(
+  string
+)
+ident(
+  def vvalue "program_loading.ml" 39 1373 1377 "program_loading.ml" 39 1373 1430
+)
+"program_loading.ml" 38 1347 1355 "program_loading.ml" 38 1347 1370
+type(
+  string * string
+)
+"program_loading.ml" 39 1373 1377 "program_loading.ml" 39 1373 1391
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"program_loading.ml" 39 1373 1392 "program_loading.ml" 39 1373 1400
+type(
+  (string -> string -> string, unit, string) format
+)
+"program_loading.ml" 39 1373 1401 "program_loading.ml" 39 1373 1406
+type(
+  string
+)
+ident(
+  int_ref vname "program_loading.ml" 38 1347 1356 "program_loading.ml" 38 1347 1361
+)
+"program_loading.ml" 39 1373 1408 "program_loading.ml" 39 1373 1422
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.quote
+)
+"program_loading.ml" 39 1373 1423 "program_loading.ml" 39 1373 1429
+type(
+  string
+)
+ident(
+  int_ref vvalue "program_loading.ml" 38 1347 1363 "program_loading.ml" 38 1347 1369
+)
+"program_loading.ml" 39 1373 1407 "program_loading.ml" 39 1373 1430
+call(
+  stack
+)
+type(
+  string
+)
+"program_loading.ml" 39 1373 1377 "program_loading.ml" 39 1373 1430
+call(
+  tail
+)
+type(
+  string
+)
+"program_loading.ml" 41 1436 1438 "program_loading.ml" 41 1436 1451
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"program_loading.ml" 41 1436 1452 "program_loading.ml" 41 1436 1454
+type(
+  string
+)
+"program_loading.ml" 41 1436 1456 "program_loading.ml" 41 1436 1464
+type(
+  (string * string -> string) -> (string * string) list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"program_loading.ml" 41 1436 1465 "program_loading.ml" 41 1436 1466
+type(
+  string * string -> string
+)
+ident(
+  int_ref f "program_loading.ml" 38 1347 1353 "program_loading.ml" 38 1347 1354
+)
+"program_loading.ml" 41 1436 1467 "program_loading.ml" 41 1436 1468
+type(
+  (string * string) list ref -> (string * string) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 41 1436 1468 "program_loading.ml" 41 1436 1495
+type(
+  (string * string) list ref
+)
+ident(
+  ext_ref Debugger_config.environment
+)
+"program_loading.ml" 41 1436 1467 "program_loading.ml" 41 1436 1495
+type(
+  (string * string) list
+)
+"program_loading.ml" 41 1436 1455 "program_loading.ml" 41 1436 1496
+call(
+  stack
+)
+type(
+  string list
+)
+"program_loading.ml" 41 1436 1438 "program_loading.ml" 41 1436 1496
+call(
+  tail
+)
+type(
+  string
+)
+"program_loading.ml" 38 1347 1349 "program_loading.ml" 41 1436 1496
+type(
+  string
+)
+"program_loading.ml" 54 1997 2001 "program_loading.ml" 54 1997 2024
+type(
+  string -> string
+)
+ident(
+  def quote_for_windows_shell "program_loading.ml" 68 2373 2373 "program_loading.ml" 1 0 -1
+)
+"program_loading.ml" 54 1997 2025 "program_loading.ml" 54 1997 2026
+type(
+  string
+)
+ident(
+  def s "program_loading.ml" 55 2029 2031 "program_loading.ml" 64 2277 2296
+)
+"program_loading.ml" 55 2029 2035 "program_loading.ml" 55 2029 2036
+type(
+  Buffer.t
+)
+ident(
+  def b "program_loading.ml" 56 2079 2081 "program_loading.ml" 64 2277 2296
+)
+"program_loading.ml" 55 2029 2039 "program_loading.ml" 55 2029 2052
+type(
+  int -> Buffer.t
+)
+ident(
+  ext_ref Buffer.create
+)
+"program_loading.ml" 55 2029 2054 "program_loading.ml" 55 2029 2056
+type(
+  int
+)
+"program_loading.ml" 55 2029 2057 "program_loading.ml" 55 2029 2058
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"program_loading.ml" 55 2029 2059 "program_loading.ml" 55 2029 2072
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"program_loading.ml" 55 2029 2073 "program_loading.ml" 55 2029 2074
+type(
+  string
+)
+ident(
+  int_ref s "program_loading.ml" 54 1997 2025 "program_loading.ml" 54 1997 2026
+)
+"program_loading.ml" 55 2029 2059 "program_loading.ml" 55 2029 2074
+type(
+  int
+)
+"program_loading.ml" 55 2029 2053 "program_loading.ml" 55 2029 2075
+type(
+  int
+)
+"program_loading.ml" 55 2029 2039 "program_loading.ml" 55 2029 2075
+call(
+  stack
+)
+type(
+  Buffer.t
+)
+"program_loading.ml" 56 2079 2089 "program_loading.ml" 56 2079 2090
+type(
+  int
+)
+"program_loading.ml" 56 2079 2094 "program_loading.ml" 56 2079 2107
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"program_loading.ml" 56 2079 2108 "program_loading.ml" 56 2079 2109
+type(
+  string
+)
+ident(
+  int_ref s "program_loading.ml" 54 1997 2025 "program_loading.ml" 54 1997 2026
+)
+"program_loading.ml" 56 2079 2094 "program_loading.ml" 56 2079 2109
+type(
+  int
+)
+"program_loading.ml" 56 2079 2110 "program_loading.ml" 56 2079 2111
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"program_loading.ml" 56 2079 2112 "program_loading.ml" 56 2079 2113
+type(
+  int
+)
+"program_loading.ml" 56 2079 2094 "program_loading.ml" 56 2079 2113
+type(
+  int
+)
+"program_loading.ml" 57 2117 2133 "program_loading.ml" 57 2117 2134
+type(
+  string
+)
+ident(
+  int_ref s "program_loading.ml" 54 1997 2025 "program_loading.ml" 54 1997 2026
+)
+"program_loading.ml" 57 2117 2136 "program_loading.ml" 57 2117 2137
+type(
+  int
+)
+ident(
+  int_ref i "program_loading.ml" 56 2079 2081 "program_loading.ml" 63 2269 2275
+)
+"program_loading.ml" 57 2117 2133 "program_loading.ml" 57 2117 2138
+type(
+  char
+)
+"program_loading.ml" 58 2144 2150 "program_loading.ml" 58 2144 2153
+type(
+  char
+)
+"program_loading.ml" 58 2144 2156 "program_loading.ml" 58 2144 2159
+type(
+  char
+)
+"program_loading.ml" 58 2144 2150 "program_loading.ml" 58 2144 2159
+type(
+  char
+)
+"program_loading.ml" 58 2144 2162 "program_loading.ml" 58 2144 2165
+type(
+  char
+)
+"program_loading.ml" 58 2144 2150 "program_loading.ml" 58 2144 2165
+type(
+  char
+)
+"program_loading.ml" 58 2144 2168 "program_loading.ml" 58 2144 2171
+type(
+  char
+)
+"program_loading.ml" 58 2144 2150 "program_loading.ml" 58 2144 2171
+type(
+  char
+)
+"program_loading.ml" 58 2144 2174 "program_loading.ml" 58 2144 2177
+type(
+  char
+)
+"program_loading.ml" 58 2144 2150 "program_loading.ml" 58 2144 2177
+type(
+  char
+)
+"program_loading.ml" 58 2144 2180 "program_loading.ml" 58 2144 2184
+type(
+  char
+)
+"program_loading.ml" 58 2144 2150 "program_loading.ml" 58 2144 2184
+type(
+  char
+)
+"program_loading.ml" 59 2188 2194 "program_loading.ml" 59 2188 2209
+type(
+  Buffer.t -> char -> unit
+)
+ident(
+  ext_ref Buffer.add_char
+)
+"program_loading.ml" 59 2188 2210 "program_loading.ml" 59 2188 2211
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "program_loading.ml" 55 2029 2035 "program_loading.ml" 55 2029 2036
+)
+"program_loading.ml" 59 2188 2212 "program_loading.ml" 59 2188 2215
+type(
+  char
+)
+"program_loading.ml" 59 2188 2194 "program_loading.ml" 59 2188 2216
+call(
+  stack
+)
+type(
+  unit
+)
+"program_loading.ml" 60 2217 2223 "program_loading.ml" 60 2217 2224
+type(
+  char
+)
+"program_loading.ml" 60 2217 2228 "program_loading.ml" 60 2217 2230
+type(
+  unit
+)
+"program_loading.ml" 57 2117 2121 "program_loading.ml" 61 2231 2238
+type(
+  unit
+)
+"program_loading.ml" 62 2240 2244 "program_loading.ml" 62 2240 2259
+type(
+  Buffer.t -> char -> unit
+)
+ident(
+  ext_ref Buffer.add_char
+)
+"program_loading.ml" 62 2240 2260 "program_loading.ml" 62 2240 2261
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "program_loading.ml" 55 2029 2035 "program_loading.ml" 55 2029 2036
+)
+"program_loading.ml" 62 2240 2262 "program_loading.ml" 62 2240 2263
+type(
+  string
+)
+ident(
+  int_ref s "program_loading.ml" 54 1997 2025 "program_loading.ml" 54 1997 2026
+)
+"program_loading.ml" 62 2240 2265 "program_loading.ml" 62 2240 2266
+type(
+  int
+)
+ident(
+  int_ref i "program_loading.ml" 56 2079 2081 "program_loading.ml" 63 2269 2275
+)
+"program_loading.ml" 62 2240 2262 "program_loading.ml" 62 2240 2267
+type(
+  char
+)
+"program_loading.ml" 62 2240 2244 "program_loading.ml" 62 2240 2268
+call(
+  stack
+)
+type(
+  unit
+)
+"program_loading.ml" 57 2117 2121 "program_loading.ml" 62 2240 2268
+type(
+  unit
+)
+"program_loading.ml" 56 2079 2081 "program_loading.ml" 63 2269 2275
+type(
+  unit
+)
+"program_loading.ml" 64 2277 2279 "program_loading.ml" 64 2277 2294
+type(
+  Buffer.t -> string
+)
+ident(
+  ext_ref Buffer.contents
+)
+"program_loading.ml" 64 2277 2295 "program_loading.ml" 64 2277 2296
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "program_loading.ml" 55 2029 2035 "program_loading.ml" 55 2029 2036
+)
+"program_loading.ml" 64 2277 2279 "program_loading.ml" 64 2277 2296
+call(
+  tail
+)
+type(
+  string
+)
+"program_loading.ml" 56 2079 2081 "program_loading.ml" 64 2277 2296
+type(
+  string
+)
+"program_loading.ml" 55 2029 2031 "program_loading.ml" 64 2277 2296
+type(
+  string
+)
+"program_loading.ml" 68 2373 2377 "program_loading.ml" 68 2373 2398
+type(
+  unit -> string
+)
+ident(
+  def get_win32_environment "program_loading.ml" 76 2691 2691 "program_loading.ml" 1 0 -1
+)
+"program_loading.ml" 68 2373 2399 "program_loading.ml" 68 2373 2401
+type(
+  unit
+)
+"program_loading.ml" 70 2476 2482 "program_loading.ml" 70 2476 2483
+type(
+  string * string -> string
+)
+ident(
+  def f "program_loading.ml" 73 2578 2580 "program_loading.ml" 73 2578 2638
+)
+"program_loading.ml" 70 2476 2485 "program_loading.ml" 70 2476 2490
+type(
+  string
+)
+ident(
+  def vname "program_loading.ml" 71 2502 2506 "program_loading.ml" 71 2502 2572
+)
+"program_loading.ml" 70 2476 2492 "program_loading.ml" 70 2476 2498
+type(
+  string
+)
+ident(
+  def vvalue "program_loading.ml" 71 2502 2506 "program_loading.ml" 71 2502 2572
+)
+"program_loading.ml" 70 2476 2484 "program_loading.ml" 70 2476 2499
+type(
+  string * string
+)
+"program_loading.ml" 71 2502 2506 "program_loading.ml" 71 2502 2520
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"program_loading.ml" 71 2502 2521 "program_loading.ml" 71 2502 2533
+type(
+  (string -> string -> string, unit, string) format
+)
+"program_loading.ml" 71 2502 2534 "program_loading.ml" 71 2502 2539
+type(
+  string
+)
+ident(
+  int_ref vname "program_loading.ml" 70 2476 2485 "program_loading.ml" 70 2476 2490
+)
+"program_loading.ml" 71 2502 2541 "program_loading.ml" 71 2502 2564
+type(
+  string -> string
+)
+ident(
+  int_ref quote_for_windows_shell "program_loading.ml" 54 1997 2001 "program_loading.ml" 54 1997 2024
+)
+"program_loading.ml" 71 2502 2565 "program_loading.ml" 71 2502 2571
+type(
+  string
+)
+ident(
+  int_ref vvalue "program_loading.ml" 70 2476 2492 "program_loading.ml" 70 2476 2498
+)
+"program_loading.ml" 71 2502 2540 "program_loading.ml" 71 2502 2572
+call(
+  stack
+)
+type(
+  string
+)
+"program_loading.ml" 71 2502 2506 "program_loading.ml" 71 2502 2572
+call(
+  tail
+)
+type(
+  string
+)
+"program_loading.ml" 73 2578 2580 "program_loading.ml" 73 2578 2593
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"program_loading.ml" 73 2578 2594 "program_loading.ml" 73 2578 2596
+type(
+  string
+)
+"program_loading.ml" 73 2578 2598 "program_loading.ml" 73 2578 2606
+type(
+  (string * string -> string) -> (string * string) list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"program_loading.ml" 73 2578 2607 "program_loading.ml" 73 2578 2608
+type(
+  string * string -> string
+)
+ident(
+  int_ref f "program_loading.ml" 70 2476 2482 "program_loading.ml" 70 2476 2483
+)
+"program_loading.ml" 73 2578 2609 "program_loading.ml" 73 2578 2610
+type(
+  (string * string) list ref -> (string * string) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 73 2578 2610 "program_loading.ml" 73 2578 2637
+type(
+  (string * string) list ref
+)
+ident(
+  ext_ref Debugger_config.environment
+)
+"program_loading.ml" 73 2578 2609 "program_loading.ml" 73 2578 2637
+type(
+  (string * string) list
+)
+"program_loading.ml" 73 2578 2597 "program_loading.ml" 73 2578 2638
+call(
+  stack
+)
+type(
+  string list
+)
+"program_loading.ml" 73 2578 2580 "program_loading.ml" 73 2578 2638
+call(
+  tail
+)
+type(
+  string
+)
+"program_loading.ml" 70 2476 2478 "program_loading.ml" 73 2578 2638
+type(
+  string
+)
+"program_loading.ml" 76 2691 2695 "program_loading.ml" 76 2691 2712
+type(
+  (unit -> string) -> unit -> unit
+)
+ident(
+  def generic_exec_unix "program_loading.ml" 103 3455 3455 "program_loading.ml" 1 0 -1
+)
+"program_loading.ml" 76 2691 2713 "program_loading.ml" 76 2691 2720
+type(
+  unit -> string
+)
+ident(
+  def cmdline "program_loading.ml" 76 2691 2723 "program_loading.ml" 101 3427 3453
+)
+"program_loading.ml" 76 2691 2732 "program_loading.ml" 76 2691 2734
+type(
+  unit
+)
+"program_loading.ml" 77 2738 2743 "program_loading.ml" 77 2738 2744
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 77 2738 2744 "program_loading.ml" 77 2738 2757
+type(
+  bool ref
+)
+ident(
+  int_ref debug_loading "program_loading.ml" 23 1002 1006 "program_loading.ml" 23 1002 1019
+)
+"program_loading.ml" 77 2738 2743 "program_loading.ml" 77 2738 2757
+type(
+  bool
+)
+"program_loading.ml" 78 2763 2767 "program_loading.ml" 78 2763 2780
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"program_loading.ml" 78 2763 2781 "program_loading.ml" 78 2763 2803
+type(
+  string
+)
+"program_loading.ml" 78 2763 2767 "program_loading.ml" 78 2763 2803
+call(
+  stack
+)
+type(
+  unit
+)
+"program_loading.ml" 77 2738 2740 "program_loading.ml" 78 2763 2803
+type(
+  unit
+)
+"program_loading.ml" 79 2805 2811 "program_loading.ml" 79 2805 2816
+type(
+  int
+)
+ident(
+  def child "program_loading.ml" 85 2912 2914 "program_loading.ml" 101 3427 3453
+)
+"program_loading.ml" 81 2827 2833 "program_loading.ml" 81 2827 2837
+type(
+  unit -> int
+)
+ident(
+  ext_ref Unix.fork
+)
+"program_loading.ml" 81 2827 2838 "program_loading.ml" 81 2827 2840
+type(
+  unit
+)
+"program_loading.ml" 81 2827 2833 "program_loading.ml" 81 2827 2840
+call(
+  stack
+)
+type(
+  int
+)
+"program_loading.ml" 82 2841 2850 "program_loading.ml" 82 2841 2851
+type(
+  exn
+)
+ident(
+  def x "program_loading.ml" 83 2855 2861 "program_loading.ml" 84 2888 2908
+)
+"program_loading.ml" 83 2855 2861 "program_loading.ml" 83 2855 2884
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Unix_tools.report_error
+)
+"program_loading.ml" 83 2855 2885 "program_loading.ml" 83 2855 2886
+type(
+  exn
+)
+ident(
+  int_ref x "program_loading.ml" 82 2841 2850 "program_loading.ml" 82 2841 2851
+)
+"program_loading.ml" 83 2855 2861 "program_loading.ml" 83 2855 2886
+call(
+  stack
+)
+type(
+  unit
+)
+"program_loading.ml" 84 2888 2894 "program_loading.ml" 84 2888 2899
+type(
+  exn -> int
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"program_loading.ml" 84 2888 2900 "program_loading.ml" 84 2888 2908
+type(
+  exn
+)
+"program_loading.ml" 84 2888 2894 "program_loading.ml" 84 2888 2908
+type(
+  int
+)
+"program_loading.ml" 83 2855 2861 "program_loading.ml" 84 2888 2908
+type(
+  int
+)
+"program_loading.ml" 80 2819 2823 "program_loading.ml" 84 2888 2908
+type(
+  int
+)
+"program_loading.ml" 85 2912 2920 "program_loading.ml" 85 2912 2925
+type(
+  int
+)
+ident(
+  int_ref child "program_loading.ml" 79 2805 2811 "program_loading.ml" 79 2805 2816
+)
+"program_loading.ml" 86 2931 2935 "program_loading.ml" 86 2931 2936
+type(
+  int
+)
+"program_loading.ml" 88 2956 2971 "program_loading.ml" 88 2956 2975
+type(
+  unit -> int
+)
+ident(
+  ext_ref Unix.fork
+)
+"program_loading.ml" 88 2956 2976 "program_loading.ml" 88 2956 2978
+type(
+  unit
+)
+"program_loading.ml" 88 2956 2971 "program_loading.ml" 88 2956 2978
+call(
+  stack
+)
+type(
+  int
+)
+"program_loading.ml" 89 2984 2995 "program_loading.ml" 89 2984 2996
+type(
+  int
+)
+"program_loading.ml" 91 3128 3154 "program_loading.ml" 91 3128 3160
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"program_loading.ml" 91 3128 3161 "program_loading.ml" 91 3128 3167
+type(
+  unit -> int
+)
+ident(
+  ext_ref Unix.setsid
+)
+"program_loading.ml" 91 3128 3167 "program_loading.ml" 91 3128 3169
+type(
+  unit
+)
+"program_loading.ml" 91 3128 3160 "program_loading.ml" 91 3128 3170
+call(
+  stack
+)
+type(
+  int
+)
+"program_loading.ml" 91 3128 3154 "program_loading.ml" 91 3128 3170
+type(
+  unit
+)
+"program_loading.ml" 91 3128 3193 "program_loading.ml" 91 3128 3194
+type(
+  string
+)
+"program_loading.ml" 91 3128 3176 "program_loading.ml" 91 3128 3194
+type(
+  exn
+)
+"program_loading.ml" 91 3128 3198 "program_loading.ml" 91 3128 3200
+type(
+  unit
+)
+"program_loading.ml" 91 3128 3144 "program_loading.ml" 91 3128 3204
+type(
+  unit
+)
+"program_loading.ml" 92 3206 3222 "program_loading.ml" 92 3206 3227
+type(
+  string -> string array -> unit
+)
+ident(
+  ext_ref Unix.execv
+)
+"program_loading.ml" 92 3206 3228 "program_loading.ml" 92 3206 3233
+type(
+  string
+)
+ident(
+  ext_ref Debugger_config.shell
+)
+"program_loading.ml" 92 3206 3237 "program_loading.ml" 92 3206 3242
+type(
+  string
+)
+ident(
+  ext_ref Debugger_config.shell
+)
+"program_loading.ml" 92 3206 3244 "program_loading.ml" 92 3206 3248
+type(
+  string
+)
+"program_loading.ml" 92 3206 3250 "program_loading.ml" 92 3206 3257
+type(
+  unit -> string
+)
+ident(
+  int_ref cmdline "program_loading.ml" 76 2691 2713 "program_loading.ml" 76 2691 2720
+)
+"program_loading.ml" 92 3206 3257 "program_loading.ml" 92 3206 3259
+type(
+  unit
+)
+"program_loading.ml" 92 3206 3250 "program_loading.ml" 92 3206 3259
+call(
+  stack
+)
+type(
+  string
+)
+"program_loading.ml" 92 3206 3234 "program_loading.ml" 92 3206 3262
+type(
+  string array
+)
+"program_loading.ml" 92 3206 3222 "program_loading.ml" 92 3206 3262
+call(
+  stack
+)
+type(
+  unit
+)
+"program_loading.ml" 91 3128 3144 "program_loading.ml" 92 3206 3262
+type(
+  unit
+)
+"program_loading.ml" 93 3263 3274 "program_loading.ml" 93 3263 3275
+type(
+  int
+)
+"program_loading.ml" 93 3263 3279 "program_loading.ml" 93 3263 3283
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"program_loading.ml" 93 3263 3284 "program_loading.ml" 93 3263 3285
+type(
+  int
+)
+"program_loading.ml" 93 3263 3279 "program_loading.ml" 93 3263 3285
+call(
+  stack
+)
+type(
+  unit
+)
+"program_loading.ml" 88 2956 2965 "program_loading.ml" 93 3263 3285
+type(
+  unit
+)
+"program_loading.ml" 94 3286 3298 "program_loading.ml" 94 3286 3299
+type(
+  exn
+)
+ident(
+  def x "program_loading.ml" 95 3303 3312 "program_loading.ml" 96 3339 3354
+)
+"program_loading.ml" 95 3303 3312 "program_loading.ml" 95 3303 3335
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Unix_tools.report_error
+)
+"program_loading.ml" 95 3303 3336 "program_loading.ml" 95 3303 3337
+type(
+  exn
+)
+ident(
+  int_ref x "program_loading.ml" 94 3286 3298 "program_loading.ml" 94 3286 3299
+)
+"program_loading.ml" 95 3303 3312 "program_loading.ml" 95 3303 3337
+call(
+  stack
+)
+type(
+  unit
+)
+"program_loading.ml" 96 3339 3348 "program_loading.ml" 96 3339 3352
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"program_loading.ml" 96 3339 3353 "program_loading.ml" 96 3339 3354
+type(
+  int
+)
+"program_loading.ml" 96 3339 3348 "program_loading.ml" 96 3339 3354
+call(
+  tail
+)
+type(
+  unit
+)
+"program_loading.ml" 95 3303 3312 "program_loading.ml" 96 3339 3354
+type(
+  unit
+)
+"program_loading.ml" 87 2940 2946 "program_loading.ml" 97 3355 3365
+type(
+  unit
+)
+"program_loading.ml" 98 3366 3370 "program_loading.ml" 98 3366 3371
+type(
+  int
+)
+"program_loading.ml" 99 3375 3386 "program_loading.ml" 99 3375 3390
+type(
+  unit -> int * Unix.process_status
+)
+ident(
+  ext_ref Unix.wait
+)
+"program_loading.ml" 99 3375 3391 "program_loading.ml" 99 3375 3393
+type(
+  unit
+)
+"program_loading.ml" 99 3375 3386 "program_loading.ml" 99 3375 3393
+call(
+  stack
+)
+type(
+  int * Unix.process_status
+)
+"program_loading.ml" 100 3399 3407 "program_loading.ml" 100 3399 3408
+type(
+  int
+)
+"program_loading.ml" 100 3399 3418 "program_loading.ml" 100 3399 3419
+type(
+  int
+)
+"program_loading.ml" 100 3399 3410 "program_loading.ml" 100 3399 3419
+type(
+  Unix.process_status
+)
+"program_loading.ml" 100 3399 3406 "program_loading.ml" 100 3399 3420
+type(
+  int * Unix.process_status
+)
+"program_loading.ml" 100 3399 3424 "program_loading.ml" 100 3399 3426
+type(
+  unit
+)
+"program_loading.ml" 101 3427 3434 "program_loading.ml" 101 3427 3435
+type(
+  int * Unix.process_status
+)
+"program_loading.ml" 101 3427 3439 "program_loading.ml" 101 3427 3444
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"program_loading.ml" 101 3427 3445 "program_loading.ml" 101 3427 3453
+type(
+  exn
+)
+"program_loading.ml" 101 3427 3439 "program_loading.ml" 101 3427 3453
+type(
+  unit
+)
+"program_loading.ml" 99 3375 3380 "program_loading.ml" 101 3427 3453
+type(
+  unit
+)
+"program_loading.ml" 85 2912 2914 "program_loading.ml" 101 3427 3453
+type(
+  unit
+)
+"program_loading.ml" 79 2805 2807 "program_loading.ml" 101 3427 3453
+type(
+  unit
+)
+"program_loading.ml" 77 2738 2740 "program_loading.ml" 101 3427 3453
+type(
+  unit
+)
+"program_loading.ml" 76 2691 2723 "program_loading.ml" 101 3427 3453
+type(
+  unit -> unit
+)
+"program_loading.ml" 103 3455 3459 "program_loading.ml" 103 3455 3475
+type(
+  (unit -> string) -> unit -> unit
+)
+ident(
+  def generic_exec_win "program_loading.ml" 111 3712 3712 "program_loading.ml" 1 0 -1
+)
+"program_loading.ml" 103 3455 3476 "program_loading.ml" 103 3455 3483
+type(
+  unit -> string
+)
+ident(
+  def cmdline "program_loading.ml" 103 3455 3486 "program_loading.ml" 109 3692 3710
+)
+"program_loading.ml" 103 3455 3495 "program_loading.ml" 103 3455 3497
+type(
+  unit
+)
+"program_loading.ml" 104 3501 3506 "program_loading.ml" 104 3501 3507
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 104 3501 3507 "program_loading.ml" 104 3501 3520
+type(
+  bool ref
+)
+ident(
+  int_ref debug_loading "program_loading.ml" 23 1002 1006 "program_loading.ml" 23 1002 1019
+)
+"program_loading.ml" 104 3501 3506 "program_loading.ml" 104 3501 3520
+type(
+  bool
+)
+"program_loading.ml" 105 3526 3530 "program_loading.ml" 105 3526 3543
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"program_loading.ml" 105 3526 3544 "program_loading.ml" 105 3526 3566
+type(
+  string
+)
+"program_loading.ml" 105 3526 3530 "program_loading.ml" 105 3526 3566
+call(
+  stack
+)
+type(
+  unit
+)
+"program_loading.ml" 104 3501 3503 "program_loading.ml" 105 3526 3566
+type(
+  unit
+)
+"program_loading.ml" 106 3568 3574 "program_loading.ml" 106 3568 3580
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"program_loading.ml" 106 3568 3581 "program_loading.ml" 106 3568 3595
+type(
+  string ->
+  string array ->
+  Unix.file_descr -> Unix.file_descr -> Unix.file_descr -> int
+)
+ident(
+  ext_ref Unix.create_process
+)
+"program_loading.ml" 106 3568 3596 "program_loading.ml" 106 3568 3605
+type(
+  string
+)
+"program_loading.ml" 106 3568 3609 "program_loading.ml" 106 3568 3613
+type(
+  string
+)
+"program_loading.ml" 106 3568 3615 "program_loading.ml" 106 3568 3622
+type(
+  unit -> string
+)
+ident(
+  int_ref cmdline "program_loading.ml" 103 3455 3476 "program_loading.ml" 103 3455 3483
+)
+"program_loading.ml" 106 3568 3622 "program_loading.ml" 106 3568 3624
+type(
+  unit
+)
+"program_loading.ml" 106 3568 3615 "program_loading.ml" 106 3568 3624
+call(
+  stack
+)
+type(
+  string
+)
+"program_loading.ml" 106 3568 3606 "program_loading.ml" 106 3568 3627
+type(
+  string array
+)
+"program_loading.ml" 106 3568 3628 "program_loading.ml" 106 3568 3633
+type(
+  Unix.file_descr
+)
+ident(
+  ext_ref Unix.stdin
+)
+"program_loading.ml" 106 3568 3634 "program_loading.ml" 106 3568 3640
+type(
+  Unix.file_descr
+)
+ident(
+  ext_ref Unix.stdout
+)
+"program_loading.ml" 106 3568 3641 "program_loading.ml" 106 3568 3647
+type(
+  Unix.file_descr
+)
+ident(
+  ext_ref Unix.stderr
+)
+"program_loading.ml" 106 3568 3580 "program_loading.ml" 106 3568 3648
+call(
+  stack
+)
+type(
+  int
+)
+"program_loading.ml" 106 3568 3574 "program_loading.ml" 106 3568 3648
+type(
+  unit
+)
+"program_loading.ml" 107 3649 3656 "program_loading.ml" 107 3649 3657
+type(
+  exn
+)
+ident(
+  def x "program_loading.ml" 108 3661 3665 "program_loading.ml" 109 3692 3710
+)
+"program_loading.ml" 108 3661 3665 "program_loading.ml" 108 3661 3688
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Unix_tools.report_error
+)
+"program_loading.ml" 108 3661 3689 "program_loading.ml" 108 3661 3690
+type(
+  exn
+)
+ident(
+  int_ref x "program_loading.ml" 107 3649 3656 "program_loading.ml" 107 3649 3657
+)
+"program_loading.ml" 108 3661 3665 "program_loading.ml" 108 3661 3690
+call(
+  stack
+)
+type(
+  unit
+)
+"program_loading.ml" 109 3692 3696 "program_loading.ml" 109 3692 3701
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"program_loading.ml" 109 3692 3702 "program_loading.ml" 109 3692 3710
+type(
+  exn
+)
+"program_loading.ml" 109 3692 3696 "program_loading.ml" 109 3692 3710
+type(
+  unit
+)
+"program_loading.ml" 108 3661 3665 "program_loading.ml" 109 3692 3710
+type(
+  unit
+)
+"program_loading.ml" 106 3568 3570 "program_loading.ml" 109 3692 3710
+type(
+  unit
+)
+"program_loading.ml" 104 3501 3503 "program_loading.ml" 109 3692 3710
+type(
+  unit
+)
+"program_loading.ml" 103 3455 3486 "program_loading.ml" 109 3692 3710
+type(
+  unit -> unit
+)
+"program_loading.ml" 111 3712 3716 "program_loading.ml" 111 3712 3728
+type(
+  (unit -> string) -> unit -> unit
+)
+ident(
+  def generic_exec "program_loading.ml" 117 3876 3876 "program_loading.ml" 1 0 -1
+)
+"program_loading.ml" 112 3731 3739 "program_loading.ml" 112 3731 3750
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"program_loading.ml" 113 3756 3760 "program_loading.ml" 113 3756 3767
+type(
+  string
+)
+"program_loading.ml" 113 3756 3771 "program_loading.ml" 113 3756 3787
+type(
+  (unit -> string) -> unit -> unit
+)
+ident(
+  int_ref generic_exec_win "program_loading.ml" 103 3455 3459 "program_loading.ml" 103 3455 3475
+)
+"program_loading.ml" 114 3788 3792 "program_loading.ml" 114 3788 3793
+type(
+  string
+)
+"program_loading.ml" 114 3788 3797 "program_loading.ml" 114 3788 3814
+type(
+  (unit -> string) -> unit -> unit
+)
+ident(
+  int_ref generic_exec_unix "program_loading.ml" 76 2691 2695 "program_loading.ml" 76 2691 2712
+)
+"program_loading.ml" 112 3731 3733 "program_loading.ml" 114 3788 3814
+type(
+  (unit -> string) -> unit -> unit
+)
+"program_loading.ml" 117 3876 3880 "program_loading.ml" 117 3876 3897
+type(
+  unit -> unit
+)
+ident(
+  def exec_with_runtime "program_loading.ml" 141 4785 4785 "program_loading.ml" 1 0 -1
+)
+"program_loading.ml" 118 3900 3902 "program_loading.ml" 118 3900 3914
+type(
+  (unit -> string) -> unit -> unit
+)
+ident(
+  int_ref generic_exec "program_loading.ml" 111 3712 3716 "program_loading.ml" 111 3712 3728
+)
+"program_loading.ml" 119 3915 3929 "program_loading.ml" 119 3915 3931
+type(
+  unit
+)
+"program_loading.ml" 120 3935 3947 "program_loading.ml" 120 3935 3958
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"program_loading.ml" 121 3964 3972 "program_loading.ml" 121 3964 3979
+type(
+  string
+)
+"program_loading.ml" 126 4208 4218 "program_loading.ml" 126 4208 4232
+type(
+  (string -> string -> string -> string -> string -> string, unit, string)
+  format -> string -> string -> string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"program_loading.ml" 126 4208 4233 "program_loading.ml" 126 4208 4271
+type(
+  (string -> string -> string -> string -> string -> string, unit, string)
+  format
+)
+"program_loading.ml" 127 4272 4294 "program_loading.ml" 127 4272 4315
+type(
+  unit -> string
+)
+ident(
+  int_ref get_win32_environment "program_loading.ml" 68 2373 2377 "program_loading.ml" 68 2373 2398
+)
+"program_loading.ml" 127 4272 4316 "program_loading.ml" 127 4272 4318
+type(
+  unit
+)
+"program_loading.ml" 127 4272 4293 "program_loading.ml" 127 4272 4319
+call(
+  stack
+)
+type(
+  string
+)
+"program_loading.ml" 128 4320 4341 "program_loading.ml" 128 4320 4342
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 128 4320 4342 "program_loading.ml" 128 4320 4353
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.socket_name
+)
+"program_loading.ml" 128 4320 4341 "program_loading.ml" 128 4320 4353
+type(
+  string
+)
+"program_loading.ml" 129 4354 4375 "program_loading.ml" 129 4354 4390
+type(
+  string
+)
+ident(
+  ext_ref Debugger_config.runtime_program
+)
+"program_loading.ml" 130 4391 4412 "program_loading.ml" 130 4391 4413
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 130 4391 4413 "program_loading.ml" 130 4391 4425
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.program_name
+)
+"program_loading.ml" 130 4391 4412 "program_loading.ml" 130 4391 4425
+type(
+  string
+)
+"program_loading.ml" 131 4426 4447 "program_loading.ml" 131 4426 4448
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 131 4426 4448 "program_loading.ml" 131 4426 4457
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.arguments
+)
+"program_loading.ml" 131 4426 4447 "program_loading.ml" 131 4426 4457
+type(
+  string
+)
+"program_loading.ml" 126 4208 4218 "program_loading.ml" 131 4426 4457
+call(
+  tail
+)
+type(
+  string
+)
+"program_loading.ml" 132 4458 4466 "program_loading.ml" 132 4458 4467
+type(
+  string
+)
+"program_loading.ml" 133 4471 4481 "program_loading.ml" 133 4471 4495
+type(
+  (string -> string -> string -> string -> string -> string, unit, string)
+  format -> string -> string -> string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"program_loading.ml" 133 4471 4496 "program_loading.ml" 133 4471 4529
+type(
+  (string -> string -> string -> string -> string -> string, unit, string)
+  format
+)
+"program_loading.ml" 134 4530 4552 "program_loading.ml" 134 4530 4572
+type(
+  unit -> string
+)
+ident(
+  int_ref get_unix_environment "program_loading.ml" 37 1317 1321 "program_loading.ml" 37 1317 1341
+)
+"program_loading.ml" 134 4530 4573 "program_loading.ml" 134 4530 4575
+type(
+  unit
+)
+"program_loading.ml" 134 4530 4551 "program_loading.ml" 134 4530 4576
+call(
+  stack
+)
+type(
+  string
+)
+"program_loading.ml" 135 4577 4598 "program_loading.ml" 135 4577 4599
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 135 4577 4599 "program_loading.ml" 135 4577 4610
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.socket_name
+)
+"program_loading.ml" 135 4577 4598 "program_loading.ml" 135 4577 4610
+type(
+  string
+)
+"program_loading.ml" 136 4611 4633 "program_loading.ml" 136 4611 4647
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.quote
+)
+"program_loading.ml" 136 4611 4648 "program_loading.ml" 136 4611 4663
+type(
+  string
+)
+ident(
+  ext_ref Debugger_config.runtime_program
+)
+"program_loading.ml" 136 4611 4632 "program_loading.ml" 136 4611 4664
+call(
+  stack
+)
+type(
+  string
+)
+"program_loading.ml" 137 4665 4687 "program_loading.ml" 137 4665 4701
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.quote
+)
+"program_loading.ml" 137 4665 4702 "program_loading.ml" 137 4665 4703
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 137 4665 4703 "program_loading.ml" 137 4665 4715
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.program_name
+)
+"program_loading.ml" 137 4665 4702 "program_loading.ml" 137 4665 4715
+type(
+  string
+)
+"program_loading.ml" 137 4665 4686 "program_loading.ml" 137 4665 4716
+call(
+  stack
+)
+type(
+  string
+)
+"program_loading.ml" 138 4717 4738 "program_loading.ml" 138 4717 4739
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 138 4717 4739 "program_loading.ml" 138 4717 4748
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.arguments
+)
+"program_loading.ml" 138 4717 4738 "program_loading.ml" 138 4717 4748
+type(
+  string
+)
+"program_loading.ml" 133 4471 4481 "program_loading.ml" 138 4717 4748
+call(
+  tail
+)
+type(
+  string
+)
+"program_loading.ml" 120 3935 3941 "program_loading.ml" 138 4717 4748
+type(
+  string
+)
+"program_loading.ml" 119 3915 3919 "program_loading.ml" 138 4717 4749
+type(
+  unit -> string
+)
+"program_loading.ml" 118 3900 3902 "program_loading.ml" 138 4717 4749
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"program_loading.ml" 141 4785 4789 "program_loading.ml" 141 4785 4800
+type(
+  unit -> unit
+)
+ident(
+  def exec_direct "program_loading.ml" 160 5390 5390 "program_loading.ml" 1 0 -1
+)
+"program_loading.ml" 142 4803 4805 "program_loading.ml" 142 4803 4817
+type(
+  (unit -> string) -> unit -> unit
+)
+ident(
+  int_ref generic_exec "program_loading.ml" 111 3712 3716 "program_loading.ml" 111 3712 3728
+)
+"program_loading.ml" 143 4818 4832 "program_loading.ml" 143 4818 4834
+type(
+  unit
+)
+"program_loading.ml" 144 4838 4850 "program_loading.ml" 144 4838 4861
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"program_loading.ml" 145 4867 4875 "program_loading.ml" 145 4867 4882
+type(
+  string
+)
+"program_loading.ml" 147 4924 4934 "program_loading.ml" 147 4924 4948
+type(
+  (string -> string -> string -> string -> string, unit, string) format ->
+  string -> string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"program_loading.ml" 147 4924 4949 "program_loading.ml" 147 4924 4984
+type(
+  (string -> string -> string -> string -> string, unit, string) format
+)
+"program_loading.ml" 148 4985 5007 "program_loading.ml" 148 4985 5028
+type(
+  unit -> string
+)
+ident(
+  int_ref get_win32_environment "program_loading.ml" 68 2373 2377 "program_loading.ml" 68 2373 2398
+)
+"program_loading.ml" 148 4985 5029 "program_loading.ml" 148 4985 5031
+type(
+  unit
+)
+"program_loading.ml" 148 4985 5006 "program_loading.ml" 148 4985 5032
+call(
+  stack
+)
+type(
+  string
+)
+"program_loading.ml" 149 5033 5054 "program_loading.ml" 149 5033 5055
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 149 5033 5055 "program_loading.ml" 149 5033 5066
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.socket_name
+)
+"program_loading.ml" 149 5033 5054 "program_loading.ml" 149 5033 5066
+type(
+  string
+)
+"program_loading.ml" 150 5067 5088 "program_loading.ml" 150 5067 5089
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 150 5067 5089 "program_loading.ml" 150 5067 5101
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.program_name
+)
+"program_loading.ml" 150 5067 5088 "program_loading.ml" 150 5067 5101
+type(
+  string
+)
+"program_loading.ml" 151 5102 5123 "program_loading.ml" 151 5102 5124
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 151 5102 5124 "program_loading.ml" 151 5102 5133
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.arguments
+)
+"program_loading.ml" 151 5102 5123 "program_loading.ml" 151 5102 5133
+type(
+  string
+)
+"program_loading.ml" 147 4924 4934 "program_loading.ml" 151 5102 5133
+call(
+  tail
+)
+type(
+  string
+)
+"program_loading.ml" 152 5134 5142 "program_loading.ml" 152 5134 5143
+type(
+  string
+)
+"program_loading.ml" 153 5147 5157 "program_loading.ml" 153 5147 5171
+type(
+  (string -> string -> string -> string -> string, unit, string) format ->
+  string -> string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"program_loading.ml" 153 5147 5172 "program_loading.ml" 153 5147 5202
+type(
+  (string -> string -> string -> string -> string, unit, string) format
+)
+"program_loading.ml" 154 5203 5225 "program_loading.ml" 154 5203 5245
+type(
+  unit -> string
+)
+ident(
+  int_ref get_unix_environment "program_loading.ml" 37 1317 1321 "program_loading.ml" 37 1317 1341
+)
+"program_loading.ml" 154 5203 5246 "program_loading.ml" 154 5203 5248
+type(
+  unit
+)
+"program_loading.ml" 154 5203 5224 "program_loading.ml" 154 5203 5249
+call(
+  stack
+)
+type(
+  string
+)
+"program_loading.ml" 155 5250 5271 "program_loading.ml" 155 5250 5272
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 155 5250 5272 "program_loading.ml" 155 5250 5283
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.socket_name
+)
+"program_loading.ml" 155 5250 5271 "program_loading.ml" 155 5250 5283
+type(
+  string
+)
+"program_loading.ml" 156 5284 5306 "program_loading.ml" 156 5284 5320
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.quote
+)
+"program_loading.ml" 156 5284 5321 "program_loading.ml" 156 5284 5322
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 156 5284 5322 "program_loading.ml" 156 5284 5334
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.program_name
+)
+"program_loading.ml" 156 5284 5321 "program_loading.ml" 156 5284 5334
+type(
+  string
+)
+"program_loading.ml" 156 5284 5305 "program_loading.ml" 156 5284 5335
+call(
+  stack
+)
+type(
+  string
+)
+"program_loading.ml" 157 5336 5357 "program_loading.ml" 157 5336 5358
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 157 5336 5358 "program_loading.ml" 157 5336 5367
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.arguments
+)
+"program_loading.ml" 157 5336 5357 "program_loading.ml" 157 5336 5367
+type(
+  string
+)
+"program_loading.ml" 153 5147 5157 "program_loading.ml" 157 5336 5367
+call(
+  tail
+)
+type(
+  string
+)
+"program_loading.ml" 144 4838 4844 "program_loading.ml" 157 5336 5367
+type(
+  string
+)
+"program_loading.ml" 143 4818 4822 "program_loading.ml" 157 5336 5368
+type(
+  unit -> string
+)
+"program_loading.ml" 142 4803 4805 "program_loading.ml" 157 5336 5368
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"program_loading.ml" 160 5390 5394 "program_loading.ml" 160 5390 5405
+type(
+  unit -> unit
+)
+ident(
+  def exec_manual "program_loading.ml" 169 5622 5622 "program_loading.ml" 1 0 -1
+)
+"program_loading.ml" 161 5408 5419 "program_loading.ml" 161 5408 5421
+type(
+  unit
+)
+"program_loading.ml" 162 5425 5429 "program_loading.ml" 162 5425 5442
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"program_loading.ml" 162 5425 5443 "program_loading.ml" 162 5425 5445
+type(
+  unit
+)
+"program_loading.ml" 162 5425 5429 "program_loading.ml" 162 5425 5445
+call(
+  stack
+)
+type(
+  unit
+)
+"program_loading.ml" 163 5447 5451 "program_loading.ml" 163 5447 5463
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"program_loading.ml" 163 5447 5464 "program_loading.ml" 163 5447 5491
+type(
+  string
+)
+"program_loading.ml" 163 5447 5451 "program_loading.ml" 163 5447 5491
+call(
+  stack
+)
+type(
+  unit
+)
+"program_loading.ml" 164 5493 5497 "program_loading.ml" 164 5493 5509
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"program_loading.ml" 164 5493 5511 "program_loading.ml" 164 5493 5528
+type(
+  string
+)
+"program_loading.ml" 164 5493 5529 "program_loading.ml" 164 5493 5530
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"program_loading.ml" 164 5493 5531 "program_loading.ml" 164 5493 5532
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_loading.ml" 164 5493 5532 "program_loading.ml" 164 5493 5543
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.socket_name
+)
+"program_loading.ml" 164 5493 5531 "program_loading.ml" 164 5493 5543
+type(
+  string
+)
+"program_loading.ml" 164 5493 5544 "program_loading.ml" 164 5493 5545
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"program_loading.ml" 164 5493 5546 "program_loading.ml" 164 5493 5549
+type(
+  string
+)
+"program_loading.ml" 164 5493 5531 "program_loading.ml" 164 5493 5549
+call(
+  stack
+)
+type(
+  string
+)
+"program_loading.ml" 164 5493 5510 "program_loading.ml" 164 5493 5550
+call(
+  stack
+)
+type(
+  string
+)
+"program_loading.ml" 164 5493 5497 "program_loading.ml" 164 5493 5550
+call(
+  stack
+)
+type(
+  unit
+)
+"program_loading.ml" 165 5552 5556 "program_loading.ml" 165 5552 5569
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"program_loading.ml" 165 5552 5570 "program_loading.ml" 165 5552 5572
+type(
+  unit
+)
+"program_loading.ml" 165 5552 5556 "program_loading.ml" 165 5552 5572
+call(
+  tail
+)
+type(
+  unit
+)
+"program_loading.ml" 164 5493 5497 "program_loading.ml" 165 5552 5572
+type(
+  unit
+)
+"program_loading.ml" 163 5447 5451 "program_loading.ml" 165 5552 5572
+type(
+  unit
+)
+"program_loading.ml" 162 5425 5429 "program_loading.ml" 165 5552 5572
+type(
+  unit
+)
+"program_loading.ml" 161 5408 5410 "program_loading.ml" 165 5552 5572
+type(
+  unit -> unit
+)
+"program_loading.ml" 171 5664 5668 "program_loading.ml" 171 5664 5681
+type(
+  (string * (unit -> unit)) list
+)
+ident(
+  def loading_modes "program_loading.ml" 176 5770 5770 "program_loading.ml" 1 0 -1
+)
+"program_loading.ml" 172 5684 5687 "program_loading.ml" 172 5684 5695
+type(
+  string
+)
+"program_loading.ml" 172 5684 5697 "program_loading.ml" 172 5684 5708
+type(
+  unit -> unit
+)
+ident(
+  int_ref exec_direct "program_loading.ml" 141 4785 4789 "program_loading.ml" 141 4785 4800
+)
+"program_loading.ml" 172 5684 5687 "program_loading.ml" 172 5684 5708
+type(
+  string * (unit -> unit)
+)
+"program_loading.ml" 173 5710 5713 "program_loading.ml" 173 5710 5722
+type(
+  string
+)
+"program_loading.ml" 173 5710 5724 "program_loading.ml" 173 5710 5741
+type(
+  unit -> unit
+)
+ident(
+  int_ref exec_with_runtime "program_loading.ml" 117 3876 3880 "program_loading.ml" 117 3876 3897
+)
+"program_loading.ml" 173 5710 5713 "program_loading.ml" 173 5710 5741
+type(
+  string * (unit -> unit)
+)
+"program_loading.ml" 174 5743 5746 "program_loading.ml" 174 5743 5754
+type(
+  string
+)
+"program_loading.ml" 174 5743 5756 "program_loading.ml" 174 5743 5767
+type(
+  unit -> unit
+)
+ident(
+  int_ref exec_manual "program_loading.ml" 160 5390 5394 "program_loading.ml" 160 5390 5405
+)
+"program_loading.ml" 174 5743 5746 "program_loading.ml" 174 5743 5767
+type(
+  string * (unit -> unit)
+)
+"program_loading.ml" 172 5684 5686 "program_loading.ml" 174 5743 5768
+type(
+  (string * (unit -> unit)) list
+)
+"program_loading.ml" 176 5770 5774 "program_loading.ml" 176 5770 5796
+type(
+  (unit -> unit) -> unit
+)
+ident(
+  def set_launching_function "program_loading.ml" 181 5852 5852 "program_loading.ml" 1 0 -1
+)
+"program_loading.ml" 176 5770 5797 "program_loading.ml" 176 5770 5801
+type(
+  unit -> unit
+)
+ident(
+  def func "program_loading.ml" 177 5804 5806 "program_loading.ml" 177 5804 5828
+)
+"program_loading.ml" 177 5804 5806 "program_loading.ml" 177 5804 5820
+type(
+  (unit -> unit) ref
+)
+ident(
+  int_ref launching_func "program_loading.ml" 28 1107 1111 "program_loading.ml" 28 1107 1125
+)
+"program_loading.ml" 177 5804 5821 "program_loading.ml" 177 5804 5823
+type(
+  (unit -> unit) ref -> (unit -> unit) -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"program_loading.ml" 177 5804 5824 "program_loading.ml" 177 5804 5828
+type(
+  unit -> unit
+)
+ident(
+  int_ref func "program_loading.ml" 176 5770 5797 "program_loading.ml" 176 5770 5801
+)
+"program_loading.ml" 177 5804 5806 "program_loading.ml" 177 5804 5828
+type(
+  unit
+)
+"program_loading.ml" 182 5860 5862 "program_loading.ml" 182 5860 5884
+type(
+  (unit -> unit) -> unit
+)
+ident(
+  int_ref set_launching_function "program_loading.ml" 176 5770 5774 "program_loading.ml" 176 5770 5796
+)
+"program_loading.ml" 182 5860 5885 "program_loading.ml" 182 5860 5896
+type(
+  unit -> unit
+)
+ident(
+  int_ref exec_direct "program_loading.ml" 141 4785 4789 "program_loading.ml" 141 4785 4800
+)
+"program_loading.ml" 182 5860 5862 "program_loading.ml" 182 5860 5896
+call(
+  stack
+)
+type(
+  unit
+)
+"program_loading.ml" 186 5921 5925 "program_loading.ml" 186 5921 5935
+type(
+  Primitives.io_channel ref
+)
+ident(
+  def connection "program_loading.ml" 187 5960 5960 "program_loading.ml" 1 0 -1
+)
+"program_loading.ml" 186 5921 5938 "program_loading.ml" 186 5921 5941
+type(
+  Primitives.io_channel -> Primitives.io_channel ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"program_loading.ml" 186 5921 5942 "program_loading.ml" 186 5921 5959
+type(
+  Primitives.io_channel
+)
+ident(
+  ext_ref Primitives.std_io
+)
+"program_loading.ml" 186 5921 5938 "program_loading.ml" 186 5921 5959
+type(
+  Primitives.io_channel ref
+)
+"program_loading.ml" 187 5960 5964 "program_loading.ml" 187 5960 5981
+type(
+  bool ref
+)
+ident(
+  def connection_opened "program_loading.ml" 187 5960 5993 "program_loading.ml" 1 0 -1
+)
+"program_loading.ml" 187 5960 5984 "program_loading.ml" 187 5960 5987
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"program_loading.ml" 187 5960 5988 "program_loading.ml" 187 5960 5993
+type(
+  bool
+)
+"program_loading.ml" 187 5960 5984 "program_loading.ml" 187 5960 5993
+type(
+  bool ref
+)

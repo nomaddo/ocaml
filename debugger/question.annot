@@ -1,0 +1,522 @@
+"question.ml" 17 889 893 "question.ml" 17 889 902
+type(
+  string -> bool
+)
+ident(
+  def yes_or_no "question.ml" 47 1753 1762 "question.ml" 1 0 -1
+)
+"question.ml" 17 889 903 "question.ml" 17 889 910
+type(
+  string
+)
+ident(
+  def message "question.ml" 18 913 915 "question.ml" 47 1753 1762
+)
+"question.ml" 18 913 918 "question.ml" 18 913 919
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"question.ml" 18 913 919 "question.ml" 18 913 929
+type(
+  bool ref
+)
+ident(
+  ext_ref Input_handling.interactif
+)
+"question.ml" 18 913 918 "question.ml" 18 913 929
+type(
+  bool
+)
+"question.ml" 19 935 943 "question.ml" 19 935 953
+type(
+  string
+)
+ident(
+  def old_prompt "question.ml" 20 975 981 "question.ml" 45 1728 1745
+)
+"question.ml" 19 935 956 "question.ml" 19 935 957
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"question.ml" 19 935 957 "question.ml" 19 935 971
+type(
+  string ref
+)
+ident(
+  ext_ref Input_handling.current_prompt
+)
+"question.ml" 19 935 956 "question.ml" 19 935 971
+type(
+  string
+)
+"question.ml" 21 985 993 "question.ml" 21 985 1007
+type(
+  string ref
+)
+ident(
+  ext_ref Input_handling.current_prompt
+)
+"question.ml" 21 985 1008 "question.ml" 21 985 1010
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"question.ml" 21 985 1011 "question.ml" 21 985 1018
+type(
+  string
+)
+ident(
+  int_ref message "question.ml" 17 889 903 "question.ml" 17 889 910
+)
+"question.ml" 21 985 1019 "question.ml" 21 985 1020
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"question.ml" 21 985 1021 "question.ml" 21 985 1035
+type(
+  string
+)
+"question.ml" 21 985 1011 "question.ml" 21 985 1035
+call(
+  stack
+)
+type(
+  string
+)
+"question.ml" 21 985 993 "question.ml" 21 985 1035
+type(
+  unit
+)
+"question.ml" 22 1037 1049 "question.ml" 22 1037 1055
+type(
+  bool
+)
+ident(
+  def answer "question.ml" 39 1577 1587 "question.ml" 40 1617 1633
+)
+"question.ml" 23 1058 1076 "question.ml" 23 1058 1079
+type(
+  unit -> bool
+)
+ident(
+  def ask "question.ml" 23 1058 1068 "question.ml" 37 1547 1565
+)
+"question.ml" 23 1058 1080 "question.ml" 23 1058 1082
+type(
+  unit
+)
+"question.ml" 24 1085 1097 "question.ml" 24 1085 1114
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Input_handling.resume_user_input
+)
+"question.ml" 24 1085 1115 "question.ml" 24 1085 1117
+type(
+  unit
+)
+"question.ml" 24 1085 1097 "question.ml" 24 1085 1117
+call(
+  stack
+)
+type(
+  unit
+)
+"question.ml" 25 1119 1135 "question.ml" 25 1119 1139
+type(
+  string
+)
+ident(
+  def line "question.ml" 28 1235 1249 "question.ml" 35 1511 1533
+)
+"question.ml" 26 1142 1156 "question.ml" 26 1142 1167
+type(
+  string -> string
+)
+ident(
+  ext_ref Primitives.string_trim
+)
+"question.ml" 26 1142 1169 "question.ml" 26 1142 1179
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexer.line
+)
+"question.ml" 26 1142 1181 "question.ml" 26 1142 1201
+type(
+  (bytes -> int -> int) -> Lexing.lexbuf
+)
+ident(
+  ext_ref Lexing.from_function
+)
+"question.ml" 26 1142 1202 "question.ml" 26 1142 1217
+type(
+  bytes -> int -> int
+)
+ident(
+  ext_ref Input_handling.read_user_input
+)
+"question.ml" 26 1142 1180 "question.ml" 26 1142 1218
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"question.ml" 26 1142 1168 "question.ml" 26 1142 1219
+call(
+  stack
+)
+type(
+  string
+)
+"question.ml" 26 1142 1156 "question.ml" 26 1142 1219
+call(
+  stack
+)
+type(
+  string
+)
+"question.ml" 28 1235 1249 "question.ml" 28 1235 1264
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Input_handling.stop_user_input
+)
+"question.ml" 28 1235 1265 "question.ml" 28 1235 1267
+type(
+  unit
+)
+"question.ml" 28 1235 1249 "question.ml" 28 1235 1267
+call(
+  stack
+)
+type(
+  unit
+)
+"question.ml" 29 1269 1293 "question.ml" 29 1269 1306
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"question.ml" 29 1269 1307 "question.ml" 29 1269 1311
+type(
+  string
+)
+ident(
+  int_ref line "question.ml" 25 1119 1135 "question.ml" 25 1119 1139
+)
+"question.ml" 29 1269 1293 "question.ml" 29 1269 1311
+type(
+  int
+)
+"question.ml" 29 1269 1312 "question.ml" 29 1269 1313
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"question.ml" 29 1269 1314 "question.ml" 29 1269 1315
+type(
+  int
+)
+"question.ml" 29 1269 1293 "question.ml" 29 1269 1315
+type(
+  bool
+)
+"question.ml" 29 1269 1321 "question.ml" 29 1269 1325
+type(
+  string
+)
+ident(
+  int_ref line "question.ml" 25 1119 1135 "question.ml" 25 1119 1139
+)
+"question.ml" 29 1269 1327 "question.ml" 29 1269 1328
+type(
+  int
+)
+"question.ml" 29 1269 1321 "question.ml" 29 1269 1329
+type(
+  char
+)
+"question.ml" 29 1269 1335 "question.ml" 29 1269 1338
+type(
+  char
+)
+"question.ml" 29 1269 1289 "question.ml" 29 1269 1339
+type(
+  char
+)
+"question.ml" 30 1345 1361 "question.ml" 30 1345 1364
+type(
+  char
+)
+"question.ml" 30 1345 1368 "question.ml" 30 1345 1372
+type(
+  bool
+)
+"question.ml" 31 1373 1389 "question.ml" 31 1373 1392
+type(
+  char
+)
+"question.ml" 31 1373 1396 "question.ml" 31 1373 1401
+type(
+  bool
+)
+"question.ml" 32 1402 1418 "question.ml" 32 1402 1419
+type(
+  char
+)
+"question.ml" 33 1423 1439 "question.ml" 33 1423 1451
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"question.ml" 33 1423 1452 "question.ml" 33 1423 1475
+type(
+  string
+)
+"question.ml" 33 1423 1439 "question.ml" 33 1423 1475
+call(
+  stack
+)
+type(
+  unit
+)
+"question.ml" 34 1477 1493 "question.ml" 34 1477 1506
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"question.ml" 34 1477 1507 "question.ml" 34 1477 1509
+type(
+  unit
+)
+"question.ml" 34 1477 1493 "question.ml" 34 1477 1509
+call(
+  stack
+)
+type(
+  unit
+)
+"question.ml" 35 1511 1527 "question.ml" 35 1511 1530
+type(
+  unit -> bool
+)
+ident(
+  int_ref ask "question.ml" 23 1058 1076 "question.ml" 23 1058 1079
+)
+"question.ml" 35 1511 1531 "question.ml" 35 1511 1533
+type(
+  unit
+)
+"question.ml" 35 1511 1527 "question.ml" 35 1511 1533
+call(
+  tail
+)
+type(
+  bool
+)
+"question.ml" 34 1477 1493 "question.ml" 35 1511 1533
+type(
+  bool
+)
+"question.ml" 33 1423 1439 "question.ml" 35 1511 1533
+type(
+  bool
+)
+"question.ml" 29 1269 1283 "question.ml" 35 1511 1533
+type(
+  bool
+)
+"question.ml" 28 1235 1249 "question.ml" 35 1511 1533
+type(
+  bool
+)
+"question.ml" 25 1119 1131 "question.ml" 35 1511 1533
+type(
+  bool
+)
+"question.ml" 24 1085 1097 "question.ml" 35 1511 1533
+type(
+  bool
+)
+"question.ml" 37 1547 1559 "question.ml" 37 1547 1562
+type(
+  unit -> bool
+)
+ident(
+  int_ref ask "question.ml" 23 1058 1076 "question.ml" 23 1058 1079
+)
+"question.ml" 37 1547 1563 "question.ml" 37 1547 1565
+type(
+  unit
+)
+"question.ml" 37 1547 1559 "question.ml" 37 1547 1565
+call(
+  stack
+)
+type(
+  bool
+)
+"question.ml" 23 1058 1068 "question.ml" 37 1547 1565
+type(
+  bool
+)
+"question.ml" 39 1577 1587 "question.ml" 39 1577 1601
+type(
+  string ref
+)
+ident(
+  ext_ref Input_handling.current_prompt
+)
+"question.ml" 39 1577 1602 "question.ml" 39 1577 1604
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"question.ml" 39 1577 1605 "question.ml" 39 1577 1615
+type(
+  string
+)
+ident(
+  int_ref old_prompt "question.ml" 19 935 943 "question.ml" 19 935 953
+)
+"question.ml" 39 1577 1587 "question.ml" 39 1577 1615
+type(
+  unit
+)
+"question.ml" 40 1617 1627 "question.ml" 40 1617 1633
+type(
+  bool
+)
+ident(
+  int_ref answer "question.ml" 22 1037 1049 "question.ml" 22 1037 1055
+)
+"question.ml" 39 1577 1587 "question.ml" 40 1617 1633
+type(
+  bool
+)
+"question.ml" 22 1037 1045 "question.ml" 40 1617 1633
+type(
+  bool
+)
+"question.ml" 21 985 993 "question.ml" 40 1617 1633
+type(
+  bool
+)
+"question.ml" 42 1645 1653 "question.ml" 42 1645 1654
+type(
+  exn
+)
+ident(
+  def x "question.ml" 43 1658 1668 "question.ml" 45 1728 1745
+)
+"question.ml" 43 1658 1668 "question.ml" 43 1658 1682
+type(
+  string ref
+)
+ident(
+  ext_ref Input_handling.current_prompt
+)
+"question.ml" 43 1658 1683 "question.ml" 43 1658 1685
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"question.ml" 43 1658 1686 "question.ml" 43 1658 1696
+type(
+  string
+)
+ident(
+  int_ref old_prompt "question.ml" 19 935 943 "question.ml" 19 935 953
+)
+"question.ml" 43 1658 1668 "question.ml" 43 1658 1696
+type(
+  unit
+)
+"question.ml" 44 1698 1708 "question.ml" 44 1698 1723
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Input_handling.stop_user_input
+)
+"question.ml" 44 1698 1724 "question.ml" 44 1698 1726
+type(
+  unit
+)
+"question.ml" 44 1698 1708 "question.ml" 44 1698 1726
+call(
+  stack
+)
+type(
+  unit
+)
+"question.ml" 45 1728 1738 "question.ml" 45 1728 1743
+type(
+  exn -> bool
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"question.ml" 45 1728 1744 "question.ml" 45 1728 1745
+type(
+  exn
+)
+ident(
+  int_ref x "question.ml" 42 1645 1653 "question.ml" 42 1645 1654
+)
+"question.ml" 45 1728 1738 "question.ml" 45 1728 1745
+type(
+  bool
+)
+"question.ml" 44 1698 1708 "question.ml" 45 1728 1745
+type(
+  bool
+)
+"question.ml" 43 1658 1668 "question.ml" 45 1728 1745
+type(
+  bool
+)
+"question.ml" 20 975 981 "question.ml" 45 1728 1745
+type(
+  bool
+)
+"question.ml" 19 935 939 "question.ml" 45 1728 1745
+type(
+  bool
+)
+"question.ml" 47 1753 1757 "question.ml" 47 1753 1762
+type(
+  bool
+)
+"question.ml" 18 913 915 "question.ml" 47 1753 1762
+type(
+  bool
+)

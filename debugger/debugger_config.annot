@@ -1,0 +1,286 @@
+"debugger_config.ml" 47 1823 1827 "debugger_config.ml" 47 1823 1842
+type(
+  string
+)
+ident(
+  def debugger_prompt "debugger_config.ml" 48 1856 1856 "debugger_config.ml" 1 0 -1
+)
+"debugger_config.ml" 47 1823 1847 "debugger_config.ml" 47 1823 1855
+type(
+  string
+)
+"debugger_config.ml" 48 1856 1860 "debugger_config.ml" 48 1856 1877
+type(
+  string
+)
+ident(
+  def event_mark_before "debugger_config.ml" 49 1888 1888 "debugger_config.ml" 1 0 -1
+)
+"debugger_config.ml" 48 1856 1880 "debugger_config.ml" 48 1856 1887
+type(
+  string
+)
+"debugger_config.ml" 49 1888 1892 "debugger_config.ml" 49 1888 1908
+type(
+  string
+)
+ident(
+  def event_mark_after "debugger_config.ml" 52 1969 1969 "debugger_config.ml" 1 0 -1
+)
+"debugger_config.ml" 49 1888 1912 "debugger_config.ml" 49 1888 1919
+type(
+  string
+)
+"debugger_config.ml" 52 1969 1973 "debugger_config.ml" 52 1969 1978
+type(
+  string
+)
+ident(
+  def shell "debugger_config.ml" 58 2080 2080 "debugger_config.ml" 1 0 -1
+)
+"debugger_config.ml" 53 1981 1989 "debugger_config.ml" 53 1981 2000
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"debugger_config.ml" 54 2006 2010 "debugger_config.ml" 54 2006 2017
+type(
+  string
+)
+"debugger_config.ml" 54 2006 2021 "debugger_config.ml" 54 2006 2026
+type(
+  string
+)
+"debugger_config.ml" 55 2027 2031 "debugger_config.ml" 55 2027 2032
+type(
+  string
+)
+"debugger_config.ml" 55 2027 2036 "debugger_config.ml" 55 2027 2045
+type(
+  string
+)
+"debugger_config.ml" 53 1981 1983 "debugger_config.ml" 55 2027 2045
+type(
+  string
+)
+"debugger_config.ml" 58 2080 2084 "debugger_config.ml" 58 2080 2099
+type(
+  string
+)
+ident(
+  def runtime_program "debugger_config.ml" 61 2151 2151 "debugger_config.ml" 1 0 -1
+)
+"debugger_config.ml" 58 2080 2102 "debugger_config.ml" 58 2080 2112
+type(
+  string
+)
+"debugger_config.ml" 61 2151 2155 "debugger_config.ml" 61 2151 2167
+type(
+  int ref
+)
+ident(
+  def history_size "debugger_config.ml" 63 2178 2178 "debugger_config.ml" 1 0 -1
+)
+"debugger_config.ml" 61 2151 2170 "debugger_config.ml" 61 2151 2173
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"debugger_config.ml" 61 2151 2174 "debugger_config.ml" 61 2151 2176
+type(
+  int
+)
+"debugger_config.ml" 61 2151 2170 "debugger_config.ml" 61 2151 2176
+type(
+  int ref
+)
+"debugger_config.ml" 63 2178 2182 "debugger_config.ml" 63 2178 2195
+type(
+  (string, string list) Hashtbl.t
+)
+ident(
+  def load_path_for "debugger_config.ml" 68 2305 2305 "debugger_config.ml" 1 0 -1
+)
+"debugger_config.ml" 63 2178 2198 "debugger_config.ml" 63 2178 2212
+type(
+  ?random:bool -> int -> (string, string list) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"debugger_config.ml" 63 2178 2213 "debugger_config.ml" 63 2178 2214
+type(
+  int
+)
+"debugger_config.ml" 63 2178 2198 "debugger_config.ml" 63 2178 2214
+call(
+  stack
+)
+type(
+  (string, string list) Hashtbl.t
+)
+"debugger_config.ml" 68 2305 2309 "debugger_config.ml" 68 2305 2328
+type(
+  int64 ref
+)
+ident(
+  def checkpoint_big_step "debugger_config.ml" 71 2376 2376 "debugger_config.ml" 1 0 -1
+)
+"debugger_config.ml" 68 2305 2331 "debugger_config.ml" 68 2305 2334
+type(
+  int64 -> int64 ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"debugger_config.ml" 68 2305 2336 "debugger_config.ml" 68 2305 2338
+type(
+  string -> int64
+)
+ident(
+  ext_ref Int64ops.( ~~ )
+)
+"debugger_config.ml" 68 2305 2339 "debugger_config.ml" 68 2305 2346
+type(
+  string
+)
+"debugger_config.ml" 68 2305 2335 "debugger_config.ml" 68 2305 2347
+call(
+  stack
+)
+type(
+  int64
+)
+"debugger_config.ml" 68 2305 2331 "debugger_config.ml" 68 2305 2347
+type(
+  int64 ref
+)
+"debugger_config.ml" 71 2376 2380 "debugger_config.ml" 71 2376 2401
+type(
+  int64 ref
+)
+ident(
+  def checkpoint_small_step "debugger_config.ml" 74 2458 2458 "debugger_config.ml" 1 0 -1
+)
+"debugger_config.ml" 71 2376 2404 "debugger_config.ml" 71 2376 2407
+type(
+  int64 -> int64 ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"debugger_config.ml" 71 2376 2409 "debugger_config.ml" 71 2376 2411
+type(
+  string -> int64
+)
+ident(
+  ext_ref Int64ops.( ~~ )
+)
+"debugger_config.ml" 71 2376 2412 "debugger_config.ml" 71 2376 2418
+type(
+  string
+)
+"debugger_config.ml" 71 2376 2408 "debugger_config.ml" 71 2376 2419
+call(
+  stack
+)
+type(
+  int64
+)
+"debugger_config.ml" 71 2376 2404 "debugger_config.ml" 71 2376 2419
+type(
+  int64 ref
+)
+"debugger_config.ml" 74 2458 2462 "debugger_config.ml" 74 2458 2482
+type(
+  int ref
+)
+ident(
+  def checkpoint_max_count "debugger_config.ml" 77 2535 2535 "debugger_config.ml" 1 0 -1
+)
+"debugger_config.ml" 74 2458 2485 "debugger_config.ml" 74 2458 2488
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"debugger_config.ml" 74 2458 2489 "debugger_config.ml" 74 2458 2491
+type(
+  int
+)
+"debugger_config.ml" 74 2458 2485 "debugger_config.ml" 74 2458 2491
+type(
+  int ref
+)
+"debugger_config.ml" 77 2535 2539 "debugger_config.ml" 77 2535 2555
+type(
+  bool ref
+)
+ident(
+  def make_checkpoints "debugger_config.ml" 84 2671 2671 "debugger_config.ml" 1 0 -1
+)
+"debugger_config.ml" 77 2535 2558 "debugger_config.ml" 77 2535 2561
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"debugger_config.ml" 78 2562 2571 "debugger_config.ml" 78 2562 2582
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"debugger_config.ml" 79 2588 2592 "debugger_config.ml" 79 2588 2599
+type(
+  string
+)
+"debugger_config.ml" 79 2588 2603 "debugger_config.ml" 79 2588 2608
+type(
+  bool
+)
+"debugger_config.ml" 80 2609 2613 "debugger_config.ml" 80 2609 2614
+type(
+  string
+)
+"debugger_config.ml" 80 2609 2618 "debugger_config.ml" 80 2609 2622
+type(
+  bool
+)
+"debugger_config.ml" 78 2562 2564 "debugger_config.ml" 80 2609 2623
+type(
+  bool
+)
+"debugger_config.ml" 77 2535 2558 "debugger_config.ml" 80 2609 2623
+type(
+  bool ref
+)
+"debugger_config.ml" 84 2671 2675 "debugger_config.ml" 84 2671 2686
+type(
+  (string * string) list ref
+)
+ident(
+  def environment "debugger_config.ml" 84 2671 2695 "debugger_config.ml" 1 0 -1
+)
+"debugger_config.ml" 84 2671 2689 "debugger_config.ml" 84 2671 2692
+type(
+  (string * string) list -> (string * string) list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"debugger_config.ml" 84 2671 2693 "debugger_config.ml" 84 2671 2695
+type(
+  (string * string) list
+)
+"debugger_config.ml" 84 2671 2689 "debugger_config.ml" 84 2671 2695
+type(
+  (string * string) list ref
+)

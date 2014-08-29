@@ -1,0 +1,5283 @@
+"debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+type(
+  Primitives.io_channel ref
+)
+ident(
+  def conn "debugcom.ml" 25 1106 1106 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 21 1017 1028 "debugcom.ml" 21 1017 1031
+type(
+  Primitives.io_channel -> Primitives.io_channel ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"debugcom.ml" 21 1017 1032 "debugcom.ml" 21 1017 1049
+type(
+  Primitives.io_channel
+)
+ident(
+  ext_ref Primitives.std_io
+)
+"debugcom.ml" 21 1017 1028 "debugcom.ml" 21 1017 1049
+type(
+  Primitives.io_channel ref
+)
+"debugcom.ml" 29 1162 1166 "debugcom.ml" 29 1162 1175
+type(
+  follow_fork_mode ref
+)
+ident(
+  def fork_mode "debugcom.ml" 31 1195 1195 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 29 1162 1178 "debugcom.ml" 29 1162 1181
+type(
+  follow_fork_mode -> follow_fork_mode ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"debugcom.ml" 29 1162 1182 "debugcom.ml" 29 1162 1193
+type(
+  follow_fork_mode
+)
+"debugcom.ml" 29 1162 1178 "debugcom.ml" 29 1162 1193
+type(
+  follow_fork_mode ref
+)
+"debugcom.ml" 31 1195 1199 "debugcom.ml" 31 1195 1222
+type(
+  unit -> unit
+)
+ident(
+  def update_follow_fork_mode "debugcom.ml" 39 1453 1453 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 31 1195 1223 "debugcom.ml" 31 1195 1225
+type(
+  unit
+)
+"debugcom.ml" 32 1228 1234 "debugcom.ml" 32 1228 1235
+type(
+  int
+)
+ident(
+  def a "debugcom.ml" 33 1298 1300 "debugcom.ml" 34 1330 1364
+)
+"debugcom.ml" 32 1228 1244 "debugcom.ml" 32 1228 1245
+type(
+  follow_fork_mode ref -> follow_fork_mode
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 32 1228 1245 "debugcom.ml" 32 1228 1254
+type(
+  follow_fork_mode ref
+)
+ident(
+  int_ref fork_mode "debugcom.ml" 29 1162 1166 "debugcom.ml" 29 1162 1175
+)
+"debugcom.ml" 32 1228 1244 "debugcom.ml" 32 1228 1254
+type(
+  follow_fork_mode
+)
+"debugcom.ml" 32 1228 1260 "debugcom.ml" 32 1228 1270
+type(
+  follow_fork_mode
+)
+"debugcom.ml" 32 1228 1274 "debugcom.ml" 32 1228 1275
+type(
+  int
+)
+"debugcom.ml" 32 1228 1278 "debugcom.ml" 32 1228 1289
+type(
+  follow_fork_mode
+)
+"debugcom.ml" 32 1228 1293 "debugcom.ml" 32 1228 1294
+type(
+  int
+)
+"debugcom.ml" 32 1228 1238 "debugcom.ml" 32 1228 1294
+type(
+  int
+)
+"debugcom.ml" 33 1298 1300 "debugcom.ml" 33 1298 1311
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 33 1298 1312 "debugcom.ml" 33 1298 1313
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 33 1298 1313 "debugcom.ml" 33 1298 1317
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 33 1298 1312 "debugcom.ml" 33 1298 1317
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 33 1298 1312 "debugcom.ml" 33 1298 1324
+type(
+  out_channel
+)
+"debugcom.ml" 33 1298 1325 "debugcom.ml" 33 1298 1328
+type(
+  char
+)
+"debugcom.ml" 33 1298 1300 "debugcom.ml" 33 1298 1328
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 34 1330 1332 "debugcom.ml" 34 1330 1349
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output_binary_int
+)
+"debugcom.ml" 34 1330 1350 "debugcom.ml" 34 1330 1351
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 34 1330 1351 "debugcom.ml" 34 1330 1355
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 34 1330 1350 "debugcom.ml" 34 1330 1355
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 34 1330 1350 "debugcom.ml" 34 1330 1362
+type(
+  out_channel
+)
+"debugcom.ml" 34 1330 1363 "debugcom.ml" 34 1330 1364
+type(
+  int
+)
+ident(
+  int_ref a "debugcom.ml" 32 1228 1234 "debugcom.ml" 32 1228 1235
+)
+"debugcom.ml" 34 1330 1332 "debugcom.ml" 34 1330 1364
+call(
+  tail
+)
+type(
+  unit
+)
+"debugcom.ml" 33 1298 1300 "debugcom.ml" 34 1330 1364
+type(
+  unit
+)
+"debugcom.ml" 32 1228 1230 "debugcom.ml" 34 1330 1364
+type(
+  unit
+)
+"debugcom.ml" 39 1453 1457 "debugcom.ml" 39 1453 1479
+type(
+  Primitives.io_channel -> unit
+)
+ident(
+  def set_current_connection "debugcom.ml" 45 1570 1570 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 39 1453 1480 "debugcom.ml" 39 1453 1487
+type(
+  Primitives.io_channel
+)
+ident(
+  def io_chan "debugcom.ml" 40 1490 1492 "debugcom.ml" 41 1509 1537
+)
+"debugcom.ml" 40 1490 1492 "debugcom.ml" 40 1490 1496
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 40 1490 1497 "debugcom.ml" 40 1490 1499
+type(
+  Primitives.io_channel ref -> Primitives.io_channel -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"debugcom.ml" 40 1490 1500 "debugcom.ml" 40 1490 1507
+type(
+  Primitives.io_channel
+)
+ident(
+  int_ref io_chan "debugcom.ml" 39 1453 1480 "debugcom.ml" 39 1453 1487
+)
+"debugcom.ml" 40 1490 1492 "debugcom.ml" 40 1490 1507
+type(
+  unit
+)
+"debugcom.ml" 41 1509 1511 "debugcom.ml" 41 1509 1534
+type(
+  unit -> unit
+)
+ident(
+  int_ref update_follow_fork_mode "debugcom.ml" 31 1195 1199 "debugcom.ml" 31 1195 1222
+)
+"debugcom.ml" 41 1509 1535 "debugcom.ml" 41 1509 1537
+type(
+  unit
+)
+"debugcom.ml" 41 1509 1511 "debugcom.ml" 41 1509 1537
+call(
+  tail
+)
+type(
+  unit
+)
+"debugcom.ml" 40 1490 1492 "debugcom.ml" 41 1509 1537
+type(
+  unit
+)
+"debugcom.ml" 45 1570 1574 "debugcom.ml" 45 1570 1583
+type(
+  int -> unit
+)
+ident(
+  def set_event "debugcom.ml" 49 1660 1660 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 45 1570 1584 "debugcom.ml" 45 1570 1587
+type(
+  int
+)
+ident(
+  def pos "debugcom.ml" 46 1590 1592 "debugcom.ml" 47 1622 1658
+)
+"debugcom.ml" 46 1590 1592 "debugcom.ml" 46 1590 1603
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 46 1590 1604 "debugcom.ml" 46 1590 1605
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 46 1590 1605 "debugcom.ml" 46 1590 1609
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 46 1590 1604 "debugcom.ml" 46 1590 1609
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 46 1590 1604 "debugcom.ml" 46 1590 1616
+type(
+  out_channel
+)
+"debugcom.ml" 46 1590 1617 "debugcom.ml" 46 1590 1620
+type(
+  char
+)
+"debugcom.ml" 46 1590 1592 "debugcom.ml" 46 1590 1620
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 47 1622 1624 "debugcom.ml" 47 1622 1641
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output_binary_int
+)
+"debugcom.ml" 47 1622 1642 "debugcom.ml" 47 1622 1643
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 47 1622 1643 "debugcom.ml" 47 1622 1647
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 47 1622 1642 "debugcom.ml" 47 1622 1647
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 47 1622 1642 "debugcom.ml" 47 1622 1654
+type(
+  out_channel
+)
+"debugcom.ml" 47 1622 1655 "debugcom.ml" 47 1622 1658
+type(
+  int
+)
+ident(
+  int_ref pos "debugcom.ml" 45 1570 1584 "debugcom.ml" 45 1570 1587
+)
+"debugcom.ml" 47 1622 1624 "debugcom.ml" 47 1622 1658
+call(
+  tail
+)
+type(
+  unit
+)
+"debugcom.ml" 46 1590 1592 "debugcom.ml" 47 1622 1658
+type(
+  unit
+)
+"debugcom.ml" 49 1660 1664 "debugcom.ml" 49 1660 1678
+type(
+  int -> unit
+)
+ident(
+  def set_breakpoint "debugcom.ml" 53 1755 1755 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 49 1660 1679 "debugcom.ml" 49 1660 1682
+type(
+  int
+)
+ident(
+  def pos "debugcom.ml" 50 1685 1687 "debugcom.ml" 51 1717 1753
+)
+"debugcom.ml" 50 1685 1687 "debugcom.ml" 50 1685 1698
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 50 1685 1699 "debugcom.ml" 50 1685 1700
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 50 1685 1700 "debugcom.ml" 50 1685 1704
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 50 1685 1699 "debugcom.ml" 50 1685 1704
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 50 1685 1699 "debugcom.ml" 50 1685 1711
+type(
+  out_channel
+)
+"debugcom.ml" 50 1685 1712 "debugcom.ml" 50 1685 1715
+type(
+  char
+)
+"debugcom.ml" 50 1685 1687 "debugcom.ml" 50 1685 1715
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 51 1717 1719 "debugcom.ml" 51 1717 1736
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output_binary_int
+)
+"debugcom.ml" 51 1717 1737 "debugcom.ml" 51 1717 1738
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 51 1717 1738 "debugcom.ml" 51 1717 1742
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 51 1717 1737 "debugcom.ml" 51 1717 1742
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 51 1717 1737 "debugcom.ml" 51 1717 1749
+type(
+  out_channel
+)
+"debugcom.ml" 51 1717 1750 "debugcom.ml" 51 1717 1753
+type(
+  int
+)
+ident(
+  int_ref pos "debugcom.ml" 49 1660 1679 "debugcom.ml" 49 1660 1682
+)
+"debugcom.ml" 51 1717 1719 "debugcom.ml" 51 1717 1753
+call(
+  tail
+)
+type(
+  unit
+)
+"debugcom.ml" 50 1685 1687 "debugcom.ml" 51 1717 1753
+type(
+  unit
+)
+"debugcom.ml" 53 1755 1759 "debugcom.ml" 53 1755 1770
+type(
+  int -> unit
+)
+ident(
+  def reset_instr "debugcom.ml" 59 1886 1886 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 53 1755 1771 "debugcom.ml" 53 1755 1774
+type(
+  int
+)
+ident(
+  def pos "debugcom.ml" 54 1777 1779 "debugcom.ml" 55 1809 1845
+)
+"debugcom.ml" 54 1777 1779 "debugcom.ml" 54 1777 1790
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 54 1777 1791 "debugcom.ml" 54 1777 1792
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 54 1777 1792 "debugcom.ml" 54 1777 1796
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 54 1777 1791 "debugcom.ml" 54 1777 1796
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 54 1777 1791 "debugcom.ml" 54 1777 1803
+type(
+  out_channel
+)
+"debugcom.ml" 54 1777 1804 "debugcom.ml" 54 1777 1807
+type(
+  char
+)
+"debugcom.ml" 54 1777 1779 "debugcom.ml" 54 1777 1807
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 55 1809 1811 "debugcom.ml" 55 1809 1828
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output_binary_int
+)
+"debugcom.ml" 55 1809 1829 "debugcom.ml" 55 1809 1830
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 55 1809 1830 "debugcom.ml" 55 1809 1834
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 55 1809 1829 "debugcom.ml" 55 1809 1834
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 55 1809 1829 "debugcom.ml" 55 1809 1841
+type(
+  out_channel
+)
+"debugcom.ml" 55 1809 1842 "debugcom.ml" 55 1809 1845
+type(
+  int
+)
+ident(
+  int_ref pos "debugcom.ml" 53 1755 1771 "debugcom.ml" 53 1755 1774
+)
+"debugcom.ml" 55 1809 1811 "debugcom.ml" 55 1809 1845
+call(
+  tail
+)
+type(
+  unit
+)
+"debugcom.ml" 54 1777 1779 "debugcom.ml" 55 1809 1845
+type(
+  unit
+)
+"debugcom.ml" 79 2225 2229 "debugcom.ml" 79 2225 2243
+type(
+  int -> report
+)
+ident(
+  def do_go_smallint "debugcom.ml" 104 3055 3055 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 79 2225 2244 "debugcom.ml" 79 2225 2245
+type(
+  int
+)
+ident(
+  def n "debugcom.ml" 80 2248 2250 "debugcom.ml" 102 3017 3053
+)
+"debugcom.ml" 80 2248 2250 "debugcom.ml" 80 2248 2261
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 80 2248 2262 "debugcom.ml" 80 2248 2263
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 80 2248 2263 "debugcom.ml" 80 2248 2267
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 80 2248 2262 "debugcom.ml" 80 2248 2267
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 80 2248 2262 "debugcom.ml" 80 2248 2274
+type(
+  out_channel
+)
+"debugcom.ml" 80 2248 2275 "debugcom.ml" 80 2248 2278
+type(
+  char
+)
+"debugcom.ml" 80 2248 2250 "debugcom.ml" 80 2248 2278
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 81 2280 2282 "debugcom.ml" 81 2280 2299
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output_binary_int
+)
+"debugcom.ml" 81 2280 2300 "debugcom.ml" 81 2280 2301
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 81 2280 2301 "debugcom.ml" 81 2280 2305
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 81 2280 2300 "debugcom.ml" 81 2280 2305
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 81 2280 2300 "debugcom.ml" 81 2280 2312
+type(
+  out_channel
+)
+"debugcom.ml" 81 2280 2313 "debugcom.ml" 81 2280 2314
+type(
+  int
+)
+ident(
+  int_ref n "debugcom.ml" 79 2225 2244 "debugcom.ml" 79 2225 2245
+)
+"debugcom.ml" 81 2280 2282 "debugcom.ml" 81 2280 2314
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 82 2316 2318 "debugcom.ml" 82 2316 2323
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"debugcom.ml" 82 2316 2324 "debugcom.ml" 82 2316 2325
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 82 2316 2325 "debugcom.ml" 82 2316 2329
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 82 2316 2324 "debugcom.ml" 82 2316 2329
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 82 2316 2324 "debugcom.ml" 82 2316 2336
+type(
+  out_channel
+)
+"debugcom.ml" 82 2316 2318 "debugcom.ml" 82 2316 2336
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 83 2338 2340 "debugcom.ml" 83 2338 2384
+type(
+  (Primitives.io_channel -> unit) ->
+  Primitives.io_channel -> (unit -> report) -> report
+)
+ident(
+  ext_ref Input_handling.execute_with_other_controller
+)
+"debugcom.ml" 84 2385 2389 "debugcom.ml" 84 2385 2418
+type(
+  Primitives.io_channel -> unit
+)
+ident(
+  ext_ref Input_handling.exit_main_loop
+)
+"debugcom.ml" 85 2419 2423 "debugcom.ml" 85 2419 2424
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 85 2419 2424 "debugcom.ml" 85 2419 2428
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 85 2419 2423 "debugcom.ml" 85 2419 2428
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 86 2429 2443 "debugcom.ml" 86 2429 2445
+type(
+  unit
+)
+"debugcom.ml" 87 2449 2456 "debugcom.ml" 87 2449 2480
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Input_handling.main_loop
+)
+"debugcom.ml" 87 2449 2481 "debugcom.ml" 87 2449 2483
+type(
+  unit
+)
+"debugcom.ml" 87 2449 2456 "debugcom.ml" 87 2449 2483
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 88 2485 2496 "debugcom.ml" 88 2485 2503
+type(
+  execution_summary
+)
+ident(
+  def summary "debugcom.ml" 96 2744 2751 "debugcom.ml" 102 3017 3052
+)
+"debugcom.ml" 89 2506 2521 "debugcom.ml" 89 2506 2531
+type(
+  in_channel -> char
+)
+ident(
+  ext_ref Pervasives.input_char
+)
+"debugcom.ml" 89 2506 2532 "debugcom.ml" 89 2506 2533
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 89 2506 2533 "debugcom.ml" 89 2506 2537
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 89 2506 2532 "debugcom.ml" 89 2506 2537
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 89 2506 2532 "debugcom.ml" 89 2506 2543
+type(
+  in_channel
+)
+"debugcom.ml" 89 2506 2521 "debugcom.ml" 89 2506 2543
+call(
+  stack
+)
+type(
+  char
+)
+"debugcom.ml" 90 2549 2560 "debugcom.ml" 90 2549 2563
+type(
+  char
+)
+"debugcom.ml" 90 2549 2567 "debugcom.ml" 90 2549 2572
+type(
+  execution_summary
+)
+"debugcom.ml" 91 2573 2584 "debugcom.ml" 91 2573 2587
+type(
+  char
+)
+"debugcom.ml" 91 2573 2591 "debugcom.ml" 91 2573 2601
+type(
+  execution_summary
+)
+"debugcom.ml" 92 2602 2613 "debugcom.ml" 92 2602 2616
+type(
+  char
+)
+"debugcom.ml" 92 2602 2620 "debugcom.ml" 92 2602 2626
+type(
+  execution_summary
+)
+"debugcom.ml" 93 2627 2638 "debugcom.ml" 93 2627 2641
+type(
+  char
+)
+"debugcom.ml" 93 2627 2645 "debugcom.ml" 93 2627 2657
+type(
+  execution_summary
+)
+"debugcom.ml" 94 2658 2669 "debugcom.ml" 94 2658 2672
+type(
+  char
+)
+"debugcom.ml" 94 2658 2676 "debugcom.ml" 94 2658 2688
+type(
+  execution_summary
+)
+"debugcom.ml" 95 2689 2701 "debugcom.ml" 95 2689 2702
+type(
+  char
+)
+"debugcom.ml" 95 2689 2707 "debugcom.ml" 95 2689 2723
+type(
+  string -> execution_summary
+)
+ident(
+  ext_ref Misc.fatal_error
+)
+"debugcom.ml" 95 2689 2724 "debugcom.ml" 95 2689 2740
+type(
+  string
+)
+"debugcom.ml" 95 2689 2707 "debugcom.ml" 95 2689 2740
+call(
+  stack
+)
+type(
+  execution_summary
+)
+"debugcom.ml" 89 2506 2515 "debugcom.ml" 95 2689 2740
+type(
+  execution_summary
+)
+"debugcom.ml" 96 2744 2755 "debugcom.ml" 96 2744 2768
+type(
+  int
+)
+ident(
+  def event_counter "debugcom.ml" 97 2803 2810 "debugcom.ml" 102 3017 3052
+)
+"debugcom.ml" 96 2744 2771 "debugcom.ml" 96 2744 2787
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"debugcom.ml" 96 2744 2788 "debugcom.ml" 96 2744 2789
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 96 2744 2789 "debugcom.ml" 96 2744 2793
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 96 2744 2788 "debugcom.ml" 96 2744 2793
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 96 2744 2788 "debugcom.ml" 96 2744 2799
+type(
+  in_channel
+)
+"debugcom.ml" 96 2744 2771 "debugcom.ml" 96 2744 2799
+call(
+  stack
+)
+type(
+  int
+)
+"debugcom.ml" 97 2803 2814 "debugcom.ml" 97 2803 2823
+type(
+  int
+)
+ident(
+  def stack_pos "debugcom.ml" 98 2858 2865 "debugcom.ml" 102 3017 3052
+)
+"debugcom.ml" 97 2803 2826 "debugcom.ml" 97 2803 2842
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"debugcom.ml" 97 2803 2843 "debugcom.ml" 97 2803 2844
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 97 2803 2844 "debugcom.ml" 97 2803 2848
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 97 2803 2843 "debugcom.ml" 97 2803 2848
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 97 2803 2843 "debugcom.ml" 97 2803 2854
+type(
+  in_channel
+)
+"debugcom.ml" 97 2803 2826 "debugcom.ml" 97 2803 2854
+call(
+  stack
+)
+type(
+  int
+)
+"debugcom.ml" 98 2858 2869 "debugcom.ml" 98 2858 2871
+type(
+  int
+)
+ident(
+  def pc "debugcom.ml" 99 2906 2913 "debugcom.ml" 102 3017 3052
+)
+"debugcom.ml" 98 2858 2874 "debugcom.ml" 98 2858 2890
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"debugcom.ml" 98 2858 2891 "debugcom.ml" 98 2858 2892
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 98 2858 2892 "debugcom.ml" 98 2858 2896
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 98 2858 2891 "debugcom.ml" 98 2858 2896
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 98 2858 2891 "debugcom.ml" 98 2858 2902
+type(
+  in_channel
+)
+"debugcom.ml" 98 2858 2874 "debugcom.ml" 98 2858 2902
+call(
+  stack
+)
+type(
+  int
+)
+"debugcom.ml" 99 2906 2926 "debugcom.ml" 99 2906 2933
+type(
+  execution_summary
+)
+ident(
+  int_ref summary "debugcom.ml" 88 2485 2496 "debugcom.ml" 88 2485 2503
+)
+"debugcom.ml" 100 2935 2962 "debugcom.ml" 100 2935 2975
+type(
+  int
+)
+ident(
+  int_ref event_counter "debugcom.ml" 96 2744 2755 "debugcom.ml" 96 2744 2768
+)
+"debugcom.ml" 101 2977 3006 "debugcom.ml" 101 2977 3015
+type(
+  int
+)
+ident(
+  int_ref stack_pos "debugcom.ml" 97 2803 2814 "debugcom.ml" 97 2803 2823
+)
+"debugcom.ml" 102 3017 3048 "debugcom.ml" 102 3017 3050
+type(
+  int
+)
+ident(
+  int_ref pc "debugcom.ml" 98 2858 2869 "debugcom.ml" 98 2858 2871
+)
+"debugcom.ml" 99 2906 2913 "debugcom.ml" 102 3017 3052
+type(
+  report
+)
+"debugcom.ml" 98 2858 2865 "debugcom.ml" 102 3017 3052
+type(
+  report
+)
+"debugcom.ml" 97 2803 2810 "debugcom.ml" 102 3017 3052
+type(
+  report
+)
+"debugcom.ml" 96 2744 2751 "debugcom.ml" 102 3017 3052
+type(
+  report
+)
+"debugcom.ml" 88 2485 2492 "debugcom.ml" 102 3017 3052
+type(
+  report
+)
+"debugcom.ml" 87 2449 2456 "debugcom.ml" 102 3017 3052
+type(
+  report
+)
+"debugcom.ml" 86 2429 2433 "debugcom.ml" 102 3017 3053
+type(
+  unit -> report
+)
+"debugcom.ml" 83 2338 2340 "debugcom.ml" 102 3017 3053
+call(
+  tail
+)
+type(
+  report
+)
+"debugcom.ml" 82 2316 2318 "debugcom.ml" 102 3017 3053
+type(
+  report
+)
+"debugcom.ml" 81 2280 2282 "debugcom.ml" 102 3017 3053
+type(
+  report
+)
+"debugcom.ml" 80 2248 2250 "debugcom.ml" 102 3017 3053
+type(
+  report
+)
+"debugcom.ml" 104 3055 3063 "debugcom.ml" 104 3055 3068
+type(
+  int64 -> report
+)
+ident(
+  def do_go "debugcom.ml" 104 3055 3055 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 104 3055 3069 "debugcom.ml" 104 3055 3070
+type(
+  int64
+)
+ident(
+  def n "debugcom.ml" 105 3073 3075 "debugcom.ml" 111 3235 3238
+)
+"debugcom.ml" 105 3073 3083 "debugcom.ml" 105 3073 3084
+type(
+  int64
+)
+ident(
+  int_ref n "debugcom.ml" 104 3055 3069 "debugcom.ml" 104 3055 3070
+)
+"debugcom.ml" 105 3073 3085 "debugcom.ml" 105 3073 3087
+type(
+  int64 -> int64 -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"debugcom.ml" 105 3073 3088 "debugcom.ml" 105 3073 3090
+type(
+  int64
+)
+ident(
+  ext_ref Int64ops._0
+)
+"debugcom.ml" 105 3073 3082 "debugcom.ml" 105 3073 3091
+type(
+  bool
+)
+"debugcom.ml" 105 3073 3075 "debugcom.ml" 105 3073 3091
+type(
+  unit
+)
+"debugcom.ml" 106 3093 3098 "debugcom.ml" 106 3093 3099
+type(
+  int64
+)
+ident(
+  int_ref n "debugcom.ml" 104 3055 3069 "debugcom.ml" 104 3055 3070
+)
+"debugcom.ml" 106 3093 3100 "debugcom.ml" 106 3093 3101
+type(
+  int64 -> int64 -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"debugcom.ml" 106 3093 3102 "debugcom.ml" 106 3093 3115
+type(
+  int64
+)
+ident(
+  ext_ref Int64ops.max_small_int
+)
+"debugcom.ml" 106 3093 3098 "debugcom.ml" 106 3093 3115
+type(
+  bool
+)
+"debugcom.ml" 107 3122 3126 "debugcom.ml" 107 3122 3132
+type(
+  report -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"debugcom.ml" 107 3122 3134 "debugcom.ml" 107 3122 3148
+type(
+  int -> report
+)
+ident(
+  int_ref do_go_smallint "debugcom.ml" 79 2225 2229 "debugcom.ml" 79 2225 2243
+)
+"debugcom.ml" 107 3122 3149 "debugcom.ml" 107 3122 3156
+type(
+  int
+)
+ident(
+  ext_ref Pervasives.max_int
+)
+"debugcom.ml" 107 3122 3133 "debugcom.ml" 107 3122 3157
+call(
+  stack
+)
+type(
+  report
+)
+"debugcom.ml" 107 3122 3126 "debugcom.ml" 107 3122 3157
+type(
+  unit
+)
+"debugcom.ml" 108 3159 3163 "debugcom.ml" 108 3159 3168
+type(
+  int64 -> report
+)
+ident(
+  int_ref do_go "debugcom.ml" 104 3055 3063 "debugcom.ml" 104 3055 3068
+)
+"debugcom.ml" 108 3159 3170 "debugcom.ml" 108 3159 3171
+type(
+  int64
+)
+ident(
+  int_ref n "debugcom.ml" 104 3055 3069 "debugcom.ml" 104 3055 3070
+)
+"debugcom.ml" 108 3159 3172 "debugcom.ml" 108 3159 3174
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Int64ops.( -- )
+)
+"debugcom.ml" 108 3159 3175 "debugcom.ml" 108 3159 3188
+type(
+  int64
+)
+ident(
+  ext_ref Int64ops.max_small_int
+)
+"debugcom.ml" 108 3159 3169 "debugcom.ml" 108 3159 3189
+call(
+  stack
+)
+type(
+  int64
+)
+"debugcom.ml" 108 3159 3163 "debugcom.ml" 108 3159 3189
+call(
+  tail
+)
+type(
+  report
+)
+"debugcom.ml" 106 3093 3120 "debugcom.ml" 109 3190 3193
+type(
+  report
+)
+"debugcom.ml" 110 3199 3203 "debugcom.ml" 110 3199 3217
+type(
+  int -> report
+)
+ident(
+  int_ref do_go_smallint "debugcom.ml" 79 2225 2229 "debugcom.ml" 79 2225 2243
+)
+"debugcom.ml" 110 3199 3219 "debugcom.ml" 110 3199 3231
+type(
+  int64 -> int
+)
+ident(
+  ext_ref Int64.to_int
+)
+"debugcom.ml" 110 3199 3232 "debugcom.ml" 110 3199 3233
+type(
+  int64
+)
+ident(
+  int_ref n "debugcom.ml" 104 3055 3069 "debugcom.ml" 104 3055 3070
+)
+"debugcom.ml" 110 3199 3218 "debugcom.ml" 110 3199 3234
+type(
+  int
+)
+"debugcom.ml" 109 3190 3197 "debugcom.ml" 111 3235 3238
+call(
+  tail
+)
+type(
+  report
+)
+"debugcom.ml" 106 3093 3095 "debugcom.ml" 111 3235 3238
+type(
+  report
+)
+"debugcom.ml" 105 3073 3075 "debugcom.ml" 111 3235 3238
+type(
+  report
+)
+"debugcom.ml" 116 3271 3275 "debugcom.ml" 116 3271 3288
+type(
+  unit -> checkpoint_report
+)
+ident(
+  def do_checkpoint "debugcom.ml" 126 3575 3575 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 116 3271 3289 "debugcom.ml" 116 3271 3291
+type(
+  unit
+)
+"debugcom.ml" 117 3294 3302 "debugcom.ml" 117 3294 3313
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"debugcom.ml" 118 3319 3323 "debugcom.ml" 118 3319 3330
+type(
+  string
+)
+"debugcom.ml" 118 3319 3334 "debugcom.ml" 118 3319 3342
+type(
+  string -> checkpoint_report
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"debugcom.ml" 118 3319 3343 "debugcom.ml" 118 3319 3358
+type(
+  string
+)
+"debugcom.ml" 118 3319 3334 "debugcom.ml" 118 3319 3358
+call(
+  tail
+)
+type(
+  checkpoint_report
+)
+"debugcom.ml" 119 3359 3363 "debugcom.ml" 119 3359 3364
+type(
+  string
+)
+"debugcom.ml" 120 3368 3374 "debugcom.ml" 120 3368 3385
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 120 3368 3386 "debugcom.ml" 120 3368 3387
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 120 3368 3387 "debugcom.ml" 120 3368 3391
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 120 3368 3386 "debugcom.ml" 120 3368 3391
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 120 3368 3386 "debugcom.ml" 120 3368 3398
+type(
+  out_channel
+)
+"debugcom.ml" 120 3368 3399 "debugcom.ml" 120 3368 3402
+type(
+  char
+)
+"debugcom.ml" 120 3368 3374 "debugcom.ml" 120 3368 3402
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 121 3404 3410 "debugcom.ml" 121 3404 3415
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"debugcom.ml" 121 3404 3416 "debugcom.ml" 121 3404 3417
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 121 3404 3417 "debugcom.ml" 121 3404 3421
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 121 3404 3416 "debugcom.ml" 121 3404 3421
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 121 3404 3416 "debugcom.ml" 121 3404 3428
+type(
+  out_channel
+)
+"debugcom.ml" 121 3404 3410 "debugcom.ml" 121 3404 3428
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 122 3430 3440 "debugcom.ml" 122 3430 3443
+type(
+  int
+)
+ident(
+  def pid "debugcom.ml" 123 3478 3484 "debugcom.ml" 123 3478 3543
+)
+"debugcom.ml" 122 3430 3446 "debugcom.ml" 122 3430 3462
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"debugcom.ml" 122 3430 3463 "debugcom.ml" 122 3430 3464
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 122 3430 3464 "debugcom.ml" 122 3430 3468
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 122 3430 3463 "debugcom.ml" 122 3430 3468
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 122 3430 3463 "debugcom.ml" 122 3430 3474
+type(
+  in_channel
+)
+"debugcom.ml" 122 3430 3446 "debugcom.ml" 122 3430 3474
+call(
+  stack
+)
+type(
+  int
+)
+"debugcom.ml" 123 3478 3487 "debugcom.ml" 123 3478 3490
+type(
+  int
+)
+ident(
+  int_ref pid "debugcom.ml" 122 3430 3440 "debugcom.ml" 122 3430 3443
+)
+"debugcom.ml" 123 3478 3491 "debugcom.ml" 123 3478 3492
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"debugcom.ml" 123 3478 3493 "debugcom.ml" 123 3478 3495
+type(
+  int
+)
+"debugcom.ml" 123 3478 3487 "debugcom.ml" 123 3478 3495
+type(
+  bool
+)
+"debugcom.ml" 123 3478 3501 "debugcom.ml" 123 3478 3518
+type(
+  checkpoint_report
+)
+"debugcom.ml" 123 3478 3540 "debugcom.ml" 123 3478 3543
+type(
+  int
+)
+ident(
+  int_ref pid "debugcom.ml" 122 3430 3440 "debugcom.ml" 122 3430 3443
+)
+"debugcom.ml" 123 3478 3524 "debugcom.ml" 123 3478 3543
+type(
+  checkpoint_report
+)
+"debugcom.ml" 123 3478 3484 "debugcom.ml" 123 3478 3543
+type(
+  checkpoint_report
+)
+"debugcom.ml" 122 3430 3436 "debugcom.ml" 123 3478 3543
+type(
+  checkpoint_report
+)
+"debugcom.ml" 121 3404 3410 "debugcom.ml" 123 3478 3543
+type(
+  checkpoint_report
+)
+"debugcom.ml" 120 3368 3374 "debugcom.ml" 123 3478 3543
+type(
+  checkpoint_report
+)
+"debugcom.ml" 117 3294 3296 "debugcom.ml" 123 3478 3543
+type(
+  checkpoint_report
+)
+"debugcom.ml" 126 3575 3579 "debugcom.ml" 126 3575 3583
+type(
+  Primitives.io_channel -> unit
+)
+ident(
+  def stop "debugcom.ml" 135 3797 3797 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 126 3575 3584 "debugcom.ml" 126 3575 3588
+type(
+  Primitives.io_channel
+)
+ident(
+  def chan "debugcom.ml" 127 3591 3593 "debugcom.ml" 131 3659 3694
+)
+"debugcom.ml" 128 3597 3601 "debugcom.ml" 128 3597 3612
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 128 3597 3613 "debugcom.ml" 128 3597 3617
+type(
+  Primitives.io_channel
+)
+ident(
+  int_ref chan "debugcom.ml" 126 3575 3584 "debugcom.ml" 126 3575 3588
+)
+"debugcom.ml" 128 3597 3613 "debugcom.ml" 128 3597 3624
+type(
+  out_channel
+)
+"debugcom.ml" 128 3597 3625 "debugcom.ml" 128 3597 3628
+type(
+  char
+)
+"debugcom.ml" 128 3597 3601 "debugcom.ml" 128 3597 3628
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 129 3630 3634 "debugcom.ml" 129 3630 3639
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"debugcom.ml" 129 3630 3640 "debugcom.ml" 129 3630 3644
+type(
+  Primitives.io_channel
+)
+ident(
+  int_ref chan "debugcom.ml" 126 3575 3584 "debugcom.ml" 126 3575 3588
+)
+"debugcom.ml" 129 3630 3640 "debugcom.ml" 129 3630 3651
+type(
+  out_channel
+)
+"debugcom.ml" 129 3630 3634 "debugcom.ml" 129 3630 3651
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 128 3597 3601 "debugcom.ml" 129 3630 3651
+type(
+  unit
+)
+"debugcom.ml" 131 3659 3673 "debugcom.ml" 131 3659 3674
+type(
+  string
+)
+"debugcom.ml" 131 3659 3663 "debugcom.ml" 131 3659 3674
+type(
+  exn
+)
+"debugcom.ml" 131 3659 3677 "debugcom.ml" 131 3659 3688
+type(
+  exn
+)
+"debugcom.ml" 131 3659 3663 "debugcom.ml" 131 3659 3688
+type(
+  exn
+)
+"debugcom.ml" 131 3659 3692 "debugcom.ml" 131 3659 3694
+type(
+  unit
+)
+"debugcom.ml" 127 3591 3593 "debugcom.ml" 131 3659 3694
+type(
+  unit
+)
+"debugcom.ml" 135 3797 3801 "debugcom.ml" 135 3797 3811
+type(
+  Primitives.io_channel -> unit
+)
+ident(
+  def wait_child "debugcom.ml" 144 4001 4001 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 135 3797 3812 "debugcom.ml" 135 3797 3816
+type(
+  Primitives.io_channel
+)
+ident(
+  def chan "debugcom.ml" 136 3819 3821 "debugcom.ml" 139 3864 3899
+)
+"debugcom.ml" 137 3825 3829 "debugcom.ml" 137 3825 3840
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 137 3825 3841 "debugcom.ml" 137 3825 3845
+type(
+  Primitives.io_channel
+)
+ident(
+  int_ref chan "debugcom.ml" 135 3797 3812 "debugcom.ml" 135 3797 3816
+)
+"debugcom.ml" 137 3825 3841 "debugcom.ml" 137 3825 3852
+type(
+  out_channel
+)
+"debugcom.ml" 137 3825 3853 "debugcom.ml" 137 3825 3856
+type(
+  char
+)
+"debugcom.ml" 137 3825 3829 "debugcom.ml" 137 3825 3856
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 139 3864 3878 "debugcom.ml" 139 3864 3879
+type(
+  string
+)
+"debugcom.ml" 139 3864 3868 "debugcom.ml" 139 3864 3879
+type(
+  exn
+)
+"debugcom.ml" 139 3864 3882 "debugcom.ml" 139 3864 3893
+type(
+  exn
+)
+"debugcom.ml" 139 3864 3868 "debugcom.ml" 139 3864 3893
+type(
+  exn
+)
+"debugcom.ml" 139 3864 3897 "debugcom.ml" 139 3864 3899
+type(
+  unit
+)
+"debugcom.ml" 136 3819 3821 "debugcom.ml" 139 3864 3899
+type(
+  unit
+)
+"debugcom.ml" 144 4001 4005 "debugcom.ml" 144 4001 4018
+type(
+  unit -> int * int
+)
+ident(
+  def initial_frame "debugcom.ml" 151 4190 4190 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 144 4001 4019 "debugcom.ml" 144 4001 4021
+type(
+  unit
+)
+"debugcom.ml" 145 4024 4026 "debugcom.ml" 145 4024 4037
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 145 4024 4038 "debugcom.ml" 145 4024 4039
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 145 4024 4039 "debugcom.ml" 145 4024 4043
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 145 4024 4038 "debugcom.ml" 145 4024 4043
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 145 4024 4038 "debugcom.ml" 145 4024 4050
+type(
+  out_channel
+)
+"debugcom.ml" 145 4024 4051 "debugcom.ml" 145 4024 4054
+type(
+  char
+)
+"debugcom.ml" 145 4024 4026 "debugcom.ml" 145 4024 4054
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 146 4056 4058 "debugcom.ml" 146 4056 4063
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"debugcom.ml" 146 4056 4064 "debugcom.ml" 146 4056 4065
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 146 4056 4065 "debugcom.ml" 146 4056 4069
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 146 4056 4064 "debugcom.ml" 146 4056 4069
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 146 4056 4064 "debugcom.ml" 146 4056 4076
+type(
+  out_channel
+)
+"debugcom.ml" 146 4056 4058 "debugcom.ml" 146 4056 4076
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 147 4078 4084 "debugcom.ml" 147 4078 4093
+type(
+  int
+)
+ident(
+  def stack_pos "debugcom.ml" 148 4128 4130 "debugcom.ml" 149 4171 4188
+)
+"debugcom.ml" 147 4078 4096 "debugcom.ml" 147 4078 4112
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"debugcom.ml" 147 4078 4113 "debugcom.ml" 147 4078 4114
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 147 4078 4114 "debugcom.ml" 147 4078 4118
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 147 4078 4113 "debugcom.ml" 147 4078 4118
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 147 4078 4113 "debugcom.ml" 147 4078 4124
+type(
+  in_channel
+)
+"debugcom.ml" 147 4078 4096 "debugcom.ml" 147 4078 4124
+call(
+  stack
+)
+type(
+  int
+)
+"debugcom.ml" 148 4128 4134 "debugcom.ml" 148 4128 4136
+type(
+  int
+)
+ident(
+  def pc "debugcom.ml" 149 4171 4173 "debugcom.ml" 149 4171 4188
+)
+"debugcom.ml" 148 4128 4139 "debugcom.ml" 148 4128 4155
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"debugcom.ml" 148 4128 4156 "debugcom.ml" 148 4128 4157
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 148 4128 4157 "debugcom.ml" 148 4128 4161
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 148 4128 4156 "debugcom.ml" 148 4128 4161
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 148 4128 4156 "debugcom.ml" 148 4128 4167
+type(
+  in_channel
+)
+"debugcom.ml" 148 4128 4139 "debugcom.ml" 148 4128 4167
+call(
+  stack
+)
+type(
+  int
+)
+"debugcom.ml" 149 4171 4174 "debugcom.ml" 149 4171 4183
+type(
+  int
+)
+ident(
+  int_ref stack_pos "debugcom.ml" 147 4078 4084 "debugcom.ml" 147 4078 4093
+)
+"debugcom.ml" 149 4171 4185 "debugcom.ml" 149 4171 4187
+type(
+  int
+)
+ident(
+  int_ref pc "debugcom.ml" 148 4128 4134 "debugcom.ml" 148 4128 4136
+)
+"debugcom.ml" 149 4171 4173 "debugcom.ml" 149 4171 4188
+type(
+  int * int
+)
+"debugcom.ml" 148 4128 4130 "debugcom.ml" 149 4171 4188
+type(
+  int * int
+)
+"debugcom.ml" 147 4078 4080 "debugcom.ml" 149 4171 4188
+type(
+  int * int
+)
+"debugcom.ml" 146 4056 4058 "debugcom.ml" 149 4171 4188
+type(
+  int * int
+)
+"debugcom.ml" 145 4024 4026 "debugcom.ml" 149 4171 4188
+type(
+  int * int
+)
+"debugcom.ml" 151 4190 4194 "debugcom.ml" 151 4190 4211
+type(
+  unit -> unit
+)
+ident(
+  def set_initial_frame "debugcom.ml" 158 4360 4360 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 151 4190 4212 "debugcom.ml" 151 4190 4214
+type(
+  unit
+)
+"debugcom.ml" 152 4217 4219 "debugcom.ml" 152 4217 4225
+type(
+  int * int -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"debugcom.ml" 152 4217 4226 "debugcom.ml" 152 4217 4239
+type(
+  unit -> int * int
+)
+ident(
+  int_ref initial_frame "debugcom.ml" 144 4001 4005 "debugcom.ml" 144 4001 4018
+)
+"debugcom.ml" 152 4217 4240 "debugcom.ml" 152 4217 4242
+type(
+  unit
+)
+"debugcom.ml" 152 4217 4225 "debugcom.ml" 152 4217 4243
+call(
+  stack
+)
+type(
+  int * int
+)
+"debugcom.ml" 152 4217 4219 "debugcom.ml" 152 4217 4243
+type(
+  unit
+)
+"debugcom.ml" 158 4360 4364 "debugcom.ml" 158 4360 4372
+type(
+  int -> int * int
+)
+ident(
+  def up_frame "debugcom.ml" 168 4671 4671 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 158 4360 4373 "debugcom.ml" 158 4360 4382
+type(
+  int
+)
+ident(
+  def stacksize "debugcom.ml" 159 4385 4387 "debugcom.ml" 164 4606 4623
+)
+"debugcom.ml" 159 4385 4387 "debugcom.ml" 159 4385 4398
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 159 4385 4399 "debugcom.ml" 159 4385 4400
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 159 4385 4400 "debugcom.ml" 159 4385 4404
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 159 4385 4399 "debugcom.ml" 159 4385 4404
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 159 4385 4399 "debugcom.ml" 159 4385 4411
+type(
+  out_channel
+)
+"debugcom.ml" 159 4385 4412 "debugcom.ml" 159 4385 4415
+type(
+  char
+)
+"debugcom.ml" 159 4385 4387 "debugcom.ml" 159 4385 4415
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 160 4417 4419 "debugcom.ml" 160 4417 4436
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output_binary_int
+)
+"debugcom.ml" 160 4417 4437 "debugcom.ml" 160 4417 4438
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 160 4417 4438 "debugcom.ml" 160 4417 4442
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 160 4417 4437 "debugcom.ml" 160 4417 4442
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 160 4417 4437 "debugcom.ml" 160 4417 4449
+type(
+  out_channel
+)
+"debugcom.ml" 160 4417 4450 "debugcom.ml" 160 4417 4459
+type(
+  int
+)
+ident(
+  int_ref stacksize "debugcom.ml" 158 4360 4373 "debugcom.ml" 158 4360 4382
+)
+"debugcom.ml" 160 4417 4419 "debugcom.ml" 160 4417 4459
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 161 4461 4463 "debugcom.ml" 161 4461 4468
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"debugcom.ml" 161 4461 4469 "debugcom.ml" 161 4461 4470
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 161 4461 4470 "debugcom.ml" 161 4461 4474
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 161 4461 4469 "debugcom.ml" 161 4461 4474
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 161 4461 4469 "debugcom.ml" 161 4461 4481
+type(
+  out_channel
+)
+"debugcom.ml" 161 4461 4463 "debugcom.ml" 161 4461 4481
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 162 4483 4489 "debugcom.ml" 162 4483 4498
+type(
+  int
+)
+ident(
+  def stack_pos "debugcom.ml" 163 4533 4535 "debugcom.ml" 164 4606 4623
+)
+"debugcom.ml" 162 4483 4501 "debugcom.ml" 162 4483 4517
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"debugcom.ml" 162 4483 4518 "debugcom.ml" 162 4483 4519
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 162 4483 4519 "debugcom.ml" 162 4483 4523
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 162 4483 4518 "debugcom.ml" 162 4483 4523
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 162 4483 4518 "debugcom.ml" 162 4483 4529
+type(
+  in_channel
+)
+"debugcom.ml" 162 4483 4501 "debugcom.ml" 162 4483 4529
+call(
+  stack
+)
+type(
+  int
+)
+"debugcom.ml" 163 4533 4539 "debugcom.ml" 163 4533 4541
+type(
+  int
+)
+ident(
+  def pc "debugcom.ml" 164 4606 4608 "debugcom.ml" 164 4606 4623
+)
+"debugcom.ml" 163 4533 4547 "debugcom.ml" 163 4533 4556
+type(
+  int
+)
+ident(
+  int_ref stack_pos "debugcom.ml" 162 4483 4489 "debugcom.ml" 162 4483 4498
+)
+"debugcom.ml" 163 4533 4557 "debugcom.ml" 163 4533 4558
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"debugcom.ml" 163 4533 4559 "debugcom.ml" 163 4533 4561
+type(
+  int
+)
+"debugcom.ml" 163 4533 4547 "debugcom.ml" 163 4533 4561
+type(
+  bool
+)
+"debugcom.ml" 163 4533 4567 "debugcom.ml" 163 4533 4568
+type(
+  int
+)
+"debugcom.ml" 163 4533 4574 "debugcom.ml" 163 4533 4590
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"debugcom.ml" 163 4533 4591 "debugcom.ml" 163 4533 4592
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 163 4533 4592 "debugcom.ml" 163 4533 4596
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 163 4533 4591 "debugcom.ml" 163 4533 4596
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 163 4533 4591 "debugcom.ml" 163 4533 4602
+type(
+  in_channel
+)
+"debugcom.ml" 163 4533 4574 "debugcom.ml" 163 4533 4602
+call(
+  stack
+)
+type(
+  int
+)
+"debugcom.ml" 163 4533 4544 "debugcom.ml" 163 4533 4602
+type(
+  int
+)
+"debugcom.ml" 164 4606 4609 "debugcom.ml" 164 4606 4618
+type(
+  int
+)
+ident(
+  int_ref stack_pos "debugcom.ml" 162 4483 4489 "debugcom.ml" 162 4483 4498
+)
+"debugcom.ml" 164 4606 4620 "debugcom.ml" 164 4606 4622
+type(
+  int
+)
+ident(
+  int_ref pc "debugcom.ml" 163 4533 4539 "debugcom.ml" 163 4533 4541
+)
+"debugcom.ml" 164 4606 4608 "debugcom.ml" 164 4606 4623
+type(
+  int * int
+)
+"debugcom.ml" 163 4533 4535 "debugcom.ml" 164 4606 4623
+type(
+  int * int
+)
+"debugcom.ml" 162 4483 4485 "debugcom.ml" 164 4606 4623
+type(
+  int * int
+)
+"debugcom.ml" 161 4461 4463 "debugcom.ml" 164 4606 4623
+type(
+  int * int
+)
+"debugcom.ml" 160 4417 4419 "debugcom.ml" 164 4606 4623
+type(
+  int * int
+)
+"debugcom.ml" 159 4385 4387 "debugcom.ml" 164 4606 4623
+type(
+  int * int
+)
+"debugcom.ml" 168 4671 4675 "debugcom.ml" 168 4671 4684
+type(
+  unit -> int * int
+)
+ident(
+  def get_frame "debugcom.ml" 175 4856 4856 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 168 4671 4685 "debugcom.ml" 168 4671 4687
+type(
+  unit
+)
+"debugcom.ml" 169 4690 4692 "debugcom.ml" 169 4690 4703
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 169 4690 4704 "debugcom.ml" 169 4690 4705
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 169 4690 4705 "debugcom.ml" 169 4690 4709
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 169 4690 4704 "debugcom.ml" 169 4690 4709
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 169 4690 4704 "debugcom.ml" 169 4690 4716
+type(
+  out_channel
+)
+"debugcom.ml" 169 4690 4717 "debugcom.ml" 169 4690 4720
+type(
+  char
+)
+"debugcom.ml" 169 4690 4692 "debugcom.ml" 169 4690 4720
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 170 4722 4724 "debugcom.ml" 170 4722 4729
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"debugcom.ml" 170 4722 4730 "debugcom.ml" 170 4722 4731
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 170 4722 4731 "debugcom.ml" 170 4722 4735
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 170 4722 4730 "debugcom.ml" 170 4722 4735
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 170 4722 4730 "debugcom.ml" 170 4722 4742
+type(
+  out_channel
+)
+"debugcom.ml" 170 4722 4724 "debugcom.ml" 170 4722 4742
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 171 4744 4750 "debugcom.ml" 171 4744 4759
+type(
+  int
+)
+ident(
+  def stack_pos "debugcom.ml" 172 4794 4796 "debugcom.ml" 173 4837 4854
+)
+"debugcom.ml" 171 4744 4762 "debugcom.ml" 171 4744 4778
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"debugcom.ml" 171 4744 4779 "debugcom.ml" 171 4744 4780
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 171 4744 4780 "debugcom.ml" 171 4744 4784
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 171 4744 4779 "debugcom.ml" 171 4744 4784
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 171 4744 4779 "debugcom.ml" 171 4744 4790
+type(
+  in_channel
+)
+"debugcom.ml" 171 4744 4762 "debugcom.ml" 171 4744 4790
+call(
+  stack
+)
+type(
+  int
+)
+"debugcom.ml" 172 4794 4800 "debugcom.ml" 172 4794 4802
+type(
+  int
+)
+ident(
+  def pc "debugcom.ml" 173 4837 4839 "debugcom.ml" 173 4837 4854
+)
+"debugcom.ml" 172 4794 4805 "debugcom.ml" 172 4794 4821
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"debugcom.ml" 172 4794 4822 "debugcom.ml" 172 4794 4823
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 172 4794 4823 "debugcom.ml" 172 4794 4827
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 172 4794 4822 "debugcom.ml" 172 4794 4827
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 172 4794 4822 "debugcom.ml" 172 4794 4833
+type(
+  in_channel
+)
+"debugcom.ml" 172 4794 4805 "debugcom.ml" 172 4794 4833
+call(
+  stack
+)
+type(
+  int
+)
+"debugcom.ml" 173 4837 4840 "debugcom.ml" 173 4837 4849
+type(
+  int
+)
+ident(
+  int_ref stack_pos "debugcom.ml" 171 4744 4750 "debugcom.ml" 171 4744 4759
+)
+"debugcom.ml" 173 4837 4851 "debugcom.ml" 173 4837 4853
+type(
+  int
+)
+ident(
+  int_ref pc "debugcom.ml" 172 4794 4800 "debugcom.ml" 172 4794 4802
+)
+"debugcom.ml" 173 4837 4839 "debugcom.ml" 173 4837 4854
+type(
+  int * int
+)
+"debugcom.ml" 172 4794 4796 "debugcom.ml" 173 4837 4854
+type(
+  int * int
+)
+"debugcom.ml" 171 4744 4746 "debugcom.ml" 173 4837 4854
+type(
+  int * int
+)
+"debugcom.ml" 170 4722 4724 "debugcom.ml" 173 4837 4854
+type(
+  int * int
+)
+"debugcom.ml" 169 4690 4692 "debugcom.ml" 173 4837 4854
+type(
+  int * int
+)
+"debugcom.ml" 175 4856 4860 "debugcom.ml" 175 4856 4869
+type(
+  int -> unit
+)
+ident(
+  def set_frame "debugcom.ml" 181 5011 5011 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 175 4856 4870 "debugcom.ml" 175 4856 4879
+type(
+  int
+)
+ident(
+  def stack_pos "debugcom.ml" 176 4882 4884 "debugcom.ml" 177 4914 4956
+)
+"debugcom.ml" 176 4882 4884 "debugcom.ml" 176 4882 4895
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 176 4882 4896 "debugcom.ml" 176 4882 4897
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 176 4882 4897 "debugcom.ml" 176 4882 4901
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 176 4882 4896 "debugcom.ml" 176 4882 4901
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 176 4882 4896 "debugcom.ml" 176 4882 4908
+type(
+  out_channel
+)
+"debugcom.ml" 176 4882 4909 "debugcom.ml" 176 4882 4912
+type(
+  char
+)
+"debugcom.ml" 176 4882 4884 "debugcom.ml" 176 4882 4912
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 177 4914 4916 "debugcom.ml" 177 4914 4933
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output_binary_int
+)
+"debugcom.ml" 177 4914 4934 "debugcom.ml" 177 4914 4935
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 177 4914 4935 "debugcom.ml" 177 4914 4939
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 177 4914 4934 "debugcom.ml" 177 4914 4939
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 177 4914 4934 "debugcom.ml" 177 4914 4946
+type(
+  out_channel
+)
+"debugcom.ml" 177 4914 4947 "debugcom.ml" 177 4914 4956
+type(
+  int
+)
+ident(
+  int_ref stack_pos "debugcom.ml" 175 4856 4870 "debugcom.ml" 175 4856 4879
+)
+"debugcom.ml" 177 4914 4916 "debugcom.ml" 177 4914 4956
+call(
+  tail
+)
+type(
+  unit
+)
+"debugcom.ml" 176 4882 4884 "debugcom.ml" 177 4914 4956
+type(
+  unit
+)
+"debugcom.ml" 181 5011 5015 "debugcom.ml" 181 5011 5031
+type(
+  int -> unit
+)
+ident(
+  def set_trap_barrier "debugcom.ml" 187 5141 5141 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 181 5011 5032 "debugcom.ml" 181 5011 5035
+type(
+  int
+)
+ident(
+  def pos "debugcom.ml" 182 5038 5040 "debugcom.ml" 183 5070 5106
+)
+"debugcom.ml" 182 5038 5040 "debugcom.ml" 182 5038 5051
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 182 5038 5052 "debugcom.ml" 182 5038 5053
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 182 5038 5053 "debugcom.ml" 182 5038 5057
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 182 5038 5052 "debugcom.ml" 182 5038 5057
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 182 5038 5052 "debugcom.ml" 182 5038 5064
+type(
+  out_channel
+)
+"debugcom.ml" 182 5038 5065 "debugcom.ml" 182 5038 5068
+type(
+  char
+)
+"debugcom.ml" 182 5038 5040 "debugcom.ml" 182 5038 5068
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 183 5070 5072 "debugcom.ml" 183 5070 5089
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output_binary_int
+)
+"debugcom.ml" 183 5070 5090 "debugcom.ml" 183 5070 5091
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 183 5070 5091 "debugcom.ml" 183 5070 5095
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 183 5070 5090 "debugcom.ml" 183 5070 5095
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 183 5070 5090 "debugcom.ml" 183 5070 5102
+type(
+  out_channel
+)
+"debugcom.ml" 183 5070 5103 "debugcom.ml" 183 5070 5106
+type(
+  int
+)
+ident(
+  int_ref pos "debugcom.ml" 181 5011 5032 "debugcom.ml" 181 5011 5035
+)
+"debugcom.ml" 183 5070 5072 "debugcom.ml" 183 5070 5106
+call(
+  tail
+)
+type(
+  unit
+)
+"debugcom.ml" 182 5038 5040 "debugcom.ml" 183 5070 5106
+type(
+  unit
+)
+"debugcom.ml" 187 5141 5145 "debugcom.ml" 187 5141 5155
+type(
+  int
+)
+ident(
+  def value_size "debugcom.ml" 189 5189 5189 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 187 5141 5161 "debugcom.ml" 187 5141 5162
+type(
+  int
+)
+"debugcom.ml" 187 5141 5163 "debugcom.ml" 187 5141 5166
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsl )
+)
+"debugcom.ml" 187 5141 5167 "debugcom.ml" 187 5141 5169
+type(
+  int
+)
+"debugcom.ml" 187 5141 5161 "debugcom.ml" 187 5141 5169
+type(
+  int
+)
+"debugcom.ml" 187 5141 5170 "debugcom.ml" 187 5141 5171
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"debugcom.ml" 187 5141 5172 "debugcom.ml" 187 5141 5173
+type(
+  int
+)
+"debugcom.ml" 187 5141 5161 "debugcom.ml" 187 5141 5173
+type(
+  bool
+)
+"debugcom.ml" 187 5141 5179 "debugcom.ml" 187 5141 5180
+type(
+  int
+)
+"debugcom.ml" 187 5141 5186 "debugcom.ml" 187 5141 5187
+type(
+  int
+)
+"debugcom.ml" 187 5141 5158 "debugcom.ml" 187 5141 5187
+type(
+  int
+)
+"debugcom.ml" 189 5189 5193 "debugcom.ml" 189 5189 5211
+type(
+  in_channel -> string
+)
+ident(
+  def input_remote_value "debugcom.ml" 192 5254 5254 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 189 5189 5212 "debugcom.ml" 189 5189 5214
+type(
+  in_channel
+)
+ident(
+  def ic "debugcom.ml" 190 5217 5219 "debugcom.ml" 190 5217 5252
+)
+"debugcom.ml" 190 5217 5219 "debugcom.ml" 190 5217 5238
+type(
+  in_channel -> int -> string
+)
+ident(
+  ext_ref Pervasives.really_input_string
+)
+"debugcom.ml" 190 5217 5239 "debugcom.ml" 190 5217 5241
+type(
+  in_channel
+)
+ident(
+  int_ref ic "debugcom.ml" 189 5189 5212 "debugcom.ml" 189 5189 5214
+)
+"debugcom.ml" 190 5217 5242 "debugcom.ml" 190 5217 5252
+type(
+  int
+)
+ident(
+  int_ref value_size "debugcom.ml" 187 5141 5145 "debugcom.ml" 187 5141 5155
+)
+"debugcom.ml" 190 5217 5219 "debugcom.ml" 190 5217 5252
+call(
+  tail
+)
+type(
+  string
+)
+"debugcom.ml" 192 5254 5258 "debugcom.ml" 192 5254 5277
+type(
+  out_channel -> string -> unit
+)
+ident(
+  def output_remote_value "debugcom.ml" 195 5323 5323 "debugcom.ml" 1 0 -1
+)
+"debugcom.ml" 192 5254 5278 "debugcom.ml" 192 5254 5280
+type(
+  out_channel
+)
+ident(
+  def ic "debugcom.ml" 192 5254 5281 "debugcom.ml" 193 5285 5321
+)
+"debugcom.ml" 192 5254 5281 "debugcom.ml" 192 5254 5282
+type(
+  string
+)
+ident(
+  def v "debugcom.ml" 193 5285 5287 "debugcom.ml" 193 5285 5321
+)
+"debugcom.ml" 193 5285 5287 "debugcom.ml" 193 5285 5303
+type(
+  out_channel -> string -> int -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output_substring
+)
+"debugcom.ml" 193 5285 5304 "debugcom.ml" 193 5285 5306
+type(
+  out_channel
+)
+ident(
+  int_ref ic "debugcom.ml" 192 5254 5278 "debugcom.ml" 192 5254 5280
+)
+"debugcom.ml" 193 5285 5307 "debugcom.ml" 193 5285 5308
+type(
+  string
+)
+ident(
+  int_ref v "debugcom.ml" 192 5254 5281 "debugcom.ml" 192 5254 5282
+)
+"debugcom.ml" 193 5285 5309 "debugcom.ml" 193 5285 5310
+type(
+  int
+)
+"debugcom.ml" 193 5285 5311 "debugcom.ml" 193 5285 5321
+type(
+  int
+)
+ident(
+  int_ref value_size "debugcom.ml" 187 5141 5145 "debugcom.ml" 187 5141 5155
+)
+"debugcom.ml" 193 5285 5287 "debugcom.ml" 193 5285 5321
+call(
+  tail
+)
+type(
+  unit
+)
+"debugcom.ml" 201 5431 5439 "debugcom.ml" 201 5431 5442
+type(
+  t -> 'a
+)
+ident(
+  def obj "debugcom.ml" 212 5734 5738 "debugcom.ml" 294 8288 8293
+)
+"debugcom.ml" 202 5454 5466 "debugcom.ml" 202 5454 5469
+type(
+  Obj.t
+)
+ident(
+  def obj "debugcom.ml" 202 5454 5473 "debugcom.ml" 202 5454 5484
+)
+"debugcom.ml" 202 5454 5460 "debugcom.ml" 202 5454 5469
+type(
+  t
+)
+"debugcom.ml" 202 5454 5473 "debugcom.ml" 202 5454 5480
+type(
+  Obj.t -> 'a
+)
+ident(
+  ext_ref Obj.obj
+)
+"debugcom.ml" 202 5454 5481 "debugcom.ml" 202 5454 5484
+type(
+  Obj.t
+)
+ident(
+  int_ref obj "debugcom.ml" 202 5454 5466 "debugcom.ml" 202 5454 5469
+)
+"debugcom.ml" 202 5454 5473 "debugcom.ml" 202 5454 5484
+type(
+  'a
+)
+"debugcom.ml" 203 5485 5498 "debugcom.ml" 203 5485 5499
+type(
+  string
+)
+ident(
+  def v "debugcom.ml" 204 5503 5511 "debugcom.ml" 210 5699 5732
+)
+"debugcom.ml" 203 5485 5491 "debugcom.ml" 203 5485 5499
+type(
+  t
+)
+"debugcom.ml" 204 5503 5511 "debugcom.ml" 204 5503 5522
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 204 5503 5523 "debugcom.ml" 204 5503 5524
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 204 5503 5524 "debugcom.ml" 204 5503 5528
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 204 5503 5523 "debugcom.ml" 204 5503 5528
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 204 5503 5523 "debugcom.ml" 204 5503 5535
+type(
+  out_channel
+)
+"debugcom.ml" 204 5503 5536 "debugcom.ml" 204 5503 5539
+type(
+  char
+)
+"debugcom.ml" 204 5503 5511 "debugcom.ml" 204 5503 5539
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 205 5541 5549 "debugcom.ml" 205 5541 5568
+type(
+  out_channel -> string -> unit
+)
+ident(
+  int_ref output_remote_value "debugcom.ml" 192 5254 5258 "debugcom.ml" 192 5254 5277
+)
+"debugcom.ml" 205 5541 5569 "debugcom.ml" 205 5541 5570
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 205 5541 5570 "debugcom.ml" 205 5541 5574
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 205 5541 5569 "debugcom.ml" 205 5541 5574
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 205 5541 5569 "debugcom.ml" 205 5541 5581
+type(
+  out_channel
+)
+"debugcom.ml" 205 5541 5582 "debugcom.ml" 205 5541 5583
+type(
+  string
+)
+ident(
+  int_ref v "debugcom.ml" 203 5485 5498 "debugcom.ml" 203 5485 5499
+)
+"debugcom.ml" 205 5541 5549 "debugcom.ml" 205 5541 5583
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 206 5585 5593 "debugcom.ml" 206 5585 5598
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"debugcom.ml" 206 5585 5599 "debugcom.ml" 206 5585 5600
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 206 5585 5600 "debugcom.ml" 206 5585 5604
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 206 5585 5599 "debugcom.ml" 206 5585 5604
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 206 5585 5599 "debugcom.ml" 206 5585 5611
+type(
+  out_channel
+)
+"debugcom.ml" 206 5585 5593 "debugcom.ml" 206 5585 5611
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 208 5625 5635 "debugcom.ml" 208 5625 5646
+type(
+  in_channel -> 'a
+)
+ident(
+  ext_ref Pervasives.input_value
+)
+"debugcom.ml" 208 5625 5647 "debugcom.ml" 208 5625 5648
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 208 5625 5648 "debugcom.ml" 208 5625 5652
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 208 5625 5647 "debugcom.ml" 208 5625 5652
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 208 5625 5647 "debugcom.ml" 208 5625 5658
+type(
+  in_channel
+)
+"debugcom.ml" 208 5625 5635 "debugcom.ml" 208 5625 5658
+call(
+  stack
+)
+type(
+  'a
+)
+"debugcom.ml" 209 5659 5672 "debugcom.ml" 209 5659 5683
+type(
+  exn
+)
+"debugcom.ml" 209 5659 5694 "debugcom.ml" 209 5659 5695
+type(
+  string
+)
+"debugcom.ml" 209 5659 5686 "debugcom.ml" 209 5659 5695
+type(
+  exn
+)
+"debugcom.ml" 209 5659 5672 "debugcom.ml" 209 5659 5695
+type(
+  exn
+)
+"debugcom.ml" 210 5699 5709 "debugcom.ml" 210 5699 5714
+type(
+  exn -> 'a
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"debugcom.ml" 210 5699 5715 "debugcom.ml" 210 5699 5732
+type(
+  exn
+)
+"debugcom.ml" 210 5699 5709 "debugcom.ml" 210 5699 5732
+type(
+  'a
+)
+"debugcom.ml" 207 5613 5621 "debugcom.ml" 210 5699 5732
+type(
+  'a
+)
+"debugcom.ml" 206 5585 5593 "debugcom.ml" 210 5699 5732
+type(
+  'a
+)
+"debugcom.ml" 205 5541 5549 "debugcom.ml" 210 5699 5732
+type(
+  'a
+)
+"debugcom.ml" 204 5503 5511 "debugcom.ml" 210 5699 5732
+type(
+  'a
+)
+"debugcom.ml" 201 5431 5445 "debugcom.ml" 210 5699 5732
+type(
+  t -> 'a
+)
+"debugcom.ml" 212 5734 5742 "debugcom.ml" 212 5734 5750
+type(
+  t -> bool
+)
+ident(
+  def is_block "debugcom.ml" 216 5879 5883 "debugcom.ml" 294 8288 8293
+)
+"debugcom.ml" 213 5762 5774 "debugcom.ml" 213 5762 5777
+type(
+  Obj.t
+)
+ident(
+  def obj "debugcom.ml" 213 5762 5781 "debugcom.ml" 213 5762 5797
+)
+"debugcom.ml" 213 5762 5768 "debugcom.ml" 213 5762 5777
+type(
+  t
+)
+"debugcom.ml" 213 5762 5781 "debugcom.ml" 213 5762 5793
+type(
+  Obj.t -> bool
+)
+ident(
+  ext_ref Obj.is_block
+)
+"debugcom.ml" 213 5762 5794 "debugcom.ml" 213 5762 5797
+type(
+  Obj.t
+)
+ident(
+  int_ref obj "debugcom.ml" 213 5762 5774 "debugcom.ml" 213 5762 5777
+)
+"debugcom.ml" 213 5762 5781 "debugcom.ml" 213 5762 5797
+type(
+  bool
+)
+"debugcom.ml" 214 5798 5811 "debugcom.ml" 214 5798 5812
+type(
+  string
+)
+ident(
+  def v "debugcom.ml" 214 5798 5816 "debugcom.ml" 214 5798 5877
+)
+"debugcom.ml" 214 5798 5804 "debugcom.ml" 214 5798 5812
+type(
+  t
+)
+"debugcom.ml" 214 5798 5816 "debugcom.ml" 214 5798 5828
+type(
+  Obj.t -> bool
+)
+ident(
+  ext_ref Obj.is_block
+)
+"debugcom.ml" 214 5798 5830 "debugcom.ml" 214 5798 5846
+type(
+  Obj.t array -> int -> Obj.t
+)
+ident(
+  ext_ref Array.unsafe_get
+)
+"debugcom.ml" 214 5798 5848 "debugcom.ml" 214 5798 5857
+type(
+  string -> Obj.t array
+)
+ident(
+  ext_ref Obj.magic
+)
+"debugcom.ml" 214 5798 5858 "debugcom.ml" 214 5798 5859
+type(
+  string
+)
+ident(
+  int_ref v "debugcom.ml" 214 5798 5811 "debugcom.ml" 214 5798 5812
+)
+"debugcom.ml" 214 5798 5848 "debugcom.ml" 214 5798 5859
+type(
+  Obj.t array
+)
+type(
+  Obj.t array
+)
+"debugcom.ml" 214 5798 5875 "debugcom.ml" 214 5798 5876
+type(
+  int
+)
+"debugcom.ml" 214 5798 5829 "debugcom.ml" 214 5798 5877
+type(
+  Obj.t
+)
+"debugcom.ml" 214 5798 5816 "debugcom.ml" 214 5798 5877
+type(
+  bool
+)
+"debugcom.ml" 212 5734 5753 "debugcom.ml" 214 5798 5877
+type(
+  t -> bool
+)
+"debugcom.ml" 216 5879 5887 "debugcom.ml" 216 5879 5890
+type(
+  t -> int
+)
+ident(
+  def tag "debugcom.ml" 225 6140 6144 "debugcom.ml" 294 8288 8293
+)
+"debugcom.ml" 217 5902 5914 "debugcom.ml" 217 5902 5917
+type(
+  Obj.t
+)
+ident(
+  def obj "debugcom.ml" 217 5902 5921 "debugcom.ml" 217 5902 5932
+)
+"debugcom.ml" 217 5902 5908 "debugcom.ml" 217 5902 5917
+type(
+  t
+)
+"debugcom.ml" 217 5902 5921 "debugcom.ml" 217 5902 5928
+type(
+  Obj.t -> int
+)
+ident(
+  ext_ref Obj.tag
+)
+"debugcom.ml" 217 5902 5929 "debugcom.ml" 217 5902 5932
+type(
+  Obj.t
+)
+ident(
+  int_ref obj "debugcom.ml" 217 5902 5914 "debugcom.ml" 217 5902 5917
+)
+"debugcom.ml" 217 5902 5921 "debugcom.ml" 217 5902 5932
+type(
+  int
+)
+"debugcom.ml" 218 5933 5946 "debugcom.ml" 218 5933 5947
+type(
+  string
+)
+ident(
+  def v "debugcom.ml" 219 5951 5959 "debugcom.ml" 223 6114 6138
+)
+"debugcom.ml" 218 5933 5939 "debugcom.ml" 218 5933 5947
+type(
+  t
+)
+"debugcom.ml" 219 5951 5959 "debugcom.ml" 219 5951 5970
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 219 5951 5971 "debugcom.ml" 219 5951 5972
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 219 5951 5972 "debugcom.ml" 219 5951 5976
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 219 5951 5971 "debugcom.ml" 219 5951 5976
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 219 5951 5971 "debugcom.ml" 219 5951 5983
+type(
+  out_channel
+)
+"debugcom.ml" 219 5951 5984 "debugcom.ml" 219 5951 5987
+type(
+  char
+)
+"debugcom.ml" 219 5951 5959 "debugcom.ml" 219 5951 5987
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 220 5989 5997 "debugcom.ml" 220 5989 6016
+type(
+  out_channel -> string -> unit
+)
+ident(
+  int_ref output_remote_value "debugcom.ml" 192 5254 5258 "debugcom.ml" 192 5254 5277
+)
+"debugcom.ml" 220 5989 6017 "debugcom.ml" 220 5989 6018
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 220 5989 6018 "debugcom.ml" 220 5989 6022
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 220 5989 6017 "debugcom.ml" 220 5989 6022
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 220 5989 6017 "debugcom.ml" 220 5989 6029
+type(
+  out_channel
+)
+"debugcom.ml" 220 5989 6030 "debugcom.ml" 220 5989 6031
+type(
+  string
+)
+ident(
+  int_ref v "debugcom.ml" 218 5933 5946 "debugcom.ml" 218 5933 5947
+)
+"debugcom.ml" 220 5989 5997 "debugcom.ml" 220 5989 6031
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 221 6033 6041 "debugcom.ml" 221 6033 6046
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"debugcom.ml" 221 6033 6047 "debugcom.ml" 221 6033 6048
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 221 6033 6048 "debugcom.ml" 221 6033 6052
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 221 6033 6047 "debugcom.ml" 221 6033 6052
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 221 6033 6047 "debugcom.ml" 221 6033 6059
+type(
+  out_channel
+)
+"debugcom.ml" 221 6033 6041 "debugcom.ml" 221 6033 6059
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 222 6061 6073 "debugcom.ml" 222 6061 6079
+type(
+  int
+)
+ident(
+  def header "debugcom.ml" 223 6114 6122 "debugcom.ml" 223 6114 6138
+)
+"debugcom.ml" 222 6061 6082 "debugcom.ml" 222 6061 6098
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"debugcom.ml" 222 6061 6099 "debugcom.ml" 222 6061 6100
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 222 6061 6100 "debugcom.ml" 222 6061 6104
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 222 6061 6099 "debugcom.ml" 222 6061 6104
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 222 6061 6099 "debugcom.ml" 222 6061 6110
+type(
+  in_channel
+)
+"debugcom.ml" 222 6061 6082 "debugcom.ml" 222 6061 6110
+call(
+  stack
+)
+type(
+  int
+)
+"debugcom.ml" 223 6114 6122 "debugcom.ml" 223 6114 6128
+type(
+  int
+)
+ident(
+  int_ref header "debugcom.ml" 222 6061 6073 "debugcom.ml" 222 6061 6079
+)
+"debugcom.ml" 223 6114 6129 "debugcom.ml" 223 6114 6133
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( land )
+)
+"debugcom.ml" 223 6114 6134 "debugcom.ml" 223 6114 6138
+type(
+  int
+)
+"debugcom.ml" 223 6114 6122 "debugcom.ml" 223 6114 6138
+type(
+  int
+)
+"debugcom.ml" 222 6061 6069 "debugcom.ml" 223 6114 6138
+type(
+  int
+)
+"debugcom.ml" 221 6033 6041 "debugcom.ml" 223 6114 6138
+type(
+  int
+)
+"debugcom.ml" 220 5989 5997 "debugcom.ml" 223 6114 6138
+type(
+  int
+)
+"debugcom.ml" 219 5951 5959 "debugcom.ml" 223 6114 6138
+type(
+  int
+)
+"debugcom.ml" 216 5879 5893 "debugcom.ml" 223 6114 6138
+type(
+  t -> int
+)
+"debugcom.ml" 225 6140 6148 "debugcom.ml" 225 6140 6152
+type(
+  t -> int
+)
+ident(
+  def size "debugcom.ml" 236 6505 6509 "debugcom.ml" 294 8288 8293
+)
+"debugcom.ml" 226 6164 6176 "debugcom.ml" 226 6164 6179
+type(
+  Obj.t
+)
+ident(
+  def obj "debugcom.ml" 226 6164 6183 "debugcom.ml" 226 6164 6195
+)
+"debugcom.ml" 226 6164 6170 "debugcom.ml" 226 6164 6179
+type(
+  t
+)
+"debugcom.ml" 226 6164 6183 "debugcom.ml" 226 6164 6191
+type(
+  Obj.t -> int
+)
+ident(
+  ext_ref Obj.size
+)
+"debugcom.ml" 226 6164 6192 "debugcom.ml" 226 6164 6195
+type(
+  Obj.t
+)
+ident(
+  int_ref obj "debugcom.ml" 226 6164 6176 "debugcom.ml" 226 6164 6179
+)
+"debugcom.ml" 226 6164 6183 "debugcom.ml" 226 6164 6195
+type(
+  int
+)
+"debugcom.ml" 227 6196 6209 "debugcom.ml" 227 6196 6210
+type(
+  string
+)
+ident(
+  def v "debugcom.ml" 228 6214 6222 "debugcom.ml" 234 6477 6503
+)
+"debugcom.ml" 227 6196 6202 "debugcom.ml" 227 6196 6210
+type(
+  t
+)
+"debugcom.ml" 228 6214 6222 "debugcom.ml" 228 6214 6233
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 228 6214 6234 "debugcom.ml" 228 6214 6235
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 228 6214 6235 "debugcom.ml" 228 6214 6239
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 228 6214 6234 "debugcom.ml" 228 6214 6239
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 228 6214 6234 "debugcom.ml" 228 6214 6246
+type(
+  out_channel
+)
+"debugcom.ml" 228 6214 6247 "debugcom.ml" 228 6214 6250
+type(
+  char
+)
+"debugcom.ml" 228 6214 6222 "debugcom.ml" 228 6214 6250
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 229 6252 6260 "debugcom.ml" 229 6252 6279
+type(
+  out_channel -> string -> unit
+)
+ident(
+  int_ref output_remote_value "debugcom.ml" 192 5254 5258 "debugcom.ml" 192 5254 5277
+)
+"debugcom.ml" 229 6252 6280 "debugcom.ml" 229 6252 6281
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 229 6252 6281 "debugcom.ml" 229 6252 6285
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 229 6252 6280 "debugcom.ml" 229 6252 6285
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 229 6252 6280 "debugcom.ml" 229 6252 6292
+type(
+  out_channel
+)
+"debugcom.ml" 229 6252 6293 "debugcom.ml" 229 6252 6294
+type(
+  string
+)
+ident(
+  int_ref v "debugcom.ml" 227 6196 6209 "debugcom.ml" 227 6196 6210
+)
+"debugcom.ml" 229 6252 6260 "debugcom.ml" 229 6252 6294
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 230 6296 6304 "debugcom.ml" 230 6296 6309
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"debugcom.ml" 230 6296 6310 "debugcom.ml" 230 6296 6311
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 230 6296 6311 "debugcom.ml" 230 6296 6315
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 230 6296 6310 "debugcom.ml" 230 6296 6315
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 230 6296 6310 "debugcom.ml" 230 6296 6322
+type(
+  out_channel
+)
+"debugcom.ml" 230 6296 6304 "debugcom.ml" 230 6296 6322
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 231 6324 6336 "debugcom.ml" 231 6324 6342
+type(
+  int
+)
+ident(
+  def header "debugcom.ml" 232 6377 6385 "debugcom.ml" 234 6477 6503
+)
+"debugcom.ml" 231 6324 6345 "debugcom.ml" 231 6324 6361
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"debugcom.ml" 231 6324 6362 "debugcom.ml" 231 6324 6363
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 231 6324 6363 "debugcom.ml" 231 6324 6367
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 231 6324 6362 "debugcom.ml" 231 6324 6367
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 231 6324 6362 "debugcom.ml" 231 6324 6373
+type(
+  in_channel
+)
+"debugcom.ml" 231 6324 6345 "debugcom.ml" 231 6324 6373
+call(
+  stack
+)
+type(
+  int
+)
+"debugcom.ml" 232 6377 6388 "debugcom.ml" 232 6377 6394
+type(
+  int
+)
+ident(
+  int_ref header "debugcom.ml" 231 6324 6336 "debugcom.ml" 231 6324 6342
+)
+"debugcom.ml" 232 6377 6395 "debugcom.ml" 232 6377 6399
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( land )
+)
+"debugcom.ml" 232 6377 6400 "debugcom.ml" 232 6377 6404
+type(
+  int
+)
+"debugcom.ml" 232 6377 6388 "debugcom.ml" 232 6377 6404
+type(
+  int
+)
+"debugcom.ml" 232 6377 6405 "debugcom.ml" 232 6377 6406
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"debugcom.ml" 232 6377 6407 "debugcom.ml" 232 6377 6427
+type(
+  int
+)
+ident(
+  ext_ref Obj.double_array_tag
+)
+"debugcom.ml" 232 6377 6388 "debugcom.ml" 232 6377 6427
+type(
+  bool
+)
+"debugcom.ml" 232 6377 6428 "debugcom.ml" 232 6377 6430
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"debugcom.ml" 232 6377 6431 "debugcom.ml" 232 6377 6444
+type(
+  int
+)
+ident(
+  ext_ref Sys.word_size
+)
+"debugcom.ml" 232 6377 6445 "debugcom.ml" 232 6377 6446
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"debugcom.ml" 232 6377 6447 "debugcom.ml" 232 6377 6449
+type(
+  int
+)
+"debugcom.ml" 232 6377 6431 "debugcom.ml" 232 6377 6449
+type(
+  bool
+)
+"debugcom.ml" 232 6377 6388 "debugcom.ml" 232 6377 6449
+type(
+  bool
+)
+"debugcom.ml" 233 6450 6463 "debugcom.ml" 233 6450 6469
+type(
+  int
+)
+ident(
+  int_ref header "debugcom.ml" 231 6324 6336 "debugcom.ml" 231 6324 6342
+)
+"debugcom.ml" 233 6450 6470 "debugcom.ml" 233 6450 6473
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsr )
+)
+"debugcom.ml" 233 6450 6474 "debugcom.ml" 233 6450 6476
+type(
+  int
+)
+"debugcom.ml" 233 6450 6463 "debugcom.ml" 233 6450 6476
+type(
+  int
+)
+"debugcom.ml" 234 6477 6490 "debugcom.ml" 234 6477 6496
+type(
+  int
+)
+ident(
+  int_ref header "debugcom.ml" 231 6324 6336 "debugcom.ml" 231 6324 6342
+)
+"debugcom.ml" 234 6477 6497 "debugcom.ml" 234 6477 6500
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsr )
+)
+"debugcom.ml" 234 6477 6501 "debugcom.ml" 234 6477 6503
+type(
+  int
+)
+"debugcom.ml" 234 6477 6490 "debugcom.ml" 234 6477 6503
+type(
+  int
+)
+"debugcom.ml" 232 6377 6385 "debugcom.ml" 234 6477 6503
+type(
+  int
+)
+"debugcom.ml" 231 6324 6332 "debugcom.ml" 234 6477 6503
+type(
+  int
+)
+"debugcom.ml" 230 6296 6304 "debugcom.ml" 234 6477 6503
+type(
+  int
+)
+"debugcom.ml" 229 6252 6260 "debugcom.ml" 234 6477 6503
+type(
+  int
+)
+"debugcom.ml" 228 6214 6222 "debugcom.ml" 234 6477 6503
+type(
+  int
+)
+"debugcom.ml" 225 6140 6155 "debugcom.ml" 234 6477 6503
+type(
+  t -> int
+)
+"debugcom.ml" 236 6505 6513 "debugcom.ml" 236 6505 6518
+type(
+  t -> int -> t
+)
+ident(
+  def field "debugcom.ml" 253 7135 7139 "debugcom.ml" 294 8288 8293
+)
+"debugcom.ml" 236 6505 6519 "debugcom.ml" 236 6505 6520
+type(
+  t
+)
+ident(
+  def v "debugcom.ml" 236 6505 6521 "debugcom.ml" 251 7120 7133
+)
+"debugcom.ml" 236 6505 6521 "debugcom.ml" 236 6505 6522
+type(
+  int
+)
+ident(
+  def n "debugcom.ml" 237 6525 6531 "debugcom.ml" 251 7120 7133
+)
+"debugcom.ml" 237 6525 6537 "debugcom.ml" 237 6525 6538
+type(
+  t
+)
+ident(
+  int_ref v "debugcom.ml" 236 6505 6519 "debugcom.ml" 236 6505 6520
+)
+"debugcom.ml" 238 6544 6558 "debugcom.ml" 238 6544 6561
+type(
+  Obj.t
+)
+ident(
+  def obj "debugcom.ml" 238 6544 6565 "debugcom.ml" 238 6544 6587
+)
+"debugcom.ml" 238 6544 6552 "debugcom.ml" 238 6544 6561
+type(
+  t
+)
+"debugcom.ml" 238 6544 6571 "debugcom.ml" 238 6544 6580
+type(
+  Obj.t -> int -> Obj.t
+)
+ident(
+  ext_ref Obj.field
+)
+"debugcom.ml" 238 6544 6581 "debugcom.ml" 238 6544 6584
+type(
+  Obj.t
+)
+ident(
+  int_ref obj "debugcom.ml" 238 6544 6558 "debugcom.ml" 238 6544 6561
+)
+"debugcom.ml" 238 6544 6585 "debugcom.ml" 238 6544 6586
+type(
+  int
+)
+ident(
+  int_ref n "debugcom.ml" 236 6505 6521 "debugcom.ml" 236 6505 6522
+)
+"debugcom.ml" 238 6544 6570 "debugcom.ml" 238 6544 6587
+type(
+  Obj.t
+)
+"debugcom.ml" 238 6544 6565 "debugcom.ml" 238 6544 6587
+type(
+  t
+)
+"debugcom.ml" 239 6588 6603 "debugcom.ml" 239 6588 6604
+type(
+  string
+)
+ident(
+  def v "debugcom.ml" 240 6608 6618 "debugcom.ml" 251 7120 7133
+)
+"debugcom.ml" 239 6588 6596 "debugcom.ml" 239 6588 6604
+type(
+  t
+)
+"debugcom.ml" 240 6608 6618 "debugcom.ml" 240 6608 6629
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 240 6608 6630 "debugcom.ml" 240 6608 6631
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 240 6608 6631 "debugcom.ml" 240 6608 6635
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 240 6608 6630 "debugcom.ml" 240 6608 6635
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 240 6608 6630 "debugcom.ml" 240 6608 6642
+type(
+  out_channel
+)
+"debugcom.ml" 240 6608 6643 "debugcom.ml" 240 6608 6646
+type(
+  char
+)
+"debugcom.ml" 240 6608 6618 "debugcom.ml" 240 6608 6646
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 241 6648 6658 "debugcom.ml" 241 6648 6677
+type(
+  out_channel -> string -> unit
+)
+ident(
+  int_ref output_remote_value "debugcom.ml" 192 5254 5258 "debugcom.ml" 192 5254 5277
+)
+"debugcom.ml" 241 6648 6678 "debugcom.ml" 241 6648 6679
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 241 6648 6679 "debugcom.ml" 241 6648 6683
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 241 6648 6678 "debugcom.ml" 241 6648 6683
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 241 6648 6678 "debugcom.ml" 241 6648 6690
+type(
+  out_channel
+)
+"debugcom.ml" 241 6648 6691 "debugcom.ml" 241 6648 6692
+type(
+  string
+)
+ident(
+  int_ref v "debugcom.ml" 239 6588 6603 "debugcom.ml" 239 6588 6604
+)
+"debugcom.ml" 241 6648 6658 "debugcom.ml" 241 6648 6692
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 242 6694 6704 "debugcom.ml" 242 6694 6721
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output_binary_int
+)
+"debugcom.ml" 242 6694 6722 "debugcom.ml" 242 6694 6723
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 242 6694 6723 "debugcom.ml" 242 6694 6727
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 242 6694 6722 "debugcom.ml" 242 6694 6727
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 242 6694 6722 "debugcom.ml" 242 6694 6734
+type(
+  out_channel
+)
+"debugcom.ml" 242 6694 6735 "debugcom.ml" 242 6694 6736
+type(
+  int
+)
+ident(
+  int_ref n "debugcom.ml" 236 6505 6521 "debugcom.ml" 236 6505 6522
+)
+"debugcom.ml" 242 6694 6704 "debugcom.ml" 242 6694 6736
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 243 6738 6748 "debugcom.ml" 243 6738 6753
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"debugcom.ml" 243 6738 6754 "debugcom.ml" 243 6738 6755
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 243 6738 6755 "debugcom.ml" 243 6738 6759
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 243 6738 6754 "debugcom.ml" 243 6738 6759
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 243 6738 6754 "debugcom.ml" 243 6738 6766
+type(
+  out_channel
+)
+"debugcom.ml" 243 6738 6748 "debugcom.ml" 243 6738 6766
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 244 6768 6781 "debugcom.ml" 244 6768 6791
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_byte
+)
+"debugcom.ml" 244 6768 6792 "debugcom.ml" 244 6768 6793
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 244 6768 6793 "debugcom.ml" 244 6768 6797
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 244 6768 6792 "debugcom.ml" 244 6768 6797
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 244 6768 6792 "debugcom.ml" 244 6768 6803
+type(
+  in_channel
+)
+"debugcom.ml" 244 6768 6781 "debugcom.ml" 244 6768 6803
+call(
+  stack
+)
+type(
+  int
+)
+"debugcom.ml" 244 6768 6804 "debugcom.ml" 244 6768 6805
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"debugcom.ml" 244 6768 6806 "debugcom.ml" 244 6768 6807
+type(
+  int
+)
+"debugcom.ml" 244 6768 6781 "debugcom.ml" 244 6768 6807
+type(
+  bool
+)
+"debugcom.ml" 245 6813 6832 "debugcom.ml" 245 6813 6850
+type(
+  in_channel -> string
+)
+ident(
+  int_ref input_remote_value "debugcom.ml" 189 5189 5193 "debugcom.ml" 189 5189 5211
+)
+"debugcom.ml" 245 6813 6851 "debugcom.ml" 245 6813 6852
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 245 6813 6852 "debugcom.ml" 245 6813 6856
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 245 6813 6851 "debugcom.ml" 245 6813 6856
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 245 6813 6851 "debugcom.ml" 245 6813 6862
+type(
+  in_channel
+)
+"debugcom.ml" 245 6813 6831 "debugcom.ml" 245 6813 6863
+call(
+  stack
+)
+type(
+  string
+)
+"debugcom.ml" 245 6813 6825 "debugcom.ml" 245 6813 6863
+type(
+  t
+)
+"debugcom.ml" 247 6885 6901 "debugcom.ml" 247 6885 6904
+type(
+  string
+)
+ident(
+  def buf "debugcom.ml" 248 6944 6956 "debugcom.ml" 250 7083 7119
+)
+"debugcom.ml" 247 6885 6907 "debugcom.ml" 247 6885 6926
+type(
+  in_channel -> int -> string
+)
+ident(
+  ext_ref Pervasives.really_input_string
+)
+"debugcom.ml" 247 6885 6927 "debugcom.ml" 247 6885 6928
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 247 6885 6928 "debugcom.ml" 247 6885 6932
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 247 6885 6927 "debugcom.ml" 247 6885 6932
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 247 6885 6927 "debugcom.ml" 247 6885 6938
+type(
+  in_channel
+)
+"debugcom.ml" 247 6885 6939 "debugcom.ml" 247 6885 6940
+type(
+  int
+)
+"debugcom.ml" 247 6885 6907 "debugcom.ml" 247 6885 6940
+call(
+  stack
+)
+type(
+  string
+)
+"debugcom.ml" 248 6944 6960 "debugcom.ml" 248 6944 6968
+type(
+  float
+)
+ident(
+  def floatbuf "debugcom.ml" 249 7020 7032 "debugcom.ml" 250 7083 7119
+)
+"debugcom.ml" 248 6944 6971 "debugcom.ml" 248 6944 6976
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float
+)
+"debugcom.ml" 248 6944 6977 "debugcom.ml" 248 6944 6978
+type(
+  int
+)
+ident(
+  int_ref n "debugcom.ml" 236 6505 6521 "debugcom.ml" 236 6505 6522
+)
+"debugcom.ml" 248 6944 6971 "debugcom.ml" 248 6944 6978
+type(
+  float
+)
+"debugcom.ml" 249 7020 7032 "debugcom.ml" 249 7020 7050
+type(
+  string -> int -> bytes -> int -> int -> unit
+)
+ident(
+  ext_ref String.unsafe_blit
+)
+"debugcom.ml" 249 7020 7051 "debugcom.ml" 249 7020 7054
+type(
+  string
+)
+ident(
+  int_ref buf "debugcom.ml" 247 6885 6901 "debugcom.ml" 247 6885 6904
+)
+"debugcom.ml" 249 7020 7055 "debugcom.ml" 249 7020 7056
+type(
+  int
+)
+"debugcom.ml" 249 7020 7058 "debugcom.ml" 249 7020 7067
+type(
+  float -> bytes
+)
+ident(
+  ext_ref Obj.magic
+)
+"debugcom.ml" 249 7020 7068 "debugcom.ml" 249 7020 7076
+type(
+  float
+)
+ident(
+  int_ref floatbuf "debugcom.ml" 248 6944 6960 "debugcom.ml" 248 6944 6968
+)
+"debugcom.ml" 249 7020 7057 "debugcom.ml" 249 7020 7077
+type(
+  bytes
+)
+"debugcom.ml" 249 7020 7078 "debugcom.ml" 249 7020 7079
+type(
+  int
+)
+"debugcom.ml" 249 7020 7080 "debugcom.ml" 249 7020 7081
+type(
+  int
+)
+"debugcom.ml" 249 7020 7032 "debugcom.ml" 249 7020 7081
+type(
+  unit
+)
+"debugcom.ml" 250 7083 7101 "debugcom.ml" 250 7083 7109
+type(
+  float -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"debugcom.ml" 250 7083 7110 "debugcom.ml" 250 7083 7118
+type(
+  float
+)
+ident(
+  int_ref floatbuf "debugcom.ml" 248 6944 6960 "debugcom.ml" 248 6944 6968
+)
+"debugcom.ml" 250 7083 7100 "debugcom.ml" 250 7083 7119
+type(
+  Obj.t
+)
+"debugcom.ml" 250 7083 7095 "debugcom.ml" 250 7083 7119
+type(
+  t
+)
+"debugcom.ml" 249 7020 7032 "debugcom.ml" 250 7083 7119
+type(
+  t
+)
+"debugcom.ml" 248 6944 6956 "debugcom.ml" 250 7083 7119
+type(
+  t
+)
+"debugcom.ml" 246 6864 6879 "debugcom.ml" 251 7120 7133
+type(
+  t
+)
+"debugcom.ml" 244 6768 6778 "debugcom.ml" 251 7120 7133
+type(
+  t
+)
+"debugcom.ml" 243 6738 6748 "debugcom.ml" 251 7120 7133
+type(
+  t
+)
+"debugcom.ml" 242 6694 6704 "debugcom.ml" 251 7120 7133
+type(
+  t
+)
+"debugcom.ml" 241 6648 6658 "debugcom.ml" 251 7120 7133
+type(
+  t
+)
+"debugcom.ml" 240 6608 6618 "debugcom.ml" 251 7120 7133
+type(
+  t
+)
+"debugcom.ml" 237 6525 6531 "debugcom.ml" 251 7120 7133
+type(
+  t
+)
+"debugcom.ml" 253 7135 7143 "debugcom.ml" 253 7135 7149
+type(
+  'b -> t
+)
+ident(
+  def of_int "debugcom.ml" 256 7179 7183 "debugcom.ml" 294 8288 8293
+)
+"debugcom.ml" 253 7135 7150 "debugcom.ml" 253 7135 7151
+type(
+  'b
+)
+ident(
+  def n "debugcom.ml" 254 7154 7160 "debugcom.ml" 254 7154 7177
+)
+"debugcom.ml" 254 7154 7166 "debugcom.ml" 254 7154 7174
+type(
+  'b -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"debugcom.ml" 254 7154 7175 "debugcom.ml" 254 7154 7176
+type(
+  'b
+)
+ident(
+  int_ref n "debugcom.ml" 253 7135 7150 "debugcom.ml" 253 7135 7151
+)
+"debugcom.ml" 254 7154 7165 "debugcom.ml" 254 7154 7177
+type(
+  Obj.t
+)
+"debugcom.ml" 254 7154 7160 "debugcom.ml" 254 7154 7177
+type(
+  t
+)
+"debugcom.ml" 256 7179 7187 "debugcom.ml" 256 7179 7192
+type(
+  int -> t
+)
+ident(
+  def local "debugcom.ml" 262 7349 7353 "debugcom.ml" 294 8288 8293
+)
+"debugcom.ml" 256 7179 7193 "debugcom.ml" 256 7179 7196
+type(
+  int
+)
+ident(
+  def pos "debugcom.ml" 257 7199 7205 "debugcom.ml" 260 7303 7347
+)
+"debugcom.ml" 257 7199 7205 "debugcom.ml" 257 7199 7216
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 257 7199 7217 "debugcom.ml" 257 7199 7218
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 257 7199 7218 "debugcom.ml" 257 7199 7222
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 257 7199 7217 "debugcom.ml" 257 7199 7222
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 257 7199 7217 "debugcom.ml" 257 7199 7229
+type(
+  out_channel
+)
+"debugcom.ml" 257 7199 7230 "debugcom.ml" 257 7199 7233
+type(
+  char
+)
+"debugcom.ml" 257 7199 7205 "debugcom.ml" 257 7199 7233
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 258 7235 7241 "debugcom.ml" 258 7235 7258
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output_binary_int
+)
+"debugcom.ml" 258 7235 7259 "debugcom.ml" 258 7235 7260
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 258 7235 7260 "debugcom.ml" 258 7235 7264
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 258 7235 7259 "debugcom.ml" 258 7235 7264
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 258 7235 7259 "debugcom.ml" 258 7235 7271
+type(
+  out_channel
+)
+"debugcom.ml" 258 7235 7272 "debugcom.ml" 258 7235 7275
+type(
+  int
+)
+ident(
+  int_ref pos "debugcom.ml" 256 7179 7193 "debugcom.ml" 256 7179 7196
+)
+"debugcom.ml" 258 7235 7241 "debugcom.ml" 258 7235 7275
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 259 7277 7283 "debugcom.ml" 259 7277 7288
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"debugcom.ml" 259 7277 7289 "debugcom.ml" 259 7277 7290
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 259 7277 7290 "debugcom.ml" 259 7277 7294
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 259 7277 7289 "debugcom.ml" 259 7277 7294
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 259 7277 7289 "debugcom.ml" 259 7277 7301
+type(
+  out_channel
+)
+"debugcom.ml" 259 7277 7283 "debugcom.ml" 259 7277 7301
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 260 7303 7316 "debugcom.ml" 260 7303 7334
+type(
+  in_channel -> string
+)
+ident(
+  int_ref input_remote_value "debugcom.ml" 189 5189 5193 "debugcom.ml" 189 5189 5211
+)
+"debugcom.ml" 260 7303 7335 "debugcom.ml" 260 7303 7336
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 260 7303 7336 "debugcom.ml" 260 7303 7340
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 260 7303 7335 "debugcom.ml" 260 7303 7340
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 260 7303 7335 "debugcom.ml" 260 7303 7346
+type(
+  in_channel
+)
+"debugcom.ml" 260 7303 7315 "debugcom.ml" 260 7303 7347
+call(
+  stack
+)
+type(
+  string
+)
+"debugcom.ml" 260 7303 7309 "debugcom.ml" 260 7303 7347
+type(
+  t
+)
+"debugcom.ml" 259 7277 7283 "debugcom.ml" 260 7303 7347
+type(
+  t
+)
+"debugcom.ml" 258 7235 7241 "debugcom.ml" 260 7303 7347
+type(
+  t
+)
+"debugcom.ml" 257 7199 7205 "debugcom.ml" 260 7303 7347
+type(
+  t
+)
+"debugcom.ml" 262 7349 7357 "debugcom.ml" 262 7349 7373
+type(
+  int -> t
+)
+ident(
+  def from_environment "debugcom.ml" 268 7530 7534 "debugcom.ml" 294 8288 8293
+)
+"debugcom.ml" 262 7349 7374 "debugcom.ml" 262 7349 7377
+type(
+  int
+)
+ident(
+  def pos "debugcom.ml" 263 7380 7386 "debugcom.ml" 266 7484 7528
+)
+"debugcom.ml" 263 7380 7386 "debugcom.ml" 263 7380 7397
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 263 7380 7398 "debugcom.ml" 263 7380 7399
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 263 7380 7399 "debugcom.ml" 263 7380 7403
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 263 7380 7398 "debugcom.ml" 263 7380 7403
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 263 7380 7398 "debugcom.ml" 263 7380 7410
+type(
+  out_channel
+)
+"debugcom.ml" 263 7380 7411 "debugcom.ml" 263 7380 7414
+type(
+  char
+)
+"debugcom.ml" 263 7380 7386 "debugcom.ml" 263 7380 7414
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 264 7416 7422 "debugcom.ml" 264 7416 7439
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output_binary_int
+)
+"debugcom.ml" 264 7416 7440 "debugcom.ml" 264 7416 7441
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 264 7416 7441 "debugcom.ml" 264 7416 7445
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 264 7416 7440 "debugcom.ml" 264 7416 7445
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 264 7416 7440 "debugcom.ml" 264 7416 7452
+type(
+  out_channel
+)
+"debugcom.ml" 264 7416 7453 "debugcom.ml" 264 7416 7456
+type(
+  int
+)
+ident(
+  int_ref pos "debugcom.ml" 262 7349 7374 "debugcom.ml" 262 7349 7377
+)
+"debugcom.ml" 264 7416 7422 "debugcom.ml" 264 7416 7456
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 265 7458 7464 "debugcom.ml" 265 7458 7469
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"debugcom.ml" 265 7458 7470 "debugcom.ml" 265 7458 7471
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 265 7458 7471 "debugcom.ml" 265 7458 7475
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 265 7458 7470 "debugcom.ml" 265 7458 7475
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 265 7458 7470 "debugcom.ml" 265 7458 7482
+type(
+  out_channel
+)
+"debugcom.ml" 265 7458 7464 "debugcom.ml" 265 7458 7482
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 266 7484 7497 "debugcom.ml" 266 7484 7515
+type(
+  in_channel -> string
+)
+ident(
+  int_ref input_remote_value "debugcom.ml" 189 5189 5193 "debugcom.ml" 189 5189 5211
+)
+"debugcom.ml" 266 7484 7516 "debugcom.ml" 266 7484 7517
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 266 7484 7517 "debugcom.ml" 266 7484 7521
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 266 7484 7516 "debugcom.ml" 266 7484 7521
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 266 7484 7516 "debugcom.ml" 266 7484 7527
+type(
+  in_channel
+)
+"debugcom.ml" 266 7484 7496 "debugcom.ml" 266 7484 7528
+call(
+  stack
+)
+type(
+  string
+)
+"debugcom.ml" 266 7484 7490 "debugcom.ml" 266 7484 7528
+type(
+  t
+)
+"debugcom.ml" 265 7458 7464 "debugcom.ml" 266 7484 7528
+type(
+  t
+)
+"debugcom.ml" 264 7416 7422 "debugcom.ml" 266 7484 7528
+type(
+  t
+)
+"debugcom.ml" 263 7380 7386 "debugcom.ml" 266 7484 7528
+type(
+  t
+)
+"debugcom.ml" 268 7530 7538 "debugcom.ml" 268 7530 7544
+type(
+  int -> t
+)
+ident(
+  def global "debugcom.ml" 274 7701 7705 "debugcom.ml" 294 8288 8293
+)
+"debugcom.ml" 268 7530 7545 "debugcom.ml" 268 7530 7548
+type(
+  int
+)
+ident(
+  def pos "debugcom.ml" 269 7551 7557 "debugcom.ml" 272 7655 7699
+)
+"debugcom.ml" 269 7551 7557 "debugcom.ml" 269 7551 7568
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 269 7551 7569 "debugcom.ml" 269 7551 7570
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 269 7551 7570 "debugcom.ml" 269 7551 7574
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 269 7551 7569 "debugcom.ml" 269 7551 7574
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 269 7551 7569 "debugcom.ml" 269 7551 7581
+type(
+  out_channel
+)
+"debugcom.ml" 269 7551 7582 "debugcom.ml" 269 7551 7585
+type(
+  char
+)
+"debugcom.ml" 269 7551 7557 "debugcom.ml" 269 7551 7585
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 270 7587 7593 "debugcom.ml" 270 7587 7610
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.output_binary_int
+)
+"debugcom.ml" 270 7587 7611 "debugcom.ml" 270 7587 7612
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 270 7587 7612 "debugcom.ml" 270 7587 7616
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 270 7587 7611 "debugcom.ml" 270 7587 7616
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 270 7587 7611 "debugcom.ml" 270 7587 7623
+type(
+  out_channel
+)
+"debugcom.ml" 270 7587 7624 "debugcom.ml" 270 7587 7627
+type(
+  int
+)
+ident(
+  int_ref pos "debugcom.ml" 268 7530 7545 "debugcom.ml" 268 7530 7548
+)
+"debugcom.ml" 270 7587 7593 "debugcom.ml" 270 7587 7627
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 271 7629 7635 "debugcom.ml" 271 7629 7640
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"debugcom.ml" 271 7629 7641 "debugcom.ml" 271 7629 7642
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 271 7629 7642 "debugcom.ml" 271 7629 7646
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 271 7629 7641 "debugcom.ml" 271 7629 7646
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 271 7629 7641 "debugcom.ml" 271 7629 7653
+type(
+  out_channel
+)
+"debugcom.ml" 271 7629 7635 "debugcom.ml" 271 7629 7653
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 272 7655 7668 "debugcom.ml" 272 7655 7686
+type(
+  in_channel -> string
+)
+ident(
+  int_ref input_remote_value "debugcom.ml" 189 5189 5193 "debugcom.ml" 189 5189 5211
+)
+"debugcom.ml" 272 7655 7687 "debugcom.ml" 272 7655 7688
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 272 7655 7688 "debugcom.ml" 272 7655 7692
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 272 7655 7687 "debugcom.ml" 272 7655 7692
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 272 7655 7687 "debugcom.ml" 272 7655 7698
+type(
+  in_channel
+)
+"debugcom.ml" 272 7655 7667 "debugcom.ml" 272 7655 7699
+call(
+  stack
+)
+type(
+  string
+)
+"debugcom.ml" 272 7655 7661 "debugcom.ml" 272 7655 7699
+type(
+  t
+)
+"debugcom.ml" 271 7629 7635 "debugcom.ml" 272 7655 7699
+type(
+  t
+)
+"debugcom.ml" 270 7587 7593 "debugcom.ml" 272 7655 7699
+type(
+  t
+)
+"debugcom.ml" 269 7551 7557 "debugcom.ml" 272 7655 7699
+type(
+  t
+)
+"debugcom.ml" 274 7701 7709 "debugcom.ml" 274 7701 7713
+type(
+  unit -> t
+)
+ident(
+  def accu "debugcom.ml" 279 7827 7831 "debugcom.ml" 294 8288 8293
+)
+"debugcom.ml" 274 7701 7714 "debugcom.ml" 274 7701 7716
+type(
+  unit
+)
+"debugcom.ml" 275 7719 7725 "debugcom.ml" 275 7719 7736
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 275 7719 7737 "debugcom.ml" 275 7719 7738
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 275 7719 7738 "debugcom.ml" 275 7719 7742
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 275 7719 7737 "debugcom.ml" 275 7719 7742
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 275 7719 7737 "debugcom.ml" 275 7719 7749
+type(
+  out_channel
+)
+"debugcom.ml" 275 7719 7750 "debugcom.ml" 275 7719 7753
+type(
+  char
+)
+"debugcom.ml" 275 7719 7725 "debugcom.ml" 275 7719 7753
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 276 7755 7761 "debugcom.ml" 276 7755 7766
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"debugcom.ml" 276 7755 7767 "debugcom.ml" 276 7755 7768
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 276 7755 7768 "debugcom.ml" 276 7755 7772
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 276 7755 7767 "debugcom.ml" 276 7755 7772
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 276 7755 7767 "debugcom.ml" 276 7755 7779
+type(
+  out_channel
+)
+"debugcom.ml" 276 7755 7761 "debugcom.ml" 276 7755 7779
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 277 7781 7794 "debugcom.ml" 277 7781 7812
+type(
+  in_channel -> string
+)
+ident(
+  int_ref input_remote_value "debugcom.ml" 189 5189 5193 "debugcom.ml" 189 5189 5211
+)
+"debugcom.ml" 277 7781 7813 "debugcom.ml" 277 7781 7814
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 277 7781 7814 "debugcom.ml" 277 7781 7818
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 277 7781 7813 "debugcom.ml" 277 7781 7818
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 277 7781 7813 "debugcom.ml" 277 7781 7824
+type(
+  in_channel
+)
+"debugcom.ml" 277 7781 7793 "debugcom.ml" 277 7781 7825
+call(
+  stack
+)
+type(
+  string
+)
+"debugcom.ml" 277 7781 7787 "debugcom.ml" 277 7781 7825
+type(
+  t
+)
+"debugcom.ml" 276 7755 7761 "debugcom.ml" 277 7781 7825
+type(
+  t
+)
+"debugcom.ml" 275 7719 7725 "debugcom.ml" 277 7781 7825
+type(
+  t
+)
+"debugcom.ml" 279 7827 7835 "debugcom.ml" 279 7827 7847
+type(
+  t -> int
+)
+ident(
+  def closure_code "debugcom.ml" 287 8057 8061 "debugcom.ml" 294 8288 8293
+)
+"debugcom.ml" 280 7859 7871 "debugcom.ml" 280 7859 7874
+type(
+  Obj.t
+)
+ident(
+  def obj "debugcom.ml" 280 7859 7878 "debugcom.ml" 280 7859 7890
+)
+"debugcom.ml" 280 7859 7865 "debugcom.ml" 280 7859 7874
+type(
+  t
+)
+"debugcom.ml" 280 7859 7885 "debugcom.ml" 280 7859 7890
+type(
+  bool
+)
+"debugcom.ml" 280 7859 7878 "debugcom.ml" 280 7859 7890
+type(
+  int
+)
+"debugcom.ml" 281 7891 7904 "debugcom.ml" 281 7891 7905
+type(
+  string
+)
+ident(
+  def v "debugcom.ml" 282 7909 7917 "debugcom.ml" 285 8019 8055
+)
+"debugcom.ml" 281 7891 7897 "debugcom.ml" 281 7891 7905
+type(
+  t
+)
+"debugcom.ml" 282 7909 7917 "debugcom.ml" 282 7909 7928
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"debugcom.ml" 282 7909 7929 "debugcom.ml" 282 7909 7930
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 282 7909 7930 "debugcom.ml" 282 7909 7934
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 282 7909 7929 "debugcom.ml" 282 7909 7934
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 282 7909 7929 "debugcom.ml" 282 7909 7941
+type(
+  out_channel
+)
+"debugcom.ml" 282 7909 7942 "debugcom.ml" 282 7909 7945
+type(
+  char
+)
+"debugcom.ml" 282 7909 7917 "debugcom.ml" 282 7909 7945
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 283 7947 7955 "debugcom.ml" 283 7947 7974
+type(
+  out_channel -> string -> unit
+)
+ident(
+  int_ref output_remote_value "debugcom.ml" 192 5254 5258 "debugcom.ml" 192 5254 5277
+)
+"debugcom.ml" 283 7947 7975 "debugcom.ml" 283 7947 7976
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 283 7947 7976 "debugcom.ml" 283 7947 7980
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 283 7947 7975 "debugcom.ml" 283 7947 7980
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 283 7947 7975 "debugcom.ml" 283 7947 7987
+type(
+  out_channel
+)
+"debugcom.ml" 283 7947 7988 "debugcom.ml" 283 7947 7989
+type(
+  string
+)
+ident(
+  int_ref v "debugcom.ml" 281 7891 7904 "debugcom.ml" 281 7891 7905
+)
+"debugcom.ml" 283 7947 7955 "debugcom.ml" 283 7947 7989
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 284 7991 7999 "debugcom.ml" 284 7991 8004
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"debugcom.ml" 284 7991 8005 "debugcom.ml" 284 7991 8006
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 284 7991 8006 "debugcom.ml" 284 7991 8010
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 284 7991 8005 "debugcom.ml" 284 7991 8010
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 284 7991 8005 "debugcom.ml" 284 7991 8017
+type(
+  out_channel
+)
+"debugcom.ml" 284 7991 7999 "debugcom.ml" 284 7991 8017
+call(
+  stack
+)
+type(
+  unit
+)
+"debugcom.ml" 285 8019 8027 "debugcom.ml" 285 8019 8043
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"debugcom.ml" 285 8019 8044 "debugcom.ml" 285 8019 8045
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"debugcom.ml" 285 8019 8045 "debugcom.ml" 285 8019 8049
+type(
+  Primitives.io_channel ref
+)
+ident(
+  int_ref conn "debugcom.ml" 21 1017 1021 "debugcom.ml" 21 1017 1025
+)
+"debugcom.ml" 285 8019 8044 "debugcom.ml" 285 8019 8049
+type(
+  Primitives.io_channel
+)
+"debugcom.ml" 285 8019 8044 "debugcom.ml" 285 8019 8055
+type(
+  in_channel
+)
+"debugcom.ml" 285 8019 8027 "debugcom.ml" 285 8019 8055
+call(
+  tail
+)
+type(
+  int
+)
+"debugcom.ml" 284 7991 7999 "debugcom.ml" 285 8019 8055
+type(
+  int
+)
+"debugcom.ml" 283 7947 7955 "debugcom.ml" 285 8019 8055
+type(
+  int
+)
+"debugcom.ml" 282 7909 7917 "debugcom.ml" 285 8019 8055
+type(
+  int
+)
+"debugcom.ml" 279 7827 7850 "debugcom.ml" 285 8019 8055
+type(
+  t -> int
+)
+"debugcom.ml" 287 8057 8065 "debugcom.ml" 287 8057 8069
+type(
+  t -> t -> bool
+)
+ident(
+  def same "debugcom.ml" 292 8263 8286 "debugcom.ml" 294 8288 8293
+)
+"debugcom.ml" 287 8057 8070 "debugcom.ml" 287 8057 8073
+type(
+  t
+)
+ident(
+  def rv1 "debugcom.ml" 287 8057 8074 "debugcom.ml" 292 8263 8286
+)
+"debugcom.ml" 287 8057 8074 "debugcom.ml" 287 8057 8077
+type(
+  t
+)
+ident(
+  def rv2 "debugcom.ml" 288 8080 8086 "debugcom.ml" 292 8263 8286
+)
+"debugcom.ml" 288 8080 8093 "debugcom.ml" 288 8080 8096
+type(
+  t
+)
+ident(
+  int_ref rv1 "debugcom.ml" 287 8057 8070 "debugcom.ml" 287 8057 8073
+)
+"debugcom.ml" 288 8080 8098 "debugcom.ml" 288 8080 8101
+type(
+  t
+)
+ident(
+  int_ref rv2 "debugcom.ml" 287 8057 8074 "debugcom.ml" 287 8057 8077
+)
+"debugcom.ml" 288 8080 8092 "debugcom.ml" 288 8080 8102
+type(
+  t * t
+)
+"debugcom.ml" 289 8108 8123 "debugcom.ml" 289 8108 8127
+type(
+  Obj.t
+)
+ident(
+  def obj1 "debugcom.ml" 289 8108 8144 "debugcom.ml" 289 8108 8156
+)
+"debugcom.ml" 289 8108 8117 "debugcom.ml" 289 8108 8127
+type(
+  t
+)
+"debugcom.ml" 289 8108 8135 "debugcom.ml" 289 8108 8139
+type(
+  Obj.t
+)
+ident(
+  def obj2 "debugcom.ml" 289 8108 8144 "debugcom.ml" 289 8108 8156
+)
+"debugcom.ml" 289 8108 8129 "debugcom.ml" 289 8108 8139
+type(
+  t
+)
+"debugcom.ml" 289 8108 8116 "debugcom.ml" 289 8108 8140
+type(
+  t * t
+)
+"debugcom.ml" 289 8108 8144 "debugcom.ml" 289 8108 8148
+type(
+  Obj.t
+)
+ident(
+  int_ref obj1 "debugcom.ml" 289 8108 8123 "debugcom.ml" 289 8108 8127
+)
+"debugcom.ml" 289 8108 8149 "debugcom.ml" 289 8108 8151
+type(
+  Obj.t -> Obj.t -> bool
+)
+ident(
+  ext_ref Pervasives.( == )
+)
+"debugcom.ml" 289 8108 8152 "debugcom.ml" 289 8108 8156
+type(
+  Obj.t
+)
+ident(
+  int_ref obj2 "debugcom.ml" 289 8108 8135 "debugcom.ml" 289 8108 8139
+)
+"debugcom.ml" 289 8108 8144 "debugcom.ml" 289 8108 8156
+type(
+  bool
+)
+"debugcom.ml" 290 8157 8173 "debugcom.ml" 290 8157 8175
+type(
+  string
+)
+ident(
+  def v1 "debugcom.ml" 290 8157 8191 "debugcom.ml" 290 8157 8198
+)
+"debugcom.ml" 290 8157 8166 "debugcom.ml" 290 8157 8175
+type(
+  t
+)
+"debugcom.ml" 290 8157 8184 "debugcom.ml" 290 8157 8186
+type(
+  string
+)
+ident(
+  def v2 "debugcom.ml" 290 8157 8191 "debugcom.ml" 290 8157 8198
+)
+"debugcom.ml" 290 8157 8177 "debugcom.ml" 290 8157 8186
+type(
+  t
+)
+"debugcom.ml" 290 8157 8165 "debugcom.ml" 290 8157 8187
+type(
+  t * t
+)
+"debugcom.ml" 290 8157 8191 "debugcom.ml" 290 8157 8193
+type(
+  string
+)
+ident(
+  int_ref v1 "debugcom.ml" 290 8157 8173 "debugcom.ml" 290 8157 8175
+)
+"debugcom.ml" 290 8157 8194 "debugcom.ml" 290 8157 8195
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"debugcom.ml" 290 8157 8196 "debugcom.ml" 290 8157 8198
+type(
+  string
+)
+ident(
+  int_ref v2 "debugcom.ml" 290 8157 8184 "debugcom.ml" 290 8157 8186
+)
+"debugcom.ml" 290 8157 8191 "debugcom.ml" 290 8157 8198
+type(
+  bool
+)
+"debugcom.ml" 292 8263 8272 "debugcom.ml" 292 8263 8273
+type(
+  t
+)
+"debugcom.ml" 292 8263 8275 "debugcom.ml" 292 8263 8276
+type(
+  t
+)
+"debugcom.ml" 292 8263 8271 "debugcom.ml" 292 8263 8277
+type(
+  t * t
+)
+"debugcom.ml" 292 8263 8281 "debugcom.ml" 292 8263 8286
+type(
+  bool
+)
+"debugcom.ml" 288 8080 8086 "debugcom.ml" 292 8263 8286
+type(
+  bool
+)

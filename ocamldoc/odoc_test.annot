@@ -1,0 +1,1249 @@
+"odoc_test.ml" 22 982 986 "odoc_test.ml" 22 982 987
+type(
+  Format.formatter -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  def p "odoc_test.ml" 24 1006 1006 "odoc_test.ml" 1 0 -1
+)
+"odoc_test.ml" 22 982 990 "odoc_test.ml" 22 982 1004
+type(
+  Format.formatter -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Format.fprintf
+)
+"odoc_test.ml" 27 1073 1081 "odoc_test.ml" 27 1073 1087
+type(
+  < generate : Odoc_info.Module.t_module list -> unit;
+    must_display_types : bool;
+    scan_attribute : Odoc_info.Value.t_attribute -> unit;
+    scan_class : Odoc_info.Class.t_class -> unit;
+    scan_class_comment : Odoc_info.text -> unit;
+    scan_class_elements : Odoc_info.Class.t_class -> unit;
+    scan_class_pre : Odoc_info.Class.t_class -> bool;
+    scan_class_type : Odoc_info.Class.t_class_type -> unit;
+    scan_class_type_comment : Odoc_info.text -> unit;
+    scan_class_type_elements : Odoc_info.Class.t_class_type -> unit;
+    scan_class_type_pre : Odoc_info.Class.t_class_type -> bool;
+    scan_exception : Odoc_info.Exception.t_exception -> unit;
+    scan_extension_constructor : Odoc_info.Extension.t_extension_constructor ->
+                                 unit;
+    scan_included_module : Odoc_info.Module.included_module -> unit;
+    scan_method : Odoc_info.Value.t_method -> unit;
+    scan_module : Odoc_info.Module.t_module -> unit;
+    scan_module_comment : Odoc_info.text -> unit;
+    scan_module_elements : Odoc_info.Module.t_module -> unit;
+    scan_module_list : Odoc_info.Module.t_module list -> unit;
+    scan_module_pre : Odoc_info.Module.t_module -> bool;
+    scan_module_type : Odoc_info.Module.t_module_type -> unit;
+    scan_module_type_comment : Odoc_info.text -> unit;
+    scan_module_type_elements : Odoc_info.Module.t_module_type -> unit;
+    scan_module_type_pre : Odoc_info.Module.t_module_type -> bool;
+    scan_type : Odoc_info.Type.t_type -> unit;
+    scan_type_const : Odoc_info.Type.t_type ->
+                      Odoc_info.Type.variant_constructor -> unit;
+    scan_type_extension : Odoc_info.Extension.t_type_extension -> unit;
+    scan_type_extension_constructors : Odoc_info.Extension.t_type_extension ->
+                                       unit;
+    scan_type_extension_pre : Odoc_info.Extension.t_type_extension -> bool;
+    scan_type_pre : Odoc_info.Type.t_type -> bool;
+    scan_type_recfield : Odoc_info.Type.t_type ->
+                         Odoc_info.Type.record_field -> unit;
+    scan_value : Odoc_info.Value.t_value -> unit;
+    set_test_kinds_from_module : Odoc_info.Module.t_module -> unit; .. >
+)
+"odoc_test.ml" 31 1125 1154 "odoc_test.ml" 31 1125 1156
+type(
+  test_kind list
+)
+"odoc_test.ml" 32 1157 1179 "odoc_test.ml" 32 1157 1199
+type(
+  Format.formatter
+)
+ident(
+  ext_ref Format.str_formatter
+)
+"odoc_test.ml" 34 1201 1233 "odoc_test.ml" 34 1201 1241
+type(
+  test_kind -> test_kind list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"odoc_test.ml" 34 1201 1242 "odoc_test.ml" 34 1201 1255
+type(
+  test_kind
+)
+"odoc_test.ml" 34 1201 1256 "odoc_test.ml" 34 1201 1266
+type(
+  test_kind list
+)
+ident(
+  ext_ref test_kinds
+)
+"odoc_test.ml" 34 1201 1233 "odoc_test.ml" 34 1201 1266
+type(
+  bool
+)
+type(
+  bool
+)
+"odoc_test.ml" 36 1268 1306 "odoc_test.ml" 36 1268 1307
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  def m "odoc_test.ml" 37 1310 1316 "odoc_test.ml" 48 1607 1618
+)
+"odoc_test.ml" 37 1310 1330 "odoc_test.ml" 37 1310 1344
+type(
+  (test_kind list -> string * Odoc_info.text -> test_kind list) ->
+  test_kind list -> (string * Odoc_info.text) list -> test_kind list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_test.ml" 38 1345 1360 "odoc_test.ml" 38 1345 1363
+type(
+  test_kind list
+)
+ident(
+  def acc "odoc_test.ml" 38 1345 1364 "odoc_test.ml" 41 1458 1480
+)
+"odoc_test.ml" 38 1345 1365 "odoc_test.ml" 38 1345 1366
+type(
+  string
+)
+ident(
+  def s "odoc_test.ml" 39 1374 1386 "odoc_test.ml" 41 1458 1480
+)
+"odoc_test.ml" 38 1345 1368 "odoc_test.ml" 38 1345 1369
+type(
+  Odoc_info.text
+)
+"odoc_test.ml" 38 1345 1364 "odoc_test.ml" 38 1345 1370
+type(
+  string * Odoc_info.text
+)
+"odoc_test.ml" 39 1374 1392 "odoc_test.ml" 39 1374 1393
+type(
+  string
+)
+ident(
+  int_ref s "odoc_test.ml" 38 1345 1365 "odoc_test.ml" 38 1345 1366
+)
+"odoc_test.ml" 40 1399 1413 "odoc_test.ml" 40 1399 1433
+type(
+  string
+)
+"odoc_test.ml" 40 1399 1437 "odoc_test.ml" 40 1399 1450
+type(
+  test_kind
+)
+"odoc_test.ml" 40 1399 1454 "odoc_test.ml" 40 1399 1457
+type(
+  test_kind list
+)
+ident(
+  int_ref acc "odoc_test.ml" 38 1345 1360 "odoc_test.ml" 38 1345 1363
+)
+"odoc_test.ml" 40 1399 1437 "odoc_test.ml" 40 1399 1457
+type(
+  test_kind list
+)
+"odoc_test.ml" 41 1458 1472 "odoc_test.ml" 41 1458 1473
+type(
+  string
+)
+"odoc_test.ml" 41 1458 1477 "odoc_test.ml" 41 1458 1480
+type(
+  test_kind list
+)
+ident(
+  int_ref acc "odoc_test.ml" 38 1345 1360 "odoc_test.ml" 38 1345 1363
+)
+"odoc_test.ml" 39 1374 1386 "odoc_test.ml" 41 1458 1480
+type(
+  test_kind list
+)
+"odoc_test.ml" 38 1345 1355 "odoc_test.ml" 42 1481 1492
+type(
+  test_kind list -> string * Odoc_info.text -> test_kind list
+)
+"odoc_test.ml" 43 1493 1503 "odoc_test.ml" 43 1493 1505
+type(
+  test_kind list
+)
+"odoc_test.ml" 45 1518 1535 "odoc_test.ml" 45 1518 1536
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  int_ref m "odoc_test.ml" 36 1268 1306 "odoc_test.ml" 36 1268 1307
+)
+"odoc_test.ml" 45 1518 1535 "odoc_test.ml" 45 1518 1543
+type(
+  Odoc_info.info option
+)
+"odoc_test.ml" 46 1549 1562 "odoc_test.ml" 46 1549 1566
+type(
+  Odoc_info.info option
+)
+"odoc_test.ml" 46 1549 1570 "odoc_test.ml" 46 1549 1572
+type(
+  (string * Odoc_info.text) list
+)
+"odoc_test.ml" 47 1573 1591 "odoc_test.ml" 47 1573 1592
+type(
+  Odoc_info.info
+)
+ident(
+  def i "odoc_test.ml" 47 1573 1596 "odoc_test.ml" 47 1573 1606
+)
+"odoc_test.ml" 47 1573 1586 "odoc_test.ml" 47 1573 1592
+type(
+  Odoc_info.info option
+)
+"odoc_test.ml" 47 1573 1596 "odoc_test.ml" 47 1573 1597
+type(
+  Odoc_info.info
+)
+ident(
+  int_ref i "odoc_test.ml" 47 1573 1591 "odoc_test.ml" 47 1573 1592
+)
+"odoc_test.ml" 47 1573 1596 "odoc_test.ml" 47 1573 1606
+type(
+  (string * Odoc_info.text) list
+)
+"odoc_test.ml" 44 1506 1516 "odoc_test.ml" 48 1607 1618
+type(
+  (string * Odoc_info.text) list
+)
+"odoc_test.ml" 37 1310 1330 "odoc_test.ml" 48 1607 1618
+call(
+  stack
+)
+type(
+  test_kind list
+)
+"odoc_test.ml" 37 1310 1316 "odoc_test.ml" 48 1607 1618
+type(
+  unit
+)
+"odoc_test.ml" 49 1619 1641 "odoc_test.ml" 49 1619 1642
+type(
+  Odoc_info.Type.t_type
+)
+ident(
+  def t "odoc_test.ml" 50 1645 1651 "odoc_test.ml" 62 2079 2093
+)
+"odoc_test.ml" 50 1645 1657 "odoc_test.ml" 50 1645 1667
+type(
+  test_kind list
+)
+ident(
+  ext_ref test_kinds
+)
+"odoc_test.ml" 51 1673 1681 "odoc_test.ml" 51 1673 1683
+type(
+  test_kind list
+)
+"odoc_test.ml" 51 1673 1687 "odoc_test.ml" 51 1673 1689
+type(
+  unit
+)
+"odoc_test.ml" 52 1690 1698 "odoc_test.ml" 52 1690 1699
+type(
+  test_kind list
+)
+"odoc_test.ml" 53 1703 1713 "odoc_test.ml" 53 1703 1714
+type(
+  Format.formatter ->
+  (Odoc_info.Name.t -> unit, Format.formatter, unit) format ->
+  Odoc_info.Name.t -> unit
+)
+ident(
+  int_ref p "odoc_test.ml" 22 982 986 "odoc_test.ml" 22 982 987
+)
+"odoc_test.ml" 53 1703 1715 "odoc_test.ml" 53 1703 1718
+type(
+  Format.formatter
+)
+ident(
+  ext_ref fmt
+)
+"odoc_test.ml" 53 1703 1719 "odoc_test.ml" 53 1703 1733
+type(
+  (Odoc_info.Name.t -> unit, Format.formatter, unit) format
+)
+"odoc_test.ml" 53 1703 1734 "odoc_test.ml" 53 1703 1735
+type(
+  Odoc_info.Type.t_type
+)
+ident(
+  int_ref t "odoc_test.ml" 49 1619 1641 "odoc_test.ml" 49 1619 1642
+)
+"odoc_test.ml" 53 1703 1734 "odoc_test.ml" 53 1703 1743
+type(
+  Odoc_info.Name.t
+)
+"odoc_test.ml" 53 1703 1713 "odoc_test.ml" 53 1703 1743
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_test.ml" 54 1745 1758 "odoc_test.ml" 54 1745 1762
+type(
+  < generate : Odoc_info.Module.t_module list -> unit;
+    must_display_types : bool;
+    scan_attribute : Odoc_info.Value.t_attribute -> unit;
+    scan_class : Odoc_info.Class.t_class -> unit;
+    scan_class_comment : Odoc_info.text -> unit;
+    scan_class_elements : Odoc_info.Class.t_class -> unit;
+    scan_class_pre : Odoc_info.Class.t_class -> bool;
+    scan_class_type : Odoc_info.Class.t_class_type -> unit;
+    scan_class_type_comment : Odoc_info.text -> unit;
+    scan_class_type_elements : Odoc_info.Class.t_class_type -> unit;
+    scan_class_type_pre : Odoc_info.Class.t_class_type -> bool;
+    scan_exception : Odoc_info.Exception.t_exception -> unit;
+    scan_extension_constructor : Odoc_info.Extension.t_extension_constructor ->
+                                 unit;
+    scan_included_module : Odoc_info.Module.included_module -> unit;
+    scan_method : Odoc_info.Value.t_method -> unit;
+    scan_module : Odoc_info.Module.t_module -> unit;
+    scan_module_comment : Odoc_info.text -> unit;
+    scan_module_elements : Odoc_info.Module.t_module -> unit;
+    scan_module_list : Odoc_info.Module.t_module list -> unit;
+    scan_module_pre : Odoc_info.Module.t_module -> bool;
+    scan_module_type : Odoc_info.Module.t_module_type -> unit;
+    scan_module_type_comment : Odoc_info.text -> unit;
+    scan_module_type_elements : Odoc_info.Module.t_module_type -> unit;
+    scan_module_type_pre : Odoc_info.Module.t_module_type -> bool;
+    scan_type : Odoc_info.Type.t_type -> unit;
+    scan_type_const : Odoc_info.Type.t_type ->
+                      Odoc_info.Type.variant_constructor -> unit;
+    scan_type_extension : Odoc_info.Extension.t_type_extension -> unit;
+    scan_type_extension_constructors : Odoc_info.Extension.t_type_extension ->
+                                       unit;
+    scan_type_extension_pre : Odoc_info.Extension.t_type_extension -> bool;
+    scan_type_pre : Odoc_info.Type.t_type -> bool;
+    scan_type_recfield : Odoc_info.Type.t_type ->
+                         Odoc_info.Type.record_field -> unit;
+    scan_value : Odoc_info.Value.t_value -> unit;
+    set_test_kinds_from_module : Odoc_info.Module.t_module -> unit; .. >
+  as 'a
+)
+ident(
+  int_ref self "odoc_test.ml" 27 1073 1081 "odoc_test.ml" 27 1073 1087
+)
+"odoc_test.ml" 54 1745 1758 "odoc_test.ml" 54 1745 1781
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_test.ml" 56 1801 1814 "odoc_test.ml" 56 1801 1815
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  int_ref p "odoc_test.ml" 22 982 986 "odoc_test.ml" 22 982 987
+)
+"odoc_test.ml" 56 1801 1816 "odoc_test.ml" 56 1801 1819
+type(
+  Format.formatter
+)
+ident(
+  ext_ref fmt
+)
+"odoc_test.ml" 56 1801 1820 "odoc_test.ml" 56 1801 1844
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"odoc_test.ml" 57 1845 1867 "odoc_test.ml" 57 1845 1868
+type(
+  Odoc_info.Type.t_type
+)
+ident(
+  int_ref t "odoc_test.ml" 49 1619 1641 "odoc_test.ml" 49 1619 1642
+)
+"odoc_test.ml" 57 1845 1867 "odoc_test.ml" 57 1845 1880
+type(
+  Odoc_info.Type.type_manifest option
+)
+"odoc_test.ml" 58 1886 1903 "odoc_test.ml" 58 1886 1907
+type(
+  Odoc_info.Type.type_manifest option
+)
+"odoc_test.ml" 58 1886 1911 "odoc_test.ml" 58 1886 1917
+type(
+  string
+)
+"odoc_test.ml" 59 1918 1953 "odoc_test.ml" 59 1918 1960
+type(
+  Odoc_info.Type.object_field list
+)
+ident(
+  def _fields "odoc_test.ml" 59 1918 1965 "odoc_test.ml" 59 1918 1982
+)
+"odoc_test.ml" 59 1918 1940 "odoc_test.ml" 59 1918 1961
+type(
+  Odoc_info.Type.type_manifest
+)
+"odoc_test.ml" 59 1918 1935 "odoc_test.ml" 59 1918 1961
+type(
+  Odoc_info.Type.type_manifest option
+)
+"odoc_test.ml" 59 1918 1965 "odoc_test.ml" 59 1918 1982
+type(
+  string
+)
+"odoc_test.ml" 60 1994 2023 "odoc_test.ml" 60 1994 2024
+type(
+  Types.type_expr
+)
+ident(
+  def e "odoc_test.ml" 60 1994 2029 "odoc_test.ml" 60 1994 2060
+)
+"odoc_test.ml" 60 1994 2016 "odoc_test.ml" 60 1994 2025
+type(
+  Odoc_info.Type.type_manifest
+)
+"odoc_test.ml" 60 1994 2011 "odoc_test.ml" 60 1994 2025
+type(
+  Odoc_info.Type.type_manifest option
+)
+"odoc_test.ml" 60 1994 2029 "odoc_test.ml" 60 1994 2058
+type(
+  Types.type_expr -> string
+)
+ident(
+  ext_ref Odoc_info.string_of_type_expr
+)
+"odoc_test.ml" 60 1994 2059 "odoc_test.ml" 60 1994 2060
+type(
+  Types.type_expr
+)
+ident(
+  int_ref e "odoc_test.ml" 60 1994 2023 "odoc_test.ml" 60 1994 2024
+)
+"odoc_test.ml" 60 1994 2029 "odoc_test.ml" 60 1994 2060
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_test.ml" 57 1845 1860 "odoc_test.ml" 61 2061 2077
+type(
+  string
+)
+"odoc_test.ml" 55 1787 1799 "odoc_test.ml" 62 2079 2092
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_test.ml" 54 1745 1755 "odoc_test.ml" 62 2079 2093
+type(
+  unit
+)
+"odoc_test.ml" 53 1703 1713 "odoc_test.ml" 62 2079 2093
+type(
+  unit
+)
+"odoc_test.ml" 50 1645 1651 "odoc_test.ml" 62 2079 2093
+type(
+  unit
+)
+"odoc_test.ml" 65 2096 2124 "odoc_test.ml" 65 2096 2125
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  def m "odoc_test.ml" 66 2128 2134 "odoc_test.ml" 74 2497 2507
+)
+"odoc_test.ml" 66 2128 2134 "odoc_test.ml" 66 2128 2135
+type(
+  Format.formatter ->
+  (Odoc_info.Name.t -> unit, Format.formatter, unit) format ->
+  Odoc_info.Name.t -> unit
+)
+ident(
+  int_ref p "odoc_test.ml" 22 982 986 "odoc_test.ml" 22 982 987
+)
+"odoc_test.ml" 66 2128 2136 "odoc_test.ml" 66 2128 2139
+type(
+  Format.formatter
+)
+ident(
+  ext_ref fmt
+)
+"odoc_test.ml" 66 2128 2140 "odoc_test.ml" 66 2128 2159
+type(
+  (Odoc_info.Name.t -> unit, Format.formatter, unit) format
+)
+"odoc_test.ml" 66 2128 2160 "odoc_test.ml" 66 2128 2161
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  int_ref m "odoc_test.ml" 65 2096 2124 "odoc_test.ml" 65 2096 2125
+)
+"odoc_test.ml" 66 2128 2160 "odoc_test.ml" 66 2128 2168
+type(
+  Odoc_info.Name.t
+)
+"odoc_test.ml" 66 2128 2134 "odoc_test.ml" 66 2128 2168
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_test.ml" 67 2171 2180 "odoc_test.ml" 67 2171 2184
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_test.ml" 27 1073 1081 "odoc_test.ml" 27 1073 1087
+)
+"odoc_test.ml" 67 2171 2180 "odoc_test.ml" 67 2171 2203
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_test.ml" 69 2219 2228 "odoc_test.ml" 69 2219 2229
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  int_ref p "odoc_test.ml" 22 982 986 "odoc_test.ml" 22 982 987
+)
+"odoc_test.ml" 69 2219 2230 "odoc_test.ml" 69 2219 2233
+type(
+  Format.formatter
+)
+ident(
+  ext_ref fmt
+)
+"odoc_test.ml" 69 2219 2234 "odoc_test.ml" 69 2219 2280
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"odoc_test.ml" 70 2281 2293 "odoc_test.ml" 70 2281 2324
+type(
+  ?code:string -> ?complete:bool -> Types.module_type -> string
+)
+ident(
+  ext_ref Odoc_info.string_of_module_type
+)
+"odoc_test.ml" 70 2281 2325 "odoc_test.ml" 70 2281 2326
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  int_ref m "odoc_test.ml" 65 2096 2124 "odoc_test.ml" 65 2096 2125
+)
+"odoc_test.ml" 70 2281 2325 "odoc_test.ml" 70 2281 2333
+type(
+  Types.module_type
+)
+"odoc_test.ml" 70 2281 2292 "odoc_test.ml" 70 2281 2334
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_test.ml" 69 2219 2228 "odoc_test.ml" 70 2281 2334
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_test.ml" 71 2336 2345 "odoc_test.ml" 71 2336 2346
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  int_ref p "odoc_test.ml" 22 982 986 "odoc_test.ml" 22 982 987
+)
+"odoc_test.ml" 71 2336 2347 "odoc_test.ml" 71 2336 2350
+type(
+  Format.formatter
+)
+ident(
+  ext_ref fmt
+)
+"odoc_test.ml" 71 2336 2351 "odoc_test.ml" 71 2336 2414
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"odoc_test.ml" 72 2415 2427 "odoc_test.ml" 72 2415 2458
+type(
+  ?code:string -> ?complete:bool -> Types.module_type -> string
+)
+ident(
+  ext_ref Odoc_info.string_of_module_type
+)
+"odoc_test.ml" 72 2415 2470 "odoc_test.ml" 72 2415 2474
+type(
+  bool
+)
+"odoc_test.ml" 72 2415 2475 "odoc_test.ml" 72 2415 2476
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  int_ref m "odoc_test.ml" 65 2096 2124 "odoc_test.ml" 65 2096 2125
+)
+"odoc_test.ml" 72 2415 2475 "odoc_test.ml" 72 2415 2483
+type(
+  Types.module_type
+)
+"odoc_test.ml" 72 2415 2426 "odoc_test.ml" 72 2415 2484
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_test.ml" 71 2336 2345 "odoc_test.ml" 72 2415 2485
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_test.ml" 68 2209 2217 "odoc_test.ml" 73 2486 2495
+type(
+  unit
+)
+"odoc_test.ml" 67 2171 2177 "odoc_test.ml" 73 2486 2495
+type(
+  unit
+)
+"odoc_test.ml" 74 2497 2503 "odoc_test.ml" 74 2497 2507
+type(
+  bool
+)
+"odoc_test.ml" 67 2171 2177 "odoc_test.ml" 74 2497 2507
+type(
+  bool
+)
+"odoc_test.ml" 66 2128 2134 "odoc_test.ml" 74 2497 2507
+type(
+  bool
+)
+"odoc_test.ml" 76 2509 2542 "odoc_test.ml" 76 2509 2543
+type(
+  Odoc_info.Module.t_module_type
+)
+ident(
+  def m "odoc_test.ml" 77 2546 2552 "odoc_test.ml" 91 3075 3085
+)
+"odoc_test.ml" 77 2546 2552 "odoc_test.ml" 77 2546 2553
+type(
+  Format.formatter ->
+  (Odoc_info.Name.t -> unit, Format.formatter, unit) format ->
+  Odoc_info.Name.t -> unit
+)
+ident(
+  int_ref p "odoc_test.ml" 22 982 986 "odoc_test.ml" 22 982 987
+)
+"odoc_test.ml" 77 2546 2554 "odoc_test.ml" 77 2546 2557
+type(
+  Format.formatter
+)
+ident(
+  ext_ref fmt
+)
+"odoc_test.ml" 77 2546 2558 "odoc_test.ml" 77 2546 2582
+type(
+  (Odoc_info.Name.t -> unit, Format.formatter, unit) format
+)
+"odoc_test.ml" 77 2546 2583 "odoc_test.ml" 77 2546 2584
+type(
+  Odoc_info.Module.t_module_type
+)
+ident(
+  int_ref m "odoc_test.ml" 76 2509 2542 "odoc_test.ml" 76 2509 2543
+)
+"odoc_test.ml" 77 2546 2583 "odoc_test.ml" 77 2546 2592
+type(
+  Odoc_info.Name.t
+)
+"odoc_test.ml" 77 2546 2552 "odoc_test.ml" 77 2546 2592
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_test.ml" 78 2595 2604 "odoc_test.ml" 78 2595 2608
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_test.ml" 27 1073 1081 "odoc_test.ml" 27 1073 1087
+)
+"odoc_test.ml" 78 2595 2604 "odoc_test.ml" 78 2595 2627
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_test.ml" 80 2643 2652 "odoc_test.ml" 80 2643 2653
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  int_ref p "odoc_test.ml" 22 982 986 "odoc_test.ml" 22 982 987
+)
+"odoc_test.ml" 80 2643 2654 "odoc_test.ml" 80 2643 2657
+type(
+  Format.formatter
+)
+ident(
+  ext_ref fmt
+)
+"odoc_test.ml" 80 2643 2658 "odoc_test.ml" 80 2643 2704
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"odoc_test.ml" 81 2705 2723 "odoc_test.ml" 81 2705 2724
+type(
+  Odoc_info.Module.t_module_type
+)
+ident(
+  int_ref m "odoc_test.ml" 76 2509 2542 "odoc_test.ml" 76 2509 2543
+)
+"odoc_test.ml" 81 2705 2723 "odoc_test.ml" 81 2705 2732
+type(
+  Types.module_type option
+)
+"odoc_test.ml" 82 2738 2751 "odoc_test.ml" 82 2738 2755
+type(
+  Types.module_type option
+)
+"odoc_test.ml" 82 2738 2759 "odoc_test.ml" 82 2738 2765
+type(
+  string
+)
+"odoc_test.ml" 83 2766 2784 "odoc_test.ml" 83 2766 2785
+type(
+  Types.module_type
+)
+ident(
+  def t "odoc_test.ml" 83 2766 2789 "odoc_test.ml" 83 2766 2822
+)
+"odoc_test.ml" 83 2766 2779 "odoc_test.ml" 83 2766 2785
+type(
+  Types.module_type option
+)
+"odoc_test.ml" 83 2766 2789 "odoc_test.ml" 83 2766 2820
+type(
+  ?code:string -> ?complete:bool -> Types.module_type -> string
+)
+ident(
+  ext_ref Odoc_info.string_of_module_type
+)
+"odoc_test.ml" 83 2766 2821 "odoc_test.ml" 83 2766 2822
+type(
+  Types.module_type
+)
+ident(
+  int_ref t "odoc_test.ml" 83 2766 2784 "odoc_test.ml" 83 2766 2785
+)
+"odoc_test.ml" 83 2766 2789 "odoc_test.ml" 83 2766 2822
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_test.ml" 81 2705 2716 "odoc_test.ml" 84 2823 2835
+type(
+  string
+)
+"odoc_test.ml" 80 2643 2652 "odoc_test.ml" 84 2823 2835
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_test.ml" 85 2837 2846 "odoc_test.ml" 85 2837 2847
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  int_ref p "odoc_test.ml" 22 982 986 "odoc_test.ml" 22 982 987
+)
+"odoc_test.ml" 85 2837 2848 "odoc_test.ml" 85 2837 2851
+type(
+  Format.formatter
+)
+ident(
+  ext_ref fmt
+)
+"odoc_test.ml" 85 2837 2852 "odoc_test.ml" 85 2837 2915
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"odoc_test.ml" 86 2916 2934 "odoc_test.ml" 86 2916 2935
+type(
+  Odoc_info.Module.t_module_type
+)
+ident(
+  int_ref m "odoc_test.ml" 76 2509 2542 "odoc_test.ml" 76 2509 2543
+)
+"odoc_test.ml" 86 2916 2934 "odoc_test.ml" 86 2916 2943
+type(
+  Types.module_type option
+)
+"odoc_test.ml" 87 2949 2962 "odoc_test.ml" 87 2949 2966
+type(
+  Types.module_type option
+)
+"odoc_test.ml" 87 2949 2970 "odoc_test.ml" 87 2949 2976
+type(
+  string
+)
+"odoc_test.ml" 88 2977 2995 "odoc_test.ml" 88 2977 2996
+type(
+  Types.module_type
+)
+ident(
+  def t "odoc_test.ml" 88 2977 3000 "odoc_test.ml" 88 2977 3049
+)
+"odoc_test.ml" 88 2977 2990 "odoc_test.ml" 88 2977 2996
+type(
+  Types.module_type option
+)
+"odoc_test.ml" 88 2977 3000 "odoc_test.ml" 88 2977 3031
+type(
+  ?code:string -> ?complete:bool -> Types.module_type -> string
+)
+ident(
+  ext_ref Odoc_info.string_of_module_type
+)
+"odoc_test.ml" 88 2977 3043 "odoc_test.ml" 88 2977 3047
+type(
+  bool
+)
+"odoc_test.ml" 88 2977 3048 "odoc_test.ml" 88 2977 3049
+type(
+  Types.module_type
+)
+ident(
+  int_ref t "odoc_test.ml" 88 2977 2995 "odoc_test.ml" 88 2977 2996
+)
+"odoc_test.ml" 88 2977 3000 "odoc_test.ml" 88 2977 3049
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_test.ml" 86 2916 2927 "odoc_test.ml" 89 3050 3062
+type(
+  string
+)
+"odoc_test.ml" 85 2837 2846 "odoc_test.ml" 89 3050 3063
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_test.ml" 79 2633 2641 "odoc_test.ml" 90 3064 3073
+type(
+  unit
+)
+"odoc_test.ml" 78 2595 2601 "odoc_test.ml" 90 3064 3073
+type(
+  unit
+)
+"odoc_test.ml" 91 3075 3081 "odoc_test.ml" 91 3075 3085
+type(
+  bool
+)
+"odoc_test.ml" 78 2595 2601 "odoc_test.ml" 91 3075 3085
+type(
+  bool
+)
+"odoc_test.ml" 77 2546 2552 "odoc_test.ml" 91 3075 3085
+type(
+  bool
+)
+"odoc_test.ml" 93 3087 3108 "odoc_test.ml" 93 3087 3119
+type(
+  Odoc_info.Module.t_module list
+)
+ident(
+  def module_list "odoc_test.ml" 94 3155 3161 "odoc_test.ml" 109 3560 3578
+)
+"odoc_test.ml" 94 3155 3165 "odoc_test.ml" 94 3155 3167
+type(
+  out_channel
+)
+ident(
+  def oc "odoc_test.ml" 95 3209 3215 "odoc_test.ml" 109 3560 3578
+)
+"odoc_test.ml" 94 3155 3170 "odoc_test.ml" 94 3155 3178
+type(
+  string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out
+)
+"odoc_test.ml" 94 3155 3179 "odoc_test.ml" 94 3155 3180
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_test.ml" 94 3155 3180 "odoc_test.ml" 94 3155 3205
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_info.Global.out_file
+)
+"odoc_test.ml" 94 3155 3179 "odoc_test.ml" 94 3155 3205
+type(
+  string
+)
+"odoc_test.ml" 94 3155 3170 "odoc_test.ml" 94 3155 3205
+call(
+  stack
+)
+type(
+  out_channel
+)
+"odoc_test.ml" 95 3209 3222 "odoc_test.ml" 95 3209 3253
+type(
+  out_channel -> Format.formatter
+)
+ident(
+  ext_ref Format.formatter_of_out_channel
+)
+"odoc_test.ml" 95 3209 3254 "odoc_test.ml" 95 3209 3256
+type(
+  out_channel
+)
+ident(
+  int_ref oc "odoc_test.ml" 94 3155 3165 "odoc_test.ml" 94 3155 3167
+)
+"odoc_test.ml" 95 3209 3222 "odoc_test.ml" 95 3209 3256
+call(
+  stack
+)
+type(
+  Format.formatter
+)
+"odoc_test.ml" 95 3209 3215 "odoc_test.ml" 95 3209 3256
+type(
+  unit
+)
+"odoc_test.ml" 98 3277 3286 "odoc_test.ml" 98 3277 3295
+type(
+  (Odoc_info.Module.t_module -> unit) ->
+  Odoc_info.Module.t_module list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_test.ml" 99 3296 3312 "odoc_test.ml" 99 3296 3313
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  def m "odoc_test.ml" 100 3317 3330 "odoc_test.ml" 101 3365 3404
+)
+"odoc_test.ml" 100 3317 3330 "odoc_test.ml" 100 3317 3334
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_test.ml" 27 1073 1081 "odoc_test.ml" 27 1073 1087
+)
+"odoc_test.ml" 100 3317 3330 "odoc_test.ml" 100 3317 3361
+call(
+  stack
+)
+type(
+  Odoc_info.Module.t_module -> unit
+)
+"odoc_test.ml" 100 3317 3362 "odoc_test.ml" 100 3317 3363
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  int_ref m "odoc_test.ml" 99 3296 3312 "odoc_test.ml" 99 3296 3313
+)
+"odoc_test.ml" 100 3317 3330 "odoc_test.ml" 100 3317 3363
+type(
+  unit
+)
+"odoc_test.ml" 101 3365 3378 "odoc_test.ml" 101 3365 3382
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_test.ml" 27 1073 1081 "odoc_test.ml" 27 1073 1087
+)
+"odoc_test.ml" 101 3365 3378 "odoc_test.ml" 101 3365 3399
+call(
+  tail
+)
+type(
+  Odoc_info.Module.t_module list -> unit
+)
+"odoc_test.ml" 101 3365 3401 "odoc_test.ml" 101 3365 3402
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  int_ref m "odoc_test.ml" 99 3296 3312 "odoc_test.ml" 99 3296 3313
+)
+"odoc_test.ml" 101 3365 3400 "odoc_test.ml" 101 3365 3403
+type(
+  Odoc_info.Module.t_module list
+)
+"odoc_test.ml" 101 3365 3378 "odoc_test.ml" 101 3365 3404
+type(
+  unit
+)
+"odoc_test.ml" 100 3317 3330 "odoc_test.ml" 101 3365 3404
+type(
+  unit
+)
+"odoc_test.ml" 99 3296 3307 "odoc_test.ml" 102 3405 3417
+type(
+  Odoc_info.Module.t_module -> unit
+)
+"odoc_test.ml" 103 3418 3429 "odoc_test.ml" 103 3418 3440
+type(
+  Odoc_info.Module.t_module list
+)
+ident(
+  int_ref module_list "odoc_test.ml" 93 3087 3108 "odoc_test.ml" 93 3087 3119
+)
+"odoc_test.ml" 98 3277 3286 "odoc_test.ml" 103 3418 3440
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_test.ml" 105 3453 3462 "odoc_test.ml" 105 3453 3463
+type(
+  exn
+)
+ident(
+  def e "odoc_test.ml" 106 3467 3478 "odoc_test.ml" 106 3467 3514
+)
+"odoc_test.ml" 106 3467 3478 "odoc_test.ml" 106 3467 3491
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"odoc_test.ml" 106 3467 3493 "odoc_test.ml" 106 3467 3511
+type(
+  exn -> string
+)
+ident(
+  ext_ref Printexc.to_string
+)
+"odoc_test.ml" 106 3467 3512 "odoc_test.ml" 106 3467 3513
+type(
+  exn
+)
+ident(
+  int_ref e "odoc_test.ml" 105 3453 3462 "odoc_test.ml" 105 3453 3463
+)
+"odoc_test.ml" 106 3467 3492 "odoc_test.ml" 106 3467 3514
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_test.ml" 106 3467 3478 "odoc_test.ml" 106 3467 3514
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_test.ml" 96 3258 3264 "odoc_test.ml" 107 3515 3522
+type(
+  unit
+)
+"odoc_test.ml" 108 3524 3530 "odoc_test.ml" 108 3524 3551
+type(
+  Format.formatter -> unit -> unit
+)
+ident(
+  ext_ref Format.pp_print_flush
+)
+"odoc_test.ml" 108 3524 3552 "odoc_test.ml" 108 3524 3555
+type(
+  Format.formatter
+)
+ident(
+  ext_ref fmt
+)
+"odoc_test.ml" 108 3524 3556 "odoc_test.ml" 108 3524 3558
+type(
+  unit
+)
+"odoc_test.ml" 108 3524 3530 "odoc_test.ml" 108 3524 3558
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_test.ml" 109 3560 3566 "odoc_test.ml" 109 3560 3575
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"odoc_test.ml" 109 3560 3576 "odoc_test.ml" 109 3560 3578
+type(
+  out_channel
+)
+ident(
+  int_ref oc "odoc_test.ml" 94 3155 3165 "odoc_test.ml" 94 3155 3167
+)
+"odoc_test.ml" 109 3560 3566 "odoc_test.ml" 109 3560 3578
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_test.ml" 108 3524 3530 "odoc_test.ml" 109 3560 3578
+type(
+  unit
+)
+"odoc_test.ml" 96 3258 3264 "odoc_test.ml" 109 3560 3578
+type(
+  unit
+)
+"odoc_test.ml" 95 3209 3215 "odoc_test.ml" 109 3560 3578
+type(
+  unit
+)
+"odoc_test.ml" 94 3155 3161 "odoc_test.ml" 109 3560 3578
+type(
+  unit
+)
+"odoc_test.ml" 113 3606 3614 "odoc_test.ml" 113 3606 3615
+type(
+  string_gen
+)
+"odoc_test.ml" 113 3606 3618 "odoc_test.ml" 113 3606 3632
+type(
+  string_gen
+)
+"odoc_test.ml" 117 3682 3704 "odoc_test.ml" 117 3682 3705
+type(
+  Odoc_info.Module.t_module list
+)
+ident(
+  def l "odoc_test.ml" 118 3708 3716 "odoc_test.ml" 119 3733 3753
+)
+"odoc_test.ml" 118 3708 3716 "odoc_test.ml" 118 3708 3720
+type(
+  < generate : Odoc_info.Module.t_module list -> unit; .. >
+)
+ident(
+  int_ref base "odoc_test.ml" 115 3647 3661 "odoc_test.ml" 115 3647 3672
+)
+"odoc_test.ml" 118 3708 3716 "odoc_test.ml" 118 3708 3729
+type(
+  Odoc_info.Module.t_module list -> unit
+)
+type(
+  Odoc_info.Module.t_module list -> unit
+)
+"odoc_test.ml" 118 3708 3730 "odoc_test.ml" 118 3708 3731
+type(
+  Odoc_info.Module.t_module list
+)
+ident(
+  int_ref l "odoc_test.ml" 117 3682 3704 "odoc_test.ml" 117 3682 3705
+)
+"odoc_test.ml" 118 3708 3716 "odoc_test.ml" 118 3708 3731
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_test.ml" 119 3733 3741 "odoc_test.ml" 119 3733 3742
+type(
+  string_gen
+)
+ident(
+  int_ref g "odoc_test.ml" 113 3606 3614 "odoc_test.ml" 113 3606 3615
+)
+"odoc_test.ml" 119 3733 3741 "odoc_test.ml" 119 3733 3751
+call(
+  tail
+)
+type(
+  Odoc_info.Module.t_module list -> unit
+)
+"odoc_test.ml" 119 3733 3752 "odoc_test.ml" 119 3733 3753
+type(
+  Odoc_info.Module.t_module list
+)
+ident(
+  int_ref l "odoc_test.ml" 117 3682 3704 "odoc_test.ml" 117 3682 3705
+)
+"odoc_test.ml" 119 3733 3741 "odoc_test.ml" 119 3733 3753
+type(
+  unit
+)
+"odoc_test.ml" 118 3708 3716 "odoc_test.ml" 119 3733 3753
+type(
+  unit
+)
+"odoc_test.ml" 123 3769 3777 "odoc_test.ml" 123 3769 3808
+type(
+  (module Odoc_gen.Base_functor) -> unit
+)
+ident(
+  ext_ref Odoc_args.extend_base_generator
+)
+"odoc_test.ml" 123 3769 3777 "odoc_test.ml" 123 3769 3851
+call(
+  stack
+)
+type(
+  unit
+)

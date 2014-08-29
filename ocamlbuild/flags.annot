@@ -1,0 +1,1348 @@
+"flags.ml" 24 998 1002 "flags.ml" 24 998 1015
+type(
+  decl -> Command.spec
+)
+ident(
+  def flags_of_decl "flags.ml" 25 1037 1037 "flags.ml" 1 0 -1
+)
+"flags.ml" 24 998 1018 "flags.ml" 24 998 1023
+type(
+  Command.spec
+)
+ident(
+  def flags "flags.ml" 24 998 1031 "flags.ml" 24 998 1036
+)
+"flags.ml" 24 998 1016 "flags.ml" 24 998 1028
+type(
+  decl
+)
+"flags.ml" 24 998 1031 "flags.ml" 24 998 1036
+type(
+  Command.spec
+)
+ident(
+  int_ref flags "flags.ml" 24 998 1018 "flags.ml" 24 998 1023
+)
+"flags.ml" 25 1037 1041 "flags.ml" 25 1037 1053
+type(
+  decl -> Tags.t
+)
+ident(
+  def tags_of_decl "flags.ml" 27 1074 1074 "flags.ml" 1 0 -1
+)
+"flags.ml" 25 1037 1056 "flags.ml" 25 1037 1060
+type(
+  Tags.t
+)
+ident(
+  def tags "flags.ml" 25 1037 1068 "flags.ml" 25 1037 1072
+)
+"flags.ml" 25 1037 1054 "flags.ml" 25 1037 1065
+type(
+  decl
+)
+"flags.ml" 25 1037 1068 "flags.ml" 25 1037 1072
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "flags.ml" 25 1037 1056 "flags.ml" 25 1037 1060
+)
+"flags.ml" 27 1074 1078 "flags.ml" 27 1074 1087
+type(
+  decl list ref
+)
+ident(
+  def all_decls "flags.ml" 29 1098 1098 "flags.ml" 1 0 -1
+)
+"flags.ml" 27 1074 1090 "flags.ml" 27 1074 1093
+type(
+  decl list -> decl list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"flags.ml" 27 1074 1094 "flags.ml" 27 1074 1096
+type(
+  decl list
+)
+"flags.ml" 27 1074 1090 "flags.ml" 27 1074 1096
+type(
+  decl list ref
+)
+"flags.ml" 29 1098 1102 "flags.ml" 29 1098 1109
+type(
+  Tags.t -> Command.spec
+)
+ident(
+  def of_tags "flags.ml" 37 1295 1295 "flags.ml" 1 0 -1
+)
+"flags.ml" 29 1098 1110 "flags.ml" 29 1098 1122
+type(
+  Tags.t
+)
+ident(
+  def matched_tags "flags.ml" 30 1125 1127 "flags.ml" 35 1288 1293
+)
+"flags.ml" 31 1135 1139 "flags.ml" 31 1135 1153
+type(
+  (Command.spec list -> decl -> Command.spec list) ->
+  Command.spec list -> decl list -> Command.spec list
+)
+ident(
+  ext_ref List.fold_left
+)
+"flags.ml" 31 1135 1164 "flags.ml" 31 1135 1167
+type(
+  Command.spec list
+)
+ident(
+  def acc "flags.ml" 31 1135 1168 "flags.ml" 33 1251 1265
+)
+"flags.ml" 31 1135 1170 "flags.ml" 31 1135 1174
+type(
+  Tags.t
+)
+ident(
+  def tags "flags.ml" 32 1190 1196 "flags.ml" 33 1251 1265
+)
+"flags.ml" 31 1135 1176 "flags.ml" 31 1135 1181
+type(
+  Command.spec
+)
+ident(
+  def flags "flags.ml" 32 1190 1196 "flags.ml" 33 1251 1265
+)
+"flags.ml" 31 1135 1168 "flags.ml" 31 1135 1186
+type(
+  decl
+)
+"flags.ml" 32 1190 1199 "flags.ml" 32 1190 1214
+type(
+  Tags.t -> Tags.t -> bool
+)
+ident(
+  ext_ref Tags.does_match
+)
+"flags.ml" 32 1190 1215 "flags.ml" 32 1190 1227
+type(
+  Tags.t
+)
+ident(
+  int_ref matched_tags "flags.ml" 29 1098 1110 "flags.ml" 29 1098 1122
+)
+"flags.ml" 32 1190 1228 "flags.ml" 32 1190 1232
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "flags.ml" 31 1135 1170 "flags.ml" 31 1135 1174
+)
+"flags.ml" 32 1190 1199 "flags.ml" 32 1190 1232
+call(
+  stack
+)
+type(
+  bool
+)
+"flags.ml" 32 1190 1238 "flags.ml" 32 1190 1243
+type(
+  Command.spec
+)
+ident(
+  int_ref flags "flags.ml" 31 1135 1176 "flags.ml" 31 1135 1181
+)
+"flags.ml" 32 1190 1247 "flags.ml" 32 1190 1250
+type(
+  Command.spec list
+)
+ident(
+  int_ref acc "flags.ml" 31 1135 1164 "flags.ml" 31 1135 1167
+)
+"flags.ml" 32 1190 1238 "flags.ml" 32 1190 1250
+type(
+  Command.spec list
+)
+"flags.ml" 33 1251 1262 "flags.ml" 33 1251 1265
+type(
+  Command.spec list
+)
+ident(
+  int_ref acc "flags.ml" 31 1135 1164 "flags.ml" 31 1135 1167
+)
+"flags.ml" 32 1190 1196 "flags.ml" 33 1251 1265
+type(
+  Command.spec list
+)
+"flags.ml" 31 1135 1154 "flags.ml" 34 1266 1273
+type(
+  Command.spec list -> decl -> Command.spec list
+)
+"flags.ml" 34 1266 1274 "flags.ml" 34 1266 1276
+type(
+  Command.spec list
+)
+"flags.ml" 34 1266 1277 "flags.ml" 34 1266 1278
+type(
+  decl list ref -> decl list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"flags.ml" 34 1266 1278 "flags.ml" 34 1266 1287
+type(
+  decl list ref
+)
+ident(
+  int_ref all_decls "flags.ml" 27 1074 1078 "flags.ml" 27 1074 1087
+)
+"flags.ml" 34 1266 1277 "flags.ml" 34 1266 1287
+type(
+  decl list
+)
+"flags.ml" 30 1125 1129 "flags.ml" 35 1288 1293
+call(
+  stack
+)
+type(
+  Command.spec list
+)
+"flags.ml" 30 1125 1127 "flags.ml" 35 1288 1293
+type(
+  Command.spec
+)
+"flags.ml" 37 1295 1299 "flags.ml" 37 1295 1301
+type(
+  unit
+)
+"flags.ml" 37 1295 1304 "flags.ml" 37 1295 1323
+type(
+  (Tags.t -> Command.spec) ref
+)
+ident(
+  ext_ref Command.tag_handler
+)
+"flags.ml" 37 1295 1324 "flags.ml" 37 1295 1326
+type(
+  (Tags.t -> Command.spec) ref -> (Tags.t -> Command.spec) -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"flags.ml" 37 1295 1327 "flags.ml" 37 1295 1334
+type(
+  Tags.t -> Command.spec
+)
+ident(
+  int_ref of_tags "flags.ml" 29 1098 1102 "flags.ml" 29 1098 1109
+)
+"flags.ml" 37 1295 1304 "flags.ml" 37 1295 1334
+type(
+  unit
+)
+"flags.ml" 39 1336 1340 "flags.ml" 39 1336 1351
+type(
+  string list -> Command.spec
+)
+ident(
+  def of_tag_list "flags.ml" 41 1382 1382 "flags.ml" 1 0 -1
+)
+"flags.ml" 39 1336 1352 "flags.ml" 39 1336 1353
+type(
+  string list
+)
+ident(
+  def x "flags.ml" 39 1336 1356 "flags.ml" 39 1336 1380
+)
+"flags.ml" 39 1336 1356 "flags.ml" 39 1336 1363
+type(
+  Tags.t -> Command.spec
+)
+ident(
+  int_ref of_tags "flags.ml" 29 1098 1102 "flags.ml" 29 1098 1109
+)
+"flags.ml" 39 1336 1365 "flags.ml" 39 1336 1377
+type(
+  string list -> Tags.t
+)
+ident(
+  ext_ref Tags.of_list
+)
+"flags.ml" 39 1336 1378 "flags.ml" 39 1336 1379
+type(
+  string list
+)
+ident(
+  int_ref x "flags.ml" 39 1336 1352 "flags.ml" 39 1336 1353
+)
+"flags.ml" 39 1336 1364 "flags.ml" 39 1336 1380
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"flags.ml" 39 1336 1356 "flags.ml" 39 1336 1380
+call(
+  tail
+)
+type(
+  Command.spec
+)
+"flags.ml" 41 1382 1386 "flags.ml" 41 1382 1394
+type(
+  decl -> unit
+)
+ident(
+  def add_decl "flags.ml" 44 1437 1437 "flags.ml" 1 0 -1
+)
+"flags.ml" 41 1382 1395 "flags.ml" 41 1382 1399
+type(
+  decl
+)
+ident(
+  def decl "flags.ml" 42 1402 1404 "flags.ml" 42 1402 1435
+)
+"flags.ml" 42 1402 1404 "flags.ml" 42 1402 1413
+type(
+  decl list ref
+)
+ident(
+  int_ref all_decls "flags.ml" 27 1074 1078 "flags.ml" 27 1074 1087
+)
+"flags.ml" 42 1402 1414 "flags.ml" 42 1402 1416
+type(
+  decl list ref -> decl list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"flags.ml" 42 1402 1417 "flags.ml" 42 1402 1421
+type(
+  decl
+)
+ident(
+  int_ref decl "flags.ml" 41 1382 1395 "flags.ml" 41 1382 1399
+)
+"flags.ml" 42 1402 1425 "flags.ml" 42 1402 1426
+type(
+  decl list ref -> decl list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"flags.ml" 42 1402 1426 "flags.ml" 42 1402 1435
+type(
+  decl list ref
+)
+ident(
+  int_ref all_decls "flags.ml" 27 1074 1078 "flags.ml" 27 1074 1087
+)
+"flags.ml" 42 1402 1425 "flags.ml" 42 1402 1435
+type(
+  decl list
+)
+"flags.ml" 42 1402 1417 "flags.ml" 42 1402 1435
+type(
+  decl list
+)
+"flags.ml" 42 1402 1404 "flags.ml" 42 1402 1435
+type(
+  unit
+)
+"flags.ml" 44 1437 1441 "flags.ml" 44 1437 1445
+type(
+  ?deprecated:bool -> string list -> Command.spec -> unit
+)
+ident(
+  def flag "flags.ml" 48 1553 1553 "flags.ml" 1 0 -1
+)
+"flags.ml" 44 1437 1448 "flags.ml" 44 1437 1458
+type(
+  bool
+)
+"flags.ml" 44 1437 1459 "flags.ml" 44 1437 1464
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "flags.ml" 44 1437 1459 "flags.ml" 44 1437 1464
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"flags.ml" 44 1437 1466 "flags.ml" 44 1437 1470
+type(
+  string list
+)
+ident(
+  def tags "flags.ml" 44 1437 1471 "flags.ml" 46 1513 1551
+)
+"flags.ml" 44 1437 1471 "flags.ml" 44 1437 1476
+type(
+  Command.spec
+)
+ident(
+  def flags "flags.ml" 45 1479 1481 "flags.ml" 46 1513 1551
+)
+"flags.ml" 45 1479 1485 "flags.ml" 45 1479 1489
+type(
+  Tags.t
+)
+ident(
+  def tags "flags.ml" 46 1513 1515 "flags.ml" 46 1513 1551
+)
+"flags.ml" 45 1479 1492 "flags.ml" 45 1479 1504
+type(
+  string list -> Tags.t
+)
+ident(
+  ext_ref Tags.of_list
+)
+"flags.ml" 45 1479 1505 "flags.ml" 45 1479 1509
+type(
+  string list
+)
+ident(
+  int_ref tags "flags.ml" 44 1437 1466 "flags.ml" 44 1437 1470
+)
+"flags.ml" 45 1479 1492 "flags.ml" 45 1479 1509
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"flags.ml" 46 1513 1515 "flags.ml" 46 1513 1523
+type(
+  decl -> unit
+)
+ident(
+  int_ref add_decl "flags.ml" 41 1382 1386 "flags.ml" 41 1382 1394
+)
+"flags.ml" 46 1513 1526 "flags.ml" 46 1513 1530
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "flags.ml" 45 1479 1485 "flags.ml" 45 1479 1489
+)
+"flags.ml" 46 1513 1532 "flags.ml" 46 1513 1537
+type(
+  Command.spec
+)
+ident(
+  int_ref flags "flags.ml" 44 1437 1471 "flags.ml" 44 1437 1476
+)
+"flags.ml" 46 1513 1539 "flags.ml" 46 1513 1549
+type(
+  bool
+)
+ident(
+  int_ref deprecated "flags.ml" 44 1437 1448 "flags.ml" 44 1437 1458
+)
+"flags.ml" 46 1513 1524 "flags.ml" 46 1513 1551
+type(
+  decl
+)
+"flags.ml" 46 1513 1515 "flags.ml" 46 1513 1551
+call(
+  tail
+)
+type(
+  unit
+)
+"flags.ml" 45 1479 1481 "flags.ml" 46 1513 1551
+type(
+  unit
+)
+"flags.ml" 48 1553 1557 "flags.ml" 48 1553 1562
+type(
+  Tags.elt list -> Tags.elt -> (string -> Command.spec) -> unit
+)
+ident(
+  def pflag "flags.ml" 52 1683 1683 "flags.ml" 1 0 -1
+)
+"flags.ml" 48 1553 1563 "flags.ml" 48 1553 1567
+type(
+  Tags.elt list
+)
+ident(
+  def tags "flags.ml" 48 1553 1568 "flags.ml" 50 1607 1681
+)
+"flags.ml" 48 1553 1568 "flags.ml" 48 1553 1572
+type(
+  Tags.elt
+)
+ident(
+  def ptag "flags.ml" 48 1553 1573 "flags.ml" 50 1607 1681
+)
+"flags.ml" 48 1553 1573 "flags.ml" 48 1553 1578
+type(
+  string -> Command.spec
+)
+ident(
+  def flags "flags.ml" 49 1581 1583 "flags.ml" 50 1607 1681
+)
+"flags.ml" 49 1581 1583 "flags.ml" 49 1581 1601
+type(
+  Tags.elt -> (string -> unit) -> unit
+)
+ident(
+  ext_ref Param_tags.declare
+)
+"flags.ml" 49 1581 1602 "flags.ml" 49 1581 1606
+type(
+  Tags.elt
+)
+ident(
+  int_ref ptag "flags.ml" 48 1553 1568 "flags.ml" 48 1553 1572
+)
+"flags.ml" 50 1607 1616 "flags.ml" 50 1607 1621
+type(
+  string
+)
+ident(
+  def param "flags.ml" 50 1607 1625 "flags.ml" 50 1607 1680
+)
+"flags.ml" 50 1607 1625 "flags.ml" 50 1607 1629
+type(
+  ?deprecated:bool -> Tags.elt list -> Command.spec -> unit
+)
+ident(
+  int_ref flag "flags.ml" 44 1437 1441 "flags.ml" 44 1437 1445
+)
+"flags.ml" 50 1607 1631 "flags.ml" 50 1607 1646
+type(
+  Tags.elt -> string -> Tags.elt
+)
+ident(
+  ext_ref Param_tags.make
+)
+"flags.ml" 50 1607 1647 "flags.ml" 50 1607 1651
+type(
+  Tags.elt
+)
+ident(
+  int_ref ptag "flags.ml" 48 1553 1568 "flags.ml" 48 1553 1572
+)
+"flags.ml" 50 1607 1652 "flags.ml" 50 1607 1657
+type(
+  string
+)
+ident(
+  int_ref param "flags.ml" 50 1607 1616 "flags.ml" 50 1607 1621
+)
+"flags.ml" 50 1607 1631 "flags.ml" 50 1607 1657
+call(
+  stack
+)
+type(
+  Tags.elt
+)
+"flags.ml" 50 1607 1661 "flags.ml" 50 1607 1665
+type(
+  Tags.elt list
+)
+ident(
+  int_ref tags "flags.ml" 48 1553 1563 "flags.ml" 48 1553 1567
+)
+"flags.ml" 50 1607 1630 "flags.ml" 50 1607 1666
+type(
+  Tags.elt list
+)
+"flags.ml" 50 1607 1668 "flags.ml" 50 1607 1673
+type(
+  string -> Command.spec
+)
+ident(
+  int_ref flags "flags.ml" 48 1553 1573 "flags.ml" 48 1553 1578
+)
+"flags.ml" 50 1607 1674 "flags.ml" 50 1607 1679
+type(
+  string
+)
+ident(
+  int_ref param "flags.ml" 50 1607 1616 "flags.ml" 50 1607 1621
+)
+"flags.ml" 50 1607 1667 "flags.ml" 50 1607 1680
+call(
+  stack
+)
+type(
+  Command.spec
+)
+"flags.ml" 50 1607 1625 "flags.ml" 50 1607 1680
+call(
+  tail
+)
+type(
+  unit
+)
+"flags.ml" 50 1607 1611 "flags.ml" 50 1607 1681
+type(
+  string -> unit
+)
+"flags.ml" 49 1581 1583 "flags.ml" 50 1607 1681
+call(
+  tail
+)
+type(
+  unit
+)
+"flags.ml" 52 1683 1687 "flags.ml" 52 1683 1690
+type(
+  'a -> 'a list -> 'a list
+)
+ident(
+  def add "flags.ml" 53 1706 1706 "flags.ml" 1 0 -1
+)
+"flags.ml" 52 1683 1691 "flags.ml" 52 1683 1692
+type(
+  'a
+)
+ident(
+  def x "flags.ml" 52 1683 1693 "flags.ml" 52 1683 1705
+)
+"flags.ml" 52 1683 1693 "flags.ml" 52 1683 1695
+type(
+  'a list
+)
+ident(
+  def xs "flags.ml" 52 1683 1698 "flags.ml" 52 1683 1705
+)
+"flags.ml" 52 1683 1698 "flags.ml" 52 1683 1699
+type(
+  'a
+)
+ident(
+  int_ref x "flags.ml" 52 1683 1691 "flags.ml" 52 1683 1692
+)
+"flags.ml" 52 1683 1703 "flags.ml" 52 1683 1705
+type(
+  'a list
+)
+ident(
+  int_ref xs "flags.ml" 52 1683 1693 "flags.ml" 52 1683 1695
+)
+"flags.ml" 52 1683 1698 "flags.ml" 52 1683 1705
+type(
+  'a list
+)
+"flags.ml" 53 1706 1710 "flags.ml" 53 1706 1716
+type(
+  'a -> 'a list -> 'a list
+)
+ident(
+  def remove "flags.ml" 55 1754 1754 "flags.ml" 1 0 -1
+)
+"flags.ml" 53 1706 1717 "flags.ml" 53 1706 1719
+type(
+  'a
+)
+ident(
+  def me "flags.ml" 53 1706 1722 "flags.ml" 53 1706 1752
+)
+"flags.ml" 53 1706 1722 "flags.ml" 53 1706 1733
+type(
+  ('a -> bool) -> 'a list -> 'a list
+)
+ident(
+  ext_ref List.filter
+)
+"flags.ml" 53 1706 1739 "flags.ml" 53 1706 1740
+type(
+  'a
+)
+ident(
+  def x "flags.ml" 53 1706 1744 "flags.ml" 53 1706 1751
+)
+"flags.ml" 53 1706 1744 "flags.ml" 53 1706 1746
+type(
+  'a
+)
+ident(
+  int_ref me "flags.ml" 53 1706 1717 "flags.ml" 53 1706 1719
+)
+"flags.ml" 53 1706 1747 "flags.ml" 53 1706 1749
+type(
+  'a -> 'a -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"flags.ml" 53 1706 1750 "flags.ml" 53 1706 1751
+type(
+  'a
+)
+ident(
+  int_ref x "flags.ml" 53 1706 1739 "flags.ml" 53 1706 1740
+)
+"flags.ml" 53 1706 1744 "flags.ml" 53 1706 1751
+type(
+  bool
+)
+"flags.ml" 53 1706 1734 "flags.ml" 53 1706 1752
+type(
+  'a -> bool
+)
+"flags.ml" 53 1706 1722 "flags.ml" 53 1706 1752
+call(
+  tail
+)
+type(
+  'a list -> 'a list
+)
+"flags.ml" 55 1754 1758 "flags.ml" 55 1754 1770
+type(
+  decl -> unit
+)
+ident(
+  def pretty_print "flags.ml" 61 2032 2032 "flags.ml" 1 0 -1
+)
+"flags.ml" 55 1754 1773 "flags.ml" 55 1754 1777
+type(
+  Tags.t
+)
+ident(
+  def tags "flags.ml" 56 1801 1803 "flags.ml" 59 1965 2030
+)
+"flags.ml" 55 1754 1779 "flags.ml" 55 1754 1784
+type(
+  Command.spec
+)
+ident(
+  def flags "flags.ml" 56 1801 1803 "flags.ml" 59 1965 2030
+)
+"flags.ml" 55 1754 1786 "flags.ml" 55 1754 1796
+type(
+  bool
+)
+ident(
+  def deprecated "flags.ml" 56 1801 1803 "flags.ml" 59 1965 2030
+)
+"flags.ml" 55 1754 1771 "flags.ml" 55 1754 1798
+type(
+  decl
+)
+"flags.ml" 56 1801 1807 "flags.ml" 56 1801 1812
+type(
+  string
+)
+ident(
+  def sflag "flags.ml" 57 1855 1857 "flags.ml" 59 1965 2030
+)
+"flags.ml" 56 1801 1815 "flags.ml" 56 1801 1845
+type(
+  Command.spec -> string
+)
+ident(
+  ext_ref Command.string_of_command_spec
+)
+"flags.ml" 56 1801 1846 "flags.ml" 56 1801 1851
+type(
+  Command.spec
+)
+ident(
+  int_ref flags "flags.ml" 55 1754 1779 "flags.ml" 55 1754 1784
+)
+"flags.ml" 56 1801 1815 "flags.ml" 56 1801 1851
+call(
+  stack
+)
+type(
+  string
+)
+"flags.ml" 57 1855 1861 "flags.ml" 57 1855 1867
+type(
+  string
+)
+ident(
+  def header "flags.ml" 58 1922 1924 "flags.ml" 59 1965 2030
+)
+"flags.ml" 57 1855 1873 "flags.ml" 57 1855 1883
+type(
+  bool
+)
+ident(
+  int_ref deprecated "flags.ml" 55 1754 1786 "flags.ml" 55 1754 1796
+)
+"flags.ml" 57 1855 1889 "flags.ml" 57 1855 1906
+type(
+  string
+)
+"flags.ml" 57 1855 1912 "flags.ml" 57 1855 1918
+type(
+  string
+)
+"flags.ml" 57 1855 1870 "flags.ml" 57 1855 1918
+type(
+  string
+)
+"flags.ml" 58 1922 1928 "flags.ml" 58 1922 1930
+type(
+  ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  def pp "flags.ml" 59 1965 1967 "flags.ml" 59 1965 2030
+)
+"flags.ml" 58 1922 1931 "flags.ml" 58 1922 1934
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  def fmt "flags.ml" 58 1922 1937 "flags.ml" 58 1922 1961
+)
+"flags.ml" 58 1922 1937 "flags.ml" 58 1922 1952
+type(
+  int -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Log.raw_dprintf
+)
+"flags.ml" 58 1922 1953 "flags.ml" 58 1922 1957
+type(
+  int
+)
+"flags.ml" 58 1922 1958 "flags.ml" 58 1922 1961
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  int_ref fmt "flags.ml" 58 1922 1931 "flags.ml" 58 1922 1934
+)
+"flags.ml" 58 1922 1937 "flags.ml" 58 1922 1961
+call(
+  tail
+)
+type(
+  'a
+)
+"flags.ml" 59 1965 1967 "flags.ml" 59 1965 1969
+type(
+  (string -> (Format.formatter -> Tags.t -> unit) -> Tags.t -> string -> unit,
+   Format.formatter, unit)
+  format ->
+  string -> (Format.formatter -> Tags.t -> unit) -> Tags.t -> string -> unit
+)
+ident(
+  int_ref pp "flags.ml" 58 1922 1928 "flags.ml" 58 1922 1930
+)
+"flags.ml" 59 1965 1970 "flags.ml" 59 1965 2001
+type(
+  (string -> (Format.formatter -> Tags.t -> unit) -> Tags.t -> string -> unit,
+   Format.formatter, unit)
+  format
+)
+"flags.ml" 59 1965 2002 "flags.ml" 59 1965 2008
+type(
+  string
+)
+ident(
+  int_ref header "flags.ml" 57 1855 1861 "flags.ml" 57 1855 1867
+)
+"flags.ml" 59 1965 2009 "flags.ml" 59 1965 2019
+type(
+  Format.formatter -> Tags.t -> unit
+)
+ident(
+  ext_ref Tags.print
+)
+"flags.ml" 59 1965 2020 "flags.ml" 59 1965 2024
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "flags.ml" 55 1754 1773 "flags.ml" 55 1754 1777
+)
+"flags.ml" 59 1965 2025 "flags.ml" 59 1965 2030
+type(
+  string
+)
+ident(
+  int_ref sflag "flags.ml" 56 1801 1807 "flags.ml" 56 1801 1812
+)
+"flags.ml" 59 1965 1967 "flags.ml" 59 1965 2030
+call(
+  tail
+)
+type(
+  unit
+)
+"flags.ml" 58 1922 1924 "flags.ml" 59 1965 2030
+type(
+  unit
+)
+"flags.ml" 57 1855 1857 "flags.ml" 59 1965 2030
+type(
+  unit
+)
+"flags.ml" 56 1801 1803 "flags.ml" 59 1965 2030
+type(
+  unit
+)
+"flags.ml" 61 2032 2036 "flags.ml" 61 2032 2054
+type(
+  unit -> unit
+)
+ident(
+  def show_documentation "flags.ml" 71 2294 2294 "flags.ml" 1 0 -1
+)
+"flags.ml" 61 2032 2055 "flags.ml" 61 2032 2057
+type(
+  unit
+)
+"flags.ml" 62 2060 2062 "flags.ml" 62 2060 2071
+type(
+  (decl -> unit) -> decl list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"flags.ml" 63 2072 2081 "flags.ml" 63 2072 2085
+type(
+  decl
+)
+ident(
+  def decl "flags.ml" 63 2072 2089 "flags.ml" 63 2072 2134
+)
+"flags.ml" 63 2072 2092 "flags.ml" 63 2072 2095
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"flags.ml" 63 2072 2096 "flags.ml" 63 2072 2100
+type(
+  decl
+)
+ident(
+  int_ref decl "flags.ml" 63 2072 2081 "flags.ml" 63 2072 2085
+)
+"flags.ml" 63 2072 2096 "flags.ml" 63 2072 2111
+type(
+  bool
+)
+"flags.ml" 63 2072 2092 "flags.ml" 63 2072 2111
+type(
+  bool
+)
+"flags.ml" 63 2072 2117 "flags.ml" 63 2072 2129
+type(
+  decl -> unit
+)
+ident(
+  int_ref pretty_print "flags.ml" 55 1754 1758 "flags.ml" 55 1754 1770
+)
+"flags.ml" 63 2072 2130 "flags.ml" 63 2072 2134
+type(
+  decl
+)
+ident(
+  int_ref decl "flags.ml" 63 2072 2081 "flags.ml" 63 2072 2085
+)
+"flags.ml" 63 2072 2117 "flags.ml" 63 2072 2134
+call(
+  tail
+)
+type(
+  unit
+)
+"flags.ml" 63 2072 2089 "flags.ml" 63 2072 2134
+type(
+  unit
+)
+"flags.ml" 63 2072 2076 "flags.ml" 63 2072 2135
+type(
+  decl -> unit
+)
+"flags.ml" 64 2136 2140 "flags.ml" 64 2136 2141
+type(
+  decl list ref -> decl list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"flags.ml" 64 2136 2141 "flags.ml" 64 2136 2150
+type(
+  decl list ref
+)
+ident(
+  int_ref all_decls "flags.ml" 27 1074 1078 "flags.ml" 27 1074 1087
+)
+"flags.ml" 64 2136 2140 "flags.ml" 64 2136 2150
+type(
+  decl list
+)
+"flags.ml" 62 2060 2062 "flags.ml" 64 2136 2150
+call(
+  stack
+)
+type(
+  unit
+)
+"flags.ml" 65 2152 2154 "flags.ml" 65 2152 2163
+type(
+  (decl -> unit) -> decl list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"flags.ml" 66 2164 2173 "flags.ml" 66 2164 2177
+type(
+  decl
+)
+ident(
+  def decl "flags.ml" 66 2164 2181 "flags.ml" 66 2164 2222
+)
+"flags.ml" 66 2164 2184 "flags.ml" 66 2164 2188
+type(
+  decl
+)
+ident(
+  int_ref decl "flags.ml" 66 2164 2173 "flags.ml" 66 2164 2177
+)
+"flags.ml" 66 2164 2184 "flags.ml" 66 2164 2199
+type(
+  bool
+)
+"flags.ml" 66 2164 2205 "flags.ml" 66 2164 2217
+type(
+  decl -> unit
+)
+ident(
+  int_ref pretty_print "flags.ml" 55 1754 1758 "flags.ml" 55 1754 1770
+)
+"flags.ml" 66 2164 2218 "flags.ml" 66 2164 2222
+type(
+  decl
+)
+ident(
+  int_ref decl "flags.ml" 66 2164 2173 "flags.ml" 66 2164 2177
+)
+"flags.ml" 66 2164 2205 "flags.ml" 66 2164 2222
+call(
+  tail
+)
+type(
+  unit
+)
+"flags.ml" 66 2164 2181 "flags.ml" 66 2164 2222
+type(
+  unit
+)
+"flags.ml" 66 2164 2168 "flags.ml" 66 2164 2223
+type(
+  decl -> unit
+)
+"flags.ml" 67 2224 2228 "flags.ml" 67 2224 2229
+type(
+  decl list ref -> decl list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"flags.ml" 67 2224 2229 "flags.ml" 67 2224 2238
+type(
+  decl list ref
+)
+ident(
+  int_ref all_decls "flags.ml" 27 1074 1078 "flags.ml" 27 1074 1087
+)
+"flags.ml" 67 2224 2228 "flags.ml" 67 2224 2238
+type(
+  decl list
+)
+"flags.ml" 65 2152 2154 "flags.ml" 67 2224 2238
+call(
+  stack
+)
+type(
+  unit
+)
+"flags.ml" 68 2240 2246 "flags.ml" 68 2240 2248
+type(
+  ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  def pp "flags.ml" 69 2283 2285 "flags.ml" 69 2283 2292
+)
+"flags.ml" 68 2240 2249 "flags.ml" 68 2240 2252
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  def fmt "flags.ml" 68 2240 2255 "flags.ml" 68 2240 2279
+)
+"flags.ml" 68 2240 2255 "flags.ml" 68 2240 2270
+type(
+  int -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Log.raw_dprintf
+)
+"flags.ml" 68 2240 2271 "flags.ml" 68 2240 2275
+type(
+  int
+)
+"flags.ml" 68 2240 2276 "flags.ml" 68 2240 2279
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  int_ref fmt "flags.ml" 68 2240 2249 "flags.ml" 68 2240 2252
+)
+"flags.ml" 68 2240 2255 "flags.ml" 68 2240 2279
+call(
+  tail
+)
+type(
+  'a
+)
+"flags.ml" 69 2283 2285 "flags.ml" 69 2283 2287
+type(
+  (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  int_ref pp "flags.ml" 68 2240 2246 "flags.ml" 68 2240 2248
+)
+"flags.ml" 69 2283 2288 "flags.ml" 69 2283 2292
+type(
+  (unit, Format.formatter, unit) format
+)
+"flags.ml" 69 2283 2285 "flags.ml" 69 2283 2292
+call(
+  tail
+)
+type(
+  unit
+)
+"flags.ml" 68 2240 2242 "flags.ml" 69 2283 2292
+type(
+  unit
+)
+"flags.ml" 65 2152 2154 "flags.ml" 69 2283 2292
+type(
+  unit
+)
+"flags.ml" 62 2060 2062 "flags.ml" 69 2283 2292
+type(
+  unit
+)
+"flags.ml" 71 2294 2298 "flags.ml" 71 2294 2307
+type(
+  Tags.t ref
+)
+ident(
+  def used_tags "flags.ml" 73 2326 2326 "flags.ml" 1 0 -1
+)
+"flags.ml" 71 2294 2310 "flags.ml" 71 2294 2313
+type(
+  Tags.t -> Tags.t ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"flags.ml" 71 2294 2314 "flags.ml" 71 2294 2324
+type(
+  Tags.t
+)
+ident(
+  ext_ref Tags.empty
+)
+"flags.ml" 71 2294 2310 "flags.ml" 71 2294 2324
+type(
+  Tags.t ref
+)
+"flags.ml" 73 2326 2330 "flags.ml" 73 2326 2343
+type(
+  Tags.elt -> unit
+)
+ident(
+  def mark_tag_used "flags.ml" 76 2390 2390 "flags.ml" 1 0 -1
+)
+"flags.ml" 73 2326 2344 "flags.ml" 73 2326 2347
+type(
+  Tags.elt
+)
+ident(
+  def tag "flags.ml" 74 2350 2352 "flags.ml" 74 2350 2388
+)
+"flags.ml" 74 2350 2352 "flags.ml" 74 2350 2361
+type(
+  Tags.t ref
+)
+ident(
+  int_ref used_tags "flags.ml" 71 2294 2298 "flags.ml" 71 2294 2307
+)
+"flags.ml" 74 2350 2362 "flags.ml" 74 2350 2364
+type(
+  Tags.t ref -> Tags.t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"flags.ml" 74 2350 2365 "flags.ml" 74 2350 2373
+type(
+  Tags.elt -> Tags.t -> Tags.t
+)
+ident(
+  ext_ref Tags.add
+)
+"flags.ml" 74 2350 2374 "flags.ml" 74 2350 2377
+type(
+  Tags.elt
+)
+ident(
+  int_ref tag "flags.ml" 73 2326 2344 "flags.ml" 73 2326 2347
+)
+"flags.ml" 74 2350 2378 "flags.ml" 74 2350 2379
+type(
+  Tags.t ref -> Tags.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"flags.ml" 74 2350 2379 "flags.ml" 74 2350 2388
+type(
+  Tags.t ref
+)
+ident(
+  int_ref used_tags "flags.ml" 71 2294 2298 "flags.ml" 71 2294 2307
+)
+"flags.ml" 74 2350 2378 "flags.ml" 74 2350 2388
+type(
+  Tags.t
+)
+"flags.ml" 74 2350 2365 "flags.ml" 74 2350 2388
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"flags.ml" 74 2350 2352 "flags.ml" 74 2350 2388
+type(
+  unit
+)
+"flags.ml" 76 2390 2394 "flags.ml" 76 2390 2407
+type(
+  unit -> Tags.t
+)
+ident(
+  def get_used_tags "flags.ml" 78 2473 2498 "flags.ml" 1 0 -1
+)
+"flags.ml" 76 2390 2408 "flags.ml" 76 2390 2410
+type(
+  unit
+)
+"flags.ml" 77 2413 2415 "flags.ml" 77 2413 2429
+type(
+  (Tags.t -> decl -> Tags.t) -> Tags.t -> decl list -> Tags.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"flags.ml" 77 2413 2435 "flags.ml" 77 2413 2438
+type(
+  Tags.t
+)
+ident(
+  def acc "flags.ml" 77 2413 2439 "flags.ml" 77 2413 2471
+)
+"flags.ml" 77 2413 2439 "flags.ml" 77 2413 2443
+type(
+  decl
+)
+ident(
+  def decl "flags.ml" 77 2413 2447 "flags.ml" 77 2413 2471
+)
+"flags.ml" 77 2413 2447 "flags.ml" 77 2413 2457
+type(
+  Tags.t -> Tags.t -> Tags.t
+)
+ident(
+  ext_ref Tags.union
+)
+"flags.ml" 77 2413 2458 "flags.ml" 77 2413 2461
+type(
+  Tags.t
+)
+ident(
+  int_ref acc "flags.ml" 77 2413 2435 "flags.ml" 77 2413 2438
+)
+"flags.ml" 77 2413 2462 "flags.ml" 77 2413 2466
+type(
+  decl
+)
+ident(
+  int_ref decl "flags.ml" 77 2413 2439 "flags.ml" 77 2413 2443
+)
+"flags.ml" 77 2413 2462 "flags.ml" 77 2413 2471
+type(
+  Tags.t
+)
+"flags.ml" 77 2413 2447 "flags.ml" 77 2413 2471
+call(
+  tail
+)
+type(
+  Tags.t
+)
+"flags.ml" 77 2413 2430 "flags.ml" 77 2413 2472
+type(
+  Tags.t -> decl -> Tags.t
+)
+"flags.ml" 78 2473 2477 "flags.ml" 78 2473 2478
+type(
+  Tags.t ref -> Tags.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"flags.ml" 78 2473 2478 "flags.ml" 78 2473 2487
+type(
+  Tags.t ref
+)
+ident(
+  int_ref used_tags "flags.ml" 71 2294 2298 "flags.ml" 71 2294 2307
+)
+"flags.ml" 78 2473 2477 "flags.ml" 78 2473 2487
+type(
+  Tags.t
+)
+"flags.ml" 78 2473 2488 "flags.ml" 78 2473 2489
+type(
+  decl list ref -> decl list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"flags.ml" 78 2473 2489 "flags.ml" 78 2473 2498
+type(
+  decl list ref
+)
+ident(
+  int_ref all_decls "flags.ml" 27 1074 1078 "flags.ml" 27 1074 1087
+)
+"flags.ml" 78 2473 2488 "flags.ml" 78 2473 2498
+type(
+  decl list
+)
+"flags.ml" 77 2413 2415 "flags.ml" 78 2473 2498
+call(
+  tail
+)
+type(
+  Tags.t
+)

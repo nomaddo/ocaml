@@ -1,0 +1,2778 @@
+"lexing.ml" 23 1045 1049 "lexing.ml" 23 1045 1058
+type(
+  position
+)
+ident(
+  def dummy_pos "lexing.ml" 30 1132 1132 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 24 1063 1077 "lexing.ml" 24 1063 1079
+type(
+  string
+)
+"lexing.ml" 25 1081 1094 "lexing.ml" 25 1081 1095
+type(
+  int
+)
+"lexing.ml" 26 1097 1109 "lexing.ml" 26 1097 1110
+type(
+  int
+)
+"lexing.ml" 27 1112 1125 "lexing.ml" 27 1112 1127
+type(
+  int
+)
+"lexing.ml" 23 1045 1061 "lexing.ml" 28 1129 1130
+type(
+  position
+)
+"lexing.ml" 62 2043 2047 "lexing.ml" 62 2043 2053
+type(
+  lex_tables -> int -> lexbuf -> int
+)
+ident(
+  def engine "lexing.ml" 72 2312 2312 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 62 2043 2054 "lexing.ml" 62 2043 2057
+type(
+  lex_tables
+)
+ident(
+  def tbl "lexing.ml" 62 2043 2058 "lexing.ml" 69 2299 2307
+)
+"lexing.ml" 62 2043 2058 "lexing.ml" 62 2043 2063
+type(
+  int
+)
+ident(
+  def state "lexing.ml" 62 2043 2064 "lexing.ml" 69 2299 2307
+)
+"lexing.ml" 62 2043 2064 "lexing.ml" 62 2043 2067
+type(
+  lexbuf
+)
+ident(
+  def buf "lexing.ml" 63 2070 2072 "lexing.ml" 69 2299 2307
+)
+"lexing.ml" 63 2070 2076 "lexing.ml" 63 2070 2082
+type(
+  int
+)
+ident(
+  def result "lexing.ml" 64 2111 2113 "lexing.ml" 69 2299 2307
+)
+"lexing.ml" 63 2070 2085 "lexing.ml" 63 2070 2093
+type(
+  lex_tables -> int -> lexbuf -> int
+)
+ident(
+  int_ref c_engine "lexing.ml" 58 1862 1862 "lexing.ml" 58 1862 1936
+)
+"lexing.ml" 63 2070 2094 "lexing.ml" 63 2070 2097
+type(
+  lex_tables
+)
+ident(
+  int_ref tbl "lexing.ml" 62 2043 2054 "lexing.ml" 62 2043 2057
+)
+"lexing.ml" 63 2070 2098 "lexing.ml" 63 2070 2103
+type(
+  int
+)
+ident(
+  int_ref state "lexing.ml" 62 2043 2058 "lexing.ml" 62 2043 2063
+)
+"lexing.ml" 63 2070 2104 "lexing.ml" 63 2070 2107
+type(
+  lexbuf
+)
+ident(
+  int_ref buf "lexing.ml" 62 2043 2064 "lexing.ml" 62 2043 2067
+)
+"lexing.ml" 63 2070 2085 "lexing.ml" 63 2070 2107
+type(
+  int
+)
+"lexing.ml" 64 2111 2116 "lexing.ml" 64 2111 2122
+type(
+  int
+)
+ident(
+  int_ref result "lexing.ml" 63 2070 2076 "lexing.ml" 63 2070 2082
+)
+"lexing.ml" 64 2111 2123 "lexing.ml" 64 2111 2125
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"lexing.ml" 64 2111 2126 "lexing.ml" 64 2111 2127
+type(
+  int
+)
+"lexing.ml" 64 2111 2116 "lexing.ml" 64 2111 2127
+type(
+  bool
+)
+"lexing.ml" 65 2139 2143 "lexing.ml" 65 2139 2146
+type(
+  lexbuf
+)
+ident(
+  int_ref buf "lexing.ml" 62 2043 2064 "lexing.ml" 62 2043 2067
+)
+"lexing.ml" 65 2139 2162 "lexing.ml" 65 2139 2165
+type(
+  lexbuf
+)
+ident(
+  int_ref buf "lexing.ml" 62 2043 2064 "lexing.ml" 62 2043 2067
+)
+"lexing.ml" 65 2139 2162 "lexing.ml" 65 2139 2176
+type(
+  position
+)
+"lexing.ml" 65 2139 2143 "lexing.ml" 65 2139 2176
+type(
+  unit
+)
+"lexing.ml" 66 2178 2182 "lexing.ml" 66 2178 2185
+type(
+  lexbuf
+)
+ident(
+  int_ref buf "lexing.ml" 62 2043 2064 "lexing.ml" 62 2043 2067
+)
+"lexing.ml" 66 2178 2201 "lexing.ml" 66 2178 2204
+type(
+  lexbuf
+)
+ident(
+  int_ref buf "lexing.ml" 62 2043 2064 "lexing.ml" 62 2043 2067
+)
+"lexing.ml" 66 2178 2201 "lexing.ml" 66 2178 2215
+type(
+  position
+)
+"lexing.ml" 67 2216 2255 "lexing.ml" 67 2216 2258
+type(
+  lexbuf
+)
+ident(
+  int_ref buf "lexing.ml" 62 2043 2064 "lexing.ml" 62 2043 2067
+)
+"lexing.ml" 67 2216 2255 "lexing.ml" 67 2216 2270
+type(
+  int
+)
+"lexing.ml" 67 2216 2271 "lexing.ml" 67 2216 2272
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"lexing.ml" 67 2216 2273 "lexing.ml" 67 2216 2276
+type(
+  lexbuf
+)
+ident(
+  int_ref buf "lexing.ml" 62 2043 2064 "lexing.ml" 62 2043 2067
+)
+"lexing.ml" 67 2216 2273 "lexing.ml" 67 2216 2289
+type(
+  int
+)
+"lexing.ml" 67 2216 2255 "lexing.ml" 67 2216 2289
+type(
+  int
+)
+"lexing.ml" 66 2178 2200 "lexing.ml" 67 2216 2290
+type(
+  position
+)
+"lexing.ml" 66 2178 2182 "lexing.ml" 67 2216 2291
+type(
+  unit
+)
+"lexing.ml" 64 2111 2133 "lexing.ml" 68 2292 2297
+type(
+  unit
+)
+"lexing.ml" 64 2111 2113 "lexing.ml" 68 2292 2297
+type(
+  unit
+)
+"lexing.ml" 69 2299 2301 "lexing.ml" 69 2299 2307
+type(
+  int
+)
+ident(
+  int_ref result "lexing.ml" 63 2070 2076 "lexing.ml" 63 2070 2082
+)
+"lexing.ml" 64 2111 2113 "lexing.ml" 69 2299 2307
+type(
+  int
+)
+"lexing.ml" 63 2070 2072 "lexing.ml" 69 2299 2307
+type(
+  int
+)
+"lexing.ml" 72 2312 2316 "lexing.ml" 72 2312 2326
+type(
+  lex_tables -> int -> lexbuf -> int
+)
+ident(
+  def new_engine "lexing.ml" 82 2589 2589 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 72 2312 2327 "lexing.ml" 72 2312 2330
+type(
+  lex_tables
+)
+ident(
+  def tbl "lexing.ml" 72 2312 2331 "lexing.ml" 79 2576 2584
+)
+"lexing.ml" 72 2312 2331 "lexing.ml" 72 2312 2336
+type(
+  int
+)
+ident(
+  def state "lexing.ml" 72 2312 2337 "lexing.ml" 79 2576 2584
+)
+"lexing.ml" 72 2312 2337 "lexing.ml" 72 2312 2340
+type(
+  lexbuf
+)
+ident(
+  def buf "lexing.ml" 73 2343 2345 "lexing.ml" 79 2576 2584
+)
+"lexing.ml" 73 2343 2349 "lexing.ml" 73 2343 2355
+type(
+  int
+)
+ident(
+  def result "lexing.ml" 74 2388 2390 "lexing.ml" 79 2576 2584
+)
+"lexing.ml" 73 2343 2358 "lexing.ml" 73 2343 2370
+type(
+  lex_tables -> int -> lexbuf -> int
+)
+ident(
+  int_ref c_new_engine "lexing.ml" 59 1937 1937 "lexing.ml" 60 1996 2041
+)
+"lexing.ml" 73 2343 2371 "lexing.ml" 73 2343 2374
+type(
+  lex_tables
+)
+ident(
+  int_ref tbl "lexing.ml" 72 2312 2327 "lexing.ml" 72 2312 2330
+)
+"lexing.ml" 73 2343 2375 "lexing.ml" 73 2343 2380
+type(
+  int
+)
+ident(
+  int_ref state "lexing.ml" 72 2312 2331 "lexing.ml" 72 2312 2336
+)
+"lexing.ml" 73 2343 2381 "lexing.ml" 73 2343 2384
+type(
+  lexbuf
+)
+ident(
+  int_ref buf "lexing.ml" 72 2312 2337 "lexing.ml" 72 2312 2340
+)
+"lexing.ml" 73 2343 2358 "lexing.ml" 73 2343 2384
+type(
+  int
+)
+"lexing.ml" 74 2388 2393 "lexing.ml" 74 2388 2399
+type(
+  int
+)
+ident(
+  int_ref result "lexing.ml" 73 2343 2349 "lexing.ml" 73 2343 2355
+)
+"lexing.ml" 74 2388 2400 "lexing.ml" 74 2388 2402
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"lexing.ml" 74 2388 2403 "lexing.ml" 74 2388 2404
+type(
+  int
+)
+"lexing.ml" 74 2388 2393 "lexing.ml" 74 2388 2404
+type(
+  bool
+)
+"lexing.ml" 75 2416 2420 "lexing.ml" 75 2416 2423
+type(
+  lexbuf
+)
+ident(
+  int_ref buf "lexing.ml" 72 2312 2337 "lexing.ml" 72 2312 2340
+)
+"lexing.ml" 75 2416 2439 "lexing.ml" 75 2416 2442
+type(
+  lexbuf
+)
+ident(
+  int_ref buf "lexing.ml" 72 2312 2337 "lexing.ml" 72 2312 2340
+)
+"lexing.ml" 75 2416 2439 "lexing.ml" 75 2416 2453
+type(
+  position
+)
+"lexing.ml" 75 2416 2420 "lexing.ml" 75 2416 2453
+type(
+  unit
+)
+"lexing.ml" 76 2455 2459 "lexing.ml" 76 2455 2462
+type(
+  lexbuf
+)
+ident(
+  int_ref buf "lexing.ml" 72 2312 2337 "lexing.ml" 72 2312 2340
+)
+"lexing.ml" 76 2455 2478 "lexing.ml" 76 2455 2481
+type(
+  lexbuf
+)
+ident(
+  int_ref buf "lexing.ml" 72 2312 2337 "lexing.ml" 72 2312 2340
+)
+"lexing.ml" 76 2455 2478 "lexing.ml" 76 2455 2492
+type(
+  position
+)
+"lexing.ml" 77 2493 2532 "lexing.ml" 77 2493 2535
+type(
+  lexbuf
+)
+ident(
+  int_ref buf "lexing.ml" 72 2312 2337 "lexing.ml" 72 2312 2340
+)
+"lexing.ml" 77 2493 2532 "lexing.ml" 77 2493 2547
+type(
+  int
+)
+"lexing.ml" 77 2493 2548 "lexing.ml" 77 2493 2549
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"lexing.ml" 77 2493 2550 "lexing.ml" 77 2493 2553
+type(
+  lexbuf
+)
+ident(
+  int_ref buf "lexing.ml" 72 2312 2337 "lexing.ml" 72 2312 2340
+)
+"lexing.ml" 77 2493 2550 "lexing.ml" 77 2493 2566
+type(
+  int
+)
+"lexing.ml" 77 2493 2532 "lexing.ml" 77 2493 2566
+type(
+  int
+)
+"lexing.ml" 76 2455 2477 "lexing.ml" 77 2493 2567
+type(
+  position
+)
+"lexing.ml" 76 2455 2459 "lexing.ml" 77 2493 2568
+type(
+  unit
+)
+"lexing.ml" 74 2388 2410 "lexing.ml" 78 2569 2574
+type(
+  unit
+)
+"lexing.ml" 74 2388 2390 "lexing.ml" 78 2569 2574
+type(
+  unit
+)
+"lexing.ml" 79 2576 2578 "lexing.ml" 79 2576 2584
+type(
+  int
+)
+ident(
+  int_ref result "lexing.ml" 73 2343 2349 "lexing.ml" 73 2343 2355
+)
+"lexing.ml" 74 2388 2390 "lexing.ml" 79 2576 2584
+type(
+  int
+)
+"lexing.ml" 73 2343 2345 "lexing.ml" 79 2576 2584
+type(
+  int
+)
+"lexing.ml" 82 2589 2593 "lexing.ml" 82 2589 2603
+type(
+  (bytes -> int -> int) -> bytes -> lexbuf -> unit
+)
+ident(
+  def lex_refill "lexing.ml" 139 5029 5029 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 82 2589 2604 "lexing.ml" 82 2589 2612
+type(
+  bytes -> int -> int
+)
+ident(
+  def read_fun "lexing.ml" 82 2589 2613 "lexing.ml" 137 4975 5027
+)
+"lexing.ml" 82 2589 2613 "lexing.ml" 82 2589 2623
+type(
+  bytes
+)
+ident(
+  def aux_buffer "lexing.ml" 82 2589 2624 "lexing.ml" 137 4975 5027
+)
+"lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+type(
+  lexbuf
+)
+ident(
+  def lexbuf "lexing.ml" 83 2633 2635 "lexing.ml" 137 4975 5027
+)
+"lexing.ml" 83 2633 2639 "lexing.ml" 83 2633 2643
+type(
+  int
+)
+ident(
+  def read "lexing.ml" 85 2699 2701 "lexing.ml" 137 4975 5027
+)
+"lexing.ml" 84 2646 2650 "lexing.ml" 84 2646 2658
+type(
+  bytes -> int -> int
+)
+ident(
+  int_ref read_fun "lexing.ml" 82 2589 2604 "lexing.ml" 82 2589 2612
+)
+"lexing.ml" 84 2646 2659 "lexing.ml" 84 2646 2669
+type(
+  bytes
+)
+ident(
+  int_ref aux_buffer "lexing.ml" 82 2589 2613 "lexing.ml" 82 2589 2623
+)
+"lexing.ml" 84 2646 2671 "lexing.ml" 84 2646 2683
+type(
+  bytes -> int
+)
+ident(
+  ext_ref Bytes.length
+)
+"lexing.ml" 84 2646 2684 "lexing.ml" 84 2646 2694
+type(
+  bytes
+)
+ident(
+  int_ref aux_buffer "lexing.ml" 82 2589 2613 "lexing.ml" 82 2589 2623
+)
+"lexing.ml" 84 2646 2670 "lexing.ml" 84 2646 2695
+type(
+  int
+)
+"lexing.ml" 84 2646 2650 "lexing.ml" 84 2646 2695
+call(
+  stack
+)
+type(
+  int
+)
+"lexing.ml" 85 2699 2705 "lexing.ml" 85 2699 2706
+type(
+  int
+)
+ident(
+  def n "lexing.ml" 95 3051 3053 "lexing.ml" 137 4975 5027
+)
+"lexing.ml" 86 2709 2716 "lexing.ml" 86 2709 2720
+type(
+  int
+)
+ident(
+  int_ref read "lexing.ml" 83 2633 2639 "lexing.ml" 83 2633 2643
+)
+"lexing.ml" 86 2709 2721 "lexing.ml" 86 2709 2722
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"lexing.ml" 86 2709 2723 "lexing.ml" 86 2709 2724
+type(
+  int
+)
+"lexing.ml" 86 2709 2716 "lexing.ml" 86 2709 2724
+type(
+  bool
+)
+"lexing.ml" 87 2725 2734 "lexing.ml" 87 2725 2738
+type(
+  int
+)
+ident(
+  int_ref read "lexing.ml" 83 2633 2639 "lexing.ml" 83 2633 2643
+)
+"lexing.ml" 88 2739 2749 "lexing.ml" 88 2739 2755
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 88 2739 2775 "lexing.ml" 88 2739 2779
+type(
+  bool
+)
+"lexing.ml" 88 2739 2749 "lexing.ml" 88 2739 2779
+type(
+  unit
+)
+"lexing.ml" 88 2739 2781 "lexing.ml" 88 2739 2782
+type(
+  int
+)
+"lexing.ml" 88 2739 2748 "lexing.ml" 88 2739 2783
+type(
+  int
+)
+"lexing.ml" 86 2709 2713 "lexing.ml" 88 2739 2783
+type(
+  int
+)
+"lexing.ml" 95 3051 3056 "lexing.ml" 95 3051 3062
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 95 3051 3056 "lexing.ml" 95 3051 3077
+type(
+  int
+)
+"lexing.ml" 95 3051 3078 "lexing.ml" 95 3051 3079
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"lexing.ml" 95 3051 3080 "lexing.ml" 95 3051 3081
+type(
+  int
+)
+ident(
+  int_ref n "lexing.ml" 85 2699 2705 "lexing.ml" 85 2699 2706
+)
+"lexing.ml" 95 3051 3056 "lexing.ml" 95 3051 3081
+type(
+  int
+)
+"lexing.ml" 95 3051 3082 "lexing.ml" 95 3051 3083
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"lexing.ml" 95 3051 3084 "lexing.ml" 95 3051 3096
+type(
+  bytes -> int
+)
+ident(
+  ext_ref Bytes.length
+)
+"lexing.ml" 95 3051 3097 "lexing.ml" 95 3051 3103
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 95 3051 3097 "lexing.ml" 95 3051 3114
+type(
+  bytes
+)
+"lexing.ml" 95 3051 3084 "lexing.ml" 95 3051 3114
+type(
+  int
+)
+"lexing.ml" 95 3051 3056 "lexing.ml" 95 3051 3114
+type(
+  bool
+)
+"lexing.ml" 97 3187 3194 "lexing.ml" 97 3187 3200
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 97 3187 3194 "lexing.ml" 97 3187 3215
+type(
+  int
+)
+"lexing.ml" 97 3187 3216 "lexing.ml" 97 3187 3217
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"lexing.ml" 97 3187 3218 "lexing.ml" 97 3187 3224
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 97 3187 3218 "lexing.ml" 97 3187 3238
+type(
+  int
+)
+"lexing.ml" 97 3187 3194 "lexing.ml" 97 3187 3238
+type(
+  int
+)
+"lexing.ml" 97 3187 3239 "lexing.ml" 97 3187 3240
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"lexing.ml" 97 3187 3241 "lexing.ml" 97 3187 3242
+type(
+  int
+)
+ident(
+  int_ref n "lexing.ml" 85 2699 2705 "lexing.ml" 85 2699 2706
+)
+"lexing.ml" 97 3187 3194 "lexing.ml" 97 3187 3242
+type(
+  int
+)
+"lexing.ml" 98 3243 3250 "lexing.ml" 98 3243 3252
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"lexing.ml" 98 3243 3253 "lexing.ml" 98 3243 3265
+type(
+  bytes -> int
+)
+ident(
+  ext_ref Bytes.length
+)
+"lexing.ml" 98 3243 3266 "lexing.ml" 98 3243 3272
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 98 3243 3266 "lexing.ml" 98 3243 3283
+type(
+  bytes
+)
+"lexing.ml" 98 3243 3253 "lexing.ml" 98 3243 3283
+type(
+  int
+)
+"lexing.ml" 97 3187 3194 "lexing.ml" 98 3243 3283
+type(
+  bool
+)
+"lexing.ml" 102 3400 3406 "lexing.ml" 102 3400 3416
+type(
+  bytes -> int -> bytes -> int -> int -> unit
+)
+ident(
+  ext_ref Bytes.blit
+)
+"lexing.ml" 102 3400 3417 "lexing.ml" 102 3400 3423
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 102 3400 3417 "lexing.ml" 102 3400 3434
+type(
+  bytes
+)
+"lexing.ml" 102 3400 3435 "lexing.ml" 102 3400 3441
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 102 3400 3435 "lexing.ml" 102 3400 3455
+type(
+  int
+)
+"lexing.ml" 103 3456 3474 "lexing.ml" 103 3456 3480
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 103 3456 3474 "lexing.ml" 103 3456 3491
+type(
+  bytes
+)
+"lexing.ml" 103 3456 3492 "lexing.ml" 103 3456 3493
+type(
+  int
+)
+"lexing.ml" 104 3494 3513 "lexing.ml" 104 3494 3519
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 104 3494 3513 "lexing.ml" 104 3494 3534
+type(
+  int
+)
+"lexing.ml" 104 3494 3535 "lexing.ml" 104 3494 3536
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"lexing.ml" 104 3494 3537 "lexing.ml" 104 3494 3543
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 104 3494 3537 "lexing.ml" 104 3494 3557
+type(
+  int
+)
+"lexing.ml" 104 3494 3512 "lexing.ml" 104 3494 3558
+type(
+  int
+)
+"lexing.ml" 99 3284 3293 "lexing.ml" 105 3559 3566
+call(
+  stack
+)
+type(
+  unit
+)
+"lexing.ml" 109 3785 3795 "lexing.ml" 109 3785 3801
+type(
+  int
+)
+ident(
+  def newlen "lexing.ml" 111 3878 3884 "lexing.ml" 118 4264 4297
+)
+"lexing.ml" 110 3804 3812 "lexing.ml" 110 3804 3815
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.min
+)
+"lexing.ml" 110 3804 3817 "lexing.ml" 110 3804 3818
+type(
+  int
+)
+"lexing.ml" 110 3804 3819 "lexing.ml" 110 3804 3820
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"lexing.ml" 110 3804 3821 "lexing.ml" 110 3804 3833
+type(
+  bytes -> int
+)
+ident(
+  ext_ref Bytes.length
+)
+"lexing.ml" 110 3804 3834 "lexing.ml" 110 3804 3840
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 110 3804 3834 "lexing.ml" 110 3804 3851
+type(
+  bytes
+)
+"lexing.ml" 110 3804 3821 "lexing.ml" 110 3804 3851
+type(
+  int
+)
+"lexing.ml" 110 3804 3816 "lexing.ml" 110 3804 3852
+type(
+  int
+)
+"lexing.ml" 110 3804 3853 "lexing.ml" 110 3804 3874
+type(
+  int
+)
+ident(
+  ext_ref Sys.max_string_length
+)
+"lexing.ml" 110 3804 3812 "lexing.ml" 110 3804 3874
+call(
+  stack
+)
+type(
+  int
+)
+"lexing.ml" 111 3878 3887 "lexing.ml" 111 3878 3893
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 111 3878 3887 "lexing.ml" 111 3878 3908
+type(
+  int
+)
+"lexing.ml" 111 3878 3909 "lexing.ml" 111 3878 3910
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"lexing.ml" 111 3878 3911 "lexing.ml" 111 3878 3917
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 111 3878 3911 "lexing.ml" 111 3878 3931
+type(
+  int
+)
+"lexing.ml" 111 3878 3887 "lexing.ml" 111 3878 3931
+type(
+  int
+)
+"lexing.ml" 111 3878 3932 "lexing.ml" 111 3878 3933
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"lexing.ml" 111 3878 3934 "lexing.ml" 111 3878 3935
+type(
+  int
+)
+ident(
+  int_ref n "lexing.ml" 85 2699 2705 "lexing.ml" 85 2699 2706
+)
+"lexing.ml" 111 3878 3887 "lexing.ml" 111 3878 3935
+type(
+  int
+)
+"lexing.ml" 111 3878 3936 "lexing.ml" 111 3878 3937
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"lexing.ml" 111 3878 3938 "lexing.ml" 111 3878 3944
+type(
+  int
+)
+ident(
+  int_ref newlen "lexing.ml" 109 3785 3795 "lexing.ml" 109 3785 3801
+)
+"lexing.ml" 111 3878 3887 "lexing.ml" 111 3878 3944
+type(
+  bool
+)
+"lexing.ml" 112 3945 3956 "lexing.ml" 112 3945 3964
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"lexing.ml" 112 3945 3965 "lexing.ml" 112 3945 4004
+type(
+  string
+)
+"lexing.ml" 112 3945 3956 "lexing.ml" 112 3945 4004
+call(
+  stack
+)
+type(
+  unit
+)
+"lexing.ml" 111 3878 3884 "lexing.ml" 112 3945 4004
+type(
+  unit
+)
+"lexing.ml" 113 4006 4016 "lexing.ml" 113 4006 4022
+type(
+  bytes
+)
+ident(
+  def newbuf "lexing.ml" 115 4115 4121 "lexing.ml" 118 4264 4297
+)
+"lexing.ml" 113 4006 4025 "lexing.ml" 113 4006 4037
+type(
+  int -> bytes
+)
+ident(
+  ext_ref Bytes.create
+)
+"lexing.ml" 113 4006 4038 "lexing.ml" 113 4006 4044
+type(
+  int
+)
+ident(
+  int_ref newlen "lexing.ml" 109 3785 3795 "lexing.ml" 109 3785 3801
+)
+"lexing.ml" 113 4006 4025 "lexing.ml" 113 4006 4044
+type(
+  bytes
+)
+"lexing.ml" 115 4115 4121 "lexing.ml" 115 4115 4131
+type(
+  bytes -> int -> bytes -> int -> int -> unit
+)
+ident(
+  ext_ref Bytes.blit
+)
+"lexing.ml" 115 4115 4132 "lexing.ml" 115 4115 4138
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 115 4115 4132 "lexing.ml" 115 4115 4149
+type(
+  bytes
+)
+"lexing.ml" 115 4115 4150 "lexing.ml" 115 4115 4156
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 115 4115 4150 "lexing.ml" 115 4115 4170
+type(
+  int
+)
+"lexing.ml" 116 4171 4189 "lexing.ml" 116 4171 4195
+type(
+  bytes
+)
+ident(
+  int_ref newbuf "lexing.ml" 113 4006 4016 "lexing.ml" 113 4006 4022
+)
+"lexing.ml" 116 4171 4196 "lexing.ml" 116 4171 4197
+type(
+  int
+)
+"lexing.ml" 117 4198 4217 "lexing.ml" 117 4198 4223
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 117 4198 4217 "lexing.ml" 117 4198 4238
+type(
+  int
+)
+"lexing.ml" 117 4198 4239 "lexing.ml" 117 4198 4240
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"lexing.ml" 117 4198 4241 "lexing.ml" 117 4198 4247
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 117 4198 4241 "lexing.ml" 117 4198 4261
+type(
+  int
+)
+"lexing.ml" 117 4198 4216 "lexing.ml" 117 4198 4262
+type(
+  int
+)
+"lexing.ml" 115 4115 4121 "lexing.ml" 117 4198 4262
+call(
+  stack
+)
+type(
+  unit
+)
+"lexing.ml" 118 4264 4270 "lexing.ml" 118 4264 4276
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 118 4264 4291 "lexing.ml" 118 4264 4297
+type(
+  bytes
+)
+ident(
+  int_ref newbuf "lexing.ml" 113 4006 4016 "lexing.ml" 113 4006 4022
+)
+"lexing.ml" 118 4264 4270 "lexing.ml" 118 4264 4297
+type(
+  unit
+)
+"lexing.ml" 115 4115 4121 "lexing.ml" 118 4264 4297
+type(
+  unit
+)
+"lexing.ml" 113 4006 4012 "lexing.ml" 118 4264 4297
+type(
+  unit
+)
+"lexing.ml" 111 3878 3884 "lexing.ml" 118 4264 4297
+type(
+  unit
+)
+"lexing.ml" 105 3559 3572 "lexing.ml" 119 4298 4305
+type(
+  unit
+)
+"lexing.ml" 97 3187 3191 "lexing.ml" 119 4298 4305
+type(
+  unit
+)
+"lexing.ml" 122 4421 4429 "lexing.ml" 122 4421 4430
+type(
+  int
+)
+ident(
+  def s "lexing.ml" 123 4457 4461 "lexing.ml" 133 4831 4839
+)
+"lexing.ml" 122 4421 4433 "lexing.ml" 122 4421 4439
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 122 4421 4433 "lexing.ml" 122 4421 4453
+type(
+  int
+)
+"lexing.ml" 123 4457 4461 "lexing.ml" 123 4457 4467
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 123 4457 4483 "lexing.ml" 123 4457 4489
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 123 4457 4483 "lexing.ml" 123 4457 4501
+type(
+  int
+)
+"lexing.ml" 123 4457 4502 "lexing.ml" 123 4457 4503
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"lexing.ml" 123 4457 4504 "lexing.ml" 123 4457 4505
+type(
+  int
+)
+ident(
+  int_ref s "lexing.ml" 122 4421 4429 "lexing.ml" 122 4421 4430
+)
+"lexing.ml" 123 4457 4483 "lexing.ml" 123 4457 4505
+type(
+  int
+)
+"lexing.ml" 123 4457 4461 "lexing.ml" 123 4457 4505
+type(
+  unit
+)
+"lexing.ml" 124 4507 4511 "lexing.ml" 124 4507 4517
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 124 4507 4534 "lexing.ml" 124 4507 4540
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 124 4507 4534 "lexing.ml" 124 4507 4553
+type(
+  int
+)
+"lexing.ml" 124 4507 4554 "lexing.ml" 124 4507 4555
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"lexing.ml" 124 4507 4556 "lexing.ml" 124 4507 4557
+type(
+  int
+)
+ident(
+  int_ref s "lexing.ml" 122 4421 4429 "lexing.ml" 122 4421 4430
+)
+"lexing.ml" 124 4507 4534 "lexing.ml" 124 4507 4557
+type(
+  int
+)
+"lexing.ml" 124 4507 4511 "lexing.ml" 124 4507 4557
+type(
+  unit
+)
+"lexing.ml" 125 4559 4563 "lexing.ml" 125 4559 4569
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 125 4559 4587 "lexing.ml" 125 4559 4588
+type(
+  int
+)
+"lexing.ml" 125 4559 4563 "lexing.ml" 125 4559 4588
+type(
+  unit
+)
+"lexing.ml" 126 4590 4594 "lexing.ml" 126 4590 4600
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 126 4590 4617 "lexing.ml" 126 4590 4623
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 126 4590 4617 "lexing.ml" 126 4590 4636
+type(
+  int
+)
+"lexing.ml" 126 4590 4637 "lexing.ml" 126 4590 4638
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"lexing.ml" 126 4590 4639 "lexing.ml" 126 4590 4640
+type(
+  int
+)
+ident(
+  int_ref s "lexing.ml" 122 4421 4429 "lexing.ml" 122 4421 4430
+)
+"lexing.ml" 126 4590 4617 "lexing.ml" 126 4590 4640
+type(
+  int
+)
+"lexing.ml" 126 4590 4594 "lexing.ml" 126 4590 4640
+type(
+  unit
+)
+"lexing.ml" 127 4642 4646 "lexing.ml" 127 4642 4652
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 127 4642 4671 "lexing.ml" 127 4642 4677
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 127 4642 4671 "lexing.ml" 127 4642 4692
+type(
+  int
+)
+"lexing.ml" 127 4642 4693 "lexing.ml" 127 4642 4694
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"lexing.ml" 127 4642 4695 "lexing.ml" 127 4642 4696
+type(
+  int
+)
+ident(
+  int_ref s "lexing.ml" 122 4421 4429 "lexing.ml" 122 4421 4430
+)
+"lexing.ml" 127 4642 4671 "lexing.ml" 127 4642 4696
+type(
+  int
+)
+"lexing.ml" 127 4642 4646 "lexing.ml" 127 4642 4696
+type(
+  unit
+)
+"lexing.ml" 128 4699 4707 "lexing.ml" 128 4699 4708
+type(
+  int array
+)
+ident(
+  def t "lexing.ml" 129 4729 4733 "lexing.ml" 133 4831 4839
+)
+"lexing.ml" 128 4699 4711 "lexing.ml" 128 4699 4717
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 128 4699 4711 "lexing.ml" 128 4699 4725
+type(
+  int array
+)
+"lexing.ml" 129 4729 4741 "lexing.ml" 129 4729 4742
+type(
+  int
+)
+"lexing.ml" 129 4729 4746 "lexing.ml" 129 4729 4758
+type(
+  int array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"lexing.ml" 129 4729 4759 "lexing.ml" 129 4729 4760
+type(
+  int array
+)
+ident(
+  int_ref t "lexing.ml" 128 4699 4707 "lexing.ml" 128 4699 4708
+)
+"lexing.ml" 129 4729 4746 "lexing.ml" 129 4729 4760
+type(
+  int
+)
+"lexing.ml" 129 4729 4760 "lexing.ml" 129 4729 4761
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"lexing.ml" 129 4729 4761 "lexing.ml" 129 4729 4762
+type(
+  int
+)
+"lexing.ml" 129 4729 4746 "lexing.ml" 129 4729 4762
+type(
+  int
+)
+"lexing.ml" 130 4766 4776 "lexing.ml" 130 4766 4777
+type(
+  int
+)
+ident(
+  def v "lexing.ml" 131 4789 4795 "lexing.ml" 132 4810 4830
+)
+"lexing.ml" 130 4766 4780 "lexing.ml" 130 4766 4781
+type(
+  int array
+)
+ident(
+  int_ref t "lexing.ml" 128 4699 4707 "lexing.ml" 128 4699 4708
+)
+"lexing.ml" 130 4766 4783 "lexing.ml" 130 4766 4784
+type(
+  int
+)
+ident(
+  int_ref i "lexing.ml" 129 4729 4733 "lexing.ml" 133 4831 4839
+)
+"lexing.ml" 130 4766 4780 "lexing.ml" 130 4766 4785
+type(
+  int
+)
+"lexing.ml" 131 4789 4798 "lexing.ml" 131 4789 4799
+type(
+  int
+)
+ident(
+  int_ref v "lexing.ml" 130 4766 4776 "lexing.ml" 130 4766 4777
+)
+"lexing.ml" 131 4789 4800 "lexing.ml" 131 4789 4802
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"lexing.ml" 131 4789 4803 "lexing.ml" 131 4789 4804
+type(
+  int
+)
+"lexing.ml" 131 4789 4798 "lexing.ml" 131 4789 4804
+type(
+  bool
+)
+"lexing.ml" 132 4810 4818 "lexing.ml" 132 4810 4819
+type(
+  int array
+)
+ident(
+  int_ref t "lexing.ml" 128 4699 4707 "lexing.ml" 128 4699 4708
+)
+"lexing.ml" 132 4810 4821 "lexing.ml" 132 4810 4822
+type(
+  int
+)
+ident(
+  int_ref i "lexing.ml" 129 4729 4733 "lexing.ml" 133 4831 4839
+)
+"lexing.ml" 132 4810 4827 "lexing.ml" 132 4810 4828
+type(
+  int
+)
+ident(
+  int_ref v "lexing.ml" 130 4766 4776 "lexing.ml" 130 4766 4777
+)
+"lexing.ml" 132 4810 4828 "lexing.ml" 132 4810 4829
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"lexing.ml" 132 4810 4829 "lexing.ml" 132 4810 4830
+type(
+  int
+)
+ident(
+  int_ref s "lexing.ml" 122 4421 4429 "lexing.ml" 122 4421 4430
+)
+"lexing.ml" 132 4810 4827 "lexing.ml" 132 4810 4830
+type(
+  int
+)
+"lexing.ml" 132 4810 4818 "lexing.ml" 132 4810 4830
+type(
+  unit
+)
+"lexing.ml" 131 4789 4795 "lexing.ml" 132 4810 4830
+type(
+  unit
+)
+"lexing.ml" 130 4766 4772 "lexing.ml" 132 4810 4830
+type(
+  unit
+)
+"lexing.ml" 129 4729 4733 "lexing.ml" 133 4831 4839
+type(
+  unit
+)
+"lexing.ml" 128 4699 4703 "lexing.ml" 133 4831 4839
+type(
+  unit
+)
+"lexing.ml" 127 4642 4646 "lexing.ml" 133 4831 4839
+type(
+  unit
+)
+"lexing.ml" 126 4590 4594 "lexing.ml" 133 4831 4839
+type(
+  unit
+)
+"lexing.ml" 125 4559 4563 "lexing.ml" 133 4831 4839
+type(
+  unit
+)
+"lexing.ml" 124 4507 4511 "lexing.ml" 133 4831 4839
+type(
+  unit
+)
+"lexing.ml" 123 4457 4461 "lexing.ml" 133 4831 4839
+type(
+  unit
+)
+"lexing.ml" 122 4421 4425 "lexing.ml" 133 4831 4839
+type(
+  unit
+)
+"lexing.ml" 95 3051 3120 "lexing.ml" 134 4840 4845
+type(
+  unit
+)
+"lexing.ml" 95 3051 3053 "lexing.ml" 134 4840 4845
+type(
+  unit
+)
+"lexing.ml" 136 4906 4908 "lexing.ml" 136 4906 4918
+type(
+  bytes -> int -> bytes -> int -> int -> unit
+)
+ident(
+  ext_ref Bytes.blit
+)
+"lexing.ml" 136 4906 4919 "lexing.ml" 136 4906 4929
+type(
+  bytes
+)
+ident(
+  int_ref aux_buffer "lexing.ml" 82 2589 2613 "lexing.ml" 82 2589 2623
+)
+"lexing.ml" 136 4906 4930 "lexing.ml" 136 4906 4931
+type(
+  int
+)
+"lexing.ml" 136 4906 4932 "lexing.ml" 136 4906 4938
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 136 4906 4932 "lexing.ml" 136 4906 4949
+type(
+  bytes
+)
+"lexing.ml" 136 4906 4950 "lexing.ml" 136 4906 4956
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 136 4906 4950 "lexing.ml" 136 4906 4971
+type(
+  int
+)
+"lexing.ml" 136 4906 4972 "lexing.ml" 136 4906 4973
+type(
+  int
+)
+ident(
+  int_ref n "lexing.ml" 85 2699 2705 "lexing.ml" 85 2699 2706
+)
+"lexing.ml" 136 4906 4908 "lexing.ml" 136 4906 4973
+call(
+  stack
+)
+type(
+  unit
+)
+"lexing.ml" 137 4975 4977 "lexing.ml" 137 4975 4983
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 137 4975 5002 "lexing.ml" 137 4975 5008
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 82 2589 2624 "lexing.ml" 82 2589 2630
+)
+"lexing.ml" 137 4975 5002 "lexing.ml" 137 4975 5023
+type(
+  int
+)
+"lexing.ml" 137 4975 5024 "lexing.ml" 137 4975 5025
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"lexing.ml" 137 4975 5026 "lexing.ml" 137 4975 5027
+type(
+  int
+)
+ident(
+  int_ref n "lexing.ml" 85 2699 2705 "lexing.ml" 85 2699 2706
+)
+"lexing.ml" 137 4975 5002 "lexing.ml" 137 4975 5027
+type(
+  int
+)
+"lexing.ml" 137 4975 4977 "lexing.ml" 137 4975 5027
+type(
+  unit
+)
+"lexing.ml" 136 4906 4908 "lexing.ml" 137 4975 5027
+type(
+  unit
+)
+"lexing.ml" 95 3051 3053 "lexing.ml" 137 4975 5027
+type(
+  unit
+)
+"lexing.ml" 85 2699 2701 "lexing.ml" 137 4975 5027
+type(
+  unit
+)
+"lexing.ml" 83 2633 2635 "lexing.ml" 137 4975 5027
+type(
+  unit
+)
+"lexing.ml" 139 5029 5033 "lexing.ml" 139 5029 5041
+type(
+  position
+)
+ident(
+  def zero_pos "lexing.ml" 146 5116 5116 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 140 5046 5060 "lexing.ml" 140 5046 5062
+type(
+  string
+)
+"lexing.ml" 141 5064 5077 "lexing.ml" 141 5064 5078
+type(
+  int
+)
+"lexing.ml" 142 5080 5092 "lexing.ml" 142 5080 5093
+type(
+  int
+)
+"lexing.ml" 143 5095 5108 "lexing.ml" 143 5095 5109
+type(
+  int
+)
+"lexing.ml" 139 5029 5044 "lexing.ml" 144 5111 5112
+type(
+  position
+)
+"lexing.ml" 146 5116 5120 "lexing.ml" 146 5116 5133
+type(
+  (bytes -> int -> int) -> lexbuf
+)
+ident(
+  def from_function "lexing.ml" 161 5471 5471 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 146 5116 5134 "lexing.ml" 146 5116 5135
+type(
+  bytes -> int -> int
+)
+ident(
+  def f "lexing.ml" 147 5138 5140 "lexing.ml" 159 5466 5469
+)
+"lexing.ml" 147 5138 5156 "lexing.ml" 147 5138 5166
+type(
+  (bytes -> int -> int) -> bytes -> lexbuf -> unit
+)
+ident(
+  int_ref lex_refill "lexing.ml" 82 2589 2593 "lexing.ml" 82 2589 2603
+)
+"lexing.ml" 147 5138 5167 "lexing.ml" 147 5138 5168
+type(
+  bytes -> int -> int
+)
+ident(
+  int_ref f "lexing.ml" 146 5116 5134 "lexing.ml" 146 5116 5135
+)
+"lexing.ml" 147 5138 5170 "lexing.ml" 147 5138 5182
+type(
+  int -> bytes
+)
+ident(
+  ext_ref Bytes.create
+)
+"lexing.ml" 147 5138 5183 "lexing.ml" 147 5138 5186
+type(
+  int
+)
+"lexing.ml" 147 5138 5169 "lexing.ml" 147 5138 5187
+type(
+  bytes
+)
+"lexing.ml" 147 5138 5156 "lexing.ml" 147 5138 5187
+call(
+  stack
+)
+type(
+  lexbuf -> unit
+)
+"lexing.ml" 148 5189 5206 "lexing.ml" 148 5189 5218
+type(
+  int -> bytes
+)
+ident(
+  ext_ref Bytes.create
+)
+"lexing.ml" 148 5189 5219 "lexing.ml" 148 5189 5223
+type(
+  int
+)
+"lexing.ml" 148 5189 5206 "lexing.ml" 148 5189 5223
+type(
+  bytes
+)
+"lexing.ml" 149 5225 5246 "lexing.ml" 149 5225 5247
+type(
+  int
+)
+"lexing.ml" 150 5249 5267 "lexing.ml" 150 5249 5268
+type(
+  int
+)
+"lexing.ml" 151 5270 5290 "lexing.ml" 151 5270 5291
+type(
+  int
+)
+"lexing.ml" 152 5293 5312 "lexing.ml" 152 5293 5313
+type(
+  int
+)
+"lexing.ml" 153 5315 5334 "lexing.ml" 153 5315 5335
+type(
+  int
+)
+"lexing.ml" 154 5337 5359 "lexing.ml" 154 5337 5360
+type(
+  int
+)
+"lexing.ml" 155 5362 5376 "lexing.ml" 155 5362 5380
+type(
+  int array
+)
+"lexing.ml" 156 5382 5404 "lexing.ml" 156 5382 5409
+type(
+  bool
+)
+"lexing.ml" 157 5411 5429 "lexing.ml" 157 5411 5437
+type(
+  position
+)
+ident(
+  int_ref zero_pos "lexing.ml" 139 5029 5033 "lexing.ml" 139 5029 5041
+)
+"lexing.ml" 158 5439 5456 "lexing.ml" 158 5439 5464
+type(
+  position
+)
+ident(
+  int_ref zero_pos "lexing.ml" 139 5029 5033 "lexing.ml" 139 5029 5041
+)
+"lexing.ml" 147 5138 5140 "lexing.ml" 159 5466 5469
+type(
+  lexbuf
+)
+"lexing.ml" 161 5471 5475 "lexing.ml" 161 5471 5487
+type(
+  in_channel -> lexbuf
+)
+ident(
+  def from_channel "lexing.ml" 164 5542 5542 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 161 5471 5488 "lexing.ml" 161 5471 5490
+type(
+  in_channel
+)
+ident(
+  def ic "lexing.ml" 162 5493 5495 "lexing.ml" 162 5493 5540
+)
+"lexing.ml" 162 5493 5495 "lexing.ml" 162 5493 5508
+type(
+  (bytes -> int -> int) -> lexbuf
+)
+ident(
+  int_ref from_function "lexing.ml" 146 5116 5120 "lexing.ml" 146 5116 5133
+)
+"lexing.ml" 162 5493 5514 "lexing.ml" 162 5493 5517
+type(
+  bytes
+)
+ident(
+  def buf "lexing.ml" 162 5493 5518 "lexing.ml" 162 5493 5539
+)
+"lexing.ml" 162 5493 5518 "lexing.ml" 162 5493 5519
+type(
+  int
+)
+ident(
+  def n "lexing.ml" 162 5493 5523 "lexing.ml" 162 5493 5539
+)
+"lexing.ml" 162 5493 5523 "lexing.ml" 162 5493 5528
+type(
+  in_channel -> bytes -> int -> int -> int
+)
+ident(
+  ext_ref Pervasives.input
+)
+"lexing.ml" 162 5493 5529 "lexing.ml" 162 5493 5531
+type(
+  in_channel
+)
+ident(
+  int_ref ic "lexing.ml" 161 5471 5488 "lexing.ml" 161 5471 5490
+)
+"lexing.ml" 162 5493 5532 "lexing.ml" 162 5493 5535
+type(
+  bytes
+)
+ident(
+  int_ref buf "lexing.ml" 162 5493 5514 "lexing.ml" 162 5493 5517
+)
+"lexing.ml" 162 5493 5536 "lexing.ml" 162 5493 5537
+type(
+  int
+)
+"lexing.ml" 162 5493 5538 "lexing.ml" 162 5493 5539
+type(
+  int
+)
+ident(
+  int_ref n "lexing.ml" 162 5493 5518 "lexing.ml" 162 5493 5519
+)
+"lexing.ml" 162 5493 5523 "lexing.ml" 162 5493 5539
+call(
+  tail
+)
+type(
+  int
+)
+"lexing.ml" 162 5493 5509 "lexing.ml" 162 5493 5540
+type(
+  bytes -> int -> int
+)
+"lexing.ml" 162 5493 5495 "lexing.ml" 162 5493 5540
+call(
+  tail
+)
+type(
+  lexbuf
+)
+"lexing.ml" 164 5542 5546 "lexing.ml" 164 5542 5557
+type(
+  string -> lexbuf
+)
+ident(
+  def from_string "lexing.ml" 180 6030 6030 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 164 5542 5558 "lexing.ml" 164 5542 5559
+type(
+  string
+)
+ident(
+  def s "lexing.ml" 165 5562 5564 "lexing.ml" 178 6025 6028
+)
+"lexing.ml" 165 5562 5585 "lexing.ml" 165 5562 5591
+type(
+  lexbuf
+)
+ident(
+  def lexbuf "lexing.ml" 165 5562 5595 "lexing.ml" 165 5562 5625
+)
+"lexing.ml" 165 5562 5595 "lexing.ml" 165 5562 5601
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 165 5562 5585 "lexing.ml" 165 5562 5591
+)
+"lexing.ml" 165 5562 5621 "lexing.ml" 165 5562 5625
+type(
+  bool
+)
+"lexing.ml" 165 5562 5595 "lexing.ml" 165 5562 5625
+type(
+  unit
+)
+"lexing.ml" 165 5562 5580 "lexing.ml" 165 5562 5626
+type(
+  lexbuf -> unit
+)
+"lexing.ml" 166 5628 5645 "lexing.ml" 166 5628 5660
+type(
+  string -> bytes
+)
+ident(
+  ext_ref Bytes.of_string
+)
+"lexing.ml" 166 5628 5661 "lexing.ml" 166 5628 5662
+type(
+  string
+)
+ident(
+  int_ref s "lexing.ml" 164 5542 5558 "lexing.ml" 164 5542 5559
+)
+"lexing.ml" 166 5628 5645 "lexing.ml" 166 5628 5662
+call(
+  stack
+)
+type(
+  bytes
+)
+"lexing.ml" 168 5771 5792 "lexing.ml" 168 5771 5805
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"lexing.ml" 168 5771 5806 "lexing.ml" 168 5771 5807
+type(
+  string
+)
+ident(
+  int_ref s "lexing.ml" 164 5542 5558 "lexing.ml" 164 5542 5559
+)
+"lexing.ml" 168 5771 5792 "lexing.ml" 168 5771 5807
+type(
+  int
+)
+"lexing.ml" 169 5809 5827 "lexing.ml" 169 5809 5828
+type(
+  int
+)
+"lexing.ml" 170 5830 5850 "lexing.ml" 170 5830 5851
+type(
+  int
+)
+"lexing.ml" 171 5853 5872 "lexing.ml" 171 5853 5873
+type(
+  int
+)
+"lexing.ml" 172 5875 5894 "lexing.ml" 172 5875 5895
+type(
+  int
+)
+"lexing.ml" 173 5897 5919 "lexing.ml" 173 5897 5920
+type(
+  int
+)
+"lexing.ml" 174 5922 5936 "lexing.ml" 174 5922 5940
+type(
+  int array
+)
+"lexing.ml" 175 5942 5964 "lexing.ml" 175 5942 5968
+type(
+  bool
+)
+"lexing.ml" 176 5970 5988 "lexing.ml" 176 5970 5996
+type(
+  position
+)
+ident(
+  int_ref zero_pos "lexing.ml" 139 5029 5033 "lexing.ml" 139 5029 5041
+)
+"lexing.ml" 177 5998 6015 "lexing.ml" 177 5998 6023
+type(
+  position
+)
+ident(
+  int_ref zero_pos "lexing.ml" 139 5029 5033 "lexing.ml" 139 5029 5041
+)
+"lexing.ml" 165 5562 5564 "lexing.ml" 178 6025 6028
+type(
+  lexbuf
+)
+"lexing.ml" 180 6030 6034 "lexing.ml" 180 6030 6040
+type(
+  lexbuf -> string
+)
+ident(
+  def lexeme "lexing.ml" 184 6171 6171 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 180 6030 6041 "lexing.ml" 180 6030 6047
+type(
+  lexbuf
+)
+ident(
+  def lexbuf "lexing.ml" 181 6050 6052 "lexing.ml" 182 6108 6169
+)
+"lexing.ml" 181 6050 6056 "lexing.ml" 181 6050 6059
+type(
+  int
+)
+ident(
+  def len "lexing.ml" 182 6108 6110 "lexing.ml" 182 6108 6169
+)
+"lexing.ml" 181 6050 6062 "lexing.ml" 181 6050 6068
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 180 6030 6041 "lexing.ml" 180 6030 6047
+)
+"lexing.ml" 181 6050 6062 "lexing.ml" 181 6050 6081
+type(
+  int
+)
+"lexing.ml" 181 6050 6082 "lexing.ml" 181 6050 6083
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"lexing.ml" 181 6050 6084 "lexing.ml" 181 6050 6090
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 180 6030 6041 "lexing.ml" 180 6030 6047
+)
+"lexing.ml" 181 6050 6084 "lexing.ml" 181 6050 6104
+type(
+  int
+)
+"lexing.ml" 181 6050 6062 "lexing.ml" 181 6050 6104
+type(
+  int
+)
+"lexing.ml" 182 6108 6110 "lexing.ml" 182 6108 6126
+type(
+  bytes -> int -> int -> string
+)
+ident(
+  ext_ref Bytes.sub_string
+)
+"lexing.ml" 182 6108 6127 "lexing.ml" 182 6108 6133
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 180 6030 6041 "lexing.ml" 180 6030 6047
+)
+"lexing.ml" 182 6108 6127 "lexing.ml" 182 6108 6144
+type(
+  bytes
+)
+"lexing.ml" 182 6108 6145 "lexing.ml" 182 6108 6151
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 180 6030 6041 "lexing.ml" 180 6030 6047
+)
+"lexing.ml" 182 6108 6145 "lexing.ml" 182 6108 6165
+type(
+  int
+)
+"lexing.ml" 182 6108 6166 "lexing.ml" 182 6108 6169
+type(
+  int
+)
+ident(
+  int_ref len "lexing.ml" 181 6050 6056 "lexing.ml" 181 6050 6059
+)
+"lexing.ml" 182 6108 6110 "lexing.ml" 182 6108 6169
+call(
+  tail
+)
+type(
+  string
+)
+"lexing.ml" 181 6050 6052 "lexing.ml" 182 6108 6169
+type(
+  string
+)
+"lexing.ml" 184 6171 6175 "lexing.ml" 184 6171 6185
+type(
+  lexbuf -> int -> int -> string
+)
+ident(
+  def sub_lexeme "lexing.ml" 188 6267 6267 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 184 6171 6186 "lexing.ml" 184 6171 6192
+type(
+  lexbuf
+)
+ident(
+  def lexbuf "lexing.ml" 184 6171 6193 "lexing.ml" 186 6222 6265
+)
+"lexing.ml" 184 6171 6193 "lexing.ml" 184 6171 6195
+type(
+  int
+)
+ident(
+  def i1 "lexing.ml" 184 6171 6196 "lexing.ml" 186 6222 6265
+)
+"lexing.ml" 184 6171 6196 "lexing.ml" 184 6171 6198
+type(
+  int
+)
+ident(
+  def i2 "lexing.ml" 185 6201 6203 "lexing.ml" 186 6222 6265
+)
+"lexing.ml" 185 6201 6207 "lexing.ml" 185 6201 6210
+type(
+  int
+)
+ident(
+  def len "lexing.ml" 186 6222 6224 "lexing.ml" 186 6222 6265
+)
+"lexing.ml" 185 6201 6213 "lexing.ml" 185 6201 6215
+type(
+  int
+)
+ident(
+  int_ref i2 "lexing.ml" 184 6171 6196 "lexing.ml" 184 6171 6198
+)
+"lexing.ml" 185 6201 6215 "lexing.ml" 185 6201 6216
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"lexing.ml" 185 6201 6216 "lexing.ml" 185 6201 6218
+type(
+  int
+)
+ident(
+  int_ref i1 "lexing.ml" 184 6171 6193 "lexing.ml" 184 6171 6195
+)
+"lexing.ml" 185 6201 6213 "lexing.ml" 185 6201 6218
+type(
+  int
+)
+"lexing.ml" 186 6222 6224 "lexing.ml" 186 6222 6240
+type(
+  bytes -> int -> int -> string
+)
+ident(
+  ext_ref Bytes.sub_string
+)
+"lexing.ml" 186 6222 6241 "lexing.ml" 186 6222 6247
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 184 6171 6186 "lexing.ml" 184 6171 6192
+)
+"lexing.ml" 186 6222 6241 "lexing.ml" 186 6222 6258
+type(
+  bytes
+)
+"lexing.ml" 186 6222 6259 "lexing.ml" 186 6222 6261
+type(
+  int
+)
+ident(
+  int_ref i1 "lexing.ml" 184 6171 6193 "lexing.ml" 184 6171 6195
+)
+"lexing.ml" 186 6222 6262 "lexing.ml" 186 6222 6265
+type(
+  int
+)
+ident(
+  int_ref len "lexing.ml" 185 6201 6207 "lexing.ml" 185 6201 6210
+)
+"lexing.ml" 186 6222 6224 "lexing.ml" 186 6222 6265
+call(
+  tail
+)
+type(
+  string
+)
+"lexing.ml" 185 6201 6203 "lexing.ml" 186 6222 6265
+type(
+  string
+)
+"lexing.ml" 188 6267 6271 "lexing.ml" 188 6267 6285
+type(
+  lexbuf -> int -> int -> string option
+)
+ident(
+  def sub_lexeme_opt "lexing.ml" 196 6434 6434 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 188 6267 6286 "lexing.ml" 188 6267 6292
+type(
+  lexbuf
+)
+ident(
+  def lexbuf "lexing.ml" 188 6267 6293 "lexing.ml" 194 6427 6432
+)
+"lexing.ml" 188 6267 6293 "lexing.ml" 188 6267 6295
+type(
+  int
+)
+ident(
+  def i1 "lexing.ml" 188 6267 6296 "lexing.ml" 194 6427 6432
+)
+"lexing.ml" 188 6267 6296 "lexing.ml" 188 6267 6298
+type(
+  int
+)
+ident(
+  def i2 "lexing.ml" 189 6301 6303 "lexing.ml" 194 6427 6432
+)
+"lexing.ml" 189 6301 6306 "lexing.ml" 189 6301 6308
+type(
+  int
+)
+ident(
+  int_ref i1 "lexing.ml" 188 6267 6293 "lexing.ml" 188 6267 6295
+)
+"lexing.ml" 189 6301 6309 "lexing.ml" 189 6301 6311
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"lexing.ml" 189 6301 6312 "lexing.ml" 189 6301 6313
+type(
+  int
+)
+"lexing.ml" 189 6301 6306 "lexing.ml" 189 6301 6313
+type(
+  bool
+)
+"lexing.ml" 190 6325 6333 "lexing.ml" 190 6325 6336
+type(
+  int
+)
+ident(
+  def len "lexing.ml" 191 6348 6352 "lexing.ml" 191 6348 6400
+)
+"lexing.ml" 190 6325 6339 "lexing.ml" 190 6325 6341
+type(
+  int
+)
+ident(
+  int_ref i2 "lexing.ml" 188 6267 6296 "lexing.ml" 188 6267 6298
+)
+"lexing.ml" 190 6325 6341 "lexing.ml" 190 6325 6342
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"lexing.ml" 190 6325 6342 "lexing.ml" 190 6325 6344
+type(
+  int
+)
+ident(
+  int_ref i1 "lexing.ml" 188 6267 6293 "lexing.ml" 188 6267 6295
+)
+"lexing.ml" 190 6325 6339 "lexing.ml" 190 6325 6344
+type(
+  int
+)
+"lexing.ml" 191 6348 6358 "lexing.ml" 191 6348 6374
+type(
+  bytes -> int -> int -> string
+)
+ident(
+  ext_ref Bytes.sub_string
+)
+"lexing.ml" 191 6348 6375 "lexing.ml" 191 6348 6381
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 188 6267 6286 "lexing.ml" 188 6267 6292
+)
+"lexing.ml" 191 6348 6375 "lexing.ml" 191 6348 6392
+type(
+  bytes
+)
+"lexing.ml" 191 6348 6393 "lexing.ml" 191 6348 6395
+type(
+  int
+)
+ident(
+  int_ref i1 "lexing.ml" 188 6267 6293 "lexing.ml" 188 6267 6295
+)
+"lexing.ml" 191 6348 6396 "lexing.ml" 191 6348 6399
+type(
+  int
+)
+ident(
+  int_ref len "lexing.ml" 190 6325 6333 "lexing.ml" 190 6325 6336
+)
+"lexing.ml" 191 6348 6357 "lexing.ml" 191 6348 6400
+call(
+  stack
+)
+type(
+  string
+)
+"lexing.ml" 191 6348 6352 "lexing.ml" 191 6348 6400
+type(
+  string option
+)
+"lexing.ml" 189 6301 6319 "lexing.ml" 192 6401 6406
+type(
+  string option
+)
+"lexing.ml" 192 6401 6412 "lexing.ml" 194 6427 6432
+type(
+  string option
+)
+"lexing.ml" 189 6301 6303 "lexing.ml" 194 6427 6432
+type(
+  string option
+)
+"lexing.ml" 196 6434 6438 "lexing.ml" 196 6434 6453
+type(
+  lexbuf -> int -> char
+)
+ident(
+  def sub_lexeme_char "lexing.ml" 198 6496 6496 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 196 6434 6454 "lexing.ml" 196 6434 6460
+type(
+  lexbuf
+)
+ident(
+  def lexbuf "lexing.ml" 196 6434 6461 "lexing.ml" 196 6434 6494
+)
+"lexing.ml" 196 6434 6461 "lexing.ml" 196 6434 6462
+type(
+  int
+)
+ident(
+  def i "lexing.ml" 196 6434 6465 "lexing.ml" 196 6434 6494
+)
+"lexing.ml" 196 6434 6465 "lexing.ml" 196 6434 6474
+type(
+  bytes -> int -> char
+)
+ident(
+  ext_ref Bytes.get
+)
+"lexing.ml" 196 6434 6475 "lexing.ml" 196 6434 6481
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 196 6434 6454 "lexing.ml" 196 6434 6460
+)
+"lexing.ml" 196 6434 6475 "lexing.ml" 196 6434 6492
+type(
+  bytes
+)
+"lexing.ml" 196 6434 6493 "lexing.ml" 196 6434 6494
+type(
+  int
+)
+ident(
+  int_ref i "lexing.ml" 196 6434 6461 "lexing.ml" 196 6434 6462
+)
+"lexing.ml" 196 6434 6465 "lexing.ml" 196 6434 6494
+type(
+  char
+)
+"lexing.ml" 198 6496 6500 "lexing.ml" 198 6496 6519
+type(
+  lexbuf -> int -> char option
+)
+ident(
+  def sub_lexeme_char_opt "lexing.ml" 205 6607 6607 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 198 6496 6520 "lexing.ml" 198 6496 6526
+type(
+  lexbuf
+)
+ident(
+  def lexbuf "lexing.ml" 198 6496 6527 "lexing.ml" 202 6596 6604
+)
+"lexing.ml" 198 6496 6527 "lexing.ml" 198 6496 6528
+type(
+  int
+)
+ident(
+  def i "lexing.ml" 199 6531 6533 "lexing.ml" 202 6596 6604
+)
+"lexing.ml" 199 6531 6536 "lexing.ml" 199 6531 6537
+type(
+  int
+)
+ident(
+  int_ref i "lexing.ml" 198 6496 6527 "lexing.ml" 198 6496 6528
+)
+"lexing.ml" 199 6531 6538 "lexing.ml" 199 6531 6540
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"lexing.ml" 199 6531 6541 "lexing.ml" 199 6531 6542
+type(
+  int
+)
+"lexing.ml" 199 6531 6536 "lexing.ml" 199 6531 6542
+type(
+  bool
+)
+"lexing.ml" 200 6548 6558 "lexing.ml" 200 6548 6567
+type(
+  bytes -> int -> char
+)
+ident(
+  ext_ref Bytes.get
+)
+"lexing.ml" 200 6548 6568 "lexing.ml" 200 6548 6574
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 198 6496 6520 "lexing.ml" 198 6496 6526
+)
+"lexing.ml" 200 6548 6568 "lexing.ml" 200 6548 6585
+type(
+  bytes
+)
+"lexing.ml" 200 6548 6586 "lexing.ml" 200 6548 6587
+type(
+  int
+)
+ident(
+  int_ref i "lexing.ml" 198 6496 6527 "lexing.ml" 198 6496 6528
+)
+"lexing.ml" 200 6548 6557 "lexing.ml" 200 6548 6588
+type(
+  char
+)
+"lexing.ml" 200 6548 6552 "lexing.ml" 200 6548 6588
+type(
+  char option
+)
+"lexing.ml" 202 6596 6600 "lexing.ml" 202 6596 6604
+type(
+  char option
+)
+"lexing.ml" 199 6531 6533 "lexing.ml" 202 6596 6604
+type(
+  char option
+)
+"lexing.ml" 205 6607 6611 "lexing.ml" 205 6607 6622
+type(
+  lexbuf -> int -> char
+)
+ident(
+  def lexeme_char "lexing.ml" 208 6692 6692 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 205 6607 6623 "lexing.ml" 205 6607 6629
+type(
+  lexbuf
+)
+ident(
+  def lexbuf "lexing.ml" 205 6607 6630 "lexing.ml" 206 6634 6690
+)
+"lexing.ml" 205 6607 6630 "lexing.ml" 205 6607 6631
+type(
+  int
+)
+ident(
+  def i "lexing.ml" 206 6634 6636 "lexing.ml" 206 6634 6690
+)
+"lexing.ml" 206 6634 6636 "lexing.ml" 206 6634 6645
+type(
+  bytes -> int -> char
+)
+ident(
+  ext_ref Bytes.get
+)
+"lexing.ml" 206 6634 6646 "lexing.ml" 206 6634 6652
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 205 6607 6623 "lexing.ml" 205 6607 6629
+)
+"lexing.ml" 206 6634 6646 "lexing.ml" 206 6634 6663
+type(
+  bytes
+)
+"lexing.ml" 206 6634 6665 "lexing.ml" 206 6634 6671
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 205 6607 6623 "lexing.ml" 205 6607 6629
+)
+"lexing.ml" 206 6634 6665 "lexing.ml" 206 6634 6685
+type(
+  int
+)
+"lexing.ml" 206 6634 6686 "lexing.ml" 206 6634 6687
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"lexing.ml" 206 6634 6688 "lexing.ml" 206 6634 6689
+type(
+  int
+)
+ident(
+  int_ref i "lexing.ml" 205 6607 6630 "lexing.ml" 205 6607 6631
+)
+"lexing.ml" 206 6634 6664 "lexing.ml" 206 6634 6690
+type(
+  int
+)
+"lexing.ml" 206 6634 6636 "lexing.ml" 206 6634 6690
+type(
+  char
+)
+"lexing.ml" 208 6692 6696 "lexing.ml" 208 6692 6708
+type(
+  lexbuf -> int
+)
+ident(
+  def lexeme_start "lexing.ml" 209 6748 6748 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 208 6692 6709 "lexing.ml" 208 6692 6715
+type(
+  lexbuf
+)
+ident(
+  def lexbuf "lexing.ml" 208 6692 6718 "lexing.ml" 208 6692 6745
+)
+"lexing.ml" 208 6692 6718 "lexing.ml" 208 6692 6724
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 208 6692 6709 "lexing.ml" 208 6692 6715
+)
+"lexing.ml" 208 6692 6718 "lexing.ml" 208 6692 6736
+type(
+  position
+)
+"lexing.ml" 208 6692 6718 "lexing.ml" 208 6692 6745
+type(
+  int
+)
+"lexing.ml" 209 6748 6752 "lexing.ml" 209 6748 6762
+type(
+  lexbuf -> int
+)
+ident(
+  def lexeme_end "lexing.ml" 211 6802 6802 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 209 6748 6763 "lexing.ml" 209 6748 6769
+type(
+  lexbuf
+)
+ident(
+  def lexbuf "lexing.ml" 209 6748 6772 "lexing.ml" 209 6748 6798
+)
+"lexing.ml" 209 6748 6772 "lexing.ml" 209 6748 6778
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 209 6748 6763 "lexing.ml" 209 6748 6769
+)
+"lexing.ml" 209 6748 6772 "lexing.ml" 209 6748 6789
+type(
+  position
+)
+"lexing.ml" 209 6748 6772 "lexing.ml" 209 6748 6798
+type(
+  int
+)
+"lexing.ml" 211 6802 6806 "lexing.ml" 211 6802 6820
+type(
+  lexbuf -> position
+)
+ident(
+  def lexeme_start_p "lexing.ml" 212 6851 6851 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 211 6802 6821 "lexing.ml" 211 6802 6827
+type(
+  lexbuf
+)
+ident(
+  def lexbuf "lexing.ml" 211 6802 6830 "lexing.ml" 211 6802 6848
+)
+"lexing.ml" 211 6802 6830 "lexing.ml" 211 6802 6836
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 211 6802 6821 "lexing.ml" 211 6802 6827
+)
+"lexing.ml" 211 6802 6830 "lexing.ml" 211 6802 6848
+type(
+  position
+)
+"lexing.ml" 212 6851 6855 "lexing.ml" 212 6851 6867
+type(
+  lexbuf -> position
+)
+ident(
+  def lexeme_end_p "lexing.ml" 214 6898 6898 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 212 6851 6868 "lexing.ml" 212 6851 6874
+type(
+  lexbuf
+)
+ident(
+  def lexbuf "lexing.ml" 212 6851 6877 "lexing.ml" 212 6851 6894
+)
+"lexing.ml" 212 6851 6877 "lexing.ml" 212 6851 6883
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 212 6851 6868 "lexing.ml" 212 6851 6874
+)
+"lexing.ml" 212 6851 6877 "lexing.ml" 212 6851 6894
+type(
+  position
+)
+"lexing.ml" 214 6898 6902 "lexing.ml" 214 6898 6910
+type(
+  lexbuf -> unit
+)
+ident(
+  def new_line "lexing.ml" 225 7099 7099 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 214 6898 6911 "lexing.ml" 214 6898 6917
+type(
+  lexbuf
+)
+ident(
+  def lexbuf "lexing.ml" 215 6920 6922 "lexing.ml" 219 7048 7051
+)
+"lexing.ml" 215 6920 6926 "lexing.ml" 215 6920 6929
+type(
+  position
+)
+ident(
+  def lcp "lexing.ml" 216 6953 6955 "lexing.ml" 219 7048 7051
+)
+"lexing.ml" 215 6920 6932 "lexing.ml" 215 6920 6938
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 214 6898 6911 "lexing.ml" 214 6898 6917
+)
+"lexing.ml" 215 6920 6932 "lexing.ml" 215 6920 6949
+type(
+  position
+)
+"lexing.ml" 216 6953 6955 "lexing.ml" 216 6953 6961
+type(
+  lexbuf
+)
+ident(
+  int_ref lexbuf "lexing.ml" 214 6898 6911 "lexing.ml" 214 6898 6917
+)
+"lexing.ml" 216 6953 6978 "lexing.ml" 216 6953 6981
+type(
+  position
+)
+ident(
+  int_ref lcp "lexing.ml" 215 6920 6926 "lexing.ml" 215 6920 6929
+)
+"lexing.ml" 217 6987 7002 "lexing.ml" 217 6987 7005
+type(
+  position
+)
+ident(
+  int_ref lcp "lexing.ml" 215 6920 6926 "lexing.ml" 215 6920 6929
+)
+"lexing.ml" 217 6987 7002 "lexing.ml" 217 6987 7014
+type(
+  int
+)
+"lexing.ml" 217 6987 7015 "lexing.ml" 217 6987 7016
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"lexing.ml" 217 6987 7017 "lexing.ml" 217 6987 7018
+type(
+  int
+)
+"lexing.ml" 217 6987 7002 "lexing.ml" 217 6987 7018
+type(
+  int
+)
+"lexing.ml" 218 7020 7034 "lexing.ml" 218 7020 7037
+type(
+  position
+)
+ident(
+  int_ref lcp "lexing.ml" 215 6920 6926 "lexing.ml" 215 6920 6929
+)
+"lexing.ml" 218 7020 7034 "lexing.ml" 218 7020 7046
+type(
+  int
+)
+"lexing.ml" 216 6953 6976 "lexing.ml" 219 7048 7051
+type(
+  position
+)
+"lexing.ml" 216 6953 6955 "lexing.ml" 219 7048 7051
+type(
+  unit
+)
+"lexing.ml" 215 6920 6922 "lexing.ml" 219 7048 7051
+type(
+  unit
+)
+"lexing.ml" 225 7099 7103 "lexing.ml" 225 7099 7114
+type(
+  lexbuf -> unit
+)
+ident(
+  def flush_input "lexing.ml" 229 7221 7246 "lexing.ml" 1 0 -1
+)
+"lexing.ml" 225 7099 7115 "lexing.ml" 225 7099 7117
+type(
+  lexbuf
+)
+ident(
+  def lb "lexing.ml" 226 7120 7122 "lexing.ml" 229 7221 7246
+)
+"lexing.ml" 226 7120 7122 "lexing.ml" 226 7120 7124
+type(
+  lexbuf
+)
+ident(
+  int_ref lb "lexing.ml" 225 7099 7115 "lexing.ml" 225 7099 7117
+)
+"lexing.ml" 226 7120 7141 "lexing.ml" 226 7120 7142
+type(
+  int
+)
+"lexing.ml" 226 7120 7122 "lexing.ml" 226 7120 7142
+type(
+  unit
+)
+"lexing.ml" 227 7144 7146 "lexing.ml" 227 7144 7148
+type(
+  lexbuf
+)
+ident(
+  int_ref lb "lexing.ml" 225 7099 7115 "lexing.ml" 225 7099 7117
+)
+"lexing.ml" 227 7144 7164 "lexing.ml" 227 7144 7165
+type(
+  int
+)
+"lexing.ml" 227 7144 7146 "lexing.ml" 227 7144 7165
+type(
+  unit
+)
+"lexing.ml" 228 7167 7169 "lexing.ml" 228 7167 7171
+type(
+  lexbuf
+)
+ident(
+  int_ref lb "lexing.ml" 225 7099 7115 "lexing.ml" 225 7099 7117
+)
+"lexing.ml" 228 7167 7187 "lexing.ml" 228 7167 7189
+type(
+  lexbuf
+)
+ident(
+  int_ref lb "lexing.ml" 225 7099 7115 "lexing.ml" 225 7099 7117
+)
+"lexing.ml" 228 7167 7187 "lexing.ml" 228 7167 7200
+type(
+  position
+)
+"lexing.ml" 228 7167 7217 "lexing.ml" 228 7167 7218
+type(
+  int
+)
+"lexing.ml" 228 7167 7186 "lexing.ml" 228 7167 7219
+type(
+  position
+)
+"lexing.ml" 228 7167 7169 "lexing.ml" 228 7167 7219
+type(
+  unit
+)
+"lexing.ml" 229 7221 7223 "lexing.ml" 229 7221 7225
+type(
+  lexbuf
+)
+ident(
+  int_ref lb "lexing.ml" 225 7099 7115 "lexing.ml" 225 7099 7117
+)
+"lexing.ml" 229 7221 7244 "lexing.ml" 229 7221 7245
+type(
+  int
+)
+"lexing.ml" 229 7221 7223 "lexing.ml" 229 7221 7246
+type(
+  unit
+)
+"lexing.ml" 228 7167 7169 "lexing.ml" 229 7221 7246
+type(
+  unit
+)
+"lexing.ml" 227 7144 7146 "lexing.ml" 229 7221 7246
+type(
+  unit
+)
+"lexing.ml" 226 7120 7122 "lexing.ml" 229 7221 7246
+type(
+  unit
+)

@@ -1,0 +1,5987 @@
+"odoc_text_parser.ml" 53 752 760 "odoc_text_parser.ml" 53 752 771
+type(
+  string -> unit
+)
+ident(
+  ext_ref Parsing.parse_error
+)
+"odoc_text_parser.mly" 15 1559 1563 "odoc_text_parser.mly" 15 1559 1572
+type(
+  string
+)
+ident(
+  def identchar "odoc_text_parser.mly" 17 1621 1621 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.mly" 16 1575 1577 "odoc_text_parser.mly" 16 1575 1620
+type(
+  string
+)
+"odoc_text_parser.mly" 17 1621 1625 "odoc_text_parser.mly" 17 1621 1630
+type(
+  string
+)
+ident(
+  def blank "odoc_text_parser.mly" 19 1656 1656 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.mly" 17 1621 1633 "odoc_text_parser.mly" 17 1621 1654
+type(
+  string
+)
+"odoc_text_parser.mly" 19 1656 1660 "odoc_text_parser.mly" 19 1656 1683
+type(
+  string -> string
+)
+ident(
+  def remove_beginning_blanks "odoc_text_parser.mly" 22 1744 1744 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.mly" 19 1656 1684 "odoc_text_parser.mly" 19 1656 1685
+type(
+  string
+)
+ident(
+  def s "odoc_text_parser.mly" 20 1688 1690 "odoc_text_parser.mly" 20 1688 1742
+)
+"odoc_text_parser.mly" 20 1688 1690 "odoc_text_parser.mly" 20 1688 1708
+type(
+  Str.regexp -> string -> string -> string
+)
+ident(
+  ext_ref Str.global_replace
+)
+"odoc_text_parser.mly" 20 1688 1710 "odoc_text_parser.mly" 20 1688 1720
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"odoc_text_parser.mly" 20 1688 1722 "odoc_text_parser.mly" 20 1688 1725
+type(
+  string
+)
+"odoc_text_parser.mly" 20 1688 1725 "odoc_text_parser.mly" 20 1688 1726
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_text_parser.mly" 20 1688 1726 "odoc_text_parser.mly" 20 1688 1731
+type(
+  string
+)
+ident(
+  int_ref blank "odoc_text_parser.mly" 17 1621 1625 "odoc_text_parser.mly" 17 1621 1630
+)
+"odoc_text_parser.mly" 20 1688 1731 "odoc_text_parser.mly" 20 1688 1732
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_text_parser.mly" 20 1688 1732 "odoc_text_parser.mly" 20 1688 1735
+type(
+  string
+)
+"odoc_text_parser.mly" 20 1688 1726 "odoc_text_parser.mly" 20 1688 1735
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_text_parser.mly" 20 1688 1721 "odoc_text_parser.mly" 20 1688 1736
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_text_parser.mly" 20 1688 1709 "odoc_text_parser.mly" 20 1688 1737
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"odoc_text_parser.mly" 20 1688 1738 "odoc_text_parser.mly" 20 1688 1740
+type(
+  string
+)
+"odoc_text_parser.mly" 20 1688 1741 "odoc_text_parser.mly" 20 1688 1742
+type(
+  string
+)
+ident(
+  int_ref s "odoc_text_parser.mly" 19 1656 1684 "odoc_text_parser.mly" 19 1656 1685
+)
+"odoc_text_parser.mly" 20 1688 1690 "odoc_text_parser.mly" 20 1688 1742
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_text_parser.mly" 22 1744 1748 "odoc_text_parser.mly" 22 1744 1770
+type(
+  string -> string
+)
+ident(
+  def remove_trailing_blanks "odoc_text_parser.ml" 80 1885 1885 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.mly" 22 1744 1771 "odoc_text_parser.mly" 22 1744 1772
+type(
+  string
+)
+ident(
+  def s "odoc_text_parser.mly" 23 1775 1777 "odoc_text_parser.mly" 23 1775 1826
+)
+"odoc_text_parser.mly" 23 1775 1777 "odoc_text_parser.mly" 23 1775 1795
+type(
+  Str.regexp -> string -> string -> string
+)
+ident(
+  ext_ref Str.global_replace
+)
+"odoc_text_parser.mly" 23 1775 1797 "odoc_text_parser.mly" 23 1775 1807
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"odoc_text_parser.mly" 23 1775 1809 "odoc_text_parser.mly" 23 1775 1814
+type(
+  string
+)
+ident(
+  int_ref blank "odoc_text_parser.mly" 17 1621 1625 "odoc_text_parser.mly" 17 1621 1630
+)
+"odoc_text_parser.mly" 23 1775 1814 "odoc_text_parser.mly" 23 1775 1815
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_text_parser.mly" 23 1775 1815 "odoc_text_parser.mly" 23 1775 1819
+type(
+  string
+)
+"odoc_text_parser.mly" 23 1775 1808 "odoc_text_parser.mly" 23 1775 1820
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_text_parser.mly" 23 1775 1796 "odoc_text_parser.mly" 23 1775 1821
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"odoc_text_parser.mly" 23 1775 1822 "odoc_text_parser.mly" 23 1775 1824
+type(
+  string
+)
+"odoc_text_parser.mly" 23 1775 1825 "odoc_text_parser.mly" 23 1775 1826
+type(
+  string
+)
+ident(
+  int_ref s "odoc_text_parser.mly" 22 1744 1771 "odoc_text_parser.mly" 22 1744 1772
+)
+"odoc_text_parser.mly" 23 1775 1777 "odoc_text_parser.mly" 23 1775 1826
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 80 1885 1889 "odoc_text_parser.ml" 80 1885 1903
+type(
+  int array
+)
+ident(
+  def yytransl_const "odoc_text_parser.ml" 128 2918 2918 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 81 1909 1911 "odoc_text_parser.ml" 81 1909 1914
+type(
+  int
+)
+"odoc_text_parser.ml" 82 1926 1928 "odoc_text_parser.ml" 82 1926 1931
+type(
+  int
+)
+"odoc_text_parser.ml" 83 1944 1946 "odoc_text_parser.ml" 83 1944 1949
+type(
+  int
+)
+"odoc_text_parser.ml" 84 1961 1963 "odoc_text_parser.ml" 84 1961 1966
+type(
+  int
+)
+"odoc_text_parser.ml" 85 1981 1983 "odoc_text_parser.ml" 85 1981 1986
+type(
+  int
+)
+"odoc_text_parser.ml" 86 1999 2001 "odoc_text_parser.ml" 86 1999 2004
+type(
+  int
+)
+"odoc_text_parser.ml" 87 2018 2020 "odoc_text_parser.ml" 87 2018 2023
+type(
+  int
+)
+"odoc_text_parser.ml" 88 2038 2040 "odoc_text_parser.ml" 88 2038 2043
+type(
+  int
+)
+"odoc_text_parser.ml" 89 2056 2058 "odoc_text_parser.ml" 89 2056 2061
+type(
+  int
+)
+"odoc_text_parser.ml" 90 2074 2076 "odoc_text_parser.ml" 90 2074 2079
+type(
+  int
+)
+"odoc_text_parser.ml" 91 2092 2094 "odoc_text_parser.ml" 91 2092 2097
+type(
+  int
+)
+"odoc_text_parser.ml" 92 2110 2112 "odoc_text_parser.ml" 92 2110 2115
+type(
+  int
+)
+"odoc_text_parser.ml" 93 2128 2130 "odoc_text_parser.ml" 93 2128 2133
+type(
+  int
+)
+"odoc_text_parser.ml" 94 2150 2152 "odoc_text_parser.ml" 94 2150 2155
+type(
+  int
+)
+"odoc_text_parser.ml" 95 2172 2174 "odoc_text_parser.ml" 95 2172 2177
+type(
+  int
+)
+"odoc_text_parser.ml" 96 2198 2200 "odoc_text_parser.ml" 96 2198 2203
+type(
+  int
+)
+"odoc_text_parser.ml" 97 2216 2218 "odoc_text_parser.ml" 97 2216 2221
+type(
+  int
+)
+"odoc_text_parser.ml" 98 2238 2240 "odoc_text_parser.ml" 98 2238 2243
+type(
+  int
+)
+"odoc_text_parser.ml" 99 2257 2259 "odoc_text_parser.ml" 99 2257 2262
+type(
+  int
+)
+"odoc_text_parser.ml" 100 2281 2283 "odoc_text_parser.ml" 100 2281 2286
+type(
+  int
+)
+"odoc_text_parser.ml" 101 2301 2303 "odoc_text_parser.ml" 101 2301 2306
+type(
+  int
+)
+"odoc_text_parser.ml" 102 2322 2324 "odoc_text_parser.ml" 102 2322 2327
+type(
+  int
+)
+"odoc_text_parser.ml" 103 2343 2345 "odoc_text_parser.ml" 103 2343 2348
+type(
+  int
+)
+"odoc_text_parser.ml" 104 2364 2366 "odoc_text_parser.ml" 104 2364 2369
+type(
+  int
+)
+"odoc_text_parser.ml" 105 2385 2387 "odoc_text_parser.ml" 105 2385 2390
+type(
+  int
+)
+"odoc_text_parser.ml" 106 2406 2408 "odoc_text_parser.ml" 106 2406 2411
+type(
+  int
+)
+"odoc_text_parser.ml" 107 2427 2429 "odoc_text_parser.ml" 107 2427 2432
+type(
+  int
+)
+"odoc_text_parser.ml" 108 2449 2451 "odoc_text_parser.ml" 108 2449 2454
+type(
+  int
+)
+"odoc_text_parser.ml" 109 2470 2472 "odoc_text_parser.ml" 109 2470 2475
+type(
+  int
+)
+"odoc_text_parser.ml" 110 2491 2493 "odoc_text_parser.ml" 110 2491 2496
+type(
+  int
+)
+"odoc_text_parser.ml" 111 2512 2514 "odoc_text_parser.ml" 111 2512 2517
+type(
+  int
+)
+"odoc_text_parser.ml" 112 2533 2535 "odoc_text_parser.ml" 112 2533 2538
+type(
+  int
+)
+"odoc_text_parser.ml" 113 2554 2556 "odoc_text_parser.ml" 113 2554 2559
+type(
+  int
+)
+"odoc_text_parser.ml" 114 2576 2578 "odoc_text_parser.ml" 114 2576 2581
+type(
+  int
+)
+"odoc_text_parser.ml" 115 2599 2601 "odoc_text_parser.ml" 115 2599 2604
+type(
+  int
+)
+"odoc_text_parser.ml" 116 2625 2627 "odoc_text_parser.ml" 116 2625 2630
+type(
+  int
+)
+"odoc_text_parser.ml" 117 2649 2651 "odoc_text_parser.ml" 117 2649 2654
+type(
+  int
+)
+"odoc_text_parser.ml" 118 2674 2676 "odoc_text_parser.ml" 118 2674 2679
+type(
+  int
+)
+"odoc_text_parser.ml" 119 2697 2699 "odoc_text_parser.ml" 119 2697 2702
+type(
+  int
+)
+"odoc_text_parser.ml" 120 2735 2737 "odoc_text_parser.ml" 120 2735 2740
+type(
+  int
+)
+"odoc_text_parser.ml" 121 2773 2775 "odoc_text_parser.ml" 121 2773 2778
+type(
+  int
+)
+"odoc_text_parser.ml" 122 2805 2807 "odoc_text_parser.ml" 122 2805 2810
+type(
+  int
+)
+"odoc_text_parser.ml" 123 2837 2839 "odoc_text_parser.ml" 123 2837 2842
+type(
+  int
+)
+"odoc_text_parser.ml" 124 2868 2870 "odoc_text_parser.ml" 124 2868 2873
+type(
+  int
+)
+"odoc_text_parser.ml" 125 2892 2896 "odoc_text_parser.ml" 125 2892 2897
+type(
+  int
+)
+"odoc_text_parser.ml" 126 2909 2913 "odoc_text_parser.ml" 126 2909 2914
+type(
+  int
+)
+"odoc_text_parser.ml" 80 1885 1906 "odoc_text_parser.ml" 126 2909 2916
+type(
+  int array
+)
+"odoc_text_parser.ml" 128 2918 2922 "odoc_text_parser.ml" 128 2918 2936
+type(
+  int array
+)
+ident(
+  def yytransl_block "odoc_text_parser.ml" 135 3028 3028 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 129 2942 2944 "odoc_text_parser.ml" 129 2942 2947
+type(
+  int
+)
+"odoc_text_parser.ml" 130 2961 2963 "odoc_text_parser.ml" 130 2961 2966
+type(
+  int
+)
+"odoc_text_parser.ml" 131 2981 2983 "odoc_text_parser.ml" 131 2981 2986
+type(
+  int
+)
+"odoc_text_parser.ml" 132 3001 3003 "odoc_text_parser.ml" 132 3001 3006
+type(
+  int
+)
+"odoc_text_parser.ml" 133 3019 3023 "odoc_text_parser.ml" 133 3019 3024
+type(
+  int
+)
+"odoc_text_parser.ml" 128 2918 2939 "odoc_text_parser.ml" 133 3019 3026
+type(
+  int array
+)
+"odoc_text_parser.ml" 135 3028 3032 "odoc_text_parser.ml" 135 3028 3037
+type(
+  string
+)
+ident(
+  def yylhs "odoc_text_parser.ml" 146 3598 3598 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 135 3028 3040 "odoc_text_parser.ml" 144 3579 3596
+type(
+  string
+)
+"odoc_text_parser.ml" 146 3598 3602 "odoc_text_parser.ml" 146 3598 3607
+type(
+  string
+)
+ident(
+  def yylen "odoc_text_parser.ml" 157 4168 4168 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 146 3598 3610 "odoc_text_parser.ml" 155 4149 4166
+type(
+  string
+)
+"odoc_text_parser.ml" 157 4168 4172 "odoc_text_parser.ml" 157 4168 4180
+type(
+  string
+)
+ident(
+  def yydefred "odoc_text_parser.ml" 175 5227 5227 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 157 4168 4183 "odoc_text_parser.ml" 173 5184 5225
+type(
+  string
+)
+"odoc_text_parser.ml" 175 5227 5231 "odoc_text_parser.ml" 175 5227 5238
+type(
+  string
+)
+ident(
+  def yydgoto "odoc_text_parser.ml" 179 5369 5369 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 175 5227 5241 "odoc_text_parser.ml" 177 5318 5367
+type(
+  string
+)
+"odoc_text_parser.ml" 179 5369 5373 "odoc_text_parser.ml" 179 5369 5381
+type(
+  string
+)
+ident(
+  def yysindex "odoc_text_parser.ml" 197 6428 6428 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 179 5369 5384 "odoc_text_parser.ml" 195 6385 6426
+type(
+  string
+)
+"odoc_text_parser.ml" 197 6428 6432 "odoc_text_parser.ml" 197 6428 6440
+type(
+  string
+)
+ident(
+  def yyrindex "odoc_text_parser.ml" 215 7487 7487 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 197 6428 6443 "odoc_text_parser.ml" 213 7444 7485
+type(
+  string
+)
+"odoc_text_parser.ml" 215 7487 7491 "odoc_text_parser.ml" 215 7487 7499
+type(
+  string
+)
+ident(
+  def yygindex "odoc_text_parser.ml" 219 7630 7630 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 215 7487 7502 "odoc_text_parser.ml" 217 7579 7628
+type(
+  string
+)
+"odoc_text_parser.ml" 219 7630 7634 "odoc_text_parser.ml" 219 7630 7645
+type(
+  int
+)
+ident(
+  def yytablesize "odoc_text_parser.ml" 220 7652 7652 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 219 7630 7648 "odoc_text_parser.ml" 219 7630 7651
+type(
+  int
+)
+"odoc_text_parser.ml" 220 7652 7656 "odoc_text_parser.ml" 220 7652 7663
+type(
+  string
+)
+ident(
+  def yytable "odoc_text_parser.ml" 272 10962 10962 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 220 7652 7666 "odoc_text_parser.ml" 270 10911 10960
+type(
+  string
+)
+"odoc_text_parser.ml" 272 10962 10966 "odoc_text_parser.ml" 272 10962 10973
+type(
+  string
+)
+ident(
+  def yycheck "odoc_text_parser.ml" 324 14272 14272 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 272 10962 10976 "odoc_text_parser.ml" 322 14221 14270
+type(
+  string
+)
+"odoc_text_parser.ml" 324 14272 14276 "odoc_text_parser.ml" 324 14272 14289
+type(
+  string
+)
+ident(
+  def yynames_const "odoc_text_parser.ml" 372 15030 15030 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 324 14272 14292 "odoc_text_parser.ml" 370 15025 15028
+type(
+  string
+)
+"odoc_text_parser.ml" 372 15030 15034 "odoc_text_parser.ml" 372 15030 15047
+type(
+  string
+)
+ident(
+  def yynames_block "odoc_text_parser.ml" 379 15111 15111 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 372 15030 15050 "odoc_text_parser.ml" 377 15106 15109
+type(
+  string
+)
+"odoc_text_parser.ml" 379 15111 15115 "odoc_text_parser.ml" 379 15111 15120
+type(
+  (Parsing.parser_env -> Obj.t) array
+)
+ident(
+  def yyact "odoc_text_parser.ml" 845 30639 30639 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 380 15126 15133 "odoc_text_parser.ml" 380 15126 15134
+type(
+  Parsing.parser_env
+)
+"odoc_text_parser.ml" 380 15126 15138 "odoc_text_parser.ml" 380 15126 15146
+type(
+  string -> Obj.t
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"odoc_text_parser.ml" 380 15126 15147 "odoc_text_parser.ml" 380 15126 15155
+type(
+  string
+)
+"odoc_text_parser.ml" 380 15126 15138 "odoc_text_parser.ml" 380 15126 15155
+call(
+  tail
+)
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 380 15126 15128 "odoc_text_parser.ml" 380 15126 15156
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 381 15157 15164 "odoc_text_parser.ml" 381 15157 15181
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 382 15185 15189 "odoc_text_parser.ml" 387 15336 15369
+)
+"odoc_text_parser.ml" 382 15185 15193 "odoc_text_parser.ml" 382 15185 15195
+type(
+  Odoc_types.text
+)
+ident(
+  def _1 "odoc_text_parser.ml" 383 15248 15252 "odoc_text_parser.ml" 387 15336 15369
+)
+"odoc_text_parser.ml" 382 15185 15199 "odoc_text_parser.ml" 382 15185 15215
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 382 15185 15216 "odoc_text_parser.ml" 382 15185 15233
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 381 15157 15164 "odoc_text_parser.ml" 381 15157 15181
+)
+"odoc_text_parser.ml" 382 15185 15234 "odoc_text_parser.ml" 382 15185 15235
+type(
+  int
+)
+"odoc_text_parser.ml" 382 15185 15199 "odoc_text_parser.ml" 382 15185 15235
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 383 15248 15252 "odoc_text_parser.ml" 383 15248 15260
+type(
+  Odoc_types.text -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 90 15290 15301 "odoc_text_parser.mly" 90 15290 15307
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 382 15185 15193 "odoc_text_parser.ml" 382 15185 15195
+)
+"odoc_text_parser.ml" 383 15248 15252 "odoc_text_parser.ml" 387 15336 15369
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 382 15185 15189 "odoc_text_parser.ml" 387 15336 15369
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 381 15157 15159 "odoc_text_parser.ml" 387 15336 15370
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 388 15371 15378 "odoc_text_parser.ml" 388 15371 15395
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 389 15399 15403 "odoc_text_parser.ml" 393 15488 15521
+)
+"odoc_text_parser.ml" 389 15399 15403 "odoc_text_parser.ml" 389 15399 15411
+type(
+  Odoc_types.text -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 91 15441 15454 "odoc_text_parser.mly" 91 15441 15456
+type(
+  string
+)
+"odoc_text_parser.mly" 91 15441 15450 "odoc_text_parser.mly" 91 15441 15456
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.mly" 91 15441 15447 "odoc_text_parser.mly" 91 15441 15459
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 389 15399 15403 "odoc_text_parser.ml" 393 15488 15521
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 388 15371 15373 "odoc_text_parser.ml" 393 15488 15522
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 394 15523 15530 "odoc_text_parser.ml" 394 15523 15547
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 395 15551 15555 "odoc_text_parser.ml" 400 15724 15747
+)
+"odoc_text_parser.ml" 395 15551 15559 "odoc_text_parser.ml" 395 15551 15561
+type(
+  Odoc_types.text
+)
+ident(
+  def _1 "odoc_text_parser.ml" 396 15627 15631 "odoc_text_parser.ml" 400 15724 15747
+)
+"odoc_text_parser.ml" 395 15551 15565 "odoc_text_parser.ml" 395 15551 15581
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 395 15551 15582 "odoc_text_parser.ml" 395 15551 15599
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 394 15523 15530 "odoc_text_parser.ml" 394 15523 15547
+)
+"odoc_text_parser.ml" 395 15551 15600 "odoc_text_parser.ml" 395 15551 15601
+type(
+  int
+)
+"odoc_text_parser.ml" 395 15551 15565 "odoc_text_parser.ml" 395 15551 15601
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 396 15627 15631 "odoc_text_parser.ml" 396 15627 15639
+type(
+  Odoc_types.text -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 95 15669 15689 "odoc_text_parser.mly" 95 15669 15695
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 395 15551 15559 "odoc_text_parser.ml" 395 15551 15561
+)
+"odoc_text_parser.ml" 396 15627 15631 "odoc_text_parser.ml" 400 15724 15747
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 395 15551 15555 "odoc_text_parser.ml" 400 15724 15747
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 394 15523 15525 "odoc_text_parser.ml" 400 15724 15748
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 401 15749 15756 "odoc_text_parser.ml" 401 15749 15773
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 402 15777 15781 "odoc_text_parser.ml" 407 15944 15980
+)
+"odoc_text_parser.ml" 402 15777 15785 "odoc_text_parser.ml" 402 15777 15787
+type(
+  Odoc_types.text_element
+)
+ident(
+  def _1 "odoc_text_parser.ml" 403 15848 15852 "odoc_text_parser.ml" 407 15944 15980
+)
+"odoc_text_parser.ml" 402 15777 15791 "odoc_text_parser.ml" 402 15777 15807
+type(
+  Parsing.parser_env -> int -> Odoc_types.text_element
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 402 15777 15808 "odoc_text_parser.ml" 402 15777 15825
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 401 15749 15756 "odoc_text_parser.ml" 401 15749 15773
+)
+"odoc_text_parser.ml" 402 15777 15826 "odoc_text_parser.ml" 402 15777 15827
+type(
+  int
+)
+"odoc_text_parser.ml" 402 15777 15791 "odoc_text_parser.ml" 402 15777 15827
+call(
+  stack
+)
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 403 15848 15852 "odoc_text_parser.ml" 403 15848 15860
+type(
+  Odoc_types.text -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 99 15890 15909 "odoc_text_parser.mly" 99 15890 15911
+type(
+  Odoc_types.text_element
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 402 15777 15785 "odoc_text_parser.ml" 402 15777 15787
+)
+"odoc_text_parser.mly" 99 15890 15905 "odoc_text_parser.mly" 99 15890 15915
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 403 15848 15852 "odoc_text_parser.ml" 407 15944 15980
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 402 15777 15781 "odoc_text_parser.ml" 407 15944 15980
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 401 15749 15751 "odoc_text_parser.ml" 407 15944 15981
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 408 15982 15989 "odoc_text_parser.ml" 408 15982 16006
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 409 16010 16014 "odoc_text_parser.ml" 415 16274 16310
+)
+"odoc_text_parser.ml" 409 16010 16018 "odoc_text_parser.ml" 409 16010 16020
+type(
+  Odoc_types.text_element
+)
+ident(
+  def _1 "odoc_text_parser.ml" 410 16081 16085 "odoc_text_parser.ml" 415 16274 16310
+)
+"odoc_text_parser.ml" 409 16010 16024 "odoc_text_parser.ml" 409 16010 16040
+type(
+  Parsing.parser_env -> int -> Odoc_types.text_element
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 409 16010 16041 "odoc_text_parser.ml" 409 16010 16058
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 408 15982 15989 "odoc_text_parser.ml" 408 15982 16006
+)
+"odoc_text_parser.ml" 409 16010 16059 "odoc_text_parser.ml" 409 16010 16060
+type(
+  int
+)
+"odoc_text_parser.ml" 409 16010 16024 "odoc_text_parser.ml" 409 16010 16060
+call(
+  stack
+)
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 410 16081 16089 "odoc_text_parser.ml" 410 16081 16091
+type(
+  Odoc_types.text
+)
+ident(
+  def _2 "odoc_text_parser.ml" 411 16157 16161 "odoc_text_parser.ml" 415 16274 16310
+)
+"odoc_text_parser.ml" 410 16081 16095 "odoc_text_parser.ml" 410 16081 16111
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 410 16081 16112 "odoc_text_parser.ml" 410 16081 16129
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 408 15982 15989 "odoc_text_parser.ml" 408 15982 16006
+)
+"odoc_text_parser.ml" 410 16081 16130 "odoc_text_parser.ml" 410 16081 16131
+type(
+  int
+)
+"odoc_text_parser.ml" 410 16081 16095 "odoc_text_parser.ml" 410 16081 16131
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 411 16157 16161 "odoc_text_parser.ml" 411 16157 16169
+type(
+  Odoc_types.text -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 100 16200 16235 "odoc_text_parser.mly" 100 16200 16237
+type(
+  Odoc_types.text_element
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 409 16010 16018 "odoc_text_parser.ml" 409 16010 16020
+)
+"odoc_text_parser.mly" 100 16200 16241 "odoc_text_parser.mly" 100 16200 16243
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 410 16081 16089 "odoc_text_parser.ml" 410 16081 16091
+)
+"odoc_text_parser.mly" 100 16200 16233 "odoc_text_parser.mly" 100 16200 16245
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 411 16157 16161 "odoc_text_parser.ml" 415 16274 16310
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 410 16081 16085 "odoc_text_parser.ml" 415 16274 16310
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 409 16010 16014 "odoc_text_parser.ml" 415 16274 16310
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 408 15982 15984 "odoc_text_parser.ml" 415 16274 16311
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 416 16312 16319 "odoc_text_parser.ml" 416 16312 16336
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 417 16340 16344 "odoc_text_parser.ml" 422 16514 16574
+)
+"odoc_text_parser.ml" 417 16340 16348 "odoc_text_parser.ml" 417 16340 16350
+type(
+  int * int * Odoc_types.text_element
+)
+ident(
+  def _1 "odoc_text_parser.ml" 418 16414 16418 "odoc_text_parser.ml" 422 16514 16574
+)
+"odoc_text_parser.ml" 417 16340 16354 "odoc_text_parser.ml" 417 16340 16370
+type(
+  Parsing.parser_env -> int -> int * int * Odoc_types.text_element
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 417 16340 16371 "odoc_text_parser.ml" 417 16340 16388
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 416 16312 16319 "odoc_text_parser.ml" 416 16312 16336
+)
+"odoc_text_parser.ml" 417 16340 16389 "odoc_text_parser.ml" 417 16340 16390
+type(
+  int
+)
+"odoc_text_parser.ml" 417 16340 16354 "odoc_text_parser.ml" 417 16340 16390
+call(
+  stack
+)
+type(
+  int * int * Odoc_types.text_element
+)
+type(
+  int * int * Odoc_types.text_element
+)
+"odoc_text_parser.ml" 418 16414 16418 "odoc_text_parser.ml" 418 16414 16426
+type(
+  (int * int * Odoc_types.text_element) list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 104 16457 16479 "odoc_text_parser.mly" 104 16457 16481
+type(
+  int * int * Odoc_types.text_element
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 417 16340 16348 "odoc_text_parser.ml" 417 16340 16350
+)
+"odoc_text_parser.mly" 104 16457 16475 "odoc_text_parser.mly" 104 16457 16485
+type(
+  (int * int * Odoc_types.text_element) list
+)
+type(
+  (int * int * Odoc_types.text_element) list
+)
+"odoc_text_parser.ml" 418 16414 16418 "odoc_text_parser.ml" 422 16514 16574
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 417 16340 16344 "odoc_text_parser.ml" 422 16514 16574
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 416 16312 16314 "odoc_text_parser.ml" 422 16514 16575
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 423 16576 16583 "odoc_text_parser.ml" 423 16576 16600
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 424 16604 16608 "odoc_text_parser.ml" 430 16901 16961
+)
+"odoc_text_parser.ml" 424 16604 16612 "odoc_text_parser.ml" 424 16604 16614
+type(
+  int * int * Odoc_types.text_element
+)
+ident(
+  def _1 "odoc_text_parser.ml" 425 16678 16682 "odoc_text_parser.ml" 430 16901 16961
+)
+"odoc_text_parser.ml" 424 16604 16618 "odoc_text_parser.ml" 424 16604 16634
+type(
+  Parsing.parser_env -> int -> int * int * Odoc_types.text_element
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 424 16604 16635 "odoc_text_parser.ml" 424 16604 16652
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 423 16576 16583 "odoc_text_parser.ml" 423 16576 16600
+)
+"odoc_text_parser.ml" 424 16604 16653 "odoc_text_parser.ml" 424 16604 16654
+type(
+  int
+)
+"odoc_text_parser.ml" 424 16604 16618 "odoc_text_parser.ml" 424 16604 16654
+call(
+  stack
+)
+type(
+  int * int * Odoc_types.text_element
+)
+type(
+  int * int * Odoc_types.text_element
+)
+"odoc_text_parser.ml" 425 16678 16686 "odoc_text_parser.ml" 425 16678 16688
+type(
+  (int * int * Odoc_types.text_element) list
+)
+ident(
+  def _2 "odoc_text_parser.ml" 426 16778 16782 "odoc_text_parser.ml" 430 16901 16961
+)
+"odoc_text_parser.ml" 425 16678 16692 "odoc_text_parser.ml" 425 16678 16708
+type(
+  Parsing.parser_env -> int -> (int * int * Odoc_types.text_element) list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 425 16678 16709 "odoc_text_parser.ml" 425 16678 16726
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 423 16576 16583 "odoc_text_parser.ml" 423 16576 16600
+)
+"odoc_text_parser.ml" 425 16678 16727 "odoc_text_parser.ml" 425 16678 16728
+type(
+  int
+)
+"odoc_text_parser.ml" 425 16678 16692 "odoc_text_parser.ml" 425 16678 16728
+call(
+  stack
+)
+type(
+  (int * int * Odoc_types.text_element) list
+)
+type(
+  (int * int * Odoc_types.text_element) list
+)
+"odoc_text_parser.ml" 426 16778 16782 "odoc_text_parser.ml" 426 16778 16790
+type(
+  (int * int * Odoc_types.text_element) list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 105 16821 16862 "odoc_text_parser.mly" 105 16821 16864
+type(
+  int * int * Odoc_types.text_element
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 424 16604 16612 "odoc_text_parser.ml" 424 16604 16614
+)
+"odoc_text_parser.mly" 105 16821 16868 "odoc_text_parser.mly" 105 16821 16870
+type(
+  (int * int * Odoc_types.text_element) list
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 425 16678 16686 "odoc_text_parser.ml" 425 16678 16688
+)
+"odoc_text_parser.mly" 105 16821 16860 "odoc_text_parser.mly" 105 16821 16872
+type(
+  (int * int * Odoc_types.text_element) list
+)
+type(
+  (int * int * Odoc_types.text_element) list
+)
+"odoc_text_parser.ml" 426 16778 16782 "odoc_text_parser.ml" 430 16901 16961
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 425 16678 16682 "odoc_text_parser.ml" 430 16901 16961
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 424 16604 16608 "odoc_text_parser.ml" 430 16901 16961
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 423 16576 16578 "odoc_text_parser.ml" 430 16901 16962
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 431 16963 16970 "odoc_text_parser.ml" 431 16963 16987
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 432 16991 16995 "odoc_text_parser.ml" 437 17202 17236
+)
+"odoc_text_parser.ml" 432 16991 16999 "odoc_text_parser.ml" 432 16991 17001
+type(
+  Odoc_types.text_element
+)
+ident(
+  def _1 "odoc_text_parser.ml" 433 17062 17066 "odoc_text_parser.ml" 437 17202 17236
+)
+"odoc_text_parser.ml" 432 16991 17005 "odoc_text_parser.ml" 432 16991 17021
+type(
+  Parsing.parser_env -> int -> Odoc_types.text_element
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 432 16991 17022 "odoc_text_parser.ml" 432 16991 17039
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 431 16963 16970 "odoc_text_parser.ml" 431 16963 16987
+)
+"odoc_text_parser.ml" 432 16991 17040 "odoc_text_parser.ml" 432 16991 17041
+type(
+  int
+)
+"odoc_text_parser.ml" 432 16991 17005 "odoc_text_parser.ml" 432 16991 17041
+call(
+  stack
+)
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 433 17062 17066 "odoc_text_parser.ml" 433 17062 17074
+type(
+  int * int * Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 109 17105 17122 "odoc_text_parser.mly" 109 17105 17142
+type(
+  unit -> int
+)
+ident(
+  ext_ref Parsing.symbol_start
+)
+"odoc_text_parser.mly" 109 17105 17143 "odoc_text_parser.mly" 109 17105 17145
+type(
+  unit
+)
+"odoc_text_parser.mly" 109 17105 17122 "odoc_text_parser.mly" 109 17105 17145
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_text_parser.mly" 109 17105 17147 "odoc_text_parser.mly" 109 17105 17165
+type(
+  unit -> int
+)
+ident(
+  ext_ref Parsing.symbol_end
+)
+"odoc_text_parser.mly" 109 17105 17166 "odoc_text_parser.mly" 109 17105 17168
+type(
+  unit
+)
+"odoc_text_parser.mly" 109 17105 17147 "odoc_text_parser.mly" 109 17105 17168
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_text_parser.mly" 109 17105 17170 "odoc_text_parser.mly" 109 17105 17172
+type(
+  Odoc_types.text_element
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 432 16991 16999 "odoc_text_parser.ml" 432 16991 17001
+)
+"odoc_text_parser.mly" 109 17105 17120 "odoc_text_parser.mly" 109 17105 17173
+type(
+  int * int * Odoc_types.text_element
+)
+type(
+  int * int * Odoc_types.text_element
+)
+"odoc_text_parser.ml" 433 17062 17066 "odoc_text_parser.ml" 437 17202 17236
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 432 16991 16995 "odoc_text_parser.ml" 437 17202 17236
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 431 16963 16965 "odoc_text_parser.ml" 437 17202 17237
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 438 17238 17245 "odoc_text_parser.ml" 438 17238 17262
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 439 17266 17270 "odoc_text_parser.ml" 443 17356 17387
+)
+"odoc_text_parser.ml" 439 17266 17270 "odoc_text_parser.ml" 439 17266 17278
+type(
+  Odoc_types.ref_kind option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 114 17309 17319 "odoc_text_parser.mly" 114 17309 17327
+type(
+  Odoc_types.ref_kind option
+)
+type(
+  Odoc_types.ref_kind option
+)
+"odoc_text_parser.ml" 439 17266 17270 "odoc_text_parser.ml" 443 17356 17387
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 438 17238 17240 "odoc_text_parser.ml" 443 17356 17388
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 444 17389 17396 "odoc_text_parser.ml" 444 17389 17413
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 445 17417 17421 "odoc_text_parser.ml" 449 17516 17547
+)
+"odoc_text_parser.ml" 445 17417 17421 "odoc_text_parser.ml" 445 17417 17429
+type(
+  Odoc_types.ref_kind option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 115 17460 17477 "odoc_text_parser.mly" 115 17460 17485
+type(
+  Odoc_types.ref_kind
+)
+"odoc_text_parser.mly" 115 17460 17470 "odoc_text_parser.mly" 115 17460 17487
+type(
+  Odoc_types.ref_kind option
+)
+type(
+  Odoc_types.ref_kind option
+)
+"odoc_text_parser.ml" 445 17417 17421 "odoc_text_parser.ml" 449 17516 17547
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 444 17389 17391 "odoc_text_parser.ml" 449 17516 17548
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 450 17549 17556 "odoc_text_parser.ml" 450 17549 17573
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 451 17577 17581 "odoc_text_parser.ml" 455 17675 17706
+)
+"odoc_text_parser.ml" 451 17577 17581 "odoc_text_parser.ml" 451 17577 17589
+type(
+  Odoc_types.ref_kind option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 116 17620 17637 "odoc_text_parser.mly" 116 17620 17644
+type(
+  Odoc_types.ref_kind
+)
+"odoc_text_parser.mly" 116 17620 17630 "odoc_text_parser.mly" 116 17620 17646
+type(
+  Odoc_types.ref_kind option
+)
+type(
+  Odoc_types.ref_kind option
+)
+"odoc_text_parser.ml" 451 17577 17581 "odoc_text_parser.ml" 455 17675 17706
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 450 17549 17551 "odoc_text_parser.ml" 455 17675 17707
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 456 17708 17715 "odoc_text_parser.ml" 456 17708 17732
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 457 17736 17740 "odoc_text_parser.ml" 461 17839 17870
+)
+"odoc_text_parser.ml" 457 17736 17740 "odoc_text_parser.ml" 457 17736 17748
+type(
+  Odoc_types.ref_kind option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 117 17779 17796 "odoc_text_parser.mly" 117 17779 17808
+type(
+  Odoc_types.ref_kind
+)
+"odoc_text_parser.mly" 117 17779 17789 "odoc_text_parser.mly" 117 17779 17810
+type(
+  Odoc_types.ref_kind option
+)
+type(
+  Odoc_types.ref_kind option
+)
+"odoc_text_parser.ml" 457 17736 17740 "odoc_text_parser.ml" 461 17839 17870
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 456 17708 17710 "odoc_text_parser.ml" 461 17839 17871
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 462 17872 17879 "odoc_text_parser.ml" 462 17872 17896
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 463 17900 17904 "odoc_text_parser.ml" 467 18003 18034
+)
+"odoc_text_parser.ml" 463 17900 17904 "odoc_text_parser.ml" 463 17900 17912
+type(
+  Odoc_types.ref_kind option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 118 17943 17960 "odoc_text_parser.mly" 118 17943 17972
+type(
+  Odoc_types.ref_kind
+)
+"odoc_text_parser.mly" 118 17943 17953 "odoc_text_parser.mly" 118 17943 17974
+type(
+  Odoc_types.ref_kind option
+)
+type(
+  Odoc_types.ref_kind option
+)
+"odoc_text_parser.ml" 463 17900 17904 "odoc_text_parser.ml" 467 18003 18034
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 462 17872 17874 "odoc_text_parser.ml" 467 18003 18035
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 468 18036 18043 "odoc_text_parser.ml" 468 18036 18060
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 469 18064 18068 "odoc_text_parser.ml" 473 18164 18195
+)
+"odoc_text_parser.ml" 469 18064 18068 "odoc_text_parser.ml" 469 18064 18076
+type(
+  Odoc_types.ref_kind option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 119 18107 18124 "odoc_text_parser.mly" 119 18107 18133
+type(
+  Odoc_types.ref_kind
+)
+"odoc_text_parser.mly" 119 18107 18117 "odoc_text_parser.mly" 119 18107 18135
+type(
+  Odoc_types.ref_kind option
+)
+type(
+  Odoc_types.ref_kind option
+)
+"odoc_text_parser.ml" 469 18064 18068 "odoc_text_parser.ml" 473 18164 18195
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 468 18036 18038 "odoc_text_parser.ml" 473 18164 18196
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 474 18197 18204 "odoc_text_parser.ml" 474 18197 18221
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 475 18225 18229 "odoc_text_parser.ml" 479 18331 18362
+)
+"odoc_text_parser.ml" 475 18225 18229 "odoc_text_parser.ml" 475 18225 18237
+type(
+  Odoc_types.ref_kind option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 120 18268 18286 "odoc_text_parser.mly" 120 18268 18300
+type(
+  Odoc_types.ref_kind
+)
+"odoc_text_parser.mly" 120 18268 18279 "odoc_text_parser.mly" 120 18268 18302
+type(
+  Odoc_types.ref_kind option
+)
+type(
+  Odoc_types.ref_kind option
+)
+"odoc_text_parser.ml" 475 18225 18229 "odoc_text_parser.ml" 479 18331 18362
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 474 18197 18199 "odoc_text_parser.ml" 479 18331 18363
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 480 18364 18371 "odoc_text_parser.ml" 480 18364 18388
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 481 18392 18396 "odoc_text_parser.ml" 485 18491 18522
+)
+"odoc_text_parser.ml" 481 18392 18396 "odoc_text_parser.ml" 481 18392 18404
+type(
+  Odoc_types.ref_kind option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 121 18435 18452 "odoc_text_parser.mly" 121 18435 18460
+type(
+  Odoc_types.ref_kind
+)
+"odoc_text_parser.mly" 121 18435 18445 "odoc_text_parser.mly" 121 18435 18462
+type(
+  Odoc_types.ref_kind option
+)
+type(
+  Odoc_types.ref_kind option
+)
+"odoc_text_parser.ml" 481 18392 18396 "odoc_text_parser.ml" 485 18491 18522
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 480 18364 18366 "odoc_text_parser.ml" 485 18491 18523
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 486 18524 18531 "odoc_text_parser.ml" 486 18524 18548
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 487 18552 18556 "odoc_text_parser.ml" 491 18656 18687
+)
+"odoc_text_parser.ml" 487 18552 18556 "odoc_text_parser.ml" 487 18552 18564
+type(
+  Odoc_types.ref_kind option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 122 18595 18612 "odoc_text_parser.mly" 122 18595 18625
+type(
+  Odoc_types.ref_kind
+)
+"odoc_text_parser.mly" 122 18595 18605 "odoc_text_parser.mly" 122 18595 18627
+type(
+  Odoc_types.ref_kind option
+)
+type(
+  Odoc_types.ref_kind option
+)
+"odoc_text_parser.ml" 487 18552 18556 "odoc_text_parser.ml" 491 18656 18687
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 486 18524 18526 "odoc_text_parser.ml" 491 18656 18688
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 492 18689 18696 "odoc_text_parser.ml" 492 18689 18713
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 493 18717 18721 "odoc_text_parser.ml" 497 18820 18851
+)
+"odoc_text_parser.ml" 493 18717 18721 "odoc_text_parser.ml" 493 18717 18729
+type(
+  Odoc_types.ref_kind option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 123 18760 18777 "odoc_text_parser.mly" 123 18760 18789
+type(
+  Odoc_types.ref_kind
+)
+"odoc_text_parser.mly" 123 18760 18770 "odoc_text_parser.mly" 123 18760 18791
+type(
+  Odoc_types.ref_kind option
+)
+type(
+  Odoc_types.ref_kind option
+)
+"odoc_text_parser.ml" 493 18717 18721 "odoc_text_parser.ml" 497 18820 18851
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 492 18689 18691 "odoc_text_parser.ml" 497 18820 18852
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 498 18853 18860 "odoc_text_parser.ml" 498 18853 18877
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 499 18881 18885 "odoc_text_parser.ml" 503 18981 19012
+)
+"odoc_text_parser.ml" 499 18881 18885 "odoc_text_parser.ml" 499 18881 18893
+type(
+  Odoc_types.ref_kind option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 124 18924 18941 "odoc_text_parser.mly" 124 18924 18950
+type(
+  Odoc_types.ref_kind
+)
+"odoc_text_parser.mly" 124 18924 18934 "odoc_text_parser.mly" 124 18924 18952
+type(
+  Odoc_types.ref_kind option
+)
+type(
+  Odoc_types.ref_kind option
+)
+"odoc_text_parser.ml" 499 18881 18885 "odoc_text_parser.ml" 503 18981 19012
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 498 18853 18855 "odoc_text_parser.ml" 503 18981 19013
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 504 19014 19021 "odoc_text_parser.ml" 504 19014 19038
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 505 19042 19046 "odoc_text_parser.ml" 509 19147 19178
+)
+"odoc_text_parser.ml" 505 19042 19046 "odoc_text_parser.ml" 505 19042 19054
+type(
+  Odoc_types.ref_kind option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 125 19085 19114 "odoc_text_parser.mly" 125 19085 19116
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.mly" 125 19085 19102 "odoc_text_parser.mly" 125 19085 19117
+type(
+  Odoc_types.ref_kind
+)
+"odoc_text_parser.mly" 125 19085 19095 "odoc_text_parser.mly" 125 19085 19118
+type(
+  Odoc_types.ref_kind option
+)
+type(
+  Odoc_types.ref_kind option
+)
+"odoc_text_parser.ml" 505 19042 19046 "odoc_text_parser.ml" 509 19147 19178
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 504 19014 19016 "odoc_text_parser.ml" 509 19147 19179
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 510 19180 19187 "odoc_text_parser.ml" 510 19180 19204
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 511 19208 19212 "odoc_text_parser.ml" 515 19311 19342
+)
+"odoc_text_parser.ml" 511 19208 19212 "odoc_text_parser.ml" 511 19208 19220
+type(
+  Odoc_types.ref_kind option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 126 19251 19269 "odoc_text_parser.mly" 126 19251 19280
+type(
+  Odoc_types.ref_kind
+)
+"odoc_text_parser.mly" 126 19251 19262 "odoc_text_parser.mly" 126 19251 19282
+type(
+  Odoc_types.ref_kind option
+)
+type(
+  Odoc_types.ref_kind option
+)
+"odoc_text_parser.ml" 511 19208 19212 "odoc_text_parser.ml" 515 19311 19342
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 510 19180 19182 "odoc_text_parser.ml" 515 19311 19343
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 516 19344 19351 "odoc_text_parser.ml" 516 19344 19368
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 517 19372 19376 "odoc_text_parser.ml" 521 19473 19504
+)
+"odoc_text_parser.ml" 517 19372 19376 "odoc_text_parser.ml" 517 19372 19384
+type(
+  Odoc_types.ref_kind option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 127 19415 19434 "odoc_text_parser.mly" 127 19415 19442
+type(
+  Odoc_types.ref_kind
+)
+"odoc_text_parser.mly" 127 19415 19427 "odoc_text_parser.mly" 127 19415 19444
+type(
+  Odoc_types.ref_kind option
+)
+type(
+  Odoc_types.ref_kind option
+)
+"odoc_text_parser.ml" 517 19372 19376 "odoc_text_parser.ml" 521 19473 19504
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 516 19344 19346 "odoc_text_parser.ml" 521 19473 19505
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 522 19506 19513 "odoc_text_parser.ml" 522 19506 19530
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 523 19534 19538 "odoc_text_parser.ml" 529 19808 19839
+)
+"odoc_text_parser.ml" 523 19534 19542 "odoc_text_parser.ml" 523 19534 19544
+type(
+  int * string option
+)
+ident(
+  def _1 "odoc_text_parser.ml" 524 19611 19615 "odoc_text_parser.ml" 529 19808 19839
+)
+"odoc_text_parser.ml" 523 19534 19548 "odoc_text_parser.ml" 523 19534 19564
+type(
+  Parsing.parser_env -> int -> int * string option
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 523 19534 19565 "odoc_text_parser.ml" 523 19534 19582
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 522 19506 19513 "odoc_text_parser.ml" 522 19506 19530
+)
+"odoc_text_parser.ml" 523 19534 19583 "odoc_text_parser.ml" 523 19534 19584
+type(
+  int
+)
+"odoc_text_parser.ml" 523 19534 19548 "odoc_text_parser.ml" 523 19534 19584
+call(
+  stack
+)
+type(
+  int * string option
+)
+type(
+  int * string option
+)
+"odoc_text_parser.ml" 524 19611 19619 "odoc_text_parser.ml" 524 19611 19621
+type(
+  Odoc_types.text
+)
+ident(
+  def _2 "odoc_text_parser.ml" 525 19674 19678 "odoc_text_parser.ml" 529 19808 19839
+)
+"odoc_text_parser.ml" 524 19611 19625 "odoc_text_parser.ml" 524 19611 19641
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 524 19611 19642 "odoc_text_parser.ml" 524 19611 19659
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 522 19506 19513 "odoc_text_parser.ml" 522 19506 19530
+)
+"odoc_text_parser.ml" 524 19611 19660 "odoc_text_parser.ml" 524 19611 19661
+type(
+  int
+)
+"odoc_text_parser.ml" 524 19611 19625 "odoc_text_parser.ml" 524 19611 19661
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 525 19674 19678 "odoc_text_parser.ml" 525 19674 19686
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 131 19717 19740 "odoc_text_parser.mly" 131 19717 19741
+type(
+  int
+)
+ident(
+  def n "odoc_text_parser.mly" 131 19717 19757 "odoc_text_parser.mly" 131 19717 19777
+)
+"odoc_text_parser.mly" 131 19717 19743 "odoc_text_parser.mly" 131 19717 19748
+type(
+  string option
+)
+ident(
+  def l_opt "odoc_text_parser.mly" 131 19717 19757 "odoc_text_parser.mly" 131 19717 19777
+)
+"odoc_text_parser.mly" 131 19717 19740 "odoc_text_parser.mly" 131 19717 19748
+type(
+  int * string option
+)
+"odoc_text_parser.mly" 131 19717 19751 "odoc_text_parser.mly" 131 19717 19753
+type(
+  int * string option
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 523 19534 19542 "odoc_text_parser.ml" 523 19534 19544
+)
+"odoc_text_parser.mly" 131 19717 19764 "odoc_text_parser.mly" 131 19717 19765
+type(
+  int
+)
+ident(
+  int_ref n "odoc_text_parser.mly" 131 19717 19740 "odoc_text_parser.mly" 131 19717 19741
+)
+"odoc_text_parser.mly" 131 19717 19767 "odoc_text_parser.mly" 131 19717 19772
+type(
+  string option
+)
+ident(
+  int_ref l_opt "odoc_text_parser.mly" 131 19717 19743 "odoc_text_parser.mly" 131 19717 19748
+)
+"odoc_text_parser.mly" 131 19717 19774 "odoc_text_parser.mly" 131 19717 19776
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 524 19611 19619 "odoc_text_parser.ml" 524 19611 19621
+)
+"odoc_text_parser.mly" 131 19717 19757 "odoc_text_parser.mly" 131 19717 19777
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.mly" 131 19717 19734 "odoc_text_parser.mly" 131 19717 19779
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 525 19674 19678 "odoc_text_parser.ml" 529 19808 19839
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 524 19611 19615 "odoc_text_parser.ml" 529 19808 19839
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 523 19534 19538 "odoc_text_parser.ml" 529 19808 19839
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 522 19506 19508 "odoc_text_parser.ml" 529 19808 19840
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 530 19841 19848 "odoc_text_parser.ml" 530 19841 19865
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 531 19869 19873 "odoc_text_parser.ml" 536 20031 20062
+)
+"odoc_text_parser.ml" 531 19869 19877 "odoc_text_parser.ml" 531 19869 19879
+type(
+  Odoc_types.text
+)
+ident(
+  def _2 "odoc_text_parser.ml" 532 19932 19936 "odoc_text_parser.ml" 536 20031 20062
+)
+"odoc_text_parser.ml" 531 19869 19883 "odoc_text_parser.ml" 531 19869 19899
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 531 19869 19900 "odoc_text_parser.ml" 531 19869 19917
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 530 19841 19848 "odoc_text_parser.ml" 530 19841 19865
+)
+"odoc_text_parser.ml" 531 19869 19918 "odoc_text_parser.ml" 531 19869 19919
+type(
+  int
+)
+"odoc_text_parser.ml" 531 19869 19883 "odoc_text_parser.ml" 531 19869 19919
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 532 19932 19936 "odoc_text_parser.ml" 532 19932 19944
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 132 19975 19998 "odoc_text_parser.mly" 132 19975 20000
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 531 19869 19877 "odoc_text_parser.ml" 531 19869 19879
+)
+"odoc_text_parser.mly" 132 19975 19991 "odoc_text_parser.mly" 132 19975 20002
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 532 19932 19936 "odoc_text_parser.ml" 536 20031 20062
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 531 19869 19873 "odoc_text_parser.ml" 536 20031 20062
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 530 19841 19843 "odoc_text_parser.ml" 536 20031 20063
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 537 20064 20071 "odoc_text_parser.ml" 537 20064 20088
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 538 20092 20096 "odoc_text_parser.ml" 543 20258 20289
+)
+"odoc_text_parser.ml" 538 20092 20100 "odoc_text_parser.ml" 538 20092 20102
+type(
+  Odoc_types.text
+)
+ident(
+  def _2 "odoc_text_parser.ml" 539 20155 20159 "odoc_text_parser.ml" 543 20258 20289
+)
+"odoc_text_parser.ml" 538 20092 20106 "odoc_text_parser.ml" 538 20092 20122
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 538 20092 20123 "odoc_text_parser.ml" 538 20092 20140
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 537 20064 20071 "odoc_text_parser.ml" 537 20064 20088
+)
+"odoc_text_parser.ml" 538 20092 20141 "odoc_text_parser.ml" 538 20092 20142
+type(
+  int
+)
+"odoc_text_parser.ml" 538 20092 20106 "odoc_text_parser.ml" 538 20092 20142
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 539 20155 20159 "odoc_text_parser.ml" 539 20155 20167
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 133 20198 20225 "odoc_text_parser.mly" 133 20198 20227
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 538 20092 20100 "odoc_text_parser.ml" 538 20092 20102
+)
+"odoc_text_parser.mly" 133 20198 20216 "odoc_text_parser.mly" 133 20198 20229
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 539 20155 20159 "odoc_text_parser.ml" 543 20258 20289
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 538 20092 20096 "odoc_text_parser.ml" 543 20258 20289
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 537 20064 20066 "odoc_text_parser.ml" 543 20258 20290
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 544 20291 20298 "odoc_text_parser.ml" 544 20291 20315
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 545 20319 20323 "odoc_text_parser.ml" 551 20555 20586
+)
+"odoc_text_parser.ml" 545 20319 20327 "odoc_text_parser.ml" 545 20319 20329
+type(
+  string
+)
+ident(
+  def _1 "odoc_text_parser.ml" 546 20383 20387 "odoc_text_parser.ml" 551 20555 20586
+)
+"odoc_text_parser.ml" 545 20319 20333 "odoc_text_parser.ml" 545 20319 20349
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 545 20319 20350 "odoc_text_parser.ml" 545 20319 20367
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 544 20291 20298 "odoc_text_parser.ml" 544 20291 20315
+)
+"odoc_text_parser.ml" 545 20319 20368 "odoc_text_parser.ml" 545 20319 20369
+type(
+  int
+)
+"odoc_text_parser.ml" 545 20319 20333 "odoc_text_parser.ml" 545 20319 20369
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 546 20383 20391 "odoc_text_parser.ml" 546 20383 20393
+type(
+  Odoc_types.text
+)
+ident(
+  def _2 "odoc_text_parser.ml" 547 20446 20450 "odoc_text_parser.ml" 551 20555 20586
+)
+"odoc_text_parser.ml" 546 20383 20397 "odoc_text_parser.ml" 546 20383 20413
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 546 20383 20414 "odoc_text_parser.ml" 546 20383 20431
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 544 20291 20298 "odoc_text_parser.ml" 544 20291 20315
+)
+"odoc_text_parser.ml" 546 20383 20432 "odoc_text_parser.ml" 546 20383 20433
+type(
+  int
+)
+"odoc_text_parser.ml" 546 20383 20397 "odoc_text_parser.ml" 546 20383 20433
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 547 20446 20450 "odoc_text_parser.ml" 547 20446 20458
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 134 20489 20517 "odoc_text_parser.mly" 134 20489 20519
+type(
+  string
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 545 20319 20327 "odoc_text_parser.ml" 545 20319 20329
+)
+"odoc_text_parser.mly" 134 20489 20521 "odoc_text_parser.mly" 134 20489 20523
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 546 20383 20391 "odoc_text_parser.ml" 546 20383 20393
+)
+"odoc_text_parser.mly" 134 20489 20507 "odoc_text_parser.mly" 134 20489 20526
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 547 20446 20450 "odoc_text_parser.ml" 551 20555 20586
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 546 20383 20387 "odoc_text_parser.ml" 551 20555 20586
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 545 20319 20323 "odoc_text_parser.ml" 551 20555 20586
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 544 20291 20293 "odoc_text_parser.ml" 551 20555 20587
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 552 20588 20595 "odoc_text_parser.ml" 552 20588 20612
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 553 20616 20620 "odoc_text_parser.ml" 558 20782 20813
+)
+"odoc_text_parser.ml" 553 20616 20624 "odoc_text_parser.ml" 553 20616 20626
+type(
+  Odoc_types.text
+)
+ident(
+  def _2 "odoc_text_parser.ml" 554 20679 20683 "odoc_text_parser.ml" 558 20782 20813
+)
+"odoc_text_parser.ml" 553 20616 20630 "odoc_text_parser.ml" 553 20616 20646
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 553 20616 20647 "odoc_text_parser.ml" 553 20616 20664
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 552 20588 20595 "odoc_text_parser.ml" 552 20588 20612
+)
+"odoc_text_parser.ml" 553 20616 20665 "odoc_text_parser.ml" 553 20616 20666
+type(
+  int
+)
+"odoc_text_parser.ml" 553 20616 20630 "odoc_text_parser.ml" 553 20616 20666
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 554 20679 20683 "odoc_text_parser.ml" 554 20679 20691
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 135 20722 20749 "odoc_text_parser.mly" 135 20722 20751
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 553 20616 20624 "odoc_text_parser.ml" 553 20616 20626
+)
+"odoc_text_parser.mly" 135 20722 20737 "odoc_text_parser.mly" 135 20722 20753
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 554 20679 20683 "odoc_text_parser.ml" 558 20782 20813
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 553 20616 20620 "odoc_text_parser.ml" 558 20782 20813
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 552 20588 20590 "odoc_text_parser.ml" 558 20782 20814
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 559 20815 20822 "odoc_text_parser.ml" 559 20815 20839
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 560 20843 20847 "odoc_text_parser.ml" 565 21019 21050
+)
+"odoc_text_parser.ml" 560 20843 20851 "odoc_text_parser.ml" 560 20843 20853
+type(
+  Odoc_types.text
+)
+ident(
+  def _2 "odoc_text_parser.ml" 561 20906 20910 "odoc_text_parser.ml" 565 21019 21050
+)
+"odoc_text_parser.ml" 560 20843 20857 "odoc_text_parser.ml" 560 20843 20873
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 560 20843 20874 "odoc_text_parser.ml" 560 20843 20891
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 559 20815 20822 "odoc_text_parser.ml" 559 20815 20839
+)
+"odoc_text_parser.ml" 560 20843 20892 "odoc_text_parser.ml" 560 20843 20893
+type(
+  int
+)
+"odoc_text_parser.ml" 560 20843 20857 "odoc_text_parser.ml" 560 20843 20893
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 561 20906 20910 "odoc_text_parser.ml" 561 20906 20918
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 136 20949 20986 "odoc_text_parser.mly" 136 20949 20988
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 560 20843 20851 "odoc_text_parser.ml" 560 20843 20853
+)
+"odoc_text_parser.mly" 136 20949 20972 "odoc_text_parser.mly" 136 20949 20990
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 561 20906 20910 "odoc_text_parser.ml" 565 21019 21050
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 560 20843 20847 "odoc_text_parser.ml" 565 21019 21050
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 559 20815 20817 "odoc_text_parser.ml" 565 21019 21051
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 566 21052 21059 "odoc_text_parser.ml" 566 21052 21076
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 567 21080 21084 "odoc_text_parser.ml" 572 21252 21283
+)
+"odoc_text_parser.ml" 567 21080 21088 "odoc_text_parser.ml" 567 21080 21090
+type(
+  Odoc_types.text
+)
+ident(
+  def _2 "odoc_text_parser.ml" 568 21143 21147 "odoc_text_parser.ml" 572 21252 21283
+)
+"odoc_text_parser.ml" 567 21080 21094 "odoc_text_parser.ml" 567 21080 21110
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 567 21080 21111 "odoc_text_parser.ml" 567 21080 21128
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 566 21052 21059 "odoc_text_parser.ml" 566 21052 21076
+)
+"odoc_text_parser.ml" 567 21080 21129 "odoc_text_parser.ml" 567 21080 21130
+type(
+  int
+)
+"odoc_text_parser.ml" 567 21080 21094 "odoc_text_parser.ml" 567 21080 21130
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 568 21143 21147 "odoc_text_parser.ml" 568 21143 21155
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 137 21186 21219 "odoc_text_parser.mly" 137 21186 21221
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 567 21080 21088 "odoc_text_parser.ml" 567 21080 21090
+)
+"odoc_text_parser.mly" 137 21186 21207 "odoc_text_parser.mly" 137 21186 21223
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 568 21143 21147 "odoc_text_parser.ml" 572 21252 21283
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 567 21080 21084 "odoc_text_parser.ml" 572 21252 21283
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 566 21052 21054 "odoc_text_parser.ml" 572 21252 21284
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 573 21285 21292 "odoc_text_parser.ml" 573 21285 21309
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 574 21313 21317 "odoc_text_parser.ml" 579 21479 21510
+)
+"odoc_text_parser.ml" 574 21313 21321 "odoc_text_parser.ml" 574 21313 21323
+type(
+  Odoc_types.text
+)
+ident(
+  def _2 "odoc_text_parser.ml" 575 21376 21380 "odoc_text_parser.ml" 579 21479 21510
+)
+"odoc_text_parser.ml" 574 21313 21327 "odoc_text_parser.ml" 574 21313 21343
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 574 21313 21344 "odoc_text_parser.ml" 574 21313 21361
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 573 21285 21292 "odoc_text_parser.ml" 573 21285 21309
+)
+"odoc_text_parser.ml" 574 21313 21362 "odoc_text_parser.ml" 574 21313 21363
+type(
+  int
+)
+"odoc_text_parser.ml" 574 21313 21327 "odoc_text_parser.ml" 574 21313 21363
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 575 21376 21380 "odoc_text_parser.ml" 575 21376 21388
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 138 21419 21446 "odoc_text_parser.mly" 138 21419 21448
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 574 21313 21321 "odoc_text_parser.ml" 574 21313 21323
+)
+"odoc_text_parser.mly" 138 21419 21437 "odoc_text_parser.mly" 138 21419 21450
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 575 21376 21380 "odoc_text_parser.ml" 579 21479 21510
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 574 21313 21317 "odoc_text_parser.ml" 579 21479 21510
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 573 21285 21287 "odoc_text_parser.ml" 579 21479 21511
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 580 21512 21519 "odoc_text_parser.ml" 580 21512 21536
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 581 21540 21544 "odoc_text_parser.ml" 586 21702 21733
+)
+"odoc_text_parser.ml" 581 21540 21548 "odoc_text_parser.ml" 581 21540 21550
+type(
+  Odoc_types.text
+)
+ident(
+  def _2 "odoc_text_parser.ml" 582 21603 21607 "odoc_text_parser.ml" 586 21702 21733
+)
+"odoc_text_parser.ml" 581 21540 21554 "odoc_text_parser.ml" 581 21540 21570
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 581 21540 21571 "odoc_text_parser.ml" 581 21540 21588
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 580 21512 21519 "odoc_text_parser.ml" 580 21512 21536
+)
+"odoc_text_parser.ml" 581 21540 21589 "odoc_text_parser.ml" 581 21540 21590
+type(
+  int
+)
+"odoc_text_parser.ml" 581 21540 21554 "odoc_text_parser.ml" 581 21540 21590
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 582 21603 21607 "odoc_text_parser.ml" 582 21603 21615
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 139 21646 21669 "odoc_text_parser.mly" 139 21646 21671
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 581 21540 21548 "odoc_text_parser.ml" 581 21540 21550
+)
+"odoc_text_parser.mly" 139 21646 21662 "odoc_text_parser.mly" 139 21646 21673
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 582 21603 21607 "odoc_text_parser.ml" 586 21702 21733
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 581 21540 21544 "odoc_text_parser.ml" 586 21702 21733
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 580 21512 21514 "odoc_text_parser.ml" 586 21702 21734
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 587 21735 21742 "odoc_text_parser.ml" 587 21735 21759
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 588 21763 21767 "odoc_text_parser.ml" 593 21927 21958
+)
+"odoc_text_parser.ml" 588 21763 21771 "odoc_text_parser.ml" 588 21763 21773
+type(
+  Odoc_types.text
+)
+ident(
+  def _2 "odoc_text_parser.ml" 589 21826 21830 "odoc_text_parser.ml" 593 21927 21958
+)
+"odoc_text_parser.ml" 588 21763 21777 "odoc_text_parser.ml" 588 21763 21793
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 588 21763 21794 "odoc_text_parser.ml" 588 21763 21811
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 587 21735 21742 "odoc_text_parser.ml" 587 21735 21759
+)
+"odoc_text_parser.ml" 588 21763 21812 "odoc_text_parser.ml" 588 21763 21813
+type(
+  int
+)
+"odoc_text_parser.ml" 588 21763 21777 "odoc_text_parser.ml" 588 21763 21813
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 589 21826 21830 "odoc_text_parser.ml" 589 21826 21838
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 140 21869 21894 "odoc_text_parser.mly" 140 21869 21896
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 588 21763 21771 "odoc_text_parser.ml" 588 21763 21773
+)
+"odoc_text_parser.mly" 140 21869 21886 "odoc_text_parser.mly" 140 21869 21898
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 589 21826 21830 "odoc_text_parser.ml" 593 21927 21958
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 588 21763 21767 "odoc_text_parser.ml" 593 21927 21958
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 587 21735 21737 "odoc_text_parser.ml" 593 21927 21959
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 594 21960 21967 "odoc_text_parser.ml" 594 21960 21984
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 595 21988 21992 "odoc_text_parser.ml" 600 22150 22181
+)
+"odoc_text_parser.ml" 595 21988 21996 "odoc_text_parser.ml" 595 21988 21998
+type(
+  Odoc_types.text list
+)
+ident(
+  def _2 "odoc_text_parser.ml" 596 22051 22055 "odoc_text_parser.ml" 600 22150 22181
+)
+"odoc_text_parser.ml" 595 21988 22002 "odoc_text_parser.ml" 595 21988 22018
+type(
+  Parsing.parser_env -> int -> Odoc_types.text list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 595 21988 22019 "odoc_text_parser.ml" 595 21988 22036
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 594 21960 21967 "odoc_text_parser.ml" 594 21960 21984
+)
+"odoc_text_parser.ml" 595 21988 22037 "odoc_text_parser.ml" 595 21988 22038
+type(
+  int
+)
+"odoc_text_parser.ml" 595 21988 22002 "odoc_text_parser.ml" 595 21988 22038
+call(
+  stack
+)
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 596 22051 22055 "odoc_text_parser.ml" 596 22051 22063
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 141 22094 22117 "odoc_text_parser.mly" 141 22094 22119
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 595 21988 21996 "odoc_text_parser.ml" 595 21988 21998
+)
+"odoc_text_parser.mly" 141 22094 22110 "odoc_text_parser.mly" 141 22094 22121
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 596 22051 22055 "odoc_text_parser.ml" 600 22150 22181
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 595 21988 21992 "odoc_text_parser.ml" 600 22150 22181
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 594 21960 21962 "odoc_text_parser.ml" 600 22150 22182
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 601 22183 22190 "odoc_text_parser.ml" 601 22183 22207
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 602 22211 22215 "odoc_text_parser.ml" 607 22373 22404
+)
+"odoc_text_parser.ml" 602 22211 22219 "odoc_text_parser.ml" 602 22211 22221
+type(
+  Odoc_types.text list
+)
+ident(
+  def _2 "odoc_text_parser.ml" 603 22274 22278 "odoc_text_parser.ml" 607 22373 22404
+)
+"odoc_text_parser.ml" 602 22211 22225 "odoc_text_parser.ml" 602 22211 22241
+type(
+  Parsing.parser_env -> int -> Odoc_types.text list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 602 22211 22242 "odoc_text_parser.ml" 602 22211 22259
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 601 22183 22190 "odoc_text_parser.ml" 601 22183 22207
+)
+"odoc_text_parser.ml" 602 22211 22260 "odoc_text_parser.ml" 602 22211 22261
+type(
+  int
+)
+"odoc_text_parser.ml" 602 22211 22225 "odoc_text_parser.ml" 602 22211 22261
+call(
+  stack
+)
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 603 22274 22278 "odoc_text_parser.ml" 603 22274 22286
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 142 22317 22340 "odoc_text_parser.mly" 142 22317 22342
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 602 22211 22219 "odoc_text_parser.ml" 602 22211 22221
+)
+"odoc_text_parser.mly" 142 22317 22333 "odoc_text_parser.mly" 142 22317 22344
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 603 22274 22278 "odoc_text_parser.ml" 607 22373 22404
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 602 22211 22215 "odoc_text_parser.ml" 607 22373 22404
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 601 22183 22185 "odoc_text_parser.ml" 607 22373 22405
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 608 22406 22413 "odoc_text_parser.ml" 608 22406 22430
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 609 22434 22438 "odoc_text_parser.ml" 614 22605 22636
+)
+"odoc_text_parser.ml" 609 22434 22442 "odoc_text_parser.ml" 609 22434 22444
+type(
+  string
+)
+ident(
+  def _2 "odoc_text_parser.ml" 610 22499 22503 "odoc_text_parser.ml" 614 22605 22636
+)
+"odoc_text_parser.ml" 609 22434 22448 "odoc_text_parser.ml" 609 22434 22464
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 609 22434 22465 "odoc_text_parser.ml" 609 22434 22482
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 608 22406 22413 "odoc_text_parser.ml" 608 22406 22430
+)
+"odoc_text_parser.ml" 609 22434 22483 "odoc_text_parser.ml" 609 22434 22484
+type(
+  int
+)
+"odoc_text_parser.ml" 609 22434 22448 "odoc_text_parser.ml" 609 22434 22484
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 610 22499 22503 "odoc_text_parser.ml" 610 22499 22511
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 143 22542 22572 "odoc_text_parser.mly" 143 22542 22574
+type(
+  string
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 609 22434 22442 "odoc_text_parser.ml" 609 22434 22444
+)
+"odoc_text_parser.mly" 143 22542 22565 "odoc_text_parser.mly" 143 22542 22576
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 610 22499 22503 "odoc_text_parser.ml" 614 22605 22636
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 609 22434 22438 "odoc_text_parser.ml" 614 22605 22636
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 608 22406 22408 "odoc_text_parser.ml" 614 22605 22637
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 615 22638 22645 "odoc_text_parser.ml" 615 22638 22662
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 616 22666 22670 "odoc_text_parser.ml" 621 22848 22879
+)
+"odoc_text_parser.ml" 616 22666 22674 "odoc_text_parser.ml" 616 22666 22676
+type(
+  string
+)
+ident(
+  def _2 "odoc_text_parser.ml" 617 22731 22735 "odoc_text_parser.ml" 621 22848 22879
+)
+"odoc_text_parser.ml" 616 22666 22680 "odoc_text_parser.ml" 616 22666 22696
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 616 22666 22697 "odoc_text_parser.ml" 616 22666 22714
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 615 22638 22645 "odoc_text_parser.ml" 615 22638 22662
+)
+"odoc_text_parser.ml" 616 22666 22715 "odoc_text_parser.ml" 616 22666 22716
+type(
+  int
+)
+"odoc_text_parser.ml" 616 22666 22680 "odoc_text_parser.ml" 616 22666 22716
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 617 22731 22735 "odoc_text_parser.ml" 617 22731 22743
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 144 22774 22815 "odoc_text_parser.mly" 144 22774 22817
+type(
+  string
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 616 22666 22674 "odoc_text_parser.ml" 616 22666 22676
+)
+"odoc_text_parser.mly" 144 22774 22805 "odoc_text_parser.mly" 144 22774 22819
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 617 22731 22735 "odoc_text_parser.ml" 621 22848 22879
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 616 22666 22670 "odoc_text_parser.ml" 621 22848 22879
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 615 22638 22640 "odoc_text_parser.ml" 621 22848 22880
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 622 22881 22888 "odoc_text_parser.ml" 622 22881 22905
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 623 22909 22913 "odoc_text_parser.ml" 633 23266 23297
+)
+"odoc_text_parser.ml" 623 22909 22917 "odoc_text_parser.ml" 623 22909 22919
+type(
+  Odoc_types.ref_kind option
+)
+ident(
+  def _1 "odoc_text_parser.ml" 624 22980 22984 "odoc_text_parser.ml" 633 23266 23297
+)
+"odoc_text_parser.ml" 623 22909 22923 "odoc_text_parser.ml" 623 22909 22939
+type(
+  Parsing.parser_env -> int -> Odoc_types.ref_kind option
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 623 22909 22940 "odoc_text_parser.ml" 623 22909 22957
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 622 22881 22888 "odoc_text_parser.ml" 622 22881 22905
+)
+"odoc_text_parser.ml" 623 22909 22958 "odoc_text_parser.ml" 623 22909 22959
+type(
+  int
+)
+"odoc_text_parser.ml" 623 22909 22923 "odoc_text_parser.ml" 623 22909 22959
+call(
+  stack
+)
+type(
+  Odoc_types.ref_kind option
+)
+type(
+  Odoc_types.ref_kind option
+)
+"odoc_text_parser.ml" 624 22980 22988 "odoc_text_parser.ml" 624 22980 22990
+type(
+  string
+)
+ident(
+  def _2 "odoc_text_parser.ml" 625 23045 23049 "odoc_text_parser.ml" 633 23266 23297
+)
+"odoc_text_parser.ml" 624 22980 22994 "odoc_text_parser.ml" 624 22980 23010
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 624 22980 23011 "odoc_text_parser.ml" 624 22980 23028
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 622 22881 22888 "odoc_text_parser.ml" 622 22881 22905
+)
+"odoc_text_parser.ml" 624 22980 23029 "odoc_text_parser.ml" 624 22980 23030
+type(
+  int
+)
+"odoc_text_parser.ml" 624 22980 22994 "odoc_text_parser.ml" 624 22980 23030
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 625 23045 23049 "odoc_text_parser.ml" 625 23045 23057
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 146 23117 23127 "odoc_text_parser.mly" 146 23117 23129
+type(
+  string
+)
+ident(
+  def s2 "odoc_text_parser.mly" 147 23162 23168 "odoc_text_parser.mly" 148 23206 23230
+)
+"odoc_text_parser.mly" 146 23117 23132 "odoc_text_parser.mly" 146 23117 23155
+type(
+  string -> string
+)
+ident(
+  int_ref remove_beginning_blanks "odoc_text_parser.mly" 19 1656 1660 "odoc_text_parser.mly" 19 1656 1683
+)
+"odoc_text_parser.mly" 146 23117 23156 "odoc_text_parser.mly" 146 23117 23158
+type(
+  string
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 624 22980 22988 "odoc_text_parser.ml" 624 22980 22990
+)
+"odoc_text_parser.mly" 146 23117 23132 "odoc_text_parser.mly" 146 23117 23158
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_text_parser.mly" 147 23162 23172 "odoc_text_parser.mly" 147 23162 23174
+type(
+  string
+)
+ident(
+  def s3 "odoc_text_parser.mly" 148 23206 23212 "odoc_text_parser.mly" 148 23206 23230
+)
+"odoc_text_parser.mly" 147 23162 23177 "odoc_text_parser.mly" 147 23162 23199
+type(
+  string -> string
+)
+ident(
+  int_ref remove_trailing_blanks "odoc_text_parser.mly" 22 1744 1748 "odoc_text_parser.mly" 22 1744 1770
+)
+"odoc_text_parser.mly" 147 23162 23200 "odoc_text_parser.mly" 147 23162 23202
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_text_parser.mly" 146 23117 23127 "odoc_text_parser.mly" 146 23117 23129
+)
+"odoc_text_parser.mly" 147 23162 23177 "odoc_text_parser.mly" 147 23162 23202
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_text_parser.mly" 148 23206 23217 "odoc_text_parser.mly" 148 23206 23219
+type(
+  string
+)
+ident(
+  int_ref s3 "odoc_text_parser.mly" 147 23162 23172 "odoc_text_parser.mly" 147 23162 23174
+)
+"odoc_text_parser.mly" 148 23206 23221 "odoc_text_parser.mly" 148 23206 23223
+type(
+  Odoc_types.ref_kind option
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 623 22909 22917 "odoc_text_parser.ml" 623 22909 22919
+)
+"odoc_text_parser.mly" 148 23206 23225 "odoc_text_parser.mly" 148 23206 23229
+type(
+  Odoc_types.text option
+)
+"odoc_text_parser.mly" 148 23206 23212 "odoc_text_parser.mly" 148 23206 23230
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.mly" 147 23162 23168 "odoc_text_parser.mly" 148 23206 23230
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.mly" 145 23088 23115 "odoc_text_parser.mly" 149 23231 23237
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 625 23045 23049 "odoc_text_parser.ml" 633 23266 23297
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 624 22980 22984 "odoc_text_parser.ml" 633 23266 23297
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 623 22909 22913 "odoc_text_parser.ml" 633 23266 23297
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 622 22881 22883 "odoc_text_parser.ml" 633 23266 23298
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 634 23299 23306 "odoc_text_parser.ml" 634 23299 23323
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 635 23327 23331 "odoc_text_parser.ml" 646 23764 23795
+)
+"odoc_text_parser.ml" 635 23327 23335 "odoc_text_parser.ml" 635 23327 23337
+type(
+  Odoc_types.ref_kind option
+)
+ident(
+  def _2 "odoc_text_parser.ml" 636 23398 23402 "odoc_text_parser.ml" 646 23764 23795
+)
+"odoc_text_parser.ml" 635 23327 23341 "odoc_text_parser.ml" 635 23327 23357
+type(
+  Parsing.parser_env -> int -> Odoc_types.ref_kind option
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 635 23327 23358 "odoc_text_parser.ml" 635 23327 23375
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 634 23299 23306 "odoc_text_parser.ml" 634 23299 23323
+)
+"odoc_text_parser.ml" 635 23327 23376 "odoc_text_parser.ml" 635 23327 23377
+type(
+  int
+)
+"odoc_text_parser.ml" 635 23327 23341 "odoc_text_parser.ml" 635 23327 23377
+call(
+  stack
+)
+type(
+  Odoc_types.ref_kind option
+)
+type(
+  Odoc_types.ref_kind option
+)
+"odoc_text_parser.ml" 636 23398 23406 "odoc_text_parser.ml" 636 23398 23408
+type(
+  string
+)
+ident(
+  def _3 "odoc_text_parser.ml" 637 23463 23467 "odoc_text_parser.ml" 646 23764 23795
+)
+"odoc_text_parser.ml" 636 23398 23412 "odoc_text_parser.ml" 636 23398 23428
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 636 23398 23429 "odoc_text_parser.ml" 636 23398 23446
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 634 23299 23306 "odoc_text_parser.ml" 634 23299 23323
+)
+"odoc_text_parser.ml" 636 23398 23447 "odoc_text_parser.ml" 636 23398 23448
+type(
+  int
+)
+"odoc_text_parser.ml" 636 23398 23412 "odoc_text_parser.ml" 636 23398 23448
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 637 23463 23471 "odoc_text_parser.ml" 637 23463 23473
+type(
+  Odoc_types.text
+)
+ident(
+  def _5 "odoc_text_parser.ml" 638 23526 23530 "odoc_text_parser.ml" 646 23764 23795
+)
+"odoc_text_parser.ml" 637 23463 23477 "odoc_text_parser.ml" 637 23463 23493
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 637 23463 23494 "odoc_text_parser.ml" 637 23463 23511
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 634 23299 23306 "odoc_text_parser.ml" 634 23299 23323
+)
+"odoc_text_parser.ml" 637 23463 23512 "odoc_text_parser.ml" 637 23463 23513
+type(
+  int
+)
+"odoc_text_parser.ml" 637 23463 23477 "odoc_text_parser.ml" 637 23463 23513
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 638 23526 23530 "odoc_text_parser.ml" 638 23526 23538
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 151 23613 23623 "odoc_text_parser.mly" 151 23613 23625
+type(
+  string
+)
+ident(
+  def s2 "odoc_text_parser.mly" 152 23658 23664 "odoc_text_parser.mly" 153 23702 23729
+)
+"odoc_text_parser.mly" 151 23613 23628 "odoc_text_parser.mly" 151 23613 23651
+type(
+  string -> string
+)
+ident(
+  int_ref remove_beginning_blanks "odoc_text_parser.mly" 19 1656 1660 "odoc_text_parser.mly" 19 1656 1683
+)
+"odoc_text_parser.mly" 151 23613 23652 "odoc_text_parser.mly" 151 23613 23654
+type(
+  string
+)
+ident(
+  int_ref _3 "odoc_text_parser.ml" 636 23398 23406 "odoc_text_parser.ml" 636 23398 23408
+)
+"odoc_text_parser.mly" 151 23613 23628 "odoc_text_parser.mly" 151 23613 23654
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_text_parser.mly" 152 23658 23668 "odoc_text_parser.mly" 152 23658 23670
+type(
+  string
+)
+ident(
+  def s3 "odoc_text_parser.mly" 153 23702 23708 "odoc_text_parser.mly" 153 23702 23729
+)
+"odoc_text_parser.mly" 152 23658 23673 "odoc_text_parser.mly" 152 23658 23695
+type(
+  string -> string
+)
+ident(
+  int_ref remove_trailing_blanks "odoc_text_parser.mly" 22 1744 1748 "odoc_text_parser.mly" 22 1744 1770
+)
+"odoc_text_parser.mly" 152 23658 23696 "odoc_text_parser.mly" 152 23658 23698
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_text_parser.mly" 151 23613 23623 "odoc_text_parser.mly" 151 23613 23625
+)
+"odoc_text_parser.mly" 152 23658 23673 "odoc_text_parser.mly" 152 23658 23698
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_text_parser.mly" 153 23702 23713 "odoc_text_parser.mly" 153 23702 23715
+type(
+  string
+)
+ident(
+  int_ref s3 "odoc_text_parser.mly" 152 23658 23668 "odoc_text_parser.mly" 152 23658 23670
+)
+"odoc_text_parser.mly" 153 23702 23717 "odoc_text_parser.mly" 153 23702 23719
+type(
+  Odoc_types.ref_kind option
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 635 23327 23335 "odoc_text_parser.ml" 635 23327 23337
+)
+"odoc_text_parser.mly" 153 23702 23726 "odoc_text_parser.mly" 153 23702 23728
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _5 "odoc_text_parser.ml" 637 23463 23471 "odoc_text_parser.ml" 637 23463 23473
+)
+"odoc_text_parser.mly" 153 23702 23721 "odoc_text_parser.mly" 153 23702 23728
+type(
+  Odoc_types.text option
+)
+"odoc_text_parser.mly" 153 23702 23708 "odoc_text_parser.mly" 153 23702 23729
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.mly" 152 23658 23664 "odoc_text_parser.mly" 153 23702 23729
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.mly" 150 23569 23611 "odoc_text_parser.mly" 154 23730 23735
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 638 23526 23530 "odoc_text_parser.ml" 646 23764 23795
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 637 23463 23467 "odoc_text_parser.ml" 646 23764 23795
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 636 23398 23402 "odoc_text_parser.ml" 646 23764 23795
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 635 23327 23331 "odoc_text_parser.ml" 646 23764 23795
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 634 23299 23301 "odoc_text_parser.ml" 646 23764 23796
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 647 23797 23804 "odoc_text_parser.ml" 647 23797 23821
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 648 23825 23829 "odoc_text_parser.ml" 658 24153 24184
+)
+"odoc_text_parser.ml" 648 23825 23833 "odoc_text_parser.ml" 648 23825 23835
+type(
+  string
+)
+ident(
+  def _2 "odoc_text_parser.ml" 649 23890 23894 "odoc_text_parser.ml" 658 24153 24184
+)
+"odoc_text_parser.ml" 648 23825 23839 "odoc_text_parser.ml" 648 23825 23855
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 648 23825 23856 "odoc_text_parser.ml" 648 23825 23873
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 647 23797 23804 "odoc_text_parser.ml" 647 23797 23821
+)
+"odoc_text_parser.ml" 648 23825 23874 "odoc_text_parser.ml" 648 23825 23875
+type(
+  int
+)
+"odoc_text_parser.ml" 648 23825 23839 "odoc_text_parser.ml" 648 23825 23875
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 649 23890 23894 "odoc_text_parser.ml" 649 23890 23902
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 157 23961 23971 "odoc_text_parser.mly" 157 23961 23973
+type(
+  string
+)
+ident(
+  def s2 "odoc_text_parser.mly" 158 24006 24012 "odoc_text_parser.mly" 160 24098 24117
+)
+"odoc_text_parser.mly" 157 23961 23976 "odoc_text_parser.mly" 157 23961 23999
+type(
+  string -> string
+)
+ident(
+  int_ref remove_beginning_blanks "odoc_text_parser.mly" 19 1656 1660 "odoc_text_parser.mly" 19 1656 1683
+)
+"odoc_text_parser.mly" 157 23961 24000 "odoc_text_parser.mly" 157 23961 24002
+type(
+  string
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 648 23825 23833 "odoc_text_parser.ml" 648 23825 23835
+)
+"odoc_text_parser.mly" 157 23961 23976 "odoc_text_parser.mly" 157 23961 24002
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_text_parser.mly" 158 24006 24016 "odoc_text_parser.mly" 158 24006 24018
+type(
+  string
+)
+ident(
+  def s3 "odoc_text_parser.mly" 159 24050 24056 "odoc_text_parser.mly" 160 24098 24117
+)
+"odoc_text_parser.mly" 158 24006 24021 "odoc_text_parser.mly" 158 24006 24043
+type(
+  string -> string
+)
+ident(
+  int_ref remove_trailing_blanks "odoc_text_parser.mly" 22 1744 1748 "odoc_text_parser.mly" 22 1744 1770
+)
+"odoc_text_parser.mly" 158 24006 24044 "odoc_text_parser.mly" 158 24006 24046
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_text_parser.mly" 157 23961 23971 "odoc_text_parser.mly" 157 23961 23973
+)
+"odoc_text_parser.mly" 158 24006 24021 "odoc_text_parser.mly" 158 24006 24046
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_text_parser.mly" 159 24050 24060 "odoc_text_parser.mly" 159 24050 24061
+type(
+  string list
+)
+ident(
+  def l "odoc_text_parser.mly" 160 24098 24104 "odoc_text_parser.mly" 160 24098 24117
+)
+"odoc_text_parser.mly" 159 24050 24064 "odoc_text_parser.mly" 159 24050 24091
+type(
+  string -> string list
+)
+ident(
+  ext_ref Odoc_misc.split_with_blanks
+)
+"odoc_text_parser.mly" 159 24050 24092 "odoc_text_parser.mly" 159 24050 24094
+type(
+  string
+)
+ident(
+  int_ref s3 "odoc_text_parser.mly" 158 24006 24016 "odoc_text_parser.mly" 158 24006 24018
+)
+"odoc_text_parser.mly" 159 24050 24064 "odoc_text_parser.mly" 159 24050 24094
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc_text_parser.mly" 160 24098 24116 "odoc_text_parser.mly" 160 24098 24117
+type(
+  string list
+)
+ident(
+  int_ref l "odoc_text_parser.mly" 159 24050 24060 "odoc_text_parser.mly" 159 24050 24061
+)
+"odoc_text_parser.mly" 160 24098 24104 "odoc_text_parser.mly" 160 24098 24117
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.mly" 159 24050 24056 "odoc_text_parser.mly" 160 24098 24117
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.mly" 158 24006 24012 "odoc_text_parser.mly" 160 24098 24117
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.mly" 156 23933 23959 "odoc_text_parser.mly" 161 24118 24124
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 649 23890 23894 "odoc_text_parser.ml" 658 24153 24184
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 648 23825 23829 "odoc_text_parser.ml" 658 24153 24184
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 647 23797 23799 "odoc_text_parser.ml" 658 24153 24185
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 659 24186 24193 "odoc_text_parser.ml" 659 24186 24210
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 660 24214 24218 "odoc_text_parser.ml" 664 24313 24344
+)
+"odoc_text_parser.ml" 660 24214 24218 "odoc_text_parser.ml" 660 24214 24226
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 162 24257 24270 "odoc_text_parser.mly" 162 24257 24284
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 660 24214 24218 "odoc_text_parser.ml" 664 24313 24344
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 659 24186 24188 "odoc_text_parser.ml" 664 24313 24345
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 665 24346 24353 "odoc_text_parser.ml" 665 24346 24370
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 666 24374 24378 "odoc_text_parser.ml" 671 24549 24580
+)
+"odoc_text_parser.ml" 666 24374 24382 "odoc_text_parser.ml" 666 24374 24384
+type(
+  string
+)
+ident(
+  def _2 "odoc_text_parser.ml" 667 24439 24443 "odoc_text_parser.ml" 671 24549 24580
+)
+"odoc_text_parser.ml" 666 24374 24388 "odoc_text_parser.ml" 666 24374 24404
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 666 24374 24405 "odoc_text_parser.ml" 666 24374 24422
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 665 24346 24353 "odoc_text_parser.ml" 665 24346 24370
+)
+"odoc_text_parser.ml" 666 24374 24423 "odoc_text_parser.ml" 666 24374 24424
+type(
+  int
+)
+"odoc_text_parser.ml" 666 24374 24388 "odoc_text_parser.ml" 666 24374 24424
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 667 24439 24443 "odoc_text_parser.ml" 667 24439 24451
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 163 24482 24516 "odoc_text_parser.mly" 163 24482 24518
+type(
+  string
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 666 24374 24382 "odoc_text_parser.ml" 666 24374 24384
+)
+"odoc_text_parser.mly" 163 24482 24505 "odoc_text_parser.mly" 163 24482 24520
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 667 24439 24443 "odoc_text_parser.ml" 671 24549 24580
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 666 24374 24378 "odoc_text_parser.ml" 671 24549 24580
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 665 24346 24348 "odoc_text_parser.ml" 671 24549 24581
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 672 24582 24589 "odoc_text_parser.ml" 672 24582 24606
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 673 24610 24614 "odoc_text_parser.ml" 678 24785 24816
+)
+"odoc_text_parser.ml" 673 24610 24618 "odoc_text_parser.ml" 673 24610 24620
+type(
+  string
+)
+ident(
+  def _2 "odoc_text_parser.ml" 674 24675 24679 "odoc_text_parser.ml" 678 24785 24816
+)
+"odoc_text_parser.ml" 673 24610 24624 "odoc_text_parser.ml" 673 24610 24640
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 673 24610 24641 "odoc_text_parser.ml" 673 24610 24658
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 672 24582 24589 "odoc_text_parser.ml" 672 24582 24606
+)
+"odoc_text_parser.ml" 673 24610 24659 "odoc_text_parser.ml" 673 24610 24660
+type(
+  int
+)
+"odoc_text_parser.ml" 673 24610 24624 "odoc_text_parser.ml" 673 24610 24660
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 674 24675 24679 "odoc_text_parser.ml" 674 24675 24687
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 164 24718 24752 "odoc_text_parser.mly" 164 24718 24754
+type(
+  string
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 673 24610 24618 "odoc_text_parser.ml" 673 24610 24620
+)
+"odoc_text_parser.mly" 164 24718 24744 "odoc_text_parser.mly" 164 24718 24756
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 674 24675 24679 "odoc_text_parser.ml" 678 24785 24816
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 673 24610 24614 "odoc_text_parser.ml" 678 24785 24816
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 672 24582 24584 "odoc_text_parser.ml" 678 24785 24817
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 679 24818 24825 "odoc_text_parser.ml" 679 24818 24842
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 680 24846 24850 "odoc_text_parser.ml" 686 25093 25124
+)
+"odoc_text_parser.ml" 680 24846 24854 "odoc_text_parser.ml" 680 24846 24856
+type(
+  string
+)
+ident(
+  def _1 "odoc_text_parser.ml" 681 24910 24914 "odoc_text_parser.ml" 686 25093 25124
+)
+"odoc_text_parser.ml" 680 24846 24860 "odoc_text_parser.ml" 680 24846 24876
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 680 24846 24877 "odoc_text_parser.ml" 680 24846 24894
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 679 24818 24825 "odoc_text_parser.ml" 679 24818 24842
+)
+"odoc_text_parser.ml" 680 24846 24895 "odoc_text_parser.ml" 680 24846 24896
+type(
+  int
+)
+"odoc_text_parser.ml" 680 24846 24860 "odoc_text_parser.ml" 680 24846 24896
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 681 24910 24918 "odoc_text_parser.ml" 681 24910 24920
+type(
+  string
+)
+ident(
+  def _2 "odoc_text_parser.ml" 682 24975 24979 "odoc_text_parser.ml" 686 25093 25124
+)
+"odoc_text_parser.ml" 681 24910 24924 "odoc_text_parser.ml" 681 24910 24940
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 681 24910 24941 "odoc_text_parser.ml" 681 24910 24958
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 679 24818 24825 "odoc_text_parser.ml" 679 24818 24842
+)
+"odoc_text_parser.ml" 681 24910 24959 "odoc_text_parser.ml" 681 24910 24960
+type(
+  int
+)
+"odoc_text_parser.ml" 681 24910 24924 "odoc_text_parser.ml" 681 24910 24960
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 682 24975 24979 "odoc_text_parser.ml" 682 24975 24987
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 165 25018 25055 "odoc_text_parser.mly" 165 25018 25057
+type(
+  string
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 680 24846 24854 "odoc_text_parser.ml" 680 24846 24856
+)
+"odoc_text_parser.mly" 165 25018 25059 "odoc_text_parser.mly" 165 25018 25061
+type(
+  string
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 681 24910 24918 "odoc_text_parser.ml" 681 24910 24920
+)
+"odoc_text_parser.mly" 165 25018 25045 "odoc_text_parser.mly" 165 25018 25064
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 682 24975 24979 "odoc_text_parser.ml" 686 25093 25124
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 681 24910 24914 "odoc_text_parser.ml" 686 25093 25124
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 680 24846 24850 "odoc_text_parser.ml" 686 25093 25124
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 679 24818 24820 "odoc_text_parser.ml" 686 25093 25125
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 687 25126 25133 "odoc_text_parser.ml" 687 25126 25150
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 688 25154 25158 "odoc_text_parser.ml" 694 25398 25429
+)
+"odoc_text_parser.ml" 688 25154 25162 "odoc_text_parser.ml" 688 25154 25164
+type(
+  string
+)
+ident(
+  def _2 "odoc_text_parser.ml" 689 25219 25223 "odoc_text_parser.ml" 694 25398 25429
+)
+"odoc_text_parser.ml" 688 25154 25168 "odoc_text_parser.ml" 688 25154 25184
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 688 25154 25185 "odoc_text_parser.ml" 688 25154 25202
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 687 25126 25133 "odoc_text_parser.ml" 687 25126 25150
+)
+"odoc_text_parser.ml" 688 25154 25203 "odoc_text_parser.ml" 688 25154 25204
+type(
+  int
+)
+"odoc_text_parser.ml" 688 25154 25168 "odoc_text_parser.ml" 688 25154 25204
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 689 25219 25227 "odoc_text_parser.ml" 689 25219 25229
+type(
+  Odoc_types.text
+)
+ident(
+  def _4 "odoc_text_parser.ml" 690 25282 25286 "odoc_text_parser.ml" 694 25398 25429
+)
+"odoc_text_parser.ml" 689 25219 25233 "odoc_text_parser.ml" 689 25219 25249
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 689 25219 25250 "odoc_text_parser.ml" 689 25219 25267
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 687 25126 25133 "odoc_text_parser.ml" 687 25126 25150
+)
+"odoc_text_parser.ml" 689 25219 25268 "odoc_text_parser.ml" 689 25219 25269
+type(
+  int
+)
+"odoc_text_parser.ml" 689 25219 25233 "odoc_text_parser.ml" 689 25219 25269
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 690 25282 25286 "odoc_text_parser.ml" 690 25282 25294
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 166 25325 25360 "odoc_text_parser.mly" 166 25325 25362
+type(
+  string
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 688 25154 25162 "odoc_text_parser.ml" 688 25154 25164
+)
+"odoc_text_parser.mly" 166 25325 25364 "odoc_text_parser.mly" 166 25325 25366
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _4 "odoc_text_parser.ml" 689 25219 25227 "odoc_text_parser.ml" 689 25219 25229
+)
+"odoc_text_parser.mly" 166 25325 25352 "odoc_text_parser.mly" 166 25325 25369
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 690 25282 25286 "odoc_text_parser.ml" 694 25398 25429
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 689 25219 25223 "odoc_text_parser.ml" 694 25398 25429
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 688 25154 25158 "odoc_text_parser.ml" 694 25398 25429
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 687 25126 25128 "odoc_text_parser.ml" 694 25398 25430
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 695 25431 25438 "odoc_text_parser.ml" 695 25431 25455
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 696 25459 25463 "odoc_text_parser.ml" 700 25555 25586
+)
+"odoc_text_parser.ml" 696 25459 25463 "odoc_text_parser.ml" 696 25459 25471
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 167 25502 25515 "odoc_text_parser.mly" 167 25502 25526
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 696 25459 25463 "odoc_text_parser.ml" 700 25555 25586
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 695 25431 25433 "odoc_text_parser.ml" 700 25555 25587
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 701 25588 25595 "odoc_text_parser.ml" 701 25588 25612
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 702 25616 25620 "odoc_text_parser.ml" 707 25830 25861
+)
+"odoc_text_parser.ml" 702 25616 25624 "odoc_text_parser.ml" 702 25616 25626
+type(
+  Odoc_types.text list
+)
+ident(
+  def _2 "odoc_text_parser.ml" 703 25688 25692 "odoc_text_parser.ml" 707 25830 25861
+)
+"odoc_text_parser.ml" 702 25616 25630 "odoc_text_parser.ml" 702 25616 25646
+type(
+  Parsing.parser_env -> int -> Odoc_types.text list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 702 25616 25647 "odoc_text_parser.ml" 702 25616 25664
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 701 25588 25595 "odoc_text_parser.ml" 701 25588 25612
+)
+"odoc_text_parser.ml" 702 25616 25665 "odoc_text_parser.ml" 702 25616 25666
+type(
+  int
+)
+"odoc_text_parser.ml" 702 25616 25630 "odoc_text_parser.ml" 702 25616 25666
+call(
+  stack
+)
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 703 25688 25692 "odoc_text_parser.ml" 703 25688 25700
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 168 25731 25797 "odoc_text_parser.mly" 168 25731 25799
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 702 25616 25624 "odoc_text_parser.ml" 702 25616 25626
+)
+"odoc_text_parser.mly" 168 25731 25790 "odoc_text_parser.mly" 168 25731 25801
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 703 25688 25692 "odoc_text_parser.ml" 707 25830 25861
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 702 25616 25620 "odoc_text_parser.ml" 707 25830 25861
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 701 25588 25590 "odoc_text_parser.ml" 707 25830 25862
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 708 25863 25870 "odoc_text_parser.ml" 708 25863 25887
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 709 25891 25895 "odoc_text_parser.ml" 714 26091 26122
+)
+"odoc_text_parser.ml" 709 25891 25899 "odoc_text_parser.ml" 709 25891 25901
+type(
+  Odoc_types.text list
+)
+ident(
+  def _2 "odoc_text_parser.ml" 710 25963 25967 "odoc_text_parser.ml" 714 26091 26122
+)
+"odoc_text_parser.ml" 709 25891 25905 "odoc_text_parser.ml" 709 25891 25921
+type(
+  Parsing.parser_env -> int -> Odoc_types.text list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 709 25891 25922 "odoc_text_parser.ml" 709 25891 25939
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 708 25863 25870 "odoc_text_parser.ml" 708 25863 25887
+)
+"odoc_text_parser.ml" 709 25891 25940 "odoc_text_parser.ml" 709 25891 25941
+type(
+  int
+)
+"odoc_text_parser.ml" 709 25891 25905 "odoc_text_parser.ml" 709 25891 25941
+call(
+  stack
+)
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 710 25963 25967 "odoc_text_parser.ml" 710 25963 25975
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 169 26006 26058 "odoc_text_parser.mly" 169 26006 26060
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 709 25891 25899 "odoc_text_parser.ml" 709 25891 25901
+)
+"odoc_text_parser.mly" 169 26006 26051 "odoc_text_parser.mly" 169 26006 26062
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 710 25963 25967 "odoc_text_parser.ml" 714 26091 26122
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 709 25891 25895 "odoc_text_parser.ml" 714 26091 26122
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 708 25863 25865 "odoc_text_parser.ml" 714 26091 26123
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 715 26124 26131 "odoc_text_parser.ml" 715 26124 26148
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 716 26152 26156 "odoc_text_parser.ml" 721 26366 26397
+)
+"odoc_text_parser.ml" 716 26152 26160 "odoc_text_parser.ml" 716 26152 26162
+type(
+  Odoc_types.text list
+)
+ident(
+  def _2 "odoc_text_parser.ml" 717 26224 26228 "odoc_text_parser.ml" 721 26366 26397
+)
+"odoc_text_parser.ml" 716 26152 26166 "odoc_text_parser.ml" 716 26152 26182
+type(
+  Parsing.parser_env -> int -> Odoc_types.text list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 716 26152 26183 "odoc_text_parser.ml" 716 26152 26200
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 715 26124 26131 "odoc_text_parser.ml" 715 26124 26148
+)
+"odoc_text_parser.ml" 716 26152 26201 "odoc_text_parser.ml" 716 26152 26202
+type(
+  int
+)
+"odoc_text_parser.ml" 716 26152 26166 "odoc_text_parser.ml" 716 26152 26202
+call(
+  stack
+)
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 717 26224 26228 "odoc_text_parser.ml" 717 26224 26236
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 170 26267 26333 "odoc_text_parser.mly" 170 26267 26335
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 716 26152 26160 "odoc_text_parser.ml" 716 26152 26162
+)
+"odoc_text_parser.mly" 170 26267 26326 "odoc_text_parser.mly" 170 26267 26337
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 717 26224 26228 "odoc_text_parser.ml" 721 26366 26397
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 716 26152 26156 "odoc_text_parser.ml" 721 26366 26397
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 715 26124 26126 "odoc_text_parser.ml" 721 26366 26398
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 722 26399 26406 "odoc_text_parser.ml" 722 26399 26423
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 723 26427 26431 "odoc_text_parser.ml" 728 26627 26658
+)
+"odoc_text_parser.ml" 723 26427 26435 "odoc_text_parser.ml" 723 26427 26437
+type(
+  Odoc_types.text list
+)
+ident(
+  def _2 "odoc_text_parser.ml" 724 26499 26503 "odoc_text_parser.ml" 728 26627 26658
+)
+"odoc_text_parser.ml" 723 26427 26441 "odoc_text_parser.ml" 723 26427 26457
+type(
+  Parsing.parser_env -> int -> Odoc_types.text list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 723 26427 26458 "odoc_text_parser.ml" 723 26427 26475
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 722 26399 26406 "odoc_text_parser.ml" 722 26399 26423
+)
+"odoc_text_parser.ml" 723 26427 26476 "odoc_text_parser.ml" 723 26427 26477
+type(
+  int
+)
+"odoc_text_parser.ml" 723 26427 26441 "odoc_text_parser.ml" 723 26427 26477
+call(
+  stack
+)
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 724 26499 26503 "odoc_text_parser.ml" 724 26499 26511
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 171 26542 26594 "odoc_text_parser.mly" 171 26542 26596
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 723 26427 26435 "odoc_text_parser.ml" 723 26427 26437
+)
+"odoc_text_parser.mly" 171 26542 26587 "odoc_text_parser.mly" 171 26542 26598
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 724 26499 26503 "odoc_text_parser.ml" 728 26627 26658
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 723 26427 26431 "odoc_text_parser.ml" 728 26627 26658
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 722 26399 26401 "odoc_text_parser.ml" 728 26627 26659
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 729 26660 26667 "odoc_text_parser.ml" 729 26660 26684
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 730 26688 26692 "odoc_text_parser.ml" 735 26844 26875
+)
+"odoc_text_parser.ml" 730 26688 26696 "odoc_text_parser.ml" 730 26688 26698
+type(
+  string
+)
+ident(
+  def _1 "odoc_text_parser.ml" 731 26753 26757 "odoc_text_parser.ml" 735 26844 26875
+)
+"odoc_text_parser.ml" 730 26688 26702 "odoc_text_parser.ml" 730 26688 26718
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 730 26688 26719 "odoc_text_parser.ml" 730 26688 26736
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 729 26660 26667 "odoc_text_parser.ml" 729 26660 26684
+)
+"odoc_text_parser.ml" 730 26688 26737 "odoc_text_parser.ml" 730 26688 26738
+type(
+  int
+)
+"odoc_text_parser.ml" 730 26688 26702 "odoc_text_parser.ml" 730 26688 26738
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 731 26753 26757 "odoc_text_parser.ml" 731 26753 26765
+type(
+  Odoc_types.text_element -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 172 26796 26811 "odoc_text_parser.mly" 172 26796 26813
+type(
+  string
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 730 26688 26696 "odoc_text_parser.ml" 730 26688 26698
+)
+"odoc_text_parser.mly" 172 26796 26805 "odoc_text_parser.mly" 172 26796 26815
+type(
+  Odoc_types.text_element
+)
+type(
+  Odoc_types.text_element
+)
+"odoc_text_parser.ml" 731 26753 26757 "odoc_text_parser.ml" 735 26844 26875
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 730 26688 26692 "odoc_text_parser.ml" 735 26844 26875
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 729 26660 26662 "odoc_text_parser.ml" 735 26844 26876
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 736 26877 26884 "odoc_text_parser.ml" 736 26877 26901
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 737 26905 26909 "odoc_text_parser.ml" 742 27117 27140
+)
+"odoc_text_parser.ml" 737 26905 26913 "odoc_text_parser.ml" 737 26905 26915
+type(
+  string
+)
+ident(
+  def _1 "odoc_text_parser.ml" 738 26970 26974 "odoc_text_parser.ml" 742 27117 27140
+)
+"odoc_text_parser.ml" 737 26905 26919 "odoc_text_parser.ml" 737 26905 26935
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 737 26905 26936 "odoc_text_parser.ml" 737 26905 26953
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 736 26877 26884 "odoc_text_parser.ml" 736 26877 26901
+)
+"odoc_text_parser.ml" 737 26905 26954 "odoc_text_parser.ml" 737 26905 26955
+type(
+  int
+)
+"odoc_text_parser.ml" 737 26905 26919 "odoc_text_parser.ml" 737 26905 26955
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 738 26970 26974 "odoc_text_parser.ml" 738 26970 26982
+type(
+  Odoc_types.text list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 176 27013 27022 "odoc_text_parser.mly" 176 27013 27088
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 738 26970 26974 "odoc_text_parser.ml" 742 27117 27140
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 737 26905 26909 "odoc_text_parser.ml" 742 27117 27140
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 736 26877 26879 "odoc_text_parser.ml" 742 27117 27141
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 743 27142 27149 "odoc_text_parser.ml" 743 27142 27166
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 744 27170 27174 "odoc_text_parser.ml" 750 27390 27413
+)
+"odoc_text_parser.ml" 744 27170 27178 "odoc_text_parser.ml" 744 27170 27180
+type(
+  string
+)
+ident(
+  def _1 "odoc_text_parser.ml" 745 27235 27239 "odoc_text_parser.ml" 750 27390 27413
+)
+"odoc_text_parser.ml" 744 27170 27184 "odoc_text_parser.ml" 744 27170 27200
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 744 27170 27201 "odoc_text_parser.ml" 744 27170 27218
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 743 27142 27149 "odoc_text_parser.ml" 743 27142 27166
+)
+"odoc_text_parser.ml" 744 27170 27219 "odoc_text_parser.ml" 744 27170 27220
+type(
+  int
+)
+"odoc_text_parser.ml" 744 27170 27184 "odoc_text_parser.ml" 744 27170 27220
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 745 27235 27243 "odoc_text_parser.ml" 745 27235 27245
+type(
+  Odoc_types.text list
+)
+ident(
+  def _2 "odoc_text_parser.ml" 746 27298 27302 "odoc_text_parser.ml" 750 27390 27413
+)
+"odoc_text_parser.ml" 745 27235 27249 "odoc_text_parser.ml" 745 27235 27265
+type(
+  Parsing.parser_env -> int -> Odoc_types.text list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 745 27235 27266 "odoc_text_parser.ml" 745 27235 27283
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 743 27142 27149 "odoc_text_parser.ml" 743 27142 27166
+)
+"odoc_text_parser.ml" 745 27235 27284 "odoc_text_parser.ml" 745 27235 27285
+type(
+  int
+)
+"odoc_text_parser.ml" 745 27235 27249 "odoc_text_parser.ml" 745 27235 27285
+call(
+  stack
+)
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 746 27298 27302 "odoc_text_parser.ml" 746 27298 27310
+type(
+  Odoc_types.text list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 177 27341 27355 "odoc_text_parser.mly" 177 27341 27361
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 745 27235 27243 "odoc_text_parser.ml" 745 27235 27245
+)
+"odoc_text_parser.ml" 746 27298 27302 "odoc_text_parser.ml" 750 27390 27413
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 745 27235 27239 "odoc_text_parser.ml" 750 27390 27413
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 744 27170 27174 "odoc_text_parser.ml" 750 27390 27413
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 743 27142 27144 "odoc_text_parser.ml" 750 27390 27414
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 751 27415 27422 "odoc_text_parser.ml" 751 27415 27439
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 752 27443 27447 "odoc_text_parser.ml" 758 27664 27687
+)
+"odoc_text_parser.ml" 752 27443 27451 "odoc_text_parser.ml" 752 27443 27453
+type(
+  Odoc_types.text list
+)
+ident(
+  def _1 "odoc_text_parser.ml" 753 27506 27510 "odoc_text_parser.ml" 758 27664 27687
+)
+"odoc_text_parser.ml" 752 27443 27457 "odoc_text_parser.ml" 752 27443 27473
+type(
+  Parsing.parser_env -> int -> Odoc_types.text list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 752 27443 27474 "odoc_text_parser.ml" 752 27443 27491
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 751 27415 27422 "odoc_text_parser.ml" 751 27415 27439
+)
+"odoc_text_parser.ml" 752 27443 27492 "odoc_text_parser.ml" 752 27443 27493
+type(
+  int
+)
+"odoc_text_parser.ml" 752 27443 27457 "odoc_text_parser.ml" 752 27443 27493
+call(
+  stack
+)
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 753 27506 27514 "odoc_text_parser.ml" 753 27506 27516
+type(
+  string
+)
+ident(
+  def _2 "odoc_text_parser.ml" 754 27571 27575 "odoc_text_parser.ml" 758 27664 27687
+)
+"odoc_text_parser.ml" 753 27506 27520 "odoc_text_parser.ml" 753 27506 27536
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 753 27506 27537 "odoc_text_parser.ml" 753 27506 27554
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 751 27415 27422 "odoc_text_parser.ml" 751 27415 27439
+)
+"odoc_text_parser.ml" 753 27506 27555 "odoc_text_parser.ml" 753 27506 27556
+type(
+  int
+)
+"odoc_text_parser.ml" 753 27506 27520 "odoc_text_parser.ml" 753 27506 27556
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 754 27571 27575 "odoc_text_parser.ml" 754 27571 27583
+type(
+  Odoc_types.text list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 178 27614 27629 "odoc_text_parser.mly" 178 27614 27635
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 752 27443 27451 "odoc_text_parser.ml" 752 27443 27453
+)
+"odoc_text_parser.ml" 754 27571 27575 "odoc_text_parser.ml" 758 27664 27687
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 753 27506 27510 "odoc_text_parser.ml" 758 27664 27687
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 752 27443 27447 "odoc_text_parser.ml" 758 27664 27687
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 751 27415 27417 "odoc_text_parser.ml" 758 27664 27688
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 759 27689 27696 "odoc_text_parser.ml" 759 27689 27713
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 760 27717 27721 "odoc_text_parser.ml" 765 27869 27892
+)
+"odoc_text_parser.ml" 760 27717 27725 "odoc_text_parser.ml" 760 27717 27727
+type(
+  Odoc_types.text
+)
+ident(
+  def _1 "odoc_text_parser.ml" 761 27780 27784 "odoc_text_parser.ml" 765 27869 27892
+)
+"odoc_text_parser.ml" 760 27717 27731 "odoc_text_parser.ml" 760 27717 27747
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 760 27717 27748 "odoc_text_parser.ml" 760 27717 27765
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 759 27689 27696 "odoc_text_parser.ml" 759 27689 27713
+)
+"odoc_text_parser.ml" 760 27717 27766 "odoc_text_parser.ml" 760 27717 27767
+type(
+  int
+)
+"odoc_text_parser.ml" 760 27717 27731 "odoc_text_parser.ml" 760 27717 27767
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 761 27780 27784 "odoc_text_parser.ml" 761 27780 27792
+type(
+  Odoc_types.text list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 179 27823 27834 "odoc_text_parser.mly" 179 27823 27836
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 760 27717 27725 "odoc_text_parser.ml" 760 27717 27727
+)
+"odoc_text_parser.mly" 179 27823 27830 "odoc_text_parser.mly" 179 27823 27840
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 761 27780 27784 "odoc_text_parser.ml" 765 27869 27892
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 760 27717 27721 "odoc_text_parser.ml" 765 27869 27892
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 759 27689 27691 "odoc_text_parser.ml" 765 27869 27893
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 766 27894 27901 "odoc_text_parser.ml" 766 27894 27918
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 767 27922 27926 "odoc_text_parser.ml" 773 28144 28167
+)
+"odoc_text_parser.ml" 767 27922 27930 "odoc_text_parser.ml" 767 27922 27932
+type(
+  Odoc_types.text
+)
+ident(
+  def _1 "odoc_text_parser.ml" 768 27985 27989 "odoc_text_parser.ml" 773 28144 28167
+)
+"odoc_text_parser.ml" 767 27922 27936 "odoc_text_parser.ml" 767 27922 27952
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 767 27922 27953 "odoc_text_parser.ml" 767 27922 27970
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 766 27894 27901 "odoc_text_parser.ml" 766 27894 27918
+)
+"odoc_text_parser.ml" 767 27922 27971 "odoc_text_parser.ml" 767 27922 27972
+type(
+  int
+)
+"odoc_text_parser.ml" 767 27922 27936 "odoc_text_parser.ml" 767 27922 27972
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 768 27985 27993 "odoc_text_parser.ml" 768 27985 27995
+type(
+  Odoc_types.text list
+)
+ident(
+  def _2 "odoc_text_parser.ml" 769 28048 28052 "odoc_text_parser.ml" 773 28144 28167
+)
+"odoc_text_parser.ml" 768 27985 27999 "odoc_text_parser.ml" 768 27985 28015
+type(
+  Parsing.parser_env -> int -> Odoc_types.text list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 768 27985 28016 "odoc_text_parser.ml" 768 27985 28033
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 766 27894 27901 "odoc_text_parser.ml" 766 27894 27918
+)
+"odoc_text_parser.ml" 768 27985 28034 "odoc_text_parser.ml" 768 27985 28035
+type(
+  int
+)
+"odoc_text_parser.ml" 768 27985 27999 "odoc_text_parser.ml" 768 27985 28035
+call(
+  stack
+)
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 769 28048 28052 "odoc_text_parser.ml" 769 28048 28060
+type(
+  Odoc_types.text list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 180 28091 28105 "odoc_text_parser.mly" 180 28091 28107
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 767 27922 27930 "odoc_text_parser.ml" 767 27922 27932
+)
+"odoc_text_parser.mly" 180 28091 28111 "odoc_text_parser.mly" 180 28091 28113
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 768 27985 27993 "odoc_text_parser.ml" 768 27985 27995
+)
+"odoc_text_parser.mly" 180 28091 28103 "odoc_text_parser.mly" 180 28091 28115
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 769 28048 28052 "odoc_text_parser.ml" 773 28144 28167
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 768 27985 27989 "odoc_text_parser.ml" 773 28144 28167
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 767 27922 27926 "odoc_text_parser.ml" 773 28144 28167
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 766 27894 27896 "odoc_text_parser.ml" 773 28144 28168
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 774 28169 28176 "odoc_text_parser.ml" 774 28169 28193
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 775 28197 28201 "odoc_text_parser.ml" 780 28356 28379
+)
+"odoc_text_parser.ml" 775 28197 28205 "odoc_text_parser.ml" 775 28197 28207
+type(
+  Odoc_types.text
+)
+ident(
+  def _2 "odoc_text_parser.ml" 776 28260 28264 "odoc_text_parser.ml" 780 28356 28379
+)
+"odoc_text_parser.ml" 775 28197 28211 "odoc_text_parser.ml" 775 28197 28227
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 775 28197 28228 "odoc_text_parser.ml" 775 28197 28245
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 774 28169 28176 "odoc_text_parser.ml" 774 28169 28193
+)
+"odoc_text_parser.ml" 775 28197 28246 "odoc_text_parser.ml" 775 28197 28247
+type(
+  int
+)
+"odoc_text_parser.ml" 775 28197 28211 "odoc_text_parser.ml" 775 28197 28247
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 776 28260 28264 "odoc_text_parser.ml" 776 28260 28272
+type(
+  Odoc_types.text -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 185 28303 28321 "odoc_text_parser.mly" 185 28303 28327
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 775 28197 28205 "odoc_text_parser.ml" 775 28197 28207
+)
+"odoc_text_parser.ml" 776 28260 28264 "odoc_text_parser.ml" 780 28356 28379
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 775 28197 28201 "odoc_text_parser.ml" 780 28356 28379
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 774 28169 28171 "odoc_text_parser.ml" 780 28356 28380
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 781 28381 28388 "odoc_text_parser.ml" 781 28381 28405
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 782 28409 28413 "odoc_text_parser.ml" 788 28654 28686
+)
+"odoc_text_parser.ml" 782 28409 28417 "odoc_text_parser.ml" 782 28409 28419
+type(
+  Odoc_types.text
+)
+ident(
+  def _1 "odoc_text_parser.ml" 783 28472 28476 "odoc_text_parser.ml" 788 28654 28686
+)
+"odoc_text_parser.ml" 782 28409 28423 "odoc_text_parser.ml" 782 28409 28439
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 782 28409 28440 "odoc_text_parser.ml" 782 28409 28457
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 781 28381 28388 "odoc_text_parser.ml" 781 28381 28405
+)
+"odoc_text_parser.ml" 782 28409 28458 "odoc_text_parser.ml" 782 28409 28459
+type(
+  int
+)
+"odoc_text_parser.ml" 782 28409 28423 "odoc_text_parser.ml" 782 28409 28459
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 783 28472 28480 "odoc_text_parser.ml" 783 28472 28482
+type(
+  Odoc_types.text list
+)
+ident(
+  def _2 "odoc_text_parser.ml" 784 28545 28549 "odoc_text_parser.ml" 788 28654 28686
+)
+"odoc_text_parser.ml" 783 28472 28486 "odoc_text_parser.ml" 783 28472 28502
+type(
+  Parsing.parser_env -> int -> Odoc_types.text list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 783 28472 28503 "odoc_text_parser.ml" 783 28472 28520
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 781 28381 28388 "odoc_text_parser.ml" 781 28381 28405
+)
+"odoc_text_parser.ml" 783 28472 28521 "odoc_text_parser.ml" 783 28472 28522
+type(
+  int
+)
+"odoc_text_parser.ml" 783 28472 28486 "odoc_text_parser.ml" 783 28472 28522
+call(
+  stack
+)
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 784 28545 28549 "odoc_text_parser.ml" 784 28545 28557
+type(
+  Odoc_types.text list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 189 28588 28615 "odoc_text_parser.mly" 189 28588 28617
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 782 28409 28417 "odoc_text_parser.ml" 782 28409 28419
+)
+"odoc_text_parser.mly" 189 28588 28621 "odoc_text_parser.mly" 189 28588 28623
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 783 28472 28480 "odoc_text_parser.ml" 783 28472 28482
+)
+"odoc_text_parser.mly" 189 28588 28613 "odoc_text_parser.mly" 189 28588 28625
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 784 28545 28549 "odoc_text_parser.ml" 788 28654 28686
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 783 28472 28476 "odoc_text_parser.ml" 788 28654 28686
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 782 28409 28413 "odoc_text_parser.ml" 788 28654 28686
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 781 28381 28383 "odoc_text_parser.ml" 788 28654 28687
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 789 28688 28695 "odoc_text_parser.ml" 789 28688 28712
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 790 28716 28720 "odoc_text_parser.ml" 795 28868 28900
+)
+"odoc_text_parser.ml" 790 28716 28724 "odoc_text_parser.ml" 790 28716 28726
+type(
+  Odoc_types.text
+)
+ident(
+  def _1 "odoc_text_parser.ml" 791 28779 28783 "odoc_text_parser.ml" 795 28868 28900
+)
+"odoc_text_parser.ml" 790 28716 28730 "odoc_text_parser.ml" 790 28716 28746
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 790 28716 28747 "odoc_text_parser.ml" 790 28716 28764
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 789 28688 28695 "odoc_text_parser.ml" 789 28688 28712
+)
+"odoc_text_parser.ml" 790 28716 28765 "odoc_text_parser.ml" 790 28716 28766
+type(
+  int
+)
+"odoc_text_parser.ml" 790 28716 28730 "odoc_text_parser.ml" 790 28716 28766
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 791 28779 28783 "odoc_text_parser.ml" 791 28779 28791
+type(
+  Odoc_types.text list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 190 28822 28833 "odoc_text_parser.mly" 190 28822 28835
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 790 28716 28724 "odoc_text_parser.ml" 790 28716 28726
+)
+"odoc_text_parser.mly" 190 28822 28829 "odoc_text_parser.mly" 190 28822 28839
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 791 28779 28783 "odoc_text_parser.ml" 795 28868 28900
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 790 28716 28720 "odoc_text_parser.ml" 795 28868 28900
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 789 28688 28690 "odoc_text_parser.ml" 795 28868 28901
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 796 28902 28909 "odoc_text_parser.ml" 796 28902 28926
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 797 28930 28934 "odoc_text_parser.ml" 802 29115 29148
+)
+"odoc_text_parser.ml" 797 28930 28938 "odoc_text_parser.ml" 797 28930 28940
+type(
+  Odoc_types.text list
+)
+ident(
+  def _2 "odoc_text_parser.ml" 798 29002 29006 "odoc_text_parser.ml" 802 29115 29148
+)
+"odoc_text_parser.ml" 797 28930 28944 "odoc_text_parser.ml" 797 28930 28960
+type(
+  Parsing.parser_env -> int -> Odoc_types.text list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 797 28930 28961 "odoc_text_parser.ml" 797 28930 28978
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 796 28902 28909 "odoc_text_parser.ml" 796 28902 28926
+)
+"odoc_text_parser.ml" 797 28930 28979 "odoc_text_parser.ml" 797 28930 28980
+type(
+  int
+)
+"odoc_text_parser.ml" 797 28930 28944 "odoc_text_parser.ml" 797 28930 28980
+call(
+  stack
+)
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 798 29002 29006 "odoc_text_parser.ml" 798 29002 29014
+type(
+  Odoc_types.text list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 194 29045 29080 "odoc_text_parser.mly" 194 29045 29086
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 797 28930 28938 "odoc_text_parser.ml" 797 28930 28940
+)
+"odoc_text_parser.ml" 798 29002 29006 "odoc_text_parser.ml" 802 29115 29148
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 797 28930 28934 "odoc_text_parser.ml" 802 29115 29148
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 796 28902 28904 "odoc_text_parser.ml" 802 29115 29149
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 803 29150 29157 "odoc_text_parser.ml" 803 29150 29174
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 804 29178 29182 "odoc_text_parser.ml" 810 29423 29455
+)
+"odoc_text_parser.ml" 804 29178 29186 "odoc_text_parser.ml" 804 29178 29188
+type(
+  Odoc_types.text
+)
+ident(
+  def _1 "odoc_text_parser.ml" 805 29241 29245 "odoc_text_parser.ml" 810 29423 29455
+)
+"odoc_text_parser.ml" 804 29178 29192 "odoc_text_parser.ml" 804 29178 29208
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 804 29178 29209 "odoc_text_parser.ml" 804 29178 29226
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 803 29150 29157 "odoc_text_parser.ml" 803 29150 29174
+)
+"odoc_text_parser.ml" 804 29178 29227 "odoc_text_parser.ml" 804 29178 29228
+type(
+  int
+)
+"odoc_text_parser.ml" 804 29178 29192 "odoc_text_parser.ml" 804 29178 29228
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 805 29241 29249 "odoc_text_parser.ml" 805 29241 29251
+type(
+  Odoc_types.text list
+)
+ident(
+  def _2 "odoc_text_parser.ml" 806 29314 29318 "odoc_text_parser.ml" 810 29423 29455
+)
+"odoc_text_parser.ml" 805 29241 29255 "odoc_text_parser.ml" 805 29241 29271
+type(
+  Parsing.parser_env -> int -> Odoc_types.text list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 805 29241 29272 "odoc_text_parser.ml" 805 29241 29289
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 803 29150 29157 "odoc_text_parser.ml" 803 29150 29174
+)
+"odoc_text_parser.ml" 805 29241 29290 "odoc_text_parser.ml" 805 29241 29291
+type(
+  int
+)
+"odoc_text_parser.ml" 805 29241 29255 "odoc_text_parser.ml" 805 29241 29291
+call(
+  stack
+)
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 806 29314 29318 "odoc_text_parser.ml" 806 29314 29326
+type(
+  Odoc_types.text list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 198 29357 29384 "odoc_text_parser.mly" 198 29357 29386
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 804 29178 29186 "odoc_text_parser.ml" 804 29178 29188
+)
+"odoc_text_parser.mly" 198 29357 29390 "odoc_text_parser.mly" 198 29357 29392
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 805 29241 29249 "odoc_text_parser.ml" 805 29241 29251
+)
+"odoc_text_parser.mly" 198 29357 29382 "odoc_text_parser.mly" 198 29357 29394
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 806 29314 29318 "odoc_text_parser.ml" 810 29423 29455
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 805 29241 29245 "odoc_text_parser.ml" 810 29423 29455
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 804 29178 29182 "odoc_text_parser.ml" 810 29423 29455
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 803 29150 29152 "odoc_text_parser.ml" 810 29423 29456
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 811 29457 29464 "odoc_text_parser.ml" 811 29457 29481
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 812 29485 29489 "odoc_text_parser.ml" 817 29637 29669
+)
+"odoc_text_parser.ml" 812 29485 29493 "odoc_text_parser.ml" 812 29485 29495
+type(
+  Odoc_types.text
+)
+ident(
+  def _1 "odoc_text_parser.ml" 813 29548 29552 "odoc_text_parser.ml" 817 29637 29669
+)
+"odoc_text_parser.ml" 812 29485 29499 "odoc_text_parser.ml" 812 29485 29515
+type(
+  Parsing.parser_env -> int -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 812 29485 29516 "odoc_text_parser.ml" 812 29485 29533
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 811 29457 29464 "odoc_text_parser.ml" 811 29457 29481
+)
+"odoc_text_parser.ml" 812 29485 29534 "odoc_text_parser.ml" 812 29485 29535
+type(
+  int
+)
+"odoc_text_parser.ml" 812 29485 29499 "odoc_text_parser.ml" 812 29485 29535
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 813 29548 29552 "odoc_text_parser.ml" 813 29548 29560
+type(
+  Odoc_types.text list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 199 29591 29602 "odoc_text_parser.mly" 199 29591 29604
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 812 29485 29493 "odoc_text_parser.ml" 812 29485 29495
+)
+"odoc_text_parser.mly" 199 29591 29598 "odoc_text_parser.mly" 199 29591 29608
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 813 29548 29552 "odoc_text_parser.ml" 817 29637 29669
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 812 29485 29489 "odoc_text_parser.ml" 817 29637 29669
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 811 29457 29459 "odoc_text_parser.ml" 817 29637 29670
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 818 29671 29678 "odoc_text_parser.ml" 818 29671 29695
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 819 29699 29703 "odoc_text_parser.ml" 824 29884 29917
+)
+"odoc_text_parser.ml" 819 29699 29707 "odoc_text_parser.ml" 819 29699 29709
+type(
+  Odoc_types.text list
+)
+ident(
+  def _2 "odoc_text_parser.ml" 820 29771 29775 "odoc_text_parser.ml" 824 29884 29917
+)
+"odoc_text_parser.ml" 819 29699 29713 "odoc_text_parser.ml" 819 29699 29729
+type(
+  Parsing.parser_env -> int -> Odoc_types.text list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 819 29699 29730 "odoc_text_parser.ml" 819 29699 29747
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 818 29671 29678 "odoc_text_parser.ml" 818 29671 29695
+)
+"odoc_text_parser.ml" 819 29699 29748 "odoc_text_parser.ml" 819 29699 29749
+type(
+  int
+)
+"odoc_text_parser.ml" 819 29699 29713 "odoc_text_parser.ml" 819 29699 29749
+call(
+  stack
+)
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+"odoc_text_parser.ml" 820 29771 29775 "odoc_text_parser.ml" 820 29771 29783
+type(
+  Odoc_types.text list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 203 29814 29849 "odoc_text_parser.mly" 203 29814 29855
+type(
+  Odoc_types.text list
+)
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 819 29699 29707 "odoc_text_parser.ml" 819 29699 29709
+)
+"odoc_text_parser.ml" 820 29771 29775 "odoc_text_parser.ml" 824 29884 29917
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 819 29699 29703 "odoc_text_parser.ml" 824 29884 29917
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 818 29671 29673 "odoc_text_parser.ml" 824 29884 29918
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 825 29919 29926 "odoc_text_parser.ml" 825 29919 29943
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 826 29947 29951 "odoc_text_parser.ml" 831 30098 30123
+)
+"odoc_text_parser.ml" 826 29947 29955 "odoc_text_parser.ml" 826 29947 29957
+type(
+  string
+)
+ident(
+  def _1 "odoc_text_parser.ml" 827 30011 30015 "odoc_text_parser.ml" 831 30098 30123
+)
+"odoc_text_parser.ml" 826 29947 29961 "odoc_text_parser.ml" 826 29947 29977
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 826 29947 29978 "odoc_text_parser.ml" 826 29947 29995
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 825 29919 29926 "odoc_text_parser.ml" 825 29919 29943
+)
+"odoc_text_parser.ml" 826 29947 29996 "odoc_text_parser.ml" 826 29947 29997
+type(
+  int
+)
+"odoc_text_parser.ml" 826 29947 29961 "odoc_text_parser.ml" 826 29947 29997
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 827 30011 30015 "odoc_text_parser.ml" 827 30011 30023
+type(
+  string -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 208 30054 30063 "odoc_text_parser.mly" 208 30054 30069
+type(
+  string
+)
+type(
+  string
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 826 29947 29955 "odoc_text_parser.ml" 826 29947 29957
+)
+"odoc_text_parser.ml" 827 30011 30015 "odoc_text_parser.ml" 831 30098 30123
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 826 29947 29951 "odoc_text_parser.ml" 831 30098 30123
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 825 29919 29921 "odoc_text_parser.ml" 831 30098 30124
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 832 30125 30132 "odoc_text_parser.ml" 832 30125 30149
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 833 30153 30157 "odoc_text_parser.ml" 839 30377 30402
+)
+"odoc_text_parser.ml" 833 30153 30161 "odoc_text_parser.ml" 833 30153 30163
+type(
+  string
+)
+ident(
+  def _1 "odoc_text_parser.ml" 834 30217 30221 "odoc_text_parser.ml" 839 30377 30402
+)
+"odoc_text_parser.ml" 833 30153 30167 "odoc_text_parser.ml" 833 30153 30183
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 833 30153 30184 "odoc_text_parser.ml" 833 30153 30201
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 832 30125 30132 "odoc_text_parser.ml" 832 30125 30149
+)
+"odoc_text_parser.ml" 833 30153 30202 "odoc_text_parser.ml" 833 30153 30203
+type(
+  int
+)
+"odoc_text_parser.ml" 833 30153 30167 "odoc_text_parser.ml" 833 30153 30203
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 834 30217 30225 "odoc_text_parser.ml" 834 30217 30227
+type(
+  string
+)
+ident(
+  def _2 "odoc_text_parser.ml" 835 30282 30286 "odoc_text_parser.ml" 839 30377 30402
+)
+"odoc_text_parser.ml" 834 30217 30231 "odoc_text_parser.ml" 834 30217 30247
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 834 30217 30248 "odoc_text_parser.ml" 834 30217 30265
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 832 30125 30132 "odoc_text_parser.ml" 832 30125 30149
+)
+"odoc_text_parser.ml" 834 30217 30266 "odoc_text_parser.ml" 834 30217 30267
+type(
+  int
+)
+"odoc_text_parser.ml" 834 30217 30231 "odoc_text_parser.ml" 834 30217 30267
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 835 30282 30286 "odoc_text_parser.ml" 835 30282 30294
+type(
+  string -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"odoc_text_parser.mly" 209 30325 30341 "odoc_text_parser.mly" 209 30325 30343
+type(
+  string
+)
+ident(
+  int_ref _1 "odoc_text_parser.ml" 833 30153 30161 "odoc_text_parser.ml" 833 30153 30163
+)
+"odoc_text_parser.mly" 209 30325 30343 "odoc_text_parser.mly" 209 30325 30344
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_text_parser.mly" 209 30325 30344 "odoc_text_parser.mly" 209 30325 30346
+type(
+  string
+)
+ident(
+  int_ref _2 "odoc_text_parser.ml" 834 30217 30225 "odoc_text_parser.ml" 834 30217 30227
+)
+"odoc_text_parser.mly" 209 30325 30339 "odoc_text_parser.mly" 209 30325 30348
+call(
+  tail
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_text_parser.ml" 835 30282 30286 "odoc_text_parser.ml" 839 30377 30402
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 834 30217 30221 "odoc_text_parser.ml" 839 30377 30402
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 833 30153 30157 "odoc_text_parser.ml" 839 30377 30402
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 832 30125 30127 "odoc_text_parser.ml" 839 30377 30403
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 841 30421 30428 "odoc_text_parser.ml" 841 30421 30445
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 841 30421 30449 "odoc_text_parser.ml" 841 30421 30510
+)
+"odoc_text_parser.ml" 841 30421 30449 "odoc_text_parser.ml" 841 30421 30454
+type(
+  exn -> Obj.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"odoc_text_parser.ml" 841 30421 30472 "odoc_text_parser.ml" 841 30421 30488
+type(
+  Parsing.parser_env -> int -> Obj.t
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 841 30421 30489 "odoc_text_parser.ml" 841 30421 30506
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 841 30421 30428 "odoc_text_parser.ml" 841 30421 30445
+)
+"odoc_text_parser.ml" 841 30421 30507 "odoc_text_parser.ml" 841 30421 30508
+type(
+  int
+)
+"odoc_text_parser.ml" 841 30421 30471 "odoc_text_parser.ml" 841 30421 30509
+call(
+  stack
+)
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 841 30421 30455 "odoc_text_parser.ml" 841 30421 30510
+type(
+  exn
+)
+"odoc_text_parser.ml" 841 30421 30449 "odoc_text_parser.ml" 841 30421 30510
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 841 30421 30423 "odoc_text_parser.ml" 841 30421 30511
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 843 30545 30552 "odoc_text_parser.ml" 843 30545 30569
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "odoc_text_parser.ml" 843 30545 30573 "odoc_text_parser.ml" 843 30545 30634
+)
+"odoc_text_parser.ml" 843 30545 30573 "odoc_text_parser.ml" 843 30545 30578
+type(
+  exn -> Obj.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"odoc_text_parser.ml" 843 30545 30596 "odoc_text_parser.ml" 843 30545 30612
+type(
+  Parsing.parser_env -> int -> Obj.t
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"odoc_text_parser.ml" 843 30545 30613 "odoc_text_parser.ml" 843 30545 30630
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "odoc_text_parser.ml" 843 30545 30552 "odoc_text_parser.ml" 843 30545 30569
+)
+"odoc_text_parser.ml" 843 30545 30631 "odoc_text_parser.ml" 843 30545 30632
+type(
+  int
+)
+"odoc_text_parser.ml" 843 30545 30595 "odoc_text_parser.ml" 843 30545 30633
+call(
+  stack
+)
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 843 30545 30579 "odoc_text_parser.ml" 843 30545 30634
+type(
+  exn
+)
+"odoc_text_parser.ml" 843 30545 30573 "odoc_text_parser.ml" 843 30545 30634
+type(
+  Obj.t
+)
+"odoc_text_parser.ml" 843 30545 30547 "odoc_text_parser.ml" 843 30545 30635
+type(
+  Parsing.parser_env -> Obj.t
+)
+"odoc_text_parser.ml" 379 15111 15123 "odoc_text_parser.ml" 844 30636 30638
+type(
+  (Parsing.parser_env -> Obj.t) array
+)
+"odoc_text_parser.ml" 845 30639 30643 "odoc_text_parser.ml" 845 30639 30651
+type(
+  Parsing.parse_tables
+)
+ident(
+  def yytables "odoc_text_parser.ml" 862 31160 31160 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 846 30654 30674 "odoc_text_parser.ml" 846 30654 30679
+type(
+  (Parsing.parser_env -> Obj.t) array
+)
+ident(
+  int_ref yyact "odoc_text_parser.ml" 379 15111 15115 "odoc_text_parser.ml" 379 15111 15120
+)
+"odoc_text_parser.ml" 847 30681 30706 "odoc_text_parser.ml" 847 30681 30720
+type(
+  int array
+)
+ident(
+  int_ref yytransl_const "odoc_text_parser.ml" 80 1885 1889 "odoc_text_parser.ml" 80 1885 1903
+)
+"odoc_text_parser.ml" 848 30722 30747 "odoc_text_parser.ml" 848 30722 30761
+type(
+  int array
+)
+ident(
+  int_ref yytransl_block "odoc_text_parser.ml" 128 2918 2922 "odoc_text_parser.ml" 128 2918 2936
+)
+"odoc_text_parser.ml" 849 30763 30779 "odoc_text_parser.ml" 849 30763 30784
+type(
+  string
+)
+ident(
+  int_ref yylhs "odoc_text_parser.ml" 135 3028 3032 "odoc_text_parser.ml" 135 3028 3037
+)
+"odoc_text_parser.ml" 850 30786 30802 "odoc_text_parser.ml" 850 30786 30807
+type(
+  string
+)
+ident(
+  int_ref yylen "odoc_text_parser.ml" 146 3598 3602 "odoc_text_parser.ml" 146 3598 3607
+)
+"odoc_text_parser.ml" 851 30809 30828 "odoc_text_parser.ml" 851 30809 30836
+type(
+  string
+)
+ident(
+  int_ref yydefred "odoc_text_parser.ml" 157 4168 4172 "odoc_text_parser.ml" 157 4168 4180
+)
+"odoc_text_parser.ml" 852 30838 30856 "odoc_text_parser.ml" 852 30838 30863
+type(
+  string
+)
+ident(
+  int_ref yydgoto "odoc_text_parser.ml" 175 5227 5231 "odoc_text_parser.ml" 175 5227 5238
+)
+"odoc_text_parser.ml" 853 30865 30884 "odoc_text_parser.ml" 853 30865 30892
+type(
+  string
+)
+ident(
+  int_ref yysindex "odoc_text_parser.ml" 179 5369 5373 "odoc_text_parser.ml" 179 5369 5381
+)
+"odoc_text_parser.ml" 854 30894 30913 "odoc_text_parser.ml" 854 30894 30921
+type(
+  string
+)
+ident(
+  int_ref yyrindex "odoc_text_parser.ml" 197 6428 6432 "odoc_text_parser.ml" 197 6428 6440
+)
+"odoc_text_parser.ml" 855 30923 30942 "odoc_text_parser.ml" 855 30923 30950
+type(
+  string
+)
+ident(
+  int_ref yygindex "odoc_text_parser.ml" 215 7487 7491 "odoc_text_parser.ml" 215 7487 7499
+)
+"odoc_text_parser.ml" 856 30952 30974 "odoc_text_parser.ml" 856 30952 30985
+type(
+  int
+)
+ident(
+  int_ref yytablesize "odoc_text_parser.ml" 219 7630 7634 "odoc_text_parser.ml" 219 7630 7645
+)
+"odoc_text_parser.ml" 857 30987 31005 "odoc_text_parser.ml" 857 30987 31012
+type(
+  string
+)
+ident(
+  int_ref yytable "odoc_text_parser.ml" 220 7652 7656 "odoc_text_parser.ml" 220 7652 7663
+)
+"odoc_text_parser.ml" 858 31014 31032 "odoc_text_parser.ml" 858 31014 31039
+type(
+  string
+)
+ident(
+  int_ref yycheck "odoc_text_parser.ml" 272 10962 10966 "odoc_text_parser.ml" 272 10962 10973
+)
+"odoc_text_parser.ml" 859 31041 31068 "odoc_text_parser.ml" 859 31041 31079
+type(
+  string -> unit
+)
+ident(
+  ext_ref Parsing.parse_error
+)
+"odoc_text_parser.ml" 860 31081 31105 "odoc_text_parser.ml" 860 31081 31118
+type(
+  string
+)
+ident(
+  int_ref yynames_const "odoc_text_parser.ml" 324 14272 14276 "odoc_text_parser.ml" 324 14272 14289
+)
+"odoc_text_parser.ml" 861 31120 31144 "odoc_text_parser.ml" 861 31120 31157
+type(
+  string
+)
+ident(
+  int_ref yynames_block "odoc_text_parser.ml" 372 15030 15034 "odoc_text_parser.ml" 372 15030 15047
+)
+"odoc_text_parser.ml" 846 30654 30656 "odoc_text_parser.ml" 861 31120 31159
+type(
+  Parsing.parse_tables
+)
+"odoc_text_parser.ml" 862 31160 31164 "odoc_text_parser.ml" 862 31160 31168
+type(
+  (Lexing.lexbuf -> token) -> Lexing.lexbuf -> Odoc_types.text
+)
+ident(
+  def main "odoc_text_parser.ml" 864 31294 31294 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 862 31160 31170 "odoc_text_parser.ml" 862 31160 31176
+type(
+  Lexing.lexbuf -> token
+)
+ident(
+  def lexfun "odoc_text_parser.ml" 862 31160 31203 "odoc_text_parser.ml" 863 31230 31293
+)
+"odoc_text_parser.ml" 862 31160 31204 "odoc_text_parser.ml" 862 31160 31210
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_text_parser.ml" 863 31230 31233 "odoc_text_parser.ml" 863 31230 31293
+)
+"odoc_text_parser.ml" 863 31230 31234 "odoc_text_parser.ml" 863 31230 31249
+type(
+  Parsing.parse_tables ->
+  int -> (Lexing.lexbuf -> token) -> Lexing.lexbuf -> Odoc_types.text
+)
+ident(
+  ext_ref Parsing.yyparse
+)
+"odoc_text_parser.ml" 863 31230 31250 "odoc_text_parser.ml" 863 31230 31258
+type(
+  Parsing.parse_tables
+)
+ident(
+  int_ref yytables "odoc_text_parser.ml" 845 30639 30643 "odoc_text_parser.ml" 845 30639 30651
+)
+"odoc_text_parser.ml" 863 31230 31259 "odoc_text_parser.ml" 863 31230 31260
+type(
+  int
+)
+"odoc_text_parser.ml" 863 31230 31261 "odoc_text_parser.ml" 863 31230 31267
+type(
+  Lexing.lexbuf -> token
+)
+ident(
+  int_ref lexfun "odoc_text_parser.ml" 862 31160 31170 "odoc_text_parser.ml" 862 31160 31176
+)
+"odoc_text_parser.ml" 863 31230 31268 "odoc_text_parser.ml" 863 31230 31274
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_text_parser.ml" 862 31160 31204 "odoc_text_parser.ml" 862 31160 31210
+)
+"odoc_text_parser.ml" 863 31230 31234 "odoc_text_parser.ml" 863 31230 31274
+call(
+  tail
+)
+type(
+  Odoc_types.text
+)
+type(
+  Odoc_types.text
+)
+"odoc_text_parser.ml" 864 31294 31298 "odoc_text_parser.ml" 864 31294 31318
+type(
+  (Lexing.lexbuf -> token) ->
+  Lexing.lexbuf -> (int * int * Odoc_types.text_element) list
+)
+ident(
+  def located_element_list "odoc_text_parser.ml" 865 31380 31470 "odoc_text_parser.ml" 1 0 -1
+)
+"odoc_text_parser.ml" 864 31294 31320 "odoc_text_parser.ml" 864 31294 31326
+type(
+  Lexing.lexbuf -> token
+)
+ident(
+  def lexfun "odoc_text_parser.ml" 864 31294 31353 "odoc_text_parser.ml" 865 31380 31470
+)
+"odoc_text_parser.ml" 864 31294 31354 "odoc_text_parser.ml" 864 31294 31360
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_text_parser.ml" 865 31380 31383 "odoc_text_parser.ml" 865 31380 31470
+)
+"odoc_text_parser.ml" 865 31380 31384 "odoc_text_parser.ml" 865 31380 31399
+type(
+  Parsing.parse_tables ->
+  int ->
+  (Lexing.lexbuf -> token) ->
+  Lexing.lexbuf -> (int * int * Odoc_types.text_element) list
+)
+ident(
+  ext_ref Parsing.yyparse
+)
+"odoc_text_parser.ml" 865 31380 31400 "odoc_text_parser.ml" 865 31380 31408
+type(
+  Parsing.parse_tables
+)
+ident(
+  int_ref yytables "odoc_text_parser.ml" 845 30639 30643 "odoc_text_parser.ml" 845 30639 30651
+)
+"odoc_text_parser.ml" 865 31380 31409 "odoc_text_parser.ml" 865 31380 31410
+type(
+  int
+)
+"odoc_text_parser.ml" 865 31380 31411 "odoc_text_parser.ml" 865 31380 31417
+type(
+  Lexing.lexbuf -> token
+)
+ident(
+  int_ref lexfun "odoc_text_parser.ml" 864 31294 31320 "odoc_text_parser.ml" 864 31294 31326
+)
+"odoc_text_parser.ml" 865 31380 31418 "odoc_text_parser.ml" 865 31380 31424
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_text_parser.ml" 864 31294 31354 "odoc_text_parser.ml" 864 31294 31360
+)
+"odoc_text_parser.ml" 865 31380 31384 "odoc_text_parser.ml" 865 31380 31424
+call(
+  tail
+)
+type(
+  (int * int * Odoc_types.text_element) list
+)
+type(
+  (int * int * Odoc_types.text_element) list
+)

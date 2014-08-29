@@ -1,0 +1,395 @@
+"trap_barrier.ml" 19 996 1000 "trap_barrier.ml" 19 996 1020
+type(
+  int ref
+)
+ident(
+  def current_trap_barrier "trap_barrier.ml" 21 1030 1030 "trap_barrier.ml" 1 0 -1
+)
+"trap_barrier.ml" 19 996 1023 "trap_barrier.ml" 19 996 1026
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"trap_barrier.ml" 19 996 1027 "trap_barrier.ml" 19 996 1028
+type(
+  int
+)
+"trap_barrier.ml" 19 996 1023 "trap_barrier.ml" 19 996 1028
+type(
+  int ref
+)
+"trap_barrier.ml" 21 1030 1034 "trap_barrier.ml" 21 1030 1054
+type(
+  int -> unit
+)
+ident(
+  def install_trap_barrier "trap_barrier.ml" 24 1092 1092 "trap_barrier.ml" 1 0 -1
+)
+"trap_barrier.ml" 21 1030 1055 "trap_barrier.ml" 21 1030 1058
+type(
+  int
+)
+ident(
+  def pos "trap_barrier.ml" 22 1061 1063 "trap_barrier.ml" 22 1061 1090
+)
+"trap_barrier.ml" 22 1061 1063 "trap_barrier.ml" 22 1061 1083
+type(
+  int ref
+)
+ident(
+  int_ref current_trap_barrier "trap_barrier.ml" 19 996 1000 "trap_barrier.ml" 19 996 1020
+)
+"trap_barrier.ml" 22 1061 1084 "trap_barrier.ml" 22 1061 1086
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"trap_barrier.ml" 22 1061 1087 "trap_barrier.ml" 22 1061 1090
+type(
+  int
+)
+ident(
+  int_ref pos "trap_barrier.ml" 21 1030 1055 "trap_barrier.ml" 21 1030 1058
+)
+"trap_barrier.ml" 22 1061 1063 "trap_barrier.ml" 22 1061 1090
+type(
+  unit
+)
+"trap_barrier.ml" 24 1092 1096 "trap_barrier.ml" 24 1092 1115
+type(
+  unit -> unit
+)
+ident(
+  def remove_trap_barrier "trap_barrier.ml" 28 1223 1223 "trap_barrier.ml" 1 0 -1
+)
+"trap_barrier.ml" 24 1092 1116 "trap_barrier.ml" 24 1092 1118
+type(
+  unit
+)
+"trap_barrier.ml" 25 1121 1123 "trap_barrier.ml" 25 1121 1143
+type(
+  int ref
+)
+ident(
+  int_ref current_trap_barrier "trap_barrier.ml" 19 996 1000 "trap_barrier.ml" 19 996 1020
+)
+"trap_barrier.ml" 25 1121 1144 "trap_barrier.ml" 25 1121 1146
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"trap_barrier.ml" 25 1121 1147 "trap_barrier.ml" 25 1121 1148
+type(
+  int
+)
+"trap_barrier.ml" 25 1121 1123 "trap_barrier.ml" 25 1121 1148
+type(
+  unit
+)
+"trap_barrier.ml" 28 1223 1227 "trap_barrier.ml" 28 1223 1246
+type(
+  unit -> unit
+)
+ident(
+  def update_trap_barrier "trap_barrier.ml" 37 1552 1552 "trap_barrier.ml" 1 0 -1
+)
+"trap_barrier.ml" 28 1223 1247 "trap_barrier.ml" 28 1223 1249
+type(
+  unit
+)
+"trap_barrier.ml" 29 1252 1257 "trap_barrier.ml" 29 1252 1258
+type(
+  Checkpoints.checkpoint ref -> Checkpoints.checkpoint
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"trap_barrier.ml" 29 1252 1258 "trap_barrier.ml" 29 1252 1276
+type(
+  Checkpoints.checkpoint ref
+)
+ident(
+  ext_ref Checkpoints.current_checkpoint
+)
+"trap_barrier.ml" 29 1252 1257 "trap_barrier.ml" 29 1252 1276
+type(
+  Checkpoints.checkpoint
+)
+"trap_barrier.ml" 29 1252 1257 "trap_barrier.ml" 29 1252 1291
+type(
+  int
+)
+"trap_barrier.ml" 29 1252 1292 "trap_barrier.ml" 29 1252 1294
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"trap_barrier.ml" 29 1252 1295 "trap_barrier.ml" 29 1252 1296
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"trap_barrier.ml" 29 1252 1296 "trap_barrier.ml" 29 1252 1316
+type(
+  int ref
+)
+ident(
+  int_ref current_trap_barrier "trap_barrier.ml" 19 996 1000 "trap_barrier.ml" 19 996 1020
+)
+"trap_barrier.ml" 29 1252 1295 "trap_barrier.ml" 29 1252 1316
+type(
+  int
+)
+"trap_barrier.ml" 29 1252 1257 "trap_barrier.ml" 29 1252 1316
+type(
+  bool
+)
+"trap_barrier.ml" 30 1322 1326 "trap_barrier.ml" 30 1322 1338
+type(
+  (unit -> unit) -> unit
+)
+ident(
+  ext_ref Exec.protect
+)
+"trap_barrier.ml" 31 1339 1355 "trap_barrier.ml" 31 1339 1357
+type(
+  unit
+)
+"trap_barrier.ml" 32 1361 1370 "trap_barrier.ml" 32 1361 1386
+type(
+  int -> unit
+)
+ident(
+  ext_ref Debugcom.set_trap_barrier
+)
+"trap_barrier.ml" 32 1361 1387 "trap_barrier.ml" 32 1361 1388
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"trap_barrier.ml" 32 1361 1388 "trap_barrier.ml" 32 1361 1408
+type(
+  int ref
+)
+ident(
+  int_ref current_trap_barrier "trap_barrier.ml" 19 996 1000 "trap_barrier.ml" 19 996 1020
+)
+"trap_barrier.ml" 32 1361 1387 "trap_barrier.ml" 32 1361 1408
+type(
+  int
+)
+"trap_barrier.ml" 32 1361 1370 "trap_barrier.ml" 32 1361 1408
+call(
+  stack
+)
+type(
+  unit
+)
+"trap_barrier.ml" 33 1410 1419 "trap_barrier.ml" 33 1410 1420
+type(
+  Checkpoints.checkpoint ref -> Checkpoints.checkpoint
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"trap_barrier.ml" 33 1410 1420 "trap_barrier.ml" 33 1410 1438
+type(
+  Checkpoints.checkpoint ref
+)
+ident(
+  ext_ref Checkpoints.current_checkpoint
+)
+"trap_barrier.ml" 33 1410 1419 "trap_barrier.ml" 33 1410 1438
+type(
+  Checkpoints.checkpoint
+)
+"trap_barrier.ml" 33 1410 1457 "trap_barrier.ml" 33 1410 1458
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"trap_barrier.ml" 33 1410 1458 "trap_barrier.ml" 33 1410 1478
+type(
+  int ref
+)
+ident(
+  int_ref current_trap_barrier "trap_barrier.ml" 19 996 1000 "trap_barrier.ml" 19 996 1020
+)
+"trap_barrier.ml" 33 1410 1457 "trap_barrier.ml" 33 1410 1478
+type(
+  int
+)
+"trap_barrier.ml" 33 1410 1419 "trap_barrier.ml" 33 1410 1478
+type(
+  unit
+)
+"trap_barrier.ml" 32 1361 1370 "trap_barrier.ml" 33 1410 1478
+type(
+  unit
+)
+"trap_barrier.ml" 31 1339 1345 "trap_barrier.ml" 33 1410 1479
+type(
+  unit -> unit
+)
+"trap_barrier.ml" 30 1322 1326 "trap_barrier.ml" 33 1410 1479
+call(
+  tail
+)
+type(
+  unit
+)
+"trap_barrier.ml" 29 1252 1254 "trap_barrier.ml" 33 1410 1479
+type(
+  unit
+)
+"trap_barrier.ml" 37 1552 1556 "trap_barrier.ml" 37 1552 1578
+type(
+  int -> (unit -> 'a) -> unit
+)
+ident(
+  def exec_with_trap_barrier "trap_barrier.ml" 45 1732 1745 "trap_barrier.ml" 1 0 -1
+)
+"trap_barrier.ml" 37 1552 1579 "trap_barrier.ml" 37 1552 1591
+type(
+  int
+)
+ident(
+  def trap_barrier "trap_barrier.ml" 37 1552 1592 "trap_barrier.ml" 45 1732 1745
+)
+"trap_barrier.ml" 37 1552 1592 "trap_barrier.ml" 37 1552 1597
+type(
+  unit -> 'a
+)
+ident(
+  def funct "trap_barrier.ml" 38 1600 1602 "trap_barrier.ml" 45 1732 1745
+)
+"trap_barrier.ml" 39 1606 1610 "trap_barrier.ml" 39 1606 1630
+type(
+  int -> unit
+)
+ident(
+  int_ref install_trap_barrier "trap_barrier.ml" 21 1030 1034 "trap_barrier.ml" 21 1030 1054
+)
+"trap_barrier.ml" 39 1606 1631 "trap_barrier.ml" 39 1606 1643
+type(
+  int
+)
+ident(
+  int_ref trap_barrier "trap_barrier.ml" 37 1552 1579 "trap_barrier.ml" 37 1552 1591
+)
+"trap_barrier.ml" 39 1606 1610 "trap_barrier.ml" 39 1606 1643
+call(
+  stack
+)
+type(
+  unit
+)
+"trap_barrier.ml" 40 1645 1649 "trap_barrier.ml" 40 1645 1654
+type(
+  unit -> 'a
+)
+ident(
+  int_ref funct "trap_barrier.ml" 37 1552 1592 "trap_barrier.ml" 37 1552 1597
+)
+"trap_barrier.ml" 40 1645 1655 "trap_barrier.ml" 40 1645 1657
+type(
+  unit
+)
+"trap_barrier.ml" 40 1645 1649 "trap_barrier.ml" 40 1645 1657
+call(
+  stack
+)
+type(
+  'a
+)
+"trap_barrier.ml" 41 1659 1663 "trap_barrier.ml" 41 1659 1682
+type(
+  unit -> unit
+)
+ident(
+  int_ref remove_trap_barrier "trap_barrier.ml" 24 1092 1096 "trap_barrier.ml" 24 1092 1115
+)
+"trap_barrier.ml" 41 1659 1683 "trap_barrier.ml" 41 1659 1685
+type(
+  unit
+)
+"trap_barrier.ml" 41 1659 1663 "trap_barrier.ml" 41 1659 1685
+call(
+  stack
+)
+type(
+  unit
+)
+"trap_barrier.ml" 40 1645 1649 "trap_barrier.ml" 41 1659 1685
+type(
+  unit
+)
+"trap_barrier.ml" 39 1606 1610 "trap_barrier.ml" 41 1659 1685
+type(
+  unit
+)
+"trap_barrier.ml" 43 1693 1697 "trap_barrier.ml" 43 1693 1698
+type(
+  exn
+)
+ident(
+  def x "trap_barrier.ml" 44 1702 1708 "trap_barrier.ml" 45 1732 1745
+)
+"trap_barrier.ml" 44 1702 1708 "trap_barrier.ml" 44 1702 1727
+type(
+  unit -> unit
+)
+ident(
+  int_ref remove_trap_barrier "trap_barrier.ml" 24 1092 1096 "trap_barrier.ml" 24 1092 1115
+)
+"trap_barrier.ml" 44 1702 1728 "trap_barrier.ml" 44 1702 1730
+type(
+  unit
+)
+"trap_barrier.ml" 44 1702 1708 "trap_barrier.ml" 44 1702 1730
+call(
+  stack
+)
+type(
+  unit
+)
+"trap_barrier.ml" 45 1732 1738 "trap_barrier.ml" 45 1732 1743
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"trap_barrier.ml" 45 1732 1744 "trap_barrier.ml" 45 1732 1745
+type(
+  exn
+)
+ident(
+  int_ref x "trap_barrier.ml" 43 1693 1697 "trap_barrier.ml" 43 1693 1698
+)
+"trap_barrier.ml" 45 1732 1738 "trap_barrier.ml" 45 1732 1745
+type(
+  unit
+)
+"trap_barrier.ml" 44 1702 1708 "trap_barrier.ml" 45 1732 1745
+type(
+  unit
+)
+"trap_barrier.ml" 38 1600 1602 "trap_barrier.ml" 45 1732 1745
+type(
+  unit
+)

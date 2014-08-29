@@ -1,0 +1,1360 @@
+"odoc_print.ml" 15 848 852 "odoc_print.ml" 15 848 859
+type(
+  unit -> Format.formatter * (unit -> string)
+)
+ident(
+  def new_fmt "odoc_print.ml" 26 1066 1066 "odoc_print.ml" 1 0 -1
+)
+"odoc_print.ml" 15 848 860 "odoc_print.ml" 15 848 862
+type(
+  unit
+)
+"odoc_print.ml" 16 865 871 "odoc_print.ml" 16 865 874
+type(
+  Buffer.t
+)
+ident(
+  def buf "odoc_print.ml" 17 898 900 "odoc_print.ml" 24 1050 1064
+)
+"odoc_print.ml" 16 865 877 "odoc_print.ml" 16 865 890
+type(
+  int -> Buffer.t
+)
+ident(
+  ext_ref Buffer.create
+)
+"odoc_print.ml" 16 865 891 "odoc_print.ml" 16 865 894
+type(
+  int
+)
+"odoc_print.ml" 16 865 877 "odoc_print.ml" 16 865 894
+call(
+  stack
+)
+type(
+  Buffer.t
+)
+"odoc_print.ml" 17 898 904 "odoc_print.ml" 17 898 907
+type(
+  Format.formatter
+)
+ident(
+  def fmt "odoc_print.ml" 18 937 939 "odoc_print.ml" 24 1050 1064
+)
+"odoc_print.ml" 17 898 910 "odoc_print.ml" 17 898 929
+type(
+  Buffer.t -> Format.formatter
+)
+ident(
+  ext_ref Format.formatter_of_buffer
+)
+"odoc_print.ml" 17 898 930 "odoc_print.ml" 17 898 933
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "odoc_print.ml" 16 865 871 "odoc_print.ml" 16 865 874
+)
+"odoc_print.ml" 17 898 910 "odoc_print.ml" 17 898 933
+call(
+  stack
+)
+type(
+  Format.formatter
+)
+"odoc_print.ml" 18 937 943 "odoc_print.ml" 18 937 948
+type(
+  unit -> string
+)
+ident(
+  def flush "odoc_print.ml" 24 1050 1052 "odoc_print.ml" 24 1050 1064
+)
+"odoc_print.ml" 18 937 949 "odoc_print.ml" 18 937 951
+type(
+  unit
+)
+"odoc_print.ml" 19 954 958 "odoc_print.ml" 19 954 972
+type(
+  Format.formatter -> unit -> unit
+)
+ident(
+  ext_ref Format.pp_print_flush
+)
+"odoc_print.ml" 19 954 973 "odoc_print.ml" 19 954 976
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "odoc_print.ml" 17 898 904 "odoc_print.ml" 17 898 907
+)
+"odoc_print.ml" 19 954 977 "odoc_print.ml" 19 954 979
+type(
+  unit
+)
+"odoc_print.ml" 19 954 958 "odoc_print.ml" 19 954 979
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_print.ml" 20 981 989 "odoc_print.ml" 20 981 990
+type(
+  string
+)
+ident(
+  def s "odoc_print.ml" 21 1016 1020 "odoc_print.ml" 22 1039 1044
+)
+"odoc_print.ml" 20 981 993 "odoc_print.ml" 20 981 1008
+type(
+  Buffer.t -> string
+)
+ident(
+  ext_ref Buffer.contents
+)
+"odoc_print.ml" 20 981 1009 "odoc_print.ml" 20 981 1012
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "odoc_print.ml" 16 865 871 "odoc_print.ml" 16 865 874
+)
+"odoc_print.ml" 20 981 993 "odoc_print.ml" 20 981 1012
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_print.ml" 21 1016 1020 "odoc_print.ml" 21 1016 1032
+type(
+  Buffer.t -> unit
+)
+ident(
+  ext_ref Buffer.reset
+)
+"odoc_print.ml" 21 1016 1033 "odoc_print.ml" 21 1016 1036
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "odoc_print.ml" 16 865 871 "odoc_print.ml" 16 865 874
+)
+"odoc_print.ml" 21 1016 1020 "odoc_print.ml" 21 1016 1036
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_print.ml" 22 1039 1043 "odoc_print.ml" 22 1039 1044
+type(
+  string
+)
+ident(
+  int_ref s "odoc_print.ml" 20 981 989 "odoc_print.ml" 20 981 990
+)
+"odoc_print.ml" 21 1016 1020 "odoc_print.ml" 22 1039 1044
+type(
+  string
+)
+"odoc_print.ml" 20 981 985 "odoc_print.ml" 22 1039 1044
+type(
+  string
+)
+"odoc_print.ml" 19 954 958 "odoc_print.ml" 22 1039 1044
+type(
+  string
+)
+"odoc_print.ml" 24 1050 1053 "odoc_print.ml" 24 1050 1056
+type(
+  Format.formatter
+)
+ident(
+  int_ref fmt "odoc_print.ml" 17 898 904 "odoc_print.ml" 17 898 907
+)
+"odoc_print.ml" 24 1050 1058 "odoc_print.ml" 24 1050 1063
+type(
+  unit -> string
+)
+ident(
+  int_ref flush "odoc_print.ml" 18 937 943 "odoc_print.ml" 18 937 948
+)
+"odoc_print.ml" 24 1050 1052 "odoc_print.ml" 24 1050 1064
+type(
+  Format.formatter * (unit -> string)
+)
+"odoc_print.ml" 18 937 939 "odoc_print.ml" 24 1050 1064
+type(
+  Format.formatter * (unit -> string)
+)
+"odoc_print.ml" 17 898 900 "odoc_print.ml" 24 1050 1064
+type(
+  Format.formatter * (unit -> string)
+)
+"odoc_print.ml" 16 865 867 "odoc_print.ml" 24 1050 1064
+type(
+  Format.formatter * (unit -> string)
+)
+"odoc_print.ml" 26 1066 1071 "odoc_print.ml" 26 1066 1079
+type(
+  Format.formatter
+)
+ident(
+  def type_fmt "odoc_print.ml" 27 1110 1110 "odoc_print.ml" 1 0 -1
+)
+"odoc_print.ml" 26 1066 1081 "odoc_print.ml" 26 1066 1095
+type(
+  unit -> string
+)
+ident(
+  def flush_type_fmt "odoc_print.ml" 27 1110 1110 "odoc_print.ml" 1 0 -1
+)
+"odoc_print.ml" 26 1066 1070 "odoc_print.ml" 26 1066 1096
+type(
+  Format.formatter * (unit -> string)
+)
+"odoc_print.ml" 26 1066 1099 "odoc_print.ml" 26 1066 1106
+type(
+  unit -> Format.formatter * (unit -> string)
+)
+ident(
+  int_ref new_fmt "odoc_print.ml" 15 848 852 "odoc_print.ml" 15 848 859
+)
+"odoc_print.ml" 26 1066 1107 "odoc_print.ml" 26 1066 1109
+type(
+  unit
+)
+"odoc_print.ml" 26 1066 1099 "odoc_print.ml" 26 1066 1109
+call(
+  stack
+)
+type(
+  Format.formatter * (unit -> string)
+)
+"odoc_print.ml" 28 1118 1125 "odoc_print.ml" 28 1118 1128
+type(
+  string -> int -> int -> unit
+)
+ident(
+  def out "odoc_print.ml" 31 1220 1222 "odoc_print.ml" 34 1326 1347
+)
+"odoc_print.ml" 28 1118 1130 "odoc_print.ml" 28 1118 1135
+type(
+  unit -> unit
+)
+ident(
+  def flush "odoc_print.ml" 31 1220 1222 "odoc_print.ml" 34 1326 1347
+)
+"odoc_print.ml" 28 1118 1137 "odoc_print.ml" 28 1118 1147
+type(
+  unit -> unit
+)
+ident(
+  def outnewline "odoc_print.ml" 31 1220 1222 "odoc_print.ml" 34 1326 1347
+)
+"odoc_print.ml" 28 1118 1149 "odoc_print.ml" 28 1118 1157
+type(
+  int -> unit
+)
+ident(
+  def outspace "odoc_print.ml" 31 1220 1222 "odoc_print.ml" 34 1326 1347
+)
+"odoc_print.ml" 28 1118 1124 "odoc_print.ml" 28 1118 1158
+type(
+  (string -> int -> int -> unit) * (unit -> unit) * (unit -> unit) *
+  (int -> unit)
+)
+"odoc_print.ml" 29 1161 1165 "odoc_print.ml" 29 1161 1202
+type(
+  Format.formatter ->
+  unit ->
+  (string -> int -> int -> unit) * (unit -> unit) * (unit -> unit) *
+  (int -> unit)
+)
+ident(
+  ext_ref Format.pp_get_all_formatter_output_functions
+)
+"odoc_print.ml" 29 1161 1203 "odoc_print.ml" 29 1161 1211
+type(
+  Format.formatter
+)
+ident(
+  int_ref type_fmt "odoc_print.ml" 26 1066 1071 "odoc_print.ml" 26 1066 1079
+)
+"odoc_print.ml" 29 1161 1212 "odoc_print.ml" 29 1161 1214
+type(
+  unit
+)
+"odoc_print.ml" 29 1161 1165 "odoc_print.ml" 29 1161 1214
+call(
+  stack
+)
+type(
+  (string -> int -> int -> unit) * (unit -> unit) * (unit -> unit) *
+  (int -> unit)
+)
+"odoc_print.ml" 31 1220 1222 "odoc_print.ml" 31 1220 1259
+type(
+  Format.formatter ->
+  out:(string -> int -> int -> unit) ->
+  flush:(unit -> unit) ->
+  newline:(unit -> unit) -> spaces:(int -> unit) -> unit
+)
+ident(
+  ext_ref Format.pp_set_all_formatter_output_functions
+)
+"odoc_print.ml" 31 1220 1260 "odoc_print.ml" 31 1220 1268
+type(
+  Format.formatter
+)
+ident(
+  int_ref type_fmt "odoc_print.ml" 26 1066 1071 "odoc_print.ml" 26 1066 1079
+)
+"odoc_print.ml" 32 1269 1274 "odoc_print.ml" 32 1269 1277
+type(
+  string -> int -> int -> unit
+)
+ident(
+  int_ref out "odoc_print.ml" 28 1118 1125 "odoc_print.ml" 28 1118 1128
+)
+"odoc_print.ml" 32 1269 1279 "odoc_print.ml" 32 1269 1284
+type(
+  unit -> unit
+)
+ident(
+  int_ref flush "odoc_print.ml" 28 1118 1130 "odoc_print.ml" 28 1118 1135
+)
+"odoc_print.ml" 33 1285 1304 "odoc_print.ml" 33 1285 1306
+type(
+  unit
+)
+"odoc_print.ml" 33 1285 1310 "odoc_print.ml" 33 1285 1313
+type(
+  string -> int -> int -> unit
+)
+ident(
+  int_ref out "odoc_print.ml" 28 1118 1125 "odoc_print.ml" 28 1118 1128
+)
+"odoc_print.ml" 33 1285 1314 "odoc_print.ml" 33 1285 1320
+type(
+  string
+)
+"odoc_print.ml" 33 1285 1321 "odoc_print.ml" 33 1285 1322
+type(
+  int
+)
+"odoc_print.ml" 33 1285 1323 "odoc_print.ml" 33 1285 1324
+type(
+  int
+)
+"odoc_print.ml" 33 1285 1310 "odoc_print.ml" 33 1285 1324
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_print.ml" 33 1285 1299 "odoc_print.ml" 33 1285 1325
+type(
+  unit -> unit
+)
+"odoc_print.ml" 34 1326 1339 "odoc_print.ml" 34 1326 1347
+type(
+  int -> unit
+)
+ident(
+  int_ref outspace "odoc_print.ml" 28 1118 1149 "odoc_print.ml" 28 1118 1157
+)
+"odoc_print.ml" 31 1220 1222 "odoc_print.ml" 34 1326 1347
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_print.ml" 28 1118 1120 "odoc_print.ml" 34 1326 1347
+type(
+  unit
+)
+"odoc_print.ml" 36 1349 1354 "odoc_print.ml" 36 1349 1365
+type(
+  Format.formatter
+)
+ident(
+  def modtype_fmt "odoc_print.ml" 41 1403 1403 "odoc_print.ml" 1 0 -1
+)
+"odoc_print.ml" 36 1349 1367 "odoc_print.ml" 36 1349 1384
+type(
+  unit -> string
+)
+ident(
+  def flush_modtype_fmt "odoc_print.ml" 41 1403 1403 "odoc_print.ml" 1 0 -1
+)
+"odoc_print.ml" 36 1349 1353 "odoc_print.ml" 36 1349 1385
+type(
+  Format.formatter * (unit -> string)
+)
+"odoc_print.ml" 36 1349 1388 "odoc_print.ml" 36 1349 1395
+type(
+  unit -> Format.formatter * (unit -> string)
+)
+ident(
+  int_ref new_fmt "odoc_print.ml" 15 848 852 "odoc_print.ml" 15 848 859
+)
+"odoc_print.ml" 36 1349 1396 "odoc_print.ml" 36 1349 1398
+type(
+  unit
+)
+"odoc_print.ml" 36 1349 1388 "odoc_print.ml" 36 1349 1398
+call(
+  stack
+)
+type(
+  Format.formatter * (unit -> string)
+)
+"odoc_print.ml" 41 1403 1407 "odoc_print.ml" 41 1403 1426
+type(
+  Types.type_expr -> string
+)
+ident(
+  def string_of_type_expr "odoc_print.ml" 46 1538 1538 "odoc_print.ml" 1 0 -1
+)
+"odoc_print.ml" 41 1403 1427 "odoc_print.ml" 41 1403 1428
+type(
+  Types.type_expr
+)
+ident(
+  def t "odoc_print.ml" 42 1431 1433 "odoc_print.ml" 44 1517 1536
+)
+"odoc_print.ml" 42 1431 1433 "odoc_print.ml" 42 1431 1452
+type(
+  Types.type_expr -> unit
+)
+ident(
+  ext_ref Printtyp.mark_loops
+)
+"odoc_print.ml" 42 1431 1453 "odoc_print.ml" 42 1431 1454
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_print.ml" 41 1403 1427 "odoc_print.ml" 41 1403 1428
+)
+"odoc_print.ml" 42 1431 1433 "odoc_print.ml" 42 1431 1454
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_print.ml" 43 1456 1458 "odoc_print.ml" 43 1456 1482
+type(
+  ?b_reset_names:bool -> Format.formatter -> Types.type_expr -> unit
+)
+ident(
+  ext_ref Printtyp.type_scheme_max
+)
+"odoc_print.ml" 43 1456 1499 "odoc_print.ml" 43 1456 1504
+type(
+  bool
+)
+"odoc_print.ml" 43 1456 1505 "odoc_print.ml" 43 1456 1513
+type(
+  Format.formatter
+)
+ident(
+  int_ref type_fmt "odoc_print.ml" 26 1066 1071 "odoc_print.ml" 26 1066 1079
+)
+"odoc_print.ml" 43 1456 1514 "odoc_print.ml" 43 1456 1515
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_print.ml" 41 1403 1427 "odoc_print.ml" 41 1403 1428
+)
+"odoc_print.ml" 43 1456 1458 "odoc_print.ml" 43 1456 1515
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_print.ml" 44 1517 1519 "odoc_print.ml" 44 1517 1533
+type(
+  unit -> string
+)
+ident(
+  int_ref flush_type_fmt "odoc_print.ml" 26 1066 1081 "odoc_print.ml" 26 1066 1095
+)
+"odoc_print.ml" 44 1517 1534 "odoc_print.ml" 44 1517 1536
+type(
+  unit
+)
+"odoc_print.ml" 44 1517 1519 "odoc_print.ml" 44 1517 1536
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_print.ml" 43 1456 1458 "odoc_print.ml" 44 1517 1536
+type(
+  string
+)
+"odoc_print.ml" 42 1431 1433 "odoc_print.ml" 44 1517 1536
+type(
+  string
+)
+"odoc_print.ml" 54 1911 1915 "odoc_print.ml" 54 1911 1932
+type(
+  ?code:string -> Types.module_type -> Types.module_type
+)
+ident(
+  def simpl_module_type "odoc_print.ml" 70 2316 2316 "odoc_print.ml" 1 0 -1
+)
+"odoc_print.ml" 54 1911 1934 "odoc_print.ml" 54 1911 1938
+type(
+  string option
+)
+ident(
+  def code "odoc_print.ml" 54 1911 1939 "odoc_print.ml" 68 2306 2314
+)
+"odoc_print.ml" 54 1911 1939 "odoc_print.ml" 54 1911 1940
+type(
+  Types.module_type
+)
+ident(
+  def t "odoc_print.ml" 55 1943 1945 "odoc_print.ml" 68 2306 2314
+)
+"odoc_print.ml" 55 1943 1953 "odoc_print.ml" 55 1943 1957
+type(
+  Types.module_type -> Types.module_type
+)
+ident(
+  def iter "odoc_print.ml" 55 1943 1945 "odoc_print.ml" 68 2306 2314
+)
+"odoc_print.ml" 55 1943 1958 "odoc_print.ml" 55 1943 1959
+type(
+  Types.module_type
+)
+ident(
+  def t "odoc_print.ml" 56 1962 1966 "odoc_print.ml" 66 2237 2300
+)
+"odoc_print.ml" 56 1962 1972 "odoc_print.ml" 56 1962 1973
+type(
+  Types.module_type
+)
+ident(
+  int_ref t "odoc_print.ml" 55 1943 1958 "odoc_print.ml" 55 1943 1959
+)
+"odoc_print.ml" 57 1979 2001 "odoc_print.ml" 57 1979 2002
+type(
+  Path.t
+)
+ident(
+  def p "odoc_print.ml" 57 1979 2006 "odoc_print.ml" 57 1979 2007
+)
+"odoc_print.ml" 57 1979 1985 "odoc_print.ml" 57 1979 2002
+type(
+  Types.module_type
+)
+"odoc_print.ml" 57 1979 2006 "odoc_print.ml" 57 1979 2007
+type(
+  Types.module_type
+)
+ident(
+  int_ref t "odoc_print.ml" 55 1943 1958 "odoc_print.ml" 55 1943 1959
+)
+"odoc_print.ml" 58 2008 2030 "odoc_print.ml" 58 2008 2031
+type(
+  Path.t
+)
+ident(
+  def p "odoc_print.ml" 58 2008 2035 "odoc_print.ml" 58 2008 2036
+)
+"odoc_print.ml" 58 2008 2014 "odoc_print.ml" 58 2008 2031
+type(
+  Types.module_type
+)
+"odoc_print.ml" 58 2008 2035 "odoc_print.ml" 58 2008 2036
+type(
+  Types.module_type
+)
+ident(
+  int_ref t "odoc_print.ml" 55 1943 1958 "odoc_print.ml" 55 1943 1959
+)
+"odoc_print.ml" 59 2037 2063 "odoc_print.ml" 59 2037 2064
+type(
+  Types.signature
+)
+"odoc_print.ml" 59 2037 2043 "odoc_print.ml" 59 2037 2064
+type(
+  Types.module_type
+)
+"odoc_print.ml" 61 2078 2093 "odoc_print.ml" 61 2078 2097
+type(
+  string option
+)
+ident(
+  int_ref code "odoc_print.ml" 54 1911 1934 "odoc_print.ml" 54 1911 1938
+)
+"odoc_print.ml" 62 2103 2114 "odoc_print.ml" 62 2103 2118
+type(
+  string option
+)
+"odoc_print.ml" 62 2103 2142 "odoc_print.ml" 62 2103 2144
+type(
+  Types.signature
+)
+"odoc_print.ml" 62 2103 2122 "odoc_print.ml" 62 2103 2144
+type(
+  Types.module_type
+)
+"odoc_print.ml" 63 2145 2161 "odoc_print.ml" 63 2145 2162
+type(
+  string
+)
+ident(
+  def s "odoc_print.ml" 63 2145 2166 "odoc_print.ml" 63 2145 2184
+)
+"odoc_print.ml" 63 2145 2156 "odoc_print.ml" 63 2145 2162
+type(
+  string option
+)
+"odoc_print.ml" 63 2145 2166 "odoc_print.ml" 63 2145 2171
+type(
+  exn -> Types.module_type
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"odoc_print.ml" 63 2145 2182 "odoc_print.ml" 63 2145 2183
+type(
+  string
+)
+ident(
+  int_ref s "odoc_print.ml" 63 2145 2161 "odoc_print.ml" 63 2145 2162
+)
+"odoc_print.ml" 63 2145 2172 "odoc_print.ml" 63 2145 2184
+type(
+  exn
+)
+"odoc_print.ml" 63 2145 2166 "odoc_print.ml" 63 2145 2184
+type(
+  Types.module_type
+)
+"odoc_print.ml" 60 2068 2076 "odoc_print.ml" 64 2185 2194
+type(
+  Types.module_type
+)
+"odoc_print.ml" 65 2195 2220 "odoc_print.ml" 65 2195 2222
+type(
+  Ident.t
+)
+ident(
+  def id "odoc_print.ml" 66 2237 2245 "odoc_print.ml" 66 2237 2300
+)
+"odoc_print.ml" 65 2195 2224 "odoc_print.ml" 65 2195 2227
+type(
+  Types.module_type option
+)
+ident(
+  def mt1 "odoc_print.ml" 66 2237 2245 "odoc_print.ml" 66 2237 2300
+)
+"odoc_print.ml" 65 2195 2229 "odoc_print.ml" 65 2195 2232
+type(
+  Types.module_type
+)
+ident(
+  def mt2 "odoc_print.ml" 66 2237 2245 "odoc_print.ml" 66 2237 2300
+)
+"odoc_print.ml" 65 2195 2201 "odoc_print.ml" 65 2195 2233
+type(
+  Types.module_type
+)
+"odoc_print.ml" 66 2237 2264 "odoc_print.ml" 66 2237 2266
+type(
+  Ident.t
+)
+ident(
+  int_ref id "odoc_print.ml" 65 2195 2220 "odoc_print.ml" 65 2195 2222
+)
+"odoc_print.ml" 66 2237 2268 "odoc_print.ml" 66 2237 2280
+type(
+  (Types.module_type -> Types.module_type) ->
+  Types.module_type option -> Types.module_type option
+)
+ident(
+  ext_ref Misc.may_map
+)
+"odoc_print.ml" 66 2237 2281 "odoc_print.ml" 66 2237 2285
+type(
+  Types.module_type -> Types.module_type
+)
+ident(
+  int_ref iter "odoc_print.ml" 55 1943 1953 "odoc_print.ml" 55 1943 1957
+)
+"odoc_print.ml" 66 2237 2286 "odoc_print.ml" 66 2237 2289
+type(
+  Types.module_type option
+)
+ident(
+  int_ref mt1 "odoc_print.ml" 65 2195 2224 "odoc_print.ml" 65 2195 2227
+)
+"odoc_print.ml" 66 2237 2268 "odoc_print.ml" 66 2237 2289
+call(
+  stack
+)
+type(
+  Types.module_type option
+)
+"odoc_print.ml" 66 2237 2291 "odoc_print.ml" 66 2237 2295
+type(
+  Types.module_type -> Types.module_type
+)
+ident(
+  int_ref iter "odoc_print.ml" 55 1943 1953 "odoc_print.ml" 55 1943 1957
+)
+"odoc_print.ml" 66 2237 2296 "odoc_print.ml" 66 2237 2299
+type(
+  Types.module_type
+)
+ident(
+  int_ref mt2 "odoc_print.ml" 65 2195 2229 "odoc_print.ml" 65 2195 2232
+)
+"odoc_print.ml" 66 2237 2291 "odoc_print.ml" 66 2237 2299
+call(
+  stack
+)
+type(
+  Types.module_type
+)
+"odoc_print.ml" 66 2237 2245 "odoc_print.ml" 66 2237 2300
+type(
+  Types.module_type
+)
+"odoc_print.ml" 56 1962 1966 "odoc_print.ml" 66 2237 2300
+type(
+  Types.module_type
+)
+"odoc_print.ml" 68 2306 2308 "odoc_print.ml" 68 2306 2312
+type(
+  Types.module_type -> Types.module_type
+)
+ident(
+  int_ref iter "odoc_print.ml" 55 1943 1953 "odoc_print.ml" 55 1943 1957
+)
+"odoc_print.ml" 68 2306 2313 "odoc_print.ml" 68 2306 2314
+type(
+  Types.module_type
+)
+ident(
+  int_ref t "odoc_print.ml" 54 1911 1939 "odoc_print.ml" 54 1911 1940
+)
+"odoc_print.ml" 68 2306 2308 "odoc_print.ml" 68 2306 2314
+call(
+  tail
+)
+type(
+  Types.module_type
+)
+"odoc_print.ml" 55 1943 1945 "odoc_print.ml" 68 2306 2314
+type(
+  Types.module_type
+)
+"odoc_print.ml" 70 2316 2320 "odoc_print.ml" 70 2316 2341
+type(
+  ?code:string -> ?complete:bool -> Types.module_type -> string
+)
+ident(
+  def string_of_module_type "odoc_print.ml" 80 2687 2687 "odoc_print.ml" 1 0 -1
+)
+"odoc_print.ml" 70 2316 2343 "odoc_print.ml" 70 2316 2347
+type(
+  string option
+)
+ident(
+  def code "odoc_print.ml" 70 2316 2348 "odoc_print.ml" 76 2511 2530
+)
+"odoc_print.ml" 70 2316 2350 "odoc_print.ml" 70 2316 2358
+type(
+  bool
+)
+"odoc_print.ml" 70 2316 2359 "odoc_print.ml" 70 2316 2364
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_print.ml" 70 2316 2359 "odoc_print.ml" 70 2316 2364
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_print.ml" 70 2316 2366 "odoc_print.ml" 70 2316 2367
+type(
+  Types.module_type
+)
+ident(
+  def t "odoc_print.ml" 71 2370 2372 "odoc_print.ml" 76 2511 2530
+)
+"odoc_print.ml" 72 2376 2384 "odoc_print.ml" 72 2376 2386
+type(
+  Types.module_type
+)
+ident(
+  def t2 "odoc_print.ml" 73 2442 2446 "odoc_print.ml" 74 2479 2503
+)
+"odoc_print.ml" 72 2376 2392 "odoc_print.ml" 72 2376 2400
+type(
+  bool
+)
+ident(
+  int_ref complete "odoc_print.ml" 70 2316 2350 "odoc_print.ml" 70 2316 2358
+)
+"odoc_print.ml" 72 2376 2406 "odoc_print.ml" 72 2376 2407
+type(
+  Types.module_type
+)
+ident(
+  int_ref t "odoc_print.ml" 70 2316 2366 "odoc_print.ml" 70 2316 2367
+)
+"odoc_print.ml" 72 2376 2413 "odoc_print.ml" 72 2376 2430
+type(
+  ?code:string -> Types.module_type -> Types.module_type
+)
+ident(
+  int_ref simpl_module_type "odoc_print.ml" 54 1911 1915 "odoc_print.ml" 54 1911 1932
+)
+"odoc_print.ml" 72 2376 2432 "odoc_print.ml" 72 2376 2436
+type(
+  string option
+)
+ident(
+  int_ref code "odoc_print.ml" 70 2316 2343 "odoc_print.ml" 70 2316 2347
+)
+"odoc_print.ml" 72 2376 2437 "odoc_print.ml" 72 2376 2438
+type(
+  Types.module_type
+)
+ident(
+  int_ref t "odoc_print.ml" 70 2316 2366 "odoc_print.ml" 70 2316 2367
+)
+"odoc_print.ml" 72 2376 2413 "odoc_print.ml" 72 2376 2438
+call(
+  stack
+)
+type(
+  Types.module_type
+)
+"odoc_print.ml" 72 2376 2389 "odoc_print.ml" 72 2376 2438
+type(
+  Types.module_type
+)
+"odoc_print.ml" 73 2442 2446 "odoc_print.ml" 73 2442 2462
+type(
+  Format.formatter -> Types.module_type -> unit
+)
+ident(
+  ext_ref Printtyp.modtype
+)
+"odoc_print.ml" 73 2442 2463 "odoc_print.ml" 73 2442 2474
+type(
+  Format.formatter
+)
+ident(
+  int_ref modtype_fmt "odoc_print.ml" 36 1349 1354 "odoc_print.ml" 36 1349 1365
+)
+"odoc_print.ml" 73 2442 2475 "odoc_print.ml" 73 2442 2477
+type(
+  Types.module_type
+)
+ident(
+  int_ref t2 "odoc_print.ml" 72 2376 2384 "odoc_print.ml" 72 2376 2386
+)
+"odoc_print.ml" 73 2442 2446 "odoc_print.ml" 73 2442 2477
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_print.ml" 74 2479 2483 "odoc_print.ml" 74 2479 2500
+type(
+  unit -> string
+)
+ident(
+  int_ref flush_modtype_fmt "odoc_print.ml" 36 1349 1367 "odoc_print.ml" 36 1349 1384
+)
+"odoc_print.ml" 74 2479 2501 "odoc_print.ml" 74 2479 2503
+type(
+  unit
+)
+"odoc_print.ml" 74 2479 2483 "odoc_print.ml" 74 2479 2503
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_print.ml" 73 2442 2446 "odoc_print.ml" 74 2479 2503
+type(
+  string
+)
+"odoc_print.ml" 72 2376 2380 "odoc_print.ml" 74 2479 2503
+type(
+  string
+)
+"odoc_print.ml" 76 2511 2524 "odoc_print.ml" 76 2511 2525
+type(
+  string
+)
+ident(
+  def s "odoc_print.ml" 76 2511 2529 "odoc_print.ml" 76 2511 2530
+)
+"odoc_print.ml" 76 2511 2515 "odoc_print.ml" 76 2511 2525
+type(
+  exn
+)
+"odoc_print.ml" 76 2511 2529 "odoc_print.ml" 76 2511 2530
+type(
+  string
+)
+ident(
+  int_ref s "odoc_print.ml" 76 2511 2524 "odoc_print.ml" 76 2511 2525
+)
+"odoc_print.ml" 71 2370 2372 "odoc_print.ml" 76 2511 2530
+type(
+  string
+)
+"odoc_print.ml" 80 2687 2691 "odoc_print.ml" 80 2687 2707
+type(
+  Types.class_type -> Types.class_type
+)
+ident(
+  def simpl_class_type "odoc_print.ml" 100 3525 3525 "odoc_print.ml" 1 0 -1
+)
+"odoc_print.ml" 80 2687 2708 "odoc_print.ml" 80 2687 2709
+type(
+  Types.class_type
+)
+ident(
+  def t "odoc_print.ml" 81 2712 2714 "odoc_print.ml" 98 3515 3523
+)
+"odoc_print.ml" 81 2712 2722 "odoc_print.ml" 81 2712 2726
+type(
+  Types.class_type -> Types.class_type
+)
+ident(
+  def iter "odoc_print.ml" 81 2712 2714 "odoc_print.ml" 98 3515 3523
+)
+"odoc_print.ml" 81 2712 2727 "odoc_print.ml" 81 2712 2728
+type(
+  Types.class_type
+)
+ident(
+  def t "odoc_print.ml" 82 2731 2735 "odoc_print.ml" 96 3468 3509
+)
+"odoc_print.ml" 82 2731 2741 "odoc_print.ml" 82 2731 2742
+type(
+  Types.class_type
+)
+ident(
+  int_ref t "odoc_print.ml" 81 2712 2727 "odoc_print.ml" 81 2712 2728
+)
+"odoc_print.ml" 83 2748 2772 "odoc_print.ml" 83 2748 2773
+type(
+  Path.t
+)
+ident(
+  def p "odoc_print.ml" 83 2748 2791 "odoc_print.ml" 83 2748 2792
+)
+"odoc_print.ml" 83 2748 2774 "odoc_print.ml" 83 2748 2783
+type(
+  Types.type_expr list
+)
+ident(
+  def texp_list "odoc_print.ml" 83 2748 2791 "odoc_print.ml" 83 2748 2792
+)
+"odoc_print.ml" 83 2748 2784 "odoc_print.ml" 83 2748 2786
+type(
+  Types.class_type
+)
+ident(
+  def ct "odoc_print.ml" 83 2748 2791 "odoc_print.ml" 83 2748 2792
+)
+"odoc_print.ml" 83 2748 2754 "odoc_print.ml" 83 2748 2787
+type(
+  Types.class_type
+)
+"odoc_print.ml" 83 2748 2791 "odoc_print.ml" 83 2748 2792
+type(
+  Types.class_type
+)
+ident(
+  int_ref t "odoc_print.ml" 81 2712 2727 "odoc_print.ml" 81 2712 2728
+)
+"odoc_print.ml" 84 2793 2819 "odoc_print.ml" 84 2793 2821
+type(
+  Types.class_signature
+)
+ident(
+  def cs "odoc_print.ml" 87 2943 2951 "odoc_print.ml" 93 3366 3396
+)
+"odoc_print.ml" 84 2793 2799 "odoc_print.ml" 84 2793 2821
+type(
+  Types.class_type
+)
+"odoc_print.ml" 87 2943 2955 "odoc_print.ml" 87 2943 2959
+type(
+  Types.type_expr
+)
+ident(
+  def tnil "odoc_print.ml" 88 3025 3033 "odoc_print.ml" 93 3366 3396
+)
+"odoc_print.ml" 87 2943 2977 "odoc_print.ml" 87 2943 2987
+type(
+  Types.type_desc
+)
+"odoc_print.ml" 87 2943 3004 "odoc_print.ml" 87 2943 3005
+type(
+  int
+)
+"odoc_print.ml" 87 2943 3018 "odoc_print.ml" 87 2943 3019
+type(
+  int
+)
+"odoc_print.ml" 87 2943 2962 "odoc_print.ml" 87 2943 3021
+type(
+  Types.type_expr
+)
+"odoc_print.ml" 88 3025 3075 "odoc_print.ml" 88 3025 3077
+type(
+  Types.class_signature
+)
+ident(
+  int_ref cs "odoc_print.ml" 84 2793 2819 "odoc_print.ml" 84 2793 2821
+)
+"odoc_print.ml" 88 3025 3075 "odoc_print.ml" 88 3025 3093
+type(
+  Types.type_expr
+)
+"odoc_print.ml" 89 3099 3177 "odoc_print.ml" 89 3099 3181
+type(
+  Types.type_expr
+)
+ident(
+  int_ref tnil "odoc_print.ml" 87 2943 2955 "odoc_print.ml" 87 2943 2959
+)
+"odoc_print.ml" 89 3099 3183 "odoc_print.ml" 89 3099 3186
+type(
+  (Path.t * Types.type_expr list) option ->
+  (Path.t * Types.type_expr list) option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"odoc_print.ml" 89 3099 3187 "odoc_print.ml" 89 3099 3191
+type(
+  (Path.t * Types.type_expr list) option
+)
+"odoc_print.ml" 89 3099 3183 "odoc_print.ml" 89 3099 3191
+type(
+  (Path.t * Types.type_expr list) option ref
+)
+"odoc_print.ml" 89 3099 3162 "odoc_print.ml" 89 3099 3192
+type(
+  Types.type_desc
+)
+"odoc_print.ml" 88 3025 3073 "odoc_print.ml" 89 3099 3194
+type(
+  Types.type_expr
+)
+"odoc_print.ml" 90 3196 3238 "odoc_print.ml" 90 3196 3254
+type(
+  (Asttypes.mutable_flag * Asttypes.virtual_flag * Types.type_expr)
+  Types.Vars.t
+)
+ident(
+  ext_ref Types.Vars.empty
+)
+"odoc_print.ml" 91 3257 3300 "odoc_print.ml" 91 3257 3317
+type(
+  Types.Concr.t
+)
+ident(
+  ext_ref Types.Concr.empty
+)
+"odoc_print.ml" 92 3320 3363 "odoc_print.ml" 92 3320 3365
+type(
+  (Path.t * Types.type_expr list) list
+)
+"odoc_print.ml" 88 3025 3053 "odoc_print.ml" 93 3366 3396
+type(
+  Types.class_signature
+)
+"odoc_print.ml" 88 3025 3033 "odoc_print.ml" 93 3366 3396
+type(
+  Types.class_type
+)
+"odoc_print.ml" 87 2943 2951 "odoc_print.ml" 93 3366 3396
+type(
+  Types.class_type
+)
+"odoc_print.ml" 94 3397 3420 "odoc_print.ml" 94 3397 3421
+type(
+  Asttypes.label
+)
+ident(
+  def l "odoc_print.ml" 95 3436 3444 "odoc_print.ml" 96 3468 3509
+)
+"odoc_print.ml" 94 3397 3423 "odoc_print.ml" 94 3397 3427
+type(
+  Types.type_expr
+)
+ident(
+  def texp "odoc_print.ml" 95 3436 3444 "odoc_print.ml" 96 3468 3509
+)
+"odoc_print.ml" 94 3397 3429 "odoc_print.ml" 94 3397 3431
+type(
+  Types.class_type
+)
+ident(
+  def ct "odoc_print.ml" 95 3436 3444 "odoc_print.ml" 96 3468 3509
+)
+"odoc_print.ml" 94 3397 3403 "odoc_print.ml" 94 3397 3432
+type(
+  Types.class_type
+)
+"odoc_print.ml" 95 3436 3448 "odoc_print.ml" 95 3436 3454
+type(
+  Types.class_type
+)
+ident(
+  def new_ct "odoc_print.ml" 96 3468 3476 "odoc_print.ml" 96 3468 3509
+)
+"odoc_print.ml" 95 3436 3457 "odoc_print.ml" 95 3436 3461
+type(
+  Types.class_type -> Types.class_type
+)
+ident(
+  int_ref iter "odoc_print.ml" 81 2712 2722 "odoc_print.ml" 81 2712 2726
+)
+"odoc_print.ml" 95 3436 3462 "odoc_print.ml" 95 3436 3464
+type(
+  Types.class_type
+)
+ident(
+  int_ref ct "odoc_print.ml" 94 3397 3429 "odoc_print.ml" 94 3397 3431
+)
+"odoc_print.ml" 95 3436 3457 "odoc_print.ml" 95 3436 3464
+call(
+  stack
+)
+type(
+  Types.class_type
+)
+"odoc_print.ml" 96 3468 3493 "odoc_print.ml" 96 3468 3494
+type(
+  Asttypes.label
+)
+ident(
+  int_ref l "odoc_print.ml" 94 3397 3420 "odoc_print.ml" 94 3397 3421
+)
+"odoc_print.ml" 96 3468 3496 "odoc_print.ml" 96 3468 3500
+type(
+  Types.type_expr
+)
+ident(
+  int_ref texp "odoc_print.ml" 94 3397 3423 "odoc_print.ml" 94 3397 3427
+)
+"odoc_print.ml" 96 3468 3502 "odoc_print.ml" 96 3468 3508
+type(
+  Types.class_type
+)
+ident(
+  int_ref new_ct "odoc_print.ml" 95 3436 3448 "odoc_print.ml" 95 3436 3454
+)
+"odoc_print.ml" 96 3468 3476 "odoc_print.ml" 96 3468 3509
+type(
+  Types.class_type
+)
+"odoc_print.ml" 95 3436 3444 "odoc_print.ml" 96 3468 3509
+type(
+  Types.class_type
+)
+"odoc_print.ml" 82 2731 2735 "odoc_print.ml" 96 3468 3509
+type(
+  Types.class_type
+)
+"odoc_print.ml" 98 3515 3517 "odoc_print.ml" 98 3515 3521
+type(
+  Types.class_type -> Types.class_type
+)
+ident(
+  int_ref iter "odoc_print.ml" 81 2712 2722 "odoc_print.ml" 81 2712 2726
+)
+"odoc_print.ml" 98 3515 3522 "odoc_print.ml" 98 3515 3523
+type(
+  Types.class_type
+)
+ident(
+  int_ref t "odoc_print.ml" 80 2687 2708 "odoc_print.ml" 80 2687 2709
+)
+"odoc_print.ml" 98 3515 3517 "odoc_print.ml" 98 3515 3523
+call(
+  tail
+)
+type(
+  Types.class_type
+)
+"odoc_print.ml" 81 2712 2714 "odoc_print.ml" 98 3515 3523
+type(
+  Types.class_type
+)
+"odoc_print.ml" 100 3525 3529 "odoc_print.ml" 100 3525 3549
+type(
+  ?complete:bool -> Types.class_type -> string
+)
+ident(
+  def string_of_class_type "odoc_print.ml" 104 3755 3777 "odoc_print.ml" 1 0 -1
+)
+"odoc_print.ml" 100 3525 3552 "odoc_print.ml" 100 3525 3560
+type(
+  bool
+)
+"odoc_print.ml" 100 3525 3561 "odoc_print.ml" 100 3525 3566
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_print.ml" 100 3525 3561 "odoc_print.ml" 100 3525 3566
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_print.ml" 100 3525 3568 "odoc_print.ml" 100 3525 3569
+type(
+  Types.class_type
+)
+ident(
+  def t "odoc_print.ml" 101 3572 3574 "odoc_print.ml" 104 3755 3777
+)
+"odoc_print.ml" 101 3572 3578 "odoc_print.ml" 101 3572 3580
+type(
+  Types.class_type
+)
+ident(
+  def t2 "odoc_print.ml" 103 3717 3719 "odoc_print.ml" 104 3755 3777
+)
+"odoc_print.ml" 101 3572 3586 "odoc_print.ml" 101 3572 3594
+type(
+  bool
+)
+ident(
+  int_ref complete "odoc_print.ml" 100 3525 3552 "odoc_print.ml" 100 3525 3560
+)
+"odoc_print.ml" 101 3572 3600 "odoc_print.ml" 101 3572 3601
+type(
+  Types.class_type
+)
+ident(
+  int_ref t "odoc_print.ml" 100 3525 3568 "odoc_print.ml" 100 3525 3569
+)
+"odoc_print.ml" 101 3572 3607 "odoc_print.ml" 101 3572 3623
+type(
+  Types.class_type -> Types.class_type
+)
+ident(
+  int_ref simpl_class_type "odoc_print.ml" 80 2687 2691 "odoc_print.ml" 80 2687 2707
+)
+"odoc_print.ml" 101 3572 3624 "odoc_print.ml" 101 3572 3625
+type(
+  Types.class_type
+)
+ident(
+  int_ref t "odoc_print.ml" 100 3525 3568 "odoc_print.ml" 100 3525 3569
+)
+"odoc_print.ml" 101 3572 3607 "odoc_print.ml" 101 3572 3625
+call(
+  stack
+)
+type(
+  Types.class_type
+)
+"odoc_print.ml" 101 3572 3583 "odoc_print.ml" 101 3572 3625
+type(
+  Types.class_type
+)
+"odoc_print.ml" 103 3717 3719 "odoc_print.ml" 103 3717 3738
+type(
+  Format.formatter -> Types.class_type -> unit
+)
+ident(
+  ext_ref Printtyp.class_type
+)
+"odoc_print.ml" 103 3717 3739 "odoc_print.ml" 103 3717 3750
+type(
+  Format.formatter
+)
+ident(
+  int_ref modtype_fmt "odoc_print.ml" 36 1349 1354 "odoc_print.ml" 36 1349 1365
+)
+"odoc_print.ml" 103 3717 3751 "odoc_print.ml" 103 3717 3753
+type(
+  Types.class_type
+)
+ident(
+  int_ref t2 "odoc_print.ml" 101 3572 3578 "odoc_print.ml" 101 3572 3580
+)
+"odoc_print.ml" 103 3717 3719 "odoc_print.ml" 103 3717 3753
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_print.ml" 104 3755 3757 "odoc_print.ml" 104 3755 3774
+type(
+  unit -> string
+)
+ident(
+  int_ref flush_modtype_fmt "odoc_print.ml" 36 1349 1367 "odoc_print.ml" 36 1349 1384
+)
+"odoc_print.ml" 104 3755 3775 "odoc_print.ml" 104 3755 3777
+type(
+  unit
+)
+"odoc_print.ml" 104 3755 3757 "odoc_print.ml" 104 3755 3777
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_print.ml" 103 3717 3719 "odoc_print.ml" 104 3755 3777
+type(
+  string
+)
+"odoc_print.ml" 101 3572 3574 "odoc_print.ml" 104 3755 3777
+type(
+  string
+)

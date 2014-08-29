@@ -1,0 +1,1868 @@
+"odoc.ml" 27 1069 1073 "odoc.ml" 27 1069 1081
+type(
+  string list
+)
+ident(
+  def arg_list "odoc.ml" 28 1107 1107 "odoc.ml" 1 0 -1
+)
+"odoc.ml" 27 1069 1084 "odoc.ml" 27 1069 1097
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"odoc.ml" 27 1069 1098 "odoc.ml" 27 1069 1106
+type(
+  string array
+)
+ident(
+  ext_ref Sys.argv
+)
+"odoc.ml" 27 1069 1084 "odoc.ml" 27 1069 1106
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc.ml" 28 1107 1112 "odoc.ml" 28 1107 1119
+type(
+  string list
+)
+ident(
+  def plugins "odoc.ml" 48 1734 1734 "odoc.ml" 1 0 -1
+)
+"odoc.ml" 28 1107 1121 "odoc.ml" 28 1107 1126
+type(
+  string list
+)
+ident(
+  def paths "odoc.ml" 48 1734 1734 "odoc.ml" 1 0 -1
+)
+"odoc.ml" 28 1107 1111 "odoc.ml" 28 1107 1127
+type(
+  string list * string list
+)
+"odoc.ml" 29 1130 1140 "odoc.ml" 29 1130 1144
+type(
+  string list * string list -> string list -> string list * string list
+)
+ident(
+  def iter "odoc.ml" 29 1130 1132 "odoc.ml" 41 1539 1563
+)
+"odoc.ml" 29 1130 1146 "odoc.ml" 29 1130 1151
+type(
+  string list
+)
+ident(
+  def files "odoc.ml" 29 1130 1161 "odoc.ml" 39 1505 1533
+)
+"odoc.ml" 29 1130 1153 "odoc.ml" 29 1130 1157
+type(
+  string list
+)
+ident(
+  def incs "odoc.ml" 29 1130 1161 "odoc.ml" 39 1505 1533
+)
+"odoc.ml" 29 1130 1145 "odoc.ml" 29 1130 1158
+type(
+  string list * string list
+)
+"odoc.ml" 30 1170 1176 "odoc.ml" 30 1170 1178
+type(
+  string list
+)
+"odoc.ml" 30 1170 1181 "odoc.ml" 30 1170 1182
+type(
+  string
+)
+"odoc.ml" 30 1170 1186 "odoc.ml" 30 1170 1188
+type(
+  string list
+)
+"odoc.ml" 30 1170 1181 "odoc.ml" 30 1170 1188
+type(
+  string list
+)
+"odoc.ml" 30 1170 1176 "odoc.ml" 30 1170 1188
+type(
+  string list
+)
+"odoc.ml" 30 1170 1193 "odoc.ml" 30 1170 1201
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"odoc.ml" 30 1170 1202 "odoc.ml" 30 1170 1207
+type(
+  string list
+)
+ident(
+  int_ref files "odoc.ml" 29 1130 1146 "odoc.ml" 29 1130 1151
+)
+"odoc.ml" 30 1170 1193 "odoc.ml" 30 1170 1207
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc.ml" 30 1170 1209 "odoc.ml" 30 1170 1217
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"odoc.ml" 30 1170 1218 "odoc.ml" 30 1170 1222
+type(
+  string list
+)
+ident(
+  int_ref incs "odoc.ml" 29 1130 1153 "odoc.ml" 29 1130 1157
+)
+"odoc.ml" 30 1170 1209 "odoc.ml" 30 1170 1222
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc.ml" 30 1170 1192 "odoc.ml" 30 1170 1223
+type(
+  string list * string list
+)
+"odoc.ml" 31 1224 1230 "odoc.ml" 31 1224 1234
+type(
+  string
+)
+"odoc.ml" 31 1224 1238 "odoc.ml" 31 1224 1242
+type(
+  string
+)
+ident(
+  def file "odoc.ml" 32 1253 1261 "odoc.ml" 35 1398 1432
+)
+"odoc.ml" 31 1224 1246 "odoc.ml" 31 1224 1247
+type(
+  string list
+)
+ident(
+  def q "odoc.ml" 32 1253 1261 "odoc.ml" 35 1398 1432
+)
+"odoc.ml" 31 1224 1238 "odoc.ml" 31 1224 1247
+type(
+  string list
+)
+"odoc.ml" 31 1224 1230 "odoc.ml" 31 1224 1247
+type(
+  string list
+)
+"odoc.ml" 32 1253 1263 "odoc.ml" 32 1253 1284
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Filename.check_suffix
+)
+"odoc.ml" 32 1253 1285 "odoc.ml" 32 1253 1289
+type(
+  string
+)
+ident(
+  int_ref file "odoc.ml" 31 1224 1238 "odoc.ml" 31 1224 1242
+)
+"odoc.ml" 32 1253 1290 "odoc.ml" 32 1253 1295
+type(
+  string
+)
+"odoc.ml" 32 1253 1262 "odoc.ml" 32 1253 1296
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc.ml" 32 1253 1297 "odoc.ml" 32 1253 1299
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"odoc.ml" 33 1300 1310 "odoc.ml" 33 1300 1331
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Filename.check_suffix
+)
+"odoc.ml" 33 1300 1332 "odoc.ml" 33 1300 1336
+type(
+  string
+)
+ident(
+  int_ref file "odoc.ml" 31 1224 1238 "odoc.ml" 31 1224 1242
+)
+"odoc.ml" 33 1300 1337 "odoc.ml" 33 1300 1342
+type(
+  string
+)
+"odoc.ml" 33 1300 1309 "odoc.ml" 33 1300 1343
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc.ml" 33 1300 1344 "odoc.ml" 33 1300 1346
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"odoc.ml" 34 1347 1359 "odoc.ml" 34 1347 1380
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Filename.check_suffix
+)
+"odoc.ml" 34 1347 1381 "odoc.ml" 34 1347 1385
+type(
+  string
+)
+ident(
+  int_ref file "odoc.ml" 31 1224 1238 "odoc.ml" 31 1224 1242
+)
+"odoc.ml" 34 1347 1386 "odoc.ml" 34 1347 1392
+type(
+  string
+)
+"odoc.ml" 34 1347 1358 "odoc.ml" 34 1347 1393
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc.ml" 33 1300 1309 "odoc.ml" 34 1347 1393
+type(
+  bool
+)
+"odoc.ml" 32 1253 1261 "odoc.ml" 34 1347 1394
+type(
+  bool
+)
+"odoc.ml" 35 1398 1404 "odoc.ml" 35 1398 1408
+type(
+  string list * string list -> string list -> string list * string list
+)
+ident(
+  int_ref iter "odoc.ml" 29 1130 1140 "odoc.ml" 29 1130 1144
+)
+"odoc.ml" 35 1398 1410 "odoc.ml" 35 1398 1414
+type(
+  string
+)
+ident(
+  int_ref file "odoc.ml" 31 1224 1238 "odoc.ml" 31 1224 1242
+)
+"odoc.ml" 35 1398 1418 "odoc.ml" 35 1398 1423
+type(
+  string list
+)
+ident(
+  int_ref files "odoc.ml" 29 1130 1146 "odoc.ml" 29 1130 1151
+)
+"odoc.ml" 35 1398 1410 "odoc.ml" 35 1398 1423
+type(
+  string list
+)
+"odoc.ml" 35 1398 1425 "odoc.ml" 35 1398 1429
+type(
+  string list
+)
+ident(
+  int_ref incs "odoc.ml" 29 1130 1153 "odoc.ml" 29 1130 1157
+)
+"odoc.ml" 35 1398 1409 "odoc.ml" 35 1398 1430
+type(
+  string list * string list
+)
+"odoc.ml" 35 1398 1431 "odoc.ml" 35 1398 1432
+type(
+  string list
+)
+ident(
+  int_ref q "odoc.ml" 31 1224 1246 "odoc.ml" 31 1224 1247
+)
+"odoc.ml" 35 1398 1404 "odoc.ml" 35 1398 1432
+call(
+  tail
+)
+type(
+  string list * string list
+)
+"odoc.ml" 36 1433 1437 "odoc.ml" 36 1433 1441
+type(
+  string
+)
+"odoc.ml" 36 1433 1445 "odoc.ml" 36 1433 1448
+type(
+  string
+)
+ident(
+  def dir "odoc.ml" 37 1457 1463 "odoc.ml" 37 1457 1490
+)
+"odoc.ml" 36 1433 1452 "odoc.ml" 36 1433 1453
+type(
+  string list
+)
+ident(
+  def q "odoc.ml" 37 1457 1463 "odoc.ml" 37 1457 1490
+)
+"odoc.ml" 36 1433 1445 "odoc.ml" 36 1433 1453
+type(
+  string list
+)
+"odoc.ml" 36 1433 1437 "odoc.ml" 36 1433 1453
+type(
+  string list
+)
+"odoc.ml" 37 1457 1463 "odoc.ml" 37 1457 1467
+type(
+  string list * string list -> string list -> string list * string list
+)
+ident(
+  int_ref iter "odoc.ml" 29 1130 1140 "odoc.ml" 29 1130 1144
+)
+"odoc.ml" 37 1457 1469 "odoc.ml" 37 1457 1474
+type(
+  string list
+)
+ident(
+  int_ref files "odoc.ml" 29 1130 1146 "odoc.ml" 29 1130 1151
+)
+"odoc.ml" 37 1457 1476 "odoc.ml" 37 1457 1479
+type(
+  string
+)
+ident(
+  int_ref dir "odoc.ml" 36 1433 1445 "odoc.ml" 36 1433 1448
+)
+"odoc.ml" 37 1457 1483 "odoc.ml" 37 1457 1487
+type(
+  string list
+)
+ident(
+  int_ref incs "odoc.ml" 29 1130 1153 "odoc.ml" 29 1130 1157
+)
+"odoc.ml" 37 1457 1476 "odoc.ml" 37 1457 1487
+type(
+  string list
+)
+"odoc.ml" 37 1457 1468 "odoc.ml" 37 1457 1488
+type(
+  string list * string list
+)
+"odoc.ml" 37 1457 1489 "odoc.ml" 37 1457 1490
+type(
+  string list
+)
+ident(
+  int_ref q "odoc.ml" 36 1433 1452 "odoc.ml" 36 1433 1453
+)
+"odoc.ml" 37 1457 1463 "odoc.ml" 37 1457 1490
+call(
+  tail
+)
+type(
+  string list * string list
+)
+"odoc.ml" 38 1491 1495 "odoc.ml" 38 1491 1496
+type(
+  string
+)
+"odoc.ml" 38 1491 1500 "odoc.ml" 38 1491 1501
+type(
+  string list
+)
+ident(
+  def q "odoc.ml" 39 1505 1513 "odoc.ml" 39 1505 1533
+)
+"odoc.ml" 38 1491 1495 "odoc.ml" 38 1491 1501
+type(
+  string list
+)
+"odoc.ml" 39 1505 1513 "odoc.ml" 39 1505 1517
+type(
+  string list * string list -> string list -> string list * string list
+)
+ident(
+  int_ref iter "odoc.ml" 29 1130 1140 "odoc.ml" 29 1130 1144
+)
+"odoc.ml" 39 1505 1519 "odoc.ml" 39 1505 1524
+type(
+  string list
+)
+ident(
+  int_ref files "odoc.ml" 29 1130 1146 "odoc.ml" 29 1130 1151
+)
+"odoc.ml" 39 1505 1526 "odoc.ml" 39 1505 1530
+type(
+  string list
+)
+ident(
+  int_ref incs "odoc.ml" 29 1130 1153 "odoc.ml" 29 1130 1157
+)
+"odoc.ml" 39 1505 1518 "odoc.ml" 39 1505 1531
+type(
+  string list * string list
+)
+"odoc.ml" 39 1505 1532 "odoc.ml" 39 1505 1533
+type(
+  string list
+)
+ident(
+  int_ref q "odoc.ml" 38 1491 1500 "odoc.ml" 38 1491 1501
+)
+"odoc.ml" 39 1505 1513 "odoc.ml" 39 1505 1533
+call(
+  tail
+)
+type(
+  string list * string list
+)
+"odoc.ml" 29 1130 1161 "odoc.ml" 39 1505 1533
+type(
+  string list -> string list * string list
+)
+"odoc.ml" 41 1539 1541 "odoc.ml" 41 1539 1545
+type(
+  string list * string list -> string list -> string list * string list
+)
+ident(
+  int_ref iter "odoc.ml" 29 1130 1140 "odoc.ml" 29 1130 1144
+)
+"odoc.ml" 41 1539 1547 "odoc.ml" 41 1539 1549
+type(
+  string list
+)
+"odoc.ml" 41 1539 1551 "odoc.ml" 41 1539 1553
+type(
+  string list
+)
+"odoc.ml" 41 1539 1546 "odoc.ml" 41 1539 1554
+type(
+  string list * string list
+)
+"odoc.ml" 41 1539 1555 "odoc.ml" 41 1539 1563
+type(
+  string list
+)
+ident(
+  int_ref arg_list "odoc.ml" 27 1069 1073 "odoc.ml" 27 1069 1081
+)
+"odoc.ml" 41 1539 1541 "odoc.ml" 41 1539 1563
+call(
+  stack
+)
+type(
+  string list * string list
+)
+"odoc.ml" 29 1130 1132 "odoc.ml" 41 1539 1563
+type(
+  string list * string list
+)
+"odoc.ml" 48 1734 1738 "odoc.ml" 48 1734 1755
+type(
+  string -> string
+)
+ident(
+  def get_real_filename "odoc.ml" 65 2183 2183 "odoc.ml" 1 0 -1
+)
+"odoc.ml" 48 1734 1756 "odoc.ml" 48 1734 1760
+type(
+  string
+)
+ident(
+  def name "odoc.ml" 49 1763 1766 "odoc.ml" 63 2175 2181
+)
+"odoc.ml" 49 1763 1769 "odoc.ml" 49 1763 1786
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.basename
+)
+"odoc.ml" 49 1763 1787 "odoc.ml" 49 1763 1791
+type(
+  string
+)
+ident(
+  int_ref name "odoc.ml" 48 1734 1756 "odoc.ml" 48 1734 1760
+)
+"odoc.ml" 49 1763 1769 "odoc.ml" 49 1763 1791
+call(
+  stack
+)
+type(
+  string
+)
+"odoc.ml" 49 1763 1792 "odoc.ml" 49 1763 1794
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"odoc.ml" 49 1763 1795 "odoc.ml" 49 1763 1799
+type(
+  string
+)
+ident(
+  int_ref name "odoc.ml" 48 1734 1756 "odoc.ml" 48 1734 1760
+)
+"odoc.ml" 49 1763 1769 "odoc.ml" 49 1763 1799
+type(
+  bool
+)
+"odoc.ml" 50 1805 1810 "odoc.ml" 50 1805 1814
+type(
+  string
+)
+ident(
+  int_ref name "odoc.ml" 48 1734 1756 "odoc.ml" 48 1734 1760
+)
+"odoc.ml" 53 1830 1840 "odoc.ml" 53 1830 1845
+type(
+  string list
+)
+ident(
+  def paths "odoc.ml" 54 1925 1931 "odoc.ml" 62 2117 2174
+)
+"odoc.ml" 53 1830 1848 "odoc.ml" 53 1830 1873
+type(
+  string
+)
+ident(
+  ext_ref Filename.current_dir_name
+)
+"odoc.ml" 53 1830 1877 "odoc.ml" 53 1830 1882
+type(
+  string list
+)
+ident(
+  int_ref paths "odoc.ml" 28 1107 1121 "odoc.ml" 28 1107 1126
+)
+"odoc.ml" 53 1830 1848 "odoc.ml" 53 1830 1882
+type(
+  string list
+)
+"odoc.ml" 53 1830 1883 "odoc.ml" 53 1830 1884
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc.ml" 53 1830 1886 "odoc.ml" 53 1830 1920
+type(
+  string
+)
+ident(
+  ext_ref Odoc_config.custom_generators_path
+)
+"odoc.ml" 53 1830 1885 "odoc.ml" 53 1830 1921
+type(
+  string list
+)
+"odoc.ml" 53 1830 1848 "odoc.ml" 53 1830 1921
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc.ml" 55 1935 1947 "odoc.ml" 55 1935 1948
+type(
+  string
+)
+ident(
+  def d "odoc.ml" 59 2054 2062 "odoc.ml" 59 2054 2084
+)
+"odoc.ml" 55 1935 1951 "odoc.ml" 55 1935 1960
+type(
+  (string -> bool) -> string list -> string
+)
+ident(
+  ext_ref List.find
+)
+"odoc.ml" 56 1961 1978 "odoc.ml" 56 1961 1979
+type(
+  string
+)
+ident(
+  def d "odoc.ml" 56 1961 1983 "odoc.ml" 56 1961 2023
+)
+"odoc.ml" 56 1961 1983 "odoc.ml" 56 1961 1998
+type(
+  string -> bool
+)
+ident(
+  ext_ref Sys.file_exists
+)
+"odoc.ml" 56 1961 2000 "odoc.ml" 56 1961 2015
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Filename.concat
+)
+"odoc.ml" 56 1961 2016 "odoc.ml" 56 1961 2017
+type(
+  string
+)
+ident(
+  int_ref d "odoc.ml" 56 1961 1978 "odoc.ml" 56 1961 1979
+)
+"odoc.ml" 56 1961 2018 "odoc.ml" 56 1961 2022
+type(
+  string
+)
+ident(
+  int_ref name "odoc.ml" 48 1734 1756 "odoc.ml" 48 1734 1760
+)
+"odoc.ml" 56 1961 1999 "odoc.ml" 56 1961 2023
+call(
+  stack
+)
+type(
+  string
+)
+"odoc.ml" 56 1961 1983 "odoc.ml" 56 1961 2023
+type(
+  bool
+)
+"odoc.ml" 56 1961 1973 "odoc.ml" 56 1961 2024
+type(
+  string -> bool
+)
+"odoc.ml" 57 2025 2037 "odoc.ml" 57 2025 2042
+type(
+  string list
+)
+ident(
+  int_ref paths "odoc.ml" 53 1830 1840 "odoc.ml" 53 1830 1845
+)
+"odoc.ml" 55 1935 1951 "odoc.ml" 57 2025 2042
+call(
+  stack
+)
+type(
+  string
+)
+"odoc.ml" 59 2054 2062 "odoc.ml" 59 2054 2077
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Filename.concat
+)
+"odoc.ml" 59 2054 2078 "odoc.ml" 59 2054 2079
+type(
+  string
+)
+ident(
+  int_ref d "odoc.ml" 55 1935 1947 "odoc.ml" 55 1935 1948
+)
+"odoc.ml" 59 2054 2080 "odoc.ml" 59 2054 2084
+type(
+  string
+)
+ident(
+  int_ref name "odoc.ml" 48 1734 1756 "odoc.ml" 48 1734 1760
+)
+"odoc.ml" 59 2054 2062 "odoc.ml" 59 2054 2084
+call(
+  stack
+)
+type(
+  string
+)
+"odoc.ml" 55 1935 1943 "odoc.ml" 59 2054 2084
+type(
+  string
+)
+"odoc.ml" 61 2096 2104 "odoc.ml" 61 2096 2113
+type(
+  exn
+)
+"odoc.ml" 62 2117 2127 "odoc.ml" 62 2117 2135
+type(
+  string -> string
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"odoc.ml" 62 2117 2137 "odoc.ml" 62 2117 2162
+type(
+  string list -> string -> string
+)
+ident(
+  ext_ref M.file_not_found_in_paths
+)
+"odoc.ml" 62 2117 2163 "odoc.ml" 62 2117 2168
+type(
+  string list
+)
+ident(
+  int_ref paths "odoc.ml" 53 1830 1840 "odoc.ml" 53 1830 1845
+)
+"odoc.ml" 62 2117 2169 "odoc.ml" 62 2117 2173
+type(
+  string
+)
+ident(
+  int_ref name "odoc.ml" 48 1734 1756 "odoc.ml" 48 1734 1760
+)
+"odoc.ml" 62 2117 2136 "odoc.ml" 62 2117 2174
+call(
+  stack
+)
+type(
+  string
+)
+"odoc.ml" 62 2117 2127 "odoc.ml" 62 2117 2174
+call(
+  tail
+)
+type(
+  string
+)
+"odoc.ml" 54 1925 1931 "odoc.ml" 62 2117 2174
+type(
+  string
+)
+"odoc.ml" 52 1823 1828 "odoc.ml" 63 2175 2181
+type(
+  string
+)
+"odoc.ml" 49 1763 1766 "odoc.ml" 63 2175 2181
+type(
+  string
+)
+"odoc.ml" 65 2183 2187 "odoc.ml" 65 2183 2198
+type(
+  string -> unit
+)
+ident(
+  def load_plugin "odoc.ml" 83 2715 2715 "odoc.ml" 1 0 -1
+)
+"odoc.ml" 65 2183 2199 "odoc.ml" 65 2183 2203
+type(
+  string
+)
+ident(
+  def file "odoc.ml" 66 2206 2208 "odoc.ml" 81 2699 2711
+)
+"odoc.ml" 66 2206 2212 "odoc.ml" 66 2206 2216
+type(
+  string
+)
+ident(
+  def file "odoc.ml" 67 2250 2252 "odoc.ml" 81 2699 2711
+)
+"odoc.ml" 66 2206 2219 "odoc.ml" 66 2206 2241
+type(
+  string -> string
+)
+ident(
+  ext_ref Dynlink.adapt_filename
+)
+"odoc.ml" 66 2206 2242 "odoc.ml" 66 2206 2246
+type(
+  string
+)
+ident(
+  int_ref file "odoc.ml" 65 2183 2199 "odoc.ml" 65 2183 2203
+)
+"odoc.ml" 66 2206 2219 "odoc.ml" 66 2206 2246
+call(
+  stack
+)
+type(
+  string
+)
+"odoc.ml" 67 2250 2252 "odoc.ml" 67 2250 2280
+type(
+  bool -> unit
+)
+ident(
+  ext_ref Dynlink.allow_unsafe_modules
+)
+"odoc.ml" 67 2250 2281 "odoc.ml" 67 2250 2285
+type(
+  bool
+)
+"odoc.ml" 67 2250 2252 "odoc.ml" 67 2250 2285
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc.ml" 69 2293 2301 "odoc.ml" 69 2293 2310
+type(
+  string
+)
+ident(
+  def real_file "odoc.ml" 70 2339 2343 "odoc.ml" 70 2339 2377
+)
+"odoc.ml" 69 2293 2313 "odoc.ml" 69 2293 2330
+type(
+  string -> string
+)
+ident(
+  int_ref get_real_filename "odoc.ml" 48 1734 1738 "odoc.ml" 48 1734 1755
+)
+"odoc.ml" 69 2293 2331 "odoc.ml" 69 2293 2335
+type(
+  string
+)
+ident(
+  int_ref file "odoc.ml" 66 2206 2212 "odoc.ml" 66 2206 2216
+)
+"odoc.ml" 69 2293 2313 "odoc.ml" 69 2293 2335
+call(
+  stack
+)
+type(
+  string
+)
+"odoc.ml" 70 2339 2343 "odoc.ml" 70 2339 2349
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"odoc.ml" 70 2339 2350 "odoc.ml" 70 2339 2366
+type(
+  string -> unit
+)
+ident(
+  ext_ref Dynlink.loadfile
+)
+"odoc.ml" 70 2339 2367 "odoc.ml" 70 2339 2376
+type(
+  string
+)
+ident(
+  int_ref real_file "odoc.ml" 69 2293 2301 "odoc.ml" 69 2293 2310
+)
+"odoc.ml" 70 2339 2349 "odoc.ml" 70 2339 2377
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc.ml" 70 2339 2343 "odoc.ml" 70 2339 2377
+type(
+  unit
+)
+"odoc.ml" 69 2293 2297 "odoc.ml" 70 2339 2377
+type(
+  unit
+)
+"odoc.ml" 72 2385 2403 "odoc.ml" 72 2385 2404
+type(
+  Dynlink.error
+)
+ident(
+  def e "odoc.ml" 73 2408 2414 "odoc.ml" 74 2493 2505
+)
+"odoc.ml" 72 2385 2389 "odoc.ml" 72 2385 2404
+type(
+  exn
+)
+"odoc.ml" 73 2408 2414 "odoc.ml" 73 2408 2427
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"odoc.ml" 73 2408 2429 "odoc.ml" 73 2408 2458
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Odoc_messages.load_file_error
+)
+"odoc.ml" 73 2408 2459 "odoc.ml" 73 2408 2463
+type(
+  string
+)
+ident(
+  int_ref file "odoc.ml" 66 2206 2212 "odoc.ml" 66 2206 2216
+)
+"odoc.ml" 73 2408 2465 "odoc.ml" 73 2408 2486
+type(
+  Dynlink.error -> string
+)
+ident(
+  ext_ref Dynlink.error_message
+)
+"odoc.ml" 73 2408 2487 "odoc.ml" 73 2408 2488
+type(
+  Dynlink.error
+)
+ident(
+  int_ref e "odoc.ml" 72 2385 2403 "odoc.ml" 72 2385 2404
+)
+"odoc.ml" 73 2408 2464 "odoc.ml" 73 2408 2489
+call(
+  stack
+)
+type(
+  string
+)
+"odoc.ml" 73 2408 2428 "odoc.ml" 73 2408 2490
+call(
+  stack
+)
+type(
+  string
+)
+"odoc.ml" 73 2408 2414 "odoc.ml" 73 2408 2490
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc.ml" 74 2493 2499 "odoc.ml" 74 2493 2503
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"odoc.ml" 74 2493 2504 "odoc.ml" 74 2493 2505
+type(
+  int
+)
+"odoc.ml" 74 2493 2499 "odoc.ml" 74 2493 2505
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc.ml" 73 2408 2414 "odoc.ml" 74 2493 2505
+type(
+  unit
+)
+"odoc.ml" 75 2506 2510 "odoc.ml" 75 2506 2519
+type(
+  exn
+)
+"odoc.ml" 76 2523 2529 "odoc.ml" 76 2523 2542
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"odoc.ml" 76 2523 2544 "odoc.ml" 76 2523 2573
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Odoc_messages.load_file_error
+)
+"odoc.ml" 76 2523 2574 "odoc.ml" 76 2523 2578
+type(
+  string
+)
+ident(
+  int_ref file "odoc.ml" 66 2206 2212 "odoc.ml" 66 2206 2216
+)
+"odoc.ml" 76 2523 2579 "odoc.ml" 76 2523 2590
+type(
+  string
+)
+"odoc.ml" 76 2523 2543 "odoc.ml" 76 2523 2591
+call(
+  stack
+)
+type(
+  string
+)
+"odoc.ml" 76 2523 2529 "odoc.ml" 76 2523 2591
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc.ml" 77 2593 2599 "odoc.ml" 77 2593 2603
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"odoc.ml" 77 2593 2604 "odoc.ml" 77 2593 2605
+type(
+  int
+)
+"odoc.ml" 77 2593 2599 "odoc.ml" 77 2593 2605
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc.ml" 76 2523 2529 "odoc.ml" 77 2593 2605
+type(
+  unit
+)
+"odoc.ml" 78 2606 2620 "odoc.ml" 78 2606 2621
+type(
+  string
+)
+ident(
+  def s "odoc.ml" 80 2639 2645 "odoc.ml" 81 2699 2711
+)
+"odoc.ml" 78 2606 2610 "odoc.ml" 78 2606 2621
+type(
+  exn
+)
+"odoc.ml" 79 2622 2634 "odoc.ml" 79 2622 2635
+type(
+  string
+)
+ident(
+  def s "odoc.ml" 80 2639 2645 "odoc.ml" 81 2699 2711
+)
+"odoc.ml" 79 2622 2626 "odoc.ml" 79 2622 2635
+type(
+  exn
+)
+"odoc.ml" 78 2606 2610 "odoc.ml" 79 2622 2635
+type(
+  exn
+)
+"odoc.ml" 80 2639 2645 "odoc.ml" 80 2639 2658
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"odoc.ml" 80 2639 2660 "odoc.ml" 80 2639 2689
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Odoc_messages.load_file_error
+)
+"odoc.ml" 80 2639 2690 "odoc.ml" 80 2639 2694
+type(
+  string
+)
+ident(
+  int_ref file "odoc.ml" 66 2206 2212 "odoc.ml" 66 2206 2216
+)
+"odoc.ml" 80 2639 2695 "odoc.ml" 80 2639 2696
+type(
+  string
+)
+ident(
+  int_ref s "odoc.ml" 78 2606 2620 "odoc.ml" 78 2606 2621
+)
+"odoc.ml" 80 2639 2659 "odoc.ml" 80 2639 2697
+call(
+  stack
+)
+type(
+  string
+)
+"odoc.ml" 80 2639 2645 "odoc.ml" 80 2639 2697
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc.ml" 81 2699 2705 "odoc.ml" 81 2699 2709
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"odoc.ml" 81 2699 2710 "odoc.ml" 81 2699 2711
+type(
+  int
+)
+"odoc.ml" 81 2699 2705 "odoc.ml" 81 2699 2711
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc.ml" 80 2639 2645 "odoc.ml" 81 2699 2711
+type(
+  unit
+)
+"odoc.ml" 68 2287 2289 "odoc.ml" 81 2699 2711
+type(
+  unit
+)
+"odoc.ml" 67 2250 2252 "odoc.ml" 81 2699 2711
+type(
+  unit
+)
+"odoc.ml" 66 2206 2208 "odoc.ml" 81 2699 2711
+type(
+  unit
+)
+"odoc.ml" 83 2715 2715 "odoc.ml" 83 2715 2724
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc.ml" 83 2715 2725 "odoc.ml" 83 2715 2736
+type(
+  string -> unit
+)
+ident(
+  int_ref load_plugin "odoc.ml" 65 2183 2187 "odoc.ml" 65 2183 2198
+)
+"odoc.ml" 83 2715 2737 "odoc.ml" 83 2715 2744
+type(
+  string list
+)
+ident(
+  int_ref plugins "odoc.ml" 28 1107 1112 "odoc.ml" 28 1107 1119
+)
+"odoc.ml" 83 2715 2715 "odoc.ml" 83 2715 2744
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc.ml" 87 2779 2783 "odoc.ml" 87 2779 2785
+type(
+  unit
+)
+"odoc.ml" 87 2779 2788 "odoc.ml" 87 2779 2803
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Odoc_args.parse
+)
+"odoc.ml" 87 2779 2804 "odoc.ml" 87 2779 2806
+type(
+  unit
+)
+"odoc.ml" 87 2779 2788 "odoc.ml" 87 2779 2806
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc.ml" 90 2809 2813 "odoc.ml" 90 2809 2827
+type(
+  Odoc_module.t_module list
+)
+ident(
+  def loaded_modules "odoc.ml" 107 3201 3201 "odoc.ml" 1 0 -1
+)
+"odoc.ml" 91 2830 2832 "odoc.ml" 91 2830 2844
+type(
+  Odoc_module.t_module list list -> Odoc_module.t_module list
+)
+ident(
+  ext_ref List.flatten
+)
+"odoc.ml" 92 2845 2850 "odoc.ml" 92 2845 2858
+type(
+  (string -> Odoc_module.t_module list) ->
+  string list -> Odoc_module.t_module list list
+)
+ident(
+  ext_ref List.map
+)
+"odoc.ml" 93 2859 2871 "odoc.ml" 93 2859 2872
+type(
+  string
+)
+ident(
+  def f "odoc.ml" 94 2876 2885 "odoc.ml" 102 3146 3159
+)
+"odoc.ml" 94 2876 2885 "odoc.ml" 94 2876 2902
+type(
+  string -> unit
+)
+ident(
+  ext_ref Odoc_info.verbose
+)
+"odoc.ml" 94 2876 2904 "odoc.ml" 94 2876 2925
+type(
+  string -> string
+)
+ident(
+  ext_ref Odoc_messages.loading
+)
+"odoc.ml" 94 2876 2926 "odoc.ml" 94 2876 2927
+type(
+  string
+)
+ident(
+  int_ref f "odoc.ml" 93 2859 2871 "odoc.ml" 93 2859 2872
+)
+"odoc.ml" 94 2876 2903 "odoc.ml" 94 2876 2928
+call(
+  stack
+)
+type(
+  string
+)
+"odoc.ml" 94 2876 2885 "odoc.ml" 94 2876 2928
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc.ml" 96 2943 2958 "odoc.ml" 96 2943 2959
+type(
+  Odoc_module.t_module list
+)
+ident(
+  def l "odoc.ml" 97 2993 3004 "odoc.ml" 98 3040 3052
+)
+"odoc.ml" 96 2943 2962 "odoc.ml" 96 2943 2987
+type(
+  string -> Odoc_module.t_module list
+)
+ident(
+  ext_ref Odoc_analyse.load_modules
+)
+"odoc.ml" 96 2943 2988 "odoc.ml" 96 2943 2989
+type(
+  string
+)
+ident(
+  int_ref f "odoc.ml" 93 2859 2871 "odoc.ml" 93 2859 2872
+)
+"odoc.ml" 96 2943 2962 "odoc.ml" 96 2943 2989
+call(
+  stack
+)
+type(
+  Odoc_module.t_module list
+)
+"odoc.ml" 97 2993 3004 "odoc.ml" 97 2993 3021
+type(
+  string -> unit
+)
+ident(
+  ext_ref Odoc_info.verbose
+)
+"odoc.ml" 97 2993 3022 "odoc.ml" 97 2993 3038
+type(
+  string
+)
+ident(
+  ext_ref Odoc_messages.ok
+)
+"odoc.ml" 97 2993 3004 "odoc.ml" 97 2993 3038
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc.ml" 98 3040 3051 "odoc.ml" 98 3040 3052
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref l "odoc.ml" 96 2943 2958 "odoc.ml" 96 2943 2959
+)
+"odoc.ml" 97 2993 3004 "odoc.ml" 98 3040 3052
+type(
+  Odoc_module.t_module list
+)
+"odoc.ml" 96 2943 2954 "odoc.ml" 98 3040 3052
+type(
+  Odoc_module.t_module list
+)
+"odoc.ml" 99 3053 3075 "odoc.ml" 99 3053 3076
+type(
+  string
+)
+ident(
+  def s "odoc.ml" 100 3080 3091 "odoc.ml" 102 3146 3159
+)
+"odoc.ml" 99 3053 3067 "odoc.ml" 99 3053 3076
+type(
+  exn
+)
+"odoc.ml" 100 3080 3091 "odoc.ml" 100 3080 3104
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"odoc.ml" 100 3080 3105 "odoc.ml" 100 3080 3106
+type(
+  string
+)
+ident(
+  int_ref s "odoc.ml" 99 3053 3075 "odoc.ml" 99 3053 3076
+)
+"odoc.ml" 100 3080 3091 "odoc.ml" 100 3080 3106
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc.ml" 101 3109 3120 "odoc.ml" 101 3109 3124
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc.ml" 101 3109 3125 "odoc.ml" 101 3109 3143
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc.ml" 101 3109 3120 "odoc.ml" 101 3109 3143
+type(
+  unit
+)
+"odoc.ml" 102 3146 3157 "odoc.ml" 102 3146 3159
+type(
+  Odoc_module.t_module list
+)
+"odoc.ml" 101 3109 3120 "odoc.ml" 102 3146 3159
+type(
+  Odoc_module.t_module list
+)
+"odoc.ml" 100 3080 3091 "odoc.ml" 102 3146 3159
+type(
+  Odoc_module.t_module list
+)
+"odoc.ml" 95 2930 2939 "odoc.ml" 102 3146 3159
+type(
+  Odoc_module.t_module list
+)
+"odoc.ml" 94 2876 2885 "odoc.ml" 102 3146 3159
+type(
+  Odoc_module.t_module list
+)
+"odoc.ml" 93 2859 2866 "odoc.ml" 103 3160 3168
+type(
+  string -> Odoc_module.t_module list
+)
+"odoc.ml" 104 3169 3176 "odoc.ml" 104 3169 3177
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc.ml" 104 3169 3177 "odoc.ml" 104 3169 3193
+type(
+  string list ref
+)
+ident(
+  ext_ref Odoc_global.load
+)
+"odoc.ml" 104 3169 3176 "odoc.ml" 104 3169 3193
+type(
+  string list
+)
+"odoc.ml" 92 2845 2849 "odoc.ml" 105 3194 3199
+call(
+  stack
+)
+type(
+  Odoc_module.t_module list list
+)
+"odoc.ml" 91 2830 2832 "odoc.ml" 105 3194 3199
+call(
+  stack
+)
+type(
+  Odoc_module.t_module list
+)
+"odoc.ml" 107 3201 3205 "odoc.ml" 107 3201 3212
+type(
+  Odoc_module.t_module list
+)
+ident(
+  def modules "odoc.ml" 109 3284 3284 "odoc.ml" 1 0 -1
+)
+"odoc.ml" 107 3201 3215 "odoc.ml" 107 3201 3241
+type(
+  ?init:Odoc_module.t_module list ->
+  Odoc_global.source_file list -> Odoc_module.t_module list
+)
+ident(
+  ext_ref Odoc_analyse.analyse_files
+)
+"odoc.ml" 107 3201 3249 "odoc.ml" 107 3201 3263
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref loaded_modules "odoc.ml" 90 2809 2813 "odoc.ml" 90 2809 2827
+)
+"odoc.ml" 107 3201 3264 "odoc.ml" 107 3201 3265
+type(
+  Odoc_global.source_file list ref -> Odoc_global.source_file list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc.ml" 107 3201 3265 "odoc.ml" 107 3201 3282
+type(
+  Odoc_global.source_file list ref
+)
+ident(
+  ext_ref Odoc_global.files
+)
+"odoc.ml" 107 3201 3264 "odoc.ml" 107 3201 3282
+type(
+  Odoc_global.source_file list
+)
+"odoc.ml" 107 3201 3215 "odoc.ml" 107 3201 3282
+call(
+  stack
+)
+type(
+  Odoc_module.t_module list
+)
+"odoc.ml" 110 3292 3300 "odoc.ml" 110 3292 3301
+type(
+  string option ref -> string option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc.ml" 110 3292 3301 "odoc.ml" 110 3292 3317
+type(
+  string option ref
+)
+ident(
+  ext_ref Odoc_global.dump
+)
+"odoc.ml" 110 3292 3300 "odoc.ml" 110 3292 3317
+type(
+  string option
+)
+"odoc.ml" 111 3323 3327 "odoc.ml" 111 3323 3331
+type(
+  string option
+)
+"odoc.ml" 111 3323 3335 "odoc.ml" 111 3323 3337
+type(
+  unit
+)
+"odoc.ml" 112 3338 3347 "odoc.ml" 112 3338 3348
+type(
+  string
+)
+ident(
+  def f "odoc.ml" 113 3352 3358 "odoc.ml" 116 3448 3479
+)
+"odoc.ml" 112 3338 3342 "odoc.ml" 112 3338 3348
+type(
+  string option
+)
+"odoc.ml" 113 3352 3362 "odoc.ml" 113 3352 3387
+type(
+  string -> Odoc_module.t_module list -> unit
+)
+ident(
+  ext_ref Odoc_analyse.dump_modules
+)
+"odoc.ml" 113 3352 3388 "odoc.ml" 113 3352 3389
+type(
+  string
+)
+ident(
+  int_ref f "odoc.ml" 112 3338 3347 "odoc.ml" 112 3338 3348
+)
+"odoc.ml" 113 3352 3390 "odoc.ml" 113 3352 3397
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref modules "odoc.ml" 107 3201 3205 "odoc.ml" 107 3201 3212
+)
+"odoc.ml" 113 3352 3362 "odoc.ml" 113 3352 3397
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc.ml" 114 3398 3417 "odoc.ml" 114 3398 3418
+type(
+  string
+)
+ident(
+  def s "odoc.ml" 115 3422 3430 "odoc.ml" 116 3448 3479
+)
+"odoc.ml" 114 3398 3409 "odoc.ml" 114 3398 3418
+type(
+  exn
+)
+"odoc.ml" 115 3422 3430 "odoc.ml" 115 3422 3443
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"odoc.ml" 115 3422 3444 "odoc.ml" 115 3422 3445
+type(
+  string
+)
+ident(
+  int_ref s "odoc.ml" 114 3398 3417 "odoc.ml" 114 3398 3418
+)
+"odoc.ml" 115 3422 3430 "odoc.ml" 115 3422 3445
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc.ml" 116 3448 3456 "odoc.ml" 116 3448 3460
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc.ml" 116 3448 3461 "odoc.ml" 116 3448 3479
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc.ml" 116 3448 3456 "odoc.ml" 116 3448 3479
+type(
+  unit
+)
+"odoc.ml" 115 3422 3430 "odoc.ml" 116 3448 3479
+type(
+  unit
+)
+"odoc.ml" 113 3352 3358 "odoc.ml" 116 3448 3479
+type(
+  unit
+)
+"odoc.ml" 110 3292 3294 "odoc.ml" 116 3448 3479
+type(
+  unit
+)
+"odoc.ml" 120 3490 3498 "odoc.ml" 120 3490 3499
+type(
+  Odoc_gen.generator option ref -> Odoc_gen.generator option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc.ml" 120 3490 3499 "odoc.ml" 120 3490 3526
+type(
+  Odoc_gen.generator option ref
+)
+ident(
+  ext_ref Odoc_args.current_generator
+)
+"odoc.ml" 120 3490 3498 "odoc.ml" 120 3490 3526
+type(
+  Odoc_gen.generator option
+)
+"odoc.ml" 121 3532 3536 "odoc.ml" 121 3532 3540
+type(
+  Odoc_gen.generator option
+)
+"odoc.ml" 122 3544 3550 "odoc.ml" 122 3544 3552
+type(
+  unit
+)
+"odoc.ml" 123 3553 3562 "odoc.ml" 123 3553 3565
+type(
+  Odoc_gen.generator
+)
+ident(
+  def gen "odoc.ml" 124 3569 3575 "odoc.ml" 127 3717 3757
+)
+"odoc.ml" 123 3553 3557 "odoc.ml" 123 3553 3565
+type(
+  Odoc_gen.generator option
+)
+"odoc.ml" 124 3569 3579 "odoc.ml" 124 3569 3588
+type(
+  Odoc_gen.doc_generator
+)
+ident(
+  def generator "odoc.ml" 125 3629 3635 "odoc.ml" 127 3717 3757
+)
+"odoc.ml" 124 3569 3591 "odoc.ml" 124 3569 3621
+type(
+  Odoc_gen.generator -> Odoc_gen.doc_generator
+)
+ident(
+  ext_ref Odoc_gen.get_minimal_generator
+)
+"odoc.ml" 124 3569 3622 "odoc.ml" 124 3569 3625
+type(
+  Odoc_gen.generator
+)
+ident(
+  int_ref gen "odoc.ml" 123 3553 3562 "odoc.ml" 123 3553 3565
+)
+"odoc.ml" 124 3569 3591 "odoc.ml" 124 3569 3625
+call(
+  stack
+)
+type(
+  Odoc_gen.doc_generator
+)
+"odoc.ml" 125 3629 3635 "odoc.ml" 125 3629 3652
+type(
+  string -> unit
+)
+ident(
+  ext_ref Odoc_info.verbose
+)
+"odoc.ml" 125 3629 3653 "odoc.ml" 125 3629 3681
+type(
+  string
+)
+ident(
+  ext_ref Odoc_messages.generating_doc
+)
+"odoc.ml" 125 3629 3635 "odoc.ml" 125 3629 3681
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc.ml" 126 3683 3689 "odoc.ml" 126 3683 3698
+type(
+  Odoc_gen.doc_generator
+)
+ident(
+  int_ref generator "odoc.ml" 124 3569 3579 "odoc.ml" 124 3569 3588
+)
+"odoc.ml" 126 3683 3689 "odoc.ml" 126 3683 3707
+call(
+  stack
+)
+type(
+  Odoc_module.t_module list -> unit
+)
+"odoc.ml" 126 3683 3708 "odoc.ml" 126 3683 3715
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref modules "odoc.ml" 107 3201 3205 "odoc.ml" 107 3201 3212
+)
+"odoc.ml" 126 3683 3689 "odoc.ml" 126 3683 3715
+type(
+  unit
+)
+"odoc.ml" 127 3717 3723 "odoc.ml" 127 3717 3740
+type(
+  string -> unit
+)
+ident(
+  ext_ref Odoc_info.verbose
+)
+"odoc.ml" 127 3717 3741 "odoc.ml" 127 3717 3757
+type(
+  string
+)
+ident(
+  ext_ref Odoc_messages.ok
+)
+"odoc.ml" 127 3717 3723 "odoc.ml" 127 3717 3757
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc.ml" 126 3683 3689 "odoc.ml" 127 3717 3757
+type(
+  unit
+)
+"odoc.ml" 125 3629 3635 "odoc.ml" 127 3717 3757
+type(
+  unit
+)
+"odoc.ml" 124 3569 3575 "odoc.ml" 127 3717 3757
+type(
+  unit
+)
+"odoc.ml" 120 3490 3492 "odoc.ml" 127 3717 3757
+type(
+  unit
+)
+"odoc.ml" 130 3767 3772 "odoc.ml" 130 3767 3773
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc.ml" 130 3767 3773 "odoc.ml" 130 3767 3791
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc.ml" 130 3767 3772 "odoc.ml" 130 3767 3791
+type(
+  int
+)
+"odoc.ml" 130 3767 3792 "odoc.ml" 130 3767 3793
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"odoc.ml" 130 3767 3794 "odoc.ml" 130 3767 3795
+type(
+  int
+)
+"odoc.ml" 130 3767 3772 "odoc.ml" 130 3767 3795
+type(
+  bool
+)
+"odoc.ml" 132 3805 3808 "odoc.ml" 132 3805 3821
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"odoc.ml" 132 3805 3823 "odoc.ml" 132 3805 3851
+type(
+  int -> string
+)
+ident(
+  ext_ref Odoc_messages.errors_occured
+)
+"odoc.ml" 132 3805 3852 "odoc.ml" 132 3805 3853
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc.ml" 132 3805 3853 "odoc.ml" 132 3805 3871
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc.ml" 132 3805 3852 "odoc.ml" 132 3805 3871
+type(
+  int
+)
+"odoc.ml" 132 3805 3822 "odoc.ml" 132 3805 3872
+call(
+  stack
+)
+type(
+  string
+)
+"odoc.ml" 132 3805 3808 "odoc.ml" 132 3805 3872
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc.ml" 133 3875 3878 "odoc.ml" 133 3875 3882
+type(
+  int -> 'a
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"odoc.ml" 133 3875 3883 "odoc.ml" 133 3875 3884
+type(
+  int
+)
+"odoc.ml" 133 3875 3878 "odoc.ml" 133 3875 3884
+call(
+  stack
+)
+type(
+  'a
+)
+"odoc.ml" 131 3801 3803 "odoc.ml" 134 3885 3888
+type(
+  'a
+)
+"odoc.ml" 136 3896 3900 "odoc.ml" 136 3896 3904
+type(
+  int -> 'a
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"odoc.ml" 136 3896 3905 "odoc.ml" 136 3896 3906
+type(
+  int
+)
+"odoc.ml" 136 3896 3900 "odoc.ml" 136 3896 3906
+call(
+  stack
+)
+type(
+  'a
+)
+"odoc.ml" 130 3767 3769 "odoc.ml" 136 3896 3906
+type(
+  'a
+)

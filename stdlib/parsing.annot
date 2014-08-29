@@ -1,0 +1,2867 @@
+"parsing.ml" 76 2895 2904 "parsing.ml" 76 2895 2914
+type(
+  parser_output
+)
+"parsing.ml" 76 2895 2916 "parsing.ml" 76 2895 2933
+type(
+  parser_output
+)
+"parsing.ml" 76 2895 2935 "parsing.ml" 76 2895 2948
+type(
+  parser_output
+)
+"parsing.ml" 76 2895 2950 "parsing.ml" 76 2895 2963
+type(
+  parser_output
+)
+"parsing.ml" 77 2965 2974 "parsing.ml" 77 2965 2997
+type(
+  parser_output
+)
+"parsing.ml" 77 2965 2999 "parsing.ml" 77 2965 3018
+type(
+  parser_output
+)
+"parsing.ml" 76 2895 2903 "parsing.ml" 77 2965 3019
+type(
+  parser_output list
+)
+"parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+type(
+  parser_env
+)
+ident(
+  def env "parsing.ml" 104 3626 3626 "parsing.ml" 1 0 -1
+)
+"parsing.ml" 87 3219 3233 "parsing.ml" 87 3219 3243
+type(
+  int -> int -> int array
+)
+ident(
+  ext_ref Array.make
+)
+"parsing.ml" 87 3219 3244 "parsing.ml" 87 3219 3247
+type(
+  int
+)
+"parsing.ml" 87 3219 3248 "parsing.ml" 87 3219 3249
+type(
+  int
+)
+"parsing.ml" 87 3219 3233 "parsing.ml" 87 3219 3249
+type(
+  int array
+)
+"parsing.ml" 88 3251 3265 "parsing.ml" 88 3251 3275
+type(
+  int -> Obj.t -> Obj.t array
+)
+ident(
+  ext_ref Array.make
+)
+"parsing.ml" 88 3251 3276 "parsing.ml" 88 3251 3279
+type(
+  int
+)
+"parsing.ml" 88 3251 3281 "parsing.ml" 88 3251 3289
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"parsing.ml" 88 3251 3290 "parsing.ml" 88 3251 3292
+type(
+  unit
+)
+"parsing.ml" 88 3251 3280 "parsing.ml" 88 3251 3293
+type(
+  Obj.t
+)
+"parsing.ml" 88 3251 3265 "parsing.ml" 88 3251 3293
+type(
+  Obj.t array
+)
+"parsing.ml" 89 3295 3318 "parsing.ml" 89 3295 3328
+type(
+  int -> Lexing.position -> Lexing.position array
+)
+ident(
+  ext_ref Array.make
+)
+"parsing.ml" 89 3295 3329 "parsing.ml" 89 3295 3332
+type(
+  int
+)
+"parsing.ml" 89 3295 3333 "parsing.ml" 89 3295 3342
+type(
+  Lexing.position
+)
+ident(
+  ext_ref Lexing.dummy_pos
+)
+"parsing.ml" 89 3295 3318 "parsing.ml" 89 3295 3342
+type(
+  Lexing.position array
+)
+"parsing.ml" 90 3344 3365 "parsing.ml" 90 3344 3375
+type(
+  int -> Lexing.position -> Lexing.position array
+)
+ident(
+  ext_ref Array.make
+)
+"parsing.ml" 90 3344 3376 "parsing.ml" 90 3344 3379
+type(
+  int
+)
+"parsing.ml" 90 3344 3380 "parsing.ml" 90 3344 3389
+type(
+  Lexing.position
+)
+ident(
+  ext_ref Lexing.dummy_pos
+)
+"parsing.ml" 90 3344 3365 "parsing.ml" 90 3344 3389
+type(
+  Lexing.position array
+)
+"parsing.ml" 91 3391 3407 "parsing.ml" 91 3391 3410
+type(
+  int
+)
+"parsing.ml" 92 3412 3428 "parsing.ml" 92 3412 3429
+type(
+  int
+)
+"parsing.ml" 93 3431 3447 "parsing.ml" 93 3431 3448
+type(
+  int
+)
+"parsing.ml" 94 3450 3461 "parsing.ml" 94 3450 3469
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"parsing.ml" 94 3450 3470 "parsing.ml" 94 3450 3472
+type(
+  unit
+)
+"parsing.ml" 94 3450 3461 "parsing.ml" 94 3450 3472
+type(
+  Obj.t
+)
+"parsing.ml" 95 3474 3491 "parsing.ml" 95 3474 3500
+type(
+  Lexing.position
+)
+ident(
+  ext_ref Lexing.dummy_pos
+)
+"parsing.ml" 96 3502 3517 "parsing.ml" 96 3502 3526
+type(
+  Lexing.position
+)
+ident(
+  ext_ref Lexing.dummy_pos
+)
+"parsing.ml" 97 3528 3538 "parsing.ml" 97 3528 3539
+type(
+  int
+)
+"parsing.ml" 98 3541 3556 "parsing.ml" 98 3541 3557
+type(
+  int
+)
+"parsing.ml" 99 3559 3577 "parsing.ml" 99 3559 3578
+type(
+  int
+)
+"parsing.ml" 100 3580 3589 "parsing.ml" 100 3580 3590
+type(
+  int
+)
+"parsing.ml" 101 3592 3604 "parsing.ml" 101 3592 3605
+type(
+  int
+)
+"parsing.ml" 102 3607 3621 "parsing.ml" 102 3607 3622
+type(
+  int
+)
+"parsing.ml" 87 3219 3221 "parsing.ml" 102 3607 3624
+type(
+  parser_env
+)
+"parsing.ml" 104 3626 3630 "parsing.ml" 104 3626 3641
+type(
+  unit -> unit
+)
+ident(
+  def grow_stacks "parsing.ml" 121 4249 4249 "parsing.ml" 1 0 -1
+)
+"parsing.ml" 104 3626 3641 "parsing.ml" 104 3626 3643
+type(
+  unit
+)
+"parsing.ml" 105 3646 3652 "parsing.ml" 105 3646 3659
+type(
+  int
+)
+ident(
+  def oldsize "parsing.ml" 106 3679 3681 "parsing.ml" 119 4219 4247
+)
+"parsing.ml" 105 3646 3662 "parsing.ml" 105 3646 3665
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 105 3646 3662 "parsing.ml" 105 3646 3675
+type(
+  int
+)
+"parsing.ml" 106 3679 3685 "parsing.ml" 106 3679 3692
+type(
+  int
+)
+ident(
+  def newsize "parsing.ml" 107 3710 3712 "parsing.ml" 119 4219 4247
+)
+"parsing.ml" 106 3679 3695 "parsing.ml" 106 3679 3702
+type(
+  int
+)
+ident(
+  int_ref oldsize "parsing.ml" 105 3646 3652 "parsing.ml" 105 3646 3659
+)
+"parsing.ml" 106 3679 3703 "parsing.ml" 106 3679 3704
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"parsing.ml" 106 3679 3705 "parsing.ml" 106 3679 3706
+type(
+  int
+)
+"parsing.ml" 106 3679 3695 "parsing.ml" 106 3679 3706
+type(
+  int
+)
+"parsing.ml" 107 3710 3716 "parsing.ml" 107 3710 3721
+type(
+  int array
+)
+ident(
+  def new_s "parsing.ml" 111 3887 3891 "parsing.ml" 119 4219 4247
+)
+"parsing.ml" 107 3710 3724 "parsing.ml" 107 3710 3734
+type(
+  int -> int -> int array
+)
+ident(
+  ext_ref Array.make
+)
+"parsing.ml" 107 3710 3735 "parsing.ml" 107 3710 3742
+type(
+  int
+)
+ident(
+  int_ref newsize "parsing.ml" 106 3679 3685 "parsing.ml" 106 3679 3692
+)
+"parsing.ml" 107 3710 3743 "parsing.ml" 107 3710 3744
+type(
+  int
+)
+"parsing.ml" 107 3710 3724 "parsing.ml" 107 3710 3744
+type(
+  int array
+)
+"parsing.ml" 108 3745 3751 "parsing.ml" 108 3745 3756
+type(
+  Obj.t array
+)
+ident(
+  def new_v "parsing.ml" 111 3887 3891 "parsing.ml" 119 4219 4247
+)
+"parsing.ml" 108 3745 3759 "parsing.ml" 108 3745 3769
+type(
+  int -> Obj.t -> Obj.t array
+)
+ident(
+  ext_ref Array.make
+)
+"parsing.ml" 108 3745 3770 "parsing.ml" 108 3745 3777
+type(
+  int
+)
+ident(
+  int_ref newsize "parsing.ml" 106 3679 3685 "parsing.ml" 106 3679 3692
+)
+"parsing.ml" 108 3745 3779 "parsing.ml" 108 3745 3787
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"parsing.ml" 108 3745 3788 "parsing.ml" 108 3745 3790
+type(
+  unit
+)
+"parsing.ml" 108 3745 3778 "parsing.ml" 108 3745 3791
+type(
+  Obj.t
+)
+"parsing.ml" 108 3745 3759 "parsing.ml" 108 3745 3791
+type(
+  Obj.t array
+)
+"parsing.ml" 109 3792 3798 "parsing.ml" 109 3792 3807
+type(
+  Lexing.position array
+)
+ident(
+  def new_start "parsing.ml" 111 3887 3891 "parsing.ml" 119 4219 4247
+)
+"parsing.ml" 109 3792 3810 "parsing.ml" 109 3792 3820
+type(
+  int -> Lexing.position -> Lexing.position array
+)
+ident(
+  ext_ref Array.make
+)
+"parsing.ml" 109 3792 3821 "parsing.ml" 109 3792 3828
+type(
+  int
+)
+ident(
+  int_ref newsize "parsing.ml" 106 3679 3685 "parsing.ml" 106 3679 3692
+)
+"parsing.ml" 109 3792 3829 "parsing.ml" 109 3792 3838
+type(
+  Lexing.position
+)
+ident(
+  ext_ref Lexing.dummy_pos
+)
+"parsing.ml" 109 3792 3810 "parsing.ml" 109 3792 3838
+type(
+  Lexing.position array
+)
+"parsing.ml" 110 3839 3845 "parsing.ml" 110 3839 3852
+type(
+  Lexing.position array
+)
+ident(
+  def new_end "parsing.ml" 111 3887 3891 "parsing.ml" 119 4219 4247
+)
+"parsing.ml" 110 3839 3855 "parsing.ml" 110 3839 3865
+type(
+  int -> Lexing.position -> Lexing.position array
+)
+ident(
+  ext_ref Array.make
+)
+"parsing.ml" 110 3839 3866 "parsing.ml" 110 3839 3873
+type(
+  int
+)
+ident(
+  int_ref newsize "parsing.ml" 106 3679 3685 "parsing.ml" 106 3679 3692
+)
+"parsing.ml" 110 3839 3874 "parsing.ml" 110 3839 3883
+type(
+  Lexing.position
+)
+ident(
+  ext_ref Lexing.dummy_pos
+)
+"parsing.ml" 110 3839 3855 "parsing.ml" 110 3839 3883
+type(
+  Lexing.position array
+)
+"parsing.ml" 111 3887 3891 "parsing.ml" 111 3887 3901
+type(
+  int array -> int -> int array -> int -> int -> unit
+)
+ident(
+  ext_ref Array.blit
+)
+"parsing.ml" 111 3887 3902 "parsing.ml" 111 3887 3905
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 111 3887 3902 "parsing.ml" 111 3887 3913
+type(
+  int array
+)
+"parsing.ml" 111 3887 3914 "parsing.ml" 111 3887 3915
+type(
+  int
+)
+"parsing.ml" 111 3887 3916 "parsing.ml" 111 3887 3921
+type(
+  int array
+)
+ident(
+  int_ref new_s "parsing.ml" 107 3710 3716 "parsing.ml" 107 3710 3721
+)
+"parsing.ml" 111 3887 3922 "parsing.ml" 111 3887 3923
+type(
+  int
+)
+"parsing.ml" 111 3887 3924 "parsing.ml" 111 3887 3931
+type(
+  int
+)
+ident(
+  int_ref oldsize "parsing.ml" 105 3646 3652 "parsing.ml" 105 3646 3659
+)
+"parsing.ml" 111 3887 3891 "parsing.ml" 111 3887 3931
+call(
+  stack
+)
+type(
+  unit
+)
+"parsing.ml" 112 3933 3937 "parsing.ml" 112 3933 3940
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 112 3933 3952 "parsing.ml" 112 3933 3957
+type(
+  int array
+)
+ident(
+  int_ref new_s "parsing.ml" 107 3710 3716 "parsing.ml" 107 3710 3721
+)
+"parsing.ml" 112 3933 3937 "parsing.ml" 112 3933 3957
+type(
+  unit
+)
+"parsing.ml" 113 3959 3963 "parsing.ml" 113 3959 3973
+type(
+  Obj.t array -> int -> Obj.t array -> int -> int -> unit
+)
+ident(
+  ext_ref Array.blit
+)
+"parsing.ml" 113 3959 3974 "parsing.ml" 113 3959 3977
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 113 3959 3974 "parsing.ml" 113 3959 3985
+type(
+  Obj.t array
+)
+"parsing.ml" 113 3959 3986 "parsing.ml" 113 3959 3987
+type(
+  int
+)
+"parsing.ml" 113 3959 3988 "parsing.ml" 113 3959 3993
+type(
+  Obj.t array
+)
+ident(
+  int_ref new_v "parsing.ml" 108 3745 3751 "parsing.ml" 108 3745 3756
+)
+"parsing.ml" 113 3959 3994 "parsing.ml" 113 3959 3995
+type(
+  int
+)
+"parsing.ml" 113 3959 3996 "parsing.ml" 113 3959 4003
+type(
+  int
+)
+ident(
+  int_ref oldsize "parsing.ml" 105 3646 3652 "parsing.ml" 105 3646 3659
+)
+"parsing.ml" 113 3959 3963 "parsing.ml" 113 3959 4003
+call(
+  stack
+)
+type(
+  unit
+)
+"parsing.ml" 114 4005 4009 "parsing.ml" 114 4005 4012
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 114 4005 4024 "parsing.ml" 114 4005 4029
+type(
+  Obj.t array
+)
+ident(
+  int_ref new_v "parsing.ml" 108 3745 3751 "parsing.ml" 108 3745 3756
+)
+"parsing.ml" 114 4005 4009 "parsing.ml" 114 4005 4029
+type(
+  unit
+)
+"parsing.ml" 115 4031 4035 "parsing.ml" 115 4031 4045
+type(
+  Lexing.position array -> int -> Lexing.position array -> int -> int -> unit
+)
+ident(
+  ext_ref Array.blit
+)
+"parsing.ml" 115 4031 4046 "parsing.ml" 115 4031 4049
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 115 4031 4046 "parsing.ml" 115 4031 4066
+type(
+  Lexing.position array
+)
+"parsing.ml" 115 4031 4067 "parsing.ml" 115 4031 4068
+type(
+  int
+)
+"parsing.ml" 115 4031 4069 "parsing.ml" 115 4031 4078
+type(
+  Lexing.position array
+)
+ident(
+  int_ref new_start "parsing.ml" 109 3792 3798 "parsing.ml" 109 3792 3807
+)
+"parsing.ml" 115 4031 4079 "parsing.ml" 115 4031 4080
+type(
+  int
+)
+"parsing.ml" 115 4031 4081 "parsing.ml" 115 4031 4088
+type(
+  int
+)
+ident(
+  int_ref oldsize "parsing.ml" 105 3646 3652 "parsing.ml" 105 3646 3659
+)
+"parsing.ml" 115 4031 4035 "parsing.ml" 115 4031 4088
+call(
+  stack
+)
+type(
+  unit
+)
+"parsing.ml" 116 4090 4094 "parsing.ml" 116 4090 4097
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 116 4090 4118 "parsing.ml" 116 4090 4127
+type(
+  Lexing.position array
+)
+ident(
+  int_ref new_start "parsing.ml" 109 3792 3798 "parsing.ml" 109 3792 3807
+)
+"parsing.ml" 116 4090 4094 "parsing.ml" 116 4090 4127
+type(
+  unit
+)
+"parsing.ml" 117 4129 4133 "parsing.ml" 117 4129 4143
+type(
+  Lexing.position array -> int -> Lexing.position array -> int -> int -> unit
+)
+ident(
+  ext_ref Array.blit
+)
+"parsing.ml" 117 4129 4144 "parsing.ml" 117 4129 4147
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 117 4129 4144 "parsing.ml" 117 4129 4162
+type(
+  Lexing.position array
+)
+"parsing.ml" 117 4129 4163 "parsing.ml" 117 4129 4164
+type(
+  int
+)
+"parsing.ml" 117 4129 4165 "parsing.ml" 117 4129 4172
+type(
+  Lexing.position array
+)
+ident(
+  int_ref new_end "parsing.ml" 110 3839 3845 "parsing.ml" 110 3839 3852
+)
+"parsing.ml" 117 4129 4173 "parsing.ml" 117 4129 4174
+type(
+  int
+)
+"parsing.ml" 117 4129 4175 "parsing.ml" 117 4129 4182
+type(
+  int
+)
+ident(
+  int_ref oldsize "parsing.ml" 105 3646 3652 "parsing.ml" 105 3646 3659
+)
+"parsing.ml" 117 4129 4133 "parsing.ml" 117 4129 4182
+call(
+  stack
+)
+type(
+  unit
+)
+"parsing.ml" 118 4184 4188 "parsing.ml" 118 4184 4191
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 118 4184 4210 "parsing.ml" 118 4184 4217
+type(
+  Lexing.position array
+)
+ident(
+  int_ref new_end "parsing.ml" 110 3839 3845 "parsing.ml" 110 3839 3852
+)
+"parsing.ml" 118 4184 4188 "parsing.ml" 118 4184 4217
+type(
+  unit
+)
+"parsing.ml" 119 4219 4223 "parsing.ml" 119 4219 4226
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 119 4219 4240 "parsing.ml" 119 4219 4247
+type(
+  int
+)
+ident(
+  int_ref newsize "parsing.ml" 106 3679 3685 "parsing.ml" 106 3679 3692
+)
+"parsing.ml" 119 4219 4223 "parsing.ml" 119 4219 4247
+type(
+  unit
+)
+"parsing.ml" 118 4184 4188 "parsing.ml" 119 4219 4247
+type(
+  unit
+)
+"parsing.ml" 117 4129 4133 "parsing.ml" 119 4219 4247
+type(
+  unit
+)
+"parsing.ml" 116 4090 4094 "parsing.ml" 119 4219 4247
+type(
+  unit
+)
+"parsing.ml" 115 4031 4035 "parsing.ml" 119 4219 4247
+type(
+  unit
+)
+"parsing.ml" 114 4005 4009 "parsing.ml" 119 4219 4247
+type(
+  unit
+)
+"parsing.ml" 113 3959 3963 "parsing.ml" 119 4219 4247
+type(
+  unit
+)
+"parsing.ml" 112 3933 3937 "parsing.ml" 119 4219 4247
+type(
+  unit
+)
+"parsing.ml" 111 3887 3891 "parsing.ml" 119 4219 4247
+type(
+  unit
+)
+"parsing.ml" 107 3710 3712 "parsing.ml" 119 4219 4247
+type(
+  unit
+)
+"parsing.ml" 106 3679 3681 "parsing.ml" 119 4219 4247
+type(
+  unit
+)
+"parsing.ml" 105 3646 3648 "parsing.ml" 119 4219 4247
+type(
+  unit
+)
+"parsing.ml" 121 4249 4253 "parsing.ml" 121 4249 4265
+type(
+  unit -> unit
+)
+ident(
+  def clear_parser "parsing.ml" 125 4353 4353 "parsing.ml" 1 0 -1
+)
+"parsing.ml" 121 4249 4265 "parsing.ml" 121 4249 4267
+type(
+  unit
+)
+"parsing.ml" 122 4270 4272 "parsing.ml" 122 4270 4282
+type(
+  Obj.t array -> int -> int -> Obj.t -> unit
+)
+ident(
+  ext_ref Array.fill
+)
+"parsing.ml" 122 4270 4283 "parsing.ml" 122 4270 4286
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 122 4270 4283 "parsing.ml" 122 4270 4294
+type(
+  Obj.t array
+)
+"parsing.ml" 122 4270 4295 "parsing.ml" 122 4270 4296
+type(
+  int
+)
+"parsing.ml" 122 4270 4297 "parsing.ml" 122 4270 4300
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 122 4270 4297 "parsing.ml" 122 4270 4310
+type(
+  int
+)
+"parsing.ml" 122 4270 4312 "parsing.ml" 122 4270 4320
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"parsing.ml" 122 4270 4321 "parsing.ml" 122 4270 4323
+type(
+  unit
+)
+"parsing.ml" 122 4270 4311 "parsing.ml" 122 4270 4324
+type(
+  Obj.t
+)
+"parsing.ml" 122 4270 4272 "parsing.ml" 122 4270 4324
+call(
+  stack
+)
+type(
+  unit
+)
+"parsing.ml" 123 4326 4328 "parsing.ml" 123 4326 4331
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 123 4326 4340 "parsing.ml" 123 4326 4348
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"parsing.ml" 123 4326 4349 "parsing.ml" 123 4326 4351
+type(
+  unit
+)
+"parsing.ml" 123 4326 4340 "parsing.ml" 123 4326 4351
+type(
+  Obj.t
+)
+"parsing.ml" 123 4326 4328 "parsing.ml" 123 4326 4351
+type(
+  unit
+)
+"parsing.ml" 122 4270 4272 "parsing.ml" 123 4326 4351
+type(
+  unit
+)
+"parsing.ml" 125 4353 4357 "parsing.ml" 125 4353 4378
+type(
+  (Obj.t -> bool) ref
+)
+ident(
+  def current_lookahead_fun "parsing.ml" 127 4413 4413 "parsing.ml" 1 0 -1
+)
+"parsing.ml" 125 4353 4381 "parsing.ml" 125 4353 4384
+type(
+  (Obj.t -> bool) -> (Obj.t -> bool) ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"parsing.ml" 125 4353 4391 "parsing.ml" 125 4353 4392
+type(
+  Obj.t
+)
+ident(
+  def x "parsing.ml" 125 4353 4405 "parsing.ml" 125 4353 4410
+)
+"parsing.ml" 125 4353 4405 "parsing.ml" 125 4353 4410
+type(
+  bool
+)
+"parsing.ml" 125 4353 4385 "parsing.ml" 125 4353 4411
+type(
+  Obj.t -> bool
+)
+"parsing.ml" 125 4353 4381 "parsing.ml" 125 4353 4411
+type(
+  (Obj.t -> bool) ref
+)
+"parsing.ml" 127 4413 4417 "parsing.ml" 127 4413 4424
+type(
+  parse_tables -> int -> (Lexing.lexbuf -> 'a) -> Lexing.lexbuf -> 'b
+)
+ident(
+  def yyparse "parsing.ml" 183 6199 6199 "parsing.ml" 1 0 -1
+)
+"parsing.ml" 127 4413 4425 "parsing.ml" 127 4413 4431
+type(
+  parse_tables
+)
+ident(
+  def tables "parsing.ml" 127 4413 4432 "parsing.ml" 181 6180 6197
+)
+"parsing.ml" 127 4413 4432 "parsing.ml" 127 4413 4437
+type(
+  int
+)
+ident(
+  def start "parsing.ml" 127 4413 4438 "parsing.ml" 181 6180 6197
+)
+"parsing.ml" 127 4413 4438 "parsing.ml" 127 4413 4443
+type(
+  Lexing.lexbuf -> 'a
+)
+ident(
+  def lexer "parsing.ml" 127 4413 4444 "parsing.ml" 181 6180 6197
+)
+"parsing.ml" 127 4413 4444 "parsing.ml" 127 4413 4450
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "parsing.ml" 128 4453 4455 "parsing.ml" 181 6180 6197
+)
+"parsing.ml" 128 4453 4463 "parsing.ml" 128 4453 4467
+type(
+  parser_input -> Obj.t -> 'c
+)
+ident(
+  def loop "parsing.ml" 128 4453 4455 "parsing.ml" 181 6180 6197
+)
+"parsing.ml" 128 4453 4468 "parsing.ml" 128 4453 4471
+type(
+  parser_input
+)
+ident(
+  def cmd "parsing.ml" 128 4453 4472 "parsing.ml" 150 5245 5286
+)
+"parsing.ml" 128 4453 4472 "parsing.ml" 128 4453 4475
+type(
+  Obj.t
+)
+ident(
+  def arg "parsing.ml" 129 4478 4482 "parsing.ml" 150 5245 5286
+)
+"parsing.ml" 129 4478 4488 "parsing.ml" 129 4478 4500
+type(
+  parse_tables -> parser_env -> parser_input -> Obj.t -> parser_output
+)
+ident(
+  int_ref parse_engine "parsing.ml" 79 3021 3021 "parsing.ml" 81 3118 3143
+)
+"parsing.ml" 129 4478 4501 "parsing.ml" 129 4478 4507
+type(
+  parse_tables
+)
+ident(
+  int_ref tables "parsing.ml" 127 4413 4425 "parsing.ml" 127 4413 4431
+)
+"parsing.ml" 129 4478 4508 "parsing.ml" 129 4478 4511
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 129 4478 4512 "parsing.ml" 129 4478 4515
+type(
+  parser_input
+)
+ident(
+  int_ref cmd "parsing.ml" 128 4453 4468 "parsing.ml" 128 4453 4471
+)
+"parsing.ml" 129 4478 4516 "parsing.ml" 129 4478 4519
+type(
+  Obj.t
+)
+ident(
+  int_ref arg "parsing.ml" 128 4453 4472 "parsing.ml" 128 4453 4475
+)
+"parsing.ml" 129 4478 4488 "parsing.ml" 129 4478 4519
+type(
+  parser_output
+)
+"parsing.ml" 130 4525 4531 "parsing.ml" 130 4525 4541
+type(
+  parser_output
+)
+"parsing.ml" 131 4545 4557 "parsing.ml" 131 4545 4558
+type(
+  Obj.t
+)
+ident(
+  def t "parsing.ml" 132 4587 4595 "parsing.ml" 134 4676 4701
+)
+"parsing.ml" 131 4545 4561 "parsing.ml" 131 4545 4569
+type(
+  'a -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"parsing.ml" 131 4545 4570 "parsing.ml" 131 4545 4575
+type(
+  Lexing.lexbuf -> 'a
+)
+ident(
+  int_ref lexer "parsing.ml" 127 4413 4438 "parsing.ml" 127 4413 4443
+)
+"parsing.ml" 131 4545 4576 "parsing.ml" 131 4545 4582
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "parsing.ml" 127 4413 4444 "parsing.ml" 127 4413 4450
+)
+"parsing.ml" 131 4545 4569 "parsing.ml" 131 4545 4583
+call(
+  stack
+)
+type(
+  'a
+)
+"parsing.ml" 131 4545 4561 "parsing.ml" 131 4545 4583
+type(
+  Obj.t
+)
+"parsing.ml" 132 4587 4595 "parsing.ml" 132 4587 4598
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 132 4587 4613 "parsing.ml" 132 4587 4619
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "parsing.ml" 127 4413 4444 "parsing.ml" 127 4413 4450
+)
+"parsing.ml" 132 4587 4613 "parsing.ml" 132 4587 4631
+type(
+  Lexing.position
+)
+"parsing.ml" 132 4587 4595 "parsing.ml" 132 4587 4631
+type(
+  unit
+)
+"parsing.ml" 133 4633 4641 "parsing.ml" 133 4633 4644
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 133 4633 4657 "parsing.ml" 133 4633 4663
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "parsing.ml" 127 4413 4444 "parsing.ml" 127 4413 4450
+)
+"parsing.ml" 133 4633 4657 "parsing.ml" 133 4633 4674
+type(
+  Lexing.position
+)
+"parsing.ml" 133 4633 4641 "parsing.ml" 133 4633 4674
+type(
+  unit
+)
+"parsing.ml" 134 4676 4684 "parsing.ml" 134 4676 4688
+type(
+  parser_input -> Obj.t -> 'c
+)
+ident(
+  int_ref loop "parsing.ml" 128 4453 4463 "parsing.ml" 128 4453 4467
+)
+"parsing.ml" 134 4676 4689 "parsing.ml" 134 4676 4699
+type(
+  parser_input
+)
+"parsing.ml" 134 4676 4700 "parsing.ml" 134 4676 4701
+type(
+  Obj.t
+)
+ident(
+  int_ref t "parsing.ml" 131 4545 4557 "parsing.ml" 131 4545 4558
+)
+"parsing.ml" 134 4676 4684 "parsing.ml" 134 4676 4701
+call(
+  tail
+)
+type(
+  'c
+)
+"parsing.ml" 133 4633 4641 "parsing.ml" 134 4676 4701
+type(
+  'c
+)
+"parsing.ml" 132 4587 4595 "parsing.ml" 134 4676 4701
+type(
+  'c
+)
+"parsing.ml" 131 4545 4553 "parsing.ml" 134 4676 4701
+type(
+  'c
+)
+"parsing.ml" 135 4702 4708 "parsing.ml" 135 4702 4725
+type(
+  parser_output
+)
+"parsing.ml" 136 4729 4737 "parsing.ml" 136 4729 4742
+type(
+  exn -> 'c
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"parsing.ml" 136 4729 4743 "parsing.ml" 136 4729 4754
+type(
+  exn
+)
+"parsing.ml" 136 4729 4737 "parsing.ml" 136 4729 4754
+type(
+  'c
+)
+"parsing.ml" 137 4755 4761 "parsing.ml" 137 4755 4784
+type(
+  parser_output
+)
+"parsing.ml" 138 4788 4801 "parsing.ml" 138 4788 4807
+type(
+  parser_input
+)
+ident(
+  def action "parsing.ml" 143 4984 4992 "parsing.ml" 143 4984 5009
+)
+"parsing.ml" 138 4788 4809 "parsing.ml" 138 4788 4814
+type(
+  Obj.t
+)
+ident(
+  def value "parsing.ml" 143 4984 4992 "parsing.ml" 143 4984 5009
+)
+"parsing.ml" 138 4788 4800 "parsing.ml" 138 4788 4815
+type(
+  parser_input * Obj.t
+)
+"parsing.ml" 140 4832 4845 "parsing.ml" 140 4832 4869
+type(
+  parser_input
+)
+"parsing.ml" 140 4832 4871 "parsing.ml" 140 4832 4877
+type(
+  parse_tables
+)
+ident(
+  int_ref tables "parsing.ml" 127 4413 4425 "parsing.ml" 127 4413 4431
+)
+"parsing.ml" 140 4832 4871 "parsing.ml" 140 4832 4885
+type(
+  (parser_env -> Obj.t) array
+)
+"parsing.ml" 140 4832 4887 "parsing.ml" 140 4832 4890
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 140 4832 4887 "parsing.ml" 140 4832 4902
+type(
+  int
+)
+"parsing.ml" 140 4832 4871 "parsing.ml" 140 4832 4903
+type(
+  parser_env -> Obj.t
+)
+"parsing.ml" 140 4832 4904 "parsing.ml" 140 4832 4907
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 140 4832 4871 "parsing.ml" 140 4832 4907
+call(
+  stack
+)
+type(
+  Obj.t
+)
+"parsing.ml" 140 4832 4844 "parsing.ml" 140 4832 4908
+type(
+  parser_input * Obj.t
+)
+"parsing.ml" 141 4909 4924 "parsing.ml" 141 4909 4935
+type(
+  exn
+)
+"parsing.ml" 142 4939 4952 "parsing.ml" 142 4939 4966
+type(
+  parser_input
+)
+"parsing.ml" 142 4939 4968 "parsing.ml" 142 4939 4976
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"parsing.ml" 142 4939 4977 "parsing.ml" 142 4939 4979
+type(
+  unit
+)
+"parsing.ml" 142 4939 4968 "parsing.ml" 142 4939 4979
+type(
+  Obj.t
+)
+"parsing.ml" 142 4939 4951 "parsing.ml" 142 4939 4980
+type(
+  parser_input * Obj.t
+)
+"parsing.ml" 139 4818 4828 "parsing.ml" 142 4939 4980
+type(
+  parser_input * Obj.t
+)
+"parsing.ml" 143 4984 4992 "parsing.ml" 143 4984 4996
+type(
+  parser_input -> Obj.t -> 'c
+)
+ident(
+  int_ref loop "parsing.ml" 128 4453 4463 "parsing.ml" 128 4453 4467
+)
+"parsing.ml" 143 4984 4997 "parsing.ml" 143 4984 5003
+type(
+  parser_input
+)
+ident(
+  int_ref action "parsing.ml" 138 4788 4801 "parsing.ml" 138 4788 4807
+)
+"parsing.ml" 143 4984 5004 "parsing.ml" 143 4984 5009
+type(
+  Obj.t
+)
+ident(
+  int_ref value "parsing.ml" 138 4788 4809 "parsing.ml" 138 4788 4814
+)
+"parsing.ml" 143 4984 4992 "parsing.ml" 143 4984 5009
+call(
+  tail
+)
+type(
+  'c
+)
+"parsing.ml" 138 4788 4796 "parsing.ml" 143 4984 5009
+type(
+  'c
+)
+"parsing.ml" 144 5010 5016 "parsing.ml" 144 5010 5029
+type(
+  parser_output
+)
+"parsing.ml" 145 5033 5041 "parsing.ml" 145 5033 5052
+type(
+  unit -> unit
+)
+ident(
+  int_ref grow_stacks "parsing.ml" 104 3626 3630 "parsing.ml" 104 3626 3641
+)
+"parsing.ml" 145 5033 5052 "parsing.ml" 145 5033 5054
+type(
+  unit
+)
+"parsing.ml" 145 5033 5041 "parsing.ml" 145 5033 5054
+call(
+  stack
+)
+type(
+  unit
+)
+"parsing.ml" 145 5033 5056 "parsing.ml" 145 5033 5060
+type(
+  parser_input -> Obj.t -> 'c
+)
+ident(
+  int_ref loop "parsing.ml" 128 4453 4463 "parsing.ml" 128 4453 4467
+)
+"parsing.ml" 145 5033 5061 "parsing.ml" 145 5033 5075
+type(
+  parser_input
+)
+"parsing.ml" 145 5033 5077 "parsing.ml" 145 5033 5085
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"parsing.ml" 145 5033 5086 "parsing.ml" 145 5033 5088
+type(
+  unit
+)
+"parsing.ml" 145 5033 5076 "parsing.ml" 145 5033 5089
+type(
+  Obj.t
+)
+"parsing.ml" 145 5033 5056 "parsing.ml" 145 5033 5089
+call(
+  tail
+)
+type(
+  'c
+)
+"parsing.ml" 145 5033 5041 "parsing.ml" 145 5033 5089
+type(
+  'c
+)
+"parsing.ml" 146 5090 5096 "parsing.ml" 146 5090 5109
+type(
+  parser_output
+)
+"parsing.ml" 147 5113 5121 "parsing.ml" 147 5113 5132
+type(
+  unit -> unit
+)
+ident(
+  int_ref grow_stacks "parsing.ml" 104 3626 3630 "parsing.ml" 104 3626 3641
+)
+"parsing.ml" 147 5113 5132 "parsing.ml" 147 5113 5134
+type(
+  unit
+)
+"parsing.ml" 147 5113 5121 "parsing.ml" 147 5113 5134
+call(
+  stack
+)
+type(
+  unit
+)
+"parsing.ml" 147 5113 5136 "parsing.ml" 147 5113 5140
+type(
+  parser_input -> Obj.t -> 'c
+)
+ident(
+  int_ref loop "parsing.ml" 128 4453 4463 "parsing.ml" 128 4453 4467
+)
+"parsing.ml" 147 5113 5141 "parsing.ml" 147 5113 5155
+type(
+  parser_input
+)
+"parsing.ml" 147 5113 5157 "parsing.ml" 147 5113 5165
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"parsing.ml" 147 5113 5166 "parsing.ml" 147 5113 5168
+type(
+  unit
+)
+"parsing.ml" 147 5113 5156 "parsing.ml" 147 5113 5169
+type(
+  Obj.t
+)
+"parsing.ml" 147 5113 5136 "parsing.ml" 147 5113 5169
+call(
+  tail
+)
+type(
+  'c
+)
+"parsing.ml" 147 5113 5121 "parsing.ml" 147 5113 5169
+type(
+  'c
+)
+"parsing.ml" 148 5170 5176 "parsing.ml" 148 5170 5195
+type(
+  parser_output
+)
+"parsing.ml" 149 5199 5207 "parsing.ml" 149 5199 5213
+type(
+  parse_tables
+)
+ident(
+  int_ref tables "parsing.ml" 127 4413 4425 "parsing.ml" 127 4413 4431
+)
+"parsing.ml" 149 5199 5207 "parsing.ml" 149 5199 5228
+type(
+  string -> unit
+)
+"parsing.ml" 149 5199 5229 "parsing.ml" 149 5199 5243
+type(
+  string
+)
+"parsing.ml" 149 5199 5207 "parsing.ml" 149 5199 5243
+call(
+  stack
+)
+type(
+  unit
+)
+"parsing.ml" 150 5245 5253 "parsing.ml" 150 5245 5257
+type(
+  parser_input -> Obj.t -> 'c
+)
+ident(
+  int_ref loop "parsing.ml" 128 4453 4463 "parsing.ml" 128 4453 4467
+)
+"parsing.ml" 150 5245 5258 "parsing.ml" 150 5245 5272
+type(
+  parser_input
+)
+"parsing.ml" 150 5245 5274 "parsing.ml" 150 5245 5282
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"parsing.ml" 150 5245 5283 "parsing.ml" 150 5245 5285
+type(
+  unit
+)
+"parsing.ml" 150 5245 5273 "parsing.ml" 150 5245 5286
+type(
+  Obj.t
+)
+"parsing.ml" 150 5245 5253 "parsing.ml" 150 5245 5286
+call(
+  tail
+)
+type(
+  'c
+)
+"parsing.ml" 149 5199 5207 "parsing.ml" 150 5245 5286
+type(
+  'c
+)
+"parsing.ml" 129 4478 4482 "parsing.ml" 150 5245 5286
+type(
+  'c
+)
+"parsing.ml" 151 5290 5296 "parsing.ml" 151 5290 5304
+type(
+  int
+)
+ident(
+  def init_asp "parsing.ml" 158 5504 5506 "parsing.ml" 181 6180 6197
+)
+"parsing.ml" 151 5290 5307 "parsing.ml" 151 5290 5310
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 151 5290 5307 "parsing.ml" 151 5290 5314
+type(
+  int
+)
+"parsing.ml" 152 5315 5321 "parsing.ml" 152 5315 5328
+type(
+  int
+)
+ident(
+  def init_sp "parsing.ml" 158 5504 5506 "parsing.ml" 181 6180 6197
+)
+"parsing.ml" 152 5315 5331 "parsing.ml" 152 5315 5334
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 152 5315 5331 "parsing.ml" 152 5315 5337
+type(
+  int
+)
+"parsing.ml" 153 5338 5344 "parsing.ml" 153 5338 5358
+type(
+  int
+)
+ident(
+  def init_stackbase "parsing.ml" 158 5504 5506 "parsing.ml" 181 6180 6197
+)
+"parsing.ml" 153 5338 5361 "parsing.ml" 153 5338 5364
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 153 5338 5361 "parsing.ml" 153 5338 5374
+type(
+  int
+)
+"parsing.ml" 154 5375 5381 "parsing.ml" 154 5375 5391
+type(
+  int
+)
+ident(
+  def init_state "parsing.ml" 158 5504 5506 "parsing.ml" 181 6180 6197
+)
+"parsing.ml" 154 5375 5394 "parsing.ml" 154 5375 5397
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 154 5375 5394 "parsing.ml" 154 5375 5403
+type(
+  int
+)
+"parsing.ml" 155 5404 5410 "parsing.ml" 155 5404 5424
+type(
+  int
+)
+ident(
+  def init_curr_char "parsing.ml" 158 5504 5506 "parsing.ml" 181 6180 6197
+)
+"parsing.ml" 155 5404 5427 "parsing.ml" 155 5404 5430
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 155 5404 5427 "parsing.ml" 155 5404 5440
+type(
+  int
+)
+"parsing.ml" 156 5441 5447 "parsing.ml" 156 5441 5456
+type(
+  Obj.t
+)
+ident(
+  def init_lval "parsing.ml" 158 5504 5506 "parsing.ml" 181 6180 6197
+)
+"parsing.ml" 156 5441 5459 "parsing.ml" 156 5441 5462
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 156 5441 5459 "parsing.ml" 156 5441 5467
+type(
+  Obj.t
+)
+"parsing.ml" 157 5468 5474 "parsing.ml" 157 5468 5486
+type(
+  int
+)
+ident(
+  def init_errflag "parsing.ml" 158 5504 5506 "parsing.ml" 181 6180 6197
+)
+"parsing.ml" 157 5468 5489 "parsing.ml" 157 5468 5492
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 157 5468 5489 "parsing.ml" 157 5468 5500
+type(
+  int
+)
+"parsing.ml" 158 5504 5506 "parsing.ml" 158 5504 5509
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 158 5504 5523 "parsing.ml" 158 5504 5526
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 158 5504 5523 "parsing.ml" 158 5504 5529
+type(
+  int
+)
+"parsing.ml" 158 5504 5530 "parsing.ml" 158 5504 5531
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"parsing.ml" 158 5504 5532 "parsing.ml" 158 5504 5533
+type(
+  int
+)
+"parsing.ml" 158 5504 5523 "parsing.ml" 158 5504 5533
+type(
+  int
+)
+"parsing.ml" 158 5504 5506 "parsing.ml" 158 5504 5533
+type(
+  unit
+)
+"parsing.ml" 159 5535 5537 "parsing.ml" 159 5535 5540
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 159 5535 5554 "parsing.ml" 159 5535 5559
+type(
+  int
+)
+ident(
+  int_ref start "parsing.ml" 127 4413 4432 "parsing.ml" 127 4413 4437
+)
+"parsing.ml" 159 5535 5537 "parsing.ml" 159 5535 5559
+type(
+  unit
+)
+"parsing.ml" 160 5561 5563 "parsing.ml" 160 5561 5566
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 160 5561 5579 "parsing.ml" 160 5561 5585
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "parsing.ml" 127 4413 4444 "parsing.ml" 127 4413 4450
+)
+"parsing.ml" 160 5561 5579 "parsing.ml" 160 5561 5596
+type(
+  Lexing.position
+)
+"parsing.ml" 160 5561 5563 "parsing.ml" 160 5561 5596
+type(
+  unit
+)
+"parsing.ml" 162 5604 5608 "parsing.ml" 162 5604 5612
+type(
+  parser_input -> Obj.t -> 'b
+)
+ident(
+  int_ref loop "parsing.ml" 128 4453 4463 "parsing.ml" 128 4453 4467
+)
+"parsing.ml" 162 5604 5613 "parsing.ml" 162 5604 5618
+type(
+  parser_input
+)
+"parsing.ml" 162 5604 5620 "parsing.ml" 162 5604 5628
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"parsing.ml" 162 5604 5629 "parsing.ml" 162 5604 5631
+type(
+  unit
+)
+"parsing.ml" 162 5604 5619 "parsing.ml" 162 5604 5632
+type(
+  Obj.t
+)
+"parsing.ml" 162 5604 5608 "parsing.ml" 162 5604 5632
+call(
+  stack
+)
+type(
+  'b
+)
+"parsing.ml" 163 5633 5640 "parsing.ml" 163 5633 5643
+type(
+  exn
+)
+ident(
+  def exn "parsing.ml" 164 5647 5651 "parsing.ml" 181 6180 6197
+)
+"parsing.ml" 164 5647 5655 "parsing.ml" 164 5647 5664
+type(
+  int
+)
+ident(
+  def curr_char "parsing.ml" 165 5684 5688 "parsing.ml" 181 6180 6197
+)
+"parsing.ml" 164 5647 5667 "parsing.ml" 164 5647 5670
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 164 5647 5667 "parsing.ml" 164 5647 5680
+type(
+  int
+)
+"parsing.ml" 165 5684 5688 "parsing.ml" 165 5684 5691
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 165 5684 5699 "parsing.ml" 165 5684 5707
+type(
+  int
+)
+ident(
+  int_ref init_asp "parsing.ml" 151 5290 5296 "parsing.ml" 151 5290 5304
+)
+"parsing.ml" 165 5684 5688 "parsing.ml" 165 5684 5707
+type(
+  unit
+)
+"parsing.ml" 166 5709 5713 "parsing.ml" 166 5709 5716
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 166 5709 5723 "parsing.ml" 166 5709 5730
+type(
+  int
+)
+ident(
+  int_ref init_sp "parsing.ml" 152 5315 5321 "parsing.ml" 152 5315 5328
+)
+"parsing.ml" 166 5709 5713 "parsing.ml" 166 5709 5730
+type(
+  unit
+)
+"parsing.ml" 167 5732 5736 "parsing.ml" 167 5732 5739
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 167 5732 5753 "parsing.ml" 167 5732 5767
+type(
+  int
+)
+ident(
+  int_ref init_stackbase "parsing.ml" 153 5338 5344 "parsing.ml" 153 5338 5358
+)
+"parsing.ml" 167 5732 5736 "parsing.ml" 167 5732 5767
+type(
+  unit
+)
+"parsing.ml" 168 5769 5773 "parsing.ml" 168 5769 5776
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 168 5769 5786 "parsing.ml" 168 5769 5796
+type(
+  int
+)
+ident(
+  int_ref init_state "parsing.ml" 154 5375 5381 "parsing.ml" 154 5375 5391
+)
+"parsing.ml" 168 5769 5773 "parsing.ml" 168 5769 5796
+type(
+  unit
+)
+"parsing.ml" 169 5798 5802 "parsing.ml" 169 5798 5805
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 169 5798 5819 "parsing.ml" 169 5798 5833
+type(
+  int
+)
+ident(
+  int_ref init_curr_char "parsing.ml" 155 5404 5410 "parsing.ml" 155 5404 5424
+)
+"parsing.ml" 169 5798 5802 "parsing.ml" 169 5798 5833
+type(
+  unit
+)
+"parsing.ml" 170 5835 5839 "parsing.ml" 170 5835 5842
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 170 5835 5851 "parsing.ml" 170 5835 5860
+type(
+  Obj.t
+)
+ident(
+  int_ref init_lval "parsing.ml" 156 5441 5447 "parsing.ml" 156 5441 5456
+)
+"parsing.ml" 170 5835 5839 "parsing.ml" 170 5835 5860
+type(
+  unit
+)
+"parsing.ml" 171 5862 5866 "parsing.ml" 171 5862 5869
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 171 5862 5881 "parsing.ml" 171 5862 5893
+type(
+  int
+)
+ident(
+  int_ref init_errflag "parsing.ml" 157 5468 5474 "parsing.ml" 157 5468 5486
+)
+"parsing.ml" 171 5862 5866 "parsing.ml" 171 5862 5893
+type(
+  unit
+)
+"parsing.ml" 172 5895 5905 "parsing.ml" 172 5895 5908
+type(
+  exn
+)
+ident(
+  int_ref exn "parsing.ml" 163 5633 5640 "parsing.ml" 163 5633 5643
+)
+"parsing.ml" 173 5914 5927 "parsing.ml" 173 5914 5928
+type(
+  Obj.t
+)
+ident(
+  def v "parsing.ml" 174 5932 5940 "parsing.ml" 174 5932 5951
+)
+"parsing.ml" 173 5914 5920 "parsing.ml" 173 5914 5928
+type(
+  exn
+)
+"parsing.ml" 174 5932 5940 "parsing.ml" 174 5932 5949
+type(
+  Obj.t -> 'b
+)
+ident(
+  ext_ref Obj.magic
+)
+"parsing.ml" 174 5932 5950 "parsing.ml" 174 5932 5951
+type(
+  Obj.t
+)
+ident(
+  int_ref v "parsing.ml" 173 5914 5927 "parsing.ml" 173 5914 5928
+)
+"parsing.ml" 174 5932 5940 "parsing.ml" 174 5932 5951
+type(
+  'b
+)
+"parsing.ml" 175 5952 5958 "parsing.ml" 175 5952 5959
+type(
+  exn
+)
+"parsing.ml" 176 5963 5971 "parsing.ml" 176 5963 5992
+type(
+  (Obj.t -> bool) ref
+)
+ident(
+  int_ref current_lookahead_fun "parsing.ml" 125 4353 4357 "parsing.ml" 125 4353 4378
+)
+"parsing.ml" 176 5963 5993 "parsing.ml" 176 5963 5995
+type(
+  (Obj.t -> bool) ref -> (Obj.t -> bool) -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"parsing.ml" 177 5996 6011 "parsing.ml" 177 5996 6014
+type(
+  Obj.t
+)
+ident(
+  def tok "parsing.ml" 178 6018 6030 "parsing.ml" 180 6113 6177
+)
+"parsing.ml" 178 6018 6033 "parsing.ml" 178 6018 6045
+type(
+  Obj.t -> bool
+)
+ident(
+  ext_ref Obj.is_block
+)
+"parsing.ml" 178 6018 6046 "parsing.ml" 178 6018 6049
+type(
+  Obj.t
+)
+ident(
+  int_ref tok "parsing.ml" 177 5996 6011 "parsing.ml" 177 5996 6014
+)
+"parsing.ml" 178 6018 6033 "parsing.ml" 178 6018 6049
+type(
+  bool
+)
+"parsing.ml" 179 6050 6067 "parsing.ml" 179 6050 6073
+type(
+  parse_tables
+)
+ident(
+  int_ref tables "parsing.ml" 127 4413 4425 "parsing.ml" 127 4413 4431
+)
+"parsing.ml" 179 6050 6067 "parsing.ml" 179 6050 6086
+type(
+  int array
+)
+"parsing.ml" 179 6050 6088 "parsing.ml" 179 6050 6095
+type(
+  Obj.t -> int
+)
+ident(
+  ext_ref Obj.tag
+)
+"parsing.ml" 179 6050 6096 "parsing.ml" 179 6050 6099
+type(
+  Obj.t
+)
+ident(
+  int_ref tok "parsing.ml" 177 5996 6011 "parsing.ml" 177 5996 6014
+)
+"parsing.ml" 179 6050 6088 "parsing.ml" 179 6050 6099
+type(
+  int
+)
+"parsing.ml" 179 6050 6067 "parsing.ml" 179 6050 6100
+type(
+  int
+)
+"parsing.ml" 179 6050 6101 "parsing.ml" 179 6050 6102
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"parsing.ml" 179 6050 6103 "parsing.ml" 179 6050 6112
+type(
+  int
+)
+ident(
+  int_ref curr_char "parsing.ml" 164 5647 5655 "parsing.ml" 164 5647 5664
+)
+"parsing.ml" 179 6050 6067 "parsing.ml" 179 6050 6112
+type(
+  bool
+)
+"parsing.ml" 180 6113 6130 "parsing.ml" 180 6113 6136
+type(
+  parse_tables
+)
+ident(
+  int_ref tables "parsing.ml" 127 4413 4425 "parsing.ml" 127 4413 4431
+)
+"parsing.ml" 180 6113 6130 "parsing.ml" 180 6113 6149
+type(
+  int array
+)
+"parsing.ml" 180 6113 6151 "parsing.ml" 180 6113 6160
+type(
+  Obj.t -> int
+)
+ident(
+  ext_ref Obj.magic
+)
+"parsing.ml" 180 6113 6161 "parsing.ml" 180 6113 6164
+type(
+  Obj.t
+)
+ident(
+  int_ref tok "parsing.ml" 177 5996 6011 "parsing.ml" 177 5996 6014
+)
+"parsing.ml" 180 6113 6151 "parsing.ml" 180 6113 6164
+type(
+  int
+)
+"parsing.ml" 180 6113 6130 "parsing.ml" 180 6113 6165
+type(
+  int
+)
+"parsing.ml" 180 6113 6166 "parsing.ml" 180 6113 6167
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"parsing.ml" 180 6113 6168 "parsing.ml" 180 6113 6177
+type(
+  int
+)
+ident(
+  int_ref curr_char "parsing.ml" 164 5647 5655 "parsing.ml" 164 5647 5664
+)
+"parsing.ml" 180 6113 6130 "parsing.ml" 180 6113 6177
+type(
+  bool
+)
+"parsing.ml" 178 6018 6030 "parsing.ml" 180 6113 6177
+type(
+  bool
+)
+"parsing.ml" 177 5996 6006 "parsing.ml" 180 6113 6178
+type(
+  Obj.t -> bool
+)
+"parsing.ml" 176 5963 5971 "parsing.ml" 180 6113 6178
+type(
+  unit
+)
+"parsing.ml" 181 6180 6188 "parsing.ml" 181 6180 6193
+type(
+  exn -> 'b
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"parsing.ml" 181 6180 6194 "parsing.ml" 181 6180 6197
+type(
+  exn
+)
+ident(
+  int_ref exn "parsing.ml" 163 5633 5640 "parsing.ml" 163 5633 5643
+)
+"parsing.ml" 181 6180 6188 "parsing.ml" 181 6180 6197
+type(
+  'b
+)
+"parsing.ml" 176 5963 5971 "parsing.ml" 181 6180 6197
+type(
+  'b
+)
+"parsing.ml" 172 5895 5899 "parsing.ml" 181 6180 6197
+type(
+  'b
+)
+"parsing.ml" 171 5862 5866 "parsing.ml" 181 6180 6197
+type(
+  'b
+)
+"parsing.ml" 170 5835 5839 "parsing.ml" 181 6180 6197
+type(
+  'b
+)
+"parsing.ml" 169 5798 5802 "parsing.ml" 181 6180 6197
+type(
+  'b
+)
+"parsing.ml" 168 5769 5773 "parsing.ml" 181 6180 6197
+type(
+  'b
+)
+"parsing.ml" 167 5732 5736 "parsing.ml" 181 6180 6197
+type(
+  'b
+)
+"parsing.ml" 166 5709 5713 "parsing.ml" 181 6180 6197
+type(
+  'b
+)
+"parsing.ml" 165 5684 5688 "parsing.ml" 181 6180 6197
+type(
+  'b
+)
+"parsing.ml" 164 5647 5651 "parsing.ml" 181 6180 6197
+type(
+  'b
+)
+"parsing.ml" 161 5598 5600 "parsing.ml" 181 6180 6197
+type(
+  'b
+)
+"parsing.ml" 160 5561 5563 "parsing.ml" 181 6180 6197
+type(
+  'b
+)
+"parsing.ml" 159 5535 5537 "parsing.ml" 181 6180 6197
+type(
+  'b
+)
+"parsing.ml" 158 5504 5506 "parsing.ml" 181 6180 6197
+type(
+  'b
+)
+"parsing.ml" 151 5290 5292 "parsing.ml" 181 6180 6197
+type(
+  'b
+)
+"parsing.ml" 128 4453 4455 "parsing.ml" 181 6180 6197
+type(
+  'b
+)
+"parsing.ml" 183 6199 6203 "parsing.ml" 183 6199 6211
+type(
+  parser_env -> int -> 'a
+)
+ident(
+  def peek_val "parsing.ml" 186 6259 6259 "parsing.ml" 1 0 -1
+)
+"parsing.ml" 183 6199 6212 "parsing.ml" 183 6199 6215
+type(
+  parser_env
+)
+ident(
+  def env "parsing.ml" 183 6199 6216 "parsing.ml" 184 6220 6257
+)
+"parsing.ml" 183 6199 6216 "parsing.ml" 183 6199 6217
+type(
+  int
+)
+ident(
+  def n "parsing.ml" 184 6220 6222 "parsing.ml" 184 6220 6257
+)
+"parsing.ml" 184 6220 6222 "parsing.ml" 184 6220 6231
+type(
+  Obj.t -> 'a
+)
+ident(
+  ext_ref Obj.magic
+)
+"parsing.ml" 184 6220 6232 "parsing.ml" 184 6220 6235
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 183 6199 6212 "parsing.ml" 183 6199 6215
+)
+"parsing.ml" 184 6220 6232 "parsing.ml" 184 6220 6243
+type(
+  Obj.t array
+)
+"parsing.ml" 184 6220 6245 "parsing.ml" 184 6220 6248
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 183 6199 6212 "parsing.ml" 183 6199 6215
+)
+"parsing.ml" 184 6220 6245 "parsing.ml" 184 6220 6252
+type(
+  int
+)
+"parsing.ml" 184 6220 6253 "parsing.ml" 184 6220 6254
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"parsing.ml" 184 6220 6255 "parsing.ml" 184 6220 6256
+type(
+  int
+)
+ident(
+  int_ref n "parsing.ml" 183 6199 6216 "parsing.ml" 183 6199 6217
+)
+"parsing.ml" 184 6220 6245 "parsing.ml" 184 6220 6256
+type(
+  int
+)
+"parsing.ml" 184 6220 6232 "parsing.ml" 184 6220 6257
+type(
+  Obj.t
+)
+"parsing.ml" 184 6220 6222 "parsing.ml" 184 6220 6257
+type(
+  'a
+)
+"parsing.ml" 186 6259 6263 "parsing.ml" 186 6259 6279
+type(
+  unit -> Lexing.position
+)
+ident(
+  def symbol_start_pos "parsing.ml" 197 6559 6559 "parsing.ml" 1 0 -1
+)
+"parsing.ml" 186 6259 6280 "parsing.ml" 186 6259 6282
+type(
+  unit
+)
+"parsing.ml" 187 6285 6295 "parsing.ml" 187 6285 6299
+type(
+  int -> Lexing.position
+)
+ident(
+  def loop "parsing.ml" 187 6285 6287 "parsing.ml" 195 6536 6555
+)
+"parsing.ml" 187 6285 6300 "parsing.ml" 187 6285 6301
+type(
+  int
+)
+ident(
+  def i "parsing.ml" 188 6304 6308 "parsing.ml" 193 6523 6530
+)
+"parsing.ml" 188 6304 6311 "parsing.ml" 188 6304 6312
+type(
+  int
+)
+ident(
+  int_ref i "parsing.ml" 187 6285 6300 "parsing.ml" 187 6285 6301
+)
+"parsing.ml" 188 6304 6313 "parsing.ml" 188 6304 6315
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"parsing.ml" 188 6304 6316 "parsing.ml" 188 6304 6317
+type(
+  int
+)
+"parsing.ml" 188 6304 6311 "parsing.ml" 188 6304 6317
+type(
+  bool
+)
+"parsing.ml" 188 6304 6323 "parsing.ml" 188 6304 6326
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 188 6304 6323 "parsing.ml" 188 6304 6341
+type(
+  Lexing.position array
+)
+"parsing.ml" 188 6304 6343 "parsing.ml" 188 6304 6346
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 188 6304 6343 "parsing.ml" 188 6304 6350
+type(
+  int
+)
+"parsing.ml" 188 6304 6323 "parsing.ml" 188 6304 6351
+type(
+  Lexing.position
+)
+"parsing.ml" 190 6367 6377 "parsing.ml" 190 6367 6379
+type(
+  Lexing.position
+)
+ident(
+  def st "parsing.ml" 191 6424 6430 "parsing.ml" 192 6479 6522
+)
+"parsing.ml" 190 6367 6382 "parsing.ml" 190 6367 6385
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 190 6367 6382 "parsing.ml" 190 6367 6402
+type(
+  Lexing.position array
+)
+"parsing.ml" 190 6367 6404 "parsing.ml" 190 6367 6407
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 190 6367 6404 "parsing.ml" 190 6367 6411
+type(
+  int
+)
+"parsing.ml" 190 6367 6412 "parsing.ml" 190 6367 6413
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"parsing.ml" 190 6367 6414 "parsing.ml" 190 6367 6415
+type(
+  int
+)
+ident(
+  int_ref i "parsing.ml" 187 6285 6300 "parsing.ml" 187 6285 6301
+)
+"parsing.ml" 190 6367 6404 "parsing.ml" 190 6367 6415
+type(
+  int
+)
+"parsing.ml" 190 6367 6416 "parsing.ml" 190 6367 6417
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"parsing.ml" 190 6367 6418 "parsing.ml" 190 6367 6419
+type(
+  int
+)
+"parsing.ml" 190 6367 6404 "parsing.ml" 190 6367 6419
+type(
+  int
+)
+"parsing.ml" 190 6367 6382 "parsing.ml" 190 6367 6420
+type(
+  Lexing.position
+)
+"parsing.ml" 191 6424 6434 "parsing.ml" 191 6424 6436
+type(
+  Lexing.position
+)
+ident(
+  def en "parsing.ml" 192 6479 6485 "parsing.ml" 192 6479 6522
+)
+"parsing.ml" 191 6424 6439 "parsing.ml" 191 6424 6442
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 191 6424 6439 "parsing.ml" 191 6424 6457
+type(
+  Lexing.position array
+)
+"parsing.ml" 191 6424 6459 "parsing.ml" 191 6424 6462
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 191 6424 6459 "parsing.ml" 191 6424 6466
+type(
+  int
+)
+"parsing.ml" 191 6424 6467 "parsing.ml" 191 6424 6468
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"parsing.ml" 191 6424 6469 "parsing.ml" 191 6424 6470
+type(
+  int
+)
+ident(
+  int_ref i "parsing.ml" 187 6285 6300 "parsing.ml" 187 6285 6301
+)
+"parsing.ml" 191 6424 6459 "parsing.ml" 191 6424 6470
+type(
+  int
+)
+"parsing.ml" 191 6424 6471 "parsing.ml" 191 6424 6472
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"parsing.ml" 191 6424 6473 "parsing.ml" 191 6424 6474
+type(
+  int
+)
+"parsing.ml" 191 6424 6459 "parsing.ml" 191 6424 6474
+type(
+  int
+)
+"parsing.ml" 191 6424 6439 "parsing.ml" 191 6424 6475
+type(
+  Lexing.position
+)
+"parsing.ml" 192 6479 6488 "parsing.ml" 192 6479 6490
+type(
+  Lexing.position
+)
+ident(
+  int_ref st "parsing.ml" 190 6367 6377 "parsing.ml" 190 6367 6379
+)
+"parsing.ml" 192 6479 6491 "parsing.ml" 192 6479 6493
+type(
+  Lexing.position -> Lexing.position -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"parsing.ml" 192 6479 6494 "parsing.ml" 192 6479 6496
+type(
+  Lexing.position
+)
+ident(
+  int_ref en "parsing.ml" 191 6424 6434 "parsing.ml" 191 6424 6436
+)
+"parsing.ml" 192 6479 6488 "parsing.ml" 192 6479 6496
+type(
+  bool
+)
+"parsing.ml" 192 6479 6502 "parsing.ml" 192 6479 6504
+type(
+  Lexing.position
+)
+ident(
+  int_ref st "parsing.ml" 190 6367 6377 "parsing.ml" 190 6367 6379
+)
+"parsing.ml" 192 6479 6510 "parsing.ml" 192 6479 6514
+type(
+  int -> Lexing.position
+)
+ident(
+  int_ref loop "parsing.ml" 187 6285 6295 "parsing.ml" 187 6285 6299
+)
+"parsing.ml" 192 6479 6516 "parsing.ml" 192 6479 6517
+type(
+  int
+)
+ident(
+  int_ref i "parsing.ml" 187 6285 6300 "parsing.ml" 187 6285 6301
+)
+"parsing.ml" 192 6479 6518 "parsing.ml" 192 6479 6519
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"parsing.ml" 192 6479 6520 "parsing.ml" 192 6479 6521
+type(
+  int
+)
+"parsing.ml" 192 6479 6515 "parsing.ml" 192 6479 6522
+type(
+  int
+)
+"parsing.ml" 192 6479 6510 "parsing.ml" 192 6479 6522
+call(
+  tail
+)
+type(
+  Lexing.position
+)
+"parsing.ml" 192 6479 6485 "parsing.ml" 192 6479 6522
+type(
+  Lexing.position
+)
+"parsing.ml" 191 6424 6430 "parsing.ml" 192 6479 6522
+type(
+  Lexing.position
+)
+"parsing.ml" 189 6352 6361 "parsing.ml" 193 6523 6530
+type(
+  Lexing.position
+)
+"parsing.ml" 188 6304 6308 "parsing.ml" 193 6523 6530
+type(
+  Lexing.position
+)
+"parsing.ml" 195 6536 6538 "parsing.ml" 195 6536 6542
+type(
+  int -> Lexing.position
+)
+ident(
+  int_ref loop "parsing.ml" 187 6285 6295 "parsing.ml" 187 6285 6299
+)
+"parsing.ml" 195 6536 6543 "parsing.ml" 195 6536 6546
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 195 6536 6543 "parsing.ml" 195 6536 6555
+type(
+  int
+)
+"parsing.ml" 195 6536 6538 "parsing.ml" 195 6536 6555
+call(
+  tail
+)
+type(
+  Lexing.position
+)
+"parsing.ml" 187 6285 6287 "parsing.ml" 195 6536 6555
+type(
+  Lexing.position
+)
+"parsing.ml" 197 6559 6563 "parsing.ml" 197 6559 6577
+type(
+  unit -> Lexing.position
+)
+ident(
+  def symbol_end_pos "parsing.ml" 198 6614 6614 "parsing.ml" 1 0 -1
+)
+"parsing.ml" 197 6559 6578 "parsing.ml" 197 6559 6580
+type(
+  unit
+)
+"parsing.ml" 197 6559 6583 "parsing.ml" 197 6559 6586
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 197 6559 6583 "parsing.ml" 197 6559 6601
+type(
+  Lexing.position array
+)
+"parsing.ml" 197 6559 6603 "parsing.ml" 197 6559 6606
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 197 6559 6603 "parsing.ml" 197 6559 6610
+type(
+  int
+)
+"parsing.ml" 197 6559 6583 "parsing.ml" 197 6559 6611
+type(
+  Lexing.position
+)
+"parsing.ml" 198 6614 6618 "parsing.ml" 198 6614 6631
+type(
+  int -> Lexing.position
+)
+ident(
+  def rhs_start_pos "parsing.ml" 199 6690 6690 "parsing.ml" 1 0 -1
+)
+"parsing.ml" 198 6614 6632 "parsing.ml" 198 6614 6633
+type(
+  int
+)
+ident(
+  def n "parsing.ml" 198 6614 6636 "parsing.ml" 198 6614 6687
+)
+"parsing.ml" 198 6614 6636 "parsing.ml" 198 6614 6639
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 198 6614 6636 "parsing.ml" 198 6614 6656
+type(
+  Lexing.position array
+)
+"parsing.ml" 198 6614 6658 "parsing.ml" 198 6614 6661
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 198 6614 6658 "parsing.ml" 198 6614 6665
+type(
+  int
+)
+"parsing.ml" 198 6614 6666 "parsing.ml" 198 6614 6667
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"parsing.ml" 198 6614 6669 "parsing.ml" 198 6614 6672
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 198 6614 6669 "parsing.ml" 198 6614 6681
+type(
+  int
+)
+"parsing.ml" 198 6614 6682 "parsing.ml" 198 6614 6683
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"parsing.ml" 198 6614 6684 "parsing.ml" 198 6614 6685
+type(
+  int
+)
+ident(
+  int_ref n "parsing.ml" 198 6614 6632 "parsing.ml" 198 6614 6633
+)
+"parsing.ml" 198 6614 6668 "parsing.ml" 198 6614 6686
+type(
+  int
+)
+"parsing.ml" 198 6614 6658 "parsing.ml" 198 6614 6686
+type(
+  int
+)
+"parsing.ml" 198 6614 6636 "parsing.ml" 198 6614 6687
+type(
+  Lexing.position
+)
+"parsing.ml" 199 6690 6694 "parsing.ml" 199 6690 6705
+type(
+  int -> Lexing.position
+)
+ident(
+  def rhs_end_pos "parsing.ml" 201 6763 6763 "parsing.ml" 1 0 -1
+)
+"parsing.ml" 199 6690 6706 "parsing.ml" 199 6690 6707
+type(
+  int
+)
+ident(
+  def n "parsing.ml" 199 6690 6710 "parsing.ml" 199 6690 6759
+)
+"parsing.ml" 199 6690 6710 "parsing.ml" 199 6690 6713
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 199 6690 6710 "parsing.ml" 199 6690 6728
+type(
+  Lexing.position array
+)
+"parsing.ml" 199 6690 6730 "parsing.ml" 199 6690 6733
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 199 6690 6730 "parsing.ml" 199 6690 6737
+type(
+  int
+)
+"parsing.ml" 199 6690 6738 "parsing.ml" 199 6690 6739
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"parsing.ml" 199 6690 6741 "parsing.ml" 199 6690 6744
+type(
+  parser_env
+)
+ident(
+  int_ref env "parsing.ml" 86 3209 3213 "parsing.ml" 86 3209 3216
+)
+"parsing.ml" 199 6690 6741 "parsing.ml" 199 6690 6753
+type(
+  int
+)
+"parsing.ml" 199 6690 6754 "parsing.ml" 199 6690 6755
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"parsing.ml" 199 6690 6756 "parsing.ml" 199 6690 6757
+type(
+  int
+)
+ident(
+  int_ref n "parsing.ml" 199 6690 6706 "parsing.ml" 199 6690 6707
+)
+"parsing.ml" 199 6690 6740 "parsing.ml" 199 6690 6758
+type(
+  int
+)
+"parsing.ml" 199 6690 6730 "parsing.ml" 199 6690 6758
+type(
+  int
+)
+"parsing.ml" 199 6690 6710 "parsing.ml" 199 6690 6759
+type(
+  Lexing.position
+)
+"parsing.ml" 201 6763 6767 "parsing.ml" 201 6763 6779
+type(
+  unit -> int
+)
+ident(
+  def symbol_start "parsing.ml" 202 6818 6818 "parsing.ml" 1 0 -1
+)
+"parsing.ml" 201 6763 6780 "parsing.ml" 201 6763 6782
+type(
+  unit
+)
+"parsing.ml" 201 6763 6786 "parsing.ml" 201 6763 6802
+type(
+  unit -> Lexing.position
+)
+ident(
+  int_ref symbol_start_pos "parsing.ml" 186 6259 6263 "parsing.ml" 186 6259 6279
+)
+"parsing.ml" 201 6763 6803 "parsing.ml" 201 6763 6805
+type(
+  unit
+)
+"parsing.ml" 201 6763 6785 "parsing.ml" 201 6763 6806
+call(
+  stack
+)
+type(
+  Lexing.position
+)
+"parsing.ml" 201 6763 6785 "parsing.ml" 201 6763 6815
+type(
+  int
+)
+"parsing.ml" 202 6818 6822 "parsing.ml" 202 6818 6832
+type(
+  unit -> int
+)
+ident(
+  def symbol_end "parsing.ml" 203 6869 6869 "parsing.ml" 1 0 -1
+)
+"parsing.ml" 202 6818 6833 "parsing.ml" 202 6818 6835
+type(
+  unit
+)
+"parsing.ml" 202 6818 6839 "parsing.ml" 202 6818 6853
+type(
+  unit -> Lexing.position
+)
+ident(
+  int_ref symbol_end_pos "parsing.ml" 197 6559 6563 "parsing.ml" 197 6559 6577
+)
+"parsing.ml" 202 6818 6854 "parsing.ml" 202 6818 6856
+type(
+  unit
+)
+"parsing.ml" 202 6818 6838 "parsing.ml" 202 6818 6857
+call(
+  stack
+)
+type(
+  Lexing.position
+)
+"parsing.ml" 202 6818 6838 "parsing.ml" 202 6818 6866
+type(
+  int
+)
+"parsing.ml" 203 6869 6873 "parsing.ml" 203 6869 6882
+type(
+  int -> int
+)
+ident(
+  def rhs_start "parsing.ml" 204 6916 6916 "parsing.ml" 1 0 -1
+)
+"parsing.ml" 203 6869 6883 "parsing.ml" 203 6869 6884
+type(
+  int
+)
+ident(
+  def n "parsing.ml" 203 6869 6887 "parsing.ml" 203 6869 6913
+)
+"parsing.ml" 203 6869 6888 "parsing.ml" 203 6869 6901
+type(
+  int -> Lexing.position
+)
+ident(
+  int_ref rhs_start_pos "parsing.ml" 198 6614 6618 "parsing.ml" 198 6614 6631
+)
+"parsing.ml" 203 6869 6902 "parsing.ml" 203 6869 6903
+type(
+  int
+)
+ident(
+  int_ref n "parsing.ml" 203 6869 6883 "parsing.ml" 203 6869 6884
+)
+"parsing.ml" 203 6869 6887 "parsing.ml" 203 6869 6904
+call(
+  stack
+)
+type(
+  Lexing.position
+)
+"parsing.ml" 203 6869 6887 "parsing.ml" 203 6869 6913
+type(
+  int
+)
+"parsing.ml" 204 6916 6920 "parsing.ml" 204 6916 6927
+type(
+  int -> int
+)
+ident(
+  def rhs_end "parsing.ml" 206 6960 6960 "parsing.ml" 1 0 -1
+)
+"parsing.ml" 204 6916 6928 "parsing.ml" 204 6916 6929
+type(
+  int
+)
+ident(
+  def n "parsing.ml" 204 6916 6932 "parsing.ml" 204 6916 6956
+)
+"parsing.ml" 204 6916 6933 "parsing.ml" 204 6916 6944
+type(
+  int -> Lexing.position
+)
+ident(
+  int_ref rhs_end_pos "parsing.ml" 199 6690 6694 "parsing.ml" 199 6690 6705
+)
+"parsing.ml" 204 6916 6945 "parsing.ml" 204 6916 6946
+type(
+  int
+)
+ident(
+  int_ref n "parsing.ml" 204 6916 6928 "parsing.ml" 204 6916 6929
+)
+"parsing.ml" 204 6916 6932 "parsing.ml" 204 6916 6947
+call(
+  stack
+)
+type(
+  Lexing.position
+)
+"parsing.ml" 204 6916 6932 "parsing.ml" 204 6916 6956
+type(
+  int
+)
+"parsing.ml" 206 6960 6964 "parsing.ml" 206 6960 6984
+type(
+  'a -> bool
+)
+ident(
+  def is_current_lookahead "parsing.ml" 209 7033 7033 "parsing.ml" 1 0 -1
+)
+"parsing.ml" 206 6960 6985 "parsing.ml" 206 6960 6988
+type(
+  'a
+)
+ident(
+  def tok "parsing.ml" 207 6991 6993 "parsing.ml" 207 6991 7031
+)
+"parsing.ml" 207 6991 6994 "parsing.ml" 207 6991 6995
+type(
+  (Obj.t -> bool) ref -> Obj.t -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"parsing.ml" 207 6991 6995 "parsing.ml" 207 6991 7016
+type(
+  (Obj.t -> bool) ref
+)
+ident(
+  int_ref current_lookahead_fun "parsing.ml" 125 4353 4357 "parsing.ml" 125 4353 4378
+)
+"parsing.ml" 207 6991 6993 "parsing.ml" 207 6991 7017
+type(
+  Obj.t -> bool
+)
+"parsing.ml" 207 6991 7018 "parsing.ml" 207 6991 7026
+type(
+  'a -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"parsing.ml" 207 6991 7027 "parsing.ml" 207 6991 7030
+type(
+  'a
+)
+ident(
+  int_ref tok "parsing.ml" 206 6960 6985 "parsing.ml" 206 6960 6988
+)
+"parsing.ml" 207 6991 7017 "parsing.ml" 207 6991 7031
+type(
+  Obj.t
+)
+"parsing.ml" 207 6991 6993 "parsing.ml" 207 6991 7031
+call(
+  tail
+)
+type(
+  bool
+)
+"parsing.ml" 209 7033 7037 "parsing.ml" 209 7033 7048
+type(
+  string -> unit
+)
+ident(
+  def parse_error "parsing.ml" 209 7033 7068 "parsing.ml" 1 0 -1
+)
+"parsing.ml" 209 7033 7050 "parsing.ml" 209 7033 7053
+type(
+  string
+)
+ident(
+  def msg "parsing.ml" 209 7033 7066 "parsing.ml" 209 7033 7068
+)
+"parsing.ml" 209 7033 7066 "parsing.ml" 209 7033 7068
+type(
+  unit
+)

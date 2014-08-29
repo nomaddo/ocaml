@@ -1,0 +1,3534 @@
+"symbols.ml" 20 1015 1034 "symbols.ml" 20 1015 1050
+call(
+  stack
+)
+"symbols.ml" 22 1052 1056 "symbols.ml" 22 1052 1063
+type(
+  string list ref
+)
+ident(
+  def modules "symbols.ml" 25 1092 1092 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 23 1066 1068 "symbols.ml" 23 1066 1071
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"symbols.ml" 23 1066 1073 "symbols.ml" 23 1066 1075
+type(
+  string list
+)
+type(
+  string list
+)
+"symbols.ml" 23 1066 1068 "symbols.ml" 23 1066 1090
+type(
+  string list ref
+)
+"symbols.ml" 25 1092 1096 "symbols.ml" 25 1092 1115
+type(
+  StringSet.elt list ref
+)
+ident(
+  def program_source_dirs "symbols.ml" 28 1144 1144 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 26 1118 1120 "symbols.ml" 26 1118 1123
+type(
+  StringSet.elt list -> StringSet.elt list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"symbols.ml" 26 1118 1125 "symbols.ml" 26 1118 1127
+type(
+  StringSet.elt list
+)
+type(
+  string list
+)
+"symbols.ml" 26 1118 1120 "symbols.ml" 26 1118 1142
+type(
+  StringSet.elt list ref
+)
+"symbols.ml" 28 1144 1148 "symbols.ml" 28 1144 1154
+type(
+  Instruct.debug_event list ref
+)
+ident(
+  def events "symbols.ml" 30 1187 1187 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 29 1157 1159 "symbols.ml" 29 1157 1162
+type(
+  Instruct.debug_event list -> Instruct.debug_event list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"symbols.ml" 29 1157 1164 "symbols.ml" 29 1157 1166
+type(
+  Instruct.debug_event list
+)
+type(
+  Instruct.debug_event list
+)
+"symbols.ml" 29 1157 1159 "symbols.ml" 29 1157 1186
+type(
+  Instruct.debug_event list ref
+)
+"symbols.ml" 30 1187 1191 "symbols.ml" 30 1187 1203
+type(
+  (int, Instruct.debug_event) Hashtbl.t
+)
+ident(
+  def events_by_pc "symbols.ml" 32 1260 1260 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 31 1206 1209 "symbols.ml" 31 1206 1223
+type(
+  ?random:bool -> int -> (int, Instruct.debug_event) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"symbols.ml" 31 1206 1224 "symbols.ml" 31 1206 1227
+type(
+  int
+)
+"symbols.ml" 31 1206 1209 "symbols.ml" 31 1206 1227
+call(
+  stack
+)
+type(
+  (int, Instruct.debug_event) Hashtbl.t
+)
+type(
+  (int, Instruct.debug_event) Hashtbl.t
+)
+"symbols.ml" 32 1260 1264 "symbols.ml" 32 1260 1280
+type(
+  (string, Instruct.debug_event array) Hashtbl.t
+)
+ident(
+  def events_by_module "symbols.ml" 34 1345 1345 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 33 1283 1286 "symbols.ml" 33 1283 1300
+type(
+  ?random:bool -> int -> (string, Instruct.debug_event array) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"symbols.ml" 33 1283 1301 "symbols.ml" 33 1283 1303
+type(
+  int
+)
+"symbols.ml" 33 1283 1286 "symbols.ml" 33 1283 1303
+call(
+  stack
+)
+type(
+  (string, Instruct.debug_event array) Hashtbl.t
+)
+type(
+  (string, Instruct.debug_event array) Hashtbl.t
+)
+"symbols.ml" 34 1345 1349 "symbols.ml" 34 1345 1369
+type(
+  (string, Instruct.debug_event list) Hashtbl.t
+)
+ident(
+  def all_events_by_module "symbols.ml" 37 1434 1434 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 35 1372 1375 "symbols.ml" 35 1372 1389
+type(
+  ?random:bool -> int -> (string, Instruct.debug_event list) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"symbols.ml" 35 1372 1390 "symbols.ml" 35 1372 1392
+type(
+  int
+)
+"symbols.ml" 35 1372 1375 "symbols.ml" 35 1372 1392
+call(
+  stack
+)
+type(
+  (string, Instruct.debug_event list) Hashtbl.t
+)
+type(
+  (string, Instruct.debug_event list) Hashtbl.t
+)
+"symbols.ml" 37 1434 1438 "symbols.ml" 37 1434 1452
+type(
+  int -> Instruct.debug_event -> unit
+)
+ident(
+  def relocate_event "symbols.ml" 43 1592 1592 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 37 1434 1453 "symbols.ml" 37 1434 1457
+type(
+  int
+)
+ident(
+  def orig "symbols.ml" 37 1434 1458 "symbols.ml" 41 1563 1590
+)
+"symbols.ml" 37 1434 1458 "symbols.ml" 37 1434 1460
+type(
+  Instruct.debug_event
+)
+ident(
+  def ev "symbols.ml" 38 1463 1465 "symbols.ml" 41 1563 1590
+)
+"symbols.ml" 38 1463 1465 "symbols.ml" 38 1463 1467
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "symbols.ml" 37 1434 1458 "symbols.ml" 37 1434 1460
+)
+"symbols.ml" 38 1463 1478 "symbols.ml" 38 1463 1482
+type(
+  int
+)
+ident(
+  int_ref orig "symbols.ml" 37 1434 1453 "symbols.ml" 37 1434 1457
+)
+"symbols.ml" 38 1463 1483 "symbols.ml" 38 1463 1484
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"symbols.ml" 38 1463 1485 "symbols.ml" 38 1463 1487
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "symbols.ml" 37 1434 1458 "symbols.ml" 37 1434 1460
+)
+"symbols.ml" 38 1463 1485 "symbols.ml" 38 1463 1494
+type(
+  int
+)
+"symbols.ml" 38 1463 1478 "symbols.ml" 38 1463 1494
+type(
+  int
+)
+"symbols.ml" 38 1463 1465 "symbols.ml" 38 1463 1494
+type(
+  unit
+)
+"symbols.ml" 39 1496 1504 "symbols.ml" 39 1496 1506
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "symbols.ml" 37 1434 1458 "symbols.ml" 37 1434 1460
+)
+"symbols.ml" 39 1496 1504 "symbols.ml" 39 1496 1514
+type(
+  Instruct.debug_event_repr
+)
+"symbols.ml" 40 1520 1537 "symbols.ml" 40 1520 1541
+type(
+  int ref
+)
+ident(
+  def repr "symbols.ml" 40 1520 1545 "symbols.ml" 40 1520 1562
+)
+"symbols.ml" 40 1520 1524 "symbols.ml" 40 1520 1541
+type(
+  Instruct.debug_event_repr
+)
+"symbols.ml" 40 1520 1545 "symbols.ml" 40 1520 1549
+type(
+  int ref
+)
+ident(
+  int_ref repr "symbols.ml" 40 1520 1537 "symbols.ml" 40 1520 1541
+)
+"symbols.ml" 40 1520 1550 "symbols.ml" 40 1520 1552
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"symbols.ml" 40 1520 1553 "symbols.ml" 40 1520 1555
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "symbols.ml" 37 1434 1458 "symbols.ml" 37 1434 1460
+)
+"symbols.ml" 40 1520 1553 "symbols.ml" 40 1520 1562
+type(
+  int
+)
+"symbols.ml" 40 1520 1545 "symbols.ml" 40 1520 1562
+type(
+  unit
+)
+"symbols.ml" 41 1563 1567 "symbols.ml" 41 1563 1568
+type(
+  Instruct.debug_event_repr
+)
+"symbols.ml" 41 1563 1588 "symbols.ml" 41 1563 1590
+type(
+  unit
+)
+"symbols.ml" 39 1496 1498 "symbols.ml" 41 1563 1590
+type(
+  unit
+)
+"symbols.ml" 38 1463 1465 "symbols.ml" 41 1563 1590
+type(
+  unit
+)
+"symbols.ml" 43 1592 1596 "symbols.ml" 43 1592 1609
+type(
+  string -> Instruct.debug_event list list * StringSet.t
+)
+ident(
+  def read_symbols' "symbols.ml" 81 2866 2866 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 43 1592 1610 "symbols.ml" 43 1592 1623
+type(
+  string
+)
+ident(
+  def bytecode_file "symbols.ml" 44 1626 1628 "symbols.ml" 79 2844 2864
+)
+"symbols.ml" 44 1626 1632 "symbols.ml" 44 1626 1634
+type(
+  in_channel
+)
+ident(
+  def ic "symbols.ml" 45 1666 1668 "symbols.ml" 79 2844 2864
+)
+"symbols.ml" 44 1626 1637 "symbols.ml" 44 1626 1648
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in_bin
+)
+"symbols.ml" 44 1626 1649 "symbols.ml" 44 1626 1662
+type(
+  string
+)
+ident(
+  int_ref bytecode_file "symbols.ml" 43 1592 1610 "symbols.ml" 43 1592 1623
+)
+"symbols.ml" 44 1626 1637 "symbols.ml" 44 1626 1662
+call(
+  stack
+)
+type(
+  in_channel
+)
+"symbols.ml" 46 1678 1682 "symbols.ml" 46 1678 1703
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Bytesections.read_toc
+)
+"symbols.ml" 46 1678 1704 "symbols.ml" 46 1678 1706
+type(
+  in_channel
+)
+ident(
+  int_ref ic "symbols.ml" 44 1626 1632 "symbols.ml" 44 1626 1634
+)
+"symbols.ml" 46 1678 1682 "symbols.ml" 46 1678 1706
+call(
+  stack
+)
+type(
+  unit
+)
+"symbols.ml" 47 1708 1712 "symbols.ml" 47 1708 1718
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"symbols.ml" 47 1708 1719 "symbols.ml" 47 1708 1744
+type(
+  in_channel -> string -> int
+)
+ident(
+  ext_ref Bytesections.seek_section
+)
+"symbols.ml" 47 1708 1745 "symbols.ml" 47 1708 1747
+type(
+  in_channel
+)
+ident(
+  int_ref ic "symbols.ml" 44 1626 1632 "symbols.ml" 44 1626 1634
+)
+"symbols.ml" 47 1708 1748 "symbols.ml" 47 1708 1754
+type(
+  string
+)
+"symbols.ml" 47 1708 1718 "symbols.ml" 47 1708 1755
+call(
+  stack
+)
+type(
+  int
+)
+"symbols.ml" 47 1708 1712 "symbols.ml" 47 1708 1756
+type(
+  unit
+)
+"symbols.ml" 46 1678 1682 "symbols.ml" 47 1708 1756
+type(
+  unit
+)
+"symbols.ml" 48 1757 1764 "symbols.ml" 48 1757 1793
+type(
+  exn
+)
+"symbols.ml" 48 1757 1796 "symbols.ml" 48 1757 1805
+type(
+  exn
+)
+"symbols.ml" 48 1757 1764 "symbols.ml" 48 1757 1805
+type(
+  exn
+)
+"symbols.ml" 49 1809 1813 "symbols.ml" 49 1809 1825
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_string
+)
+"symbols.ml" 49 1809 1826 "symbols.ml" 49 1809 1839
+type(
+  string
+)
+ident(
+  int_ref bytecode_file "symbols.ml" 43 1592 1610 "symbols.ml" 43 1592 1623
+)
+"symbols.ml" 49 1809 1813 "symbols.ml" 49 1809 1839
+call(
+  stack
+)
+type(
+  unit
+)
+"symbols.ml" 49 1809 1841 "symbols.ml" 49 1809 1854
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"symbols.ml" 49 1809 1855 "symbols.ml" 49 1809 1881
+type(
+  string
+)
+"symbols.ml" 49 1809 1841 "symbols.ml" 49 1809 1881
+call(
+  stack
+)
+type(
+  unit
+)
+"symbols.ml" 50 1883 1887 "symbols.ml" 50 1883 1892
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"symbols.ml" 50 1883 1893 "symbols.ml" 50 1883 1901
+type(
+  exn
+)
+"symbols.ml" 50 1883 1887 "symbols.ml" 50 1883 1901
+type(
+  unit
+)
+"symbols.ml" 49 1809 1841 "symbols.ml" 50 1883 1901
+type(
+  unit
+)
+"symbols.ml" 49 1809 1813 "symbols.ml" 50 1883 1901
+type(
+  unit
+)
+"symbols.ml" 45 1666 1668 "symbols.ml" 51 1902 1907
+type(
+  unit
+)
+"symbols.ml" 52 1909 1911 "symbols.ml" 52 1909 1933
+type(
+  Symtable.global_map -> unit
+)
+ident(
+  ext_ref Symtable.restore_state
+)
+"symbols.ml" 52 1909 1935 "symbols.ml" 52 1909 1946
+type(
+  in_channel -> Symtable.global_map
+)
+ident(
+  ext_ref Pervasives.input_value
+)
+"symbols.ml" 52 1909 1947 "symbols.ml" 52 1909 1949
+type(
+  in_channel
+)
+ident(
+  int_ref ic "symbols.ml" 44 1626 1632 "symbols.ml" 44 1626 1634
+)
+"symbols.ml" 52 1909 1934 "symbols.ml" 52 1909 1950
+call(
+  stack
+)
+type(
+  Symtable.global_map
+)
+"symbols.ml" 52 1909 1911 "symbols.ml" 52 1909 1950
+call(
+  stack
+)
+type(
+  unit
+)
+"symbols.ml" 54 1964 1968 "symbols.ml" 54 1964 1974
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"symbols.ml" 54 1964 1976 "symbols.ml" 54 1964 2001
+type(
+  in_channel -> string -> int
+)
+ident(
+  ext_ref Bytesections.seek_section
+)
+"symbols.ml" 54 1964 2002 "symbols.ml" 54 1964 2004
+type(
+  in_channel
+)
+ident(
+  int_ref ic "symbols.ml" 44 1626 1632 "symbols.ml" 44 1626 1634
+)
+"symbols.ml" 54 1964 2005 "symbols.ml" 54 1964 2011
+type(
+  string
+)
+"symbols.ml" 54 1964 1975 "symbols.ml" 54 1964 2012
+call(
+  stack
+)
+type(
+  int
+)
+"symbols.ml" 54 1964 1968 "symbols.ml" 54 1964 2012
+type(
+  unit
+)
+"symbols.ml" 55 2013 2020 "symbols.ml" 55 2013 2029
+type(
+  exn
+)
+"symbols.ml" 56 2033 2037 "symbols.ml" 56 2033 2049
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_string
+)
+"symbols.ml" 56 2033 2050 "symbols.ml" 56 2033 2063
+type(
+  string
+)
+ident(
+  int_ref bytecode_file "symbols.ml" 43 1592 1610 "symbols.ml" 43 1592 1623
+)
+"symbols.ml" 56 2033 2037 "symbols.ml" 56 2033 2063
+call(
+  stack
+)
+type(
+  unit
+)
+"symbols.ml" 56 2033 2065 "symbols.ml" 56 2033 2078
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"symbols.ml" 56 2033 2079 "symbols.ml" 56 2033 2104
+type(
+  string
+)
+"symbols.ml" 56 2033 2065 "symbols.ml" 56 2033 2104
+call(
+  stack
+)
+type(
+  unit
+)
+"symbols.ml" 57 2106 2110 "symbols.ml" 57 2106 2115
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"symbols.ml" 57 2106 2116 "symbols.ml" 57 2106 2124
+type(
+  exn
+)
+"symbols.ml" 57 2106 2110 "symbols.ml" 57 2106 2124
+type(
+  unit
+)
+"symbols.ml" 56 2033 2065 "symbols.ml" 57 2106 2124
+type(
+  unit
+)
+"symbols.ml" 56 2033 2037 "symbols.ml" 57 2106 2124
+type(
+  unit
+)
+"symbols.ml" 53 1952 1954 "symbols.ml" 58 2125 2130
+type(
+  unit
+)
+"symbols.ml" 59 2132 2138 "symbols.ml" 59 2132 2152
+type(
+  int
+)
+ident(
+  def num_eventlists "symbols.ml" 60 2178 2180 "symbols.ml" 79 2844 2864
+)
+"symbols.ml" 59 2132 2155 "symbols.ml" 59 2132 2171
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"symbols.ml" 59 2132 2172 "symbols.ml" 59 2132 2174
+type(
+  in_channel
+)
+ident(
+  int_ref ic "symbols.ml" 44 1626 1632 "symbols.ml" 44 1626 1634
+)
+"symbols.ml" 59 2132 2155 "symbols.ml" 59 2132 2174
+call(
+  stack
+)
+type(
+  int
+)
+"symbols.ml" 60 2178 2184 "symbols.ml" 60 2178 2188
+type(
+  StringSet.t ref
+)
+ident(
+  def dirs "symbols.ml" 61 2214 2216 "symbols.ml" 79 2844 2864
+)
+"symbols.ml" 60 2178 2191 "symbols.ml" 60 2178 2194
+type(
+  StringSet.t -> StringSet.t ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"symbols.ml" 60 2178 2195 "symbols.ml" 60 2178 2210
+type(
+  StringSet.t
+)
+ident(
+  ext_ref StringSet.empty
+)
+"symbols.ml" 60 2178 2191 "symbols.ml" 60 2178 2210
+type(
+  StringSet.t ref
+)
+"symbols.ml" 61 2214 2220 "symbols.ml" 61 2214 2230
+type(
+  Instruct.debug_event list list ref
+)
+ident(
+  def eventlists "symbols.ml" 62 2243 2245 "symbols.ml" 79 2844 2864
+)
+"symbols.ml" 61 2214 2233 "symbols.ml" 61 2214 2236
+type(
+  Instruct.debug_event list list -> Instruct.debug_event list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"symbols.ml" 61 2214 2237 "symbols.ml" 61 2214 2239
+type(
+  Instruct.debug_event list list
+)
+"symbols.ml" 61 2214 2233 "symbols.ml" 61 2214 2239
+type(
+  Instruct.debug_event list list ref
+)
+"symbols.ml" 62 2243 2253 "symbols.ml" 62 2243 2254
+type(
+  int
+)
+"symbols.ml" 62 2243 2258 "symbols.ml" 62 2243 2272
+type(
+  int
+)
+ident(
+  int_ref num_eventlists "symbols.ml" 59 2132 2138 "symbols.ml" 59 2132 2152
+)
+"symbols.ml" 63 2276 2284 "symbols.ml" 63 2276 2288
+type(
+  int
+)
+ident(
+  def orig "symbols.ml" 64 2314 2318 "symbols.ml" 69 2498 2572
+)
+"symbols.ml" 63 2276 2291 "symbols.ml" 63 2276 2307
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"symbols.ml" 63 2276 2308 "symbols.ml" 63 2276 2310
+type(
+  in_channel
+)
+ident(
+  int_ref ic "symbols.ml" 44 1626 1632 "symbols.ml" 44 1626 1634
+)
+"symbols.ml" 63 2276 2291 "symbols.ml" 63 2276 2310
+call(
+  stack
+)
+type(
+  int
+)
+"symbols.ml" 64 2314 2322 "symbols.ml" 64 2314 2325
+type(
+  Instruct.debug_event list
+)
+ident(
+  def evl "symbols.ml" 66 2407 2411 "symbols.ml" 69 2498 2572
+)
+"symbols.ml" 64 2314 2329 "symbols.ml" 64 2314 2340
+type(
+  in_channel -> Instruct.debug_event list
+)
+ident(
+  ext_ref Pervasives.input_value
+)
+"symbols.ml" 64 2314 2341 "symbols.ml" 64 2314 2343
+type(
+  in_channel
+)
+ident(
+  int_ref ic "symbols.ml" 44 1626 1632 "symbols.ml" 44 1626 1634
+)
+"symbols.ml" 64 2314 2329 "symbols.ml" 64 2314 2343
+call(
+  stack
+)
+type(
+  Instruct.debug_event list
+)
+type(
+  Instruct.debug_event list
+)
+"symbols.ml" 66 2407 2411 "symbols.ml" 66 2407 2420
+type(
+  (Instruct.debug_event -> unit) -> Instruct.debug_event list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"symbols.ml" 66 2407 2422 "symbols.ml" 66 2407 2436
+type(
+  int -> Instruct.debug_event -> unit
+)
+ident(
+  int_ref relocate_event "symbols.ml" 37 1434 1438 "symbols.ml" 37 1434 1452
+)
+"symbols.ml" 66 2407 2437 "symbols.ml" 66 2407 2441
+type(
+  int
+)
+ident(
+  int_ref orig "symbols.ml" 63 2276 2284 "symbols.ml" 63 2276 2288
+)
+"symbols.ml" 66 2407 2421 "symbols.ml" 66 2407 2442
+call(
+  stack
+)
+type(
+  Instruct.debug_event -> unit
+)
+"symbols.ml" 66 2407 2443 "symbols.ml" 66 2407 2446
+type(
+  Instruct.debug_event list
+)
+ident(
+  int_ref evl "symbols.ml" 64 2314 2322 "symbols.ml" 64 2314 2325
+)
+"symbols.ml" 66 2407 2411 "symbols.ml" 66 2407 2446
+call(
+  stack
+)
+type(
+  unit
+)
+"symbols.ml" 67 2448 2452 "symbols.ml" 67 2448 2462
+type(
+  Instruct.debug_event list list ref
+)
+ident(
+  int_ref eventlists "symbols.ml" 61 2214 2220 "symbols.ml" 61 2214 2230
+)
+"symbols.ml" 67 2448 2463 "symbols.ml" 67 2448 2465
+type(
+  Instruct.debug_event list list ref ->
+  Instruct.debug_event list list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"symbols.ml" 67 2448 2466 "symbols.ml" 67 2448 2469
+type(
+  Instruct.debug_event list
+)
+ident(
+  int_ref evl "symbols.ml" 64 2314 2322 "symbols.ml" 64 2314 2325
+)
+"symbols.ml" 67 2448 2473 "symbols.ml" 67 2448 2474
+type(
+  Instruct.debug_event list list ref -> Instruct.debug_event list list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"symbols.ml" 67 2448 2474 "symbols.ml" 67 2448 2484
+type(
+  Instruct.debug_event list list ref
+)
+ident(
+  int_ref eventlists "symbols.ml" 61 2214 2220 "symbols.ml" 61 2214 2230
+)
+"symbols.ml" 67 2448 2473 "symbols.ml" 67 2448 2484
+type(
+  Instruct.debug_event list list
+)
+"symbols.ml" 67 2448 2466 "symbols.ml" 67 2448 2484
+type(
+  Instruct.debug_event list list
+)
+"symbols.ml" 67 2448 2452 "symbols.ml" 67 2448 2484
+type(
+  unit
+)
+"symbols.ml" 68 2486 2490 "symbols.ml" 68 2486 2494
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref dirs "symbols.ml" 60 2178 2184 "symbols.ml" 60 2178 2188
+)
+"symbols.ml" 68 2486 2495 "symbols.ml" 68 2486 2497
+type(
+  StringSet.t ref -> StringSet.t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"symbols.ml" 69 2498 2504 "symbols.ml" 69 2498 2518
+type(
+  (StringSet.t -> StringSet.elt -> StringSet.t) ->
+  StringSet.t -> StringSet.elt list -> StringSet.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"symbols.ml" 69 2498 2524 "symbols.ml" 69 2498 2525
+type(
+  StringSet.t
+)
+ident(
+  def s "symbols.ml" 69 2498 2526 "symbols.ml" 69 2498 2548
+)
+"symbols.ml" 69 2498 2526 "symbols.ml" 69 2498 2527
+type(
+  StringSet.elt
+)
+ident(
+  def e "symbols.ml" 69 2498 2531 "symbols.ml" 69 2498 2548
+)
+"symbols.ml" 69 2498 2531 "symbols.ml" 69 2498 2544
+type(
+  StringSet.elt -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.add
+)
+"symbols.ml" 69 2498 2545 "symbols.ml" 69 2498 2546
+type(
+  StringSet.elt
+)
+ident(
+  int_ref e "symbols.ml" 69 2498 2526 "symbols.ml" 69 2498 2527
+)
+"symbols.ml" 69 2498 2547 "symbols.ml" 69 2498 2548
+type(
+  StringSet.t
+)
+ident(
+  int_ref s "symbols.ml" 69 2498 2524 "symbols.ml" 69 2498 2525
+)
+"symbols.ml" 69 2498 2531 "symbols.ml" 69 2498 2548
+call(
+  tail
+)
+type(
+  StringSet.t
+)
+"symbols.ml" 69 2498 2519 "symbols.ml" 69 2498 2549
+type(
+  StringSet.t -> StringSet.elt -> StringSet.t
+)
+"symbols.ml" 69 2498 2550 "symbols.ml" 69 2498 2551
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"symbols.ml" 69 2498 2551 "symbols.ml" 69 2498 2555
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref dirs "symbols.ml" 60 2178 2184 "symbols.ml" 60 2178 2188
+)
+"symbols.ml" 69 2498 2550 "symbols.ml" 69 2498 2555
+type(
+  StringSet.t
+)
+"symbols.ml" 69 2498 2557 "symbols.ml" 69 2498 2568
+type(
+  in_channel -> StringSet.elt list
+)
+ident(
+  ext_ref Pervasives.input_value
+)
+"symbols.ml" 69 2498 2569 "symbols.ml" 69 2498 2571
+type(
+  in_channel
+)
+ident(
+  int_ref ic "symbols.ml" 44 1626 1632 "symbols.ml" 44 1626 1634
+)
+"symbols.ml" 69 2498 2556 "symbols.ml" 69 2498 2572
+call(
+  stack
+)
+type(
+  StringSet.elt list
+)
+"symbols.ml" 69 2498 2504 "symbols.ml" 69 2498 2572
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"symbols.ml" 68 2486 2490 "symbols.ml" 69 2498 2572
+type(
+  unit
+)
+"symbols.ml" 67 2448 2452 "symbols.ml" 69 2498 2572
+type(
+  unit
+)
+"symbols.ml" 66 2407 2411 "symbols.ml" 69 2498 2572
+type(
+  unit
+)
+"symbols.ml" 64 2314 2318 "symbols.ml" 69 2498 2572
+type(
+  unit
+)
+"symbols.ml" 63 2276 2280 "symbols.ml" 69 2498 2572
+type(
+  unit
+)
+"symbols.ml" 62 2243 2245 "symbols.ml" 70 2573 2579
+type(
+  unit
+)
+"symbols.ml" 72 2593 2597 "symbols.ml" 72 2593 2603
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"symbols.ml" 72 2593 2605 "symbols.ml" 72 2593 2630
+type(
+  in_channel -> string -> int
+)
+ident(
+  ext_ref Bytesections.seek_section
+)
+"symbols.ml" 72 2593 2631 "symbols.ml" 72 2593 2633
+type(
+  in_channel
+)
+ident(
+  int_ref ic "symbols.ml" 44 1626 1632 "symbols.ml" 44 1626 1634
+)
+"symbols.ml" 72 2593 2634 "symbols.ml" 72 2593 2640
+type(
+  string
+)
+"symbols.ml" 72 2593 2604 "symbols.ml" 72 2593 2641
+call(
+  stack
+)
+type(
+  int
+)
+"symbols.ml" 72 2593 2597 "symbols.ml" 72 2593 2641
+type(
+  unit
+)
+"symbols.ml" 73 2642 2649 "symbols.ml" 73 2642 2658
+type(
+  exn
+)
+"symbols.ml" 76 2753 2757 "symbols.ml" 76 2753 2779
+type(
+  Program_loading.launching_function -> unit
+)
+ident(
+  ext_ref Program_loading.set_launching_function
+)
+"symbols.ml" 76 2753 2781 "symbols.ml" 76 2753 2791
+type(
+  string ->
+  (string * Program_loading.launching_function) list ->
+  Program_loading.launching_function
+)
+ident(
+  ext_ref List.assoc
+)
+"symbols.ml" 76 2753 2792 "symbols.ml" 76 2753 2800
+type(
+  string
+)
+"symbols.ml" 76 2753 2801 "symbols.ml" 76 2753 2814
+type(
+  (string * Program_loading.launching_function) list
+)
+ident(
+  ext_ref Program_loading.loading_modes
+)
+"symbols.ml" 76 2753 2780 "symbols.ml" 76 2753 2815
+call(
+  stack
+)
+type(
+  Program_loading.launching_function
+)
+"symbols.ml" 76 2753 2757 "symbols.ml" 76 2753 2815
+call(
+  stack
+)
+type(
+  unit
+)
+"symbols.ml" 71 2581 2583 "symbols.ml" 77 2816 2821
+type(
+  unit
+)
+"symbols.ml" 78 2823 2825 "symbols.ml" 78 2823 2839
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in_noerr
+)
+"symbols.ml" 78 2823 2840 "symbols.ml" 78 2823 2842
+type(
+  in_channel
+)
+ident(
+  int_ref ic "symbols.ml" 44 1626 1632 "symbols.ml" 44 1626 1634
+)
+"symbols.ml" 78 2823 2825 "symbols.ml" 78 2823 2842
+call(
+  stack
+)
+type(
+  unit
+)
+"symbols.ml" 79 2844 2846 "symbols.ml" 79 2844 2847
+type(
+  Instruct.debug_event list list ref -> Instruct.debug_event list list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"symbols.ml" 79 2844 2847 "symbols.ml" 79 2844 2857
+type(
+  Instruct.debug_event list list ref
+)
+ident(
+  int_ref eventlists "symbols.ml" 61 2214 2220 "symbols.ml" 61 2214 2230
+)
+"symbols.ml" 79 2844 2846 "symbols.ml" 79 2844 2857
+type(
+  Instruct.debug_event list list
+)
+"symbols.ml" 79 2844 2859 "symbols.ml" 79 2844 2860
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"symbols.ml" 79 2844 2860 "symbols.ml" 79 2844 2864
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref dirs "symbols.ml" 60 2178 2184 "symbols.ml" 60 2178 2188
+)
+"symbols.ml" 79 2844 2859 "symbols.ml" 79 2844 2864
+type(
+  StringSet.t
+)
+"symbols.ml" 79 2844 2846 "symbols.ml" 79 2844 2864
+type(
+  Instruct.debug_event list list * StringSet.t
+)
+"symbols.ml" 78 2823 2825 "symbols.ml" 79 2844 2864
+type(
+  Instruct.debug_event list list * StringSet.t
+)
+"symbols.ml" 71 2581 2583 "symbols.ml" 79 2844 2864
+type(
+  Instruct.debug_event list list * StringSet.t
+)
+"symbols.ml" 62 2243 2245 "symbols.ml" 79 2844 2864
+type(
+  Instruct.debug_event list list * StringSet.t
+)
+"symbols.ml" 61 2214 2216 "symbols.ml" 79 2844 2864
+type(
+  Instruct.debug_event list list * StringSet.t
+)
+"symbols.ml" 60 2178 2180 "symbols.ml" 79 2844 2864
+type(
+  Instruct.debug_event list list * StringSet.t
+)
+"symbols.ml" 59 2132 2134 "symbols.ml" 79 2844 2864
+type(
+  Instruct.debug_event list list * StringSet.t
+)
+"symbols.ml" 53 1952 1954 "symbols.ml" 79 2844 2864
+type(
+  Instruct.debug_event list list * StringSet.t
+)
+"symbols.ml" 52 1909 1911 "symbols.ml" 79 2844 2864
+type(
+  Instruct.debug_event list list * StringSet.t
+)
+"symbols.ml" 45 1666 1668 "symbols.ml" 79 2844 2864
+type(
+  Instruct.debug_event list list * StringSet.t
+)
+"symbols.ml" 44 1626 1628 "symbols.ml" 79 2844 2864
+type(
+  Instruct.debug_event list list * StringSet.t
+)
+"symbols.ml" 81 2866 2870 "symbols.ml" 81 2866 2882
+type(
+  string -> unit
+)
+ident(
+  def read_symbols "symbols.ml" 119 4026 4026 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 81 2866 2883 "symbols.ml" 81 2866 2896
+type(
+  string
+)
+ident(
+  def bytecode_file "symbols.ml" 82 2899 2901 "symbols.ml" 117 4010 4024
+)
+"symbols.ml" 82 2899 2905 "symbols.ml" 82 2899 2915
+type(
+  Instruct.debug_event list list
+)
+ident(
+  def all_events "symbols.ml" 84 2960 2962 "symbols.ml" 117 4010 4024
+)
+"symbols.ml" 82 2899 2917 "symbols.ml" 82 2899 2925
+type(
+  StringSet.t
+)
+ident(
+  def all_dirs "symbols.ml" 84 2960 2962 "symbols.ml" 117 4010 4024
+)
+"symbols.ml" 82 2899 2905 "symbols.ml" 82 2899 2925
+type(
+  Instruct.debug_event list list * StringSet.t
+)
+"symbols.ml" 82 2899 2928 "symbols.ml" 82 2899 2941
+type(
+  string -> Instruct.debug_event list list * StringSet.t
+)
+ident(
+  int_ref read_symbols' "symbols.ml" 43 1592 1596 "symbols.ml" 43 1592 1609
+)
+"symbols.ml" 82 2899 2942 "symbols.ml" 82 2899 2955
+type(
+  string
+)
+ident(
+  int_ref bytecode_file "symbols.ml" 81 2866 2883 "symbols.ml" 81 2866 2896
+)
+"symbols.ml" 82 2899 2928 "symbols.ml" 82 2899 2955
+call(
+  stack
+)
+type(
+  Instruct.debug_event list list * StringSet.t
+)
+"symbols.ml" 84 2960 2962 "symbols.ml" 84 2960 2969
+type(
+  string list ref
+)
+ident(
+  int_ref modules "symbols.ml" 22 1052 1056 "symbols.ml" 22 1052 1063
+)
+"symbols.ml" 84 2960 2970 "symbols.ml" 84 2960 2972
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"symbols.ml" 84 2960 2973 "symbols.ml" 84 2960 2975
+type(
+  string list
+)
+"symbols.ml" 84 2960 2962 "symbols.ml" 84 2960 2975
+type(
+  unit
+)
+"symbols.ml" 84 2960 2977 "symbols.ml" 84 2960 2983
+type(
+  Instruct.debug_event list ref
+)
+ident(
+  int_ref events "symbols.ml" 28 1144 1148 "symbols.ml" 28 1144 1154
+)
+"symbols.ml" 84 2960 2984 "symbols.ml" 84 2960 2986
+type(
+  Instruct.debug_event list ref -> Instruct.debug_event list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"symbols.ml" 84 2960 2987 "symbols.ml" 84 2960 2989
+type(
+  Instruct.debug_event list
+)
+"symbols.ml" 84 2960 2977 "symbols.ml" 84 2960 2989
+type(
+  unit
+)
+"symbols.ml" 85 2991 2993 "symbols.ml" 85 2991 3012
+type(
+  StringSet.elt list ref
+)
+ident(
+  int_ref program_source_dirs "symbols.ml" 25 1092 1096 "symbols.ml" 25 1092 1115
+)
+"symbols.ml" 85 2991 3013 "symbols.ml" 85 2991 3015
+type(
+  StringSet.elt list ref -> StringSet.elt list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"symbols.ml" 85 2991 3016 "symbols.ml" 85 2991 3034
+type(
+  StringSet.t -> StringSet.elt list
+)
+ident(
+  ext_ref StringSet.elements
+)
+"symbols.ml" 85 2991 3035 "symbols.ml" 85 2991 3043
+type(
+  StringSet.t
+)
+ident(
+  int_ref all_dirs "symbols.ml" 82 2899 2917 "symbols.ml" 82 2899 2925
+)
+"symbols.ml" 85 2991 3016 "symbols.ml" 85 2991 3043
+call(
+  stack
+)
+type(
+  StringSet.elt list
+)
+"symbols.ml" 85 2991 2993 "symbols.ml" 85 2991 3043
+type(
+  unit
+)
+"symbols.ml" 86 3045 3047 "symbols.ml" 86 3045 3060
+type(
+  (int, Instruct.debug_event) Hashtbl.t -> unit
+)
+ident(
+  ext_ref Hashtbl.clear
+)
+"symbols.ml" 86 3045 3061 "symbols.ml" 86 3045 3073
+type(
+  (int, Instruct.debug_event) Hashtbl.t
+)
+ident(
+  int_ref events_by_pc "symbols.ml" 30 1187 1191 "symbols.ml" 30 1187 1203
+)
+"symbols.ml" 86 3045 3047 "symbols.ml" 86 3045 3073
+call(
+  stack
+)
+type(
+  unit
+)
+"symbols.ml" 86 3045 3075 "symbols.ml" 86 3045 3088
+type(
+  (string, Instruct.debug_event array) Hashtbl.t -> unit
+)
+ident(
+  ext_ref Hashtbl.clear
+)
+"symbols.ml" 86 3045 3089 "symbols.ml" 86 3045 3105
+type(
+  (string, Instruct.debug_event array) Hashtbl.t
+)
+ident(
+  int_ref events_by_module "symbols.ml" 32 1260 1264 "symbols.ml" 32 1260 1280
+)
+"symbols.ml" 86 3045 3075 "symbols.ml" 86 3045 3105
+call(
+  stack
+)
+type(
+  unit
+)
+"symbols.ml" 87 3107 3109 "symbols.ml" 87 3107 3122
+type(
+  (string, Instruct.debug_event list) Hashtbl.t -> unit
+)
+ident(
+  ext_ref Hashtbl.clear
+)
+"symbols.ml" 87 3107 3123 "symbols.ml" 87 3107 3143
+type(
+  (string, Instruct.debug_event list) Hashtbl.t
+)
+ident(
+  int_ref all_events_by_module "symbols.ml" 34 1345 1349 "symbols.ml" 34 1345 1369
+)
+"symbols.ml" 87 3107 3109 "symbols.ml" 87 3107 3143
+call(
+  stack
+)
+type(
+  unit
+)
+"symbols.ml" 89 3146 3148 "symbols.ml" 89 3146 3157
+type(
+  (Instruct.debug_event list -> unit) ->
+  Instruct.debug_event list list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"symbols.ml" 90 3158 3167 "symbols.ml" 90 3158 3170
+type(
+  Instruct.debug_event list
+)
+ident(
+  def evl "symbols.ml" 91 3174 3180 "symbols.ml" 95 3293 3304
+)
+"symbols.ml" 91 3174 3180 "symbols.ml" 91 3174 3189
+type(
+  (Instruct.debug_event -> unit) -> Instruct.debug_event list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"symbols.ml" 92 3190 3203 "symbols.ml" 92 3190 3205
+type(
+  Instruct.debug_event
+)
+ident(
+  def ev "symbols.ml" 93 3209 3219 "symbols.ml" 94 3244 3291
+)
+"symbols.ml" 93 3209 3219 "symbols.ml" 93 3209 3225
+type(
+  Instruct.debug_event list ref
+)
+ident(
+  int_ref events "symbols.ml" 28 1144 1148 "symbols.ml" 28 1144 1154
+)
+"symbols.ml" 93 3209 3226 "symbols.ml" 93 3209 3228
+type(
+  Instruct.debug_event list ref -> Instruct.debug_event list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"symbols.ml" 93 3209 3229 "symbols.ml" 93 3209 3231
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "symbols.ml" 92 3190 3203 "symbols.ml" 92 3190 3205
+)
+"symbols.ml" 93 3209 3235 "symbols.ml" 93 3209 3236
+type(
+  Instruct.debug_event list ref -> Instruct.debug_event list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"symbols.ml" 93 3209 3236 "symbols.ml" 93 3209 3242
+type(
+  Instruct.debug_event list ref
+)
+ident(
+  int_ref events "symbols.ml" 28 1144 1148 "symbols.ml" 28 1144 1154
+)
+"symbols.ml" 93 3209 3235 "symbols.ml" 93 3209 3242
+type(
+  Instruct.debug_event list
+)
+"symbols.ml" 93 3209 3229 "symbols.ml" 93 3209 3242
+type(
+  Instruct.debug_event list
+)
+"symbols.ml" 93 3209 3219 "symbols.ml" 93 3209 3242
+type(
+  unit
+)
+"symbols.ml" 94 3244 3254 "symbols.ml" 94 3244 3265
+type(
+  (int, Instruct.debug_event) Hashtbl.t ->
+  int -> Instruct.debug_event -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"symbols.ml" 94 3244 3266 "symbols.ml" 94 3244 3278
+type(
+  (int, Instruct.debug_event) Hashtbl.t
+)
+ident(
+  int_ref events_by_pc "symbols.ml" 30 1187 1191 "symbols.ml" 30 1187 1203
+)
+"symbols.ml" 94 3244 3279 "symbols.ml" 94 3244 3281
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "symbols.ml" 92 3190 3203 "symbols.ml" 92 3190 3205
+)
+"symbols.ml" 94 3244 3279 "symbols.ml" 94 3244 3288
+type(
+  int
+)
+"symbols.ml" 94 3244 3289 "symbols.ml" 94 3244 3291
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "symbols.ml" 92 3190 3203 "symbols.ml" 92 3190 3205
+)
+"symbols.ml" 94 3244 3254 "symbols.ml" 94 3244 3291
+call(
+  tail
+)
+type(
+  unit
+)
+"symbols.ml" 93 3209 3219 "symbols.ml" 94 3244 3291
+type(
+  unit
+)
+"symbols.ml" 92 3190 3198 "symbols.ml" 94 3244 3292
+type(
+  Instruct.debug_event -> unit
+)
+"symbols.ml" 95 3293 3301 "symbols.ml" 95 3293 3304
+type(
+  Instruct.debug_event list
+)
+ident(
+  int_ref evl "symbols.ml" 90 3158 3167 "symbols.ml" 90 3158 3170
+)
+"symbols.ml" 91 3174 3180 "symbols.ml" 95 3293 3304
+call(
+  tail
+)
+type(
+  unit
+)
+"symbols.ml" 90 3158 3162 "symbols.ml" 95 3293 3305
+type(
+  Instruct.debug_event list -> unit
+)
+"symbols.ml" 96 3306 3310 "symbols.ml" 96 3306 3320
+type(
+  Instruct.debug_event list list
+)
+ident(
+  int_ref all_events "symbols.ml" 82 2899 2905 "symbols.ml" 82 2899 2915
+)
+"symbols.ml" 89 3146 3148 "symbols.ml" 96 3306 3320
+call(
+  stack
+)
+type(
+  unit
+)
+"symbols.ml" 98 3323 3325 "symbols.ml" 98 3323 3334
+type(
+  (Instruct.debug_event list -> unit) ->
+  Instruct.debug_event list list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"symbols.ml" 100 3349 3357 "symbols.ml" 100 3349 3359
+type(
+  Instruct.debug_event list
+)
+"symbols.ml" 100 3349 3363 "symbols.ml" 100 3349 3365
+type(
+  unit
+)
+"symbols.ml" 101 3366 3374 "symbols.ml" 101 3366 3376
+type(
+  Instruct.debug_event
+)
+ident(
+  def ev "symbols.ml" 102 3392 3402 "symbols.ml" 116 3942 4008
+)
+"symbols.ml" 101 3366 3380 "symbols.ml" 101 3366 3381
+type(
+  Instruct.debug_event list
+)
+"symbols.ml" 101 3366 3374 "symbols.ml" 101 3366 3381
+type(
+  Instruct.debug_event list
+)
+"symbols.ml" 101 3366 3385 "symbols.ml" 101 3366 3388
+ident(
+  def evl "symbols.ml" 102 3392 3402 "symbols.ml" 116 3942 4008
+)
+"symbols.ml" 101 3366 3374 "symbols.ml" 101 3366 3388
+type(
+  Instruct.debug_event list
+)
+"symbols.ml" 102 3392 3406 "symbols.ml" 102 3392 3408
+type(
+  string
+)
+ident(
+  def md "symbols.ml" 103 3427 3437 "symbols.ml" 116 3942 4008
+)
+"symbols.ml" 102 3392 3411 "symbols.ml" 102 3392 3413
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "symbols.ml" 101 3366 3374 "symbols.ml" 101 3366 3376
+)
+"symbols.ml" 102 3392 3411 "symbols.ml" 102 3392 3423
+type(
+  string
+)
+"symbols.ml" 103 3427 3441 "symbols.ml" 103 3427 3444
+type(
+  Instruct.debug_event -> Instruct.debug_event -> int
+)
+ident(
+  def cmp "symbols.ml" 106 3586 3596 "symbols.ml" 116 3942 4008
+)
+"symbols.ml" 103 3427 3445 "symbols.ml" 103 3427 3448
+type(
+  Instruct.debug_event
+)
+ident(
+  def ev1 "symbols.ml" 103 3427 3449 "symbols.ml" 104 3500 3572
+)
+"symbols.ml" 103 3427 3449 "symbols.ml" 103 3427 3452
+type(
+  Instruct.debug_event
+)
+ident(
+  def ev2 "symbols.ml" 103 3427 3455 "symbols.ml" 104 3500 3572
+)
+"symbols.ml" 103 3427 3455 "symbols.ml" 103 3427 3462
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"symbols.ml" 103 3427 3464 "symbols.ml" 103 3427 3478
+type(
+  Instruct.debug_event -> Lexing.position
+)
+ident(
+  ext_ref Events.get_pos
+)
+"symbols.ml" 103 3427 3479 "symbols.ml" 103 3427 3482
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev1 "symbols.ml" 103 3427 3445 "symbols.ml" 103 3427 3448
+)
+"symbols.ml" 103 3427 3463 "symbols.ml" 103 3427 3483
+call(
+  stack
+)
+type(
+  Lexing.position
+)
+"symbols.ml" 103 3427 3463 "symbols.ml" 103 3427 3499
+type(
+  int
+)
+"symbols.ml" 104 3500 3537 "symbols.ml" 104 3500 3551
+type(
+  Instruct.debug_event -> Lexing.position
+)
+ident(
+  ext_ref Events.get_pos
+)
+"symbols.ml" 104 3500 3552 "symbols.ml" 104 3500 3555
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev2 "symbols.ml" 103 3427 3449 "symbols.ml" 103 3427 3452
+)
+"symbols.ml" 104 3500 3536 "symbols.ml" 104 3500 3556
+call(
+  stack
+)
+type(
+  Lexing.position
+)
+"symbols.ml" 104 3500 3536 "symbols.ml" 104 3500 3572
+type(
+  int
+)
+"symbols.ml" 103 3427 3455 "symbols.ml" 104 3500 3572
+type(
+  int
+)
+"symbols.ml" 106 3586 3600 "symbols.ml" 106 3586 3610
+type(
+  Instruct.debug_event list
+)
+ident(
+  def sorted_evl "symbols.ml" 107 3634 3644 "symbols.ml" 116 3942 4008
+)
+"symbols.ml" 106 3586 3613 "symbols.ml" 106 3586 3622
+type(
+  (Instruct.debug_event -> Instruct.debug_event -> int) ->
+  Instruct.debug_event list -> Instruct.debug_event list
+)
+ident(
+  ext_ref List.sort
+)
+"symbols.ml" 106 3586 3623 "symbols.ml" 106 3586 3626
+type(
+  Instruct.debug_event -> Instruct.debug_event -> int
+)
+ident(
+  int_ref cmp "symbols.ml" 103 3427 3441 "symbols.ml" 103 3427 3444
+)
+"symbols.ml" 106 3586 3627 "symbols.ml" 106 3586 3630
+type(
+  Instruct.debug_event list
+)
+ident(
+  int_ref evl "symbols.ml" 101 3366 3374 "symbols.ml" 101 3366 3388
+)
+"symbols.ml" 106 3586 3613 "symbols.ml" 106 3586 3630
+call(
+  stack
+)
+type(
+  Instruct.debug_event list
+)
+"symbols.ml" 107 3634 3644 "symbols.ml" 107 3634 3651
+type(
+  string list ref
+)
+ident(
+  int_ref modules "symbols.ml" 22 1052 1056 "symbols.ml" 22 1052 1063
+)
+"symbols.ml" 107 3634 3652 "symbols.ml" 107 3634 3654
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"symbols.ml" 107 3634 3655 "symbols.ml" 107 3634 3657
+type(
+  string
+)
+ident(
+  int_ref md "symbols.ml" 102 3392 3406 "symbols.ml" 102 3392 3408
+)
+"symbols.ml" 107 3634 3661 "symbols.ml" 107 3634 3662
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"symbols.ml" 107 3634 3662 "symbols.ml" 107 3634 3669
+type(
+  string list ref
+)
+ident(
+  int_ref modules "symbols.ml" 22 1052 1056 "symbols.ml" 22 1052 1063
+)
+"symbols.ml" 107 3634 3661 "symbols.ml" 107 3634 3669
+type(
+  string list
+)
+"symbols.ml" 107 3634 3655 "symbols.ml" 107 3634 3669
+type(
+  string list
+)
+"symbols.ml" 107 3634 3644 "symbols.ml" 107 3634 3669
+type(
+  unit
+)
+"symbols.ml" 108 3671 3681 "symbols.ml" 108 3671 3692
+type(
+  (string, Instruct.debug_event list) Hashtbl.t ->
+  string -> Instruct.debug_event list -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"symbols.ml" 108 3671 3693 "symbols.ml" 108 3671 3713
+type(
+  (string, Instruct.debug_event list) Hashtbl.t
+)
+ident(
+  int_ref all_events_by_module "symbols.ml" 34 1345 1349 "symbols.ml" 34 1345 1369
+)
+"symbols.ml" 108 3671 3714 "symbols.ml" 108 3671 3716
+type(
+  string
+)
+ident(
+  int_ref md "symbols.ml" 102 3392 3406 "symbols.ml" 102 3392 3408
+)
+"symbols.ml" 108 3671 3717 "symbols.ml" 108 3671 3727
+type(
+  Instruct.debug_event list
+)
+ident(
+  int_ref sorted_evl "symbols.ml" 106 3586 3600 "symbols.ml" 106 3586 3610
+)
+"symbols.ml" 108 3671 3681 "symbols.ml" 108 3671 3727
+call(
+  stack
+)
+type(
+  unit
+)
+"symbols.ml" 109 3729 3743 "symbols.ml" 109 3729 3751
+type(
+  Instruct.debug_event list
+)
+ident(
+  def real_evl "symbols.ml" 116 3942 3952 "symbols.ml" 116 3942 4008
+)
+"symbols.ml" 110 3754 3766 "symbols.ml" 110 3754 3777
+type(
+  (Instruct.debug_event -> bool) ->
+  Instruct.debug_event list -> Instruct.debug_event list
+)
+ident(
+  ext_ref List.filter
+)
+"symbols.ml" 112 3802 3830 "symbols.ml" 112 3802 3842
+type(
+  Instruct.debug_event_kind
+)
+"symbols.ml" 112 3802 3819 "symbols.ml" 112 3802 3843
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 112 3802 3847 "symbols.ml" 112 3802 3852
+type(
+  bool
+)
+"symbols.ml" 113 3853 3870 "symbols.ml" 113 3853 3871
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 113 3853 3898 "symbols.ml" 113 3853 3902
+type(
+  bool
+)
+"symbols.ml" 111 3778 3792 "symbols.ml" 113 3853 3903
+type(
+  Instruct.debug_event -> bool
+)
+"symbols.ml" 114 3904 3918 "symbols.ml" 114 3904 3928
+type(
+  Instruct.debug_event list
+)
+ident(
+  int_ref sorted_evl "symbols.ml" 106 3586 3600 "symbols.ml" 106 3586 3610
+)
+"symbols.ml" 110 3754 3766 "symbols.ml" 114 3904 3928
+call(
+  stack
+)
+type(
+  Instruct.debug_event list
+)
+"symbols.ml" 116 3942 3952 "symbols.ml" 116 3942 3963
+type(
+  (string, Instruct.debug_event array) Hashtbl.t ->
+  string -> Instruct.debug_event array -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"symbols.ml" 116 3942 3964 "symbols.ml" 116 3942 3980
+type(
+  (string, Instruct.debug_event array) Hashtbl.t
+)
+ident(
+  int_ref events_by_module "symbols.ml" 32 1260 1264 "symbols.ml" 32 1260 1280
+)
+"symbols.ml" 116 3942 3981 "symbols.ml" 116 3942 3983
+type(
+  string
+)
+ident(
+  int_ref md "symbols.ml" 102 3392 3406 "symbols.ml" 102 3392 3408
+)
+"symbols.ml" 116 3942 3985 "symbols.ml" 116 3942 3998
+type(
+  Instruct.debug_event list -> Instruct.debug_event array
+)
+ident(
+  ext_ref Array.of_list
+)
+"symbols.ml" 116 3942 3999 "symbols.ml" 116 3942 4007
+type(
+  Instruct.debug_event list
+)
+ident(
+  int_ref real_evl "symbols.ml" 109 3729 3743 "symbols.ml" 109 3729 3751
+)
+"symbols.ml" 116 3942 3984 "symbols.ml" 116 3942 4008
+call(
+  stack
+)
+type(
+  Instruct.debug_event array
+)
+"symbols.ml" 116 3942 3952 "symbols.ml" 116 3942 4008
+call(
+  tail
+)
+type(
+  unit
+)
+"symbols.ml" 109 3729 3739 "symbols.ml" 116 3942 4008
+type(
+  unit
+)
+"symbols.ml" 108 3671 3681 "symbols.ml" 116 3942 4008
+type(
+  unit
+)
+"symbols.ml" 107 3634 3644 "symbols.ml" 116 3942 4008
+type(
+  unit
+)
+"symbols.ml" 106 3586 3596 "symbols.ml" 116 3942 4008
+type(
+  unit
+)
+"symbols.ml" 103 3427 3437 "symbols.ml" 116 3942 4008
+type(
+  unit
+)
+"symbols.ml" 102 3392 3402 "symbols.ml" 116 3942 4008
+type(
+  unit
+)
+"symbols.ml" 99 3335 3339 "symbols.ml" 116 3942 4009
+type(
+  Instruct.debug_event list -> unit
+)
+"symbols.ml" 117 4010 4014 "symbols.ml" 117 4010 4024
+type(
+  Instruct.debug_event list list
+)
+ident(
+  int_ref all_events "symbols.ml" 82 2899 2905 "symbols.ml" 82 2899 2915
+)
+"symbols.ml" 98 3323 3325 "symbols.ml" 117 4010 4024
+call(
+  tail
+)
+type(
+  unit
+)
+"symbols.ml" 89 3146 3148 "symbols.ml" 117 4010 4024
+type(
+  unit
+)
+"symbols.ml" 87 3107 3109 "symbols.ml" 117 4010 4024
+type(
+  unit
+)
+"symbols.ml" 86 3045 3075 "symbols.ml" 117 4010 4024
+type(
+  unit
+)
+"symbols.ml" 86 3045 3047 "symbols.ml" 117 4010 4024
+type(
+  unit
+)
+"symbols.ml" 85 2991 2993 "symbols.ml" 117 4010 4024
+type(
+  unit
+)
+"symbols.ml" 84 2960 2977 "symbols.ml" 117 4010 4024
+type(
+  unit
+)
+"symbols.ml" 84 2960 2962 "symbols.ml" 117 4010 4024
+type(
+  unit
+)
+"symbols.ml" 82 2899 2901 "symbols.ml" 117 4010 4024
+type(
+  unit
+)
+"symbols.ml" 119 4026 4030 "symbols.ml" 119 4026 4045
+type(
+  int -> Instruct.debug_event
+)
+ident(
+  def any_event_at_pc "symbols.ml" 122 4083 4083 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 119 4026 4046 "symbols.ml" 119 4026 4048
+type(
+  int
+)
+ident(
+  def pc "symbols.ml" 120 4051 4053 "symbols.ml" 120 4051 4081
+)
+"symbols.ml" 120 4051 4053 "symbols.ml" 120 4051 4065
+type(
+  (int, Instruct.debug_event) Hashtbl.t -> int -> Instruct.debug_event
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"symbols.ml" 120 4051 4066 "symbols.ml" 120 4051 4078
+type(
+  (int, Instruct.debug_event) Hashtbl.t
+)
+ident(
+  int_ref events_by_pc "symbols.ml" 30 1187 1191 "symbols.ml" 30 1187 1203
+)
+"symbols.ml" 120 4051 4079 "symbols.ml" 120 4051 4081
+type(
+  int
+)
+ident(
+  int_ref pc "symbols.ml" 119 4026 4046 "symbols.ml" 119 4026 4048
+)
+"symbols.ml" 120 4051 4053 "symbols.ml" 120 4051 4081
+call(
+  tail
+)
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 122 4083 4087 "symbols.ml" 122 4083 4098
+type(
+  int -> Instruct.debug_event
+)
+ident(
+  def event_at_pc "symbols.ml" 128 4221 4221 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 122 4083 4099 "symbols.ml" 122 4083 4101
+type(
+  int
+)
+ident(
+  def pc "symbols.ml" 123 4104 4106 "symbols.ml" 126 4197 4219
+)
+"symbols.ml" 123 4104 4110 "symbols.ml" 123 4104 4112
+type(
+  Instruct.debug_event
+)
+ident(
+  def ev "symbols.ml" 124 4137 4139 "symbols.ml" 126 4197 4219
+)
+"symbols.ml" 123 4104 4115 "symbols.ml" 123 4104 4130
+type(
+  int -> Instruct.debug_event
+)
+ident(
+  int_ref any_event_at_pc "symbols.ml" 119 4026 4030 "symbols.ml" 119 4026 4045
+)
+"symbols.ml" 123 4104 4131 "symbols.ml" 123 4104 4133
+type(
+  int
+)
+ident(
+  int_ref pc "symbols.ml" 122 4083 4099 "symbols.ml" 122 4083 4101
+)
+"symbols.ml" 123 4104 4115 "symbols.ml" 123 4104 4133
+call(
+  stack
+)
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 124 4137 4145 "symbols.ml" 124 4137 4147
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "symbols.ml" 123 4104 4110 "symbols.ml" 123 4104 4112
+)
+"symbols.ml" 124 4137 4145 "symbols.ml" 124 4137 4155
+type(
+  Instruct.debug_event_kind
+)
+"symbols.ml" 125 4161 4165 "symbols.ml" 125 4161 4177
+type(
+  Instruct.debug_event_kind
+)
+"symbols.ml" 125 4161 4181 "symbols.ml" 125 4161 4186
+type(
+  exn -> Instruct.debug_event
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"symbols.ml" 125 4161 4187 "symbols.ml" 125 4161 4196
+type(
+  exn
+)
+"symbols.ml" 125 4161 4181 "symbols.ml" 125 4161 4196
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 126 4197 4201 "symbols.ml" 126 4197 4202
+type(
+  Instruct.debug_event_kind
+)
+"symbols.ml" 126 4197 4217 "symbols.ml" 126 4197 4219
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "symbols.ml" 123 4104 4110 "symbols.ml" 123 4104 4112
+)
+"symbols.ml" 124 4137 4139 "symbols.ml" 126 4197 4219
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 123 4104 4106 "symbols.ml" 126 4197 4219
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 128 4221 4225 "symbols.ml" 128 4221 4240
+type(
+  int -> unit
+)
+ident(
+  def set_event_at_pc "symbols.ml" 133 4352 4352 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 128 4221 4241 "symbols.ml" 128 4221 4243
+type(
+  int
+)
+ident(
+  def pc "symbols.ml" 129 4246 4247 "symbols.ml" 130 4297 4318
+)
+"symbols.ml" 129 4246 4251 "symbols.ml" 129 4246 4257
+type(
+  Instruct.debug_event -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"symbols.ml" 129 4246 4258 "symbols.ml" 129 4246 4269
+type(
+  int -> Instruct.debug_event
+)
+ident(
+  int_ref event_at_pc "symbols.ml" 122 4083 4087 "symbols.ml" 122 4083 4098
+)
+"symbols.ml" 129 4246 4270 "symbols.ml" 129 4246 4272
+type(
+  int
+)
+ident(
+  int_ref pc "symbols.ml" 128 4221 4241 "symbols.ml" 128 4221 4243
+)
+"symbols.ml" 129 4246 4257 "symbols.ml" 129 4246 4273
+call(
+  stack
+)
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 129 4246 4251 "symbols.ml" 129 4246 4273
+type(
+  unit
+)
+"symbols.ml" 129 4246 4275 "symbols.ml" 129 4246 4293
+type(
+  int -> unit
+)
+ident(
+  ext_ref Debugcom.set_event
+)
+"symbols.ml" 129 4246 4294 "symbols.ml" 129 4246 4296
+type(
+  int
+)
+ident(
+  int_ref pc "symbols.ml" 128 4221 4241 "symbols.ml" 128 4221 4243
+)
+"symbols.ml" 129 4246 4275 "symbols.ml" 129 4246 4296
+call(
+  stack
+)
+type(
+  unit
+)
+"symbols.ml" 129 4246 4251 "symbols.ml" 129 4246 4296
+type(
+  unit
+)
+"symbols.ml" 130 4297 4303 "symbols.ml" 130 4297 4312
+type(
+  exn
+)
+"symbols.ml" 130 4297 4316 "symbols.ml" 130 4297 4318
+type(
+  unit
+)
+"symbols.ml" 129 4246 4247 "symbols.ml" 130 4297 4318
+type(
+  unit
+)
+"symbols.ml" 133 4352 4356 "symbols.ml" 133 4352 4372
+type(
+  string -> Instruct.debug_event list
+)
+ident(
+  def events_in_module "symbols.ml" 140 4508 4508 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 133 4352 4373 "symbols.ml" 133 4352 4377
+type(
+  string
+)
+ident(
+  def mdle "symbols.ml" 134 4380 4382 "symbols.ml" 137 4449 4455
+)
+"symbols.ml" 135 4386 4390 "symbols.ml" 135 4386 4402
+type(
+  (string, Instruct.debug_event list) Hashtbl.t ->
+  string -> Instruct.debug_event list
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"symbols.ml" 135 4386 4403 "symbols.ml" 135 4386 4423
+type(
+  (string, Instruct.debug_event list) Hashtbl.t
+)
+ident(
+  int_ref all_events_by_module "symbols.ml" 34 1345 1349 "symbols.ml" 34 1345 1369
+)
+"symbols.ml" 135 4386 4424 "symbols.ml" 135 4386 4428
+type(
+  string
+)
+ident(
+  int_ref mdle "symbols.ml" 133 4352 4373 "symbols.ml" 133 4352 4377
+)
+"symbols.ml" 135 4386 4390 "symbols.ml" 135 4386 4428
+call(
+  stack
+)
+type(
+  Instruct.debug_event list
+)
+"symbols.ml" 136 4429 4436 "symbols.ml" 136 4429 4445
+type(
+  exn
+)
+"symbols.ml" 137 4449 4453 "symbols.ml" 137 4449 4455
+type(
+  Instruct.debug_event list
+)
+"symbols.ml" 134 4380 4382 "symbols.ml" 137 4449 4455
+type(
+  Instruct.debug_event list
+)
+"symbols.ml" 140 4508 4512 "symbols.ml" 140 4508 4522
+type(
+  Instruct.debug_event array -> int -> int
+)
+ident(
+  def find_event "symbols.ml" 158 5046 5046 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 140 4508 4523 "symbols.ml" 140 4508 4525
+type(
+  Instruct.debug_event array
+)
+ident(
+  def ev "symbols.ml" 140 4508 4526 "symbols.ml" 154 4893 4926
+)
+"symbols.ml" 140 4508 4526 "symbols.ml" 140 4508 4530
+type(
+  int
+)
+ident(
+  def char "symbols.ml" 141 4533 4535 "symbols.ml" 154 4893 4926
+)
+"symbols.ml" 141 4533 4543 "symbols.ml" 141 4533 4550
+type(
+  int -> int -> int
+)
+ident(
+  def bsearch "symbols.ml" 141 4533 4535 "symbols.ml" 154 4893 4926
+)
+"symbols.ml" 141 4533 4551 "symbols.ml" 141 4533 4553
+type(
+  int
+)
+ident(
+  def lo "symbols.ml" 141 4533 4554 "symbols.ml" 152 4880 4887
+)
+"symbols.ml" 141 4533 4554 "symbols.ml" 141 4533 4556
+type(
+  int
+)
+ident(
+  def hi "symbols.ml" 142 4559 4563 "symbols.ml" 152 4880 4887
+)
+"symbols.ml" 142 4559 4566 "symbols.ml" 142 4559 4568
+type(
+  int
+)
+ident(
+  int_ref lo "symbols.ml" 141 4533 4551 "symbols.ml" 141 4533 4553
+)
+"symbols.ml" 142 4559 4569 "symbols.ml" 142 4559 4571
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"symbols.ml" 142 4559 4572 "symbols.ml" 142 4559 4574
+type(
+  int
+)
+ident(
+  int_ref hi "symbols.ml" 141 4533 4554 "symbols.ml" 141 4533 4556
+)
+"symbols.ml" 142 4559 4566 "symbols.ml" 142 4559 4574
+type(
+  bool
+)
+"symbols.ml" 143 4586 4596 "symbols.ml" 143 4586 4610
+type(
+  Instruct.debug_event -> Lexing.position
+)
+ident(
+  ext_ref Events.get_pos
+)
+"symbols.ml" 143 4586 4611 "symbols.ml" 143 4586 4613
+type(
+  Instruct.debug_event array
+)
+ident(
+  int_ref ev "symbols.ml" 140 4508 4523 "symbols.ml" 140 4508 4525
+)
+"symbols.ml" 143 4586 4615 "symbols.ml" 143 4586 4617
+type(
+  int
+)
+ident(
+  int_ref hi "symbols.ml" 141 4533 4554 "symbols.ml" 141 4533 4556
+)
+"symbols.ml" 143 4586 4611 "symbols.ml" 143 4586 4618
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 143 4586 4595 "symbols.ml" 143 4586 4619
+call(
+  stack
+)
+type(
+  Lexing.position
+)
+"symbols.ml" 143 4586 4595 "symbols.ml" 143 4586 4635
+type(
+  int
+)
+"symbols.ml" 143 4586 4636 "symbols.ml" 143 4586 4637
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"symbols.ml" 143 4586 4638 "symbols.ml" 143 4586 4642
+type(
+  int
+)
+ident(
+  int_ref char "symbols.ml" 140 4508 4526 "symbols.ml" 140 4508 4530
+)
+"symbols.ml" 143 4586 4595 "symbols.ml" 143 4586 4642
+type(
+  bool
+)
+"symbols.ml" 144 4643 4654 "symbols.ml" 144 4643 4659
+type(
+  exn -> int
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"symbols.ml" 144 4643 4660 "symbols.ml" 144 4643 4669
+type(
+  exn
+)
+"symbols.ml" 144 4643 4654 "symbols.ml" 144 4643 4669
+type(
+  int
+)
+"symbols.ml" 145 4670 4681 "symbols.ml" 145 4670 4683
+type(
+  int
+)
+ident(
+  int_ref hi "symbols.ml" 141 4533 4554 "symbols.ml" 141 4533 4556
+)
+"symbols.ml" 142 4559 4580 "symbols.ml" 146 4684 4691
+type(
+  int
+)
+"symbols.ml" 147 4703 4713 "symbols.ml" 147 4703 4718
+type(
+  int
+)
+ident(
+  def pivot "symbols.ml" 148 4738 4744 "symbols.ml" 151 4846 4879
+)
+"symbols.ml" 147 4703 4722 "symbols.ml" 147 4703 4724
+type(
+  int
+)
+ident(
+  int_ref lo "symbols.ml" 141 4533 4551 "symbols.ml" 141 4533 4553
+)
+"symbols.ml" 147 4703 4725 "symbols.ml" 147 4703 4726
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"symbols.ml" 147 4703 4727 "symbols.ml" 147 4703 4729
+type(
+  int
+)
+ident(
+  int_ref hi "symbols.ml" 141 4533 4554 "symbols.ml" 141 4533 4556
+)
+"symbols.ml" 147 4703 4721 "symbols.ml" 147 4703 4730
+type(
+  int
+)
+"symbols.ml" 147 4703 4731 "symbols.ml" 147 4703 4732
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"symbols.ml" 147 4703 4733 "symbols.ml" 147 4703 4734
+type(
+  int
+)
+"symbols.ml" 147 4703 4721 "symbols.ml" 147 4703 4734
+type(
+  int
+)
+"symbols.ml" 148 4738 4748 "symbols.ml" 148 4738 4749
+type(
+  Instruct.debug_event
+)
+ident(
+  def e "symbols.ml" 149 4766 4772 "symbols.ml" 151 4846 4879
+)
+"symbols.ml" 148 4738 4752 "symbols.ml" 148 4738 4754
+type(
+  Instruct.debug_event array
+)
+ident(
+  int_ref ev "symbols.ml" 140 4508 4523 "symbols.ml" 140 4508 4525
+)
+"symbols.ml" 148 4738 4756 "symbols.ml" 148 4738 4761
+type(
+  int
+)
+ident(
+  int_ref pivot "symbols.ml" 147 4703 4713 "symbols.ml" 147 4703 4718
+)
+"symbols.ml" 148 4738 4752 "symbols.ml" 148 4738 4762
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 149 4766 4775 "symbols.ml" 149 4766 4779
+type(
+  int
+)
+ident(
+  int_ref char "symbols.ml" 140 4508 4526 "symbols.ml" 140 4508 4530
+)
+"symbols.ml" 149 4766 4780 "symbols.ml" 149 4766 4782
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"symbols.ml" 149 4766 4784 "symbols.ml" 149 4766 4798
+type(
+  Instruct.debug_event -> Lexing.position
+)
+ident(
+  ext_ref Events.get_pos
+)
+"symbols.ml" 149 4766 4799 "symbols.ml" 149 4766 4800
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref e "symbols.ml" 148 4738 4748 "symbols.ml" 148 4738 4749
+)
+"symbols.ml" 149 4766 4783 "symbols.ml" 149 4766 4801
+call(
+  stack
+)
+type(
+  Lexing.position
+)
+"symbols.ml" 149 4766 4783 "symbols.ml" 149 4766 4817
+type(
+  int
+)
+"symbols.ml" 149 4766 4775 "symbols.ml" 149 4766 4817
+type(
+  bool
+)
+"symbols.ml" 150 4818 4829 "symbols.ml" 150 4818 4836
+type(
+  int -> int -> int
+)
+ident(
+  int_ref bsearch "symbols.ml" 141 4533 4543 "symbols.ml" 141 4533 4550
+)
+"symbols.ml" 150 4818 4837 "symbols.ml" 150 4818 4839
+type(
+  int
+)
+ident(
+  int_ref lo "symbols.ml" 141 4533 4551 "symbols.ml" 141 4533 4553
+)
+"symbols.ml" 150 4818 4840 "symbols.ml" 150 4818 4845
+type(
+  int
+)
+ident(
+  int_ref pivot "symbols.ml" 147 4703 4713 "symbols.ml" 147 4703 4718
+)
+"symbols.ml" 150 4818 4829 "symbols.ml" 150 4818 4845
+call(
+  tail
+)
+type(
+  int
+)
+"symbols.ml" 151 4846 4857 "symbols.ml" 151 4846 4864
+type(
+  int -> int -> int
+)
+ident(
+  int_ref bsearch "symbols.ml" 141 4533 4543 "symbols.ml" 141 4533 4550
+)
+"symbols.ml" 151 4846 4866 "symbols.ml" 151 4846 4871
+type(
+  int
+)
+ident(
+  int_ref pivot "symbols.ml" 147 4703 4713 "symbols.ml" 147 4703 4718
+)
+"symbols.ml" 151 4846 4872 "symbols.ml" 151 4846 4873
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"symbols.ml" 151 4846 4874 "symbols.ml" 151 4846 4875
+type(
+  int
+)
+"symbols.ml" 151 4846 4865 "symbols.ml" 151 4846 4876
+type(
+  int
+)
+"symbols.ml" 151 4846 4877 "symbols.ml" 151 4846 4879
+type(
+  int
+)
+ident(
+  int_ref hi "symbols.ml" 141 4533 4554 "symbols.ml" 141 4533 4556
+)
+"symbols.ml" 151 4846 4857 "symbols.ml" 151 4846 4879
+call(
+  tail
+)
+type(
+  int
+)
+"symbols.ml" 149 4766 4772 "symbols.ml" 151 4846 4879
+type(
+  int
+)
+"symbols.ml" 148 4738 4744 "symbols.ml" 151 4846 4879
+type(
+  int
+)
+"symbols.ml" 146 4684 4697 "symbols.ml" 152 4880 4887
+type(
+  int
+)
+"symbols.ml" 142 4559 4563 "symbols.ml" 152 4880 4887
+type(
+  int
+)
+"symbols.ml" 154 4893 4895 "symbols.ml" 154 4893 4902
+type(
+  int -> int -> int
+)
+ident(
+  int_ref bsearch "symbols.ml" 141 4533 4543 "symbols.ml" 141 4533 4550
+)
+"symbols.ml" 154 4893 4903 "symbols.ml" 154 4893 4904
+type(
+  int
+)
+"symbols.ml" 154 4893 4906 "symbols.ml" 154 4893 4918
+type(
+  Instruct.debug_event array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"symbols.ml" 154 4893 4919 "symbols.ml" 154 4893 4921
+type(
+  Instruct.debug_event array
+)
+ident(
+  int_ref ev "symbols.ml" 140 4508 4523 "symbols.ml" 140 4508 4525
+)
+"symbols.ml" 154 4893 4906 "symbols.ml" 154 4893 4921
+type(
+  int
+)
+"symbols.ml" 154 4893 4922 "symbols.ml" 154 4893 4923
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"symbols.ml" 154 4893 4924 "symbols.ml" 154 4893 4925
+type(
+  int
+)
+"symbols.ml" 154 4893 4905 "symbols.ml" 154 4893 4926
+type(
+  int
+)
+"symbols.ml" 154 4893 4895 "symbols.ml" 154 4893 4926
+call(
+  tail
+)
+type(
+  int
+)
+"symbols.ml" 141 4533 4535 "symbols.ml" 154 4893 4926
+type(
+  int
+)
+"symbols.ml" 158 5046 5050 "symbols.ml" 158 5046 5062
+type(
+  string -> int -> Instruct.debug_event
+)
+ident(
+  def event_at_pos "symbols.ml" 164 5259 5259 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 158 5046 5063 "symbols.ml" 158 5046 5065
+type(
+  string
+)
+ident(
+  def md "symbols.ml" 158 5046 5066 "symbols.ml" 160 5120 5145
+)
+"symbols.ml" 158 5046 5066 "symbols.ml" 158 5046 5070
+type(
+  int
+)
+ident(
+  def char "symbols.ml" 159 5073 5075 "symbols.ml" 160 5120 5145
+)
+"symbols.ml" 159 5073 5079 "symbols.ml" 159 5073 5081
+type(
+  Instruct.debug_event array
+)
+ident(
+  def ev "symbols.ml" 160 5120 5122 "symbols.ml" 160 5120 5145
+)
+"symbols.ml" 159 5073 5084 "symbols.ml" 159 5073 5096
+type(
+  (string, Instruct.debug_event array) Hashtbl.t ->
+  string -> Instruct.debug_event array
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"symbols.ml" 159 5073 5097 "symbols.ml" 159 5073 5113
+type(
+  (string, Instruct.debug_event array) Hashtbl.t
+)
+ident(
+  int_ref events_by_module "symbols.ml" 32 1260 1264 "symbols.ml" 32 1260 1280
+)
+"symbols.ml" 159 5073 5114 "symbols.ml" 159 5073 5116
+type(
+  string
+)
+ident(
+  int_ref md "symbols.ml" 158 5046 5063 "symbols.ml" 158 5046 5065
+)
+"symbols.ml" 159 5073 5084 "symbols.ml" 159 5073 5116
+call(
+  stack
+)
+type(
+  Instruct.debug_event array
+)
+"symbols.ml" 160 5120 5122 "symbols.ml" 160 5120 5124
+type(
+  Instruct.debug_event array
+)
+ident(
+  int_ref ev "symbols.ml" 159 5073 5079 "symbols.ml" 159 5073 5081
+)
+"symbols.ml" 160 5120 5126 "symbols.ml" 160 5120 5136
+type(
+  Instruct.debug_event array -> int -> int
+)
+ident(
+  int_ref find_event "symbols.ml" 140 4508 4512 "symbols.ml" 140 4508 4522
+)
+"symbols.ml" 160 5120 5137 "symbols.ml" 160 5120 5139
+type(
+  Instruct.debug_event array
+)
+ident(
+  int_ref ev "symbols.ml" 159 5073 5079 "symbols.ml" 159 5073 5081
+)
+"symbols.ml" 160 5120 5140 "symbols.ml" 160 5120 5144
+type(
+  int
+)
+ident(
+  int_ref char "symbols.ml" 158 5046 5066 "symbols.ml" 158 5046 5070
+)
+"symbols.ml" 160 5120 5126 "symbols.ml" 160 5120 5144
+call(
+  stack
+)
+type(
+  int
+)
+"symbols.ml" 160 5120 5122 "symbols.ml" 160 5120 5145
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 159 5073 5075 "symbols.ml" 160 5120 5145
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 164 5259 5263 "symbols.ml" 164 5259 5277
+type(
+  string -> int -> Instruct.debug_event
+)
+ident(
+  def event_near_pos "symbols.ml" 180 5797 5797 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 164 5259 5278 "symbols.ml" 164 5259 5280
+type(
+  string
+)
+ident(
+  def md "symbols.ml" 164 5259 5281 "symbols.ml" 177 5740 5752
+)
+"symbols.ml" 164 5259 5281 "symbols.ml" 164 5259 5285
+type(
+  int
+)
+ident(
+  def char "symbols.ml" 165 5288 5290 "symbols.ml" 177 5740 5752
+)
+"symbols.ml" 165 5288 5294 "symbols.ml" 165 5288 5296
+type(
+  Instruct.debug_event array
+)
+ident(
+  def ev "symbols.ml" 166 5335 5337 "symbols.ml" 177 5740 5752
+)
+"symbols.ml" 165 5288 5299 "symbols.ml" 165 5288 5311
+type(
+  (string, Instruct.debug_event array) Hashtbl.t ->
+  string -> Instruct.debug_event array
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"symbols.ml" 165 5288 5312 "symbols.ml" 165 5288 5328
+type(
+  (string, Instruct.debug_event array) Hashtbl.t
+)
+ident(
+  int_ref events_by_module "symbols.ml" 32 1260 1264 "symbols.ml" 32 1260 1280
+)
+"symbols.ml" 165 5288 5329 "symbols.ml" 165 5288 5331
+type(
+  string
+)
+ident(
+  int_ref md "symbols.ml" 164 5259 5278 "symbols.ml" 164 5259 5280
+)
+"symbols.ml" 165 5288 5299 "symbols.ml" 165 5288 5331
+call(
+  stack
+)
+type(
+  Instruct.debug_event array
+)
+"symbols.ml" 167 5341 5349 "symbols.ml" 167 5341 5352
+type(
+  int
+)
+ident(
+  def pos "symbols.ml" 170 5465 5469 "symbols.ml" 173 5628 5645
+)
+"symbols.ml" 167 5341 5355 "symbols.ml" 167 5341 5365
+type(
+  Instruct.debug_event array -> int -> int
+)
+ident(
+  int_ref find_event "symbols.ml" 140 4508 4512 "symbols.ml" 140 4508 4522
+)
+"symbols.ml" 167 5341 5366 "symbols.ml" 167 5341 5368
+type(
+  Instruct.debug_event array
+)
+ident(
+  int_ref ev "symbols.ml" 165 5288 5294 "symbols.ml" 165 5288 5296
+)
+"symbols.ml" 167 5341 5369 "symbols.ml" 167 5341 5373
+type(
+  int
+)
+ident(
+  int_ref char "symbols.ml" 164 5259 5281 "symbols.ml" 164 5259 5285
+)
+"symbols.ml" 167 5341 5355 "symbols.ml" 167 5341 5373
+call(
+  stack
+)
+type(
+  int
+)
+"symbols.ml" 170 5465 5472 "symbols.ml" 170 5465 5475
+type(
+  int
+)
+ident(
+  int_ref pos "symbols.ml" 167 5341 5349 "symbols.ml" 167 5341 5352
+)
+"symbols.ml" 170 5465 5476 "symbols.ml" 170 5465 5477
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"symbols.ml" 170 5465 5478 "symbols.ml" 170 5465 5479
+type(
+  int
+)
+"symbols.ml" 170 5465 5472 "symbols.ml" 170 5465 5479
+type(
+  bool
+)
+"symbols.ml" 170 5465 5480 "symbols.ml" 170 5465 5482
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"symbols.ml" 170 5465 5483 "symbols.ml" 170 5465 5487
+type(
+  int
+)
+ident(
+  int_ref char "symbols.ml" 164 5259 5281 "symbols.ml" 164 5259 5285
+)
+"symbols.ml" 170 5465 5488 "symbols.ml" 170 5465 5489
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"symbols.ml" 170 5465 5491 "symbols.ml" 170 5465 5505
+type(
+  Instruct.debug_event -> Lexing.position
+)
+ident(
+  ext_ref Events.get_pos
+)
+"symbols.ml" 170 5465 5506 "symbols.ml" 170 5465 5508
+type(
+  Instruct.debug_event array
+)
+ident(
+  int_ref ev "symbols.ml" 165 5288 5294 "symbols.ml" 165 5288 5296
+)
+"symbols.ml" 170 5465 5510 "symbols.ml" 170 5465 5513
+type(
+  int
+)
+ident(
+  int_ref pos "symbols.ml" 167 5341 5349 "symbols.ml" 167 5341 5352
+)
+"symbols.ml" 170 5465 5514 "symbols.ml" 170 5465 5515
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"symbols.ml" 170 5465 5516 "symbols.ml" 170 5465 5517
+type(
+  int
+)
+"symbols.ml" 170 5465 5510 "symbols.ml" 170 5465 5517
+type(
+  int
+)
+"symbols.ml" 170 5465 5506 "symbols.ml" 170 5465 5518
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 170 5465 5490 "symbols.ml" 170 5465 5519
+call(
+  stack
+)
+type(
+  Lexing.position
+)
+"symbols.ml" 170 5465 5490 "symbols.ml" 170 5465 5535
+type(
+  int
+)
+"symbols.ml" 170 5465 5483 "symbols.ml" 170 5465 5535
+type(
+  int
+)
+"symbols.ml" 171 5536 5554 "symbols.ml" 171 5536 5556
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"symbols.ml" 171 5536 5558 "symbols.ml" 171 5536 5572
+type(
+  Instruct.debug_event -> Lexing.position
+)
+ident(
+  ext_ref Events.get_pos
+)
+"symbols.ml" 171 5536 5573 "symbols.ml" 171 5536 5575
+type(
+  Instruct.debug_event array
+)
+ident(
+  int_ref ev "symbols.ml" 165 5288 5294 "symbols.ml" 165 5288 5296
+)
+"symbols.ml" 171 5536 5577 "symbols.ml" 171 5536 5580
+type(
+  int
+)
+ident(
+  int_ref pos "symbols.ml" 167 5341 5349 "symbols.ml" 167 5341 5352
+)
+"symbols.ml" 171 5536 5573 "symbols.ml" 171 5536 5581
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 171 5536 5557 "symbols.ml" 171 5536 5582
+call(
+  stack
+)
+type(
+  Lexing.position
+)
+"symbols.ml" 171 5536 5557 "symbols.ml" 171 5536 5598
+type(
+  int
+)
+"symbols.ml" 171 5536 5599 "symbols.ml" 171 5536 5600
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"symbols.ml" 171 5536 5601 "symbols.ml" 171 5536 5605
+type(
+  int
+)
+ident(
+  int_ref char "symbols.ml" 164 5259 5281 "symbols.ml" 164 5259 5285
+)
+"symbols.ml" 171 5536 5557 "symbols.ml" 171 5536 5605
+type(
+  int
+)
+"symbols.ml" 170 5465 5483 "symbols.ml" 171 5536 5605
+type(
+  bool
+)
+"symbols.ml" 170 5465 5472 "symbols.ml" 171 5536 5605
+type(
+  bool
+)
+"symbols.ml" 172 5606 5615 "symbols.ml" 172 5606 5617
+type(
+  Instruct.debug_event array
+)
+ident(
+  int_ref ev "symbols.ml" 165 5288 5294 "symbols.ml" 165 5288 5296
+)
+"symbols.ml" 172 5606 5619 "symbols.ml" 172 5606 5622
+type(
+  int
+)
+ident(
+  int_ref pos "symbols.ml" 167 5341 5349 "symbols.ml" 167 5341 5352
+)
+"symbols.ml" 172 5606 5623 "symbols.ml" 172 5606 5624
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"symbols.ml" 172 5606 5625 "symbols.ml" 172 5606 5626
+type(
+  int
+)
+"symbols.ml" 172 5606 5619 "symbols.ml" 172 5606 5626
+type(
+  int
+)
+"symbols.ml" 172 5606 5615 "symbols.ml" 172 5606 5627
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 173 5628 5637 "symbols.ml" 173 5628 5639
+type(
+  Instruct.debug_event array
+)
+ident(
+  int_ref ev "symbols.ml" 165 5288 5294 "symbols.ml" 165 5288 5296
+)
+"symbols.ml" 173 5628 5641 "symbols.ml" 173 5628 5644
+type(
+  int
+)
+ident(
+  int_ref pos "symbols.ml" 167 5341 5349 "symbols.ml" 167 5341 5352
+)
+"symbols.ml" 173 5628 5637 "symbols.ml" 173 5628 5645
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 170 5465 5469 "symbols.ml" 173 5628 5645
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 167 5341 5345 "symbols.ml" 173 5628 5645
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 174 5646 5653 "symbols.ml" 174 5646 5662
+type(
+  exn
+)
+"symbols.ml" 175 5666 5674 "symbols.ml" 175 5666 5677
+type(
+  int
+)
+ident(
+  def pos "symbols.ml" 176 5703 5707 "symbols.ml" 177 5740 5752
+)
+"symbols.ml" 175 5666 5680 "symbols.ml" 175 5666 5692
+type(
+  Instruct.debug_event array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"symbols.ml" 175 5666 5693 "symbols.ml" 175 5666 5695
+type(
+  Instruct.debug_event array
+)
+ident(
+  int_ref ev "symbols.ml" 165 5288 5294 "symbols.ml" 165 5288 5296
+)
+"symbols.ml" 175 5666 5680 "symbols.ml" 175 5666 5695
+type(
+  int
+)
+"symbols.ml" 175 5666 5696 "symbols.ml" 175 5666 5697
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"symbols.ml" 175 5666 5698 "symbols.ml" 175 5666 5699
+type(
+  int
+)
+"symbols.ml" 175 5666 5680 "symbols.ml" 175 5666 5699
+type(
+  int
+)
+"symbols.ml" 176 5703 5710 "symbols.ml" 176 5703 5713
+type(
+  int
+)
+ident(
+  int_ref pos "symbols.ml" 175 5666 5674 "symbols.ml" 175 5666 5677
+)
+"symbols.ml" 176 5703 5714 "symbols.ml" 176 5703 5715
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"symbols.ml" 176 5703 5716 "symbols.ml" 176 5703 5717
+type(
+  int
+)
+"symbols.ml" 176 5703 5710 "symbols.ml" 176 5703 5717
+type(
+  bool
+)
+"symbols.ml" 176 5703 5723 "symbols.ml" 176 5703 5728
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"symbols.ml" 176 5703 5729 "symbols.ml" 176 5703 5738
+type(
+  exn
+)
+"symbols.ml" 176 5703 5723 "symbols.ml" 176 5703 5738
+type(
+  unit
+)
+"symbols.ml" 176 5703 5707 "symbols.ml" 176 5703 5738
+type(
+  unit
+)
+"symbols.ml" 177 5740 5744 "symbols.ml" 177 5740 5746
+type(
+  Instruct.debug_event array
+)
+ident(
+  int_ref ev "symbols.ml" 165 5288 5294 "symbols.ml" 165 5288 5296
+)
+"symbols.ml" 177 5740 5748 "symbols.ml" 177 5740 5751
+type(
+  int
+)
+ident(
+  int_ref pos "symbols.ml" 175 5666 5674 "symbols.ml" 175 5666 5677
+)
+"symbols.ml" 177 5740 5744 "symbols.ml" 177 5740 5752
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 176 5703 5707 "symbols.ml" 177 5740 5752
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 175 5666 5670 "symbols.ml" 177 5740 5752
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 166 5335 5337 "symbols.ml" 177 5740 5752
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 165 5288 5290 "symbols.ml" 177 5740 5752
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 180 5797 5801 "symbols.ml" 180 5797 5815
+type(
+  unit -> unit
+)
+ident(
+  def set_all_events "symbols.ml" 192 6097 6097 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 180 5797 5816 "symbols.ml" 180 5797 5818
+type(
+  unit
+)
+"symbols.ml" 181 5821 5823 "symbols.ml" 181 5821 5835
+type(
+  (int -> Instruct.debug_event -> unit) ->
+  (int, Instruct.debug_event) Hashtbl.t -> unit
+)
+ident(
+  ext_ref Hashtbl.iter
+)
+"symbols.ml" 182 5836 5845 "symbols.ml" 182 5836 5847
+type(
+  int
+)
+ident(
+  def pc "symbols.ml" 182 5836 5848 "symbols.ml" 185 5911 5964
+)
+"symbols.ml" 182 5836 5848 "symbols.ml" 182 5836 5850
+type(
+  Instruct.debug_event
+)
+ident(
+  def ev "symbols.ml" 183 5854 5861 "symbols.ml" 185 5911 5964
+)
+"symbols.ml" 183 5854 5867 "symbols.ml" 183 5854 5869
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "symbols.ml" 182 5836 5848 "symbols.ml" 182 5836 5850
+)
+"symbols.ml" 183 5854 5867 "symbols.ml" 183 5854 5877
+type(
+  Instruct.debug_event_kind
+)
+"symbols.ml" 184 5883 5892 "symbols.ml" 184 5883 5904
+type(
+  Instruct.debug_event_kind
+)
+"symbols.ml" 184 5883 5908 "symbols.ml" 184 5883 5910
+type(
+  unit
+)
+"symbols.ml" 185 5911 5920 "symbols.ml" 185 5911 5921
+type(
+  Instruct.debug_event_kind
+)
+"symbols.ml" 185 5911 5936 "symbols.ml" 185 5911 5954
+type(
+  int -> unit
+)
+ident(
+  ext_ref Debugcom.set_event
+)
+"symbols.ml" 185 5911 5955 "symbols.ml" 185 5911 5957
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "symbols.ml" 182 5836 5848 "symbols.ml" 182 5836 5850
+)
+"symbols.ml" 185 5911 5955 "symbols.ml" 185 5911 5964
+type(
+  int
+)
+"symbols.ml" 185 5911 5936 "symbols.ml" 185 5911 5964
+call(
+  tail
+)
+type(
+  unit
+)
+"symbols.ml" 183 5854 5861 "symbols.ml" 185 5911 5964
+type(
+  unit
+)
+"symbols.ml" 182 5836 5840 "symbols.ml" 185 5911 5965
+type(
+  int -> Instruct.debug_event -> unit
+)
+"symbols.ml" 186 5966 5970 "symbols.ml" 186 5966 5982
+type(
+  (int, Instruct.debug_event) Hashtbl.t
+)
+ident(
+  int_ref events_by_pc "symbols.ml" 30 1187 1191 "symbols.ml" 30 1187 1203
+)
+"symbols.ml" 181 5821 5823 "symbols.ml" 186 5966 5982
+call(
+  tail
+)
+type(
+  unit
+)
+"symbols.ml" 192 6097 6101 "symbols.ml" 192 6097 6107
+type(
+  int option ref
+)
+ident(
+  def old_pc "symbols.ml" 195 6169 6169 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 192 6097 6110 "symbols.ml" 192 6097 6113
+type(
+  int option -> int option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"symbols.ml" 192 6097 6115 "symbols.ml" 192 6097 6119
+type(
+  int option
+)
+type(
+  int option
+)
+"symbols.ml" 192 6097 6110 "symbols.ml" 192 6097 6133
+type(
+  int option ref
+)
+"symbols.ml" 195 6169 6173 "symbols.ml" 195 6169 6193
+type(
+  unit -> unit
+)
+ident(
+  def update_current_event "symbols.ml" 209 6523 6531 "symbols.ml" 1 0 -1
+)
+"symbols.ml" 195 6169 6194 "symbols.ml" 195 6169 6196
+type(
+  unit
+)
+"symbols.ml" 196 6199 6207 "symbols.ml" 196 6199 6229
+type(
+  unit -> int option
+)
+ident(
+  ext_ref Checkpoints.current_pc
+)
+"symbols.ml" 196 6199 6230 "symbols.ml" 196 6199 6232
+type(
+  unit
+)
+"symbols.ml" 196 6199 6207 "symbols.ml" 196 6199 6232
+call(
+  stack
+)
+type(
+  int option
+)
+"symbols.ml" 197 6238 6242 "symbols.ml" 197 6238 6246
+type(
+  int option
+)
+"symbols.ml" 198 6250 6256 "symbols.ml" 198 6250 6276
+type(
+  Instruct.debug_event option ref
+)
+ident(
+  ext_ref Events.current_event
+)
+"symbols.ml" 198 6250 6277 "symbols.ml" 198 6250 6279
+type(
+  Instruct.debug_event option ref -> Instruct.debug_event option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"symbols.ml" 198 6250 6280 "symbols.ml" 198 6250 6284
+type(
+  Instruct.debug_event option
+)
+"symbols.ml" 198 6250 6256 "symbols.ml" 198 6250 6284
+type(
+  unit
+)
+"symbols.ml" 199 6286 6292 "symbols.ml" 199 6286 6298
+type(
+  int option ref
+)
+ident(
+  int_ref old_pc "symbols.ml" 192 6097 6101 "symbols.ml" 192 6097 6107
+)
+"symbols.ml" 199 6286 6299 "symbols.ml" 199 6286 6301
+type(
+  int option ref -> int option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"symbols.ml" 199 6286 6302 "symbols.ml" 199 6286 6306
+type(
+  int option
+)
+"symbols.ml" 199 6286 6292 "symbols.ml" 199 6286 6306
+type(
+  unit
+)
+"symbols.ml" 198 6250 6256 "symbols.ml" 199 6286 6306
+type(
+  unit
+)
+"symbols.ml" 200 6307 6317 "symbols.ml" 200 6307 6319
+type(
+  int
+)
+ident(
+  def pc "symbols.ml" 200 6307 6336 "symbols.ml" 207 6491 6513
+)
+"symbols.ml" 200 6307 6311 "symbols.ml" 200 6307 6320
+type(
+  int option
+)
+"symbols.ml" 200 6307 6324 "symbols.ml" 200 6307 6330
+ident(
+  def opt_pc "symbols.ml" 200 6307 6336 "symbols.ml" 207 6491 6513
+)
+"symbols.ml" 200 6307 6311 "symbols.ml" 200 6307 6330
+type(
+  int option
+)
+"symbols.ml" 200 6307 6336 "symbols.ml" 200 6307 6342
+type(
+  int option
+)
+ident(
+  int_ref opt_pc "symbols.ml" 200 6307 6311 "symbols.ml" 200 6307 6330
+)
+"symbols.ml" 200 6307 6343 "symbols.ml" 200 6307 6345
+type(
+  int option -> int option -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"symbols.ml" 200 6307 6346 "symbols.ml" 200 6307 6347
+type(
+  int option ref -> int option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"symbols.ml" 200 6307 6347 "symbols.ml" 200 6307 6353
+type(
+  int option ref
+)
+ident(
+  int_ref old_pc "symbols.ml" 192 6097 6101 "symbols.ml" 192 6097 6107
+)
+"symbols.ml" 200 6307 6346 "symbols.ml" 200 6307 6353
+type(
+  int option
+)
+"symbols.ml" 200 6307 6336 "symbols.ml" 200 6307 6353
+type(
+  bool
+)
+"symbols.ml" 201 6357 6363 "symbols.ml" 201 6357 6383
+type(
+  Instruct.debug_event option ref
+)
+ident(
+  ext_ref Events.current_event
+)
+"symbols.ml" 201 6357 6384 "symbols.ml" 201 6357 6386
+type(
+  Instruct.debug_event option ref -> Instruct.debug_event option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"symbols.ml" 203 6405 6421 "symbols.ml" 203 6405 6432
+type(
+  int -> Instruct.debug_event
+)
+ident(
+  int_ref event_at_pc "symbols.ml" 122 4083 4087 "symbols.ml" 122 4083 4098
+)
+"symbols.ml" 203 6405 6433 "symbols.ml" 203 6405 6435
+type(
+  int
+)
+ident(
+  int_ref pc "symbols.ml" 200 6307 6317 "symbols.ml" 200 6307 6319
+)
+"symbols.ml" 203 6405 6420 "symbols.ml" 203 6405 6436
+call(
+  stack
+)
+type(
+  Instruct.debug_event
+)
+"symbols.ml" 203 6405 6415 "symbols.ml" 203 6405 6436
+type(
+  Instruct.debug_event option
+)
+"symbols.ml" 204 6437 6450 "symbols.ml" 204 6437 6459
+type(
+  exn
+)
+"symbols.ml" 205 6463 6473 "symbols.ml" 205 6463 6477
+type(
+  Instruct.debug_event option
+)
+"symbols.ml" 202 6387 6395 "symbols.ml" 206 6478 6489
+type(
+  Instruct.debug_event option
+)
+"symbols.ml" 201 6357 6363 "symbols.ml" 206 6478 6489
+type(
+  unit
+)
+"symbols.ml" 207 6491 6497 "symbols.ml" 207 6491 6503
+type(
+  int option ref
+)
+ident(
+  int_ref old_pc "symbols.ml" 192 6097 6101 "symbols.ml" 192 6097 6107
+)
+"symbols.ml" 207 6491 6504 "symbols.ml" 207 6491 6506
+type(
+  int option ref -> int option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"symbols.ml" 207 6491 6507 "symbols.ml" 207 6491 6513
+type(
+  int option
+)
+ident(
+  int_ref opt_pc "symbols.ml" 200 6307 6311 "symbols.ml" 200 6307 6330
+)
+"symbols.ml" 207 6491 6497 "symbols.ml" 207 6491 6513
+type(
+  unit
+)
+"symbols.ml" 201 6357 6363 "symbols.ml" 207 6491 6513
+type(
+  unit
+)
+"symbols.ml" 208 6514 6518 "symbols.ml" 208 6514 6519
+type(
+  int option
+)
+"symbols.ml" 209 6523 6529 "symbols.ml" 209 6523 6531
+type(
+  unit
+)
+"symbols.ml" 196 6199 6201 "symbols.ml" 209 6523 6531
+type(
+  unit
+)

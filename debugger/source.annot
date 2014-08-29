@@ -1,0 +1,2970 @@
+"source.ml" 19 991 995 "source.ml" 19 991 1012
+type(
+  string list
+)
+ident(
+  def source_extensions "source.ml" 23 1056 1056 "source.ml" 1 0 -1
+)
+"source.ml" 19 991 1016 "source.ml" 19 991 1021
+type(
+  string
+)
+"source.ml" 19 991 1015 "source.ml" 19 991 1022
+type(
+  string list
+)
+"source.ml" 23 1056 1060 "source.ml" 23 1056 1076
+type(
+  Lexing.position -> string -> string
+)
+ident(
+  def source_of_module "source.ml" 61 2136 2136 "source.ml" 1 0 -1
+)
+"source.ml" 23 1056 1077 "source.ml" 23 1056 1080
+type(
+  Lexing.position
+)
+ident(
+  def pos "source.ml" 23 1056 1081 "source.ml" 56 2028 2037
+)
+"source.ml" 23 1056 1081 "source.ml" 23 1056 1085
+type(
+  string
+)
+ident(
+  def mdle "source.ml" 24 1088 1090 "source.ml" 56 2028 2037
+)
+"source.ml" 24 1088 1094 "source.ml" 24 1088 1106
+type(
+  string -> string -> bool
+)
+ident(
+  def is_submodule "source.ml" 30 1267 1269 "source.ml" 56 2028 2037
+)
+"source.ml" 24 1088 1107 "source.ml" 24 1088 1108
+type(
+  string
+)
+ident(
+  def m "source.ml" 24 1088 1109 "source.ml" 29 1228 1263
+)
+"source.ml" 24 1088 1109 "source.ml" 24 1088 1111
+type(
+  string
+)
+ident(
+  def m' "source.ml" 25 1114 1118 "source.ml" 29 1228 1263
+)
+"source.ml" 25 1114 1122 "source.ml" 25 1114 1126
+type(
+  int
+)
+ident(
+  def len' "source.ml" 26 1149 1153 "source.ml" 29 1228 1263
+)
+"source.ml" 25 1114 1129 "source.ml" 25 1114 1142
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"source.ml" 25 1114 1143 "source.ml" 25 1114 1145
+type(
+  string
+)
+ident(
+  int_ref m' "source.ml" 24 1088 1109 "source.ml" 24 1088 1111
+)
+"source.ml" 25 1114 1129 "source.ml" 25 1114 1145
+type(
+  int
+)
+"source.ml" 27 1157 1164 "source.ml" 27 1157 1174
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"source.ml" 27 1157 1175 "source.ml" 27 1157 1176
+type(
+  string
+)
+ident(
+  int_ref m "source.ml" 24 1088 1107 "source.ml" 24 1088 1108
+)
+"source.ml" 27 1157 1177 "source.ml" 27 1157 1178
+type(
+  int
+)
+"source.ml" 27 1157 1179 "source.ml" 27 1157 1183
+type(
+  int
+)
+ident(
+  int_ref len' "source.ml" 25 1114 1122 "source.ml" 25 1114 1126
+)
+"source.ml" 27 1157 1163 "source.ml" 27 1157 1184
+call(
+  stack
+)
+type(
+  string
+)
+"source.ml" 27 1157 1185 "source.ml" 27 1157 1186
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"source.ml" 27 1157 1187 "source.ml" 27 1157 1189
+type(
+  string
+)
+ident(
+  int_ref m' "source.ml" 24 1088 1109 "source.ml" 24 1088 1111
+)
+"source.ml" 27 1157 1163 "source.ml" 27 1157 1189
+type(
+  bool
+)
+"source.ml" 27 1157 1190 "source.ml" 27 1157 1192
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"source.ml" 27 1157 1194 "source.ml" 27 1157 1204
+type(
+  string -> int -> char
+)
+ident(
+  ext_ref String.get
+)
+"source.ml" 27 1157 1205 "source.ml" 27 1157 1206
+type(
+  string
+)
+ident(
+  int_ref m "source.ml" 24 1088 1107 "source.ml" 24 1088 1108
+)
+"source.ml" 27 1157 1207 "source.ml" 27 1157 1211
+type(
+  int
+)
+ident(
+  int_ref len' "source.ml" 25 1114 1122 "source.ml" 25 1114 1126
+)
+"source.ml" 27 1157 1193 "source.ml" 27 1157 1212
+type(
+  char
+)
+"source.ml" 27 1157 1213 "source.ml" 27 1157 1214
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"source.ml" 27 1157 1215 "source.ml" 27 1157 1218
+type(
+  char
+)
+"source.ml" 27 1157 1193 "source.ml" 27 1157 1218
+type(
+  bool
+)
+"source.ml" 27 1157 1163 "source.ml" 27 1157 1218
+type(
+  bool
+)
+"source.ml" 29 1228 1253 "source.ml" 29 1228 1254
+type(
+  string
+)
+"source.ml" 29 1228 1236 "source.ml" 29 1228 1254
+type(
+  exn
+)
+"source.ml" 29 1228 1258 "source.ml" 29 1228 1263
+type(
+  bool
+)
+"source.ml" 26 1149 1153 "source.ml" 29 1228 1263
+type(
+  bool
+)
+"source.ml" 25 1114 1118 "source.ml" 29 1228 1263
+type(
+  bool
+)
+"source.ml" 30 1267 1273 "source.ml" 30 1267 1277
+type(
+  string list
+)
+ident(
+  def path "source.ml" 39 1468 1470 "source.ml" 56 2028 2037
+)
+"source.ml" 31 1280 1284 "source.ml" 31 1280 1296
+type(
+  (string -> string list -> string list -> string list) ->
+  (string, string list) Hashtbl.t -> string list -> string list
+)
+ident(
+  ext_ref Hashtbl.fold
+)
+"source.ml" 32 1297 1308 "source.ml" 32 1297 1311
+type(
+  string
+)
+ident(
+  def mdl "source.ml" 32 1297 1312 "source.ml" 36 1390 1403
+)
+"source.ml" 32 1297 1312 "source.ml" 32 1297 1316
+type(
+  string list
+)
+ident(
+  def dirs "source.ml" 32 1297 1317 "source.ml" 36 1390 1403
+)
+"source.ml" 32 1297 1317 "source.ml" 32 1297 1320
+type(
+  string list
+)
+ident(
+  def acc "source.ml" 33 1324 1332 "source.ml" 36 1390 1403
+)
+"source.ml" 33 1324 1335 "source.ml" 33 1324 1347
+type(
+  string -> string -> bool
+)
+ident(
+  int_ref is_submodule "source.ml" 24 1088 1094 "source.ml" 24 1088 1106
+)
+"source.ml" 33 1324 1348 "source.ml" 33 1324 1352
+type(
+  string
+)
+ident(
+  int_ref mdle "source.ml" 23 1056 1081 "source.ml" 23 1056 1085
+)
+"source.ml" 33 1324 1353 "source.ml" 33 1324 1356
+type(
+  string
+)
+ident(
+  int_ref mdl "source.ml" 32 1297 1308 "source.ml" 32 1297 1311
+)
+"source.ml" 33 1324 1335 "source.ml" 33 1324 1356
+call(
+  stack
+)
+type(
+  bool
+)
+"source.ml" 34 1362 1372 "source.ml" 34 1362 1376
+type(
+  string list
+)
+ident(
+  int_ref dirs "source.ml" 32 1297 1312 "source.ml" 32 1297 1316
+)
+"source.ml" 36 1390 1400 "source.ml" 36 1390 1403
+type(
+  string list
+)
+ident(
+  int_ref acc "source.ml" 32 1297 1317 "source.ml" 32 1297 1320
+)
+"source.ml" 33 1324 1332 "source.ml" 36 1390 1403
+type(
+  string list
+)
+"source.ml" 32 1297 1303 "source.ml" 36 1390 1404
+type(
+  string -> string list -> string list -> string list
+)
+"source.ml" 37 1405 1411 "source.ml" 37 1405 1440
+type(
+  (string, string list) Hashtbl.t
+)
+ident(
+  ext_ref Debugger_config.load_path_for
+)
+"source.ml" 38 1441 1447 "source.ml" 38 1441 1448
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"source.ml" 38 1441 1448 "source.ml" 38 1441 1464
+type(
+  string list ref
+)
+ident(
+  ext_ref Config.load_path
+)
+"source.ml" 38 1441 1447 "source.ml" 38 1441 1464
+type(
+  string list
+)
+"source.ml" 31 1280 1284 "source.ml" 38 1441 1464
+call(
+  stack
+)
+type(
+  string list
+)
+"source.ml" 39 1468 1474 "source.ml" 39 1468 1479
+type(
+  string
+)
+ident(
+  def fname "source.ml" 40 1506 1508 "source.ml" 56 2028 2037
+)
+"source.ml" 39 1468 1482 "source.ml" 39 1468 1485
+type(
+  Lexing.position
+)
+ident(
+  int_ref pos "source.ml" 23 1056 1077 "source.ml" 23 1056 1080
+)
+"source.ml" 39 1468 1482 "source.ml" 39 1468 1502
+type(
+  string
+)
+"source.ml" 40 1506 1511 "source.ml" 40 1506 1516
+type(
+  string
+)
+ident(
+  int_ref fname "source.ml" 39 1468 1474 "source.ml" 39 1468 1479
+)
+"source.ml" 40 1506 1517 "source.ml" 40 1506 1518
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"source.ml" 40 1506 1519 "source.ml" 40 1506 1521
+type(
+  string
+)
+"source.ml" 40 1506 1511 "source.ml" 40 1506 1521
+type(
+  bool
+)
+"source.ml" 41 1527 1535 "source.ml" 41 1527 1551
+type(
+  string
+)
+ident(
+  def innermost_module "source.ml" 46 1727 1731 "source.ml" 52 1919 1948
+)
+"source.ml" 43 1564 1576 "source.ml" 43 1564 1585
+type(
+  int
+)
+ident(
+  def dot_index "source.ml" 44 1614 1622 "source.ml" 44 1614 1694
+)
+"source.ml" 43 1564 1588 "source.ml" 43 1564 1601
+type(
+  string -> char -> int
+)
+ident(
+  ext_ref String.rindex
+)
+"source.ml" 43 1564 1602 "source.ml" 43 1564 1606
+type(
+  string
+)
+ident(
+  int_ref mdle "source.ml" 23 1056 1081 "source.ml" 23 1056 1085
+)
+"source.ml" 43 1564 1607 "source.ml" 43 1564 1610
+type(
+  char
+)
+"source.ml" 43 1564 1588 "source.ml" 43 1564 1610
+call(
+  stack
+)
+type(
+  int
+)
+"source.ml" 44 1614 1622 "source.ml" 44 1614 1632
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"source.ml" 44 1614 1633 "source.ml" 44 1614 1637
+type(
+  string
+)
+ident(
+  int_ref mdle "source.ml" 23 1056 1081 "source.ml" 23 1056 1085
+)
+"source.ml" 44 1614 1639 "source.ml" 44 1614 1643
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.succ
+)
+"source.ml" 44 1614 1644 "source.ml" 44 1614 1653
+type(
+  int
+)
+ident(
+  int_ref dot_index "source.ml" 43 1564 1576 "source.ml" 43 1564 1585
+)
+"source.ml" 44 1614 1638 "source.ml" 44 1614 1654
+type(
+  int
+)
+"source.ml" 44 1614 1656 "source.ml" 44 1614 1660
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.pred
+)
+"source.ml" 44 1614 1662 "source.ml" 44 1614 1675
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"source.ml" 44 1614 1676 "source.ml" 44 1614 1680
+type(
+  string
+)
+ident(
+  int_ref mdle "source.ml" 23 1056 1081 "source.ml" 23 1056 1085
+)
+"source.ml" 44 1614 1662 "source.ml" 44 1614 1680
+type(
+  int
+)
+"source.ml" 44 1614 1681 "source.ml" 44 1614 1682
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"source.ml" 44 1614 1683 "source.ml" 44 1614 1692
+type(
+  int
+)
+ident(
+  int_ref dot_index "source.ml" 43 1564 1576 "source.ml" 43 1564 1585
+)
+"source.ml" 44 1614 1661 "source.ml" 44 1614 1693
+type(
+  int
+)
+"source.ml" 44 1614 1655 "source.ml" 44 1614 1694
+type(
+  int
+)
+"source.ml" 44 1614 1622 "source.ml" 44 1614 1694
+call(
+  stack
+)
+type(
+  string
+)
+"source.ml" 43 1564 1572 "source.ml" 44 1614 1694
+type(
+  string
+)
+"source.ml" 45 1695 1706 "source.ml" 45 1695 1715
+type(
+  exn
+)
+"source.ml" 45 1695 1719 "source.ml" 45 1695 1723
+type(
+  string
+)
+ident(
+  int_ref mdle "source.ml" 23 1056 1081 "source.ml" 23 1056 1085
+)
+"source.ml" 42 1554 1560 "source.ml" 45 1695 1723
+type(
+  string
+)
+"source.ml" 46 1727 1739 "source.ml" 46 1727 1743
+type(
+  string list -> string
+)
+ident(
+  def loop "source.ml" 46 1727 1731 "source.ml" 52 1919 1948
+)
+"source.ml" 48 1761 1771 "source.ml" 48 1761 1773
+type(
+  string list
+)
+"source.ml" 48 1761 1777 "source.ml" 48 1761 1782
+type(
+  exn -> string
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"source.ml" 48 1761 1783 "source.ml" 48 1761 1792
+type(
+  exn
+)
+"source.ml" 48 1761 1777 "source.ml" 48 1761 1792
+type(
+  string
+)
+"source.ml" 49 1793 1803 "source.ml" 49 1793 1806
+type(
+  string
+)
+ident(
+  def ext "source.ml" 50 1818 1828 "source.ml" 51 1881 1918
+)
+"source.ml" 49 1793 1810 "source.ml" 49 1793 1814
+type(
+  string list
+)
+ident(
+  def exts "source.ml" 50 1818 1828 "source.ml" 51 1881 1918
+)
+"source.ml" 49 1793 1803 "source.ml" 49 1793 1814
+type(
+  string list
+)
+"source.ml" 50 1818 1832 "source.ml" 50 1818 1850
+type(
+  string list -> string -> string
+)
+ident(
+  ext_ref Misc.find_in_path_uncap
+)
+"source.ml" 50 1818 1851 "source.ml" 50 1818 1855
+type(
+  string list
+)
+ident(
+  int_ref path "source.ml" 30 1267 1273 "source.ml" 30 1267 1277
+)
+"source.ml" 50 1818 1857 "source.ml" 50 1818 1873
+type(
+  string
+)
+ident(
+  int_ref innermost_module "source.ml" 41 1527 1535 "source.ml" 41 1527 1551
+)
+"source.ml" 50 1818 1874 "source.ml" 50 1818 1875
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"source.ml" 50 1818 1876 "source.ml" 50 1818 1879
+type(
+  string
+)
+ident(
+  int_ref ext "source.ml" 49 1793 1803 "source.ml" 49 1793 1806
+)
+"source.ml" 50 1818 1856 "source.ml" 50 1818 1880
+call(
+  stack
+)
+type(
+  string
+)
+"source.ml" 50 1818 1832 "source.ml" 50 1818 1880
+call(
+  stack
+)
+type(
+  string
+)
+"source.ml" 51 1881 1896 "source.ml" 51 1881 1905
+type(
+  exn
+)
+"source.ml" 51 1881 1909 "source.ml" 51 1881 1913
+type(
+  string list -> string
+)
+ident(
+  int_ref loop "source.ml" 46 1727 1739 "source.ml" 46 1727 1743
+)
+"source.ml" 51 1881 1914 "source.ml" 51 1881 1918
+type(
+  string list
+)
+ident(
+  int_ref exts "source.ml" 49 1793 1810 "source.ml" 49 1793 1814
+)
+"source.ml" 51 1881 1909 "source.ml" 51 1881 1918
+call(
+  tail
+)
+type(
+  string
+)
+"source.ml" 50 1818 1828 "source.ml" 51 1881 1918
+type(
+  string
+)
+"source.ml" 47 1746 1752 "source.ml" 51 1881 1918
+type(
+  string list -> string
+)
+"source.ml" 52 1919 1926 "source.ml" 52 1919 1930
+type(
+  string list -> string
+)
+ident(
+  int_ref loop "source.ml" 46 1727 1739 "source.ml" 46 1727 1743
+)
+"source.ml" 52 1919 1931 "source.ml" 52 1919 1948
+type(
+  string list
+)
+ident(
+  int_ref source_extensions "source.ml" 19 991 995 "source.ml" 19 991 1012
+)
+"source.ml" 52 1919 1926 "source.ml" 52 1919 1948
+call(
+  tail
+)
+type(
+  string
+)
+"source.ml" 46 1727 1731 "source.ml" 52 1919 1948
+type(
+  string
+)
+"source.ml" 41 1527 1531 "source.ml" 52 1919 1948
+type(
+  string
+)
+"source.ml" 53 1949 1961 "source.ml" 53 1949 1981
+type(
+  string -> bool
+)
+ident(
+  ext_ref Filename.is_implicit
+)
+"source.ml" 53 1949 1982 "source.ml" 53 1949 1987
+type(
+  string
+)
+ident(
+  int_ref fname "source.ml" 39 1468 1474 "source.ml" 39 1468 1479
+)
+"source.ml" 53 1949 1961 "source.ml" 53 1949 1987
+call(
+  stack
+)
+type(
+  bool
+)
+"source.ml" 54 1993 1997 "source.ml" 54 1993 2009
+type(
+  string list -> string -> string
+)
+ident(
+  ext_ref Misc.find_in_path
+)
+"source.ml" 54 1993 2010 "source.ml" 54 1993 2014
+type(
+  string list
+)
+ident(
+  int_ref path "source.ml" 30 1267 1273 "source.ml" 30 1267 1277
+)
+"source.ml" 54 1993 2015 "source.ml" 54 1993 2020
+type(
+  string
+)
+ident(
+  int_ref fname "source.ml" 39 1468 1474 "source.ml" 39 1468 1479
+)
+"source.ml" 54 1993 1997 "source.ml" 54 1993 2020
+call(
+  tail
+)
+type(
+  string
+)
+"source.ml" 56 2028 2032 "source.ml" 56 2028 2037
+type(
+  string
+)
+ident(
+  int_ref fname "source.ml" 39 1468 1474 "source.ml" 39 1468 1479
+)
+"source.ml" 53 1949 1958 "source.ml" 56 2028 2037
+type(
+  string
+)
+"source.ml" 40 1506 1508 "source.ml" 56 2028 2037
+type(
+  string
+)
+"source.ml" 39 1468 1470 "source.ml" 56 2028 2037
+type(
+  string
+)
+"source.ml" 30 1267 1269 "source.ml" 56 2028 2037
+type(
+  string
+)
+"source.ml" 24 1088 1090 "source.ml" 56 2028 2037
+type(
+  string
+)
+"source.ml" 63 2181 2185 "source.ml" 63 2181 2201
+type(
+  int ref
+)
+ident(
+  def buffer_max_count "source.ml" 65 2212 2212 "source.ml" 1 0 -1
+)
+"source.ml" 63 2181 2204 "source.ml" 63 2181 2207
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"source.ml" 63 2181 2208 "source.ml" 63 2181 2210
+type(
+  int
+)
+"source.ml" 63 2181 2204 "source.ml" 63 2181 2210
+type(
+  int ref
+)
+"source.ml" 65 2212 2216 "source.ml" 65 2212 2226
+type(
+  int
+)
+ident(
+  def cache_size "source.ml" 67 2233 2233 "source.ml" 1 0 -1
+)
+"source.ml" 65 2212 2229 "source.ml" 65 2212 2231
+type(
+  int
+)
+"source.ml" 67 2233 2237 "source.ml" 67 2233 2248
+type(
+  (string * buffer) list ref
+)
+ident(
+  def buffer_list "source.ml" 70 2288 2288 "source.ml" 1 0 -1
+)
+"source.ml" 68 2251 2253 "source.ml" 68 2251 2256
+type(
+  (string * buffer) list -> (string * buffer) list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"source.ml" 68 2251 2258 "source.ml" 68 2251 2260
+type(
+  (string * buffer) list
+)
+type(
+  (string * buffer) list
+)
+"source.ml" 68 2251 2253 "source.ml" 68 2251 2286
+type(
+  (string * buffer) list ref
+)
+"source.ml" 70 2288 2292 "source.ml" 70 2288 2309
+type(
+  unit -> unit
+)
+ident(
+  def flush_buffer_list "source.ml" 73 2336 2336 "source.ml" 1 0 -1
+)
+"source.ml" 70 2288 2310 "source.ml" 70 2288 2312
+type(
+  unit
+)
+"source.ml" 71 2315 2317 "source.ml" 71 2315 2328
+type(
+  (string * buffer) list ref
+)
+ident(
+  int_ref buffer_list "source.ml" 67 2233 2237 "source.ml" 67 2233 2248
+)
+"source.ml" 71 2315 2329 "source.ml" 71 2315 2331
+type(
+  (string * buffer) list ref -> (string * buffer) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"source.ml" 71 2315 2332 "source.ml" 71 2315 2334
+type(
+  (string * buffer) list
+)
+"source.ml" 71 2315 2317 "source.ml" 71 2315 2334
+type(
+  unit
+)
+"source.ml" 73 2336 2340 "source.ml" 73 2336 2350
+type(
+  Lexing.position -> string -> buffer
+)
+ident(
+  def get_buffer "source.ml" 83 2707 2707 "source.ml" 1 0 -1
+)
+"source.ml" 73 2336 2351 "source.ml" 73 2336 2354
+type(
+  Lexing.position
+)
+ident(
+  def pos "source.ml" 73 2336 2355 "source.ml" 81 2693 2705
+)
+"source.ml" 73 2336 2355 "source.ml" 73 2336 2359
+type(
+  string
+)
+ident(
+  def mdle "source.ml" 74 2362 2364 "source.ml" 81 2693 2705
+)
+"source.ml" 74 2362 2368 "source.ml" 74 2362 2378
+type(
+  string -> (string * buffer) list -> buffer
+)
+ident(
+  ext_ref List.assoc
+)
+"source.ml" 74 2362 2379 "source.ml" 74 2362 2383
+type(
+  string
+)
+ident(
+  int_ref mdle "source.ml" 73 2336 2355 "source.ml" 73 2336 2359
+)
+"source.ml" 74 2362 2384 "source.ml" 74 2362 2385
+type(
+  (string * buffer) list ref -> (string * buffer) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"source.ml" 74 2362 2385 "source.ml" 74 2362 2396
+type(
+  (string * buffer) list ref
+)
+ident(
+  int_ref buffer_list "source.ml" 67 2233 2237 "source.ml" 67 2233 2248
+)
+"source.ml" 74 2362 2384 "source.ml" 74 2362 2396
+type(
+  (string * buffer) list
+)
+"source.ml" 74 2362 2368 "source.ml" 74 2362 2396
+call(
+  stack
+)
+type(
+  buffer
+)
+"source.ml" 75 2402 2406 "source.ml" 75 2402 2415
+type(
+  exn
+)
+"source.ml" 76 2419 2429 "source.ml" 76 2419 2435
+type(
+  in_channel
+)
+ident(
+  def inchan "source.ml" 77 2481 2487 "source.ml" 81 2693 2705
+)
+"source.ml" 76 2419 2438 "source.ml" 76 2419 2449
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in_bin
+)
+"source.ml" 76 2419 2451 "source.ml" 76 2419 2467
+type(
+  Lexing.position -> string -> string
+)
+ident(
+  int_ref source_of_module "source.ml" 23 1056 1060 "source.ml" 23 1056 1076
+)
+"source.ml" 76 2419 2468 "source.ml" 76 2419 2471
+type(
+  Lexing.position
+)
+ident(
+  int_ref pos "source.ml" 73 2336 2351 "source.ml" 73 2336 2354
+)
+"source.ml" 76 2419 2472 "source.ml" 76 2419 2476
+type(
+  string
+)
+ident(
+  int_ref mdle "source.ml" 73 2336 2355 "source.ml" 73 2336 2359
+)
+"source.ml" 76 2419 2450 "source.ml" 76 2419 2477
+call(
+  stack
+)
+type(
+  string
+)
+"source.ml" 76 2419 2438 "source.ml" 76 2419 2477
+call(
+  stack
+)
+type(
+  in_channel
+)
+"source.ml" 77 2481 2491 "source.ml" 77 2481 2498
+type(
+  string
+)
+ident(
+  def content "source.ml" 78 2558 2564 "source.ml" 81 2693 2705
+)
+"source.ml" 77 2481 2501 "source.ml" 77 2481 2520
+type(
+  in_channel -> int -> string
+)
+ident(
+  ext_ref Pervasives.really_input_string
+)
+"source.ml" 77 2481 2521 "source.ml" 77 2481 2527
+type(
+  in_channel
+)
+ident(
+  int_ref inchan "source.ml" 76 2419 2429 "source.ml" 76 2419 2435
+)
+"source.ml" 77 2481 2529 "source.ml" 77 2481 2546
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.in_channel_length
+)
+"source.ml" 77 2481 2547 "source.ml" 77 2481 2553
+type(
+  in_channel
+)
+ident(
+  int_ref inchan "source.ml" 76 2419 2429 "source.ml" 76 2419 2435
+)
+"source.ml" 77 2481 2528 "source.ml" 77 2481 2554
+call(
+  stack
+)
+type(
+  int
+)
+"source.ml" 77 2481 2501 "source.ml" 77 2481 2554
+call(
+  stack
+)
+type(
+  string
+)
+"source.ml" 78 2558 2568 "source.ml" 78 2558 2574
+type(
+  string * (int * int) list ref
+)
+ident(
+  def buffer "source.ml" 79 2598 2604 "source.ml" 81 2693 2705
+)
+"source.ml" 78 2558 2578 "source.ml" 78 2558 2585
+type(
+  string
+)
+ident(
+  int_ref content "source.ml" 77 2481 2491 "source.ml" 77 2481 2498
+)
+"source.ml" 78 2558 2587 "source.ml" 78 2558 2590
+type(
+  (int * int) list -> (int * int) list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"source.ml" 78 2558 2591 "source.ml" 78 2558 2593
+type(
+  (int * int) list
+)
+"source.ml" 78 2558 2587 "source.ml" 78 2558 2593
+type(
+  (int * int) list ref
+)
+"source.ml" 78 2558 2577 "source.ml" 78 2558 2594
+type(
+  string * (int * int) list ref
+)
+"source.ml" 79 2598 2604 "source.ml" 79 2598 2615
+type(
+  (string * buffer) list ref
+)
+ident(
+  int_ref buffer_list "source.ml" 67 2233 2237 "source.ml" 67 2233 2248
+)
+"source.ml" 79 2598 2616 "source.ml" 79 2598 2618
+type(
+  (string * buffer) list ref -> (string * buffer) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"source.ml" 80 2619 2628 "source.ml" 80 2619 2641
+type(
+  int -> (string * buffer) list -> (string * buffer) list
+)
+ident(
+  ext_ref Primitives.list_truncate
+)
+"source.ml" 80 2619 2642 "source.ml" 80 2619 2643
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"source.ml" 80 2619 2643 "source.ml" 80 2619 2659
+type(
+  int ref
+)
+ident(
+  int_ref buffer_max_count "source.ml" 63 2181 2185 "source.ml" 63 2181 2201
+)
+"source.ml" 80 2619 2642 "source.ml" 80 2619 2659
+type(
+  int
+)
+"source.ml" 80 2619 2662 "source.ml" 80 2619 2666
+type(
+  string
+)
+ident(
+  int_ref mdle "source.ml" 73 2336 2355 "source.ml" 73 2336 2359
+)
+"source.ml" 80 2619 2668 "source.ml" 80 2619 2674
+type(
+  buffer
+)
+ident(
+  int_ref buffer "source.ml" 78 2558 2568 "source.ml" 78 2558 2574
+)
+"source.ml" 80 2619 2661 "source.ml" 80 2619 2675
+type(
+  string * buffer
+)
+"source.ml" 80 2619 2677 "source.ml" 80 2619 2678
+type(
+  (string * buffer) list ref -> (string * buffer) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"source.ml" 80 2619 2678 "source.ml" 80 2619 2689
+type(
+  (string * buffer) list ref
+)
+ident(
+  int_ref buffer_list "source.ml" 67 2233 2237 "source.ml" 67 2233 2248
+)
+"source.ml" 80 2619 2677 "source.ml" 80 2619 2689
+type(
+  (string * buffer) list
+)
+"source.ml" 80 2619 2660 "source.ml" 80 2619 2690
+type(
+  (string * buffer) list
+)
+"source.ml" 80 2619 2627 "source.ml" 80 2619 2691
+call(
+  stack
+)
+type(
+  (string * buffer) list
+)
+"source.ml" 79 2598 2604 "source.ml" 80 2619 2691
+type(
+  unit
+)
+"source.ml" 81 2693 2699 "source.ml" 81 2693 2705
+type(
+  buffer
+)
+ident(
+  int_ref buffer "source.ml" 78 2558 2568 "source.ml" 78 2558 2574
+)
+"source.ml" 79 2598 2604 "source.ml" 81 2693 2705
+type(
+  buffer
+)
+"source.ml" 78 2558 2564 "source.ml" 81 2693 2705
+type(
+  buffer
+)
+"source.ml" 77 2481 2487 "source.ml" 81 2693 2705
+type(
+  buffer
+)
+"source.ml" 76 2419 2425 "source.ml" 81 2693 2705
+type(
+  buffer
+)
+"source.ml" 74 2362 2364 "source.ml" 81 2693 2705
+type(
+  buffer
+)
+"source.ml" 83 2707 2711 "source.ml" 83 2707 2725
+type(
+  buffer -> string
+)
+ident(
+  def buffer_content "source.ml" 86 2756 2756 "source.ml" 1 0 -1
+)
+"source.ml" 84 2728 2731 "source.ml" 84 2728 2734
+type(
+  buffer -> string
+)
+type(
+  buffer -> string
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"source.ml" 86 2756 2760 "source.ml" 86 2756 2773
+type(
+  buffer -> int
+)
+ident(
+  def buffer_length "source.ml" 91 2847 2847 "source.ml" 1 0 -1
+)
+"source.ml" 86 2756 2774 "source.ml" 86 2756 2775
+type(
+  buffer
+)
+ident(
+  def x "source.ml" 87 2778 2780 "source.ml" 87 2778 2812
+)
+"source.ml" 87 2778 2780 "source.ml" 87 2778 2793
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"source.ml" 87 2778 2795 "source.ml" 87 2778 2809
+type(
+  buffer -> string
+)
+ident(
+  int_ref buffer_content "source.ml" 83 2707 2711 "source.ml" 83 2707 2725
+)
+"source.ml" 87 2778 2810 "source.ml" 87 2778 2811
+type(
+  buffer
+)
+ident(
+  int_ref x "source.ml" 86 2756 2774 "source.ml" 86 2756 2775
+)
+"source.ml" 87 2778 2794 "source.ml" 87 2778 2812
+call(
+  stack
+)
+type(
+  string
+)
+"source.ml" 87 2778 2780 "source.ml" 87 2778 2812
+type(
+  int
+)
+"source.ml" 94 2949 2953 "source.ml" 94 2949 2963
+type(
+  'a * ('b * 'c) list ref -> 'b * 'c -> unit
+)
+ident(
+  def insert_pos "source.ml" 113 3484 3484 "source.ml" 1 0 -1
+)
+"source.ml" 94 2949 2964 "source.ml" 94 2949 2970
+type(
+  'a * ('b * 'c) list ref
+)
+ident(
+  def buffer "source.ml" 94 2949 2971 "source.ml" 108 3281 3325
+)
+"source.ml" 94 2949 2973 "source.ml" 94 2949 2981
+type(
+  'b
+)
+ident(
+  def position "source.ml" 95 3000 3002 "source.ml" 108 3281 3325
+)
+"source.ml" 94 2949 2983 "source.ml" 94 2949 2987
+type(
+  'c
+)
+ident(
+  def line "source.ml" 95 3000 3002 "source.ml" 108 3281 3325
+)
+"source.ml" 94 2949 2972 "source.ml" 94 2949 2988
+type(
+  'b * 'c
+)
+"source.ml" 94 2949 2992 "source.ml" 94 2949 2996
+ident(
+  def pair "source.ml" 95 3000 3002 "source.ml" 108 3281 3325
+)
+"source.ml" 94 2949 2971 "source.ml" 94 2949 2997
+type(
+  'b * 'c
+)
+"source.ml" 95 3000 3010 "source.ml" 95 3000 3018
+type(
+  ('b * 'c) list -> ('b * 'c) list
+)
+ident(
+  def new_list "source.ml" 95 3000 3002 "source.ml" 108 3281 3325
+)
+"source.ml" 97 3034 3040 "source.ml" 97 3034 3042
+type(
+  ('b * 'c) list
+)
+"source.ml" 98 3046 3056 "source.ml" 98 3046 3064
+type(
+  'b
+)
+ident(
+  int_ref position "source.ml" 94 2949 2973 "source.ml" 94 2949 2981
+)
+"source.ml" 98 3046 3066 "source.ml" 98 3046 3070
+type(
+  'c
+)
+ident(
+  int_ref line "source.ml" 94 2949 2983 "source.ml" 94 2949 2987
+)
+"source.ml" 98 3046 3055 "source.ml" 98 3046 3071
+type(
+  'b * 'c
+)
+"source.ml" 98 3046 3054 "source.ml" 98 3046 3072
+type(
+  ('b * 'c) list
+)
+"source.ml" 99 3073 3081 "source.ml" 99 3073 3084
+type(
+  'b
+)
+ident(
+  def pos "source.ml" 100 3109 3117 "source.ml" 105 3213 3238
+)
+"source.ml" 99 3073 3086 "source.ml" 99 3073 3089
+type(
+  'c
+)
+ident(
+  def lin "source.ml" 100 3109 3117 "source.ml" 105 3213 3238
+)
+"source.ml" 99 3073 3080 "source.ml" 99 3073 3090
+type(
+  'b * 'c
+)
+"source.ml" 99 3073 3094 "source.ml" 99 3073 3095
+ident(
+  def a "source.ml" 100 3109 3117 "source.ml" 105 3213 3238
+)
+"source.ml" 99 3073 3080 "source.ml" 99 3073 3095
+type(
+  'b * 'c
+)
+"source.ml" 99 3073 3097 "source.ml" 99 3073 3098
+type(
+  ('b * 'c) list
+)
+ident(
+  def l "source.ml" 100 3109 3117 "source.ml" 105 3213 3238
+)
+"source.ml" 99 3073 3079 "source.ml" 99 3073 3099
+type(
+  ('b * 'c) list
+)
+"source.ml" 99 3073 3103 "source.ml" 99 3073 3105
+ident(
+  def l' "source.ml" 100 3109 3117 "source.ml" 105 3213 3238
+)
+"source.ml" 99 3073 3079 "source.ml" 99 3073 3105
+type(
+  ('b * 'c) list
+)
+"source.ml" 100 3109 3120 "source.ml" 100 3109 3123
+type(
+  'c
+)
+ident(
+  int_ref lin "source.ml" 99 3073 3086 "source.ml" 99 3073 3089
+)
+"source.ml" 100 3109 3124 "source.ml" 100 3109 3125
+type(
+  'c -> 'c -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"source.ml" 100 3109 3126 "source.ml" 100 3109 3130
+type(
+  'c
+)
+ident(
+  int_ref line "source.ml" 94 2949 2983 "source.ml" 94 2949 2987
+)
+"source.ml" 100 3109 3120 "source.ml" 100 3109 3130
+type(
+  bool
+)
+"source.ml" 101 3136 3146 "source.ml" 101 3136 3150
+type(
+  'b * 'c
+)
+ident(
+  int_ref pair "source.ml" 94 2949 2971 "source.ml" 94 2949 2997
+)
+"source.ml" 101 3136 3152 "source.ml" 101 3136 3154
+type(
+  ('b * 'c) list
+)
+ident(
+  int_ref l' "source.ml" 99 3073 3079 "source.ml" 99 3073 3105
+)
+"source.ml" 101 3136 3146 "source.ml" 101 3136 3154
+type(
+  ('b * 'c) list
+)
+"source.ml" 102 3155 3171 "source.ml" 102 3155 3174
+type(
+  'c
+)
+ident(
+  int_ref lin "source.ml" 99 3073 3086 "source.ml" 99 3073 3089
+)
+"source.ml" 102 3155 3175 "source.ml" 102 3155 3176
+type(
+  'c -> 'c -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"source.ml" 102 3155 3177 "source.ml" 102 3155 3181
+type(
+  'c
+)
+ident(
+  int_ref line "source.ml" 94 2949 2983 "source.ml" 94 2949 2987
+)
+"source.ml" 102 3155 3171 "source.ml" 102 3155 3181
+type(
+  bool
+)
+"source.ml" 103 3187 3197 "source.ml" 103 3187 3199
+type(
+  ('b * 'c) list
+)
+ident(
+  int_ref l' "source.ml" 99 3073 3079 "source.ml" 99 3073 3105
+)
+"source.ml" 105 3213 3223 "source.ml" 105 3213 3224
+type(
+  'b * 'c
+)
+ident(
+  int_ref a "source.ml" 99 3073 3080 "source.ml" 99 3073 3095
+)
+"source.ml" 105 3213 3227 "source.ml" 105 3213 3235
+type(
+  ('b * 'c) list -> ('b * 'c) list
+)
+ident(
+  int_ref new_list "source.ml" 95 3000 3010 "source.ml" 95 3000 3018
+)
+"source.ml" 105 3213 3236 "source.ml" 105 3213 3237
+type(
+  ('b * 'c) list
+)
+ident(
+  int_ref l "source.ml" 99 3073 3097 "source.ml" 99 3073 3098
+)
+"source.ml" 105 3213 3226 "source.ml" 105 3213 3238
+call(
+  stack
+)
+type(
+  ('b * 'c) list
+)
+"source.ml" 105 3213 3223 "source.ml" 105 3213 3238
+type(
+  ('b * 'c) list
+)
+"source.ml" 102 3155 3168 "source.ml" 105 3213 3238
+type(
+  ('b * 'c) list
+)
+"source.ml" 100 3109 3117 "source.ml" 105 3213 3238
+type(
+  ('b * 'c) list
+)
+"source.ml" 96 3021 3025 "source.ml" 105 3213 3238
+type(
+  ('b * 'c) list -> ('b * 'c) list
+)
+"source.ml" 107 3244 3252 "source.ml" 107 3244 3264
+type(
+  ('b * 'c) list ref
+)
+ident(
+  def buffer_cache "source.ml" 108 3281 3287 "source.ml" 108 3281 3325
+)
+"source.ml" 107 3244 3267 "source.ml" 107 3244 3270
+type(
+  'a * ('b * 'c) list ref -> ('b * 'c) list ref
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"source.ml" 107 3244 3271 "source.ml" 107 3244 3277
+type(
+  'a * ('b * 'c) list ref
+)
+ident(
+  int_ref buffer "source.ml" 94 2949 2964 "source.ml" 94 2949 2970
+)
+"source.ml" 107 3244 3267 "source.ml" 107 3244 3277
+type(
+  ('b * 'c) list ref
+)
+"source.ml" 108 3281 3287 "source.ml" 108 3281 3299
+type(
+  ('b * 'c) list ref
+)
+ident(
+  int_ref buffer_cache "source.ml" 107 3244 3252 "source.ml" 107 3244 3264
+)
+"source.ml" 108 3281 3300 "source.ml" 108 3281 3302
+type(
+  ('b * 'c) list ref -> ('b * 'c) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"source.ml" 108 3281 3303 "source.ml" 108 3281 3311
+type(
+  ('b * 'c) list -> ('b * 'c) list
+)
+ident(
+  int_ref new_list "source.ml" 95 3000 3010 "source.ml" 95 3000 3018
+)
+"source.ml" 108 3281 3312 "source.ml" 108 3281 3313
+type(
+  ('b * 'c) list ref -> ('b * 'c) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"source.ml" 108 3281 3313 "source.ml" 108 3281 3325
+type(
+  ('b * 'c) list ref
+)
+ident(
+  int_ref buffer_cache "source.ml" 107 3244 3252 "source.ml" 107 3244 3264
+)
+"source.ml" 108 3281 3312 "source.ml" 108 3281 3325
+type(
+  ('b * 'c) list
+)
+"source.ml" 108 3281 3303 "source.ml" 108 3281 3325
+call(
+  stack
+)
+type(
+  ('b * 'c) list
+)
+"source.ml" 108 3281 3287 "source.ml" 108 3281 3325
+type(
+  unit
+)
+"source.ml" 107 3244 3248 "source.ml" 108 3281 3325
+type(
+  unit
+)
+"source.ml" 95 3000 3002 "source.ml" 108 3281 3325
+type(
+  unit
+)
+"source.ml" 113 3484 3488 "source.ml" 113 3484 3501
+type(
+  string * 'a -> int -> int
+)
+ident(
+  def next_linefeed "source.ml" 127 3795 3795 "source.ml" 1 0 -1
+)
+"source.ml" 113 3484 3503 "source.ml" 113 3484 3509
+type(
+  string
+)
+ident(
+  def buffer "source.ml" 113 3484 3514 "source.ml" 124 3752 3770
+)
+"source.ml" 113 3484 3511 "source.ml" 113 3484 3512
+type(
+  'a
+)
+"source.ml" 113 3484 3502 "source.ml" 113 3484 3513
+type(
+  string * 'a
+)
+"source.ml" 113 3484 3514 "source.ml" 113 3484 3517
+type(
+  int
+)
+ident(
+  def pos "source.ml" 114 3520 3522 "source.ml" 124 3752 3770
+)
+"source.ml" 114 3520 3526 "source.ml" 114 3520 3529
+type(
+  int
+)
+ident(
+  def len "source.ml" 115 3556 3560 "source.ml" 124 3752 3770
+)
+"source.ml" 114 3520 3532 "source.ml" 114 3520 3545
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"source.ml" 114 3520 3546 "source.ml" 114 3520 3552
+type(
+  string
+)
+ident(
+  int_ref buffer "source.ml" 113 3484 3503 "source.ml" 113 3484 3509
+)
+"source.ml" 114 3520 3532 "source.ml" 114 3520 3552
+type(
+  int
+)
+"source.ml" 115 3556 3563 "source.ml" 115 3556 3566
+type(
+  int
+)
+ident(
+  int_ref pos "source.ml" 113 3484 3514 "source.ml" 113 3484 3517
+)
+"source.ml" 115 3556 3567 "source.ml" 115 3556 3569
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"source.ml" 115 3556 3570 "source.ml" 115 3556 3573
+type(
+  int
+)
+ident(
+  int_ref len "source.ml" 114 3520 3526 "source.ml" 114 3520 3529
+)
+"source.ml" 115 3556 3563 "source.ml" 115 3556 3573
+type(
+  bool
+)
+"source.ml" 116 3579 3585 "source.ml" 116 3579 3590
+type(
+  exn -> int
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"source.ml" 116 3579 3591 "source.ml" 116 3579 3603
+type(
+  exn
+)
+"source.ml" 116 3579 3585 "source.ml" 116 3579 3603
+type(
+  int
+)
+"source.ml" 118 3613 3627 "source.ml" 118 3613 3633
+type(
+  int -> int
+)
+ident(
+  def search "source.ml" 118 3613 3619 "source.ml" 124 3752 3770
+)
+"source.ml" 118 3613 3634 "source.ml" 118 3613 3635
+type(
+  int
+)
+ident(
+  def p "source.ml" 119 3638 3646 "source.ml" 122 3717 3742
+)
+"source.ml" 119 3638 3649 "source.ml" 119 3638 3650
+type(
+  int
+)
+ident(
+  int_ref p "source.ml" 118 3613 3634 "source.ml" 118 3613 3635
+)
+"source.ml" 119 3638 3651 "source.ml" 119 3638 3652
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"source.ml" 119 3638 3653 "source.ml" 119 3638 3656
+type(
+  int
+)
+ident(
+  int_ref len "source.ml" 114 3520 3526 "source.ml" 114 3520 3529
+)
+"source.ml" 119 3638 3649 "source.ml" 119 3638 3656
+type(
+  bool
+)
+"source.ml" 119 3638 3657 "source.ml" 119 3638 3659
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"source.ml" 119 3638 3660 "source.ml" 119 3638 3670
+type(
+  string -> int -> char
+)
+ident(
+  ext_ref String.get
+)
+"source.ml" 119 3638 3671 "source.ml" 119 3638 3677
+type(
+  string
+)
+ident(
+  int_ref buffer "source.ml" 113 3484 3503 "source.ml" 113 3484 3509
+)
+"source.ml" 119 3638 3678 "source.ml" 119 3638 3679
+type(
+  int
+)
+ident(
+  int_ref p "source.ml" 118 3613 3634 "source.ml" 118 3613 3635
+)
+"source.ml" 119 3638 3660 "source.ml" 119 3638 3679
+type(
+  char
+)
+"source.ml" 119 3638 3680 "source.ml" 119 3638 3681
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"source.ml" 119 3638 3682 "source.ml" 119 3638 3686
+type(
+  char
+)
+"source.ml" 119 3638 3660 "source.ml" 119 3638 3686
+type(
+  bool
+)
+"source.ml" 119 3638 3649 "source.ml" 119 3638 3686
+type(
+  bool
+)
+"source.ml" 120 3692 3702 "source.ml" 120 3692 3703
+type(
+  int
+)
+ident(
+  int_ref p "source.ml" 118 3613 3634 "source.ml" 118 3613 3635
+)
+"source.ml" 122 3717 3727 "source.ml" 122 3717 3733
+type(
+  int -> int
+)
+ident(
+  int_ref search "source.ml" 118 3613 3627 "source.ml" 118 3613 3633
+)
+"source.ml" 122 3717 3735 "source.ml" 122 3717 3739
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.succ
+)
+"source.ml" 122 3717 3740 "source.ml" 122 3717 3741
+type(
+  int
+)
+ident(
+  int_ref p "source.ml" 118 3613 3634 "source.ml" 118 3613 3635
+)
+"source.ml" 122 3717 3734 "source.ml" 122 3717 3742
+type(
+  int
+)
+"source.ml" 122 3717 3727 "source.ml" 122 3717 3742
+call(
+  tail
+)
+type(
+  int
+)
+"source.ml" 119 3638 3646 "source.ml" 122 3717 3742
+type(
+  int
+)
+"source.ml" 124 3752 3760 "source.ml" 124 3752 3766
+type(
+  int -> int
+)
+ident(
+  int_ref search "source.ml" 118 3613 3627 "source.ml" 118 3613 3633
+)
+"source.ml" 124 3752 3767 "source.ml" 124 3752 3770
+type(
+  int
+)
+ident(
+  int_ref pos "source.ml" 113 3484 3514 "source.ml" 113 3484 3517
+)
+"source.ml" 124 3752 3760 "source.ml" 124 3752 3770
+call(
+  tail
+)
+type(
+  int
+)
+"source.ml" 118 3613 3619 "source.ml" 124 3752 3770
+type(
+  int
+)
+"source.ml" 115 3556 3560 "source.ml" 124 3752 3770
+type(
+  int
+)
+"source.ml" 114 3520 3522 "source.ml" 124 3752 3770
+type(
+  int
+)
+"source.ml" 127 3795 3799 "source.ml" 127 3795 3808
+type(
+  string * 'a -> int * int -> int * int
+)
+ident(
+  def next_line "source.ml" 131 3931 3931 "source.ml" 1 0 -1
+)
+"source.ml" 127 3795 3809 "source.ml" 127 3795 3815
+type(
+  string * 'a
+)
+ident(
+  def buffer "source.ml" 127 3795 3816 "source.ml" 128 3830 3872
+)
+"source.ml" 127 3795 3817 "source.ml" 127 3795 3820
+type(
+  int
+)
+ident(
+  def pos "source.ml" 128 3830 3832 "source.ml" 128 3830 3872
+)
+"source.ml" 127 3795 3822 "source.ml" 127 3795 3826
+type(
+  int
+)
+ident(
+  def line "source.ml" 128 3830 3832 "source.ml" 128 3830 3872
+)
+"source.ml" 127 3795 3816 "source.ml" 127 3795 3827
+type(
+  int * int
+)
+"source.ml" 128 3830 3833 "source.ml" 128 3830 3846
+type(
+  string * 'a -> int -> int
+)
+ident(
+  int_ref next_linefeed "source.ml" 113 3484 3488 "source.ml" 113 3484 3501
+)
+"source.ml" 128 3830 3847 "source.ml" 128 3830 3853
+type(
+  string * 'a
+)
+ident(
+  int_ref buffer "source.ml" 127 3795 3809 "source.ml" 127 3795 3815
+)
+"source.ml" 128 3830 3854 "source.ml" 128 3830 3857
+type(
+  int
+)
+ident(
+  int_ref pos "source.ml" 127 3795 3817 "source.ml" 127 3795 3820
+)
+"source.ml" 128 3830 3833 "source.ml" 128 3830 3857
+call(
+  stack
+)
+type(
+  int
+)
+"source.ml" 128 3830 3858 "source.ml" 128 3830 3859
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"source.ml" 128 3830 3860 "source.ml" 128 3830 3861
+type(
+  int
+)
+"source.ml" 128 3830 3833 "source.ml" 128 3830 3861
+type(
+  int
+)
+"source.ml" 128 3830 3863 "source.ml" 128 3830 3867
+type(
+  int
+)
+ident(
+  int_ref line "source.ml" 127 3795 3822 "source.ml" 127 3795 3826
+)
+"source.ml" 128 3830 3868 "source.ml" 128 3830 3869
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"source.ml" 128 3830 3870 "source.ml" 128 3830 3871
+type(
+  int
+)
+"source.ml" 128 3830 3863 "source.ml" 128 3830 3871
+type(
+  int
+)
+"source.ml" 128 3830 3832 "source.ml" 128 3830 3872
+type(
+  int * int
+)
+"source.ml" 131 3931 3935 "source.ml" 131 3931 3946
+type(
+  string * (int * int) list ref -> int -> int * int
+)
+ident(
+  def line_of_pos "source.ml" 156 4517 4517 "source.ml" 1 0 -1
+)
+"source.ml" 131 3931 3947 "source.ml" 131 3931 3953
+type(
+  string * (int * int) list ref
+)
+ident(
+  def buffer "source.ml" 131 3931 3954 "source.ml" 153 4460 4472
+)
+"source.ml" 131 3931 3954 "source.ml" 131 3931 3962
+type(
+  int
+)
+ident(
+  def position "source.ml" 132 3965 3967 "source.ml" 153 4460 4472
+)
+"source.ml" 132 3965 3975 "source.ml" 132 3965 3979
+type(
+  (int * int) list -> int * int
+)
+ident(
+  def find "source.ml" 132 3965 3967 "source.ml" 153 4460 4472
+)
+"source.ml" 134 3995 4001 "source.ml" 134 3995 4003
+type(
+  (int * int) list
+)
+"source.ml" 135 4007 4018 "source.ml" 135 4007 4026
+type(
+  int
+)
+ident(
+  int_ref position "source.ml" 131 3931 3954 "source.ml" 131 3931 3962
+)
+"source.ml" 135 4007 4027 "source.ml" 135 4007 4028
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"source.ml" 135 4007 4029 "source.ml" 135 4007 4030
+type(
+  int
+)
+"source.ml" 135 4007 4018 "source.ml" 135 4007 4030
+type(
+  bool
+)
+"source.ml" 136 4036 4046 "source.ml" 136 4036 4051
+type(
+  exn -> int * int
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"source.ml" 136 4036 4052 "source.ml" 136 4036 4064
+type(
+  exn
+)
+"source.ml" 136 4036 4046 "source.ml" 136 4036 4064
+type(
+  int * int
+)
+"source.ml" 138 4078 4089 "source.ml" 138 4078 4090
+type(
+  int
+)
+"source.ml" 138 4078 4092 "source.ml" 138 4078 4093
+type(
+  int
+)
+"source.ml" 138 4078 4088 "source.ml" 138 4078 4094
+type(
+  int * int
+)
+"source.ml" 135 4007 4015 "source.ml" 138 4078 4094
+type(
+  int * int
+)
+"source.ml" 139 4095 4103 "source.ml" 139 4095 4106
+type(
+  int
+)
+ident(
+  def pos "source.ml" 140 4129 4137 "source.ml" 143 4190 4204
+)
+"source.ml" 139 4095 4108 "source.ml" 139 4095 4112
+type(
+  int
+)
+ident(
+  def line "source.ml" 140 4129 4137 "source.ml" 143 4190 4204
+)
+"source.ml" 139 4095 4102 "source.ml" 139 4095 4113
+type(
+  int * int
+)
+"source.ml" 139 4095 4117 "source.ml" 139 4095 4121
+ident(
+  def pair "source.ml" 140 4129 4137 "source.ml" 143 4190 4204
+)
+"source.ml" 139 4095 4101 "source.ml" 139 4095 4122
+type(
+  int * int
+)
+"source.ml" 139 4095 4124 "source.ml" 139 4095 4125
+type(
+  (int * int) list
+)
+ident(
+  def l "source.ml" 140 4129 4137 "source.ml" 143 4190 4204
+)
+"source.ml" 139 4095 4101 "source.ml" 139 4095 4125
+type(
+  (int * int) list
+)
+"source.ml" 140 4129 4140 "source.ml" 140 4129 4143
+type(
+  int
+)
+ident(
+  int_ref pos "source.ml" 139 4095 4103 "source.ml" 139 4095 4106
+)
+"source.ml" 140 4129 4144 "source.ml" 140 4129 4145
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"source.ml" 140 4129 4146 "source.ml" 140 4129 4154
+type(
+  int
+)
+ident(
+  int_ref position "source.ml" 131 3931 3954 "source.ml" 131 3931 3962
+)
+"source.ml" 140 4129 4140 "source.ml" 140 4129 4154
+type(
+  bool
+)
+"source.ml" 141 4160 4170 "source.ml" 141 4160 4174
+type(
+  (int * int) list -> int * int
+)
+ident(
+  int_ref find "source.ml" 132 3965 3975 "source.ml" 132 3965 3979
+)
+"source.ml" 141 4160 4175 "source.ml" 141 4160 4176
+type(
+  (int * int) list
+)
+ident(
+  int_ref l "source.ml" 139 4095 4124 "source.ml" 139 4095 4125
+)
+"source.ml" 141 4160 4170 "source.ml" 141 4160 4176
+call(
+  tail
+)
+type(
+  int * int
+)
+"source.ml" 143 4190 4200 "source.ml" 143 4190 4204
+type(
+  int * int
+)
+ident(
+  int_ref pair "source.ml" 139 4095 4101 "source.ml" 139 4095 4122
+)
+"source.ml" 140 4129 4137 "source.ml" 143 4190 4204
+type(
+  int * int
+)
+"source.ml" 133 3982 3986 "source.ml" 143 4190 4204
+type(
+  (int * int) list -> int * int
+)
+"source.ml" 144 4205 4211 "source.ml" 144 4205 4220
+type(
+  int * int -> int * int
+)
+ident(
+  def find_line "source.ml" 132 3965 3967 "source.ml" 153 4460 4472
+)
+"source.ml" 144 4205 4221 "source.ml" 144 4205 4229
+type(
+  int * int
+)
+ident(
+  def previous "source.ml" 145 4232 4236 "source.ml" 149 4355 4371
+)
+"source.ml" 145 4232 4241 "source.ml" 145 4232 4244
+type(
+  int
+)
+ident(
+  def pos "source.ml" 146 4291 4297 "source.ml" 149 4355 4371
+)
+"source.ml" 145 4232 4246 "source.ml" 145 4232 4250
+type(
+  int
+)
+ident(
+  def line "source.ml" 146 4291 4297 "source.ml" 149 4355 4371
+)
+"source.ml" 145 4232 4240 "source.ml" 145 4232 4251
+type(
+  int * int
+)
+"source.ml" 145 4232 4255 "source.ml" 145 4232 4259
+ident(
+  def next "source.ml" 146 4291 4297 "source.ml" 149 4355 4371
+)
+"source.ml" 145 4232 4240 "source.ml" 145 4232 4259
+type(
+  int * int
+)
+"source.ml" 145 4232 4262 "source.ml" 145 4232 4271
+type(
+  string * (int * int) list ref -> int * int -> int * int
+)
+ident(
+  int_ref next_line "source.ml" 127 3795 3799 "source.ml" 127 3795 3808
+)
+"source.ml" 145 4232 4272 "source.ml" 145 4232 4278
+type(
+  string * (int * int) list ref
+)
+ident(
+  int_ref buffer "source.ml" 131 3931 3947 "source.ml" 131 3931 3953
+)
+"source.ml" 145 4232 4279 "source.ml" 145 4232 4287
+type(
+  int * int
+)
+ident(
+  int_ref previous "source.ml" 144 4205 4221 "source.ml" 144 4205 4229
+)
+"source.ml" 145 4232 4262 "source.ml" 145 4232 4287
+call(
+  stack
+)
+type(
+  int * int
+)
+"source.ml" 146 4291 4300 "source.ml" 146 4291 4303
+type(
+  int
+)
+ident(
+  int_ref pos "source.ml" 145 4232 4241 "source.ml" 145 4232 4244
+)
+"source.ml" 146 4291 4304 "source.ml" 146 4291 4306
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"source.ml" 146 4291 4307 "source.ml" 146 4291 4315
+type(
+  int
+)
+ident(
+  int_ref position "source.ml" 131 3931 3954 "source.ml" 131 3931 3962
+)
+"source.ml" 146 4291 4300 "source.ml" 146 4291 4315
+type(
+  bool
+)
+"source.ml" 147 4321 4329 "source.ml" 147 4321 4338
+type(
+  int * int -> int * int
+)
+ident(
+  int_ref find_line "source.ml" 144 4205 4211 "source.ml" 144 4205 4220
+)
+"source.ml" 147 4321 4339 "source.ml" 147 4321 4343
+type(
+  int * int
+)
+ident(
+  int_ref next "source.ml" 145 4232 4240 "source.ml" 145 4232 4259
+)
+"source.ml" 147 4321 4329 "source.ml" 147 4321 4343
+call(
+  tail
+)
+type(
+  int * int
+)
+"source.ml" 149 4355 4363 "source.ml" 149 4355 4371
+type(
+  int * int
+)
+ident(
+  int_ref previous "source.ml" 144 4205 4221 "source.ml" 144 4205 4229
+)
+"source.ml" 146 4291 4297 "source.ml" 149 4355 4371
+type(
+  int * int
+)
+"source.ml" 145 4232 4236 "source.ml" 149 4355 4371
+type(
+  int * int
+)
+"source.ml" 151 4377 4385 "source.ml" 151 4377 4391
+type(
+  int * int
+)
+ident(
+  def result "source.ml" 152 4428 4434 "source.ml" 153 4460 4472
+)
+"source.ml" 151 4377 4394 "source.ml" 151 4377 4403
+type(
+  int * int -> int * int
+)
+ident(
+  int_ref find_line "source.ml" 144 4205 4211 "source.ml" 144 4205 4220
+)
+"source.ml" 151 4377 4405 "source.ml" 151 4377 4409
+type(
+  (int * int) list -> int * int
+)
+ident(
+  int_ref find "source.ml" 132 3965 3975 "source.ml" 132 3965 3979
+)
+"source.ml" 151 4377 4410 "source.ml" 151 4377 4411
+type(
+  (int * int) list ref -> (int * int) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"source.ml" 151 4377 4412 "source.ml" 151 4377 4415
+type(
+  string * (int * int) list ref -> (int * int) list ref
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"source.ml" 151 4377 4416 "source.ml" 151 4377 4422
+type(
+  string * (int * int) list ref
+)
+ident(
+  int_ref buffer "source.ml" 131 3931 3947 "source.ml" 131 3931 3953
+)
+"source.ml" 151 4377 4411 "source.ml" 151 4377 4423
+type(
+  (int * int) list ref
+)
+"source.ml" 151 4377 4410 "source.ml" 151 4377 4423
+type(
+  (int * int) list
+)
+"source.ml" 151 4377 4404 "source.ml" 151 4377 4424
+call(
+  stack
+)
+type(
+  int * int
+)
+"source.ml" 151 4377 4394 "source.ml" 151 4377 4424
+call(
+  stack
+)
+type(
+  int * int
+)
+"source.ml" 152 4428 4434 "source.ml" 152 4428 4444
+type(
+  string * (int * int) list ref -> int * int -> unit
+)
+ident(
+  int_ref insert_pos "source.ml" 94 2949 2953 "source.ml" 94 2949 2963
+)
+"source.ml" 152 4428 4445 "source.ml" 152 4428 4451
+type(
+  string * (int * int) list ref
+)
+ident(
+  int_ref buffer "source.ml" 131 3931 3947 "source.ml" 131 3931 3953
+)
+"source.ml" 152 4428 4452 "source.ml" 152 4428 4458
+type(
+  int * int
+)
+ident(
+  int_ref result "source.ml" 151 4377 4385 "source.ml" 151 4377 4391
+)
+"source.ml" 152 4428 4434 "source.ml" 152 4428 4458
+call(
+  stack
+)
+type(
+  unit
+)
+"source.ml" 153 4460 4466 "source.ml" 153 4460 4472
+type(
+  int * int
+)
+ident(
+  int_ref result "source.ml" 151 4377 4385 "source.ml" 151 4377 4391
+)
+"source.ml" 152 4428 4434 "source.ml" 153 4460 4472
+type(
+  int * int
+)
+"source.ml" 151 4377 4381 "source.ml" 153 4460 4472
+type(
+  int * int
+)
+"source.ml" 132 3965 3967 "source.ml" 153 4460 4472
+type(
+  int * int
+)
+"source.ml" 156 4517 4521 "source.ml" 156 4517 4532
+type(
+  string * (int * int) list ref -> int -> int * int
+)
+ident(
+  def pos_of_line "source.ml" 182 5159 5159 "source.ml" 1 0 -1
+)
+"source.ml" 156 4517 4533 "source.ml" 156 4517 4539
+type(
+  string * (int * int) list ref
+)
+ident(
+  def buffer "source.ml" 156 4517 4540 "source.ml" 178 5024 5036
+)
+"source.ml" 156 4517 4540 "source.ml" 156 4517 4544
+type(
+  int
+)
+ident(
+  def line "source.ml" 157 4547 4549 "source.ml" 178 5024 5036
+)
+"source.ml" 157 4547 4557 "source.ml" 157 4547 4561
+type(
+  (int * int) list -> int * int
+)
+ident(
+  def find "source.ml" 157 4547 4549 "source.ml" 178 5024 5036
+)
+"source.ml" 159 4577 4583 "source.ml" 159 4577 4585
+type(
+  (int * int) list
+)
+"source.ml" 160 4589 4600 "source.ml" 160 4589 4604
+type(
+  int
+)
+ident(
+  int_ref line "source.ml" 156 4517 4540 "source.ml" 156 4517 4544
+)
+"source.ml" 160 4589 4605 "source.ml" 160 4589 4607
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"source.ml" 160 4589 4608 "source.ml" 160 4589 4609
+type(
+  int
+)
+"source.ml" 160 4589 4600 "source.ml" 160 4589 4609
+type(
+  bool
+)
+"source.ml" 161 4615 4625 "source.ml" 161 4615 4630
+type(
+  exn -> int * int
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"source.ml" 161 4615 4631 "source.ml" 161 4615 4643
+type(
+  exn
+)
+"source.ml" 161 4615 4625 "source.ml" 161 4615 4643
+type(
+  int * int
+)
+"source.ml" 163 4657 4668 "source.ml" 163 4657 4669
+type(
+  int
+)
+"source.ml" 163 4657 4671 "source.ml" 163 4657 4672
+type(
+  int
+)
+"source.ml" 163 4657 4667 "source.ml" 163 4657 4673
+type(
+  int * int
+)
+"source.ml" 160 4589 4597 "source.ml" 163 4657 4673
+type(
+  int * int
+)
+"source.ml" 164 4674 4682 "source.ml" 164 4674 4685
+type(
+  int
+)
+ident(
+  def pos "source.ml" 165 4707 4715 "source.ml" 168 4764 4778
+)
+"source.ml" 164 4674 4687 "source.ml" 164 4674 4690
+type(
+  int
+)
+ident(
+  def lin "source.ml" 165 4707 4715 "source.ml" 168 4764 4778
+)
+"source.ml" 164 4674 4681 "source.ml" 164 4674 4691
+type(
+  int * int
+)
+"source.ml" 164 4674 4695 "source.ml" 164 4674 4699
+ident(
+  def pair "source.ml" 165 4707 4715 "source.ml" 168 4764 4778
+)
+"source.ml" 164 4674 4680 "source.ml" 164 4674 4700
+type(
+  int * int
+)
+"source.ml" 164 4674 4702 "source.ml" 164 4674 4703
+type(
+  (int * int) list
+)
+ident(
+  def l "source.ml" 165 4707 4715 "source.ml" 168 4764 4778
+)
+"source.ml" 164 4674 4680 "source.ml" 164 4674 4703
+type(
+  (int * int) list
+)
+"source.ml" 165 4707 4718 "source.ml" 165 4707 4721
+type(
+  int
+)
+ident(
+  int_ref lin "source.ml" 164 4674 4687 "source.ml" 164 4674 4690
+)
+"source.ml" 165 4707 4722 "source.ml" 165 4707 4723
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"source.ml" 165 4707 4724 "source.ml" 165 4707 4728
+type(
+  int
+)
+ident(
+  int_ref line "source.ml" 156 4517 4540 "source.ml" 156 4517 4544
+)
+"source.ml" 165 4707 4718 "source.ml" 165 4707 4728
+type(
+  bool
+)
+"source.ml" 166 4734 4744 "source.ml" 166 4734 4748
+type(
+  (int * int) list -> int * int
+)
+ident(
+  int_ref find "source.ml" 157 4547 4557 "source.ml" 157 4547 4561
+)
+"source.ml" 166 4734 4749 "source.ml" 166 4734 4750
+type(
+  (int * int) list
+)
+ident(
+  int_ref l "source.ml" 164 4674 4702 "source.ml" 164 4674 4703
+)
+"source.ml" 166 4734 4744 "source.ml" 166 4734 4750
+call(
+  tail
+)
+type(
+  int * int
+)
+"source.ml" 168 4764 4774 "source.ml" 168 4764 4778
+type(
+  int * int
+)
+ident(
+  int_ref pair "source.ml" 164 4674 4680 "source.ml" 164 4674 4700
+)
+"source.ml" 165 4707 4715 "source.ml" 168 4764 4778
+type(
+  int * int
+)
+"source.ml" 158 4564 4568 "source.ml" 168 4764 4778
+type(
+  (int * int) list -> int * int
+)
+"source.ml" 169 4779 4785 "source.ml" 169 4779 4793
+type(
+  int * int -> int * int
+)
+ident(
+  def find_pos "source.ml" 157 4547 4549 "source.ml" 178 5024 5036
+)
+"source.ml" 169 4779 4794 "source.ml" 169 4779 4802
+type(
+  int * int
+)
+ident(
+  def previous "source.ml" 170 4805 4809 "source.ml" 174 4920 4936
+)
+"source.ml" 170 4805 4814 "source.ml" 170 4805 4815
+type(
+  int
+)
+"source.ml" 170 4805 4817 "source.ml" 170 4805 4820
+type(
+  int
+)
+ident(
+  def lin "source.ml" 171 4861 4867 "source.ml" 174 4920 4936
+)
+"source.ml" 170 4805 4813 "source.ml" 170 4805 4821
+type(
+  int * int
+)
+"source.ml" 170 4805 4825 "source.ml" 170 4805 4829
+ident(
+  def next "source.ml" 171 4861 4867 "source.ml" 174 4920 4936
+)
+"source.ml" 170 4805 4813 "source.ml" 170 4805 4829
+type(
+  int * int
+)
+"source.ml" 170 4805 4832 "source.ml" 170 4805 4841
+type(
+  string * (int * int) list ref -> int * int -> int * int
+)
+ident(
+  int_ref next_line "source.ml" 127 3795 3799 "source.ml" 127 3795 3808
+)
+"source.ml" 170 4805 4842 "source.ml" 170 4805 4848
+type(
+  string * (int * int) list ref
+)
+ident(
+  int_ref buffer "source.ml" 156 4517 4533 "source.ml" 156 4517 4539
+)
+"source.ml" 170 4805 4849 "source.ml" 170 4805 4857
+type(
+  int * int
+)
+ident(
+  int_ref previous "source.ml" 169 4779 4794 "source.ml" 169 4779 4802
+)
+"source.ml" 170 4805 4832 "source.ml" 170 4805 4857
+call(
+  stack
+)
+type(
+  int * int
+)
+"source.ml" 171 4861 4870 "source.ml" 171 4861 4873
+type(
+  int
+)
+ident(
+  int_ref lin "source.ml" 170 4805 4817 "source.ml" 170 4805 4820
+)
+"source.ml" 171 4861 4874 "source.ml" 171 4861 4876
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"source.ml" 171 4861 4877 "source.ml" 171 4861 4881
+type(
+  int
+)
+ident(
+  int_ref line "source.ml" 156 4517 4540 "source.ml" 156 4517 4544
+)
+"source.ml" 171 4861 4870 "source.ml" 171 4861 4881
+type(
+  bool
+)
+"source.ml" 172 4887 4895 "source.ml" 172 4887 4903
+type(
+  int * int -> int * int
+)
+ident(
+  int_ref find_pos "source.ml" 169 4779 4785 "source.ml" 169 4779 4793
+)
+"source.ml" 172 4887 4904 "source.ml" 172 4887 4908
+type(
+  int * int
+)
+ident(
+  int_ref next "source.ml" 170 4805 4813 "source.ml" 170 4805 4829
+)
+"source.ml" 172 4887 4895 "source.ml" 172 4887 4908
+call(
+  tail
+)
+type(
+  int * int
+)
+"source.ml" 174 4920 4928 "source.ml" 174 4920 4936
+type(
+  int * int
+)
+ident(
+  int_ref previous "source.ml" 169 4779 4794 "source.ml" 169 4779 4802
+)
+"source.ml" 171 4861 4867 "source.ml" 174 4920 4936
+type(
+  int * int
+)
+"source.ml" 170 4805 4809 "source.ml" 174 4920 4936
+type(
+  int * int
+)
+"source.ml" 176 4942 4950 "source.ml" 176 4942 4956
+type(
+  int * int
+)
+ident(
+  def result "source.ml" 177 4992 4998 "source.ml" 178 5024 5036
+)
+"source.ml" 176 4942 4959 "source.ml" 176 4942 4967
+type(
+  int * int -> int * int
+)
+ident(
+  int_ref find_pos "source.ml" 169 4779 4785 "source.ml" 169 4779 4793
+)
+"source.ml" 176 4942 4969 "source.ml" 176 4942 4973
+type(
+  (int * int) list -> int * int
+)
+ident(
+  int_ref find "source.ml" 157 4547 4557 "source.ml" 157 4547 4561
+)
+"source.ml" 176 4942 4974 "source.ml" 176 4942 4975
+type(
+  (int * int) list ref -> (int * int) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"source.ml" 176 4942 4976 "source.ml" 176 4942 4979
+type(
+  string * (int * int) list ref -> (int * int) list ref
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"source.ml" 176 4942 4980 "source.ml" 176 4942 4986
+type(
+  string * (int * int) list ref
+)
+ident(
+  int_ref buffer "source.ml" 156 4517 4533 "source.ml" 156 4517 4539
+)
+"source.ml" 176 4942 4975 "source.ml" 176 4942 4987
+type(
+  (int * int) list ref
+)
+"source.ml" 176 4942 4974 "source.ml" 176 4942 4987
+type(
+  (int * int) list
+)
+"source.ml" 176 4942 4968 "source.ml" 176 4942 4988
+call(
+  stack
+)
+type(
+  int * int
+)
+"source.ml" 176 4942 4959 "source.ml" 176 4942 4988
+call(
+  stack
+)
+type(
+  int * int
+)
+"source.ml" 177 4992 4998 "source.ml" 177 4992 5008
+type(
+  string * (int * int) list ref -> int * int -> unit
+)
+ident(
+  int_ref insert_pos "source.ml" 94 2949 2953 "source.ml" 94 2949 2963
+)
+"source.ml" 177 4992 5009 "source.ml" 177 4992 5015
+type(
+  string * (int * int) list ref
+)
+ident(
+  int_ref buffer "source.ml" 156 4517 4533 "source.ml" 156 4517 4539
+)
+"source.ml" 177 4992 5016 "source.ml" 177 4992 5022
+type(
+  int * int
+)
+ident(
+  int_ref result "source.ml" 176 4942 4950 "source.ml" 176 4942 4956
+)
+"source.ml" 177 4992 4998 "source.ml" 177 4992 5022
+call(
+  stack
+)
+type(
+  unit
+)
+"source.ml" 178 5024 5030 "source.ml" 178 5024 5036
+type(
+  int * int
+)
+ident(
+  int_ref result "source.ml" 176 4942 4950 "source.ml" 176 4942 4956
+)
+"source.ml" 177 4992 4998 "source.ml" 178 5024 5036
+type(
+  int * int
+)
+"source.ml" 176 4942 4946 "source.ml" 178 5024 5036
+type(
+  int * int
+)
+"source.ml" 157 4547 4549 "source.ml" 178 5024 5036
+type(
+  int * int
+)
+"source.ml" 182 5159 5163 "source.ml" 182 5159 5177
+type(
+  string * (int * int) list ref -> int -> int -> int
+)
+ident(
+  def point_of_coord "source.ml" 185 5248 5248 "source.ml" 1 0 -1
+)
+"source.ml" 182 5159 5178 "source.ml" 182 5159 5184
+type(
+  string * (int * int) list ref
+)
+ident(
+  def buffer "source.ml" 182 5159 5185 "source.ml" 183 5199 5246
+)
+"source.ml" 182 5159 5185 "source.ml" 182 5159 5189
+type(
+  int
+)
+ident(
+  def line "source.ml" 182 5159 5190 "source.ml" 183 5199 5246
+)
+"source.ml" 182 5159 5190 "source.ml" 182 5159 5196
+type(
+  int
+)
+ident(
+  def column "source.ml" 183 5199 5201 "source.ml" 183 5199 5246
+)
+"source.ml" 183 5199 5201 "source.ml" 183 5199 5204
+type(
+  int * int -> int
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"source.ml" 183 5199 5206 "source.ml" 183 5199 5217
+type(
+  string * (int * int) list ref -> int -> int * int
+)
+ident(
+  int_ref pos_of_line "source.ml" 156 4517 4521 "source.ml" 156 4517 4532
+)
+"source.ml" 183 5199 5218 "source.ml" 183 5199 5224
+type(
+  string * (int * int) list ref
+)
+ident(
+  int_ref buffer "source.ml" 182 5159 5178 "source.ml" 182 5159 5184
+)
+"source.ml" 183 5199 5225 "source.ml" 183 5199 5229
+type(
+  int
+)
+ident(
+  int_ref line "source.ml" 182 5159 5185 "source.ml" 182 5159 5189
+)
+"source.ml" 183 5199 5205 "source.ml" 183 5199 5230
+call(
+  stack
+)
+type(
+  int * int
+)
+"source.ml" 183 5199 5201 "source.ml" 183 5199 5230
+type(
+  int
+)
+"source.ml" 183 5199 5231 "source.ml" 183 5199 5232
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"source.ml" 183 5199 5234 "source.ml" 183 5199 5238
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.pred
+)
+"source.ml" 183 5199 5239 "source.ml" 183 5199 5245
+type(
+  int
+)
+ident(
+  int_ref column "source.ml" 182 5159 5190 "source.ml" 182 5159 5196
+)
+"source.ml" 183 5199 5233 "source.ml" 183 5199 5246
+type(
+  int
+)
+"source.ml" 183 5199 5201 "source.ml" 183 5199 5246
+type(
+  int
+)
+"source.ml" 185 5248 5252 "source.ml" 185 5248 5266
+type(
+  string * (int * int) list ref -> Lexing.position -> int * int
+)
+ident(
+  def start_and_cnum "source.ml" 188 5376 5435 "source.ml" 1 0 -1
+)
+"source.ml" 185 5248 5267 "source.ml" 185 5248 5273
+type(
+  string * (int * int) list ref
+)
+ident(
+  def buffer "source.ml" 185 5248 5274 "source.ml" 188 5376 5435
+)
+"source.ml" 185 5248 5274 "source.ml" 185 5248 5277
+type(
+  Lexing.position
+)
+ident(
+  def pos "source.ml" 186 5280 5282 "source.ml" 188 5376 5435
+)
+"source.ml" 186 5280 5286 "source.ml" 186 5280 5297
+type(
+  int
+)
+ident(
+  def line_number "source.ml" 187 5323 5325 "source.ml" 188 5376 5435
+)
+"source.ml" 186 5280 5300 "source.ml" 186 5280 5303
+type(
+  Lexing.position
+)
+ident(
+  int_ref pos "source.ml" 185 5248 5274 "source.ml" 185 5248 5277
+)
+"source.ml" 186 5280 5300 "source.ml" 186 5280 5319
+type(
+  int
+)
+"source.ml" 187 5323 5329 "source.ml" 187 5323 5334
+type(
+  int
+)
+ident(
+  def start "source.ml" 188 5376 5378 "source.ml" 188 5376 5435
+)
+"source.ml" 187 5323 5337 "source.ml" 187 5323 5351
+type(
+  string * (int * int) list ref -> int -> int -> int
+)
+ident(
+  int_ref point_of_coord "source.ml" 182 5159 5163 "source.ml" 182 5159 5177
+)
+"source.ml" 187 5323 5352 "source.ml" 187 5323 5358
+type(
+  string * (int * int) list ref
+)
+ident(
+  int_ref buffer "source.ml" 185 5248 5267 "source.ml" 185 5248 5273
+)
+"source.ml" 187 5323 5359 "source.ml" 187 5323 5370
+type(
+  int
+)
+ident(
+  int_ref line_number "source.ml" 186 5280 5286 "source.ml" 186 5280 5297
+)
+"source.ml" 187 5323 5371 "source.ml" 187 5323 5372
+type(
+  int
+)
+"source.ml" 187 5323 5337 "source.ml" 187 5323 5372
+call(
+  stack
+)
+type(
+  int
+)
+"source.ml" 188 5376 5378 "source.ml" 188 5376 5383
+type(
+  int
+)
+ident(
+  int_ref start "source.ml" 187 5323 5329 "source.ml" 187 5323 5334
+)
+"source.ml" 188 5376 5385 "source.ml" 188 5376 5390
+type(
+  int
+)
+ident(
+  int_ref start "source.ml" 187 5323 5329 "source.ml" 187 5323 5334
+)
+"source.ml" 188 5376 5391 "source.ml" 188 5376 5392
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"source.ml" 188 5376 5394 "source.ml" 188 5376 5397
+type(
+  Lexing.position
+)
+ident(
+  int_ref pos "source.ml" 185 5248 5274 "source.ml" 185 5248 5277
+)
+"source.ml" 188 5376 5394 "source.ml" 188 5376 5413
+type(
+  int
+)
+"source.ml" 188 5376 5414 "source.ml" 188 5376 5415
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"source.ml" 188 5376 5416 "source.ml" 188 5376 5419
+type(
+  Lexing.position
+)
+ident(
+  int_ref pos "source.ml" 185 5248 5274 "source.ml" 185 5248 5277
+)
+"source.ml" 188 5376 5416 "source.ml" 188 5376 5434
+type(
+  int
+)
+"source.ml" 188 5376 5393 "source.ml" 188 5376 5435
+type(
+  int
+)
+"source.ml" 188 5376 5385 "source.ml" 188 5376 5435
+type(
+  int
+)
+"source.ml" 188 5376 5378 "source.ml" 188 5376 5435
+type(
+  int * int
+)
+"source.ml" 187 5323 5325 "source.ml" 188 5376 5435
+type(
+  int * int
+)
+"source.ml" 186 5280 5282 "source.ml" 188 5376 5435
+type(
+  int * int
+)

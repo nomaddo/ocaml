@@ -1,0 +1,817 @@
+"table.ml" 15 875 879 "table.ml" 15 875 891
+type(
+  int
+)
+ident(
+  def default_size "table.ml" 18 901 901 "table.ml" 1 0 -1
+)
+"table.ml" 15 875 894 "table.ml" 15 875 896
+type(
+  int
+)
+"table.ml" 18 901 905 "table.ml" 18 901 911
+type(
+  'a -> 'a t
+)
+ident(
+  def create "table.ml" 22 994 994 "table.ml" 1 0 -1
+)
+"table.ml" 18 901 912 "table.ml" 18 901 913
+type(
+  'a
+)
+ident(
+  def x "table.ml" 18 901 916 "table.ml" 18 901 963
+)
+"table.ml" 18 901 924 "table.ml" 18 901 925
+type(
+  int
+)
+"table.ml" 18 901 935 "table.ml" 18 901 947
+type(
+  int -> 'a -> 'a array
+)
+ident(
+  ext_ref Array.create
+)
+"table.ml" 18 901 948 "table.ml" 18 901 960
+type(
+  int
+)
+ident(
+  int_ref default_size "table.ml" 15 875 879 "table.ml" 15 875 891
+)
+"table.ml" 18 901 961 "table.ml" 18 901 962
+type(
+  'a
+)
+ident(
+  int_ref x "table.ml" 18 901 912 "table.ml" 18 901 913
+)
+"table.ml" 18 901 935 "table.ml" 18 901 962
+type(
+  'a array
+)
+"table.ml" 18 901 916 "table.ml" 18 901 963
+type(
+  'a t
+)
+"table.ml" 19 964 968 "table.ml" 19 964 973
+type(
+  'b t -> unit
+)
+ident(
+  def reset "table.ml" 22 994 994 "table.ml" 1 0 -1
+)
+"table.ml" 19 964 974 "table.ml" 19 964 975
+type(
+  'b t
+)
+ident(
+  def t "table.ml" 19 964 978 "table.ml" 19 964 989
+)
+"table.ml" 19 964 978 "table.ml" 19 964 979
+type(
+  'b t
+)
+ident(
+  int_ref t "table.ml" 19 964 974 "table.ml" 19 964 975
+)
+"table.ml" 19 964 988 "table.ml" 19 964 989
+type(
+  int
+)
+"table.ml" 19 964 978 "table.ml" 19 964 989
+type(
+  unit
+)
+"table.ml" 22 994 998 "table.ml" 22 994 1008
+type(
+  'a t -> int -> unit
+)
+ident(
+  def incr_table "table.ml" 27 1153 1153 "table.ml" 1 0 -1
+)
+"table.ml" 22 994 1009 "table.ml" 22 994 1014
+type(
+  'a t
+)
+ident(
+  def table "table.ml" 22 994 1015 "table.ml" 25 1134 1151
+)
+"table.ml" 22 994 1015 "table.ml" 22 994 1023
+type(
+  int
+)
+ident(
+  def new_size "table.ml" 23 1026 1028 "table.ml" 25 1134 1151
+)
+"table.ml" 23 1026 1032 "table.ml" 23 1026 1033
+type(
+  'a array
+)
+ident(
+  def t "table.ml" 24 1076 1078 "table.ml" 25 1134 1151
+)
+"table.ml" 23 1026 1036 "table.ml" 23 1026 1048
+type(
+  int -> 'a -> 'a array
+)
+ident(
+  ext_ref Array.create
+)
+"table.ml" 23 1026 1049 "table.ml" 23 1026 1057
+type(
+  int
+)
+ident(
+  int_ref new_size "table.ml" 22 994 1015 "table.ml" 22 994 1023
+)
+"table.ml" 23 1026 1058 "table.ml" 23 1026 1063
+type(
+  'a t
+)
+ident(
+  int_ref table "table.ml" 22 994 1009 "table.ml" 22 994 1014
+)
+"table.ml" 23 1026 1058 "table.ml" 23 1026 1068
+type(
+  'a array
+)
+"table.ml" 23 1026 1070 "table.ml" 23 1026 1071
+type(
+  int
+)
+"table.ml" 23 1026 1058 "table.ml" 23 1026 1072
+type(
+  'a
+)
+"table.ml" 23 1026 1036 "table.ml" 23 1026 1072
+type(
+  'a array
+)
+"table.ml" 24 1076 1078 "table.ml" 24 1076 1088
+type(
+  'a array -> int -> 'a array -> int -> int -> unit
+)
+ident(
+  ext_ref Array.blit
+)
+"table.ml" 24 1076 1089 "table.ml" 24 1076 1094
+type(
+  'a t
+)
+ident(
+  int_ref table "table.ml" 22 994 1009 "table.ml" 22 994 1014
+)
+"table.ml" 24 1076 1089 "table.ml" 24 1076 1099
+type(
+  'a array
+)
+"table.ml" 24 1076 1100 "table.ml" 24 1076 1101
+type(
+  int
+)
+"table.ml" 24 1076 1102 "table.ml" 24 1076 1103
+type(
+  'a array
+)
+ident(
+  int_ref t "table.ml" 23 1026 1032 "table.ml" 23 1026 1033
+)
+"table.ml" 24 1076 1104 "table.ml" 24 1076 1105
+type(
+  int
+)
+"table.ml" 24 1076 1107 "table.ml" 24 1076 1119
+type(
+  'a array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"table.ml" 24 1076 1120 "table.ml" 24 1076 1125
+type(
+  'a t
+)
+ident(
+  int_ref table "table.ml" 22 994 1009 "table.ml" 22 994 1014
+)
+"table.ml" 24 1076 1120 "table.ml" 24 1076 1130
+type(
+  'a array
+)
+"table.ml" 24 1076 1106 "table.ml" 24 1076 1131
+type(
+  int
+)
+"table.ml" 24 1076 1078 "table.ml" 24 1076 1131
+call(
+  stack
+)
+type(
+  unit
+)
+"table.ml" 25 1134 1136 "table.ml" 25 1134 1141
+type(
+  'a t
+)
+ident(
+  int_ref table "table.ml" 22 994 1009 "table.ml" 22 994 1014
+)
+"table.ml" 25 1134 1150 "table.ml" 25 1134 1151
+type(
+  'a array
+)
+ident(
+  int_ref t "table.ml" 23 1026 1032 "table.ml" 23 1026 1033
+)
+"table.ml" 25 1134 1136 "table.ml" 25 1134 1151
+type(
+  unit
+)
+"table.ml" 24 1076 1078 "table.ml" 25 1134 1151
+type(
+  unit
+)
+"table.ml" 23 1026 1028 "table.ml" 25 1134 1151
+type(
+  unit
+)
+"table.ml" 27 1153 1157 "table.ml" 27 1153 1161
+type(
+  'a t -> 'a -> unit
+)
+ident(
+  def emit "table.ml" 36 1337 1337 "table.ml" 1 0 -1
+)
+"table.ml" 27 1153 1162 "table.ml" 27 1153 1167
+type(
+  'a t
+)
+ident(
+  def table "table.ml" 27 1153 1168 "table.ml" 32 1302 1331
+)
+"table.ml" 27 1153 1168 "table.ml" 27 1153 1169
+type(
+  'a
+)
+ident(
+  def i "table.ml" 28 1172 1173 "table.ml" 32 1302 1331
+)
+"table.ml" 28 1172 1177 "table.ml" 28 1172 1181
+type(
+  int
+)
+ident(
+  def size "table.ml" 29 1211 1212 "table.ml" 32 1302 1331
+)
+"table.ml" 28 1172 1184 "table.ml" 28 1172 1196
+type(
+  'a array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"table.ml" 28 1172 1197 "table.ml" 28 1172 1202
+type(
+  'a t
+)
+ident(
+  int_ref table "table.ml" 27 1153 1162 "table.ml" 27 1153 1167
+)
+"table.ml" 28 1172 1197 "table.ml" 28 1172 1207
+type(
+  'a array
+)
+"table.ml" 28 1172 1184 "table.ml" 28 1172 1207
+type(
+  int
+)
+"table.ml" 29 1211 1215 "table.ml" 29 1211 1220
+type(
+  'a t
+)
+ident(
+  int_ref table "table.ml" 27 1153 1162 "table.ml" 27 1153 1167
+)
+"table.ml" 29 1211 1215 "table.ml" 29 1211 1225
+type(
+  int
+)
+"table.ml" 29 1211 1226 "table.ml" 29 1211 1228
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"table.ml" 29 1211 1229 "table.ml" 29 1211 1233
+type(
+  int
+)
+ident(
+  int_ref size "table.ml" 28 1172 1177 "table.ml" 28 1172 1181
+)
+"table.ml" 29 1211 1215 "table.ml" 29 1211 1233
+type(
+  bool
+)
+"table.ml" 30 1239 1243 "table.ml" 30 1239 1253
+type(
+  'a t -> int -> unit
+)
+ident(
+  int_ref incr_table "table.ml" 22 994 998 "table.ml" 22 994 1008
+)
+"table.ml" 30 1239 1254 "table.ml" 30 1239 1259
+type(
+  'a t
+)
+ident(
+  int_ref table "table.ml" 27 1153 1162 "table.ml" 27 1153 1167
+)
+"table.ml" 30 1239 1261 "table.ml" 30 1239 1262
+type(
+  int
+)
+"table.ml" 30 1239 1262 "table.ml" 30 1239 1263
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"table.ml" 30 1239 1263 "table.ml" 30 1239 1267
+type(
+  int
+)
+ident(
+  int_ref size "table.ml" 28 1172 1177 "table.ml" 28 1172 1181
+)
+"table.ml" 30 1239 1260 "table.ml" 30 1239 1268
+type(
+  int
+)
+"table.ml" 30 1239 1243 "table.ml" 30 1239 1268
+call(
+  stack
+)
+type(
+  unit
+)
+"table.ml" 29 1211 1212 "table.ml" 30 1239 1268
+type(
+  unit
+)
+"table.ml" 31 1270 1271 "table.ml" 31 1270 1276
+type(
+  'a t
+)
+ident(
+  int_ref table "table.ml" 27 1153 1162 "table.ml" 27 1153 1167
+)
+"table.ml" 31 1270 1271 "table.ml" 31 1270 1281
+type(
+  'a array
+)
+"table.ml" 31 1270 1283 "table.ml" 31 1270 1288
+type(
+  'a t
+)
+ident(
+  int_ref table "table.ml" 27 1153 1162 "table.ml" 27 1153 1167
+)
+"table.ml" 31 1270 1283 "table.ml" 31 1270 1293
+type(
+  int
+)
+"table.ml" 31 1270 1298 "table.ml" 31 1270 1299
+type(
+  'a
+)
+ident(
+  int_ref i "table.ml" 27 1153 1168 "table.ml" 27 1153 1169
+)
+"table.ml" 31 1270 1271 "table.ml" 31 1270 1299
+type(
+  unit
+)
+"table.ml" 32 1302 1303 "table.ml" 32 1302 1308
+type(
+  'a t
+)
+ident(
+  int_ref table "table.ml" 27 1153 1162 "table.ml" 27 1153 1167
+)
+"table.ml" 32 1302 1317 "table.ml" 32 1302 1322
+type(
+  'a t
+)
+ident(
+  int_ref table "table.ml" 27 1153 1162 "table.ml" 27 1153 1167
+)
+"table.ml" 32 1302 1317 "table.ml" 32 1302 1327
+type(
+  int
+)
+"table.ml" 32 1302 1328 "table.ml" 32 1302 1329
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"table.ml" 32 1302 1330 "table.ml" 32 1302 1331
+type(
+  int
+)
+"table.ml" 32 1302 1317 "table.ml" 32 1302 1331
+type(
+  int
+)
+"table.ml" 32 1302 1303 "table.ml" 32 1302 1331
+type(
+  unit
+)
+"table.ml" 31 1270 1271 "table.ml" 32 1302 1331
+type(
+  unit
+)
+"table.ml" 29 1211 1212 "table.ml" 32 1302 1331
+type(
+  unit
+)
+"table.ml" 28 1172 1173 "table.ml" 32 1302 1331
+type(
+  unit
+)
+"table.ml" 38 1354 1358 "table.ml" 38 1354 1361
+type(
+  'a t -> int -> 'a
+)
+ident(
+  def get "table.ml" 44 1438 1438 "table.ml" 1 0 -1
+)
+"table.ml" 38 1354 1362 "table.ml" 38 1354 1363
+type(
+  'a t
+)
+ident(
+  def t "table.ml" 38 1354 1364 "table.ml" 42 1421 1436
+)
+"table.ml" 38 1354 1364 "table.ml" 38 1354 1365
+type(
+  int
+)
+ident(
+  def i "table.ml" 39 1368 1370 "table.ml" 42 1421 1436
+)
+"table.ml" 39 1368 1373 "table.ml" 39 1368 1374
+type(
+  int
+)
+"table.ml" 39 1368 1375 "table.ml" 39 1368 1377
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"table.ml" 39 1368 1378 "table.ml" 39 1368 1379
+type(
+  int
+)
+ident(
+  int_ref i "table.ml" 38 1354 1364 "table.ml" 38 1354 1365
+)
+"table.ml" 39 1368 1373 "table.ml" 39 1368 1379
+type(
+  bool
+)
+"table.ml" 39 1368 1380 "table.ml" 39 1368 1382
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"table.ml" 39 1368 1383 "table.ml" 39 1368 1384
+type(
+  int
+)
+ident(
+  int_ref i "table.ml" 38 1354 1364 "table.ml" 38 1354 1365
+)
+"table.ml" 39 1368 1385 "table.ml" 39 1368 1386
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"table.ml" 39 1368 1387 "table.ml" 39 1368 1388
+type(
+  'a t
+)
+ident(
+  int_ref t "table.ml" 38 1354 1362 "table.ml" 38 1354 1363
+)
+"table.ml" 39 1368 1387 "table.ml" 39 1368 1393
+type(
+  int
+)
+"table.ml" 39 1368 1383 "table.ml" 39 1368 1393
+type(
+  bool
+)
+"table.ml" 39 1368 1373 "table.ml" 39 1368 1393
+type(
+  bool
+)
+"table.ml" 40 1399 1403 "table.ml" 40 1399 1404
+type(
+  'a t
+)
+ident(
+  int_ref t "table.ml" 38 1354 1362 "table.ml" 38 1354 1363
+)
+"table.ml" 40 1399 1403 "table.ml" 40 1399 1409
+type(
+  'a array
+)
+"table.ml" 40 1399 1411 "table.ml" 40 1399 1412
+type(
+  int
+)
+ident(
+  int_ref i "table.ml" 38 1354 1364 "table.ml" 38 1354 1365
+)
+"table.ml" 40 1399 1403 "table.ml" 40 1399 1413
+type(
+  'a
+)
+"table.ml" 42 1421 1425 "table.ml" 42 1421 1430
+type(
+  exn -> 'a
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"table.ml" 42 1421 1431 "table.ml" 42 1421 1436
+type(
+  exn
+)
+"table.ml" 42 1421 1425 "table.ml" 42 1421 1436
+type(
+  'a
+)
+"table.ml" 39 1368 1370 "table.ml" 42 1421 1436
+type(
+  'a
+)
+"table.ml" 44 1438 1442 "table.ml" 44 1438 1446
+type(
+  'a t -> 'a array
+)
+ident(
+  def trim "table.ml" 49 1507 1507 "table.ml" 1 0 -1
+)
+"table.ml" 44 1438 1447 "table.ml" 44 1438 1448
+type(
+  'a t
+)
+ident(
+  def t "table.ml" 45 1451 1453 "table.ml" 47 1502 1505
+)
+"table.ml" 45 1451 1457 "table.ml" 45 1451 1458
+type(
+  'a array
+)
+ident(
+  def r "table.ml" 46 1490 1492 "table.ml" 47 1502 1505
+)
+"table.ml" 45 1451 1461 "table.ml" 45 1451 1470
+type(
+  'a array -> int -> int -> 'a array
+)
+ident(
+  ext_ref Array.sub
+)
+"table.ml" 45 1451 1471 "table.ml" 45 1451 1472
+type(
+  'a t
+)
+ident(
+  int_ref t "table.ml" 44 1438 1447 "table.ml" 44 1438 1448
+)
+"table.ml" 45 1451 1471 "table.ml" 45 1451 1477
+type(
+  'a array
+)
+"table.ml" 45 1451 1478 "table.ml" 45 1451 1479
+type(
+  int
+)
+"table.ml" 45 1451 1480 "table.ml" 45 1451 1481
+type(
+  'a t
+)
+ident(
+  int_ref t "table.ml" 44 1438 1447 "table.ml" 44 1438 1448
+)
+"table.ml" 45 1451 1480 "table.ml" 45 1451 1486
+type(
+  int
+)
+"table.ml" 45 1451 1461 "table.ml" 45 1451 1486
+call(
+  stack
+)
+type(
+  'a array
+)
+"table.ml" 46 1490 1492 "table.ml" 46 1490 1497
+type(
+  'a t -> unit
+)
+ident(
+  int_ref reset "table.ml" 19 964 968 "table.ml" 19 964 973
+)
+"table.ml" 46 1490 1498 "table.ml" 46 1490 1499
+type(
+  'a t
+)
+ident(
+  int_ref t "table.ml" 44 1438 1447 "table.ml" 44 1438 1448
+)
+"table.ml" 46 1490 1492 "table.ml" 46 1490 1499
+call(
+  stack
+)
+type(
+  unit
+)
+"table.ml" 47 1502 1504 "table.ml" 47 1502 1505
+type(
+  'a array
+)
+ident(
+  int_ref r "table.ml" 45 1451 1457 "table.ml" 45 1451 1458
+)
+"table.ml" 46 1490 1492 "table.ml" 47 1502 1505
+type(
+  'a array
+)
+"table.ml" 45 1451 1453 "table.ml" 47 1502 1505
+type(
+  'a array
+)
+"table.ml" 49 1507 1511 "table.ml" 49 1507 1515
+type(
+  'a t -> ('a -> unit) -> unit
+)
+ident(
+  def iter "table.ml" 56 1613 1613 "table.ml" 1 0 -1
+)
+"table.ml" 49 1507 1516 "table.ml" 49 1507 1517
+type(
+  'a t
+)
+ident(
+  def t "table.ml" 49 1507 1518 "table.ml" 54 1605 1611
+)
+"table.ml" 49 1507 1518 "table.ml" 49 1507 1519
+type(
+  'a -> unit
+)
+ident(
+  def f "table.ml" 50 1522 1524 "table.ml" 54 1605 1611
+)
+"table.ml" 50 1522 1528 "table.ml" 50 1522 1532
+type(
+  int
+)
+ident(
+  def size "table.ml" 52 1565 1567 "table.ml" 54 1605 1611
+)
+"table.ml" 50 1522 1535 "table.ml" 50 1522 1536
+type(
+  'a t
+)
+ident(
+  int_ref t "table.ml" 49 1507 1516 "table.ml" 49 1507 1517
+)
+"table.ml" 50 1522 1535 "table.ml" 50 1522 1541
+type(
+  int
+)
+"table.ml" 51 1542 1548 "table.ml" 51 1542 1552
+type(
+  'a array
+)
+ident(
+  def data "table.ml" 52 1565 1567 "table.ml" 54 1605 1611
+)
+"table.ml" 51 1542 1555 "table.ml" 51 1542 1556
+type(
+  'a t
+)
+ident(
+  int_ref t "table.ml" 49 1507 1516 "table.ml" 49 1507 1517
+)
+"table.ml" 51 1542 1555 "table.ml" 51 1542 1561
+type(
+  'a array
+)
+"table.ml" 52 1565 1575 "table.ml" 52 1565 1576
+type(
+  int
+)
+"table.ml" 52 1565 1580 "table.ml" 52 1565 1584
+type(
+  int
+)
+ident(
+  int_ref size "table.ml" 50 1522 1528 "table.ml" 50 1522 1532
+)
+"table.ml" 52 1565 1584 "table.ml" 52 1565 1585
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"table.ml" 52 1565 1585 "table.ml" 52 1565 1586
+type(
+  int
+)
+"table.ml" 52 1565 1580 "table.ml" 52 1565 1586
+type(
+  int
+)
+"table.ml" 53 1590 1594 "table.ml" 53 1590 1595
+type(
+  'a -> unit
+)
+ident(
+  int_ref f "table.ml" 49 1507 1518 "table.ml" 49 1507 1519
+)
+"table.ml" 53 1590 1596 "table.ml" 53 1590 1600
+type(
+  'a array
+)
+ident(
+  int_ref data "table.ml" 51 1542 1548 "table.ml" 51 1542 1552
+)
+"table.ml" 53 1590 1602 "table.ml" 53 1590 1603
+type(
+  int
+)
+ident(
+  int_ref i "table.ml" 52 1565 1567 "table.ml" 54 1605 1611
+)
+"table.ml" 53 1590 1596 "table.ml" 53 1590 1604
+type(
+  'a
+)
+"table.ml" 53 1590 1594 "table.ml" 53 1590 1604
+call(
+  stack
+)
+type(
+  unit
+)
+"table.ml" 52 1565 1567 "table.ml" 54 1605 1611
+type(
+  unit
+)
+"table.ml" 50 1522 1524 "table.ml" 54 1605 1611
+type(
+  unit
+)
+"table.ml" 56 1613 1617 "table.ml" 56 1613 1621
+type(
+  'a t -> int
+)
+ident(
+  def size "table.ml" 56 1613 1632 "table.ml" 1 0 -1
+)
+"table.ml" 56 1613 1622 "table.ml" 56 1613 1623
+type(
+  'a t
+)
+ident(
+  def t "table.ml" 56 1613 1626 "table.ml" 56 1613 1632
+)
+"table.ml" 56 1613 1626 "table.ml" 56 1613 1627
+type(
+  'a t
+)
+ident(
+  int_ref t "table.ml" 56 1613 1622 "table.ml" 56 1613 1623
+)
+"table.ml" 56 1613 1626 "table.ml" 56 1613 1632
+type(
+  int
+)

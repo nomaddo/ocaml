@@ -1,0 +1,5280 @@
+"odoc_comments.ml" 20 1005 1009 "odoc_comments.ml" 20 1005 1021
+type(
+  string
+)
+ident(
+  def simple_blank "odoc_comments.ml" 22 1043 1043 "odoc_comments.ml" 1 0 -1
+)
+"odoc_comments.ml" 20 1005 1024 "odoc_comments.ml" 20 1005 1041
+type(
+  string
+)
+"odoc_comments.ml" 31 1241 1249 "odoc_comments.ml" 31 1241 1259
+type(
+  string -> Odoc_types.see_ref * Odoc_types.text
+)
+ident(
+  def create_see "odoc_comments.ml" 42 1646 1650 "odoc_comments.ml" 314 11741 11746
+)
+"odoc_comments.ml" 31 1241 1260 "odoc_comments.ml" 31 1241 1261
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 32 1264 1270 "odoc_comments.ml" 40 1574 1644
+)
+"odoc_comments.ml" 33 1274 1286 "odoc_comments.ml" 33 1274 1292
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_comments.ml" 34 1319 1327 "odoc_comments.ml" 35 1397 1441
+)
+"odoc_comments.ml" 33 1274 1295 "odoc_comments.ml" 33 1274 1313
+type(
+  string -> Lexing.lexbuf
+)
+ident(
+  ext_ref Lexing.from_string
+)
+"odoc_comments.ml" 33 1274 1314 "odoc_comments.ml" 33 1274 1315
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 31 1241 1260 "odoc_comments.ml" 31 1241 1261
+)
+"odoc_comments.ml" 33 1274 1295 "odoc_comments.ml" 33 1274 1315
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"odoc_comments.ml" 34 1319 1332 "odoc_comments.ml" 34 1319 1339
+type(
+  Odoc_types.see_ref
+)
+ident(
+  def see_ref "odoc_comments.ml" 35 1397 1405 "odoc_comments.ml" 35 1397 1441
+)
+"odoc_comments.ml" 34 1319 1341 "odoc_comments.ml" 34 1319 1342
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 35 1397 1405 "odoc_comments.ml" 35 1397 1441
+)
+"odoc_comments.ml" 34 1319 1331 "odoc_comments.ml" 34 1319 1343
+type(
+  Odoc_types.see_ref * string
+)
+"odoc_comments.ml" 34 1319 1346 "odoc_comments.ml" 34 1319 1366
+type(
+  (Lexing.lexbuf -> Odoc_parser.token) ->
+  Lexing.lexbuf -> Odoc_types.see_ref * string
+)
+ident(
+  ext_ref Odoc_parser.see_info
+)
+"odoc_comments.ml" 34 1319 1367 "odoc_comments.ml" 34 1319 1386
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  ext_ref Odoc_see_lexer.main
+)
+"odoc_comments.ml" 34 1319 1387 "odoc_comments.ml" 34 1319 1393
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_comments.ml" 33 1274 1286 "odoc_comments.ml" 33 1274 1292
+)
+"odoc_comments.ml" 34 1319 1346 "odoc_comments.ml" 34 1319 1393
+call(
+  stack
+)
+type(
+  Odoc_types.see_ref * string
+)
+"odoc_comments.ml" 35 1397 1406 "odoc_comments.ml" 35 1397 1413
+type(
+  Odoc_types.see_ref
+)
+ident(
+  int_ref see_ref "odoc_comments.ml" 34 1319 1332 "odoc_comments.ml" 34 1319 1339
+)
+"odoc_comments.ml" 35 1397 1415 "odoc_comments.ml" 35 1397 1438
+type(
+  string -> Odoc_types.text
+)
+ident(
+  int_ref MyTexter.text_of_string "odoc_comments.ml" 25 1124 1130 "odoc_comments.ml" 25 1124 1165
+)
+"odoc_comments.ml" 35 1397 1439 "odoc_comments.ml" 35 1397 1440
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 34 1319 1341 "odoc_comments.ml" 34 1319 1342
+)
+"odoc_comments.ml" 35 1397 1415 "odoc_comments.ml" 35 1397 1440
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+"odoc_comments.ml" 35 1397 1405 "odoc_comments.ml" 35 1397 1441
+type(
+  Odoc_types.see_ref * Odoc_types.text
+)
+"odoc_comments.ml" 34 1319 1327 "odoc_comments.ml" 35 1397 1441
+type(
+  Odoc_types.see_ref * Odoc_types.text
+)
+"odoc_comments.ml" 33 1274 1282 "odoc_comments.ml" 35 1397 1441
+type(
+  Odoc_types.see_ref * Odoc_types.text
+)
+"odoc_comments.ml" 37 1453 1484 "odoc_comments.ml" 37 1453 1485
+type(
+  int
+)
+ident(
+  def l "odoc_comments.ml" 38 1496 1506 "odoc_comments.ml" 38 1496 1560
+)
+"odoc_comments.ml" 37 1453 1487 "odoc_comments.ml" 37 1453 1488
+type(
+  int
+)
+ident(
+  def c "odoc_comments.ml" 38 1496 1506 "odoc_comments.ml" 38 1496 1560
+)
+"odoc_comments.ml" 37 1453 1490 "odoc_comments.ml" 37 1453 1491
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 38 1496 1506 "odoc_comments.ml" 38 1496 1560
+)
+"odoc_comments.ml" 37 1453 1461 "odoc_comments.ml" 37 1453 1492
+type(
+  exn
+)
+"odoc_comments.ml" 38 1496 1506 "odoc_comments.ml" 38 1496 1511
+type(
+  exn -> Odoc_types.see_ref * Odoc_types.text
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"odoc_comments.ml" 38 1496 1522 "odoc_comments.ml" 38 1496 1552
+type(
+  int -> int -> string -> string
+)
+ident(
+  ext_ref Odoc_messages.text_parse_error
+)
+"odoc_comments.ml" 38 1496 1553 "odoc_comments.ml" 38 1496 1554
+type(
+  int
+)
+ident(
+  int_ref l "odoc_comments.ml" 37 1453 1484 "odoc_comments.ml" 37 1453 1485
+)
+"odoc_comments.ml" 38 1496 1555 "odoc_comments.ml" 38 1496 1556
+type(
+  int
+)
+ident(
+  int_ref c "odoc_comments.ml" 37 1453 1487 "odoc_comments.ml" 37 1453 1488
+)
+"odoc_comments.ml" 38 1496 1557 "odoc_comments.ml" 38 1496 1558
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 37 1453 1490 "odoc_comments.ml" 37 1453 1491
+)
+"odoc_comments.ml" 38 1496 1521 "odoc_comments.ml" 38 1496 1559
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 38 1496 1512 "odoc_comments.ml" 38 1496 1560
+type(
+  exn
+)
+"odoc_comments.ml" 38 1496 1506 "odoc_comments.ml" 38 1496 1560
+type(
+  Odoc_types.see_ref * Odoc_types.text
+)
+"odoc_comments.ml" 39 1561 1569 "odoc_comments.ml" 39 1561 1570
+type(
+  exn
+)
+"odoc_comments.ml" 40 1574 1584 "odoc_comments.ml" 40 1574 1589
+type(
+  exn -> Odoc_types.see_ref * Odoc_types.text
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"odoc_comments.ml" 40 1574 1600 "odoc_comments.ml" 40 1574 1640
+type(
+  string
+)
+"odoc_comments.ml" 40 1574 1640 "odoc_comments.ml" 40 1574 1641
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_comments.ml" 40 1574 1641 "odoc_comments.ml" 40 1574 1642
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 31 1241 1260 "odoc_comments.ml" 31 1241 1261
+)
+"odoc_comments.ml" 40 1574 1599 "odoc_comments.ml" 40 1574 1643
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 40 1574 1590 "odoc_comments.ml" 40 1574 1644
+type(
+  exn
+)
+"odoc_comments.ml" 40 1574 1584 "odoc_comments.ml" 40 1574 1644
+type(
+  Odoc_types.see_ref * Odoc_types.text
+)
+"odoc_comments.ml" 32 1264 1270 "odoc_comments.ml" 40 1574 1644
+type(
+  Odoc_types.see_ref * Odoc_types.text
+)
+"odoc_comments.ml" 42 1646 1654 "odoc_comments.ml" 42 1646 1667
+type(
+  (Lexing.lexbuf -> Odoc_parser.token) ->
+  string -> string -> int * Odoc_types.info option
+)
+ident(
+  def retrieve_info "odoc_comments.ml" 107 4674 4678 "odoc_comments.ml" 314 11741 11746
+)
+"odoc_comments.ml" 42 1646 1668 "odoc_comments.ml" 42 1646 1675
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  def fun_lex "odoc_comments.ml" 42 1646 1676 "odoc_comments.ml" 102 4426 4454
+)
+"odoc_comments.ml" 42 1646 1676 "odoc_comments.ml" 42 1646 1680
+type(
+  string
+)
+ident(
+  def file "odoc_comments.ml" 42 1646 1681 "odoc_comments.ml" 102 4426 4454
+)
+"odoc_comments.ml" 42 1646 1682 "odoc_comments.ml" 42 1646 1683
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 43 1696 1702 "odoc_comments.ml" 102 4426 4454
+)
+"odoc_comments.ml" 44 1706 1718 "odoc_comments.ml" 44 1706 1719
+type(
+  unit
+)
+"odoc_comments.ml" 44 1706 1722 "odoc_comments.ml" 44 1706 1747
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Odoc_comments_global.init
+)
+"odoc_comments.ml" 44 1706 1748 "odoc_comments.ml" 44 1706 1750
+type(
+  unit
+)
+"odoc_comments.ml" 44 1706 1722 "odoc_comments.ml" 44 1706 1750
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_comments.ml" 45 1754 1762 "odoc_comments.ml" 45 1754 1787
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_lexer.comments_level
+)
+"odoc_comments.ml" 45 1754 1788 "odoc_comments.ml" 45 1754 1790
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_comments.ml" 45 1754 1791 "odoc_comments.ml" 45 1754 1792
+type(
+  int
+)
+"odoc_comments.ml" 45 1754 1762 "odoc_comments.ml" 45 1754 1792
+type(
+  unit
+)
+"odoc_comments.ml" 46 1794 1806 "odoc_comments.ml" 46 1794 1812
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_comments.ml" 47 1839 1847 "odoc_comments.ml" 89 3830 3843
+)
+"odoc_comments.ml" 46 1794 1815 "odoc_comments.ml" 46 1794 1833
+type(
+  string -> Lexing.lexbuf
+)
+ident(
+  ext_ref Lexing.from_string
+)
+"odoc_comments.ml" 46 1794 1834 "odoc_comments.ml" 46 1794 1835
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 42 1646 1682 "odoc_comments.ml" 42 1646 1683
+)
+"odoc_comments.ml" 46 1794 1815 "odoc_comments.ml" 46 1794 1835
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"odoc_comments.ml" 47 1839 1853 "odoc_comments.ml" 47 1839 1869
+type(
+  (Lexing.lexbuf -> Odoc_parser.token) ->
+  Lexing.lexbuf -> (string * string option) option
+)
+ident(
+  ext_ref Odoc_parser.main
+)
+"odoc_comments.ml" 47 1839 1870 "odoc_comments.ml" 47 1839 1877
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  int_ref fun_lex "odoc_comments.ml" 42 1646 1668 "odoc_comments.ml" 42 1646 1675
+)
+"odoc_comments.ml" 47 1839 1878 "odoc_comments.ml" 47 1839 1884
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_comments.ml" 46 1794 1806 "odoc_comments.ml" 46 1794 1812
+)
+"odoc_comments.ml" 47 1839 1853 "odoc_comments.ml" 47 1839 1884
+call(
+  stack
+)
+type(
+  (string * string option) option
+)
+"odoc_comments.ml" 48 1890 1900 "odoc_comments.ml" 48 1890 1904
+type(
+  (string * string option) option
+)
+"odoc_comments.ml" 49 1908 1921 "odoc_comments.ml" 49 1908 1922
+type(
+  int
+)
+"odoc_comments.ml" 49 1908 1924 "odoc_comments.ml" 49 1908 1928
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 49 1908 1920 "odoc_comments.ml" 49 1908 1929
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 50 1930 1946 "odoc_comments.ml" 50 1930 1950
+type(
+  string
+)
+ident(
+  def desc "odoc_comments.ml" 51 1967 1979 "odoc_comments.ml" 89 3830 3843
+)
+"odoc_comments.ml" 50 1930 1952 "odoc_comments.ml" 50 1930 1962
+type(
+  string option
+)
+ident(
+  def remain_opt "odoc_comments.ml" 51 1967 1979 "odoc_comments.ml" 89 3830 3843
+)
+"odoc_comments.ml" 50 1930 1945 "odoc_comments.ml" 50 1930 1963
+type(
+  string * string option
+)
+"odoc_comments.ml" 50 1930 1940 "odoc_comments.ml" 50 1930 1963
+type(
+  (string * string option) option
+)
+"odoc_comments.ml" 51 1967 1983 "odoc_comments.ml" 51 1967 1995
+type(
+  int
+)
+ident(
+  def mem_nb_chars "odoc_comments.ml" 52 2032 2044 "odoc_comments.ml" 89 3830 3843
+)
+"odoc_comments.ml" 51 1967 1998 "odoc_comments.ml" 51 1967 1999
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_comments.ml" 51 1967 1999 "odoc_comments.ml" 51 1967 2028
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_comments.ml" 51 1967 1998 "odoc_comments.ml" 51 1967 2028
+type(
+  int
+)
+"odoc_comments.ml" 52 2032 2048 "odoc_comments.ml" 52 2032 2049
+type(
+  unit
+)
+"odoc_comments.ml" 53 2052 2072 "odoc_comments.ml" 53 2052 2082
+type(
+  string option
+)
+ident(
+  int_ref remain_opt "odoc_comments.ml" 50 1930 1952 "odoc_comments.ml" 50 1930 1962
+)
+"odoc_comments.ml" 54 2088 2104 "odoc_comments.ml" 54 2088 2108
+type(
+  string option
+)
+"odoc_comments.ml" 55 2112 2130 "odoc_comments.ml" 55 2112 2132
+type(
+  unit
+)
+"odoc_comments.ml" 56 2133 2154 "odoc_comments.ml" 56 2133 2155
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 58 2189 2207 "odoc_comments.ml" 59 2245 2313
+)
+"odoc_comments.ml" 56 2133 2149 "odoc_comments.ml" 56 2133 2155
+type(
+  string option
+)
+"odoc_comments.ml" 58 2189 2211 "odoc_comments.ml" 58 2189 2218
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf2 "odoc_comments.ml" 59 2245 2263 "odoc_comments.ml" 59 2245 2313
+)
+"odoc_comments.ml" 58 2189 2221 "odoc_comments.ml" 58 2189 2239
+type(
+  string -> Lexing.lexbuf
+)
+ident(
+  ext_ref Lexing.from_string
+)
+"odoc_comments.ml" 58 2189 2240 "odoc_comments.ml" 58 2189 2241
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 56 2133 2154 "odoc_comments.ml" 56 2133 2155
+)
+"odoc_comments.ml" 58 2189 2221 "odoc_comments.ml" 58 2189 2241
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"odoc_comments.ml" 59 2245 2263 "odoc_comments.ml" 59 2245 2285
+type(
+  (Lexing.lexbuf -> Odoc_parser.token) -> Lexing.lexbuf -> unit
+)
+ident(
+  ext_ref Odoc_parser.info_part2
+)
+"odoc_comments.ml" 59 2245 2286 "odoc_comments.ml" 59 2245 2305
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  ext_ref Odoc_lexer.elements
+)
+"odoc_comments.ml" 59 2245 2306 "odoc_comments.ml" 59 2245 2313
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf2 "odoc_comments.ml" 58 2189 2211 "odoc_comments.ml" 58 2189 2218
+)
+"odoc_comments.ml" 59 2245 2263 "odoc_comments.ml" 59 2245 2313
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_comments.ml" 58 2189 2207 "odoc_comments.ml" 59 2245 2313
+type(
+  unit
+)
+"odoc_comments.ml" 53 2052 2066 "odoc_comments.ml" 59 2245 2313
+type(
+  unit
+)
+"odoc_comments.ml" 61 2329 2342 "odoc_comments.ml" 61 2329 2354
+type(
+  int
+)
+ident(
+  int_ref mem_nb_chars "odoc_comments.ml" 51 1967 1983 "odoc_comments.ml" 51 1967 1995
+)
+"odoc_comments.ml" 64 2391 2424 "odoc_comments.ml" 64 2391 2428
+type(
+  string
+)
+ident(
+  int_ref desc "odoc_comments.ml" 50 1930 1946 "odoc_comments.ml" 50 1930 1950
+)
+"odoc_comments.ml" 64 2391 2434 "odoc_comments.ml" 64 2391 2436
+type(
+  string
+)
+"odoc_comments.ml" 64 2391 2440 "odoc_comments.ml" 64 2391 2444
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 64 2391 2447 "odoc_comments.ml" 64 2391 2448
+type(
+  string
+)
+"odoc_comments.ml" 64 2391 2458 "odoc_comments.ml" 64 2391 2481
+type(
+  string -> Odoc_types.text
+)
+ident(
+  int_ref MyTexter.text_of_string "odoc_comments.ml" 25 1124 1130 "odoc_comments.ml" 25 1124 1165
+)
+"odoc_comments.ml" 64 2391 2482 "odoc_comments.ml" 64 2391 2486
+type(
+  string
+)
+ident(
+  int_ref desc "odoc_comments.ml" 50 1930 1946 "odoc_comments.ml" 50 1930 1950
+)
+"odoc_comments.ml" 64 2391 2457 "odoc_comments.ml" 64 2391 2487
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+"odoc_comments.ml" 64 2391 2452 "odoc_comments.ml" 64 2391 2487
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 64 2391 2417 "odoc_comments.ml" 64 2391 2488
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 65 2490 2519 "odoc_comments.ml" 65 2490 2520
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_comments.ml" 65 2490 2520 "odoc_comments.ml" 65 2490 2548
+type(
+  string list ref
+)
+ident(
+  ext_ref Odoc_comments_global.authors
+)
+"odoc_comments.ml" 65 2490 2519 "odoc_comments.ml" 65 2490 2548
+type(
+  string list
+)
+"odoc_comments.ml" 66 2550 2579 "odoc_comments.ml" 66 2550 2580
+type(
+  string option ref -> string option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_comments.ml" 66 2550 2580 "odoc_comments.ml" 66 2550 2608
+type(
+  string option ref
+)
+ident(
+  ext_ref Odoc_comments_global.version
+)
+"odoc_comments.ml" 66 2550 2579 "odoc_comments.ml" 66 2550 2608
+type(
+  string option
+)
+"odoc_comments.ml" 67 2610 2637 "odoc_comments.ml" 67 2610 2645
+type(
+  (string -> Odoc_types.see) -> string list -> Odoc_types.see list
+)
+ident(
+  ext_ref List.map
+)
+"odoc_comments.ml" 67 2610 2646 "odoc_comments.ml" 67 2610 2656
+type(
+  string -> Odoc_types.see
+)
+ident(
+  int_ref create_see "odoc_comments.ml" 31 1241 1249 "odoc_comments.ml" 31 1241 1259
+)
+"odoc_comments.ml" 67 2610 2657 "odoc_comments.ml" 67 2610 2658
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_comments.ml" 67 2610 2658 "odoc_comments.ml" 67 2610 2683
+type(
+  string list ref
+)
+ident(
+  ext_ref Odoc_comments_global.sees
+)
+"odoc_comments.ml" 67 2610 2657 "odoc_comments.ml" 67 2610 2683
+type(
+  string list
+)
+"odoc_comments.ml" 67 2610 2636 "odoc_comments.ml" 67 2610 2684
+call(
+  stack
+)
+type(
+  Odoc_types.see list
+)
+"odoc_comments.ml" 68 2687 2714 "odoc_comments.ml" 68 2687 2715
+type(
+  string option ref -> string option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_comments.ml" 68 2687 2715 "odoc_comments.ml" 68 2687 2741
+type(
+  string option ref
+)
+ident(
+  ext_ref Odoc_comments_global.since
+)
+"odoc_comments.ml" 68 2687 2714 "odoc_comments.ml" 68 2687 2741
+type(
+  string option
+)
+"odoc_comments.ml" 69 2743 2771 "odoc_comments.ml" 69 2743 2799
+type(
+  (string * Odoc_types.text) list -> (string * Odoc_types.text) list
+)
+ident(
+  ext_ref Odoc_merge.merge_before_tags
+)
+"odoc_comments.ml" 70 2800 2822 "odoc_comments.ml" 70 2800 2830
+type(
+  (string * string -> string * Odoc_types.text) ->
+  (string * string) list -> (string * Odoc_types.text) list
+)
+ident(
+  ext_ref List.map
+)
+"odoc_comments.ml" 70 2800 2837 "odoc_comments.ml" 70 2800 2838
+type(
+  string
+)
+ident(
+  def n "odoc_comments.ml" 71 2846 2871 "odoc_comments.ml" 71 2846 2901
+)
+"odoc_comments.ml" 70 2800 2840 "odoc_comments.ml" 70 2800 2841
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 71 2846 2871 "odoc_comments.ml" 71 2846 2901
+)
+"odoc_comments.ml" 70 2800 2836 "odoc_comments.ml" 70 2800 2842
+type(
+  string * string
+)
+"odoc_comments.ml" 71 2846 2872 "odoc_comments.ml" 71 2846 2873
+type(
+  string
+)
+ident(
+  int_ref n "odoc_comments.ml" 70 2800 2837 "odoc_comments.ml" 70 2800 2838
+)
+"odoc_comments.ml" 71 2846 2875 "odoc_comments.ml" 71 2846 2898
+type(
+  string -> Odoc_types.text
+)
+ident(
+  int_ref MyTexter.text_of_string "odoc_comments.ml" 25 1124 1130 "odoc_comments.ml" 25 1124 1165
+)
+"odoc_comments.ml" 71 2846 2899 "odoc_comments.ml" 71 2846 2900
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 70 2800 2840 "odoc_comments.ml" 70 2800 2841
+)
+"odoc_comments.ml" 71 2846 2875 "odoc_comments.ml" 71 2846 2900
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+"odoc_comments.ml" 71 2846 2871 "odoc_comments.ml" 71 2846 2901
+type(
+  string * Odoc_types.text
+)
+"odoc_comments.ml" 70 2800 2831 "odoc_comments.ml" 71 2846 2902
+type(
+  string * string -> string * Odoc_types.text
+)
+"odoc_comments.ml" 71 2846 2903 "odoc_comments.ml" 71 2846 2904
+type(
+  (string * string) list ref -> (string * string) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_comments.ml" 71 2846 2904 "odoc_comments.ml" 71 2846 2931
+type(
+  (string * string) list ref
+)
+ident(
+  ext_ref Odoc_comments_global.before
+)
+"odoc_comments.ml" 71 2846 2903 "odoc_comments.ml" 71 2846 2931
+type(
+  (string * string) list
+)
+"odoc_comments.ml" 70 2800 2821 "odoc_comments.ml" 71 2846 2932
+call(
+  stack
+)
+type(
+  (string * Odoc_types.text) list
+)
+"odoc_comments.ml" 69 2743 2771 "odoc_comments.ml" 71 2846 2932
+call(
+  stack
+)
+type(
+  (string * Odoc_types.text) list
+)
+"odoc_comments.ml" 74 2986 3010 "odoc_comments.ml" 74 2986 3011
+type(
+  string option ref -> string option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_comments.ml" 74 2986 3011 "odoc_comments.ml" 74 2986 3042
+type(
+  string option ref
+)
+ident(
+  ext_ref Odoc_comments_global.deprecated
+)
+"odoc_comments.ml" 74 2986 3010 "odoc_comments.ml" 74 2986 3042
+type(
+  string option
+)
+"odoc_comments.ml" 75 3048 3067 "odoc_comments.ml" 75 3048 3071
+type(
+  string option
+)
+"odoc_comments.ml" 75 3048 3075 "odoc_comments.ml" 75 3048 3079
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 75 3048 3087 "odoc_comments.ml" 75 3048 3088
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 75 3048 3092 "odoc_comments.ml" 75 3048 3124
+)
+"odoc_comments.ml" 75 3048 3082 "odoc_comments.ml" 75 3048 3088
+type(
+  string option
+)
+"odoc_comments.ml" 75 3048 3098 "odoc_comments.ml" 75 3048 3121
+type(
+  string -> Odoc_types.text
+)
+ident(
+  int_ref MyTexter.text_of_string "odoc_comments.ml" 25 1124 1130 "odoc_comments.ml" 25 1124 1165
+)
+"odoc_comments.ml" 75 3048 3122 "odoc_comments.ml" 75 3048 3123
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 75 3048 3087 "odoc_comments.ml" 75 3048 3088
+)
+"odoc_comments.ml" 75 3048 3097 "odoc_comments.ml" 75 3048 3124
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+"odoc_comments.ml" 75 3048 3092 "odoc_comments.ml" 75 3048 3124
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 74 2986 3003 "odoc_comments.ml" 75 3048 3125
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 77 3155 3173 "odoc_comments.ml" 77 3155 3181
+type(
+  (string * string -> Odoc_types.param) ->
+  (string * string) list -> Odoc_types.param list
+)
+ident(
+  ext_ref List.map
+)
+"odoc_comments.ml" 77 3155 3188 "odoc_comments.ml" 77 3155 3189
+type(
+  string
+)
+ident(
+  def n "odoc_comments.ml" 78 3197 3216 "odoc_comments.ml" 78 3197 3246
+)
+"odoc_comments.ml" 77 3155 3191 "odoc_comments.ml" 77 3155 3192
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 78 3197 3216 "odoc_comments.ml" 78 3197 3246
+)
+"odoc_comments.ml" 77 3155 3187 "odoc_comments.ml" 77 3155 3193
+type(
+  string * string
+)
+"odoc_comments.ml" 78 3197 3217 "odoc_comments.ml" 78 3197 3218
+type(
+  string
+)
+ident(
+  int_ref n "odoc_comments.ml" 77 3155 3188 "odoc_comments.ml" 77 3155 3189
+)
+"odoc_comments.ml" 78 3197 3220 "odoc_comments.ml" 78 3197 3243
+type(
+  string -> Odoc_types.text
+)
+ident(
+  int_ref MyTexter.text_of_string "odoc_comments.ml" 25 1124 1130 "odoc_comments.ml" 25 1124 1165
+)
+"odoc_comments.ml" 78 3197 3244 "odoc_comments.ml" 78 3197 3245
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 77 3155 3191 "odoc_comments.ml" 77 3155 3192
+)
+"odoc_comments.ml" 78 3197 3220 "odoc_comments.ml" 78 3197 3245
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+"odoc_comments.ml" 78 3197 3216 "odoc_comments.ml" 78 3197 3246
+type(
+  string * Odoc_types.text
+)
+"odoc_comments.ml" 77 3155 3182 "odoc_comments.ml" 78 3197 3247
+type(
+  string * string -> Odoc_types.param
+)
+"odoc_comments.ml" 78 3197 3248 "odoc_comments.ml" 78 3197 3249
+type(
+  (string * string) list ref -> (string * string) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_comments.ml" 78 3197 3249 "odoc_comments.ml" 78 3197 3276
+type(
+  (string * string) list ref
+)
+ident(
+  ext_ref Odoc_comments_global.params
+)
+"odoc_comments.ml" 78 3197 3248 "odoc_comments.ml" 78 3197 3276
+type(
+  (string * string) list
+)
+"odoc_comments.ml" 77 3155 3172 "odoc_comments.ml" 78 3197 3277
+call(
+  stack
+)
+type(
+  Odoc_types.param list
+)
+"odoc_comments.ml" 80 3318 3336 "odoc_comments.ml" 80 3318 3344
+type(
+  (string * string -> Odoc_types.raised_exception) ->
+  (string * string) list -> Odoc_types.raised_exception list
+)
+ident(
+  ext_ref List.map
+)
+"odoc_comments.ml" 80 3318 3351 "odoc_comments.ml" 80 3318 3352
+type(
+  string
+)
+ident(
+  def n "odoc_comments.ml" 81 3360 3379 "odoc_comments.ml" 81 3360 3409
+)
+"odoc_comments.ml" 80 3318 3354 "odoc_comments.ml" 80 3318 3355
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 81 3360 3379 "odoc_comments.ml" 81 3360 3409
+)
+"odoc_comments.ml" 80 3318 3350 "odoc_comments.ml" 80 3318 3356
+type(
+  string * string
+)
+"odoc_comments.ml" 81 3360 3380 "odoc_comments.ml" 81 3360 3381
+type(
+  string
+)
+ident(
+  int_ref n "odoc_comments.ml" 80 3318 3351 "odoc_comments.ml" 80 3318 3352
+)
+"odoc_comments.ml" 81 3360 3383 "odoc_comments.ml" 81 3360 3406
+type(
+  string -> Odoc_types.text
+)
+ident(
+  int_ref MyTexter.text_of_string "odoc_comments.ml" 25 1124 1130 "odoc_comments.ml" 25 1124 1165
+)
+"odoc_comments.ml" 81 3360 3407 "odoc_comments.ml" 81 3360 3408
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 80 3318 3354 "odoc_comments.ml" 80 3318 3355
+)
+"odoc_comments.ml" 81 3360 3383 "odoc_comments.ml" 81 3360 3408
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+"odoc_comments.ml" 81 3360 3379 "odoc_comments.ml" 81 3360 3409
+type(
+  string * Odoc_types.text
+)
+"odoc_comments.ml" 80 3318 3345 "odoc_comments.ml" 81 3360 3410
+type(
+  string * string -> Odoc_types.raised_exception
+)
+"odoc_comments.ml" 81 3360 3411 "odoc_comments.ml" 81 3360 3412
+type(
+  (string * string) list ref -> (string * string) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_comments.ml" 81 3360 3412 "odoc_comments.ml" 81 3360 3450
+type(
+  (string * string) list ref
+)
+ident(
+  ext_ref Odoc_comments_global.raised_exceptions
+)
+"odoc_comments.ml" 81 3360 3411 "odoc_comments.ml" 81 3360 3450
+type(
+  (string * string) list
+)
+"odoc_comments.ml" 80 3318 3335 "odoc_comments.ml" 81 3360 3451
+call(
+  stack
+)
+type(
+  Odoc_types.raised_exception list
+)
+"odoc_comments.ml" 83 3487 3511 "odoc_comments.ml" 83 3487 3512
+type(
+  string option ref -> string option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_comments.ml" 83 3487 3512 "odoc_comments.ml" 83 3487 3545
+type(
+  string option ref
+)
+ident(
+  ext_ref Odoc_comments_global.return_value
+)
+"odoc_comments.ml" 83 3487 3511 "odoc_comments.ml" 83 3487 3545
+type(
+  string option
+)
+"odoc_comments.ml" 84 3551 3570 "odoc_comments.ml" 84 3551 3574
+type(
+  string option
+)
+"odoc_comments.ml" 84 3551 3578 "odoc_comments.ml" 84 3551 3582
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 84 3551 3590 "odoc_comments.ml" 84 3551 3591
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 84 3551 3595 "odoc_comments.ml" 84 3551 3627
+)
+"odoc_comments.ml" 84 3551 3585 "odoc_comments.ml" 84 3551 3591
+type(
+  string option
+)
+"odoc_comments.ml" 84 3551 3601 "odoc_comments.ml" 84 3551 3624
+type(
+  string -> Odoc_types.text
+)
+ident(
+  int_ref MyTexter.text_of_string "odoc_comments.ml" 25 1124 1130 "odoc_comments.ml" 25 1124 1165
+)
+"odoc_comments.ml" 84 3551 3625 "odoc_comments.ml" 84 3551 3626
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 84 3551 3590 "odoc_comments.ml" 84 3551 3591
+)
+"odoc_comments.ml" 84 3551 3600 "odoc_comments.ml" 84 3551 3627
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+"odoc_comments.ml" 84 3551 3595 "odoc_comments.ml" 84 3551 3627
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 83 3487 3504 "odoc_comments.ml" 84 3551 3628
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 85 3631 3660 "odoc_comments.ml" 85 3631 3668
+type(
+  (string * string -> string * Odoc_types.text) ->
+  (string * string) list -> (string * Odoc_types.text) list
+)
+ident(
+  ext_ref List.map
+)
+"odoc_comments.ml" 86 3669 3706 "odoc_comments.ml" 86 3669 3709
+type(
+  string
+)
+ident(
+  def tag "odoc_comments.ml" 86 3669 3717 "odoc_comments.ml" 86 3669 3749
+)
+"odoc_comments.ml" 86 3669 3711 "odoc_comments.ml" 86 3669 3712
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 86 3669 3717 "odoc_comments.ml" 86 3669 3749
+)
+"odoc_comments.ml" 86 3669 3705 "odoc_comments.ml" 86 3669 3713
+type(
+  string * string
+)
+"odoc_comments.ml" 86 3669 3718 "odoc_comments.ml" 86 3669 3721
+type(
+  string
+)
+ident(
+  int_ref tag "odoc_comments.ml" 86 3669 3706 "odoc_comments.ml" 86 3669 3709
+)
+"odoc_comments.ml" 86 3669 3723 "odoc_comments.ml" 86 3669 3746
+type(
+  string -> Odoc_types.text
+)
+ident(
+  int_ref MyTexter.text_of_string "odoc_comments.ml" 25 1124 1130 "odoc_comments.ml" 25 1124 1165
+)
+"odoc_comments.ml" 86 3669 3747 "odoc_comments.ml" 86 3669 3748
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 86 3669 3711 "odoc_comments.ml" 86 3669 3712
+)
+"odoc_comments.ml" 86 3669 3723 "odoc_comments.ml" 86 3669 3748
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+"odoc_comments.ml" 86 3669 3717 "odoc_comments.ml" 86 3669 3749
+type(
+  string * Odoc_types.text
+)
+"odoc_comments.ml" 86 3669 3700 "odoc_comments.ml" 86 3669 3750
+type(
+  string * string -> string * Odoc_types.text
+)
+"odoc_comments.ml" 87 3751 3782 "odoc_comments.ml" 87 3751 3783
+type(
+  (string * string) list ref -> (string * string) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_comments.ml" 87 3751 3783 "odoc_comments.ml" 87 3751 3811
+type(
+  (string * string) list ref
+)
+ident(
+  ext_ref Odoc_comments_global.customs
+)
+"odoc_comments.ml" 87 3751 3782 "odoc_comments.ml" 87 3751 3811
+type(
+  (string * string) list
+)
+"odoc_comments.ml" 85 3631 3659 "odoc_comments.ml" 87 3751 3812
+call(
+  stack
+)
+type(
+  (string * Odoc_types.text) list
+)
+"odoc_comments.ml" 63 2374 2389 "odoc_comments.ml" 88 3813 3829
+type(
+  Odoc_types.info
+)
+"odoc_comments.ml" 62 2356 2369 "odoc_comments.ml" 88 3813 3829
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 61 2329 2341 "odoc_comments.ml" 89 3830 3843
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 52 2032 2044 "odoc_comments.ml" 89 3830 3843
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 51 1967 1979 "odoc_comments.ml" 89 3830 3843
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 47 1839 1847 "odoc_comments.ml" 89 3830 3843
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 46 1794 1802 "odoc_comments.ml" 89 3830 3843
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 45 1754 1762 "odoc_comments.ml" 89 3830 3843
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 44 1706 1714 "odoc_comments.ml" 89 3830 3843
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 91 3864 3889 "odoc_comments.ml" 91 3864 3890
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 92 3894 3913 "odoc_comments.ml" 94 4040 4068
+)
+"odoc_comments.ml" 91 3864 3881 "odoc_comments.ml" 91 3864 3890
+type(
+  exn
+)
+"odoc_comments.ml" 92 3894 3913 "odoc_comments.ml" 92 3894 3917
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_comments.ml" 92 3894 3918 "odoc_comments.ml" 92 3894 3936
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc_comments.ml" 92 3894 3913 "odoc_comments.ml" 92 3894 3936
+type(
+  unit
+)
+"odoc_comments.ml" 93 3939 3959 "odoc_comments.ml" 93 3939 3973
+type(
+  (string -> int -> string -> unit, out_channel, unit) format ->
+  string -> int -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"odoc_comments.ml" 93 3939 3974 "odoc_comments.ml" 93 3939 4001
+type(
+  (string -> int -> string -> unit, out_channel, unit) format
+)
+"odoc_comments.ml" 93 3939 4002 "odoc_comments.ml" 93 3939 4006
+type(
+  string
+)
+ident(
+  int_ref file "odoc_comments.ml" 42 1646 1676 "odoc_comments.ml" 42 1646 1680
+)
+"odoc_comments.ml" 93 3939 4008 "odoc_comments.ml" 93 3939 4009
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_comments.ml" 93 3939 4009 "odoc_comments.ml" 93 3939 4031
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_lexer.line_number
+)
+"odoc_comments.ml" 93 3939 4008 "odoc_comments.ml" 93 3939 4031
+type(
+  int
+)
+"odoc_comments.ml" 93 3939 4032 "odoc_comments.ml" 93 3939 4033
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_comments.ml" 93 3939 4034 "odoc_comments.ml" 93 3939 4035
+type(
+  int
+)
+"odoc_comments.ml" 93 3939 4007 "odoc_comments.ml" 93 3939 4036
+type(
+  int
+)
+"odoc_comments.ml" 93 3939 4037 "odoc_comments.ml" 93 3939 4038
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 91 3864 3889 "odoc_comments.ml" 91 3864 3890
+)
+"odoc_comments.ml" 93 3939 3959 "odoc_comments.ml" 93 3939 4038
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_comments.ml" 94 4040 4060 "odoc_comments.ml" 94 4040 4061
+type(
+  int
+)
+"odoc_comments.ml" 94 4040 4063 "odoc_comments.ml" 94 4040 4067
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 94 4040 4059 "odoc_comments.ml" 94 4040 4068
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 93 3939 3959 "odoc_comments.ml" 94 4040 4068
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 92 3894 3913 "odoc_comments.ml" 94 4040 4068
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 95 4069 4109 "odoc_comments.ml" 95 4069 4110
+type(
+  int
+)
+ident(
+  def l "odoc_comments.ml" 96 4121 4140 "odoc_comments.ml" 98 4252 4280
+)
+"odoc_comments.ml" 95 4069 4112 "odoc_comments.ml" 95 4069 4113
+type(
+  int
+)
+ident(
+  def c "odoc_comments.ml" 96 4121 4140 "odoc_comments.ml" 98 4252 4280
+)
+"odoc_comments.ml" 95 4069 4115 "odoc_comments.ml" 95 4069 4116
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 96 4121 4140 "odoc_comments.ml" 98 4252 4280
+)
+"odoc_comments.ml" 95 4069 4086 "odoc_comments.ml" 95 4069 4117
+type(
+  exn
+)
+"odoc_comments.ml" 96 4121 4140 "odoc_comments.ml" 96 4121 4144
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_comments.ml" 96 4121 4145 "odoc_comments.ml" 96 4121 4163
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc_comments.ml" 96 4121 4140 "odoc_comments.ml" 96 4121 4163
+type(
+  unit
+)
+"odoc_comments.ml" 97 4166 4185 "odoc_comments.ml" 97 4166 4198
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"odoc_comments.ml" 97 4166 4200 "odoc_comments.ml" 97 4166 4204
+type(
+  string
+)
+ident(
+  int_ref file "odoc_comments.ml" 42 1646 1676 "odoc_comments.ml" 42 1646 1680
+)
+"odoc_comments.ml" 97 4166 4204 "odoc_comments.ml" 97 4166 4205
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_comments.ml" 97 4166 4205 "odoc_comments.ml" 97 4166 4210
+type(
+  string
+)
+"odoc_comments.ml" 97 4166 4210 "odoc_comments.ml" 97 4166 4211
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_comments.ml" 97 4166 4212 "odoc_comments.ml" 97 4166 4242
+type(
+  int -> int -> string -> string
+)
+ident(
+  ext_ref Odoc_messages.text_parse_error
+)
+"odoc_comments.ml" 97 4166 4243 "odoc_comments.ml" 97 4166 4244
+type(
+  int
+)
+ident(
+  int_ref l "odoc_comments.ml" 95 4069 4109 "odoc_comments.ml" 95 4069 4110
+)
+"odoc_comments.ml" 97 4166 4245 "odoc_comments.ml" 97 4166 4246
+type(
+  int
+)
+ident(
+  int_ref c "odoc_comments.ml" 95 4069 4112 "odoc_comments.ml" 95 4069 4113
+)
+"odoc_comments.ml" 97 4166 4247 "odoc_comments.ml" 97 4166 4248
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 95 4069 4115 "odoc_comments.ml" 95 4069 4116
+)
+"odoc_comments.ml" 97 4166 4211 "odoc_comments.ml" 97 4166 4249
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 97 4166 4205 "odoc_comments.ml" 97 4166 4249
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 97 4166 4199 "odoc_comments.ml" 97 4166 4250
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 97 4166 4185 "odoc_comments.ml" 97 4166 4250
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_comments.ml" 98 4252 4272 "odoc_comments.ml" 98 4252 4273
+type(
+  int
+)
+"odoc_comments.ml" 98 4252 4275 "odoc_comments.ml" 98 4252 4279
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 98 4252 4271 "odoc_comments.ml" 98 4252 4280
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 97 4166 4185 "odoc_comments.ml" 98 4252 4280
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 96 4121 4140 "odoc_comments.ml" 98 4252 4280
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 99 4281 4298 "odoc_comments.ml" 99 4281 4299
+type(
+  exn
+)
+"odoc_comments.ml" 100 4303 4322 "odoc_comments.ml" 100 4303 4326
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_comments.ml" 100 4303 4327 "odoc_comments.ml" 100 4303 4345
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc_comments.ml" 100 4303 4322 "odoc_comments.ml" 100 4303 4345
+type(
+  unit
+)
+"odoc_comments.ml" 101 4348 4367 "odoc_comments.ml" 101 4348 4380
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"odoc_comments.ml" 101 4348 4382 "odoc_comments.ml" 101 4348 4386
+type(
+  string
+)
+ident(
+  int_ref file "odoc_comments.ml" 42 1646 1676 "odoc_comments.ml" 42 1646 1680
+)
+"odoc_comments.ml" 101 4348 4386 "odoc_comments.ml" 101 4348 4387
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_comments.ml" 101 4348 4387 "odoc_comments.ml" 101 4348 4392
+type(
+  string
+)
+"odoc_comments.ml" 101 4348 4392 "odoc_comments.ml" 101 4348 4393
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_comments.ml" 101 4348 4393 "odoc_comments.ml" 101 4348 4418
+type(
+  string
+)
+ident(
+  ext_ref Odoc_messages.parse_error
+)
+"odoc_comments.ml" 101 4348 4418 "odoc_comments.ml" 101 4348 4419
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_comments.ml" 101 4348 4419 "odoc_comments.ml" 101 4348 4423
+type(
+  string
+)
+"odoc_comments.ml" 101 4348 4393 "odoc_comments.ml" 101 4348 4423
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 101 4348 4387 "odoc_comments.ml" 101 4348 4423
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 101 4348 4381 "odoc_comments.ml" 101 4348 4424
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 101 4348 4367 "odoc_comments.ml" 101 4348 4424
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_comments.ml" 102 4426 4446 "odoc_comments.ml" 102 4426 4447
+type(
+  int
+)
+"odoc_comments.ml" 102 4426 4449 "odoc_comments.ml" 102 4426 4453
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 102 4426 4445 "odoc_comments.ml" 102 4426 4454
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 101 4348 4367 "odoc_comments.ml" 102 4426 4454
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 100 4303 4322 "odoc_comments.ml" 102 4426 4454
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 43 1696 1702 "odoc_comments.ml" 102 4426 4454
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 107 4674 4682 "odoc_comments.ml" 107 4674 4711
+type(
+  string -> bool
+)
+ident(
+  def nothing_before_simple_comment "odoc_comments.ml" 131 5510 5514 "odoc_comments.ml" 314 11741 11746
+)
+"odoc_comments.ml" 107 4674 4712 "odoc_comments.ml" 107 4674 4713
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 109 4763 4769 "odoc_comments.ml" 128 5427 5442
+)
+"odoc_comments.ml" 111 4803 4815 "odoc_comments.ml" 111 4803 4818
+type(
+  int
+)
+ident(
+  def pos "odoc_comments.ml" 112 4867 4875 "odoc_comments.ml" 125 5385 5394
+)
+"odoc_comments.ml" 111 4803 4821 "odoc_comments.ml" 111 4803 4839
+type(
+  Str.regexp -> string -> int -> int
+)
+ident(
+  ext_ref Str.search_forward
+)
+"odoc_comments.ml" 111 4803 4841 "odoc_comments.ml" 111 4803 4851
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"odoc_comments.ml" 111 4803 4852 "odoc_comments.ml" 111 4803 4858
+type(
+  string
+)
+"odoc_comments.ml" 111 4803 4840 "odoc_comments.ml" 111 4803 4859
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"odoc_comments.ml" 111 4803 4860 "odoc_comments.ml" 111 4803 4861
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 107 4674 4712 "odoc_comments.ml" 107 4674 4713
+)
+"odoc_comments.ml" 111 4803 4862 "odoc_comments.ml" 111 4803 4863
+type(
+  int
+)
+"odoc_comments.ml" 111 4803 4821 "odoc_comments.ml" 111 4803 4863
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_comments.ml" 112 4867 4879 "odoc_comments.ml" 112 4867 4888
+type(
+  char
+)
+ident(
+  def next_char "odoc_comments.ml" 113 4954 4962 "odoc_comments.ml" 125 5385 5394
+)
+"odoc_comments.ml" 112 4867 4895 "odoc_comments.ml" 112 4867 4908
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_comments.ml" 112 4867 4909 "odoc_comments.ml" 112 4867 4910
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 107 4674 4712 "odoc_comments.ml" 107 4674 4713
+)
+"odoc_comments.ml" 112 4867 4894 "odoc_comments.ml" 112 4867 4911
+type(
+  int
+)
+"odoc_comments.ml" 112 4867 4912 "odoc_comments.ml" 112 4867 4914
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"odoc_comments.ml" 112 4867 4916 "odoc_comments.ml" 112 4867 4919
+type(
+  int
+)
+ident(
+  int_ref pos "odoc_comments.ml" 111 4803 4815 "odoc_comments.ml" 111 4803 4818
+)
+"odoc_comments.ml" 112 4867 4920 "odoc_comments.ml" 112 4867 4921
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_comments.ml" 112 4867 4922 "odoc_comments.ml" 112 4867 4923
+type(
+  int
+)
+"odoc_comments.ml" 112 4867 4915 "odoc_comments.ml" 112 4867 4924
+type(
+  int
+)
+"odoc_comments.ml" 112 4867 4894 "odoc_comments.ml" 112 4867 4924
+type(
+  bool
+)
+"odoc_comments.ml" 112 4867 4930 "odoc_comments.ml" 112 4867 4931
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 107 4674 4712 "odoc_comments.ml" 107 4674 4713
+)
+"odoc_comments.ml" 112 4867 4933 "odoc_comments.ml" 112 4867 4936
+type(
+  int
+)
+ident(
+  int_ref pos "odoc_comments.ml" 111 4803 4815 "odoc_comments.ml" 111 4803 4818
+)
+"odoc_comments.ml" 112 4867 4937 "odoc_comments.ml" 112 4867 4938
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_comments.ml" 112 4867 4939 "odoc_comments.ml" 112 4867 4940
+type(
+  int
+)
+"odoc_comments.ml" 112 4867 4933 "odoc_comments.ml" 112 4867 4940
+type(
+  int
+)
+"odoc_comments.ml" 112 4867 4930 "odoc_comments.ml" 112 4867 4941
+type(
+  char
+)
+"odoc_comments.ml" 112 4867 4947 "odoc_comments.ml" 112 4867 4950
+type(
+  char
+)
+"odoc_comments.ml" 112 4867 4891 "odoc_comments.ml" 112 4867 4950
+type(
+  char
+)
+"odoc_comments.ml" 113 4954 4963 "odoc_comments.ml" 113 4954 4972
+type(
+  char
+)
+ident(
+  int_ref next_char "odoc_comments.ml" 112 4867 4879 "odoc_comments.ml" 112 4867 4888
+)
+"odoc_comments.ml" 113 4954 4973 "odoc_comments.ml" 113 4954 4975
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"odoc_comments.ml" 113 4954 4976 "odoc_comments.ml" 113 4954 4979
+type(
+  char
+)
+"odoc_comments.ml" 113 4954 4962 "odoc_comments.ml" 113 4954 4980
+type(
+  bool
+)
+"odoc_comments.ml" 113 4954 4981 "odoc_comments.ml" 113 4954 4983
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"odoc_comments.ml" 116 5083 5096 "odoc_comments.ml" 116 5083 5098
+type(
+  string
+)
+ident(
+  def s2 "odoc_comments.ml" 118 5153 5162 "odoc_comments.ml" 124 5367 5384
+)
+"odoc_comments.ml" 116 5083 5101 "odoc_comments.ml" 116 5083 5111
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"odoc_comments.ml" 116 5083 5112 "odoc_comments.ml" 116 5083 5113
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 107 4674 4712 "odoc_comments.ml" 107 4674 4713
+)
+"odoc_comments.ml" 116 5083 5114 "odoc_comments.ml" 116 5083 5115
+type(
+  int
+)
+"odoc_comments.ml" 116 5083 5116 "odoc_comments.ml" 116 5083 5119
+type(
+  int
+)
+ident(
+  int_ref pos "odoc_comments.ml" 111 4803 4815 "odoc_comments.ml" 111 4803 4818
+)
+"odoc_comments.ml" 116 5083 5101 "odoc_comments.ml" 116 5083 5119
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 119 5166 5181 "odoc_comments.ml" 119 5166 5182
+type(
+  int
+)
+"odoc_comments.ml" 119 5166 5185 "odoc_comments.ml" 119 5166 5203
+type(
+  Str.regexp -> string -> int -> int
+)
+ident(
+  ext_ref Str.search_forward
+)
+"odoc_comments.ml" 119 5166 5205 "odoc_comments.ml" 119 5166 5215
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"odoc_comments.ml" 119 5166 5217 "odoc_comments.ml" 119 5166 5225
+type(
+  string
+)
+"odoc_comments.ml" 119 5166 5225 "odoc_comments.ml" 119 5166 5226
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_comments.ml" 119 5166 5226 "odoc_comments.ml" 119 5166 5238
+type(
+  string
+)
+ident(
+  int_ref simple_blank "odoc_comments.ml" 20 1005 1009 "odoc_comments.ml" 20 1005 1021
+)
+"odoc_comments.ml" 119 5166 5238 "odoc_comments.ml" 119 5166 5239
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_comments.ml" 119 5166 5239 "odoc_comments.ml" 119 5166 5248
+type(
+  string
+)
+"odoc_comments.ml" 119 5166 5226 "odoc_comments.ml" 119 5166 5248
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 119 5166 5216 "odoc_comments.ml" 119 5166 5249
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 119 5166 5204 "odoc_comments.ml" 119 5166 5250
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"odoc_comments.ml" 119 5166 5251 "odoc_comments.ml" 119 5166 5253
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_comments.ml" 116 5083 5096 "odoc_comments.ml" 116 5083 5098
+)
+"odoc_comments.ml" 119 5166 5254 "odoc_comments.ml" 119 5166 5255
+type(
+  int
+)
+"odoc_comments.ml" 119 5166 5185 "odoc_comments.ml" 119 5166 5255
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_comments.ml" 121 5312 5323 "odoc_comments.ml" 121 5312 5328
+type(
+  bool
+)
+"odoc_comments.ml" 119 5166 5177 "odoc_comments.ml" 121 5312 5328
+type(
+  bool
+)
+"odoc_comments.ml" 123 5343 5354 "odoc_comments.ml" 123 5343 5363
+type(
+  exn
+)
+"odoc_comments.ml" 124 5367 5380 "odoc_comments.ml" 124 5367 5384
+type(
+  bool
+)
+"odoc_comments.ml" 118 5153 5162 "odoc_comments.ml" 124 5367 5384
+type(
+  bool
+)
+"odoc_comments.ml" 114 4984 4992 "odoc_comments.ml" 125 5385 5394
+type(
+  bool
+)
+"odoc_comments.ml" 113 4954 4962 "odoc_comments.ml" 125 5385 5394
+type(
+  bool
+)
+"odoc_comments.ml" 112 4867 4875 "odoc_comments.ml" 125 5385 5394
+type(
+  bool
+)
+"odoc_comments.ml" 111 4803 4811 "odoc_comments.ml" 125 5385 5394
+type(
+  bool
+)
+"odoc_comments.ml" 127 5406 5414 "odoc_comments.ml" 127 5406 5423
+type(
+  exn
+)
+"odoc_comments.ml" 128 5427 5437 "odoc_comments.ml" 128 5427 5442
+type(
+  bool
+)
+"odoc_comments.ml" 109 4763 4769 "odoc_comments.ml" 128 5427 5442
+type(
+  bool
+)
+"odoc_comments.ml" 131 5510 5518 "odoc_comments.ml" 131 5510 5528
+type(
+  string -> bool
+)
+ident(
+  def blank_line "odoc_comments.ml" 140 5744 5748 "odoc_comments.ml" 314 11741 11746
+)
+"odoc_comments.ml" 131 5510 5529 "odoc_comments.ml" 131 5510 5530
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 132 5533 5539 "odoc_comments.ml" 138 5727 5742
+)
+"odoc_comments.ml" 133 5543 5555 "odoc_comments.ml" 133 5543 5556
+type(
+  int
+)
+"odoc_comments.ml" 133 5543 5559 "odoc_comments.ml" 133 5543 5577
+type(
+  Str.regexp -> string -> int -> int
+)
+ident(
+  ext_ref Str.search_forward
+)
+"odoc_comments.ml" 133 5543 5579 "odoc_comments.ml" 133 5543 5589
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"odoc_comments.ml" 133 5543 5591 "odoc_comments.ml" 133 5543 5599
+type(
+  string
+)
+"odoc_comments.ml" 133 5543 5599 "odoc_comments.ml" 133 5543 5600
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_comments.ml" 133 5543 5600 "odoc_comments.ml" 133 5543 5612
+type(
+  string
+)
+ident(
+  int_ref simple_blank "odoc_comments.ml" 20 1005 1009 "odoc_comments.ml" 20 1005 1021
+)
+"odoc_comments.ml" 133 5543 5612 "odoc_comments.ml" 133 5543 5613
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_comments.ml" 133 5543 5613 "odoc_comments.ml" 133 5543 5622
+type(
+  string
+)
+"odoc_comments.ml" 133 5543 5600 "odoc_comments.ml" 133 5543 5622
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 133 5543 5590 "odoc_comments.ml" 133 5543 5623
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 133 5543 5578 "odoc_comments.ml" 133 5543 5624
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"odoc_comments.ml" 133 5543 5625 "odoc_comments.ml" 133 5543 5626
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 131 5510 5529 "odoc_comments.ml" 131 5510 5530
+)
+"odoc_comments.ml" 133 5543 5627 "odoc_comments.ml" 133 5543 5628
+type(
+  int
+)
+"odoc_comments.ml" 133 5543 5559 "odoc_comments.ml" 133 5543 5628
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_comments.ml" 135 5682 5690 "odoc_comments.ml" 135 5682 5694
+type(
+  bool
+)
+"odoc_comments.ml" 133 5543 5551 "odoc_comments.ml" 135 5682 5694
+type(
+  bool
+)
+"odoc_comments.ml" 137 5706 5714 "odoc_comments.ml" 137 5706 5723
+type(
+  exn
+)
+"odoc_comments.ml" 138 5727 5737 "odoc_comments.ml" 138 5727 5742
+type(
+  bool
+)
+"odoc_comments.ml" 132 5533 5539 "odoc_comments.ml" 138 5727 5742
+type(
+  bool
+)
+"odoc_comments.ml" 140 5744 5752 "odoc_comments.ml" 140 5744 5773
+type(
+  string -> string -> int * Odoc_types.info option
+)
+ident(
+  def retrieve_info_special "odoc_comments.ml" 143 5838 5842 "odoc_comments.ml" 314 11741 11746
+)
+"odoc_comments.ml" 140 5744 5774 "odoc_comments.ml" 140 5744 5778
+type(
+  string
+)
+ident(
+  def file "odoc_comments.ml" 140 5744 5779 "odoc_comments.ml" 141 5794 5836
+)
+"odoc_comments.ml" 140 5744 5780 "odoc_comments.ml" 140 5744 5781
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 141 5794 5800 "odoc_comments.ml" 141 5794 5836
+)
+"odoc_comments.ml" 141 5794 5800 "odoc_comments.ml" 141 5794 5813
+type(
+  (Lexing.lexbuf -> Odoc_parser.token) ->
+  string -> string -> int * Odoc_types.info option
+)
+ident(
+  int_ref retrieve_info "odoc_comments.ml" 42 1646 1654 "odoc_comments.ml" 42 1646 1667
+)
+"odoc_comments.ml" 141 5794 5814 "odoc_comments.ml" 141 5794 5829
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  ext_ref Odoc_lexer.main
+)
+"odoc_comments.ml" 141 5794 5830 "odoc_comments.ml" 141 5794 5834
+type(
+  string
+)
+ident(
+  int_ref file "odoc_comments.ml" 140 5744 5774 "odoc_comments.ml" 140 5744 5778
+)
+"odoc_comments.ml" 141 5794 5835 "odoc_comments.ml" 141 5794 5836
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 140 5744 5780 "odoc_comments.ml" 140 5744 5781
+)
+"odoc_comments.ml" 141 5794 5800 "odoc_comments.ml" 141 5794 5836
+call(
+  tail
+)
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 143 5838 5846 "odoc_comments.ml" 143 5838 5866
+type(
+  'a -> string -> int * Odoc_types.info option
+)
+ident(
+  def retrieve_info_simple "odoc_comments.ml" 154 6307 6311 "odoc_comments.ml" 314 11741 11746
+)
+"odoc_comments.ml" 143 5838 5867 "odoc_comments.ml" 143 5838 5871
+type(
+  'a
+)
+ident(
+  def file "odoc_comments.ml" 143 5838 5872 "odoc_comments.ml" 151 6144 6214
+)
+"odoc_comments.ml" 143 5838 5873 "odoc_comments.ml" 143 5838 5874
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 144 5887 5893 "odoc_comments.ml" 151 6144 6214
+)
+"odoc_comments.ml" 144 5887 5897 "odoc_comments.ml" 144 5887 5898
+type(
+  unit
+)
+"odoc_comments.ml" 144 5887 5901 "odoc_comments.ml" 144 5887 5926
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Odoc_comments_global.init
+)
+"odoc_comments.ml" 144 5887 5927 "odoc_comments.ml" 144 5887 5929
+type(
+  unit
+)
+"odoc_comments.ml" 144 5887 5901 "odoc_comments.ml" 144 5887 5929
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_comments.ml" 145 5933 5939 "odoc_comments.ml" 145 5933 5964
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_lexer.comments_level
+)
+"odoc_comments.ml" 145 5933 5965 "odoc_comments.ml" 145 5933 5967
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_comments.ml" 145 5933 5968 "odoc_comments.ml" 145 5933 5969
+type(
+  int
+)
+"odoc_comments.ml" 145 5933 5939 "odoc_comments.ml" 145 5933 5969
+type(
+  unit
+)
+"odoc_comments.ml" 146 5971 5981 "odoc_comments.ml" 146 5971 5987
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "odoc_comments.ml" 147 6014 6020 "odoc_comments.ml" 151 6144 6214
+)
+"odoc_comments.ml" 146 5971 5990 "odoc_comments.ml" 146 5971 6008
+type(
+  string -> Lexing.lexbuf
+)
+ident(
+  ext_ref Lexing.from_string
+)
+"odoc_comments.ml" 146 5971 6009 "odoc_comments.ml" 146 5971 6010
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 143 5838 5873 "odoc_comments.ml" 143 5838 5874
+)
+"odoc_comments.ml" 146 5971 5990 "odoc_comments.ml" 146 5971 6010
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"odoc_comments.ml" 147 6014 6026 "odoc_comments.ml" 147 6014 6042
+type(
+  (Lexing.lexbuf -> Odoc_parser.token) ->
+  Lexing.lexbuf -> (string * string option) option
+)
+ident(
+  ext_ref Odoc_parser.main
+)
+"odoc_comments.ml" 147 6014 6043 "odoc_comments.ml" 147 6014 6060
+type(
+  Lexing.lexbuf -> Odoc_parser.token
+)
+ident(
+  ext_ref Odoc_lexer.simple
+)
+"odoc_comments.ml" 147 6014 6061 "odoc_comments.ml" 147 6014 6067
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "odoc_comments.ml" 146 5971 5981 "odoc_comments.ml" 146 5971 5987
+)
+"odoc_comments.ml" 147 6014 6026 "odoc_comments.ml" 147 6014 6067
+call(
+  stack
+)
+type(
+  (string * string option) option
+)
+"odoc_comments.ml" 148 6073 6081 "odoc_comments.ml" 148 6073 6085
+type(
+  (string * string option) option
+)
+"odoc_comments.ml" 149 6089 6100 "odoc_comments.ml" 149 6089 6101
+type(
+  int
+)
+"odoc_comments.ml" 149 6089 6103 "odoc_comments.ml" 149 6089 6107
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 149 6089 6099 "odoc_comments.ml" 149 6089 6108
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 150 6109 6123 "odoc_comments.ml" 150 6109 6127
+type(
+  string
+)
+ident(
+  def desc "odoc_comments.ml" 151 6144 6154 "odoc_comments.ml" 151 6144 6214
+)
+"odoc_comments.ml" 150 6109 6129 "odoc_comments.ml" 150 6109 6139
+type(
+  string option
+)
+ident(
+  def remain_opt "odoc_comments.ml" 151 6144 6154 "odoc_comments.ml" 151 6144 6214
+)
+"odoc_comments.ml" 150 6109 6122 "odoc_comments.ml" 150 6109 6140
+type(
+  string * string option
+)
+"odoc_comments.ml" 150 6109 6117 "odoc_comments.ml" 150 6109 6140
+type(
+  (string * string option) option
+)
+"odoc_comments.ml" 151 6144 6155 "odoc_comments.ml" 151 6144 6156
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_comments.ml" 151 6144 6156 "odoc_comments.ml" 151 6144 6185
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_comments_global.nb_chars
+)
+"odoc_comments.ml" 151 6144 6155 "odoc_comments.ml" 151 6144 6185
+type(
+  int
+)
+"odoc_comments.ml" 151 6144 6192 "odoc_comments.ml" 151 6144 6213
+type(
+  Odoc_types.info
+)
+ident(
+  ext_ref Odoc_types.dummy_info
+)
+"odoc_comments.ml" 151 6144 6187 "odoc_comments.ml" 151 6144 6213
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 151 6144 6154 "odoc_comments.ml" 151 6144 6214
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 147 6014 6020 "odoc_comments.ml" 151 6144 6214
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 146 5971 5977 "odoc_comments.ml" 151 6144 6214
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 145 5933 5939 "odoc_comments.ml" 151 6144 6214
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 144 5887 5893 "odoc_comments.ml" 151 6144 6214
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 154 6307 6315 "odoc_comments.ml" 154 6307 6340
+type(
+  'b -> string -> bool
+)
+ident(
+  def blank_line_outside_simple "odoc_comments.ml" 176 7126 7130 "odoc_comments.ml" 314 11741 11746
+)
+"odoc_comments.ml" 154 6307 6341 "odoc_comments.ml" 154 6307 6345
+type(
+  'b
+)
+ident(
+  def file "odoc_comments.ml" 154 6307 6346 "odoc_comments.ml" 170 6891 6903
+)
+"odoc_comments.ml" 154 6307 6346 "odoc_comments.ml" 154 6307 6347
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 155 6350 6356 "odoc_comments.ml" 170 6891 6903
+)
+"odoc_comments.ml" 155 6350 6364 "odoc_comments.ml" 155 6350 6368
+type(
+  string -> bool
+)
+ident(
+  def iter "odoc_comments.ml" 155 6350 6356 "odoc_comments.ml" 170 6891 6903
+)
+"odoc_comments.ml" 155 6350 6369 "odoc_comments.ml" 155 6350 6371
+type(
+  string
+)
+ident(
+  def s2 "odoc_comments.ml" 156 6374 6382 "odoc_comments.ml" 168 6860 6881
+)
+"odoc_comments.ml" 156 6374 6388 "odoc_comments.ml" 156 6374 6408
+type(
+  'b -> string -> int * Odoc_types.info option
+)
+ident(
+  int_ref retrieve_info_simple "odoc_comments.ml" 143 5838 5846 "odoc_comments.ml" 143 5838 5866
+)
+"odoc_comments.ml" 156 6374 6409 "odoc_comments.ml" 156 6374 6413
+type(
+  'b
+)
+ident(
+  int_ref file "odoc_comments.ml" 154 6307 6341 "odoc_comments.ml" 154 6307 6345
+)
+"odoc_comments.ml" 156 6374 6414 "odoc_comments.ml" 156 6374 6416
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_comments.ml" 155 6350 6369 "odoc_comments.ml" 155 6350 6371
+)
+"odoc_comments.ml" 156 6374 6388 "odoc_comments.ml" 156 6374 6416
+call(
+  stack
+)
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 157 6422 6433 "odoc_comments.ml" 157 6422 6434
+type(
+  int
+)
+"odoc_comments.ml" 157 6422 6436 "odoc_comments.ml" 157 6422 6440
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 157 6422 6432 "odoc_comments.ml" 157 6422 6441
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 158 6445 6457 "odoc_comments.ml" 158 6445 6467
+type(
+  string -> bool
+)
+ident(
+  int_ref blank_line "odoc_comments.ml" 131 5510 5518 "odoc_comments.ml" 131 5510 5528
+)
+"odoc_comments.ml" 158 6445 6468 "odoc_comments.ml" 158 6445 6470
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_comments.ml" 155 6350 6369 "odoc_comments.ml" 155 6350 6371
+)
+"odoc_comments.ml" 158 6445 6457 "odoc_comments.ml" 158 6445 6470
+call(
+  tail
+)
+type(
+  bool
+)
+"odoc_comments.ml" 159 6471 6482 "odoc_comments.ml" 159 6471 6485
+type(
+  int
+)
+ident(
+  def len "odoc_comments.ml" 160 6498 6510 "odoc_comments.ml" 168 6860 6881
+)
+"odoc_comments.ml" 159 6471 6492 "odoc_comments.ml" 159 6471 6493
+type(
+  Odoc_types.info
+)
+"odoc_comments.ml" 159 6471 6487 "odoc_comments.ml" 159 6471 6493
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 159 6471 6481 "odoc_comments.ml" 159 6471 6494
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 161 6514 6532 "odoc_comments.ml" 161 6514 6535
+type(
+  int
+)
+ident(
+  def pos "odoc_comments.ml" 162 6590 6604 "odoc_comments.ml" 164 6718 6771
+)
+"odoc_comments.ml" 161 6514 6538 "odoc_comments.ml" 161 6514 6556
+type(
+  Str.regexp -> string -> int -> int
+)
+ident(
+  ext_ref Str.search_forward
+)
+"odoc_comments.ml" 161 6514 6558 "odoc_comments.ml" 161 6514 6575
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp_string
+)
+"odoc_comments.ml" 161 6514 6576 "odoc_comments.ml" 161 6514 6580
+type(
+  string
+)
+"odoc_comments.ml" 161 6514 6557 "odoc_comments.ml" 161 6514 6581
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"odoc_comments.ml" 161 6514 6582 "odoc_comments.ml" 161 6514 6584
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_comments.ml" 155 6350 6369 "odoc_comments.ml" 155 6350 6371
+)
+"odoc_comments.ml" 161 6514 6585 "odoc_comments.ml" 161 6514 6586
+type(
+  int
+)
+"odoc_comments.ml" 161 6514 6538 "odoc_comments.ml" 161 6514 6586
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_comments.ml" 162 6590 6608 "odoc_comments.ml" 162 6590 6616
+type(
+  string
+)
+ident(
+  def s_before "odoc_comments.ml" 163 6642 6656 "odoc_comments.ml" 164 6718 6771
+)
+"odoc_comments.ml" 162 6590 6619 "odoc_comments.ml" 162 6590 6629
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"odoc_comments.ml" 162 6590 6630 "odoc_comments.ml" 162 6590 6632
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_comments.ml" 155 6350 6369 "odoc_comments.ml" 155 6350 6371
+)
+"odoc_comments.ml" 162 6590 6633 "odoc_comments.ml" 162 6590 6634
+type(
+  int
+)
+"odoc_comments.ml" 162 6590 6635 "odoc_comments.ml" 162 6590 6638
+type(
+  int
+)
+ident(
+  int_ref pos "odoc_comments.ml" 161 6514 6532 "odoc_comments.ml" 161 6514 6535
+)
+"odoc_comments.ml" 162 6590 6619 "odoc_comments.ml" 162 6590 6638
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 163 6642 6660 "odoc_comments.ml" 163 6642 6667
+type(
+  string
+)
+ident(
+  def s_after "odoc_comments.ml" 164 6718 6732 "odoc_comments.ml" 164 6718 6771
+)
+"odoc_comments.ml" 163 6642 6670 "odoc_comments.ml" 163 6642 6680
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"odoc_comments.ml" 163 6642 6681 "odoc_comments.ml" 163 6642 6683
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_comments.ml" 155 6350 6369 "odoc_comments.ml" 155 6350 6371
+)
+"odoc_comments.ml" 163 6642 6684 "odoc_comments.ml" 163 6642 6687
+type(
+  int
+)
+ident(
+  int_ref len "odoc_comments.ml" 159 6471 6482 "odoc_comments.ml" 159 6471 6485
+)
+"odoc_comments.ml" 163 6642 6690 "odoc_comments.ml" 163 6642 6703
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_comments.ml" 163 6642 6704 "odoc_comments.ml" 163 6642 6706
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_comments.ml" 155 6350 6369 "odoc_comments.ml" 155 6350 6371
+)
+"odoc_comments.ml" 163 6642 6689 "odoc_comments.ml" 163 6642 6707
+type(
+  int
+)
+"odoc_comments.ml" 163 6642 6708 "odoc_comments.ml" 163 6642 6709
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"odoc_comments.ml" 163 6642 6710 "odoc_comments.ml" 163 6642 6713
+type(
+  int
+)
+ident(
+  int_ref len "odoc_comments.ml" 159 6471 6482 "odoc_comments.ml" 159 6471 6485
+)
+"odoc_comments.ml" 163 6642 6688 "odoc_comments.ml" 163 6642 6714
+type(
+  int
+)
+"odoc_comments.ml" 163 6642 6670 "odoc_comments.ml" 163 6642 6714
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 164 6718 6733 "odoc_comments.ml" 164 6718 6743
+type(
+  string -> bool
+)
+ident(
+  int_ref blank_line "odoc_comments.ml" 131 5510 5518 "odoc_comments.ml" 131 5510 5528
+)
+"odoc_comments.ml" 164 6718 6744 "odoc_comments.ml" 164 6718 6752
+type(
+  string
+)
+ident(
+  int_ref s_before "odoc_comments.ml" 162 6590 6608 "odoc_comments.ml" 162 6590 6616
+)
+"odoc_comments.ml" 164 6718 6732 "odoc_comments.ml" 164 6718 6753
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_comments.ml" 164 6718 6754 "odoc_comments.ml" 164 6718 6756
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"odoc_comments.ml" 164 6718 6758 "odoc_comments.ml" 164 6718 6762
+type(
+  string -> bool
+)
+ident(
+  int_ref iter "odoc_comments.ml" 155 6350 6364 "odoc_comments.ml" 155 6350 6368
+)
+"odoc_comments.ml" 164 6718 6763 "odoc_comments.ml" 164 6718 6770
+type(
+  string
+)
+ident(
+  int_ref s_after "odoc_comments.ml" 163 6642 6660 "odoc_comments.ml" 163 6642 6667
+)
+"odoc_comments.ml" 164 6718 6757 "odoc_comments.ml" 164 6718 6771
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_comments.ml" 164 6718 6732 "odoc_comments.ml" 164 6718 6771
+type(
+  bool
+)
+"odoc_comments.ml" 163 6642 6656 "odoc_comments.ml" 164 6718 6771
+type(
+  bool
+)
+"odoc_comments.ml" 162 6590 6604 "odoc_comments.ml" 164 6718 6771
+type(
+  bool
+)
+"odoc_comments.ml" 161 6514 6528 "odoc_comments.ml" 164 6718 6771
+type(
+  bool
+)
+"odoc_comments.ml" 166 6789 6803 "odoc_comments.ml" 166 6789 6812
+type(
+  exn
+)
+"odoc_comments.ml" 168 6860 6876 "odoc_comments.ml" 168 6860 6881
+type(
+  bool
+)
+"odoc_comments.ml" 160 6498 6510 "odoc_comments.ml" 168 6860 6881
+type(
+  bool
+)
+"odoc_comments.ml" 156 6374 6382 "odoc_comments.ml" 168 6860 6881
+type(
+  bool
+)
+"odoc_comments.ml" 170 6891 6897 "odoc_comments.ml" 170 6891 6901
+type(
+  string -> bool
+)
+ident(
+  int_ref iter "odoc_comments.ml" 155 6350 6364 "odoc_comments.ml" 155 6350 6368
+)
+"odoc_comments.ml" 170 6891 6902 "odoc_comments.ml" 170 6891 6903
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 154 6307 6346 "odoc_comments.ml" 154 6307 6347
+)
+"odoc_comments.ml" 170 6891 6897 "odoc_comments.ml" 170 6891 6903
+call(
+  tail
+)
+type(
+  bool
+)
+"odoc_comments.ml" 155 6350 6356 "odoc_comments.ml" 170 6891 6903
+type(
+  bool
+)
+"odoc_comments.ml" 176 7126 7134 "odoc_comments.ml" 176 7126 7160
+type(
+  ?strict:bool -> 'c -> string -> int * Odoc_types.info option
+)
+ident(
+  def retrieve_first_info_simple "odoc_comments.ml" 191 7816 7820 "odoc_comments.ml" 314 11741 11746
+)
+"odoc_comments.ml" 176 7126 7163 "odoc_comments.ml" 176 7126 7169
+type(
+  bool
+)
+"odoc_comments.ml" 176 7126 7170 "odoc_comments.ml" 176 7126 7174
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_comments.ml" 176 7126 7170 "odoc_comments.ml" 176 7126 7174
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_comments.ml" 176 7126 7176 "odoc_comments.ml" 176 7126 7180
+type(
+  'c
+)
+ident(
+  def file "odoc_comments.ml" 176 7126 7181 "odoc_comments.ml" 189 7793 7814
+)
+"odoc_comments.ml" 176 7126 7182 "odoc_comments.ml" 176 7126 7183
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 177 7196 7202 "odoc_comments.ml" 189 7793 7814
+)
+"odoc_comments.ml" 177 7196 7208 "odoc_comments.ml" 177 7196 7228
+type(
+  'c -> string -> int * Odoc_types.info option
+)
+ident(
+  int_ref retrieve_info_simple "odoc_comments.ml" 143 5838 5846 "odoc_comments.ml" 143 5838 5866
+)
+"odoc_comments.ml" 177 7196 7229 "odoc_comments.ml" 177 7196 7233
+type(
+  'c
+)
+ident(
+  int_ref file "odoc_comments.ml" 176 7126 7176 "odoc_comments.ml" 176 7126 7180
+)
+"odoc_comments.ml" 177 7196 7234 "odoc_comments.ml" 177 7196 7235
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 176 7126 7182 "odoc_comments.ml" 176 7126 7183
+)
+"odoc_comments.ml" 177 7196 7208 "odoc_comments.ml" 177 7196 7235
+call(
+  stack
+)
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 178 7241 7250 "odoc_comments.ml" 178 7241 7251
+type(
+  int
+)
+"odoc_comments.ml" 178 7241 7253 "odoc_comments.ml" 178 7241 7257
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 178 7241 7249 "odoc_comments.ml" 178 7241 7258
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 179 7262 7273 "odoc_comments.ml" 179 7262 7274
+type(
+  int
+)
+"odoc_comments.ml" 179 7262 7276 "odoc_comments.ml" 179 7262 7280
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 179 7262 7272 "odoc_comments.ml" 179 7262 7281
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 180 7282 7291 "odoc_comments.ml" 180 7282 7294
+type(
+  int
+)
+ident(
+  def len "odoc_comments.ml" 183 7477 7487 "odoc_comments.ml" 189 7793 7814
+)
+"odoc_comments.ml" 180 7282 7301 "odoc_comments.ml" 180 7282 7302
+type(
+  Odoc_types.info
+)
+ident(
+  def d "odoc_comments.ml" 183 7477 7487 "odoc_comments.ml" 189 7793 7814
+)
+"odoc_comments.ml" 180 7282 7296 "odoc_comments.ml" 180 7282 7302
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 180 7282 7290 "odoc_comments.ml" 180 7282 7303
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 183 7477 7491 "odoc_comments.ml" 183 7477 7494
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"odoc_comments.ml" 183 7477 7495 "odoc_comments.ml" 183 7477 7501
+type(
+  bool
+)
+ident(
+  int_ref strict "odoc_comments.ml" 176 7126 7163 "odoc_comments.ml" 176 7126 7169
+)
+"odoc_comments.ml" 183 7477 7490 "odoc_comments.ml" 183 7477 7502
+type(
+  bool
+)
+"odoc_comments.ml" 183 7477 7503 "odoc_comments.ml" 183 7477 7505
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"odoc_comments.ml" 183 7477 7507 "odoc_comments.ml" 183 7477 7536
+type(
+  string -> bool
+)
+ident(
+  int_ref nothing_before_simple_comment "odoc_comments.ml" 107 4674 4682 "odoc_comments.ml" 107 4674 4711
+)
+"odoc_comments.ml" 183 7477 7537 "odoc_comments.ml" 183 7477 7538
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 176 7126 7182 "odoc_comments.ml" 176 7126 7183
+)
+"odoc_comments.ml" 183 7477 7506 "odoc_comments.ml" 183 7477 7539
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_comments.ml" 183 7477 7490 "odoc_comments.ml" 183 7477 7539
+type(
+  bool
+)
+"odoc_comments.ml" 185 7608 7621 "odoc_comments.ml" 185 7608 7624
+type(
+  int
+)
+ident(
+  int_ref len "odoc_comments.ml" 180 7282 7291 "odoc_comments.ml" 180 7282 7294
+)
+"odoc_comments.ml" 185 7608 7631 "odoc_comments.ml" 185 7608 7632
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref d "odoc_comments.ml" 180 7282 7301 "odoc_comments.ml" 180 7282 7302
+)
+"odoc_comments.ml" 185 7608 7626 "odoc_comments.ml" 185 7608 7632
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 185 7608 7620 "odoc_comments.ml" 185 7608 7633
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 189 7793 7806 "odoc_comments.ml" 189 7793 7807
+type(
+  int
+)
+"odoc_comments.ml" 189 7793 7809 "odoc_comments.ml" 189 7793 7813
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 189 7793 7805 "odoc_comments.ml" 189 7793 7814
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 183 7477 7487 "odoc_comments.ml" 189 7793 7814
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 177 7196 7202 "odoc_comments.ml" 189 7793 7814
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 191 7816 7824 "odoc_comments.ml" 191 7816 7849
+type(
+  'd -> string -> int * Odoc_types.info option
+)
+ident(
+  def retrieve_last_info_simple "odoc_comments.ml" 211 8403 8407 "odoc_comments.ml" 314 11741 11746
+)
+"odoc_comments.ml" 191 7816 7850 "odoc_comments.ml" 191 7816 7854
+type(
+  'd
+)
+ident(
+  def file "odoc_comments.ml" 191 7816 7855 "odoc_comments.ml" 209 8387 8401
+)
+"odoc_comments.ml" 191 7816 7856 "odoc_comments.ml" 191 7816 7857
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 193 7900 7906 "odoc_comments.ml" 209 8387 8401
+)
+"odoc_comments.ml" 193 7900 7914 "odoc_comments.ml" 193 7900 7915
+type(
+  int -> Odoc_types.info option -> int * Odoc_types.info option
+)
+ident(
+  def f "odoc_comments.ml" 193 7900 7906 "odoc_comments.ml" 209 8387 8401
+)
+"odoc_comments.ml" 193 7900 7916 "odoc_comments.ml" 193 7900 7923
+type(
+  int
+)
+ident(
+  def cur_len "odoc_comments.ml" 193 7900 7924 "odoc_comments.ml" 207 8349 8377
+)
+"odoc_comments.ml" 193 7900 7924 "odoc_comments.ml" 193 7900 7929
+type(
+  Odoc_types.info option
+)
+ident(
+  def cur_d "odoc_comments.ml" 194 7932 7940 "odoc_comments.ml" 207 8349 8377
+)
+"odoc_comments.ml" 195 7944 7958 "odoc_comments.ml" 195 7944 7960
+type(
+  string
+)
+ident(
+  def s2 "odoc_comments.ml" 197 8047 8057 "odoc_comments.ml" 203 8250 8290
+)
+"odoc_comments.ml" 195 7944 7963 "odoc_comments.ml" 195 7944 7973
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"odoc_comments.ml" 195 7944 7974 "odoc_comments.ml" 195 7944 7975
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 191 7816 7856 "odoc_comments.ml" 191 7816 7857
+)
+"odoc_comments.ml" 195 7944 7976 "odoc_comments.ml" 195 7944 7983
+type(
+  int
+)
+ident(
+  int_ref cur_len "odoc_comments.ml" 193 7900 7916 "odoc_comments.ml" 193 7900 7923
+)
+"odoc_comments.ml" 195 7944 7986 "odoc_comments.ml" 195 7944 7999
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_comments.ml" 195 7944 8000 "odoc_comments.ml" 195 7944 8001
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 191 7816 7856 "odoc_comments.ml" 191 7816 7857
+)
+"odoc_comments.ml" 195 7944 7985 "odoc_comments.ml" 195 7944 8002
+type(
+  int
+)
+"odoc_comments.ml" 195 7944 8003 "odoc_comments.ml" 195 7944 8004
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"odoc_comments.ml" 195 7944 8005 "odoc_comments.ml" 195 7944 8012
+type(
+  int
+)
+ident(
+  int_ref cur_len "odoc_comments.ml" 193 7900 7916 "odoc_comments.ml" 193 7900 7923
+)
+"odoc_comments.ml" 195 7944 7984 "odoc_comments.ml" 195 7944 8013
+type(
+  int
+)
+"odoc_comments.ml" 195 7944 7963 "odoc_comments.ml" 195 7944 8013
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 197 8047 8063 "odoc_comments.ml" 197 8047 8083
+type(
+  'd -> string -> int * Odoc_types.info option
+)
+ident(
+  int_ref retrieve_info_simple "odoc_comments.ml" 143 5838 5846 "odoc_comments.ml" 143 5838 5866
+)
+"odoc_comments.ml" 197 8047 8084 "odoc_comments.ml" 197 8047 8088
+type(
+  'd
+)
+ident(
+  int_ref file "odoc_comments.ml" 191 7816 7850 "odoc_comments.ml" 191 7816 7854
+)
+"odoc_comments.ml" 197 8047 8089 "odoc_comments.ml" 197 8047 8091
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_comments.ml" 195 7944 7958 "odoc_comments.ml" 195 7944 7960
+)
+"odoc_comments.ml" 197 8047 8063 "odoc_comments.ml" 197 8047 8091
+call(
+  stack
+)
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 198 8097 8110 "odoc_comments.ml" 198 8097 8113
+type(
+  int
+)
+ident(
+  def len "odoc_comments.ml" 200 8154 8168 "odoc_comments.ml" 200 8154 8190
+)
+"odoc_comments.ml" 198 8097 8115 "odoc_comments.ml" 198 8097 8119
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 198 8097 8109 "odoc_comments.ml" 198 8097 8120
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 200 8154 8169 "odoc_comments.ml" 200 8154 8176
+type(
+  int
+)
+ident(
+  int_ref cur_len "odoc_comments.ml" 193 7900 7916 "odoc_comments.ml" 193 7900 7923
+)
+"odoc_comments.ml" 200 8154 8177 "odoc_comments.ml" 200 8154 8178
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_comments.ml" 200 8154 8179 "odoc_comments.ml" 200 8154 8182
+type(
+  int
+)
+ident(
+  int_ref len "odoc_comments.ml" 198 8097 8110 "odoc_comments.ml" 198 8097 8113
+)
+"odoc_comments.ml" 200 8154 8169 "odoc_comments.ml" 200 8154 8182
+type(
+  int
+)
+"odoc_comments.ml" 200 8154 8184 "odoc_comments.ml" 200 8154 8189
+type(
+  Odoc_types.info option
+)
+ident(
+  int_ref cur_d "odoc_comments.ml" 193 7900 7924 "odoc_comments.ml" 193 7900 7929
+)
+"odoc_comments.ml" 200 8154 8168 "odoc_comments.ml" 200 8154 8190
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 201 8191 8204 "odoc_comments.ml" 201 8191 8207
+type(
+  int
+)
+ident(
+  def len "odoc_comments.ml" 203 8250 8264 "odoc_comments.ml" 203 8250 8290
+)
+"odoc_comments.ml" 201 8191 8214 "odoc_comments.ml" 201 8191 8215
+type(
+  Odoc_types.info
+)
+ident(
+  def d "odoc_comments.ml" 203 8250 8264 "odoc_comments.ml" 203 8250 8290
+)
+"odoc_comments.ml" 201 8191 8209 "odoc_comments.ml" 201 8191 8215
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 201 8191 8203 "odoc_comments.ml" 201 8191 8216
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 203 8250 8264 "odoc_comments.ml" 203 8250 8265
+type(
+  int -> Odoc_types.info option -> int * Odoc_types.info option
+)
+ident(
+  int_ref f "odoc_comments.ml" 193 7900 7914 "odoc_comments.ml" 193 7900 7915
+)
+"odoc_comments.ml" 203 8250 8267 "odoc_comments.ml" 203 8250 8270
+type(
+  int
+)
+ident(
+  int_ref len "odoc_comments.ml" 201 8191 8204 "odoc_comments.ml" 201 8191 8207
+)
+"odoc_comments.ml" 203 8250 8271 "odoc_comments.ml" 203 8250 8272
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_comments.ml" 203 8250 8273 "odoc_comments.ml" 203 8250 8280
+type(
+  int
+)
+ident(
+  int_ref cur_len "odoc_comments.ml" 193 7900 7916 "odoc_comments.ml" 193 7900 7923
+)
+"odoc_comments.ml" 203 8250 8266 "odoc_comments.ml" 203 8250 8281
+type(
+  int
+)
+"odoc_comments.ml" 203 8250 8288 "odoc_comments.ml" 203 8250 8289
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref d "odoc_comments.ml" 201 8191 8214 "odoc_comments.ml" 201 8191 8215
+)
+"odoc_comments.ml" 203 8250 8282 "odoc_comments.ml" 203 8250 8290
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 203 8250 8264 "odoc_comments.ml" 203 8250 8290
+call(
+  stack
+)
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 197 8047 8057 "odoc_comments.ml" 203 8250 8290
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 195 7944 7954 "odoc_comments.ml" 203 8250 8290
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 205 8304 8314 "odoc_comments.ml" 205 8304 8315
+type(
+  exn
+)
+"odoc_comments.ml" 207 8349 8362 "odoc_comments.ml" 207 8349 8369
+type(
+  int
+)
+ident(
+  int_ref cur_len "odoc_comments.ml" 193 7900 7916 "odoc_comments.ml" 193 7900 7923
+)
+"odoc_comments.ml" 207 8349 8371 "odoc_comments.ml" 207 8349 8376
+type(
+  Odoc_types.info option
+)
+ident(
+  int_ref cur_d "odoc_comments.ml" 193 7900 7924 "odoc_comments.ml" 193 7900 7929
+)
+"odoc_comments.ml" 207 8349 8361 "odoc_comments.ml" 207 8349 8377
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 194 7932 7940 "odoc_comments.ml" 207 8349 8377
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 209 8387 8393 "odoc_comments.ml" 209 8387 8394
+type(
+  int -> Odoc_types.info option -> int * Odoc_types.info option
+)
+ident(
+  int_ref f "odoc_comments.ml" 193 7900 7914 "odoc_comments.ml" 193 7900 7915
+)
+"odoc_comments.ml" 209 8387 8395 "odoc_comments.ml" 209 8387 8396
+type(
+  int
+)
+"odoc_comments.ml" 209 8387 8397 "odoc_comments.ml" 209 8387 8401
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 209 8387 8393 "odoc_comments.ml" 209 8387 8401
+call(
+  tail
+)
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 193 7900 7906 "odoc_comments.ml" 209 8387 8401
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 211 8403 8411 "odoc_comments.ml" 211 8403 8447
+type(
+  string -> string -> int * Odoc_types.info option
+)
+ident(
+  def retrieve_last_special_no_blank_after "odoc_comments.ml" 231 9002 9006 "odoc_comments.ml" 314 11741 11746
+)
+"odoc_comments.ml" 211 8403 8448 "odoc_comments.ml" 211 8403 8452
+type(
+  string
+)
+ident(
+  def file "odoc_comments.ml" 211 8403 8453 "odoc_comments.ml" 229 8986 9000
+)
+"odoc_comments.ml" 211 8403 8454 "odoc_comments.ml" 211 8403 8455
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 213 8498 8504 "odoc_comments.ml" 229 8986 9000
+)
+"odoc_comments.ml" 213 8498 8512 "odoc_comments.ml" 213 8498 8513
+type(
+  int -> Odoc_types.info option -> int * Odoc_types.info option
+)
+ident(
+  def f "odoc_comments.ml" 213 8498 8504 "odoc_comments.ml" 229 8986 9000
+)
+"odoc_comments.ml" 213 8498 8514 "odoc_comments.ml" 213 8498 8521
+type(
+  int
+)
+ident(
+  def cur_len "odoc_comments.ml" 213 8498 8522 "odoc_comments.ml" 227 8948 8976
+)
+"odoc_comments.ml" 213 8498 8522 "odoc_comments.ml" 213 8498 8527
+type(
+  Odoc_types.info option
+)
+ident(
+  def cur_d "odoc_comments.ml" 214 8530 8538 "odoc_comments.ml" 227 8948 8976
+)
+"odoc_comments.ml" 215 8542 8556 "odoc_comments.ml" 215 8542 8558
+type(
+  string
+)
+ident(
+  def s2 "odoc_comments.ml" 217 8645 8655 "odoc_comments.ml" 223 8849 8889
+)
+"odoc_comments.ml" 215 8542 8561 "odoc_comments.ml" 215 8542 8571
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"odoc_comments.ml" 215 8542 8572 "odoc_comments.ml" 215 8542 8573
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 211 8403 8454 "odoc_comments.ml" 211 8403 8455
+)
+"odoc_comments.ml" 215 8542 8574 "odoc_comments.ml" 215 8542 8581
+type(
+  int
+)
+ident(
+  int_ref cur_len "odoc_comments.ml" 213 8498 8514 "odoc_comments.ml" 213 8498 8521
+)
+"odoc_comments.ml" 215 8542 8584 "odoc_comments.ml" 215 8542 8597
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_comments.ml" 215 8542 8598 "odoc_comments.ml" 215 8542 8599
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 211 8403 8454 "odoc_comments.ml" 211 8403 8455
+)
+"odoc_comments.ml" 215 8542 8583 "odoc_comments.ml" 215 8542 8600
+type(
+  int
+)
+"odoc_comments.ml" 215 8542 8601 "odoc_comments.ml" 215 8542 8602
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"odoc_comments.ml" 215 8542 8603 "odoc_comments.ml" 215 8542 8610
+type(
+  int
+)
+ident(
+  int_ref cur_len "odoc_comments.ml" 213 8498 8514 "odoc_comments.ml" 213 8498 8521
+)
+"odoc_comments.ml" 215 8542 8582 "odoc_comments.ml" 215 8542 8611
+type(
+  int
+)
+"odoc_comments.ml" 215 8542 8561 "odoc_comments.ml" 215 8542 8611
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 217 8645 8661 "odoc_comments.ml" 217 8645 8682
+type(
+  string -> string -> int * Odoc_types.info option
+)
+ident(
+  int_ref retrieve_info_special "odoc_comments.ml" 140 5744 5752 "odoc_comments.ml" 140 5744 5773
+)
+"odoc_comments.ml" 217 8645 8683 "odoc_comments.ml" 217 8645 8687
+type(
+  string
+)
+ident(
+  int_ref file "odoc_comments.ml" 211 8403 8448 "odoc_comments.ml" 211 8403 8452
+)
+"odoc_comments.ml" 217 8645 8688 "odoc_comments.ml" 217 8645 8690
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_comments.ml" 215 8542 8556 "odoc_comments.ml" 215 8542 8558
+)
+"odoc_comments.ml" 217 8645 8661 "odoc_comments.ml" 217 8645 8690
+call(
+  stack
+)
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 218 8696 8709 "odoc_comments.ml" 218 8696 8712
+type(
+  int
+)
+ident(
+  def len "odoc_comments.ml" 220 8753 8767 "odoc_comments.ml" 220 8753 8789
+)
+"odoc_comments.ml" 218 8696 8714 "odoc_comments.ml" 218 8696 8718
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 218 8696 8708 "odoc_comments.ml" 218 8696 8719
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 220 8753 8768 "odoc_comments.ml" 220 8753 8775
+type(
+  int
+)
+ident(
+  int_ref cur_len "odoc_comments.ml" 213 8498 8514 "odoc_comments.ml" 213 8498 8521
+)
+"odoc_comments.ml" 220 8753 8776 "odoc_comments.ml" 220 8753 8777
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_comments.ml" 220 8753 8778 "odoc_comments.ml" 220 8753 8781
+type(
+  int
+)
+ident(
+  int_ref len "odoc_comments.ml" 218 8696 8709 "odoc_comments.ml" 218 8696 8712
+)
+"odoc_comments.ml" 220 8753 8768 "odoc_comments.ml" 220 8753 8781
+type(
+  int
+)
+"odoc_comments.ml" 220 8753 8783 "odoc_comments.ml" 220 8753 8788
+type(
+  Odoc_types.info option
+)
+ident(
+  int_ref cur_d "odoc_comments.ml" 213 8498 8522 "odoc_comments.ml" 213 8498 8527
+)
+"odoc_comments.ml" 220 8753 8767 "odoc_comments.ml" 220 8753 8789
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 221 8790 8803 "odoc_comments.ml" 221 8790 8806
+type(
+  int
+)
+ident(
+  def len "odoc_comments.ml" 223 8849 8863 "odoc_comments.ml" 223 8849 8889
+)
+"odoc_comments.ml" 221 8790 8813 "odoc_comments.ml" 221 8790 8814
+type(
+  Odoc_types.info
+)
+ident(
+  def d "odoc_comments.ml" 223 8849 8863 "odoc_comments.ml" 223 8849 8889
+)
+"odoc_comments.ml" 221 8790 8808 "odoc_comments.ml" 221 8790 8814
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 221 8790 8802 "odoc_comments.ml" 221 8790 8815
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 223 8849 8863 "odoc_comments.ml" 223 8849 8864
+type(
+  int -> Odoc_types.info option -> int * Odoc_types.info option
+)
+ident(
+  int_ref f "odoc_comments.ml" 213 8498 8512 "odoc_comments.ml" 213 8498 8513
+)
+"odoc_comments.ml" 223 8849 8866 "odoc_comments.ml" 223 8849 8869
+type(
+  int
+)
+ident(
+  int_ref len "odoc_comments.ml" 221 8790 8803 "odoc_comments.ml" 221 8790 8806
+)
+"odoc_comments.ml" 223 8849 8870 "odoc_comments.ml" 223 8849 8871
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_comments.ml" 223 8849 8872 "odoc_comments.ml" 223 8849 8879
+type(
+  int
+)
+ident(
+  int_ref cur_len "odoc_comments.ml" 213 8498 8514 "odoc_comments.ml" 213 8498 8521
+)
+"odoc_comments.ml" 223 8849 8865 "odoc_comments.ml" 223 8849 8880
+type(
+  int
+)
+"odoc_comments.ml" 223 8849 8887 "odoc_comments.ml" 223 8849 8888
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref d "odoc_comments.ml" 221 8790 8813 "odoc_comments.ml" 221 8790 8814
+)
+"odoc_comments.ml" 223 8849 8881 "odoc_comments.ml" 223 8849 8889
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 223 8849 8863 "odoc_comments.ml" 223 8849 8889
+call(
+  stack
+)
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 217 8645 8655 "odoc_comments.ml" 223 8849 8889
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 215 8542 8552 "odoc_comments.ml" 223 8849 8889
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 225 8903 8913 "odoc_comments.ml" 225 8903 8914
+type(
+  exn
+)
+"odoc_comments.ml" 227 8948 8961 "odoc_comments.ml" 227 8948 8968
+type(
+  int
+)
+ident(
+  int_ref cur_len "odoc_comments.ml" 213 8498 8514 "odoc_comments.ml" 213 8498 8521
+)
+"odoc_comments.ml" 227 8948 8970 "odoc_comments.ml" 227 8948 8975
+type(
+  Odoc_types.info option
+)
+ident(
+  int_ref cur_d "odoc_comments.ml" 213 8498 8522 "odoc_comments.ml" 213 8498 8527
+)
+"odoc_comments.ml" 227 8948 8960 "odoc_comments.ml" 227 8948 8976
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 214 8530 8538 "odoc_comments.ml" 227 8948 8976
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 229 8986 8992 "odoc_comments.ml" 229 8986 8993
+type(
+  int -> Odoc_types.info option -> int * Odoc_types.info option
+)
+ident(
+  int_ref f "odoc_comments.ml" 213 8498 8512 "odoc_comments.ml" 213 8498 8513
+)
+"odoc_comments.ml" 229 8986 8994 "odoc_comments.ml" 229 8986 8995
+type(
+  int
+)
+"odoc_comments.ml" 229 8986 8996 "odoc_comments.ml" 229 8986 9000
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 229 8986 8992 "odoc_comments.ml" 229 8986 9000
+call(
+  tail
+)
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 213 8498 8504 "odoc_comments.ml" 229 8986 9000
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 231 9002 9010 "odoc_comments.ml" 231 9002 9021
+type(
+  string -> string -> int * Odoc_types.info list
+)
+ident(
+  def all_special "odoc_comments.ml" 249 9525 9529 "odoc_comments.ml" 314 11741 11746
+)
+"odoc_comments.ml" 231 9002 9022 "odoc_comments.ml" 231 9002 9026
+type(
+  string
+)
+ident(
+  def file "odoc_comments.ml" 231 9002 9027 "odoc_comments.ml" 247 9514 9523
+)
+"odoc_comments.ml" 231 9002 9027 "odoc_comments.ml" 231 9002 9028
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 233 9061 9067 "odoc_comments.ml" 247 9514 9523
+)
+"odoc_comments.ml" 233 9061 9075 "odoc_comments.ml" 233 9061 9079
+type(
+  Odoc_types.info list -> int -> string -> int * Odoc_types.info list
+)
+ident(
+  def iter "odoc_comments.ml" 233 9061 9067 "odoc_comments.ml" 247 9514 9523
+)
+"odoc_comments.ml" 233 9061 9080 "odoc_comments.ml" 233 9061 9083
+type(
+  Odoc_types.info list
+)
+ident(
+  def acc "odoc_comments.ml" 233 9061 9084 "odoc_comments.ml" 243 9400 9443
+)
+"odoc_comments.ml" 233 9061 9084 "odoc_comments.ml" 233 9061 9085
+type(
+  int
+)
+ident(
+  def n "odoc_comments.ml" 233 9061 9086 "odoc_comments.ml" 243 9400 9443
+)
+"odoc_comments.ml" 233 9061 9086 "odoc_comments.ml" 233 9061 9088
+type(
+  string
+)
+ident(
+  def s2 "odoc_comments.ml" 234 9091 9099 "odoc_comments.ml" 243 9400 9443
+)
+"odoc_comments.ml" 234 9091 9105 "odoc_comments.ml" 234 9091 9126
+type(
+  string -> string -> int * Odoc_types.info option
+)
+ident(
+  int_ref retrieve_info_special "odoc_comments.ml" 140 5744 5752 "odoc_comments.ml" 140 5744 5773
+)
+"odoc_comments.ml" 234 9091 9127 "odoc_comments.ml" 234 9091 9131
+type(
+  string
+)
+ident(
+  int_ref file "odoc_comments.ml" 231 9002 9022 "odoc_comments.ml" 231 9002 9026
+)
+"odoc_comments.ml" 234 9091 9132 "odoc_comments.ml" 234 9091 9134
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_comments.ml" 233 9061 9086 "odoc_comments.ml" 233 9061 9088
+)
+"odoc_comments.ml" 234 9091 9105 "odoc_comments.ml" 234 9091 9134
+call(
+  stack
+)
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 235 9140 9151 "odoc_comments.ml" 235 9140 9152
+type(
+  int
+)
+"odoc_comments.ml" 235 9140 9154 "odoc_comments.ml" 235 9140 9158
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 235 9140 9150 "odoc_comments.ml" 235 9140 9159
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 236 9163 9176 "odoc_comments.ml" 236 9163 9177
+type(
+  int
+)
+ident(
+  int_ref n "odoc_comments.ml" 233 9061 9084 "odoc_comments.ml" 233 9061 9085
+)
+"odoc_comments.ml" 236 9163 9179 "odoc_comments.ml" 236 9163 9182
+type(
+  Odoc_types.info list
+)
+ident(
+  int_ref acc "odoc_comments.ml" 233 9061 9080 "odoc_comments.ml" 233 9061 9083
+)
+"odoc_comments.ml" 236 9163 9175 "odoc_comments.ml" 236 9163 9183
+type(
+  int * Odoc_types.info list
+)
+"odoc_comments.ml" 237 9184 9195 "odoc_comments.ml" 237 9184 9197
+type(
+  int
+)
+ident(
+  def n2 "odoc_comments.ml" 241 9300 9312 "odoc_comments.ml" 243 9400 9443
+)
+"odoc_comments.ml" 237 9184 9204 "odoc_comments.ml" 237 9184 9205
+type(
+  Odoc_types.info
+)
+ident(
+  def i "odoc_comments.ml" 241 9300 9312 "odoc_comments.ml" 243 9400 9443
+)
+"odoc_comments.ml" 237 9184 9199 "odoc_comments.ml" 237 9184 9205
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 237 9184 9194 "odoc_comments.ml" 237 9184 9206
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 241 9300 9316 "odoc_comments.ml" 241 9300 9321
+type(
+  string
+)
+ident(
+  def new_s "odoc_comments.ml" 243 9400 9412 "odoc_comments.ml" 243 9400 9443
+)
+"odoc_comments.ml" 241 9300 9324 "odoc_comments.ml" 241 9300 9334
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"odoc_comments.ml" 241 9300 9335 "odoc_comments.ml" 241 9300 9337
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_comments.ml" 233 9061 9086 "odoc_comments.ml" 233 9061 9088
+)
+"odoc_comments.ml" 241 9300 9338 "odoc_comments.ml" 241 9300 9340
+type(
+  int
+)
+ident(
+  int_ref n2 "odoc_comments.ml" 237 9184 9195 "odoc_comments.ml" 237 9184 9197
+)
+"odoc_comments.ml" 241 9300 9343 "odoc_comments.ml" 241 9300 9356
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_comments.ml" 241 9300 9357 "odoc_comments.ml" 241 9300 9359
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_comments.ml" 233 9061 9086 "odoc_comments.ml" 233 9061 9088
+)
+"odoc_comments.ml" 241 9300 9342 "odoc_comments.ml" 241 9300 9360
+type(
+  int
+)
+"odoc_comments.ml" 241 9300 9361 "odoc_comments.ml" 241 9300 9362
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"odoc_comments.ml" 241 9300 9363 "odoc_comments.ml" 241 9300 9365
+type(
+  int
+)
+ident(
+  int_ref n2 "odoc_comments.ml" 237 9184 9195 "odoc_comments.ml" 237 9184 9197
+)
+"odoc_comments.ml" 241 9300 9341 "odoc_comments.ml" 241 9300 9366
+type(
+  int
+)
+"odoc_comments.ml" 241 9300 9324 "odoc_comments.ml" 241 9300 9366
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 243 9400 9412 "odoc_comments.ml" 243 9400 9416
+type(
+  Odoc_types.info list -> int -> string -> int * Odoc_types.info list
+)
+ident(
+  int_ref iter "odoc_comments.ml" 233 9061 9075 "odoc_comments.ml" 233 9061 9079
+)
+"odoc_comments.ml" 243 9400 9418 "odoc_comments.ml" 243 9400 9421
+type(
+  Odoc_types.info list
+)
+ident(
+  int_ref acc "odoc_comments.ml" 233 9061 9080 "odoc_comments.ml" 233 9061 9083
+)
+"odoc_comments.ml" 243 9400 9422 "odoc_comments.ml" 243 9400 9423
+type(
+  Odoc_types.info list -> Odoc_types.info list -> Odoc_types.info list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_comments.ml" 243 9400 9425 "odoc_comments.ml" 243 9400 9426
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref i "odoc_comments.ml" 237 9184 9204 "odoc_comments.ml" 237 9184 9205
+)
+"odoc_comments.ml" 243 9400 9424 "odoc_comments.ml" 243 9400 9427
+type(
+  Odoc_types.info list
+)
+"odoc_comments.ml" 243 9400 9417 "odoc_comments.ml" 243 9400 9428
+call(
+  stack
+)
+type(
+  Odoc_types.info list
+)
+"odoc_comments.ml" 243 9400 9430 "odoc_comments.ml" 243 9400 9431
+type(
+  int
+)
+ident(
+  int_ref n "odoc_comments.ml" 233 9061 9084 "odoc_comments.ml" 233 9061 9085
+)
+"odoc_comments.ml" 243 9400 9432 "odoc_comments.ml" 243 9400 9433
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_comments.ml" 243 9400 9434 "odoc_comments.ml" 243 9400 9436
+type(
+  int
+)
+ident(
+  int_ref n2 "odoc_comments.ml" 237 9184 9195 "odoc_comments.ml" 237 9184 9197
+)
+"odoc_comments.ml" 243 9400 9429 "odoc_comments.ml" 243 9400 9437
+type(
+  int
+)
+"odoc_comments.ml" 243 9400 9438 "odoc_comments.ml" 243 9400 9443
+type(
+  string
+)
+ident(
+  int_ref new_s "odoc_comments.ml" 241 9300 9316 "odoc_comments.ml" 241 9300 9321
+)
+"odoc_comments.ml" 243 9400 9412 "odoc_comments.ml" 243 9400 9443
+call(
+  tail
+)
+type(
+  int * Odoc_types.info list
+)
+"odoc_comments.ml" 241 9300 9312 "odoc_comments.ml" 243 9400 9443
+type(
+  int * Odoc_types.info list
+)
+"odoc_comments.ml" 234 9091 9099 "odoc_comments.ml" 243 9400 9443
+type(
+  int * Odoc_types.info list
+)
+"odoc_comments.ml" 245 9453 9463 "odoc_comments.ml" 245 9453 9466
+type(
+  int * Odoc_types.info list
+)
+ident(
+  def res "odoc_comments.ml" 247 9514 9520 "odoc_comments.ml" 247 9514 9523
+)
+"odoc_comments.ml" 245 9453 9469 "odoc_comments.ml" 245 9453 9473
+type(
+  Odoc_types.info list -> int -> string -> int * Odoc_types.info list
+)
+ident(
+  int_ref iter "odoc_comments.ml" 233 9061 9075 "odoc_comments.ml" 233 9061 9079
+)
+"odoc_comments.ml" 245 9453 9474 "odoc_comments.ml" 245 9453 9476
+type(
+  Odoc_types.info list
+)
+"odoc_comments.ml" 245 9453 9477 "odoc_comments.ml" 245 9453 9478
+type(
+  int
+)
+"odoc_comments.ml" 245 9453 9479 "odoc_comments.ml" 245 9453 9480
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 231 9002 9027 "odoc_comments.ml" 231 9002 9028
+)
+"odoc_comments.ml" 245 9453 9469 "odoc_comments.ml" 245 9453 9480
+call(
+  tail
+)
+type(
+  int * Odoc_types.info list
+)
+"odoc_comments.ml" 247 9514 9520 "odoc_comments.ml" 247 9514 9523
+type(
+  int * Odoc_types.info list
+)
+ident(
+  int_ref res "odoc_comments.ml" 245 9453 9463 "odoc_comments.ml" 245 9453 9466
+)
+"odoc_comments.ml" 245 9453 9459 "odoc_comments.ml" 247 9514 9523
+type(
+  int * Odoc_types.info list
+)
+"odoc_comments.ml" 233 9061 9067 "odoc_comments.ml" 247 9514 9523
+type(
+  int * Odoc_types.info list
+)
+"odoc_comments.ml" 249 9525 9533 "odoc_comments.ml" 249 9525 9551
+type(
+  string -> string -> int * Odoc_types.info option
+)
+ident(
+  def just_after_special "odoc_comments.ml" 280 10591 10595 "odoc_comments.ml" 314 11741 11746
+)
+"odoc_comments.ml" 249 9525 9552 "odoc_comments.ml" 249 9525 9556
+type(
+  string
+)
+ident(
+  def file "odoc_comments.ml" 249 9525 9557 "odoc_comments.ml" 278 10580 10589
+)
+"odoc_comments.ml" 249 9525 9557 "odoc_comments.ml" 249 9525 9558
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 251 9591 9597 "odoc_comments.ml" 278 10580 10589
+)
+"odoc_comments.ml" 251 9591 9601 "odoc_comments.ml" 251 9591 9604
+type(
+  int * Odoc_types.info option
+)
+ident(
+  def res "odoc_comments.ml" 278 10580 10586 "odoc_comments.ml" 278 10580 10589
+)
+"odoc_comments.ml" 251 9591 9613 "odoc_comments.ml" 251 9591 9634
+type(
+  string -> string -> int * Odoc_types.info option
+)
+ident(
+  int_ref retrieve_info_special "odoc_comments.ml" 140 5744 5752 "odoc_comments.ml" 140 5744 5773
+)
+"odoc_comments.ml" 251 9591 9635 "odoc_comments.ml" 251 9591 9639
+type(
+  string
+)
+ident(
+  int_ref file "odoc_comments.ml" 249 9525 9552 "odoc_comments.ml" 249 9525 9556
+)
+"odoc_comments.ml" 251 9591 9640 "odoc_comments.ml" 251 9591 9641
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 249 9525 9557 "odoc_comments.ml" 249 9525 9558
+)
+"odoc_comments.ml" 251 9591 9613 "odoc_comments.ml" 251 9591 9641
+call(
+  stack
+)
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 252 9647 9656 "odoc_comments.ml" 252 9647 9657
+type(
+  int
+)
+"odoc_comments.ml" 252 9647 9659 "odoc_comments.ml" 252 9647 9663
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 252 9647 9655 "odoc_comments.ml" 252 9647 9664
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 253 9668 9679 "odoc_comments.ml" 253 9668 9680
+type(
+  int
+)
+"odoc_comments.ml" 253 9668 9682 "odoc_comments.ml" 253 9668 9686
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 253 9668 9678 "odoc_comments.ml" 253 9668 9687
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 254 9688 9697 "odoc_comments.ml" 254 9688 9700
+type(
+  int
+)
+ident(
+  def len "odoc_comments.ml" 256 9787 9797 "odoc_comments.ml" 275 10517 10540
+)
+"odoc_comments.ml" 254 9688 9707 "odoc_comments.ml" 254 9688 9708
+type(
+  Odoc_types.info
+)
+ident(
+  def d "odoc_comments.ml" 256 9787 9797 "odoc_comments.ml" 275 10517 10540
+)
+"odoc_comments.ml" 254 9688 9702 "odoc_comments.ml" 254 9688 9708
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 254 9688 9696 "odoc_comments.ml" 254 9688 9709
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 256 9787 9803 "odoc_comments.ml" 256 9787 9823
+type(
+  string -> string -> int * Odoc_types.info option
+)
+ident(
+  int_ref retrieve_info_simple "odoc_comments.ml" 143 5838 5846 "odoc_comments.ml" 143 5838 5866
+)
+"odoc_comments.ml" 256 9787 9824 "odoc_comments.ml" 256 9787 9828
+type(
+  string
+)
+ident(
+  int_ref file "odoc_comments.ml" 249 9525 9552 "odoc_comments.ml" 249 9525 9556
+)
+"odoc_comments.ml" 256 9787 9830 "odoc_comments.ml" 256 9787 9840
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"odoc_comments.ml" 256 9787 9841 "odoc_comments.ml" 256 9787 9842
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 249 9525 9557 "odoc_comments.ml" 249 9525 9558
+)
+"odoc_comments.ml" 256 9787 9843 "odoc_comments.ml" 256 9787 9844
+type(
+  int
+)
+"odoc_comments.ml" 256 9787 9845 "odoc_comments.ml" 256 9787 9848
+type(
+  int
+)
+ident(
+  int_ref len "odoc_comments.ml" 254 9688 9697 "odoc_comments.ml" 254 9688 9700
+)
+"odoc_comments.ml" 256 9787 9829 "odoc_comments.ml" 256 9787 9849
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 256 9787 9803 "odoc_comments.ml" 256 9787 9849
+call(
+  stack
+)
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 257 9855 9868 "odoc_comments.ml" 257 9855 9869
+type(
+  int
+)
+"odoc_comments.ml" 257 9855 9871 "odoc_comments.ml" 257 9855 9875
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 257 9855 9867 "odoc_comments.ml" 257 9855 9876
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 262 10041 10062 "odoc_comments.ml" 262 10041 10065
+type(
+  int
+)
+ident(
+  def pos "odoc_comments.ml" 263 10120 10137 "odoc_comments.ml" 268 10316 10348
+)
+"odoc_comments.ml" 262 10041 10068 "odoc_comments.ml" 262 10041 10086
+type(
+  Str.regexp -> string -> int -> int
+)
+ident(
+  ext_ref Str.search_forward
+)
+"odoc_comments.ml" 262 10041 10088 "odoc_comments.ml" 262 10041 10105
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp_string
+)
+"odoc_comments.ml" 262 10041 10106 "odoc_comments.ml" 262 10041 10111
+type(
+  string
+)
+"odoc_comments.ml" 262 10041 10087 "odoc_comments.ml" 262 10041 10112
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"odoc_comments.ml" 262 10041 10113 "odoc_comments.ml" 262 10041 10114
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 249 9525 9557 "odoc_comments.ml" 249 9525 9558
+)
+"odoc_comments.ml" 262 10041 10115 "odoc_comments.ml" 262 10041 10116
+type(
+  int
+)
+"odoc_comments.ml" 262 10041 10068 "odoc_comments.ml" 262 10041 10116
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_comments.ml" 263 10120 10140 "odoc_comments.ml" 263 10120 10150
+type(
+  string -> bool
+)
+ident(
+  int_ref blank_line "odoc_comments.ml" 131 5510 5518 "odoc_comments.ml" 131 5510 5528
+)
+"odoc_comments.ml" 263 10120 10152 "odoc_comments.ml" 263 10120 10162
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"odoc_comments.ml" 263 10120 10163 "odoc_comments.ml" 263 10120 10164
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 249 9525 9557 "odoc_comments.ml" 249 9525 9558
+)
+"odoc_comments.ml" 263 10120 10165 "odoc_comments.ml" 263 10120 10166
+type(
+  int
+)
+"odoc_comments.ml" 263 10120 10167 "odoc_comments.ml" 263 10120 10170
+type(
+  int
+)
+ident(
+  int_ref pos "odoc_comments.ml" 262 10041 10062 "odoc_comments.ml" 262 10041 10065
+)
+"odoc_comments.ml" 263 10120 10151 "odoc_comments.ml" 263 10120 10171
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 263 10120 10140 "odoc_comments.ml" 263 10120 10171
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_comments.ml" 263 10120 10172 "odoc_comments.ml" 263 10120 10174
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"odoc_comments.ml" 264 10175 10194 "odoc_comments.ml" 264 10175 10195
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref d "odoc_comments.ml" 254 9688 9707 "odoc_comments.ml" 254 9688 9708
+)
+"odoc_comments.ml" 264 10175 10194 "odoc_comments.ml" 264 10175 10213
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 264 10175 10214 "odoc_comments.ml" 264 10175 10215
+type(
+  Odoc_types.text option -> Odoc_types.text option -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"odoc_comments.ml" 264 10175 10237 "odoc_comments.ml" 264 10175 10241
+type(
+  string
+)
+"odoc_comments.ml" 264 10175 10222 "odoc_comments.ml" 264 10175 10241
+type(
+  Odoc_types.text_element
+)
+"odoc_comments.ml" 264 10175 10221 "odoc_comments.ml" 264 10175 10242
+type(
+  Odoc_types.text
+)
+"odoc_comments.ml" 264 10175 10216 "odoc_comments.ml" 264 10175 10242
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 264 10175 10194 "odoc_comments.ml" 264 10175 10242
+type(
+  bool
+)
+"odoc_comments.ml" 263 10120 10140 "odoc_comments.ml" 264 10175 10242
+type(
+  bool
+)
+"odoc_comments.ml" 266 10265 10285 "odoc_comments.ml" 266 10265 10286
+type(
+  int
+)
+"odoc_comments.ml" 266 10265 10288 "odoc_comments.ml" 266 10265 10292
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 266 10265 10284 "odoc_comments.ml" 266 10265 10293
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 268 10316 10336 "odoc_comments.ml" 268 10316 10339
+type(
+  int
+)
+ident(
+  int_ref len "odoc_comments.ml" 254 9688 9697 "odoc_comments.ml" 254 9688 9700
+)
+"odoc_comments.ml" 268 10316 10346 "odoc_comments.ml" 268 10316 10347
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref d "odoc_comments.ml" 254 9688 9707 "odoc_comments.ml" 254 9688 9708
+)
+"odoc_comments.ml" 268 10316 10341 "odoc_comments.ml" 268 10316 10347
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 268 10316 10335 "odoc_comments.ml" 268 10316 10348
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 263 10120 10137 "odoc_comments.ml" 268 10316 10348
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 262 10041 10058 "odoc_comments.ml" 268 10316 10348
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 270 10369 10386 "odoc_comments.ml" 270 10369 10395
+type(
+  exn
+)
+"odoc_comments.ml" 272 10441 10461 "odoc_comments.ml" 272 10441 10462
+type(
+  int
+)
+"odoc_comments.ml" 272 10441 10464 "odoc_comments.ml" 272 10441 10468
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 272 10441 10460 "odoc_comments.ml" 272 10441 10469
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 258 9880 9894 "odoc_comments.ml" 273 10470 10485
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 274 10486 10499 "odoc_comments.ml" 274 10486 10503
+type(
+  int
+)
+ident(
+  def len2 "odoc_comments.ml" 275 10517 10531 "odoc_comments.ml" 275 10517 10540
+)
+"odoc_comments.ml" 274 10486 10510 "odoc_comments.ml" 274 10486 10512
+type(
+  Odoc_types.info
+)
+ident(
+  def d2 "odoc_comments.ml" 275 10517 10531 "odoc_comments.ml" 275 10517 10540
+)
+"odoc_comments.ml" 274 10486 10505 "odoc_comments.ml" 274 10486 10512
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 274 10486 10498 "odoc_comments.ml" 274 10486 10513
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 275 10517 10532 "odoc_comments.ml" 275 10517 10533
+type(
+  int
+)
+"odoc_comments.ml" 275 10517 10535 "odoc_comments.ml" 275 10517 10539
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 275 10517 10531 "odoc_comments.ml" 275 10517 10540
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 256 9787 9797 "odoc_comments.ml" 275 10517 10540
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 251 9591 9607 "odoc_comments.ml" 275 10517 10540
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 278 10580 10586 "odoc_comments.ml" 278 10580 10589
+type(
+  int * Odoc_types.info option
+)
+ident(
+  int_ref res "odoc_comments.ml" 251 9591 9601 "odoc_comments.ml" 251 9591 9604
+)
+"odoc_comments.ml" 251 9591 9597 "odoc_comments.ml" 278 10580 10589
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 280 10591 10599 "odoc_comments.ml" 280 10591 10612
+type(
+  string -> string -> int * Odoc_types.info option
+)
+ident(
+  def first_special "odoc_comments.ml" 283 10658 10662 "odoc_comments.ml" 314 11741 11746
+)
+"odoc_comments.ml" 280 10591 10613 "odoc_comments.ml" 280 10591 10617
+type(
+  string
+)
+ident(
+  def file "odoc_comments.ml" 280 10591 10618 "odoc_comments.ml" 281 10622 10656
+)
+"odoc_comments.ml" 280 10591 10618 "odoc_comments.ml" 280 10591 10619
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 281 10622 10628 "odoc_comments.ml" 281 10622 10656
+)
+"odoc_comments.ml" 281 10622 10628 "odoc_comments.ml" 281 10622 10649
+type(
+  string -> string -> int * Odoc_types.info option
+)
+ident(
+  int_ref retrieve_info_special "odoc_comments.ml" 140 5744 5752 "odoc_comments.ml" 140 5744 5773
+)
+"odoc_comments.ml" 281 10622 10650 "odoc_comments.ml" 281 10622 10654
+type(
+  string
+)
+ident(
+  int_ref file "odoc_comments.ml" 280 10591 10613 "odoc_comments.ml" 280 10591 10617
+)
+"odoc_comments.ml" 281 10622 10655 "odoc_comments.ml" 281 10622 10656
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 280 10591 10618 "odoc_comments.ml" 280 10591 10619
+)
+"odoc_comments.ml" 281 10622 10628 "odoc_comments.ml" 281 10622 10656
+call(
+  tail
+)
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 283 10658 10666 "odoc_comments.ml" 283 10658 10678
+type(
+  (Odoc_types.text -> 'e) ->
+  string -> string -> Odoc_types.info option * 'e list
+)
+ident(
+  def get_comments "odoc_comments.ml" 313 11709 11740 "odoc_comments.ml" 314 11741 11746
+)
+"odoc_comments.ml" 283 10658 10679 "odoc_comments.ml" 283 10658 10691
+type(
+  Odoc_types.text -> 'e
+)
+ident(
+  def f_create_ele "odoc_comments.ml" 283 10658 10692 "odoc_comments.ml" 313 11709 11740
+)
+"odoc_comments.ml" 283 10658 10692 "odoc_comments.ml" 283 10658 10696
+type(
+  string
+)
+ident(
+  def file "odoc_comments.ml" 283 10658 10697 "odoc_comments.ml" 313 11709 11740
+)
+"odoc_comments.ml" 283 10658 10697 "odoc_comments.ml" 283 10658 10698
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 284 10701 10707 "odoc_comments.ml" 313 11709 11740
+)
+"odoc_comments.ml" 284 10701 10712 "odoc_comments.ml" 284 10701 10721
+type(
+  Odoc_types.info option
+)
+ident(
+  def assoc_com "odoc_comments.ml" 302 11438 11444 "odoc_comments.ml" 313 11709 11740
+)
+"odoc_comments.ml" 284 10701 10723 "odoc_comments.ml" 284 10701 10731
+type(
+  Odoc_types.info list
+)
+ident(
+  def ele_coms "odoc_comments.ml" 302 11438 11444 "odoc_comments.ml" 313 11709 11740
+)
+"odoc_comments.ml" 284 10701 10711 "odoc_comments.ml" 284 10701 10732
+type(
+  Odoc_types.info option * Odoc_types.info list
+)
+"odoc_comments.ml" 286 10766 10779 "odoc_comments.ml" 286 10766 10782
+type(
+  int
+)
+ident(
+  def len "odoc_comments.ml" 290 11044 11052 "odoc_comments.ml" 300 11394 11428
+)
+"odoc_comments.ml" 286 10766 10784 "odoc_comments.ml" 286 10766 10796
+type(
+  Odoc_types.info list
+)
+ident(
+  def special_coms "odoc_comments.ml" 290 11044 11052 "odoc_comments.ml" 300 11394 11428
+)
+"odoc_comments.ml" 286 10766 10778 "odoc_comments.ml" 286 10766 10797
+type(
+  int * Odoc_types.info list
+)
+"odoc_comments.ml" 286 10766 10801 "odoc_comments.ml" 286 10766 10812
+type(
+  string -> string -> int * Odoc_types.info list
+)
+ident(
+  int_ref all_special "odoc_comments.ml" 231 9002 9010 "odoc_comments.ml" 231 9002 9021
+)
+"odoc_comments.ml" 286 10766 10813 "odoc_comments.ml" 286 10766 10817
+type(
+  string
+)
+ident(
+  int_ref file "odoc_comments.ml" 283 10658 10692 "odoc_comments.ml" 283 10658 10696
+)
+"odoc_comments.ml" 286 10766 10818 "odoc_comments.ml" 286 10766 10819
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 283 10658 10697 "odoc_comments.ml" 283 10658 10698
+)
+"odoc_comments.ml" 286 10766 10801 "odoc_comments.ml" 286 10766 10819
+call(
+  stack
+)
+type(
+  int * Odoc_types.info list
+)
+"odoc_comments.ml" 290 11044 11058 "odoc_comments.ml" 290 11044 11066
+type(
+  Odoc_types.info list -> Odoc_types.info list
+)
+ident(
+  ext_ref List.rev
+)
+"odoc_comments.ml" 290 11044 11067 "odoc_comments.ml" 290 11044 11079
+type(
+  Odoc_types.info list
+)
+ident(
+  int_ref special_coms "odoc_comments.ml" 286 10766 10784 "odoc_comments.ml" 286 10766 10796
+)
+"odoc_comments.ml" 290 11044 11058 "odoc_comments.ml" 290 11044 11079
+call(
+  stack
+)
+type(
+  Odoc_types.info list
+)
+"odoc_comments.ml" 291 11085 11095 "odoc_comments.ml" 291 11085 11097
+type(
+  Odoc_types.info list
+)
+"odoc_comments.ml" 292 11101 11114 "odoc_comments.ml" 292 11101 11118
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 292 11101 11120 "odoc_comments.ml" 292 11101 11122
+type(
+  Odoc_types.info list
+)
+"odoc_comments.ml" 292 11101 11113 "odoc_comments.ml" 292 11101 11123
+type(
+  Odoc_types.info option * Odoc_types.info list
+)
+"odoc_comments.ml" 293 11124 11135 "odoc_comments.ml" 293 11124 11136
+type(
+  Odoc_types.info
+)
+ident(
+  def h "odoc_comments.ml" 294 11145 11157 "odoc_comments.ml" 300 11394 11428
+)
+"odoc_comments.ml" 293 11124 11140 "odoc_comments.ml" 293 11124 11141
+type(
+  Odoc_types.info list
+)
+ident(
+  def q "odoc_comments.ml" 294 11145 11157 "odoc_comments.ml" 300 11394 11428
+)
+"odoc_comments.ml" 293 11124 11135 "odoc_comments.ml" 293 11124 11141
+type(
+  Odoc_types.info list
+)
+"odoc_comments.ml" 294 11145 11161 "odoc_comments.ml" 294 11145 11186
+type(
+  string -> string -> bool
+)
+ident(
+  int_ref blank_line_outside_simple "odoc_comments.ml" 154 6307 6315 "odoc_comments.ml" 154 6307 6340
+)
+"odoc_comments.ml" 294 11145 11187 "odoc_comments.ml" 294 11145 11191
+type(
+  string
+)
+ident(
+  int_ref file "odoc_comments.ml" 283 10658 10692 "odoc_comments.ml" 283 10658 10696
+)
+"odoc_comments.ml" 295 11192 11211 "odoc_comments.ml" 295 11192 11221
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"odoc_comments.ml" 295 11192 11222 "odoc_comments.ml" 295 11192 11223
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 283 10658 10697 "odoc_comments.ml" 283 10658 10698
+)
+"odoc_comments.ml" 295 11192 11224 "odoc_comments.ml" 295 11192 11227
+type(
+  int
+)
+ident(
+  int_ref len "odoc_comments.ml" 286 10766 10779 "odoc_comments.ml" 286 10766 10782
+)
+"odoc_comments.ml" 295 11192 11230 "odoc_comments.ml" 295 11192 11243
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_comments.ml" 295 11192 11244 "odoc_comments.ml" 295 11192 11245
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 283 10658 10697 "odoc_comments.ml" 283 10658 10698
+)
+"odoc_comments.ml" 295 11192 11229 "odoc_comments.ml" 295 11192 11246
+type(
+  int
+)
+"odoc_comments.ml" 295 11192 11247 "odoc_comments.ml" 295 11192 11248
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"odoc_comments.ml" 295 11192 11249 "odoc_comments.ml" 295 11192 11252
+type(
+  int
+)
+ident(
+  int_ref len "odoc_comments.ml" 286 10766 10779 "odoc_comments.ml" 286 10766 10782
+)
+"odoc_comments.ml" 295 11192 11228 "odoc_comments.ml" 295 11192 11253
+type(
+  int
+)
+"odoc_comments.ml" 295 11192 11210 "odoc_comments.ml" 295 11192 11254
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 294 11145 11160 "odoc_comments.ml" 295 11192 11256
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_comments.ml" 296 11257 11273 "odoc_comments.ml" 296 11257 11275
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"odoc_comments.ml" 296 11257 11276 "odoc_comments.ml" 296 11257 11277
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref h "odoc_comments.ml" 293 11124 11135 "odoc_comments.ml" 293 11124 11136
+)
+"odoc_comments.ml" 296 11257 11276 "odoc_comments.ml" 296 11257 11295
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 296 11257 11296 "odoc_comments.ml" 296 11257 11297
+type(
+  Odoc_types.text option -> Odoc_types.text option -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"odoc_comments.ml" 296 11257 11319 "odoc_comments.ml" 296 11257 11323
+type(
+  string
+)
+"odoc_comments.ml" 296 11257 11304 "odoc_comments.ml" 296 11257 11323
+type(
+  Odoc_types.text_element
+)
+"odoc_comments.ml" 296 11257 11303 "odoc_comments.ml" 296 11257 11324
+type(
+  Odoc_types.text
+)
+"odoc_comments.ml" 296 11257 11298 "odoc_comments.ml" 296 11257 11324
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 296 11257 11276 "odoc_comments.ml" 296 11257 11324
+type(
+  bool
+)
+"odoc_comments.ml" 294 11145 11160 "odoc_comments.ml" 296 11257 11324
+type(
+  bool
+)
+"odoc_comments.ml" 298 11342 11357 "odoc_comments.ml" 298 11342 11361
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 298 11342 11363 "odoc_comments.ml" 298 11342 11375
+type(
+  Odoc_types.info list
+)
+ident(
+  int_ref special_coms "odoc_comments.ml" 286 10766 10784 "odoc_comments.ml" 286 10766 10796
+)
+"odoc_comments.ml" 298 11342 11356 "odoc_comments.ml" 298 11342 11376
+type(
+  Odoc_types.info option * Odoc_types.info list
+)
+"odoc_comments.ml" 300 11394 11414 "odoc_comments.ml" 300 11394 11415
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref h "odoc_comments.ml" 293 11124 11135 "odoc_comments.ml" 293 11124 11136
+)
+"odoc_comments.ml" 300 11394 11409 "odoc_comments.ml" 300 11394 11415
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 300 11394 11417 "odoc_comments.ml" 300 11394 11425
+type(
+  Odoc_types.info list -> Odoc_types.info list
+)
+ident(
+  ext_ref List.rev
+)
+"odoc_comments.ml" 300 11394 11426 "odoc_comments.ml" 300 11394 11427
+type(
+  Odoc_types.info list
+)
+ident(
+  int_ref q "odoc_comments.ml" 293 11124 11140 "odoc_comments.ml" 293 11124 11141
+)
+"odoc_comments.ml" 300 11394 11417 "odoc_comments.ml" 300 11394 11427
+call(
+  stack
+)
+type(
+  Odoc_types.info list
+)
+"odoc_comments.ml" 300 11394 11408 "odoc_comments.ml" 300 11394 11428
+type(
+  Odoc_types.info option * Odoc_types.info list
+)
+"odoc_comments.ml" 294 11145 11157 "odoc_comments.ml" 300 11394 11428
+type(
+  Odoc_types.info option * Odoc_types.info list
+)
+"odoc_comments.ml" 290 11044 11052 "odoc_comments.ml" 300 11394 11428
+type(
+  Odoc_types.info option * Odoc_types.info list
+)
+"odoc_comments.ml" 286 10766 10774 "odoc_comments.ml" 300 11394 11428
+type(
+  Odoc_types.info option * Odoc_types.info list
+)
+"odoc_comments.ml" 302 11438 11448 "odoc_comments.ml" 302 11438 11460
+type(
+  'e list
+)
+ident(
+  def ele_comments "odoc_comments.ml" 313 11709 11715 "odoc_comments.ml" 313 11709 11740
+)
+"odoc_comments.ml" 303 11463 11471 "odoc_comments.ml" 303 11463 11485
+type(
+  ('e list -> Odoc_types.info -> 'e list) ->
+  'e list -> Odoc_types.info list -> 'e list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_comments.ml" 304 11486 11501 "odoc_comments.ml" 304 11486 11504
+type(
+  'e list
+)
+ident(
+  def acc "odoc_comments.ml" 304 11486 11508 "odoc_comments.ml" 309 11628 11666
+)
+"odoc_comments.ml" 304 11486 11512 "odoc_comments.ml" 304 11486 11514
+type(
+  Odoc_types.info
+)
+ident(
+  def sc "odoc_comments.ml" 305 11518 11530 "odoc_comments.ml" 309 11628 11666
+)
+"odoc_comments.ml" 305 11518 11536 "odoc_comments.ml" 305 11518 11538
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref sc "odoc_comments.ml" 304 11486 11512 "odoc_comments.ml" 304 11486 11514
+)
+"odoc_comments.ml" 305 11518 11536 "odoc_comments.ml" 305 11518 11556
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 306 11562 11576 "odoc_comments.ml" 306 11562 11580
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 307 11584 11600 "odoc_comments.ml" 307 11584 11603
+type(
+  'e list
+)
+ident(
+  int_ref acc "odoc_comments.ml" 304 11486 11501 "odoc_comments.ml" 304 11486 11504
+)
+"odoc_comments.ml" 308 11604 11623 "odoc_comments.ml" 308 11604 11624
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_comments.ml" 309 11628 11644 "odoc_comments.ml" 309 11628 11666
+)
+"odoc_comments.ml" 308 11604 11618 "odoc_comments.ml" 308 11604 11624
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 309 11628 11644 "odoc_comments.ml" 309 11628 11647
+type(
+  'e list
+)
+ident(
+  int_ref acc "odoc_comments.ml" 304 11486 11501 "odoc_comments.ml" 304 11486 11504
+)
+"odoc_comments.ml" 309 11628 11648 "odoc_comments.ml" 309 11628 11649
+type(
+  'e list -> 'e list -> 'e list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_comments.ml" 309 11628 11651 "odoc_comments.ml" 309 11628 11663
+type(
+  Odoc_types.text -> 'e
+)
+ident(
+  int_ref f_create_ele "odoc_comments.ml" 283 10658 10679 "odoc_comments.ml" 283 10658 10691
+)
+"odoc_comments.ml" 309 11628 11664 "odoc_comments.ml" 309 11628 11665
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref t "odoc_comments.ml" 308 11604 11623 "odoc_comments.ml" 308 11604 11624
+)
+"odoc_comments.ml" 309 11628 11651 "odoc_comments.ml" 309 11628 11665
+call(
+  stack
+)
+type(
+  'e
+)
+"odoc_comments.ml" 309 11628 11650 "odoc_comments.ml" 309 11628 11666
+type(
+  'e list
+)
+"odoc_comments.ml" 309 11628 11644 "odoc_comments.ml" 309 11628 11666
+call(
+  tail
+)
+type(
+  'e list
+)
+"odoc_comments.ml" 305 11518 11530 "odoc_comments.ml" 309 11628 11666
+type(
+  'e list
+)
+"odoc_comments.ml" 304 11486 11508 "odoc_comments.ml" 309 11628 11666
+type(
+  Odoc_types.info -> 'e list
+)
+"odoc_comments.ml" 304 11486 11496 "odoc_comments.ml" 309 11628 11667
+type(
+  'e list -> Odoc_types.info -> 'e list
+)
+"odoc_comments.ml" 310 11668 11678 "odoc_comments.ml" 310 11668 11680
+type(
+  'e list
+)
+"odoc_comments.ml" 311 11681 11691 "odoc_comments.ml" 311 11681 11699
+type(
+  Odoc_types.info list
+)
+ident(
+  int_ref ele_coms "odoc_comments.ml" 284 10701 10723 "odoc_comments.ml" 284 10701 10731
+)
+"odoc_comments.ml" 303 11463 11471 "odoc_comments.ml" 311 11681 11699
+call(
+  stack
+)
+type(
+  'e list
+)
+"odoc_comments.ml" 313 11709 11716 "odoc_comments.ml" 313 11709 11725
+type(
+  Odoc_types.info option
+)
+ident(
+  int_ref assoc_com "odoc_comments.ml" 284 10701 10712 "odoc_comments.ml" 284 10701 10721
+)
+"odoc_comments.ml" 313 11709 11727 "odoc_comments.ml" 313 11709 11739
+type(
+  'e list
+)
+ident(
+  int_ref ele_comments "odoc_comments.ml" 302 11438 11448 "odoc_comments.ml" 302 11438 11460
+)
+"odoc_comments.ml" 313 11709 11715 "odoc_comments.ml" 313 11709 11740
+type(
+  Odoc_types.info option * 'e list
+)
+"odoc_comments.ml" 302 11438 11444 "odoc_comments.ml" 313 11709 11740
+type(
+  Odoc_types.info option * 'e list
+)
+"odoc_comments.ml" 284 10701 10707 "odoc_comments.ml" 313 11709 11740
+type(
+  Odoc_types.info option * 'e list
+)
+"odoc_comments.ml" 316 11748 11778 "odoc_comments.ml" 316 11748 11811
+call(
+  stack
+)
+"odoc_comments.ml" 318 11813 11817 "odoc_comments.ml" 318 11813 11831
+type(
+  string -> Odoc_types.info
+)
+ident(
+  def info_of_string "odoc_comments.ml" 340 12298 12298 "odoc_comments.ml" 1 0 -1
+)
+"odoc_comments.ml" 318 11813 11832 "odoc_comments.ml" 318 11813 11833
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 319 11836 11838 "odoc_comments.ml" 338 12281 12296
+)
+"odoc_comments.ml" 319 11836 11842 "odoc_comments.ml" 319 11836 11847
+type(
+  Odoc_types.info
+)
+ident(
+  def dummy "odoc_comments.ml" 334 12137 12139 "odoc_comments.ml" 338 12281 12296
+)
+"odoc_comments.ml" 321 11856 11871 "odoc_comments.ml" 321 11856 11875
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 322 11878 11896 "odoc_comments.ml" 322 11878 11898
+type(
+  string list
+)
+"odoc_comments.ml" 323 11901 11919 "odoc_comments.ml" 323 11901 11923
+type(
+  string option
+)
+"odoc_comments.ml" 324 11926 11941 "odoc_comments.ml" 324 11926 11943
+type(
+  Odoc_types.see list
+)
+"odoc_comments.ml" 325 11946 11962 "odoc_comments.ml" 325 11946 11966
+type(
+  string option
+)
+"odoc_comments.ml" 326 11969 11986 "odoc_comments.ml" 326 11969 11988
+type(
+  (string * Odoc_types.text) list
+)
+"odoc_comments.ml" 327 11991 12012 "odoc_comments.ml" 327 11991 12016
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 328 12019 12036 "odoc_comments.ml" 328 12019 12038
+type(
+  Odoc_types.param list
+)
+"odoc_comments.ml" 329 12041 12069 "odoc_comments.ml" 329 12041 12071
+type(
+  Odoc_types.raised_exception list
+)
+"odoc_comments.ml" 330 12074 12097 "odoc_comments.ml" 330 12074 12101
+type(
+  Odoc_types.text option
+)
+"odoc_comments.ml" 331 12104 12121 "odoc_comments.ml" 331 12104 12123
+type(
+  (string * Odoc_types.text) list
+)
+"odoc_comments.ml" 320 11850 11854 "odoc_comments.ml" 332 12126 12131
+type(
+  Odoc_types.info
+)
+"odoc_comments.ml" 334 12137 12143 "odoc_comments.ml" 334 12137 12145
+type(
+  string
+)
+ident(
+  def s2 "odoc_comments.ml" 335 12180 12182 "odoc_comments.ml" 338 12281 12296
+)
+"odoc_comments.ml" 334 12137 12148 "odoc_comments.ml" 334 12137 12162
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"odoc_comments.ml" 334 12137 12163 "odoc_comments.ml" 334 12137 12174
+type(
+  (string -> string, unit, string) format
+)
+"odoc_comments.ml" 334 12137 12175 "odoc_comments.ml" 334 12137 12176
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 318 11813 11832 "odoc_comments.ml" 318 11813 11833
+)
+"odoc_comments.ml" 334 12137 12148 "odoc_comments.ml" 334 12137 12176
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 335 12180 12187 "odoc_comments.ml" 335 12180 12188
+type(
+  int
+)
+"odoc_comments.ml" 335 12180 12190 "odoc_comments.ml" 335 12180 12195
+type(
+  Odoc_types.info option
+)
+ident(
+  def i_opt "odoc_comments.ml" 336 12244 12246 "odoc_comments.ml" 338 12281 12296
+)
+"odoc_comments.ml" 335 12180 12186 "odoc_comments.ml" 335 12180 12196
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 335 12180 12199 "odoc_comments.ml" 335 12180 12233
+type(
+  string -> string -> int * Odoc_types.info option
+)
+ident(
+  int_ref Basic_info_retriever.first_special "odoc_comments.ml" 280 10591 10599 "odoc_comments.ml" 280 10591 10612
+)
+"odoc_comments.ml" 335 12180 12234 "odoc_comments.ml" 335 12180 12237
+type(
+  string
+)
+"odoc_comments.ml" 335 12180 12238 "odoc_comments.ml" 335 12180 12240
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_comments.ml" 334 12137 12143 "odoc_comments.ml" 334 12137 12145
+)
+"odoc_comments.ml" 335 12180 12199 "odoc_comments.ml" 335 12180 12240
+call(
+  stack
+)
+type(
+  int * Odoc_types.info option
+)
+"odoc_comments.ml" 336 12244 12252 "odoc_comments.ml" 336 12244 12257
+type(
+  Odoc_types.info option
+)
+ident(
+  int_ref i_opt "odoc_comments.ml" 335 12180 12190 "odoc_comments.ml" 335 12180 12195
+)
+"odoc_comments.ml" 337 12263 12267 "odoc_comments.ml" 337 12263 12271
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 337 12263 12275 "odoc_comments.ml" 337 12263 12280
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref dummy "odoc_comments.ml" 319 11836 11842 "odoc_comments.ml" 319 11836 11847
+)
+"odoc_comments.ml" 338 12281 12290 "odoc_comments.ml" 338 12281 12291
+type(
+  Odoc_types.info
+)
+ident(
+  def i "odoc_comments.ml" 338 12281 12295 "odoc_comments.ml" 338 12281 12296
+)
+"odoc_comments.ml" 338 12281 12285 "odoc_comments.ml" 338 12281 12291
+type(
+  Odoc_types.info option
+)
+"odoc_comments.ml" 338 12281 12295 "odoc_comments.ml" 338 12281 12296
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref i "odoc_comments.ml" 338 12281 12290 "odoc_comments.ml" 338 12281 12291
+)
+"odoc_comments.ml" 336 12244 12246 "odoc_comments.ml" 338 12281 12296
+type(
+  Odoc_types.info
+)
+"odoc_comments.ml" 335 12180 12182 "odoc_comments.ml" 338 12281 12296
+type(
+  Odoc_types.info
+)
+"odoc_comments.ml" 334 12137 12139 "odoc_comments.ml" 338 12281 12296
+type(
+  Odoc_types.info
+)
+"odoc_comments.ml" 319 11836 11838 "odoc_comments.ml" 338 12281 12296
+type(
+  Odoc_types.info
+)
+"odoc_comments.ml" 340 12298 12302 "odoc_comments.ml" 340 12298 12322
+type(
+  Odoc_module.t_module list -> string -> Odoc_types.info
+)
+ident(
+  def info_of_comment_file "odoc_comments.ml" 347 12495 12511 "odoc_comments.ml" 1 0 -1
+)
+"odoc_comments.ml" 340 12298 12323 "odoc_comments.ml" 340 12298 12330
+type(
+  Odoc_module.t_module list
+)
+ident(
+  def modlist "odoc_comments.ml" 340 12298 12331 "odoc_comments.ml" 347 12495 12511
+)
+"odoc_comments.ml" 340 12298 12331 "odoc_comments.ml" 340 12298 12332
+type(
+  string
+)
+ident(
+  def f "odoc_comments.ml" 341 12335 12337 "odoc_comments.ml" 347 12495 12511
+)
+"odoc_comments.ml" 342 12341 12349 "odoc_comments.ml" 342 12341 12350
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 343 12389 12393 "odoc_comments.ml" 344 12421 12468
+)
+"odoc_comments.ml" 342 12341 12353 "odoc_comments.ml" 342 12341 12383
+type(
+  string -> string
+)
+ident(
+  ext_ref Odoc_misc.input_file_as_string
+)
+"odoc_comments.ml" 342 12341 12384 "odoc_comments.ml" 342 12341 12385
+type(
+  string
+)
+ident(
+  int_ref f "odoc_comments.ml" 340 12298 12331 "odoc_comments.ml" 340 12298 12332
+)
+"odoc_comments.ml" 342 12341 12353 "odoc_comments.ml" 342 12341 12385
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_comments.ml" 343 12389 12397 "odoc_comments.ml" 343 12389 12398
+type(
+  Odoc_types.info
+)
+ident(
+  def i "odoc_comments.ml" 344 12421 12425 "odoc_comments.ml" 344 12421 12468
+)
+"odoc_comments.ml" 343 12389 12401 "odoc_comments.ml" 343 12389 12415
+type(
+  string -> Odoc_types.info
+)
+ident(
+  int_ref info_of_string "odoc_comments.ml" 318 11813 11817 "odoc_comments.ml" 318 11813 11831
+)
+"odoc_comments.ml" 343 12389 12416 "odoc_comments.ml" 343 12389 12417
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 342 12341 12349 "odoc_comments.ml" 342 12341 12350
+)
+"odoc_comments.ml" 343 12389 12401 "odoc_comments.ml" 343 12389 12417
+call(
+  stack
+)
+type(
+  Odoc_types.info
+)
+"odoc_comments.ml" 344 12421 12425 "odoc_comments.ml" 344 12421 12455
+type(
+  string -> Odoc_module.t_module list -> Odoc_types.info -> Odoc_types.info
+)
+ident(
+  ext_ref Odoc_cross.assoc_comments_info
+)
+"odoc_comments.ml" 344 12421 12456 "odoc_comments.ml" 344 12421 12458
+type(
+  string
+)
+"odoc_comments.ml" 344 12421 12459 "odoc_comments.ml" 344 12421 12466
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref modlist "odoc_comments.ml" 340 12298 12323 "odoc_comments.ml" 340 12298 12330
+)
+"odoc_comments.ml" 344 12421 12467 "odoc_comments.ml" 344 12421 12468
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref i "odoc_comments.ml" 343 12389 12397 "odoc_comments.ml" 343 12389 12398
+)
+"odoc_comments.ml" 344 12421 12425 "odoc_comments.ml" 344 12421 12468
+call(
+  stack
+)
+type(
+  Odoc_types.info
+)
+"odoc_comments.ml" 343 12389 12393 "odoc_comments.ml" 344 12421 12468
+type(
+  Odoc_types.info
+)
+"odoc_comments.ml" 342 12341 12345 "odoc_comments.ml" 344 12421 12468
+type(
+  Odoc_types.info
+)
+"odoc_comments.ml" 346 12476 12490 "odoc_comments.ml" 346 12476 12491
+type(
+  string
+)
+ident(
+  def s "odoc_comments.ml" 347 12495 12501 "odoc_comments.ml" 347 12495 12511
+)
+"odoc_comments.ml" 346 12476 12480 "odoc_comments.ml" 346 12476 12491
+type(
+  exn
+)
+"odoc_comments.ml" 347 12495 12501 "odoc_comments.ml" 347 12495 12509
+type(
+  string -> Odoc_types.info
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"odoc_comments.ml" 347 12495 12510 "odoc_comments.ml" 347 12495 12511
+type(
+  string
+)
+ident(
+  int_ref s "odoc_comments.ml" 346 12476 12490 "odoc_comments.ml" 346 12476 12491
+)
+"odoc_comments.ml" 347 12495 12501 "odoc_comments.ml" 347 12495 12511
+call(
+  tail
+)
+type(
+  Odoc_types.info
+)
+"odoc_comments.ml" 341 12335 12337 "odoc_comments.ml" 347 12495 12511
+type(
+  Odoc_types.info
+)

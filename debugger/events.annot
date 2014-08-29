@@ -1,0 +1,261 @@
+"events.ml" 18 979 983 "events.ml" 18 979 990
+type(
+  Instruct.debug_event -> Lexing.position
+)
+ident(
+  def get_pos "events.ml" 29 1219 1219 "events.ml" 1 0 -1
+)
+"events.ml" 18 979 991 "events.ml" 18 979 993
+type(
+  Instruct.debug_event
+)
+ident(
+  def ev "events.ml" 19 996 998 "events.ml" 22 1117 1154
+)
+"events.ml" 19 996 1004 "events.ml" 19 996 1006
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "events.ml" 18 979 991 "events.ml" 18 979 993
+)
+"events.ml" 19 996 1004 "events.ml" 19 996 1014
+type(
+  Instruct.debug_event_kind
+)
+"events.ml" 20 1020 1024 "events.ml" 20 1020 1036
+type(
+  Instruct.debug_event_kind
+)
+"events.ml" 20 1020 1040 "events.ml" 20 1020 1042
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "events.ml" 18 979 991 "events.ml" 18 979 993
+)
+"events.ml" 20 1020 1040 "events.ml" 20 1020 1049
+type(
+  Location.t
+)
+"events.ml" 20 1020 1040 "events.ml" 20 1020 1068
+type(
+  Lexing.position
+)
+"events.ml" 21 1069 1085 "events.ml" 21 1069 1086
+type(
+  Types.type_expr
+)
+"events.ml" 21 1069 1073 "events.ml" 21 1069 1086
+type(
+  Instruct.debug_event_kind
+)
+"events.ml" 21 1069 1090 "events.ml" 21 1069 1092
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "events.ml" 18 979 991 "events.ml" 18 979 993
+)
+"events.ml" 21 1069 1090 "events.ml" 21 1069 1099
+type(
+  Location.t
+)
+"events.ml" 21 1069 1090 "events.ml" 21 1069 1116
+type(
+  Lexing.position
+)
+"events.ml" 22 1117 1121 "events.ml" 22 1117 1122
+type(
+  Instruct.debug_event_kind
+)
+"events.ml" 22 1117 1126 "events.ml" 22 1117 1128
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "events.ml" 18 979 991 "events.ml" 18 979 993
+)
+"events.ml" 22 1117 1126 "events.ml" 22 1117 1135
+type(
+  Location.t
+)
+"events.ml" 22 1117 1126 "events.ml" 22 1117 1154
+type(
+  Lexing.position
+)
+"events.ml" 19 996 998 "events.ml" 22 1117 1154
+type(
+  Lexing.position
+)
+"events.ml" 29 1219 1223 "events.ml" 29 1219 1236
+type(
+  Instruct.debug_event option ref
+)
+ident(
+  def current_event "events.ml" 34 1382 1382 "events.ml" 1 0 -1
+)
+"events.ml" 30 1239 1241 "events.ml" 30 1239 1244
+type(
+  Instruct.debug_event option -> Instruct.debug_event option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"events.ml" 30 1239 1246 "events.ml" 30 1239 1250
+type(
+  Instruct.debug_event option
+)
+type(
+  Instruct.debug_event option
+)
+"events.ml" 30 1239 1241 "events.ml" 30 1239 1272
+type(
+  Instruct.debug_event option ref
+)
+"events.ml" 34 1382 1386 "events.ml" 34 1382 1403
+type(
+  unit -> Instruct.debug_event
+)
+ident(
+  def get_current_event "events.ml" 39 1484 1484 "events.ml" 1 0 -1
+)
+"events.ml" 34 1382 1404 "events.ml" 34 1382 1406
+type(
+  unit
+)
+"events.ml" 35 1409 1417 "events.ml" 35 1409 1418
+type(
+  Instruct.debug_event option ref -> Instruct.debug_event option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"events.ml" 35 1409 1418 "events.ml" 35 1409 1431
+type(
+  Instruct.debug_event option ref
+)
+ident(
+  int_ref current_event "events.ml" 29 1219 1223 "events.ml" 29 1219 1236
+)
+"events.ml" 35 1409 1417 "events.ml" 35 1409 1431
+type(
+  Instruct.debug_event option
+)
+"events.ml" 36 1437 1441 "events.ml" 36 1437 1445
+type(
+  Instruct.debug_event option
+)
+"events.ml" 36 1437 1449 "events.ml" 36 1437 1454
+type(
+  exn -> Instruct.debug_event
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"events.ml" 36 1437 1455 "events.ml" 36 1437 1464
+type(
+  exn
+)
+"events.ml" 36 1437 1449 "events.ml" 36 1437 1464
+type(
+  Instruct.debug_event
+)
+"events.ml" 37 1465 1474 "events.ml" 37 1465 1476
+type(
+  Instruct.debug_event
+)
+ident(
+  def ev "events.ml" 37 1465 1480 "events.ml" 37 1465 1482
+)
+"events.ml" 37 1465 1469 "events.ml" 37 1465 1476
+type(
+  Instruct.debug_event option
+)
+"events.ml" 37 1465 1480 "events.ml" 37 1465 1482
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "events.ml" 37 1465 1474 "events.ml" 37 1465 1476
+)
+"events.ml" 35 1409 1411 "events.ml" 37 1465 1482
+type(
+  Instruct.debug_event
+)
+"events.ml" 39 1484 1488 "events.ml" 39 1484 1511
+type(
+  unit -> bool
+)
+ident(
+  def current_event_is_before "events.ml" 46 1636 1647 "events.ml" 1 0 -1
+)
+"events.ml" 39 1484 1512 "events.ml" 39 1484 1514
+type(
+  unit
+)
+"events.ml" 40 1517 1525 "events.ml" 40 1517 1526
+type(
+  Instruct.debug_event option ref -> Instruct.debug_event option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"events.ml" 40 1517 1526 "events.ml" 40 1517 1539
+type(
+  Instruct.debug_event option ref
+)
+ident(
+  int_ref current_event "events.ml" 29 1219 1223 "events.ml" 29 1219 1236
+)
+"events.ml" 40 1517 1525 "events.ml" 40 1517 1539
+type(
+  Instruct.debug_event option
+)
+"events.ml" 41 1545 1549 "events.ml" 41 1545 1553
+type(
+  Instruct.debug_event option
+)
+"events.ml" 42 1557 1563 "events.ml" 42 1557 1568
+type(
+  exn -> bool
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"events.ml" 42 1557 1569 "events.ml" 42 1557 1578
+type(
+  exn
+)
+"events.ml" 42 1557 1563 "events.ml" 42 1557 1578
+type(
+  bool
+)
+"events.ml" 43 1579 1599 "events.ml" 43 1579 1611
+type(
+  Instruct.debug_event_kind
+)
+"events.ml" 43 1579 1588 "events.ml" 43 1579 1612
+type(
+  Instruct.debug_event
+)
+"events.ml" 43 1579 1583 "events.ml" 43 1579 1612
+type(
+  Instruct.debug_event option
+)
+"events.ml" 44 1616 1622 "events.ml" 44 1616 1626
+type(
+  bool
+)
+"events.ml" 45 1627 1631 "events.ml" 45 1627 1632
+type(
+  Instruct.debug_event option
+)
+"events.ml" 46 1636 1642 "events.ml" 46 1636 1647
+type(
+  bool
+)
+"events.ml" 40 1517 1519 "events.ml" 46 1636 1647
+type(
+  bool
+)

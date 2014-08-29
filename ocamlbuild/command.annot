@@ -1,0 +1,7757 @@
+"command.ml" 23 937 941 "command.ml" 23 937 945
+type(
+  int ref
+)
+ident(
+  def jobs "command.ml" 25 955 955 "command.ml" 1 0 -1
+)
+"command.ml" 23 937 948 "command.ml" 23 937 951
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"command.ml" 23 937 952 "command.ml" 23 937 953
+type(
+  int
+)
+"command.ml" 23 937 948 "command.ml" 23 937 953
+type(
+  int ref
+)
+"command.ml" 84 2127 2131 "command.ml" 84 2127 2145
+type(
+  'a -> 'b
+)
+ident(
+  def no_tag_handler "command.ml" 86 2177 2177 "command.ml" 1 0 -1
+)
+"command.ml" 84 2127 2146 "command.ml" 84 2127 2147
+type(
+  'a
+)
+"command.ml" 84 2127 2150 "command.ml" 84 2127 2158
+type(
+  string -> 'b
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"command.ml" 84 2127 2159 "command.ml" 84 2127 2175
+type(
+  string
+)
+"command.ml" 84 2127 2150 "command.ml" 84 2127 2175
+call(
+  tail
+)
+type(
+  'b
+)
+"command.ml" 86 2177 2181 "command.ml" 86 2177 2192
+type(
+  (Tags.t -> spec) ref
+)
+ident(
+  def tag_handler "command.ml" 89 2231 2231 "command.ml" 1 0 -1
+)
+"command.ml" 86 2177 2195 "command.ml" 86 2177 2198
+type(
+  (Tags.t -> spec) -> (Tags.t -> spec) ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"command.ml" 86 2177 2199 "command.ml" 86 2177 2213
+type(
+  Tags.t -> spec
+)
+ident(
+  int_ref no_tag_handler "command.ml" 84 2127 2131 "command.ml" 84 2127 2145
+)
+"command.ml" 86 2177 2195 "command.ml" 86 2177 2213
+type(
+  (Tags.t -> spec) ref
+)
+"command.ml" 89 2231 2235 "command.ml" 89 2231 2242
+type(
+  string list -> spec
+)
+ident(
+  def atomize "command.ml" 90 2276 2276 "command.ml" 1 0 -1
+)
+"command.ml" 89 2231 2243 "command.ml" 89 2231 2244
+type(
+  string list
+)
+ident(
+  def l "command.ml" 89 2231 2247 "command.ml" 89 2231 2275
+)
+"command.ml" 89 2231 2249 "command.ml" 89 2231 2257
+type(
+  (string -> spec) -> string list -> spec list
+)
+ident(
+  ext_ref My_std.List.map
+)
+"command.ml" 89 2231 2263 "command.ml" 89 2231 2264
+type(
+  string
+)
+ident(
+  def x "command.ml" 89 2231 2268 "command.ml" 89 2231 2271
+)
+"command.ml" 89 2231 2270 "command.ml" 89 2231 2271
+type(
+  string
+)
+ident(
+  int_ref x "command.ml" 89 2231 2263 "command.ml" 89 2231 2264
+)
+"command.ml" 89 2231 2268 "command.ml" 89 2231 2271
+type(
+  spec
+)
+"command.ml" 89 2231 2258 "command.ml" 89 2231 2272
+type(
+  string -> spec
+)
+"command.ml" 89 2231 2273 "command.ml" 89 2231 2274
+type(
+  string list
+)
+ident(
+  int_ref l "command.ml" 89 2231 2243 "command.ml" 89 2231 2244
+)
+"command.ml" 89 2231 2248 "command.ml" 89 2231 2275
+call(
+  stack
+)
+type(
+  spec list
+)
+"command.ml" 89 2231 2247 "command.ml" 89 2231 2275
+type(
+  spec
+)
+"command.ml" 90 2276 2280 "command.ml" 90 2276 2293
+type(
+  pathname list -> spec
+)
+ident(
+  def atomize_paths "command.ml" 93 2336 2336 "command.ml" 1 0 -1
+)
+"command.ml" 90 2276 2294 "command.ml" 90 2276 2295
+type(
+  pathname list
+)
+ident(
+  def l "command.ml" 90 2276 2298 "command.ml" 90 2276 2326
+)
+"command.ml" 90 2276 2300 "command.ml" 90 2276 2308
+type(
+  (pathname -> spec) -> pathname list -> spec list
+)
+ident(
+  ext_ref My_std.List.map
+)
+"command.ml" 90 2276 2314 "command.ml" 90 2276 2315
+type(
+  pathname
+)
+ident(
+  def x "command.ml" 90 2276 2319 "command.ml" 90 2276 2322
+)
+"command.ml" 90 2276 2321 "command.ml" 90 2276 2322
+type(
+  pathname
+)
+ident(
+  int_ref x "command.ml" 90 2276 2314 "command.ml" 90 2276 2315
+)
+"command.ml" 90 2276 2319 "command.ml" 90 2276 2322
+type(
+  spec
+)
+"command.ml" 90 2276 2309 "command.ml" 90 2276 2323
+type(
+  pathname -> spec
+)
+"command.ml" 90 2276 2324 "command.ml" 90 2276 2325
+type(
+  pathname list
+)
+ident(
+  int_ref l "command.ml" 90 2276 2294 "command.ml" 90 2276 2295
+)
+"command.ml" 90 2276 2299 "command.ml" 90 2276 2326
+call(
+  stack
+)
+type(
+  spec list
+)
+"command.ml" 90 2276 2298 "command.ml" 90 2276 2326
+type(
+  spec
+)
+"command.ml" 93 2336 2340 "command.ml" 93 2336 2348
+type(
+  string list lazy_t
+)
+ident(
+  def env_path "command.ml" 112 2836 2836 "command.ml" 1 0 -1
+)
+"command.ml" 94 2362 2368 "command.ml" 94 2362 2376
+type(
+  string
+)
+ident(
+  def path_var "command.ml" 95 2400 2402 "command.ml" 109 2792 2830
+)
+"command.ml" 94 2362 2379 "command.ml" 94 2362 2389
+type(
+  string -> string
+)
+ident(
+  ext_ref Sys.getenv
+)
+"command.ml" 94 2362 2390 "command.ml" 94 2362 2396
+type(
+  string
+)
+"command.ml" 94 2362 2379 "command.ml" 94 2362 2396
+type(
+  string
+)
+"command.ml" 95 2400 2406 "command.ml" 95 2400 2416
+type(
+  Lexing.lexbuf -> string list
+)
+ident(
+  def parse_path "command.ml" 101 2541 2543 "command.ml" 109 2792 2830
+)
+"command.ml" 96 2419 2426 "command.ml" 96 2419 2437
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"command.ml" 96 2419 2438 "command.ml" 96 2419 2439
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"command.ml" 96 2419 2440 "command.ml" 96 2419 2447
+type(
+  string
+)
+"command.ml" 96 2419 2426 "command.ml" 96 2419 2447
+type(
+  bool
+)
+"command.ml" 97 2453 2459 "command.ml" 97 2453 2490
+type(
+  Lexing.lexbuf -> string list
+)
+ident(
+  ext_ref Lexers.parse_environment_path_w
+)
+"command.ml" 99 2500 2506 "command.ml" 99 2500 2535
+type(
+  Lexing.lexbuf -> string list
+)
+ident(
+  ext_ref Lexers.parse_environment_path
+)
+"command.ml" 96 2419 2423 "command.ml" 99 2500 2535
+type(
+  Lexing.lexbuf -> string list
+)
+"command.ml" 101 2541 2547 "command.ml" 101 2541 2552
+type(
+  string list
+)
+ident(
+  def paths "command.ml" 106 2694 2696 "command.ml" 109 2792 2830
+)
+"command.ml" 103 2563 2569 "command.ml" 103 2563 2579
+type(
+  Lexing.lexbuf -> string list
+)
+ident(
+  int_ref parse_path "command.ml" 95 2400 2406 "command.ml" 95 2400 2416
+)
+"command.ml" 103 2563 2581 "command.ml" 103 2563 2599
+type(
+  string -> Lexing.lexbuf
+)
+ident(
+  ext_ref Lexing.from_string
+)
+"command.ml" 103 2563 2600 "command.ml" 103 2563 2608
+type(
+  string
+)
+ident(
+  int_ref path_var "command.ml" 94 2362 2368 "command.ml" 94 2362 2376
+)
+"command.ml" 103 2563 2580 "command.ml" 103 2563 2609
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"command.ml" 103 2563 2569 "command.ml" 103 2563 2609
+call(
+  stack
+)
+type(
+  string list
+)
+"command.ml" 104 2610 2633 "command.ml" 104 2610 2636
+type(
+  string
+)
+ident(
+  def msg "command.ml" 104 2610 2645 "command.ml" 104 2610 2688
+)
+"command.ml" 104 2610 2637 "command.ml" 104 2610 2640
+type(
+  Loc.location
+)
+ident(
+  def pos "command.ml" 104 2610 2645 "command.ml" 104 2610 2688
+)
+"command.ml" 104 2610 2632 "command.ml" 104 2610 2641
+type(
+  string * Loc.location
+)
+"command.ml" 104 2610 2619 "command.ml" 104 2610 2641
+type(
+  exn
+)
+"command.ml" 104 2610 2645 "command.ml" 104 2610 2650
+type(
+  exn -> string list
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"command.ml" 104 2610 2666 "command.ml" 104 2610 2675
+type(
+  string
+)
+"command.ml" 104 2610 2676 "command.ml" 104 2610 2677
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"command.ml" 104 2610 2678 "command.ml" 104 2610 2681
+type(
+  string
+)
+ident(
+  int_ref msg "command.ml" 104 2610 2633 "command.ml" 104 2610 2636
+)
+"command.ml" 104 2610 2666 "command.ml" 104 2610 2681
+call(
+  stack
+)
+type(
+  string
+)
+"command.ml" 104 2610 2683 "command.ml" 104 2610 2686
+type(
+  Loc.location
+)
+ident(
+  int_ref pos "command.ml" 104 2610 2637 "command.ml" 104 2610 2640
+)
+"command.ml" 104 2610 2665 "command.ml" 104 2610 2687
+type(
+  string * Loc.location
+)
+"command.ml" 104 2610 2651 "command.ml" 104 2610 2688
+type(
+  exn
+)
+"command.ml" 104 2610 2645 "command.ml" 104 2610 2688
+type(
+  string list
+)
+"command.ml" 102 2555 2559 "command.ml" 104 2610 2688
+type(
+  string list
+)
+"command.ml" 106 2694 2700 "command.ml" 106 2694 2721
+type(
+  string -> string
+)
+ident(
+  def norm_current_dir_name "command.ml" 109 2792 2794 "command.ml" 109 2792 2830
+)
+"command.ml" 106 2694 2722 "command.ml" 106 2694 2726
+type(
+  string
+)
+ident(
+  def path "command.ml" 107 2729 2733 "command.ml" 107 2729 2786
+)
+"command.ml" 107 2729 2736 "command.ml" 107 2729 2740
+type(
+  string
+)
+ident(
+  int_ref path "command.ml" 106 2694 2722 "command.ml" 106 2694 2726
+)
+"command.ml" 107 2729 2741 "command.ml" 107 2729 2742
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"command.ml" 107 2729 2743 "command.ml" 107 2729 2745
+type(
+  string
+)
+"command.ml" 107 2729 2736 "command.ml" 107 2729 2745
+type(
+  bool
+)
+"command.ml" 107 2729 2751 "command.ml" 107 2729 2776
+type(
+  string
+)
+ident(
+  ext_ref Filename.current_dir_name
+)
+"command.ml" 107 2729 2782 "command.ml" 107 2729 2786
+type(
+  string
+)
+ident(
+  int_ref path "command.ml" 106 2694 2722 "command.ml" 106 2694 2726
+)
+"command.ml" 107 2729 2733 "command.ml" 107 2729 2786
+type(
+  string
+)
+"command.ml" 109 2792 2794 "command.ml" 109 2792 2802
+type(
+  (string -> string) -> string list -> string list
+)
+ident(
+  ext_ref My_std.List.map
+)
+"command.ml" 109 2792 2803 "command.ml" 109 2792 2824
+type(
+  string -> string
+)
+ident(
+  int_ref norm_current_dir_name "command.ml" 106 2694 2700 "command.ml" 106 2694 2721
+)
+"command.ml" 109 2792 2825 "command.ml" 109 2792 2830
+type(
+  string list
+)
+ident(
+  int_ref paths "command.ml" 101 2541 2547 "command.ml" 101 2541 2552
+)
+"command.ml" 109 2792 2794 "command.ml" 109 2792 2830
+call(
+  tail
+)
+type(
+  string list
+)
+"command.ml" 106 2694 2696 "command.ml" 109 2792 2830
+type(
+  string list
+)
+"command.ml" 101 2541 2543 "command.ml" 109 2792 2830
+type(
+  string list
+)
+"command.ml" 95 2400 2402 "command.ml" 109 2792 2830
+type(
+  string list
+)
+"command.ml" 93 2336 2356 "command.ml" 110 2831 2834
+type(
+  string list
+)
+"command.ml" 93 2336 2351 "command.ml" 110 2831 2834
+type(
+  string list lazy_t
+)
+"command.ml" 112 2836 2840 "command.ml" 112 2836 2855
+type(
+  (string, unit -> spec) Hashtbl.t
+)
+ident(
+  def virtual_solvers "command.ml" 113 2876 2876 "command.ml" 1 0 -1
+)
+"command.ml" 112 2836 2858 "command.ml" 112 2836 2872
+type(
+  ?random:bool -> int -> (string, unit -> spec) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"command.ml" 112 2836 2873 "command.ml" 112 2836 2875
+type(
+  int
+)
+"command.ml" 112 2836 2858 "command.ml" 112 2836 2875
+call(
+  stack
+)
+type(
+  (string, unit -> spec) Hashtbl.t
+)
+"command.ml" 113 2876 2880 "command.ml" 113 2876 2908
+type(
+  string -> (unit -> spec) -> unit
+)
+ident(
+  def setup_virtual_command_solver "command.ml" 115 2991 2991 "command.ml" 1 0 -1
+)
+"command.ml" 113 2876 2909 "command.ml" 113 2876 2924
+type(
+  string
+)
+ident(
+  def virtual_command "command.ml" 113 2876 2925 "command.ml" 114 2934 2990
+)
+"command.ml" 113 2876 2925 "command.ml" 113 2876 2931
+type(
+  unit -> spec
+)
+ident(
+  def solver "command.ml" 114 2934 2936 "command.ml" 114 2934 2990
+)
+"command.ml" 114 2934 2936 "command.ml" 114 2934 2951
+type(
+  (string, unit -> spec) Hashtbl.t -> string -> (unit -> spec) -> unit
+)
+ident(
+  ext_ref Hashtbl.replace
+)
+"command.ml" 114 2934 2952 "command.ml" 114 2934 2967
+type(
+  (string, unit -> spec) Hashtbl.t
+)
+ident(
+  int_ref virtual_solvers "command.ml" 112 2836 2840 "command.ml" 112 2836 2855
+)
+"command.ml" 114 2934 2968 "command.ml" 114 2934 2983
+type(
+  string
+)
+ident(
+  int_ref virtual_command "command.ml" 113 2876 2909 "command.ml" 113 2876 2924
+)
+"command.ml" 114 2934 2984 "command.ml" 114 2934 2990
+type(
+  unit -> spec
+)
+ident(
+  int_ref solver "command.ml" 113 2876 2925 "command.ml" 113 2876 2931
+)
+"command.ml" 114 2934 2936 "command.ml" 114 2934 2990
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 115 2991 2995 "command.ml" 115 2991 3009
+type(
+  string -> spec
+)
+ident(
+  def virtual_solver "command.ml" 130 3574 3574 "command.ml" 1 0 -1
+)
+"command.ml" 115 2991 3010 "command.ml" 115 2991 3025
+type(
+  string
+)
+ident(
+  def virtual_command "command.ml" 116 3028 3030 "command.ml" 127 3414 3496
+)
+"command.ml" 116 3028 3034 "command.ml" 116 3028 3040
+type(
+  unit -> spec
+)
+ident(
+  def solver "command.ml" 124 3308 3310 "command.ml" 127 3414 3496
+)
+"command.ml" 118 3051 3057 "command.ml" 118 3051 3069
+type(
+  (string, unit -> spec) Hashtbl.t -> string -> unit -> spec
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"command.ml" 118 3051 3070 "command.ml" 118 3051 3085
+type(
+  (string, unit -> spec) Hashtbl.t
+)
+ident(
+  int_ref virtual_solvers "command.ml" 112 2836 2840 "command.ml" 112 2836 2855
+)
+"command.ml" 118 3051 3086 "command.ml" 118 3051 3101
+type(
+  string
+)
+ident(
+  int_ref virtual_command "command.ml" 115 2991 3010 "command.ml" 115 2991 3025
+)
+"command.ml" 118 3051 3057 "command.ml" 118 3051 3101
+call(
+  stack
+)
+type(
+  unit -> spec
+)
+"command.ml" 119 3102 3111 "command.ml" 119 3102 3120
+type(
+  exn
+)
+"command.ml" 120 3124 3130 "command.ml" 120 3124 3138
+type(
+  string -> unit -> spec
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"command.ml" 120 3124 3140 "command.ml" 120 3124 3148
+type(
+  (string -> string, Format.formatter, unit, string) format4 ->
+  string -> string
+)
+ident(
+  ext_ref My_std.sbprintf
+)
+"command.ml" 120 3124 3149 "command.ml" 121 3189 3269
+type(
+  (string -> string, Format.formatter, unit, string) format4
+)
+"command.ml" 122 3270 3286 "command.ml" 122 3270 3301
+type(
+  string
+)
+ident(
+  int_ref virtual_command "command.ml" 115 2991 3010 "command.ml" 115 2991 3025
+)
+"command.ml" 120 3124 3139 "command.ml" 122 3270 3302
+call(
+  stack
+)
+type(
+  string
+)
+"command.ml" 120 3124 3130 "command.ml" 122 3270 3302
+call(
+  stack
+)
+type(
+  unit -> spec
+)
+"command.ml" 117 3043 3047 "command.ml" 122 3270 3302
+type(
+  unit -> spec
+)
+"command.ml" 124 3308 3314 "command.ml" 124 3308 3320
+type(
+  unit -> spec
+)
+ident(
+  int_ref solver "command.ml" 116 3028 3034 "command.ml" 116 3028 3040
+)
+"command.ml" 124 3308 3321 "command.ml" 124 3308 3323
+type(
+  unit
+)
+"command.ml" 124 3308 3314 "command.ml" 124 3308 3323
+call(
+  stack
+)
+type(
+  spec
+)
+"command.ml" 125 3324 3331 "command.ml" 125 3324 3340
+type(
+  exn
+)
+"command.ml" 126 3344 3348 "command.ml" 126 3344 3356
+type(
+  string -> spec
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"command.ml" 126 3344 3358 "command.ml" 126 3344 3372
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"command.ml" 126 3344 3373 "command.ml" 127 3414 3479
+type(
+  (string -> string, unit, string) format
+)
+"command.ml" 127 3414 3480 "command.ml" 127 3414 3495
+type(
+  string
+)
+ident(
+  int_ref virtual_command "command.ml" 115 2991 3010 "command.ml" 115 2991 3025
+)
+"command.ml" 126 3344 3357 "command.ml" 127 3414 3496
+call(
+  stack
+)
+type(
+  string
+)
+"command.ml" 126 3344 3348 "command.ml" 127 3414 3496
+call(
+  tail
+)
+type(
+  spec
+)
+"command.ml" 124 3308 3310 "command.ml" 127 3414 3496
+type(
+  spec
+)
+"command.ml" 116 3028 3030 "command.ml" 127 3414 3496
+type(
+  spec
+)
+"command.ml" 130 3574 3578 "command.ml" 130 3574 3596
+type(
+  string -> bool
+)
+ident(
+  def file_or_exe_exists "command.ml" 133 3690 3690 "command.ml" 1 0 -1
+)
+"command.ml" 130 3574 3597 "command.ml" 130 3574 3601
+type(
+  string
+)
+ident(
+  def file "command.ml" 131 3604 3606 "command.ml" 131 3604 3688
+)
+"command.ml" 131 3604 3606 "command.ml" 131 3604 3621
+type(
+  string -> bool
+)
+ident(
+  ext_ref My_std.sys_file_exists
+)
+"command.ml" 131 3604 3622 "command.ml" 131 3604 3626
+type(
+  string
+)
+ident(
+  int_ref file "command.ml" 130 3574 3597 "command.ml" 130 3574 3601
+)
+"command.ml" 131 3604 3606 "command.ml" 131 3604 3626
+call(
+  stack
+)
+type(
+  bool
+)
+"command.ml" 131 3604 3627 "command.ml" 131 3604 3629
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"command.ml" 131 3604 3631 "command.ml" 131 3604 3642
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"command.ml" 131 3604 3643 "command.ml" 131 3604 3644
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"command.ml" 131 3604 3645 "command.ml" 131 3604 3652
+type(
+  string
+)
+"command.ml" 131 3604 3631 "command.ml" 131 3604 3652
+type(
+  bool
+)
+"command.ml" 131 3604 3653 "command.ml" 131 3604 3655
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"command.ml" 131 3604 3656 "command.ml" 131 3604 3671
+type(
+  string -> bool
+)
+ident(
+  ext_ref My_std.sys_file_exists
+)
+"command.ml" 131 3604 3673 "command.ml" 131 3604 3677
+type(
+  string
+)
+ident(
+  int_ref file "command.ml" 130 3574 3597 "command.ml" 130 3574 3601
+)
+"command.ml" 131 3604 3678 "command.ml" 131 3604 3679
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"command.ml" 131 3604 3680 "command.ml" 131 3604 3686
+type(
+  string
+)
+"command.ml" 131 3604 3672 "command.ml" 131 3604 3687
+call(
+  stack
+)
+type(
+  string
+)
+"command.ml" 131 3604 3656 "command.ml" 131 3604 3687
+call(
+  tail
+)
+type(
+  bool
+)
+"command.ml" 131 3604 3630 "command.ml" 131 3604 3688
+type(
+  bool
+)
+"command.ml" 131 3604 3606 "command.ml" 131 3604 3688
+type(
+  bool
+)
+"command.ml" 133 3690 3694 "command.ml" 133 3690 3708
+type(
+  string -> string
+)
+ident(
+  def search_in_path "command.ml" 149 4289 4289 "command.ml" 1 0 -1
+)
+"command.ml" 133 3690 3709 "command.ml" 133 3690 3712
+type(
+  string
+)
+ident(
+  def cmd "command.ml" 135 3757 3759 "command.ml" 146 4236 4243
+)
+"command.ml" 135 3757 3763 "command.ml" 135 3757 3771
+type(
+  string -> bool
+)
+ident(
+  def try_path "command.ml" 140 3966 3968 "command.ml" 146 4236 4243
+)
+"command.ml" 135 3757 3772 "command.ml" 135 3757 3776
+type(
+  string
+)
+ident(
+  def path "command.ml" 137 3838 3842 "command.ml" 138 3906 3960
+)
+"command.ml" 137 3838 3845 "command.ml" 137 3838 3849
+type(
+  string
+)
+ident(
+  int_ref path "command.ml" 135 3757 3772 "command.ml" 135 3757 3776
+)
+"command.ml" 137 3838 3850 "command.ml" 137 3838 3851
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"command.ml" 137 3838 3852 "command.ml" 137 3838 3877
+type(
+  string
+)
+ident(
+  ext_ref Filename.current_dir_name
+)
+"command.ml" 137 3838 3845 "command.ml" 137 3838 3877
+type(
+  bool
+)
+"command.ml" 137 3838 3883 "command.ml" 137 3838 3901
+type(
+  string -> bool
+)
+ident(
+  int_ref file_or_exe_exists "command.ml" 130 3574 3578 "command.ml" 130 3574 3596
+)
+"command.ml" 137 3838 3902 "command.ml" 137 3838 3905
+type(
+  string
+)
+ident(
+  int_ref cmd "command.ml" 133 3690 3709 "command.ml" 133 3690 3712
+)
+"command.ml" 137 3838 3883 "command.ml" 137 3838 3905
+call(
+  tail
+)
+type(
+  bool
+)
+"command.ml" 138 3906 3915 "command.ml" 138 3906 3933
+type(
+  string -> bool
+)
+ident(
+  int_ref file_or_exe_exists "command.ml" 130 3574 3578 "command.ml" 130 3574 3596
+)
+"command.ml" 138 3906 3935 "command.ml" 138 3906 3950
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref My_std.filename_concat
+)
+"command.ml" 138 3906 3951 "command.ml" 138 3906 3955
+type(
+  string
+)
+ident(
+  int_ref path "command.ml" 135 3757 3772 "command.ml" 135 3757 3776
+)
+"command.ml" 138 3906 3956 "command.ml" 138 3906 3959
+type(
+  string
+)
+ident(
+  int_ref cmd "command.ml" 133 3690 3709 "command.ml" 133 3690 3712
+)
+"command.ml" 138 3906 3934 "command.ml" 138 3906 3960
+call(
+  stack
+)
+type(
+  string
+)
+"command.ml" 138 3906 3915 "command.ml" 138 3906 3960
+call(
+  tail
+)
+type(
+  bool
+)
+"command.ml" 137 3838 3842 "command.ml" 138 3906 3960
+type(
+  bool
+)
+"command.ml" 140 3966 3971 "command.ml" 140 3966 3991
+type(
+  string -> bool
+)
+ident(
+  ext_ref Filename.is_implicit
+)
+"command.ml" 140 3966 3992 "command.ml" 140 3966 3995
+type(
+  string
+)
+ident(
+  int_ref cmd "command.ml" 133 3690 3709 "command.ml" 133 3690 3712
+)
+"command.ml" 140 3966 3971 "command.ml" 140 3966 3995
+call(
+  stack
+)
+type(
+  bool
+)
+"command.ml" 141 4001 4009 "command.ml" 141 4001 4013
+type(
+  string
+)
+ident(
+  def path "command.ml" 144 4200 4204 "command.ml" 144 4200 4228
+)
+"command.ml" 141 4001 4016 "command.ml" 141 4001 4025
+type(
+  (string -> bool) -> string list -> string
+)
+ident(
+  ext_ref My_std.List.find
+)
+"command.ml" 141 4001 4026 "command.ml" 141 4001 4034
+type(
+  string -> bool
+)
+ident(
+  int_ref try_path "command.ml" 135 3757 3763 "command.ml" 135 3757 3771
+)
+"command.ml" 141 4001 4035 "command.ml" 141 4001 4037
+type(
+  string list Lazy.t -> string list
+)
+ident(
+  ext_ref My_std.( !* )
+)
+"command.ml" 141 4001 4037 "command.ml" 141 4001 4045
+type(
+  string list Lazy.t
+)
+ident(
+  int_ref env_path "command.ml" 93 2336 2340 "command.ml" 93 2336 2348
+)
+"command.ml" 141 4001 4035 "command.ml" 141 4001 4045
+call(
+  stack
+)
+type(
+  string list
+)
+"command.ml" 141 4001 4016 "command.ml" 141 4001 4045
+call(
+  stack
+)
+type(
+  string
+)
+"command.ml" 144 4200 4204 "command.ml" 144 4200 4219
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref My_std.filename_concat
+)
+"command.ml" 144 4200 4220 "command.ml" 144 4200 4224
+type(
+  string
+)
+ident(
+  int_ref path "command.ml" 141 4001 4009 "command.ml" 141 4001 4013
+)
+"command.ml" 144 4200 4225 "command.ml" 144 4200 4228
+type(
+  string
+)
+ident(
+  int_ref cmd "command.ml" 133 3690 3709 "command.ml" 133 3690 3712
+)
+"command.ml" 144 4200 4204 "command.ml" 144 4200 4228
+call(
+  tail
+)
+type(
+  string
+)
+"command.ml" 141 4001 4005 "command.ml" 144 4200 4228
+type(
+  string
+)
+"command.ml" 146 4236 4240 "command.ml" 146 4236 4243
+type(
+  string
+)
+ident(
+  int_ref cmd "command.ml" 133 3690 3709 "command.ml" 133 3690 3712
+)
+"command.ml" 140 3966 3968 "command.ml" 146 4236 4243
+type(
+  string
+)
+"command.ml" 135 3757 3759 "command.ml" 146 4236 4243
+type(
+  string
+)
+"command.ml" 149 4289 4297 "command.ml" 149 4289 4330
+type(
+  (Tags.t -> 'a) -> (pathname -> unit) -> bool -> spec -> string
+)
+ident(
+  def string_of_command_spec_with_calls "command.ml" 149 4289 4289 "command.ml" 1 0 -1
+)
+"command.ml" 149 4289 4331 "command.ml" 149 4289 4345
+type(
+  Tags.t -> 'a
+)
+ident(
+  def call_with_tags "command.ml" 149 4289 4346 "command.ml" 179 5521 5540
+)
+"command.ml" 149 4289 4346 "command.ml" 149 4289 4362
+type(
+  pathname -> unit
+)
+ident(
+  def call_with_target "command.ml" 149 4289 4363 "command.ml" 179 5521 5540
+)
+"command.ml" 149 4289 4363 "command.ml" 149 4289 4379
+type(
+  bool
+)
+ident(
+  def resolve_virtuals "command.ml" 149 4289 4380 "command.ml" 179 5521 5540
+)
+"command.ml" 149 4289 4380 "command.ml" 149 4289 4384
+type(
+  spec
+)
+ident(
+  def spec "command.ml" 150 4387 4389 "command.ml" 179 5521 5540
+)
+"command.ml" 150 4387 4393 "command.ml" 150 4387 4397
+type(
+  spec -> string
+)
+ident(
+  def self "command.ml" 151 4486 4488 "command.ml" 179 5521 5540
+)
+"command.ml" 150 4387 4400 "command.ml" 150 4387 4433
+type(
+  (Tags.t -> 'a) -> (pathname -> unit) -> bool -> spec -> string
+)
+ident(
+  int_ref string_of_command_spec_with_calls "command.ml" 149 4289 4297 "command.ml" 149 4289 4330
+)
+"command.ml" 150 4387 4434 "command.ml" 150 4387 4448
+type(
+  Tags.t -> 'a
+)
+ident(
+  int_ref call_with_tags "command.ml" 149 4289 4331 "command.ml" 149 4289 4345
+)
+"command.ml" 150 4387 4449 "command.ml" 150 4387 4465
+type(
+  pathname -> unit
+)
+ident(
+  int_ref call_with_target "command.ml" 149 4289 4346 "command.ml" 149 4289 4362
+)
+"command.ml" 150 4387 4466 "command.ml" 150 4387 4482
+type(
+  bool
+)
+ident(
+  int_ref resolve_virtuals "command.ml" 149 4289 4363 "command.ml" 149 4289 4379
+)
+"command.ml" 150 4387 4400 "command.ml" 150 4387 4482
+call(
+  stack
+)
+type(
+  spec -> string
+)
+"command.ml" 151 4486 4492 "command.ml" 151 4486 4493
+type(
+  Buffer.t
+)
+ident(
+  def b "command.ml" 154 4665 4667 "command.ml" 179 5521 5540
+)
+"command.ml" 151 4486 4496 "command.ml" 151 4486 4509
+type(
+  int -> Buffer.t
+)
+ident(
+  ext_ref Buffer.create
+)
+"command.ml" 151 4486 4510 "command.ml" 151 4486 4513
+type(
+  int
+)
+"command.ml" 151 4486 4496 "command.ml" 151 4486 4513
+call(
+  stack
+)
+type(
+  Buffer.t
+)
+"command.ml" 154 4665 4670 "command.ml" 154 4665 4681
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"command.ml" 154 4665 4682 "command.ml" 154 4665 4683
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"command.ml" 154 4665 4684 "command.ml" 154 4665 4691
+type(
+  string
+)
+"command.ml" 154 4665 4670 "command.ml" 154 4665 4691
+type(
+  bool
+)
+"command.ml" 155 4697 4701 "command.ml" 155 4697 4718
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"command.ml" 155 4697 4719 "command.ml" 155 4697 4720
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "command.ml" 151 4486 4492 "command.ml" 151 4486 4493
+)
+"command.ml" 155 4697 4721 "command.ml" 155 4697 4725
+type(
+  string
+)
+"command.ml" 155 4697 4701 "command.ml" 155 4697 4725
+call(
+  stack
+)
+type(
+  unit
+)
+"command.ml" 154 4665 4667 "command.ml" 155 4697 4725
+type(
+  unit
+)
+"command.ml" 156 4727 4733 "command.ml" 156 4727 4738
+type(
+  bool ref
+)
+ident(
+  def first "command.ml" 157 4753 4755 "command.ml" 179 5521 5540
+)
+"command.ml" 156 4727 4741 "command.ml" 156 4727 4744
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"command.ml" 156 4727 4745 "command.ml" 156 4727 4749
+type(
+  bool
+)
+"command.ml" 156 4727 4741 "command.ml" 156 4727 4749
+type(
+  bool ref
+)
+"command.ml" 157 4753 4759 "command.ml" 157 4753 4768
+type(
+  unit -> unit
+)
+ident(
+  def put_space "command.ml" 163 4856 4858 "command.ml" 179 5521 5540
+)
+"command.ml" 157 4753 4769 "command.ml" 157 4753 4771
+type(
+  unit
+)
+"command.ml" 158 4774 4781 "command.ml" 158 4774 4782
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 158 4774 4782 "command.ml" 158 4774 4787
+type(
+  bool ref
+)
+ident(
+  int_ref first "command.ml" 156 4727 4733 "command.ml" 156 4727 4738
+)
+"command.ml" 158 4774 4781 "command.ml" 158 4774 4787
+type(
+  bool
+)
+"command.ml" 159 4793 4799 "command.ml" 159 4793 4804
+type(
+  bool ref
+)
+ident(
+  int_ref first "command.ml" 156 4727 4733 "command.ml" 156 4727 4738
+)
+"command.ml" 159 4793 4805 "command.ml" 159 4793 4807
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"command.ml" 159 4793 4808 "command.ml" 159 4793 4813
+type(
+  bool
+)
+"command.ml" 159 4793 4799 "command.ml" 159 4793 4813
+type(
+  unit
+)
+"command.ml" 161 4823 4829 "command.ml" 161 4823 4844
+type(
+  Buffer.t -> char -> unit
+)
+ident(
+  ext_ref Buffer.add_char
+)
+"command.ml" 161 4823 4845 "command.ml" 161 4823 4846
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "command.ml" 151 4486 4492 "command.ml" 151 4486 4493
+)
+"command.ml" 161 4823 4847 "command.ml" 161 4823 4850
+type(
+  char
+)
+"command.ml" 161 4823 4829 "command.ml" 161 4823 4850
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 158 4774 4778 "command.ml" 161 4823 4850
+type(
+  unit
+)
+"command.ml" 163 4856 4862 "command.ml" 163 4856 4874
+type(
+  string -> unit
+)
+ident(
+  def put_filename "command.ml" 166 4943 4945 "command.ml" 179 5521 5540
+)
+"command.ml" 163 4856 4875 "command.ml" 163 4856 4876
+type(
+  string
+)
+ident(
+  def p "command.ml" 164 4879 4883 "command.ml" 164 4879 4937
+)
+"command.ml" 164 4879 4883 "command.ml" 164 4879 4900
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"command.ml" 164 4879 4901 "command.ml" 164 4879 4902
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "command.ml" 151 4486 4492 "command.ml" 151 4486 4493
+)
+"command.ml" 164 4879 4904 "command.ml" 164 4879 4934
+type(
+  string -> string
+)
+ident(
+  ext_ref Shell.quote_filename_if_needed
+)
+"command.ml" 164 4879 4935 "command.ml" 164 4879 4936
+type(
+  string
+)
+ident(
+  int_ref p "command.ml" 163 4856 4875 "command.ml" 163 4856 4876
+)
+"command.ml" 164 4879 4903 "command.ml" 164 4879 4937
+call(
+  stack
+)
+type(
+  string
+)
+"command.ml" 164 4879 4883 "command.ml" 164 4879 4937
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 166 4943 4953 "command.ml" 166 4943 4960
+type(
+  spec -> unit
+)
+ident(
+  def do_spec "command.ml" 166 4943 4945 "command.ml" 179 5521 5540
+)
+"command.ml" 167 4972 4978 "command.ml" 167 4972 4979
+type(
+  spec
+)
+"command.ml" 167 4972 4983 "command.ml" 167 4972 4985
+type(
+  unit
+)
+"command.ml" 168 4986 4994 "command.ml" 168 4986 4995
+type(
+  string
+)
+ident(
+  def u "command.ml" 168 4986 4999 "command.ml" 168 4986 5027
+)
+"command.ml" 168 4986 4992 "command.ml" 168 4986 4995
+type(
+  spec
+)
+"command.ml" 168 4986 4999 "command.ml" 168 4986 5008
+type(
+  unit -> unit
+)
+ident(
+  int_ref put_space "command.ml" 157 4753 4759 "command.ml" 157 4753 4768
+)
+"command.ml" 168 4986 5009 "command.ml" 168 4986 5011
+type(
+  unit
+)
+"command.ml" 168 4986 4999 "command.ml" 168 4986 5011
+call(
+  stack
+)
+type(
+  unit
+)
+"command.ml" 168 4986 5013 "command.ml" 168 4986 5025
+type(
+  string -> unit
+)
+ident(
+  int_ref put_filename "command.ml" 163 4856 4862 "command.ml" 163 4856 4874
+)
+"command.ml" 168 4986 5026 "command.ml" 168 4986 5027
+type(
+  string
+)
+ident(
+  int_ref u "command.ml" 168 4986 4994 "command.ml" 168 4986 4995
+)
+"command.ml" 168 4986 5013 "command.ml" 168 4986 5027
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 168 4986 4999 "command.ml" 168 4986 5027
+type(
+  unit
+)
+"command.ml" 169 5028 5037 "command.ml" 169 5028 5038
+type(
+  string
+)
+ident(
+  def u "command.ml" 169 5028 5042 "command.ml" 169 5028 5077
+)
+"command.ml" 169 5028 5034 "command.ml" 169 5028 5038
+type(
+  spec
+)
+"command.ml" 169 5028 5042 "command.ml" 169 5028 5051
+type(
+  unit -> unit
+)
+ident(
+  int_ref put_space "command.ml" 157 4753 4759 "command.ml" 157 4753 4768
+)
+"command.ml" 169 5028 5052 "command.ml" 169 5028 5054
+type(
+  unit
+)
+"command.ml" 169 5028 5042 "command.ml" 169 5028 5054
+call(
+  stack
+)
+type(
+  unit
+)
+"command.ml" 169 5028 5056 "command.ml" 169 5028 5073
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"command.ml" 169 5028 5074 "command.ml" 169 5028 5075
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "command.ml" 151 4486 4492 "command.ml" 151 4486 4493
+)
+"command.ml" 169 5028 5076 "command.ml" 169 5028 5077
+type(
+  string
+)
+ident(
+  int_ref u "command.ml" 169 5028 5037 "command.ml" 169 5028 5038
+)
+"command.ml" 169 5028 5056 "command.ml" 169 5028 5077
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 169 5028 5042 "command.ml" 169 5028 5077
+type(
+  unit
+)
+"command.ml" 170 5078 5086 "command.ml" 170 5078 5087
+type(
+  pathname
+)
+ident(
+  def p "command.ml" 170 5078 5091 "command.ml" 170 5078 5119
+)
+"command.ml" 170 5078 5084 "command.ml" 170 5078 5087
+type(
+  spec
+)
+"command.ml" 170 5078 5091 "command.ml" 170 5078 5100
+type(
+  unit -> unit
+)
+ident(
+  int_ref put_space "command.ml" 157 4753 4759 "command.ml" 157 4753 4768
+)
+"command.ml" 170 5078 5101 "command.ml" 170 5078 5103
+type(
+  unit
+)
+"command.ml" 170 5078 5091 "command.ml" 170 5078 5103
+type(
+  unit
+)
+"command.ml" 170 5078 5105 "command.ml" 170 5078 5117
+type(
+  pathname -> unit
+)
+ident(
+  int_ref put_filename "command.ml" 163 4856 4862 "command.ml" 163 4856 4874
+)
+"command.ml" 170 5078 5118 "command.ml" 170 5078 5119
+type(
+  pathname
+)
+ident(
+  int_ref p "command.ml" 170 5078 5086 "command.ml" 170 5078 5087
+)
+"command.ml" 170 5078 5105 "command.ml" 170 5078 5119
+type(
+  unit
+)
+"command.ml" 170 5078 5091 "command.ml" 170 5078 5119
+type(
+  unit
+)
+"command.ml" 171 5120 5129 "command.ml" 171 5120 5130
+type(
+  pathname
+)
+ident(
+  def u "command.ml" 171 5120 5134 "command.ml" 171 5120 5182
+)
+"command.ml" 171 5120 5126 "command.ml" 171 5120 5130
+type(
+  spec
+)
+"command.ml" 171 5120 5134 "command.ml" 171 5120 5143
+type(
+  unit -> unit
+)
+ident(
+  int_ref put_space "command.ml" 157 4753 4759 "command.ml" 157 4753 4768
+)
+"command.ml" 171 5120 5144 "command.ml" 171 5120 5146
+type(
+  unit
+)
+"command.ml" 171 5120 5134 "command.ml" 171 5120 5146
+call(
+  stack
+)
+type(
+  unit
+)
+"command.ml" 171 5120 5148 "command.ml" 171 5120 5160
+type(
+  pathname -> unit
+)
+ident(
+  int_ref put_filename "command.ml" 163 4856 4862 "command.ml" 163 4856 4874
+)
+"command.ml" 171 5120 5161 "command.ml" 171 5120 5162
+type(
+  pathname
+)
+ident(
+  int_ref u "command.ml" 171 5120 5129 "command.ml" 171 5120 5130
+)
+"command.ml" 171 5120 5148 "command.ml" 171 5120 5162
+call(
+  stack
+)
+type(
+  unit
+)
+"command.ml" 171 5120 5164 "command.ml" 171 5120 5180
+type(
+  pathname -> unit
+)
+ident(
+  int_ref call_with_target "command.ml" 149 4289 4346 "command.ml" 149 4289 4362
+)
+"command.ml" 171 5120 5181 "command.ml" 171 5120 5182
+type(
+  pathname
+)
+ident(
+  int_ref u "command.ml" 171 5120 5129 "command.ml" 171 5120 5130
+)
+"command.ml" 171 5120 5164 "command.ml" 171 5120 5182
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 171 5120 5148 "command.ml" 171 5120 5182
+type(
+  unit
+)
+"command.ml" 171 5120 5134 "command.ml" 171 5120 5182
+type(
+  unit
+)
+"command.ml" 172 5183 5191 "command.ml" 172 5183 5192
+type(
+  string
+)
+ident(
+  def v "command.ml" 172 5183 5196 "command.ml" 173 5248 5348
+)
+"command.ml" 172 5183 5189 "command.ml" 172 5183 5192
+type(
+  spec
+)
+"command.ml" 172 5183 5199 "command.ml" 172 5183 5215
+type(
+  bool
+)
+ident(
+  int_ref resolve_virtuals "command.ml" 149 4289 4363 "command.ml" 149 4289 4379
+)
+"command.ml" 172 5183 5221 "command.ml" 172 5183 5228
+type(
+  spec -> unit
+)
+ident(
+  int_ref do_spec "command.ml" 166 4943 4953 "command.ml" 166 4943 4960
+)
+"command.ml" 172 5183 5230 "command.ml" 172 5183 5244
+type(
+  string -> spec
+)
+ident(
+  int_ref virtual_solver "command.ml" 115 2991 2995 "command.ml" 115 2991 3009
+)
+"command.ml" 172 5183 5245 "command.ml" 172 5183 5246
+type(
+  string
+)
+ident(
+  int_ref v "command.ml" 172 5183 5191 "command.ml" 172 5183 5192
+)
+"command.ml" 172 5183 5229 "command.ml" 172 5183 5247
+call(
+  stack
+)
+type(
+  spec
+)
+"command.ml" 172 5183 5221 "command.ml" 172 5183 5247
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 173 5248 5267 "command.ml" 173 5248 5276
+type(
+  unit -> unit
+)
+ident(
+  int_ref put_space "command.ml" 157 4753 4759 "command.ml" 157 4753 4768
+)
+"command.ml" 173 5248 5277 "command.ml" 173 5248 5279
+type(
+  unit
+)
+"command.ml" 173 5248 5267 "command.ml" 173 5248 5279
+call(
+  stack
+)
+type(
+  unit
+)
+"command.ml" 173 5248 5281 "command.ml" 173 5248 5295
+type(
+  Buffer.t -> (string -> unit, Buffer.t, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.bprintf
+)
+"command.ml" 173 5248 5296 "command.ml" 173 5248 5297
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "command.ml" 151 4486 4492 "command.ml" 151 4486 4493
+)
+"command.ml" 173 5248 5298 "command.ml" 173 5248 5312
+type(
+  (string -> unit, Buffer.t, unit) format
+)
+"command.ml" 173 5248 5314 "command.ml" 173 5248 5344
+type(
+  string -> string
+)
+ident(
+  ext_ref Shell.quote_filename_if_needed
+)
+"command.ml" 173 5248 5345 "command.ml" 173 5248 5346
+type(
+  string
+)
+ident(
+  int_ref v "command.ml" 172 5183 5191 "command.ml" 172 5183 5192
+)
+"command.ml" 173 5248 5313 "command.ml" 173 5248 5347
+call(
+  stack
+)
+type(
+  string
+)
+"command.ml" 173 5248 5281 "command.ml" 173 5248 5347
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 173 5248 5266 "command.ml" 173 5248 5348
+type(
+  unit
+)
+"command.ml" 172 5183 5196 "command.ml" 173 5248 5348
+type(
+  unit
+)
+"command.ml" 174 5349 5357 "command.ml" 174 5349 5358
+type(
+  spec list
+)
+ident(
+  def l "command.ml" 174 5349 5362 "command.ml" 174 5349 5381
+)
+"command.ml" 174 5349 5355 "command.ml" 174 5349 5358
+type(
+  spec
+)
+"command.ml" 174 5349 5362 "command.ml" 174 5349 5371
+type(
+  (spec -> unit) -> spec list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"command.ml" 174 5349 5372 "command.ml" 174 5349 5379
+type(
+  spec -> unit
+)
+ident(
+  int_ref do_spec "command.ml" 166 4943 4953 "command.ml" 166 4943 4960
+)
+"command.ml" 174 5349 5380 "command.ml" 174 5349 5381
+type(
+  spec list
+)
+ident(
+  int_ref l "command.ml" 174 5349 5357 "command.ml" 174 5349 5358
+)
+"command.ml" 174 5349 5362 "command.ml" 174 5349 5381
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 175 5382 5390 "command.ml" 175 5382 5394
+type(
+  Tags.t
+)
+ident(
+  def tags "command.ml" 175 5382 5398 "command.ml" 175 5382 5446
+)
+"command.ml" 175 5382 5388 "command.ml" 175 5382 5394
+type(
+  spec
+)
+"command.ml" 175 5382 5398 "command.ml" 175 5382 5412
+type(
+  Tags.t -> 'a
+)
+ident(
+  int_ref call_with_tags "command.ml" 149 4289 4331 "command.ml" 149 4289 4345
+)
+"command.ml" 175 5382 5413 "command.ml" 175 5382 5417
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "command.ml" 175 5382 5390 "command.ml" 175 5382 5394
+)
+"command.ml" 175 5382 5398 "command.ml" 175 5382 5417
+call(
+  stack
+)
+type(
+  'a
+)
+"command.ml" 175 5382 5419 "command.ml" 175 5382 5426
+type(
+  spec -> unit
+)
+ident(
+  int_ref do_spec "command.ml" 166 4943 4953 "command.ml" 166 4943 4960
+)
+"command.ml" 175 5382 5428 "command.ml" 175 5382 5429
+type(
+  (Tags.t -> spec) ref -> Tags.t -> spec
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 175 5382 5429 "command.ml" 175 5382 5440
+type(
+  (Tags.t -> spec) ref
+)
+ident(
+  int_ref tag_handler "command.ml" 86 2177 2181 "command.ml" 86 2177 2192
+)
+"command.ml" 175 5382 5428 "command.ml" 175 5382 5440
+type(
+  Tags.t -> spec
+)
+"command.ml" 175 5382 5441 "command.ml" 175 5382 5445
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "command.ml" 175 5382 5390 "command.ml" 175 5382 5394
+)
+"command.ml" 175 5382 5427 "command.ml" 175 5382 5446
+call(
+  stack
+)
+type(
+  spec
+)
+"command.ml" 175 5382 5419 "command.ml" 175 5382 5446
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 175 5382 5398 "command.ml" 175 5382 5446
+type(
+  unit
+)
+"command.ml" 176 5447 5459 "command.ml" 176 5447 5460
+type(
+  spec
+)
+ident(
+  def s "command.ml" 176 5447 5464 "command.ml" 176 5447 5499
+)
+"command.ml" 176 5447 5453 "command.ml" 176 5447 5460
+type(
+  spec
+)
+"command.ml" 176 5447 5464 "command.ml" 176 5447 5473
+type(
+  unit -> unit
+)
+ident(
+  int_ref put_space "command.ml" 157 4753 4759 "command.ml" 157 4753 4768
+)
+"command.ml" 176 5447 5474 "command.ml" 176 5447 5476
+type(
+  unit
+)
+"command.ml" 176 5447 5464 "command.ml" 176 5447 5476
+call(
+  stack
+)
+type(
+  unit
+)
+"command.ml" 176 5447 5478 "command.ml" 176 5447 5490
+type(
+  string -> unit
+)
+ident(
+  int_ref put_filename "command.ml" 163 4856 4862 "command.ml" 163 4856 4874
+)
+"command.ml" 176 5447 5492 "command.ml" 176 5447 5496
+type(
+  spec -> string
+)
+ident(
+  int_ref self "command.ml" 150 4387 4393 "command.ml" 150 4387 4397
+)
+"command.ml" 176 5447 5497 "command.ml" 176 5447 5498
+type(
+  spec
+)
+ident(
+  int_ref s "command.ml" 176 5447 5459 "command.ml" 176 5447 5460
+)
+"command.ml" 176 5447 5491 "command.ml" 176 5447 5499
+call(
+  stack
+)
+type(
+  string
+)
+"command.ml" 176 5447 5478 "command.ml" 176 5447 5499
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 176 5447 5464 "command.ml" 176 5447 5499
+type(
+  unit
+)
+"command.ml" 166 4943 4963 "command.ml" 176 5447 5499
+type(
+  spec -> unit
+)
+"command.ml" 178 5505 5507 "command.ml" 178 5505 5514
+type(
+  spec -> unit
+)
+ident(
+  int_ref do_spec "command.ml" 166 4943 4953 "command.ml" 166 4943 4960
+)
+"command.ml" 178 5505 5515 "command.ml" 178 5505 5519
+type(
+  spec
+)
+ident(
+  int_ref spec "command.ml" 149 4289 4380 "command.ml" 149 4289 4384
+)
+"command.ml" 178 5505 5507 "command.ml" 178 5505 5519
+call(
+  stack
+)
+type(
+  unit
+)
+"command.ml" 179 5521 5523 "command.ml" 179 5521 5538
+type(
+  Buffer.t -> string
+)
+ident(
+  ext_ref Buffer.contents
+)
+"command.ml" 179 5521 5539 "command.ml" 179 5521 5540
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "command.ml" 151 4486 4492 "command.ml" 151 4486 4493
+)
+"command.ml" 179 5521 5523 "command.ml" 179 5521 5540
+call(
+  tail
+)
+type(
+  string
+)
+"command.ml" 178 5505 5507 "command.ml" 179 5521 5540
+type(
+  string
+)
+"command.ml" 166 4943 4945 "command.ml" 179 5521 5540
+type(
+  string
+)
+"command.ml" 163 4856 4858 "command.ml" 179 5521 5540
+type(
+  string
+)
+"command.ml" 157 4753 4755 "command.ml" 179 5521 5540
+type(
+  string
+)
+"command.ml" 156 4727 4729 "command.ml" 179 5521 5540
+type(
+  string
+)
+"command.ml" 154 4665 4667 "command.ml" 179 5521 5540
+type(
+  string
+)
+"command.ml" 151 4486 4488 "command.ml" 179 5521 5540
+type(
+  string
+)
+"command.ml" 150 4387 4389 "command.ml" 179 5521 5540
+type(
+  string
+)
+"command.ml" 181 5542 5546 "command.ml" 181 5542 5568
+type(
+  spec -> string
+)
+ident(
+  def string_of_command_spec "command.ml" 183 5630 5630 "command.ml" 1 0 -1
+)
+"command.ml" 181 5542 5569 "command.ml" 181 5542 5570
+type(
+  spec
+)
+ident(
+  def x "command.ml" 181 5542 5573 "command.ml" 181 5542 5628
+)
+"command.ml" 181 5542 5573 "command.ml" 181 5542 5606
+type(
+  (Tags.t -> unit) -> (pathname -> unit) -> bool -> spec -> string
+)
+ident(
+  int_ref string_of_command_spec_with_calls "command.ml" 149 4289 4297 "command.ml" 149 4289 4330
+)
+"command.ml" 181 5542 5607 "command.ml" 181 5542 5613
+type(
+  Tags.t -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"command.ml" 181 5542 5614 "command.ml" 181 5542 5620
+type(
+  pathname -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"command.ml" 181 5542 5621 "command.ml" 181 5542 5626
+type(
+  bool
+)
+"command.ml" 181 5542 5627 "command.ml" 181 5542 5628
+type(
+  spec
+)
+ident(
+  int_ref x "command.ml" 181 5542 5569 "command.ml" 181 5542 5570
+)
+"command.ml" 181 5542 5573 "command.ml" 181 5542 5628
+call(
+  tail
+)
+type(
+  string
+)
+"command.ml" 183 5630 5634 "command.ml" 183 5630 5672
+type(
+  spec -> string * pathname * Tags.t
+)
+ident(
+  def string_target_and_tags_of_command_spec "command.ml" 191 5959 5959 "command.ml" 1 0 -1
+)
+"command.ml" 183 5630 5673 "command.ml" 183 5630 5677
+type(
+  spec
+)
+ident(
+  def spec "command.ml" 184 5680 5682 "command.ml" 189 5938 5957
+)
+"command.ml" 184 5680 5686 "command.ml" 184 5680 5691
+type(
+  Tags.t ref
+)
+ident(
+  def rtags "command.ml" 185 5712 5714 "command.ml" 189 5938 5957
+)
+"command.ml" 184 5680 5694 "command.ml" 184 5680 5697
+type(
+  Tags.t -> Tags.t ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"command.ml" 184 5680 5698 "command.ml" 184 5680 5708
+type(
+  Tags.t
+)
+ident(
+  ext_ref Tags.empty
+)
+"command.ml" 184 5680 5694 "command.ml" 184 5680 5708
+type(
+  Tags.t ref
+)
+"command.ml" 185 5712 5718 "command.ml" 185 5712 5725
+type(
+  pathname ref
+)
+ident(
+  def rtarget "command.ml" 186 5738 5740 "command.ml" 189 5938 5957
+)
+"command.ml" 185 5712 5728 "command.ml" 185 5712 5731
+type(
+  pathname -> pathname ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"command.ml" 185 5712 5732 "command.ml" 185 5712 5734
+type(
+  pathname
+)
+"command.ml" 185 5712 5728 "command.ml" 185 5712 5734
+type(
+  pathname ref
+)
+"command.ml" 186 5738 5744 "command.ml" 186 5738 5755
+type(
+  Tags.t -> unit
+)
+ident(
+  def union_rtags "command.ml" 187 5798 5800 "command.ml" 189 5938 5957
+)
+"command.ml" 186 5738 5756 "command.ml" 186 5738 5760
+type(
+  Tags.t
+)
+ident(
+  def tags "command.ml" 186 5738 5763 "command.ml" 186 5738 5794
+)
+"command.ml" 186 5738 5763 "command.ml" 186 5738 5768
+type(
+  Tags.t ref
+)
+ident(
+  int_ref rtags "command.ml" 184 5680 5686 "command.ml" 184 5680 5691
+)
+"command.ml" 186 5738 5769 "command.ml" 186 5738 5771
+type(
+  Tags.t ref -> Tags.t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"command.ml" 186 5738 5772 "command.ml" 186 5738 5782
+type(
+  Tags.t -> Tags.t -> Tags.t
+)
+ident(
+  ext_ref Tags.union
+)
+"command.ml" 186 5738 5783 "command.ml" 186 5738 5784
+type(
+  Tags.t ref -> Tags.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 186 5738 5784 "command.ml" 186 5738 5789
+type(
+  Tags.t ref
+)
+ident(
+  int_ref rtags "command.ml" 184 5680 5686 "command.ml" 184 5680 5691
+)
+"command.ml" 186 5738 5783 "command.ml" 186 5738 5789
+type(
+  Tags.t
+)
+"command.ml" 186 5738 5790 "command.ml" 186 5738 5794
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "command.ml" 186 5738 5756 "command.ml" 186 5738 5760
+)
+"command.ml" 186 5738 5772 "command.ml" 186 5738 5794
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"command.ml" 186 5738 5763 "command.ml" 186 5738 5794
+type(
+  unit
+)
+"command.ml" 187 5798 5804 "command.ml" 187 5798 5805
+type(
+  string
+)
+ident(
+  def s "command.ml" 188 5882 5884 "command.ml" 189 5938 5957
+)
+"command.ml" 187 5798 5808 "command.ml" 187 5798 5841
+type(
+  (Tags.t -> unit) -> (pathname -> unit) -> bool -> spec -> string
+)
+ident(
+  int_ref string_of_command_spec_with_calls "command.ml" 149 4289 4297 "command.ml" 149 4289 4330
+)
+"command.ml" 187 5798 5842 "command.ml" 187 5798 5853
+type(
+  Tags.t -> unit
+)
+ident(
+  int_ref union_rtags "command.ml" 186 5738 5744 "command.ml" 186 5738 5755
+)
+"command.ml" 187 5798 5855 "command.ml" 187 5798 5859
+type(
+  pathname ref -> pathname -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"command.ml" 187 5798 5860 "command.ml" 187 5798 5867
+type(
+  pathname ref
+)
+ident(
+  int_ref rtarget "command.ml" 185 5712 5718 "command.ml" 185 5712 5725
+)
+"command.ml" 187 5798 5854 "command.ml" 187 5798 5868
+call(
+  stack
+)
+type(
+  pathname -> unit
+)
+"command.ml" 187 5798 5869 "command.ml" 187 5798 5873
+type(
+  bool
+)
+"command.ml" 187 5798 5874 "command.ml" 187 5798 5878
+type(
+  spec
+)
+ident(
+  int_ref spec "command.ml" 183 5630 5673 "command.ml" 183 5630 5677
+)
+"command.ml" 187 5798 5808 "command.ml" 187 5798 5878
+call(
+  stack
+)
+type(
+  string
+)
+"command.ml" 188 5882 5888 "command.ml" 188 5882 5894
+type(
+  pathname
+)
+ident(
+  def target "command.ml" 189 5938 5940 "command.ml" 189 5938 5957
+)
+"command.ml" 188 5882 5900 "command.ml" 188 5882 5901
+type(
+  pathname ref -> pathname
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 188 5882 5901 "command.ml" 188 5882 5908
+type(
+  pathname ref
+)
+ident(
+  int_ref rtarget "command.ml" 185 5712 5718 "command.ml" 185 5712 5725
+)
+"command.ml" 188 5882 5900 "command.ml" 188 5882 5908
+type(
+  pathname
+)
+"command.ml" 188 5882 5909 "command.ml" 188 5882 5910
+type(
+  pathname -> pathname -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"command.ml" 188 5882 5911 "command.ml" 188 5882 5913
+type(
+  pathname
+)
+"command.ml" 188 5882 5900 "command.ml" 188 5882 5913
+type(
+  bool
+)
+"command.ml" 188 5882 5919 "command.ml" 188 5882 5920
+type(
+  pathname
+)
+ident(
+  int_ref s "command.ml" 187 5798 5804 "command.ml" 187 5798 5805
+)
+"command.ml" 188 5882 5926 "command.ml" 188 5882 5927
+type(
+  pathname ref -> pathname
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 188 5882 5927 "command.ml" 188 5882 5934
+type(
+  pathname ref
+)
+ident(
+  int_ref rtarget "command.ml" 185 5712 5718 "command.ml" 185 5712 5725
+)
+"command.ml" 188 5882 5926 "command.ml" 188 5882 5934
+type(
+  pathname
+)
+"command.ml" 188 5882 5897 "command.ml" 188 5882 5934
+type(
+  pathname
+)
+"command.ml" 189 5938 5940 "command.ml" 189 5938 5941
+type(
+  string
+)
+ident(
+  int_ref s "command.ml" 187 5798 5804 "command.ml" 187 5798 5805
+)
+"command.ml" 189 5938 5943 "command.ml" 189 5938 5949
+type(
+  pathname
+)
+ident(
+  int_ref target "command.ml" 188 5882 5888 "command.ml" 188 5882 5894
+)
+"command.ml" 189 5938 5951 "command.ml" 189 5938 5952
+type(
+  Tags.t ref -> Tags.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 189 5938 5952 "command.ml" 189 5938 5957
+type(
+  Tags.t ref
+)
+ident(
+  int_ref rtags "command.ml" 184 5680 5686 "command.ml" 184 5680 5691
+)
+"command.ml" 189 5938 5951 "command.ml" 189 5938 5957
+type(
+  Tags.t
+)
+"command.ml" 189 5938 5940 "command.ml" 189 5938 5957
+type(
+  string * pathname * Tags.t
+)
+"command.ml" 188 5882 5884 "command.ml" 189 5938 5957
+type(
+  string * pathname * Tags.t
+)
+"command.ml" 187 5798 5800 "command.ml" 189 5938 5957
+type(
+  string * pathname * Tags.t
+)
+"command.ml" 186 5738 5740 "command.ml" 189 5938 5957
+type(
+  string * pathname * Tags.t
+)
+"command.ml" 185 5712 5714 "command.ml" 189 5938 5957
+type(
+  string * pathname * Tags.t
+)
+"command.ml" 184 5680 5682 "command.ml" 189 5938 5957
+type(
+  string * pathname * Tags.t
+)
+"command.ml" 191 5959 5963 "command.ml" 191 5959 5991
+type(
+  spec -> bool -> bool -> unit -> string
+)
+ident(
+  def string_print_of_command_spec "command.ml" 196 6159 6159 "command.ml" 1 0 -1
+)
+"command.ml" 191 5959 5992 "command.ml" 191 5959 5996
+type(
+  spec
+)
+ident(
+  def spec "command.ml" 191 5959 5997 "command.ml" 193 6084 6149
+)
+"command.ml" 191 5959 5997 "command.ml" 191 5959 6002
+type(
+  bool
+)
+ident(
+  def quiet "command.ml" 191 5959 6003 "command.ml" 193 6084 6149
+)
+"command.ml" 191 5959 6003 "command.ml" 191 5959 6010
+type(
+  bool
+)
+ident(
+  def pretend "command.ml" 192 6013 6015 "command.ml" 193 6084 6149
+)
+"command.ml" 192 6013 6019 "command.ml" 192 6013 6020
+type(
+  string
+)
+ident(
+  def s "command.ml" 193 6084 6086 "command.ml" 193 6084 6149
+)
+"command.ml" 192 6013 6022 "command.ml" 192 6013 6028
+type(
+  pathname
+)
+ident(
+  def target "command.ml" 193 6084 6086 "command.ml" 193 6084 6149
+)
+"command.ml" 192 6013 6030 "command.ml" 192 6013 6034
+type(
+  Tags.t
+)
+ident(
+  def tags "command.ml" 193 6084 6086 "command.ml" 193 6084 6149
+)
+"command.ml" 192 6013 6019 "command.ml" 192 6013 6034
+type(
+  string * pathname * Tags.t
+)
+"command.ml" 192 6013 6037 "command.ml" 192 6013 6075
+type(
+  spec -> string * pathname * Tags.t
+)
+ident(
+  int_ref string_target_and_tags_of_command_spec "command.ml" 183 5630 5634 "command.ml" 183 5630 5672
+)
+"command.ml" 192 6013 6076 "command.ml" 192 6013 6080
+type(
+  spec
+)
+ident(
+  int_ref spec "command.ml" 191 5959 5992 "command.ml" 191 5959 5996
+)
+"command.ml" 192 6013 6037 "command.ml" 192 6013 6080
+call(
+  stack
+)
+type(
+  string * pathname * Tags.t
+)
+"command.ml" 193 6084 6090 "command.ml" 193 6084 6092
+type(
+  unit
+)
+"command.ml" 193 6084 6099 "command.ml" 193 6084 6102
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"command.ml" 193 6084 6103 "command.ml" 193 6084 6108
+type(
+  bool
+)
+ident(
+  int_ref quiet "command.ml" 191 5959 5997 "command.ml" 191 5959 6002
+)
+"command.ml" 193 6084 6099 "command.ml" 193 6084 6108
+type(
+  bool
+)
+"command.ml" 193 6084 6114 "command.ml" 193 6084 6123
+type(
+  ?pretend:bool -> string -> pathname -> Tags.t -> unit
+)
+ident(
+  ext_ref Log.event
+)
+"command.ml" 193 6084 6125 "command.ml" 193 6084 6132
+type(
+  bool
+)
+ident(
+  int_ref pretend "command.ml" 191 5959 6003 "command.ml" 191 5959 6010
+)
+"command.ml" 193 6084 6133 "command.ml" 193 6084 6134
+type(
+  string
+)
+ident(
+  int_ref s "command.ml" 192 6013 6019 "command.ml" 192 6013 6020
+)
+"command.ml" 193 6084 6135 "command.ml" 193 6084 6141
+type(
+  pathname
+)
+ident(
+  int_ref target "command.ml" 192 6013 6022 "command.ml" 192 6013 6028
+)
+"command.ml" 193 6084 6142 "command.ml" 193 6084 6146
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "command.ml" 192 6013 6030 "command.ml" 192 6013 6034
+)
+"command.ml" 193 6084 6114 "command.ml" 193 6084 6146
+call(
+  stack
+)
+type(
+  unit
+)
+"command.ml" 193 6084 6096 "command.ml" 193 6084 6146
+type(
+  unit
+)
+"command.ml" 193 6084 6148 "command.ml" 193 6084 6149
+type(
+  string
+)
+ident(
+  int_ref s "command.ml" 192 6013 6019 "command.ml" 192 6013 6020
+)
+"command.ml" 193 6084 6096 "command.ml" 193 6084 6149
+type(
+  string
+)
+"command.ml" 193 6084 6086 "command.ml" 193 6084 6149
+type(
+  unit -> string
+)
+"command.ml" 192 6013 6015 "command.ml" 193 6084 6149
+type(
+  unit -> string
+)
+"command.ml" 196 6159 6163 "command.ml" 196 6159 6183
+type(
+  Format.formatter -> string -> unit
+)
+ident(
+  def print_escaped_string "command.ml" 198 6211 6211 "command.ml" 1 0 -1
+)
+"command.ml" 196 6159 6184 "command.ml" 196 6159 6185
+type(
+  Format.formatter
+)
+ident(
+  def f "command.ml" 196 6159 6188 "command.ml" 196 6159 6209
+)
+"command.ml" 196 6159 6188 "command.ml" 196 6159 6202
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"command.ml" 196 6159 6203 "command.ml" 196 6159 6204
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "command.ml" 196 6159 6184 "command.ml" 196 6159 6185
+)
+"command.ml" 196 6159 6205 "command.ml" 196 6159 6209
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"command.ml" 196 6159 6188 "command.ml" 196 6159 6209
+call(
+  tail
+)
+type(
+  string -> unit
+)
+"command.ml" 198 6211 6219 "command.ml" 198 6211 6224
+type(
+  Format.formatter -> t -> unit
+)
+ident(
+  def print "command.ml" 198 6211 6211 "command.ml" 1 0 -1
+)
+"command.ml" 198 6211 6225 "command.ml" 198 6211 6226
+type(
+  Format.formatter
+)
+ident(
+  def f "command.ml" 199 6229 6231 "command.ml" 205 6467 6545
+)
+"command.ml" 200 6240 6248 "command.ml" 200 6240 6252
+type(
+  spec
+)
+ident(
+  def spec "command.ml" 200 6240 6256 "command.ml" 200 6240 6310
+)
+"command.ml" 200 6240 6244 "command.ml" 200 6240 6252
+type(
+  t
+)
+"command.ml" 200 6240 6256 "command.ml" 200 6240 6278
+type(
+  Format.formatter -> string -> unit
+)
+ident(
+  ext_ref Format.pp_print_string
+)
+"command.ml" 200 6240 6279 "command.ml" 200 6240 6280
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "command.ml" 198 6211 6225 "command.ml" 198 6211 6226
+)
+"command.ml" 200 6240 6282 "command.ml" 200 6240 6304
+type(
+  spec -> string
+)
+ident(
+  int_ref string_of_command_spec "command.ml" 181 5542 5546 "command.ml" 181 5542 5568
+)
+"command.ml" 200 6240 6305 "command.ml" 200 6240 6309
+type(
+  spec
+)
+ident(
+  int_ref spec "command.ml" 200 6240 6248 "command.ml" 200 6240 6252
+)
+"command.ml" 200 6240 6281 "command.ml" 200 6240 6310
+call(
+  stack
+)
+type(
+  string
+)
+"command.ml" 200 6240 6256 "command.ml" 200 6240 6310
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 201 6311 6319 "command.ml" 201 6311 6322
+type(
+  t list
+)
+ident(
+  def seq "command.ml" 201 6311 6326 "command.ml" 201 6311 6348
+)
+"command.ml" 201 6311 6315 "command.ml" 201 6311 6322
+type(
+  t
+)
+"command.ml" 201 6311 6326 "command.ml" 201 6311 6336
+type(
+  (Format.formatter -> t -> unit) -> Format.formatter -> t list -> unit
+)
+ident(
+  ext_ref My_std.List.print
+)
+"command.ml" 201 6311 6337 "command.ml" 201 6311 6342
+type(
+  Format.formatter -> t -> unit
+)
+ident(
+  int_ref print "command.ml" 198 6211 6219 "command.ml" 198 6211 6224
+)
+"command.ml" 201 6311 6343 "command.ml" 201 6311 6344
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "command.ml" 198 6211 6225 "command.ml" 198 6211 6226
+)
+"command.ml" 201 6311 6345 "command.ml" 201 6311 6348
+type(
+  t list
+)
+ident(
+  int_ref seq "command.ml" 201 6311 6319 "command.ml" 201 6311 6322
+)
+"command.ml" 201 6311 6326 "command.ml" 201 6311 6348
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 202 6349 6353 "command.ml" 202 6349 6356
+type(
+  t
+)
+"command.ml" 202 6349 6360 "command.ml" 202 6349 6382
+type(
+  Format.formatter -> string -> unit
+)
+ident(
+  ext_ref Format.pp_print_string
+)
+"command.ml" 202 6349 6383 "command.ml" 202 6349 6384
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "command.ml" 198 6211 6225 "command.ml" 198 6211 6226
+)
+"command.ml" 202 6349 6385 "command.ml" 202 6349 6390
+type(
+  string
+)
+"command.ml" 202 6349 6360 "command.ml" 202 6349 6390
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 203 6391 6400 "command.ml" 203 6391 6405
+type(
+  string list
+)
+ident(
+  def texts "command.ml" 204 6421 6427 "command.ml" 205 6467 6545
+)
+"command.ml" 203 6391 6407 "command.ml" 203 6391 6416
+type(
+  pathname
+)
+ident(
+  def dest_path "command.ml" 204 6421 6427 "command.ml" 205 6467 6545
+)
+"command.ml" 203 6391 6395 "command.ml" 203 6391 6417
+type(
+  t
+)
+"command.ml" 204 6421 6427 "command.ml" 204 6421 6441
+type(
+  Format.formatter ->
+  ((Format.formatter -> string list -> unit) ->
+   string list -> (Format.formatter -> pathname -> unit) -> pathname -> unit,
+   Format.formatter, unit)
+  format ->
+  (Format.formatter -> string list -> unit) ->
+  string list -> (Format.formatter -> pathname -> unit) -> pathname -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"command.ml" 204 6421 6442 "command.ml" 204 6421 6443
+type(
+  Format.formatter
+)
+ident(
+  int_ref f "command.ml" 198 6211 6225 "command.ml" 198 6211 6226
+)
+"command.ml" 204 6421 6444 "command.ml" 204 6421 6466
+type(
+  ((Format.formatter -> string list -> unit) ->
+   string list -> (Format.formatter -> pathname -> unit) -> pathname -> unit,
+   Format.formatter, unit)
+  format
+)
+"command.ml" 205 6467 6476 "command.ml" 205 6467 6486
+type(
+  (Format.formatter -> string -> unit) ->
+  Format.formatter -> string list -> unit
+)
+ident(
+  ext_ref My_std.List.print
+)
+"command.ml" 205 6467 6487 "command.ml" 205 6467 6507
+type(
+  Format.formatter -> string -> unit
+)
+ident(
+  int_ref print_escaped_string "command.ml" 196 6159 6163 "command.ml" 196 6159 6183
+)
+"command.ml" 205 6467 6475 "command.ml" 205 6467 6508
+call(
+  stack
+)
+type(
+  Format.formatter -> string list -> unit
+)
+"command.ml" 205 6467 6509 "command.ml" 205 6467 6514
+type(
+  string list
+)
+ident(
+  int_ref texts "command.ml" 203 6391 6400 "command.ml" 203 6391 6405
+)
+"command.ml" 205 6467 6515 "command.ml" 205 6467 6535
+type(
+  Format.formatter -> pathname -> unit
+)
+ident(
+  int_ref print_escaped_string "command.ml" 196 6159 6163 "command.ml" 196 6159 6183
+)
+"command.ml" 205 6467 6536 "command.ml" 205 6467 6545
+type(
+  pathname
+)
+ident(
+  int_ref dest_path "command.ml" 203 6391 6407 "command.ml" 203 6391 6416
+)
+"command.ml" 204 6421 6427 "command.ml" 205 6467 6545
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 199 6229 6231 "command.ml" 205 6467 6545
+type(
+  t -> unit
+)
+"command.ml" 207 6547 6551 "command.ml" 207 6547 6560
+type(
+  t -> string
+)
+ident(
+  def to_string "command.ml" 209 6588 6588 "command.ml" 1 0 -1
+)
+"command.ml" 207 6547 6561 "command.ml" 207 6547 6562
+type(
+  t
+)
+ident(
+  def x "command.ml" 207 6547 6565 "command.ml" 207 6547 6586
+)
+"command.ml" 207 6547 6565 "command.ml" 207 6547 6573
+type(
+  ((Format.formatter -> t -> unit) -> t -> string, Format.formatter, 
+   unit, string)
+  format4 -> (Format.formatter -> t -> unit) -> t -> string
+)
+ident(
+  ext_ref My_std.sbprintf
+)
+"command.ml" 207 6547 6574 "command.ml" 207 6547 6578
+type(
+  ((Format.formatter -> t -> unit) -> t -> string, Format.formatter, 
+   unit, string)
+  format4
+)
+"command.ml" 207 6547 6579 "command.ml" 207 6547 6584
+type(
+  Format.formatter -> t -> unit
+)
+ident(
+  int_ref print "command.ml" 198 6211 6219 "command.ml" 198 6211 6224
+)
+"command.ml" 207 6547 6585 "command.ml" 207 6547 6586
+type(
+  t
+)
+ident(
+  int_ref x "command.ml" 207 6547 6561 "command.ml" 207 6547 6562
+)
+"command.ml" 207 6547 6565 "command.ml" 207 6547 6586
+call(
+  tail
+)
+type(
+  string
+)
+"command.ml" 209 6588 6592 "command.ml" 209 6588 6609
+type(
+  int -> unit
+)
+ident(
+  def add_parallel_stat "command.ml" 240 7543 7543 "command.ml" 1 0 -1
+)
+"command.ml" 209 6588 6611 "command.ml" 209 6588 6630
+type(
+  unit -> unit
+)
+ident(
+  def dump_parallel_stats "command.ml" 240 7543 7543 "command.ml" 1 0 -1
+)
+"command.ml" 209 6588 6592 "command.ml" 209 6588 6630
+type(
+  (int -> unit) * (unit -> unit)
+)
+"command.ml" 210 6633 6639 "command.ml" 210 6633 6643
+type(
+  int ref
+)
+ident(
+  def xmin "command.ml" 211 6661 6663 "command.ml" 238 7501 7541
+)
+"command.ml" 210 6633 6646 "command.ml" 210 6633 6649
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"command.ml" 210 6633 6650 "command.ml" 210 6633 6657
+type(
+  int
+)
+ident(
+  ext_ref Pervasives.max_int
+)
+"command.ml" 210 6633 6646 "command.ml" 210 6633 6657
+type(
+  int ref
+)
+"command.ml" 211 6661 6667 "command.ml" 211 6661 6671
+type(
+  int ref
+)
+ident(
+  def xmax "command.ml" 212 6683 6685 "command.ml" 238 7501 7541
+)
+"command.ml" 211 6661 6674 "command.ml" 211 6661 6677
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"command.ml" 211 6661 6678 "command.ml" 211 6661 6679
+type(
+  int
+)
+"command.ml" 211 6661 6674 "command.ml" 211 6661 6679
+type(
+  int ref
+)
+"command.ml" 212 6683 6689 "command.ml" 212 6683 6693
+type(
+  int ref
+)
+ident(
+  def xsum "command.ml" 213 6705 6707 "command.ml" 238 7501 7541
+)
+"command.ml" 212 6683 6696 "command.ml" 212 6683 6699
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"command.ml" 212 6683 6700 "command.ml" 212 6683 6701
+type(
+  int
+)
+"command.ml" 212 6683 6696 "command.ml" 212 6683 6701
+type(
+  int ref
+)
+"command.ml" 213 6705 6711 "command.ml" 213 6705 6718
+type(
+  int ref
+)
+ident(
+  def xsumall "command.ml" 214 6730 6732 "command.ml" 238 7501 7541
+)
+"command.ml" 213 6705 6721 "command.ml" 213 6705 6724
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"command.ml" 213 6705 6725 "command.ml" 213 6705 6726
+type(
+  int
+)
+"command.ml" 213 6705 6721 "command.ml" 213 6705 6726
+type(
+  int ref
+)
+"command.ml" 214 6730 6736 "command.ml" 214 6730 6742
+type(
+  int ref
+)
+ident(
+  def xcount "command.ml" 215 6754 6756 "command.ml" 238 7501 7541
+)
+"command.ml" 214 6730 6745 "command.ml" 214 6730 6748
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"command.ml" 214 6730 6749 "command.ml" 214 6730 6750
+type(
+  int
+)
+"command.ml" 214 6730 6745 "command.ml" 214 6730 6750
+type(
+  int ref
+)
+"command.ml" 215 6754 6760 "command.ml" 215 6754 6769
+type(
+  int ref
+)
+ident(
+  def xcountall "command.ml" 216 6781 6783 "command.ml" 238 7501 7541
+)
+"command.ml" 215 6754 6772 "command.ml" 215 6754 6775
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"command.ml" 215 6754 6776 "command.ml" 215 6754 6777
+type(
+  int
+)
+"command.ml" 215 6754 6772 "command.ml" 215 6754 6777
+type(
+  int ref
+)
+"command.ml" 216 6781 6787 "command.ml" 216 6781 6804
+type(
+  int -> unit
+)
+ident(
+  def add_parallel_stat "command.ml" 228 7030 7032 "command.ml" 238 7501 7541
+)
+"command.ml" 216 6781 6805 "command.ml" 216 6781 6806
+type(
+  int
+)
+ident(
+  def x "command.ml" 217 6809 6813 "command.ml" 226 7017 7024
+)
+"command.ml" 217 6809 6816 "command.ml" 217 6809 6817
+type(
+  int
+)
+ident(
+  int_ref x "command.ml" 216 6781 6805 "command.ml" 216 6781 6806
+)
+"command.ml" 217 6809 6818 "command.ml" 217 6809 6819
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"command.ml" 217 6809 6820 "command.ml" 217 6809 6821
+type(
+  int
+)
+"command.ml" 217 6809 6816 "command.ml" 217 6809 6821
+type(
+  bool
+)
+"command.ml" 218 6833 6839 "command.ml" 218 6833 6843
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"command.ml" 218 6833 6844 "command.ml" 218 6833 6853
+type(
+  int ref
+)
+ident(
+  int_ref xcountall "command.ml" 215 6754 6760 "command.ml" 215 6754 6769
+)
+"command.ml" 218 6833 6839 "command.ml" 218 6833 6853
+type(
+  unit
+)
+"command.ml" 219 6855 6861 "command.ml" 219 6855 6868
+type(
+  int ref
+)
+ident(
+  int_ref xsumall "command.ml" 213 6705 6711 "command.ml" 213 6705 6718
+)
+"command.ml" 219 6855 6869 "command.ml" 219 6855 6871
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"command.ml" 219 6855 6872 "command.ml" 219 6855 6873
+type(
+  int
+)
+ident(
+  int_ref x "command.ml" 216 6781 6805 "command.ml" 216 6781 6806
+)
+"command.ml" 219 6855 6874 "command.ml" 219 6855 6875
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"command.ml" 219 6855 6876 "command.ml" 219 6855 6877
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 219 6855 6877 "command.ml" 219 6855 6884
+type(
+  int ref
+)
+ident(
+  int_ref xsumall "command.ml" 213 6705 6711 "command.ml" 213 6705 6718
+)
+"command.ml" 219 6855 6876 "command.ml" 219 6855 6884
+type(
+  int
+)
+"command.ml" 219 6855 6872 "command.ml" 219 6855 6884
+type(
+  int
+)
+"command.ml" 219 6855 6861 "command.ml" 219 6855 6885
+type(
+  unit
+)
+"command.ml" 217 6809 6827 "command.ml" 220 6886 6893
+type(
+  unit
+)
+"command.ml" 217 6809 6813 "command.ml" 220 6886 6893
+type(
+  unit
+)
+"command.ml" 221 6895 6902 "command.ml" 221 6895 6903
+type(
+  int
+)
+ident(
+  int_ref x "command.ml" 216 6781 6805 "command.ml" 216 6781 6806
+)
+"command.ml" 221 6895 6904 "command.ml" 221 6895 6905
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"command.ml" 221 6895 6906 "command.ml" 221 6895 6907
+type(
+  int
+)
+"command.ml" 221 6895 6902 "command.ml" 221 6895 6907
+type(
+  bool
+)
+"command.ml" 222 6919 6925 "command.ml" 222 6919 6929
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"command.ml" 222 6919 6930 "command.ml" 222 6919 6936
+type(
+  int ref
+)
+ident(
+  int_ref xcount "command.ml" 214 6730 6736 "command.ml" 214 6730 6742
+)
+"command.ml" 222 6919 6925 "command.ml" 222 6919 6936
+type(
+  unit
+)
+"command.ml" 223 6938 6944 "command.ml" 223 6938 6948
+type(
+  int ref
+)
+ident(
+  int_ref xsum "command.ml" 212 6683 6689 "command.ml" 212 6683 6693
+)
+"command.ml" 223 6938 6949 "command.ml" 223 6938 6951
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"command.ml" 223 6938 6952 "command.ml" 223 6938 6953
+type(
+  int
+)
+ident(
+  int_ref x "command.ml" 216 6781 6805 "command.ml" 216 6781 6806
+)
+"command.ml" 223 6938 6954 "command.ml" 223 6938 6955
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"command.ml" 223 6938 6956 "command.ml" 223 6938 6957
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 223 6938 6957 "command.ml" 223 6938 6961
+type(
+  int ref
+)
+ident(
+  int_ref xsum "command.ml" 212 6683 6689 "command.ml" 212 6683 6693
+)
+"command.ml" 223 6938 6956 "command.ml" 223 6938 6961
+type(
+  int
+)
+"command.ml" 223 6938 6952 "command.ml" 223 6938 6961
+type(
+  int
+)
+"command.ml" 223 6938 6944 "command.ml" 223 6938 6961
+type(
+  unit
+)
+"command.ml" 224 6963 6969 "command.ml" 224 6963 6973
+type(
+  int ref
+)
+ident(
+  int_ref xmax "command.ml" 211 6661 6667 "command.ml" 211 6661 6671
+)
+"command.ml" 224 6963 6974 "command.ml" 224 6963 6976
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"command.ml" 224 6963 6977 "command.ml" 224 6963 6980
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.max
+)
+"command.ml" 224 6963 6981 "command.ml" 224 6963 6982
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 224 6963 6982 "command.ml" 224 6963 6986
+type(
+  int ref
+)
+ident(
+  int_ref xmax "command.ml" 211 6661 6667 "command.ml" 211 6661 6671
+)
+"command.ml" 224 6963 6981 "command.ml" 224 6963 6986
+type(
+  int
+)
+"command.ml" 224 6963 6987 "command.ml" 224 6963 6988
+type(
+  int
+)
+ident(
+  int_ref x "command.ml" 216 6781 6805 "command.ml" 216 6781 6806
+)
+"command.ml" 224 6963 6977 "command.ml" 224 6963 6988
+call(
+  stack
+)
+type(
+  int
+)
+"command.ml" 224 6963 6969 "command.ml" 224 6963 6988
+type(
+  unit
+)
+"command.ml" 225 6990 6996 "command.ml" 225 6990 7000
+type(
+  int ref
+)
+ident(
+  int_ref xmin "command.ml" 210 6633 6639 "command.ml" 210 6633 6643
+)
+"command.ml" 225 6990 7001 "command.ml" 225 6990 7003
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"command.ml" 225 6990 7004 "command.ml" 225 6990 7007
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.min
+)
+"command.ml" 225 6990 7008 "command.ml" 225 6990 7009
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 225 6990 7009 "command.ml" 225 6990 7013
+type(
+  int ref
+)
+ident(
+  int_ref xmin "command.ml" 210 6633 6639 "command.ml" 210 6633 6643
+)
+"command.ml" 225 6990 7008 "command.ml" 225 6990 7013
+type(
+  int
+)
+"command.ml" 225 6990 7014 "command.ml" 225 6990 7015
+type(
+  int
+)
+ident(
+  int_ref x "command.ml" 216 6781 6805 "command.ml" 216 6781 6806
+)
+"command.ml" 225 6990 7004 "command.ml" 225 6990 7015
+call(
+  stack
+)
+type(
+  int
+)
+"command.ml" 225 6990 6996 "command.ml" 225 6990 7016
+type(
+  unit
+)
+"command.ml" 224 6963 6969 "command.ml" 225 6990 7016
+type(
+  unit
+)
+"command.ml" 223 6938 6944 "command.ml" 225 6990 7016
+type(
+  unit
+)
+"command.ml" 221 6895 6913 "command.ml" 226 7017 7024
+type(
+  unit
+)
+"command.ml" 221 6895 6899 "command.ml" 226 7017 7024
+type(
+  unit
+)
+"command.ml" 217 6809 6813 "command.ml" 226 7017 7024
+type(
+  unit
+)
+"command.ml" 228 7030 7036 "command.ml" 228 7030 7055
+type(
+  unit -> unit
+)
+ident(
+  def dump_parallel_stats "command.ml" 238 7501 7503 "command.ml" 238 7501 7541
+)
+"command.ml" 228 7030 7056 "command.ml" 228 7030 7058
+type(
+  unit
+)
+"command.ml" 229 7061 7068 "command.ml" 229 7061 7069
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 229 7061 7069 "command.ml" 229 7061 7073
+type(
+  int ref
+)
+ident(
+  int_ref jobs "command.ml" 23 937 941 "command.ml" 23 937 945
+)
+"command.ml" 229 7061 7068 "command.ml" 229 7061 7073
+type(
+  int
+)
+"command.ml" 229 7061 7074 "command.ml" 229 7061 7076
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"command.ml" 229 7061 7077 "command.ml" 229 7061 7078
+type(
+  int
+)
+"command.ml" 229 7061 7068 "command.ml" 229 7061 7078
+type(
+  bool
+)
+"command.ml" 230 7084 7093 "command.ml" 230 7084 7094
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 230 7084 7094 "command.ml" 230 7084 7100
+type(
+  int ref
+)
+ident(
+  int_ref xcount "command.ml" 214 6730 6736 "command.ml" 214 6730 6742
+)
+"command.ml" 230 7084 7093 "command.ml" 230 7084 7100
+type(
+  int
+)
+"command.ml" 230 7084 7101 "command.ml" 230 7084 7102
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"command.ml" 230 7084 7103 "command.ml" 230 7084 7104
+type(
+  int
+)
+"command.ml" 230 7084 7093 "command.ml" 230 7084 7104
+type(
+  bool
+)
+"command.ml" 231 7110 7118 "command.ml" 231 7110 7125
+type(
+  int -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Log.dprintf
+)
+"command.ml" 231 7110 7126 "command.ml" 231 7110 7127
+type(
+  int
+)
+"command.ml" 231 7110 7128 "command.ml" 231 7110 7151
+type(
+  (unit, Format.formatter, unit) format
+)
+"command.ml" 231 7110 7118 "command.ml" 231 7110 7151
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 233 7163 7175 "command.ml" 233 7163 7183
+type(
+  float
+)
+ident(
+  def xaverage "command.ml" 234 7238 7246 "command.ml" 236 7425 7495
+)
+"command.ml" 233 7163 7186 "command.ml" 233 7163 7198
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"command.ml" 233 7163 7199 "command.ml" 233 7163 7200
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 233 7163 7200 "command.ml" 233 7163 7207
+type(
+  int ref
+)
+ident(
+  int_ref xsumall "command.ml" 213 6705 6711 "command.ml" 213 6705 6718
+)
+"command.ml" 233 7163 7199 "command.ml" 233 7163 7207
+type(
+  int
+)
+"command.ml" 233 7163 7186 "command.ml" 233 7163 7207
+type(
+  float
+)
+"command.ml" 233 7163 7208 "command.ml" 233 7163 7210
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( /. )
+)
+"command.ml" 233 7163 7211 "command.ml" 233 7163 7223
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"command.ml" 233 7163 7224 "command.ml" 233 7163 7225
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 233 7163 7225 "command.ml" 233 7163 7234
+type(
+  int ref
+)
+ident(
+  int_ref xcountall "command.ml" 215 6754 6760 "command.ml" 215 6754 6769
+)
+"command.ml" 233 7163 7224 "command.ml" 233 7163 7234
+type(
+  int
+)
+"command.ml" 233 7163 7211 "command.ml" 233 7163 7234
+type(
+  float
+)
+"command.ml" 233 7163 7186 "command.ml" 233 7163 7234
+type(
+  float
+)
+"command.ml" 234 7238 7250 "command.ml" 234 7238 7262
+type(
+  float
+)
+ident(
+  def xaveragepara "command.ml" 235 7311 7319 "command.ml" 236 7425 7495
+)
+"command.ml" 234 7238 7265 "command.ml" 234 7238 7277
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"command.ml" 234 7238 7278 "command.ml" 234 7238 7279
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 234 7238 7279 "command.ml" 234 7238 7283
+type(
+  int ref
+)
+ident(
+  int_ref xsum "command.ml" 212 6683 6689 "command.ml" 212 6683 6693
+)
+"command.ml" 234 7238 7278 "command.ml" 234 7238 7283
+type(
+  int
+)
+"command.ml" 234 7238 7265 "command.ml" 234 7238 7283
+type(
+  float
+)
+"command.ml" 234 7238 7284 "command.ml" 234 7238 7286
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( /. )
+)
+"command.ml" 234 7238 7287 "command.ml" 234 7238 7299
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"command.ml" 234 7238 7300 "command.ml" 234 7238 7301
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 234 7238 7301 "command.ml" 234 7238 7307
+type(
+  int ref
+)
+ident(
+  int_ref xcount "command.ml" 214 6730 6736 "command.ml" 214 6730 6742
+)
+"command.ml" 234 7238 7300 "command.ml" 234 7238 7307
+type(
+  int
+)
+"command.ml" 234 7238 7287 "command.ml" 234 7238 7307
+type(
+  float
+)
+"command.ml" 234 7238 7265 "command.ml" 234 7238 7307
+type(
+  float
+)
+"command.ml" 235 7311 7319 "command.ml" 235 7311 7326
+type(
+  int ->
+  (int -> int -> int -> int -> float -> float -> unit, Format.formatter,
+   unit)
+  format -> int -> int -> int -> int -> float -> float -> unit
+)
+ident(
+  ext_ref Log.dprintf
+)
+"command.ml" 235 7311 7327 "command.ml" 235 7311 7328
+type(
+  int
+)
+"command.ml" 235 7311 7329 "command.ml" 235 7311 7424
+type(
+  (int -> int -> int -> int -> float -> float -> unit, Format.formatter,
+   unit)
+  format
+)
+"command.ml" 236 7425 7443 "command.ml" 236 7425 7444
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 236 7425 7444 "command.ml" 236 7425 7450
+type(
+  int ref
+)
+ident(
+  int_ref xcount "command.ml" 214 6730 6736 "command.ml" 214 6730 6742
+)
+"command.ml" 236 7425 7443 "command.ml" 236 7425 7450
+type(
+  int
+)
+"command.ml" 236 7425 7451 "command.ml" 236 7425 7452
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 236 7425 7452 "command.ml" 236 7425 7461
+type(
+  int ref
+)
+ident(
+  int_ref xcountall "command.ml" 215 6754 6760 "command.ml" 215 6754 6769
+)
+"command.ml" 236 7425 7451 "command.ml" 236 7425 7461
+type(
+  int
+)
+"command.ml" 236 7425 7462 "command.ml" 236 7425 7463
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 236 7425 7463 "command.ml" 236 7425 7467
+type(
+  int ref
+)
+ident(
+  int_ref xmax "command.ml" 211 6661 6667 "command.ml" 211 6661 6671
+)
+"command.ml" 236 7425 7462 "command.ml" 236 7425 7467
+type(
+  int
+)
+"command.ml" 236 7425 7468 "command.ml" 236 7425 7469
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 236 7425 7469 "command.ml" 236 7425 7473
+type(
+  int ref
+)
+ident(
+  int_ref xmin "command.ml" 210 6633 6639 "command.ml" 210 6633 6643
+)
+"command.ml" 236 7425 7468 "command.ml" 236 7425 7473
+type(
+  int
+)
+"command.ml" 236 7425 7474 "command.ml" 236 7425 7486
+type(
+  float
+)
+ident(
+  int_ref xaveragepara "command.ml" 234 7238 7250 "command.ml" 234 7238 7262
+)
+"command.ml" 236 7425 7487 "command.ml" 236 7425 7495
+type(
+  float
+)
+ident(
+  int_ref xaverage "command.ml" 233 7163 7175 "command.ml" 233 7163 7183
+)
+"command.ml" 235 7311 7319 "command.ml" 236 7425 7495
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 234 7238 7246 "command.ml" 236 7425 7495
+type(
+  unit
+)
+"command.ml" 233 7163 7171 "command.ml" 236 7425 7495
+type(
+  unit
+)
+"command.ml" 230 7084 7090 "command.ml" 236 7425 7495
+type(
+  unit
+)
+"command.ml" 229 7061 7065 "command.ml" 236 7425 7495
+type(
+  unit
+)
+"command.ml" 238 7501 7503 "command.ml" 238 7501 7520
+type(
+  int -> unit
+)
+ident(
+  int_ref add_parallel_stat "command.ml" 216 6781 6787 "command.ml" 216 6781 6804
+)
+"command.ml" 238 7501 7522 "command.ml" 238 7501 7541
+type(
+  unit -> unit
+)
+ident(
+  int_ref dump_parallel_stats "command.ml" 228 7030 7036 "command.ml" 228 7030 7055
+)
+"command.ml" 238 7501 7503 "command.ml" 238 7501 7541
+type(
+  (int -> unit) * (unit -> unit)
+)
+"command.ml" 228 7030 7032 "command.ml" 238 7501 7541
+type(
+  (int -> unit) * (unit -> unit)
+)
+"command.ml" 216 6781 6783 "command.ml" 238 7501 7541
+type(
+  (int -> unit) * (unit -> unit)
+)
+"command.ml" 215 6754 6756 "command.ml" 238 7501 7541
+type(
+  (int -> unit) * (unit -> unit)
+)
+"command.ml" 214 6730 6732 "command.ml" 238 7501 7541
+type(
+  (int -> unit) * (unit -> unit)
+)
+"command.ml" 213 6705 6707 "command.ml" 238 7501 7541
+type(
+  (int -> unit) * (unit -> unit)
+)
+"command.ml" 212 6683 6685 "command.ml" 238 7501 7541
+type(
+  (int -> unit) * (unit -> unit)
+)
+"command.ml" 211 6661 6663 "command.ml" 238 7501 7541
+type(
+  (int -> unit) * (unit -> unit)
+)
+"command.ml" 210 6633 6635 "command.ml" 238 7501 7541
+type(
+  (int -> unit) * (unit -> unit)
+)
+"command.ml" 241 7570 7576 "command.ml" 241 7570 7583
+type(
+  string list -> string -> unit
+)
+ident(
+  def do_echo "command.ml" 245 7698 7700 "command.ml" 246 7758 7761
+)
+"command.ml" 241 7570 7584 "command.ml" 241 7570 7589
+type(
+  string list
+)
+ident(
+  def texts "command.ml" 241 7570 7590 "command.ml" 244 7690 7697
+)
+"command.ml" 241 7570 7590 "command.ml" 241 7570 7599
+type(
+  string
+)
+ident(
+  def dest_path "command.ml" 242 7602 7606 "command.ml" 244 7690 7697
+)
+"command.ml" 242 7602 7606 "command.ml" 242 7602 7622
+type(
+  ?bin:bool -> string -> (out_channel -> unit) -> unit
+)
+ident(
+  ext_ref My_std.with_output_file
+)
+"command.ml" 242 7602 7623 "command.ml" 242 7602 7632
+type(
+  string
+)
+ident(
+  int_ref dest_path "command.ml" 241 7570 7590 "command.ml" 241 7570 7599
+)
+"command.ml" 242 7602 7643 "command.ml" 242 7602 7645
+type(
+  out_channel
+)
+ident(
+  def oc "command.ml" 243 7649 7655 "command.ml" 243 7649 7689
+)
+"command.ml" 243 7649 7655 "command.ml" 243 7649 7664
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"command.ml" 243 7649 7666 "command.ml" 243 7649 7679
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"command.ml" 243 7649 7680 "command.ml" 243 7649 7682
+type(
+  out_channel
+)
+ident(
+  int_ref oc "command.ml" 242 7602 7643 "command.ml" 242 7602 7645
+)
+"command.ml" 243 7649 7665 "command.ml" 243 7649 7683
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"command.ml" 243 7649 7684 "command.ml" 243 7649 7689
+type(
+  string list
+)
+ident(
+  int_ref texts "command.ml" 241 7570 7584 "command.ml" 241 7570 7589
+)
+"command.ml" 243 7649 7655 "command.ml" 243 7649 7689
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 242 7602 7633 "command.ml" 244 7690 7697
+type(
+  out_channel -> unit
+)
+"command.ml" 242 7602 7606 "command.ml" 244 7690 7697
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 245 7698 7704 "command.ml" 245 7698 7708
+type(
+  string list -> string -> unit -> string
+)
+ident(
+  def echo "command.ml" 245 7698 7757 "command.ml" 246 7758 7761
+)
+"command.ml" 245 7698 7709 "command.ml" 245 7698 7710
+type(
+  string list
+)
+ident(
+  def x "command.ml" 245 7698 7711 "command.ml" 245 7698 7757
+)
+"command.ml" 245 7698 7711 "command.ml" 245 7698 7712
+type(
+  string
+)
+ident(
+  def y "command.ml" 245 7698 7713 "command.ml" 245 7698 7757
+)
+"command.ml" 245 7698 7713 "command.ml" 245 7698 7715
+type(
+  unit
+)
+"command.ml" 245 7698 7742 "command.ml" 245 7698 7749
+type(
+  string list -> string -> unit
+)
+ident(
+  int_ref do_echo "command.ml" 241 7570 7576 "command.ml" 241 7570 7583
+)
+"command.ml" 245 7698 7750 "command.ml" 245 7698 7751
+type(
+  string list
+)
+ident(
+  int_ref x "command.ml" 245 7698 7709 "command.ml" 245 7698 7710
+)
+"command.ml" 245 7698 7752 "command.ml" 245 7698 7753
+type(
+  string
+)
+ident(
+  int_ref y "command.ml" 245 7698 7711 "command.ml" 245 7698 7712
+)
+"command.ml" 245 7698 7742 "command.ml" 245 7698 7753
+call(
+  stack
+)
+type(
+  unit
+)
+"command.ml" 245 7698 7755 "command.ml" 245 7698 7757
+type(
+  string
+)
+"command.ml" 245 7698 7742 "command.ml" 245 7698 7757
+type(
+  string
+)
+"command.ml" 248 7763 7771 "command.ml" 248 7763 7784
+type(
+  ('a -> unit) -> 'a list -> unit
+)
+ident(
+  def list_rev_iter "command.ml" 248 7763 7763 "command.ml" 1 0 -1
+)
+"command.ml" 248 7763 7785 "command.ml" 248 7763 7786
+type(
+  'a -> unit
+)
+ident(
+  def f "command.ml" 249 7789 7791 "command.ml" 251 7813 7851
+)
+"command.ml" 250 7800 7804 "command.ml" 250 7800 7806
+type(
+  'a list
+)
+"command.ml" 250 7800 7810 "command.ml" 250 7800 7812
+type(
+  unit
+)
+"command.ml" 251 7813 7817 "command.ml" 251 7813 7818
+type(
+  'a
+)
+ident(
+  def x "command.ml" 251 7813 7828 "command.ml" 251 7813 7851
+)
+"command.ml" 251 7813 7822 "command.ml" 251 7813 7824
+type(
+  'a list
+)
+ident(
+  def xs "command.ml" 251 7813 7828 "command.ml" 251 7813 7851
+)
+"command.ml" 251 7813 7817 "command.ml" 251 7813 7824
+type(
+  'a list
+)
+"command.ml" 251 7813 7828 "command.ml" 251 7813 7841
+type(
+  ('a -> unit) -> 'a list -> unit
+)
+ident(
+  int_ref list_rev_iter "command.ml" 248 7763 7771 "command.ml" 248 7763 7784
+)
+"command.ml" 251 7813 7842 "command.ml" 251 7813 7843
+type(
+  'a -> unit
+)
+ident(
+  int_ref f "command.ml" 248 7763 7785 "command.ml" 248 7763 7786
+)
+"command.ml" 251 7813 7844 "command.ml" 251 7813 7846
+type(
+  'a list
+)
+ident(
+  int_ref xs "command.ml" 251 7813 7822 "command.ml" 251 7813 7824
+)
+"command.ml" 251 7813 7828 "command.ml" 251 7813 7846
+call(
+  stack
+)
+type(
+  unit
+)
+"command.ml" 251 7813 7848 "command.ml" 251 7813 7849
+type(
+  'a -> unit
+)
+ident(
+  int_ref f "command.ml" 248 7763 7785 "command.ml" 248 7763 7786
+)
+"command.ml" 251 7813 7850 "command.ml" 251 7813 7851
+type(
+  'a
+)
+ident(
+  int_ref x "command.ml" 251 7813 7817 "command.ml" 251 7813 7818
+)
+"command.ml" 251 7813 7848 "command.ml" 251 7813 7851
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 251 7813 7828 "command.ml" 251 7813 7851
+type(
+  unit
+)
+"command.ml" 249 7789 7791 "command.ml" 251 7813 7851
+type(
+  'a list -> unit
+)
+"command.ml" 253 7853 7857 "command.ml" 253 7853 7873
+type(
+  bool -> bool -> t -> (unit -> string) list
+)
+ident(
+  def flatten_commands "command.ml" 263 8224 8224 "command.ml" 1 0 -1
+)
+"command.ml" 253 7853 7874 "command.ml" 253 7853 7879
+type(
+  bool
+)
+ident(
+  def quiet "command.ml" 253 7853 7880 "command.ml" 261 8193 8222
+)
+"command.ml" 253 7853 7880 "command.ml" 253 7853 7887
+type(
+  bool
+)
+ident(
+  def pretend "command.ml" 253 7853 7888 "command.ml" 261 8193 8222
+)
+"command.ml" 253 7853 7888 "command.ml" 253 7853 7891
+type(
+  t
+)
+ident(
+  def cmd "command.ml" 254 7894 7896 "command.ml" 261 8193 8222
+)
+"command.ml" 254 7894 7904 "command.ml" 254 7894 7908
+type(
+  (unit -> string) list -> t list -> (unit -> string) list
+)
+ident(
+  def loop "command.ml" 254 7894 7896 "command.ml" 261 8193 8222
+)
+"command.ml" 254 7894 7909 "command.ml" 254 7894 7912
+type(
+  (unit -> string) list
+)
+ident(
+  def acc "command.ml" 255 7915 7919 "command.ml" 260 8151 8192
+)
+"command.ml" 256 7928 7934 "command.ml" 256 7928 7936
+type(
+  t list
+)
+"command.ml" 256 7928 7940 "command.ml" 256 7928 7943
+type(
+  (unit -> string) list
+)
+ident(
+  int_ref acc "command.ml" 254 7894 7909 "command.ml" 254 7894 7912
+)
+"command.ml" 257 7944 7950 "command.ml" 257 7944 7953
+type(
+  t
+)
+"command.ml" 257 7944 7957 "command.ml" 257 7944 7959
+type(
+  t list
+)
+ident(
+  def xs "command.ml" 257 7944 7963 "command.ml" 257 7944 7974
+)
+"command.ml" 257 7944 7950 "command.ml" 257 7944 7959
+type(
+  t list
+)
+"command.ml" 257 7944 7963 "command.ml" 257 7944 7967
+type(
+  (unit -> string) list -> t list -> (unit -> string) list
+)
+ident(
+  int_ref loop "command.ml" 254 7894 7904 "command.ml" 254 7894 7908
+)
+"command.ml" 257 7944 7968 "command.ml" 257 7944 7971
+type(
+  (unit -> string) list
+)
+ident(
+  int_ref acc "command.ml" 254 7894 7909 "command.ml" 254 7894 7912
+)
+"command.ml" 257 7944 7972 "command.ml" 257 7944 7974
+type(
+  t list
+)
+ident(
+  int_ref xs "command.ml" 257 7944 7957 "command.ml" 257 7944 7959
+)
+"command.ml" 257 7944 7963 "command.ml" 257 7944 7974
+call(
+  tail
+)
+type(
+  (unit -> string) list
+)
+"command.ml" 258 7975 7985 "command.ml" 258 7975 7989
+type(
+  spec
+)
+ident(
+  def spec "command.ml" 258 7975 7999 "command.ml" 258 7975 8063
+)
+"command.ml" 258 7975 7981 "command.ml" 258 7975 7989
+type(
+  t
+)
+"command.ml" 258 7975 7993 "command.ml" 258 7975 7995
+type(
+  t list
+)
+ident(
+  def xs "command.ml" 258 7975 7999 "command.ml" 258 7975 8063
+)
+"command.ml" 258 7975 7981 "command.ml" 258 7975 7995
+type(
+  t list
+)
+"command.ml" 258 7975 7999 "command.ml" 258 7975 8003
+type(
+  (unit -> string) list -> t list -> (unit -> string) list
+)
+ident(
+  int_ref loop "command.ml" 254 7894 7904 "command.ml" 254 7894 7908
+)
+"command.ml" 258 7975 8005 "command.ml" 258 7975 8033
+type(
+  spec -> bool -> bool -> unit -> string
+)
+ident(
+  int_ref string_print_of_command_spec "command.ml" 191 5959 5963 "command.ml" 191 5959 5991
+)
+"command.ml" 258 7975 8034 "command.ml" 258 7975 8038
+type(
+  spec
+)
+ident(
+  int_ref spec "command.ml" 258 7975 7985 "command.ml" 258 7975 7989
+)
+"command.ml" 258 7975 8039 "command.ml" 258 7975 8044
+type(
+  bool
+)
+ident(
+  int_ref quiet "command.ml" 253 7853 7874 "command.ml" 253 7853 7879
+)
+"command.ml" 258 7975 8045 "command.ml" 258 7975 8052
+type(
+  bool
+)
+ident(
+  int_ref pretend "command.ml" 253 7853 7880 "command.ml" 253 7853 7887
+)
+"command.ml" 258 7975 8005 "command.ml" 258 7975 8052
+call(
+  stack
+)
+type(
+  unit -> string
+)
+"command.ml" 258 7975 8056 "command.ml" 258 7975 8059
+type(
+  (unit -> string) list
+)
+ident(
+  int_ref acc "command.ml" 254 7894 7909 "command.ml" 254 7894 7912
+)
+"command.ml" 258 7975 8004 "command.ml" 258 7975 8060
+type(
+  (unit -> string) list
+)
+"command.ml" 258 7975 8061 "command.ml" 258 7975 8063
+type(
+  t list
+)
+ident(
+  int_ref xs "command.ml" 258 7975 7993 "command.ml" 258 7975 7995
+)
+"command.ml" 258 7975 7999 "command.ml" 258 7975 8063
+call(
+  tail
+)
+type(
+  (unit -> string) list
+)
+"command.ml" 259 8064 8075 "command.ml" 259 8064 8080
+type(
+  string list
+)
+ident(
+  def texts "command.ml" 259 8064 8102 "command.ml" 259 8064 8150
+)
+"command.ml" 259 8064 8082 "command.ml" 259 8064 8091
+type(
+  pathname
+)
+ident(
+  def dest_path "command.ml" 259 8064 8102 "command.ml" 259 8064 8150
+)
+"command.ml" 259 8064 8070 "command.ml" 259 8064 8092
+type(
+  t
+)
+"command.ml" 259 8064 8096 "command.ml" 259 8064 8098
+type(
+  t list
+)
+ident(
+  def xs "command.ml" 259 8064 8102 "command.ml" 259 8064 8150
+)
+"command.ml" 259 8064 8070 "command.ml" 259 8064 8098
+type(
+  t list
+)
+"command.ml" 259 8064 8102 "command.ml" 259 8064 8106
+type(
+  (unit -> string) list -> t list -> (unit -> string) list
+)
+ident(
+  int_ref loop "command.ml" 254 7894 7904 "command.ml" 254 7894 7908
+)
+"command.ml" 259 8064 8108 "command.ml" 259 8064 8123
+type(
+  string list -> pathname -> unit -> string
+)
+ident(
+  int_ref Primitives.echo "command.ml" 245 7698 7704 "command.ml" 245 7698 7708
+)
+"command.ml" 259 8064 8124 "command.ml" 259 8064 8129
+type(
+  string list
+)
+ident(
+  int_ref texts "command.ml" 259 8064 8075 "command.ml" 259 8064 8080
+)
+"command.ml" 259 8064 8130 "command.ml" 259 8064 8139
+type(
+  pathname
+)
+ident(
+  int_ref dest_path "command.ml" 259 8064 8082 "command.ml" 259 8064 8091
+)
+"command.ml" 259 8064 8108 "command.ml" 259 8064 8139
+call(
+  stack
+)
+type(
+  unit -> string
+)
+"command.ml" 259 8064 8143 "command.ml" 259 8064 8146
+type(
+  (unit -> string) list
+)
+ident(
+  int_ref acc "command.ml" 254 7894 7909 "command.ml" 254 7894 7912
+)
+"command.ml" 259 8064 8107 "command.ml" 259 8064 8147
+type(
+  (unit -> string) list
+)
+"command.ml" 259 8064 8148 "command.ml" 259 8064 8150
+type(
+  t list
+)
+ident(
+  int_ref xs "command.ml" 259 8064 8096 "command.ml" 259 8064 8098
+)
+"command.ml" 259 8064 8102 "command.ml" 259 8064 8150
+call(
+  tail
+)
+type(
+  (unit -> string) list
+)
+"command.ml" 260 8151 8161 "command.ml" 260 8151 8162
+type(
+  t list
+)
+ident(
+  def l "command.ml" 260 8151 8172 "command.ml" 260 8151 8192
+)
+"command.ml" 260 8151 8157 "command.ml" 260 8151 8162
+type(
+  t
+)
+"command.ml" 260 8151 8166 "command.ml" 260 8151 8168
+type(
+  t list
+)
+ident(
+  def xs "command.ml" 260 8151 8172 "command.ml" 260 8151 8192
+)
+"command.ml" 260 8151 8157 "command.ml" 260 8151 8168
+type(
+  t list
+)
+"command.ml" 260 8151 8172 "command.ml" 260 8151 8176
+type(
+  (unit -> string) list -> t list -> (unit -> string) list
+)
+ident(
+  int_ref loop "command.ml" 254 7894 7904 "command.ml" 254 7894 7908
+)
+"command.ml" 260 8151 8178 "command.ml" 260 8151 8182
+type(
+  (unit -> string) list -> t list -> (unit -> string) list
+)
+ident(
+  int_ref loop "command.ml" 254 7894 7904 "command.ml" 254 7894 7908
+)
+"command.ml" 260 8151 8183 "command.ml" 260 8151 8186
+type(
+  (unit -> string) list
+)
+ident(
+  int_ref acc "command.ml" 254 7894 7909 "command.ml" 254 7894 7912
+)
+"command.ml" 260 8151 8187 "command.ml" 260 8151 8188
+type(
+  t list
+)
+ident(
+  int_ref l "command.ml" 260 8151 8161 "command.ml" 260 8151 8162
+)
+"command.ml" 260 8151 8177 "command.ml" 260 8151 8189
+call(
+  stack
+)
+type(
+  (unit -> string) list
+)
+"command.ml" 260 8151 8190 "command.ml" 260 8151 8192
+type(
+  t list
+)
+ident(
+  int_ref xs "command.ml" 260 8151 8166 "command.ml" 260 8151 8168
+)
+"command.ml" 260 8151 8172 "command.ml" 260 8151 8192
+call(
+  tail
+)
+type(
+  (unit -> string) list
+)
+"command.ml" 255 7915 7919 "command.ml" 260 8151 8192
+type(
+  t list -> (unit -> string) list
+)
+"command.ml" 261 8193 8198 "command.ml" 261 8193 8206
+type(
+  (unit -> string) list -> (unit -> string) list
+)
+ident(
+  ext_ref My_std.List.rev
+)
+"command.ml" 261 8193 8208 "command.ml" 261 8193 8212
+type(
+  (unit -> string) list -> t list -> (unit -> string) list
+)
+ident(
+  int_ref loop "command.ml" 254 7894 7904 "command.ml" 254 7894 7908
+)
+"command.ml" 261 8193 8213 "command.ml" 261 8193 8215
+type(
+  (unit -> string) list
+)
+"command.ml" 261 8193 8217 "command.ml" 261 8193 8220
+type(
+  t
+)
+ident(
+  int_ref cmd "command.ml" 253 7853 7888 "command.ml" 253 7853 7891
+)
+"command.ml" 261 8193 8216 "command.ml" 261 8193 8221
+type(
+  t list
+)
+"command.ml" 261 8193 8207 "command.ml" 261 8193 8222
+call(
+  stack
+)
+type(
+  (unit -> string) list
+)
+"command.ml" 261 8193 8198 "command.ml" 261 8193 8222
+call(
+  tail
+)
+type(
+  (unit -> string) list
+)
+"command.ml" 254 7894 7896 "command.ml" 261 8193 8222
+type(
+  (unit -> string) list
+)
+"command.ml" 263 8224 8228 "command.ml" 263 8224 8240
+type(
+  ?quiet:bool -> ?pretend:bool -> t list -> (bool list * exn) option
+)
+ident(
+  def execute_many "command.ml" 316 10000 10000 "command.ml" 1 0 -1
+)
+"command.ml" 263 8224 8243 "command.ml" 263 8224 8248
+type(
+  bool
+)
+"command.ml" 263 8224 8249 "command.ml" 263 8224 8254
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "command.ml" 263 8224 8249 "command.ml" 263 8224 8254
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"command.ml" 263 8224 8258 "command.ml" 263 8224 8265
+type(
+  bool
+)
+"command.ml" 263 8224 8266 "command.ml" 263 8224 8271
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "command.ml" 263 8224 8266 "command.ml" 263 8224 8271
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"command.ml" 263 8224 8273 "command.ml" 263 8224 8277
+type(
+  t list
+)
+ident(
+  def cmds "command.ml" 264 8280 8282 "command.ml" 313 9988 9995
+)
+"command.ml" 264 8280 8282 "command.ml" 264 8280 8299
+type(
+  int -> unit
+)
+ident(
+  int_ref add_parallel_stat "command.ml" 209 6588 6592 "command.ml" 209 6588 6609
+)
+"command.ml" 264 8280 8301 "command.ml" 264 8280 8312
+type(
+  t list -> int
+)
+ident(
+  ext_ref My_std.List.length
+)
+"command.ml" 264 8280 8313 "command.ml" 264 8280 8317
+type(
+  t list
+)
+ident(
+  int_ref cmds "command.ml" 263 8224 8273 "command.ml" 263 8224 8277
+)
+"command.ml" 264 8280 8300 "command.ml" 264 8280 8318
+call(
+  stack
+)
+type(
+  int
+)
+"command.ml" 264 8280 8282 "command.ml" 264 8280 8318
+call(
+  stack
+)
+type(
+  unit
+)
+"command.ml" 265 8320 8326 "command.ml" 265 8320 8334
+type(
+  bool
+)
+ident(
+  def degraded "command.ml" 266 8387 8389 "command.ml" 313 9988 9995
+)
+"command.ml" 265 8320 8337 "command.ml" 265 8320 8339
+type(
+  bool Lazy.t -> bool
+)
+ident(
+  ext_ref My_std.( !* )
+)
+"command.ml" 265 8320 8339 "command.ml" 265 8320 8358
+type(
+  bool Lazy.t
+)
+ident(
+  ext_ref My_unix.is_degraded
+)
+"command.ml" 265 8320 8337 "command.ml" 265 8320 8358
+call(
+  stack
+)
+type(
+  bool
+)
+"command.ml" 265 8320 8359 "command.ml" 265 8320 8361
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"command.ml" 265 8320 8362 "command.ml" 265 8320 8373
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"command.ml" 265 8320 8374 "command.ml" 265 8320 8375
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"command.ml" 265 8320 8376 "command.ml" 265 8320 8383
+type(
+  string
+)
+"command.ml" 265 8320 8362 "command.ml" 265 8320 8383
+type(
+  bool
+)
+"command.ml" 265 8320 8337 "command.ml" 265 8320 8383
+type(
+  bool
+)
+"command.ml" 266 8387 8393 "command.ml" 266 8387 8397
+type(
+  int
+)
+ident(
+  def jobs "command.ml" 267 8409 8411 "command.ml" 313 9988 9995
+)
+"command.ml" 266 8387 8400 "command.ml" 266 8387 8401
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 266 8387 8401 "command.ml" 266 8387 8405
+type(
+  int ref
+)
+ident(
+  int_ref jobs "command.ml" 23 937 941 "command.ml" 23 937 945
+)
+"command.ml" 266 8387 8400 "command.ml" 266 8387 8405
+type(
+  int
+)
+"command.ml" 267 8409 8414 "command.ml" 267 8409 8418
+type(
+  int
+)
+ident(
+  int_ref jobs "command.ml" 266 8387 8393 "command.ml" 266 8387 8397
+)
+"command.ml" 267 8409 8419 "command.ml" 267 8409 8420
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"command.ml" 267 8409 8421 "command.ml" 267 8409 8422
+type(
+  int
+)
+"command.ml" 267 8409 8414 "command.ml" 267 8409 8422
+type(
+  bool
+)
+"command.ml" 267 8409 8428 "command.ml" 267 8409 8439
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"command.ml" 267 8409 8440 "command.ml" 267 8409 8450
+type(
+  string
+)
+"command.ml" 267 8409 8428 "command.ml" 267 8409 8450
+call(
+  stack
+)
+type(
+  unit
+)
+"command.ml" 267 8409 8411 "command.ml" 267 8409 8450
+type(
+  unit
+)
+"command.ml" 268 8452 8458 "command.ml" 268 8452 8466
+type(
+  int option
+)
+ident(
+  def max_jobs "command.ml" 270 8510 8512 "command.ml" 313 9988 9995
+)
+"command.ml" 268 8452 8472 "command.ml" 268 8452 8476
+type(
+  int
+)
+ident(
+  int_ref jobs "command.ml" 266 8387 8393 "command.ml" 266 8387 8397
+)
+"command.ml" 268 8452 8477 "command.ml" 268 8452 8478
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"command.ml" 268 8452 8479 "command.ml" 268 8452 8480
+type(
+  int
+)
+"command.ml" 268 8452 8472 "command.ml" 268 8452 8480
+type(
+  bool
+)
+"command.ml" 268 8452 8486 "command.ml" 268 8452 8490
+type(
+  int option
+)
+"command.ml" 268 8452 8501 "command.ml" 268 8452 8505
+type(
+  int
+)
+ident(
+  int_ref jobs "command.ml" 266 8387 8393 "command.ml" 266 8387 8397
+)
+"command.ml" 268 8452 8496 "command.ml" 268 8452 8505
+type(
+  int option
+)
+"command.ml" 268 8452 8469 "command.ml" 268 8452 8505
+type(
+  int option
+)
+"command.ml" 270 8510 8516 "command.ml" 270 8510 8522
+type(
+  unit -> unit
+)
+ident(
+  def ticker "command.ml" 271 8539 8541 "command.ml" 313 9988 9995
+)
+"command.ml" 270 8510 8525 "command.ml" 270 8510 8535
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Log.update
+)
+"command.ml" 271 8539 8545 "command.ml" 271 8539 8552
+type(
+  (out_channel -> unit) -> unit
+)
+ident(
+  def display "command.ml" 273 8571 8573 "command.ml" 313 9988 9995
+)
+"command.ml" 271 8539 8555 "command.ml" 271 8539 8566
+type(
+  (out_channel -> unit) -> unit
+)
+ident(
+  ext_ref Log.display
+)
+"command.ml" 273 8571 8576 "command.ml" 273 8571 8580
+type(
+  t list
+)
+ident(
+  int_ref cmds "command.ml" 263 8224 8273 "command.ml" 263 8224 8277
+)
+"command.ml" 273 8571 8581 "command.ml" 273 8571 8582
+type(
+  t list -> t list -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"command.ml" 273 8571 8583 "command.ml" 273 8571 8585
+type(
+  t list
+)
+"command.ml" 273 8571 8576 "command.ml" 273 8571 8585
+type(
+  bool
+)
+"command.ml" 274 8591 8595 "command.ml" 274 8591 8599
+type(
+  (bool list * exn) option
+)
+"command.ml" 277 8617 8627 "command.ml" 277 8617 8632
+type(
+  (unit -> string) list list
+)
+ident(
+  def konts "command.ml" 278 8685 8691 "command.ml" 312 9976 9987
+)
+"command.ml" 277 8617 8635 "command.ml" 277 8617 8643
+type(
+  (t -> (unit -> string) list) -> t list -> (unit -> string) list list
+)
+ident(
+  ext_ref My_std.List.map
+)
+"command.ml" 277 8617 8645 "command.ml" 277 8617 8661
+type(
+  bool -> bool -> t -> (unit -> string) list
+)
+ident(
+  int_ref flatten_commands "command.ml" 253 7853 7857 "command.ml" 253 7853 7873
+)
+"command.ml" 277 8617 8662 "command.ml" 277 8617 8667
+type(
+  bool
+)
+ident(
+  int_ref quiet "command.ml" 263 8224 8243 "command.ml" 263 8224 8248
+)
+"command.ml" 277 8617 8668 "command.ml" 277 8617 8675
+type(
+  bool
+)
+ident(
+  int_ref pretend "command.ml" 263 8224 8258 "command.ml" 263 8224 8265
+)
+"command.ml" 277 8617 8644 "command.ml" 277 8617 8676
+call(
+  stack
+)
+type(
+  t -> (unit -> string) list
+)
+"command.ml" 277 8617 8677 "command.ml" 277 8617 8681
+type(
+  t list
+)
+ident(
+  int_ref cmds "command.ml" 263 8224 8273 "command.ml" 263 8224 8277
+)
+"command.ml" 277 8617 8635 "command.ml" 277 8617 8681
+call(
+  stack
+)
+type(
+  (unit -> string) list list
+)
+"command.ml" 278 8685 8694 "command.ml" 278 8685 8701
+type(
+  bool
+)
+ident(
+  int_ref pretend "command.ml" 263 8224 8258 "command.ml" 263 8224 8265
+)
+"command.ml" 280 8721 8731 "command.ml" 280 8721 8740
+type(
+  ((unit -> string) list -> unit) -> (unit -> string) list list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"command.ml" 280 8721 8742 "command.ml" 280 8721 8751
+type(
+  ((unit -> string) -> unit) -> (unit -> string) list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"command.ml" 280 8721 8757 "command.ml" 280 8721 8758
+type(
+  unit -> string
+)
+ident(
+  def f "command.ml" 280 8721 8762 "command.ml" 280 8721 8775
+)
+"command.ml" 280 8721 8762 "command.ml" 280 8721 8768
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"command.ml" 280 8721 8770 "command.ml" 280 8721 8771
+type(
+  unit -> string
+)
+ident(
+  int_ref f "command.ml" 280 8721 8757 "command.ml" 280 8721 8758
+)
+"command.ml" 280 8721 8772 "command.ml" 280 8721 8774
+type(
+  unit
+)
+"command.ml" 280 8721 8769 "command.ml" 280 8721 8775
+call(
+  stack
+)
+type(
+  string
+)
+"command.ml" 280 8721 8762 "command.ml" 280 8721 8775
+type(
+  unit
+)
+"command.ml" 280 8721 8752 "command.ml" 280 8721 8776
+type(
+  (unit -> string) -> unit
+)
+"command.ml" 280 8721 8741 "command.ml" 280 8721 8777
+call(
+  stack
+)
+type(
+  (unit -> string) list -> unit
+)
+"command.ml" 280 8721 8778 "command.ml" 280 8721 8783
+type(
+  (unit -> string) list list
+)
+ident(
+  int_ref konts "command.ml" 277 8617 8627 "command.ml" 277 8617 8632
+)
+"command.ml" 280 8721 8731 "command.ml" 280 8721 8783
+call(
+  stack
+)
+type(
+  unit
+)
+"command.ml" 281 8785 8795 "command.ml" 281 8785 8799
+type(
+  (bool list * exn) option
+)
+"command.ml" 279 8707 8715 "command.ml" 282 8800 8811
+type(
+  (bool list * exn) option
+)
+"command.ml" 285 8837 8847 "command.ml" 285 8837 8866
+type(
+  unit -> unit
+)
+ident(
+  ext_ref My_std.reset_filesys_cache
+)
+"command.ml" 285 8837 8867 "command.ml" 285 8837 8869
+type(
+  unit
+)
+"command.ml" 285 8837 8847 "command.ml" 285 8837 8869
+call(
+  stack
+)
+type(
+  unit
+)
+"command.ml" 286 8871 8884 "command.ml" 286 8871 8892
+type(
+  bool
+)
+ident(
+  int_ref degraded "command.ml" 265 8320 8326 "command.ml" 265 8320 8334
+)
+"command.ml" 287 8898 8914 "command.ml" 287 8898 8917
+type(
+  bool list
+)
+ident(
+  def res "command.ml" 307 9783 9798 "command.ml" 309 9868 9894
+)
+"command.ml" 287 8898 8919 "command.ml" 287 8898 8926
+type(
+  exn option
+)
+ident(
+  def opt_exn "command.ml" 307 9783 9798 "command.ml" 309 9868 9894
+)
+"command.ml" 287 8898 8914 "command.ml" 287 8898 8926
+type(
+  bool list * exn option
+)
+"command.ml" 288 8929 8943 "command.ml" 288 8929 8957
+type(
+  (bool list * exn option -> (unit -> string) list -> bool list * exn option) ->
+  bool list * exn option ->
+  (unit -> string) list list -> bool list * exn option
+)
+ident(
+  ext_ref My_std.List.fold_left
+)
+"command.ml" 288 8929 8969 "command.ml" 288 8929 8976
+type(
+  bool list
+)
+ident(
+  def acc_res "command.ml" 288 8929 8987 "command.ml" 305 9694 9747
+)
+"command.ml" 288 8929 8978 "command.ml" 288 8929 8985
+type(
+  exn option
+)
+ident(
+  def acc_exn "command.ml" 288 8929 8987 "command.ml" 305 9694 9747
+)
+"command.ml" 288 8929 8968 "command.ml" 288 8929 8986
+type(
+  bool list * exn option
+)
+"command.ml" 288 8929 8987 "command.ml" 288 8929 8991
+type(
+  (unit -> string) list
+)
+ident(
+  def cmds "command.ml" 289 8995 9011 "command.ml" 305 9694 9747
+)
+"command.ml" 289 8995 9017 "command.ml" 289 8995 9024
+type(
+  exn option
+)
+ident(
+  int_ref acc_exn "command.ml" 288 8929 8978 "command.ml" 288 8929 8985
+)
+"command.ml" 290 9030 9048 "command.ml" 290 9030 9052
+type(
+  exn option
+)
+"command.ml" 292 9086 9108 "command.ml" 292 9086 9117
+type(
+  ((unit -> string) -> unit) -> (unit -> string) list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"command.ml" 292 9086 9128 "command.ml" 292 9086 9134
+type(
+  unit -> string
+)
+ident(
+  def action "command.ml" 293 9138 9162 "command.ml" 300 9511 9538
+)
+"command.ml" 293 9138 9166 "command.ml" 293 9138 9169
+type(
+  string
+)
+ident(
+  def cmd "command.ml" 294 9185 9209 "command.ml" 300 9511 9538
+)
+"command.ml" 293 9138 9172 "command.ml" 293 9138 9178
+type(
+  unit -> string
+)
+ident(
+  int_ref action "command.ml" 292 9086 9128 "command.ml" 292 9086 9134
+)
+"command.ml" 293 9138 9179 "command.ml" 293 9138 9181
+type(
+  unit
+)
+"command.ml" 293 9138 9172 "command.ml" 293 9138 9181
+call(
+  stack
+)
+type(
+  string
+)
+"command.ml" 294 9185 9213 "command.ml" 294 9185 9215
+type(
+  int
+)
+ident(
+  def rc "command.ml" 295 9237 9261 "command.ml" 300 9511 9538
+)
+"command.ml" 294 9185 9218 "command.ml" 294 9185 9229
+type(
+  string -> int
+)
+ident(
+  ext_ref My_std.sys_command
+)
+"command.ml" 294 9185 9230 "command.ml" 294 9185 9233
+type(
+  string
+)
+ident(
+  int_ref cmd "command.ml" 293 9138 9166 "command.ml" 293 9138 9169
+)
+"command.ml" 294 9185 9218 "command.ml" 294 9185 9233
+call(
+  stack
+)
+type(
+  int
+)
+"command.ml" 295 9237 9264 "command.ml" 295 9237 9266
+type(
+  int
+)
+ident(
+  int_ref rc "command.ml" 294 9185 9213 "command.ml" 294 9185 9215
+)
+"command.ml" 295 9237 9267 "command.ml" 295 9237 9269
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"command.ml" 295 9237 9270 "command.ml" 295 9237 9271
+type(
+  int
+)
+"command.ml" 295 9237 9264 "command.ml" 295 9237 9271
+type(
+  bool
+)
+"command.ml" 296 9283 9312 "command.ml" 296 9283 9315
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"command.ml" 296 9283 9316 "command.ml" 296 9283 9321
+type(
+  bool
+)
+ident(
+  int_ref quiet "command.ml" 263 8224 8243 "command.ml" 263 8224 8248
+)
+"command.ml" 296 9283 9312 "command.ml" 296 9283 9321
+type(
+  bool
+)
+"command.ml" 297 9327 9355 "command.ml" 297 9327 9362
+type(
+  (int -> string -> unit, Format.formatter, unit) format ->
+  int -> string -> unit
+)
+ident(
+  ext_ref Log.eprintf
+)
+"command.ml" 297 9327 9363 "command.ml" 298 9400 9450
+type(
+  (int -> string -> unit, Format.formatter, unit) format
+)
+"command.ml" 298 9400 9451 "command.ml" 298 9400 9453
+type(
+  int
+)
+ident(
+  int_ref rc "command.ml" 294 9185 9213 "command.ml" 294 9185 9215
+)
+"command.ml" 298 9400 9454 "command.ml" 298 9400 9457
+type(
+  string
+)
+ident(
+  int_ref cmd "command.ml" 293 9138 9166 "command.ml" 293 9138 9169
+)
+"command.ml" 297 9327 9355 "command.ml" 298 9400 9457
+call(
+  stack
+)
+type(
+  unit
+)
+"command.ml" 296 9283 9309 "command.ml" 298 9400 9457
+type(
+  unit
+)
+"command.ml" 299 9459 9485 "command.ml" 299 9459 9490
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"command.ml" 299 9459 9507 "command.ml" 299 9459 9509
+type(
+  int
+)
+ident(
+  int_ref rc "command.ml" 294 9185 9213 "command.ml" 294 9185 9215
+)
+"command.ml" 299 9459 9491 "command.ml" 299 9459 9510
+type(
+  exn
+)
+"command.ml" 299 9459 9485 "command.ml" 299 9459 9510
+type(
+  unit
+)
+"command.ml" 295 9237 9277 "command.ml" 300 9511 9538
+type(
+  unit
+)
+"command.ml" 295 9237 9261 "command.ml" 300 9511 9538
+type(
+  unit
+)
+"command.ml" 294 9185 9209 "command.ml" 300 9511 9538
+type(
+  unit
+)
+"command.ml" 293 9138 9162 "command.ml" 300 9511 9538
+type(
+  unit
+)
+"command.ml" 292 9086 9118 "command.ml" 301 9539 9564
+type(
+  (unit -> string) -> unit
+)
+"command.ml" 301 9539 9565 "command.ml" 301 9539 9569
+type(
+  (unit -> string) list
+)
+ident(
+  int_ref cmds "command.ml" 288 8929 8987 "command.ml" 288 8929 8991
+)
+"command.ml" 292 9086 9108 "command.ml" 301 9539 9569
+call(
+  stack
+)
+type(
+  unit
+)
+"command.ml" 302 9571 9593 "command.ml" 302 9571 9597
+type(
+  bool
+)
+"command.ml" 302 9571 9601 "command.ml" 302 9571 9608
+type(
+  bool list
+)
+ident(
+  int_ref acc_res "command.ml" 288 8929 8969 "command.ml" 288 8929 8976
+)
+"command.ml" 302 9571 9593 "command.ml" 302 9571 9608
+type(
+  bool list
+)
+"command.ml" 302 9571 9610 "command.ml" 302 9571 9614
+type(
+  exn option
+)
+"command.ml" 302 9571 9593 "command.ml" 302 9571 9614
+type(
+  bool list * exn option
+)
+"command.ml" 292 9086 9108 "command.ml" 302 9571 9614
+type(
+  bool list * exn option
+)
+"command.ml" 303 9615 9640 "command.ml" 303 9615 9641
+type(
+  exn
+)
+ident(
+  def e "command.ml" 303 9615 9645 "command.ml" 303 9615 9669
+)
+"command.ml" 303 9615 9645 "command.ml" 303 9615 9650
+type(
+  bool
+)
+"command.ml" 303 9615 9654 "command.ml" 303 9615 9661
+type(
+  bool list
+)
+ident(
+  int_ref acc_res "command.ml" 288 8929 8969 "command.ml" 288 8929 8976
+)
+"command.ml" 303 9615 9645 "command.ml" 303 9615 9661
+type(
+  bool list
+)
+"command.ml" 303 9615 9668 "command.ml" 303 9615 9669
+type(
+  exn
+)
+ident(
+  int_ref e "command.ml" 303 9615 9640 "command.ml" 303 9615 9641
+)
+"command.ml" 303 9615 9663 "command.ml" 303 9615 9669
+type(
+  exn option
+)
+"command.ml" 303 9615 9645 "command.ml" 303 9615 9669
+type(
+  bool list * exn option
+)
+"command.ml" 291 9056 9076 "command.ml" 304 9670 9693
+type(
+  bool list * exn option
+)
+"command.ml" 305 9694 9717 "command.ml" 305 9694 9718
+type(
+  exn
+)
+"command.ml" 305 9694 9712 "command.ml" 305 9694 9718
+type(
+  exn option
+)
+"command.ml" 305 9694 9722 "command.ml" 305 9694 9727
+type(
+  bool
+)
+"command.ml" 305 9694 9731 "command.ml" 305 9694 9738
+type(
+  bool list
+)
+ident(
+  int_ref acc_res "command.ml" 288 8929 8969 "command.ml" 288 8929 8976
+)
+"command.ml" 305 9694 9722 "command.ml" 305 9694 9738
+type(
+  bool list
+)
+"command.ml" 305 9694 9740 "command.ml" 305 9694 9747
+type(
+  exn option
+)
+ident(
+  int_ref acc_exn "command.ml" 288 8929 8978 "command.ml" 288 8929 8985
+)
+"command.ml" 305 9694 9722 "command.ml" 305 9694 9747
+type(
+  bool list * exn option
+)
+"command.ml" 289 8995 9011 "command.ml" 305 9694 9747
+type(
+  bool list * exn option
+)
+"command.ml" 288 8929 8958 "command.ml" 306 9748 9765
+type(
+  bool list * exn option -> (unit -> string) list -> bool list * exn option
+)
+"command.ml" 306 9748 9767 "command.ml" 306 9748 9769
+type(
+  bool list
+)
+"command.ml" 306 9748 9771 "command.ml" 306 9748 9775
+type(
+  exn option
+)
+"command.ml" 306 9748 9766 "command.ml" 306 9748 9776
+type(
+  bool list * exn option
+)
+"command.ml" 306 9748 9777 "command.ml" 306 9748 9782
+type(
+  (unit -> string) list list
+)
+ident(
+  int_ref konts "command.ml" 277 8617 8627 "command.ml" 277 8617 8632
+)
+"command.ml" 288 8929 8943 "command.ml" 306 9748 9782
+call(
+  stack
+)
+type(
+  bool list * exn option
+)
+"command.ml" 307 9783 9804 "command.ml" 307 9783 9811
+type(
+  exn option
+)
+ident(
+  int_ref opt_exn "command.ml" 287 8898 8919 "command.ml" 287 8898 8926
+)
+"command.ml" 308 9817 9836 "command.ml" 308 9817 9839
+ident(
+  def exn "command.ml" 308 9817 9844 "command.ml" 308 9817 9867
+)
+"command.ml" 308 9817 9835 "command.ml" 308 9817 9840
+type(
+  exn
+)
+"command.ml" 308 9817 9831 "command.ml" 308 9817 9840
+type(
+  exn option
+)
+"command.ml" 308 9817 9849 "command.ml" 308 9817 9857
+type(
+  bool list -> bool list
+)
+ident(
+  ext_ref My_std.List.rev
+)
+"command.ml" 308 9817 9858 "command.ml" 308 9817 9861
+type(
+  bool list
+)
+ident(
+  int_ref res "command.ml" 287 8898 8914 "command.ml" 287 8898 8917
+)
+"command.ml" 308 9817 9849 "command.ml" 308 9817 9861
+call(
+  stack
+)
+type(
+  bool list
+)
+"command.ml" 308 9817 9863 "command.ml" 308 9817 9866
+type(
+  exn
+)
+ident(
+  int_ref exn "command.ml" 308 9817 9835 "command.ml" 308 9817 9840
+)
+"command.ml" 308 9817 9848 "command.ml" 308 9817 9867
+type(
+  bool list * exn
+)
+"command.ml" 308 9817 9844 "command.ml" 308 9817 9867
+type(
+  (bool list * exn) option
+)
+"command.ml" 309 9868 9882 "command.ml" 309 9868 9886
+type(
+  exn option
+)
+"command.ml" 309 9868 9890 "command.ml" 309 9868 9894
+type(
+  (bool list * exn) option
+)
+"command.ml" 307 9783 9798 "command.ml" 309 9868 9894
+type(
+  (bool list * exn) option
+)
+"command.ml" 287 8898 8910 "command.ml" 309 9868 9894
+type(
+  (bool list * exn) option
+)
+"command.ml" 311 9910 9922 "command.ml" 311 9910 9942
+type(
+  ?max_jobs:int ->
+  ?ticker:(unit -> unit) ->
+  ?period:float ->
+  ?display:((out_channel -> unit) -> unit) ->
+  (unit -> string) list list -> (bool list * exn) option
+)
+ident(
+  ext_ref My_unix.execute_many
+)
+"command.ml" 311 9910 9944 "command.ml" 311 9910 9950
+type(
+  unit -> unit
+)
+ident(
+  int_ref ticker "command.ml" 270 8510 8516 "command.ml" 270 8510 8522
+)
+"command.ml" 311 9910 9952 "command.ml" 311 9910 9960
+type(
+  int option
+)
+ident(
+  int_ref max_jobs "command.ml" 268 8452 8458 "command.ml" 268 8452 8466
+)
+"command.ml" 311 9910 9962 "command.ml" 311 9910 9969
+type(
+  (out_channel -> unit) -> unit
+)
+ident(
+  int_ref display "command.ml" 271 8539 8545 "command.ml" 271 8539 8552
+)
+"command.ml" 311 9910 9970 "command.ml" 311 9910 9975
+type(
+  (unit -> string) list list
+)
+ident(
+  int_ref konts "command.ml" 277 8617 8627 "command.ml" 277 8617 8632
+)
+"command.ml" 311 9910 9922 "command.ml" 311 9910 9975
+call(
+  tail
+)
+type(
+  (bool list * exn) option
+)
+"command.ml" 286 8871 8881 "command.ml" 311 9910 9975
+type(
+  (bool list * exn) option
+)
+"command.ml" 284 8823 8831 "command.ml" 312 9976 9987
+type(
+  (bool list * exn) option
+)
+"command.ml" 278 8685 8691 "command.ml" 312 9976 9987
+type(
+  (bool list * exn) option
+)
+"command.ml" 276 8607 8611 "command.ml" 313 9988 9995
+type(
+  (bool list * exn) option
+)
+"command.ml" 273 8571 8573 "command.ml" 313 9988 9995
+type(
+  (bool list * exn) option
+)
+"command.ml" 271 8539 8541 "command.ml" 313 9988 9995
+type(
+  (bool list * exn) option
+)
+"command.ml" 270 8510 8512 "command.ml" 313 9988 9995
+type(
+  (bool list * exn) option
+)
+"command.ml" 268 8452 8454 "command.ml" 313 9988 9995
+type(
+  (bool list * exn) option
+)
+"command.ml" 267 8409 8411 "command.ml" 313 9988 9995
+type(
+  (bool list * exn) option
+)
+"command.ml" 266 8387 8389 "command.ml" 313 9988 9995
+type(
+  (bool list * exn) option
+)
+"command.ml" 265 8320 8322 "command.ml" 313 9988 9995
+type(
+  (bool list * exn) option
+)
+"command.ml" 264 8280 8282 "command.ml" 313 9988 9995
+type(
+  (bool list * exn) option
+)
+"command.ml" 316 10000 10004 "command.ml" 316 10000 10011
+type(
+  ?quiet:bool -> ?pretend:bool -> t -> unit
+)
+ident(
+  def execute "command.ml" 321 10125 10125 "command.ml" 1 0 -1
+)
+"command.ml" 316 10000 10013 "command.ml" 316 10000 10018
+type(
+  bool option
+)
+ident(
+  def quiet "command.ml" 316 10000 10019 "command.ml" 319 10112 10123
+)
+"command.ml" 316 10000 10020 "command.ml" 316 10000 10027
+type(
+  bool option
+)
+ident(
+  def pretend "command.ml" 316 10000 10028 "command.ml" 319 10112 10123
+)
+"command.ml" 316 10000 10028 "command.ml" 316 10000 10031
+type(
+  t
+)
+ident(
+  def cmd "command.ml" 317 10034 10036 "command.ml" 319 10112 10123
+)
+"command.ml" 317 10034 10042 "command.ml" 317 10034 10054
+type(
+  ?quiet:bool -> ?pretend:bool -> t list -> (bool list * exn) option
+)
+ident(
+  int_ref execute_many "command.ml" 263 8224 8228 "command.ml" 263 8224 8240
+)
+"command.ml" 317 10034 10056 "command.ml" 317 10034 10061
+type(
+  bool option
+)
+ident(
+  int_ref quiet "command.ml" 316 10000 10013 "command.ml" 316 10000 10018
+)
+"command.ml" 317 10034 10063 "command.ml" 317 10034 10070
+type(
+  bool option
+)
+ident(
+  int_ref pretend "command.ml" 316 10000 10020 "command.ml" 316 10000 10027
+)
+"command.ml" 317 10034 10072 "command.ml" 317 10034 10075
+type(
+  t
+)
+ident(
+  int_ref cmd "command.ml" 316 10000 10028 "command.ml" 316 10000 10031
+)
+"command.ml" 317 10034 10071 "command.ml" 317 10034 10076
+type(
+  t list
+)
+"command.ml" 317 10034 10042 "command.ml" 317 10034 10076
+call(
+  stack
+)
+type(
+  (bool list * exn) option
+)
+"command.ml" 318 10082 10091 "command.ml" 318 10082 10092
+type(
+  bool list
+)
+"command.ml" 318 10082 10094 "command.ml" 318 10082 10097
+type(
+  exn
+)
+ident(
+  def exn "command.ml" 318 10082 10102 "command.ml" 318 10082 10111
+)
+"command.ml" 318 10082 10090 "command.ml" 318 10082 10098
+type(
+  bool list * exn
+)
+"command.ml" 318 10082 10086 "command.ml" 318 10082 10098
+type(
+  (bool list * exn) option
+)
+"command.ml" 318 10082 10102 "command.ml" 318 10082 10107
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"command.ml" 318 10082 10108 "command.ml" 318 10082 10111
+type(
+  exn
+)
+ident(
+  int_ref exn "command.ml" 318 10082 10094 "command.ml" 318 10082 10097
+)
+"command.ml" 318 10082 10102 "command.ml" 318 10082 10111
+type(
+  unit
+)
+"command.ml" 319 10112 10116 "command.ml" 319 10112 10117
+type(
+  (bool list * exn) option
+)
+"command.ml" 319 10112 10121 "command.ml" 319 10112 10123
+type(
+  unit
+)
+"command.ml" 317 10034 10036 "command.ml" 319 10112 10123
+type(
+  unit
+)
+"command.ml" 321 10125 10129 "command.ml" 321 10125 10138
+type(
+  (Tags.t -> unit) -> t -> unit
+)
+ident(
+  def iter_tags "command.ml" 335 10422 10422 "command.ml" 1 0 -1
+)
+"command.ml" 321 10125 10139 "command.ml" 321 10125 10140
+type(
+  Tags.t -> unit
+)
+ident(
+  def f "command.ml" 321 10125 10141 "command.ml" 333 10413 10420
+)
+"command.ml" 321 10125 10141 "command.ml" 321 10125 10142
+type(
+  t
+)
+ident(
+  def x "command.ml" 322 10145 10147 "command.ml" 333 10413 10420
+)
+"command.ml" 322 10145 10155 "command.ml" 322 10145 10159
+type(
+  spec -> unit
+)
+ident(
+  def spec "command.ml" 322 10145 10147 "command.ml" 333 10413 10420
+)
+"command.ml" 322 10145 10160 "command.ml" 322 10145 10161
+type(
+  spec
+)
+ident(
+  def x "command.ml" 323 10164 10168 "command.ml" 326 10267 10289
+)
+"command.ml" 323 10164 10174 "command.ml" 323 10164 10175
+type(
+  spec
+)
+ident(
+  int_ref x "command.ml" 322 10145 10160 "command.ml" 322 10145 10161
+)
+"command.ml" 324 10181 10187 "command.ml" 324 10181 10188
+type(
+  spec
+)
+"command.ml" 324 10181 10193 "command.ml" 324 10181 10194
+type(
+  string
+)
+"command.ml" 324 10181 10191 "command.ml" 324 10181 10194
+type(
+  spec
+)
+"command.ml" 324 10181 10187 "command.ml" 324 10181 10194
+type(
+  spec
+)
+"command.ml" 324 10181 10200 "command.ml" 324 10181 10201
+type(
+  string
+)
+"command.ml" 324 10181 10197 "command.ml" 324 10181 10201
+type(
+  spec
+)
+"command.ml" 324 10181 10187 "command.ml" 324 10181 10201
+type(
+  spec
+)
+"command.ml" 324 10181 10206 "command.ml" 324 10181 10207
+type(
+  pathname
+)
+"command.ml" 324 10181 10204 "command.ml" 324 10181 10207
+type(
+  spec
+)
+"command.ml" 324 10181 10187 "command.ml" 324 10181 10207
+type(
+  spec
+)
+"command.ml" 324 10181 10213 "command.ml" 324 10181 10214
+type(
+  pathname
+)
+"command.ml" 324 10181 10210 "command.ml" 324 10181 10214
+type(
+  spec
+)
+"command.ml" 324 10181 10187 "command.ml" 324 10181 10214
+type(
+  spec
+)
+"command.ml" 324 10181 10219 "command.ml" 324 10181 10220
+type(
+  string
+)
+"command.ml" 324 10181 10217 "command.ml" 324 10181 10220
+type(
+  spec
+)
+"command.ml" 324 10181 10187 "command.ml" 324 10181 10220
+type(
+  spec
+)
+"command.ml" 324 10181 10229 "command.ml" 324 10181 10230
+type(
+  spec
+)
+"command.ml" 324 10181 10223 "command.ml" 324 10181 10230
+type(
+  spec
+)
+"command.ml" 324 10181 10187 "command.ml" 324 10181 10230
+type(
+  spec
+)
+"command.ml" 324 10181 10234 "command.ml" 324 10181 10236
+type(
+  unit
+)
+"command.ml" 325 10237 10245 "command.ml" 325 10237 10246
+type(
+  spec list
+)
+ident(
+  def l "command.ml" 325 10237 10250 "command.ml" 325 10237 10266
+)
+"command.ml" 325 10237 10243 "command.ml" 325 10237 10246
+type(
+  spec
+)
+"command.ml" 325 10237 10250 "command.ml" 325 10237 10259
+type(
+  (spec -> unit) -> spec list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"command.ml" 325 10237 10260 "command.ml" 325 10237 10264
+type(
+  spec -> unit
+)
+ident(
+  int_ref spec "command.ml" 322 10145 10155 "command.ml" 322 10145 10159
+)
+"command.ml" 325 10237 10265 "command.ml" 325 10237 10266
+type(
+  spec list
+)
+ident(
+  int_ref l "command.ml" 325 10237 10245 "command.ml" 325 10237 10246
+)
+"command.ml" 325 10237 10250 "command.ml" 325 10237 10266
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 326 10267 10275 "command.ml" 326 10267 10279
+type(
+  Tags.t
+)
+ident(
+  def tags "command.ml" 326 10267 10283 "command.ml" 326 10267 10289
+)
+"command.ml" 326 10267 10273 "command.ml" 326 10267 10279
+type(
+  spec
+)
+"command.ml" 326 10267 10283 "command.ml" 326 10267 10284
+type(
+  Tags.t -> unit
+)
+ident(
+  int_ref f "command.ml" 321 10125 10139 "command.ml" 321 10125 10140
+)
+"command.ml" 326 10267 10285 "command.ml" 326 10267 10289
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "command.ml" 326 10267 10275 "command.ml" 326 10267 10279
+)
+"command.ml" 326 10267 10283 "command.ml" 326 10267 10289
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 323 10164 10168 "command.ml" 326 10267 10289
+type(
+  unit
+)
+"command.ml" 328 10295 10305 "command.ml" 328 10295 10308
+type(
+  t -> unit
+)
+ident(
+  def cmd "command.ml" 328 10295 10297 "command.ml" 333 10413 10420
+)
+"command.ml" 328 10295 10309 "command.ml" 328 10295 10310
+type(
+  t
+)
+ident(
+  def x "command.ml" 329 10313 10317 "command.ml" 332 10378 10409
+)
+"command.ml" 329 10313 10323 "command.ml" 329 10313 10324
+type(
+  t
+)
+ident(
+  int_ref x "command.ml" 328 10295 10309 "command.ml" 328 10295 10310
+)
+"command.ml" 330 10330 10336 "command.ml" 330 10330 10339
+type(
+  t
+)
+"command.ml" 330 10330 10347 "command.ml" 330 10330 10348
+type(
+  pathname
+)
+type(
+  string list
+)
+"command.ml" 330 10330 10342 "command.ml" 330 10330 10348
+type(
+  t
+)
+"command.ml" 330 10330 10336 "command.ml" 330 10330 10348
+type(
+  t
+)
+"command.ml" 330 10330 10352 "command.ml" 330 10330 10354
+type(
+  unit
+)
+"command.ml" 331 10355 10365 "command.ml" 331 10355 10366
+ident(
+  def s "command.ml" 331 10355 10371 "command.ml" 331 10355 10377
+)
+"command.ml" 331 10355 10364 "command.ml" 331 10355 10367
+type(
+  spec
+)
+"command.ml" 331 10355 10361 "command.ml" 331 10355 10367
+type(
+  t
+)
+"command.ml" 331 10355 10371 "command.ml" 331 10355 10375
+type(
+  spec -> unit
+)
+ident(
+  int_ref spec "command.ml" 322 10145 10155 "command.ml" 322 10145 10159
+)
+"command.ml" 331 10355 10376 "command.ml" 331 10355 10377
+type(
+  spec
+)
+ident(
+  int_ref s "command.ml" 331 10355 10364 "command.ml" 331 10355 10367
+)
+"command.ml" 331 10355 10371 "command.ml" 331 10355 10377
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 332 10378 10388 "command.ml" 332 10378 10389
+ident(
+  def s "command.ml" 332 10378 10394 "command.ml" 332 10378 10409
+)
+"command.ml" 332 10378 10387 "command.ml" 332 10378 10390
+type(
+  t list
+)
+"command.ml" 332 10378 10384 "command.ml" 332 10378 10390
+type(
+  t
+)
+"command.ml" 332 10378 10394 "command.ml" 332 10378 10403
+type(
+  (t -> unit) -> t list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"command.ml" 332 10378 10404 "command.ml" 332 10378 10407
+type(
+  t -> unit
+)
+ident(
+  int_ref cmd "command.ml" 328 10295 10305 "command.ml" 328 10295 10308
+)
+"command.ml" 332 10378 10408 "command.ml" 332 10378 10409
+type(
+  t list
+)
+ident(
+  int_ref s "command.ml" 332 10378 10387 "command.ml" 332 10378 10390
+)
+"command.ml" 332 10378 10394 "command.ml" 332 10378 10409
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 329 10313 10317 "command.ml" 332 10378 10409
+type(
+  unit
+)
+"command.ml" 333 10413 10415 "command.ml" 333 10413 10418
+type(
+  t -> unit
+)
+ident(
+  int_ref cmd "command.ml" 328 10295 10305 "command.ml" 328 10295 10308
+)
+"command.ml" 333 10413 10419 "command.ml" 333 10413 10420
+type(
+  t
+)
+ident(
+  int_ref x "command.ml" 321 10125 10141 "command.ml" 321 10125 10142
+)
+"command.ml" 333 10413 10415 "command.ml" 333 10413 10420
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 328 10295 10297 "command.ml" 333 10413 10420
+type(
+  unit
+)
+"command.ml" 322 10145 10147 "command.ml" 333 10413 10420
+type(
+  unit
+)
+"command.ml" 335 10422 10426 "command.ml" 335 10422 10440
+type(
+  (pathname -> 'a -> 'a) -> t -> 'a -> 'a
+)
+ident(
+  def fold_pathnames "command.ml" 348 10749 10749 "command.ml" 1 0 -1
+)
+"command.ml" 335 10422 10441 "command.ml" 335 10422 10442
+type(
+  pathname -> 'a -> 'a
+)
+ident(
+  def f "command.ml" 335 10422 10443 "command.ml" 346 10740 10747
+)
+"command.ml" 335 10422 10443 "command.ml" 335 10422 10444
+type(
+  t
+)
+ident(
+  def x "command.ml" 336 10447 10449 "command.ml" 346 10740 10747
+)
+"command.ml" 336 10447 10457 "command.ml" 336 10447 10461
+type(
+  spec -> 'a -> 'a
+)
+ident(
+  def spec "command.ml" 336 10447 10449 "command.ml" 346 10740 10747
+)
+"command.ml" 337 10473 10479 "command.ml" 337 10473 10480
+type(
+  spec
+)
+"command.ml" 337 10473 10485 "command.ml" 337 10473 10486
+type(
+  string
+)
+"command.ml" 337 10473 10483 "command.ml" 337 10473 10486
+type(
+  spec
+)
+"command.ml" 337 10473 10479 "command.ml" 337 10473 10486
+type(
+  spec
+)
+"command.ml" 337 10473 10492 "command.ml" 337 10473 10493
+type(
+  string
+)
+"command.ml" 337 10473 10489 "command.ml" 337 10473 10493
+type(
+  spec
+)
+"command.ml" 337 10473 10479 "command.ml" 337 10473 10493
+type(
+  spec
+)
+"command.ml" 337 10473 10498 "command.ml" 337 10473 10499
+type(
+  string
+)
+"command.ml" 337 10473 10496 "command.ml" 337 10473 10499
+type(
+  spec
+)
+"command.ml" 337 10473 10479 "command.ml" 337 10473 10499
+type(
+  spec
+)
+"command.ml" 337 10473 10508 "command.ml" 337 10473 10509
+type(
+  spec
+)
+"command.ml" 337 10473 10502 "command.ml" 337 10473 10509
+type(
+  spec
+)
+"command.ml" 337 10473 10479 "command.ml" 337 10473 10509
+type(
+  spec
+)
+"command.ml" 337 10473 10514 "command.ml" 337 10473 10515
+type(
+  Tags.t
+)
+"command.ml" 337 10473 10512 "command.ml" 337 10473 10515
+type(
+  spec
+)
+"command.ml" 337 10473 10479 "command.ml" 337 10473 10515
+type(
+  spec
+)
+"command.ml" 337 10473 10523 "command.ml" 337 10473 10526
+type(
+  'a
+)
+ident(
+  def acc "command.ml" 337 10473 10530 "command.ml" 337 10473 10533
+)
+"command.ml" 337 10473 10530 "command.ml" 337 10473 10533
+type(
+  'a
+)
+ident(
+  int_ref acc "command.ml" 337 10473 10523 "command.ml" 337 10473 10526
+)
+"command.ml" 337 10473 10519 "command.ml" 337 10473 10533
+type(
+  'a -> 'a
+)
+"command.ml" 338 10534 10542 "command.ml" 338 10534 10543
+type(
+  pathname
+)
+ident(
+  def p "command.ml" 338 10534 10554 "command.ml" 338 10534 10557
+)
+"command.ml" 338 10534 10540 "command.ml" 338 10534 10543
+type(
+  spec
+)
+"command.ml" 338 10534 10549 "command.ml" 338 10534 10550
+type(
+  pathname
+)
+ident(
+  def p "command.ml" 338 10534 10554 "command.ml" 338 10534 10557
+)
+"command.ml" 338 10534 10546 "command.ml" 338 10534 10550
+type(
+  spec
+)
+"command.ml" 338 10534 10540 "command.ml" 338 10534 10550
+type(
+  spec
+)
+"command.ml" 338 10534 10554 "command.ml" 338 10534 10555
+type(
+  pathname -> 'a -> 'a
+)
+ident(
+  int_ref f "command.ml" 335 10422 10441 "command.ml" 335 10422 10442
+)
+"command.ml" 338 10534 10556 "command.ml" 338 10534 10557
+type(
+  pathname
+)
+ident(
+  int_ref p "command.ml" 338 10534 10542 "command.ml" 338 10534 10543
+)
+"command.ml" 338 10534 10554 "command.ml" 338 10534 10557
+call(
+  tail
+)
+type(
+  'a -> 'a
+)
+"command.ml" 339 10558 10566 "command.ml" 339 10558 10567
+type(
+  spec list
+)
+ident(
+  def l "command.ml" 339 10558 10571 "command.ml" 339 10558 10593
+)
+"command.ml" 339 10558 10564 "command.ml" 339 10558 10567
+type(
+  spec
+)
+"command.ml" 339 10558 10571 "command.ml" 339 10558 10586
+type(
+  (spec -> 'a -> 'a) -> spec list -> 'a -> 'a
+)
+ident(
+  ext_ref My_std.List.fold_right
+)
+"command.ml" 339 10558 10587 "command.ml" 339 10558 10591
+type(
+  spec -> 'a -> 'a
+)
+ident(
+  int_ref spec "command.ml" 336 10447 10457 "command.ml" 336 10447 10461
+)
+"command.ml" 339 10558 10592 "command.ml" 339 10558 10593
+type(
+  spec list
+)
+ident(
+  int_ref l "command.ml" 339 10558 10566 "command.ml" 339 10558 10567
+)
+"command.ml" 339 10558 10571 "command.ml" 339 10558 10593
+call(
+  tail
+)
+type(
+  'a -> 'a
+)
+"command.ml" 336 10447 10464 "command.ml" 339 10558 10593
+type(
+  spec -> 'a -> 'a
+)
+"command.ml" 341 10599 10609 "command.ml" 341 10599 10612
+type(
+  t -> 'a -> 'a
+)
+ident(
+  def cmd "command.ml" 341 10599 10601 "command.ml" 346 10740 10747
+)
+"command.ml" 342 10624 10630 "command.ml" 342 10624 10633
+type(
+  t
+)
+"command.ml" 342 10624 10641 "command.ml" 342 10624 10644
+type(
+  'a
+)
+ident(
+  def acc "command.ml" 342 10624 10648 "command.ml" 342 10624 10651
+)
+"command.ml" 342 10624 10648 "command.ml" 342 10624 10651
+type(
+  'a
+)
+ident(
+  int_ref acc "command.ml" 342 10624 10641 "command.ml" 342 10624 10644
+)
+"command.ml" 342 10624 10637 "command.ml" 342 10624 10651
+type(
+  'a -> 'a
+)
+"command.ml" 343 10652 10663 "command.ml" 343 10652 10664
+type(
+  string list
+)
+"command.ml" 343 10652 10666 "command.ml" 343 10652 10667
+type(
+  pathname
+)
+ident(
+  def p "command.ml" 343 10652 10672 "command.ml" 343 10652 10675
+)
+"command.ml" 343 10652 10658 "command.ml" 343 10652 10668
+type(
+  t
+)
+"command.ml" 343 10652 10672 "command.ml" 343 10652 10673
+type(
+  pathname -> 'a -> 'a
+)
+ident(
+  int_ref f "command.ml" 335 10422 10441 "command.ml" 335 10422 10442
+)
+"command.ml" 343 10652 10674 "command.ml" 343 10652 10675
+type(
+  pathname
+)
+ident(
+  int_ref p "command.ml" 343 10652 10666 "command.ml" 343 10652 10667
+)
+"command.ml" 343 10652 10672 "command.ml" 343 10652 10675
+call(
+  tail
+)
+type(
+  'a -> 'a
+)
+"command.ml" 344 10676 10686 "command.ml" 344 10676 10687
+ident(
+  def s "command.ml" 344 10676 10692 "command.ml" 344 10676 10698
+)
+"command.ml" 344 10676 10685 "command.ml" 344 10676 10688
+type(
+  spec
+)
+"command.ml" 344 10676 10682 "command.ml" 344 10676 10688
+type(
+  t
+)
+"command.ml" 344 10676 10692 "command.ml" 344 10676 10696
+type(
+  spec -> 'a -> 'a
+)
+ident(
+  int_ref spec "command.ml" 336 10447 10457 "command.ml" 336 10447 10461
+)
+"command.ml" 344 10676 10697 "command.ml" 344 10676 10698
+type(
+  spec
+)
+ident(
+  int_ref s "command.ml" 344 10676 10685 "command.ml" 344 10676 10688
+)
+"command.ml" 344 10676 10692 "command.ml" 344 10676 10698
+call(
+  tail
+)
+type(
+  'a -> 'a
+)
+"command.ml" 345 10699 10709 "command.ml" 345 10699 10710
+ident(
+  def s "command.ml" 345 10699 10715 "command.ml" 345 10699 10736
+)
+"command.ml" 345 10699 10708 "command.ml" 345 10699 10711
+type(
+  t list
+)
+"command.ml" 345 10699 10705 "command.ml" 345 10699 10711
+type(
+  t
+)
+"command.ml" 345 10699 10715 "command.ml" 345 10699 10730
+type(
+  (t -> 'a -> 'a) -> t list -> 'a -> 'a
+)
+ident(
+  ext_ref My_std.List.fold_right
+)
+"command.ml" 345 10699 10731 "command.ml" 345 10699 10734
+type(
+  t -> 'a -> 'a
+)
+ident(
+  int_ref cmd "command.ml" 341 10599 10609 "command.ml" 341 10599 10612
+)
+"command.ml" 345 10699 10735 "command.ml" 345 10699 10736
+type(
+  t list
+)
+ident(
+  int_ref s "command.ml" 345 10699 10708 "command.ml" 345 10699 10711
+)
+"command.ml" 345 10699 10715 "command.ml" 345 10699 10736
+call(
+  tail
+)
+type(
+  'a -> 'a
+)
+"command.ml" 341 10599 10615 "command.ml" 345 10699 10736
+type(
+  t -> 'a -> 'a
+)
+"command.ml" 346 10740 10742 "command.ml" 346 10740 10745
+type(
+  t -> 'a -> 'a
+)
+ident(
+  int_ref cmd "command.ml" 341 10599 10609 "command.ml" 341 10599 10612
+)
+"command.ml" 346 10740 10746 "command.ml" 346 10740 10747
+type(
+  t
+)
+ident(
+  int_ref x "command.ml" 335 10422 10443 "command.ml" 335 10422 10444
+)
+"command.ml" 346 10740 10742 "command.ml" 346 10740 10747
+call(
+  tail
+)
+type(
+  'a -> 'a
+)
+"command.ml" 341 10599 10601 "command.ml" 346 10740 10747
+type(
+  'a -> 'a
+)
+"command.ml" 336 10447 10449 "command.ml" 346 10740 10747
+type(
+  'a -> 'a
+)
+"command.ml" 348 10749 10757 "command.ml" 348 10749 10763
+type(
+  spec -> spec
+)
+ident(
+  def reduce "command.ml" 348 10749 10749 "command.ml" 1 0 -1
+)
+"command.ml" 348 10749 10764 "command.ml" 348 10749 10765
+type(
+  spec
+)
+ident(
+  def x "command.ml" 349 10768 10770 "command.ml" 359 11048 11062
+)
+"command.ml" 349 10768 10778 "command.ml" 349 10768 10782
+type(
+  spec -> spec list -> spec list
+)
+ident(
+  def self "command.ml" 349 10768 10770 "command.ml" 359 11048 11062
+)
+"command.ml" 349 10768 10783 "command.ml" 349 10768 10784
+type(
+  spec
+)
+ident(
+  def x "command.ml" 349 10768 10785 "command.ml" 355 10956 10996
+)
+"command.ml" 349 10768 10785 "command.ml" 349 10768 10788
+type(
+  spec list
+)
+ident(
+  def acc "command.ml" 350 10791 10795 "command.ml" 355 10956 10996
+)
+"command.ml" 350 10791 10801 "command.ml" 350 10791 10802
+type(
+  spec
+)
+ident(
+  int_ref x "command.ml" 349 10768 10783 "command.ml" 349 10768 10784
+)
+"command.ml" 351 10808 10814 "command.ml" 351 10808 10815
+type(
+  spec
+)
+"command.ml" 351 10808 10819 "command.ml" 351 10808 10822
+type(
+  spec list
+)
+ident(
+  int_ref acc "command.ml" 349 10768 10785 "command.ml" 349 10768 10788
+)
+"command.ml" 352 10823 10831 "command.ml" 352 10823 10832
+type(
+  string
+)
+"command.ml" 352 10823 10829 "command.ml" 352 10823 10832
+type(
+  spec
+)
+"command.ml" 352 10823 10838 "command.ml" 352 10823 10839
+type(
+  string
+)
+"command.ml" 352 10823 10835 "command.ml" 352 10823 10839
+type(
+  spec
+)
+"command.ml" 352 10823 10829 "command.ml" 352 10823 10839
+type(
+  spec
+)
+"command.ml" 352 10823 10844 "command.ml" 352 10823 10845
+type(
+  pathname
+)
+"command.ml" 352 10823 10842 "command.ml" 352 10823 10845
+type(
+  spec
+)
+"command.ml" 352 10823 10829 "command.ml" 352 10823 10845
+type(
+  spec
+)
+"command.ml" 352 10823 10851 "command.ml" 352 10823 10852
+type(
+  pathname
+)
+"command.ml" 352 10823 10848 "command.ml" 352 10823 10852
+type(
+  spec
+)
+"command.ml" 352 10823 10829 "command.ml" 352 10823 10852
+type(
+  spec
+)
+"command.ml" 352 10823 10857 "command.ml" 352 10823 10858
+type(
+  string
+)
+"command.ml" 352 10823 10855 "command.ml" 352 10823 10858
+type(
+  spec
+)
+"command.ml" 352 10823 10829 "command.ml" 352 10823 10858
+type(
+  spec
+)
+"command.ml" 352 10823 10862 "command.ml" 352 10823 10863
+type(
+  spec
+)
+ident(
+  int_ref x "command.ml" 349 10768 10783 "command.ml" 349 10768 10784
+)
+"command.ml" 352 10823 10867 "command.ml" 352 10823 10870
+type(
+  spec list
+)
+ident(
+  int_ref acc "command.ml" 349 10768 10785 "command.ml" 349 10768 10788
+)
+"command.ml" 352 10823 10862 "command.ml" 352 10823 10870
+type(
+  spec list
+)
+"command.ml" 353 10871 10879 "command.ml" 353 10871 10880
+type(
+  spec list
+)
+ident(
+  def l "command.ml" 353 10871 10884 "command.ml" 353 10871 10910
+)
+"command.ml" 353 10871 10877 "command.ml" 353 10871 10880
+type(
+  spec
+)
+"command.ml" 353 10871 10884 "command.ml" 353 10871 10899
+type(
+  (spec -> spec list -> spec list) -> spec list -> spec list -> spec list
+)
+ident(
+  ext_ref My_std.List.fold_right
+)
+"command.ml" 353 10871 10900 "command.ml" 353 10871 10904
+type(
+  spec -> spec list -> spec list
+)
+ident(
+  int_ref self "command.ml" 349 10768 10778 "command.ml" 349 10768 10782
+)
+"command.ml" 353 10871 10905 "command.ml" 353 10871 10906
+type(
+  spec list
+)
+ident(
+  int_ref l "command.ml" 353 10871 10879 "command.ml" 353 10871 10880
+)
+"command.ml" 353 10871 10907 "command.ml" 353 10871 10910
+type(
+  spec list
+)
+ident(
+  int_ref acc "command.ml" 349 10768 10785 "command.ml" 349 10768 10788
+)
+"command.ml" 353 10871 10884 "command.ml" 353 10871 10910
+call(
+  tail
+)
+type(
+  spec list
+)
+"command.ml" 354 10911 10919 "command.ml" 354 10911 10923
+type(
+  Tags.t
+)
+ident(
+  def tags "command.ml" 354 10911 10927 "command.ml" 354 10911 10955
+)
+"command.ml" 354 10911 10917 "command.ml" 354 10911 10923
+type(
+  spec
+)
+"command.ml" 354 10911 10927 "command.ml" 354 10911 10931
+type(
+  spec -> spec list -> spec list
+)
+ident(
+  int_ref self "command.ml" 349 10768 10778 "command.ml" 349 10768 10782
+)
+"command.ml" 354 10911 10933 "command.ml" 354 10911 10934
+type(
+  (Tags.t -> spec) ref -> Tags.t -> spec
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 354 10911 10934 "command.ml" 354 10911 10945
+type(
+  (Tags.t -> spec) ref
+)
+ident(
+  int_ref tag_handler "command.ml" 86 2177 2181 "command.ml" 86 2177 2192
+)
+"command.ml" 354 10911 10933 "command.ml" 354 10911 10945
+type(
+  Tags.t -> spec
+)
+"command.ml" 354 10911 10946 "command.ml" 354 10911 10950
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "command.ml" 354 10911 10919 "command.ml" 354 10911 10923
+)
+"command.ml" 354 10911 10932 "command.ml" 354 10911 10951
+call(
+  stack
+)
+type(
+  spec
+)
+"command.ml" 354 10911 10952 "command.ml" 354 10911 10955
+type(
+  spec list
+)
+ident(
+  int_ref acc "command.ml" 349 10768 10785 "command.ml" 349 10768 10788
+)
+"command.ml" 354 10911 10927 "command.ml" 354 10911 10955
+call(
+  tail
+)
+type(
+  spec list
+)
+"command.ml" 355 10956 10968 "command.ml" 355 10956 10969
+type(
+  spec
+)
+ident(
+  def s "command.ml" 355 10956 10973 "command.ml" 355 10956 10996
+)
+"command.ml" 355 10956 10962 "command.ml" 355 10956 10969
+type(
+  spec
+)
+"command.ml" 355 10956 10980 "command.ml" 355 10956 10986
+type(
+  spec -> spec
+)
+ident(
+  int_ref reduce "command.ml" 348 10749 10757 "command.ml" 348 10749 10763
+)
+"command.ml" 355 10956 10987 "command.ml" 355 10956 10988
+type(
+  spec
+)
+ident(
+  int_ref s "command.ml" 355 10956 10968 "command.ml" 355 10956 10969
+)
+"command.ml" 355 10956 10979 "command.ml" 355 10956 10989
+call(
+  stack
+)
+type(
+  spec
+)
+"command.ml" 355 10956 10973 "command.ml" 355 10956 10989
+type(
+  spec
+)
+"command.ml" 355 10956 10993 "command.ml" 355 10956 10996
+type(
+  spec list
+)
+ident(
+  int_ref acc "command.ml" 349 10768 10785 "command.ml" 349 10768 10788
+)
+"command.ml" 355 10956 10973 "command.ml" 355 10956 10996
+type(
+  spec list
+)
+"command.ml" 350 10791 10795 "command.ml" 355 10956 10996
+type(
+  spec list
+)
+"command.ml" 356 11000 11008 "command.ml" 356 11000 11012
+type(
+  spec -> spec list -> spec list
+)
+ident(
+  int_ref self "command.ml" 349 10768 10778 "command.ml" 349 10768 10782
+)
+"command.ml" 356 11000 11013 "command.ml" 356 11000 11014
+type(
+  spec
+)
+ident(
+  int_ref x "command.ml" 348 10749 10764 "command.ml" 348 10749 10765
+)
+"command.ml" 356 11000 11015 "command.ml" 356 11000 11017
+type(
+  spec list
+)
+"command.ml" 356 11000 11008 "command.ml" 356 11000 11017
+call(
+  stack
+)
+type(
+  spec list
+)
+"command.ml" 357 11023 11027 "command.ml" 357 11023 11029
+type(
+  spec list
+)
+"command.ml" 357 11023 11033 "command.ml" 357 11023 11034
+type(
+  spec
+)
+"command.ml" 358 11035 11040 "command.ml" 358 11035 11041
+type(
+  spec
+)
+ident(
+  def x "command.ml" 358 11035 11046 "command.ml" 358 11035 11047
+)
+"command.ml" 358 11035 11039 "command.ml" 358 11035 11042
+type(
+  spec list
+)
+"command.ml" 358 11035 11046 "command.ml" 358 11035 11047
+type(
+  spec
+)
+ident(
+  int_ref x "command.ml" 358 11035 11040 "command.ml" 358 11035 11041
+)
+"command.ml" 359 11048 11052 "command.ml" 359 11048 11054
+type(
+  spec list
+)
+ident(
+  def xs "command.ml" 359 11048 11058 "command.ml" 359 11048 11062
+)
+"command.ml" 359 11048 11060 "command.ml" 359 11048 11062
+type(
+  spec list
+)
+ident(
+  int_ref xs "command.ml" 359 11048 11052 "command.ml" 359 11048 11054
+)
+"command.ml" 359 11048 11058 "command.ml" 359 11048 11062
+type(
+  spec
+)
+"command.ml" 356 11000 11002 "command.ml" 359 11048 11062
+type(
+  spec
+)
+"command.ml" 349 10768 10770 "command.ml" 359 11048 11062
+type(
+  spec
+)
+"command.ml" 361 11064 11068 "command.ml" 361 11064 11074
+type(
+  t -> My_std.Digest.t
+)
+ident(
+  def digest "command.ml" 376 11482 11482 "command.ml" 1 0 -1
+)
+"command.ml" 362 11077 11083 "command.ml" 362 11077 11087
+type(
+  ('a -> 'b -> 'b) -> 'a list -> 'b -> 'b
+)
+ident(
+  def list "command.ml" 363 11109 11111 "command.ml" 374 11423 11480
+)
+"command.ml" 362 11077 11090 "command.ml" 362 11077 11105
+type(
+  ('a -> 'b -> 'b) -> 'a list -> 'b -> 'b
+)
+ident(
+  ext_ref My_std.List.fold_right
+)
+"command.ml" 363 11109 11115 "command.ml" 363 11109 11119
+type(
+  string -> My_std.Digest.t list -> My_std.Digest.t list
+)
+ident(
+  def text "command.ml" 364 11154 11156 "command.ml" 374 11423 11480
+)
+"command.ml" 363 11109 11120 "command.ml" 363 11109 11121
+type(
+  string
+)
+ident(
+  def x "command.ml" 363 11109 11122 "command.ml" 363 11109 11150
+)
+"command.ml" 363 11109 11122 "command.ml" 363 11109 11125
+type(
+  My_std.Digest.t list
+)
+ident(
+  def acc "command.ml" 363 11109 11128 "command.ml" 363 11109 11150
+)
+"command.ml" 363 11109 11128 "command.ml" 363 11109 11141
+type(
+  string -> My_std.Digest.t
+)
+ident(
+  ext_ref My_std.Digest.string
+)
+"command.ml" 363 11109 11142 "command.ml" 363 11109 11143
+type(
+  string
+)
+ident(
+  int_ref x "command.ml" 363 11109 11120 "command.ml" 363 11109 11121
+)
+"command.ml" 363 11109 11128 "command.ml" 363 11109 11143
+call(
+  stack
+)
+type(
+  My_std.Digest.t
+)
+"command.ml" 363 11109 11147 "command.ml" 363 11109 11150
+type(
+  My_std.Digest.t list
+)
+ident(
+  int_ref acc "command.ml" 363 11109 11122 "command.ml" 363 11109 11125
+)
+"command.ml" 363 11109 11128 "command.ml" 363 11109 11150
+type(
+  My_std.Digest.t list
+)
+"command.ml" 364 11154 11164 "command.ml" 364 11154 11167
+type(
+  t -> My_std.Digest.t list -> My_std.Digest.t list
+)
+ident(
+  def cmd "command.ml" 364 11154 11156 "command.ml" 374 11423 11480
+)
+"command.ml" 366 11183 11193 "command.ml" 366 11183 11197
+type(
+  spec
+)
+ident(
+  def spec "command.ml" 366 11183 11201 "command.ml" 366 11183 11246
+)
+"command.ml" 366 11183 11189 "command.ml" 366 11183 11197
+type(
+  t
+)
+"command.ml" 366 11183 11205 "command.ml" 366 11183 11208
+type(
+  My_std.Digest.t list
+)
+ident(
+  def acc "command.ml" 366 11183 11212 "command.ml" 366 11183 11246
+)
+"command.ml" 366 11183 11212 "command.ml" 366 11183 11234
+type(
+  spec -> My_std.Digest.t
+)
+ident(
+  int_ref string_of_command_spec "command.ml" 181 5542 5546 "command.ml" 181 5542 5568
+)
+"command.ml" 366 11183 11235 "command.ml" 366 11183 11239
+type(
+  spec
+)
+ident(
+  int_ref spec "command.ml" 366 11183 11193 "command.ml" 366 11183 11197
+)
+"command.ml" 366 11183 11212 "command.ml" 366 11183 11239
+call(
+  stack
+)
+type(
+  My_std.Digest.t
+)
+"command.ml" 366 11183 11243 "command.ml" 366 11183 11246
+type(
+  My_std.Digest.t list
+)
+ident(
+  int_ref acc "command.ml" 366 11183 11205 "command.ml" 366 11183 11208
+)
+"command.ml" 366 11183 11212 "command.ml" 366 11183 11246
+type(
+  My_std.Digest.t list
+)
+"command.ml" 366 11183 11201 "command.ml" 366 11183 11246
+type(
+  My_std.Digest.t list -> My_std.Digest.t list
+)
+"command.ml" 367 11247 11257 "command.ml" 367 11247 11260
+type(
+  t list
+)
+ident(
+  def seq "command.ml" 367 11247 11264 "command.ml" 367 11247 11276
+)
+"command.ml" 367 11247 11253 "command.ml" 367 11247 11260
+type(
+  t
+)
+"command.ml" 367 11247 11264 "command.ml" 367 11247 11268
+type(
+  (t -> My_std.Digest.t list -> My_std.Digest.t list) ->
+  t list -> My_std.Digest.t list -> My_std.Digest.t list
+)
+ident(
+  int_ref list "command.ml" 362 11077 11083 "command.ml" 362 11077 11087
+)
+"command.ml" 367 11247 11269 "command.ml" 367 11247 11272
+type(
+  t -> My_std.Digest.t list -> My_std.Digest.t list
+)
+ident(
+  int_ref cmd "command.ml" 364 11154 11164 "command.ml" 364 11154 11167
+)
+"command.ml" 367 11247 11273 "command.ml" 367 11247 11276
+type(
+  t list
+)
+ident(
+  int_ref seq "command.ml" 367 11247 11257 "command.ml" 367 11247 11260
+)
+"command.ml" 367 11247 11264 "command.ml" 367 11247 11276
+call(
+  tail
+)
+type(
+  My_std.Digest.t list -> My_std.Digest.t list
+)
+"command.ml" 368 11277 11283 "command.ml" 368 11277 11286
+type(
+  t
+)
+"command.ml" 368 11277 11294 "command.ml" 368 11277 11297
+type(
+  My_std.Digest.t list
+)
+ident(
+  def acc "command.ml" 368 11277 11301 "command.ml" 368 11277 11304
+)
+"command.ml" 368 11277 11301 "command.ml" 368 11277 11304
+type(
+  My_std.Digest.t list
+)
+ident(
+  int_ref acc "command.ml" 368 11277 11294 "command.ml" 368 11277 11297
+)
+"command.ml" 368 11277 11290 "command.ml" 368 11277 11304
+type(
+  My_std.Digest.t list -> My_std.Digest.t list
+)
+"command.ml" 369 11305 11316 "command.ml" 369 11305 11321
+type(
+  string list
+)
+ident(
+  def texts "command.ml" 369 11305 11337 "command.ml" 369 11305 11367
+)
+"command.ml" 369 11305 11323 "command.ml" 369 11305 11332
+type(
+  pathname
+)
+ident(
+  def dest_path "command.ml" 369 11305 11337 "command.ml" 369 11305 11367
+)
+"command.ml" 369 11305 11311 "command.ml" 369 11305 11333
+type(
+  t
+)
+"command.ml" 369 11305 11337 "command.ml" 369 11305 11341
+type(
+  (pathname -> My_std.Digest.t list -> My_std.Digest.t list) ->
+  pathname list -> My_std.Digest.t list -> My_std.Digest.t list
+)
+ident(
+  int_ref list "command.ml" 362 11077 11083 "command.ml" 362 11077 11087
+)
+"command.ml" 369 11305 11342 "command.ml" 369 11305 11346
+type(
+  pathname -> My_std.Digest.t list -> My_std.Digest.t list
+)
+ident(
+  int_ref text "command.ml" 363 11109 11115 "command.ml" 363 11109 11119
+)
+"command.ml" 369 11305 11348 "command.ml" 369 11305 11357
+type(
+  pathname
+)
+ident(
+  int_ref dest_path "command.ml" 369 11305 11323 "command.ml" 369 11305 11332
+)
+"command.ml" 369 11305 11361 "command.ml" 369 11305 11366
+type(
+  pathname list
+)
+ident(
+  int_ref texts "command.ml" 369 11305 11316 "command.ml" 369 11305 11321
+)
+"command.ml" 369 11305 11347 "command.ml" 369 11305 11367
+type(
+  pathname list
+)
+"command.ml" 369 11305 11337 "command.ml" 369 11305 11367
+call(
+  tail
+)
+type(
+  My_std.Digest.t list -> My_std.Digest.t list
+)
+"command.ml" 365 11170 11174 "command.ml" 369 11305 11367
+type(
+  t -> My_std.Digest.t list -> My_std.Digest.t list
+)
+"command.ml" 371 11373 11379 "command.ml" 371 11373 11380
+type(
+  t
+)
+ident(
+  def x "command.ml" 372 11384 11388 "command.ml" 374 11423 11480
+)
+"command.ml" 372 11384 11394 "command.ml" 372 11384 11397
+type(
+  t -> My_std.Digest.t list -> My_std.Digest.t list
+)
+ident(
+  int_ref cmd "command.ml" 364 11154 11164 "command.ml" 364 11154 11167
+)
+"command.ml" 372 11384 11398 "command.ml" 372 11384 11399
+type(
+  t
+)
+ident(
+  int_ref x "command.ml" 371 11373 11379 "command.ml" 371 11373 11380
+)
+"command.ml" 372 11384 11400 "command.ml" 372 11384 11402
+type(
+  My_std.Digest.t list
+)
+"command.ml" 372 11384 11394 "command.ml" 372 11384 11402
+call(
+  stack
+)
+type(
+  My_std.Digest.t list
+)
+"command.ml" 373 11408 11415 "command.ml" 373 11408 11416
+type(
+  My_std.Digest.t
+)
+ident(
+  def x "command.ml" 373 11408 11421 "command.ml" 373 11408 11422
+)
+"command.ml" 373 11408 11414 "command.ml" 373 11408 11417
+type(
+  My_std.Digest.t list
+)
+"command.ml" 373 11408 11421 "command.ml" 373 11408 11422
+type(
+  My_std.Digest.t
+)
+ident(
+  int_ref x "command.ml" 373 11408 11415 "command.ml" 373 11408 11416
+)
+"command.ml" 374 11423 11429 "command.ml" 374 11423 11431
+type(
+  My_std.Digest.t list
+)
+ident(
+  def xs "command.ml" 374 11423 11436 "command.ml" 374 11423 11480
+)
+"command.ml" 374 11423 11436 "command.ml" 374 11423 11449
+type(
+  string -> My_std.Digest.t
+)
+ident(
+  ext_ref My_std.Digest.string
+)
+"command.ml" 374 11423 11451 "command.ml" 374 11423 11454
+type(
+  string
+)
+"command.ml" 374 11423 11454 "command.ml" 374 11423 11455
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"command.ml" 374 11423 11455 "command.ml" 374 11423 11468
+type(
+  string -> My_std.Digest.t list -> string
+)
+ident(
+  ext_ref My_std.String.concat
+)
+"command.ml" 374 11423 11469 "command.ml" 374 11423 11472
+type(
+  string
+)
+"command.ml" 374 11423 11473 "command.ml" 374 11423 11475
+type(
+  My_std.Digest.t list
+)
+ident(
+  int_ref xs "command.ml" 374 11423 11429 "command.ml" 374 11423 11431
+)
+"command.ml" 374 11423 11455 "command.ml" 374 11423 11475
+call(
+  stack
+)
+type(
+  string
+)
+"command.ml" 374 11423 11475 "command.ml" 374 11423 11476
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"command.ml" 374 11423 11476 "command.ml" 374 11423 11479
+type(
+  string
+)
+"command.ml" 374 11423 11455 "command.ml" 374 11423 11479
+call(
+  stack
+)
+type(
+  string
+)
+"command.ml" 374 11423 11450 "command.ml" 374 11423 11480
+call(
+  stack
+)
+type(
+  string
+)
+"command.ml" 374 11423 11436 "command.ml" 374 11423 11480
+call(
+  tail
+)
+type(
+  My_std.Digest.t
+)
+"command.ml" 372 11384 11388 "command.ml" 374 11423 11480
+type(
+  My_std.Digest.t
+)
+"command.ml" 371 11373 11375 "command.ml" 374 11423 11480
+type(
+  t -> My_std.Digest.t
+)
+"command.ml" 364 11154 11156 "command.ml" 374 11423 11480
+type(
+  t -> My_std.Digest.t
+)
+"command.ml" 363 11109 11111 "command.ml" 374 11423 11480
+type(
+  t -> My_std.Digest.t
+)
+"command.ml" 362 11077 11079 "command.ml" 374 11423 11480
+type(
+  t -> My_std.Digest.t
+)
+"command.ml" 376 11482 11486 "command.ml" 376 11482 11502
+type(
+  (Tags.t * pathname list) list ref
+)
+ident(
+  def all_deps_of_tags "command.ml" 378 11513 11513 "command.ml" 1 0 -1
+)
+"command.ml" 376 11482 11505 "command.ml" 376 11482 11508
+type(
+  (Tags.t * pathname list) list -> (Tags.t * pathname list) list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"command.ml" 376 11482 11509 "command.ml" 376 11482 11511
+type(
+  (Tags.t * pathname list) list
+)
+"command.ml" 376 11482 11505 "command.ml" 376 11482 11511
+type(
+  (Tags.t * pathname list) list ref
+)
+"command.ml" 378 11513 11517 "command.ml" 378 11513 11521
+type(
+  'a list -> 'a list -> 'a list
+)
+ident(
+  def cons "command.ml" 384 11654 11654 "command.ml" 1 0 -1
+)
+"command.ml" 378 11513 11522 "command.ml" 378 11513 11526
+type(
+  'a list
+)
+ident(
+  def deps "command.ml" 378 11513 11527 "command.ml" 382 11636 11652
+)
+"command.ml" 378 11513 11527 "command.ml" 378 11513 11530
+type(
+  'a list
+)
+ident(
+  def acc "command.ml" 379 11533 11535 "command.ml" 382 11636 11652
+)
+"command.ml" 379 11533 11535 "command.ml" 379 11533 11543
+type(
+  'a list -> 'a list
+)
+ident(
+  ext_ref My_std.List.rev
+)
+"command.ml" 379 11533 11543 "command.ml" 379 11533 11544
+type(
+  ('a list -> 'a list) -> 'a list -> 'a list
+)
+ident(
+  ext_ref My_std.( & )
+)
+"command.ml" 380 11545 11549 "command.ml" 380 11545 11563
+type(
+  ('a list -> 'a -> 'a list) -> 'a list -> 'a list -> 'a list
+)
+ident(
+  ext_ref My_std.List.fold_left
+)
+"command.ml" 380 11545 11574 "command.ml" 380 11545 11577
+type(
+  'a list
+)
+ident(
+  def acc "command.ml" 380 11545 11578 "command.ml" 381 11585 11635
+)
+"command.ml" 380 11545 11578 "command.ml" 380 11545 11581
+type(
+  'a
+)
+ident(
+  def dep "command.ml" 381 11585 11591 "command.ml" 381 11585 11635
+)
+"command.ml" 381 11585 11594 "command.ml" 381 11585 11602
+type(
+  'a -> 'a list -> bool
+)
+ident(
+  ext_ref My_std.List.mem
+)
+"command.ml" 381 11585 11603 "command.ml" 381 11585 11606
+type(
+  'a
+)
+ident(
+  int_ref dep "command.ml" 380 11545 11578 "command.ml" 380 11545 11581
+)
+"command.ml" 381 11585 11607 "command.ml" 381 11585 11610
+type(
+  'a list
+)
+ident(
+  int_ref acc "command.ml" 380 11545 11574 "command.ml" 380 11545 11577
+)
+"command.ml" 381 11585 11594 "command.ml" 381 11585 11610
+call(
+  stack
+)
+type(
+  bool
+)
+"command.ml" 381 11585 11616 "command.ml" 381 11585 11619
+type(
+  'a list
+)
+ident(
+  int_ref acc "command.ml" 380 11545 11574 "command.ml" 380 11545 11577
+)
+"command.ml" 381 11585 11625 "command.ml" 381 11585 11628
+type(
+  'a
+)
+ident(
+  int_ref dep "command.ml" 380 11545 11578 "command.ml" 380 11545 11581
+)
+"command.ml" 381 11585 11632 "command.ml" 381 11585 11635
+type(
+  'a list
+)
+ident(
+  int_ref acc "command.ml" 380 11545 11574 "command.ml" 380 11545 11577
+)
+"command.ml" 381 11585 11625 "command.ml" 381 11585 11635
+type(
+  'a list
+)
+"command.ml" 381 11585 11591 "command.ml" 381 11585 11635
+type(
+  'a list
+)
+"command.ml" 380 11545 11564 "command.ml" 382 11636 11643
+type(
+  'a list -> 'a -> 'a list
+)
+"command.ml" 382 11636 11644 "command.ml" 382 11636 11647
+type(
+  'a list
+)
+ident(
+  int_ref acc "command.ml" 378 11513 11527 "command.ml" 378 11513 11530
+)
+"command.ml" 382 11636 11648 "command.ml" 382 11636 11652
+type(
+  'a list
+)
+ident(
+  int_ref deps "command.ml" 378 11513 11522 "command.ml" 378 11513 11526
+)
+"command.ml" 380 11545 11549 "command.ml" 382 11636 11652
+call(
+  stack
+)
+type(
+  'a list
+)
+"command.ml" 379 11533 11535 "command.ml" 382 11636 11652
+call(
+  tail
+)
+type(
+  'a list
+)
+"command.ml" 384 11654 11658 "command.ml" 384 11654 11670
+type(
+  Tags.t -> pathname list
+)
+ident(
+  def deps_of_tags "command.ml" 390 11822 11822 "command.ml" 1 0 -1
+)
+"command.ml" 384 11654 11671 "command.ml" 384 11654 11675
+type(
+  Tags.t
+)
+ident(
+  def tags "command.ml" 385 11678 11680 "command.ml" 388 11794 11820
+)
+"command.ml" 385 11678 11680 "command.ml" 385 11678 11694
+type(
+  (pathname list -> Tags.t * pathname list -> pathname list) ->
+  pathname list -> (Tags.t * pathname list) list -> pathname list
+)
+ident(
+  ext_ref My_std.List.fold_left
+)
+"command.ml" 385 11678 11705 "command.ml" 385 11678 11708
+type(
+  pathname list
+)
+ident(
+  def acc "command.ml" 385 11678 11709 "command.ml" 387 11781 11793
+)
+"command.ml" 385 11678 11710 "command.ml" 385 11678 11715
+type(
+  Tags.t
+)
+ident(
+  def xtags "command.ml" 386 11727 11731 "command.ml" 387 11781 11793
+)
+"command.ml" 385 11678 11717 "command.ml" 385 11678 11722
+type(
+  pathname list
+)
+ident(
+  def xdeps "command.ml" 386 11727 11731 "command.ml" 387 11781 11793
+)
+"command.ml" 385 11678 11709 "command.ml" 385 11678 11723
+type(
+  Tags.t * pathname list
+)
+"command.ml" 386 11727 11734 "command.ml" 386 11727 11749
+type(
+  Tags.t -> Tags.t -> bool
+)
+ident(
+  ext_ref Tags.does_match
+)
+"command.ml" 386 11727 11750 "command.ml" 386 11727 11754
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "command.ml" 384 11654 11671 "command.ml" 384 11654 11675
+)
+"command.ml" 386 11727 11755 "command.ml" 386 11727 11760
+type(
+  Tags.t
+)
+ident(
+  int_ref xtags "command.ml" 385 11678 11710 "command.ml" 385 11678 11715
+)
+"command.ml" 386 11727 11734 "command.ml" 386 11727 11760
+call(
+  stack
+)
+type(
+  bool
+)
+"command.ml" 386 11727 11766 "command.ml" 386 11727 11770
+type(
+  pathname list -> pathname list -> pathname list
+)
+ident(
+  int_ref cons "command.ml" 378 11513 11517 "command.ml" 378 11513 11521
+)
+"command.ml" 386 11727 11771 "command.ml" 386 11727 11776
+type(
+  pathname list
+)
+ident(
+  int_ref xdeps "command.ml" 385 11678 11717 "command.ml" 385 11678 11722
+)
+"command.ml" 386 11727 11777 "command.ml" 386 11727 11780
+type(
+  pathname list
+)
+ident(
+  int_ref acc "command.ml" 385 11678 11705 "command.ml" 385 11678 11708
+)
+"command.ml" 386 11727 11766 "command.ml" 386 11727 11780
+call(
+  tail
+)
+type(
+  pathname list
+)
+"command.ml" 387 11781 11790 "command.ml" 387 11781 11793
+type(
+  pathname list
+)
+ident(
+  int_ref acc "command.ml" 385 11678 11705 "command.ml" 385 11678 11708
+)
+"command.ml" 386 11727 11731 "command.ml" 387 11781 11793
+type(
+  pathname list
+)
+"command.ml" 385 11678 11695 "command.ml" 388 11794 11799
+type(
+  pathname list -> Tags.t * pathname list -> pathname list
+)
+"command.ml" 388 11794 11800 "command.ml" 388 11794 11802
+type(
+  pathname list
+)
+"command.ml" 388 11794 11803 "command.ml" 388 11794 11804
+type(
+  (Tags.t * pathname list) list ref -> (Tags.t * pathname list) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 388 11794 11804 "command.ml" 388 11794 11820
+type(
+  (Tags.t * pathname list) list ref
+)
+ident(
+  int_ref all_deps_of_tags "command.ml" 376 11482 11486 "command.ml" 376 11482 11502
+)
+"command.ml" 388 11794 11803 "command.ml" 388 11794 11820
+type(
+  (Tags.t * pathname list) list
+)
+"command.ml" 385 11678 11680 "command.ml" 388 11794 11820
+call(
+  tail
+)
+type(
+  pathname list
+)
+"command.ml" 390 11822 11826 "command.ml" 390 11822 11842
+type(
+  Tags.t -> pathname list -> unit
+)
+ident(
+  def set_deps_of_tags "command.ml" 393 11912 11912 "command.ml" 1 0 -1
+)
+"command.ml" 390 11822 11843 "command.ml" 390 11822 11847
+type(
+  Tags.t
+)
+ident(
+  def tags "command.ml" 390 11822 11848 "command.ml" 391 11855 11910
+)
+"command.ml" 390 11822 11848 "command.ml" 390 11822 11852
+type(
+  pathname list
+)
+ident(
+  def deps "command.ml" 391 11855 11857 "command.ml" 391 11855 11910
+)
+"command.ml" 391 11855 11857 "command.ml" 391 11855 11873
+type(
+  (Tags.t * pathname list) list ref
+)
+ident(
+  int_ref all_deps_of_tags "command.ml" 376 11482 11486 "command.ml" 376 11482 11502
+)
+"command.ml" 391 11855 11874 "command.ml" 391 11855 11876
+type(
+  (Tags.t * pathname list) list ref -> (Tags.t * pathname list) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"command.ml" 391 11855 11878 "command.ml" 391 11855 11882
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "command.ml" 390 11822 11843 "command.ml" 390 11822 11847
+)
+"command.ml" 391 11855 11884 "command.ml" 391 11855 11888
+type(
+  pathname list
+)
+ident(
+  int_ref deps "command.ml" 390 11822 11848 "command.ml" 390 11822 11852
+)
+"command.ml" 391 11855 11877 "command.ml" 391 11855 11889
+type(
+  Tags.t * pathname list
+)
+"command.ml" 391 11855 11893 "command.ml" 391 11855 11894
+type(
+  (Tags.t * pathname list) list ref -> (Tags.t * pathname list) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"command.ml" 391 11855 11894 "command.ml" 391 11855 11910
+type(
+  (Tags.t * pathname list) list ref
+)
+ident(
+  int_ref all_deps_of_tags "command.ml" 376 11482 11486 "command.ml" 376 11482 11502
+)
+"command.ml" 391 11855 11893 "command.ml" 391 11855 11910
+type(
+  (Tags.t * pathname list) list
+)
+"command.ml" 391 11855 11877 "command.ml" 391 11855 11910
+type(
+  (Tags.t * pathname list) list
+)
+"command.ml" 391 11855 11857 "command.ml" 391 11855 11910
+type(
+  unit
+)
+"command.ml" 393 11912 11916 "command.ml" 393 11912 11919
+type(
+  string list -> pathname list -> unit
+)
+ident(
+  def dep "command.ml" 395 11975 11975 "command.ml" 1 0 -1
+)
+"command.ml" 393 11912 11920 "command.ml" 393 11912 11924
+type(
+  string list
+)
+ident(
+  def tags "command.ml" 393 11912 11925 "command.ml" 393 11912 11973
+)
+"command.ml" 393 11912 11925 "command.ml" 393 11912 11929
+type(
+  pathname list
+)
+ident(
+  def deps "command.ml" 393 11912 11932 "command.ml" 393 11912 11973
+)
+"command.ml" 393 11912 11932 "command.ml" 393 11912 11948
+type(
+  Tags.t -> pathname list -> unit
+)
+ident(
+  int_ref set_deps_of_tags "command.ml" 390 11822 11826 "command.ml" 390 11822 11842
+)
+"command.ml" 393 11912 11950 "command.ml" 393 11912 11962
+type(
+  string list -> Tags.t
+)
+ident(
+  ext_ref Tags.of_list
+)
+"command.ml" 393 11912 11963 "command.ml" 393 11912 11967
+type(
+  string list
+)
+ident(
+  int_ref tags "command.ml" 393 11912 11920 "command.ml" 393 11912 11924
+)
+"command.ml" 393 11912 11949 "command.ml" 393 11912 11968
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"command.ml" 393 11912 11969 "command.ml" 393 11912 11973
+type(
+  pathname list
+)
+ident(
+  int_ref deps "command.ml" 393 11912 11925 "command.ml" 393 11912 11929
+)
+"command.ml" 393 11912 11932 "command.ml" 393 11912 11973
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 395 11975 11979 "command.ml" 395 11975 11983
+type(
+  Tags.elt list -> Tags.elt -> (string -> pathname list) -> unit
+)
+ident(
+  def pdep "command.ml" 397 12027 12099 "command.ml" 1 0 -1
+)
+"command.ml" 395 11975 11984 "command.ml" 395 11975 11988
+type(
+  Tags.elt list
+)
+ident(
+  def tags "command.ml" 395 11975 11989 "command.ml" 397 12027 12099
+)
+"command.ml" 395 11975 11989 "command.ml" 395 11975 11993
+type(
+  Tags.elt
+)
+ident(
+  def ptag "command.ml" 395 11975 11994 "command.ml" 397 12027 12099
+)
+"command.ml" 395 11975 11994 "command.ml" 395 11975 11998
+type(
+  string -> pathname list
+)
+ident(
+  def deps "command.ml" 396 12001 12003 "command.ml" 397 12027 12099
+)
+"command.ml" 396 12001 12003 "command.ml" 396 12001 12021
+type(
+  Tags.elt -> (string -> unit) -> unit
+)
+ident(
+  ext_ref Param_tags.declare
+)
+"command.ml" 396 12001 12022 "command.ml" 396 12001 12026
+type(
+  Tags.elt
+)
+ident(
+  int_ref ptag "command.ml" 395 11975 11989 "command.ml" 395 11975 11993
+)
+"command.ml" 397 12027 12036 "command.ml" 397 12027 12041
+type(
+  string
+)
+ident(
+  def param "command.ml" 397 12027 12045 "command.ml" 397 12027 12098
+)
+"command.ml" 397 12027 12045 "command.ml" 397 12027 12048
+type(
+  Tags.elt list -> pathname list -> unit
+)
+ident(
+  int_ref dep "command.ml" 393 11912 11916 "command.ml" 393 11912 11919
+)
+"command.ml" 397 12027 12050 "command.ml" 397 12027 12065
+type(
+  Tags.elt -> string -> Tags.elt
+)
+ident(
+  ext_ref Param_tags.make
+)
+"command.ml" 397 12027 12066 "command.ml" 397 12027 12070
+type(
+  Tags.elt
+)
+ident(
+  int_ref ptag "command.ml" 395 11975 11989 "command.ml" 395 11975 11993
+)
+"command.ml" 397 12027 12071 "command.ml" 397 12027 12076
+type(
+  string
+)
+ident(
+  int_ref param "command.ml" 397 12027 12036 "command.ml" 397 12027 12041
+)
+"command.ml" 397 12027 12050 "command.ml" 397 12027 12076
+call(
+  stack
+)
+type(
+  Tags.elt
+)
+"command.ml" 397 12027 12080 "command.ml" 397 12027 12084
+type(
+  Tags.elt list
+)
+ident(
+  int_ref tags "command.ml" 395 11975 11984 "command.ml" 395 11975 11988
+)
+"command.ml" 397 12027 12049 "command.ml" 397 12027 12085
+type(
+  Tags.elt list
+)
+"command.ml" 397 12027 12087 "command.ml" 397 12027 12091
+type(
+  string -> pathname list
+)
+ident(
+  int_ref deps "command.ml" 395 11975 11994 "command.ml" 395 11975 11998
+)
+"command.ml" 397 12027 12092 "command.ml" 397 12027 12097
+type(
+  string
+)
+ident(
+  int_ref param "command.ml" 397 12027 12036 "command.ml" 397 12027 12041
+)
+"command.ml" 397 12027 12086 "command.ml" 397 12027 12098
+call(
+  stack
+)
+type(
+  pathname list
+)
+"command.ml" 397 12027 12045 "command.ml" 397 12027 12098
+call(
+  tail
+)
+type(
+  unit
+)
+"command.ml" 397 12027 12031 "command.ml" 397 12027 12099
+type(
+  string -> unit
+)
+"command.ml" 396 12001 12003 "command.ml" 397 12027 12099
+call(
+  tail
+)
+type(
+  unit
+)

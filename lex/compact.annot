@@ -1,0 +1,4094 @@
+"compact.ml" 18 892 896 "compact.ml" 18 892 900
+type(
+  int Table.t
+)
+ident(
+  def code "compact.ml" 22 987 987 "compact.ml" 1 0 -1
+)
+"compact.ml" 18 892 903 "compact.ml" 18 892 915
+type(
+  int -> int Table.t
+)
+ident(
+  ext_ref Table.create
+)
+"compact.ml" 18 892 916 "compact.ml" 18 892 917
+type(
+  int
+)
+"compact.ml" 18 892 903 "compact.ml" 18 892 917
+call(
+  stack
+)
+type(
+  int Table.t
+)
+"compact.ml" 22 987 991 "compact.ml" 22 987 999
+type(
+  int -> unit
+)
+ident(
+  def emit_int "compact.ml" 24 1023 1023 "compact.ml" 1 0 -1
+)
+"compact.ml" 22 987 1000 "compact.ml" 22 987 1001
+type(
+  int
+)
+ident(
+  def i "compact.ml" 22 987 1004 "compact.ml" 22 987 1021
+)
+"compact.ml" 22 987 1004 "compact.ml" 22 987 1014
+type(
+  int Table.t -> int -> unit
+)
+ident(
+  ext_ref Table.emit
+)
+"compact.ml" 22 987 1015 "compact.ml" 22 987 1019
+type(
+  int Table.t
+)
+ident(
+  int_ref code "compact.ml" 18 892 896 "compact.ml" 18 892 900
+)
+"compact.ml" 22 987 1020 "compact.ml" 22 987 1021
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 22 987 1000 "compact.ml" 22 987 1001
+)
+"compact.ml" 22 987 1004 "compact.ml" 22 987 1021
+call(
+  tail
+)
+type(
+  unit
+)
+"compact.ml" 24 1023 1027 "compact.ml" 24 1023 1034
+type(
+  Lexgen.memory_action -> int list -> int list
+)
+ident(
+  def ins_mem "compact.ml" 29 1128 1128 "compact.ml" 1 0 -1
+)
+"compact.ml" 24 1023 1035 "compact.ml" 24 1023 1036
+type(
+  Lexgen.memory_action
+)
+ident(
+  def i "compact.ml" 24 1023 1037 "compact.ml" 26 1090 1125
+)
+"compact.ml" 24 1023 1037 "compact.ml" 24 1023 1038
+type(
+  int list
+)
+ident(
+  def c "compact.ml" 24 1023 1042 "compact.ml" 26 1090 1125
+)
+"compact.ml" 24 1023 1048 "compact.ml" 24 1023 1049
+type(
+  Lexgen.memory_action
+)
+ident(
+  int_ref i "compact.ml" 24 1023 1035 "compact.ml" 24 1023 1036
+)
+"compact.ml" 25 1055 1065 "compact.ml" 25 1055 1068
+type(
+  int
+)
+ident(
+  def dst "compact.ml" 25 1055 1078 "compact.ml" 25 1055 1089
+)
+"compact.ml" 25 1055 1070 "compact.ml" 25 1055 1073
+type(
+  int
+)
+ident(
+  def src "compact.ml" 25 1055 1078 "compact.ml" 25 1055 1089
+)
+"compact.ml" 25 1055 1059 "compact.ml" 25 1055 1074
+type(
+  Lexgen.memory_action
+)
+"compact.ml" 25 1055 1078 "compact.ml" 25 1055 1081
+type(
+  int
+)
+ident(
+  int_ref dst "compact.ml" 25 1055 1065 "compact.ml" 25 1055 1068
+)
+"compact.ml" 25 1055 1083 "compact.ml" 25 1055 1086
+type(
+  int
+)
+ident(
+  int_ref src "compact.ml" 25 1055 1070 "compact.ml" 25 1055 1073
+)
+"compact.ml" 25 1055 1088 "compact.ml" 25 1055 1089
+type(
+  int list
+)
+ident(
+  int_ref c "compact.ml" 24 1023 1037 "compact.ml" 24 1023 1038
+)
+"compact.ml" 25 1055 1083 "compact.ml" 25 1055 1089
+type(
+  int list
+)
+"compact.ml" 25 1055 1078 "compact.ml" 25 1055 1089
+type(
+  int list
+)
+"compact.ml" 26 1090 1098 "compact.ml" 26 1090 1101
+type(
+  int
+)
+ident(
+  def dst "compact.ml" 26 1090 1113 "compact.ml" 26 1090 1125
+)
+"compact.ml" 26 1090 1094 "compact.ml" 26 1090 1101
+type(
+  Lexgen.memory_action
+)
+"compact.ml" 26 1090 1113 "compact.ml" 26 1090 1116
+type(
+  int
+)
+ident(
+  int_ref dst "compact.ml" 26 1090 1098 "compact.ml" 26 1090 1101
+)
+"compact.ml" 26 1090 1118 "compact.ml" 26 1090 1122
+type(
+  int
+)
+"compact.ml" 26 1090 1124 "compact.ml" 26 1090 1125
+type(
+  int list
+)
+ident(
+  int_ref c "compact.ml" 24 1023 1037 "compact.ml" 24 1023 1038
+)
+"compact.ml" 26 1090 1118 "compact.ml" 26 1090 1125
+type(
+  int list
+)
+"compact.ml" 26 1090 1113 "compact.ml" 26 1090 1125
+type(
+  int list
+)
+"compact.ml" 24 1023 1042 "compact.ml" 26 1090 1125
+type(
+  int list
+)
+"compact.ml" 29 1128 1132 "compact.ml" 29 1128 1139
+type(
+  Lexgen.tag_action -> int list -> int list
+)
+ident(
+  def ins_tag "compact.ml" 34 1236 1236 "compact.ml" 1 0 -1
+)
+"compact.ml" 29 1128 1140 "compact.ml" 29 1128 1141
+type(
+  Lexgen.tag_action
+)
+ident(
+  def i "compact.ml" 29 1128 1142 "compact.ml" 31 1196 1233
+)
+"compact.ml" 29 1128 1142 "compact.ml" 29 1128 1143
+type(
+  int list
+)
+ident(
+  def c "compact.ml" 29 1128 1146 "compact.ml" 31 1196 1233
+)
+"compact.ml" 29 1128 1152 "compact.ml" 29 1128 1153
+type(
+  Lexgen.tag_action
+)
+ident(
+  int_ref i "compact.ml" 29 1128 1140 "compact.ml" 29 1128 1141
+)
+"compact.ml" 30 1159 1171 "compact.ml" 30 1159 1174
+type(
+  int
+)
+ident(
+  def dst "compact.ml" 30 1159 1184 "compact.ml" 30 1159 1195
+)
+"compact.ml" 30 1159 1176 "compact.ml" 30 1159 1179
+type(
+  int
+)
+ident(
+  def src "compact.ml" 30 1159 1184 "compact.ml" 30 1159 1195
+)
+"compact.ml" 30 1159 1163 "compact.ml" 30 1159 1180
+type(
+  Lexgen.tag_action
+)
+"compact.ml" 30 1159 1184 "compact.ml" 30 1159 1187
+type(
+  int
+)
+ident(
+  int_ref dst "compact.ml" 30 1159 1171 "compact.ml" 30 1159 1174
+)
+"compact.ml" 30 1159 1189 "compact.ml" 30 1159 1192
+type(
+  int
+)
+ident(
+  int_ref src "compact.ml" 30 1159 1176 "compact.ml" 30 1159 1179
+)
+"compact.ml" 30 1159 1194 "compact.ml" 30 1159 1195
+type(
+  int list
+)
+ident(
+  int_ref c "compact.ml" 29 1128 1142 "compact.ml" 29 1128 1143
+)
+"compact.ml" 30 1159 1189 "compact.ml" 30 1159 1195
+type(
+  int list
+)
+"compact.ml" 30 1159 1184 "compact.ml" 30 1159 1195
+type(
+  int list
+)
+"compact.ml" 31 1196 1209 "compact.ml" 31 1196 1212
+type(
+  int
+)
+ident(
+  def dst "compact.ml" 31 1196 1221 "compact.ml" 31 1196 1233
+)
+"compact.ml" 31 1196 1200 "compact.ml" 31 1196 1212
+type(
+  Lexgen.tag_action
+)
+"compact.ml" 31 1196 1221 "compact.ml" 31 1196 1224
+type(
+  int
+)
+ident(
+  int_ref dst "compact.ml" 31 1196 1209 "compact.ml" 31 1196 1212
+)
+"compact.ml" 31 1196 1226 "compact.ml" 31 1196 1230
+type(
+  int
+)
+"compact.ml" 31 1196 1232 "compact.ml" 31 1196 1233
+type(
+  int list
+)
+ident(
+  int_ref c "compact.ml" 29 1128 1142 "compact.ml" 29 1128 1143
+)
+"compact.ml" 31 1196 1226 "compact.ml" 31 1196 1233
+type(
+  int list
+)
+"compact.ml" 31 1196 1221 "compact.ml" 31 1196 1233
+type(
+  int list
+)
+"compact.ml" 29 1128 1146 "compact.ml" 31 1196 1233
+type(
+  int list
+)
+"compact.ml" 34 1236 1240 "compact.ml" 34 1236 1252
+type(
+  int list -> int
+)
+ident(
+  def do_emit_code "compact.ml" 40 1334 1334 "compact.ml" 1 0 -1
+)
+"compact.ml" 34 1236 1253 "compact.ml" 34 1236 1254
+type(
+  int list
+)
+ident(
+  def c "compact.ml" 35 1257 1259 "compact.ml" 38 1329 1332
+)
+"compact.ml" 35 1257 1263 "compact.ml" 35 1257 1264
+type(
+  int
+)
+ident(
+  def r "compact.ml" 36 1286 1288 "compact.ml" 38 1329 1332
+)
+"compact.ml" 35 1257 1267 "compact.ml" 35 1257 1277
+type(
+  int Table.t -> int
+)
+ident(
+  ext_ref Table.size
+)
+"compact.ml" 35 1257 1278 "compact.ml" 35 1257 1282
+type(
+  int Table.t
+)
+ident(
+  int_ref code "compact.ml" 18 892 896 "compact.ml" 18 892 900
+)
+"compact.ml" 35 1257 1267 "compact.ml" 35 1257 1282
+call(
+  stack
+)
+type(
+  int
+)
+"compact.ml" 36 1286 1288 "compact.ml" 36 1286 1297
+type(
+  (int -> unit) -> int list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"compact.ml" 36 1286 1298 "compact.ml" 36 1286 1306
+type(
+  int -> unit
+)
+ident(
+  int_ref emit_int "compact.ml" 22 987 991 "compact.ml" 22 987 999
+)
+"compact.ml" 36 1286 1307 "compact.ml" 36 1286 1308
+type(
+  int list
+)
+ident(
+  int_ref c "compact.ml" 34 1236 1253 "compact.ml" 34 1236 1254
+)
+"compact.ml" 36 1286 1288 "compact.ml" 36 1286 1308
+call(
+  stack
+)
+type(
+  unit
+)
+"compact.ml" 37 1311 1313 "compact.ml" 37 1311 1321
+type(
+  int -> unit
+)
+ident(
+  int_ref emit_int "compact.ml" 22 987 991 "compact.ml" 22 987 999
+)
+"compact.ml" 37 1311 1322 "compact.ml" 37 1311 1326
+type(
+  int
+)
+"compact.ml" 37 1311 1313 "compact.ml" 37 1311 1326
+call(
+  stack
+)
+type(
+  unit
+)
+"compact.ml" 38 1329 1331 "compact.ml" 38 1329 1332
+type(
+  int
+)
+ident(
+  int_ref r "compact.ml" 35 1257 1263 "compact.ml" 35 1257 1264
+)
+"compact.ml" 37 1311 1313 "compact.ml" 38 1329 1332
+type(
+  int
+)
+"compact.ml" 36 1286 1288 "compact.ml" 38 1329 1332
+type(
+  int
+)
+"compact.ml" 35 1257 1259 "compact.ml" 38 1329 1332
+type(
+  int
+)
+"compact.ml" 40 1334 1338 "compact.ml" 40 1334 1344
+type(
+  (int list, int) Hashtbl.t
+)
+ident(
+  def memory "compact.ml" 42 1367 1367 "compact.ml" 1 0 -1
+)
+"compact.ml" 40 1334 1347 "compact.ml" 40 1334 1361
+type(
+  ?random:bool -> int -> (int list, int) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"compact.ml" 40 1334 1362 "compact.ml" 40 1334 1365
+type(
+  int
+)
+"compact.ml" 40 1334 1347 "compact.ml" 40 1334 1365
+call(
+  stack
+)
+type(
+  (int list, int) Hashtbl.t
+)
+"compact.ml" 42 1367 1371 "compact.ml" 42 1367 1384
+type(
+  int list -> int
+)
+ident(
+  def mem_emit_code "compact.ml" 50 1566 1566 "compact.ml" 1 0 -1
+)
+"compact.ml" 42 1367 1385 "compact.ml" 42 1367 1386
+type(
+  int list
+)
+ident(
+  def c "compact.ml" 43 1389 1391 "compact.ml" 47 1502 1509
+)
+"compact.ml" 43 1389 1395 "compact.ml" 43 1389 1407
+type(
+  (int list, int) Hashtbl.t -> int list -> int
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"compact.ml" 43 1389 1408 "compact.ml" 43 1389 1414
+type(
+  (int list, int) Hashtbl.t
+)
+ident(
+  int_ref memory "compact.ml" 40 1334 1338 "compact.ml" 40 1334 1344
+)
+"compact.ml" 43 1389 1415 "compact.ml" 43 1389 1416
+type(
+  int list
+)
+ident(
+  int_ref c "compact.ml" 42 1367 1385 "compact.ml" 42 1367 1386
+)
+"compact.ml" 43 1389 1395 "compact.ml" 43 1389 1416
+call(
+  stack
+)
+type(
+  int
+)
+"compact.ml" 44 1422 1426 "compact.ml" 44 1422 1435
+type(
+  exn
+)
+"compact.ml" 45 1439 1449 "compact.ml" 45 1439 1450
+type(
+  int
+)
+ident(
+  def r "compact.ml" 46 1471 1477 "compact.ml" 47 1502 1509
+)
+"compact.ml" 45 1439 1453 "compact.ml" 45 1439 1465
+type(
+  int list -> int
+)
+ident(
+  int_ref do_emit_code "compact.ml" 34 1236 1240 "compact.ml" 34 1236 1252
+)
+"compact.ml" 45 1439 1466 "compact.ml" 45 1439 1467
+type(
+  int list
+)
+ident(
+  int_ref c "compact.ml" 42 1367 1385 "compact.ml" 42 1367 1386
+)
+"compact.ml" 45 1439 1453 "compact.ml" 45 1439 1467
+call(
+  stack
+)
+type(
+  int
+)
+"compact.ml" 46 1471 1477 "compact.ml" 46 1471 1488
+type(
+  (int list, int) Hashtbl.t -> int list -> int -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"compact.ml" 46 1471 1489 "compact.ml" 46 1471 1495
+type(
+  (int list, int) Hashtbl.t
+)
+ident(
+  int_ref memory "compact.ml" 40 1334 1338 "compact.ml" 40 1334 1344
+)
+"compact.ml" 46 1471 1496 "compact.ml" 46 1471 1497
+type(
+  int list
+)
+ident(
+  int_ref c "compact.ml" 42 1367 1385 "compact.ml" 42 1367 1386
+)
+"compact.ml" 46 1471 1498 "compact.ml" 46 1471 1499
+type(
+  int
+)
+ident(
+  int_ref r "compact.ml" 45 1439 1449 "compact.ml" 45 1439 1450
+)
+"compact.ml" 46 1471 1477 "compact.ml" 46 1471 1499
+call(
+  stack
+)
+type(
+  unit
+)
+"compact.ml" 47 1502 1508 "compact.ml" 47 1502 1509
+type(
+  int
+)
+ident(
+  int_ref r "compact.ml" 45 1439 1449 "compact.ml" 45 1439 1450
+)
+"compact.ml" 46 1471 1477 "compact.ml" 47 1502 1509
+type(
+  int
+)
+"compact.ml" 45 1439 1445 "compact.ml" 47 1502 1509
+type(
+  int
+)
+"compact.ml" 43 1389 1391 "compact.ml" 47 1502 1509
+type(
+  int
+)
+"compact.ml" 50 1566 1574 "compact.ml" 50 1566 1587
+type(
+  int list -> int
+)
+ident(
+  int_ref mem_emit_code "compact.ml" 42 1367 1371 "compact.ml" 42 1367 1384
+)
+"compact.ml" 50 1566 1588 "compact.ml" 50 1566 1590
+type(
+  int list
+)
+"compact.ml" 50 1566 1574 "compact.ml" 50 1566 1590
+call(
+  stack
+)
+type(
+  int
+)
+"compact.ml" 52 1592 1596 "compact.ml" 52 1592 1609
+type(
+  Lexgen.tag_action list -> int
+)
+ident(
+  def emit_tag_code "compact.ml" 62 1934 1934 "compact.ml" 1 0 -1
+)
+"compact.ml" 52 1592 1610 "compact.ml" 52 1592 1611
+type(
+  Lexgen.tag_action list
+)
+ident(
+  def c "compact.ml" 52 1592 1614 "compact.ml" 52 1592 1658
+)
+"compact.ml" 52 1592 1614 "compact.ml" 52 1592 1627
+type(
+  int list -> int
+)
+ident(
+  int_ref mem_emit_code "compact.ml" 42 1367 1371 "compact.ml" 42 1367 1384
+)
+"compact.ml" 52 1592 1629 "compact.ml" 52 1592 1644
+type(
+  (Lexgen.tag_action -> int list -> int list) ->
+  Lexgen.tag_action list -> int list -> int list
+)
+ident(
+  ext_ref List.fold_right
+)
+"compact.ml" 52 1592 1645 "compact.ml" 52 1592 1652
+type(
+  Lexgen.tag_action -> int list -> int list
+)
+ident(
+  int_ref ins_tag "compact.ml" 29 1128 1132 "compact.ml" 29 1128 1139
+)
+"compact.ml" 52 1592 1653 "compact.ml" 52 1592 1654
+type(
+  Lexgen.tag_action list
+)
+ident(
+  int_ref c "compact.ml" 52 1592 1610 "compact.ml" 52 1592 1611
+)
+"compact.ml" 52 1592 1655 "compact.ml" 52 1592 1657
+type(
+  int list
+)
+"compact.ml" 52 1592 1628 "compact.ml" 52 1592 1658
+call(
+  stack
+)
+type(
+  int list
+)
+"compact.ml" 52 1592 1614 "compact.ml" 52 1592 1658
+call(
+  tail
+)
+type(
+  int
+)
+"compact.ml" 53 1659 1663 "compact.ml" 53 1659 1676
+type(
+  Lexgen.memory_action list -> int
+)
+ident(
+  def emit_mem_code "compact.ml" 62 1934 1934 "compact.ml" 1 0 -1
+)
+"compact.ml" 53 1659 1677 "compact.ml" 53 1659 1678
+type(
+  Lexgen.memory_action list
+)
+ident(
+  def c "compact.ml" 53 1659 1681 "compact.ml" 53 1659 1725
+)
+"compact.ml" 53 1659 1681 "compact.ml" 53 1659 1694
+type(
+  int list -> int
+)
+ident(
+  int_ref mem_emit_code "compact.ml" 42 1367 1371 "compact.ml" 42 1367 1384
+)
+"compact.ml" 53 1659 1696 "compact.ml" 53 1659 1711
+type(
+  (Lexgen.memory_action -> int list -> int list) ->
+  Lexgen.memory_action list -> int list -> int list
+)
+ident(
+  ext_ref List.fold_right
+)
+"compact.ml" 53 1659 1712 "compact.ml" 53 1659 1719
+type(
+  Lexgen.memory_action -> int list -> int list
+)
+ident(
+  int_ref ins_mem "compact.ml" 24 1023 1027 "compact.ml" 24 1023 1034
+)
+"compact.ml" 53 1659 1720 "compact.ml" 53 1659 1721
+type(
+  Lexgen.memory_action list
+)
+ident(
+  int_ref c "compact.ml" 53 1659 1677 "compact.ml" 53 1659 1678
+)
+"compact.ml" 53 1659 1722 "compact.ml" 53 1659 1724
+type(
+  int list
+)
+"compact.ml" 53 1659 1695 "compact.ml" 53 1659 1725
+call(
+  stack
+)
+type(
+  int list
+)
+"compact.ml" 53 1659 1681 "compact.ml" 53 1659 1725
+call(
+  tail
+)
+type(
+  int
+)
+"compact.ml" 62 1934 1938 "compact.ml" 62 1934 1955
+type(
+  'a array -> 'a
+)
+ident(
+  def most_frequent_elt "compact.ml" 80 2433 2433 "compact.ml" 1 0 -1
+)
+"compact.ml" 62 1934 1956 "compact.ml" 62 1934 1957
+type(
+  'a array
+)
+ident(
+  def v "compact.ml" 63 1960 1962 "compact.ml" 76 2346 2358
+)
+"compact.ml" 63 1960 1966 "compact.ml" 63 1960 1977
+type(
+  ('a, int ref) Hashtbl.t
+)
+ident(
+  def frequencies "compact.ml" 64 2001 2003 "compact.ml" 76 2346 2358
+)
+"compact.ml" 63 1960 1980 "compact.ml" 63 1960 1994
+type(
+  ?random:bool -> int -> ('a, int ref) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"compact.ml" 63 1960 1995 "compact.ml" 63 1960 1997
+type(
+  int
+)
+"compact.ml" 63 1960 1980 "compact.ml" 63 1960 1997
+call(
+  stack
+)
+type(
+  ('a, int ref) Hashtbl.t
+)
+"compact.ml" 64 2001 2007 "compact.ml" 64 2001 2015
+type(
+  int ref
+)
+ident(
+  def max_freq "compact.ml" 65 2027 2029 "compact.ml" 76 2346 2358
+)
+"compact.ml" 64 2001 2018 "compact.ml" 64 2001 2021
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"compact.ml" 64 2001 2022 "compact.ml" 64 2001 2023
+type(
+  int
+)
+"compact.ml" 64 2001 2018 "compact.ml" 64 2001 2023
+type(
+  int ref
+)
+"compact.ml" 65 2027 2033 "compact.ml" 65 2027 2042
+type(
+  'a ref
+)
+ident(
+  def most_freq "compact.ml" 66 2060 2062 "compact.ml" 76 2346 2358
+)
+"compact.ml" 65 2027 2045 "compact.ml" 65 2027 2048
+type(
+  'a -> 'a ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"compact.ml" 65 2027 2050 "compact.ml" 65 2027 2051
+type(
+  'a array
+)
+ident(
+  int_ref v "compact.ml" 62 1934 1956 "compact.ml" 62 1934 1957
+)
+"compact.ml" 65 2027 2053 "compact.ml" 65 2027 2054
+type(
+  int
+)
+"compact.ml" 65 2027 2049 "compact.ml" 65 2027 2056
+type(
+  'a
+)
+"compact.ml" 65 2027 2045 "compact.ml" 65 2027 2056
+type(
+  'a ref
+)
+"compact.ml" 66 2060 2070 "compact.ml" 66 2060 2071
+type(
+  int
+)
+"compact.ml" 66 2060 2075 "compact.ml" 66 2060 2087
+type(
+  'a array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"compact.ml" 66 2060 2088 "compact.ml" 66 2060 2089
+type(
+  'a array
+)
+ident(
+  int_ref v "compact.ml" 62 1934 1956 "compact.ml" 62 1934 1957
+)
+"compact.ml" 66 2060 2075 "compact.ml" 66 2060 2089
+type(
+  int
+)
+"compact.ml" 66 2060 2090 "compact.ml" 66 2060 2091
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"compact.ml" 66 2060 2092 "compact.ml" 66 2060 2093
+type(
+  int
+)
+"compact.ml" 66 2060 2075 "compact.ml" 66 2060 2093
+type(
+  int
+)
+"compact.ml" 67 2097 2105 "compact.ml" 67 2097 2106
+type(
+  'a
+)
+ident(
+  def e "compact.ml" 68 2118 2122 "compact.ml" 74 2270 2337
+)
+"compact.ml" 67 2097 2109 "compact.ml" 67 2097 2110
+type(
+  'a array
+)
+ident(
+  int_ref v "compact.ml" 62 1934 1956 "compact.ml" 62 1934 1957
+)
+"compact.ml" 67 2097 2112 "compact.ml" 67 2097 2113
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 66 2060 2062 "compact.ml" 75 2338 2344
+)
+"compact.ml" 67 2097 2109 "compact.ml" 67 2097 2114
+type(
+  'a
+)
+"compact.ml" 68 2118 2126 "compact.ml" 68 2118 2127
+type(
+  int ref
+)
+ident(
+  def r "compact.ml" 73 2258 2262 "compact.ml" 74 2270 2337
+)
+"compact.ml" 70 2140 2148 "compact.ml" 70 2140 2160
+type(
+  ('a, int ref) Hashtbl.t -> 'a -> int ref
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"compact.ml" 70 2140 2161 "compact.ml" 70 2140 2172
+type(
+  ('a, int ref) Hashtbl.t
+)
+ident(
+  int_ref frequencies "compact.ml" 63 1960 1966 "compact.ml" 63 1960 1977
+)
+"compact.ml" 70 2140 2173 "compact.ml" 70 2140 2174
+type(
+  'a
+)
+ident(
+  int_ref e "compact.ml" 67 2097 2105 "compact.ml" 67 2097 2106
+)
+"compact.ml" 70 2140 2148 "compact.ml" 70 2140 2174
+call(
+  stack
+)
+type(
+  int ref
+)
+"compact.ml" 71 2175 2186 "compact.ml" 71 2175 2195
+type(
+  exn
+)
+"compact.ml" 72 2199 2211 "compact.ml" 72 2199 2212
+type(
+  int ref
+)
+ident(
+  def r "compact.ml" 72 2199 2224 "compact.ml" 72 2199 2254
+)
+"compact.ml" 72 2199 2215 "compact.ml" 72 2199 2218
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"compact.ml" 72 2199 2219 "compact.ml" 72 2199 2220
+type(
+  int
+)
+"compact.ml" 72 2199 2215 "compact.ml" 72 2199 2220
+type(
+  int ref
+)
+"compact.ml" 72 2199 2224 "compact.ml" 72 2199 2235
+type(
+  ('a, int ref) Hashtbl.t -> 'a -> int ref -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"compact.ml" 72 2199 2236 "compact.ml" 72 2199 2247
+type(
+  ('a, int ref) Hashtbl.t
+)
+ident(
+  int_ref frequencies "compact.ml" 63 1960 1966 "compact.ml" 63 1960 1977
+)
+"compact.ml" 72 2199 2248 "compact.ml" 72 2199 2249
+type(
+  'a
+)
+ident(
+  int_ref e "compact.ml" 67 2097 2105 "compact.ml" 67 2097 2106
+)
+"compact.ml" 72 2199 2250 "compact.ml" 72 2199 2251
+type(
+  int ref
+)
+ident(
+  int_ref r "compact.ml" 72 2199 2211 "compact.ml" 72 2199 2212
+)
+"compact.ml" 72 2199 2224 "compact.ml" 72 2199 2251
+call(
+  stack
+)
+type(
+  unit
+)
+"compact.ml" 72 2199 2253 "compact.ml" 72 2199 2254
+type(
+  int ref
+)
+ident(
+  int_ref r "compact.ml" 72 2199 2211 "compact.ml" 72 2199 2212
+)
+"compact.ml" 72 2199 2224 "compact.ml" 72 2199 2254
+type(
+  int ref
+)
+"compact.ml" 72 2199 2207 "compact.ml" 72 2199 2254
+type(
+  int ref
+)
+"compact.ml" 69 2130 2136 "compact.ml" 72 2199 2254
+type(
+  int ref
+)
+"compact.ml" 73 2258 2262 "compact.ml" 73 2258 2266
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"compact.ml" 73 2258 2267 "compact.ml" 73 2258 2268
+type(
+  int ref
+)
+ident(
+  int_ref r "compact.ml" 68 2118 2126 "compact.ml" 68 2118 2127
+)
+"compact.ml" 73 2258 2262 "compact.ml" 73 2258 2268
+type(
+  unit
+)
+"compact.ml" 74 2270 2277 "compact.ml" 74 2270 2278
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"compact.ml" 74 2270 2278 "compact.ml" 74 2270 2279
+type(
+  int ref
+)
+ident(
+  int_ref r "compact.ml" 68 2118 2126 "compact.ml" 68 2118 2127
+)
+"compact.ml" 74 2270 2277 "compact.ml" 74 2270 2279
+type(
+  int
+)
+"compact.ml" 74 2270 2280 "compact.ml" 74 2270 2281
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"compact.ml" 74 2270 2282 "compact.ml" 74 2270 2283
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"compact.ml" 74 2270 2283 "compact.ml" 74 2270 2291
+type(
+  int ref
+)
+ident(
+  int_ref max_freq "compact.ml" 64 2001 2007 "compact.ml" 64 2001 2015
+)
+"compact.ml" 74 2270 2282 "compact.ml" 74 2270 2291
+type(
+  int
+)
+"compact.ml" 74 2270 2277 "compact.ml" 74 2270 2291
+type(
+  bool
+)
+"compact.ml" 74 2270 2303 "compact.ml" 74 2270 2311
+type(
+  int ref
+)
+ident(
+  int_ref max_freq "compact.ml" 64 2001 2007 "compact.ml" 64 2001 2015
+)
+"compact.ml" 74 2270 2312 "compact.ml" 74 2270 2314
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"compact.ml" 74 2270 2315 "compact.ml" 74 2270 2316
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"compact.ml" 74 2270 2316 "compact.ml" 74 2270 2317
+type(
+  int ref
+)
+ident(
+  int_ref r "compact.ml" 68 2118 2126 "compact.ml" 68 2118 2127
+)
+"compact.ml" 74 2270 2315 "compact.ml" 74 2270 2317
+type(
+  int
+)
+"compact.ml" 74 2270 2303 "compact.ml" 74 2270 2317
+type(
+  unit
+)
+"compact.ml" 74 2270 2319 "compact.ml" 74 2270 2328
+type(
+  'a ref
+)
+ident(
+  int_ref most_freq "compact.ml" 65 2027 2033 "compact.ml" 65 2027 2042
+)
+"compact.ml" 74 2270 2329 "compact.ml" 74 2270 2331
+type(
+  'a ref -> 'a -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"compact.ml" 74 2270 2332 "compact.ml" 74 2270 2333
+type(
+  'a
+)
+ident(
+  int_ref e "compact.ml" 67 2097 2105 "compact.ml" 67 2097 2106
+)
+"compact.ml" 74 2270 2319 "compact.ml" 74 2270 2333
+type(
+  unit
+)
+"compact.ml" 74 2270 2297 "compact.ml" 74 2270 2337
+type(
+  unit
+)
+"compact.ml" 74 2270 2274 "compact.ml" 74 2270 2337
+type(
+  unit
+)
+"compact.ml" 73 2258 2262 "compact.ml" 74 2270 2337
+type(
+  unit
+)
+"compact.ml" 68 2118 2122 "compact.ml" 74 2270 2337
+type(
+  unit
+)
+"compact.ml" 67 2097 2101 "compact.ml" 74 2270 2337
+type(
+  unit
+)
+"compact.ml" 66 2060 2062 "compact.ml" 75 2338 2344
+type(
+  unit
+)
+"compact.ml" 76 2346 2348 "compact.ml" 76 2346 2349
+type(
+  'a ref -> 'a
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"compact.ml" 76 2346 2349 "compact.ml" 76 2346 2358
+type(
+  'a ref
+)
+ident(
+  int_ref most_freq "compact.ml" 65 2027 2033 "compact.ml" 65 2027 2042
+)
+"compact.ml" 76 2346 2348 "compact.ml" 76 2346 2358
+type(
+  'a
+)
+"compact.ml" 66 2060 2062 "compact.ml" 76 2346 2358
+type(
+  'a
+)
+"compact.ml" 65 2027 2029 "compact.ml" 76 2346 2358
+type(
+  'a
+)
+"compact.ml" 64 2001 2003 "compact.ml" 76 2346 2358
+type(
+  'a
+)
+"compact.ml" 63 1960 1962 "compact.ml" 76 2346 2358
+type(
+  'a
+)
+"compact.ml" 80 2433 2437 "compact.ml" 80 2433 2457
+type(
+  'a -> 'a array -> (int * 'a) list
+)
+ident(
+  def non_default_elements "compact.ml" 89 2641 2641 "compact.ml" 1 0 -1
+)
+"compact.ml" 80 2433 2458 "compact.ml" 80 2433 2461
+type(
+  'a
+)
+ident(
+  def def "compact.ml" 80 2433 2462 "compact.ml" 86 2628 2638
+)
+"compact.ml" 80 2433 2462 "compact.ml" 80 2433 2463
+type(
+  'a array
+)
+ident(
+  def v "compact.ml" 81 2466 2468 "compact.ml" 86 2628 2638
+)
+"compact.ml" 81 2466 2476 "compact.ml" 81 2466 2482
+type(
+  int -> (int * 'a) list
+)
+ident(
+  def nondef "compact.ml" 81 2466 2468 "compact.ml" 86 2628 2638
+)
+"compact.ml" 81 2466 2483 "compact.ml" 81 2466 2484
+type(
+  int
+)
+ident(
+  def i "compact.ml" 82 2487 2491 "compact.ml" 85 2617 2624
+)
+"compact.ml" 82 2487 2494 "compact.ml" 82 2487 2495
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 81 2466 2483 "compact.ml" 81 2466 2484
+)
+"compact.ml" 82 2487 2496 "compact.ml" 82 2487 2498
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"compact.ml" 82 2487 2499 "compact.ml" 82 2487 2511
+type(
+  'a array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"compact.ml" 82 2487 2512 "compact.ml" 82 2487 2513
+type(
+  'a array
+)
+ident(
+  int_ref v "compact.ml" 80 2433 2462 "compact.ml" 80 2433 2463
+)
+"compact.ml" 82 2487 2499 "compact.ml" 82 2487 2513
+type(
+  int
+)
+"compact.ml" 82 2487 2494 "compact.ml" 82 2487 2513
+type(
+  bool
+)
+"compact.ml" 82 2487 2519 "compact.ml" 82 2487 2521
+type(
+  (int * 'a) list
+)
+"compact.ml" 83 2533 2543 "compact.ml" 83 2533 2544
+type(
+  'a
+)
+ident(
+  def e "compact.ml" 84 2556 2562 "compact.ml" 84 2556 2616
+)
+"compact.ml" 83 2533 2547 "compact.ml" 83 2533 2548
+type(
+  'a array
+)
+ident(
+  int_ref v "compact.ml" 80 2433 2462 "compact.ml" 80 2433 2463
+)
+"compact.ml" 83 2533 2550 "compact.ml" 83 2533 2551
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 81 2466 2483 "compact.ml" 81 2466 2484
+)
+"compact.ml" 83 2533 2547 "compact.ml" 83 2533 2552
+type(
+  'a
+)
+"compact.ml" 84 2556 2565 "compact.ml" 84 2556 2566
+type(
+  'a
+)
+ident(
+  int_ref e "compact.ml" 83 2533 2543 "compact.ml" 83 2533 2544
+)
+"compact.ml" 84 2556 2567 "compact.ml" 84 2556 2568
+type(
+  'a -> 'a -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"compact.ml" 84 2556 2569 "compact.ml" 84 2556 2572
+type(
+  'a
+)
+ident(
+  int_ref def "compact.ml" 80 2433 2458 "compact.ml" 80 2433 2461
+)
+"compact.ml" 84 2556 2565 "compact.ml" 84 2556 2572
+type(
+  bool
+)
+"compact.ml" 84 2556 2578 "compact.ml" 84 2556 2584
+type(
+  int -> (int * 'a) list
+)
+ident(
+  int_ref nondef "compact.ml" 81 2466 2476 "compact.ml" 81 2466 2482
+)
+"compact.ml" 84 2556 2585 "compact.ml" 84 2556 2586
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 81 2466 2483 "compact.ml" 81 2466 2484
+)
+"compact.ml" 84 2556 2586 "compact.ml" 84 2556 2587
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"compact.ml" 84 2556 2587 "compact.ml" 84 2556 2588
+type(
+  int
+)
+"compact.ml" 84 2556 2584 "compact.ml" 84 2556 2589
+type(
+  int
+)
+"compact.ml" 84 2556 2578 "compact.ml" 84 2556 2589
+call(
+  tail
+)
+type(
+  (int * 'a) list
+)
+"compact.ml" 84 2556 2596 "compact.ml" 84 2556 2597
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 81 2466 2483 "compact.ml" 81 2466 2484
+)
+"compact.ml" 84 2556 2599 "compact.ml" 84 2556 2600
+type(
+  'a
+)
+ident(
+  int_ref e "compact.ml" 83 2533 2543 "compact.ml" 83 2533 2544
+)
+"compact.ml" 84 2556 2595 "compact.ml" 84 2556 2601
+type(
+  int * 'a
+)
+"compact.ml" 84 2556 2605 "compact.ml" 84 2556 2611
+type(
+  int -> (int * 'a) list
+)
+ident(
+  int_ref nondef "compact.ml" 81 2466 2476 "compact.ml" 81 2466 2482
+)
+"compact.ml" 84 2556 2612 "compact.ml" 84 2556 2613
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 81 2466 2483 "compact.ml" 81 2466 2484
+)
+"compact.ml" 84 2556 2613 "compact.ml" 84 2556 2614
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"compact.ml" 84 2556 2614 "compact.ml" 84 2556 2615
+type(
+  int
+)
+"compact.ml" 84 2556 2611 "compact.ml" 84 2556 2616
+type(
+  int
+)
+"compact.ml" 84 2556 2605 "compact.ml" 84 2556 2616
+call(
+  stack
+)
+type(
+  (int * 'a) list
+)
+"compact.ml" 84 2556 2595 "compact.ml" 84 2556 2616
+type(
+  (int * 'a) list
+)
+"compact.ml" 84 2556 2562 "compact.ml" 84 2556 2616
+type(
+  (int * 'a) list
+)
+"compact.ml" 82 2487 2527 "compact.ml" 85 2617 2624
+type(
+  (int * 'a) list
+)
+"compact.ml" 82 2487 2491 "compact.ml" 85 2617 2624
+type(
+  (int * 'a) list
+)
+"compact.ml" 86 2628 2630 "compact.ml" 86 2628 2636
+type(
+  int -> (int * 'a) list
+)
+ident(
+  int_ref nondef "compact.ml" 81 2466 2476 "compact.ml" 81 2466 2482
+)
+"compact.ml" 86 2628 2637 "compact.ml" 86 2628 2638
+type(
+  int
+)
+"compact.ml" 86 2628 2630 "compact.ml" 86 2628 2638
+call(
+  tail
+)
+type(
+  (int * 'a) list
+)
+"compact.ml" 81 2466 2468 "compact.ml" 86 2628 2638
+type(
+  (int * 'a) list
+)
+"compact.ml" 94 2755 2759 "compact.ml" 94 2755 2773
+type(
+  unit -> t_compact
+)
+ident(
+  def create_compact "compact.ml" 99 2879 2879 "compact.ml" 1 0 -1
+)
+"compact.ml" 94 2755 2774 "compact.ml" 94 2755 2776
+type(
+  unit
+)
+"compact.ml" 95 2779 2793 "compact.ml" 95 2779 2805
+type(
+  int -> int -> int array
+)
+ident(
+  ext_ref Array.create
+)
+"compact.ml" 95 2779 2806 "compact.ml" 95 2779 2810
+type(
+  int
+)
+"compact.ml" 95 2779 2811 "compact.ml" 95 2779 2812
+type(
+  int
+)
+"compact.ml" 95 2779 2793 "compact.ml" 95 2779 2812
+type(
+  int array
+)
+"compact.ml" 96 2815 2829 "compact.ml" 96 2815 2841
+type(
+  int -> int -> int array
+)
+ident(
+  ext_ref Array.create
+)
+"compact.ml" 96 2815 2842 "compact.ml" 96 2815 2846
+type(
+  int
+)
+"compact.ml" 96 2815 2847 "compact.ml" 96 2815 2851
+type(
+  int
+)
+"compact.ml" 96 2815 2829 "compact.ml" 96 2815 2851
+type(
+  int array
+)
+"compact.ml" 97 2854 2872 "compact.ml" 97 2854 2873
+type(
+  int
+)
+"compact.ml" 95 2779 2781 "compact.ml" 97 2854 2877
+type(
+  t_compact
+)
+"compact.ml" 99 2879 2883 "compact.ml" 99 2879 2896
+type(
+  t_compact -> unit
+)
+ident(
+  def reset_compact "compact.ml" 105 3072 3072 "compact.ml" 1 0 -1
+)
+"compact.ml" 99 2879 2897 "compact.ml" 99 2879 2898
+type(
+  t_compact
+)
+ident(
+  def c "compact.ml" 100 2901 2903 "compact.ml" 102 2978 2998
+)
+"compact.ml" 100 2901 2903 "compact.ml" 100 2901 2904
+type(
+  t_compact
+)
+ident(
+  int_ref c "compact.ml" 99 2879 2897 "compact.ml" 99 2879 2898
+)
+"compact.ml" 100 2901 2916 "compact.ml" 100 2901 2928
+type(
+  int -> int -> int array
+)
+ident(
+  ext_ref Array.create
+)
+"compact.ml" 100 2901 2929 "compact.ml" 100 2901 2933
+type(
+  int
+)
+"compact.ml" 100 2901 2934 "compact.ml" 100 2901 2935
+type(
+  int
+)
+"compact.ml" 100 2901 2916 "compact.ml" 100 2901 2935
+type(
+  int array
+)
+"compact.ml" 100 2901 2903 "compact.ml" 100 2901 2935
+type(
+  unit
+)
+"compact.ml" 101 2938 2940 "compact.ml" 101 2938 2941
+type(
+  t_compact
+)
+ident(
+  int_ref c "compact.ml" 99 2879 2897 "compact.ml" 99 2879 2898
+)
+"compact.ml" 101 2938 2953 "compact.ml" 101 2938 2965
+type(
+  int -> int -> int array
+)
+ident(
+  ext_ref Array.create
+)
+"compact.ml" 101 2938 2966 "compact.ml" 101 2938 2970
+type(
+  int
+)
+"compact.ml" 101 2938 2971 "compact.ml" 101 2938 2975
+type(
+  int
+)
+"compact.ml" 101 2938 2953 "compact.ml" 101 2938 2975
+type(
+  int array
+)
+"compact.ml" 101 2938 2940 "compact.ml" 101 2938 2975
+type(
+  unit
+)
+"compact.ml" 102 2978 2980 "compact.ml" 102 2978 2981
+type(
+  t_compact
+)
+ident(
+  int_ref c "compact.ml" 99 2879 2897 "compact.ml" 99 2879 2898
+)
+"compact.ml" 102 2978 2997 "compact.ml" 102 2978 2998
+type(
+  int
+)
+"compact.ml" 102 2978 2980 "compact.ml" 102 2978 2998
+type(
+  unit
+)
+"compact.ml" 101 2938 2940 "compact.ml" 102 2978 2998
+type(
+  unit
+)
+"compact.ml" 100 2901 2903 "compact.ml" 102 2978 2998
+type(
+  unit
+)
+"compact.ml" 105 3072 3076 "compact.ml" 105 3072 3081
+type(
+  t_compact
+)
+ident(
+  def trans "compact.ml" 109 3134 3134 "compact.ml" 1 0 -1
+)
+"compact.ml" 105 3072 3084 "compact.ml" 105 3072 3098
+type(
+  unit -> t_compact
+)
+ident(
+  int_ref create_compact "compact.ml" 94 2755 2759 "compact.ml" 94 2755 2773
+)
+"compact.ml" 105 3072 3099 "compact.ml" 105 3072 3101
+type(
+  unit
+)
+"compact.ml" 105 3072 3084 "compact.ml" 105 3072 3101
+call(
+  stack
+)
+type(
+  t_compact
+)
+"compact.ml" 106 3102 3106 "compact.ml" 106 3102 3111
+type(
+  t_compact
+)
+ident(
+  def moves "compact.ml" 109 3134 3134 "compact.ml" 1 0 -1
+)
+"compact.ml" 106 3102 3114 "compact.ml" 106 3102 3128
+type(
+  unit -> t_compact
+)
+ident(
+  int_ref create_compact "compact.ml" 94 2755 2759 "compact.ml" 94 2755 2773
+)
+"compact.ml" 106 3102 3129 "compact.ml" 106 3102 3131
+type(
+  unit
+)
+"compact.ml" 106 3102 3114 "compact.ml" 106 3102 3131
+call(
+  stack
+)
+type(
+  t_compact
+)
+"compact.ml" 109 3134 3138 "compact.ml" 109 3134 3150
+type(
+  t_compact -> unit
+)
+ident(
+  def grow_compact "compact.ml" 118 3431 3431 "compact.ml" 1 0 -1
+)
+"compact.ml" 109 3134 3151 "compact.ml" 109 3134 3152
+type(
+  t_compact
+)
+ident(
+  def c "compact.ml" 110 3155 3157 "compact.ml" 116 3379 3429
+)
+"compact.ml" 110 3155 3161 "compact.ml" 110 3155 3170
+type(
+  int array
+)
+ident(
+  def old_trans "compact.ml" 112 3214 3216 "compact.ml" 116 3379 3429
+)
+"compact.ml" 110 3155 3173 "compact.ml" 110 3155 3174
+type(
+  t_compact
+)
+ident(
+  int_ref c "compact.ml" 109 3134 3151 "compact.ml" 109 3134 3152
+)
+"compact.ml" 110 3155 3173 "compact.ml" 110 3155 3182
+type(
+  int array
+)
+"compact.ml" 111 3183 3189 "compact.ml" 111 3183 3198
+type(
+  int array
+)
+ident(
+  def old_check "compact.ml" 112 3214 3216 "compact.ml" 116 3379 3429
+)
+"compact.ml" 111 3183 3201 "compact.ml" 111 3183 3202
+type(
+  t_compact
+)
+ident(
+  int_ref c "compact.ml" 109 3134 3151 "compact.ml" 109 3134 3152
+)
+"compact.ml" 111 3183 3201 "compact.ml" 111 3183 3210
+type(
+  int array
+)
+"compact.ml" 112 3214 3220 "compact.ml" 112 3214 3221
+type(
+  int
+)
+ident(
+  def n "compact.ml" 113 3250 3252 "compact.ml" 116 3379 3429
+)
+"compact.ml" 112 3214 3224 "compact.ml" 112 3214 3236
+type(
+  int array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"compact.ml" 112 3214 3237 "compact.ml" 112 3214 3246
+type(
+  int array
+)
+ident(
+  int_ref old_trans "compact.ml" 110 3155 3161 "compact.ml" 110 3155 3170
+)
+"compact.ml" 112 3214 3224 "compact.ml" 112 3214 3246
+type(
+  int
+)
+"compact.ml" 113 3250 3252 "compact.ml" 113 3250 3253
+type(
+  t_compact
+)
+ident(
+  int_ref c "compact.ml" 109 3134 3151 "compact.ml" 109 3134 3152
+)
+"compact.ml" 113 3250 3265 "compact.ml" 113 3250 3277
+type(
+  int -> int -> int array
+)
+ident(
+  ext_ref Array.create
+)
+"compact.ml" 113 3250 3279 "compact.ml" 113 3250 3280
+type(
+  int
+)
+"compact.ml" 113 3250 3280 "compact.ml" 113 3250 3281
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"compact.ml" 113 3250 3281 "compact.ml" 113 3250 3282
+type(
+  int
+)
+ident(
+  int_ref n "compact.ml" 112 3214 3220 "compact.ml" 112 3214 3221
+)
+"compact.ml" 113 3250 3278 "compact.ml" 113 3250 3283
+type(
+  int
+)
+"compact.ml" 113 3250 3284 "compact.ml" 113 3250 3285
+type(
+  int
+)
+"compact.ml" 113 3250 3265 "compact.ml" 113 3250 3285
+type(
+  int array
+)
+"compact.ml" 113 3250 3252 "compact.ml" 113 3250 3285
+type(
+  unit
+)
+"compact.ml" 114 3287 3289 "compact.ml" 114 3287 3299
+type(
+  int array -> int -> int array -> int -> int -> unit
+)
+ident(
+  ext_ref Array.blit
+)
+"compact.ml" 114 3287 3300 "compact.ml" 114 3287 3309
+type(
+  int array
+)
+ident(
+  int_ref old_trans "compact.ml" 110 3155 3161 "compact.ml" 110 3155 3170
+)
+"compact.ml" 114 3287 3310 "compact.ml" 114 3287 3311
+type(
+  int
+)
+"compact.ml" 114 3287 3312 "compact.ml" 114 3287 3313
+type(
+  t_compact
+)
+ident(
+  int_ref c "compact.ml" 109 3134 3151 "compact.ml" 109 3134 3152
+)
+"compact.ml" 114 3287 3312 "compact.ml" 114 3287 3321
+type(
+  int array
+)
+"compact.ml" 114 3287 3322 "compact.ml" 114 3287 3323
+type(
+  int
+)
+"compact.ml" 114 3287 3324 "compact.ml" 114 3287 3325
+type(
+  t_compact
+)
+ident(
+  int_ref c "compact.ml" 109 3134 3151 "compact.ml" 109 3134 3152
+)
+"compact.ml" 114 3287 3324 "compact.ml" 114 3287 3337
+type(
+  int
+)
+"compact.ml" 114 3287 3289 "compact.ml" 114 3287 3337
+call(
+  stack
+)
+type(
+  unit
+)
+"compact.ml" 115 3339 3341 "compact.ml" 115 3339 3342
+type(
+  t_compact
+)
+ident(
+  int_ref c "compact.ml" 109 3134 3151 "compact.ml" 109 3134 3152
+)
+"compact.ml" 115 3339 3354 "compact.ml" 115 3339 3366
+type(
+  int -> int -> int array
+)
+ident(
+  ext_ref Array.create
+)
+"compact.ml" 115 3339 3368 "compact.ml" 115 3339 3369
+type(
+  int
+)
+"compact.ml" 115 3339 3369 "compact.ml" 115 3339 3370
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"compact.ml" 115 3339 3370 "compact.ml" 115 3339 3371
+type(
+  int
+)
+ident(
+  int_ref n "compact.ml" 112 3214 3220 "compact.ml" 112 3214 3221
+)
+"compact.ml" 115 3339 3367 "compact.ml" 115 3339 3372
+type(
+  int
+)
+"compact.ml" 115 3339 3373 "compact.ml" 115 3339 3377
+type(
+  int
+)
+"compact.ml" 115 3339 3354 "compact.ml" 115 3339 3377
+type(
+  int array
+)
+"compact.ml" 115 3339 3341 "compact.ml" 115 3339 3377
+type(
+  unit
+)
+"compact.ml" 116 3379 3381 "compact.ml" 116 3379 3391
+type(
+  int array -> int -> int array -> int -> int -> unit
+)
+ident(
+  ext_ref Array.blit
+)
+"compact.ml" 116 3379 3392 "compact.ml" 116 3379 3401
+type(
+  int array
+)
+ident(
+  int_ref old_check "compact.ml" 111 3183 3189 "compact.ml" 111 3183 3198
+)
+"compact.ml" 116 3379 3402 "compact.ml" 116 3379 3403
+type(
+  int
+)
+"compact.ml" 116 3379 3404 "compact.ml" 116 3379 3405
+type(
+  t_compact
+)
+ident(
+  int_ref c "compact.ml" 109 3134 3151 "compact.ml" 109 3134 3152
+)
+"compact.ml" 116 3379 3404 "compact.ml" 116 3379 3413
+type(
+  int array
+)
+"compact.ml" 116 3379 3414 "compact.ml" 116 3379 3415
+type(
+  int
+)
+"compact.ml" 116 3379 3416 "compact.ml" 116 3379 3417
+type(
+  t_compact
+)
+ident(
+  int_ref c "compact.ml" 109 3134 3151 "compact.ml" 109 3134 3152
+)
+"compact.ml" 116 3379 3416 "compact.ml" 116 3379 3429
+type(
+  int
+)
+"compact.ml" 116 3379 3381 "compact.ml" 116 3379 3429
+call(
+  tail
+)
+type(
+  unit
+)
+"compact.ml" 115 3339 3341 "compact.ml" 116 3379 3429
+type(
+  unit
+)
+"compact.ml" 114 3287 3289 "compact.ml" 116 3379 3429
+type(
+  unit
+)
+"compact.ml" 113 3250 3252 "compact.ml" 116 3379 3429
+type(
+  unit
+)
+"compact.ml" 112 3214 3216 "compact.ml" 116 3379 3429
+type(
+  unit
+)
+"compact.ml" 110 3155 3157 "compact.ml" 116 3379 3429
+type(
+  unit
+)
+"compact.ml" 118 3431 3435 "compact.ml" 118 3431 3442
+type(
+  int -> int array -> t_compact -> int * int
+)
+ident(
+  def do_pack "compact.ml" 144 4145 4145 "compact.ml" 1 0 -1
+)
+"compact.ml" 118 3431 3443 "compact.ml" 118 3431 3452
+type(
+  int
+)
+ident(
+  def state_num "compact.ml" 118 3431 3453 "compact.ml" 142 4126 4143
+)
+"compact.ml" 118 3431 3453 "compact.ml" 118 3431 3457
+type(
+  int array
+)
+ident(
+  def orig "compact.ml" 118 3431 3458 "compact.ml" 142 4126 4143
+)
+"compact.ml" 118 3431 3458 "compact.ml" 118 3431 3465
+type(
+  t_compact
+)
+ident(
+  def compact "compact.ml" 119 3468 3470 "compact.ml" 142 4126 4143
+)
+"compact.ml" 119 3468 3474 "compact.ml" 119 3468 3481
+type(
+  int
+)
+ident(
+  def default "compact.ml" 120 3510 3512 "compact.ml" 142 4126 4143
+)
+"compact.ml" 119 3468 3484 "compact.ml" 119 3468 3501
+type(
+  int array -> int
+)
+ident(
+  int_ref most_frequent_elt "compact.ml" 62 1934 1938 "compact.ml" 62 1934 1955
+)
+"compact.ml" 119 3468 3502 "compact.ml" 119 3468 3506
+type(
+  int array
+)
+ident(
+  int_ref orig "compact.ml" 118 3431 3453 "compact.ml" 118 3431 3457
+)
+"compact.ml" 119 3468 3484 "compact.ml" 119 3468 3506
+call(
+  stack
+)
+type(
+  int
+)
+"compact.ml" 120 3510 3516 "compact.ml" 120 3510 3522
+type(
+  (int * int) list
+)
+ident(
+  def nondef "compact.ml" 121 3562 3564 "compact.ml" 142 4126 4143
+)
+"compact.ml" 120 3510 3525 "compact.ml" 120 3510 3545
+type(
+  int -> int array -> (int * int) list
+)
+ident(
+  int_ref non_default_elements "compact.ml" 80 2433 2437 "compact.ml" 80 2433 2457
+)
+"compact.ml" 120 3510 3546 "compact.ml" 120 3510 3553
+type(
+  int
+)
+ident(
+  int_ref default "compact.ml" 119 3468 3474 "compact.ml" 119 3468 3481
+)
+"compact.ml" 120 3510 3554 "compact.ml" 120 3510 3558
+type(
+  int array
+)
+ident(
+  int_ref orig "compact.ml" 118 3431 3453 "compact.ml" 118 3431 3457
+)
+"compact.ml" 120 3510 3525 "compact.ml" 120 3510 3558
+call(
+  stack
+)
+type(
+  (int * int) list
+)
+"compact.ml" 121 3562 3572 "compact.ml" 121 3562 3581
+type(
+  int -> int
+)
+ident(
+  def pack_from "compact.ml" 121 3562 3564 "compact.ml" 142 4126 4143
+)
+"compact.ml" 121 3562 3582 "compact.ml" 121 3562 3583
+type(
+  int
+)
+ident(
+  def b "compact.ml" 122 3586 3590 "compact.ml" 133 3858 3877
+)
+"compact.ml" 123 3596 3602 "compact.ml" 123 3596 3603
+type(
+  int
+)
+ident(
+  int_ref b "compact.ml" 121 3562 3582 "compact.ml" 121 3562 3583
+)
+"compact.ml" 123 3596 3604 "compact.ml" 123 3596 3605
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"compact.ml" 123 3596 3606 "compact.ml" 123 3596 3609
+type(
+  int
+)
+"compact.ml" 123 3596 3602 "compact.ml" 123 3596 3609
+type(
+  int
+)
+"compact.ml" 123 3596 3610 "compact.ml" 123 3596 3611
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"compact.ml" 123 3596 3612 "compact.ml" 123 3596 3624
+type(
+  int array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"compact.ml" 123 3596 3625 "compact.ml" 123 3596 3632
+type(
+  t_compact
+)
+ident(
+  int_ref compact "compact.ml" 118 3431 3458 "compact.ml" 118 3431 3465
+)
+"compact.ml" 123 3596 3625 "compact.ml" 123 3596 3640
+type(
+  int array
+)
+"compact.ml" 123 3596 3612 "compact.ml" 123 3596 3640
+type(
+  int
+)
+"compact.ml" 123 3596 3602 "compact.ml" 123 3596 3640
+type(
+  bool
+)
+"compact.ml" 125 3648 3654 "compact.ml" 125 3648 3666
+type(
+  t_compact -> unit
+)
+ident(
+  int_ref grow_compact "compact.ml" 109 3134 3138 "compact.ml" 109 3134 3150
+)
+"compact.ml" 125 3648 3667 "compact.ml" 125 3648 3674
+type(
+  t_compact
+)
+ident(
+  int_ref compact "compact.ml" 118 3431 3458 "compact.ml" 118 3431 3465
+)
+"compact.ml" 125 3648 3654 "compact.ml" 125 3648 3674
+call(
+  stack
+)
+type(
+  unit
+)
+"compact.ml" 122 3586 3590 "compact.ml" 126 3675 3683
+type(
+  unit
+)
+"compact.ml" 127 3685 3697 "compact.ml" 127 3685 3705
+type(
+  (int * 'a) list -> int
+)
+ident(
+  def try_pack "compact.ml" 127 3685 3689 "compact.ml" 133 3858 3877
+)
+"compact.ml" 128 3717 3723 "compact.ml" 128 3717 3725
+type(
+  (int * 'a) list
+)
+"compact.ml" 128 3717 3729 "compact.ml" 128 3717 3730
+type(
+  int
+)
+ident(
+  int_ref b "compact.ml" 121 3562 3582 "compact.ml" 121 3562 3583
+)
+"compact.ml" 129 3731 3738 "compact.ml" 129 3731 3741
+type(
+  int
+)
+ident(
+  def pos "compact.ml" 130 3756 3764 "compact.ml" 132 3826 3854
+)
+"compact.ml" 129 3731 3743 "compact.ml" 129 3731 3744
+type(
+  'a
+)
+ident(
+  def v "compact.ml" 130 3756 3764 "compact.ml" 132 3826 3854
+)
+"compact.ml" 129 3731 3737 "compact.ml" 129 3731 3745
+type(
+  int * 'a
+)
+"compact.ml" 129 3731 3749 "compact.ml" 129 3731 3752
+type(
+  (int * 'a) list
+)
+ident(
+  def rem "compact.ml" 130 3756 3764 "compact.ml" 132 3826 3854
+)
+"compact.ml" 129 3731 3737 "compact.ml" 129 3731 3752
+type(
+  (int * 'a) list
+)
+"compact.ml" 130 3756 3767 "compact.ml" 130 3756 3774
+type(
+  t_compact
+)
+ident(
+  int_ref compact "compact.ml" 118 3431 3458 "compact.ml" 118 3431 3465
+)
+"compact.ml" 130 3756 3767 "compact.ml" 130 3756 3782
+type(
+  int array
+)
+"compact.ml" 130 3756 3784 "compact.ml" 130 3756 3785
+type(
+  int
+)
+ident(
+  int_ref b "compact.ml" 121 3562 3582 "compact.ml" 121 3562 3583
+)
+"compact.ml" 130 3756 3786 "compact.ml" 130 3756 3787
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"compact.ml" 130 3756 3788 "compact.ml" 130 3756 3791
+type(
+  int
+)
+ident(
+  int_ref pos "compact.ml" 129 3731 3738 "compact.ml" 129 3731 3741
+)
+"compact.ml" 130 3756 3784 "compact.ml" 130 3756 3791
+type(
+  int
+)
+"compact.ml" 130 3756 3767 "compact.ml" 130 3756 3792
+type(
+  int
+)
+"compact.ml" 130 3756 3793 "compact.ml" 130 3756 3794
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"compact.ml" 130 3756 3795 "compact.ml" 130 3756 3797
+type(
+  int
+)
+"compact.ml" 130 3756 3767 "compact.ml" 130 3756 3797
+type(
+  bool
+)
+"compact.ml" 131 3803 3813 "compact.ml" 131 3803 3821
+type(
+  (int * 'a) list -> int
+)
+ident(
+  int_ref try_pack "compact.ml" 127 3685 3697 "compact.ml" 127 3685 3705
+)
+"compact.ml" 131 3803 3822 "compact.ml" 131 3803 3825
+type(
+  (int * 'a) list
+)
+ident(
+  int_ref rem "compact.ml" 129 3731 3749 "compact.ml" 129 3731 3752
+)
+"compact.ml" 131 3803 3813 "compact.ml" 131 3803 3825
+call(
+  tail
+)
+type(
+  int
+)
+"compact.ml" 132 3826 3839 "compact.ml" 132 3826 3848
+type(
+  int -> int
+)
+ident(
+  int_ref pack_from "compact.ml" 121 3562 3572 "compact.ml" 121 3562 3581
+)
+"compact.ml" 132 3826 3850 "compact.ml" 132 3826 3851
+type(
+  int
+)
+ident(
+  int_ref b "compact.ml" 121 3562 3582 "compact.ml" 121 3562 3583
+)
+"compact.ml" 132 3826 3851 "compact.ml" 132 3826 3852
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"compact.ml" 132 3826 3852 "compact.ml" 132 3826 3853
+type(
+  int
+)
+"compact.ml" 132 3826 3849 "compact.ml" 132 3826 3854
+type(
+  int
+)
+"compact.ml" 132 3826 3839 "compact.ml" 132 3826 3854
+call(
+  tail
+)
+type(
+  int
+)
+"compact.ml" 130 3756 3764 "compact.ml" 132 3826 3854
+type(
+  int
+)
+"compact.ml" 127 3685 3708 "compact.ml" 132 3826 3854
+type(
+  (int * 'a) list -> int
+)
+"compact.ml" 133 3858 3862 "compact.ml" 133 3858 3870
+type(
+  (int * int) list -> int
+)
+ident(
+  int_ref try_pack "compact.ml" 127 3685 3697 "compact.ml" 127 3685 3705
+)
+"compact.ml" 133 3858 3871 "compact.ml" 133 3858 3877
+type(
+  (int * int) list
+)
+ident(
+  int_ref nondef "compact.ml" 120 3510 3516 "compact.ml" 120 3510 3522
+)
+"compact.ml" 133 3858 3862 "compact.ml" 133 3858 3877
+call(
+  tail
+)
+type(
+  int
+)
+"compact.ml" 127 3685 3689 "compact.ml" 133 3858 3877
+type(
+  int
+)
+"compact.ml" 122 3586 3590 "compact.ml" 133 3858 3877
+type(
+  int
+)
+"compact.ml" 134 3881 3887 "compact.ml" 134 3881 3891
+type(
+  int
+)
+ident(
+  def base "compact.ml" 135 3909 3911 "compact.ml" 142 4126 4143
+)
+"compact.ml" 134 3881 3894 "compact.ml" 134 3881 3903
+type(
+  int -> int
+)
+ident(
+  int_ref pack_from "compact.ml" 121 3562 3572 "compact.ml" 121 3562 3581
+)
+"compact.ml" 134 3881 3904 "compact.ml" 134 3881 3905
+type(
+  int
+)
+"compact.ml" 134 3881 3894 "compact.ml" 134 3881 3905
+call(
+  stack
+)
+type(
+  int
+)
+"compact.ml" 135 3909 3911 "compact.ml" 135 3909 3920
+type(
+  (int * int -> unit) -> (int * int) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"compact.ml" 136 3921 3931 "compact.ml" 136 3921 3934
+type(
+  int
+)
+ident(
+  def pos "compact.ml" 137 3942 3948 "compact.ml" 138 3983 4030
+)
+"compact.ml" 136 3921 3936 "compact.ml" 136 3921 3937
+type(
+  int
+)
+ident(
+  def v "compact.ml" 137 3942 3948 "compact.ml" 138 3983 4030
+)
+"compact.ml" 136 3921 3930 "compact.ml" 136 3921 3938
+type(
+  int * int
+)
+"compact.ml" 137 3942 3948 "compact.ml" 137 3942 3955
+type(
+  t_compact
+)
+ident(
+  int_ref compact "compact.ml" 118 3431 3458 "compact.ml" 118 3431 3465
+)
+"compact.ml" 137 3942 3948 "compact.ml" 137 3942 3963
+type(
+  int array
+)
+"compact.ml" 137 3942 3965 "compact.ml" 137 3942 3969
+type(
+  int
+)
+ident(
+  int_ref base "compact.ml" 134 3881 3887 "compact.ml" 134 3881 3891
+)
+"compact.ml" 137 3942 3970 "compact.ml" 137 3942 3971
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"compact.ml" 137 3942 3972 "compact.ml" 137 3942 3975
+type(
+  int
+)
+ident(
+  int_ref pos "compact.ml" 136 3921 3931 "compact.ml" 136 3921 3934
+)
+"compact.ml" 137 3942 3965 "compact.ml" 137 3942 3975
+type(
+  int
+)
+"compact.ml" 137 3942 3980 "compact.ml" 137 3942 3981
+type(
+  int
+)
+ident(
+  int_ref v "compact.ml" 136 3921 3936 "compact.ml" 136 3921 3937
+)
+"compact.ml" 137 3942 3948 "compact.ml" 137 3942 3981
+type(
+  unit
+)
+"compact.ml" 138 3983 3989 "compact.ml" 138 3983 3996
+type(
+  t_compact
+)
+ident(
+  int_ref compact "compact.ml" 118 3431 3458 "compact.ml" 118 3431 3465
+)
+"compact.ml" 138 3983 3989 "compact.ml" 138 3983 4004
+type(
+  int array
+)
+"compact.ml" 138 3983 4006 "compact.ml" 138 3983 4010
+type(
+  int
+)
+ident(
+  int_ref base "compact.ml" 134 3881 3887 "compact.ml" 134 3881 3891
+)
+"compact.ml" 138 3983 4011 "compact.ml" 138 3983 4012
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"compact.ml" 138 3983 4013 "compact.ml" 138 3983 4016
+type(
+  int
+)
+ident(
+  int_ref pos "compact.ml" 136 3921 3931 "compact.ml" 136 3921 3934
+)
+"compact.ml" 138 3983 4006 "compact.ml" 138 3983 4016
+type(
+  int
+)
+"compact.ml" 138 3983 4021 "compact.ml" 138 3983 4030
+type(
+  int
+)
+ident(
+  int_ref state_num "compact.ml" 118 3431 3443 "compact.ml" 118 3431 3452
+)
+"compact.ml" 138 3983 3989 "compact.ml" 138 3983 4030
+type(
+  unit
+)
+"compact.ml" 137 3942 3948 "compact.ml" 138 3983 4030
+type(
+  unit
+)
+"compact.ml" 136 3921 3925 "compact.ml" 138 3983 4031
+type(
+  int * int -> unit
+)
+"compact.ml" 139 4032 4036 "compact.ml" 139 4032 4042
+type(
+  (int * int) list
+)
+ident(
+  int_ref nondef "compact.ml" 120 3510 3516 "compact.ml" 120 3510 3522
+)
+"compact.ml" 135 3909 3911 "compact.ml" 139 4032 4042
+call(
+  stack
+)
+type(
+  unit
+)
+"compact.ml" 140 4044 4049 "compact.ml" 140 4044 4053
+type(
+  int
+)
+ident(
+  int_ref base "compact.ml" 134 3881 3887 "compact.ml" 134 3881 3891
+)
+"compact.ml" 140 4044 4054 "compact.ml" 140 4044 4055
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"compact.ml" 140 4044 4056 "compact.ml" 140 4044 4059
+type(
+  int
+)
+"compact.ml" 140 4044 4049 "compact.ml" 140 4044 4059
+type(
+  int
+)
+"compact.ml" 140 4044 4060 "compact.ml" 140 4044 4061
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"compact.ml" 140 4044 4062 "compact.ml" 140 4044 4069
+type(
+  t_compact
+)
+ident(
+  int_ref compact "compact.ml" 118 3431 3458 "compact.ml" 118 3431 3465
+)
+"compact.ml" 140 4044 4062 "compact.ml" 140 4044 4081
+type(
+  int
+)
+"compact.ml" 140 4044 4049 "compact.ml" 140 4044 4081
+type(
+  bool
+)
+"compact.ml" 141 4087 4091 "compact.ml" 141 4087 4098
+type(
+  t_compact
+)
+ident(
+  int_ref compact "compact.ml" 118 3431 3458 "compact.ml" 118 3431 3465
+)
+"compact.ml" 141 4087 4114 "compact.ml" 141 4087 4118
+type(
+  int
+)
+ident(
+  int_ref base "compact.ml" 134 3881 3887 "compact.ml" 134 3881 3891
+)
+"compact.ml" 141 4087 4119 "compact.ml" 141 4087 4120
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"compact.ml" 141 4087 4121 "compact.ml" 141 4087 4124
+type(
+  int
+)
+"compact.ml" 141 4087 4114 "compact.ml" 141 4087 4124
+type(
+  int
+)
+"compact.ml" 141 4087 4091 "compact.ml" 141 4087 4124
+type(
+  unit
+)
+"compact.ml" 140 4044 4046 "compact.ml" 141 4087 4124
+type(
+  unit
+)
+"compact.ml" 142 4126 4129 "compact.ml" 142 4126 4133
+type(
+  int
+)
+ident(
+  int_ref base "compact.ml" 134 3881 3887 "compact.ml" 134 3881 3891
+)
+"compact.ml" 142 4126 4135 "compact.ml" 142 4126 4142
+type(
+  int
+)
+ident(
+  int_ref default "compact.ml" 119 3468 3474 "compact.ml" 119 3468 3481
+)
+"compact.ml" 142 4126 4128 "compact.ml" 142 4126 4143
+type(
+  int * int
+)
+"compact.ml" 140 4044 4046 "compact.ml" 142 4126 4143
+type(
+  int * int
+)
+"compact.ml" 135 3909 3911 "compact.ml" 142 4126 4143
+type(
+  int * int
+)
+"compact.ml" 134 3881 3883 "compact.ml" 142 4126 4143
+type(
+  int * int
+)
+"compact.ml" 121 3562 3564 "compact.ml" 142 4126 4143
+type(
+  int * int
+)
+"compact.ml" 120 3510 3512 "compact.ml" 142 4126 4143
+type(
+  int * int
+)
+"compact.ml" 119 3468 3470 "compact.ml" 142 4126 4143
+type(
+  int * int
+)
+"compact.ml" 144 4145 4149 "compact.ml" 144 4145 4159
+type(
+  int ->
+  (Lexgen.automata_move * Lexgen.memory_action list) array ->
+  (int * int) * (int * int)
+)
+ident(
+  def pack_moves "compact.ml" 159 4558 4558 "compact.ml" 1 0 -1
+)
+"compact.ml" 144 4145 4160 "compact.ml" 144 4145 4169
+type(
+  int
+)
+ident(
+  def state_num "compact.ml" 144 4145 4170 "compact.ml" 154 4511 4531
+)
+"compact.ml" 144 4145 4170 "compact.ml" 144 4145 4176
+type(
+  (Lexgen.automata_move * Lexgen.memory_action list) array
+)
+ident(
+  def move_t "compact.ml" 145 4179 4181 "compact.ml" 154 4511 4531
+)
+"compact.ml" 145 4179 4185 "compact.ml" 145 4179 4191
+type(
+  int array
+)
+ident(
+  def move_v "compact.ml" 147 4250 4252 "compact.ml" 154 4511 4531
+)
+"compact.ml" 145 4179 4194 "compact.ml" 145 4179 4206
+type(
+  int -> int -> int array
+)
+ident(
+  ext_ref Array.create
+)
+"compact.ml" 145 4179 4207 "compact.ml" 145 4179 4210
+type(
+  int
+)
+"compact.ml" 145 4179 4211 "compact.ml" 145 4179 4212
+type(
+  int
+)
+"compact.ml" 145 4179 4194 "compact.ml" 145 4179 4212
+type(
+  int array
+)
+"compact.ml" 146 4213 4219 "compact.ml" 146 4213 4225
+type(
+  int array
+)
+ident(
+  def move_m "compact.ml" 147 4250 4252 "compact.ml" 154 4511 4531
+)
+"compact.ml" 146 4213 4228 "compact.ml" 146 4213 4240
+type(
+  int -> int -> int array
+)
+ident(
+  ext_ref Array.create
+)
+"compact.ml" 146 4213 4241 "compact.ml" 146 4213 4244
+type(
+  int
+)
+"compact.ml" 146 4213 4245 "compact.ml" 146 4213 4246
+type(
+  int
+)
+"compact.ml" 146 4213 4228 "compact.ml" 146 4213 4246
+type(
+  int array
+)
+"compact.ml" 147 4250 4260 "compact.ml" 147 4250 4261
+type(
+  int
+)
+"compact.ml" 147 4250 4265 "compact.ml" 147 4250 4268
+type(
+  int
+)
+"compact.ml" 148 4272 4280 "compact.ml" 148 4272 4283
+type(
+  Lexgen.automata_move
+)
+ident(
+  def act "compact.ml" 149 4302 4306 "compact.ml" 150 4369 4402
+)
+"compact.ml" 148 4272 4284 "compact.ml" 148 4272 4285
+type(
+  Lexgen.memory_action list
+)
+ident(
+  def c "compact.ml" 149 4302 4306 "compact.ml" 150 4369 4402
+)
+"compact.ml" 148 4272 4280 "compact.ml" 148 4272 4285
+type(
+  Lexgen.automata_move * Lexgen.memory_action list
+)
+"compact.ml" 148 4272 4288 "compact.ml" 148 4272 4294
+type(
+  (Lexgen.automata_move * Lexgen.memory_action list) array
+)
+ident(
+  int_ref move_t "compact.ml" 144 4145 4170 "compact.ml" 144 4145 4176
+)
+"compact.ml" 148 4272 4296 "compact.ml" 148 4272 4297
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 147 4250 4252 "compact.ml" 151 4403 4409
+)
+"compact.ml" 148 4272 4288 "compact.ml" 148 4272 4298
+type(
+  Lexgen.automata_move * Lexgen.memory_action list
+)
+"compact.ml" 149 4302 4306 "compact.ml" 149 4302 4312
+type(
+  int array
+)
+ident(
+  int_ref move_v "compact.ml" 145 4179 4185 "compact.ml" 145 4179 4191
+)
+"compact.ml" 149 4302 4314 "compact.ml" 149 4302 4315
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 147 4250 4252 "compact.ml" 151 4403 4409
+)
+"compact.ml" 149 4302 4327 "compact.ml" 149 4302 4330
+type(
+  Lexgen.automata_move
+)
+ident(
+  int_ref act "compact.ml" 148 4272 4280 "compact.ml" 148 4272 4283
+)
+"compact.ml" 149 4302 4336 "compact.ml" 149 4302 4345
+type(
+  Lexgen.automata_move
+)
+"compact.ml" 149 4302 4349 "compact.ml" 149 4302 4351
+type(
+  int
+)
+"compact.ml" 149 4302 4359 "compact.ml" 149 4302 4360
+type(
+  int
+)
+ident(
+  def n "compact.ml" 149 4302 4364 "compact.ml" 149 4302 4365
+)
+"compact.ml" 149 4302 4354 "compact.ml" 149 4302 4360
+type(
+  Lexgen.automata_move
+)
+"compact.ml" 149 4302 4364 "compact.ml" 149 4302 4365
+type(
+  int
+)
+ident(
+  int_ref n "compact.ml" 149 4302 4359 "compact.ml" 149 4302 4360
+)
+"compact.ml" 149 4302 4320 "compact.ml" 149 4302 4366
+type(
+  int
+)
+"compact.ml" 149 4302 4306 "compact.ml" 149 4302 4366
+type(
+  unit
+)
+"compact.ml" 150 4369 4373 "compact.ml" 150 4369 4379
+type(
+  int array
+)
+ident(
+  int_ref move_m "compact.ml" 146 4213 4219 "compact.ml" 146 4213 4225
+)
+"compact.ml" 150 4369 4381 "compact.ml" 150 4369 4382
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 147 4250 4252 "compact.ml" 151 4403 4409
+)
+"compact.ml" 150 4369 4387 "compact.ml" 150 4369 4400
+type(
+  Lexgen.memory_action list -> int
+)
+ident(
+  int_ref emit_mem_code "compact.ml" 53 1659 1663 "compact.ml" 53 1659 1676
+)
+"compact.ml" 150 4369 4401 "compact.ml" 150 4369 4402
+type(
+  Lexgen.memory_action list
+)
+ident(
+  int_ref c "compact.ml" 148 4272 4284 "compact.ml" 148 4272 4285
+)
+"compact.ml" 150 4369 4387 "compact.ml" 150 4369 4402
+call(
+  stack
+)
+type(
+  int
+)
+"compact.ml" 150 4369 4373 "compact.ml" 150 4369 4402
+type(
+  unit
+)
+"compact.ml" 149 4302 4306 "compact.ml" 150 4369 4402
+type(
+  unit
+)
+"compact.ml" 148 4272 4276 "compact.ml" 150 4369 4402
+type(
+  unit
+)
+"compact.ml" 147 4250 4252 "compact.ml" 151 4403 4409
+type(
+  unit
+)
+"compact.ml" 152 4412 4418 "compact.ml" 152 4412 4426
+type(
+  int * int
+)
+ident(
+  def pk_trans "compact.ml" 154 4511 4513 "compact.ml" 154 4511 4531
+)
+"compact.ml" 152 4412 4429 "compact.ml" 152 4412 4436
+type(
+  int -> int array -> t_compact -> int * int
+)
+ident(
+  int_ref do_pack "compact.ml" 118 3431 3435 "compact.ml" 118 3431 3442
+)
+"compact.ml" 152 4412 4437 "compact.ml" 152 4412 4446
+type(
+  int
+)
+ident(
+  int_ref state_num "compact.ml" 144 4145 4160 "compact.ml" 144 4145 4169
+)
+"compact.ml" 152 4412 4447 "compact.ml" 152 4412 4453
+type(
+  int array
+)
+ident(
+  int_ref move_v "compact.ml" 145 4179 4185 "compact.ml" 145 4179 4191
+)
+"compact.ml" 152 4412 4454 "compact.ml" 152 4412 4459
+type(
+  t_compact
+)
+ident(
+  int_ref trans "compact.ml" 105 3072 3076 "compact.ml" 105 3072 3081
+)
+"compact.ml" 152 4412 4429 "compact.ml" 152 4412 4459
+call(
+  stack
+)
+type(
+  int * int
+)
+"compact.ml" 153 4460 4466 "compact.ml" 153 4460 4474
+type(
+  int * int
+)
+ident(
+  def pk_moves "compact.ml" 154 4511 4513 "compact.ml" 154 4511 4531
+)
+"compact.ml" 153 4460 4477 "compact.ml" 153 4460 4484
+type(
+  int -> int array -> t_compact -> int * int
+)
+ident(
+  int_ref do_pack "compact.ml" 118 3431 3435 "compact.ml" 118 3431 3442
+)
+"compact.ml" 153 4460 4485 "compact.ml" 153 4460 4494
+type(
+  int
+)
+ident(
+  int_ref state_num "compact.ml" 144 4145 4160 "compact.ml" 144 4145 4169
+)
+"compact.ml" 153 4460 4495 "compact.ml" 153 4460 4501
+type(
+  int array
+)
+ident(
+  int_ref move_m "compact.ml" 146 4213 4219 "compact.ml" 146 4213 4225
+)
+"compact.ml" 153 4460 4502 "compact.ml" 153 4460 4507
+type(
+  t_compact
+)
+ident(
+  int_ref moves "compact.ml" 106 3102 3106 "compact.ml" 106 3102 3111
+)
+"compact.ml" 153 4460 4477 "compact.ml" 153 4460 4507
+call(
+  stack
+)
+type(
+  int * int
+)
+"compact.ml" 154 4511 4513 "compact.ml" 154 4511 4521
+type(
+  int * int
+)
+ident(
+  int_ref pk_trans "compact.ml" 152 4412 4418 "compact.ml" 152 4412 4426
+)
+"compact.ml" 154 4511 4523 "compact.ml" 154 4511 4531
+type(
+  int * int
+)
+ident(
+  int_ref pk_moves "compact.ml" 153 4460 4466 "compact.ml" 153 4460 4474
+)
+"compact.ml" 154 4511 4513 "compact.ml" 154 4511 4531
+type(
+  (int * int) * (int * int)
+)
+"compact.ml" 152 4412 4414 "compact.ml" 154 4511 4531
+type(
+  (int * int) * (int * int)
+)
+"compact.ml" 147 4250 4252 "compact.ml" 154 4511 4531
+type(
+  (int * int) * (int * int)
+)
+"compact.ml" 145 4179 4181 "compact.ml" 154 4511 4531
+type(
+  (int * int) * (int * int)
+)
+"compact.ml" 176 5332 5336 "compact.ml" 176 5332 5350
+type(
+  Lexgen.automata array -> lex_tables
+)
+ident(
+  def compact_tables "compact.ml" 229 7257 7265 "compact.ml" 1 0 -1
+)
+"compact.ml" 176 5332 5351 "compact.ml" 176 5332 5358
+type(
+  Lexgen.automata array
+)
+ident(
+  def state_v "compact.ml" 177 5361 5363 "compact.ml" 229 7257 7265
+)
+"compact.ml" 177 5361 5367 "compact.ml" 177 5361 5368
+type(
+  int
+)
+ident(
+  def n "compact.ml" 178 5395 5397 "compact.ml" 229 7257 7265
+)
+"compact.ml" 177 5361 5371 "compact.ml" 177 5361 5383
+type(
+  Lexgen.automata array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"compact.ml" 177 5361 5384 "compact.ml" 177 5361 5391
+type(
+  Lexgen.automata array
+)
+ident(
+  int_ref state_v "compact.ml" 176 5332 5351 "compact.ml" 176 5332 5358
+)
+"compact.ml" 177 5361 5371 "compact.ml" 177 5361 5391
+type(
+  int
+)
+"compact.ml" 178 5395 5401 "compact.ml" 178 5395 5405
+type(
+  int array
+)
+ident(
+  def base "compact.ml" 184 5608 5610 "compact.ml" 229 7257 7265
+)
+"compact.ml" 178 5395 5408 "compact.ml" 178 5395 5420
+type(
+  int -> int -> int array
+)
+ident(
+  ext_ref Array.create
+)
+"compact.ml" 178 5395 5421 "compact.ml" 178 5395 5422
+type(
+  int
+)
+ident(
+  int_ref n "compact.ml" 177 5361 5367 "compact.ml" 177 5361 5368
+)
+"compact.ml" 178 5395 5423 "compact.ml" 178 5395 5424
+type(
+  int
+)
+"compact.ml" 178 5395 5408 "compact.ml" 178 5395 5424
+type(
+  int array
+)
+"compact.ml" 179 5425 5431 "compact.ml" 179 5425 5438
+type(
+  int array
+)
+ident(
+  def backtrk "compact.ml" 184 5608 5610 "compact.ml" 229 7257 7265
+)
+"compact.ml" 179 5425 5441 "compact.ml" 179 5425 5453
+type(
+  int -> int -> int array
+)
+ident(
+  ext_ref Array.create
+)
+"compact.ml" 179 5425 5454 "compact.ml" 179 5425 5455
+type(
+  int
+)
+ident(
+  int_ref n "compact.ml" 177 5361 5367 "compact.ml" 177 5361 5368
+)
+"compact.ml" 179 5425 5456 "compact.ml" 179 5425 5460
+type(
+  int
+)
+"compact.ml" 179 5425 5441 "compact.ml" 179 5425 5460
+type(
+  int array
+)
+"compact.ml" 180 5461 5467 "compact.ml" 180 5461 5474
+type(
+  int array
+)
+ident(
+  def default "compact.ml" 184 5608 5610 "compact.ml" 229 7257 7265
+)
+"compact.ml" 180 5461 5477 "compact.ml" 180 5461 5489
+type(
+  int -> int -> int array
+)
+ident(
+  ext_ref Array.create
+)
+"compact.ml" 180 5461 5490 "compact.ml" 180 5461 5491
+type(
+  int
+)
+ident(
+  int_ref n "compact.ml" 177 5361 5367 "compact.ml" 177 5361 5368
+)
+"compact.ml" 180 5461 5492 "compact.ml" 180 5461 5493
+type(
+  int
+)
+"compact.ml" 180 5461 5477 "compact.ml" 180 5461 5493
+type(
+  int array
+)
+"compact.ml" 181 5494 5500 "compact.ml" 181 5494 5509
+type(
+  int array
+)
+ident(
+  def base_code "compact.ml" 184 5608 5610 "compact.ml" 229 7257 7265
+)
+"compact.ml" 181 5494 5512 "compact.ml" 181 5494 5524
+type(
+  int -> int -> int array
+)
+ident(
+  ext_ref Array.create
+)
+"compact.ml" 181 5494 5525 "compact.ml" 181 5494 5526
+type(
+  int
+)
+ident(
+  int_ref n "compact.ml" 177 5361 5367 "compact.ml" 177 5361 5368
+)
+"compact.ml" 181 5494 5527 "compact.ml" 181 5494 5528
+type(
+  int
+)
+"compact.ml" 181 5494 5512 "compact.ml" 181 5494 5528
+type(
+  int array
+)
+"compact.ml" 182 5529 5535 "compact.ml" 182 5529 5547
+type(
+  int array
+)
+ident(
+  def backtrk_code "compact.ml" 184 5608 5610 "compact.ml" 229 7257 7265
+)
+"compact.ml" 182 5529 5550 "compact.ml" 182 5529 5562
+type(
+  int -> int -> int array
+)
+ident(
+  ext_ref Array.create
+)
+"compact.ml" 182 5529 5563 "compact.ml" 182 5529 5564
+type(
+  int
+)
+ident(
+  int_ref n "compact.ml" 177 5361 5367 "compact.ml" 177 5361 5368
+)
+"compact.ml" 182 5529 5565 "compact.ml" 182 5529 5566
+type(
+  int
+)
+"compact.ml" 182 5529 5550 "compact.ml" 182 5529 5566
+type(
+  int array
+)
+"compact.ml" 183 5567 5573 "compact.ml" 183 5567 5585
+type(
+  int array
+)
+ident(
+  def default_code "compact.ml" 184 5608 5610 "compact.ml" 229 7257 7265
+)
+"compact.ml" 183 5567 5588 "compact.ml" 183 5567 5600
+type(
+  int -> int -> int array
+)
+ident(
+  ext_ref Array.create
+)
+"compact.ml" 183 5567 5601 "compact.ml" 183 5567 5602
+type(
+  int
+)
+ident(
+  int_ref n "compact.ml" 177 5361 5367 "compact.ml" 177 5361 5368
+)
+"compact.ml" 183 5567 5603 "compact.ml" 183 5567 5604
+type(
+  int
+)
+"compact.ml" 183 5567 5588 "compact.ml" 183 5567 5604
+type(
+  int array
+)
+"compact.ml" 184 5608 5618 "compact.ml" 184 5608 5619
+type(
+  int
+)
+"compact.ml" 184 5608 5623 "compact.ml" 184 5608 5624
+type(
+  int
+)
+ident(
+  int_ref n "compact.ml" 177 5361 5367 "compact.ml" 177 5361 5368
+)
+"compact.ml" 184 5608 5625 "compact.ml" 184 5608 5626
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"compact.ml" 184 5608 5627 "compact.ml" 184 5608 5628
+type(
+  int
+)
+"compact.ml" 184 5608 5623 "compact.ml" 184 5608 5628
+type(
+  int
+)
+"compact.ml" 185 5632 5642 "compact.ml" 185 5632 5649
+type(
+  Lexgen.automata array
+)
+ident(
+  int_ref state_v "compact.ml" 176 5332 5351 "compact.ml" 176 5332 5358
+)
+"compact.ml" 185 5632 5651 "compact.ml" 185 5632 5652
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 184 5608 5610 "compact.ml" 199 6149 6155
+)
+"compact.ml" 185 5632 5642 "compact.ml" 185 5632 5653
+type(
+  Lexgen.automata
+)
+"compact.ml" 186 5659 5674 "compact.ml" 186 5659 5675
+type(
+  int
+)
+ident(
+  def n "compact.ml" 187 5682 5690 "compact.ml" 188 5711 5751
+)
+"compact.ml" 186 5659 5676 "compact.ml" 186 5659 5677
+type(
+  Lexgen.tag_action list
+)
+ident(
+  def c "compact.ml" 187 5682 5690 "compact.ml" 188 5711 5751
+)
+"compact.ml" 186 5659 5665 "compact.ml" 186 5659 5678
+type(
+  Lexgen.automata
+)
+"compact.ml" 187 5682 5690 "compact.ml" 187 5682 5694
+type(
+  int array
+)
+ident(
+  int_ref base "compact.ml" 178 5395 5401 "compact.ml" 178 5395 5405
+)
+"compact.ml" 187 5682 5696 "compact.ml" 187 5682 5697
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 184 5608 5610 "compact.ml" 199 6149 6155
+)
+"compact.ml" 187 5682 5702 "compact.ml" 187 5682 5703
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.( ~- )
+)
+"compact.ml" 187 5682 5704 "compact.ml" 187 5682 5705
+type(
+  int
+)
+ident(
+  int_ref n "compact.ml" 186 5659 5674 "compact.ml" 186 5659 5675
+)
+"compact.ml" 187 5682 5705 "compact.ml" 187 5682 5706
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"compact.ml" 187 5682 5706 "compact.ml" 187 5682 5707
+type(
+  int
+)
+"compact.ml" 187 5682 5703 "compact.ml" 187 5682 5708
+type(
+  int
+)
+"compact.ml" 187 5682 5702 "compact.ml" 187 5682 5708
+type(
+  int
+)
+"compact.ml" 187 5682 5690 "compact.ml" 187 5682 5708
+type(
+  unit
+)
+"compact.ml" 188 5711 5719 "compact.ml" 188 5711 5728
+type(
+  int array
+)
+ident(
+  int_ref base_code "compact.ml" 181 5494 5500 "compact.ml" 181 5494 5509
+)
+"compact.ml" 188 5711 5730 "compact.ml" 188 5711 5731
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 184 5608 5610 "compact.ml" 199 6149 6155
+)
+"compact.ml" 188 5711 5736 "compact.ml" 188 5711 5749
+type(
+  Lexgen.tag_action list -> int
+)
+ident(
+  int_ref emit_tag_code "compact.ml" 52 1592 1596 "compact.ml" 52 1592 1609
+)
+"compact.ml" 188 5711 5750 "compact.ml" 188 5711 5751
+type(
+  Lexgen.tag_action list
+)
+ident(
+  int_ref c "compact.ml" 186 5659 5676 "compact.ml" 186 5659 5677
+)
+"compact.ml" 188 5711 5736 "compact.ml" 188 5711 5751
+call(
+  stack
+)
+type(
+  int
+)
+"compact.ml" 188 5711 5719 "compact.ml" 188 5711 5751
+type(
+  unit
+)
+"compact.ml" 187 5682 5690 "compact.ml" 188 5711 5751
+type(
+  unit
+)
+"compact.ml" 189 5752 5764 "compact.ml" 189 5752 5769
+type(
+  Lexgen.automata_trans
+)
+ident(
+  def trans "compact.ml" 190 5780 5788 "compact.ml" 198 6085 6148
+)
+"compact.ml" 189 5752 5771 "compact.ml" 189 5752 5775
+type(
+  (Lexgen.automata_move * Lexgen.memory_action list) array
+)
+ident(
+  def move "compact.ml" 190 5780 5788 "compact.ml" 198 6085 6148
+)
+"compact.ml" 189 5752 5758 "compact.ml" 189 5752 5776
+type(
+  Lexgen.automata
+)
+"compact.ml" 190 5780 5800 "compact.ml" 190 5780 5805
+type(
+  Lexgen.automata_trans
+)
+ident(
+  int_ref trans "compact.ml" 189 5752 5764 "compact.ml" 189 5752 5769
+)
+"compact.ml" 191 5811 5821 "compact.ml" 191 5811 5832
+type(
+  Lexgen.automata_trans
+)
+"compact.ml" 191 5811 5836 "compact.ml" 191 5811 5838
+type(
+  unit
+)
+"compact.ml" 192 5839 5859 "compact.ml" 192 5839 5860
+type(
+  int
+)
+ident(
+  def n "compact.ml" 193 5867 5879 "compact.ml" 194 5898 5945
+)
+"compact.ml" 192 5839 5861 "compact.ml" 192 5839 5862
+type(
+  Lexgen.tag_action list
+)
+ident(
+  def c "compact.ml" 193 5867 5879 "compact.ml" 194 5898 5945
+)
+"compact.ml" 192 5839 5849 "compact.ml" 192 5839 5863
+type(
+  Lexgen.automata_trans
+)
+"compact.ml" 193 5867 5879 "compact.ml" 193 5867 5886
+type(
+  int array
+)
+ident(
+  int_ref backtrk "compact.ml" 179 5425 5431 "compact.ml" 179 5425 5438
+)
+"compact.ml" 193 5867 5888 "compact.ml" 193 5867 5889
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 184 5608 5610 "compact.ml" 199 6149 6155
+)
+"compact.ml" 193 5867 5894 "compact.ml" 193 5867 5895
+type(
+  int
+)
+ident(
+  int_ref n "compact.ml" 192 5839 5859 "compact.ml" 192 5839 5860
+)
+"compact.ml" 193 5867 5879 "compact.ml" 193 5867 5895
+type(
+  unit
+)
+"compact.ml" 194 5898 5910 "compact.ml" 194 5898 5922
+type(
+  int array
+)
+ident(
+  int_ref backtrk_code "compact.ml" 182 5529 5535 "compact.ml" 182 5529 5547
+)
+"compact.ml" 194 5898 5924 "compact.ml" 194 5898 5925
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 184 5608 5610 "compact.ml" 199 6149 6155
+)
+"compact.ml" 194 5898 5930 "compact.ml" 194 5898 5943
+type(
+  Lexgen.tag_action list -> int
+)
+ident(
+  int_ref emit_tag_code "compact.ml" 52 1592 1596 "compact.ml" 52 1592 1609
+)
+"compact.ml" 194 5898 5944 "compact.ml" 194 5898 5945
+type(
+  Lexgen.tag_action list
+)
+ident(
+  int_ref c "compact.ml" 192 5839 5861 "compact.ml" 192 5839 5862
+)
+"compact.ml" 194 5898 5930 "compact.ml" 194 5898 5945
+call(
+  stack
+)
+type(
+  int
+)
+"compact.ml" 194 5898 5910 "compact.ml" 194 5898 5945
+type(
+  unit
+)
+"compact.ml" 193 5867 5879 "compact.ml" 194 5898 5945
+type(
+  unit
+)
+"compact.ml" 190 5780 5788 "compact.ml" 195 5946 5957
+type(
+  unit
+)
+"compact.ml" 196 5959 5972 "compact.ml" 196 5959 5979
+type(
+  int
+)
+ident(
+  def b_trans "compact.ml" 197 6031 6039 "compact.ml" 198 6085 6148
+)
+"compact.ml" 196 5959 5981 "compact.ml" 196 5959 5988
+type(
+  int
+)
+ident(
+  def d_trans "compact.ml" 197 6031 6039 "compact.ml" 198 6085 6148
+)
+"compact.ml" 196 5959 5971 "compact.ml" 196 5959 5989
+type(
+  int * int
+)
+"compact.ml" 196 5959 5991 "compact.ml" 196 5959 5998
+type(
+  int
+)
+ident(
+  def b_moves "compact.ml" 197 6031 6039 "compact.ml" 198 6085 6148
+)
+"compact.ml" 196 5959 5999 "compact.ml" 196 5959 6006
+type(
+  int
+)
+ident(
+  def d_moves "compact.ml" 197 6031 6039 "compact.ml" 198 6085 6148
+)
+"compact.ml" 196 5959 5990 "compact.ml" 196 5959 6007
+type(
+  int * int
+)
+"compact.ml" 196 5959 5971 "compact.ml" 196 5959 6007
+type(
+  (int * int) * (int * int)
+)
+"compact.ml" 196 5959 6010 "compact.ml" 196 5959 6020
+type(
+  int ->
+  (Lexgen.automata_move * Lexgen.memory_action list) array ->
+  (int * int) * (int * int)
+)
+ident(
+  int_ref pack_moves "compact.ml" 144 4145 4149 "compact.ml" 144 4145 4159
+)
+"compact.ml" 196 5959 6021 "compact.ml" 196 5959 6022
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 184 5608 5610 "compact.ml" 199 6149 6155
+)
+"compact.ml" 196 5959 6023 "compact.ml" 196 5959 6027
+type(
+  (Lexgen.automata_move * Lexgen.memory_action list) array
+)
+ident(
+  int_ref move "compact.ml" 189 5752 5771 "compact.ml" 189 5752 5775
+)
+"compact.ml" 196 5959 6010 "compact.ml" 196 5959 6027
+call(
+  stack
+)
+type(
+  (int * int) * (int * int)
+)
+"compact.ml" 197 6031 6039 "compact.ml" 197 6031 6043
+type(
+  int array
+)
+ident(
+  int_ref base "compact.ml" 178 5395 5401 "compact.ml" 178 5395 5405
+)
+"compact.ml" 197 6031 6045 "compact.ml" 197 6031 6046
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 184 5608 5610 "compact.ml" 199 6149 6155
+)
+"compact.ml" 197 6031 6051 "compact.ml" 197 6031 6058
+type(
+  int
+)
+ident(
+  int_ref b_trans "compact.ml" 196 5959 5972 "compact.ml" 196 5959 5979
+)
+"compact.ml" 197 6031 6039 "compact.ml" 197 6031 6058
+type(
+  unit
+)
+"compact.ml" 197 6031 6060 "compact.ml" 197 6031 6067
+type(
+  int array
+)
+ident(
+  int_ref default "compact.ml" 180 5461 5467 "compact.ml" 180 5461 5474
+)
+"compact.ml" 197 6031 6069 "compact.ml" 197 6031 6070
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 184 5608 5610 "compact.ml" 199 6149 6155
+)
+"compact.ml" 197 6031 6075 "compact.ml" 197 6031 6082
+type(
+  int
+)
+ident(
+  int_ref d_trans "compact.ml" 196 5959 5981 "compact.ml" 196 5959 5988
+)
+"compact.ml" 197 6031 6060 "compact.ml" 197 6031 6082
+type(
+  unit
+)
+"compact.ml" 198 6085 6093 "compact.ml" 198 6085 6102
+type(
+  int array
+)
+ident(
+  int_ref base_code "compact.ml" 181 5494 5500 "compact.ml" 181 5494 5509
+)
+"compact.ml" 198 6085 6104 "compact.ml" 198 6085 6105
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 184 5608 5610 "compact.ml" 199 6149 6155
+)
+"compact.ml" 198 6085 6110 "compact.ml" 198 6085 6117
+type(
+  int
+)
+ident(
+  int_ref b_moves "compact.ml" 196 5959 5991 "compact.ml" 196 5959 5998
+)
+"compact.ml" 198 6085 6093 "compact.ml" 198 6085 6117
+type(
+  unit
+)
+"compact.ml" 198 6085 6119 "compact.ml" 198 6085 6131
+type(
+  int array
+)
+ident(
+  int_ref default_code "compact.ml" 183 5567 5573 "compact.ml" 183 5567 5585
+)
+"compact.ml" 198 6085 6133 "compact.ml" 198 6085 6134
+type(
+  int
+)
+ident(
+  int_ref i "compact.ml" 184 5608 5610 "compact.ml" 199 6149 6155
+)
+"compact.ml" 198 6085 6139 "compact.ml" 198 6085 6146
+type(
+  int
+)
+ident(
+  int_ref d_moves "compact.ml" 196 5959 5999 "compact.ml" 196 5959 6006
+)
+"compact.ml" 198 6085 6119 "compact.ml" 198 6085 6148
+type(
+  unit
+)
+"compact.ml" 198 6085 6093 "compact.ml" 198 6085 6148
+type(
+  unit
+)
+"compact.ml" 197 6031 6060 "compact.ml" 198 6085 6148
+type(
+  unit
+)
+"compact.ml" 197 6031 6039 "compact.ml" 198 6085 6148
+type(
+  unit
+)
+"compact.ml" 196 5959 5967 "compact.ml" 198 6085 6148
+type(
+  unit
+)
+"compact.ml" 190 5780 5788 "compact.ml" 198 6085 6148
+type(
+  unit
+)
+"compact.ml" 185 5632 5636 "compact.ml" 198 6085 6148
+type(
+  unit
+)
+"compact.ml" 184 5608 5610 "compact.ml" 199 6149 6155
+type(
+  unit
+)
+"compact.ml" 200 6157 6163 "compact.ml" 200 6157 6167
+type(
+  int array
+)
+ident(
+  def code "compact.ml" 201 6189 6191 "compact.ml" 229 7257 7265
+)
+"compact.ml" 200 6157 6170 "compact.ml" 200 6157 6180
+type(
+  int Table.t -> int array
+)
+ident(
+  ext_ref Table.trim
+)
+"compact.ml" 200 6157 6181 "compact.ml" 200 6157 6185
+type(
+  int Table.t
+)
+ident(
+  int_ref code "compact.ml" 18 892 896 "compact.ml" 18 892 900
+)
+"compact.ml" 200 6157 6170 "compact.ml" 200 6157 6185
+call(
+  stack
+)
+type(
+  int array
+)
+"compact.ml" 201 6189 6195 "compact.ml" 201 6189 6201
+type(
+  lex_tables
+)
+ident(
+  def tables "compact.ml" 227 7209 7211 "compact.ml" 229 7257 7265
+)
+"compact.ml" 202 6204 6211 "compact.ml" 202 6204 6223
+type(
+  int array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"compact.ml" 202 6204 6224 "compact.ml" 202 6204 6228
+type(
+  int array
+)
+ident(
+  int_ref code "compact.ml" 200 6157 6163 "compact.ml" 200 6157 6167
+)
+"compact.ml" 202 6204 6211 "compact.ml" 202 6204 6228
+type(
+  int
+)
+"compact.ml" 202 6204 6229 "compact.ml" 202 6204 6230
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"compact.ml" 202 6204 6231 "compact.ml" 202 6204 6232
+type(
+  int
+)
+"compact.ml" 202 6204 6211 "compact.ml" 202 6204 6232
+type(
+  bool
+)
+"compact.ml" 203 6238 6257 "compact.ml" 203 6238 6261
+type(
+  int array
+)
+ident(
+  int_ref base "compact.ml" 178 5395 5401 "compact.ml" 178 5395 5405
+)
+"compact.ml" 204 6263 6285 "compact.ml" 204 6263 6292
+type(
+  int array
+)
+ident(
+  int_ref backtrk "compact.ml" 179 5425 5431 "compact.ml" 179 5425 5438
+)
+"compact.ml" 205 6294 6316 "compact.ml" 205 6294 6323
+type(
+  int array
+)
+ident(
+  int_ref default "compact.ml" 180 5461 5467 "compact.ml" 180 5461 5474
+)
+"compact.ml" 206 6325 6345 "compact.ml" 206 6325 6354
+type(
+  int array -> int -> int -> int array
+)
+ident(
+  ext_ref Array.sub
+)
+"compact.ml" 206 6325 6355 "compact.ml" 206 6325 6360
+type(
+  t_compact
+)
+ident(
+  int_ref trans "compact.ml" 105 3072 3076 "compact.ml" 105 3072 3081
+)
+"compact.ml" 206 6325 6355 "compact.ml" 206 6325 6368
+type(
+  int array
+)
+"compact.ml" 206 6325 6369 "compact.ml" 206 6325 6370
+type(
+  int
+)
+"compact.ml" 206 6325 6371 "compact.ml" 206 6325 6376
+type(
+  t_compact
+)
+ident(
+  int_ref trans "compact.ml" 105 3072 3076 "compact.ml" 105 3072 3081
+)
+"compact.ml" 206 6325 6371 "compact.ml" 206 6325 6388
+type(
+  int
+)
+"compact.ml" 206 6325 6345 "compact.ml" 206 6325 6388
+call(
+  stack
+)
+type(
+  int array
+)
+"compact.ml" 207 6390 6410 "compact.ml" 207 6390 6419
+type(
+  int array -> int -> int -> int array
+)
+ident(
+  ext_ref Array.sub
+)
+"compact.ml" 207 6390 6420 "compact.ml" 207 6390 6425
+type(
+  t_compact
+)
+ident(
+  int_ref trans "compact.ml" 105 3072 3076 "compact.ml" 105 3072 3081
+)
+"compact.ml" 207 6390 6420 "compact.ml" 207 6390 6433
+type(
+  int array
+)
+"compact.ml" 207 6390 6434 "compact.ml" 207 6390 6435
+type(
+  int
+)
+"compact.ml" 207 6390 6436 "compact.ml" 207 6390 6441
+type(
+  t_compact
+)
+ident(
+  int_ref trans "compact.ml" 105 3072 3076 "compact.ml" 105 3072 3081
+)
+"compact.ml" 207 6390 6436 "compact.ml" 207 6390 6453
+type(
+  int
+)
+"compact.ml" 207 6390 6410 "compact.ml" 207 6390 6453
+call(
+  stack
+)
+type(
+  int array
+)
+"compact.ml" 208 6455 6479 "compact.ml" 208 6455 6488
+type(
+  int array
+)
+ident(
+  int_ref base_code "compact.ml" 181 5494 5500 "compact.ml" 181 5494 5509
+)
+"compact.ml" 209 6491 6518 "compact.ml" 209 6491 6530
+type(
+  int array
+)
+ident(
+  int_ref backtrk_code "compact.ml" 182 5529 5535 "compact.ml" 182 5529 5547
+)
+"compact.ml" 210 6532 6559 "compact.ml" 210 6532 6571
+type(
+  int array
+)
+ident(
+  int_ref default_code "compact.ml" 183 5567 5573 "compact.ml" 183 5567 5585
+)
+"compact.ml" 211 6573 6598 "compact.ml" 211 6573 6607
+type(
+  int array -> int -> int -> int array
+)
+ident(
+  ext_ref Array.sub
+)
+"compact.ml" 211 6573 6608 "compact.ml" 211 6573 6613
+type(
+  t_compact
+)
+ident(
+  int_ref moves "compact.ml" 106 3102 3106 "compact.ml" 106 3102 3111
+)
+"compact.ml" 211 6573 6608 "compact.ml" 211 6573 6621
+type(
+  int array
+)
+"compact.ml" 211 6573 6622 "compact.ml" 211 6573 6623
+type(
+  int
+)
+"compact.ml" 211 6573 6624 "compact.ml" 211 6573 6629
+type(
+  t_compact
+)
+ident(
+  int_ref moves "compact.ml" 106 3102 3106 "compact.ml" 106 3102 3111
+)
+"compact.ml" 211 6573 6624 "compact.ml" 211 6573 6641
+type(
+  int
+)
+"compact.ml" 211 6573 6598 "compact.ml" 211 6573 6641
+call(
+  stack
+)
+type(
+  int array
+)
+"compact.ml" 212 6643 6668 "compact.ml" 212 6643 6677
+type(
+  int array -> int -> int -> int array
+)
+ident(
+  ext_ref Array.sub
+)
+"compact.ml" 212 6643 6678 "compact.ml" 212 6643 6683
+type(
+  t_compact
+)
+ident(
+  int_ref moves "compact.ml" 106 3102 3106 "compact.ml" 106 3102 3111
+)
+"compact.ml" 212 6643 6678 "compact.ml" 212 6643 6691
+type(
+  int array
+)
+"compact.ml" 212 6643 6692 "compact.ml" 212 6643 6693
+type(
+  int
+)
+"compact.ml" 212 6643 6694 "compact.ml" 212 6643 6699
+type(
+  t_compact
+)
+ident(
+  int_ref moves "compact.ml" 106 3102 3106 "compact.ml" 106 3102 3111
+)
+"compact.ml" 212 6643 6694 "compact.ml" 212 6643 6711
+type(
+  int
+)
+"compact.ml" 212 6643 6668 "compact.ml" 212 6643 6711
+call(
+  stack
+)
+type(
+  int array
+)
+"compact.ml" 213 6713 6732 "compact.ml" 213 6713 6736
+type(
+  int array
+)
+ident(
+  int_ref code "compact.ml" 200 6157 6163 "compact.ml" 200 6157 6167
+)
+"compact.ml" 203 6238 6244 "compact.ml" 213 6713 6737
+type(
+  lex_tables
+)
+"compact.ml" 215 6802 6822 "compact.ml" 215 6802 6826
+type(
+  int array
+)
+ident(
+  int_ref base "compact.ml" 178 5395 5401 "compact.ml" 178 5395 5405
+)
+"compact.ml" 216 6828 6850 "compact.ml" 216 6828 6857
+type(
+  int array
+)
+ident(
+  int_ref backtrk "compact.ml" 179 5425 5431 "compact.ml" 179 5425 5438
+)
+"compact.ml" 217 6859 6881 "compact.ml" 217 6859 6888
+type(
+  int array
+)
+ident(
+  int_ref default "compact.ml" 180 5461 5467 "compact.ml" 180 5461 5474
+)
+"compact.ml" 218 6890 6910 "compact.ml" 218 6890 6919
+type(
+  int array -> int -> int -> int array
+)
+ident(
+  ext_ref Array.sub
+)
+"compact.ml" 218 6890 6920 "compact.ml" 218 6890 6925
+type(
+  t_compact
+)
+ident(
+  int_ref trans "compact.ml" 105 3072 3076 "compact.ml" 105 3072 3081
+)
+"compact.ml" 218 6890 6920 "compact.ml" 218 6890 6933
+type(
+  int array
+)
+"compact.ml" 218 6890 6934 "compact.ml" 218 6890 6935
+type(
+  int
+)
+"compact.ml" 218 6890 6936 "compact.ml" 218 6890 6941
+type(
+  t_compact
+)
+ident(
+  int_ref trans "compact.ml" 105 3072 3076 "compact.ml" 105 3072 3081
+)
+"compact.ml" 218 6890 6936 "compact.ml" 218 6890 6953
+type(
+  int
+)
+"compact.ml" 218 6890 6910 "compact.ml" 218 6890 6953
+call(
+  stack
+)
+type(
+  int array
+)
+"compact.ml" 219 6955 6975 "compact.ml" 219 6955 6984
+type(
+  int array -> int -> int -> int array
+)
+ident(
+  ext_ref Array.sub
+)
+"compact.ml" 219 6955 6985 "compact.ml" 219 6955 6990
+type(
+  t_compact
+)
+ident(
+  int_ref trans "compact.ml" 105 3072 3076 "compact.ml" 105 3072 3081
+)
+"compact.ml" 219 6955 6985 "compact.ml" 219 6955 6998
+type(
+  int array
+)
+"compact.ml" 219 6955 6999 "compact.ml" 219 6955 7000
+type(
+  int
+)
+"compact.ml" 219 6955 7001 "compact.ml" 219 6955 7006
+type(
+  t_compact
+)
+ident(
+  int_ref trans "compact.ml" 105 3072 3076 "compact.ml" 105 3072 3081
+)
+"compact.ml" 219 6955 7001 "compact.ml" 219 6955 7018
+type(
+  int
+)
+"compact.ml" 219 6955 6975 "compact.ml" 219 6955 7018
+call(
+  stack
+)
+type(
+  int array
+)
+"compact.ml" 220 7020 7044 "compact.ml" 220 7020 7048
+type(
+  int array
+)
+"compact.ml" 221 7051 7078 "compact.ml" 221 7051 7082
+type(
+  int array
+)
+"compact.ml" 222 7084 7111 "compact.ml" 222 7084 7115
+type(
+  int array
+)
+"compact.ml" 223 7117 7142 "compact.ml" 223 7117 7146
+type(
+  int array
+)
+"compact.ml" 224 7148 7173 "compact.ml" 224 7148 7177
+type(
+  int array
+)
+"compact.ml" 225 7179 7198 "compact.ml" 225 7179 7202
+type(
+  int array
+)
+"compact.ml" 215 6802 6809 "compact.ml" 225 7179 7203
+type(
+  lex_tables
+)
+"compact.ml" 202 6204 6208 "compact.ml" 225 7179 7203
+type(
+  lex_tables
+)
+"compact.ml" 227 7209 7211 "compact.ml" 227 7209 7224
+type(
+  t_compact -> unit
+)
+ident(
+  int_ref reset_compact "compact.ml" 99 2879 2883 "compact.ml" 99 2879 2896
+)
+"compact.ml" 227 7209 7225 "compact.ml" 227 7209 7230
+type(
+  t_compact
+)
+ident(
+  int_ref trans "compact.ml" 105 3072 3076 "compact.ml" 105 3072 3081
+)
+"compact.ml" 227 7209 7211 "compact.ml" 227 7209 7230
+call(
+  stack
+)
+type(
+  unit
+)
+"compact.ml" 228 7233 7235 "compact.ml" 228 7233 7248
+type(
+  t_compact -> unit
+)
+ident(
+  int_ref reset_compact "compact.ml" 99 2879 2883 "compact.ml" 99 2879 2896
+)
+"compact.ml" 228 7233 7249 "compact.ml" 228 7233 7254
+type(
+  t_compact
+)
+ident(
+  int_ref moves "compact.ml" 106 3102 3106 "compact.ml" 106 3102 3111
+)
+"compact.ml" 228 7233 7235 "compact.ml" 228 7233 7254
+call(
+  stack
+)
+type(
+  unit
+)
+"compact.ml" 229 7257 7259 "compact.ml" 229 7257 7265
+type(
+  lex_tables
+)
+ident(
+  int_ref tables "compact.ml" 201 6189 6195 "compact.ml" 201 6189 6201
+)
+"compact.ml" 228 7233 7235 "compact.ml" 229 7257 7265
+type(
+  lex_tables
+)
+"compact.ml" 227 7209 7211 "compact.ml" 229 7257 7265
+type(
+  lex_tables
+)
+"compact.ml" 201 6189 6191 "compact.ml" 229 7257 7265
+type(
+  lex_tables
+)
+"compact.ml" 200 6157 6159 "compact.ml" 229 7257 7265
+type(
+  lex_tables
+)
+"compact.ml" 184 5608 5610 "compact.ml" 229 7257 7265
+type(
+  lex_tables
+)
+"compact.ml" 178 5395 5397 "compact.ml" 229 7257 7265
+type(
+  lex_tables
+)
+"compact.ml" 177 5361 5363 "compact.ml" 229 7257 7265
+type(
+  lex_tables
+)

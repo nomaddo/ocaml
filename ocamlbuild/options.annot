@@ -1,0 +1,8107 @@
+"options.ml" 16 858 862 "options.ml" 16 858 869
+type(
+  string
+)
+ident(
+  def version "options.ml" 18 909 909 "options.ml" 1 0 -1
+)
+"options.ml" 16 858 872 "options.ml" 16 858 885
+type(
+  string
+)
+"options.ml" 16 858 885 "options.ml" 16 858 886
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"options.ml" 16 858 886 "options.ml" 16 858 905
+type(
+  string
+)
+ident(
+  ext_ref Sys.ocaml_version
+)
+"options.ml" 16 858 872 "options.ml" 16 858 905
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 25 990 994 "options.ml" 25 990 999
+type(
+  bool Slurp.entry option ref
+)
+ident(
+  def entry "options.ml" 26 1011 1011 "options.ml" 1 0 -1
+)
+"options.ml" 25 990 1002 "options.ml" 25 990 1005
+type(
+  bool Slurp.entry option -> bool Slurp.entry option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 25 990 1006 "options.ml" 25 990 1010
+type(
+  bool Slurp.entry option
+)
+"options.ml" 25 990 1002 "options.ml" 25 990 1010
+type(
+  bool Slurp.entry option ref
+)
+"options.ml" 26 1011 1015 "options.ml" 26 1011 1024
+type(
+  string ref
+)
+ident(
+  def build_dir "options.ml" 27 1074 1074 "options.ml" 1 0 -1
+)
+"options.ml" 26 1011 1027 "options.ml" 26 1011 1030
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 26 1011 1032 "options.ml" 26 1011 1047
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Filename.concat
+)
+"options.ml" 26 1011 1049 "options.ml" 26 1011 1059
+type(
+  unit -> string
+)
+ident(
+  ext_ref Sys.getcwd
+)
+"options.ml" 26 1011 1060 "options.ml" 26 1011 1062
+type(
+  unit
+)
+"options.ml" 26 1011 1048 "options.ml" 26 1011 1063
+type(
+  string
+)
+"options.ml" 26 1011 1064 "options.ml" 26 1011 1072
+type(
+  string
+)
+"options.ml" 26 1011 1031 "options.ml" 26 1011 1073
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 26 1011 1027 "options.ml" 26 1011 1073
+type(
+  string ref
+)
+"options.ml" 27 1074 1078 "options.ml" 27 1074 1090
+type(
+  string list ref
+)
+ident(
+  def include_dirs "options.ml" 28 1100 1100 "options.ml" 1 0 -1
+)
+"options.ml" 27 1074 1093 "options.ml" 27 1074 1096
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 27 1074 1097 "options.ml" 27 1074 1099
+type(
+  string list
+)
+"options.ml" 27 1074 1093 "options.ml" 27 1074 1099
+type(
+  string list ref
+)
+"options.ml" 28 1100 1104 "options.ml" 28 1100 1116
+type(
+  string list ref
+)
+ident(
+  def exclude_dirs "options.ml" 29 1126 1126 "options.ml" 1 0 -1
+)
+"options.ml" 28 1100 1119 "options.ml" 28 1100 1122
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 28 1100 1123 "options.ml" 28 1100 1125
+type(
+  string list
+)
+"options.ml" 28 1100 1119 "options.ml" 28 1100 1125
+type(
+  string list ref
+)
+"options.ml" 29 1126 1130 "options.ml" 29 1126 1155
+type(
+  bool ref
+)
+ident(
+  def nothing_should_be_rebuilt "options.ml" 30 1168 1168 "options.ml" 1 0 -1
+)
+"options.ml" 29 1126 1158 "options.ml" 29 1126 1161
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 29 1126 1162 "options.ml" 29 1126 1167
+type(
+  bool
+)
+"options.ml" 29 1126 1158 "options.ml" 29 1126 1167
+type(
+  bool ref
+)
+"options.ml" 30 1168 1172 "options.ml" 30 1168 1180
+type(
+  bool ref
+)
+ident(
+  def sanitize "options.ml" 31 1192 1192 "options.ml" 1 0 -1
+)
+"options.ml" 30 1168 1183 "options.ml" 30 1168 1186
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 30 1168 1187 "options.ml" 30 1168 1191
+type(
+  bool
+)
+"options.ml" 30 1168 1183 "options.ml" 30 1168 1191
+type(
+  bool ref
+)
+"options.ml" 31 1192 1196 "options.ml" 31 1192 1215
+type(
+  string ref
+)
+ident(
+  def sanitization_script "options.ml" 32 1236 1236 "options.ml" 1 0 -1
+)
+"options.ml" 31 1192 1218 "options.ml" 31 1192 1221
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 31 1192 1222 "options.ml" 31 1192 1235
+type(
+  string
+)
+"options.ml" 31 1192 1218 "options.ml" 31 1192 1235
+type(
+  string ref
+)
+"options.ml" 32 1236 1240 "options.ml" 32 1236 1247
+type(
+  bool ref
+)
+ident(
+  def hygiene "options.ml" 33 1259 1259 "options.ml" 1 0 -1
+)
+"options.ml" 32 1236 1250 "options.ml" 32 1236 1253
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 32 1236 1254 "options.ml" 32 1236 1258
+type(
+  bool
+)
+"options.ml" 32 1236 1250 "options.ml" 32 1236 1258
+type(
+  bool ref
+)
+"options.ml" 33 1259 1263 "options.ml" 33 1259 1274
+type(
+  bool ref
+)
+ident(
+  def ignore_auto "options.ml" 34 1286 1286 "options.ml" 1 0 -1
+)
+"options.ml" 33 1259 1277 "options.ml" 33 1259 1280
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 33 1259 1281 "options.ml" 33 1259 1285
+type(
+  bool
+)
+"options.ml" 33 1259 1277 "options.ml" 33 1259 1285
+type(
+  bool ref
+)
+"options.ml" 34 1286 1290 "options.ml" 34 1286 1296
+type(
+  bool ref
+)
+ident(
+  def plugin "options.ml" 35 1308 1308 "options.ml" 1 0 -1
+)
+"options.ml" 34 1286 1299 "options.ml" 34 1286 1302
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 34 1286 1303 "options.ml" 34 1286 1307
+type(
+  bool
+)
+"options.ml" 34 1286 1299 "options.ml" 34 1286 1307
+type(
+  bool ref
+)
+"options.ml" 35 1308 1312 "options.ml" 35 1308 1323
+type(
+  bool ref
+)
+ident(
+  def just_plugin "options.ml" 36 1336 1336 "options.ml" 1 0 -1
+)
+"options.ml" 35 1308 1326 "options.ml" 35 1308 1329
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 35 1308 1330 "options.ml" 35 1308 1335
+type(
+  bool
+)
+"options.ml" 35 1308 1326 "options.ml" 35 1308 1335
+type(
+  bool ref
+)
+"options.ml" 36 1336 1340 "options.ml" 36 1336 1353
+type(
+  bool ref
+)
+ident(
+  def native_plugin "options.ml" 37 1365 1365 "options.ml" 1 0 -1
+)
+"options.ml" 36 1336 1356 "options.ml" 36 1336 1359
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 36 1336 1360 "options.ml" 36 1336 1364
+type(
+  bool
+)
+"options.ml" 36 1336 1356 "options.ml" 36 1336 1364
+type(
+  bool ref
+)
+"options.ml" 37 1365 1369 "options.ml" 37 1365 1379
+type(
+  bool ref
+)
+ident(
+  def make_links "options.ml" 38 1391 1391 "options.ml" 1 0 -1
+)
+"options.ml" 37 1365 1382 "options.ml" 37 1365 1385
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 37 1365 1386 "options.ml" 37 1365 1390
+type(
+  bool
+)
+"options.ml" 37 1365 1382 "options.ml" 37 1365 1390
+type(
+  bool ref
+)
+"options.ml" 38 1391 1395 "options.ml" 38 1391 1403
+type(
+  bool ref
+)
+ident(
+  def nostdlib "options.ml" 39 1416 1416 "options.ml" 1 0 -1
+)
+"options.ml" 38 1391 1406 "options.ml" 38 1391 1409
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 38 1391 1410 "options.ml" 38 1391 1415
+type(
+  bool
+)
+"options.ml" 38 1391 1406 "options.ml" 38 1391 1415
+type(
+  bool ref
+)
+"options.ml" 39 1416 1420 "options.ml" 39 1416 1430
+type(
+  bool ref
+)
+ident(
+  def use_menhir "options.ml" 40 1443 1443 "options.ml" 1 0 -1
+)
+"options.ml" 39 1416 1433 "options.ml" 39 1416 1436
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 39 1416 1437 "options.ml" 39 1416 1442
+type(
+  bool
+)
+"options.ml" 39 1416 1433 "options.ml" 39 1416 1442
+type(
+  bool ref
+)
+"options.ml" 40 1443 1447 "options.ml" 40 1443 1459
+type(
+  bool ref
+)
+ident(
+  def catch_errors "options.ml" 41 1471 1471 "options.ml" 1 0 -1
+)
+"options.ml" 40 1443 1462 "options.ml" 40 1443 1465
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 40 1443 1466 "options.ml" 40 1443 1470
+type(
+  bool
+)
+"options.ml" 40 1443 1462 "options.ml" 40 1443 1470
+type(
+  bool ref
+)
+"options.ml" 41 1471 1475 "options.ml" 41 1471 1488
+type(
+  bool ref
+)
+ident(
+  def use_ocamlfind "options.ml" 45 1614 1614 "options.ml" 1 0 -1
+)
+"options.ml" 41 1471 1491 "options.ml" 41 1471 1494
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 41 1471 1495 "options.ml" 41 1471 1500
+type(
+  bool
+)
+"options.ml" 41 1471 1491 "options.ml" 41 1471 1500
+type(
+  bool ref
+)
+"options.ml" 45 1614 1618 "options.ml" 45 1614 1630
+type(
+  string -> bool
+)
+ident(
+  def is_core_tool "options.ml" 47 1687 1687 "options.ml" 1 0 -1
+)
+"options.ml" 45 1614 1642 "options.ml" 45 1614 1653
+type(
+  string
+)
+"options.ml" 45 1614 1656 "options.ml" 45 1614 1664
+type(
+  string
+)
+"options.ml" 45 1614 1642 "options.ml" 45 1614 1664
+type(
+  string
+)
+"options.ml" 45 1614 1668 "options.ml" 45 1614 1673
+type(
+  bool
+)
+"options.ml" 45 1614 1676 "options.ml" 45 1614 1677
+type(
+  string
+)
+"options.ml" 45 1614 1681 "options.ml" 45 1614 1685
+type(
+  bool
+)
+"options.ml" 45 1614 1633 "options.ml" 45 1614 1685
+type(
+  string -> bool
+)
+"options.ml" 47 1687 1691 "options.ml" 47 1687 1700
+type(
+  string -> string
+)
+ident(
+  def find_tool "options.ml" 75 2780 2780 "options.ml" 1 0 -1
+)
+"options.ml" 47 1687 1701 "options.ml" 47 1687 1704
+type(
+  string
+)
+ident(
+  def cmd "options.ml" 48 1707 1709 "options.ml" 73 2753 2778
+)
+"options.ml" 48 1707 1713 "options.ml" 48 1707 1716
+type(
+  string ref
+)
+ident(
+  def dir "options.ml" 49 1746 1748 "options.ml" 73 2753 2778
+)
+"options.ml" 48 1707 1719 "options.ml" 48 1707 1742
+type(
+  string ref
+)
+ident(
+  ext_ref Ocamlbuild_where.bindir
+)
+"options.ml" 49 1746 1752 "options.ml" 49 1746 1761
+type(
+  bool
+)
+ident(
+  def core_tool "options.ml" 50 1784 1786 "options.ml" 73 2753 2778
+)
+"options.ml" 49 1746 1764 "options.ml" 49 1746 1776
+type(
+  string -> bool
+)
+ident(
+  int_ref is_core_tool "options.ml" 45 1614 1618 "options.ml" 45 1614 1630
+)
+"options.ml" 49 1746 1777 "options.ml" 49 1746 1780
+type(
+  string
+)
+ident(
+  int_ref cmd "options.ml" 47 1687 1701 "options.ml" 47 1687 1704
+)
+"options.ml" 49 1746 1764 "options.ml" 49 1746 1780
+call(
+  stack
+)
+type(
+  bool
+)
+"options.ml" 50 1784 1790 "options.ml" 50 1784 1793
+type(
+  string
+)
+ident(
+  def opt "options.ml" 51 1812 1814 "options.ml" 73 2753 2778
+)
+"options.ml" 50 1784 1796 "options.ml" 50 1784 1799
+type(
+  string
+)
+ident(
+  int_ref cmd "options.ml" 47 1687 1701 "options.ml" 47 1687 1704
+)
+"options.ml" 50 1784 1800 "options.ml" 50 1784 1801
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"options.ml" 50 1784 1802 "options.ml" 50 1784 1808
+type(
+  string
+)
+"options.ml" 50 1784 1796 "options.ml" 50 1784 1808
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 51 1812 1818 "options.ml" 51 1812 1832
+type(
+  string -> string
+)
+ident(
+  def search_in_path "options.ml" 52 1866 1868 "options.ml" 73 2753 2778
+)
+"options.ml" 51 1812 1835 "options.ml" 51 1812 1839
+type(
+  (string -> string) -> string -> string
+)
+ident(
+  ext_ref My_std.memo
+)
+"options.ml" 51 1812 1840 "options.ml" 51 1812 1862
+type(
+  string -> string
+)
+ident(
+  ext_ref Command.search_in_path
+)
+"options.ml" 51 1812 1835 "options.ml" 51 1812 1862
+call(
+  stack
+)
+type(
+  string -> string
+)
+"options.ml" 52 1866 1871 "options.ml" 52 1866 1886
+type(
+  string -> bool
+)
+ident(
+  ext_ref My_std.sys_file_exists
+)
+"options.ml" 52 1866 1887 "options.ml" 52 1866 1888
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 52 1866 1888 "options.ml" 52 1866 1891
+type(
+  string ref
+)
+ident(
+  int_ref dir "options.ml" 48 1707 1713 "options.ml" 48 1707 1716
+)
+"options.ml" 52 1866 1887 "options.ml" 52 1866 1891
+type(
+  string
+)
+"options.ml" 52 1866 1871 "options.ml" 52 1866 1891
+call(
+  stack
+)
+type(
+  bool
+)
+"options.ml" 53 1897 1905 "options.ml" 53 1897 1909
+type(
+  string
+)
+ident(
+  def long "options.ml" 54 1940 1944 "options.ml" 70 2630 2703
+)
+"options.ml" 53 1897 1912 "options.ml" 53 1897 1927
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref My_std.filename_concat
+)
+"options.ml" 53 1897 1928 "options.ml" 53 1897 1929
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 53 1897 1929 "options.ml" 53 1897 1932
+type(
+  string ref
+)
+ident(
+  int_ref dir "options.ml" 48 1707 1713 "options.ml" 48 1707 1716
+)
+"options.ml" 53 1897 1928 "options.ml" 53 1897 1932
+type(
+  string
+)
+"options.ml" 53 1897 1933 "options.ml" 53 1897 1936
+type(
+  string
+)
+ident(
+  int_ref cmd "options.ml" 47 1687 1701 "options.ml" 47 1687 1704
+)
+"options.ml" 53 1897 1912 "options.ml" 53 1897 1936
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 54 1940 1948 "options.ml" 54 1940 1956
+type(
+  string
+)
+ident(
+  def long_opt "options.ml" 56 2031 2035 "options.ml" 70 2630 2703
+)
+"options.ml" 54 1940 1959 "options.ml" 54 1940 1963
+type(
+  string
+)
+ident(
+  int_ref long "options.ml" 53 1897 1905 "options.ml" 53 1897 1909
+)
+"options.ml" 54 1940 1964 "options.ml" 54 1940 1965
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"options.ml" 54 1940 1966 "options.ml" 54 1940 1972
+type(
+  string
+)
+"options.ml" 54 1940 1959 "options.ml" 54 1940 1972
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 56 2031 2039 "options.ml" 56 2031 2046
+type(
+  (unit -> string option) list
+)
+ident(
+  def choices "options.ml" 60 2275 2279 "options.ml" 70 2630 2703
+)
+"options.ml" 57 2049 2061 "options.ml" 57 2049 2063
+type(
+  unit
+)
+"options.ml" 57 2049 2070 "options.ml" 57 2049 2088
+type(
+  string -> bool
+)
+ident(
+  ext_ref Command.file_or_exe_exists
+)
+"options.ml" 57 2049 2089 "options.ml" 57 2049 2097
+type(
+  string
+)
+ident(
+  int_ref long_opt "options.ml" 54 1940 1948 "options.ml" 54 1940 1956
+)
+"options.ml" 57 2049 2070 "options.ml" 57 2049 2097
+call(
+  stack
+)
+type(
+  bool
+)
+"options.ml" 57 2049 2108 "options.ml" 57 2049 2116
+type(
+  string
+)
+ident(
+  int_ref long_opt "options.ml" 54 1940 1948 "options.ml" 54 1940 1956
+)
+"options.ml" 57 2049 2103 "options.ml" 57 2049 2116
+type(
+  string option
+)
+"options.ml" 57 2049 2122 "options.ml" 57 2049 2126
+type(
+  string option
+)
+"options.ml" 57 2049 2067 "options.ml" 57 2049 2126
+type(
+  string option
+)
+"options.ml" 57 2049 2056 "options.ml" 57 2049 2127
+type(
+  unit -> string option
+)
+"options.ml" 58 2129 2141 "options.ml" 58 2129 2143
+type(
+  unit
+)
+"options.ml" 58 2129 2150 "options.ml" 58 2129 2168
+type(
+  string -> bool
+)
+ident(
+  ext_ref Command.file_or_exe_exists
+)
+"options.ml" 58 2129 2169 "options.ml" 58 2129 2173
+type(
+  string
+)
+ident(
+  int_ref long "options.ml" 53 1897 1905 "options.ml" 53 1897 1909
+)
+"options.ml" 58 2129 2150 "options.ml" 58 2129 2173
+call(
+  stack
+)
+type(
+  bool
+)
+"options.ml" 58 2129 2184 "options.ml" 58 2129 2188
+type(
+  string
+)
+ident(
+  int_ref long "options.ml" 53 1897 1905 "options.ml" 53 1897 1909
+)
+"options.ml" 58 2129 2179 "options.ml" 58 2129 2188
+type(
+  string option
+)
+"options.ml" 58 2129 2194 "options.ml" 58 2129 2198
+type(
+  string option
+)
+"options.ml" 58 2129 2147 "options.ml" 58 2129 2198
+type(
+  string option
+)
+"options.ml" 58 2129 2136 "options.ml" 58 2129 2199
+type(
+  unit -> string option
+)
+"options.ml" 57 2049 2055 "options.ml" 58 2129 2200
+type(
+  (unit -> string option) list
+)
+"options.ml" 60 2275 2283 "options.ml" 60 2275 2291
+type(
+  (unit -> string option) list
+)
+ident(
+  def choices' "options.ml" 65 2405 2409 "options.ml" 70 2630 2703
+)
+"options.ml" 61 2294 2305 "options.ml" 61 2294 2307
+type(
+  unit
+)
+"options.ml" 62 2311 2327 "options.ml" 62 2311 2328
+type(
+  string
+)
+"options.ml" 62 2311 2331 "options.ml" 62 2311 2345
+type(
+  string -> string
+)
+ident(
+  int_ref search_in_path "options.ml" 51 1812 1818 "options.ml" 51 1812 1832
+)
+"options.ml" 62 2311 2346 "options.ml" 62 2311 2349
+type(
+  string
+)
+ident(
+  int_ref opt "options.ml" 50 1784 1790 "options.ml" 50 1784 1793
+)
+"options.ml" 62 2311 2331 "options.ml" 62 2311 2349
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 62 2311 2358 "options.ml" 62 2311 2361
+type(
+  string
+)
+ident(
+  int_ref opt "options.ml" 50 1784 1790 "options.ml" 50 1784 1793
+)
+"options.ml" 62 2311 2353 "options.ml" 62 2311 2361
+type(
+  string option
+)
+"options.ml" 62 2311 2323 "options.ml" 62 2311 2361
+type(
+  string option
+)
+"options.ml" 63 2362 2375 "options.ml" 63 2362 2384
+type(
+  exn
+)
+"options.ml" 63 2362 2393 "options.ml" 63 2362 2396
+type(
+  string
+)
+ident(
+  int_ref cmd "options.ml" 47 1687 1701 "options.ml" 47 1687 1704
+)
+"options.ml" 63 2362 2388 "options.ml" 63 2362 2396
+type(
+  string option
+)
+"options.ml" 62 2311 2319 "options.ml" 63 2362 2396
+type(
+  string option
+)
+"options.ml" 61 2294 2301 "options.ml" 63 2362 2396
+type(
+  unit -> string option
+)
+"options.ml" 61 2294 2300 "options.ml" 63 2362 2397
+type(
+  (unit -> string option) list
+)
+"options.ml" 65 2405 2413 "options.ml" 65 2405 2420
+type(
+  (unit -> string option) list
+)
+ident(
+  def choices "options.ml" 66 2487 2491 "options.ml" 70 2630 2703
+)
+"options.ml" 65 2405 2426 "options.ml" 65 2405 2435
+type(
+  bool
+)
+ident(
+  int_ref core_tool "options.ml" 49 1746 1752 "options.ml" 49 1746 1761
+)
+"options.ml" 65 2405 2441 "options.ml" 65 2405 2448
+type(
+  (unit -> string option) list
+)
+ident(
+  int_ref choices "options.ml" 56 2031 2039 "options.ml" 56 2031 2046
+)
+"options.ml" 65 2405 2449 "options.ml" 65 2405 2450
+type(
+  (unit -> string option) list ->
+  (unit -> string option) list -> (unit -> string option) list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"options.ml" 65 2405 2451 "options.ml" 65 2405 2459
+type(
+  (unit -> string option) list
+)
+ident(
+  int_ref choices' "options.ml" 60 2275 2283 "options.ml" 60 2275 2291
+)
+"options.ml" 65 2405 2441 "options.ml" 65 2405 2459
+call(
+  stack
+)
+type(
+  (unit -> string option) list
+)
+"options.ml" 65 2405 2465 "options.ml" 65 2405 2473
+type(
+  (unit -> string option) list
+)
+ident(
+  int_ref choices' "options.ml" 60 2275 2283 "options.ml" 60 2275 2291
+)
+"options.ml" 65 2405 2474 "options.ml" 65 2405 2475
+type(
+  (unit -> string option) list ->
+  (unit -> string option) list -> (unit -> string option) list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"options.ml" 65 2405 2476 "options.ml" 65 2405 2483
+type(
+  (unit -> string option) list
+)
+ident(
+  int_ref choices "options.ml" 56 2031 2039 "options.ml" 56 2031 2046
+)
+"options.ml" 65 2405 2465 "options.ml" 65 2405 2483
+call(
+  stack
+)
+type(
+  (unit -> string option) list
+)
+"options.ml" 65 2405 2423 "options.ml" 65 2405 2483
+type(
+  (unit -> string option) list
+)
+"options.ml" 67 2495 2508 "options.ml" 67 2495 2517
+type(
+  ((unit -> string option) -> bool) ->
+  (unit -> string option) list -> unit -> string option
+)
+ident(
+  ext_ref My_std.List.find
+)
+"options.ml" 67 2495 2523 "options.ml" 67 2495 2529
+type(
+  unit -> string option
+)
+ident(
+  def choice "options.ml" 67 2495 2533 "options.ml" 67 2495 2555
+)
+"options.ml" 67 2495 2533 "options.ml" 67 2495 2536
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"options.ml" 67 2495 2538 "options.ml" 67 2495 2544
+type(
+  unit -> string option
+)
+ident(
+  int_ref choice "options.ml" 67 2495 2523 "options.ml" 67 2495 2529
+)
+"options.ml" 67 2495 2545 "options.ml" 67 2495 2547
+type(
+  unit
+)
+"options.ml" 67 2495 2538 "options.ml" 67 2495 2547
+call(
+  stack
+)
+type(
+  string option
+)
+"options.ml" 67 2495 2548 "options.ml" 67 2495 2549
+type(
+  string option -> string option -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"options.ml" 67 2495 2550 "options.ml" 67 2495 2554
+type(
+  string option
+)
+"options.ml" 67 2495 2537 "options.ml" 67 2495 2555
+type(
+  bool
+)
+"options.ml" 67 2495 2533 "options.ml" 67 2495 2555
+type(
+  bool
+)
+"options.ml" 67 2495 2518 "options.ml" 67 2495 2556
+type(
+  (unit -> string option) -> bool
+)
+"options.ml" 67 2495 2557 "options.ml" 67 2495 2564
+type(
+  (unit -> string option) list
+)
+ident(
+  int_ref choices "options.ml" 65 2405 2413 "options.ml" 65 2405 2420
+)
+"options.ml" 67 2495 2507 "options.ml" 67 2495 2565
+type(
+  unit -> string option
+)
+"options.ml" 67 2495 2566 "options.ml" 67 2495 2568
+type(
+  unit
+)
+"options.ml" 67 2495 2507 "options.ml" 67 2495 2568
+call(
+  stack
+)
+type(
+  string option
+)
+"options.ml" 68 2574 2587 "options.ml" 68 2574 2590
+type(
+  string
+)
+ident(
+  def cmd "options.ml" 68 2574 2594 "options.ml" 68 2574 2597
+)
+"options.ml" 68 2574 2582 "options.ml" 68 2574 2590
+type(
+  string option
+)
+"options.ml" 68 2574 2594 "options.ml" 68 2574 2597
+type(
+  string
+)
+ident(
+  int_ref cmd "options.ml" 68 2574 2587 "options.ml" 68 2574 2590
+)
+"options.ml" 69 2598 2606 "options.ml" 69 2598 2610
+type(
+  string option
+)
+"options.ml" 69 2598 2614 "options.ml" 69 2598 2619
+type(
+  exn -> string
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"options.ml" 69 2598 2620 "options.ml" 69 2598 2629
+type(
+  exn
+)
+"options.ml" 69 2598 2614 "options.ml" 69 2598 2629
+type(
+  string
+)
+"options.ml" 67 2495 2501 "options.ml" 69 2598 2629
+type(
+  string
+)
+"options.ml" 70 2630 2639 "options.ml" 70 2630 2648
+type(
+  exn
+)
+"options.ml" 70 2630 2652 "options.ml" 70 2630 2660
+type(
+  string -> string
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"options.ml" 70 2630 2662 "options.ml" 70 2630 2676
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"options.ml" 70 2630 2677 "options.ml" 70 2630 2698
+type(
+  (string -> string, unit, string) format
+)
+"options.ml" 70 2630 2699 "options.ml" 70 2630 2702
+type(
+  string
+)
+ident(
+  int_ref cmd "options.ml" 47 1687 1701 "options.ml" 47 1687 1704
+)
+"options.ml" 70 2630 2661 "options.ml" 70 2630 2703
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 70 2630 2652 "options.ml" 70 2630 2703
+call(
+  tail
+)
+type(
+  string
+)
+"options.ml" 66 2487 2491 "options.ml" 70 2630 2703
+type(
+  string
+)
+"options.ml" 65 2405 2409 "options.ml" 70 2630 2703
+type(
+  string
+)
+"options.ml" 60 2275 2279 "options.ml" 70 2630 2703
+type(
+  string
+)
+"options.ml" 56 2031 2035 "options.ml" 70 2630 2703
+type(
+  string
+)
+"options.ml" 54 1940 1944 "options.ml" 70 2630 2703
+type(
+  string
+)
+"options.ml" 53 1897 1901 "options.ml" 70 2630 2703
+type(
+  string
+)
+"options.ml" 72 2711 2723 "options.ml" 72 2711 2724
+type(
+  string
+)
+"options.ml" 72 2711 2727 "options.ml" 72 2711 2741
+type(
+  string -> string
+)
+ident(
+  int_ref search_in_path "options.ml" 51 1812 1818 "options.ml" 51 1812 1832
+)
+"options.ml" 72 2711 2742 "options.ml" 72 2711 2745
+type(
+  string
+)
+ident(
+  int_ref opt "options.ml" 50 1784 1790 "options.ml" 50 1784 1793
+)
+"options.ml" 72 2711 2727 "options.ml" 72 2711 2745
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 72 2711 2749 "options.ml" 72 2711 2752
+type(
+  string
+)
+ident(
+  int_ref opt "options.ml" 50 1784 1790 "options.ml" 50 1784 1793
+)
+"options.ml" 72 2711 2719 "options.ml" 72 2711 2752
+type(
+  string
+)
+"options.ml" 73 2753 2762 "options.ml" 73 2753 2771
+type(
+  exn
+)
+"options.ml" 73 2753 2775 "options.ml" 73 2753 2778
+type(
+  string
+)
+ident(
+  int_ref cmd "options.ml" 47 1687 1701 "options.ml" 47 1687 1704
+)
+"options.ml" 72 2711 2715 "options.ml" 73 2753 2778
+type(
+  string
+)
+"options.ml" 52 1866 1868 "options.ml" 73 2753 2778
+type(
+  string
+)
+"options.ml" 51 1812 1814 "options.ml" 73 2753 2778
+type(
+  string
+)
+"options.ml" 50 1784 1786 "options.ml" 73 2753 2778
+type(
+  string
+)
+"options.ml" 49 1746 1748 "options.ml" 73 2753 2778
+type(
+  string
+)
+"options.ml" 48 1707 1709 "options.ml" 73 2753 2778
+type(
+  string
+)
+"options.ml" 75 2780 2784 "options.ml" 75 2780 2802
+type(
+  string list -> unit
+)
+ident(
+  def mk_virtual_solvers "options.ml" 82 2959 2959 "options.ml" 1 0 -1
+)
+"options.ml" 76 2805 2807 "options.ml" 76 2805 2816
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"options.ml" 76 2805 2827 "options.ml" 76 2805 2830
+type(
+  string
+)
+ident(
+  def cmd "options.ml" 77 2834 2838 "options.ml" 79 2878 2951
+)
+"options.ml" 77 2834 2842 "options.ml" 77 2834 2848
+type(
+  unit -> Command.spec
+)
+ident(
+  def solver "options.ml" 79 2878 2885 "options.ml" 79 2878 2951
+)
+"options.ml" 77 2834 2849 "options.ml" 77 2834 2851
+type(
+  unit
+)
+"options.ml" 78 2854 2863 "options.ml" 78 2854 2872
+type(
+  string -> string
+)
+ident(
+  int_ref find_tool "options.ml" 47 1687 1691 "options.ml" 47 1687 1700
+)
+"options.ml" 78 2854 2873 "options.ml" 78 2854 2876
+type(
+  string
+)
+ident(
+  int_ref cmd "options.ml" 76 2805 2827 "options.ml" 76 2805 2830
+)
+"options.ml" 78 2854 2862 "options.ml" 78 2854 2877
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 78 2854 2860 "options.ml" 78 2854 2877
+type(
+  Command.spec
+)
+"options.ml" 79 2878 2885 "options.ml" 79 2878 2921
+type(
+  string -> (unit -> Command.spec) -> unit
+)
+ident(
+  ext_ref Command.setup_virtual_command_solver
+)
+"options.ml" 79 2878 2923 "options.ml" 79 2878 2939
+type(
+  string -> string
+)
+ident(
+  ext_ref My_std.String.uppercase
+)
+"options.ml" 79 2878 2940 "options.ml" 79 2878 2943
+type(
+  string
+)
+ident(
+  int_ref cmd "options.ml" 76 2805 2827 "options.ml" 76 2805 2830
+)
+"options.ml" 79 2878 2922 "options.ml" 79 2878 2944
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 79 2878 2945 "options.ml" 79 2878 2951
+type(
+  unit -> Command.spec
+)
+ident(
+  int_ref solver "options.ml" 77 2834 2842 "options.ml" 77 2834 2848
+)
+"options.ml" 79 2878 2885 "options.ml" 79 2878 2951
+call(
+  tail
+)
+type(
+  unit
+)
+"options.ml" 77 2834 2838 "options.ml" 79 2878 2951
+type(
+  unit
+)
+"options.ml" 76 2805 2817 "options.ml" 80 2952 2957
+type(
+  string -> unit
+)
+"options.ml" 76 2805 2807 "options.ml" 80 2952 2957
+call(
+  stack
+)
+type(
+  string list -> unit
+)
+"options.ml" 82 2959 2963 "options.ml" 82 2959 2965
+type(
+  unit
+)
+"options.ml" 83 2968 2970 "options.ml" 83 2968 2988
+type(
+  string list -> unit
+)
+ident(
+  int_ref mk_virtual_solvers "options.ml" 75 2780 2784 "options.ml" 75 2780 2802
+)
+"options.ml" 84 2989 2994 "options.ml" 84 2989 3002
+type(
+  string
+)
+"options.ml" 84 2989 3004 "options.ml" 84 2989 3014
+type(
+  string
+)
+"options.ml" 84 2989 3016 "options.ml" 84 2989 3026
+type(
+  string
+)
+"options.ml" 84 2989 3028 "options.ml" 84 2989 3038
+type(
+  string
+)
+"options.ml" 85 3040 3044 "options.ml" 85 3040 3055
+type(
+  string
+)
+"options.ml" 85 3040 3057 "options.ml" 85 3040 3065
+type(
+  string
+)
+"options.ml" 85 3040 3067 "options.ml" 85 3040 3077
+type(
+  string
+)
+"options.ml" 85 3040 3079 "options.ml" 85 3040 3091
+type(
+  string
+)
+"options.ml" 85 3040 3093 "options.ml" 85 3040 3105
+type(
+  string
+)
+"options.ml" 85 3040 3107 "options.ml" 85 3040 3118
+type(
+  string
+)
+"options.ml" 84 2989 2993 "options.ml" 85 3040 3119
+type(
+  string list
+)
+"options.ml" 83 2968 2970 "options.ml" 85 3040 3119
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 86 3120 3124 "options.ml" 86 3120 3130
+type(
+  Command.spec ref
+)
+ident(
+  def ocamlc "options.ml" 87 3149 3149 "options.ml" 1 0 -1
+)
+"options.ml" 86 3120 3133 "options.ml" 86 3120 3136
+type(
+  Command.spec -> Command.spec ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 86 3120 3139 "options.ml" 86 3120 3147
+type(
+  string
+)
+"options.ml" 86 3120 3137 "options.ml" 86 3120 3148
+type(
+  Command.spec
+)
+"options.ml" 86 3120 3133 "options.ml" 86 3120 3148
+type(
+  Command.spec ref
+)
+"options.ml" 87 3149 3153 "options.ml" 87 3149 3161
+type(
+  Command.spec ref
+)
+ident(
+  def ocamlopt "options.ml" 88 3182 3182 "options.ml" 1 0 -1
+)
+"options.ml" 87 3149 3164 "options.ml" 87 3149 3167
+type(
+  Command.spec -> Command.spec ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 87 3149 3170 "options.ml" 87 3149 3180
+type(
+  string
+)
+"options.ml" 87 3149 3168 "options.ml" 87 3149 3181
+type(
+  Command.spec
+)
+"options.ml" 87 3149 3164 "options.ml" 87 3149 3181
+type(
+  Command.spec ref
+)
+"options.ml" 88 3182 3186 "options.ml" 88 3182 3194
+type(
+  Command.spec ref
+)
+ident(
+  def ocamldep "options.ml" 89 3215 3215 "options.ml" 1 0 -1
+)
+"options.ml" 88 3182 3197 "options.ml" 88 3182 3200
+type(
+  Command.spec -> Command.spec ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 88 3182 3203 "options.ml" 88 3182 3213
+type(
+  string
+)
+"options.ml" 88 3182 3201 "options.ml" 88 3182 3214
+type(
+  Command.spec
+)
+"options.ml" 88 3182 3197 "options.ml" 88 3182 3214
+type(
+  Command.spec ref
+)
+"options.ml" 89 3215 3219 "options.ml" 89 3215 3227
+type(
+  Command.spec ref
+)
+ident(
+  def ocamldoc "options.ml" 90 3248 3248 "options.ml" 1 0 -1
+)
+"options.ml" 89 3215 3230 "options.ml" 89 3215 3233
+type(
+  Command.spec -> Command.spec ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 89 3215 3236 "options.ml" 89 3215 3246
+type(
+  string
+)
+"options.ml" 89 3215 3234 "options.ml" 89 3215 3247
+type(
+  Command.spec
+)
+"options.ml" 89 3215 3230 "options.ml" 89 3215 3247
+type(
+  Command.spec ref
+)
+"options.ml" 90 3248 3252 "options.ml" 90 3248 3261
+type(
+  Command.spec ref
+)
+ident(
+  def ocamlyacc "options.ml" 91 3270 3270 "options.ml" 1 0 -1
+)
+"options.ml" 90 3248 3264 "options.ml" 90 3248 3267
+type(
+  Command.spec -> Command.spec ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 90 3248 3268 "options.ml" 90 3248 3269
+type(
+  Command.spec
+)
+"options.ml" 90 3248 3264 "options.ml" 90 3248 3269
+type(
+  Command.spec ref
+)
+"options.ml" 91 3270 3274 "options.ml" 91 3270 3282
+type(
+  Command.spec ref
+)
+ident(
+  def ocamllex "options.ml" 92 3303 3303 "options.ml" 1 0 -1
+)
+"options.ml" 91 3270 3285 "options.ml" 91 3270 3288
+type(
+  Command.spec -> Command.spec ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 91 3270 3291 "options.ml" 91 3270 3301
+type(
+  string
+)
+"options.ml" 91 3270 3289 "options.ml" 91 3270 3302
+type(
+  Command.spec
+)
+"options.ml" 91 3270 3285 "options.ml" 91 3270 3302
+type(
+  Command.spec ref
+)
+"options.ml" 92 3303 3307 "options.ml" 92 3303 3317
+type(
+  Command.spec ref
+)
+ident(
+  def ocamlmklib "options.ml" 93 3340 3340 "options.ml" 1 0 -1
+)
+"options.ml" 92 3303 3320 "options.ml" 92 3303 3323
+type(
+  Command.spec -> Command.spec ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 92 3303 3326 "options.ml" 92 3303 3338
+type(
+  string
+)
+"options.ml" 92 3303 3324 "options.ml" 92 3303 3339
+type(
+  Command.spec
+)
+"options.ml" 92 3303 3320 "options.ml" 92 3303 3339
+type(
+  Command.spec ref
+)
+"options.ml" 93 3340 3344 "options.ml" 93 3340 3354
+type(
+  Command.spec ref
+)
+ident(
+  def ocamlmktop "options.ml" 94 3377 3377 "options.ml" 1 0 -1
+)
+"options.ml" 93 3340 3357 "options.ml" 93 3340 3360
+type(
+  Command.spec -> Command.spec ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 93 3340 3363 "options.ml" 93 3340 3375
+type(
+  string
+)
+"options.ml" 93 3340 3361 "options.ml" 93 3340 3376
+type(
+  Command.spec
+)
+"options.ml" 93 3340 3357 "options.ml" 93 3340 3376
+type(
+  Command.spec ref
+)
+"options.ml" 94 3377 3381 "options.ml" 94 3377 3389
+type(
+  Command.spec ref
+)
+ident(
+  def ocamlrun "options.ml" 95 3398 3398 "options.ml" 1 0 -1
+)
+"options.ml" 94 3377 3392 "options.ml" 94 3377 3395
+type(
+  Command.spec -> Command.spec ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 94 3377 3396 "options.ml" 94 3377 3397
+type(
+  Command.spec
+)
+"options.ml" 94 3377 3392 "options.ml" 94 3377 3397
+type(
+  Command.spec ref
+)
+"options.ml" 95 3398 3402 "options.ml" 95 3398 3415
+type(
+  Command.spec ref
+)
+ident(
+  def ocamlfind_cmd "options.ml" 96 3437 3437 "options.ml" 1 0 -1
+)
+"options.ml" 95 3398 3418 "options.ml" 95 3398 3421
+type(
+  Command.spec -> Command.spec ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 95 3398 3424 "options.ml" 95 3398 3435
+type(
+  string
+)
+"options.ml" 95 3398 3422 "options.ml" 95 3398 3436
+type(
+  Command.spec
+)
+"options.ml" 95 3398 3418 "options.ml" 95 3398 3436
+type(
+  Command.spec ref
+)
+"options.ml" 96 3437 3441 "options.ml" 96 3437 3450
+type(
+  Command.spec -> Command.spec
+)
+ident(
+  def ocamlfind "options.ml" 97 3480 3480 "options.ml" 1 0 -1
+)
+"options.ml" 96 3437 3451 "options.ml" 96 3437 3454
+type(
+  Command.spec
+)
+ident(
+  def arg "options.ml" 96 3437 3457 "options.ml" 96 3437 3479
+)
+"options.ml" 96 3437 3459 "options.ml" 96 3437 3460
+type(
+  Command.spec ref -> Command.spec
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 96 3437 3460 "options.ml" 96 3437 3473
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlfind_cmd "options.ml" 95 3398 3402 "options.ml" 95 3398 3415
+)
+"options.ml" 96 3437 3459 "options.ml" 96 3437 3473
+type(
+  Command.spec
+)
+"options.ml" 96 3437 3475 "options.ml" 96 3437 3478
+type(
+  Command.spec
+)
+ident(
+  int_ref arg "options.ml" 96 3437 3451 "options.ml" 96 3437 3454
+)
+"options.ml" 96 3437 3458 "options.ml" 96 3437 3479
+type(
+  Command.spec list
+)
+"options.ml" 96 3437 3457 "options.ml" 96 3437 3479
+type(
+  Command.spec
+)
+"options.ml" 97 3480 3484 "options.ml" 97 3480 3502
+type(
+  bool ref
+)
+ident(
+  def program_to_execute "options.ml" 98 3515 3515 "options.ml" 1 0 -1
+)
+"options.ml" 97 3480 3505 "options.ml" 97 3480 3508
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 97 3480 3509 "options.ml" 97 3480 3514
+type(
+  bool
+)
+"options.ml" 97 3480 3505 "options.ml" 97 3480 3514
+type(
+  bool ref
+)
+"options.ml" 98 3515 3519 "options.ml" 98 3515 3529
+type(
+  bool ref
+)
+ident(
+  def must_clean "options.ml" 99 3542 3542 "options.ml" 1 0 -1
+)
+"options.ml" 98 3515 3532 "options.ml" 98 3515 3535
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 98 3515 3536 "options.ml" 98 3515 3541
+type(
+  bool
+)
+"options.ml" 98 3515 3532 "options.ml" 98 3515 3541
+type(
+  bool ref
+)
+"options.ml" 99 3542 3546 "options.ml" 99 3542 3564
+type(
+  bool ref
+)
+ident(
+  def show_documentation "options.ml" 100 3577 3577 "options.ml" 1 0 -1
+)
+"options.ml" 99 3542 3567 "options.ml" 99 3542 3570
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 99 3542 3571 "options.ml" 99 3542 3576
+type(
+  bool
+)
+"options.ml" 99 3542 3567 "options.ml" 99 3542 3576
+type(
+  bool ref
+)
+"options.ml" 100 3577 3581 "options.ml" 100 3577 3590
+type(
+  bool ref
+)
+ident(
+  def recursive "options.ml" 101 3603 3603 "options.ml" 1 0 -1
+)
+"options.ml" 100 3577 3593 "options.ml" 100 3577 3596
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 100 3577 3597 "options.ml" 100 3577 3602
+type(
+  bool
+)
+"options.ml" 100 3577 3593 "options.ml" 100 3577 3602
+type(
+  bool ref
+)
+"options.ml" 101 3603 3607 "options.ml" 101 3603 3614
+type(
+  string ref
+)
+ident(
+  def ext_lib "options.ml" 102 3641 3641 "options.ml" 1 0 -1
+)
+"options.ml" 101 3603 3617 "options.ml" 101 3603 3620
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 101 3603 3621 "options.ml" 101 3603 3640
+type(
+  string
+)
+ident(
+  ext_ref Ocamlbuild_config.a
+)
+"options.ml" 101 3603 3617 "options.ml" 101 3603 3640
+type(
+  string ref
+)
+"options.ml" 102 3641 3645 "options.ml" 102 3641 3652
+type(
+  string ref
+)
+ident(
+  def ext_obj "options.ml" 103 3679 3679 "options.ml" 1 0 -1
+)
+"options.ml" 102 3641 3655 "options.ml" 102 3641 3658
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 102 3641 3659 "options.ml" 102 3641 3678
+type(
+  string
+)
+ident(
+  ext_ref Ocamlbuild_config.o
+)
+"options.ml" 102 3641 3655 "options.ml" 102 3641 3678
+type(
+  string ref
+)
+"options.ml" 103 3679 3683 "options.ml" 103 3679 3690
+type(
+  string ref
+)
+ident(
+  def ext_dll "options.ml" 104 3718 3718 "options.ml" 1 0 -1
+)
+"options.ml" 103 3679 3693 "options.ml" 103 3679 3696
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 103 3679 3697 "options.ml" 103 3679 3717
+type(
+  string
+)
+ident(
+  ext_ref Ocamlbuild_config.so
+)
+"options.ml" 103 3679 3693 "options.ml" 103 3679 3717
+type(
+  string ref
+)
+"options.ml" 104 3718 3722 "options.ml" 104 3718 3725
+type(
+  string ref
+)
+ident(
+  def exe "options.ml" 106 3755 3755 "options.ml" 1 0 -1
+)
+"options.ml" 104 3718 3728 "options.ml" 104 3718 3731
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 104 3718 3732 "options.ml" 104 3718 3753
+type(
+  string
+)
+ident(
+  ext_ref Ocamlbuild_config.exe
+)
+"options.ml" 104 3718 3728 "options.ml" 104 3718 3753
+type(
+  string ref
+)
+"options.ml" 106 3755 3759 "options.ml" 106 3755 3775
+type(
+  string list list ref
+)
+ident(
+  def targets_internal "options.ml" 107 3785 3785 "options.ml" 1 0 -1
+)
+"options.ml" 106 3755 3778 "options.ml" 106 3755 3781
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 106 3755 3782 "options.ml" 106 3755 3784
+type(
+  string list list
+)
+"options.ml" 106 3755 3778 "options.ml" 106 3755 3784
+type(
+  string list list ref
+)
+"options.ml" 107 3785 3789 "options.ml" 107 3785 3808
+type(
+  string list list ref
+)
+ident(
+  def ocaml_libs_internal "options.ml" 108 3818 3818 "options.ml" 1 0 -1
+)
+"options.ml" 107 3785 3811 "options.ml" 107 3785 3814
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 107 3785 3815 "options.ml" 107 3785 3817
+type(
+  string list list
+)
+"options.ml" 107 3785 3811 "options.ml" 107 3785 3817
+type(
+  string list list ref
+)
+"options.ml" 108 3818 3822 "options.ml" 108 3818 3841
+type(
+  string list list ref
+)
+ident(
+  def ocaml_mods_internal "options.ml" 109 3851 3851 "options.ml" 1 0 -1
+)
+"options.ml" 108 3818 3844 "options.ml" 108 3818 3847
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 108 3818 3848 "options.ml" 108 3818 3850
+type(
+  string list list
+)
+"options.ml" 108 3818 3844 "options.ml" 108 3818 3850
+type(
+  string list list ref
+)
+"options.ml" 109 3851 3855 "options.ml" 109 3851 3874
+type(
+  string list list ref
+)
+ident(
+  def ocaml_pkgs_internal "options.ml" 110 3884 3884 "options.ml" 1 0 -1
+)
+"options.ml" 109 3851 3877 "options.ml" 109 3851 3880
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 109 3851 3881 "options.ml" 109 3851 3883
+type(
+  string list list
+)
+"options.ml" 109 3851 3877 "options.ml" 109 3851 3883
+type(
+  string list list ref
+)
+"options.ml" 110 3884 3888 "options.ml" 110 3884 3900
+type(
+  string option ref
+)
+ident(
+  def ocaml_syntax "options.ml" 111 3912 3912 "options.ml" 1 0 -1
+)
+"options.ml" 110 3884 3903 "options.ml" 110 3884 3906
+type(
+  string option -> string option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 110 3884 3907 "options.ml" 110 3884 3911
+type(
+  string option
+)
+"options.ml" 110 3884 3903 "options.ml" 110 3884 3911
+type(
+  string option ref
+)
+"options.ml" 111 3912 3916 "options.ml" 111 3912 3937
+type(
+  string list list ref
+)
+ident(
+  def ocaml_lflags_internal "options.ml" 112 3947 3947 "options.ml" 1 0 -1
+)
+"options.ml" 111 3912 3940 "options.ml" 111 3912 3943
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 111 3912 3944 "options.ml" 111 3912 3946
+type(
+  string list list
+)
+"options.ml" 111 3912 3940 "options.ml" 111 3912 3946
+type(
+  string list list ref
+)
+"options.ml" 112 3947 3951 "options.ml" 112 3947 3972
+type(
+  string list list ref
+)
+ident(
+  def ocaml_cflags_internal "options.ml" 113 3982 3982 "options.ml" 1 0 -1
+)
+"options.ml" 112 3947 3975 "options.ml" 112 3947 3978
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 112 3947 3979 "options.ml" 112 3947 3981
+type(
+  string list list
+)
+"options.ml" 112 3947 3975 "options.ml" 112 3947 3981
+type(
+  string list list ref
+)
+"options.ml" 113 3982 3986 "options.ml" 113 3982 4009
+type(
+  string list list ref
+)
+ident(
+  def ocaml_docflags_internal "options.ml" 114 4019 4019 "options.ml" 1 0 -1
+)
+"options.ml" 113 3982 4012 "options.ml" 113 3982 4015
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 113 3982 4016 "options.ml" 113 3982 4018
+type(
+  string list list
+)
+"options.ml" 113 3982 4012 "options.ml" 113 3982 4018
+type(
+  string list list ref
+)
+"options.ml" 114 4019 4023 "options.ml" 114 4019 4045
+type(
+  string list list ref
+)
+ident(
+  def ocaml_ppflags_internal "options.ml" 115 4055 4055 "options.ml" 1 0 -1
+)
+"options.ml" 114 4019 4048 "options.ml" 114 4019 4051
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 114 4019 4052 "options.ml" 114 4019 4054
+type(
+  string list list
+)
+"options.ml" 114 4019 4048 "options.ml" 114 4019 4054
+type(
+  string list list ref
+)
+"options.ml" 115 4055 4059 "options.ml" 115 4055 4083
+type(
+  string list list ref
+)
+ident(
+  def ocaml_yaccflags_internal "options.ml" 116 4093 4093 "options.ml" 1 0 -1
+)
+"options.ml" 115 4055 4086 "options.ml" 115 4055 4089
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 115 4055 4090 "options.ml" 115 4055 4092
+type(
+  string list list
+)
+"options.ml" 115 4055 4086 "options.ml" 115 4055 4092
+type(
+  string list list ref
+)
+"options.ml" 116 4093 4097 "options.ml" 116 4093 4120
+type(
+  string list list ref
+)
+ident(
+  def ocaml_lexflags_internal "options.ml" 117 4130 4130 "options.ml" 1 0 -1
+)
+"options.ml" 116 4093 4123 "options.ml" 116 4093 4126
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 116 4093 4127 "options.ml" 116 4093 4129
+type(
+  string list list
+)
+"options.ml" 116 4093 4123 "options.ml" 116 4093 4129
+type(
+  string list list ref
+)
+"options.ml" 117 4130 4134 "options.ml" 117 4130 4155
+type(
+  string list list ref
+)
+ident(
+  def program_args_internal "options.ml" 118 4165 4165 "options.ml" 1 0 -1
+)
+"options.ml" 117 4130 4158 "options.ml" 117 4130 4161
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 117 4130 4162 "options.ml" 117 4130 4164
+type(
+  string list list
+)
+"options.ml" 117 4130 4158 "options.ml" 117 4130 4164
+type(
+  string list list ref
+)
+"options.ml" 118 4165 4169 "options.ml" 118 4165 4189
+type(
+  string list list ref
+)
+ident(
+  def ignore_list_internal "options.ml" 119 4199 4199 "options.ml" 1 0 -1
+)
+"options.ml" 118 4165 4192 "options.ml" 118 4165 4195
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 118 4165 4196 "options.ml" 118 4165 4198
+type(
+  string list list
+)
+"options.ml" 118 4165 4192 "options.ml" 118 4165 4198
+type(
+  string list list ref
+)
+"options.ml" 119 4199 4203 "options.ml" 119 4199 4216
+type(
+  string list list ref
+)
+ident(
+  def tags_internal "options.ml" 120 4235 4235 "options.ml" 1 0 -1
+)
+"options.ml" 119 4199 4219 "options.ml" 119 4199 4222
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 119 4199 4225 "options.ml" 119 4199 4232
+type(
+  string
+)
+"options.ml" 119 4199 4224 "options.ml" 119 4199 4233
+type(
+  string list
+)
+"options.ml" 119 4199 4223 "options.ml" 119 4199 4234
+type(
+  string list list
+)
+"options.ml" 119 4199 4219 "options.ml" 119 4199 4234
+type(
+  string list list ref
+)
+"options.ml" 120 4235 4239 "options.ml" 120 4235 4257
+type(
+  string list list ref
+)
+ident(
+  def tag_lines_internal "options.ml" 121 4267 4267 "options.ml" 1 0 -1
+)
+"options.ml" 120 4235 4260 "options.ml" 120 4235 4263
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 120 4235 4264 "options.ml" 120 4235 4266
+type(
+  string list list
+)
+"options.ml" 120 4235 4260 "options.ml" 120 4235 4266
+type(
+  string list list ref
+)
+"options.ml" 121 4267 4271 "options.ml" 121 4267 4289
+type(
+  string list list ref
+)
+ident(
+  def show_tags_internal "options.ml" 122 4299 4299 "options.ml" 1 0 -1
+)
+"options.ml" 121 4267 4292 "options.ml" 121 4267 4295
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 121 4267 4296 "options.ml" 121 4267 4298
+type(
+  string list list
+)
+"options.ml" 121 4267 4292 "options.ml" 121 4267 4298
+type(
+  string list list ref
+)
+"options.ml" 122 4299 4303 "options.ml" 122 4299 4323
+type(
+  string list list ref
+)
+ident(
+  def plugin_tags_internal "options.ml" 123 4333 4333 "options.ml" 1 0 -1
+)
+"options.ml" 122 4299 4326 "options.ml" 122 4299 4329
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 122 4299 4330 "options.ml" 122 4299 4332
+type(
+  string list list
+)
+"options.ml" 122 4299 4326 "options.ml" 122 4299 4332
+type(
+  string list list ref
+)
+"options.ml" 123 4333 4337 "options.ml" 123 4333 4354
+type(
+  string ref
+)
+ident(
+  def log_file_internal "options.ml" 125 4369 4369 "options.ml" 1 0 -1
+)
+"options.ml" 123 4333 4357 "options.ml" 123 4333 4360
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 123 4333 4361 "options.ml" 123 4333 4367
+type(
+  string
+)
+"options.ml" 123 4333 4357 "options.ml" 123 4333 4367
+type(
+  string ref
+)
+"options.ml" 125 4369 4373 "options.ml" 125 4369 4388
+type(
+  string list list ref
+)
+ident(
+  def my_include_dirs "options.ml" 126 4425 4425 "options.ml" 1 0 -1
+)
+"options.ml" 125 4369 4391 "options.ml" 125 4369 4394
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 125 4369 4397 "options.ml" 125 4369 4422
+type(
+  string
+)
+ident(
+  ext_ref Filename.current_dir_name
+)
+"options.ml" 125 4369 4396 "options.ml" 125 4369 4423
+type(
+  string list
+)
+"options.ml" 125 4369 4395 "options.ml" 125 4369 4424
+type(
+  string list list
+)
+"options.ml" 125 4369 4391 "options.ml" 125 4369 4424
+type(
+  string list list ref
+)
+"options.ml" 126 4425 4429 "options.ml" 126 4425 4444
+type(
+  string list list ref
+)
+ident(
+  def my_exclude_dirs "options.ml" 128 4470 4470 "options.ml" 1 0 -1
+)
+"options.ml" 126 4425 4447 "options.ml" 126 4425 4450
+type(
+  string list list -> string list list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 126 4425 4453 "options.ml" 126 4425 4459
+type(
+  string
+)
+"options.ml" 126 4425 4461 "options.ml" 126 4425 4466
+type(
+  string
+)
+"options.ml" 126 4425 4452 "options.ml" 126 4425 4467
+type(
+  string list
+)
+"options.ml" 126 4425 4451 "options.ml" 126 4425 4468
+type(
+  string list list
+)
+"options.ml" 126 4425 4447 "options.ml" 126 4425 4468
+type(
+  string list list ref
+)
+"options.ml" 128 4470 4474 "options.ml" 128 4470 4479
+type(
+  string
+)
+ident(
+  def dummy "options.ml" 132 4675 4675 "options.ml" 1 0 -1
+)
+"options.ml" 128 4470 4482 "options.ml" 128 4470 4506
+type(
+  string
+)
+"options.ml" 132 4675 4679 "options.ml" 132 4675 4689
+type(
+  unit -> unit
+)
+ident(
+  def use_jocaml "options.ml" 143 4937 4937 "options.ml" 1 0 -1
+)
+"options.ml" 132 4675 4690 "options.ml" 132 4675 4692
+type(
+  unit
+)
+"options.ml" 133 4695 4697 "options.ml" 133 4695 4703
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlc "options.ml" 86 3120 3124 "options.ml" 86 3120 3130
+)
+"options.ml" 133 4695 4704 "options.ml" 133 4695 4706
+type(
+  Command.spec ref -> Command.spec -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 133 4695 4709 "options.ml" 133 4695 4718
+type(
+  string
+)
+"options.ml" 133 4695 4707 "options.ml" 133 4695 4718
+type(
+  Command.spec
+)
+"options.ml" 133 4695 4697 "options.ml" 133 4695 4718
+type(
+  unit
+)
+"options.ml" 134 4720 4722 "options.ml" 134 4720 4730
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlopt "options.ml" 87 3149 3153 "options.ml" 87 3149 3161
+)
+"options.ml" 134 4720 4731 "options.ml" 134 4720 4733
+type(
+  Command.spec ref -> Command.spec -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 134 4720 4736 "options.ml" 134 4720 4747
+type(
+  string
+)
+"options.ml" 134 4720 4734 "options.ml" 134 4720 4747
+type(
+  Command.spec
+)
+"options.ml" 134 4720 4722 "options.ml" 134 4720 4747
+type(
+  unit
+)
+"options.ml" 135 4749 4751 "options.ml" 135 4749 4759
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamldep "options.ml" 88 3182 3186 "options.ml" 88 3182 3194
+)
+"options.ml" 135 4749 4760 "options.ml" 135 4749 4762
+type(
+  Command.spec ref -> Command.spec -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 135 4749 4765 "options.ml" 135 4749 4776
+type(
+  string
+)
+"options.ml" 135 4749 4763 "options.ml" 135 4749 4776
+type(
+  Command.spec
+)
+"options.ml" 135 4749 4751 "options.ml" 135 4749 4776
+type(
+  unit
+)
+"options.ml" 136 4778 4780 "options.ml" 136 4778 4789
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlyacc "options.ml" 90 3248 3252 "options.ml" 90 3248 3261
+)
+"options.ml" 136 4778 4790 "options.ml" 136 4778 4792
+type(
+  Command.spec ref -> Command.spec -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 136 4778 4795 "options.ml" 136 4778 4807
+type(
+  string
+)
+"options.ml" 136 4778 4793 "options.ml" 136 4778 4807
+type(
+  Command.spec
+)
+"options.ml" 136 4778 4780 "options.ml" 136 4778 4807
+type(
+  unit
+)
+"options.ml" 137 4809 4811 "options.ml" 137 4809 4819
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamllex "options.ml" 91 3270 3274 "options.ml" 91 3270 3282
+)
+"options.ml" 137 4809 4820 "options.ml" 137 4809 4822
+type(
+  Command.spec ref -> Command.spec -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 137 4809 4825 "options.ml" 137 4809 4836
+type(
+  string
+)
+"options.ml" 137 4809 4823 "options.ml" 137 4809 4836
+type(
+  Command.spec
+)
+"options.ml" 137 4809 4811 "options.ml" 137 4809 4836
+type(
+  unit
+)
+"options.ml" 138 4838 4840 "options.ml" 138 4838 4850
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlmklib "options.ml" 92 3303 3307 "options.ml" 92 3303 3317
+)
+"options.ml" 138 4838 4851 "options.ml" 138 4838 4853
+type(
+  Command.spec ref -> Command.spec -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 138 4838 4856 "options.ml" 138 4838 4869
+type(
+  string
+)
+"options.ml" 138 4838 4854 "options.ml" 138 4838 4869
+type(
+  Command.spec
+)
+"options.ml" 138 4838 4840 "options.ml" 138 4838 4869
+type(
+  unit
+)
+"options.ml" 139 4871 4873 "options.ml" 139 4871 4883
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlmktop "options.ml" 93 3340 3344 "options.ml" 93 3340 3354
+)
+"options.ml" 139 4871 4884 "options.ml" 139 4871 4886
+type(
+  Command.spec ref -> Command.spec -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 139 4871 4889 "options.ml" 139 4871 4902
+type(
+  string
+)
+"options.ml" 139 4871 4887 "options.ml" 139 4871 4902
+type(
+  Command.spec
+)
+"options.ml" 139 4871 4873 "options.ml" 139 4871 4902
+type(
+  unit
+)
+"options.ml" 140 4904 4906 "options.ml" 140 4904 4914
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlrun "options.ml" 94 3377 3381 "options.ml" 94 3377 3389
+)
+"options.ml" 140 4904 4915 "options.ml" 140 4904 4917
+type(
+  Command.spec ref -> Command.spec -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 140 4904 4920 "options.ml" 140 4904 4931
+type(
+  string
+)
+"options.ml" 140 4904 4918 "options.ml" 140 4904 4931
+type(
+  Command.spec
+)
+"options.ml" 140 4904 4906 "options.ml" 140 4904 4932
+type(
+  unit
+)
+"options.ml" 139 4871 4873 "options.ml" 140 4904 4932
+type(
+  unit
+)
+"options.ml" 138 4838 4840 "options.ml" 140 4904 4932
+type(
+  unit
+)
+"options.ml" 137 4809 4811 "options.ml" 140 4904 4932
+type(
+  unit
+)
+"options.ml" 136 4778 4780 "options.ml" 140 4904 4932
+type(
+  unit
+)
+"options.ml" 135 4749 4751 "options.ml" 140 4904 4932
+type(
+  unit
+)
+"options.ml" 134 4720 4722 "options.ml" 140 4904 4932
+type(
+  unit
+)
+"options.ml" 133 4695 4697 "options.ml" 140 4904 4932
+type(
+  unit
+)
+"options.ml" 143 4937 4941 "options.ml" 143 4937 4947
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  def add_to "options.ml" 146 5047 5047 "options.ml" 1 0 -1
+)
+"options.ml" 143 4937 4948 "options.ml" 143 4937 4951
+type(
+  string list list ref
+)
+ident(
+  def rxs "options.ml" 143 4937 4952 "options.ml" 145 5027 5046
+)
+"options.ml" 143 4937 4952 "options.ml" 143 4937 4953
+type(
+  string
+)
+ident(
+  def x "options.ml" 144 4956 4958 "options.ml" 145 5027 5046
+)
+"options.ml" 144 4956 4962 "options.ml" 144 4956 4964
+type(
+  string list
+)
+ident(
+  def xs "options.ml" 145 5027 5029 "options.ml" 145 5027 5046
+)
+"options.ml" 144 4956 4967 "options.ml" 144 4956 5000
+type(
+  Lexing.lexbuf -> string list
+)
+ident(
+  ext_ref Lexers.comma_or_blank_sep_strings
+)
+"options.ml" 144 4956 5002 "options.ml" 144 4956 5020
+type(
+  string -> Lexing.lexbuf
+)
+ident(
+  ext_ref Lexing.from_string
+)
+"options.ml" 144 4956 5021 "options.ml" 144 4956 5022
+type(
+  string
+)
+ident(
+  int_ref x "options.ml" 143 4937 4952 "options.ml" 143 4937 4953
+)
+"options.ml" 144 4956 5001 "options.ml" 144 4956 5023
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"options.ml" 144 4956 4967 "options.ml" 144 4956 5023
+call(
+  stack
+)
+type(
+  string list
+)
+"options.ml" 145 5027 5029 "options.ml" 145 5027 5032
+type(
+  string list list ref
+)
+ident(
+  int_ref rxs "options.ml" 143 4937 4948 "options.ml" 143 4937 4951
+)
+"options.ml" 145 5027 5033 "options.ml" 145 5027 5035
+type(
+  string list list ref -> string list list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 145 5027 5036 "options.ml" 145 5027 5038
+type(
+  string list
+)
+ident(
+  int_ref xs "options.ml" 144 4956 4962 "options.ml" 144 4956 4964
+)
+"options.ml" 145 5027 5042 "options.ml" 145 5027 5043
+type(
+  string list list ref -> string list list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 145 5027 5043 "options.ml" 145 5027 5046
+type(
+  string list list ref
+)
+ident(
+  int_ref rxs "options.ml" 143 4937 4948 "options.ml" 143 4937 4951
+)
+"options.ml" 145 5027 5042 "options.ml" 145 5027 5046
+type(
+  string list list
+)
+"options.ml" 145 5027 5036 "options.ml" 145 5027 5046
+type(
+  string list list
+)
+"options.ml" 145 5027 5029 "options.ml" 145 5027 5046
+type(
+  unit
+)
+"options.ml" 144 4956 4958 "options.ml" 145 5027 5046
+type(
+  unit
+)
+"options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  def add_to' "options.ml" 151 5125 5125 "options.ml" 1 0 -1
+)
+"options.ml" 146 5047 5059 "options.ml" 146 5047 5062
+type(
+  string list list ref
+)
+ident(
+  def rxs "options.ml" 146 5047 5063 "options.ml" 150 5118 5124
+)
+"options.ml" 146 5047 5063 "options.ml" 146 5047 5064
+type(
+  string
+)
+ident(
+  def x "options.ml" 147 5067 5069 "options.ml" 150 5118 5124
+)
+"options.ml" 147 5067 5072 "options.ml" 147 5067 5073
+type(
+  string
+)
+ident(
+  int_ref x "options.ml" 146 5047 5063 "options.ml" 146 5047 5064
+)
+"options.ml" 147 5067 5074 "options.ml" 147 5067 5076
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"options.ml" 147 5067 5077 "options.ml" 147 5067 5082
+type(
+  string
+)
+ident(
+  int_ref dummy "options.ml" 128 4470 4474 "options.ml" 128 4470 4479
+)
+"options.ml" 147 5067 5072 "options.ml" 147 5067 5082
+type(
+  bool
+)
+"options.ml" 148 5088 5092 "options.ml" 148 5088 5095
+type(
+  string list list ref
+)
+ident(
+  int_ref rxs "options.ml" 146 5047 5059 "options.ml" 146 5047 5062
+)
+"options.ml" 148 5088 5096 "options.ml" 148 5088 5098
+type(
+  string list list ref -> string list list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 148 5088 5100 "options.ml" 148 5088 5101
+type(
+  string
+)
+ident(
+  int_ref x "options.ml" 146 5047 5063 "options.ml" 146 5047 5064
+)
+"options.ml" 148 5088 5099 "options.ml" 148 5088 5102
+type(
+  string list
+)
+"options.ml" 148 5088 5106 "options.ml" 148 5088 5107
+type(
+  string list list ref -> string list list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 148 5088 5107 "options.ml" 148 5088 5110
+type(
+  string list list ref
+)
+ident(
+  int_ref rxs "options.ml" 146 5047 5059 "options.ml" 146 5047 5062
+)
+"options.ml" 148 5088 5106 "options.ml" 148 5088 5110
+type(
+  string list list
+)
+"options.ml" 148 5088 5099 "options.ml" 148 5088 5110
+type(
+  string list list
+)
+"options.ml" 148 5088 5092 "options.ml" 148 5088 5110
+type(
+  unit
+)
+"options.ml" 150 5118 5122 "options.ml" 150 5118 5124
+type(
+  unit
+)
+"options.ml" 147 5067 5069 "options.ml" 150 5118 5124
+type(
+  unit
+)
+"options.ml" 151 5125 5129 "options.ml" 151 5125 5136
+type(
+  Command.spec ref -> Arg.spec
+)
+ident(
+  def set_cmd "options.ml" 152 5175 5175 "options.ml" 1 0 -1
+)
+"options.ml" 151 5125 5137 "options.ml" 151 5125 5141
+type(
+  Command.spec ref
+)
+ident(
+  def rcmd "options.ml" 151 5125 5144 "options.ml" 151 5125 5174
+)
+"options.ml" 151 5125 5156 "options.ml" 151 5125 5157
+type(
+  string
+)
+ident(
+  def s "options.ml" 151 5125 5161 "options.ml" 151 5125 5173
+)
+"options.ml" 151 5125 5161 "options.ml" 151 5125 5165
+type(
+  Command.spec ref
+)
+ident(
+  int_ref rcmd "options.ml" 151 5125 5137 "options.ml" 151 5125 5141
+)
+"options.ml" 151 5125 5166 "options.ml" 151 5125 5168
+type(
+  Command.spec ref -> Command.spec -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 151 5125 5172 "options.ml" 151 5125 5173
+type(
+  string
+)
+ident(
+  int_ref s "options.ml" 151 5125 5156 "options.ml" 151 5125 5157
+)
+"options.ml" 151 5125 5169 "options.ml" 151 5125 5173
+type(
+  Command.spec
+)
+"options.ml" 151 5125 5161 "options.ml" 151 5125 5173
+type(
+  unit
+)
+"options.ml" 151 5125 5151 "options.ml" 151 5125 5174
+type(
+  string -> unit
+)
+"options.ml" 151 5125 5144 "options.ml" 151 5125 5174
+type(
+  Arg.spec
+)
+"options.ml" 152 5175 5179 "options.ml" 152 5175 5192
+type(
+  string -> unit
+)
+ident(
+  def set_build_dir "options.ml" 158 5330 5330 "options.ml" 1 0 -1
+)
+"options.ml" 152 5175 5193 "options.ml" 152 5175 5194
+type(
+  string
+)
+ident(
+  def s "options.ml" 153 5197 5199 "options.ml" 157 5311 5329
+)
+"options.ml" 153 5197 5199 "options.ml" 153 5197 5209
+type(
+  bool ref
+)
+ident(
+  int_ref make_links "options.ml" 37 1365 1369 "options.ml" 37 1365 1379
+)
+"options.ml" 153 5197 5210 "options.ml" 153 5197 5212
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 153 5197 5213 "options.ml" 153 5197 5218
+type(
+  bool
+)
+"options.ml" 153 5197 5199 "options.ml" 153 5197 5218
+type(
+  unit
+)
+"options.ml" 154 5220 5225 "options.ml" 154 5220 5245
+type(
+  string -> bool
+)
+ident(
+  ext_ref Filename.is_relative
+)
+"options.ml" 154 5220 5246 "options.ml" 154 5220 5247
+type(
+  string
+)
+ident(
+  int_ref s "options.ml" 152 5175 5193 "options.ml" 152 5175 5194
+)
+"options.ml" 154 5220 5225 "options.ml" 154 5220 5247
+call(
+  stack
+)
+type(
+  bool
+)
+"options.ml" 155 5253 5257 "options.ml" 155 5253 5266
+type(
+  string ref
+)
+ident(
+  int_ref build_dir "options.ml" 26 1011 1015 "options.ml" 26 1011 1024
+)
+"options.ml" 155 5253 5267 "options.ml" 155 5253 5269
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 155 5253 5270 "options.ml" 155 5253 5285
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Filename.concat
+)
+"options.ml" 155 5253 5287 "options.ml" 155 5253 5297
+type(
+  unit -> string
+)
+ident(
+  ext_ref Sys.getcwd
+)
+"options.ml" 155 5253 5298 "options.ml" 155 5253 5300
+type(
+  unit
+)
+"options.ml" 155 5253 5286 "options.ml" 155 5253 5301
+type(
+  string
+)
+"options.ml" 155 5253 5302 "options.ml" 155 5253 5303
+type(
+  string
+)
+ident(
+  int_ref s "options.ml" 152 5175 5193 "options.ml" 152 5175 5194
+)
+"options.ml" 155 5253 5270 "options.ml" 155 5253 5303
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 155 5253 5257 "options.ml" 155 5253 5303
+type(
+  unit
+)
+"options.ml" 157 5311 5315 "options.ml" 157 5311 5324
+type(
+  string ref
+)
+ident(
+  int_ref build_dir "options.ml" 26 1011 1015 "options.ml" 26 1011 1024
+)
+"options.ml" 157 5311 5325 "options.ml" 157 5311 5327
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 157 5311 5328 "options.ml" 157 5311 5329
+type(
+  string
+)
+ident(
+  int_ref s "options.ml" 152 5175 5193 "options.ml" 152 5175 5194
+)
+"options.ml" 157 5311 5315 "options.ml" 157 5311 5329
+type(
+  unit
+)
+"options.ml" 154 5220 5222 "options.ml" 157 5311 5329
+type(
+  unit
+)
+"options.ml" 153 5197 5199 "options.ml" 157 5311 5329
+type(
+  unit
+)
+"options.ml" 158 5330 5334 "options.ml" 158 5330 5338
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  def spec "options.ml" 246 11879 11879 "options.ml" 1 0 -1
+)
+"options.ml" 158 5330 5341 "options.ml" 158 5330 5344
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ->
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 159 5347 5349 "options.ml" 159 5347 5358
+type(
+  (Arg.key * Arg.spec * Arg.doc) list -> (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref Arg.align
+)
+"options.ml" 161 5363 5366 "options.ml" 161 5363 5376
+type(
+  Arg.key
+)
+"options.ml" 161 5363 5388 "options.ml" 161 5363 5390
+type(
+  unit
+)
+"options.ml" 161 5363 5394 "options.ml" 161 5363 5407
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_endline
+)
+"options.ml" 161 5363 5408 "options.ml" 161 5363 5415
+type(
+  string
+)
+ident(
+  int_ref version "options.ml" 16 858 862 "options.ml" 16 858 869
+)
+"options.ml" 161 5363 5394 "options.ml" 161 5363 5415
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 161 5363 5417 "options.ml" 161 5363 5422
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"options.ml" 161 5363 5423 "options.ml" 161 5363 5430
+type(
+  exn
+)
+"options.ml" 161 5363 5417 "options.ml" 161 5363 5430
+type(
+  unit
+)
+"options.ml" 161 5363 5394 "options.ml" 161 5363 5430
+type(
+  unit
+)
+"options.ml" 161 5363 5383 "options.ml" 161 5363 5431
+type(
+  unit -> unit
+)
+"options.ml" 161 5363 5378 "options.ml" 161 5363 5431
+type(
+  Arg.spec
+)
+"options.ml" 161 5363 5433 "options.ml" 161 5363 5455
+type(
+  Arg.doc
+)
+"options.ml" 161 5363 5366 "options.ml" 161 5363 5455
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 162 5457 5460 "options.ml" 162 5457 5467
+type(
+  Arg.key
+)
+"options.ml" 162 5457 5479 "options.ml" 162 5457 5481
+type(
+  unit
+)
+"options.ml" 162 5457 5485 "options.ml" 162 5457 5498
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_endline
+)
+"options.ml" 162 5457 5499 "options.ml" 162 5457 5516
+type(
+  string
+)
+ident(
+  ext_ref Sys.ocaml_version
+)
+"options.ml" 162 5457 5485 "options.ml" 162 5457 5516
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 162 5457 5518 "options.ml" 162 5457 5523
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"options.ml" 162 5457 5524 "options.ml" 162 5457 5531
+type(
+  exn
+)
+"options.ml" 162 5457 5518 "options.ml" 162 5457 5531
+type(
+  unit
+)
+"options.ml" 162 5457 5485 "options.ml" 162 5457 5531
+type(
+  unit
+)
+"options.ml" 162 5457 5474 "options.ml" 162 5457 5532
+type(
+  unit -> unit
+)
+"options.ml" 162 5457 5469 "options.ml" 162 5457 5532
+type(
+  Arg.spec
+)
+"options.ml" 163 5534 5546 "options.ml" 163 5534 5575
+type(
+  Arg.doc
+)
+"options.ml" 162 5457 5460 "options.ml" 163 5534 5575
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 164 5577 5580 "options.ml" 164 5577 5588
+type(
+  Arg.key
+)
+"options.ml" 164 5577 5600 "options.ml" 164 5577 5602
+type(
+  unit
+)
+"options.ml" 164 5577 5606 "options.ml" 164 5577 5615
+type(
+  int ref
+)
+ident(
+  ext_ref Log.level
+)
+"options.ml" 164 5577 5616 "options.ml" 164 5577 5618
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 164 5577 5619 "options.ml" 164 5577 5620
+type(
+  int
+)
+"options.ml" 164 5577 5606 "options.ml" 164 5577 5620
+type(
+  unit
+)
+"options.ml" 164 5577 5595 "options.ml" 164 5577 5621
+type(
+  unit -> unit
+)
+"options.ml" 164 5577 5590 "options.ml" 164 5577 5621
+type(
+  Arg.spec
+)
+"options.ml" 164 5577 5623 "options.ml" 164 5577 5651
+type(
+  Arg.doc
+)
+"options.ml" 164 5577 5580 "options.ml" 164 5577 5651
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 165 5653 5656 "options.ml" 165 5653 5666
+type(
+  Arg.key
+)
+"options.ml" 165 5653 5677 "options.ml" 165 5653 5678
+type(
+  int
+)
+ident(
+  def i "options.ml" 165 5653 5682 "options.ml" 165 5653 5729
+)
+"options.ml" 165 5653 5682 "options.ml" 165 5653 5701
+type(
+  bool ref
+)
+ident(
+  ext_ref Log.classic_display
+)
+"options.ml" 165 5653 5702 "options.ml" 165 5653 5704
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 165 5653 5705 "options.ml" 165 5653 5709
+type(
+  bool
+)
+"options.ml" 165 5653 5682 "options.ml" 165 5653 5709
+type(
+  unit
+)
+"options.ml" 165 5653 5711 "options.ml" 165 5653 5720
+type(
+  int ref
+)
+ident(
+  ext_ref Log.level
+)
+"options.ml" 165 5653 5721 "options.ml" 165 5653 5723
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 165 5653 5724 "options.ml" 165 5653 5725
+type(
+  int
+)
+ident(
+  int_ref i "options.ml" 165 5653 5677 "options.ml" 165 5653 5678
+)
+"options.ml" 165 5653 5726 "options.ml" 165 5653 5727
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"options.ml" 165 5653 5728 "options.ml" 165 5653 5729
+type(
+  int
+)
+"options.ml" 165 5653 5724 "options.ml" 165 5653 5729
+type(
+  int
+)
+"options.ml" 165 5653 5711 "options.ml" 165 5653 5729
+type(
+  unit
+)
+"options.ml" 165 5653 5682 "options.ml" 165 5653 5729
+type(
+  unit
+)
+"options.ml" 165 5653 5672 "options.ml" 165 5653 5730
+type(
+  int -> unit
+)
+"options.ml" 165 5653 5668 "options.ml" 165 5653 5730
+type(
+  Arg.spec
+)
+"options.ml" 165 5653 5732 "options.ml" 165 5653 5765
+type(
+  Arg.doc
+)
+"options.ml" 165 5653 5656 "options.ml" 165 5653 5765
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 166 5767 5770 "options.ml" 166 5767 5786
+type(
+  Arg.key
+)
+"options.ml" 166 5767 5792 "options.ml" 166 5767 5810
+type(
+  bool ref
+)
+ident(
+  int_ref show_documentation "options.ml" 99 3542 3546 "options.ml" 99 3542 3564
+)
+"options.ml" 166 5767 5788 "options.ml" 166 5767 5810
+type(
+  Arg.spec
+)
+"options.ml" 166 5767 5812 "options.ml" 166 5767 5835
+type(
+  Arg.doc
+)
+"options.ml" 166 5767 5770 "options.ml" 166 5767 5835
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 167 5837 5840 "options.ml" 167 5837 5846
+type(
+  Arg.key
+)
+"options.ml" 167 5837 5859 "options.ml" 167 5837 5876
+type(
+  string ref
+)
+ident(
+  int_ref log_file_internal "options.ml" 123 4333 4337 "options.ml" 123 4333 4354
+)
+"options.ml" 167 5837 5848 "options.ml" 167 5837 5876
+type(
+  Arg.spec
+)
+"options.ml" 167 5837 5878 "options.ml" 167 5837 5899
+type(
+  Arg.doc
+)
+"options.ml" 167 5837 5840 "options.ml" 167 5837 5899
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 168 5901 5904 "options.ml" 168 5901 5913
+type(
+  Arg.key
+)
+"options.ml" 168 5901 5925 "options.ml" 168 5901 5927
+type(
+  unit
+)
+"options.ml" 168 5901 5931 "options.ml" 168 5901 5948
+type(
+  string ref
+)
+ident(
+  int_ref log_file_internal "options.ml" 123 4333 4337 "options.ml" 123 4333 4354
+)
+"options.ml" 168 5901 5949 "options.ml" 168 5901 5951
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 168 5901 5952 "options.ml" 168 5901 5954
+type(
+  string
+)
+"options.ml" 168 5901 5931 "options.ml" 168 5901 5954
+type(
+  unit
+)
+"options.ml" 168 5901 5920 "options.ml" 168 5901 5955
+type(
+  unit -> unit
+)
+"options.ml" 168 5901 5915 "options.ml" 168 5901 5955
+type(
+  Arg.spec
+)
+"options.ml" 168 5901 5957 "options.ml" 168 5901 5971
+type(
+  Arg.doc
+)
+"options.ml" 168 5901 5904 "options.ml" 168 5901 5971
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 169 5973 5976 "options.ml" 169 5973 5984
+type(
+  Arg.key
+)
+"options.ml" 169 5973 5990 "options.ml" 169 5973 6000
+type(
+  bool ref
+)
+ident(
+  int_ref must_clean "options.ml" 98 3515 3519 "options.ml" 98 3515 3529
+)
+"options.ml" 169 5973 5986 "options.ml" 169 5973 6000
+type(
+  Arg.spec
+)
+"options.ml" 169 5973 6002 "options.ml" 169 5973 6054
+type(
+  Arg.doc
+)
+"options.ml" 169 5973 5976 "options.ml" 169 5973 6054
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 170 6056 6059 "options.ml" 170 6056 6063
+type(
+  Arg.key
+)
+"options.ml" 170 6056 6069 "options.ml" 170 6056 6078
+type(
+  bool ref
+)
+ident(
+  int_ref recursive "options.ml" 100 3577 3581 "options.ml" 100 3577 3590
+)
+"options.ml" 170 6056 6065 "options.ml" 170 6056 6078
+type(
+  Arg.spec
+)
+"options.ml" 170 6056 6080 "options.ml" 170 6056 6131
+type(
+  Arg.doc
+)
+"options.ml" 170 6056 6059 "options.ml" 170 6056 6131
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 172 6134 6137 "options.ml" 172 6134 6141
+type(
+  Arg.key
+)
+"options.ml" 172 6134 6151 "options.ml" 172 6134 6158
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 172 6134 6159 "options.ml" 172 6134 6174
+type(
+  string list list ref
+)
+ident(
+  int_ref my_include_dirs "options.ml" 125 4369 4373 "options.ml" 125 4369 4388
+)
+"options.ml" 172 6134 6150 "options.ml" 172 6134 6175
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 172 6134 6143 "options.ml" 172 6134 6175
+type(
+  Arg.spec
+)
+"options.ml" 172 6134 6177 "options.ml" 172 6134 6212
+type(
+  Arg.doc
+)
+"options.ml" 172 6134 6137 "options.ml" 172 6134 6212
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 173 6214 6217 "options.ml" 173 6214 6222
+type(
+  Arg.key
+)
+"options.ml" 173 6214 6232 "options.ml" 173 6214 6238
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to "options.ml" 143 4937 4941 "options.ml" 143 4937 4947
+)
+"options.ml" 173 6214 6239 "options.ml" 173 6214 6254
+type(
+  string list list ref
+)
+ident(
+  int_ref my_include_dirs "options.ml" 125 4369 4373 "options.ml" 125 4369 4388
+)
+"options.ml" 173 6214 6231 "options.ml" 173 6214 6255
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 173 6214 6224 "options.ml" 173 6214 6255
+type(
+  Arg.spec
+)
+"options.ml" 173 6214 6257 "options.ml" 173 6214 6332
+type(
+  Arg.doc
+)
+"options.ml" 173 6214 6217 "options.ml" 173 6214 6332
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 174 6334 6337 "options.ml" 174 6334 6341
+type(
+  Arg.key
+)
+"options.ml" 174 6334 6351 "options.ml" 174 6334 6358
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 174 6334 6359 "options.ml" 174 6334 6374
+type(
+  string list list ref
+)
+ident(
+  int_ref my_exclude_dirs "options.ml" 126 4425 4429 "options.ml" 126 4425 4444
+)
+"options.ml" 174 6334 6350 "options.ml" 174 6334 6375
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 174 6334 6343 "options.ml" 174 6334 6375
+type(
+  Arg.spec
+)
+"options.ml" 174 6334 6377 "options.ml" 174 6334 6405
+type(
+  Arg.doc
+)
+"options.ml" 174 6334 6337 "options.ml" 174 6334 6405
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 175 6407 6410 "options.ml" 175 6407 6415
+type(
+  Arg.key
+)
+"options.ml" 175 6407 6425 "options.ml" 175 6407 6431
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to "options.ml" 143 4937 4941 "options.ml" 143 4937 4947
+)
+"options.ml" 175 6407 6432 "options.ml" 175 6407 6447
+type(
+  string list list ref
+)
+ident(
+  int_ref my_exclude_dirs "options.ml" 126 4425 4429 "options.ml" 126 4425 4444
+)
+"options.ml" 175 6407 6424 "options.ml" 175 6407 6448
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 175 6407 6417 "options.ml" 175 6407 6448
+type(
+  Arg.spec
+)
+"options.ml" 175 6407 6450 "options.ml" 175 6407 6469
+type(
+  Arg.doc
+)
+"options.ml" 175 6407 6410 "options.ml" 175 6407 6469
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 177 6472 6475 "options.ml" 177 6472 6481
+type(
+  Arg.key
+)
+"options.ml" 177 6472 6491 "options.ml" 177 6472 6498
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 177 6472 6499 "options.ml" 177 6472 6518
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_libs_internal "options.ml" 107 3785 3789 "options.ml" 107 3785 3808
+)
+"options.ml" 177 6472 6490 "options.ml" 177 6472 6519
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 177 6472 6483 "options.ml" 177 6472 6519
+type(
+  Arg.spec
+)
+"options.ml" 177 6472 6521 "options.ml" 177 6472 6556
+type(
+  Arg.doc
+)
+"options.ml" 177 6472 6475 "options.ml" 177 6472 6556
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 178 6558 6561 "options.ml" 178 6558 6568
+type(
+  Arg.key
+)
+"options.ml" 178 6558 6578 "options.ml" 178 6558 6584
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to "options.ml" 143 4937 4941 "options.ml" 143 4937 4947
+)
+"options.ml" 178 6558 6585 "options.ml" 178 6558 6604
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_libs_internal "options.ml" 107 3785 3789 "options.ml" 107 3785 3808
+)
+"options.ml" 178 6558 6577 "options.ml" 178 6558 6605
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 178 6558 6570 "options.ml" 178 6558 6605
+type(
+  Arg.spec
+)
+"options.ml" 178 6558 6607 "options.ml" 178 6558 6626
+type(
+  Arg.doc
+)
+"options.ml" 178 6558 6561 "options.ml" 178 6558 6626
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 179 6628 6631 "options.ml" 179 6628 6637
+type(
+  Arg.key
+)
+"options.ml" 179 6628 6647 "options.ml" 179 6628 6654
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 179 6628 6655 "options.ml" 179 6628 6674
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_mods_internal "options.ml" 108 3818 3822 "options.ml" 108 3818 3841
+)
+"options.ml" 179 6628 6646 "options.ml" 179 6628 6675
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 179 6628 6639 "options.ml" 179 6628 6675
+type(
+  Arg.spec
+)
+"options.ml" 179 6628 6677 "options.ml" 179 6628 6713
+type(
+  Arg.doc
+)
+"options.ml" 179 6628 6631 "options.ml" 179 6628 6713
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 180 6715 6718 "options.ml" 180 6715 6725
+type(
+  Arg.key
+)
+"options.ml" 180 6715 6735 "options.ml" 180 6715 6741
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to "options.ml" 143 4937 4941 "options.ml" 143 4937 4947
+)
+"options.ml" 180 6715 6742 "options.ml" 180 6715 6761
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_mods_internal "options.ml" 108 3818 3822 "options.ml" 108 3818 3841
+)
+"options.ml" 180 6715 6734 "options.ml" 180 6715 6762
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 180 6715 6727 "options.ml" 180 6715 6762
+type(
+  Arg.spec
+)
+"options.ml" 180 6715 6764 "options.ml" 180 6715 6785
+type(
+  Arg.doc
+)
+"options.ml" 180 6715 6718 "options.ml" 180 6715 6785
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 181 6787 6790 "options.ml" 181 6787 6796
+type(
+  Arg.key
+)
+"options.ml" 181 6787 6806 "options.ml" 181 6787 6813
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 181 6787 6814 "options.ml" 181 6787 6833
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_pkgs_internal "options.ml" 109 3851 3855 "options.ml" 109 3851 3874
+)
+"options.ml" 181 6787 6805 "options.ml" 181 6787 6834
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 181 6787 6798 "options.ml" 181 6787 6834
+type(
+  Arg.spec
+)
+"options.ml" 181 6787 6836 "options.ml" 181 6787 6882
+type(
+  Arg.doc
+)
+"options.ml" 181 6787 6790 "options.ml" 181 6787 6882
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 182 6884 6887 "options.ml" 182 6884 6894
+type(
+  Arg.key
+)
+"options.ml" 182 6884 6904 "options.ml" 182 6884 6910
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to "options.ml" 143 4937 4941 "options.ml" 143 4937 4947
+)
+"options.ml" 182 6884 6911 "options.ml" 182 6884 6930
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_pkgs_internal "options.ml" 109 3851 3855 "options.ml" 109 3851 3874
+)
+"options.ml" 182 6884 6903 "options.ml" 182 6884 6931
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 182 6884 6896 "options.ml" 182 6884 6931
+type(
+  Arg.spec
+)
+"options.ml" 182 6884 6933 "options.ml" 182 6884 6955
+type(
+  Arg.doc
+)
+"options.ml" 182 6884 6887 "options.ml" 182 6884 6955
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 183 6957 6960 "options.ml" 183 6957 6970
+type(
+  Arg.key
+)
+"options.ml" 183 6957 6980 "options.ml" 183 6957 6987
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 183 6957 6988 "options.ml" 183 6957 7007
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_pkgs_internal "options.ml" 109 3851 3855 "options.ml" 109 3851 3874
+)
+"options.ml" 183 6957 6979 "options.ml" 183 6957 7008
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 183 6957 6972 "options.ml" 183 6957 7008
+type(
+  Arg.spec
+)
+"options.ml" 183 6957 7010 "options.ml" 183 6957 7028
+type(
+  Arg.doc
+)
+"options.ml" 183 6957 6960 "options.ml" 183 6957 7028
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 184 7030 7033 "options.ml" 184 7030 7042
+type(
+  Arg.key
+)
+"options.ml" 184 7030 7056 "options.ml" 184 7030 7062
+type(
+  string
+)
+ident(
+  def syntax "options.ml" 184 7030 7066 "options.ml" 184 7030 7093
+)
+"options.ml" 184 7030 7066 "options.ml" 184 7030 7078
+type(
+  string option ref
+)
+ident(
+  int_ref ocaml_syntax "options.ml" 110 3884 3888 "options.ml" 110 3884 3900
+)
+"options.ml" 184 7030 7079 "options.ml" 184 7030 7081
+type(
+  string option ref -> string option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 184 7030 7087 "options.ml" 184 7030 7093
+type(
+  string
+)
+ident(
+  int_ref syntax "options.ml" 184 7030 7056 "options.ml" 184 7030 7062
+)
+"options.ml" 184 7030 7082 "options.ml" 184 7030 7093
+type(
+  string option
+)
+"options.ml" 184 7030 7066 "options.ml" 184 7030 7093
+type(
+  unit
+)
+"options.ml" 184 7030 7051 "options.ml" 184 7030 7094
+type(
+  string -> unit
+)
+"options.ml" 184 7030 7044 "options.ml" 184 7030 7094
+type(
+  Arg.spec
+)
+"options.ml" 184 7030 7096 "options.ml" 184 7030 7137
+type(
+  Arg.doc
+)
+"options.ml" 184 7030 7033 "options.ml" 184 7030 7137
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 185 7139 7142 "options.ml" 185 7139 7150
+type(
+  Arg.key
+)
+"options.ml" 185 7139 7160 "options.ml" 185 7139 7167
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 185 7139 7168 "options.ml" 185 7139 7189
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_lflags_internal "options.ml" 111 3912 3916 "options.ml" 111 3912 3937
+)
+"options.ml" 185 7139 7159 "options.ml" 185 7139 7190
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 185 7139 7152 "options.ml" 185 7139 7190
+type(
+  Arg.spec
+)
+"options.ml" 185 7139 7192 "options.ml" 185 7139 7225
+type(
+  Arg.doc
+)
+"options.ml" 185 7139 7142 "options.ml" 185 7139 7225
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 186 7227 7230 "options.ml" 186 7227 7239
+type(
+  Arg.key
+)
+"options.ml" 186 7227 7249 "options.ml" 186 7227 7255
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to "options.ml" 143 4937 4941 "options.ml" 143 4937 4947
+)
+"options.ml" 186 7227 7256 "options.ml" 186 7227 7277
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_lflags_internal "options.ml" 111 3912 3916 "options.ml" 111 3912 3937
+)
+"options.ml" 186 7227 7248 "options.ml" 186 7227 7278
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 186 7227 7241 "options.ml" 186 7227 7278
+type(
+  Arg.spec
+)
+"options.ml" 186 7227 7280 "options.ml" 186 7227 7299
+type(
+  Arg.doc
+)
+"options.ml" 186 7227 7230 "options.ml" 186 7227 7299
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 187 7301 7304 "options.ml" 187 7301 7312
+type(
+  Arg.key
+)
+"options.ml" 187 7301 7322 "options.ml" 187 7301 7329
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 187 7301 7330 "options.ml" 187 7301 7351
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_cflags_internal "options.ml" 112 3947 3951 "options.ml" 112 3947 3972
+)
+"options.ml" 187 7301 7321 "options.ml" 187 7301 7352
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 187 7301 7314 "options.ml" 187 7301 7352
+type(
+  Arg.spec
+)
+"options.ml" 187 7301 7354 "options.ml" 187 7301 7390
+type(
+  Arg.doc
+)
+"options.ml" 187 7301 7304 "options.ml" 187 7301 7390
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 188 7392 7395 "options.ml" 188 7392 7404
+type(
+  Arg.key
+)
+"options.ml" 188 7392 7414 "options.ml" 188 7392 7420
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to "options.ml" 143 4937 4941 "options.ml" 143 4937 4947
+)
+"options.ml" 188 7392 7421 "options.ml" 188 7392 7442
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_cflags_internal "options.ml" 112 3947 3951 "options.ml" 112 3947 3972
+)
+"options.ml" 188 7392 7413 "options.ml" 188 7392 7443
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 188 7392 7406 "options.ml" 188 7392 7443
+type(
+  Arg.spec
+)
+"options.ml" 188 7392 7445 "options.ml" 188 7392 7464
+type(
+  Arg.doc
+)
+"options.ml" 188 7392 7395 "options.ml" 188 7392 7464
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 189 7466 7469 "options.ml" 189 7466 7479
+type(
+  Arg.key
+)
+"options.ml" 189 7466 7489 "options.ml" 189 7466 7496
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 189 7466 7497 "options.ml" 189 7466 7520
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_docflags_internal "options.ml" 113 3982 3986 "options.ml" 113 3982 4009
+)
+"options.ml" 189 7466 7488 "options.ml" 189 7466 7521
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 189 7466 7481 "options.ml" 189 7466 7521
+type(
+  Arg.spec
+)
+"options.ml" 189 7466 7523 "options.ml" 189 7466 7553
+type(
+  Arg.doc
+)
+"options.ml" 189 7466 7469 "options.ml" 189 7466 7553
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 190 7555 7558 "options.ml" 190 7555 7569
+type(
+  Arg.key
+)
+"options.ml" 190 7555 7579 "options.ml" 190 7555 7585
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to "options.ml" 143 4937 4941 "options.ml" 143 4937 4947
+)
+"options.ml" 190 7555 7586 "options.ml" 190 7555 7609
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_docflags_internal "options.ml" 113 3982 3986 "options.ml" 113 3982 4009
+)
+"options.ml" 190 7555 7578 "options.ml" 190 7555 7610
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 190 7555 7571 "options.ml" 190 7555 7610
+type(
+  Arg.spec
+)
+"options.ml" 190 7555 7612 "options.ml" 190 7555 7631
+type(
+  Arg.doc
+)
+"options.ml" 190 7555 7558 "options.ml" 190 7555 7631
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 191 7633 7636 "options.ml" 191 7633 7647
+type(
+  Arg.key
+)
+"options.ml" 191 7633 7657 "options.ml" 191 7633 7664
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 191 7633 7665 "options.ml" 191 7633 7689
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_yaccflags_internal "options.ml" 115 4055 4059 "options.ml" 115 4055 4083
+)
+"options.ml" 191 7633 7656 "options.ml" 191 7633 7690
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 191 7633 7649 "options.ml" 191 7633 7690
+type(
+  Arg.spec
+)
+"options.ml" 191 7633 7692 "options.ml" 191 7633 7723
+type(
+  Arg.doc
+)
+"options.ml" 191 7633 7636 "options.ml" 191 7633 7723
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 192 7725 7728 "options.ml" 192 7725 7740
+type(
+  Arg.key
+)
+"options.ml" 192 7725 7750 "options.ml" 192 7725 7756
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to "options.ml" 143 4937 4941 "options.ml" 143 4937 4947
+)
+"options.ml" 192 7725 7757 "options.ml" 192 7725 7781
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_yaccflags_internal "options.ml" 115 4055 4059 "options.ml" 115 4055 4083
+)
+"options.ml" 192 7725 7749 "options.ml" 192 7725 7782
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 192 7725 7742 "options.ml" 192 7725 7782
+type(
+  Arg.spec
+)
+"options.ml" 192 7725 7784 "options.ml" 192 7725 7803
+type(
+  Arg.doc
+)
+"options.ml" 192 7725 7728 "options.ml" 192 7725 7803
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 193 7805 7808 "options.ml" 193 7805 7818
+type(
+  Arg.key
+)
+"options.ml" 193 7805 7828 "options.ml" 193 7805 7835
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 193 7805 7836 "options.ml" 193 7805 7859
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_lexflags_internal "options.ml" 116 4093 4097 "options.ml" 116 4093 4120
+)
+"options.ml" 193 7805 7827 "options.ml" 193 7805 7860
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 193 7805 7820 "options.ml" 193 7805 7860
+type(
+  Arg.spec
+)
+"options.ml" 193 7805 7862 "options.ml" 193 7805 7892
+type(
+  Arg.doc
+)
+"options.ml" 193 7805 7808 "options.ml" 193 7805 7892
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 194 7894 7897 "options.ml" 194 7894 7908
+type(
+  Arg.key
+)
+"options.ml" 194 7894 7918 "options.ml" 194 7894 7924
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to "options.ml" 143 4937 4941 "options.ml" 143 4937 4947
+)
+"options.ml" 194 7894 7925 "options.ml" 194 7894 7948
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_lexflags_internal "options.ml" 116 4093 4097 "options.ml" 116 4093 4120
+)
+"options.ml" 194 7894 7917 "options.ml" 194 7894 7949
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 194 7894 7910 "options.ml" 194 7894 7949
+type(
+  Arg.spec
+)
+"options.ml" 194 7894 7951 "options.ml" 194 7894 7970
+type(
+  Arg.doc
+)
+"options.ml" 194 7894 7897 "options.ml" 194 7894 7970
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 195 7972 7975 "options.ml" 195 7972 7984
+type(
+  Arg.key
+)
+"options.ml" 195 7972 7994 "options.ml" 195 7972 8001
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 195 7972 8002 "options.ml" 195 7972 8024
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_ppflags_internal "options.ml" 114 4019 4023 "options.ml" 114 4019 4045
+)
+"options.ml" 195 7972 7993 "options.ml" 195 7972 8025
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 195 7972 7986 "options.ml" 195 7972 8025
+type(
+  Arg.spec
+)
+"options.ml" 195 7972 8027 "options.ml" 195 7972 8068
+type(
+  Arg.doc
+)
+"options.ml" 195 7972 7975 "options.ml" 195 7972 8068
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 196 8070 8073 "options.ml" 196 8070 8078
+type(
+  Arg.key
+)
+"options.ml" 196 8070 8088 "options.ml" 196 8070 8094
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to "options.ml" 143 4937 4941 "options.ml" 143 4937 4947
+)
+"options.ml" 196 8070 8095 "options.ml" 196 8070 8117
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_ppflags_internal "options.ml" 114 4019 4023 "options.ml" 114 4019 4045
+)
+"options.ml" 196 8070 8087 "options.ml" 196 8070 8118
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 196 8070 8080 "options.ml" 196 8070 8118
+type(
+  Arg.spec
+)
+"options.ml" 196 8070 8120 "options.ml" 196 8070 8139
+type(
+  Arg.doc
+)
+"options.ml" 196 8070 8073 "options.ml" 196 8070 8139
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 197 8141 8144 "options.ml" 197 8141 8150
+type(
+  Arg.key
+)
+"options.ml" 197 8141 8160 "options.ml" 197 8141 8167
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 197 8141 8168 "options.ml" 197 8141 8181
+type(
+  string list list ref
+)
+ident(
+  int_ref tags_internal "options.ml" 119 4199 4203 "options.ml" 119 4199 4216
+)
+"options.ml" 197 8141 8159 "options.ml" 197 8141 8182
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 197 8141 8152 "options.ml" 197 8141 8182
+type(
+  Arg.spec
+)
+"options.ml" 197 8141 8184 "options.ml" 197 8141 8211
+type(
+  Arg.doc
+)
+"options.ml" 197 8141 8144 "options.ml" 197 8141 8211
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 198 8213 8216 "options.ml" 198 8213 8223
+type(
+  Arg.key
+)
+"options.ml" 198 8213 8233 "options.ml" 198 8213 8239
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to "options.ml" 143 4937 4941 "options.ml" 143 4937 4947
+)
+"options.ml" 198 8213 8240 "options.ml" 198 8213 8253
+type(
+  string list list ref
+)
+ident(
+  int_ref tags_internal "options.ml" 119 4199 4203 "options.ml" 119 4199 4216
+)
+"options.ml" 198 8213 8232 "options.ml" 198 8213 8254
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 198 8213 8225 "options.ml" 198 8213 8254
+type(
+  Arg.spec
+)
+"options.ml" 198 8213 8256 "options.ml" 198 8213 8274
+type(
+  Arg.doc
+)
+"options.ml" 198 8213 8216 "options.ml" 198 8213 8274
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 199 8276 8279 "options.ml" 199 8276 8292
+type(
+  Arg.key
+)
+"options.ml" 199 8276 8302 "options.ml" 199 8276 8309
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 199 8276 8310 "options.ml" 199 8276 8330
+type(
+  string list list ref
+)
+ident(
+  int_ref plugin_tags_internal "options.ml" 122 4299 4303 "options.ml" 122 4299 4323
+)
+"options.ml" 199 8276 8301 "options.ml" 199 8276 8331
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 199 8276 8294 "options.ml" 199 8276 8331
+type(
+  Arg.spec
+)
+"options.ml" 199 8276 8333 "options.ml" 199 8276 8395
+type(
+  Arg.doc
+)
+"options.ml" 199 8276 8279 "options.ml" 199 8276 8395
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 200 8397 8400 "options.ml" 200 8397 8414
+type(
+  Arg.key
+)
+"options.ml" 200 8397 8424 "options.ml" 200 8397 8430
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to "options.ml" 143 4937 4941 "options.ml" 143 4937 4947
+)
+"options.ml" 200 8397 8431 "options.ml" 200 8397 8451
+type(
+  string list list ref
+)
+ident(
+  int_ref plugin_tags_internal "options.ml" 122 4299 4303 "options.ml" 122 4299 4323
+)
+"options.ml" 200 8397 8423 "options.ml" 200 8397 8452
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 200 8397 8416 "options.ml" 200 8397 8452
+type(
+  Arg.spec
+)
+"options.ml" 200 8397 8454 "options.ml" 200 8397 8472
+type(
+  Arg.doc
+)
+"options.ml" 200 8397 8400 "options.ml" 200 8397 8472
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 201 8474 8477 "options.ml" 201 8474 8488
+type(
+  Arg.key
+)
+"options.ml" 201 8474 8498 "options.ml" 201 8474 8505
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 201 8474 8506 "options.ml" 201 8474 8524
+type(
+  string list list ref
+)
+ident(
+  int_ref tag_lines_internal "options.ml" 120 4235 4239 "options.ml" 120 4235 4257
+)
+"options.ml" 201 8474 8497 "options.ml" 201 8474 8525
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 201 8474 8490 "options.ml" 201 8474 8525
+type(
+  Arg.spec
+)
+"options.ml" 201 8474 8527 "options.ml" 201 8474 8570
+type(
+  Arg.doc
+)
+"options.ml" 201 8474 8477 "options.ml" 201 8474 8570
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 202 8572 8575 "options.ml" 202 8572 8587
+type(
+  Arg.key
+)
+"options.ml" 202 8572 8597 "options.ml" 202 8572 8604
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 202 8572 8605 "options.ml" 202 8572 8623
+type(
+  string list list ref
+)
+ident(
+  int_ref show_tags_internal "options.ml" 121 4267 4271 "options.ml" 121 4267 4289
+)
+"options.ml" 202 8572 8596 "options.ml" 202 8572 8624
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 202 8572 8589 "options.ml" 202 8572 8624
+type(
+  Arg.spec
+)
+"options.ml" 202 8572 8626 "options.ml" 202 8572 8674
+type(
+  Arg.doc
+)
+"options.ml" 202 8572 8575 "options.ml" 202 8572 8674
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 204 8677 8680 "options.ml" 204 8677 8689
+type(
+  Arg.key
+)
+"options.ml" 204 8677 8699 "options.ml" 204 8677 8705
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to "options.ml" 143 4937 4941 "options.ml" 143 4937 4947
+)
+"options.ml" 204 8677 8706 "options.ml" 204 8677 8726
+type(
+  string list list ref
+)
+ident(
+  int_ref ignore_list_internal "options.ml" 118 4165 4169 "options.ml" 118 4165 4189
+)
+"options.ml" 204 8677 8698 "options.ml" 204 8677 8727
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 204 8677 8691 "options.ml" 204 8677 8727
+type(
+  Arg.spec
+)
+"options.ml" 204 8677 8729 "options.ml" 204 8677 8776
+type(
+  Arg.doc
+)
+"options.ml" 204 8677 8680 "options.ml" 204 8677 8776
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 205 8778 8781 "options.ml" 205 8778 8792
+type(
+  Arg.key
+)
+"options.ml" 205 8778 8800 "options.ml" 205 8778 8810
+type(
+  bool ref
+)
+ident(
+  int_ref make_links "options.ml" 37 1365 1369 "options.ml" 37 1365 1379
+)
+"options.ml" 205 8778 8794 "options.ml" 205 8778 8810
+type(
+  Arg.spec
+)
+"options.ml" 205 8778 8812 "options.ml" 205 8778 8857
+type(
+  Arg.doc
+)
+"options.ml" 205 8778 8781 "options.ml" 205 8778 8857
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 206 8859 8862 "options.ml" 206 8859 8872
+type(
+  Arg.key
+)
+"options.ml" 206 8859 8880 "options.ml" 206 8859 8891
+type(
+  bool ref
+)
+ident(
+  int_ref ignore_auto "options.ml" 33 1259 1263 "options.ml" 33 1259 1274
+)
+"options.ml" 206 8859 8874 "options.ml" 206 8859 8891
+type(
+  Arg.spec
+)
+"options.ml" 206 8859 8893 "options.ml" 206 8859 8965
+type(
+  Arg.doc
+)
+"options.ml" 206 8859 8862 "options.ml" 206 8859 8965
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 207 8967 8970 "options.ml" 207 8967 8983
+type(
+  Arg.key
+)
+"options.ml" 207 8967 8991 "options.ml" 207 8967 8998
+type(
+  bool ref
+)
+ident(
+  int_ref hygiene "options.ml" 32 1236 1240 "options.ml" 32 1236 1247
+)
+"options.ml" 207 8967 8985 "options.ml" 207 8967 8998
+type(
+  Arg.spec
+)
+"options.ml" 207 8967 9000 "options.ml" 207 8967 9033
+type(
+  Arg.doc
+)
+"options.ml" 207 8967 8970 "options.ml" 207 8967 9033
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 208 9035 9038 "options.ml" 208 9035 9050
+type(
+  Arg.key
+)
+"options.ml" 208 9035 9058 "options.ml" 208 9035 9064
+type(
+  bool ref
+)
+ident(
+  int_ref plugin "options.ml" 34 1286 1290 "options.ml" 34 1286 1296
+)
+"options.ml" 208 9035 9052 "options.ml" 208 9035 9064
+type(
+  Arg.spec
+)
+"options.ml" 208 9035 9066 "options.ml" 208 9035 9096
+type(
+  Arg.doc
+)
+"options.ml" 208 9035 9038 "options.ml" 208 9035 9096
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 209 9098 9101 "options.ml" 209 9098 9113
+type(
+  Arg.key
+)
+"options.ml" 209 9098 9119 "options.ml" 209 9098 9127
+type(
+  bool ref
+)
+ident(
+  int_ref nostdlib "options.ml" 38 1391 1395 "options.ml" 38 1391 1403
+)
+"options.ml" 209 9098 9115 "options.ml" 209 9098 9127
+type(
+  Arg.spec
+)
+"options.ml" 209 9098 9129 "options.ml" 209 9098 9159
+type(
+  Arg.doc
+)
+"options.ml" 209 9098 9101 "options.ml" 209 9098 9159
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 210 9161 9164 "options.ml" 210 9161 9184
+type(
+  Arg.key
+)
+"options.ml" 210 9161 9192 "options.ml" 210 9161 9204
+type(
+  bool ref
+)
+ident(
+  int_ref catch_errors "options.ml" 40 1443 1447 "options.ml" 40 1443 1459
+)
+"options.ml" 210 9161 9186 "options.ml" 210 9161 9204
+type(
+  Arg.spec
+)
+"options.ml" 210 9161 9206 "options.ml" 210 9161 9278
+type(
+  Arg.doc
+)
+"options.ml" 210 9161 9164 "options.ml" 210 9161 9278
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 211 9280 9283 "options.ml" 211 9280 9297
+type(
+  Arg.key
+)
+"options.ml" 211 9280 9303 "options.ml" 211 9280 9314
+type(
+  bool ref
+)
+ident(
+  int_ref just_plugin "options.ml" 35 1308 1312 "options.ml" 35 1308 1323
+)
+"options.ml" 211 9280 9299 "options.ml" 211 9280 9314
+type(
+  Arg.spec
+)
+"options.ml" 211 9280 9316 "options.ml" 211 9280 9345
+type(
+  Arg.doc
+)
+"options.ml" 211 9280 9283 "options.ml" 211 9280 9345
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 212 9347 9350 "options.ml" 212 9347 9364
+type(
+  Arg.key
+)
+"options.ml" 212 9347 9372 "options.ml" 212 9347 9385
+type(
+  bool ref
+)
+ident(
+  int_ref native_plugin "options.ml" 36 1336 1340 "options.ml" 36 1336 1353
+)
+"options.ml" 212 9347 9366 "options.ml" 212 9347 9385
+type(
+  Arg.spec
+)
+"options.ml" 212 9347 9387 "options.ml" 212 9347 9428
+type(
+  Arg.doc
+)
+"options.ml" 212 9347 9350 "options.ml" 212 9347 9428
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 213 9430 9433 "options.ml" 213 9430 9449
+type(
+  Arg.key
+)
+"options.ml" 213 9430 9458 "options.ml" 213 9430 9464
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"options.ml" 213 9430 9451 "options.ml" 213 9430 9464
+type(
+  Arg.spec
+)
+"options.ml" 213 9430 9466 "options.ml" 213 9430 9507
+type(
+  Arg.doc
+)
+"options.ml" 213 9430 9433 "options.ml" 213 9430 9507
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 214 9509 9512 "options.ml" 214 9509 9534
+type(
+  Arg.key
+)
+"options.ml" 214 9509 9547 "options.ml" 214 9509 9566
+type(
+  string ref
+)
+ident(
+  int_ref sanitization_script "options.ml" 31 1192 1196 "options.ml" 31 1192 1215
+)
+"options.ml" 214 9509 9536 "options.ml" 214 9509 9566
+type(
+  Arg.spec
+)
+"options.ml" 214 9509 9568 "options.ml" 214 9509 9629
+type(
+  Arg.doc
+)
+"options.ml" 214 9509 9512 "options.ml" 214 9509 9629
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 215 9631 9634 "options.ml" 215 9631 9648
+type(
+  Arg.key
+)
+"options.ml" 215 9631 9656 "options.ml" 215 9631 9664
+type(
+  bool ref
+)
+ident(
+  int_ref sanitize "options.ml" 30 1168 1172 "options.ml" 30 1168 1180
+)
+"options.ml" 215 9631 9650 "options.ml" 215 9631 9664
+type(
+  Arg.spec
+)
+"options.ml" 215 9631 9666 "options.ml" 215 9631 9704
+type(
+  Arg.doc
+)
+"options.ml" 215 9631 9634 "options.ml" 215 9631 9704
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 216 9706 9709 "options.ml" 216 9706 9737
+type(
+  Arg.key
+)
+"options.ml" 216 9706 9743 "options.ml" 216 9706 9768
+type(
+  bool ref
+)
+ident(
+  int_ref nothing_should_be_rebuilt "options.ml" 29 1126 1130 "options.ml" 29 1126 1155
+)
+"options.ml" 216 9706 9739 "options.ml" 216 9706 9768
+type(
+  Arg.spec
+)
+"options.ml" 216 9706 9770 "options.ml" 216 9706 9810
+type(
+  Arg.doc
+)
+"options.ml" 216 9706 9709 "options.ml" 216 9706 9810
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 217 9812 9815 "options.ml" 217 9812 9833
+type(
+  Arg.key
+)
+"options.ml" 217 9812 9839 "options.ml" 217 9812 9858
+type(
+  bool ref
+)
+ident(
+  ext_ref Log.classic_display
+)
+"options.ml" 217 9812 9835 "options.ml" 217 9812 9858
+type(
+  Arg.spec
+)
+"options.ml" 217 9812 9860 "options.ml" 217 9812 9910
+type(
+  Arg.doc
+)
+"options.ml" 217 9812 9815 "options.ml" 217 9812 9910
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 218 9912 9915 "options.ml" 218 9912 9928
+type(
+  Arg.key
+)
+"options.ml" 218 9912 9934 "options.ml" 218 9912 9944
+type(
+  bool ref
+)
+ident(
+  int_ref use_menhir "options.ml" 39 1416 1420 "options.ml" 39 1416 1430
+)
+"options.ml" 218 9912 9930 "options.ml" 218 9912 9944
+type(
+  Arg.spec
+)
+"options.ml" 218 9912 9946 "options.ml" 218 9912 9980
+type(
+  Arg.doc
+)
+"options.ml" 218 9912 9915 "options.ml" 218 9912 9980
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 219 9982 9985 "options.ml" 219 9982 9998
+type(
+  Arg.key
+)
+"options.ml" 219 9982 10005 "options.ml" 219 9982 10015
+type(
+  unit -> unit
+)
+ident(
+  int_ref use_jocaml "options.ml" 132 4675 4679 "options.ml" 132 4675 4689
+)
+"options.ml" 219 9982 10000 "options.ml" 219 9982 10015
+type(
+  Arg.spec
+)
+"options.ml" 219 9982 10017 "options.ml" 219 9982 10062
+type(
+  Arg.doc
+)
+"options.ml" 219 9982 9985 "options.ml" 219 9982 10062
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 220 10064 10067 "options.ml" 220 10064 10083
+type(
+  Arg.key
+)
+"options.ml" 220 10064 10089 "options.ml" 220 10064 10102
+type(
+  bool ref
+)
+ident(
+  int_ref use_ocamlfind "options.ml" 41 1471 1475 "options.ml" 41 1471 1488
+)
+"options.ml" 220 10064 10085 "options.ml" 220 10064 10102
+type(
+  Arg.spec
+)
+"options.ml" 220 10064 10104 "options.ml" 220 10064 10178
+type(
+  Arg.doc
+)
+"options.ml" 220 10064 10067 "options.ml" 220 10064 10178
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 221 10180 10183 "options.ml" 221 10180 10198
+type(
+  Arg.key
+)
+"options.ml" 221 10180 10206 "options.ml" 221 10180 10219
+type(
+  bool ref
+)
+ident(
+  int_ref use_ocamlfind "options.ml" 41 1471 1475 "options.ml" 41 1471 1488
+)
+"options.ml" 221 10180 10200 "options.ml" 221 10180 10219
+type(
+  Arg.spec
+)
+"options.ml" 221 10180 10221 "options.ml" 221 10180 10243
+type(
+  Arg.doc
+)
+"options.ml" 221 10180 10183 "options.ml" 221 10180 10243
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 223 10246 10249 "options.ml" 223 10246 10253
+type(
+  Arg.key
+)
+"options.ml" 223 10246 10263 "options.ml" 223 10246 10275
+type(
+  int ref
+)
+ident(
+  ext_ref Command.jobs
+)
+"options.ml" 223 10246 10255 "options.ml" 223 10246 10275
+type(
+  Arg.spec
+)
+"options.ml" 223 10246 10277 "options.ml" 223 10246 10321
+type(
+  Arg.doc
+)
+"options.ml" 223 10246 10249 "options.ml" 223 10246 10321
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 225 10324 10327 "options.ml" 225 10324 10339
+type(
+  Arg.key
+)
+"options.ml" 225 10324 10348 "options.ml" 225 10324 10361
+type(
+  string -> unit
+)
+ident(
+  int_ref set_build_dir "options.ml" 152 5175 5179 "options.ml" 152 5175 5192
+)
+"options.ml" 225 10324 10341 "options.ml" 225 10324 10361
+type(
+  Arg.spec
+)
+"options.ml" 225 10324 10363 "options.ml" 225 10324 10410
+type(
+  Arg.doc
+)
+"options.ml" 225 10324 10327 "options.ml" 225 10324 10410
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 226 10412 10415 "options.ml" 226 10412 10433
+type(
+  Arg.key
+)
+"options.ml" 226 10412 10446 "options.ml" 226 10412 10469
+type(
+  string ref
+)
+ident(
+  ext_ref Ocamlbuild_where.libdir
+)
+"options.ml" 226 10412 10435 "options.ml" 226 10412 10469
+type(
+  Arg.spec
+)
+"options.ml" 226 10412 10471 "options.ml" 226 10412 10513
+type(
+  Arg.doc
+)
+"options.ml" 226 10412 10415 "options.ml" 226 10412 10513
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 227 10515 10518 "options.ml" 227 10515 10536
+type(
+  Arg.key
+)
+"options.ml" 227 10515 10549 "options.ml" 227 10515 10572
+type(
+  string ref
+)
+ident(
+  ext_ref Ocamlbuild_where.bindir
+)
+"options.ml" 227 10515 10538 "options.ml" 227 10515 10572
+type(
+  Arg.spec
+)
+"options.ml" 227 10515 10574 "options.ml" 227 10515 10615
+type(
+  Arg.doc
+)
+"options.ml" 227 10515 10518 "options.ml" 227 10515 10615
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 228 10617 10620 "options.ml" 228 10617 10628
+type(
+  Arg.key
+)
+"options.ml" 228 10617 10640 "options.ml" 228 10617 10642
+type(
+  unit
+)
+"options.ml" 228 10617 10646 "options.ml" 228 10617 10659
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_endline
+)
+"options.ml" 228 10617 10660 "options.ml" 228 10617 10661
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 228 10617 10661 "options.ml" 228 10617 10684
+type(
+  string ref
+)
+ident(
+  ext_ref Ocamlbuild_where.libdir
+)
+"options.ml" 228 10617 10660 "options.ml" 228 10617 10684
+type(
+  string
+)
+"options.ml" 228 10617 10646 "options.ml" 228 10617 10684
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 228 10617 10686 "options.ml" 228 10617 10691
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"options.ml" 228 10617 10692 "options.ml" 228 10617 10699
+type(
+  exn
+)
+"options.ml" 228 10617 10686 "options.ml" 228 10617 10699
+type(
+  unit
+)
+"options.ml" 228 10617 10646 "options.ml" 228 10617 10699
+type(
+  unit
+)
+"options.ml" 228 10617 10635 "options.ml" 228 10617 10700
+type(
+  unit -> unit
+)
+"options.ml" 228 10617 10630 "options.ml" 228 10617 10700
+type(
+  Arg.spec
+)
+"options.ml" 228 10617 10702 "options.ml" 228 10617 10742
+type(
+  Arg.doc
+)
+"options.ml" 228 10617 10620 "options.ml" 228 10617 10742
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 229 10744 10747 "options.ml" 229 10744 10755
+type(
+  Arg.key
+)
+"options.ml" 229 10744 10769 "options.ml" 229 10744 10772
+type(
+  string
+)
+ident(
+  def cmd "options.ml" 229 10744 10776 "options.ml" 229 10744 10820
+)
+"options.ml" 229 10744 10776 "options.ml" 229 10744 10789
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_endline
+)
+"options.ml" 229 10744 10791 "options.ml" 229 10744 10800
+type(
+  string -> string
+)
+ident(
+  int_ref find_tool "options.ml" 47 1687 1691 "options.ml" 47 1687 1700
+)
+"options.ml" 229 10744 10801 "options.ml" 229 10744 10804
+type(
+  string
+)
+ident(
+  int_ref cmd "options.ml" 229 10744 10769 "options.ml" 229 10744 10772
+)
+"options.ml" 229 10744 10790 "options.ml" 229 10744 10805
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 229 10744 10776 "options.ml" 229 10744 10805
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 229 10744 10807 "options.ml" 229 10744 10812
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"options.ml" 229 10744 10813 "options.ml" 229 10744 10820
+type(
+  exn
+)
+"options.ml" 229 10744 10807 "options.ml" 229 10744 10820
+type(
+  unit
+)
+"options.ml" 229 10744 10776 "options.ml" 229 10744 10820
+type(
+  unit
+)
+"options.ml" 229 10744 10764 "options.ml" 229 10744 10821
+type(
+  string -> unit
+)
+"options.ml" 229 10744 10757 "options.ml" 229 10744 10821
+type(
+  Arg.spec
+)
+"options.ml" 229 10744 10823 "options.ml" 229 10744 10867
+type(
+  Arg.doc
+)
+"options.ml" 229 10744 10747 "options.ml" 229 10744 10867
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 230 10869 10872 "options.ml" 230 10869 10881
+type(
+  Arg.key
+)
+"options.ml" 230 10869 10883 "options.ml" 230 10869 10890
+type(
+  Command.spec ref -> Arg.spec
+)
+ident(
+  int_ref set_cmd "options.ml" 151 5125 5129 "options.ml" 151 5125 5136
+)
+"options.ml" 230 10869 10891 "options.ml" 230 10869 10897
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlc "options.ml" 86 3120 3124 "options.ml" 86 3120 3130
+)
+"options.ml" 230 10869 10883 "options.ml" 230 10869 10897
+call(
+  stack
+)
+type(
+  Arg.spec
+)
+"options.ml" 230 10869 10899 "options.ml" 230 10869 10942
+type(
+  Arg.doc
+)
+"options.ml" 230 10869 10872 "options.ml" 230 10869 10942
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 231 10944 10947 "options.ml" 231 10944 10958
+type(
+  Arg.key
+)
+"options.ml" 231 10944 10960 "options.ml" 231 10944 10967
+type(
+  Command.spec ref -> Arg.spec
+)
+ident(
+  int_ref set_cmd "options.ml" 151 5125 5129 "options.ml" 151 5125 5136
+)
+"options.ml" 231 10944 10968 "options.ml" 231 10944 10976
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlopt "options.ml" 87 3149 3153 "options.ml" 87 3149 3161
+)
+"options.ml" 231 10944 10960 "options.ml" 231 10944 10976
+call(
+  stack
+)
+type(
+  Arg.spec
+)
+"options.ml" 231 10944 10978 "options.ml" 231 10944 11019
+type(
+  Arg.doc
+)
+"options.ml" 231 10944 10947 "options.ml" 231 10944 11019
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 232 11021 11024 "options.ml" 232 11021 11035
+type(
+  Arg.key
+)
+"options.ml" 232 11021 11037 "options.ml" 232 11021 11044
+type(
+  Command.spec ref -> Arg.spec
+)
+ident(
+  int_ref set_cmd "options.ml" 151 5125 5129 "options.ml" 151 5125 5136
+)
+"options.ml" 232 11021 11045 "options.ml" 232 11021 11053
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamldep "options.ml" 88 3182 3186 "options.ml" 88 3182 3194
+)
+"options.ml" 232 11021 11037 "options.ml" 232 11021 11053
+call(
+  stack
+)
+type(
+  Arg.spec
+)
+"options.ml" 232 11021 11055 "options.ml" 232 11021 11096
+type(
+  Arg.doc
+)
+"options.ml" 232 11021 11024 "options.ml" 232 11021 11096
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 233 11098 11101 "options.ml" 233 11098 11112
+type(
+  Arg.key
+)
+"options.ml" 233 11098 11114 "options.ml" 233 11098 11121
+type(
+  Command.spec ref -> Arg.spec
+)
+ident(
+  int_ref set_cmd "options.ml" 151 5125 5129 "options.ml" 151 5125 5136
+)
+"options.ml" 233 11098 11122 "options.ml" 233 11098 11130
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamldoc "options.ml" 89 3215 3219 "options.ml" 89 3215 3227
+)
+"options.ml" 233 11098 11114 "options.ml" 233 11098 11130
+call(
+  stack
+)
+type(
+  Arg.spec
+)
+"options.ml" 233 11098 11132 "options.ml" 233 11098 11181
+type(
+  Arg.doc
+)
+"options.ml" 233 11098 11101 "options.ml" 233 11098 11181
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 234 11183 11186 "options.ml" 234 11183 11198
+type(
+  Arg.key
+)
+"options.ml" 234 11183 11200 "options.ml" 234 11183 11207
+type(
+  Command.spec ref -> Arg.spec
+)
+ident(
+  int_ref set_cmd "options.ml" 151 5125 5129 "options.ml" 151 5125 5136
+)
+"options.ml" 234 11183 11208 "options.ml" 234 11183 11217
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlyacc "options.ml" 90 3248 3252 "options.ml" 90 3248 3261
+)
+"options.ml" 234 11183 11200 "options.ml" 234 11183 11217
+call(
+  stack
+)
+type(
+  Arg.spec
+)
+"options.ml" 234 11183 11219 "options.ml" 234 11183 11253
+type(
+  Arg.doc
+)
+"options.ml" 234 11183 11186 "options.ml" 234 11183 11253
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 235 11255 11258 "options.ml" 235 11255 11267
+type(
+  Arg.key
+)
+"options.ml" 235 11255 11269 "options.ml" 235 11255 11276
+type(
+  Command.spec ref -> Arg.spec
+)
+ident(
+  int_ref set_cmd "options.ml" 151 5125 5129 "options.ml" 151 5125 5136
+)
+"options.ml" 235 11255 11277 "options.ml" 235 11255 11286
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlyacc "options.ml" 90 3248 3252 "options.ml" 90 3248 3261
+)
+"options.ml" 235 11255 11269 "options.ml" 235 11255 11286
+call(
+  stack
+)
+type(
+  Arg.spec
+)
+"options.ml" 235 11255 11288 "options.ml" 235 11255 11346
+type(
+  Arg.doc
+)
+"options.ml" 235 11255 11258 "options.ml" 235 11255 11346
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 236 11348 11351 "options.ml" 236 11348 11362
+type(
+  Arg.key
+)
+"options.ml" 236 11348 11364 "options.ml" 236 11348 11371
+type(
+  Command.spec ref -> Arg.spec
+)
+ident(
+  int_ref set_cmd "options.ml" 151 5125 5129 "options.ml" 151 5125 5136
+)
+"options.ml" 236 11348 11372 "options.ml" 236 11348 11380
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamllex "options.ml" 91 3270 3274 "options.ml" 91 3270 3282
+)
+"options.ml" 236 11348 11364 "options.ml" 236 11348 11380
+call(
+  stack
+)
+type(
+  Arg.spec
+)
+"options.ml" 236 11348 11382 "options.ml" 236 11348 11415
+type(
+  Arg.doc
+)
+"options.ml" 236 11348 11351 "options.ml" 236 11348 11415
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 239 11559 11562 "options.ml" 239 11559 11575
+type(
+  Arg.key
+)
+"options.ml" 239 11559 11577 "options.ml" 239 11559 11584
+type(
+  Command.spec ref -> Arg.spec
+)
+ident(
+  int_ref set_cmd "options.ml" 151 5125 5129 "options.ml" 151 5125 5136
+)
+"options.ml" 239 11559 11585 "options.ml" 239 11559 11595
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlmktop "options.ml" 93 3340 3344 "options.ml" 93 3340 3354
+)
+"options.ml" 239 11559 11577 "options.ml" 239 11559 11595
+call(
+  stack
+)
+type(
+  Arg.spec
+)
+"options.ml" 239 11559 11597 "options.ml" 239 11559 11632
+type(
+  Arg.doc
+)
+"options.ml" 239 11559 11562 "options.ml" 239 11559 11632
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 240 11634 11637 "options.ml" 240 11634 11648
+type(
+  Arg.key
+)
+"options.ml" 240 11634 11650 "options.ml" 240 11634 11657
+type(
+  Command.spec ref -> Arg.spec
+)
+ident(
+  int_ref set_cmd "options.ml" 151 5125 5129 "options.ml" 151 5125 5136
+)
+"options.ml" 240 11634 11658 "options.ml" 240 11634 11666
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlrun "options.ml" 94 3377 3381 "options.ml" 94 3377 3389
+)
+"options.ml" 240 11634 11650 "options.ml" 240 11634 11666
+call(
+  stack
+)
+type(
+  Arg.spec
+)
+"options.ml" 240 11634 11668 "options.ml" 240 11634 11701
+type(
+  Arg.doc
+)
+"options.ml" 240 11634 11637 "options.ml" 240 11634 11701
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 242 11704 11707 "options.ml" 242 11704 11711
+type(
+  Arg.key
+)
+"options.ml" 242 11704 11723 "options.ml" 242 11704 11724
+type(
+  string
+)
+ident(
+  def x "options.ml" 242 11704 11728 "options.ml" 242 11704 11787
+)
+"options.ml" 242 11704 11728 "options.ml" 242 11704 11746
+type(
+  bool ref
+)
+ident(
+  int_ref program_to_execute "options.ml" 97 3480 3484 "options.ml" 97 3480 3502
+)
+"options.ml" 242 11704 11747 "options.ml" 242 11704 11749
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 242 11704 11750 "options.ml" 242 11704 11754
+type(
+  bool
+)
+"options.ml" 242 11704 11728 "options.ml" 242 11704 11754
+type(
+  unit
+)
+"options.ml" 242 11704 11756 "options.ml" 242 11704 11763
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 242 11704 11764 "options.ml" 242 11704 11785
+type(
+  string list list ref
+)
+ident(
+  int_ref program_args_internal "options.ml" 117 4130 4134 "options.ml" 117 4130 4155
+)
+"options.ml" 242 11704 11786 "options.ml" 242 11704 11787
+type(
+  string
+)
+ident(
+  int_ref x "options.ml" 242 11704 11723 "options.ml" 242 11704 11724
+)
+"options.ml" 242 11704 11756 "options.ml" 242 11704 11787
+call(
+  tail
+)
+type(
+  unit
+)
+"options.ml" 242 11704 11728 "options.ml" 242 11704 11787
+type(
+  unit
+)
+"options.ml" 242 11704 11718 "options.ml" 242 11704 11788
+type(
+  string -> unit
+)
+"options.ml" 242 11704 11713 "options.ml" 242 11704 11788
+type(
+  Arg.spec
+)
+"options.ml" 243 11790 11793 "options.ml" 243 11790 11871
+type(
+  Arg.doc
+)
+"options.ml" 242 11704 11707 "options.ml" 243 11790 11871
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"options.ml" 160 5359 5361 "options.ml" 244 11873 11876
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"options.ml" 158 5330 5345 "options.ml" 244 11873 11877
+call(
+  stack
+)
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"options.ml" 158 5330 5341 "options.ml" 244 11873 11877
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+"options.ml" 246 11879 11883 "options.ml" 246 11879 11886
+type(
+  Arg.key * Arg.spec * Arg.doc -> unit
+)
+ident(
+  def add "options.ml" 249 11914 11914 "options.ml" 1 0 -1
+)
+"options.ml" 246 11879 11887 "options.ml" 246 11879 11888
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+ident(
+  def x "options.ml" 247 11891 11893 "options.ml" 247 11891 11912
+)
+"options.ml" 247 11891 11893 "options.ml" 247 11891 11897
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  int_ref spec "options.ml" 158 5330 5334 "options.ml" 158 5330 5338
+)
+"options.ml" 247 11891 11898 "options.ml" 247 11891 11900
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref ->
+  (Arg.key * Arg.spec * Arg.doc) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 247 11891 11901 "options.ml" 247 11891 11902
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref ->
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 247 11891 11902 "options.ml" 247 11891 11906
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  int_ref spec "options.ml" 158 5330 5334 "options.ml" 158 5330 5338
+)
+"options.ml" 247 11891 11901 "options.ml" 247 11891 11906
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"options.ml" 247 11891 11907 "options.ml" 247 11891 11908
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ->
+  (Arg.key * Arg.spec * Arg.doc) list -> (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"options.ml" 247 11891 11910 "options.ml" 247 11891 11911
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+ident(
+  int_ref x "options.ml" 246 11879 11887 "options.ml" 246 11879 11888
+)
+"options.ml" 247 11891 11909 "options.ml" 247 11891 11912
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"options.ml" 247 11891 11901 "options.ml" 247 11891 11912
+call(
+  stack
+)
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"options.ml" 247 11891 11893 "options.ml" 247 11891 11912
+type(
+  unit
+)
+"options.ml" 249 11914 11918 "options.ml" 249 11914 11925
+type(
+  string list ref
+)
+ident(
+  def targets "options.ml" 250 11935 11935 "options.ml" 1 0 -1
+)
+"options.ml" 249 11914 11928 "options.ml" 249 11914 11931
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 249 11914 11932 "options.ml" 249 11914 11934
+type(
+  string list
+)
+"options.ml" 249 11914 11928 "options.ml" 249 11914 11934
+type(
+  string list ref
+)
+"options.ml" 250 11935 11939 "options.ml" 250 11935 11949
+type(
+  string list ref
+)
+ident(
+  def ocaml_libs "options.ml" 251 11959 11959 "options.ml" 1 0 -1
+)
+"options.ml" 250 11935 11952 "options.ml" 250 11935 11955
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 250 11935 11956 "options.ml" 250 11935 11958
+type(
+  string list
+)
+"options.ml" 250 11935 11952 "options.ml" 250 11935 11958
+type(
+  string list ref
+)
+"options.ml" 251 11959 11963 "options.ml" 251 11959 11973
+type(
+  string list ref
+)
+ident(
+  def ocaml_mods "options.ml" 252 11983 11983 "options.ml" 1 0 -1
+)
+"options.ml" 251 11959 11976 "options.ml" 251 11959 11979
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 251 11959 11980 "options.ml" 251 11959 11982
+type(
+  string list
+)
+"options.ml" 251 11959 11976 "options.ml" 251 11959 11982
+type(
+  string list ref
+)
+"options.ml" 252 11983 11987 "options.ml" 252 11983 11997
+type(
+  string list ref
+)
+ident(
+  def ocaml_pkgs "options.ml" 253 12007 12007 "options.ml" 1 0 -1
+)
+"options.ml" 252 11983 12000 "options.ml" 252 11983 12003
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 252 11983 12004 "options.ml" 252 11983 12006
+type(
+  string list
+)
+"options.ml" 252 11983 12000 "options.ml" 252 11983 12006
+type(
+  string list ref
+)
+"options.ml" 253 12007 12011 "options.ml" 253 12007 12023
+type(
+  string list ref
+)
+ident(
+  def ocaml_lflags "options.ml" 254 12033 12033 "options.ml" 1 0 -1
+)
+"options.ml" 253 12007 12026 "options.ml" 253 12007 12029
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 253 12007 12030 "options.ml" 253 12007 12032
+type(
+  string list
+)
+"options.ml" 253 12007 12026 "options.ml" 253 12007 12032
+type(
+  string list ref
+)
+"options.ml" 254 12033 12037 "options.ml" 254 12033 12049
+type(
+  string list ref
+)
+ident(
+  def ocaml_cflags "options.ml" 255 12059 12059 "options.ml" 1 0 -1
+)
+"options.ml" 254 12033 12052 "options.ml" 254 12033 12055
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 254 12033 12056 "options.ml" 254 12033 12058
+type(
+  string list
+)
+"options.ml" 254 12033 12052 "options.ml" 254 12033 12058
+type(
+  string list ref
+)
+"options.ml" 255 12059 12063 "options.ml" 255 12059 12076
+type(
+  string list ref
+)
+ident(
+  def ocaml_ppflags "options.ml" 256 12086 12086 "options.ml" 1 0 -1
+)
+"options.ml" 255 12059 12079 "options.ml" 255 12059 12082
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 255 12059 12083 "options.ml" 255 12059 12085
+type(
+  string list
+)
+"options.ml" 255 12059 12079 "options.ml" 255 12059 12085
+type(
+  string list ref
+)
+"options.ml" 256 12086 12090 "options.ml" 256 12086 12104
+type(
+  string list ref
+)
+ident(
+  def ocaml_docflags "options.ml" 257 12114 12114 "options.ml" 1 0 -1
+)
+"options.ml" 256 12086 12107 "options.ml" 256 12086 12110
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 256 12086 12111 "options.ml" 256 12086 12113
+type(
+  string list
+)
+"options.ml" 256 12086 12107 "options.ml" 256 12086 12113
+type(
+  string list ref
+)
+"options.ml" 257 12114 12118 "options.ml" 257 12114 12133
+type(
+  string list ref
+)
+ident(
+  def ocaml_yaccflags "options.ml" 258 12143 12143 "options.ml" 1 0 -1
+)
+"options.ml" 257 12114 12136 "options.ml" 257 12114 12139
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 257 12114 12140 "options.ml" 257 12114 12142
+type(
+  string list
+)
+"options.ml" 257 12114 12136 "options.ml" 257 12114 12142
+type(
+  string list ref
+)
+"options.ml" 258 12143 12147 "options.ml" 258 12143 12161
+type(
+  string list ref
+)
+ident(
+  def ocaml_lexflags "options.ml" 259 12171 12171 "options.ml" 1 0 -1
+)
+"options.ml" 258 12143 12164 "options.ml" 258 12143 12167
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 258 12143 12168 "options.ml" 258 12143 12170
+type(
+  string list
+)
+"options.ml" 258 12143 12164 "options.ml" 258 12143 12170
+type(
+  string list ref
+)
+"options.ml" 259 12171 12175 "options.ml" 259 12171 12187
+type(
+  string list ref
+)
+ident(
+  def program_args "options.ml" 260 12197 12197 "options.ml" 1 0 -1
+)
+"options.ml" 259 12171 12190 "options.ml" 259 12171 12193
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 259 12171 12194 "options.ml" 259 12171 12196
+type(
+  string list
+)
+"options.ml" 259 12171 12190 "options.ml" 259 12171 12196
+type(
+  string list ref
+)
+"options.ml" 260 12197 12201 "options.ml" 260 12197 12212
+type(
+  string list ref
+)
+ident(
+  def ignore_list "options.ml" 261 12222 12222 "options.ml" 1 0 -1
+)
+"options.ml" 260 12197 12215 "options.ml" 260 12197 12218
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 260 12197 12219 "options.ml" 260 12197 12221
+type(
+  string list
+)
+"options.ml" 260 12197 12215 "options.ml" 260 12197 12221
+type(
+  string list ref
+)
+"options.ml" 261 12222 12226 "options.ml" 261 12222 12230
+type(
+  string list ref
+)
+ident(
+  def tags "options.ml" 262 12240 12240 "options.ml" 1 0 -1
+)
+"options.ml" 261 12222 12233 "options.ml" 261 12222 12236
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 261 12222 12237 "options.ml" 261 12222 12239
+type(
+  string list
+)
+"options.ml" 261 12222 12233 "options.ml" 261 12222 12239
+type(
+  string list ref
+)
+"options.ml" 262 12240 12244 "options.ml" 262 12240 12253
+type(
+  string list ref
+)
+ident(
+  def tag_lines "options.ml" 263 12263 12263 "options.ml" 1 0 -1
+)
+"options.ml" 262 12240 12256 "options.ml" 262 12240 12259
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 262 12240 12260 "options.ml" 262 12240 12262
+type(
+  string list
+)
+"options.ml" 262 12240 12256 "options.ml" 262 12240 12262
+type(
+  string list ref
+)
+"options.ml" 263 12263 12267 "options.ml" 263 12263 12276
+type(
+  string list ref
+)
+ident(
+  def show_tags "options.ml" 264 12286 12286 "options.ml" 1 0 -1
+)
+"options.ml" 263 12263 12279 "options.ml" 263 12263 12282
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 263 12263 12283 "options.ml" 263 12263 12285
+type(
+  string list
+)
+"options.ml" 263 12263 12279 "options.ml" 263 12263 12285
+type(
+  string list ref
+)
+"options.ml" 264 12286 12290 "options.ml" 264 12286 12301
+type(
+  string list ref
+)
+ident(
+  def plugin_tags "options.ml" 266 12312 12312 "options.ml" 1 0 -1
+)
+"options.ml" 264 12286 12304 "options.ml" 264 12286 12307
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"options.ml" 264 12286 12308 "options.ml" 264 12286 12310
+type(
+  string list
+)
+"options.ml" 264 12286 12304 "options.ml" 264 12286 12310
+type(
+  string list ref
+)
+"options.ml" 266 12312 12316 "options.ml" 266 12312 12320
+type(
+  unit -> unit
+)
+ident(
+  def init "options.ml" 335 14852 14908 "options.ml" 1 0 -1
+)
+"options.ml" 266 12312 12321 "options.ml" 266 12312 12323
+type(
+  unit
+)
+"options.ml" 267 12326 12332 "options.ml" 267 12326 12340
+type(
+  string -> unit
+)
+ident(
+  def anon_fun "options.ml" 268 12371 12373 "options.ml" 335 14852 14908
+)
+"options.ml" 267 12326 12343 "options.ml" 267 12326 12350
+type(
+  string list list ref -> string -> unit
+)
+ident(
+  int_ref add_to' "options.ml" 146 5047 5051 "options.ml" 146 5047 5058
+)
+"options.ml" 267 12326 12351 "options.ml" 267 12326 12367
+type(
+  string list list ref
+)
+ident(
+  int_ref targets_internal "options.ml" 106 3755 3759 "options.ml" 106 3755 3775
+)
+"options.ml" 267 12326 12343 "options.ml" 267 12326 12367
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"options.ml" 268 12371 12377 "options.ml" 268 12371 12386
+type(
+  string
+)
+ident(
+  def usage_msg "options.ml" 269 12443 12445 "options.ml" 335 14852 14908
+)
+"options.ml" 268 12371 12389 "options.ml" 268 12371 12396
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Format.sprintf
+)
+"options.ml" 268 12371 12397 "options.ml" 268 12371 12426
+type(
+  (string -> string, unit, string) format
+)
+"options.ml" 268 12371 12427 "options.ml" 268 12371 12435
+type(
+  string array
+)
+ident(
+  ext_ref Sys.argv
+)
+"options.ml" 268 12371 12437 "options.ml" 268 12371 12438
+type(
+  int
+)
+"options.ml" 268 12371 12427 "options.ml" 268 12371 12439
+type(
+  string
+)
+"options.ml" 268 12371 12389 "options.ml" 268 12371 12439
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 269 12443 12449 "options.ml" 269 12443 12454
+type(
+  string array
+)
+ident(
+  def argv' "options.ml" 270 12495 12497 "options.ml" 335 14852 14908
+)
+"options.ml" 269 12443 12457 "options.ml" 269 12443 12469
+type(
+  string array list -> string array
+)
+ident(
+  ext_ref Array.concat
+)
+"options.ml" 269 12443 12471 "options.ml" 269 12443 12479
+type(
+  string array
+)
+ident(
+  ext_ref Sys.argv
+)
+"options.ml" 269 12443 12483 "options.ml" 269 12443 12488
+type(
+  string
+)
+ident(
+  int_ref dummy "options.ml" 128 4470 4474 "options.ml" 128 4470 4479
+)
+"options.ml" 269 12443 12481 "options.ml" 269 12443 12490
+type(
+  string array
+)
+"options.ml" 269 12443 12470 "options.ml" 269 12443 12491
+type(
+  string array list
+)
+"options.ml" 269 12443 12457 "options.ml" 269 12443 12491
+call(
+  stack
+)
+type(
+  string array
+)
+"options.ml" 270 12495 12497 "options.ml" 270 12495 12507
+type(
+  ?current:int ref ->
+  string array ->
+  (Arg.key * Arg.spec * Arg.doc) list ->
+  Arg.anon_fun -> Arg.usage_msg -> unit
+)
+ident(
+  ext_ref Arg.parse_argv
+)
+"options.ml" 270 12495 12508 "options.ml" 270 12495 12513
+type(
+  string array
+)
+ident(
+  int_ref argv' "options.ml" 269 12443 12449 "options.ml" 269 12443 12454
+)
+"options.ml" 270 12495 12514 "options.ml" 270 12495 12515
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref ->
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 270 12495 12515 "options.ml" 270 12495 12519
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  int_ref spec "options.ml" 158 5330 5334 "options.ml" 158 5330 5338
+)
+"options.ml" 270 12495 12514 "options.ml" 270 12495 12519
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"options.ml" 270 12495 12520 "options.ml" 270 12495 12528
+type(
+  Arg.anon_fun
+)
+ident(
+  int_ref anon_fun "options.ml" 267 12326 12332 "options.ml" 267 12326 12340
+)
+"options.ml" 270 12495 12529 "options.ml" 270 12495 12538
+type(
+  Arg.usage_msg
+)
+ident(
+  int_ref usage_msg "options.ml" 268 12371 12377 "options.ml" 268 12371 12386
+)
+"options.ml" 270 12495 12497 "options.ml" 270 12495 12538
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 271 12540 12542 "options.ml" 271 12540 12555
+type(
+  string -> unit
+)
+ident(
+  ext_ref Shell.mkdir_p
+)
+"options.ml" 271 12540 12556 "options.ml" 271 12540 12557
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 271 12540 12557 "options.ml" 271 12540 12566
+type(
+  string ref
+)
+ident(
+  int_ref build_dir "options.ml" 26 1011 1015 "options.ml" 26 1011 1024
+)
+"options.ml" 271 12540 12556 "options.ml" 271 12540 12566
+type(
+  string
+)
+"options.ml" 271 12540 12542 "options.ml" 271 12540 12566
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 273 12569 12575 "options.ml" 273 12569 12577
+type(
+  unit
+)
+"options.ml" 274 12580 12588 "options.ml" 274 12580 12591
+type(
+  string
+)
+ident(
+  def log "options.ml" 275 12616 12620 "options.ml" 284 12983 13001
+)
+"options.ml" 274 12580 12594 "options.ml" 274 12580 12595
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 274 12580 12595 "options.ml" 274 12580 12612
+type(
+  string ref
+)
+ident(
+  int_ref log_file_internal "options.ml" 123 4333 4337 "options.ml" 123 4333 4354
+)
+"options.ml" 274 12580 12594 "options.ml" 274 12580 12612
+type(
+  string
+)
+"options.ml" 275 12616 12623 "options.ml" 275 12616 12626
+type(
+  string
+)
+ident(
+  int_ref log "options.ml" 274 12580 12588 "options.ml" 274 12580 12591
+)
+"options.ml" 275 12616 12627 "options.ml" 275 12616 12628
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"options.ml" 275 12616 12629 "options.ml" 275 12616 12631
+type(
+  string
+)
+"options.ml" 275 12616 12623 "options.ml" 275 12616 12631
+type(
+  bool
+)
+"options.ml" 275 12616 12637 "options.ml" 275 12616 12645
+type(
+  string option -> unit
+)
+ident(
+  ext_ref Log.init
+)
+"options.ml" 275 12616 12646 "options.ml" 275 12616 12650
+type(
+  string option
+)
+"options.ml" 275 12616 12637 "options.ml" 275 12616 12650
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 276 12651 12663 "options.ml" 276 12651 12666
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"options.ml" 276 12651 12668 "options.ml" 276 12651 12688
+type(
+  string -> bool
+)
+ident(
+  ext_ref Filename.is_implicit
+)
+"options.ml" 276 12651 12689 "options.ml" 276 12651 12692
+type(
+  string
+)
+ident(
+  int_ref log "options.ml" 274 12580 12588 "options.ml" 274 12580 12591
+)
+"options.ml" 276 12651 12667 "options.ml" 276 12651 12693
+call(
+  stack
+)
+type(
+  bool
+)
+"options.ml" 276 12651 12663 "options.ml" 276 12651 12693
+type(
+  bool
+)
+"options.ml" 277 12699 12705 "options.ml" 277 12699 12713
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"options.ml" 278 12714 12723 "options.ml" 278 12714 12730
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Format.sprintf
+)
+"options.ml" 278 12714 12731 "options.ml" 278 12714 12791
+type(
+  (string -> string, unit, string) format
+)
+"options.ml" 278 12714 12792 "options.ml" 278 12714 12795
+type(
+  string
+)
+ident(
+  int_ref log "options.ml" 274 12580 12588 "options.ml" 274 12580 12591
+)
+"options.ml" 278 12714 12722 "options.ml" 278 12714 12796
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 277 12699 12705 "options.ml" 278 12714 12796
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 280 12806 12816 "options.ml" 280 12806 12819
+type(
+  string
+)
+ident(
+  def log "options.ml" 281 12856 12862 "options.ml" 284 12983 13001
+)
+"options.ml" 280 12806 12822 "options.ml" 280 12806 12837
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref My_std.filename_concat
+)
+"options.ml" 280 12806 12838 "options.ml" 280 12806 12839
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 280 12806 12839 "options.ml" 280 12806 12848
+type(
+  string ref
+)
+ident(
+  int_ref build_dir "options.ml" 26 1011 1015 "options.ml" 26 1011 1024
+)
+"options.ml" 280 12806 12838 "options.ml" 280 12806 12848
+type(
+  string
+)
+"options.ml" 280 12806 12849 "options.ml" 280 12806 12852
+type(
+  string
+)
+ident(
+  int_ref log "options.ml" 274 12580 12588 "options.ml" 274 12580 12591
+)
+"options.ml" 280 12806 12822 "options.ml" 280 12806 12852
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 281 12856 12862 "options.ml" 281 12856 12875
+type(
+  string -> unit
+)
+ident(
+  ext_ref Shell.mkdir_p
+)
+"options.ml" 281 12856 12877 "options.ml" 281 12856 12893
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.dirname
+)
+"options.ml" 281 12856 12894 "options.ml" 281 12856 12897
+type(
+  string
+)
+ident(
+  int_ref log "options.ml" 280 12806 12816 "options.ml" 280 12806 12819
+)
+"options.ml" 281 12856 12876 "options.ml" 281 12856 12898
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 281 12856 12862 "options.ml" 281 12856 12898
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 282 12900 12906 "options.ml" 282 12900 12916
+type(
+  string -> unit
+)
+ident(
+  ext_ref Shell.rm_f
+)
+"options.ml" 282 12900 12917 "options.ml" 282 12900 12920
+type(
+  string
+)
+ident(
+  int_ref log "options.ml" 280 12806 12816 "options.ml" 280 12806 12819
+)
+"options.ml" 282 12900 12906 "options.ml" 282 12900 12920
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 283 12922 12932 "options.ml" 283 12922 12935
+type(
+  string option
+)
+ident(
+  def log "options.ml" 284 12983 12989 "options.ml" 284 12983 13001
+)
+"options.ml" 283 12922 12941 "options.ml" 283 12922 12942
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 283 12922 12942 "options.ml" 283 12922 12951
+type(
+  int ref
+)
+ident(
+  ext_ref Log.level
+)
+"options.ml" 283 12922 12941 "options.ml" 283 12922 12951
+type(
+  int
+)
+"options.ml" 283 12922 12952 "options.ml" 283 12922 12953
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"options.ml" 283 12922 12954 "options.ml" 283 12922 12955
+type(
+  int
+)
+"options.ml" 283 12922 12941 "options.ml" 283 12922 12955
+type(
+  bool
+)
+"options.ml" 283 12922 12966 "options.ml" 283 12922 12969
+type(
+  string
+)
+ident(
+  int_ref log "options.ml" 280 12806 12816 "options.ml" 280 12806 12819
+)
+"options.ml" 283 12922 12961 "options.ml" 283 12922 12969
+type(
+  string option
+)
+"options.ml" 283 12922 12975 "options.ml" 283 12922 12979
+type(
+  string option
+)
+"options.ml" 283 12922 12938 "options.ml" 283 12922 12979
+type(
+  string option
+)
+"options.ml" 284 12983 12989 "options.ml" 284 12983 12997
+type(
+  string option -> unit
+)
+ident(
+  ext_ref Log.init
+)
+"options.ml" 284 12983 12998 "options.ml" 284 12983 13001
+type(
+  string option
+)
+ident(
+  int_ref log "options.ml" 283 12922 12932 "options.ml" 283 12922 12935
+)
+"options.ml" 284 12983 12989 "options.ml" 284 12983 13001
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 283 12922 12928 "options.ml" 284 12983 13001
+type(
+  unit
+)
+"options.ml" 282 12900 12906 "options.ml" 284 12983 13001
+type(
+  unit
+)
+"options.ml" 281 12856 12862 "options.ml" 284 12983 13001
+type(
+  unit
+)
+"options.ml" 280 12806 12812 "options.ml" 284 12983 13001
+type(
+  unit
+)
+"options.ml" 276 12651 12660 "options.ml" 284 12983 13001
+type(
+  unit
+)
+"options.ml" 275 12616 12620 "options.ml" 284 12983 13001
+type(
+  unit
+)
+"options.ml" 274 12580 12584 "options.ml" 284 12983 13001
+type(
+  unit
+)
+"options.ml" 287 13008 13013 "options.ml" 287 13008 13014
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 287 13008 13014 "options.ml" 287 13008 13027
+type(
+  bool ref
+)
+ident(
+  int_ref use_ocamlfind "options.ml" 41 1471 1475 "options.ml" 41 1471 1488
+)
+"options.ml" 287 13008 13013 "options.ml" 287 13008 13027
+type(
+  bool
+)
+"options.ml" 288 13039 13043 "options.ml" 288 13039 13056
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlfind_cmd "options.ml" 95 3398 3402 "options.ml" 95 3398 3415
+)
+"options.ml" 288 13039 13057 "options.ml" 288 13039 13059
+type(
+  Command.spec ref -> Command.spec -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 288 13039 13062 "options.ml" 288 13039 13073
+type(
+  string
+)
+"options.ml" 288 13039 13060 "options.ml" 288 13039 13073
+type(
+  Command.spec
+)
+"options.ml" 288 13039 13043 "options.ml" 288 13039 13073
+type(
+  unit
+)
+"options.ml" 289 13075 13083 "options.ml" 289 13075 13086
+type(
+  string
+)
+ident(
+  def cmd "options.ml" 290 13138 13142 "options.ml" 299 13637 13681
+)
+"options.ml" 289 13075 13089 "options.ml" 289 13075 13119
+type(
+  Command.spec -> string
+)
+ident(
+  ext_ref Command.string_of_command_spec
+)
+"options.ml" 289 13075 13120 "options.ml" 289 13075 13121
+type(
+  Command.spec ref -> Command.spec
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 289 13075 13121 "options.ml" 289 13075 13134
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlfind_cmd "options.ml" 95 3398 3402 "options.ml" 95 3398 3415
+)
+"options.ml" 289 13075 13120 "options.ml" 289 13075 13134
+type(
+  Command.spec
+)
+"options.ml" 289 13075 13089 "options.ml" 289 13075 13134
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 290 13138 13152 "options.ml" 290 13138 13158
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"options.ml" 290 13138 13159 "options.ml" 290 13138 13181
+type(
+  string -> string
+)
+ident(
+  ext_ref Command.search_in_path
+)
+"options.ml" 290 13138 13182 "options.ml" 290 13138 13185
+type(
+  string
+)
+ident(
+  int_ref cmd "options.ml" 289 13075 13083 "options.ml" 289 13075 13086
+)
+"options.ml" 290 13138 13158 "options.ml" 290 13138 13186
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 290 13138 13152 "options.ml" 290 13138 13186
+type(
+  unit
+)
+"options.ml" 291 13187 13196 "options.ml" 291 13187 13205
+type(
+  exn
+)
+"options.ml" 291 13187 13209 "options.ml" 291 13187 13217
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"options.ml" 291 13187 13218 "options.ml" 291 13187 13275
+type(
+  string
+)
+"options.ml" 291 13187 13209 "options.ml" 291 13187 13275
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 290 13138 13142 "options.ml" 291 13187 13279
+type(
+  unit
+)
+"options.ml" 295 13477 13481 "options.ml" 295 13477 13487
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlc "options.ml" 86 3120 3124 "options.ml" 86 3120 3130
+)
+"options.ml" 295 13477 13488 "options.ml" 295 13477 13490
+type(
+  Command.spec ref -> Command.spec -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 295 13477 13491 "options.ml" 295 13477 13500
+type(
+  Command.spec -> Command.spec
+)
+ident(
+  int_ref ocamlfind "options.ml" 96 3437 3441 "options.ml" 96 3437 3450
+)
+"options.ml" 295 13477 13501 "options.ml" 295 13477 13502
+type(
+  (Command.spec -> Command.spec) -> Command.spec -> Command.spec
+)
+ident(
+  ext_ref My_std.( & )
+)
+"options.ml" 295 13477 13504 "options.ml" 295 13477 13512
+type(
+  string
+)
+"options.ml" 295 13477 13503 "options.ml" 295 13477 13512
+type(
+  Command.spec
+)
+"options.ml" 295 13477 13491 "options.ml" 295 13477 13512
+call(
+  stack
+)
+type(
+  Command.spec
+)
+"options.ml" 295 13477 13481 "options.ml" 295 13477 13512
+type(
+  unit
+)
+"options.ml" 296 13514 13518 "options.ml" 296 13514 13526
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlopt "options.ml" 87 3149 3153 "options.ml" 87 3149 3161
+)
+"options.ml" 296 13514 13527 "options.ml" 296 13514 13529
+type(
+  Command.spec ref -> Command.spec -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 296 13514 13530 "options.ml" 296 13514 13539
+type(
+  Command.spec -> Command.spec
+)
+ident(
+  int_ref ocamlfind "options.ml" 96 3437 3441 "options.ml" 96 3437 3450
+)
+"options.ml" 296 13514 13540 "options.ml" 296 13514 13541
+type(
+  (Command.spec -> Command.spec) -> Command.spec -> Command.spec
+)
+ident(
+  ext_ref My_std.( & )
+)
+"options.ml" 296 13514 13543 "options.ml" 296 13514 13553
+type(
+  string
+)
+"options.ml" 296 13514 13542 "options.ml" 296 13514 13553
+type(
+  Command.spec
+)
+"options.ml" 296 13514 13530 "options.ml" 296 13514 13553
+call(
+  stack
+)
+type(
+  Command.spec
+)
+"options.ml" 296 13514 13518 "options.ml" 296 13514 13553
+type(
+  unit
+)
+"options.ml" 297 13555 13559 "options.ml" 297 13555 13567
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamldep "options.ml" 88 3182 3186 "options.ml" 88 3182 3194
+)
+"options.ml" 297 13555 13568 "options.ml" 297 13555 13570
+type(
+  Command.spec ref -> Command.spec -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 297 13555 13571 "options.ml" 297 13555 13580
+type(
+  Command.spec -> Command.spec
+)
+ident(
+  int_ref ocamlfind "options.ml" 96 3437 3441 "options.ml" 96 3437 3450
+)
+"options.ml" 297 13555 13581 "options.ml" 297 13555 13582
+type(
+  (Command.spec -> Command.spec) -> Command.spec -> Command.spec
+)
+ident(
+  ext_ref My_std.( & )
+)
+"options.ml" 297 13555 13584 "options.ml" 297 13555 13594
+type(
+  string
+)
+"options.ml" 297 13555 13583 "options.ml" 297 13555 13594
+type(
+  Command.spec
+)
+"options.ml" 297 13555 13571 "options.ml" 297 13555 13594
+call(
+  stack
+)
+type(
+  Command.spec
+)
+"options.ml" 297 13555 13559 "options.ml" 297 13555 13594
+type(
+  unit
+)
+"options.ml" 298 13596 13600 "options.ml" 298 13596 13608
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamldoc "options.ml" 89 3215 3219 "options.ml" 89 3215 3227
+)
+"options.ml" 298 13596 13609 "options.ml" 298 13596 13611
+type(
+  Command.spec ref -> Command.spec -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 298 13596 13612 "options.ml" 298 13596 13621
+type(
+  Command.spec -> Command.spec
+)
+ident(
+  int_ref ocamlfind "options.ml" 96 3437 3441 "options.ml" 96 3437 3450
+)
+"options.ml" 298 13596 13622 "options.ml" 298 13596 13623
+type(
+  (Command.spec -> Command.spec) -> Command.spec -> Command.spec
+)
+ident(
+  ext_ref My_std.( & )
+)
+"options.ml" 298 13596 13625 "options.ml" 298 13596 13635
+type(
+  string
+)
+"options.ml" 298 13596 13624 "options.ml" 298 13596 13635
+type(
+  Command.spec
+)
+"options.ml" 298 13596 13612 "options.ml" 298 13596 13635
+call(
+  stack
+)
+type(
+  Command.spec
+)
+"options.ml" 298 13596 13600 "options.ml" 298 13596 13635
+type(
+  unit
+)
+"options.ml" 299 13637 13641 "options.ml" 299 13637 13651
+type(
+  Command.spec ref
+)
+ident(
+  int_ref ocamlmktop "options.ml" 93 3340 3344 "options.ml" 93 3340 3354
+)
+"options.ml" 299 13637 13652 "options.ml" 299 13637 13654
+type(
+  Command.spec ref -> Command.spec -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 299 13637 13655 "options.ml" 299 13637 13664
+type(
+  Command.spec -> Command.spec
+)
+ident(
+  int_ref ocamlfind "options.ml" 96 3437 3441 "options.ml" 96 3437 3450
+)
+"options.ml" 299 13637 13665 "options.ml" 299 13637 13666
+type(
+  (Command.spec -> Command.spec) -> Command.spec -> Command.spec
+)
+ident(
+  ext_ref My_std.( & )
+)
+"options.ml" 299 13637 13668 "options.ml" 299 13637 13680
+type(
+  string
+)
+"options.ml" 299 13637 13667 "options.ml" 299 13637 13680
+type(
+  Command.spec
+)
+"options.ml" 299 13637 13655 "options.ml" 299 13637 13680
+call(
+  stack
+)
+type(
+  Command.spec
+)
+"options.ml" 299 13637 13641 "options.ml" 299 13637 13681
+type(
+  unit
+)
+"options.ml" 298 13596 13600 "options.ml" 299 13637 13681
+type(
+  unit
+)
+"options.ml" 297 13555 13559 "options.ml" 299 13637 13681
+type(
+  unit
+)
+"options.ml" 296 13514 13518 "options.ml" 299 13637 13681
+type(
+  unit
+)
+"options.ml" 295 13477 13481 "options.ml" 299 13637 13681
+type(
+  unit
+)
+"options.ml" 290 13138 13142 "options.ml" 299 13637 13681
+type(
+  unit
+)
+"options.ml" 289 13075 13079 "options.ml" 299 13637 13681
+type(
+  unit
+)
+"options.ml" 287 13008 13033 "options.ml" 300 13682 13687
+type(
+  unit
+)
+"options.ml" 287 13008 13010 "options.ml" 300 13682 13687
+type(
+  unit
+)
+"options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+type(
+  'a list ref -> 'a list list ref -> unit
+)
+ident(
+  def reorder "options.ml" 303 13751 13753 "options.ml" 335 14852 14908
+)
+"options.ml" 302 13690 13704 "options.ml" 302 13690 13705
+type(
+  'a list ref
+)
+ident(
+  def x "options.ml" 302 13690 13706 "options.ml" 302 13690 13747
+)
+"options.ml" 302 13690 13706 "options.ml" 302 13690 13707
+type(
+  'a list list ref
+)
+ident(
+  def y "options.ml" 302 13690 13710 "options.ml" 302 13690 13747
+)
+"options.ml" 302 13690 13710 "options.ml" 302 13690 13711
+type(
+  'a list ref
+)
+ident(
+  int_ref x "options.ml" 302 13690 13704 "options.ml" 302 13690 13705
+)
+"options.ml" 302 13690 13712 "options.ml" 302 13690 13714
+type(
+  'a list ref -> 'a list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 302 13690 13715 "options.ml" 302 13690 13716
+type(
+  'a list ref -> 'a list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 302 13690 13716 "options.ml" 302 13690 13717
+type(
+  'a list ref
+)
+ident(
+  int_ref x "options.ml" 302 13690 13704 "options.ml" 302 13690 13705
+)
+"options.ml" 302 13690 13715 "options.ml" 302 13690 13717
+type(
+  'a list
+)
+"options.ml" 302 13690 13718 "options.ml" 302 13690 13719
+type(
+  'a list -> 'a list -> 'a list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"options.ml" 302 13690 13721 "options.ml" 302 13690 13732
+type(
+  'a list list -> 'a list
+)
+ident(
+  ext_ref My_std.List.concat
+)
+"options.ml" 302 13690 13734 "options.ml" 302 13690 13742
+type(
+  'a list list -> 'a list list
+)
+ident(
+  ext_ref My_std.List.rev
+)
+"options.ml" 302 13690 13743 "options.ml" 302 13690 13744
+type(
+  'a list list ref -> 'a list list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 302 13690 13744 "options.ml" 302 13690 13745
+type(
+  'a list list ref
+)
+ident(
+  int_ref y "options.ml" 302 13690 13706 "options.ml" 302 13690 13707
+)
+"options.ml" 302 13690 13743 "options.ml" 302 13690 13745
+type(
+  'a list list
+)
+"options.ml" 302 13690 13733 "options.ml" 302 13690 13746
+call(
+  stack
+)
+type(
+  'a list list
+)
+"options.ml" 302 13690 13720 "options.ml" 302 13690 13747
+call(
+  stack
+)
+type(
+  'a list
+)
+"options.ml" 302 13690 13715 "options.ml" 302 13690 13747
+call(
+  stack
+)
+type(
+  'a list
+)
+"options.ml" 302 13690 13710 "options.ml" 302 13690 13747
+type(
+  unit
+)
+"options.ml" 303 13751 13753 "options.ml" 303 13751 13760
+type(
+  string list ref -> string list list ref -> unit
+)
+ident(
+  int_ref reorder "options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+)
+"options.ml" 303 13751 13761 "options.ml" 303 13751 13768
+type(
+  string list ref
+)
+ident(
+  int_ref targets "options.ml" 249 11914 11918 "options.ml" 249 11914 11925
+)
+"options.ml" 303 13751 13769 "options.ml" 303 13751 13785
+type(
+  string list list ref
+)
+ident(
+  int_ref targets_internal "options.ml" 106 3755 3759 "options.ml" 106 3755 3775
+)
+"options.ml" 303 13751 13753 "options.ml" 303 13751 13785
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 304 13787 13789 "options.ml" 304 13787 13796
+type(
+  string list ref -> string list list ref -> unit
+)
+ident(
+  int_ref reorder "options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+)
+"options.ml" 304 13787 13797 "options.ml" 304 13787 13807
+type(
+  string list ref
+)
+ident(
+  int_ref ocaml_libs "options.ml" 250 11935 11939 "options.ml" 250 11935 11949
+)
+"options.ml" 304 13787 13808 "options.ml" 304 13787 13827
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_libs_internal "options.ml" 107 3785 3789 "options.ml" 107 3785 3808
+)
+"options.ml" 304 13787 13789 "options.ml" 304 13787 13827
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 305 13829 13831 "options.ml" 305 13829 13838
+type(
+  string list ref -> string list list ref -> unit
+)
+ident(
+  int_ref reorder "options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+)
+"options.ml" 305 13829 13839 "options.ml" 305 13829 13849
+type(
+  string list ref
+)
+ident(
+  int_ref ocaml_mods "options.ml" 251 11959 11963 "options.ml" 251 11959 11973
+)
+"options.ml" 305 13829 13850 "options.ml" 305 13829 13869
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_mods_internal "options.ml" 108 3818 3822 "options.ml" 108 3818 3841
+)
+"options.ml" 305 13829 13831 "options.ml" 305 13829 13869
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 306 13871 13873 "options.ml" 306 13871 13880
+type(
+  string list ref -> string list list ref -> unit
+)
+ident(
+  int_ref reorder "options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+)
+"options.ml" 306 13871 13881 "options.ml" 306 13871 13891
+type(
+  string list ref
+)
+ident(
+  int_ref ocaml_pkgs "options.ml" 252 11983 11987 "options.ml" 252 11983 11997
+)
+"options.ml" 306 13871 13892 "options.ml" 306 13871 13911
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_pkgs_internal "options.ml" 109 3851 3855 "options.ml" 109 3851 3874
+)
+"options.ml" 306 13871 13873 "options.ml" 306 13871 13911
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 307 13913 13915 "options.ml" 307 13913 13922
+type(
+  string list ref -> string list list ref -> unit
+)
+ident(
+  int_ref reorder "options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+)
+"options.ml" 307 13913 13923 "options.ml" 307 13913 13935
+type(
+  string list ref
+)
+ident(
+  int_ref ocaml_cflags "options.ml" 254 12033 12037 "options.ml" 254 12033 12049
+)
+"options.ml" 307 13913 13936 "options.ml" 307 13913 13957
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_cflags_internal "options.ml" 112 3947 3951 "options.ml" 112 3947 3972
+)
+"options.ml" 307 13913 13915 "options.ml" 307 13913 13957
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 308 13959 13961 "options.ml" 308 13959 13968
+type(
+  string list ref -> string list list ref -> unit
+)
+ident(
+  int_ref reorder "options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+)
+"options.ml" 308 13959 13969 "options.ml" 308 13959 13981
+type(
+  string list ref
+)
+ident(
+  int_ref ocaml_lflags "options.ml" 253 12007 12011 "options.ml" 253 12007 12023
+)
+"options.ml" 308 13959 13982 "options.ml" 308 13959 14003
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_lflags_internal "options.ml" 111 3912 3916 "options.ml" 111 3912 3937
+)
+"options.ml" 308 13959 13961 "options.ml" 308 13959 14003
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 309 14005 14007 "options.ml" 309 14005 14014
+type(
+  string list ref -> string list list ref -> unit
+)
+ident(
+  int_ref reorder "options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+)
+"options.ml" 309 14005 14015 "options.ml" 309 14005 14028
+type(
+  string list ref
+)
+ident(
+  int_ref ocaml_ppflags "options.ml" 255 12059 12063 "options.ml" 255 12059 12076
+)
+"options.ml" 309 14005 14029 "options.ml" 309 14005 14051
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_ppflags_internal "options.ml" 114 4019 4023 "options.ml" 114 4019 4045
+)
+"options.ml" 309 14005 14007 "options.ml" 309 14005 14051
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 310 14053 14055 "options.ml" 310 14053 14062
+type(
+  string list ref -> string list list ref -> unit
+)
+ident(
+  int_ref reorder "options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+)
+"options.ml" 310 14053 14063 "options.ml" 310 14053 14077
+type(
+  string list ref
+)
+ident(
+  int_ref ocaml_docflags "options.ml" 256 12086 12090 "options.ml" 256 12086 12104
+)
+"options.ml" 310 14053 14078 "options.ml" 310 14053 14101
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_docflags_internal "options.ml" 113 3982 3986 "options.ml" 113 3982 4009
+)
+"options.ml" 310 14053 14055 "options.ml" 310 14053 14101
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 311 14103 14105 "options.ml" 311 14103 14112
+type(
+  string list ref -> string list list ref -> unit
+)
+ident(
+  int_ref reorder "options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+)
+"options.ml" 311 14103 14113 "options.ml" 311 14103 14128
+type(
+  string list ref
+)
+ident(
+  int_ref ocaml_yaccflags "options.ml" 257 12114 12118 "options.ml" 257 12114 12133
+)
+"options.ml" 311 14103 14129 "options.ml" 311 14103 14153
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_yaccflags_internal "options.ml" 115 4055 4059 "options.ml" 115 4055 4083
+)
+"options.ml" 311 14103 14105 "options.ml" 311 14103 14153
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 312 14155 14157 "options.ml" 312 14155 14164
+type(
+  string list ref -> string list list ref -> unit
+)
+ident(
+  int_ref reorder "options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+)
+"options.ml" 312 14155 14165 "options.ml" 312 14155 14179
+type(
+  string list ref
+)
+ident(
+  int_ref ocaml_lexflags "options.ml" 258 12143 12147 "options.ml" 258 12143 12161
+)
+"options.ml" 312 14155 14180 "options.ml" 312 14155 14203
+type(
+  string list list ref
+)
+ident(
+  int_ref ocaml_lexflags_internal "options.ml" 116 4093 4097 "options.ml" 116 4093 4120
+)
+"options.ml" 312 14155 14157 "options.ml" 312 14155 14203
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 313 14205 14207 "options.ml" 313 14205 14214
+type(
+  string list ref -> string list list ref -> unit
+)
+ident(
+  int_ref reorder "options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+)
+"options.ml" 313 14205 14215 "options.ml" 313 14205 14227
+type(
+  string list ref
+)
+ident(
+  int_ref program_args "options.ml" 259 12171 12175 "options.ml" 259 12171 12187
+)
+"options.ml" 313 14205 14228 "options.ml" 313 14205 14249
+type(
+  string list list ref
+)
+ident(
+  int_ref program_args_internal "options.ml" 117 4130 4134 "options.ml" 117 4130 4155
+)
+"options.ml" 313 14205 14207 "options.ml" 313 14205 14249
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 314 14251 14253 "options.ml" 314 14251 14260
+type(
+  string list ref -> string list list ref -> unit
+)
+ident(
+  int_ref reorder "options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+)
+"options.ml" 314 14251 14261 "options.ml" 314 14251 14265
+type(
+  string list ref
+)
+ident(
+  int_ref tags "options.ml" 261 12222 12226 "options.ml" 261 12222 12230
+)
+"options.ml" 314 14251 14266 "options.ml" 314 14251 14279
+type(
+  string list list ref
+)
+ident(
+  int_ref tags_internal "options.ml" 119 4199 4203 "options.ml" 119 4199 4216
+)
+"options.ml" 314 14251 14253 "options.ml" 314 14251 14279
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 315 14281 14283 "options.ml" 315 14281 14290
+type(
+  string list ref -> string list list ref -> unit
+)
+ident(
+  int_ref reorder "options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+)
+"options.ml" 315 14281 14291 "options.ml" 315 14281 14300
+type(
+  string list ref
+)
+ident(
+  int_ref tag_lines "options.ml" 262 12240 12244 "options.ml" 262 12240 12253
+)
+"options.ml" 315 14281 14301 "options.ml" 315 14281 14319
+type(
+  string list list ref
+)
+ident(
+  int_ref tag_lines_internal "options.ml" 120 4235 4239 "options.ml" 120 4235 4257
+)
+"options.ml" 315 14281 14283 "options.ml" 315 14281 14319
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 316 14321 14323 "options.ml" 316 14321 14330
+type(
+  string list ref -> string list list ref -> unit
+)
+ident(
+  int_ref reorder "options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+)
+"options.ml" 316 14321 14331 "options.ml" 316 14321 14342
+type(
+  string list ref
+)
+ident(
+  int_ref ignore_list "options.ml" 260 12197 12201 "options.ml" 260 12197 12212
+)
+"options.ml" 316 14321 14343 "options.ml" 316 14321 14363
+type(
+  string list list ref
+)
+ident(
+  int_ref ignore_list_internal "options.ml" 118 4165 4169 "options.ml" 118 4165 4189
+)
+"options.ml" 316 14321 14323 "options.ml" 316 14321 14363
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 317 14365 14367 "options.ml" 317 14365 14374
+type(
+  string list ref -> string list list ref -> unit
+)
+ident(
+  int_ref reorder "options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+)
+"options.ml" 317 14365 14375 "options.ml" 317 14365 14384
+type(
+  string list ref
+)
+ident(
+  int_ref show_tags "options.ml" 263 12263 12267 "options.ml" 263 12263 12276
+)
+"options.ml" 317 14365 14385 "options.ml" 317 14365 14403
+type(
+  string list list ref
+)
+ident(
+  int_ref show_tags_internal "options.ml" 121 4267 4271 "options.ml" 121 4267 4289
+)
+"options.ml" 317 14365 14367 "options.ml" 317 14365 14403
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 318 14405 14407 "options.ml" 318 14405 14414
+type(
+  string list ref -> string list list ref -> unit
+)
+ident(
+  int_ref reorder "options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+)
+"options.ml" 318 14405 14415 "options.ml" 318 14405 14426
+type(
+  string list ref
+)
+ident(
+  int_ref plugin_tags "options.ml" 264 12286 12290 "options.ml" 264 12286 12301
+)
+"options.ml" 318 14405 14427 "options.ml" 318 14405 14447
+type(
+  string list list ref
+)
+ident(
+  int_ref plugin_tags_internal "options.ml" 122 4299 4303 "options.ml" 122 4299 4323
+)
+"options.ml" 318 14405 14407 "options.ml" 318 14405 14447
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 320 14450 14456 "options.ml" 320 14450 14465
+type(
+  string -> bool
+)
+ident(
+  def check_dir "options.ml" 327 14647 14649 "options.ml" 335 14852 14908
+)
+"options.ml" 320 14450 14466 "options.ml" 320 14450 14469
+type(
+  string
+)
+ident(
+  def dir "options.ml" 321 14472 14476 "options.ml" 325 14559 14641
+)
+"options.ml" 321 14472 14479 "options.ml" 321 14472 14499
+type(
+  string -> bool
+)
+ident(
+  ext_ref Filename.is_implicit
+)
+"options.ml" 321 14472 14500 "options.ml" 321 14472 14503
+type(
+  string
+)
+ident(
+  int_ref dir "options.ml" 320 14450 14466 "options.ml" 320 14450 14469
+)
+"options.ml" 321 14472 14479 "options.ml" 321 14472 14503
+call(
+  stack
+)
+type(
+  bool
+)
+"options.ml" 322 14509 14515 "options.ml" 322 14509 14530
+type(
+  string -> bool
+)
+ident(
+  ext_ref My_std.sys_file_exists
+)
+"options.ml" 322 14509 14531 "options.ml" 322 14509 14534
+type(
+  string
+)
+ident(
+  int_ref dir "options.ml" 320 14450 14466 "options.ml" 320 14450 14469
+)
+"options.ml" 322 14509 14515 "options.ml" 322 14509 14534
+call(
+  tail
+)
+type(
+  bool
+)
+"options.ml" 324 14544 14550 "options.ml" 324 14544 14558
+type(
+  string -> bool
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"options.ml" 325 14559 14568 "options.ml" 325 14559 14575
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Format.sprintf
+)
+"options.ml" 325 14559 14576 "options.ml" 325 14559 14636
+type(
+  (string -> string, unit, string) format
+)
+"options.ml" 325 14559 14637 "options.ml" 325 14559 14640
+type(
+  string
+)
+ident(
+  int_ref dir "options.ml" 320 14450 14466 "options.ml" 320 14450 14469
+)
+"options.ml" 325 14559 14567 "options.ml" 325 14559 14641
+call(
+  stack
+)
+type(
+  string
+)
+"options.ml" 324 14544 14550 "options.ml" 325 14559 14641
+call(
+  tail
+)
+type(
+  bool
+)
+"options.ml" 321 14472 14476 "options.ml" 325 14559 14641
+type(
+  bool
+)
+"options.ml" 327 14647 14653 "options.ml" 327 14647 14664
+type(
+  string list list ref -> string list ref -> unit
+)
+ident(
+  def dir_reorder "options.ml" 332 14763 14765 "options.ml" 335 14852 14908
+)
+"options.ml" 327 14647 14665 "options.ml" 327 14647 14667
+type(
+  string list list ref
+)
+ident(
+  def my "options.ml" 327 14647 14668 "options.ml" 330 14714 14757
+)
+"options.ml" 327 14647 14668 "options.ml" 327 14647 14671
+type(
+  string list ref
+)
+ident(
+  def dir "options.ml" 328 14674 14678 "options.ml" 330 14714 14757
+)
+"options.ml" 328 14674 14682 "options.ml" 328 14674 14683
+type(
+  string list
+)
+ident(
+  def d "options.ml" 329 14694 14698 "options.ml" 330 14714 14757
+)
+"options.ml" 328 14674 14686 "options.ml" 328 14674 14687
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 328 14674 14687 "options.ml" 328 14674 14690
+type(
+  string list ref
+)
+ident(
+  int_ref dir "options.ml" 327 14647 14668 "options.ml" 327 14647 14671
+)
+"options.ml" 328 14674 14686 "options.ml" 328 14674 14690
+type(
+  string list
+)
+"options.ml" 329 14694 14698 "options.ml" 329 14694 14705
+type(
+  string list ref -> string list list ref -> unit
+)
+ident(
+  int_ref reorder "options.ml" 302 13690 13696 "options.ml" 302 13690 13703
+)
+"options.ml" 329 14694 14706 "options.ml" 329 14694 14709
+type(
+  string list ref
+)
+ident(
+  int_ref dir "options.ml" 327 14647 14668 "options.ml" 327 14647 14671
+)
+"options.ml" 329 14694 14710 "options.ml" 329 14694 14712
+type(
+  string list list ref
+)
+ident(
+  int_ref my "options.ml" 327 14647 14665 "options.ml" 327 14647 14667
+)
+"options.ml" 329 14694 14698 "options.ml" 329 14694 14712
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 330 14714 14718 "options.ml" 330 14714 14721
+type(
+  string list ref
+)
+ident(
+  int_ref dir "options.ml" 327 14647 14668 "options.ml" 327 14647 14671
+)
+"options.ml" 330 14714 14722 "options.ml" 330 14714 14724
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 330 14714 14725 "options.ml" 330 14714 14736
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref My_std.List.filter
+)
+"options.ml" 330 14714 14737 "options.ml" 330 14714 14746
+type(
+  string -> bool
+)
+ident(
+  int_ref check_dir "options.ml" 320 14450 14456 "options.ml" 320 14450 14465
+)
+"options.ml" 330 14714 14748 "options.ml" 330 14714 14749
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 330 14714 14749 "options.ml" 330 14714 14752
+type(
+  string list ref
+)
+ident(
+  int_ref dir "options.ml" 327 14647 14668 "options.ml" 327 14647 14671
+)
+"options.ml" 330 14714 14748 "options.ml" 330 14714 14752
+type(
+  string list
+)
+"options.ml" 330 14714 14753 "options.ml" 330 14714 14754
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"options.ml" 330 14714 14755 "options.ml" 330 14714 14756
+type(
+  string list
+)
+ident(
+  int_ref d "options.ml" 328 14674 14682 "options.ml" 328 14674 14683
+)
+"options.ml" 330 14714 14747 "options.ml" 330 14714 14757
+call(
+  stack
+)
+type(
+  string list
+)
+"options.ml" 330 14714 14725 "options.ml" 330 14714 14757
+call(
+  stack
+)
+type(
+  string list
+)
+"options.ml" 330 14714 14718 "options.ml" 330 14714 14757
+type(
+  unit
+)
+"options.ml" 329 14694 14698 "options.ml" 330 14714 14757
+type(
+  unit
+)
+"options.ml" 328 14674 14678 "options.ml" 330 14714 14757
+type(
+  unit
+)
+"options.ml" 332 14763 14765 "options.ml" 332 14763 14776
+type(
+  string list list ref -> string list ref -> unit
+)
+ident(
+  int_ref dir_reorder "options.ml" 327 14647 14653 "options.ml" 327 14647 14664
+)
+"options.ml" 332 14763 14777 "options.ml" 332 14763 14792
+type(
+  string list list ref
+)
+ident(
+  int_ref my_include_dirs "options.ml" 125 4369 4373 "options.ml" 125 4369 4388
+)
+"options.ml" 332 14763 14793 "options.ml" 332 14763 14805
+type(
+  string list ref
+)
+ident(
+  int_ref include_dirs "options.ml" 27 1074 1078 "options.ml" 27 1074 1090
+)
+"options.ml" 332 14763 14765 "options.ml" 332 14763 14805
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 333 14807 14809 "options.ml" 333 14807 14820
+type(
+  string list list ref -> string list ref -> unit
+)
+ident(
+  int_ref dir_reorder "options.ml" 327 14647 14653 "options.ml" 327 14647 14664
+)
+"options.ml" 333 14807 14821 "options.ml" 333 14807 14836
+type(
+  string list list ref
+)
+ident(
+  int_ref my_exclude_dirs "options.ml" 126 4425 4429 "options.ml" 126 4425 4444
+)
+"options.ml" 333 14807 14837 "options.ml" 333 14807 14849
+type(
+  string list ref
+)
+ident(
+  int_ref exclude_dirs "options.ml" 28 1100 1104 "options.ml" 28 1100 1116
+)
+"options.ml" 333 14807 14809 "options.ml" 333 14807 14849
+call(
+  stack
+)
+type(
+  unit
+)
+"options.ml" 335 14852 14854 "options.ml" 335 14852 14865
+type(
+  string list ref
+)
+ident(
+  int_ref ignore_list "options.ml" 260 12197 12201 "options.ml" 260 12197 12212
+)
+"options.ml" 335 14852 14866 "options.ml" 335 14852 14868
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"options.ml" 335 14852 14869 "options.ml" 335 14852 14877
+type(
+  (string -> string) -> string list -> string list
+)
+ident(
+  ext_ref My_std.List.map
+)
+"options.ml" 335 14852 14878 "options.ml" 335 14852 14895
+type(
+  string -> string
+)
+ident(
+  ext_ref My_std.String.capitalize
+)
+"options.ml" 335 14852 14896 "options.ml" 335 14852 14897
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"options.ml" 335 14852 14897 "options.ml" 335 14852 14908
+type(
+  string list ref
+)
+ident(
+  int_ref ignore_list "options.ml" 260 12197 12201 "options.ml" 260 12197 12212
+)
+"options.ml" 335 14852 14896 "options.ml" 335 14852 14908
+type(
+  string list
+)
+"options.ml" 335 14852 14869 "options.ml" 335 14852 14908
+call(
+  stack
+)
+type(
+  string list
+)
+"options.ml" 335 14852 14854 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 333 14807 14809 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 332 14763 14765 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 327 14647 14649 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 320 14450 14452 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 318 14405 14407 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 317 14365 14367 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 316 14321 14323 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 315 14281 14283 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 314 14251 14253 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 313 14205 14207 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 312 14155 14157 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 311 14103 14105 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 310 14053 14055 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 309 14005 14007 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 308 13959 13961 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 307 13913 13915 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 306 13871 13873 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 305 13829 13831 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 304 13787 13789 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 303 13751 13753 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 302 13690 13692 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 287 13008 13010 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 273 12569 12571 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 271 12540 12542 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 270 12495 12497 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 269 12443 12445 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 268 12371 12373 "options.ml" 335 14852 14908
+type(
+  unit
+)
+"options.ml" 267 12326 12328 "options.ml" 335 14852 14908
+type(
+  unit
+)

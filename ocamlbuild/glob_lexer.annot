@@ -1,0 +1,3066 @@
+"glob_lexer.mll" 32 145 149 "glob_lexer.mll" 32 145 151
+type(
+  ('a, unit, string) format -> 'a
+)
+ident(
+  def sf "glob_lexer.mll" 34 172 172 "glob_lexer.ml" 1 0 -1
+)
+"glob_lexer.mll" 32 145 154 "glob_lexer.mll" 32 145 168
+type(
+  ('a, unit, string) format -> 'a
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"glob_lexer.mll" 34 172 176 "glob_lexer.mll" 34 172 191
+type(
+  Glob_ast.pattern -> Glob_ast.pattern -> Glob_ast.pattern
+)
+ident(
+  def concat_patterns "glob_lexer.mll" 41 302 302 "glob_lexer.ml" 1 0 -1
+)
+"glob_lexer.mll" 34 172 192 "glob_lexer.mll" 34 172 194
+type(
+  Glob_ast.pattern
+)
+ident(
+  def p1 "glob_lexer.mll" 34 172 195 "glob_lexer.mll" 38 265 297
+)
+"glob_lexer.mll" 34 172 195 "glob_lexer.mll" 34 172 197
+type(
+  Glob_ast.pattern
+)
+ident(
+  def p2 "glob_lexer.mll" 35 200 202 "glob_lexer.mll" 38 265 297
+)
+"glob_lexer.mll" 35 200 209 "glob_lexer.mll" 35 200 211
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p1 "glob_lexer.mll" 34 172 192 "glob_lexer.mll" 34 172 194
+)
+"glob_lexer.mll" 35 200 212 "glob_lexer.mll" 35 200 214
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p2 "glob_lexer.mll" 34 172 195 "glob_lexer.mll" 34 172 197
+)
+"glob_lexer.mll" 35 200 208 "glob_lexer.mll" 35 200 215
+type(
+  Glob_ast.pattern * Glob_ast.pattern
+)
+"glob_lexer.mll" 36 221 226 "glob_lexer.mll" 36 221 233
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 36 221 234 "glob_lexer.mll" 36 221 235
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 36 221 225 "glob_lexer.mll" 36 221 236
+type(
+  Glob_ast.pattern * Glob_ast.pattern
+)
+"glob_lexer.mll" 36 221 240 "glob_lexer.mll" 36 221 242
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p2 "glob_lexer.mll" 34 172 195 "glob_lexer.mll" 34 172 197
+)
+"glob_lexer.mll" 37 243 248 "glob_lexer.mll" 37 243 249
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 37 243 250 "glob_lexer.mll" 37 243 257
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 37 243 247 "glob_lexer.mll" 37 243 258
+type(
+  Glob_ast.pattern * Glob_ast.pattern
+)
+"glob_lexer.mll" 37 243 262 "glob_lexer.mll" 37 243 264
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p1 "glob_lexer.mll" 34 172 192 "glob_lexer.mll" 34 172 194
+)
+"glob_lexer.mll" 38 265 270 "glob_lexer.mll" 38 265 271
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 38 265 272 "glob_lexer.mll" 38 265 273
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 38 265 269 "glob_lexer.mll" 38 265 274
+type(
+  Glob_ast.pattern * Glob_ast.pattern
+)
+"glob_lexer.mll" 38 265 291 "glob_lexer.mll" 38 265 293
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p1 "glob_lexer.mll" 34 172 192 "glob_lexer.mll" 34 172 194
+)
+"glob_lexer.mll" 38 265 294 "glob_lexer.mll" 38 265 296
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p2 "glob_lexer.mll" 34 172 195 "glob_lexer.mll" 34 172 197
+)
+"glob_lexer.mll" 38 265 284 "glob_lexer.mll" 38 265 297
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 35 200 202 "glob_lexer.mll" 38 265 297
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 41 302 306 "glob_lexer.mll" 41 302 311
+type(
+  Glob_ast.pattern
+)
+ident(
+  def slash "glob_lexer.mll" 42 337 337 "glob_lexer.ml" 1 0 -1
+)
+"glob_lexer.mll" 41 302 325 "glob_lexer.mll" 41 302 328
+type(
+  char
+)
+"glob_lexer.mll" 41 302 329 "glob_lexer.mll" 41 302 332
+type(
+  char
+)
+"glob_lexer.mll" 41 302 324 "glob_lexer.mll" 41 302 333
+type(
+  char * char
+)
+"glob_lexer.mll" 41 302 319 "glob_lexer.mll" 41 302 334
+type(
+  Glob_ast.character_class
+)
+"glob_lexer.mll" 41 302 314 "glob_lexer.mll" 41 302 334
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 42 337 341 "glob_lexer.mll" 42 337 350
+type(
+  Glob_ast.pattern
+)
+ident(
+  def not_slash "glob_lexer.mll" 43 381 381 "glob_lexer.ml" 1 0 -1
+)
+"glob_lexer.mll" 42 337 368 "glob_lexer.mll" 42 337 371
+type(
+  char
+)
+"glob_lexer.mll" 42 337 372 "glob_lexer.mll" 42 337 375
+type(
+  char
+)
+"glob_lexer.mll" 42 337 367 "glob_lexer.mll" 42 337 376
+type(
+  char * char
+)
+"glob_lexer.mll" 42 337 362 "glob_lexer.mll" 42 337 377
+type(
+  (char * char) Bool.boolean
+)
+"glob_lexer.mll" 42 337 358 "glob_lexer.mll" 42 337 378
+type(
+  Glob_ast.character_class
+)
+"glob_lexer.mll" 42 337 353 "glob_lexer.mll" 42 337 378
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 43 381 385 "glob_lexer.mll" 43 381 388
+type(
+  Glob_ast.pattern
+)
+ident(
+  def any "glob_lexer.ml" 32 426 426 "glob_lexer.ml" 1 0 -1
+)
+"glob_lexer.mll" 43 381 397 "glob_lexer.mll" 43 381 401
+type(
+  Glob_ast.character_class
+)
+"glob_lexer.mll" 43 381 391 "glob_lexer.mll" 43 381 401
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.ml" 32 426 430 "glob_lexer.ml" 32 426 448
+type(
+  Lexing.lex_tables
+)
+ident(
+  def __ocaml_lex_tables "glob_lexer.ml" 179 9561 9561 "glob_lexer.ml" 1 0 -1
+)
+"glob_lexer.ml" 34 474 477 "glob_lexer.ml" 40 894 955
+type(
+  string
+)
+"glob_lexer.ml" 42 981 984 "glob_lexer.ml" 48 1401 1462
+type(
+  string
+)
+"glob_lexer.ml" 50 1488 1491 "glob_lexer.ml" 56 1908 1969
+type(
+  string
+)
+"glob_lexer.ml" 58 1993 1996 "glob_lexer.ml" 110 5633 5662
+type(
+  string
+)
+"glob_lexer.ml" 112 5686 5689 "glob_lexer.ml" 164 9326 9355
+type(
+  string
+)
+"glob_lexer.ml" 166 9383 9386 "glob_lexer.ml" 166 9383 9388
+type(
+  string
+)
+"glob_lexer.ml" 168 9419 9422 "glob_lexer.ml" 168 9419 9424
+type(
+  string
+)
+"glob_lexer.ml" 170 9455 9458 "glob_lexer.ml" 170 9455 9460
+type(
+  string
+)
+"glob_lexer.ml" 172 9489 9492 "glob_lexer.ml" 172 9489 9494
+type(
+  string
+)
+"glob_lexer.ml" 174 9523 9526 "glob_lexer.ml" 174 9523 9528
+type(
+  string
+)
+"glob_lexer.ml" 176 9551 9554 "glob_lexer.ml" 176 9551 9556
+type(
+  string
+)
+"glob_lexer.ml" 32 426 451 "glob_lexer.ml" 177 9558 9559
+type(
+  Lexing.lex_tables
+)
+"glob_lexer.ml" 179 9561 9569 "glob_lexer.ml" 179 9561 9574
+type(
+  Lexing.lexbuf -> token
+)
+ident(
+  def token "glob_lexer.ml" 179 9561 9561 "glob_lexer.ml" 1 0 -1
+)
+"glob_lexer.ml" 179 9561 9575 "glob_lexer.ml" 179 9561 9581
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "glob_lexer.ml" 180 9584 9588 "glob_lexer.ml" 180 9584 9618
+)
+"glob_lexer.ml" 180 9584 9588 "glob_lexer.ml" 180 9584 9609
+type(
+  Lexing.lexbuf -> int -> token
+)
+ident(
+  int_ref __ocaml_lex_token_rec "glob_lexer.ml" 181 9619 9623 "glob_lexer.ml" 181 9619 9644
+)
+"glob_lexer.ml" 180 9584 9610 "glob_lexer.ml" 180 9584 9616
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 179 9561 9575 "glob_lexer.ml" 179 9561 9581
+)
+"glob_lexer.ml" 180 9584 9617 "glob_lexer.ml" 180 9584 9618
+type(
+  int
+)
+"glob_lexer.ml" 180 9584 9588 "glob_lexer.ml" 180 9584 9618
+call(
+  tail
+)
+type(
+  token
+)
+"glob_lexer.ml" 181 9619 9623 "glob_lexer.ml" 181 9619 9644
+type(
+  Lexing.lexbuf -> int -> token
+)
+ident(
+  def __ocaml_lex_token_rec "glob_lexer.ml" 179 9561 9561 "glob_lexer.ml" 1 0 -1
+)
+"glob_lexer.ml" 181 9619 9645 "glob_lexer.ml" 181 9619 9651
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "glob_lexer.ml" 181 9619 9652 "glob_lexer.ml" 239 10815 10867
+)
+"glob_lexer.ml" 181 9619 9652 "glob_lexer.ml" 181 9619 9669
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "glob_lexer.ml" 182 9672 9674 "glob_lexer.ml" 239 10815 10867
+)
+"glob_lexer.ml" 182 9672 9680 "glob_lexer.ml" 182 9672 9693
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"glob_lexer.ml" 182 9672 9694 "glob_lexer.ml" 182 9672 9712
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "glob_lexer.ml" 32 426 430 "glob_lexer.ml" 32 426 448
+)
+"glob_lexer.ml" 182 9672 9713 "glob_lexer.ml" 182 9672 9730
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "glob_lexer.ml" 181 9619 9652 "glob_lexer.ml" 181 9619 9669
+)
+"glob_lexer.ml" 182 9672 9731 "glob_lexer.ml" 182 9672 9737
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 181 9619 9645 "glob_lexer.ml" 181 9619 9651
+)
+"glob_lexer.ml" 182 9672 9680 "glob_lexer.ml" 182 9672 9737
+call(
+  stack
+)
+type(
+  int
+)
+"glob_lexer.ml" 183 9743 9751 "glob_lexer.ml" 183 9743 9752
+type(
+  int
+)
+"glob_lexer.mll" 50 9778 9816 "glob_lexer.mll" 50 9778 9817
+type(
+  Glob_ast.pattern
+)
+ident(
+  def p "glob_lexer.mll" 50 9778 9861 "glob_lexer.mll" 50 9778 9862
+)
+"glob_lexer.mll" 50 9778 9818 "glob_lexer.mll" 50 9778 9819
+type(
+  char
+)
+"glob_lexer.mll" 50 9778 9815 "glob_lexer.mll" 50 9778 9820
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.mll" 50 9778 9823 "glob_lexer.mll" 50 9778 9836
+type(
+  char list -> Glob_ast.pattern -> Lexing.lexbuf -> Glob_ast.pattern * char
+)
+ident(
+  int_ref parse_pattern "glob_lexer.ml" 241 10869 10873 "glob_lexer.ml" 241 10869 10886
+)
+"glob_lexer.mll" 50 9778 9838 "glob_lexer.mll" 50 9778 9841
+type(
+  char
+)
+"glob_lexer.mll" 50 9778 9837 "glob_lexer.mll" 50 9778 9842
+type(
+  char list
+)
+"glob_lexer.mll" 50 9778 9843 "glob_lexer.mll" 50 9778 9850
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 50 9778 9851 "glob_lexer.mll" 50 9778 9857
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 181 9619 9645 "glob_lexer.ml" 181 9619 9651
+)
+"glob_lexer.mll" 50 9778 9823 "glob_lexer.mll" 50 9778 9857
+call(
+  stack
+)
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.mll" 50 9778 9861 "glob_lexer.mll" 50 9778 9862
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p "glob_lexer.mll" 50 9778 9816 "glob_lexer.mll" 50 9778 9817
+)
+"glob_lexer.mll" 50 9778 9810 "glob_lexer.mll" 50 9778 9863
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 50 9778 9802 "glob_lexer.mll" 50 9778 9864
+type(
+  Glob_ast.pattern Glob_ast.atom
+)
+"glob_lexer.mll" 50 9778 9796 "glob_lexer.mll" 50 9778 9866
+type(
+  token
+)
+"glob_lexer.ml" 188 9890 9894 "glob_lexer.ml" 188 9890 9895
+type(
+  int
+)
+"glob_lexer.mll" 51 9921 9955 "glob_lexer.mll" 51 9921 9967
+type(
+  Buffer.t -> Lexing.lexbuf -> string
+)
+ident(
+  int_ref parse_string "glob_lexer.ml" 341 13567 13571 "glob_lexer.ml" 341 13567 13583
+)
+"glob_lexer.mll" 51 9921 9969 "glob_lexer.mll" 51 9921 9982
+type(
+  int -> Buffer.t
+)
+ident(
+  ext_ref Buffer.create
+)
+"glob_lexer.mll" 51 9921 9983 "glob_lexer.mll" 51 9921 9985
+type(
+  int
+)
+"glob_lexer.mll" 51 9921 9968 "glob_lexer.mll" 51 9921 9986
+call(
+  stack
+)
+type(
+  Buffer.t
+)
+"glob_lexer.mll" 51 9921 9987 "glob_lexer.mll" 51 9921 9993
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 181 9619 9645 "glob_lexer.ml" 181 9619 9651
+)
+"glob_lexer.mll" 51 9921 9954 "glob_lexer.mll" 51 9921 9994
+call(
+  stack
+)
+type(
+  string
+)
+"glob_lexer.mll" 51 9921 9945 "glob_lexer.mll" 51 9921 9995
+type(
+  Glob_ast.pattern Glob_ast.atom
+)
+"glob_lexer.mll" 51 9921 9939 "glob_lexer.mll" 51 9921 9997
+type(
+  token
+)
+"glob_lexer.ml" 193 10021 10025 "glob_lexer.ml" 193 10021 10026
+type(
+  int
+)
+"glob_lexer.mll" 52 10052 10070 "glob_lexer.mll" 52 10052 10077
+type(
+  token
+)
+"glob_lexer.ml" 198 10101 10105 "glob_lexer.ml" 198 10101 10106
+type(
+  int
+)
+"glob_lexer.mll" 53 10132 10150 "glob_lexer.mll" 53 10132 10156
+type(
+  token
+)
+"glob_lexer.ml" 203 10180 10184 "glob_lexer.ml" 203 10180 10185
+type(
+  int
+)
+"glob_lexer.mll" 54 10211 10229 "glob_lexer.mll" 54 10211 10236
+type(
+  token
+)
+"glob_lexer.ml" 208 10260 10264 "glob_lexer.ml" 208 10260 10265
+type(
+  int
+)
+"glob_lexer.mll" 55 10291 10309 "glob_lexer.mll" 55 10291 10317
+type(
+  token
+)
+"glob_lexer.ml" 213 10341 10345 "glob_lexer.ml" 213 10341 10346
+type(
+  int
+)
+"glob_lexer.mll" 56 10372 10390 "glob_lexer.mll" 56 10372 10399
+type(
+  token
+)
+"glob_lexer.ml" 218 10423 10427 "glob_lexer.ml" 218 10423 10428
+type(
+  int
+)
+"glob_lexer.mll" 57 10454 10472 "glob_lexer.mll" 57 10454 10480
+type(
+  token
+)
+"glob_lexer.ml" 223 10504 10508 "glob_lexer.ml" 223 10504 10509
+type(
+  int
+)
+"glob_lexer.mll" 58 10535 10553 "glob_lexer.mll" 58 10535 10561
+type(
+  token
+)
+"glob_lexer.ml" 228 10585 10589 "glob_lexer.ml" 228 10585 10590
+type(
+  int
+)
+"glob_lexer.mll" 59 10616 10636 "glob_lexer.mll" 59 10616 10641
+type(
+  Lexing.lexbuf -> token
+)
+ident(
+  int_ref token "glob_lexer.ml" 179 9561 9569 "glob_lexer.ml" 179 9561 9574
+)
+"glob_lexer.mll" 59 10616 10642 "glob_lexer.mll" 59 10616 10648
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 181 9619 9645 "glob_lexer.ml" 181 9619 9651
+)
+"glob_lexer.mll" 59 10616 10634 "glob_lexer.mll" 59 10616 10650
+call(
+  tail
+)
+type(
+  token
+)
+"glob_lexer.ml" 233 10674 10678 "glob_lexer.ml" 233 10674 10680
+type(
+  int
+)
+"glob_lexer.mll" 60 10706 10724 "glob_lexer.mll" 60 10706 10731
+type(
+  token
+)
+"glob_lexer.ml" 238 10755 10759 "glob_lexer.ml" 238 10755 10776
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "glob_lexer.ml" 238 10755 10780 "glob_lexer.ml" 239 10815 10867
+)
+"glob_lexer.ml" 238 10755 10780 "glob_lexer.ml" 238 10755 10786
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 181 9619 9645 "glob_lexer.ml" 181 9619 9651
+)
+"glob_lexer.ml" 238 10755 10780 "glob_lexer.ml" 238 10755 10805
+type(
+  Lexing.lexbuf -> unit
+)
+"glob_lexer.ml" 238 10755 10806 "glob_lexer.ml" 238 10755 10812
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 181 9619 9645 "glob_lexer.ml" 181 9619 9651
+)
+"glob_lexer.ml" 238 10755 10780 "glob_lexer.ml" 238 10755 10812
+call(
+  stack
+)
+type(
+  unit
+)
+"glob_lexer.ml" 239 10815 10821 "glob_lexer.ml" 239 10815 10842
+type(
+  Lexing.lexbuf -> int -> token
+)
+ident(
+  int_ref __ocaml_lex_token_rec "glob_lexer.ml" 181 9619 9623 "glob_lexer.ml" 181 9619 9644
+)
+"glob_lexer.ml" 239 10815 10843 "glob_lexer.ml" 239 10815 10849
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 181 9619 9645 "glob_lexer.ml" 181 9619 9651
+)
+"glob_lexer.ml" 239 10815 10850 "glob_lexer.ml" 239 10815 10867
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "glob_lexer.ml" 238 10755 10759 "glob_lexer.ml" 238 10755 10776
+)
+"glob_lexer.ml" 239 10815 10821 "glob_lexer.ml" 239 10815 10867
+call(
+  tail
+)
+type(
+  token
+)
+"glob_lexer.ml" 238 10755 10780 "glob_lexer.ml" 239 10815 10867
+type(
+  token
+)
+"glob_lexer.ml" 182 9672 9674 "glob_lexer.ml" 239 10815 10867
+type(
+  token
+)
+"glob_lexer.ml" 241 10869 10873 "glob_lexer.ml" 241 10869 10886
+type(
+  char list -> Glob_ast.pattern -> Lexing.lexbuf -> Glob_ast.pattern * char
+)
+ident(
+  def parse_pattern "glob_lexer.ml" 179 9561 9561 "glob_lexer.ml" 1 0 -1
+)
+"glob_lexer.ml" 241 10869 10887 "glob_lexer.ml" 241 10869 10896
+type(
+  char list
+)
+ident(
+  def eof_chars "glob_lexer.ml" 241 10869 10897 "glob_lexer.ml" 242 10908 10963
+)
+"glob_lexer.ml" 241 10869 10897 "glob_lexer.ml" 241 10869 10898
+type(
+  Glob_ast.pattern
+)
+ident(
+  def p "glob_lexer.ml" 241 10869 10899 "glob_lexer.ml" 242 10908 10963
+)
+"glob_lexer.ml" 241 10869 10899 "glob_lexer.ml" 241 10869 10905
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "glob_lexer.ml" 242 10908 10912 "glob_lexer.ml" 242 10908 10963
+)
+"glob_lexer.ml" 242 10908 10912 "glob_lexer.ml" 242 10908 10941
+type(
+  char list ->
+  Glob_ast.pattern -> Lexing.lexbuf -> int -> Glob_ast.pattern * char
+)
+ident(
+  int_ref __ocaml_lex_parse_pattern_rec "glob_lexer.ml" 243 10964 10968 "glob_lexer.ml" 243 10964 10997
+)
+"glob_lexer.ml" 242 10908 10942 "glob_lexer.ml" 242 10908 10951
+type(
+  char list
+)
+ident(
+  int_ref eof_chars "glob_lexer.ml" 241 10869 10887 "glob_lexer.ml" 241 10869 10896
+)
+"glob_lexer.ml" 242 10908 10952 "glob_lexer.ml" 242 10908 10953
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p "glob_lexer.ml" 241 10869 10897 "glob_lexer.ml" 241 10869 10898
+)
+"glob_lexer.ml" 242 10908 10954 "glob_lexer.ml" 242 10908 10960
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 241 10869 10899 "glob_lexer.ml" 241 10869 10905
+)
+"glob_lexer.ml" 242 10908 10961 "glob_lexer.ml" 242 10908 10963
+type(
+  int
+)
+"glob_lexer.ml" 242 10908 10912 "glob_lexer.ml" 242 10908 10963
+call(
+  tail
+)
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 243 10964 10968 "glob_lexer.ml" 243 10964 10997
+type(
+  char list ->
+  Glob_ast.pattern -> Lexing.lexbuf -> int -> Glob_ast.pattern * char
+)
+ident(
+  def __ocaml_lex_parse_pattern_rec "glob_lexer.ml" 179 9561 9561 "glob_lexer.ml" 1 0 -1
+)
+"glob_lexer.ml" 243 10964 10998 "glob_lexer.ml" 243 10964 11007
+type(
+  char list
+)
+ident(
+  def eof_chars "glob_lexer.ml" 243 10964 11008 "glob_lexer.ml" 339 13493 13565
+)
+"glob_lexer.ml" 243 10964 11008 "glob_lexer.ml" 243 10964 11009
+type(
+  Glob_ast.pattern
+)
+ident(
+  def p "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 339 13493 13565
+)
+"glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "glob_lexer.ml" 243 10964 11017 "glob_lexer.ml" 339 13493 13565
+)
+"glob_lexer.ml" 243 10964 11017 "glob_lexer.ml" 243 10964 11034
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "glob_lexer.ml" 244 11037 11039 "glob_lexer.ml" 339 13493 13565
+)
+"glob_lexer.ml" 244 11037 11045 "glob_lexer.ml" 244 11037 11058
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"glob_lexer.ml" 244 11037 11059 "glob_lexer.ml" 244 11037 11077
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "glob_lexer.ml" 32 426 430 "glob_lexer.ml" 32 426 448
+)
+"glob_lexer.ml" 244 11037 11078 "glob_lexer.ml" 244 11037 11095
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "glob_lexer.ml" 243 10964 11017 "glob_lexer.ml" 243 10964 11034
+)
+"glob_lexer.ml" 244 11037 11096 "glob_lexer.ml" 244 11037 11102
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.ml" 244 11037 11045 "glob_lexer.ml" 244 11037 11102
+call(
+  stack
+)
+type(
+  int
+)
+"glob_lexer.ml" 245 11108 11116 "glob_lexer.ml" 245 11108 11117
+type(
+  int
+)
+"glob_lexer.mll" 63 11147 11168 "glob_lexer.mll" 63 11147 11169
+type(
+  string
+)
+ident(
+  def u "glob_lexer.mll" 63 11299 11323 "glob_lexer.mll" 63 11299 11386
+)
+"glob_lexer.ml" 250 11192 11194 "glob_lexer.ml" 250 11192 11211
+type(
+  Lexing.lexbuf -> int -> int -> string
+)
+ident(
+  ext_ref Lexing.sub_lexeme
+)
+"glob_lexer.ml" 250 11192 11212 "glob_lexer.ml" 250 11192 11218
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.ml" 250 11192 11219 "glob_lexer.ml" 250 11192 11225
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.ml" 250 11192 11219 "glob_lexer.ml" 250 11192 11246
+type(
+  int
+)
+"glob_lexer.ml" 250 11192 11247 "glob_lexer.ml" 250 11192 11253
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.ml" 250 11192 11247 "glob_lexer.ml" 250 11192 11273
+type(
+  int
+)
+"glob_lexer.ml" 250 11192 11194 "glob_lexer.ml" 250 11192 11273
+call(
+  stack
+)
+type(
+  string
+)
+"glob_lexer.mll" 63 11299 11325 "glob_lexer.mll" 63 11299 11338
+type(
+  char list -> Glob_ast.pattern -> Lexing.lexbuf -> Glob_ast.pattern * char
+)
+ident(
+  int_ref parse_pattern "glob_lexer.ml" 241 10869 10873 "glob_lexer.ml" 241 10869 10886
+)
+"glob_lexer.mll" 63 11299 11339 "glob_lexer.mll" 63 11299 11348
+type(
+  char list
+)
+ident(
+  int_ref eof_chars "glob_lexer.ml" 243 10964 10998 "glob_lexer.ml" 243 10964 11007
+)
+"glob_lexer.mll" 63 11299 11350 "glob_lexer.mll" 63 11299 11365
+type(
+  Glob_ast.pattern -> Glob_ast.pattern -> Glob_ast.pattern
+)
+ident(
+  int_ref concat_patterns "glob_lexer.mll" 34 172 176 "glob_lexer.mll" 34 172 191
+)
+"glob_lexer.mll" 63 11299 11366 "glob_lexer.mll" 63 11299 11367
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p "glob_lexer.ml" 243 10964 11008 "glob_lexer.ml" 243 10964 11009
+)
+"glob_lexer.mll" 63 11299 11374 "glob_lexer.mll" 63 11299 11375
+type(
+  string
+)
+ident(
+  int_ref u "glob_lexer.mll" 63 11147 11168 "glob_lexer.mll" 63 11147 11169
+)
+"glob_lexer.mll" 63 11299 11368 "glob_lexer.mll" 63 11299 11376
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 63 11299 11349 "glob_lexer.mll" 63 11299 11377
+call(
+  stack
+)
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 63 11299 11378 "glob_lexer.mll" 63 11299 11384
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.mll" 63 11299 11323 "glob_lexer.mll" 63 11299 11386
+call(
+  tail
+)
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 246 11121 11121 "glob_lexer.mll" 63 11299 11386
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 255 11410 11414 "glob_lexer.ml" 255 11410 11415
+type(
+  int
+)
+"glob_lexer.mll" 66 11445 11457 "glob_lexer.mll" 66 11445 11461
+type(
+  Glob_ast.pattern list -> Glob_ast.pattern * char
+)
+ident(
+  def loop "glob_lexer.mll" 65 11441 11443 "glob_lexer.mll" 75 11693 11696
+)
+"glob_lexer.mll" 66 11445 11462 "glob_lexer.mll" 66 11445 11464
+type(
+  Glob_ast.pattern list
+)
+ident(
+  def pl "glob_lexer.mll" 67 11467 11473 "glob_lexer.mll" 72 11604 11673
+)
+"glob_lexer.mll" 67 11467 11478 "glob_lexer.mll" 67 11467 11480
+type(
+  Glob_ast.pattern
+)
+ident(
+  def p' "glob_lexer.mll" 68 11528 11534 "glob_lexer.mll" 72 11604 11673
+)
+"glob_lexer.mll" 67 11467 11481 "glob_lexer.mll" 67 11467 11482
+type(
+  char
+)
+ident(
+  def c "glob_lexer.mll" 68 11528 11534 "glob_lexer.mll" 72 11604 11673
+)
+"glob_lexer.mll" 67 11467 11477 "glob_lexer.mll" 67 11467 11483
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.mll" 67 11467 11486 "glob_lexer.mll" 67 11467 11499
+type(
+  char list -> Glob_ast.pattern -> Lexing.lexbuf -> Glob_ast.pattern * char
+)
+ident(
+  int_ref parse_pattern "glob_lexer.ml" 241 10869 10873 "glob_lexer.ml" 241 10869 10886
+)
+"glob_lexer.mll" 67 11467 11501 "glob_lexer.mll" 67 11467 11504
+type(
+  char
+)
+"glob_lexer.mll" 67 11467 11505 "glob_lexer.mll" 67 11467 11508
+type(
+  char
+)
+"glob_lexer.mll" 67 11467 11500 "glob_lexer.mll" 67 11467 11509
+type(
+  char list
+)
+"glob_lexer.mll" 67 11467 11510 "glob_lexer.mll" 67 11467 11517
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 67 11467 11518 "glob_lexer.mll" 67 11467 11524
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.mll" 67 11467 11486 "glob_lexer.mll" 67 11467 11524
+call(
+  stack
+)
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.mll" 68 11528 11538 "glob_lexer.mll" 68 11528 11540
+type(
+  Glob_ast.pattern list
+)
+ident(
+  def pl "glob_lexer.mll" 69 11555 11561 "glob_lexer.mll" 72 11604 11673
+)
+"glob_lexer.mll" 68 11528 11543 "glob_lexer.mll" 68 11528 11545
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p' "glob_lexer.mll" 67 11467 11478 "glob_lexer.mll" 67 11467 11480
+)
+"glob_lexer.mll" 68 11528 11549 "glob_lexer.mll" 68 11528 11551
+type(
+  Glob_ast.pattern list
+)
+ident(
+  int_ref pl "glob_lexer.mll" 66 11445 11462 "glob_lexer.mll" 66 11445 11464
+)
+"glob_lexer.mll" 68 11528 11543 "glob_lexer.mll" 68 11528 11551
+type(
+  Glob_ast.pattern list
+)
+"glob_lexer.mll" 69 11555 11564 "glob_lexer.mll" 69 11555 11565
+type(
+  char
+)
+ident(
+  int_ref c "glob_lexer.mll" 67 11467 11481 "glob_lexer.mll" 67 11467 11482
+)
+"glob_lexer.mll" 69 11555 11566 "glob_lexer.mll" 69 11555 11567
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"glob_lexer.mll" 69 11555 11568 "glob_lexer.mll" 69 11555 11571
+type(
+  char
+)
+"glob_lexer.mll" 69 11555 11564 "glob_lexer.mll" 69 11555 11571
+type(
+  bool
+)
+"glob_lexer.mll" 70 11577 11585 "glob_lexer.mll" 70 11577 11589
+type(
+  Glob_ast.pattern list -> Glob_ast.pattern * char
+)
+ident(
+  int_ref loop "glob_lexer.mll" 66 11445 11457 "glob_lexer.mll" 66 11445 11461
+)
+"glob_lexer.mll" 70 11577 11590 "glob_lexer.mll" 70 11577 11592
+type(
+  Glob_ast.pattern list
+)
+ident(
+  int_ref pl "glob_lexer.mll" 68 11528 11538 "glob_lexer.mll" 68 11528 11540
+)
+"glob_lexer.mll" 70 11577 11585 "glob_lexer.mll" 70 11577 11592
+call(
+  tail
+)
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.mll" 72 11604 11612 "glob_lexer.mll" 72 11604 11625
+type(
+  char list -> Glob_ast.pattern -> Lexing.lexbuf -> Glob_ast.pattern * char
+)
+ident(
+  int_ref parse_pattern "glob_lexer.ml" 241 10869 10873 "glob_lexer.ml" 241 10869 10886
+)
+"glob_lexer.mll" 72 11604 11626 "glob_lexer.mll" 72 11604 11635
+type(
+  char list
+)
+ident(
+  int_ref eof_chars "glob_lexer.ml" 243 10964 10998 "glob_lexer.ml" 243 10964 11007
+)
+"glob_lexer.mll" 72 11604 11637 "glob_lexer.mll" 72 11604 11652
+type(
+  Glob_ast.pattern -> Glob_ast.pattern -> Glob_ast.pattern
+)
+ident(
+  int_ref concat_patterns "glob_lexer.mll" 34 172 176 "glob_lexer.mll" 34 172 191
+)
+"glob_lexer.mll" 72 11604 11653 "glob_lexer.mll" 72 11604 11654
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p "glob_lexer.ml" 243 10964 11008 "glob_lexer.ml" 243 10964 11009
+)
+"glob_lexer.mll" 72 11604 11662 "glob_lexer.mll" 72 11604 11664
+type(
+  Glob_ast.pattern list
+)
+ident(
+  int_ref pl "glob_lexer.mll" 68 11528 11538 "glob_lexer.mll" 68 11528 11540
+)
+"glob_lexer.mll" 72 11604 11655 "glob_lexer.mll" 72 11604 11665
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 72 11604 11636 "glob_lexer.mll" 72 11604 11666
+call(
+  stack
+)
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 72 11604 11667 "glob_lexer.mll" 72 11604 11673
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.mll" 72 11604 11612 "glob_lexer.mll" 72 11604 11673
+call(
+  tail
+)
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.mll" 69 11555 11561 "glob_lexer.mll" 72 11604 11673
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.mll" 68 11528 11534 "glob_lexer.mll" 72 11604 11673
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.mll" 67 11467 11473 "glob_lexer.mll" 72 11604 11673
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.mll" 74 11681 11685 "glob_lexer.mll" 74 11681 11689
+type(
+  Glob_ast.pattern list -> Glob_ast.pattern * char
+)
+ident(
+  int_ref loop "glob_lexer.mll" 66 11445 11457 "glob_lexer.mll" 66 11445 11461
+)
+"glob_lexer.mll" 74 11681 11690 "glob_lexer.mll" 74 11681 11692
+type(
+  Glob_ast.pattern list
+)
+"glob_lexer.mll" 74 11681 11685 "glob_lexer.mll" 74 11681 11692
+call(
+  tail
+)
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.mll" 65 11441 11443 "glob_lexer.mll" 75 11693 11696
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 270 11720 11724 "glob_lexer.ml" 270 11720 11725
+type(
+  int
+)
+"glob_lexer.mll" 78 11755 11763 "glob_lexer.mll" 78 11755 11765
+type(
+  (char * char) Bool.boolean
+)
+ident(
+  def cl "glob_lexer.mll" 79 11802 11806 "glob_lexer.mll" 79 11802 11867
+)
+"glob_lexer.mll" 78 11755 11775 "glob_lexer.mll" 78 11755 11786
+type(
+  (char * char) Bool.boolean list ->
+  Lexing.lexbuf -> (char * char) Bool.boolean list
+)
+ident(
+  int_ref parse_class "glob_lexer.ml" 378 14677 14681 "glob_lexer.ml" 378 14677 14692
+)
+"glob_lexer.mll" 78 11755 11787 "glob_lexer.mll" 78 11755 11789
+type(
+  (char * char) Bool.boolean list
+)
+"glob_lexer.mll" 78 11755 11790 "glob_lexer.mll" 78 11755 11796
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.mll" 78 11755 11774 "glob_lexer.mll" 78 11755 11797
+call(
+  stack
+)
+type(
+  (char * char) Bool.boolean list
+)
+"glob_lexer.mll" 78 11755 11771 "glob_lexer.mll" 78 11755 11798
+type(
+  (char * char) Bool.boolean
+)
+"glob_lexer.mll" 78 11755 11768 "glob_lexer.mll" 78 11755 11798
+type(
+  (char * char) Bool.boolean
+)
+"glob_lexer.mll" 79 11802 11806 "glob_lexer.mll" 79 11802 11819
+type(
+  char list -> Glob_ast.pattern -> Lexing.lexbuf -> Glob_ast.pattern * char
+)
+ident(
+  int_ref parse_pattern "glob_lexer.ml" 241 10869 10873 "glob_lexer.ml" 241 10869 10886
+)
+"glob_lexer.mll" 79 11802 11820 "glob_lexer.mll" 79 11802 11829
+type(
+  char list
+)
+ident(
+  int_ref eof_chars "glob_lexer.ml" 243 10964 10998 "glob_lexer.ml" 243 10964 11007
+)
+"glob_lexer.mll" 79 11802 11831 "glob_lexer.mll" 79 11802 11846
+type(
+  Glob_ast.pattern -> Glob_ast.pattern -> Glob_ast.pattern
+)
+ident(
+  int_ref concat_patterns "glob_lexer.mll" 34 172 176 "glob_lexer.mll" 34 172 191
+)
+"glob_lexer.mll" 79 11802 11847 "glob_lexer.mll" 79 11802 11848
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p "glob_lexer.ml" 243 10964 11008 "glob_lexer.ml" 243 10964 11009
+)
+"glob_lexer.mll" 79 11802 11856 "glob_lexer.mll" 79 11802 11858
+type(
+  Glob_ast.character_class
+)
+ident(
+  int_ref cl "glob_lexer.mll" 78 11755 11763 "glob_lexer.mll" 78 11755 11765
+)
+"glob_lexer.mll" 79 11802 11849 "glob_lexer.mll" 79 11802 11859
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 79 11802 11830 "glob_lexer.mll" 79 11802 11860
+call(
+  stack
+)
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 79 11802 11861 "glob_lexer.mll" 79 11802 11867
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.mll" 79 11802 11806 "glob_lexer.mll" 79 11802 11867
+call(
+  tail
+)
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.mll" 77 11751 11753 "glob_lexer.mll" 80 11868 11871
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 278 11895 11899 "glob_lexer.ml" 278 11895 11900
+type(
+  int
+)
+"glob_lexer.mll" 83 11930 11938 "glob_lexer.mll" 83 11930 11940
+type(
+  (char * char) Bool.boolean
+)
+ident(
+  def cl "glob_lexer.mll" 84 11972 11976 "glob_lexer.mll" 84 11972 12037
+)
+"glob_lexer.mll" 83 11930 11946 "glob_lexer.mll" 83 11930 11957
+type(
+  (char * char) Bool.boolean list ->
+  Lexing.lexbuf -> (char * char) Bool.boolean list
+)
+ident(
+  int_ref parse_class "glob_lexer.ml" 378 14677 14681 "glob_lexer.ml" 378 14677 14692
+)
+"glob_lexer.mll" 83 11930 11958 "glob_lexer.mll" 83 11930 11960
+type(
+  (char * char) Bool.boolean list
+)
+"glob_lexer.mll" 83 11930 11961 "glob_lexer.mll" 83 11930 11967
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.mll" 83 11930 11945 "glob_lexer.mll" 83 11930 11968
+call(
+  stack
+)
+type(
+  (char * char) Bool.boolean list
+)
+"glob_lexer.mll" 83 11930 11943 "glob_lexer.mll" 83 11930 11968
+type(
+  (char * char) Bool.boolean
+)
+"glob_lexer.mll" 84 11972 11976 "glob_lexer.mll" 84 11972 11989
+type(
+  char list -> Glob_ast.pattern -> Lexing.lexbuf -> Glob_ast.pattern * char
+)
+ident(
+  int_ref parse_pattern "glob_lexer.ml" 241 10869 10873 "glob_lexer.ml" 241 10869 10886
+)
+"glob_lexer.mll" 84 11972 11990 "glob_lexer.mll" 84 11972 11999
+type(
+  char list
+)
+ident(
+  int_ref eof_chars "glob_lexer.ml" 243 10964 10998 "glob_lexer.ml" 243 10964 11007
+)
+"glob_lexer.mll" 84 11972 12001 "glob_lexer.mll" 84 11972 12016
+type(
+  Glob_ast.pattern -> Glob_ast.pattern -> Glob_ast.pattern
+)
+ident(
+  int_ref concat_patterns "glob_lexer.mll" 34 172 176 "glob_lexer.mll" 34 172 191
+)
+"glob_lexer.mll" 84 11972 12017 "glob_lexer.mll" 84 11972 12018
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p "glob_lexer.ml" 243 10964 11008 "glob_lexer.ml" 243 10964 11009
+)
+"glob_lexer.mll" 84 11972 12026 "glob_lexer.mll" 84 11972 12028
+type(
+  Glob_ast.character_class
+)
+ident(
+  int_ref cl "glob_lexer.mll" 83 11930 11938 "glob_lexer.mll" 83 11930 11940
+)
+"glob_lexer.mll" 84 11972 12019 "glob_lexer.mll" 84 11972 12029
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 84 11972 12000 "glob_lexer.mll" 84 11972 12030
+call(
+  stack
+)
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 84 11972 12031 "glob_lexer.mll" 84 11972 12037
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.mll" 84 11972 11976 "glob_lexer.mll" 84 11972 12037
+call(
+  tail
+)
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.mll" 82 11926 11928 "glob_lexer.mll" 85 12038 12041
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 286 12065 12069 "glob_lexer.ml" 286 12065 12070
+type(
+  int
+)
+"glob_lexer.mll" 88 12096 12104 "glob_lexer.mll" 88 12096 12105
+type(
+  Glob_ast.pattern
+)
+ident(
+  def q "glob_lexer.mll" 89 12165 12169 "glob_lexer.mll" 89 12165 12221
+)
+"glob_lexer.mll" 88 12096 12114 "glob_lexer.mll" 88 12096 12119
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref slash "glob_lexer.mll" 41 302 306 "glob_lexer.mll" 41 302 311
+)
+"glob_lexer.mll" 88 12096 12128 "glob_lexer.mll" 88 12096 12133
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref slash "glob_lexer.mll" 41 302 306 "glob_lexer.mll" 41 302 311
+)
+"glob_lexer.mll" 88 12096 12147 "glob_lexer.mll" 88 12096 12150
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref any "glob_lexer.mll" 43 381 385 "glob_lexer.mll" 43 381 388
+)
+"glob_lexer.mll" 88 12096 12142 "glob_lexer.mll" 88 12096 12150
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 88 12096 12152 "glob_lexer.mll" 88 12096 12157
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref slash "glob_lexer.mll" 41 302 306 "glob_lexer.mll" 41 302 311
+)
+"glob_lexer.mll" 88 12096 12135 "glob_lexer.mll" 88 12096 12158
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 88 12096 12121 "glob_lexer.mll" 88 12096 12159
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 88 12096 12113 "glob_lexer.mll" 88 12096 12161
+type(
+  Glob_ast.pattern list
+)
+"glob_lexer.mll" 88 12096 12108 "glob_lexer.mll" 88 12096 12161
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 89 12165 12169 "glob_lexer.mll" 89 12165 12182
+type(
+  char list -> Glob_ast.pattern -> Lexing.lexbuf -> Glob_ast.pattern * char
+)
+ident(
+  int_ref parse_pattern "glob_lexer.ml" 241 10869 10873 "glob_lexer.ml" 241 10869 10886
+)
+"glob_lexer.mll" 89 12165 12183 "glob_lexer.mll" 89 12165 12192
+type(
+  char list
+)
+ident(
+  int_ref eof_chars "glob_lexer.ml" 243 10964 10998 "glob_lexer.ml" 243 10964 11007
+)
+"glob_lexer.mll" 89 12165 12194 "glob_lexer.mll" 89 12165 12209
+type(
+  Glob_ast.pattern -> Glob_ast.pattern -> Glob_ast.pattern
+)
+ident(
+  int_ref concat_patterns "glob_lexer.mll" 34 172 176 "glob_lexer.mll" 34 172 191
+)
+"glob_lexer.mll" 89 12165 12210 "glob_lexer.mll" 89 12165 12211
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p "glob_lexer.ml" 243 10964 11008 "glob_lexer.ml" 243 10964 11009
+)
+"glob_lexer.mll" 89 12165 12212 "glob_lexer.mll" 89 12165 12213
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref q "glob_lexer.mll" 88 12096 12104 "glob_lexer.mll" 88 12096 12105
+)
+"glob_lexer.mll" 89 12165 12193 "glob_lexer.mll" 89 12165 12214
+call(
+  stack
+)
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 89 12165 12215 "glob_lexer.mll" 89 12165 12221
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.mll" 89 12165 12169 "glob_lexer.mll" 89 12165 12221
+call(
+  tail
+)
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.mll" 88 12096 12098 "glob_lexer.mll" 89 12165 12223
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 292 12247 12251 "glob_lexer.ml" 292 12247 12252
+type(
+  int
+)
+"glob_lexer.mll" 91 12278 12286 "glob_lexer.mll" 91 12278 12287
+type(
+  Glob_ast.pattern
+)
+ident(
+  def q "glob_lexer.mll" 92 12333 12337 "glob_lexer.mll" 92 12333 12389
+)
+"glob_lexer.mll" 91 12278 12296 "glob_lexer.mll" 91 12278 12303
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 91 12278 12312 "glob_lexer.mll" 91 12278 12317
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref slash "glob_lexer.mll" 41 302 306 "glob_lexer.mll" 41 302 311
+)
+"glob_lexer.mll" 91 12278 12324 "glob_lexer.mll" 91 12278 12327
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref any "glob_lexer.mll" 43 381 385 "glob_lexer.mll" 43 381 388
+)
+"glob_lexer.mll" 91 12278 12319 "glob_lexer.mll" 91 12278 12327
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 91 12278 12305 "glob_lexer.mll" 91 12278 12328
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 91 12278 12295 "glob_lexer.mll" 91 12278 12329
+type(
+  Glob_ast.pattern list
+)
+"glob_lexer.mll" 91 12278 12290 "glob_lexer.mll" 91 12278 12329
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 92 12333 12337 "glob_lexer.mll" 92 12333 12350
+type(
+  char list -> Glob_ast.pattern -> Lexing.lexbuf -> Glob_ast.pattern * char
+)
+ident(
+  int_ref parse_pattern "glob_lexer.ml" 241 10869 10873 "glob_lexer.ml" 241 10869 10886
+)
+"glob_lexer.mll" 92 12333 12351 "glob_lexer.mll" 92 12333 12360
+type(
+  char list
+)
+ident(
+  int_ref eof_chars "glob_lexer.ml" 243 10964 10998 "glob_lexer.ml" 243 10964 11007
+)
+"glob_lexer.mll" 92 12333 12362 "glob_lexer.mll" 92 12333 12377
+type(
+  Glob_ast.pattern -> Glob_ast.pattern -> Glob_ast.pattern
+)
+ident(
+  int_ref concat_patterns "glob_lexer.mll" 34 172 176 "glob_lexer.mll" 34 172 191
+)
+"glob_lexer.mll" 92 12333 12378 "glob_lexer.mll" 92 12333 12379
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p "glob_lexer.ml" 243 10964 11008 "glob_lexer.ml" 243 10964 11009
+)
+"glob_lexer.mll" 92 12333 12380 "glob_lexer.mll" 92 12333 12381
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref q "glob_lexer.mll" 91 12278 12286 "glob_lexer.mll" 91 12278 12287
+)
+"glob_lexer.mll" 92 12333 12361 "glob_lexer.mll" 92 12333 12382
+call(
+  stack
+)
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 92 12333 12383 "glob_lexer.mll" 92 12333 12389
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.mll" 92 12333 12337 "glob_lexer.mll" 92 12333 12389
+call(
+  tail
+)
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.mll" 91 12278 12280 "glob_lexer.mll" 92 12333 12391
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 298 12415 12419 "glob_lexer.ml" 298 12415 12420
+type(
+  int
+)
+"glob_lexer.mll" 94 12446 12454 "glob_lexer.mll" 94 12446 12455
+type(
+  Glob_ast.pattern
+)
+ident(
+  def q "glob_lexer.mll" 95 12501 12505 "glob_lexer.mll" 95 12501 12557
+)
+"glob_lexer.mll" 94 12446 12464 "glob_lexer.mll" 94 12446 12471
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 94 12446 12485 "glob_lexer.mll" 94 12446 12488
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref any "glob_lexer.mll" 43 381 385 "glob_lexer.mll" 43 381 388
+)
+"glob_lexer.mll" 94 12446 12480 "glob_lexer.mll" 94 12446 12488
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 94 12446 12490 "glob_lexer.mll" 94 12446 12495
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref slash "glob_lexer.mll" 41 302 306 "glob_lexer.mll" 41 302 311
+)
+"glob_lexer.mll" 94 12446 12473 "glob_lexer.mll" 94 12446 12496
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 94 12446 12463 "glob_lexer.mll" 94 12446 12497
+type(
+  Glob_ast.pattern list
+)
+"glob_lexer.mll" 94 12446 12458 "glob_lexer.mll" 94 12446 12497
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 95 12501 12505 "glob_lexer.mll" 95 12501 12518
+type(
+  char list -> Glob_ast.pattern -> Lexing.lexbuf -> Glob_ast.pattern * char
+)
+ident(
+  int_ref parse_pattern "glob_lexer.ml" 241 10869 10873 "glob_lexer.ml" 241 10869 10886
+)
+"glob_lexer.mll" 95 12501 12519 "glob_lexer.mll" 95 12501 12528
+type(
+  char list
+)
+ident(
+  int_ref eof_chars "glob_lexer.ml" 243 10964 10998 "glob_lexer.ml" 243 10964 11007
+)
+"glob_lexer.mll" 95 12501 12530 "glob_lexer.mll" 95 12501 12545
+type(
+  Glob_ast.pattern -> Glob_ast.pattern -> Glob_ast.pattern
+)
+ident(
+  int_ref concat_patterns "glob_lexer.mll" 34 172 176 "glob_lexer.mll" 34 172 191
+)
+"glob_lexer.mll" 95 12501 12546 "glob_lexer.mll" 95 12501 12547
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p "glob_lexer.ml" 243 10964 11008 "glob_lexer.ml" 243 10964 11009
+)
+"glob_lexer.mll" 95 12501 12548 "glob_lexer.mll" 95 12501 12549
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref q "glob_lexer.mll" 94 12446 12454 "glob_lexer.mll" 94 12446 12455
+)
+"glob_lexer.mll" 95 12501 12529 "glob_lexer.mll" 95 12501 12550
+call(
+  stack
+)
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 95 12501 12551 "glob_lexer.mll" 95 12501 12557
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.mll" 95 12501 12505 "glob_lexer.mll" 95 12501 12557
+call(
+  tail
+)
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.mll" 94 12446 12448 "glob_lexer.mll" 95 12501 12559
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 304 12583 12587 "glob_lexer.ml" 304 12583 12588
+type(
+  int
+)
+"glob_lexer.mll" 96 12614 12623 "glob_lexer.mll" 96 12614 12628
+type(
+  exn -> Glob_ast.pattern * char
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"glob_lexer.mll" 96 12614 12641 "glob_lexer.mll" 96 12614 12718
+type(
+  string
+)
+"glob_lexer.mll" 96 12614 12629 "glob_lexer.mll" 96 12614 12719
+type(
+  exn
+)
+"glob_lexer.mll" 96 12614 12621 "glob_lexer.mll" 96 12614 12721
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 309 12745 12749 "glob_lexer.ml" 309 12745 12750
+type(
+  int
+)
+"glob_lexer.mll" 97 12776 12784 "glob_lexer.mll" 97 12776 12797
+type(
+  char list -> Glob_ast.pattern -> Lexing.lexbuf -> Glob_ast.pattern * char
+)
+ident(
+  int_ref parse_pattern "glob_lexer.ml" 241 10869 10873 "glob_lexer.ml" 241 10869 10886
+)
+"glob_lexer.mll" 97 12776 12798 "glob_lexer.mll" 97 12776 12807
+type(
+  char list
+)
+ident(
+  int_ref eof_chars "glob_lexer.ml" 243 10964 10998 "glob_lexer.ml" 243 10964 11007
+)
+"glob_lexer.mll" 97 12776 12809 "glob_lexer.mll" 97 12776 12824
+type(
+  Glob_ast.pattern -> Glob_ast.pattern -> Glob_ast.pattern
+)
+ident(
+  int_ref concat_patterns "glob_lexer.mll" 34 172 176 "glob_lexer.mll" 34 172 191
+)
+"glob_lexer.mll" 97 12776 12825 "glob_lexer.mll" 97 12776 12826
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p "glob_lexer.ml" 243 10964 11008 "glob_lexer.ml" 243 10964 11009
+)
+"glob_lexer.mll" 97 12776 12833 "glob_lexer.mll" 97 12776 12842
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref not_slash "glob_lexer.mll" 42 337 341 "glob_lexer.mll" 42 337 350
+)
+"glob_lexer.mll" 97 12776 12827 "glob_lexer.mll" 97 12776 12843
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 97 12776 12808 "glob_lexer.mll" 97 12776 12844
+call(
+  stack
+)
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 97 12776 12845 "glob_lexer.mll" 97 12776 12851
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.mll" 97 12776 12782 "glob_lexer.mll" 97 12776 12853
+call(
+  tail
+)
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 314 12877 12881 "glob_lexer.ml" 314 12877 12882
+type(
+  int
+)
+"glob_lexer.mll" 98 12908 12916 "glob_lexer.mll" 98 12908 12929
+type(
+  char list -> Glob_ast.pattern -> Lexing.lexbuf -> Glob_ast.pattern * char
+)
+ident(
+  int_ref parse_pattern "glob_lexer.ml" 241 10869 10873 "glob_lexer.ml" 241 10869 10886
+)
+"glob_lexer.mll" 98 12908 12930 "glob_lexer.mll" 98 12908 12939
+type(
+  char list
+)
+ident(
+  int_ref eof_chars "glob_lexer.ml" 243 10964 10998 "glob_lexer.ml" 243 10964 11007
+)
+"glob_lexer.mll" 98 12908 12941 "glob_lexer.mll" 98 12908 12956
+type(
+  Glob_ast.pattern -> Glob_ast.pattern -> Glob_ast.pattern
+)
+ident(
+  int_ref concat_patterns "glob_lexer.mll" 34 172 176 "glob_lexer.mll" 34 172 191
+)
+"glob_lexer.mll" 98 12908 12957 "glob_lexer.mll" 98 12908 12958
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p "glob_lexer.ml" 243 10964 11008 "glob_lexer.ml" 243 10964 11009
+)
+"glob_lexer.mll" 98 12908 12959 "glob_lexer.mll" 98 12908 12964
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref slash "glob_lexer.mll" 41 302 306 "glob_lexer.mll" 41 302 311
+)
+"glob_lexer.mll" 98 12908 12940 "glob_lexer.mll" 98 12908 12965
+call(
+  stack
+)
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 98 12908 12966 "glob_lexer.mll" 98 12908 12972
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.mll" 98 12908 12914 "glob_lexer.mll" 98 12908 12974
+call(
+  tail
+)
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 319 12998 13002 "glob_lexer.ml" 319 12998 13004
+type(
+  int
+)
+"glob_lexer.mll" 99 13030 13038 "glob_lexer.mll" 99 13030 13051
+type(
+  char list -> Glob_ast.pattern -> Lexing.lexbuf -> Glob_ast.pattern * char
+)
+ident(
+  int_ref parse_pattern "glob_lexer.ml" 241 10869 10873 "glob_lexer.ml" 241 10869 10886
+)
+"glob_lexer.mll" 99 13030 13052 "glob_lexer.mll" 99 13030 13061
+type(
+  char list
+)
+ident(
+  int_ref eof_chars "glob_lexer.ml" 243 10964 10998 "glob_lexer.ml" 243 10964 11007
+)
+"glob_lexer.mll" 99 13030 13063 "glob_lexer.mll" 99 13030 13078
+type(
+  Glob_ast.pattern -> Glob_ast.pattern -> Glob_ast.pattern
+)
+ident(
+  int_ref concat_patterns "glob_lexer.mll" 34 172 176 "glob_lexer.mll" 34 172 191
+)
+"glob_lexer.mll" 99 13030 13079 "glob_lexer.mll" 99 13030 13080
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p "glob_lexer.ml" 243 10964 11008 "glob_lexer.ml" 243 10964 11009
+)
+"glob_lexer.mll" 99 13030 13081 "glob_lexer.mll" 99 13030 13090
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref not_slash "glob_lexer.mll" 42 337 341 "glob_lexer.mll" 42 337 350
+)
+"glob_lexer.mll" 99 13030 13062 "glob_lexer.mll" 99 13030 13091
+call(
+  stack
+)
+type(
+  Glob_ast.pattern
+)
+"glob_lexer.mll" 99 13030 13092 "glob_lexer.mll" 99 13030 13098
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.mll" 99 13030 13036 "glob_lexer.mll" 99 13030 13100
+call(
+  tail
+)
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 324 13124 13128 "glob_lexer.ml" 324 13124 13130
+type(
+  int
+)
+"glob_lexer.mll" 100 13161 13168 "glob_lexer.mll" 100 13161 13169
+type(
+  char
+)
+ident(
+  def c "glob_lexer.mll" 101 13278 13280 "glob_lexer.mll" 105 13406 13409
+)
+"glob_lexer.ml" 329 13192 13194 "glob_lexer.ml" 329 13192 13216
+type(
+  Lexing.lexbuf -> int -> char
+)
+ident(
+  ext_ref Lexing.sub_lexeme_char
+)
+"glob_lexer.ml" 329 13192 13217 "glob_lexer.ml" 329 13192 13223
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.ml" 329 13192 13224 "glob_lexer.ml" 329 13192 13230
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.ml" 329 13192 13224 "glob_lexer.ml" 329 13192 13251
+type(
+  int
+)
+"glob_lexer.ml" 329 13192 13194 "glob_lexer.ml" 329 13192 13251
+call(
+  stack
+)
+type(
+  char
+)
+"glob_lexer.mll" 101 13278 13285 "glob_lexer.mll" 101 13278 13293
+type(
+  char -> char list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"glob_lexer.mll" 101 13278 13294 "glob_lexer.mll" 101 13278 13295
+type(
+  char
+)
+ident(
+  int_ref c "glob_lexer.mll" 100 13161 13168 "glob_lexer.mll" 100 13161 13169
+)
+"glob_lexer.mll" 101 13278 13296 "glob_lexer.mll" 101 13278 13305
+type(
+  char list
+)
+ident(
+  int_ref eof_chars "glob_lexer.ml" 243 10964 10998 "glob_lexer.ml" 243 10964 11007
+)
+"glob_lexer.mll" 101 13278 13285 "glob_lexer.mll" 101 13278 13305
+call(
+  stack
+)
+type(
+  bool
+)
+"glob_lexer.mll" 102 13311 13318 "glob_lexer.mll" 102 13311 13319
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p "glob_lexer.ml" 243 10964 11008 "glob_lexer.ml" 243 10964 11009
+)
+"glob_lexer.mll" 102 13311 13320 "glob_lexer.mll" 102 13311 13321
+type(
+  char
+)
+ident(
+  int_ref c "glob_lexer.mll" 100 13161 13168 "glob_lexer.mll" 100 13161 13169
+)
+"glob_lexer.mll" 102 13311 13317 "glob_lexer.mll" 102 13311 13322
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.mll" 104 13332 13338 "glob_lexer.mll" 104 13332 13343
+type(
+  exn -> Glob_ast.pattern * char
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"glob_lexer.mll" 104 13332 13357 "glob_lexer.mll" 104 13332 13359
+type(
+  (char -> string, unit, string) format -> char -> string
+)
+ident(
+  int_ref sf "glob_lexer.mll" 32 145 149 "glob_lexer.mll" 32 145 151
+)
+"glob_lexer.mll" 104 13332 13360 "glob_lexer.mll" 104 13332 13401
+type(
+  (char -> string, unit, string) format
+)
+"glob_lexer.mll" 104 13332 13402 "glob_lexer.mll" 104 13332 13403
+type(
+  char
+)
+ident(
+  int_ref c "glob_lexer.mll" 100 13161 13168 "glob_lexer.mll" 100 13161 13169
+)
+"glob_lexer.mll" 104 13332 13356 "glob_lexer.mll" 104 13332 13404
+call(
+  stack
+)
+type(
+  string
+)
+"glob_lexer.mll" 104 13332 13344 "glob_lexer.mll" 104 13332 13405
+type(
+  exn
+)
+"glob_lexer.mll" 104 13332 13338 "glob_lexer.mll" 104 13332 13405
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.mll" 101 13278 13280 "glob_lexer.mll" 105 13406 13409
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 325 13134 13134 "glob_lexer.mll" 105 13406 13409
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 338 13433 13437 "glob_lexer.ml" 338 13433 13454
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "glob_lexer.ml" 338 13433 13458 "glob_lexer.ml" 339 13493 13565
+)
+"glob_lexer.ml" 338 13433 13458 "glob_lexer.ml" 338 13433 13464
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.ml" 338 13433 13458 "glob_lexer.ml" 338 13433 13483
+type(
+  Lexing.lexbuf -> unit
+)
+"glob_lexer.ml" 338 13433 13484 "glob_lexer.ml" 338 13433 13490
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.ml" 338 13433 13458 "glob_lexer.ml" 338 13433 13490
+call(
+  stack
+)
+type(
+  unit
+)
+"glob_lexer.ml" 339 13493 13499 "glob_lexer.ml" 339 13493 13528
+type(
+  char list ->
+  Glob_ast.pattern -> Lexing.lexbuf -> int -> Glob_ast.pattern * char
+)
+ident(
+  int_ref __ocaml_lex_parse_pattern_rec "glob_lexer.ml" 243 10964 10968 "glob_lexer.ml" 243 10964 10997
+)
+"glob_lexer.ml" 339 13493 13529 "glob_lexer.ml" 339 13493 13538
+type(
+  char list
+)
+ident(
+  int_ref eof_chars "glob_lexer.ml" 243 10964 10998 "glob_lexer.ml" 243 10964 11007
+)
+"glob_lexer.ml" 339 13493 13539 "glob_lexer.ml" 339 13493 13540
+type(
+  Glob_ast.pattern
+)
+ident(
+  int_ref p "glob_lexer.ml" 243 10964 11008 "glob_lexer.ml" 243 10964 11009
+)
+"glob_lexer.ml" 339 13493 13541 "glob_lexer.ml" 339 13493 13547
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 243 10964 11010 "glob_lexer.ml" 243 10964 11016
+)
+"glob_lexer.ml" 339 13493 13548 "glob_lexer.ml" 339 13493 13565
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "glob_lexer.ml" 338 13433 13437 "glob_lexer.ml" 338 13433 13454
+)
+"glob_lexer.ml" 339 13493 13499 "glob_lexer.ml" 339 13493 13565
+call(
+  tail
+)
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 338 13433 13458 "glob_lexer.ml" 339 13493 13565
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 244 11037 11039 "glob_lexer.ml" 339 13493 13565
+type(
+  Glob_ast.pattern * char
+)
+"glob_lexer.ml" 341 13567 13571 "glob_lexer.ml" 341 13567 13583
+type(
+  Buffer.t -> Lexing.lexbuf -> string
+)
+ident(
+  def parse_string "glob_lexer.ml" 179 9561 9561 "glob_lexer.ml" 1 0 -1
+)
+"glob_lexer.ml" 341 13567 13584 "glob_lexer.ml" 341 13567 13585
+type(
+  Buffer.t
+)
+ident(
+  def b "glob_lexer.ml" 341 13567 13586 "glob_lexer.ml" 342 13595 13639
+)
+"glob_lexer.ml" 341 13567 13586 "glob_lexer.ml" 341 13567 13592
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "glob_lexer.ml" 342 13595 13599 "glob_lexer.ml" 342 13595 13639
+)
+"glob_lexer.ml" 342 13595 13599 "glob_lexer.ml" 342 13595 13627
+type(
+  Buffer.t -> Lexing.lexbuf -> int -> string
+)
+ident(
+  int_ref __ocaml_lex_parse_string_rec "glob_lexer.ml" 343 13640 13644 "glob_lexer.ml" 343 13640 13672
+)
+"glob_lexer.ml" 342 13595 13628 "glob_lexer.ml" 342 13595 13629
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "glob_lexer.ml" 341 13567 13584 "glob_lexer.ml" 341 13567 13585
+)
+"glob_lexer.ml" 342 13595 13630 "glob_lexer.ml" 342 13595 13636
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 341 13567 13586 "glob_lexer.ml" 341 13567 13592
+)
+"glob_lexer.ml" 342 13595 13637 "glob_lexer.ml" 342 13595 13639
+type(
+  int
+)
+"glob_lexer.ml" 342 13595 13599 "glob_lexer.ml" 342 13595 13639
+call(
+  tail
+)
+type(
+  string
+)
+"glob_lexer.ml" 343 13640 13644 "glob_lexer.ml" 343 13640 13672
+type(
+  Buffer.t -> Lexing.lexbuf -> int -> string
+)
+ident(
+  def __ocaml_lex_parse_string_rec "glob_lexer.ml" 179 9561 9561 "glob_lexer.ml" 1 0 -1
+)
+"glob_lexer.ml" 343 13640 13673 "glob_lexer.ml" 343 13640 13674
+type(
+  Buffer.t
+)
+ident(
+  def b "glob_lexer.ml" 343 13640 13675 "glob_lexer.ml" 376 14614 14675
+)
+"glob_lexer.ml" 343 13640 13675 "glob_lexer.ml" 343 13640 13681
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "glob_lexer.ml" 343 13640 13682 "glob_lexer.ml" 376 14614 14675
+)
+"glob_lexer.ml" 343 13640 13682 "glob_lexer.ml" 343 13640 13699
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "glob_lexer.ml" 344 13702 13704 "glob_lexer.ml" 376 14614 14675
+)
+"glob_lexer.ml" 344 13702 13710 "glob_lexer.ml" 344 13702 13723
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"glob_lexer.ml" 344 13702 13724 "glob_lexer.ml" 344 13702 13742
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "glob_lexer.ml" 32 426 430 "glob_lexer.ml" 32 426 448
+)
+"glob_lexer.ml" 344 13702 13743 "glob_lexer.ml" 344 13702 13760
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "glob_lexer.ml" 343 13640 13682 "glob_lexer.ml" 343 13640 13699
+)
+"glob_lexer.ml" 344 13702 13761 "glob_lexer.ml" 344 13702 13767
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 343 13640 13675 "glob_lexer.ml" 343 13640 13681
+)
+"glob_lexer.ml" 344 13702 13710 "glob_lexer.ml" 344 13702 13767
+call(
+  stack
+)
+type(
+  int
+)
+"glob_lexer.ml" 345 13773 13781 "glob_lexer.ml" 345 13773 13782
+type(
+  int
+)
+"glob_lexer.mll" 108 13809 13835 "glob_lexer.mll" 108 13809 13850
+type(
+  Buffer.t -> string
+)
+ident(
+  ext_ref Buffer.contents
+)
+"glob_lexer.mll" 108 13809 13851 "glob_lexer.mll" 108 13809 13852
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "glob_lexer.ml" 343 13640 13673 "glob_lexer.ml" 343 13640 13674
+)
+"glob_lexer.mll" 108 13809 13833 "glob_lexer.mll" 108 13809 13854
+call(
+  tail
+)
+type(
+  string
+)
+"glob_lexer.ml" 350 13878 13882 "glob_lexer.ml" 350 13878 13883
+type(
+  int
+)
+"glob_lexer.mll" 109 13910 13936 "glob_lexer.mll" 109 13910 13951
+type(
+  Buffer.t -> char -> unit
+)
+ident(
+  ext_ref Buffer.add_char
+)
+"glob_lexer.mll" 109 13910 13952 "glob_lexer.mll" 109 13910 13953
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "glob_lexer.ml" 343 13640 13673 "glob_lexer.ml" 343 13640 13674
+)
+"glob_lexer.mll" 109 13910 13954 "glob_lexer.mll" 109 13910 13957
+type(
+  char
+)
+"glob_lexer.mll" 109 13910 13936 "glob_lexer.mll" 109 13910 13957
+call(
+  stack
+)
+type(
+  unit
+)
+"glob_lexer.mll" 109 13910 13959 "glob_lexer.mll" 109 13910 13971
+type(
+  Buffer.t -> Lexing.lexbuf -> string
+)
+ident(
+  int_ref parse_string "glob_lexer.ml" 341 13567 13571 "glob_lexer.ml" 341 13567 13583
+)
+"glob_lexer.mll" 109 13910 13972 "glob_lexer.mll" 109 13910 13973
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "glob_lexer.ml" 343 13640 13673 "glob_lexer.ml" 343 13640 13674
+)
+"glob_lexer.mll" 109 13910 13974 "glob_lexer.mll" 109 13910 13980
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 343 13640 13675 "glob_lexer.ml" 343 13640 13681
+)
+"glob_lexer.mll" 109 13910 13959 "glob_lexer.mll" 109 13910 13980
+call(
+  tail
+)
+type(
+  string
+)
+"glob_lexer.mll" 109 13910 13934 "glob_lexer.mll" 109 13910 13982
+type(
+  string
+)
+"glob_lexer.ml" 355 14006 14010 "glob_lexer.ml" 355 14006 14011
+type(
+  int
+)
+"glob_lexer.mll" 110 14042 14060 "glob_lexer.mll" 110 14042 14061
+type(
+  string
+)
+ident(
+  def u "glob_lexer.mll" 110 14192 14216 "glob_lexer.mll" 110 14192 14264
+)
+"glob_lexer.ml" 360 14084 14086 "glob_lexer.ml" 360 14084 14103
+type(
+  Lexing.lexbuf -> int -> int -> string
+)
+ident(
+  ext_ref Lexing.sub_lexeme
+)
+"glob_lexer.ml" 360 14084 14104 "glob_lexer.ml" 360 14084 14110
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 343 13640 13675 "glob_lexer.ml" 343 13640 13681
+)
+"glob_lexer.ml" 360 14084 14111 "glob_lexer.ml" 360 14084 14117
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 343 13640 13675 "glob_lexer.ml" 343 13640 13681
+)
+"glob_lexer.ml" 360 14084 14111 "glob_lexer.ml" 360 14084 14138
+type(
+  int
+)
+"glob_lexer.ml" 360 14084 14139 "glob_lexer.ml" 360 14084 14145
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 343 13640 13675 "glob_lexer.ml" 343 13640 13681
+)
+"glob_lexer.ml" 360 14084 14139 "glob_lexer.ml" 360 14084 14165
+type(
+  int
+)
+"glob_lexer.ml" 360 14084 14086 "glob_lexer.ml" 360 14084 14165
+call(
+  stack
+)
+type(
+  string
+)
+"glob_lexer.mll" 110 14192 14218 "glob_lexer.mll" 110 14192 14235
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"glob_lexer.mll" 110 14192 14236 "glob_lexer.mll" 110 14192 14237
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "glob_lexer.ml" 343 13640 13673 "glob_lexer.ml" 343 13640 13674
+)
+"glob_lexer.mll" 110 14192 14238 "glob_lexer.mll" 110 14192 14239
+type(
+  string
+)
+ident(
+  int_ref u "glob_lexer.mll" 110 14042 14060 "glob_lexer.mll" 110 14042 14061
+)
+"glob_lexer.mll" 110 14192 14218 "glob_lexer.mll" 110 14192 14239
+call(
+  stack
+)
+type(
+  unit
+)
+"glob_lexer.mll" 110 14192 14241 "glob_lexer.mll" 110 14192 14253
+type(
+  Buffer.t -> Lexing.lexbuf -> string
+)
+ident(
+  int_ref parse_string "glob_lexer.ml" 341 13567 13571 "glob_lexer.ml" 341 13567 13583
+)
+"glob_lexer.mll" 110 14192 14254 "glob_lexer.mll" 110 14192 14255
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "glob_lexer.ml" 343 13640 13673 "glob_lexer.ml" 343 13640 13674
+)
+"glob_lexer.mll" 110 14192 14256 "glob_lexer.mll" 110 14192 14262
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 343 13640 13675 "glob_lexer.ml" 343 13640 13681
+)
+"glob_lexer.mll" 110 14192 14241 "glob_lexer.mll" 110 14192 14262
+call(
+  tail
+)
+type(
+  string
+)
+"glob_lexer.mll" 110 14192 14216 "glob_lexer.mll" 110 14192 14264
+type(
+  string
+)
+"glob_lexer.ml" 356 14015 14015 "glob_lexer.mll" 110 14192 14264
+type(
+  string
+)
+"glob_lexer.ml" 365 14288 14292 "glob_lexer.ml" 365 14288 14293
+type(
+  int
+)
+"glob_lexer.mll" 111 14324 14331 "glob_lexer.mll" 111 14324 14332
+type(
+  char
+)
+ident(
+  def c "glob_lexer.mll" 111 14441 14465 "glob_lexer.mll" 111 14441 14530
+)
+"glob_lexer.ml" 370 14355 14357 "glob_lexer.ml" 370 14355 14379
+type(
+  Lexing.lexbuf -> int -> char
+)
+ident(
+  ext_ref Lexing.sub_lexeme_char
+)
+"glob_lexer.ml" 370 14355 14380 "glob_lexer.ml" 370 14355 14386
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 343 13640 13675 "glob_lexer.ml" 343 13640 13681
+)
+"glob_lexer.ml" 370 14355 14387 "glob_lexer.ml" 370 14355 14393
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 343 13640 13675 "glob_lexer.ml" 343 13640 13681
+)
+"glob_lexer.ml" 370 14355 14387 "glob_lexer.ml" 370 14355 14414
+type(
+  int
+)
+"glob_lexer.ml" 370 14355 14357 "glob_lexer.ml" 370 14355 14414
+call(
+  stack
+)
+type(
+  char
+)
+"glob_lexer.mll" 111 14441 14467 "glob_lexer.mll" 111 14441 14472
+type(
+  exn -> string
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"glob_lexer.mll" 111 14441 14486 "glob_lexer.mll" 111 14441 14488
+type(
+  (char -> string, unit, string) format -> char -> string
+)
+ident(
+  int_ref sf "glob_lexer.mll" 32 145 149 "glob_lexer.mll" 32 145 151
+)
+"glob_lexer.mll" 111 14441 14489 "glob_lexer.mll" 111 14441 14524
+type(
+  (char -> string, unit, string) format
+)
+"glob_lexer.mll" 111 14441 14525 "glob_lexer.mll" 111 14441 14526
+type(
+  char
+)
+ident(
+  int_ref c "glob_lexer.mll" 111 14324 14331 "glob_lexer.mll" 111 14324 14332
+)
+"glob_lexer.mll" 111 14441 14485 "glob_lexer.mll" 111 14441 14527
+call(
+  stack
+)
+type(
+  string
+)
+"glob_lexer.mll" 111 14441 14473 "glob_lexer.mll" 111 14441 14528
+type(
+  exn
+)
+"glob_lexer.mll" 111 14441 14465 "glob_lexer.mll" 111 14441 14530
+type(
+  string
+)
+"glob_lexer.ml" 366 14297 14297 "glob_lexer.mll" 111 14441 14530
+type(
+  string
+)
+"glob_lexer.ml" 375 14554 14558 "glob_lexer.ml" 375 14554 14575
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "glob_lexer.ml" 375 14554 14579 "glob_lexer.ml" 376 14614 14675
+)
+"glob_lexer.ml" 375 14554 14579 "glob_lexer.ml" 375 14554 14585
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 343 13640 13675 "glob_lexer.ml" 343 13640 13681
+)
+"glob_lexer.ml" 375 14554 14579 "glob_lexer.ml" 375 14554 14604
+type(
+  Lexing.lexbuf -> unit
+)
+"glob_lexer.ml" 375 14554 14605 "glob_lexer.ml" 375 14554 14611
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 343 13640 13675 "glob_lexer.ml" 343 13640 13681
+)
+"glob_lexer.ml" 375 14554 14579 "glob_lexer.ml" 375 14554 14611
+call(
+  stack
+)
+type(
+  unit
+)
+"glob_lexer.ml" 376 14614 14620 "glob_lexer.ml" 376 14614 14648
+type(
+  Buffer.t -> Lexing.lexbuf -> int -> string
+)
+ident(
+  int_ref __ocaml_lex_parse_string_rec "glob_lexer.ml" 343 13640 13644 "glob_lexer.ml" 343 13640 13672
+)
+"glob_lexer.ml" 376 14614 14649 "glob_lexer.ml" 376 14614 14650
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "glob_lexer.ml" 343 13640 13673 "glob_lexer.ml" 343 13640 13674
+)
+"glob_lexer.ml" 376 14614 14651 "glob_lexer.ml" 376 14614 14657
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 343 13640 13675 "glob_lexer.ml" 343 13640 13681
+)
+"glob_lexer.ml" 376 14614 14658 "glob_lexer.ml" 376 14614 14675
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "glob_lexer.ml" 375 14554 14558 "glob_lexer.ml" 375 14554 14575
+)
+"glob_lexer.ml" 376 14614 14620 "glob_lexer.ml" 376 14614 14675
+call(
+  tail
+)
+type(
+  string
+)
+"glob_lexer.ml" 375 14554 14579 "glob_lexer.ml" 376 14614 14675
+type(
+  string
+)
+"glob_lexer.ml" 344 13702 13704 "glob_lexer.ml" 376 14614 14675
+type(
+  string
+)
+"glob_lexer.ml" 378 14677 14681 "glob_lexer.ml" 378 14677 14692
+type(
+  (char * char) Bool.boolean list ->
+  Lexing.lexbuf -> (char * char) Bool.boolean list
+)
+ident(
+  def parse_class "glob_lexer.ml" 179 9561 9561 "glob_lexer.ml" 1 0 -1
+)
+"glob_lexer.ml" 378 14677 14693 "glob_lexer.ml" 378 14677 14695
+type(
+  (char * char) Bool.boolean list
+)
+ident(
+  def cl "glob_lexer.ml" 378 14677 14696 "glob_lexer.ml" 379 14705 14749
+)
+"glob_lexer.ml" 378 14677 14696 "glob_lexer.ml" 378 14677 14702
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "glob_lexer.ml" 379 14705 14709 "glob_lexer.ml" 379 14705 14749
+)
+"glob_lexer.ml" 379 14705 14709 "glob_lexer.ml" 379 14705 14736
+type(
+  (char * char) Bool.boolean list ->
+  Lexing.lexbuf -> int -> (char * char) Bool.boolean list
+)
+ident(
+  int_ref __ocaml_lex_parse_class_rec "glob_lexer.ml" 380 14750 14754 "glob_lexer.ml" 380 14750 14781
+)
+"glob_lexer.ml" 379 14705 14737 "glob_lexer.ml" 379 14705 14739
+type(
+  (char * char) Bool.boolean list
+)
+ident(
+  int_ref cl "glob_lexer.ml" 378 14677 14693 "glob_lexer.ml" 378 14677 14695
+)
+"glob_lexer.ml" 379 14705 14740 "glob_lexer.ml" 379 14705 14746
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 378 14677 14696 "glob_lexer.ml" 378 14677 14702
+)
+"glob_lexer.ml" 379 14705 14747 "glob_lexer.ml" 379 14705 14749
+type(
+  int
+)
+"glob_lexer.ml" 379 14705 14709 "glob_lexer.ml" 379 14705 14749
+call(
+  tail
+)
+type(
+  (char * char) Bool.boolean list
+)
+"glob_lexer.ml" 380 14750 14754 "glob_lexer.ml" 380 14750 14781
+type(
+  (char * char) Bool.boolean list ->
+  Lexing.lexbuf -> int -> (char * char) Bool.boolean list
+)
+ident(
+  def __ocaml_lex_parse_class_rec "glob_lexer.ml" 179 9561 9561 "glob_lexer.ml" 1 0 -1
+)
+"glob_lexer.ml" 380 14750 14782 "glob_lexer.ml" 380 14750 14784
+type(
+  (char * char) Bool.boolean list
+)
+ident(
+  def cl "glob_lexer.ml" 380 14750 14785 "glob_lexer.ml" 418 15772 15833
+)
+"glob_lexer.ml" 380 14750 14785 "glob_lexer.ml" 380 14750 14791
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "glob_lexer.ml" 380 14750 14792 "glob_lexer.ml" 418 15772 15833
+)
+"glob_lexer.ml" 380 14750 14792 "glob_lexer.ml" 380 14750 14809
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "glob_lexer.ml" 381 14812 14814 "glob_lexer.ml" 418 15772 15833
+)
+"glob_lexer.ml" 381 14812 14820 "glob_lexer.ml" 381 14812 14833
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"glob_lexer.ml" 381 14812 14834 "glob_lexer.ml" 381 14812 14852
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "glob_lexer.ml" 32 426 430 "glob_lexer.ml" 32 426 448
+)
+"glob_lexer.ml" 381 14812 14853 "glob_lexer.ml" 381 14812 14870
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "glob_lexer.ml" 380 14750 14792 "glob_lexer.ml" 380 14750 14809
+)
+"glob_lexer.ml" 381 14812 14871 "glob_lexer.ml" 381 14812 14877
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 380 14750 14785 "glob_lexer.ml" 380 14750 14791
+)
+"glob_lexer.ml" 381 14812 14820 "glob_lexer.ml" 381 14812 14877
+call(
+  stack
+)
+type(
+  int
+)
+"glob_lexer.ml" 382 14883 14891 "glob_lexer.ml" 382 14883 14892
+type(
+  int
+)
+"glob_lexer.mll" 114 14919 14945 "glob_lexer.mll" 114 14919 14951
+type(
+  (char * char) Bool.boolean list
+)
+ident(
+  int_ref cl "glob_lexer.ml" 380 14750 14782 "glob_lexer.ml" 380 14750 14784
+)
+"glob_lexer.ml" 387 14975 14979 "glob_lexer.ml" 387 14975 14980
+type(
+  int
+)
+"glob_lexer.mll" 115 15007 15042 "glob_lexer.mll" 115 15007 15045
+type(
+  char
+)
+"glob_lexer.mll" 115 15007 15046 "glob_lexer.mll" 115 15007 15049
+type(
+  char
+)
+"glob_lexer.mll" 115 15007 15041 "glob_lexer.mll" 115 15007 15050
+type(
+  char * char
+)
+"glob_lexer.mll" 115 15007 15036 "glob_lexer.mll" 115 15007 15051
+type(
+  (char * char) Bool.boolean
+)
+"glob_lexer.mll" 115 15007 15053 "glob_lexer.mll" 115 15007 15055
+type(
+  (char * char) Bool.boolean list
+)
+ident(
+  int_ref cl "glob_lexer.ml" 380 14750 14782 "glob_lexer.ml" 380 14750 14784
+)
+"glob_lexer.mll" 115 15007 15033 "glob_lexer.mll" 115 15007 15058
+type(
+  (char * char) Bool.boolean list
+)
+"glob_lexer.ml" 392 15082 15086 "glob_lexer.ml" 392 15082 15087
+type(
+  int
+)
+"glob_lexer.mll" 116 15118 15126 "glob_lexer.mll" 116 15118 15128
+type(
+  char
+)
+ident(
+  def c1 "glob_lexer.mll" 116 15377 15403 "glob_lexer.mll" 116 15377 15445
+)
+"glob_lexer.ml" 397 15151 15153 "glob_lexer.ml" 397 15151 15175
+type(
+  Lexing.lexbuf -> int -> char
+)
+ident(
+  ext_ref Lexing.sub_lexeme_char
+)
+"glob_lexer.ml" 397 15151 15176 "glob_lexer.ml" 397 15151 15182
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 380 14750 14785 "glob_lexer.ml" 380 14750 14791
+)
+"glob_lexer.ml" 397 15151 15183 "glob_lexer.ml" 397 15151 15189
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 380 14750 14785 "glob_lexer.ml" 380 14750 14791
+)
+"glob_lexer.ml" 397 15151 15183 "glob_lexer.ml" 397 15151 15210
+type(
+  int
+)
+"glob_lexer.ml" 397 15151 15153 "glob_lexer.ml" 397 15151 15210
+call(
+  stack
+)
+type(
+  char
+)
+"glob_lexer.mll" 116 15238 15260 "glob_lexer.mll" 116 15238 15262
+type(
+  char
+)
+ident(
+  def c2 "glob_lexer.mll" 116 15377 15403 "glob_lexer.mll" 116 15377 15445
+)
+"glob_lexer.ml" 402 15285 15287 "glob_lexer.ml" 402 15285 15309
+type(
+  Lexing.lexbuf -> int -> char
+)
+ident(
+  ext_ref Lexing.sub_lexeme_char
+)
+"glob_lexer.ml" 402 15285 15310 "glob_lexer.ml" 402 15285 15316
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 380 14750 14785 "glob_lexer.ml" 380 14750 14791
+)
+"glob_lexer.ml" 402 15285 15318 "glob_lexer.ml" 402 15285 15324
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 380 14750 14785 "glob_lexer.ml" 380 14750 14791
+)
+"glob_lexer.ml" 402 15285 15318 "glob_lexer.ml" 402 15285 15345
+type(
+  int
+)
+"glob_lexer.ml" 402 15285 15346 "glob_lexer.ml" 402 15285 15347
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"glob_lexer.ml" 402 15285 15348 "glob_lexer.ml" 402 15285 15349
+type(
+  int
+)
+"glob_lexer.ml" 402 15285 15317 "glob_lexer.ml" 402 15285 15350
+type(
+  int
+)
+"glob_lexer.ml" 402 15285 15287 "glob_lexer.ml" 402 15285 15350
+call(
+  stack
+)
+type(
+  char
+)
+"glob_lexer.mll" 116 15377 15405 "glob_lexer.mll" 116 15377 15416
+type(
+  (char * char) Bool.boolean list ->
+  Lexing.lexbuf -> (char * char) Bool.boolean list
+)
+ident(
+  int_ref parse_class "glob_lexer.ml" 378 14677 14681 "glob_lexer.ml" 378 14677 14692
+)
+"glob_lexer.mll" 116 15377 15424 "glob_lexer.mll" 116 15377 15426
+type(
+  char
+)
+ident(
+  int_ref c1 "glob_lexer.mll" 116 15118 15126 "glob_lexer.mll" 116 15118 15128
+)
+"glob_lexer.mll" 116 15377 15427 "glob_lexer.mll" 116 15377 15429
+type(
+  char
+)
+ident(
+  int_ref c2 "glob_lexer.mll" 116 15238 15260 "glob_lexer.mll" 116 15238 15262
+)
+"glob_lexer.mll" 116 15377 15423 "glob_lexer.mll" 116 15377 15430
+type(
+  char * char
+)
+"glob_lexer.mll" 116 15377 15418 "glob_lexer.mll" 116 15377 15431
+type(
+  (char * char) Bool.boolean
+)
+"glob_lexer.mll" 116 15377 15433 "glob_lexer.mll" 116 15377 15435
+type(
+  (char * char) Bool.boolean list
+)
+ident(
+  int_ref cl "glob_lexer.ml" 380 14750 14782 "glob_lexer.ml" 380 14750 14784
+)
+"glob_lexer.mll" 116 15377 15417 "glob_lexer.mll" 116 15377 15436
+type(
+  (char * char) Bool.boolean list
+)
+"glob_lexer.mll" 116 15377 15437 "glob_lexer.mll" 116 15377 15443
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 380 14750 14785 "glob_lexer.ml" 380 14750 14791
+)
+"glob_lexer.mll" 116 15377 15403 "glob_lexer.mll" 116 15377 15445
+call(
+  tail
+)
+type(
+  (char * char) Bool.boolean list
+)
+"glob_lexer.ml" 393 15091 15091 "glob_lexer.mll" 116 15377 15445
+type(
+  (char * char) Bool.boolean list
+)
+"glob_lexer.ml" 407 15469 15473 "glob_lexer.ml" 407 15469 15474
+type(
+  int
+)
+"glob_lexer.mll" 117 15505 15512 "glob_lexer.mll" 117 15505 15513
+type(
+  char
+)
+ident(
+  def c "glob_lexer.mll" 117 15622 15648 "glob_lexer.mll" 117 15622 15688
+)
+"glob_lexer.ml" 412 15536 15538 "glob_lexer.ml" 412 15536 15560
+type(
+  Lexing.lexbuf -> int -> char
+)
+ident(
+  ext_ref Lexing.sub_lexeme_char
+)
+"glob_lexer.ml" 412 15536 15561 "glob_lexer.ml" 412 15536 15567
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 380 14750 14785 "glob_lexer.ml" 380 14750 14791
+)
+"glob_lexer.ml" 412 15536 15568 "glob_lexer.ml" 412 15536 15574
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 380 14750 14785 "glob_lexer.ml" 380 14750 14791
+)
+"glob_lexer.ml" 412 15536 15568 "glob_lexer.ml" 412 15536 15595
+type(
+  int
+)
+"glob_lexer.ml" 412 15536 15538 "glob_lexer.ml" 412 15536 15595
+call(
+  stack
+)
+type(
+  char
+)
+"glob_lexer.mll" 117 15622 15650 "glob_lexer.mll" 117 15622 15661
+type(
+  (char * char) Bool.boolean list ->
+  Lexing.lexbuf -> (char * char) Bool.boolean list
+)
+ident(
+  int_ref parse_class "glob_lexer.ml" 378 14677 14681 "glob_lexer.ml" 378 14677 14692
+)
+"glob_lexer.mll" 117 15622 15669 "glob_lexer.mll" 117 15622 15670
+type(
+  char
+)
+ident(
+  int_ref c "glob_lexer.mll" 117 15505 15512 "glob_lexer.mll" 117 15505 15513
+)
+"glob_lexer.mll" 117 15622 15671 "glob_lexer.mll" 117 15622 15672
+type(
+  char
+)
+ident(
+  int_ref c "glob_lexer.mll" 117 15505 15512 "glob_lexer.mll" 117 15505 15513
+)
+"glob_lexer.mll" 117 15622 15668 "glob_lexer.mll" 117 15622 15673
+type(
+  char * char
+)
+"glob_lexer.mll" 117 15622 15663 "glob_lexer.mll" 117 15622 15674
+type(
+  (char * char) Bool.boolean
+)
+"glob_lexer.mll" 117 15622 15676 "glob_lexer.mll" 117 15622 15678
+type(
+  (char * char) Bool.boolean list
+)
+ident(
+  int_ref cl "glob_lexer.ml" 380 14750 14782 "glob_lexer.ml" 380 14750 14784
+)
+"glob_lexer.mll" 117 15622 15662 "glob_lexer.mll" 117 15622 15679
+type(
+  (char * char) Bool.boolean list
+)
+"glob_lexer.mll" 117 15622 15680 "glob_lexer.mll" 117 15622 15686
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 380 14750 14785 "glob_lexer.ml" 380 14750 14791
+)
+"glob_lexer.mll" 117 15622 15648 "glob_lexer.mll" 117 15622 15688
+call(
+  tail
+)
+type(
+  (char * char) Bool.boolean list
+)
+"glob_lexer.ml" 408 15478 15478 "glob_lexer.mll" 117 15622 15688
+type(
+  (char * char) Bool.boolean list
+)
+"glob_lexer.ml" 417 15712 15716 "glob_lexer.ml" 417 15712 15733
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "glob_lexer.ml" 417 15712 15737 "glob_lexer.ml" 418 15772 15833
+)
+"glob_lexer.ml" 417 15712 15737 "glob_lexer.ml" 417 15712 15743
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 380 14750 14785 "glob_lexer.ml" 380 14750 14791
+)
+"glob_lexer.ml" 417 15712 15737 "glob_lexer.ml" 417 15712 15762
+type(
+  Lexing.lexbuf -> unit
+)
+"glob_lexer.ml" 417 15712 15763 "glob_lexer.ml" 417 15712 15769
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 380 14750 14785 "glob_lexer.ml" 380 14750 14791
+)
+"glob_lexer.ml" 417 15712 15737 "glob_lexer.ml" 417 15712 15769
+call(
+  stack
+)
+type(
+  unit
+)
+"glob_lexer.ml" 418 15772 15778 "glob_lexer.ml" 418 15772 15805
+type(
+  (char * char) Bool.boolean list ->
+  Lexing.lexbuf -> int -> (char * char) Bool.boolean list
+)
+ident(
+  int_ref __ocaml_lex_parse_class_rec "glob_lexer.ml" 380 14750 14754 "glob_lexer.ml" 380 14750 14781
+)
+"glob_lexer.ml" 418 15772 15806 "glob_lexer.ml" 418 15772 15808
+type(
+  (char * char) Bool.boolean list
+)
+ident(
+  int_ref cl "glob_lexer.ml" 380 14750 14782 "glob_lexer.ml" 380 14750 14784
+)
+"glob_lexer.ml" 418 15772 15809 "glob_lexer.ml" 418 15772 15815
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "glob_lexer.ml" 380 14750 14785 "glob_lexer.ml" 380 14750 14791
+)
+"glob_lexer.ml" 418 15772 15816 "glob_lexer.ml" 418 15772 15833
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "glob_lexer.ml" 417 15712 15716 "glob_lexer.ml" 417 15712 15733
+)
+"glob_lexer.ml" 418 15772 15778 "glob_lexer.ml" 418 15772 15833
+call(
+  tail
+)
+type(
+  (char * char) Bool.boolean list
+)
+"glob_lexer.ml" 417 15712 15737 "glob_lexer.ml" 418 15772 15833
+type(
+  (char * char) Bool.boolean list
+)
+"glob_lexer.ml" 381 14812 14814 "glob_lexer.ml" 418 15772 15833
+type(
+  (char * char) Bool.boolean list
+)

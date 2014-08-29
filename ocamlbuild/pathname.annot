@@ -1,0 +1,3099 @@
+"pathname.ml" 23 926 930 "pathname.ml" 23 926 943
+type(
+  Format.formatter -> string list -> unit
+)
+ident(
+  def print_strings "pathname.ml" 25 971 971 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 23 926 946 "pathname.ml" 23 926 956
+type(
+  (Format.formatter -> string -> unit) ->
+  Format.formatter -> string list -> unit
+)
+ident(
+  ext_ref My_std.List.print
+)
+"pathname.ml" 23 926 957 "pathname.ml" 23 926 969
+type(
+  Format.formatter -> string -> unit
+)
+ident(
+  ext_ref My_std.String.print
+)
+"pathname.ml" 23 926 946 "pathname.ml" 23 926 969
+call(
+  stack
+)
+type(
+  Format.formatter -> string list -> unit
+)
+"pathname.ml" 25 971 975 "pathname.ml" 25 971 981
+type(
+  string -> string -> string
+)
+ident(
+  def concat "pathname.ml" 27 1001 1001 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 25 971 984 "pathname.ml" 25 971 999
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref My_std.filename_concat
+)
+"pathname.ml" 27 1001 1005 "pathname.ml" 27 1001 1012
+type(
+  t -> t -> int
+)
+ident(
+  def compare "pathname.ml" 29 1036 1036 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 27 1001 1014 "pathname.ml" 27 1001 1015
+type(
+  t
+)
+ident(
+  def x "pathname.ml" 27 1001 1019 "pathname.ml" 27 1001 1034
+)
+"pathname.ml" 27 1001 1019 "pathname.ml" 27 1001 1020
+type(
+  t
+)
+ident(
+  def y "pathname.ml" 27 1001 1023 "pathname.ml" 27 1001 1034
+)
+"pathname.ml" 27 1001 1023 "pathname.ml" 27 1001 1030
+type(
+  t -> t -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"pathname.ml" 27 1001 1031 "pathname.ml" 27 1001 1032
+type(
+  t
+)
+ident(
+  int_ref x "pathname.ml" 27 1001 1014 "pathname.ml" 27 1001 1015
+)
+"pathname.ml" 27 1001 1033 "pathname.ml" 27 1001 1034
+type(
+  t
+)
+ident(
+  int_ref y "pathname.ml" 27 1001 1019 "pathname.ml" 27 1001 1020
+)
+"pathname.ml" 27 1001 1023 "pathname.ml" 27 1001 1034
+type(
+  int
+)
+"pathname.ml" 29 1036 1040 "pathname.ml" 29 1036 1045
+type(
+  Format.formatter -> string -> unit
+)
+ident(
+  def print "pathname.ml" 31 1065 1065 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 29 1036 1048 "pathname.ml" 29 1036 1063
+type(
+  Format.formatter -> string -> unit
+)
+ident(
+  ext_ref Format.pp_print_string
+)
+"pathname.ml" 31 1065 1069 "pathname.ml" 31 1065 1071
+type(
+  'a -> 'a
+)
+ident(
+  def mk "pathname.ml" 33 1079 1079 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 31 1065 1072 "pathname.ml" 31 1065 1073
+type(
+  'a
+)
+ident(
+  def s "pathname.ml" 31 1065 1076 "pathname.ml" 31 1065 1077
+)
+"pathname.ml" 31 1065 1076 "pathname.ml" 31 1065 1077
+type(
+  'a
+)
+ident(
+  int_ref s "pathname.ml" 31 1065 1072 "pathname.ml" 31 1065 1073
+)
+"pathname.ml" 33 1079 1083 "pathname.ml" 33 1079 1086
+type(
+  string
+)
+ident(
+  def pwd "pathname.ml" 35 1104 1104 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 33 1079 1089 "pathname.ml" 33 1079 1099
+type(
+  unit -> string
+)
+ident(
+  ext_ref Sys.getcwd
+)
+"pathname.ml" 33 1079 1100 "pathname.ml" 33 1079 1102
+type(
+  unit
+)
+"pathname.ml" 33 1079 1089 "pathname.ml" 33 1079 1102
+type(
+  string
+)
+"pathname.ml" 35 1104 1108 "pathname.ml" 35 1104 1121
+type(
+  string -> string -> string
+)
+ident(
+  def add_extension "pathname.ml" 37 1145 1145 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 35 1104 1122 "pathname.ml" 35 1104 1125
+type(
+  string
+)
+ident(
+  def ext "pathname.ml" 35 1104 1126 "pathname.ml" 35 1104 1143
+)
+"pathname.ml" 35 1104 1126 "pathname.ml" 35 1104 1127
+type(
+  string
+)
+ident(
+  def x "pathname.ml" 35 1104 1130 "pathname.ml" 35 1104 1143
+)
+"pathname.ml" 35 1104 1130 "pathname.ml" 35 1104 1131
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 35 1104 1126 "pathname.ml" 35 1104 1127
+)
+"pathname.ml" 35 1104 1132 "pathname.ml" 35 1104 1133
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"pathname.ml" 35 1104 1134 "pathname.ml" 35 1104 1137
+type(
+  string
+)
+"pathname.ml" 35 1104 1138 "pathname.ml" 35 1104 1139
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"pathname.ml" 35 1104 1140 "pathname.ml" 35 1104 1143
+type(
+  string
+)
+ident(
+  int_ref ext "pathname.ml" 35 1104 1122 "pathname.ml" 35 1104 1125
+)
+"pathname.ml" 35 1104 1134 "pathname.ml" 35 1104 1143
+call(
+  stack
+)
+type(
+  string
+)
+"pathname.ml" 35 1104 1130 "pathname.ml" 35 1104 1143
+call(
+  tail
+)
+type(
+  string
+)
+"pathname.ml" 37 1145 1149 "pathname.ml" 37 1145 1164
+type(
+  string -> string -> bool
+)
+ident(
+  def check_extension "pathname.ml" 41 1302 1302 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 37 1145 1165 "pathname.ml" 37 1145 1166
+type(
+  string
+)
+ident(
+  def x "pathname.ml" 37 1145 1167 "pathname.ml" 39 1232 1300
+)
+"pathname.ml" 37 1145 1167 "pathname.ml" 37 1145 1170
+type(
+  string
+)
+ident(
+  def ext "pathname.ml" 38 1173 1175 "pathname.ml" 39 1232 1300
+)
+"pathname.ml" 38 1173 1179 "pathname.ml" 38 1173 1181
+type(
+  int
+)
+ident(
+  def lx "pathname.ml" 39 1232 1234 "pathname.ml" 39 1232 1300
+)
+"pathname.ml" 38 1173 1184 "pathname.ml" 38 1173 1197
+type(
+  string -> int
+)
+ident(
+  ext_ref My_std.String.length
+)
+"pathname.ml" 38 1173 1198 "pathname.ml" 38 1173 1199
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 37 1145 1165 "pathname.ml" 37 1145 1166
+)
+"pathname.ml" 38 1173 1184 "pathname.ml" 38 1173 1199
+type(
+  int
+)
+"pathname.ml" 38 1173 1204 "pathname.ml" 38 1173 1208
+type(
+  int
+)
+ident(
+  def lext "pathname.ml" 39 1232 1234 "pathname.ml" 39 1232 1300
+)
+"pathname.ml" 38 1173 1211 "pathname.ml" 38 1173 1224
+type(
+  string -> int
+)
+ident(
+  ext_ref My_std.String.length
+)
+"pathname.ml" 38 1173 1225 "pathname.ml" 38 1173 1228
+type(
+  string
+)
+ident(
+  int_ref ext "pathname.ml" 37 1145 1167 "pathname.ml" 37 1145 1170
+)
+"pathname.ml" 38 1173 1211 "pathname.ml" 38 1173 1228
+type(
+  int
+)
+"pathname.ml" 39 1232 1234 "pathname.ml" 39 1232 1236
+type(
+  int
+)
+ident(
+  int_ref lx "pathname.ml" 38 1173 1179 "pathname.ml" 38 1173 1181
+)
+"pathname.ml" 39 1232 1237 "pathname.ml" 39 1232 1238
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"pathname.ml" 39 1232 1239 "pathname.ml" 39 1232 1243
+type(
+  int
+)
+ident(
+  int_ref lext "pathname.ml" 38 1173 1204 "pathname.ml" 38 1173 1208
+)
+"pathname.ml" 39 1232 1244 "pathname.ml" 39 1232 1245
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"pathname.ml" 39 1232 1246 "pathname.ml" 39 1232 1247
+type(
+  int
+)
+"pathname.ml" 39 1232 1239 "pathname.ml" 39 1232 1247
+type(
+  int
+)
+"pathname.ml" 39 1232 1234 "pathname.ml" 39 1232 1247
+type(
+  bool
+)
+"pathname.ml" 39 1232 1248 "pathname.ml" 39 1232 1250
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"pathname.ml" 39 1232 1251 "pathname.ml" 39 1232 1252
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 37 1145 1165 "pathname.ml" 37 1145 1166
+)
+"pathname.ml" 39 1232 1254 "pathname.ml" 39 1232 1256
+type(
+  int
+)
+ident(
+  int_ref lx "pathname.ml" 38 1173 1179 "pathname.ml" 38 1173 1181
+)
+"pathname.ml" 39 1232 1257 "pathname.ml" 39 1232 1258
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"pathname.ml" 39 1232 1259 "pathname.ml" 39 1232 1263
+type(
+  int
+)
+ident(
+  int_ref lext "pathname.ml" 38 1173 1204 "pathname.ml" 38 1173 1208
+)
+"pathname.ml" 39 1232 1254 "pathname.ml" 39 1232 1263
+type(
+  int
+)
+"pathname.ml" 39 1232 1264 "pathname.ml" 39 1232 1265
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"pathname.ml" 39 1232 1266 "pathname.ml" 39 1232 1267
+type(
+  int
+)
+"pathname.ml" 39 1232 1254 "pathname.ml" 39 1232 1267
+type(
+  int
+)
+"pathname.ml" 39 1232 1251 "pathname.ml" 39 1232 1268
+type(
+  char
+)
+"pathname.ml" 39 1232 1269 "pathname.ml" 39 1232 1270
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"pathname.ml" 39 1232 1271 "pathname.ml" 39 1232 1274
+type(
+  char
+)
+"pathname.ml" 39 1232 1251 "pathname.ml" 39 1232 1274
+type(
+  bool
+)
+"pathname.ml" 39 1232 1275 "pathname.ml" 39 1232 1277
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"pathname.ml" 39 1232 1278 "pathname.ml" 39 1232 1294
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref My_std.String.is_suffix
+)
+"pathname.ml" 39 1232 1295 "pathname.ml" 39 1232 1296
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 37 1145 1165 "pathname.ml" 37 1145 1166
+)
+"pathname.ml" 39 1232 1297 "pathname.ml" 39 1232 1300
+type(
+  string
+)
+ident(
+  int_ref ext "pathname.ml" 37 1145 1167 "pathname.ml" 37 1145 1170
+)
+"pathname.ml" 39 1232 1278 "pathname.ml" 39 1232 1300
+call(
+  tail
+)
+type(
+  bool
+)
+"pathname.ml" 39 1232 1251 "pathname.ml" 39 1232 1300
+type(
+  bool
+)
+"pathname.ml" 39 1232 1234 "pathname.ml" 39 1232 1300
+type(
+  bool
+)
+"pathname.ml" 38 1173 1175 "pathname.ml" 39 1232 1300
+type(
+  bool
+)
+"pathname.ml" 42 1328 1334 "pathname.ml" 42 1328 1339
+type(
+  string -> string -> string
+)
+ident(
+  def / "pathname.ml" 43 1349 1351 "pathname.ml" 44 1397 1400
+)
+"pathname.ml" 42 1328 1342 "pathname.ml" 42 1328 1348
+type(
+  string -> string -> string
+)
+ident(
+  int_ref concat "pathname.ml" 25 971 975 "pathname.ml" 25 971 981
+)
+"pathname.ml" 43 1349 1355 "pathname.ml" 43 1349 1362
+type(
+  string -> string -> string
+)
+ident(
+  def -.- "pathname.ml" 43 1349 1396 "pathname.ml" 44 1397 1400
+)
+"pathname.ml" 43 1349 1363 "pathname.ml" 43 1349 1367
+type(
+  string
+)
+ident(
+  def file "pathname.ml" 43 1349 1368 "pathname.ml" 43 1349 1396
+)
+"pathname.ml" 43 1349 1368 "pathname.ml" 43 1349 1371
+type(
+  string
+)
+ident(
+  def ext "pathname.ml" 43 1349 1374 "pathname.ml" 43 1349 1396
+)
+"pathname.ml" 43 1349 1374 "pathname.ml" 43 1349 1387
+type(
+  string -> string -> string
+)
+ident(
+  int_ref add_extension "pathname.ml" 35 1104 1108 "pathname.ml" 35 1104 1121
+)
+"pathname.ml" 43 1349 1388 "pathname.ml" 43 1349 1391
+type(
+  string
+)
+ident(
+  int_ref ext "pathname.ml" 43 1349 1368 "pathname.ml" 43 1349 1371
+)
+"pathname.ml" 43 1349 1392 "pathname.ml" 43 1349 1396
+type(
+  string
+)
+ident(
+  int_ref file "pathname.ml" 43 1349 1363 "pathname.ml" 43 1349 1367
+)
+"pathname.ml" 43 1349 1374 "pathname.ml" 43 1349 1396
+call(
+  tail
+)
+type(
+  string
+)
+"pathname.ml" 47 1417 1421 "pathname.ml" 47 1417 1426
+type(
+  'a -> 'a -> bool
+)
+ident(
+  def equal "pathname.ml" 49 1440 1440 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 47 1417 1427 "pathname.ml" 47 1417 1428
+type(
+  'a
+)
+ident(
+  def x "pathname.ml" 47 1417 1429 "pathname.ml" 47 1417 1438
+)
+"pathname.ml" 47 1417 1429 "pathname.ml" 47 1417 1430
+type(
+  'a
+)
+ident(
+  def y "pathname.ml" 47 1417 1433 "pathname.ml" 47 1417 1438
+)
+"pathname.ml" 47 1417 1433 "pathname.ml" 47 1417 1434
+type(
+  'a
+)
+ident(
+  int_ref x "pathname.ml" 47 1417 1427 "pathname.ml" 47 1417 1428
+)
+"pathname.ml" 47 1417 1435 "pathname.ml" 47 1417 1436
+type(
+  'a -> 'a -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"pathname.ml" 47 1417 1437 "pathname.ml" 47 1417 1438
+type(
+  'a
+)
+ident(
+  int_ref y "pathname.ml" 47 1417 1429 "pathname.ml" 47 1417 1430
+)
+"pathname.ml" 47 1417 1433 "pathname.ml" 47 1417 1438
+type(
+  bool
+)
+"pathname.ml" 49 1440 1444 "pathname.ml" 49 1440 1453
+type(
+  'a -> 'a
+)
+ident(
+  def to_string "pathname.ml" 51 1461 1461 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 49 1440 1454 "pathname.ml" 49 1440 1455
+type(
+  'a
+)
+ident(
+  def x "pathname.ml" 49 1440 1458 "pathname.ml" 49 1440 1459
+)
+"pathname.ml" 49 1440 1458 "pathname.ml" 49 1440 1459
+type(
+  'a
+)
+ident(
+  int_ref x "pathname.ml" 49 1440 1454 "pathname.ml" 49 1440 1455
+)
+"pathname.ml" 51 1461 1465 "pathname.ml" 51 1461 1472
+type(
+  string -> bool
+)
+ident(
+  def is_link "pathname.ml" 52 1489 1489 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 51 1461 1475 "pathname.ml" 51 1461 1488
+type(
+  string -> bool
+)
+ident(
+  ext_ref Shell.is_link
+)
+"pathname.ml" 52 1489 1493 "pathname.ml" 52 1489 1501
+type(
+  string -> string
+)
+ident(
+  def readlink "pathname.ml" 53 1519 1519 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 52 1489 1504 "pathname.ml" 52 1489 1518
+type(
+  string -> string
+)
+ident(
+  ext_ref Shell.readlink
+)
+"pathname.ml" 53 1519 1523 "pathname.ml" 53 1519 1535
+type(
+  string -> bool
+)
+ident(
+  def is_directory "pathname.ml" 56 1631 1631 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 53 1519 1536 "pathname.ml" 53 1519 1537
+type(
+  string
+)
+ident(
+  def x "pathname.ml" 54 1540 1542 "pathname.ml" 55 1603 1630
+)
+"pathname.ml" 54 1540 1547 "pathname.ml" 54 1540 1559
+type(
+  string -> My_unix.stats
+)
+ident(
+  ext_ref My_unix.stat
+)
+"pathname.ml" 54 1540 1560 "pathname.ml" 54 1540 1561
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 53 1519 1536 "pathname.ml" 53 1519 1537
+)
+"pathname.ml" 54 1540 1546 "pathname.ml" 54 1540 1562
+call(
+  stack
+)
+type(
+  My_unix.stats
+)
+"pathname.ml" 54 1540 1546 "pathname.ml" 54 1540 1585
+type(
+  My_unix.file_kind
+)
+"pathname.ml" 54 1540 1586 "pathname.ml" 54 1540 1587
+type(
+  My_unix.file_kind -> My_unix.file_kind -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"pathname.ml" 54 1540 1588 "pathname.ml" 54 1540 1602
+type(
+  My_unix.file_kind
+)
+"pathname.ml" 54 1540 1546 "pathname.ml" 54 1540 1602
+type(
+  bool
+)
+"pathname.ml" 55 1603 1620 "pathname.ml" 55 1603 1621
+type(
+  string
+)
+"pathname.ml" 55 1603 1610 "pathname.ml" 55 1603 1621
+type(
+  exn
+)
+"pathname.ml" 55 1603 1625 "pathname.ml" 55 1603 1630
+type(
+  bool
+)
+"pathname.ml" 54 1540 1542 "pathname.ml" 55 1603 1630
+type(
+  bool
+)
+"pathname.ml" 56 1631 1635 "pathname.ml" 56 1631 1642
+type(
+  string -> string array
+)
+ident(
+  def readdir "pathname.ml" 58 1677 1677 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 56 1631 1643 "pathname.ml" 56 1631 1644
+type(
+  string
+)
+ident(
+  def x "pathname.ml" 56 1631 1647 "pathname.ml" 56 1631 1675
+)
+"pathname.ml" 56 1631 1647 "pathname.ml" 56 1631 1659
+type(
+  (string array, exn) My_std.Outcome.t -> string array
+)
+ident(
+  ext_ref My_std.Outcome.good
+)
+"pathname.ml" 56 1631 1661 "pathname.ml" 56 1631 1672
+type(
+  string -> (string array, exn) My_std.Outcome.t
+)
+ident(
+  ext_ref My_std.sys_readdir
+)
+"pathname.ml" 56 1631 1673 "pathname.ml" 56 1631 1674
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 56 1631 1643 "pathname.ml" 56 1631 1644
+)
+"pathname.ml" 56 1631 1660 "pathname.ml" 56 1631 1675
+call(
+  stack
+)
+type(
+  (string array, exn) My_std.Outcome.t
+)
+"pathname.ml" 56 1631 1647 "pathname.ml" 56 1631 1675
+call(
+  tail
+)
+type(
+  string array
+)
+"pathname.ml" 58 1677 1681 "pathname.ml" 58 1677 1689
+type(
+  char list
+)
+ident(
+  def dir_seps "pathname.ml" 59 1724 1724 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 58 1677 1693 "pathname.ml" 58 1677 1696
+type(
+  char
+)
+"pathname.ml" 58 1677 1697 "pathname.ml" 58 1677 1701
+type(
+  char
+)
+"pathname.ml" 58 1677 1692 "pathname.ml" 58 1677 1702
+type(
+  char list
+)
+"pathname.ml" 59 1724 1728 "pathname.ml" 59 1724 1746
+type(
+  Glob.globber
+)
+ident(
+  def not_normal_form_re "pathname.ml" 61 1779 1779 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 59 1724 1749 "pathname.ml" 59 1724 1759
+type(
+  ?dir:string -> string -> Glob.globber
+)
+ident(
+  ext_ref Glob.parse
+)
+"pathname.ml" 59 1724 1760 "pathname.ml" 59 1724 1777
+type(
+  string
+)
+"pathname.ml" 59 1724 1749 "pathname.ml" 59 1724 1777
+call(
+  stack
+)
+type(
+  Glob.globber
+)
+"pathname.ml" 61 1779 1783 "pathname.ml" 61 1779 1789
+type(
+  string -> string
+)
+ident(
+  def parent "pathname.ml" 63 1820 1820 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 61 1779 1790 "pathname.ml" 61 1779 1791
+type(
+  string
+)
+ident(
+  def x "pathname.ml" 61 1779 1794 "pathname.ml" 61 1779 1818
+)
+"pathname.ml" 61 1779 1794 "pathname.ml" 61 1779 1800
+type(
+  string -> string -> string
+)
+ident(
+  int_ref concat "pathname.ml" 25 971 975 "pathname.ml" 25 971 981
+)
+"pathname.ml" 61 1779 1801 "pathname.ml" 61 1779 1816
+type(
+  string
+)
+ident(
+  ext_ref parent_dir_name
+)
+"pathname.ml" 61 1779 1817 "pathname.ml" 61 1779 1818
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 61 1779 1790 "pathname.ml" 61 1779 1791
+)
+"pathname.ml" 61 1779 1794 "pathname.ml" 61 1779 1818
+call(
+  tail
+)
+type(
+  string
+)
+"pathname.ml" 63 1820 1824 "pathname.ml" 63 1820 1829
+type(
+  string -> string * string list
+)
+ident(
+  def split "pathname.ml" 70 1961 1961 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 63 1820 1830 "pathname.ml" 63 1820 1831
+type(
+  string
+)
+ident(
+  def p "pathname.ml" 64 1834 1836 "pathname.ml" 68 1947 1959
+)
+"pathname.ml" 64 1834 1844 "pathname.ml" 64 1834 1846
+type(
+  string -> string list -> string * string list
+)
+ident(
+  def go "pathname.ml" 64 1834 1836 "pathname.ml" 68 1947 1959
+)
+"pathname.ml" 64 1834 1847 "pathname.ml" 64 1834 1848
+type(
+  string
+)
+ident(
+  def p "pathname.ml" 64 1834 1849 "pathname.ml" 67 1911 1946
+)
+"pathname.ml" 64 1834 1849 "pathname.ml" 64 1834 1852
+type(
+  string list
+)
+ident(
+  def acc "pathname.ml" 65 1855 1859 "pathname.ml" 67 1911 1946
+)
+"pathname.ml" 65 1855 1863 "pathname.ml" 65 1855 1866
+type(
+  string
+)
+ident(
+  def dir "pathname.ml" 66 1882 1886 "pathname.ml" 67 1911 1946
+)
+"pathname.ml" 65 1855 1869 "pathname.ml" 65 1855 1876
+type(
+  string -> string
+)
+ident(
+  ext_ref dirname
+)
+"pathname.ml" 65 1855 1877 "pathname.ml" 65 1855 1878
+type(
+  string
+)
+ident(
+  int_ref p "pathname.ml" 64 1834 1847 "pathname.ml" 64 1834 1848
+)
+"pathname.ml" 65 1855 1869 "pathname.ml" 65 1855 1878
+call(
+  stack
+)
+type(
+  string
+)
+"pathname.ml" 66 1882 1889 "pathname.ml" 66 1882 1892
+type(
+  string
+)
+ident(
+  int_ref dir "pathname.ml" 65 1855 1863 "pathname.ml" 65 1855 1866
+)
+"pathname.ml" 66 1882 1893 "pathname.ml" 66 1882 1894
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"pathname.ml" 66 1882 1895 "pathname.ml" 66 1882 1896
+type(
+  string
+)
+ident(
+  int_ref p "pathname.ml" 64 1834 1847 "pathname.ml" 64 1834 1848
+)
+"pathname.ml" 66 1882 1889 "pathname.ml" 66 1882 1896
+type(
+  bool
+)
+"pathname.ml" 66 1882 1902 "pathname.ml" 66 1882 1905
+type(
+  string
+)
+ident(
+  int_ref dir "pathname.ml" 65 1855 1863 "pathname.ml" 65 1855 1866
+)
+"pathname.ml" 66 1882 1907 "pathname.ml" 66 1882 1910
+type(
+  string list
+)
+ident(
+  int_ref acc "pathname.ml" 64 1834 1849 "pathname.ml" 64 1834 1852
+)
+"pathname.ml" 66 1882 1902 "pathname.ml" 66 1882 1910
+type(
+  string * string list
+)
+"pathname.ml" 67 1911 1920 "pathname.ml" 67 1911 1922
+type(
+  string -> string list -> string * string list
+)
+ident(
+  int_ref go "pathname.ml" 64 1834 1844 "pathname.ml" 64 1834 1846
+)
+"pathname.ml" 67 1911 1923 "pathname.ml" 67 1911 1926
+type(
+  string
+)
+ident(
+  int_ref dir "pathname.ml" 65 1855 1863 "pathname.ml" 65 1855 1866
+)
+"pathname.ml" 67 1911 1928 "pathname.ml" 67 1911 1936
+type(
+  string -> string
+)
+ident(
+  ext_ref basename
+)
+"pathname.ml" 67 1911 1937 "pathname.ml" 67 1911 1938
+type(
+  string
+)
+ident(
+  int_ref p "pathname.ml" 64 1834 1847 "pathname.ml" 64 1834 1848
+)
+"pathname.ml" 67 1911 1928 "pathname.ml" 67 1911 1938
+call(
+  stack
+)
+type(
+  string
+)
+"pathname.ml" 67 1911 1942 "pathname.ml" 67 1911 1945
+type(
+  string list
+)
+ident(
+  int_ref acc "pathname.ml" 64 1834 1849 "pathname.ml" 64 1834 1852
+)
+"pathname.ml" 67 1911 1927 "pathname.ml" 67 1911 1946
+type(
+  string list
+)
+"pathname.ml" 67 1911 1920 "pathname.ml" 67 1911 1946
+call(
+  tail
+)
+type(
+  string * string list
+)
+"pathname.ml" 66 1882 1886 "pathname.ml" 67 1911 1946
+type(
+  string * string list
+)
+"pathname.ml" 65 1855 1859 "pathname.ml" 67 1911 1946
+type(
+  string * string list
+)
+"pathname.ml" 68 1947 1952 "pathname.ml" 68 1947 1954
+type(
+  string -> string list -> string * string list
+)
+ident(
+  int_ref go "pathname.ml" 64 1834 1844 "pathname.ml" 64 1834 1846
+)
+"pathname.ml" 68 1947 1955 "pathname.ml" 68 1947 1956
+type(
+  string
+)
+ident(
+  int_ref p "pathname.ml" 63 1820 1830 "pathname.ml" 63 1820 1831
+)
+"pathname.ml" 68 1947 1957 "pathname.ml" 68 1947 1959
+type(
+  string list
+)
+"pathname.ml" 68 1947 1952 "pathname.ml" 68 1947 1959
+call(
+  tail
+)
+type(
+  string * string list
+)
+"pathname.ml" 64 1834 1836 "pathname.ml" 68 1947 1959
+type(
+  string * string list
+)
+"pathname.ml" 70 1961 1965 "pathname.ml" 70 1961 1969
+type(
+  string -> string list -> string
+)
+ident(
+  def join "pathname.ml" 74 2077 2077 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 70 1961 1970 "pathname.ml" 70 1961 1974
+type(
+  string
+)
+ident(
+  def root "pathname.ml" 70 1961 1975 "pathname.ml" 72 2044 2075
+)
+"pathname.ml" 70 1961 1975 "pathname.ml" 70 1961 1980
+type(
+  string list
+)
+ident(
+  def paths "pathname.ml" 71 1983 1985 "pathname.ml" 72 2044 2075
+)
+"pathname.ml" 71 1983 1989 "pathname.ml" 71 1983 1993
+type(
+  string
+)
+ident(
+  def root "pathname.ml" 72 2044 2046 "pathname.ml" 72 2044 2075
+)
+"pathname.ml" 71 1983 1999 "pathname.ml" 71 1983 2003
+type(
+  string
+)
+ident(
+  int_ref root "pathname.ml" 70 1961 1970 "pathname.ml" 70 1961 1974
+)
+"pathname.ml" 71 1983 2004 "pathname.ml" 71 1983 2005
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"pathname.ml" 71 1983 2006 "pathname.ml" 71 1983 2022
+type(
+  string
+)
+ident(
+  ext_ref current_dir_name
+)
+"pathname.ml" 71 1983 1999 "pathname.ml" 71 1983 2022
+type(
+  bool
+)
+"pathname.ml" 71 1983 2028 "pathname.ml" 71 1983 2030
+type(
+  string
+)
+"pathname.ml" 71 1983 2036 "pathname.ml" 71 1983 2040
+type(
+  string
+)
+ident(
+  int_ref root "pathname.ml" 70 1961 1970 "pathname.ml" 70 1961 1974
+)
+"pathname.ml" 71 1983 1996 "pathname.ml" 71 1983 2040
+type(
+  string
+)
+"pathname.ml" 72 2044 2046 "pathname.ml" 72 2044 2060
+type(
+  (string -> string -> string) -> string -> string list -> string
+)
+ident(
+  ext_ref My_std.List.fold_left
+)
+"pathname.ml" 72 2044 2061 "pathname.ml" 72 2044 2064
+type(
+  string -> string -> string
+)
+ident(
+  int_ref Operators.( / ) "pathname.ml" 42 1328 1334 "pathname.ml" 42 1328 1339
+)
+"pathname.ml" 72 2044 2065 "pathname.ml" 72 2044 2069
+type(
+  string
+)
+ident(
+  int_ref root "pathname.ml" 71 1983 1989 "pathname.ml" 71 1983 1993
+)
+"pathname.ml" 72 2044 2070 "pathname.ml" 72 2044 2075
+type(
+  string list
+)
+ident(
+  int_ref paths "pathname.ml" 70 1961 1975 "pathname.ml" 70 1961 1980
+)
+"pathname.ml" 72 2044 2046 "pathname.ml" 72 2044 2075
+call(
+  tail
+)
+type(
+  string
+)
+"pathname.ml" 71 1983 1985 "pathname.ml" 72 2044 2075
+type(
+  string
+)
+"pathname.ml" 74 2077 2081 "pathname.ml" 74 2077 2084
+type(
+  unit
+)
+ident(
+  def _H1 "pathname.ml" 75 2119 2119 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 74 2077 2095 "pathname.ml" 74 2077 2111
+type(
+  string
+)
+ident(
+  ext_ref current_dir_name
+)
+"pathname.ml" 74 2077 2112 "pathname.ml" 74 2077 2113
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"pathname.ml" 74 2077 2114 "pathname.ml" 74 2077 2117
+type(
+  string
+)
+"pathname.ml" 74 2077 2094 "pathname.ml" 74 2077 2118
+type(
+  bool
+)
+"pathname.ml" 74 2077 2087 "pathname.ml" 74 2077 2118
+type(
+  unit
+)
+"pathname.ml" 75 2119 2123 "pathname.ml" 75 2119 2126
+type(
+  unit
+)
+ident(
+  def _H2 "pathname.ml" 78 2179 2179 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 75 2119 2137 "pathname.ml" 75 2119 2152
+type(
+  string
+)
+ident(
+  ext_ref parent_dir_name
+)
+"pathname.ml" 75 2119 2153 "pathname.ml" 75 2119 2154
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"pathname.ml" 75 2119 2155 "pathname.ml" 75 2119 2159
+type(
+  string
+)
+"pathname.ml" 75 2119 2136 "pathname.ml" 75 2119 2160
+type(
+  bool
+)
+"pathname.ml" 75 2119 2129 "pathname.ml" 75 2119 2160
+type(
+  unit
+)
+"pathname.ml" 78 2179 2187 "pathname.ml" 78 2179 2201
+type(
+  string list -> string list
+)
+ident(
+  def normalize_list "pathname.ml" 78 2179 2179 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 79 2213 2217 "pathname.ml" 79 2213 2219
+type(
+  string list
+)
+"pathname.ml" 79 2213 2223 "pathname.ml" 79 2213 2225
+type(
+  string list
+)
+"pathname.ml" 80 2226 2230 "pathname.ml" 80 2226 2233
+type(
+  string
+)
+"pathname.ml" 80 2226 2237 "pathname.ml" 80 2226 2239
+type(
+  string list
+)
+ident(
+  def xs "pathname.ml" 80 2226 2243 "pathname.ml" 80 2226 2260
+)
+"pathname.ml" 80 2226 2230 "pathname.ml" 80 2226 2239
+type(
+  string list
+)
+"pathname.ml" 80 2226 2243 "pathname.ml" 80 2226 2257
+type(
+  string list -> string list
+)
+ident(
+  int_ref normalize_list "pathname.ml" 78 2179 2187 "pathname.ml" 78 2179 2201
+)
+"pathname.ml" 80 2226 2258 "pathname.ml" 80 2226 2260
+type(
+  string list
+)
+ident(
+  int_ref xs "pathname.ml" 80 2226 2237 "pathname.ml" 80 2226 2239
+)
+"pathname.ml" 80 2226 2243 "pathname.ml" 80 2226 2260
+call(
+  tail
+)
+type(
+  string list
+)
+"pathname.ml" 81 2261 2265 "pathname.ml" 81 2261 2269
+type(
+  string
+)
+"pathname.ml" 81 2261 2273 "pathname.ml" 81 2261 2274
+type(
+  string list
+)
+"pathname.ml" 81 2261 2265 "pathname.ml" 81 2261 2274
+type(
+  string list
+)
+"pathname.ml" 81 2261 2278 "pathname.ml" 81 2261 2286
+type(
+  string -> string list
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"pathname.ml" 81 2261 2287 "pathname.ml" 81 2261 2334
+type(
+  string
+)
+"pathname.ml" 81 2261 2278 "pathname.ml" 81 2261 2334
+call(
+  tail
+)
+type(
+  string list
+)
+"pathname.ml" 82 2335 2339 "pathname.ml" 82 2335 2340
+type(
+  string
+)
+"pathname.ml" 82 2335 2344 "pathname.ml" 82 2335 2348
+type(
+  string
+)
+"pathname.ml" 82 2335 2352 "pathname.ml" 82 2335 2354
+type(
+  string list
+)
+ident(
+  def xs "pathname.ml" 82 2335 2358 "pathname.ml" 82 2335 2375
+)
+"pathname.ml" 82 2335 2344 "pathname.ml" 82 2335 2354
+type(
+  string list
+)
+"pathname.ml" 82 2335 2339 "pathname.ml" 82 2335 2354
+type(
+  string list
+)
+"pathname.ml" 82 2335 2358 "pathname.ml" 82 2335 2372
+type(
+  string list -> string list
+)
+ident(
+  int_ref normalize_list "pathname.ml" 78 2179 2187 "pathname.ml" 78 2179 2201
+)
+"pathname.ml" 82 2335 2373 "pathname.ml" 82 2335 2375
+type(
+  string list
+)
+ident(
+  int_ref xs "pathname.ml" 82 2335 2352 "pathname.ml" 82 2335 2354
+)
+"pathname.ml" 82 2335 2358 "pathname.ml" 82 2335 2375
+call(
+  tail
+)
+type(
+  string list
+)
+"pathname.ml" 83 2376 2380 "pathname.ml" 83 2376 2381
+type(
+  string
+)
+ident(
+  def x "pathname.ml" 83 2376 2391 "pathname.ml" 83 2376 2413
+)
+"pathname.ml" 83 2376 2385 "pathname.ml" 83 2376 2387
+type(
+  string list
+)
+ident(
+  def xs "pathname.ml" 83 2376 2391 "pathname.ml" 83 2376 2413
+)
+"pathname.ml" 83 2376 2380 "pathname.ml" 83 2376 2387
+type(
+  string list
+)
+"pathname.ml" 83 2376 2391 "pathname.ml" 83 2376 2392
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 83 2376 2380 "pathname.ml" 83 2376 2381
+)
+"pathname.ml" 83 2376 2396 "pathname.ml" 83 2376 2410
+type(
+  string list -> string list
+)
+ident(
+  int_ref normalize_list "pathname.ml" 78 2179 2187 "pathname.ml" 78 2179 2201
+)
+"pathname.ml" 83 2376 2411 "pathname.ml" 83 2376 2413
+type(
+  string list
+)
+ident(
+  int_ref xs "pathname.ml" 83 2376 2385 "pathname.ml" 83 2376 2387
+)
+"pathname.ml" 83 2376 2396 "pathname.ml" 83 2376 2413
+call(
+  stack
+)
+type(
+  string list
+)
+"pathname.ml" 83 2376 2391 "pathname.ml" 83 2376 2413
+type(
+  string list
+)
+"pathname.ml" 78 2179 2204 "pathname.ml" 83 2376 2413
+type(
+  string list -> string list
+)
+"pathname.ml" 85 2415 2419 "pathname.ml" 85 2415 2428
+type(
+  string -> string
+)
+ident(
+  def normalize "pathname.ml" 92 2608 2608 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 85 2415 2429 "pathname.ml" 85 2415 2430
+type(
+  string
+)
+ident(
+  def x "pathname.ml" 86 2433 2435 "pathname.ml" 89 2544 2552
+)
+"pathname.ml" 86 2433 2438 "pathname.ml" 86 2433 2447
+type(
+  Glob.globber -> string -> bool
+)
+ident(
+  ext_ref Glob.eval
+)
+"pathname.ml" 86 2433 2448 "pathname.ml" 86 2433 2466
+type(
+  Glob.globber
+)
+ident(
+  int_ref not_normal_form_re "pathname.ml" 59 1724 1728 "pathname.ml" 59 1724 1746
+)
+"pathname.ml" 86 2433 2467 "pathname.ml" 86 2433 2468
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 85 2415 2429 "pathname.ml" 85 2415 2430
+)
+"pathname.ml" 86 2433 2438 "pathname.ml" 86 2433 2468
+call(
+  stack
+)
+type(
+  bool
+)
+"pathname.ml" 87 2474 2482 "pathname.ml" 87 2474 2486
+type(
+  string
+)
+ident(
+  def root "pathname.ml" 88 2507 2511 "pathname.ml" 88 2507 2543
+)
+"pathname.ml" 87 2474 2488 "pathname.ml" 87 2474 2493
+type(
+  string list
+)
+ident(
+  def paths "pathname.ml" 88 2507 2511 "pathname.ml" 88 2507 2543
+)
+"pathname.ml" 87 2474 2482 "pathname.ml" 87 2474 2493
+type(
+  string * string list
+)
+"pathname.ml" 87 2474 2496 "pathname.ml" 87 2474 2501
+type(
+  string -> string * string list
+)
+ident(
+  int_ref split "pathname.ml" 63 1820 1824 "pathname.ml" 63 1820 1829
+)
+"pathname.ml" 87 2474 2502 "pathname.ml" 87 2474 2503
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 85 2415 2429 "pathname.ml" 85 2415 2430
+)
+"pathname.ml" 87 2474 2496 "pathname.ml" 87 2474 2503
+call(
+  stack
+)
+type(
+  string * string list
+)
+"pathname.ml" 88 2507 2511 "pathname.ml" 88 2507 2515
+type(
+  string -> string list -> string
+)
+ident(
+  int_ref join "pathname.ml" 70 1961 1965 "pathname.ml" 70 1961 1969
+)
+"pathname.ml" 88 2507 2516 "pathname.ml" 88 2507 2520
+type(
+  string
+)
+ident(
+  int_ref root "pathname.ml" 87 2474 2482 "pathname.ml" 87 2474 2486
+)
+"pathname.ml" 88 2507 2522 "pathname.ml" 88 2507 2536
+type(
+  string list -> string list
+)
+ident(
+  int_ref normalize_list "pathname.ml" 78 2179 2187 "pathname.ml" 78 2179 2201
+)
+"pathname.ml" 88 2507 2537 "pathname.ml" 88 2507 2542
+type(
+  string list
+)
+ident(
+  int_ref paths "pathname.ml" 87 2474 2488 "pathname.ml" 87 2474 2493
+)
+"pathname.ml" 88 2507 2521 "pathname.ml" 88 2507 2543
+call(
+  stack
+)
+type(
+  string list
+)
+"pathname.ml" 88 2507 2511 "pathname.ml" 88 2507 2543
+call(
+  tail
+)
+type(
+  string
+)
+"pathname.ml" 87 2474 2478 "pathname.ml" 88 2507 2543
+type(
+  string
+)
+"pathname.ml" 89 2544 2551 "pathname.ml" 89 2544 2552
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 85 2415 2429 "pathname.ml" 85 2415 2430
+)
+"pathname.ml" 86 2433 2435 "pathname.ml" 89 2544 2552
+type(
+  string
+)
+"pathname.ml" 92 2608 2612 "pathname.ml" 92 2608 2621
+type(
+  string -> string -> bool
+)
+ident(
+  def is_prefix "pathname.ml" 98 2816 2816 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 92 2608 2622 "pathname.ml" 92 2608 2623
+type(
+  string
+)
+ident(
+  def x "pathname.ml" 92 2608 2624 "pathname.ml" 96 2802 2814
+)
+"pathname.ml" 92 2608 2624 "pathname.ml" 92 2608 2625
+type(
+  string
+)
+ident(
+  def y "pathname.ml" 93 2628 2630 "pathname.ml" 96 2802 2814
+)
+"pathname.ml" 93 2628 2634 "pathname.ml" 93 2628 2636
+type(
+  int
+)
+ident(
+  def lx "pathname.ml" 94 2683 2685 "pathname.ml" 96 2802 2814
+)
+"pathname.ml" 93 2628 2639 "pathname.ml" 93 2628 2652
+type(
+  string -> int
+)
+ident(
+  ext_ref My_std.String.length
+)
+"pathname.ml" 93 2628 2653 "pathname.ml" 93 2628 2654
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 92 2608 2622 "pathname.ml" 92 2608 2623
+)
+"pathname.ml" 93 2628 2639 "pathname.ml" 93 2628 2654
+type(
+  int
+)
+"pathname.ml" 93 2628 2659 "pathname.ml" 93 2628 2661
+type(
+  int
+)
+ident(
+  def ly "pathname.ml" 94 2683 2685 "pathname.ml" 96 2802 2814
+)
+"pathname.ml" 93 2628 2664 "pathname.ml" 93 2628 2677
+type(
+  string -> int
+)
+ident(
+  ext_ref My_std.String.length
+)
+"pathname.ml" 93 2628 2678 "pathname.ml" 93 2628 2679
+type(
+  string
+)
+ident(
+  int_ref y "pathname.ml" 92 2608 2624 "pathname.ml" 92 2608 2625
+)
+"pathname.ml" 93 2628 2664 "pathname.ml" 93 2628 2679
+type(
+  int
+)
+"pathname.ml" 94 2683 2688 "pathname.ml" 94 2683 2690
+type(
+  int
+)
+ident(
+  int_ref lx "pathname.ml" 93 2628 2634 "pathname.ml" 93 2628 2636
+)
+"pathname.ml" 94 2683 2691 "pathname.ml" 94 2683 2692
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"pathname.ml" 94 2683 2693 "pathname.ml" 94 2683 2695
+type(
+  int
+)
+ident(
+  int_ref ly "pathname.ml" 93 2628 2659 "pathname.ml" 93 2628 2661
+)
+"pathname.ml" 94 2683 2688 "pathname.ml" 94 2683 2695
+type(
+  bool
+)
+"pathname.ml" 94 2683 2701 "pathname.ml" 94 2683 2702
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 92 2608 2622 "pathname.ml" 92 2608 2623
+)
+"pathname.ml" 94 2683 2703 "pathname.ml" 94 2683 2704
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"pathname.ml" 94 2683 2706 "pathname.ml" 94 2683 2719
+type(
+  string -> int -> string
+)
+ident(
+  ext_ref My_std.String.before
+)
+"pathname.ml" 94 2683 2720 "pathname.ml" 94 2683 2721
+type(
+  string
+)
+ident(
+  int_ref y "pathname.ml" 92 2608 2624 "pathname.ml" 92 2608 2625
+)
+"pathname.ml" 94 2683 2722 "pathname.ml" 94 2683 2724
+type(
+  int
+)
+ident(
+  int_ref lx "pathname.ml" 93 2628 2634 "pathname.ml" 93 2628 2636
+)
+"pathname.ml" 94 2683 2705 "pathname.ml" 94 2683 2725
+call(
+  stack
+)
+type(
+  string
+)
+"pathname.ml" 94 2683 2701 "pathname.ml" 94 2683 2725
+type(
+  bool
+)
+"pathname.ml" 95 2726 2736 "pathname.ml" 95 2726 2738
+type(
+  int
+)
+ident(
+  int_ref lx "pathname.ml" 93 2628 2634 "pathname.ml" 93 2628 2636
+)
+"pathname.ml" 95 2726 2739 "pathname.ml" 95 2726 2740
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"pathname.ml" 95 2726 2741 "pathname.ml" 95 2726 2743
+type(
+  int
+)
+ident(
+  int_ref ly "pathname.ml" 93 2628 2659 "pathname.ml" 93 2628 2661
+)
+"pathname.ml" 95 2726 2736 "pathname.ml" 95 2726 2743
+type(
+  bool
+)
+"pathname.ml" 95 2726 2749 "pathname.ml" 95 2726 2750
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 92 2608 2622 "pathname.ml" 92 2608 2623
+)
+"pathname.ml" 95 2726 2751 "pathname.ml" 95 2726 2752
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"pathname.ml" 95 2726 2754 "pathname.ml" 95 2726 2767
+type(
+  string -> int -> string
+)
+ident(
+  ext_ref My_std.String.before
+)
+"pathname.ml" 95 2726 2768 "pathname.ml" 95 2726 2769
+type(
+  string
+)
+ident(
+  int_ref y "pathname.ml" 92 2608 2624 "pathname.ml" 92 2608 2625
+)
+"pathname.ml" 95 2726 2770 "pathname.ml" 95 2726 2772
+type(
+  int
+)
+ident(
+  int_ref lx "pathname.ml" 93 2628 2634 "pathname.ml" 93 2628 2636
+)
+"pathname.ml" 95 2726 2753 "pathname.ml" 95 2726 2773
+call(
+  stack
+)
+type(
+  string
+)
+"pathname.ml" 95 2726 2749 "pathname.ml" 95 2726 2773
+type(
+  bool
+)
+"pathname.ml" 95 2726 2774 "pathname.ml" 95 2726 2776
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"pathname.ml" 95 2726 2777 "pathname.ml" 95 2726 2785
+type(
+  char -> char list -> bool
+)
+ident(
+  ext_ref My_std.List.mem
+)
+"pathname.ml" 95 2726 2786 "pathname.ml" 95 2726 2787
+type(
+  string
+)
+ident(
+  int_ref y "pathname.ml" 92 2608 2624 "pathname.ml" 92 2608 2625
+)
+"pathname.ml" 95 2726 2789 "pathname.ml" 95 2726 2791
+type(
+  int
+)
+ident(
+  int_ref lx "pathname.ml" 93 2628 2634 "pathname.ml" 93 2628 2636
+)
+"pathname.ml" 95 2726 2786 "pathname.ml" 95 2726 2792
+type(
+  char
+)
+"pathname.ml" 95 2726 2793 "pathname.ml" 95 2726 2801
+type(
+  char list
+)
+ident(
+  int_ref dir_seps "pathname.ml" 58 1677 1681 "pathname.ml" 58 1677 1689
+)
+"pathname.ml" 95 2726 2777 "pathname.ml" 95 2726 2801
+call(
+  tail
+)
+type(
+  bool
+)
+"pathname.ml" 95 2726 2749 "pathname.ml" 95 2726 2801
+type(
+  bool
+)
+"pathname.ml" 96 2802 2809 "pathname.ml" 96 2802 2814
+type(
+  bool
+)
+"pathname.ml" 95 2726 2733 "pathname.ml" 96 2802 2814
+type(
+  bool
+)
+"pathname.ml" 94 2683 2685 "pathname.ml" 96 2802 2814
+type(
+  bool
+)
+"pathname.ml" 93 2628 2630 "pathname.ml" 96 2802 2814
+type(
+  bool
+)
+"pathname.ml" 98 2816 2820 "pathname.ml" 98 2816 2831
+type(
+  string -> string -> bool
+)
+ident(
+  def link_to_dir "pathname.ml" 100 2881 2881 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 98 2816 2832 "pathname.ml" 98 2816 2833
+type(
+  string
+)
+ident(
+  def p "pathname.ml" 98 2816 2834 "pathname.ml" 98 2816 2879
+)
+"pathname.ml" 98 2816 2834 "pathname.ml" 98 2816 2837
+type(
+  string
+)
+ident(
+  def dir "pathname.ml" 98 2816 2840 "pathname.ml" 98 2816 2879
+)
+"pathname.ml" 98 2816 2840 "pathname.ml" 98 2816 2847
+type(
+  string -> bool
+)
+ident(
+  int_ref is_link "pathname.ml" 51 1461 1465 "pathname.ml" 51 1461 1472
+)
+"pathname.ml" 98 2816 2848 "pathname.ml" 98 2816 2849
+type(
+  string
+)
+ident(
+  int_ref p "pathname.ml" 98 2816 2832 "pathname.ml" 98 2816 2833
+)
+"pathname.ml" 98 2816 2840 "pathname.ml" 98 2816 2849
+call(
+  stack
+)
+type(
+  bool
+)
+"pathname.ml" 98 2816 2850 "pathname.ml" 98 2816 2852
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"pathname.ml" 98 2816 2853 "pathname.ml" 98 2816 2862
+type(
+  string -> string -> bool
+)
+ident(
+  int_ref is_prefix "pathname.ml" 92 2608 2612 "pathname.ml" 92 2608 2621
+)
+"pathname.ml" 98 2816 2863 "pathname.ml" 98 2816 2866
+type(
+  string
+)
+ident(
+  int_ref dir "pathname.ml" 98 2816 2834 "pathname.ml" 98 2816 2837
+)
+"pathname.ml" 98 2816 2868 "pathname.ml" 98 2816 2876
+type(
+  string -> string
+)
+ident(
+  int_ref readlink "pathname.ml" 52 1489 1493 "pathname.ml" 52 1489 1501
+)
+"pathname.ml" 98 2816 2877 "pathname.ml" 98 2816 2878
+type(
+  string
+)
+ident(
+  int_ref p "pathname.ml" 98 2816 2832 "pathname.ml" 98 2816 2833
+)
+"pathname.ml" 98 2816 2867 "pathname.ml" 98 2816 2879
+call(
+  stack
+)
+type(
+  string
+)
+"pathname.ml" 98 2816 2853 "pathname.ml" 98 2816 2879
+call(
+  tail
+)
+type(
+  bool
+)
+"pathname.ml" 98 2816 2840 "pathname.ml" 98 2816 2879
+type(
+  bool
+)
+"pathname.ml" 100 2881 2885 "pathname.ml" 100 2881 2901
+type(
+  string -> string
+)
+ident(
+  def remove_extension "pathname.ml" 103 2960 2960 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 100 2881 2902 "pathname.ml" 100 2881 2903
+type(
+  string
+)
+ident(
+  def x "pathname.ml" 101 2906 2908 "pathname.ml" 102 2929 2959
+)
+"pathname.ml" 101 2906 2912 "pathname.ml" 101 2906 2926
+type(
+  string -> string
+)
+ident(
+  ext_ref chop_extension
+)
+"pathname.ml" 101 2906 2927 "pathname.ml" 101 2906 2928
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 100 2881 2902 "pathname.ml" 100 2881 2903
+)
+"pathname.ml" 101 2906 2912 "pathname.ml" 101 2906 2928
+call(
+  stack
+)
+type(
+  string
+)
+"pathname.ml" 102 2929 2953 "pathname.ml" 102 2929 2954
+type(
+  string
+)
+"pathname.ml" 102 2929 2936 "pathname.ml" 102 2929 2954
+type(
+  exn
+)
+"pathname.ml" 102 2929 2958 "pathname.ml" 102 2929 2959
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 100 2881 2902 "pathname.ml" 100 2881 2903
+)
+"pathname.ml" 101 2906 2908 "pathname.ml" 102 2929 2959
+type(
+  string
+)
+"pathname.ml" 103 2960 2964 "pathname.ml" 103 2960 2977
+type(
+  string -> string
+)
+ident(
+  def get_extension "pathname.ml" 108 3077 3077 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 103 2960 2978 "pathname.ml" 103 2960 2979
+type(
+  string
+)
+ident(
+  def x "pathname.ml" 104 2982 2984 "pathname.ml" 107 3054 3076
+)
+"pathname.ml" 105 2988 2996 "pathname.ml" 105 2988 2999
+type(
+  int
+)
+ident(
+  def pos "pathname.ml" 106 3025 3029 "pathname.ml" 106 3025 3053
+)
+"pathname.ml" 105 2988 3002 "pathname.ml" 105 2988 3015
+type(
+  string -> char -> int
+)
+ident(
+  ext_ref My_std.String.rindex
+)
+"pathname.ml" 105 2988 3016 "pathname.ml" 105 2988 3017
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 103 2960 2978 "pathname.ml" 103 2960 2979
+)
+"pathname.ml" 105 2988 3018 "pathname.ml" 105 2988 3021
+type(
+  char
+)
+"pathname.ml" 105 2988 3002 "pathname.ml" 105 2988 3021
+call(
+  stack
+)
+type(
+  int
+)
+"pathname.ml" 106 3025 3029 "pathname.ml" 106 3025 3041
+type(
+  string -> int -> string
+)
+ident(
+  ext_ref My_std.String.after
+)
+"pathname.ml" 106 3025 3042 "pathname.ml" 106 3025 3043
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 103 2960 2978 "pathname.ml" 103 2960 2979
+)
+"pathname.ml" 106 3025 3045 "pathname.ml" 106 3025 3048
+type(
+  int
+)
+ident(
+  int_ref pos "pathname.ml" 105 2988 2996 "pathname.ml" 105 2988 2999
+)
+"pathname.ml" 106 3025 3049 "pathname.ml" 106 3025 3050
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"pathname.ml" 106 3025 3051 "pathname.ml" 106 3025 3052
+type(
+  int
+)
+"pathname.ml" 106 3025 3044 "pathname.ml" 106 3025 3053
+type(
+  int
+)
+"pathname.ml" 106 3025 3029 "pathname.ml" 106 3025 3053
+call(
+  stack
+)
+type(
+  string
+)
+"pathname.ml" 105 2988 2992 "pathname.ml" 106 3025 3053
+type(
+  string
+)
+"pathname.ml" 107 3054 3061 "pathname.ml" 107 3054 3070
+type(
+  exn
+)
+"pathname.ml" 107 3054 3074 "pathname.ml" 107 3054 3076
+type(
+  string
+)
+"pathname.ml" 104 2982 2984 "pathname.ml" 107 3054 3076
+type(
+  string
+)
+"pathname.ml" 108 3077 3081 "pathname.ml" 108 3077 3097
+type(
+  string -> string -> string
+)
+ident(
+  def update_extension "pathname.ml" 111 3146 3146 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 108 3077 3098 "pathname.ml" 108 3077 3101
+type(
+  string
+)
+ident(
+  def ext "pathname.ml" 108 3077 3102 "pathname.ml" 109 3106 3144
+)
+"pathname.ml" 108 3077 3102 "pathname.ml" 108 3077 3103
+type(
+  string
+)
+ident(
+  def x "pathname.ml" 109 3106 3108 "pathname.ml" 109 3106 3144
+)
+"pathname.ml" 109 3106 3108 "pathname.ml" 109 3106 3121
+type(
+  string -> string -> string
+)
+ident(
+  int_ref add_extension "pathname.ml" 35 1104 1108 "pathname.ml" 35 1104 1121
+)
+"pathname.ml" 109 3106 3122 "pathname.ml" 109 3106 3125
+type(
+  string
+)
+ident(
+  int_ref ext "pathname.ml" 108 3077 3098 "pathname.ml" 108 3077 3101
+)
+"pathname.ml" 109 3106 3127 "pathname.ml" 109 3106 3141
+type(
+  string -> string
+)
+ident(
+  ext_ref chop_extension
+)
+"pathname.ml" 109 3106 3142 "pathname.ml" 109 3106 3143
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 108 3077 3102 "pathname.ml" 108 3077 3103
+)
+"pathname.ml" 109 3106 3126 "pathname.ml" 109 3106 3144
+call(
+  stack
+)
+type(
+  string
+)
+"pathname.ml" 109 3106 3108 "pathname.ml" 109 3106 3144
+call(
+  tail
+)
+type(
+  string
+)
+"pathname.ml" 111 3146 3150 "pathname.ml" 111 3146 3165
+type(
+  string -> string
+)
+ident(
+  def chop_extensions "pathname.ml" 117 3382 3382 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 111 3146 3166 "pathname.ml" 111 3146 3167
+type(
+  string
+)
+ident(
+  def x "pathname.ml" 112 3170 3172 "pathname.ml" 116 3317 3381
+)
+"pathname.ml" 112 3170 3176 "pathname.ml" 112 3170 3183
+type(
+  string
+)
+ident(
+  def dirname "pathname.ml" 113 3225 3227 "pathname.ml" 116 3317 3381
+)
+"pathname.ml" 112 3170 3186 "pathname.ml" 112 3170 3193
+type(
+  string -> string
+)
+ident(
+  ext_ref dirname
+)
+"pathname.ml" 112 3170 3194 "pathname.ml" 112 3170 3195
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 111 3146 3166 "pathname.ml" 111 3146 3167
+)
+"pathname.ml" 112 3170 3186 "pathname.ml" 112 3170 3195
+call(
+  stack
+)
+type(
+  string
+)
+"pathname.ml" 112 3170 3200 "pathname.ml" 112 3170 3208
+type(
+  string
+)
+ident(
+  def basename "pathname.ml" 113 3225 3227 "pathname.ml" 116 3317 3381
+)
+"pathname.ml" 112 3170 3211 "pathname.ml" 112 3170 3219
+type(
+  string -> string
+)
+ident(
+  ext_ref basename
+)
+"pathname.ml" 112 3170 3220 "pathname.ml" 112 3170 3221
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 111 3146 3166 "pathname.ml" 111 3146 3167
+)
+"pathname.ml" 112 3170 3211 "pathname.ml" 112 3170 3221
+call(
+  stack
+)
+type(
+  string
+)
+"pathname.ml" 114 3231 3239 "pathname.ml" 114 3231 3242
+type(
+  int
+)
+ident(
+  def pos "pathname.ml" 115 3274 3278 "pathname.ml" 115 3274 3316
+)
+"pathname.ml" 114 3231 3245 "pathname.ml" 114 3231 3257
+type(
+  string -> char -> int
+)
+ident(
+  ext_ref My_std.String.index
+)
+"pathname.ml" 114 3231 3258 "pathname.ml" 114 3231 3266
+type(
+  string
+)
+ident(
+  int_ref basename "pathname.ml" 112 3170 3200 "pathname.ml" 112 3170 3208
+)
+"pathname.ml" 114 3231 3267 "pathname.ml" 114 3231 3270
+type(
+  char
+)
+"pathname.ml" 114 3231 3245 "pathname.ml" 114 3231 3270
+call(
+  stack
+)
+type(
+  int
+)
+"pathname.ml" 115 3274 3278 "pathname.ml" 115 3274 3285
+type(
+  string
+)
+ident(
+  int_ref dirname "pathname.ml" 112 3170 3176 "pathname.ml" 112 3170 3183
+)
+"pathname.ml" 115 3274 3286 "pathname.ml" 115 3274 3287
+type(
+  string -> string -> string
+)
+ident(
+  int_ref Operators.( / ) "pathname.ml" 42 1328 1334 "pathname.ml" 42 1328 1339
+)
+"pathname.ml" 115 3274 3289 "pathname.ml" 115 3274 3302
+type(
+  string -> int -> string
+)
+ident(
+  ext_ref My_std.String.before
+)
+"pathname.ml" 115 3274 3303 "pathname.ml" 115 3274 3311
+type(
+  string
+)
+ident(
+  int_ref basename "pathname.ml" 112 3170 3200 "pathname.ml" 112 3170 3208
+)
+"pathname.ml" 115 3274 3312 "pathname.ml" 115 3274 3315
+type(
+  int
+)
+ident(
+  int_ref pos "pathname.ml" 114 3231 3239 "pathname.ml" 114 3231 3242
+)
+"pathname.ml" 115 3274 3288 "pathname.ml" 115 3274 3316
+call(
+  stack
+)
+type(
+  string
+)
+"pathname.ml" 115 3274 3278 "pathname.ml" 115 3274 3316
+call(
+  stack
+)
+type(
+  string
+)
+"pathname.ml" 114 3231 3235 "pathname.ml" 115 3274 3316
+type(
+  string
+)
+"pathname.ml" 116 3317 3324 "pathname.ml" 116 3317 3333
+type(
+  exn
+)
+"pathname.ml" 116 3317 3337 "pathname.ml" 116 3317 3348
+type(
+  string -> string
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"pathname.ml" 116 3317 3349 "pathname.ml" 116 3317 3381
+type(
+  string
+)
+"pathname.ml" 116 3317 3337 "pathname.ml" 116 3317 3381
+call(
+  tail
+)
+type(
+  string
+)
+"pathname.ml" 113 3225 3227 "pathname.ml" 116 3317 3381
+type(
+  string
+)
+"pathname.ml" 112 3170 3172 "pathname.ml" 116 3317 3381
+type(
+  string
+)
+"pathname.ml" 117 3382 3386 "pathname.ml" 117 3382 3403
+type(
+  string -> string
+)
+ident(
+  def remove_extensions "pathname.ml" 120 3463 3463 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 117 3382 3404 "pathname.ml" 117 3382 3405
+type(
+  string
+)
+ident(
+  def x "pathname.ml" 118 3408 3410 "pathname.ml" 119 3432 3462
+)
+"pathname.ml" 118 3408 3414 "pathname.ml" 118 3408 3429
+type(
+  string -> string
+)
+ident(
+  int_ref chop_extensions "pathname.ml" 111 3146 3150 "pathname.ml" 111 3146 3165
+)
+"pathname.ml" 118 3408 3430 "pathname.ml" 118 3408 3431
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 117 3382 3404 "pathname.ml" 117 3382 3405
+)
+"pathname.ml" 118 3408 3414 "pathname.ml" 118 3408 3431
+call(
+  stack
+)
+type(
+  string
+)
+"pathname.ml" 119 3432 3456 "pathname.ml" 119 3432 3457
+type(
+  string
+)
+"pathname.ml" 119 3432 3439 "pathname.ml" 119 3432 3457
+type(
+  exn
+)
+"pathname.ml" 119 3432 3461 "pathname.ml" 119 3432 3462
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 117 3382 3404 "pathname.ml" 117 3382 3405
+)
+"pathname.ml" 118 3408 3410 "pathname.ml" 119 3432 3462
+type(
+  string
+)
+"pathname.ml" 120 3463 3467 "pathname.ml" 120 3463 3481
+type(
+  string -> string
+)
+ident(
+  def get_extensions "pathname.ml" 126 3625 3625 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 120 3463 3482 "pathname.ml" 120 3463 3483
+type(
+  string
+)
+ident(
+  def x "pathname.ml" 121 3486 3488 "pathname.ml" 125 3602 3624
+)
+"pathname.ml" 121 3486 3492 "pathname.ml" 121 3486 3500
+type(
+  string
+)
+ident(
+  def basename "pathname.ml" 122 3517 3519 "pathname.ml" 125 3602 3624
+)
+"pathname.ml" 121 3486 3503 "pathname.ml" 121 3486 3511
+type(
+  string -> string
+)
+ident(
+  ext_ref basename
+)
+"pathname.ml" 121 3486 3512 "pathname.ml" 121 3486 3513
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 120 3463 3482 "pathname.ml" 120 3463 3483
+)
+"pathname.ml" 121 3486 3503 "pathname.ml" 121 3486 3513
+call(
+  stack
+)
+type(
+  string
+)
+"pathname.ml" 123 3523 3531 "pathname.ml" 123 3523 3534
+type(
+  int
+)
+ident(
+  def pos "pathname.ml" 124 3566 3570 "pathname.ml" 124 3566 3601
+)
+"pathname.ml" 123 3523 3537 "pathname.ml" 123 3523 3549
+type(
+  string -> char -> int
+)
+ident(
+  ext_ref My_std.String.index
+)
+"pathname.ml" 123 3523 3550 "pathname.ml" 123 3523 3558
+type(
+  string
+)
+ident(
+  int_ref basename "pathname.ml" 121 3486 3492 "pathname.ml" 121 3486 3500
+)
+"pathname.ml" 123 3523 3559 "pathname.ml" 123 3523 3562
+type(
+  char
+)
+"pathname.ml" 123 3523 3537 "pathname.ml" 123 3523 3562
+call(
+  stack
+)
+type(
+  int
+)
+"pathname.ml" 124 3566 3570 "pathname.ml" 124 3566 3582
+type(
+  string -> int -> string
+)
+ident(
+  ext_ref My_std.String.after
+)
+"pathname.ml" 124 3566 3583 "pathname.ml" 124 3566 3591
+type(
+  string
+)
+ident(
+  int_ref basename "pathname.ml" 121 3486 3492 "pathname.ml" 121 3486 3500
+)
+"pathname.ml" 124 3566 3593 "pathname.ml" 124 3566 3596
+type(
+  int
+)
+ident(
+  int_ref pos "pathname.ml" 123 3523 3531 "pathname.ml" 123 3523 3534
+)
+"pathname.ml" 124 3566 3597 "pathname.ml" 124 3566 3598
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"pathname.ml" 124 3566 3599 "pathname.ml" 124 3566 3600
+type(
+  int
+)
+"pathname.ml" 124 3566 3592 "pathname.ml" 124 3566 3601
+type(
+  int
+)
+"pathname.ml" 124 3566 3570 "pathname.ml" 124 3566 3601
+call(
+  stack
+)
+type(
+  string
+)
+"pathname.ml" 123 3523 3527 "pathname.ml" 124 3566 3601
+type(
+  string
+)
+"pathname.ml" 125 3602 3609 "pathname.ml" 125 3602 3618
+type(
+  exn
+)
+"pathname.ml" 125 3602 3622 "pathname.ml" 125 3602 3624
+type(
+  string
+)
+"pathname.ml" 122 3517 3519 "pathname.ml" 125 3602 3624
+type(
+  string
+)
+"pathname.ml" 121 3486 3488 "pathname.ml" 125 3602 3624
+type(
+  string
+)
+"pathname.ml" 126 3625 3629 "pathname.ml" 126 3625 3646
+type(
+  string -> string -> string
+)
+ident(
+  def update_extensions "pathname.ml" 129 3696 3696 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 126 3625 3647 "pathname.ml" 126 3625 3650
+type(
+  string
+)
+ident(
+  def ext "pathname.ml" 126 3625 3651 "pathname.ml" 127 3655 3694
+)
+"pathname.ml" 126 3625 3651 "pathname.ml" 126 3625 3652
+type(
+  string
+)
+ident(
+  def x "pathname.ml" 127 3655 3657 "pathname.ml" 127 3655 3694
+)
+"pathname.ml" 127 3655 3657 "pathname.ml" 127 3655 3670
+type(
+  string -> string -> string
+)
+ident(
+  int_ref add_extension "pathname.ml" 35 1104 1108 "pathname.ml" 35 1104 1121
+)
+"pathname.ml" 127 3655 3671 "pathname.ml" 127 3655 3674
+type(
+  string
+)
+ident(
+  int_ref ext "pathname.ml" 126 3625 3647 "pathname.ml" 126 3625 3650
+)
+"pathname.ml" 127 3655 3676 "pathname.ml" 127 3655 3691
+type(
+  string -> string
+)
+ident(
+  int_ref chop_extensions "pathname.ml" 111 3146 3150 "pathname.ml" 111 3146 3165
+)
+"pathname.ml" 127 3655 3692 "pathname.ml" 127 3655 3693
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 126 3625 3651 "pathname.ml" 126 3625 3652
+)
+"pathname.ml" 127 3655 3675 "pathname.ml" 127 3655 3694
+call(
+  stack
+)
+type(
+  string
+)
+"pathname.ml" 127 3655 3657 "pathname.ml" 127 3655 3694
+call(
+  tail
+)
+type(
+  string
+)
+"pathname.ml" 129 3696 3700 "pathname.ml" 129 3696 3706
+type(
+  string -> bool
+)
+ident(
+  def exists "pathname.ml" 131 3726 3726 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 129 3696 3709 "pathname.ml" 129 3696 3724
+type(
+  string -> bool
+)
+ident(
+  ext_ref My_std.sys_file_exists
+)
+"pathname.ml" 131 3726 3730 "pathname.ml" 131 3726 3734
+type(
+  string -> string -> unit
+)
+ident(
+  def copy "pathname.ml" 132 3746 3746 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 131 3726 3737 "pathname.ml" 131 3726 3745
+type(
+  string -> string -> unit
+)
+ident(
+  ext_ref Shell.cp
+)
+"pathname.ml" 132 3746 3750 "pathname.ml" 132 3746 3756
+type(
+  string -> unit
+)
+ident(
+  def remove "pathname.ml" 133 3768 3768 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 132 3746 3759 "pathname.ml" 132 3746 3767
+type(
+  string -> unit
+)
+ident(
+  ext_ref Shell.rm
+)
+"pathname.ml" 133 3768 3772 "pathname.ml" 133 3768 3782
+type(
+  string -> unit
+)
+ident(
+  def try_remove "pathname.ml" 134 3815 3815 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 133 3768 3783 "pathname.ml" 133 3768 3784
+type(
+  string
+)
+ident(
+  def x "pathname.ml" 133 3768 3787 "pathname.ml" 133 3768 3814
+)
+"pathname.ml" 133 3768 3790 "pathname.ml" 133 3768 3796
+type(
+  string -> bool
+)
+ident(
+  int_ref exists "pathname.ml" 129 3696 3700 "pathname.ml" 129 3696 3706
+)
+"pathname.ml" 133 3768 3797 "pathname.ml" 133 3768 3798
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 133 3768 3783 "pathname.ml" 133 3768 3784
+)
+"pathname.ml" 133 3768 3790 "pathname.ml" 133 3768 3798
+call(
+  stack
+)
+type(
+  bool
+)
+"pathname.ml" 133 3768 3804 "pathname.ml" 133 3768 3812
+type(
+  string -> unit
+)
+ident(
+  ext_ref Shell.rm
+)
+"pathname.ml" 133 3768 3813 "pathname.ml" 133 3768 3814
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 133 3768 3783 "pathname.ml" 133 3768 3784
+)
+"pathname.ml" 133 3768 3804 "pathname.ml" 133 3768 3814
+call(
+  tail
+)
+type(
+  unit
+)
+"pathname.ml" 133 3768 3787 "pathname.ml" 133 3768 3814
+type(
+  unit
+)
+"pathname.ml" 134 3815 3819 "pathname.ml" 134 3815 3823
+type(
+  string -> string
+)
+ident(
+  def read "pathname.ml" 136 3837 3837 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 134 3815 3826 "pathname.ml" 134 3815 3835
+type(
+  string -> string
+)
+ident(
+  ext_ref My_std.read_file
+)
+"pathname.ml" 136 3837 3841 "pathname.ml" 136 3837 3856
+type(
+  ?bin:bool -> string -> (in_channel -> 'a) -> 'a
+)
+ident(
+  def with_input_file "pathname.ml" 138 3876 3876 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 136 3837 3859 "pathname.ml" 136 3837 3874
+type(
+  ?bin:bool -> string -> (in_channel -> 'a) -> 'a
+)
+ident(
+  ext_ref My_std.with_input_file
+)
+"pathname.ml" 138 3876 3880 "pathname.ml" 138 3876 3896
+type(
+  ?bin:bool -> string -> (out_channel -> 'a) -> 'a
+)
+ident(
+  def with_output_file "pathname.ml" 140 3917 3917 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 138 3876 3899 "pathname.ml" 138 3876 3915
+type(
+  ?bin:bool -> string -> (out_channel -> 'a) -> 'a
+)
+ident(
+  ext_ref My_std.with_output_file
+)
+"pathname.ml" 140 3917 3921 "pathname.ml" 140 3917 3936
+type(
+  Format.formatter -> string list -> unit
+)
+ident(
+  def print_path_list "pathname.ml" 142 3957 3957 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 140 3917 3939 "pathname.ml" 140 3917 3949
+type(
+  (Format.formatter -> string -> unit) ->
+  Format.formatter -> string list -> unit
+)
+ident(
+  ext_ref My_std.List.print
+)
+"pathname.ml" 140 3917 3950 "pathname.ml" 140 3917 3955
+type(
+  Format.formatter -> string -> unit
+)
+ident(
+  int_ref print "pathname.ml" 29 1036 1040 "pathname.ml" 29 1036 1045
+)
+"pathname.ml" 140 3917 3939 "pathname.ml" 140 3917 3955
+call(
+  stack
+)
+type(
+  Format.formatter -> string list -> unit
+)
+"pathname.ml" 142 3957 3961 "pathname.ml" 142 3957 3974
+type(
+  (string, string list) Hashtbl.t
+)
+ident(
+  def context_table "pathname.ml" 144 3997 3997 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 142 3957 3977 "pathname.ml" 142 3957 3991
+type(
+  ?random:bool -> int -> (string, string list) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"pathname.ml" 142 3957 3992 "pathname.ml" 142 3957 3995
+type(
+  int
+)
+"pathname.ml" 142 3957 3977 "pathname.ml" 142 3957 3995
+call(
+  stack
+)
+type(
+  (string, string list) Hashtbl.t
+)
+"pathname.ml" 144 3997 4005 "pathname.ml" 144 3997 4020
+type(
+  string -> string list
+)
+ident(
+  def include_dirs_of "pathname.ml" 144 3997 3997 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 144 3997 4021 "pathname.ml" 144 3997 4024
+type(
+  string
+)
+ident(
+  def dir "pathname.ml" 145 4027 4029 "pathname.ml" 146 4064 4150
+)
+"pathname.ml" 145 4027 4033 "pathname.ml" 145 4027 4045
+type(
+  (string, string list) Hashtbl.t -> string -> string list
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"pathname.ml" 145 4027 4046 "pathname.ml" 145 4027 4059
+type(
+  (string, string list) Hashtbl.t
+)
+ident(
+  int_ref context_table "pathname.ml" 142 3957 3961 "pathname.ml" 142 3957 3974
+)
+"pathname.ml" 145 4027 4060 "pathname.ml" 145 4027 4063
+type(
+  string
+)
+ident(
+  int_ref dir "pathname.ml" 144 3997 4021 "pathname.ml" 144 3997 4024
+)
+"pathname.ml" 145 4027 4033 "pathname.ml" 145 4027 4063
+call(
+  stack
+)
+type(
+  string list
+)
+"pathname.ml" 146 4064 4071 "pathname.ml" 146 4064 4080
+type(
+  exn
+)
+"pathname.ml" 146 4064 4084 "pathname.ml" 146 4064 4087
+type(
+  string
+)
+ident(
+  int_ref dir "pathname.ml" 144 3997 4021 "pathname.ml" 144 3997 4024
+)
+"pathname.ml" 146 4064 4091 "pathname.ml" 146 4064 4102
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref My_std.List.filter
+)
+"pathname.ml" 146 4064 4108 "pathname.ml" 146 4064 4112
+type(
+  string
+)
+ident(
+  def dir' "pathname.ml" 146 4064 4116 "pathname.ml" 146 4064 4127
+)
+"pathname.ml" 146 4064 4116 "pathname.ml" 146 4064 4119
+type(
+  string
+)
+ident(
+  int_ref dir "pathname.ml" 144 3997 4021 "pathname.ml" 144 3997 4024
+)
+"pathname.ml" 146 4064 4120 "pathname.ml" 146 4064 4122
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"pathname.ml" 146 4064 4123 "pathname.ml" 146 4064 4127
+type(
+  string
+)
+ident(
+  int_ref dir' "pathname.ml" 146 4064 4108 "pathname.ml" 146 4064 4112
+)
+"pathname.ml" 146 4064 4116 "pathname.ml" 146 4064 4127
+type(
+  bool
+)
+"pathname.ml" 146 4064 4103 "pathname.ml" 146 4064 4128
+type(
+  string -> bool
+)
+"pathname.ml" 146 4064 4129 "pathname.ml" 146 4064 4130
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"pathname.ml" 146 4064 4130 "pathname.ml" 146 4064 4150
+type(
+  string list ref
+)
+ident(
+  ext_ref Options.include_dirs
+)
+"pathname.ml" 146 4064 4129 "pathname.ml" 146 4064 4150
+type(
+  string list
+)
+"pathname.ml" 146 4064 4091 "pathname.ml" 146 4064 4150
+call(
+  stack
+)
+type(
+  string list
+)
+"pathname.ml" 146 4064 4084 "pathname.ml" 146 4064 4150
+type(
+  string list
+)
+"pathname.ml" 145 4027 4029 "pathname.ml" 146 4064 4150
+type(
+  string list
+)
+"pathname.ml" 155 4299 4303 "pathname.ml" 155 4299 4317
+type(
+  string -> string list -> unit
+)
+ident(
+  def define_context "pathname.ml" 159 4468 4468 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 155 4299 4318 "pathname.ml" 155 4299 4321
+type(
+  string
+)
+ident(
+  def dir "pathname.ml" 155 4299 4322 "pathname.ml" 157 4390 4466
+)
+"pathname.ml" 155 4299 4322 "pathname.ml" 155 4299 4329
+type(
+  string list
+)
+ident(
+  def context "pathname.ml" 156 4332 4334 "pathname.ml" 157 4390 4466
+)
+"pathname.ml" 156 4332 4338 "pathname.ml" 156 4332 4341
+type(
+  string
+)
+ident(
+  def dir "pathname.ml" 157 4390 4392 "pathname.ml" 157 4390 4466
+)
+"pathname.ml" 156 4332 4347 "pathname.ml" 156 4332 4350
+type(
+  string
+)
+ident(
+  int_ref dir "pathname.ml" 155 4299 4318 "pathname.ml" 155 4299 4321
+)
+"pathname.ml" 156 4332 4351 "pathname.ml" 156 4332 4352
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"pathname.ml" 156 4332 4353 "pathname.ml" 156 4332 4355
+type(
+  string
+)
+"pathname.ml" 156 4332 4347 "pathname.ml" 156 4332 4355
+type(
+  bool
+)
+"pathname.ml" 156 4332 4361 "pathname.ml" 156 4332 4377
+type(
+  string
+)
+ident(
+  ext_ref current_dir_name
+)
+"pathname.ml" 156 4332 4383 "pathname.ml" 156 4332 4386
+type(
+  string
+)
+ident(
+  int_ref dir "pathname.ml" 155 4299 4318 "pathname.ml" 155 4299 4321
+)
+"pathname.ml" 156 4332 4344 "pathname.ml" 156 4332 4386
+type(
+  string
+)
+"pathname.ml" 157 4390 4392 "pathname.ml" 157 4390 4407
+type(
+  (string, string list) Hashtbl.t -> string -> string list -> unit
+)
+ident(
+  ext_ref Hashtbl.replace
+)
+"pathname.ml" 157 4390 4408 "pathname.ml" 157 4390 4421
+type(
+  (string, string list) Hashtbl.t
+)
+ident(
+  int_ref context_table "pathname.ml" 142 3957 3961 "pathname.ml" 142 3957 3974
+)
+"pathname.ml" 157 4390 4422 "pathname.ml" 157 4390 4425
+type(
+  string
+)
+ident(
+  int_ref dir "pathname.ml" 156 4332 4338 "pathname.ml" 156 4332 4341
+)
+"pathname.ml" 157 4390 4392 "pathname.ml" 157 4390 4425
+call(
+  stack
+)
+type(
+  string list -> unit
+)
+"pathname.ml" 157 4390 4425 "pathname.ml" 157 4390 4426
+type(
+  (string list -> unit) -> string list -> unit
+)
+ident(
+  ext_ref My_std.( & )
+)
+"pathname.ml" 157 4390 4427 "pathname.ml" 157 4390 4437
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref My_std.List.union
+)
+"pathname.ml" 157 4390 4438 "pathname.ml" 157 4390 4445
+type(
+  string list
+)
+ident(
+  int_ref context "pathname.ml" 155 4299 4322 "pathname.ml" 155 4299 4329
+)
+"pathname.ml" 157 4390 4427 "pathname.ml" 157 4390 4445
+call(
+  stack
+)
+type(
+  string list -> string list
+)
+"pathname.ml" 157 4390 4445 "pathname.ml" 157 4390 4446
+type(
+  (string list -> string list) -> string list -> string list
+)
+ident(
+  ext_ref My_std.( & )
+)
+"pathname.ml" 157 4390 4447 "pathname.ml" 157 4390 4462
+type(
+  string -> string list
+)
+ident(
+  int_ref include_dirs_of "pathname.ml" 144 3997 4005 "pathname.ml" 144 3997 4020
+)
+"pathname.ml" 157 4390 4463 "pathname.ml" 157 4390 4466
+type(
+  string
+)
+ident(
+  int_ref dir "pathname.ml" 156 4332 4338 "pathname.ml" 156 4332 4341
+)
+"pathname.ml" 157 4390 4447 "pathname.ml" 157 4390 4466
+call(
+  stack
+)
+type(
+  string list
+)
+"pathname.ml" 157 4390 4427 "pathname.ml" 157 4390 4466
+call(
+  stack
+)
+type(
+  string list
+)
+"pathname.ml" 157 4390 4392 "pathname.ml" 157 4390 4466
+call(
+  tail
+)
+type(
+  unit
+)
+"pathname.ml" 156 4332 4334 "pathname.ml" 157 4390 4466
+type(
+  unit
+)
+"pathname.ml" 159 4468 4472 "pathname.ml" 159 4468 4485
+type(
+  string -> string -> bool
+)
+ident(
+  def same_contents "pathname.ml" 159 4468 4521 "pathname.ml" 1 0 -1
+)
+"pathname.ml" 159 4468 4486 "pathname.ml" 159 4468 4487
+type(
+  string
+)
+ident(
+  def x "pathname.ml" 159 4468 4488 "pathname.ml" 159 4468 4521
+)
+"pathname.ml" 159 4468 4488 "pathname.ml" 159 4468 4489
+type(
+  string
+)
+ident(
+  def y "pathname.ml" 159 4468 4492 "pathname.ml" 159 4468 4521
+)
+"pathname.ml" 159 4468 4492 "pathname.ml" 159 4468 4503
+type(
+  string -> My_std.Digest.t
+)
+ident(
+  ext_ref My_std.Digest.file
+)
+"pathname.ml" 159 4468 4504 "pathname.ml" 159 4468 4505
+type(
+  string
+)
+ident(
+  int_ref x "pathname.ml" 159 4468 4486 "pathname.ml" 159 4468 4487
+)
+"pathname.ml" 159 4468 4492 "pathname.ml" 159 4468 4505
+call(
+  stack
+)
+type(
+  My_std.Digest.t
+)
+"pathname.ml" 159 4468 4506 "pathname.ml" 159 4468 4507
+type(
+  My_std.Digest.t -> My_std.Digest.t -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"pathname.ml" 159 4468 4508 "pathname.ml" 159 4468 4519
+type(
+  string -> My_std.Digest.t
+)
+ident(
+  ext_ref My_std.Digest.file
+)
+"pathname.ml" 159 4468 4520 "pathname.ml" 159 4468 4521
+type(
+  string
+)
+ident(
+  int_ref y "pathname.ml" 159 4468 4488 "pathname.ml" 159 4468 4489
+)
+"pathname.ml" 159 4468 4508 "pathname.ml" 159 4468 4521
+call(
+  stack
+)
+type(
+  My_std.Digest.t
+)
+"pathname.ml" 159 4468 4492 "pathname.ml" 159 4468 4521
+type(
+  bool
+)

@@ -1,0 +1,4774 @@
+"event.ml" 49 2164 2168 "event.ml" 49 2164 2179
+type(
+  unit -> 'a channel
+)
+ident(
+  def new_channel "event.ml" 55 2298 2298 "event.ml" 1 0 -1
+)
+"event.ml" 49 2164 2180 "event.ml" 49 2164 2182
+type(
+  unit
+)
+"event.ml" 50 2185 2206 "event.ml" 50 2185 2218
+type(
+  unit -> 'a communication Queue.t
+)
+ident(
+  ext_ref Queue.create
+)
+"event.ml" 50 2185 2218 "event.ml" 50 2185 2220
+type(
+  unit
+)
+"event.ml" 50 2185 2206 "event.ml" 50 2185 2220
+call(
+  stack
+)
+type(
+  'a communication Queue.t
+)
+"event.ml" 51 2222 2242 "event.ml" 51 2222 2254
+type(
+  unit -> 'a communication Queue.t
+)
+ident(
+  ext_ref Queue.create
+)
+"event.ml" 51 2222 2254 "event.ml" 51 2222 2256
+type(
+  unit
+)
+"event.ml" 51 2222 2242 "event.ml" 51 2222 2256
+call(
+  stack
+)
+type(
+  'a communication Queue.t
+)
+"event.ml" 50 2185 2187 "event.ml" 51 2222 2258
+type(
+  'a channel
+)
+"event.ml" 55 2298 2302 "event.ml" 55 2298 2312
+type(
+  Mutex.t
+)
+ident(
+  def masterlock "event.ml" 57 2331 2331 "event.ml" 1 0 -1
+)
+"event.ml" 55 2298 2315 "event.ml" 55 2298 2327
+type(
+  unit -> Mutex.t
+)
+ident(
+  ext_ref Mutex.create
+)
+"event.ml" 55 2298 2327 "event.ml" 55 2298 2329
+type(
+  unit
+)
+"event.ml" 55 2298 2315 "event.ml" 55 2298 2329
+call(
+  stack
+)
+type(
+  Mutex.t
+)
+"event.ml" 57 2331 2335 "event.ml" 57 2331 2344
+type(
+  ('a * (unit -> unit)) list -> ('b * 'a list) array -> int -> unit
+)
+ident(
+  def do_aborts "event.ml" 69 2662 2662 "event.ml" 1 0 -1
+)
+"event.ml" 57 2331 2345 "event.ml" 57 2331 2354
+type(
+  ('a * (unit -> unit)) list
+)
+ident(
+  def abort_env "event.ml" 57 2331 2355 "event.ml" 67 2655 2660
+)
+"event.ml" 57 2331 2355 "event.ml" 57 2331 2360
+type(
+  ('b * 'a list) array
+)
+ident(
+  def genev "event.ml" 57 2331 2361 "event.ml" 67 2655 2660
+)
+"event.ml" 57 2331 2361 "event.ml" 57 2331 2370
+type(
+  int
+)
+ident(
+  def performed "event.ml" 58 2373 2375 "event.ml" 67 2655 2660
+)
+"event.ml" 58 2373 2378 "event.ml" 58 2373 2387
+type(
+  ('a * (unit -> unit)) list
+)
+ident(
+  int_ref abort_env "event.ml" 57 2331 2345 "event.ml" 57 2331 2354
+)
+"event.ml" 58 2373 2388 "event.ml" 58 2373 2390
+type(
+  ('a * (unit -> unit)) list -> ('a * (unit -> unit)) list -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"event.ml" 58 2373 2391 "event.ml" 58 2373 2393
+type(
+  ('a * (unit -> unit)) list
+)
+"event.ml" 58 2373 2378 "event.ml" 58 2373 2393
+type(
+  bool
+)
+"event.ml" 59 2405 2412 "event.ml" 59 2405 2421
+type(
+  int
+)
+ident(
+  int_ref performed "event.ml" 57 2331 2361 "event.ml" 57 2331 2370
+)
+"event.ml" 59 2405 2422 "event.ml" 59 2405 2424
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"event.ml" 59 2405 2425 "event.ml" 59 2405 2426
+type(
+  int
+)
+"event.ml" 59 2405 2412 "event.ml" 59 2405 2426
+type(
+  bool
+)
+"event.ml" 60 2438 2448 "event.ml" 60 2438 2456
+type(
+  'a list
+)
+ident(
+  def ids_done "event.ml" 61 2484 2490 "event.ml" 63 2564 2581
+)
+"event.ml" 60 2438 2459 "event.ml" 60 2438 2462
+type(
+  'b * 'a list -> 'a list
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"event.ml" 60 2438 2463 "event.ml" 60 2438 2468
+type(
+  ('b * 'a list) array
+)
+ident(
+  int_ref genev "event.ml" 57 2331 2355 "event.ml" 57 2331 2360
+)
+"event.ml" 60 2438 2470 "event.ml" 60 2438 2479
+type(
+  int
+)
+ident(
+  int_ref performed "event.ml" 57 2331 2361 "event.ml" 57 2331 2370
+)
+"event.ml" 60 2438 2463 "event.ml" 60 2438 2480
+type(
+  'b * 'a list
+)
+"event.ml" 60 2438 2459 "event.ml" 60 2438 2480
+type(
+  'a list
+)
+"event.ml" 61 2484 2490 "event.ml" 61 2484 2499
+type(
+  ('a * (unit -> unit) -> unit) -> ('a * (unit -> unit)) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"event.ml" 62 2500 2514 "event.ml" 62 2500 2516
+type(
+  'a
+)
+ident(
+  def id "event.ml" 62 2500 2523 "event.ml" 62 2500 2562
+)
+"event.ml" 62 2500 2517 "event.ml" 62 2500 2518
+type(
+  unit -> unit
+)
+ident(
+  def f "event.ml" 62 2500 2523 "event.ml" 62 2500 2562
+)
+"event.ml" 62 2500 2513 "event.ml" 62 2500 2519
+type(
+  'a * (unit -> unit)
+)
+"event.ml" 62 2500 2526 "event.ml" 62 2500 2529
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"event.ml" 62 2500 2531 "event.ml" 62 2500 2539
+type(
+  'a -> 'a list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"event.ml" 62 2500 2540 "event.ml" 62 2500 2542
+type(
+  'a
+)
+ident(
+  int_ref id "event.ml" 62 2500 2514 "event.ml" 62 2500 2516
+)
+"event.ml" 62 2500 2543 "event.ml" 62 2500 2551
+type(
+  'a list
+)
+ident(
+  int_ref ids_done "event.ml" 60 2438 2448 "event.ml" 60 2438 2456
+)
+"event.ml" 62 2500 2530 "event.ml" 62 2500 2552
+call(
+  stack
+)
+type(
+  bool
+)
+"event.ml" 62 2500 2526 "event.ml" 62 2500 2552
+type(
+  bool
+)
+"event.ml" 62 2500 2558 "event.ml" 62 2500 2559
+type(
+  unit -> unit
+)
+ident(
+  int_ref f "event.ml" 62 2500 2517 "event.ml" 62 2500 2518
+)
+"event.ml" 62 2500 2560 "event.ml" 62 2500 2562
+type(
+  unit
+)
+"event.ml" 62 2500 2558 "event.ml" 62 2500 2562
+call(
+  tail
+)
+type(
+  unit
+)
+"event.ml" 62 2500 2523 "event.ml" 62 2500 2562
+type(
+  unit
+)
+"event.ml" 62 2500 2508 "event.ml" 62 2500 2563
+type(
+  'a * (unit -> unit) -> unit
+)
+"event.ml" 63 2564 2572 "event.ml" 63 2564 2581
+type(
+  ('a * (unit -> unit)) list
+)
+ident(
+  int_ref abort_env "event.ml" 57 2331 2345 "event.ml" 57 2331 2354
+)
+"event.ml" 61 2484 2490 "event.ml" 63 2564 2581
+call(
+  tail
+)
+type(
+  unit
+)
+"event.ml" 59 2405 2432 "event.ml" 64 2582 2589
+type(
+  unit
+)
+"event.ml" 65 2601 2607 "event.ml" 65 2601 2616
+type(
+  ('a * (unit -> unit) -> unit) -> ('a * (unit -> unit)) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"event.ml" 65 2601 2623 "event.ml" 65 2601 2624
+type(
+  'a
+)
+"event.ml" 65 2601 2625 "event.ml" 65 2601 2626
+type(
+  unit -> unit
+)
+ident(
+  def f "event.ml" 65 2601 2631 "event.ml" 65 2601 2635
+)
+"event.ml" 65 2601 2622 "event.ml" 65 2601 2627
+type(
+  'a * (unit -> unit)
+)
+"event.ml" 65 2601 2631 "event.ml" 65 2601 2632
+type(
+  unit -> unit
+)
+ident(
+  int_ref f "event.ml" 65 2601 2625 "event.ml" 65 2601 2626
+)
+"event.ml" 65 2601 2633 "event.ml" 65 2601 2635
+type(
+  unit
+)
+"event.ml" 65 2601 2631 "event.ml" 65 2601 2635
+call(
+  tail
+)
+type(
+  unit
+)
+"event.ml" 65 2601 2617 "event.ml" 65 2601 2636
+type(
+  'a * (unit -> unit) -> unit
+)
+"event.ml" 65 2601 2637 "event.ml" 65 2601 2646
+type(
+  ('a * (unit -> unit)) list
+)
+ident(
+  int_ref abort_env "event.ml" 57 2331 2345 "event.ml" 57 2331 2354
+)
+"event.ml" 64 2582 2595 "event.ml" 66 2647 2654
+call(
+  tail
+)
+type(
+  unit
+)
+"event.ml" 58 2373 2399 "event.ml" 67 2655 2660
+type(
+  unit
+)
+"event.ml" 58 2373 2375 "event.ml" 67 2655 2660
+type(
+  unit
+)
+"event.ml" 69 2662 2666 "event.ml" 69 2662 2676
+type(
+  ('a * (unit -> unit)) list ->
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array -> 'b
+)
+ident(
+  def basic_sync "event.ml" 104 3778 3778 "event.ml" 1 0 -1
+)
+"event.ml" 69 2662 2677 "event.ml" 69 2662 2686
+type(
+  ('a * (unit -> unit)) list
+)
+ident(
+  def abort_env "event.ml" 69 2662 2687 "event.ml" 100 3725 3730
+)
+"event.ml" 69 2662 2687 "event.ml" 69 2662 2692
+type(
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array
+)
+ident(
+  def genev "event.ml" 70 2695 2697 "event.ml" 100 3725 3730
+)
+"event.ml" 70 2695 2701 "event.ml" 70 2695 2710
+type(
+  int ref
+)
+ident(
+  def performed "event.ml" 71 2725 2727 "event.ml" 100 3725 3730
+)
+"event.ml" 70 2695 2713 "event.ml" 70 2695 2716
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"event.ml" 70 2695 2717 "event.ml" 70 2695 2721
+type(
+  int
+)
+"event.ml" 70 2695 2713 "event.ml" 70 2695 2721
+type(
+  int ref
+)
+"event.ml" 71 2725 2731 "event.ml" 71 2725 2740
+type(
+  Condition.t
+)
+ident(
+  def condition "event.ml" 72 2765 2767 "event.ml" 100 3725 3730
+)
+"event.ml" 71 2725 2743 "event.ml" 71 2725 2759
+type(
+  unit -> Condition.t
+)
+ident(
+  ext_ref Condition.create
+)
+"event.ml" 71 2725 2759 "event.ml" 71 2725 2761
+type(
+  unit
+)
+"event.ml" 71 2725 2743 "event.ml" 71 2725 2761
+call(
+  stack
+)
+type(
+  Condition.t
+)
+"event.ml" 72 2765 2771 "event.ml" 72 2765 2774
+type(
+  'b basic_event array
+)
+ident(
+  def bev "event.ml" 74 2879 2881 "event.ml" 100 3725 3730
+)
+"event.ml" 72 2765 2777 "event.ml" 72 2765 2789
+type(
+  int -> 'b basic_event -> 'b basic_event array
+)
+ident(
+  ext_ref Array.create
+)
+"event.ml" 72 2765 2791 "event.ml" 72 2765 2803
+type(
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"event.ml" 72 2765 2804 "event.ml" 72 2765 2809
+type(
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array
+)
+ident(
+  int_ref genev "event.ml" 69 2662 2687 "event.ml" 69 2662 2692
+)
+"event.ml" 72 2765 2790 "event.ml" 72 2765 2810
+type(
+  int
+)
+"event.ml" 73 2811 2837 "event.ml" 73 2811 2840
+type(
+  (int ref -> Condition.t -> int -> 'b basic_event) * 'a list ->
+  int ref -> Condition.t -> int -> 'b basic_event
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"event.ml" 73 2811 2842 "event.ml" 73 2811 2847
+type(
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array
+)
+ident(
+  int_ref genev "event.ml" 69 2662 2687 "event.ml" 69 2662 2692
+)
+"event.ml" 73 2811 2849 "event.ml" 73 2811 2850
+type(
+  int
+)
+"event.ml" 73 2811 2841 "event.ml" 73 2811 2852
+type(
+  (int ref -> Condition.t -> int -> 'b basic_event) * 'a list
+)
+"event.ml" 73 2811 2853 "event.ml" 73 2811 2862
+type(
+  int ref
+)
+ident(
+  int_ref performed "event.ml" 70 2695 2701 "event.ml" 70 2695 2710
+)
+"event.ml" 73 2811 2863 "event.ml" 73 2811 2872
+type(
+  Condition.t
+)
+ident(
+  int_ref condition "event.ml" 71 2725 2731 "event.ml" 71 2725 2740
+)
+"event.ml" 73 2811 2873 "event.ml" 73 2811 2874
+type(
+  int
+)
+"event.ml" 73 2811 2836 "event.ml" 73 2811 2875
+call(
+  stack
+)
+type(
+  'b basic_event
+)
+"event.ml" 72 2765 2777 "event.ml" 73 2811 2875
+type(
+  'b basic_event array
+)
+"event.ml" 74 2879 2889 "event.ml" 74 2879 2890
+type(
+  int
+)
+"event.ml" 74 2879 2894 "event.ml" 74 2879 2906
+type(
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"event.ml" 74 2879 2907 "event.ml" 74 2879 2912
+type(
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array
+)
+ident(
+  int_ref genev "event.ml" 69 2662 2687 "event.ml" 69 2662 2692
+)
+"event.ml" 74 2879 2894 "event.ml" 74 2879 2912
+type(
+  int
+)
+"event.ml" 74 2879 2913 "event.ml" 74 2879 2914
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"event.ml" 74 2879 2915 "event.ml" 74 2879 2916
+type(
+  int
+)
+"event.ml" 74 2879 2894 "event.ml" 74 2879 2916
+type(
+  int
+)
+"event.ml" 75 2920 2924 "event.ml" 75 2920 2927
+type(
+  'b basic_event array
+)
+ident(
+  int_ref bev "event.ml" 72 2765 2771 "event.ml" 72 2765 2774
+)
+"event.ml" 75 2920 2929 "event.ml" 75 2920 2930
+type(
+  int
+)
+ident(
+  int_ref i "event.ml" 74 2879 2881 "event.ml" 76 2973 2979
+)
+"event.ml" 75 2920 2936 "event.ml" 75 2920 2939
+type(
+  (int ref -> Condition.t -> int -> 'b basic_event) * 'a list ->
+  int ref -> Condition.t -> int -> 'b basic_event
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"event.ml" 75 2920 2940 "event.ml" 75 2920 2945
+type(
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array
+)
+ident(
+  int_ref genev "event.ml" 69 2662 2687 "event.ml" 69 2662 2692
+)
+"event.ml" 75 2920 2947 "event.ml" 75 2920 2948
+type(
+  int
+)
+ident(
+  int_ref i "event.ml" 74 2879 2881 "event.ml" 76 2973 2979
+)
+"event.ml" 75 2920 2940 "event.ml" 75 2920 2949
+type(
+  (int ref -> Condition.t -> int -> 'b basic_event) * 'a list
+)
+"event.ml" 75 2920 2935 "event.ml" 75 2920 2950
+type(
+  int ref -> Condition.t -> int -> 'b basic_event
+)
+"event.ml" 75 2920 2951 "event.ml" 75 2920 2960
+type(
+  int ref
+)
+ident(
+  int_ref performed "event.ml" 70 2695 2701 "event.ml" 70 2695 2710
+)
+"event.ml" 75 2920 2961 "event.ml" 75 2920 2970
+type(
+  Condition.t
+)
+ident(
+  int_ref condition "event.ml" 71 2725 2731 "event.ml" 71 2725 2740
+)
+"event.ml" 75 2920 2971 "event.ml" 75 2920 2972
+type(
+  int
+)
+ident(
+  int_ref i "event.ml" 74 2879 2881 "event.ml" 76 2973 2979
+)
+"event.ml" 75 2920 2935 "event.ml" 75 2920 2972
+call(
+  stack
+)
+type(
+  'b basic_event
+)
+"event.ml" 75 2920 2924 "event.ml" 75 2920 2972
+type(
+  unit
+)
+"event.ml" 74 2879 2881 "event.ml" 76 2973 2979
+type(
+  unit
+)
+"event.ml" 78 3035 3045 "event.ml" 78 3035 3056
+type(
+  int -> bool
+)
+ident(
+  def poll_events "event.ml" 78 3035 3037 "event.ml" 100 3725 3730
+)
+"event.ml" 78 3035 3057 "event.ml" 78 3035 3058
+type(
+  int
+)
+ident(
+  def i "event.ml" 79 3061 3065 "event.ml" 81 3105 3149
+)
+"event.ml" 79 3061 3068 "event.ml" 79 3061 3069
+type(
+  int
+)
+ident(
+  int_ref i "event.ml" 78 3035 3057 "event.ml" 78 3035 3058
+)
+"event.ml" 79 3061 3070 "event.ml" 79 3061 3072
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"event.ml" 79 3061 3073 "event.ml" 79 3061 3085
+type(
+  'b basic_event array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"event.ml" 79 3061 3086 "event.ml" 79 3061 3089
+type(
+  'b basic_event array
+)
+ident(
+  int_ref bev "event.ml" 72 2765 2771 "event.ml" 72 2765 2774
+)
+"event.ml" 79 3061 3073 "event.ml" 79 3061 3089
+type(
+  int
+)
+"event.ml" 79 3061 3068 "event.ml" 79 3061 3089
+type(
+  bool
+)
+"event.ml" 80 3090 3099 "event.ml" 80 3090 3104
+type(
+  bool
+)
+"event.ml" 81 3105 3114 "event.ml" 81 3105 3117
+type(
+  'b basic_event array
+)
+ident(
+  int_ref bev "event.ml" 72 2765 2771 "event.ml" 72 2765 2774
+)
+"event.ml" 81 3105 3119 "event.ml" 81 3105 3120
+type(
+  int
+)
+ident(
+  int_ref i "event.ml" 78 3035 3057 "event.ml" 78 3035 3058
+)
+"event.ml" 81 3105 3114 "event.ml" 81 3105 3121
+type(
+  'b basic_event
+)
+"event.ml" 81 3105 3114 "event.ml" 81 3105 3126
+type(
+  unit -> bool
+)
+"event.ml" 81 3105 3126 "event.ml" 81 3105 3128
+type(
+  unit
+)
+"event.ml" 81 3105 3114 "event.ml" 81 3105 3128
+call(
+  stack
+)
+type(
+  bool
+)
+"event.ml" 81 3105 3129 "event.ml" 81 3105 3131
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"event.ml" 81 3105 3132 "event.ml" 81 3105 3143
+type(
+  int -> bool
+)
+ident(
+  int_ref poll_events "event.ml" 78 3035 3045 "event.ml" 78 3035 3056
+)
+"event.ml" 81 3105 3145 "event.ml" 81 3105 3146
+type(
+  int
+)
+ident(
+  int_ref i "event.ml" 78 3035 3057 "event.ml" 78 3035 3058
+)
+"event.ml" 81 3105 3146 "event.ml" 81 3105 3147
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"event.ml" 81 3105 3147 "event.ml" 81 3105 3148
+type(
+  int
+)
+"event.ml" 81 3105 3144 "event.ml" 81 3105 3149
+type(
+  int
+)
+"event.ml" 81 3105 3132 "event.ml" 81 3105 3149
+call(
+  tail
+)
+type(
+  bool
+)
+"event.ml" 81 3105 3114 "event.ml" 81 3105 3149
+type(
+  bool
+)
+"event.ml" 79 3061 3065 "event.ml" 81 3105 3149
+type(
+  bool
+)
+"event.ml" 82 3153 3155 "event.ml" 82 3153 3165
+type(
+  Mutex.t -> unit
+)
+ident(
+  ext_ref Mutex.lock
+)
+"event.ml" 82 3153 3166 "event.ml" 82 3153 3176
+type(
+  Mutex.t
+)
+ident(
+  int_ref masterlock "event.ml" 55 2298 2302 "event.ml" 55 2298 2312
+)
+"event.ml" 82 3153 3155 "event.ml" 82 3153 3176
+call(
+  stack
+)
+type(
+  unit
+)
+"event.ml" 83 3178 3183 "event.ml" 83 3178 3186
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"event.ml" 83 3178 3188 "event.ml" 83 3178 3199
+type(
+  int -> bool
+)
+ident(
+  int_ref poll_events "event.ml" 78 3035 3045 "event.ml" 78 3035 3056
+)
+"event.ml" 83 3178 3200 "event.ml" 83 3178 3201
+type(
+  int
+)
+"event.ml" 83 3178 3187 "event.ml" 83 3178 3202
+call(
+  stack
+)
+type(
+  bool
+)
+"event.ml" 83 3178 3183 "event.ml" 83 3178 3202
+type(
+  bool
+)
+"event.ml" 85 3246 3258 "event.ml" 85 3246 3259
+type(
+  int
+)
+"event.ml" 85 3246 3263 "event.ml" 85 3246 3275
+type(
+  'b basic_event array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"event.ml" 85 3246 3276 "event.ml" 85 3246 3279
+type(
+  'b basic_event array
+)
+ident(
+  int_ref bev "event.ml" 72 2765 2771 "event.ml" 72 2765 2774
+)
+"event.ml" 85 3246 3263 "event.ml" 85 3246 3279
+type(
+  int
+)
+"event.ml" 85 3246 3280 "event.ml" 85 3246 3281
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"event.ml" 85 3246 3282 "event.ml" 85 3246 3283
+type(
+  int
+)
+"event.ml" 85 3246 3263 "event.ml" 85 3246 3283
+type(
+  int
+)
+"event.ml" 85 3246 3287 "event.ml" 85 3246 3290
+type(
+  'b basic_event array
+)
+ident(
+  int_ref bev "event.ml" 72 2765 2771 "event.ml" 72 2765 2774
+)
+"event.ml" 85 3246 3292 "event.ml" 85 3246 3293
+type(
+  int
+)
+ident(
+  int_ref i "event.ml" 85 3246 3250 "event.ml" 85 3246 3309
+)
+"event.ml" 85 3246 3287 "event.ml" 85 3246 3294
+type(
+  'b basic_event
+)
+"event.ml" 85 3246 3287 "event.ml" 85 3246 3302
+type(
+  unit -> unit
+)
+"event.ml" 85 3246 3302 "event.ml" 85 3246 3304
+type(
+  unit
+)
+"event.ml" 85 3246 3287 "event.ml" 85 3246 3304
+call(
+  stack
+)
+type(
+  unit
+)
+"event.ml" 85 3246 3250 "event.ml" 85 3246 3309
+type(
+  unit
+)
+"event.ml" 87 3359 3363 "event.ml" 87 3359 3377
+type(
+  Condition.t -> Mutex.t -> unit
+)
+ident(
+  ext_ref Condition.wait
+)
+"event.ml" 87 3359 3378 "event.ml" 87 3359 3387
+type(
+  Condition.t
+)
+ident(
+  int_ref condition "event.ml" 71 2725 2731 "event.ml" 71 2725 2740
+)
+"event.ml" 87 3359 3388 "event.ml" 87 3359 3398
+type(
+  Mutex.t
+)
+ident(
+  int_ref masterlock "event.ml" 55 2298 2302 "event.ml" 55 2298 2312
+)
+"event.ml" 87 3359 3363 "event.ml" 87 3359 3398
+call(
+  stack
+)
+type(
+  unit
+)
+"event.ml" 83 3178 3208 "event.ml" 88 3399 3404
+type(
+  unit
+)
+"event.ml" 83 3178 3180 "event.ml" 88 3399 3404
+type(
+  unit
+)
+"event.ml" 89 3406 3408 "event.ml" 89 3406 3420
+type(
+  Mutex.t -> unit
+)
+ident(
+  ext_ref Mutex.unlock
+)
+"event.ml" 89 3406 3421 "event.ml" 89 3406 3431
+type(
+  Mutex.t
+)
+ident(
+  int_ref masterlock "event.ml" 55 2298 2302 "event.ml" 55 2298 2312
+)
+"event.ml" 89 3406 3408 "event.ml" 89 3406 3431
+call(
+  stack
+)
+type(
+  unit
+)
+"event.ml" 91 3460 3465 "event.ml" 91 3460 3474
+type(
+  ('a * (unit -> unit)) list
+)
+ident(
+  int_ref abort_env "event.ml" 69 2662 2677 "event.ml" 69 2662 2686
+)
+"event.ml" 91 3460 3475 "event.ml" 91 3460 3476
+type(
+  ('a * (unit -> unit)) list -> ('a * (unit -> unit)) list -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"event.ml" 91 3460 3477 "event.ml" 91 3460 3479
+type(
+  ('a * (unit -> unit)) list
+)
+"event.ml" 91 3460 3465 "event.ml" 91 3460 3479
+type(
+  bool
+)
+"event.ml" 93 3519 3523 "event.ml" 93 3519 3526
+type(
+  'b basic_event array
+)
+ident(
+  int_ref bev "event.ml" 72 2765 2771 "event.ml" 72 2765 2774
+)
+"event.ml" 93 3519 3528 "event.ml" 93 3519 3529
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"event.ml" 93 3519 3529 "event.ml" 93 3519 3538
+type(
+  int ref
+)
+ident(
+  int_ref performed "event.ml" 70 2695 2701 "event.ml" 70 2695 2710
+)
+"event.ml" 93 3519 3528 "event.ml" 93 3519 3538
+type(
+  int
+)
+"event.ml" 93 3519 3523 "event.ml" 93 3519 3539
+type(
+  'b basic_event
+)
+"event.ml" 93 3519 3523 "event.ml" 93 3519 3546
+type(
+  unit -> 'b
+)
+"event.ml" 93 3519 3546 "event.ml" 93 3519 3548
+type(
+  unit
+)
+"event.ml" 93 3519 3523 "event.ml" 93 3519 3548
+call(
+  tail
+)
+type(
+  'b
+)
+"event.ml" 95 3562 3570 "event.ml" 95 3562 3573
+type(
+  int
+)
+ident(
+  def num "event.ml" 96 3590 3594 "event.ml" 99 3714 3724
+)
+"event.ml" 95 3562 3576 "event.ml" 95 3562 3577
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"event.ml" 95 3562 3577 "event.ml" 95 3562 3586
+type(
+  int ref
+)
+ident(
+  int_ref performed "event.ml" 70 2695 2701 "event.ml" 70 2695 2710
+)
+"event.ml" 95 3562 3576 "event.ml" 95 3562 3586
+type(
+  int
+)
+"event.ml" 96 3590 3598 "event.ml" 96 3590 3604
+type(
+  'b
+)
+ident(
+  def result "event.ml" 98 3679 3683 "event.ml" 99 3714 3724
+)
+"event.ml" 96 3590 3607 "event.ml" 96 3590 3610
+type(
+  'b basic_event array
+)
+ident(
+  int_ref bev "event.ml" 72 2765 2771 "event.ml" 72 2765 2774
+)
+"event.ml" 96 3590 3612 "event.ml" 96 3590 3615
+type(
+  int
+)
+ident(
+  int_ref num "event.ml" 95 3562 3570 "event.ml" 95 3562 3573
+)
+"event.ml" 96 3590 3607 "event.ml" 96 3590 3616
+type(
+  'b basic_event
+)
+"event.ml" 96 3590 3607 "event.ml" 96 3590 3623
+type(
+  unit -> 'b
+)
+"event.ml" 96 3590 3623 "event.ml" 96 3590 3625
+type(
+  unit
+)
+"event.ml" 96 3590 3607 "event.ml" 96 3590 3625
+call(
+  stack
+)
+type(
+  'b
+)
+"event.ml" 98 3679 3683 "event.ml" 98 3679 3692
+type(
+  ('a * (unit -> unit)) list ->
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array ->
+  int -> unit
+)
+ident(
+  int_ref do_aborts "event.ml" 57 2331 2335 "event.ml" 57 2331 2344
+)
+"event.ml" 98 3679 3693 "event.ml" 98 3679 3702
+type(
+  ('a * (unit -> unit)) list
+)
+ident(
+  int_ref abort_env "event.ml" 69 2662 2677 "event.ml" 69 2662 2686
+)
+"event.ml" 98 3679 3703 "event.ml" 98 3679 3708
+type(
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array
+)
+ident(
+  int_ref genev "event.ml" 69 2662 2687 "event.ml" 69 2662 2692
+)
+"event.ml" 98 3679 3709 "event.ml" 98 3679 3712
+type(
+  int
+)
+ident(
+  int_ref num "event.ml" 95 3562 3570 "event.ml" 95 3562 3573
+)
+"event.ml" 98 3679 3683 "event.ml" 98 3679 3712
+call(
+  stack
+)
+type(
+  unit
+)
+"event.ml" 99 3714 3718 "event.ml" 99 3714 3724
+type(
+  'b
+)
+ident(
+  int_ref result "event.ml" 96 3590 3598 "event.ml" 96 3590 3604
+)
+"event.ml" 98 3679 3683 "event.ml" 99 3714 3724
+type(
+  'b
+)
+"event.ml" 96 3590 3594 "event.ml" 99 3714 3724
+type(
+  'b
+)
+"event.ml" 94 3549 3556 "event.ml" 100 3725 3730
+type(
+  'b
+)
+"event.ml" 91 3460 3462 "event.ml" 100 3725 3730
+type(
+  'b
+)
+"event.ml" 89 3406 3408 "event.ml" 100 3725 3730
+type(
+  'b
+)
+"event.ml" 83 3178 3180 "event.ml" 100 3725 3730
+type(
+  'b
+)
+"event.ml" 82 3153 3155 "event.ml" 100 3725 3730
+type(
+  'b
+)
+"event.ml" 78 3035 3037 "event.ml" 100 3725 3730
+type(
+  'b
+)
+"event.ml" 74 2879 2881 "event.ml" 100 3725 3730
+type(
+  'b
+)
+"event.ml" 72 2765 2767 "event.ml" 100 3725 3730
+type(
+  'b
+)
+"event.ml" 71 2725 2727 "event.ml" 100 3725 3730
+type(
+  'b
+)
+"event.ml" 70 2695 2697 "event.ml" 100 3725 3730
+type(
+  'b
+)
+"event.ml" 104 3778 3782 "event.ml" 104 3778 3796
+type(
+  'a array -> 'a array
+)
+ident(
+  def scramble_array "event.ml" 115 4045 4045 "event.ml" 1 0 -1
+)
+"event.ml" 104 3778 3797 "event.ml" 104 3778 3798
+type(
+  'a array
+)
+ident(
+  def a "event.ml" 105 3801 3803 "event.ml" 111 4003 4006
+)
+"event.ml" 105 3801 3807 "event.ml" 105 3801 3810
+type(
+  int
+)
+ident(
+  def len "event.ml" 106 3831 3833 "event.ml" 111 4003 4006
+)
+"event.ml" 105 3801 3813 "event.ml" 105 3801 3825
+type(
+  'a array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"event.ml" 105 3801 3826 "event.ml" 105 3801 3827
+type(
+  'a array
+)
+ident(
+  int_ref a "event.ml" 104 3778 3797 "event.ml" 104 3778 3798
+)
+"event.ml" 105 3801 3813 "event.ml" 105 3801 3827
+type(
+  int
+)
+"event.ml" 106 3831 3836 "event.ml" 106 3831 3839
+type(
+  int
+)
+ident(
+  int_ref len "event.ml" 105 3801 3807 "event.ml" 105 3801 3810
+)
+"event.ml" 106 3831 3840 "event.ml" 106 3831 3841
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"event.ml" 106 3831 3842 "event.ml" 106 3831 3843
+type(
+  int
+)
+"event.ml" 106 3831 3836 "event.ml" 106 3831 3843
+type(
+  bool
+)
+"event.ml" 106 3831 3849 "event.ml" 106 3831 3860
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"event.ml" 106 3831 3861 "event.ml" 106 3831 3875
+type(
+  string
+)
+"event.ml" 106 3831 3849 "event.ml" 106 3831 3875
+call(
+  stack
+)
+type(
+  unit
+)
+"event.ml" 106 3831 3833 "event.ml" 106 3831 3875
+type(
+  unit
+)
+"event.ml" 107 3877 3887 "event.ml" 107 3877 3890
+type(
+  int
+)
+ident(
+  int_ref len "event.ml" 105 3801 3807 "event.ml" 105 3801 3810
+)
+"event.ml" 107 3877 3891 "event.ml" 107 3877 3892
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"event.ml" 107 3877 3893 "event.ml" 107 3877 3894
+type(
+  int
+)
+"event.ml" 107 3877 3887 "event.ml" 107 3877 3894
+type(
+  int
+)
+"event.ml" 107 3877 3902 "event.ml" 107 3877 3903
+type(
+  int
+)
+"event.ml" 108 3907 3915 "event.ml" 108 3907 3916
+type(
+  int
+)
+ident(
+  def j "event.ml" 109 3941 3945 "event.ml" 109 3941 3994
+)
+"event.ml" 108 3907 3919 "event.ml" 108 3907 3929
+type(
+  int -> int
+)
+ident(
+  ext_ref Random.int
+)
+"event.ml" 108 3907 3931 "event.ml" 108 3907 3932
+type(
+  int
+)
+ident(
+  int_ref i "event.ml" 107 3877 3879 "event.ml" 110 3995 4001
+)
+"event.ml" 108 3907 3933 "event.ml" 108 3907 3934
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"event.ml" 108 3907 3935 "event.ml" 108 3907 3936
+type(
+  int
+)
+"event.ml" 108 3907 3930 "event.ml" 108 3907 3937
+type(
+  int
+)
+"event.ml" 108 3907 3919 "event.ml" 108 3907 3937
+call(
+  stack
+)
+type(
+  int
+)
+"event.ml" 109 3941 3949 "event.ml" 109 3941 3953
+type(
+  'a
+)
+ident(
+  def temp "event.ml" 109 3941 3965 "event.ml" 109 3941 3994
+)
+"event.ml" 109 3941 3956 "event.ml" 109 3941 3957
+type(
+  'a array
+)
+ident(
+  int_ref a "event.ml" 104 3778 3797 "event.ml" 104 3778 3798
+)
+"event.ml" 109 3941 3959 "event.ml" 109 3941 3960
+type(
+  int
+)
+ident(
+  int_ref i "event.ml" 107 3877 3879 "event.ml" 110 3995 4001
+)
+"event.ml" 109 3941 3956 "event.ml" 109 3941 3961
+type(
+  'a
+)
+"event.ml" 109 3941 3965 "event.ml" 109 3941 3966
+type(
+  'a array
+)
+ident(
+  int_ref a "event.ml" 104 3778 3797 "event.ml" 104 3778 3798
+)
+"event.ml" 109 3941 3968 "event.ml" 109 3941 3969
+type(
+  int
+)
+ident(
+  int_ref i "event.ml" 107 3877 3879 "event.ml" 110 3995 4001
+)
+"event.ml" 109 3941 3974 "event.ml" 109 3941 3975
+type(
+  'a array
+)
+ident(
+  int_ref a "event.ml" 104 3778 3797 "event.ml" 104 3778 3798
+)
+"event.ml" 109 3941 3977 "event.ml" 109 3941 3978
+type(
+  int
+)
+ident(
+  int_ref j "event.ml" 108 3907 3915 "event.ml" 108 3907 3916
+)
+"event.ml" 109 3941 3974 "event.ml" 109 3941 3979
+type(
+  'a
+)
+"event.ml" 109 3941 3965 "event.ml" 109 3941 3979
+type(
+  unit
+)
+"event.ml" 109 3941 3981 "event.ml" 109 3941 3982
+type(
+  'a array
+)
+ident(
+  int_ref a "event.ml" 104 3778 3797 "event.ml" 104 3778 3798
+)
+"event.ml" 109 3941 3984 "event.ml" 109 3941 3985
+type(
+  int
+)
+ident(
+  int_ref j "event.ml" 108 3907 3915 "event.ml" 108 3907 3916
+)
+"event.ml" 109 3941 3990 "event.ml" 109 3941 3994
+type(
+  'a
+)
+ident(
+  int_ref temp "event.ml" 109 3941 3949 "event.ml" 109 3941 3953
+)
+"event.ml" 109 3941 3981 "event.ml" 109 3941 3994
+type(
+  unit
+)
+"event.ml" 109 3941 3965 "event.ml" 109 3941 3994
+type(
+  unit
+)
+"event.ml" 109 3941 3945 "event.ml" 109 3941 3994
+type(
+  unit
+)
+"event.ml" 108 3907 3911 "event.ml" 109 3941 3994
+type(
+  unit
+)
+"event.ml" 107 3877 3879 "event.ml" 110 3995 4001
+type(
+  unit
+)
+"event.ml" 111 4003 4005 "event.ml" 111 4003 4006
+type(
+  'a array
+)
+ident(
+  int_ref a "event.ml" 104 3778 3797 "event.ml" 104 3778 3798
+)
+"event.ml" 107 3877 3879 "event.ml" 111 4003 4006
+type(
+  'a array
+)
+"event.ml" 106 3831 3833 "event.ml" 111 4003 4006
+type(
+  'a array
+)
+"event.ml" 105 3801 3803 "event.ml" 111 4003 4006
+type(
+  'a array
+)
+"event.ml" 115 4045 4049 "event.ml" 115 4045 4055
+type(
+  unit -> int
+)
+ident(
+  def gensym "event.ml" 117 4109 4109 "event.ml" 1 0 -1
+)
+"event.ml" 115 4045 4062 "event.ml" 115 4045 4067
+type(
+  int ref
+)
+ident(
+  def count "event.ml" 115 4045 4079 "event.ml" 115 4045 4107
+)
+"event.ml" 115 4045 4070 "event.ml" 115 4045 4073
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"event.ml" 115 4045 4074 "event.ml" 115 4045 4075
+type(
+  int
+)
+"event.ml" 115 4045 4070 "event.ml" 115 4045 4075
+type(
+  int ref
+)
+"event.ml" 115 4045 4083 "event.ml" 115 4045 4085
+type(
+  unit
+)
+"event.ml" 115 4045 4089 "event.ml" 115 4045 4093
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"event.ml" 115 4045 4094 "event.ml" 115 4045 4099
+type(
+  int ref
+)
+ident(
+  int_ref count "event.ml" 115 4045 4062 "event.ml" 115 4045 4067
+)
+"event.ml" 115 4045 4089 "event.ml" 115 4045 4099
+type(
+  unit
+)
+"event.ml" 115 4045 4101 "event.ml" 115 4045 4102
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"event.ml" 115 4045 4102 "event.ml" 115 4045 4107
+type(
+  int ref
+)
+ident(
+  int_ref count "event.ml" 115 4045 4062 "event.ml" 115 4045 4067
+)
+"event.ml" 115 4045 4101 "event.ml" 115 4045 4107
+type(
+  int
+)
+"event.ml" 115 4045 4089 "event.ml" 115 4045 4107
+type(
+  int
+)
+"event.ml" 115 4045 4079 "event.ml" 115 4045 4107
+type(
+  unit -> int
+)
+"event.ml" 115 4045 4058 "event.ml" 115 4045 4107
+type(
+  unit -> int
+)
+"event.ml" 117 4109 4117 "event.ml" 117 4109 4130
+type(
+  int list ->
+  ('a behavior * int list) list ->
+  (int * (unit -> unit)) list ->
+  'a event -> ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+ident(
+  def flatten_event "event.ml" 117 4109 4109 "event.ml" 1 0 -1
+)
+"event.ml" 118 4131 4138 "event.ml" 118 4131 4148
+type(
+  int list
+)
+ident(
+  def abort_list "event.ml" 119 4161 4167 "event.ml" 135 4787 4851
+)
+"event.ml" 119 4161 4168 "event.ml" 119 4161 4172
+type(
+  ('a behavior * int list) list
+)
+ident(
+  def accu "event.ml" 120 4206 4212 "event.ml" 135 4787 4851
+)
+"event.ml" 120 4206 4213 "event.ml" 120 4206 4223
+type(
+  (int * (unit -> unit)) list
+)
+ident(
+  def accu_abort "event.ml" 121 4255 4261 "event.ml" 135 4787 4851
+)
+"event.ml" 121 4255 4261 "event.ml" 121 4255 4263
+type(
+  'a event
+)
+ident(
+  def ev "event.ml" 122 4266 4268 "event.ml" 135 4787 4851
+)
+"event.ml" 122 4266 4274 "event.ml" 122 4266 4276
+type(
+  'a event
+)
+ident(
+  int_ref ev "event.ml" 121 4255 4261 "event.ml" 121 4255 4263
+)
+"event.ml" 123 4282 4301 "event.ml" 123 4282 4304
+type(
+  'a behavior
+)
+ident(
+  def bev "event.ml" 123 4282 4308 "event.ml" 123 4282 4347
+)
+"event.ml" 123 4282 4287 "event.ml" 123 4282 4304
+type(
+  'a event
+)
+"event.ml" 123 4282 4310 "event.ml" 123 4282 4313
+type(
+  'a behavior
+)
+ident(
+  int_ref bev "event.ml" 123 4282 4301 "event.ml" 123 4282 4304
+)
+"event.ml" 123 4282 4314 "event.ml" 123 4282 4324
+type(
+  int list
+)
+ident(
+  int_ref abort_list "event.ml" 118 4131 4138 "event.ml" 118 4131 4148
+)
+"event.ml" 123 4282 4309 "event.ml" 123 4282 4325
+type(
+  'a behavior * int list
+)
+"event.ml" 123 4282 4329 "event.ml" 123 4282 4333
+type(
+  ('a behavior * int list) list
+)
+ident(
+  int_ref accu "event.ml" 119 4161 4168 "event.ml" 119 4161 4172
+)
+"event.ml" 123 4282 4308 "event.ml" 123 4282 4334
+type(
+  ('a behavior * int list) list
+)
+"event.ml" 123 4282 4337 "event.ml" 123 4282 4347
+type(
+  (int * (unit -> unit)) list
+)
+ident(
+  int_ref accu_abort "event.ml" 120 4206 4213 "event.ml" 120 4206 4223
+)
+"event.ml" 123 4282 4308 "event.ml" 123 4282 4347
+type(
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+"event.ml" 124 4348 4363 "event.ml" 124 4348 4365
+type(
+  'a event
+)
+ident(
+  def ev "event.ml" 125 4373 4379 "event.ml" 126 4401 4469
+)
+"event.ml" 124 4348 4366 "event.ml" 124 4348 4368
+type(
+  unit -> unit
+)
+ident(
+  def fn "event.ml" 125 4373 4379 "event.ml" 126 4401 4469
+)
+"event.ml" 124 4348 4352 "event.ml" 124 4348 4369
+type(
+  'a event
+)
+"event.ml" 125 4373 4383 "event.ml" 125 4373 4385
+type(
+  int
+)
+ident(
+  def id "event.ml" 126 4401 4407 "event.ml" 126 4401 4469
+)
+"event.ml" 125 4373 4388 "event.ml" 125 4373 4394
+type(
+  unit -> int
+)
+ident(
+  int_ref gensym "event.ml" 115 4045 4049 "event.ml" 115 4045 4055
+)
+"event.ml" 125 4373 4395 "event.ml" 125 4373 4397
+type(
+  unit
+)
+"event.ml" 125 4373 4388 "event.ml" 125 4373 4397
+call(
+  stack
+)
+type(
+  int
+)
+"event.ml" 126 4401 4407 "event.ml" 126 4401 4420
+type(
+  int list ->
+  ('a behavior * int list) list ->
+  (int * (unit -> unit)) list ->
+  'a event -> ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+ident(
+  int_ref flatten_event "event.ml" 117 4109 4117 "event.ml" 117 4109 4130
+)
+"event.ml" 126 4401 4422 "event.ml" 126 4401 4424
+type(
+  int
+)
+ident(
+  int_ref id "event.ml" 125 4373 4383 "event.ml" 125 4373 4385
+)
+"event.ml" 126 4401 4428 "event.ml" 126 4401 4438
+type(
+  int list
+)
+ident(
+  int_ref abort_list "event.ml" 118 4131 4138 "event.ml" 118 4131 4148
+)
+"event.ml" 126 4401 4421 "event.ml" 126 4401 4439
+type(
+  int list
+)
+"event.ml" 126 4401 4440 "event.ml" 126 4401 4444
+type(
+  ('a behavior * int list) list
+)
+ident(
+  int_ref accu "event.ml" 119 4161 4168 "event.ml" 119 4161 4172
+)
+"event.ml" 126 4401 4447 "event.ml" 126 4401 4449
+type(
+  int
+)
+ident(
+  int_ref id "event.ml" 125 4373 4383 "event.ml" 125 4373 4385
+)
+"event.ml" 126 4401 4450 "event.ml" 126 4401 4452
+type(
+  unit -> unit
+)
+ident(
+  int_ref fn "event.ml" 124 4348 4366 "event.ml" 124 4348 4368
+)
+"event.ml" 126 4401 4446 "event.ml" 126 4401 4453
+type(
+  int * (unit -> unit)
+)
+"event.ml" 126 4401 4455 "event.ml" 126 4401 4465
+type(
+  (int * (unit -> unit)) list
+)
+ident(
+  int_ref accu_abort "event.ml" 120 4206 4213 "event.ml" 120 4206 4223
+)
+"event.ml" 126 4401 4445 "event.ml" 126 4401 4466
+type(
+  (int * (unit -> unit)) list
+)
+"event.ml" 126 4401 4467 "event.ml" 126 4401 4469
+type(
+  'a event
+)
+ident(
+  int_ref ev "event.ml" 124 4348 4363 "event.ml" 124 4348 4365
+)
+"event.ml" 126 4401 4407 "event.ml" 126 4401 4469
+call(
+  tail
+)
+type(
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+"event.ml" 125 4373 4379 "event.ml" 126 4401 4469
+type(
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+"event.ml" 127 4470 4481 "event.ml" 127 4470 4484
+type(
+  'a event list
+)
+ident(
+  def evl "event.ml" 128 4488 4494 "event.ml" 134 4748 4786
+)
+"event.ml" 127 4470 4474 "event.ml" 127 4470 4484
+type(
+  'a event
+)
+"event.ml" 128 4488 4502 "event.ml" 128 4488 4514
+type(
+  ('a behavior * int list) list ->
+  (int * (unit -> unit)) list ->
+  'a event list ->
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+ident(
+  def flatten_list "event.ml" 128 4488 4494 "event.ml" 134 4748 4786
+)
+"event.ml" 128 4488 4515 "event.ml" 128 4488 4520
+type(
+  ('a behavior * int list) list
+)
+ident(
+  def accu' "event.ml" 128 4488 4521 "event.ml" 133 4710 4744
+)
+"event.ml" 128 4488 4521 "event.ml" 128 4488 4532
+type(
+  (int * (unit -> unit)) list
+)
+ident(
+  def accu_abort' "event.ml" 128 4488 4534 "event.ml" 133 4710 4744
+)
+"event.ml" 129 4543 4552 "event.ml" 129 4543 4554
+type(
+  'a event
+)
+ident(
+  def ev "event.ml" 130 4563 4574 "event.ml" 132 4664 4709
+)
+"event.ml" 129 4543 4558 "event.ml" 129 4543 4559
+type(
+  'a event list
+)
+ident(
+  def l "event.ml" 130 4563 4574 "event.ml" 132 4664 4709
+)
+"event.ml" 129 4543 4552 "event.ml" 129 4543 4559
+type(
+  'a event list
+)
+"event.ml" 130 4563 4579 "event.ml" 130 4563 4585
+type(
+  ('a behavior * int list) list
+)
+ident(
+  def accu'' "event.ml" 132 4664 4675 "event.ml" 132 4664 4709
+)
+"event.ml" 130 4563 4586 "event.ml" 130 4563 4598
+type(
+  (int * (unit -> unit)) list
+)
+ident(
+  def accu_abort'' "event.ml" 132 4664 4675 "event.ml" 132 4664 4709
+)
+"event.ml" 130 4563 4578 "event.ml" 130 4563 4599
+type(
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+"event.ml" 131 4602 4615 "event.ml" 131 4602 4628
+type(
+  int list ->
+  ('a behavior * int list) list ->
+  (int * (unit -> unit)) list ->
+  'a event -> ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+ident(
+  int_ref flatten_event "event.ml" 117 4109 4117 "event.ml" 117 4109 4130
+)
+"event.ml" 131 4602 4629 "event.ml" 131 4602 4639
+type(
+  int list
+)
+ident(
+  int_ref abort_list "event.ml" 118 4131 4138 "event.ml" 118 4131 4148
+)
+"event.ml" 131 4602 4640 "event.ml" 131 4602 4645
+type(
+  ('a behavior * int list) list
+)
+ident(
+  int_ref accu' "event.ml" 128 4488 4515 "event.ml" 128 4488 4520
+)
+"event.ml" 131 4602 4646 "event.ml" 131 4602 4657
+type(
+  (int * (unit -> unit)) list
+)
+ident(
+  int_ref accu_abort' "event.ml" 128 4488 4521 "event.ml" 128 4488 4532
+)
+"event.ml" 131 4602 4658 "event.ml" 131 4602 4660
+type(
+  'a event
+)
+ident(
+  int_ref ev "event.ml" 129 4543 4552 "event.ml" 129 4543 4554
+)
+"event.ml" 131 4602 4615 "event.ml" 131 4602 4660
+call(
+  stack
+)
+type(
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+"event.ml" 132 4664 4675 "event.ml" 132 4664 4687
+type(
+  ('a behavior * int list) list ->
+  (int * (unit -> unit)) list ->
+  'a event list ->
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+ident(
+  int_ref flatten_list "event.ml" 128 4488 4502 "event.ml" 128 4488 4514
+)
+"event.ml" 132 4664 4688 "event.ml" 132 4664 4694
+type(
+  ('a behavior * int list) list
+)
+ident(
+  int_ref accu'' "event.ml" 130 4563 4579 "event.ml" 130 4563 4585
+)
+"event.ml" 132 4664 4695 "event.ml" 132 4664 4707
+type(
+  (int * (unit -> unit)) list
+)
+ident(
+  int_ref accu_abort'' "event.ml" 130 4563 4586 "event.ml" 130 4563 4598
+)
+"event.ml" 132 4664 4708 "event.ml" 132 4664 4709
+type(
+  'a event list
+)
+ident(
+  int_ref l "event.ml" 129 4543 4558 "event.ml" 129 4543 4559
+)
+"event.ml" 132 4664 4675 "event.ml" 132 4664 4709
+call(
+  tail
+)
+type(
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+"event.ml" 130 4563 4574 "event.ml" 132 4664 4709
+type(
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+"event.ml" 133 4710 4719 "event.ml" 133 4710 4721
+type(
+  'a event list
+)
+"event.ml" 133 4710 4726 "event.ml" 133 4710 4731
+type(
+  ('a behavior * int list) list
+)
+ident(
+  int_ref accu' "event.ml" 128 4488 4515 "event.ml" 128 4488 4520
+)
+"event.ml" 133 4710 4732 "event.ml" 133 4710 4743
+type(
+  (int * (unit -> unit)) list
+)
+ident(
+  int_ref accu_abort' "event.ml" 128 4488 4521 "event.ml" 128 4488 4532
+)
+"event.ml" 133 4710 4725 "event.ml" 133 4710 4744
+type(
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+"event.ml" 128 4488 4534 "event.ml" 133 4710 4744
+type(
+  'a event list ->
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+"event.ml" 134 4748 4754 "event.ml" 134 4748 4766
+type(
+  ('a behavior * int list) list ->
+  (int * (unit -> unit)) list ->
+  'a event list ->
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+ident(
+  int_ref flatten_list "event.ml" 128 4488 4502 "event.ml" 128 4488 4514
+)
+"event.ml" 134 4748 4767 "event.ml" 134 4748 4771
+type(
+  ('a behavior * int list) list
+)
+ident(
+  int_ref accu "event.ml" 119 4161 4168 "event.ml" 119 4161 4172
+)
+"event.ml" 134 4748 4772 "event.ml" 134 4748 4782
+type(
+  (int * (unit -> unit)) list
+)
+ident(
+  int_ref accu_abort "event.ml" 120 4206 4213 "event.ml" 120 4206 4223
+)
+"event.ml" 134 4748 4783 "event.ml" 134 4748 4786
+type(
+  'a event list
+)
+ident(
+  int_ref evl "event.ml" 127 4470 4481 "event.ml" 127 4470 4484
+)
+"event.ml" 134 4748 4754 "event.ml" 134 4748 4786
+call(
+  tail
+)
+type(
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+"event.ml" 128 4488 4494 "event.ml" 134 4748 4786
+type(
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+"event.ml" 135 4787 4797 "event.ml" 135 4787 4799
+type(
+  unit -> 'a event
+)
+ident(
+  def fn "event.ml" 135 4787 4803 "event.ml" 135 4787 4851
+)
+"event.ml" 135 4787 4791 "event.ml" 135 4787 4799
+type(
+  'a event
+)
+"event.ml" 135 4787 4803 "event.ml" 135 4787 4816
+type(
+  int list ->
+  ('a behavior * int list) list ->
+  (int * (unit -> unit)) list ->
+  'a event -> ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+ident(
+  int_ref flatten_event "event.ml" 117 4109 4117 "event.ml" 117 4109 4130
+)
+"event.ml" 135 4787 4817 "event.ml" 135 4787 4827
+type(
+  int list
+)
+ident(
+  int_ref abort_list "event.ml" 118 4131 4138 "event.ml" 118 4131 4148
+)
+"event.ml" 135 4787 4828 "event.ml" 135 4787 4832
+type(
+  ('a behavior * int list) list
+)
+ident(
+  int_ref accu "event.ml" 119 4161 4168 "event.ml" 119 4161 4172
+)
+"event.ml" 135 4787 4833 "event.ml" 135 4787 4843
+type(
+  (int * (unit -> unit)) list
+)
+ident(
+  int_ref accu_abort "event.ml" 120 4206 4213 "event.ml" 120 4206 4223
+)
+"event.ml" 135 4787 4845 "event.ml" 135 4787 4847
+type(
+  unit -> 'a event
+)
+ident(
+  int_ref fn "event.ml" 135 4787 4797 "event.ml" 135 4787 4799
+)
+"event.ml" 135 4787 4848 "event.ml" 135 4787 4850
+type(
+  unit
+)
+"event.ml" 135 4787 4844 "event.ml" 135 4787 4851
+call(
+  stack
+)
+type(
+  'a event
+)
+"event.ml" 135 4787 4803 "event.ml" 135 4787 4851
+call(
+  tail
+)
+type(
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+"event.ml" 122 4266 4268 "event.ml" 135 4787 4851
+type(
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+"event.ml" 137 4853 4857 "event.ml" 137 4853 4861
+type(
+  'a event -> 'a
+)
+ident(
+  def sync "event.ml" 143 5032 5032 "event.ml" 1 0 -1
+)
+"event.ml" 137 4853 4862 "event.ml" 137 4853 4864
+type(
+  'a event
+)
+ident(
+  def ev "event.ml" 138 4867 4869 "event.ml" 139 4920 4978
+)
+"event.ml" 138 4867 4874 "event.ml" 138 4867 4877
+type(
+  ('a behavior * int list) list
+)
+ident(
+  def evl "event.ml" 139 4920 4922 "event.ml" 139 4920 4978
+)
+"event.ml" 138 4867 4878 "event.ml" 138 4867 4887
+type(
+  (int * (unit -> unit)) list
+)
+ident(
+  def abort_env "event.ml" 139 4920 4922 "event.ml" 139 4920 4978
+)
+"event.ml" 138 4867 4873 "event.ml" 138 4867 4888
+type(
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+"event.ml" 138 4867 4891 "event.ml" 138 4867 4904
+type(
+  int list ->
+  ('a behavior * int list) list ->
+  (int * (unit -> unit)) list ->
+  'a event -> ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+ident(
+  int_ref flatten_event "event.ml" 117 4109 4117 "event.ml" 117 4109 4130
+)
+"event.ml" 138 4867 4905 "event.ml" 138 4867 4907
+type(
+  int list
+)
+"event.ml" 138 4867 4908 "event.ml" 138 4867 4910
+type(
+  ('a behavior * int list) list
+)
+"event.ml" 138 4867 4911 "event.ml" 138 4867 4913
+type(
+  (int * (unit -> unit)) list
+)
+"event.ml" 138 4867 4914 "event.ml" 138 4867 4916
+type(
+  'a event
+)
+ident(
+  int_ref ev "event.ml" 137 4853 4862 "event.ml" 137 4853 4864
+)
+"event.ml" 138 4867 4891 "event.ml" 138 4867 4916
+call(
+  stack
+)
+type(
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+"event.ml" 139 4920 4922 "event.ml" 139 4920 4932
+type(
+  (int * (unit -> unit)) list -> ('a behavior * int list) array -> 'a
+)
+ident(
+  int_ref basic_sync "event.ml" 69 2662 2666 "event.ml" 69 2662 2676
+)
+"event.ml" 139 4920 4933 "event.ml" 139 4920 4942
+type(
+  (int * (unit -> unit)) list
+)
+ident(
+  int_ref abort_env "event.ml" 138 4867 4878 "event.ml" 138 4867 4887
+)
+"event.ml" 139 4920 4944 "event.ml" 139 4920 4958
+type(
+  ('a behavior * int list) array -> ('a behavior * int list) array
+)
+ident(
+  int_ref scramble_array "event.ml" 104 3778 3782 "event.ml" 104 3778 3796
+)
+"event.ml" 139 4920 4959 "event.ml" 139 4920 4972
+type(
+  ('a behavior * int list) list -> ('a behavior * int list) array
+)
+ident(
+  ext_ref Array.of_list
+)
+"event.ml" 139 4920 4973 "event.ml" 139 4920 4976
+type(
+  ('a behavior * int list) list
+)
+ident(
+  int_ref evl "event.ml" 138 4867 4874 "event.ml" 138 4867 4877
+)
+"event.ml" 139 4920 4958 "event.ml" 139 4920 4977
+call(
+  stack
+)
+type(
+  ('a behavior * int list) array
+)
+"event.ml" 139 4920 4943 "event.ml" 139 4920 4978
+call(
+  stack
+)
+type(
+  ('a behavior * int list) array
+)
+"event.ml" 139 4920 4922 "event.ml" 139 4920 4978
+call(
+  tail
+)
+type(
+  'a
+)
+"event.ml" 138 4867 4869 "event.ml" 139 4920 4978
+type(
+  'a
+)
+"event.ml" 143 5032 5036 "event.ml" 143 5032 5046
+type(
+  ('a * (unit -> unit)) list ->
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array ->
+  'b option
+)
+ident(
+  def basic_poll "event.ml" 171 5914 5914 "event.ml" 1 0 -1
+)
+"event.ml" 143 5032 5047 "event.ml" 143 5032 5056
+type(
+  ('a * (unit -> unit)) list
+)
+ident(
+  def abort_env "event.ml" 143 5032 5057 "event.ml" 169 5907 5912
+)
+"event.ml" 143 5032 5057 "event.ml" 143 5032 5062
+type(
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array
+)
+ident(
+  def genev "event.ml" 144 5065 5067 "event.ml" 169 5907 5912
+)
+"event.ml" 144 5065 5071 "event.ml" 144 5065 5080
+type(
+  int ref
+)
+ident(
+  def performed "event.ml" 145 5095 5097 "event.ml" 169 5907 5912
+)
+"event.ml" 144 5065 5083 "event.ml" 144 5065 5086
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"event.ml" 144 5065 5087 "event.ml" 144 5065 5091
+type(
+  int
+)
+"event.ml" 144 5065 5083 "event.ml" 144 5065 5091
+type(
+  int ref
+)
+"event.ml" 145 5095 5101 "event.ml" 145 5095 5110
+type(
+  Condition.t
+)
+ident(
+  def condition "event.ml" 146 5135 5137 "event.ml" 169 5907 5912
+)
+"event.ml" 145 5095 5113 "event.ml" 145 5095 5129
+type(
+  unit -> Condition.t
+)
+ident(
+  ext_ref Condition.create
+)
+"event.ml" 145 5095 5129 "event.ml" 145 5095 5131
+type(
+  unit
+)
+"event.ml" 145 5095 5113 "event.ml" 145 5095 5131
+call(
+  stack
+)
+type(
+  Condition.t
+)
+"event.ml" 146 5135 5141 "event.ml" 146 5135 5144
+type(
+  'b basic_event array
+)
+ident(
+  def bev "event.ml" 148 5245 5247 "event.ml" 169 5907 5912
+)
+"event.ml" 146 5135 5147 "event.ml" 146 5135 5159
+type(
+  int -> 'b basic_event -> 'b basic_event array
+)
+ident(
+  ext_ref Array.create
+)
+"event.ml" 146 5135 5160 "event.ml" 146 5135 5172
+type(
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"event.ml" 146 5135 5173 "event.ml" 146 5135 5178
+type(
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array
+)
+ident(
+  int_ref genev "event.ml" 143 5032 5057 "event.ml" 143 5032 5062
+)
+"event.ml" 146 5135 5159 "event.ml" 146 5135 5179
+type(
+  int
+)
+"event.ml" 147 5180 5205 "event.ml" 147 5180 5208
+type(
+  (int ref -> Condition.t -> int -> 'b basic_event) * 'a list ->
+  int ref -> Condition.t -> int -> 'b basic_event
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"event.ml" 147 5180 5209 "event.ml" 147 5180 5214
+type(
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array
+)
+ident(
+  int_ref genev "event.ml" 143 5032 5057 "event.ml" 143 5032 5062
+)
+"event.ml" 147 5180 5216 "event.ml" 147 5180 5217
+type(
+  int
+)
+"event.ml" 147 5180 5209 "event.ml" 147 5180 5218
+type(
+  (int ref -> Condition.t -> int -> 'b basic_event) * 'a list
+)
+"event.ml" 147 5180 5219 "event.ml" 147 5180 5228
+type(
+  int ref
+)
+ident(
+  int_ref performed "event.ml" 144 5065 5071 "event.ml" 144 5065 5080
+)
+"event.ml" 147 5180 5229 "event.ml" 147 5180 5238
+type(
+  Condition.t
+)
+ident(
+  int_ref condition "event.ml" 145 5095 5101 "event.ml" 145 5095 5110
+)
+"event.ml" 147 5180 5239 "event.ml" 147 5180 5240
+type(
+  int
+)
+"event.ml" 147 5180 5204 "event.ml" 147 5180 5241
+call(
+  stack
+)
+type(
+  'b basic_event
+)
+"event.ml" 146 5135 5147 "event.ml" 147 5180 5241
+type(
+  'b basic_event array
+)
+"event.ml" 148 5245 5255 "event.ml" 148 5245 5256
+type(
+  int
+)
+"event.ml" 148 5245 5260 "event.ml" 148 5245 5272
+type(
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"event.ml" 148 5245 5273 "event.ml" 148 5245 5278
+type(
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array
+)
+ident(
+  int_ref genev "event.ml" 143 5032 5057 "event.ml" 143 5032 5062
+)
+"event.ml" 148 5245 5260 "event.ml" 148 5245 5278
+type(
+  int
+)
+"event.ml" 148 5245 5279 "event.ml" 148 5245 5280
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"event.ml" 148 5245 5281 "event.ml" 148 5245 5282
+type(
+  int
+)
+"event.ml" 148 5245 5260 "event.ml" 148 5245 5282
+type(
+  int
+)
+"event.ml" 149 5286 5290 "event.ml" 149 5286 5293
+type(
+  'b basic_event array
+)
+ident(
+  int_ref bev "event.ml" 146 5135 5141 "event.ml" 146 5135 5144
+)
+"event.ml" 149 5286 5295 "event.ml" 149 5286 5296
+type(
+  int
+)
+ident(
+  int_ref i "event.ml" 148 5245 5247 "event.ml" 150 5337 5343
+)
+"event.ml" 149 5286 5301 "event.ml" 149 5286 5304
+type(
+  (int ref -> Condition.t -> int -> 'b basic_event) * 'a list ->
+  int ref -> Condition.t -> int -> 'b basic_event
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"event.ml" 149 5286 5305 "event.ml" 149 5286 5310
+type(
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array
+)
+ident(
+  int_ref genev "event.ml" 143 5032 5057 "event.ml" 143 5032 5062
+)
+"event.ml" 149 5286 5312 "event.ml" 149 5286 5313
+type(
+  int
+)
+ident(
+  int_ref i "event.ml" 148 5245 5247 "event.ml" 150 5337 5343
+)
+"event.ml" 149 5286 5305 "event.ml" 149 5286 5314
+type(
+  (int ref -> Condition.t -> int -> 'b basic_event) * 'a list
+)
+"event.ml" 149 5286 5315 "event.ml" 149 5286 5324
+type(
+  int ref
+)
+ident(
+  int_ref performed "event.ml" 144 5065 5071 "event.ml" 144 5065 5080
+)
+"event.ml" 149 5286 5325 "event.ml" 149 5286 5334
+type(
+  Condition.t
+)
+ident(
+  int_ref condition "event.ml" 145 5095 5101 "event.ml" 145 5095 5110
+)
+"event.ml" 149 5286 5335 "event.ml" 149 5286 5336
+type(
+  int
+)
+ident(
+  int_ref i "event.ml" 148 5245 5247 "event.ml" 150 5337 5343
+)
+"event.ml" 149 5286 5301 "event.ml" 149 5286 5336
+call(
+  stack
+)
+type(
+  'b basic_event
+)
+"event.ml" 149 5286 5290 "event.ml" 149 5286 5336
+type(
+  unit
+)
+"event.ml" 148 5245 5247 "event.ml" 150 5337 5343
+type(
+  unit
+)
+"event.ml" 152 5399 5409 "event.ml" 152 5399 5420
+type(
+  int -> bool
+)
+ident(
+  def poll_events "event.ml" 152 5399 5401 "event.ml" 169 5907 5912
+)
+"event.ml" 152 5399 5421 "event.ml" 152 5399 5422
+type(
+  int
+)
+ident(
+  def i "event.ml" 153 5425 5429 "event.ml" 155 5469 5513
+)
+"event.ml" 153 5425 5432 "event.ml" 153 5425 5433
+type(
+  int
+)
+ident(
+  int_ref i "event.ml" 152 5399 5421 "event.ml" 152 5399 5422
+)
+"event.ml" 153 5425 5434 "event.ml" 153 5425 5436
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"event.ml" 153 5425 5437 "event.ml" 153 5425 5449
+type(
+  'b basic_event array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"event.ml" 153 5425 5450 "event.ml" 153 5425 5453
+type(
+  'b basic_event array
+)
+ident(
+  int_ref bev "event.ml" 146 5135 5141 "event.ml" 146 5135 5144
+)
+"event.ml" 153 5425 5437 "event.ml" 153 5425 5453
+type(
+  int
+)
+"event.ml" 153 5425 5432 "event.ml" 153 5425 5453
+type(
+  bool
+)
+"event.ml" 154 5454 5463 "event.ml" 154 5454 5468
+type(
+  bool
+)
+"event.ml" 155 5469 5478 "event.ml" 155 5469 5481
+type(
+  'b basic_event array
+)
+ident(
+  int_ref bev "event.ml" 146 5135 5141 "event.ml" 146 5135 5144
+)
+"event.ml" 155 5469 5483 "event.ml" 155 5469 5484
+type(
+  int
+)
+ident(
+  int_ref i "event.ml" 152 5399 5421 "event.ml" 152 5399 5422
+)
+"event.ml" 155 5469 5478 "event.ml" 155 5469 5485
+type(
+  'b basic_event
+)
+"event.ml" 155 5469 5478 "event.ml" 155 5469 5490
+type(
+  unit -> bool
+)
+"event.ml" 155 5469 5490 "event.ml" 155 5469 5492
+type(
+  unit
+)
+"event.ml" 155 5469 5478 "event.ml" 155 5469 5492
+call(
+  stack
+)
+type(
+  bool
+)
+"event.ml" 155 5469 5493 "event.ml" 155 5469 5495
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"event.ml" 155 5469 5496 "event.ml" 155 5469 5507
+type(
+  int -> bool
+)
+ident(
+  int_ref poll_events "event.ml" 152 5399 5409 "event.ml" 152 5399 5420
+)
+"event.ml" 155 5469 5509 "event.ml" 155 5469 5510
+type(
+  int
+)
+ident(
+  int_ref i "event.ml" 152 5399 5421 "event.ml" 152 5399 5422
+)
+"event.ml" 155 5469 5510 "event.ml" 155 5469 5511
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"event.ml" 155 5469 5511 "event.ml" 155 5469 5512
+type(
+  int
+)
+"event.ml" 155 5469 5508 "event.ml" 155 5469 5513
+type(
+  int
+)
+"event.ml" 155 5469 5496 "event.ml" 155 5469 5513
+call(
+  tail
+)
+type(
+  bool
+)
+"event.ml" 155 5469 5478 "event.ml" 155 5469 5513
+type(
+  bool
+)
+"event.ml" 153 5425 5429 "event.ml" 155 5469 5513
+type(
+  bool
+)
+"event.ml" 156 5517 5519 "event.ml" 156 5517 5529
+type(
+  Mutex.t -> unit
+)
+ident(
+  ext_ref Mutex.lock
+)
+"event.ml" 156 5517 5530 "event.ml" 156 5517 5540
+type(
+  Mutex.t
+)
+ident(
+  int_ref masterlock "event.ml" 55 2298 2302 "event.ml" 55 2298 2312
+)
+"event.ml" 156 5517 5519 "event.ml" 156 5517 5540
+call(
+  stack
+)
+type(
+  unit
+)
+"event.ml" 157 5542 5548 "event.ml" 157 5542 5553
+type(
+  bool
+)
+ident(
+  def ready "event.ml" 158 5573 5575 "event.ml" 169 5907 5912
+)
+"event.ml" 157 5542 5556 "event.ml" 157 5542 5567
+type(
+  int -> bool
+)
+ident(
+  int_ref poll_events "event.ml" 152 5399 5409 "event.ml" 152 5399 5420
+)
+"event.ml" 157 5542 5568 "event.ml" 157 5542 5569
+type(
+  int
+)
+"event.ml" 157 5542 5556 "event.ml" 157 5542 5569
+call(
+  stack
+)
+type(
+  bool
+)
+"event.ml" 158 5573 5578 "event.ml" 158 5573 5583
+type(
+  bool
+)
+ident(
+  int_ref ready "event.ml" 157 5542 5548 "event.ml" 157 5542 5553
+)
+"event.ml" 160 5624 5628 "event.ml" 160 5624 5640
+type(
+  Mutex.t -> unit
+)
+ident(
+  ext_ref Mutex.unlock
+)
+"event.ml" 160 5624 5641 "event.ml" 160 5624 5651
+type(
+  Mutex.t
+)
+ident(
+  int_ref masterlock "event.ml" 55 2298 2302 "event.ml" 55 2298 2312
+)
+"event.ml" 160 5624 5628 "event.ml" 160 5624 5651
+call(
+  stack
+)
+type(
+  unit
+)
+"event.ml" 161 5653 5661 "event.ml" 161 5653 5667
+type(
+  'b option
+)
+ident(
+  def result "event.ml" 162 5705 5709 "event.ml" 162 5705 5753
+)
+"event.ml" 161 5653 5675 "event.ml" 161 5653 5678
+type(
+  'b basic_event array
+)
+ident(
+  int_ref bev "event.ml" 146 5135 5141 "event.ml" 146 5135 5144
+)
+"event.ml" 161 5653 5680 "event.ml" 161 5653 5681
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"event.ml" 161 5653 5681 "event.ml" 161 5653 5690
+type(
+  int ref
+)
+ident(
+  int_ref performed "event.ml" 144 5065 5071 "event.ml" 144 5065 5080
+)
+"event.ml" 161 5653 5680 "event.ml" 161 5653 5690
+type(
+  int
+)
+"event.ml" 161 5653 5675 "event.ml" 161 5653 5691
+type(
+  'b basic_event
+)
+"event.ml" 161 5653 5675 "event.ml" 161 5653 5698
+type(
+  unit -> 'b
+)
+"event.ml" 161 5653 5698 "event.ml" 161 5653 5700
+type(
+  unit
+)
+"event.ml" 161 5653 5674 "event.ml" 161 5653 5701
+call(
+  stack
+)
+type(
+  'b
+)
+"event.ml" 161 5653 5670 "event.ml" 161 5653 5701
+type(
+  'b option
+)
+"event.ml" 162 5705 5709 "event.ml" 162 5705 5718
+type(
+  ('a * (unit -> unit)) list ->
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array ->
+  int -> unit
+)
+ident(
+  int_ref do_aborts "event.ml" 57 2331 2335 "event.ml" 57 2331 2344
+)
+"event.ml" 162 5705 5719 "event.ml" 162 5705 5728
+type(
+  ('a * (unit -> unit)) list
+)
+ident(
+  int_ref abort_env "event.ml" 143 5032 5047 "event.ml" 143 5032 5056
+)
+"event.ml" 162 5705 5729 "event.ml" 162 5705 5734
+type(
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array
+)
+ident(
+  int_ref genev "event.ml" 143 5032 5057 "event.ml" 143 5032 5062
+)
+"event.ml" 162 5705 5735 "event.ml" 162 5705 5736
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"event.ml" 162 5705 5736 "event.ml" 162 5705 5745
+type(
+  int ref
+)
+ident(
+  int_ref performed "event.ml" 144 5065 5071 "event.ml" 144 5065 5080
+)
+"event.ml" 162 5705 5735 "event.ml" 162 5705 5745
+type(
+  int
+)
+"event.ml" 162 5705 5709 "event.ml" 162 5705 5745
+call(
+  stack
+)
+type(
+  unit
+)
+"event.ml" 162 5705 5747 "event.ml" 162 5705 5753
+type(
+  'b option
+)
+ident(
+  int_ref result "event.ml" 161 5653 5661 "event.ml" 161 5653 5667
+)
+"event.ml" 162 5705 5709 "event.ml" 162 5705 5753
+type(
+  'b option
+)
+"event.ml" 161 5653 5657 "event.ml" 162 5705 5753
+type(
+  'b option
+)
+"event.ml" 158 5573 5589 "event.ml" 163 5754 5759
+type(
+  'b option
+)
+"event.ml" 165 5813 5817 "event.ml" 165 5813 5826
+type(
+  int ref
+)
+ident(
+  int_ref performed "event.ml" 144 5065 5071 "event.ml" 144 5065 5080
+)
+"event.ml" 165 5813 5827 "event.ml" 165 5813 5829
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"event.ml" 165 5813 5830 "event.ml" 165 5813 5831
+type(
+  int
+)
+"event.ml" 165 5813 5817 "event.ml" 165 5813 5831
+type(
+  unit
+)
+"event.ml" 166 5833 5837 "event.ml" 166 5833 5849
+type(
+  Mutex.t -> unit
+)
+ident(
+  ext_ref Mutex.unlock
+)
+"event.ml" 166 5833 5850 "event.ml" 166 5833 5860
+type(
+  Mutex.t
+)
+ident(
+  int_ref masterlock "event.ml" 55 2298 2302 "event.ml" 55 2298 2312
+)
+"event.ml" 166 5833 5837 "event.ml" 166 5833 5860
+call(
+  stack
+)
+type(
+  unit
+)
+"event.ml" 167 5862 5866 "event.ml" 167 5862 5875
+type(
+  ('a * (unit -> unit)) list ->
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array ->
+  int -> unit
+)
+ident(
+  int_ref do_aborts "event.ml" 57 2331 2335 "event.ml" 57 2331 2344
+)
+"event.ml" 167 5862 5876 "event.ml" 167 5862 5885
+type(
+  ('a * (unit -> unit)) list
+)
+ident(
+  int_ref abort_env "event.ml" 143 5032 5047 "event.ml" 143 5032 5056
+)
+"event.ml" 167 5862 5886 "event.ml" 167 5862 5891
+type(
+  ((int ref -> Condition.t -> int -> 'b basic_event) * 'a list) array
+)
+ident(
+  int_ref genev "event.ml" 143 5032 5057 "event.ml" 143 5032 5062
+)
+"event.ml" 167 5862 5892 "event.ml" 167 5862 5896
+type(
+  int
+)
+"event.ml" 167 5862 5866 "event.ml" 167 5862 5896
+call(
+  stack
+)
+type(
+  unit
+)
+"event.ml" 168 5898 5902 "event.ml" 168 5898 5906
+type(
+  'b option
+)
+"event.ml" 167 5862 5866 "event.ml" 168 5898 5906
+type(
+  'b option
+)
+"event.ml" 166 5833 5837 "event.ml" 168 5898 5906
+type(
+  'b option
+)
+"event.ml" 163 5754 5765 "event.ml" 169 5907 5912
+type(
+  'b option
+)
+"event.ml" 158 5573 5575 "event.ml" 169 5907 5912
+type(
+  'b option
+)
+"event.ml" 157 5542 5544 "event.ml" 169 5907 5912
+type(
+  'b option
+)
+"event.ml" 156 5517 5519 "event.ml" 169 5907 5912
+type(
+  'b option
+)
+"event.ml" 152 5399 5401 "event.ml" 169 5907 5912
+type(
+  'b option
+)
+"event.ml" 148 5245 5247 "event.ml" 169 5907 5912
+type(
+  'b option
+)
+"event.ml" 146 5135 5137 "event.ml" 169 5907 5912
+type(
+  'b option
+)
+"event.ml" 145 5095 5097 "event.ml" 169 5907 5912
+type(
+  'b option
+)
+"event.ml" 144 5065 5067 "event.ml" 169 5907 5912
+type(
+  'b option
+)
+"event.ml" 171 5914 5918 "event.ml" 171 5914 5922
+type(
+  'a event -> 'a option
+)
+ident(
+  def poll "event.ml" 177 6108 6108 "event.ml" 1 0 -1
+)
+"event.ml" 171 5914 5923 "event.ml" 171 5914 5925
+type(
+  'a event
+)
+ident(
+  def ev "event.ml" 172 5928 5930 "event.ml" 173 5981 6039
+)
+"event.ml" 172 5928 5935 "event.ml" 172 5928 5938
+type(
+  ('a behavior * int list) list
+)
+ident(
+  def evl "event.ml" 173 5981 5983 "event.ml" 173 5981 6039
+)
+"event.ml" 172 5928 5939 "event.ml" 172 5928 5948
+type(
+  (int * (unit -> unit)) list
+)
+ident(
+  def abort_env "event.ml" 173 5981 5983 "event.ml" 173 5981 6039
+)
+"event.ml" 172 5928 5934 "event.ml" 172 5928 5949
+type(
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+"event.ml" 172 5928 5952 "event.ml" 172 5928 5965
+type(
+  int list ->
+  ('a behavior * int list) list ->
+  (int * (unit -> unit)) list ->
+  'a event -> ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+ident(
+  int_ref flatten_event "event.ml" 117 4109 4117 "event.ml" 117 4109 4130
+)
+"event.ml" 172 5928 5966 "event.ml" 172 5928 5968
+type(
+  int list
+)
+"event.ml" 172 5928 5969 "event.ml" 172 5928 5971
+type(
+  ('a behavior * int list) list
+)
+"event.ml" 172 5928 5972 "event.ml" 172 5928 5974
+type(
+  (int * (unit -> unit)) list
+)
+"event.ml" 172 5928 5975 "event.ml" 172 5928 5977
+type(
+  'a event
+)
+ident(
+  int_ref ev "event.ml" 171 5914 5923 "event.ml" 171 5914 5925
+)
+"event.ml" 172 5928 5952 "event.ml" 172 5928 5977
+call(
+  stack
+)
+type(
+  ('a behavior * int list) list * (int * (unit -> unit)) list
+)
+"event.ml" 173 5981 5983 "event.ml" 173 5981 5993
+type(
+  (int * (unit -> unit)) list -> ('a behavior * int list) array -> 'a option
+)
+ident(
+  int_ref basic_poll "event.ml" 143 5032 5036 "event.ml" 143 5032 5046
+)
+"event.ml" 173 5981 5994 "event.ml" 173 5981 6003
+type(
+  (int * (unit -> unit)) list
+)
+ident(
+  int_ref abort_env "event.ml" 172 5928 5939 "event.ml" 172 5928 5948
+)
+"event.ml" 173 5981 6005 "event.ml" 173 5981 6019
+type(
+  ('a behavior * int list) array -> ('a behavior * int list) array
+)
+ident(
+  int_ref scramble_array "event.ml" 104 3778 3782 "event.ml" 104 3778 3796
+)
+"event.ml" 173 5981 6020 "event.ml" 173 5981 6033
+type(
+  ('a behavior * int list) list -> ('a behavior * int list) array
+)
+ident(
+  ext_ref Array.of_list
+)
+"event.ml" 173 5981 6034 "event.ml" 173 5981 6037
+type(
+  ('a behavior * int list) list
+)
+ident(
+  int_ref evl "event.ml" 172 5928 5935 "event.ml" 172 5928 5938
+)
+"event.ml" 173 5981 6019 "event.ml" 173 5981 6038
+call(
+  stack
+)
+type(
+  ('a behavior * int list) array
+)
+"event.ml" 173 5981 6004 "event.ml" 173 5981 6039
+call(
+  stack
+)
+type(
+  ('a behavior * int list) array
+)
+"event.ml" 173 5981 5983 "event.ml" 173 5981 6039
+call(
+  tail
+)
+type(
+  'a option
+)
+"event.ml" 172 5928 5930 "event.ml" 173 5981 6039
+type(
+  'a option
+)
+"event.ml" 177 6108 6112 "event.ml" 177 6108 6125
+type(
+  'a communication Queue.t -> 'a communication Queue.t
+)
+ident(
+  def cleanup_queue "event.ml" 184 6261 6261 "event.ml" 1 0 -1
+)
+"event.ml" 177 6108 6126 "event.ml" 177 6108 6127
+type(
+  'a communication Queue.t
+)
+ident(
+  def q "event.ml" 178 6130 6132 "event.ml" 180 6229 6233
+)
+"event.ml" 178 6130 6136 "event.ml" 178 6130 6138
+type(
+  'a communication Queue.t
+)
+ident(
+  def q' "event.ml" 179 6159 6161 "event.ml" 180 6229 6233
+)
+"event.ml" 178 6130 6141 "event.ml" 178 6130 6153
+type(
+  unit -> 'a communication Queue.t
+)
+ident(
+  ext_ref Queue.create
+)
+"event.ml" 178 6130 6153 "event.ml" 178 6130 6155
+type(
+  unit
+)
+"event.ml" 178 6130 6141 "event.ml" 178 6130 6155
+call(
+  stack
+)
+type(
+  'a communication Queue.t
+)
+"event.ml" 179 6159 6161 "event.ml" 179 6159 6171
+type(
+  ('a communication -> unit) -> 'a communication Queue.t -> unit
+)
+ident(
+  ext_ref Queue.iter
+)
+"event.ml" 179 6159 6177 "event.ml" 179 6159 6178
+type(
+  'a communication
+)
+ident(
+  def c "event.ml" 179 6159 6182 "event.ml" 179 6159 6224
+)
+"event.ml" 179 6159 6185 "event.ml" 179 6159 6186
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"event.ml" 179 6159 6187 "event.ml" 179 6159 6188
+type(
+  'a communication
+)
+ident(
+  int_ref c "event.ml" 179 6159 6177 "event.ml" 179 6159 6178
+)
+"event.ml" 179 6159 6186 "event.ml" 179 6159 6199
+type(
+  int ref
+)
+"event.ml" 179 6159 6185 "event.ml" 179 6159 6199
+type(
+  int
+)
+"event.ml" 179 6159 6200 "event.ml" 179 6159 6201
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"event.ml" 179 6159 6202 "event.ml" 179 6159 6204
+type(
+  int
+)
+"event.ml" 179 6159 6185 "event.ml" 179 6159 6204
+type(
+  bool
+)
+"event.ml" 179 6159 6210 "event.ml" 179 6159 6219
+type(
+  'a communication -> 'a communication Queue.t -> unit
+)
+ident(
+  ext_ref Queue.add
+)
+"event.ml" 179 6159 6220 "event.ml" 179 6159 6221
+type(
+  'a communication
+)
+ident(
+  int_ref c "event.ml" 179 6159 6177 "event.ml" 179 6159 6178
+)
+"event.ml" 179 6159 6222 "event.ml" 179 6159 6224
+type(
+  'a communication Queue.t
+)
+ident(
+  int_ref q' "event.ml" 178 6130 6136 "event.ml" 178 6130 6138
+)
+"event.ml" 179 6159 6210 "event.ml" 179 6159 6224
+call(
+  tail
+)
+type(
+  unit
+)
+"event.ml" 179 6159 6182 "event.ml" 179 6159 6224
+type(
+  unit
+)
+"event.ml" 179 6159 6172 "event.ml" 179 6159 6225
+type(
+  'a communication -> unit
+)
+"event.ml" 179 6159 6226 "event.ml" 179 6159 6227
+type(
+  'a communication Queue.t
+)
+ident(
+  int_ref q "event.ml" 177 6108 6126 "event.ml" 177 6108 6127
+)
+"event.ml" 179 6159 6161 "event.ml" 179 6159 6227
+call(
+  stack
+)
+type(
+  unit
+)
+"event.ml" 180 6229 6231 "event.ml" 180 6229 6233
+type(
+  'a communication Queue.t
+)
+ident(
+  int_ref q' "event.ml" 178 6130 6136 "event.ml" 178 6130 6138
+)
+"event.ml" 179 6159 6161 "event.ml" 180 6229 6233
+type(
+  'a communication Queue.t
+)
+"event.ml" 178 6130 6132 "event.ml" 180 6229 6233
+type(
+  'a communication Queue.t
+)
+"event.ml" 184 6261 6265 "event.ml" 184 6261 6271
+type(
+  'a -> 'a event
+)
+ident(
+  def always "event.ml" 190 6447 6447 "event.ml" 1 0 -1
+)
+"event.ml" 184 6261 6272 "event.ml" 184 6261 6276
+type(
+  'a
+)
+ident(
+  def data "event.ml" 185 6279 6281 "event.ml" 188 6411 6445
+)
+"event.ml" 185 6279 6299 "event.ml" 185 6279 6308
+type(
+  int ref
+)
+ident(
+  def performed "event.ml" 185 6279 6309 "event.ml" 188 6411 6444
+)
+"event.ml" 185 6279 6309 "event.ml" 185 6279 6318
+type(
+  Condition.t
+)
+ident(
+  def condition "event.ml" 185 6279 6319 "event.ml" 188 6411 6444
+)
+"event.ml" 185 6279 6319 "event.ml" 185 6279 6324
+type(
+  int
+)
+ident(
+  def evnum "event.ml" 186 6328 6332 "event.ml" 188 6411 6444
+)
+"event.ml" 186 6328 6346 "event.ml" 186 6328 6348
+type(
+  unit
+)
+"event.ml" 186 6328 6352 "event.ml" 186 6328 6361
+type(
+  int ref
+)
+ident(
+  int_ref performed "event.ml" 185 6279 6299 "event.ml" 185 6279 6308
+)
+"event.ml" 186 6328 6362 "event.ml" 186 6328 6364
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"event.ml" 186 6328 6365 "event.ml" 186 6328 6370
+type(
+  int
+)
+ident(
+  int_ref evnum "event.ml" 185 6279 6319 "event.ml" 185 6279 6324
+)
+"event.ml" 186 6328 6352 "event.ml" 186 6328 6370
+type(
+  unit
+)
+"event.ml" 186 6328 6372 "event.ml" 186 6328 6376
+type(
+  bool
+)
+"event.ml" 186 6328 6352 "event.ml" 186 6328 6376
+type(
+  bool
+)
+"event.ml" 186 6328 6341 "event.ml" 186 6328 6377
+type(
+  unit -> bool
+)
+"event.ml" 187 6379 6400 "event.ml" 187 6379 6402
+type(
+  unit
+)
+"event.ml" 187 6379 6406 "event.ml" 187 6379 6408
+type(
+  unit
+)
+"event.ml" 187 6379 6395 "event.ml" 187 6379 6409
+type(
+  unit -> unit
+)
+"event.ml" 188 6411 6431 "event.ml" 188 6411 6433
+type(
+  unit
+)
+"event.ml" 188 6411 6437 "event.ml" 188 6411 6441
+type(
+  'a
+)
+ident(
+  int_ref data "event.ml" 184 6261 6272 "event.ml" 184 6261 6276
+)
+"event.ml" 188 6411 6426 "event.ml" 188 6411 6442
+type(
+  unit -> 'a
+)
+"event.ml" 186 6328 6332 "event.ml" 188 6411 6444
+type(
+  'a basic_event
+)
+"event.ml" 185 6279 6294 "event.ml" 188 6411 6445
+type(
+  'a behavior
+)
+"event.ml" 185 6279 6281 "event.ml" 188 6411 6445
+type(
+  'a event
+)
+"event.ml" 190 6447 6451 "event.ml" 190 6447 6455
+type(
+  'a channel -> 'a -> unit event
+)
+ident(
+  def send "event.ml" 218 7305 7305 "event.ml" 1 0 -1
+)
+"event.ml" 190 6447 6456 "event.ml" 190 6447 6463
+type(
+  'a channel
+)
+ident(
+  def channel "event.ml" 190 6447 6464 "event.ml" 216 7271 7303
+)
+"event.ml" 190 6447 6464 "event.ml" 190 6447 6468
+type(
+  'a
+)
+ident(
+  def data "event.ml" 191 6471 6473 "event.ml" 216 7271 7303
+)
+"event.ml" 191 6471 6491 "event.ml" 191 6471 6500
+type(
+  int ref
+)
+ident(
+  def performed "event.ml" 191 6471 6501 "event.ml" 216 7271 7302
+)
+"event.ml" 191 6471 6501 "event.ml" 191 6471 6510
+type(
+  Condition.t
+)
+ident(
+  def condition "event.ml" 191 6471 6511 "event.ml" 216 7271 7302
+)
+"event.ml" 191 6471 6511 "event.ml" 191 6471 6516
+type(
+  int
+)
+ident(
+  def evnum "event.ml" 192 6520 6524 "event.ml" 216 7271 7302
+)
+"event.ml" 192 6520 6528 "event.ml" 192 6520 6533
+type(
+  'a communication
+)
+ident(
+  def wcomm "event.ml" 197 6658 6662 "event.ml" 216 7271 7302
+)
+"event.ml" 193 6536 6556 "event.ml" 193 6536 6565
+type(
+  int ref
+)
+ident(
+  int_ref performed "event.ml" 191 6471 6491 "event.ml" 191 6471 6500
+)
+"event.ml" 194 6567 6587 "event.ml" 194 6567 6596
+type(
+  Condition.t
+)
+ident(
+  int_ref condition "event.ml" 191 6471 6501 "event.ml" 191 6471 6510
+)
+"event.ml" 195 6598 6618 "event.ml" 195 6598 6622
+type(
+  'a
+)
+ident(
+  int_ref data "event.ml" 190 6447 6464 "event.ml" 190 6447 6468
+)
+"event.ml" 195 6598 6613 "event.ml" 195 6598 6622
+type(
+  'a option
+)
+"event.ml" 196 6624 6647 "event.ml" 196 6624 6652
+type(
+  int
+)
+ident(
+  int_ref evnum "event.ml" 191 6471 6511 "event.ml" 191 6471 6516
+)
+"event.ml" 193 6536 6542 "event.ml" 196 6624 6654
+type(
+  'a communication
+)
+"event.ml" 197 6658 6676 "event.ml" 197 6658 6678
+type(
+  unit
+)
+"event.ml" 198 6682 6698 "event.ml" 198 6682 6702
+type(
+  unit -> unit
+)
+ident(
+  def poll "event.ml" 198 6682 6690 "event.ml" 212 7105 7120
+)
+"event.ml" 198 6682 6703 "event.ml" 198 6682 6705
+type(
+  unit
+)
+"event.ml" 199 6708 6722 "event.ml" 199 6708 6727
+type(
+  'a communication
+)
+ident(
+  def rcomm "event.ml" 200 6766 6776 "event.ml" 207 7015 7028
+)
+"event.ml" 199 6708 6730 "event.ml" 199 6708 6740
+type(
+  'a communication Queue.t -> 'a communication
+)
+ident(
+  ext_ref Queue.take
+)
+"event.ml" 199 6708 6741 "event.ml" 199 6708 6748
+type(
+  'a channel
+)
+ident(
+  int_ref channel "event.ml" 190 6447 6456 "event.ml" 190 6447 6463
+)
+"event.ml" 199 6708 6741 "event.ml" 199 6708 6762
+type(
+  'a communication Queue.t
+)
+"event.ml" 199 6708 6730 "event.ml" 199 6708 6762
+call(
+  stack
+)
+type(
+  'a communication
+)
+"event.ml" 200 6766 6779 "event.ml" 200 6766 6780
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"event.ml" 200 6766 6781 "event.ml" 200 6766 6786
+type(
+  'a communication
+)
+ident(
+  int_ref rcomm "event.ml" 199 6708 6722 "event.ml" 199 6708 6727
+)
+"event.ml" 200 6766 6780 "event.ml" 200 6766 6797
+type(
+  int ref
+)
+"event.ml" 200 6766 6779 "event.ml" 200 6766 6797
+type(
+  int
+)
+"event.ml" 200 6766 6798 "event.ml" 200 6766 6800
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"event.ml" 200 6766 6801 "event.ml" 200 6766 6802
+type(
+  int
+)
+"event.ml" 200 6766 6779 "event.ml" 200 6766 6802
+type(
+  bool
+)
+"event.ml" 201 6808 6820 "event.ml" 201 6808 6824
+type(
+  unit -> unit
+)
+ident(
+  int_ref poll "event.ml" 198 6682 6698 "event.ml" 198 6682 6702
+)
+"event.ml" 201 6808 6825 "event.ml" 201 6808 6827
+type(
+  unit
+)
+"event.ml" 201 6808 6820 "event.ml" 201 6808 6827
+call(
+  tail
+)
+type(
+  unit
+)
+"event.ml" 203 6849 6861 "event.ml" 203 6849 6866
+type(
+  'a communication
+)
+ident(
+  int_ref rcomm "event.ml" 199 6708 6722 "event.ml" 199 6708 6727
+)
+"event.ml" 203 6849 6875 "event.ml" 203 6849 6880
+type(
+  'a communication
+)
+ident(
+  int_ref wcomm "event.ml" 192 6520 6528 "event.ml" 192 6520 6533
+)
+"event.ml" 203 6849 6875 "event.ml" 203 6849 6885
+type(
+  'a option
+)
+"event.ml" 203 6849 6861 "event.ml" 203 6849 6885
+type(
+  unit
+)
+"event.ml" 204 6887 6899 "event.ml" 204 6887 6908
+type(
+  int ref
+)
+ident(
+  int_ref performed "event.ml" 191 6471 6491 "event.ml" 191 6471 6500
+)
+"event.ml" 204 6887 6909 "event.ml" 204 6887 6911
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"event.ml" 204 6887 6912 "event.ml" 204 6887 6917
+type(
+  int
+)
+ident(
+  int_ref evnum "event.ml" 191 6471 6511 "event.ml" 191 6471 6516
+)
+"event.ml" 204 6887 6899 "event.ml" 204 6887 6917
+type(
+  unit
+)
+"event.ml" 205 6919 6931 "event.ml" 205 6919 6936
+type(
+  'a communication
+)
+ident(
+  int_ref rcomm "event.ml" 199 6708 6722 "event.ml" 199 6708 6727
+)
+"event.ml" 205 6919 6931 "event.ml" 205 6919 6946
+type(
+  int ref
+)
+"event.ml" 205 6919 6947 "event.ml" 205 6919 6949
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"event.ml" 205 6919 6950 "event.ml" 205 6919 6955
+type(
+  'a communication
+)
+ident(
+  int_ref rcomm "event.ml" 199 6708 6722 "event.ml" 199 6708 6727
+)
+"event.ml" 205 6919 6950 "event.ml" 205 6919 6968
+type(
+  int
+)
+"event.ml" 205 6919 6931 "event.ml" 205 6919 6968
+type(
+  unit
+)
+"event.ml" 206 6970 6982 "event.ml" 206 6970 6998
+type(
+  Condition.t -> unit
+)
+ident(
+  ext_ref Condition.signal
+)
+"event.ml" 206 6970 6999 "event.ml" 206 6970 7004
+type(
+  'a communication
+)
+ident(
+  int_ref rcomm "event.ml" 199 6708 6722 "event.ml" 199 6708 6727
+)
+"event.ml" 206 6970 6999 "event.ml" 206 6970 7014
+type(
+  Condition.t
+)
+"event.ml" 206 6970 6982 "event.ml" 206 6970 7014
+call(
+  tail
+)
+type(
+  unit
+)
+"event.ml" 205 6919 6931 "event.ml" 206 6970 7014
+type(
+  unit
+)
+"event.ml" 204 6887 6899 "event.ml" 206 6970 7014
+type(
+  unit
+)
+"event.ml" 202 6828 6843 "event.ml" 207 7015 7028
+type(
+  unit
+)
+"event.ml" 200 6766 6776 "event.ml" 207 7015 7028
+type(
+  unit
+)
+"event.ml" 199 6708 6718 "event.ml" 207 7015 7028
+type(
+  unit
+)
+"event.ml" 209 7044 7054 "event.ml" 209 7044 7058
+type(
+  unit -> unit
+)
+ident(
+  int_ref poll "event.ml" 198 6682 6698 "event.ml" 198 6682 6702
+)
+"event.ml" 209 7044 7058 "event.ml" 209 7044 7060
+type(
+  unit
+)
+"event.ml" 209 7044 7054 "event.ml" 209 7044 7060
+call(
+  stack
+)
+type(
+  unit
+)
+"event.ml" 210 7062 7072 "event.ml" 210 7062 7076
+type(
+  bool
+)
+"event.ml" 209 7044 7054 "event.ml" 210 7062 7076
+type(
+  bool
+)
+"event.ml" 211 7077 7090 "event.ml" 211 7077 7101
+type(
+  exn
+)
+"event.ml" 212 7105 7115 "event.ml" 212 7105 7120
+type(
+  bool
+)
+"event.ml" 208 7032 7040 "event.ml" 212 7105 7120
+type(
+  bool
+)
+"event.ml" 198 6682 6690 "event.ml" 212 7105 7120
+type(
+  bool
+)
+"event.ml" 197 6658 6671 "event.ml" 212 7105 7121
+type(
+  unit -> bool
+)
+"event.ml" 213 7123 7144 "event.ml" 213 7123 7146
+type(
+  unit
+)
+"event.ml" 214 7150 7158 "event.ml" 214 7150 7165
+type(
+  'a channel
+)
+ident(
+  int_ref channel "event.ml" 190 6447 6456 "event.ml" 190 6447 6463
+)
+"event.ml" 214 7150 7184 "event.ml" 214 7150 7197
+type(
+  'a communication Queue.t -> 'a communication Queue.t
+)
+ident(
+  int_ref cleanup_queue "event.ml" 177 6108 6112 "event.ml" 177 6108 6125
+)
+"event.ml" 214 7150 7198 "event.ml" 214 7150 7205
+type(
+  'a channel
+)
+ident(
+  int_ref channel "event.ml" 190 6447 6456 "event.ml" 190 6447 6463
+)
+"event.ml" 214 7150 7198 "event.ml" 214 7150 7220
+type(
+  'a communication Queue.t
+)
+"event.ml" 214 7150 7184 "event.ml" 214 7150 7220
+call(
+  stack
+)
+type(
+  'a communication Queue.t
+)
+"event.ml" 214 7150 7158 "event.ml" 214 7150 7220
+type(
+  unit
+)
+"event.ml" 215 7222 7230 "event.ml" 215 7222 7239
+type(
+  'a communication -> 'a communication Queue.t -> unit
+)
+ident(
+  ext_ref Queue.add
+)
+"event.ml" 215 7222 7240 "event.ml" 215 7222 7245
+type(
+  'a communication
+)
+ident(
+  int_ref wcomm "event.ml" 192 6520 6528 "event.ml" 192 6520 6533
+)
+"event.ml" 215 7222 7246 "event.ml" 215 7222 7253
+type(
+  'a channel
+)
+ident(
+  int_ref channel "event.ml" 190 6447 6456 "event.ml" 190 6447 6463
+)
+"event.ml" 215 7222 7246 "event.ml" 215 7222 7268
+type(
+  'a communication Queue.t
+)
+"event.ml" 215 7222 7230 "event.ml" 215 7222 7268
+call(
+  tail
+)
+type(
+  unit
+)
+"event.ml" 214 7150 7158 "event.ml" 215 7222 7268
+type(
+  unit
+)
+"event.ml" 213 7123 7139 "event.ml" 215 7222 7269
+type(
+  unit -> unit
+)
+"event.ml" 216 7271 7291 "event.ml" 216 7271 7293
+type(
+  unit
+)
+"event.ml" 216 7271 7297 "event.ml" 216 7271 7299
+type(
+  unit
+)
+"event.ml" 216 7271 7286 "event.ml" 216 7271 7300
+type(
+  unit -> unit
+)
+"event.ml" 197 6658 6662 "event.ml" 216 7271 7302
+type(
+  unit basic_event
+)
+"event.ml" 192 6520 6524 "event.ml" 216 7271 7302
+type(
+  unit basic_event
+)
+"event.ml" 191 6471 6486 "event.ml" 216 7271 7303
+type(
+  unit behavior
+)
+"event.ml" 191 6471 6473 "event.ml" 216 7271 7303
+type(
+  unit event
+)
+"event.ml" 218 7305 7309 "event.ml" 218 7305 7316
+type(
+  'a channel -> 'a event
+)
+ident(
+  def receive "event.ml" 249 8239 8239 "event.ml" 1 0 -1
+)
+"event.ml" 218 7305 7317 "event.ml" 218 7305 7324
+type(
+  'a channel
+)
+ident(
+  def channel "event.ml" 219 7327 7329 "event.ml" 247 8210 8237
+)
+"event.ml" 219 7327 7347 "event.ml" 219 7327 7356
+type(
+  int ref
+)
+ident(
+  def performed "event.ml" 219 7327 7357 "event.ml" 247 8210 8236
+)
+"event.ml" 219 7327 7357 "event.ml" 219 7327 7366
+type(
+  Condition.t
+)
+ident(
+  def condition "event.ml" 219 7327 7367 "event.ml" 247 8210 8236
+)
+"event.ml" 219 7327 7367 "event.ml" 219 7327 7372
+type(
+  int
+)
+ident(
+  def evnum "event.ml" 220 7376 7380 "event.ml" 247 8210 8236
+)
+"event.ml" 220 7376 7384 "event.ml" 220 7376 7389
+type(
+  'a communication
+)
+ident(
+  def rcomm "event.ml" 225 7509 7513 "event.ml" 247 8210 8236
+)
+"event.ml" 221 7392 7412 "event.ml" 221 7392 7421
+type(
+  int ref
+)
+ident(
+  int_ref performed "event.ml" 219 7327 7347 "event.ml" 219 7327 7356
+)
+"event.ml" 222 7423 7443 "event.ml" 222 7423 7452
+type(
+  Condition.t
+)
+ident(
+  int_ref condition "event.ml" 219 7327 7357 "event.ml" 219 7327 7366
+)
+"event.ml" 223 7454 7469 "event.ml" 223 7454 7473
+type(
+  'a option
+)
+"event.ml" 224 7475 7498 "event.ml" 224 7475 7503
+type(
+  int
+)
+ident(
+  int_ref evnum "event.ml" 219 7327 7367 "event.ml" 219 7327 7372
+)
+"event.ml" 221 7392 7398 "event.ml" 224 7475 7505
+type(
+  'a communication
+)
+"event.ml" 225 7509 7527 "event.ml" 225 7509 7529
+type(
+  unit
+)
+"event.ml" 226 7533 7549 "event.ml" 226 7533 7553
+type(
+  unit -> unit
+)
+ident(
+  def poll "event.ml" 226 7533 7541 "event.ml" 240 7957 7972
+)
+"event.ml" 226 7533 7554 "event.ml" 226 7533 7556
+type(
+  unit
+)
+"event.ml" 227 7559 7573 "event.ml" 227 7559 7578
+type(
+  'a communication
+)
+ident(
+  def wcomm "event.ml" 228 7618 7628 "event.ml" 235 7867 7880
+)
+"event.ml" 227 7559 7581 "event.ml" 227 7559 7591
+type(
+  'a communication Queue.t -> 'a communication
+)
+ident(
+  ext_ref Queue.take
+)
+"event.ml" 227 7559 7592 "event.ml" 227 7559 7599
+type(
+  'a channel
+)
+ident(
+  int_ref channel "event.ml" 218 7305 7317 "event.ml" 218 7305 7324
+)
+"event.ml" 227 7559 7592 "event.ml" 227 7559 7614
+type(
+  'a communication Queue.t
+)
+"event.ml" 227 7559 7581 "event.ml" 227 7559 7614
+call(
+  stack
+)
+type(
+  'a communication
+)
+"event.ml" 228 7618 7631 "event.ml" 228 7618 7632
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"event.ml" 228 7618 7633 "event.ml" 228 7618 7638
+type(
+  'a communication
+)
+ident(
+  int_ref wcomm "event.ml" 227 7559 7573 "event.ml" 227 7559 7578
+)
+"event.ml" 228 7618 7632 "event.ml" 228 7618 7649
+type(
+  int ref
+)
+"event.ml" 228 7618 7631 "event.ml" 228 7618 7649
+type(
+  int
+)
+"event.ml" 228 7618 7650 "event.ml" 228 7618 7652
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"event.ml" 228 7618 7653 "event.ml" 228 7618 7654
+type(
+  int
+)
+"event.ml" 228 7618 7631 "event.ml" 228 7618 7654
+type(
+  bool
+)
+"event.ml" 229 7660 7672 "event.ml" 229 7660 7676
+type(
+  unit -> unit
+)
+ident(
+  int_ref poll "event.ml" 226 7533 7549 "event.ml" 226 7533 7553
+)
+"event.ml" 229 7660 7677 "event.ml" 229 7660 7679
+type(
+  unit
+)
+"event.ml" 229 7660 7672 "event.ml" 229 7660 7679
+call(
+  tail
+)
+type(
+  unit
+)
+"event.ml" 231 7701 7713 "event.ml" 231 7701 7718
+type(
+  'a communication
+)
+ident(
+  int_ref rcomm "event.ml" 220 7376 7384 "event.ml" 220 7376 7389
+)
+"event.ml" 231 7701 7727 "event.ml" 231 7701 7732
+type(
+  'a communication
+)
+ident(
+  int_ref wcomm "event.ml" 227 7559 7573 "event.ml" 227 7559 7578
+)
+"event.ml" 231 7701 7727 "event.ml" 231 7701 7737
+type(
+  'a option
+)
+"event.ml" 231 7701 7713 "event.ml" 231 7701 7737
+type(
+  unit
+)
+"event.ml" 232 7739 7751 "event.ml" 232 7739 7760
+type(
+  int ref
+)
+ident(
+  int_ref performed "event.ml" 219 7327 7347 "event.ml" 219 7327 7356
+)
+"event.ml" 232 7739 7761 "event.ml" 232 7739 7763
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"event.ml" 232 7739 7764 "event.ml" 232 7739 7769
+type(
+  int
+)
+ident(
+  int_ref evnum "event.ml" 219 7327 7367 "event.ml" 219 7327 7372
+)
+"event.ml" 232 7739 7751 "event.ml" 232 7739 7769
+type(
+  unit
+)
+"event.ml" 233 7771 7783 "event.ml" 233 7771 7788
+type(
+  'a communication
+)
+ident(
+  int_ref wcomm "event.ml" 227 7559 7573 "event.ml" 227 7559 7578
+)
+"event.ml" 233 7771 7783 "event.ml" 233 7771 7798
+type(
+  int ref
+)
+"event.ml" 233 7771 7799 "event.ml" 233 7771 7801
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"event.ml" 233 7771 7802 "event.ml" 233 7771 7807
+type(
+  'a communication
+)
+ident(
+  int_ref wcomm "event.ml" 227 7559 7573 "event.ml" 227 7559 7578
+)
+"event.ml" 233 7771 7802 "event.ml" 233 7771 7820
+type(
+  int
+)
+"event.ml" 233 7771 7783 "event.ml" 233 7771 7820
+type(
+  unit
+)
+"event.ml" 234 7822 7834 "event.ml" 234 7822 7850
+type(
+  Condition.t -> unit
+)
+ident(
+  ext_ref Condition.signal
+)
+"event.ml" 234 7822 7851 "event.ml" 234 7822 7856
+type(
+  'a communication
+)
+ident(
+  int_ref wcomm "event.ml" 227 7559 7573 "event.ml" 227 7559 7578
+)
+"event.ml" 234 7822 7851 "event.ml" 234 7822 7866
+type(
+  Condition.t
+)
+"event.ml" 234 7822 7834 "event.ml" 234 7822 7866
+call(
+  tail
+)
+type(
+  unit
+)
+"event.ml" 233 7771 7783 "event.ml" 234 7822 7866
+type(
+  unit
+)
+"event.ml" 232 7739 7751 "event.ml" 234 7822 7866
+type(
+  unit
+)
+"event.ml" 230 7680 7695 "event.ml" 235 7867 7880
+type(
+  unit
+)
+"event.ml" 228 7618 7628 "event.ml" 235 7867 7880
+type(
+  unit
+)
+"event.ml" 227 7559 7569 "event.ml" 235 7867 7880
+type(
+  unit
+)
+"event.ml" 237 7896 7906 "event.ml" 237 7896 7910
+type(
+  unit -> unit
+)
+ident(
+  int_ref poll "event.ml" 226 7533 7549 "event.ml" 226 7533 7553
+)
+"event.ml" 237 7896 7910 "event.ml" 237 7896 7912
+type(
+  unit
+)
+"event.ml" 237 7896 7906 "event.ml" 237 7896 7912
+call(
+  stack
+)
+type(
+  unit
+)
+"event.ml" 238 7914 7924 "event.ml" 238 7914 7928
+type(
+  bool
+)
+"event.ml" 237 7896 7906 "event.ml" 238 7914 7928
+type(
+  bool
+)
+"event.ml" 239 7929 7942 "event.ml" 239 7929 7953
+type(
+  exn
+)
+"event.ml" 240 7957 7967 "event.ml" 240 7957 7972
+type(
+  bool
+)
+"event.ml" 236 7884 7892 "event.ml" 240 7957 7972
+type(
+  bool
+)
+"event.ml" 226 7533 7541 "event.ml" 240 7957 7972
+type(
+  bool
+)
+"event.ml" 225 7509 7522 "event.ml" 240 7957 7973
+type(
+  unit -> bool
+)
+"event.ml" 241 7975 7994 "event.ml" 241 7975 7996
+type(
+  unit
+)
+"event.ml" 242 8000 8006 "event.ml" 242 8000 8013
+type(
+  'a channel
+)
+ident(
+  int_ref channel "event.ml" 218 7305 7317 "event.ml" 218 7305 7324
+)
+"event.ml" 242 8000 8031 "event.ml" 242 8000 8044
+type(
+  'a communication Queue.t -> 'a communication Queue.t
+)
+ident(
+  int_ref cleanup_queue "event.ml" 177 6108 6112 "event.ml" 177 6108 6125
+)
+"event.ml" 242 8000 8045 "event.ml" 242 8000 8052
+type(
+  'a channel
+)
+ident(
+  int_ref channel "event.ml" 218 7305 7317 "event.ml" 218 7305 7324
+)
+"event.ml" 242 8000 8045 "event.ml" 242 8000 8066
+type(
+  'a communication Queue.t
+)
+"event.ml" 242 8000 8031 "event.ml" 242 8000 8066
+call(
+  stack
+)
+type(
+  'a communication Queue.t
+)
+"event.ml" 242 8000 8006 "event.ml" 242 8000 8066
+type(
+  unit
+)
+"event.ml" 243 8068 8074 "event.ml" 243 8068 8083
+type(
+  'a communication -> 'a communication Queue.t -> unit
+)
+ident(
+  ext_ref Queue.add
+)
+"event.ml" 243 8068 8084 "event.ml" 243 8068 8089
+type(
+  'a communication
+)
+ident(
+  int_ref rcomm "event.ml" 220 7376 7384 "event.ml" 220 7376 7389
+)
+"event.ml" 243 8068 8090 "event.ml" 243 8068 8097
+type(
+  'a channel
+)
+ident(
+  int_ref channel "event.ml" 218 7305 7317 "event.ml" 218 7305 7324
+)
+"event.ml" 243 8068 8090 "event.ml" 243 8068 8111
+type(
+  'a communication Queue.t
+)
+"event.ml" 243 8068 8074 "event.ml" 243 8068 8111
+call(
+  tail
+)
+type(
+  unit
+)
+"event.ml" 242 8000 8006 "event.ml" 243 8068 8111
+type(
+  unit
+)
+"event.ml" 241 7975 7989 "event.ml" 243 8068 8112
+type(
+  unit -> unit
+)
+"event.ml" 244 8114 8132 "event.ml" 244 8114 8134
+type(
+  unit
+)
+"event.ml" 245 8138 8150 "event.ml" 245 8138 8155
+type(
+  'a communication
+)
+ident(
+  int_ref rcomm "event.ml" 220 7376 7384 "event.ml" 220 7376 7389
+)
+"event.ml" 245 8138 8150 "event.ml" 245 8138 8160
+type(
+  'a option
+)
+"event.ml" 246 8166 8174 "event.ml" 246 8166 8178
+type(
+  'a option
+)
+"event.ml" 246 8166 8182 "event.ml" 246 8166 8193
+type(
+  string -> 'a
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"event.ml" 246 8166 8194 "event.ml" 246 8166 8209
+type(
+  string
+)
+"event.ml" 246 8166 8182 "event.ml" 246 8166 8209
+call(
+  tail
+)
+type(
+  'a
+)
+"event.ml" 247 8210 8223 "event.ml" 247 8210 8226
+type(
+  'a
+)
+ident(
+  def res "event.ml" 247 8210 8230 "event.ml" 247 8210 8233
+)
+"event.ml" 247 8210 8218 "event.ml" 247 8210 8226
+type(
+  'a option
+)
+"event.ml" 247 8210 8230 "event.ml" 247 8210 8233
+type(
+  'a
+)
+ident(
+  int_ref res "event.ml" 247 8210 8223 "event.ml" 247 8210 8226
+)
+"event.ml" 245 8138 8144 "event.ml" 247 8210 8233
+type(
+  'a
+)
+"event.ml" 244 8114 8127 "event.ml" 247 8210 8234
+type(
+  unit -> 'a
+)
+"event.ml" 225 7509 7513 "event.ml" 247 8210 8236
+type(
+  'a basic_event
+)
+"event.ml" 220 7376 7380 "event.ml" 247 8210 8236
+type(
+  'a basic_event
+)
+"event.ml" 219 7327 7342 "event.ml" 247 8210 8237
+type(
+  'a behavior
+)
+"event.ml" 219 7327 7329 "event.ml" 247 8210 8237
+type(
+  'a event
+)
+"event.ml" 249 8239 8243 "event.ml" 249 8239 8249
+type(
+  'a event list -> 'a event
+)
+ident(
+  def choose "event.ml" 251 8268 8268 "event.ml" 1 0 -1
+)
+"event.ml" 249 8239 8250 "event.ml" 249 8239 8253
+type(
+  'a event list
+)
+ident(
+  def evl "event.ml" 249 8239 8256 "event.ml" 249 8239 8266
+)
+"event.ml" 249 8239 8263 "event.ml" 249 8239 8266
+type(
+  'a event list
+)
+ident(
+  int_ref evl "event.ml" 249 8239 8250 "event.ml" 249 8239 8253
+)
+"event.ml" 249 8239 8256 "event.ml" 249 8239 8266
+type(
+  'a event
+)
+"event.ml" 251 8268 8272 "event.ml" 251 8268 8282
+type(
+  'a event -> (unit -> unit) -> 'a event
+)
+ident(
+  def wrap_abort "event.ml" 253 8309 8309 "event.ml" 1 0 -1
+)
+"event.ml" 251 8268 8283 "event.ml" 251 8268 8285
+type(
+  'a event
+)
+ident(
+  def ev "event.ml" 251 8268 8286 "event.ml" 251 8268 8307
+)
+"event.ml" 251 8268 8286 "event.ml" 251 8268 8288
+type(
+  unit -> unit
+)
+ident(
+  def fn "event.ml" 251 8268 8291 "event.ml" 251 8268 8307
+)
+"event.ml" 251 8268 8301 "event.ml" 251 8268 8303
+type(
+  'a event
+)
+ident(
+  int_ref ev "event.ml" 251 8268 8283 "event.ml" 251 8268 8285
+)
+"event.ml" 251 8268 8304 "event.ml" 251 8268 8306
+type(
+  unit -> unit
+)
+ident(
+  int_ref fn "event.ml" 251 8268 8286 "event.ml" 251 8268 8288
+)
+"event.ml" 251 8268 8291 "event.ml" 251 8268 8307
+type(
+  'a event
+)
+"event.ml" 253 8309 8313 "event.ml" 253 8309 8318
+type(
+  (unit -> 'a event) -> 'a event
+)
+ident(
+  def guard "event.ml" 255 8334 8334 "event.ml" 1 0 -1
+)
+"event.ml" 253 8309 8319 "event.ml" 253 8309 8321
+type(
+  unit -> 'a event
+)
+ident(
+  def fn "event.ml" 253 8309 8324 "event.ml" 253 8309 8332
+)
+"event.ml" 253 8309 8330 "event.ml" 253 8309 8332
+type(
+  unit -> 'a event
+)
+ident(
+  int_ref fn "event.ml" 253 8309 8319 "event.ml" 253 8309 8321
+)
+"event.ml" 253 8309 8324 "event.ml" 253 8309 8332
+type(
+  'a event
+)
+"event.ml" 255 8334 8342 "event.ml" 255 8334 8346
+type(
+  'a event -> ('a -> 'b) -> 'b event
+)
+ident(
+  def wrap "event.ml" 255 8334 8334 "event.ml" 1 0 -1
+)
+"event.ml" 255 8334 8347 "event.ml" 255 8334 8349
+type(
+  'a event
+)
+ident(
+  def ev "event.ml" 255 8334 8350 "event.ml" 268 8758 8795
+)
+"event.ml" 255 8334 8350 "event.ml" 255 8334 8352
+type(
+  'a -> 'b
+)
+ident(
+  def fn "event.ml" 256 8355 8357 "event.ml" 268 8758 8795
+)
+"event.ml" 256 8355 8363 "event.ml" 256 8355 8365
+type(
+  'a event
+)
+ident(
+  int_ref ev "event.ml" 255 8334 8347 "event.ml" 255 8334 8349
+)
+"event.ml" 257 8371 8389 "event.ml" 257 8371 8394
+type(
+  'a behavior
+)
+ident(
+  def genev "event.ml" 258 8398 8404 "event.ml" 262 8564 8614
+)
+"event.ml" 257 8371 8375 "event.ml" 257 8371 8394
+type(
+  'a event
+)
+"event.ml" 258 8398 8422 "event.ml" 258 8398 8431
+type(
+  int ref
+)
+ident(
+  def performed "event.ml" 258 8398 8432 "event.ml" 262 8564 8613
+)
+"event.ml" 258 8398 8432 "event.ml" 258 8398 8441
+type(
+  Condition.t
+)
+ident(
+  def condition "event.ml" 258 8398 8442 "event.ml" 262 8564 8613
+)
+"event.ml" 258 8398 8442 "event.ml" 258 8398 8447
+type(
+  int
+)
+ident(
+  def evnum "event.ml" 259 8451 8459 "event.ml" 262 8564 8613
+)
+"event.ml" 259 8451 8463 "event.ml" 259 8451 8466
+type(
+  'a basic_event
+)
+ident(
+  def bev "event.ml" 260 8504 8512 "event.ml" 262 8564 8613
+)
+"event.ml" 259 8451 8469 "event.ml" 259 8451 8474
+type(
+  'a behavior
+)
+ident(
+  int_ref genev "event.ml" 257 8371 8389 "event.ml" 257 8371 8394
+)
+"event.ml" 259 8451 8475 "event.ml" 259 8451 8484
+type(
+  int ref
+)
+ident(
+  int_ref performed "event.ml" 258 8398 8422 "event.ml" 258 8398 8431
+)
+"event.ml" 259 8451 8485 "event.ml" 259 8451 8494
+type(
+  Condition.t
+)
+ident(
+  int_ref condition "event.ml" 258 8398 8432 "event.ml" 258 8398 8441
+)
+"event.ml" 259 8451 8495 "event.ml" 259 8451 8500
+type(
+  int
+)
+ident(
+  int_ref evnum "event.ml" 258 8398 8442 "event.ml" 258 8398 8447
+)
+"event.ml" 259 8451 8469 "event.ml" 259 8451 8500
+call(
+  stack
+)
+type(
+  'a basic_event
+)
+"event.ml" 260 8504 8521 "event.ml" 260 8504 8524
+type(
+  'a basic_event
+)
+ident(
+  int_ref bev "event.ml" 259 8451 8463 "event.ml" 259 8451 8466
+)
+"event.ml" 260 8504 8521 "event.ml" 260 8504 8529
+type(
+  unit -> bool
+)
+"event.ml" 261 8531 8551 "event.ml" 261 8531 8554
+type(
+  'a basic_event
+)
+ident(
+  int_ref bev "event.ml" 259 8451 8463 "event.ml" 259 8451 8466
+)
+"event.ml" 261 8531 8551 "event.ml" 261 8531 8562
+type(
+  unit -> unit
+)
+"event.ml" 262 8564 8588 "event.ml" 262 8564 8590
+type(
+  unit
+)
+"event.ml" 262 8564 8594 "event.ml" 262 8564 8596
+type(
+  'a -> 'b
+)
+ident(
+  int_ref fn "event.ml" 255 8334 8350 "event.ml" 255 8334 8352
+)
+"event.ml" 262 8564 8597 "event.ml" 262 8564 8600
+type(
+  'a basic_event
+)
+ident(
+  int_ref bev "event.ml" 259 8451 8463 "event.ml" 259 8451 8466
+)
+"event.ml" 262 8564 8597 "event.ml" 262 8564 8607
+type(
+  unit -> 'a
+)
+"event.ml" 262 8564 8607 "event.ml" 262 8564 8609
+type(
+  unit
+)
+"event.ml" 262 8564 8596 "event.ml" 262 8564 8610
+call(
+  stack
+)
+type(
+  'a
+)
+"event.ml" 262 8564 8594 "event.ml" 262 8564 8610
+call(
+  tail
+)
+type(
+  'b
+)
+"event.ml" 262 8564 8583 "event.ml" 262 8564 8611
+type(
+  unit -> 'b
+)
+"event.ml" 260 8504 8512 "event.ml" 262 8564 8613
+type(
+  'b basic_event
+)
+"event.ml" 259 8451 8459 "event.ml" 262 8564 8613
+type(
+  'b basic_event
+)
+"event.ml" 258 8398 8417 "event.ml" 262 8564 8614
+type(
+  'b behavior
+)
+"event.ml" 258 8398 8404 "event.ml" 262 8564 8614
+type(
+  'b event
+)
+"event.ml" 263 8615 8626 "event.ml" 263 8615 8629
+type(
+  'a event list
+)
+ident(
+  def evl "event.ml" 264 8633 8639 "event.ml" 264 8633 8682
+)
+"event.ml" 263 8615 8619 "event.ml" 263 8615 8629
+type(
+  'a event
+)
+"event.ml" 264 8633 8646 "event.ml" 264 8633 8654
+type(
+  ('a event -> 'b event) -> 'a event list -> 'b event list
+)
+ident(
+  ext_ref List.map
+)
+"event.ml" 264 8633 8660 "event.ml" 264 8633 8662
+type(
+  'a event
+)
+ident(
+  def ev "event.ml" 264 8633 8666 "event.ml" 264 8633 8676
+)
+"event.ml" 264 8633 8666 "event.ml" 264 8633 8670
+type(
+  'a event -> ('a -> 'b) -> 'b event
+)
+ident(
+  int_ref wrap "event.ml" 255 8334 8342 "event.ml" 255 8334 8346
+)
+"event.ml" 264 8633 8671 "event.ml" 264 8633 8673
+type(
+  'a event
+)
+ident(
+  int_ref ev "event.ml" 264 8633 8660 "event.ml" 264 8633 8662
+)
+"event.ml" 264 8633 8674 "event.ml" 264 8633 8676
+type(
+  'a -> 'b
+)
+ident(
+  int_ref fn "event.ml" 255 8334 8350 "event.ml" 255 8334 8352
+)
+"event.ml" 264 8633 8666 "event.ml" 264 8633 8676
+call(
+  tail
+)
+type(
+  'b event
+)
+"event.ml" 264 8633 8655 "event.ml" 264 8633 8677
+type(
+  'a event -> 'b event
+)
+"event.ml" 264 8633 8678 "event.ml" 264 8633 8681
+type(
+  'a event list
+)
+ident(
+  int_ref evl "event.ml" 263 8615 8626 "event.ml" 263 8615 8629
+)
+"event.ml" 264 8633 8645 "event.ml" 264 8633 8682
+call(
+  stack
+)
+type(
+  'b event list
+)
+"event.ml" 264 8633 8639 "event.ml" 264 8633 8682
+type(
+  'b event
+)
+"event.ml" 265 8683 8698 "event.ml" 265 8683 8700
+type(
+  'a event
+)
+ident(
+  def ev "event.ml" 266 8709 8715 "event.ml" 266 8709 8741
+)
+"event.ml" 265 8683 8702 "event.ml" 265 8683 8704
+type(
+  unit -> unit
+)
+ident(
+  def f' "event.ml" 266 8709 8715 "event.ml" 266 8709 8741
+)
+"event.ml" 265 8683 8687 "event.ml" 265 8683 8705
+type(
+  'a event
+)
+"event.ml" 266 8709 8726 "event.ml" 266 8709 8730
+type(
+  'a event -> ('a -> 'b) -> 'b event
+)
+ident(
+  int_ref wrap "event.ml" 255 8334 8342 "event.ml" 255 8334 8346
+)
+"event.ml" 266 8709 8731 "event.ml" 266 8709 8733
+type(
+  'a event
+)
+ident(
+  int_ref ev "event.ml" 265 8683 8698 "event.ml" 265 8683 8700
+)
+"event.ml" 266 8709 8734 "event.ml" 266 8709 8736
+type(
+  'a -> 'b
+)
+ident(
+  int_ref fn "event.ml" 255 8334 8350 "event.ml" 255 8334 8352
+)
+"event.ml" 266 8709 8726 "event.ml" 266 8709 8736
+call(
+  stack
+)
+type(
+  'b event
+)
+"event.ml" 266 8709 8738 "event.ml" 266 8709 8740
+type(
+  unit -> unit
+)
+ident(
+  int_ref f' "event.ml" 265 8683 8702 "event.ml" 265 8683 8704
+)
+"event.ml" 266 8709 8715 "event.ml" 266 8709 8741
+type(
+  'b event
+)
+"event.ml" 267 8742 8752 "event.ml" 267 8742 8754
+type(
+  unit -> 'a event
+)
+ident(
+  def gu "event.ml" 268 8758 8764 "event.ml" 268 8758 8795
+)
+"event.ml" 267 8742 8746 "event.ml" 267 8742 8754
+type(
+  'a event
+)
+"event.ml" 268 8758 8774 "event.ml" 268 8758 8776
+type(
+  unit
+)
+"event.ml" 268 8758 8780 "event.ml" 268 8758 8784
+type(
+  'a event -> ('a -> 'b) -> 'b event
+)
+ident(
+  int_ref wrap "event.ml" 255 8334 8342 "event.ml" 255 8334 8346
+)
+"event.ml" 268 8758 8786 "event.ml" 268 8758 8788
+type(
+  unit -> 'a event
+)
+ident(
+  int_ref gu "event.ml" 267 8742 8752 "event.ml" 267 8742 8754
+)
+"event.ml" 268 8758 8788 "event.ml" 268 8758 8790
+type(
+  unit
+)
+"event.ml" 268 8758 8785 "event.ml" 268 8758 8791
+call(
+  stack
+)
+type(
+  'a event
+)
+"event.ml" 268 8758 8792 "event.ml" 268 8758 8794
+type(
+  'a -> 'b
+)
+ident(
+  int_ref fn "event.ml" 255 8334 8350 "event.ml" 255 8334 8352
+)
+"event.ml" 268 8758 8780 "event.ml" 268 8758 8794
+call(
+  tail
+)
+type(
+  'b event
+)
+"event.ml" 268 8758 8769 "event.ml" 268 8758 8795
+type(
+  unit -> 'b event
+)
+"event.ml" 268 8758 8764 "event.ml" 268 8758 8795
+type(
+  'b event
+)
+"event.ml" 256 8355 8357 "event.ml" 268 8758 8795
+type(
+  'b event
+)
+"event.ml" 272 8826 8830 "event.ml" 272 8826 8836
+type(
+  'a event list -> 'a
+)
+ident(
+  def select "event.ml" 272 8826 8859 "event.ml" 1 0 -1
+)
+"event.ml" 272 8826 8837 "event.ml" 272 8826 8840
+type(
+  'a event list
+)
+ident(
+  def evl "event.ml" 272 8826 8843 "event.ml" 272 8826 8859
+)
+"event.ml" 272 8826 8843 "event.ml" 272 8826 8847
+type(
+  'a event -> 'a
+)
+ident(
+  int_ref sync "event.ml" 137 4853 4857 "event.ml" 137 4853 4861
+)
+"event.ml" 272 8826 8855 "event.ml" 272 8826 8858
+type(
+  'a event list
+)
+ident(
+  int_ref evl "event.ml" 272 8826 8837 "event.ml" 272 8826 8840
+)
+"event.ml" 272 8826 8847 "event.ml" 272 8826 8859
+type(
+  'a event
+)
+"event.ml" 272 8826 8843 "event.ml" 272 8826 8859
+call(
+  tail
+)
+type(
+  'a
+)

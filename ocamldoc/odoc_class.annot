@@ -1,0 +1,1958 @@
+"odoc_class.ml" 98 4387 4391 "odoc_class.ml" 98 4387 4419
+type(
+  t_class -> string -> Odoc_types.text option
+)
+ident(
+  def class_parameter_text_by_name "odoc_class.ml" 110 4667 4667 "odoc_class.ml" 1 0 -1
+)
+"odoc_class.ml" 98 4387 4420 "odoc_class.ml" 98 4387 4422
+type(
+  t_class
+)
+ident(
+  def cl "odoc_class.ml" 98 4387 4423 "odoc_class.ml" 107 4601 4615
+)
+"odoc_class.ml" 98 4387 4423 "odoc_class.ml" 98 4387 4428
+type(
+  string
+)
+ident(
+  def label "odoc_class.ml" 99 4431 4433 "odoc_class.ml" 107 4601 4615
+)
+"odoc_class.ml" 99 4431 4439 "odoc_class.ml" 99 4431 4441
+type(
+  t_class
+)
+ident(
+  int_ref cl "odoc_class.ml" 98 4387 4420 "odoc_class.ml" 98 4387 4422
+)
+"odoc_class.ml" 99 4431 4439 "odoc_class.ml" 99 4431 4449
+type(
+  Odoc_types.info option
+)
+"odoc_class.ml" 100 4455 4459 "odoc_class.ml" 100 4455 4463
+type(
+  Odoc_types.info option
+)
+"odoc_class.ml" 100 4455 4467 "odoc_class.ml" 100 4455 4471
+type(
+  Odoc_types.text option
+)
+"odoc_class.ml" 101 4472 4481 "odoc_class.ml" 101 4472 4482
+type(
+  Odoc_types.info
+)
+ident(
+  def i "odoc_class.ml" 102 4486 4492 "odoc_class.ml" 107 4601 4615
+)
+"odoc_class.ml" 101 4472 4476 "odoc_class.ml" 101 4472 4482
+type(
+  Odoc_types.info option
+)
+"odoc_class.ml" 103 4496 4508 "odoc_class.ml" 103 4496 4509
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_class.ml" 104 4554 4562 "odoc_class.ml" 104 4554 4568
+)
+"odoc_class.ml" 103 4496 4512 "odoc_class.ml" 103 4496 4522
+type(
+  string -> Odoc_types.param list -> Odoc_types.text
+)
+ident(
+  ext_ref List.assoc
+)
+"odoc_class.ml" 103 4496 4523 "odoc_class.ml" 103 4496 4528
+type(
+  string
+)
+ident(
+  int_ref label "odoc_class.ml" 98 4387 4423 "odoc_class.ml" 98 4387 4428
+)
+"odoc_class.ml" 103 4496 4529 "odoc_class.ml" 103 4496 4530
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref i "odoc_class.ml" 101 4472 4481 "odoc_class.ml" 101 4472 4482
+)
+"odoc_class.ml" 103 4496 4529 "odoc_class.ml" 103 4496 4550
+type(
+  Odoc_types.param list
+)
+"odoc_class.ml" 103 4496 4512 "odoc_class.ml" 103 4496 4550
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+"odoc_class.ml" 104 4554 4567 "odoc_class.ml" 104 4554 4568
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref t "odoc_class.ml" 103 4496 4508 "odoc_class.ml" 103 4496 4509
+)
+"odoc_class.ml" 104 4554 4562 "odoc_class.ml" 104 4554 4568
+type(
+  Odoc_types.text option
+)
+"odoc_class.ml" 103 4496 4504 "odoc_class.ml" 104 4554 4568
+type(
+  Odoc_types.text option
+)
+"odoc_class.ml" 106 4580 4588 "odoc_class.ml" 106 4580 4597
+type(
+  exn
+)
+"odoc_class.ml" 107 4601 4611 "odoc_class.ml" 107 4601 4615
+type(
+  Odoc_types.text option
+)
+"odoc_class.ml" 102 4486 4492 "odoc_class.ml" 107 4601 4615
+type(
+  Odoc_types.text option
+)
+"odoc_class.ml" 99 4431 4433 "odoc_class.ml" 107 4601 4615
+type(
+  Odoc_types.text option
+)
+"odoc_class.ml" 110 4667 4675 "odoc_class.ml" 110 4667 4689
+type(
+  ?trans:bool -> t_class -> class_element list
+)
+ident(
+  def class_elements "odoc_class.ml" 110 4667 4667 "odoc_class.ml" 1 0 -1
+)
+"odoc_class.ml" 110 4667 4692 "odoc_class.ml" 110 4667 4697
+type(
+  bool
+)
+"odoc_class.ml" 110 4667 4698 "odoc_class.ml" 110 4667 4702
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_class.ml" 110 4667 4698 "odoc_class.ml" 110 4667 4702
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_class.ml" 110 4667 4704 "odoc_class.ml" 110 4667 4706
+type(
+  t_class
+)
+ident(
+  def cl "odoc_class.ml" 111 4709 4711 "odoc_class.ml" 139 5630 5652
+)
+"odoc_class.ml" 111 4709 4719 "odoc_class.ml" 111 4709 4728
+type(
+  class_kind -> class_element list
+)
+ident(
+  def iter_kind "odoc_class.ml" 111 4709 4711 "odoc_class.ml" 139 5630 5652
+)
+"odoc_class.ml" 111 4709 4729 "odoc_class.ml" 111 4709 4730
+type(
+  class_kind
+)
+ident(
+  def k "odoc_class.ml" 112 4733 4737 "odoc_class.ml" 137 5615 5624
+)
+"odoc_class.ml" 112 4733 4743 "odoc_class.ml" 112 4733 4744
+type(
+  class_kind
+)
+ident(
+  int_ref k "odoc_class.ml" 111 4709 4729 "odoc_class.ml" 111 4709 4730
+)
+"odoc_class.ml" 113 4750 4773 "odoc_class.ml" 113 4750 4774
+type(
+  inherited_class list
+)
+"odoc_class.ml" 113 4750 4776 "odoc_class.ml" 113 4750 4784
+type(
+  class_element list
+)
+ident(
+  def elements "odoc_class.ml" 113 4750 4789 "odoc_class.ml" 113 4750 4797
+)
+"odoc_class.ml" 113 4750 4756 "odoc_class.ml" 113 4750 4785
+type(
+  class_kind
+)
+"odoc_class.ml" 113 4750 4789 "odoc_class.ml" 113 4750 4797
+type(
+  class_element list
+)
+ident(
+  int_ref elements "odoc_class.ml" 113 4750 4776 "odoc_class.ml" 113 4750 4784
+)
+"odoc_class.ml" 114 4798 4822 "odoc_class.ml" 114 4798 4828
+type(
+  class_kind
+)
+ident(
+  def c_kind "odoc_class.ml" 115 4842 4850 "odoc_class.ml" 115 4842 4866
+)
+"odoc_class.ml" 114 4798 4830 "odoc_class.ml" 114 4798 4837
+type(
+  class_type_kind
+)
+ident(
+  def ct_kind "odoc_class.ml" 115 4842 4850 "odoc_class.ml" 115 4842 4866
+)
+"odoc_class.ml" 114 4798 4804 "odoc_class.ml" 114 4798 4838
+type(
+  class_kind
+)
+"odoc_class.ml" 115 4842 4850 "odoc_class.ml" 115 4842 4859
+type(
+  class_kind -> class_element list
+)
+ident(
+  int_ref iter_kind "odoc_class.ml" 111 4709 4719 "odoc_class.ml" 111 4709 4728
+)
+"odoc_class.ml" 115 4842 4860 "odoc_class.ml" 115 4842 4866
+type(
+  class_kind
+)
+ident(
+  int_ref c_kind "odoc_class.ml" 114 4798 4822 "odoc_class.ml" 114 4798 4828
+)
+"odoc_class.ml" 115 4842 4850 "odoc_class.ml" 115 4842 4866
+call(
+  tail
+)
+type(
+  class_element list
+)
+"odoc_class.ml" 125 5211 5229 "odoc_class.ml" 125 5211 5233
+type(
+  class_apply
+)
+ident(
+  def capp "odoc_class.ml" 126 5237 5245 "odoc_class.ml" 130 5365 5374
+)
+"odoc_class.ml" 125 5211 5217 "odoc_class.ml" 125 5211 5233
+type(
+  class_kind
+)
+"odoc_class.ml" 127 5247 5262 "odoc_class.ml" 127 5247 5266
+type(
+  class_apply
+)
+ident(
+  int_ref capp "odoc_class.ml" 125 5211 5229 "odoc_class.ml" 125 5211 5233
+)
+"odoc_class.ml" 127 5247 5262 "odoc_class.ml" 127 5247 5277
+type(
+  t_class option
+)
+"odoc_class.ml" 128 5283 5299 "odoc_class.ml" 128 5283 5300
+type(
+  t_class
+)
+ident(
+  def c "odoc_class.ml" 128 5283 5306 "odoc_class.ml" 128 5283 5345
+)
+"odoc_class.ml" 128 5283 5294 "odoc_class.ml" 128 5283 5300
+type(
+  t_class option
+)
+"odoc_class.ml" 128 5283 5306 "odoc_class.ml" 128 5283 5311
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_class.ml" 110 4667 4692 "odoc_class.ml" 110 4667 4697
+)
+"odoc_class.ml" 128 5283 5315 "odoc_class.ml" 128 5283 5329
+type(
+  ?trans:bool -> t_class -> class_element list
+)
+ident(
+  int_ref class_elements "odoc_class.ml" 110 4667 4675 "odoc_class.ml" 110 4667 4689
+)
+"odoc_class.ml" 128 5283 5338 "odoc_class.ml" 128 5283 5343
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_class.ml" 110 4667 4692 "odoc_class.ml" 110 4667 4697
+)
+"odoc_class.ml" 128 5283 5344 "odoc_class.ml" 128 5283 5345
+type(
+  t_class
+)
+ident(
+  int_ref c "odoc_class.ml" 128 5283 5299 "odoc_class.ml" 128 5283 5300
+)
+"odoc_class.ml" 128 5283 5315 "odoc_class.ml" 128 5283 5345
+call(
+  tail
+)
+type(
+  class_element list
+)
+"odoc_class.ml" 129 5346 5357 "odoc_class.ml" 129 5346 5358
+type(
+  t_class option
+)
+"odoc_class.ml" 129 5346 5362 "odoc_class.ml" 129 5346 5364
+type(
+  class_element list
+)
+"odoc_class.ml" 126 5237 5245 "odoc_class.ml" 130 5365 5374
+type(
+  class_element list
+)
+"odoc_class.ml" 131 5375 5394 "odoc_class.ml" 131 5375 5397
+type(
+  class_constr
+)
+ident(
+  def cco "odoc_class.ml" 132 5401 5409 "odoc_class.ml" 137 5615 5624
+)
+"odoc_class.ml" 131 5375 5381 "odoc_class.ml" 131 5375 5397
+type(
+  class_kind
+)
+"odoc_class.ml" 133 5411 5426 "odoc_class.ml" 133 5411 5429
+type(
+  class_constr
+)
+ident(
+  int_ref cco "odoc_class.ml" 131 5375 5394 "odoc_class.ml" 131 5375 5397
+)
+"odoc_class.ml" 133 5411 5426 "odoc_class.ml" 133 5411 5439
+type(
+  cct option
+)
+"odoc_class.ml" 134 5445 5465 "odoc_class.ml" 134 5445 5466
+type(
+  t_class
+)
+ident(
+  def c "odoc_class.ml" 134 5445 5473 "odoc_class.ml" 134 5445 5512
+)
+"odoc_class.ml" 134 5445 5461 "odoc_class.ml" 134 5445 5467
+type(
+  cct
+)
+"odoc_class.ml" 134 5445 5456 "odoc_class.ml" 134 5445 5467
+type(
+  cct option
+)
+"odoc_class.ml" 134 5445 5473 "odoc_class.ml" 134 5445 5478
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_class.ml" 110 4667 4692 "odoc_class.ml" 110 4667 4697
+)
+"odoc_class.ml" 134 5445 5482 "odoc_class.ml" 134 5445 5496
+type(
+  ?trans:bool -> t_class -> class_element list
+)
+ident(
+  int_ref class_elements "odoc_class.ml" 110 4667 4675 "odoc_class.ml" 110 4667 4689
+)
+"odoc_class.ml" 134 5445 5505 "odoc_class.ml" 134 5445 5510
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_class.ml" 110 4667 4692 "odoc_class.ml" 110 4667 4697
+)
+"odoc_class.ml" 134 5445 5511 "odoc_class.ml" 134 5445 5512
+type(
+  t_class
+)
+ident(
+  int_ref c "odoc_class.ml" 134 5445 5465 "odoc_class.ml" 134 5445 5466
+)
+"odoc_class.ml" 134 5445 5482 "odoc_class.ml" 134 5445 5512
+call(
+  tail
+)
+type(
+  class_element list
+)
+"odoc_class.ml" 135 5513 5538 "odoc_class.ml" 135 5513 5540
+type(
+  t_class_type
+)
+ident(
+  def ct "odoc_class.ml" 135 5513 5550 "odoc_class.ml" 135 5513 5595
+)
+"odoc_class.ml" 135 5513 5541 "odoc_class.ml" 135 5513 5542
+type(
+  Types.type_expr list
+)
+"odoc_class.ml" 135 5513 5529 "odoc_class.ml" 135 5513 5544
+type(
+  cct
+)
+"odoc_class.ml" 135 5513 5524 "odoc_class.ml" 135 5513 5544
+type(
+  cct option
+)
+"odoc_class.ml" 135 5513 5550 "odoc_class.ml" 135 5513 5555
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_class.ml" 110 4667 4692 "odoc_class.ml" 110 4667 4697
+)
+"odoc_class.ml" 135 5513 5559 "odoc_class.ml" 135 5513 5578
+type(
+  ?trans:bool -> t_class_type -> class_element list
+)
+ident(
+  int_ref class_type_elements "odoc_class.ml" 142 5709 5713 "odoc_class.ml" 142 5709 5732
+)
+"odoc_class.ml" 135 5513 5587 "odoc_class.ml" 135 5513 5592
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_class.ml" 110 4667 4692 "odoc_class.ml" 110 4667 4697
+)
+"odoc_class.ml" 135 5513 5593 "odoc_class.ml" 135 5513 5595
+type(
+  t_class_type
+)
+ident(
+  int_ref ct "odoc_class.ml" 135 5513 5538 "odoc_class.ml" 135 5513 5540
+)
+"odoc_class.ml" 135 5513 5559 "odoc_class.ml" 135 5513 5595
+call(
+  tail
+)
+type(
+  class_element list
+)
+"odoc_class.ml" 136 5596 5607 "odoc_class.ml" 136 5596 5608
+type(
+  cct option
+)
+"odoc_class.ml" 136 5596 5612 "odoc_class.ml" 136 5596 5614
+type(
+  class_element list
+)
+"odoc_class.ml" 132 5401 5409 "odoc_class.ml" 137 5615 5624
+type(
+  class_element list
+)
+"odoc_class.ml" 112 4733 4737 "odoc_class.ml" 137 5615 5624
+type(
+  class_element list
+)
+"odoc_class.ml" 139 5630 5632 "odoc_class.ml" 139 5630 5641
+type(
+  class_kind -> class_element list
+)
+ident(
+  int_ref iter_kind "odoc_class.ml" 111 4709 4719 "odoc_class.ml" 111 4709 4728
+)
+"odoc_class.ml" 139 5630 5642 "odoc_class.ml" 139 5630 5644
+type(
+  t_class
+)
+ident(
+  int_ref cl "odoc_class.ml" 110 4667 4704 "odoc_class.ml" 110 4667 4706
+)
+"odoc_class.ml" 139 5630 5642 "odoc_class.ml" 139 5630 5652
+type(
+  class_kind
+)
+"odoc_class.ml" 139 5630 5632 "odoc_class.ml" 139 5630 5652
+call(
+  tail
+)
+type(
+  class_element list
+)
+"odoc_class.ml" 111 4709 4711 "odoc_class.ml" 139 5630 5652
+type(
+  class_element list
+)
+"odoc_class.ml" 142 5709 5713 "odoc_class.ml" 142 5709 5732
+type(
+  ?trans:bool -> t_class_type -> class_element list
+)
+ident(
+  def class_type_elements "odoc_class.ml" 110 4667 4667 "odoc_class.ml" 1 0 -1
+)
+"odoc_class.ml" 142 5709 5735 "odoc_class.ml" 142 5709 5740
+type(
+  bool
+)
+"odoc_class.ml" 142 5709 5741 "odoc_class.ml" 142 5709 5745
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_class.ml" 142 5709 5741 "odoc_class.ml" 142 5709 5745
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_class.ml" 142 5709 5747 "odoc_class.ml" 142 5709 5750
+type(
+  t_class_type
+)
+ident(
+  def clt "odoc_class.ml" 143 5753 5755 "odoc_class.ml" 150 6035 6043
+)
+"odoc_class.ml" 143 5753 5761 "odoc_class.ml" 143 5753 5764
+type(
+  t_class_type
+)
+ident(
+  int_ref clt "odoc_class.ml" 142 5709 5747 "odoc_class.ml" 142 5709 5750
+)
+"odoc_class.ml" 143 5753 5761 "odoc_class.ml" 143 5753 5773
+type(
+  class_type_kind
+)
+"odoc_class.ml" 144 5779 5800 "odoc_class.ml" 144 5779 5801
+type(
+  inherited_class list
+)
+"odoc_class.ml" 144 5779 5803 "odoc_class.ml" 144 5779 5811
+type(
+  class_element list
+)
+ident(
+  def elements "odoc_class.ml" 144 5779 5816 "odoc_class.ml" 144 5779 5824
+)
+"odoc_class.ml" 144 5779 5783 "odoc_class.ml" 144 5779 5812
+type(
+  class_type_kind
+)
+"odoc_class.ml" 144 5779 5816 "odoc_class.ml" 144 5779 5824
+type(
+  class_element list
+)
+ident(
+  int_ref elements "odoc_class.ml" 144 5779 5803 "odoc_class.ml" 144 5779 5811
+)
+"odoc_class.ml" 145 5825 5868 "odoc_class.ml" 145 5825 5870
+type(
+  t_class_type
+)
+ident(
+  def ct "odoc_class.ml" 145 5825 5883 "odoc_class.ml" 146 5892 5927
+)
+"odoc_class.ml" 145 5825 5872 "odoc_class.ml" 145 5825 5873
+type(
+  Types.type_expr list
+)
+"odoc_class.ml" 145 5825 5859 "odoc_class.ml" 145 5825 5875
+type(
+  cct
+)
+"odoc_class.ml" 145 5825 5854 "odoc_class.ml" 145 5825 5875
+type(
+  cct option
+)
+"odoc_class.ml" 145 5825 5840 "odoc_class.ml" 145 5825 5877
+type(
+  class_type_alias
+)
+"odoc_class.ml" 145 5825 5829 "odoc_class.ml" 145 5825 5877
+type(
+  class_type_kind
+)
+"odoc_class.ml" 145 5825 5883 "odoc_class.ml" 145 5825 5888
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_class.ml" 142 5709 5735 "odoc_class.ml" 142 5709 5740
+)
+"odoc_class.ml" 146 5892 5898 "odoc_class.ml" 146 5892 5917
+type(
+  ?trans:bool -> t_class_type -> class_element list
+)
+ident(
+  int_ref class_type_elements "odoc_class.ml" 142 5709 5713 "odoc_class.ml" 142 5709 5732
+)
+"odoc_class.ml" 146 5892 5919 "odoc_class.ml" 146 5892 5924
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_class.ml" 142 5709 5735 "odoc_class.ml" 142 5709 5740
+)
+"odoc_class.ml" 146 5892 5925 "odoc_class.ml" 146 5892 5927
+type(
+  t_class_type
+)
+ident(
+  int_ref ct "odoc_class.ml" 145 5825 5868 "odoc_class.ml" 145 5825 5870
+)
+"odoc_class.ml" 146 5892 5898 "odoc_class.ml" 146 5892 5927
+call(
+  tail
+)
+type(
+  class_element list
+)
+"odoc_class.ml" 147 5928 5966 "odoc_class.ml" 147 5928 5967
+type(
+  t_class
+)
+ident(
+  def c "odoc_class.ml" 147 5928 5976 "odoc_class.ml" 148 5985 6014
+)
+"odoc_class.ml" 147 5928 5962 "odoc_class.ml" 147 5928 5968
+type(
+  cct
+)
+"odoc_class.ml" 147 5928 5957 "odoc_class.ml" 147 5928 5968
+type(
+  cct option
+)
+"odoc_class.ml" 147 5928 5943 "odoc_class.ml" 147 5928 5970
+type(
+  class_type_alias
+)
+"odoc_class.ml" 147 5928 5932 "odoc_class.ml" 147 5928 5970
+type(
+  class_type_kind
+)
+"odoc_class.ml" 147 5928 5976 "odoc_class.ml" 147 5928 5981
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_class.ml" 142 5709 5735 "odoc_class.ml" 142 5709 5740
+)
+"odoc_class.ml" 148 5985 5991 "odoc_class.ml" 148 5985 6005
+type(
+  ?trans:bool -> t_class -> class_element list
+)
+ident(
+  int_ref class_elements "odoc_class.ml" 110 4667 4675 "odoc_class.ml" 110 4667 4689
+)
+"odoc_class.ml" 148 5985 6007 "odoc_class.ml" 148 5985 6012
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_class.ml" 142 5709 5735 "odoc_class.ml" 142 5709 5740
+)
+"odoc_class.ml" 148 5985 6013 "odoc_class.ml" 148 5985 6014
+type(
+  t_class
+)
+ident(
+  int_ref c "odoc_class.ml" 147 5928 5966 "odoc_class.ml" 147 5928 5967
+)
+"odoc_class.ml" 148 5985 5991 "odoc_class.ml" 148 5985 6014
+call(
+  tail
+)
+type(
+  class_element list
+)
+"odoc_class.ml" 149 6015 6030 "odoc_class.ml" 149 6015 6031
+type(
+  class_type_alias
+)
+"odoc_class.ml" 149 6015 6019 "odoc_class.ml" 149 6015 6031
+type(
+  class_type_kind
+)
+"odoc_class.ml" 150 6035 6041 "odoc_class.ml" 150 6035 6043
+type(
+  class_element list
+)
+"odoc_class.ml" 143 5753 5755 "odoc_class.ml" 150 6035 6043
+type(
+  class_element list
+)
+"odoc_class.ml" 153 6089 6093 "odoc_class.ml" 153 6089 6109
+type(
+  ?trans:bool -> t_class -> Odoc_value.t_attribute list
+)
+ident(
+  def class_attributes "odoc_class.ml" 166 6358 6358 "odoc_class.ml" 1 0 -1
+)
+"odoc_class.ml" 153 6089 6112 "odoc_class.ml" 153 6089 6117
+type(
+  bool
+)
+"odoc_class.ml" 153 6089 6118 "odoc_class.ml" 153 6089 6122
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_class.ml" 153 6089 6118 "odoc_class.ml" 153 6089 6122
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_class.ml" 153 6089 6124 "odoc_class.ml" 153 6089 6126
+type(
+  t_class
+)
+ident(
+  def cl "odoc_class.ml" 154 6129 6131 "odoc_class.ml" 163 6285 6315
+)
+"odoc_class.ml" 154 6129 6131 "odoc_class.ml" 154 6129 6145
+type(
+  (Odoc_value.t_attribute list ->
+   class_element -> Odoc_value.t_attribute list) ->
+  Odoc_value.t_attribute list ->
+  class_element list -> Odoc_value.t_attribute list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_class.ml" 155 6146 6155 "odoc_class.ml" 155 6146 6158
+type(
+  Odoc_value.t_attribute list
+)
+ident(
+  def acc "odoc_class.ml" 155 6146 6162 "odoc_class.ml" 160 6258 6271
+)
+"odoc_class.ml" 155 6146 6166 "odoc_class.ml" 155 6146 6169
+type(
+  class_element
+)
+ident(
+  def ele "odoc_class.ml" 156 6173 6179 "odoc_class.ml" 160 6258 6271
+)
+"odoc_class.ml" 156 6173 6185 "odoc_class.ml" 156 6173 6188
+type(
+  class_element
+)
+ident(
+  int_ref ele "odoc_class.ml" 155 6146 6166 "odoc_class.ml" 155 6146 6169
+)
+"odoc_class.ml" 157 6194 6218 "odoc_class.ml" 157 6194 6219
+type(
+  Odoc_value.t_attribute
+)
+ident(
+  def a "odoc_class.ml" 158 6223 6233 "odoc_class.ml" 158 6223 6244
+)
+"odoc_class.ml" 157 6194 6202 "odoc_class.ml" 157 6194 6219
+type(
+  class_element
+)
+"odoc_class.ml" 158 6223 6233 "odoc_class.ml" 158 6223 6236
+type(
+  Odoc_value.t_attribute list
+)
+ident(
+  int_ref acc "odoc_class.ml" 155 6146 6155 "odoc_class.ml" 155 6146 6158
+)
+"odoc_class.ml" 158 6223 6237 "odoc_class.ml" 158 6223 6238
+type(
+  Odoc_value.t_attribute list ->
+  Odoc_value.t_attribute list -> Odoc_value.t_attribute list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_class.ml" 158 6223 6241 "odoc_class.ml" 158 6223 6242
+type(
+  Odoc_value.t_attribute
+)
+ident(
+  int_ref a "odoc_class.ml" 157 6194 6218 "odoc_class.ml" 157 6194 6219
+)
+"odoc_class.ml" 158 6223 6239 "odoc_class.ml" 158 6223 6244
+type(
+  Odoc_value.t_attribute list
+)
+"odoc_class.ml" 158 6223 6233 "odoc_class.ml" 158 6223 6244
+call(
+  tail
+)
+type(
+  Odoc_value.t_attribute list
+)
+"odoc_class.ml" 159 6245 6253 "odoc_class.ml" 159 6245 6254
+type(
+  class_element
+)
+"odoc_class.ml" 160 6258 6268 "odoc_class.ml" 160 6258 6271
+type(
+  Odoc_value.t_attribute list
+)
+ident(
+  int_ref acc "odoc_class.ml" 155 6146 6155 "odoc_class.ml" 155 6146 6158
+)
+"odoc_class.ml" 156 6173 6179 "odoc_class.ml" 160 6258 6271
+type(
+  Odoc_value.t_attribute list
+)
+"odoc_class.ml" 155 6146 6162 "odoc_class.ml" 160 6258 6271
+type(
+  class_element -> Odoc_value.t_attribute list
+)
+"odoc_class.ml" 155 6146 6150 "odoc_class.ml" 161 6272 6277
+type(
+  Odoc_value.t_attribute list -> class_element -> Odoc_value.t_attribute list
+)
+"odoc_class.ml" 162 6278 6282 "odoc_class.ml" 162 6278 6284
+type(
+  Odoc_value.t_attribute list
+)
+"odoc_class.ml" 163 6285 6290 "odoc_class.ml" 163 6285 6304
+type(
+  ?trans:bool -> t_class -> class_element list
+)
+ident(
+  int_ref class_elements "odoc_class.ml" 110 4667 4675 "odoc_class.ml" 110 4667 4689
+)
+"odoc_class.ml" 163 6285 6306 "odoc_class.ml" 163 6285 6311
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_class.ml" 153 6089 6112 "odoc_class.ml" 153 6089 6117
+)
+"odoc_class.ml" 163 6285 6312 "odoc_class.ml" 163 6285 6314
+type(
+  t_class
+)
+ident(
+  int_ref cl "odoc_class.ml" 153 6089 6124 "odoc_class.ml" 153 6089 6126
+)
+"odoc_class.ml" 163 6285 6289 "odoc_class.ml" 163 6285 6315
+call(
+  stack
+)
+type(
+  class_element list
+)
+"odoc_class.ml" 154 6129 6131 "odoc_class.ml" 163 6285 6315
+call(
+  tail
+)
+type(
+  Odoc_value.t_attribute list
+)
+"odoc_class.ml" 166 6358 6362 "odoc_class.ml" 166 6358 6375
+type(
+  ?trans:bool -> t_class -> Odoc_value.t_method list
+)
+ident(
+  def class_methods "odoc_class.ml" 179 6622 6622 "odoc_class.ml" 1 0 -1
+)
+"odoc_class.ml" 166 6358 6378 "odoc_class.ml" 166 6358 6383
+type(
+  bool
+)
+"odoc_class.ml" 166 6358 6384 "odoc_class.ml" 166 6358 6388
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_class.ml" 166 6358 6384 "odoc_class.ml" 166 6358 6388
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_class.ml" 166 6358 6390 "odoc_class.ml" 166 6358 6392
+type(
+  t_class
+)
+ident(
+  def cl "odoc_class.ml" 167 6395 6397 "odoc_class.ml" 176 6548 6578
+)
+"odoc_class.ml" 167 6395 6397 "odoc_class.ml" 167 6395 6411
+type(
+  (Odoc_value.t_method list -> class_element -> Odoc_value.t_method list) ->
+  Odoc_value.t_method list -> class_element list -> Odoc_value.t_method list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_class.ml" 168 6412 6421 "odoc_class.ml" 168 6412 6424
+type(
+  Odoc_value.t_method list
+)
+ident(
+  def acc "odoc_class.ml" 168 6412 6428 "odoc_class.ml" 173 6521 6534
+)
+"odoc_class.ml" 168 6412 6432 "odoc_class.ml" 168 6412 6435
+type(
+  class_element
+)
+ident(
+  def ele "odoc_class.ml" 169 6439 6445 "odoc_class.ml" 173 6521 6534
+)
+"odoc_class.ml" 169 6439 6451 "odoc_class.ml" 169 6439 6454
+type(
+  class_element
+)
+ident(
+  int_ref ele "odoc_class.ml" 168 6412 6432 "odoc_class.ml" 168 6412 6435
+)
+"odoc_class.ml" 170 6460 6481 "odoc_class.ml" 170 6460 6482
+type(
+  Odoc_value.t_method
+)
+ident(
+  def m "odoc_class.ml" 171 6486 6496 "odoc_class.ml" 171 6486 6507
+)
+"odoc_class.ml" 170 6460 6468 "odoc_class.ml" 170 6460 6482
+type(
+  class_element
+)
+"odoc_class.ml" 171 6486 6496 "odoc_class.ml" 171 6486 6499
+type(
+  Odoc_value.t_method list
+)
+ident(
+  int_ref acc "odoc_class.ml" 168 6412 6421 "odoc_class.ml" 168 6412 6424
+)
+"odoc_class.ml" 171 6486 6500 "odoc_class.ml" 171 6486 6501
+type(
+  Odoc_value.t_method list ->
+  Odoc_value.t_method list -> Odoc_value.t_method list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_class.ml" 171 6486 6504 "odoc_class.ml" 171 6486 6505
+type(
+  Odoc_value.t_method
+)
+ident(
+  int_ref m "odoc_class.ml" 170 6460 6481 "odoc_class.ml" 170 6460 6482
+)
+"odoc_class.ml" 171 6486 6502 "odoc_class.ml" 171 6486 6507
+type(
+  Odoc_value.t_method list
+)
+"odoc_class.ml" 171 6486 6496 "odoc_class.ml" 171 6486 6507
+call(
+  tail
+)
+type(
+  Odoc_value.t_method list
+)
+"odoc_class.ml" 172 6508 6516 "odoc_class.ml" 172 6508 6517
+type(
+  class_element
+)
+"odoc_class.ml" 173 6521 6531 "odoc_class.ml" 173 6521 6534
+type(
+  Odoc_value.t_method list
+)
+ident(
+  int_ref acc "odoc_class.ml" 168 6412 6421 "odoc_class.ml" 168 6412 6424
+)
+"odoc_class.ml" 169 6439 6445 "odoc_class.ml" 173 6521 6534
+type(
+  Odoc_value.t_method list
+)
+"odoc_class.ml" 168 6412 6428 "odoc_class.ml" 173 6521 6534
+type(
+  class_element -> Odoc_value.t_method list
+)
+"odoc_class.ml" 168 6412 6416 "odoc_class.ml" 174 6535 6540
+type(
+  Odoc_value.t_method list -> class_element -> Odoc_value.t_method list
+)
+"odoc_class.ml" 175 6541 6545 "odoc_class.ml" 175 6541 6547
+type(
+  Odoc_value.t_method list
+)
+"odoc_class.ml" 176 6548 6553 "odoc_class.ml" 176 6548 6567
+type(
+  ?trans:bool -> t_class -> class_element list
+)
+ident(
+  int_ref class_elements "odoc_class.ml" 110 4667 4675 "odoc_class.ml" 110 4667 4689
+)
+"odoc_class.ml" 176 6548 6569 "odoc_class.ml" 176 6548 6574
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_class.ml" 166 6358 6378 "odoc_class.ml" 166 6358 6383
+)
+"odoc_class.ml" 176 6548 6575 "odoc_class.ml" 176 6548 6577
+type(
+  t_class
+)
+ident(
+  int_ref cl "odoc_class.ml" 166 6358 6390 "odoc_class.ml" 166 6358 6392
+)
+"odoc_class.ml" 176 6548 6552 "odoc_class.ml" 176 6548 6578
+call(
+  stack
+)
+type(
+  class_element list
+)
+"odoc_class.ml" 167 6395 6397 "odoc_class.ml" 176 6548 6578
+call(
+  tail
+)
+type(
+  Odoc_value.t_method list
+)
+"odoc_class.ml" 179 6622 6626 "odoc_class.ml" 179 6622 6640
+type(
+  ?trans:bool -> t_class -> Odoc_types.text list
+)
+ident(
+  def class_comments "odoc_class.ml" 193 6927 6927 "odoc_class.ml" 1 0 -1
+)
+"odoc_class.ml" 179 6622 6643 "odoc_class.ml" 179 6622 6648
+type(
+  bool
+)
+"odoc_class.ml" 179 6622 6649 "odoc_class.ml" 179 6622 6653
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_class.ml" 179 6622 6649 "odoc_class.ml" 179 6622 6653
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_class.ml" 179 6622 6655 "odoc_class.ml" 179 6622 6657
+type(
+  t_class
+)
+ident(
+  def cl "odoc_class.ml" 180 6660 6662 "odoc_class.ml" 189 6814 6844
+)
+"odoc_class.ml" 180 6660 6662 "odoc_class.ml" 180 6660 6676
+type(
+  (Odoc_types.text list -> class_element -> Odoc_types.text list) ->
+  Odoc_types.text list -> class_element list -> Odoc_types.text list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_class.ml" 181 6677 6686 "odoc_class.ml" 181 6677 6689
+type(
+  Odoc_types.text list
+)
+ident(
+  def acc "odoc_class.ml" 181 6677 6693 "odoc_class.ml" 186 6787 6800
+)
+"odoc_class.ml" 181 6677 6697 "odoc_class.ml" 181 6677 6700
+type(
+  class_element
+)
+ident(
+  def ele "odoc_class.ml" 182 6704 6710 "odoc_class.ml" 186 6787 6800
+)
+"odoc_class.ml" 182 6704 6716 "odoc_class.ml" 182 6704 6719
+type(
+  class_element
+)
+ident(
+  int_ref ele "odoc_class.ml" 181 6677 6697 "odoc_class.ml" 181 6677 6700
+)
+"odoc_class.ml" 183 6725 6747 "odoc_class.ml" 183 6725 6748
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_class.ml" 184 6752 6762 "odoc_class.ml" 184 6752 6773
+)
+"odoc_class.ml" 183 6725 6733 "odoc_class.ml" 183 6725 6748
+type(
+  class_element
+)
+"odoc_class.ml" 184 6752 6762 "odoc_class.ml" 184 6752 6765
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref acc "odoc_class.ml" 181 6677 6686 "odoc_class.ml" 181 6677 6689
+)
+"odoc_class.ml" 184 6752 6766 "odoc_class.ml" 184 6752 6767
+type(
+  Odoc_types.text list -> Odoc_types.text list -> Odoc_types.text list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_class.ml" 184 6752 6770 "odoc_class.ml" 184 6752 6771
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref t "odoc_class.ml" 183 6725 6747 "odoc_class.ml" 183 6725 6748
+)
+"odoc_class.ml" 184 6752 6768 "odoc_class.ml" 184 6752 6773
+type(
+  Odoc_types.text list
+)
+"odoc_class.ml" 184 6752 6762 "odoc_class.ml" 184 6752 6773
+call(
+  tail
+)
+type(
+  Odoc_types.text list
+)
+"odoc_class.ml" 185 6774 6782 "odoc_class.ml" 185 6774 6783
+type(
+  class_element
+)
+"odoc_class.ml" 186 6787 6797 "odoc_class.ml" 186 6787 6800
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref acc "odoc_class.ml" 181 6677 6686 "odoc_class.ml" 181 6677 6689
+)
+"odoc_class.ml" 182 6704 6710 "odoc_class.ml" 186 6787 6800
+type(
+  Odoc_types.text list
+)
+"odoc_class.ml" 181 6677 6693 "odoc_class.ml" 186 6787 6800
+type(
+  class_element -> Odoc_types.text list
+)
+"odoc_class.ml" 181 6677 6681 "odoc_class.ml" 187 6801 6806
+type(
+  Odoc_types.text list -> class_element -> Odoc_types.text list
+)
+"odoc_class.ml" 188 6807 6811 "odoc_class.ml" 188 6807 6813
+type(
+  Odoc_types.text list
+)
+"odoc_class.ml" 189 6814 6819 "odoc_class.ml" 189 6814 6833
+type(
+  ?trans:bool -> t_class -> class_element list
+)
+ident(
+  int_ref class_elements "odoc_class.ml" 110 4667 4675 "odoc_class.ml" 110 4667 4689
+)
+"odoc_class.ml" 189 6814 6835 "odoc_class.ml" 189 6814 6840
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_class.ml" 179 6622 6643 "odoc_class.ml" 179 6622 6648
+)
+"odoc_class.ml" 189 6814 6841 "odoc_class.ml" 189 6814 6843
+type(
+  t_class
+)
+ident(
+  int_ref cl "odoc_class.ml" 179 6622 6655 "odoc_class.ml" 179 6622 6657
+)
+"odoc_class.ml" 189 6814 6818 "odoc_class.ml" 189 6814 6844
+call(
+  stack
+)
+type(
+  class_element list
+)
+"odoc_class.ml" 180 6660 6662 "odoc_class.ml" 189 6814 6844
+call(
+  tail
+)
+type(
+  Odoc_types.text list
+)
+"odoc_class.ml" 193 6927 6931 "odoc_class.ml" 193 6927 6959
+type(
+  t_class -> unit
+)
+ident(
+  def class_update_parameters_text "odoc_class.ml" 200 7140 7140 "odoc_class.ml" 1 0 -1
+)
+"odoc_class.ml" 193 6927 6960 "odoc_class.ml" 193 6927 6962
+type(
+  t_class
+)
+ident(
+  def cl "odoc_class.ml" 194 6965 6967 "odoc_class.ml" 197 7059 7089
+)
+"odoc_class.ml" 194 6965 6971 "odoc_class.ml" 194 6965 6972
+type(
+  Odoc_parameter.param_info -> unit
+)
+ident(
+  def f "odoc_class.ml" 197 7059 7061 "odoc_class.ml" 197 7059 7089
+)
+"odoc_class.ml" 194 6965 6973 "odoc_class.ml" 194 6965 6974
+type(
+  Odoc_parameter.param_info
+)
+ident(
+  def p "odoc_class.ml" 195 6977 6981 "odoc_class.ml" 195 6977 7053
+)
+"odoc_class.ml" 195 6977 6981 "odoc_class.ml" 195 6977 7017
+type(
+  (string -> Odoc_types.text option) -> Odoc_parameter.param_info -> unit
+)
+ident(
+  ext_ref Odoc_parameter.update_parameter_text
+)
+"odoc_class.ml" 195 6977 7019 "odoc_class.ml" 195 6977 7047
+type(
+  t_class -> string -> Odoc_types.text option
+)
+ident(
+  int_ref class_parameter_text_by_name "odoc_class.ml" 98 4387 4391 "odoc_class.ml" 98 4387 4419
+)
+"odoc_class.ml" 195 6977 7048 "odoc_class.ml" 195 6977 7050
+type(
+  t_class
+)
+ident(
+  int_ref cl "odoc_class.ml" 193 6927 6960 "odoc_class.ml" 193 6927 6962
+)
+"odoc_class.ml" 195 6977 7018 "odoc_class.ml" 195 6977 7051
+call(
+  stack
+)
+type(
+  string -> Odoc_types.text option
+)
+"odoc_class.ml" 195 6977 7052 "odoc_class.ml" 195 6977 7053
+type(
+  Odoc_parameter.param_info
+)
+ident(
+  int_ref p "odoc_class.ml" 194 6965 6973 "odoc_class.ml" 194 6965 6974
+)
+"odoc_class.ml" 195 6977 6981 "odoc_class.ml" 195 6977 7053
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_class.ml" 197 7059 7061 "odoc_class.ml" 197 7059 7070
+type(
+  (Odoc_parameter.parameter -> unit) -> Odoc_parameter.parameter list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_class.ml" 197 7059 7071 "odoc_class.ml" 197 7059 7072
+type(
+  Odoc_parameter.parameter -> unit
+)
+ident(
+  int_ref f "odoc_class.ml" 194 6965 6971 "odoc_class.ml" 194 6965 6972
+)
+"odoc_class.ml" 197 7059 7073 "odoc_class.ml" 197 7059 7075
+type(
+  t_class
+)
+ident(
+  int_ref cl "odoc_class.ml" 193 6927 6960 "odoc_class.ml" 193 6927 6962
+)
+"odoc_class.ml" 197 7059 7073 "odoc_class.ml" 197 7059 7089
+type(
+  Odoc_parameter.parameter list
+)
+"odoc_class.ml" 197 7059 7061 "odoc_class.ml" 197 7059 7089
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_class.ml" 194 6965 6967 "odoc_class.ml" 197 7059 7089
+type(
+  unit
+)
+"odoc_class.ml" 200 7140 7144 "odoc_class.ml" 200 7140 7165
+type(
+  ?trans:bool -> t_class_type -> Odoc_value.t_attribute list
+)
+ident(
+  def class_type_attributes "odoc_class.ml" 213 7426 7426 "odoc_class.ml" 1 0 -1
+)
+"odoc_class.ml" 200 7140 7168 "odoc_class.ml" 200 7140 7173
+type(
+  bool
+)
+"odoc_class.ml" 200 7140 7174 "odoc_class.ml" 200 7140 7178
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_class.ml" 200 7140 7174 "odoc_class.ml" 200 7140 7178
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_class.ml" 200 7140 7180 "odoc_class.ml" 200 7140 7183
+type(
+  t_class_type
+)
+ident(
+  def clt "odoc_class.ml" 201 7186 7188 "odoc_class.ml" 210 7342 7378
+)
+"odoc_class.ml" 201 7186 7188 "odoc_class.ml" 201 7186 7202
+type(
+  (Odoc_value.t_attribute list ->
+   class_element -> Odoc_value.t_attribute list) ->
+  Odoc_value.t_attribute list ->
+  class_element list -> Odoc_value.t_attribute list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_class.ml" 202 7203 7212 "odoc_class.ml" 202 7203 7215
+type(
+  Odoc_value.t_attribute list
+)
+ident(
+  def acc "odoc_class.ml" 202 7203 7219 "odoc_class.ml" 207 7315 7328
+)
+"odoc_class.ml" 202 7203 7223 "odoc_class.ml" 202 7203 7226
+type(
+  class_element
+)
+ident(
+  def ele "odoc_class.ml" 203 7230 7236 "odoc_class.ml" 207 7315 7328
+)
+"odoc_class.ml" 203 7230 7242 "odoc_class.ml" 203 7230 7245
+type(
+  class_element
+)
+ident(
+  int_ref ele "odoc_class.ml" 202 7203 7223 "odoc_class.ml" 202 7203 7226
+)
+"odoc_class.ml" 204 7251 7275 "odoc_class.ml" 204 7251 7276
+type(
+  Odoc_value.t_attribute
+)
+ident(
+  def a "odoc_class.ml" 205 7280 7290 "odoc_class.ml" 205 7280 7301
+)
+"odoc_class.ml" 204 7251 7259 "odoc_class.ml" 204 7251 7276
+type(
+  class_element
+)
+"odoc_class.ml" 205 7280 7290 "odoc_class.ml" 205 7280 7293
+type(
+  Odoc_value.t_attribute list
+)
+ident(
+  int_ref acc "odoc_class.ml" 202 7203 7212 "odoc_class.ml" 202 7203 7215
+)
+"odoc_class.ml" 205 7280 7294 "odoc_class.ml" 205 7280 7295
+type(
+  Odoc_value.t_attribute list ->
+  Odoc_value.t_attribute list -> Odoc_value.t_attribute list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_class.ml" 205 7280 7298 "odoc_class.ml" 205 7280 7299
+type(
+  Odoc_value.t_attribute
+)
+ident(
+  int_ref a "odoc_class.ml" 204 7251 7275 "odoc_class.ml" 204 7251 7276
+)
+"odoc_class.ml" 205 7280 7296 "odoc_class.ml" 205 7280 7301
+type(
+  Odoc_value.t_attribute list
+)
+"odoc_class.ml" 205 7280 7290 "odoc_class.ml" 205 7280 7301
+call(
+  tail
+)
+type(
+  Odoc_value.t_attribute list
+)
+"odoc_class.ml" 206 7302 7310 "odoc_class.ml" 206 7302 7311
+type(
+  class_element
+)
+"odoc_class.ml" 207 7315 7325 "odoc_class.ml" 207 7315 7328
+type(
+  Odoc_value.t_attribute list
+)
+ident(
+  int_ref acc "odoc_class.ml" 202 7203 7212 "odoc_class.ml" 202 7203 7215
+)
+"odoc_class.ml" 203 7230 7236 "odoc_class.ml" 207 7315 7328
+type(
+  Odoc_value.t_attribute list
+)
+"odoc_class.ml" 202 7203 7219 "odoc_class.ml" 207 7315 7328
+type(
+  class_element -> Odoc_value.t_attribute list
+)
+"odoc_class.ml" 202 7203 7207 "odoc_class.ml" 208 7329 7334
+type(
+  Odoc_value.t_attribute list -> class_element -> Odoc_value.t_attribute list
+)
+"odoc_class.ml" 209 7335 7339 "odoc_class.ml" 209 7335 7341
+type(
+  Odoc_value.t_attribute list
+)
+"odoc_class.ml" 210 7342 7347 "odoc_class.ml" 210 7342 7366
+type(
+  ?trans:bool -> t_class_type -> class_element list
+)
+ident(
+  int_ref class_type_elements "odoc_class.ml" 142 5709 5713 "odoc_class.ml" 142 5709 5732
+)
+"odoc_class.ml" 210 7342 7368 "odoc_class.ml" 210 7342 7373
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_class.ml" 200 7140 7168 "odoc_class.ml" 200 7140 7173
+)
+"odoc_class.ml" 210 7342 7374 "odoc_class.ml" 210 7342 7377
+type(
+  t_class_type
+)
+ident(
+  int_ref clt "odoc_class.ml" 200 7140 7180 "odoc_class.ml" 200 7140 7183
+)
+"odoc_class.ml" 210 7342 7346 "odoc_class.ml" 210 7342 7378
+call(
+  stack
+)
+type(
+  class_element list
+)
+"odoc_class.ml" 201 7186 7188 "odoc_class.ml" 210 7342 7378
+call(
+  tail
+)
+type(
+  Odoc_value.t_attribute list
+)
+"odoc_class.ml" 213 7426 7430 "odoc_class.ml" 213 7426 7448
+type(
+  ?trans:bool -> t_class_type -> Odoc_value.t_method list
+)
+ident(
+  def class_type_methods "odoc_class.ml" 226 7707 7707 "odoc_class.ml" 1 0 -1
+)
+"odoc_class.ml" 213 7426 7451 "odoc_class.ml" 213 7426 7456
+type(
+  bool
+)
+"odoc_class.ml" 213 7426 7457 "odoc_class.ml" 213 7426 7461
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_class.ml" 213 7426 7457 "odoc_class.ml" 213 7426 7461
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_class.ml" 213 7426 7463 "odoc_class.ml" 213 7426 7466
+type(
+  t_class_type
+)
+ident(
+  def clt "odoc_class.ml" 214 7469 7471 "odoc_class.ml" 223 7622 7658
+)
+"odoc_class.ml" 214 7469 7471 "odoc_class.ml" 214 7469 7485
+type(
+  (Odoc_value.t_method list -> class_element -> Odoc_value.t_method list) ->
+  Odoc_value.t_method list -> class_element list -> Odoc_value.t_method list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_class.ml" 215 7486 7495 "odoc_class.ml" 215 7486 7498
+type(
+  Odoc_value.t_method list
+)
+ident(
+  def acc "odoc_class.ml" 215 7486 7502 "odoc_class.ml" 220 7595 7608
+)
+"odoc_class.ml" 215 7486 7506 "odoc_class.ml" 215 7486 7509
+type(
+  class_element
+)
+ident(
+  def ele "odoc_class.ml" 216 7513 7519 "odoc_class.ml" 220 7595 7608
+)
+"odoc_class.ml" 216 7513 7525 "odoc_class.ml" 216 7513 7528
+type(
+  class_element
+)
+ident(
+  int_ref ele "odoc_class.ml" 215 7486 7506 "odoc_class.ml" 215 7486 7509
+)
+"odoc_class.ml" 217 7534 7555 "odoc_class.ml" 217 7534 7556
+type(
+  Odoc_value.t_method
+)
+ident(
+  def m "odoc_class.ml" 218 7560 7570 "odoc_class.ml" 218 7560 7581
+)
+"odoc_class.ml" 217 7534 7542 "odoc_class.ml" 217 7534 7556
+type(
+  class_element
+)
+"odoc_class.ml" 218 7560 7570 "odoc_class.ml" 218 7560 7573
+type(
+  Odoc_value.t_method list
+)
+ident(
+  int_ref acc "odoc_class.ml" 215 7486 7495 "odoc_class.ml" 215 7486 7498
+)
+"odoc_class.ml" 218 7560 7574 "odoc_class.ml" 218 7560 7575
+type(
+  Odoc_value.t_method list ->
+  Odoc_value.t_method list -> Odoc_value.t_method list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_class.ml" 218 7560 7578 "odoc_class.ml" 218 7560 7579
+type(
+  Odoc_value.t_method
+)
+ident(
+  int_ref m "odoc_class.ml" 217 7534 7555 "odoc_class.ml" 217 7534 7556
+)
+"odoc_class.ml" 218 7560 7576 "odoc_class.ml" 218 7560 7581
+type(
+  Odoc_value.t_method list
+)
+"odoc_class.ml" 218 7560 7570 "odoc_class.ml" 218 7560 7581
+call(
+  tail
+)
+type(
+  Odoc_value.t_method list
+)
+"odoc_class.ml" 219 7582 7590 "odoc_class.ml" 219 7582 7591
+type(
+  class_element
+)
+"odoc_class.ml" 220 7595 7605 "odoc_class.ml" 220 7595 7608
+type(
+  Odoc_value.t_method list
+)
+ident(
+  int_ref acc "odoc_class.ml" 215 7486 7495 "odoc_class.ml" 215 7486 7498
+)
+"odoc_class.ml" 216 7513 7519 "odoc_class.ml" 220 7595 7608
+type(
+  Odoc_value.t_method list
+)
+"odoc_class.ml" 215 7486 7502 "odoc_class.ml" 220 7595 7608
+type(
+  class_element -> Odoc_value.t_method list
+)
+"odoc_class.ml" 215 7486 7490 "odoc_class.ml" 221 7609 7614
+type(
+  Odoc_value.t_method list -> class_element -> Odoc_value.t_method list
+)
+"odoc_class.ml" 222 7615 7619 "odoc_class.ml" 222 7615 7621
+type(
+  Odoc_value.t_method list
+)
+"odoc_class.ml" 223 7622 7627 "odoc_class.ml" 223 7622 7646
+type(
+  ?trans:bool -> t_class_type -> class_element list
+)
+ident(
+  int_ref class_type_elements "odoc_class.ml" 142 5709 5713 "odoc_class.ml" 142 5709 5732
+)
+"odoc_class.ml" 223 7622 7648 "odoc_class.ml" 223 7622 7653
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_class.ml" 213 7426 7451 "odoc_class.ml" 213 7426 7456
+)
+"odoc_class.ml" 223 7622 7654 "odoc_class.ml" 223 7622 7657
+type(
+  t_class_type
+)
+ident(
+  int_ref clt "odoc_class.ml" 213 7426 7463 "odoc_class.ml" 213 7426 7466
+)
+"odoc_class.ml" 223 7622 7626 "odoc_class.ml" 223 7622 7658
+call(
+  stack
+)
+type(
+  class_element list
+)
+"odoc_class.ml" 214 7469 7471 "odoc_class.ml" 223 7622 7658
+call(
+  tail
+)
+type(
+  Odoc_value.t_method list
+)
+"odoc_class.ml" 226 7707 7711 "odoc_class.ml" 226 7707 7730
+type(
+  ?trans:bool -> t_class_type -> Odoc_types.text list
+)
+ident(
+  def class_type_comments "odoc_class.ml" 240 8044 8044 "odoc_class.ml" 1 0 -1
+)
+"odoc_class.ml" 226 7707 7733 "odoc_class.ml" 226 7707 7738
+type(
+  bool
+)
+"odoc_class.ml" 226 7707 7739 "odoc_class.ml" 226 7707 7743
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_class.ml" 226 7707 7739 "odoc_class.ml" 226 7707 7743
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_class.ml" 226 7707 7745 "odoc_class.ml" 226 7707 7748
+type(
+  t_class_type
+)
+ident(
+  def clt "odoc_class.ml" 227 7751 7753 "odoc_class.ml" 236 7905 7941
+)
+"odoc_class.ml" 227 7751 7753 "odoc_class.ml" 227 7751 7767
+type(
+  (Odoc_types.text list -> class_element -> Odoc_types.text list) ->
+  Odoc_types.text list -> class_element list -> Odoc_types.text list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_class.ml" 228 7768 7777 "odoc_class.ml" 228 7768 7780
+type(
+  Odoc_types.text list
+)
+ident(
+  def acc "odoc_class.ml" 228 7768 7784 "odoc_class.ml" 233 7878 7891
+)
+"odoc_class.ml" 228 7768 7788 "odoc_class.ml" 228 7768 7791
+type(
+  class_element
+)
+ident(
+  def ele "odoc_class.ml" 229 7795 7801 "odoc_class.ml" 233 7878 7891
+)
+"odoc_class.ml" 229 7795 7807 "odoc_class.ml" 229 7795 7810
+type(
+  class_element
+)
+ident(
+  int_ref ele "odoc_class.ml" 228 7768 7788 "odoc_class.ml" 228 7768 7791
+)
+"odoc_class.ml" 230 7816 7838 "odoc_class.ml" 230 7816 7839
+type(
+  Odoc_types.text
+)
+ident(
+  def m "odoc_class.ml" 231 7843 7853 "odoc_class.ml" 231 7843 7864
+)
+"odoc_class.ml" 230 7816 7824 "odoc_class.ml" 230 7816 7839
+type(
+  class_element
+)
+"odoc_class.ml" 231 7843 7853 "odoc_class.ml" 231 7843 7856
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref acc "odoc_class.ml" 228 7768 7777 "odoc_class.ml" 228 7768 7780
+)
+"odoc_class.ml" 231 7843 7857 "odoc_class.ml" 231 7843 7858
+type(
+  Odoc_types.text list -> Odoc_types.text list -> Odoc_types.text list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_class.ml" 231 7843 7861 "odoc_class.ml" 231 7843 7862
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref m "odoc_class.ml" 230 7816 7838 "odoc_class.ml" 230 7816 7839
+)
+"odoc_class.ml" 231 7843 7859 "odoc_class.ml" 231 7843 7864
+type(
+  Odoc_types.text list
+)
+"odoc_class.ml" 231 7843 7853 "odoc_class.ml" 231 7843 7864
+call(
+  tail
+)
+type(
+  Odoc_types.text list
+)
+"odoc_class.ml" 232 7865 7873 "odoc_class.ml" 232 7865 7874
+type(
+  class_element
+)
+"odoc_class.ml" 233 7878 7888 "odoc_class.ml" 233 7878 7891
+type(
+  Odoc_types.text list
+)
+ident(
+  int_ref acc "odoc_class.ml" 228 7768 7777 "odoc_class.ml" 228 7768 7780
+)
+"odoc_class.ml" 229 7795 7801 "odoc_class.ml" 233 7878 7891
+type(
+  Odoc_types.text list
+)
+"odoc_class.ml" 228 7768 7784 "odoc_class.ml" 233 7878 7891
+type(
+  class_element -> Odoc_types.text list
+)
+"odoc_class.ml" 228 7768 7772 "odoc_class.ml" 234 7892 7897
+type(
+  Odoc_types.text list -> class_element -> Odoc_types.text list
+)
+"odoc_class.ml" 235 7898 7902 "odoc_class.ml" 235 7898 7904
+type(
+  Odoc_types.text list
+)
+"odoc_class.ml" 236 7905 7910 "odoc_class.ml" 236 7905 7929
+type(
+  ?trans:bool -> t_class_type -> class_element list
+)
+ident(
+  int_ref class_type_elements "odoc_class.ml" 142 5709 5713 "odoc_class.ml" 142 5709 5732
+)
+"odoc_class.ml" 236 7905 7931 "odoc_class.ml" 236 7905 7936
+type(
+  bool
+)
+ident(
+  int_ref trans "odoc_class.ml" 226 7707 7733 "odoc_class.ml" 226 7707 7738
+)
+"odoc_class.ml" 236 7905 7937 "odoc_class.ml" 236 7905 7940
+type(
+  t_class_type
+)
+ident(
+  int_ref clt "odoc_class.ml" 226 7707 7745 "odoc_class.ml" 226 7707 7748
+)
+"odoc_class.ml" 236 7905 7909 "odoc_class.ml" 236 7905 7941
+call(
+  stack
+)
+type(
+  class_element list
+)
+"odoc_class.ml" 227 7751 7753 "odoc_class.ml" 236 7905 7941
+call(
+  tail
+)
+type(
+  Odoc_types.text list
+)
+"odoc_class.ml" 240 8044 8048 "odoc_class.ml" 240 8044 8081
+type(
+  t_class_type -> string -> Odoc_types.text option
+)
+ident(
+  def class_type_parameter_text_by_name "odoc_class.ml" 249 8266 8280 "odoc_class.ml" 1 0 -1
+)
+"odoc_class.ml" 240 8044 8082 "odoc_class.ml" 240 8044 8085
+type(
+  t_class_type
+)
+ident(
+  def clt "odoc_class.ml" 240 8044 8086 "odoc_class.ml" 249 8266 8280
+)
+"odoc_class.ml" 240 8044 8086 "odoc_class.ml" 240 8044 8091
+type(
+  string
+)
+ident(
+  def label "odoc_class.ml" 241 8094 8096 "odoc_class.ml" 249 8266 8280
+)
+"odoc_class.ml" 241 8094 8102 "odoc_class.ml" 241 8094 8105
+type(
+  t_class_type
+)
+ident(
+  int_ref clt "odoc_class.ml" 240 8044 8082 "odoc_class.ml" 240 8044 8085
+)
+"odoc_class.ml" 241 8094 8102 "odoc_class.ml" 241 8094 8114
+type(
+  Odoc_types.info option
+)
+"odoc_class.ml" 242 8120 8124 "odoc_class.ml" 242 8120 8128
+type(
+  Odoc_types.info option
+)
+"odoc_class.ml" 242 8120 8132 "odoc_class.ml" 242 8120 8136
+type(
+  Odoc_types.text option
+)
+"odoc_class.ml" 243 8137 8146 "odoc_class.ml" 243 8137 8147
+type(
+  Odoc_types.info
+)
+ident(
+  def i "odoc_class.ml" 244 8151 8157 "odoc_class.ml" 249 8266 8280
+)
+"odoc_class.ml" 243 8137 8141 "odoc_class.ml" 243 8137 8147
+type(
+  Odoc_types.info option
+)
+"odoc_class.ml" 245 8161 8173 "odoc_class.ml" 245 8161 8174
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_class.ml" 246 8219 8227 "odoc_class.ml" 246 8219 8233
+)
+"odoc_class.ml" 245 8161 8177 "odoc_class.ml" 245 8161 8187
+type(
+  string -> Odoc_types.param list -> Odoc_types.text
+)
+ident(
+  ext_ref List.assoc
+)
+"odoc_class.ml" 245 8161 8188 "odoc_class.ml" 245 8161 8193
+type(
+  string
+)
+ident(
+  int_ref label "odoc_class.ml" 240 8044 8086 "odoc_class.ml" 240 8044 8091
+)
+"odoc_class.ml" 245 8161 8194 "odoc_class.ml" 245 8161 8195
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref i "odoc_class.ml" 243 8137 8146 "odoc_class.ml" 243 8137 8147
+)
+"odoc_class.ml" 245 8161 8194 "odoc_class.ml" 245 8161 8215
+type(
+  Odoc_types.param list
+)
+"odoc_class.ml" 245 8161 8177 "odoc_class.ml" 245 8161 8215
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+"odoc_class.ml" 246 8219 8232 "odoc_class.ml" 246 8219 8233
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref t "odoc_class.ml" 245 8161 8173 "odoc_class.ml" 245 8161 8174
+)
+"odoc_class.ml" 246 8219 8227 "odoc_class.ml" 246 8219 8233
+type(
+  Odoc_types.text option
+)
+"odoc_class.ml" 245 8161 8169 "odoc_class.ml" 246 8219 8233
+type(
+  Odoc_types.text option
+)
+"odoc_class.ml" 248 8245 8253 "odoc_class.ml" 248 8245 8262
+type(
+  exn
+)
+"odoc_class.ml" 249 8266 8276 "odoc_class.ml" 249 8266 8280
+type(
+  Odoc_types.text option
+)
+"odoc_class.ml" 244 8151 8157 "odoc_class.ml" 249 8266 8280
+type(
+  Odoc_types.text option
+)
+"odoc_class.ml" 241 8094 8096 "odoc_class.ml" 249 8266 8280
+type(
+  Odoc_types.text option
+)

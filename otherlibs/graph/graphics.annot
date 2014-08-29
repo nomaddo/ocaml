@@ -1,0 +1,5077 @@
+"graphics.ml" 19 957 959 "graphics.ml" 19 957 986
+type(
+  string -> exn -> unit
+)
+ident(
+  ext_ref Callback.register_exception
+)
+"graphics.ml" 19 957 987 "graphics.ml" 19 957 1013
+type(
+  string
+)
+"graphics.ml" 19 957 1031 "graphics.ml" 19 957 1033
+type(
+  string
+)
+"graphics.ml" 19 957 1014 "graphics.ml" 19 957 1034
+type(
+  exn
+)
+"graphics.ml" 19 957 959 "graphics.ml" 19 957 1034
+call(
+  stack
+)
+type(
+  unit
+)
+"graphics.ml" 26 1285 1289 "graphics.ml" 26 1285 1304
+type(
+  string -> unit
+)
+ident(
+  def unix_open_graph "graphics.ml" 30 1402 1402 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 26 1285 1305 "graphics.ml" 26 1285 1308
+type(
+  string
+)
+ident(
+  def arg "graphics.ml" 27 1311 1313 "graphics.ml" 28 1380 1400
+)
+"graphics.ml" 27 1311 1313 "graphics.ml" 27 1311 1327
+type(
+  int -> Sys.signal_behavior -> unit
+)
+ident(
+  ext_ref Sys.set_signal
+)
+"graphics.ml" 27 1311 1329 "graphics.ml" 27 1311 1341
+type(
+  unit -> int
+)
+ident(
+  int_ref sigio_signal "graphics.ml" 23 1162 1162 "graphics.ml" 23 1162 1221
+)
+"graphics.ml" 27 1311 1341 "graphics.ml" 27 1311 1343
+type(
+  unit
+)
+"graphics.ml" 27 1311 1328 "graphics.ml" 27 1311 1344
+type(
+  int
+)
+"graphics.ml" 27 1311 1364 "graphics.ml" 27 1311 1377
+type(
+  int -> unit
+)
+ident(
+  int_ref sigio_handler "graphics.ml" 24 1222 1222 "graphics.ml" 24 1222 1283
+)
+"graphics.ml" 27 1311 1345 "graphics.ml" 27 1311 1378
+type(
+  Sys.signal_behavior
+)
+"graphics.ml" 27 1311 1313 "graphics.ml" 27 1311 1378
+call(
+  stack
+)
+type(
+  unit
+)
+"graphics.ml" 28 1380 1382 "graphics.ml" 28 1380 1396
+type(
+  string -> unit
+)
+ident(
+  int_ref raw_open_graph "graphics.ml" 21 1036 1036 "graphics.ml" 21 1036 1098
+)
+"graphics.ml" 28 1380 1397 "graphics.ml" 28 1380 1400
+type(
+  string
+)
+ident(
+  int_ref arg "graphics.ml" 26 1285 1305 "graphics.ml" 26 1285 1308
+)
+"graphics.ml" 28 1380 1382 "graphics.ml" 28 1380 1400
+type(
+  unit
+)
+"graphics.ml" 27 1311 1313 "graphics.ml" 28 1380 1400
+type(
+  unit
+)
+"graphics.ml" 30 1402 1406 "graphics.ml" 30 1402 1422
+type(
+  unit -> unit
+)
+ident(
+  def unix_close_graph "graphics.ml" 34 1503 1503 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 30 1402 1423 "graphics.ml" 30 1402 1425
+type(
+  unit
+)
+"graphics.ml" 31 1428 1430 "graphics.ml" 31 1428 1444
+type(
+  int -> Sys.signal_behavior -> unit
+)
+ident(
+  ext_ref Sys.set_signal
+)
+"graphics.ml" 31 1428 1446 "graphics.ml" 31 1428 1458
+type(
+  unit -> int
+)
+ident(
+  int_ref sigio_signal "graphics.ml" 23 1162 1162 "graphics.ml" 23 1162 1221
+)
+"graphics.ml" 31 1428 1458 "graphics.ml" 31 1428 1460
+type(
+  unit
+)
+"graphics.ml" 31 1428 1445 "graphics.ml" 31 1428 1461
+type(
+  int
+)
+"graphics.ml" 31 1428 1462 "graphics.ml" 31 1428 1479
+type(
+  Sys.signal_behavior
+)
+"graphics.ml" 31 1428 1430 "graphics.ml" 31 1428 1479
+call(
+  stack
+)
+type(
+  unit
+)
+"graphics.ml" 32 1481 1483 "graphics.ml" 32 1481 1498
+type(
+  unit -> unit
+)
+ident(
+  int_ref raw_close_graph "graphics.ml" 22 1099 1099 "graphics.ml" 22 1099 1161
+)
+"graphics.ml" 32 1481 1499 "graphics.ml" 32 1481 1501
+type(
+  unit
+)
+"graphics.ml" 32 1481 1483 "graphics.ml" 32 1481 1501
+type(
+  unit
+)
+"graphics.ml" 31 1428 1430 "graphics.ml" 32 1481 1501
+type(
+  unit
+)
+"graphics.ml" 34 1503 1508 "graphics.ml" 34 1503 1518
+type(
+  string -> unit
+)
+ident(
+  def open_graph "graphics.ml" 41 1787 1787 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 34 1503 1520 "graphics.ml" 34 1503 1531
+type(
+  unit -> unit
+)
+ident(
+  def close_graph "graphics.ml" 41 1787 1787 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 34 1503 1507 "graphics.ml" 34 1503 1532
+type(
+  (string -> unit) * (unit -> unit)
+)
+"graphics.ml" 35 1535 1543 "graphics.ml" 35 1535 1554
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"graphics.ml" 36 1560 1564 "graphics.ml" 36 1560 1570
+type(
+  string
+)
+"graphics.ml" 36 1560 1573 "graphics.ml" 36 1560 1581
+type(
+  string
+)
+"graphics.ml" 36 1560 1564 "graphics.ml" 36 1560 1581
+type(
+  string
+)
+"graphics.ml" 36 1560 1586 "graphics.ml" 36 1560 1601
+type(
+  string -> unit
+)
+ident(
+  int_ref unix_open_graph "graphics.ml" 26 1285 1289 "graphics.ml" 26 1285 1304
+)
+"graphics.ml" 36 1560 1603 "graphics.ml" 36 1560 1619
+type(
+  unit -> unit
+)
+ident(
+  int_ref unix_close_graph "graphics.ml" 30 1402 1406 "graphics.ml" 30 1402 1422
+)
+"graphics.ml" 36 1560 1585 "graphics.ml" 36 1560 1620
+type(
+  (string -> unit) * (unit -> unit)
+)
+"graphics.ml" 37 1621 1625 "graphics.ml" 37 1621 1632
+type(
+  string
+)
+"graphics.ml" 37 1621 1637 "graphics.ml" 37 1621 1651
+type(
+  string -> unit
+)
+ident(
+  int_ref raw_open_graph "graphics.ml" 21 1036 1036 "graphics.ml" 21 1036 1098
+)
+"graphics.ml" 37 1621 1653 "graphics.ml" 37 1621 1668
+type(
+  unit -> unit
+)
+ident(
+  int_ref raw_close_graph "graphics.ml" 22 1099 1099 "graphics.ml" 22 1099 1161
+)
+"graphics.ml" 37 1621 1636 "graphics.ml" 37 1621 1669
+type(
+  (string -> unit) * (unit -> unit)
+)
+"graphics.ml" 38 1670 1674 "graphics.ml" 38 1670 1681
+type(
+  string
+)
+"graphics.ml" 38 1670 1686 "graphics.ml" 38 1670 1700
+type(
+  string -> unit
+)
+ident(
+  int_ref raw_open_graph "graphics.ml" 21 1036 1036 "graphics.ml" 21 1036 1098
+)
+"graphics.ml" 38 1670 1702 "graphics.ml" 38 1670 1717
+type(
+  unit -> unit
+)
+ident(
+  int_ref raw_close_graph "graphics.ml" 22 1099 1099 "graphics.ml" 22 1099 1161
+)
+"graphics.ml" 38 1670 1685 "graphics.ml" 38 1670 1718
+type(
+  (string -> unit) * (unit -> unit)
+)
+"graphics.ml" 39 1719 1723 "graphics.ml" 39 1719 1724
+type(
+  string
+)
+"graphics.ml" 39 1719 1728 "graphics.ml" 39 1719 1739
+type(
+  string -> (string -> unit) * (unit -> unit)
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"graphics.ml" 39 1719 1741 "graphics.ml" 39 1719 1770
+type(
+  string
+)
+"graphics.ml" 39 1719 1771 "graphics.ml" 39 1719 1772
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"graphics.ml" 39 1719 1773 "graphics.ml" 39 1719 1784
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"graphics.ml" 39 1719 1740 "graphics.ml" 39 1719 1785
+call(
+  stack
+)
+type(
+  string
+)
+"graphics.ml" 39 1719 1728 "graphics.ml" 39 1719 1785
+call(
+  stack
+)
+type(
+  (string -> unit) * (unit -> unit)
+)
+"graphics.ml" 35 1535 1537 "graphics.ml" 39 1719 1785
+type(
+  (string -> unit) * (unit -> unit)
+)
+"graphics.ml" 53 2299 2303 "graphics.ml" 53 2299 2319
+type(
+  bool -> unit
+)
+ident(
+  def auto_synchronize "graphics.ml" 61 2468 2468 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 54 2331 2335 "graphics.ml" 54 2331 2339
+type(
+  bool
+)
+"graphics.ml" 54 2331 2343 "graphics.ml" 54 2331 2355
+type(
+  bool -> unit
+)
+ident(
+  int_ref display_mode "graphics.ml" 49 2112 2112 "graphics.ml" 49 2112 2173
+)
+"graphics.ml" 54 2331 2356 "graphics.ml" 54 2331 2360
+type(
+  bool
+)
+"graphics.ml" 54 2331 2343 "graphics.ml" 54 2331 2360
+type(
+  unit
+)
+"graphics.ml" 54 2331 2362 "graphics.ml" 54 2331 2375
+type(
+  bool -> unit
+)
+ident(
+  int_ref remember_mode "graphics.ml" 50 2174 2174 "graphics.ml" 50 2174 2237
+)
+"graphics.ml" 54 2331 2376 "graphics.ml" 54 2331 2380
+type(
+  bool
+)
+"graphics.ml" 54 2331 2362 "graphics.ml" 54 2331 2380
+type(
+  unit
+)
+"graphics.ml" 54 2331 2382 "graphics.ml" 54 2331 2393
+type(
+  unit -> unit
+)
+ident(
+  int_ref synchronize "graphics.ml" 51 2238 2238 "graphics.ml" 51 2238 2297
+)
+"graphics.ml" 54 2331 2394 "graphics.ml" 54 2331 2396
+type(
+  unit
+)
+"graphics.ml" 54 2331 2382 "graphics.ml" 54 2331 2396
+type(
+  unit
+)
+"graphics.ml" 54 2331 2362 "graphics.ml" 54 2331 2396
+type(
+  unit
+)
+"graphics.ml" 54 2331 2343 "graphics.ml" 54 2331 2396
+type(
+  unit
+)
+"graphics.ml" 55 2397 2401 "graphics.ml" 55 2397 2406
+type(
+  bool
+)
+"graphics.ml" 55 2397 2410 "graphics.ml" 55 2397 2422
+type(
+  bool -> unit
+)
+ident(
+  int_ref display_mode "graphics.ml" 49 2112 2112 "graphics.ml" 49 2112 2173
+)
+"graphics.ml" 55 2397 2423 "graphics.ml" 55 2397 2428
+type(
+  bool
+)
+"graphics.ml" 55 2397 2410 "graphics.ml" 55 2397 2428
+type(
+  unit
+)
+"graphics.ml" 55 2397 2430 "graphics.ml" 55 2397 2443
+type(
+  bool -> unit
+)
+ident(
+  int_ref remember_mode "graphics.ml" 50 2174 2174 "graphics.ml" 50 2174 2237
+)
+"graphics.ml" 55 2397 2444 "graphics.ml" 55 2397 2448
+type(
+  bool
+)
+"graphics.ml" 55 2397 2430 "graphics.ml" 55 2397 2448
+type(
+  unit
+)
+"graphics.ml" 55 2397 2410 "graphics.ml" 55 2397 2448
+type(
+  unit
+)
+"graphics.ml" 53 2299 2322 "graphics.ml" 55 2397 2448
+type(
+  bool -> unit
+)
+"graphics.ml" 63 2486 2490 "graphics.ml" 63 2486 2493
+type(
+  int -> int -> int -> int
+)
+ident(
+  def rgb "graphics.ml" 65 2530 2530 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 63 2486 2494 "graphics.ml" 63 2486 2495
+type(
+  int
+)
+ident(
+  def r "graphics.ml" 63 2486 2496 "graphics.ml" 63 2486 2528
+)
+"graphics.ml" 63 2486 2496 "graphics.ml" 63 2486 2497
+type(
+  int
+)
+ident(
+  def g "graphics.ml" 63 2486 2498 "graphics.ml" 63 2486 2528
+)
+"graphics.ml" 63 2486 2498 "graphics.ml" 63 2486 2499
+type(
+  int
+)
+ident(
+  def b "graphics.ml" 63 2486 2502 "graphics.ml" 63 2486 2528
+)
+"graphics.ml" 63 2486 2503 "graphics.ml" 63 2486 2504
+type(
+  int
+)
+ident(
+  int_ref r "graphics.ml" 63 2486 2494 "graphics.ml" 63 2486 2495
+)
+"graphics.ml" 63 2486 2505 "graphics.ml" 63 2486 2508
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsl )
+)
+"graphics.ml" 63 2486 2509 "graphics.ml" 63 2486 2511
+type(
+  int
+)
+"graphics.ml" 63 2486 2502 "graphics.ml" 63 2486 2512
+type(
+  int
+)
+"graphics.ml" 63 2486 2513 "graphics.ml" 63 2486 2514
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"graphics.ml" 63 2486 2516 "graphics.ml" 63 2486 2517
+type(
+  int
+)
+ident(
+  int_ref g "graphics.ml" 63 2486 2496 "graphics.ml" 63 2486 2497
+)
+"graphics.ml" 63 2486 2518 "graphics.ml" 63 2486 2521
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsl )
+)
+"graphics.ml" 63 2486 2522 "graphics.ml" 63 2486 2523
+type(
+  int
+)
+"graphics.ml" 63 2486 2515 "graphics.ml" 63 2486 2524
+type(
+  int
+)
+"graphics.ml" 63 2486 2502 "graphics.ml" 63 2486 2524
+type(
+  int
+)
+"graphics.ml" 63 2486 2525 "graphics.ml" 63 2486 2526
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"graphics.ml" 63 2486 2527 "graphics.ml" 63 2486 2528
+type(
+  int
+)
+ident(
+  int_ref b "graphics.ml" 63 2486 2498 "graphics.ml" 63 2486 2499
+)
+"graphics.ml" 63 2486 2502 "graphics.ml" 63 2486 2528
+type(
+  int
+)
+"graphics.ml" 67 2588 2592 "graphics.ml" 67 2588 2597
+type(
+  int
+)
+ident(
+  def black "graphics.ml" 76 2773 2773 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 67 2588 2602 "graphics.ml" 67 2588 2610
+type(
+  int
+)
+"graphics.ml" 68 2611 2615 "graphics.ml" 68 2611 2620
+type(
+  int
+)
+ident(
+  def white "graphics.ml" 76 2773 2773 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 68 2611 2625 "graphics.ml" 68 2611 2633
+type(
+  int
+)
+"graphics.ml" 69 2634 2638 "graphics.ml" 69 2634 2641
+type(
+  int
+)
+ident(
+  def red "graphics.ml" 76 2773 2773 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 69 2634 2648 "graphics.ml" 69 2634 2656
+type(
+  int
+)
+"graphics.ml" 70 2657 2661 "graphics.ml" 70 2657 2666
+type(
+  int
+)
+ident(
+  def green "graphics.ml" 76 2773 2773 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 70 2657 2671 "graphics.ml" 70 2657 2679
+type(
+  int
+)
+"graphics.ml" 71 2680 2684 "graphics.ml" 71 2680 2688
+type(
+  int
+)
+ident(
+  def blue "graphics.ml" 76 2773 2773 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 71 2680 2694 "graphics.ml" 71 2680 2702
+type(
+  int
+)
+"graphics.ml" 72 2703 2707 "graphics.ml" 72 2703 2713
+type(
+  int
+)
+ident(
+  def yellow "graphics.ml" 76 2773 2773 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 72 2703 2717 "graphics.ml" 72 2703 2725
+type(
+  int
+)
+"graphics.ml" 73 2726 2730 "graphics.ml" 73 2726 2734
+type(
+  int
+)
+ident(
+  def cyan "graphics.ml" 76 2773 2773 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 73 2726 2740 "graphics.ml" 73 2726 2748
+type(
+  int
+)
+"graphics.ml" 74 2749 2753 "graphics.ml" 74 2749 2760
+type(
+  int
+)
+ident(
+  def magenta "graphics.ml" 76 2773 2773 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 74 2749 2763 "graphics.ml" 74 2749 2771
+type(
+  int
+)
+"graphics.ml" 76 2773 2777 "graphics.ml" 76 2773 2787
+type(
+  int
+)
+ident(
+  def background "graphics.ml" 81 2835 2835 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 76 2773 2790 "graphics.ml" 76 2773 2795
+type(
+  int
+)
+ident(
+  int_ref white "graphics.ml" 68 2611 2615 "graphics.ml" 68 2611 2620
+)
+"graphics.ml" 77 2796 2800 "graphics.ml" 77 2796 2810
+type(
+  int
+)
+ident(
+  def foreground "graphics.ml" 81 2835 2835 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 77 2796 2813 "graphics.ml" 77 2796 2818
+type(
+  int
+)
+ident(
+  int_ref black "graphics.ml" 67 2588 2592 "graphics.ml" 67 2588 2597
+)
+"graphics.ml" 82 2887 2891 "graphics.ml" 82 2887 2896
+type(
+  (int * int) array -> unit
+)
+ident(
+  def plots "graphics.ml" 88 3003 3003 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 82 2887 2897 "graphics.ml" 82 2887 2903
+type(
+  (int * int) array
+)
+ident(
+  def points "graphics.ml" 83 2906 2908 "graphics.ml" 86 2993 2999
+)
+"graphics.ml" 83 2906 2916 "graphics.ml" 83 2906 2917
+type(
+  int
+)
+"graphics.ml" 83 2906 2921 "graphics.ml" 83 2906 2933
+type(
+  (int * int) array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"graphics.ml" 83 2906 2934 "graphics.ml" 83 2906 2940
+type(
+  (int * int) array
+)
+ident(
+  int_ref points "graphics.ml" 82 2887 2897 "graphics.ml" 82 2887 2903
+)
+"graphics.ml" 83 2906 2921 "graphics.ml" 83 2906 2940
+type(
+  int
+)
+"graphics.ml" 83 2906 2941 "graphics.ml" 83 2906 2942
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"graphics.ml" 83 2906 2943 "graphics.ml" 83 2906 2944
+type(
+  int
+)
+"graphics.ml" 83 2906 2921 "graphics.ml" 83 2906 2944
+type(
+  int
+)
+"graphics.ml" 84 2948 2957 "graphics.ml" 84 2948 2958
+type(
+  int
+)
+ident(
+  def x "graphics.ml" 85 2979 2983 "graphics.ml" 85 2979 2992
+)
+"graphics.ml" 84 2948 2960 "graphics.ml" 84 2948 2961
+type(
+  int
+)
+ident(
+  def y "graphics.ml" 85 2979 2983 "graphics.ml" 85 2979 2992
+)
+"graphics.ml" 84 2948 2956 "graphics.ml" 84 2948 2962
+type(
+  int * int
+)
+"graphics.ml" 84 2948 2965 "graphics.ml" 84 2948 2971
+type(
+  (int * int) array
+)
+ident(
+  int_ref points "graphics.ml" 82 2887 2897 "graphics.ml" 82 2887 2903
+)
+"graphics.ml" 84 2948 2973 "graphics.ml" 84 2948 2974
+type(
+  int
+)
+ident(
+  int_ref i "graphics.ml" 83 2906 2908 "graphics.ml" 86 2993 2999
+)
+"graphics.ml" 84 2948 2965 "graphics.ml" 84 2948 2975
+type(
+  int * int
+)
+"graphics.ml" 85 2979 2983 "graphics.ml" 85 2979 2987
+type(
+  int -> int -> unit
+)
+ident(
+  int_ref plot "graphics.ml" 81 2835 2835 "graphics.ml" 81 2835 2886
+)
+"graphics.ml" 85 2979 2988 "graphics.ml" 85 2979 2989
+type(
+  int
+)
+ident(
+  int_ref x "graphics.ml" 84 2948 2957 "graphics.ml" 84 2948 2958
+)
+"graphics.ml" 85 2979 2990 "graphics.ml" 85 2979 2991
+type(
+  int
+)
+ident(
+  int_ref y "graphics.ml" 84 2948 2960 "graphics.ml" 84 2948 2961
+)
+"graphics.ml" 85 2979 2983 "graphics.ml" 85 2979 2992
+type(
+  unit
+)
+"graphics.ml" 84 2948 2952 "graphics.ml" 85 2979 2992
+type(
+  unit
+)
+"graphics.ml" 83 2906 2908 "graphics.ml" 86 2993 2999
+type(
+  unit
+)
+"graphics.ml" 92 3236 3240 "graphics.ml" 92 3236 3253
+type(
+  unit -> int * int
+)
+ident(
+  def current_point "graphics.ml" 93 3286 3286 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 92 3236 3254 "graphics.ml" 92 3236 3256
+type(
+  unit
+)
+"graphics.ml" 92 3236 3259 "graphics.ml" 92 3236 3268
+type(
+  unit -> int
+)
+ident(
+  int_ref current_x "graphics.ml" 90 3126 3126 "graphics.ml" 90 3126 3180
+)
+"graphics.ml" 92 3236 3269 "graphics.ml" 92 3236 3271
+type(
+  unit
+)
+"graphics.ml" 92 3236 3259 "graphics.ml" 92 3236 3271
+type(
+  int
+)
+"graphics.ml" 92 3236 3273 "graphics.ml" 92 3236 3282
+type(
+  unit -> int
+)
+ident(
+  int_ref current_y "graphics.ml" 91 3181 3181 "graphics.ml" 91 3181 3235
+)
+"graphics.ml" 92 3236 3283 "graphics.ml" 92 3236 3285
+type(
+  unit
+)
+"graphics.ml" 92 3236 3273 "graphics.ml" 92 3236 3285
+type(
+  int
+)
+"graphics.ml" 92 3236 3259 "graphics.ml" 92 3236 3285
+type(
+  int * int
+)
+"graphics.ml" 94 3342 3346 "graphics.ml" 94 3342 3353
+type(
+  int -> int -> unit
+)
+ident(
+  def rlineto "graphics.ml" 95 3405 3405 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 94 3342 3354 "graphics.ml" 94 3342 3355
+type(
+  int
+)
+ident(
+  def x "graphics.ml" 94 3342 3356 "graphics.ml" 94 3342 3404
+)
+"graphics.ml" 94 3342 3356 "graphics.ml" 94 3342 3357
+type(
+  int
+)
+ident(
+  def y "graphics.ml" 94 3342 3360 "graphics.ml" 94 3342 3404
+)
+"graphics.ml" 94 3342 3360 "graphics.ml" 94 3342 3366
+type(
+  int -> int -> unit
+)
+ident(
+  int_ref lineto "graphics.ml" 93 3286 3286 "graphics.ml" 93 3286 3341
+)
+"graphics.ml" 94 3342 3368 "graphics.ml" 94 3342 3377
+type(
+  unit -> int
+)
+ident(
+  int_ref current_x "graphics.ml" 90 3126 3126 "graphics.ml" 90 3126 3180
+)
+"graphics.ml" 94 3342 3378 "graphics.ml" 94 3342 3380
+type(
+  unit
+)
+"graphics.ml" 94 3342 3368 "graphics.ml" 94 3342 3380
+type(
+  int
+)
+"graphics.ml" 94 3342 3381 "graphics.ml" 94 3342 3382
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"graphics.ml" 94 3342 3383 "graphics.ml" 94 3342 3384
+type(
+  int
+)
+ident(
+  int_ref x "graphics.ml" 94 3342 3354 "graphics.ml" 94 3342 3355
+)
+"graphics.ml" 94 3342 3367 "graphics.ml" 94 3342 3385
+type(
+  int
+)
+"graphics.ml" 94 3342 3387 "graphics.ml" 94 3342 3396
+type(
+  unit -> int
+)
+ident(
+  int_ref current_y "graphics.ml" 91 3181 3181 "graphics.ml" 91 3181 3235
+)
+"graphics.ml" 94 3342 3397 "graphics.ml" 94 3342 3399
+type(
+  unit
+)
+"graphics.ml" 94 3342 3387 "graphics.ml" 94 3342 3399
+type(
+  int
+)
+"graphics.ml" 94 3342 3400 "graphics.ml" 94 3342 3401
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"graphics.ml" 94 3342 3402 "graphics.ml" 94 3342 3403
+type(
+  int
+)
+ident(
+  int_ref y "graphics.ml" 94 3342 3356 "graphics.ml" 94 3342 3357
+)
+"graphics.ml" 94 3342 3386 "graphics.ml" 94 3342 3404
+type(
+  int
+)
+"graphics.ml" 94 3342 3360 "graphics.ml" 94 3342 3404
+type(
+  unit
+)
+"graphics.ml" 95 3405 3409 "graphics.ml" 95 3405 3416
+type(
+  int -> int -> unit
+)
+ident(
+  def rmoveto "graphics.ml" 97 3469 3469 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 95 3405 3417 "graphics.ml" 95 3405 3418
+type(
+  int
+)
+ident(
+  def x "graphics.ml" 95 3405 3419 "graphics.ml" 95 3405 3467
+)
+"graphics.ml" 95 3405 3419 "graphics.ml" 95 3405 3420
+type(
+  int
+)
+ident(
+  def y "graphics.ml" 95 3405 3423 "graphics.ml" 95 3405 3467
+)
+"graphics.ml" 95 3405 3423 "graphics.ml" 95 3405 3429
+type(
+  int -> int -> unit
+)
+ident(
+  int_ref moveto "graphics.ml" 89 3070 3070 "graphics.ml" 89 3070 3125
+)
+"graphics.ml" 95 3405 3431 "graphics.ml" 95 3405 3440
+type(
+  unit -> int
+)
+ident(
+  int_ref current_x "graphics.ml" 90 3126 3126 "graphics.ml" 90 3126 3180
+)
+"graphics.ml" 95 3405 3441 "graphics.ml" 95 3405 3443
+type(
+  unit
+)
+"graphics.ml" 95 3405 3431 "graphics.ml" 95 3405 3443
+type(
+  int
+)
+"graphics.ml" 95 3405 3444 "graphics.ml" 95 3405 3445
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"graphics.ml" 95 3405 3446 "graphics.ml" 95 3405 3447
+type(
+  int
+)
+ident(
+  int_ref x "graphics.ml" 95 3405 3417 "graphics.ml" 95 3405 3418
+)
+"graphics.ml" 95 3405 3430 "graphics.ml" 95 3405 3448
+type(
+  int
+)
+"graphics.ml" 95 3405 3450 "graphics.ml" 95 3405 3459
+type(
+  unit -> int
+)
+ident(
+  int_ref current_y "graphics.ml" 91 3181 3181 "graphics.ml" 91 3181 3235
+)
+"graphics.ml" 95 3405 3460 "graphics.ml" 95 3405 3462
+type(
+  unit
+)
+"graphics.ml" 95 3405 3450 "graphics.ml" 95 3405 3462
+type(
+  int
+)
+"graphics.ml" 95 3405 3463 "graphics.ml" 95 3405 3464
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"graphics.ml" 95 3405 3465 "graphics.ml" 95 3405 3466
+type(
+  int
+)
+ident(
+  int_ref y "graphics.ml" 95 3405 3419 "graphics.ml" 95 3405 3420
+)
+"graphics.ml" 95 3405 3449 "graphics.ml" 95 3405 3467
+type(
+  int
+)
+"graphics.ml" 95 3405 3423 "graphics.ml" 95 3405 3467
+type(
+  unit
+)
+"graphics.ml" 98 3549 3553 "graphics.ml" 98 3549 3562
+type(
+  int -> int -> int -> int -> unit
+)
+ident(
+  def draw_rect "graphics.ml" 103 3668 3668 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 98 3549 3563 "graphics.ml" 98 3549 3564
+type(
+  int
+)
+ident(
+  def x "graphics.ml" 98 3549 3565 "graphics.ml" 100 3635 3663
+)
+"graphics.ml" 98 3549 3565 "graphics.ml" 98 3549 3566
+type(
+  int
+)
+ident(
+  def y "graphics.ml" 98 3549 3567 "graphics.ml" 100 3635 3663
+)
+"graphics.ml" 98 3549 3567 "graphics.ml" 98 3549 3568
+type(
+  int
+)
+ident(
+  def w "graphics.ml" 98 3549 3569 "graphics.ml" 100 3635 3663
+)
+"graphics.ml" 98 3549 3569 "graphics.ml" 98 3549 3570
+type(
+  int
+)
+ident(
+  def h "graphics.ml" 99 3573 3575 "graphics.ml" 100 3635 3663
+)
+"graphics.ml" 99 3573 3578 "graphics.ml" 99 3573 3579
+type(
+  int
+)
+ident(
+  int_ref w "graphics.ml" 98 3549 3567 "graphics.ml" 98 3549 3568
+)
+"graphics.ml" 99 3573 3580 "graphics.ml" 99 3573 3581
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"graphics.ml" 99 3573 3582 "graphics.ml" 99 3573 3583
+type(
+  int
+)
+"graphics.ml" 99 3573 3578 "graphics.ml" 99 3573 3583
+type(
+  bool
+)
+"graphics.ml" 99 3573 3584 "graphics.ml" 99 3573 3586
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"graphics.ml" 99 3573 3587 "graphics.ml" 99 3573 3588
+type(
+  int
+)
+ident(
+  int_ref h "graphics.ml" 98 3549 3569 "graphics.ml" 98 3549 3570
+)
+"graphics.ml" 99 3573 3589 "graphics.ml" 99 3573 3590
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"graphics.ml" 99 3573 3591 "graphics.ml" 99 3573 3592
+type(
+  int
+)
+"graphics.ml" 99 3573 3587 "graphics.ml" 99 3573 3592
+type(
+  bool
+)
+"graphics.ml" 99 3573 3578 "graphics.ml" 99 3573 3592
+type(
+  bool
+)
+"graphics.ml" 99 3573 3598 "graphics.ml" 99 3573 3603
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"graphics.ml" 99 3573 3622 "graphics.ml" 99 3573 3633
+type(
+  string
+)
+"graphics.ml" 99 3573 3604 "graphics.ml" 99 3573 3634
+type(
+  exn
+)
+"graphics.ml" 99 3573 3598 "graphics.ml" 99 3573 3634
+type(
+  unit
+)
+"graphics.ml" 100 3635 3642 "graphics.ml" 100 3635 3655
+type(
+  int -> int -> int -> int -> unit
+)
+ident(
+  int_ref raw_draw_rect "graphics.ml" 97 3469 3469 "graphics.ml" 97 3469 3548
+)
+"graphics.ml" 100 3635 3656 "graphics.ml" 100 3635 3657
+type(
+  int
+)
+ident(
+  int_ref x "graphics.ml" 98 3549 3563 "graphics.ml" 98 3549 3564
+)
+"graphics.ml" 100 3635 3658 "graphics.ml" 100 3635 3659
+type(
+  int
+)
+ident(
+  int_ref y "graphics.ml" 98 3549 3565 "graphics.ml" 98 3549 3566
+)
+"graphics.ml" 100 3635 3660 "graphics.ml" 100 3635 3661
+type(
+  int
+)
+ident(
+  int_ref w "graphics.ml" 98 3549 3567 "graphics.ml" 98 3549 3568
+)
+"graphics.ml" 100 3635 3662 "graphics.ml" 100 3635 3663
+type(
+  int
+)
+ident(
+  int_ref h "graphics.ml" 98 3549 3569 "graphics.ml" 98 3549 3570
+)
+"graphics.ml" 100 3635 3642 "graphics.ml" 100 3635 3663
+type(
+  unit
+)
+"graphics.ml" 99 3573 3575 "graphics.ml" 100 3635 3663
+type(
+  unit
+)
+"graphics.ml" 103 3668 3672 "graphics.ml" 103 3668 3681
+type(
+  (int * int) array -> unit
+)
+ident(
+  def draw_poly "graphics.ml" 117 4119 4119 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 103 3668 3683 "graphics.ml" 103 3668 3697
+type(
+  (int * int) array -> unit
+)
+ident(
+  def draw_poly_line "graphics.ml" 117 4119 4119 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 103 3668 3672 "graphics.ml" 103 3668 3697
+type(
+  ((int * int) array -> unit) * ((int * int) array -> unit)
+)
+"graphics.ml" 104 3700 3706 "graphics.ml" 104 3700 3712
+type(
+  bool -> (int * int) array -> unit
+)
+ident(
+  def dodraw "graphics.ml" 115 4085 4090 "graphics.ml" 115 4085 4115
+)
+"graphics.ml" 104 3700 3713 "graphics.ml" 104 3700 3723
+type(
+  bool
+)
+ident(
+  def close_flag "graphics.ml" 104 3700 3724 "graphics.ml" 114 4076 4084
+)
+"graphics.ml" 104 3700 3724 "graphics.ml" 104 3700 3730
+type(
+  (int * int) array
+)
+ident(
+  def points "graphics.ml" 105 3733 3737 "graphics.ml" 114 4076 4084
+)
+"graphics.ml" 105 3733 3740 "graphics.ml" 105 3733 3752
+type(
+  (int * int) array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"graphics.ml" 105 3733 3753 "graphics.ml" 105 3733 3759
+type(
+  (int * int) array
+)
+ident(
+  int_ref points "graphics.ml" 104 3700 3724 "graphics.ml" 104 3700 3730
+)
+"graphics.ml" 105 3733 3740 "graphics.ml" 105 3733 3759
+type(
+  int
+)
+"graphics.ml" 105 3733 3760 "graphics.ml" 105 3733 3761
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"graphics.ml" 105 3733 3762 "graphics.ml" 105 3733 3763
+type(
+  int
+)
+"graphics.ml" 105 3733 3740 "graphics.ml" 105 3733 3763
+type(
+  bool
+)
+"graphics.ml" 106 3775 3786 "graphics.ml" 106 3775 3791
+type(
+  int
+)
+ident(
+  def savex "graphics.ml" 107 3822 3828 "graphics.ml" 113 4050 4075
+)
+"graphics.ml" 106 3775 3793 "graphics.ml" 106 3775 3798
+type(
+  int
+)
+ident(
+  def savey "graphics.ml" 107 3822 3828 "graphics.ml" 113 4050 4075
+)
+"graphics.ml" 106 3775 3785 "graphics.ml" 106 3775 3799
+type(
+  int * int
+)
+"graphics.ml" 106 3775 3802 "graphics.ml" 106 3775 3815
+type(
+  unit -> int * int
+)
+ident(
+  int_ref current_point "graphics.ml" 92 3236 3240 "graphics.ml" 92 3236 3253
+)
+"graphics.ml" 106 3775 3816 "graphics.ml" 106 3775 3818
+type(
+  unit
+)
+"graphics.ml" 106 3775 3802 "graphics.ml" 106 3775 3818
+call(
+  stack
+)
+type(
+  int * int
+)
+"graphics.ml" 107 3822 3828 "graphics.ml" 107 3822 3834
+type(
+  int -> int -> unit
+)
+ident(
+  int_ref moveto "graphics.ml" 89 3070 3070 "graphics.ml" 89 3070 3125
+)
+"graphics.ml" 107 3822 3836 "graphics.ml" 107 3822 3839
+type(
+  int * int -> int
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"graphics.ml" 107 3822 3840 "graphics.ml" 107 3822 3846
+type(
+  (int * int) array
+)
+ident(
+  int_ref points "graphics.ml" 104 3700 3724 "graphics.ml" 104 3700 3730
+)
+"graphics.ml" 107 3822 3848 "graphics.ml" 107 3822 3849
+type(
+  int
+)
+"graphics.ml" 107 3822 3840 "graphics.ml" 107 3822 3850
+type(
+  int * int
+)
+"graphics.ml" 107 3822 3835 "graphics.ml" 107 3822 3851
+type(
+  int
+)
+"graphics.ml" 107 3822 3853 "graphics.ml" 107 3822 3856
+type(
+  int * int -> int
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"graphics.ml" 107 3822 3857 "graphics.ml" 107 3822 3863
+type(
+  (int * int) array
+)
+ident(
+  int_ref points "graphics.ml" 104 3700 3724 "graphics.ml" 104 3700 3730
+)
+"graphics.ml" 107 3822 3865 "graphics.ml" 107 3822 3866
+type(
+  int
+)
+"graphics.ml" 107 3822 3857 "graphics.ml" 107 3822 3867
+type(
+  int * int
+)
+"graphics.ml" 107 3822 3852 "graphics.ml" 107 3822 3868
+type(
+  int
+)
+"graphics.ml" 107 3822 3828 "graphics.ml" 107 3822 3868
+type(
+  unit
+)
+"graphics.ml" 108 3870 3884 "graphics.ml" 108 3870 3885
+type(
+  int
+)
+"graphics.ml" 108 3870 3889 "graphics.ml" 108 3870 3901
+type(
+  (int * int) array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"graphics.ml" 108 3870 3902 "graphics.ml" 108 3870 3908
+type(
+  (int * int) array
+)
+ident(
+  int_ref points "graphics.ml" 104 3700 3724 "graphics.ml" 104 3700 3730
+)
+"graphics.ml" 108 3870 3889 "graphics.ml" 108 3870 3908
+type(
+  int
+)
+"graphics.ml" 108 3870 3909 "graphics.ml" 108 3870 3910
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"graphics.ml" 108 3870 3911 "graphics.ml" 108 3870 3912
+type(
+  int
+)
+"graphics.ml" 108 3870 3889 "graphics.ml" 108 3870 3912
+type(
+  int
+)
+"graphics.ml" 109 3916 3929 "graphics.ml" 109 3916 3930
+type(
+  int
+)
+ident(
+  def x "graphics.ml" 110 3951 3959 "graphics.ml" 110 3951 3970
+)
+"graphics.ml" 109 3916 3932 "graphics.ml" 109 3916 3933
+type(
+  int
+)
+ident(
+  def y "graphics.ml" 110 3951 3959 "graphics.ml" 110 3951 3970
+)
+"graphics.ml" 109 3916 3928 "graphics.ml" 109 3916 3934
+type(
+  int * int
+)
+"graphics.ml" 109 3916 3937 "graphics.ml" 109 3916 3943
+type(
+  (int * int) array
+)
+ident(
+  int_ref points "graphics.ml" 104 3700 3724 "graphics.ml" 104 3700 3730
+)
+"graphics.ml" 109 3916 3945 "graphics.ml" 109 3916 3946
+type(
+  int
+)
+ident(
+  int_ref i "graphics.ml" 108 3870 3876 "graphics.ml" 111 3971 3981
+)
+"graphics.ml" 109 3916 3937 "graphics.ml" 109 3916 3947
+type(
+  int * int
+)
+"graphics.ml" 110 3951 3959 "graphics.ml" 110 3951 3965
+type(
+  int -> int -> unit
+)
+ident(
+  int_ref lineto "graphics.ml" 93 3286 3286 "graphics.ml" 93 3286 3341
+)
+"graphics.ml" 110 3951 3966 "graphics.ml" 110 3951 3967
+type(
+  int
+)
+ident(
+  int_ref x "graphics.ml" 109 3916 3929 "graphics.ml" 109 3916 3930
+)
+"graphics.ml" 110 3951 3968 "graphics.ml" 110 3951 3969
+type(
+  int
+)
+ident(
+  int_ref y "graphics.ml" 109 3916 3932 "graphics.ml" 109 3916 3933
+)
+"graphics.ml" 110 3951 3959 "graphics.ml" 110 3951 3970
+type(
+  unit
+)
+"graphics.ml" 109 3916 3924 "graphics.ml" 110 3951 3970
+type(
+  unit
+)
+"graphics.ml" 108 3870 3876 "graphics.ml" 111 3971 3981
+type(
+  unit
+)
+"graphics.ml" 112 3983 3992 "graphics.ml" 112 3983 4002
+type(
+  bool
+)
+ident(
+  int_ref close_flag "graphics.ml" 104 3700 3713 "graphics.ml" 104 3700 3723
+)
+"graphics.ml" 112 3983 4008 "graphics.ml" 112 3983 4014
+type(
+  int -> int -> unit
+)
+ident(
+  int_ref lineto "graphics.ml" 93 3286 3286 "graphics.ml" 93 3286 3341
+)
+"graphics.ml" 112 3983 4016 "graphics.ml" 112 3983 4019
+type(
+  int * int -> int
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"graphics.ml" 112 3983 4020 "graphics.ml" 112 3983 4026
+type(
+  (int * int) array
+)
+ident(
+  int_ref points "graphics.ml" 104 3700 3724 "graphics.ml" 104 3700 3730
+)
+"graphics.ml" 112 3983 4028 "graphics.ml" 112 3983 4029
+type(
+  int
+)
+"graphics.ml" 112 3983 4020 "graphics.ml" 112 3983 4030
+type(
+  int * int
+)
+"graphics.ml" 112 3983 4015 "graphics.ml" 112 3983 4031
+type(
+  int
+)
+"graphics.ml" 112 3983 4033 "graphics.ml" 112 3983 4036
+type(
+  int * int -> int
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"graphics.ml" 112 3983 4037 "graphics.ml" 112 3983 4043
+type(
+  (int * int) array
+)
+ident(
+  int_ref points "graphics.ml" 104 3700 3724 "graphics.ml" 104 3700 3730
+)
+"graphics.ml" 112 3983 4045 "graphics.ml" 112 3983 4046
+type(
+  int
+)
+"graphics.ml" 112 3983 4037 "graphics.ml" 112 3983 4047
+type(
+  int * int
+)
+"graphics.ml" 112 3983 4032 "graphics.ml" 112 3983 4048
+type(
+  int
+)
+"graphics.ml" 112 3983 4008 "graphics.ml" 112 3983 4048
+type(
+  unit
+)
+"graphics.ml" 112 3983 3989 "graphics.ml" 112 3983 4048
+type(
+  unit
+)
+"graphics.ml" 113 4050 4056 "graphics.ml" 113 4050 4062
+type(
+  int -> int -> unit
+)
+ident(
+  int_ref moveto "graphics.ml" 89 3070 3070 "graphics.ml" 89 3070 3125
+)
+"graphics.ml" 113 4050 4063 "graphics.ml" 113 4050 4068
+type(
+  int
+)
+ident(
+  int_ref savex "graphics.ml" 106 3775 3786 "graphics.ml" 106 3775 3791
+)
+"graphics.ml" 113 4050 4069 "graphics.ml" 113 4050 4074
+type(
+  int
+)
+ident(
+  int_ref savey "graphics.ml" 106 3775 3793 "graphics.ml" 106 3775 3798
+)
+"graphics.ml" 113 4050 4056 "graphics.ml" 113 4050 4075
+type(
+  unit
+)
+"graphics.ml" 112 3983 3989 "graphics.ml" 113 4050 4075
+type(
+  unit
+)
+"graphics.ml" 108 3870 3876 "graphics.ml" 113 4050 4075
+type(
+  unit
+)
+"graphics.ml" 107 3822 3828 "graphics.ml" 113 4050 4075
+type(
+  unit
+)
+"graphics.ml" 105 3733 3769 "graphics.ml" 114 4076 4083
+type(
+  unit
+)
+"graphics.ml" 105 3733 3737 "graphics.ml" 114 4076 4084
+type(
+  unit
+)
+"graphics.ml" 115 4085 4090 "graphics.ml" 115 4085 4096
+type(
+  bool -> (int * int) array -> unit
+)
+ident(
+  int_ref dodraw "graphics.ml" 104 3700 3706 "graphics.ml" 104 3700 3712
+)
+"graphics.ml" 115 4085 4097 "graphics.ml" 115 4085 4101
+type(
+  bool
+)
+"graphics.ml" 115 4085 4090 "graphics.ml" 115 4085 4101
+call(
+  stack
+)
+type(
+  (int * int) array -> unit
+)
+"graphics.ml" 115 4085 4103 "graphics.ml" 115 4085 4109
+type(
+  bool -> (int * int) array -> unit
+)
+ident(
+  int_ref dodraw "graphics.ml" 104 3700 3706 "graphics.ml" 104 3700 3712
+)
+"graphics.ml" 115 4085 4110 "graphics.ml" 115 4085 4115
+type(
+  bool
+)
+"graphics.ml" 115 4085 4103 "graphics.ml" 115 4085 4115
+call(
+  stack
+)
+type(
+  (int * int) array -> unit
+)
+"graphics.ml" 115 4085 4090 "graphics.ml" 115 4085 4115
+type(
+  ((int * int) array -> unit) * ((int * int) array -> unit)
+)
+"graphics.ml" 104 3700 3702 "graphics.ml" 115 4085 4115
+type(
+  ((int * int) array -> unit) * ((int * int) array -> unit)
+)
+"graphics.ml" 117 4119 4123 "graphics.ml" 117 4119 4136
+type(
+  (int * int * int * int) array -> unit
+)
+ident(
+  def draw_segments "graphics.ml" 127 4336 4336 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 117 4119 4137 "graphics.ml" 117 4119 4141
+type(
+  (int * int * int * int) array
+)
+ident(
+  def segs "graphics.ml" 118 4144 4146 "graphics.ml" 124 4310 4331
+)
+"graphics.ml" 118 4144 4151 "graphics.ml" 118 4144 4156
+type(
+  int
+)
+ident(
+  def savex "graphics.ml" 119 4187 4189 "graphics.ml" 124 4310 4331
+)
+"graphics.ml" 118 4144 4158 "graphics.ml" 118 4144 4163
+type(
+  int
+)
+ident(
+  def savey "graphics.ml" 119 4187 4189 "graphics.ml" 124 4310 4331
+)
+"graphics.ml" 118 4144 4150 "graphics.ml" 118 4144 4164
+type(
+  int * int
+)
+"graphics.ml" 118 4144 4167 "graphics.ml" 118 4144 4180
+type(
+  unit -> int * int
+)
+ident(
+  int_ref current_point "graphics.ml" 92 3236 3240 "graphics.ml" 92 3236 3253
+)
+"graphics.ml" 118 4144 4181 "graphics.ml" 118 4144 4183
+type(
+  unit
+)
+"graphics.ml" 118 4144 4167 "graphics.ml" 118 4144 4183
+call(
+  stack
+)
+type(
+  int * int
+)
+"graphics.ml" 119 4187 4197 "graphics.ml" 119 4187 4198
+type(
+  int
+)
+"graphics.ml" 119 4187 4202 "graphics.ml" 119 4187 4214
+type(
+  (int * int * int * int) array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"graphics.ml" 119 4187 4215 "graphics.ml" 119 4187 4219
+type(
+  (int * int * int * int) array
+)
+ident(
+  int_ref segs "graphics.ml" 117 4119 4137 "graphics.ml" 117 4119 4141
+)
+"graphics.ml" 119 4187 4202 "graphics.ml" 119 4187 4219
+type(
+  int
+)
+"graphics.ml" 119 4187 4220 "graphics.ml" 119 4187 4221
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"graphics.ml" 119 4187 4222 "graphics.ml" 119 4187 4223
+type(
+  int
+)
+"graphics.ml" 119 4187 4202 "graphics.ml" 119 4187 4223
+type(
+  int
+)
+"graphics.ml" 120 4227 4236 "graphics.ml" 120 4227 4238
+type(
+  int
+)
+ident(
+  def x1 "graphics.ml" 121 4266 4270 "graphics.ml" 122 4284 4301
+)
+"graphics.ml" 120 4227 4240 "graphics.ml" 120 4227 4242
+type(
+  int
+)
+ident(
+  def y1 "graphics.ml" 121 4266 4270 "graphics.ml" 122 4284 4301
+)
+"graphics.ml" 120 4227 4244 "graphics.ml" 120 4227 4246
+type(
+  int
+)
+ident(
+  def x2 "graphics.ml" 121 4266 4270 "graphics.ml" 122 4284 4301
+)
+"graphics.ml" 120 4227 4248 "graphics.ml" 120 4227 4250
+type(
+  int
+)
+ident(
+  def y2 "graphics.ml" 121 4266 4270 "graphics.ml" 122 4284 4301
+)
+"graphics.ml" 120 4227 4235 "graphics.ml" 120 4227 4251
+type(
+  int * int * int * int
+)
+"graphics.ml" 120 4227 4254 "graphics.ml" 120 4227 4258
+type(
+  (int * int * int * int) array
+)
+ident(
+  int_ref segs "graphics.ml" 117 4119 4137 "graphics.ml" 117 4119 4141
+)
+"graphics.ml" 120 4227 4260 "graphics.ml" 120 4227 4261
+type(
+  int
+)
+ident(
+  int_ref i "graphics.ml" 119 4187 4189 "graphics.ml" 123 4302 4308
+)
+"graphics.ml" 120 4227 4254 "graphics.ml" 120 4227 4262
+type(
+  int * int * int * int
+)
+"graphics.ml" 121 4266 4270 "graphics.ml" 121 4266 4276
+type(
+  int -> int -> unit
+)
+ident(
+  int_ref moveto "graphics.ml" 89 3070 3070 "graphics.ml" 89 3070 3125
+)
+"graphics.ml" 121 4266 4277 "graphics.ml" 121 4266 4279
+type(
+  int
+)
+ident(
+  int_ref x1 "graphics.ml" 120 4227 4236 "graphics.ml" 120 4227 4238
+)
+"graphics.ml" 121 4266 4280 "graphics.ml" 121 4266 4282
+type(
+  int
+)
+ident(
+  int_ref y1 "graphics.ml" 120 4227 4240 "graphics.ml" 120 4227 4242
+)
+"graphics.ml" 121 4266 4270 "graphics.ml" 121 4266 4282
+type(
+  unit
+)
+"graphics.ml" 122 4284 4288 "graphics.ml" 122 4284 4294
+type(
+  int -> int -> unit
+)
+ident(
+  int_ref lineto "graphics.ml" 93 3286 3286 "graphics.ml" 93 3286 3341
+)
+"graphics.ml" 122 4284 4295 "graphics.ml" 122 4284 4297
+type(
+  int
+)
+ident(
+  int_ref x2 "graphics.ml" 120 4227 4244 "graphics.ml" 120 4227 4246
+)
+"graphics.ml" 122 4284 4298 "graphics.ml" 122 4284 4300
+type(
+  int
+)
+ident(
+  int_ref y2 "graphics.ml" 120 4227 4248 "graphics.ml" 120 4227 4250
+)
+"graphics.ml" 122 4284 4288 "graphics.ml" 122 4284 4301
+type(
+  unit
+)
+"graphics.ml" 121 4266 4270 "graphics.ml" 122 4284 4301
+type(
+  unit
+)
+"graphics.ml" 120 4227 4231 "graphics.ml" 122 4284 4301
+type(
+  unit
+)
+"graphics.ml" 119 4187 4189 "graphics.ml" 123 4302 4308
+type(
+  unit
+)
+"graphics.ml" 124 4310 4312 "graphics.ml" 124 4310 4318
+type(
+  int -> int -> unit
+)
+ident(
+  int_ref moveto "graphics.ml" 89 3070 3070 "graphics.ml" 89 3070 3125
+)
+"graphics.ml" 124 4310 4319 "graphics.ml" 124 4310 4324
+type(
+  int
+)
+ident(
+  int_ref savex "graphics.ml" 118 4144 4151 "graphics.ml" 118 4144 4156
+)
+"graphics.ml" 124 4310 4325 "graphics.ml" 124 4310 4330
+type(
+  int
+)
+ident(
+  int_ref savey "graphics.ml" 118 4144 4158 "graphics.ml" 118 4144 4163
+)
+"graphics.ml" 124 4310 4312 "graphics.ml" 124 4310 4331
+type(
+  unit
+)
+"graphics.ml" 119 4187 4189 "graphics.ml" 124 4310 4331
+type(
+  unit
+)
+"graphics.ml" 118 4144 4146 "graphics.ml" 124 4310 4331
+type(
+  unit
+)
+"graphics.ml" 129 4466 4470 "graphics.ml" 129 4466 4478
+type(
+  int -> int -> int -> int -> int -> int -> unit
+)
+ident(
+  def draw_arc "graphics.ml" 134 4615 4615 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 129 4466 4479 "graphics.ml" 129 4466 4480
+type(
+  int
+)
+ident(
+  def x "graphics.ml" 129 4466 4481 "graphics.ml" 131 4575 4610
+)
+"graphics.ml" 129 4466 4481 "graphics.ml" 129 4466 4482
+type(
+  int
+)
+ident(
+  def y "graphics.ml" 129 4466 4483 "graphics.ml" 131 4575 4610
+)
+"graphics.ml" 129 4466 4483 "graphics.ml" 129 4466 4485
+type(
+  int
+)
+ident(
+  def rx "graphics.ml" 129 4466 4486 "graphics.ml" 131 4575 4610
+)
+"graphics.ml" 129 4466 4486 "graphics.ml" 129 4466 4488
+type(
+  int
+)
+ident(
+  def ry "graphics.ml" 129 4466 4489 "graphics.ml" 131 4575 4610
+)
+"graphics.ml" 129 4466 4489 "graphics.ml" 129 4466 4491
+type(
+  int
+)
+ident(
+  def a1 "graphics.ml" 129 4466 4492 "graphics.ml" 131 4575 4610
+)
+"graphics.ml" 129 4466 4492 "graphics.ml" 129 4466 4494
+type(
+  int
+)
+ident(
+  def a2 "graphics.ml" 130 4497 4499 "graphics.ml" 131 4575 4610
+)
+"graphics.ml" 130 4497 4502 "graphics.ml" 130 4497 4504
+type(
+  int
+)
+ident(
+  int_ref rx "graphics.ml" 129 4466 4483 "graphics.ml" 129 4466 4485
+)
+"graphics.ml" 130 4497 4505 "graphics.ml" 130 4497 4506
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"graphics.ml" 130 4497 4507 "graphics.ml" 130 4497 4508
+type(
+  int
+)
+"graphics.ml" 130 4497 4502 "graphics.ml" 130 4497 4508
+type(
+  bool
+)
+"graphics.ml" 130 4497 4509 "graphics.ml" 130 4497 4511
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"graphics.ml" 130 4497 4512 "graphics.ml" 130 4497 4514
+type(
+  int
+)
+ident(
+  int_ref ry "graphics.ml" 129 4466 4486 "graphics.ml" 129 4466 4488
+)
+"graphics.ml" 130 4497 4515 "graphics.ml" 130 4497 4516
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"graphics.ml" 130 4497 4517 "graphics.ml" 130 4497 4518
+type(
+  int
+)
+"graphics.ml" 130 4497 4512 "graphics.ml" 130 4497 4518
+type(
+  bool
+)
+"graphics.ml" 130 4497 4502 "graphics.ml" 130 4497 4518
+type(
+  bool
+)
+"graphics.ml" 130 4497 4524 "graphics.ml" 130 4497 4529
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"graphics.ml" 130 4497 4548 "graphics.ml" 130 4497 4573
+type(
+  string
+)
+"graphics.ml" 130 4497 4530 "graphics.ml" 130 4497 4574
+type(
+  exn
+)
+"graphics.ml" 130 4497 4524 "graphics.ml" 130 4497 4574
+type(
+  unit
+)
+"graphics.ml" 131 4575 4582 "graphics.ml" 131 4575 4594
+type(
+  int -> int -> int -> int -> int -> int -> unit
+)
+ident(
+  int_ref raw_draw_arc "graphics.ml" 127 4336 4336 "graphics.ml" 128 4407 4465
+)
+"graphics.ml" 131 4575 4595 "graphics.ml" 131 4575 4596
+type(
+  int
+)
+ident(
+  int_ref x "graphics.ml" 129 4466 4479 "graphics.ml" 129 4466 4480
+)
+"graphics.ml" 131 4575 4597 "graphics.ml" 131 4575 4598
+type(
+  int
+)
+ident(
+  int_ref y "graphics.ml" 129 4466 4481 "graphics.ml" 129 4466 4482
+)
+"graphics.ml" 131 4575 4599 "graphics.ml" 131 4575 4601
+type(
+  int
+)
+ident(
+  int_ref rx "graphics.ml" 129 4466 4483 "graphics.ml" 129 4466 4485
+)
+"graphics.ml" 131 4575 4602 "graphics.ml" 131 4575 4604
+type(
+  int
+)
+ident(
+  int_ref ry "graphics.ml" 129 4466 4486 "graphics.ml" 129 4466 4488
+)
+"graphics.ml" 131 4575 4605 "graphics.ml" 131 4575 4607
+type(
+  int
+)
+ident(
+  int_ref a1 "graphics.ml" 129 4466 4489 "graphics.ml" 129 4466 4491
+)
+"graphics.ml" 131 4575 4608 "graphics.ml" 131 4575 4610
+type(
+  int
+)
+ident(
+  int_ref a2 "graphics.ml" 129 4466 4492 "graphics.ml" 129 4466 4494
+)
+"graphics.ml" 131 4575 4582 "graphics.ml" 131 4575 4610
+type(
+  unit
+)
+"graphics.ml" 130 4497 4499 "graphics.ml" 131 4575 4610
+type(
+  unit
+)
+"graphics.ml" 134 4615 4619 "graphics.ml" 134 4615 4631
+type(
+  int -> int -> int -> int -> unit
+)
+ident(
+  def draw_ellipse "graphics.ml" 135 4669 4669 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 134 4615 4632 "graphics.ml" 134 4615 4633
+type(
+  int
+)
+ident(
+  def x "graphics.ml" 134 4615 4634 "graphics.ml" 134 4615 4668
+)
+"graphics.ml" 134 4615 4634 "graphics.ml" 134 4615 4635
+type(
+  int
+)
+ident(
+  def y "graphics.ml" 134 4615 4636 "graphics.ml" 134 4615 4668
+)
+"graphics.ml" 134 4615 4636 "graphics.ml" 134 4615 4638
+type(
+  int
+)
+ident(
+  def rx "graphics.ml" 134 4615 4639 "graphics.ml" 134 4615 4668
+)
+"graphics.ml" 134 4615 4639 "graphics.ml" 134 4615 4641
+type(
+  int
+)
+ident(
+  def ry "graphics.ml" 134 4615 4644 "graphics.ml" 134 4615 4668
+)
+"graphics.ml" 134 4615 4644 "graphics.ml" 134 4615 4652
+type(
+  int -> int -> int -> int -> int -> int -> unit
+)
+ident(
+  int_ref draw_arc "graphics.ml" 129 4466 4470 "graphics.ml" 129 4466 4478
+)
+"graphics.ml" 134 4615 4653 "graphics.ml" 134 4615 4654
+type(
+  int
+)
+ident(
+  int_ref x "graphics.ml" 134 4615 4632 "graphics.ml" 134 4615 4633
+)
+"graphics.ml" 134 4615 4655 "graphics.ml" 134 4615 4656
+type(
+  int
+)
+ident(
+  int_ref y "graphics.ml" 134 4615 4634 "graphics.ml" 134 4615 4635
+)
+"graphics.ml" 134 4615 4657 "graphics.ml" 134 4615 4659
+type(
+  int
+)
+ident(
+  int_ref rx "graphics.ml" 134 4615 4636 "graphics.ml" 134 4615 4638
+)
+"graphics.ml" 134 4615 4660 "graphics.ml" 134 4615 4662
+type(
+  int
+)
+ident(
+  int_ref ry "graphics.ml" 134 4615 4639 "graphics.ml" 134 4615 4641
+)
+"graphics.ml" 134 4615 4663 "graphics.ml" 134 4615 4664
+type(
+  int
+)
+"graphics.ml" 134 4615 4665 "graphics.ml" 134 4615 4668
+type(
+  int
+)
+"graphics.ml" 134 4615 4644 "graphics.ml" 134 4615 4668
+call(
+  tail
+)
+type(
+  unit
+)
+"graphics.ml" 135 4669 4673 "graphics.ml" 135 4669 4684
+type(
+  int -> int -> int -> unit
+)
+ident(
+  def draw_circle "graphics.ml" 137 4717 4717 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 135 4669 4685 "graphics.ml" 135 4669 4686
+type(
+  int
+)
+ident(
+  def x "graphics.ml" 135 4669 4687 "graphics.ml" 135 4669 4715
+)
+"graphics.ml" 135 4669 4687 "graphics.ml" 135 4669 4688
+type(
+  int
+)
+ident(
+  def y "graphics.ml" 135 4669 4689 "graphics.ml" 135 4669 4715
+)
+"graphics.ml" 135 4669 4689 "graphics.ml" 135 4669 4690
+type(
+  int
+)
+ident(
+  def r "graphics.ml" 135 4669 4693 "graphics.ml" 135 4669 4715
+)
+"graphics.ml" 135 4669 4693 "graphics.ml" 135 4669 4701
+type(
+  int -> int -> int -> int -> int -> int -> unit
+)
+ident(
+  int_ref draw_arc "graphics.ml" 129 4466 4470 "graphics.ml" 129 4466 4478
+)
+"graphics.ml" 135 4669 4702 "graphics.ml" 135 4669 4703
+type(
+  int
+)
+ident(
+  int_ref x "graphics.ml" 135 4669 4685 "graphics.ml" 135 4669 4686
+)
+"graphics.ml" 135 4669 4704 "graphics.ml" 135 4669 4705
+type(
+  int
+)
+ident(
+  int_ref y "graphics.ml" 135 4669 4687 "graphics.ml" 135 4669 4688
+)
+"graphics.ml" 135 4669 4706 "graphics.ml" 135 4669 4707
+type(
+  int
+)
+ident(
+  int_ref r "graphics.ml" 135 4669 4689 "graphics.ml" 135 4669 4690
+)
+"graphics.ml" 135 4669 4708 "graphics.ml" 135 4669 4709
+type(
+  int
+)
+ident(
+  int_ref r "graphics.ml" 135 4669 4689 "graphics.ml" 135 4669 4690
+)
+"graphics.ml" 135 4669 4710 "graphics.ml" 135 4669 4711
+type(
+  int
+)
+"graphics.ml" 135 4669 4712 "graphics.ml" 135 4669 4715
+type(
+  int
+)
+"graphics.ml" 135 4669 4693 "graphics.ml" 135 4669 4715
+call(
+  tail
+)
+type(
+  unit
+)
+"graphics.ml" 138 4786 4790 "graphics.ml" 138 4786 4804
+type(
+  int -> unit
+)
+ident(
+  def set_line_width "graphics.ml" 143 4899 4899 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 138 4786 4805 "graphics.ml" 138 4786 4806
+type(
+  int
+)
+ident(
+  def w "graphics.ml" 139 4809 4811 "graphics.ml" 140 4867 4894
+)
+"graphics.ml" 139 4809 4814 "graphics.ml" 139 4809 4815
+type(
+  int
+)
+ident(
+  int_ref w "graphics.ml" 138 4786 4805 "graphics.ml" 138 4786 4806
+)
+"graphics.ml" 139 4809 4816 "graphics.ml" 139 4809 4817
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"graphics.ml" 139 4809 4818 "graphics.ml" 139 4809 4819
+type(
+  int
+)
+"graphics.ml" 139 4809 4814 "graphics.ml" 139 4809 4819
+type(
+  bool
+)
+"graphics.ml" 139 4809 4825 "graphics.ml" 139 4809 4830
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"graphics.ml" 139 4809 4849 "graphics.ml" 139 4809 4865
+type(
+  string
+)
+"graphics.ml" 139 4809 4831 "graphics.ml" 139 4809 4866
+type(
+  exn
+)
+"graphics.ml" 139 4809 4825 "graphics.ml" 139 4809 4866
+type(
+  unit
+)
+"graphics.ml" 140 4867 4874 "graphics.ml" 140 4867 4892
+type(
+  int -> unit
+)
+ident(
+  int_ref raw_set_line_width "graphics.ml" 137 4717 4717 "graphics.ml" 137 4717 4785
+)
+"graphics.ml" 140 4867 4893 "graphics.ml" 140 4867 4894
+type(
+  int
+)
+ident(
+  int_ref w "graphics.ml" 138 4786 4805 "graphics.ml" 138 4786 4806
+)
+"graphics.ml" 140 4867 4874 "graphics.ml" 140 4867 4894
+type(
+  unit
+)
+"graphics.ml" 139 4809 4811 "graphics.ml" 140 4867 4894
+type(
+  unit
+)
+"graphics.ml" 144 4979 4983 "graphics.ml" 144 4979 4992
+type(
+  int -> int -> int -> int -> unit
+)
+ident(
+  def fill_rect "graphics.ml" 149 5098 5098 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 144 4979 4993 "graphics.ml" 144 4979 4994
+type(
+  int
+)
+ident(
+  def x "graphics.ml" 144 4979 4995 "graphics.ml" 146 5065 5093
+)
+"graphics.ml" 144 4979 4995 "graphics.ml" 144 4979 4996
+type(
+  int
+)
+ident(
+  def y "graphics.ml" 144 4979 4997 "graphics.ml" 146 5065 5093
+)
+"graphics.ml" 144 4979 4997 "graphics.ml" 144 4979 4998
+type(
+  int
+)
+ident(
+  def w "graphics.ml" 144 4979 4999 "graphics.ml" 146 5065 5093
+)
+"graphics.ml" 144 4979 4999 "graphics.ml" 144 4979 5000
+type(
+  int
+)
+ident(
+  def h "graphics.ml" 145 5003 5005 "graphics.ml" 146 5065 5093
+)
+"graphics.ml" 145 5003 5008 "graphics.ml" 145 5003 5009
+type(
+  int
+)
+ident(
+  int_ref w "graphics.ml" 144 4979 4997 "graphics.ml" 144 4979 4998
+)
+"graphics.ml" 145 5003 5010 "graphics.ml" 145 5003 5011
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"graphics.ml" 145 5003 5012 "graphics.ml" 145 5003 5013
+type(
+  int
+)
+"graphics.ml" 145 5003 5008 "graphics.ml" 145 5003 5013
+type(
+  bool
+)
+"graphics.ml" 145 5003 5014 "graphics.ml" 145 5003 5016
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"graphics.ml" 145 5003 5017 "graphics.ml" 145 5003 5018
+type(
+  int
+)
+ident(
+  int_ref h "graphics.ml" 144 4979 4999 "graphics.ml" 144 4979 5000
+)
+"graphics.ml" 145 5003 5019 "graphics.ml" 145 5003 5020
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"graphics.ml" 145 5003 5021 "graphics.ml" 145 5003 5022
+type(
+  int
+)
+"graphics.ml" 145 5003 5017 "graphics.ml" 145 5003 5022
+type(
+  bool
+)
+"graphics.ml" 145 5003 5008 "graphics.ml" 145 5003 5022
+type(
+  bool
+)
+"graphics.ml" 145 5003 5028 "graphics.ml" 145 5003 5033
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"graphics.ml" 145 5003 5052 "graphics.ml" 145 5003 5063
+type(
+  string
+)
+"graphics.ml" 145 5003 5034 "graphics.ml" 145 5003 5064
+type(
+  exn
+)
+"graphics.ml" 145 5003 5028 "graphics.ml" 145 5003 5064
+type(
+  unit
+)
+"graphics.ml" 146 5065 5072 "graphics.ml" 146 5065 5085
+type(
+  int -> int -> int -> int -> unit
+)
+ident(
+  int_ref raw_fill_rect "graphics.ml" 143 4899 4899 "graphics.ml" 143 4899 4978
+)
+"graphics.ml" 146 5065 5086 "graphics.ml" 146 5065 5087
+type(
+  int
+)
+ident(
+  int_ref x "graphics.ml" 144 4979 4993 "graphics.ml" 144 4979 4994
+)
+"graphics.ml" 146 5065 5088 "graphics.ml" 146 5065 5089
+type(
+  int
+)
+ident(
+  int_ref y "graphics.ml" 144 4979 4995 "graphics.ml" 144 4979 4996
+)
+"graphics.ml" 146 5065 5090 "graphics.ml" 146 5065 5091
+type(
+  int
+)
+ident(
+  int_ref w "graphics.ml" 144 4979 4997 "graphics.ml" 144 4979 4998
+)
+"graphics.ml" 146 5065 5092 "graphics.ml" 146 5065 5093
+type(
+  int
+)
+ident(
+  int_ref h "graphics.ml" 144 4979 4999 "graphics.ml" 144 4979 5000
+)
+"graphics.ml" 146 5065 5072 "graphics.ml" 146 5065 5093
+type(
+  unit
+)
+"graphics.ml" 145 5003 5005 "graphics.ml" 146 5065 5093
+type(
+  unit
+)
+"graphics.ml" 152 5297 5301 "graphics.ml" 152 5297 5309
+type(
+  int -> int -> int -> int -> int -> int -> unit
+)
+ident(
+  def fill_arc "graphics.ml" 157 5446 5446 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 152 5297 5310 "graphics.ml" 152 5297 5311
+type(
+  int
+)
+ident(
+  def x "graphics.ml" 152 5297 5312 "graphics.ml" 154 5406 5441
+)
+"graphics.ml" 152 5297 5312 "graphics.ml" 152 5297 5313
+type(
+  int
+)
+ident(
+  def y "graphics.ml" 152 5297 5314 "graphics.ml" 154 5406 5441
+)
+"graphics.ml" 152 5297 5314 "graphics.ml" 152 5297 5316
+type(
+  int
+)
+ident(
+  def rx "graphics.ml" 152 5297 5317 "graphics.ml" 154 5406 5441
+)
+"graphics.ml" 152 5297 5317 "graphics.ml" 152 5297 5319
+type(
+  int
+)
+ident(
+  def ry "graphics.ml" 152 5297 5320 "graphics.ml" 154 5406 5441
+)
+"graphics.ml" 152 5297 5320 "graphics.ml" 152 5297 5322
+type(
+  int
+)
+ident(
+  def a1 "graphics.ml" 152 5297 5323 "graphics.ml" 154 5406 5441
+)
+"graphics.ml" 152 5297 5323 "graphics.ml" 152 5297 5325
+type(
+  int
+)
+ident(
+  def a2 "graphics.ml" 153 5328 5330 "graphics.ml" 154 5406 5441
+)
+"graphics.ml" 153 5328 5333 "graphics.ml" 153 5328 5335
+type(
+  int
+)
+ident(
+  int_ref rx "graphics.ml" 152 5297 5314 "graphics.ml" 152 5297 5316
+)
+"graphics.ml" 153 5328 5336 "graphics.ml" 153 5328 5337
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"graphics.ml" 153 5328 5338 "graphics.ml" 153 5328 5339
+type(
+  int
+)
+"graphics.ml" 153 5328 5333 "graphics.ml" 153 5328 5339
+type(
+  bool
+)
+"graphics.ml" 153 5328 5340 "graphics.ml" 153 5328 5342
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"graphics.ml" 153 5328 5343 "graphics.ml" 153 5328 5345
+type(
+  int
+)
+ident(
+  int_ref ry "graphics.ml" 152 5297 5317 "graphics.ml" 152 5297 5319
+)
+"graphics.ml" 153 5328 5346 "graphics.ml" 153 5328 5347
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"graphics.ml" 153 5328 5348 "graphics.ml" 153 5328 5349
+type(
+  int
+)
+"graphics.ml" 153 5328 5343 "graphics.ml" 153 5328 5349
+type(
+  bool
+)
+"graphics.ml" 153 5328 5333 "graphics.ml" 153 5328 5349
+type(
+  bool
+)
+"graphics.ml" 153 5328 5355 "graphics.ml" 153 5328 5360
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"graphics.ml" 153 5328 5379 "graphics.ml" 153 5328 5404
+type(
+  string
+)
+"graphics.ml" 153 5328 5361 "graphics.ml" 153 5328 5405
+type(
+  exn
+)
+"graphics.ml" 153 5328 5355 "graphics.ml" 153 5328 5405
+type(
+  unit
+)
+"graphics.ml" 154 5406 5413 "graphics.ml" 154 5406 5425
+type(
+  int -> int -> int -> int -> int -> int -> unit
+)
+ident(
+  int_ref raw_fill_arc "graphics.ml" 150 5167 5167 "graphics.ml" 151 5238 5296
+)
+"graphics.ml" 154 5406 5426 "graphics.ml" 154 5406 5427
+type(
+  int
+)
+ident(
+  int_ref x "graphics.ml" 152 5297 5310 "graphics.ml" 152 5297 5311
+)
+"graphics.ml" 154 5406 5428 "graphics.ml" 154 5406 5429
+type(
+  int
+)
+ident(
+  int_ref y "graphics.ml" 152 5297 5312 "graphics.ml" 152 5297 5313
+)
+"graphics.ml" 154 5406 5430 "graphics.ml" 154 5406 5432
+type(
+  int
+)
+ident(
+  int_ref rx "graphics.ml" 152 5297 5314 "graphics.ml" 152 5297 5316
+)
+"graphics.ml" 154 5406 5433 "graphics.ml" 154 5406 5435
+type(
+  int
+)
+ident(
+  int_ref ry "graphics.ml" 152 5297 5317 "graphics.ml" 152 5297 5319
+)
+"graphics.ml" 154 5406 5436 "graphics.ml" 154 5406 5438
+type(
+  int
+)
+ident(
+  int_ref a1 "graphics.ml" 152 5297 5320 "graphics.ml" 152 5297 5322
+)
+"graphics.ml" 154 5406 5439 "graphics.ml" 154 5406 5441
+type(
+  int
+)
+ident(
+  int_ref a2 "graphics.ml" 152 5297 5323 "graphics.ml" 152 5297 5325
+)
+"graphics.ml" 154 5406 5413 "graphics.ml" 154 5406 5441
+type(
+  unit
+)
+"graphics.ml" 153 5328 5330 "graphics.ml" 154 5406 5441
+type(
+  unit
+)
+"graphics.ml" 157 5446 5450 "graphics.ml" 157 5446 5462
+type(
+  int -> int -> int -> int -> unit
+)
+ident(
+  def fill_ellipse "graphics.ml" 158 5500 5500 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 157 5446 5463 "graphics.ml" 157 5446 5464
+type(
+  int
+)
+ident(
+  def x "graphics.ml" 157 5446 5465 "graphics.ml" 157 5446 5499
+)
+"graphics.ml" 157 5446 5465 "graphics.ml" 157 5446 5466
+type(
+  int
+)
+ident(
+  def y "graphics.ml" 157 5446 5467 "graphics.ml" 157 5446 5499
+)
+"graphics.ml" 157 5446 5467 "graphics.ml" 157 5446 5469
+type(
+  int
+)
+ident(
+  def rx "graphics.ml" 157 5446 5470 "graphics.ml" 157 5446 5499
+)
+"graphics.ml" 157 5446 5470 "graphics.ml" 157 5446 5472
+type(
+  int
+)
+ident(
+  def ry "graphics.ml" 157 5446 5475 "graphics.ml" 157 5446 5499
+)
+"graphics.ml" 157 5446 5475 "graphics.ml" 157 5446 5483
+type(
+  int -> int -> int -> int -> int -> int -> unit
+)
+ident(
+  int_ref fill_arc "graphics.ml" 152 5297 5301 "graphics.ml" 152 5297 5309
+)
+"graphics.ml" 157 5446 5484 "graphics.ml" 157 5446 5485
+type(
+  int
+)
+ident(
+  int_ref x "graphics.ml" 157 5446 5463 "graphics.ml" 157 5446 5464
+)
+"graphics.ml" 157 5446 5486 "graphics.ml" 157 5446 5487
+type(
+  int
+)
+ident(
+  int_ref y "graphics.ml" 157 5446 5465 "graphics.ml" 157 5446 5466
+)
+"graphics.ml" 157 5446 5488 "graphics.ml" 157 5446 5490
+type(
+  int
+)
+ident(
+  int_ref rx "graphics.ml" 157 5446 5467 "graphics.ml" 157 5446 5469
+)
+"graphics.ml" 157 5446 5491 "graphics.ml" 157 5446 5493
+type(
+  int
+)
+ident(
+  int_ref ry "graphics.ml" 157 5446 5470 "graphics.ml" 157 5446 5472
+)
+"graphics.ml" 157 5446 5494 "graphics.ml" 157 5446 5495
+type(
+  int
+)
+"graphics.ml" 157 5446 5496 "graphics.ml" 157 5446 5499
+type(
+  int
+)
+"graphics.ml" 157 5446 5475 "graphics.ml" 157 5446 5499
+call(
+  tail
+)
+type(
+  unit
+)
+"graphics.ml" 158 5500 5504 "graphics.ml" 158 5500 5515
+type(
+  int -> int -> int -> unit
+)
+ident(
+  def fill_circle "graphics.ml" 162 5560 5560 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 158 5500 5516 "graphics.ml" 158 5500 5517
+type(
+  int
+)
+ident(
+  def x "graphics.ml" 158 5500 5518 "graphics.ml" 158 5500 5546
+)
+"graphics.ml" 158 5500 5518 "graphics.ml" 158 5500 5519
+type(
+  int
+)
+ident(
+  def y "graphics.ml" 158 5500 5520 "graphics.ml" 158 5500 5546
+)
+"graphics.ml" 158 5500 5520 "graphics.ml" 158 5500 5521
+type(
+  int
+)
+ident(
+  def r "graphics.ml" 158 5500 5524 "graphics.ml" 158 5500 5546
+)
+"graphics.ml" 158 5500 5524 "graphics.ml" 158 5500 5532
+type(
+  int -> int -> int -> int -> int -> int -> unit
+)
+ident(
+  int_ref fill_arc "graphics.ml" 152 5297 5301 "graphics.ml" 152 5297 5309
+)
+"graphics.ml" 158 5500 5533 "graphics.ml" 158 5500 5534
+type(
+  int
+)
+ident(
+  int_ref x "graphics.ml" 158 5500 5516 "graphics.ml" 158 5500 5517
+)
+"graphics.ml" 158 5500 5535 "graphics.ml" 158 5500 5536
+type(
+  int
+)
+ident(
+  int_ref y "graphics.ml" 158 5500 5518 "graphics.ml" 158 5500 5519
+)
+"graphics.ml" 158 5500 5537 "graphics.ml" 158 5500 5538
+type(
+  int
+)
+ident(
+  int_ref r "graphics.ml" 158 5500 5520 "graphics.ml" 158 5500 5521
+)
+"graphics.ml" 158 5500 5539 "graphics.ml" 158 5500 5540
+type(
+  int
+)
+ident(
+  int_ref r "graphics.ml" 158 5500 5520 "graphics.ml" 158 5500 5521
+)
+"graphics.ml" 158 5500 5541 "graphics.ml" 158 5500 5542
+type(
+  int
+)
+"graphics.ml" 158 5500 5543 "graphics.ml" 158 5500 5546
+type(
+  int
+)
+"graphics.ml" 158 5500 5524 "graphics.ml" 158 5500 5546
+call(
+  tail
+)
+type(
+  unit
+)
+"graphics.ml" 172 5887 5891 "graphics.ml" 172 5887 5897
+type(
+  int
+)
+ident(
+  def transp "graphics.ml" 174 5904 5904 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 172 5887 5900 "graphics.ml" 172 5887 5902
+type(
+  int
+)
+"graphics.ml" 180 6264 6268 "graphics.ml" 180 6264 6277
+type(
+  int -> int -> int -> int -> image
+)
+ident(
+  def get_image "graphics.ml" 187 6369 6369 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 180 6264 6278 "graphics.ml" 180 6264 6279
+type(
+  int
+)
+ident(
+  def x "graphics.ml" 180 6264 6280 "graphics.ml" 183 6346 6353
+)
+"graphics.ml" 180 6264 6280 "graphics.ml" 180 6264 6281
+type(
+  int
+)
+ident(
+  def y "graphics.ml" 180 6264 6282 "graphics.ml" 183 6346 6353
+)
+"graphics.ml" 180 6264 6282 "graphics.ml" 180 6264 6283
+type(
+  int
+)
+ident(
+  def w "graphics.ml" 180 6264 6284 "graphics.ml" 183 6346 6353
+)
+"graphics.ml" 180 6264 6284 "graphics.ml" 180 6264 6285
+type(
+  int
+)
+ident(
+  def h "graphics.ml" 181 6288 6290 "graphics.ml" 183 6346 6353
+)
+"graphics.ml" 181 6288 6294 "graphics.ml" 181 6288 6299
+type(
+  image
+)
+ident(
+  def image "graphics.ml" 182 6322 6324 "graphics.ml" 183 6346 6353
+)
+"graphics.ml" 181 6288 6302 "graphics.ml" 181 6288 6314
+type(
+  int -> int -> image
+)
+ident(
+  int_ref create_image "graphics.ml" 177 6121 6121 "graphics.ml" 177 6121 6189
+)
+"graphics.ml" 181 6288 6315 "graphics.ml" 181 6288 6316
+type(
+  int
+)
+ident(
+  int_ref w "graphics.ml" 180 6264 6282 "graphics.ml" 180 6264 6283
+)
+"graphics.ml" 181 6288 6317 "graphics.ml" 181 6288 6318
+type(
+  int
+)
+ident(
+  int_ref h "graphics.ml" 180 6264 6284 "graphics.ml" 180 6264 6285
+)
+"graphics.ml" 181 6288 6302 "graphics.ml" 181 6288 6318
+type(
+  image
+)
+"graphics.ml" 182 6322 6324 "graphics.ml" 182 6322 6334
+type(
+  image -> int -> int -> unit
+)
+ident(
+  int_ref blit_image "graphics.ml" 178 6190 6190 "graphics.ml" 178 6190 6262
+)
+"graphics.ml" 182 6322 6335 "graphics.ml" 182 6322 6340
+type(
+  image
+)
+ident(
+  int_ref image "graphics.ml" 181 6288 6294 "graphics.ml" 181 6288 6299
+)
+"graphics.ml" 182 6322 6341 "graphics.ml" 182 6322 6342
+type(
+  int
+)
+ident(
+  int_ref x "graphics.ml" 180 6264 6278 "graphics.ml" 180 6264 6279
+)
+"graphics.ml" 182 6322 6343 "graphics.ml" 182 6322 6344
+type(
+  int
+)
+ident(
+  int_ref y "graphics.ml" 180 6264 6280 "graphics.ml" 180 6264 6281
+)
+"graphics.ml" 182 6322 6324 "graphics.ml" 182 6322 6344
+type(
+  unit
+)
+"graphics.ml" 183 6346 6348 "graphics.ml" 183 6346 6353
+type(
+  image
+)
+ident(
+  int_ref image "graphics.ml" 181 6288 6294 "graphics.ml" 181 6288 6299
+)
+"graphics.ml" 182 6322 6324 "graphics.ml" 183 6346 6353
+type(
+  image
+)
+"graphics.ml" 181 6288 6290 "graphics.ml" 183 6346 6353
+type(
+  image
+)
+"graphics.ml" 203 6639 6643 "graphics.ml" 203 6639 6652
+type(
+  unit -> int * int
+)
+ident(
+  def mouse_pos "graphics.ml" 206 6718 6718 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 203 6639 6653 "graphics.ml" 203 6639 6655
+type(
+  unit
+)
+"graphics.ml" 204 6658 6664 "graphics.ml" 204 6658 6665
+type(
+  status
+)
+ident(
+  def e "graphics.ml" 204 6658 6694 "graphics.ml" 204 6658 6716
+)
+"graphics.ml" 204 6658 6668 "graphics.ml" 204 6658 6683
+type(
+  event list -> status
+)
+ident(
+  int_ref wait_next_event "graphics.ml" 201 6567 6567 "graphics.ml" 201 6567 6637
+)
+"graphics.ml" 204 6658 6685 "graphics.ml" 204 6658 6689
+type(
+  event
+)
+"graphics.ml" 204 6658 6684 "graphics.ml" 204 6658 6690
+type(
+  event list
+)
+"graphics.ml" 204 6658 6668 "graphics.ml" 204 6658 6690
+type(
+  status
+)
+"graphics.ml" 204 6658 6695 "graphics.ml" 204 6658 6696
+type(
+  status
+)
+ident(
+  int_ref e "graphics.ml" 204 6658 6664 "graphics.ml" 204 6658 6665
+)
+"graphics.ml" 204 6658 6695 "graphics.ml" 204 6658 6704
+type(
+  int
+)
+"graphics.ml" 204 6658 6706 "graphics.ml" 204 6658 6707
+type(
+  status
+)
+ident(
+  int_ref e "graphics.ml" 204 6658 6664 "graphics.ml" 204 6658 6665
+)
+"graphics.ml" 204 6658 6706 "graphics.ml" 204 6658 6715
+type(
+  int
+)
+"graphics.ml" 204 6658 6694 "graphics.ml" 204 6658 6716
+type(
+  int * int
+)
+"graphics.ml" 204 6658 6660 "graphics.ml" 204 6658 6716
+type(
+  int * int
+)
+"graphics.ml" 206 6718 6722 "graphics.ml" 206 6718 6733
+type(
+  unit -> bool
+)
+ident(
+  def button_down "graphics.ml" 209 6785 6785 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 206 6718 6734 "graphics.ml" 206 6718 6736
+type(
+  unit
+)
+"graphics.ml" 207 6739 6745 "graphics.ml" 207 6739 6746
+type(
+  status
+)
+ident(
+  def e "graphics.ml" 207 6739 6775 "graphics.ml" 207 6739 6783
+)
+"graphics.ml" 207 6739 6749 "graphics.ml" 207 6739 6764
+type(
+  event list -> status
+)
+ident(
+  int_ref wait_next_event "graphics.ml" 201 6567 6567 "graphics.ml" 201 6567 6637
+)
+"graphics.ml" 207 6739 6766 "graphics.ml" 207 6739 6770
+type(
+  event
+)
+"graphics.ml" 207 6739 6765 "graphics.ml" 207 6739 6771
+type(
+  event list
+)
+"graphics.ml" 207 6739 6749 "graphics.ml" 207 6739 6771
+type(
+  status
+)
+"graphics.ml" 207 6739 6775 "graphics.ml" 207 6739 6776
+type(
+  status
+)
+ident(
+  int_ref e "graphics.ml" 207 6739 6745 "graphics.ml" 207 6739 6746
+)
+"graphics.ml" 207 6739 6775 "graphics.ml" 207 6739 6783
+type(
+  bool
+)
+"graphics.ml" 207 6739 6741 "graphics.ml" 207 6739 6783
+type(
+  bool
+)
+"graphics.ml" 209 6785 6789 "graphics.ml" 209 6785 6797
+type(
+  unit -> char
+)
+ident(
+  def read_key "graphics.ml" 212 6853 6853 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 209 6785 6798 "graphics.ml" 209 6785 6800
+type(
+  unit
+)
+"graphics.ml" 210 6803 6809 "graphics.ml" 210 6803 6810
+type(
+  status
+)
+ident(
+  def e "graphics.ml" 210 6803 6846 "graphics.ml" 210 6803 6851
+)
+"graphics.ml" 210 6803 6813 "graphics.ml" 210 6803 6828
+type(
+  event list -> status
+)
+ident(
+  int_ref wait_next_event "graphics.ml" 201 6567 6567 "graphics.ml" 201 6567 6637
+)
+"graphics.ml" 210 6803 6830 "graphics.ml" 210 6803 6841
+type(
+  event
+)
+"graphics.ml" 210 6803 6829 "graphics.ml" 210 6803 6842
+type(
+  event list
+)
+"graphics.ml" 210 6803 6813 "graphics.ml" 210 6803 6842
+type(
+  status
+)
+"graphics.ml" 210 6803 6846 "graphics.ml" 210 6803 6847
+type(
+  status
+)
+ident(
+  int_ref e "graphics.ml" 210 6803 6809 "graphics.ml" 210 6803 6810
+)
+"graphics.ml" 210 6803 6846 "graphics.ml" 210 6803 6851
+type(
+  char
+)
+"graphics.ml" 210 6803 6805 "graphics.ml" 210 6803 6851
+type(
+  char
+)
+"graphics.ml" 212 6853 6857 "graphics.ml" 212 6853 6868
+type(
+  unit -> bool
+)
+ident(
+  def key_pressed "graphics.ml" 215 6924 6924 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 212 6853 6869 "graphics.ml" 212 6853 6871
+type(
+  unit
+)
+"graphics.ml" 213 6874 6880 "graphics.ml" 213 6874 6881
+type(
+  status
+)
+ident(
+  def e "graphics.ml" 213 6874 6910 "graphics.ml" 213 6874 6922
+)
+"graphics.ml" 213 6874 6884 "graphics.ml" 213 6874 6899
+type(
+  event list -> status
+)
+ident(
+  int_ref wait_next_event "graphics.ml" 201 6567 6567 "graphics.ml" 201 6567 6637
+)
+"graphics.ml" 213 6874 6901 "graphics.ml" 213 6874 6905
+type(
+  event
+)
+"graphics.ml" 213 6874 6900 "graphics.ml" 213 6874 6906
+type(
+  event list
+)
+"graphics.ml" 213 6874 6884 "graphics.ml" 213 6874 6906
+type(
+  status
+)
+"graphics.ml" 213 6874 6910 "graphics.ml" 213 6874 6911
+type(
+  status
+)
+ident(
+  int_ref e "graphics.ml" 213 6874 6880 "graphics.ml" 213 6874 6881
+)
+"graphics.ml" 213 6874 6910 "graphics.ml" 213 6874 6922
+type(
+  bool
+)
+"graphics.ml" 213 6874 6876 "graphics.ml" 213 6874 6922
+type(
+  bool
+)
+"graphics.ml" 215 6924 6928 "graphics.ml" 215 6924 6940
+type(
+  event list -> (status -> 'a) -> unit
+)
+ident(
+  def loop_at_exit "graphics.ml" 229 7225 7225 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 215 6924 6941 "graphics.ml" 215 6924 6947
+type(
+  event list
+)
+ident(
+  def events "graphics.ml" 215 6924 6948 "graphics.ml" 225 7205 7208
+)
+"graphics.ml" 215 6924 6948 "graphics.ml" 215 6924 6955
+type(
+  status -> 'a
+)
+ident(
+  def handler "graphics.ml" 216 6958 6960 "graphics.ml" 225 7205 7208
+)
+"graphics.ml" 216 6958 6964 "graphics.ml" 216 6958 6970
+type(
+  event list
+)
+ident(
+  def events "graphics.ml" 217 7016 7018 "graphics.ml" 225 7205 7208
+)
+"graphics.ml" 216 6958 6973 "graphics.ml" 216 6958 6984
+type(
+  (event -> bool) -> event list -> event list
+)
+ident(
+  ext_ref List.filter
+)
+"graphics.ml" 216 6958 6990 "graphics.ml" 216 6958 6991
+type(
+  event
+)
+ident(
+  def e "graphics.ml" 216 6958 6995 "graphics.ml" 216 6958 7004
+)
+"graphics.ml" 216 6958 6995 "graphics.ml" 216 6958 6996
+type(
+  event
+)
+ident(
+  int_ref e "graphics.ml" 216 6958 6990 "graphics.ml" 216 6958 6991
+)
+"graphics.ml" 216 6958 6997 "graphics.ml" 216 6958 6999
+type(
+  event -> event -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"graphics.ml" 216 6958 7000 "graphics.ml" 216 6958 7004
+type(
+  event
+)
+"graphics.ml" 216 6958 6995 "graphics.ml" 216 6958 7004
+type(
+  bool
+)
+"graphics.ml" 216 6958 6985 "graphics.ml" 216 6958 7005
+type(
+  event -> bool
+)
+"graphics.ml" 216 6958 7006 "graphics.ml" 216 6958 7012
+type(
+  event list
+)
+ident(
+  int_ref events "graphics.ml" 215 6924 6941 "graphics.ml" 215 6924 6947
+)
+"graphics.ml" 216 6958 6973 "graphics.ml" 216 6958 7012
+call(
+  stack
+)
+type(
+  event list
+)
+"graphics.ml" 217 7016 7018 "graphics.ml" 217 7016 7025
+type(
+  (unit -> unit) -> unit
+)
+ident(
+  ext_ref Pervasives.at_exit
+)
+"graphics.ml" 217 7016 7031 "graphics.ml" 217 7016 7032
+type(
+  unit
+)
+"graphics.ml" 219 7044 7056 "graphics.ml" 219 7044 7060
+type(
+  bool
+)
+"graphics.ml" 220 7064 7076 "graphics.ml" 220 7064 7077
+type(
+  status
+)
+ident(
+  def e "graphics.ml" 221 7106 7114 "graphics.ml" 221 7106 7123
+)
+"graphics.ml" 220 7064 7080 "graphics.ml" 220 7064 7095
+type(
+  event list -> status
+)
+ident(
+  int_ref wait_next_event "graphics.ml" 201 6567 6567 "graphics.ml" 201 6567 6637
+)
+"graphics.ml" 220 7064 7096 "graphics.ml" 220 7064 7102
+type(
+  event list
+)
+ident(
+  int_ref events "graphics.ml" 216 6958 6964 "graphics.ml" 216 6958 6970
+)
+"graphics.ml" 220 7064 7080 "graphics.ml" 220 7064 7102
+type(
+  status
+)
+"graphics.ml" 221 7106 7114 "graphics.ml" 221 7106 7121
+type(
+  status -> 'a
+)
+ident(
+  int_ref handler "graphics.ml" 215 6924 6948 "graphics.ml" 215 6924 6955
+)
+"graphics.ml" 221 7106 7122 "graphics.ml" 221 7106 7123
+type(
+  status
+)
+ident(
+  int_ref e "graphics.ml" 220 7064 7076 "graphics.ml" 220 7064 7077
+)
+"graphics.ml" 221 7106 7114 "graphics.ml" 221 7106 7123
+call(
+  stack
+)
+type(
+  'a
+)
+"graphics.ml" 220 7064 7072 "graphics.ml" 221 7106 7123
+type(
+  'a
+)
+"graphics.ml" 219 7044 7050 "graphics.ml" 222 7124 7134
+type(
+  unit
+)
+"graphics.ml" 223 7135 7144 "graphics.ml" 223 7135 7148
+type(
+  exn
+)
+"graphics.ml" 223 7135 7152 "graphics.ml" 223 7135 7163
+type(
+  unit -> unit
+)
+ident(
+  int_ref close_graph "graphics.ml" 34 1503 1520 "graphics.ml" 34 1503 1531
+)
+"graphics.ml" 223 7135 7164 "graphics.ml" 223 7135 7166
+type(
+  unit
+)
+"graphics.ml" 223 7135 7152 "graphics.ml" 223 7135 7166
+call(
+  tail
+)
+type(
+  unit
+)
+"graphics.ml" 224 7167 7176 "graphics.ml" 224 7167 7177
+type(
+  exn
+)
+ident(
+  def e "graphics.ml" 224 7167 7181 "graphics.ml" 224 7167 7204
+)
+"graphics.ml" 224 7167 7181 "graphics.ml" 224 7167 7192
+type(
+  unit -> unit
+)
+ident(
+  int_ref close_graph "graphics.ml" 34 1503 1520 "graphics.ml" 34 1503 1531
+)
+"graphics.ml" 224 7167 7193 "graphics.ml" 224 7167 7195
+type(
+  unit
+)
+"graphics.ml" 224 7167 7181 "graphics.ml" 224 7167 7195
+call(
+  stack
+)
+type(
+  unit
+)
+"graphics.ml" 224 7167 7197 "graphics.ml" 224 7167 7202
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"graphics.ml" 224 7167 7203 "graphics.ml" 224 7167 7204
+type(
+  exn
+)
+ident(
+  int_ref e "graphics.ml" 224 7167 7176 "graphics.ml" 224 7167 7177
+)
+"graphics.ml" 224 7167 7197 "graphics.ml" 224 7167 7204
+type(
+  unit
+)
+"graphics.ml" 224 7167 7181 "graphics.ml" 224 7167 7204
+type(
+  unit
+)
+"graphics.ml" 218 7036 7040 "graphics.ml" 224 7167 7204
+type(
+  unit
+)
+"graphics.ml" 217 7016 7026 "graphics.ml" 225 7205 7208
+type(
+  unit -> unit
+)
+"graphics.ml" 217 7016 7018 "graphics.ml" 225 7205 7208
+call(
+  tail
+)
+type(
+  unit
+)
+"graphics.ml" 216 6958 6960 "graphics.ml" 225 7205 7208
+type(
+  unit
+)
+"graphics.ml" 232 7294 7298 "graphics.ml" 232 7294 7301
+type(
+  float * float -> float * float -> float * float
+)
+ident(
+  def add "graphics.ml" 238 7576 7576 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 232 7294 7303 "graphics.ml" 232 7294 7305
+type(
+  float
+)
+ident(
+  def x1 "graphics.ml" 232 7294 7311 "graphics.ml" 232 7294 7342
+)
+"graphics.ml" 232 7294 7307 "graphics.ml" 232 7294 7309
+type(
+  float
+)
+ident(
+  def y1 "graphics.ml" 232 7294 7311 "graphics.ml" 232 7294 7342
+)
+"graphics.ml" 232 7294 7302 "graphics.ml" 232 7294 7310
+type(
+  float * float
+)
+"graphics.ml" 232 7294 7312 "graphics.ml" 232 7294 7314
+type(
+  float
+)
+ident(
+  def x2 "graphics.ml" 232 7294 7322 "graphics.ml" 232 7294 7342
+)
+"graphics.ml" 232 7294 7316 "graphics.ml" 232 7294 7318
+type(
+  float
+)
+ident(
+  def y2 "graphics.ml" 232 7294 7322 "graphics.ml" 232 7294 7342
+)
+"graphics.ml" 232 7294 7311 "graphics.ml" 232 7294 7319
+type(
+  float * float
+)
+"graphics.ml" 232 7294 7323 "graphics.ml" 232 7294 7325
+type(
+  float
+)
+ident(
+  int_ref x1 "graphics.ml" 232 7294 7303 "graphics.ml" 232 7294 7305
+)
+"graphics.ml" 232 7294 7326 "graphics.ml" 232 7294 7328
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( +. )
+)
+"graphics.ml" 232 7294 7329 "graphics.ml" 232 7294 7331
+type(
+  float
+)
+ident(
+  int_ref x2 "graphics.ml" 232 7294 7312 "graphics.ml" 232 7294 7314
+)
+"graphics.ml" 232 7294 7323 "graphics.ml" 232 7294 7331
+type(
+  float
+)
+"graphics.ml" 232 7294 7333 "graphics.ml" 232 7294 7335
+type(
+  float
+)
+ident(
+  int_ref y1 "graphics.ml" 232 7294 7307 "graphics.ml" 232 7294 7309
+)
+"graphics.ml" 232 7294 7336 "graphics.ml" 232 7294 7338
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( +. )
+)
+"graphics.ml" 232 7294 7339 "graphics.ml" 232 7294 7341
+type(
+  float
+)
+ident(
+  int_ref y2 "graphics.ml" 232 7294 7316 "graphics.ml" 232 7294 7318
+)
+"graphics.ml" 232 7294 7333 "graphics.ml" 232 7294 7341
+type(
+  float
+)
+"graphics.ml" 232 7294 7322 "graphics.ml" 232 7294 7342
+type(
+  float * float
+)
+"graphics.ml" 233 7343 7347 "graphics.ml" 233 7343 7350
+type(
+  float * float -> float * float -> float * float
+)
+ident(
+  def sub "graphics.ml" 238 7576 7576 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 233 7343 7352 "graphics.ml" 233 7343 7354
+type(
+  float
+)
+ident(
+  def x1 "graphics.ml" 233 7343 7360 "graphics.ml" 233 7343 7391
+)
+"graphics.ml" 233 7343 7356 "graphics.ml" 233 7343 7358
+type(
+  float
+)
+ident(
+  def y1 "graphics.ml" 233 7343 7360 "graphics.ml" 233 7343 7391
+)
+"graphics.ml" 233 7343 7351 "graphics.ml" 233 7343 7359
+type(
+  float * float
+)
+"graphics.ml" 233 7343 7361 "graphics.ml" 233 7343 7363
+type(
+  float
+)
+ident(
+  def x2 "graphics.ml" 233 7343 7371 "graphics.ml" 233 7343 7391
+)
+"graphics.ml" 233 7343 7365 "graphics.ml" 233 7343 7367
+type(
+  float
+)
+ident(
+  def y2 "graphics.ml" 233 7343 7371 "graphics.ml" 233 7343 7391
+)
+"graphics.ml" 233 7343 7360 "graphics.ml" 233 7343 7368
+type(
+  float * float
+)
+"graphics.ml" 233 7343 7372 "graphics.ml" 233 7343 7374
+type(
+  float
+)
+ident(
+  int_ref x1 "graphics.ml" 233 7343 7352 "graphics.ml" 233 7343 7354
+)
+"graphics.ml" 233 7343 7375 "graphics.ml" 233 7343 7377
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"graphics.ml" 233 7343 7378 "graphics.ml" 233 7343 7380
+type(
+  float
+)
+ident(
+  int_ref x2 "graphics.ml" 233 7343 7361 "graphics.ml" 233 7343 7363
+)
+"graphics.ml" 233 7343 7372 "graphics.ml" 233 7343 7380
+type(
+  float
+)
+"graphics.ml" 233 7343 7382 "graphics.ml" 233 7343 7384
+type(
+  float
+)
+ident(
+  int_ref y1 "graphics.ml" 233 7343 7356 "graphics.ml" 233 7343 7358
+)
+"graphics.ml" 233 7343 7385 "graphics.ml" 233 7343 7387
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"graphics.ml" 233 7343 7388 "graphics.ml" 233 7343 7390
+type(
+  float
+)
+ident(
+  int_ref y2 "graphics.ml" 233 7343 7365 "graphics.ml" 233 7343 7367
+)
+"graphics.ml" 233 7343 7382 "graphics.ml" 233 7343 7390
+type(
+  float
+)
+"graphics.ml" 233 7343 7371 "graphics.ml" 233 7343 7391
+type(
+  float * float
+)
+"graphics.ml" 234 7392 7396 "graphics.ml" 234 7392 7402
+type(
+  float * float -> float * float -> float * float
+)
+ident(
+  def middle "graphics.ml" 238 7576 7576 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 234 7392 7404 "graphics.ml" 234 7392 7406
+type(
+  float
+)
+ident(
+  def x1 "graphics.ml" 234 7392 7412 "graphics.ml" 234 7392 7462
+)
+"graphics.ml" 234 7392 7408 "graphics.ml" 234 7392 7410
+type(
+  float
+)
+ident(
+  def y1 "graphics.ml" 234 7392 7412 "graphics.ml" 234 7392 7462
+)
+"graphics.ml" 234 7392 7403 "graphics.ml" 234 7392 7411
+type(
+  float * float
+)
+"graphics.ml" 234 7392 7413 "graphics.ml" 234 7392 7415
+type(
+  float
+)
+ident(
+  def x2 "graphics.ml" 234 7392 7423 "graphics.ml" 234 7392 7462
+)
+"graphics.ml" 234 7392 7417 "graphics.ml" 234 7392 7419
+type(
+  float
+)
+ident(
+  def y2 "graphics.ml" 234 7392 7423 "graphics.ml" 234 7392 7462
+)
+"graphics.ml" 234 7392 7412 "graphics.ml" 234 7392 7420
+type(
+  float * float
+)
+"graphics.ml" 234 7392 7425 "graphics.ml" 234 7392 7427
+type(
+  float
+)
+ident(
+  int_ref x1 "graphics.ml" 234 7392 7404 "graphics.ml" 234 7392 7406
+)
+"graphics.ml" 234 7392 7428 "graphics.ml" 234 7392 7430
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( +. )
+)
+"graphics.ml" 234 7392 7431 "graphics.ml" 234 7392 7433
+type(
+  float
+)
+ident(
+  int_ref x2 "graphics.ml" 234 7392 7413 "graphics.ml" 234 7392 7415
+)
+"graphics.ml" 234 7392 7424 "graphics.ml" 234 7392 7434
+type(
+  float
+)
+"graphics.ml" 234 7392 7435 "graphics.ml" 234 7392 7437
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( /. )
+)
+"graphics.ml" 234 7392 7438 "graphics.ml" 234 7392 7441
+type(
+  float
+)
+"graphics.ml" 234 7392 7424 "graphics.ml" 234 7392 7441
+type(
+  float
+)
+"graphics.ml" 234 7392 7445 "graphics.ml" 234 7392 7447
+type(
+  float
+)
+ident(
+  int_ref y1 "graphics.ml" 234 7392 7408 "graphics.ml" 234 7392 7410
+)
+"graphics.ml" 234 7392 7448 "graphics.ml" 234 7392 7450
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( +. )
+)
+"graphics.ml" 234 7392 7451 "graphics.ml" 234 7392 7453
+type(
+  float
+)
+ident(
+  int_ref y2 "graphics.ml" 234 7392 7417 "graphics.ml" 234 7392 7419
+)
+"graphics.ml" 234 7392 7444 "graphics.ml" 234 7392 7454
+type(
+  float
+)
+"graphics.ml" 234 7392 7455 "graphics.ml" 234 7392 7457
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( /. )
+)
+"graphics.ml" 234 7392 7458 "graphics.ml" 234 7392 7461
+type(
+  float
+)
+"graphics.ml" 234 7392 7444 "graphics.ml" 234 7392 7461
+type(
+  float
+)
+"graphics.ml" 234 7392 7423 "graphics.ml" 234 7392 7462
+type(
+  float * float
+)
+"graphics.ml" 235 7463 7467 "graphics.ml" 235 7463 7471
+type(
+  float * float -> float * float -> float
+)
+ident(
+  def area "graphics.ml" 238 7576 7576 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 235 7463 7473 "graphics.ml" 235 7463 7475
+type(
+  float
+)
+ident(
+  def x1 "graphics.ml" 235 7463 7481 "graphics.ml" 235 7463 7524
+)
+"graphics.ml" 235 7463 7477 "graphics.ml" 235 7463 7479
+type(
+  float
+)
+ident(
+  def y1 "graphics.ml" 235 7463 7481 "graphics.ml" 235 7463 7524
+)
+"graphics.ml" 235 7463 7472 "graphics.ml" 235 7463 7480
+type(
+  float * float
+)
+"graphics.ml" 235 7463 7482 "graphics.ml" 235 7463 7484
+type(
+  float
+)
+ident(
+  def x2 "graphics.ml" 235 7463 7492 "graphics.ml" 235 7463 7524
+)
+"graphics.ml" 235 7463 7486 "graphics.ml" 235 7463 7488
+type(
+  float
+)
+ident(
+  def y2 "graphics.ml" 235 7463 7492 "graphics.ml" 235 7463 7524
+)
+"graphics.ml" 235 7463 7481 "graphics.ml" 235 7463 7489
+type(
+  float * float
+)
+"graphics.ml" 235 7463 7492 "graphics.ml" 235 7463 7501
+type(
+  float -> float
+)
+ident(
+  ext_ref Pervasives.abs_float
+)
+"graphics.ml" 235 7463 7503 "graphics.ml" 235 7463 7505
+type(
+  float
+)
+ident(
+  int_ref x1 "graphics.ml" 235 7463 7473 "graphics.ml" 235 7463 7475
+)
+"graphics.ml" 235 7463 7506 "graphics.ml" 235 7463 7508
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"graphics.ml" 235 7463 7509 "graphics.ml" 235 7463 7511
+type(
+  float
+)
+ident(
+  int_ref y2 "graphics.ml" 235 7463 7486 "graphics.ml" 235 7463 7488
+)
+"graphics.ml" 235 7463 7503 "graphics.ml" 235 7463 7511
+type(
+  float
+)
+"graphics.ml" 235 7463 7512 "graphics.ml" 235 7463 7514
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"graphics.ml" 235 7463 7515 "graphics.ml" 235 7463 7517
+type(
+  float
+)
+ident(
+  int_ref x2 "graphics.ml" 235 7463 7482 "graphics.ml" 235 7463 7484
+)
+"graphics.ml" 235 7463 7518 "graphics.ml" 235 7463 7520
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"graphics.ml" 235 7463 7521 "graphics.ml" 235 7463 7523
+type(
+  float
+)
+ident(
+  int_ref y1 "graphics.ml" 235 7463 7477 "graphics.ml" 235 7463 7479
+)
+"graphics.ml" 235 7463 7515 "graphics.ml" 235 7463 7523
+type(
+  float
+)
+"graphics.ml" 235 7463 7502 "graphics.ml" 235 7463 7524
+type(
+  float
+)
+"graphics.ml" 235 7463 7492 "graphics.ml" 235 7463 7524
+type(
+  float
+)
+"graphics.ml" 236 7525 7529 "graphics.ml" 236 7525 7533
+type(
+  float * float -> float
+)
+ident(
+  def norm "graphics.ml" 238 7576 7576 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 236 7525 7535 "graphics.ml" 236 7525 7537
+type(
+  float
+)
+ident(
+  def x1 "graphics.ml" 236 7525 7545 "graphics.ml" 236 7525 7572
+)
+"graphics.ml" 236 7525 7539 "graphics.ml" 236 7525 7541
+type(
+  float
+)
+ident(
+  def y1 "graphics.ml" 236 7525 7545 "graphics.ml" 236 7525 7572
+)
+"graphics.ml" 236 7525 7534 "graphics.ml" 236 7525 7542
+type(
+  float * float
+)
+"graphics.ml" 236 7525 7545 "graphics.ml" 236 7525 7549
+type(
+  float -> float
+)
+ident(
+  ext_ref Pervasives.sqrt
+)
+"graphics.ml" 236 7525 7551 "graphics.ml" 236 7525 7553
+type(
+  float
+)
+ident(
+  int_ref x1 "graphics.ml" 236 7525 7535 "graphics.ml" 236 7525 7537
+)
+"graphics.ml" 236 7525 7554 "graphics.ml" 236 7525 7556
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"graphics.ml" 236 7525 7557 "graphics.ml" 236 7525 7559
+type(
+  float
+)
+ident(
+  int_ref x1 "graphics.ml" 236 7525 7535 "graphics.ml" 236 7525 7537
+)
+"graphics.ml" 236 7525 7551 "graphics.ml" 236 7525 7559
+type(
+  float
+)
+"graphics.ml" 236 7525 7560 "graphics.ml" 236 7525 7562
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( +. )
+)
+"graphics.ml" 236 7525 7563 "graphics.ml" 236 7525 7565
+type(
+  float
+)
+ident(
+  int_ref y1 "graphics.ml" 236 7525 7539 "graphics.ml" 236 7525 7541
+)
+"graphics.ml" 236 7525 7566 "graphics.ml" 236 7525 7568
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"graphics.ml" 236 7525 7569 "graphics.ml" 236 7525 7571
+type(
+  float
+)
+ident(
+  int_ref y1 "graphics.ml" 236 7525 7539 "graphics.ml" 236 7525 7541
+)
+"graphics.ml" 236 7525 7563 "graphics.ml" 236 7525 7571
+type(
+  float
+)
+"graphics.ml" 236 7525 7550 "graphics.ml" 236 7525 7572
+type(
+  float
+)
+"graphics.ml" 236 7525 7545 "graphics.ml" 236 7525 7572
+type(
+  float
+)
+"graphics.ml" 238 7576 7580 "graphics.ml" 238 7576 7584
+type(
+  float * float -> float * float -> float * float -> float * float -> bool
+)
+ident(
+  def test "graphics.ml" 243 7685 7685 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 238 7576 7585 "graphics.ml" 238 7576 7586
+type(
+  float * float
+)
+ident(
+  def a "graphics.ml" 238 7576 7587 "graphics.ml" 241 7634 7681
+)
+"graphics.ml" 238 7576 7587 "graphics.ml" 238 7576 7588
+type(
+  float * float
+)
+ident(
+  def b "graphics.ml" 238 7576 7589 "graphics.ml" 241 7634 7681
+)
+"graphics.ml" 238 7576 7589 "graphics.ml" 238 7576 7590
+type(
+  float * float
+)
+ident(
+  def c "graphics.ml" 238 7576 7591 "graphics.ml" 241 7634 7681
+)
+"graphics.ml" 238 7576 7591 "graphics.ml" 238 7576 7592
+type(
+  float * float
+)
+ident(
+  def d "graphics.ml" 239 7595 7596 "graphics.ml" 241 7634 7681
+)
+"graphics.ml" 239 7595 7600 "graphics.ml" 239 7595 7601
+type(
+  float * float
+)
+ident(
+  def v "graphics.ml" 240 7615 7616 "graphics.ml" 241 7634 7681
+)
+"graphics.ml" 239 7595 7604 "graphics.ml" 239 7595 7607
+type(
+  float * float -> float * float -> float * float
+)
+ident(
+  int_ref sub "graphics.ml" 233 7343 7347 "graphics.ml" 233 7343 7350
+)
+"graphics.ml" 239 7595 7608 "graphics.ml" 239 7595 7609
+type(
+  float * float
+)
+ident(
+  int_ref d "graphics.ml" 238 7576 7591 "graphics.ml" 238 7576 7592
+)
+"graphics.ml" 239 7595 7610 "graphics.ml" 239 7595 7611
+type(
+  float * float
+)
+ident(
+  int_ref a "graphics.ml" 238 7576 7585 "graphics.ml" 238 7576 7586
+)
+"graphics.ml" 239 7595 7604 "graphics.ml" 239 7595 7611
+call(
+  stack
+)
+type(
+  float * float
+)
+"graphics.ml" 240 7615 7620 "graphics.ml" 240 7615 7621
+type(
+  float
+)
+ident(
+  def s "graphics.ml" 241 7634 7635 "graphics.ml" 241 7634 7681
+)
+"graphics.ml" 240 7615 7624 "graphics.ml" 240 7615 7628
+type(
+  float * float -> float
+)
+ident(
+  int_ref norm "graphics.ml" 236 7525 7529 "graphics.ml" 236 7525 7533
+)
+"graphics.ml" 240 7615 7629 "graphics.ml" 240 7615 7630
+type(
+  float * float
+)
+ident(
+  int_ref v "graphics.ml" 239 7595 7600 "graphics.ml" 239 7595 7601
+)
+"graphics.ml" 240 7615 7624 "graphics.ml" 240 7615 7630
+call(
+  stack
+)
+type(
+  float
+)
+"graphics.ml" 241 7634 7635 "graphics.ml" 241 7634 7639
+type(
+  float * float -> float * float -> float
+)
+ident(
+  int_ref area "graphics.ml" 235 7463 7467 "graphics.ml" 235 7463 7471
+)
+"graphics.ml" 241 7634 7640 "graphics.ml" 241 7634 7641
+type(
+  float * float
+)
+ident(
+  int_ref v "graphics.ml" 239 7595 7600 "graphics.ml" 239 7595 7601
+)
+"graphics.ml" 241 7634 7643 "graphics.ml" 241 7634 7646
+type(
+  float * float -> float * float -> float * float
+)
+ident(
+  int_ref sub "graphics.ml" 233 7343 7347 "graphics.ml" 233 7343 7350
+)
+"graphics.ml" 241 7634 7647 "graphics.ml" 241 7634 7648
+type(
+  float * float
+)
+ident(
+  int_ref a "graphics.ml" 238 7576 7585 "graphics.ml" 238 7576 7586
+)
+"graphics.ml" 241 7634 7649 "graphics.ml" 241 7634 7650
+type(
+  float * float
+)
+ident(
+  int_ref b "graphics.ml" 238 7576 7587 "graphics.ml" 238 7576 7588
+)
+"graphics.ml" 241 7634 7642 "graphics.ml" 241 7634 7651
+call(
+  stack
+)
+type(
+  float * float
+)
+"graphics.ml" 241 7634 7635 "graphics.ml" 241 7634 7651
+call(
+  stack
+)
+type(
+  float
+)
+"graphics.ml" 241 7634 7652 "graphics.ml" 241 7634 7654
+type(
+  float -> float -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"graphics.ml" 241 7634 7655 "graphics.ml" 241 7634 7656
+type(
+  float
+)
+ident(
+  int_ref s "graphics.ml" 240 7615 7620 "graphics.ml" 240 7615 7621
+)
+"graphics.ml" 241 7634 7635 "graphics.ml" 241 7634 7656
+type(
+  bool
+)
+"graphics.ml" 241 7634 7657 "graphics.ml" 241 7634 7659
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"graphics.ml" 241 7634 7660 "graphics.ml" 241 7634 7664
+type(
+  float * float -> float * float -> float
+)
+ident(
+  int_ref area "graphics.ml" 235 7463 7467 "graphics.ml" 235 7463 7471
+)
+"graphics.ml" 241 7634 7665 "graphics.ml" 241 7634 7666
+type(
+  float * float
+)
+ident(
+  int_ref v "graphics.ml" 239 7595 7600 "graphics.ml" 239 7595 7601
+)
+"graphics.ml" 241 7634 7668 "graphics.ml" 241 7634 7671
+type(
+  float * float -> float * float -> float * float
+)
+ident(
+  int_ref sub "graphics.ml" 233 7343 7347 "graphics.ml" 233 7343 7350
+)
+"graphics.ml" 241 7634 7672 "graphics.ml" 241 7634 7673
+type(
+  float * float
+)
+ident(
+  int_ref a "graphics.ml" 238 7576 7585 "graphics.ml" 238 7576 7586
+)
+"graphics.ml" 241 7634 7674 "graphics.ml" 241 7634 7675
+type(
+  float * float
+)
+ident(
+  int_ref c "graphics.ml" 238 7576 7589 "graphics.ml" 238 7576 7590
+)
+"graphics.ml" 241 7634 7667 "graphics.ml" 241 7634 7676
+call(
+  stack
+)
+type(
+  float * float
+)
+"graphics.ml" 241 7634 7660 "graphics.ml" 241 7634 7676
+call(
+  stack
+)
+type(
+  float
+)
+"graphics.ml" 241 7634 7677 "graphics.ml" 241 7634 7679
+type(
+  float -> float -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"graphics.ml" 241 7634 7680 "graphics.ml" 241 7634 7681
+type(
+  float
+)
+ident(
+  int_ref s "graphics.ml" 240 7615 7620 "graphics.ml" 240 7615 7621
+)
+"graphics.ml" 241 7634 7660 "graphics.ml" 241 7634 7681
+type(
+  bool
+)
+"graphics.ml" 241 7634 7635 "graphics.ml" 241 7634 7681
+type(
+  bool
+)
+"graphics.ml" 240 7615 7616 "graphics.ml" 241 7634 7681
+type(
+  bool
+)
+"graphics.ml" 239 7595 7596 "graphics.ml" 241 7634 7681
+type(
+  bool
+)
+"graphics.ml" 243 7685 7689 "graphics.ml" 243 7685 7695
+type(
+  float * float ->
+  float * float -> float * float -> float * float -> (float * float) list
+)
+ident(
+  def spline "graphics.ml" 255 7989 7989 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 243 7685 7696 "graphics.ml" 243 7685 7697
+type(
+  float * float
+)
+ident(
+  def a "graphics.ml" 243 7685 7698 "graphics.ml" 253 7968 7985
+)
+"graphics.ml" 243 7685 7698 "graphics.ml" 243 7685 7699
+type(
+  float * float
+)
+ident(
+  def b "graphics.ml" 243 7685 7700 "graphics.ml" 253 7968 7985
+)
+"graphics.ml" 243 7685 7700 "graphics.ml" 243 7685 7701
+type(
+  float * float
+)
+ident(
+  def c "graphics.ml" 243 7685 7702 "graphics.ml" 253 7968 7985
+)
+"graphics.ml" 243 7685 7702 "graphics.ml" 243 7685 7703
+type(
+  float * float
+)
+ident(
+  def d "graphics.ml" 244 7706 7708 "graphics.ml" 253 7968 7985
+)
+"graphics.ml" 244 7706 7716 "graphics.ml" 244 7706 7719
+type(
+  (float * float) list ->
+  float * float ->
+  float * float -> float * float -> float * float -> (float * float) list
+)
+ident(
+  def spl "graphics.ml" 244 7706 7708 "graphics.ml" 253 7968 7985
+)
+"graphics.ml" 244 7706 7720 "graphics.ml" 244 7706 7724
+type(
+  (float * float) list
+)
+ident(
+  def accu "graphics.ml" 244 7706 7725 "graphics.ml" 252 7926 7964
+)
+"graphics.ml" 244 7706 7725 "graphics.ml" 244 7706 7726
+type(
+  float * float
+)
+ident(
+  def a "graphics.ml" 244 7706 7727 "graphics.ml" 252 7926 7964
+)
+"graphics.ml" 244 7706 7727 "graphics.ml" 244 7706 7728
+type(
+  float * float
+)
+ident(
+  def b "graphics.ml" 244 7706 7729 "graphics.ml" 252 7926 7964
+)
+"graphics.ml" 244 7706 7729 "graphics.ml" 244 7706 7730
+type(
+  float * float
+)
+ident(
+  def c "graphics.ml" 244 7706 7731 "graphics.ml" 252 7926 7964
+)
+"graphics.ml" 244 7706 7731 "graphics.ml" 244 7706 7732
+type(
+  float * float
+)
+ident(
+  def d "graphics.ml" 245 7735 7738 "graphics.ml" 252 7926 7964
+)
+"graphics.ml" 245 7735 7741 "graphics.ml" 245 7735 7745
+type(
+  float * float -> float * float -> float * float -> float * float -> bool
+)
+ident(
+  int_ref test "graphics.ml" 238 7576 7580 "graphics.ml" 238 7576 7584
+)
+"graphics.ml" 245 7735 7746 "graphics.ml" 245 7735 7747
+type(
+  float * float
+)
+ident(
+  int_ref a "graphics.ml" 244 7706 7725 "graphics.ml" 244 7706 7726
+)
+"graphics.ml" 245 7735 7748 "graphics.ml" 245 7735 7749
+type(
+  float * float
+)
+ident(
+  int_ref b "graphics.ml" 244 7706 7727 "graphics.ml" 244 7706 7728
+)
+"graphics.ml" 245 7735 7750 "graphics.ml" 245 7735 7751
+type(
+  float * float
+)
+ident(
+  int_ref c "graphics.ml" 244 7706 7729 "graphics.ml" 244 7706 7730
+)
+"graphics.ml" 245 7735 7752 "graphics.ml" 245 7735 7753
+type(
+  float * float
+)
+ident(
+  int_ref d "graphics.ml" 244 7706 7731 "graphics.ml" 244 7706 7732
+)
+"graphics.ml" 245 7735 7741 "graphics.ml" 245 7735 7753
+call(
+  stack
+)
+type(
+  bool
+)
+"graphics.ml" 245 7735 7759 "graphics.ml" 245 7735 7760
+type(
+  float * float
+)
+ident(
+  int_ref d "graphics.ml" 244 7706 7731 "graphics.ml" 244 7706 7732
+)
+"graphics.ml" 245 7735 7764 "graphics.ml" 245 7735 7768
+type(
+  (float * float) list
+)
+ident(
+  int_ref accu "graphics.ml" 244 7706 7720 "graphics.ml" 244 7706 7724
+)
+"graphics.ml" 245 7735 7759 "graphics.ml" 245 7735 7768
+type(
+  (float * float) list
+)
+"graphics.ml" 246 7774 7781 "graphics.ml" 246 7774 7783
+type(
+  float * float
+)
+ident(
+  def a' "graphics.ml" 248 7822 7825 "graphics.ml" 252 7926 7964
+)
+"graphics.ml" 246 7774 7786 "graphics.ml" 246 7774 7792
+type(
+  float * float -> float * float -> float * float
+)
+ident(
+  int_ref middle "graphics.ml" 234 7392 7396 "graphics.ml" 234 7392 7402
+)
+"graphics.ml" 246 7774 7793 "graphics.ml" 246 7774 7794
+type(
+  float * float
+)
+ident(
+  int_ref a "graphics.ml" 244 7706 7725 "graphics.ml" 244 7706 7726
+)
+"graphics.ml" 246 7774 7795 "graphics.ml" 246 7774 7796
+type(
+  float * float
+)
+ident(
+  int_ref b "graphics.ml" 244 7706 7727 "graphics.ml" 244 7706 7728
+)
+"graphics.ml" 246 7774 7786 "graphics.ml" 246 7774 7796
+call(
+  stack
+)
+type(
+  float * float
+)
+"graphics.ml" 247 7797 7804 "graphics.ml" 247 7797 7805
+type(
+  float * float
+)
+ident(
+  def o "graphics.ml" 248 7822 7825 "graphics.ml" 252 7926 7964
+)
+"graphics.ml" 247 7797 7808 "graphics.ml" 247 7797 7814
+type(
+  float * float -> float * float -> float * float
+)
+ident(
+  int_ref middle "graphics.ml" 234 7392 7396 "graphics.ml" 234 7392 7402
+)
+"graphics.ml" 247 7797 7815 "graphics.ml" 247 7797 7816
+type(
+  float * float
+)
+ident(
+  int_ref b "graphics.ml" 244 7706 7727 "graphics.ml" 244 7706 7728
+)
+"graphics.ml" 247 7797 7817 "graphics.ml" 247 7797 7818
+type(
+  float * float
+)
+ident(
+  int_ref c "graphics.ml" 244 7706 7729 "graphics.ml" 244 7706 7730
+)
+"graphics.ml" 247 7797 7808 "graphics.ml" 247 7797 7818
+call(
+  stack
+)
+type(
+  float * float
+)
+"graphics.ml" 248 7822 7829 "graphics.ml" 248 7822 7831
+type(
+  float * float
+)
+ident(
+  def b' "graphics.ml" 250 7872 7875 "graphics.ml" 252 7926 7964
+)
+"graphics.ml" 248 7822 7834 "graphics.ml" 248 7822 7840
+type(
+  float * float -> float * float -> float * float
+)
+ident(
+  int_ref middle "graphics.ml" 234 7392 7396 "graphics.ml" 234 7392 7402
+)
+"graphics.ml" 248 7822 7841 "graphics.ml" 248 7822 7843
+type(
+  float * float
+)
+ident(
+  int_ref a' "graphics.ml" 246 7774 7781 "graphics.ml" 246 7774 7783
+)
+"graphics.ml" 248 7822 7844 "graphics.ml" 248 7822 7845
+type(
+  float * float
+)
+ident(
+  int_ref o "graphics.ml" 247 7797 7804 "graphics.ml" 247 7797 7805
+)
+"graphics.ml" 248 7822 7834 "graphics.ml" 248 7822 7845
+call(
+  stack
+)
+type(
+  float * float
+)
+"graphics.ml" 249 7846 7853 "graphics.ml" 249 7846 7855
+type(
+  float * float
+)
+ident(
+  def d' "graphics.ml" 250 7872 7875 "graphics.ml" 252 7926 7964
+)
+"graphics.ml" 249 7846 7858 "graphics.ml" 249 7846 7864
+type(
+  float * float -> float * float -> float * float
+)
+ident(
+  int_ref middle "graphics.ml" 234 7392 7396 "graphics.ml" 234 7392 7402
+)
+"graphics.ml" 249 7846 7865 "graphics.ml" 249 7846 7866
+type(
+  float * float
+)
+ident(
+  int_ref c "graphics.ml" 244 7706 7729 "graphics.ml" 244 7706 7730
+)
+"graphics.ml" 249 7846 7867 "graphics.ml" 249 7846 7868
+type(
+  float * float
+)
+ident(
+  int_ref d "graphics.ml" 244 7706 7731 "graphics.ml" 244 7706 7732
+)
+"graphics.ml" 249 7846 7858 "graphics.ml" 249 7846 7868
+call(
+  stack
+)
+type(
+  float * float
+)
+"graphics.ml" 250 7872 7879 "graphics.ml" 250 7872 7881
+type(
+  float * float
+)
+ident(
+  def c' "graphics.ml" 251 7899 7902 "graphics.ml" 252 7926 7964
+)
+"graphics.ml" 250 7872 7884 "graphics.ml" 250 7872 7890
+type(
+  float * float -> float * float -> float * float
+)
+ident(
+  int_ref middle "graphics.ml" 234 7392 7396 "graphics.ml" 234 7392 7402
+)
+"graphics.ml" 250 7872 7891 "graphics.ml" 250 7872 7892
+type(
+  float * float
+)
+ident(
+  int_ref o "graphics.ml" 247 7797 7804 "graphics.ml" 247 7797 7805
+)
+"graphics.ml" 250 7872 7893 "graphics.ml" 250 7872 7895
+type(
+  float * float
+)
+ident(
+  int_ref d' "graphics.ml" 249 7846 7853 "graphics.ml" 249 7846 7855
+)
+"graphics.ml" 250 7872 7884 "graphics.ml" 250 7872 7895
+call(
+  stack
+)
+type(
+  float * float
+)
+"graphics.ml" 251 7899 7906 "graphics.ml" 251 7899 7907
+type(
+  float * float
+)
+ident(
+  def i "graphics.ml" 252 7926 7929 "graphics.ml" 252 7926 7964
+)
+"graphics.ml" 251 7899 7910 "graphics.ml" 251 7899 7916
+type(
+  float * float -> float * float -> float * float
+)
+ident(
+  int_ref middle "graphics.ml" 234 7392 7396 "graphics.ml" 234 7392 7402
+)
+"graphics.ml" 251 7899 7917 "graphics.ml" 251 7899 7919
+type(
+  float * float
+)
+ident(
+  int_ref b' "graphics.ml" 248 7822 7829 "graphics.ml" 248 7822 7831
+)
+"graphics.ml" 251 7899 7920 "graphics.ml" 251 7899 7922
+type(
+  float * float
+)
+ident(
+  int_ref c' "graphics.ml" 250 7872 7879 "graphics.ml" 250 7872 7881
+)
+"graphics.ml" 251 7899 7910 "graphics.ml" 251 7899 7922
+call(
+  stack
+)
+type(
+  float * float
+)
+"graphics.ml" 252 7926 7929 "graphics.ml" 252 7926 7932
+type(
+  (float * float) list ->
+  float * float ->
+  float * float -> float * float -> float * float -> (float * float) list
+)
+ident(
+  int_ref spl "graphics.ml" 244 7706 7716 "graphics.ml" 244 7706 7719
+)
+"graphics.ml" 252 7926 7935 "graphics.ml" 252 7926 7938
+type(
+  (float * float) list ->
+  float * float ->
+  float * float -> float * float -> float * float -> (float * float) list
+)
+ident(
+  int_ref spl "graphics.ml" 244 7706 7716 "graphics.ml" 244 7706 7719
+)
+"graphics.ml" 252 7926 7939 "graphics.ml" 252 7926 7943
+type(
+  (float * float) list
+)
+ident(
+  int_ref accu "graphics.ml" 244 7706 7720 "graphics.ml" 244 7706 7724
+)
+"graphics.ml" 252 7926 7944 "graphics.ml" 252 7926 7945
+type(
+  float * float
+)
+ident(
+  int_ref a "graphics.ml" 244 7706 7725 "graphics.ml" 244 7706 7726
+)
+"graphics.ml" 252 7926 7946 "graphics.ml" 252 7926 7948
+type(
+  float * float
+)
+ident(
+  int_ref a' "graphics.ml" 246 7774 7781 "graphics.ml" 246 7774 7783
+)
+"graphics.ml" 252 7926 7949 "graphics.ml" 252 7926 7951
+type(
+  float * float
+)
+ident(
+  int_ref b' "graphics.ml" 248 7822 7829 "graphics.ml" 248 7822 7831
+)
+"graphics.ml" 252 7926 7952 "graphics.ml" 252 7926 7953
+type(
+  float * float
+)
+ident(
+  int_ref i "graphics.ml" 251 7899 7906 "graphics.ml" 251 7899 7907
+)
+"graphics.ml" 252 7926 7934 "graphics.ml" 252 7926 7954
+call(
+  stack
+)
+type(
+  (float * float) list
+)
+"graphics.ml" 252 7926 7955 "graphics.ml" 252 7926 7956
+type(
+  float * float
+)
+ident(
+  int_ref i "graphics.ml" 251 7899 7906 "graphics.ml" 251 7899 7907
+)
+"graphics.ml" 252 7926 7957 "graphics.ml" 252 7926 7959
+type(
+  float * float
+)
+ident(
+  int_ref c' "graphics.ml" 250 7872 7879 "graphics.ml" 250 7872 7881
+)
+"graphics.ml" 252 7926 7960 "graphics.ml" 252 7926 7962
+type(
+  float * float
+)
+ident(
+  int_ref d' "graphics.ml" 249 7846 7853 "graphics.ml" 249 7846 7855
+)
+"graphics.ml" 252 7926 7963 "graphics.ml" 252 7926 7964
+type(
+  float * float
+)
+ident(
+  int_ref d "graphics.ml" 244 7706 7731 "graphics.ml" 244 7706 7732
+)
+"graphics.ml" 252 7926 7929 "graphics.ml" 252 7926 7964
+call(
+  tail
+)
+type(
+  (float * float) list
+)
+"graphics.ml" 251 7899 7902 "graphics.ml" 252 7926 7964
+type(
+  (float * float) list
+)
+"graphics.ml" 250 7872 7875 "graphics.ml" 252 7926 7964
+type(
+  (float * float) list
+)
+"graphics.ml" 248 7822 7825 "graphics.ml" 252 7926 7964
+type(
+  (float * float) list
+)
+"graphics.ml" 246 7774 7777 "graphics.ml" 252 7926 7964
+type(
+  (float * float) list
+)
+"graphics.ml" 245 7735 7738 "graphics.ml" 252 7926 7964
+type(
+  (float * float) list
+)
+"graphics.ml" 253 7968 7970 "graphics.ml" 253 7968 7973
+type(
+  (float * float) list ->
+  float * float ->
+  float * float -> float * float -> float * float -> (float * float) list
+)
+ident(
+  int_ref spl "graphics.ml" 244 7706 7716 "graphics.ml" 244 7706 7719
+)
+"graphics.ml" 253 7968 7975 "graphics.ml" 253 7968 7976
+type(
+  float * float
+)
+ident(
+  int_ref a "graphics.ml" 243 7685 7696 "graphics.ml" 243 7685 7697
+)
+"graphics.ml" 253 7968 7974 "graphics.ml" 253 7968 7977
+type(
+  (float * float) list
+)
+"graphics.ml" 253 7968 7978 "graphics.ml" 253 7968 7979
+type(
+  float * float
+)
+ident(
+  int_ref a "graphics.ml" 243 7685 7696 "graphics.ml" 243 7685 7697
+)
+"graphics.ml" 253 7968 7980 "graphics.ml" 253 7968 7981
+type(
+  float * float
+)
+ident(
+  int_ref b "graphics.ml" 243 7685 7698 "graphics.ml" 243 7685 7699
+)
+"graphics.ml" 253 7968 7982 "graphics.ml" 253 7968 7983
+type(
+  float * float
+)
+ident(
+  int_ref c "graphics.ml" 243 7685 7700 "graphics.ml" 243 7685 7701
+)
+"graphics.ml" 253 7968 7984 "graphics.ml" 253 7968 7985
+type(
+  float * float
+)
+ident(
+  int_ref d "graphics.ml" 243 7685 7702 "graphics.ml" 243 7685 7703
+)
+"graphics.ml" 253 7968 7970 "graphics.ml" 253 7968 7985
+call(
+  tail
+)
+type(
+  (float * float) list
+)
+"graphics.ml" 244 7706 7708 "graphics.ml" 253 7968 7985
+type(
+  (float * float) list
+)
+"graphics.ml" 255 7989 7993 "graphics.ml" 255 7989 8000
+type(
+  int * int -> int * int -> int * int -> unit
+)
+ident(
+  def curveto "graphics.ml" 265 8348 8359 "graphics.ml" 1 0 -1
+)
+"graphics.ml" 255 7989 8001 "graphics.ml" 255 7989 8002
+type(
+  int * int
+)
+ident(
+  def b "graphics.ml" 255 7989 8003 "graphics.ml" 265 8348 8359
+)
+"graphics.ml" 255 7989 8003 "graphics.ml" 255 7989 8004
+type(
+  int * int
+)
+ident(
+  def c "graphics.ml" 255 7989 8005 "graphics.ml" 265 8348 8359
+)
+"graphics.ml" 255 7989 8006 "graphics.ml" 255 7989 8007
+type(
+  int
+)
+ident(
+  def x "graphics.ml" 256 8019 8020 "graphics.ml" 265 8348 8359
+)
+"graphics.ml" 255 7989 8009 "graphics.ml" 255 7989 8010
+type(
+  int
+)
+ident(
+  def y "graphics.ml" 256 8019 8020 "graphics.ml" 265 8348 8359
+)
+"graphics.ml" 255 7989 8006 "graphics.ml" 255 7989 8010
+type(
+  int * int
+)
+"graphics.ml" 255 7989 8014 "graphics.ml" 255 7989 8015
+ident(
+  def d "graphics.ml" 256 8019 8020 "graphics.ml" 265 8348 8359
+)
+"graphics.ml" 255 7989 8005 "graphics.ml" 255 7989 8016
+type(
+  int * int
+)
+"graphics.ml" 256 8019 8024 "graphics.ml" 256 8019 8035
+type(
+  int * int -> float * float
+)
+ident(
+  def float_point "graphics.ml" 257 8081 8082 "graphics.ml" 265 8348 8359
+)
+"graphics.ml" 256 8019 8037 "graphics.ml" 256 8019 8038
+type(
+  int
+)
+ident(
+  def x "graphics.ml" 256 8019 8045 "graphics.ml" 256 8019 8077
+)
+"graphics.ml" 256 8019 8040 "graphics.ml" 256 8019 8041
+type(
+  int
+)
+ident(
+  def y "graphics.ml" 256 8019 8045 "graphics.ml" 256 8019 8077
+)
+"graphics.ml" 256 8019 8036 "graphics.ml" 256 8019 8042
+type(
+  int * int
+)
+"graphics.ml" 256 8019 8046 "graphics.ml" 256 8019 8058
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"graphics.ml" 256 8019 8059 "graphics.ml" 256 8019 8060
+type(
+  int
+)
+ident(
+  int_ref x "graphics.ml" 256 8019 8037 "graphics.ml" 256 8019 8038
+)
+"graphics.ml" 256 8019 8046 "graphics.ml" 256 8019 8060
+type(
+  float
+)
+"graphics.ml" 256 8019 8062 "graphics.ml" 256 8019 8074
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float_of_int
+)
+"graphics.ml" 256 8019 8075 "graphics.ml" 256 8019 8076
+type(
+  int
+)
+ident(
+  int_ref y "graphics.ml" 256 8019 8040 "graphics.ml" 256 8019 8041
+)
+"graphics.ml" 256 8019 8062 "graphics.ml" 256 8019 8076
+type(
+  float
+)
+"graphics.ml" 256 8019 8045 "graphics.ml" 256 8019 8077
+type(
+  float * float
+)
+"graphics.ml" 257 8081 8086 "graphics.ml" 257 8081 8091
+type(
+  float -> int
+)
+ident(
+  def round "graphics.ml" 258 8123 8124 "graphics.ml" 265 8348 8359
+)
+"graphics.ml" 257 8081 8092 "graphics.ml" 257 8081 8093
+type(
+  float
+)
+ident(
+  def f "graphics.ml" 257 8081 8096 "graphics.ml" 257 8081 8119
+)
+"graphics.ml" 257 8081 8096 "graphics.ml" 257 8081 8108
+type(
+  float -> int
+)
+ident(
+  ext_ref Pervasives.int_of_float
+)
+"graphics.ml" 257 8081 8110 "graphics.ml" 257 8081 8111
+type(
+  float
+)
+ident(
+  int_ref f "graphics.ml" 257 8081 8092 "graphics.ml" 257 8081 8093
+)
+"graphics.ml" 257 8081 8112 "graphics.ml" 257 8081 8114
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( +. )
+)
+"graphics.ml" 257 8081 8115 "graphics.ml" 257 8081 8118
+type(
+  float
+)
+"graphics.ml" 257 8081 8109 "graphics.ml" 257 8081 8119
+type(
+  float
+)
+"graphics.ml" 257 8081 8096 "graphics.ml" 257 8081 8119
+type(
+  int
+)
+"graphics.ml" 258 8123 8128 "graphics.ml" 258 8123 8137
+type(
+  float * float -> int * int
+)
+ident(
+  def int_point "graphics.ml" 259 8169 8170 "graphics.ml" 265 8348 8359
+)
+"graphics.ml" 258 8123 8139 "graphics.ml" 258 8123 8140
+type(
+  float
+)
+ident(
+  def x "graphics.ml" 258 8123 8147 "graphics.ml" 258 8123 8165
+)
+"graphics.ml" 258 8123 8142 "graphics.ml" 258 8123 8143
+type(
+  float
+)
+ident(
+  def y "graphics.ml" 258 8123 8147 "graphics.ml" 258 8123 8165
+)
+"graphics.ml" 258 8123 8138 "graphics.ml" 258 8123 8144
+type(
+  float * float
+)
+"graphics.ml" 258 8123 8148 "graphics.ml" 258 8123 8153
+type(
+  float -> int
+)
+ident(
+  int_ref round "graphics.ml" 257 8081 8086 "graphics.ml" 257 8081 8091
+)
+"graphics.ml" 258 8123 8154 "graphics.ml" 258 8123 8155
+type(
+  float
+)
+ident(
+  int_ref x "graphics.ml" 258 8123 8139 "graphics.ml" 258 8123 8140
+)
+"graphics.ml" 258 8123 8148 "graphics.ml" 258 8123 8155
+call(
+  stack
+)
+type(
+  int
+)
+"graphics.ml" 258 8123 8157 "graphics.ml" 258 8123 8162
+type(
+  float -> int
+)
+ident(
+  int_ref round "graphics.ml" 257 8081 8086 "graphics.ml" 257 8081 8091
+)
+"graphics.ml" 258 8123 8163 "graphics.ml" 258 8123 8164
+type(
+  float
+)
+ident(
+  int_ref y "graphics.ml" 258 8123 8142 "graphics.ml" 258 8123 8143
+)
+"graphics.ml" 258 8123 8157 "graphics.ml" 258 8123 8164
+call(
+  stack
+)
+type(
+  int
+)
+"graphics.ml" 258 8123 8147 "graphics.ml" 258 8123 8165
+type(
+  int * int
+)
+"graphics.ml" 259 8169 8174 "graphics.ml" 259 8169 8180
+type(
+  (float * float) list
+)
+ident(
+  def points "graphics.ml" 263 8285 8286 "graphics.ml" 265 8348 8359
+)
+"graphics.ml" 260 8183 8186 "graphics.ml" 260 8183 8192
+type(
+  float * float ->
+  float * float -> float * float -> float * float -> (float * float) list
+)
+ident(
+  int_ref spline "graphics.ml" 243 7685 7689 "graphics.ml" 243 7685 7695
+)
+"graphics.ml" 261 8193 8198 "graphics.ml" 261 8193 8209
+type(
+  int * int -> float * float
+)
+ident(
+  int_ref float_point "graphics.ml" 256 8019 8024 "graphics.ml" 256 8019 8035
+)
+"graphics.ml" 261 8193 8211 "graphics.ml" 261 8193 8224
+type(
+  unit -> int * int
+)
+ident(
+  int_ref current_point "graphics.ml" 92 3236 3240 "graphics.ml" 92 3236 3253
+)
+"graphics.ml" 261 8193 8225 "graphics.ml" 261 8193 8227
+type(
+  unit
+)
+"graphics.ml" 261 8193 8210 "graphics.ml" 261 8193 8228
+call(
+  stack
+)
+type(
+  int * int
+)
+"graphics.ml" 261 8193 8197 "graphics.ml" 261 8193 8229
+call(
+  stack
+)
+type(
+  float * float
+)
+"graphics.ml" 262 8230 8235 "graphics.ml" 262 8230 8246
+type(
+  int * int -> float * float
+)
+ident(
+  int_ref float_point "graphics.ml" 256 8019 8024 "graphics.ml" 256 8019 8035
+)
+"graphics.ml" 262 8230 8247 "graphics.ml" 262 8230 8248
+type(
+  int * int
+)
+ident(
+  int_ref b "graphics.ml" 255 7989 8001 "graphics.ml" 255 7989 8002
+)
+"graphics.ml" 262 8230 8234 "graphics.ml" 262 8230 8249
+call(
+  stack
+)
+type(
+  float * float
+)
+"graphics.ml" 262 8230 8251 "graphics.ml" 262 8230 8262
+type(
+  int * int -> float * float
+)
+ident(
+  int_ref float_point "graphics.ml" 256 8019 8024 "graphics.ml" 256 8019 8035
+)
+"graphics.ml" 262 8230 8263 "graphics.ml" 262 8230 8264
+type(
+  int * int
+)
+ident(
+  int_ref c "graphics.ml" 255 7989 8003 "graphics.ml" 255 7989 8004
+)
+"graphics.ml" 262 8230 8250 "graphics.ml" 262 8230 8265
+call(
+  stack
+)
+type(
+  float * float
+)
+"graphics.ml" 262 8230 8267 "graphics.ml" 262 8230 8278
+type(
+  int * int -> float * float
+)
+ident(
+  int_ref float_point "graphics.ml" 256 8019 8024 "graphics.ml" 256 8019 8035
+)
+"graphics.ml" 262 8230 8279 "graphics.ml" 262 8230 8280
+type(
+  int * int
+)
+ident(
+  int_ref d "graphics.ml" 255 7989 8005 "graphics.ml" 255 7989 8016
+)
+"graphics.ml" 262 8230 8266 "graphics.ml" 262 8230 8281
+call(
+  stack
+)
+type(
+  float * float
+)
+"graphics.ml" 260 8183 8186 "graphics.ml" 262 8230 8281
+call(
+  stack
+)
+type(
+  (float * float) list
+)
+"graphics.ml" 263 8285 8286 "graphics.ml" 263 8285 8300
+type(
+  (int * int) array -> unit
+)
+ident(
+  int_ref draw_poly_line "graphics.ml" 103 3668 3683 "graphics.ml" 103 3668 3697
+)
+"graphics.ml" 264 8301 8304 "graphics.ml" 264 8301 8317
+type(
+  (int * int) list -> (int * int) array
+)
+ident(
+  ext_ref Array.of_list
+)
+"graphics.ml" 264 8301 8319 "graphics.ml" 264 8301 8327
+type(
+  (float * float -> int * int) -> (float * float) list -> (int * int) list
+)
+ident(
+  ext_ref List.map
+)
+"graphics.ml" 264 8301 8328 "graphics.ml" 264 8301 8337
+type(
+  float * float -> int * int
+)
+ident(
+  int_ref int_point "graphics.ml" 258 8123 8128 "graphics.ml" 258 8123 8137
+)
+"graphics.ml" 264 8301 8338 "graphics.ml" 264 8301 8344
+type(
+  (float * float) list
+)
+ident(
+  int_ref points "graphics.ml" 259 8169 8174 "graphics.ml" 259 8169 8180
+)
+"graphics.ml" 264 8301 8318 "graphics.ml" 264 8301 8345
+call(
+  stack
+)
+type(
+  (int * int) list
+)
+"graphics.ml" 264 8301 8303 "graphics.ml" 264 8301 8346
+call(
+  stack
+)
+type(
+  (int * int) array
+)
+"graphics.ml" 263 8285 8286 "graphics.ml" 264 8301 8346
+call(
+  stack
+)
+type(
+  unit
+)
+"graphics.ml" 265 8348 8349 "graphics.ml" 265 8348 8355
+type(
+  int -> int -> unit
+)
+ident(
+  int_ref moveto "graphics.ml" 89 3070 3070 "graphics.ml" 89 3070 3125
+)
+"graphics.ml" 265 8348 8356 "graphics.ml" 265 8348 8357
+type(
+  int
+)
+ident(
+  int_ref x "graphics.ml" 255 7989 8006 "graphics.ml" 255 7989 8007
+)
+"graphics.ml" 265 8348 8358 "graphics.ml" 265 8348 8359
+type(
+  int
+)
+ident(
+  int_ref y "graphics.ml" 255 7989 8009 "graphics.ml" 255 7989 8010
+)
+"graphics.ml" 265 8348 8349 "graphics.ml" 265 8348 8359
+type(
+  unit
+)
+"graphics.ml" 263 8285 8286 "graphics.ml" 265 8348 8359
+type(
+  unit
+)
+"graphics.ml" 259 8169 8170 "graphics.ml" 265 8348 8359
+type(
+  unit
+)
+"graphics.ml" 258 8123 8124 "graphics.ml" 265 8348 8359
+type(
+  unit
+)
+"graphics.ml" 257 8081 8082 "graphics.ml" 265 8348 8359
+type(
+  unit
+)
+"graphics.ml" 256 8019 8020 "graphics.ml" 265 8348 8359
+type(
+  unit
+)

@@ -1,0 +1,1742 @@
+"configuration.ml" 21 913 917 "configuration.ml" 21 913 935
+type(
+  ('a * Lexers.conf_values) list -> unit
+)
+ident(
+  def acknowledge_config "configuration.ml" 25 1081 1081 "configuration.ml" 1 0 -1
+)
+"configuration.ml" 21 913 936 "configuration.ml" 21 913 942
+type(
+  ('a * Lexers.conf_values) list
+)
+ident(
+  def config "configuration.ml" 22 945 947 "configuration.ml" 23 1009 1079
+)
+"configuration.ml" 22 945 951 "configuration.ml" 22 945 954
+type(
+  string * Loc.location -> unit
+)
+ident(
+  def ack "configuration.ml" 23 1009 1011 "configuration.ml" 23 1009 1079
+)
+"configuration.ml" 22 945 956 "configuration.ml" 22 945 959
+type(
+  string
+)
+ident(
+  def tag "configuration.ml" 22 945 968 "configuration.ml" 22 945 1005
+)
+"configuration.ml" 22 945 961 "configuration.ml" 22 945 964
+type(
+  Loc.location
+)
+ident(
+  def loc "configuration.ml" 22 945 968 "configuration.ml" 22 945 1005
+)
+"configuration.ml" 22 945 955 "configuration.ml" 22 945 965
+type(
+  string * Loc.location
+)
+"configuration.ml" 22 945 968 "configuration.ml" 22 945 990
+type(
+  Loc.location option -> string -> unit
+)
+ident(
+  ext_ref Param_tags.acknowledge
+)
+"configuration.ml" 22 945 997 "configuration.ml" 22 945 1000
+type(
+  Loc.location
+)
+ident(
+  int_ref loc "configuration.ml" 22 945 961 "configuration.ml" 22 945 964
+)
+"configuration.ml" 22 945 991 "configuration.ml" 22 945 1001
+type(
+  Loc.location option
+)
+"configuration.ml" 22 945 1002 "configuration.ml" 22 945 1005
+type(
+  string
+)
+ident(
+  int_ref tag "configuration.ml" 22 945 956 "configuration.ml" 22 945 959
+)
+"configuration.ml" 22 945 968 "configuration.ml" 22 945 1005
+call(
+  tail
+)
+type(
+  unit
+)
+"configuration.ml" 23 1009 1011 "configuration.ml" 23 1009 1020
+type(
+  ('a * Lexers.conf_values -> unit) -> ('a * Lexers.conf_values) list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"configuration.ml" 23 1009 1027 "configuration.ml" 23 1009 1028
+type(
+  'a
+)
+"configuration.ml" 23 1009 1030 "configuration.ml" 23 1009 1036
+type(
+  Lexers.conf_values
+)
+ident(
+  def config "configuration.ml" 23 1009 1041 "configuration.ml" 23 1009 1071
+)
+"configuration.ml" 23 1009 1026 "configuration.ml" 23 1009 1037
+type(
+  'a * Lexers.conf_values
+)
+"configuration.ml" 23 1009 1041 "configuration.ml" 23 1009 1050
+type(
+  (string * Loc.location -> unit) -> (string * Loc.location) list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"configuration.ml" 23 1009 1051 "configuration.ml" 23 1009 1054
+type(
+  string * Loc.location -> unit
+)
+ident(
+  int_ref ack "configuration.ml" 22 945 951 "configuration.ml" 22 945 954
+)
+"configuration.ml" 23 1009 1055 "configuration.ml" 23 1009 1061
+type(
+  Lexers.conf_values
+)
+ident(
+  int_ref config "configuration.ml" 23 1009 1030 "configuration.ml" 23 1009 1036
+)
+"configuration.ml" 23 1009 1055 "configuration.ml" 23 1009 1071
+type(
+  (string * Loc.location) list
+)
+"configuration.ml" 23 1009 1041 "configuration.ml" 23 1009 1071
+call(
+  tail
+)
+type(
+  unit
+)
+"configuration.ml" 23 1009 1021 "configuration.ml" 23 1009 1072
+type(
+  'a * Lexers.conf_values -> unit
+)
+"configuration.ml" 23 1009 1073 "configuration.ml" 23 1009 1079
+type(
+  ('a * Lexers.conf_values) list
+)
+ident(
+  int_ref config "configuration.ml" 21 913 936 "configuration.ml" 21 913 942
+)
+"configuration.ml" 23 1009 1011 "configuration.ml" 23 1009 1079
+call(
+  tail
+)
+type(
+  unit
+)
+"configuration.ml" 22 945 947 "configuration.ml" 23 1009 1079
+type(
+  unit
+)
+"configuration.ml" 25 1081 1085 "configuration.ml" 25 1081 1090
+type(
+  (string, Tags.t) Hashtbl.t
+)
+ident(
+  def cache "configuration.ml" 26 1112 1112 "configuration.ml" 1 0 -1
+)
+"configuration.ml" 25 1081 1093 "configuration.ml" 25 1081 1107
+type(
+  ?random:bool -> int -> (string, Tags.t) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"configuration.ml" 25 1081 1108 "configuration.ml" 25 1081 1111
+type(
+  int
+)
+"configuration.ml" 25 1081 1093 "configuration.ml" 25 1081 1111
+call(
+  stack
+)
+type(
+  (string, Tags.t) Hashtbl.t
+)
+"configuration.ml" 26 1112 1117 "configuration.ml" 26 1112 1124
+type(
+  unit -> Lexers.conf list
+)
+ident(
+  def configs "configuration.ml" 34 1302 1302 "configuration.ml" 1 0 -1
+)
+"configuration.ml" 26 1112 1126 "configuration.ml" 26 1112 1136
+type(
+  Lexers.conf -> unit
+)
+ident(
+  def add_config "configuration.ml" 34 1302 1302 "configuration.ml" 1 0 -1
+)
+"configuration.ml" 26 1112 1116 "configuration.ml" 26 1112 1137
+type(
+  (unit -> Lexers.conf list) * (Lexers.conf -> unit)
+)
+"configuration.ml" 27 1140 1146 "configuration.ml" 27 1140 1153
+type(
+  Lexers.conf list ref
+)
+ident(
+  def configs "configuration.ml" 28 1166 1168 "configuration.ml" 32 1275 1300
+)
+"configuration.ml" 27 1140 1156 "configuration.ml" 27 1140 1159
+type(
+  Lexers.conf list -> Lexers.conf list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"configuration.ml" 27 1140 1160 "configuration.ml" 27 1140 1162
+type(
+  Lexers.conf list
+)
+"configuration.ml" 27 1140 1156 "configuration.ml" 27 1140 1162
+type(
+  Lexers.conf list ref
+)
+"configuration.ml" 28 1166 1173 "configuration.ml" 28 1166 1175
+type(
+  unit
+)
+"configuration.ml" 28 1166 1179 "configuration.ml" 28 1166 1180
+type(
+  Lexers.conf list ref -> Lexers.conf list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"configuration.ml" 28 1166 1180 "configuration.ml" 28 1166 1187
+type(
+  Lexers.conf list ref
+)
+ident(
+  int_ref configs "configuration.ml" 27 1140 1146 "configuration.ml" 27 1140 1153
+)
+"configuration.ml" 28 1166 1179 "configuration.ml" 28 1166 1187
+type(
+  Lexers.conf list
+)
+"configuration.ml" 28 1166 1168 "configuration.ml" 28 1166 1188
+type(
+  unit -> Lexers.conf list
+)
+"configuration.ml" 29 1190 1197 "configuration.ml" 29 1190 1203
+type(
+  Lexers.conf
+)
+ident(
+  def config "configuration.ml" 30 1207 1212 "configuration.ml" 32 1275 1299
+)
+"configuration.ml" 30 1207 1212 "configuration.ml" 30 1207 1230
+type(
+  Lexers.conf -> unit
+)
+ident(
+  int_ref acknowledge_config "configuration.ml" 21 913 917 "configuration.ml" 21 913 935
+)
+"configuration.ml" 30 1207 1231 "configuration.ml" 30 1207 1237
+type(
+  Lexers.conf
+)
+ident(
+  int_ref config "configuration.ml" 29 1190 1197 "configuration.ml" 29 1190 1203
+)
+"configuration.ml" 30 1207 1212 "configuration.ml" 30 1207 1237
+call(
+  stack
+)
+type(
+  unit
+)
+"configuration.ml" 31 1239 1244 "configuration.ml" 31 1239 1251
+type(
+  Lexers.conf list ref
+)
+ident(
+  int_ref configs "configuration.ml" 27 1140 1146 "configuration.ml" 27 1140 1153
+)
+"configuration.ml" 31 1239 1252 "configuration.ml" 31 1239 1254
+type(
+  Lexers.conf list ref -> Lexers.conf list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"configuration.ml" 31 1239 1255 "configuration.ml" 31 1239 1261
+type(
+  Lexers.conf
+)
+ident(
+  int_ref config "configuration.ml" 29 1190 1197 "configuration.ml" 29 1190 1203
+)
+"configuration.ml" 31 1239 1265 "configuration.ml" 31 1239 1266
+type(
+  Lexers.conf list ref -> Lexers.conf list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"configuration.ml" 31 1239 1266 "configuration.ml" 31 1239 1273
+type(
+  Lexers.conf list ref
+)
+ident(
+  int_ref configs "configuration.ml" 27 1140 1146 "configuration.ml" 27 1140 1153
+)
+"configuration.ml" 31 1239 1265 "configuration.ml" 31 1239 1273
+type(
+  Lexers.conf list
+)
+"configuration.ml" 31 1239 1255 "configuration.ml" 31 1239 1273
+type(
+  Lexers.conf list
+)
+"configuration.ml" 31 1239 1244 "configuration.ml" 31 1239 1273
+type(
+  unit
+)
+"configuration.ml" 32 1275 1280 "configuration.ml" 32 1275 1293
+type(
+  (string, Tags.t) Hashtbl.t -> unit
+)
+ident(
+  ext_ref Hashtbl.clear
+)
+"configuration.ml" 32 1275 1294 "configuration.ml" 32 1275 1299
+type(
+  (string, Tags.t) Hashtbl.t
+)
+ident(
+  int_ref cache "configuration.ml" 25 1081 1085 "configuration.ml" 25 1081 1090
+)
+"configuration.ml" 32 1275 1280 "configuration.ml" 32 1275 1299
+call(
+  tail
+)
+type(
+  unit
+)
+"configuration.ml" 31 1239 1244 "configuration.ml" 32 1275 1299
+type(
+  unit
+)
+"configuration.ml" 30 1207 1212 "configuration.ml" 32 1275 1299
+type(
+  unit
+)
+"configuration.ml" 29 1190 1192 "configuration.ml" 32 1275 1300
+type(
+  Lexers.conf -> unit
+)
+"configuration.ml" 28 1166 1168 "configuration.ml" 32 1275 1300
+type(
+  (unit -> Lexers.conf list) * (Lexers.conf -> unit)
+)
+"configuration.ml" 27 1140 1142 "configuration.ml" 32 1275 1300
+type(
+  (unit -> Lexers.conf list) * (Lexers.conf -> unit)
+)
+"configuration.ml" 34 1302 1306 "configuration.ml" 34 1302 1318
+type(
+  ?dir:string -> string -> Lexing.lexbuf -> unit
+)
+ident(
+  def parse_lexbuf "configuration.ml" 40 1499 1499 "configuration.ml" 1 0 -1
+)
+"configuration.ml" 34 1302 1320 "configuration.ml" 34 1302 1323
+type(
+  string option
+)
+ident(
+  def dir "configuration.ml" 34 1302 1324 "configuration.ml" 38 1480 1497
+)
+"configuration.ml" 34 1302 1324 "configuration.ml" 34 1302 1330
+type(
+  string
+)
+ident(
+  def source "configuration.ml" 34 1302 1331 "configuration.ml" 38 1480 1497
+)
+"configuration.ml" 34 1302 1331 "configuration.ml" 34 1302 1337
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "configuration.ml" 35 1340 1342 "configuration.ml" 38 1480 1497
+)
+"configuration.ml" 35 1340 1342 "configuration.ml" 35 1340 1348
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "configuration.ml" 34 1302 1331 "configuration.ml" 34 1302 1337
+)
+"configuration.ml" 36 1370 1376 "configuration.ml" 36 1370 1382
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "configuration.ml" 34 1302 1331 "configuration.ml" 34 1302 1337
+)
+"configuration.ml" 36 1370 1376 "configuration.ml" 36 1370 1400
+type(
+  Lexing.position
+)
+"configuration.ml" 36 1370 1425 "configuration.ml" 36 1370 1431
+type(
+  string
+)
+ident(
+  int_ref source "configuration.ml" 34 1302 1324 "configuration.ml" 34 1302 1330
+)
+"configuration.ml" 36 1370 1374 "configuration.ml" 36 1370 1433
+type(
+  Lexing.position
+)
+"configuration.ml" 35 1340 1342 "configuration.ml" 36 1370 1433
+type(
+  unit
+)
+"configuration.ml" 37 1435 1441 "configuration.ml" 37 1435 1445
+type(
+  Lexers.conf
+)
+ident(
+  def conf "configuration.ml" 38 1480 1482 "configuration.ml" 38 1480 1497
+)
+"configuration.ml" 37 1435 1448 "configuration.ml" 37 1435 1465
+type(
+  string option -> Lexing.lexbuf -> Lexers.conf
+)
+ident(
+  ext_ref Lexers.conf_lines
+)
+"configuration.ml" 37 1435 1466 "configuration.ml" 37 1435 1469
+type(
+  string option
+)
+ident(
+  int_ref dir "configuration.ml" 34 1302 1320 "configuration.ml" 34 1302 1323
+)
+"configuration.ml" 37 1435 1470 "configuration.ml" 37 1435 1476
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "configuration.ml" 34 1302 1331 "configuration.ml" 34 1302 1337
+)
+"configuration.ml" 37 1435 1448 "configuration.ml" 37 1435 1476
+call(
+  stack
+)
+type(
+  Lexers.conf
+)
+"configuration.ml" 38 1480 1482 "configuration.ml" 38 1480 1492
+type(
+  Lexers.conf -> unit
+)
+ident(
+  int_ref add_config "configuration.ml" 26 1112 1126 "configuration.ml" 26 1112 1136
+)
+"configuration.ml" 38 1480 1493 "configuration.ml" 38 1480 1497
+type(
+  Lexers.conf
+)
+ident(
+  int_ref conf "configuration.ml" 37 1435 1441 "configuration.ml" 37 1435 1445
+)
+"configuration.ml" 38 1480 1482 "configuration.ml" 38 1480 1497
+call(
+  tail
+)
+type(
+  unit
+)
+"configuration.ml" 37 1435 1437 "configuration.ml" 38 1480 1497
+type(
+  unit
+)
+"configuration.ml" 35 1340 1342 "configuration.ml" 38 1480 1497
+type(
+  unit
+)
+"configuration.ml" 40 1499 1503 "configuration.ml" 40 1499 1515
+type(
+  string -> unit
+)
+ident(
+  def parse_string "configuration.ml" 43 1591 1591 "configuration.ml" 1 0 -1
+)
+"configuration.ml" 40 1499 1516 "configuration.ml" 40 1499 1517
+type(
+  string
+)
+ident(
+  def s "configuration.ml" 41 1520 1522 "configuration.ml" 41 1520 1589
+)
+"configuration.ml" 41 1520 1522 "configuration.ml" 41 1520 1534
+type(
+  ?dir:string -> string -> Lexing.lexbuf -> unit
+)
+ident(
+  int_ref parse_lexbuf "configuration.ml" 34 1302 1306 "configuration.ml" 34 1302 1318
+)
+"configuration.ml" 41 1520 1536 "configuration.ml" 41 1520 1550
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"configuration.ml" 41 1520 1551 "configuration.ml" 41 1520 1563
+type(
+  (string -> string, unit, string) format
+)
+"configuration.ml" 41 1520 1564 "configuration.ml" 41 1520 1565
+type(
+  string
+)
+ident(
+  int_ref s "configuration.ml" 40 1499 1516 "configuration.ml" 40 1499 1517
+)
+"configuration.ml" 41 1520 1535 "configuration.ml" 41 1520 1566
+call(
+  stack
+)
+type(
+  string
+)
+"configuration.ml" 41 1520 1568 "configuration.ml" 41 1520 1586
+type(
+  string -> Lexing.lexbuf
+)
+ident(
+  ext_ref Lexing.from_string
+)
+"configuration.ml" 41 1520 1587 "configuration.ml" 41 1520 1588
+type(
+  string
+)
+ident(
+  int_ref s "configuration.ml" 40 1499 1516 "configuration.ml" 40 1499 1517
+)
+"configuration.ml" 41 1520 1567 "configuration.ml" 41 1520 1589
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"configuration.ml" 41 1520 1522 "configuration.ml" 41 1520 1589
+call(
+  tail
+)
+type(
+  unit
+)
+"configuration.ml" 43 1591 1595 "configuration.ml" 43 1591 1605
+type(
+  ?dir:string -> string -> unit
+)
+ident(
+  def parse_file "configuration.ml" 48 1716 1716 "configuration.ml" 1 0 -1
+)
+"configuration.ml" 43 1591 1607 "configuration.ml" 43 1591 1610
+type(
+  string option
+)
+ident(
+  def dir "configuration.ml" 43 1591 1611 "configuration.ml" 46 1709 1714
+)
+"configuration.ml" 43 1591 1611 "configuration.ml" 43 1591 1615
+type(
+  string
+)
+ident(
+  def file "configuration.ml" 44 1618 1620 "configuration.ml" 46 1709 1714
+)
+"configuration.ml" 44 1618 1620 "configuration.ml" 44 1618 1635
+type(
+  ?bin:bool -> string -> (in_channel -> unit) -> unit
+)
+ident(
+  ext_ref My_std.with_input_file
+)
+"configuration.ml" 44 1618 1636 "configuration.ml" 44 1618 1640
+type(
+  string
+)
+ident(
+  int_ref file "configuration.ml" 43 1591 1611 "configuration.ml" 43 1591 1615
+)
+"configuration.ml" 44 1618 1651 "configuration.ml" 44 1618 1653
+type(
+  in_channel
+)
+ident(
+  def ic "configuration.ml" 45 1657 1661 "configuration.ml" 45 1657 1708
+)
+"configuration.ml" 45 1657 1661 "configuration.ml" 45 1657 1673
+type(
+  ?dir:string -> string -> Lexing.lexbuf -> unit
+)
+ident(
+  int_ref parse_lexbuf "configuration.ml" 34 1302 1306 "configuration.ml" 34 1302 1318
+)
+"configuration.ml" 45 1657 1675 "configuration.ml" 45 1657 1678
+type(
+  string option
+)
+ident(
+  int_ref dir "configuration.ml" 43 1591 1607 "configuration.ml" 43 1591 1610
+)
+"configuration.ml" 45 1657 1679 "configuration.ml" 45 1657 1683
+type(
+  string
+)
+ident(
+  int_ref file "configuration.ml" 43 1591 1611 "configuration.ml" 43 1591 1615
+)
+"configuration.ml" 45 1657 1685 "configuration.ml" 45 1657 1704
+type(
+  in_channel -> Lexing.lexbuf
+)
+ident(
+  ext_ref Lexing.from_channel
+)
+"configuration.ml" 45 1657 1705 "configuration.ml" 45 1657 1707
+type(
+  in_channel
+)
+ident(
+  int_ref ic "configuration.ml" 44 1618 1651 "configuration.ml" 44 1618 1653
+)
+"configuration.ml" 45 1657 1684 "configuration.ml" 45 1657 1708
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"configuration.ml" 45 1657 1661 "configuration.ml" 45 1657 1708
+call(
+  tail
+)
+type(
+  unit
+)
+"configuration.ml" 44 1618 1641 "configuration.ml" 46 1709 1714
+type(
+  in_channel -> unit
+)
+"configuration.ml" 44 1618 1620 "configuration.ml" 46 1709 1714
+call(
+  tail
+)
+type(
+  unit
+)
+"configuration.ml" 48 1716 1720 "configuration.ml" 48 1716 1729
+type(
+  Glob.globber -> string -> bool
+)
+ident(
+  def key_match "configuration.ml" 50 1743 1743 "configuration.ml" 1 0 -1
+)
+"configuration.ml" 48 1716 1732 "configuration.ml" 48 1716 1741
+type(
+  Glob.globber -> string -> bool
+)
+ident(
+  ext_ref Glob.eval
+)
+"configuration.ml" 50 1743 1747 "configuration.ml" 50 1743 1759
+type(
+  string -> t -> Tags.t -> Tags.t
+)
+ident(
+  def apply_config "configuration.ml" 59 2054 2054 "configuration.ml" 1 0 -1
+)
+"configuration.ml" 50 1743 1760 "configuration.ml" 50 1743 1761
+type(
+  string
+)
+ident(
+  def s "configuration.ml" 50 1743 1762 "configuration.ml" 57 2035 2052
+)
+"configuration.ml" 50 1743 1763 "configuration.ml" 50 1743 1769
+type(
+  t
+)
+ident(
+  def config "configuration.ml" 50 1743 1775 "configuration.ml" 57 2035 2052
+)
+"configuration.ml" 50 1743 1775 "configuration.ml" 50 1743 1779
+type(
+  Tags.t
+)
+ident(
+  def init "configuration.ml" 51 1782 1784 "configuration.ml" 57 2035 2052
+)
+"configuration.ml" 51 1782 1788 "configuration.ml" 51 1782 1791
+type(
+  Tags.elt * 'a -> Tags.t -> Tags.t
+)
+ident(
+  def add "configuration.ml" 52 1822 1824 "configuration.ml" 57 2035 2052
+)
+"configuration.ml" 51 1782 1793 "configuration.ml" 51 1782 1796
+type(
+  Tags.elt
+)
+ident(
+  def tag "configuration.ml" 51 1782 1806 "configuration.ml" 51 1782 1818
+)
+"configuration.ml" 51 1782 1798 "configuration.ml" 51 1782 1802
+type(
+  'a
+)
+ident(
+  def _loc "configuration.ml" 51 1782 1806 "configuration.ml" 51 1782 1818
+)
+"configuration.ml" 51 1782 1792 "configuration.ml" 51 1782 1803
+type(
+  Tags.elt * 'a
+)
+"configuration.ml" 51 1782 1806 "configuration.ml" 51 1782 1814
+type(
+  Tags.elt -> Tags.t -> Tags.t
+)
+ident(
+  ext_ref Tags.add
+)
+"configuration.ml" 51 1782 1815 "configuration.ml" 51 1782 1818
+type(
+  Tags.elt
+)
+ident(
+  int_ref tag "configuration.ml" 51 1782 1793 "configuration.ml" 51 1782 1796
+)
+"configuration.ml" 51 1782 1806 "configuration.ml" 51 1782 1818
+call(
+  tail
+)
+type(
+  Tags.t -> Tags.t
+)
+"configuration.ml" 52 1822 1828 "configuration.ml" 52 1822 1834
+type(
+  Tags.elt * 'b -> Tags.t -> Tags.t
+)
+ident(
+  def remove "configuration.ml" 53 1868 1870 "configuration.ml" 57 2035 2052
+)
+"configuration.ml" 52 1822 1836 "configuration.ml" 52 1822 1839
+type(
+  Tags.elt
+)
+ident(
+  def tag "configuration.ml" 52 1822 1849 "configuration.ml" 52 1822 1864
+)
+"configuration.ml" 52 1822 1841 "configuration.ml" 52 1822 1845
+type(
+  'b
+)
+ident(
+  def _loc "configuration.ml" 52 1822 1849 "configuration.ml" 52 1822 1864
+)
+"configuration.ml" 52 1822 1835 "configuration.ml" 52 1822 1846
+type(
+  Tags.elt * 'b
+)
+"configuration.ml" 52 1822 1849 "configuration.ml" 52 1822 1860
+type(
+  Tags.elt -> Tags.t -> Tags.t
+)
+ident(
+  ext_ref Tags.remove
+)
+"configuration.ml" 52 1822 1861 "configuration.ml" 52 1822 1864
+type(
+  Tags.elt
+)
+ident(
+  int_ref tag "configuration.ml" 52 1822 1836 "configuration.ml" 52 1822 1839
+)
+"configuration.ml" 52 1822 1849 "configuration.ml" 52 1822 1864
+call(
+  tail
+)
+type(
+  Tags.t -> Tags.t
+)
+"configuration.ml" 53 1868 1870 "configuration.ml" 53 1868 1884
+type(
+  (Tags.t -> Glob.globber * Lexers.conf_values -> Tags.t) ->
+  Tags.t -> t -> Tags.t
+)
+ident(
+  ext_ref My_std.List.fold_left
+)
+"configuration.ml" 53 1868 1895 "configuration.ml" 53 1868 1899
+type(
+  Tags.t
+)
+ident(
+  def tags "configuration.ml" 53 1868 1900 "configuration.ml" 56 2021 2034
+)
+"configuration.ml" 53 1868 1901 "configuration.ml" 53 1868 1904
+type(
+  Glob.globber
+)
+ident(
+  def key "configuration.ml" 54 1912 1916 "configuration.ml" 56 2021 2034
+)
+"configuration.ml" 53 1868 1906 "configuration.ml" 53 1868 1907
+type(
+  Lexers.conf_values
+)
+ident(
+  def v "configuration.ml" 54 1912 1916 "configuration.ml" 56 2021 2034
+)
+"configuration.ml" 53 1868 1900 "configuration.ml" 53 1868 1908
+type(
+  Glob.globber * Lexers.conf_values
+)
+"configuration.ml" 54 1912 1919 "configuration.ml" 54 1912 1928
+type(
+  Glob.globber -> string -> bool
+)
+ident(
+  int_ref key_match "configuration.ml" 48 1716 1720 "configuration.ml" 48 1716 1729
+)
+"configuration.ml" 54 1912 1929 "configuration.ml" 54 1912 1932
+type(
+  Glob.globber
+)
+ident(
+  int_ref key "configuration.ml" 53 1868 1901 "configuration.ml" 53 1868 1904
+)
+"configuration.ml" 54 1912 1933 "configuration.ml" 54 1912 1934
+type(
+  string
+)
+ident(
+  int_ref s "configuration.ml" 50 1743 1760 "configuration.ml" 50 1743 1761
+)
+"configuration.ml" 54 1912 1919 "configuration.ml" 54 1912 1934
+call(
+  stack
+)
+type(
+  bool
+)
+"configuration.ml" 55 1940 1946 "configuration.ml" 55 1940 1961
+type(
+  (Tags.elt * Loc.location -> Tags.t -> Tags.t) ->
+  (Tags.elt * Loc.location) list -> Tags.t -> Tags.t
+)
+ident(
+  ext_ref My_std.List.fold_right
+)
+"configuration.ml" 55 1940 1962 "configuration.ml" 55 1940 1965
+type(
+  Tags.elt * Loc.location -> Tags.t -> Tags.t
+)
+ident(
+  int_ref add "configuration.ml" 51 1782 1788 "configuration.ml" 51 1782 1791
+)
+"configuration.ml" 55 1940 1966 "configuration.ml" 55 1940 1967
+type(
+  Lexers.conf_values
+)
+ident(
+  int_ref v "configuration.ml" 53 1868 1906 "configuration.ml" 53 1868 1907
+)
+"configuration.ml" 55 1940 1966 "configuration.ml" 55 1940 1977
+type(
+  (Tags.elt * Loc.location) list
+)
+"configuration.ml" 55 1940 1979 "configuration.ml" 55 1940 1994
+type(
+  (Tags.elt * Loc.location -> Tags.t -> Tags.t) ->
+  (Tags.elt * Loc.location) list -> Tags.t -> Tags.t
+)
+ident(
+  ext_ref My_std.List.fold_right
+)
+"configuration.ml" 55 1940 1995 "configuration.ml" 55 1940 2001
+type(
+  Tags.elt * Loc.location -> Tags.t -> Tags.t
+)
+ident(
+  int_ref remove "configuration.ml" 52 1822 1828 "configuration.ml" 52 1822 1834
+)
+"configuration.ml" 55 1940 2002 "configuration.ml" 55 1940 2003
+type(
+  Lexers.conf_values
+)
+ident(
+  int_ref v "configuration.ml" 53 1868 1906 "configuration.ml" 53 1868 1907
+)
+"configuration.ml" 55 1940 2002 "configuration.ml" 55 1940 2014
+type(
+  (Tags.elt * Loc.location) list
+)
+"configuration.ml" 55 1940 2015 "configuration.ml" 55 1940 2019
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "configuration.ml" 53 1868 1895 "configuration.ml" 53 1868 1899
+)
+"configuration.ml" 55 1940 1978 "configuration.ml" 55 1940 2020
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"configuration.ml" 55 1940 1946 "configuration.ml" 55 1940 2020
+call(
+  tail
+)
+type(
+  Tags.t
+)
+"configuration.ml" 56 2021 2030 "configuration.ml" 56 2021 2034
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "configuration.ml" 53 1868 1895 "configuration.ml" 53 1868 1899
+)
+"configuration.ml" 54 1912 1916 "configuration.ml" 56 2021 2034
+type(
+  Tags.t
+)
+"configuration.ml" 53 1868 1885 "configuration.ml" 57 2035 2040
+type(
+  Tags.t -> Glob.globber * Lexers.conf_values -> Tags.t
+)
+"configuration.ml" 57 2035 2041 "configuration.ml" 57 2035 2045
+type(
+  Tags.t
+)
+ident(
+  int_ref init "configuration.ml" 50 1743 1775 "configuration.ml" 50 1743 1779
+)
+"configuration.ml" 57 2035 2046 "configuration.ml" 57 2035 2052
+type(
+  t
+)
+ident(
+  int_ref config "configuration.ml" 50 1743 1763 "configuration.ml" 50 1743 1769
+)
+"configuration.ml" 53 1868 1870 "configuration.ml" 57 2035 2052
+call(
+  tail
+)
+type(
+  Tags.t
+)
+"configuration.ml" 52 1822 1824 "configuration.ml" 57 2035 2052
+type(
+  Tags.t
+)
+"configuration.ml" 51 1782 1784 "configuration.ml" 57 2035 2052
+type(
+  Tags.t
+)
+"configuration.ml" 59 2054 2058 "configuration.ml" 59 2054 2071
+type(
+  string -> Tags.t
+)
+ident(
+  def apply_configs "configuration.ml" 61 2134 2134 "configuration.ml" 1 0 -1
+)
+"configuration.ml" 59 2054 2072 "configuration.ml" 59 2054 2073
+type(
+  string
+)
+ident(
+  def s "configuration.ml" 59 2054 2076 "configuration.ml" 59 2054 2132
+)
+"configuration.ml" 59 2054 2076 "configuration.ml" 59 2054 2091
+type(
+  (t -> Tags.t -> Tags.t) -> t list -> Tags.t -> Tags.t
+)
+ident(
+  ext_ref My_std.List.fold_right
+)
+"configuration.ml" 59 2054 2093 "configuration.ml" 59 2054 2105
+type(
+  string -> t -> Tags.t -> Tags.t
+)
+ident(
+  int_ref apply_config "configuration.ml" 50 1743 1747 "configuration.ml" 50 1743 1759
+)
+"configuration.ml" 59 2054 2106 "configuration.ml" 59 2054 2107
+type(
+  string
+)
+ident(
+  int_ref s "configuration.ml" 59 2054 2072 "configuration.ml" 59 2054 2073
+)
+"configuration.ml" 59 2054 2092 "configuration.ml" 59 2054 2108
+call(
+  stack
+)
+type(
+  t -> Tags.t -> Tags.t
+)
+"configuration.ml" 59 2054 2110 "configuration.ml" 59 2054 2117
+type(
+  unit -> t list
+)
+ident(
+  int_ref configs "configuration.ml" 26 1112 1117 "configuration.ml" 26 1112 1124
+)
+"configuration.ml" 59 2054 2118 "configuration.ml" 59 2054 2120
+type(
+  unit
+)
+"configuration.ml" 59 2054 2109 "configuration.ml" 59 2054 2121
+call(
+  stack
+)
+type(
+  t list
+)
+"configuration.ml" 59 2054 2122 "configuration.ml" 59 2054 2132
+type(
+  Tags.t
+)
+ident(
+  ext_ref Tags.empty
+)
+"configuration.ml" 59 2054 2076 "configuration.ml" 59 2054 2132
+call(
+  tail
+)
+type(
+  Tags.t
+)
+"configuration.ml" 61 2134 2138 "configuration.ml" 61 2134 2154
+type(
+  string -> Tags.t
+)
+ident(
+  def tags_of_filename "configuration.ml" 68 2292 2292 "configuration.ml" 1 0 -1
+)
+"configuration.ml" 61 2134 2155 "configuration.ml" 61 2134 2156
+type(
+  string
+)
+ident(
+  def s "configuration.ml" 62 2159 2161 "configuration.ml" 66 2283 2290
+)
+"configuration.ml" 62 2159 2165 "configuration.ml" 62 2159 2177
+type(
+  (string, Tags.t) Hashtbl.t -> string -> Tags.t
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"configuration.ml" 62 2159 2178 "configuration.ml" 62 2159 2183
+type(
+  (string, Tags.t) Hashtbl.t
+)
+ident(
+  int_ref cache "configuration.ml" 25 1081 1085 "configuration.ml" 25 1081 1090
+)
+"configuration.ml" 62 2159 2184 "configuration.ml" 62 2159 2185
+type(
+  string
+)
+ident(
+  int_ref s "configuration.ml" 61 2134 2155 "configuration.ml" 61 2134 2156
+)
+"configuration.ml" 62 2159 2165 "configuration.ml" 62 2159 2185
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"configuration.ml" 63 2186 2193 "configuration.ml" 63 2186 2202
+type(
+  exn
+)
+"configuration.ml" 64 2206 2214 "configuration.ml" 64 2206 2217
+type(
+  Tags.t
+)
+ident(
+  def res "configuration.ml" 65 2239 2243 "configuration.ml" 66 2283 2290
+)
+"configuration.ml" 64 2206 2220 "configuration.ml" 64 2206 2233
+type(
+  string -> Tags.t
+)
+ident(
+  int_ref apply_configs "configuration.ml" 59 2054 2058 "configuration.ml" 59 2054 2071
+)
+"configuration.ml" 64 2206 2234 "configuration.ml" 64 2206 2235
+type(
+  string
+)
+ident(
+  int_ref s "configuration.ml" 61 2134 2155 "configuration.ml" 61 2134 2156
+)
+"configuration.ml" 64 2206 2220 "configuration.ml" 64 2206 2235
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"configuration.ml" 65 2239 2247 "configuration.ml" 65 2239 2249
+type(
+  unit
+)
+"configuration.ml" 65 2239 2252 "configuration.ml" 65 2239 2267
+type(
+  (string, Tags.t) Hashtbl.t -> string -> Tags.t -> unit
+)
+ident(
+  ext_ref Hashtbl.replace
+)
+"configuration.ml" 65 2239 2268 "configuration.ml" 65 2239 2273
+type(
+  (string, Tags.t) Hashtbl.t
+)
+ident(
+  int_ref cache "configuration.ml" 25 1081 1085 "configuration.ml" 25 1081 1090
+)
+"configuration.ml" 65 2239 2274 "configuration.ml" 65 2239 2275
+type(
+  string
+)
+ident(
+  int_ref s "configuration.ml" 61 2134 2155 "configuration.ml" 61 2134 2156
+)
+"configuration.ml" 65 2239 2276 "configuration.ml" 65 2239 2279
+type(
+  Tags.t
+)
+ident(
+  int_ref res "configuration.ml" 64 2206 2214 "configuration.ml" 64 2206 2217
+)
+"configuration.ml" 65 2239 2252 "configuration.ml" 65 2239 2279
+call(
+  stack
+)
+type(
+  unit
+)
+"configuration.ml" 66 2283 2287 "configuration.ml" 66 2283 2290
+type(
+  Tags.t
+)
+ident(
+  int_ref res "configuration.ml" 64 2206 2214 "configuration.ml" 64 2206 2217
+)
+"configuration.ml" 65 2239 2243 "configuration.ml" 66 2283 2290
+type(
+  Tags.t
+)
+"configuration.ml" 64 2206 2210 "configuration.ml" 66 2283 2290
+type(
+  Tags.t
+)
+"configuration.ml" 62 2159 2161 "configuration.ml" 66 2283 2290
+type(
+  Tags.t
+)
+"configuration.ml" 68 2292 2296 "configuration.ml" 68 2292 2307
+type(
+  unit -> Tags.t
+)
+ident(
+  def global_tags "configuration.ml" 69 2333 2333 "configuration.ml" 1 0 -1
+)
+"configuration.ml" 68 2292 2308 "configuration.ml" 68 2292 2310
+type(
+  unit
+)
+"configuration.ml" 68 2292 2313 "configuration.ml" 68 2292 2329
+type(
+  string -> Tags.t
+)
+ident(
+  int_ref tags_of_filename "configuration.ml" 61 2134 2138 "configuration.ml" 61 2134 2154
+)
+"configuration.ml" 68 2292 2330 "configuration.ml" 68 2292 2332
+type(
+  string
+)
+"configuration.ml" 68 2292 2313 "configuration.ml" 68 2292 2332
+call(
+  tail
+)
+type(
+  Tags.t
+)
+"configuration.ml" 69 2333 2337 "configuration.ml" 69 2333 2344
+type(
+  Tags.elt -> bool
+)
+ident(
+  def has_tag "configuration.ml" 71 2382 2382 "configuration.ml" 1 0 -1
+)
+"configuration.ml" 69 2333 2345 "configuration.ml" 69 2333 2348
+type(
+  Tags.elt
+)
+ident(
+  def tag "configuration.ml" 69 2333 2351 "configuration.ml" 69 2333 2380
+)
+"configuration.ml" 69 2333 2351 "configuration.ml" 69 2333 2359
+type(
+  Tags.elt -> Tags.t -> bool
+)
+ident(
+  ext_ref Tags.mem
+)
+"configuration.ml" 69 2333 2360 "configuration.ml" 69 2333 2363
+type(
+  Tags.elt
+)
+ident(
+  int_ref tag "configuration.ml" 69 2333 2345 "configuration.ml" 69 2333 2348
+)
+"configuration.ml" 69 2333 2365 "configuration.ml" 69 2333 2376
+type(
+  unit -> Tags.t
+)
+ident(
+  int_ref global_tags "configuration.ml" 68 2292 2296 "configuration.ml" 68 2292 2307
+)
+"configuration.ml" 69 2333 2377 "configuration.ml" 69 2333 2379
+type(
+  unit
+)
+"configuration.ml" 69 2333 2364 "configuration.ml" 69 2333 2380
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"configuration.ml" 69 2333 2351 "configuration.ml" 69 2333 2380
+call(
+  tail
+)
+type(
+  bool
+)
+"configuration.ml" 71 2382 2386 "configuration.ml" 71 2382 2394
+type(
+  string -> string list -> unit
+)
+ident(
+  def tag_file "configuration.ml" 74 2501 2501 "configuration.ml" 1 0 -1
+)
+"configuration.ml" 71 2382 2395 "configuration.ml" 71 2382 2399
+type(
+  string
+)
+ident(
+  def file "configuration.ml" 71 2382 2400 "configuration.ml" 72 2407 2497
+)
+"configuration.ml" 71 2382 2400 "configuration.ml" 71 2382 2404
+type(
+  string list
+)
+ident(
+  def tags "configuration.ml" 72 2407 2409 "configuration.ml" 72 2407 2497
+)
+"configuration.ml" 72 2407 2412 "configuration.ml" 72 2407 2416
+type(
+  string list
+)
+ident(
+  int_ref tags "configuration.ml" 71 2382 2400 "configuration.ml" 71 2382 2404
+)
+"configuration.ml" 72 2407 2417 "configuration.ml" 72 2407 2419
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"configuration.ml" 72 2407 2420 "configuration.ml" 72 2407 2422
+type(
+  string list
+)
+"configuration.ml" 72 2407 2412 "configuration.ml" 72 2407 2422
+type(
+  bool
+)
+"configuration.ml" 72 2407 2428 "configuration.ml" 72 2407 2440
+type(
+  string -> unit
+)
+ident(
+  int_ref parse_string "configuration.ml" 40 1499 1503 "configuration.ml" 40 1499 1515
+)
+"configuration.ml" 72 2407 2442 "configuration.ml" 72 2407 2456
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"configuration.ml" 72 2407 2457 "configuration.ml" 72 2407 2465
+type(
+  (string -> string -> string, unit, string) format
+)
+"configuration.ml" 72 2407 2466 "configuration.ml" 72 2407 2470
+type(
+  string
+)
+ident(
+  int_ref file "configuration.ml" 71 2382 2395 "configuration.ml" 71 2382 2399
+)
+"configuration.ml" 72 2407 2472 "configuration.ml" 72 2407 2485
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref My_std.String.concat
+)
+"configuration.ml" 72 2407 2486 "configuration.ml" 72 2407 2490
+type(
+  string
+)
+"configuration.ml" 72 2407 2491 "configuration.ml" 72 2407 2495
+type(
+  string list
+)
+ident(
+  int_ref tags "configuration.ml" 71 2382 2400 "configuration.ml" 71 2382 2404
+)
+"configuration.ml" 72 2407 2471 "configuration.ml" 72 2407 2496
+call(
+  stack
+)
+type(
+  string
+)
+"configuration.ml" 72 2407 2441 "configuration.ml" 72 2407 2497
+call(
+  stack
+)
+type(
+  string
+)
+"configuration.ml" 72 2407 2428 "configuration.ml" 72 2407 2497
+call(
+  tail
+)
+type(
+  unit
+)
+"configuration.ml" 72 2407 2409 "configuration.ml" 72 2407 2497
+type(
+  unit
+)
+"configuration.ml" 74 2501 2505 "configuration.ml" 74 2501 2512
+type(
+  string list -> unit
+)
+ident(
+  def tag_any "configuration.ml" 77 2611 2611 "configuration.ml" 1 0 -1
+)
+"configuration.ml" 74 2501 2513 "configuration.ml" 74 2501 2517
+type(
+  string list
+)
+ident(
+  def tags "configuration.ml" 75 2520 2522 "configuration.ml" 75 2520 2607
+)
+"configuration.ml" 75 2520 2525 "configuration.ml" 75 2520 2529
+type(
+  string list
+)
+ident(
+  int_ref tags "configuration.ml" 74 2501 2513 "configuration.ml" 74 2501 2517
+)
+"configuration.ml" 75 2520 2530 "configuration.ml" 75 2520 2532
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"configuration.ml" 75 2520 2533 "configuration.ml" 75 2520 2535
+type(
+  string list
+)
+"configuration.ml" 75 2520 2525 "configuration.ml" 75 2520 2535
+type(
+  bool
+)
+"configuration.ml" 75 2520 2541 "configuration.ml" 75 2520 2553
+type(
+  string -> unit
+)
+ident(
+  int_ref parse_string "configuration.ml" 40 1499 1503 "configuration.ml" 40 1499 1515
+)
+"configuration.ml" 75 2520 2555 "configuration.ml" 75 2520 2569
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"configuration.ml" 75 2520 2570 "configuration.ml" 75 2520 2580
+type(
+  (string -> string, unit, string) format
+)
+"configuration.ml" 75 2520 2582 "configuration.ml" 75 2520 2595
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref My_std.String.concat
+)
+"configuration.ml" 75 2520 2596 "configuration.ml" 75 2520 2600
+type(
+  string
+)
+"configuration.ml" 75 2520 2601 "configuration.ml" 75 2520 2605
+type(
+  string list
+)
+ident(
+  int_ref tags "configuration.ml" 74 2501 2513 "configuration.ml" 74 2501 2517
+)
+"configuration.ml" 75 2520 2581 "configuration.ml" 75 2520 2606
+call(
+  stack
+)
+type(
+  string
+)
+"configuration.ml" 75 2520 2554 "configuration.ml" 75 2520 2607
+call(
+  stack
+)
+type(
+  string
+)
+"configuration.ml" 75 2520 2541 "configuration.ml" 75 2520 2607
+call(
+  tail
+)
+type(
+  unit
+)
+"configuration.ml" 75 2520 2522 "configuration.ml" 75 2520 2607
+type(
+  unit
+)
+"configuration.ml" 77 2611 2615 "configuration.ml" 77 2611 2631
+type(
+  Tags.t -> unit
+)
+ident(
+  def check_tags_usage "configuration.ml" 90 3140 3187 "configuration.ml" 1 0 -1
+)
+"configuration.ml" 77 2611 2632 "configuration.ml" 77 2611 2643
+type(
+  Tags.t
+)
+ident(
+  def useful_tags "configuration.ml" 78 2646 2648 "configuration.ml" 90 3140 3187
+)
+"configuration.ml" 78 2646 2652 "configuration.ml" 78 2646 2661
+type(
+  Tags.elt * Loc.location -> unit
+)
+ident(
+  def check_tag "configuration.ml" 86 3019 3021 "configuration.ml" 90 3140 3187
+)
+"configuration.ml" 78 2646 2663 "configuration.ml" 78 2646 2666
+type(
+  Tags.elt
+)
+ident(
+  def tag "configuration.ml" 79 2675 2679 "configuration.ml" 84 2984 3013
+)
+"configuration.ml" 78 2646 2668 "configuration.ml" 78 2646 2671
+type(
+  Loc.location
+)
+ident(
+  def loc "configuration.ml" 79 2675 2679 "configuration.ml" 84 2984 3013
+)
+"configuration.ml" 78 2646 2662 "configuration.ml" 78 2646 2672
+type(
+  Tags.elt * Loc.location
+)
+"configuration.ml" 79 2675 2682 "configuration.ml" 79 2675 2685
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"configuration.ml" 79 2675 2687 "configuration.ml" 79 2675 2695
+type(
+  Tags.elt -> Tags.t -> bool
+)
+ident(
+  ext_ref Tags.mem
+)
+"configuration.ml" 79 2675 2696 "configuration.ml" 79 2675 2699
+type(
+  Tags.elt
+)
+ident(
+  int_ref tag "configuration.ml" 78 2646 2663 "configuration.ml" 78 2646 2666
+)
+"configuration.ml" 79 2675 2700 "configuration.ml" 79 2675 2711
+type(
+  Tags.t
+)
+ident(
+  int_ref useful_tags "configuration.ml" 77 2611 2632 "configuration.ml" 77 2611 2643
+)
+"configuration.ml" 79 2675 2686 "configuration.ml" 79 2675 2712
+call(
+  stack
+)
+type(
+  bool
+)
+"configuration.ml" 79 2675 2682 "configuration.ml" 79 2675 2712
+type(
+  bool
+)
+"configuration.ml" 80 2718 2724 "configuration.ml" 80 2718 2735
+type(
+  ((Format.formatter -> Loc.location -> unit) ->
+   Loc.location -> Tags.elt -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Loc.location -> unit) ->
+  Loc.location -> Tags.elt -> unit
+)
+ident(
+  ext_ref Log.eprintf
+)
+"configuration.ml" 80 2718 2736 "configuration.ml" 83 2950 2983
+type(
+  ((Format.formatter -> Loc.location -> unit) ->
+   Loc.location -> Tags.elt -> unit, Format.formatter, unit)
+  format
+)
+"configuration.ml" 84 2984 2992 "configuration.ml" 84 2984 3005
+type(
+  Format.formatter -> Loc.location -> unit
+)
+ident(
+  ext_ref Loc.print_loc
+)
+"configuration.ml" 84 2984 3006 "configuration.ml" 84 2984 3009
+type(
+  Loc.location
+)
+ident(
+  int_ref loc "configuration.ml" 78 2646 2668 "configuration.ml" 78 2646 2671
+)
+"configuration.ml" 84 2984 3010 "configuration.ml" 84 2984 3013
+type(
+  Tags.elt
+)
+ident(
+  int_ref tag "configuration.ml" 78 2646 2663 "configuration.ml" 78 2646 2666
+)
+"configuration.ml" 80 2718 2724 "configuration.ml" 84 2984 3013
+call(
+  tail
+)
+type(
+  unit
+)
+"configuration.ml" 79 2675 2679 "configuration.ml" 84 2984 3013
+type(
+  unit
+)
+"configuration.ml" 86 3019 3025 "configuration.ml" 86 3019 3035
+type(
+  'a * Lexers.conf_values -> unit
+)
+ident(
+  def check_conf "configuration.ml" 90 3140 3142 "configuration.ml" 90 3140 3187
+)
+"configuration.ml" 86 3019 3037 "configuration.ml" 86 3019 3038
+type(
+  'a
+)
+"configuration.ml" 86 3019 3040 "configuration.ml" 86 3019 3046
+type(
+  Lexers.conf_values
+)
+ident(
+  def values "configuration.ml" 87 3050 3054 "configuration.ml" 88 3092 3134
+)
+"configuration.ml" 86 3019 3036 "configuration.ml" 86 3019 3047
+type(
+  'a * Lexers.conf_values
+)
+"configuration.ml" 87 3050 3054 "configuration.ml" 87 3050 3063
+type(
+  (Tags.elt * Loc.location -> unit) -> (Tags.elt * Loc.location) list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"configuration.ml" 87 3050 3064 "configuration.ml" 87 3050 3073
+type(
+  Tags.elt * Loc.location -> unit
+)
+ident(
+  int_ref check_tag "configuration.ml" 78 2646 2652 "configuration.ml" 78 2646 2661
+)
+"configuration.ml" 87 3050 3074 "configuration.ml" 87 3050 3080
+type(
+  Lexers.conf_values
+)
+ident(
+  int_ref values "configuration.ml" 86 3019 3040 "configuration.ml" 86 3019 3046
+)
+"configuration.ml" 87 3050 3074 "configuration.ml" 87 3050 3090
+type(
+  (Tags.elt * Loc.location) list
+)
+"configuration.ml" 87 3050 3054 "configuration.ml" 87 3050 3090
+call(
+  stack
+)
+type(
+  unit
+)
+"configuration.ml" 88 3092 3096 "configuration.ml" 88 3092 3105
+type(
+  (Tags.elt * Loc.location -> unit) -> (Tags.elt * Loc.location) list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"configuration.ml" 88 3092 3106 "configuration.ml" 88 3092 3115
+type(
+  Tags.elt * Loc.location -> unit
+)
+ident(
+  int_ref check_tag "configuration.ml" 78 2646 2652 "configuration.ml" 78 2646 2661
+)
+"configuration.ml" 88 3092 3116 "configuration.ml" 88 3092 3122
+type(
+  Lexers.conf_values
+)
+ident(
+  int_ref values "configuration.ml" 86 3019 3040 "configuration.ml" 86 3019 3046
+)
+"configuration.ml" 88 3092 3116 "configuration.ml" 88 3092 3133
+type(
+  (Tags.elt * Loc.location) list
+)
+"configuration.ml" 88 3092 3096 "configuration.ml" 88 3092 3134
+call(
+  tail
+)
+type(
+  unit
+)
+"configuration.ml" 87 3050 3054 "configuration.ml" 88 3092 3134
+type(
+  unit
+)
+"configuration.ml" 90 3140 3142 "configuration.ml" 90 3140 3151
+type(
+  (Lexers.conf -> unit) -> Lexers.conf list -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"configuration.ml" 90 3140 3153 "configuration.ml" 90 3140 3162
+type(
+  (Glob.globber * Lexers.conf_values -> unit) -> Lexers.conf -> unit
+)
+ident(
+  ext_ref My_std.List.iter
+)
+"configuration.ml" 90 3140 3163 "configuration.ml" 90 3140 3173
+type(
+  Glob.globber * Lexers.conf_values -> unit
+)
+ident(
+  int_ref check_conf "configuration.ml" 86 3019 3025 "configuration.ml" 86 3019 3035
+)
+"configuration.ml" 90 3140 3152 "configuration.ml" 90 3140 3174
+call(
+  stack
+)
+type(
+  Lexers.conf -> unit
+)
+"configuration.ml" 90 3140 3176 "configuration.ml" 90 3140 3183
+type(
+  unit -> Lexers.conf list
+)
+ident(
+  int_ref configs "configuration.ml" 26 1112 1117 "configuration.ml" 26 1112 1124
+)
+"configuration.ml" 90 3140 3184 "configuration.ml" 90 3140 3186
+type(
+  unit
+)
+"configuration.ml" 90 3140 3175 "configuration.ml" 90 3140 3187
+call(
+  stack
+)
+type(
+  Lexers.conf list
+)
+"configuration.ml" 90 3140 3142 "configuration.ml" 90 3140 3187
+call(
+  tail
+)
+type(
+  unit
+)
+"configuration.ml" 86 3019 3021 "configuration.ml" 90 3140 3187
+type(
+  unit
+)
+"configuration.ml" 78 2646 2648 "configuration.ml" 90 3140 3187
+type(
+  unit
+)

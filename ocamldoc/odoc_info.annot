@@ -1,0 +1,3164 @@
+"odoc_info.ml" 90 2564 2568 "odoc_info.ml" 90 2564 2577
+type(
+  location
+)
+ident(
+  def dummy_loc "odoc_info.ml" 92 2620 2620 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 90 2564 2593 "odoc_info.ml" 90 2564 2597
+type(
+  Location.t option
+)
+"odoc_info.ml" 90 2564 2612 "odoc_info.ml" 90 2564 2616
+type(
+  Location.t option
+)
+"odoc_info.ml" 90 2564 2580 "odoc_info.ml" 90 2564 2618
+type(
+  location
+)
+"odoc_info.ml" 102 2852 2856 "odoc_info.ml" 102 2852 2869
+type(
+  ?merge_options:Odoc_types.merge_option list ->
+  ?include_dirs:string list ->
+  ?labels:bool ->
+  ?sort_modules:bool ->
+  ?no_stop:bool ->
+  ?init:Odoc_module.t_module list ->
+  Odoc_global.source_file list -> Odoc_module.t_module list
+)
+ident(
+  def analyse_files "odoc_info.ml" 117 3313 3313 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 103 2870 2876 "odoc_info.ml" 103 2870 2889
+type(
+  Odoc_types.merge_option list
+)
+"odoc_info.ml" 103 2870 2891 "odoc_info.ml" 103 2870 2893
+type(
+  Odoc_types.merge_option list
+)
+type(
+  Odoc_types.merge_option list
+)
+"odoc_info.ml" 104 2927 2933 "odoc_info.ml" 104 2927 2945
+type(
+  string list
+)
+"odoc_info.ml" 104 2927 2947 "odoc_info.ml" 104 2927 2949
+type(
+  string list
+)
+type(
+  string list
+)
+"odoc_info.ml" 105 2966 2972 "odoc_info.ml" 105 2966 2978
+type(
+  bool
+)
+"odoc_info.ml" 105 2966 2979 "odoc_info.ml" 105 2966 2984
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_info.ml" 105 2966 2979 "odoc_info.ml" 105 2966 2984
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_info.ml" 106 2986 2992 "odoc_info.ml" 106 2986 3004
+type(
+  bool
+)
+"odoc_info.ml" 106 2986 3005 "odoc_info.ml" 106 2986 3010
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_info.ml" 106 2986 3005 "odoc_info.ml" 106 2986 3010
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_info.ml" 107 3012 3018 "odoc_info.ml" 107 3012 3025
+type(
+  bool
+)
+"odoc_info.ml" 107 3012 3026 "odoc_info.ml" 107 3012 3031
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_info.ml" 107 3012 3026 "odoc_info.ml" 107 3012 3031
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_info.ml" 108 3033 3039 "odoc_info.ml" 108 3033 3043
+type(
+  Odoc_module.t_module list
+)
+"odoc_info.ml" 108 3033 3044 "odoc_info.ml" 108 3033 3046
+type(
+  Odoc_module.t_module list
+)
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref *sth* "odoc_info.ml" 108 3033 3044 "odoc_info.ml" 108 3033 3046
+)
+type(
+  Odoc_module.t_module list option
+)
+type(
+  Odoc_module.t_module list option
+)
+type(
+  Odoc_module.t_module list
+)
+"odoc_info.ml" 109 3048 3052 "odoc_info.ml" 109 3048 3057
+type(
+  Odoc_global.source_file list
+)
+ident(
+  def files "odoc_info.ml" 110 3060 3062 "odoc_info.ml" 115 3265 3311
+)
+"odoc_info.ml" 110 3060 3062 "odoc_info.ml" 110 3060 3087
+type(
+  Odoc_types.merge_option list ref
+)
+ident(
+  ext_ref Odoc_global.merge_options
+)
+"odoc_info.ml" 110 3060 3088 "odoc_info.ml" 110 3060 3090
+type(
+  Odoc_types.merge_option list ref -> Odoc_types.merge_option list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_info.ml" 110 3060 3091 "odoc_info.ml" 110 3060 3104
+type(
+  Odoc_types.merge_option list
+)
+ident(
+  int_ref merge_options "odoc_info.ml" 103 2870 2876 "odoc_info.ml" 103 2870 2889
+)
+"odoc_info.ml" 110 3060 3062 "odoc_info.ml" 110 3060 3104
+type(
+  unit
+)
+"odoc_info.ml" 111 3106 3108 "odoc_info.ml" 111 3106 3132
+type(
+  string list ref
+)
+ident(
+  ext_ref Odoc_global.include_dirs
+)
+"odoc_info.ml" 111 3106 3133 "odoc_info.ml" 111 3106 3135
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_info.ml" 111 3106 3136 "odoc_info.ml" 111 3106 3148
+type(
+  string list
+)
+ident(
+  int_ref include_dirs "odoc_info.ml" 104 2927 2933 "odoc_info.ml" 104 2927 2945
+)
+"odoc_info.ml" 111 3106 3108 "odoc_info.ml" 111 3106 3148
+type(
+  unit
+)
+"odoc_info.ml" 112 3150 3152 "odoc_info.ml" 112 3150 3171
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.classic
+)
+"odoc_info.ml" 112 3150 3172 "odoc_info.ml" 112 3150 3174
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_info.ml" 112 3150 3175 "odoc_info.ml" 112 3150 3178
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"odoc_info.ml" 112 3150 3179 "odoc_info.ml" 112 3150 3185
+type(
+  bool
+)
+ident(
+  int_ref labels "odoc_info.ml" 105 2966 2972 "odoc_info.ml" 105 2966 2978
+)
+"odoc_info.ml" 112 3150 3175 "odoc_info.ml" 112 3150 3185
+type(
+  bool
+)
+"odoc_info.ml" 112 3150 3152 "odoc_info.ml" 112 3150 3185
+type(
+  unit
+)
+"odoc_info.ml" 113 3187 3189 "odoc_info.ml" 113 3187 3213
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.sort_modules
+)
+"odoc_info.ml" 113 3187 3214 "odoc_info.ml" 113 3187 3216
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_info.ml" 113 3187 3217 "odoc_info.ml" 113 3187 3229
+type(
+  bool
+)
+ident(
+  int_ref sort_modules "odoc_info.ml" 106 2986 2992 "odoc_info.ml" 106 2986 3004
+)
+"odoc_info.ml" 113 3187 3189 "odoc_info.ml" 113 3187 3229
+type(
+  unit
+)
+"odoc_info.ml" 114 3231 3233 "odoc_info.ml" 114 3231 3252
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.no_stop
+)
+"odoc_info.ml" 114 3231 3253 "odoc_info.ml" 114 3231 3255
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_info.ml" 114 3231 3256 "odoc_info.ml" 114 3231 3263
+type(
+  bool
+)
+ident(
+  int_ref no_stop "odoc_info.ml" 107 3012 3018 "odoc_info.ml" 107 3012 3025
+)
+"odoc_info.ml" 114 3231 3233 "odoc_info.ml" 114 3231 3263
+type(
+  unit
+)
+"odoc_info.ml" 115 3265 3267 "odoc_info.ml" 115 3265 3293
+type(
+  ?init:Odoc_module.t_module list ->
+  Odoc_global.source_file list -> Odoc_module.t_module list
+)
+ident(
+  ext_ref Odoc_analyse.analyse_files
+)
+"odoc_info.ml" 115 3265 3301 "odoc_info.ml" 115 3265 3305
+type(
+  Odoc_module.t_module list
+)
+ident(
+  int_ref init "odoc_info.ml" 108 3033 3039 "odoc_info.ml" 108 3033 3043
+)
+"odoc_info.ml" 115 3265 3306 "odoc_info.ml" 115 3265 3311
+type(
+  Odoc_global.source_file list
+)
+ident(
+  int_ref files "odoc_info.ml" 109 3048 3052 "odoc_info.ml" 109 3048 3057
+)
+"odoc_info.ml" 115 3265 3267 "odoc_info.ml" 115 3265 3311
+call(
+  tail
+)
+type(
+  Odoc_module.t_module list
+)
+"odoc_info.ml" 114 3231 3233 "odoc_info.ml" 115 3265 3311
+type(
+  Odoc_module.t_module list
+)
+"odoc_info.ml" 113 3187 3189 "odoc_info.ml" 115 3265 3311
+type(
+  Odoc_module.t_module list
+)
+"odoc_info.ml" 112 3150 3152 "odoc_info.ml" 115 3265 3311
+type(
+  Odoc_module.t_module list
+)
+"odoc_info.ml" 111 3106 3108 "odoc_info.ml" 115 3265 3311
+type(
+  Odoc_module.t_module list
+)
+"odoc_info.ml" 110 3060 3062 "odoc_info.ml" 115 3265 3311
+type(
+  Odoc_module.t_module list
+)
+"odoc_info.ml" 117 3313 3317 "odoc_info.ml" 117 3313 3329
+type(
+  string -> Odoc_module.t_module list -> unit
+)
+ident(
+  def dump_modules "odoc_info.ml" 119 3359 3359 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 117 3313 3332 "odoc_info.ml" 117 3313 3357
+type(
+  string -> Odoc_module.t_module list -> unit
+)
+ident(
+  ext_ref Odoc_analyse.dump_modules
+)
+"odoc_info.ml" 119 3359 3363 "odoc_info.ml" 119 3359 3375
+type(
+  string -> Odoc_module.t_module list
+)
+ident(
+  def load_modules "odoc_info.ml" 121 3405 3405 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 119 3359 3378 "odoc_info.ml" 119 3359 3403
+type(
+  string -> Odoc_module.t_module list
+)
+ident(
+  ext_ref Odoc_analyse.load_modules
+)
+"odoc_info.ml" 121 3405 3409 "odoc_info.ml" 121 3405 3425
+type(
+  unit -> unit
+)
+ident(
+  def reset_type_names "odoc_info.ml" 123 3444 3444 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 121 3405 3428 "odoc_info.ml" 121 3405 3442
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Printtyp.reset
+)
+"odoc_info.ml" 123 3444 3448 "odoc_info.ml" 123 3444 3466
+type(
+  Odoc_type.t_type -> bool * bool -> string
+)
+ident(
+  def string_of_variance "odoc_info.ml" 125 3519 3519 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 123 3444 3467 "odoc_info.ml" 123 3444 3468
+type(
+  Odoc_type.t_type
+)
+ident(
+  def t "odoc_info.ml" 123 3444 3469 "odoc_info.ml" 123 3444 3517
+)
+"odoc_info.ml" 123 3444 3470 "odoc_info.ml" 123 3444 3472
+type(
+  bool
+)
+ident(
+  def co "odoc_info.ml" 123 3444 3479 "odoc_info.ml" 123 3444 3517
+)
+"odoc_info.ml" 123 3444 3473 "odoc_info.ml" 123 3444 3475
+type(
+  bool
+)
+ident(
+  def cn "odoc_info.ml" 123 3444 3479 "odoc_info.ml" 123 3444 3517
+)
+"odoc_info.ml" 123 3444 3469 "odoc_info.ml" 123 3444 3476
+type(
+  bool * bool
+)
+"odoc_info.ml" 123 3444 3479 "odoc_info.ml" 123 3444 3506
+type(
+  Odoc_type.t_type -> bool * bool -> string
+)
+ident(
+  ext_ref Odoc_str.string_of_variance
+)
+"odoc_info.ml" 123 3444 3507 "odoc_info.ml" 123 3444 3508
+type(
+  Odoc_type.t_type
+)
+ident(
+  int_ref t "odoc_info.ml" 123 3444 3467 "odoc_info.ml" 123 3444 3468
+)
+"odoc_info.ml" 123 3444 3510 "odoc_info.ml" 123 3444 3512
+type(
+  bool
+)
+ident(
+  int_ref co "odoc_info.ml" 123 3444 3470 "odoc_info.ml" 123 3444 3472
+)
+"odoc_info.ml" 123 3444 3514 "odoc_info.ml" 123 3444 3516
+type(
+  bool
+)
+ident(
+  int_ref cn "odoc_info.ml" 123 3444 3473 "odoc_info.ml" 123 3444 3475
+)
+"odoc_info.ml" 123 3444 3509 "odoc_info.ml" 123 3444 3517
+type(
+  bool * bool
+)
+"odoc_info.ml" 123 3444 3479 "odoc_info.ml" 123 3444 3517
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 125 3519 3523 "odoc_info.ml" 125 3519 3542
+type(
+  Types.type_expr -> string
+)
+ident(
+  def string_of_type_expr "odoc_info.ml" 127 3581 3581 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 125 3519 3543 "odoc_info.ml" 125 3519 3544
+type(
+  Types.type_expr
+)
+ident(
+  def t "odoc_info.ml" 125 3519 3547 "odoc_info.ml" 125 3519 3579
+)
+"odoc_info.ml" 125 3519 3547 "odoc_info.ml" 125 3519 3577
+type(
+  Types.type_expr -> string
+)
+ident(
+  ext_ref Odoc_print.string_of_type_expr
+)
+"odoc_info.ml" 125 3519 3578 "odoc_info.ml" 125 3519 3579
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_info.ml" 125 3519 3543 "odoc_info.ml" 125 3519 3544
+)
+"odoc_info.ml" 125 3519 3547 "odoc_info.ml" 125 3519 3579
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 127 3581 3585 "odoc_info.ml" 127 3581 3607
+type(
+  Odoc_class.t_class -> string
+)
+ident(
+  def string_of_class_params "odoc_info.ml" 129 3643 3643 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 127 3581 3610 "odoc_info.ml" 127 3581 3641
+type(
+  Odoc_class.t_class -> string
+)
+ident(
+  ext_ref Odoc_str.string_of_class_params
+)
+"odoc_info.ml" 129 3643 3647 "odoc_info.ml" 129 3643 3666
+type(
+  ?par:bool -> string -> Types.type_expr list -> string
+)
+ident(
+  def string_of_type_list "odoc_info.ml" 131 3737 3737 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 129 3643 3668 "odoc_info.ml" 129 3643 3671
+type(
+  bool option
+)
+ident(
+  def par "odoc_info.ml" 129 3643 3672 "odoc_info.ml" 129 3643 3735
+)
+"odoc_info.ml" 129 3643 3672 "odoc_info.ml" 129 3643 3675
+type(
+  string
+)
+ident(
+  def sep "odoc_info.ml" 129 3643 3676 "odoc_info.ml" 129 3643 3735
+)
+"odoc_info.ml" 129 3643 3676 "odoc_info.ml" 129 3643 3685
+type(
+  Types.type_expr list
+)
+ident(
+  def type_list "odoc_info.ml" 129 3643 3688 "odoc_info.ml" 129 3643 3735
+)
+"odoc_info.ml" 129 3643 3688 "odoc_info.ml" 129 3643 3716
+type(
+  ?par:bool -> string -> Types.type_expr list -> string
+)
+ident(
+  ext_ref Odoc_str.string_of_type_list
+)
+"odoc_info.ml" 129 3643 3718 "odoc_info.ml" 129 3643 3721
+type(
+  bool option
+)
+ident(
+  int_ref par "odoc_info.ml" 129 3643 3668 "odoc_info.ml" 129 3643 3671
+)
+"odoc_info.ml" 129 3643 3722 "odoc_info.ml" 129 3643 3725
+type(
+  string
+)
+ident(
+  int_ref sep "odoc_info.ml" 129 3643 3672 "odoc_info.ml" 129 3643 3675
+)
+"odoc_info.ml" 129 3643 3726 "odoc_info.ml" 129 3643 3735
+type(
+  Types.type_expr list
+)
+ident(
+  int_ref type_list "odoc_info.ml" 129 3643 3676 "odoc_info.ml" 129 3643 3685
+)
+"odoc_info.ml" 129 3643 3688 "odoc_info.ml" 129 3643 3735
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 131 3737 3741 "odoc_info.ml" 131 3737 3766
+type(
+  Odoc_type.t_type -> string
+)
+ident(
+  def string_of_type_param_list "odoc_info.ml" 133 3809 3809 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 131 3737 3767 "odoc_info.ml" 131 3737 3768
+type(
+  Odoc_type.t_type
+)
+ident(
+  def t "odoc_info.ml" 131 3737 3771 "odoc_info.ml" 131 3737 3807
+)
+"odoc_info.ml" 131 3737 3771 "odoc_info.ml" 131 3737 3805
+type(
+  Odoc_type.t_type -> string
+)
+ident(
+  ext_ref Odoc_str.string_of_type_param_list
+)
+"odoc_info.ml" 131 3737 3806 "odoc_info.ml" 131 3737 3807
+type(
+  Odoc_type.t_type
+)
+ident(
+  int_ref t "odoc_info.ml" 131 3737 3767 "odoc_info.ml" 131 3737 3768
+)
+"odoc_info.ml" 131 3737 3771 "odoc_info.ml" 131 3737 3807
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 133 3809 3813 "odoc_info.ml" 133 3809 3848
+type(
+  Odoc_extension.t_type_extension -> string
+)
+ident(
+  def string_of_type_extension_param_list "odoc_info.ml" 135 3903 3903 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 133 3809 3849 "odoc_info.ml" 133 3809 3851
+type(
+  Odoc_extension.t_type_extension
+)
+ident(
+  def te "odoc_info.ml" 133 3809 3854 "odoc_info.ml" 133 3809 3901
+)
+"odoc_info.ml" 133 3809 3854 "odoc_info.ml" 133 3809 3898
+type(
+  Odoc_extension.t_type_extension -> string
+)
+ident(
+  ext_ref Odoc_str.string_of_type_extension_param_list
+)
+"odoc_info.ml" 133 3809 3899 "odoc_info.ml" 133 3809 3901
+type(
+  Odoc_extension.t_type_extension
+)
+ident(
+  int_ref te "odoc_info.ml" 133 3809 3849 "odoc_info.ml" 133 3809 3851
+)
+"odoc_info.ml" 133 3809 3854 "odoc_info.ml" 133 3809 3901
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 135 3903 3907 "odoc_info.ml" 135 3903 3938
+type(
+  Types.type_expr list -> string
+)
+ident(
+  def string_of_class_type_param_list "odoc_info.ml" 137 3987 3987 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 135 3903 3939 "odoc_info.ml" 135 3903 3940
+type(
+  Types.type_expr list
+)
+ident(
+  def l "odoc_info.ml" 135 3903 3943 "odoc_info.ml" 135 3903 3985
+)
+"odoc_info.ml" 135 3903 3943 "odoc_info.ml" 135 3903 3983
+type(
+  Types.type_expr list -> string
+)
+ident(
+  ext_ref Odoc_str.string_of_class_type_param_list
+)
+"odoc_info.ml" 135 3903 3984 "odoc_info.ml" 135 3903 3985
+type(
+  Types.type_expr list
+)
+ident(
+  int_ref l "odoc_info.ml" 135 3903 3939 "odoc_info.ml" 135 3903 3940
+)
+"odoc_info.ml" 135 3903 3943 "odoc_info.ml" 135 3903 3985
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 137 3987 3991 "odoc_info.ml" 137 3987 4012
+type(
+  ?code:string -> ?complete:bool -> Types.module_type -> string
+)
+ident(
+  def string_of_module_type "odoc_info.ml" 139 4049 4049 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 137 3987 4015 "odoc_info.ml" 137 3987 4047
+type(
+  ?code:string -> ?complete:bool -> Types.module_type -> string
+)
+ident(
+  ext_ref Odoc_print.string_of_module_type
+)
+"odoc_info.ml" 139 4049 4053 "odoc_info.ml" 139 4049 4073
+type(
+  ?complete:bool -> Types.class_type -> string
+)
+ident(
+  def string_of_class_type "odoc_info.ml" 141 4109 4109 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 139 4049 4076 "odoc_info.ml" 139 4049 4107
+type(
+  ?complete:bool -> Types.class_type -> string
+)
+ident(
+  ext_ref Odoc_print.string_of_class_type
+)
+"odoc_info.ml" 141 4109 4113 "odoc_info.ml" 141 4109 4127
+type(
+  Odoc_types.text -> string
+)
+ident(
+  def string_of_text "odoc_info.ml" 143 4160 4160 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 141 4109 4128 "odoc_info.ml" 141 4109 4129
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_info.ml" 141 4109 4132 "odoc_info.ml" 141 4109 4158
+)
+"odoc_info.ml" 141 4109 4132 "odoc_info.ml" 141 4109 4156
+type(
+  Odoc_types.text -> string
+)
+ident(
+  ext_ref Odoc_misc.string_of_text
+)
+"odoc_info.ml" 141 4109 4157 "odoc_info.ml" 141 4109 4158
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref t "odoc_info.ml" 141 4109 4128 "odoc_info.ml" 141 4109 4129
+)
+"odoc_info.ml" 141 4109 4132 "odoc_info.ml" 141 4109 4158
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 143 4160 4164 "odoc_info.ml" 143 4160 4178
+type(
+  Odoc_types.info -> string
+)
+ident(
+  def string_of_info "odoc_info.ml" 145 4211 4211 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 143 4160 4179 "odoc_info.ml" 143 4160 4180
+type(
+  Odoc_types.info
+)
+ident(
+  def i "odoc_info.ml" 143 4160 4183 "odoc_info.ml" 143 4160 4209
+)
+"odoc_info.ml" 143 4160 4183 "odoc_info.ml" 143 4160 4207
+type(
+  Odoc_types.info -> string
+)
+ident(
+  ext_ref Odoc_misc.string_of_info
+)
+"odoc_info.ml" 143 4160 4208 "odoc_info.ml" 143 4160 4209
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref i "odoc_info.ml" 143 4160 4179 "odoc_info.ml" 143 4160 4180
+)
+"odoc_info.ml" 143 4160 4183 "odoc_info.ml" 143 4160 4209
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 145 4211 4215 "odoc_info.ml" 145 4211 4229
+type(
+  Odoc_type.t_type -> string
+)
+ident(
+  def string_of_type "odoc_info.ml" 147 4261 4261 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 145 4211 4230 "odoc_info.ml" 145 4211 4231
+type(
+  Odoc_type.t_type
+)
+ident(
+  def t "odoc_info.ml" 145 4211 4234 "odoc_info.ml" 145 4211 4259
+)
+"odoc_info.ml" 145 4211 4234 "odoc_info.ml" 145 4211 4257
+type(
+  Odoc_type.t_type -> string
+)
+ident(
+  ext_ref Odoc_str.string_of_type
+)
+"odoc_info.ml" 145 4211 4258 "odoc_info.ml" 145 4211 4259
+type(
+  Odoc_type.t_type
+)
+ident(
+  int_ref t "odoc_info.ml" 145 4211 4230 "odoc_info.ml" 145 4211 4231
+)
+"odoc_info.ml" 145 4211 4234 "odoc_info.ml" 145 4211 4259
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 147 4261 4265 "odoc_info.ml" 147 4261 4289
+type(
+  Odoc_extension.t_type_extension -> string
+)
+ident(
+  def string_of_type_extension "odoc_info.ml" 149 4333 4333 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 147 4261 4290 "odoc_info.ml" 147 4261 4292
+type(
+  Odoc_extension.t_type_extension
+)
+ident(
+  def te "odoc_info.ml" 147 4261 4295 "odoc_info.ml" 147 4261 4331
+)
+"odoc_info.ml" 147 4261 4295 "odoc_info.ml" 147 4261 4328
+type(
+  Odoc_extension.t_type_extension -> string
+)
+ident(
+  ext_ref Odoc_str.string_of_type_extension
+)
+"odoc_info.ml" 147 4261 4329 "odoc_info.ml" 147 4261 4331
+type(
+  Odoc_extension.t_type_extension
+)
+ident(
+  int_ref te "odoc_info.ml" 147 4261 4290 "odoc_info.ml" 147 4261 4292
+)
+"odoc_info.ml" 147 4261 4295 "odoc_info.ml" 147 4261 4331
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 149 4333 4337 "odoc_info.ml" 149 4333 4356
+type(
+  Odoc_exception.t_exception -> string
+)
+ident(
+  def string_of_exception "odoc_info.ml" 151 4393 4393 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 149 4333 4357 "odoc_info.ml" 149 4333 4358
+type(
+  Odoc_exception.t_exception
+)
+ident(
+  def e "odoc_info.ml" 149 4333 4361 "odoc_info.ml" 149 4333 4391
+)
+"odoc_info.ml" 149 4333 4361 "odoc_info.ml" 149 4333 4389
+type(
+  Odoc_exception.t_exception -> string
+)
+ident(
+  ext_ref Odoc_str.string_of_exception
+)
+"odoc_info.ml" 149 4333 4390 "odoc_info.ml" 149 4333 4391
+type(
+  Odoc_exception.t_exception
+)
+ident(
+  int_ref e "odoc_info.ml" 149 4333 4357 "odoc_info.ml" 149 4333 4358
+)
+"odoc_info.ml" 149 4333 4361 "odoc_info.ml" 149 4333 4391
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 151 4393 4397 "odoc_info.ml" 151 4393 4412
+type(
+  Odoc_value.t_value -> string
+)
+ident(
+  def string_of_value "odoc_info.ml" 153 4445 4445 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 151 4393 4413 "odoc_info.ml" 151 4393 4414
+type(
+  Odoc_value.t_value
+)
+ident(
+  def v "odoc_info.ml" 151 4393 4417 "odoc_info.ml" 151 4393 4443
+)
+"odoc_info.ml" 151 4393 4417 "odoc_info.ml" 151 4393 4441
+type(
+  Odoc_value.t_value -> string
+)
+ident(
+  ext_ref Odoc_str.string_of_value
+)
+"odoc_info.ml" 151 4393 4442 "odoc_info.ml" 151 4393 4443
+type(
+  Odoc_value.t_value
+)
+ident(
+  int_ref v "odoc_info.ml" 151 4393 4413 "odoc_info.ml" 151 4393 4414
+)
+"odoc_info.ml" 151 4393 4417 "odoc_info.ml" 151 4393 4443
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 153 4445 4449 "odoc_info.ml" 153 4445 4468
+type(
+  Odoc_value.t_attribute -> string
+)
+ident(
+  def string_of_attribute "odoc_info.ml" 155 4509 4509 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 153 4445 4469 "odoc_info.ml" 153 4445 4472
+type(
+  Odoc_value.t_attribute
+)
+ident(
+  def att "odoc_info.ml" 153 4445 4475 "odoc_info.ml" 153 4445 4507
+)
+"odoc_info.ml" 153 4445 4475 "odoc_info.ml" 153 4445 4503
+type(
+  Odoc_value.t_attribute -> string
+)
+ident(
+  ext_ref Odoc_str.string_of_attribute
+)
+"odoc_info.ml" 153 4445 4504 "odoc_info.ml" 153 4445 4507
+type(
+  Odoc_value.t_attribute
+)
+ident(
+  int_ref att "odoc_info.ml" 153 4445 4469 "odoc_info.ml" 153 4445 4472
+)
+"odoc_info.ml" 153 4445 4475 "odoc_info.ml" 153 4445 4507
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 155 4509 4513 "odoc_info.ml" 155 4509 4529
+type(
+  Odoc_value.t_method -> string
+)
+ident(
+  def string_of_method "odoc_info.ml" 157 4563 4563 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 155 4509 4530 "odoc_info.ml" 155 4509 4531
+type(
+  Odoc_value.t_method
+)
+ident(
+  def m "odoc_info.ml" 155 4509 4534 "odoc_info.ml" 155 4509 4561
+)
+"odoc_info.ml" 155 4509 4534 "odoc_info.ml" 155 4509 4559
+type(
+  Odoc_value.t_method -> string
+)
+ident(
+  ext_ref Odoc_str.string_of_method
+)
+"odoc_info.ml" 155 4509 4560 "odoc_info.ml" 155 4509 4561
+type(
+  Odoc_value.t_method
+)
+ident(
+  int_ref m "odoc_info.ml" 155 4509 4530 "odoc_info.ml" 155 4509 4531
+)
+"odoc_info.ml" 155 4509 4534 "odoc_info.ml" 155 4509 4561
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 157 4563 4567 "odoc_info.ml" 157 4563 4589
+type(
+  Odoc_types.text -> Odoc_types.text
+)
+ident(
+  def first_sentence_of_text "odoc_info.ml" 159 4626 4626 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 157 4563 4592 "odoc_info.ml" 157 4563 4624
+type(
+  Odoc_types.text -> Odoc_types.text
+)
+ident(
+  ext_ref Odoc_misc.first_sentence_of_text
+)
+"odoc_info.ml" 159 4626 4630 "odoc_info.ml" 159 4626 4661
+type(
+  Odoc_types.text -> Odoc_types.text * Odoc_types.text
+)
+ident(
+  def first_sentence_and_rest_of_text "odoc_info.ml" 161 4707 4707 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 159 4626 4664 "odoc_info.ml" 159 4626 4705
+type(
+  Odoc_types.text -> Odoc_types.text * Odoc_types.text
+)
+ident(
+  ext_ref Odoc_misc.first_sentence_and_rest_of_text
+)
+"odoc_info.ml" 161 4707 4711 "odoc_info.ml" 161 4707 4732
+type(
+  Odoc_types.text -> Odoc_types.text
+)
+ident(
+  def text_no_title_no_list "odoc_info.ml" 163 4768 4768 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 161 4707 4735 "odoc_info.ml" 161 4707 4766
+type(
+  Odoc_types.text -> Odoc_types.text
+)
+ident(
+  ext_ref Odoc_misc.text_no_title_no_list
+)
+"odoc_info.ml" 163 4768 4772 "odoc_info.ml" 163 4768 4783
+type(
+  Odoc_types.text -> Odoc_types.text list -> Odoc_types.text
+)
+ident(
+  def text_concat "odoc_info.ml" 165 4809 4809 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 163 4768 4786 "odoc_info.ml" 163 4768 4807
+type(
+  Odoc_types.text -> Odoc_types.text list -> Odoc_types.text
+)
+ident(
+  ext_ref Odoc_misc.text_concat
+)
+"odoc_info.ml" 165 4809 4813 "odoc_info.ml" 165 4809 4831
+type(
+  Odoc_types.text -> (int * string option * Odoc_types.text) list
+)
+ident(
+  def get_titles_in_text "odoc_info.ml" 167 4864 4864 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 165 4809 4834 "odoc_info.ml" 165 4809 4862
+type(
+  Odoc_types.text -> (int * string option * Odoc_types.text) list
+)
+ident(
+  ext_ref Odoc_misc.get_titles_in_text
+)
+"odoc_info.ml" 167 4864 4868 "odoc_info.ml" 167 4864 4886
+type(
+  'a list -> ('a -> string) -> 'a list list
+)
+ident(
+  def create_index_lists "odoc_info.ml" 169 4919 4919 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 167 4864 4889 "odoc_info.ml" 167 4864 4917
+type(
+  'a list -> ('a -> string) -> 'a list list
+)
+ident(
+  ext_ref Odoc_misc.create_index_lists
+)
+"odoc_info.ml" 169 4919 4923 "odoc_info.ml" 169 4919 4944
+type(
+  string -> string
+)
+ident(
+  def remove_ending_newline "odoc_info.ml" 171 4980 4980 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 169 4919 4947 "odoc_info.ml" 169 4919 4978
+type(
+  string -> string
+)
+ident(
+  ext_ref Odoc_misc.remove_ending_newline
+)
+"odoc_info.ml" 171 4980 4984 "odoc_info.ml" 171 4980 4997
+type(
+  Types.type_expr -> Types.type_expr
+)
+ident(
+  def remove_option "odoc_info.ml" 173 5025 5025 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 171 4980 5000 "odoc_info.ml" 171 4980 5023
+type(
+  Types.type_expr -> Types.type_expr
+)
+ident(
+  ext_ref Odoc_misc.remove_option
+)
+"odoc_info.ml" 173 5025 5029 "odoc_info.ml" 173 5025 5040
+type(
+  string -> bool
+)
+ident(
+  def is_optional "odoc_info.ml" 175 5066 5066 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 173 5025 5043 "odoc_info.ml" 173 5025 5064
+type(
+  string -> bool
+)
+ident(
+  ext_ref Odoc_misc.is_optional
+)
+"odoc_info.ml" 175 5066 5070 "odoc_info.ml" 175 5066 5080
+type(
+  string -> string
+)
+ident(
+  def label_name "odoc_info.ml" 177 5105 5105 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 175 5066 5083 "odoc_info.ml" 175 5066 5103
+type(
+  string -> string
+)
+ident(
+  ext_ref Odoc_misc.label_name
+)
+"odoc_info.ml" 177 5105 5109 "odoc_info.ml" 177 5105 5127
+type(
+  Odoc_name.t -> Odoc_name.t
+)
+ident(
+  def use_hidden_modules "odoc_info.ml" 180 5194 5194 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 177 5105 5128 "odoc_info.ml" 177 5105 5129
+type(
+  Odoc_name.t
+)
+ident(
+  def n "odoc_info.ml" 178 5132 5134 "odoc_info.ml" 178 5132 5192
+)
+"odoc_info.ml" 178 5132 5134 "odoc_info.ml" 178 5132 5162
+type(
+  Odoc_name.t list -> Odoc_name.t -> Odoc_name.t
+)
+ident(
+  ext_ref Odoc_name.hide_given_modules
+)
+"odoc_info.ml" 178 5132 5163 "odoc_info.ml" 178 5132 5164
+type(
+  Odoc_name.t list ref -> Odoc_name.t list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_info.ml" 178 5132 5164 "odoc_info.ml" 178 5132 5190
+type(
+  Odoc_name.t list ref
+)
+ident(
+  ext_ref Odoc_global.hidden_modules
+)
+"odoc_info.ml" 178 5132 5163 "odoc_info.ml" 178 5132 5190
+type(
+  Odoc_name.t list
+)
+"odoc_info.ml" 178 5132 5191 "odoc_info.ml" 178 5132 5192
+type(
+  Odoc_name.t
+)
+ident(
+  int_ref n "odoc_info.ml" 177 5105 5128 "odoc_info.ml" 177 5105 5129
+)
+"odoc_info.ml" 178 5132 5134 "odoc_info.ml" 178 5132 5192
+call(
+  tail
+)
+type(
+  Odoc_name.t
+)
+"odoc_info.ml" 180 5194 5198 "odoc_info.ml" 180 5194 5205
+type(
+  string -> unit
+)
+ident(
+  def verbose "odoc_info.ml" 186 5296 5296 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 180 5194 5206 "odoc_info.ml" 180 5194 5207
+type(
+  string
+)
+ident(
+  def s "odoc_info.ml" 181 5210 5212 "odoc_info.ml" 184 5288 5294
+)
+"odoc_info.ml" 181 5210 5215 "odoc_info.ml" 181 5210 5216
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_info.ml" 181 5210 5216 "odoc_info.ml" 181 5210 5235
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.verbose
+)
+"odoc_info.ml" 181 5210 5215 "odoc_info.ml" 181 5210 5235
+type(
+  bool
+)
+"odoc_info.ml" 182 5241 5246 "odoc_info.ml" 182 5241 5258
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"odoc_info.ml" 182 5241 5259 "odoc_info.ml" 182 5241 5260
+type(
+  string
+)
+ident(
+  int_ref s "odoc_info.ml" 180 5194 5206 "odoc_info.ml" 180 5194 5207
+)
+"odoc_info.ml" 182 5241 5246 "odoc_info.ml" 182 5241 5260
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_info.ml" 182 5241 5263 "odoc_info.ml" 182 5241 5276
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"odoc_info.ml" 182 5241 5277 "odoc_info.ml" 182 5241 5279
+type(
+  unit
+)
+"odoc_info.ml" 182 5241 5263 "odoc_info.ml" 182 5241 5279
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_info.ml" 182 5241 5245 "odoc_info.ml" 182 5241 5280
+type(
+  unit
+)
+"odoc_info.ml" 184 5288 5292 "odoc_info.ml" 184 5288 5294
+type(
+  unit
+)
+"odoc_info.ml" 181 5210 5212 "odoc_info.ml" 184 5288 5294
+type(
+  unit
+)
+"odoc_info.ml" 186 5296 5300 "odoc_info.ml" 186 5296 5307
+type(
+  string -> unit
+)
+ident(
+  def warning "odoc_info.ml" 187 5335 5335 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 186 5296 5308 "odoc_info.ml" 186 5296 5309
+type(
+  string
+)
+ident(
+  def s "odoc_info.ml" 186 5296 5312 "odoc_info.ml" 186 5296 5334
+)
+"odoc_info.ml" 186 5296 5312 "odoc_info.ml" 186 5296 5332
+type(
+  string -> unit
+)
+ident(
+  ext_ref Odoc_global.pwarning
+)
+"odoc_info.ml" 186 5296 5333 "odoc_info.ml" 186 5296 5334
+type(
+  string
+)
+ident(
+  int_ref s "odoc_info.ml" 186 5296 5308 "odoc_info.ml" 186 5296 5309
+)
+"odoc_info.ml" 186 5296 5312 "odoc_info.ml" 186 5296 5334
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_info.ml" 187 5335 5339 "odoc_info.ml" 187 5335 5353
+type(
+  bool ref
+)
+ident(
+  def print_warnings "odoc_info.ml" 189 5384 5384 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 187 5335 5356 "odoc_info.ml" 187 5335 5382
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_config.print_warnings
+)
+"odoc_info.ml" 189 5384 5388 "odoc_info.ml" 189 5384 5394
+type(
+  int ref
+)
+ident(
+  def errors "odoc_info.ml" 191 5417 5417 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 189 5384 5397 "odoc_info.ml" 189 5384 5415
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc_info.ml" 191 5417 5421 "odoc_info.ml" 191 5417 5430
+type(
+  ('a -> 'b) -> 'a option -> 'b option
+)
+ident(
+  def apply_opt "odoc_info.ml" 193 5454 5454 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 191 5417 5433 "odoc_info.ml" 191 5417 5452
+type(
+  ('a -> 'b) -> 'a option -> 'b option
+)
+ident(
+  ext_ref Odoc_misc.apply_opt
+)
+"odoc_info.ml" 193 5454 5458 "odoc_info.ml" 193 5454 5472
+type(
+  ('a -> 'a) -> 'a -> 'a -> 'a
+)
+ident(
+  def apply_if_equal "odoc_info.ml" 199 5525 5525 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 193 5454 5473 "odoc_info.ml" 193 5454 5474
+type(
+  'a -> 'a
+)
+ident(
+  def f "odoc_info.ml" 193 5454 5475 "odoc_info.ml" 197 5517 5523
+)
+"odoc_info.ml" 193 5454 5475 "odoc_info.ml" 193 5454 5477
+type(
+  'a
+)
+ident(
+  def v1 "odoc_info.ml" 193 5454 5478 "odoc_info.ml" 197 5517 5523
+)
+"odoc_info.ml" 193 5454 5478 "odoc_info.ml" 193 5454 5480
+type(
+  'a
+)
+ident(
+  def v2 "odoc_info.ml" 194 5483 5485 "odoc_info.ml" 197 5517 5523
+)
+"odoc_info.ml" 194 5483 5488 "odoc_info.ml" 194 5483 5490
+type(
+  'a
+)
+ident(
+  int_ref v1 "odoc_info.ml" 193 5454 5475 "odoc_info.ml" 193 5454 5477
+)
+"odoc_info.ml" 194 5483 5491 "odoc_info.ml" 194 5483 5492
+type(
+  'a -> 'a -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"odoc_info.ml" 194 5483 5493 "odoc_info.ml" 194 5483 5495
+type(
+  'a
+)
+ident(
+  int_ref v2 "odoc_info.ml" 193 5454 5478 "odoc_info.ml" 193 5454 5480
+)
+"odoc_info.ml" 194 5483 5488 "odoc_info.ml" 194 5483 5495
+type(
+  bool
+)
+"odoc_info.ml" 195 5501 5505 "odoc_info.ml" 195 5501 5506
+type(
+  'a -> 'a
+)
+ident(
+  int_ref f "odoc_info.ml" 193 5454 5473 "odoc_info.ml" 193 5454 5474
+)
+"odoc_info.ml" 195 5501 5507 "odoc_info.ml" 195 5501 5509
+type(
+  'a
+)
+ident(
+  int_ref v1 "odoc_info.ml" 193 5454 5475 "odoc_info.ml" 193 5454 5477
+)
+"odoc_info.ml" 195 5501 5505 "odoc_info.ml" 195 5501 5509
+call(
+  tail
+)
+type(
+  'a
+)
+"odoc_info.ml" 197 5517 5521 "odoc_info.ml" 197 5517 5523
+type(
+  'a
+)
+ident(
+  int_ref v2 "odoc_info.ml" 193 5454 5478 "odoc_info.ml" 193 5454 5480
+)
+"odoc_info.ml" 194 5483 5485 "odoc_info.ml" 197 5517 5523
+type(
+  'a
+)
+"odoc_info.ml" 199 5525 5529 "odoc_info.ml" 199 5525 5543
+type(
+  string -> Odoc_types.text
+)
+ident(
+  def text_of_string "odoc_info.ml" 201 5579 5579 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 199 5525 5546 "odoc_info.ml" 199 5525 5577
+type(
+  string -> Odoc_types.text
+)
+ident(
+  ext_ref Odoc_text.Texter.text_of_string
+)
+"odoc_info.ml" 201 5579 5583 "odoc_info.ml" 201 5579 5602
+type(
+  Odoc_types.text -> string
+)
+ident(
+  def text_string_of_text "odoc_info.ml" 204 5639 5639 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 201 5579 5605 "odoc_info.ml" 201 5579 5636
+type(
+  Odoc_types.text -> string
+)
+ident(
+  ext_ref Odoc_text.Texter.string_of_text
+)
+"odoc_info.ml" 204 5639 5643 "odoc_info.ml" 204 5639 5656
+type(
+  string -> string
+)
+ident(
+  def escape_arobas "odoc_info.ml" 214 5869 5869 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 204 5639 5657 "odoc_info.ml" 204 5639 5658
+type(
+  string
+)
+ident(
+  def s "odoc_info.ml" 205 5661 5663 "odoc_info.ml" 212 5848 5867
+)
+"odoc_info.ml" 205 5661 5667 "odoc_info.ml" 205 5661 5670
+type(
+  int
+)
+ident(
+  def len "odoc_info.ml" 206 5692 5694 "odoc_info.ml" 212 5848 5867
+)
+"odoc_info.ml" 205 5661 5673 "odoc_info.ml" 205 5661 5686
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_info.ml" 205 5661 5687 "odoc_info.ml" 205 5661 5688
+type(
+  string
+)
+ident(
+  int_ref s "odoc_info.ml" 204 5639 5657 "odoc_info.ml" 204 5639 5658
+)
+"odoc_info.ml" 205 5661 5673 "odoc_info.ml" 205 5661 5688
+type(
+  int
+)
+"odoc_info.ml" 206 5692 5698 "odoc_info.ml" 206 5692 5699
+type(
+  Buffer.t
+)
+ident(
+  def b "odoc_info.ml" 207 5723 5725 "odoc_info.ml" 212 5848 5867
+)
+"odoc_info.ml" 206 5692 5702 "odoc_info.ml" 206 5692 5715
+type(
+  int -> Buffer.t
+)
+ident(
+  ext_ref Buffer.create
+)
+"odoc_info.ml" 206 5692 5716 "odoc_info.ml" 206 5692 5719
+type(
+  int
+)
+ident(
+  int_ref len "odoc_info.ml" 205 5661 5667 "odoc_info.ml" 205 5661 5670
+)
+"odoc_info.ml" 206 5692 5702 "odoc_info.ml" 206 5692 5719
+call(
+  stack
+)
+type(
+  Buffer.t
+)
+"odoc_info.ml" 207 5723 5733 "odoc_info.ml" 207 5723 5734
+type(
+  int
+)
+"odoc_info.ml" 207 5723 5738 "odoc_info.ml" 207 5723 5741
+type(
+  int
+)
+ident(
+  int_ref len "odoc_info.ml" 205 5661 5667 "odoc_info.ml" 205 5661 5670
+)
+"odoc_info.ml" 207 5723 5742 "odoc_info.ml" 207 5723 5743
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"odoc_info.ml" 207 5723 5744 "odoc_info.ml" 207 5723 5745
+type(
+  int
+)
+"odoc_info.ml" 207 5723 5738 "odoc_info.ml" 207 5723 5745
+type(
+  int
+)
+"odoc_info.ml" 208 5749 5759 "odoc_info.ml" 208 5749 5760
+type(
+  string
+)
+ident(
+  int_ref s "odoc_info.ml" 204 5639 5657 "odoc_info.ml" 204 5639 5658
+)
+"odoc_info.ml" 208 5749 5762 "odoc_info.ml" 208 5749 5763
+type(
+  int
+)
+ident(
+  int_ref i "odoc_info.ml" 207 5723 5725 "odoc_info.ml" 211 5840 5846
+)
+"odoc_info.ml" 208 5749 5759 "odoc_info.ml" 208 5749 5764
+type(
+  char
+)
+"odoc_info.ml" 209 5770 5776 "odoc_info.ml" 209 5770 5779
+type(
+  char
+)
+"odoc_info.ml" 209 5770 5783 "odoc_info.ml" 209 5770 5800
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"odoc_info.ml" 209 5770 5801 "odoc_info.ml" 209 5770 5802
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "odoc_info.ml" 206 5692 5698 "odoc_info.ml" 206 5692 5699
+)
+"odoc_info.ml" 209 5770 5803 "odoc_info.ml" 209 5770 5808
+type(
+  string
+)
+"odoc_info.ml" 209 5770 5783 "odoc_info.ml" 209 5770 5808
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_info.ml" 210 5809 5815 "odoc_info.ml" 210 5809 5816
+type(
+  char
+)
+ident(
+  def c "odoc_info.ml" 210 5809 5820 "odoc_info.ml" 210 5809 5839
+)
+"odoc_info.ml" 210 5809 5820 "odoc_info.ml" 210 5809 5835
+type(
+  Buffer.t -> char -> unit
+)
+ident(
+  ext_ref Buffer.add_char
+)
+"odoc_info.ml" 210 5809 5836 "odoc_info.ml" 210 5809 5837
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "odoc_info.ml" 206 5692 5698 "odoc_info.ml" 206 5692 5699
+)
+"odoc_info.ml" 210 5809 5838 "odoc_info.ml" 210 5809 5839
+type(
+  char
+)
+ident(
+  int_ref c "odoc_info.ml" 210 5809 5815 "odoc_info.ml" 210 5809 5816
+)
+"odoc_info.ml" 210 5809 5820 "odoc_info.ml" 210 5809 5839
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_info.ml" 208 5749 5753 "odoc_info.ml" 210 5809 5839
+type(
+  unit
+)
+"odoc_info.ml" 207 5723 5725 "odoc_info.ml" 211 5840 5846
+type(
+  unit
+)
+"odoc_info.ml" 212 5848 5850 "odoc_info.ml" 212 5848 5865
+type(
+  Buffer.t -> string
+)
+ident(
+  ext_ref Buffer.contents
+)
+"odoc_info.ml" 212 5848 5866 "odoc_info.ml" 212 5848 5867
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "odoc_info.ml" 206 5692 5698 "odoc_info.ml" 206 5692 5699
+)
+"odoc_info.ml" 212 5848 5850 "odoc_info.ml" 212 5848 5867
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 207 5723 5725 "odoc_info.ml" 212 5848 5867
+type(
+  string
+)
+"odoc_info.ml" 206 5692 5694 "odoc_info.ml" 212 5848 5867
+type(
+  string
+)
+"odoc_info.ml" 205 5661 5663 "odoc_info.ml" 212 5848 5867
+type(
+  string
+)
+"odoc_info.ml" 214 5869 5873 "odoc_info.ml" 214 5869 5892
+type(
+  info -> string
+)
+ident(
+  def info_string_of_info "odoc_info.ml" 287 7508 7508 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 214 5869 5893 "odoc_info.ml" 214 5869 5894
+type(
+  info
+)
+ident(
+  def i "odoc_info.ml" 215 5897 5899 "odoc_info.ml" 285 7487 7506
+)
+"odoc_info.ml" 215 5897 5903 "odoc_info.ml" 215 5897 5904
+type(
+  Buffer.t
+)
+ident(
+  def b "odoc_info.ml" 216 5928 5930 "odoc_info.ml" 285 7487 7506
+)
+"odoc_info.ml" 215 5897 5907 "odoc_info.ml" 215 5897 5920
+type(
+  int -> Buffer.t
+)
+ident(
+  ext_ref Buffer.create
+)
+"odoc_info.ml" 215 5897 5921 "odoc_info.ml" 215 5897 5924
+type(
+  int
+)
+"odoc_info.ml" 215 5897 5907 "odoc_info.ml" 215 5897 5924
+call(
+  stack
+)
+type(
+  Buffer.t
+)
+"odoc_info.ml" 216 5928 5934 "odoc_info.ml" 216 5928 5935
+type(
+  Buffer.t -> ('a, Buffer.t, unit) format -> 'a
+)
+ident(
+  def p "odoc_info.ml" 217 5956 5958 "odoc_info.ml" 285 7487 7506
+)
+"odoc_info.ml" 216 5928 5938 "odoc_info.ml" 216 5928 5952
+type(
+  Buffer.t -> ('a, Buffer.t, unit) format -> 'a
+)
+ident(
+  ext_ref Printf.bprintf
+)
+"odoc_info.ml" 218 5960 5969 "odoc_info.ml" 218 5960 5970
+type(
+  info
+)
+ident(
+  int_ref i "odoc_info.ml" 214 5869 5893 "odoc_info.ml" 214 5869 5894
+)
+"odoc_info.ml" 218 5960 5969 "odoc_info.ml" 218 5960 5977
+type(
+  text option
+)
+"odoc_info.ml" 219 5983 5988 "odoc_info.ml" 219 5983 5992
+type(
+  text option
+)
+"odoc_info.ml" 219 5983 5996 "odoc_info.ml" 219 5983 5998
+type(
+  unit
+)
+"odoc_info.ml" 220 5999 6009 "odoc_info.ml" 220 5999 6010
+type(
+  text
+)
+ident(
+  def t "odoc_info.ml" 220 5999 6014 "odoc_info.ml" 220 5999 6062
+)
+"odoc_info.ml" 220 5999 6004 "odoc_info.ml" 220 5999 6010
+type(
+  text option
+)
+"odoc_info.ml" 220 5999 6014 "odoc_info.ml" 220 5999 6015
+type(
+  Buffer.t -> (string -> unit, Buffer.t, unit) format -> string -> unit
+)
+ident(
+  int_ref p "odoc_info.ml" 216 5928 5934 "odoc_info.ml" 216 5928 5935
+)
+"odoc_info.ml" 220 5999 6016 "odoc_info.ml" 220 5999 6017
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "odoc_info.ml" 215 5897 5903 "odoc_info.ml" 215 5897 5904
+)
+"odoc_info.ml" 220 5999 6018 "odoc_info.ml" 220 5999 6022
+type(
+  (string -> unit, Buffer.t, unit) format
+)
+"odoc_info.ml" 220 5999 6024 "odoc_info.ml" 220 5999 6037
+type(
+  string -> string
+)
+ident(
+  int_ref escape_arobas "odoc_info.ml" 204 5639 5643 "odoc_info.ml" 204 5639 5656
+)
+"odoc_info.ml" 220 5999 6039 "odoc_info.ml" 220 5999 6058
+type(
+  Odoc_types.text -> string
+)
+ident(
+  int_ref text_string_of_text "odoc_info.ml" 201 5579 5583 "odoc_info.ml" 201 5579 5602
+)
+"odoc_info.ml" 220 5999 6059 "odoc_info.ml" 220 5999 6060
+type(
+  text
+)
+ident(
+  int_ref t "odoc_info.ml" 220 5999 6009 "odoc_info.ml" 220 5999 6010
+)
+"odoc_info.ml" 220 5999 6038 "odoc_info.ml" 220 5999 6061
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 220 5999 6023 "odoc_info.ml" 220 5999 6062
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 220 5999 6014 "odoc_info.ml" 220 5999 6062
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_info.ml" 217 5956 5958 "odoc_info.ml" 221 6063 6066
+type(
+  unit
+)
+"odoc_info.ml" 222 6068 6070 "odoc_info.ml" 222 6068 6079
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_info.ml" 223 6080 6089 "odoc_info.ml" 223 6080 6090
+type(
+  string
+)
+ident(
+  def s "odoc_info.ml" 223 6080 6094 "odoc_info.ml" 223 6080 6131
+)
+"odoc_info.ml" 223 6080 6094 "odoc_info.ml" 223 6080 6095
+type(
+  Buffer.t -> (string -> unit, Buffer.t, unit) format -> string -> unit
+)
+ident(
+  int_ref p "odoc_info.ml" 216 5928 5934 "odoc_info.ml" 216 5928 5935
+)
+"odoc_info.ml" 223 6080 6096 "odoc_info.ml" 223 6080 6097
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "odoc_info.ml" 215 5897 5903 "odoc_info.ml" 215 5897 5904
+)
+"odoc_info.ml" 223 6080 6098 "odoc_info.ml" 223 6080 6113
+type(
+  (string -> unit, Buffer.t, unit) format
+)
+"odoc_info.ml" 223 6080 6115 "odoc_info.ml" 223 6080 6128
+type(
+  string -> string
+)
+ident(
+  int_ref escape_arobas "odoc_info.ml" 204 5639 5643 "odoc_info.ml" 204 5639 5656
+)
+"odoc_info.ml" 223 6080 6129 "odoc_info.ml" 223 6080 6130
+type(
+  string
+)
+ident(
+  int_ref s "odoc_info.ml" 223 6080 6089 "odoc_info.ml" 223 6080 6090
+)
+"odoc_info.ml" 223 6080 6114 "odoc_info.ml" 223 6080 6131
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 223 6080 6094 "odoc_info.ml" 223 6080 6131
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_info.ml" 223 6080 6084 "odoc_info.ml" 223 6080 6132
+type(
+  string -> unit
+)
+"odoc_info.ml" 224 6133 6137 "odoc_info.ml" 224 6133 6138
+type(
+  info
+)
+ident(
+  int_ref i "odoc_info.ml" 214 5869 5893 "odoc_info.ml" 214 5869 5894
+)
+"odoc_info.ml" 224 6133 6137 "odoc_info.ml" 224 6133 6148
+type(
+  string list
+)
+"odoc_info.ml" 222 6068 6070 "odoc_info.ml" 224 6133 6148
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_info.ml" 226 6154 6163 "odoc_info.ml" 226 6154 6164
+type(
+  info
+)
+ident(
+  int_ref i "odoc_info.ml" 214 5869 5893 "odoc_info.ml" 214 5869 5894
+)
+"odoc_info.ml" 226 6154 6163 "odoc_info.ml" 226 6154 6174
+type(
+  string option
+)
+"odoc_info.ml" 227 6180 6185 "odoc_info.ml" 227 6180 6189
+type(
+  string option
+)
+"odoc_info.ml" 227 6180 6193 "odoc_info.ml" 227 6180 6195
+type(
+  unit
+)
+"odoc_info.ml" 228 6196 6206 "odoc_info.ml" 228 6196 6207
+type(
+  string
+)
+ident(
+  def s "odoc_info.ml" 228 6196 6211 "odoc_info.ml" 228 6196 6249
+)
+"odoc_info.ml" 228 6196 6201 "odoc_info.ml" 228 6196 6207
+type(
+  string option
+)
+"odoc_info.ml" 228 6196 6211 "odoc_info.ml" 228 6196 6212
+type(
+  Buffer.t -> (string -> unit, Buffer.t, unit) format -> string -> unit
+)
+ident(
+  int_ref p "odoc_info.ml" 216 5928 5934 "odoc_info.ml" 216 5928 5935
+)
+"odoc_info.ml" 228 6196 6213 "odoc_info.ml" 228 6196 6214
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "odoc_info.ml" 215 5897 5903 "odoc_info.ml" 215 5897 5904
+)
+"odoc_info.ml" 228 6196 6215 "odoc_info.ml" 228 6196 6231
+type(
+  (string -> unit, Buffer.t, unit) format
+)
+"odoc_info.ml" 228 6196 6233 "odoc_info.ml" 228 6196 6246
+type(
+  string -> string
+)
+ident(
+  int_ref escape_arobas "odoc_info.ml" 204 5639 5643 "odoc_info.ml" 204 5639 5656
+)
+"odoc_info.ml" 228 6196 6247 "odoc_info.ml" 228 6196 6248
+type(
+  string
+)
+ident(
+  int_ref s "odoc_info.ml" 228 6196 6206 "odoc_info.ml" 228 6196 6207
+)
+"odoc_info.ml" 228 6196 6232 "odoc_info.ml" 228 6196 6249
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 228 6196 6211 "odoc_info.ml" 228 6196 6249
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_info.ml" 225 6150 6152 "odoc_info.ml" 229 6250 6253
+type(
+  unit
+)
+"odoc_info.ml" 232 6294 6301 "odoc_info.ml" 232 6294 6310
+type(
+  see_ref -> string
+)
+ident(
+  def f_see_ref "odoc_info.ml" 237 6463 6466 "odoc_info.ml" 243 6624 6637
+)
+"odoc_info.ml" 233 6322 6337 "odoc_info.ml" 233 6322 6338
+type(
+  string
+)
+ident(
+  def s "odoc_info.ml" 233 6322 6342 "odoc_info.ml" 233 6322 6365
+)
+"odoc_info.ml" 233 6322 6329 "odoc_info.ml" 233 6322 6338
+type(
+  see_ref
+)
+"odoc_info.ml" 233 6322 6342 "odoc_info.ml" 233 6322 6356
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"odoc_info.ml" 233 6322 6357 "odoc_info.ml" 233 6322 6363
+type(
+  (string -> string, unit, string) format
+)
+"odoc_info.ml" 233 6322 6364 "odoc_info.ml" 233 6322 6365
+type(
+  string
+)
+ident(
+  int_ref s "odoc_info.ml" 233 6322 6337 "odoc_info.ml" 233 6322 6338
+)
+"odoc_info.ml" 233 6322 6342 "odoc_info.ml" 233 6322 6365
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 234 6366 6382 "odoc_info.ml" 234 6366 6383
+type(
+  string
+)
+ident(
+  def s "odoc_info.ml" 234 6366 6387 "odoc_info.ml" 234 6366 6410
+)
+"odoc_info.ml" 234 6366 6373 "odoc_info.ml" 234 6366 6383
+type(
+  see_ref
+)
+"odoc_info.ml" 234 6366 6387 "odoc_info.ml" 234 6366 6401
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"odoc_info.ml" 234 6366 6402 "odoc_info.ml" 234 6366 6408
+type(
+  (string -> string, unit, string) format
+)
+"odoc_info.ml" 234 6366 6409 "odoc_info.ml" 234 6366 6410
+type(
+  string
+)
+ident(
+  int_ref s "odoc_info.ml" 234 6366 6382 "odoc_info.ml" 234 6366 6383
+)
+"odoc_info.ml" 234 6366 6387 "odoc_info.ml" 234 6366 6410
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 235 6411 6426 "odoc_info.ml" 235 6411 6427
+type(
+  string
+)
+ident(
+  def s "odoc_info.ml" 235 6411 6431 "odoc_info.ml" 235 6411 6456
+)
+"odoc_info.ml" 235 6411 6418 "odoc_info.ml" 235 6411 6427
+type(
+  see_ref
+)
+"odoc_info.ml" 235 6411 6431 "odoc_info.ml" 235 6411 6445
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"odoc_info.ml" 235 6411 6446 "odoc_info.ml" 235 6411 6454
+type(
+  (string -> string, unit, string) format
+)
+"odoc_info.ml" 235 6411 6455 "odoc_info.ml" 235 6411 6456
+type(
+  string
+)
+ident(
+  int_ref s "odoc_info.ml" 235 6411 6426 "odoc_info.ml" 235 6411 6427
+)
+"odoc_info.ml" 235 6411 6431 "odoc_info.ml" 235 6411 6456
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 232 6294 6313 "odoc_info.ml" 235 6411 6456
+type(
+  see_ref -> string
+)
+"odoc_info.ml" 237 6463 6466 "odoc_info.ml" 237 6463 6475
+type(
+  (see -> unit) -> see list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_info.ml" 238 6476 6487 "odoc_info.ml" 238 6476 6491
+type(
+  see_ref
+)
+ident(
+  def sref "odoc_info.ml" 239 6499 6506 "odoc_info.ml" 241 6568 6616
+)
+"odoc_info.ml" 238 6476 6493 "odoc_info.ml" 238 6476 6494
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_info.ml" 239 6499 6506 "odoc_info.ml" 241 6568 6616
+)
+"odoc_info.ml" 238 6476 6486 "odoc_info.ml" 238 6476 6495
+type(
+  see
+)
+"odoc_info.ml" 239 6499 6506 "odoc_info.ml" 239 6499 6507
+type(
+  Buffer.t ->
+  (string -> string -> unit, Buffer.t, unit) format ->
+  string -> string -> unit
+)
+ident(
+  int_ref p "odoc_info.ml" 216 5928 5934 "odoc_info.ml" 216 5928 5935
+)
+"odoc_info.ml" 239 6499 6508 "odoc_info.ml" 239 6499 6509
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "odoc_info.ml" 215 5897 5903 "odoc_info.ml" 215 5897 5904
+)
+"odoc_info.ml" 239 6499 6510 "odoc_info.ml" 239 6499 6525
+type(
+  (string -> string -> unit, Buffer.t, unit) format
+)
+"odoc_info.ml" 240 6526 6536 "odoc_info.ml" 240 6526 6549
+type(
+  string -> string
+)
+ident(
+  int_ref escape_arobas "odoc_info.ml" 204 5639 5643 "odoc_info.ml" 204 5639 5656
+)
+"odoc_info.ml" 240 6526 6551 "odoc_info.ml" 240 6526 6560
+type(
+  see_ref -> string
+)
+ident(
+  int_ref f_see_ref "odoc_info.ml" 232 6294 6301 "odoc_info.ml" 232 6294 6310
+)
+"odoc_info.ml" 240 6526 6561 "odoc_info.ml" 240 6526 6565
+type(
+  see_ref
+)
+ident(
+  int_ref sref "odoc_info.ml" 238 6476 6487 "odoc_info.ml" 238 6476 6491
+)
+"odoc_info.ml" 240 6526 6550 "odoc_info.ml" 240 6526 6566
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 240 6526 6535 "odoc_info.ml" 240 6526 6567
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 241 6568 6578 "odoc_info.ml" 241 6568 6591
+type(
+  string -> string
+)
+ident(
+  int_ref escape_arobas "odoc_info.ml" 204 5639 5643 "odoc_info.ml" 204 5639 5656
+)
+"odoc_info.ml" 241 6568 6593 "odoc_info.ml" 241 6568 6612
+type(
+  Odoc_types.text -> string
+)
+ident(
+  int_ref text_string_of_text "odoc_info.ml" 201 5579 5583 "odoc_info.ml" 201 5579 5602
+)
+"odoc_info.ml" 241 6568 6613 "odoc_info.ml" 241 6568 6614
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref t "odoc_info.ml" 238 6476 6493 "odoc_info.ml" 238 6476 6494
+)
+"odoc_info.ml" 241 6568 6592 "odoc_info.ml" 241 6568 6615
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 241 6568 6577 "odoc_info.ml" 241 6568 6616
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 239 6499 6506 "odoc_info.ml" 241 6568 6616
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_info.ml" 238 6476 6481 "odoc_info.ml" 242 6617 6623
+type(
+  see -> unit
+)
+"odoc_info.ml" 243 6624 6629 "odoc_info.ml" 243 6624 6630
+type(
+  info
+)
+ident(
+  int_ref i "odoc_info.ml" 214 5869 5893 "odoc_info.ml" 214 5869 5894
+)
+"odoc_info.ml" 243 6624 6629 "odoc_info.ml" 243 6624 6637
+type(
+  see list
+)
+"odoc_info.ml" 237 6463 6466 "odoc_info.ml" 243 6624 6637
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_info.ml" 230 6255 6257 "odoc_info.ml" 244 6638 6641
+type(
+  unit
+)
+"odoc_info.ml" 246 6647 6656 "odoc_info.ml" 246 6647 6657
+type(
+  info
+)
+ident(
+  int_ref i "odoc_info.ml" 214 5869 5893 "odoc_info.ml" 214 5869 5894
+)
+"odoc_info.ml" 246 6647 6656 "odoc_info.ml" 246 6647 6665
+type(
+  string option
+)
+"odoc_info.ml" 247 6671 6676 "odoc_info.ml" 247 6671 6680
+type(
+  string option
+)
+"odoc_info.ml" 247 6671 6684 "odoc_info.ml" 247 6671 6686
+type(
+  unit
+)
+"odoc_info.ml" 248 6687 6697 "odoc_info.ml" 248 6687 6698
+type(
+  string
+)
+ident(
+  def s "odoc_info.ml" 248 6687 6702 "odoc_info.ml" 248 6687 6738
+)
+"odoc_info.ml" 248 6687 6692 "odoc_info.ml" 248 6687 6698
+type(
+  string option
+)
+"odoc_info.ml" 248 6687 6702 "odoc_info.ml" 248 6687 6703
+type(
+  Buffer.t -> (string -> unit, Buffer.t, unit) format -> string -> unit
+)
+ident(
+  int_ref p "odoc_info.ml" 216 5928 5934 "odoc_info.ml" 216 5928 5935
+)
+"odoc_info.ml" 248 6687 6704 "odoc_info.ml" 248 6687 6705
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "odoc_info.ml" 215 5897 5903 "odoc_info.ml" 215 5897 5904
+)
+"odoc_info.ml" 248 6687 6706 "odoc_info.ml" 248 6687 6720
+type(
+  (string -> unit, Buffer.t, unit) format
+)
+"odoc_info.ml" 248 6687 6722 "odoc_info.ml" 248 6687 6735
+type(
+  string -> string
+)
+ident(
+  int_ref escape_arobas "odoc_info.ml" 204 5639 5643 "odoc_info.ml" 204 5639 5656
+)
+"odoc_info.ml" 248 6687 6736 "odoc_info.ml" 248 6687 6737
+type(
+  string
+)
+ident(
+  int_ref s "odoc_info.ml" 248 6687 6697 "odoc_info.ml" 248 6687 6698
+)
+"odoc_info.ml" 248 6687 6721 "odoc_info.ml" 248 6687 6738
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 248 6687 6702 "odoc_info.ml" 248 6687 6738
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_info.ml" 245 6643 6645 "odoc_info.ml" 249 6739 6742
+type(
+  unit
+)
+"odoc_info.ml" 251 6748 6757 "odoc_info.ml" 251 6748 6758
+type(
+  info
+)
+ident(
+  int_ref i "odoc_info.ml" 214 5869 5893 "odoc_info.ml" 214 5869 5894
+)
+"odoc_info.ml" 251 6748 6757 "odoc_info.ml" 251 6748 6771
+type(
+  text option
+)
+"odoc_info.ml" 252 6777 6782 "odoc_info.ml" 252 6777 6786
+type(
+  text option
+)
+"odoc_info.ml" 252 6777 6790 "odoc_info.ml" 252 6777 6792
+type(
+  unit
+)
+"odoc_info.ml" 253 6793 6803 "odoc_info.ml" 253 6793 6804
+type(
+  text
+)
+ident(
+  def t "odoc_info.ml" 254 6808 6815 "odoc_info.ml" 255 6839 6887
+)
+"odoc_info.ml" 253 6793 6798 "odoc_info.ml" 253 6793 6804
+type(
+  text option
+)
+"odoc_info.ml" 254 6808 6815 "odoc_info.ml" 254 6808 6816
+type(
+  Buffer.t -> (string -> unit, Buffer.t, unit) format -> string -> unit
+)
+ident(
+  int_ref p "odoc_info.ml" 216 5928 5934 "odoc_info.ml" 216 5928 5935
+)
+"odoc_info.ml" 254 6808 6817 "odoc_info.ml" 254 6808 6818
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "odoc_info.ml" 215 5897 5903 "odoc_info.ml" 215 5897 5904
+)
+"odoc_info.ml" 254 6808 6819 "odoc_info.ml" 254 6808 6838
+type(
+  (string -> unit, Buffer.t, unit) format
+)
+"odoc_info.ml" 255 6839 6849 "odoc_info.ml" 255 6839 6862
+type(
+  string -> string
+)
+ident(
+  int_ref escape_arobas "odoc_info.ml" 204 5639 5643 "odoc_info.ml" 204 5639 5656
+)
+"odoc_info.ml" 255 6839 6864 "odoc_info.ml" 255 6839 6883
+type(
+  Odoc_types.text -> string
+)
+ident(
+  int_ref text_string_of_text "odoc_info.ml" 201 5579 5583 "odoc_info.ml" 201 5579 5602
+)
+"odoc_info.ml" 255 6839 6884 "odoc_info.ml" 255 6839 6885
+type(
+  text
+)
+ident(
+  int_ref t "odoc_info.ml" 253 6793 6803 "odoc_info.ml" 253 6793 6804
+)
+"odoc_info.ml" 255 6839 6863 "odoc_info.ml" 255 6839 6886
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 255 6839 6848 "odoc_info.ml" 255 6839 6887
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 254 6808 6815 "odoc_info.ml" 255 6839 6887
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_info.ml" 250 6744 6746 "odoc_info.ml" 256 6888 6891
+type(
+  unit
+)
+"odoc_info.ml" 257 6893 6895 "odoc_info.ml" 257 6893 6904
+type(
+  (param -> unit) -> param list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_info.ml" 258 6905 6915 "odoc_info.ml" 258 6905 6916
+type(
+  string
+)
+ident(
+  def s "odoc_info.ml" 259 6924 6930 "odoc_info.ml" 261 6978 7025
+)
+"odoc_info.ml" 258 6905 6918 "odoc_info.ml" 258 6905 6919
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_info.ml" 259 6924 6930 "odoc_info.ml" 261 6978 7025
+)
+"odoc_info.ml" 258 6905 6914 "odoc_info.ml" 258 6905 6920
+type(
+  param
+)
+"odoc_info.ml" 259 6924 6930 "odoc_info.ml" 259 6924 6931
+type(
+  Buffer.t ->
+  (string -> string -> unit, Buffer.t, unit) format ->
+  string -> string -> unit
+)
+ident(
+  int_ref p "odoc_info.ml" 216 5928 5934 "odoc_info.ml" 216 5928 5935
+)
+"odoc_info.ml" 259 6924 6932 "odoc_info.ml" 259 6924 6933
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "odoc_info.ml" 215 5897 5903 "odoc_info.ml" 215 5897 5904
+)
+"odoc_info.ml" 259 6924 6934 "odoc_info.ml" 259 6924 6951
+type(
+  (string -> string -> unit, Buffer.t, unit) format
+)
+"odoc_info.ml" 260 6952 6961 "odoc_info.ml" 260 6952 6974
+type(
+  string -> string
+)
+ident(
+  int_ref escape_arobas "odoc_info.ml" 204 5639 5643 "odoc_info.ml" 204 5639 5656
+)
+"odoc_info.ml" 260 6952 6975 "odoc_info.ml" 260 6952 6976
+type(
+  string
+)
+ident(
+  int_ref s "odoc_info.ml" 258 6905 6915 "odoc_info.ml" 258 6905 6916
+)
+"odoc_info.ml" 260 6952 6960 "odoc_info.ml" 260 6952 6977
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 261 6978 6987 "odoc_info.ml" 261 6978 7000
+type(
+  string -> string
+)
+ident(
+  int_ref escape_arobas "odoc_info.ml" 204 5639 5643 "odoc_info.ml" 204 5639 5656
+)
+"odoc_info.ml" 261 6978 7002 "odoc_info.ml" 261 6978 7021
+type(
+  Odoc_types.text -> string
+)
+ident(
+  int_ref text_string_of_text "odoc_info.ml" 201 5579 5583 "odoc_info.ml" 201 5579 5602
+)
+"odoc_info.ml" 261 6978 7022 "odoc_info.ml" 261 6978 7023
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref t "odoc_info.ml" 258 6905 6918 "odoc_info.ml" 258 6905 6919
+)
+"odoc_info.ml" 261 6978 7001 "odoc_info.ml" 261 6978 7024
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 261 6978 6986 "odoc_info.ml" 261 6978 7025
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 259 6924 6930 "odoc_info.ml" 261 6978 7025
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_info.ml" 258 6905 6909 "odoc_info.ml" 262 7026 7031
+type(
+  param -> unit
+)
+"odoc_info.ml" 263 7032 7036 "odoc_info.ml" 263 7032 7037
+type(
+  info
+)
+ident(
+  int_ref i "odoc_info.ml" 214 5869 5893 "odoc_info.ml" 214 5869 5894
+)
+"odoc_info.ml" 263 7032 7036 "odoc_info.ml" 263 7032 7046
+type(
+  param list
+)
+"odoc_info.ml" 257 6893 6895 "odoc_info.ml" 263 7032 7046
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_info.ml" 264 7048 7050 "odoc_info.ml" 264 7048 7059
+type(
+  (raised_exception -> unit) -> raised_exception list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_info.ml" 265 7060 7070 "odoc_info.ml" 265 7060 7071
+type(
+  string
+)
+ident(
+  def s "odoc_info.ml" 266 7079 7085 "odoc_info.ml" 268 7133 7180
+)
+"odoc_info.ml" 265 7060 7073 "odoc_info.ml" 265 7060 7074
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_info.ml" 266 7079 7085 "odoc_info.ml" 268 7133 7180
+)
+"odoc_info.ml" 265 7060 7069 "odoc_info.ml" 265 7060 7075
+type(
+  raised_exception
+)
+"odoc_info.ml" 266 7079 7085 "odoc_info.ml" 266 7079 7086
+type(
+  Buffer.t ->
+  (string -> string -> unit, Buffer.t, unit) format ->
+  string -> string -> unit
+)
+ident(
+  int_ref p "odoc_info.ml" 216 5928 5934 "odoc_info.ml" 216 5928 5935
+)
+"odoc_info.ml" 266 7079 7087 "odoc_info.ml" 266 7079 7088
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "odoc_info.ml" 215 5897 5903 "odoc_info.ml" 215 5897 5904
+)
+"odoc_info.ml" 266 7079 7089 "odoc_info.ml" 266 7079 7106
+type(
+  (string -> string -> unit, Buffer.t, unit) format
+)
+"odoc_info.ml" 267 7107 7116 "odoc_info.ml" 267 7107 7129
+type(
+  string -> string
+)
+ident(
+  int_ref escape_arobas "odoc_info.ml" 204 5639 5643 "odoc_info.ml" 204 5639 5656
+)
+"odoc_info.ml" 267 7107 7130 "odoc_info.ml" 267 7107 7131
+type(
+  string
+)
+ident(
+  int_ref s "odoc_info.ml" 265 7060 7070 "odoc_info.ml" 265 7060 7071
+)
+"odoc_info.ml" 267 7107 7115 "odoc_info.ml" 267 7107 7132
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 268 7133 7142 "odoc_info.ml" 268 7133 7155
+type(
+  string -> string
+)
+ident(
+  int_ref escape_arobas "odoc_info.ml" 204 5639 5643 "odoc_info.ml" 204 5639 5656
+)
+"odoc_info.ml" 268 7133 7157 "odoc_info.ml" 268 7133 7176
+type(
+  Odoc_types.text -> string
+)
+ident(
+  int_ref text_string_of_text "odoc_info.ml" 201 5579 5583 "odoc_info.ml" 201 5579 5602
+)
+"odoc_info.ml" 268 7133 7177 "odoc_info.ml" 268 7133 7178
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref t "odoc_info.ml" 265 7060 7073 "odoc_info.ml" 265 7060 7074
+)
+"odoc_info.ml" 268 7133 7156 "odoc_info.ml" 268 7133 7179
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 268 7133 7141 "odoc_info.ml" 268 7133 7180
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 266 7079 7085 "odoc_info.ml" 268 7133 7180
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_info.ml" 265 7060 7064 "odoc_info.ml" 269 7181 7186
+type(
+  raised_exception -> unit
+)
+"odoc_info.ml" 270 7187 7191 "odoc_info.ml" 270 7187 7192
+type(
+  info
+)
+ident(
+  int_ref i "odoc_info.ml" 214 5869 5893 "odoc_info.ml" 214 5869 5894
+)
+"odoc_info.ml" 270 7187 7191 "odoc_info.ml" 270 7187 7212
+type(
+  raised_exception list
+)
+"odoc_info.ml" 264 7048 7050 "odoc_info.ml" 270 7187 7212
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_info.ml" 272 7218 7227 "odoc_info.ml" 272 7218 7228
+type(
+  info
+)
+ident(
+  int_ref i "odoc_info.ml" 214 5869 5893 "odoc_info.ml" 214 5869 5894
+)
+"odoc_info.ml" 272 7218 7227 "odoc_info.ml" 272 7218 7243
+type(
+  text option
+)
+"odoc_info.ml" 273 7249 7254 "odoc_info.ml" 273 7249 7258
+type(
+  text option
+)
+"odoc_info.ml" 273 7249 7262 "odoc_info.ml" 273 7249 7264
+type(
+  unit
+)
+"odoc_info.ml" 274 7265 7275 "odoc_info.ml" 274 7265 7276
+type(
+  text
+)
+ident(
+  def t "odoc_info.ml" 275 7280 7287 "odoc_info.ml" 276 7307 7355
+)
+"odoc_info.ml" 274 7265 7270 "odoc_info.ml" 274 7265 7276
+type(
+  text option
+)
+"odoc_info.ml" 275 7280 7287 "odoc_info.ml" 275 7280 7288
+type(
+  Buffer.t -> (string -> unit, Buffer.t, unit) format -> string -> unit
+)
+ident(
+  int_ref p "odoc_info.ml" 216 5928 5934 "odoc_info.ml" 216 5928 5935
+)
+"odoc_info.ml" 275 7280 7289 "odoc_info.ml" 275 7280 7290
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "odoc_info.ml" 215 5897 5903 "odoc_info.ml" 215 5897 5904
+)
+"odoc_info.ml" 275 7280 7291 "odoc_info.ml" 275 7280 7306
+type(
+  (string -> unit, Buffer.t, unit) format
+)
+"odoc_info.ml" 276 7307 7317 "odoc_info.ml" 276 7307 7330
+type(
+  string -> string
+)
+ident(
+  int_ref escape_arobas "odoc_info.ml" 204 5639 5643 "odoc_info.ml" 204 5639 5656
+)
+"odoc_info.ml" 276 7307 7332 "odoc_info.ml" 276 7307 7351
+type(
+  Odoc_types.text -> string
+)
+ident(
+  int_ref text_string_of_text "odoc_info.ml" 201 5579 5583 "odoc_info.ml" 201 5579 5602
+)
+"odoc_info.ml" 276 7307 7352 "odoc_info.ml" 276 7307 7353
+type(
+  text
+)
+ident(
+  int_ref t "odoc_info.ml" 274 7265 7275 "odoc_info.ml" 274 7265 7276
+)
+"odoc_info.ml" 276 7307 7331 "odoc_info.ml" 276 7307 7354
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 276 7307 7316 "odoc_info.ml" 276 7307 7355
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 275 7280 7287 "odoc_info.ml" 276 7307 7355
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_info.ml" 271 7214 7216 "odoc_info.ml" 277 7356 7359
+type(
+  unit
+)
+"odoc_info.ml" 278 7361 7363 "odoc_info.ml" 278 7361 7372
+type(
+  (string * Odoc_types.text -> unit) ->
+  (string * Odoc_types.text) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_info.ml" 279 7373 7383 "odoc_info.ml" 279 7373 7384
+type(
+  string
+)
+ident(
+  def s "odoc_info.ml" 280 7392 7398 "odoc_info.ml" 281 7416 7463
+)
+"odoc_info.ml" 279 7373 7386 "odoc_info.ml" 279 7373 7387
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_info.ml" 280 7392 7398 "odoc_info.ml" 281 7416 7463
+)
+"odoc_info.ml" 279 7373 7382 "odoc_info.ml" 279 7373 7388
+type(
+  string * Odoc_types.text
+)
+"odoc_info.ml" 280 7392 7398 "odoc_info.ml" 280 7392 7399
+type(
+  Buffer.t ->
+  (string -> string -> unit, Buffer.t, unit) format ->
+  string -> string -> unit
+)
+ident(
+  int_ref p "odoc_info.ml" 216 5928 5934 "odoc_info.ml" 216 5928 5935
+)
+"odoc_info.ml" 280 7392 7400 "odoc_info.ml" 280 7392 7401
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "odoc_info.ml" 215 5897 5903 "odoc_info.ml" 215 5897 5904
+)
+"odoc_info.ml" 280 7392 7402 "odoc_info.ml" 280 7392 7413
+type(
+  (string -> string -> unit, Buffer.t, unit) format
+)
+"odoc_info.ml" 280 7392 7414 "odoc_info.ml" 280 7392 7415
+type(
+  string
+)
+ident(
+  int_ref s "odoc_info.ml" 279 7373 7383 "odoc_info.ml" 279 7373 7384
+)
+"odoc_info.ml" 281 7416 7425 "odoc_info.ml" 281 7416 7438
+type(
+  string -> string
+)
+ident(
+  int_ref escape_arobas "odoc_info.ml" 204 5639 5643 "odoc_info.ml" 204 5639 5656
+)
+"odoc_info.ml" 281 7416 7440 "odoc_info.ml" 281 7416 7459
+type(
+  Odoc_types.text -> string
+)
+ident(
+  int_ref text_string_of_text "odoc_info.ml" 201 5579 5583 "odoc_info.ml" 201 5579 5602
+)
+"odoc_info.ml" 281 7416 7460 "odoc_info.ml" 281 7416 7461
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref t "odoc_info.ml" 279 7373 7386 "odoc_info.ml" 279 7373 7387
+)
+"odoc_info.ml" 281 7416 7439 "odoc_info.ml" 281 7416 7462
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 281 7416 7424 "odoc_info.ml" 281 7416 7463
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_info.ml" 280 7392 7398 "odoc_info.ml" 281 7416 7463
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_info.ml" 279 7373 7377 "odoc_info.ml" 282 7464 7469
+type(
+  string * Odoc_types.text -> unit
+)
+"odoc_info.ml" 283 7470 7474 "odoc_info.ml" 283 7470 7475
+type(
+  info
+)
+ident(
+  int_ref i "odoc_info.ml" 214 5869 5893 "odoc_info.ml" 214 5869 5894
+)
+"odoc_info.ml" 283 7470 7474 "odoc_info.ml" 283 7470 7484
+type(
+  (string * Odoc_types.text) list
+)
+"odoc_info.ml" 278 7361 7363 "odoc_info.ml" 283 7470 7484
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_info.ml" 285 7487 7489 "odoc_info.ml" 285 7487 7504
+type(
+  Buffer.t -> string
+)
+ident(
+  ext_ref Buffer.contents
+)
+"odoc_info.ml" 285 7487 7505 "odoc_info.ml" 285 7487 7506
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "odoc_info.ml" 215 5897 5903 "odoc_info.ml" 215 5897 5904
+)
+"odoc_info.ml" 285 7487 7489 "odoc_info.ml" 285 7487 7506
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_info.ml" 278 7361 7363 "odoc_info.ml" 285 7487 7506
+type(
+  string
+)
+"odoc_info.ml" 271 7214 7216 "odoc_info.ml" 285 7487 7506
+type(
+  string
+)
+"odoc_info.ml" 264 7048 7050 "odoc_info.ml" 285 7487 7506
+type(
+  string
+)
+"odoc_info.ml" 257 6893 6895 "odoc_info.ml" 285 7487 7506
+type(
+  string
+)
+"odoc_info.ml" 250 6744 6746 "odoc_info.ml" 285 7487 7506
+type(
+  string
+)
+"odoc_info.ml" 245 6643 6645 "odoc_info.ml" 285 7487 7506
+type(
+  string
+)
+"odoc_info.ml" 230 6255 6257 "odoc_info.ml" 285 7487 7506
+type(
+  string
+)
+"odoc_info.ml" 225 6150 6152 "odoc_info.ml" 285 7487 7506
+type(
+  string
+)
+"odoc_info.ml" 222 6068 6070 "odoc_info.ml" 285 7487 7506
+type(
+  string
+)
+"odoc_info.ml" 217 5956 5958 "odoc_info.ml" 285 7487 7506
+type(
+  string
+)
+"odoc_info.ml" 216 5928 5930 "odoc_info.ml" 285 7487 7506
+type(
+  string
+)
+"odoc_info.ml" 215 5897 5899 "odoc_info.ml" 285 7487 7506
+type(
+  string
+)
+"odoc_info.ml" 287 7508 7512 "odoc_info.ml" 287 7508 7526
+type(
+  string -> Odoc_types.info
+)
+ident(
+  def info_of_string "odoc_info.ml" 288 7558 7558 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 287 7508 7529 "odoc_info.ml" 287 7508 7557
+type(
+  string -> Odoc_types.info
+)
+ident(
+  ext_ref Odoc_comments.info_of_string
+)
+"odoc_info.ml" 288 7558 7562 "odoc_info.ml" 288 7558 7582
+type(
+  Odoc_module.t_module list -> string -> Odoc_types.info
+)
+ident(
+  def info_of_comment_file "odoc_info.ml" 290 7621 7621 "odoc_info.ml" 1 0 -1
+)
+"odoc_info.ml" 288 7558 7585 "odoc_info.ml" 288 7558 7619
+type(
+  Odoc_module.t_module list -> string -> Odoc_types.info
+)
+ident(
+  ext_ref Odoc_comments.info_of_comment_file
+)
+"odoc_info.ml" 309 8346 8354 "odoc_info.ml" 309 8346 8368
+type(
+  Odoc_module.t_module list ->
+  Odoc_search.P_name.t -> Odoc_search.result_element list
+)
+ident(
+  def search_by_name "odoc_info.ml" 311 8406 8410 "odoc_info.ml" 321 8816 8821
+)
+"odoc_info.ml" 309 8346 8371 "odoc_info.ml" 309 8346 8404
+type(
+  Odoc_module.t_module list ->
+  Odoc_search.P_name.t -> Odoc_search.result_element list
+)
+ident(
+  ext_ref Odoc_search.Search_by_name.search
+)
+"odoc_info.ml" 311 8406 8414 "odoc_info.ml" 311 8406 8420
+type(
+  Odoc_module.t_module list -> Odoc_value.t_value list
+)
+ident(
+  def values "odoc_info.ml" 312 8442 8446 "odoc_info.ml" 321 8816 8821
+)
+"odoc_info.ml" 311 8406 8423 "odoc_info.ml" 311 8406 8441
+type(
+  Odoc_module.t_module list -> Odoc_value.t_value list
+)
+ident(
+  ext_ref Odoc_search.values
+)
+"odoc_info.ml" 312 8442 8450 "odoc_info.ml" 312 8442 8460
+type(
+  Odoc_module.t_module list -> Odoc_extension.t_extension_constructor list
+)
+ident(
+  def extensions "odoc_info.ml" 313 8486 8490 "odoc_info.ml" 321 8816 8821
+)
+"odoc_info.ml" 312 8442 8463 "odoc_info.ml" 312 8442 8485
+type(
+  Odoc_module.t_module list -> Odoc_extension.t_extension_constructor list
+)
+ident(
+  ext_ref Odoc_search.extensions
+)
+"odoc_info.ml" 313 8486 8494 "odoc_info.ml" 313 8486 8504
+type(
+  Odoc_module.t_module list -> Odoc_exception.t_exception list
+)
+ident(
+  def exceptions "odoc_info.ml" 314 8530 8534 "odoc_info.ml" 321 8816 8821
+)
+"odoc_info.ml" 313 8486 8507 "odoc_info.ml" 313 8486 8529
+type(
+  Odoc_module.t_module list -> Odoc_exception.t_exception list
+)
+ident(
+  ext_ref Odoc_search.exceptions
+)
+"odoc_info.ml" 314 8530 8538 "odoc_info.ml" 314 8530 8543
+type(
+  Odoc_module.t_module list -> Odoc_type.t_type list
+)
+ident(
+  def types "odoc_info.ml" 315 8564 8568 "odoc_info.ml" 321 8816 8821
+)
+"odoc_info.ml" 314 8530 8546 "odoc_info.ml" 314 8530 8563
+type(
+  Odoc_module.t_module list -> Odoc_type.t_type list
+)
+ident(
+  ext_ref Odoc_search.types
+)
+"odoc_info.ml" 315 8564 8572 "odoc_info.ml" 315 8564 8582
+type(
+  Odoc_module.t_module list -> Odoc_value.t_attribute list
+)
+ident(
+  def attributes "odoc_info.ml" 316 8608 8612 "odoc_info.ml" 321 8816 8821
+)
+"odoc_info.ml" 315 8564 8585 "odoc_info.ml" 315 8564 8607
+type(
+  Odoc_module.t_module list -> Odoc_value.t_attribute list
+)
+ident(
+  ext_ref Odoc_search.attributes
+)
+"odoc_info.ml" 316 8608 8616 "odoc_info.ml" 316 8608 8623
+type(
+  Odoc_module.t_module list -> Odoc_value.t_method list
+)
+ident(
+  def methods "odoc_info.ml" 317 8646 8650 "odoc_info.ml" 321 8816 8821
+)
+"odoc_info.ml" 316 8608 8626 "odoc_info.ml" 316 8608 8645
+type(
+  Odoc_module.t_module list -> Odoc_value.t_method list
+)
+ident(
+  ext_ref Odoc_search.methods
+)
+"odoc_info.ml" 317 8646 8654 "odoc_info.ml" 317 8646 8661
+type(
+  Odoc_module.t_module list -> Odoc_class.t_class list
+)
+ident(
+  def classes "odoc_info.ml" 318 8684 8688 "odoc_info.ml" 321 8816 8821
+)
+"odoc_info.ml" 317 8646 8664 "odoc_info.ml" 317 8646 8683
+type(
+  Odoc_module.t_module list -> Odoc_class.t_class list
+)
+ident(
+  ext_ref Odoc_search.classes
+)
+"odoc_info.ml" 318 8684 8692 "odoc_info.ml" 318 8684 8703
+type(
+  Odoc_module.t_module list -> Odoc_class.t_class_type list
+)
+ident(
+  def class_types "odoc_info.ml" 319 8730 8734 "odoc_info.ml" 321 8816 8821
+)
+"odoc_info.ml" 318 8684 8706 "odoc_info.ml" 318 8684 8729
+type(
+  Odoc_module.t_module list -> Odoc_class.t_class_type list
+)
+ident(
+  ext_ref Odoc_search.class_types
+)
+"odoc_info.ml" 319 8730 8738 "odoc_info.ml" 319 8730 8745
+type(
+  Odoc_module.t_module list -> Odoc_module.t_module list
+)
+ident(
+  def modules "odoc_info.ml" 320 8768 8772 "odoc_info.ml" 321 8816 8821
+)
+"odoc_info.ml" 319 8730 8748 "odoc_info.ml" 319 8730 8767
+type(
+  Odoc_module.t_module list -> Odoc_module.t_module list
+)
+ident(
+  ext_ref Odoc_search.modules
+)
+"odoc_info.ml" 320 8768 8776 "odoc_info.ml" 320 8768 8788
+type(
+  Odoc_module.t_module list -> Odoc_module.t_module_type list
+)
+ident(
+  def module_types "odoc_info.ml" 320 8768 8815 "odoc_info.ml" 321 8816 8821
+)
+"odoc_info.ml" 320 8768 8791 "odoc_info.ml" 320 8768 8815
+type(
+  Odoc_module.t_module list -> Odoc_module.t_module_type list
+)
+ident(
+  ext_ref Odoc_search.module_types
+)
+"odoc_info.ml" 330 8913 8921 "odoc_info.ml" 330 8913 8943
+type(
+  Odoc_dep.Module.t_module list -> unit
+)
+ident(
+  def kernel_deps_of_modules "odoc_info.ml" 331 8978 8982 "odoc_info.ml" 332 9025 9030
+)
+"odoc_info.ml" 330 8913 8946 "odoc_info.ml" 330 8913 8977
+type(
+  Odoc_dep.Module.t_module list -> unit
+)
+ident(
+  ext_ref Odoc_dep.kernel_deps_of_modules
+)
+"odoc_info.ml" 331 8978 8986 "odoc_info.ml" 331 8978 8999
+type(
+  ?kernel:bool ->
+  Odoc_dep.Type.t_type list ->
+  (Odoc_dep.Type.t_type * Odoc_dep.Dep.S.elt list) list
+)
+ident(
+  def deps_of_types "odoc_info.ml" 331 8978 9024 "odoc_info.ml" 332 9025 9030
+)
+"odoc_info.ml" 331 8978 9002 "odoc_info.ml" 331 8978 9024
+type(
+  ?kernel:bool ->
+  Odoc_dep.Type.t_type list ->
+  (Odoc_dep.Type.t_type * Odoc_dep.Dep.S.elt list) list
+)
+ident(
+  ext_ref Odoc_dep.deps_of_types
+)

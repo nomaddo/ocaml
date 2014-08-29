@@ -1,0 +1,976 @@
+"threadUnix.ml" 16 948 952 "threadUnix.ml" 16 948 957
+type(
+  string -> string array -> 'a
+)
+ident(
+  def execv "threadUnix.ml" 17 971 971 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 16 948 960 "threadUnix.ml" 16 948 970
+type(
+  string -> string array -> 'a
+)
+ident(
+  ext_ref Unix.execv
+)
+"threadUnix.ml" 17 971 975 "threadUnix.ml" 17 971 981
+type(
+  string -> string array -> string array -> 'a
+)
+ident(
+  def execve "threadUnix.ml" 18 996 996 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 17 971 984 "threadUnix.ml" 17 971 995
+type(
+  string -> string array -> string array -> 'a
+)
+ident(
+  ext_ref Unix.execve
+)
+"threadUnix.ml" 18 996 1000 "threadUnix.ml" 18 996 1006
+type(
+  string -> string array -> 'a
+)
+ident(
+  def execvp "threadUnix.ml" 19 1021 1021 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 18 996 1009 "threadUnix.ml" 18 996 1020
+type(
+  string -> string array -> 'a
+)
+ident(
+  ext_ref Unix.execvp
+)
+"threadUnix.ml" 19 1021 1025 "threadUnix.ml" 19 1021 1029
+type(
+  unit -> int * Unix.process_status
+)
+ident(
+  def wait "threadUnix.ml" 20 1042 1042 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 19 1021 1032 "threadUnix.ml" 19 1021 1041
+type(
+  unit -> int * Unix.process_status
+)
+ident(
+  ext_ref Unix.wait
+)
+"threadUnix.ml" 20 1042 1046 "threadUnix.ml" 20 1042 1053
+type(
+  Unix.wait_flag list -> int -> int * Unix.process_status
+)
+ident(
+  def waitpid "threadUnix.ml" 21 1069 1069 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 20 1042 1056 "threadUnix.ml" 20 1042 1068
+type(
+  Unix.wait_flag list -> int -> int * Unix.process_status
+)
+ident(
+  ext_ref Unix.waitpid
+)
+"threadUnix.ml" 21 1069 1073 "threadUnix.ml" 21 1069 1079
+type(
+  string -> Unix.process_status
+)
+ident(
+  def system "threadUnix.ml" 22 1094 1094 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 21 1069 1082 "threadUnix.ml" 21 1069 1093
+type(
+  string -> Unix.process_status
+)
+ident(
+  ext_ref Unix.system
+)
+"threadUnix.ml" 22 1094 1098 "threadUnix.ml" 22 1094 1102
+type(
+  Unix.file_descr -> bytes -> int -> int -> int
+)
+ident(
+  def read "threadUnix.ml" 23 1115 1115 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 22 1094 1105 "threadUnix.ml" 22 1094 1114
+type(
+  Unix.file_descr -> bytes -> int -> int -> int
+)
+ident(
+  ext_ref Unix.read
+)
+"threadUnix.ml" 23 1115 1119 "threadUnix.ml" 23 1115 1124
+type(
+  Unix.file_descr -> bytes -> int -> int -> int
+)
+ident(
+  def write "threadUnix.ml" 24 1138 1138 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 23 1115 1127 "threadUnix.ml" 23 1115 1137
+type(
+  Unix.file_descr -> bytes -> int -> int -> int
+)
+ident(
+  ext_ref Unix.write
+)
+"threadUnix.ml" 24 1138 1142 "threadUnix.ml" 24 1138 1154
+type(
+  Unix.file_descr -> bytes -> int -> int -> int
+)
+ident(
+  def single_write "threadUnix.ml" 25 1175 1175 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 24 1138 1157 "threadUnix.ml" 24 1138 1174
+type(
+  Unix.file_descr -> bytes -> int -> int -> int
+)
+ident(
+  ext_ref Unix.single_write
+)
+"threadUnix.ml" 25 1175 1179 "threadUnix.ml" 25 1175 1194
+type(
+  Unix.file_descr -> string -> int -> int -> int
+)
+ident(
+  def write_substring "threadUnix.ml" 26 1218 1218 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 25 1175 1197 "threadUnix.ml" 25 1175 1217
+type(
+  Unix.file_descr -> string -> int -> int -> int
+)
+ident(
+  ext_ref Unix.write_substring
+)
+"threadUnix.ml" 26 1218 1222 "threadUnix.ml" 26 1218 1244
+type(
+  Unix.file_descr -> string -> int -> int -> int
+)
+ident(
+  def single_write_substring "threadUnix.ml" 27 1275 1275 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 26 1218 1247 "threadUnix.ml" 26 1218 1274
+type(
+  Unix.file_descr -> string -> int -> int -> int
+)
+ident(
+  ext_ref Unix.single_write_substring
+)
+"threadUnix.ml" 27 1275 1279 "threadUnix.ml" 27 1275 1285
+type(
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  float -> Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+ident(
+  def select "threadUnix.ml" 28 1300 1300 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 27 1275 1288 "threadUnix.ml" 27 1275 1299
+type(
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  Unix.file_descr list ->
+  float -> Unix.file_descr list * Unix.file_descr list * Unix.file_descr list
+)
+ident(
+  ext_ref Unix.select
+)
+"threadUnix.ml" 28 1300 1304 "threadUnix.ml" 28 1300 1308
+type(
+  unit -> Unix.file_descr * Unix.file_descr
+)
+ident(
+  def pipe "threadUnix.ml" 29 1321 1321 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 28 1300 1311 "threadUnix.ml" 28 1300 1320
+type(
+  unit -> Unix.file_descr * Unix.file_descr
+)
+ident(
+  ext_ref Unix.pipe
+)
+"threadUnix.ml" 29 1321 1325 "threadUnix.ml" 29 1321 1340
+type(
+  string -> in_channel
+)
+ident(
+  def open_process_in "threadUnix.ml" 30 1364 1364 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 29 1321 1343 "threadUnix.ml" 29 1321 1363
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Unix.open_process_in
+)
+"threadUnix.ml" 30 1364 1368 "threadUnix.ml" 30 1364 1384
+type(
+  string -> out_channel
+)
+ident(
+  def open_process_out "threadUnix.ml" 31 1409 1409 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 30 1364 1387 "threadUnix.ml" 30 1364 1408
+type(
+  string -> out_channel
+)
+ident(
+  ext_ref Unix.open_process_out
+)
+"threadUnix.ml" 31 1409 1413 "threadUnix.ml" 31 1409 1425
+type(
+  string -> in_channel * out_channel
+)
+ident(
+  def open_process "threadUnix.ml" 32 1446 1446 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 31 1409 1428 "threadUnix.ml" 31 1409 1445
+type(
+  string -> in_channel * out_channel
+)
+ident(
+  ext_ref Unix.open_process
+)
+"threadUnix.ml" 32 1446 1450 "threadUnix.ml" 32 1446 1467
+type(
+  string -> string array -> in_channel * out_channel * in_channel
+)
+ident(
+  def open_process_full "threadUnix.ml" 33 1493 1493 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 32 1446 1470 "threadUnix.ml" 32 1446 1492
+type(
+  string -> string array -> in_channel * out_channel * in_channel
+)
+ident(
+  ext_ref Unix.open_process_full
+)
+"threadUnix.ml" 33 1493 1497 "threadUnix.ml" 33 1493 1502
+type(
+  int -> unit
+)
+ident(
+  def sleep "threadUnix.ml" 34 1516 1516 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 33 1493 1505 "threadUnix.ml" 33 1493 1515
+type(
+  int -> unit
+)
+ident(
+  ext_ref Unix.sleep
+)
+"threadUnix.ml" 34 1516 1520 "threadUnix.ml" 34 1516 1526
+type(
+  Unix.socket_domain -> Unix.socket_type -> int -> Unix.file_descr
+)
+ident(
+  def socket "threadUnix.ml" 35 1541 1541 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 34 1516 1529 "threadUnix.ml" 34 1516 1540
+type(
+  Unix.socket_domain -> Unix.socket_type -> int -> Unix.file_descr
+)
+ident(
+  ext_ref Unix.socket
+)
+"threadUnix.ml" 35 1541 1545 "threadUnix.ml" 35 1541 1555
+type(
+  Unix.socket_domain ->
+  Unix.socket_type -> int -> Unix.file_descr * Unix.file_descr
+)
+ident(
+  def socketpair "threadUnix.ml" 36 1574 1574 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 35 1541 1558 "threadUnix.ml" 35 1541 1573
+type(
+  Unix.socket_domain ->
+  Unix.socket_type -> int -> Unix.file_descr * Unix.file_descr
+)
+ident(
+  ext_ref Unix.socketpair
+)
+"threadUnix.ml" 36 1574 1578 "threadUnix.ml" 36 1574 1584
+type(
+  Unix.file_descr -> Unix.file_descr * Unix.sockaddr
+)
+ident(
+  def accept "threadUnix.ml" 37 1599 1599 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 36 1574 1587 "threadUnix.ml" 36 1574 1598
+type(
+  Unix.file_descr -> Unix.file_descr * Unix.sockaddr
+)
+ident(
+  ext_ref Unix.accept
+)
+"threadUnix.ml" 37 1599 1603 "threadUnix.ml" 37 1599 1610
+type(
+  Unix.file_descr -> Unix.sockaddr -> unit
+)
+ident(
+  def connect "threadUnix.ml" 38 1626 1626 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 37 1599 1613 "threadUnix.ml" 37 1599 1625
+type(
+  Unix.file_descr -> Unix.sockaddr -> unit
+)
+ident(
+  ext_ref Unix.connect
+)
+"threadUnix.ml" 38 1626 1630 "threadUnix.ml" 38 1626 1634
+type(
+  Unix.file_descr -> bytes -> int -> int -> Unix.msg_flag list -> int
+)
+ident(
+  def recv "threadUnix.ml" 39 1647 1647 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 38 1626 1637 "threadUnix.ml" 38 1626 1646
+type(
+  Unix.file_descr -> bytes -> int -> int -> Unix.msg_flag list -> int
+)
+ident(
+  ext_ref Unix.recv
+)
+"threadUnix.ml" 39 1647 1651 "threadUnix.ml" 39 1647 1659
+type(
+  Unix.file_descr ->
+  bytes -> int -> int -> Unix.msg_flag list -> int * Unix.sockaddr
+)
+ident(
+  def recvfrom "threadUnix.ml" 40 1676 1676 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 39 1647 1662 "threadUnix.ml" 39 1647 1675
+type(
+  Unix.file_descr ->
+  bytes -> int -> int -> Unix.msg_flag list -> int * Unix.sockaddr
+)
+ident(
+  ext_ref Unix.recvfrom
+)
+"threadUnix.ml" 40 1676 1680 "threadUnix.ml" 40 1676 1684
+type(
+  Unix.file_descr -> bytes -> int -> int -> Unix.msg_flag list -> int
+)
+ident(
+  def send "threadUnix.ml" 41 1697 1697 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 40 1676 1687 "threadUnix.ml" 40 1676 1696
+type(
+  Unix.file_descr -> bytes -> int -> int -> Unix.msg_flag list -> int
+)
+ident(
+  ext_ref Unix.send
+)
+"threadUnix.ml" 41 1697 1701 "threadUnix.ml" 41 1697 1715
+type(
+  Unix.file_descr -> string -> int -> int -> Unix.msg_flag list -> int
+)
+ident(
+  def send_substring "threadUnix.ml" 42 1738 1738 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 41 1697 1718 "threadUnix.ml" 41 1697 1737
+type(
+  Unix.file_descr -> string -> int -> int -> Unix.msg_flag list -> int
+)
+ident(
+  ext_ref Unix.send_substring
+)
+"threadUnix.ml" 42 1738 1742 "threadUnix.ml" 42 1738 1748
+type(
+  Unix.file_descr ->
+  bytes -> int -> int -> Unix.msg_flag list -> Unix.sockaddr -> int
+)
+ident(
+  def sendto "threadUnix.ml" 43 1763 1763 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 42 1738 1751 "threadUnix.ml" 42 1738 1762
+type(
+  Unix.file_descr ->
+  bytes -> int -> int -> Unix.msg_flag list -> Unix.sockaddr -> int
+)
+ident(
+  ext_ref Unix.sendto
+)
+"threadUnix.ml" 43 1763 1767 "threadUnix.ml" 43 1763 1783
+type(
+  Unix.file_descr ->
+  string -> int -> int -> Unix.msg_flag list -> Unix.sockaddr -> int
+)
+ident(
+  def sendto_substring "threadUnix.ml" 44 1808 1808 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 43 1763 1786 "threadUnix.ml" 43 1763 1807
+type(
+  Unix.file_descr ->
+  string -> int -> int -> Unix.msg_flag list -> Unix.sockaddr -> int
+)
+ident(
+  ext_ref Unix.sendto_substring
+)
+"threadUnix.ml" 44 1808 1812 "threadUnix.ml" 44 1808 1827
+type(
+  Unix.sockaddr -> in_channel * out_channel
+)
+ident(
+  def open_connection "threadUnix.ml" 45 1851 1851 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 44 1808 1830 "threadUnix.ml" 44 1808 1850
+type(
+  Unix.sockaddr -> in_channel * out_channel
+)
+ident(
+  ext_ref Unix.open_connection
+)
+"threadUnix.ml" 45 1851 1855 "threadUnix.ml" 45 1851 1871
+type(
+  (in_channel -> out_channel -> unit) -> Unix.sockaddr -> unit
+)
+ident(
+  def establish_server "threadUnix.ml" 47 1897 1897 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 45 1851 1874 "threadUnix.ml" 45 1851 1895
+type(
+  (in_channel -> out_channel -> unit) -> Unix.sockaddr -> unit
+)
+ident(
+  ext_ref Unix.establish_server
+)
+"threadUnix.ml" 49 1908 1916 "threadUnix.ml" 49 1908 1926
+type(
+  Unix.file_descr -> bytes -> int -> int -> float -> int
+)
+ident(
+  def timed_read "threadUnix.ml" 49 1908 1908 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 49 1908 1927 "threadUnix.ml" 49 1908 1929
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "threadUnix.ml" 49 1908 1930 "threadUnix.ml" 55 2163 2217
+)
+"threadUnix.ml" 49 1908 1930 "threadUnix.ml" 49 1908 1934
+type(
+  bytes
+)
+ident(
+  def buff "threadUnix.ml" 49 1908 1935 "threadUnix.ml" 55 2163 2217
+)
+"threadUnix.ml" 49 1908 1935 "threadUnix.ml" 49 1908 1938
+type(
+  int
+)
+ident(
+  def ofs "threadUnix.ml" 49 1908 1939 "threadUnix.ml" 55 2163 2217
+)
+"threadUnix.ml" 49 1908 1939 "threadUnix.ml" 49 1908 1942
+type(
+  int
+)
+ident(
+  def len "threadUnix.ml" 49 1908 1943 "threadUnix.ml" 55 2163 2217
+)
+"threadUnix.ml" 49 1908 1943 "threadUnix.ml" 49 1908 1950
+type(
+  float
+)
+ident(
+  def timeout "threadUnix.ml" 50 1953 1955 "threadUnix.ml" 55 2163 2217
+)
+"threadUnix.ml" 50 1953 1958 "threadUnix.ml" 50 1953 1980
+type(
+  Unix.file_descr -> float -> bool
+)
+ident(
+  ext_ref Thread.wait_timed_read
+)
+"threadUnix.ml" 50 1953 1981 "threadUnix.ml" 50 1953 1983
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "threadUnix.ml" 49 1908 1927 "threadUnix.ml" 49 1908 1929
+)
+"threadUnix.ml" 50 1953 1984 "threadUnix.ml" 50 1953 1991
+type(
+  float
+)
+ident(
+  int_ref timeout "threadUnix.ml" 49 1908 1943 "threadUnix.ml" 49 1908 1950
+)
+"threadUnix.ml" 50 1953 1958 "threadUnix.ml" 50 1953 1991
+call(
+  stack
+)
+type(
+  bool
+)
+"threadUnix.ml" 51 1992 2009 "threadUnix.ml" 51 1992 2018
+type(
+  Unix.file_descr -> bytes -> int -> int -> int
+)
+ident(
+  ext_ref Unix.read
+)
+"threadUnix.ml" 51 1992 2019 "threadUnix.ml" 51 1992 2021
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "threadUnix.ml" 49 1908 1927 "threadUnix.ml" 49 1908 1929
+)
+"threadUnix.ml" 51 1992 2022 "threadUnix.ml" 51 1992 2026
+type(
+  bytes
+)
+ident(
+  int_ref buff "threadUnix.ml" 49 1908 1930 "threadUnix.ml" 49 1908 1934
+)
+"threadUnix.ml" 51 1992 2027 "threadUnix.ml" 51 1992 2030
+type(
+  int
+)
+ident(
+  int_ref ofs "threadUnix.ml" 49 1908 1935 "threadUnix.ml" 49 1908 1938
+)
+"threadUnix.ml" 51 1992 2031 "threadUnix.ml" 51 1992 2034
+type(
+  int
+)
+ident(
+  int_ref len "threadUnix.ml" 49 1908 1939 "threadUnix.ml" 49 1908 1942
+)
+"threadUnix.ml" 51 1992 2009 "threadUnix.ml" 51 1992 2034
+call(
+  stack
+)
+type(
+  int
+)
+"threadUnix.ml" 52 2035 2065 "threadUnix.ml" 52 2035 2071
+type(
+  Unix.error
+)
+"threadUnix.ml" 52 2035 2074 "threadUnix.ml" 52 2035 2085
+type(
+  Unix.error
+)
+"threadUnix.ml" 52 2035 2064 "threadUnix.ml" 52 2035 2086
+type(
+  Unix.error
+)
+"threadUnix.ml" 52 2035 2088 "threadUnix.ml" 52 2035 2089
+type(
+  string
+)
+"threadUnix.ml" 52 2035 2091 "threadUnix.ml" 52 2035 2092
+type(
+  string
+)
+"threadUnix.ml" 52 2035 2053 "threadUnix.ml" 52 2035 2093
+type(
+  exn
+)
+"threadUnix.ml" 53 2097 2117 "threadUnix.ml" 53 2097 2127
+type(
+  Unix.file_descr -> bytes -> int -> int -> float -> int
+)
+ident(
+  int_ref timed_read "threadUnix.ml" 49 1908 1916 "threadUnix.ml" 49 1908 1926
+)
+"threadUnix.ml" 53 2097 2128 "threadUnix.ml" 53 2097 2130
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "threadUnix.ml" 49 1908 1927 "threadUnix.ml" 49 1908 1929
+)
+"threadUnix.ml" 53 2097 2131 "threadUnix.ml" 53 2097 2135
+type(
+  bytes
+)
+ident(
+  int_ref buff "threadUnix.ml" 49 1908 1930 "threadUnix.ml" 49 1908 1934
+)
+"threadUnix.ml" 53 2097 2136 "threadUnix.ml" 53 2097 2139
+type(
+  int
+)
+ident(
+  int_ref ofs "threadUnix.ml" 49 1908 1935 "threadUnix.ml" 49 1908 1938
+)
+"threadUnix.ml" 53 2097 2140 "threadUnix.ml" 53 2097 2143
+type(
+  int
+)
+ident(
+  int_ref len "threadUnix.ml" 49 1908 1939 "threadUnix.ml" 49 1908 1942
+)
+"threadUnix.ml" 53 2097 2144 "threadUnix.ml" 53 2097 2151
+type(
+  float
+)
+ident(
+  int_ref timeout "threadUnix.ml" 49 1908 1943 "threadUnix.ml" 49 1908 1950
+)
+"threadUnix.ml" 53 2097 2117 "threadUnix.ml" 53 2097 2151
+call(
+  tail
+)
+type(
+  int
+)
+"threadUnix.ml" 51 1992 1999 "threadUnix.ml" 54 2152 2162
+type(
+  int
+)
+"threadUnix.ml" 55 2163 2170 "threadUnix.ml" 55 2163 2175
+type(
+  exn -> int
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"threadUnix.ml" 55 2163 2188 "threadUnix.ml" 55 2163 2197
+type(
+  Unix.error
+)
+"threadUnix.ml" 55 2163 2199 "threadUnix.ml" 55 2163 2211
+type(
+  string
+)
+"threadUnix.ml" 55 2163 2213 "threadUnix.ml" 55 2163 2215
+type(
+  string
+)
+"threadUnix.ml" 55 2163 2176 "threadUnix.ml" 55 2163 2217
+type(
+  exn
+)
+"threadUnix.ml" 55 2163 2170 "threadUnix.ml" 55 2163 2217
+type(
+  int
+)
+"threadUnix.ml" 50 1953 1955 "threadUnix.ml" 55 2163 2217
+type(
+  int
+)
+"threadUnix.ml" 57 2219 2227 "threadUnix.ml" 57 2219 2238
+type(
+  Unix.file_descr -> bytes -> int -> int -> float -> int
+)
+ident(
+  def timed_write "threadUnix.ml" 57 2219 2219 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 57 2219 2239 "threadUnix.ml" 57 2219 2241
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "threadUnix.ml" 57 2219 2242 "threadUnix.ml" 63 2478 2533
+)
+"threadUnix.ml" 57 2219 2242 "threadUnix.ml" 57 2219 2246
+type(
+  bytes
+)
+ident(
+  def buff "threadUnix.ml" 57 2219 2247 "threadUnix.ml" 63 2478 2533
+)
+"threadUnix.ml" 57 2219 2247 "threadUnix.ml" 57 2219 2250
+type(
+  int
+)
+ident(
+  def ofs "threadUnix.ml" 57 2219 2251 "threadUnix.ml" 63 2478 2533
+)
+"threadUnix.ml" 57 2219 2251 "threadUnix.ml" 57 2219 2254
+type(
+  int
+)
+ident(
+  def len "threadUnix.ml" 57 2219 2255 "threadUnix.ml" 63 2478 2533
+)
+"threadUnix.ml" 57 2219 2255 "threadUnix.ml" 57 2219 2262
+type(
+  float
+)
+ident(
+  def timeout "threadUnix.ml" 58 2265 2267 "threadUnix.ml" 63 2478 2533
+)
+"threadUnix.ml" 58 2265 2270 "threadUnix.ml" 58 2265 2293
+type(
+  Unix.file_descr -> float -> bool
+)
+ident(
+  ext_ref Thread.wait_timed_write
+)
+"threadUnix.ml" 58 2265 2294 "threadUnix.ml" 58 2265 2296
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "threadUnix.ml" 57 2219 2239 "threadUnix.ml" 57 2219 2241
+)
+"threadUnix.ml" 58 2265 2297 "threadUnix.ml" 58 2265 2304
+type(
+  float
+)
+ident(
+  int_ref timeout "threadUnix.ml" 57 2219 2255 "threadUnix.ml" 57 2219 2262
+)
+"threadUnix.ml" 58 2265 2270 "threadUnix.ml" 58 2265 2304
+call(
+  stack
+)
+type(
+  bool
+)
+"threadUnix.ml" 59 2305 2322 "threadUnix.ml" 59 2305 2332
+type(
+  Unix.file_descr -> bytes -> int -> int -> int
+)
+ident(
+  ext_ref Unix.write
+)
+"threadUnix.ml" 59 2305 2333 "threadUnix.ml" 59 2305 2335
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "threadUnix.ml" 57 2219 2239 "threadUnix.ml" 57 2219 2241
+)
+"threadUnix.ml" 59 2305 2336 "threadUnix.ml" 59 2305 2340
+type(
+  bytes
+)
+ident(
+  int_ref buff "threadUnix.ml" 57 2219 2242 "threadUnix.ml" 57 2219 2246
+)
+"threadUnix.ml" 59 2305 2341 "threadUnix.ml" 59 2305 2344
+type(
+  int
+)
+ident(
+  int_ref ofs "threadUnix.ml" 57 2219 2247 "threadUnix.ml" 57 2219 2250
+)
+"threadUnix.ml" 59 2305 2345 "threadUnix.ml" 59 2305 2348
+type(
+  int
+)
+ident(
+  int_ref len "threadUnix.ml" 57 2219 2251 "threadUnix.ml" 57 2219 2254
+)
+"threadUnix.ml" 59 2305 2322 "threadUnix.ml" 59 2305 2348
+call(
+  stack
+)
+type(
+  int
+)
+"threadUnix.ml" 60 2349 2379 "threadUnix.ml" 60 2349 2385
+type(
+  Unix.error
+)
+"threadUnix.ml" 60 2349 2388 "threadUnix.ml" 60 2349 2399
+type(
+  Unix.error
+)
+"threadUnix.ml" 60 2349 2378 "threadUnix.ml" 60 2349 2400
+type(
+  Unix.error
+)
+"threadUnix.ml" 60 2349 2402 "threadUnix.ml" 60 2349 2403
+type(
+  string
+)
+"threadUnix.ml" 60 2349 2405 "threadUnix.ml" 60 2349 2406
+type(
+  string
+)
+"threadUnix.ml" 60 2349 2367 "threadUnix.ml" 60 2349 2407
+type(
+  exn
+)
+"threadUnix.ml" 61 2411 2431 "threadUnix.ml" 61 2411 2442
+type(
+  Unix.file_descr -> bytes -> int -> int -> float -> int
+)
+ident(
+  int_ref timed_write "threadUnix.ml" 57 2219 2227 "threadUnix.ml" 57 2219 2238
+)
+"threadUnix.ml" 61 2411 2443 "threadUnix.ml" 61 2411 2445
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "threadUnix.ml" 57 2219 2239 "threadUnix.ml" 57 2219 2241
+)
+"threadUnix.ml" 61 2411 2446 "threadUnix.ml" 61 2411 2450
+type(
+  bytes
+)
+ident(
+  int_ref buff "threadUnix.ml" 57 2219 2242 "threadUnix.ml" 57 2219 2246
+)
+"threadUnix.ml" 61 2411 2451 "threadUnix.ml" 61 2411 2454
+type(
+  int
+)
+ident(
+  int_ref ofs "threadUnix.ml" 57 2219 2247 "threadUnix.ml" 57 2219 2250
+)
+"threadUnix.ml" 61 2411 2455 "threadUnix.ml" 61 2411 2458
+type(
+  int
+)
+ident(
+  int_ref len "threadUnix.ml" 57 2219 2251 "threadUnix.ml" 57 2219 2254
+)
+"threadUnix.ml" 61 2411 2459 "threadUnix.ml" 61 2411 2466
+type(
+  float
+)
+ident(
+  int_ref timeout "threadUnix.ml" 57 2219 2255 "threadUnix.ml" 57 2219 2262
+)
+"threadUnix.ml" 61 2411 2431 "threadUnix.ml" 61 2411 2466
+call(
+  tail
+)
+type(
+  int
+)
+"threadUnix.ml" 59 2305 2312 "threadUnix.ml" 62 2467 2477
+type(
+  int
+)
+"threadUnix.ml" 63 2478 2485 "threadUnix.ml" 63 2478 2490
+type(
+  exn -> int
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"threadUnix.ml" 63 2478 2503 "threadUnix.ml" 63 2478 2512
+type(
+  Unix.error
+)
+"threadUnix.ml" 63 2478 2514 "threadUnix.ml" 63 2478 2527
+type(
+  string
+)
+"threadUnix.ml" 63 2478 2529 "threadUnix.ml" 63 2478 2531
+type(
+  string
+)
+"threadUnix.ml" 63 2478 2491 "threadUnix.ml" 63 2478 2533
+type(
+  exn
+)
+"threadUnix.ml" 63 2478 2485 "threadUnix.ml" 63 2478 2533
+type(
+  int
+)
+"threadUnix.ml" 58 2265 2267 "threadUnix.ml" 63 2478 2533
+type(
+  int
+)
+"threadUnix.ml" 65 2535 2539 "threadUnix.ml" 65 2535 2560
+type(
+  Unix.file_descr -> string -> int -> int -> float -> int
+)
+ident(
+  def timed_write_substring "threadUnix.ml" 66 2587 2649 "threadUnix.ml" 1 0 -1
+)
+"threadUnix.ml" 65 2535 2561 "threadUnix.ml" 65 2535 2563
+type(
+  Unix.file_descr
+)
+ident(
+  def fd "threadUnix.ml" 65 2535 2564 "threadUnix.ml" 66 2587 2649
+)
+"threadUnix.ml" 65 2535 2564 "threadUnix.ml" 65 2535 2568
+type(
+  string
+)
+ident(
+  def buff "threadUnix.ml" 65 2535 2569 "threadUnix.ml" 66 2587 2649
+)
+"threadUnix.ml" 65 2535 2569 "threadUnix.ml" 65 2535 2572
+type(
+  int
+)
+ident(
+  def ofs "threadUnix.ml" 65 2535 2573 "threadUnix.ml" 66 2587 2649
+)
+"threadUnix.ml" 65 2535 2573 "threadUnix.ml" 65 2535 2576
+type(
+  int
+)
+ident(
+  def len "threadUnix.ml" 65 2535 2577 "threadUnix.ml" 66 2587 2649
+)
+"threadUnix.ml" 65 2535 2577 "threadUnix.ml" 65 2535 2584
+type(
+  float
+)
+ident(
+  def timeout "threadUnix.ml" 66 2587 2589 "threadUnix.ml" 66 2587 2649
+)
+"threadUnix.ml" 66 2587 2589 "threadUnix.ml" 66 2587 2600
+type(
+  Unix.file_descr -> bytes -> int -> int -> float -> int
+)
+ident(
+  int_ref timed_write "threadUnix.ml" 57 2219 2227 "threadUnix.ml" 57 2219 2238
+)
+"threadUnix.ml" 66 2587 2601 "threadUnix.ml" 66 2587 2603
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "threadUnix.ml" 65 2535 2561 "threadUnix.ml" 65 2535 2563
+)
+"threadUnix.ml" 66 2587 2605 "threadUnix.ml" 66 2587 2627
+type(
+  string -> bytes
+)
+ident(
+  ext_ref Bytes.unsafe_of_string
+)
+"threadUnix.ml" 66 2587 2628 "threadUnix.ml" 66 2587 2632
+type(
+  string
+)
+ident(
+  int_ref buff "threadUnix.ml" 65 2535 2564 "threadUnix.ml" 65 2535 2568
+)
+"threadUnix.ml" 66 2587 2604 "threadUnix.ml" 66 2587 2633
+type(
+  bytes
+)
+"threadUnix.ml" 66 2587 2634 "threadUnix.ml" 66 2587 2637
+type(
+  int
+)
+ident(
+  int_ref ofs "threadUnix.ml" 65 2535 2569 "threadUnix.ml" 65 2535 2572
+)
+"threadUnix.ml" 66 2587 2638 "threadUnix.ml" 66 2587 2641
+type(
+  int
+)
+ident(
+  int_ref len "threadUnix.ml" 65 2535 2573 "threadUnix.ml" 65 2535 2576
+)
+"threadUnix.ml" 66 2587 2642 "threadUnix.ml" 66 2587 2649
+type(
+  float
+)
+ident(
+  int_ref timeout "threadUnix.ml" 65 2535 2577 "threadUnix.ml" 65 2535 2584
+)
+"threadUnix.ml" 66 2587 2589 "threadUnix.ml" 66 2587 2649
+call(
+  tail
+)
+type(
+  int
+)

@@ -1,0 +1,3300 @@
+"odoc_dep.ml" 19 951 955 "odoc_dep.ml" 19 951 966
+type(
+  StrS.t -> StrS.elt list
+)
+ident(
+  def set_to_list "odoc_dep.ml" 24 1036 1036 "odoc_dep.ml" 1 0 -1
+)
+"odoc_dep.ml" 19 951 967 "odoc_dep.ml" 19 951 968
+type(
+  StrS.t
+)
+ident(
+  def s "odoc_dep.ml" 20 971 973 "odoc_dep.ml" 22 1030 1034
+)
+"odoc_dep.ml" 20 971 977 "odoc_dep.ml" 20 971 978
+type(
+  StrS.elt list ref
+)
+ident(
+  def l "odoc_dep.ml" 21 991 993 "odoc_dep.ml" 22 1030 1034
+)
+"odoc_dep.ml" 20 971 981 "odoc_dep.ml" 20 971 984
+type(
+  StrS.elt list -> StrS.elt list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"odoc_dep.ml" 20 971 985 "odoc_dep.ml" 20 971 987
+type(
+  StrS.elt list
+)
+"odoc_dep.ml" 20 971 981 "odoc_dep.ml" 20 971 987
+type(
+  StrS.elt list ref
+)
+"odoc_dep.ml" 21 991 993 "odoc_dep.ml" 21 991 1002
+type(
+  (StrS.elt -> unit) -> StrS.t -> unit
+)
+ident(
+  ext_ref StrS.iter
+)
+"odoc_dep.ml" 21 991 1008 "odoc_dep.ml" 21 991 1009
+type(
+  StrS.elt
+)
+ident(
+  def e "odoc_dep.ml" 21 991 1013 "odoc_dep.ml" 21 991 1025
+)
+"odoc_dep.ml" 21 991 1013 "odoc_dep.ml" 21 991 1014
+type(
+  StrS.elt list ref
+)
+ident(
+  int_ref l "odoc_dep.ml" 20 971 977 "odoc_dep.ml" 20 971 978
+)
+"odoc_dep.ml" 21 991 1015 "odoc_dep.ml" 21 991 1017
+type(
+  StrS.elt list ref -> StrS.elt list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_dep.ml" 21 991 1018 "odoc_dep.ml" 21 991 1019
+type(
+  StrS.elt
+)
+ident(
+  int_ref e "odoc_dep.ml" 21 991 1008 "odoc_dep.ml" 21 991 1009
+)
+"odoc_dep.ml" 21 991 1023 "odoc_dep.ml" 21 991 1024
+type(
+  StrS.elt list ref -> StrS.elt list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_dep.ml" 21 991 1024 "odoc_dep.ml" 21 991 1025
+type(
+  StrS.elt list ref
+)
+ident(
+  int_ref l "odoc_dep.ml" 20 971 977 "odoc_dep.ml" 20 971 978
+)
+"odoc_dep.ml" 21 991 1023 "odoc_dep.ml" 21 991 1025
+type(
+  StrS.elt list
+)
+"odoc_dep.ml" 21 991 1018 "odoc_dep.ml" 21 991 1025
+type(
+  StrS.elt list
+)
+"odoc_dep.ml" 21 991 1013 "odoc_dep.ml" 21 991 1025
+type(
+  unit
+)
+"odoc_dep.ml" 21 991 1003 "odoc_dep.ml" 21 991 1026
+type(
+  StrS.elt -> unit
+)
+"odoc_dep.ml" 21 991 1027 "odoc_dep.ml" 21 991 1028
+type(
+  StrS.t
+)
+ident(
+  int_ref s "odoc_dep.ml" 19 951 967 "odoc_dep.ml" 19 951 968
+)
+"odoc_dep.ml" 21 991 993 "odoc_dep.ml" 21 991 1028
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dep.ml" 22 1030 1032 "odoc_dep.ml" 22 1030 1033
+type(
+  StrS.elt list ref -> StrS.elt list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_dep.ml" 22 1030 1033 "odoc_dep.ml" 22 1030 1034
+type(
+  StrS.elt list ref
+)
+ident(
+  int_ref l "odoc_dep.ml" 20 971 977 "odoc_dep.ml" 20 971 978
+)
+"odoc_dep.ml" 22 1030 1032 "odoc_dep.ml" 22 1030 1034
+type(
+  StrS.elt list
+)
+"odoc_dep.ml" 21 991 993 "odoc_dep.ml" 22 1030 1034
+type(
+  StrS.elt list
+)
+"odoc_dep.ml" 20 971 973 "odoc_dep.ml" 22 1030 1034
+type(
+  StrS.elt list
+)
+"odoc_dep.ml" 24 1036 1040 "odoc_dep.ml" 24 1036 1057
+type(
+  Parsetree.structure -> StrS.elt list
+)
+ident(
+  def impl_dependencies "odoc_dep.ml" 29 1212 1212 "odoc_dep.ml" 1 0 -1
+)
+"odoc_dep.ml" 24 1036 1058 "odoc_dep.ml" 24 1036 1061
+type(
+  Parsetree.structure
+)
+ident(
+  def ast "odoc_dep.ml" 25 1064 1066 "odoc_dep.ml" 27 1168 1210
+)
+"odoc_dep.ml" 25 1064 1066 "odoc_dep.ml" 25 1064 1093
+type(
+  StrS.t ref
+)
+ident(
+  ext_ref Depend.free_structure_names
+)
+"odoc_dep.ml" 25 1064 1094 "odoc_dep.ml" 25 1064 1096
+type(
+  StrS.t ref -> StrS.t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_dep.ml" 25 1064 1097 "odoc_dep.ml" 25 1064 1107
+type(
+  StrS.t
+)
+ident(
+  ext_ref StrS.empty
+)
+"odoc_dep.ml" 25 1064 1066 "odoc_dep.ml" 25 1064 1107
+type(
+  unit
+)
+"odoc_dep.ml" 26 1109 1111 "odoc_dep.ml" 26 1109 1130
+type(
+  StrS.t -> Parsetree.toplevel_phrase list -> unit
+)
+ident(
+  ext_ref Depend.add_use_file
+)
+"odoc_dep.ml" 26 1109 1131 "odoc_dep.ml" 26 1109 1141
+type(
+  StrS.t
+)
+ident(
+  ext_ref StrS.empty
+)
+"odoc_dep.ml" 26 1109 1162 "odoc_dep.ml" 26 1109 1165
+type(
+  Parsetree.structure
+)
+ident(
+  int_ref ast "odoc_dep.ml" 24 1036 1058 "odoc_dep.ml" 24 1036 1061
+)
+"odoc_dep.ml" 26 1109 1143 "odoc_dep.ml" 26 1109 1165
+type(
+  Parsetree.toplevel_phrase
+)
+"odoc_dep.ml" 26 1109 1142 "odoc_dep.ml" 26 1109 1166
+type(
+  Parsetree.toplevel_phrase list
+)
+"odoc_dep.ml" 26 1109 1111 "odoc_dep.ml" 26 1109 1166
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dep.ml" 27 1168 1170 "odoc_dep.ml" 27 1168 1181
+type(
+  StrS.t -> StrS.elt list
+)
+ident(
+  int_ref set_to_list "odoc_dep.ml" 19 951 955 "odoc_dep.ml" 19 951 966
+)
+"odoc_dep.ml" 27 1168 1182 "odoc_dep.ml" 27 1168 1183
+type(
+  StrS.t ref -> StrS.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_dep.ml" 27 1168 1183 "odoc_dep.ml" 27 1168 1210
+type(
+  StrS.t ref
+)
+ident(
+  ext_ref Depend.free_structure_names
+)
+"odoc_dep.ml" 27 1168 1182 "odoc_dep.ml" 27 1168 1210
+type(
+  StrS.t
+)
+"odoc_dep.ml" 27 1168 1170 "odoc_dep.ml" 27 1168 1210
+call(
+  tail
+)
+type(
+  StrS.elt list
+)
+"odoc_dep.ml" 26 1109 1111 "odoc_dep.ml" 27 1168 1210
+type(
+  StrS.elt list
+)
+"odoc_dep.ml" 25 1064 1066 "odoc_dep.ml" 27 1168 1210
+type(
+  StrS.elt list
+)
+"odoc_dep.ml" 29 1212 1216 "odoc_dep.ml" 29 1212 1233
+type(
+  Parsetree.signature -> StrS.elt list
+)
+ident(
+  def intf_dependencies "odoc_dep.ml" 35 1369 1369 "odoc_dep.ml" 1 0 -1
+)
+"odoc_dep.ml" 29 1212 1234 "odoc_dep.ml" 29 1212 1237
+type(
+  Parsetree.signature
+)
+ident(
+  def ast "odoc_dep.ml" 30 1240 1242 "odoc_dep.ml" 32 1324 1366
+)
+"odoc_dep.ml" 30 1240 1242 "odoc_dep.ml" 30 1240 1269
+type(
+  StrS.t ref
+)
+ident(
+  ext_ref Depend.free_structure_names
+)
+"odoc_dep.ml" 30 1240 1270 "odoc_dep.ml" 30 1240 1272
+type(
+  StrS.t ref -> StrS.t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_dep.ml" 30 1240 1273 "odoc_dep.ml" 30 1240 1283
+type(
+  StrS.t
+)
+ident(
+  ext_ref StrS.empty
+)
+"odoc_dep.ml" 30 1240 1242 "odoc_dep.ml" 30 1240 1283
+type(
+  unit
+)
+"odoc_dep.ml" 31 1285 1287 "odoc_dep.ml" 31 1285 1307
+type(
+  StrS.t -> Parsetree.signature -> unit
+)
+ident(
+  ext_ref Depend.add_signature
+)
+"odoc_dep.ml" 31 1285 1308 "odoc_dep.ml" 31 1285 1318
+type(
+  StrS.t
+)
+ident(
+  ext_ref StrS.empty
+)
+"odoc_dep.ml" 31 1285 1319 "odoc_dep.ml" 31 1285 1322
+type(
+  Parsetree.signature
+)
+ident(
+  int_ref ast "odoc_dep.ml" 29 1212 1234 "odoc_dep.ml" 29 1212 1237
+)
+"odoc_dep.ml" 31 1285 1287 "odoc_dep.ml" 31 1285 1322
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dep.ml" 32 1324 1326 "odoc_dep.ml" 32 1324 1337
+type(
+  StrS.t -> StrS.elt list
+)
+ident(
+  int_ref set_to_list "odoc_dep.ml" 19 951 955 "odoc_dep.ml" 19 951 966
+)
+"odoc_dep.ml" 32 1324 1338 "odoc_dep.ml" 32 1324 1339
+type(
+  StrS.t ref -> StrS.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_dep.ml" 32 1324 1339 "odoc_dep.ml" 32 1324 1366
+type(
+  StrS.t ref
+)
+ident(
+  ext_ref Depend.free_structure_names
+)
+"odoc_dep.ml" 32 1324 1338 "odoc_dep.ml" 32 1324 1366
+type(
+  StrS.t
+)
+"odoc_dep.ml" 32 1324 1326 "odoc_dep.ml" 32 1324 1366
+call(
+  tail
+)
+type(
+  StrS.elt list
+)
+"odoc_dep.ml" 31 1285 1287 "odoc_dep.ml" 32 1324 1366
+type(
+  StrS.elt list
+)
+"odoc_dep.ml" 30 1240 1242 "odoc_dep.ml" 32 1324 1366
+type(
+  StrS.elt list
+)
+"odoc_dep.ml" 41 1467 1477 "odoc_dep.ml" 41 1467 1484
+type(
+  t -> t -> int
+)
+ident(
+  def compare "odoc_dep.ml" 41 1467 1506 "odoc_dep.ml" 42 1507 1514
+)
+"odoc_dep.ml" 41 1467 1486 "odoc_dep.ml" 41 1467 1487
+type(
+  t
+)
+ident(
+  def x "odoc_dep.ml" 41 1467 1491 "odoc_dep.ml" 41 1467 1506
+)
+"odoc_dep.ml" 41 1467 1491 "odoc_dep.ml" 41 1467 1492
+type(
+  t
+)
+ident(
+  def y "odoc_dep.ml" 41 1467 1495 "odoc_dep.ml" 41 1467 1506
+)
+"odoc_dep.ml" 41 1467 1495 "odoc_dep.ml" 41 1467 1502
+type(
+  t -> t -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"odoc_dep.ml" 41 1467 1503 "odoc_dep.ml" 41 1467 1504
+type(
+  t
+)
+ident(
+  int_ref x "odoc_dep.ml" 41 1467 1486 "odoc_dep.ml" 41 1467 1487
+)
+"odoc_dep.ml" 41 1467 1505 "odoc_dep.ml" 41 1467 1506
+type(
+  t
+)
+ident(
+  int_ref y "odoc_dep.ml" 41 1467 1491 "odoc_dep.ml" 41 1467 1492
+)
+"odoc_dep.ml" 41 1467 1495 "odoc_dep.ml" 41 1467 1506
+type(
+  int
+)
+"odoc_dep.ml" 39 1413 1428 "odoc_dep.ml" 42 1507 1515
+call(
+  stack
+)
+"odoc_dep.ml" 44 1517 1525 "odoc_dep.ml" 44 1517 1536
+type(
+  S.t -> S.elt list
+)
+ident(
+  def set_to_list "odoc_dep.ml" 49 1615 1619 "odoc_dep.ml" 137 4005 4010
+)
+"odoc_dep.ml" 44 1517 1537 "odoc_dep.ml" 44 1517 1538
+type(
+  S.t
+)
+ident(
+  def s "odoc_dep.ml" 45 1541 1547 "odoc_dep.ml" 47 1605 1613
+)
+"odoc_dep.ml" 45 1541 1551 "odoc_dep.ml" 45 1541 1552
+type(
+  S.elt list ref
+)
+ident(
+  def l "odoc_dep.ml" 46 1565 1571 "odoc_dep.ml" 47 1605 1613
+)
+"odoc_dep.ml" 45 1541 1555 "odoc_dep.ml" 45 1541 1558
+type(
+  S.elt list -> S.elt list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"odoc_dep.ml" 45 1541 1559 "odoc_dep.ml" 45 1541 1561
+type(
+  S.elt list
+)
+"odoc_dep.ml" 45 1541 1555 "odoc_dep.ml" 45 1541 1561
+type(
+  S.elt list ref
+)
+"odoc_dep.ml" 46 1565 1571 "odoc_dep.ml" 46 1565 1577
+type(
+  (S.elt -> unit) -> S.t -> unit
+)
+ident(
+  ext_ref S.iter
+)
+"odoc_dep.ml" 46 1565 1583 "odoc_dep.ml" 46 1565 1584
+type(
+  S.elt
+)
+ident(
+  def e "odoc_dep.ml" 46 1565 1588 "odoc_dep.ml" 46 1565 1600
+)
+"odoc_dep.ml" 46 1565 1588 "odoc_dep.ml" 46 1565 1589
+type(
+  S.elt list ref
+)
+ident(
+  int_ref l "odoc_dep.ml" 45 1541 1551 "odoc_dep.ml" 45 1541 1552
+)
+"odoc_dep.ml" 46 1565 1590 "odoc_dep.ml" 46 1565 1592
+type(
+  S.elt list ref -> S.elt list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_dep.ml" 46 1565 1593 "odoc_dep.ml" 46 1565 1594
+type(
+  S.elt
+)
+ident(
+  int_ref e "odoc_dep.ml" 46 1565 1583 "odoc_dep.ml" 46 1565 1584
+)
+"odoc_dep.ml" 46 1565 1598 "odoc_dep.ml" 46 1565 1599
+type(
+  S.elt list ref -> S.elt list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_dep.ml" 46 1565 1599 "odoc_dep.ml" 46 1565 1600
+type(
+  S.elt list ref
+)
+ident(
+  int_ref l "odoc_dep.ml" 45 1541 1551 "odoc_dep.ml" 45 1541 1552
+)
+"odoc_dep.ml" 46 1565 1598 "odoc_dep.ml" 46 1565 1600
+type(
+  S.elt list
+)
+"odoc_dep.ml" 46 1565 1593 "odoc_dep.ml" 46 1565 1600
+type(
+  S.elt list
+)
+"odoc_dep.ml" 46 1565 1588 "odoc_dep.ml" 46 1565 1600
+type(
+  unit
+)
+"odoc_dep.ml" 46 1565 1578 "odoc_dep.ml" 46 1565 1601
+type(
+  S.elt -> unit
+)
+"odoc_dep.ml" 46 1565 1602 "odoc_dep.ml" 46 1565 1603
+type(
+  S.t
+)
+ident(
+  int_ref s "odoc_dep.ml" 44 1517 1537 "odoc_dep.ml" 44 1517 1538
+)
+"odoc_dep.ml" 46 1565 1571 "odoc_dep.ml" 46 1565 1603
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dep.ml" 47 1605 1611 "odoc_dep.ml" 47 1605 1612
+type(
+  S.elt list ref -> S.elt list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_dep.ml" 47 1605 1612 "odoc_dep.ml" 47 1605 1613
+type(
+  S.elt list ref
+)
+ident(
+  int_ref l "odoc_dep.ml" 45 1541 1551 "odoc_dep.ml" 45 1541 1552
+)
+"odoc_dep.ml" 47 1605 1611 "odoc_dep.ml" 47 1605 1613
+type(
+  S.elt list
+)
+"odoc_dep.ml" 46 1565 1571 "odoc_dep.ml" 47 1605 1613
+type(
+  S.elt list
+)
+"odoc_dep.ml" 45 1541 1547 "odoc_dep.ml" 47 1605 1613
+type(
+  S.elt list
+)
+"odoc_dep.ml" 59 1966 1974 "odoc_dep.ml" 59 1966 1983
+type(
+  id -> id list -> node
+)
+ident(
+  def make_node "odoc_dep.ml" 71 2206 2210 "odoc_dep.ml" 137 4005 4010
+)
+"odoc_dep.ml" 59 1966 1984 "odoc_dep.ml" 59 1966 1985
+type(
+  id
+)
+ident(
+  def s "odoc_dep.ml" 59 1966 1986 "odoc_dep.ml" 69 2197 2204
+)
+"odoc_dep.ml" 59 1966 1986 "odoc_dep.ml" 59 1966 1994
+type(
+  id list
+)
+ident(
+  def children "odoc_dep.ml" 60 1997 2003 "odoc_dep.ml" 69 2197 2204
+)
+"odoc_dep.ml" 60 1997 2007 "odoc_dep.ml" 60 1997 2010
+type(
+  S.t
+)
+ident(
+  def set "odoc_dep.ml" 65 2091 2097 "odoc_dep.ml" 69 2197 2204
+)
+"odoc_dep.ml" 60 1997 2013 "odoc_dep.ml" 60 1997 2028
+type(
+  (S.elt -> S.t -> S.t) -> id list -> S.t -> S.t
+)
+ident(
+  ext_ref List.fold_right
+)
+"odoc_dep.ml" 61 2029 2039 "odoc_dep.ml" 61 2029 2044
+type(
+  S.elt -> S.t -> S.t
+)
+ident(
+  ext_ref S.add
+)
+"odoc_dep.ml" 62 2045 2055 "odoc_dep.ml" 62 2045 2063
+type(
+  id list
+)
+ident(
+  int_ref children "odoc_dep.ml" 59 1966 1986 "odoc_dep.ml" 59 1966 1994
+)
+"odoc_dep.ml" 63 2064 2074 "odoc_dep.ml" 63 2064 2081
+type(
+  S.t
+)
+ident(
+  ext_ref S.empty
+)
+"odoc_dep.ml" 60 1997 2013 "odoc_dep.ml" 63 2064 2081
+call(
+  stack
+)
+type(
+  S.t
+)
+"odoc_dep.ml" 65 2091 2104 "odoc_dep.ml" 65 2091 2105
+type(
+  id
+)
+ident(
+  int_ref s "odoc_dep.ml" 59 1966 1984 "odoc_dep.ml" 59 1966 1985
+)
+"odoc_dep.ml" 66 2107 2122 "odoc_dep.ml" 66 2107 2130
+type(
+  S.elt -> S.t -> S.t
+)
+ident(
+  ext_ref S.remove
+)
+"odoc_dep.ml" 66 2107 2131 "odoc_dep.ml" 66 2107 2132
+type(
+  id
+)
+ident(
+  int_ref s "odoc_dep.ml" 59 1966 1984 "odoc_dep.ml" 59 1966 1985
+)
+"odoc_dep.ml" 66 2107 2133 "odoc_dep.ml" 66 2107 2136
+type(
+  S.t
+)
+ident(
+  int_ref set "odoc_dep.ml" 60 1997 2007 "odoc_dep.ml" 60 1997 2010
+)
+"odoc_dep.ml" 66 2107 2122 "odoc_dep.ml" 66 2107 2136
+call(
+  stack
+)
+type(
+  S.t
+)
+"odoc_dep.ml" 67 2139 2153 "odoc_dep.ml" 67 2139 2155
+type(
+  (id * S.t) list
+)
+"odoc_dep.ml" 68 2158 2175 "odoc_dep.ml" 68 2158 2183
+type(
+  id -> id list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"odoc_dep.ml" 68 2158 2184 "odoc_dep.ml" 68 2158 2185
+type(
+  id
+)
+ident(
+  int_ref s "odoc_dep.ml" 59 1966 1984 "odoc_dep.ml" 59 1966 1985
+)
+"odoc_dep.ml" 68 2158 2186 "odoc_dep.ml" 68 2158 2194
+type(
+  id list
+)
+ident(
+  int_ref children "odoc_dep.ml" 59 1966 1986 "odoc_dep.ml" 59 1966 1994
+)
+"odoc_dep.ml" 68 2158 2175 "odoc_dep.ml" 68 2158 2194
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_dep.ml" 65 2091 2097 "odoc_dep.ml" 69 2197 2204
+type(
+  node
+)
+"odoc_dep.ml" 60 1997 2003 "odoc_dep.ml" 69 2197 2204
+type(
+  node
+)
+"odoc_dep.ml" 71 2206 2214 "odoc_dep.ml" 71 2206 2222
+type(
+  node list -> id -> node
+)
+ident(
+  def get_node "odoc_dep.ml" 76 2327 2331 "odoc_dep.ml" 137 4005 4010
+)
+"odoc_dep.ml" 71 2206 2223 "odoc_dep.ml" 71 2206 2228
+type(
+  node list
+)
+ident(
+  def graph "odoc_dep.ml" 71 2206 2229 "odoc_dep.ml" 74 2303 2325
+)
+"odoc_dep.ml" 71 2206 2229 "odoc_dep.ml" 71 2206 2230
+type(
+  id
+)
+ident(
+  def s "odoc_dep.ml" 72 2233 2239 "odoc_dep.ml" 74 2303 2325
+)
+"odoc_dep.ml" 72 2233 2243 "odoc_dep.ml" 72 2233 2252
+type(
+  (node -> bool) -> node list -> node
+)
+ident(
+  ext_ref List.find
+)
+"odoc_dep.ml" 72 2233 2258 "odoc_dep.ml" 72 2233 2259
+type(
+  node
+)
+ident(
+  def n "odoc_dep.ml" 72 2233 2263 "odoc_dep.ml" 72 2233 2271
+)
+"odoc_dep.ml" 72 2233 2263 "odoc_dep.ml" 72 2233 2264
+type(
+  node
+)
+ident(
+  int_ref n "odoc_dep.ml" 72 2233 2258 "odoc_dep.ml" 72 2233 2259
+)
+"odoc_dep.ml" 72 2233 2263 "odoc_dep.ml" 72 2233 2267
+type(
+  id
+)
+"odoc_dep.ml" 72 2233 2268 "odoc_dep.ml" 72 2233 2269
+type(
+  id -> id -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"odoc_dep.ml" 72 2233 2270 "odoc_dep.ml" 72 2233 2271
+type(
+  id
+)
+ident(
+  int_ref s "odoc_dep.ml" 71 2206 2229 "odoc_dep.ml" 71 2206 2230
+)
+"odoc_dep.ml" 72 2233 2263 "odoc_dep.ml" 72 2233 2271
+type(
+  bool
+)
+"odoc_dep.ml" 72 2233 2253 "odoc_dep.ml" 72 2233 2272
+type(
+  node -> bool
+)
+"odoc_dep.ml" 72 2233 2273 "odoc_dep.ml" 72 2233 2278
+type(
+  node list
+)
+ident(
+  int_ref graph "odoc_dep.ml" 71 2206 2223 "odoc_dep.ml" 71 2206 2228
+)
+"odoc_dep.ml" 72 2233 2243 "odoc_dep.ml" 72 2233 2278
+call(
+  stack
+)
+type(
+  node
+)
+"odoc_dep.ml" 73 2279 2290 "odoc_dep.ml" 73 2279 2299
+type(
+  exn
+)
+"odoc_dep.ml" 74 2303 2311 "odoc_dep.ml" 74 2303 2320
+type(
+  id -> id list -> node
+)
+ident(
+  int_ref make_node "odoc_dep.ml" 59 1966 1974 "odoc_dep.ml" 59 1966 1983
+)
+"odoc_dep.ml" 74 2303 2321 "odoc_dep.ml" 74 2303 2322
+type(
+  id
+)
+ident(
+  int_ref s "odoc_dep.ml" 71 2206 2229 "odoc_dep.ml" 71 2206 2230
+)
+"odoc_dep.ml" 74 2303 2323 "odoc_dep.ml" 74 2303 2325
+type(
+  id list
+)
+"odoc_dep.ml" 74 2303 2311 "odoc_dep.ml" 74 2303 2325
+call(
+  tail
+)
+type(
+  node
+)
+"odoc_dep.ml" 72 2233 2239 "odoc_dep.ml" 74 2303 2325
+type(
+  node
+)
+"odoc_dep.ml" 76 2327 2339 "odoc_dep.ml" 76 2327 2352
+type(
+  node list -> S.t -> node -> S.t
+)
+ident(
+  def trans_closure "odoc_dep.ml" 76 2327 2331 "odoc_dep.ml" 137 4005 4010
+)
+"odoc_dep.ml" 76 2327 2353 "odoc_dep.ml" 76 2327 2358
+type(
+  node list
+)
+ident(
+  def graph "odoc_dep.ml" 76 2327 2359 "odoc_dep.ml" 85 2623 2649
+)
+"odoc_dep.ml" 76 2327 2359 "odoc_dep.ml" 76 2327 2362
+type(
+  S.t
+)
+ident(
+  def acc "odoc_dep.ml" 76 2327 2363 "odoc_dep.ml" 85 2623 2649
+)
+"odoc_dep.ml" 76 2327 2363 "odoc_dep.ml" 76 2327 2364
+type(
+  node
+)
+ident(
+  def n "odoc_dep.ml" 77 2367 2373 "odoc_dep.ml" 85 2623 2649
+)
+"odoc_dep.ml" 77 2367 2376 "odoc_dep.ml" 77 2367 2381
+type(
+  S.elt -> S.t -> bool
+)
+ident(
+  ext_ref S.mem
+)
+"odoc_dep.ml" 77 2367 2382 "odoc_dep.ml" 77 2367 2383
+type(
+  node
+)
+ident(
+  int_ref n "odoc_dep.ml" 76 2327 2363 "odoc_dep.ml" 76 2327 2364
+)
+"odoc_dep.ml" 77 2367 2382 "odoc_dep.ml" 77 2367 2386
+type(
+  id
+)
+"odoc_dep.ml" 77 2367 2387 "odoc_dep.ml" 77 2367 2390
+type(
+  S.t
+)
+ident(
+  int_ref acc "odoc_dep.ml" 76 2327 2359 "odoc_dep.ml" 76 2327 2362
+)
+"odoc_dep.ml" 77 2367 2376 "odoc_dep.ml" 77 2367 2390
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_dep.ml" 78 2396 2404 "odoc_dep.ml" 78 2396 2407
+type(
+  S.t
+)
+ident(
+  int_ref acc "odoc_dep.ml" 76 2327 2359 "odoc_dep.ml" 76 2327 2362
+)
+"odoc_dep.ml" 81 2494 2502 "odoc_dep.ml" 81 2494 2508
+type(
+  (S.elt -> S.t -> S.t) -> S.t -> S.t -> S.t
+)
+ident(
+  ext_ref S.fold
+)
+"odoc_dep.ml" 82 2509 2524 "odoc_dep.ml" 82 2509 2529
+type(
+  S.elt
+)
+ident(
+  def child "odoc_dep.ml" 82 2509 2533 "odoc_dep.ml" 83 2545 2604
+)
+"odoc_dep.ml" 82 2509 2537 "odoc_dep.ml" 82 2509 2541
+type(
+  S.t
+)
+ident(
+  def acc2 "odoc_dep.ml" 83 2545 2557 "odoc_dep.ml" 83 2545 2604
+)
+"odoc_dep.ml" 83 2545 2557 "odoc_dep.ml" 83 2545 2570
+type(
+  node list -> S.t -> node -> S.t
+)
+ident(
+  int_ref trans_closure "odoc_dep.ml" 76 2327 2339 "odoc_dep.ml" 76 2327 2352
+)
+"odoc_dep.ml" 83 2545 2571 "odoc_dep.ml" 83 2545 2576
+type(
+  node list
+)
+ident(
+  int_ref graph "odoc_dep.ml" 76 2327 2353 "odoc_dep.ml" 76 2327 2358
+)
+"odoc_dep.ml" 83 2545 2577 "odoc_dep.ml" 83 2545 2581
+type(
+  S.t
+)
+ident(
+  int_ref acc2 "odoc_dep.ml" 82 2509 2537 "odoc_dep.ml" 82 2509 2541
+)
+"odoc_dep.ml" 83 2545 2583 "odoc_dep.ml" 83 2545 2591
+type(
+  node list -> id -> node
+)
+ident(
+  int_ref get_node "odoc_dep.ml" 71 2206 2214 "odoc_dep.ml" 71 2206 2222
+)
+"odoc_dep.ml" 83 2545 2592 "odoc_dep.ml" 83 2545 2597
+type(
+  node list
+)
+ident(
+  int_ref graph "odoc_dep.ml" 76 2327 2353 "odoc_dep.ml" 76 2327 2358
+)
+"odoc_dep.ml" 83 2545 2598 "odoc_dep.ml" 83 2545 2603
+type(
+  S.elt
+)
+ident(
+  int_ref child "odoc_dep.ml" 82 2509 2524 "odoc_dep.ml" 82 2509 2529
+)
+"odoc_dep.ml" 83 2545 2582 "odoc_dep.ml" 83 2545 2604
+call(
+  stack
+)
+type(
+  node
+)
+"odoc_dep.ml" 83 2545 2557 "odoc_dep.ml" 83 2545 2604
+call(
+  tail
+)
+type(
+  S.t
+)
+"odoc_dep.ml" 82 2509 2533 "odoc_dep.ml" 83 2545 2604
+type(
+  S.t -> S.t
+)
+"odoc_dep.ml" 82 2509 2519 "odoc_dep.ml" 83 2545 2605
+type(
+  S.elt -> S.t -> S.t
+)
+"odoc_dep.ml" 84 2606 2616 "odoc_dep.ml" 84 2606 2617
+type(
+  node
+)
+ident(
+  int_ref n "odoc_dep.ml" 76 2327 2363 "odoc_dep.ml" 76 2327 2364
+)
+"odoc_dep.ml" 84 2606 2616 "odoc_dep.ml" 84 2606 2622
+type(
+  S.t
+)
+"odoc_dep.ml" 85 2623 2634 "odoc_dep.ml" 85 2623 2639
+type(
+  S.elt -> S.t -> S.t
+)
+ident(
+  ext_ref S.add
+)
+"odoc_dep.ml" 85 2623 2640 "odoc_dep.ml" 85 2623 2641
+type(
+  node
+)
+ident(
+  int_ref n "odoc_dep.ml" 76 2327 2363 "odoc_dep.ml" 76 2327 2364
+)
+"odoc_dep.ml" 85 2623 2640 "odoc_dep.ml" 85 2623 2644
+type(
+  id
+)
+"odoc_dep.ml" 85 2623 2645 "odoc_dep.ml" 85 2623 2648
+type(
+  S.t
+)
+ident(
+  int_ref acc "odoc_dep.ml" 76 2327 2359 "odoc_dep.ml" 76 2327 2362
+)
+"odoc_dep.ml" 85 2623 2633 "odoc_dep.ml" 85 2623 2649
+call(
+  stack
+)
+type(
+  S.t
+)
+"odoc_dep.ml" 81 2494 2502 "odoc_dep.ml" 85 2623 2649
+call(
+  tail
+)
+type(
+  S.t
+)
+"odoc_dep.ml" 77 2367 2373 "odoc_dep.ml" 85 2623 2649
+type(
+  S.t
+)
+"odoc_dep.ml" 87 2651 2659 "odoc_dep.ml" 87 2651 2677
+type(
+  node list -> node -> unit
+)
+ident(
+  def node_trans_closure "odoc_dep.ml" 97 2910 2914 "odoc_dep.ml" 137 4005 4010
+)
+"odoc_dep.ml" 87 2651 2678 "odoc_dep.ml" 87 2651 2683
+type(
+  node list
+)
+ident(
+  def graph "odoc_dep.ml" 87 2651 2684 "odoc_dep.ml" 95 2890 2908
+)
+"odoc_dep.ml" 87 2651 2684 "odoc_dep.ml" 87 2651 2685
+type(
+  node
+)
+ident(
+  def n "odoc_dep.ml" 88 2688 2694 "odoc_dep.ml" 95 2890 2908
+)
+"odoc_dep.ml" 88 2688 2698 "odoc_dep.ml" 88 2688 2701
+type(
+  (id * S.t) list
+)
+ident(
+  def far "odoc_dep.ml" 95 2890 2896 "odoc_dep.ml" 95 2890 2908
+)
+"odoc_dep.ml" 88 2688 2704 "odoc_dep.ml" 88 2688 2712
+type(
+  (id -> id * S.t) -> id list -> (id * S.t) list
+)
+ident(
+  ext_ref List.map
+)
+"odoc_dep.ml" 89 2713 2728 "odoc_dep.ml" 89 2713 2733
+type(
+  id
+)
+ident(
+  def child "odoc_dep.ml" 90 2737 2749 "odoc_dep.ml" 91 2813 2837
+)
+"odoc_dep.ml" 90 2737 2753 "odoc_dep.ml" 90 2737 2756
+type(
+  S.t
+)
+ident(
+  def set "odoc_dep.ml" 91 2813 2825 "odoc_dep.ml" 91 2813 2837
+)
+"odoc_dep.ml" 90 2737 2759 "odoc_dep.ml" 90 2737 2772
+type(
+  node list -> S.t -> node -> S.t
+)
+ident(
+  int_ref trans_closure "odoc_dep.ml" 76 2327 2339 "odoc_dep.ml" 76 2327 2352
+)
+"odoc_dep.ml" 90 2737 2773 "odoc_dep.ml" 90 2737 2778
+type(
+  node list
+)
+ident(
+  int_ref graph "odoc_dep.ml" 87 2651 2678 "odoc_dep.ml" 87 2651 2683
+)
+"odoc_dep.ml" 90 2737 2779 "odoc_dep.ml" 90 2737 2786
+type(
+  S.t
+)
+ident(
+  ext_ref S.empty
+)
+"odoc_dep.ml" 90 2737 2788 "odoc_dep.ml" 90 2737 2796
+type(
+  node list -> id -> node
+)
+ident(
+  int_ref get_node "odoc_dep.ml" 71 2206 2214 "odoc_dep.ml" 71 2206 2222
+)
+"odoc_dep.ml" 90 2737 2797 "odoc_dep.ml" 90 2737 2802
+type(
+  node list
+)
+ident(
+  int_ref graph "odoc_dep.ml" 87 2651 2678 "odoc_dep.ml" 87 2651 2683
+)
+"odoc_dep.ml" 90 2737 2803 "odoc_dep.ml" 90 2737 2808
+type(
+  id
+)
+ident(
+  int_ref child "odoc_dep.ml" 89 2713 2728 "odoc_dep.ml" 89 2713 2733
+)
+"odoc_dep.ml" 90 2737 2787 "odoc_dep.ml" 90 2737 2809
+call(
+  stack
+)
+type(
+  node
+)
+"odoc_dep.ml" 90 2737 2759 "odoc_dep.ml" 90 2737 2809
+call(
+  stack
+)
+type(
+  S.t
+)
+"odoc_dep.ml" 91 2813 2826 "odoc_dep.ml" 91 2813 2831
+type(
+  id
+)
+ident(
+  int_ref child "odoc_dep.ml" 89 2713 2728 "odoc_dep.ml" 89 2713 2733
+)
+"odoc_dep.ml" 91 2813 2833 "odoc_dep.ml" 91 2813 2836
+type(
+  S.t
+)
+ident(
+  int_ref set "odoc_dep.ml" 90 2737 2753 "odoc_dep.ml" 90 2737 2756
+)
+"odoc_dep.ml" 91 2813 2825 "odoc_dep.ml" 91 2813 2837
+type(
+  id * S.t
+)
+"odoc_dep.ml" 90 2737 2749 "odoc_dep.ml" 91 2813 2837
+type(
+  id * S.t
+)
+"odoc_dep.ml" 89 2713 2723 "odoc_dep.ml" 92 2838 2849
+type(
+  id -> id * S.t
+)
+"odoc_dep.ml" 93 2850 2861 "odoc_dep.ml" 93 2850 2872
+type(
+  S.t -> id list
+)
+ident(
+  int_ref set_to_list "odoc_dep.ml" 44 1517 1525 "odoc_dep.ml" 44 1517 1536
+)
+"odoc_dep.ml" 93 2850 2873 "odoc_dep.ml" 93 2850 2874
+type(
+  node
+)
+ident(
+  int_ref n "odoc_dep.ml" 87 2651 2684 "odoc_dep.ml" 87 2651 2685
+)
+"odoc_dep.ml" 93 2850 2873 "odoc_dep.ml" 93 2850 2879
+type(
+  S.t
+)
+"odoc_dep.ml" 93 2850 2860 "odoc_dep.ml" 93 2850 2880
+call(
+  stack
+)
+type(
+  id list
+)
+"odoc_dep.ml" 88 2688 2704 "odoc_dep.ml" 93 2850 2880
+call(
+  stack
+)
+type(
+  (id * S.t) list
+)
+"odoc_dep.ml" 95 2890 2896 "odoc_dep.ml" 95 2890 2897
+type(
+  node
+)
+ident(
+  int_ref n "odoc_dep.ml" 87 2651 2684 "odoc_dep.ml" 87 2651 2685
+)
+"odoc_dep.ml" 95 2890 2905 "odoc_dep.ml" 95 2890 2908
+type(
+  (id * S.t) list
+)
+ident(
+  int_ref far "odoc_dep.ml" 88 2688 2698 "odoc_dep.ml" 88 2688 2701
+)
+"odoc_dep.ml" 95 2890 2896 "odoc_dep.ml" 95 2890 2908
+type(
+  unit
+)
+"odoc_dep.ml" 88 2688 2694 "odoc_dep.ml" 95 2890 2908
+type(
+  unit
+)
+"odoc_dep.ml" 97 2910 2918 "odoc_dep.ml" 97 2910 2939
+type(
+  node list -> unit
+)
+ident(
+  def compute_trans_closure "odoc_dep.ml" 100 2998 3002 "odoc_dep.ml" 137 4005 4010
+)
+"odoc_dep.ml" 97 2910 2940 "odoc_dep.ml" 97 2910 2945
+type(
+  node list
+)
+ident(
+  def graph "odoc_dep.ml" 98 2948 2954 "odoc_dep.ml" 98 2948 2996
+)
+"odoc_dep.ml" 98 2948 2954 "odoc_dep.ml" 98 2948 2963
+type(
+  (node -> unit) -> node list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_dep.ml" 98 2948 2965 "odoc_dep.ml" 98 2948 2983
+type(
+  node list -> node -> unit
+)
+ident(
+  int_ref node_trans_closure "odoc_dep.ml" 87 2651 2659 "odoc_dep.ml" 87 2651 2677
+)
+"odoc_dep.ml" 98 2948 2984 "odoc_dep.ml" 98 2948 2989
+type(
+  node list
+)
+ident(
+  int_ref graph "odoc_dep.ml" 97 2910 2940 "odoc_dep.ml" 97 2910 2945
+)
+"odoc_dep.ml" 98 2948 2964 "odoc_dep.ml" 98 2948 2990
+call(
+  stack
+)
+type(
+  node -> unit
+)
+"odoc_dep.ml" 98 2948 2991 "odoc_dep.ml" 98 2948 2996
+type(
+  node list
+)
+ident(
+  int_ref graph "odoc_dep.ml" 97 2910 2940 "odoc_dep.ml" 97 2910 2945
+)
+"odoc_dep.ml" 98 2948 2954 "odoc_dep.ml" 98 2948 2996
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_dep.ml" 100 2998 3006 "odoc_dep.ml" 100 2998 3016
+type(
+  node list -> node -> unit
+)
+ident(
+  def prune_node "odoc_dep.ml" 128 3797 3801 "odoc_dep.ml" 137 4005 4010
+)
+"odoc_dep.ml" 100 2998 3017 "odoc_dep.ml" 100 2998 3022
+type(
+  node list
+)
+ident(
+  def graph "odoc_dep.ml" 100 2998 3023 "odoc_dep.ml" 126 3785 3795
+)
+"odoc_dep.ml" 100 2998 3023 "odoc_dep.ml" 100 2998 3027
+type(
+  node
+)
+ident(
+  def node "odoc_dep.ml" 101 3030 3036 "odoc_dep.ml" 126 3785 3795
+)
+"odoc_dep.ml" 101 3030 3036 "odoc_dep.ml" 101 3030 3042
+type(
+  (S.elt -> unit) -> S.t -> unit
+)
+ident(
+  ext_ref S.iter
+)
+"odoc_dep.ml" 102 3043 3056 "odoc_dep.ml" 102 3043 3061
+type(
+  S.elt
+)
+ident(
+  def child "odoc_dep.ml" 103 3065 3075 "odoc_dep.ml" 120 3659 3673
+)
+"odoc_dep.ml" 103 3065 3079 "odoc_dep.ml" 103 3065 3093
+type(
+  S.t
+)
+ident(
+  def set_reachables "odoc_dep.ml" 113 3354 3364 "odoc_dep.ml" 120 3659 3673
+)
+"odoc_dep.ml" 103 3065 3096 "odoc_dep.ml" 103 3065 3110
+type(
+  (S.t -> S.elt * S.t -> S.t) -> S.t -> (S.elt * S.t) list -> S.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_dep.ml" 104 3111 3130 "odoc_dep.ml" 104 3111 3133
+type(
+  S.t
+)
+ident(
+  def acc "odoc_dep.ml" 104 3111 3137 "odoc_dep.ml" 108 3239 3279
+)
+"odoc_dep.ml" 104 3111 3142 "odoc_dep.ml" 104 3111 3144
+type(
+  S.elt
+)
+ident(
+  def ch "odoc_dep.ml" 105 3161 3177 "odoc_dep.ml" 108 3239 3279
+)
+"odoc_dep.ml" 104 3111 3146 "odoc_dep.ml" 104 3111 3156
+type(
+  S.t
+)
+ident(
+  def reachables "odoc_dep.ml" 105 3161 3177 "odoc_dep.ml" 108 3239 3279
+)
+"odoc_dep.ml" 104 3111 3141 "odoc_dep.ml" 104 3111 3157
+type(
+  S.elt * S.t
+)
+"odoc_dep.ml" 105 3161 3180 "odoc_dep.ml" 105 3161 3185
+type(
+  S.elt
+)
+ident(
+  int_ref child "odoc_dep.ml" 102 3043 3056 "odoc_dep.ml" 102 3043 3061
+)
+"odoc_dep.ml" 105 3161 3186 "odoc_dep.ml" 105 3161 3187
+type(
+  S.elt -> S.elt -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"odoc_dep.ml" 105 3161 3188 "odoc_dep.ml" 105 3161 3190
+type(
+  S.elt
+)
+ident(
+  int_ref ch "odoc_dep.ml" 104 3111 3142 "odoc_dep.ml" 104 3111 3144
+)
+"odoc_dep.ml" 105 3161 3180 "odoc_dep.ml" 105 3161 3190
+type(
+  bool
+)
+"odoc_dep.ml" 106 3196 3214 "odoc_dep.ml" 106 3196 3217
+type(
+  S.t
+)
+ident(
+  int_ref acc "odoc_dep.ml" 104 3111 3130 "odoc_dep.ml" 104 3111 3133
+)
+"odoc_dep.ml" 108 3239 3257 "odoc_dep.ml" 108 3239 3264
+type(
+  S.t -> S.t -> S.t
+)
+ident(
+  ext_ref S.union
+)
+"odoc_dep.ml" 108 3239 3265 "odoc_dep.ml" 108 3239 3268
+type(
+  S.t
+)
+ident(
+  int_ref acc "odoc_dep.ml" 104 3111 3130 "odoc_dep.ml" 104 3111 3133
+)
+"odoc_dep.ml" 108 3239 3269 "odoc_dep.ml" 108 3239 3279
+type(
+  S.t
+)
+ident(
+  int_ref reachables "odoc_dep.ml" 104 3111 3146 "odoc_dep.ml" 104 3111 3156
+)
+"odoc_dep.ml" 108 3239 3257 "odoc_dep.ml" 108 3239 3279
+call(
+  tail
+)
+type(
+  S.t
+)
+"odoc_dep.ml" 105 3161 3177 "odoc_dep.ml" 108 3239 3279
+type(
+  S.t
+)
+"odoc_dep.ml" 104 3111 3137 "odoc_dep.ml" 108 3239 3279
+type(
+  S.elt * S.t -> S.t
+)
+"odoc_dep.ml" 104 3111 3125 "odoc_dep.ml" 109 3280 3295
+type(
+  S.t -> S.elt * S.t -> S.t
+)
+"odoc_dep.ml" 110 3296 3310 "odoc_dep.ml" 110 3296 3317
+type(
+  S.t
+)
+ident(
+  ext_ref S.empty
+)
+"odoc_dep.ml" 111 3318 3332 "odoc_dep.ml" 111 3318 3336
+type(
+  node
+)
+ident(
+  int_ref node "odoc_dep.ml" 100 2998 3023 "odoc_dep.ml" 100 2998 3027
+)
+"odoc_dep.ml" 111 3318 3332 "odoc_dep.ml" 111 3318 3340
+type(
+  (S.elt * S.t) list
+)
+"odoc_dep.ml" 103 3065 3096 "odoc_dep.ml" 111 3318 3340
+call(
+  stack
+)
+type(
+  S.t
+)
+"odoc_dep.ml" 113 3354 3368 "odoc_dep.ml" 113 3354 3371
+type(
+  S.t
+)
+ident(
+  def set "odoc_dep.ml" 114 3409 3419 "odoc_dep.ml" 120 3659 3673
+)
+"odoc_dep.ml" 113 3354 3374 "odoc_dep.ml" 113 3354 3382
+type(
+  S.elt -> S.t -> S.t
+)
+ident(
+  ext_ref S.remove
+)
+"odoc_dep.ml" 113 3354 3383 "odoc_dep.ml" 113 3354 3387
+type(
+  node
+)
+ident(
+  int_ref node "odoc_dep.ml" 100 2998 3023 "odoc_dep.ml" 100 2998 3027
+)
+"odoc_dep.ml" 113 3354 3383 "odoc_dep.ml" 113 3354 3390
+type(
+  id
+)
+"odoc_dep.ml" 113 3354 3391 "odoc_dep.ml" 113 3354 3405
+type(
+  S.t
+)
+ident(
+  int_ref set_reachables "odoc_dep.ml" 103 3065 3079 "odoc_dep.ml" 103 3065 3093
+)
+"odoc_dep.ml" 113 3354 3374 "odoc_dep.ml" 113 3354 3405
+call(
+  stack
+)
+type(
+  S.t
+)
+"odoc_dep.ml" 114 3409 3422 "odoc_dep.ml" 114 3409 3430
+type(
+  (S.elt -> bool) -> S.t -> bool
+)
+ident(
+  ext_ref S.exists
+)
+"odoc_dep.ml" 114 3409 3436 "odoc_dep.ml" 114 3409 3438
+type(
+  S.elt
+)
+ident(
+  def n2 "odoc_dep.ml" 114 3409 3442 "odoc_dep.ml" 114 3409 3478
+)
+"odoc_dep.ml" 114 3409 3442 "odoc_dep.ml" 114 3409 3447
+type(
+  S.elt -> S.t -> bool
+)
+ident(
+  ext_ref S.mem
+)
+"odoc_dep.ml" 114 3409 3448 "odoc_dep.ml" 114 3409 3453
+type(
+  S.elt
+)
+ident(
+  int_ref child "odoc_dep.ml" 102 3043 3056 "odoc_dep.ml" 102 3043 3061
+)
+"odoc_dep.ml" 114 3409 3455 "odoc_dep.ml" 114 3409 3463
+type(
+  node list -> id -> node
+)
+ident(
+  int_ref get_node "odoc_dep.ml" 71 2206 2214 "odoc_dep.ml" 71 2206 2222
+)
+"odoc_dep.ml" 114 3409 3464 "odoc_dep.ml" 114 3409 3469
+type(
+  node list
+)
+ident(
+  int_ref graph "odoc_dep.ml" 100 2998 3017 "odoc_dep.ml" 100 2998 3022
+)
+"odoc_dep.ml" 114 3409 3470 "odoc_dep.ml" 114 3409 3472
+type(
+  S.elt
+)
+ident(
+  int_ref n2 "odoc_dep.ml" 114 3409 3436 "odoc_dep.ml" 114 3409 3438
+)
+"odoc_dep.ml" 114 3409 3454 "odoc_dep.ml" 114 3409 3473
+call(
+  stack
+)
+type(
+  node
+)
+"odoc_dep.ml" 114 3409 3454 "odoc_dep.ml" 114 3409 3478
+type(
+  S.t
+)
+"odoc_dep.ml" 114 3409 3442 "odoc_dep.ml" 114 3409 3478
+call(
+  tail
+)
+type(
+  bool
+)
+"odoc_dep.ml" 114 3409 3431 "odoc_dep.ml" 114 3409 3479
+type(
+  S.elt -> bool
+)
+"odoc_dep.ml" 114 3409 3480 "odoc_dep.ml" 114 3409 3483
+type(
+  S.t
+)
+ident(
+  int_ref set "odoc_dep.ml" 113 3354 3368 "odoc_dep.ml" 113 3354 3371
+)
+"odoc_dep.ml" 114 3409 3422 "odoc_dep.ml" 114 3409 3483
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_dep.ml" 116 3503 3516 "odoc_dep.ml" 116 3503 3520
+type(
+  node
+)
+ident(
+  int_ref node "odoc_dep.ml" 100 2998 3023 "odoc_dep.ml" 100 2998 3027
+)
+"odoc_dep.ml" 116 3503 3529 "odoc_dep.ml" 116 3503 3537
+type(
+  S.elt -> S.t -> S.t
+)
+ident(
+  ext_ref S.remove
+)
+"odoc_dep.ml" 116 3503 3538 "odoc_dep.ml" 116 3503 3543
+type(
+  S.elt
+)
+ident(
+  int_ref child "odoc_dep.ml" 102 3043 3056 "odoc_dep.ml" 102 3043 3061
+)
+"odoc_dep.ml" 116 3503 3544 "odoc_dep.ml" 116 3503 3548
+type(
+  node
+)
+ident(
+  int_ref node "odoc_dep.ml" 100 2998 3023 "odoc_dep.ml" 100 2998 3027
+)
+"odoc_dep.ml" 116 3503 3544 "odoc_dep.ml" 116 3503 3553
+type(
+  S.t
+)
+"odoc_dep.ml" 116 3503 3529 "odoc_dep.ml" 116 3503 3553
+call(
+  stack
+)
+type(
+  S.t
+)
+"odoc_dep.ml" 116 3503 3516 "odoc_dep.ml" 116 3503 3553
+type(
+  unit
+)
+"odoc_dep.ml" 117 3556 3569 "odoc_dep.ml" 117 3556 3573
+type(
+  node
+)
+ident(
+  int_ref node "odoc_dep.ml" 100 2998 3023 "odoc_dep.ml" 100 2998 3027
+)
+"odoc_dep.ml" 117 3556 3581 "odoc_dep.ml" 117 3556 3592
+type(
+  (id * S.t -> bool) -> (id * S.t) list -> (id * S.t) list
+)
+ident(
+  ext_ref List.filter
+)
+"odoc_dep.ml" 117 3556 3599 "odoc_dep.ml" 117 3556 3601
+type(
+  S.elt
+)
+ident(
+  def ch "odoc_dep.ml" 117 3556 3608 "odoc_dep.ml" 117 3556 3619
+)
+"odoc_dep.ml" 117 3556 3602 "odoc_dep.ml" 117 3556 3603
+type(
+  S.t
+)
+"odoc_dep.ml" 117 3556 3598 "odoc_dep.ml" 117 3556 3604
+type(
+  id * S.t
+)
+"odoc_dep.ml" 117 3556 3608 "odoc_dep.ml" 117 3556 3610
+type(
+  S.elt
+)
+ident(
+  int_ref ch "odoc_dep.ml" 117 3556 3599 "odoc_dep.ml" 117 3556 3601
+)
+"odoc_dep.ml" 117 3556 3611 "odoc_dep.ml" 117 3556 3613
+type(
+  S.elt -> S.elt -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"odoc_dep.ml" 117 3556 3614 "odoc_dep.ml" 117 3556 3619
+type(
+  S.elt
+)
+ident(
+  int_ref child "odoc_dep.ml" 102 3043 3056 "odoc_dep.ml" 102 3043 3061
+)
+"odoc_dep.ml" 117 3556 3608 "odoc_dep.ml" 117 3556 3619
+type(
+  bool
+)
+"odoc_dep.ml" 117 3556 3593 "odoc_dep.ml" 117 3556 3620
+type(
+  id * S.t -> bool
+)
+"odoc_dep.ml" 117 3556 3621 "odoc_dep.ml" 117 3556 3625
+type(
+  node
+)
+ident(
+  int_ref node "odoc_dep.ml" 100 2998 3023 "odoc_dep.ml" 100 2998 3027
+)
+"odoc_dep.ml" 117 3556 3621 "odoc_dep.ml" 117 3556 3629
+type(
+  (id * S.t) list
+)
+"odoc_dep.ml" 117 3556 3581 "odoc_dep.ml" 117 3556 3629
+call(
+  stack
+)
+type(
+  (id * S.t) list
+)
+"odoc_dep.ml" 117 3556 3569 "odoc_dep.ml" 117 3556 3629
+type(
+  unit
+)
+"odoc_dep.ml" 115 3489 3501 "odoc_dep.ml" 118 3630 3643
+type(
+  unit
+)
+"odoc_dep.ml" 120 3659 3671 "odoc_dep.ml" 120 3659 3673
+type(
+  unit
+)
+"odoc_dep.ml" 114 3409 3419 "odoc_dep.ml" 120 3659 3673
+type(
+  unit
+)
+"odoc_dep.ml" 113 3354 3364 "odoc_dep.ml" 120 3659 3673
+type(
+  unit
+)
+"odoc_dep.ml" 103 3065 3075 "odoc_dep.ml" 120 3659 3673
+type(
+  unit
+)
+"odoc_dep.ml" 102 3043 3051 "odoc_dep.ml" 121 3674 3683
+type(
+  S.elt -> unit
+)
+"odoc_dep.ml" 122 3684 3692 "odoc_dep.ml" 122 3684 3696
+type(
+  node
+)
+ident(
+  int_ref node "odoc_dep.ml" 100 2998 3023 "odoc_dep.ml" 100 2998 3027
+)
+"odoc_dep.ml" 122 3684 3692 "odoc_dep.ml" 122 3684 3701
+type(
+  S.t
+)
+"odoc_dep.ml" 101 3030 3036 "odoc_dep.ml" 122 3684 3701
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dep.ml" 123 3703 3712 "odoc_dep.ml" 123 3703 3716
+type(
+  node
+)
+ident(
+  int_ref node "odoc_dep.ml" 100 2998 3023 "odoc_dep.ml" 100 2998 3027
+)
+"odoc_dep.ml" 123 3703 3712 "odoc_dep.ml" 123 3703 3723
+type(
+  bool
+)
+"odoc_dep.ml" 124 3729 3737 "odoc_dep.ml" 124 3729 3741
+type(
+  node
+)
+ident(
+  int_ref node "odoc_dep.ml" 100 2998 3023 "odoc_dep.ml" 100 2998 3027
+)
+"odoc_dep.ml" 124 3729 3750 "odoc_dep.ml" 124 3729 3755
+type(
+  S.elt -> S.t -> S.t
+)
+ident(
+  ext_ref S.add
+)
+"odoc_dep.ml" 124 3729 3756 "odoc_dep.ml" 124 3729 3760
+type(
+  node
+)
+ident(
+  int_ref node "odoc_dep.ml" 100 2998 3023 "odoc_dep.ml" 100 2998 3027
+)
+"odoc_dep.ml" 124 3729 3756 "odoc_dep.ml" 124 3729 3763
+type(
+  id
+)
+"odoc_dep.ml" 124 3729 3764 "odoc_dep.ml" 124 3729 3768
+type(
+  node
+)
+ident(
+  int_ref node "odoc_dep.ml" 100 2998 3023 "odoc_dep.ml" 100 2998 3027
+)
+"odoc_dep.ml" 124 3729 3764 "odoc_dep.ml" 124 3729 3773
+type(
+  S.t
+)
+"odoc_dep.ml" 124 3729 3750 "odoc_dep.ml" 124 3729 3773
+call(
+  stack
+)
+type(
+  S.t
+)
+"odoc_dep.ml" 124 3729 3737 "odoc_dep.ml" 124 3729 3773
+type(
+  unit
+)
+"odoc_dep.ml" 126 3785 3793 "odoc_dep.ml" 126 3785 3795
+type(
+  unit
+)
+"odoc_dep.ml" 123 3703 3709 "odoc_dep.ml" 126 3785 3795
+type(
+  unit
+)
+"odoc_dep.ml" 101 3030 3036 "odoc_dep.ml" 126 3785 3795
+type(
+  unit
+)
+"odoc_dep.ml" 128 3797 3805 "odoc_dep.ml" 128 3797 3811
+type(
+  node list -> node list
+)
+ident(
+  def kernel "odoc_dep.ml" 135 3992 4003 "odoc_dep.ml" 137 4005 4010
+)
+"odoc_dep.ml" 128 3797 3812 "odoc_dep.ml" 128 3797 3817
+type(
+  node list
+)
+ident(
+  def graph "odoc_dep.ml" 130 3859 3865 "odoc_dep.ml" 135 3992 4003
+)
+"odoc_dep.ml" 130 3859 3865 "odoc_dep.ml" 130 3859 3886
+type(
+  node list -> unit
+)
+ident(
+  int_ref compute_trans_closure "odoc_dep.ml" 97 2910 2918 "odoc_dep.ml" 97 2910 2939
+)
+"odoc_dep.ml" 130 3859 3887 "odoc_dep.ml" 130 3859 3892
+type(
+  node list
+)
+ident(
+  int_ref graph "odoc_dep.ml" 128 3797 3812 "odoc_dep.ml" 128 3797 3817
+)
+"odoc_dep.ml" 130 3859 3865 "odoc_dep.ml" 130 3859 3892
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dep.ml" 133 3949 3955 "odoc_dep.ml" 133 3949 3964
+type(
+  (node -> unit) -> node list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_dep.ml" 133 3949 3966 "odoc_dep.ml" 133 3949 3976
+type(
+  node list -> node -> unit
+)
+ident(
+  int_ref prune_node "odoc_dep.ml" 100 2998 3006 "odoc_dep.ml" 100 2998 3016
+)
+"odoc_dep.ml" 133 3949 3977 "odoc_dep.ml" 133 3949 3982
+type(
+  node list
+)
+ident(
+  int_ref graph "odoc_dep.ml" 128 3797 3812 "odoc_dep.ml" 128 3797 3817
+)
+"odoc_dep.ml" 133 3949 3965 "odoc_dep.ml" 133 3949 3983
+call(
+  stack
+)
+type(
+  node -> unit
+)
+"odoc_dep.ml" 133 3949 3984 "odoc_dep.ml" 133 3949 3989
+type(
+  node list
+)
+ident(
+  int_ref graph "odoc_dep.ml" 128 3797 3812 "odoc_dep.ml" 128 3797 3817
+)
+"odoc_dep.ml" 133 3949 3955 "odoc_dep.ml" 133 3949 3989
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dep.ml" 135 3992 3998 "odoc_dep.ml" 135 3992 4003
+type(
+  node list
+)
+ident(
+  int_ref graph "odoc_dep.ml" 128 3797 3812 "odoc_dep.ml" 128 3797 3817
+)
+"odoc_dep.ml" 133 3949 3955 "odoc_dep.ml" 135 3992 4003
+type(
+  node list
+)
+"odoc_dep.ml" 130 3859 3865 "odoc_dep.ml" 135 3992 4003
+type(
+  node list
+)
+"odoc_dep.ml" 141 4099 4103 "odoc_dep.ml" 141 4099 4112
+type(
+  Odoc_type.t_type -> string list
+)
+ident(
+  def type_deps "odoc_dep.ml" 191 5369 5369 "odoc_dep.ml" 1 0 -1
+)
+"odoc_dep.ml" 141 4099 4113 "odoc_dep.ml" 141 4099 4114
+type(
+  Odoc_type.t_type
+)
+ident(
+  def t "odoc_dep.ml" 142 4117 4119 "odoc_dep.ml" 187 5254 5258
+)
+"odoc_dep.ml" 143 4147 4153 "odoc_dep.ml" 143 4147 4154
+type(
+  string list ref
+)
+ident(
+  def l "odoc_dep.ml" 144 4167 4169 "odoc_dep.ml" 187 5254 5258
+)
+"odoc_dep.ml" 143 4147 4157 "odoc_dep.ml" 143 4147 4160
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"odoc_dep.ml" 143 4147 4161 "odoc_dep.ml" 143 4147 4163
+type(
+  string list
+)
+"odoc_dep.ml" 143 4147 4157 "odoc_dep.ml" 143 4147 4163
+type(
+  string list ref
+)
+"odoc_dep.ml" 144 4167 4173 "odoc_dep.ml" 144 4167 4175
+type(
+  Str.regexp
+)
+ident(
+  def re "odoc_dep.ml" 145 4255 4257 "odoc_dep.ml" 187 5254 5258
+)
+"odoc_dep.ml" 144 4167 4178 "odoc_dep.ml" 144 4167 4188
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"odoc_dep.ml" 144 4167 4189 "odoc_dep.ml" 144 4167 4251
+type(
+  string
+)
+"odoc_dep.ml" 144 4167 4178 "odoc_dep.ml" 144 4167 4251
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"odoc_dep.ml" 145 4255 4261 "odoc_dep.ml" 145 4255 4262
+type(
+  string -> string
+)
+ident(
+  def f "odoc_dep.ml" 150 4336 4338 "odoc_dep.ml" 187 5254 5258
+)
+"odoc_dep.ml" 145 4255 4263 "odoc_dep.ml" 145 4255 4264
+type(
+  string
+)
+ident(
+  def s "odoc_dep.ml" 146 4267 4271 "odoc_dep.ml" 148 4324 4330
+)
+"odoc_dep.ml" 146 4267 4275 "odoc_dep.ml" 146 4267 4277
+type(
+  string
+)
+ident(
+  def s2 "odoc_dep.ml" 147 4304 4308 "odoc_dep.ml" 148 4324 4330
+)
+"odoc_dep.ml" 146 4267 4280 "odoc_dep.ml" 146 4267 4298
+type(
+  string -> string
+)
+ident(
+  ext_ref Str.matched_string
+)
+"odoc_dep.ml" 146 4267 4299 "odoc_dep.ml" 146 4267 4300
+type(
+  string
+)
+ident(
+  int_ref s "odoc_dep.ml" 145 4255 4263 "odoc_dep.ml" 145 4255 4264
+)
+"odoc_dep.ml" 146 4267 4280 "odoc_dep.ml" 146 4267 4300
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_dep.ml" 147 4304 4308 "odoc_dep.ml" 147 4304 4309
+type(
+  string list ref
+)
+ident(
+  int_ref l "odoc_dep.ml" 143 4147 4153 "odoc_dep.ml" 143 4147 4154
+)
+"odoc_dep.ml" 147 4304 4310 "odoc_dep.ml" 147 4304 4312
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_dep.ml" 147 4304 4313 "odoc_dep.ml" 147 4304 4315
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_dep.ml" 146 4267 4275 "odoc_dep.ml" 146 4267 4277
+)
+"odoc_dep.ml" 147 4304 4319 "odoc_dep.ml" 147 4304 4320
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_dep.ml" 147 4304 4320 "odoc_dep.ml" 147 4304 4321
+type(
+  string list ref
+)
+ident(
+  int_ref l "odoc_dep.ml" 143 4147 4153 "odoc_dep.ml" 143 4147 4154
+)
+"odoc_dep.ml" 147 4304 4319 "odoc_dep.ml" 147 4304 4321
+type(
+  string list
+)
+"odoc_dep.ml" 147 4304 4313 "odoc_dep.ml" 147 4304 4321
+type(
+  string list
+)
+"odoc_dep.ml" 147 4304 4308 "odoc_dep.ml" 147 4304 4321
+type(
+  unit
+)
+"odoc_dep.ml" 148 4324 4328 "odoc_dep.ml" 148 4324 4330
+type(
+  string
+)
+ident(
+  int_ref s2 "odoc_dep.ml" 146 4267 4275 "odoc_dep.ml" 146 4267 4277
+)
+"odoc_dep.ml" 147 4304 4308 "odoc_dep.ml" 148 4324 4330
+type(
+  string
+)
+"odoc_dep.ml" 146 4267 4271 "odoc_dep.ml" 148 4324 4330
+type(
+  string
+)
+"odoc_dep.ml" 150 4336 4345 "odoc_dep.ml" 150 4336 4346
+type(
+  Odoc_type.t_type
+)
+ident(
+  int_ref t "odoc_dep.ml" 141 4099 4113 "odoc_dep.ml" 141 4099 4114
+)
+"odoc_dep.ml" 150 4336 4345 "odoc_dep.ml" 150 4336 4356
+type(
+  T.type_kind
+)
+"odoc_dep.ml" 151 4362 4366 "odoc_dep.ml" 151 4362 4381
+type(
+  T.type_kind
+)
+"odoc_dep.ml" 151 4362 4385 "odoc_dep.ml" 151 4362 4387
+type(
+  unit
+)
+"odoc_dep.ml" 152 4388 4407 "odoc_dep.ml" 152 4388 4409
+type(
+  T.variant_constructor list
+)
+ident(
+  def cl "odoc_dep.ml" 153 4413 4419 "odoc_dep.ml" 162 4647 4657
+)
+"odoc_dep.ml" 152 4388 4392 "odoc_dep.ml" 152 4388 4409
+type(
+  T.type_kind
+)
+"odoc_dep.ml" 153 4413 4419 "odoc_dep.ml" 153 4413 4428
+type(
+  (T.variant_constructor -> unit) -> T.variant_constructor list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_dep.ml" 154 4429 4442 "odoc_dep.ml" 154 4429 4443
+type(
+  T.variant_constructor
+)
+ident(
+  def c "odoc_dep.ml" 155 4447 4457 "odoc_dep.ml" 160 4613 4636
+)
+"odoc_dep.ml" 155 4447 4457 "odoc_dep.ml" 155 4447 4466
+type(
+  (Types.type_expr -> unit) -> Types.type_expr list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_dep.ml" 156 4467 4484 "odoc_dep.ml" 156 4467 4485
+type(
+  Types.type_expr
+)
+ident(
+  def e "odoc_dep.ml" 157 4489 4503 "odoc_dep.ml" 158 4547 4598
+)
+"odoc_dep.ml" 157 4489 4507 "odoc_dep.ml" 157 4489 4508
+type(
+  string
+)
+ident(
+  def s "odoc_dep.ml" 158 4547 4561 "odoc_dep.ml" 158 4547 4598
+)
+"odoc_dep.ml" 157 4489 4511 "odoc_dep.ml" 157 4489 4541
+type(
+  Types.type_expr -> string
+)
+ident(
+  ext_ref Odoc_print.string_of_type_expr
+)
+"odoc_dep.ml" 157 4489 4542 "odoc_dep.ml" 157 4489 4543
+type(
+  Types.type_expr
+)
+ident(
+  int_ref e "odoc_dep.ml" 156 4467 4484 "odoc_dep.ml" 156 4467 4485
+)
+"odoc_dep.ml" 157 4489 4511 "odoc_dep.ml" 157 4489 4543
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_dep.ml" 158 4547 4561 "odoc_dep.ml" 158 4547 4567
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"odoc_dep.ml" 158 4547 4569 "odoc_dep.ml" 158 4547 4590
+type(
+  Str.regexp -> (string -> string) -> string -> string
+)
+ident(
+  ext_ref Str.global_substitute
+)
+"odoc_dep.ml" 158 4547 4591 "odoc_dep.ml" 158 4547 4593
+type(
+  Str.regexp
+)
+ident(
+  int_ref re "odoc_dep.ml" 144 4167 4173 "odoc_dep.ml" 144 4167 4175
+)
+"odoc_dep.ml" 158 4547 4594 "odoc_dep.ml" 158 4547 4595
+type(
+  string -> string
+)
+ident(
+  int_ref f "odoc_dep.ml" 145 4255 4261 "odoc_dep.ml" 145 4255 4262
+)
+"odoc_dep.ml" 158 4547 4596 "odoc_dep.ml" 158 4547 4597
+type(
+  string
+)
+ident(
+  int_ref s "odoc_dep.ml" 157 4489 4507 "odoc_dep.ml" 157 4489 4508
+)
+"odoc_dep.ml" 158 4547 4568 "odoc_dep.ml" 158 4547 4598
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_dep.ml" 158 4547 4561 "odoc_dep.ml" 158 4547 4598
+type(
+  unit
+)
+"odoc_dep.ml" 157 4489 4503 "odoc_dep.ml" 158 4547 4598
+type(
+  unit
+)
+"odoc_dep.ml" 156 4467 4479 "odoc_dep.ml" 159 4599 4612
+type(
+  Types.type_expr -> unit
+)
+"odoc_dep.ml" 160 4613 4625 "odoc_dep.ml" 160 4613 4626
+type(
+  T.variant_constructor
+)
+ident(
+  int_ref c "odoc_dep.ml" 154 4429 4442 "odoc_dep.ml" 154 4429 4443
+)
+"odoc_dep.ml" 160 4613 4625 "odoc_dep.ml" 160 4613 4636
+type(
+  Types.type_expr list
+)
+"odoc_dep.ml" 155 4447 4457 "odoc_dep.ml" 160 4613 4636
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_dep.ml" 154 4429 4437 "odoc_dep.ml" 161 4637 4646
+type(
+  T.variant_constructor -> unit
+)
+"odoc_dep.ml" 162 4647 4655 "odoc_dep.ml" 162 4647 4657
+type(
+  T.variant_constructor list
+)
+ident(
+  int_ref cl "odoc_dep.ml" 152 4388 4407 "odoc_dep.ml" 152 4388 4409
+)
+"odoc_dep.ml" 153 4413 4419 "odoc_dep.ml" 162 4647 4657
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dep.ml" 163 4658 4676 "odoc_dep.ml" 163 4658 4678
+type(
+  T.record_field list
+)
+ident(
+  def rl "odoc_dep.ml" 164 4682 4688 "odoc_dep.ml" 169 4838 4848
+)
+"odoc_dep.ml" 163 4658 4662 "odoc_dep.ml" 163 4658 4678
+type(
+  T.type_kind
+)
+"odoc_dep.ml" 164 4682 4688 "odoc_dep.ml" 164 4682 4697
+type(
+  (T.record_field -> unit) -> T.record_field list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_dep.ml" 165 4698 4711 "odoc_dep.ml" 165 4698 4712
+type(
+  T.record_field
+)
+ident(
+  def r "odoc_dep.ml" 166 4716 4726 "odoc_dep.ml" 167 4780 4827
+)
+"odoc_dep.ml" 166 4716 4730 "odoc_dep.ml" 166 4716 4731
+type(
+  string
+)
+ident(
+  def s "odoc_dep.ml" 167 4780 4790 "odoc_dep.ml" 167 4780 4827
+)
+"odoc_dep.ml" 166 4716 4734 "odoc_dep.ml" 166 4716 4764
+type(
+  Types.type_expr -> string
+)
+ident(
+  ext_ref Odoc_print.string_of_type_expr
+)
+"odoc_dep.ml" 166 4716 4765 "odoc_dep.ml" 166 4716 4766
+type(
+  T.record_field
+)
+ident(
+  int_ref r "odoc_dep.ml" 165 4698 4711 "odoc_dep.ml" 165 4698 4712
+)
+"odoc_dep.ml" 166 4716 4765 "odoc_dep.ml" 166 4716 4776
+type(
+  Types.type_expr
+)
+"odoc_dep.ml" 166 4716 4734 "odoc_dep.ml" 166 4716 4776
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_dep.ml" 167 4780 4790 "odoc_dep.ml" 167 4780 4796
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"odoc_dep.ml" 167 4780 4798 "odoc_dep.ml" 167 4780 4819
+type(
+  Str.regexp -> (string -> string) -> string -> string
+)
+ident(
+  ext_ref Str.global_substitute
+)
+"odoc_dep.ml" 167 4780 4820 "odoc_dep.ml" 167 4780 4822
+type(
+  Str.regexp
+)
+ident(
+  int_ref re "odoc_dep.ml" 144 4167 4173 "odoc_dep.ml" 144 4167 4175
+)
+"odoc_dep.ml" 167 4780 4823 "odoc_dep.ml" 167 4780 4824
+type(
+  string -> string
+)
+ident(
+  int_ref f "odoc_dep.ml" 145 4255 4261 "odoc_dep.ml" 145 4255 4262
+)
+"odoc_dep.ml" 167 4780 4825 "odoc_dep.ml" 167 4780 4826
+type(
+  string
+)
+ident(
+  int_ref s "odoc_dep.ml" 166 4716 4730 "odoc_dep.ml" 166 4716 4731
+)
+"odoc_dep.ml" 167 4780 4797 "odoc_dep.ml" 167 4780 4827
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_dep.ml" 167 4780 4790 "odoc_dep.ml" 167 4780 4827
+type(
+  unit
+)
+"odoc_dep.ml" 166 4716 4726 "odoc_dep.ml" 167 4780 4827
+type(
+  unit
+)
+"odoc_dep.ml" 165 4698 4706 "odoc_dep.ml" 168 4828 4837
+type(
+  T.record_field -> unit
+)
+"odoc_dep.ml" 169 4838 4846 "odoc_dep.ml" 169 4838 4848
+type(
+  T.record_field list
+)
+ident(
+  int_ref rl "odoc_dep.ml" 163 4658 4676 "odoc_dep.ml" 163 4658 4678
+)
+"odoc_dep.ml" 164 4682 4688 "odoc_dep.ml" 169 4838 4848
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dep.ml" 170 4849 4853 "odoc_dep.ml" 170 4849 4864
+type(
+  T.type_kind
+)
+"odoc_dep.ml" 170 4849 4868 "odoc_dep.ml" 170 4849 4870
+type(
+  unit
+)
+"odoc_dep.ml" 150 4336 4338 "odoc_dep.ml" 171 4871 4874
+type(
+  unit
+)
+"odoc_dep.ml" 173 4877 4886 "odoc_dep.ml" 173 4877 4887
+type(
+  Odoc_type.t_type
+)
+ident(
+  int_ref t "odoc_dep.ml" 141 4099 4113 "odoc_dep.ml" 141 4099 4114
+)
+"odoc_dep.ml" 173 4877 4886 "odoc_dep.ml" 173 4877 4901
+type(
+  T.type_manifest option
+)
+"odoc_dep.ml" 174 4907 4911 "odoc_dep.ml" 174 4907 4915
+type(
+  T.type_manifest option
+)
+"odoc_dep.ml" 174 4907 4919 "odoc_dep.ml" 174 4907 4921
+type(
+  unit
+)
+"odoc_dep.ml" 175 4922 4946 "odoc_dep.ml" 175 4922 4952
+type(
+  T.object_field list
+)
+ident(
+  def fields "odoc_dep.ml" 176 4957 4963 "odoc_dep.ml" 181 5115 5129
+)
+"odoc_dep.ml" 175 4922 4931 "odoc_dep.ml" 175 4922 4953
+type(
+  T.type_manifest
+)
+"odoc_dep.ml" 175 4922 4926 "odoc_dep.ml" 175 4922 4953
+type(
+  T.type_manifest option
+)
+"odoc_dep.ml" 176 4957 4963 "odoc_dep.ml" 176 4957 4972
+type(
+  (T.object_field -> unit) -> T.object_field list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_dep.ml" 177 4973 4986 "odoc_dep.ml" 177 4973 4987
+type(
+  T.object_field
+)
+ident(
+  def r "odoc_dep.ml" 178 4991 5001 "odoc_dep.ml" 179 5055 5102
+)
+"odoc_dep.ml" 178 4991 5005 "odoc_dep.ml" 178 4991 5006
+type(
+  string
+)
+ident(
+  def s "odoc_dep.ml" 179 5055 5065 "odoc_dep.ml" 179 5055 5102
+)
+"odoc_dep.ml" 178 4991 5009 "odoc_dep.ml" 178 4991 5039
+type(
+  Types.type_expr -> string
+)
+ident(
+  ext_ref Odoc_print.string_of_type_expr
+)
+"odoc_dep.ml" 178 4991 5040 "odoc_dep.ml" 178 4991 5041
+type(
+  T.object_field
+)
+ident(
+  int_ref r "odoc_dep.ml" 177 4973 4986 "odoc_dep.ml" 177 4973 4987
+)
+"odoc_dep.ml" 178 4991 5040 "odoc_dep.ml" 178 4991 5051
+type(
+  Types.type_expr
+)
+"odoc_dep.ml" 178 4991 5009 "odoc_dep.ml" 178 4991 5051
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_dep.ml" 179 5055 5065 "odoc_dep.ml" 179 5055 5071
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"odoc_dep.ml" 179 5055 5073 "odoc_dep.ml" 179 5055 5094
+type(
+  Str.regexp -> (string -> string) -> string -> string
+)
+ident(
+  ext_ref Str.global_substitute
+)
+"odoc_dep.ml" 179 5055 5095 "odoc_dep.ml" 179 5055 5097
+type(
+  Str.regexp
+)
+ident(
+  int_ref re "odoc_dep.ml" 144 4167 4173 "odoc_dep.ml" 144 4167 4175
+)
+"odoc_dep.ml" 179 5055 5098 "odoc_dep.ml" 179 5055 5099
+type(
+  string -> string
+)
+ident(
+  int_ref f "odoc_dep.ml" 145 4255 4261 "odoc_dep.ml" 145 4255 4262
+)
+"odoc_dep.ml" 179 5055 5100 "odoc_dep.ml" 179 5055 5101
+type(
+  string
+)
+ident(
+  int_ref s "odoc_dep.ml" 178 4991 5005 "odoc_dep.ml" 178 4991 5006
+)
+"odoc_dep.ml" 179 5055 5072 "odoc_dep.ml" 179 5055 5102
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_dep.ml" 179 5055 5065 "odoc_dep.ml" 179 5055 5102
+type(
+  unit
+)
+"odoc_dep.ml" 178 4991 5001 "odoc_dep.ml" 179 5055 5102
+type(
+  unit
+)
+"odoc_dep.ml" 177 4973 4981 "odoc_dep.ml" 180 5103 5114
+type(
+  T.object_field -> unit
+)
+"odoc_dep.ml" 181 5115 5123 "odoc_dep.ml" 181 5115 5129
+type(
+  T.object_field list
+)
+ident(
+  int_ref fields "odoc_dep.ml" 175 4922 4946 "odoc_dep.ml" 175 4922 4952
+)
+"odoc_dep.ml" 176 4957 4963 "odoc_dep.ml" 181 5115 5129
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dep.ml" 182 5130 5148 "odoc_dep.ml" 182 5130 5149
+type(
+  Types.type_expr
+)
+ident(
+  def e "odoc_dep.ml" 183 5154 5160 "odoc_dep.ml" 184 5204 5247
+)
+"odoc_dep.ml" 182 5130 5139 "odoc_dep.ml" 182 5130 5150
+type(
+  T.type_manifest
+)
+"odoc_dep.ml" 182 5130 5134 "odoc_dep.ml" 182 5130 5150
+type(
+  T.type_manifest option
+)
+"odoc_dep.ml" 183 5154 5164 "odoc_dep.ml" 183 5154 5165
+type(
+  string
+)
+ident(
+  def s "odoc_dep.ml" 184 5204 5210 "odoc_dep.ml" 184 5204 5247
+)
+"odoc_dep.ml" 183 5154 5168 "odoc_dep.ml" 183 5154 5198
+type(
+  Types.type_expr -> string
+)
+ident(
+  ext_ref Odoc_print.string_of_type_expr
+)
+"odoc_dep.ml" 183 5154 5199 "odoc_dep.ml" 183 5154 5200
+type(
+  Types.type_expr
+)
+ident(
+  int_ref e "odoc_dep.ml" 182 5130 5148 "odoc_dep.ml" 182 5130 5149
+)
+"odoc_dep.ml" 183 5154 5168 "odoc_dep.ml" 183 5154 5200
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_dep.ml" 184 5204 5210 "odoc_dep.ml" 184 5204 5216
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"odoc_dep.ml" 184 5204 5218 "odoc_dep.ml" 184 5204 5239
+type(
+  Str.regexp -> (string -> string) -> string -> string
+)
+ident(
+  ext_ref Str.global_substitute
+)
+"odoc_dep.ml" 184 5204 5240 "odoc_dep.ml" 184 5204 5242
+type(
+  Str.regexp
+)
+ident(
+  int_ref re "odoc_dep.ml" 144 4167 4173 "odoc_dep.ml" 144 4167 4175
+)
+"odoc_dep.ml" 184 5204 5243 "odoc_dep.ml" 184 5204 5244
+type(
+  string -> string
+)
+ident(
+  int_ref f "odoc_dep.ml" 145 4255 4261 "odoc_dep.ml" 145 4255 4262
+)
+"odoc_dep.ml" 184 5204 5245 "odoc_dep.ml" 184 5204 5246
+type(
+  string
+)
+ident(
+  int_ref s "odoc_dep.ml" 183 5154 5164 "odoc_dep.ml" 183 5154 5165
+)
+"odoc_dep.ml" 184 5204 5217 "odoc_dep.ml" 184 5204 5247
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_dep.ml" 184 5204 5210 "odoc_dep.ml" 184 5204 5247
+type(
+  unit
+)
+"odoc_dep.ml" 183 5154 5160 "odoc_dep.ml" 184 5204 5247
+type(
+  unit
+)
+"odoc_dep.ml" 173 4877 4879 "odoc_dep.ml" 185 5248 5251
+type(
+  unit
+)
+"odoc_dep.ml" 187 5254 5256 "odoc_dep.ml" 187 5254 5257
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_dep.ml" 187 5254 5257 "odoc_dep.ml" 187 5254 5258
+type(
+  string list ref
+)
+ident(
+  int_ref l "odoc_dep.ml" 143 4147 4153 "odoc_dep.ml" 143 4147 4154
+)
+"odoc_dep.ml" 187 5254 5256 "odoc_dep.ml" 187 5254 5258
+type(
+  string list
+)
+"odoc_dep.ml" 173 4877 4879 "odoc_dep.ml" 187 5254 5258
+type(
+  string list
+)
+"odoc_dep.ml" 150 4336 4338 "odoc_dep.ml" 187 5254 5258
+type(
+  string list
+)
+"odoc_dep.ml" 145 4255 4257 "odoc_dep.ml" 187 5254 5258
+type(
+  string list
+)
+"odoc_dep.ml" 144 4167 4169 "odoc_dep.ml" 187 5254 5258
+type(
+  string list
+)
+"odoc_dep.ml" 143 4147 4149 "odoc_dep.ml" 187 5254 5258
+type(
+  string list
+)
+"odoc_dep.ml" 142 4117 4119 "odoc_dep.ml" 187 5254 5258
+type(
+  string list
+)
+"odoc_dep.ml" 191 5369 5373 "odoc_dep.ml" 191 5369 5395
+type(
+  Module.t_module list -> unit
+)
+ident(
+  def kernel_deps_of_modules "odoc_dep.ml" 209 5989 5989 "odoc_dep.ml" 1 0 -1
+)
+"odoc_dep.ml" 191 5369 5396 "odoc_dep.ml" 191 5369 5403
+type(
+  Module.t_module list
+)
+ident(
+  def modules "odoc_dep.ml" 192 5406 5408 "odoc_dep.ml" 202 5731 5742
+)
+"odoc_dep.ml" 192 5406 5412 "odoc_dep.ml" 192 5406 5417
+type(
+  Dep.node list
+)
+ident(
+  def graph "odoc_dep.ml" 196 5515 5517 "odoc_dep.ml" 202 5731 5742
+)
+"odoc_dep.ml" 192 5406 5420 "odoc_dep.ml" 192 5406 5428
+type(
+  (Module.t_module -> Dep.node) -> Module.t_module list -> Dep.node list
+)
+ident(
+  ext_ref List.map
+)
+"odoc_dep.ml" 193 5429 5440 "odoc_dep.ml" 193 5429 5441
+type(
+  Module.t_module
+)
+ident(
+  def m "odoc_dep.ml" 193 5429 5445 "odoc_dep.ml" 193 5429 5494
+)
+"odoc_dep.ml" 193 5429 5445 "odoc_dep.ml" 193 5429 5458
+type(
+  Dep.id -> Dep.id list -> Dep.node
+)
+ident(
+  int_ref Dep.make_node "odoc_dep.ml" 59 1966 1974 "odoc_dep.ml" 59 1966 1983
+)
+"odoc_dep.ml" 193 5429 5459 "odoc_dep.ml" 193 5429 5460
+type(
+  Module.t_module
+)
+ident(
+  int_ref m "odoc_dep.ml" 193 5429 5440 "odoc_dep.ml" 193 5429 5441
+)
+"odoc_dep.ml" 193 5429 5459 "odoc_dep.ml" 193 5429 5474
+type(
+  Module.Name.t
+)
+"odoc_dep.ml" 193 5429 5475 "odoc_dep.ml" 193 5429 5476
+type(
+  Module.t_module
+)
+ident(
+  int_ref m "odoc_dep.ml" 193 5429 5440 "odoc_dep.ml" 193 5429 5441
+)
+"odoc_dep.ml" 193 5429 5475 "odoc_dep.ml" 193 5429 5494
+type(
+  Dep.id list
+)
+"odoc_dep.ml" 193 5429 5445 "odoc_dep.ml" 193 5429 5494
+call(
+  tail
+)
+type(
+  Dep.node
+)
+"odoc_dep.ml" 193 5429 5435 "odoc_dep.ml" 193 5429 5495
+type(
+  Module.t_module -> Dep.node
+)
+"odoc_dep.ml" 194 5496 5502 "odoc_dep.ml" 194 5496 5509
+type(
+  Module.t_module list
+)
+ident(
+  int_ref modules "odoc_dep.ml" 191 5369 5396 "odoc_dep.ml" 191 5369 5403
+)
+"odoc_dep.ml" 192 5406 5420 "odoc_dep.ml" 194 5496 5509
+call(
+  stack
+)
+type(
+  Dep.node list
+)
+"odoc_dep.ml" 196 5515 5521 "odoc_dep.ml" 196 5515 5522
+type(
+  Dep.node list
+)
+ident(
+  def k "odoc_dep.ml" 197 5545 5547 "odoc_dep.ml" 202 5731 5742
+)
+"odoc_dep.ml" 196 5515 5525 "odoc_dep.ml" 196 5515 5535
+type(
+  Dep.node list -> Dep.node list
+)
+ident(
+  int_ref Dep.kernel "odoc_dep.ml" 128 3797 3805 "odoc_dep.ml" 128 3797 3811
+)
+"odoc_dep.ml" 196 5515 5536 "odoc_dep.ml" 196 5515 5541
+type(
+  Dep.node list
+)
+ident(
+  int_ref graph "odoc_dep.ml" 192 5406 5412 "odoc_dep.ml" 192 5406 5417
+)
+"odoc_dep.ml" 196 5515 5525 "odoc_dep.ml" 196 5515 5541
+call(
+  stack
+)
+type(
+  Dep.node list
+)
+"odoc_dep.ml" 197 5545 5547 "odoc_dep.ml" 197 5545 5556
+type(
+  (Module.t_module -> unit) -> Module.t_module list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_dep.ml" 198 5557 5566 "odoc_dep.ml" 198 5557 5567
+type(
+  Module.t_module
+)
+ident(
+  def m "odoc_dep.ml" 199 5571 5577 "odoc_dep.ml" 201 5651 5729
+)
+"odoc_dep.ml" 199 5571 5581 "odoc_dep.ml" 199 5571 5585
+type(
+  Dep.node
+)
+ident(
+  def node "odoc_dep.ml" 200 5622 5628 "odoc_dep.ml" 201 5651 5729
+)
+"odoc_dep.ml" 199 5571 5588 "odoc_dep.ml" 199 5571 5600
+type(
+  Dep.node list -> Dep.id -> Dep.node
+)
+ident(
+  int_ref Dep.get_node "odoc_dep.ml" 71 2206 2214 "odoc_dep.ml" 71 2206 2222
+)
+"odoc_dep.ml" 199 5571 5601 "odoc_dep.ml" 199 5571 5602
+type(
+  Dep.node list
+)
+ident(
+  int_ref k "odoc_dep.ml" 196 5515 5521 "odoc_dep.ml" 196 5515 5522
+)
+"odoc_dep.ml" 199 5571 5603 "odoc_dep.ml" 199 5571 5604
+type(
+  Module.t_module
+)
+ident(
+  int_ref m "odoc_dep.ml" 198 5557 5566 "odoc_dep.ml" 198 5557 5567
+)
+"odoc_dep.ml" 199 5571 5603 "odoc_dep.ml" 199 5571 5618
+type(
+  Module.Name.t
+)
+"odoc_dep.ml" 199 5571 5588 "odoc_dep.ml" 199 5571 5618
+call(
+  stack
+)
+type(
+  Dep.node
+)
+"odoc_dep.ml" 200 5622 5628 "odoc_dep.ml" 200 5622 5629
+type(
+  Module.t_module
+)
+ident(
+  int_ref m "odoc_dep.ml" 198 5557 5566 "odoc_dep.ml" 198 5557 5567
+)
+"odoc_dep.ml" 201 5651 5659 "odoc_dep.ml" 201 5651 5670
+type(
+  (Dep.S.elt -> bool) -> Dep.S.elt list -> Module.Name.t list
+)
+ident(
+  ext_ref List.filter
+)
+"odoc_dep.ml" 201 5651 5676 "odoc_dep.ml" 201 5651 5678
+type(
+  Dep.S.elt
+)
+ident(
+  def m2 "odoc_dep.ml" 201 5651 5682 "odoc_dep.ml" 201 5651 5708
+)
+"odoc_dep.ml" 201 5651 5682 "odoc_dep.ml" 201 5651 5691
+type(
+  Dep.S.elt -> Dep.S.t -> bool
+)
+ident(
+  ext_ref Dep.S.mem
+)
+"odoc_dep.ml" 201 5651 5692 "odoc_dep.ml" 201 5651 5694
+type(
+  Dep.S.elt
+)
+ident(
+  int_ref m2 "odoc_dep.ml" 201 5651 5676 "odoc_dep.ml" 201 5651 5678
+)
+"odoc_dep.ml" 201 5651 5695 "odoc_dep.ml" 201 5651 5699
+type(
+  Dep.node
+)
+ident(
+  int_ref node "odoc_dep.ml" 199 5571 5581 "odoc_dep.ml" 199 5571 5585
+)
+"odoc_dep.ml" 201 5651 5695 "odoc_dep.ml" 201 5651 5708
+type(
+  Dep.S.t
+)
+"odoc_dep.ml" 201 5651 5682 "odoc_dep.ml" 201 5651 5708
+call(
+  tail
+)
+type(
+  bool
+)
+"odoc_dep.ml" 201 5651 5671 "odoc_dep.ml" 201 5651 5709
+type(
+  Dep.S.elt -> bool
+)
+"odoc_dep.ml" 201 5651 5710 "odoc_dep.ml" 201 5651 5711
+type(
+  Module.t_module
+)
+ident(
+  int_ref m "odoc_dep.ml" 198 5557 5566 "odoc_dep.ml" 198 5557 5567
+)
+"odoc_dep.ml" 201 5651 5710 "odoc_dep.ml" 201 5651 5729
+type(
+  Dep.S.elt list
+)
+"odoc_dep.ml" 201 5651 5659 "odoc_dep.ml" 201 5651 5729
+call(
+  stack
+)
+type(
+  Module.Name.t list
+)
+"odoc_dep.ml" 200 5622 5628 "odoc_dep.ml" 201 5651 5729
+type(
+  unit
+)
+"odoc_dep.ml" 199 5571 5577 "odoc_dep.ml" 201 5651 5729
+type(
+  unit
+)
+"odoc_dep.ml" 198 5557 5561 "odoc_dep.ml" 201 5651 5730
+type(
+  Module.t_module -> unit
+)
+"odoc_dep.ml" 202 5731 5735 "odoc_dep.ml" 202 5731 5742
+type(
+  Module.t_module list
+)
+ident(
+  int_ref modules "odoc_dep.ml" 191 5369 5396 "odoc_dep.ml" 191 5369 5403
+)
+"odoc_dep.ml" 197 5545 5547 "odoc_dep.ml" 202 5731 5742
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_dep.ml" 196 5515 5517 "odoc_dep.ml" 202 5731 5742
+type(
+  unit
+)
+"odoc_dep.ml" 192 5406 5408 "odoc_dep.ml" 202 5731 5742
+type(
+  unit
+)
+"odoc_dep.ml" 209 5989 5993 "odoc_dep.ml" 209 5989 6006
+type(
+  ?kernel:bool -> Type.t_type list -> (Type.t_type * Dep.S.elt list) list
+)
+ident(
+  def deps_of_types "odoc_dep.ml" 229 6492 6498 "odoc_dep.ml" 1 0 -1
+)
+"odoc_dep.ml" 209 5989 6009 "odoc_dep.ml" 209 5989 6015
+type(
+  bool
+)
+"odoc_dep.ml" 209 5989 6016 "odoc_dep.ml" 209 5989 6021
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "odoc_dep.ml" 209 5989 6016 "odoc_dep.ml" 209 5989 6021
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"odoc_dep.ml" 209 5989 6023 "odoc_dep.ml" 209 5989 6028
+type(
+  Type.t_type list
+)
+ident(
+  def types "odoc_dep.ml" 210 6031 6033 "odoc_dep.ml" 229 6492 6498
+)
+"odoc_dep.ml" 210 6031 6037 "odoc_dep.ml" 210 6031 6045
+type(
+  (Type.t_type * string list) list
+)
+ident(
+  def deps_pre "odoc_dep.ml" 211 6094 6096 "odoc_dep.ml" 229 6492 6498
+)
+"odoc_dep.ml" 210 6031 6048 "odoc_dep.ml" 210 6031 6056
+type(
+  (Type.t_type -> Type.t_type * string list) ->
+  Type.t_type list -> (Type.t_type * string list) list
+)
+ident(
+  ext_ref List.map
+)
+"odoc_dep.ml" 210 6031 6062 "odoc_dep.ml" 210 6031 6063
+type(
+  Type.t_type
+)
+ident(
+  def t "odoc_dep.ml" 210 6031 6067 "odoc_dep.ml" 210 6031 6083
+)
+"odoc_dep.ml" 210 6031 6068 "odoc_dep.ml" 210 6031 6069
+type(
+  Type.t_type
+)
+ident(
+  int_ref t "odoc_dep.ml" 210 6031 6062 "odoc_dep.ml" 210 6031 6063
+)
+"odoc_dep.ml" 210 6031 6071 "odoc_dep.ml" 210 6031 6080
+type(
+  Type.t_type -> string list
+)
+ident(
+  int_ref type_deps "odoc_dep.ml" 141 4099 4103 "odoc_dep.ml" 141 4099 4112
+)
+"odoc_dep.ml" 210 6031 6081 "odoc_dep.ml" 210 6031 6082
+type(
+  Type.t_type
+)
+ident(
+  int_ref t "odoc_dep.ml" 210 6031 6062 "odoc_dep.ml" 210 6031 6063
+)
+"odoc_dep.ml" 210 6031 6071 "odoc_dep.ml" 210 6031 6082
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc_dep.ml" 210 6031 6067 "odoc_dep.ml" 210 6031 6083
+type(
+  Type.t_type * string list
+)
+"odoc_dep.ml" 210 6031 6057 "odoc_dep.ml" 210 6031 6084
+type(
+  Type.t_type -> Type.t_type * string list
+)
+"odoc_dep.ml" 210 6031 6085 "odoc_dep.ml" 210 6031 6090
+type(
+  Type.t_type list
+)
+ident(
+  int_ref types "odoc_dep.ml" 209 5989 6023 "odoc_dep.ml" 209 5989 6028
+)
+"odoc_dep.ml" 210 6031 6048 "odoc_dep.ml" 210 6031 6090
+call(
+  stack
+)
+type(
+  (Type.t_type * string list) list
+)
+"odoc_dep.ml" 211 6094 6100 "odoc_dep.ml" 211 6094 6104
+type(
+  (Type.t_type * Dep.S.elt list) list
+)
+ident(
+  def deps "odoc_dep.ml" 229 6492 6494 "odoc_dep.ml" 229 6492 6498
+)
+"odoc_dep.ml" 212 6107 6114 "odoc_dep.ml" 212 6107 6120
+type(
+  bool
+)
+ident(
+  int_ref kernel "odoc_dep.ml" 209 5989 6009 "odoc_dep.ml" 209 5989 6015
+)
+"odoc_dep.ml" 214 6134 6145 "odoc_dep.ml" 214 6134 6150
+type(
+  Dep.node list
+)
+ident(
+  def graph "odoc_dep.ml" 218 6258 6265 "odoc_dep.ml" 224 6440 6454
+)
+"odoc_dep.ml" 214 6134 6153 "odoc_dep.ml" 214 6134 6161
+type(
+  (Type.t_type * Dep.id list -> Dep.node) ->
+  (Type.t_type * Dep.id list) list -> Dep.node list
+)
+ident(
+  ext_ref List.map
+)
+"odoc_dep.ml" 215 6162 6179 "odoc_dep.ml" 215 6162 6180
+type(
+  Type.t_type
+)
+ident(
+  def t "odoc_dep.ml" 215 6162 6192 "odoc_dep.ml" 215 6162 6226
+)
+"odoc_dep.ml" 215 6162 6182 "odoc_dep.ml" 215 6162 6187
+type(
+  Dep.id list
+)
+ident(
+  def names "odoc_dep.ml" 215 6162 6192 "odoc_dep.ml" 215 6162 6226
+)
+"odoc_dep.ml" 215 6162 6178 "odoc_dep.ml" 215 6162 6188
+type(
+  Type.t_type * Dep.id list
+)
+"odoc_dep.ml" 215 6162 6192 "odoc_dep.ml" 215 6162 6205
+type(
+  Dep.id -> Dep.id list -> Dep.node
+)
+ident(
+  int_ref Dep.make_node "odoc_dep.ml" 59 1966 1974 "odoc_dep.ml" 59 1966 1983
+)
+"odoc_dep.ml" 215 6162 6206 "odoc_dep.ml" 215 6162 6207
+type(
+  Type.t_type
+)
+ident(
+  int_ref t "odoc_dep.ml" 215 6162 6179 "odoc_dep.ml" 215 6162 6180
+)
+"odoc_dep.ml" 215 6162 6206 "odoc_dep.ml" 215 6162 6220
+type(
+  Type.Name.t
+)
+"odoc_dep.ml" 215 6162 6221 "odoc_dep.ml" 215 6162 6226
+type(
+  Dep.id list
+)
+ident(
+  int_ref names "odoc_dep.ml" 215 6162 6182 "odoc_dep.ml" 215 6162 6187
+)
+"odoc_dep.ml" 215 6162 6192 "odoc_dep.ml" 215 6162 6226
+call(
+  tail
+)
+type(
+  Dep.node
+)
+"odoc_dep.ml" 215 6162 6173 "odoc_dep.ml" 215 6162 6227
+type(
+  Type.t_type * Dep.id list -> Dep.node
+)
+"odoc_dep.ml" 216 6228 6239 "odoc_dep.ml" 216 6228 6247
+type(
+  (Type.t_type * Dep.id list) list
+)
+ident(
+  int_ref deps_pre "odoc_dep.ml" 210 6031 6037 "odoc_dep.ml" 210 6031 6045
+)
+"odoc_dep.ml" 214 6134 6153 "odoc_dep.ml" 216 6228 6247
+call(
+  stack
+)
+type(
+  Dep.node list
+)
+"odoc_dep.ml" 218 6258 6269 "odoc_dep.ml" 218 6258 6270
+type(
+  Dep.node list
+)
+ident(
+  def k "odoc_dep.ml" 219 6293 6300 "odoc_dep.ml" 224 6440 6454
+)
+"odoc_dep.ml" 218 6258 6273 "odoc_dep.ml" 218 6258 6283
+type(
+  Dep.node list -> Dep.node list
+)
+ident(
+  int_ref Dep.kernel "odoc_dep.ml" 128 3797 3805 "odoc_dep.ml" 128 3797 3811
+)
+"odoc_dep.ml" 218 6258 6284 "odoc_dep.ml" 218 6258 6289
+type(
+  Dep.node list
+)
+ident(
+  int_ref graph "odoc_dep.ml" 214 6134 6145 "odoc_dep.ml" 214 6134 6150
+)
+"odoc_dep.ml" 218 6258 6273 "odoc_dep.ml" 218 6258 6289
+call(
+  stack
+)
+type(
+  Dep.node list
+)
+"odoc_dep.ml" 219 6293 6300 "odoc_dep.ml" 219 6293 6308
+type(
+  (Type.t_type -> Type.t_type * Dep.S.elt list) ->
+  Type.t_type list -> (Type.t_type * Dep.S.elt list) list
+)
+ident(
+  ext_ref List.map
+)
+"odoc_dep.ml" 220 6309 6323 "odoc_dep.ml" 220 6309 6324
+type(
+  Type.t_type
+)
+ident(
+  def t "odoc_dep.ml" 221 6328 6339 "odoc_dep.ml" 222 6383 6428
+)
+"odoc_dep.ml" 221 6328 6343 "odoc_dep.ml" 221 6328 6347
+type(
+  Dep.node
+)
+ident(
+  def node "odoc_dep.ml" 222 6383 6394 "odoc_dep.ml" 222 6383 6428
+)
+"odoc_dep.ml" 221 6328 6350 "odoc_dep.ml" 221 6328 6362
+type(
+  Dep.node list -> Dep.id -> Dep.node
+)
+ident(
+  int_ref Dep.get_node "odoc_dep.ml" 71 2206 2214 "odoc_dep.ml" 71 2206 2222
+)
+"odoc_dep.ml" 221 6328 6363 "odoc_dep.ml" 221 6328 6364
+type(
+  Dep.node list
+)
+ident(
+  int_ref k "odoc_dep.ml" 218 6258 6269 "odoc_dep.ml" 218 6258 6270
+)
+"odoc_dep.ml" 221 6328 6365 "odoc_dep.ml" 221 6328 6366
+type(
+  Type.t_type
+)
+ident(
+  int_ref t "odoc_dep.ml" 220 6309 6323 "odoc_dep.ml" 220 6309 6324
+)
+"odoc_dep.ml" 221 6328 6365 "odoc_dep.ml" 221 6328 6379
+type(
+  Type.Name.t
+)
+"odoc_dep.ml" 221 6328 6350 "odoc_dep.ml" 221 6328 6379
+call(
+  stack
+)
+type(
+  Dep.node
+)
+"odoc_dep.ml" 222 6383 6395 "odoc_dep.ml" 222 6383 6396
+type(
+  Type.t_type
+)
+ident(
+  int_ref t "odoc_dep.ml" 220 6309 6323 "odoc_dep.ml" 220 6309 6324
+)
+"odoc_dep.ml" 222 6383 6398 "odoc_dep.ml" 222 6383 6413
+type(
+  Dep.S.t -> Dep.S.elt list
+)
+ident(
+  int_ref Dep.set_to_list "odoc_dep.ml" 44 1517 1525 "odoc_dep.ml" 44 1517 1536
+)
+"odoc_dep.ml" 222 6383 6414 "odoc_dep.ml" 222 6383 6418
+type(
+  Dep.node
+)
+ident(
+  int_ref node "odoc_dep.ml" 221 6328 6343 "odoc_dep.ml" 221 6328 6347
+)
+"odoc_dep.ml" 222 6383 6414 "odoc_dep.ml" 222 6383 6427
+type(
+  Dep.S.t
+)
+"odoc_dep.ml" 222 6383 6398 "odoc_dep.ml" 222 6383 6427
+call(
+  stack
+)
+type(
+  Dep.S.elt list
+)
+"odoc_dep.ml" 222 6383 6394 "odoc_dep.ml" 222 6383 6428
+type(
+  Type.t_type * Dep.S.elt list
+)
+"odoc_dep.ml" 221 6328 6339 "odoc_dep.ml" 222 6383 6428
+type(
+  Type.t_type * Dep.S.elt list
+)
+"odoc_dep.ml" 220 6309 6318 "odoc_dep.ml" 223 6429 6439
+type(
+  Type.t_type -> Type.t_type * Dep.S.elt list
+)
+"odoc_dep.ml" 224 6440 6449 "odoc_dep.ml" 224 6440 6454
+type(
+  Type.t_type list
+)
+ident(
+  int_ref types "odoc_dep.ml" 209 5989 6023 "odoc_dep.ml" 209 5989 6028
+)
+"odoc_dep.ml" 219 6293 6300 "odoc_dep.ml" 224 6440 6454
+call(
+  tail
+)
+type(
+  (Type.t_type * Dep.S.elt list) list
+)
+"odoc_dep.ml" 218 6258 6265 "odoc_dep.ml" 224 6440 6454
+type(
+  (Type.t_type * Dep.S.elt list) list
+)
+"odoc_dep.ml" 213 6126 6132 "odoc_dep.ml" 225 6455 6462
+type(
+  (Type.t_type * Dep.S.elt list) list
+)
+"odoc_dep.ml" 227 6472 6478 "odoc_dep.ml" 227 6472 6486
+type(
+  (Type.t_type * Dep.S.elt list) list
+)
+ident(
+  int_ref deps_pre "odoc_dep.ml" 210 6031 6037 "odoc_dep.ml" 210 6031 6045
+)
+"odoc_dep.ml" 212 6107 6111 "odoc_dep.ml" 227 6472 6486
+type(
+  (Type.t_type * Dep.S.elt list) list
+)
+"odoc_dep.ml" 229 6492 6494 "odoc_dep.ml" 229 6492 6498
+type(
+  (Type.t_type * Dep.S.elt list) list
+)
+ident(
+  int_ref deps "odoc_dep.ml" 211 6094 6100 "odoc_dep.ml" 211 6094 6104
+)
+"odoc_dep.ml" 211 6094 6096 "odoc_dep.ml" 229 6492 6498
+type(
+  (Type.t_type * Dep.S.elt list) list
+)
+"odoc_dep.ml" 210 6031 6033 "odoc_dep.ml" 229 6492 6498
+type(
+  (Type.t_type * Dep.S.elt list) list
+)

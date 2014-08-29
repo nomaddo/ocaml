@@ -1,0 +1,3283 @@
+"generators/odoc_todo.ml" 25 1147 1151 "generators/odoc_todo.ml" 25 1147 1152
+type(
+  Buffer.t -> ('a, Buffer.t, unit) format -> 'a
+)
+ident(
+  def p "generators/odoc_todo.ml" 27 1171 1171 "generators/odoc_todo.ml" 1 0 -1
+)
+"generators/odoc_todo.ml" 25 1147 1155 "generators/odoc_todo.ml" 25 1147 1169
+type(
+  Buffer.t -> ('a, Buffer.t, unit) format -> 'a
+)
+ident(
+  ext_ref Printf.bprintf
+)
+"generators/odoc_todo.ml" 30 1197 1206 "generators/odoc_todo.ml" 30 1197 1207
+type(
+  Odoc_gen.generator option ref -> Odoc_gen.generator option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"generators/odoc_todo.ml" 30 1197 1207 "generators/odoc_todo.ml" 30 1197 1234
+type(
+  Odoc_gen.generator option ref
+)
+ident(
+  ext_ref Odoc_args.current_generator
+)
+"generators/odoc_todo.ml" 30 1197 1206 "generators/odoc_todo.ml" 30 1197 1234
+type(
+  Odoc_gen.generator option
+)
+"generators/odoc_todo.ml" 31 1240 1245 "generators/odoc_todo.ml" 31 1240 1249
+type(
+  Odoc_gen.generator option
+)
+"generators/odoc_todo.ml" 32 1309 1334 "generators/odoc_todo.ml" 32 1309 1335
+type(
+  (module Odoc_html.Html_generator)
+)
+ident(
+  def m "generators/odoc_todo.ml" 32 1309 1340 "generators/odoc_todo.ml" 32 1309 1341
+)
+"generators/odoc_todo.ml" 32 1309 1319 "generators/odoc_todo.ml" 32 1309 1336
+type(
+  Odoc_gen.generator
+)
+"generators/odoc_todo.ml" 32 1309 1314 "generators/odoc_todo.ml" 32 1309 1336
+type(
+  Odoc_gen.generator option
+)
+"generators/odoc_todo.ml" 32 1309 1340 "generators/odoc_todo.ml" 32 1309 1341
+type(
+  (module Odoc_html.Html_generator)
+)
+ident(
+  int_ref m "generators/odoc_todo.ml" 32 1309 1334 "generators/odoc_todo.ml" 32 1309 1335
+)
+"generators/odoc_todo.ml" 33 1342 1347 "generators/odoc_todo.ml" 33 1342 1348
+type(
+  Odoc_gen.generator option
+)
+"generators/odoc_todo.ml" 34 1352 1359 "generators/odoc_todo.ml" 34 1352 1367
+type(
+  string -> (module Odoc_html.Html_generator)
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"generators/odoc_todo.ml" 35 1368 1377 "generators/odoc_todo.ml" 35 1368 1459
+type(
+  string
+)
+"generators/odoc_todo.ml" 34 1352 1359 "generators/odoc_todo.ml" 35 1368 1459
+call(
+  stack
+)
+type(
+  (module Odoc_html.Html_generator)
+)
+"generators/odoc_todo.ml" 29 1192 1195 "generators/odoc_todo.ml" 36 1460 1463
+type(
+  (module Odoc_html.Html_generator)
+)
+type(
+  (module Odoc_html.Html_generator)
+)
+"generators/odoc_todo.ml" 41 1522 1538 "generators/odoc_todo.ml" 41 1522 1542
+type(
+  < html_of_text : Buffer.t -> Odoc_info.text -> 'a; .. >
+)
+"generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+type(
+  < buffer : Buffer.t; scan_attribute : Odoc_info.Value.t_attribute -> unit;
+    scan_class : Odoc_info.Class.t_class -> unit;
+    scan_class_comment : Odoc_info.text -> unit;
+    scan_class_elements : Odoc_info.Class.t_class -> unit;
+    scan_class_pre : Odoc_info.Class.t_class -> bool;
+    scan_class_type : Odoc_info.Class.t_class_type -> unit;
+    scan_class_type_comment : Odoc_info.text -> unit;
+    scan_class_type_elements : Odoc_info.Class.t_class_type -> unit;
+    scan_class_type_pre : Odoc_info.Class.t_class_type -> bool;
+    scan_exception : Odoc_info.Exception.t_exception -> unit;
+    scan_extension_constructor : Odoc_info.Extension.t_extension_constructor ->
+                                 unit;
+    scan_included_module : Odoc_info.Module.included_module -> unit;
+    scan_method : Odoc_info.Value.t_method -> unit;
+    scan_module : Odoc_info.Module.t_module -> unit;
+    scan_module_comment : Odoc_info.text -> unit;
+    scan_module_elements : Odoc_info.Module.t_module -> unit;
+    scan_module_list : Odoc_info.Module.t_module list -> unit;
+    scan_module_pre : Odoc_info.Module.t_module -> bool;
+    scan_module_type : Odoc_info.Module.t_module_type -> unit;
+    scan_module_type_comment : Odoc_info.text -> unit;
+    scan_module_type_elements : Odoc_info.Module.t_module_type -> unit;
+    scan_module_type_pre : Odoc_info.Module.t_module_type -> bool;
+    scan_type : Odoc_info.Type.t_type -> unit;
+    scan_type_const : Odoc_info.Type.t_type ->
+                      Odoc_info.Type.variant_constructor -> unit;
+    scan_type_extension : Odoc_info.Extension.t_type_extension -> unit;
+    scan_type_extension_constructors : Odoc_info.Extension.t_type_extension ->
+                                       unit;
+    scan_type_extension_pre : Odoc_info.Extension.t_type_extension -> bool;
+    scan_type_pre : Odoc_info.Type.t_type -> bool;
+    scan_type_recfield : Odoc_info.Type.t_type ->
+                         Odoc_info.Type.record_field -> unit;
+    scan_value : Odoc_info.Value.t_value -> unit; .. >
+)
+"generators/odoc_todo.ml" 45 1601 1613 "generators/odoc_todo.ml" 45 1601 1626
+type(
+  int -> Buffer.t
+)
+ident(
+  ext_ref Buffer.create
+)
+"generators/odoc_todo.ml" 45 1601 1627 "generators/odoc_todo.ml" 45 1601 1630
+type(
+  int
+)
+"generators/odoc_todo.ml" 45 1601 1613 "generators/odoc_todo.ml" 45 1601 1630
+call(
+  stack
+)
+type(
+  Buffer.t
+)
+"generators/odoc_todo.ml" 46 1631 1651 "generators/odoc_todo.ml" 46 1631 1652
+type(
+  Buffer.t
+)
+type(
+  Buffer.t
+)
+ident(
+  ext_ref b
+)
+"generators/odoc_todo.ml" 48 1654 1684 "generators/odoc_todo.ml" 48 1654 1688
+type(
+  Odoc_info.Name.t
+)
+ident(
+  def name "generators/odoc_todo.ml" 48 1654 1689 "generators/odoc_todo.ml" 105 3579 3605
+)
+"generators/odoc_todo.ml" 48 1654 1689 "generators/odoc_todo.ml" 48 1654 1695
+type(
+  string
+)
+ident(
+  def target "generators/odoc_todo.ml" 48 1654 1696 "generators/odoc_todo.ml" 105 3579 3605
+)
+"generators/odoc_todo.ml" 48 1654 1696 "generators/odoc_todo.ml" 48 1654 1704
+type(
+  Odoc_info.info option
+)
+ident(
+  def info_opt "generators/odoc_todo.ml" 49 1707 1713 "generators/odoc_todo.ml" 105 3579 3605
+)
+"generators/odoc_todo.ml" 49 1707 1719 "generators/odoc_todo.ml" 49 1707 1727
+type(
+  Odoc_info.info option
+)
+ident(
+  int_ref info_opt "generators/odoc_todo.ml" 48 1654 1696 "generators/odoc_todo.ml" 48 1654 1704
+)
+"generators/odoc_todo.ml" 50 1733 1741 "generators/odoc_todo.ml" 50 1733 1745
+type(
+  Odoc_info.info option
+)
+"generators/odoc_todo.ml" 50 1733 1749 "generators/odoc_todo.ml" 50 1733 1751
+type(
+  unit
+)
+"generators/odoc_todo.ml" 51 1752 1765 "generators/odoc_todo.ml" 51 1752 1766
+type(
+  Odoc_info.info
+)
+ident(
+  def i "generators/odoc_todo.ml" 52 1770 1780 "generators/odoc_todo.ml" 105 3579 3605
+)
+"generators/odoc_todo.ml" 51 1752 1760 "generators/odoc_todo.ml" 51 1752 1766
+type(
+  Odoc_info.info option
+)
+"generators/odoc_todo.ml" 52 1770 1784 "generators/odoc_todo.ml" 52 1770 1785
+type(
+  (int option * Odoc_info.text) list
+)
+ident(
+  def l "generators/odoc_todo.ml" 77 2611 2621 "generators/odoc_todo.ml" 105 3579 3605
+)
+"generators/odoc_todo.ml" 53 1788 1800 "generators/odoc_todo.ml" 53 1788 1814
+type(
+  ((int option * Odoc_info.text) list ->
+   string * Odoc_info.text -> (int option * Odoc_info.text) list) ->
+  (int option * Odoc_info.text) list ->
+  (string * Odoc_info.text) list -> (int option * Odoc_info.text) list
+)
+ident(
+  ext_ref List.fold_left
+)
+"generators/odoc_todo.ml" 54 1815 1834 "generators/odoc_todo.ml" 54 1815 1837
+type(
+  (int option * Odoc_info.text) list
+)
+ident(
+  def acc "generators/odoc_todo.ml" 54 1815 1838 "generators/odoc_todo.ml" 72 2512 2539
+)
+"generators/odoc_todo.ml" 54 1815 1839 "generators/odoc_todo.ml" 54 1815 1840
+type(
+  string
+)
+ident(
+  def t "generators/odoc_todo.ml" 55 1851 1868 "generators/odoc_todo.ml" 72 2512 2539
+)
+"generators/odoc_todo.ml" 54 1815 1842 "generators/odoc_todo.ml" 54 1815 1846
+type(
+  Odoc_info.text
+)
+ident(
+  def text "generators/odoc_todo.ml" 55 1851 1868 "generators/odoc_todo.ml" 72 2512 2539
+)
+"generators/odoc_todo.ml" 54 1815 1838 "generators/odoc_todo.ml" 54 1815 1847
+type(
+  string * Odoc_info.text
+)
+"generators/odoc_todo.ml" 55 1851 1874 "generators/odoc_todo.ml" 55 1851 1875
+type(
+  string
+)
+ident(
+  int_ref t "generators/odoc_todo.ml" 54 1815 1839 "generators/odoc_todo.ml" 54 1815 1840
+)
+"generators/odoc_todo.ml" 56 1881 1900 "generators/odoc_todo.ml" 56 1881 1906
+type(
+  string
+)
+"generators/odoc_todo.ml" 58 1937 1966 "generators/odoc_todo.ml" 58 1937 1970
+type(
+  Odoc_info.text
+)
+ident(
+  int_ref text "generators/odoc_todo.ml" 54 1815 1842 "generators/odoc_todo.ml" 54 1815 1846
+)
+"generators/odoc_todo.ml" 59 1976 2017 "generators/odoc_todo.ml" 59 1976 2018
+type(
+  string
+)
+ident(
+  def s "generators/odoc_todo.ml" 60 2028 2055 "generators/odoc_todo.ml" 68 2407 2435
+)
+"generators/odoc_todo.ml" 59 1976 2001 "generators/odoc_todo.ml" 59 1976 2019
+type(
+  Odoc_info.text_element
+)
+"generators/odoc_todo.ml" 59 1976 2023 "generators/odoc_todo.ml" 59 1976 2024
+type(
+  Odoc_info.text_element list
+)
+ident(
+  def q "generators/odoc_todo.ml" 60 2028 2055 "generators/odoc_todo.ml" 68 2407 2435
+)
+"generators/odoc_todo.ml" 59 1976 2001 "generators/odoc_todo.ml" 59 1976 2024
+type(
+  Odoc_info.text
+)
+"generators/odoc_todo.ml" 62 2089 2123 "generators/odoc_todo.ml" 62 2089 2124
+type(
+  int
+)
+ident(
+  def n "generators/odoc_todo.ml" 63 2146 2176 "generators/odoc_todo.ml" 66 2294 2348
+)
+"generators/odoc_todo.ml" 62 2089 2127 "generators/odoc_todo.ml" 62 2089 2140
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"generators/odoc_todo.ml" 62 2089 2141 "generators/odoc_todo.ml" 62 2089 2142
+type(
+  string
+)
+ident(
+  int_ref s "generators/odoc_todo.ml" 59 1976 2017 "generators/odoc_todo.ml" 59 1976 2018
+)
+"generators/odoc_todo.ml" 62 2089 2127 "generators/odoc_todo.ml" 62 2089 2142
+type(
+  int
+)
+"generators/odoc_todo.ml" 63 2146 2180 "generators/odoc_todo.ml" 63 2146 2184
+type(
+  Odoc_info.text_element
+)
+ident(
+  def head "generators/odoc_todo.ml" 66 2294 2324 "generators/odoc_todo.ml" 66 2294 2348
+)
+"generators/odoc_todo.ml" 64 2187 2235 "generators/odoc_todo.ml" 64 2187 2249
+type(
+  (int -> string, unit, string) format -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"generators/odoc_todo.ml" 64 2187 2250 "generators/odoc_todo.ml" 64 2187 2257
+type(
+  (int -> string, unit, string) format
+)
+"generators/odoc_todo.ml" 64 2187 2258 "generators/odoc_todo.ml" 64 2187 2259
+type(
+  int
+)
+ident(
+  int_ref n "generators/odoc_todo.ml" 62 2089 2123 "generators/odoc_todo.ml" 62 2089 2124
+)
+"generators/odoc_todo.ml" 64 2187 2234 "generators/odoc_todo.ml" 64 2187 2260
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_todo.ml" 64 2187 2219 "generators/odoc_todo.ml" 64 2187 2260
+type(
+  Odoc_info.text_element
+)
+"generators/odoc_todo.ml" 66 2294 2330 "generators/odoc_todo.ml" 66 2294 2331
+type(
+  int
+)
+ident(
+  int_ref n "generators/odoc_todo.ml" 62 2089 2123 "generators/odoc_todo.ml" 62 2089 2124
+)
+"generators/odoc_todo.ml" 66 2294 2325 "generators/odoc_todo.ml" 66 2294 2331
+type(
+  int option
+)
+"generators/odoc_todo.ml" 66 2294 2333 "generators/odoc_todo.ml" 66 2294 2337
+type(
+  Odoc_info.text_element
+)
+ident(
+  int_ref head "generators/odoc_todo.ml" 63 2146 2180 "generators/odoc_todo.ml" 63 2146 2184
+)
+"generators/odoc_todo.ml" 66 2294 2339 "generators/odoc_todo.ml" 66 2294 2340
+type(
+  Odoc_info.text_element list
+)
+ident(
+  int_ref q "generators/odoc_todo.ml" 59 1976 2023 "generators/odoc_todo.ml" 59 1976 2024
+)
+"generators/odoc_todo.ml" 66 2294 2333 "generators/odoc_todo.ml" 66 2294 2340
+type(
+  Odoc_info.text
+)
+"generators/odoc_todo.ml" 66 2294 2324 "generators/odoc_todo.ml" 66 2294 2341
+type(
+  int option * Odoc_info.text
+)
+"generators/odoc_todo.ml" 66 2294 2345 "generators/odoc_todo.ml" 66 2294 2348
+type(
+  (int option * Odoc_info.text) list
+)
+ident(
+  int_ref acc "generators/odoc_todo.ml" 54 1815 1834 "generators/odoc_todo.ml" 54 1815 1837
+)
+"generators/odoc_todo.ml" 66 2294 2324 "generators/odoc_todo.ml" 66 2294 2348
+type(
+  (int option * Odoc_info.text) list
+)
+"generators/odoc_todo.ml" 63 2146 2176 "generators/odoc_todo.ml" 66 2294 2348
+type(
+  (int option * Odoc_info.text) list
+)
+"generators/odoc_todo.ml" 62 2089 2119 "generators/odoc_todo.ml" 66 2294 2348
+type(
+  (int option * Odoc_info.text) list
+)
+"generators/odoc_todo.ml" 67 2349 2382 "generators/odoc_todo.ml" 67 2349 2383
+type(
+  exn
+)
+"generators/odoc_todo.ml" 67 2349 2388 "generators/odoc_todo.ml" 67 2349 2392
+type(
+  int option
+)
+"generators/odoc_todo.ml" 67 2349 2394 "generators/odoc_todo.ml" 67 2349 2398
+type(
+  Odoc_info.text
+)
+ident(
+  int_ref text "generators/odoc_todo.ml" 54 1815 1842 "generators/odoc_todo.ml" 54 1815 1846
+)
+"generators/odoc_todo.ml" 67 2349 2387 "generators/odoc_todo.ml" 67 2349 2399
+type(
+  int option * Odoc_info.text
+)
+"generators/odoc_todo.ml" 67 2349 2403 "generators/odoc_todo.ml" 67 2349 2406
+type(
+  (int option * Odoc_info.text) list
+)
+ident(
+  int_ref acc "generators/odoc_todo.ml" 54 1815 1834 "generators/odoc_todo.ml" 54 1815 1837
+)
+"generators/odoc_todo.ml" 67 2349 2387 "generators/odoc_todo.ml" 67 2349 2406
+type(
+  (int option * Odoc_info.text) list
+)
+"generators/odoc_todo.ml" 60 2028 2055 "generators/odoc_todo.ml" 68 2407 2435
+type(
+  (int option * Odoc_info.text) list
+)
+"generators/odoc_todo.ml" 69 2436 2461 "generators/odoc_todo.ml" 69 2436 2462
+type(
+  Odoc_info.text
+)
+"generators/odoc_todo.ml" 69 2436 2467 "generators/odoc_todo.ml" 69 2436 2471
+type(
+  int option
+)
+"generators/odoc_todo.ml" 69 2436 2473 "generators/odoc_todo.ml" 69 2436 2477
+type(
+  Odoc_info.text
+)
+ident(
+  int_ref text "generators/odoc_todo.ml" 54 1815 1842 "generators/odoc_todo.ml" 54 1815 1846
+)
+"generators/odoc_todo.ml" 69 2436 2466 "generators/odoc_todo.ml" 69 2436 2478
+type(
+  int option * Odoc_info.text
+)
+"generators/odoc_todo.ml" 69 2436 2482 "generators/odoc_todo.ml" 69 2436 2485
+type(
+  (int option * Odoc_info.text) list
+)
+ident(
+  int_ref acc "generators/odoc_todo.ml" 54 1815 1834 "generators/odoc_todo.ml" 54 1815 1837
+)
+"generators/odoc_todo.ml" 69 2436 2466 "generators/odoc_todo.ml" 69 2436 2485
+type(
+  (int option * Odoc_info.text) list
+)
+"generators/odoc_todo.ml" 57 1910 1931 "generators/odoc_todo.ml" 71 2487 2511
+type(
+  (int option * Odoc_info.text) list
+)
+"generators/odoc_todo.ml" 72 2512 2531 "generators/odoc_todo.ml" 72 2512 2532
+type(
+  string
+)
+"generators/odoc_todo.ml" 72 2512 2536 "generators/odoc_todo.ml" 72 2512 2539
+type(
+  (int option * Odoc_info.text) list
+)
+ident(
+  int_ref acc "generators/odoc_todo.ml" 54 1815 1834 "generators/odoc_todo.ml" 54 1815 1837
+)
+"generators/odoc_todo.ml" 55 1851 1868 "generators/odoc_todo.ml" 72 2512 2539
+type(
+  (int option * Odoc_info.text) list
+)
+"generators/odoc_todo.ml" 54 1815 1829 "generators/odoc_todo.ml" 73 2540 2555
+type(
+  (int option * Odoc_info.text) list ->
+  string * Odoc_info.text -> (int option * Odoc_info.text) list
+)
+"generators/odoc_todo.ml" 74 2556 2570 "generators/odoc_todo.ml" 74 2556 2572
+type(
+  (int option * Odoc_info.text) list
+)
+"generators/odoc_todo.ml" 75 2573 2587 "generators/odoc_todo.ml" 75 2573 2588
+type(
+  Odoc_info.info
+)
+ident(
+  int_ref i "generators/odoc_todo.ml" 51 1752 1765 "generators/odoc_todo.ml" 51 1752 1766
+)
+"generators/odoc_todo.ml" 75 2573 2587 "generators/odoc_todo.ml" 75 2573 2597
+type(
+  (string * Odoc_info.text) list
+)
+"generators/odoc_todo.ml" 53 1788 1800 "generators/odoc_todo.ml" 75 2573 2597
+call(
+  stack
+)
+type(
+  (int option * Odoc_info.text) list
+)
+"generators/odoc_todo.ml" 77 2611 2627 "generators/odoc_todo.ml" 77 2611 2628
+type(
+  (int option * Odoc_info.text) list
+)
+ident(
+  int_ref l "generators/odoc_todo.ml" 52 1770 1784 "generators/odoc_todo.ml" 52 1770 1785
+)
+"generators/odoc_todo.ml" 78 2634 2646 "generators/odoc_todo.ml" 78 2634 2648
+type(
+  (int option * Odoc_info.text) list
+)
+"generators/odoc_todo.ml" 78 2634 2652 "generators/odoc_todo.ml" 78 2634 2654
+type(
+  unit
+)
+"generators/odoc_todo.ml" 79 2655 2667 "generators/odoc_todo.ml" 79 2655 2668
+type(
+  (int option * Odoc_info.text) list
+)
+"generators/odoc_todo.ml" 80 2672 2690 "generators/odoc_todo.ml" 80 2672 2691
+type(
+  (int option * Odoc_info.text) list
+)
+ident(
+  def l "generators/odoc_todo.ml" 89 2964 2978 "generators/odoc_todo.ml" 105 3579 3605
+)
+"generators/odoc_todo.ml" 80 2672 2694 "generators/odoc_todo.ml" 80 2672 2703
+type(
+  (int option * Odoc_info.text -> int option * Odoc_info.text -> int) ->
+  (int option * Odoc_info.text) list -> (int option * Odoc_info.text) list
+)
+ident(
+  ext_ref List.sort
+)
+"generators/odoc_todo.ml" 81 2704 2725 "generators/odoc_todo.ml" 81 2704 2726
+type(
+  int option * Odoc_info.text
+)
+ident(
+  def a "generators/odoc_todo.ml" 81 2704 2727 "generators/odoc_todo.ml" 85 2846 2910
+)
+"generators/odoc_todo.ml" 81 2704 2727 "generators/odoc_todo.ml" 81 2704 2728
+type(
+  int option * Odoc_info.text
+)
+ident(
+  def b "generators/odoc_todo.ml" 82 2732 2751 "generators/odoc_todo.ml" 85 2846 2910
+)
+"generators/odoc_todo.ml" 82 2732 2757 "generators/odoc_todo.ml" 82 2732 2758
+type(
+  int option * Odoc_info.text
+)
+ident(
+  int_ref a "generators/odoc_todo.ml" 81 2704 2725 "generators/odoc_todo.ml" 81 2704 2726
+)
+"generators/odoc_todo.ml" 82 2732 2760 "generators/odoc_todo.ml" 82 2732 2761
+type(
+  int option * Odoc_info.text
+)
+ident(
+  int_ref b "generators/odoc_todo.ml" 81 2704 2727 "generators/odoc_todo.ml" 81 2704 2728
+)
+"generators/odoc_todo.ml" 82 2732 2757 "generators/odoc_todo.ml" 82 2732 2761
+type(
+  (int option * Odoc_info.text) * (int option * Odoc_info.text)
+)
+"generators/odoc_todo.ml" 83 2767 2789 "generators/odoc_todo.ml" 83 2767 2793
+type(
+  int option
+)
+"generators/odoc_todo.ml" 83 2767 2795 "generators/odoc_todo.ml" 83 2767 2796
+type(
+  Odoc_info.text
+)
+"generators/odoc_todo.ml" 83 2767 2788 "generators/odoc_todo.ml" 83 2767 2797
+type(
+  int option * Odoc_info.text
+)
+"generators/odoc_todo.ml" 83 2767 2799 "generators/odoc_todo.ml" 83 2767 2800
+type(
+  int option * Odoc_info.text
+)
+"generators/odoc_todo.ml" 83 2767 2788 "generators/odoc_todo.ml" 83 2767 2800
+type(
+  (int option * Odoc_info.text) * (int option * Odoc_info.text)
+)
+"generators/odoc_todo.ml" 83 2767 2804 "generators/odoc_todo.ml" 83 2767 2806
+type(
+  int
+)
+"generators/odoc_todo.ml" 84 2807 2828 "generators/odoc_todo.ml" 84 2807 2829
+type(
+  int option * Odoc_info.text
+)
+"generators/odoc_todo.ml" 84 2807 2832 "generators/odoc_todo.ml" 84 2807 2836
+type(
+  int option
+)
+"generators/odoc_todo.ml" 84 2807 2838 "generators/odoc_todo.ml" 84 2807 2839
+type(
+  Odoc_info.text
+)
+"generators/odoc_todo.ml" 84 2807 2831 "generators/odoc_todo.ml" 84 2807 2840
+type(
+  int option * Odoc_info.text
+)
+"generators/odoc_todo.ml" 84 2807 2828 "generators/odoc_todo.ml" 84 2807 2840
+type(
+  (int option * Odoc_info.text) * (int option * Odoc_info.text)
+)
+"generators/odoc_todo.ml" 84 2807 2844 "generators/odoc_todo.ml" 84 2807 2845
+type(
+  int
+)
+"generators/odoc_todo.ml" 85 2846 2873 "generators/odoc_todo.ml" 85 2846 2875
+type(
+  int
+)
+ident(
+  def n1 "generators/odoc_todo.ml" 85 2846 2897 "generators/odoc_todo.ml" 85 2846 2910
+)
+"generators/odoc_todo.ml" 85 2846 2868 "generators/odoc_todo.ml" 85 2846 2875
+type(
+  int option
+)
+"generators/odoc_todo.ml" 85 2846 2877 "generators/odoc_todo.ml" 85 2846 2878
+type(
+  Odoc_info.text
+)
+"generators/odoc_todo.ml" 85 2846 2867 "generators/odoc_todo.ml" 85 2846 2879
+type(
+  int option * Odoc_info.text
+)
+"generators/odoc_todo.ml" 85 2846 2887 "generators/odoc_todo.ml" 85 2846 2889
+type(
+  int
+)
+ident(
+  def n2 "generators/odoc_todo.ml" 85 2846 2897 "generators/odoc_todo.ml" 85 2846 2910
+)
+"generators/odoc_todo.ml" 85 2846 2882 "generators/odoc_todo.ml" 85 2846 2889
+type(
+  int option
+)
+"generators/odoc_todo.ml" 85 2846 2891 "generators/odoc_todo.ml" 85 2846 2892
+type(
+  Odoc_info.text
+)
+"generators/odoc_todo.ml" 85 2846 2881 "generators/odoc_todo.ml" 85 2846 2893
+type(
+  int option * Odoc_info.text
+)
+"generators/odoc_todo.ml" 85 2846 2867 "generators/odoc_todo.ml" 85 2846 2893
+type(
+  (int option * Odoc_info.text) * (int option * Odoc_info.text)
+)
+"generators/odoc_todo.ml" 85 2846 2897 "generators/odoc_todo.ml" 85 2846 2904
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"generators/odoc_todo.ml" 85 2846 2905 "generators/odoc_todo.ml" 85 2846 2907
+type(
+  int
+)
+ident(
+  int_ref n1 "generators/odoc_todo.ml" 85 2846 2873 "generators/odoc_todo.ml" 85 2846 2875
+)
+"generators/odoc_todo.ml" 85 2846 2908 "generators/odoc_todo.ml" 85 2846 2910
+type(
+  int
+)
+ident(
+  int_ref n2 "generators/odoc_todo.ml" 85 2846 2887 "generators/odoc_todo.ml" 85 2846 2889
+)
+"generators/odoc_todo.ml" 85 2846 2897 "generators/odoc_todo.ml" 85 2846 2910
+type(
+  int
+)
+"generators/odoc_todo.ml" 82 2732 2751 "generators/odoc_todo.ml" 85 2846 2910
+type(
+  int
+)
+"generators/odoc_todo.ml" 81 2704 2720 "generators/odoc_todo.ml" 86 2911 2928
+type(
+  int option * Odoc_info.text -> int option * Odoc_info.text -> int
+)
+"generators/odoc_todo.ml" 87 2929 2945 "generators/odoc_todo.ml" 87 2929 2946
+type(
+  (int option * Odoc_info.text) list
+)
+ident(
+  int_ref l "generators/odoc_todo.ml" 52 1770 1784 "generators/odoc_todo.ml" 52 1770 1785
+)
+"generators/odoc_todo.ml" 80 2672 2694 "generators/odoc_todo.ml" 87 2929 2946
+call(
+  stack
+)
+type(
+  (int option * Odoc_info.text) list
+)
+"generators/odoc_todo.ml" 89 2964 2978 "generators/odoc_todo.ml" 89 2964 2979
+type(
+  Buffer.t ->
+  (string -> Odoc_info.Name.t -> unit, Buffer.t, unit) format ->
+  string -> Odoc_info.Name.t -> unit
+)
+ident(
+  int_ref p "generators/odoc_todo.ml" 25 1147 1151 "generators/odoc_todo.ml" 25 1147 1152
+)
+"generators/odoc_todo.ml" 89 2964 2980 "generators/odoc_todo.ml" 89 2964 2981
+type(
+  Buffer.t
+)
+ident(
+  ext_ref b
+)
+"generators/odoc_todo.ml" 89 2964 2982 "generators/odoc_todo.ml" 89 2964 3036
+type(
+  (string -> Odoc_info.Name.t -> unit, Buffer.t, unit) format
+)
+"generators/odoc_todo.ml" 90 3037 3053 "generators/odoc_todo.ml" 90 3037 3059
+type(
+  string
+)
+ident(
+  int_ref target "generators/odoc_todo.ml" 48 1654 1689 "generators/odoc_todo.ml" 48 1654 1695
+)
+"generators/odoc_todo.ml" 90 3037 3060 "generators/odoc_todo.ml" 90 3037 3064
+type(
+  Odoc_info.Name.t
+)
+ident(
+  int_ref name "generators/odoc_todo.ml" 48 1654 1684 "generators/odoc_todo.ml" 48 1654 1688
+)
+"generators/odoc_todo.ml" 89 2964 2978 "generators/odoc_todo.ml" 90 3037 3064
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_todo.ml" 91 3066 3084 "generators/odoc_todo.ml" 91 3066 3087
+type(
+  int option -> string
+)
+ident(
+  def col "generators/odoc_todo.ml" 98 3330 3344 "generators/odoc_todo.ml" 105 3579 3605
+)
+"generators/odoc_todo.ml" 92 3099 3115 "generators/odoc_todo.ml" 92 3099 3119
+type(
+  int option
+)
+"generators/odoc_todo.ml" 92 3099 3123 "generators/odoc_todo.ml" 92 3099 3132
+type(
+  string
+)
+"generators/odoc_todo.ml" 93 3133 3154 "generators/odoc_todo.ml" 93 3133 3155
+type(
+  int
+)
+"generators/odoc_todo.ml" 93 3133 3149 "generators/odoc_todo.ml" 93 3133 3155
+type(
+  int option
+)
+"generators/odoc_todo.ml" 93 3133 3159 "generators/odoc_todo.ml" 93 3133 3168
+type(
+  string
+)
+"generators/odoc_todo.ml" 94 3169 3190 "generators/odoc_todo.ml" 94 3169 3191
+type(
+  int
+)
+"generators/odoc_todo.ml" 94 3169 3185 "generators/odoc_todo.ml" 94 3169 3191
+type(
+  int option
+)
+"generators/odoc_todo.ml" 94 3169 3195 "generators/odoc_todo.ml" 94 3169 3204
+type(
+  string
+)
+"generators/odoc_todo.ml" 95 3205 3226 "generators/odoc_todo.ml" 95 3205 3227
+type(
+  int
+)
+"generators/odoc_todo.ml" 95 3205 3221 "generators/odoc_todo.ml" 95 3205 3227
+type(
+  int option
+)
+"generators/odoc_todo.ml" 95 3205 3231 "generators/odoc_todo.ml" 95 3205 3240
+type(
+  string
+)
+"generators/odoc_todo.ml" 96 3241 3262 "generators/odoc_todo.ml" 96 3241 3263
+type(
+  int
+)
+ident(
+  def n "generators/odoc_todo.ml" 96 3241 3267 "generators/odoc_todo.ml" 96 3241 3312
+)
+"generators/odoc_todo.ml" 96 3241 3257 "generators/odoc_todo.ml" 96 3241 3263
+type(
+  int option
+)
+"generators/odoc_todo.ml" 96 3241 3267 "generators/odoc_todo.ml" 96 3241 3281
+type(
+  (int -> string, unit, string) format -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"generators/odoc_todo.ml" 96 3241 3282 "generators/odoc_todo.ml" 96 3241 3292
+type(
+  (int -> string, unit, string) format
+)
+"generators/odoc_todo.ml" 96 3241 3294 "generators/odoc_todo.ml" 96 3241 3298
+type(
+  int
+)
+"generators/odoc_todo.ml" 96 3241 3299 "generators/odoc_todo.ml" 96 3241 3300
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"generators/odoc_todo.ml" 96 3241 3302 "generators/odoc_todo.ml" 96 3241 3303
+type(
+  int
+)
+ident(
+  int_ref n "generators/odoc_todo.ml" 96 3241 3262 "generators/odoc_todo.ml" 96 3241 3263
+)
+"generators/odoc_todo.ml" 96 3241 3304 "generators/odoc_todo.ml" 96 3241 3305
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"generators/odoc_todo.ml" 96 3241 3306 "generators/odoc_todo.ml" 96 3241 3310
+type(
+  int
+)
+"generators/odoc_todo.ml" 96 3241 3301 "generators/odoc_todo.ml" 96 3241 3311
+type(
+  int
+)
+"generators/odoc_todo.ml" 96 3241 3293 "generators/odoc_todo.ml" 96 3241 3312
+type(
+  int
+)
+"generators/odoc_todo.ml" 96 3241 3267 "generators/odoc_todo.ml" 96 3241 3312
+call(
+  tail
+)
+type(
+  string
+)
+"generators/odoc_todo.ml" 91 3066 3090 "generators/odoc_todo.ml" 96 3241 3312
+type(
+  int option -> string
+)
+"generators/odoc_todo.ml" 98 3330 3344 "generators/odoc_todo.ml" 98 3330 3353
+type(
+  (int option * Odoc_info.text -> unit) ->
+  (int option * Odoc_info.text) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"generators/odoc_todo.ml" 99 3354 3376 "generators/odoc_todo.ml" 99 3354 3377
+type(
+  int option
+)
+ident(
+  def n "generators/odoc_todo.ml" 100 3385 3404 "generators/odoc_todo.ml" 102 3501 3541
+)
+"generators/odoc_todo.ml" 99 3354 3379 "generators/odoc_todo.ml" 99 3354 3380
+type(
+  Odoc_info.text
+)
+ident(
+  def e "generators/odoc_todo.ml" 100 3385 3404 "generators/odoc_todo.ml" 102 3501 3541
+)
+"generators/odoc_todo.ml" 99 3354 3375 "generators/odoc_todo.ml" 99 3354 3381
+type(
+  int option * Odoc_info.text
+)
+"generators/odoc_todo.ml" 100 3385 3404 "generators/odoc_todo.ml" 100 3385 3418
+type(
+  Buffer.t -> (string -> unit, Buffer.t, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.bprintf
+)
+"generators/odoc_todo.ml" 100 3385 3419 "generators/odoc_todo.ml" 100 3385 3420
+type(
+  Buffer.t
+)
+ident(
+  ext_ref b
+)
+"generators/odoc_todo.ml" 100 3385 3421 "generators/odoc_todo.ml" 100 3385 3449
+type(
+  (string -> unit, Buffer.t, unit) format
+)
+"generators/odoc_todo.ml" 100 3385 3451 "generators/odoc_todo.ml" 100 3385 3454
+type(
+  int option -> string
+)
+ident(
+  int_ref col "generators/odoc_todo.ml" 91 3066 3084 "generators/odoc_todo.ml" 91 3066 3087
+)
+"generators/odoc_todo.ml" 100 3385 3455 "generators/odoc_todo.ml" 100 3385 3456
+type(
+  int option
+)
+ident(
+  int_ref n "generators/odoc_todo.ml" 99 3354 3376 "generators/odoc_todo.ml" 99 3354 3377
+)
+"generators/odoc_todo.ml" 100 3385 3450 "generators/odoc_todo.ml" 100 3385 3457
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_todo.ml" 100 3385 3404 "generators/odoc_todo.ml" 100 3385 3457
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_todo.ml" 101 3459 3478 "generators/odoc_todo.ml" 101 3459 3482
+type(
+  < html_of_text : Buffer.t -> Odoc_info.text -> 'a; .. > as 'b
+)
+ident(
+  int_ref html "generators/odoc_todo.ml" 41 1522 1538 "generators/odoc_todo.ml" 41 1522 1542
+)
+"generators/odoc_todo.ml" 101 3459 3478 "generators/odoc_todo.ml" 101 3459 3495
+call(
+  stack
+)
+type(
+  Buffer.t -> Odoc_info.text -> 'a
+)
+"generators/odoc_todo.ml" 101 3459 3496 "generators/odoc_todo.ml" 101 3459 3497
+type(
+  Buffer.t
+)
+ident(
+  ext_ref b
+)
+"generators/odoc_todo.ml" 101 3459 3498 "generators/odoc_todo.ml" 101 3459 3499
+type(
+  Odoc_info.text
+)
+ident(
+  int_ref e "generators/odoc_todo.ml" 99 3354 3379 "generators/odoc_todo.ml" 99 3354 3380
+)
+"generators/odoc_todo.ml" 101 3459 3478 "generators/odoc_todo.ml" 101 3459 3499
+type(
+  'a
+)
+"generators/odoc_todo.ml" 102 3501 3520 "generators/odoc_todo.ml" 102 3501 3521
+type(
+  Buffer.t -> (unit, Buffer.t, unit) format -> unit
+)
+ident(
+  int_ref p "generators/odoc_todo.ml" 25 1147 1151 "generators/odoc_todo.ml" 25 1147 1152
+)
+"generators/odoc_todo.ml" 102 3501 3522 "generators/odoc_todo.ml" 102 3501 3523
+type(
+  Buffer.t
+)
+ident(
+  ext_ref b
+)
+"generators/odoc_todo.ml" 102 3501 3524 "generators/odoc_todo.ml" 102 3501 3540
+type(
+  (unit, Buffer.t, unit) format
+)
+"generators/odoc_todo.ml" 102 3501 3520 "generators/odoc_todo.ml" 102 3501 3541
+call(
+  tail
+)
+type(
+  unit
+)
+"generators/odoc_todo.ml" 101 3459 3478 "generators/odoc_todo.ml" 102 3501 3541
+type(
+  unit
+)
+"generators/odoc_todo.ml" 100 3385 3404 "generators/odoc_todo.ml" 102 3501 3541
+type(
+  unit
+)
+"generators/odoc_todo.ml" 99 3354 3370 "generators/odoc_todo.ml" 103 3542 3559
+type(
+  int option * Odoc_info.text -> unit
+)
+"generators/odoc_todo.ml" 104 3560 3576 "generators/odoc_todo.ml" 104 3560 3577
+type(
+  (int option * Odoc_info.text) list
+)
+ident(
+  int_ref l "generators/odoc_todo.ml" 80 2672 2690 "generators/odoc_todo.ml" 80 2672 2691
+)
+"generators/odoc_todo.ml" 98 3330 3344 "generators/odoc_todo.ml" 104 3560 3577
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_todo.ml" 105 3579 3593 "generators/odoc_todo.ml" 105 3579 3594
+type(
+  Buffer.t -> (unit, Buffer.t, unit) format -> unit
+)
+ident(
+  int_ref p "generators/odoc_todo.ml" 25 1147 1151 "generators/odoc_todo.ml" 25 1147 1152
+)
+"generators/odoc_todo.ml" 105 3579 3595 "generators/odoc_todo.ml" 105 3579 3596
+type(
+  Buffer.t
+)
+ident(
+  ext_ref b
+)
+"generators/odoc_todo.ml" 105 3579 3597 "generators/odoc_todo.ml" 105 3579 3605
+type(
+  (unit, Buffer.t, unit) format
+)
+"generators/odoc_todo.ml" 105 3579 3593 "generators/odoc_todo.ml" 105 3579 3605
+call(
+  tail
+)
+type(
+  unit
+)
+"generators/odoc_todo.ml" 98 3330 3344 "generators/odoc_todo.ml" 105 3579 3605
+type(
+  unit
+)
+"generators/odoc_todo.ml" 91 3066 3080 "generators/odoc_todo.ml" 105 3579 3605
+type(
+  unit
+)
+"generators/odoc_todo.ml" 89 2964 2978 "generators/odoc_todo.ml" 105 3579 3605
+type(
+  unit
+)
+"generators/odoc_todo.ml" 80 2672 2686 "generators/odoc_todo.ml" 105 3579 3605
+type(
+  unit
+)
+"generators/odoc_todo.ml" 77 2611 2621 "generators/odoc_todo.ml" 105 3579 3605
+type(
+  unit
+)
+"generators/odoc_todo.ml" 52 1770 1780 "generators/odoc_todo.ml" 105 3579 3605
+type(
+  unit
+)
+"generators/odoc_todo.ml" 49 1707 1713 "generators/odoc_todo.ml" 105 3579 3605
+type(
+  unit
+)
+"generators/odoc_todo.ml" 107 3607 3629 "generators/odoc_todo.ml" 107 3607 3630
+type(
+  Odoc_info.Value.t_value
+)
+ident(
+  def v "generators/odoc_todo.ml" 108 3633 3639 "generators/odoc_todo.ml" 111 3725 3743
+)
+"generators/odoc_todo.ml" 108 3633 3639 "generators/odoc_todo.ml" 108 3633 3643
+type(
+  < buffer : Buffer.t; scan_attribute : Odoc_info.Value.t_attribute -> unit;
+    scan_class : Odoc_info.Class.t_class -> unit;
+    scan_class_comment : Odoc_info.text -> unit;
+    scan_class_elements : Odoc_info.Class.t_class -> unit;
+    scan_class_pre : Odoc_info.Class.t_class -> bool;
+    scan_class_type : Odoc_info.Class.t_class_type -> unit;
+    scan_class_type_comment : Odoc_info.text -> unit;
+    scan_class_type_elements : Odoc_info.Class.t_class_type -> unit;
+    scan_class_type_pre : Odoc_info.Class.t_class_type -> bool;
+    scan_exception : Odoc_info.Exception.t_exception -> unit;
+    scan_extension_constructor : Odoc_info.Extension.t_extension_constructor ->
+                                 unit;
+    scan_included_module : Odoc_info.Module.included_module -> unit;
+    scan_method : Odoc_info.Value.t_method -> unit;
+    scan_module : Odoc_info.Module.t_module -> unit;
+    scan_module_comment : Odoc_info.text -> unit;
+    scan_module_elements : Odoc_info.Module.t_module -> unit;
+    scan_module_list : Odoc_info.Module.t_module list -> unit;
+    scan_module_pre : Odoc_info.Module.t_module -> bool;
+    scan_module_type : Odoc_info.Module.t_module_type -> unit;
+    scan_module_type_comment : Odoc_info.text -> unit;
+    scan_module_type_elements : Odoc_info.Module.t_module_type -> unit;
+    scan_module_type_pre : Odoc_info.Module.t_module_type -> bool;
+    scan_type : Odoc_info.Type.t_type -> unit;
+    scan_type_const : Odoc_info.Type.t_type ->
+                      Odoc_info.Type.variant_constructor -> unit;
+    scan_type_extension : Odoc_info.Extension.t_type_extension -> unit;
+    scan_type_extension_constructors : Odoc_info.Extension.t_type_extension ->
+                                       unit;
+    scan_type_extension_pre : Odoc_info.Extension.t_type_extension -> bool;
+    scan_type_pre : Odoc_info.Type.t_type -> bool;
+    scan_type_recfield : Odoc_info.Type.t_type ->
+                         Odoc_info.Type.record_field -> unit;
+    scan_value : Odoc_info.Value.t_value -> unit; .. >
+  as 'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 108 3633 3639 "generators/odoc_todo.ml" 108 3633 3654
+call(
+  tail
+)
+type(
+  Odoc_info.Name.t -> string -> Odoc_info.info option -> unit
+)
+"generators/odoc_todo.ml" 109 3655 3663 "generators/odoc_todo.ml" 109 3655 3664
+type(
+  Odoc_info.Value.t_value
+)
+ident(
+  int_ref v "generators/odoc_todo.ml" 107 3607 3629 "generators/odoc_todo.ml" 107 3607 3630
+)
+"generators/odoc_todo.ml" 109 3655 3663 "generators/odoc_todo.ml" 109 3655 3673
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_todo.ml" 110 3674 3683 "generators/odoc_todo.ml" 110 3674 3721
+type(
+  Odoc_info.Value.t_value -> string
+)
+ident(
+  ext_ref Odoc_html.Naming.complete_value_target
+)
+"generators/odoc_todo.ml" 110 3674 3722 "generators/odoc_todo.ml" 110 3674 3723
+type(
+  Odoc_info.Value.t_value
+)
+ident(
+  int_ref v "generators/odoc_todo.ml" 107 3607 3629 "generators/odoc_todo.ml" 107 3607 3630
+)
+"generators/odoc_todo.ml" 110 3674 3682 "generators/odoc_todo.ml" 110 3674 3724
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_todo.ml" 111 3725 3733 "generators/odoc_todo.ml" 111 3725 3734
+type(
+  Odoc_info.Value.t_value
+)
+ident(
+  int_ref v "generators/odoc_todo.ml" 107 3607 3629 "generators/odoc_todo.ml" 107 3607 3630
+)
+"generators/odoc_todo.ml" 111 3725 3733 "generators/odoc_todo.ml" 111 3725 3743
+type(
+  Odoc_info.info option
+)
+"generators/odoc_todo.ml" 108 3633 3639 "generators/odoc_todo.ml" 111 3725 3743
+type(
+  unit
+)
+"generators/odoc_todo.ml" 113 3745 3766 "generators/odoc_todo.ml" 113 3745 3767
+type(
+  Odoc_info.Type.t_type
+)
+ident(
+  def t "generators/odoc_todo.ml" 114 3770 3776 "generators/odoc_todo.ml" 117 3860 3877
+)
+"generators/odoc_todo.ml" 114 3770 3776 "generators/odoc_todo.ml" 114 3770 3780
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 114 3770 3776 "generators/odoc_todo.ml" 114 3770 3791
+call(
+  tail
+)
+type(
+  Odoc_info.Name.t -> string -> Odoc_info.info option -> unit
+)
+"generators/odoc_todo.ml" 115 3792 3800 "generators/odoc_todo.ml" 115 3792 3801
+type(
+  Odoc_info.Type.t_type
+)
+ident(
+  int_ref t "generators/odoc_todo.ml" 113 3745 3766 "generators/odoc_todo.ml" 113 3745 3767
+)
+"generators/odoc_todo.ml" 115 3792 3800 "generators/odoc_todo.ml" 115 3792 3809
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_todo.ml" 116 3810 3819 "generators/odoc_todo.ml" 116 3810 3856
+type(
+  Odoc_info.Type.t_type -> string
+)
+ident(
+  ext_ref Odoc_html.Naming.complete_type_target
+)
+"generators/odoc_todo.ml" 116 3810 3857 "generators/odoc_todo.ml" 116 3810 3858
+type(
+  Odoc_info.Type.t_type
+)
+ident(
+  int_ref t "generators/odoc_todo.ml" 113 3745 3766 "generators/odoc_todo.ml" 113 3745 3767
+)
+"generators/odoc_todo.ml" 116 3810 3818 "generators/odoc_todo.ml" 116 3810 3859
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_todo.ml" 117 3860 3868 "generators/odoc_todo.ml" 117 3860 3869
+type(
+  Odoc_info.Type.t_type
+)
+ident(
+  int_ref t "generators/odoc_todo.ml" 113 3745 3766 "generators/odoc_todo.ml" 113 3745 3767
+)
+"generators/odoc_todo.ml" 117 3860 3868 "generators/odoc_todo.ml" 117 3860 3877
+type(
+  Odoc_info.info option
+)
+"generators/odoc_todo.ml" 114 3770 3776 "generators/odoc_todo.ml" 117 3860 3877
+type(
+  unit
+)
+"generators/odoc_todo.ml" 119 3879 3917 "generators/odoc_todo.ml" 119 3879 3918
+type(
+  Odoc_info.Extension.t_extension_constructor
+)
+ident(
+  def x "generators/odoc_todo.ml" 120 3921 3927 "generators/odoc_todo.ml" 123 4016 4051
+)
+"generators/odoc_todo.ml" 120 3921 3927 "generators/odoc_todo.ml" 120 3921 3931
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 120 3921 3927 "generators/odoc_todo.ml" 120 3921 3942
+call(
+  tail
+)
+type(
+  Odoc_info.Name.t -> string -> Odoc_info.info option -> unit
+)
+"generators/odoc_todo.ml" 121 3943 3951 "generators/odoc_todo.ml" 121 3943 3952
+type(
+  Odoc_info.Extension.t_extension_constructor
+)
+ident(
+  int_ref x "generators/odoc_todo.ml" 119 3879 3917 "generators/odoc_todo.ml" 119 3879 3918
+)
+"generators/odoc_todo.ml" 121 3943 3951 "generators/odoc_todo.ml" 121 3943 3960
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_todo.ml" 122 3961 3970 "generators/odoc_todo.ml" 122 3961 4012
+type(
+  Odoc_info.Extension.t_extension_constructor -> string
+)
+ident(
+  ext_ref Odoc_html.Naming.complete_extension_target
+)
+"generators/odoc_todo.ml" 122 3961 4013 "generators/odoc_todo.ml" 122 3961 4014
+type(
+  Odoc_info.Extension.t_extension_constructor
+)
+ident(
+  int_ref x "generators/odoc_todo.ml" 119 3879 3917 "generators/odoc_todo.ml" 119 3879 3918
+)
+"generators/odoc_todo.ml" 122 3961 3969 "generators/odoc_todo.ml" 122 3961 4015
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_todo.ml" 123 4016 4024 "generators/odoc_todo.ml" 123 4016 4025
+type(
+  Odoc_info.Extension.t_extension_constructor
+)
+ident(
+  int_ref x "generators/odoc_todo.ml" 119 3879 3917 "generators/odoc_todo.ml" 119 3879 3918
+)
+"generators/odoc_todo.ml" 123 4016 4024 "generators/odoc_todo.ml" 123 4016 4043
+type(
+  Odoc_info.Extension.t_type_extension
+)
+"generators/odoc_todo.ml" 123 4016 4024 "generators/odoc_todo.ml" 123 4016 4051
+type(
+  Odoc_info.info option
+)
+"generators/odoc_todo.ml" 120 3921 3927 "generators/odoc_todo.ml" 123 4016 4051
+type(
+  unit
+)
+"generators/odoc_todo.ml" 125 4053 4079 "generators/odoc_todo.ml" 125 4053 4080
+type(
+  Odoc_info.Exception.t_exception
+)
+ident(
+  def e "generators/odoc_todo.ml" 126 4083 4089 "generators/odoc_todo.ml" 129 4178 4195
+)
+"generators/odoc_todo.ml" 126 4083 4089 "generators/odoc_todo.ml" 126 4083 4093
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 126 4083 4089 "generators/odoc_todo.ml" 126 4083 4104
+call(
+  tail
+)
+type(
+  Odoc_info.Name.t -> string -> Odoc_info.info option -> unit
+)
+"generators/odoc_todo.ml" 127 4105 4113 "generators/odoc_todo.ml" 127 4105 4114
+type(
+  Odoc_info.Exception.t_exception
+)
+ident(
+  int_ref e "generators/odoc_todo.ml" 125 4053 4079 "generators/odoc_todo.ml" 125 4053 4080
+)
+"generators/odoc_todo.ml" 127 4105 4113 "generators/odoc_todo.ml" 127 4105 4122
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_todo.ml" 128 4123 4132 "generators/odoc_todo.ml" 128 4123 4174
+type(
+  Odoc_info.Exception.t_exception -> string
+)
+ident(
+  ext_ref Odoc_html.Naming.complete_exception_target
+)
+"generators/odoc_todo.ml" 128 4123 4175 "generators/odoc_todo.ml" 128 4123 4176
+type(
+  Odoc_info.Exception.t_exception
+)
+ident(
+  int_ref e "generators/odoc_todo.ml" 125 4053 4079 "generators/odoc_todo.ml" 125 4053 4080
+)
+"generators/odoc_todo.ml" 128 4123 4131 "generators/odoc_todo.ml" 128 4123 4177
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_todo.ml" 129 4178 4186 "generators/odoc_todo.ml" 129 4178 4187
+type(
+  Odoc_info.Exception.t_exception
+)
+ident(
+  int_ref e "generators/odoc_todo.ml" 125 4053 4079 "generators/odoc_todo.ml" 125 4053 4080
+)
+"generators/odoc_todo.ml" 129 4178 4186 "generators/odoc_todo.ml" 129 4178 4195
+type(
+  Odoc_info.info option
+)
+"generators/odoc_todo.ml" 126 4083 4089 "generators/odoc_todo.ml" 129 4178 4195
+type(
+  unit
+)
+"generators/odoc_todo.ml" 131 4197 4223 "generators/odoc_todo.ml" 131 4197 4224
+type(
+  Odoc_info.Value.t_attribute
+)
+ident(
+  def a "generators/odoc_todo.ml" 132 4227 4233 "generators/odoc_todo.ml" 135 4333 4361
+)
+"generators/odoc_todo.ml" 132 4227 4233 "generators/odoc_todo.ml" 132 4227 4237
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 132 4227 4233 "generators/odoc_todo.ml" 132 4227 4248
+call(
+  tail
+)
+type(
+  Odoc_info.Name.t -> string -> Odoc_info.info option -> unit
+)
+"generators/odoc_todo.ml" 133 4249 4257 "generators/odoc_todo.ml" 133 4249 4258
+type(
+  Odoc_info.Value.t_attribute
+)
+ident(
+  int_ref a "generators/odoc_todo.ml" 131 4197 4223 "generators/odoc_todo.ml" 131 4197 4224
+)
+"generators/odoc_todo.ml" 133 4249 4257 "generators/odoc_todo.ml" 133 4249 4268
+type(
+  Odoc_info.Value.t_value
+)
+"generators/odoc_todo.ml" 133 4249 4257 "generators/odoc_todo.ml" 133 4249 4277
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_todo.ml" 134 4278 4287 "generators/odoc_todo.ml" 134 4278 4329
+type(
+  Odoc_info.Value.t_attribute -> string
+)
+ident(
+  ext_ref Odoc_html.Naming.complete_attribute_target
+)
+"generators/odoc_todo.ml" 134 4278 4330 "generators/odoc_todo.ml" 134 4278 4331
+type(
+  Odoc_info.Value.t_attribute
+)
+ident(
+  int_ref a "generators/odoc_todo.ml" 131 4197 4223 "generators/odoc_todo.ml" 131 4197 4224
+)
+"generators/odoc_todo.ml" 134 4278 4286 "generators/odoc_todo.ml" 134 4278 4332
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_todo.ml" 135 4333 4341 "generators/odoc_todo.ml" 135 4333 4342
+type(
+  Odoc_info.Value.t_attribute
+)
+ident(
+  int_ref a "generators/odoc_todo.ml" 131 4197 4223 "generators/odoc_todo.ml" 131 4197 4224
+)
+"generators/odoc_todo.ml" 135 4333 4341 "generators/odoc_todo.ml" 135 4333 4352
+type(
+  Odoc_info.Value.t_value
+)
+"generators/odoc_todo.ml" 135 4333 4341 "generators/odoc_todo.ml" 135 4333 4361
+type(
+  Odoc_info.info option
+)
+"generators/odoc_todo.ml" 132 4227 4233 "generators/odoc_todo.ml" 135 4333 4361
+type(
+  unit
+)
+"generators/odoc_todo.ml" 137 4363 4386 "generators/odoc_todo.ml" 137 4363 4387
+type(
+  Odoc_info.Value.t_method
+)
+ident(
+  def m "generators/odoc_todo.ml" 138 4390 4396 "generators/odoc_todo.ml" 141 4493 4521
+)
+"generators/odoc_todo.ml" 138 4390 4396 "generators/odoc_todo.ml" 138 4390 4400
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 138 4390 4396 "generators/odoc_todo.ml" 138 4390 4411
+call(
+  tail
+)
+type(
+  Odoc_info.Name.t -> string -> Odoc_info.info option -> unit
+)
+"generators/odoc_todo.ml" 139 4412 4420 "generators/odoc_todo.ml" 139 4412 4421
+type(
+  Odoc_info.Value.t_method
+)
+ident(
+  int_ref m "generators/odoc_todo.ml" 137 4363 4386 "generators/odoc_todo.ml" 137 4363 4387
+)
+"generators/odoc_todo.ml" 139 4412 4420 "generators/odoc_todo.ml" 139 4412 4431
+type(
+  Odoc_info.Value.t_value
+)
+"generators/odoc_todo.ml" 139 4412 4420 "generators/odoc_todo.ml" 139 4412 4440
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_todo.ml" 140 4441 4450 "generators/odoc_todo.ml" 140 4441 4489
+type(
+  Odoc_info.Value.t_method -> string
+)
+ident(
+  ext_ref Odoc_html.Naming.complete_method_target
+)
+"generators/odoc_todo.ml" 140 4441 4490 "generators/odoc_todo.ml" 140 4441 4491
+type(
+  Odoc_info.Value.t_method
+)
+ident(
+  int_ref m "generators/odoc_todo.ml" 137 4363 4386 "generators/odoc_todo.ml" 137 4363 4387
+)
+"generators/odoc_todo.ml" 140 4441 4449 "generators/odoc_todo.ml" 140 4441 4492
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_todo.ml" 141 4493 4501 "generators/odoc_todo.ml" 141 4493 4502
+type(
+  Odoc_info.Value.t_method
+)
+ident(
+  int_ref m "generators/odoc_todo.ml" 137 4363 4386 "generators/odoc_todo.ml" 137 4363 4387
+)
+"generators/odoc_todo.ml" 141 4493 4501 "generators/odoc_todo.ml" 141 4493 4512
+type(
+  Odoc_info.Value.t_value
+)
+"generators/odoc_todo.ml" 141 4493 4501 "generators/odoc_todo.ml" 141 4493 4521
+type(
+  Odoc_info.info option
+)
+"generators/odoc_todo.ml" 138 4390 4396 "generators/odoc_todo.ml" 141 4493 4521
+type(
+  unit
+)
+"generators/odoc_todo.ml" 144 4584 4616 "generators/odoc_todo.ml" 144 4584 4617
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  def m "generators/odoc_todo.ml" 145 4620 4626 "generators/odoc_todo.ml" 159 5395 5448
+)
+"generators/odoc_todo.ml" 145 4620 4626 "generators/odoc_todo.ml" 145 4620 4635
+type(
+  (Odoc_module.module_element -> unit) ->
+  Odoc_module.module_element list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"generators/odoc_todo.ml" 146 4636 4649 "generators/odoc_todo.ml" 146 4636 4652
+type(
+  Odoc_module.module_element
+)
+ident(
+  def ele "generators/odoc_todo.ml" 147 4656 4666 "generators/odoc_todo.ml" 157 5306 5384
+)
+"generators/odoc_todo.ml" 147 4656 4672 "generators/odoc_todo.ml" 147 4656 4675
+type(
+  Odoc_module.module_element
+)
+ident(
+  int_ref ele "generators/odoc_todo.ml" 146 4636 4649 "generators/odoc_todo.ml" 146 4636 4652
+)
+"generators/odoc_todo.ml" 148 4681 4720 "generators/odoc_todo.ml" 148 4681 4721
+type(
+  Odoc_module.t_module
+)
+ident(
+  def m "generators/odoc_todo.ml" 148 4681 4725 "generators/odoc_todo.ml" 148 4681 4743
+)
+"generators/odoc_todo.ml" 148 4681 4693 "generators/odoc_todo.ml" 148 4681 4721
+type(
+  Odoc_module.module_element
+)
+"generators/odoc_todo.ml" 148 4681 4725 "generators/odoc_todo.ml" 148 4681 4729
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 148 4681 4725 "generators/odoc_todo.ml" 148 4681 4741
+call(
+  tail
+)
+type(
+  Odoc_info.Module.t_module -> unit
+)
+"generators/odoc_todo.ml" 148 4681 4742 "generators/odoc_todo.ml" 148 4681 4743
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  int_ref m "generators/odoc_todo.ml" 148 4681 4720 "generators/odoc_todo.ml" 148 4681 4721
+)
+"generators/odoc_todo.ml" 148 4681 4725 "generators/odoc_todo.ml" 148 4681 4743
+type(
+  unit
+)
+"generators/odoc_todo.ml" 149 4744 4788 "generators/odoc_todo.ml" 149 4744 4790
+type(
+  Odoc_module.t_module_type
+)
+ident(
+  def mt "generators/odoc_todo.ml" 149 4744 4794 "generators/odoc_todo.ml" 149 4744 4818
+)
+"generators/odoc_todo.ml" 149 4744 4756 "generators/odoc_todo.ml" 149 4744 4790
+type(
+  Odoc_module.module_element
+)
+"generators/odoc_todo.ml" 149 4744 4794 "generators/odoc_todo.ml" 149 4744 4798
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 149 4744 4794 "generators/odoc_todo.ml" 149 4744 4815
+call(
+  tail
+)
+type(
+  Odoc_info.Module.t_module_type -> unit
+)
+"generators/odoc_todo.ml" 149 4744 4816 "generators/odoc_todo.ml" 149 4744 4818
+type(
+  Odoc_info.Module.t_module_type
+)
+ident(
+  int_ref mt "generators/odoc_todo.ml" 149 4744 4788 "generators/odoc_todo.ml" 149 4744 4790
+)
+"generators/odoc_todo.ml" 149 4744 4794 "generators/odoc_todo.ml" 149 4744 4818
+type(
+  unit
+)
+"generators/odoc_todo.ml" 150 4819 4867 "generators/odoc_todo.ml" 150 4819 4869
+type(
+  Odoc_module.included_module
+)
+ident(
+  def im "generators/odoc_todo.ml" 150 4819 4873 "generators/odoc_todo.ml" 150 4819 4901
+)
+"generators/odoc_todo.ml" 150 4819 4831 "generators/odoc_todo.ml" 150 4819 4869
+type(
+  Odoc_module.module_element
+)
+"generators/odoc_todo.ml" 150 4819 4873 "generators/odoc_todo.ml" 150 4819 4877
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 150 4819 4873 "generators/odoc_todo.ml" 150 4819 4898
+call(
+  tail
+)
+type(
+  Odoc_info.Module.included_module -> unit
+)
+"generators/odoc_todo.ml" 150 4819 4899 "generators/odoc_todo.ml" 150 4819 4901
+type(
+  Odoc_info.Module.included_module
+)
+ident(
+  int_ref im "generators/odoc_todo.ml" 150 4819 4867 "generators/odoc_todo.ml" 150 4819 4869
+)
+"generators/odoc_todo.ml" 150 4819 4873 "generators/odoc_todo.ml" 150 4819 4901
+type(
+  unit
+)
+"generators/odoc_todo.ml" 151 4902 4940 "generators/odoc_todo.ml" 151 4902 4941
+type(
+  Odoc_class.t_class
+)
+ident(
+  def c "generators/odoc_todo.ml" 151 4902 4945 "generators/odoc_todo.ml" 151 4902 4962
+)
+"generators/odoc_todo.ml" 151 4902 4914 "generators/odoc_todo.ml" 151 4902 4941
+type(
+  Odoc_module.module_element
+)
+"generators/odoc_todo.ml" 151 4902 4945 "generators/odoc_todo.ml" 151 4902 4949
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 151 4902 4945 "generators/odoc_todo.ml" 151 4902 4960
+call(
+  tail
+)
+type(
+  Odoc_info.Class.t_class -> unit
+)
+"generators/odoc_todo.ml" 151 4902 4961 "generators/odoc_todo.ml" 151 4902 4962
+type(
+  Odoc_info.Class.t_class
+)
+ident(
+  int_ref c "generators/odoc_todo.ml" 151 4902 4940 "generators/odoc_todo.ml" 151 4902 4941
+)
+"generators/odoc_todo.ml" 151 4902 4945 "generators/odoc_todo.ml" 151 4902 4962
+type(
+  unit
+)
+"generators/odoc_todo.ml" 152 4963 5006 "generators/odoc_todo.ml" 152 4963 5008
+type(
+  Odoc_class.t_class_type
+)
+ident(
+  def ct "generators/odoc_todo.ml" 152 4963 5012 "generators/odoc_todo.ml" 152 4963 5035
+)
+"generators/odoc_todo.ml" 152 4963 4975 "generators/odoc_todo.ml" 152 4963 5008
+type(
+  Odoc_module.module_element
+)
+"generators/odoc_todo.ml" 152 4963 5012 "generators/odoc_todo.ml" 152 4963 5016
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 152 4963 5012 "generators/odoc_todo.ml" 152 4963 5032
+call(
+  tail
+)
+type(
+  Odoc_info.Class.t_class_type -> unit
+)
+"generators/odoc_todo.ml" 152 4963 5033 "generators/odoc_todo.ml" 152 4963 5035
+type(
+  Odoc_info.Class.t_class_type
+)
+ident(
+  int_ref ct "generators/odoc_todo.ml" 152 4963 5006 "generators/odoc_todo.ml" 152 4963 5008
+)
+"generators/odoc_todo.ml" 152 4963 5012 "generators/odoc_todo.ml" 152 4963 5035
+type(
+  unit
+)
+"generators/odoc_todo.ml" 153 5036 5074 "generators/odoc_todo.ml" 153 5036 5075
+type(
+  Odoc_value.t_value
+)
+ident(
+  def v "generators/odoc_todo.ml" 153 5036 5079 "generators/odoc_todo.ml" 153 5036 5096
+)
+"generators/odoc_todo.ml" 153 5036 5048 "generators/odoc_todo.ml" 153 5036 5075
+type(
+  Odoc_module.module_element
+)
+"generators/odoc_todo.ml" 153 5036 5079 "generators/odoc_todo.ml" 153 5036 5083
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 153 5036 5079 "generators/odoc_todo.ml" 153 5036 5094
+call(
+  tail
+)
+type(
+  Odoc_info.Value.t_value -> unit
+)
+"generators/odoc_todo.ml" 153 5036 5095 "generators/odoc_todo.ml" 153 5036 5096
+type(
+  Odoc_info.Value.t_value
+)
+ident(
+  int_ref v "generators/odoc_todo.ml" 153 5036 5074 "generators/odoc_todo.ml" 153 5036 5075
+)
+"generators/odoc_todo.ml" 153 5036 5079 "generators/odoc_todo.ml" 153 5036 5096
+type(
+  unit
+)
+"generators/odoc_todo.ml" 154 5097 5144 "generators/odoc_todo.ml" 154 5097 5146
+type(
+  Odoc_extension.t_type_extension
+)
+ident(
+  def te "generators/odoc_todo.ml" 154 5097 5150 "generators/odoc_todo.ml" 154 5097 5177
+)
+"generators/odoc_todo.ml" 154 5097 5109 "generators/odoc_todo.ml" 154 5097 5146
+type(
+  Odoc_module.module_element
+)
+"generators/odoc_todo.ml" 154 5097 5150 "generators/odoc_todo.ml" 154 5097 5154
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 154 5097 5150 "generators/odoc_todo.ml" 154 5097 5174
+call(
+  tail
+)
+type(
+  Odoc_info.Extension.t_type_extension -> unit
+)
+"generators/odoc_todo.ml" 154 5097 5175 "generators/odoc_todo.ml" 154 5097 5177
+type(
+  Odoc_info.Extension.t_type_extension
+)
+ident(
+  int_ref te "generators/odoc_todo.ml" 154 5097 5144 "generators/odoc_todo.ml" 154 5097 5146
+)
+"generators/odoc_todo.ml" 154 5097 5150 "generators/odoc_todo.ml" 154 5097 5177
+type(
+  unit
+)
+"generators/odoc_todo.ml" 155 5178 5220 "generators/odoc_todo.ml" 155 5178 5221
+type(
+  Odoc_exception.t_exception
+)
+ident(
+  def e "generators/odoc_todo.ml" 155 5178 5225 "generators/odoc_todo.ml" 155 5178 5246
+)
+"generators/odoc_todo.ml" 155 5178 5190 "generators/odoc_todo.ml" 155 5178 5221
+type(
+  Odoc_module.module_element
+)
+"generators/odoc_todo.ml" 155 5178 5225 "generators/odoc_todo.ml" 155 5178 5229
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 155 5178 5225 "generators/odoc_todo.ml" 155 5178 5244
+call(
+  tail
+)
+type(
+  Odoc_info.Exception.t_exception -> unit
+)
+"generators/odoc_todo.ml" 155 5178 5245 "generators/odoc_todo.ml" 155 5178 5246
+type(
+  Odoc_info.Exception.t_exception
+)
+ident(
+  int_ref e "generators/odoc_todo.ml" 155 5178 5220 "generators/odoc_todo.ml" 155 5178 5221
+)
+"generators/odoc_todo.ml" 155 5178 5225 "generators/odoc_todo.ml" 155 5178 5246
+type(
+  unit
+)
+"generators/odoc_todo.ml" 156 5247 5284 "generators/odoc_todo.ml" 156 5247 5285
+type(
+  Odoc_type.t_type
+)
+ident(
+  def t "generators/odoc_todo.ml" 156 5247 5289 "generators/odoc_todo.ml" 156 5247 5305
+)
+"generators/odoc_todo.ml" 156 5247 5259 "generators/odoc_todo.ml" 156 5247 5285
+type(
+  Odoc_module.module_element
+)
+"generators/odoc_todo.ml" 156 5247 5289 "generators/odoc_todo.ml" 156 5247 5293
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 156 5247 5289 "generators/odoc_todo.ml" 156 5247 5303
+call(
+  tail
+)
+type(
+  Odoc_info.Type.t_type -> unit
+)
+"generators/odoc_todo.ml" 156 5247 5304 "generators/odoc_todo.ml" 156 5247 5305
+type(
+  Odoc_info.Type.t_type
+)
+ident(
+  int_ref t "generators/odoc_todo.ml" 156 5247 5284 "generators/odoc_todo.ml" 156 5247 5285
+)
+"generators/odoc_todo.ml" 156 5247 5289 "generators/odoc_todo.ml" 156 5247 5305
+type(
+  unit
+)
+"generators/odoc_todo.ml" 157 5306 5353 "generators/odoc_todo.ml" 157 5306 5354
+type(
+  Odoc_types.text
+)
+ident(
+  def t "generators/odoc_todo.ml" 157 5306 5358 "generators/odoc_todo.ml" 157 5306 5384
+)
+"generators/odoc_todo.ml" 157 5306 5318 "generators/odoc_todo.ml" 157 5306 5354
+type(
+  Odoc_module.module_element
+)
+"generators/odoc_todo.ml" 157 5306 5358 "generators/odoc_todo.ml" 157 5306 5362
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 157 5306 5358 "generators/odoc_todo.ml" 157 5306 5382
+call(
+  tail
+)
+type(
+  Odoc_info.text -> unit
+)
+"generators/odoc_todo.ml" 157 5306 5383 "generators/odoc_todo.ml" 157 5306 5384
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref t "generators/odoc_todo.ml" 157 5306 5353 "generators/odoc_todo.ml" 157 5306 5354
+)
+"generators/odoc_todo.ml" 157 5306 5358 "generators/odoc_todo.ml" 157 5306 5384
+type(
+  unit
+)
+"generators/odoc_todo.ml" 147 4656 4666 "generators/odoc_todo.ml" 157 5306 5384
+type(
+  unit
+)
+"generators/odoc_todo.ml" 146 4636 4644 "generators/odoc_todo.ml" 158 5385 5394
+type(
+  Odoc_module.module_element -> unit
+)
+"generators/odoc_todo.ml" 159 5395 5404 "generators/odoc_todo.ml" 159 5395 5431
+type(
+  ?trans:bool -> Odoc_info.Module.t_module -> Odoc_module.module_element list
+)
+ident(
+  ext_ref Odoc_module.module_elements
+)
+"generators/odoc_todo.ml" 159 5395 5440 "generators/odoc_todo.ml" 159 5395 5445
+type(
+  bool
+)
+"generators/odoc_todo.ml" 159 5395 5446 "generators/odoc_todo.ml" 159 5395 5447
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  int_ref m "generators/odoc_todo.ml" 144 4584 4616 "generators/odoc_todo.ml" 144 4584 4617
+)
+"generators/odoc_todo.ml" 159 5395 5403 "generators/odoc_todo.ml" 159 5395 5448
+call(
+  stack
+)
+type(
+  Odoc_module.module_element list
+)
+"generators/odoc_todo.ml" 145 4620 4626 "generators/odoc_todo.ml" 159 5395 5448
+call(
+  tail
+)
+type(
+  unit
+)
+"generators/odoc_todo.ml" 161 5450 5482 "generators/odoc_todo.ml" 161 5450 5483
+type(
+  Odoc_info.Module.included_module
+)
+"generators/odoc_todo.ml" 161 5450 5486 "generators/odoc_todo.ml" 161 5450 5488
+type(
+  unit
+)
+"generators/odoc_todo.ml" 163 5490 5516 "generators/odoc_todo.ml" 163 5490 5517
+type(
+  Odoc_info.Class.t_class
+)
+ident(
+  def c "generators/odoc_todo.ml" 164 5520 5526 "generators/odoc_todo.ml" 168 5633 5643
+)
+"generators/odoc_todo.ml" 164 5520 5526 "generators/odoc_todo.ml" 164 5520 5530
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 164 5520 5526 "generators/odoc_todo.ml" 164 5520 5541
+call(
+  stack
+)
+type(
+  Odoc_info.Name.t -> string -> Odoc_info.info option -> unit
+)
+"generators/odoc_todo.ml" 165 5542 5550 "generators/odoc_todo.ml" 165 5542 5551
+type(
+  Odoc_info.Class.t_class
+)
+ident(
+  int_ref c "generators/odoc_todo.ml" 163 5490 5516 "generators/odoc_todo.ml" 163 5490 5517
+)
+"generators/odoc_todo.ml" 165 5542 5550 "generators/odoc_todo.ml" 165 5542 5559
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_todo.ml" 166 5560 5569 "generators/odoc_todo.ml" 166 5560 5572
+type(
+  string * string -> string
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"generators/odoc_todo.ml" 166 5560 5574 "generators/odoc_todo.ml" 166 5560 5601
+type(
+  Odoc_info.Name.t -> string * string
+)
+ident(
+  ext_ref Odoc_html.Naming.html_files
+)
+"generators/odoc_todo.ml" 166 5560 5602 "generators/odoc_todo.ml" 166 5560 5603
+type(
+  Odoc_info.Class.t_class
+)
+ident(
+  int_ref c "generators/odoc_todo.ml" 163 5490 5516 "generators/odoc_todo.ml" 163 5490 5517
+)
+"generators/odoc_todo.ml" 166 5560 5602 "generators/odoc_todo.ml" 166 5560 5611
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_todo.ml" 166 5560 5573 "generators/odoc_todo.ml" 166 5560 5612
+call(
+  stack
+)
+type(
+  string * string
+)
+"generators/odoc_todo.ml" 166 5560 5568 "generators/odoc_todo.ml" 166 5560 5613
+type(
+  string
+)
+"generators/odoc_todo.ml" 167 5614 5622 "generators/odoc_todo.ml" 167 5614 5623
+type(
+  Odoc_info.Class.t_class
+)
+ident(
+  int_ref c "generators/odoc_todo.ml" 163 5490 5516 "generators/odoc_todo.ml" 163 5490 5517
+)
+"generators/odoc_todo.ml" 167 5614 5622 "generators/odoc_todo.ml" 167 5614 5631
+type(
+  Odoc_info.info option
+)
+"generators/odoc_todo.ml" 164 5520 5526 "generators/odoc_todo.ml" 167 5614 5631
+type(
+  unit
+)
+"generators/odoc_todo.ml" 168 5633 5639 "generators/odoc_todo.ml" 168 5633 5643
+type(
+  bool
+)
+"generators/odoc_todo.ml" 164 5520 5526 "generators/odoc_todo.ml" 168 5633 5643
+type(
+  bool
+)
+"generators/odoc_todo.ml" 170 5645 5676 "generators/odoc_todo.ml" 170 5645 5678
+type(
+  Odoc_info.Class.t_class_type
+)
+ident(
+  def ct "generators/odoc_todo.ml" 171 5681 5687 "generators/odoc_todo.ml" 175 5800 5810
+)
+"generators/odoc_todo.ml" 171 5681 5687 "generators/odoc_todo.ml" 171 5681 5691
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 171 5681 5687 "generators/odoc_todo.ml" 171 5681 5702
+call(
+  stack
+)
+type(
+  Odoc_info.Name.t -> string -> Odoc_info.info option -> unit
+)
+"generators/odoc_todo.ml" 172 5703 5711 "generators/odoc_todo.ml" 172 5703 5713
+type(
+  Odoc_info.Class.t_class_type
+)
+ident(
+  int_ref ct "generators/odoc_todo.ml" 170 5645 5676 "generators/odoc_todo.ml" 170 5645 5678
+)
+"generators/odoc_todo.ml" 172 5703 5711 "generators/odoc_todo.ml" 172 5703 5722
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_todo.ml" 173 5723 5732 "generators/odoc_todo.ml" 173 5723 5735
+type(
+  string * string -> string
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"generators/odoc_todo.ml" 173 5723 5737 "generators/odoc_todo.ml" 173 5723 5764
+type(
+  Odoc_info.Name.t -> string * string
+)
+ident(
+  ext_ref Odoc_html.Naming.html_files
+)
+"generators/odoc_todo.ml" 173 5723 5765 "generators/odoc_todo.ml" 173 5723 5767
+type(
+  Odoc_info.Class.t_class_type
+)
+ident(
+  int_ref ct "generators/odoc_todo.ml" 170 5645 5676 "generators/odoc_todo.ml" 170 5645 5678
+)
+"generators/odoc_todo.ml" 173 5723 5765 "generators/odoc_todo.ml" 173 5723 5776
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_todo.ml" 173 5723 5736 "generators/odoc_todo.ml" 173 5723 5777
+call(
+  stack
+)
+type(
+  string * string
+)
+"generators/odoc_todo.ml" 173 5723 5731 "generators/odoc_todo.ml" 173 5723 5778
+type(
+  string
+)
+"generators/odoc_todo.ml" 174 5779 5787 "generators/odoc_todo.ml" 174 5779 5789
+type(
+  Odoc_info.Class.t_class_type
+)
+ident(
+  int_ref ct "generators/odoc_todo.ml" 170 5645 5676 "generators/odoc_todo.ml" 170 5645 5678
+)
+"generators/odoc_todo.ml" 174 5779 5787 "generators/odoc_todo.ml" 174 5779 5798
+type(
+  Odoc_info.info option
+)
+"generators/odoc_todo.ml" 171 5681 5687 "generators/odoc_todo.ml" 174 5779 5798
+type(
+  unit
+)
+"generators/odoc_todo.ml" 175 5800 5806 "generators/odoc_todo.ml" 175 5800 5810
+type(
+  bool
+)
+"generators/odoc_todo.ml" 171 5681 5687 "generators/odoc_todo.ml" 175 5800 5810
+type(
+  bool
+)
+"generators/odoc_todo.ml" 177 5812 5839 "generators/odoc_todo.ml" 177 5812 5840
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  def m "generators/odoc_todo.ml" 178 5843 5849 "generators/odoc_todo.ml" 182 5953 5963
+)
+"generators/odoc_todo.ml" 178 5843 5849 "generators/odoc_todo.ml" 178 5843 5853
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 178 5843 5849 "generators/odoc_todo.ml" 178 5843 5864
+call(
+  stack
+)
+type(
+  Odoc_info.Name.t -> string -> Odoc_info.info option -> unit
+)
+"generators/odoc_todo.ml" 179 5865 5873 "generators/odoc_todo.ml" 179 5865 5874
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  int_ref m "generators/odoc_todo.ml" 177 5812 5839 "generators/odoc_todo.ml" 177 5812 5840
+)
+"generators/odoc_todo.ml" 179 5865 5873 "generators/odoc_todo.ml" 179 5865 5881
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_todo.ml" 180 5882 5891 "generators/odoc_todo.ml" 180 5882 5894
+type(
+  string * string -> string
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"generators/odoc_todo.ml" 180 5882 5896 "generators/odoc_todo.ml" 180 5882 5923
+type(
+  Odoc_info.Name.t -> string * string
+)
+ident(
+  ext_ref Odoc_html.Naming.html_files
+)
+"generators/odoc_todo.ml" 180 5882 5924 "generators/odoc_todo.ml" 180 5882 5925
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  int_ref m "generators/odoc_todo.ml" 177 5812 5839 "generators/odoc_todo.ml" 177 5812 5840
+)
+"generators/odoc_todo.ml" 180 5882 5924 "generators/odoc_todo.ml" 180 5882 5932
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_todo.ml" 180 5882 5895 "generators/odoc_todo.ml" 180 5882 5933
+call(
+  stack
+)
+type(
+  string * string
+)
+"generators/odoc_todo.ml" 180 5882 5890 "generators/odoc_todo.ml" 180 5882 5934
+type(
+  string
+)
+"generators/odoc_todo.ml" 181 5935 5943 "generators/odoc_todo.ml" 181 5935 5944
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  int_ref m "generators/odoc_todo.ml" 177 5812 5839 "generators/odoc_todo.ml" 177 5812 5840
+)
+"generators/odoc_todo.ml" 181 5935 5943 "generators/odoc_todo.ml" 181 5935 5951
+type(
+  Odoc_info.info option
+)
+"generators/odoc_todo.ml" 178 5843 5849 "generators/odoc_todo.ml" 181 5935 5951
+type(
+  unit
+)
+"generators/odoc_todo.ml" 182 5953 5959 "generators/odoc_todo.ml" 182 5953 5963
+type(
+  bool
+)
+"generators/odoc_todo.ml" 178 5843 5849 "generators/odoc_todo.ml" 182 5953 5963
+type(
+  bool
+)
+"generators/odoc_todo.ml" 184 5965 5997 "generators/odoc_todo.ml" 184 5965 5999
+type(
+  Odoc_info.Module.t_module_type
+)
+ident(
+  def mt "generators/odoc_todo.ml" 185 6002 6008 "generators/odoc_todo.ml" 189 6118 6128
+)
+"generators/odoc_todo.ml" 185 6002 6008 "generators/odoc_todo.ml" 185 6002 6012
+type(
+  'c
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 42 1545 1556 "generators/odoc_todo.ml" 42 1545 1562
+)
+"generators/odoc_todo.ml" 185 6002 6008 "generators/odoc_todo.ml" 185 6002 6023
+call(
+  stack
+)
+type(
+  Odoc_info.Name.t -> string -> Odoc_info.info option -> unit
+)
+"generators/odoc_todo.ml" 186 6024 6032 "generators/odoc_todo.ml" 186 6024 6034
+type(
+  Odoc_info.Module.t_module_type
+)
+ident(
+  int_ref mt "generators/odoc_todo.ml" 184 5965 5997 "generators/odoc_todo.ml" 184 5965 5999
+)
+"generators/odoc_todo.ml" 186 6024 6032 "generators/odoc_todo.ml" 186 6024 6042
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_todo.ml" 187 6043 6052 "generators/odoc_todo.ml" 187 6043 6055
+type(
+  string * string -> string
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"generators/odoc_todo.ml" 187 6043 6057 "generators/odoc_todo.ml" 187 6043 6084
+type(
+  Odoc_info.Name.t -> string * string
+)
+ident(
+  ext_ref Odoc_html.Naming.html_files
+)
+"generators/odoc_todo.ml" 187 6043 6085 "generators/odoc_todo.ml" 187 6043 6087
+type(
+  Odoc_info.Module.t_module_type
+)
+ident(
+  int_ref mt "generators/odoc_todo.ml" 184 5965 5997 "generators/odoc_todo.ml" 184 5965 5999
+)
+"generators/odoc_todo.ml" 187 6043 6085 "generators/odoc_todo.ml" 187 6043 6095
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_todo.ml" 187 6043 6056 "generators/odoc_todo.ml" 187 6043 6096
+call(
+  stack
+)
+type(
+  string * string
+)
+"generators/odoc_todo.ml" 187 6043 6051 "generators/odoc_todo.ml" 187 6043 6097
+type(
+  string
+)
+"generators/odoc_todo.ml" 188 6098 6106 "generators/odoc_todo.ml" 188 6098 6108
+type(
+  Odoc_info.Module.t_module_type
+)
+ident(
+  int_ref mt "generators/odoc_todo.ml" 184 5965 5997 "generators/odoc_todo.ml" 184 5965 5999
+)
+"generators/odoc_todo.ml" 188 6098 6106 "generators/odoc_todo.ml" 188 6098 6116
+type(
+  Odoc_info.info option
+)
+"generators/odoc_todo.ml" 185 6002 6008 "generators/odoc_todo.ml" 188 6098 6116
+type(
+  unit
+)
+"generators/odoc_todo.ml" 189 6118 6124 "generators/odoc_todo.ml" 189 6118 6128
+type(
+  bool
+)
+"generators/odoc_todo.ml" 185 6002 6008 "generators/odoc_todo.ml" 189 6118 6128
+type(
+  bool
+)
+"generators/odoc_todo.ml" 193 6163 6174 "generators/odoc_todo.ml" 193 6163 6180
+type(
+  < character_encoding : unit -> string; constructor : string -> string;
+    create_fully_qualified_idents_links : Odoc_info.Name.t ->
+                                          Odoc_info.Name.t -> string;
+    create_fully_qualified_module_idents_links : Odoc_info.Name.t ->
+                                                 Odoc_info.Name.t -> string;
+    create_title_label : int * string option * Odoc_info.text -> string;
+    escape : Odoc_info.Name.t -> Odoc_info.Name.t;
+    generate : Odoc_info.Module.t_module list -> unit;
+    generate_attributes_index : Odoc_info.Module.t_module list -> unit;
+    generate_class_inheritance_info : Buffer.t ->
+                                      Odoc_info.Class.t_class -> unit;
+    generate_class_type_inheritance_info : Buffer.t ->
+                                           Odoc_info.Class.t_class_type ->
+                                           unit;
+    generate_class_types_index : Odoc_info.Module.t_module list -> unit;
+    generate_classes_index : Odoc_info.Module.t_module list -> unit;
+    generate_elements : 'a0.
+                          ('a0 option -> 'a0 option -> 'a0 -> unit) ->
+                          'a0 list -> unit;
+    generate_elements_index : 'a0.
+                                'a0 list ->
+                                ('a0 -> Odoc_info.Name.t) ->
+                                ('a0 -> Odoc_info.info option) ->
+                                ('a0 -> string) ->
+                                Odoc_info.Name.t -> string -> unit;
+    generate_exceptions_index : Odoc_info.Module.t_module list -> unit;
+    generate_extensions_index : Odoc_info.Module.t_module list -> unit;
+    generate_for_class : Odoc_info.Class.t_class option ->
+                         Odoc_info.Class.t_class option ->
+                         Odoc_info.Class.t_class -> unit;
+    generate_for_class_type : Odoc_info.Class.t_class_type option ->
+                              Odoc_info.Class.t_class_type option ->
+                              Odoc_info.Class.t_class_type -> unit;
+    generate_for_module : Odoc_info.Module.t_module option ->
+                          Odoc_info.Module.t_module option ->
+                          Odoc_info.Module.t_module -> unit;
+    generate_for_module_type : Odoc_info.Module.t_module_type option ->
+                               Odoc_info.Module.t_module_type option ->
+                               Odoc_info.Module.t_module_type -> unit;
+    generate_index : Odoc_info.Module.t_module list -> unit;
+    generate_inheritance_info : Buffer.t ->
+                                Odoc_info.Class.inherited_class list -> unit;
+    generate_methods_index : Odoc_info.Module.t_module list -> unit;
+    generate_module_types_index : Odoc_info.Module.t_module list -> unit;
+    generate_modules_index : Odoc_info.Module.t_module list -> unit;
+    generate_types_index : Odoc_info.Module.t_module list -> unit;
+    generate_values_index : Odoc_info.Module.t_module list -> unit;
+    html_of_Block : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Bold : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Center : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Code : Buffer.t -> Odoc_info.Name.t -> unit;
+    html_of_CodePre : Buffer.t -> string -> unit;
+    html_of_Emphasize : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Enum : Buffer.t -> Odoc_info.text list -> unit;
+    html_of_Index_list : Buffer.t -> unit;
+    html_of_Italic : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Latex : Buffer.t -> string -> unit;
+    html_of_Left : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Link : Buffer.t -> string -> Odoc_info.text -> unit;
+    html_of_List : Buffer.t -> Odoc_info.text list -> unit;
+    html_of_Module_list : Buffer.t -> Odoc_info.Name.t list -> unit;
+    html_of_Newline : Buffer.t -> unit;
+    html_of_Raw : Buffer.t -> Odoc_info.Name.t -> unit;
+    html_of_Ref : Buffer.t ->
+                  Odoc_info.Name.t ->
+                  Odoc_info.ref_kind option -> Odoc_info.text option -> unit;
+    html_of_Right : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Subscript : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Superscript : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Target : Buffer.t -> target:string -> code:string -> unit;
+    html_of_Title : Buffer.t ->
+                    int -> string option -> Odoc_info.text -> unit;
+    html_of_Verbatim : Buffer.t -> Odoc_info.Name.t -> unit;
+    html_of_attribute : Buffer.t -> Odoc_info.Value.t_attribute -> unit;
+    html_of_author_list : Buffer.t -> string list -> unit;
+    html_of_before : Buffer.t -> (string * Odoc_info.text) list -> unit;
+    html_of_class : Buffer.t ->
+                    ?complete:bool ->
+                    ?with_link:bool -> Odoc_info.Class.t_class -> unit;
+    html_of_class_comment : Buffer.t -> Odoc_info.text -> unit;
+    html_of_class_element : Buffer.t -> Odoc_info.Class.class_element -> unit;
+    html_of_class_kind : Buffer.t ->
+                         Odoc_info.Name.t ->
+                         ?cl:Odoc_info.Class.t_class ->
+                         Odoc_info.Class.class_kind -> unit;
+    html_of_class_parameter_list : Buffer.t ->
+                                   Odoc_info.Name.t ->
+                                   Odoc_info.Class.t_class -> unit;
+    html_of_class_type : Buffer.t ->
+                         ?complete:bool ->
+                         ?with_link:bool ->
+                         Odoc_info.Class.t_class_type -> unit;
+    html_of_class_type_kind : Buffer.t ->
+                              Odoc_info.Name.t ->
+                              ?ct:Odoc_info.Class.t_class_type ->
+                              Odoc_info.Class.class_type_kind -> unit;
+    html_of_class_type_param_expr_list : Buffer.t ->
+                                         Odoc_info.Name.t ->
+                                         Types.type_expr list -> unit;
+    html_of_code : Buffer.t -> ?with_pre:bool -> Odoc_info.Name.t -> unit;
+    html_of_custom : Buffer.t -> (string * Odoc_info.text) list -> unit;
+    html_of_custom_text : Buffer.t -> string -> Odoc_info.text -> unit;
+    html_of_dag : (Odoc_info.Name.t * Odoc_info.Class.cct option)
+                  Odoc_dag2html.dag -> string;
+    html_of_described_parameter_list : Buffer.t ->
+                                       Odoc_info.Name.t ->
+                                       Odoc_info.Parameter.parameter list ->
+                                       unit;
+    html_of_exception : Buffer.t -> Odoc_info.Exception.t_exception -> unit;
+    html_of_included_module : Buffer.t ->
+                              Odoc_info.Module.included_module -> unit;
+    html_of_info : ?cls:string ->
+                   ?indent:bool -> Buffer.t -> Odoc_info.info option -> unit;
+    html_of_info_first_sentence : Buffer.t -> Odoc_info.info option -> unit;
+    html_of_method : Buffer.t -> Odoc_info.Value.t_method -> unit;
+    html_of_modtype : Buffer.t ->
+                      ?info:bool ->
+                      ?complete:bool ->
+                      ?with_link:bool ->
+                      Odoc_info.Module.t_module_type -> unit;
+    html_of_module : Buffer.t ->
+                     ?info:bool ->
+                     ?complete:bool ->
+                     ?with_link:bool -> Odoc_info.Module.t_module -> unit;
+    html_of_module_comment : Buffer.t -> Odoc_info.text -> unit;
+    html_of_module_element : Buffer.t ->
+                             Odoc_info.Name.t ->
+                             Odoc_info.Module.module_element -> unit;
+    html_of_module_kind : Buffer.t ->
+                          Odoc_info.Name.t ->
+                          ?modu:Odoc_info.Module.t_module ->
+                          Odoc_info.Module.module_kind -> unit;
+    html_of_module_parameter : Buffer.t ->
+                               Odoc_info.Name.t ->
+                               Odoc_info.Module.module_parameter -> unit;
+    html_of_module_parameter_list : Buffer.t ->
+                                    Odoc_info.Name.t ->
+                                    (Odoc_info.Module.module_parameter *
+                                     Odoc_info.text option)
+                                    list -> unit;
+    html_of_module_parameter_type : Buffer.t ->
+                                    Odoc_info.Name.t ->
+                                    Odoc_info.Module.module_parameter -> unit;
+    html_of_module_type : Buffer.t ->
+                          ?code:string ->
+                          Odoc_info.Name.t -> Types.module_type -> unit;
+    html_of_module_type_kind : Buffer.t ->
+                               Odoc_info.Name.t ->
+                               ?modu:Odoc_info.Module.t_module ->
+                               ?mt:Odoc_info.Module.t_module_type ->
+                               Odoc_info.Module.module_type_kind -> unit;
+    html_of_parameter_description : Buffer.t ->
+                                    Odoc_info.Parameter.parameter -> unit;
+    html_of_parameter_list : Buffer.t ->
+                             Odoc_info.Name.t ->
+                             Odoc_info.Parameter.parameter list -> unit;
+    html_of_raised_exceptions : Buffer.t ->
+                                (string * Odoc_info.text) list -> unit;
+    html_of_return_opt : Buffer.t -> Odoc_info.text option -> unit;
+    html_of_see : Buffer.t -> Odoc_info.see_ref * Odoc_info.text -> unit;
+    html_of_sees : Buffer.t ->
+                   (Odoc_info.see_ref * Odoc_info.text) list -> unit;
+    html_of_since_opt : Buffer.t -> string option -> unit;
+    html_of_text : Buffer.t -> Odoc_info.text -> unit;
+    html_of_text_element : Buffer.t -> Odoc_info.text_element -> unit;
+    html_of_type : Buffer.t -> Odoc_info.Type.t_type -> unit;
+    html_of_type_expr : Buffer.t ->
+                        Odoc_info.Name.t -> Types.type_expr -> unit;
+    html_of_type_expr_list : ?par:bool ->
+                             Buffer.t ->
+                             Odoc_info.Name.t ->
+                             string -> Types.type_expr list -> unit;
+    html_of_type_expr_param_list : Buffer.t ->
+                                   Odoc_info.Name.t ->
+                                   Odoc_info.Type.t_type -> unit;
+    html_of_type_extension : Buffer.t ->
+                             Odoc_info.Name.t ->
+                             Odoc_info.Extension.t_type_extension -> unit;
+    html_of_value : Buffer.t -> Odoc_info.Value.t_value -> unit;
+    html_of_version_opt : Buffer.t -> string option -> unit;
+    html_sections_links : Buffer.t -> Odoc_info.text list -> unit;
+    index : string; index_attributes : string; index_class_types : string;
+    index_classes : string; index_exceptions : string;
+    index_extensions : string; index_methods : string;
+    index_module_types : string; index_modules : string;
+    index_prefix : string; index_types : string; index_values : string;
+    init_style : unit; inner_title : Odoc_info.Name.t -> Odoc_info.Name.t;
+    keep_alpha_num : string -> string; keyword : string -> string;
+    label_of_text : Odoc_info.text -> string;
+    list_attributes : Odoc_info.Value.t_attribute list;
+    list_class_types : Odoc_info.Class.t_class_type list;
+    list_classes : Odoc_info.Class.t_class list;
+    list_exceptions : Odoc_info.Exception.t_exception list;
+    list_extensions : Odoc_info.Extension.t_extension_constructor list;
+    list_methods : Odoc_info.Value.t_method list;
+    list_module_types : Odoc_info.Module.t_module_type list;
+    list_modules : Odoc_info.Module.t_module list;
+    list_types : Odoc_info.Type.t_type list;
+    list_values : Odoc_info.Value.t_value list;
+    output_class_type : Odoc_info.Name.t ->
+                        string -> Types.class_type -> unit;
+    output_module_type : Odoc_info.Name.t ->
+                         string -> Types.module_type -> unit;
+    prepare_header : Odoc_info.Module.t_module list -> unit;
+    print_header : Buffer.t ->
+                   ?nav:(Odoc_info.Name.t option * Odoc_info.Name.t option *
+                         Odoc_info.Name.t)
+                        option ->
+                   ?comments:Odoc_info.text list -> Odoc_info.Name.t -> unit;
+    print_navbar : Buffer.t ->
+                   Odoc_info.Name.t option ->
+                   Odoc_info.Name.t option -> Odoc_info.Name.t -> unit;
+    title : Odoc_info.Name.t; .. >
+)
+"generators/odoc_todo.ml" 200 6445 6473 "generators/odoc_todo.ml" 200 6445 6484
+type(
+  Html.html -> scanner
+)
+"generators/odoc_todo.ml" 200 6445 6485 "generators/odoc_todo.ml" 200 6445 6501
+type(
+  Html.html
+)
+"generators/odoc_todo.ml" 200 6445 6473 "generators/odoc_todo.ml" 200 6445 6501
+call(
+  stack
+)
+type(
+  scanner
+)
+"generators/odoc_todo.ml" 202 6503 6525 "generators/odoc_todo.ml" 202 6503 6532
+type(
+  Odoc_info.Module.t_module list
+)
+ident(
+  def modules "generators/odoc_todo.ml" 204 6601 6607 "generators/odoc_todo.ml" 223 7258 7276
+)
+"generators/odoc_todo.ml" 204 6601 6626 "generators/odoc_todo.ml" 204 6601 6632
+type(
+  string
+)
+"generators/odoc_todo.ml" 204 6601 6639 "generators/odoc_todo.ml" 204 6601 6640
+type(
+  Odoc_info.text
+)
+"generators/odoc_todo.ml" 204 6601 6644 "generators/odoc_todo.ml" 204 6601 6646
+type(
+  string
+)
+"generators/odoc_todo.ml" 204 6601 6634 "generators/odoc_todo.ml" 204 6601 6647
+type(
+  Odoc_info.text -> string
+)
+"generators/odoc_todo.ml" 204 6601 6625 "generators/odoc_todo.ml" 204 6601 6648
+type(
+  string * (Odoc_info.text -> string)
+)
+"generators/odoc_todo.ml" 204 6601 6652 "generators/odoc_todo.ml" 204 6601 6665
+type(
+  (string * (Odoc_info.text -> string)) list
+)
+ident(
+  ext_ref tag_functions
+)
+"generators/odoc_todo.ml" 204 6601 6625 "generators/odoc_todo.ml" 204 6601 6665
+type(
+  (string * (Odoc_info.text -> string)) list
+)
+"generators/odoc_todo.ml" 204 6601 6607 "generators/odoc_todo.ml" 204 6601 6665
+type(
+  unit
+)
+"generators/odoc_todo.ml" 206 6701 6707 "generators/odoc_todo.ml" 206 6701 6711
+type(
+  < character_encoding : unit -> string; constructor : string -> string;
+    create_fully_qualified_idents_links : Odoc_info.Name.t ->
+                                          Odoc_info.Name.t -> string;
+    create_fully_qualified_module_idents_links : Odoc_info.Name.t ->
+                                                 Odoc_info.Name.t -> string;
+    create_title_label : int * string option * Odoc_info.text -> string;
+    escape : Odoc_info.Name.t -> Odoc_info.Name.t;
+    generate : Odoc_info.Module.t_module list -> unit;
+    generate_attributes_index : Odoc_info.Module.t_module list -> unit;
+    generate_class_inheritance_info : Buffer.t ->
+                                      Odoc_info.Class.t_class -> unit;
+    generate_class_type_inheritance_info : Buffer.t ->
+                                           Odoc_info.Class.t_class_type ->
+                                           unit;
+    generate_class_types_index : Odoc_info.Module.t_module list -> unit;
+    generate_classes_index : Odoc_info.Module.t_module list -> unit;
+    generate_elements : 'a0.
+                          ('a0 option -> 'a0 option -> 'a0 -> unit) ->
+                          'a0 list -> unit;
+    generate_elements_index : 'a0.
+                                'a0 list ->
+                                ('a0 -> Odoc_info.Name.t) ->
+                                ('a0 -> Odoc_info.info option) ->
+                                ('a0 -> string) ->
+                                Odoc_info.Name.t -> string -> unit;
+    generate_exceptions_index : Odoc_info.Module.t_module list -> unit;
+    generate_extensions_index : Odoc_info.Module.t_module list -> unit;
+    generate_for_class : Odoc_info.Class.t_class option ->
+                         Odoc_info.Class.t_class option ->
+                         Odoc_info.Class.t_class -> unit;
+    generate_for_class_type : Odoc_info.Class.t_class_type option ->
+                              Odoc_info.Class.t_class_type option ->
+                              Odoc_info.Class.t_class_type -> unit;
+    generate_for_module : Odoc_info.Module.t_module option ->
+                          Odoc_info.Module.t_module option ->
+                          Odoc_info.Module.t_module -> unit;
+    generate_for_module_type : Odoc_info.Module.t_module_type option ->
+                               Odoc_info.Module.t_module_type option ->
+                               Odoc_info.Module.t_module_type -> unit;
+    generate_index : Odoc_info.Module.t_module list -> unit;
+    generate_inheritance_info : Buffer.t ->
+                                Odoc_info.Class.inherited_class list -> unit;
+    generate_methods_index : Odoc_info.Module.t_module list -> unit;
+    generate_module_types_index : Odoc_info.Module.t_module list -> unit;
+    generate_modules_index : Odoc_info.Module.t_module list -> unit;
+    generate_types_index : Odoc_info.Module.t_module list -> unit;
+    generate_values_index : Odoc_info.Module.t_module list -> unit;
+    html_of_Block : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Bold : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Center : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Code : Buffer.t -> Odoc_info.Name.t -> unit;
+    html_of_CodePre : Buffer.t -> string -> unit;
+    html_of_Emphasize : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Enum : Buffer.t -> Odoc_info.text list -> unit;
+    html_of_Index_list : Buffer.t -> unit;
+    html_of_Italic : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Latex : Buffer.t -> string -> unit;
+    html_of_Left : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Link : Buffer.t -> string -> Odoc_info.text -> unit;
+    html_of_List : Buffer.t -> Odoc_info.text list -> unit;
+    html_of_Module_list : Buffer.t -> Odoc_info.Name.t list -> unit;
+    html_of_Newline : Buffer.t -> unit;
+    html_of_Raw : Buffer.t -> Odoc_info.Name.t -> unit;
+    html_of_Ref : Buffer.t ->
+                  Odoc_info.Name.t ->
+                  Odoc_info.ref_kind option -> Odoc_info.text option -> unit;
+    html_of_Right : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Subscript : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Superscript : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Target : Buffer.t -> target:string -> code:string -> unit;
+    html_of_Title : Buffer.t ->
+                    int -> string option -> Odoc_info.text -> unit;
+    html_of_Verbatim : Buffer.t -> Odoc_info.Name.t -> unit;
+    html_of_attribute : Buffer.t -> Odoc_info.Value.t_attribute -> unit;
+    html_of_author_list : Buffer.t -> string list -> unit;
+    html_of_before : Buffer.t -> (string * Odoc_info.text) list -> unit;
+    html_of_class : Buffer.t ->
+                    ?complete:bool ->
+                    ?with_link:bool -> Odoc_info.Class.t_class -> unit;
+    html_of_class_comment : Buffer.t -> Odoc_info.text -> unit;
+    html_of_class_element : Buffer.t -> Odoc_info.Class.class_element -> unit;
+    html_of_class_kind : Buffer.t ->
+                         Odoc_info.Name.t ->
+                         ?cl:Odoc_info.Class.t_class ->
+                         Odoc_info.Class.class_kind -> unit;
+    html_of_class_parameter_list : Buffer.t ->
+                                   Odoc_info.Name.t ->
+                                   Odoc_info.Class.t_class -> unit;
+    html_of_class_type : Buffer.t ->
+                         ?complete:bool ->
+                         ?with_link:bool ->
+                         Odoc_info.Class.t_class_type -> unit;
+    html_of_class_type_kind : Buffer.t ->
+                              Odoc_info.Name.t ->
+                              ?ct:Odoc_info.Class.t_class_type ->
+                              Odoc_info.Class.class_type_kind -> unit;
+    html_of_class_type_param_expr_list : Buffer.t ->
+                                         Odoc_info.Name.t ->
+                                         Types.type_expr list -> unit;
+    html_of_code : Buffer.t -> ?with_pre:bool -> Odoc_info.Name.t -> unit;
+    html_of_custom : Buffer.t -> (string * Odoc_info.text) list -> unit;
+    html_of_custom_text : Buffer.t -> string -> Odoc_info.text -> unit;
+    html_of_dag : (Odoc_info.Name.t * Odoc_info.Class.cct option)
+                  Odoc_dag2html.dag -> string;
+    html_of_described_parameter_list : Buffer.t ->
+                                       Odoc_info.Name.t ->
+                                       Odoc_info.Parameter.parameter list ->
+                                       unit;
+    html_of_exception : Buffer.t -> Odoc_info.Exception.t_exception -> unit;
+    html_of_included_module : Buffer.t ->
+                              Odoc_info.Module.included_module -> unit;
+    html_of_info : ?cls:string ->
+                   ?indent:bool -> Buffer.t -> Odoc_info.info option -> unit;
+    html_of_info_first_sentence : Buffer.t -> Odoc_info.info option -> unit;
+    html_of_method : Buffer.t -> Odoc_info.Value.t_method -> unit;
+    html_of_modtype : Buffer.t ->
+                      ?info:bool ->
+                      ?complete:bool ->
+                      ?with_link:bool ->
+                      Odoc_info.Module.t_module_type -> unit;
+    html_of_module : Buffer.t ->
+                     ?info:bool ->
+                     ?complete:bool ->
+                     ?with_link:bool -> Odoc_info.Module.t_module -> unit;
+    html_of_module_comment : Buffer.t -> Odoc_info.text -> unit;
+    html_of_module_element : Buffer.t ->
+                             Odoc_info.Name.t ->
+                             Odoc_info.Module.module_element -> unit;
+    html_of_module_kind : Buffer.t ->
+                          Odoc_info.Name.t ->
+                          ?modu:Odoc_info.Module.t_module ->
+                          Odoc_info.Module.module_kind -> unit;
+    html_of_module_parameter : Buffer.t ->
+                               Odoc_info.Name.t ->
+                               Odoc_info.Module.module_parameter -> unit;
+    html_of_module_parameter_list : Buffer.t ->
+                                    Odoc_info.Name.t ->
+                                    (Odoc_info.Module.module_parameter *
+                                     Odoc_info.text option)
+                                    list -> unit;
+    html_of_module_parameter_type : Buffer.t ->
+                                    Odoc_info.Name.t ->
+                                    Odoc_info.Module.module_parameter -> unit;
+    html_of_module_type : Buffer.t ->
+                          ?code:string ->
+                          Odoc_info.Name.t -> Types.module_type -> unit;
+    html_of_module_type_kind : Buffer.t ->
+                               Odoc_info.Name.t ->
+                               ?modu:Odoc_info.Module.t_module ->
+                               ?mt:Odoc_info.Module.t_module_type ->
+                               Odoc_info.Module.module_type_kind -> unit;
+    html_of_parameter_description : Buffer.t ->
+                                    Odoc_info.Parameter.parameter -> unit;
+    html_of_parameter_list : Buffer.t ->
+                             Odoc_info.Name.t ->
+                             Odoc_info.Parameter.parameter list -> unit;
+    html_of_raised_exceptions : Buffer.t ->
+                                (string * Odoc_info.text) list -> unit;
+    html_of_return_opt : Buffer.t -> Odoc_info.text option -> unit;
+    html_of_see : Buffer.t -> Odoc_info.see_ref * Odoc_info.text -> unit;
+    html_of_sees : Buffer.t ->
+                   (Odoc_info.see_ref * Odoc_info.text) list -> unit;
+    html_of_since_opt : Buffer.t -> string option -> unit;
+    html_of_text : Buffer.t -> Odoc_info.text -> unit;
+    html_of_text_element : Buffer.t -> Odoc_info.text_element -> unit;
+    html_of_type : Buffer.t -> Odoc_info.Type.t_type -> unit;
+    html_of_type_expr : Buffer.t ->
+                        Odoc_info.Name.t -> Types.type_expr -> unit;
+    html_of_type_expr_list : ?par:bool ->
+                             Buffer.t ->
+                             Odoc_info.Name.t ->
+                             string -> Types.type_expr list -> unit;
+    html_of_type_expr_param_list : Buffer.t ->
+                                   Odoc_info.Name.t ->
+                                   Odoc_info.Type.t_type -> unit;
+    html_of_type_extension : Buffer.t ->
+                             Odoc_info.Name.t ->
+                             Odoc_info.Extension.t_type_extension -> unit;
+    html_of_value : Buffer.t -> Odoc_info.Value.t_value -> unit;
+    html_of_version_opt : Buffer.t -> string option -> unit;
+    html_sections_links : Buffer.t -> Odoc_info.text list -> unit;
+    index : string; index_attributes : string; index_class_types : string;
+    index_classes : string; index_exceptions : string;
+    index_extensions : string; index_methods : string;
+    index_module_types : string; index_modules : string;
+    index_prefix : string; index_types : string; index_values : string;
+    init_style : unit; inner_title : Odoc_info.Name.t -> Odoc_info.Name.t;
+    keep_alpha_num : string -> string; keyword : string -> string;
+    label_of_text : Odoc_info.text -> string;
+    list_attributes : Odoc_info.Value.t_attribute list;
+    list_class_types : Odoc_info.Class.t_class_type list;
+    list_classes : Odoc_info.Class.t_class list;
+    list_exceptions : Odoc_info.Exception.t_exception list;
+    list_extensions : Odoc_info.Extension.t_extension_constructor list;
+    list_methods : Odoc_info.Value.t_method list;
+    list_module_types : Odoc_info.Module.t_module_type list;
+    list_modules : Odoc_info.Module.t_module list;
+    list_types : Odoc_info.Type.t_type list;
+    list_values : Odoc_info.Value.t_value list;
+    output_class_type : Odoc_info.Name.t ->
+                        string -> Types.class_type -> unit;
+    output_module_type : Odoc_info.Name.t ->
+                         string -> Types.module_type -> unit;
+    prepare_header : Odoc_info.Module.t_module list -> unit;
+    print_header : Buffer.t ->
+                   ?nav:(Odoc_info.Name.t option * Odoc_info.Name.t option *
+                         Odoc_info.Name.t)
+                        option ->
+                   ?comments:Odoc_info.text list -> Odoc_info.Name.t -> unit;
+    print_navbar : Buffer.t ->
+                   Odoc_info.Name.t option ->
+                   Odoc_info.Name.t option -> Odoc_info.Name.t -> unit;
+    title : Odoc_info.Name.t; .. >
+  as 'd
+)
+ident(
+  int_ref html "generators/odoc_todo.ml" 194 6181 6195 "generators/odoc_todo.ml" 194 6181 6204
+)
+"generators/odoc_todo.ml" 206 6701 6707 "generators/odoc_todo.ml" 206 6701 6720
+type(
+  Odoc_info.Module.t_module list -> unit
+)
+type(
+  Odoc_info.Module.t_module list -> unit
+)
+"generators/odoc_todo.ml" 206 6701 6721 "generators/odoc_todo.ml" 206 6701 6728
+type(
+  Odoc_info.Module.t_module list
+)
+ident(
+  int_ref modules "generators/odoc_todo.ml" 202 6503 6525 "generators/odoc_todo.ml" 202 6503 6532
+)
+"generators/odoc_todo.ml" 206 6701 6707 "generators/odoc_todo.ml" 206 6701 6728
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_todo.ml" 208 6802 6812 "generators/odoc_todo.ml" 208 6802 6817
+type(
+  string
+)
+ident(
+  def title "generators/odoc_todo.ml" 213 6915 6921 "generators/odoc_todo.ml" 223 7258 7276
+)
+"generators/odoc_todo.ml" 209 6820 6834 "generators/odoc_todo.ml" 209 6820 6835
+type(
+  string option ref -> string option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"generators/odoc_todo.ml" 209 6820 6835 "generators/odoc_todo.ml" 209 6820 6857
+type(
+  string option ref
+)
+ident(
+  ext_ref Odoc_info.Global.title
+)
+"generators/odoc_todo.ml" 209 6820 6834 "generators/odoc_todo.ml" 209 6820 6857
+type(
+  string option
+)
+"generators/odoc_todo.ml" 210 6863 6873 "generators/odoc_todo.ml" 210 6863 6877
+type(
+  string option
+)
+"generators/odoc_todo.ml" 210 6863 6881 "generators/odoc_todo.ml" 210 6863 6883
+type(
+  string
+)
+"generators/odoc_todo.ml" 211 6884 6899 "generators/odoc_todo.ml" 211 6884 6900
+type(
+  string
+)
+ident(
+  def s "generators/odoc_todo.ml" 211 6884 6904 "generators/odoc_todo.ml" 211 6884 6905
+)
+"generators/odoc_todo.ml" 211 6884 6894 "generators/odoc_todo.ml" 211 6884 6900
+type(
+  string option
+)
+"generators/odoc_todo.ml" 211 6884 6904 "generators/odoc_todo.ml" 211 6884 6905
+type(
+  string
+)
+ident(
+  int_ref s "generators/odoc_todo.ml" 211 6884 6899 "generators/odoc_todo.ml" 211 6884 6900
+)
+"generators/odoc_todo.ml" 209 6820 6828 "generators/odoc_todo.ml" 211 6884 6905
+type(
+  string
+)
+"generators/odoc_todo.ml" 213 6915 6925 "generators/odoc_todo.ml" 213 6915 6926
+type(
+  Buffer.t
+)
+ident(
+  def b "generators/odoc_todo.ml" 214 6950 6956 "generators/odoc_todo.ml" 223 7258 7276
+)
+"generators/odoc_todo.ml" 213 6915 6929 "generators/odoc_todo.ml" 213 6915 6942
+type(
+  int -> Buffer.t
+)
+ident(
+  ext_ref Buffer.create
+)
+"generators/odoc_todo.ml" 213 6915 6943 "generators/odoc_todo.ml" 213 6915 6946
+type(
+  int
+)
+"generators/odoc_todo.ml" 213 6915 6929 "generators/odoc_todo.ml" 213 6915 6946
+call(
+  stack
+)
+type(
+  Buffer.t
+)
+"generators/odoc_todo.ml" 214 6950 6956 "generators/odoc_todo.ml" 214 6950 6957
+type(
+  Buffer.t -> (unit, Buffer.t, unit) format -> unit
+)
+ident(
+  int_ref p "generators/odoc_todo.ml" 25 1147 1151 "generators/odoc_todo.ml" 25 1147 1152
+)
+"generators/odoc_todo.ml" 214 6950 6958 "generators/odoc_todo.ml" 214 6950 6959
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_todo.ml" 213 6915 6925 "generators/odoc_todo.ml" 213 6915 6926
+)
+"generators/odoc_todo.ml" 214 6950 6960 "generators/odoc_todo.ml" 214 6950 6968
+type(
+  (unit, Buffer.t, unit) format
+)
+"generators/odoc_todo.ml" 214 6950 6956 "generators/odoc_todo.ml" 214 6950 6968
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_todo.ml" 215 6970 6976 "generators/odoc_todo.ml" 215 6970 6980
+type(
+  'd
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 193 6163 6174 "generators/odoc_todo.ml" 193 6163 6180
+)
+"generators/odoc_todo.ml" 215 6970 6976 "generators/odoc_todo.ml" 215 6970 6993
+call(
+  stack
+)
+type(
+  Buffer.t ->
+  ?nav:(Odoc_info.Name.t option * Odoc_info.Name.t option * Odoc_info.Name.t)
+       option ->
+  ?comments:Odoc_info.text list -> Odoc_info.Name.t -> unit
+)
+"generators/odoc_todo.ml" 215 6970 6994 "generators/odoc_todo.ml" 215 6970 6995
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_todo.ml" 213 6915 6925 "generators/odoc_todo.ml" 213 6915 6926
+)
+"generators/odoc_todo.ml" 215 6970 6996 "generators/odoc_todo.ml" 215 6970 7001
+type(
+  Odoc_info.Name.t
+)
+ident(
+  int_ref title "generators/odoc_todo.ml" 208 6802 6812 "generators/odoc_todo.ml" 208 6802 6817
+)
+"generators/odoc_todo.ml" 215 6970 6976 "generators/odoc_todo.ml" 215 6970 7001
+type(
+  unit
+)
+"generators/odoc_todo.ml" 216 7004 7010 "generators/odoc_todo.ml" 216 7004 7011
+type(
+  Buffer.t -> (string -> unit, Buffer.t, unit) format -> string -> unit
+)
+ident(
+  int_ref p "generators/odoc_todo.ml" 25 1147 1151 "generators/odoc_todo.ml" 25 1147 1152
+)
+"generators/odoc_todo.ml" 216 7004 7012 "generators/odoc_todo.ml" 216 7004 7013
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_todo.ml" 213 6915 6925 "generators/odoc_todo.ml" 213 6915 6926
+)
+"generators/odoc_todo.ml" 216 7004 7014 "generators/odoc_todo.ml" 216 7004 7033
+type(
+  (string -> unit, Buffer.t, unit) format
+)
+"generators/odoc_todo.ml" 216 7004 7034 "generators/odoc_todo.ml" 216 7004 7039
+type(
+  string
+)
+ident(
+  int_ref title "generators/odoc_todo.ml" 208 6802 6812 "generators/odoc_todo.ml" 208 6802 6817
+)
+"generators/odoc_todo.ml" 216 7004 7010 "generators/odoc_todo.ml" 216 7004 7039
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_todo.ml" 217 7041 7047 "generators/odoc_todo.ml" 217 7041 7054
+type(
+  scanner
+)
+ident(
+  ext_ref scanner
+)
+"generators/odoc_todo.ml" 217 7041 7047 "generators/odoc_todo.ml" 217 7041 7071
+call(
+  stack
+)
+type(
+  Odoc_info.Module.t_module list -> unit
+)
+"generators/odoc_todo.ml" 217 7041 7072 "generators/odoc_todo.ml" 217 7041 7079
+type(
+  Odoc_info.Module.t_module list
+)
+ident(
+  int_ref modules "generators/odoc_todo.ml" 202 6503 6525 "generators/odoc_todo.ml" 202 6503 6532
+)
+"generators/odoc_todo.ml" 217 7041 7047 "generators/odoc_todo.ml" 217 7041 7079
+type(
+  unit
+)
+"generators/odoc_todo.ml" 218 7081 7087 "generators/odoc_todo.ml" 218 7081 7104
+type(
+  Buffer.t -> Buffer.t -> unit
+)
+ident(
+  ext_ref Buffer.add_buffer
+)
+"generators/odoc_todo.ml" 218 7081 7105 "generators/odoc_todo.ml" 218 7081 7106
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_todo.ml" 213 6915 6925 "generators/odoc_todo.ml" 213 6915 6926
+)
+"generators/odoc_todo.ml" 218 7081 7107 "generators/odoc_todo.ml" 218 7081 7114
+type(
+  scanner
+)
+ident(
+  ext_ref scanner
+)
+"generators/odoc_todo.ml" 218 7081 7107 "generators/odoc_todo.ml" 218 7081 7121
+call(
+  stack
+)
+type(
+  Buffer.t
+)
+"generators/odoc_todo.ml" 218 7081 7087 "generators/odoc_todo.ml" 218 7081 7121
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_todo.ml" 219 7123 7133 "generators/odoc_todo.ml" 219 7123 7135
+type(
+  out_channel
+)
+ident(
+  def oc "generators/odoc_todo.ml" 222 7225 7231 "generators/odoc_todo.ml" 223 7258 7276
+)
+"generators/odoc_todo.ml" 219 7123 7138 "generators/odoc_todo.ml" 219 7123 7146
+type(
+  string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out
+)
+"generators/odoc_todo.ml" 220 7147 7158 "generators/odoc_todo.ml" 220 7147 7173
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Filename.concat
+)
+"generators/odoc_todo.ml" 220 7147 7174 "generators/odoc_todo.ml" 220 7147 7175
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"generators/odoc_todo.ml" 220 7147 7175 "generators/odoc_todo.ml" 220 7147 7202
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_info.Global.target_dir
+)
+"generators/odoc_todo.ml" 220 7147 7174 "generators/odoc_todo.ml" 220 7147 7202
+type(
+  string
+)
+"generators/odoc_todo.ml" 220 7147 7203 "generators/odoc_todo.ml" 220 7147 7214
+type(
+  string
+)
+"generators/odoc_todo.ml" 220 7147 7157 "generators/odoc_todo.ml" 220 7147 7215
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_todo.ml" 219 7123 7138 "generators/odoc_todo.ml" 220 7147 7215
+call(
+  stack
+)
+type(
+  out_channel
+)
+"generators/odoc_todo.ml" 222 7225 7231 "generators/odoc_todo.ml" 222 7225 7251
+type(
+  out_channel -> Buffer.t -> unit
+)
+ident(
+  ext_ref Buffer.output_buffer
+)
+"generators/odoc_todo.ml" 222 7225 7252 "generators/odoc_todo.ml" 222 7225 7254
+type(
+  out_channel
+)
+ident(
+  int_ref oc "generators/odoc_todo.ml" 219 7123 7133 "generators/odoc_todo.ml" 219 7123 7135
+)
+"generators/odoc_todo.ml" 222 7225 7255 "generators/odoc_todo.ml" 222 7225 7256
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_todo.ml" 213 6915 6925 "generators/odoc_todo.ml" 213 6915 6926
+)
+"generators/odoc_todo.ml" 222 7225 7231 "generators/odoc_todo.ml" 222 7225 7256
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_todo.ml" 223 7258 7264 "generators/odoc_todo.ml" 223 7258 7273
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"generators/odoc_todo.ml" 223 7258 7274 "generators/odoc_todo.ml" 223 7258 7276
+type(
+  out_channel
+)
+ident(
+  int_ref oc "generators/odoc_todo.ml" 219 7123 7133 "generators/odoc_todo.ml" 219 7123 7135
+)
+"generators/odoc_todo.ml" 223 7258 7264 "generators/odoc_todo.ml" 223 7258 7276
+call(
+  tail
+)
+type(
+  unit
+)
+"generators/odoc_todo.ml" 222 7225 7231 "generators/odoc_todo.ml" 223 7258 7276
+type(
+  unit
+)
+"generators/odoc_todo.ml" 219 7123 7129 "generators/odoc_todo.ml" 223 7258 7276
+type(
+  unit
+)
+"generators/odoc_todo.ml" 218 7081 7087 "generators/odoc_todo.ml" 223 7258 7276
+type(
+  unit
+)
+"generators/odoc_todo.ml" 217 7041 7047 "generators/odoc_todo.ml" 223 7258 7276
+type(
+  unit
+)
+"generators/odoc_todo.ml" 216 7004 7010 "generators/odoc_todo.ml" 223 7258 7276
+type(
+  unit
+)
+"generators/odoc_todo.ml" 215 6970 6976 "generators/odoc_todo.ml" 223 7258 7276
+type(
+  unit
+)
+"generators/odoc_todo.ml" 214 6950 6956 "generators/odoc_todo.ml" 223 7258 7276
+type(
+  unit
+)
+"generators/odoc_todo.ml" 213 6915 6921 "generators/odoc_todo.ml" 223 7258 7276
+type(
+  unit
+)
+"generators/odoc_todo.ml" 208 6802 6808 "generators/odoc_todo.ml" 223 7258 7276
+type(
+  unit
+)
+"generators/odoc_todo.ml" 206 6701 6707 "generators/odoc_todo.ml" 223 7258 7276
+type(
+  unit
+)
+"generators/odoc_todo.ml" 204 6601 6607 "generators/odoc_todo.ml" 223 7258 7276
+type(
+  unit
+)
+"generators/odoc_todo.ml" 226 7295 7313 "generators/odoc_todo.ml" 226 7295 7324
+type(
+  'd -> scanner
+)
+"generators/odoc_todo.ml" 226 7295 7325 "generators/odoc_todo.ml" 226 7295 7329
+type(
+  'd
+)
+ident(
+  int_ref self "generators/odoc_todo.ml" 193 6163 6174 "generators/odoc_todo.ml" 193 6163 6180
+)
+"generators/odoc_todo.ml" 226 7295 7313 "generators/odoc_todo.ml" 226 7295 7329
+call(
+  stack
+)
+type(
+  scanner
+)
+"generators/odoc_todo.ml" 226 7295 7302 "generators/odoc_todo.ml" 226 7295 7329
+type(
+  'd -> unit
+)
+type(
+  unit
+)
+"generators/odoc_todo.ml" 230 7341 7349 "generators/odoc_todo.ml" 230 7341 7372
+type(
+  Odoc_gen.generator -> unit
+)
+ident(
+  ext_ref Odoc_args.set_generator
+)
+"generators/odoc_todo.ml" 231 7373 7374 "generators/odoc_todo.ml" 231 7373 7435
+type(
+  Odoc_gen.generator
+)
+"generators/odoc_todo.ml" 230 7341 7349 "generators/odoc_todo.ml" 231 7373 7435
+call(
+  stack
+)
+type(
+  unit
+)

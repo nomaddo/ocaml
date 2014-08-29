@@ -1,0 +1,1555 @@
+"show_information.ml" 27 1097 1101 "show_information.ml" 27 1097 1119
+type(
+  Format.formatter -> unit
+)
+ident(
+  def show_current_event "show_information.ml" 70 2599 2599 "show_information.ml" 1 0 -1
+)
+"show_information.ml" 27 1097 1120 "show_information.ml" 27 1097 1123
+type(
+  Format.formatter
+)
+ident(
+  def ppf "show_information.ml" 28 1126 1128 "show_information.ml" 66 2487 2547
+)
+"show_information.ml" 28 1126 1128 "show_information.ml" 28 1126 1135
+type(
+  Format.formatter ->
+  (int64 -> unit, Format.formatter, unit) format -> int64 -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"show_information.ml" 28 1126 1136 "show_information.ml" 28 1126 1139
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "show_information.ml" 27 1097 1120 "show_information.ml" 27 1097 1123
+)
+"show_information.ml" 28 1126 1140 "show_information.ml" 28 1126 1151
+type(
+  (int64 -> unit, Format.formatter, unit) format
+)
+"show_information.ml" 28 1126 1153 "show_information.ml" 28 1126 1165
+type(
+  unit -> int64
+)
+ident(
+  ext_ref Checkpoints.current_time
+)
+"show_information.ml" 28 1126 1166 "show_information.ml" 28 1126 1168
+type(
+  unit
+)
+"show_information.ml" 28 1126 1152 "show_information.ml" 28 1126 1169
+call(
+  stack
+)
+type(
+  int64
+)
+"show_information.ml" 28 1126 1128 "show_information.ml" 28 1126 1169
+call(
+  stack
+)
+type(
+  unit
+)
+"show_information.ml" 29 1171 1180 "show_information.ml" 29 1171 1190
+type(
+  unit -> int option
+)
+ident(
+  ext_ref Checkpoints.current_pc
+)
+"show_information.ml" 29 1171 1191 "show_information.ml" 29 1171 1193
+type(
+  unit
+)
+"show_information.ml" 29 1171 1180 "show_information.ml" 29 1171 1193
+call(
+  stack
+)
+type(
+  int option
+)
+"show_information.ml" 30 1199 1209 "show_information.ml" 30 1199 1211
+type(
+  int
+)
+ident(
+  def pc "show_information.ml" 31 1215 1222 "show_information.ml" 31 1215 1248
+)
+"show_information.ml" 30 1199 1204 "show_information.ml" 30 1199 1211
+type(
+  int option
+)
+"show_information.ml" 31 1215 1222 "show_information.ml" 31 1215 1229
+type(
+  Format.formatter ->
+  (int -> unit, Format.formatter, unit) format -> int -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"show_information.ml" 31 1215 1230 "show_information.ml" 31 1215 1233
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "show_information.ml" 27 1097 1120 "show_information.ml" 27 1097 1123
+)
+"show_information.ml" 31 1215 1234 "show_information.ml" 31 1215 1245
+type(
+  (int -> unit, Format.formatter, unit) format
+)
+"show_information.ml" 31 1215 1246 "show_information.ml" 31 1215 1248
+type(
+  int
+)
+ident(
+  int_ref pc "show_information.ml" 30 1199 1209 "show_information.ml" 30 1199 1211
+)
+"show_information.ml" 31 1215 1222 "show_information.ml" 31 1215 1248
+call(
+  stack
+)
+type(
+  unit
+)
+"show_information.ml" 32 1249 1254 "show_information.ml" 32 1249 1255
+type(
+  int option
+)
+"show_information.ml" 32 1249 1259 "show_information.ml" 32 1249 1261
+type(
+  unit
+)
+"show_information.ml" 29 1171 1173 "show_information.ml" 32 1249 1262
+type(
+  unit
+)
+"show_information.ml" 33 1264 1266 "show_information.ml" 33 1264 1286
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Symbols.update_current_event
+)
+"show_information.ml" 33 1264 1287 "show_information.ml" 33 1264 1289
+type(
+  unit
+)
+"show_information.ml" 33 1264 1266 "show_information.ml" 33 1264 1289
+call(
+  stack
+)
+type(
+  unit
+)
+"show_information.ml" 34 1291 1293 "show_information.ml" 34 1291 1304
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Frames.reset_frame
+)
+"show_information.ml" 34 1291 1305 "show_information.ml" 34 1291 1307
+type(
+  unit
+)
+"show_information.ml" 34 1291 1293 "show_information.ml" 34 1291 1307
+call(
+  stack
+)
+type(
+  unit
+)
+"show_information.ml" 35 1309 1317 "show_information.ml" 35 1309 1331
+type(
+  unit -> Debugcom.report option
+)
+ident(
+  ext_ref Checkpoints.current_report
+)
+"show_information.ml" 35 1309 1332 "show_information.ml" 35 1309 1334
+type(
+  unit
+)
+"show_information.ml" 35 1309 1317 "show_information.ml" 35 1309 1334
+call(
+  stack
+)
+type(
+  Debugcom.report option
+)
+"show_information.ml" 36 1341 1345 "show_information.ml" 36 1341 1349
+type(
+  Debugcom.report option
+)
+"show_information.ml" 37 1353 1359 "show_information.ml" 37 1353 1366
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"show_information.ml" 37 1353 1367 "show_information.ml" 37 1353 1370
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "show_information.ml" 27 1097 1120 "show_information.ml" 27 1097 1123
+)
+"show_information.ml" 37 1353 1371 "show_information.ml" 37 1353 1398
+type(
+  (unit, Format.formatter, unit) format
+)
+"show_information.ml" 37 1353 1359 "show_information.ml" 37 1353 1398
+call(
+  stack
+)
+type(
+  unit
+)
+"show_information.ml" 38 1400 1406 "show_information.ml" 38 1400 1419
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Show_source.show_no_point
+)
+"show_information.ml" 38 1400 1420 "show_information.ml" 38 1400 1422
+type(
+  unit
+)
+"show_information.ml" 38 1400 1406 "show_information.ml" 38 1400 1422
+call(
+  tail
+)
+type(
+  unit
+)
+"show_information.ml" 37 1353 1359 "show_information.ml" 38 1400 1422
+type(
+  unit
+)
+"show_information.ml" 39 1423 1445 "show_information.ml" 39 1423 1450
+type(
+  Debugcom.execution_summary
+)
+"show_information.ml" 39 1423 1453 "show_information.ml" 39 1423 1463
+type(
+  Debugcom.execution_summary
+)
+"show_information.ml" 39 1423 1444 "show_information.ml" 39 1423 1464
+type(
+  Debugcom.execution_summary
+)
+"show_information.ml" 39 1423 1488 "show_information.ml" 39 1423 1490
+type(
+  int
+)
+ident(
+  def pc "show_information.ml" 40 1495 1503 "show_information.ml" 53 1968 1994
+)
+"show_information.ml" 39 1423 1432 "show_information.ml" 39 1423 1491
+type(
+  Debugcom.report
+)
+"show_information.ml" 39 1423 1427 "show_information.ml" 39 1423 1491
+type(
+  Debugcom.report option
+)
+"show_information.ml" 40 1495 1507 "show_information.ml" 40 1495 1509
+type(
+  Instruct.debug_event
+)
+ident(
+  def ev "show_information.ml" 41 1536 1544 "show_information.ml" 53 1968 1994
+)
+"show_information.ml" 40 1495 1512 "show_information.ml" 40 1495 1529
+type(
+  unit -> Instruct.debug_event
+)
+ident(
+  ext_ref Events.get_current_event
+)
+"show_information.ml" 40 1495 1530 "show_information.ml" 40 1495 1532
+type(
+  unit
+)
+"show_information.ml" 40 1495 1512 "show_information.ml" 40 1495 1532
+call(
+  stack
+)
+type(
+  Instruct.debug_event
+)
+"show_information.ml" 41 1536 1544 "show_information.ml" 41 1536 1551
+type(
+  Format.formatter ->
+  (string -> unit, Format.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"show_information.ml" 41 1536 1552 "show_information.ml" 41 1536 1555
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "show_information.ml" 27 1097 1120 "show_information.ml" 27 1097 1123
+)
+"show_information.ml" 41 1536 1556 "show_information.ml" 41 1536 1572
+type(
+  (string -> unit, Format.formatter, unit) format
+)
+"show_information.ml" 41 1536 1573 "show_information.ml" 41 1536 1575
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "show_information.ml" 40 1495 1507 "show_information.ml" 40 1495 1509
+)
+"show_information.ml" 41 1536 1573 "show_information.ml" 41 1536 1585
+type(
+  string
+)
+"show_information.ml" 41 1536 1544 "show_information.ml" 41 1536 1585
+call(
+  stack
+)
+type(
+  unit
+)
+"show_information.ml" 42 1587 1602 "show_information.ml" 42 1587 1619
+type(
+  int -> int list
+)
+ident(
+  ext_ref Breakpoints.breakpoints_at_pc
+)
+"show_information.ml" 42 1587 1620 "show_information.ml" 42 1587 1622
+type(
+  int
+)
+ident(
+  int_ref pc "show_information.ml" 39 1423 1488 "show_information.ml" 39 1423 1490
+)
+"show_information.ml" 42 1587 1602 "show_information.ml" 42 1587 1622
+call(
+  stack
+)
+type(
+  int list
+)
+"show_information.ml" 43 1628 1639 "show_information.ml" 43 1628 1641
+type(
+  int list
+)
+"show_information.ml" 44 1645 1658 "show_information.ml" 44 1645 1660
+type(
+  unit
+)
+"show_information.ml" 45 1661 1673 "show_information.ml" 45 1661 1683
+type(
+  int
+)
+ident(
+  def breakpoint "show_information.ml" 46 1688 1701 "show_information.ml" 46 1688 1742
+)
+"show_information.ml" 45 1661 1672 "show_information.ml" 45 1661 1684
+type(
+  int list
+)
+"show_information.ml" 46 1688 1701 "show_information.ml" 46 1688 1708
+type(
+  Format.formatter ->
+  (int -> unit, Format.formatter, unit) format -> int -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"show_information.ml" 46 1688 1709 "show_information.ml" 46 1688 1712
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "show_information.ml" 27 1097 1120 "show_information.ml" 27 1097 1123
+)
+"show_information.ml" 46 1688 1713 "show_information.ml" 46 1688 1731
+type(
+  (int -> unit, Format.formatter, unit) format
+)
+"show_information.ml" 46 1688 1732 "show_information.ml" 46 1688 1742
+type(
+  int
+)
+ident(
+  int_ref breakpoint "show_information.ml" 45 1661 1673 "show_information.ml" 45 1661 1683
+)
+"show_information.ml" 46 1688 1701 "show_information.ml" 46 1688 1742
+call(
+  stack
+)
+type(
+  unit
+)
+"show_information.ml" 47 1743 1754 "show_information.ml" 47 1743 1765
+type(
+  int list
+)
+ident(
+  def breakpoints "show_information.ml" 48 1769 1782 "show_information.ml" 52 1921 1965
+)
+"show_information.ml" 48 1769 1782 "show_information.ml" 48 1769 1789
+type(
+  Format.formatter ->
+  ((Format.formatter -> int list -> unit) -> int list -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> int list -> unit) -> int list -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"show_information.ml" 48 1769 1790 "show_information.ml" 48 1769 1793
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "show_information.ml" 27 1097 1120 "show_information.ml" 27 1097 1123
+)
+"show_information.ml" 48 1769 1794 "show_information.ml" 48 1769 1813
+type(
+  ((Format.formatter -> int list -> unit) -> int list -> unit,
+   Format.formatter, unit)
+  format
+)
+"show_information.ml" 49 1814 1832 "show_information.ml" 49 1814 1835
+type(
+  Format.formatter
+)
+ident(
+  def ppf "show_information.ml" 49 1814 1836 "show_information.ml" 51 1866 1919
+)
+"show_information.ml" 49 1814 1836 "show_information.ml" 49 1814 1837
+type(
+  int list
+)
+ident(
+  def l "show_information.ml" 50 1841 1856 "show_information.ml" 51 1866 1919
+)
+"show_information.ml" 50 1841 1856 "show_information.ml" 50 1841 1865
+type(
+  (int -> unit) -> int list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"show_information.ml" 51 1866 1892 "show_information.ml" 51 1866 1893
+type(
+  int
+)
+ident(
+  def x "show_information.ml" 51 1866 1897 "show_information.ml" 51 1866 1916
+)
+"show_information.ml" 51 1866 1897 "show_information.ml" 51 1866 1904
+type(
+  Format.formatter ->
+  (int -> unit, Format.formatter, unit) format -> int -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"show_information.ml" 51 1866 1905 "show_information.ml" 51 1866 1908
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "show_information.ml" 49 1814 1832 "show_information.ml" 49 1814 1835
+)
+"show_information.ml" 51 1866 1909 "show_information.ml" 51 1866 1914
+type(
+  (int -> unit, Format.formatter, unit) format
+)
+"show_information.ml" 51 1866 1915 "show_information.ml" 51 1866 1916
+type(
+  int
+)
+ident(
+  int_ref x "show_information.ml" 51 1866 1892 "show_information.ml" 51 1866 1893
+)
+"show_information.ml" 51 1866 1897 "show_information.ml" 51 1866 1916
+call(
+  tail
+)
+type(
+  unit
+)
+"show_information.ml" 51 1866 1882 "show_information.ml" 51 1866 1917
+type(
+  int -> unit
+)
+"show_information.ml" 51 1866 1918 "show_information.ml" 51 1866 1919
+type(
+  int list
+)
+ident(
+  int_ref l "show_information.ml" 49 1814 1836 "show_information.ml" 49 1814 1837
+)
+"show_information.ml" 50 1841 1856 "show_information.ml" 51 1866 1919
+call(
+  tail
+)
+type(
+  unit
+)
+"show_information.ml" 49 1814 1827 "show_information.ml" 51 1866 1920
+type(
+  Format.formatter -> int list -> unit
+)
+"show_information.ml" 52 1921 1935 "show_information.ml" 52 1921 1944
+type(
+  (int -> int -> int) -> int list -> int list
+)
+ident(
+  ext_ref List.sort
+)
+"show_information.ml" 52 1921 1945 "show_information.ml" 52 1921 1952
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"show_information.ml" 52 1921 1953 "show_information.ml" 52 1921 1964
+type(
+  int list
+)
+ident(
+  int_ref breakpoints "show_information.ml" 47 1743 1754 "show_information.ml" 47 1743 1765
+)
+"show_information.ml" 52 1921 1934 "show_information.ml" 52 1921 1965
+call(
+  stack
+)
+type(
+  int list
+)
+"show_information.ml" 48 1769 1782 "show_information.ml" 52 1921 1965
+call(
+  stack
+)
+type(
+  unit
+)
+"show_information.ml" 42 1587 1595 "show_information.ml" 52 1921 1966
+type(
+  unit
+)
+"show_information.ml" 53 1968 1976 "show_information.ml" 53 1968 1986
+type(
+  Instruct.debug_event -> bool -> unit
+)
+ident(
+  ext_ref Show_source.show_point
+)
+"show_information.ml" 53 1968 1987 "show_information.ml" 53 1968 1989
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref ev "show_information.ml" 40 1495 1507 "show_information.ml" 40 1495 1509
+)
+"show_information.ml" 53 1968 1990 "show_information.ml" 53 1968 1994
+type(
+  bool
+)
+"show_information.ml" 53 1968 1976 "show_information.ml" 53 1968 1994
+call(
+  tail
+)
+type(
+  unit
+)
+"show_information.ml" 42 1587 1595 "show_information.ml" 53 1968 1994
+type(
+  unit
+)
+"show_information.ml" 41 1536 1544 "show_information.ml" 53 1968 1994
+type(
+  unit
+)
+"show_information.ml" 40 1495 1503 "show_information.ml" 53 1968 1994
+type(
+  unit
+)
+"show_information.ml" 54 1995 2016 "show_information.ml" 54 1995 2022
+type(
+  Debugcom.execution_summary
+)
+"show_information.ml" 54 1995 2004 "show_information.ml" 54 1995 2023
+type(
+  Debugcom.report
+)
+"show_information.ml" 54 1995 1999 "show_information.ml" 54 1995 2023
+type(
+  Debugcom.report option
+)
+"show_information.ml" 55 2027 2033 "show_information.ml" 55 2027 2040
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"show_information.ml" 55 2027 2041 "show_information.ml" 55 2027 2044
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "show_information.ml" 27 1097 1120 "show_information.ml" 27 1097 1123
+)
+"show_information.ml" 55 2027 2045 "show_information.ml" 55 2027 2064
+type(
+  (unit, Format.formatter, unit) format
+)
+"show_information.ml" 55 2027 2033 "show_information.ml" 55 2027 2064
+call(
+  stack
+)
+type(
+  unit
+)
+"show_information.ml" 56 2066 2072 "show_information.ml" 56 2066 2085
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Show_source.show_no_point
+)
+"show_information.ml" 56 2066 2086 "show_information.ml" 56 2066 2088
+type(
+  unit
+)
+"show_information.ml" 56 2066 2072 "show_information.ml" 56 2066 2088
+call(
+  tail
+)
+type(
+  unit
+)
+"show_information.ml" 55 2027 2033 "show_information.ml" 56 2066 2088
+type(
+  unit
+)
+"show_information.ml" 57 2089 2110 "show_information.ml" 57 2089 2122
+type(
+  Debugcom.execution_summary
+)
+"show_information.ml" 57 2089 2098 "show_information.ml" 57 2089 2123
+type(
+  Debugcom.report
+)
+"show_information.ml" 57 2089 2093 "show_information.ml" 57 2089 2123
+type(
+  Debugcom.report option
+)
+"show_information.ml" 58 2127 2133 "show_information.ml" 58 2127 2140
+type(
+  Format.formatter ->
+  ((Format.formatter -> Debugcom.Remote_value.t -> unit) ->
+   Debugcom.Remote_value.t -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Debugcom.Remote_value.t -> unit) ->
+  Debugcom.Remote_value.t -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"show_information.ml" 58 2127 2141 "show_information.ml" 58 2127 2144
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "show_information.ml" 27 1097 1120 "show_information.ml" 27 1097 1123
+)
+"show_information.ml" 59 2145 2153 "show_information.ml" 60 2172 2211
+type(
+  ((Format.formatter -> Debugcom.Remote_value.t -> unit) ->
+   Debugcom.Remote_value.t -> unit, Format.formatter, unit)
+  format
+)
+"show_information.ml" 61 2212 2218 "show_information.ml" 61 2212 2242
+type(
+  Format.formatter -> Debugcom.Remote_value.t -> unit
+)
+ident(
+  ext_ref Printval.print_exception
+)
+"show_information.ml" 61 2212 2244 "show_information.ml" 61 2212 2270
+type(
+  unit -> Debugcom.Remote_value.t
+)
+ident(
+  ext_ref Debugcom.Remote_value.accu
+)
+"show_information.ml" 61 2212 2271 "show_information.ml" 61 2212 2273
+type(
+  unit
+)
+"show_information.ml" 61 2212 2243 "show_information.ml" 61 2212 2274
+call(
+  stack
+)
+type(
+  Debugcom.Remote_value.t
+)
+"show_information.ml" 58 2127 2133 "show_information.ml" 61 2212 2274
+call(
+  stack
+)
+type(
+  unit
+)
+"show_information.ml" 62 2276 2282 "show_information.ml" 62 2276 2295
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Show_source.show_no_point
+)
+"show_information.ml" 62 2276 2296 "show_information.ml" 62 2276 2298
+type(
+  unit
+)
+"show_information.ml" 62 2276 2282 "show_information.ml" 62 2276 2298
+call(
+  tail
+)
+type(
+  unit
+)
+"show_information.ml" 58 2127 2133 "show_information.ml" 62 2276 2298
+type(
+  unit
+)
+"show_information.ml" 63 2299 2320 "show_information.ml" 63 2299 2332
+type(
+  Debugcom.execution_summary
+)
+"show_information.ml" 63 2299 2308 "show_information.ml" 63 2299 2333
+type(
+  Debugcom.report
+)
+"show_information.ml" 63 2299 2303 "show_information.ml" 63 2299 2333
+type(
+  Debugcom.report option
+)
+"show_information.ml" 66 2487 2493 "show_information.ml" 66 2487 2509
+type(
+  string -> unit
+)
+ident(
+  ext_ref Misc.fatal_error
+)
+"show_information.ml" 66 2487 2510 "show_information.ml" 66 2487 2547
+type(
+  string
+)
+"show_information.ml" 66 2487 2493 "show_information.ml" 66 2487 2547
+call(
+  tail
+)
+type(
+  unit
+)
+"show_information.ml" 35 1309 1311 "show_information.ml" 66 2487 2547
+type(
+  unit
+)
+"show_information.ml" 34 1291 1293 "show_information.ml" 66 2487 2547
+type(
+  unit
+)
+"show_information.ml" 33 1264 1266 "show_information.ml" 66 2487 2547
+type(
+  unit
+)
+"show_information.ml" 29 1171 1173 "show_information.ml" 66 2487 2547
+type(
+  unit
+)
+"show_information.ml" 28 1126 1128 "show_information.ml" 66 2487 2547
+type(
+  unit
+)
+"show_information.ml" 70 2599 2603 "show_information.ml" 70 2599 2617
+type(
+  int -> Format.formatter -> Instruct.debug_event -> unit
+)
+ident(
+  def show_one_frame "show_information.ml" 89 3276 3276 "show_information.ml" 1 0 -1
+)
+"show_information.ml" 70 2599 2618 "show_information.ml" 70 2599 2626
+type(
+  int
+)
+ident(
+  def framenum "show_information.ml" 70 2599 2627 "show_information.ml" 85 3092 3149
+)
+"show_information.ml" 70 2599 2627 "show_information.ml" 70 2599 2630
+type(
+  Format.formatter
+)
+ident(
+  def ppf "show_information.ml" 70 2599 2631 "show_information.ml" 85 3092 3149
+)
+"show_information.ml" 70 2599 2631 "show_information.ml" 70 2599 2636
+type(
+  Instruct.debug_event
+)
+ident(
+  def event "show_information.ml" 71 2639 2641 "show_information.ml" 85 3092 3149
+)
+"show_information.ml" 71 2639 2645 "show_information.ml" 71 2639 2648
+type(
+  Lexing.position
+)
+ident(
+  def pos "show_information.ml" 72 2675 2677 "show_information.ml" 85 3092 3149
+)
+"show_information.ml" 71 2639 2651 "show_information.ml" 71 2639 2665
+type(
+  Instruct.debug_event -> Lexing.position
+)
+ident(
+  ext_ref Events.get_pos
+)
+"show_information.ml" 71 2639 2666 "show_information.ml" 71 2639 2671
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref event "show_information.ml" 70 2599 2631 "show_information.ml" 70 2599 2636
+)
+"show_information.ml" 71 2639 2651 "show_information.ml" 71 2639 2671
+call(
+  stack
+)
+type(
+  Lexing.position
+)
+"show_information.ml" 72 2675 2681 "show_information.ml" 72 2675 2685
+type(
+  int
+)
+ident(
+  def cnum "show_information.ml" 77 2824 2826 "show_information.ml" 85 3092 3149
+)
+"show_information.ml" 74 2696 2706 "show_information.ml" 74 2696 2712
+type(
+  Source.buffer
+)
+ident(
+  def buffer "show_information.ml" 75 2749 2755 "show_information.ml" 75 2749 2786
+)
+"show_information.ml" 74 2696 2715 "show_information.ml" 74 2696 2725
+type(
+  Lexing.position -> string -> Source.buffer
+)
+ident(
+  ext_ref Source.get_buffer
+)
+"show_information.ml" 74 2696 2726 "show_information.ml" 74 2696 2729
+type(
+  Lexing.position
+)
+ident(
+  int_ref pos "show_information.ml" 71 2639 2645 "show_information.ml" 71 2639 2648
+)
+"show_information.ml" 74 2696 2730 "show_information.ml" 74 2696 2735
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref event "show_information.ml" 70 2599 2631 "show_information.ml" 70 2599 2636
+)
+"show_information.ml" 74 2696 2730 "show_information.ml" 74 2696 2745
+type(
+  string
+)
+"show_information.ml" 74 2696 2715 "show_information.ml" 74 2696 2745
+call(
+  stack
+)
+type(
+  Source.buffer
+)
+"show_information.ml" 75 2749 2755 "show_information.ml" 75 2749 2758
+type(
+  int * int -> int
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"show_information.ml" 75 2749 2760 "show_information.ml" 75 2749 2774
+type(
+  Source.buffer -> Lexing.position -> int * int
+)
+ident(
+  ext_ref Source.start_and_cnum
+)
+"show_information.ml" 75 2749 2775 "show_information.ml" 75 2749 2781
+type(
+  Source.buffer
+)
+ident(
+  int_ref buffer "show_information.ml" 74 2696 2706 "show_information.ml" 74 2696 2712
+)
+"show_information.ml" 75 2749 2782 "show_information.ml" 75 2749 2785
+type(
+  Lexing.position
+)
+ident(
+  int_ref pos "show_information.ml" 71 2639 2645 "show_information.ml" 71 2639 2648
+)
+"show_information.ml" 75 2749 2759 "show_information.ml" 75 2749 2786
+call(
+  stack
+)
+type(
+  int * int
+)
+"show_information.ml" 75 2749 2755 "show_information.ml" 75 2749 2786
+type(
+  int
+)
+"show_information.ml" 74 2696 2702 "show_information.ml" 75 2749 2786
+type(
+  int
+)
+"show_information.ml" 76 2787 2796 "show_information.ml" 76 2787 2797
+type(
+  exn
+)
+"show_information.ml" 76 2787 2801 "show_information.ml" 76 2787 2804
+type(
+  Lexing.position
+)
+ident(
+  int_ref pos "show_information.ml" 71 2639 2645 "show_information.ml" 71 2639 2648
+)
+"show_information.ml" 76 2787 2801 "show_information.ml" 76 2787 2820
+type(
+  int
+)
+"show_information.ml" 73 2688 2692 "show_information.ml" 76 2787 2820
+type(
+  int
+)
+"show_information.ml" 77 2824 2829 "show_information.ml" 77 2824 2830
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"show_information.ml" 77 2824 2830 "show_information.ml" 77 2824 2846
+type(
+  bool ref
+)
+ident(
+  ext_ref Parameters.machine_readable
+)
+"show_information.ml" 77 2824 2829 "show_information.ml" 77 2824 2846
+type(
+  bool
+)
+"show_information.ml" 78 2852 2856 "show_information.ml" 78 2852 2863
+type(
+  Format.formatter ->
+  (int -> int -> string -> int -> unit, Format.formatter, unit) format ->
+  int -> int -> string -> int -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"show_information.ml" 78 2852 2864 "show_information.ml" 78 2852 2867
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "show_information.ml" 70 2599 2627 "show_information.ml" 70 2599 2630
+)
+"show_information.ml" 78 2852 2868 "show_information.ml" 78 2852 2895
+type(
+  (int -> int -> string -> int -> unit, Format.formatter, unit) format
+)
+"show_information.ml" 79 2896 2907 "show_information.ml" 79 2896 2915
+type(
+  int
+)
+ident(
+  int_ref framenum "show_information.ml" 70 2599 2618 "show_information.ml" 70 2599 2626
+)
+"show_information.ml" 79 2896 2916 "show_information.ml" 79 2896 2921
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref event "show_information.ml" 70 2599 2631 "show_information.ml" 70 2599 2636
+)
+"show_information.ml" 79 2896 2916 "show_information.ml" 79 2896 2928
+type(
+  int
+)
+"show_information.ml" 79 2896 2929 "show_information.ml" 79 2896 2934
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref event "show_information.ml" 70 2599 2631 "show_information.ml" 70 2599 2636
+)
+"show_information.ml" 79 2896 2929 "show_information.ml" 79 2896 2944
+type(
+  string
+)
+"show_information.ml" 80 2945 2956 "show_information.ml" 80 2945 2960
+type(
+  int
+)
+ident(
+  int_ref cnum "show_information.ml" 72 2675 2681 "show_information.ml" 72 2675 2685
+)
+"show_information.ml" 78 2852 2856 "show_information.ml" 80 2945 2960
+call(
+  tail
+)
+type(
+  unit
+)
+"show_information.ml" 82 2968 2972 "show_information.ml" 82 2968 2979
+type(
+  Format.formatter ->
+  (int -> string -> string -> int -> int -> unit, Format.formatter, unit)
+  format -> int -> string -> string -> int -> int -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"show_information.ml" 82 2968 2980 "show_information.ml" 82 2968 2983
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "show_information.ml" 70 2599 2627 "show_information.ml" 70 2599 2630
+)
+"show_information.ml" 82 2968 2984 "show_information.ml" 82 2968 3003
+type(
+  (int -> string -> string -> int -> int -> unit, Format.formatter, unit)
+  format
+)
+"show_information.ml" 83 3004 3015 "show_information.ml" 83 3004 3023
+type(
+  int
+)
+ident(
+  int_ref framenum "show_information.ml" 70 2599 2618 "show_information.ml" 70 2599 2626
+)
+"show_information.ml" 83 3004 3024 "show_information.ml" 83 3004 3029
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref event "show_information.ml" 70 2599 2631 "show_information.ml" 70 2599 2636
+)
+"show_information.ml" 83 3004 3024 "show_information.ml" 83 3004 3039
+type(
+  string
+)
+"show_information.ml" 84 3040 3051 "show_information.ml" 84 3040 3054
+type(
+  Lexing.position
+)
+ident(
+  int_ref pos "show_information.ml" 71 2639 2645 "show_information.ml" 71 2639 2648
+)
+"show_information.ml" 84 3040 3051 "show_information.ml" 84 3040 3071
+type(
+  string
+)
+"show_information.ml" 84 3040 3072 "show_information.ml" 84 3040 3075
+type(
+  Lexing.position
+)
+ident(
+  int_ref pos "show_information.ml" 71 2639 2645 "show_information.ml" 71 2639 2648
+)
+"show_information.ml" 84 3040 3072 "show_information.ml" 84 3040 3091
+type(
+  int
+)
+"show_information.ml" 85 3092 3104 "show_information.ml" 85 3092 3107
+type(
+  Lexing.position
+)
+ident(
+  int_ref pos "show_information.ml" 71 2639 2645 "show_information.ml" 71 2639 2648
+)
+"show_information.ml" 85 3092 3104 "show_information.ml" 85 3092 3123
+type(
+  int
+)
+"show_information.ml" 85 3092 3124 "show_information.ml" 85 3092 3125
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"show_information.ml" 85 3092 3126 "show_information.ml" 85 3092 3129
+type(
+  Lexing.position
+)
+ident(
+  int_ref pos "show_information.ml" 71 2639 2645 "show_information.ml" 71 2639 2648
+)
+"show_information.ml" 85 3092 3126 "show_information.ml" 85 3092 3144
+type(
+  int
+)
+"show_information.ml" 85 3092 3104 "show_information.ml" 85 3092 3144
+type(
+  int
+)
+"show_information.ml" 85 3092 3145 "show_information.ml" 85 3092 3146
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"show_information.ml" 85 3092 3147 "show_information.ml" 85 3092 3148
+type(
+  int
+)
+"show_information.ml" 85 3092 3103 "show_information.ml" 85 3092 3149
+type(
+  int
+)
+"show_information.ml" 82 2968 2972 "show_information.ml" 85 3092 3149
+call(
+  tail
+)
+type(
+  unit
+)
+"show_information.ml" 77 2824 2826 "show_information.ml" 85 3092 3149
+type(
+  unit
+)
+"show_information.ml" 72 2675 2677 "show_information.ml" 85 3092 3149
+type(
+  unit
+)
+"show_information.ml" 71 2639 2641 "show_information.ml" 85 3092 3149
+type(
+  unit
+)
+"show_information.ml" 89 3276 3280 "show_information.ml" 89 3276 3298
+type(
+  Format.formatter -> bool -> unit
+)
+ident(
+  def show_current_frame "show_information.ml" 105 3817 3849 "show_information.ml" 1 0 -1
+)
+"show_information.ml" 89 3276 3299 "show_information.ml" 89 3276 3302
+type(
+  Format.formatter
+)
+ident(
+  def ppf "show_information.ml" 89 3276 3303 "show_information.ml" 105 3817 3849
+)
+"show_information.ml" 89 3276 3303 "show_information.ml" 89 3276 3311
+type(
+  bool
+)
+ident(
+  def selected "show_information.ml" 90 3314 3316 "show_information.ml" 105 3817 3849
+)
+"show_information.ml" 90 3314 3322 "show_information.ml" 90 3314 3323
+type(
+  Instruct.debug_event option ref -> Instruct.debug_event option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"show_information.ml" 90 3314 3323 "show_information.ml" 90 3314 3337
+type(
+  Instruct.debug_event option ref
+)
+ident(
+  ext_ref Frames.selected_event
+)
+"show_information.ml" 90 3314 3322 "show_information.ml" 90 3314 3337
+type(
+  Instruct.debug_event option
+)
+"show_information.ml" 91 3343 3347 "show_information.ml" 91 3343 3351
+type(
+  Instruct.debug_event option
+)
+"show_information.ml" 92 3355 3361 "show_information.ml" 92 3355 3368
+type(
+  Format.formatter -> (unit, Format.formatter, unit) format -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"show_information.ml" 92 3355 3369 "show_information.ml" 92 3355 3372
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "show_information.ml" 89 3276 3299 "show_information.ml" 89 3276 3302
+)
+"show_information.ml" 92 3355 3373 "show_information.ml" 92 3355 3397
+type(
+  (unit, Format.formatter, unit) format
+)
+"show_information.ml" 92 3355 3361 "show_information.ml" 92 3355 3397
+call(
+  tail
+)
+type(
+  unit
+)
+"show_information.ml" 93 3398 3407 "show_information.ml" 93 3398 3413
+type(
+  Instruct.debug_event
+)
+ident(
+  def sel_ev "show_information.ml" 94 3417 3423 "show_information.ml" 105 3817 3849
+)
+"show_information.ml" 93 3398 3402 "show_information.ml" 93 3398 3413
+type(
+  Instruct.debug_event option
+)
+"show_information.ml" 94 3417 3423 "show_information.ml" 94 3417 3437
+type(
+  int -> Format.formatter -> Instruct.debug_event -> unit
+)
+ident(
+  int_ref show_one_frame "show_information.ml" 70 2599 2603 "show_information.ml" 70 2599 2617
+)
+"show_information.ml" 94 3417 3438 "show_information.ml" 94 3417 3439
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"show_information.ml" 94 3417 3439 "show_information.ml" 94 3417 3452
+type(
+  int ref
+)
+ident(
+  ext_ref Frames.current_frame
+)
+"show_information.ml" 94 3417 3438 "show_information.ml" 94 3417 3452
+type(
+  int
+)
+"show_information.ml" 94 3417 3453 "show_information.ml" 94 3417 3456
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "show_information.ml" 89 3276 3299 "show_information.ml" 89 3276 3302
+)
+"show_information.ml" 94 3417 3457 "show_information.ml" 94 3417 3463
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref sel_ev "show_information.ml" 93 3398 3407 "show_information.ml" 93 3398 3413
+)
+"show_information.ml" 94 3417 3423 "show_information.ml" 94 3417 3463
+call(
+  stack
+)
+type(
+  unit
+)
+"show_information.ml" 95 3465 3483 "show_information.ml" 95 3465 3500
+type(
+  int -> int list
+)
+ident(
+  ext_ref Breakpoints.breakpoints_at_pc
+)
+"show_information.ml" 95 3465 3501 "show_information.ml" 95 3465 3507
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref sel_ev "show_information.ml" 93 3398 3407 "show_information.ml" 93 3398 3413
+)
+"show_information.ml" 95 3465 3501 "show_information.ml" 95 3465 3514
+type(
+  int
+)
+"show_information.ml" 95 3465 3483 "show_information.ml" 95 3465 3514
+call(
+  stack
+)
+type(
+  int list
+)
+"show_information.ml" 96 3520 3528 "show_information.ml" 96 3520 3530
+type(
+  int list
+)
+"show_information.ml" 96 3520 3534 "show_information.ml" 96 3520 3536
+type(
+  unit
+)
+"show_information.ml" 97 3537 3546 "show_information.ml" 97 3537 3556
+type(
+  int
+)
+ident(
+  def breakpoint "show_information.ml" 98 3561 3571 "show_information.ml" 98 3561 3612
+)
+"show_information.ml" 97 3537 3545 "show_information.ml" 97 3537 3557
+type(
+  int list
+)
+"show_information.ml" 98 3561 3571 "show_information.ml" 98 3561 3578
+type(
+  Format.formatter ->
+  (int -> unit, Format.formatter, unit) format -> int -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"show_information.ml" 98 3561 3579 "show_information.ml" 98 3561 3582
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "show_information.ml" 89 3276 3299 "show_information.ml" 89 3276 3302
+)
+"show_information.ml" 98 3561 3583 "show_information.ml" 98 3561 3601
+type(
+  (int -> unit, Format.formatter, unit) format
+)
+"show_information.ml" 98 3561 3602 "show_information.ml" 98 3561 3612
+type(
+  int
+)
+ident(
+  int_ref breakpoint "show_information.ml" 97 3537 3546 "show_information.ml" 97 3537 3556
+)
+"show_information.ml" 98 3561 3571 "show_information.ml" 98 3561 3612
+call(
+  stack
+)
+type(
+  unit
+)
+"show_information.ml" 99 3613 3621 "show_information.ml" 99 3613 3632
+type(
+  int list
+)
+ident(
+  def breakpoints "show_information.ml" 100 3636 3646 "show_information.ml" 103 3763 3805
+)
+"show_information.ml" 100 3636 3646 "show_information.ml" 100 3636 3653
+type(
+  Format.formatter ->
+  ((Format.formatter -> int list -> unit) -> int list -> unit,
+   Format.formatter, unit)
+  format -> (Format.formatter -> int list -> unit) -> int list -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"show_information.ml" 100 3636 3654 "show_information.ml" 100 3636 3657
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "show_information.ml" 89 3276 3299 "show_information.ml" 89 3276 3302
+)
+"show_information.ml" 100 3636 3658 "show_information.ml" 100 3636 3677
+type(
+  ((Format.formatter -> int list -> unit) -> int list -> unit,
+   Format.formatter, unit)
+  format
+)
+"show_information.ml" 101 3678 3693 "show_information.ml" 101 3678 3696
+type(
+  Format.formatter
+)
+ident(
+  def ppf "show_information.ml" 101 3678 3697 "show_information.ml" 102 3702 3761
+)
+"show_information.ml" 101 3678 3697 "show_information.ml" 101 3678 3698
+type(
+  int list
+)
+ident(
+  def l "show_information.ml" 102 3702 3714 "show_information.ml" 102 3702 3761
+)
+"show_information.ml" 102 3702 3714 "show_information.ml" 102 3702 3723
+type(
+  (int -> unit) -> int list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"show_information.ml" 102 3702 3734 "show_information.ml" 102 3702 3735
+type(
+  int
+)
+ident(
+  def x "show_information.ml" 102 3702 3739 "show_information.ml" 102 3702 3758
+)
+"show_information.ml" 102 3702 3739 "show_information.ml" 102 3702 3746
+type(
+  Format.formatter ->
+  (int -> unit, Format.formatter, unit) format -> int -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"show_information.ml" 102 3702 3747 "show_information.ml" 102 3702 3750
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "show_information.ml" 101 3678 3693 "show_information.ml" 101 3678 3696
+)
+"show_information.ml" 102 3702 3751 "show_information.ml" 102 3702 3756
+type(
+  (int -> unit, Format.formatter, unit) format
+)
+"show_information.ml" 102 3702 3757 "show_information.ml" 102 3702 3758
+type(
+  int
+)
+ident(
+  int_ref x "show_information.ml" 102 3702 3734 "show_information.ml" 102 3702 3735
+)
+"show_information.ml" 102 3702 3739 "show_information.ml" 102 3702 3758
+call(
+  tail
+)
+type(
+  unit
+)
+"show_information.ml" 102 3702 3724 "show_information.ml" 102 3702 3759
+type(
+  int -> unit
+)
+"show_information.ml" 102 3702 3760 "show_information.ml" 102 3702 3761
+type(
+  int list
+)
+ident(
+  int_ref l "show_information.ml" 101 3678 3697 "show_information.ml" 101 3678 3698
+)
+"show_information.ml" 102 3702 3714 "show_information.ml" 102 3702 3761
+call(
+  tail
+)
+type(
+  unit
+)
+"show_information.ml" 101 3678 3688 "show_information.ml" 102 3702 3762
+type(
+  Format.formatter -> int list -> unit
+)
+"show_information.ml" 103 3763 3774 "show_information.ml" 103 3763 3783
+type(
+  (int -> int -> int) -> int list -> int list
+)
+ident(
+  ext_ref List.sort
+)
+"show_information.ml" 103 3763 3784 "show_information.ml" 103 3763 3791
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"show_information.ml" 103 3763 3792 "show_information.ml" 103 3763 3803
+type(
+  int list
+)
+ident(
+  int_ref breakpoints "show_information.ml" 99 3613 3621 "show_information.ml" 99 3613 3632
+)
+"show_information.ml" 103 3763 3773 "show_information.ml" 103 3763 3804
+call(
+  stack
+)
+type(
+  int list
+)
+"show_information.ml" 100 3636 3646 "show_information.ml" 103 3763 3805
+call(
+  stack
+)
+type(
+  unit
+)
+"show_information.ml" 95 3465 3471 "show_information.ml" 104 3806 3815
+type(
+  unit
+)
+"show_information.ml" 105 3817 3823 "show_information.ml" 105 3817 3833
+type(
+  Instruct.debug_event -> bool -> unit
+)
+ident(
+  ext_ref Show_source.show_point
+)
+"show_information.ml" 105 3817 3834 "show_information.ml" 105 3817 3840
+type(
+  Instruct.debug_event
+)
+ident(
+  int_ref sel_ev "show_information.ml" 93 3398 3407 "show_information.ml" 93 3398 3413
+)
+"show_information.ml" 105 3817 3841 "show_information.ml" 105 3817 3849
+type(
+  bool
+)
+ident(
+  int_ref selected "show_information.ml" 89 3276 3303 "show_information.ml" 89 3276 3311
+)
+"show_information.ml" 105 3817 3823 "show_information.ml" 105 3817 3849
+call(
+  tail
+)
+type(
+  unit
+)
+"show_information.ml" 95 3465 3471 "show_information.ml" 105 3817 3849
+type(
+  unit
+)
+"show_information.ml" 94 3417 3423 "show_information.ml" 105 3817 3849
+type(
+  unit
+)
+"show_information.ml" 90 3314 3316 "show_information.ml" 105 3817 3849
+type(
+  unit
+)

@@ -1,0 +1,525 @@
+"digest_cache.ml" 18 894 898 "digest_cache.ml" 18 894 905
+type(
+  (string, string) Hashtbl.t
+)
+ident(
+  def digests "digest_cache.ml" 20 928 928 "digest_cache.ml" 1 0 -1
+)
+"digest_cache.ml" 18 894 908 "digest_cache.ml" 18 894 922
+type(
+  ?random:bool -> int -> (string, string) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"digest_cache.ml" 18 894 923 "digest_cache.ml" 18 894 926
+type(
+  int
+)
+"digest_cache.ml" 18 894 908 "digest_cache.ml" 18 894 926
+call(
+  stack
+)
+type(
+  (string, string) Hashtbl.t
+)
+"digest_cache.ml" 20 928 932 "digest_cache.ml" 20 928 935
+type(
+  string -> string
+)
+ident(
+  def get "digest_cache.ml" 22 960 960 "digest_cache.ml" 1 0 -1
+)
+"digest_cache.ml" 20 928 938 "digest_cache.ml" 20 928 950
+type(
+  (string, string) Hashtbl.t -> string -> string
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"digest_cache.ml" 20 928 951 "digest_cache.ml" 20 928 958
+type(
+  (string, string) Hashtbl.t
+)
+ident(
+  int_ref digests "digest_cache.ml" 18 894 898 "digest_cache.ml" 18 894 905
+)
+"digest_cache.ml" 20 928 938 "digest_cache.ml" 20 928 958
+call(
+  stack
+)
+type(
+  string -> string
+)
+"digest_cache.ml" 22 960 964 "digest_cache.ml" 22 960 967
+type(
+  string -> string -> unit
+)
+ident(
+  def put "digest_cache.ml" 24 995 995 "digest_cache.ml" 1 0 -1
+)
+"digest_cache.ml" 22 960 970 "digest_cache.ml" 22 960 985
+type(
+  (string, string) Hashtbl.t -> string -> string -> unit
+)
+ident(
+  ext_ref Hashtbl.replace
+)
+"digest_cache.ml" 22 960 986 "digest_cache.ml" 22 960 993
+type(
+  (string, string) Hashtbl.t
+)
+ident(
+  int_ref digests "digest_cache.ml" 18 894 898 "digest_cache.ml" 18 894 905
+)
+"digest_cache.ml" 22 960 970 "digest_cache.ml" 22 960 993
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"digest_cache.ml" 24 995 999 "digest_cache.ml" 24 995 1007
+type(
+  Pathname.t lazy_t
+)
+ident(
+  def _digests "digest_cache.ml" 26 1064 1064 "digest_cache.ml" 1 0 -1
+)
+"digest_cache.ml" 24 995 1016 "digest_cache.ml" 24 995 1017
+type(
+  Pathname.t ref -> Pathname.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"digest_cache.ml" 24 995 1017 "digest_cache.ml" 24 995 1034
+type(
+  Pathname.t ref
+)
+ident(
+  ext_ref Options.build_dir
+)
+"digest_cache.ml" 24 995 1016 "digest_cache.ml" 24 995 1034
+type(
+  Pathname.t
+)
+"digest_cache.ml" 24 995 1035 "digest_cache.ml" 24 995 1036
+type(
+  Pathname.t -> Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Pathname.Operators.( / )
+)
+"digest_cache.ml" 24 995 1038 "digest_cache.ml" 24 995 1049
+type(
+  string -> Pathname.t
+)
+ident(
+  ext_ref Pathname.mk
+)
+"digest_cache.ml" 24 995 1050 "digest_cache.ml" 24 995 1060
+type(
+  string
+)
+"digest_cache.ml" 24 995 1037 "digest_cache.ml" 24 995 1061
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"digest_cache.ml" 24 995 1015 "digest_cache.ml" 24 995 1062
+call(
+  tail
+)
+type(
+  Pathname.t
+)
+"digest_cache.ml" 24 995 1010 "digest_cache.ml" 24 995 1062
+type(
+  Pathname.t lazy_t
+)
+"digest_cache.ml" 26 1064 1068 "digest_cache.ml" 26 1064 1076
+type(
+  unit -> unit
+)
+ident(
+  def finalize "digest_cache.ml" 33 1240 1240 "digest_cache.ml" 1 0 -1
+)
+"digest_cache.ml" 26 1064 1077 "digest_cache.ml" 26 1064 1079
+type(
+  unit
+)
+"digest_cache.ml" 27 1082 1084 "digest_cache.ml" 27 1082 1100
+type(
+  ?bin:bool -> Pathname.t -> (out_channel -> unit) -> unit
+)
+ident(
+  ext_ref My_std.with_output_file
+)
+"digest_cache.ml" 27 1082 1101 "digest_cache.ml" 27 1082 1103
+type(
+  Pathname.t Lazy.t -> Pathname.t
+)
+ident(
+  ext_ref My_std.( !* )
+)
+"digest_cache.ml" 27 1082 1103 "digest_cache.ml" 27 1082 1111
+type(
+  Pathname.t Lazy.t
+)
+ident(
+  int_ref _digests "digest_cache.ml" 24 995 999 "digest_cache.ml" 24 995 1007
+)
+"digest_cache.ml" 27 1082 1101 "digest_cache.ml" 27 1082 1111
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"digest_cache.ml" 27 1082 1122 "digest_cache.ml" 27 1082 1124
+type(
+  out_channel
+)
+ident(
+  def oc "digest_cache.ml" 28 1128 1132 "digest_cache.ml" 30 1217 1232
+)
+"digest_cache.ml" 28 1128 1132 "digest_cache.ml" 28 1128 1144
+type(
+  (string -> string -> unit) -> (string, string) Hashtbl.t -> unit
+)
+ident(
+  ext_ref Hashtbl.iter
+)
+"digest_cache.ml" 28 1128 1155 "digest_cache.ml" 28 1128 1159
+type(
+  string
+)
+ident(
+  def name "digest_cache.ml" 28 1128 1160 "digest_cache.ml" 29 1170 1216
+)
+"digest_cache.ml" 28 1128 1160 "digest_cache.ml" 28 1128 1166
+type(
+  string
+)
+ident(
+  def digest "digest_cache.ml" 29 1170 1176 "digest_cache.ml" 29 1170 1216
+)
+"digest_cache.ml" 29 1170 1176 "digest_cache.ml" 29 1170 1190
+type(
+  out_channel ->
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"digest_cache.ml" 29 1170 1191 "digest_cache.ml" 29 1170 1193
+type(
+  out_channel
+)
+ident(
+  int_ref oc "digest_cache.ml" 27 1082 1122 "digest_cache.ml" 27 1082 1124
+)
+"digest_cache.ml" 29 1170 1194 "digest_cache.ml" 29 1170 1204
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"digest_cache.ml" 29 1170 1205 "digest_cache.ml" 29 1170 1209
+type(
+  string
+)
+ident(
+  int_ref name "digest_cache.ml" 28 1128 1155 "digest_cache.ml" 28 1128 1159
+)
+"digest_cache.ml" 29 1170 1210 "digest_cache.ml" 29 1170 1216
+type(
+  string
+)
+ident(
+  int_ref digest "digest_cache.ml" 28 1128 1160 "digest_cache.ml" 28 1128 1166
+)
+"digest_cache.ml" 29 1170 1176 "digest_cache.ml" 29 1170 1216
+call(
+  tail
+)
+type(
+  unit
+)
+"digest_cache.ml" 28 1128 1145 "digest_cache.ml" 30 1217 1224
+type(
+  string -> string -> unit
+)
+"digest_cache.ml" 30 1217 1225 "digest_cache.ml" 30 1217 1232
+type(
+  (string, string) Hashtbl.t
+)
+ident(
+  int_ref digests "digest_cache.ml" 18 894 898 "digest_cache.ml" 18 894 905
+)
+"digest_cache.ml" 28 1128 1132 "digest_cache.ml" 30 1217 1232
+call(
+  tail
+)
+type(
+  unit
+)
+"digest_cache.ml" 27 1082 1112 "digest_cache.ml" 31 1233 1238
+type(
+  out_channel -> unit
+)
+"digest_cache.ml" 27 1082 1084 "digest_cache.ml" 31 1233 1238
+call(
+  tail
+)
+type(
+  unit
+)
+"digest_cache.ml" 33 1240 1244 "digest_cache.ml" 33 1240 1248
+type(
+  unit -> unit
+)
+ident(
+  def init "digest_cache.ml" 42 1508 1539 "digest_cache.ml" 1 0 -1
+)
+"digest_cache.ml" 33 1240 1249 "digest_cache.ml" 33 1240 1251
+type(
+  unit
+)
+"digest_cache.ml" 34 1254 1256 "digest_cache.ml" 34 1254 1267
+type(
+  string -> unit
+)
+ident(
+  ext_ref Shell.chdir
+)
+"digest_cache.ml" 34 1254 1268 "digest_cache.ml" 34 1254 1269
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"digest_cache.ml" 34 1254 1269 "digest_cache.ml" 34 1254 1286
+type(
+  string ref
+)
+ident(
+  ext_ref Options.build_dir
+)
+"digest_cache.ml" 34 1254 1268 "digest_cache.ml" 34 1254 1286
+type(
+  string
+)
+"digest_cache.ml" 34 1254 1256 "digest_cache.ml" 34 1254 1286
+call(
+  stack
+)
+type(
+  unit
+)
+"digest_cache.ml" 35 1288 1293 "digest_cache.ml" 35 1288 1308
+type(
+  Pathname.t -> bool
+)
+ident(
+  ext_ref Pathname.exists
+)
+"digest_cache.ml" 35 1288 1309 "digest_cache.ml" 35 1288 1311
+type(
+  Pathname.t Lazy.t -> Pathname.t
+)
+ident(
+  ext_ref My_std.( !* )
+)
+"digest_cache.ml" 35 1288 1311 "digest_cache.ml" 35 1288 1319
+type(
+  Pathname.t Lazy.t
+)
+ident(
+  int_ref _digests "digest_cache.ml" 24 995 999 "digest_cache.ml" 24 995 1007
+)
+"digest_cache.ml" 35 1288 1309 "digest_cache.ml" 35 1288 1319
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"digest_cache.ml" 35 1288 1293 "digest_cache.ml" 35 1288 1319
+call(
+  stack
+)
+type(
+  bool
+)
+"digest_cache.ml" 36 1325 1329 "digest_cache.ml" 36 1325 1344
+type(
+  ?bin:bool -> Pathname.t -> (in_channel -> unit) -> unit
+)
+ident(
+  ext_ref My_std.with_input_file
+)
+"digest_cache.ml" 36 1325 1345 "digest_cache.ml" 36 1325 1347
+type(
+  Pathname.t Lazy.t -> Pathname.t
+)
+ident(
+  ext_ref My_std.( !* )
+)
+"digest_cache.ml" 36 1325 1347 "digest_cache.ml" 36 1325 1355
+type(
+  Pathname.t Lazy.t
+)
+ident(
+  int_ref _digests "digest_cache.ml" 24 995 999 "digest_cache.ml" 24 995 1007
+)
+"digest_cache.ml" 36 1325 1345 "digest_cache.ml" 36 1325 1355
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"digest_cache.ml" 36 1325 1366 "digest_cache.ml" 36 1325 1368
+type(
+  in_channel
+)
+ident(
+  def ic "digest_cache.ml" 37 1372 1378 "digest_cache.ml" 40 1465 1498
+)
+"digest_cache.ml" 37 1372 1388 "digest_cache.ml" 37 1372 1392
+type(
+  bool
+)
+"digest_cache.ml" 38 1396 1408 "digest_cache.ml" 38 1396 1409
+type(
+  string
+)
+ident(
+  def l "digest_cache.ml" 39 1429 1437 "digest_cache.ml" 39 1429 1464
+)
+"digest_cache.ml" 38 1396 1412 "digest_cache.ml" 38 1396 1422
+type(
+  in_channel -> string
+)
+ident(
+  ext_ref Pervasives.input_line
+)
+"digest_cache.ml" 38 1396 1423 "digest_cache.ml" 38 1396 1425
+type(
+  in_channel
+)
+ident(
+  int_ref ic "digest_cache.ml" 36 1325 1366 "digest_cache.ml" 36 1325 1368
+)
+"digest_cache.ml" 38 1396 1412 "digest_cache.ml" 38 1396 1425
+call(
+  stack
+)
+type(
+  string
+)
+"digest_cache.ml" 39 1429 1437 "digest_cache.ml" 39 1429 1449
+type(
+  string ->
+  (string -> string -> unit, '_a, (string -> string -> unit) -> unit, unit)
+  Scanf.scanner
+)
+ident(
+  ext_ref Scanf.sscanf
+)
+"digest_cache.ml" 39 1429 1450 "digest_cache.ml" 39 1429 1451
+type(
+  string
+)
+ident(
+  int_ref l "digest_cache.ml" 38 1396 1408 "digest_cache.ml" 38 1396 1409
+)
+"digest_cache.ml" 39 1429 1452 "digest_cache.ml" 39 1429 1460
+type(
+  (string -> string -> unit, Scanf.Scanning.in_channel, '_a,
+   (string -> string -> unit) -> unit, (string -> string -> unit) -> unit,
+   unit)
+  format6
+)
+"digest_cache.ml" 39 1429 1461 "digest_cache.ml" 39 1429 1464
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref put "digest_cache.ml" 22 960 964 "digest_cache.ml" 22 960 967
+)
+"digest_cache.ml" 39 1429 1437 "digest_cache.ml" 39 1429 1464
+call(
+  stack
+)
+type(
+  unit
+)
+"digest_cache.ml" 38 1396 1404 "digest_cache.ml" 39 1429 1464
+type(
+  unit
+)
+"digest_cache.ml" 37 1372 1382 "digest_cache.ml" 40 1465 1475
+type(
+  unit
+)
+"digest_cache.ml" 40 1465 1481 "digest_cache.ml" 40 1465 1492
+type(
+  exn
+)
+"digest_cache.ml" 40 1465 1496 "digest_cache.ml" 40 1465 1498
+type(
+  unit
+)
+"digest_cache.ml" 37 1372 1378 "digest_cache.ml" 40 1465 1498
+type(
+  unit
+)
+"digest_cache.ml" 36 1325 1356 "digest_cache.ml" 41 1499 1506
+type(
+  in_channel -> unit
+)
+"digest_cache.ml" 36 1325 1329 "digest_cache.ml" 41 1499 1506
+call(
+  stack
+)
+type(
+  unit
+)
+"digest_cache.ml" 35 1288 1290 "digest_cache.ml" 41 1499 1506
+type(
+  unit
+)
+"digest_cache.ml" 42 1508 1510 "digest_cache.ml" 42 1508 1530
+type(
+  (unit -> unit) -> unit
+)
+ident(
+  ext_ref My_unix.at_exit_once
+)
+"digest_cache.ml" 42 1508 1531 "digest_cache.ml" 42 1508 1539
+type(
+  unit -> unit
+)
+ident(
+  int_ref finalize "digest_cache.ml" 26 1064 1068 "digest_cache.ml" 26 1064 1076
+)
+"digest_cache.ml" 42 1508 1510 "digest_cache.ml" 42 1508 1539
+call(
+  tail
+)
+type(
+  unit
+)
+"digest_cache.ml" 35 1288 1290 "digest_cache.ml" 42 1508 1539
+type(
+  unit
+)
+"digest_cache.ml" 34 1254 1256 "digest_cache.ml" 42 1508 1539
+type(
+  unit
+)

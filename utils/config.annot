@@ -1,0 +1,1862 @@
+"utils/config.ml" 24 1469 1473 "utils/config.ml" 24 1469 1480
+type(
+  string
+)
+ident(
+  def version "utils/config.ml" 26 1502 1502 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 24 1469 1483 "utils/config.ml" 24 1469 1500
+type(
+  string
+)
+ident(
+  ext_ref Sys.ocaml_version
+)
+"utils/config.ml" 26 1502 1506 "utils/config.ml" 26 1502 1530
+type(
+  string
+)
+ident(
+  def standard_library_default "utils/config.ml" 28 1557 1557 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 26 1502 1533 "utils/config.ml" 26 1502 1555
+type(
+  string
+)
+"utils/config.ml" 28 1557 1561 "utils/config.ml" 28 1557 1577
+type(
+  string
+)
+ident(
+  def standard_library "utils/config.ml" 37 1713 1713 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 30 1586 1590 "utils/config.ml" 30 1586 1600
+type(
+  string -> string
+)
+ident(
+  ext_ref Sys.getenv
+)
+"utils/config.ml" 30 1586 1601 "utils/config.ml" 30 1586 1611
+type(
+  string
+)
+"utils/config.ml" 30 1586 1590 "utils/config.ml" 30 1586 1611
+type(
+  string
+)
+"utils/config.ml" 31 1612 1619 "utils/config.ml" 31 1612 1628
+type(
+  exn
+)
+"utils/config.ml" 33 1638 1642 "utils/config.ml" 33 1638 1652
+type(
+  string -> string
+)
+ident(
+  ext_ref Sys.getenv
+)
+"utils/config.ml" 33 1638 1653 "utils/config.ml" 33 1638 1662
+type(
+  string
+)
+"utils/config.ml" 33 1638 1642 "utils/config.ml" 33 1638 1662
+type(
+  string
+)
+"utils/config.ml" 34 1663 1670 "utils/config.ml" 34 1663 1679
+type(
+  exn
+)
+"utils/config.ml" 35 1683 1687 "utils/config.ml" 35 1683 1711
+type(
+  string
+)
+ident(
+  int_ref standard_library_default "utils/config.ml" 26 1502 1506 "utils/config.ml" 26 1502 1530
+)
+"utils/config.ml" 32 1632 1634 "utils/config.ml" 35 1683 1711
+type(
+  string
+)
+"utils/config.ml" 29 1580 1582 "utils/config.ml" 35 1683 1711
+type(
+  string
+)
+"utils/config.ml" 37 1713 1717 "utils/config.ml" 37 1713 1733
+type(
+  string
+)
+ident(
+  def standard_runtime "utils/config.ml" 38 1762 1762 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 37 1713 1736 "utils/config.ml" 37 1713 1761
+type(
+  string
+)
+"utils/config.ml" 38 1762 1766 "utils/config.ml" 38 1762 1776
+type(
+  string
+)
+ident(
+  def ccomp_type "utils/config.ml" 39 1784 1784 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 38 1762 1779 "utils/config.ml" 38 1762 1783
+type(
+  string
+)
+"utils/config.ml" 39 1784 1788 "utils/config.ml" 39 1784 1807
+type(
+  string
+)
+ident(
+  def bytecomp_c_compiler "utils/config.ml" 40 1879 1879 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 39 1784 1810 "utils/config.ml" 39 1784 1878
+type(
+  string
+)
+"utils/config.ml" 40 1879 1883 "utils/config.ml" 40 1879 1903
+type(
+  string
+)
+ident(
+  def bytecomp_c_libraries "utils/config.ml" 41 1937 1937 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 40 1879 1906 "utils/config.ml" 40 1879 1936
+type(
+  string
+)
+"utils/config.ml" 41 1937 1941 "utils/config.ml" 41 1937 1958
+type(
+  string
+)
+ident(
+  def native_c_compiler "utils/config.ml" 42 2009 2009 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 41 1937 1961 "utils/config.ml" 41 1937 2008
+type(
+  string
+)
+"utils/config.ml" 42 2009 2013 "utils/config.ml" 42 2009 2031
+type(
+  string
+)
+ident(
+  def native_c_libraries "utils/config.ml" 43 2046 2046 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 42 2009 2034 "utils/config.ml" 42 2009 2045
+type(
+  string
+)
+"utils/config.ml" 43 2046 2050 "utils/config.ml" 43 2046 2068
+type(
+  string
+)
+ident(
+  def native_pack_linker "utils/config.ml" 44 2084 2084 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 43 2046 2071 "utils/config.ml" 43 2046 2083
+type(
+  string
+)
+"utils/config.ml" 44 2084 2088 "utils/config.ml" 44 2084 2094
+type(
+  string
+)
+ident(
+  def ranlib "utils/config.ml" 45 2106 2106 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 44 2084 2097 "utils/config.ml" 44 2084 2105
+type(
+  string
+)
+"utils/config.ml" 45 2106 2110 "utils/config.ml" 45 2106 2112
+type(
+  string
+)
+ident(
+  def ar "utils/config.ml" 46 2120 2120 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 45 2106 2115 "utils/config.ml" 45 2106 2119
+type(
+  string
+)
+"utils/config.ml" 46 2120 2124 "utils/config.ml" 46 2120 2134
+type(
+  string
+)
+ident(
+  def cc_profile "utils/config.ml" 47 2143 2143 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 46 2120 2137 "utils/config.ml" 46 2120 2142
+type(
+  string
+)
+"utils/config.ml" 47 2143 2147 "utils/config.ml" 47 2143 2152
+type(
+  string
+)
+ident(
+  def mkdll "utils/config.ml" 48 2169 2169 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 47 2143 2155 "utils/config.ml" 47 2143 2168
+type(
+  string
+)
+"utils/config.ml" 48 2169 2173 "utils/config.ml" 48 2169 2178
+type(
+  string
+)
+ident(
+  def mkexe "utils/config.ml" 49 2187 2187 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 48 2169 2181 "utils/config.ml" 48 2169 2186
+type(
+  string
+)
+"utils/config.ml" 49 2187 2191 "utils/config.ml" 49 2187 2200
+type(
+  string
+)
+ident(
+  def mkmaindll "utils/config.ml" 51 2218 2218 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 49 2187 2203 "utils/config.ml" 49 2187 2216
+type(
+  string
+)
+"utils/config.ml" 51 2218 2222 "utils/config.ml" 51 2218 2239
+type(
+  string
+)
+ident(
+  def exec_magic_number "utils/config.ml" 62 2612 2612 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 51 2218 2242 "utils/config.ml" 51 2218 2256
+type(
+  string
+)
+"utils/config.ml" 52 2257 2261 "utils/config.ml" 52 2257 2277
+type(
+  string
+)
+ident(
+  def cmi_magic_number "utils/config.ml" 62 2612 2612 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 52 2257 2280 "utils/config.ml" 52 2257 2294
+type(
+  string
+)
+"utils/config.ml" 53 2295 2299 "utils/config.ml" 53 2295 2315
+type(
+  string
+)
+ident(
+  def cmo_magic_number "utils/config.ml" 62 2612 2612 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 53 2295 2318 "utils/config.ml" 53 2295 2332
+type(
+  string
+)
+"utils/config.ml" 54 2333 2337 "utils/config.ml" 54 2333 2353
+type(
+  string
+)
+ident(
+  def cma_magic_number "utils/config.ml" 62 2612 2612 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 54 2333 2356 "utils/config.ml" 54 2333 2370
+type(
+  string
+)
+"utils/config.ml" 55 2371 2375 "utils/config.ml" 55 2371 2391
+type(
+  string
+)
+ident(
+  def cmx_magic_number "utils/config.ml" 62 2612 2612 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 55 2371 2394 "utils/config.ml" 55 2371 2408
+type(
+  string
+)
+"utils/config.ml" 56 2409 2413 "utils/config.ml" 56 2409 2430
+type(
+  string
+)
+ident(
+  def cmxa_magic_number "utils/config.ml" 62 2612 2612 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 56 2409 2433 "utils/config.ml" 56 2409 2447
+type(
+  string
+)
+"utils/config.ml" 57 2448 2452 "utils/config.ml" 57 2448 2473
+type(
+  string
+)
+ident(
+  def ast_impl_magic_number "utils/config.ml" 62 2612 2612 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 57 2448 2476 "utils/config.ml" 57 2448 2490
+type(
+  string
+)
+"utils/config.ml" 58 2491 2495 "utils/config.ml" 58 2491 2516
+type(
+  string
+)
+ident(
+  def ast_intf_magic_number "utils/config.ml" 62 2612 2612 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 58 2491 2519 "utils/config.ml" 58 2491 2533
+type(
+  string
+)
+"utils/config.ml" 59 2534 2538 "utils/config.ml" 59 2534 2555
+type(
+  string
+)
+ident(
+  def cmxs_magic_number "utils/config.ml" 62 2612 2612 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 59 2534 2558 "utils/config.ml" 59 2534 2572
+type(
+  string
+)
+"utils/config.ml" 60 2573 2577 "utils/config.ml" 60 2573 2593
+type(
+  string
+)
+ident(
+  def cmt_magic_number "utils/config.ml" 62 2612 2612 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 60 2573 2596 "utils/config.ml" 60 2573 2610
+type(
+  string
+)
+"utils/config.ml" 62 2612 2616 "utils/config.ml" 62 2612 2625
+type(
+  string list ref
+)
+ident(
+  def load_path "utils/config.ml" 64 2652 2652 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 62 2612 2628 "utils/config.ml" 62 2612 2631
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"utils/config.ml" 62 2612 2633 "utils/config.ml" 62 2612 2635
+type(
+  string list
+)
+type(
+  string list
+)
+"utils/config.ml" 62 2612 2628 "utils/config.ml" 62 2612 2650
+type(
+  string list ref
+)
+"utils/config.ml" 64 2652 2656 "utils/config.ml" 64 2652 2672
+type(
+  string ref
+)
+ident(
+  def interface_suffix "utils/config.ml" 66 2687 2687 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 64 2652 2675 "utils/config.ml" 64 2652 2678
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"utils/config.ml" 64 2652 2679 "utils/config.ml" 64 2652 2685
+type(
+  string
+)
+"utils/config.ml" 64 2652 2675 "utils/config.ml" 64 2652 2685
+type(
+  string ref
+)
+"utils/config.ml" 66 2687 2691 "utils/config.ml" 66 2687 2698
+type(
+  int
+)
+ident(
+  def max_tag "utils/config.ml" 70 2866 2866 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 66 2687 2701 "utils/config.ml" 66 2687 2704
+type(
+  int
+)
+"utils/config.ml" 70 2866 2870 "utils/config.ml" 70 2866 2878
+type(
+  int
+)
+ident(
+  def lazy_tag "utils/config.ml" 72 2886 2886 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 70 2866 2881 "utils/config.ml" 70 2866 2884
+type(
+  int
+)
+"utils/config.ml" 72 2886 2890 "utils/config.ml" 72 2886 2906
+type(
+  int
+)
+ident(
+  def max_young_wosize "utils/config.ml" 73 2913 2913 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 72 2886 2909 "utils/config.ml" 72 2886 2912
+type(
+  int
+)
+"utils/config.ml" 73 2913 2917 "utils/config.ml" 73 2913 2932
+type(
+  int
+)
+ident(
+  def stack_threshold "utils/config.ml" 75 2967 2967 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 73 2913 2935 "utils/config.ml" 73 2913 2938
+type(
+  int
+)
+"utils/config.ml" 75 2967 2971 "utils/config.ml" 75 2967 2983
+type(
+  string
+)
+ident(
+  def architecture "utils/config.ml" 76 2994 2994 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 75 2967 2986 "utils/config.ml" 75 2967 2993
+type(
+  string
+)
+"utils/config.ml" 76 2994 2998 "utils/config.ml" 76 2994 3003
+type(
+  string
+)
+ident(
+  def model "utils/config.ml" 77 3016 3016 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 76 2994 3006 "utils/config.ml" 76 2994 3015
+type(
+  string
+)
+"utils/config.ml" 77 3016 3020 "utils/config.ml" 77 3016 3026
+type(
+  string
+)
+ident(
+  def system "utils/config.ml" 79 3038 3038 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 77 3016 3029 "utils/config.ml" 77 3016 3036
+type(
+  string
+)
+"utils/config.ml" 79 3038 3042 "utils/config.ml" 79 3038 3045
+type(
+  string
+)
+ident(
+  def asm "utils/config.ml" 80 3053 3053 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 79 3038 3048 "utils/config.ml" 79 3038 3052
+type(
+  string
+)
+"utils/config.ml" 80 3053 3057 "utils/config.ml" 80 3053 3074
+type(
+  bool
+)
+ident(
+  def asm_cfi_supported "utils/config.ml" 81 3082 3082 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 80 3053 3077 "utils/config.ml" 80 3053 3081
+type(
+  bool
+)
+"utils/config.ml" 81 3082 3086 "utils/config.ml" 81 3082 3105
+type(
+  bool
+)
+ident(
+  def with_frame_pointers "utils/config.ml" 83 3115 3115 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 81 3082 3108 "utils/config.ml" 81 3082 3113
+type(
+  bool
+)
+"utils/config.ml" 83 3115 3119 "utils/config.ml" 83 3115 3126
+type(
+  string
+)
+ident(
+  def ext_obj "utils/config.ml" 84 3134 3134 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 83 3115 3129 "utils/config.ml" 83 3115 3133
+type(
+  string
+)
+"utils/config.ml" 84 3134 3138 "utils/config.ml" 84 3134 3145
+type(
+  string
+)
+ident(
+  def ext_asm "utils/config.ml" 85 3153 3153 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 84 3134 3148 "utils/config.ml" 84 3134 3152
+type(
+  string
+)
+"utils/config.ml" 85 3153 3157 "utils/config.ml" 85 3153 3164
+type(
+  string
+)
+ident(
+  def ext_lib "utils/config.ml" 86 3172 3172 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 85 3153 3167 "utils/config.ml" 85 3153 3171
+type(
+  string
+)
+"utils/config.ml" 86 3172 3176 "utils/config.ml" 86 3172 3183
+type(
+  string
+)
+ident(
+  def ext_dll "utils/config.ml" 88 3193 3193 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 86 3172 3186 "utils/config.ml" 86 3172 3191
+type(
+  string
+)
+"utils/config.ml" 88 3193 3197 "utils/config.ml" 88 3193 3201
+type(
+  string
+)
+ident(
+  def host "utils/config.ml" 89 3231 3231 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 88 3193 3204 "utils/config.ml" 88 3193 3230
+type(
+  string
+)
+"utils/config.ml" 89 3231 3235 "utils/config.ml" 89 3231 3241
+type(
+  string
+)
+ident(
+  def target "utils/config.ml" 91 3272 3272 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 89 3231 3244 "utils/config.ml" 89 3231 3270
+type(
+  string
+)
+"utils/config.ml" 91 3272 3276 "utils/config.ml" 91 3272 3299
+type(
+  string
+)
+ident(
+  def default_executable_name "utils/config.ml" 97 3411 3411 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 92 3302 3310 "utils/config.ml" 92 3302 3321
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"utils/config.ml" 93 3327 3331 "utils/config.ml" 93 3327 3337
+type(
+  string
+)
+"utils/config.ml" 93 3327 3341 "utils/config.ml" 93 3327 3348
+type(
+  string
+)
+"utils/config.ml" 94 3349 3353 "utils/config.ml" 94 3349 3360
+type(
+  string
+)
+"utils/config.ml" 94 3349 3363 "utils/config.ml" 94 3349 3371
+type(
+  string
+)
+"utils/config.ml" 94 3349 3353 "utils/config.ml" 94 3349 3371
+type(
+  string
+)
+"utils/config.ml" 94 3349 3375 "utils/config.ml" 94 3349 3389
+type(
+  string
+)
+"utils/config.ml" 95 3390 3394 "utils/config.ml" 95 3390 3395
+type(
+  string
+)
+"utils/config.ml" 95 3390 3399 "utils/config.ml" 95 3390 3409
+type(
+  string
+)
+"utils/config.ml" 92 3302 3304 "utils/config.ml" 95 3390 3409
+type(
+  string
+)
+"utils/config.ml" 97 3411 3415 "utils/config.ml" 97 3411 3434
+type(
+  bool
+)
+ident(
+  def systhread_supported "utils/config.ml" 99 3445 3445 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 97 3411 3437 "utils/config.ml" 97 3411 3441
+type(
+  bool
+)
+"utils/config.ml" 99 3445 3449 "utils/config.ml" 99 3445 3461
+type(
+  out_channel -> unit
+)
+ident(
+  def print_config "utils/config.ml" 142 4987 4998 "utils/config.ml" 1 0 -1
+)
+"utils/config.ml" 99 3445 3462 "utils/config.ml" 99 3445 3464
+type(
+  out_channel
+)
+ident(
+  def oc "utils/config.ml" 100 3467 3469 "utils/config.ml" 142 4987 4998
+)
+"utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+type(
+  string -> string -> unit
+)
+ident(
+  def p "utils/config.ml" 101 3529 3531 "utils/config.ml" 142 4987 4998
+)
+"utils/config.ml" 100 3467 3475 "utils/config.ml" 100 3467 3479
+type(
+  string
+)
+ident(
+  def name "utils/config.ml" 100 3467 3480 "utils/config.ml" 100 3467 3525
+)
+"utils/config.ml" 100 3467 3480 "utils/config.ml" 100 3467 3484
+type(
+  string
+)
+ident(
+  def valu "utils/config.ml" 100 3467 3487 "utils/config.ml" 100 3467 3525
+)
+"utils/config.ml" 100 3467 3487 "utils/config.ml" 100 3467 3501
+type(
+  out_channel ->
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"utils/config.ml" 100 3467 3502 "utils/config.ml" 100 3467 3504
+type(
+  out_channel
+)
+ident(
+  int_ref oc "utils/config.ml" 99 3445 3462 "utils/config.ml" 99 3445 3464
+)
+"utils/config.ml" 100 3467 3505 "utils/config.ml" 100 3467 3515
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"utils/config.ml" 100 3467 3516 "utils/config.ml" 100 3467 3520
+type(
+  string
+)
+ident(
+  int_ref name "utils/config.ml" 100 3467 3475 "utils/config.ml" 100 3467 3479
+)
+"utils/config.ml" 100 3467 3521 "utils/config.ml" 100 3467 3525
+type(
+  string
+)
+ident(
+  int_ref valu "utils/config.ml" 100 3467 3480 "utils/config.ml" 100 3467 3484
+)
+"utils/config.ml" 100 3467 3487 "utils/config.ml" 100 3467 3525
+call(
+  tail
+)
+type(
+  unit
+)
+"utils/config.ml" 101 3529 3535 "utils/config.ml" 101 3529 3541
+type(
+  string -> bool -> unit
+)
+ident(
+  def p_bool "utils/config.ml" 102 3596 3598 "utils/config.ml" 142 4987 4998
+)
+"utils/config.ml" 101 3529 3542 "utils/config.ml" 101 3529 3546
+type(
+  string
+)
+ident(
+  def name "utils/config.ml" 101 3529 3547 "utils/config.ml" 101 3529 3592
+)
+"utils/config.ml" 101 3529 3547 "utils/config.ml" 101 3529 3551
+type(
+  bool
+)
+ident(
+  def valu "utils/config.ml" 101 3529 3554 "utils/config.ml" 101 3529 3592
+)
+"utils/config.ml" 101 3529 3554 "utils/config.ml" 101 3529 3568
+type(
+  out_channel ->
+  (string -> bool -> unit, out_channel, unit) format ->
+  string -> bool -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"utils/config.ml" 101 3529 3569 "utils/config.ml" 101 3529 3571
+type(
+  out_channel
+)
+ident(
+  int_ref oc "utils/config.ml" 99 3445 3462 "utils/config.ml" 99 3445 3464
+)
+"utils/config.ml" 101 3529 3572 "utils/config.ml" 101 3529 3582
+type(
+  (string -> bool -> unit, out_channel, unit) format
+)
+"utils/config.ml" 101 3529 3583 "utils/config.ml" 101 3529 3587
+type(
+  string
+)
+ident(
+  int_ref name "utils/config.ml" 101 3529 3542 "utils/config.ml" 101 3529 3546
+)
+"utils/config.ml" 101 3529 3588 "utils/config.ml" 101 3529 3592
+type(
+  bool
+)
+ident(
+  int_ref valu "utils/config.ml" 101 3529 3547 "utils/config.ml" 101 3529 3551
+)
+"utils/config.ml" 101 3529 3554 "utils/config.ml" 101 3529 3592
+call(
+  tail
+)
+type(
+  unit
+)
+"utils/config.ml" 102 3596 3598 "utils/config.ml" 102 3596 3599
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 102 3596 3600 "utils/config.ml" 102 3596 3609
+type(
+  string
+)
+"utils/config.ml" 102 3596 3610 "utils/config.ml" 102 3596 3617
+type(
+  string
+)
+ident(
+  int_ref version "utils/config.ml" 24 1469 1473 "utils/config.ml" 24 1469 1480
+)
+"utils/config.ml" 102 3596 3598 "utils/config.ml" 102 3596 3617
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 103 3619 3621 "utils/config.ml" 103 3619 3622
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 103 3619 3623 "utils/config.ml" 103 3619 3649
+type(
+  string
+)
+"utils/config.ml" 103 3619 3650 "utils/config.ml" 103 3619 3674
+type(
+  string
+)
+ident(
+  int_ref standard_library_default "utils/config.ml" 26 1502 1506 "utils/config.ml" 26 1502 1530
+)
+"utils/config.ml" 103 3619 3621 "utils/config.ml" 103 3619 3674
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 104 3676 3678 "utils/config.ml" 104 3676 3679
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 104 3676 3680 "utils/config.ml" 104 3676 3698
+type(
+  string
+)
+"utils/config.ml" 104 3676 3699 "utils/config.ml" 104 3676 3715
+type(
+  string
+)
+ident(
+  int_ref standard_library "utils/config.ml" 28 1557 1561 "utils/config.ml" 28 1557 1577
+)
+"utils/config.ml" 104 3676 3678 "utils/config.ml" 104 3676 3715
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 105 3717 3719 "utils/config.ml" 105 3717 3720
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 105 3717 3721 "utils/config.ml" 105 3717 3739
+type(
+  string
+)
+"utils/config.ml" 105 3717 3740 "utils/config.ml" 105 3717 3756
+type(
+  string
+)
+ident(
+  int_ref standard_runtime "utils/config.ml" 37 1713 1717 "utils/config.ml" 37 1713 1733
+)
+"utils/config.ml" 105 3717 3719 "utils/config.ml" 105 3717 3756
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 106 3758 3760 "utils/config.ml" 106 3758 3761
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 106 3758 3762 "utils/config.ml" 106 3758 3774
+type(
+  string
+)
+"utils/config.ml" 106 3758 3775 "utils/config.ml" 106 3758 3785
+type(
+  string
+)
+ident(
+  int_ref ccomp_type "utils/config.ml" 38 1762 1766 "utils/config.ml" 38 1762 1776
+)
+"utils/config.ml" 106 3758 3760 "utils/config.ml" 106 3758 3785
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 107 3787 3789 "utils/config.ml" 107 3787 3790
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 107 3787 3791 "utils/config.ml" 107 3787 3812
+type(
+  string
+)
+"utils/config.ml" 107 3787 3813 "utils/config.ml" 107 3787 3832
+type(
+  string
+)
+ident(
+  int_ref bytecomp_c_compiler "utils/config.ml" 39 1784 1788 "utils/config.ml" 39 1784 1807
+)
+"utils/config.ml" 107 3787 3789 "utils/config.ml" 107 3787 3832
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 108 3834 3836 "utils/config.ml" 108 3834 3837
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 108 3834 3838 "utils/config.ml" 108 3834 3860
+type(
+  string
+)
+"utils/config.ml" 108 3834 3861 "utils/config.ml" 108 3834 3881
+type(
+  string
+)
+ident(
+  int_ref bytecomp_c_libraries "utils/config.ml" 40 1879 1883 "utils/config.ml" 40 1879 1903
+)
+"utils/config.ml" 108 3834 3836 "utils/config.ml" 108 3834 3881
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 109 3883 3885 "utils/config.ml" 109 3883 3886
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 109 3883 3887 "utils/config.ml" 109 3883 3906
+type(
+  string
+)
+"utils/config.ml" 109 3883 3907 "utils/config.ml" 109 3883 3924
+type(
+  string
+)
+ident(
+  int_ref native_c_compiler "utils/config.ml" 41 1937 1941 "utils/config.ml" 41 1937 1958
+)
+"utils/config.ml" 109 3883 3885 "utils/config.ml" 109 3883 3924
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 110 3926 3928 "utils/config.ml" 110 3926 3929
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 110 3926 3930 "utils/config.ml" 110 3926 3950
+type(
+  string
+)
+"utils/config.ml" 110 3926 3951 "utils/config.ml" 110 3926 3969
+type(
+  string
+)
+ident(
+  int_ref native_c_libraries "utils/config.ml" 42 2009 2013 "utils/config.ml" 42 2009 2031
+)
+"utils/config.ml" 110 3926 3928 "utils/config.ml" 110 3926 3969
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 111 3971 3973 "utils/config.ml" 111 3971 3974
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 111 3971 3975 "utils/config.ml" 111 3971 3995
+type(
+  string
+)
+"utils/config.ml" 111 3971 3996 "utils/config.ml" 111 3971 4014
+type(
+  string
+)
+ident(
+  int_ref native_pack_linker "utils/config.ml" 43 2046 2050 "utils/config.ml" 43 2046 2068
+)
+"utils/config.ml" 111 3971 3973 "utils/config.ml" 111 3971 4014
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 112 4016 4018 "utils/config.ml" 112 4016 4019
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 112 4016 4020 "utils/config.ml" 112 4016 4028
+type(
+  string
+)
+"utils/config.ml" 112 4016 4029 "utils/config.ml" 112 4016 4035
+type(
+  string
+)
+ident(
+  int_ref ranlib "utils/config.ml" 44 2084 2088 "utils/config.ml" 44 2084 2094
+)
+"utils/config.ml" 112 4016 4018 "utils/config.ml" 112 4016 4035
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 113 4037 4039 "utils/config.ml" 113 4037 4040
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 113 4037 4041 "utils/config.ml" 113 4037 4053
+type(
+  string
+)
+"utils/config.ml" 113 4037 4054 "utils/config.ml" 113 4037 4064
+type(
+  string
+)
+ident(
+  int_ref cc_profile "utils/config.ml" 46 2120 2124 "utils/config.ml" 46 2120 2134
+)
+"utils/config.ml" 113 4037 4039 "utils/config.ml" 113 4037 4064
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 114 4066 4068 "utils/config.ml" 114 4066 4069
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 114 4066 4070 "utils/config.ml" 114 4066 4084
+type(
+  string
+)
+"utils/config.ml" 114 4066 4085 "utils/config.ml" 114 4066 4097
+type(
+  string
+)
+ident(
+  int_ref architecture "utils/config.ml" 75 2967 2971 "utils/config.ml" 75 2967 2983
+)
+"utils/config.ml" 114 4066 4068 "utils/config.ml" 114 4066 4097
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 115 4099 4101 "utils/config.ml" 115 4099 4102
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 115 4099 4103 "utils/config.ml" 115 4099 4110
+type(
+  string
+)
+"utils/config.ml" 115 4099 4111 "utils/config.ml" 115 4099 4116
+type(
+  string
+)
+ident(
+  int_ref model "utils/config.ml" 76 2994 2998 "utils/config.ml" 76 2994 3003
+)
+"utils/config.ml" 115 4099 4101 "utils/config.ml" 115 4099 4116
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 116 4118 4120 "utils/config.ml" 116 4118 4121
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 116 4118 4122 "utils/config.ml" 116 4118 4130
+type(
+  string
+)
+"utils/config.ml" 116 4118 4131 "utils/config.ml" 116 4118 4137
+type(
+  string
+)
+ident(
+  int_ref system "utils/config.ml" 77 3016 3020 "utils/config.ml" 77 3016 3026
+)
+"utils/config.ml" 116 4118 4120 "utils/config.ml" 116 4118 4137
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 117 4139 4141 "utils/config.ml" 117 4139 4142
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 117 4139 4143 "utils/config.ml" 117 4139 4148
+type(
+  string
+)
+"utils/config.ml" 117 4139 4149 "utils/config.ml" 117 4139 4152
+type(
+  string
+)
+ident(
+  int_ref asm "utils/config.ml" 79 3038 3042 "utils/config.ml" 79 3038 3045
+)
+"utils/config.ml" 117 4139 4141 "utils/config.ml" 117 4139 4152
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 118 4154 4156 "utils/config.ml" 118 4154 4162
+type(
+  string -> bool -> unit
+)
+ident(
+  int_ref p_bool "utils/config.ml" 101 3529 3535 "utils/config.ml" 101 3529 3541
+)
+"utils/config.ml" 118 4154 4163 "utils/config.ml" 118 4154 4182
+type(
+  string
+)
+"utils/config.ml" 118 4154 4183 "utils/config.ml" 118 4154 4200
+type(
+  bool
+)
+ident(
+  int_ref asm_cfi_supported "utils/config.ml" 80 3053 3057 "utils/config.ml" 80 3053 3074
+)
+"utils/config.ml" 118 4154 4156 "utils/config.ml" 118 4154 4200
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 119 4202 4204 "utils/config.ml" 119 4202 4210
+type(
+  string -> bool -> unit
+)
+ident(
+  int_ref p_bool "utils/config.ml" 101 3529 3535 "utils/config.ml" 101 3529 3541
+)
+"utils/config.ml" 119 4202 4211 "utils/config.ml" 119 4202 4232
+type(
+  string
+)
+"utils/config.ml" 119 4202 4233 "utils/config.ml" 119 4202 4252
+type(
+  bool
+)
+ident(
+  int_ref with_frame_pointers "utils/config.ml" 81 3082 3086 "utils/config.ml" 81 3082 3105
+)
+"utils/config.ml" 119 4202 4204 "utils/config.ml" 119 4202 4252
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 120 4254 4256 "utils/config.ml" 120 4254 4257
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 120 4254 4258 "utils/config.ml" 120 4254 4267
+type(
+  string
+)
+"utils/config.ml" 120 4254 4268 "utils/config.ml" 120 4254 4275
+type(
+  string
+)
+ident(
+  int_ref ext_obj "utils/config.ml" 83 3115 3119 "utils/config.ml" 83 3115 3126
+)
+"utils/config.ml" 120 4254 4256 "utils/config.ml" 120 4254 4275
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 121 4277 4279 "utils/config.ml" 121 4277 4280
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 121 4277 4281 "utils/config.ml" 121 4277 4290
+type(
+  string
+)
+"utils/config.ml" 121 4277 4291 "utils/config.ml" 121 4277 4298
+type(
+  string
+)
+ident(
+  int_ref ext_asm "utils/config.ml" 84 3134 3138 "utils/config.ml" 84 3134 3145
+)
+"utils/config.ml" 121 4277 4279 "utils/config.ml" 121 4277 4298
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 122 4300 4302 "utils/config.ml" 122 4300 4303
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 122 4300 4304 "utils/config.ml" 122 4300 4313
+type(
+  string
+)
+"utils/config.ml" 122 4300 4314 "utils/config.ml" 122 4300 4321
+type(
+  string
+)
+ident(
+  int_ref ext_lib "utils/config.ml" 85 3153 3157 "utils/config.ml" 85 3153 3164
+)
+"utils/config.ml" 122 4300 4302 "utils/config.ml" 122 4300 4321
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 123 4323 4325 "utils/config.ml" 123 4323 4326
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 123 4323 4327 "utils/config.ml" 123 4323 4336
+type(
+  string
+)
+"utils/config.ml" 123 4323 4337 "utils/config.ml" 123 4323 4344
+type(
+  string
+)
+ident(
+  int_ref ext_dll "utils/config.ml" 86 3172 3176 "utils/config.ml" 86 3172 3183
+)
+"utils/config.ml" 123 4323 4325 "utils/config.ml" 123 4323 4344
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 124 4346 4348 "utils/config.ml" 124 4346 4349
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 124 4346 4350 "utils/config.ml" 124 4346 4359
+type(
+  string
+)
+"utils/config.ml" 124 4346 4360 "utils/config.ml" 124 4346 4371
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"utils/config.ml" 124 4346 4348 "utils/config.ml" 124 4346 4371
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 125 4373 4375 "utils/config.ml" 125 4373 4376
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 125 4373 4377 "utils/config.ml" 125 4373 4402
+type(
+  string
+)
+"utils/config.ml" 125 4373 4403 "utils/config.ml" 125 4373 4426
+type(
+  string
+)
+ident(
+  int_ref default_executable_name "utils/config.ml" 91 3272 3276 "utils/config.ml" 91 3272 3299
+)
+"utils/config.ml" 125 4373 4375 "utils/config.ml" 125 4373 4426
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 126 4428 4430 "utils/config.ml" 126 4428 4436
+type(
+  string -> bool -> unit
+)
+ident(
+  int_ref p_bool "utils/config.ml" 101 3529 3535 "utils/config.ml" 101 3529 3541
+)
+"utils/config.ml" 126 4428 4437 "utils/config.ml" 126 4428 4458
+type(
+  string
+)
+"utils/config.ml" 126 4428 4459 "utils/config.ml" 126 4428 4478
+type(
+  bool
+)
+ident(
+  int_ref systhread_supported "utils/config.ml" 97 3411 3415 "utils/config.ml" 97 3411 3434
+)
+"utils/config.ml" 126 4428 4430 "utils/config.ml" 126 4428 4478
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 127 4480 4482 "utils/config.ml" 127 4480 4483
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 127 4480 4484 "utils/config.ml" 127 4480 4490
+type(
+  string
+)
+"utils/config.ml" 127 4480 4491 "utils/config.ml" 127 4480 4495
+type(
+  string
+)
+ident(
+  int_ref host "utils/config.ml" 88 3193 3197 "utils/config.ml" 88 3193 3201
+)
+"utils/config.ml" 127 4480 4482 "utils/config.ml" 127 4480 4495
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 128 4497 4499 "utils/config.ml" 128 4497 4500
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 128 4497 4501 "utils/config.ml" 128 4497 4509
+type(
+  string
+)
+"utils/config.ml" 128 4497 4510 "utils/config.ml" 128 4497 4516
+type(
+  string
+)
+ident(
+  int_ref target "utils/config.ml" 89 3231 3235 "utils/config.ml" 89 3231 3241
+)
+"utils/config.ml" 128 4497 4499 "utils/config.ml" 128 4497 4516
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 131 4550 4552 "utils/config.ml" 131 4550 4553
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 131 4550 4554 "utils/config.ml" 131 4550 4573
+type(
+  string
+)
+"utils/config.ml" 131 4550 4574 "utils/config.ml" 131 4550 4591
+type(
+  string
+)
+ident(
+  int_ref exec_magic_number "utils/config.ml" 51 2218 2222 "utils/config.ml" 51 2218 2239
+)
+"utils/config.ml" 131 4550 4552 "utils/config.ml" 131 4550 4591
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 132 4593 4595 "utils/config.ml" 132 4593 4596
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 132 4593 4597 "utils/config.ml" 132 4593 4615
+type(
+  string
+)
+"utils/config.ml" 132 4593 4616 "utils/config.ml" 132 4593 4632
+type(
+  string
+)
+ident(
+  int_ref cmi_magic_number "utils/config.ml" 52 2257 2261 "utils/config.ml" 52 2257 2277
+)
+"utils/config.ml" 132 4593 4595 "utils/config.ml" 132 4593 4632
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 133 4634 4636 "utils/config.ml" 133 4634 4637
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 133 4634 4638 "utils/config.ml" 133 4634 4656
+type(
+  string
+)
+"utils/config.ml" 133 4634 4657 "utils/config.ml" 133 4634 4673
+type(
+  string
+)
+ident(
+  int_ref cmo_magic_number "utils/config.ml" 53 2295 2299 "utils/config.ml" 53 2295 2315
+)
+"utils/config.ml" 133 4634 4636 "utils/config.ml" 133 4634 4673
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 134 4675 4677 "utils/config.ml" 134 4675 4678
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 134 4675 4679 "utils/config.ml" 134 4675 4697
+type(
+  string
+)
+"utils/config.ml" 134 4675 4698 "utils/config.ml" 134 4675 4714
+type(
+  string
+)
+ident(
+  int_ref cma_magic_number "utils/config.ml" 54 2333 2337 "utils/config.ml" 54 2333 2353
+)
+"utils/config.ml" 134 4675 4677 "utils/config.ml" 134 4675 4714
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 135 4716 4718 "utils/config.ml" 135 4716 4719
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 135 4716 4720 "utils/config.ml" 135 4716 4738
+type(
+  string
+)
+"utils/config.ml" 135 4716 4739 "utils/config.ml" 135 4716 4755
+type(
+  string
+)
+ident(
+  int_ref cmx_magic_number "utils/config.ml" 55 2371 2375 "utils/config.ml" 55 2371 2391
+)
+"utils/config.ml" 135 4716 4718 "utils/config.ml" 135 4716 4755
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 136 4757 4759 "utils/config.ml" 136 4757 4760
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 136 4757 4761 "utils/config.ml" 136 4757 4780
+type(
+  string
+)
+"utils/config.ml" 136 4757 4781 "utils/config.ml" 136 4757 4798
+type(
+  string
+)
+ident(
+  int_ref cmxa_magic_number "utils/config.ml" 56 2409 2413 "utils/config.ml" 56 2409 2430
+)
+"utils/config.ml" 136 4757 4759 "utils/config.ml" 136 4757 4798
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 137 4800 4802 "utils/config.ml" 137 4800 4803
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 137 4800 4804 "utils/config.ml" 137 4800 4827
+type(
+  string
+)
+"utils/config.ml" 137 4800 4828 "utils/config.ml" 137 4800 4849
+type(
+  string
+)
+ident(
+  int_ref ast_impl_magic_number "utils/config.ml" 57 2448 2452 "utils/config.ml" 57 2448 2473
+)
+"utils/config.ml" 137 4800 4802 "utils/config.ml" 137 4800 4849
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 138 4851 4853 "utils/config.ml" 138 4851 4854
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 138 4851 4855 "utils/config.ml" 138 4851 4878
+type(
+  string
+)
+"utils/config.ml" 138 4851 4879 "utils/config.ml" 138 4851 4900
+type(
+  string
+)
+ident(
+  int_ref ast_intf_magic_number "utils/config.ml" 58 2491 2495 "utils/config.ml" 58 2491 2516
+)
+"utils/config.ml" 138 4851 4853 "utils/config.ml" 138 4851 4900
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 139 4902 4904 "utils/config.ml" 139 4902 4905
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 139 4902 4906 "utils/config.ml" 139 4902 4925
+type(
+  string
+)
+"utils/config.ml" 139 4902 4926 "utils/config.ml" 139 4902 4943
+type(
+  string
+)
+ident(
+  int_ref cmxs_magic_number "utils/config.ml" 59 2534 2538 "utils/config.ml" 59 2534 2555
+)
+"utils/config.ml" 139 4902 4904 "utils/config.ml" 139 4902 4943
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 140 4945 4947 "utils/config.ml" 140 4945 4948
+type(
+  string -> string -> unit
+)
+ident(
+  int_ref p "utils/config.ml" 100 3467 3473 "utils/config.ml" 100 3467 3474
+)
+"utils/config.ml" 140 4945 4949 "utils/config.ml" 140 4945 4967
+type(
+  string
+)
+"utils/config.ml" 140 4945 4968 "utils/config.ml" 140 4945 4984
+type(
+  string
+)
+ident(
+  int_ref cmt_magic_number "utils/config.ml" 60 2573 2577 "utils/config.ml" 60 2573 2593
+)
+"utils/config.ml" 140 4945 4947 "utils/config.ml" 140 4945 4984
+call(
+  stack
+)
+type(
+  unit
+)
+"utils/config.ml" 142 4987 4989 "utils/config.ml" 142 4987 4994
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"utils/config.ml" 142 4987 4995 "utils/config.ml" 142 4987 4997
+type(
+  out_channel
+)
+ident(
+  int_ref oc "utils/config.ml" 99 3445 3462 "utils/config.ml" 99 3445 3464
+)
+"utils/config.ml" 142 4987 4989 "utils/config.ml" 142 4987 4998
+call(
+  tail
+)
+type(
+  unit
+)
+"utils/config.ml" 140 4945 4947 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 139 4902 4904 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 138 4851 4853 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 137 4800 4802 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 136 4757 4759 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 135 4716 4718 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 134 4675 4677 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 133 4634 4636 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 132 4593 4595 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 131 4550 4552 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 128 4497 4499 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 127 4480 4482 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 126 4428 4430 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 125 4373 4375 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 124 4346 4348 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 123 4323 4325 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 122 4300 4302 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 121 4277 4279 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 120 4254 4256 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 119 4202 4204 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 118 4154 4156 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 117 4139 4141 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 116 4118 4120 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 115 4099 4101 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 114 4066 4068 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 113 4037 4039 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 112 4016 4018 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 111 3971 3973 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 110 3926 3928 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 109 3883 3885 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 108 3834 3836 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 107 3787 3789 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 106 3758 3760 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 105 3717 3719 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 104 3676 3678 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 103 3619 3621 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 102 3596 3598 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 101 3529 3531 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)
+"utils/config.ml" 100 3467 3469 "utils/config.ml" 142 4987 4998
+type(
+  unit
+)

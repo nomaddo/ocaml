@@ -1,0 +1,42 @@
+"discard_printf.ml" 16 858 862 "discard_printf.ml" 16 858 876
+type(
+  ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  def discard_printf "discard_printf.ml" 16 858 923 "discard_printf.ml" 1 0 -1
+)
+"discard_printf.ml" 16 858 877 "discard_printf.ml" 16 858 880
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  def fmt "discard_printf.ml" 16 858 883 "discard_printf.ml" 16 858 923
+)
+"discard_printf.ml" 16 858 883 "discard_printf.ml" 16 858 898
+type(
+  Format.formatter -> ('a, Format.formatter, unit) format -> 'a
+)
+ident(
+  ext_ref Format.ifprintf
+)
+"discard_printf.ml" 16 858 899 "discard_printf.ml" 16 858 919
+type(
+  Format.formatter
+)
+ident(
+  ext_ref Format.std_formatter
+)
+"discard_printf.ml" 16 858 920 "discard_printf.ml" 16 858 923
+type(
+  ('a, Format.formatter, unit) format
+)
+ident(
+  int_ref fmt "discard_printf.ml" 16 858 877 "discard_printf.ml" 16 858 880
+)
+"discard_printf.ml" 16 858 883 "discard_printf.ml" 16 858 923
+call(
+  tail
+)
+type(
+  'a
+)

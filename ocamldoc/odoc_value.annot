@@ -1,0 +1,1243 @@
+"odoc_value.ml" 50 1880 1884 "odoc_value.ml" 50 1880 1912
+type(
+  t_value -> string -> Odoc_types.text option
+)
+ident(
+  def value_parameter_text_by_name "odoc_value.ml" 62 2188 2188 "odoc_value.ml" 1 0 -1
+)
+"odoc_value.ml" 50 1880 1913 "odoc_value.ml" 50 1880 1914
+type(
+  t_value
+)
+ident(
+  def v "odoc_value.ml" 50 1880 1915 "odoc_value.ml" 59 2091 2105
+)
+"odoc_value.ml" 50 1880 1915 "odoc_value.ml" 50 1880 1919
+type(
+  string
+)
+ident(
+  def name "odoc_value.ml" 51 1922 1924 "odoc_value.ml" 59 2091 2105
+)
+"odoc_value.ml" 51 1922 1930 "odoc_value.ml" 51 1922 1931
+type(
+  t_value
+)
+ident(
+  int_ref v "odoc_value.ml" 50 1880 1913 "odoc_value.ml" 50 1880 1914
+)
+"odoc_value.ml" 51 1922 1930 "odoc_value.ml" 51 1922 1940
+type(
+  Odoc_types.info option
+)
+"odoc_value.ml" 52 1946 1950 "odoc_value.ml" 52 1946 1954
+type(
+  Odoc_types.info option
+)
+"odoc_value.ml" 52 1946 1958 "odoc_value.ml" 52 1946 1962
+type(
+  Odoc_types.text option
+)
+"odoc_value.ml" 53 1963 1972 "odoc_value.ml" 53 1963 1973
+type(
+  Odoc_types.info
+)
+ident(
+  def i "odoc_value.ml" 54 1977 1983 "odoc_value.ml" 59 2091 2105
+)
+"odoc_value.ml" 53 1963 1967 "odoc_value.ml" 53 1963 1973
+type(
+  Odoc_types.info option
+)
+"odoc_value.ml" 55 1987 1999 "odoc_value.ml" 55 1987 2000
+type(
+  Odoc_types.text
+)
+ident(
+  def t "odoc_value.ml" 56 2044 2052 "odoc_value.ml" 56 2044 2058
+)
+"odoc_value.ml" 55 1987 2003 "odoc_value.ml" 55 1987 2013
+type(
+  string -> Odoc_types.param list -> Odoc_types.text
+)
+ident(
+  ext_ref List.assoc
+)
+"odoc_value.ml" 55 1987 2014 "odoc_value.ml" 55 1987 2018
+type(
+  string
+)
+ident(
+  int_ref name "odoc_value.ml" 50 1880 1915 "odoc_value.ml" 50 1880 1919
+)
+"odoc_value.ml" 55 1987 2019 "odoc_value.ml" 55 1987 2020
+type(
+  Odoc_types.info
+)
+ident(
+  int_ref i "odoc_value.ml" 53 1963 1972 "odoc_value.ml" 53 1963 1973
+)
+"odoc_value.ml" 55 1987 2019 "odoc_value.ml" 55 1987 2040
+type(
+  Odoc_types.param list
+)
+"odoc_value.ml" 55 1987 2003 "odoc_value.ml" 55 1987 2040
+call(
+  stack
+)
+type(
+  Odoc_types.text
+)
+"odoc_value.ml" 56 2044 2057 "odoc_value.ml" 56 2044 2058
+type(
+  Odoc_types.text
+)
+ident(
+  int_ref t "odoc_value.ml" 55 1987 1999 "odoc_value.ml" 55 1987 2000
+)
+"odoc_value.ml" 56 2044 2052 "odoc_value.ml" 56 2044 2058
+type(
+  Odoc_types.text option
+)
+"odoc_value.ml" 55 1987 1995 "odoc_value.ml" 56 2044 2058
+type(
+  Odoc_types.text option
+)
+"odoc_value.ml" 58 2070 2078 "odoc_value.ml" 58 2070 2087
+type(
+  exn
+)
+"odoc_value.ml" 59 2091 2101 "odoc_value.ml" 59 2091 2105
+type(
+  Odoc_types.text option
+)
+"odoc_value.ml" 54 1977 1983 "odoc_value.ml" 59 2091 2105
+type(
+  Odoc_types.text option
+)
+"odoc_value.ml" 51 1922 1924 "odoc_value.ml" 59 2091 2105
+type(
+  Odoc_types.text option
+)
+"odoc_value.ml" 62 2188 2192 "odoc_value.ml" 62 2188 2220
+type(
+  t_value -> unit
+)
+ident(
+  def update_value_parameters_text "odoc_value.ml" 70 2499 2499 "odoc_value.ml" 1 0 -1
+)
+"odoc_value.ml" 62 2188 2221 "odoc_value.ml" 62 2188 2222
+type(
+  t_value
+)
+ident(
+  def v "odoc_value.ml" 63 2225 2227 "odoc_value.ml" 66 2318 2348
+)
+"odoc_value.ml" 63 2225 2231 "odoc_value.ml" 63 2225 2232
+type(
+  Odoc_parameter.param_info -> unit
+)
+ident(
+  def f "odoc_value.ml" 66 2318 2320 "odoc_value.ml" 66 2318 2348
+)
+"odoc_value.ml" 63 2225 2233 "odoc_value.ml" 63 2225 2234
+type(
+  Odoc_parameter.param_info
+)
+ident(
+  def p "odoc_value.ml" 64 2237 2241 "odoc_value.ml" 64 2237 2312
+)
+"odoc_value.ml" 64 2237 2241 "odoc_value.ml" 64 2237 2277
+type(
+  (string -> Odoc_types.text option) -> Odoc_parameter.param_info -> unit
+)
+ident(
+  ext_ref Odoc_parameter.update_parameter_text
+)
+"odoc_value.ml" 64 2237 2279 "odoc_value.ml" 64 2237 2307
+type(
+  t_value -> string -> Odoc_types.text option
+)
+ident(
+  int_ref value_parameter_text_by_name "odoc_value.ml" 50 1880 1884 "odoc_value.ml" 50 1880 1912
+)
+"odoc_value.ml" 64 2237 2308 "odoc_value.ml" 64 2237 2309
+type(
+  t_value
+)
+ident(
+  int_ref v "odoc_value.ml" 62 2188 2221 "odoc_value.ml" 62 2188 2222
+)
+"odoc_value.ml" 64 2237 2278 "odoc_value.ml" 64 2237 2310
+call(
+  stack
+)
+type(
+  string -> Odoc_types.text option
+)
+"odoc_value.ml" 64 2237 2311 "odoc_value.ml" 64 2237 2312
+type(
+  Odoc_parameter.param_info
+)
+ident(
+  int_ref p "odoc_value.ml" 63 2225 2233 "odoc_value.ml" 63 2225 2234
+)
+"odoc_value.ml" 64 2237 2241 "odoc_value.ml" 64 2237 2312
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_value.ml" 66 2318 2320 "odoc_value.ml" 66 2318 2329
+type(
+  (Odoc_parameter.parameter -> unit) -> Odoc_parameter.parameter list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_value.ml" 66 2318 2330 "odoc_value.ml" 66 2318 2331
+type(
+  Odoc_parameter.parameter -> unit
+)
+ident(
+  int_ref f "odoc_value.ml" 63 2225 2231 "odoc_value.ml" 63 2225 2232
+)
+"odoc_value.ml" 66 2318 2332 "odoc_value.ml" 66 2318 2333
+type(
+  t_value
+)
+ident(
+  int_ref v "odoc_value.ml" 62 2188 2221 "odoc_value.ml" 62 2188 2222
+)
+"odoc_value.ml" 66 2318 2332 "odoc_value.ml" 66 2318 2348
+type(
+  Odoc_parameter.parameter list
+)
+"odoc_value.ml" 66 2318 2320 "odoc_value.ml" 66 2318 2348
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_value.ml" 63 2225 2227 "odoc_value.ml" 66 2318 2348
+type(
+  unit
+)
+"odoc_value.ml" 70 2499 2503 "odoc_value.ml" 70 2499 2529
+type(
+  Types.type_expr -> (Asttypes.label * Types.type_expr) list
+)
+ident(
+  def parameter_list_from_arrows "odoc_value.ml" 97 3329 3329 "odoc_value.ml" 1 0 -1
+)
+"odoc_value.ml" 70 2499 2530 "odoc_value.ml" 70 2499 2533
+type(
+  Types.type_expr
+)
+ident(
+  def typ "odoc_value.ml" 71 2536 2538 "odoc_value.ml" 90 2967 2977
+)
+"odoc_value.ml" 71 2536 2546 "odoc_value.ml" 71 2536 2550
+type(
+  Types.type_expr -> (Asttypes.label * Types.type_expr) list
+)
+ident(
+  def iter "odoc_value.ml" 71 2536 2538 "odoc_value.ml" 90 2967 2977
+)
+"odoc_value.ml" 71 2536 2551 "odoc_value.ml" 71 2536 2552
+type(
+  Types.type_expr
+)
+ident(
+  def t "odoc_value.ml" 72 2555 2559 "odoc_value.ml" 88 2951 2961
+)
+"odoc_value.ml" 72 2555 2565 "odoc_value.ml" 72 2555 2566
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_value.ml" 71 2536 2551 "odoc_value.ml" 71 2536 2552
+)
+"odoc_value.ml" 72 2555 2565 "odoc_value.ml" 72 2555 2577
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 73 2583 2603 "odoc_value.ml" 73 2583 2604
+type(
+  Asttypes.label
+)
+ident(
+  def l "odoc_value.ml" 74 2620 2628 "odoc_value.ml" 74 2620 2648
+)
+"odoc_value.ml" 73 2583 2606 "odoc_value.ml" 73 2583 2608
+type(
+  Types.type_expr
+)
+ident(
+  def t1 "odoc_value.ml" 74 2620 2628 "odoc_value.ml" 74 2620 2648
+)
+"odoc_value.ml" 73 2583 2610 "odoc_value.ml" 73 2583 2612
+type(
+  Types.type_expr
+)
+ident(
+  def t2 "odoc_value.ml" 74 2620 2628 "odoc_value.ml" 74 2620 2648
+)
+"odoc_value.ml" 73 2583 2614 "odoc_value.ml" 73 2583 2615
+type(
+  Types.commutable
+)
+"odoc_value.ml" 73 2583 2589 "odoc_value.ml" 73 2583 2616
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 74 2620 2629 "odoc_value.ml" 74 2620 2630
+type(
+  Asttypes.label
+)
+ident(
+  int_ref l "odoc_value.ml" 73 2583 2603 "odoc_value.ml" 73 2583 2604
+)
+"odoc_value.ml" 74 2620 2632 "odoc_value.ml" 74 2620 2634
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t1 "odoc_value.ml" 73 2583 2606 "odoc_value.ml" 73 2583 2608
+)
+"odoc_value.ml" 74 2620 2628 "odoc_value.ml" 74 2620 2635
+type(
+  Asttypes.label * Types.type_expr
+)
+"odoc_value.ml" 74 2620 2640 "odoc_value.ml" 74 2620 2644
+type(
+  Types.type_expr -> (Asttypes.label * Types.type_expr) list
+)
+ident(
+  int_ref iter "odoc_value.ml" 71 2536 2546 "odoc_value.ml" 71 2536 2550
+)
+"odoc_value.ml" 74 2620 2645 "odoc_value.ml" 74 2620 2647
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t2 "odoc_value.ml" 73 2583 2610 "odoc_value.ml" 73 2583 2612
+)
+"odoc_value.ml" 74 2620 2639 "odoc_value.ml" 74 2620 2648
+call(
+  stack
+)
+type(
+  (Asttypes.label * Types.type_expr) list
+)
+"odoc_value.ml" 74 2620 2628 "odoc_value.ml" 74 2620 2648
+type(
+  (Asttypes.label * Types.type_expr) list
+)
+"odoc_value.ml" 75 2649 2667 "odoc_value.ml" 75 2649 2671
+type(
+  Types.type_expr
+)
+ident(
+  def texp "odoc_value.ml" 77 2699 2707 "odoc_value.ml" 77 2699 2716
+)
+"odoc_value.ml" 75 2649 2655 "odoc_value.ml" 75 2649 2671
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 76 2672 2691 "odoc_value.ml" 76 2672 2695
+type(
+  Types.type_expr
+)
+ident(
+  def texp "odoc_value.ml" 77 2699 2707 "odoc_value.ml" 77 2699 2716
+)
+"odoc_value.ml" 76 2672 2678 "odoc_value.ml" 76 2672 2695
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 75 2649 2655 "odoc_value.ml" 76 2672 2695
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 77 2699 2707 "odoc_value.ml" 77 2699 2711
+type(
+  Types.type_expr -> (Asttypes.label * Types.type_expr) list
+)
+ident(
+  int_ref iter "odoc_value.ml" 71 2536 2546 "odoc_value.ml" 71 2536 2550
+)
+"odoc_value.ml" 77 2699 2712 "odoc_value.ml" 77 2699 2716
+type(
+  Types.type_expr
+)
+ident(
+  int_ref texp "odoc_value.ml" 75 2649 2667 "odoc_value.ml" 75 2649 2671
+)
+"odoc_value.ml" 77 2699 2707 "odoc_value.ml" 77 2699 2716
+call(
+  tail
+)
+type(
+  (Asttypes.label * Types.type_expr) list
+)
+"odoc_value.ml" 78 2717 2736 "odoc_value.ml" 78 2717 2740
+type(
+  Types.type_expr
+)
+ident(
+  def texp "odoc_value.ml" 78 2717 2748 "odoc_value.ml" 78 2717 2757
+)
+"odoc_value.ml" 78 2717 2742 "odoc_value.ml" 78 2717 2743
+type(
+  Types.type_expr list
+)
+"odoc_value.ml" 78 2717 2723 "odoc_value.ml" 78 2717 2744
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 78 2717 2748 "odoc_value.ml" 78 2717 2752
+type(
+  Types.type_expr -> (Asttypes.label * Types.type_expr) list
+)
+ident(
+  int_ref iter "odoc_value.ml" 71 2536 2546 "odoc_value.ml" 71 2536 2550
+)
+"odoc_value.ml" 78 2717 2753 "odoc_value.ml" 78 2717 2757
+type(
+  Types.type_expr
+)
+ident(
+  int_ref texp "odoc_value.ml" 78 2717 2736 "odoc_value.ml" 78 2717 2740
+)
+"odoc_value.ml" 78 2717 2748 "odoc_value.ml" 78 2717 2757
+call(
+  tail
+)
+type(
+  (Asttypes.label * Types.type_expr) list
+)
+"odoc_value.ml" 79 2758 2775 "odoc_value.ml" 79 2758 2776
+type(
+  string option
+)
+"odoc_value.ml" 79 2758 2764 "odoc_value.ml" 79 2758 2776
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 80 2777 2796 "odoc_value.ml" 80 2777 2797
+type(
+  Types.type_expr list
+)
+"odoc_value.ml" 80 2777 2783 "odoc_value.ml" 80 2777 2797
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 79 2758 2764 "odoc_value.ml" 80 2777 2797
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 81 2798 2818 "odoc_value.ml" 81 2798 2819
+type(
+  Types.abbrev_memo ref
+)
+type(
+  Types.type_expr list
+)
+type(
+  Path.t
+)
+"odoc_value.ml" 81 2798 2804 "odoc_value.ml" 81 2798 2819
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 79 2758 2764 "odoc_value.ml" 81 2798 2819
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 82 2820 2840 "odoc_value.ml" 82 2820 2841
+type(
+  (Path.t * Types.type_expr list) option ref
+)
+type(
+  Types.type_expr
+)
+"odoc_value.ml" 82 2820 2826 "odoc_value.ml" 82 2820 2841
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 79 2758 2764 "odoc_value.ml" 82 2820 2841
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 83 2842 2861 "odoc_value.ml" 83 2842 2862
+type(
+  Types.type_expr
+)
+type(
+  Types.type_expr
+)
+type(
+  Types.field_kind
+)
+type(
+  string
+)
+"odoc_value.ml" 83 2842 2848 "odoc_value.ml" 83 2842 2862
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 79 2758 2764 "odoc_value.ml" 83 2842 2862
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 84 2863 2869 "odoc_value.ml" 84 2863 2879
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 79 2758 2764 "odoc_value.ml" 84 2863 2879
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 85 2880 2900 "odoc_value.ml" 85 2880 2901
+type(
+  string option
+)
+"odoc_value.ml" 85 2880 2886 "odoc_value.ml" 85 2880 2901
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 79 2758 2764 "odoc_value.ml" 85 2880 2901
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 86 2902 2923 "odoc_value.ml" 86 2902 2924
+type(
+  Types.type_expr list
+)
+type(
+  Longident.t list
+)
+type(
+  Path.t
+)
+"odoc_value.ml" 86 2902 2908 "odoc_value.ml" 86 2902 2924
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 79 2758 2764 "odoc_value.ml" 86 2902 2924
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 87 2925 2946 "odoc_value.ml" 87 2925 2947
+type(
+  Types.row_desc
+)
+"odoc_value.ml" 87 2925 2931 "odoc_value.ml" 87 2925 2947
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 79 2758 2764 "odoc_value.ml" 87 2925 2947
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 88 2951 2959 "odoc_value.ml" 88 2951 2961
+type(
+  (Asttypes.label * Types.type_expr) list
+)
+"odoc_value.ml" 72 2555 2559 "odoc_value.ml" 88 2951 2961
+type(
+  (Asttypes.label * Types.type_expr) list
+)
+"odoc_value.ml" 90 2967 2969 "odoc_value.ml" 90 2967 2973
+type(
+  Types.type_expr -> (Asttypes.label * Types.type_expr) list
+)
+ident(
+  int_ref iter "odoc_value.ml" 71 2536 2546 "odoc_value.ml" 71 2536 2550
+)
+"odoc_value.ml" 90 2967 2974 "odoc_value.ml" 90 2967 2977
+type(
+  Types.type_expr
+)
+ident(
+  int_ref typ "odoc_value.ml" 70 2499 2530 "odoc_value.ml" 70 2499 2533
+)
+"odoc_value.ml" 90 2967 2969 "odoc_value.ml" 90 2967 2977
+call(
+  tail
+)
+type(
+  (Asttypes.label * Types.type_expr) list
+)
+"odoc_value.ml" 71 2536 2538 "odoc_value.ml" 90 2967 2977
+type(
+  (Asttypes.label * Types.type_expr) list
+)
+"odoc_value.ml" 97 3329 3333 "odoc_value.ml" 97 3329 3353
+type(
+  Types.type_expr -> Odoc_parameter.param_info list
+)
+ident(
+  def dummy_parameter_list "odoc_value.ml" 133 4448 4448 "odoc_value.ml" 1 0 -1
+)
+"odoc_value.ml" 97 3329 3354 "odoc_value.ml" 97 3329 3357
+type(
+  Types.type_expr
+)
+ident(
+  def typ "odoc_value.ml" 98 3360 3362 "odoc_value.ml" 130 4345 4372
+)
+"odoc_value.ml" 98 3360 3366 "odoc_value.ml" 98 3360 3377
+type(
+  string -> string
+)
+ident(
+  def normal_name "odoc_value.ml" 106 3527 3529 "odoc_value.ml" 130 4345 4372
+)
+"odoc_value.ml" 98 3360 3378 "odoc_value.ml" 98 3360 3379
+type(
+  string
+)
+ident(
+  def s "odoc_value.ml" 99 3382 3386 "odoc_value.ml" 104 3505 3521
+)
+"odoc_value.ml" 99 3382 3392 "odoc_value.ml" 99 3382 3393
+type(
+  string
+)
+ident(
+  int_ref s "odoc_value.ml" 98 3360 3378 "odoc_value.ml" 98 3360 3379
+)
+"odoc_value.ml" 100 3399 3405 "odoc_value.ml" 100 3399 3407
+type(
+  string
+)
+"odoc_value.ml" 100 3399 3411 "odoc_value.ml" 100 3399 3412
+type(
+  string
+)
+ident(
+  int_ref s "odoc_value.ml" 98 3360 3378 "odoc_value.ml" 98 3360 3379
+)
+"odoc_value.ml" 101 3413 3419 "odoc_value.ml" 101 3413 3420
+type(
+  string
+)
+"odoc_value.ml" 102 3424 3438 "odoc_value.ml" 102 3424 3439
+type(
+  string
+)
+ident(
+  int_ref s "odoc_value.ml" 98 3360 3378 "odoc_value.ml" 98 3360 3379
+)
+"odoc_value.ml" 102 3424 3441 "odoc_value.ml" 102 3424 3442
+type(
+  int
+)
+"odoc_value.ml" 102 3424 3438 "odoc_value.ml" 102 3424 3443
+type(
+  char
+)
+"odoc_value.ml" 103 3449 3459 "odoc_value.ml" 103 3449 3462
+type(
+  char
+)
+"odoc_value.ml" 103 3449 3466 "odoc_value.ml" 103 3449 3476
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"odoc_value.ml" 103 3449 3477 "odoc_value.ml" 103 3449 3478
+type(
+  string
+)
+ident(
+  int_ref s "odoc_value.ml" 98 3360 3378 "odoc_value.ml" 98 3360 3379
+)
+"odoc_value.ml" 103 3449 3479 "odoc_value.ml" 103 3449 3480
+type(
+  int
+)
+"odoc_value.ml" 103 3449 3483 "odoc_value.ml" 103 3449 3496
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_value.ml" 103 3449 3497 "odoc_value.ml" 103 3449 3498
+type(
+  string
+)
+ident(
+  int_ref s "odoc_value.ml" 98 3360 3378 "odoc_value.ml" 98 3360 3379
+)
+"odoc_value.ml" 103 3449 3482 "odoc_value.ml" 103 3449 3499
+type(
+  int
+)
+"odoc_value.ml" 103 3449 3500 "odoc_value.ml" 103 3449 3501
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"odoc_value.ml" 103 3449 3502 "odoc_value.ml" 103 3449 3503
+type(
+  int
+)
+"odoc_value.ml" 103 3449 3481 "odoc_value.ml" 103 3449 3504
+type(
+  int
+)
+"odoc_value.ml" 103 3449 3466 "odoc_value.ml" 103 3449 3504
+call(
+  tail
+)
+type(
+  string
+)
+"odoc_value.ml" 104 3505 3515 "odoc_value.ml" 104 3505 3516
+type(
+  char
+)
+"odoc_value.ml" 104 3505 3520 "odoc_value.ml" 104 3505 3521
+type(
+  string
+)
+ident(
+  int_ref s "odoc_value.ml" 98 3360 3378 "odoc_value.ml" 98 3360 3379
+)
+"odoc_value.ml" 102 3424 3432 "odoc_value.ml" 104 3505 3521
+type(
+  string
+)
+"odoc_value.ml" 99 3382 3386 "odoc_value.ml" 104 3505 3521
+type(
+  string
+)
+"odoc_value.ml" 106 3527 3529 "odoc_value.ml" 106 3527 3548
+type(
+  Types.type_expr -> unit
+)
+ident(
+  ext_ref Printtyp.mark_loops
+)
+"odoc_value.ml" 106 3527 3549 "odoc_value.ml" 106 3527 3552
+type(
+  Types.type_expr
+)
+ident(
+  int_ref typ "odoc_value.ml" 97 3329 3354 "odoc_value.ml" 97 3329 3357
+)
+"odoc_value.ml" 106 3527 3529 "odoc_value.ml" 106 3527 3552
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_value.ml" 107 3554 3560 "odoc_value.ml" 107 3554 3571
+type(
+  (Asttypes.label * Types.type_expr) list
+)
+ident(
+  def liste_param "odoc_value.ml" 108 3608 3610 "odoc_value.ml" 130 4345 4372
+)
+"odoc_value.ml" 107 3554 3574 "odoc_value.ml" 107 3554 3600
+type(
+  Types.type_expr -> (Asttypes.label * Types.type_expr) list
+)
+ident(
+  int_ref parameter_list_from_arrows "odoc_value.ml" 70 2499 2503 "odoc_value.ml" 70 2499 2529
+)
+"odoc_value.ml" 107 3554 3601 "odoc_value.ml" 107 3554 3604
+type(
+  Types.type_expr
+)
+ident(
+  int_ref typ "odoc_value.ml" 97 3329 3354 "odoc_value.ml" 97 3329 3357
+)
+"odoc_value.ml" 107 3554 3574 "odoc_value.ml" 107 3554 3604
+call(
+  stack
+)
+type(
+  (Asttypes.label * Types.type_expr) list
+)
+"odoc_value.ml" 108 3608 3618 "odoc_value.ml" 108 3608 3622
+type(
+  string * Types.type_expr -> Odoc_parameter.param_info
+)
+ident(
+  def iter "odoc_value.ml" 108 3608 3610 "odoc_value.ml" 130 4345 4372
+)
+"odoc_value.ml" 108 3608 3624 "odoc_value.ml" 108 3608 3629
+type(
+  string
+)
+ident(
+  def label "odoc_value.ml" 109 3636 3640 "odoc_value.ml" 128 4296 4339
+)
+"odoc_value.ml" 108 3608 3631 "odoc_value.ml" 108 3608 3632
+type(
+  Types.type_expr
+)
+ident(
+  def t "odoc_value.ml" 109 3636 3640 "odoc_value.ml" 128 4296 4339
+)
+"odoc_value.ml" 108 3608 3623 "odoc_value.ml" 108 3608 3633
+type(
+  string * Types.type_expr
+)
+"odoc_value.ml" 109 3636 3646 "odoc_value.ml" 109 3636 3647
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_value.ml" 108 3608 3631 "odoc_value.ml" 108 3608 3632
+)
+"odoc_value.ml" 109 3636 3646 "odoc_value.ml" 109 3636 3658
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 110 3664 3683 "odoc_value.ml" 110 3664 3684
+type(
+  Types.type_expr list
+)
+ident(
+  def l "odoc_value.ml" 111 3688 3696 "odoc_value.ml" 119 4031 4076
+)
+"odoc_value.ml" 110 3664 3670 "odoc_value.ml" 110 3664 3684
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 111 3688 3699 "odoc_value.ml" 111 3688 3704
+type(
+  string
+)
+ident(
+  int_ref label "odoc_value.ml" 108 3608 3624 "odoc_value.ml" 108 3608 3629
+)
+"odoc_value.ml" 111 3688 3705 "odoc_value.ml" 111 3688 3706
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"odoc_value.ml" 111 3688 3707 "odoc_value.ml" 111 3688 3709
+type(
+  string
+)
+"odoc_value.ml" 111 3688 3699 "odoc_value.ml" 111 3688 3709
+type(
+  bool
+)
+"odoc_value.ml" 113 3746 3759 "odoc_value.ml" 113 3746 3767
+type(
+  (Types.type_expr -> Odoc_parameter.param_info) ->
+  Types.type_expr list -> Odoc_parameter.param_info list
+)
+ident(
+  ext_ref List.map
+)
+"odoc_value.ml" 113 3746 3773 "odoc_value.ml" 113 3746 3775
+type(
+  Types.type_expr
+)
+ident(
+  def t2 "odoc_value.ml" 113 3746 3779 "odoc_value.ml" 113 3746 3792
+)
+"odoc_value.ml" 113 3746 3779 "odoc_value.ml" 113 3746 3783
+type(
+  string * Types.type_expr -> Odoc_parameter.param_info
+)
+ident(
+  int_ref iter "odoc_value.ml" 108 3608 3618 "odoc_value.ml" 108 3608 3622
+)
+"odoc_value.ml" 113 3746 3785 "odoc_value.ml" 113 3746 3787
+type(
+  string
+)
+"odoc_value.ml" 113 3746 3789 "odoc_value.ml" 113 3746 3791
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t2 "odoc_value.ml" 113 3746 3773 "odoc_value.ml" 113 3746 3775
+)
+"odoc_value.ml" 113 3746 3784 "odoc_value.ml" 113 3746 3792
+type(
+  string * Types.type_expr
+)
+"odoc_value.ml" 113 3746 3779 "odoc_value.ml" 113 3746 3792
+call(
+  tail
+)
+type(
+  Odoc_parameter.param_info
+)
+"odoc_value.ml" 113 3746 3768 "odoc_value.ml" 113 3746 3793
+type(
+  Types.type_expr -> Odoc_parameter.param_info
+)
+"odoc_value.ml" 113 3746 3794 "odoc_value.ml" 113 3746 3795
+type(
+  Types.type_expr list
+)
+ident(
+  int_ref l "odoc_value.ml" 110 3664 3683 "odoc_value.ml" 110 3664 3684
+)
+"odoc_value.ml" 113 3746 3759 "odoc_value.ml" 113 3746 3795
+call(
+  stack
+)
+type(
+  Odoc_parameter.param_info list
+)
+"odoc_value.ml" 113 3746 3797 "odoc_value.ml" 113 3746 3798
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_value.ml" 108 3608 3631 "odoc_value.ml" 108 3608 3632
+)
+"odoc_value.ml" 112 3715 3725 "odoc_value.ml" 113 3746 3799
+type(
+  Odoc_parameter.param_info
+)
+"odoc_value.ml" 117 3929 3968 "odoc_value.ml" 117 3929 3979
+type(
+  string -> string
+)
+ident(
+  int_ref normal_name "odoc_value.ml" 98 3360 3366 "odoc_value.ml" 98 3360 3377
+)
+"odoc_value.ml" 117 3929 3980 "odoc_value.ml" 117 3929 3985
+type(
+  string
+)
+ident(
+  int_ref label "odoc_value.ml" 108 3608 3624 "odoc_value.ml" 108 3608 3629
+)
+"odoc_value.ml" 117 3929 3968 "odoc_value.ml" 117 3929 3985
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_value.ml" 118 3988 4027 "odoc_value.ml" 118 3988 4028
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_value.ml" 108 3608 3631 "odoc_value.ml" 108 3608 3632
+)
+"odoc_value.ml" 119 4031 4070 "odoc_value.ml" 119 4031 4074
+type(
+  Odoc_types.text option
+)
+"odoc_value.ml" 117 3929 3941 "odoc_value.ml" 119 4031 4076
+type(
+  Odoc_parameter.simple_name
+)
+"odoc_value.ml" 116 3892 3902 "odoc_value.ml" 119 4031 4076
+type(
+  Odoc_parameter.param_info
+)
+"odoc_value.ml" 111 3688 3696 "odoc_value.ml" 119 4031 4076
+type(
+  Odoc_parameter.param_info
+)
+"odoc_value.ml" 120 4077 4095 "odoc_value.ml" 120 4077 4097
+type(
+  Types.type_expr
+)
+ident(
+  def t2 "odoc_value.ml" 122 4123 4131 "odoc_value.ml" 122 4123 4149
+)
+"odoc_value.ml" 120 4077 4083 "odoc_value.ml" 120 4077 4097
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 121 4098 4117 "odoc_value.ml" 121 4098 4119
+type(
+  Types.type_expr
+)
+ident(
+  def t2 "odoc_value.ml" 122 4123 4131 "odoc_value.ml" 122 4123 4149
+)
+"odoc_value.ml" 121 4098 4104 "odoc_value.ml" 121 4098 4119
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 120 4077 4083 "odoc_value.ml" 121 4098 4119
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 122 4123 4132 "odoc_value.ml" 122 4123 4136
+type(
+  string * Types.type_expr -> Odoc_parameter.param_info
+)
+ident(
+  int_ref iter "odoc_value.ml" 108 3608 3618 "odoc_value.ml" 108 3608 3622
+)
+"odoc_value.ml" 122 4123 4138 "odoc_value.ml" 122 4123 4143
+type(
+  string
+)
+ident(
+  int_ref label "odoc_value.ml" 108 3608 3624 "odoc_value.ml" 108 3608 3629
+)
+"odoc_value.ml" 122 4123 4145 "odoc_value.ml" 122 4123 4147
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t2 "odoc_value.ml" 120 4077 4095 "odoc_value.ml" 120 4077 4097
+)
+"odoc_value.ml" 122 4123 4137 "odoc_value.ml" 122 4123 4148
+type(
+  string * Types.type_expr
+)
+"odoc_value.ml" 122 4123 4131 "odoc_value.ml" 122 4123 4149
+call(
+  tail
+)
+type(
+  Odoc_parameter.param_info
+)
+"odoc_value.ml" 124 4151 4157 "odoc_value.ml" 124 4151 4158
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 126 4197 4234 "odoc_value.ml" 126 4197 4245
+type(
+  string -> string
+)
+ident(
+  int_ref normal_name "odoc_value.ml" 98 3360 3366 "odoc_value.ml" 98 3360 3377
+)
+"odoc_value.ml" 126 4197 4246 "odoc_value.ml" 126 4197 4251
+type(
+  string
+)
+ident(
+  int_ref label "odoc_value.ml" 108 3608 3624 "odoc_value.ml" 108 3608 3629
+)
+"odoc_value.ml" 126 4197 4234 "odoc_value.ml" 126 4197 4251
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_value.ml" 127 4254 4292 "odoc_value.ml" 127 4254 4293
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_value.ml" 108 3608 3631 "odoc_value.ml" 108 3608 3632
+)
+"odoc_value.ml" 128 4296 4333 "odoc_value.ml" 128 4296 4337
+type(
+  Odoc_types.text option
+)
+"odoc_value.ml" 126 4197 4207 "odoc_value.ml" 128 4296 4339
+type(
+  Odoc_parameter.simple_name
+)
+"odoc_value.ml" 125 4162 4170 "odoc_value.ml" 128 4296 4339
+type(
+  Odoc_parameter.param_info
+)
+"odoc_value.ml" 109 3636 3640 "odoc_value.ml" 128 4296 4339
+type(
+  Odoc_parameter.param_info
+)
+"odoc_value.ml" 130 4345 4347 "odoc_value.ml" 130 4345 4355
+type(
+  (Asttypes.label * Types.type_expr -> Odoc_parameter.param_info) ->
+  (Asttypes.label * Types.type_expr) list -> Odoc_parameter.param_info list
+)
+ident(
+  ext_ref List.map
+)
+"odoc_value.ml" 130 4345 4356 "odoc_value.ml" 130 4345 4360
+type(
+  Asttypes.label * Types.type_expr -> Odoc_parameter.param_info
+)
+ident(
+  int_ref iter "odoc_value.ml" 108 3608 3618 "odoc_value.ml" 108 3608 3622
+)
+"odoc_value.ml" 130 4345 4361 "odoc_value.ml" 130 4345 4372
+type(
+  (Asttypes.label * Types.type_expr) list
+)
+ident(
+  int_ref liste_param "odoc_value.ml" 107 3554 3560 "odoc_value.ml" 107 3554 3571
+)
+"odoc_value.ml" 130 4345 4347 "odoc_value.ml" 130 4345 4372
+call(
+  tail
+)
+type(
+  Odoc_parameter.param_info list
+)
+"odoc_value.ml" 108 3608 3610 "odoc_value.ml" 130 4345 4372
+type(
+  Odoc_parameter.param_info list
+)
+"odoc_value.ml" 107 3554 3556 "odoc_value.ml" 130 4345 4372
+type(
+  Odoc_parameter.param_info list
+)
+"odoc_value.ml" 106 3527 3529 "odoc_value.ml" 130 4345 4372
+type(
+  Odoc_parameter.param_info list
+)
+"odoc_value.ml" 98 3360 3362 "odoc_value.ml" 130 4345 4372
+type(
+  Odoc_parameter.param_info list
+)
+"odoc_value.ml" 133 4448 4452 "odoc_value.ml" 133 4448 4463
+type(
+  t_value -> bool
+)
+ident(
+  def is_function "odoc_value.ml" 143 4626 4640 "odoc_value.ml" 1 0 -1
+)
+"odoc_value.ml" 133 4448 4464 "odoc_value.ml" 133 4448 4465
+type(
+  t_value
+)
+ident(
+  def v "odoc_value.ml" 134 4468 4470 "odoc_value.ml" 143 4626 4640
+)
+"odoc_value.ml" 134 4468 4478 "odoc_value.ml" 134 4468 4479
+type(
+  Types.type_expr -> bool
+)
+ident(
+  def f "odoc_value.ml" 134 4468 4470 "odoc_value.ml" 143 4626 4640
+)
+"odoc_value.ml" 134 4468 4480 "odoc_value.ml" 134 4468 4481
+type(
+  Types.type_expr
+)
+ident(
+  def t "odoc_value.ml" 135 4484 4488 "odoc_value.ml" 141 4599 4616
+)
+"odoc_value.ml" 135 4484 4494 "odoc_value.ml" 135 4484 4495
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_value.ml" 134 4468 4480 "odoc_value.ml" 134 4468 4481
+)
+"odoc_value.ml" 135 4484 4494 "odoc_value.ml" 135 4484 4506
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 136 4512 4531 "odoc_value.ml" 136 4512 4532
+type(
+  Types.commutable
+)
+type(
+  Types.type_expr
+)
+type(
+  Types.type_expr
+)
+type(
+  Asttypes.label
+)
+"odoc_value.ml" 136 4512 4518 "odoc_value.ml" 136 4512 4532
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 137 4536 4544 "odoc_value.ml" 137 4536 4548
+type(
+  bool
+)
+"odoc_value.ml" 138 4549 4567 "odoc_value.ml" 138 4549 4568
+type(
+  Types.type_expr
+)
+ident(
+  def t "odoc_value.ml" 139 4572 4580 "odoc_value.ml" 139 4572 4583
+)
+"odoc_value.ml" 138 4549 4555 "odoc_value.ml" 138 4549 4568
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 139 4572 4580 "odoc_value.ml" 139 4572 4581
+type(
+  Types.type_expr -> bool
+)
+ident(
+  int_ref f "odoc_value.ml" 134 4468 4478 "odoc_value.ml" 134 4468 4479
+)
+"odoc_value.ml" 139 4572 4582 "odoc_value.ml" 139 4572 4583
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_value.ml" 138 4549 4567 "odoc_value.ml" 138 4549 4568
+)
+"odoc_value.ml" 139 4572 4580 "odoc_value.ml" 139 4572 4583
+call(
+  tail
+)
+type(
+  bool
+)
+"odoc_value.ml" 140 4584 4594 "odoc_value.ml" 140 4584 4595
+type(
+  Types.type_desc
+)
+"odoc_value.ml" 141 4599 4611 "odoc_value.ml" 141 4599 4616
+type(
+  bool
+)
+"odoc_value.ml" 135 4484 4488 "odoc_value.ml" 141 4599 4616
+type(
+  bool
+)
+"odoc_value.ml" 143 4626 4628 "odoc_value.ml" 143 4626 4629
+type(
+  Types.type_expr -> bool
+)
+ident(
+  int_ref f "odoc_value.ml" 134 4468 4478 "odoc_value.ml" 134 4468 4479
+)
+"odoc_value.ml" 143 4626 4630 "odoc_value.ml" 143 4626 4631
+type(
+  t_value
+)
+ident(
+  int_ref v "odoc_value.ml" 133 4448 4464 "odoc_value.ml" 133 4448 4465
+)
+"odoc_value.ml" 143 4626 4630 "odoc_value.ml" 143 4626 4640
+type(
+  Types.type_expr
+)
+"odoc_value.ml" 143 4626 4628 "odoc_value.ml" 143 4626 4640
+call(
+  tail
+)
+type(
+  bool
+)
+"odoc_value.ml" 134 4468 4470 "odoc_value.ml" 143 4626 4640
+type(
+  bool
+)

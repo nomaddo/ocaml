@@ -1,0 +1,5709 @@
+"dynlink.ml" 36 1401 1405 "dynlink.ml" 36 1401 1407
+type(
+  unit
+)
+"dynlink.ml" 37 1410 1412 "dynlink.ml" 37 1410 1437
+type(
+  (exn -> string option) -> unit
+)
+ident(
+  ext_ref Printexc.register_printer
+)
+"dynlink.ml" 39 1452 1466 "dynlink.ml" 39 1452 1469
+type(
+  error
+)
+ident(
+  def err "dynlink.ml" 40 1473 1483 "dynlink.ml" 66 2734 2797
+)
+"dynlink.ml" 39 1452 1460 "dynlink.ml" 39 1452 1469
+type(
+  exn
+)
+"dynlink.ml" 40 1473 1487 "dynlink.ml" 40 1473 1490
+type(
+  string
+)
+ident(
+  def msg "dynlink.ml" 66 2734 2744 "dynlink.ml" 66 2734 2797
+)
+"dynlink.ml" 40 1473 1499 "dynlink.ml" 40 1473 1502
+type(
+  error
+)
+ident(
+  int_ref err "dynlink.ml" 39 1452 1466 "dynlink.ml" 39 1452 1469
+)
+"dynlink.ml" 41 1508 1540 "dynlink.ml" 41 1508 1541
+type(
+  string
+)
+ident(
+  def s "dynlink.ml" 42 1545 1559 "dynlink.ml" 42 1545 1600
+)
+"dynlink.ml" 41 1508 1520 "dynlink.ml" 41 1508 1541
+type(
+  error
+)
+"dynlink.ml" 42 1545 1559 "dynlink.ml" 42 1545 1573
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"dynlink.ml" 42 1545 1574 "dynlink.ml" 42 1545 1598
+type(
+  (string -> string, unit, string) format
+)
+"dynlink.ml" 42 1545 1599 "dynlink.ml" 42 1545 1600
+type(
+  string
+)
+ident(
+  int_ref s "dynlink.ml" 41 1508 1540 "dynlink.ml" 41 1508 1541
+)
+"dynlink.ml" 42 1545 1559 "dynlink.ml" 42 1545 1600
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 43 1601 1633 "dynlink.ml" 43 1601 1634
+type(
+  string
+)
+ident(
+  def s "dynlink.ml" 44 1638 1652 "dynlink.ml" 44 1638 1693
+)
+"dynlink.ml" 43 1601 1613 "dynlink.ml" 43 1601 1634
+type(
+  error
+)
+"dynlink.ml" 44 1638 1652 "dynlink.ml" 44 1638 1666
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"dynlink.ml" 44 1638 1667 "dynlink.ml" 44 1638 1691
+type(
+  (string -> string, unit, string) format
+)
+"dynlink.ml" 44 1638 1692 "dynlink.ml" 44 1638 1693
+type(
+  string
+)
+ident(
+  int_ref s "dynlink.ml" 43 1601 1633 "dynlink.ml" 43 1601 1634
+)
+"dynlink.ml" 44 1638 1652 "dynlink.ml" 44 1638 1693
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 45 1694 1723 "dynlink.ml" 45 1694 1724
+type(
+  string
+)
+ident(
+  def s "dynlink.ml" 46 1728 1742 "dynlink.ml" 46 1728 1780
+)
+"dynlink.ml" 45 1694 1706 "dynlink.ml" 45 1694 1724
+type(
+  error
+)
+"dynlink.ml" 46 1728 1742 "dynlink.ml" 46 1728 1756
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"dynlink.ml" 46 1728 1757 "dynlink.ml" 46 1728 1778
+type(
+  (string -> string, unit, string) format
+)
+"dynlink.ml" 46 1728 1779 "dynlink.ml" 46 1728 1780
+type(
+  string
+)
+ident(
+  int_ref s "dynlink.ml" 45 1694 1723 "dynlink.ml" 45 1694 1724
+)
+"dynlink.ml" 46 1728 1742 "dynlink.ml" 46 1728 1780
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 47 1781 1793 "dynlink.ml" 47 1781 1804
+type(
+  error
+)
+"dynlink.ml" 48 1808 1822 "dynlink.ml" 48 1808 1835
+type(
+  string
+)
+"dynlink.ml" 49 1836 1863 "dynlink.ml" 49 1836 1864
+type(
+  string
+)
+ident(
+  def s "dynlink.ml" 50 1890 1904 "dynlink.ml" 51 1969 2002
+)
+"dynlink.ml" 49 1836 1883 "dynlink.ml" 49 1836 1885
+type(
+  string
+)
+ident(
+  def s' "dynlink.ml" 50 1890 1904 "dynlink.ml" 51 1969 2002
+)
+"dynlink.ml" 49 1836 1866 "dynlink.ml" 49 1836 1885
+type(
+  linking_error
+)
+"dynlink.ml" 49 1836 1848 "dynlink.ml" 49 1836 1886
+type(
+  error
+)
+"dynlink.ml" 50 1890 1904 "dynlink.ml" 50 1890 1918
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"dynlink.ml" 50 1890 1919 "dynlink.ml" 50 1890 1968
+type(
+  (string -> string -> string, unit, string) format
+)
+"dynlink.ml" 51 1969 1998 "dynlink.ml" 51 1969 1999
+type(
+  string
+)
+ident(
+  int_ref s "dynlink.ml" 49 1836 1863 "dynlink.ml" 49 1836 1864
+)
+"dynlink.ml" 51 1969 2000 "dynlink.ml" 51 1969 2002
+type(
+  string
+)
+ident(
+  int_ref s' "dynlink.ml" 49 1836 1883 "dynlink.ml" 49 1836 1885
+)
+"dynlink.ml" 50 1890 1904 "dynlink.ml" 51 1969 2002
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 52 2003 2030 "dynlink.ml" 52 2003 2031
+type(
+  string
+)
+ident(
+  def s "dynlink.ml" 53 2062 2076 "dynlink.ml" 54 2143 2182
+)
+"dynlink.ml" 52 2003 2055 "dynlink.ml" 52 2003 2057
+type(
+  string
+)
+ident(
+  def s' "dynlink.ml" 53 2062 2076 "dynlink.ml" 54 2143 2182
+)
+"dynlink.ml" 52 2003 2033 "dynlink.ml" 52 2003 2057
+type(
+  linking_error
+)
+"dynlink.ml" 52 2003 2015 "dynlink.ml" 52 2003 2058
+type(
+  error
+)
+"dynlink.ml" 53 2062 2076 "dynlink.ml" 53 2062 2090
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"dynlink.ml" 53 2062 2091 "dynlink.ml" 54 2143 2177
+type(
+  (string -> string -> string, unit, string) format
+)
+"dynlink.ml" 54 2143 2178 "dynlink.ml" 54 2143 2179
+type(
+  string
+)
+ident(
+  int_ref s "dynlink.ml" 52 2003 2030 "dynlink.ml" 52 2003 2031
+)
+"dynlink.ml" 54 2143 2180 "dynlink.ml" 54 2143 2182
+type(
+  string
+)
+ident(
+  int_ref s' "dynlink.ml" 52 2003 2055 "dynlink.ml" 52 2003 2057
+)
+"dynlink.ml" 53 2062 2076 "dynlink.ml" 54 2143 2182
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 55 2183 2210 "dynlink.ml" 55 2183 2211
+type(
+  string
+)
+ident(
+  def s "dynlink.ml" 56 2241 2255 "dynlink.ml" 57 2321 2360
+)
+"dynlink.ml" 55 2183 2234 "dynlink.ml" 55 2183 2236
+type(
+  string
+)
+ident(
+  def s' "dynlink.ml" 56 2241 2255 "dynlink.ml" 57 2321 2360
+)
+"dynlink.ml" 55 2183 2213 "dynlink.ml" 55 2183 2236
+type(
+  linking_error
+)
+"dynlink.ml" 55 2183 2195 "dynlink.ml" 55 2183 2237
+type(
+  error
+)
+"dynlink.ml" 56 2241 2255 "dynlink.ml" 56 2241 2269
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"dynlink.ml" 56 2241 2270 "dynlink.ml" 57 2321 2355
+type(
+  (string -> string -> string, unit, string) format
+)
+"dynlink.ml" 57 2321 2356 "dynlink.ml" 57 2321 2357
+type(
+  string
+)
+ident(
+  int_ref s "dynlink.ml" 55 2183 2210 "dynlink.ml" 55 2183 2211
+)
+"dynlink.ml" 57 2321 2358 "dynlink.ml" 57 2321 2360
+type(
+  string
+)
+ident(
+  int_ref s' "dynlink.ml" 55 2183 2234 "dynlink.ml" 55 2183 2236
+)
+"dynlink.ml" 56 2241 2255 "dynlink.ml" 57 2321 2360
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 58 2361 2393 "dynlink.ml" 58 2361 2394
+type(
+  string
+)
+ident(
+  def s "dynlink.ml" 59 2398 2412 "dynlink.ml" 59 2398 2453
+)
+"dynlink.ml" 58 2361 2373 "dynlink.ml" 58 2361 2394
+type(
+  error
+)
+"dynlink.ml" 59 2398 2412 "dynlink.ml" 59 2398 2426
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"dynlink.ml" 59 2398 2427 "dynlink.ml" 59 2398 2451
+type(
+  (string -> string, unit, string) format
+)
+"dynlink.ml" 59 2398 2452 "dynlink.ml" 59 2398 2453
+type(
+  string
+)
+ident(
+  int_ref s "dynlink.ml" 58 2361 2393 "dynlink.ml" 58 2361 2394
+)
+"dynlink.ml" 59 2398 2412 "dynlink.ml" 59 2398 2453
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 60 2454 2481 "dynlink.ml" 60 2454 2482
+type(
+  string
+)
+ident(
+  def s "dynlink.ml" 61 2486 2500 "dynlink.ml" 61 2486 2536
+)
+"dynlink.ml" 60 2454 2466 "dynlink.ml" 60 2454 2482
+type(
+  error
+)
+"dynlink.ml" 61 2486 2500 "dynlink.ml" 61 2486 2514
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"dynlink.ml" 61 2486 2515 "dynlink.ml" 61 2486 2534
+type(
+  (string -> string, unit, string) format
+)
+"dynlink.ml" 61 2486 2535 "dynlink.ml" 61 2486 2536
+type(
+  string
+)
+ident(
+  int_ref s "dynlink.ml" 60 2454 2481 "dynlink.ml" 60 2454 2482
+)
+"dynlink.ml" 61 2486 2500 "dynlink.ml" 61 2486 2536
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 62 2537 2565 "dynlink.ml" 62 2537 2566
+type(
+  string
+)
+ident(
+  def s "dynlink.ml" 63 2570 2584 "dynlink.ml" 63 2570 2621
+)
+"dynlink.ml" 62 2537 2549 "dynlink.ml" 62 2537 2566
+type(
+  error
+)
+"dynlink.ml" 63 2570 2584 "dynlink.ml" 63 2570 2598
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"dynlink.ml" 63 2570 2599 "dynlink.ml" 63 2570 2619
+type(
+  (string -> string, unit, string) format
+)
+"dynlink.ml" 63 2570 2620 "dynlink.ml" 63 2570 2621
+type(
+  string
+)
+ident(
+  int_ref s "dynlink.ml" 62 2537 2565 "dynlink.ml" 62 2537 2566
+)
+"dynlink.ml" 63 2570 2584 "dynlink.ml" 63 2570 2621
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 64 2622 2662 "dynlink.ml" 64 2622 2663
+type(
+  string
+)
+ident(
+  def s "dynlink.ml" 65 2667 2681 "dynlink.ml" 65 2667 2730
+)
+"dynlink.ml" 64 2622 2634 "dynlink.ml" 64 2622 2663
+type(
+  error
+)
+"dynlink.ml" 65 2667 2681 "dynlink.ml" 65 2667 2695
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"dynlink.ml" 65 2667 2696 "dynlink.ml" 65 2667 2728
+type(
+  (string -> string, unit, string) format
+)
+"dynlink.ml" 65 2667 2729 "dynlink.ml" 65 2667 2730
+type(
+  string
+)
+ident(
+  int_ref s "dynlink.ml" 64 2622 2662 "dynlink.ml" 64 2622 2663
+)
+"dynlink.ml" 65 2667 2681 "dynlink.ml" 65 2667 2730
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 40 1473 1493 "dynlink.ml" 65 2667 2730
+type(
+  string
+)
+"dynlink.ml" 66 2734 2750 "dynlink.ml" 66 2734 2764
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"dynlink.ml" 66 2734 2765 "dynlink.ml" 66 2734 2792
+type(
+  (string -> string, unit, string) format
+)
+"dynlink.ml" 66 2734 2793 "dynlink.ml" 66 2734 2796
+type(
+  string
+)
+ident(
+  int_ref msg "dynlink.ml" 40 1473 1487 "dynlink.ml" 40 1473 1490
+)
+"dynlink.ml" 66 2734 2749 "dynlink.ml" 66 2734 2797
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 66 2734 2744 "dynlink.ml" 66 2734 2797
+type(
+  string option
+)
+"dynlink.ml" 40 1473 1483 "dynlink.ml" 66 2734 2797
+type(
+  string option
+)
+"dynlink.ml" 67 2798 2806 "dynlink.ml" 67 2798 2807
+type(
+  exn
+)
+"dynlink.ml" 67 2798 2811 "dynlink.ml" 67 2798 2815
+type(
+  string option
+)
+"dynlink.ml" 38 1438 1442 "dynlink.ml" 67 2798 2816
+type(
+  exn -> string option
+)
+"dynlink.ml" 37 1410 1412 "dynlink.ml" 67 2798 2816
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 71 2854 2858 "dynlink.ml" 71 2854 2872
+type(
+  Consistbl.t ref
+)
+ident(
+  def crc_interfaces "dynlink.ml" 72 2901 2901 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 71 2854 2875 "dynlink.ml" 71 2854 2878
+type(
+  Consistbl.t -> Consistbl.t ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"dynlink.ml" 71 2854 2880 "dynlink.ml" 71 2854 2896
+type(
+  unit -> Consistbl.t
+)
+ident(
+  ext_ref Consistbl.create
+)
+"dynlink.ml" 71 2854 2897 "dynlink.ml" 71 2854 2899
+type(
+  unit
+)
+"dynlink.ml" 71 2854 2879 "dynlink.ml" 71 2854 2900
+call(
+  stack
+)
+type(
+  Consistbl.t
+)
+"dynlink.ml" 71 2854 2875 "dynlink.ml" 71 2854 2900
+type(
+  Consistbl.t ref
+)
+"dynlink.ml" 72 2901 2905 "dynlink.ml" 72 2901 2920
+type(
+  bool ref
+)
+ident(
+  def allow_extension "dynlink.ml" 78 3129 3129 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 72 2901 2923 "dynlink.ml" 72 2901 2926
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"dynlink.ml" 72 2901 2927 "dynlink.ml" 72 2901 2931
+type(
+  bool
+)
+"dynlink.ml" 72 2901 2923 "dynlink.ml" 72 2901 2931
+type(
+  bool ref
+)
+"dynlink.ml" 78 3129 3133 "dynlink.ml" 78 3129 3150
+type(
+  string -> Cmo_format.compilation_unit -> unit
+)
+ident(
+  def check_consistency "dynlink.ml" 99 3830 3830 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 78 3129 3151 "dynlink.ml" 78 3129 3160
+type(
+  string
+)
+ident(
+  def file_name "dynlink.ml" 78 3129 3161 "dynlink.ml" 95 3746 3790
+)
+"dynlink.ml" 78 3129 3161 "dynlink.ml" 78 3129 3163
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  def cu "dynlink.ml" 79 3166 3168 "dynlink.ml" 95 3746 3790
+)
+"dynlink.ml" 80 3172 3176 "dynlink.ml" 80 3172 3185
+type(
+  (string * Digest.t option -> unit) ->
+  (string * Digest.t option) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"dynlink.ml" 81 3186 3198 "dynlink.ml" 81 3186 3202
+type(
+  string
+)
+ident(
+  def name "dynlink.ml" 82 3213 3222 "dynlink.ml" 90 3513 3584
+)
+"dynlink.ml" 81 3186 3204 "dynlink.ml" 81 3186 3208
+type(
+  Digest.t option
+)
+ident(
+  def crco "dynlink.ml" 82 3213 3222 "dynlink.ml" 90 3513 3584
+)
+"dynlink.ml" 81 3186 3197 "dynlink.ml" 81 3186 3209
+type(
+  string * Digest.t option
+)
+"dynlink.ml" 82 3213 3228 "dynlink.ml" 82 3213 3232
+type(
+  Digest.t option
+)
+ident(
+  int_ref crco "dynlink.ml" 81 3186 3204 "dynlink.ml" 81 3186 3208
+)
+"dynlink.ml" 83 3238 3249 "dynlink.ml" 83 3238 3253
+type(
+  Digest.t option
+)
+"dynlink.ml" 83 3238 3257 "dynlink.ml" 83 3238 3259
+type(
+  unit
+)
+"dynlink.ml" 84 3260 3276 "dynlink.ml" 84 3260 3279
+type(
+  Digest.t
+)
+ident(
+  def crc "dynlink.ml" 85 3283 3296 "dynlink.ml" 90 3513 3584
+)
+"dynlink.ml" 84 3260 3271 "dynlink.ml" 84 3260 3279
+type(
+  Digest.t option
+)
+"dynlink.ml" 85 3283 3299 "dynlink.ml" 85 3283 3303
+type(
+  string
+)
+ident(
+  int_ref name "dynlink.ml" 81 3186 3198 "dynlink.ml" 81 3186 3202
+)
+"dynlink.ml" 85 3283 3304 "dynlink.ml" 85 3283 3305
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"dynlink.ml" 85 3283 3306 "dynlink.ml" 85 3283 3308
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref cu "dynlink.ml" 78 3129 3161 "dynlink.ml" 78 3129 3163
+)
+"dynlink.ml" 85 3283 3306 "dynlink.ml" 85 3283 3316
+type(
+  string
+)
+"dynlink.ml" 85 3283 3299 "dynlink.ml" 85 3283 3316
+type(
+  bool
+)
+"dynlink.ml" 86 3322 3337 "dynlink.ml" 86 3322 3350
+type(
+  Consistbl.t -> string -> Digest.t -> string -> unit
+)
+ident(
+  ext_ref Consistbl.set
+)
+"dynlink.ml" 86 3322 3351 "dynlink.ml" 86 3322 3352
+type(
+  Consistbl.t ref -> Consistbl.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"dynlink.ml" 86 3322 3352 "dynlink.ml" 86 3322 3366
+type(
+  Consistbl.t ref
+)
+ident(
+  int_ref crc_interfaces "dynlink.ml" 71 2854 2858 "dynlink.ml" 71 2854 2872
+)
+"dynlink.ml" 86 3322 3351 "dynlink.ml" 86 3322 3366
+type(
+  Consistbl.t
+)
+"dynlink.ml" 86 3322 3367 "dynlink.ml" 86 3322 3371
+type(
+  string
+)
+ident(
+  int_ref name "dynlink.ml" 81 3186 3198 "dynlink.ml" 81 3186 3202
+)
+"dynlink.ml" 86 3322 3372 "dynlink.ml" 86 3322 3375
+type(
+  Digest.t
+)
+ident(
+  int_ref crc "dynlink.ml" 84 3260 3276 "dynlink.ml" 84 3260 3279
+)
+"dynlink.ml" 86 3322 3376 "dynlink.ml" 86 3322 3385
+type(
+  string
+)
+ident(
+  int_ref file_name "dynlink.ml" 78 3129 3151 "dynlink.ml" 78 3129 3160
+)
+"dynlink.ml" 86 3322 3337 "dynlink.ml" 86 3322 3385
+call(
+  tail
+)
+type(
+  unit
+)
+"dynlink.ml" 87 3386 3407 "dynlink.ml" 87 3386 3408
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"dynlink.ml" 87 3386 3408 "dynlink.ml" 87 3386 3423
+type(
+  bool ref
+)
+ident(
+  int_ref allow_extension "dynlink.ml" 72 2901 2905 "dynlink.ml" 72 2901 2920
+)
+"dynlink.ml" 87 3386 3407 "dynlink.ml" 87 3386 3423
+type(
+  bool
+)
+"dynlink.ml" 88 3429 3444 "dynlink.ml" 88 3429 3459
+type(
+  Consistbl.t -> string -> Digest.t -> string -> unit
+)
+ident(
+  ext_ref Consistbl.check
+)
+"dynlink.ml" 88 3429 3460 "dynlink.ml" 88 3429 3461
+type(
+  Consistbl.t ref -> Consistbl.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"dynlink.ml" 88 3429 3461 "dynlink.ml" 88 3429 3475
+type(
+  Consistbl.t ref
+)
+ident(
+  int_ref crc_interfaces "dynlink.ml" 71 2854 2858 "dynlink.ml" 71 2854 2872
+)
+"dynlink.ml" 88 3429 3460 "dynlink.ml" 88 3429 3475
+type(
+  Consistbl.t
+)
+"dynlink.ml" 88 3429 3476 "dynlink.ml" 88 3429 3480
+type(
+  string
+)
+ident(
+  int_ref name "dynlink.ml" 81 3186 3198 "dynlink.ml" 81 3186 3202
+)
+"dynlink.ml" 88 3429 3481 "dynlink.ml" 88 3429 3484
+type(
+  Digest.t
+)
+ident(
+  int_ref crc "dynlink.ml" 84 3260 3276 "dynlink.ml" 84 3260 3279
+)
+"dynlink.ml" 88 3429 3485 "dynlink.ml" 88 3429 3494
+type(
+  string
+)
+ident(
+  int_ref file_name "dynlink.ml" 78 3129 3151 "dynlink.ml" 78 3129 3160
+)
+"dynlink.ml" 88 3429 3444 "dynlink.ml" 88 3429 3494
+call(
+  tail
+)
+type(
+  unit
+)
+"dynlink.ml" 90 3513 3528 "dynlink.ml" 90 3513 3549
+type(
+  Consistbl.t -> string -> Digest.t -> string -> unit
+)
+ident(
+  ext_ref Consistbl.check_noadd
+)
+"dynlink.ml" 90 3513 3550 "dynlink.ml" 90 3513 3551
+type(
+  Consistbl.t ref -> Consistbl.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"dynlink.ml" 90 3513 3551 "dynlink.ml" 90 3513 3565
+type(
+  Consistbl.t ref
+)
+ident(
+  int_ref crc_interfaces "dynlink.ml" 71 2854 2858 "dynlink.ml" 71 2854 2872
+)
+"dynlink.ml" 90 3513 3550 "dynlink.ml" 90 3513 3565
+type(
+  Consistbl.t
+)
+"dynlink.ml" 90 3513 3566 "dynlink.ml" 90 3513 3570
+type(
+  string
+)
+ident(
+  int_ref name "dynlink.ml" 81 3186 3198 "dynlink.ml" 81 3186 3202
+)
+"dynlink.ml" 90 3513 3571 "dynlink.ml" 90 3513 3574
+type(
+  Digest.t
+)
+ident(
+  int_ref crc "dynlink.ml" 84 3260 3276 "dynlink.ml" 84 3260 3279
+)
+"dynlink.ml" 90 3513 3575 "dynlink.ml" 90 3513 3584
+type(
+  string
+)
+ident(
+  int_ref file_name "dynlink.ml" 78 3129 3151 "dynlink.ml" 78 3129 3160
+)
+"dynlink.ml" 90 3513 3528 "dynlink.ml" 90 3513 3584
+call(
+  tail
+)
+type(
+  unit
+)
+"dynlink.ml" 87 3386 3404 "dynlink.ml" 90 3513 3584
+type(
+  unit
+)
+"dynlink.ml" 85 3283 3296 "dynlink.ml" 90 3513 3584
+type(
+  unit
+)
+"dynlink.ml" 82 3213 3222 "dynlink.ml" 90 3513 3584
+type(
+  unit
+)
+"dynlink.ml" 81 3186 3192 "dynlink.ml" 90 3513 3585
+type(
+  string * Digest.t option -> unit
+)
+"dynlink.ml" 91 3586 3592 "dynlink.ml" 91 3586 3594
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref cu "dynlink.ml" 78 3129 3161 "dynlink.ml" 78 3129 3163
+)
+"dynlink.ml" 91 3586 3592 "dynlink.ml" 91 3586 3605
+type(
+  (string * Digest.t option) list
+)
+"dynlink.ml" 80 3172 3176 "dynlink.ml" 91 3586 3605
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 92 3606 3637 "dynlink.ml" 92 3606 3641
+type(
+  string
+)
+ident(
+  def name "dynlink.ml" 93 3658 3667 "dynlink.ml" 93 3658 3705
+)
+"dynlink.ml" 92 3606 3643 "dynlink.ml" 92 3606 3647
+type(
+  string
+)
+ident(
+  def user "dynlink.ml" 93 3658 3667 "dynlink.ml" 93 3658 3705
+)
+"dynlink.ml" 92 3606 3649 "dynlink.ml" 92 3606 3653
+type(
+  string
+)
+ident(
+  def auth "dynlink.ml" 93 3658 3667 "dynlink.ml" 93 3658 3705
+)
+"dynlink.ml" 92 3606 3613 "dynlink.ml" 92 3606 3654
+type(
+  exn
+)
+"dynlink.ml" 93 3658 3667 "dynlink.ml" 93 3658 3672
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"dynlink.ml" 93 3658 3699 "dynlink.ml" 93 3658 3703
+type(
+  string
+)
+ident(
+  int_ref name "dynlink.ml" 92 3606 3637 "dynlink.ml" 92 3606 3641
+)
+"dynlink.ml" 93 3658 3678 "dynlink.ml" 93 3658 3704
+type(
+  error
+)
+"dynlink.ml" 93 3658 3672 "dynlink.ml" 93 3658 3705
+type(
+  exn
+)
+"dynlink.ml" 93 3658 3667 "dynlink.ml" 93 3658 3705
+type(
+  unit
+)
+"dynlink.ml" 94 3706 3737 "dynlink.ml" 94 3706 3741
+ident(
+  def name "dynlink.ml" 95 3746 3755 "dynlink.ml" 95 3746 3790
+)
+"dynlink.ml" 94 3706 3736 "dynlink.ml" 94 3706 3742
+type(
+  string
+)
+"dynlink.ml" 94 3706 3713 "dynlink.ml" 94 3706 3742
+type(
+  exn
+)
+"dynlink.ml" 95 3746 3755 "dynlink.ml" 95 3746 3760
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"dynlink.ml" 95 3746 3784 "dynlink.ml" 95 3746 3788
+type(
+  string
+)
+ident(
+  int_ref name "dynlink.ml" 94 3706 3736 "dynlink.ml" 94 3706 3742
+)
+"dynlink.ml" 95 3746 3766 "dynlink.ml" 95 3746 3789
+type(
+  error
+)
+"dynlink.ml" 95 3746 3760 "dynlink.ml" 95 3746 3790
+type(
+  exn
+)
+"dynlink.ml" 95 3746 3755 "dynlink.ml" 95 3746 3790
+type(
+  unit
+)
+"dynlink.ml" 79 3166 3168 "dynlink.ml" 95 3746 3790
+type(
+  unit
+)
+"dynlink.ml" 99 3830 3834 "dynlink.ml" 99 3830 3855
+type(
+  unit -> unit
+)
+ident(
+  def clear_available_units "dynlink.ml" 105 3983 3983 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 99 3830 3856 "dynlink.ml" 99 3830 3858
+type(
+  unit
+)
+"dynlink.ml" 100 3861 3863 "dynlink.ml" 100 3861 3878
+type(
+  Consistbl.t -> unit
+)
+ident(
+  ext_ref Consistbl.clear
+)
+"dynlink.ml" 100 3861 3879 "dynlink.ml" 100 3861 3880
+type(
+  Consistbl.t ref -> Consistbl.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"dynlink.ml" 100 3861 3880 "dynlink.ml" 100 3861 3894
+type(
+  Consistbl.t ref
+)
+ident(
+  int_ref crc_interfaces "dynlink.ml" 71 2854 2858 "dynlink.ml" 71 2854 2872
+)
+"dynlink.ml" 100 3861 3879 "dynlink.ml" 100 3861 3894
+type(
+  Consistbl.t
+)
+"dynlink.ml" 100 3861 3863 "dynlink.ml" 100 3861 3894
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 101 3896 3898 "dynlink.ml" 101 3896 3913
+type(
+  bool ref
+)
+ident(
+  int_ref allow_extension "dynlink.ml" 72 2901 2905 "dynlink.ml" 72 2901 2920
+)
+"dynlink.ml" 101 3896 3914 "dynlink.ml" 101 3896 3916
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"dynlink.ml" 101 3896 3917 "dynlink.ml" 101 3896 3922
+type(
+  bool
+)
+"dynlink.ml" 101 3896 3898 "dynlink.ml" 101 3896 3922
+type(
+  unit
+)
+"dynlink.ml" 100 3861 3863 "dynlink.ml" 101 3896 3922
+type(
+  unit
+)
+"dynlink.ml" 105 3983 3987 "dynlink.ml" 105 3983 3997
+type(
+  string list -> unit
+)
+ident(
+  def allow_only "dynlink.ml" 111 4161 4161 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 105 3983 3998 "dynlink.ml" 105 3983 4003
+type(
+  string list
+)
+ident(
+  def names "dynlink.ml" 106 4006 4008 "dynlink.ml" 107 4076 4102
+)
+"dynlink.ml" 106 4006 4008 "dynlink.ml" 106 4006 4024
+type(
+  (string -> bool) -> Consistbl.t -> unit
+)
+ident(
+  ext_ref Consistbl.filter
+)
+"dynlink.ml" 106 4006 4030 "dynlink.ml" 106 4006 4034
+type(
+  string
+)
+ident(
+  def name "dynlink.ml" 106 4006 4038 "dynlink.ml" 106 4006 4057
+)
+"dynlink.ml" 106 4006 4038 "dynlink.ml" 106 4006 4046
+type(
+  string -> string list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"dynlink.ml" 106 4006 4047 "dynlink.ml" 106 4006 4051
+type(
+  string
+)
+ident(
+  int_ref name "dynlink.ml" 106 4006 4030 "dynlink.ml" 106 4006 4034
+)
+"dynlink.ml" 106 4006 4052 "dynlink.ml" 106 4006 4057
+type(
+  string list
+)
+ident(
+  int_ref names "dynlink.ml" 105 3983 3998 "dynlink.ml" 105 3983 4003
+)
+"dynlink.ml" 106 4006 4038 "dynlink.ml" 106 4006 4057
+call(
+  tail
+)
+type(
+  bool
+)
+"dynlink.ml" 106 4006 4025 "dynlink.ml" 106 4006 4058
+type(
+  string -> bool
+)
+"dynlink.ml" 106 4006 4059 "dynlink.ml" 106 4006 4060
+type(
+  Consistbl.t ref -> Consistbl.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"dynlink.ml" 106 4006 4060 "dynlink.ml" 106 4006 4074
+type(
+  Consistbl.t ref
+)
+ident(
+  int_ref crc_interfaces "dynlink.ml" 71 2854 2858 "dynlink.ml" 71 2854 2872
+)
+"dynlink.ml" 106 4006 4059 "dynlink.ml" 106 4006 4074
+type(
+  Consistbl.t
+)
+"dynlink.ml" 106 4006 4008 "dynlink.ml" 106 4006 4074
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 107 4076 4078 "dynlink.ml" 107 4076 4093
+type(
+  bool ref
+)
+ident(
+  int_ref allow_extension "dynlink.ml" 72 2901 2905 "dynlink.ml" 72 2901 2920
+)
+"dynlink.ml" 107 4076 4094 "dynlink.ml" 107 4076 4096
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"dynlink.ml" 107 4076 4097 "dynlink.ml" 107 4076 4102
+type(
+  bool
+)
+"dynlink.ml" 107 4076 4078 "dynlink.ml" 107 4076 4102
+type(
+  unit
+)
+"dynlink.ml" 106 4006 4008 "dynlink.ml" 107 4076 4102
+type(
+  unit
+)
+"dynlink.ml" 111 4161 4165 "dynlink.ml" 111 4161 4173
+type(
+  string list -> unit
+)
+ident(
+  def prohibit "dynlink.ml" 117 4366 4366 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 111 4161 4174 "dynlink.ml" 111 4161 4179
+type(
+  string list
+)
+ident(
+  def names "dynlink.ml" 112 4182 4184 "dynlink.ml" 113 4258 4284
+)
+"dynlink.ml" 112 4182 4184 "dynlink.ml" 112 4182 4200
+type(
+  (string -> bool) -> Consistbl.t -> unit
+)
+ident(
+  ext_ref Consistbl.filter
+)
+"dynlink.ml" 112 4182 4206 "dynlink.ml" 112 4182 4210
+type(
+  string
+)
+ident(
+  def name "dynlink.ml" 112 4182 4214 "dynlink.ml" 112 4182 4239
+)
+"dynlink.ml" 112 4182 4214 "dynlink.ml" 112 4182 4217
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"dynlink.ml" 112 4182 4219 "dynlink.ml" 112 4182 4227
+type(
+  string -> string list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"dynlink.ml" 112 4182 4228 "dynlink.ml" 112 4182 4232
+type(
+  string
+)
+ident(
+  int_ref name "dynlink.ml" 112 4182 4206 "dynlink.ml" 112 4182 4210
+)
+"dynlink.ml" 112 4182 4233 "dynlink.ml" 112 4182 4238
+type(
+  string list
+)
+ident(
+  int_ref names "dynlink.ml" 111 4161 4174 "dynlink.ml" 111 4161 4179
+)
+"dynlink.ml" 112 4182 4218 "dynlink.ml" 112 4182 4239
+call(
+  stack
+)
+type(
+  bool
+)
+"dynlink.ml" 112 4182 4214 "dynlink.ml" 112 4182 4239
+type(
+  bool
+)
+"dynlink.ml" 112 4182 4201 "dynlink.ml" 112 4182 4240
+type(
+  string -> bool
+)
+"dynlink.ml" 112 4182 4241 "dynlink.ml" 112 4182 4242
+type(
+  Consistbl.t ref -> Consistbl.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"dynlink.ml" 112 4182 4242 "dynlink.ml" 112 4182 4256
+type(
+  Consistbl.t ref
+)
+ident(
+  int_ref crc_interfaces "dynlink.ml" 71 2854 2858 "dynlink.ml" 71 2854 2872
+)
+"dynlink.ml" 112 4182 4241 "dynlink.ml" 112 4182 4256
+type(
+  Consistbl.t
+)
+"dynlink.ml" 112 4182 4184 "dynlink.ml" 112 4182 4256
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 113 4258 4260 "dynlink.ml" 113 4258 4275
+type(
+  bool ref
+)
+ident(
+  int_ref allow_extension "dynlink.ml" 72 2901 2905 "dynlink.ml" 72 2901 2920
+)
+"dynlink.ml" 113 4258 4276 "dynlink.ml" 113 4258 4278
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"dynlink.ml" 113 4258 4279 "dynlink.ml" 113 4258 4284
+type(
+  bool
+)
+"dynlink.ml" 113 4258 4260 "dynlink.ml" 113 4258 4284
+type(
+  unit
+)
+"dynlink.ml" 112 4182 4184 "dynlink.ml" 113 4258 4284
+type(
+  unit
+)
+"dynlink.ml" 117 4366 4370 "dynlink.ml" 117 4366 4389
+type(
+  (string * Digest.t) list -> unit
+)
+ident(
+  def add_available_units "dynlink.ml" 123 4556 4556 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 117 4366 4390 "dynlink.ml" 117 4366 4395
+type(
+  (string * Digest.t) list
+)
+ident(
+  def units "dynlink.ml" 118 4398 4400 "dynlink.ml" 120 4477 4486
+)
+"dynlink.ml" 118 4398 4400 "dynlink.ml" 118 4398 4409
+type(
+  (string * Digest.t -> unit) -> (string * Digest.t) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"dynlink.ml" 119 4410 4420 "dynlink.ml" 119 4410 4424
+type(
+  string
+)
+ident(
+  def unit "dynlink.ml" 119 4410 4434 "dynlink.ml" 119 4410 4475
+)
+"dynlink.ml" 119 4410 4426 "dynlink.ml" 119 4410 4429
+type(
+  Digest.t
+)
+ident(
+  def crc "dynlink.ml" 119 4410 4434 "dynlink.ml" 119 4410 4475
+)
+"dynlink.ml" 119 4410 4419 "dynlink.ml" 119 4410 4430
+type(
+  string * Digest.t
+)
+"dynlink.ml" 119 4410 4434 "dynlink.ml" 119 4410 4447
+type(
+  Consistbl.t -> string -> Digest.t -> string -> unit
+)
+ident(
+  ext_ref Consistbl.set
+)
+"dynlink.ml" 119 4410 4448 "dynlink.ml" 119 4410 4449
+type(
+  Consistbl.t ref -> Consistbl.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"dynlink.ml" 119 4410 4449 "dynlink.ml" 119 4410 4463
+type(
+  Consistbl.t ref
+)
+ident(
+  int_ref crc_interfaces "dynlink.ml" 71 2854 2858 "dynlink.ml" 71 2854 2872
+)
+"dynlink.ml" 119 4410 4448 "dynlink.ml" 119 4410 4463
+type(
+  Consistbl.t
+)
+"dynlink.ml" 119 4410 4464 "dynlink.ml" 119 4410 4468
+type(
+  string
+)
+ident(
+  int_ref unit "dynlink.ml" 119 4410 4420 "dynlink.ml" 119 4410 4424
+)
+"dynlink.ml" 119 4410 4469 "dynlink.ml" 119 4410 4472
+type(
+  Digest.t
+)
+ident(
+  int_ref crc "dynlink.ml" 119 4410 4426 "dynlink.ml" 119 4410 4429
+)
+"dynlink.ml" 119 4410 4473 "dynlink.ml" 119 4410 4475
+type(
+  string
+)
+"dynlink.ml" 119 4410 4434 "dynlink.ml" 119 4410 4475
+call(
+  tail
+)
+type(
+  unit
+)
+"dynlink.ml" 119 4410 4414 "dynlink.ml" 119 4410 4476
+type(
+  string * Digest.t -> unit
+)
+"dynlink.ml" 120 4477 4481 "dynlink.ml" 120 4477 4486
+type(
+  (string * Digest.t) list
+)
+ident(
+  int_ref units "dynlink.ml" 117 4366 4390 "dynlink.ml" 117 4366 4395
+)
+"dynlink.ml" 118 4398 4400 "dynlink.ml" 120 4477 4486
+call(
+  tail
+)
+type(
+  unit
+)
+"dynlink.ml" 123 4556 4560 "dynlink.ml" 123 4556 4572
+type(
+  (string * Digest.t option) list ref
+)
+ident(
+  def default_crcs "dynlink.ml" 125 4583 4583 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 123 4556 4575 "dynlink.ml" 123 4556 4578
+type(
+  (string * Digest.t option) list -> (string * Digest.t option) list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"dynlink.ml" 123 4556 4579 "dynlink.ml" 123 4556 4581
+type(
+  (string * Digest.t option) list
+)
+"dynlink.ml" 123 4556 4575 "dynlink.ml" 123 4556 4581
+type(
+  (string * Digest.t option) list ref
+)
+"dynlink.ml" 125 4583 4587 "dynlink.ml" 125 4583 4610
+type(
+  unit -> unit
+)
+ident(
+  def default_available_units "dynlink.ml" 137 4884 4884 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 125 4583 4611 "dynlink.ml" 125 4583 4613
+type(
+  unit
+)
+"dynlink.ml" 126 4616 4618 "dynlink.ml" 126 4616 4639
+type(
+  unit -> unit
+)
+ident(
+  int_ref clear_available_units "dynlink.ml" 99 3830 3834 "dynlink.ml" 99 3830 3855
+)
+"dynlink.ml" 126 4616 4639 "dynlink.ml" 126 4616 4641
+type(
+  unit
+)
+"dynlink.ml" 126 4616 4618 "dynlink.ml" 126 4616 4641
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 127 4643 4645 "dynlink.ml" 127 4643 4654
+type(
+  (string * Digest.t option -> unit) ->
+  (string * Digest.t option) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"dynlink.ml" 128 4655 4665 "dynlink.ml" 128 4655 4669
+type(
+  string
+)
+ident(
+  def unit "dynlink.ml" 129 4680 4687 "dynlink.ml" 131 4723 4785
+)
+"dynlink.ml" 128 4655 4671 "dynlink.ml" 128 4655 4675
+type(
+  Digest.t option
+)
+ident(
+  def crco "dynlink.ml" 129 4680 4687 "dynlink.ml" 131 4723 4785
+)
+"dynlink.ml" 128 4655 4664 "dynlink.ml" 128 4655 4676
+type(
+  string * Digest.t option
+)
+"dynlink.ml" 129 4680 4693 "dynlink.ml" 129 4680 4697
+type(
+  Digest.t option
+)
+ident(
+  int_ref crco "dynlink.ml" 128 4655 4671 "dynlink.ml" 128 4655 4675
+)
+"dynlink.ml" 130 4703 4712 "dynlink.ml" 130 4703 4716
+type(
+  Digest.t option
+)
+"dynlink.ml" 130 4703 4720 "dynlink.ml" 130 4703 4722
+type(
+  unit
+)
+"dynlink.ml" 131 4723 4737 "dynlink.ml" 131 4723 4740
+type(
+  Digest.t
+)
+ident(
+  def crc "dynlink.ml" 131 4723 4744 "dynlink.ml" 131 4723 4785
+)
+"dynlink.ml" 131 4723 4732 "dynlink.ml" 131 4723 4740
+type(
+  Digest.t option
+)
+"dynlink.ml" 131 4723 4744 "dynlink.ml" 131 4723 4757
+type(
+  Consistbl.t -> string -> Digest.t -> string -> unit
+)
+ident(
+  ext_ref Consistbl.set
+)
+"dynlink.ml" 131 4723 4758 "dynlink.ml" 131 4723 4759
+type(
+  Consistbl.t ref -> Consistbl.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"dynlink.ml" 131 4723 4759 "dynlink.ml" 131 4723 4773
+type(
+  Consistbl.t ref
+)
+ident(
+  int_ref crc_interfaces "dynlink.ml" 71 2854 2858 "dynlink.ml" 71 2854 2872
+)
+"dynlink.ml" 131 4723 4758 "dynlink.ml" 131 4723 4773
+type(
+  Consistbl.t
+)
+"dynlink.ml" 131 4723 4774 "dynlink.ml" 131 4723 4778
+type(
+  string
+)
+ident(
+  int_ref unit "dynlink.ml" 128 4655 4665 "dynlink.ml" 128 4655 4669
+)
+"dynlink.ml" 131 4723 4779 "dynlink.ml" 131 4723 4782
+type(
+  Digest.t
+)
+ident(
+  int_ref crc "dynlink.ml" 131 4723 4737 "dynlink.ml" 131 4723 4740
+)
+"dynlink.ml" 131 4723 4783 "dynlink.ml" 131 4723 4785
+type(
+  string
+)
+"dynlink.ml" 131 4723 4744 "dynlink.ml" 131 4723 4785
+call(
+  tail
+)
+type(
+  unit
+)
+"dynlink.ml" 129 4680 4687 "dynlink.ml" 131 4723 4785
+type(
+  unit
+)
+"dynlink.ml" 128 4655 4659 "dynlink.ml" 131 4723 4786
+type(
+  string * Digest.t option -> unit
+)
+"dynlink.ml" 132 4787 4791 "dynlink.ml" 132 4787 4792
+type(
+  (string * Digest.t option) list ref -> (string * Digest.t option) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"dynlink.ml" 132 4787 4792 "dynlink.ml" 132 4787 4804
+type(
+  (string * Digest.t option) list ref
+)
+ident(
+  int_ref default_crcs "dynlink.ml" 123 4556 4560 "dynlink.ml" 123 4556 4572
+)
+"dynlink.ml" 132 4787 4791 "dynlink.ml" 132 4787 4804
+type(
+  (string * Digest.t option) list
+)
+"dynlink.ml" 127 4643 4645 "dynlink.ml" 132 4787 4804
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 133 4806 4808 "dynlink.ml" 133 4806 4823
+type(
+  bool ref
+)
+ident(
+  int_ref allow_extension "dynlink.ml" 72 2901 2905 "dynlink.ml" 72 2901 2920
+)
+"dynlink.ml" 133 4806 4824 "dynlink.ml" 133 4806 4826
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"dynlink.ml" 133 4806 4827 "dynlink.ml" 133 4806 4831
+type(
+  bool
+)
+"dynlink.ml" 133 4806 4808 "dynlink.ml" 133 4806 4831
+type(
+  unit
+)
+"dynlink.ml" 127 4643 4645 "dynlink.ml" 133 4806 4831
+type(
+  unit
+)
+"dynlink.ml" 126 4616 4618 "dynlink.ml" 133 4806 4831
+type(
+  unit
+)
+"dynlink.ml" 137 4884 4888 "dynlink.ml" 137 4884 4894
+type(
+  bool ref
+)
+ident(
+  def inited "dynlink.ml" 139 4908 4908 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 137 4884 4897 "dynlink.ml" 137 4884 4900
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"dynlink.ml" 137 4884 4901 "dynlink.ml" 137 4884 4906
+type(
+  bool
+)
+"dynlink.ml" 137 4884 4897 "dynlink.ml" 137 4884 4906
+type(
+  bool ref
+)
+"dynlink.ml" 139 4908 4912 "dynlink.ml" 139 4908 4916
+type(
+  unit -> unit
+)
+ident(
+  def init "dynlink.ml" 146 5055 5055 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 139 4908 4917 "dynlink.ml" 139 4908 4919
+type(
+  unit
+)
+"dynlink.ml" 140 4922 4927 "dynlink.ml" 140 4922 4930
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"dynlink.ml" 140 4922 4931 "dynlink.ml" 140 4922 4932
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"dynlink.ml" 140 4922 4932 "dynlink.ml" 140 4922 4938
+type(
+  bool ref
+)
+ident(
+  int_ref inited "dynlink.ml" 137 4884 4888 "dynlink.ml" 137 4884 4894
+)
+"dynlink.ml" 140 4922 4931 "dynlink.ml" 140 4922 4938
+type(
+  bool
+)
+"dynlink.ml" 140 4922 4927 "dynlink.ml" 140 4922 4938
+type(
+  bool
+)
+"dynlink.ml" 141 4950 4954 "dynlink.ml" 141 4950 4966
+type(
+  (string * Digest.t option) list ref
+)
+ident(
+  int_ref default_crcs "dynlink.ml" 123 4556 4560 "dynlink.ml" 123 4556 4572
+)
+"dynlink.ml" 141 4950 4967 "dynlink.ml" 141 4950 4969
+type(
+  (string * Digest.t option) list ref ->
+  (string * Digest.t option) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"dynlink.ml" 141 4950 4970 "dynlink.ml" 141 4950 4992
+type(
+  unit -> (string * Digest.t option) list
+)
+ident(
+  ext_ref Symtable.init_toplevel
+)
+"dynlink.ml" 141 4950 4992 "dynlink.ml" 141 4950 4994
+type(
+  unit
+)
+"dynlink.ml" 141 4950 4970 "dynlink.ml" 141 4950 4994
+call(
+  stack
+)
+type(
+  (string * Digest.t option) list
+)
+"dynlink.ml" 141 4950 4954 "dynlink.ml" 141 4950 4994
+type(
+  unit
+)
+"dynlink.ml" 142 4996 5000 "dynlink.ml" 142 4996 5023
+type(
+  unit -> unit
+)
+ident(
+  int_ref default_available_units "dynlink.ml" 125 4583 4587 "dynlink.ml" 125 4583 4610
+)
+"dynlink.ml" 142 4996 5024 "dynlink.ml" 142 4996 5026
+type(
+  unit
+)
+"dynlink.ml" 142 4996 5000 "dynlink.ml" 142 4996 5026
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 143 5028 5032 "dynlink.ml" 143 5028 5038
+type(
+  bool ref
+)
+ident(
+  int_ref inited "dynlink.ml" 137 4884 4888 "dynlink.ml" 137 4884 4894
+)
+"dynlink.ml" 143 5028 5039 "dynlink.ml" 143 5028 5041
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"dynlink.ml" 143 5028 5042 "dynlink.ml" 143 5028 5046
+type(
+  bool
+)
+"dynlink.ml" 143 5028 5032 "dynlink.ml" 143 5028 5047
+type(
+  unit
+)
+"dynlink.ml" 142 4996 5000 "dynlink.ml" 143 5028 5047
+type(
+  unit
+)
+"dynlink.ml" 140 4922 4944 "dynlink.ml" 144 5048 5053
+type(
+  unit
+)
+"dynlink.ml" 140 4922 4924 "dynlink.ml" 144 5048 5053
+type(
+  unit
+)
+"dynlink.ml" 146 5055 5059 "dynlink.ml" 146 5055 5080
+type(
+  unit -> unit
+)
+ident(
+  def clear_available_units "dynlink.ml" 147 5119 5119 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 146 5055 5081 "dynlink.ml" 146 5055 5083
+type(
+  unit
+)
+"dynlink.ml" 146 5055 5086 "dynlink.ml" 146 5055 5090
+type(
+  unit -> unit
+)
+ident(
+  int_ref init "dynlink.ml" 139 4908 4912 "dynlink.ml" 139 4908 4916
+)
+"dynlink.ml" 146 5055 5090 "dynlink.ml" 146 5055 5092
+type(
+  unit
+)
+"dynlink.ml" 146 5055 5086 "dynlink.ml" 146 5055 5092
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 146 5055 5094 "dynlink.ml" 146 5055 5115
+type(
+  unit -> unit
+)
+ident(
+  int_ref clear_available_units "dynlink.ml" 99 3830 3834 "dynlink.ml" 99 3830 3855
+)
+"dynlink.ml" 146 5055 5116 "dynlink.ml" 146 5055 5118
+type(
+  unit
+)
+"dynlink.ml" 146 5055 5094 "dynlink.ml" 146 5055 5118
+call(
+  tail
+)
+type(
+  unit
+)
+"dynlink.ml" 146 5055 5086 "dynlink.ml" 146 5055 5118
+type(
+  unit
+)
+"dynlink.ml" 147 5119 5123 "dynlink.ml" 147 5119 5133
+type(
+  string list -> unit
+)
+ident(
+  def allow_only "dynlink.ml" 148 5159 5159 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 147 5119 5134 "dynlink.ml" 147 5119 5135
+type(
+  string list
+)
+ident(
+  def l "dynlink.ml" 147 5119 5138 "dynlink.ml" 147 5119 5158
+)
+"dynlink.ml" 147 5119 5138 "dynlink.ml" 147 5119 5142
+type(
+  unit -> unit
+)
+ident(
+  int_ref init "dynlink.ml" 139 4908 4912 "dynlink.ml" 139 4908 4916
+)
+"dynlink.ml" 147 5119 5142 "dynlink.ml" 147 5119 5144
+type(
+  unit
+)
+"dynlink.ml" 147 5119 5138 "dynlink.ml" 147 5119 5144
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 147 5119 5146 "dynlink.ml" 147 5119 5156
+type(
+  string list -> unit
+)
+ident(
+  int_ref allow_only "dynlink.ml" 105 3983 3987 "dynlink.ml" 105 3983 3997
+)
+"dynlink.ml" 147 5119 5157 "dynlink.ml" 147 5119 5158
+type(
+  string list
+)
+ident(
+  int_ref l "dynlink.ml" 147 5119 5134 "dynlink.ml" 147 5119 5135
+)
+"dynlink.ml" 147 5119 5146 "dynlink.ml" 147 5119 5158
+call(
+  tail
+)
+type(
+  unit
+)
+"dynlink.ml" 147 5119 5138 "dynlink.ml" 147 5119 5158
+type(
+  unit
+)
+"dynlink.ml" 148 5159 5163 "dynlink.ml" 148 5159 5171
+type(
+  string list -> unit
+)
+ident(
+  def prohibit "dynlink.ml" 149 5195 5195 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 148 5159 5172 "dynlink.ml" 148 5159 5173
+type(
+  string list
+)
+ident(
+  def l "dynlink.ml" 148 5159 5176 "dynlink.ml" 148 5159 5194
+)
+"dynlink.ml" 148 5159 5176 "dynlink.ml" 148 5159 5180
+type(
+  unit -> unit
+)
+ident(
+  int_ref init "dynlink.ml" 139 4908 4912 "dynlink.ml" 139 4908 4916
+)
+"dynlink.ml" 148 5159 5180 "dynlink.ml" 148 5159 5182
+type(
+  unit
+)
+"dynlink.ml" 148 5159 5176 "dynlink.ml" 148 5159 5182
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 148 5159 5184 "dynlink.ml" 148 5159 5192
+type(
+  string list -> unit
+)
+ident(
+  int_ref prohibit "dynlink.ml" 111 4161 4165 "dynlink.ml" 111 4161 4173
+)
+"dynlink.ml" 148 5159 5193 "dynlink.ml" 148 5159 5194
+type(
+  string list
+)
+ident(
+  int_ref l "dynlink.ml" 148 5159 5172 "dynlink.ml" 148 5159 5173
+)
+"dynlink.ml" 148 5159 5184 "dynlink.ml" 148 5159 5194
+call(
+  tail
+)
+type(
+  unit
+)
+"dynlink.ml" 148 5159 5176 "dynlink.ml" 148 5159 5194
+type(
+  unit
+)
+"dynlink.ml" 149 5195 5199 "dynlink.ml" 149 5195 5218
+type(
+  (string * Digest.t) list -> unit
+)
+ident(
+  def add_available_units "dynlink.ml" 150 5253 5253 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 149 5195 5219 "dynlink.ml" 149 5195 5220
+type(
+  (string * Digest.t) list
+)
+ident(
+  def l "dynlink.ml" 149 5195 5223 "dynlink.ml" 149 5195 5252
+)
+"dynlink.ml" 149 5195 5223 "dynlink.ml" 149 5195 5227
+type(
+  unit -> unit
+)
+ident(
+  int_ref init "dynlink.ml" 139 4908 4912 "dynlink.ml" 139 4908 4916
+)
+"dynlink.ml" 149 5195 5227 "dynlink.ml" 149 5195 5229
+type(
+  unit
+)
+"dynlink.ml" 149 5195 5223 "dynlink.ml" 149 5195 5229
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 149 5195 5231 "dynlink.ml" 149 5195 5250
+type(
+  (string * Digest.t) list -> unit
+)
+ident(
+  int_ref add_available_units "dynlink.ml" 117 4366 4370 "dynlink.ml" 117 4366 4389
+)
+"dynlink.ml" 149 5195 5251 "dynlink.ml" 149 5195 5252
+type(
+  (string * Digest.t) list
+)
+ident(
+  int_ref l "dynlink.ml" 149 5195 5219 "dynlink.ml" 149 5195 5220
+)
+"dynlink.ml" 149 5195 5231 "dynlink.ml" 149 5195 5252
+call(
+  tail
+)
+type(
+  unit
+)
+"dynlink.ml" 149 5195 5223 "dynlink.ml" 149 5195 5252
+type(
+  unit
+)
+"dynlink.ml" 150 5253 5257 "dynlink.ml" 150 5253 5280
+type(
+  unit -> unit
+)
+ident(
+  def default_available_units "dynlink.ml" 154 5377 5377 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 150 5253 5281 "dynlink.ml" 150 5253 5283
+type(
+  unit
+)
+"dynlink.ml" 150 5253 5286 "dynlink.ml" 150 5253 5290
+type(
+  unit -> unit
+)
+ident(
+  int_ref init "dynlink.ml" 139 4908 4912 "dynlink.ml" 139 4908 4916
+)
+"dynlink.ml" 150 5253 5290 "dynlink.ml" 150 5253 5292
+type(
+  unit
+)
+"dynlink.ml" 150 5253 5286 "dynlink.ml" 150 5253 5292
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 150 5253 5294 "dynlink.ml" 150 5253 5317
+type(
+  unit -> unit
+)
+ident(
+  int_ref default_available_units "dynlink.ml" 125 4583 4587 "dynlink.ml" 125 4583 4610
+)
+"dynlink.ml" 150 5253 5318 "dynlink.ml" 150 5253 5320
+type(
+  unit
+)
+"dynlink.ml" 150 5253 5294 "dynlink.ml" 150 5253 5320
+call(
+  tail
+)
+type(
+  unit
+)
+"dynlink.ml" 150 5253 5286 "dynlink.ml" 150 5253 5320
+type(
+  unit
+)
+"dynlink.ml" 154 5377 5381 "dynlink.ml" 154 5377 5397
+type(
+  string -> string list -> Digest.t
+)
+ident(
+  def digest_interface "dynlink.ml" 185 6299 6299 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 154 5377 5398 "dynlink.ml" 154 5377 5402
+type(
+  string
+)
+ident(
+  def unit "dynlink.ml" 154 5377 5403 "dynlink.ml" 180 6140 6186
+)
+"dynlink.ml" 154 5377 5403 "dynlink.ml" 154 5377 5411
+type(
+  string list
+)
+ident(
+  def loadpath "dynlink.ml" 155 5414 5416 "dynlink.ml" 180 6140 6186
+)
+"dynlink.ml" 155 5414 5420 "dynlink.ml" 155 5414 5428
+type(
+  string
+)
+ident(
+  def filename "dynlink.ml" 161 5596 5598 "dynlink.ml" 180 6140 6186
+)
+"dynlink.ml" 156 5431 5439 "dynlink.ml" 156 5431 5448
+type(
+  string
+)
+ident(
+  def shortname "dynlink.ml" 157 5468 5472 "dynlink.ml" 160 5547 5592
+)
+"dynlink.ml" 156 5431 5451 "dynlink.ml" 156 5431 5455
+type(
+  string
+)
+ident(
+  int_ref unit "dynlink.ml" 154 5377 5398 "dynlink.ml" 154 5377 5402
+)
+"dynlink.ml" 156 5431 5456 "dynlink.ml" 156 5431 5457
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 156 5431 5458 "dynlink.ml" 156 5431 5464
+type(
+  string
+)
+"dynlink.ml" 156 5431 5451 "dynlink.ml" 156 5431 5464
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 158 5476 5482 "dynlink.ml" 158 5476 5505
+type(
+  string list -> string -> string
+)
+ident(
+  ext_ref Misc.find_in_path_uncap
+)
+"dynlink.ml" 158 5476 5506 "dynlink.ml" 158 5476 5514
+type(
+  string list
+)
+ident(
+  int_ref loadpath "dynlink.ml" 154 5377 5403 "dynlink.ml" 154 5377 5411
+)
+"dynlink.ml" 158 5476 5515 "dynlink.ml" 158 5476 5524
+type(
+  string
+)
+ident(
+  int_ref shortname "dynlink.ml" 156 5431 5439 "dynlink.ml" 156 5431 5448
+)
+"dynlink.ml" 158 5476 5482 "dynlink.ml" 158 5476 5524
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 159 5525 5534 "dynlink.ml" 159 5525 5543
+type(
+  exn
+)
+"dynlink.ml" 160 5547 5553 "dynlink.ml" 160 5547 5558
+type(
+  exn -> string
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"dynlink.ml" 160 5547 5581 "dynlink.ml" 160 5547 5590
+type(
+  string
+)
+ident(
+  int_ref shortname "dynlink.ml" 156 5431 5439 "dynlink.ml" 156 5431 5448
+)
+"dynlink.ml" 160 5547 5565 "dynlink.ml" 160 5547 5591
+type(
+  error
+)
+"dynlink.ml" 160 5547 5559 "dynlink.ml" 160 5547 5592
+type(
+  exn
+)
+"dynlink.ml" 160 5547 5553 "dynlink.ml" 160 5547 5592
+type(
+  string
+)
+"dynlink.ml" 157 5468 5472 "dynlink.ml" 160 5547 5592
+type(
+  string
+)
+"dynlink.ml" 156 5431 5435 "dynlink.ml" 160 5547 5592
+type(
+  string
+)
+"dynlink.ml" 161 5596 5602 "dynlink.ml" 161 5596 5604
+type(
+  in_channel
+)
+ident(
+  def ic "dynlink.ml" 162 5631 5633 "dynlink.ml" 180 6140 6186
+)
+"dynlink.ml" 161 5596 5607 "dynlink.ml" 161 5596 5618
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in_bin
+)
+"dynlink.ml" 161 5596 5619 "dynlink.ml" 161 5596 5627
+type(
+  string
+)
+ident(
+  int_ref filename "dynlink.ml" 155 5414 5420 "dynlink.ml" 155 5414 5428
+)
+"dynlink.ml" 161 5596 5607 "dynlink.ml" 161 5596 5627
+call(
+  stack
+)
+type(
+  in_channel
+)
+"dynlink.ml" 163 5637 5645 "dynlink.ml" 163 5637 5651
+type(
+  string
+)
+ident(
+  def buffer "dynlink.ml" 166 5730 5734 "dynlink.ml" 177 6081 6088
+)
+"dynlink.ml" 164 5654 5660 "dynlink.ml" 164 5654 5679
+type(
+  in_channel -> int -> string
+)
+ident(
+  ext_ref Pervasives.really_input_string
+)
+"dynlink.ml" 164 5654 5680 "dynlink.ml" 164 5654 5682
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 161 5596 5602 "dynlink.ml" 161 5596 5604
+)
+"dynlink.ml" 164 5654 5684 "dynlink.ml" 164 5654 5697
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"dynlink.ml" 164 5654 5698 "dynlink.ml" 164 5654 5721
+type(
+  string
+)
+ident(
+  ext_ref Config.cmi_magic_number
+)
+"dynlink.ml" 164 5654 5683 "dynlink.ml" 164 5654 5722
+type(
+  int
+)
+"dynlink.ml" 164 5654 5660 "dynlink.ml" 164 5654 5722
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 166 5730 5737 "dynlink.ml" 166 5730 5743
+type(
+  string
+)
+ident(
+  int_ref buffer "dynlink.ml" 163 5637 5645 "dynlink.ml" 163 5637 5651
+)
+"dynlink.ml" 166 5730 5744 "dynlink.ml" 166 5730 5746
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"dynlink.ml" 166 5730 5747 "dynlink.ml" 166 5730 5770
+type(
+  string
+)
+ident(
+  ext_ref Config.cmi_magic_number
+)
+"dynlink.ml" 166 5730 5737 "dynlink.ml" 166 5730 5770
+type(
+  bool
+)
+"dynlink.ml" 167 5782 5788 "dynlink.ml" 167 5782 5796
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in
+)
+"dynlink.ml" 167 5782 5797 "dynlink.ml" 167 5782 5799
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 161 5596 5602 "dynlink.ml" 161 5596 5604
+)
+"dynlink.ml" 167 5782 5788 "dynlink.ml" 167 5782 5799
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 168 5801 5807 "dynlink.ml" 168 5801 5812
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"dynlink.ml" 168 5801 5839 "dynlink.ml" 168 5801 5847
+type(
+  string
+)
+ident(
+  int_ref filename "dynlink.ml" 155 5414 5420 "dynlink.ml" 155 5414 5428
+)
+"dynlink.ml" 168 5801 5818 "dynlink.ml" 168 5801 5848
+type(
+  error
+)
+"dynlink.ml" 168 5801 5812 "dynlink.ml" 168 5801 5849
+type(
+  exn
+)
+"dynlink.ml" 168 5801 5807 "dynlink.ml" 168 5801 5849
+type(
+  unit
+)
+"dynlink.ml" 166 5730 5776 "dynlink.ml" 169 5850 5857
+type(
+  unit
+)
+"dynlink.ml" 166 5730 5734 "dynlink.ml" 169 5850 5857
+type(
+  unit
+)
+"dynlink.ml" 170 5859 5867 "dynlink.ml" 170 5859 5870
+type(
+  Cmi_format.cmi_infos
+)
+ident(
+  def cmi "dynlink.ml" 171 5900 5904 "dynlink.ml" 177 6081 6088
+)
+"dynlink.ml" 170 5859 5873 "dynlink.ml" 170 5859 5893
+type(
+  in_channel -> Cmi_format.cmi_infos
+)
+ident(
+  ext_ref Cmi_format.input_cmi
+)
+"dynlink.ml" 170 5859 5894 "dynlink.ml" 170 5859 5896
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 161 5596 5602 "dynlink.ml" 161 5596 5604
+)
+"dynlink.ml" 170 5859 5873 "dynlink.ml" 170 5859 5896
+call(
+  stack
+)
+type(
+  Cmi_format.cmi_infos
+)
+"dynlink.ml" 171 5900 5904 "dynlink.ml" 171 5900 5912
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in
+)
+"dynlink.ml" 171 5900 5913 "dynlink.ml" 171 5900 5915
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 161 5596 5602 "dynlink.ml" 161 5596 5604
+)
+"dynlink.ml" 171 5900 5904 "dynlink.ml" 171 5900 5915
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 172 5917 5925 "dynlink.ml" 172 5917 5928
+type(
+  Digest.t
+)
+ident(
+  def crc "dynlink.ml" 177 6081 6085 "dynlink.ml" 177 6081 6088
+)
+"dynlink.ml" 173 5931 5943 "dynlink.ml" 173 5931 5946
+type(
+  Cmi_format.cmi_infos
+)
+ident(
+  int_ref cmi "dynlink.ml" 170 5859 5867 "dynlink.ml" 170 5859 5870
+)
+"dynlink.ml" 173 5931 5943 "dynlink.ml" 173 5931 5966
+type(
+  (string * Digest.t option) list
+)
+"dynlink.ml" 174 5972 5981 "dynlink.ml" 174 5972 5982
+type(
+  string
+)
+"dynlink.ml" 174 5972 5989 "dynlink.ml" 174 5972 5992
+type(
+  Digest.t
+)
+ident(
+  def crc "dynlink.ml" 174 5972 6002 "dynlink.ml" 174 5972 6005
+)
+"dynlink.ml" 174 5972 5984 "dynlink.ml" 174 5972 5992
+type(
+  Digest.t option
+)
+"dynlink.ml" 174 5972 5980 "dynlink.ml" 174 5972 5993
+type(
+  string * Digest.t option
+)
+"dynlink.ml" 174 5972 5997 "dynlink.ml" 174 5972 5998
+type(
+  (string * Digest.t option) list
+)
+"dynlink.ml" 174 5972 5980 "dynlink.ml" 174 5972 5998
+type(
+  (string * Digest.t option) list
+)
+"dynlink.ml" 174 5972 6002 "dynlink.ml" 174 5972 6005
+type(
+  Digest.t
+)
+ident(
+  int_ref crc "dynlink.ml" 174 5972 5989 "dynlink.ml" 174 5972 5992
+)
+"dynlink.ml" 175 6006 6014 "dynlink.ml" 175 6006 6015
+type(
+  (string * Digest.t option) list
+)
+"dynlink.ml" 175 6006 6031 "dynlink.ml" 175 6006 6036
+type(
+  exn -> Digest.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"dynlink.ml" 175 6006 6063 "dynlink.ml" 175 6006 6071
+type(
+  string
+)
+ident(
+  int_ref filename "dynlink.ml" 155 5414 5420 "dynlink.ml" 155 5414 5428
+)
+"dynlink.ml" 175 6006 6042 "dynlink.ml" 175 6006 6072
+type(
+  error
+)
+"dynlink.ml" 175 6006 6036 "dynlink.ml" 175 6006 6073
+type(
+  exn
+)
+"dynlink.ml" 175 6006 6031 "dynlink.ml" 175 6006 6073
+type(
+  Digest.t
+)
+"dynlink.ml" 173 5931 5937 "dynlink.ml" 175 6006 6073
+type(
+  Digest.t
+)
+"dynlink.ml" 177 6081 6085 "dynlink.ml" 177 6081 6088
+type(
+  Digest.t
+)
+ident(
+  int_ref crc "dynlink.ml" 172 5917 5925 "dynlink.ml" 172 5917 5928
+)
+"dynlink.ml" 172 5917 5921 "dynlink.ml" 177 6081 6088
+type(
+  Digest.t
+)
+"dynlink.ml" 171 5900 5904 "dynlink.ml" 177 6081 6088
+type(
+  Digest.t
+)
+"dynlink.ml" 170 5859 5863 "dynlink.ml" 177 6081 6088
+type(
+  Digest.t
+)
+"dynlink.ml" 166 5730 5734 "dynlink.ml" 177 6081 6088
+type(
+  Digest.t
+)
+"dynlink.ml" 163 5637 5641 "dynlink.ml" 177 6081 6088
+type(
+  Digest.t
+)
+"dynlink.ml" 178 6089 6096 "dynlink.ml" 178 6089 6107
+type(
+  exn
+)
+"dynlink.ml" 178 6089 6118 "dynlink.ml" 178 6089 6119
+type(
+  string
+)
+"dynlink.ml" 178 6089 6110 "dynlink.ml" 178 6089 6119
+type(
+  exn
+)
+"dynlink.ml" 178 6089 6096 "dynlink.ml" 178 6089 6119
+type(
+  exn
+)
+"dynlink.ml" 179 6123 6127 "dynlink.ml" 179 6123 6135
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in
+)
+"dynlink.ml" 179 6123 6136 "dynlink.ml" 179 6123 6138
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 161 5596 5602 "dynlink.ml" 161 5596 5604
+)
+"dynlink.ml" 179 6123 6127 "dynlink.ml" 179 6123 6138
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 180 6140 6144 "dynlink.ml" 180 6140 6149
+type(
+  exn -> Digest.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"dynlink.ml" 180 6140 6176 "dynlink.ml" 180 6140 6184
+type(
+  string
+)
+ident(
+  int_ref filename "dynlink.ml" 155 5414 5420 "dynlink.ml" 155 5414 5428
+)
+"dynlink.ml" 180 6140 6155 "dynlink.ml" 180 6140 6185
+type(
+  error
+)
+"dynlink.ml" 180 6140 6149 "dynlink.ml" 180 6140 6186
+type(
+  exn
+)
+"dynlink.ml" 180 6140 6144 "dynlink.ml" 180 6140 6186
+type(
+  Digest.t
+)
+"dynlink.ml" 179 6123 6127 "dynlink.ml" 180 6140 6186
+type(
+  Digest.t
+)
+"dynlink.ml" 162 5631 5633 "dynlink.ml" 180 6140 6186
+type(
+  Digest.t
+)
+"dynlink.ml" 161 5596 5598 "dynlink.ml" 180 6140 6186
+type(
+  Digest.t
+)
+"dynlink.ml" 155 5414 5416 "dynlink.ml" 180 6140 6186
+type(
+  Digest.t
+)
+"dynlink.ml" 185 6299 6303 "dynlink.ml" 185 6299 6317
+type(
+  string list -> string list -> unit
+)
+ident(
+  def add_interfaces "dynlink.ml" 191 6510 6510 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 185 6299 6318 "dynlink.ml" 185 6299 6323
+type(
+  string list
+)
+ident(
+  def units "dynlink.ml" 185 6299 6324 "dynlink.ml" 187 6357 6430
+)
+"dynlink.ml" 185 6299 6324 "dynlink.ml" 185 6299 6332
+type(
+  string list
+)
+ident(
+  def loadpath "dynlink.ml" 186 6335 6337 "dynlink.ml" 187 6357 6430
+)
+"dynlink.ml" 186 6335 6337 "dynlink.ml" 186 6335 6356
+type(
+  (string * Digest.t) list -> unit
+)
+ident(
+  int_ref add_available_units "dynlink.ml" 149 5195 5199 "dynlink.ml" 149 5195 5218
+)
+"dynlink.ml" 187 6357 6362 "dynlink.ml" 187 6357 6370
+type(
+  (string -> string * Digest.t) -> string list -> (string * Digest.t) list
+)
+ident(
+  ext_ref List.map
+)
+"dynlink.ml" 187 6357 6376 "dynlink.ml" 187 6357 6380
+type(
+  string
+)
+ident(
+  def unit "dynlink.ml" 187 6357 6384 "dynlink.ml" 187 6357 6422
+)
+"dynlink.ml" 187 6357 6385 "dynlink.ml" 187 6357 6389
+type(
+  string
+)
+ident(
+  int_ref unit "dynlink.ml" 187 6357 6376 "dynlink.ml" 187 6357 6380
+)
+"dynlink.ml" 187 6357 6391 "dynlink.ml" 187 6357 6407
+type(
+  string -> string list -> Digest.t
+)
+ident(
+  int_ref digest_interface "dynlink.ml" 154 5377 5381 "dynlink.ml" 154 5377 5397
+)
+"dynlink.ml" 187 6357 6408 "dynlink.ml" 187 6357 6412
+type(
+  string
+)
+ident(
+  int_ref unit "dynlink.ml" 187 6357 6376 "dynlink.ml" 187 6357 6380
+)
+"dynlink.ml" 187 6357 6413 "dynlink.ml" 187 6357 6421
+type(
+  string list
+)
+ident(
+  int_ref loadpath "dynlink.ml" 185 6299 6324 "dynlink.ml" 185 6299 6332
+)
+"dynlink.ml" 187 6357 6391 "dynlink.ml" 187 6357 6421
+call(
+  stack
+)
+type(
+  Digest.t
+)
+"dynlink.ml" 187 6357 6384 "dynlink.ml" 187 6357 6422
+type(
+  string * Digest.t
+)
+"dynlink.ml" 187 6357 6371 "dynlink.ml" 187 6357 6423
+type(
+  string -> string * Digest.t
+)
+"dynlink.ml" 187 6357 6424 "dynlink.ml" 187 6357 6429
+type(
+  string list
+)
+ident(
+  int_ref units "dynlink.ml" 185 6299 6318 "dynlink.ml" 185 6299 6323
+)
+"dynlink.ml" 187 6357 6361 "dynlink.ml" 187 6357 6430
+call(
+  stack
+)
+type(
+  (string * Digest.t) list
+)
+"dynlink.ml" 186 6335 6337 "dynlink.ml" 187 6357 6430
+call(
+  tail
+)
+type(
+  unit
+)
+"dynlink.ml" 191 6510 6514 "dynlink.ml" 191 6510 6528
+type(
+  bool ref
+)
+ident(
+  def unsafe_allowed "dynlink.ml" 193 6542 6542 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 191 6510 6531 "dynlink.ml" 191 6510 6534
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"dynlink.ml" 191 6510 6535 "dynlink.ml" 191 6510 6540
+type(
+  bool
+)
+"dynlink.ml" 191 6510 6531 "dynlink.ml" 191 6510 6540
+type(
+  bool ref
+)
+"dynlink.ml" 193 6542 6546 "dynlink.ml" 193 6542 6566
+type(
+  bool -> unit
+)
+ident(
+  def allow_unsafe_modules "dynlink.ml" 196 6594 6594 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 193 6542 6567 "dynlink.ml" 193 6542 6568
+type(
+  bool
+)
+ident(
+  def b "dynlink.ml" 194 6571 6573 "dynlink.ml" 194 6571 6592
+)
+"dynlink.ml" 194 6571 6573 "dynlink.ml" 194 6571 6587
+type(
+  bool ref
+)
+ident(
+  int_ref unsafe_allowed "dynlink.ml" 191 6510 6514 "dynlink.ml" 191 6510 6528
+)
+"dynlink.ml" 194 6571 6588 "dynlink.ml" 194 6571 6590
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"dynlink.ml" 194 6571 6591 "dynlink.ml" 194 6571 6592
+type(
+  bool
+)
+ident(
+  int_ref b "dynlink.ml" 193 6542 6567 "dynlink.ml" 193 6542 6568
+)
+"dynlink.ml" 194 6571 6573 "dynlink.ml" 194 6571 6592
+type(
+  unit
+)
+"dynlink.ml" 196 6594 6598 "dynlink.ml" 196 6594 6617
+type(
+  Cmo_format.compilation_unit -> unit
+)
+ident(
+  def check_unsafe_module "dynlink.ml" 202 6765 6765 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 196 6594 6618 "dynlink.ml" 196 6594 6620
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  def cu "dynlink.ml" 197 6623 6625 "dynlink.ml" 198 6676 6708
+)
+"dynlink.ml" 197 6623 6629 "dynlink.ml" 197 6623 6632
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"dynlink.ml" 197 6623 6633 "dynlink.ml" 197 6623 6634
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"dynlink.ml" 197 6623 6634 "dynlink.ml" 197 6623 6648
+type(
+  bool ref
+)
+ident(
+  int_ref unsafe_allowed "dynlink.ml" 191 6510 6514 "dynlink.ml" 191 6510 6528
+)
+"dynlink.ml" 197 6623 6633 "dynlink.ml" 197 6623 6648
+type(
+  bool
+)
+"dynlink.ml" 197 6623 6628 "dynlink.ml" 197 6623 6649
+type(
+  bool
+)
+"dynlink.ml" 197 6623 6650 "dynlink.ml" 197 6623 6652
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"dynlink.ml" 197 6623 6653 "dynlink.ml" 197 6623 6655
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref cu "dynlink.ml" 196 6594 6618 "dynlink.ml" 196 6594 6620
+)
+"dynlink.ml" 197 6623 6653 "dynlink.ml" 197 6623 6669
+type(
+  string list
+)
+"dynlink.ml" 197 6623 6670 "dynlink.ml" 197 6623 6672
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"dynlink.ml" 197 6623 6673 "dynlink.ml" 197 6623 6675
+type(
+  string list
+)
+"dynlink.ml" 197 6623 6653 "dynlink.ml" 197 6623 6675
+type(
+  bool
+)
+"dynlink.ml" 197 6623 6628 "dynlink.ml" 197 6623 6675
+type(
+  bool
+)
+"dynlink.ml" 198 6676 6683 "dynlink.ml" 198 6676 6688
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"dynlink.ml" 198 6676 6694 "dynlink.ml" 198 6676 6707
+type(
+  error
+)
+"dynlink.ml" 198 6676 6688 "dynlink.ml" 198 6676 6708
+type(
+  exn
+)
+"dynlink.ml" 198 6676 6683 "dynlink.ml" 198 6676 6708
+type(
+  unit
+)
+"dynlink.ml" 197 6623 6625 "dynlink.ml" 198 6676 6708
+type(
+  unit
+)
+"dynlink.ml" 205 6893 6897 "dynlink.ml" 205 6893 6910
+type(
+  in_channel -> string -> string -> Cmo_format.compilation_unit -> unit
+)
+ident(
+  def load_compunit "dynlink.ml" 246 8669 8669 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 205 6893 6911 "dynlink.ml" 205 6893 6913
+type(
+  in_channel
+)
+ident(
+  def ic "dynlink.ml" 205 6893 6914 "dynlink.ml" 244 8662 8667
+)
+"dynlink.ml" 205 6893 6914 "dynlink.ml" 205 6893 6923
+type(
+  string
+)
+ident(
+  def file_name "dynlink.ml" 205 6893 6924 "dynlink.ml" 244 8662 8667
+)
+"dynlink.ml" 205 6893 6924 "dynlink.ml" 205 6893 6935
+type(
+  string
+)
+ident(
+  def file_digest "dynlink.ml" 205 6893 6936 "dynlink.ml" 244 8662 8667
+)
+"dynlink.ml" 205 6893 6936 "dynlink.ml" 205 6893 6944
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  def compunit "dynlink.ml" 206 6947 6949 "dynlink.ml" 244 8662 8667
+)
+"dynlink.ml" 206 6947 6949 "dynlink.ml" 206 6947 6966
+type(
+  string -> Cmo_format.compilation_unit -> unit
+)
+ident(
+  int_ref check_consistency "dynlink.ml" 78 3129 3133 "dynlink.ml" 78 3129 3150
+)
+"dynlink.ml" 206 6947 6967 "dynlink.ml" 206 6947 6976
+type(
+  string
+)
+ident(
+  int_ref file_name "dynlink.ml" 205 6893 6914 "dynlink.ml" 205 6893 6923
+)
+"dynlink.ml" 206 6947 6977 "dynlink.ml" 206 6947 6985
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref compunit "dynlink.ml" 205 6893 6936 "dynlink.ml" 205 6893 6944
+)
+"dynlink.ml" 206 6947 6949 "dynlink.ml" 206 6947 6985
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 207 6987 6989 "dynlink.ml" 207 6987 7008
+type(
+  Cmo_format.compilation_unit -> unit
+)
+ident(
+  int_ref check_unsafe_module "dynlink.ml" 196 6594 6598 "dynlink.ml" 196 6594 6617
+)
+"dynlink.ml" 207 6987 7009 "dynlink.ml" 207 6987 7017
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref compunit "dynlink.ml" 205 6893 6936 "dynlink.ml" 205 6893 6944
+)
+"dynlink.ml" 207 6987 6989 "dynlink.ml" 207 6987 7017
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 208 7019 7021 "dynlink.ml" 208 7019 7028
+type(
+  in_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.seek_in
+)
+"dynlink.ml" 208 7019 7029 "dynlink.ml" 208 7019 7031
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 205 6893 6911 "dynlink.ml" 205 6893 6913
+)
+"dynlink.ml" 208 7019 7032 "dynlink.ml" 208 7019 7040
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref compunit "dynlink.ml" 205 6893 6936 "dynlink.ml" 205 6893 6944
+)
+"dynlink.ml" 208 7019 7032 "dynlink.ml" 208 7019 7047
+type(
+  int
+)
+"dynlink.ml" 208 7019 7021 "dynlink.ml" 208 7019 7047
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 209 7049 7055 "dynlink.ml" 209 7049 7064
+type(
+  int
+)
+ident(
+  def code_size "dynlink.ml" 210 7095 7097 "dynlink.ml" 244 8662 8667
+)
+"dynlink.ml" 209 7049 7067 "dynlink.ml" 209 7049 7075
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref compunit "dynlink.ml" 205 6893 6936 "dynlink.ml" 205 6893 6944
+)
+"dynlink.ml" 209 7049 7067 "dynlink.ml" 209 7049 7087
+type(
+  int
+)
+"dynlink.ml" 209 7049 7088 "dynlink.ml" 209 7049 7089
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"dynlink.ml" 209 7049 7090 "dynlink.ml" 209 7049 7091
+type(
+  int
+)
+"dynlink.ml" 209 7049 7067 "dynlink.ml" 209 7049 7091
+type(
+  int
+)
+"dynlink.ml" 210 7095 7101 "dynlink.ml" 210 7095 7105
+type(
+  bytes
+)
+ident(
+  def code "dynlink.ml" 211 7139 7141 "dynlink.ml" 244 8662 8667
+)
+"dynlink.ml" 210 7095 7108 "dynlink.ml" 210 7095 7125
+type(
+  int -> bytes
+)
+ident(
+  ext_ref Meta.static_alloc
+)
+"dynlink.ml" 210 7095 7126 "dynlink.ml" 210 7095 7135
+type(
+  int
+)
+ident(
+  int_ref code_size "dynlink.ml" 209 7049 7055 "dynlink.ml" 209 7049 7064
+)
+"dynlink.ml" 210 7095 7108 "dynlink.ml" 210 7095 7135
+type(
+  bytes
+)
+"dynlink.ml" 211 7139 7141 "dynlink.ml" 211 7139 7160
+type(
+  in_channel -> bytes -> int -> int -> unit
+)
+ident(
+  ext_ref Pervasives.unsafe_really_input
+)
+"dynlink.ml" 211 7139 7161 "dynlink.ml" 211 7139 7163
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 205 6893 6911 "dynlink.ml" 205 6893 6913
+)
+"dynlink.ml" 211 7139 7164 "dynlink.ml" 211 7139 7168
+type(
+  bytes
+)
+ident(
+  int_ref code "dynlink.ml" 210 7095 7101 "dynlink.ml" 210 7095 7105
+)
+"dynlink.ml" 211 7139 7169 "dynlink.ml" 211 7139 7170
+type(
+  int
+)
+"dynlink.ml" 211 7139 7171 "dynlink.ml" 211 7139 7179
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref compunit "dynlink.ml" 205 6893 6936 "dynlink.ml" 205 6893 6944
+)
+"dynlink.ml" 211 7139 7171 "dynlink.ml" 211 7139 7191
+type(
+  int
+)
+"dynlink.ml" 211 7139 7141 "dynlink.ml" 211 7139 7191
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 212 7193 7195 "dynlink.ml" 212 7193 7211
+type(
+  bytes -> int -> char -> unit
+)
+ident(
+  ext_ref Bytes.unsafe_set
+)
+"dynlink.ml" 212 7193 7212 "dynlink.ml" 212 7193 7216
+type(
+  bytes
+)
+ident(
+  int_ref code "dynlink.ml" 210 7095 7101 "dynlink.ml" 210 7095 7105
+)
+"dynlink.ml" 212 7193 7217 "dynlink.ml" 212 7193 7225
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref compunit "dynlink.ml" 205 6893 6936 "dynlink.ml" 205 6893 6944
+)
+"dynlink.ml" 212 7193 7217 "dynlink.ml" 212 7193 7237
+type(
+  int
+)
+"dynlink.ml" 212 7193 7239 "dynlink.ml" 212 7193 7247
+type(
+  int -> char
+)
+ident(
+  ext_ref Char.chr
+)
+"dynlink.ml" 212 7193 7248 "dynlink.ml" 212 7193 7264
+type(
+  int
+)
+ident(
+  ext_ref Opcodes.opRETURN
+)
+"dynlink.ml" 212 7193 7238 "dynlink.ml" 212 7193 7265
+call(
+  stack
+)
+type(
+  char
+)
+"dynlink.ml" 212 7193 7195 "dynlink.ml" 212 7193 7265
+type(
+  unit
+)
+"dynlink.ml" 213 7267 7269 "dynlink.ml" 213 7267 7285
+type(
+  bytes -> int -> char -> unit
+)
+ident(
+  ext_ref Bytes.unsafe_set
+)
+"dynlink.ml" 213 7267 7286 "dynlink.ml" 213 7267 7290
+type(
+  bytes
+)
+ident(
+  int_ref code "dynlink.ml" 210 7095 7101 "dynlink.ml" 210 7095 7105
+)
+"dynlink.ml" 213 7267 7292 "dynlink.ml" 213 7267 7300
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref compunit "dynlink.ml" 205 6893 6936 "dynlink.ml" 205 6893 6944
+)
+"dynlink.ml" 213 7267 7292 "dynlink.ml" 213 7267 7312
+type(
+  int
+)
+"dynlink.ml" 213 7267 7313 "dynlink.ml" 213 7267 7314
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"dynlink.ml" 213 7267 7315 "dynlink.ml" 213 7267 7316
+type(
+  int
+)
+"dynlink.ml" 213 7267 7291 "dynlink.ml" 213 7267 7317
+type(
+  int
+)
+"dynlink.ml" 213 7267 7318 "dynlink.ml" 213 7267 7324
+type(
+  char
+)
+"dynlink.ml" 213 7267 7269 "dynlink.ml" 213 7267 7324
+type(
+  unit
+)
+"dynlink.ml" 214 7326 7328 "dynlink.ml" 214 7326 7344
+type(
+  bytes -> int -> char -> unit
+)
+ident(
+  ext_ref Bytes.unsafe_set
+)
+"dynlink.ml" 214 7326 7345 "dynlink.ml" 214 7326 7349
+type(
+  bytes
+)
+ident(
+  int_ref code "dynlink.ml" 210 7095 7101 "dynlink.ml" 210 7095 7105
+)
+"dynlink.ml" 214 7326 7351 "dynlink.ml" 214 7326 7359
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref compunit "dynlink.ml" 205 6893 6936 "dynlink.ml" 205 6893 6944
+)
+"dynlink.ml" 214 7326 7351 "dynlink.ml" 214 7326 7371
+type(
+  int
+)
+"dynlink.ml" 214 7326 7372 "dynlink.ml" 214 7326 7373
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"dynlink.ml" 214 7326 7374 "dynlink.ml" 214 7326 7375
+type(
+  int
+)
+"dynlink.ml" 214 7326 7350 "dynlink.ml" 214 7326 7376
+type(
+  int
+)
+"dynlink.ml" 214 7326 7377 "dynlink.ml" 214 7326 7383
+type(
+  char
+)
+"dynlink.ml" 214 7326 7328 "dynlink.ml" 214 7326 7383
+type(
+  unit
+)
+"dynlink.ml" 215 7385 7387 "dynlink.ml" 215 7385 7403
+type(
+  bytes -> int -> char -> unit
+)
+ident(
+  ext_ref Bytes.unsafe_set
+)
+"dynlink.ml" 215 7385 7404 "dynlink.ml" 215 7385 7408
+type(
+  bytes
+)
+ident(
+  int_ref code "dynlink.ml" 210 7095 7101 "dynlink.ml" 210 7095 7105
+)
+"dynlink.ml" 215 7385 7410 "dynlink.ml" 215 7385 7418
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref compunit "dynlink.ml" 205 6893 6936 "dynlink.ml" 205 6893 6944
+)
+"dynlink.ml" 215 7385 7410 "dynlink.ml" 215 7385 7430
+type(
+  int
+)
+"dynlink.ml" 215 7385 7431 "dynlink.ml" 215 7385 7432
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"dynlink.ml" 215 7385 7433 "dynlink.ml" 215 7385 7434
+type(
+  int
+)
+"dynlink.ml" 215 7385 7409 "dynlink.ml" 215 7385 7435
+type(
+  int
+)
+"dynlink.ml" 215 7385 7436 "dynlink.ml" 215 7385 7442
+type(
+  char
+)
+"dynlink.ml" 215 7385 7387 "dynlink.ml" 215 7385 7442
+type(
+  unit
+)
+"dynlink.ml" 216 7444 7446 "dynlink.ml" 216 7444 7462
+type(
+  bytes -> int -> char -> unit
+)
+ident(
+  ext_ref Bytes.unsafe_set
+)
+"dynlink.ml" 216 7444 7463 "dynlink.ml" 216 7444 7467
+type(
+  bytes
+)
+ident(
+  int_ref code "dynlink.ml" 210 7095 7101 "dynlink.ml" 210 7095 7105
+)
+"dynlink.ml" 216 7444 7469 "dynlink.ml" 216 7444 7477
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref compunit "dynlink.ml" 205 6893 6936 "dynlink.ml" 205 6893 6944
+)
+"dynlink.ml" 216 7444 7469 "dynlink.ml" 216 7444 7489
+type(
+  int
+)
+"dynlink.ml" 216 7444 7490 "dynlink.ml" 216 7444 7491
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"dynlink.ml" 216 7444 7492 "dynlink.ml" 216 7444 7493
+type(
+  int
+)
+"dynlink.ml" 216 7444 7468 "dynlink.ml" 216 7444 7494
+type(
+  int
+)
+"dynlink.ml" 216 7444 7495 "dynlink.ml" 216 7444 7501
+type(
+  char
+)
+"dynlink.ml" 216 7444 7446 "dynlink.ml" 216 7444 7501
+type(
+  unit
+)
+"dynlink.ml" 217 7503 7505 "dynlink.ml" 217 7503 7521
+type(
+  bytes -> int -> char -> unit
+)
+ident(
+  ext_ref Bytes.unsafe_set
+)
+"dynlink.ml" 217 7503 7522 "dynlink.ml" 217 7503 7526
+type(
+  bytes
+)
+ident(
+  int_ref code "dynlink.ml" 210 7095 7101 "dynlink.ml" 210 7095 7105
+)
+"dynlink.ml" 217 7503 7528 "dynlink.ml" 217 7503 7536
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref compunit "dynlink.ml" 205 6893 6936 "dynlink.ml" 205 6893 6944
+)
+"dynlink.ml" 217 7503 7528 "dynlink.ml" 217 7503 7548
+type(
+  int
+)
+"dynlink.ml" 217 7503 7549 "dynlink.ml" 217 7503 7550
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"dynlink.ml" 217 7503 7551 "dynlink.ml" 217 7503 7552
+type(
+  int
+)
+"dynlink.ml" 217 7503 7527 "dynlink.ml" 217 7503 7553
+type(
+  int
+)
+"dynlink.ml" 217 7503 7554 "dynlink.ml" 217 7503 7560
+type(
+  char
+)
+"dynlink.ml" 217 7503 7505 "dynlink.ml" 217 7503 7560
+type(
+  unit
+)
+"dynlink.ml" 218 7562 7564 "dynlink.ml" 218 7562 7580
+type(
+  bytes -> int -> char -> unit
+)
+ident(
+  ext_ref Bytes.unsafe_set
+)
+"dynlink.ml" 218 7562 7581 "dynlink.ml" 218 7562 7585
+type(
+  bytes
+)
+ident(
+  int_ref code "dynlink.ml" 210 7095 7101 "dynlink.ml" 210 7095 7105
+)
+"dynlink.ml" 218 7562 7587 "dynlink.ml" 218 7562 7595
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref compunit "dynlink.ml" 205 6893 6936 "dynlink.ml" 205 6893 6944
+)
+"dynlink.ml" 218 7562 7587 "dynlink.ml" 218 7562 7607
+type(
+  int
+)
+"dynlink.ml" 218 7562 7608 "dynlink.ml" 218 7562 7609
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"dynlink.ml" 218 7562 7610 "dynlink.ml" 218 7562 7611
+type(
+  int
+)
+"dynlink.ml" 218 7562 7586 "dynlink.ml" 218 7562 7612
+type(
+  int
+)
+"dynlink.ml" 218 7562 7613 "dynlink.ml" 218 7562 7619
+type(
+  char
+)
+"dynlink.ml" 218 7562 7564 "dynlink.ml" 218 7562 7619
+type(
+  unit
+)
+"dynlink.ml" 219 7621 7623 "dynlink.ml" 219 7621 7639
+type(
+  bytes -> int -> char -> unit
+)
+ident(
+  ext_ref Bytes.unsafe_set
+)
+"dynlink.ml" 219 7621 7640 "dynlink.ml" 219 7621 7644
+type(
+  bytes
+)
+ident(
+  int_ref code "dynlink.ml" 210 7095 7101 "dynlink.ml" 210 7095 7105
+)
+"dynlink.ml" 219 7621 7646 "dynlink.ml" 219 7621 7654
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref compunit "dynlink.ml" 205 6893 6936 "dynlink.ml" 205 6893 6944
+)
+"dynlink.ml" 219 7621 7646 "dynlink.ml" 219 7621 7666
+type(
+  int
+)
+"dynlink.ml" 219 7621 7667 "dynlink.ml" 219 7621 7668
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"dynlink.ml" 219 7621 7669 "dynlink.ml" 219 7621 7670
+type(
+  int
+)
+"dynlink.ml" 219 7621 7645 "dynlink.ml" 219 7621 7671
+type(
+  int
+)
+"dynlink.ml" 219 7621 7672 "dynlink.ml" 219 7621 7678
+type(
+  char
+)
+"dynlink.ml" 219 7621 7623 "dynlink.ml" 219 7621 7678
+type(
+  unit
+)
+"dynlink.ml" 220 7680 7686 "dynlink.ml" 220 7680 7702
+type(
+  Symtable.global_map
+)
+ident(
+  def initial_symtable "dynlink.ml" 221 7733 7735 "dynlink.ml" 244 8662 8667
+)
+"dynlink.ml" 220 7680 7705 "dynlink.ml" 220 7680 7727
+type(
+  unit -> Symtable.global_map
+)
+ident(
+  ext_ref Symtable.current_state
+)
+"dynlink.ml" 220 7680 7727 "dynlink.ml" 220 7680 7729
+type(
+  unit
+)
+"dynlink.ml" 220 7680 7705 "dynlink.ml" 220 7680 7729
+call(
+  stack
+)
+type(
+  Symtable.global_map
+)
+"dynlink.ml" 222 7745 7749 "dynlink.ml" 222 7745 7770
+type(
+  bytes -> (Cmo_format.reloc_info * int) list -> unit
+)
+ident(
+  ext_ref Symtable.patch_object
+)
+"dynlink.ml" 222 7745 7771 "dynlink.ml" 222 7745 7775
+type(
+  bytes
+)
+ident(
+  int_ref code "dynlink.ml" 210 7095 7101 "dynlink.ml" 210 7095 7105
+)
+"dynlink.ml" 222 7745 7776 "dynlink.ml" 222 7745 7784
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref compunit "dynlink.ml" 205 6893 6936 "dynlink.ml" 205 6893 6944
+)
+"dynlink.ml" 222 7745 7776 "dynlink.ml" 222 7745 7793
+type(
+  (Cmo_format.reloc_info * int) list
+)
+"dynlink.ml" 222 7745 7749 "dynlink.ml" 222 7745 7793
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 223 7795 7799 "dynlink.ml" 223 7795 7832
+type(
+  (Cmo_format.reloc_info * int) list -> unit
+)
+ident(
+  ext_ref Symtable.check_global_initialized
+)
+"dynlink.ml" 223 7795 7833 "dynlink.ml" 223 7795 7841
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref compunit "dynlink.ml" 205 6893 6936 "dynlink.ml" 205 6893 6944
+)
+"dynlink.ml" 223 7795 7833 "dynlink.ml" 223 7795 7850
+type(
+  (Cmo_format.reloc_info * int) list
+)
+"dynlink.ml" 223 7795 7799 "dynlink.ml" 223 7795 7850
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 224 7852 7856 "dynlink.ml" 224 7852 7884
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Symtable.update_global_table
+)
+"dynlink.ml" 224 7852 7884 "dynlink.ml" 224 7852 7886
+type(
+  unit
+)
+"dynlink.ml" 224 7852 7856 "dynlink.ml" 224 7852 7886
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 223 7795 7799 "dynlink.ml" 224 7852 7886
+type(
+  unit
+)
+"dynlink.ml" 222 7745 7749 "dynlink.ml" 224 7852 7886
+type(
+  unit
+)
+"dynlink.ml" 225 7887 7909 "dynlink.ml" 225 7887 7914
+type(
+  Symtable.error
+)
+ident(
+  def error "dynlink.ml" 226 7918 7922 "dynlink.ml" 232 8182 8236
+)
+"dynlink.ml" 225 7887 7894 "dynlink.ml" 225 7887 7914
+type(
+  exn
+)
+"dynlink.ml" 226 7918 7926 "dynlink.ml" 226 7918 7935
+type(
+  linking_error
+)
+ident(
+  def new_error "dynlink.ml" 232 8182 8186 "dynlink.ml" 232 8182 8236
+)
+"dynlink.ml" 227 7938 7950 "dynlink.ml" 227 7938 7955
+type(
+  Symtable.error
+)
+ident(
+  int_ref error "dynlink.ml" 225 7887 7909 "dynlink.ml" 225 7887 7914
+)
+"dynlink.ml" 228 7961 7995 "dynlink.ml" 228 7961 7996
+type(
+  string
+)
+ident(
+  def s "dynlink.ml" 228 7961 8000 "dynlink.ml" 228 7961 8018
+)
+"dynlink.ml" 228 7961 7969 "dynlink.ml" 228 7961 7996
+type(
+  Symtable.error
+)
+"dynlink.ml" 228 7961 8017 "dynlink.ml" 228 7961 8018
+type(
+  string
+)
+ident(
+  int_ref s "dynlink.ml" 228 7961 7995 "dynlink.ml" 228 7961 7996
+)
+"dynlink.ml" 228 7961 8000 "dynlink.ml" 228 7961 8018
+type(
+  linking_error
+)
+"dynlink.ml" 229 8019 8058 "dynlink.ml" 229 8019 8059
+type(
+  string
+)
+ident(
+  def s "dynlink.ml" 229 8019 8063 "dynlink.ml" 229 8019 8086
+)
+"dynlink.ml" 229 8019 8027 "dynlink.ml" 229 8019 8059
+type(
+  Symtable.error
+)
+"dynlink.ml" 229 8019 8085 "dynlink.ml" 229 8019 8086
+type(
+  string
+)
+ident(
+  int_ref s "dynlink.ml" 229 8019 8058 "dynlink.ml" 229 8019 8059
+)
+"dynlink.ml" 229 8019 8063 "dynlink.ml" 229 8019 8086
+type(
+  linking_error
+)
+"dynlink.ml" 230 8087 8125 "dynlink.ml" 230 8087 8126
+type(
+  string
+)
+ident(
+  def s "dynlink.ml" 230 8087 8130 "dynlink.ml" 230 8087 8152
+)
+"dynlink.ml" 230 8087 8095 "dynlink.ml" 230 8087 8126
+type(
+  Symtable.error
+)
+"dynlink.ml" 230 8087 8151 "dynlink.ml" 230 8087 8152
+type(
+  string
+)
+ident(
+  int_ref s "dynlink.ml" 230 8087 8125 "dynlink.ml" 230 8087 8126
+)
+"dynlink.ml" 230 8087 8130 "dynlink.ml" 230 8087 8152
+type(
+  linking_error
+)
+"dynlink.ml" 231 8153 8161 "dynlink.ml" 231 8153 8162
+type(
+  Symtable.error
+)
+"dynlink.ml" 231 8153 8173 "dynlink.ml" 231 8153 8178
+type(
+  bool
+)
+"dynlink.ml" 231 8153 8166 "dynlink.ml" 231 8153 8178
+type(
+  linking_error
+)
+"dynlink.ml" 227 7938 7944 "dynlink.ml" 231 8153 8178
+type(
+  linking_error
+)
+"dynlink.ml" 232 8182 8186 "dynlink.ml" 232 8182 8191
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"dynlink.ml" 232 8182 8213 "dynlink.ml" 232 8182 8222
+type(
+  string
+)
+ident(
+  int_ref file_name "dynlink.ml" 205 6893 6914 "dynlink.ml" 205 6893 6923
+)
+"dynlink.ml" 232 8182 8224 "dynlink.ml" 232 8182 8233
+type(
+  linking_error
+)
+ident(
+  int_ref new_error "dynlink.ml" 226 7918 7926 "dynlink.ml" 226 7918 7935
+)
+"dynlink.ml" 232 8182 8197 "dynlink.ml" 232 8182 8235
+type(
+  error
+)
+"dynlink.ml" 232 8182 8191 "dynlink.ml" 232 8182 8236
+type(
+  exn
+)
+"dynlink.ml" 232 8182 8186 "dynlink.ml" 232 8182 8236
+type(
+  unit
+)
+"dynlink.ml" 226 7918 7922 "dynlink.ml" 232 8182 8236
+type(
+  unit
+)
+"dynlink.ml" 221 7733 7735 "dynlink.ml" 233 8237 8242
+type(
+  unit
+)
+"dynlink.ml" 237 8412 8418 "dynlink.ml" 237 8412 8424
+type(
+  Digest.t
+)
+ident(
+  def digest "dynlink.ml" 238 8477 8479 "dynlink.ml" 244 8662 8667
+)
+"dynlink.ml" 237 8412 8427 "dynlink.ml" 237 8412 8440
+type(
+  string -> Digest.t
+)
+ident(
+  ext_ref Digest.string
+)
+"dynlink.ml" 237 8412 8442 "dynlink.ml" 237 8412 8453
+type(
+  string
+)
+ident(
+  int_ref file_digest "dynlink.ml" 205 6893 6924 "dynlink.ml" 205 6893 6935
+)
+"dynlink.ml" 237 8412 8454 "dynlink.ml" 237 8412 8455
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 237 8412 8456 "dynlink.ml" 237 8412 8464
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref compunit "dynlink.ml" 205 6893 6936 "dynlink.ml" 205 6893 6944
+)
+"dynlink.ml" 237 8412 8456 "dynlink.ml" 237 8412 8472
+type(
+  string
+)
+"dynlink.ml" 237 8412 8441 "dynlink.ml" 237 8412 8473
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 237 8412 8427 "dynlink.ml" 237 8412 8473
+call(
+  stack
+)
+type(
+  Digest.t
+)
+"dynlink.ml" 238 8477 8479 "dynlink.ml" 238 8477 8501
+type(
+  bytes -> int -> Digest.t -> unit
+)
+ident(
+  int_ref register_code_fragment "dynlink.ml" 202 6765 6765 "dynlink.ml" 203 6829 6891
+)
+"dynlink.ml" 238 8477 8502 "dynlink.ml" 238 8477 8506
+type(
+  bytes
+)
+ident(
+  int_ref code "dynlink.ml" 210 7095 7101 "dynlink.ml" 210 7095 7105
+)
+"dynlink.ml" 238 8477 8507 "dynlink.ml" 238 8477 8516
+type(
+  int
+)
+ident(
+  int_ref code_size "dynlink.ml" 209 7049 7055 "dynlink.ml" 209 7049 7064
+)
+"dynlink.ml" 238 8477 8517 "dynlink.ml" 238 8477 8523
+type(
+  Digest.t
+)
+ident(
+  int_ref digest "dynlink.ml" 237 8412 8418 "dynlink.ml" 237 8412 8424
+)
+"dynlink.ml" 238 8477 8479 "dynlink.ml" 238 8477 8523
+type(
+  unit
+)
+"dynlink.ml" 240 8537 8541 "dynlink.ml" 240 8537 8547
+type(
+  Obj.t -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"dynlink.ml" 240 8537 8549 "dynlink.ml" 240 8537 8568
+type(
+  bytes -> int -> Meta.closure
+)
+ident(
+  ext_ref Meta.reify_bytecode
+)
+"dynlink.ml" 240 8537 8569 "dynlink.ml" 240 8537 8573
+type(
+  bytes
+)
+ident(
+  int_ref code "dynlink.ml" 210 7095 7101 "dynlink.ml" 210 7095 7105
+)
+"dynlink.ml" 240 8537 8574 "dynlink.ml" 240 8537 8583
+type(
+  int
+)
+ident(
+  int_ref code_size "dynlink.ml" 209 7049 7055 "dynlink.ml" 209 7049 7064
+)
+"dynlink.ml" 240 8537 8548 "dynlink.ml" 240 8537 8584
+type(
+  Meta.closure
+)
+"dynlink.ml" 240 8537 8585 "dynlink.ml" 240 8537 8587
+type(
+  unit
+)
+"dynlink.ml" 240 8537 8547 "dynlink.ml" 240 8537 8588
+call(
+  stack
+)
+type(
+  Obj.t
+)
+"dynlink.ml" 240 8537 8541 "dynlink.ml" 240 8537 8588
+type(
+  unit
+)
+"dynlink.ml" 241 8589 8596 "dynlink.ml" 241 8589 8599
+type(
+  exn
+)
+ident(
+  def exn "dynlink.ml" 242 8603 8607 "dynlink.ml" 243 8648 8661
+)
+"dynlink.ml" 242 8603 8607 "dynlink.ml" 242 8603 8629
+type(
+  Symtable.global_map -> unit
+)
+ident(
+  ext_ref Symtable.restore_state
+)
+"dynlink.ml" 242 8603 8630 "dynlink.ml" 242 8603 8646
+type(
+  Symtable.global_map
+)
+ident(
+  int_ref initial_symtable "dynlink.ml" 220 7680 7686 "dynlink.ml" 220 7680 7702
+)
+"dynlink.ml" 242 8603 8607 "dynlink.ml" 242 8603 8646
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 243 8648 8652 "dynlink.ml" 243 8648 8657
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"dynlink.ml" 243 8648 8658 "dynlink.ml" 243 8648 8661
+type(
+  exn
+)
+ident(
+  int_ref exn "dynlink.ml" 241 8589 8596 "dynlink.ml" 241 8589 8599
+)
+"dynlink.ml" 243 8648 8652 "dynlink.ml" 243 8648 8661
+type(
+  unit
+)
+"dynlink.ml" 242 8603 8607 "dynlink.ml" 243 8648 8661
+type(
+  unit
+)
+"dynlink.ml" 239 8525 8527 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 238 8477 8479 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 237 8412 8414 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 221 7733 7735 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 220 7680 7682 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 219 7621 7623 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 218 7562 7564 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 217 7503 7505 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 216 7444 7446 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 215 7385 7387 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 214 7326 7328 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 213 7267 7269 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 212 7193 7195 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 211 7139 7141 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 210 7095 7097 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 209 7049 7051 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 208 7019 7021 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 207 6987 6989 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 206 6947 6949 "dynlink.ml" 244 8662 8667
+type(
+  unit
+)
+"dynlink.ml" 246 8669 8673 "dynlink.ml" 246 8669 8681
+type(
+  string -> unit
+)
+ident(
+  def loadfile "dynlink.ml" 281 9934 9934 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 246 8669 8682 "dynlink.ml" 246 8669 8691
+type(
+  string
+)
+ident(
+  def file_name "dynlink.ml" 247 8694 8696 "dynlink.ml" 279 9906 9932
+)
+"dynlink.ml" 247 8694 8696 "dynlink.ml" 247 8694 8700
+type(
+  unit -> unit
+)
+ident(
+  int_ref init "dynlink.ml" 139 4908 4912 "dynlink.ml" 139 4908 4916
+)
+"dynlink.ml" 247 8694 8700 "dynlink.ml" 247 8694 8702
+type(
+  unit
+)
+"dynlink.ml" 247 8694 8696 "dynlink.ml" 247 8694 8702
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 248 8704 8709 "dynlink.ml" 248 8704 8712
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"dynlink.ml" 248 8704 8714 "dynlink.ml" 248 8704 8729
+type(
+  string -> bool
+)
+ident(
+  ext_ref Sys.file_exists
+)
+"dynlink.ml" 248 8704 8730 "dynlink.ml" 248 8704 8739
+type(
+  string
+)
+ident(
+  int_ref file_name "dynlink.ml" 246 8669 8682 "dynlink.ml" 246 8669 8691
+)
+"dynlink.ml" 248 8704 8713 "dynlink.ml" 248 8704 8740
+type(
+  bool
+)
+"dynlink.ml" 248 8704 8709 "dynlink.ml" 248 8704 8740
+type(
+  bool
+)
+"dynlink.ml" 249 8741 8750 "dynlink.ml" 249 8741 8755
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"dynlink.ml" 249 8741 8779 "dynlink.ml" 249 8741 8788
+type(
+  string
+)
+ident(
+  int_ref file_name "dynlink.ml" 246 8669 8682 "dynlink.ml" 246 8669 8691
+)
+"dynlink.ml" 249 8741 8763 "dynlink.ml" 249 8741 8789
+type(
+  error
+)
+"dynlink.ml" 249 8741 8756 "dynlink.ml" 249 8741 8790
+type(
+  exn
+)
+"dynlink.ml" 249 8741 8750 "dynlink.ml" 249 8741 8790
+type(
+  unit
+)
+"dynlink.ml" 248 8704 8706 "dynlink.ml" 249 8741 8790
+type(
+  unit
+)
+"dynlink.ml" 250 8792 8798 "dynlink.ml" 250 8792 8800
+type(
+  in_channel
+)
+ident(
+  def ic "dynlink.ml" 251 8828 8830 "dynlink.ml" 279 9906 9932
+)
+"dynlink.ml" 250 8792 8803 "dynlink.ml" 250 8792 8814
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in_bin
+)
+"dynlink.ml" 250 8792 8815 "dynlink.ml" 250 8792 8824
+type(
+  string
+)
+ident(
+  int_ref file_name "dynlink.ml" 246 8669 8682 "dynlink.ml" 246 8669 8691
+)
+"dynlink.ml" 250 8792 8803 "dynlink.ml" 250 8792 8824
+call(
+  stack
+)
+type(
+  in_channel
+)
+"dynlink.ml" 251 8828 8834 "dynlink.ml" 251 8828 8845
+type(
+  Digest.t
+)
+ident(
+  def file_digest "dynlink.ml" 252 8874 8876 "dynlink.ml" 279 9906 9932
+)
+"dynlink.ml" 251 8828 8848 "dynlink.ml" 251 8828 8862
+type(
+  in_channel -> int -> Digest.t
+)
+ident(
+  ext_ref Digest.channel
+)
+"dynlink.ml" 251 8828 8863 "dynlink.ml" 251 8828 8865
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 250 8792 8798 "dynlink.ml" 250 8792 8800
+)
+"dynlink.ml" 251 8828 8866 "dynlink.ml" 251 8828 8870
+type(
+  int
+)
+"dynlink.ml" 251 8828 8848 "dynlink.ml" 251 8828 8870
+type(
+  Digest.t
+)
+"dynlink.ml" 252 8874 8876 "dynlink.ml" 252 8874 8883
+type(
+  in_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.seek_in
+)
+"dynlink.ml" 252 8874 8884 "dynlink.ml" 252 8874 8886
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 250 8792 8798 "dynlink.ml" 250 8792 8800
+)
+"dynlink.ml" 252 8874 8887 "dynlink.ml" 252 8874 8888
+type(
+  int
+)
+"dynlink.ml" 252 8874 8876 "dynlink.ml" 252 8874 8888
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 254 8896 8904 "dynlink.ml" 254 8896 8910
+type(
+  string
+)
+ident(
+  def buffer "dynlink.ml" 258 9065 9069 "dynlink.ml" 277 9876 9891
+)
+"dynlink.ml" 255 8913 8923 "dynlink.ml" 255 8913 8942
+type(
+  in_channel -> int -> string
+)
+ident(
+  ext_ref Pervasives.really_input_string
+)
+"dynlink.ml" 255 8913 8943 "dynlink.ml" 255 8913 8945
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 250 8792 8798 "dynlink.ml" 250 8792 8800
+)
+"dynlink.ml" 255 8913 8947 "dynlink.ml" 255 8913 8960
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"dynlink.ml" 255 8913 8961 "dynlink.ml" 255 8913 8984
+type(
+  string
+)
+ident(
+  ext_ref Config.cmo_magic_number
+)
+"dynlink.ml" 255 8913 8946 "dynlink.ml" 255 8913 8985
+type(
+  int
+)
+"dynlink.ml" 255 8913 8923 "dynlink.ml" 255 8913 8985
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 256 8986 8997 "dynlink.ml" 256 8986 9008
+type(
+  exn
+)
+"dynlink.ml" 256 8986 9012 "dynlink.ml" 256 8986 9017
+type(
+  exn -> string
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"dynlink.ml" 256 8986 9046 "dynlink.ml" 256 8986 9055
+type(
+  string
+)
+ident(
+  int_ref file_name "dynlink.ml" 246 8669 8682 "dynlink.ml" 246 8669 8691
+)
+"dynlink.ml" 256 8986 9025 "dynlink.ml" 256 8986 9056
+type(
+  error
+)
+"dynlink.ml" 256 8986 9018 "dynlink.ml" 256 8986 9057
+type(
+  exn
+)
+"dynlink.ml" 256 8986 9012 "dynlink.ml" 256 8986 9057
+type(
+  string
+)
+"dynlink.ml" 255 8913 8919 "dynlink.ml" 256 8986 9057
+type(
+  string
+)
+"dynlink.ml" 258 9065 9072 "dynlink.ml" 258 9065 9078
+type(
+  string
+)
+ident(
+  int_ref buffer "dynlink.ml" 254 8896 8904 "dynlink.ml" 254 8896 8910
+)
+"dynlink.ml" 258 9065 9079 "dynlink.ml" 258 9065 9080
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"dynlink.ml" 258 9065 9081 "dynlink.ml" 258 9065 9104
+type(
+  string
+)
+ident(
+  ext_ref Config.cmo_magic_number
+)
+"dynlink.ml" 258 9065 9072 "dynlink.ml" 258 9065 9104
+type(
+  bool
+)
+"dynlink.ml" 259 9116 9126 "dynlink.ml" 259 9116 9138
+type(
+  int
+)
+ident(
+  def compunit_pos "dynlink.ml" 260 9188 9194 "dynlink.ml" 262 9273 9320
+)
+"dynlink.ml" 259 9116 9141 "dynlink.ml" 259 9116 9157
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"dynlink.ml" 259 9116 9158 "dynlink.ml" 259 9116 9160
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 250 8792 8798 "dynlink.ml" 250 8792 8800
+)
+"dynlink.ml" 259 9116 9141 "dynlink.ml" 259 9116 9160
+call(
+  stack
+)
+type(
+  int
+)
+"dynlink.ml" 260 9188 9194 "dynlink.ml" 260 9188 9201
+type(
+  in_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.seek_in
+)
+"dynlink.ml" 260 9188 9202 "dynlink.ml" 260 9188 9204
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 250 8792 8798 "dynlink.ml" 250 8792 8800
+)
+"dynlink.ml" 260 9188 9205 "dynlink.ml" 260 9188 9217
+type(
+  int
+)
+ident(
+  int_ref compunit_pos "dynlink.ml" 259 9116 9126 "dynlink.ml" 259 9116 9138
+)
+"dynlink.ml" 260 9188 9194 "dynlink.ml" 260 9188 9217
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 261 9219 9229 "dynlink.ml" 261 9219 9231
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  def cu "dynlink.ml" 262 9273 9279 "dynlink.ml" 262 9273 9320
+)
+"dynlink.ml" 261 9219 9235 "dynlink.ml" 261 9219 9246
+type(
+  in_channel -> Cmo_format.compilation_unit
+)
+ident(
+  ext_ref Pervasives.input_value
+)
+"dynlink.ml" 261 9219 9247 "dynlink.ml" 261 9219 9249
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 250 8792 8798 "dynlink.ml" 250 8792 8800
+)
+"dynlink.ml" 261 9219 9235 "dynlink.ml" 261 9219 9249
+call(
+  stack
+)
+type(
+  Cmo_format.compilation_unit
+)
+type(
+  Cmo_format.compilation_unit
+)
+"dynlink.ml" 262 9273 9279 "dynlink.ml" 262 9273 9292
+type(
+  in_channel -> string -> Digest.t -> Cmo_format.compilation_unit -> unit
+)
+ident(
+  int_ref load_compunit "dynlink.ml" 205 6893 6897 "dynlink.ml" 205 6893 6910
+)
+"dynlink.ml" 262 9273 9293 "dynlink.ml" 262 9273 9295
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 250 8792 8798 "dynlink.ml" 250 8792 8800
+)
+"dynlink.ml" 262 9273 9296 "dynlink.ml" 262 9273 9305
+type(
+  string
+)
+ident(
+  int_ref file_name "dynlink.ml" 246 8669 8682 "dynlink.ml" 246 8669 8691
+)
+"dynlink.ml" 262 9273 9306 "dynlink.ml" 262 9273 9317
+type(
+  Digest.t
+)
+ident(
+  int_ref file_digest "dynlink.ml" 251 8828 8834 "dynlink.ml" 251 8828 8845
+)
+"dynlink.ml" 262 9273 9318 "dynlink.ml" 262 9273 9320
+type(
+  Cmo_format.compilation_unit
+)
+ident(
+  int_ref cu "dynlink.ml" 261 9219 9229 "dynlink.ml" 261 9219 9231
+)
+"dynlink.ml" 262 9273 9279 "dynlink.ml" 262 9273 9320
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 261 9219 9225 "dynlink.ml" 262 9273 9320
+type(
+  unit
+)
+"dynlink.ml" 260 9188 9194 "dynlink.ml" 262 9273 9320
+type(
+  unit
+)
+"dynlink.ml" 258 9065 9110 "dynlink.ml" 263 9321 9328
+type(
+  unit
+)
+"dynlink.ml" 264 9334 9341 "dynlink.ml" 264 9334 9347
+type(
+  string
+)
+ident(
+  int_ref buffer "dynlink.ml" 254 8896 8904 "dynlink.ml" 254 8896 8910
+)
+"dynlink.ml" 264 9334 9348 "dynlink.ml" 264 9334 9349
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"dynlink.ml" 264 9334 9350 "dynlink.ml" 264 9334 9373
+type(
+  string
+)
+ident(
+  ext_ref Config.cma_magic_number
+)
+"dynlink.ml" 264 9334 9341 "dynlink.ml" 264 9334 9373
+type(
+  bool
+)
+"dynlink.ml" 265 9385 9395 "dynlink.ml" 265 9385 9402
+type(
+  int
+)
+ident(
+  def toc_pos "dynlink.ml" 266 9459 9465 "dynlink.ml" 274 9741 9811
+)
+"dynlink.ml" 265 9385 9405 "dynlink.ml" 265 9385 9421
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"dynlink.ml" 265 9385 9422 "dynlink.ml" 265 9385 9424
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 250 8792 8798 "dynlink.ml" 250 8792 8800
+)
+"dynlink.ml" 265 9385 9405 "dynlink.ml" 265 9385 9424
+call(
+  stack
+)
+type(
+  int
+)
+"dynlink.ml" 266 9459 9465 "dynlink.ml" 266 9459 9472
+type(
+  in_channel -> int -> unit
+)
+ident(
+  ext_ref Pervasives.seek_in
+)
+"dynlink.ml" 266 9459 9473 "dynlink.ml" 266 9459 9475
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 250 8792 8798 "dynlink.ml" 250 8792 8800
+)
+"dynlink.ml" 266 9459 9476 "dynlink.ml" 266 9459 9483
+type(
+  int
+)
+ident(
+  int_ref toc_pos "dynlink.ml" 265 9385 9395 "dynlink.ml" 265 9385 9402
+)
+"dynlink.ml" 266 9459 9465 "dynlink.ml" 266 9459 9483
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 267 9485 9495 "dynlink.ml" 267 9485 9498
+type(
+  Cmo_format.library
+)
+ident(
+  def lib "dynlink.ml" 268 9531 9537 "dynlink.ml" 274 9741 9811
+)
+"dynlink.ml" 267 9485 9502 "dynlink.ml" 267 9485 9513
+type(
+  in_channel -> Cmo_format.library
+)
+ident(
+  ext_ref Pervasives.input_value
+)
+"dynlink.ml" 267 9485 9514 "dynlink.ml" 267 9485 9516
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 250 8792 8798 "dynlink.ml" 250 8792 8800
+)
+"dynlink.ml" 267 9485 9502 "dynlink.ml" 267 9485 9516
+call(
+  stack
+)
+type(
+  Cmo_format.library
+)
+type(
+  Cmo_format.library
+)
+"dynlink.ml" 269 9547 9555 "dynlink.ml" 269 9547 9568
+type(
+  Dll.dll_mode -> string list -> unit
+)
+ident(
+  ext_ref Dll.open_dlls
+)
+"dynlink.ml" 269 9547 9569 "dynlink.ml" 269 9547 9586
+type(
+  Dll.dll_mode
+)
+"dynlink.ml" 270 9587 9610 "dynlink.ml" 270 9587 9618
+type(
+  (string -> string) -> string list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"dynlink.ml" 270 9587 9619 "dynlink.ml" 270 9587 9639
+type(
+  string -> string
+)
+ident(
+  ext_ref Dll.extract_dll_name
+)
+"dynlink.ml" 270 9587 9640 "dynlink.ml" 270 9587 9643
+type(
+  Cmo_format.library
+)
+ident(
+  int_ref lib "dynlink.ml" 267 9485 9495 "dynlink.ml" 267 9485 9498
+)
+"dynlink.ml" 270 9587 9640 "dynlink.ml" 270 9587 9654
+type(
+  string list
+)
+"dynlink.ml" 270 9587 9609 "dynlink.ml" 270 9587 9655
+call(
+  stack
+)
+type(
+  string list
+)
+"dynlink.ml" 269 9547 9555 "dynlink.ml" 270 9587 9655
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 271 9656 9675 "dynlink.ml" 271 9656 9681
+type(
+  string
+)
+ident(
+  def reason "dynlink.ml" 272 9685 9693 "dynlink.ml" 272 9685 9729
+)
+"dynlink.ml" 271 9656 9667 "dynlink.ml" 271 9656 9681
+type(
+  exn
+)
+"dynlink.ml" 272 9685 9693 "dynlink.ml" 272 9685 9698
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"dynlink.ml" 272 9685 9721 "dynlink.ml" 272 9685 9727
+type(
+  string
+)
+ident(
+  int_ref reason "dynlink.ml" 271 9656 9675 "dynlink.ml" 271 9656 9681
+)
+"dynlink.ml" 272 9685 9704 "dynlink.ml" 272 9685 9728
+type(
+  error
+)
+"dynlink.ml" 272 9685 9698 "dynlink.ml" 272 9685 9729
+type(
+  exn
+)
+"dynlink.ml" 272 9685 9693 "dynlink.ml" 272 9685 9729
+type(
+  unit
+)
+"dynlink.ml" 268 9531 9537 "dynlink.ml" 273 9730 9739
+type(
+  unit
+)
+"dynlink.ml" 274 9741 9747 "dynlink.ml" 274 9741 9756
+type(
+  (Cmo_format.compilation_unit -> unit) ->
+  Cmo_format.compilation_unit list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"dynlink.ml" 274 9741 9758 "dynlink.ml" 274 9741 9771
+type(
+  in_channel -> string -> Digest.t -> Cmo_format.compilation_unit -> unit
+)
+ident(
+  int_ref load_compunit "dynlink.ml" 205 6893 6897 "dynlink.ml" 205 6893 6910
+)
+"dynlink.ml" 274 9741 9772 "dynlink.ml" 274 9741 9774
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 250 8792 8798 "dynlink.ml" 250 8792 8800
+)
+"dynlink.ml" 274 9741 9775 "dynlink.ml" 274 9741 9784
+type(
+  string
+)
+ident(
+  int_ref file_name "dynlink.ml" 246 8669 8682 "dynlink.ml" 246 8669 8691
+)
+"dynlink.ml" 274 9741 9785 "dynlink.ml" 274 9741 9796
+type(
+  Digest.t
+)
+ident(
+  int_ref file_digest "dynlink.ml" 251 8828 8834 "dynlink.ml" 251 8828 8845
+)
+"dynlink.ml" 274 9741 9757 "dynlink.ml" 274 9741 9797
+call(
+  stack
+)
+type(
+  Cmo_format.compilation_unit -> unit
+)
+"dynlink.ml" 274 9741 9798 "dynlink.ml" 274 9741 9801
+type(
+  Cmo_format.library
+)
+ident(
+  int_ref lib "dynlink.ml" 267 9485 9495 "dynlink.ml" 267 9485 9498
+)
+"dynlink.ml" 274 9741 9798 "dynlink.ml" 274 9741 9811
+type(
+  Cmo_format.compilation_unit list
+)
+"dynlink.ml" 274 9741 9747 "dynlink.ml" 274 9741 9811
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 268 9531 9537 "dynlink.ml" 274 9741 9811
+type(
+  unit
+)
+"dynlink.ml" 267 9485 9491 "dynlink.ml" 274 9741 9811
+type(
+  unit
+)
+"dynlink.ml" 266 9459 9465 "dynlink.ml" 274 9741 9811
+type(
+  unit
+)
+"dynlink.ml" 264 9334 9379 "dynlink.ml" 275 9812 9819
+type(
+  unit
+)
+"dynlink.ml" 276 9825 9831 "dynlink.ml" 276 9825 9836
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"dynlink.ml" 276 9825 9863 "dynlink.ml" 276 9825 9872
+type(
+  string
+)
+ident(
+  int_ref file_name "dynlink.ml" 246 8669 8682 "dynlink.ml" 246 8669 8691
+)
+"dynlink.ml" 276 9825 9842 "dynlink.ml" 276 9825 9873
+type(
+  error
+)
+"dynlink.ml" 276 9825 9836 "dynlink.ml" 276 9825 9874
+type(
+  exn
+)
+"dynlink.ml" 276 9825 9831 "dynlink.ml" 276 9825 9874
+type(
+  unit
+)
+"dynlink.ml" 264 9334 9338 "dynlink.ml" 276 9825 9874
+type(
+  unit
+)
+"dynlink.ml" 258 9065 9069 "dynlink.ml" 276 9825 9874
+type(
+  unit
+)
+"dynlink.ml" 277 9876 9880 "dynlink.ml" 277 9876 9888
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in
+)
+"dynlink.ml" 277 9876 9889 "dynlink.ml" 277 9876 9891
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 250 8792 8798 "dynlink.ml" 250 8792 8800
+)
+"dynlink.ml" 277 9876 9880 "dynlink.ml" 277 9876 9891
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 258 9065 9069 "dynlink.ml" 277 9876 9891
+type(
+  unit
+)
+"dynlink.ml" 254 8896 8900 "dynlink.ml" 277 9876 9891
+type(
+  unit
+)
+"dynlink.ml" 278 9892 9899 "dynlink.ml" 278 9892 9902
+type(
+  exn
+)
+ident(
+  def exc "dynlink.ml" 279 9906 9910 "dynlink.ml" 279 9906 9932
+)
+"dynlink.ml" 279 9906 9910 "dynlink.ml" 279 9906 9918
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in
+)
+"dynlink.ml" 279 9906 9919 "dynlink.ml" 279 9906 9921
+type(
+  in_channel
+)
+ident(
+  int_ref ic "dynlink.ml" 250 8792 8798 "dynlink.ml" 250 8792 8800
+)
+"dynlink.ml" 279 9906 9910 "dynlink.ml" 279 9906 9921
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 279 9906 9923 "dynlink.ml" 279 9906 9928
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"dynlink.ml" 279 9906 9929 "dynlink.ml" 279 9906 9932
+type(
+  exn
+)
+ident(
+  int_ref exc "dynlink.ml" 278 9892 9899 "dynlink.ml" 278 9892 9902
+)
+"dynlink.ml" 279 9906 9923 "dynlink.ml" 279 9906 9932
+type(
+  unit
+)
+"dynlink.ml" 279 9906 9910 "dynlink.ml" 279 9906 9932
+type(
+  unit
+)
+"dynlink.ml" 253 8890 8892 "dynlink.ml" 279 9906 9932
+type(
+  unit
+)
+"dynlink.ml" 252 8874 8876 "dynlink.ml" 279 9906 9932
+type(
+  unit
+)
+"dynlink.ml" 251 8828 8830 "dynlink.ml" 279 9906 9932
+type(
+  unit
+)
+"dynlink.ml" 250 8792 8794 "dynlink.ml" 279 9906 9932
+type(
+  unit
+)
+"dynlink.ml" 248 8704 8706 "dynlink.ml" 279 9906 9932
+type(
+  unit
+)
+"dynlink.ml" 247 8694 8696 "dynlink.ml" 279 9906 9932
+type(
+  unit
+)
+"dynlink.ml" 281 9934 9938 "dynlink.ml" 281 9934 9954
+type(
+  string -> unit
+)
+ident(
+  def loadfile_private "dynlink.ml" 296 10306 10306 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 281 9934 9955 "dynlink.ml" 281 9934 9964
+type(
+  string
+)
+ident(
+  def file_name "dynlink.ml" 282 9967 9969 "dynlink.ml" 292 10271 10284
+)
+"dynlink.ml" 282 9967 9969 "dynlink.ml" 282 9967 9973
+type(
+  unit -> unit
+)
+ident(
+  int_ref init "dynlink.ml" 139 4908 4912 "dynlink.ml" 139 4908 4916
+)
+"dynlink.ml" 282 9967 9973 "dynlink.ml" 282 9967 9975
+type(
+  unit
+)
+"dynlink.ml" 282 9967 9969 "dynlink.ml" 282 9967 9975
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 283 9977 9983 "dynlink.ml" 283 9977 9999
+type(
+  Symtable.global_map
+)
+ident(
+  def initial_symtable "dynlink.ml" 285 10066 10068 "dynlink.ml" 292 10271 10284
+)
+"dynlink.ml" 283 9977 10002 "dynlink.ml" 283 9977 10024
+type(
+  unit -> Symtable.global_map
+)
+ident(
+  ext_ref Symtable.current_state
+)
+"dynlink.ml" 283 9977 10024 "dynlink.ml" 283 9977 10026
+type(
+  unit
+)
+"dynlink.ml" 283 9977 10002 "dynlink.ml" 283 9977 10026
+call(
+  stack
+)
+type(
+  Symtable.global_map
+)
+"dynlink.ml" 284 10027 10033 "dynlink.ml" 284 10027 10044
+type(
+  Consistbl.t
+)
+ident(
+  def initial_crc "dynlink.ml" 285 10066 10068 "dynlink.ml" 292 10271 10284
+)
+"dynlink.ml" 284 10027 10047 "dynlink.ml" 284 10027 10048
+type(
+  Consistbl.t ref -> Consistbl.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"dynlink.ml" 284 10027 10048 "dynlink.ml" 284 10027 10062
+type(
+  Consistbl.t ref
+)
+ident(
+  int_ref crc_interfaces "dynlink.ml" 71 2854 2858 "dynlink.ml" 71 2854 2872
+)
+"dynlink.ml" 284 10027 10047 "dynlink.ml" 284 10027 10062
+type(
+  Consistbl.t
+)
+"dynlink.ml" 286 10072 10076 "dynlink.ml" 286 10072 10084
+type(
+  string -> unit
+)
+ident(
+  int_ref loadfile "dynlink.ml" 246 8669 8673 "dynlink.ml" 246 8669 8681
+)
+"dynlink.ml" 286 10072 10085 "dynlink.ml" 286 10072 10094
+type(
+  string
+)
+ident(
+  int_ref file_name "dynlink.ml" 281 9934 9955 "dynlink.ml" 281 9934 9964
+)
+"dynlink.ml" 286 10072 10076 "dynlink.ml" 286 10072 10094
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 287 10096 10100 "dynlink.ml" 287 10096 10123
+type(
+  Symtable.global_map -> unit
+)
+ident(
+  ext_ref Symtable.hide_additions
+)
+"dynlink.ml" 287 10096 10124 "dynlink.ml" 287 10096 10140
+type(
+  Symtable.global_map
+)
+ident(
+  int_ref initial_symtable "dynlink.ml" 283 9977 9983 "dynlink.ml" 283 9977 9999
+)
+"dynlink.ml" 287 10096 10100 "dynlink.ml" 287 10096 10140
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 288 10142 10146 "dynlink.ml" 288 10142 10160
+type(
+  Consistbl.t ref
+)
+ident(
+  int_ref crc_interfaces "dynlink.ml" 71 2854 2858 "dynlink.ml" 71 2854 2872
+)
+"dynlink.ml" 288 10142 10161 "dynlink.ml" 288 10142 10163
+type(
+  Consistbl.t ref -> Consistbl.t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"dynlink.ml" 288 10142 10164 "dynlink.ml" 288 10142 10175
+type(
+  Consistbl.t
+)
+ident(
+  int_ref initial_crc "dynlink.ml" 284 10027 10033 "dynlink.ml" 284 10027 10044
+)
+"dynlink.ml" 288 10142 10146 "dynlink.ml" 288 10142 10175
+type(
+  unit
+)
+"dynlink.ml" 287 10096 10100 "dynlink.ml" 288 10142 10175
+type(
+  unit
+)
+"dynlink.ml" 286 10072 10076 "dynlink.ml" 288 10142 10175
+type(
+  unit
+)
+"dynlink.ml" 289 10176 10183 "dynlink.ml" 289 10176 10186
+type(
+  exn
+)
+ident(
+  def exn "dynlink.ml" 290 10190 10194 "dynlink.ml" 292 10271 10284
+)
+"dynlink.ml" 290 10190 10194 "dynlink.ml" 290 10190 10217
+type(
+  Symtable.global_map -> unit
+)
+ident(
+  ext_ref Symtable.hide_additions
+)
+"dynlink.ml" 290 10190 10218 "dynlink.ml" 290 10190 10234
+type(
+  Symtable.global_map
+)
+ident(
+  int_ref initial_symtable "dynlink.ml" 283 9977 9983 "dynlink.ml" 283 9977 9999
+)
+"dynlink.ml" 290 10190 10194 "dynlink.ml" 290 10190 10234
+call(
+  stack
+)
+type(
+  unit
+)
+"dynlink.ml" 291 10236 10240 "dynlink.ml" 291 10236 10254
+type(
+  Consistbl.t ref
+)
+ident(
+  int_ref crc_interfaces "dynlink.ml" 71 2854 2858 "dynlink.ml" 71 2854 2872
+)
+"dynlink.ml" 291 10236 10255 "dynlink.ml" 291 10236 10257
+type(
+  Consistbl.t ref -> Consistbl.t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"dynlink.ml" 291 10236 10258 "dynlink.ml" 291 10236 10269
+type(
+  Consistbl.t
+)
+ident(
+  int_ref initial_crc "dynlink.ml" 284 10027 10033 "dynlink.ml" 284 10027 10044
+)
+"dynlink.ml" 291 10236 10240 "dynlink.ml" 291 10236 10269
+type(
+  unit
+)
+"dynlink.ml" 292 10271 10275 "dynlink.ml" 292 10271 10280
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"dynlink.ml" 292 10271 10281 "dynlink.ml" 292 10271 10284
+type(
+  exn
+)
+ident(
+  int_ref exn "dynlink.ml" 289 10176 10183 "dynlink.ml" 289 10176 10186
+)
+"dynlink.ml" 292 10271 10275 "dynlink.ml" 292 10271 10284
+type(
+  unit
+)
+"dynlink.ml" 291 10236 10240 "dynlink.ml" 292 10271 10284
+type(
+  unit
+)
+"dynlink.ml" 290 10190 10194 "dynlink.ml" 292 10271 10284
+type(
+  unit
+)
+"dynlink.ml" 285 10066 10068 "dynlink.ml" 292 10271 10284
+type(
+  unit
+)
+"dynlink.ml" 283 9977 9979 "dynlink.ml" 292 10271 10284
+type(
+  unit
+)
+"dynlink.ml" 282 9967 9969 "dynlink.ml" 292 10271 10284
+type(
+  unit
+)
+"dynlink.ml" 296 10306 10310 "dynlink.ml" 296 10306 10323
+type(
+  error -> string
+)
+ident(
+  def error_message "dynlink.ml" 323 11394 11394 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 297 10335 10359 "dynlink.ml" 297 10335 10363
+type(
+  string
+)
+ident(
+  def name "dynlink.ml" 298 10367 10373 "dynlink.ml" 298 10367 10412
+)
+"dynlink.ml" 297 10335 10339 "dynlink.ml" 297 10335 10363
+type(
+  error
+)
+"dynlink.ml" 298 10367 10373 "dynlink.ml" 298 10367 10377
+type(
+  string
+)
+ident(
+  int_ref name "dynlink.ml" 297 10335 10359 "dynlink.ml" 297 10335 10363
+)
+"dynlink.ml" 298 10367 10378 "dynlink.ml" 298 10367 10379
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 298 10367 10380 "dynlink.ml" 298 10367 10412
+type(
+  string
+)
+"dynlink.ml" 298 10367 10373 "dynlink.ml" 298 10367 10412
+call(
+  tail
+)
+type(
+  string
+)
+"dynlink.ml" 299 10413 10437 "dynlink.ml" 299 10413 10441
+type(
+  string
+)
+ident(
+  def name "dynlink.ml" 300 10445 10451 "dynlink.ml" 300 10445 10482
+)
+"dynlink.ml" 299 10413 10417 "dynlink.ml" 299 10413 10441
+type(
+  error
+)
+"dynlink.ml" 300 10445 10451 "dynlink.ml" 300 10445 10475
+type(
+  string
+)
+"dynlink.ml" 300 10445 10476 "dynlink.ml" 300 10445 10477
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 300 10445 10478 "dynlink.ml" 300 10445 10482
+type(
+  string
+)
+ident(
+  int_ref name "dynlink.ml" 299 10413 10437 "dynlink.ml" 299 10413 10441
+)
+"dynlink.ml" 300 10445 10451 "dynlink.ml" 300 10445 10482
+call(
+  tail
+)
+type(
+  string
+)
+"dynlink.ml" 301 10483 10504 "dynlink.ml" 301 10483 10508
+type(
+  string
+)
+ident(
+  def name "dynlink.ml" 302 10512 10518 "dynlink.ml" 302 10512 10559
+)
+"dynlink.ml" 301 10483 10487 "dynlink.ml" 301 10483 10508
+type(
+  error
+)
+"dynlink.ml" 302 10512 10518 "dynlink.ml" 302 10512 10552
+type(
+  string
+)
+"dynlink.ml" 302 10512 10553 "dynlink.ml" 302 10512 10554
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 302 10512 10555 "dynlink.ml" 302 10512 10559
+type(
+  string
+)
+ident(
+  int_ref name "dynlink.ml" 301 10483 10504 "dynlink.ml" 301 10483 10508
+)
+"dynlink.ml" 302 10512 10518 "dynlink.ml" 302 10512 10559
+call(
+  tail
+)
+type(
+  string
+)
+"dynlink.ml" 303 10560 10564 "dynlink.ml" 303 10560 10575
+type(
+  error
+)
+"dynlink.ml" 304 10579 10585 "dynlink.ml" 304 10579 10624
+type(
+  string
+)
+"dynlink.ml" 305 10625 10644 "dynlink.ml" 305 10625 10648
+type(
+  string
+)
+ident(
+  def name "dynlink.ml" 306 10673 10679 "dynlink.ml" 307 10719 10768
+)
+"dynlink.ml" 305 10625 10667 "dynlink.ml" 305 10625 10668
+type(
+  string
+)
+ident(
+  def s "dynlink.ml" 306 10673 10679 "dynlink.ml" 307 10719 10768
+)
+"dynlink.ml" 305 10625 10650 "dynlink.ml" 305 10625 10668
+type(
+  linking_error
+)
+"dynlink.ml" 305 10625 10629 "dynlink.ml" 305 10625 10669
+type(
+  error
+)
+"dynlink.ml" 306 10673 10679 "dynlink.ml" 306 10673 10701
+type(
+  string
+)
+"dynlink.ml" 306 10673 10702 "dynlink.ml" 306 10673 10703
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 306 10673 10704 "dynlink.ml" 306 10673 10708
+type(
+  string
+)
+ident(
+  int_ref name "dynlink.ml" 305 10625 10644 "dynlink.ml" 305 10625 10648
+)
+"dynlink.ml" 306 10673 10709 "dynlink.ml" 306 10673 10710
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 306 10673 10711 "dynlink.ml" 306 10673 10716
+type(
+  string
+)
+"dynlink.ml" 306 10673 10717 "dynlink.ml" 306 10673 10718
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 307 10719 10725 "dynlink.ml" 307 10719 10758
+type(
+  string
+)
+"dynlink.ml" 307 10719 10759 "dynlink.ml" 307 10719 10760
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 307 10719 10761 "dynlink.ml" 307 10719 10762
+type(
+  string
+)
+ident(
+  int_ref s "dynlink.ml" 305 10625 10667 "dynlink.ml" 305 10625 10668
+)
+"dynlink.ml" 307 10719 10763 "dynlink.ml" 307 10719 10764
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 307 10719 10765 "dynlink.ml" 307 10719 10768
+type(
+  string
+)
+"dynlink.ml" 307 10719 10761 "dynlink.ml" 307 10719 10768
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 307 10719 10725 "dynlink.ml" 307 10719 10768
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 306 10673 10711 "dynlink.ml" 307 10719 10768
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 306 10673 10704 "dynlink.ml" 307 10719 10768
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 306 10673 10679 "dynlink.ml" 307 10719 10768
+call(
+  tail
+)
+type(
+  string
+)
+"dynlink.ml" 308 10769 10788 "dynlink.ml" 308 10769 10792
+type(
+  string
+)
+ident(
+  def name "dynlink.ml" 309 10822 10828 "dynlink.ml" 310 10868 10926
+)
+"dynlink.ml" 308 10769 10816 "dynlink.ml" 308 10769 10817
+type(
+  string
+)
+ident(
+  def s "dynlink.ml" 309 10822 10828 "dynlink.ml" 310 10868 10926
+)
+"dynlink.ml" 308 10769 10794 "dynlink.ml" 308 10769 10817
+type(
+  linking_error
+)
+"dynlink.ml" 308 10769 10773 "dynlink.ml" 308 10769 10818
+type(
+  error
+)
+"dynlink.ml" 309 10822 10828 "dynlink.ml" 309 10822 10850
+type(
+  string
+)
+"dynlink.ml" 309 10822 10851 "dynlink.ml" 309 10822 10852
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 309 10822 10853 "dynlink.ml" 309 10822 10857
+type(
+  string
+)
+ident(
+  int_ref name "dynlink.ml" 308 10769 10788 "dynlink.ml" 308 10769 10792
+)
+"dynlink.ml" 309 10822 10858 "dynlink.ml" 309 10822 10859
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 309 10822 10860 "dynlink.ml" 309 10822 10865
+type(
+  string
+)
+"dynlink.ml" 309 10822 10866 "dynlink.ml" 309 10822 10867
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 310 10868 10874 "dynlink.ml" 310 10868 10899
+type(
+  string
+)
+"dynlink.ml" 310 10868 10900 "dynlink.ml" 310 10868 10901
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 310 10868 10902 "dynlink.ml" 310 10868 10903
+type(
+  string
+)
+ident(
+  int_ref s "dynlink.ml" 308 10769 10816 "dynlink.ml" 308 10769 10817
+)
+"dynlink.ml" 310 10868 10904 "dynlink.ml" 310 10868 10905
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 310 10868 10906 "dynlink.ml" 310 10868 10926
+type(
+  string
+)
+"dynlink.ml" 310 10868 10902 "dynlink.ml" 310 10868 10926
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 310 10868 10874 "dynlink.ml" 310 10868 10926
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 309 10822 10860 "dynlink.ml" 310 10868 10926
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 309 10822 10853 "dynlink.ml" 310 10868 10926
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 309 10822 10828 "dynlink.ml" 310 10868 10926
+call(
+  tail
+)
+type(
+  string
+)
+"dynlink.ml" 311 10927 10946 "dynlink.ml" 311 10927 10950
+type(
+  string
+)
+ident(
+  def name "dynlink.ml" 312 10979 10985 "dynlink.ml" 313 11025 11078
+)
+"dynlink.ml" 311 10927 10973 "dynlink.ml" 311 10927 10974
+type(
+  string
+)
+ident(
+  def s "dynlink.ml" 312 10979 10985 "dynlink.ml" 313 11025 11078
+)
+"dynlink.ml" 311 10927 10952 "dynlink.ml" 311 10927 10974
+type(
+  linking_error
+)
+"dynlink.ml" 311 10927 10931 "dynlink.ml" 311 10927 10975
+type(
+  error
+)
+"dynlink.ml" 312 10979 10985 "dynlink.ml" 312 10979 11007
+type(
+  string
+)
+"dynlink.ml" 312 10979 11008 "dynlink.ml" 312 10979 11009
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 312 10979 11010 "dynlink.ml" 312 10979 11014
+type(
+  string
+)
+ident(
+  int_ref name "dynlink.ml" 311 10927 10946 "dynlink.ml" 311 10927 10950
+)
+"dynlink.ml" 312 10979 11015 "dynlink.ml" 312 10979 11016
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 312 10979 11017 "dynlink.ml" 312 10979 11022
+type(
+  string
+)
+"dynlink.ml" 312 10979 11023 "dynlink.ml" 312 10979 11024
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 313 11025 11031 "dynlink.ml" 313 11025 11045
+type(
+  string
+)
+"dynlink.ml" 313 11025 11046 "dynlink.ml" 313 11025 11047
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 313 11025 11048 "dynlink.ml" 313 11025 11049
+type(
+  string
+)
+ident(
+  int_ref s "dynlink.ml" 311 10927 10973 "dynlink.ml" 311 10927 10974
+)
+"dynlink.ml" 313 11025 11050 "dynlink.ml" 313 11025 11051
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 313 11025 11052 "dynlink.ml" 313 11025 11078
+type(
+  string
+)
+"dynlink.ml" 313 11025 11048 "dynlink.ml" 313 11025 11078
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 313 11025 11031 "dynlink.ml" 313 11025 11078
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 312 10979 11017 "dynlink.ml" 313 11025 11078
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 312 10979 11010 "dynlink.ml" 313 11025 11078
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 312 10979 10985 "dynlink.ml" 313 11025 11078
+call(
+  tail
+)
+type(
+  string
+)
+"dynlink.ml" 314 11079 11103 "dynlink.ml" 314 11079 11107
+type(
+  string
+)
+ident(
+  def name "dynlink.ml" 315 11111 11117 "dynlink.ml" 315 11111 11151
+)
+"dynlink.ml" 314 11079 11083 "dynlink.ml" 314 11079 11107
+type(
+  error
+)
+"dynlink.ml" 315 11111 11117 "dynlink.ml" 315 11111 11144
+type(
+  string
+)
+"dynlink.ml" 315 11111 11145 "dynlink.ml" 315 11111 11146
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 315 11111 11147 "dynlink.ml" 315 11111 11151
+type(
+  string
+)
+ident(
+  int_ref name "dynlink.ml" 314 11079 11103 "dynlink.ml" 314 11079 11107
+)
+"dynlink.ml" 315 11111 11117 "dynlink.ml" 315 11111 11151
+call(
+  tail
+)
+type(
+  string
+)
+"dynlink.ml" 316 11152 11171 "dynlink.ml" 316 11152 11175
+type(
+  string
+)
+ident(
+  def name "dynlink.ml" 317 11179 11185 "dynlink.ml" 317 11179 11231
+)
+"dynlink.ml" 316 11152 11156 "dynlink.ml" 316 11152 11175
+type(
+  error
+)
+"dynlink.ml" 317 11179 11185 "dynlink.ml" 317 11179 11204
+type(
+  string
+)
+"dynlink.ml" 317 11179 11205 "dynlink.ml" 317 11179 11206
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 317 11179 11207 "dynlink.ml" 317 11179 11211
+type(
+  string
+)
+ident(
+  int_ref name "dynlink.ml" 316 11152 11171 "dynlink.ml" 316 11152 11175
+)
+"dynlink.ml" 317 11179 11212 "dynlink.ml" 317 11179 11213
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 317 11179 11214 "dynlink.ml" 317 11179 11231
+type(
+  string
+)
+"dynlink.ml" 317 11179 11207 "dynlink.ml" 317 11179 11231
+call(
+  stack
+)
+type(
+  string
+)
+"dynlink.ml" 317 11179 11185 "dynlink.ml" 317 11179 11231
+call(
+  tail
+)
+type(
+  string
+)
+"dynlink.ml" 318 11232 11252 "dynlink.ml" 318 11232 11258
+type(
+  string
+)
+ident(
+  def reason "dynlink.ml" 319 11262 11268 "dynlink.ml" 319 11262 11309
+)
+"dynlink.ml" 318 11232 11236 "dynlink.ml" 318 11232 11258
+type(
+  error
+)
+"dynlink.ml" 319 11262 11268 "dynlink.ml" 319 11262 11300
+type(
+  string
+)
+"dynlink.ml" 319 11262 11301 "dynlink.ml" 319 11262 11302
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 319 11262 11303 "dynlink.ml" 319 11262 11309
+type(
+  string
+)
+ident(
+  int_ref reason "dynlink.ml" 318 11232 11252 "dynlink.ml" 318 11232 11258
+)
+"dynlink.ml" 319 11262 11268 "dynlink.ml" 319 11262 11309
+call(
+  tail
+)
+type(
+  string
+)
+"dynlink.ml" 320 11310 11342 "dynlink.ml" 320 11310 11346
+type(
+  string
+)
+ident(
+  def name "dynlink.ml" 321 11350 11356 "dynlink.ml" 321 11350 11392
+)
+"dynlink.ml" 320 11310 11314 "dynlink.ml" 320 11310 11346
+type(
+  error
+)
+"dynlink.ml" 321 11350 11356 "dynlink.ml" 321 11350 11385
+type(
+  string
+)
+"dynlink.ml" 321 11350 11386 "dynlink.ml" 321 11350 11387
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"dynlink.ml" 321 11350 11388 "dynlink.ml" 321 11350 11392
+type(
+  string
+)
+ident(
+  int_ref name "dynlink.ml" 320 11310 11342 "dynlink.ml" 320 11310 11346
+)
+"dynlink.ml" 321 11350 11356 "dynlink.ml" 321 11350 11392
+call(
+  tail
+)
+type(
+  string
+)
+"dynlink.ml" 296 10306 10326 "dynlink.ml" 321 11350 11392
+type(
+  error -> string
+)
+"dynlink.ml" 323 11394 11398 "dynlink.ml" 323 11394 11407
+type(
+  bool
+)
+ident(
+  def is_native "dynlink.ml" 324 11416 11416 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 323 11394 11410 "dynlink.ml" 323 11394 11415
+type(
+  bool
+)
+"dynlink.ml" 324 11416 11420 "dynlink.ml" 324 11416 11434
+type(
+  'a -> 'a
+)
+ident(
+  def adapt_filename "dynlink.ml" 324 11416 11440 "dynlink.ml" 1 0 -1
+)
+"dynlink.ml" 324 11416 11435 "dynlink.ml" 324 11416 11436
+type(
+  'a
+)
+ident(
+  def f "dynlink.ml" 324 11416 11439 "dynlink.ml" 324 11416 11440
+)
+"dynlink.ml" 324 11416 11439 "dynlink.ml" 324 11416 11440
+type(
+  'a
+)
+ident(
+  int_ref f "dynlink.ml" 324 11416 11435 "dynlink.ml" 324 11416 11436
+)

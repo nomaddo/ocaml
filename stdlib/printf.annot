@@ -1,0 +1,928 @@
+"printf.ml" 17 944 948 "printf.ml" 17 944 956
+type(
+  (out_channel -> 'a) ->
+  out_channel ->
+  ('b, out_channel, unit, unit, unit, 'a) CamlinternalFormatBasics.format6 ->
+  'b
+)
+ident(
+  def kfprintf "printf.ml" 19 1049 1049 "printf.ml" 1 0 -1
+)
+"printf.ml" 17 944 957 "printf.ml" 17 944 958
+type(
+  out_channel -> 'a
+)
+ident(
+  def k "printf.ml" 17 944 959 "printf.ml" 18 981 1048
+)
+"printf.ml" 17 944 959 "printf.ml" 17 944 960
+type(
+  out_channel
+)
+ident(
+  def o "printf.ml" 17 944 961 "printf.ml" 18 981 1048
+)
+"printf.ml" 17 944 970 "printf.ml" 17 944 973
+type(
+  ('b, out_channel, unit, unit, unit, 'a) CamlinternalFormatBasics.fmt
+)
+ident(
+  def fmt "printf.ml" 18 981 983 "printf.ml" 18 981 1048
+)
+"printf.ml" 17 944 975 "printf.ml" 17 944 976
+type(
+  string
+)
+"printf.ml" 17 944 961 "printf.ml" 17 944 978
+type(
+  ('b, out_channel, unit, unit, unit, 'a) CamlinternalFormatBasics.format6
+)
+"printf.ml" 18 981 983 "printf.ml" 18 981 994
+type(
+  (out_channel -> (out_channel, unit) CamlinternalFormat.acc -> 'a) ->
+  out_channel ->
+  (out_channel, unit) CamlinternalFormat.acc ->
+  ('b, out_channel, unit, unit, unit, 'a) CamlinternalFormatBasics.fmt -> 'b
+)
+ident(
+  ext_ref CamlinternalFormat.make_printf
+)
+"printf.ml" 18 981 1000 "printf.ml" 18 981 1001
+type(
+  out_channel
+)
+ident(
+  def o "printf.ml" 18 981 1002 "printf.ml" 18 981 1030
+)
+"printf.ml" 18 981 1002 "printf.ml" 18 981 1005
+type(
+  (out_channel, unit) CamlinternalFormat.acc
+)
+ident(
+  def acc "printf.ml" 18 981 1009 "printf.ml" 18 981 1030
+)
+"printf.ml" 18 981 1009 "printf.ml" 18 981 1019
+type(
+  out_channel -> (out_channel, unit) CamlinternalFormat.acc -> unit
+)
+ident(
+  ext_ref CamlinternalFormat.output_acc
+)
+"printf.ml" 18 981 1020 "printf.ml" 18 981 1021
+type(
+  out_channel
+)
+ident(
+  int_ref o "printf.ml" 18 981 1000 "printf.ml" 18 981 1001
+)
+"printf.ml" 18 981 1022 "printf.ml" 18 981 1025
+type(
+  (out_channel, unit) CamlinternalFormat.acc
+)
+ident(
+  int_ref acc "printf.ml" 18 981 1002 "printf.ml" 18 981 1005
+)
+"printf.ml" 18 981 1009 "printf.ml" 18 981 1025
+call(
+  stack
+)
+type(
+  unit
+)
+"printf.ml" 18 981 1027 "printf.ml" 18 981 1028
+type(
+  out_channel -> 'a
+)
+ident(
+  int_ref k "printf.ml" 17 944 957 "printf.ml" 17 944 958
+)
+"printf.ml" 18 981 1029 "printf.ml" 18 981 1030
+type(
+  out_channel
+)
+ident(
+  int_ref o "printf.ml" 18 981 1000 "printf.ml" 18 981 1001
+)
+"printf.ml" 18 981 1027 "printf.ml" 18 981 1030
+call(
+  tail
+)
+type(
+  'a
+)
+"printf.ml" 18 981 1009 "printf.ml" 18 981 1030
+type(
+  'a
+)
+"printf.ml" 18 981 995 "printf.ml" 18 981 1031
+type(
+  out_channel -> (out_channel, unit) CamlinternalFormat.acc -> 'a
+)
+"printf.ml" 18 981 1032 "printf.ml" 18 981 1033
+type(
+  out_channel
+)
+ident(
+  int_ref o "printf.ml" 17 944 959 "printf.ml" 17 944 960
+)
+"printf.ml" 18 981 1034 "printf.ml" 18 981 1044
+type(
+  (out_channel, unit) CamlinternalFormat.acc
+)
+"printf.ml" 18 981 1045 "printf.ml" 18 981 1048
+type(
+  ('b, out_channel, unit, unit, unit, 'a) CamlinternalFormatBasics.fmt
+)
+ident(
+  int_ref fmt "printf.ml" 17 944 970 "printf.ml" 17 944 973
+)
+"printf.ml" 18 981 983 "printf.ml" 18 981 1048
+call(
+  tail
+)
+type(
+  'b
+)
+"printf.ml" 19 1049 1053 "printf.ml" 19 1049 1061
+type(
+  (Buffer.t -> 'a) ->
+  Buffer.t ->
+  ('b, Buffer.t, unit, unit, unit, 'a) CamlinternalFormatBasics.format6 -> 'b
+)
+ident(
+  def kbprintf "printf.ml" 21 1154 1154 "printf.ml" 1 0 -1
+)
+"printf.ml" 19 1049 1062 "printf.ml" 19 1049 1063
+type(
+  Buffer.t -> 'a
+)
+ident(
+  def k "printf.ml" 19 1049 1064 "printf.ml" 20 1086 1153
+)
+"printf.ml" 19 1049 1064 "printf.ml" 19 1049 1065
+type(
+  Buffer.t
+)
+ident(
+  def b "printf.ml" 19 1049 1066 "printf.ml" 20 1086 1153
+)
+"printf.ml" 19 1049 1075 "printf.ml" 19 1049 1078
+type(
+  ('b, Buffer.t, unit, unit, unit, 'a) CamlinternalFormatBasics.fmt
+)
+ident(
+  def fmt "printf.ml" 20 1086 1088 "printf.ml" 20 1086 1153
+)
+"printf.ml" 19 1049 1080 "printf.ml" 19 1049 1081
+type(
+  string
+)
+"printf.ml" 19 1049 1066 "printf.ml" 19 1049 1083
+type(
+  ('b, Buffer.t, unit, unit, unit, 'a) CamlinternalFormatBasics.format6
+)
+"printf.ml" 20 1086 1088 "printf.ml" 20 1086 1099
+type(
+  (Buffer.t -> (Buffer.t, unit) CamlinternalFormat.acc -> 'a) ->
+  Buffer.t ->
+  (Buffer.t, unit) CamlinternalFormat.acc ->
+  ('b, Buffer.t, unit, unit, unit, 'a) CamlinternalFormatBasics.fmt -> 'b
+)
+ident(
+  ext_ref CamlinternalFormat.make_printf
+)
+"printf.ml" 20 1086 1105 "printf.ml" 20 1086 1106
+type(
+  Buffer.t
+)
+ident(
+  def b "printf.ml" 20 1086 1107 "printf.ml" 20 1086 1135
+)
+"printf.ml" 20 1086 1107 "printf.ml" 20 1086 1110
+type(
+  (Buffer.t, unit) CamlinternalFormat.acc
+)
+ident(
+  def acc "printf.ml" 20 1086 1114 "printf.ml" 20 1086 1135
+)
+"printf.ml" 20 1086 1114 "printf.ml" 20 1086 1124
+type(
+  Buffer.t -> (Buffer.t, unit) CamlinternalFormat.acc -> unit
+)
+ident(
+  ext_ref CamlinternalFormat.bufput_acc
+)
+"printf.ml" 20 1086 1125 "printf.ml" 20 1086 1126
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "printf.ml" 20 1086 1105 "printf.ml" 20 1086 1106
+)
+"printf.ml" 20 1086 1127 "printf.ml" 20 1086 1130
+type(
+  (Buffer.t, unit) CamlinternalFormat.acc
+)
+ident(
+  int_ref acc "printf.ml" 20 1086 1107 "printf.ml" 20 1086 1110
+)
+"printf.ml" 20 1086 1114 "printf.ml" 20 1086 1130
+call(
+  stack
+)
+type(
+  unit
+)
+"printf.ml" 20 1086 1132 "printf.ml" 20 1086 1133
+type(
+  Buffer.t -> 'a
+)
+ident(
+  int_ref k "printf.ml" 19 1049 1062 "printf.ml" 19 1049 1063
+)
+"printf.ml" 20 1086 1134 "printf.ml" 20 1086 1135
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "printf.ml" 20 1086 1105 "printf.ml" 20 1086 1106
+)
+"printf.ml" 20 1086 1132 "printf.ml" 20 1086 1135
+call(
+  tail
+)
+type(
+  'a
+)
+"printf.ml" 20 1086 1114 "printf.ml" 20 1086 1135
+type(
+  'a
+)
+"printf.ml" 20 1086 1100 "printf.ml" 20 1086 1136
+type(
+  Buffer.t -> (Buffer.t, unit) CamlinternalFormat.acc -> 'a
+)
+"printf.ml" 20 1086 1137 "printf.ml" 20 1086 1138
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "printf.ml" 19 1049 1064 "printf.ml" 19 1049 1065
+)
+"printf.ml" 20 1086 1139 "printf.ml" 20 1086 1149
+type(
+  (Buffer.t, unit) CamlinternalFormat.acc
+)
+"printf.ml" 20 1086 1150 "printf.ml" 20 1086 1153
+type(
+  ('b, Buffer.t, unit, unit, unit, 'a) CamlinternalFormatBasics.fmt
+)
+ident(
+  int_ref fmt "printf.ml" 19 1049 1075 "printf.ml" 19 1049 1078
+)
+"printf.ml" 20 1086 1088 "printf.ml" 20 1086 1153
+call(
+  tail
+)
+type(
+  'b
+)
+"printf.ml" 21 1154 1158 "printf.ml" 21 1154 1167
+type(
+  ('a -> 'b) ->
+  'a -> ('c, 'a, 'd, 'd, 'd, 'b) CamlinternalFormatBasics.format6 -> 'c
+)
+ident(
+  def ikfprintf "printf.ml" 24 1245 1245 "printf.ml" 1 0 -1
+)
+"printf.ml" 21 1154 1168 "printf.ml" 21 1154 1169
+type(
+  'a -> 'b
+)
+ident(
+  def k "printf.ml" 21 1154 1170 "printf.ml" 22 1193 1243
+)
+"printf.ml" 21 1154 1170 "printf.ml" 21 1154 1172
+type(
+  'a
+)
+ident(
+  def oc "printf.ml" 21 1154 1173 "printf.ml" 22 1193 1243
+)
+"printf.ml" 21 1154 1182 "printf.ml" 21 1154 1185
+type(
+  ('c, 'a, 'd, 'd, 'd, 'b) CamlinternalFormatBasics.fmt
+)
+ident(
+  def fmt "printf.ml" 22 1193 1195 "printf.ml" 22 1193 1243
+)
+"printf.ml" 21 1154 1187 "printf.ml" 21 1154 1188
+type(
+  string
+)
+"printf.ml" 21 1154 1173 "printf.ml" 21 1154 1190
+type(
+  ('c, 'a, 'd, 'd, 'd, 'b) CamlinternalFormatBasics.format6
+)
+"printf.ml" 22 1193 1195 "printf.ml" 22 1193 1206
+type(
+  ('a -> ('a, 'd) CamlinternalFormat.acc -> 'b) ->
+  'a ->
+  ('a, 'd) CamlinternalFormat.acc ->
+  ('c, 'a, 'd, 'd, 'd, 'b) CamlinternalFormatBasics.fmt -> 'c
+)
+ident(
+  ext_ref CamlinternalFormat.make_printf
+)
+"printf.ml" 22 1193 1212 "printf.ml" 22 1193 1214
+type(
+  'a
+)
+ident(
+  def oc "printf.ml" 22 1193 1215 "printf.ml" 22 1193 1224
+)
+"printf.ml" 22 1193 1215 "printf.ml" 22 1193 1216
+type(
+  ('a, 'd) CamlinternalFormat.acc
+)
+"printf.ml" 22 1193 1220 "printf.ml" 22 1193 1221
+type(
+  'a -> 'b
+)
+ident(
+  int_ref k "printf.ml" 21 1154 1168 "printf.ml" 21 1154 1169
+)
+"printf.ml" 22 1193 1222 "printf.ml" 22 1193 1224
+type(
+  'a
+)
+ident(
+  int_ref oc "printf.ml" 22 1193 1212 "printf.ml" 22 1193 1214
+)
+"printf.ml" 22 1193 1220 "printf.ml" 22 1193 1224
+call(
+  tail
+)
+type(
+  'b
+)
+"printf.ml" 22 1193 1207 "printf.ml" 22 1193 1225
+type(
+  'a -> ('a, 'd) CamlinternalFormat.acc -> 'b
+)
+"printf.ml" 22 1193 1226 "printf.ml" 22 1193 1228
+type(
+  'a
+)
+ident(
+  int_ref oc "printf.ml" 21 1154 1170 "printf.ml" 21 1154 1172
+)
+"printf.ml" 22 1193 1229 "printf.ml" 22 1193 1239
+type(
+  ('a, 'd) CamlinternalFormat.acc
+)
+"printf.ml" 22 1193 1240 "printf.ml" 22 1193 1243
+type(
+  ('c, 'a, 'd, 'd, 'd, 'b) CamlinternalFormatBasics.fmt
+)
+ident(
+  int_ref fmt "printf.ml" 21 1154 1182 "printf.ml" 21 1154 1185
+)
+"printf.ml" 22 1193 1195 "printf.ml" 22 1193 1243
+call(
+  tail
+)
+type(
+  'c
+)
+"printf.ml" 24 1245 1249 "printf.ml" 24 1245 1256
+type(
+  out_channel ->
+  ('a, out_channel, unit, unit, unit, unit) CamlinternalFormatBasics.format6 ->
+  'a
+)
+ident(
+  def fprintf "printf.ml" 25 1289 1289 "printf.ml" 1 0 -1
+)
+"printf.ml" 24 1245 1257 "printf.ml" 24 1245 1259
+type(
+  out_channel
+)
+ident(
+  def oc "printf.ml" 24 1245 1260 "printf.ml" 24 1245 1288
+)
+"printf.ml" 24 1245 1260 "printf.ml" 24 1245 1263
+type(
+  ('a, out_channel, unit, unit, unit, unit) CamlinternalFormatBasics.format6
+)
+ident(
+  def fmt "printf.ml" 24 1245 1266 "printf.ml" 24 1245 1288
+)
+"printf.ml" 24 1245 1266 "printf.ml" 24 1245 1274
+type(
+  (out_channel -> unit) ->
+  out_channel ->
+  ('a, out_channel, unit, unit, unit, unit) CamlinternalFormatBasics.format6 ->
+  'a
+)
+ident(
+  int_ref kfprintf "printf.ml" 17 944 948 "printf.ml" 17 944 956
+)
+"printf.ml" 24 1245 1275 "printf.ml" 24 1245 1281
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"printf.ml" 24 1245 1282 "printf.ml" 24 1245 1284
+type(
+  out_channel
+)
+ident(
+  int_ref oc "printf.ml" 24 1245 1257 "printf.ml" 24 1245 1259
+)
+"printf.ml" 24 1245 1285 "printf.ml" 24 1245 1288
+type(
+  ('a, out_channel, unit, unit, unit, unit) CamlinternalFormatBasics.format6
+)
+ident(
+  int_ref fmt "printf.ml" 24 1245 1260 "printf.ml" 24 1245 1263
+)
+"printf.ml" 24 1245 1266 "printf.ml" 24 1245 1288
+call(
+  tail
+)
+type(
+  'a
+)
+"printf.ml" 25 1289 1293 "printf.ml" 25 1289 1300
+type(
+  Buffer.t ->
+  ('a, Buffer.t, unit, unit, unit, unit) CamlinternalFormatBasics.format6 ->
+  'a
+)
+ident(
+  def bprintf "printf.ml" 26 1331 1331 "printf.ml" 1 0 -1
+)
+"printf.ml" 25 1289 1301 "printf.ml" 25 1289 1302
+type(
+  Buffer.t
+)
+ident(
+  def b "printf.ml" 25 1289 1303 "printf.ml" 25 1289 1330
+)
+"printf.ml" 25 1289 1303 "printf.ml" 25 1289 1306
+type(
+  ('a, Buffer.t, unit, unit, unit, unit) CamlinternalFormatBasics.format6
+)
+ident(
+  def fmt "printf.ml" 25 1289 1309 "printf.ml" 25 1289 1330
+)
+"printf.ml" 25 1289 1309 "printf.ml" 25 1289 1317
+type(
+  (Buffer.t -> unit) ->
+  Buffer.t ->
+  ('a, Buffer.t, unit, unit, unit, unit) CamlinternalFormatBasics.format6 ->
+  'a
+)
+ident(
+  int_ref kbprintf "printf.ml" 19 1049 1053 "printf.ml" 19 1049 1061
+)
+"printf.ml" 25 1289 1318 "printf.ml" 25 1289 1324
+type(
+  Buffer.t -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"printf.ml" 25 1289 1325 "printf.ml" 25 1289 1326
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "printf.ml" 25 1289 1301 "printf.ml" 25 1289 1302
+)
+"printf.ml" 25 1289 1327 "printf.ml" 25 1289 1330
+type(
+  ('a, Buffer.t, unit, unit, unit, unit) CamlinternalFormatBasics.format6
+)
+ident(
+  int_ref fmt "printf.ml" 25 1289 1303 "printf.ml" 25 1289 1306
+)
+"printf.ml" 25 1289 1309 "printf.ml" 25 1289 1330
+call(
+  tail
+)
+type(
+  'a
+)
+"printf.ml" 26 1331 1335 "printf.ml" 26 1331 1343
+type(
+  'a -> ('b, 'a, 'c, 'c, 'c, unit) CamlinternalFormatBasics.format6 -> 'b
+)
+ident(
+  def ifprintf "printf.ml" 27 1377 1377 "printf.ml" 1 0 -1
+)
+"printf.ml" 26 1331 1344 "printf.ml" 26 1331 1346
+type(
+  'a
+)
+ident(
+  def oc "printf.ml" 26 1331 1347 "printf.ml" 26 1331 1376
+)
+"printf.ml" 26 1331 1347 "printf.ml" 26 1331 1350
+type(
+  ('b, 'a, 'c, 'c, 'c, unit) CamlinternalFormatBasics.format6
+)
+ident(
+  def fmt "printf.ml" 26 1331 1353 "printf.ml" 26 1331 1376
+)
+"printf.ml" 26 1331 1353 "printf.ml" 26 1331 1362
+type(
+  ('a -> unit) ->
+  'a -> ('b, 'a, 'c, 'c, 'c, unit) CamlinternalFormatBasics.format6 -> 'b
+)
+ident(
+  int_ref ikfprintf "printf.ml" 21 1154 1158 "printf.ml" 21 1154 1167
+)
+"printf.ml" 26 1331 1363 "printf.ml" 26 1331 1369
+type(
+  'a -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"printf.ml" 26 1331 1370 "printf.ml" 26 1331 1372
+type(
+  'a
+)
+ident(
+  int_ref oc "printf.ml" 26 1331 1344 "printf.ml" 26 1331 1346
+)
+"printf.ml" 26 1331 1373 "printf.ml" 26 1331 1376
+type(
+  ('b, 'a, 'c, 'c, 'c, unit) CamlinternalFormatBasics.format6
+)
+ident(
+  int_ref fmt "printf.ml" 26 1331 1347 "printf.ml" 26 1331 1350
+)
+"printf.ml" 26 1331 1353 "printf.ml" 26 1331 1376
+call(
+  tail
+)
+type(
+  'b
+)
+"printf.ml" 27 1377 1381 "printf.ml" 27 1377 1387
+type(
+  ('a, out_channel, unit, unit, unit, unit) CamlinternalFormatBasics.format6 ->
+  'a
+)
+ident(
+  def printf "printf.ml" 28 1413 1413 "printf.ml" 1 0 -1
+)
+"printf.ml" 27 1377 1388 "printf.ml" 27 1377 1391
+type(
+  ('a, out_channel, unit, unit, unit, unit) CamlinternalFormatBasics.format6
+)
+ident(
+  def fmt "printf.ml" 27 1377 1394 "printf.ml" 27 1377 1412
+)
+"printf.ml" 27 1377 1394 "printf.ml" 27 1377 1401
+type(
+  out_channel ->
+  ('a, out_channel, unit, unit, unit, unit) CamlinternalFormatBasics.format6 ->
+  'a
+)
+ident(
+  int_ref fprintf "printf.ml" 24 1245 1249 "printf.ml" 24 1245 1256
+)
+"printf.ml" 27 1377 1402 "printf.ml" 27 1377 1408
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stdout
+)
+"printf.ml" 27 1377 1409 "printf.ml" 27 1377 1412
+type(
+  ('a, out_channel, unit, unit, unit, unit) CamlinternalFormatBasics.format6
+)
+ident(
+  int_ref fmt "printf.ml" 27 1377 1388 "printf.ml" 27 1377 1391
+)
+"printf.ml" 27 1377 1394 "printf.ml" 27 1377 1412
+call(
+  tail
+)
+type(
+  'a
+)
+"printf.ml" 28 1413 1417 "printf.ml" 28 1413 1424
+type(
+  ('a, out_channel, unit, unit, unit, unit) CamlinternalFormatBasics.format6 ->
+  'a
+)
+ident(
+  def eprintf "printf.ml" 30 1451 1451 "printf.ml" 1 0 -1
+)
+"printf.ml" 28 1413 1425 "printf.ml" 28 1413 1428
+type(
+  ('a, out_channel, unit, unit, unit, unit) CamlinternalFormatBasics.format6
+)
+ident(
+  def fmt "printf.ml" 28 1413 1431 "printf.ml" 28 1413 1449
+)
+"printf.ml" 28 1413 1431 "printf.ml" 28 1413 1438
+type(
+  out_channel ->
+  ('a, out_channel, unit, unit, unit, unit) CamlinternalFormatBasics.format6 ->
+  'a
+)
+ident(
+  int_ref fprintf "printf.ml" 24 1245 1249 "printf.ml" 24 1245 1256
+)
+"printf.ml" 28 1413 1439 "printf.ml" 28 1413 1445
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stderr
+)
+"printf.ml" 28 1413 1446 "printf.ml" 28 1413 1449
+type(
+  ('a, out_channel, unit, unit, unit, unit) CamlinternalFormatBasics.format6
+)
+ident(
+  int_ref fmt "printf.ml" 28 1413 1425 "printf.ml" 28 1413 1428
+)
+"printf.ml" 28 1413 1431 "printf.ml" 28 1413 1449
+call(
+  tail
+)
+type(
+  'a
+)
+"printf.ml" 30 1451 1455 "printf.ml" 30 1451 1463
+type(
+  (string -> 'a) ->
+  ('b, unit, string, string, string, 'a) CamlinternalFormatBasics.format6 ->
+  'b
+)
+ident(
+  def ksprintf "printf.ml" 37 1629 1629 "printf.ml" 1 0 -1
+)
+"printf.ml" 30 1451 1464 "printf.ml" 30 1451 1465
+type(
+  string -> 'a
+)
+ident(
+  def k "printf.ml" 30 1451 1466 "printf.ml" 35 1593 1627
+)
+"printf.ml" 30 1451 1475 "printf.ml" 30 1451 1478
+type(
+  ('b, unit, string, string, string, 'a) CamlinternalFormatBasics.fmt
+)
+ident(
+  def fmt "printf.ml" 31 1486 1488 "printf.ml" 35 1593 1627
+)
+"printf.ml" 30 1451 1480 "printf.ml" 30 1451 1481
+type(
+  string
+)
+"printf.ml" 30 1451 1466 "printf.ml" 30 1451 1483
+type(
+  ('b, unit, string, string, string, 'a) CamlinternalFormatBasics.format6
+)
+"printf.ml" 31 1486 1492 "printf.ml" 31 1486 1494
+type(
+  unit -> (unit, string) CamlinternalFormat.acc -> 'a
+)
+ident(
+  def k' "printf.ml" 35 1593 1595 "printf.ml" 35 1593 1627
+)
+"printf.ml" 31 1486 1495 "printf.ml" 31 1486 1497
+type(
+  unit
+)
+"printf.ml" 31 1486 1498 "printf.ml" 31 1486 1501
+type(
+  (unit, string) CamlinternalFormat.acc
+)
+ident(
+  def acc "printf.ml" 32 1504 1508 "printf.ml" 34 1562 1589
+)
+"printf.ml" 32 1504 1512 "printf.ml" 32 1504 1515
+type(
+  Buffer.t
+)
+ident(
+  def buf "printf.ml" 33 1538 1542 "printf.ml" 34 1562 1589
+)
+"printf.ml" 32 1504 1518 "printf.ml" 32 1504 1531
+type(
+  int -> Buffer.t
+)
+ident(
+  ext_ref Buffer.create
+)
+"printf.ml" 32 1504 1532 "printf.ml" 32 1504 1534
+type(
+  int
+)
+"printf.ml" 32 1504 1518 "printf.ml" 32 1504 1534
+call(
+  stack
+)
+type(
+  Buffer.t
+)
+"printf.ml" 33 1538 1542 "printf.ml" 33 1538 1552
+type(
+  Buffer.t -> (unit, string) CamlinternalFormat.acc -> unit
+)
+ident(
+  ext_ref CamlinternalFormat.strput_acc
+)
+"printf.ml" 33 1538 1553 "printf.ml" 33 1538 1556
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "printf.ml" 32 1504 1512 "printf.ml" 32 1504 1515
+)
+"printf.ml" 33 1538 1557 "printf.ml" 33 1538 1560
+type(
+  (unit, string) CamlinternalFormat.acc
+)
+ident(
+  int_ref acc "printf.ml" 31 1486 1498 "printf.ml" 31 1486 1501
+)
+"printf.ml" 33 1538 1542 "printf.ml" 33 1538 1560
+call(
+  stack
+)
+type(
+  unit
+)
+"printf.ml" 34 1562 1566 "printf.ml" 34 1562 1567
+type(
+  string -> 'a
+)
+ident(
+  int_ref k "printf.ml" 30 1451 1464 "printf.ml" 30 1451 1465
+)
+"printf.ml" 34 1562 1569 "printf.ml" 34 1562 1584
+type(
+  Buffer.t -> string
+)
+ident(
+  ext_ref Buffer.contents
+)
+"printf.ml" 34 1562 1585 "printf.ml" 34 1562 1588
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "printf.ml" 32 1504 1512 "printf.ml" 32 1504 1515
+)
+"printf.ml" 34 1562 1568 "printf.ml" 34 1562 1589
+call(
+  stack
+)
+type(
+  string
+)
+"printf.ml" 34 1562 1566 "printf.ml" 34 1562 1589
+call(
+  tail
+)
+type(
+  'a
+)
+"printf.ml" 33 1538 1542 "printf.ml" 34 1562 1589
+type(
+  'a
+)
+"printf.ml" 32 1504 1508 "printf.ml" 34 1562 1589
+type(
+  'a
+)
+"printf.ml" 35 1593 1595 "printf.ml" 35 1593 1606
+type(
+  (unit -> (unit, string) CamlinternalFormat.acc -> 'a) ->
+  unit ->
+  (unit, string) CamlinternalFormat.acc ->
+  ('b, unit, string, string, string, 'a) CamlinternalFormatBasics.fmt -> 'b
+)
+ident(
+  ext_ref CamlinternalFormat.make_printf
+)
+"printf.ml" 35 1593 1607 "printf.ml" 35 1593 1609
+type(
+  unit -> (unit, string) CamlinternalFormat.acc -> 'a
+)
+ident(
+  int_ref k' "printf.ml" 31 1486 1492 "printf.ml" 31 1486 1494
+)
+"printf.ml" 35 1593 1610 "printf.ml" 35 1593 1612
+type(
+  unit
+)
+"printf.ml" 35 1593 1613 "printf.ml" 35 1593 1623
+type(
+  (unit, string) CamlinternalFormat.acc
+)
+"printf.ml" 35 1593 1624 "printf.ml" 35 1593 1627
+type(
+  ('b, unit, string, string, string, 'a) CamlinternalFormatBasics.fmt
+)
+ident(
+  int_ref fmt "printf.ml" 30 1451 1475 "printf.ml" 30 1451 1478
+)
+"printf.ml" 35 1593 1595 "printf.ml" 35 1593 1627
+call(
+  tail
+)
+type(
+  'b
+)
+"printf.ml" 31 1486 1488 "printf.ml" 35 1593 1627
+type(
+  'b
+)
+"printf.ml" 37 1629 1633 "printf.ml" 37 1629 1640
+type(
+  ('a, unit, string, string, string, string) CamlinternalFormatBasics.format6 ->
+  'a
+)
+ident(
+  def sprintf "printf.ml" 39 1674 1674 "printf.ml" 1 0 -1
+)
+"printf.ml" 37 1629 1641 "printf.ml" 37 1629 1644
+type(
+  ('a, unit, string, string, string, string) CamlinternalFormatBasics.format6
+)
+ident(
+  def fmt "printf.ml" 37 1629 1647 "printf.ml" 37 1629 1672
+)
+"printf.ml" 37 1629 1647 "printf.ml" 37 1629 1655
+type(
+  (string -> string) ->
+  ('a, unit, string, string, string, string) CamlinternalFormatBasics.format6 ->
+  'a
+)
+ident(
+  int_ref ksprintf "printf.ml" 30 1451 1455 "printf.ml" 30 1451 1463
+)
+"printf.ml" 37 1629 1661 "printf.ml" 37 1629 1662
+type(
+  string
+)
+ident(
+  def s "printf.ml" 37 1629 1666 "printf.ml" 37 1629 1667
+)
+"printf.ml" 37 1629 1666 "printf.ml" 37 1629 1667
+type(
+  string
+)
+ident(
+  int_ref s "printf.ml" 37 1629 1661 "printf.ml" 37 1629 1662
+)
+"printf.ml" 37 1629 1656 "printf.ml" 37 1629 1668
+type(
+  string -> string
+)
+"printf.ml" 37 1629 1669 "printf.ml" 37 1629 1672
+type(
+  ('a, unit, string, string, string, string) CamlinternalFormatBasics.format6
+)
+ident(
+  int_ref fmt "printf.ml" 37 1629 1641 "printf.ml" 37 1629 1644
+)
+"printf.ml" 37 1629 1647 "printf.ml" 37 1629 1672
+call(
+  tail
+)
+type(
+  'a
+)
+"printf.ml" 39 1674 1678 "printf.ml" 39 1674 1685
+type(
+  (string -> 'a) ->
+  ('b, unit, string, string, string, 'a) CamlinternalFormatBasics.format6 ->
+  'b
+)
+ident(
+  def kprintf "printf.ml" 39 1674 1696 "printf.ml" 1 0 -1
+)
+"printf.ml" 39 1674 1688 "printf.ml" 39 1674 1696
+type(
+  (string -> 'a) ->
+  ('b, unit, string, string, string, 'a) CamlinternalFormatBasics.format6 ->
+  'b
+)
+ident(
+  int_ref ksprintf "printf.ml" 30 1451 1455 "printf.ml" 30 1451 1463
+)

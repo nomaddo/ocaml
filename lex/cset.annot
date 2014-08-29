@@ -1,0 +1,1838 @@
+"cset.ml" 19 932 936 "cset.ml" 19 932 941
+type(
+  'a list
+)
+ident(
+  def empty "cset.ml" 20 947 947 "cset.ml" 1 0 -1
+)
+"cset.ml" 19 932 944 "cset.ml" 19 932 946
+type(
+  'a list
+)
+"cset.ml" 20 947 951 "cset.ml" 20 947 959
+type(
+  'a list -> bool
+)
+ident(
+  def is_empty "cset.ml" 24 1003 1003 "cset.ml" 1 0 -1
+)
+"cset.ml" 21 971 975 "cset.ml" 21 971 977
+type(
+  'a list
+)
+"cset.ml" 21 971 981 "cset.ml" 21 971 985
+type(
+  bool
+)
+"cset.ml" 22 986 990 "cset.ml" 22 986 991
+type(
+  'a list
+)
+"cset.ml" 22 986 996 "cset.ml" 22 986 1001
+type(
+  bool
+)
+"cset.ml" 20 947 962 "cset.ml" 22 986 1001
+type(
+  'a list -> bool
+)
+"cset.ml" 24 1003 1007 "cset.ml" 24 1003 1016
+type(
+  'a -> ('a * 'a) list
+)
+ident(
+  def singleton "cset.ml" 26 1028 1028 "cset.ml" 1 0 -1
+)
+"cset.ml" 24 1003 1017 "cset.ml" 24 1003 1018
+type(
+  'a
+)
+ident(
+  def c "cset.ml" 24 1003 1021 "cset.ml" 24 1003 1026
+)
+"cset.ml" 24 1003 1022 "cset.ml" 24 1003 1023
+type(
+  'a
+)
+ident(
+  int_ref c "cset.ml" 24 1003 1017 "cset.ml" 24 1003 1018
+)
+"cset.ml" 24 1003 1024 "cset.ml" 24 1003 1025
+type(
+  'a
+)
+ident(
+  int_ref c "cset.ml" 24 1003 1017 "cset.ml" 24 1003 1018
+)
+"cset.ml" 24 1003 1022 "cset.ml" 24 1003 1025
+type(
+  'a * 'a
+)
+"cset.ml" 24 1003 1021 "cset.ml" 24 1003 1026
+type(
+  ('a * 'a) list
+)
+"cset.ml" 26 1028 1032 "cset.ml" 26 1028 1040
+type(
+  'a -> 'a -> ('a * 'a) list
+)
+ident(
+  def interval "cset.ml" 31 1093 1093 "cset.ml" 1 0 -1
+)
+"cset.ml" 26 1028 1041 "cset.ml" 26 1028 1043
+type(
+  'a
+)
+ident(
+  def c1 "cset.ml" 26 1028 1044 "cset.ml" 28 1076 1090
+)
+"cset.ml" 26 1028 1044 "cset.ml" 26 1028 1046
+type(
+  'a
+)
+ident(
+  def c2 "cset.ml" 27 1049 1051 "cset.ml" 28 1076 1090
+)
+"cset.ml" 27 1049 1054 "cset.ml" 27 1049 1056
+type(
+  'a
+)
+ident(
+  int_ref c1 "cset.ml" 26 1028 1041 "cset.ml" 26 1028 1043
+)
+"cset.ml" 27 1049 1057 "cset.ml" 27 1049 1059
+type(
+  'a -> 'a -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"cset.ml" 27 1049 1060 "cset.ml" 27 1049 1062
+type(
+  'a
+)
+ident(
+  int_ref c2 "cset.ml" 26 1028 1044 "cset.ml" 26 1028 1046
+)
+"cset.ml" 27 1049 1054 "cset.ml" 27 1049 1062
+type(
+  bool
+)
+"cset.ml" 27 1049 1069 "cset.ml" 27 1049 1071
+type(
+  'a
+)
+ident(
+  int_ref c1 "cset.ml" 26 1028 1041 "cset.ml" 26 1028 1043
+)
+"cset.ml" 27 1049 1072 "cset.ml" 27 1049 1074
+type(
+  'a
+)
+ident(
+  int_ref c2 "cset.ml" 26 1028 1044 "cset.ml" 26 1028 1046
+)
+"cset.ml" 27 1049 1069 "cset.ml" 27 1049 1074
+type(
+  'a * 'a
+)
+"cset.ml" 27 1049 1068 "cset.ml" 27 1049 1075
+type(
+  ('a * 'a) list
+)
+"cset.ml" 28 1076 1084 "cset.ml" 28 1076 1086
+type(
+  'a
+)
+ident(
+  int_ref c2 "cset.ml" 26 1028 1044 "cset.ml" 26 1028 1046
+)
+"cset.ml" 28 1076 1087 "cset.ml" 28 1076 1089
+type(
+  'a
+)
+ident(
+  int_ref c1 "cset.ml" 26 1028 1041 "cset.ml" 26 1028 1043
+)
+"cset.ml" 28 1076 1084 "cset.ml" 28 1076 1089
+type(
+  'a * 'a
+)
+"cset.ml" 28 1076 1083 "cset.ml" 28 1076 1090
+type(
+  ('a * 'a) list
+)
+"cset.ml" 27 1049 1051 "cset.ml" 28 1076 1090
+type(
+  ('a * 'a) list
+)
+"cset.ml" 31 1093 1101 "cset.ml" 31 1093 1106
+type(
+  (int * int) list -> (int * int) list -> (int * int) list
+)
+ident(
+  def union "cset.ml" 31 1093 1093 "cset.ml" 1 0 -1
+)
+"cset.ml" 31 1093 1107 "cset.ml" 31 1093 1109
+type(
+  (int * int) list
+)
+ident(
+  def s1 "cset.ml" 31 1093 1110 "cset.ml" 44 1399 1406
+)
+"cset.ml" 31 1093 1110 "cset.ml" 31 1093 1112
+type(
+  (int * int) list
+)
+ident(
+  def s2 "cset.ml" 31 1093 1115 "cset.ml" 44 1399 1406
+)
+"cset.ml" 31 1093 1121 "cset.ml" 31 1093 1123
+type(
+  (int * int) list
+)
+ident(
+  int_ref s1 "cset.ml" 31 1093 1107 "cset.ml" 31 1093 1109
+)
+"cset.ml" 31 1093 1124 "cset.ml" 31 1093 1126
+type(
+  (int * int) list
+)
+ident(
+  int_ref s2 "cset.ml" 31 1093 1110 "cset.ml" 31 1093 1112
+)
+"cset.ml" 31 1093 1121 "cset.ml" 31 1093 1126
+type(
+  (int * int) list * (int * int) list
+)
+"cset.ml" 32 1132 1134 "cset.ml" 32 1132 1136
+type(
+  (int * int) list
+)
+"cset.ml" 32 1132 1137 "cset.ml" 32 1132 1138
+type(
+  (int * int) list
+)
+"cset.ml" 32 1132 1134 "cset.ml" 32 1132 1138
+type(
+  (int * int) list * (int * int) list
+)
+"cset.ml" 32 1132 1142 "cset.ml" 32 1132 1144
+type(
+  (int * int) list
+)
+ident(
+  int_ref s2 "cset.ml" 31 1093 1110 "cset.ml" 31 1093 1112
+)
+"cset.ml" 33 1145 1147 "cset.ml" 33 1145 1148
+type(
+  (int * int) list
+)
+"cset.ml" 33 1145 1149 "cset.ml" 33 1145 1151
+type(
+  (int * int) list
+)
+"cset.ml" 33 1145 1147 "cset.ml" 33 1145 1151
+type(
+  (int * int) list * (int * int) list
+)
+"cset.ml" 33 1145 1155 "cset.ml" 33 1145 1157
+type(
+  (int * int) list
+)
+ident(
+  int_ref s1 "cset.ml" 31 1093 1107 "cset.ml" 31 1093 1109
+)
+"cset.ml" 34 1158 1161 "cset.ml" 34 1158 1163
+type(
+  int
+)
+ident(
+  def c1 "cset.ml" 35 1194 1198 "cset.ml" 44 1399 1406
+)
+"cset.ml" 34 1158 1164 "cset.ml" 34 1158 1166
+type(
+  int
+)
+ident(
+  def d1 "cset.ml" 35 1194 1198 "cset.ml" 44 1399 1406
+)
+"cset.ml" 34 1158 1160 "cset.ml" 34 1158 1167
+type(
+  int * int
+)
+"cset.ml" 34 1158 1171 "cset.ml" 34 1158 1173
+ident(
+  def p1 "cset.ml" 35 1194 1198 "cset.ml" 44 1399 1406
+)
+"cset.ml" 34 1158 1160 "cset.ml" 34 1158 1173
+type(
+  int * int
+)
+"cset.ml" 34 1158 1175 "cset.ml" 34 1158 1177
+type(
+  (int * int) list
+)
+ident(
+  def r1 "cset.ml" 35 1194 1198 "cset.ml" 44 1399 1406
+)
+"cset.ml" 34 1158 1160 "cset.ml" 34 1158 1177
+type(
+  (int * int) list
+)
+"cset.ml" 34 1158 1180 "cset.ml" 34 1158 1182
+type(
+  int
+)
+ident(
+  def c2 "cset.ml" 35 1194 1198 "cset.ml" 44 1399 1406
+)
+"cset.ml" 34 1158 1183 "cset.ml" 34 1158 1185
+type(
+  int
+)
+ident(
+  def d2 "cset.ml" 35 1194 1198 "cset.ml" 44 1399 1406
+)
+"cset.ml" 34 1158 1179 "cset.ml" 34 1158 1186
+type(
+  int * int
+)
+"cset.ml" 34 1158 1188 "cset.ml" 34 1158 1190
+type(
+  (int * int) list
+)
+ident(
+  def r2 "cset.ml" 35 1194 1198 "cset.ml" 44 1399 1406
+)
+"cset.ml" 34 1158 1179 "cset.ml" 34 1158 1190
+type(
+  (int * int) list
+)
+"cset.ml" 34 1158 1160 "cset.ml" 34 1158 1190
+type(
+  (int * int) list * (int * int) list
+)
+"cset.ml" 35 1194 1201 "cset.ml" 35 1194 1203
+type(
+  int
+)
+ident(
+  int_ref c1 "cset.ml" 34 1158 1161 "cset.ml" 34 1158 1163
+)
+"cset.ml" 35 1194 1204 "cset.ml" 35 1194 1205
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"cset.ml" 35 1194 1206 "cset.ml" 35 1194 1208
+type(
+  int
+)
+ident(
+  int_ref c2 "cset.ml" 34 1158 1180 "cset.ml" 34 1158 1182
+)
+"cset.ml" 35 1194 1201 "cset.ml" 35 1194 1208
+type(
+  bool
+)
+"cset.ml" 36 1214 1220 "cset.ml" 36 1214 1225
+type(
+  (int * int) list -> (int * int) list -> (int * int) list
+)
+ident(
+  int_ref union "cset.ml" 31 1093 1101 "cset.ml" 31 1093 1106
+)
+"cset.ml" 36 1214 1226 "cset.ml" 36 1214 1228
+type(
+  (int * int) list
+)
+ident(
+  int_ref s2 "cset.ml" 31 1093 1110 "cset.ml" 31 1093 1112
+)
+"cset.ml" 36 1214 1229 "cset.ml" 36 1214 1231
+type(
+  (int * int) list
+)
+ident(
+  int_ref s1 "cset.ml" 31 1093 1107 "cset.ml" 31 1093 1109
+)
+"cset.ml" 36 1214 1220 "cset.ml" 36 1214 1231
+call(
+  tail
+)
+type(
+  (int * int) list
+)
+"cset.ml" 38 1262 1271 "cset.ml" 38 1262 1273
+type(
+  int
+)
+ident(
+  int_ref d1 "cset.ml" 34 1158 1164 "cset.ml" 34 1158 1166
+)
+"cset.ml" 38 1262 1273 "cset.ml" 38 1262 1274
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"cset.ml" 38 1262 1274 "cset.ml" 38 1262 1275
+type(
+  int
+)
+"cset.ml" 38 1262 1271 "cset.ml" 38 1262 1275
+type(
+  int
+)
+"cset.ml" 38 1262 1276 "cset.ml" 38 1262 1277
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"cset.ml" 38 1262 1278 "cset.ml" 38 1262 1280
+type(
+  int
+)
+ident(
+  int_ref c2 "cset.ml" 34 1158 1180 "cset.ml" 34 1158 1182
+)
+"cset.ml" 38 1262 1271 "cset.ml" 38 1262 1280
+type(
+  bool
+)
+"cset.ml" 39 1286 1294 "cset.ml" 39 1286 1296
+type(
+  int * int
+)
+ident(
+  int_ref p1 "cset.ml" 34 1158 1160 "cset.ml" 34 1158 1173
+)
+"cset.ml" 39 1286 1298 "cset.ml" 39 1286 1303
+type(
+  (int * int) list -> (int * int) list -> (int * int) list
+)
+ident(
+  int_ref union "cset.ml" 31 1093 1101 "cset.ml" 31 1093 1106
+)
+"cset.ml" 39 1286 1304 "cset.ml" 39 1286 1306
+type(
+  (int * int) list
+)
+ident(
+  int_ref r1 "cset.ml" 34 1158 1175 "cset.ml" 34 1158 1177
+)
+"cset.ml" 39 1286 1307 "cset.ml" 39 1286 1309
+type(
+  (int * int) list
+)
+ident(
+  int_ref s2 "cset.ml" 31 1093 1110 "cset.ml" 31 1093 1112
+)
+"cset.ml" 39 1286 1298 "cset.ml" 39 1286 1309
+call(
+  stack
+)
+type(
+  (int * int) list
+)
+"cset.ml" 39 1286 1294 "cset.ml" 39 1286 1309
+type(
+  (int * int) list
+)
+"cset.ml" 40 1310 1324 "cset.ml" 40 1310 1326
+type(
+  int
+)
+ident(
+  int_ref d1 "cset.ml" 34 1158 1164 "cset.ml" 34 1158 1166
+)
+"cset.ml" 40 1310 1327 "cset.ml" 40 1310 1328
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"cset.ml" 40 1310 1329 "cset.ml" 40 1310 1331
+type(
+  int
+)
+ident(
+  int_ref d2 "cset.ml" 34 1158 1183 "cset.ml" 34 1158 1185
+)
+"cset.ml" 40 1310 1324 "cset.ml" 40 1310 1331
+type(
+  bool
+)
+"cset.ml" 41 1337 1345 "cset.ml" 41 1337 1350
+type(
+  (int * int) list -> (int * int) list -> (int * int) list
+)
+ident(
+  int_ref union "cset.ml" 31 1093 1101 "cset.ml" 31 1093 1106
+)
+"cset.ml" 41 1337 1353 "cset.ml" 41 1337 1355
+type(
+  int
+)
+ident(
+  int_ref c1 "cset.ml" 34 1158 1161 "cset.ml" 34 1158 1163
+)
+"cset.ml" 41 1337 1356 "cset.ml" 41 1337 1358
+type(
+  int
+)
+ident(
+  int_ref d2 "cset.ml" 34 1158 1183 "cset.ml" 34 1158 1185
+)
+"cset.ml" 41 1337 1352 "cset.ml" 41 1337 1359
+type(
+  int * int
+)
+"cset.ml" 41 1337 1361 "cset.ml" 41 1337 1363
+type(
+  (int * int) list
+)
+ident(
+  int_ref r2 "cset.ml" 34 1158 1188 "cset.ml" 34 1158 1190
+)
+"cset.ml" 41 1337 1351 "cset.ml" 41 1337 1364
+type(
+  (int * int) list
+)
+"cset.ml" 41 1337 1365 "cset.ml" 41 1337 1367
+type(
+  (int * int) list
+)
+ident(
+  int_ref r1 "cset.ml" 34 1158 1175 "cset.ml" 34 1158 1177
+)
+"cset.ml" 41 1337 1345 "cset.ml" 41 1337 1367
+call(
+  tail
+)
+type(
+  (int * int) list
+)
+"cset.ml" 43 1379 1387 "cset.ml" 43 1379 1392
+type(
+  (int * int) list -> (int * int) list -> (int * int) list
+)
+ident(
+  int_ref union "cset.ml" 31 1093 1101 "cset.ml" 31 1093 1106
+)
+"cset.ml" 43 1379 1393 "cset.ml" 43 1379 1395
+type(
+  (int * int) list
+)
+ident(
+  int_ref s1 "cset.ml" 31 1093 1107 "cset.ml" 31 1093 1109
+)
+"cset.ml" 43 1379 1396 "cset.ml" 43 1379 1398
+type(
+  (int * int) list
+)
+ident(
+  int_ref r2 "cset.ml" 34 1158 1188 "cset.ml" 34 1158 1190
+)
+"cset.ml" 43 1379 1387 "cset.ml" 43 1379 1398
+call(
+  tail
+)
+type(
+  (int * int) list
+)
+"cset.ml" 40 1310 1321 "cset.ml" 43 1379 1398
+type(
+  (int * int) list
+)
+"cset.ml" 37 1232 1241 "cset.ml" 44 1399 1406
+type(
+  (int * int) list
+)
+"cset.ml" 35 1194 1198 "cset.ml" 44 1399 1406
+type(
+  (int * int) list
+)
+"cset.ml" 31 1093 1115 "cset.ml" 44 1399 1406
+type(
+  (int * int) list
+)
+"cset.ml" 46 1408 1416 "cset.ml" 46 1408 1421
+type(
+  ('a * 'a) list -> ('a * 'a) list -> ('a * 'a) list
+)
+ident(
+  def inter "cset.ml" 46 1408 1408 "cset.ml" 1 0 -1
+)
+"cset.ml" 46 1408 1422 "cset.ml" 46 1408 1423
+type(
+  ('a * 'a) list
+)
+ident(
+  def l "cset.ml" 46 1408 1424 "cset.ml" 57 1679 1716
+)
+"cset.ml" 46 1408 1424 "cset.ml" 46 1408 1426
+type(
+  ('a * 'a) list
+)
+ident(
+  def l' "cset.ml" 46 1408 1430 "cset.ml" 57 1679 1716
+)
+"cset.ml" 46 1408 1436 "cset.ml" 46 1408 1437
+type(
+  ('a * 'a) list
+)
+ident(
+  int_ref l "cset.ml" 46 1408 1422 "cset.ml" 46 1408 1423
+)
+"cset.ml" 46 1408 1439 "cset.ml" 46 1408 1441
+type(
+  ('a * 'a) list
+)
+ident(
+  int_ref l' "cset.ml" 46 1408 1424 "cset.ml" 46 1408 1426
+)
+"cset.ml" 46 1408 1436 "cset.ml" 46 1408 1441
+type(
+  ('a * 'a) list * ('a * 'a) list
+)
+"cset.ml" 47 1447 1451 "cset.ml" 47 1447 1452
+type(
+  ('a * 'a) list
+)
+"cset.ml" 47 1447 1454 "cset.ml" 47 1447 1456
+type(
+  ('a * 'a) list
+)
+"cset.ml" 47 1447 1451 "cset.ml" 47 1447 1456
+type(
+  ('a * 'a) list * ('a * 'a) list
+)
+"cset.ml" 47 1447 1460 "cset.ml" 47 1447 1462
+type(
+  ('a * 'a) list
+)
+"cset.ml" 48 1463 1467 "cset.ml" 48 1463 1469
+type(
+  ('a * 'a) list
+)
+"cset.ml" 48 1463 1471 "cset.ml" 48 1463 1472
+type(
+  ('a * 'a) list
+)
+"cset.ml" 48 1463 1467 "cset.ml" 48 1463 1472
+type(
+  ('a * 'a) list * ('a * 'a) list
+)
+"cset.ml" 48 1463 1476 "cset.ml" 48 1463 1478
+type(
+  ('a * 'a) list
+)
+"cset.ml" 49 1479 1484 "cset.ml" 49 1479 1486
+type(
+  'a
+)
+ident(
+  def c1 "cset.ml" 50 1514 1520 "cset.ml" 57 1679 1716
+)
+"cset.ml" 49 1479 1488 "cset.ml" 49 1479 1490
+type(
+  'a
+)
+ident(
+  def c2 "cset.ml" 50 1514 1520 "cset.ml" 57 1679 1716
+)
+"cset.ml" 49 1479 1483 "cset.ml" 49 1479 1491
+type(
+  'a * 'a
+)
+"cset.ml" 49 1479 1493 "cset.ml" 49 1479 1494
+type(
+  ('a * 'a) list
+)
+ident(
+  def r "cset.ml" 50 1514 1520 "cset.ml" 57 1679 1716
+)
+"cset.ml" 49 1479 1483 "cset.ml" 49 1479 1494
+type(
+  ('a * 'a) list
+)
+"cset.ml" 49 1479 1497 "cset.ml" 49 1479 1500
+type(
+  'a
+)
+ident(
+  def c1' "cset.ml" 50 1514 1520 "cset.ml" 57 1679 1716
+)
+"cset.ml" 49 1479 1502 "cset.ml" 49 1479 1505
+type(
+  'a
+)
+ident(
+  def c2' "cset.ml" 50 1514 1520 "cset.ml" 57 1679 1716
+)
+"cset.ml" 49 1479 1496 "cset.ml" 49 1479 1506
+type(
+  'a * 'a
+)
+"cset.ml" 49 1479 1508 "cset.ml" 49 1479 1510
+type(
+  ('a * 'a) list
+)
+ident(
+  def r' "cset.ml" 50 1514 1520 "cset.ml" 57 1679 1716
+)
+"cset.ml" 49 1479 1496 "cset.ml" 49 1479 1510
+type(
+  ('a * 'a) list
+)
+"cset.ml" 49 1479 1483 "cset.ml" 49 1479 1510
+type(
+  ('a * 'a) list * ('a * 'a) list
+)
+"cset.ml" 50 1514 1523 "cset.ml" 50 1514 1525
+type(
+  'a
+)
+ident(
+  int_ref c2 "cset.ml" 49 1479 1488 "cset.ml" 49 1479 1490
+)
+"cset.ml" 50 1514 1526 "cset.ml" 50 1514 1527
+type(
+  'a -> 'a -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"cset.ml" 50 1514 1528 "cset.ml" 50 1514 1531
+type(
+  'a
+)
+ident(
+  int_ref c1' "cset.ml" 49 1479 1497 "cset.ml" 49 1479 1500
+)
+"cset.ml" 50 1514 1523 "cset.ml" 50 1514 1531
+type(
+  bool
+)
+"cset.ml" 51 1537 1545 "cset.ml" 51 1537 1550
+type(
+  ('a * 'a) list -> ('a * 'a) list -> ('a * 'a) list
+)
+ident(
+  int_ref inter "cset.ml" 46 1408 1416 "cset.ml" 46 1408 1421
+)
+"cset.ml" 51 1537 1551 "cset.ml" 51 1537 1552
+type(
+  ('a * 'a) list
+)
+ident(
+  int_ref r "cset.ml" 49 1479 1493 "cset.ml" 49 1479 1494
+)
+"cset.ml" 51 1537 1553 "cset.ml" 51 1537 1555
+type(
+  ('a * 'a) list
+)
+ident(
+  int_ref l' "cset.ml" 46 1408 1424 "cset.ml" 46 1408 1426
+)
+"cset.ml" 51 1537 1545 "cset.ml" 51 1537 1555
+call(
+  tail
+)
+type(
+  ('a * 'a) list
+)
+"cset.ml" 52 1556 1570 "cset.ml" 52 1556 1573
+type(
+  'a
+)
+ident(
+  int_ref c2' "cset.ml" 49 1479 1502 "cset.ml" 49 1479 1505
+)
+"cset.ml" 52 1556 1574 "cset.ml" 52 1556 1575
+type(
+  'a -> 'a -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"cset.ml" 52 1556 1576 "cset.ml" 52 1556 1578
+type(
+  'a
+)
+ident(
+  int_ref c1 "cset.ml" 49 1479 1484 "cset.ml" 49 1479 1486
+)
+"cset.ml" 52 1556 1570 "cset.ml" 52 1556 1578
+type(
+  bool
+)
+"cset.ml" 53 1584 1592 "cset.ml" 53 1584 1597
+type(
+  ('a * 'a) list -> ('a * 'a) list -> ('a * 'a) list
+)
+ident(
+  int_ref inter "cset.ml" 46 1408 1416 "cset.ml" 46 1408 1421
+)
+"cset.ml" 53 1584 1598 "cset.ml" 53 1584 1599
+type(
+  ('a * 'a) list
+)
+ident(
+  int_ref l "cset.ml" 46 1408 1422 "cset.ml" 46 1408 1423
+)
+"cset.ml" 53 1584 1600 "cset.ml" 53 1584 1602
+type(
+  ('a * 'a) list
+)
+ident(
+  int_ref r' "cset.ml" 49 1479 1508 "cset.ml" 49 1479 1510
+)
+"cset.ml" 53 1584 1592 "cset.ml" 53 1584 1602
+call(
+  tail
+)
+type(
+  ('a * 'a) list
+)
+"cset.ml" 54 1603 1617 "cset.ml" 54 1603 1619
+type(
+  'a
+)
+ident(
+  int_ref c2 "cset.ml" 49 1479 1488 "cset.ml" 49 1479 1490
+)
+"cset.ml" 54 1603 1620 "cset.ml" 54 1603 1621
+type(
+  'a -> 'a -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"cset.ml" 54 1603 1622 "cset.ml" 54 1603 1625
+type(
+  'a
+)
+ident(
+  int_ref c2' "cset.ml" 49 1479 1502 "cset.ml" 49 1479 1505
+)
+"cset.ml" 54 1603 1617 "cset.ml" 54 1603 1625
+type(
+  bool
+)
+"cset.ml" 55 1631 1640 "cset.ml" 55 1631 1643
+type(
+  'a -> 'a -> 'a
+)
+ident(
+  ext_ref Pervasives.max
+)
+"cset.ml" 55 1631 1644 "cset.ml" 55 1631 1646
+type(
+  'a
+)
+ident(
+  int_ref c1 "cset.ml" 49 1479 1484 "cset.ml" 49 1479 1486
+)
+"cset.ml" 55 1631 1647 "cset.ml" 55 1631 1650
+type(
+  'a
+)
+ident(
+  int_ref c1' "cset.ml" 49 1479 1497 "cset.ml" 49 1479 1500
+)
+"cset.ml" 55 1631 1640 "cset.ml" 55 1631 1650
+call(
+  stack
+)
+type(
+  'a
+)
+"cset.ml" 55 1631 1652 "cset.ml" 55 1631 1654
+type(
+  'a
+)
+ident(
+  int_ref c2 "cset.ml" 49 1479 1488 "cset.ml" 49 1479 1490
+)
+"cset.ml" 55 1631 1639 "cset.ml" 55 1631 1655
+type(
+  'a * 'a
+)
+"cset.ml" 55 1631 1657 "cset.ml" 55 1631 1662
+type(
+  ('a * 'a) list -> ('a * 'a) list -> ('a * 'a) list
+)
+ident(
+  int_ref inter "cset.ml" 46 1408 1416 "cset.ml" 46 1408 1421
+)
+"cset.ml" 55 1631 1663 "cset.ml" 55 1631 1664
+type(
+  ('a * 'a) list
+)
+ident(
+  int_ref r "cset.ml" 49 1479 1493 "cset.ml" 49 1479 1494
+)
+"cset.ml" 55 1631 1665 "cset.ml" 55 1631 1667
+type(
+  ('a * 'a) list
+)
+ident(
+  int_ref l' "cset.ml" 46 1408 1424 "cset.ml" 46 1408 1426
+)
+"cset.ml" 55 1631 1657 "cset.ml" 55 1631 1667
+call(
+  stack
+)
+type(
+  ('a * 'a) list
+)
+"cset.ml" 55 1631 1639 "cset.ml" 55 1631 1667
+type(
+  ('a * 'a) list
+)
+"cset.ml" 57 1679 1688 "cset.ml" 57 1679 1691
+type(
+  'a -> 'a -> 'a
+)
+ident(
+  ext_ref Pervasives.max
+)
+"cset.ml" 57 1679 1692 "cset.ml" 57 1679 1694
+type(
+  'a
+)
+ident(
+  int_ref c1 "cset.ml" 49 1479 1484 "cset.ml" 49 1479 1486
+)
+"cset.ml" 57 1679 1695 "cset.ml" 57 1679 1698
+type(
+  'a
+)
+ident(
+  int_ref c1' "cset.ml" 49 1479 1497 "cset.ml" 49 1479 1500
+)
+"cset.ml" 57 1679 1688 "cset.ml" 57 1679 1698
+call(
+  stack
+)
+type(
+  'a
+)
+"cset.ml" 57 1679 1700 "cset.ml" 57 1679 1703
+type(
+  'a
+)
+ident(
+  int_ref c2' "cset.ml" 49 1479 1502 "cset.ml" 49 1479 1505
+)
+"cset.ml" 57 1679 1687 "cset.ml" 57 1679 1704
+type(
+  'a * 'a
+)
+"cset.ml" 57 1679 1706 "cset.ml" 57 1679 1711
+type(
+  ('a * 'a) list -> ('a * 'a) list -> ('a * 'a) list
+)
+ident(
+  int_ref inter "cset.ml" 46 1408 1416 "cset.ml" 46 1408 1421
+)
+"cset.ml" 57 1679 1712 "cset.ml" 57 1679 1713
+type(
+  ('a * 'a) list
+)
+ident(
+  int_ref l "cset.ml" 46 1408 1422 "cset.ml" 46 1408 1423
+)
+"cset.ml" 57 1679 1714 "cset.ml" 57 1679 1716
+type(
+  ('a * 'a) list
+)
+ident(
+  int_ref r' "cset.ml" 49 1479 1508 "cset.ml" 49 1479 1510
+)
+"cset.ml" 57 1679 1706 "cset.ml" 57 1679 1716
+call(
+  stack
+)
+type(
+  ('a * 'a) list
+)
+"cset.ml" 57 1679 1687 "cset.ml" 57 1679 1716
+type(
+  ('a * 'a) list
+)
+"cset.ml" 54 1603 1614 "cset.ml" 57 1679 1716
+type(
+  ('a * 'a) list
+)
+"cset.ml" 52 1556 1567 "cset.ml" 57 1679 1716
+type(
+  ('a * 'a) list
+)
+"cset.ml" 50 1514 1520 "cset.ml" 57 1679 1716
+type(
+  ('a * 'a) list
+)
+"cset.ml" 46 1408 1430 "cset.ml" 57 1679 1716
+type(
+  ('a * 'a) list
+)
+"cset.ml" 59 1718 1726 "cset.ml" 59 1718 1730
+type(
+  (int * int) list -> (int * int) list -> (int * int) list
+)
+ident(
+  def diff "cset.ml" 59 1718 1718 "cset.ml" 1 0 -1
+)
+"cset.ml" 59 1718 1731 "cset.ml" 59 1718 1732
+type(
+  (int * int) list
+)
+ident(
+  def l "cset.ml" 59 1718 1733 "cset.ml" 72 2069 2090
+)
+"cset.ml" 59 1718 1733 "cset.ml" 59 1718 1735
+type(
+  (int * int) list
+)
+ident(
+  def l' "cset.ml" 59 1718 1739 "cset.ml" 72 2069 2090
+)
+"cset.ml" 59 1718 1745 "cset.ml" 59 1718 1746
+type(
+  (int * int) list
+)
+ident(
+  int_ref l "cset.ml" 59 1718 1731 "cset.ml" 59 1718 1732
+)
+"cset.ml" 59 1718 1748 "cset.ml" 59 1718 1750
+type(
+  (int * int) list
+)
+ident(
+  int_ref l' "cset.ml" 59 1718 1733 "cset.ml" 59 1718 1735
+)
+"cset.ml" 59 1718 1745 "cset.ml" 59 1718 1750
+type(
+  (int * int) list * (int * int) list
+)
+"cset.ml" 60 1756 1760 "cset.ml" 60 1756 1761
+type(
+  (int * int) list
+)
+"cset.ml" 60 1756 1763 "cset.ml" 60 1756 1765
+type(
+  (int * int) list
+)
+"cset.ml" 60 1756 1760 "cset.ml" 60 1756 1765
+type(
+  (int * int) list * (int * int) list
+)
+"cset.ml" 60 1756 1769 "cset.ml" 60 1756 1770
+type(
+  (int * int) list
+)
+ident(
+  int_ref l "cset.ml" 59 1718 1731 "cset.ml" 59 1718 1732
+)
+"cset.ml" 61 1771 1775 "cset.ml" 61 1771 1777
+type(
+  (int * int) list
+)
+"cset.ml" 61 1771 1779 "cset.ml" 61 1771 1780
+type(
+  (int * int) list
+)
+"cset.ml" 61 1771 1775 "cset.ml" 61 1771 1780
+type(
+  (int * int) list * (int * int) list
+)
+"cset.ml" 61 1771 1784 "cset.ml" 61 1771 1786
+type(
+  (int * int) list
+)
+"cset.ml" 62 1787 1792 "cset.ml" 62 1787 1794
+type(
+  int
+)
+ident(
+  def c1 "cset.ml" 63 1822 1828 "cset.ml" 72 2069 2090
+)
+"cset.ml" 62 1787 1796 "cset.ml" 62 1787 1798
+type(
+  int
+)
+ident(
+  def c2 "cset.ml" 63 1822 1828 "cset.ml" 72 2069 2090
+)
+"cset.ml" 62 1787 1791 "cset.ml" 62 1787 1799
+type(
+  int * int
+)
+"cset.ml" 62 1787 1801 "cset.ml" 62 1787 1802
+type(
+  (int * int) list
+)
+ident(
+  def r "cset.ml" 63 1822 1828 "cset.ml" 72 2069 2090
+)
+"cset.ml" 62 1787 1791 "cset.ml" 62 1787 1802
+type(
+  (int * int) list
+)
+"cset.ml" 62 1787 1805 "cset.ml" 62 1787 1808
+type(
+  int
+)
+ident(
+  def c1' "cset.ml" 63 1822 1828 "cset.ml" 72 2069 2090
+)
+"cset.ml" 62 1787 1810 "cset.ml" 62 1787 1813
+type(
+  int
+)
+ident(
+  def c2' "cset.ml" 63 1822 1828 "cset.ml" 72 2069 2090
+)
+"cset.ml" 62 1787 1804 "cset.ml" 62 1787 1814
+type(
+  int * int
+)
+"cset.ml" 62 1787 1816 "cset.ml" 62 1787 1818
+type(
+  (int * int) list
+)
+ident(
+  def r' "cset.ml" 63 1822 1828 "cset.ml" 72 2069 2090
+)
+"cset.ml" 62 1787 1804 "cset.ml" 62 1787 1818
+type(
+  (int * int) list
+)
+"cset.ml" 62 1787 1791 "cset.ml" 62 1787 1818
+type(
+  (int * int) list * (int * int) list
+)
+"cset.ml" 63 1822 1831 "cset.ml" 63 1822 1833
+type(
+  int
+)
+ident(
+  int_ref c2 "cset.ml" 62 1787 1796 "cset.ml" 62 1787 1798
+)
+"cset.ml" 63 1822 1834 "cset.ml" 63 1822 1835
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"cset.ml" 63 1822 1836 "cset.ml" 63 1822 1839
+type(
+  int
+)
+ident(
+  int_ref c1' "cset.ml" 62 1787 1805 "cset.ml" 62 1787 1808
+)
+"cset.ml" 63 1822 1831 "cset.ml" 63 1822 1839
+type(
+  bool
+)
+"cset.ml" 64 1845 1854 "cset.ml" 64 1845 1856
+type(
+  int
+)
+ident(
+  int_ref c1 "cset.ml" 62 1787 1792 "cset.ml" 62 1787 1794
+)
+"cset.ml" 64 1845 1858 "cset.ml" 64 1845 1860
+type(
+  int
+)
+ident(
+  int_ref c2 "cset.ml" 62 1787 1796 "cset.ml" 62 1787 1798
+)
+"cset.ml" 64 1845 1853 "cset.ml" 64 1845 1861
+type(
+  int * int
+)
+"cset.ml" 64 1845 1863 "cset.ml" 64 1845 1867
+type(
+  (int * int) list -> (int * int) list -> (int * int) list
+)
+ident(
+  int_ref diff "cset.ml" 59 1718 1726 "cset.ml" 59 1718 1730
+)
+"cset.ml" 64 1845 1868 "cset.ml" 64 1845 1869
+type(
+  (int * int) list
+)
+ident(
+  int_ref r "cset.ml" 62 1787 1801 "cset.ml" 62 1787 1802
+)
+"cset.ml" 64 1845 1870 "cset.ml" 64 1845 1872
+type(
+  (int * int) list
+)
+ident(
+  int_ref l' "cset.ml" 59 1718 1733 "cset.ml" 59 1718 1735
+)
+"cset.ml" 64 1845 1863 "cset.ml" 64 1845 1872
+call(
+  stack
+)
+type(
+  (int * int) list
+)
+"cset.ml" 64 1845 1853 "cset.ml" 64 1845 1872
+type(
+  (int * int) list
+)
+"cset.ml" 65 1873 1887 "cset.ml" 65 1873 1890
+type(
+  int
+)
+ident(
+  int_ref c2' "cset.ml" 62 1787 1810 "cset.ml" 62 1787 1813
+)
+"cset.ml" 65 1873 1891 "cset.ml" 65 1873 1892
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"cset.ml" 65 1873 1893 "cset.ml" 65 1873 1895
+type(
+  int
+)
+ident(
+  int_ref c1 "cset.ml" 62 1787 1792 "cset.ml" 62 1787 1794
+)
+"cset.ml" 65 1873 1887 "cset.ml" 65 1873 1895
+type(
+  bool
+)
+"cset.ml" 66 1901 1909 "cset.ml" 66 1901 1913
+type(
+  (int * int) list -> (int * int) list -> (int * int) list
+)
+ident(
+  int_ref diff "cset.ml" 59 1718 1726 "cset.ml" 59 1718 1730
+)
+"cset.ml" 66 1901 1914 "cset.ml" 66 1901 1915
+type(
+  (int * int) list
+)
+ident(
+  int_ref l "cset.ml" 59 1718 1731 "cset.ml" 59 1718 1732
+)
+"cset.ml" 66 1901 1916 "cset.ml" 66 1901 1918
+type(
+  (int * int) list
+)
+ident(
+  int_ref r' "cset.ml" 62 1787 1816 "cset.ml" 62 1787 1818
+)
+"cset.ml" 66 1901 1909 "cset.ml" 66 1901 1918
+call(
+  tail
+)
+type(
+  (int * int) list
+)
+"cset.ml" 68 1930 1942 "cset.ml" 68 1930 1945
+type(
+  (int * int) list
+)
+ident(
+  def r'' "cset.ml" 69 1994 2002 "cset.ml" 72 2069 2090
+)
+"cset.ml" 68 1930 1951 "cset.ml" 68 1930 1954
+type(
+  int
+)
+ident(
+  int_ref c2' "cset.ml" 62 1787 1810 "cset.ml" 62 1787 1813
+)
+"cset.ml" 68 1930 1955 "cset.ml" 68 1930 1956
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"cset.ml" 68 1930 1957 "cset.ml" 68 1930 1959
+type(
+  int
+)
+ident(
+  int_ref c2 "cset.ml" 62 1787 1796 "cset.ml" 62 1787 1798
+)
+"cset.ml" 68 1930 1951 "cset.ml" 68 1930 1959
+type(
+  bool
+)
+"cset.ml" 68 1930 1966 "cset.ml" 68 1930 1969
+type(
+  int
+)
+ident(
+  int_ref c2' "cset.ml" 62 1787 1810 "cset.ml" 62 1787 1813
+)
+"cset.ml" 68 1930 1970 "cset.ml" 68 1930 1971
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"cset.ml" 68 1930 1972 "cset.ml" 68 1930 1973
+type(
+  int
+)
+"cset.ml" 68 1930 1966 "cset.ml" 68 1930 1973
+type(
+  int
+)
+"cset.ml" 68 1930 1975 "cset.ml" 68 1930 1977
+type(
+  int
+)
+ident(
+  int_ref c2 "cset.ml" 62 1787 1796 "cset.ml" 62 1787 1798
+)
+"cset.ml" 68 1930 1965 "cset.ml" 68 1930 1978
+type(
+  int * int
+)
+"cset.ml" 68 1930 1982 "cset.ml" 68 1930 1983
+type(
+  (int * int) list
+)
+ident(
+  int_ref r "cset.ml" 62 1787 1801 "cset.ml" 62 1787 1802
+)
+"cset.ml" 68 1930 1965 "cset.ml" 68 1930 1983
+type(
+  (int * int) list
+)
+"cset.ml" 68 1930 1989 "cset.ml" 68 1930 1990
+type(
+  (int * int) list
+)
+ident(
+  int_ref r "cset.ml" 62 1787 1801 "cset.ml" 62 1787 1802
+)
+"cset.ml" 68 1930 1948 "cset.ml" 68 1930 1990
+type(
+  (int * int) list
+)
+"cset.ml" 69 1994 2005 "cset.ml" 69 1994 2007
+type(
+  int
+)
+ident(
+  int_ref c1 "cset.ml" 62 1787 1792 "cset.ml" 62 1787 1794
+)
+"cset.ml" 69 1994 2008 "cset.ml" 69 1994 2009
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"cset.ml" 69 1994 2010 "cset.ml" 69 1994 2013
+type(
+  int
+)
+ident(
+  int_ref c1' "cset.ml" 62 1787 1805 "cset.ml" 62 1787 1808
+)
+"cset.ml" 69 1994 2005 "cset.ml" 69 1994 2013
+type(
+  bool
+)
+"cset.ml" 70 2019 2030 "cset.ml" 70 2019 2032
+type(
+  int
+)
+ident(
+  int_ref c1 "cset.ml" 62 1787 1792 "cset.ml" 62 1787 1794
+)
+"cset.ml" 70 2019 2034 "cset.ml" 70 2019 2037
+type(
+  int
+)
+ident(
+  int_ref c1' "cset.ml" 62 1787 1805 "cset.ml" 62 1787 1808
+)
+"cset.ml" 70 2019 2038 "cset.ml" 70 2019 2039
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"cset.ml" 70 2019 2040 "cset.ml" 70 2019 2041
+type(
+  int
+)
+"cset.ml" 70 2019 2034 "cset.ml" 70 2019 2041
+type(
+  int
+)
+"cset.ml" 70 2019 2029 "cset.ml" 70 2019 2042
+type(
+  int * int
+)
+"cset.ml" 70 2019 2044 "cset.ml" 70 2019 2048
+type(
+  (int * int) list -> (int * int) list -> (int * int) list
+)
+ident(
+  int_ref diff "cset.ml" 59 1718 1726 "cset.ml" 59 1718 1730
+)
+"cset.ml" 70 2019 2049 "cset.ml" 70 2019 2052
+type(
+  (int * int) list
+)
+ident(
+  int_ref r'' "cset.ml" 68 1930 1942 "cset.ml" 68 1930 1945
+)
+"cset.ml" 70 2019 2053 "cset.ml" 70 2019 2055
+type(
+  (int * int) list
+)
+ident(
+  int_ref r' "cset.ml" 62 1787 1816 "cset.ml" 62 1787 1818
+)
+"cset.ml" 70 2019 2044 "cset.ml" 70 2019 2055
+call(
+  stack
+)
+type(
+  (int * int) list
+)
+"cset.ml" 70 2019 2029 "cset.ml" 70 2019 2055
+type(
+  (int * int) list
+)
+"cset.ml" 72 2069 2079 "cset.ml" 72 2069 2083
+type(
+  (int * int) list -> (int * int) list -> (int * int) list
+)
+ident(
+  int_ref diff "cset.ml" 59 1718 1726 "cset.ml" 59 1718 1730
+)
+"cset.ml" 72 2069 2084 "cset.ml" 72 2069 2087
+type(
+  (int * int) list
+)
+ident(
+  int_ref r'' "cset.ml" 68 1930 1942 "cset.ml" 68 1930 1945
+)
+"cset.ml" 72 2069 2088 "cset.ml" 72 2069 2090
+type(
+  (int * int) list
+)
+ident(
+  int_ref r' "cset.ml" 62 1787 1816 "cset.ml" 62 1787 1818
+)
+"cset.ml" 72 2069 2079 "cset.ml" 72 2069 2090
+call(
+  tail
+)
+type(
+  (int * int) list
+)
+"cset.ml" 69 1994 2002 "cset.ml" 72 2069 2090
+type(
+  (int * int) list
+)
+"cset.ml" 68 1930 1938 "cset.ml" 72 2069 2090
+type(
+  (int * int) list
+)
+"cset.ml" 65 1873 1884 "cset.ml" 72 2069 2090
+type(
+  (int * int) list
+)
+"cset.ml" 63 1822 1828 "cset.ml" 72 2069 2090
+type(
+  (int * int) list
+)
+"cset.ml" 59 1718 1739 "cset.ml" 72 2069 2090
+type(
+  (int * int) list
+)
+"cset.ml" 75 2093 2097 "cset.ml" 75 2093 2100
+type(
+  (int * int) list
+)
+ident(
+  def eof "cset.ml" 79 2184 2184 "cset.ml" 1 0 -1
+)
+"cset.ml" 75 2093 2103 "cset.ml" 75 2093 2112
+type(
+  int -> (int * int) list
+)
+ident(
+  int_ref singleton "cset.ml" 24 1003 1007 "cset.ml" 24 1003 1016
+)
+"cset.ml" 75 2093 2113 "cset.ml" 75 2093 2116
+type(
+  int
+)
+"cset.ml" 75 2093 2103 "cset.ml" 75 2093 2116
+call(
+  stack
+)
+type(
+  (int * int) list
+)
+"cset.ml" 76 2117 2121 "cset.ml" 76 2117 2130
+type(
+  (int * int) list
+)
+ident(
+  def all_chars "cset.ml" 79 2184 2184 "cset.ml" 1 0 -1
+)
+"cset.ml" 76 2117 2133 "cset.ml" 76 2117 2141
+type(
+  int -> int -> (int * int) list
+)
+ident(
+  int_ref interval "cset.ml" 26 1028 1032 "cset.ml" 26 1028 1040
+)
+"cset.ml" 76 2117 2142 "cset.ml" 76 2117 2143
+type(
+  int
+)
+"cset.ml" 76 2117 2144 "cset.ml" 76 2117 2147
+type(
+  int
+)
+"cset.ml" 76 2117 2133 "cset.ml" 76 2117 2147
+call(
+  stack
+)
+type(
+  (int * int) list
+)
+"cset.ml" 77 2148 2152 "cset.ml" 77 2148 2165
+type(
+  (int * int) list
+)
+ident(
+  def all_chars_eof "cset.ml" 79 2184 2184 "cset.ml" 1 0 -1
+)
+"cset.ml" 77 2148 2168 "cset.ml" 77 2148 2176
+type(
+  int -> int -> (int * int) list
+)
+ident(
+  int_ref interval "cset.ml" 26 1028 1032 "cset.ml" 26 1028 1040
+)
+"cset.ml" 77 2148 2177 "cset.ml" 77 2148 2178
+type(
+  int
+)
+"cset.ml" 77 2148 2179 "cset.ml" 77 2148 2182
+type(
+  int
+)
+"cset.ml" 77 2148 2168 "cset.ml" 77 2148 2182
+call(
+  stack
+)
+type(
+  (int * int) list
+)
+"cset.ml" 79 2184 2188 "cset.ml" 79 2184 2198
+type(
+  (int * int) list -> (int * int) list
+)
+ident(
+  def complement "cset.ml" 81 2221 2221 "cset.ml" 1 0 -1
+)
+"cset.ml" 79 2184 2199 "cset.ml" 79 2184 2200
+type(
+  (int * int) list
+)
+ident(
+  def s "cset.ml" 79 2184 2203 "cset.ml" 79 2184 2219
+)
+"cset.ml" 79 2184 2203 "cset.ml" 79 2184 2207
+type(
+  (int * int) list -> (int * int) list -> (int * int) list
+)
+ident(
+  int_ref diff "cset.ml" 59 1718 1726 "cset.ml" 59 1718 1730
+)
+"cset.ml" 79 2184 2208 "cset.ml" 79 2184 2217
+type(
+  (int * int) list
+)
+ident(
+  int_ref all_chars "cset.ml" 76 2117 2121 "cset.ml" 76 2117 2130
+)
+"cset.ml" 79 2184 2218 "cset.ml" 79 2184 2219
+type(
+  (int * int) list
+)
+ident(
+  int_ref s "cset.ml" 79 2184 2199 "cset.ml" 79 2184 2200
+)
+"cset.ml" 79 2184 2203 "cset.ml" 79 2184 2219
+call(
+  tail
+)
+type(
+  (int * int) list
+)
+"cset.ml" 81 2221 2225 "cset.ml" 81 2221 2237
+type(
+  ((int * int) list * 'a) list -> 'a array
+)
+ident(
+  def env_to_array "cset.ml" 94 2514 2521 "cset.ml" 1 0 -1
+)
+"cset.ml" 81 2221 2238 "cset.ml" 81 2221 2241
+type(
+  ((int * int) list * 'a) list
+)
+ident(
+  def env "cset.ml" 81 2221 2244 "cset.ml" 94 2514 2521
+)
+"cset.ml" 81 2221 2250 "cset.ml" 81 2221 2253
+type(
+  ((int * int) list * 'a) list
+)
+ident(
+  int_ref env "cset.ml" 81 2221 2238 "cset.ml" 81 2221 2241
+)
+"cset.ml" 82 2259 2261 "cset.ml" 82 2259 2263
+type(
+  ((int * int) list * 'a) list
+)
+"cset.ml" 82 2259 2282 "cset.ml" 82 2259 2287
+type(
+  bool
+)
+"cset.ml" 82 2259 2275 "cset.ml" 82 2259 2287
+type(
+  'a array
+)
+"cset.ml" 83 2288 2291 "cset.ml" 83 2288 2292
+type(
+  (int * int) list
+)
+"cset.ml" 83 2288 2293 "cset.ml" 83 2288 2294
+type(
+  'a
+)
+ident(
+  def x "cset.ml" 84 2304 2308 "cset.ml" 94 2514 2521
+)
+"cset.ml" 83 2288 2290 "cset.ml" 83 2288 2295
+type(
+  (int * int) list * 'a
+)
+"cset.ml" 83 2288 2297 "cset.ml" 83 2288 2300
+type(
+  ((int * int) list * 'a) list
+)
+ident(
+  def rem "cset.ml" 84 2304 2308 "cset.ml" 94 2514 2521
+)
+"cset.ml" 83 2288 2290 "cset.ml" 83 2288 2300
+type(
+  ((int * int) list * 'a) list
+)
+"cset.ml" 84 2304 2312 "cset.ml" 84 2304 2315
+type(
+  'a array
+)
+ident(
+  def res "cset.ml" 85 2340 2344 "cset.ml" 94 2514 2521
+)
+"cset.ml" 84 2304 2318 "cset.ml" 84 2304 2330
+type(
+  int -> 'a -> 'a array
+)
+ident(
+  ext_ref Array.create
+)
+"cset.ml" 84 2304 2331 "cset.ml" 84 2304 2334
+type(
+  int
+)
+"cset.ml" 84 2304 2335 "cset.ml" 84 2304 2336
+type(
+  'a
+)
+ident(
+  int_ref x "cset.ml" 83 2288 2293 "cset.ml" 83 2288 2294
+)
+"cset.ml" 84 2304 2318 "cset.ml" 84 2304 2336
+type(
+  'a array
+)
+"cset.ml" 85 2340 2344 "cset.ml" 85 2340 2353
+type(
+  ((int * int) list * 'a -> unit) -> ((int * int) list * 'a) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"cset.ml" 86 2354 2366 "cset.ml" 86 2354 2367
+type(
+  (int * int) list
+)
+ident(
+  def c "cset.ml" 87 2374 2382 "cset.ml" 92 2489 2500
+)
+"cset.ml" 86 2354 2368 "cset.ml" 86 2354 2369
+type(
+  'a
+)
+ident(
+  def y "cset.ml" 87 2374 2382 "cset.ml" 92 2489 2500
+)
+"cset.ml" 86 2354 2365 "cset.ml" 86 2354 2370
+type(
+  (int * int) list * 'a
+)
+"cset.ml" 87 2374 2382 "cset.ml" 87 2374 2391
+type(
+  (int * int -> unit) -> (int * int) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"cset.ml" 88 2392 2408 "cset.ml" 88 2392 2409
+type(
+  int
+)
+ident(
+  def i "cset.ml" 89 2416 2428 "cset.ml" 91 2471 2487
+)
+"cset.ml" 88 2392 2410 "cset.ml" 88 2392 2411
+type(
+  int
+)
+ident(
+  def j "cset.ml" 89 2416 2428 "cset.ml" 91 2471 2487
+)
+"cset.ml" 88 2392 2407 "cset.ml" 88 2392 2412
+type(
+  int * int
+)
+"cset.ml" 89 2416 2434 "cset.ml" 89 2416 2435
+type(
+  int
+)
+ident(
+  int_ref i "cset.ml" 88 2392 2408 "cset.ml" 88 2392 2409
+)
+"cset.ml" 89 2416 2439 "cset.ml" 89 2416 2440
+type(
+  int
+)
+ident(
+  int_ref j "cset.ml" 88 2392 2410 "cset.ml" 88 2392 2411
+)
+"cset.ml" 90 2444 2458 "cset.ml" 90 2444 2461
+type(
+  'a array
+)
+ident(
+  int_ref res "cset.ml" 84 2304 2312 "cset.ml" 84 2304 2315
+)
+"cset.ml" 90 2444 2463 "cset.ml" 90 2444 2464
+type(
+  int
+)
+ident(
+  int_ref k "cset.ml" 89 2416 2428 "cset.ml" 91 2471 2487
+)
+"cset.ml" 90 2444 2469 "cset.ml" 90 2444 2470
+type(
+  'a
+)
+ident(
+  int_ref y "cset.ml" 86 2354 2368 "cset.ml" 86 2354 2369
+)
+"cset.ml" 90 2444 2458 "cset.ml" 90 2444 2470
+type(
+  unit
+)
+"cset.ml" 89 2416 2428 "cset.ml" 91 2471 2487
+type(
+  unit
+)
+"cset.ml" 88 2392 2402 "cset.ml" 91 2471 2488
+type(
+  int * int -> unit
+)
+"cset.ml" 92 2489 2499 "cset.ml" 92 2489 2500
+type(
+  (int * int) list
+)
+ident(
+  int_ref c "cset.ml" 86 2354 2366 "cset.ml" 86 2354 2367
+)
+"cset.ml" 87 2374 2382 "cset.ml" 92 2489 2500
+call(
+  tail
+)
+type(
+  unit
+)
+"cset.ml" 86 2354 2360 "cset.ml" 92 2489 2501
+type(
+  (int * int) list * 'a -> unit
+)
+"cset.ml" 93 2502 2508 "cset.ml" 93 2502 2511
+type(
+  ((int * int) list * 'a) list
+)
+ident(
+  int_ref rem "cset.ml" 83 2288 2297 "cset.ml" 83 2288 2300
+)
+"cset.ml" 85 2340 2344 "cset.ml" 93 2502 2511
+call(
+  stack
+)
+type(
+  unit
+)
+"cset.ml" 94 2514 2518 "cset.ml" 94 2514 2521
+type(
+  'a array
+)
+ident(
+  int_ref res "cset.ml" 84 2304 2312 "cset.ml" 84 2304 2315
+)
+"cset.ml" 85 2340 2344 "cset.ml" 94 2514 2521
+type(
+  'a array
+)
+"cset.ml" 84 2304 2308 "cset.ml" 94 2514 2521
+type(
+  'a array
+)
+"cset.ml" 81 2221 2244 "cset.ml" 94 2514 2521
+type(
+  'a array
+)

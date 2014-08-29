@@ -1,0 +1,650 @@
+"exec.ml" 16 928 932 "exec.ml" 16 928 943
+type(
+  bool ref
+)
+ident(
+  def interrupted "exec.ml" 18 957 957 "exec.ml" 1 0 -1
+)
+"exec.ml" 16 928 946 "exec.ml" 16 928 949
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"exec.ml" 16 928 950 "exec.ml" 16 928 955
+type(
+  bool
+)
+"exec.ml" 16 928 946 "exec.ml" 16 928 955
+type(
+  bool ref
+)
+"exec.ml" 18 957 961 "exec.ml" 18 957 973
+type(
+  bool ref
+)
+ident(
+  def is_protected "exec.ml" 20 987 987 "exec.ml" 1 0 -1
+)
+"exec.ml" 18 957 976 "exec.ml" 18 957 979
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"exec.ml" 18 957 980 "exec.ml" 18 957 985
+type(
+  bool
+)
+"exec.ml" 18 957 976 "exec.ml" 18 957 985
+type(
+  bool ref
+)
+"exec.ml" 20 987 991 "exec.ml" 20 987 996
+type(
+  'a -> unit
+)
+ident(
+  def break "exec.ml" 25 1076 1076 "exec.ml" 1 0 -1
+)
+"exec.ml" 20 987 997 "exec.ml" 20 987 1003
+type(
+  'a
+)
+ident(
+  def signum "exec.ml" 21 1006 1008 "exec.ml" 23 1052 1074
+)
+"exec.ml" 21 1006 1011 "exec.ml" 21 1006 1012
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"exec.ml" 21 1006 1012 "exec.ml" 21 1006 1024
+type(
+  bool ref
+)
+ident(
+  int_ref is_protected "exec.ml" 18 957 961 "exec.ml" 18 957 973
+)
+"exec.ml" 21 1006 1011 "exec.ml" 21 1006 1024
+type(
+  bool
+)
+"exec.ml" 22 1025 1032 "exec.ml" 22 1025 1043
+type(
+  bool ref
+)
+ident(
+  int_ref interrupted "exec.ml" 16 928 932 "exec.ml" 16 928 943
+)
+"exec.ml" 22 1025 1044 "exec.ml" 22 1025 1046
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"exec.ml" 22 1025 1047 "exec.ml" 22 1025 1051
+type(
+  bool
+)
+"exec.ml" 22 1025 1032 "exec.ml" 22 1025 1051
+type(
+  unit
+)
+"exec.ml" 23 1052 1059 "exec.ml" 23 1052 1064
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"exec.ml" 23 1052 1065 "exec.ml" 23 1052 1074
+type(
+  exn
+)
+"exec.ml" 23 1052 1059 "exec.ml" 23 1052 1074
+type(
+  unit
+)
+"exec.ml" 21 1006 1008 "exec.ml" 23 1052 1074
+type(
+  unit
+)
+"exec.ml" 26 1084 1092 "exec.ml" 26 1084 1103
+type(
+  string
+)
+ident(
+  ext_ref Sys.os_type
+)
+"exec.ml" 27 1109 1113 "exec.ml" 27 1109 1120
+type(
+  string
+)
+"exec.ml" 27 1109 1124 "exec.ml" 27 1109 1126
+type(
+  unit
+)
+"exec.ml" 28 1127 1131 "exec.ml" 28 1127 1132
+type(
+  string
+)
+"exec.ml" 29 1136 1142 "exec.ml" 29 1136 1156
+type(
+  int -> Sys.signal_behavior -> unit
+)
+ident(
+  ext_ref Sys.set_signal
+)
+"exec.ml" 29 1136 1157 "exec.ml" 29 1136 1167
+type(
+  int
+)
+ident(
+  ext_ref Sys.sigint
+)
+"exec.ml" 29 1136 1187 "exec.ml" 29 1136 1192
+type(
+  int -> unit
+)
+ident(
+  int_ref break "exec.ml" 20 987 991 "exec.ml" 20 987 996
+)
+"exec.ml" 29 1136 1168 "exec.ml" 29 1136 1193
+type(
+  Sys.signal_behavior
+)
+"exec.ml" 29 1136 1142 "exec.ml" 29 1136 1193
+call(
+  stack
+)
+type(
+  unit
+)
+"exec.ml" 30 1195 1201 "exec.ml" 30 1195 1215
+type(
+  int -> Sys.signal_behavior -> unit
+)
+ident(
+  ext_ref Sys.set_signal
+)
+"exec.ml" 30 1195 1216 "exec.ml" 30 1195 1227
+type(
+  int
+)
+ident(
+  ext_ref Sys.sigpipe
+)
+"exec.ml" 30 1195 1251 "exec.ml" 30 1195 1252
+type(
+  int
+)
+"exec.ml" 30 1195 1256 "exec.ml" 30 1195 1261
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"exec.ml" 30 1195 1262 "exec.ml" 30 1195 1273
+type(
+  exn
+)
+"exec.ml" 30 1195 1256 "exec.ml" 30 1195 1273
+type(
+  unit
+)
+"exec.ml" 30 1195 1246 "exec.ml" 30 1195 1274
+type(
+  int -> unit
+)
+"exec.ml" 30 1195 1228 "exec.ml" 30 1195 1275
+type(
+  Sys.signal_behavior
+)
+"exec.ml" 30 1195 1201 "exec.ml" 30 1195 1275
+call(
+  stack
+)
+type(
+  unit
+)
+"exec.ml" 29 1136 1142 "exec.ml" 30 1195 1275
+type(
+  unit
+)
+"exec.ml" 26 1084 1086 "exec.ml" 30 1195 1275
+type(
+  unit
+)
+"exec.ml" 32 1277 1281 "exec.ml" 32 1277 1288
+type(
+  (unit -> unit) -> unit
+)
+ident(
+  def protect "exec.ml" 43 1514 1514 "exec.ml" 1 0 -1
+)
+"exec.ml" 32 1277 1289 "exec.ml" 32 1277 1290
+type(
+  unit -> unit
+)
+ident(
+  def f "exec.ml" 33 1293 1295 "exec.ml" 41 1507 1512
+)
+"exec.ml" 33 1293 1298 "exec.ml" 33 1293 1299
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"exec.ml" 33 1293 1299 "exec.ml" 33 1293 1311
+type(
+  bool ref
+)
+ident(
+  int_ref is_protected "exec.ml" 18 957 961 "exec.ml" 18 957 973
+)
+"exec.ml" 33 1293 1298 "exec.ml" 33 1293 1311
+type(
+  bool
+)
+"exec.ml" 34 1317 1321 "exec.ml" 34 1317 1322
+type(
+  unit -> unit
+)
+ident(
+  int_ref f "exec.ml" 32 1277 1289 "exec.ml" 32 1277 1290
+)
+"exec.ml" 34 1317 1323 "exec.ml" 34 1317 1325
+type(
+  unit
+)
+"exec.ml" 34 1317 1321 "exec.ml" 34 1317 1325
+call(
+  tail
+)
+type(
+  unit
+)
+"exec.ml" 36 1339 1343 "exec.ml" 36 1339 1355
+type(
+  bool ref
+)
+ident(
+  int_ref is_protected "exec.ml" 18 957 961 "exec.ml" 18 957 973
+)
+"exec.ml" 36 1339 1356 "exec.ml" 36 1339 1358
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"exec.ml" 36 1339 1359 "exec.ml" 36 1339 1363
+type(
+  bool
+)
+"exec.ml" 36 1339 1343 "exec.ml" 36 1339 1363
+type(
+  unit
+)
+"exec.ml" 37 1365 1372 "exec.ml" 37 1365 1375
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"exec.ml" 37 1365 1376 "exec.ml" 37 1365 1377
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"exec.ml" 37 1365 1377 "exec.ml" 37 1365 1388
+type(
+  bool ref
+)
+ident(
+  int_ref interrupted "exec.ml" 16 928 932 "exec.ml" 16 928 943
+)
+"exec.ml" 37 1365 1376 "exec.ml" 37 1365 1388
+type(
+  bool
+)
+"exec.ml" 37 1365 1372 "exec.ml" 37 1365 1388
+type(
+  bool
+)
+"exec.ml" 38 1394 1401 "exec.ml" 38 1394 1402
+type(
+  unit -> unit
+)
+ident(
+  int_ref f "exec.ml" 32 1277 1289 "exec.ml" 32 1277 1290
+)
+"exec.ml" 38 1394 1403 "exec.ml" 38 1394 1405
+type(
+  unit
+)
+"exec.ml" 38 1394 1401 "exec.ml" 38 1394 1405
+call(
+  stack
+)
+type(
+  unit
+)
+"exec.ml" 37 1365 1369 "exec.ml" 38 1394 1405
+type(
+  unit
+)
+"exec.ml" 39 1407 1411 "exec.ml" 39 1407 1423
+type(
+  bool ref
+)
+ident(
+  int_ref is_protected "exec.ml" 18 957 961 "exec.ml" 18 957 973
+)
+"exec.ml" 39 1407 1424 "exec.ml" 39 1407 1426
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"exec.ml" 39 1407 1427 "exec.ml" 39 1407 1432
+type(
+  bool
+)
+"exec.ml" 39 1407 1411 "exec.ml" 39 1407 1432
+type(
+  unit
+)
+"exec.ml" 40 1434 1441 "exec.ml" 40 1434 1442
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"exec.ml" 40 1434 1442 "exec.ml" 40 1434 1453
+type(
+  bool ref
+)
+ident(
+  int_ref interrupted "exec.ml" 16 928 932 "exec.ml" 16 928 943
+)
+"exec.ml" 40 1434 1441 "exec.ml" 40 1434 1453
+type(
+  bool
+)
+"exec.ml" 40 1434 1465 "exec.ml" 40 1434 1476
+type(
+  bool ref
+)
+ident(
+  int_ref interrupted "exec.ml" 16 928 932 "exec.ml" 16 928 943
+)
+"exec.ml" 40 1434 1477 "exec.ml" 40 1434 1479
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"exec.ml" 40 1434 1480 "exec.ml" 40 1434 1485
+type(
+  bool
+)
+"exec.ml" 40 1434 1465 "exec.ml" 40 1434 1485
+type(
+  unit
+)
+"exec.ml" 40 1434 1487 "exec.ml" 40 1434 1492
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"exec.ml" 40 1434 1493 "exec.ml" 40 1434 1502
+type(
+  exn
+)
+"exec.ml" 40 1434 1487 "exec.ml" 40 1434 1502
+type(
+  unit
+)
+"exec.ml" 40 1434 1459 "exec.ml" 40 1434 1506
+type(
+  unit
+)
+"exec.ml" 40 1434 1438 "exec.ml" 40 1434 1506
+type(
+  unit
+)
+"exec.ml" 39 1407 1411 "exec.ml" 40 1434 1506
+type(
+  unit
+)
+"exec.ml" 37 1365 1369 "exec.ml" 40 1434 1506
+type(
+  unit
+)
+"exec.ml" 35 1326 1333 "exec.ml" 41 1507 1512
+type(
+  unit
+)
+"exec.ml" 33 1293 1295 "exec.ml" 41 1507 1512
+type(
+  unit
+)
+"exec.ml" 43 1514 1518 "exec.ml" 43 1514 1527
+type(
+  (unit -> unit) -> unit
+)
+ident(
+  def unprotect "exec.ml" 51 1718 1723 "exec.ml" 1 0 -1
+)
+"exec.ml" 43 1514 1528 "exec.ml" 43 1514 1529
+type(
+  unit -> unit
+)
+ident(
+  def f "exec.ml" 44 1532 1534 "exec.ml" 51 1718 1723
+)
+"exec.ml" 44 1532 1537 "exec.ml" 44 1532 1540
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"exec.ml" 44 1532 1541 "exec.ml" 44 1532 1542
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"exec.ml" 44 1532 1542 "exec.ml" 44 1532 1554
+type(
+  bool ref
+)
+ident(
+  int_ref is_protected "exec.ml" 18 957 961 "exec.ml" 18 957 973
+)
+"exec.ml" 44 1532 1541 "exec.ml" 44 1532 1554
+type(
+  bool
+)
+"exec.ml" 44 1532 1537 "exec.ml" 44 1532 1554
+type(
+  bool
+)
+"exec.ml" 45 1560 1564 "exec.ml" 45 1560 1565
+type(
+  unit -> unit
+)
+ident(
+  int_ref f "exec.ml" 43 1514 1528 "exec.ml" 43 1514 1529
+)
+"exec.ml" 45 1560 1566 "exec.ml" 45 1560 1568
+type(
+  unit
+)
+"exec.ml" 45 1560 1564 "exec.ml" 45 1560 1568
+call(
+  tail
+)
+type(
+  unit
+)
+"exec.ml" 47 1582 1586 "exec.ml" 47 1582 1598
+type(
+  bool ref
+)
+ident(
+  int_ref is_protected "exec.ml" 18 957 961 "exec.ml" 18 957 973
+)
+"exec.ml" 47 1582 1599 "exec.ml" 47 1582 1601
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"exec.ml" 47 1582 1602 "exec.ml" 47 1582 1607
+type(
+  bool
+)
+"exec.ml" 47 1582 1586 "exec.ml" 47 1582 1607
+type(
+  unit
+)
+"exec.ml" 48 1609 1616 "exec.ml" 48 1609 1617
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"exec.ml" 48 1609 1617 "exec.ml" 48 1609 1628
+type(
+  bool ref
+)
+ident(
+  int_ref interrupted "exec.ml" 16 928 932 "exec.ml" 16 928 943
+)
+"exec.ml" 48 1609 1616 "exec.ml" 48 1609 1628
+type(
+  bool
+)
+"exec.ml" 48 1609 1640 "exec.ml" 48 1609 1651
+type(
+  bool ref
+)
+ident(
+  int_ref interrupted "exec.ml" 16 928 932 "exec.ml" 16 928 943
+)
+"exec.ml" 48 1609 1652 "exec.ml" 48 1609 1654
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"exec.ml" 48 1609 1655 "exec.ml" 48 1609 1660
+type(
+  bool
+)
+"exec.ml" 48 1609 1640 "exec.ml" 48 1609 1660
+type(
+  unit
+)
+"exec.ml" 48 1609 1662 "exec.ml" 48 1609 1667
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"exec.ml" 48 1609 1668 "exec.ml" 48 1609 1677
+type(
+  exn
+)
+"exec.ml" 48 1609 1662 "exec.ml" 48 1609 1677
+type(
+  unit
+)
+"exec.ml" 48 1609 1634 "exec.ml" 48 1609 1681
+type(
+  unit
+)
+"exec.ml" 48 1609 1613 "exec.ml" 48 1609 1681
+type(
+  unit
+)
+"exec.ml" 49 1683 1687 "exec.ml" 49 1683 1688
+type(
+  unit -> unit
+)
+ident(
+  int_ref f "exec.ml" 43 1514 1528 "exec.ml" 43 1514 1529
+)
+"exec.ml" 49 1683 1689 "exec.ml" 49 1683 1691
+type(
+  unit
+)
+"exec.ml" 49 1683 1687 "exec.ml" 49 1683 1691
+call(
+  stack
+)
+type(
+  unit
+)
+"exec.ml" 50 1693 1697 "exec.ml" 50 1693 1709
+type(
+  bool ref
+)
+ident(
+  int_ref is_protected "exec.ml" 18 957 961 "exec.ml" 18 957 973
+)
+"exec.ml" 50 1693 1710 "exec.ml" 50 1693 1712
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"exec.ml" 50 1693 1713 "exec.ml" 50 1693 1717
+type(
+  bool
+)
+"exec.ml" 50 1693 1697 "exec.ml" 50 1693 1717
+type(
+  unit
+)
+"exec.ml" 49 1683 1687 "exec.ml" 50 1693 1717
+type(
+  unit
+)
+"exec.ml" 48 1609 1613 "exec.ml" 50 1693 1717
+type(
+  unit
+)
+"exec.ml" 46 1569 1576 "exec.ml" 51 1718 1723
+type(
+  unit
+)
+"exec.ml" 44 1532 1534 "exec.ml" 51 1718 1723
+type(
+  unit
+)

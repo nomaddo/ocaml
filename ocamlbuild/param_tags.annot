@@ -1,0 +1,1063 @@
+"param_tags.ml" 16 854 873 "param_tags.ml" 16 854 889
+call(
+  stack
+)
+"param_tags.ml" 19 937 941 "param_tags.ml" 19 937 954
+type(
+  (string, StringSet.elt -> unit) Hashtbl.t
+)
+ident(
+  def declared_tags "param_tags.ml" 21 976 976 "param_tags.ml" 1 0 -1
+)
+"param_tags.ml" 19 937 957 "param_tags.ml" 19 937 971
+type(
+  ?random:bool -> int -> (string, StringSet.elt -> unit) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"param_tags.ml" 19 937 972 "param_tags.ml" 19 937 974
+type(
+  int
+)
+"param_tags.ml" 19 937 957 "param_tags.ml" 19 937 974
+call(
+  stack
+)
+type(
+  (string, StringSet.elt -> unit) Hashtbl.t
+)
+"param_tags.ml" 21 976 980 "param_tags.ml" 21 976 997
+type(
+  ((string * StringSet.elt option) * Loc.location option) list ref
+)
+ident(
+  def acknowledged_tags "param_tags.ml" 23 1008 1008 "param_tags.ml" 1 0 -1
+)
+"param_tags.ml" 21 976 1000 "param_tags.ml" 21 976 1003
+type(
+  ((string * StringSet.elt option) * Loc.location option) list ->
+  ((string * StringSet.elt option) * Loc.location option) list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"param_tags.ml" 21 976 1004 "param_tags.ml" 21 976 1006
+type(
+  ((string * StringSet.elt option) * Loc.location option) list
+)
+"param_tags.ml" 21 976 1000 "param_tags.ml" 21 976 1006
+type(
+  ((string * StringSet.elt option) * Loc.location option) list ref
+)
+"param_tags.ml" 23 1008 1012 "param_tags.ml" 23 1008 1021
+type(
+  (StringSet.elt -> unit) -> StringSet.elt -> unit
+)
+ident(
+  def only_once "param_tags.ml" 32 1217 1217 "param_tags.ml" 1 0 -1
+)
+"param_tags.ml" 23 1008 1022 "param_tags.ml" 23 1008 1023
+type(
+  StringSet.elt -> unit
+)
+ident(
+  def f "param_tags.ml" 24 1026 1028 "param_tags.ml" 30 1208 1215
+)
+"param_tags.ml" 24 1026 1032 "param_tags.ml" 24 1026 1041
+type(
+  StringSet.t ref
+)
+ident(
+  def instances "param_tags.ml" 25 1067 1069 "param_tags.ml" 30 1208 1215
+)
+"param_tags.ml" 24 1026 1044 "param_tags.ml" 24 1026 1047
+type(
+  StringSet.t -> StringSet.t ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"param_tags.ml" 24 1026 1048 "param_tags.ml" 24 1026 1063
+type(
+  StringSet.t
+)
+ident(
+  ext_ref StringSet.empty
+)
+"param_tags.ml" 24 1026 1044 "param_tags.ml" 24 1026 1063
+type(
+  StringSet.t ref
+)
+"param_tags.ml" 25 1067 1073 "param_tags.ml" 25 1067 1078
+type(
+  StringSet.elt
+)
+ident(
+  def param "param_tags.ml" 26 1082 1086 "param_tags.ml" 30 1208 1215
+)
+"param_tags.ml" 26 1082 1089 "param_tags.ml" 26 1082 1102
+type(
+  StringSet.elt -> StringSet.t -> bool
+)
+ident(
+  ext_ref StringSet.mem
+)
+"param_tags.ml" 26 1082 1103 "param_tags.ml" 26 1082 1108
+type(
+  StringSet.elt
+)
+ident(
+  int_ref param "param_tags.ml" 25 1067 1073 "param_tags.ml" 25 1067 1078
+)
+"param_tags.ml" 26 1082 1109 "param_tags.ml" 26 1082 1110
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"param_tags.ml" 26 1082 1110 "param_tags.ml" 26 1082 1119
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref instances "param_tags.ml" 24 1026 1032 "param_tags.ml" 24 1026 1041
+)
+"param_tags.ml" 26 1082 1109 "param_tags.ml" 26 1082 1119
+type(
+  StringSet.t
+)
+"param_tags.ml" 26 1082 1089 "param_tags.ml" 26 1082 1119
+call(
+  stack
+)
+type(
+  bool
+)
+"param_tags.ml" 26 1082 1125 "param_tags.ml" 26 1082 1127
+type(
+  unit
+)
+"param_tags.ml" 28 1143 1149 "param_tags.ml" 28 1143 1158
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref instances "param_tags.ml" 24 1026 1032 "param_tags.ml" 24 1026 1041
+)
+"param_tags.ml" 28 1143 1159 "param_tags.ml" 28 1143 1161
+type(
+  StringSet.t ref -> StringSet.t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"param_tags.ml" 28 1143 1162 "param_tags.ml" 28 1143 1175
+type(
+  StringSet.elt -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.add
+)
+"param_tags.ml" 28 1143 1176 "param_tags.ml" 28 1143 1181
+type(
+  StringSet.elt
+)
+ident(
+  int_ref param "param_tags.ml" 25 1067 1073 "param_tags.ml" 25 1067 1078
+)
+"param_tags.ml" 28 1143 1182 "param_tags.ml" 28 1143 1183
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"param_tags.ml" 28 1143 1183 "param_tags.ml" 28 1143 1192
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref instances "param_tags.ml" 24 1026 1032 "param_tags.ml" 24 1026 1041
+)
+"param_tags.ml" 28 1143 1182 "param_tags.ml" 28 1143 1192
+type(
+  StringSet.t
+)
+"param_tags.ml" 28 1143 1162 "param_tags.ml" 28 1143 1192
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"param_tags.ml" 28 1143 1149 "param_tags.ml" 28 1143 1192
+type(
+  unit
+)
+"param_tags.ml" 29 1194 1200 "param_tags.ml" 29 1194 1201
+type(
+  StringSet.elt -> unit
+)
+ident(
+  int_ref f "param_tags.ml" 23 1008 1022 "param_tags.ml" 23 1008 1023
+)
+"param_tags.ml" 29 1194 1202 "param_tags.ml" 29 1194 1207
+type(
+  StringSet.elt
+)
+ident(
+  int_ref param "param_tags.ml" 25 1067 1073 "param_tags.ml" 25 1067 1078
+)
+"param_tags.ml" 29 1194 1200 "param_tags.ml" 29 1194 1207
+call(
+  tail
+)
+type(
+  unit
+)
+"param_tags.ml" 27 1128 1137 "param_tags.ml" 30 1208 1215
+type(
+  unit
+)
+"param_tags.ml" 26 1082 1086 "param_tags.ml" 30 1208 1215
+type(
+  unit
+)
+"param_tags.ml" 25 1067 1069 "param_tags.ml" 30 1208 1215
+type(
+  StringSet.elt -> unit
+)
+"param_tags.ml" 24 1026 1028 "param_tags.ml" 30 1208 1215
+type(
+  StringSet.elt -> unit
+)
+"param_tags.ml" 32 1217 1221 "param_tags.ml" 32 1217 1228
+type(
+  string -> (StringSet.elt -> unit) -> unit
+)
+ident(
+  def declare "param_tags.ml" 35 1296 1296 "param_tags.ml" 1 0 -1
+)
+"param_tags.ml" 32 1217 1229 "param_tags.ml" 32 1217 1233
+type(
+  string
+)
+ident(
+  def name "param_tags.ml" 32 1217 1234 "param_tags.ml" 33 1243 1294
+)
+"param_tags.ml" 32 1217 1234 "param_tags.ml" 32 1217 1240
+type(
+  StringSet.elt -> unit
+)
+ident(
+  def action "param_tags.ml" 33 1243 1245 "param_tags.ml" 33 1243 1294
+)
+"param_tags.ml" 33 1243 1245 "param_tags.ml" 33 1243 1256
+type(
+  (string, StringSet.elt -> unit) Hashtbl.t ->
+  string -> (StringSet.elt -> unit) -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"param_tags.ml" 33 1243 1257 "param_tags.ml" 33 1243 1270
+type(
+  (string, StringSet.elt -> unit) Hashtbl.t
+)
+ident(
+  int_ref declared_tags "param_tags.ml" 19 937 941 "param_tags.ml" 19 937 954
+)
+"param_tags.ml" 33 1243 1271 "param_tags.ml" 33 1243 1275
+type(
+  string
+)
+ident(
+  int_ref name "param_tags.ml" 32 1217 1229 "param_tags.ml" 32 1217 1233
+)
+"param_tags.ml" 33 1243 1277 "param_tags.ml" 33 1243 1286
+type(
+  (StringSet.elt -> unit) -> StringSet.elt -> unit
+)
+ident(
+  int_ref only_once "param_tags.ml" 23 1008 1012 "param_tags.ml" 23 1008 1021
+)
+"param_tags.ml" 33 1243 1287 "param_tags.ml" 33 1243 1293
+type(
+  StringSet.elt -> unit
+)
+ident(
+  int_ref action "param_tags.ml" 32 1217 1234 "param_tags.ml" 32 1217 1240
+)
+"param_tags.ml" 33 1243 1276 "param_tags.ml" 33 1243 1294
+call(
+  stack
+)
+type(
+  StringSet.elt -> unit
+)
+"param_tags.ml" 33 1243 1245 "param_tags.ml" 33 1243 1294
+call(
+  tail
+)
+type(
+  unit
+)
+"param_tags.ml" 35 1296 1300 "param_tags.ml" 35 1296 1305
+type(
+  string -> string * string option
+)
+ident(
+  def parse "param_tags.ml" 37 1353 1353 "param_tags.ml" 1 0 -1
+)
+"param_tags.ml" 35 1296 1306 "param_tags.ml" 35 1296 1309
+type(
+  string
+)
+ident(
+  def tag "param_tags.ml" 35 1296 1312 "param_tags.ml" 35 1296 1351
+)
+"param_tags.ml" 35 1296 1312 "param_tags.ml" 35 1296 1326
+type(
+  Lexing.lexbuf -> string * string option
+)
+ident(
+  ext_ref Lexers.tag_gen
+)
+"param_tags.ml" 35 1296 1328 "param_tags.ml" 35 1296 1346
+type(
+  string -> Lexing.lexbuf
+)
+ident(
+  ext_ref Lexing.from_string
+)
+"param_tags.ml" 35 1296 1347 "param_tags.ml" 35 1296 1350
+type(
+  string
+)
+ident(
+  int_ref tag "param_tags.ml" 35 1296 1306 "param_tags.ml" 35 1296 1309
+)
+"param_tags.ml" 35 1296 1327 "param_tags.ml" 35 1296 1351
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"param_tags.ml" 35 1296 1312 "param_tags.ml" 35 1296 1351
+call(
+  tail
+)
+type(
+  string * string option
+)
+"param_tags.ml" 37 1353 1357 "param_tags.ml" 37 1353 1368
+type(
+  Loc.location option -> string -> unit
+)
+ident(
+  def acknowledge "param_tags.ml" 40 1454 1454 "param_tags.ml" 1 0 -1
+)
+"param_tags.ml" 37 1353 1369 "param_tags.ml" 37 1353 1378
+type(
+  Loc.location option
+)
+ident(
+  def maybe_loc "param_tags.ml" 37 1353 1379 "param_tags.ml" 38 1385 1452
+)
+"param_tags.ml" 37 1353 1379 "param_tags.ml" 37 1353 1382
+type(
+  string
+)
+ident(
+  def tag "param_tags.ml" 38 1385 1387 "param_tags.ml" 38 1385 1452
+)
+"param_tags.ml" 38 1385 1387 "param_tags.ml" 38 1385 1404
+type(
+  ((string * StringSet.elt option) * Loc.location option) list ref
+)
+ident(
+  int_ref acknowledged_tags "param_tags.ml" 21 976 980 "param_tags.ml" 21 976 997
+)
+"param_tags.ml" 38 1385 1405 "param_tags.ml" 38 1385 1407
+type(
+  ((string * StringSet.elt option) * Loc.location option) list ref ->
+  ((string * StringSet.elt option) * Loc.location option) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"param_tags.ml" 38 1385 1409 "param_tags.ml" 38 1385 1414
+type(
+  string -> string * StringSet.elt option
+)
+ident(
+  int_ref parse "param_tags.ml" 35 1296 1300 "param_tags.ml" 35 1296 1305
+)
+"param_tags.ml" 38 1385 1415 "param_tags.ml" 38 1385 1418
+type(
+  string
+)
+ident(
+  int_ref tag "param_tags.ml" 37 1353 1379 "param_tags.ml" 37 1353 1382
+)
+"param_tags.ml" 38 1385 1409 "param_tags.ml" 38 1385 1418
+call(
+  stack
+)
+type(
+  string * StringSet.elt option
+)
+"param_tags.ml" 38 1385 1420 "param_tags.ml" 38 1385 1429
+type(
+  Loc.location option
+)
+ident(
+  int_ref maybe_loc "param_tags.ml" 37 1353 1369 "param_tags.ml" 37 1353 1378
+)
+"param_tags.ml" 38 1385 1408 "param_tags.ml" 38 1385 1430
+type(
+  (string * StringSet.elt option) * Loc.location option
+)
+"param_tags.ml" 38 1385 1434 "param_tags.ml" 38 1385 1435
+type(
+  ((string * StringSet.elt option) * Loc.location option) list ref ->
+  ((string * StringSet.elt option) * Loc.location option) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"param_tags.ml" 38 1385 1435 "param_tags.ml" 38 1385 1452
+type(
+  ((string * StringSet.elt option) * Loc.location option) list ref
+)
+ident(
+  int_ref acknowledged_tags "param_tags.ml" 21 976 980 "param_tags.ml" 21 976 997
+)
+"param_tags.ml" 38 1385 1434 "param_tags.ml" 38 1385 1452
+type(
+  ((string * StringSet.elt option) * Loc.location option) list
+)
+"param_tags.ml" 38 1385 1408 "param_tags.ml" 38 1385 1452
+type(
+  ((string * StringSet.elt option) * Loc.location option) list
+)
+"param_tags.ml" 38 1385 1387 "param_tags.ml" 38 1385 1452
+type(
+  unit
+)
+"param_tags.ml" 40 1454 1458 "param_tags.ml" 40 1454 1476
+type(
+  ?quiet:bool ->
+  (string * StringSet.elt option) * Loc.location option -> unit
+)
+ident(
+  def really_acknowledge "param_tags.ml" 54 2085 2085 "param_tags.ml" 1 0 -1
+)
+"param_tags.ml" 40 1454 1479 "param_tags.ml" 40 1454 1484
+type(
+  bool
+)
+"param_tags.ml" 40 1454 1485 "param_tags.ml" 40 1454 1490
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "param_tags.ml" 40 1454 1485 "param_tags.ml" 40 1454 1490
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+"param_tags.ml" 40 1454 1494 "param_tags.ml" 40 1454 1498
+type(
+  string
+)
+ident(
+  def name "param_tags.ml" 41 1521 1523 "param_tags.ml" 52 2039 2083
+)
+"param_tags.ml" 40 1454 1500 "param_tags.ml" 40 1454 1505
+type(
+  StringSet.elt option
+)
+ident(
+  def param "param_tags.ml" 41 1521 1523 "param_tags.ml" 52 2039 2083
+)
+"param_tags.ml" 40 1454 1493 "param_tags.ml" 40 1454 1506
+type(
+  string * StringSet.elt option
+)
+"param_tags.ml" 40 1454 1508 "param_tags.ml" 40 1454 1517
+type(
+  Loc.location option
+)
+ident(
+  def maybe_loc "param_tags.ml" 41 1521 1523 "param_tags.ml" 52 2039 2083
+)
+"param_tags.ml" 40 1454 1492 "param_tags.ml" 40 1454 1518
+type(
+  (string * StringSet.elt option) * Loc.location option
+)
+"param_tags.ml" 41 1521 1529 "param_tags.ml" 41 1521 1534
+type(
+  StringSet.elt option
+)
+ident(
+  int_ref param "param_tags.ml" 40 1454 1500 "param_tags.ml" 40 1454 1505
+)
+"param_tags.ml" 42 1540 1546 "param_tags.ml" 42 1540 1550
+type(
+  StringSet.elt option
+)
+"param_tags.ml" 43 1554 1565 "param_tags.ml" 43 1554 1576
+type(
+  (string, StringSet.elt -> unit) Hashtbl.t -> string -> bool
+)
+ident(
+  ext_ref Hashtbl.mem
+)
+"param_tags.ml" 43 1554 1577 "param_tags.ml" 43 1554 1590
+type(
+  (string, StringSet.elt -> unit) Hashtbl.t
+)
+ident(
+  int_ref declared_tags "param_tags.ml" 19 937 941 "param_tags.ml" 19 937 954
+)
+"param_tags.ml" 43 1554 1591 "param_tags.ml" 43 1554 1595
+type(
+  string
+)
+ident(
+  int_ref name "param_tags.ml" 40 1454 1494 "param_tags.ml" 40 1454 1498
+)
+"param_tags.ml" 43 1554 1565 "param_tags.ml" 43 1554 1595
+call(
+  stack
+)
+type(
+  bool
+)
+"param_tags.ml" 43 1554 1596 "param_tags.ml" 43 1554 1598
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"param_tags.ml" 43 1554 1599 "param_tags.ml" 43 1554 1602
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"param_tags.ml" 43 1554 1603 "param_tags.ml" 43 1554 1608
+type(
+  bool
+)
+ident(
+  int_ref quiet "param_tags.ml" 40 1454 1479 "param_tags.ml" 40 1454 1484
+)
+"param_tags.ml" 43 1554 1599 "param_tags.ml" 43 1554 1608
+type(
+  bool
+)
+"param_tags.ml" 43 1554 1565 "param_tags.ml" 43 1554 1608
+type(
+  bool
+)
+"param_tags.ml" 44 1614 1624 "param_tags.ml" 44 1614 1635
+type(
+  ((Format.formatter -> Loc.location option -> unit) ->
+   Loc.location option -> string -> unit, Format.formatter, unit)
+  format ->
+  (Format.formatter -> Loc.location option -> unit) ->
+  Loc.location option -> string -> unit
+)
+ident(
+  ext_ref Log.eprintf
+)
+"param_tags.ml" 44 1614 1636 "param_tags.ml" 44 1614 1675
+type(
+  ((Format.formatter -> Loc.location option -> unit) ->
+   Loc.location option -> string -> unit, Format.formatter, unit)
+  format
+)
+"param_tags.ml" 45 1676 1688 "param_tags.ml" 45 1676 1708
+type(
+  Format.formatter -> Loc.location option -> unit
+)
+ident(
+  ext_ref Loc.print_loc_option
+)
+"param_tags.ml" 45 1676 1709 "param_tags.ml" 45 1676 1718
+type(
+  Loc.location option
+)
+ident(
+  int_ref maybe_loc "param_tags.ml" 40 1454 1508 "param_tags.ml" 40 1454 1517
+)
+"param_tags.ml" 45 1676 1719 "param_tags.ml" 45 1676 1723
+type(
+  string
+)
+ident(
+  int_ref name "param_tags.ml" 40 1454 1494 "param_tags.ml" 40 1454 1498
+)
+"param_tags.ml" 44 1614 1624 "param_tags.ml" 45 1676 1723
+call(
+  tail
+)
+type(
+  unit
+)
+"param_tags.ml" 43 1554 1562 "param_tags.ml" 45 1676 1723
+type(
+  unit
+)
+"param_tags.ml" 46 1724 1735 "param_tags.ml" 46 1724 1740
+type(
+  StringSet.elt
+)
+ident(
+  def param "param_tags.ml" 47 1744 1752 "param_tags.ml" 52 2039 2083
+)
+"param_tags.ml" 46 1724 1730 "param_tags.ml" 46 1724 1740
+type(
+  StringSet.elt option
+)
+"param_tags.ml" 47 1744 1756 "param_tags.ml" 47 1744 1763
+type(
+  (StringSet.elt -> unit) list
+)
+ident(
+  def actions "param_tags.ml" 48 1816 1824 "param_tags.ml" 52 2039 2083
+)
+"param_tags.ml" 47 1744 1766 "param_tags.ml" 47 1744 1774
+type(
+  (StringSet.elt -> unit) list -> (StringSet.elt -> unit) list
+)
+ident(
+  ext_ref List.rev
+)
+"param_tags.ml" 47 1744 1776 "param_tags.ml" 47 1744 1792
+type(
+  (string, StringSet.elt -> unit) Hashtbl.t ->
+  string -> (StringSet.elt -> unit) list
+)
+ident(
+  ext_ref Hashtbl.find_all
+)
+"param_tags.ml" 47 1744 1793 "param_tags.ml" 47 1744 1806
+type(
+  (string, StringSet.elt -> unit) Hashtbl.t
+)
+ident(
+  int_ref declared_tags "param_tags.ml" 19 937 941 "param_tags.ml" 19 937 954
+)
+"param_tags.ml" 47 1744 1807 "param_tags.ml" 47 1744 1811
+type(
+  string
+)
+ident(
+  int_ref name "param_tags.ml" 40 1454 1494 "param_tags.ml" 40 1454 1498
+)
+"param_tags.ml" 47 1744 1775 "param_tags.ml" 47 1744 1812
+call(
+  stack
+)
+type(
+  (StringSet.elt -> unit) list
+)
+"param_tags.ml" 47 1744 1766 "param_tags.ml" 47 1744 1812
+call(
+  stack
+)
+type(
+  (StringSet.elt -> unit) list
+)
+"param_tags.ml" 48 1816 1827 "param_tags.ml" 48 1816 1834
+type(
+  (StringSet.elt -> unit) list
+)
+ident(
+  int_ref actions "param_tags.ml" 47 1744 1756 "param_tags.ml" 47 1744 1763
+)
+"param_tags.ml" 48 1816 1835 "param_tags.ml" 48 1816 1836
+type(
+  (StringSet.elt -> unit) list -> (StringSet.elt -> unit) list -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"param_tags.ml" 48 1816 1837 "param_tags.ml" 48 1816 1839
+type(
+  (StringSet.elt -> unit) list
+)
+"param_tags.ml" 48 1816 1827 "param_tags.ml" 48 1816 1839
+type(
+  bool
+)
+"param_tags.ml" 48 1816 1840 "param_tags.ml" 48 1816 1842
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"param_tags.ml" 48 1816 1843 "param_tags.ml" 48 1816 1846
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"param_tags.ml" 48 1816 1847 "param_tags.ml" 48 1816 1852
+type(
+  bool
+)
+ident(
+  int_ref quiet "param_tags.ml" 40 1454 1479 "param_tags.ml" 40 1454 1484
+)
+"param_tags.ml" 48 1816 1843 "param_tags.ml" 48 1816 1852
+type(
+  bool
+)
+"param_tags.ml" 48 1816 1827 "param_tags.ml" 48 1816 1852
+type(
+  bool
+)
+"param_tags.ml" 49 1858 1868 "param_tags.ml" 49 1858 1879
+type(
+  ((Format.formatter -> Loc.location option -> unit) ->
+   Loc.location option -> string -> StringSet.elt -> unit, Format.formatter,
+   unit)
+  format ->
+  (Format.formatter -> Loc.location option -> unit) ->
+  Loc.location option -> string -> StringSet.elt -> unit
+)
+ident(
+  ext_ref Log.eprintf
+)
+"param_tags.ml" 49 1858 1880 "param_tags.ml" 50 1930 1983
+type(
+  ((Format.formatter -> Loc.location option -> unit) ->
+   Loc.location option -> string -> StringSet.elt -> unit, Format.formatter,
+   unit)
+  format
+)
+"param_tags.ml" 51 1984 1996 "param_tags.ml" 51 1984 2016
+type(
+  Format.formatter -> Loc.location option -> unit
+)
+ident(
+  ext_ref Loc.print_loc_option
+)
+"param_tags.ml" 51 1984 2017 "param_tags.ml" 51 1984 2026
+type(
+  Loc.location option
+)
+ident(
+  int_ref maybe_loc "param_tags.ml" 40 1454 1508 "param_tags.ml" 40 1454 1517
+)
+"param_tags.ml" 51 1984 2027 "param_tags.ml" 51 1984 2031
+type(
+  string
+)
+ident(
+  int_ref name "param_tags.ml" 40 1454 1494 "param_tags.ml" 40 1454 1498
+)
+"param_tags.ml" 51 1984 2032 "param_tags.ml" 51 1984 2037
+type(
+  StringSet.elt
+)
+ident(
+  int_ref param "param_tags.ml" 46 1724 1735 "param_tags.ml" 46 1724 1740
+)
+"param_tags.ml" 49 1858 1868 "param_tags.ml" 51 1984 2037
+call(
+  stack
+)
+type(
+  unit
+)
+"param_tags.ml" 48 1816 1824 "param_tags.ml" 51 1984 2037
+type(
+  unit
+)
+"param_tags.ml" 52 2039 2047 "param_tags.ml" 52 2039 2056
+type(
+  ((StringSet.elt -> unit) -> unit) -> (StringSet.elt -> unit) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"param_tags.ml" 52 2039 2062 "param_tags.ml" 52 2039 2063
+type(
+  StringSet.elt -> unit
+)
+ident(
+  def f "param_tags.ml" 52 2039 2067 "param_tags.ml" 52 2039 2074
+)
+"param_tags.ml" 52 2039 2067 "param_tags.ml" 52 2039 2068
+type(
+  StringSet.elt -> unit
+)
+ident(
+  int_ref f "param_tags.ml" 52 2039 2062 "param_tags.ml" 52 2039 2063
+)
+"param_tags.ml" 52 2039 2069 "param_tags.ml" 52 2039 2074
+type(
+  StringSet.elt
+)
+ident(
+  int_ref param "param_tags.ml" 46 1724 1735 "param_tags.ml" 46 1724 1740
+)
+"param_tags.ml" 52 2039 2067 "param_tags.ml" 52 2039 2074
+call(
+  tail
+)
+type(
+  unit
+)
+"param_tags.ml" 52 2039 2057 "param_tags.ml" 52 2039 2075
+type(
+  (StringSet.elt -> unit) -> unit
+)
+"param_tags.ml" 52 2039 2076 "param_tags.ml" 52 2039 2083
+type(
+  (StringSet.elt -> unit) list
+)
+ident(
+  int_ref actions "param_tags.ml" 47 1744 1756 "param_tags.ml" 47 1744 1763
+)
+"param_tags.ml" 52 2039 2047 "param_tags.ml" 52 2039 2083
+call(
+  tail
+)
+type(
+  unit
+)
+"param_tags.ml" 48 1816 1824 "param_tags.ml" 52 2039 2083
+type(
+  unit
+)
+"param_tags.ml" 47 1744 1752 "param_tags.ml" 52 2039 2083
+type(
+  unit
+)
+"param_tags.ml" 41 1521 1523 "param_tags.ml" 52 2039 2083
+type(
+  unit
+)
+"param_tags.ml" 54 2085 2089 "param_tags.ml" 54 2085 2101
+type(
+  ?quiet:bool -> Tags.t -> unit
+)
+ident(
+  def partial_init "param_tags.ml" 57 2191 2191 "param_tags.ml" 1 0 -1
+)
+"param_tags.ml" 54 2085 2103 "param_tags.ml" 54 2085 2108
+type(
+  bool option
+)
+ident(
+  def quiet "param_tags.ml" 54 2085 2109 "param_tags.ml" 55 2116 2189
+)
+"param_tags.ml" 54 2085 2109 "param_tags.ml" 54 2085 2113
+type(
+  Tags.t
+)
+ident(
+  def tags "param_tags.ml" 55 2116 2118 "param_tags.ml" 55 2116 2189
+)
+"param_tags.ml" 55 2116 2118 "param_tags.ml" 55 2116 2127
+type(
+  (Tags.elt -> unit) -> Tags.t -> unit
+)
+ident(
+  ext_ref Tags.iter
+)
+"param_tags.ml" 55 2116 2133 "param_tags.ml" 55 2116 2136
+type(
+  Tags.elt
+)
+ident(
+  def tag "param_tags.ml" 55 2116 2140 "param_tags.ml" 55 2116 2183
+)
+"param_tags.ml" 55 2116 2140 "param_tags.ml" 55 2116 2158
+type(
+  ?quiet:bool ->
+  (string * StringSet.elt option) * Loc.location option -> unit
+)
+ident(
+  int_ref really_acknowledge "param_tags.ml" 40 1454 1458 "param_tags.ml" 40 1454 1476
+)
+"param_tags.ml" 55 2116 2160 "param_tags.ml" 55 2116 2165
+type(
+  bool option
+)
+ident(
+  int_ref quiet "param_tags.ml" 54 2085 2103 "param_tags.ml" 54 2085 2108
+)
+"param_tags.ml" 55 2116 2167 "param_tags.ml" 55 2116 2172
+type(
+  Tags.elt -> string * StringSet.elt option
+)
+ident(
+  int_ref parse "param_tags.ml" 35 1296 1300 "param_tags.ml" 35 1296 1305
+)
+"param_tags.ml" 55 2116 2173 "param_tags.ml" 55 2116 2176
+type(
+  Tags.elt
+)
+ident(
+  int_ref tag "param_tags.ml" 55 2116 2133 "param_tags.ml" 55 2116 2136
+)
+"param_tags.ml" 55 2116 2167 "param_tags.ml" 55 2116 2176
+call(
+  stack
+)
+type(
+  string * StringSet.elt option
+)
+"param_tags.ml" 55 2116 2178 "param_tags.ml" 55 2116 2182
+type(
+  Loc.location option
+)
+"param_tags.ml" 55 2116 2166 "param_tags.ml" 55 2116 2183
+type(
+  (string * StringSet.elt option) * Loc.location option
+)
+"param_tags.ml" 55 2116 2140 "param_tags.ml" 55 2116 2183
+call(
+  tail
+)
+type(
+  unit
+)
+"param_tags.ml" 55 2116 2128 "param_tags.ml" 55 2116 2184
+type(
+  Tags.elt -> unit
+)
+"param_tags.ml" 55 2116 2185 "param_tags.ml" 55 2116 2189
+type(
+  Tags.t
+)
+ident(
+  int_ref tags "param_tags.ml" 54 2085 2109 "param_tags.ml" 54 2085 2113
+)
+"param_tags.ml" 55 2116 2118 "param_tags.ml" 55 2116 2189
+call(
+  tail
+)
+type(
+  unit
+)
+"param_tags.ml" 57 2191 2195 "param_tags.ml" 57 2191 2199
+type(
+  unit -> unit
+)
+ident(
+  def init "param_tags.ml" 60 2285 2285 "param_tags.ml" 1 0 -1
+)
+"param_tags.ml" 57 2191 2200 "param_tags.ml" 57 2191 2202
+type(
+  unit
+)
+"param_tags.ml" 58 2205 2207 "param_tags.ml" 58 2205 2216
+type(
+  ((string * StringSet.elt option) * Loc.location option -> unit) ->
+  ((string * StringSet.elt option) * Loc.location option) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"param_tags.ml" 58 2205 2217 "param_tags.ml" 58 2205 2235
+call(
+  tail
+)
+type(
+  ?quiet:bool ->
+  (string * StringSet.elt option) * Loc.location option -> unit
+)
+ident(
+  int_ref really_acknowledge "param_tags.ml" 40 1454 1458 "param_tags.ml" 40 1454 1476
+)
+"param_tags.ml" 58 2205 2237 "param_tags.ml" 58 2205 2263
+type(
+  ((string * StringSet.elt option) * Loc.location option) list ->
+  ((string * StringSet.elt option) * Loc.location option) list
+)
+ident(
+  ext_ref My_std.List.ordered_unique
+)
+"param_tags.ml" 58 2205 2264 "param_tags.ml" 58 2205 2265
+type(
+  ((string * StringSet.elt option) * Loc.location option) list ref ->
+  ((string * StringSet.elt option) * Loc.location option) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"param_tags.ml" 58 2205 2265 "param_tags.ml" 58 2205 2282
+type(
+  ((string * StringSet.elt option) * Loc.location option) list ref
+)
+ident(
+  int_ref acknowledged_tags "param_tags.ml" 21 976 980 "param_tags.ml" 21 976 997
+)
+"param_tags.ml" 58 2205 2264 "param_tags.ml" 58 2205 2282
+type(
+  ((string * StringSet.elt option) * Loc.location option) list
+)
+"param_tags.ml" 58 2205 2236 "param_tags.ml" 58 2205 2283
+call(
+  stack
+)
+type(
+  ((string * StringSet.elt option) * Loc.location option) list
+)
+"param_tags.ml" 58 2205 2207 "param_tags.ml" 58 2205 2283
+call(
+  tail
+)
+type(
+  unit
+)
+"param_tags.ml" 60 2285 2289 "param_tags.ml" 60 2285 2293
+type(
+  string -> string -> string
+)
+ident(
+  def make "param_tags.ml" 60 2285 2319 "param_tags.ml" 1 0 -1
+)
+"param_tags.ml" 60 2285 2296 "param_tags.ml" 60 2285 2310
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"param_tags.ml" 60 2285 2311 "param_tags.ml" 60 2285 2319
+type(
+  (string -> string -> string, unit, string) format
+)
+"param_tags.ml" 60 2285 2296 "param_tags.ml" 60 2285 2319
+call(
+  stack
+)
+type(
+  string -> string -> string
+)

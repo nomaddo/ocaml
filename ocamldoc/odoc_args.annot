@@ -1,0 +1,7332 @@
+"odoc_args.ml" 17 892 896 "odoc_args.ml" 17 892 913
+type(
+  Odoc_gen.generator option ref
+)
+ident(
+  def current_generator "odoc_args.ml" 19 956 956 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 17 892 916 "odoc_args.ml" 17 892 919
+type(
+  Odoc_gen.generator option -> Odoc_gen.generator option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"odoc_args.ml" 17 892 921 "odoc_args.ml" 17 892 925
+type(
+  Odoc_gen.generator option
+)
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 17 892 916 "odoc_args.ml" 17 892 954
+type(
+  Odoc_gen.generator option ref
+)
+"odoc_args.ml" 19 956 960 "odoc_args.ml" 19 956 978
+type(
+  unit -> (module Odoc_html.Html_generator)
+)
+ident(
+  def get_html_generator "odoc_args.ml" 26 1179 1179 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 19 956 979 "odoc_args.ml" 19 956 981
+type(
+  unit
+)
+"odoc_args.ml" 20 984 992 "odoc_args.ml" 20 984 993
+type(
+  Odoc_gen.generator option ref -> Odoc_gen.generator option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 20 984 993 "odoc_args.ml" 20 984 1010
+type(
+  Odoc_gen.generator option ref
+)
+ident(
+  int_ref current_generator "odoc_args.ml" 17 892 896 "odoc_args.ml" 17 892 913
+)
+"odoc_args.ml" 20 984 992 "odoc_args.ml" 20 984 1010
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 21 1016 1020 "odoc_args.ml" 21 1016 1024
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 22 1084 1108 "odoc_args.ml" 22 1084 1109
+type(
+  (module Odoc_html.Html_generator)
+)
+ident(
+  def m "odoc_args.ml" 22 1084 1114 "odoc_args.ml" 22 1084 1115
+)
+"odoc_args.ml" 22 1084 1093 "odoc_args.ml" 22 1084 1110
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 22 1084 1088 "odoc_args.ml" 22 1084 1110
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 22 1084 1114 "odoc_args.ml" 22 1084 1115
+type(
+  (module Odoc_html.Html_generator)
+)
+ident(
+  int_ref m "odoc_args.ml" 22 1084 1108 "odoc_args.ml" 22 1084 1109
+)
+"odoc_args.ml" 23 1116 1125 "odoc_args.ml" 23 1116 1126
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 23 1116 1120 "odoc_args.ml" 23 1116 1126
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 23 1116 1130 "odoc_args.ml" 23 1116 1138
+type(
+  string -> (module Odoc_html.Html_generator)
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"odoc_args.ml" 23 1116 1140 "odoc_args.ml" 23 1116 1166
+type(
+  string -> string
+)
+ident(
+  ext_ref M.current_generator_is_not
+)
+"odoc_args.ml" 23 1116 1167 "odoc_args.ml" 23 1116 1173
+type(
+  string
+)
+"odoc_args.ml" 23 1116 1139 "odoc_args.ml" 23 1116 1174
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 23 1116 1130 "odoc_args.ml" 23 1116 1174
+call(
+  tail
+)
+type(
+  (module Odoc_html.Html_generator)
+)
+"odoc_args.ml" 20 984 986 "odoc_args.ml" 23 1116 1174
+type(
+  (module Odoc_html.Html_generator)
+)
+"odoc_args.ml" 26 1179 1183 "odoc_args.ml" 26 1179 1202
+type(
+  unit -> (module Odoc_latex.Latex_generator)
+)
+ident(
+  def get_latex_generator "odoc_args.ml" 33 1408 1408 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 26 1179 1203 "odoc_args.ml" 26 1179 1205
+type(
+  unit
+)
+"odoc_args.ml" 27 1208 1216 "odoc_args.ml" 27 1208 1217
+type(
+  Odoc_gen.generator option ref -> Odoc_gen.generator option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 27 1208 1217 "odoc_args.ml" 27 1208 1234
+type(
+  Odoc_gen.generator option ref
+)
+ident(
+  int_ref current_generator "odoc_args.ml" 17 892 896 "odoc_args.ml" 17 892 913
+)
+"odoc_args.ml" 27 1208 1216 "odoc_args.ml" 27 1208 1234
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 28 1240 1244 "odoc_args.ml" 28 1240 1248
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 29 1311 1336 "odoc_args.ml" 29 1311 1337
+type(
+  (module Odoc_latex.Latex_generator)
+)
+ident(
+  def m "odoc_args.ml" 29 1311 1342 "odoc_args.ml" 29 1311 1343
+)
+"odoc_args.ml" 29 1311 1320 "odoc_args.ml" 29 1311 1338
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 29 1311 1315 "odoc_args.ml" 29 1311 1338
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 29 1311 1342 "odoc_args.ml" 29 1311 1343
+type(
+  (module Odoc_latex.Latex_generator)
+)
+ident(
+  int_ref m "odoc_args.ml" 29 1311 1336 "odoc_args.ml" 29 1311 1337
+)
+"odoc_args.ml" 30 1344 1353 "odoc_args.ml" 30 1344 1354
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 30 1344 1348 "odoc_args.ml" 30 1344 1354
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 30 1344 1358 "odoc_args.ml" 30 1344 1366
+type(
+  string -> (module Odoc_latex.Latex_generator)
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"odoc_args.ml" 30 1344 1368 "odoc_args.ml" 30 1344 1394
+type(
+  string -> string
+)
+ident(
+  ext_ref M.current_generator_is_not
+)
+"odoc_args.ml" 30 1344 1395 "odoc_args.ml" 30 1344 1402
+type(
+  string
+)
+"odoc_args.ml" 30 1344 1367 "odoc_args.ml" 30 1344 1403
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 30 1344 1358 "odoc_args.ml" 30 1344 1403
+call(
+  tail
+)
+type(
+  (module Odoc_latex.Latex_generator)
+)
+"odoc_args.ml" 27 1208 1210 "odoc_args.ml" 30 1344 1403
+type(
+  (module Odoc_latex.Latex_generator)
+)
+"odoc_args.ml" 33 1408 1412 "odoc_args.ml" 33 1408 1430
+type(
+  unit -> (module Odoc_texi.Texi_generator)
+)
+ident(
+  def get_texi_generator "odoc_args.ml" 40 1631 1631 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 33 1408 1431 "odoc_args.ml" 33 1408 1433
+type(
+  unit
+)
+"odoc_args.ml" 34 1436 1444 "odoc_args.ml" 34 1436 1445
+type(
+  Odoc_gen.generator option ref -> Odoc_gen.generator option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 34 1436 1445 "odoc_args.ml" 34 1436 1462
+type(
+  Odoc_gen.generator option ref
+)
+ident(
+  int_ref current_generator "odoc_args.ml" 17 892 896 "odoc_args.ml" 17 892 913
+)
+"odoc_args.ml" 34 1436 1444 "odoc_args.ml" 34 1436 1462
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 35 1468 1472 "odoc_args.ml" 35 1468 1476
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 36 1536 1560 "odoc_args.ml" 36 1536 1561
+type(
+  (module Odoc_texi.Texi_generator)
+)
+ident(
+  def m "odoc_args.ml" 36 1536 1566 "odoc_args.ml" 36 1536 1567
+)
+"odoc_args.ml" 36 1536 1545 "odoc_args.ml" 36 1536 1562
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 36 1536 1540 "odoc_args.ml" 36 1536 1562
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 36 1536 1566 "odoc_args.ml" 36 1536 1567
+type(
+  (module Odoc_texi.Texi_generator)
+)
+ident(
+  int_ref m "odoc_args.ml" 36 1536 1560 "odoc_args.ml" 36 1536 1561
+)
+"odoc_args.ml" 37 1568 1577 "odoc_args.ml" 37 1568 1578
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 37 1568 1572 "odoc_args.ml" 37 1568 1578
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 37 1568 1582 "odoc_args.ml" 37 1568 1590
+type(
+  string -> (module Odoc_texi.Texi_generator)
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"odoc_args.ml" 37 1568 1592 "odoc_args.ml" 37 1568 1618
+type(
+  string -> string
+)
+ident(
+  ext_ref M.current_generator_is_not
+)
+"odoc_args.ml" 37 1568 1619 "odoc_args.ml" 37 1568 1625
+type(
+  string
+)
+"odoc_args.ml" 37 1568 1591 "odoc_args.ml" 37 1568 1626
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 37 1568 1582 "odoc_args.ml" 37 1568 1626
+call(
+  tail
+)
+type(
+  (module Odoc_texi.Texi_generator)
+)
+"odoc_args.ml" 34 1436 1438 "odoc_args.ml" 37 1568 1626
+type(
+  (module Odoc_texi.Texi_generator)
+)
+"odoc_args.ml" 40 1631 1635 "odoc_args.ml" 40 1631 1652
+type(
+  unit -> (module Odoc_man.Man_generator)
+)
+ident(
+  def get_man_generator "odoc_args.ml" 47 1848 1848 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 40 1631 1653 "odoc_args.ml" 40 1631 1655
+type(
+  unit
+)
+"odoc_args.ml" 41 1658 1666 "odoc_args.ml" 41 1658 1667
+type(
+  Odoc_gen.generator option ref -> Odoc_gen.generator option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 41 1658 1667 "odoc_args.ml" 41 1658 1684
+type(
+  Odoc_gen.generator option ref
+)
+ident(
+  int_ref current_generator "odoc_args.ml" 17 892 896 "odoc_args.ml" 17 892 913
+)
+"odoc_args.ml" 41 1658 1666 "odoc_args.ml" 41 1658 1684
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 42 1690 1694 "odoc_args.ml" 42 1690 1698
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 43 1755 1778 "odoc_args.ml" 43 1755 1779
+type(
+  (module Odoc_man.Man_generator)
+)
+ident(
+  def m "odoc_args.ml" 43 1755 1784 "odoc_args.ml" 43 1755 1785
+)
+"odoc_args.ml" 43 1755 1764 "odoc_args.ml" 43 1755 1780
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 43 1755 1759 "odoc_args.ml" 43 1755 1780
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 43 1755 1784 "odoc_args.ml" 43 1755 1785
+type(
+  (module Odoc_man.Man_generator)
+)
+ident(
+  int_ref m "odoc_args.ml" 43 1755 1778 "odoc_args.ml" 43 1755 1779
+)
+"odoc_args.ml" 44 1786 1795 "odoc_args.ml" 44 1786 1796
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 44 1786 1790 "odoc_args.ml" 44 1786 1796
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 44 1786 1800 "odoc_args.ml" 44 1786 1808
+type(
+  string -> (module Odoc_man.Man_generator)
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"odoc_args.ml" 44 1786 1810 "odoc_args.ml" 44 1786 1836
+type(
+  string -> string
+)
+ident(
+  ext_ref M.current_generator_is_not
+)
+"odoc_args.ml" 44 1786 1837 "odoc_args.ml" 44 1786 1842
+type(
+  string
+)
+"odoc_args.ml" 44 1786 1809 "odoc_args.ml" 44 1786 1843
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 44 1786 1800 "odoc_args.ml" 44 1786 1843
+call(
+  tail
+)
+type(
+  (module Odoc_man.Man_generator)
+)
+"odoc_args.ml" 41 1658 1660 "odoc_args.ml" 44 1786 1843
+type(
+  (module Odoc_man.Man_generator)
+)
+"odoc_args.ml" 47 1848 1852 "odoc_args.ml" 47 1848 1869
+type(
+  unit -> (module Odoc_dot.Dot_generator)
+)
+ident(
+  def get_dot_generator "odoc_args.ml" 54 2065 2065 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 47 1848 1870 "odoc_args.ml" 47 1848 1872
+type(
+  unit
+)
+"odoc_args.ml" 48 1875 1883 "odoc_args.ml" 48 1875 1884
+type(
+  Odoc_gen.generator option ref -> Odoc_gen.generator option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 48 1875 1884 "odoc_args.ml" 48 1875 1901
+type(
+  Odoc_gen.generator option ref
+)
+ident(
+  int_ref current_generator "odoc_args.ml" 17 892 896 "odoc_args.ml" 17 892 913
+)
+"odoc_args.ml" 48 1875 1883 "odoc_args.ml" 48 1875 1901
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 49 1907 1911 "odoc_args.ml" 49 1907 1915
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 50 1972 1995 "odoc_args.ml" 50 1972 1996
+type(
+  (module Odoc_dot.Dot_generator)
+)
+ident(
+  def m "odoc_args.ml" 50 1972 2001 "odoc_args.ml" 50 1972 2002
+)
+"odoc_args.ml" 50 1972 1981 "odoc_args.ml" 50 1972 1997
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 50 1972 1976 "odoc_args.ml" 50 1972 1997
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 50 1972 2001 "odoc_args.ml" 50 1972 2002
+type(
+  (module Odoc_dot.Dot_generator)
+)
+ident(
+  int_ref m "odoc_args.ml" 50 1972 1995 "odoc_args.ml" 50 1972 1996
+)
+"odoc_args.ml" 51 2003 2012 "odoc_args.ml" 51 2003 2013
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 51 2003 2007 "odoc_args.ml" 51 2003 2013
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 51 2003 2017 "odoc_args.ml" 51 2003 2025
+type(
+  string -> (module Odoc_dot.Dot_generator)
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"odoc_args.ml" 51 2003 2027 "odoc_args.ml" 51 2003 2053
+type(
+  string -> string
+)
+ident(
+  ext_ref M.current_generator_is_not
+)
+"odoc_args.ml" 51 2003 2054 "odoc_args.ml" 51 2003 2059
+type(
+  string
+)
+"odoc_args.ml" 51 2003 2026 "odoc_args.ml" 51 2003 2060
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 51 2003 2017 "odoc_args.ml" 51 2003 2060
+call(
+  tail
+)
+type(
+  (module Odoc_dot.Dot_generator)
+)
+"odoc_args.ml" 48 1875 1877 "odoc_args.ml" 51 2003 2060
+type(
+  (module Odoc_dot.Dot_generator)
+)
+"odoc_args.ml" 54 2065 2069 "odoc_args.ml" 54 2065 2087
+type(
+  unit -> (module Odoc_gen.Base)
+)
+ident(
+  def get_base_generator "odoc_args.ml" 61 2281 2281 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 54 2065 2088 "odoc_args.ml" 54 2065 2090
+type(
+  unit
+)
+"odoc_args.ml" 55 2093 2101 "odoc_args.ml" 55 2093 2102
+type(
+  Odoc_gen.generator option ref -> Odoc_gen.generator option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 55 2093 2102 "odoc_args.ml" 55 2093 2119
+type(
+  Odoc_gen.generator option ref
+)
+ident(
+  int_ref current_generator "odoc_args.ml" 17 892 896 "odoc_args.ml" 17 892 913
+)
+"odoc_args.ml" 55 2093 2101 "odoc_args.ml" 55 2093 2119
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 56 2125 2129 "odoc_args.ml" 56 2125 2133
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 57 2186 2210 "odoc_args.ml" 57 2186 2211
+type(
+  (module Odoc_gen.Base)
+)
+ident(
+  def m "odoc_args.ml" 57 2186 2216 "odoc_args.ml" 57 2186 2217
+)
+"odoc_args.ml" 57 2186 2195 "odoc_args.ml" 57 2186 2212
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 57 2186 2190 "odoc_args.ml" 57 2186 2212
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 57 2186 2216 "odoc_args.ml" 57 2186 2217
+type(
+  (module Odoc_gen.Base)
+)
+ident(
+  int_ref m "odoc_args.ml" 57 2186 2210 "odoc_args.ml" 57 2186 2211
+)
+"odoc_args.ml" 58 2218 2227 "odoc_args.ml" 58 2218 2228
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 58 2218 2222 "odoc_args.ml" 58 2218 2228
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 58 2218 2232 "odoc_args.ml" 58 2218 2240
+type(
+  string -> (module Odoc_gen.Base)
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"odoc_args.ml" 58 2218 2242 "odoc_args.ml" 58 2218 2268
+type(
+  string -> string
+)
+ident(
+  ext_ref M.current_generator_is_not
+)
+"odoc_args.ml" 58 2218 2269 "odoc_args.ml" 58 2218 2275
+type(
+  string
+)
+"odoc_args.ml" 58 2218 2241 "odoc_args.ml" 58 2218 2276
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 58 2218 2232 "odoc_args.ml" 58 2218 2276
+call(
+  tail
+)
+type(
+  (module Odoc_gen.Base)
+)
+"odoc_args.ml" 55 2093 2095 "odoc_args.ml" 58 2218 2276
+type(
+  (module Odoc_gen.Base)
+)
+"odoc_args.ml" 61 2281 2285 "odoc_args.ml" 61 2281 2306
+type(
+  (module Odoc_gen.Html_functor) -> unit
+)
+ident(
+  def extend_html_generator "odoc_args.ml" 69 2588 2588 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 61 2281 2307 "odoc_args.ml" 61 2281 2308
+type(
+  (module Odoc_gen.Html_functor)
+)
+ident(
+  def f "odoc_args.ml" 62 2311 2313 "odoc_args.ml" 66 2502 2583
+)
+"odoc_args.ml" 62 2311 2317 "odoc_args.ml" 62 2311 2324
+type(
+  (module Odoc_html.Html_generator)
+)
+ident(
+  def current "odoc_args.ml" 63 2352 2354 "odoc_args.ml" 66 2502 2583
+)
+"odoc_args.ml" 62 2311 2327 "odoc_args.ml" 62 2311 2345
+type(
+  unit -> (module Odoc_html.Html_generator)
+)
+ident(
+  int_ref get_html_generator "odoc_args.ml" 19 956 960 "odoc_args.ml" 19 956 978
+)
+"odoc_args.ml" 62 2311 2346 "odoc_args.ml" 62 2311 2348
+type(
+  unit
+)
+"odoc_args.ml" 62 2311 2327 "odoc_args.ml" 62 2311 2348
+call(
+  stack
+)
+type(
+  (module Odoc_html.Html_generator)
+)
+"odoc_args.ml" 63 2352 2380 "odoc_args.ml" 63 2352 2387
+type(
+  (module Odoc_html.Html_generator)
+)
+type(
+  (module Odoc_html.Html_generator)
+)
+ident(
+  int_ref current "odoc_args.ml" 62 2311 2317 "odoc_args.ml" 62 2311 2324
+)
+"odoc_args.ml" 64 2419 2441 "odoc_args.ml" 64 2419 2442
+type(
+  (module Odoc_gen.Html_functor)
+)
+type(
+  (module Odoc_gen.Html_functor)
+)
+ident(
+  int_ref f "odoc_args.ml" 61 2281 2307 "odoc_args.ml" 61 2281 2308
+)
+"odoc_args.ml" 65 2471 2488 "odoc_args.ml" 65 2471 2498
+call(
+  stack
+)
+"odoc_args.ml" 66 2502 2504 "odoc_args.ml" 66 2502 2521
+type(
+  Odoc_gen.generator option ref
+)
+ident(
+  int_ref current_generator "odoc_args.ml" 17 892 896 "odoc_args.ml" 17 892 913
+)
+"odoc_args.ml" 66 2502 2522 "odoc_args.ml" 66 2502 2524
+type(
+  Odoc_gen.generator option ref -> Odoc_gen.generator option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 66 2502 2530 "odoc_args.ml" 66 2502 2583
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 66 2502 2525 "odoc_args.ml" 66 2502 2583
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 66 2502 2504 "odoc_args.ml" 66 2502 2583
+type(
+  unit
+)
+"odoc_args.ml" 65 2471 2473 "odoc_args.ml" 66 2502 2583
+type(
+  unit
+)
+"odoc_args.ml" 64 2419 2421 "odoc_args.ml" 66 2502 2583
+type(
+  unit
+)
+"odoc_args.ml" 63 2352 2354 "odoc_args.ml" 66 2502 2583
+type(
+  unit
+)
+"odoc_args.ml" 62 2311 2313 "odoc_args.ml" 66 2502 2583
+type(
+  unit
+)
+"odoc_args.ml" 69 2588 2592 "odoc_args.ml" 69 2588 2614
+type(
+  (module Odoc_gen.Latex_functor) -> unit
+)
+ident(
+  def extend_latex_generator "odoc_args.ml" 77 2902 2902 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 69 2588 2615 "odoc_args.ml" 69 2588 2616
+type(
+  (module Odoc_gen.Latex_functor)
+)
+ident(
+  def f "odoc_args.ml" 70 2619 2621 "odoc_args.ml" 74 2814 2897
+)
+"odoc_args.ml" 70 2619 2625 "odoc_args.ml" 70 2619 2632
+type(
+  (module Odoc_latex.Latex_generator)
+)
+ident(
+  def current "odoc_args.ml" 71 2661 2663 "odoc_args.ml" 74 2814 2897
+)
+"odoc_args.ml" 70 2619 2635 "odoc_args.ml" 70 2619 2654
+type(
+  unit -> (module Odoc_latex.Latex_generator)
+)
+ident(
+  int_ref get_latex_generator "odoc_args.ml" 26 1179 1183 "odoc_args.ml" 26 1179 1202
+)
+"odoc_args.ml" 70 2619 2655 "odoc_args.ml" 70 2619 2657
+type(
+  unit
+)
+"odoc_args.ml" 70 2619 2635 "odoc_args.ml" 70 2619 2657
+call(
+  stack
+)
+type(
+  (module Odoc_latex.Latex_generator)
+)
+"odoc_args.ml" 71 2661 2689 "odoc_args.ml" 71 2661 2696
+type(
+  (module Odoc_latex.Latex_generator)
+)
+type(
+  (module Odoc_latex.Latex_generator)
+)
+ident(
+  int_ref current "odoc_args.ml" 70 2619 2625 "odoc_args.ml" 70 2619 2632
+)
+"odoc_args.ml" 72 2730 2752 "odoc_args.ml" 72 2730 2753
+type(
+  (module Odoc_gen.Latex_functor)
+)
+type(
+  (module Odoc_gen.Latex_functor)
+)
+ident(
+  int_ref f "odoc_args.ml" 69 2588 2615 "odoc_args.ml" 69 2588 2616
+)
+"odoc_args.ml" 73 2783 2800 "odoc_args.ml" 73 2783 2810
+call(
+  stack
+)
+"odoc_args.ml" 74 2814 2816 "odoc_args.ml" 74 2814 2833
+type(
+  Odoc_gen.generator option ref
+)
+ident(
+  int_ref current_generator "odoc_args.ml" 17 892 896 "odoc_args.ml" 17 892 913
+)
+"odoc_args.ml" 74 2814 2834 "odoc_args.ml" 74 2814 2836
+type(
+  Odoc_gen.generator option ref -> Odoc_gen.generator option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 74 2814 2841 "odoc_args.ml" 74 2814 2897
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 74 2814 2837 "odoc_args.ml" 74 2814 2897
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 74 2814 2816 "odoc_args.ml" 74 2814 2897
+type(
+  unit
+)
+"odoc_args.ml" 73 2783 2785 "odoc_args.ml" 74 2814 2897
+type(
+  unit
+)
+"odoc_args.ml" 72 2730 2732 "odoc_args.ml" 74 2814 2897
+type(
+  unit
+)
+"odoc_args.ml" 71 2661 2663 "odoc_args.ml" 74 2814 2897
+type(
+  unit
+)
+"odoc_args.ml" 70 2619 2621 "odoc_args.ml" 74 2814 2897
+type(
+  unit
+)
+"odoc_args.ml" 77 2902 2906 "odoc_args.ml" 77 2902 2927
+type(
+  (module Odoc_gen.Texi_functor) -> unit
+)
+ident(
+  def extend_texi_generator "odoc_args.ml" 85 3208 3208 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 77 2902 2928 "odoc_args.ml" 77 2902 2929
+type(
+  (module Odoc_gen.Texi_functor)
+)
+ident(
+  def f "odoc_args.ml" 78 2932 2934 "odoc_args.ml" 82 3123 3203
+)
+"odoc_args.ml" 78 2932 2938 "odoc_args.ml" 78 2932 2945
+type(
+  (module Odoc_texi.Texi_generator)
+)
+ident(
+  def current "odoc_args.ml" 79 2973 2975 "odoc_args.ml" 82 3123 3203
+)
+"odoc_args.ml" 78 2932 2948 "odoc_args.ml" 78 2932 2966
+type(
+  unit -> (module Odoc_texi.Texi_generator)
+)
+ident(
+  int_ref get_texi_generator "odoc_args.ml" 33 1408 1412 "odoc_args.ml" 33 1408 1430
+)
+"odoc_args.ml" 78 2932 2967 "odoc_args.ml" 78 2932 2969
+type(
+  unit
+)
+"odoc_args.ml" 78 2932 2948 "odoc_args.ml" 78 2932 2969
+call(
+  stack
+)
+type(
+  (module Odoc_texi.Texi_generator)
+)
+"odoc_args.ml" 79 2973 3001 "odoc_args.ml" 79 2973 3008
+type(
+  (module Odoc_texi.Texi_generator)
+)
+type(
+  (module Odoc_texi.Texi_generator)
+)
+ident(
+  int_ref current "odoc_args.ml" 78 2932 2938 "odoc_args.ml" 78 2932 2945
+)
+"odoc_args.ml" 80 3040 3062 "odoc_args.ml" 80 3040 3063
+type(
+  (module Odoc_gen.Texi_functor)
+)
+type(
+  (module Odoc_gen.Texi_functor)
+)
+ident(
+  int_ref f "odoc_args.ml" 77 2902 2928 "odoc_args.ml" 77 2902 2929
+)
+"odoc_args.ml" 81 3092 3109 "odoc_args.ml" 81 3092 3119
+call(
+  stack
+)
+"odoc_args.ml" 82 3123 3125 "odoc_args.ml" 82 3123 3142
+type(
+  Odoc_gen.generator option ref
+)
+ident(
+  int_ref current_generator "odoc_args.ml" 17 892 896 "odoc_args.ml" 17 892 913
+)
+"odoc_args.ml" 82 3123 3143 "odoc_args.ml" 82 3123 3145
+type(
+  Odoc_gen.generator option ref -> Odoc_gen.generator option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 82 3123 3150 "odoc_args.ml" 82 3123 3203
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 82 3123 3146 "odoc_args.ml" 82 3123 3203
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 82 3123 3125 "odoc_args.ml" 82 3123 3203
+type(
+  unit
+)
+"odoc_args.ml" 81 3092 3094 "odoc_args.ml" 82 3123 3203
+type(
+  unit
+)
+"odoc_args.ml" 80 3040 3042 "odoc_args.ml" 82 3123 3203
+type(
+  unit
+)
+"odoc_args.ml" 79 2973 2975 "odoc_args.ml" 82 3123 3203
+type(
+  unit
+)
+"odoc_args.ml" 78 2932 2934 "odoc_args.ml" 82 3123 3203
+type(
+  unit
+)
+"odoc_args.ml" 85 3208 3212 "odoc_args.ml" 85 3208 3232
+type(
+  (module Odoc_gen.Man_functor) -> unit
+)
+ident(
+  def extend_man_generator "odoc_args.ml" 93 3506 3506 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 85 3208 3233 "odoc_args.ml" 85 3208 3234
+type(
+  (module Odoc_gen.Man_functor)
+)
+ident(
+  def f "odoc_args.ml" 86 3237 3239 "odoc_args.ml" 90 3424 3501
+)
+"odoc_args.ml" 86 3237 3243 "odoc_args.ml" 86 3237 3250
+type(
+  (module Odoc_man.Man_generator)
+)
+ident(
+  def current "odoc_args.ml" 87 3277 3279 "odoc_args.ml" 90 3424 3501
+)
+"odoc_args.ml" 86 3237 3253 "odoc_args.ml" 86 3237 3270
+type(
+  unit -> (module Odoc_man.Man_generator)
+)
+ident(
+  int_ref get_man_generator "odoc_args.ml" 40 1631 1635 "odoc_args.ml" 40 1631 1652
+)
+"odoc_args.ml" 86 3237 3271 "odoc_args.ml" 86 3237 3273
+type(
+  unit
+)
+"odoc_args.ml" 86 3237 3253 "odoc_args.ml" 86 3237 3273
+call(
+  stack
+)
+type(
+  (module Odoc_man.Man_generator)
+)
+"odoc_args.ml" 87 3277 3305 "odoc_args.ml" 87 3277 3312
+type(
+  (module Odoc_man.Man_generator)
+)
+type(
+  (module Odoc_man.Man_generator)
+)
+ident(
+  int_ref current "odoc_args.ml" 86 3237 3243 "odoc_args.ml" 86 3237 3250
+)
+"odoc_args.ml" 88 3342 3364 "odoc_args.ml" 88 3342 3365
+type(
+  (module Odoc_gen.Man_functor)
+)
+type(
+  (module Odoc_gen.Man_functor)
+)
+ident(
+  int_ref f "odoc_args.ml" 85 3208 3233 "odoc_args.ml" 85 3208 3234
+)
+"odoc_args.ml" 89 3393 3410 "odoc_args.ml" 89 3393 3420
+call(
+  stack
+)
+"odoc_args.ml" 90 3424 3426 "odoc_args.ml" 90 3424 3443
+type(
+  Odoc_gen.generator option ref
+)
+ident(
+  int_ref current_generator "odoc_args.ml" 17 892 896 "odoc_args.ml" 17 892 913
+)
+"odoc_args.ml" 90 3424 3444 "odoc_args.ml" 90 3424 3446
+type(
+  Odoc_gen.generator option ref -> Odoc_gen.generator option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 90 3424 3451 "odoc_args.ml" 90 3424 3501
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 90 3424 3447 "odoc_args.ml" 90 3424 3501
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 90 3424 3426 "odoc_args.ml" 90 3424 3501
+type(
+  unit
+)
+"odoc_args.ml" 89 3393 3395 "odoc_args.ml" 90 3424 3501
+type(
+  unit
+)
+"odoc_args.ml" 88 3342 3344 "odoc_args.ml" 90 3424 3501
+type(
+  unit
+)
+"odoc_args.ml" 87 3277 3279 "odoc_args.ml" 90 3424 3501
+type(
+  unit
+)
+"odoc_args.ml" 86 3237 3239 "odoc_args.ml" 90 3424 3501
+type(
+  unit
+)
+"odoc_args.ml" 93 3506 3510 "odoc_args.ml" 93 3506 3530
+type(
+  (module Odoc_gen.Dot_functor) -> unit
+)
+ident(
+  def extend_dot_generator "odoc_args.ml" 101 3805 3805 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 93 3506 3531 "odoc_args.ml" 93 3506 3532
+type(
+  (module Odoc_gen.Dot_functor)
+)
+ident(
+  def f "odoc_args.ml" 94 3535 3537 "odoc_args.ml" 98 3722 3800
+)
+"odoc_args.ml" 94 3535 3541 "odoc_args.ml" 94 3535 3548
+type(
+  (module Odoc_dot.Dot_generator)
+)
+ident(
+  def current "odoc_args.ml" 95 3575 3577 "odoc_args.ml" 98 3722 3800
+)
+"odoc_args.ml" 94 3535 3551 "odoc_args.ml" 94 3535 3568
+type(
+  unit -> (module Odoc_dot.Dot_generator)
+)
+ident(
+  int_ref get_dot_generator "odoc_args.ml" 47 1848 1852 "odoc_args.ml" 47 1848 1869
+)
+"odoc_args.ml" 94 3535 3569 "odoc_args.ml" 94 3535 3571
+type(
+  unit
+)
+"odoc_args.ml" 94 3535 3551 "odoc_args.ml" 94 3535 3571
+call(
+  stack
+)
+type(
+  (module Odoc_dot.Dot_generator)
+)
+"odoc_args.ml" 95 3575 3603 "odoc_args.ml" 95 3575 3610
+type(
+  (module Odoc_dot.Dot_generator)
+)
+type(
+  (module Odoc_dot.Dot_generator)
+)
+ident(
+  int_ref current "odoc_args.ml" 94 3535 3541 "odoc_args.ml" 94 3535 3548
+)
+"odoc_args.ml" 96 3640 3662 "odoc_args.ml" 96 3640 3663
+type(
+  (module Odoc_gen.Dot_functor)
+)
+type(
+  (module Odoc_gen.Dot_functor)
+)
+ident(
+  int_ref f "odoc_args.ml" 93 3506 3531 "odoc_args.ml" 93 3506 3532
+)
+"odoc_args.ml" 97 3691 3708 "odoc_args.ml" 97 3691 3718
+call(
+  stack
+)
+"odoc_args.ml" 98 3722 3724 "odoc_args.ml" 98 3722 3741
+type(
+  Odoc_gen.generator option ref
+)
+ident(
+  int_ref current_generator "odoc_args.ml" 17 892 896 "odoc_args.ml" 17 892 913
+)
+"odoc_args.ml" 98 3722 3742 "odoc_args.ml" 98 3722 3744
+type(
+  Odoc_gen.generator option ref -> Odoc_gen.generator option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 98 3722 3750 "odoc_args.ml" 98 3722 3800
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 98 3722 3745 "odoc_args.ml" 98 3722 3800
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 98 3722 3724 "odoc_args.ml" 98 3722 3800
+type(
+  unit
+)
+"odoc_args.ml" 97 3691 3693 "odoc_args.ml" 98 3722 3800
+type(
+  unit
+)
+"odoc_args.ml" 96 3640 3642 "odoc_args.ml" 98 3722 3800
+type(
+  unit
+)
+"odoc_args.ml" 95 3575 3577 "odoc_args.ml" 98 3722 3800
+type(
+  unit
+)
+"odoc_args.ml" 94 3535 3537 "odoc_args.ml" 98 3722 3800
+type(
+  unit
+)
+"odoc_args.ml" 101 3805 3809 "odoc_args.ml" 101 3805 3830
+type(
+  (module Odoc_gen.Base_functor) -> unit
+)
+ident(
+  def extend_base_generator "odoc_args.ml" 112 4259 4259 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 101 3805 3831 "odoc_args.ml" 101 3805 3832
+type(
+  (module Odoc_gen.Base_functor)
+)
+ident(
+  def f "odoc_args.ml" 102 3835 3837 "odoc_args.ml" 106 4015 4085
+)
+"odoc_args.ml" 102 3835 3841 "odoc_args.ml" 102 3835 3848
+type(
+  (module Odoc_gen.Base)
+)
+ident(
+  def current "odoc_args.ml" 103 3876 3878 "odoc_args.ml" 106 4015 4085
+)
+"odoc_args.ml" 102 3835 3851 "odoc_args.ml" 102 3835 3869
+type(
+  unit -> (module Odoc_gen.Base)
+)
+ident(
+  int_ref get_base_generator "odoc_args.ml" 54 2065 2069 "odoc_args.ml" 54 2065 2087
+)
+"odoc_args.ml" 102 3835 3870 "odoc_args.ml" 102 3835 3872
+type(
+  unit
+)
+"odoc_args.ml" 102 3835 3851 "odoc_args.ml" 102 3835 3872
+call(
+  stack
+)
+type(
+  (module Odoc_gen.Base)
+)
+"odoc_args.ml" 103 3876 3904 "odoc_args.ml" 103 3876 3911
+type(
+  (module Odoc_gen.Base)
+)
+type(
+  (module Odoc_gen.Base)
+)
+ident(
+  int_ref current "odoc_args.ml" 102 3835 3841 "odoc_args.ml" 102 3835 3848
+)
+"odoc_args.ml" 104 3932 3954 "odoc_args.ml" 104 3932 3955
+type(
+  (module Odoc_gen.Base_functor)
+)
+type(
+  (module Odoc_gen.Base_functor)
+)
+ident(
+  int_ref f "odoc_args.ml" 101 3805 3831 "odoc_args.ml" 101 3805 3832
+)
+"odoc_args.ml" 105 3984 4001 "odoc_args.ml" 105 3984 4011
+call(
+  stack
+)
+"odoc_args.ml" 106 4015 4017 "odoc_args.ml" 106 4015 4034
+type(
+  Odoc_gen.generator option ref
+)
+ident(
+  int_ref current_generator "odoc_args.ml" 17 892 896 "odoc_args.ml" 17 892 913
+)
+"odoc_args.ml" 106 4015 4035 "odoc_args.ml" 106 4015 4037
+type(
+  Odoc_gen.generator option ref -> Odoc_gen.generator option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 106 4015 4043 "odoc_args.ml" 106 4015 4085
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 106 4015 4038 "odoc_args.ml" 106 4015 4085
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 106 4015 4017 "odoc_args.ml" 106 4015 4085
+type(
+  unit
+)
+"odoc_args.ml" 105 3984 3986 "odoc_args.ml" 106 4015 4085
+type(
+  unit
+)
+"odoc_args.ml" 104 3932 3934 "odoc_args.ml" 106 4015 4085
+type(
+  unit
+)
+"odoc_args.ml" 103 3876 3878 "odoc_args.ml" 106 4015 4085
+type(
+  unit
+)
+"odoc_args.ml" 102 3835 3837 "odoc_args.ml" 106 4015 4085
+type(
+  unit
+)
+"odoc_args.ml" 112 4259 4263 "odoc_args.ml" 112 4259 4284
+type(
+  ((char * 'a) * 'b list) list -> string -> 'b list
+)
+ident(
+  def analyse_option_string "odoc_args.ml" 124 4538 4538 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 112 4259 4285 "odoc_args.ml" 112 4259 4286
+type(
+  ((char * 'a) * 'b list) list
+)
+ident(
+  def l "odoc_args.ml" 112 4259 4287 "odoc_args.ml" 120 4423 4428
+)
+"odoc_args.ml" 112 4259 4287 "odoc_args.ml" 112 4259 4288
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 113 4291 4293 "odoc_args.ml" 120 4423 4428
+)
+"odoc_args.ml" 113 4291 4293 "odoc_args.ml" 113 4291 4307
+type(
+  ('b list -> (char * 'a) * 'b list -> 'b list) ->
+  'b list -> ((char * 'a) * 'b list) list -> 'b list
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_args.ml" 114 4308 4317 "odoc_args.ml" 114 4308 4320
+type(
+  'b list
+)
+ident(
+  def acc "odoc_args.ml" 114 4308 4324 "odoc_args.ml" 118 4403 4414
+)
+"odoc_args.ml" 114 4308 4330 "odoc_args.ml" 114 4308 4331
+type(
+  char
+)
+ident(
+  def c "odoc_args.ml" 115 4342 4348 "odoc_args.ml" 118 4403 4414
+)
+"odoc_args.ml" 114 4308 4332 "odoc_args.ml" 114 4308 4333
+type(
+  'a
+)
+"odoc_args.ml" 114 4308 4329 "odoc_args.ml" 114 4308 4334
+type(
+  char * 'a
+)
+"odoc_args.ml" 114 4308 4336 "odoc_args.ml" 114 4308 4337
+type(
+  'b list
+)
+ident(
+  def v "odoc_args.ml" 115 4342 4348 "odoc_args.ml" 118 4403 4414
+)
+"odoc_args.ml" 114 4308 4328 "odoc_args.ml" 114 4308 4338
+type(
+  (char * 'a) * 'b list
+)
+"odoc_args.ml" 115 4342 4351 "odoc_args.ml" 115 4342 4366
+type(
+  string -> char -> bool
+)
+ident(
+  ext_ref String.contains
+)
+"odoc_args.ml" 115 4342 4367 "odoc_args.ml" 115 4342 4368
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 112 4259 4287 "odoc_args.ml" 112 4259 4288
+)
+"odoc_args.ml" 115 4342 4369 "odoc_args.ml" 115 4342 4370
+type(
+  char
+)
+ident(
+  int_ref c "odoc_args.ml" 114 4308 4330 "odoc_args.ml" 114 4308 4331
+)
+"odoc_args.ml" 115 4342 4351 "odoc_args.ml" 115 4342 4370
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_args.ml" 116 4376 4384 "odoc_args.ml" 116 4376 4387
+type(
+  'b list
+)
+ident(
+  int_ref acc "odoc_args.ml" 114 4308 4317 "odoc_args.ml" 114 4308 4320
+)
+"odoc_args.ml" 116 4376 4388 "odoc_args.ml" 116 4376 4389
+type(
+  'b list -> 'b list -> 'b list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_args.ml" 116 4376 4390 "odoc_args.ml" 116 4376 4391
+type(
+  'b list
+)
+ident(
+  int_ref v "odoc_args.ml" 114 4308 4336 "odoc_args.ml" 114 4308 4337
+)
+"odoc_args.ml" 116 4376 4384 "odoc_args.ml" 116 4376 4391
+call(
+  tail
+)
+type(
+  'b list
+)
+"odoc_args.ml" 118 4403 4411 "odoc_args.ml" 118 4403 4414
+type(
+  'b list
+)
+ident(
+  int_ref acc "odoc_args.ml" 114 4308 4317 "odoc_args.ml" 114 4308 4320
+)
+"odoc_args.ml" 115 4342 4348 "odoc_args.ml" 118 4403 4414
+type(
+  'b list
+)
+"odoc_args.ml" 114 4308 4324 "odoc_args.ml" 118 4403 4414
+type(
+  (char * 'a) * 'b list -> 'b list
+)
+"odoc_args.ml" 114 4308 4312 "odoc_args.ml" 118 4403 4415
+type(
+  'b list -> (char * 'a) * 'b list -> 'b list
+)
+"odoc_args.ml" 119 4416 4420 "odoc_args.ml" 119 4416 4422
+type(
+  'b list
+)
+"odoc_args.ml" 120 4423 4427 "odoc_args.ml" 120 4423 4428
+type(
+  ((char * 'a) * 'b list) list
+)
+ident(
+  int_ref l "odoc_args.ml" 112 4259 4285 "odoc_args.ml" 112 4259 4286
+)
+"odoc_args.ml" 113 4291 4293 "odoc_args.ml" 120 4423 4428
+call(
+  tail
+)
+type(
+  'b list
+)
+"odoc_args.ml" 124 4538 4542 "odoc_args.ml" 124 4538 4563
+type(
+  string -> Odoc_types.merge_option list
+)
+ident(
+  def analyse_merge_options "odoc_args.ml" 143 5259 5259 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 124 4538 4564 "odoc_args.ml" 124 4538 4565
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 125 4568 4570 "odoc_args.ml" 140 5229 5256
+)
+"odoc_args.ml" 125 4568 4574 "odoc_args.ml" 125 4568 4575
+type(
+  ((char * string) * Odoc_types.merge_option list) list
+)
+ident(
+  def l "odoc_args.ml" 140 5229 5231 "odoc_args.ml" 140 5229 5256
+)
+"odoc_args.ml" 126 4580 4585 "odoc_args.ml" 126 4580 4604
+type(
+  char * string
+)
+ident(
+  ext_ref M.merge_description
+)
+"odoc_args.ml" 126 4580 4607 "odoc_args.ml" 126 4580 4635
+type(
+  Odoc_types.merge_option
+)
+"odoc_args.ml" 126 4580 4606 "odoc_args.ml" 126 4580 4636
+type(
+  Odoc_types.merge_option list
+)
+"odoc_args.ml" 126 4580 4584 "odoc_args.ml" 126 4580 4637
+type(
+  (char * string) * Odoc_types.merge_option list
+)
+"odoc_args.ml" 127 4640 4645 "odoc_args.ml" 127 4640 4659
+type(
+  char * string
+)
+ident(
+  ext_ref M.merge_author
+)
+"odoc_args.ml" 127 4640 4662 "odoc_args.ml" 127 4640 4685
+type(
+  Odoc_types.merge_option
+)
+"odoc_args.ml" 127 4640 4661 "odoc_args.ml" 127 4640 4686
+type(
+  Odoc_types.merge_option list
+)
+"odoc_args.ml" 127 4640 4644 "odoc_args.ml" 127 4640 4687
+type(
+  (char * string) * Odoc_types.merge_option list
+)
+"odoc_args.ml" 128 4690 4695 "odoc_args.ml" 128 4690 4710
+type(
+  char * string
+)
+ident(
+  ext_ref M.merge_version
+)
+"odoc_args.ml" 128 4690 4713 "odoc_args.ml" 128 4690 4737
+type(
+  Odoc_types.merge_option
+)
+"odoc_args.ml" 128 4690 4712 "odoc_args.ml" 128 4690 4738
+type(
+  Odoc_types.merge_option list
+)
+"odoc_args.ml" 128 4690 4694 "odoc_args.ml" 128 4690 4739
+type(
+  (char * string) * Odoc_types.merge_option list
+)
+"odoc_args.ml" 129 4742 4747 "odoc_args.ml" 129 4742 4758
+type(
+  char * string
+)
+ident(
+  ext_ref M.merge_see
+)
+"odoc_args.ml" 129 4742 4761 "odoc_args.ml" 129 4742 4781
+type(
+  Odoc_types.merge_option
+)
+"odoc_args.ml" 129 4742 4760 "odoc_args.ml" 129 4742 4782
+type(
+  Odoc_types.merge_option list
+)
+"odoc_args.ml" 129 4742 4746 "odoc_args.ml" 129 4742 4783
+type(
+  (char * string) * Odoc_types.merge_option list
+)
+"odoc_args.ml" 130 4786 4791 "odoc_args.ml" 130 4786 4804
+type(
+  char * string
+)
+ident(
+  ext_ref M.merge_since
+)
+"odoc_args.ml" 130 4786 4807 "odoc_args.ml" 130 4786 4829
+type(
+  Odoc_types.merge_option
+)
+"odoc_args.ml" 130 4786 4806 "odoc_args.ml" 130 4786 4830
+type(
+  Odoc_types.merge_option list
+)
+"odoc_args.ml" 130 4786 4790 "odoc_args.ml" 130 4786 4831
+type(
+  (char * string) * Odoc_types.merge_option list
+)
+"odoc_args.ml" 131 4834 4839 "odoc_args.ml" 131 4834 4853
+type(
+  char * string
+)
+ident(
+  ext_ref M.merge_before
+)
+"odoc_args.ml" 131 4834 4856 "odoc_args.ml" 131 4834 4879
+type(
+  Odoc_types.merge_option
+)
+"odoc_args.ml" 131 4834 4855 "odoc_args.ml" 131 4834 4880
+type(
+  Odoc_types.merge_option list
+)
+"odoc_args.ml" 131 4834 4838 "odoc_args.ml" 131 4834 4881
+type(
+  (char * string) * Odoc_types.merge_option list
+)
+"odoc_args.ml" 132 4884 4889 "odoc_args.ml" 132 4884 4907
+type(
+  char * string
+)
+ident(
+  ext_ref M.merge_deprecated
+)
+"odoc_args.ml" 132 4884 4910 "odoc_args.ml" 132 4884 4937
+type(
+  Odoc_types.merge_option
+)
+"odoc_args.ml" 132 4884 4909 "odoc_args.ml" 132 4884 4938
+type(
+  Odoc_types.merge_option list
+)
+"odoc_args.ml" 132 4884 4888 "odoc_args.ml" 132 4884 4939
+type(
+  (char * string) * Odoc_types.merge_option list
+)
+"odoc_args.ml" 133 4942 4947 "odoc_args.ml" 133 4942 4960
+type(
+  char * string
+)
+ident(
+  ext_ref M.merge_param
+)
+"odoc_args.ml" 133 4942 4963 "odoc_args.ml" 133 4942 4985
+type(
+  Odoc_types.merge_option
+)
+"odoc_args.ml" 133 4942 4962 "odoc_args.ml" 133 4942 4986
+type(
+  Odoc_types.merge_option list
+)
+"odoc_args.ml" 133 4942 4946 "odoc_args.ml" 133 4942 4987
+type(
+  (char * string) * Odoc_types.merge_option list
+)
+"odoc_args.ml" 134 4990 4995 "odoc_args.ml" 134 4990 5019
+type(
+  char * string
+)
+ident(
+  ext_ref M.merge_raised_exception
+)
+"odoc_args.ml" 134 4990 5022 "odoc_args.ml" 134 4990 5055
+type(
+  Odoc_types.merge_option
+)
+"odoc_args.ml" 134 4990 5021 "odoc_args.ml" 134 4990 5056
+type(
+  Odoc_types.merge_option list
+)
+"odoc_args.ml" 134 4990 4994 "odoc_args.ml" 134 4990 5057
+type(
+  (char * string) * Odoc_types.merge_option list
+)
+"odoc_args.ml" 135 5060 5065 "odoc_args.ml" 135 5060 5085
+type(
+  char * string
+)
+ident(
+  ext_ref M.merge_return_value
+)
+"odoc_args.ml" 135 5060 5088 "odoc_args.ml" 135 5060 5117
+type(
+  Odoc_types.merge_option
+)
+"odoc_args.ml" 135 5060 5087 "odoc_args.ml" 135 5060 5118
+type(
+  Odoc_types.merge_option list
+)
+"odoc_args.ml" 135 5060 5064 "odoc_args.ml" 135 5060 5119
+type(
+  (char * string) * Odoc_types.merge_option list
+)
+"odoc_args.ml" 136 5122 5127 "odoc_args.ml" 136 5122 5141
+type(
+  char * string
+)
+ident(
+  ext_ref M.merge_custom
+)
+"odoc_args.ml" 136 5122 5144 "odoc_args.ml" 136 5122 5167
+type(
+  Odoc_types.merge_option
+)
+"odoc_args.ml" 136 5122 5143 "odoc_args.ml" 136 5122 5168
+type(
+  Odoc_types.merge_option list
+)
+"odoc_args.ml" 136 5122 5126 "odoc_args.ml" 136 5122 5169
+type(
+  (char * string) * Odoc_types.merge_option list
+)
+"odoc_args.ml" 137 5172 5177 "odoc_args.ml" 137 5172 5188
+type(
+  char * string
+)
+ident(
+  ext_ref M.merge_all
+)
+"odoc_args.ml" 137 5172 5190 "odoc_args.ml" 137 5172 5218
+type(
+  Odoc_types.merge_option list
+)
+ident(
+  ext_ref Odoc_types.all_merge_options
+)
+"odoc_args.ml" 137 5172 5176 "odoc_args.ml" 137 5172 5219
+type(
+  (char * string) * Odoc_types.merge_option list
+)
+"odoc_args.ml" 125 4568 4578 "odoc_args.ml" 138 5220 5223
+type(
+  ((char * string) * Odoc_types.merge_option list) list
+)
+"odoc_args.ml" 140 5229 5231 "odoc_args.ml" 140 5229 5252
+type(
+  ((char * string) * Odoc_types.merge_option list) list ->
+  string -> Odoc_types.merge_option list
+)
+ident(
+  int_ref analyse_option_string "odoc_args.ml" 112 4259 4263 "odoc_args.ml" 112 4259 4284
+)
+"odoc_args.ml" 140 5229 5253 "odoc_args.ml" 140 5229 5254
+type(
+  ((char * string) * Odoc_types.merge_option list) list
+)
+ident(
+  int_ref l "odoc_args.ml" 125 4568 4574 "odoc_args.ml" 125 4568 4575
+)
+"odoc_args.ml" 140 5229 5255 "odoc_args.ml" 140 5229 5256
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 124 4538 4564 "odoc_args.ml" 124 4538 4565
+)
+"odoc_args.ml" 140 5229 5231 "odoc_args.ml" 140 5229 5256
+call(
+  tail
+)
+type(
+  Odoc_types.merge_option list
+)
+"odoc_args.ml" 125 4568 4570 "odoc_args.ml" 140 5229 5256
+type(
+  Odoc_types.merge_option list
+)
+"odoc_args.ml" 143 5259 5263 "odoc_args.ml" 143 5259 5276
+type(
+  string -> unit
+)
+ident(
+  def f_latex_title "odoc_args.ml" 157 5735 5735 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 143 5259 5277 "odoc_args.ml" 143 5259 5278
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 144 5281 5283 "odoc_args.ml" 155 5695 5733
+)
+"odoc_args.ml" 145 5287 5295 "odoc_args.ml" 145 5287 5298
+type(
+  int
+)
+ident(
+  def pos "odoc_args.ml" 146 5323 5327 "odoc_args.ml" 150 5544 5615
+)
+"odoc_args.ml" 145 5287 5301 "odoc_args.ml" 145 5287 5313
+type(
+  string -> char -> int
+)
+ident(
+  ext_ref String.index
+)
+"odoc_args.ml" 145 5287 5314 "odoc_args.ml" 145 5287 5315
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 143 5259 5277 "odoc_args.ml" 143 5259 5278
+)
+"odoc_args.ml" 145 5287 5316 "odoc_args.ml" 145 5287 5319
+type(
+  char
+)
+"odoc_args.ml" 145 5287 5301 "odoc_args.ml" 145 5287 5319
+call(
+  stack
+)
+type(
+  int
+)
+"odoc_args.ml" 146 5323 5331 "odoc_args.ml" 146 5323 5332
+type(
+  int
+)
+ident(
+  def n "odoc_args.ml" 147 5373 5377 "odoc_args.ml" 150 5544 5615
+)
+"odoc_args.ml" 146 5323 5335 "odoc_args.ml" 146 5323 5348
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"odoc_args.ml" 146 5323 5350 "odoc_args.ml" 146 5323 5360
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"odoc_args.ml" 146 5323 5361 "odoc_args.ml" 146 5323 5362
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 143 5259 5277 "odoc_args.ml" 143 5259 5278
+)
+"odoc_args.ml" 146 5323 5363 "odoc_args.ml" 146 5323 5364
+type(
+  int
+)
+"odoc_args.ml" 146 5323 5365 "odoc_args.ml" 146 5323 5368
+type(
+  int
+)
+ident(
+  int_ref pos "odoc_args.ml" 145 5287 5295 "odoc_args.ml" 145 5287 5298
+)
+"odoc_args.ml" 146 5323 5349 "odoc_args.ml" 146 5323 5369
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 146 5323 5335 "odoc_args.ml" 146 5323 5369
+type(
+  int
+)
+"odoc_args.ml" 147 5373 5381 "odoc_args.ml" 147 5373 5384
+type(
+  int
+)
+ident(
+  def len "odoc_args.ml" 148 5406 5410 "odoc_args.ml" 150 5544 5615
+)
+"odoc_args.ml" 147 5373 5387 "odoc_args.ml" 147 5373 5400
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"odoc_args.ml" 147 5373 5401 "odoc_args.ml" 147 5373 5402
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 143 5259 5277 "odoc_args.ml" 143 5259 5278
+)
+"odoc_args.ml" 147 5373 5387 "odoc_args.ml" 147 5373 5402
+type(
+  int
+)
+"odoc_args.ml" 148 5406 5414 "odoc_args.ml" 148 5406 5421
+type(
+  string
+)
+ident(
+  def command "odoc_args.ml" 149 5466 5470 "odoc_args.ml" 150 5544 5615
+)
+"odoc_args.ml" 148 5406 5424 "odoc_args.ml" 148 5406 5434
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"odoc_args.ml" 148 5406 5435 "odoc_args.ml" 148 5406 5436
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 143 5259 5277 "odoc_args.ml" 143 5259 5278
+)
+"odoc_args.ml" 148 5406 5438 "odoc_args.ml" 148 5406 5441
+type(
+  int
+)
+ident(
+  int_ref pos "odoc_args.ml" 145 5287 5295 "odoc_args.ml" 145 5287 5298
+)
+"odoc_args.ml" 148 5406 5442 "odoc_args.ml" 148 5406 5443
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"odoc_args.ml" 148 5406 5444 "odoc_args.ml" 148 5406 5445
+type(
+  int
+)
+"odoc_args.ml" 148 5406 5437 "odoc_args.ml" 148 5406 5446
+type(
+  int
+)
+"odoc_args.ml" 148 5406 5448 "odoc_args.ml" 148 5406 5451
+type(
+  int
+)
+ident(
+  int_ref len "odoc_args.ml" 147 5373 5381 "odoc_args.ml" 147 5373 5384
+)
+"odoc_args.ml" 148 5406 5452 "odoc_args.ml" 148 5406 5453
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"odoc_args.ml" 148 5406 5454 "odoc_args.ml" 148 5406 5457
+type(
+  int
+)
+ident(
+  int_ref pos "odoc_args.ml" 145 5287 5295 "odoc_args.ml" 145 5287 5298
+)
+"odoc_args.ml" 148 5406 5448 "odoc_args.ml" 148 5406 5457
+type(
+  int
+)
+"odoc_args.ml" 148 5406 5458 "odoc_args.ml" 148 5406 5459
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"odoc_args.ml" 148 5406 5460 "odoc_args.ml" 148 5406 5461
+type(
+  int
+)
+"odoc_args.ml" 148 5406 5447 "odoc_args.ml" 148 5406 5462
+type(
+  int
+)
+"odoc_args.ml" 148 5406 5424 "odoc_args.ml" 148 5406 5462
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 149 5466 5470 "odoc_args.ml" 149 5466 5493
+type(
+  (int * string) list ref
+)
+ident(
+  ext_ref Odoc_latex.latex_titles
+)
+"odoc_args.ml" 149 5466 5494 "odoc_args.ml" 149 5466 5496
+type(
+  (int * string) list ref -> (int * string) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 149 5466 5497 "odoc_args.ml" 149 5466 5514
+type(
+  int -> (int * string) list -> (int * string) list
+)
+ident(
+  ext_ref List.remove_assoc
+)
+"odoc_args.ml" 149 5466 5515 "odoc_args.ml" 149 5466 5516
+type(
+  int
+)
+ident(
+  int_ref n "odoc_args.ml" 146 5323 5331 "odoc_args.ml" 146 5323 5332
+)
+"odoc_args.ml" 149 5466 5517 "odoc_args.ml" 149 5466 5518
+type(
+  (int * string) list ref -> (int * string) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 149 5466 5518 "odoc_args.ml" 149 5466 5541
+type(
+  (int * string) list ref
+)
+ident(
+  ext_ref Odoc_latex.latex_titles
+)
+"odoc_args.ml" 149 5466 5517 "odoc_args.ml" 149 5466 5541
+type(
+  (int * string) list
+)
+"odoc_args.ml" 149 5466 5497 "odoc_args.ml" 149 5466 5541
+call(
+  stack
+)
+type(
+  (int * string) list
+)
+"odoc_args.ml" 149 5466 5470 "odoc_args.ml" 149 5466 5541
+type(
+  unit
+)
+"odoc_args.ml" 150 5544 5548 "odoc_args.ml" 150 5544 5571
+type(
+  (int * string) list ref
+)
+ident(
+  ext_ref Odoc_latex.latex_titles
+)
+"odoc_args.ml" 150 5544 5572 "odoc_args.ml" 150 5544 5574
+type(
+  (int * string) list ref -> (int * string) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 150 5544 5576 "odoc_args.ml" 150 5544 5577
+type(
+  int
+)
+ident(
+  int_ref n "odoc_args.ml" 146 5323 5331 "odoc_args.ml" 146 5323 5332
+)
+"odoc_args.ml" 150 5544 5579 "odoc_args.ml" 150 5544 5586
+type(
+  string
+)
+ident(
+  int_ref command "odoc_args.ml" 148 5406 5414 "odoc_args.ml" 148 5406 5421
+)
+"odoc_args.ml" 150 5544 5575 "odoc_args.ml" 150 5544 5587
+type(
+  int * string
+)
+"odoc_args.ml" 150 5544 5591 "odoc_args.ml" 150 5544 5592
+type(
+  (int * string) list ref -> (int * string) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 150 5544 5592 "odoc_args.ml" 150 5544 5615
+type(
+  (int * string) list ref
+)
+ident(
+  ext_ref Odoc_latex.latex_titles
+)
+"odoc_args.ml" 150 5544 5591 "odoc_args.ml" 150 5544 5615
+type(
+  (int * string) list
+)
+"odoc_args.ml" 150 5544 5575 "odoc_args.ml" 150 5544 5615
+type(
+  (int * string) list
+)
+"odoc_args.ml" 150 5544 5548 "odoc_args.ml" 150 5544 5615
+type(
+  unit
+)
+"odoc_args.ml" 149 5466 5470 "odoc_args.ml" 150 5544 5615
+type(
+  unit
+)
+"odoc_args.ml" 148 5406 5410 "odoc_args.ml" 150 5544 5615
+type(
+  unit
+)
+"odoc_args.ml" 147 5373 5377 "odoc_args.ml" 150 5544 5615
+type(
+  unit
+)
+"odoc_args.ml" 146 5323 5327 "odoc_args.ml" 150 5544 5615
+type(
+  unit
+)
+"odoc_args.ml" 145 5287 5291 "odoc_args.ml" 150 5544 5615
+type(
+  unit
+)
+"odoc_args.ml" 152 5623 5627 "odoc_args.ml" 152 5623 5636
+type(
+  exn
+)
+"odoc_args.ml" 153 5637 5658 "odoc_args.ml" 153 5637 5659
+type(
+  string
+)
+"odoc_args.ml" 153 5637 5641 "odoc_args.ml" 153 5637 5659
+type(
+  exn
+)
+"odoc_args.ml" 152 5623 5627 "odoc_args.ml" 153 5637 5659
+type(
+  exn
+)
+"odoc_args.ml" 154 5663 5669 "odoc_args.ml" 154 5663 5673
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_args.ml" 154 5663 5674 "odoc_args.ml" 154 5663 5692
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc_args.ml" 154 5663 5669 "odoc_args.ml" 154 5663 5692
+type(
+  unit
+)
+"odoc_args.ml" 155 5695 5701 "odoc_args.ml" 155 5695 5714
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"odoc_args.ml" 155 5695 5716 "odoc_args.ml" 155 5695 5730
+type(
+  string -> string
+)
+ident(
+  ext_ref M.wrong_format
+)
+"odoc_args.ml" 155 5695 5731 "odoc_args.ml" 155 5695 5732
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 143 5259 5277 "odoc_args.ml" 143 5259 5278
+)
+"odoc_args.ml" 155 5695 5715 "odoc_args.ml" 155 5695 5733
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 155 5695 5701 "odoc_args.ml" 155 5695 5733
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_args.ml" 154 5663 5669 "odoc_args.ml" 155 5695 5733
+type(
+  unit
+)
+"odoc_args.ml" 144 5281 5283 "odoc_args.ml" 155 5695 5733
+type(
+  unit
+)
+"odoc_args.ml" 157 5735 5739 "odoc_args.ml" 157 5735 5757
+type(
+  string -> unit
+)
+ident(
+  def add_hidden_modules "odoc_args.ml" 173 6196 6196 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 157 5735 5758 "odoc_args.ml" 157 5735 5759
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 158 5762 5764 "odoc_args.ml" 171 6189 6194
+)
+"odoc_args.ml" 158 5762 5768 "odoc_args.ml" 158 5762 5769
+type(
+  string list
+)
+ident(
+  def l "odoc_args.ml" 159 5804 5806 "odoc_args.ml" 171 6189 6194
+)
+"odoc_args.ml" 158 5762 5772 "odoc_args.ml" 158 5762 5781
+type(
+  Str.regexp -> string -> string list
+)
+ident(
+  ext_ref Str.split
+)
+"odoc_args.ml" 158 5762 5783 "odoc_args.ml" 158 5762 5793
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"odoc_args.ml" 158 5762 5794 "odoc_args.ml" 158 5762 5797
+type(
+  string
+)
+"odoc_args.ml" 158 5762 5782 "odoc_args.ml" 158 5762 5798
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"odoc_args.ml" 158 5762 5799 "odoc_args.ml" 158 5762 5800
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 157 5735 5758 "odoc_args.ml" 157 5735 5759
+)
+"odoc_args.ml" 158 5762 5772 "odoc_args.ml" 158 5762 5800
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc_args.ml" 159 5804 5806 "odoc_args.ml" 159 5804 5815
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_args.ml" 160 5816 5825 "odoc_args.ml" 160 5816 5826
+type(
+  string
+)
+ident(
+  def n "odoc_args.ml" 161 5830 5836 "odoc_args.ml" 169 6128 6182
+)
+"odoc_args.ml" 161 5830 5840 "odoc_args.ml" 161 5830 5844
+type(
+  string
+)
+ident(
+  def name "odoc_args.ml" 162 5900 5906 "odoc_args.ml" 169 6128 6182
+)
+"odoc_args.ml" 161 5830 5847 "odoc_args.ml" 161 5830 5865
+type(
+  Str.regexp -> string -> string -> string
+)
+ident(
+  ext_ref Str.global_replace
+)
+"odoc_args.ml" 161 5830 5867 "odoc_args.ml" 161 5830 5877
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"odoc_args.ml" 161 5830 5878 "odoc_args.ml" 161 5830 5890
+type(
+  string
+)
+"odoc_args.ml" 161 5830 5866 "odoc_args.ml" 161 5830 5891
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"odoc_args.ml" 161 5830 5892 "odoc_args.ml" 161 5830 5894
+type(
+  string
+)
+"odoc_args.ml" 161 5830 5895 "odoc_args.ml" 161 5830 5896
+type(
+  string
+)
+ident(
+  int_ref n "odoc_args.ml" 160 5816 5825 "odoc_args.ml" 160 5816 5826
+)
+"odoc_args.ml" 161 5830 5847 "odoc_args.ml" 161 5830 5896
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 162 5900 5912 "odoc_args.ml" 162 5900 5916
+type(
+  string
+)
+ident(
+  int_ref name "odoc_args.ml" 161 5830 5840 "odoc_args.ml" 161 5830 5844
+)
+"odoc_args.ml" 163 5922 5930 "odoc_args.ml" 163 5922 5932
+type(
+  string
+)
+"odoc_args.ml" 163 5922 5936 "odoc_args.ml" 163 5922 5938
+type(
+  unit
+)
+"odoc_args.ml" 164 5939 5947 "odoc_args.ml" 164 5939 5948
+type(
+  string
+)
+"odoc_args.ml" 165 5952 5968 "odoc_args.ml" 165 5952 5972
+type(
+  string
+)
+ident(
+  int_ref name "odoc_args.ml" 161 5830 5840 "odoc_args.ml" 161 5830 5844
+)
+"odoc_args.ml" 165 5952 5974 "odoc_args.ml" 165 5952 5975
+type(
+  int
+)
+"odoc_args.ml" 165 5952 5968 "odoc_args.ml" 165 5952 5976
+type(
+  char
+)
+"odoc_args.ml" 166 5982 5994 "odoc_args.ml" 166 5982 6002
+type(
+  char
+)
+"odoc_args.ml" 166 5982 6006 "odoc_args.ml" 166 5982 6032
+type(
+  string list ref
+)
+ident(
+  ext_ref Odoc_global.hidden_modules
+)
+"odoc_args.ml" 166 5982 6033 "odoc_args.ml" 166 5982 6035
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 166 5982 6036 "odoc_args.ml" 166 5982 6040
+type(
+  string
+)
+ident(
+  int_ref name "odoc_args.ml" 161 5830 5840 "odoc_args.ml" 161 5830 5844
+)
+"odoc_args.ml" 166 5982 6044 "odoc_args.ml" 166 5982 6045
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 166 5982 6045 "odoc_args.ml" 166 5982 6071
+type(
+  string list ref
+)
+ident(
+  ext_ref Odoc_global.hidden_modules
+)
+"odoc_args.ml" 166 5982 6044 "odoc_args.ml" 166 5982 6071
+type(
+  string list
+)
+"odoc_args.ml" 166 5982 6036 "odoc_args.ml" 166 5982 6071
+type(
+  string list
+)
+"odoc_args.ml" 166 5982 6006 "odoc_args.ml" 166 5982 6071
+type(
+  unit
+)
+"odoc_args.ml" 167 6072 6084 "odoc_args.ml" 167 6072 6085
+type(
+  char
+)
+"odoc_args.ml" 168 6089 6103 "odoc_args.ml" 168 6089 6107
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"odoc_args.ml" 168 6089 6108 "odoc_args.ml" 168 6089 6126
+type(
+  int ref
+)
+ident(
+  ext_ref Odoc_global.errors
+)
+"odoc_args.ml" 168 6089 6103 "odoc_args.ml" 168 6089 6126
+type(
+  unit
+)
+"odoc_args.ml" 169 6128 6142 "odoc_args.ml" 169 6128 6155
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"odoc_args.ml" 169 6128 6157 "odoc_args.ml" 169 6128 6176
+type(
+  string -> string
+)
+ident(
+  ext_ref M.not_a_module_name
+)
+"odoc_args.ml" 169 6128 6177 "odoc_args.ml" 169 6128 6181
+type(
+  string
+)
+ident(
+  int_ref name "odoc_args.ml" 161 5830 5840 "odoc_args.ml" 161 5830 5844
+)
+"odoc_args.ml" 169 6128 6156 "odoc_args.ml" 169 6128 6182
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 169 6128 6142 "odoc_args.ml" 169 6128 6182
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_args.ml" 168 6089 6103 "odoc_args.ml" 169 6128 6182
+type(
+  unit
+)
+"odoc_args.ml" 165 5952 5962 "odoc_args.ml" 169 6128 6182
+type(
+  unit
+)
+"odoc_args.ml" 162 5900 5906 "odoc_args.ml" 169 6128 6182
+type(
+  unit
+)
+"odoc_args.ml" 161 5830 5836 "odoc_args.ml" 169 6128 6182
+type(
+  unit
+)
+"odoc_args.ml" 160 5816 5820 "odoc_args.ml" 170 6183 6188
+type(
+  string -> unit
+)
+"odoc_args.ml" 171 6189 6193 "odoc_args.ml" 171 6189 6194
+type(
+  string list
+)
+ident(
+  int_ref l "odoc_args.ml" 158 5762 5768 "odoc_args.ml" 158 5762 5769
+)
+"odoc_args.ml" 159 5804 5806 "odoc_args.ml" 171 6189 6194
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_args.ml" 158 5762 5764 "odoc_args.ml" 171 6189 6194
+type(
+  unit
+)
+"odoc_args.ml" 173 6196 6200 "odoc_args.ml" 173 6196 6213
+type(
+  Odoc_gen.generator -> unit
+)
+ident(
+  def set_generator "odoc_args.ml" 176 6301 6301 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 173 6196 6215 "odoc_args.ml" 173 6196 6216
+type(
+  Odoc_gen.generator
+)
+ident(
+  def g "odoc_args.ml" 173 6196 6241 "odoc_args.ml" 173 6196 6268
+)
+"odoc_args.ml" 173 6196 6241 "odoc_args.ml" 173 6196 6258
+type(
+  Odoc_gen.generator option ref
+)
+ident(
+  int_ref current_generator "odoc_args.ml" 17 892 896 "odoc_args.ml" 17 892 913
+)
+"odoc_args.ml" 173 6196 6259 "odoc_args.ml" 173 6196 6261
+type(
+  Odoc_gen.generator option ref -> Odoc_gen.generator option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 173 6196 6267 "odoc_args.ml" 173 6196 6268
+type(
+  Odoc_gen.generator
+)
+ident(
+  int_ref g "odoc_args.ml" 173 6196 6215 "odoc_args.ml" 173 6196 6216
+)
+"odoc_args.ml" 173 6196 6262 "odoc_args.ml" 173 6196 6268
+type(
+  Odoc_gen.generator option
+)
+"odoc_args.ml" 173 6196 6241 "odoc_args.ml" 173 6196 6268
+type(
+  unit
+)
+"odoc_args.ml" 176 6301 6305 "odoc_args.ml" 176 6301 6320
+type(
+  (string * Arg.spec * string) list
+)
+ident(
+  def default_options "odoc_args.ml" 301 12959 12959 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 177 6325 6327 "odoc_args.ml" 177 6325 6337
+type(
+  string
+)
+"odoc_args.ml" 177 6325 6353 "odoc_args.ml" 177 6325 6355
+type(
+  unit
+)
+"odoc_args.ml" 177 6325 6359 "odoc_args.ml" 177 6325 6371
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"odoc_args.ml" 177 6325 6372 "odoc_args.ml" 177 6325 6389
+type(
+  string
+)
+ident(
+  ext_ref M.message_version
+)
+"odoc_args.ml" 177 6325 6359 "odoc_args.ml" 177 6325 6389
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_args.ml" 177 6325 6392 "odoc_args.ml" 177 6325 6405
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"odoc_args.ml" 177 6325 6406 "odoc_args.ml" 177 6325 6408
+type(
+  unit
+)
+"odoc_args.ml" 177 6325 6392 "odoc_args.ml" 177 6325 6408
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_args.ml" 177 6325 6411 "odoc_args.ml" 177 6325 6415
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"odoc_args.ml" 177 6325 6416 "odoc_args.ml" 177 6325 6417
+type(
+  int
+)
+"odoc_args.ml" 177 6325 6411 "odoc_args.ml" 177 6325 6417
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_args.ml" 177 6325 6392 "odoc_args.ml" 177 6325 6417
+type(
+  unit
+)
+"odoc_args.ml" 177 6325 6359 "odoc_args.ml" 177 6325 6417
+type(
+  unit
+)
+"odoc_args.ml" 177 6325 6348 "odoc_args.ml" 177 6325 6418
+type(
+  unit -> unit
+)
+"odoc_args.ml" 177 6325 6339 "odoc_args.ml" 177 6325 6418
+type(
+  Arg.spec
+)
+"odoc_args.ml" 177 6325 6421 "odoc_args.ml" 177 6325 6437
+type(
+  string
+)
+ident(
+  ext_ref M.option_version
+)
+"odoc_args.ml" 177 6325 6327 "odoc_args.ml" 177 6325 6437
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 178 6440 6442 "odoc_args.ml" 178 6440 6449
+type(
+  string
+)
+"odoc_args.ml" 178 6440 6465 "odoc_args.ml" 178 6440 6467
+type(
+  unit
+)
+"odoc_args.ml" 178 6440 6471 "odoc_args.ml" 178 6440 6483
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"odoc_args.ml" 178 6440 6484 "odoc_args.ml" 178 6440 6500
+type(
+  string
+)
+ident(
+  ext_ref M.config_version
+)
+"odoc_args.ml" 178 6440 6471 "odoc_args.ml" 178 6440 6500
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_args.ml" 179 6503 6534 "odoc_args.ml" 179 6503 6547
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"odoc_args.ml" 179 6503 6548 "odoc_args.ml" 179 6503 6550
+type(
+  unit
+)
+"odoc_args.ml" 179 6503 6534 "odoc_args.ml" 179 6503 6550
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_args.ml" 179 6503 6553 "odoc_args.ml" 179 6503 6557
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"odoc_args.ml" 179 6503 6558 "odoc_args.ml" 179 6503 6559
+type(
+  int
+)
+"odoc_args.ml" 179 6503 6553 "odoc_args.ml" 179 6503 6559
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_args.ml" 179 6503 6534 "odoc_args.ml" 179 6503 6559
+type(
+  unit
+)
+"odoc_args.ml" 178 6440 6471 "odoc_args.ml" 179 6503 6559
+type(
+  unit
+)
+"odoc_args.ml" 178 6440 6460 "odoc_args.ml" 179 6503 6560
+type(
+  unit -> unit
+)
+"odoc_args.ml" 178 6440 6451 "odoc_args.ml" 179 6503 6560
+type(
+  Arg.spec
+)
+"odoc_args.ml" 179 6503 6563 "odoc_args.ml" 179 6503 6579
+type(
+  string
+)
+ident(
+  ext_ref M.option_version
+)
+"odoc_args.ml" 178 6440 6442 "odoc_args.ml" 179 6503 6579
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 180 6582 6584 "odoc_args.ml" 180 6582 6588
+type(
+  string
+)
+"odoc_args.ml" 180 6582 6604 "odoc_args.ml" 180 6582 6606
+type(
+  unit
+)
+"odoc_args.ml" 180 6582 6610 "odoc_args.ml" 180 6582 6629
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.verbose
+)
+"odoc_args.ml" 180 6582 6630 "odoc_args.ml" 180 6582 6632
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 180 6582 6633 "odoc_args.ml" 180 6582 6637
+type(
+  bool
+)
+"odoc_args.ml" 180 6582 6610 "odoc_args.ml" 180 6582 6637
+type(
+  unit
+)
+"odoc_args.ml" 180 6582 6599 "odoc_args.ml" 180 6582 6638
+type(
+  unit -> unit
+)
+"odoc_args.ml" 180 6582 6590 "odoc_args.ml" 180 6582 6638
+type(
+  Arg.spec
+)
+"odoc_args.ml" 180 6582 6640 "odoc_args.ml" 180 6582 6654
+type(
+  string
+)
+ident(
+  ext_ref M.verbose_mode
+)
+"odoc_args.ml" 180 6582 6584 "odoc_args.ml" 180 6582 6654
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 181 6657 6659 "odoc_args.ml" 181 6657 6663
+type(
+  string
+)
+"odoc_args.ml" 181 6657 6681 "odoc_args.ml" 181 6657 6682
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 182 6686 6693 "odoc_args.ml" 183 6721 6808
+)
+"odoc_args.ml" 182 6686 6693 "odoc_args.ml" 182 6686 6717
+type(
+  string list ref
+)
+ident(
+  ext_ref Odoc_global.include_dirs
+)
+"odoc_args.ml" 182 6686 6718 "odoc_args.ml" 182 6686 6720
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 183 6721 6731 "odoc_args.ml" 183 6721 6752
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Misc.expand_directory
+)
+"odoc_args.ml" 183 6721 6753 "odoc_args.ml" 183 6721 6776
+type(
+  string
+)
+ident(
+  ext_ref Config.standard_library
+)
+"odoc_args.ml" 183 6721 6777 "odoc_args.ml" 183 6721 6778
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 181 6657 6681 "odoc_args.ml" 181 6657 6682
+)
+"odoc_args.ml" 183 6721 6730 "odoc_args.ml" 183 6721 6779
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 183 6721 6783 "odoc_args.ml" 183 6721 6784
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 183 6721 6784 "odoc_args.ml" 183 6721 6808
+type(
+  string list ref
+)
+ident(
+  ext_ref Odoc_global.include_dirs
+)
+"odoc_args.ml" 183 6721 6783 "odoc_args.ml" 183 6721 6808
+type(
+  string list
+)
+"odoc_args.ml" 183 6721 6730 "odoc_args.ml" 183 6721 6808
+type(
+  string list
+)
+"odoc_args.ml" 182 6686 6693 "odoc_args.ml" 183 6721 6808
+type(
+  unit
+)
+"odoc_args.ml" 181 6657 6676 "odoc_args.ml" 183 6721 6809
+type(
+  string -> unit
+)
+"odoc_args.ml" 181 6657 6665 "odoc_args.ml" 183 6721 6809
+type(
+  Arg.spec
+)
+"odoc_args.ml" 184 6811 6815 "odoc_args.ml" 184 6811 6829
+type(
+  string
+)
+ident(
+  ext_ref M.include_dirs
+)
+"odoc_args.ml" 181 6657 6659 "odoc_args.ml" 184 6811 6829
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 185 6832 6834 "odoc_args.ml" 185 6832 6839
+type(
+  string
+)
+"odoc_args.ml" 185 6832 6857 "odoc_args.ml" 185 6832 6858
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 185 6832 6862 "odoc_args.ml" 185 6832 6896
+)
+"odoc_args.ml" 185 6832 6862 "odoc_args.ml" 185 6832 6886
+type(
+  string option ref
+)
+ident(
+  ext_ref Odoc_global.preprocessor
+)
+"odoc_args.ml" 185 6832 6887 "odoc_args.ml" 185 6832 6889
+type(
+  string option ref -> string option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 185 6832 6895 "odoc_args.ml" 185 6832 6896
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 185 6832 6857 "odoc_args.ml" 185 6832 6858
+)
+"odoc_args.ml" 185 6832 6890 "odoc_args.ml" 185 6832 6896
+type(
+  string option
+)
+"odoc_args.ml" 185 6832 6862 "odoc_args.ml" 185 6832 6896
+type(
+  unit
+)
+"odoc_args.ml" 185 6832 6852 "odoc_args.ml" 185 6832 6897
+type(
+  string -> unit
+)
+"odoc_args.ml" 185 6832 6841 "odoc_args.ml" 185 6832 6897
+type(
+  Arg.spec
+)
+"odoc_args.ml" 185 6832 6899 "odoc_args.ml" 185 6832 6911
+type(
+  string
+)
+ident(
+  ext_ref M.preprocess
+)
+"odoc_args.ml" 185 6832 6834 "odoc_args.ml" 185 6832 6911
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 186 6914 6916 "odoc_args.ml" 186 6914 6922
+type(
+  string
+)
+"odoc_args.ml" 186 6914 6940 "odoc_args.ml" 186 6914 6941
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 186 6914 6945 "odoc_args.ml" 186 6914 6985
+)
+"odoc_args.ml" 186 6914 6945 "odoc_args.ml" 186 6914 6960
+type(
+  string list ref
+)
+ident(
+  ext_ref Odoc_global.ppx
+)
+"odoc_args.ml" 186 6914 6961 "odoc_args.ml" 186 6914 6963
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 186 6914 6964 "odoc_args.ml" 186 6914 6965
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 186 6914 6940 "odoc_args.ml" 186 6914 6941
+)
+"odoc_args.ml" 186 6914 6969 "odoc_args.ml" 186 6914 6970
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 186 6914 6970 "odoc_args.ml" 186 6914 6985
+type(
+  string list ref
+)
+ident(
+  ext_ref Odoc_global.ppx
+)
+"odoc_args.ml" 186 6914 6969 "odoc_args.ml" 186 6914 6985
+type(
+  string list
+)
+"odoc_args.ml" 186 6914 6964 "odoc_args.ml" 186 6914 6985
+type(
+  string list
+)
+"odoc_args.ml" 186 6914 6945 "odoc_args.ml" 186 6914 6985
+type(
+  unit
+)
+"odoc_args.ml" 186 6914 6935 "odoc_args.ml" 186 6914 6986
+type(
+  string -> unit
+)
+"odoc_args.ml" 186 6914 6924 "odoc_args.ml" 186 6914 6986
+type(
+  Arg.spec
+)
+"odoc_args.ml" 186 6914 6988 "odoc_args.ml" 186 6914 6993
+type(
+  string
+)
+ident(
+  ext_ref M.ppx
+)
+"odoc_args.ml" 186 6914 6916 "odoc_args.ml" 186 6914 6993
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 187 6996 6998 "odoc_args.ml" 187 6996 7005
+type(
+  string
+)
+"odoc_args.ml" 187 6996 7023 "odoc_args.ml" 187 6996 7024
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 188 7028 7035 "odoc_args.ml" 188 7028 7102
+)
+"odoc_args.ml" 188 7028 7035 "odoc_args.ml" 188 7028 7052
+type(
+  Odoc_global.source_file list ref
+)
+ident(
+  ext_ref Odoc_global.files
+)
+"odoc_args.ml" 188 7028 7053 "odoc_args.ml" 188 7028 7055
+type(
+  Odoc_global.source_file list ref -> Odoc_global.source_file list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 188 7028 7056 "odoc_args.ml" 188 7028 7057
+type(
+  Odoc_global.source_file list ref -> Odoc_global.source_file list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 188 7028 7057 "odoc_args.ml" 188 7028 7074
+type(
+  Odoc_global.source_file list ref
+)
+ident(
+  ext_ref Odoc_global.files
+)
+"odoc_args.ml" 188 7028 7056 "odoc_args.ml" 188 7028 7074
+type(
+  Odoc_global.source_file list
+)
+"odoc_args.ml" 188 7028 7075 "odoc_args.ml" 188 7028 7076
+type(
+  Odoc_global.source_file list ->
+  Odoc_global.source_file list -> Odoc_global.source_file list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_args.ml" 188 7028 7100 "odoc_args.ml" 188 7028 7101
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 187 6996 7023 "odoc_args.ml" 187 6996 7024
+)
+"odoc_args.ml" 188 7028 7078 "odoc_args.ml" 188 7028 7101
+type(
+  Odoc_global.source_file
+)
+"odoc_args.ml" 188 7028 7077 "odoc_args.ml" 188 7028 7102
+type(
+  Odoc_global.source_file list
+)
+"odoc_args.ml" 188 7028 7056 "odoc_args.ml" 188 7028 7102
+call(
+  stack
+)
+type(
+  Odoc_global.source_file list
+)
+"odoc_args.ml" 188 7028 7035 "odoc_args.ml" 188 7028 7102
+type(
+  unit
+)
+"odoc_args.ml" 187 6996 7018 "odoc_args.ml" 188 7028 7103
+type(
+  string -> unit
+)
+"odoc_args.ml" 187 6996 7007 "odoc_args.ml" 188 7028 7103
+type(
+  Arg.spec
+)
+"odoc_args.ml" 189 7105 7109 "odoc_args.ml" 189 7105 7122
+type(
+  string
+)
+ident(
+  ext_ref M.option_impl
+)
+"odoc_args.ml" 187 6996 6998 "odoc_args.ml" 189 7105 7122
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 190 7125 7129 "odoc_args.ml" 190 7125 7136
+type(
+  string
+)
+"odoc_args.ml" 190 7125 7154 "odoc_args.ml" 190 7125 7155
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 191 7159 7166 "odoc_args.ml" 191 7159 7233
+)
+"odoc_args.ml" 191 7159 7166 "odoc_args.ml" 191 7159 7183
+type(
+  Odoc_global.source_file list ref
+)
+ident(
+  ext_ref Odoc_global.files
+)
+"odoc_args.ml" 191 7159 7184 "odoc_args.ml" 191 7159 7186
+type(
+  Odoc_global.source_file list ref -> Odoc_global.source_file list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 191 7159 7187 "odoc_args.ml" 191 7159 7188
+type(
+  Odoc_global.source_file list ref -> Odoc_global.source_file list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 191 7159 7188 "odoc_args.ml" 191 7159 7205
+type(
+  Odoc_global.source_file list ref
+)
+ident(
+  ext_ref Odoc_global.files
+)
+"odoc_args.ml" 191 7159 7187 "odoc_args.ml" 191 7159 7205
+type(
+  Odoc_global.source_file list
+)
+"odoc_args.ml" 191 7159 7206 "odoc_args.ml" 191 7159 7207
+type(
+  Odoc_global.source_file list ->
+  Odoc_global.source_file list -> Odoc_global.source_file list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_args.ml" 191 7159 7231 "odoc_args.ml" 191 7159 7232
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 190 7125 7154 "odoc_args.ml" 190 7125 7155
+)
+"odoc_args.ml" 191 7159 7209 "odoc_args.ml" 191 7159 7232
+type(
+  Odoc_global.source_file
+)
+"odoc_args.ml" 191 7159 7208 "odoc_args.ml" 191 7159 7233
+type(
+  Odoc_global.source_file list
+)
+"odoc_args.ml" 191 7159 7187 "odoc_args.ml" 191 7159 7233
+call(
+  stack
+)
+type(
+  Odoc_global.source_file list
+)
+"odoc_args.ml" 191 7159 7166 "odoc_args.ml" 191 7159 7233
+type(
+  unit
+)
+"odoc_args.ml" 190 7125 7149 "odoc_args.ml" 191 7159 7234
+type(
+  string -> unit
+)
+"odoc_args.ml" 190 7125 7138 "odoc_args.ml" 191 7159 7234
+type(
+  Arg.spec
+)
+"odoc_args.ml" 192 7236 7240 "odoc_args.ml" 192 7236 7253
+type(
+  string
+)
+ident(
+  ext_ref M.option_intf
+)
+"odoc_args.ml" 190 7125 7129 "odoc_args.ml" 192 7236 7253
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 193 7256 7258 "odoc_args.ml" 193 7256 7265
+type(
+  string
+)
+"odoc_args.ml" 193 7256 7283 "odoc_args.ml" 193 7256 7284
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 194 7288 7295 "odoc_args.ml" 194 7288 7362
+)
+"odoc_args.ml" 194 7288 7295 "odoc_args.ml" 194 7288 7312
+type(
+  Odoc_global.source_file list ref
+)
+ident(
+  ext_ref Odoc_global.files
+)
+"odoc_args.ml" 194 7288 7313 "odoc_args.ml" 194 7288 7315
+type(
+  Odoc_global.source_file list ref -> Odoc_global.source_file list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 194 7288 7316 "odoc_args.ml" 194 7288 7317
+type(
+  Odoc_global.source_file list ref -> Odoc_global.source_file list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 194 7288 7317 "odoc_args.ml" 194 7288 7334
+type(
+  Odoc_global.source_file list ref
+)
+ident(
+  ext_ref Odoc_global.files
+)
+"odoc_args.ml" 194 7288 7316 "odoc_args.ml" 194 7288 7334
+type(
+  Odoc_global.source_file list
+)
+"odoc_args.ml" 194 7288 7335 "odoc_args.ml" 194 7288 7336
+type(
+  Odoc_global.source_file list ->
+  Odoc_global.source_file list -> Odoc_global.source_file list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_args.ml" 194 7288 7360 "odoc_args.ml" 194 7288 7361
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 193 7256 7283 "odoc_args.ml" 193 7256 7284
+)
+"odoc_args.ml" 194 7288 7338 "odoc_args.ml" 194 7288 7361
+type(
+  Odoc_global.source_file
+)
+"odoc_args.ml" 194 7288 7337 "odoc_args.ml" 194 7288 7362
+type(
+  Odoc_global.source_file list
+)
+"odoc_args.ml" 194 7288 7316 "odoc_args.ml" 194 7288 7362
+call(
+  stack
+)
+type(
+  Odoc_global.source_file list
+)
+"odoc_args.ml" 194 7288 7295 "odoc_args.ml" 194 7288 7362
+type(
+  unit
+)
+"odoc_args.ml" 193 7256 7278 "odoc_args.ml" 194 7288 7363
+type(
+  string -> unit
+)
+"odoc_args.ml" 193 7256 7267 "odoc_args.ml" 194 7288 7363
+type(
+  Arg.spec
+)
+"odoc_args.ml" 195 7365 7369 "odoc_args.ml" 195 7365 7382
+type(
+  string
+)
+ident(
+  ext_ref M.option_text
+)
+"odoc_args.ml" 193 7256 7258 "odoc_args.ml" 195 7365 7382
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 196 7385 7387 "odoc_args.ml" 196 7385 7398
+type(
+  string
+)
+"odoc_args.ml" 196 7385 7408 "odoc_args.ml" 196 7385 7435
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.recursive_types
+)
+"odoc_args.ml" 196 7385 7400 "odoc_args.ml" 196 7385 7435
+type(
+  Arg.spec
+)
+"odoc_args.ml" 196 7385 7437 "odoc_args.ml" 196 7385 7447
+type(
+  string
+)
+ident(
+  ext_ref M.rectypes
+)
+"odoc_args.ml" 196 7385 7387 "odoc_args.ml" 196 7385 7447
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 197 7450 7452 "odoc_args.ml" 197 7450 7463
+type(
+  string
+)
+"odoc_args.ml" 197 7450 7479 "odoc_args.ml" 197 7450 7481
+type(
+  unit
+)
+"odoc_args.ml" 197 7450 7485 "odoc_args.ml" 197 7450 7504
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.classic
+)
+"odoc_args.ml" 197 7450 7505 "odoc_args.ml" 197 7450 7507
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 197 7450 7508 "odoc_args.ml" 197 7450 7512
+type(
+  bool
+)
+"odoc_args.ml" 197 7450 7485 "odoc_args.ml" 197 7450 7512
+type(
+  unit
+)
+"odoc_args.ml" 197 7450 7474 "odoc_args.ml" 197 7450 7513
+type(
+  unit -> unit
+)
+"odoc_args.ml" 197 7450 7465 "odoc_args.ml" 197 7450 7513
+type(
+  Arg.spec
+)
+"odoc_args.ml" 197 7450 7515 "odoc_args.ml" 197 7450 7525
+type(
+  string
+)
+ident(
+  ext_ref M.nolabels
+)
+"odoc_args.ml" 197 7450 7452 "odoc_args.ml" 197 7450 7525
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 198 7528 7530 "odoc_args.ml" 198 7528 7543
+type(
+  string
+)
+"odoc_args.ml" 198 7528 7553 "odoc_args.ml" 198 7528 7575
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.warn_error
+)
+"odoc_args.ml" 198 7528 7545 "odoc_args.ml" 198 7528 7575
+type(
+  Arg.spec
+)
+"odoc_args.ml" 198 7528 7577 "odoc_args.ml" 198 7528 7583
+type(
+  string
+)
+ident(
+  ext_ref M.werr
+)
+"odoc_args.ml" 198 7528 7530 "odoc_args.ml" 198 7528 7583
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 199 7586 7588 "odoc_args.ml" 199 7586 7604
+type(
+  string
+)
+"odoc_args.ml" 199 7586 7616 "odoc_args.ml" 199 7586 7642
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_config.print_warnings
+)
+"odoc_args.ml" 199 7586 7606 "odoc_args.ml" 199 7586 7642
+type(
+  Arg.spec
+)
+"odoc_args.ml" 199 7586 7644 "odoc_args.ml" 199 7586 7659
+type(
+  string
+)
+ident(
+  ext_ref M.hide_warnings
+)
+"odoc_args.ml" 199 7586 7588 "odoc_args.ml" 199 7586 7659
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 200 7662 7664 "odoc_args.ml" 200 7662 7668
+type(
+  string
+)
+"odoc_args.ml" 200 7662 7686 "odoc_args.ml" 200 7662 7687
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 200 7662 7691 "odoc_args.ml" 200 7662 7716
+)
+"odoc_args.ml" 200 7662 7691 "odoc_args.ml" 200 7662 7711
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_global.out_file
+)
+"odoc_args.ml" 200 7662 7712 "odoc_args.ml" 200 7662 7714
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 200 7662 7715 "odoc_args.ml" 200 7662 7716
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 200 7662 7686 "odoc_args.ml" 200 7662 7687
+)
+"odoc_args.ml" 200 7662 7691 "odoc_args.ml" 200 7662 7716
+type(
+  unit
+)
+"odoc_args.ml" 200 7662 7681 "odoc_args.ml" 200 7662 7717
+type(
+  string -> unit
+)
+"odoc_args.ml" 200 7662 7670 "odoc_args.ml" 200 7662 7717
+type(
+  Arg.spec
+)
+"odoc_args.ml" 200 7662 7719 "odoc_args.ml" 200 7662 7729
+type(
+  string
+)
+ident(
+  ext_ref M.out_file
+)
+"odoc_args.ml" 200 7662 7664 "odoc_args.ml" 200 7662 7729
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 201 7732 7734 "odoc_args.ml" 201 7732 7738
+type(
+  string
+)
+"odoc_args.ml" 201 7732 7756 "odoc_args.ml" 201 7732 7757
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 201 7732 7761 "odoc_args.ml" 201 7732 7788
+)
+"odoc_args.ml" 201 7732 7761 "odoc_args.ml" 201 7732 7783
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_global.target_dir
+)
+"odoc_args.ml" 201 7732 7784 "odoc_args.ml" 201 7732 7786
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 201 7732 7787 "odoc_args.ml" 201 7732 7788
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 201 7732 7756 "odoc_args.ml" 201 7732 7757
+)
+"odoc_args.ml" 201 7732 7761 "odoc_args.ml" 201 7732 7788
+type(
+  unit
+)
+"odoc_args.ml" 201 7732 7751 "odoc_args.ml" 201 7732 7789
+type(
+  string -> unit
+)
+"odoc_args.ml" 201 7732 7740 "odoc_args.ml" 201 7732 7789
+type(
+  Arg.spec
+)
+"odoc_args.ml" 201 7732 7791 "odoc_args.ml" 201 7732 7803
+type(
+  string
+)
+ident(
+  ext_ref M.target_dir
+)
+"odoc_args.ml" 201 7732 7734 "odoc_args.ml" 201 7732 7803
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 202 7806 7808 "odoc_args.ml" 202 7806 7815
+type(
+  string
+)
+"odoc_args.ml" 202 7806 7831 "odoc_args.ml" 202 7806 7833
+type(
+  unit
+)
+"odoc_args.ml" 202 7806 7837 "odoc_args.ml" 202 7806 7861
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.sort_modules
+)
+"odoc_args.ml" 202 7806 7862 "odoc_args.ml" 202 7806 7864
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 202 7806 7865 "odoc_args.ml" 202 7806 7869
+type(
+  bool
+)
+"odoc_args.ml" 202 7806 7837 "odoc_args.ml" 202 7806 7869
+type(
+  unit
+)
+"odoc_args.ml" 202 7806 7826 "odoc_args.ml" 202 7806 7870
+type(
+  unit -> unit
+)
+"odoc_args.ml" 202 7806 7817 "odoc_args.ml" 202 7806 7870
+type(
+  Arg.spec
+)
+"odoc_args.ml" 202 7806 7872 "odoc_args.ml" 202 7806 7886
+type(
+  string
+)
+ident(
+  ext_ref M.sort_modules
+)
+"odoc_args.ml" 202 7806 7808 "odoc_args.ml" 202 7806 7886
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 203 7889 7891 "odoc_args.ml" 203 7889 7901
+type(
+  string
+)
+"odoc_args.ml" 203 7889 7911 "odoc_args.ml" 203 7889 7930
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.no_stop
+)
+"odoc_args.ml" 203 7889 7903 "odoc_args.ml" 203 7889 7930
+type(
+  Arg.spec
+)
+"odoc_args.ml" 203 7889 7932 "odoc_args.ml" 203 7889 7941
+type(
+  string
+)
+ident(
+  ext_ref M.no_stop
+)
+"odoc_args.ml" 203 7889 7891 "odoc_args.ml" 203 7889 7941
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 204 7944 7946 "odoc_args.ml" 204 7944 7963
+type(
+  string
+)
+"odoc_args.ml" 204 7944 7973 "odoc_args.ml" 204 7944 7999
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.no_custom_tags
+)
+"odoc_args.ml" 204 7944 7965 "odoc_args.ml" 204 7944 7999
+type(
+  Arg.spec
+)
+"odoc_args.ml" 204 7944 8001 "odoc_args.ml" 204 7944 8017
+type(
+  string
+)
+ident(
+  ext_ref M.no_custom_tags
+)
+"odoc_args.ml" 204 7944 7946 "odoc_args.ml" 204 7944 8017
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 205 8020 8022 "odoc_args.ml" 205 8020 8030
+type(
+  string
+)
+"odoc_args.ml" 205 8020 8040 "odoc_args.ml" 205 8020 8064
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.remove_stars
+)
+"odoc_args.ml" 205 8020 8032 "odoc_args.ml" 205 8020 8064
+type(
+  Arg.spec
+)
+"odoc_args.ml" 205 8020 8066 "odoc_args.ml" 205 8020 8080
+type(
+  string
+)
+ident(
+  ext_ref M.remove_stars
+)
+"odoc_args.ml" 205 8020 8022 "odoc_args.ml" 205 8020 8080
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 206 8083 8085 "odoc_args.ml" 206 8083 8104
+type(
+  string
+)
+"odoc_args.ml" 206 8083 8114 "odoc_args.ml" 206 8083 8146
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.inverse_merge_ml_mli
+)
+"odoc_args.ml" 206 8083 8106 "odoc_args.ml" 206 8083 8146
+type(
+  Arg.spec
+)
+"odoc_args.ml" 206 8083 8148 "odoc_args.ml" 206 8083 8170
+type(
+  string
+)
+ident(
+  ext_ref M.inverse_merge_ml_mli
+)
+"odoc_args.ml" 206 8083 8085 "odoc_args.ml" 206 8083 8170
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 207 8173 8175 "odoc_args.ml" 207 8173 8205
+type(
+  string
+)
+"odoc_args.ml" 207 8173 8217 "odoc_args.ml" 207 8173 8259
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.filter_with_module_constraints
+)
+"odoc_args.ml" 207 8173 8207 "odoc_args.ml" 207 8173 8259
+type(
+  Arg.spec
+)
+"odoc_args.ml" 208 8261 8263 "odoc_args.ml" 208 8261 8298
+type(
+  string
+)
+ident(
+  ext_ref M.no_filter_with_module_constraints
+)
+"odoc_args.ml" 207 8173 8175 "odoc_args.ml" 208 8261 8298
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 210 8302 8304 "odoc_args.ml" 210 8302 8316
+type(
+  string
+)
+"odoc_args.ml" 210 8302 8326 "odoc_args.ml" 210 8302 8347
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.keep_code
+)
+"odoc_args.ml" 210 8302 8318 "odoc_args.ml" 210 8302 8347
+type(
+  Arg.spec
+)
+"odoc_args.ml" 210 8302 8349 "odoc_args.ml" 210 8302 8360
+type(
+  string
+)
+ident(
+  ext_ref M.keep_code
+)
+"odoc_args.ml" 210 8302 8360 "odoc_args.ml" 210 8302 8361
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_args.ml" 210 8302 8361 "odoc_args.ml" 210 8302 8365
+type(
+  string
+)
+"odoc_args.ml" 210 8302 8349 "odoc_args.ml" 210 8302 8365
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 210 8302 8304 "odoc_args.ml" 210 8302 8365
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 212 8369 8371 "odoc_args.ml" 212 8369 8378
+type(
+  string
+)
+"odoc_args.ml" 212 8369 8396 "odoc_args.ml" 212 8369 8397
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 212 8369 8401 "odoc_args.ml" 212 8369 8427
+)
+"odoc_args.ml" 212 8369 8401 "odoc_args.ml" 212 8369 8417
+type(
+  string option ref
+)
+ident(
+  ext_ref Odoc_global.dump
+)
+"odoc_args.ml" 212 8369 8418 "odoc_args.ml" 212 8369 8420
+type(
+  string option ref -> string option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 212 8369 8426 "odoc_args.ml" 212 8369 8427
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 212 8369 8396 "odoc_args.ml" 212 8369 8397
+)
+"odoc_args.ml" 212 8369 8421 "odoc_args.ml" 212 8369 8427
+type(
+  string option
+)
+"odoc_args.ml" 212 8369 8401 "odoc_args.ml" 212 8369 8427
+type(
+  unit
+)
+"odoc_args.ml" 212 8369 8391 "odoc_args.ml" 212 8369 8428
+type(
+  string -> unit
+)
+"odoc_args.ml" 212 8369 8380 "odoc_args.ml" 212 8369 8428
+type(
+  Arg.spec
+)
+"odoc_args.ml" 212 8369 8430 "odoc_args.ml" 212 8369 8436
+type(
+  string
+)
+ident(
+  ext_ref M.dump
+)
+"odoc_args.ml" 212 8369 8371 "odoc_args.ml" 212 8369 8436
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 213 8439 8441 "odoc_args.ml" 213 8439 8448
+type(
+  string
+)
+"odoc_args.ml" 213 8439 8466 "odoc_args.ml" 213 8439 8467
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 213 8439 8471 "odoc_args.ml" 213 8439 8514
+)
+"odoc_args.ml" 213 8439 8471 "odoc_args.ml" 213 8439 8487
+type(
+  string list ref
+)
+ident(
+  ext_ref Odoc_global.load
+)
+"odoc_args.ml" 213 8439 8488 "odoc_args.ml" 213 8439 8490
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 213 8439 8491 "odoc_args.ml" 213 8439 8492
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 213 8439 8492 "odoc_args.ml" 213 8439 8508
+type(
+  string list ref
+)
+ident(
+  ext_ref Odoc_global.load
+)
+"odoc_args.ml" 213 8439 8491 "odoc_args.ml" 213 8439 8508
+type(
+  string list
+)
+"odoc_args.ml" 213 8439 8509 "odoc_args.ml" 213 8439 8510
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_args.ml" 213 8439 8512 "odoc_args.ml" 213 8439 8513
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 213 8439 8466 "odoc_args.ml" 213 8439 8467
+)
+"odoc_args.ml" 213 8439 8511 "odoc_args.ml" 213 8439 8514
+type(
+  string list
+)
+"odoc_args.ml" 213 8439 8491 "odoc_args.ml" 213 8439 8514
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc_args.ml" 213 8439 8471 "odoc_args.ml" 213 8439 8514
+type(
+  unit
+)
+"odoc_args.ml" 213 8439 8461 "odoc_args.ml" 213 8439 8515
+type(
+  string -> unit
+)
+"odoc_args.ml" 213 8439 8450 "odoc_args.ml" 213 8439 8515
+type(
+  Arg.spec
+)
+"odoc_args.ml" 213 8439 8517 "odoc_args.ml" 213 8439 8523
+type(
+  string
+)
+ident(
+  ext_ref M.load
+)
+"odoc_args.ml" 213 8439 8523 "odoc_args.ml" 213 8439 8524
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_args.ml" 213 8439 8524 "odoc_args.ml" 213 8439 8528
+type(
+  string
+)
+"odoc_args.ml" 213 8439 8517 "odoc_args.ml" 213 8439 8528
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 213 8439 8441 "odoc_args.ml" 213 8439 8528
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 215 8532 8534 "odoc_args.ml" 215 8532 8538
+type(
+  string
+)
+"odoc_args.ml" 215 8532 8556 "odoc_args.ml" 215 8532 8557
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 215 8532 8561 "odoc_args.ml" 215 8532 8588
+)
+"odoc_args.ml" 215 8532 8561 "odoc_args.ml" 215 8532 8578
+type(
+  string option ref
+)
+ident(
+  ext_ref Odoc_global.title
+)
+"odoc_args.ml" 215 8532 8579 "odoc_args.ml" 215 8532 8581
+type(
+  string option ref -> string option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 215 8532 8587 "odoc_args.ml" 215 8532 8588
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 215 8532 8556 "odoc_args.ml" 215 8532 8557
+)
+"odoc_args.ml" 215 8532 8582 "odoc_args.ml" 215 8532 8588
+type(
+  string option
+)
+"odoc_args.ml" 215 8532 8561 "odoc_args.ml" 215 8532 8588
+type(
+  unit
+)
+"odoc_args.ml" 215 8532 8551 "odoc_args.ml" 215 8532 8589
+type(
+  string -> unit
+)
+"odoc_args.ml" 215 8532 8540 "odoc_args.ml" 215 8532 8589
+type(
+  Arg.spec
+)
+"odoc_args.ml" 215 8532 8591 "odoc_args.ml" 215 8532 8605
+type(
+  string
+)
+ident(
+  ext_ref M.option_title
+)
+"odoc_args.ml" 215 8532 8534 "odoc_args.ml" 215 8532 8605
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 216 8608 8610 "odoc_args.ml" 216 8608 8618
+type(
+  string
+)
+"odoc_args.ml" 216 8608 8636 "odoc_args.ml" 216 8608 8637
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 216 8608 8641 "odoc_args.ml" 216 8608 8673
+)
+"odoc_args.ml" 216 8608 8641 "odoc_args.ml" 216 8608 8663
+type(
+  string option ref
+)
+ident(
+  ext_ref Odoc_global.intro_file
+)
+"odoc_args.ml" 216 8608 8664 "odoc_args.ml" 216 8608 8666
+type(
+  string option ref -> string option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 216 8608 8672 "odoc_args.ml" 216 8608 8673
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 216 8608 8636 "odoc_args.ml" 216 8608 8637
+)
+"odoc_args.ml" 216 8608 8667 "odoc_args.ml" 216 8608 8673
+type(
+  string option
+)
+"odoc_args.ml" 216 8608 8641 "odoc_args.ml" 216 8608 8673
+type(
+  unit
+)
+"odoc_args.ml" 216 8608 8631 "odoc_args.ml" 216 8608 8674
+type(
+  string -> unit
+)
+"odoc_args.ml" 216 8608 8620 "odoc_args.ml" 216 8608 8674
+type(
+  Arg.spec
+)
+"odoc_args.ml" 216 8608 8676 "odoc_args.ml" 216 8608 8690
+type(
+  string
+)
+ident(
+  ext_ref M.option_intro
+)
+"odoc_args.ml" 216 8608 8610 "odoc_args.ml" 216 8608 8690
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 217 8693 8695 "odoc_args.ml" 217 8693 8702
+type(
+  string
+)
+"odoc_args.ml" 217 8693 8715 "odoc_args.ml" 217 8693 8733
+type(
+  string -> unit
+)
+ident(
+  int_ref add_hidden_modules "odoc_args.ml" 157 5735 5739 "odoc_args.ml" 157 5735 5757
+)
+"odoc_args.ml" 217 8693 8704 "odoc_args.ml" 217 8693 8733
+type(
+  Arg.spec
+)
+"odoc_args.ml" 217 8693 8735 "odoc_args.ml" 217 8693 8749
+type(
+  string
+)
+ident(
+  ext_ref M.hide_modules
+)
+"odoc_args.ml" 217 8693 8695 "odoc_args.ml" 217 8693 8749
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 218 8752 8754 "odoc_args.ml" 218 8752 8758
+type(
+  string
+)
+"odoc_args.ml" 218 8752 8776 "odoc_args.ml" 218 8752 8777
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 218 8752 8781 "odoc_args.ml" 218 8752 8864
+)
+"odoc_args.ml" 218 8752 8781 "odoc_args.ml" 218 8752 8806
+type(
+  Odoc_types.merge_option list ref
+)
+ident(
+  ext_ref Odoc_global.merge_options
+)
+"odoc_args.ml" 218 8752 8807 "odoc_args.ml" 218 8752 8809
+type(
+  Odoc_types.merge_option list ref -> Odoc_types.merge_option list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 218 8752 8810 "odoc_args.ml" 218 8752 8811
+type(
+  Odoc_types.merge_option list ref -> Odoc_types.merge_option list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 218 8752 8811 "odoc_args.ml" 218 8752 8836
+type(
+  Odoc_types.merge_option list ref
+)
+ident(
+  ext_ref Odoc_global.merge_options
+)
+"odoc_args.ml" 218 8752 8810 "odoc_args.ml" 218 8752 8836
+type(
+  Odoc_types.merge_option list
+)
+"odoc_args.ml" 218 8752 8837 "odoc_args.ml" 218 8752 8838
+type(
+  Odoc_types.merge_option list ->
+  Odoc_types.merge_option list -> Odoc_types.merge_option list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_args.ml" 218 8752 8840 "odoc_args.ml" 218 8752 8861
+type(
+  string -> Odoc_types.merge_option list
+)
+ident(
+  int_ref analyse_merge_options "odoc_args.ml" 124 4538 4542 "odoc_args.ml" 124 4538 4563
+)
+"odoc_args.ml" 218 8752 8862 "odoc_args.ml" 218 8752 8863
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 218 8752 8776 "odoc_args.ml" 218 8752 8777
+)
+"odoc_args.ml" 218 8752 8839 "odoc_args.ml" 218 8752 8864
+call(
+  stack
+)
+type(
+  Odoc_types.merge_option list
+)
+"odoc_args.ml" 218 8752 8810 "odoc_args.ml" 218 8752 8864
+call(
+  stack
+)
+type(
+  Odoc_types.merge_option list
+)
+"odoc_args.ml" 218 8752 8781 "odoc_args.ml" 218 8752 8864
+type(
+  unit
+)
+"odoc_args.ml" 218 8752 8771 "odoc_args.ml" 218 8752 8865
+type(
+  string -> unit
+)
+"odoc_args.ml" 218 8752 8760 "odoc_args.ml" 218 8752 8865
+type(
+  Arg.spec
+)
+"odoc_args.ml" 219 8867 8869 "odoc_args.ml" 219 8867 8884
+type(
+  string
+)
+ident(
+  ext_ref M.merge_options
+)
+"odoc_args.ml" 219 8867 8885 "odoc_args.ml" 219 8867 8886
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_args.ml" 220 8887 8889 "odoc_args.ml" 220 8887 8926
+type(
+  string
+)
+"odoc_args.ml" 219 8867 8869 "odoc_args.ml" 220 8887 8926
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 218 8752 8754 "odoc_args.ml" 220 8887 8926
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 223 8946 8948 "odoc_args.ml" 223 8946 8955
+type(
+  string
+)
+"odoc_args.ml" 223 8946 8971 "odoc_args.ml" 223 8946 8973
+type(
+  unit
+)
+"odoc_args.ml" 223 8946 8977 "odoc_args.ml" 223 8946 8990
+type(
+  Odoc_gen.generator -> unit
+)
+ident(
+  int_ref set_generator "odoc_args.ml" 173 6196 6200 "odoc_args.ml" 173 6196 6213
+)
+"odoc_args.ml" 224 8991 8998 "odoc_args.ml" 224 8991 9069
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 223 8946 8977 "odoc_args.ml" 224 8991 9069
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_args.ml" 223 8946 8966 "odoc_args.ml" 224 8991 9070
+type(
+  unit -> unit
+)
+"odoc_args.ml" 223 8946 8957 "odoc_args.ml" 224 8991 9070
+type(
+  Arg.spec
+)
+"odoc_args.ml" 225 9072 9076 "odoc_args.ml" 225 9072 9091
+type(
+  string
+)
+ident(
+  ext_ref M.generate_html
+)
+"odoc_args.ml" 223 8946 8948 "odoc_args.ml" 225 9072 9091
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 226 9094 9096 "odoc_args.ml" 226 9094 9104
+type(
+  string
+)
+"odoc_args.ml" 226 9094 9120 "odoc_args.ml" 226 9094 9122
+type(
+  unit
+)
+"odoc_args.ml" 226 9094 9126 "odoc_args.ml" 226 9094 9139
+type(
+  Odoc_gen.generator -> unit
+)
+ident(
+  int_ref set_generator "odoc_args.ml" 173 6196 6200 "odoc_args.ml" 173 6196 6213
+)
+"odoc_args.ml" 227 9140 9147 "odoc_args.ml" 227 9140 9222
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 226 9094 9126 "odoc_args.ml" 227 9140 9222
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_args.ml" 226 9094 9115 "odoc_args.ml" 227 9140 9223
+type(
+  unit -> unit
+)
+"odoc_args.ml" 226 9094 9106 "odoc_args.ml" 227 9140 9223
+type(
+  Arg.spec
+)
+"odoc_args.ml" 228 9225 9229 "odoc_args.ml" 228 9225 9245
+type(
+  string
+)
+ident(
+  ext_ref M.generate_latex
+)
+"odoc_args.ml" 226 9094 9096 "odoc_args.ml" 228 9225 9245
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 229 9248 9250 "odoc_args.ml" 229 9248 9257
+type(
+  string
+)
+"odoc_args.ml" 229 9248 9273 "odoc_args.ml" 229 9248 9275
+type(
+  unit
+)
+"odoc_args.ml" 229 9248 9279 "odoc_args.ml" 229 9248 9292
+type(
+  Odoc_gen.generator -> unit
+)
+ident(
+  int_ref set_generator "odoc_args.ml" 173 6196 6200 "odoc_args.ml" 173 6196 6213
+)
+"odoc_args.ml" 230 9293 9300 "odoc_args.ml" 230 9293 9371
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 229 9248 9279 "odoc_args.ml" 230 9293 9371
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_args.ml" 229 9248 9268 "odoc_args.ml" 230 9293 9372
+type(
+  unit -> unit
+)
+"odoc_args.ml" 229 9248 9259 "odoc_args.ml" 230 9293 9372
+type(
+  Arg.spec
+)
+"odoc_args.ml" 231 9374 9378 "odoc_args.ml" 231 9374 9396
+type(
+  string
+)
+ident(
+  ext_ref M.generate_texinfo
+)
+"odoc_args.ml" 229 9248 9250 "odoc_args.ml" 231 9374 9396
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 232 9399 9401 "odoc_args.ml" 232 9399 9407
+type(
+  string
+)
+"odoc_args.ml" 232 9399 9423 "odoc_args.ml" 232 9399 9425
+type(
+  unit
+)
+"odoc_args.ml" 232 9399 9429 "odoc_args.ml" 232 9399 9442
+type(
+  Odoc_gen.generator -> unit
+)
+ident(
+  int_ref set_generator "odoc_args.ml" 173 6196 6200 "odoc_args.ml" 173 6196 6213
+)
+"odoc_args.ml" 233 9443 9450 "odoc_args.ml" 233 9443 9517
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 232 9399 9429 "odoc_args.ml" 233 9443 9517
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_args.ml" 232 9399 9418 "odoc_args.ml" 233 9443 9518
+type(
+  unit -> unit
+)
+"odoc_args.ml" 232 9399 9409 "odoc_args.ml" 233 9443 9518
+type(
+  Arg.spec
+)
+"odoc_args.ml" 234 9520 9524 "odoc_args.ml" 234 9520 9538
+type(
+  string
+)
+ident(
+  ext_ref M.generate_man
+)
+"odoc_args.ml" 232 9399 9401 "odoc_args.ml" 234 9520 9538
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 235 9541 9543 "odoc_args.ml" 235 9541 9549
+type(
+  string
+)
+"odoc_args.ml" 235 9541 9565 "odoc_args.ml" 235 9541 9567
+type(
+  unit
+)
+"odoc_args.ml" 235 9541 9571 "odoc_args.ml" 235 9541 9584
+type(
+  Odoc_gen.generator -> unit
+)
+ident(
+  int_ref set_generator "odoc_args.ml" 173 6196 6200 "odoc_args.ml" 173 6196 6213
+)
+"odoc_args.ml" 236 9585 9592 "odoc_args.ml" 236 9585 9659
+type(
+  Odoc_gen.generator
+)
+"odoc_args.ml" 235 9541 9571 "odoc_args.ml" 236 9585 9659
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_args.ml" 235 9541 9560 "odoc_args.ml" 236 9585 9660
+type(
+  unit -> unit
+)
+"odoc_args.ml" 235 9541 9551 "odoc_args.ml" 236 9585 9660
+type(
+  Arg.spec
+)
+"odoc_args.ml" 237 9662 9666 "odoc_args.ml" 237 9662 9680
+type(
+  string
+)
+ident(
+  ext_ref M.generate_dot
+)
+"odoc_args.ml" 235 9541 9543 "odoc_args.ml" 237 9662 9680
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 238 9683 9685 "odoc_args.ml" 238 9683 9697
+type(
+  string
+)
+"odoc_args.ml" 238 9683 9713 "odoc_args.ml" 238 9683 9715
+type(
+  unit
+)
+"odoc_args.ml" 238 9683 9719 "odoc_args.ml" 238 9683 9732
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"odoc_args.ml" 238 9683 9733 "odoc_args.ml" 238 9683 9739
+type(
+  (string -> unit, out_channel, unit) format
+)
+"odoc_args.ml" 238 9683 9740 "odoc_args.ml" 238 9683 9774
+type(
+  string
+)
+ident(
+  ext_ref Odoc_config.custom_generators_path
+)
+"odoc_args.ml" 238 9683 9719 "odoc_args.ml" 238 9683 9774
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_args.ml" 238 9683 9776 "odoc_args.ml" 238 9683 9780
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"odoc_args.ml" 238 9683 9781 "odoc_args.ml" 238 9683 9782
+type(
+  int
+)
+"odoc_args.ml" 238 9683 9776 "odoc_args.ml" 238 9683 9782
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_args.ml" 238 9683 9719 "odoc_args.ml" 238 9683 9782
+type(
+  unit
+)
+"odoc_args.ml" 238 9683 9708 "odoc_args.ml" 238 9683 9783
+type(
+  unit -> unit
+)
+"odoc_args.ml" 238 9683 9699 "odoc_args.ml" 238 9683 9783
+type(
+  Arg.spec
+)
+"odoc_args.ml" 239 9785 9787 "odoc_args.ml" 239 9785 9818
+type(
+  string
+)
+ident(
+  ext_ref M.display_custom_generators_dir
+)
+"odoc_args.ml" 238 9683 9685 "odoc_args.ml" 239 9785 9818
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 240 9821 9823 "odoc_args.ml" 240 9821 9827
+type(
+  string
+)
+"odoc_args.ml" 240 9821 9845 "odoc_args.ml" 240 9821 9846
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 240 9821 9850 "odoc_args.ml" 240 9821 9852
+)
+"odoc_args.ml" 240 9821 9850 "odoc_args.ml" 240 9821 9852
+type(
+  unit
+)
+"odoc_args.ml" 240 9821 9840 "odoc_args.ml" 240 9821 9853
+type(
+  string -> unit
+)
+"odoc_args.ml" 240 9821 9829 "odoc_args.ml" 240 9821 9853
+type(
+  Arg.spec
+)
+"odoc_args.ml" 240 9821 9855 "odoc_args.ml" 240 9821 9869
+type(
+  string
+)
+ident(
+  ext_ref M.add_load_dir
+)
+"odoc_args.ml" 240 9821 9823 "odoc_args.ml" 240 9821 9869
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 241 9872 9874 "odoc_args.ml" 241 9872 9878
+type(
+  string
+)
+"odoc_args.ml" 241 9872 9896 "odoc_args.ml" 241 9872 9897
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 241 9872 9901 "odoc_args.ml" 241 9872 9903
+)
+"odoc_args.ml" 241 9872 9901 "odoc_args.ml" 241 9872 9903
+type(
+  unit
+)
+"odoc_args.ml" 241 9872 9891 "odoc_args.ml" 241 9872 9904
+type(
+  string -> unit
+)
+"odoc_args.ml" 241 9872 9880 "odoc_args.ml" 241 9872 9904
+type(
+  Arg.spec
+)
+"odoc_args.ml" 241 9872 9906 "odoc_args.ml" 241 9872 9917
+type(
+  string
+)
+ident(
+  ext_ref M.load_file
+)
+"odoc_args.ml" 241 9872 9918 "odoc_args.ml" 241 9872 9919
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_args.ml" 242 9920 9922 "odoc_args.ml" 242 9920 9951
+type(
+  string
+)
+"odoc_args.ml" 241 9872 9906 "odoc_args.ml" 242 9920 9951
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 241 9872 9874 "odoc_args.ml" 242 9920 9951
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 245 9978 9980 "odoc_args.ml" 245 9978 9993
+type(
+  string
+)
+"odoc_args.ml" 245 9978 10003 "odoc_args.ml" 245 9978 10032
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_html.with_parameter_list
+)
+"odoc_args.ml" 245 9978 9995 "odoc_args.ml" 245 9978 10032
+type(
+  Arg.spec
+)
+"odoc_args.ml" 245 9978 10034 "odoc_args.ml" 245 9978 10055
+type(
+  string
+)
+ident(
+  ext_ref M.with_parameter_list
+)
+"odoc_args.ml" 245 9978 9980 "odoc_args.ml" 245 9978 10055
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 246 10058 10060 "odoc_args.ml" 246 10058 10072
+type(
+  string
+)
+"odoc_args.ml" 246 10058 10090 "odoc_args.ml" 246 10058 10091
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 246 10058 10095 "odoc_args.ml" 246 10058 10124
+)
+"odoc_args.ml" 246 10058 10095 "odoc_args.ml" 246 10058 10114
+type(
+  string option ref
+)
+ident(
+  ext_ref Odoc_html.css_style
+)
+"odoc_args.ml" 246 10058 10115 "odoc_args.ml" 246 10058 10117
+type(
+  string option ref -> string option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 246 10058 10123 "odoc_args.ml" 246 10058 10124
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 246 10058 10090 "odoc_args.ml" 246 10058 10091
+)
+"odoc_args.ml" 246 10058 10118 "odoc_args.ml" 246 10058 10124
+type(
+  string option
+)
+"odoc_args.ml" 246 10058 10095 "odoc_args.ml" 246 10058 10124
+type(
+  unit
+)
+"odoc_args.ml" 246 10058 10085 "odoc_args.ml" 246 10058 10125
+type(
+  string -> unit
+)
+"odoc_args.ml" 246 10058 10074 "odoc_args.ml" 246 10058 10125
+type(
+  Arg.spec
+)
+"odoc_args.ml" 246 10058 10127 "odoc_args.ml" 246 10058 10138
+type(
+  string
+)
+ident(
+  ext_ref M.css_style
+)
+"odoc_args.ml" 246 10058 10060 "odoc_args.ml" 246 10058 10138
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 247 10141 10143 "odoc_args.ml" 247 10141 10156
+type(
+  string
+)
+"odoc_args.ml" 247 10141 10166 "odoc_args.ml" 247 10141 10186
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_html.index_only
+)
+"odoc_args.ml" 247 10141 10158 "odoc_args.ml" 247 10141 10186
+type(
+  Arg.spec
+)
+"odoc_args.ml" 247 10141 10188 "odoc_args.ml" 247 10141 10200
+type(
+  string
+)
+ident(
+  ext_ref M.index_only
+)
+"odoc_args.ml" 247 10141 10143 "odoc_args.ml" 247 10141 10200
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 248 10203 10205 "odoc_args.ml" 248 10203 10221
+type(
+  string
+)
+"odoc_args.ml" 248 10203 10231 "odoc_args.ml" 248 10203 10254
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_html.colorize_code
+)
+"odoc_args.ml" 248 10203 10223 "odoc_args.ml" 248 10203 10254
+type(
+  Arg.spec
+)
+"odoc_args.ml" 248 10203 10256 "odoc_args.ml" 248 10203 10271
+type(
+  string
+)
+ident(
+  ext_ref M.colorize_code
+)
+"odoc_args.ml" 248 10203 10205 "odoc_args.ml" 248 10203 10271
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 249 10274 10276 "odoc_args.ml" 249 10274 10293
+type(
+  string
+)
+"odoc_args.ml" 249 10274 10303 "odoc_args.ml" 249 10274 10332
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_html.html_short_functors
+)
+"odoc_args.ml" 249 10274 10295 "odoc_args.ml" 249 10274 10332
+type(
+  Arg.spec
+)
+"odoc_args.ml" 249 10274 10334 "odoc_args.ml" 249 10274 10355
+type(
+  string
+)
+ident(
+  ext_ref M.html_short_functors
+)
+"odoc_args.ml" 249 10274 10276 "odoc_args.ml" 249 10274 10355
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 250 10358 10360 "odoc_args.ml" 250 10358 10370
+type(
+  string
+)
+"odoc_args.ml" 250 10358 10387 "odoc_args.ml" 250 10358 10404
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_html.charset
+)
+"odoc_args.ml" 250 10358 10372 "odoc_args.ml" 250 10358 10404
+type(
+  Arg.spec
+)
+"odoc_args.ml" 250 10358 10407 "odoc_args.ml" 250 10358 10416
+type(
+  string -> string
+)
+ident(
+  ext_ref M.charset
+)
+"odoc_args.ml" 250 10358 10417 "odoc_args.ml" 250 10358 10418
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 250 10358 10418 "odoc_args.ml" 250 10358 10435
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_html.charset
+)
+"odoc_args.ml" 250 10358 10417 "odoc_args.ml" 250 10358 10435
+type(
+  string
+)
+"odoc_args.ml" 250 10358 10406 "odoc_args.ml" 250 10358 10436
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 250 10358 10436 "odoc_args.ml" 250 10358 10437
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_args.ml" 251 10438 10440 "odoc_args.ml" 251 10438 10470
+type(
+  string
+)
+"odoc_args.ml" 250 10358 10406 "odoc_args.ml" 251 10438 10470
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 250 10358 10360 "odoc_args.ml" 251 10438 10470
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 254 10498 10500 "odoc_args.ml" 254 10498 10511
+type(
+  string
+)
+"odoc_args.ml" 254 10498 10527 "odoc_args.ml" 254 10498 10529
+type(
+  unit
+)
+"odoc_args.ml" 254 10498 10533 "odoc_args.ml" 254 10498 10556
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.with_header
+)
+"odoc_args.ml" 254 10498 10557 "odoc_args.ml" 254 10498 10559
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 254 10498 10560 "odoc_args.ml" 254 10498 10565
+type(
+  bool
+)
+"odoc_args.ml" 254 10498 10533 "odoc_args.ml" 254 10498 10565
+type(
+  unit
+)
+"odoc_args.ml" 254 10498 10522 "odoc_args.ml" 254 10498 10566
+type(
+  unit -> unit
+)
+"odoc_args.ml" 254 10498 10513 "odoc_args.ml" 254 10498 10566
+type(
+  Arg.spec
+)
+"odoc_args.ml" 254 10498 10568 "odoc_args.ml" 254 10498 10579
+type(
+  string
+)
+ident(
+  ext_ref M.no_header
+)
+"odoc_args.ml" 254 10498 10500 "odoc_args.ml" 254 10498 10579
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 255 10582 10584 "odoc_args.ml" 255 10582 10596
+type(
+  string
+)
+"odoc_args.ml" 255 10582 10612 "odoc_args.ml" 255 10582 10614
+type(
+  unit
+)
+"odoc_args.ml" 255 10582 10618 "odoc_args.ml" 255 10582 10642
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.with_trailer
+)
+"odoc_args.ml" 255 10582 10643 "odoc_args.ml" 255 10582 10645
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 255 10582 10646 "odoc_args.ml" 255 10582 10651
+type(
+  bool
+)
+"odoc_args.ml" 255 10582 10618 "odoc_args.ml" 255 10582 10651
+type(
+  unit
+)
+"odoc_args.ml" 255 10582 10607 "odoc_args.ml" 255 10582 10652
+type(
+  unit -> unit
+)
+"odoc_args.ml" 255 10582 10598 "odoc_args.ml" 255 10582 10652
+type(
+  Arg.spec
+)
+"odoc_args.ml" 255 10582 10654 "odoc_args.ml" 255 10582 10666
+type(
+  string
+)
+ident(
+  ext_ref M.no_trailer
+)
+"odoc_args.ml" 255 10582 10584 "odoc_args.ml" 255 10582 10666
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 256 10669 10671 "odoc_args.ml" 256 10669 10682
+type(
+  string
+)
+"odoc_args.ml" 256 10669 10692 "odoc_args.ml" 256 10669 10717
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_latex.separate_files
+)
+"odoc_args.ml" 256 10669 10684 "odoc_args.ml" 256 10669 10717
+type(
+  Arg.spec
+)
+"odoc_args.ml" 256 10669 10719 "odoc_args.ml" 256 10669 10735
+type(
+  string
+)
+ident(
+  ext_ref M.separate_files
+)
+"odoc_args.ml" 256 10669 10671 "odoc_args.ml" 256 10669 10735
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 257 10738 10740 "odoc_args.ml" 257 10738 10753
+type(
+  string
+)
+"odoc_args.ml" 257 10738 10766 "odoc_args.ml" 257 10738 10779
+type(
+  string -> unit
+)
+ident(
+  int_ref f_latex_title "odoc_args.ml" 143 5259 5263 "odoc_args.ml" 143 5259 5276
+)
+"odoc_args.ml" 257 10738 10755 "odoc_args.ml" 257 10738 10779
+type(
+  Arg.spec
+)
+"odoc_args.ml" 257 10738 10781 "odoc_args.ml" 257 10738 10794
+type(
+  (int * string) list ref -> string
+)
+ident(
+  ext_ref M.latex_title
+)
+"odoc_args.ml" 257 10738 10795 "odoc_args.ml" 257 10738 10818
+type(
+  (int * string) list ref
+)
+ident(
+  ext_ref Odoc_latex.latex_titles
+)
+"odoc_args.ml" 257 10738 10781 "odoc_args.ml" 257 10738 10818
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 257 10738 10740 "odoc_args.ml" 257 10738 10818
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 258 10821 10823 "odoc_args.ml" 258 10821 10844
+type(
+  string
+)
+"odoc_args.ml" 259 10846 10866 "odoc_args.ml" 259 10846 10867
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 259 10846 10871 "odoc_args.ml" 259 10846 10905
+)
+"odoc_args.ml" 259 10846 10871 "odoc_args.ml" 259 10846 10900
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_latex.latex_value_prefix
+)
+"odoc_args.ml" 259 10846 10901 "odoc_args.ml" 259 10846 10903
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 259 10846 10904 "odoc_args.ml" 259 10846 10905
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 259 10846 10866 "odoc_args.ml" 259 10846 10867
+)
+"odoc_args.ml" 259 10846 10871 "odoc_args.ml" 259 10846 10905
+type(
+  unit
+)
+"odoc_args.ml" 259 10846 10861 "odoc_args.ml" 259 10846 10906
+type(
+  string -> unit
+)
+"odoc_args.ml" 259 10846 10850 "odoc_args.ml" 259 10846 10906
+type(
+  Arg.spec
+)
+"odoc_args.ml" 259 10846 10908 "odoc_args.ml" 259 10846 10928
+type(
+  string
+)
+ident(
+  ext_ref M.latex_value_prefix
+)
+"odoc_args.ml" 258 10821 10823 "odoc_args.ml" 259 10846 10928
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 260 10931 10933 "odoc_args.ml" 260 10931 10953
+type(
+  string
+)
+"odoc_args.ml" 261 10955 10975 "odoc_args.ml" 261 10955 10976
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 261 10955 10980 "odoc_args.ml" 261 10955 11013
+)
+"odoc_args.ml" 261 10955 10980 "odoc_args.ml" 261 10955 11008
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_latex.latex_type_prefix
+)
+"odoc_args.ml" 261 10955 11009 "odoc_args.ml" 261 10955 11011
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 261 10955 11012 "odoc_args.ml" 261 10955 11013
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 261 10955 10975 "odoc_args.ml" 261 10955 10976
+)
+"odoc_args.ml" 261 10955 10980 "odoc_args.ml" 261 10955 11013
+type(
+  unit
+)
+"odoc_args.ml" 261 10955 10970 "odoc_args.ml" 261 10955 11014
+type(
+  string -> unit
+)
+"odoc_args.ml" 261 10955 10959 "odoc_args.ml" 261 10955 11014
+type(
+  Arg.spec
+)
+"odoc_args.ml" 261 10955 11016 "odoc_args.ml" 261 10955 11035
+type(
+  string
+)
+ident(
+  ext_ref M.latex_type_prefix
+)
+"odoc_args.ml" 260 10931 10933 "odoc_args.ml" 261 10955 11035
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 262 11038 11040 "odoc_args.ml" 262 11038 11065
+type(
+  string
+)
+"odoc_args.ml" 263 11067 11087 "odoc_args.ml" 263 11067 11088
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 263 11067 11092 "odoc_args.ml" 263 11067 11130
+)
+"odoc_args.ml" 263 11067 11092 "odoc_args.ml" 263 11067 11125
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_latex.latex_exception_prefix
+)
+"odoc_args.ml" 263 11067 11126 "odoc_args.ml" 263 11067 11128
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 263 11067 11129 "odoc_args.ml" 263 11067 11130
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 263 11067 11087 "odoc_args.ml" 263 11067 11088
+)
+"odoc_args.ml" 263 11067 11092 "odoc_args.ml" 263 11067 11130
+type(
+  unit
+)
+"odoc_args.ml" 263 11067 11082 "odoc_args.ml" 263 11067 11131
+type(
+  string -> unit
+)
+"odoc_args.ml" 263 11067 11071 "odoc_args.ml" 263 11067 11131
+type(
+  Arg.spec
+)
+"odoc_args.ml" 263 11067 11133 "odoc_args.ml" 263 11067 11157
+type(
+  string
+)
+ident(
+  ext_ref M.latex_exception_prefix
+)
+"odoc_args.ml" 262 11038 11040 "odoc_args.ml" 263 11067 11157
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 264 11160 11162 "odoc_args.ml" 264 11160 11187
+type(
+  string
+)
+"odoc_args.ml" 265 11189 11209 "odoc_args.ml" 265 11189 11210
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 265 11189 11214 "odoc_args.ml" 265 11189 11252
+)
+"odoc_args.ml" 265 11189 11214 "odoc_args.ml" 265 11189 11247
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_latex.latex_attribute_prefix
+)
+"odoc_args.ml" 265 11189 11248 "odoc_args.ml" 265 11189 11250
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 265 11189 11251 "odoc_args.ml" 265 11189 11252
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 265 11189 11209 "odoc_args.ml" 265 11189 11210
+)
+"odoc_args.ml" 265 11189 11214 "odoc_args.ml" 265 11189 11252
+type(
+  unit
+)
+"odoc_args.ml" 265 11189 11204 "odoc_args.ml" 265 11189 11253
+type(
+  string -> unit
+)
+"odoc_args.ml" 265 11189 11193 "odoc_args.ml" 265 11189 11253
+type(
+  Arg.spec
+)
+"odoc_args.ml" 265 11189 11255 "odoc_args.ml" 265 11189 11279
+type(
+  string
+)
+ident(
+  ext_ref M.latex_attribute_prefix
+)
+"odoc_args.ml" 264 11160 11162 "odoc_args.ml" 265 11189 11279
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 266 11282 11284 "odoc_args.ml" 266 11282 11306
+type(
+  string
+)
+"odoc_args.ml" 267 11308 11328 "odoc_args.ml" 267 11308 11329
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 267 11308 11333 "odoc_args.ml" 267 11308 11368
+)
+"odoc_args.ml" 267 11308 11333 "odoc_args.ml" 267 11308 11363
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_latex.latex_method_prefix
+)
+"odoc_args.ml" 267 11308 11364 "odoc_args.ml" 267 11308 11366
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 267 11308 11367 "odoc_args.ml" 267 11308 11368
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 267 11308 11328 "odoc_args.ml" 267 11308 11329
+)
+"odoc_args.ml" 267 11308 11333 "odoc_args.ml" 267 11308 11368
+type(
+  unit
+)
+"odoc_args.ml" 267 11308 11323 "odoc_args.ml" 267 11308 11369
+type(
+  string -> unit
+)
+"odoc_args.ml" 267 11308 11312 "odoc_args.ml" 267 11308 11369
+type(
+  Arg.spec
+)
+"odoc_args.ml" 267 11308 11371 "odoc_args.ml" 267 11308 11392
+type(
+  string
+)
+ident(
+  ext_ref M.latex_method_prefix
+)
+"odoc_args.ml" 266 11282 11284 "odoc_args.ml" 267 11308 11392
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 268 11395 11397 "odoc_args.ml" 268 11395 11419
+type(
+  string
+)
+"odoc_args.ml" 269 11421 11441 "odoc_args.ml" 269 11421 11442
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 269 11421 11446 "odoc_args.ml" 269 11421 11481
+)
+"odoc_args.ml" 269 11421 11446 "odoc_args.ml" 269 11421 11476
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_latex.latex_module_prefix
+)
+"odoc_args.ml" 269 11421 11477 "odoc_args.ml" 269 11421 11479
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 269 11421 11480 "odoc_args.ml" 269 11421 11481
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 269 11421 11441 "odoc_args.ml" 269 11421 11442
+)
+"odoc_args.ml" 269 11421 11446 "odoc_args.ml" 269 11421 11481
+type(
+  unit
+)
+"odoc_args.ml" 269 11421 11436 "odoc_args.ml" 269 11421 11482
+type(
+  string -> unit
+)
+"odoc_args.ml" 269 11421 11425 "odoc_args.ml" 269 11421 11482
+type(
+  Arg.spec
+)
+"odoc_args.ml" 269 11421 11484 "odoc_args.ml" 269 11421 11505
+type(
+  string
+)
+ident(
+  ext_ref M.latex_module_prefix
+)
+"odoc_args.ml" 268 11395 11397 "odoc_args.ml" 269 11421 11505
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 270 11508 11510 "odoc_args.ml" 270 11508 11537
+type(
+  string
+)
+"odoc_args.ml" 271 11539 11559 "odoc_args.ml" 271 11539 11560
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 271 11539 11564 "odoc_args.ml" 271 11539 11604
+)
+"odoc_args.ml" 271 11539 11564 "odoc_args.ml" 271 11539 11599
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_latex.latex_module_type_prefix
+)
+"odoc_args.ml" 271 11539 11600 "odoc_args.ml" 271 11539 11602
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 271 11539 11603 "odoc_args.ml" 271 11539 11604
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 271 11539 11559 "odoc_args.ml" 271 11539 11560
+)
+"odoc_args.ml" 271 11539 11564 "odoc_args.ml" 271 11539 11604
+type(
+  unit
+)
+"odoc_args.ml" 271 11539 11554 "odoc_args.ml" 271 11539 11605
+type(
+  string -> unit
+)
+"odoc_args.ml" 271 11539 11543 "odoc_args.ml" 271 11539 11605
+type(
+  Arg.spec
+)
+"odoc_args.ml" 271 11539 11607 "odoc_args.ml" 271 11539 11633
+type(
+  string
+)
+ident(
+  ext_ref M.latex_module_type_prefix
+)
+"odoc_args.ml" 270 11508 11510 "odoc_args.ml" 271 11539 11633
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 272 11636 11638 "odoc_args.ml" 272 11636 11659
+type(
+  string
+)
+"odoc_args.ml" 273 11661 11681 "odoc_args.ml" 273 11661 11682
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 273 11661 11686 "odoc_args.ml" 273 11661 11720
+)
+"odoc_args.ml" 273 11661 11686 "odoc_args.ml" 273 11661 11715
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_latex.latex_class_prefix
+)
+"odoc_args.ml" 273 11661 11716 "odoc_args.ml" 273 11661 11718
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 273 11661 11719 "odoc_args.ml" 273 11661 11720
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 273 11661 11681 "odoc_args.ml" 273 11661 11682
+)
+"odoc_args.ml" 273 11661 11686 "odoc_args.ml" 273 11661 11720
+type(
+  unit
+)
+"odoc_args.ml" 273 11661 11676 "odoc_args.ml" 273 11661 11721
+type(
+  string -> unit
+)
+"odoc_args.ml" 273 11661 11665 "odoc_args.ml" 273 11661 11721
+type(
+  Arg.spec
+)
+"odoc_args.ml" 273 11661 11723 "odoc_args.ml" 273 11661 11743
+type(
+  string
+)
+ident(
+  ext_ref M.latex_class_prefix
+)
+"odoc_args.ml" 272 11636 11638 "odoc_args.ml" 273 11661 11743
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 274 11746 11748 "odoc_args.ml" 274 11746 11774
+type(
+  string
+)
+"odoc_args.ml" 275 11776 11796 "odoc_args.ml" 275 11776 11797
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 275 11776 11801 "odoc_args.ml" 275 11776 11840
+)
+"odoc_args.ml" 275 11776 11801 "odoc_args.ml" 275 11776 11835
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_latex.latex_class_type_prefix
+)
+"odoc_args.ml" 275 11776 11836 "odoc_args.ml" 275 11776 11838
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 275 11776 11839 "odoc_args.ml" 275 11776 11840
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 275 11776 11796 "odoc_args.ml" 275 11776 11797
+)
+"odoc_args.ml" 275 11776 11801 "odoc_args.ml" 275 11776 11840
+type(
+  unit
+)
+"odoc_args.ml" 275 11776 11791 "odoc_args.ml" 275 11776 11841
+type(
+  string -> unit
+)
+"odoc_args.ml" 275 11776 11780 "odoc_args.ml" 275 11776 11841
+type(
+  Arg.spec
+)
+"odoc_args.ml" 275 11776 11843 "odoc_args.ml" 275 11776 11868
+type(
+  string
+)
+ident(
+  ext_ref M.latex_class_type_prefix
+)
+"odoc_args.ml" 274 11746 11748 "odoc_args.ml" 275 11776 11868
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 276 11871 11873 "odoc_args.ml" 276 11871 11881
+type(
+  string
+)
+"odoc_args.ml" 276 11871 11897 "odoc_args.ml" 276 11871 11899
+type(
+  unit
+)
+"odoc_args.ml" 276 11871 11903 "odoc_args.ml" 276 11871 11923
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.with_toc
+)
+"odoc_args.ml" 276 11871 11924 "odoc_args.ml" 276 11871 11926
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 276 11871 11927 "odoc_args.ml" 276 11871 11932
+type(
+  bool
+)
+"odoc_args.ml" 276 11871 11903 "odoc_args.ml" 276 11871 11932
+type(
+  unit
+)
+"odoc_args.ml" 276 11871 11892 "odoc_args.ml" 276 11871 11933
+type(
+  unit -> unit
+)
+"odoc_args.ml" 276 11871 11883 "odoc_args.ml" 276 11871 11933
+type(
+  Arg.spec
+)
+"odoc_args.ml" 276 11871 11935 "odoc_args.ml" 276 11871 11943
+type(
+  string
+)
+ident(
+  ext_ref M.no_toc
+)
+"odoc_args.ml" 276 11871 11944 "odoc_args.ml" 276 11871 11945
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_args.ml" 277 11946 11948 "odoc_args.ml" 277 11946 11980
+type(
+  string
+)
+"odoc_args.ml" 276 11871 11935 "odoc_args.ml" 277 11946 11980
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 276 11871 11873 "odoc_args.ml" 277 11946 11980
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 280 12007 12009 "odoc_args.ml" 280 12007 12019
+type(
+  string
+)
+"odoc_args.ml" 280 12007 12031 "odoc_args.ml" 280 12007 12053
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_global.with_index
+)
+"odoc_args.ml" 280 12007 12021 "odoc_args.ml" 280 12007 12053
+type(
+  Arg.spec
+)
+"odoc_args.ml" 280 12007 12055 "odoc_args.ml" 280 12007 12065
+type(
+  string
+)
+ident(
+  ext_ref M.no_index
+)
+"odoc_args.ml" 280 12007 12009 "odoc_args.ml" 280 12007 12065
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 281 12068 12070 "odoc_args.ml" 281 12068 12077
+type(
+  string
+)
+"odoc_args.ml" 281 12068 12087 "odoc_args.ml" 281 12068 12106
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_texi.esc_8bits
+)
+"odoc_args.ml" 281 12068 12079 "odoc_args.ml" 281 12068 12106
+type(
+  Arg.spec
+)
+"odoc_args.ml" 281 12068 12108 "odoc_args.ml" 281 12068 12119
+type(
+  string
+)
+ident(
+  ext_ref M.esc_8bits
+)
+"odoc_args.ml" 281 12068 12070 "odoc_args.ml" 281 12068 12119
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 282 12122 12124 "odoc_args.ml" 282 12122 12139
+type(
+  string
+)
+"odoc_args.ml" 282 12122 12153 "odoc_args.ml" 282 12122 12157
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 282 12122 12158 "odoc_args.ml" 282 12122 12180
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_texi.info_section
+)
+"odoc_args.ml" 282 12122 12152 "odoc_args.ml" 282 12122 12181
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"odoc_args.ml" 282 12122 12141 "odoc_args.ml" 282 12122 12181
+type(
+  Arg.spec
+)
+"odoc_args.ml" 282 12122 12183 "odoc_args.ml" 282 12122 12197
+type(
+  string
+)
+ident(
+  ext_ref M.info_section
+)
+"odoc_args.ml" 282 12122 12124 "odoc_args.ml" 282 12122 12197
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 283 12200 12202 "odoc_args.ml" 283 12200 12215
+type(
+  string
+)
+"odoc_args.ml" 283 12200 12233 "odoc_args.ml" 283 12200 12234
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 283 12200 12238 "odoc_args.ml" 283 12200 12291
+)
+"odoc_args.ml" 283 12200 12238 "odoc_args.ml" 283 12200 12258
+type(
+  string list ref
+)
+ident(
+  ext_ref Odoc_texi.info_entry
+)
+"odoc_args.ml" 283 12200 12259 "odoc_args.ml" 283 12200 12261
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 283 12200 12262 "odoc_args.ml" 283 12200 12263
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 283 12200 12263 "odoc_args.ml" 283 12200 12283
+type(
+  string list ref
+)
+ident(
+  ext_ref Odoc_texi.info_entry
+)
+"odoc_args.ml" 283 12200 12262 "odoc_args.ml" 283 12200 12283
+type(
+  string list
+)
+"odoc_args.ml" 283 12200 12284 "odoc_args.ml" 283 12200 12285
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_args.ml" 283 12200 12288 "odoc_args.ml" 283 12200 12289
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 283 12200 12233 "odoc_args.ml" 283 12200 12234
+)
+"odoc_args.ml" 283 12200 12286 "odoc_args.ml" 283 12200 12291
+type(
+  string list
+)
+"odoc_args.ml" 283 12200 12262 "odoc_args.ml" 283 12200 12291
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc_args.ml" 283 12200 12238 "odoc_args.ml" 283 12200 12291
+type(
+  unit
+)
+"odoc_args.ml" 283 12200 12228 "odoc_args.ml" 283 12200 12292
+type(
+  string -> unit
+)
+"odoc_args.ml" 283 12200 12217 "odoc_args.ml" 283 12200 12292
+type(
+  Arg.spec
+)
+"odoc_args.ml" 284 12294 12296 "odoc_args.ml" 284 12294 12308
+type(
+  string
+)
+ident(
+  ext_ref M.info_entry
+)
+"odoc_args.ml" 284 12294 12309 "odoc_args.ml" 284 12294 12310
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_args.ml" 285 12311 12313 "odoc_args.ml" 285 12311 12341
+type(
+  string
+)
+"odoc_args.ml" 284 12294 12296 "odoc_args.ml" 285 12311 12341
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 283 12200 12202 "odoc_args.ml" 285 12311 12341
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 288 12367 12369 "odoc_args.ml" 288 12367 12382
+type(
+  string
+)
+"odoc_args.ml" 288 12367 12400 "odoc_args.ml" 288 12367 12401
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 288 12367 12405 "odoc_args.ml" 288 12367 12463
+)
+"odoc_args.ml" 288 12367 12405 "odoc_args.ml" 288 12367 12424
+type(
+  string list ref
+)
+ident(
+  ext_ref Odoc_dot.dot_colors
+)
+"odoc_args.ml" 288 12367 12425 "odoc_args.ml" 288 12367 12427
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 288 12367 12428 "odoc_args.ml" 288 12367 12437
+type(
+  Str.regexp -> string -> string list
+)
+ident(
+  ext_ref Str.split
+)
+"odoc_args.ml" 288 12367 12439 "odoc_args.ml" 288 12367 12456
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp_string
+)
+"odoc_args.ml" 288 12367 12457 "odoc_args.ml" 288 12367 12460
+type(
+  string
+)
+"odoc_args.ml" 288 12367 12438 "odoc_args.ml" 288 12367 12461
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"odoc_args.ml" 288 12367 12462 "odoc_args.ml" 288 12367 12463
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 288 12367 12400 "odoc_args.ml" 288 12367 12401
+)
+"odoc_args.ml" 288 12367 12428 "odoc_args.ml" 288 12367 12463
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc_args.ml" 288 12367 12405 "odoc_args.ml" 288 12367 12463
+type(
+  unit
+)
+"odoc_args.ml" 288 12367 12395 "odoc_args.ml" 288 12367 12464
+type(
+  string -> unit
+)
+"odoc_args.ml" 288 12367 12384 "odoc_args.ml" 288 12367 12464
+type(
+  Arg.spec
+)
+"odoc_args.ml" 288 12367 12466 "odoc_args.ml" 288 12367 12478
+type(
+  string
+)
+ident(
+  ext_ref M.dot_colors
+)
+"odoc_args.ml" 288 12367 12369 "odoc_args.ml" 288 12367 12478
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 289 12481 12483 "odoc_args.ml" 289 12481 12501
+type(
+  string
+)
+"odoc_args.ml" 289 12481 12511 "odoc_args.ml" 289 12481 12535
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_dot.dot_include_all
+)
+"odoc_args.ml" 289 12481 12503 "odoc_args.ml" 289 12481 12535
+type(
+  Arg.spec
+)
+"odoc_args.ml" 289 12481 12537 "odoc_args.ml" 289 12481 12554
+type(
+  string
+)
+ident(
+  ext_ref M.dot_include_all
+)
+"odoc_args.ml" 289 12481 12483 "odoc_args.ml" 289 12481 12554
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 290 12557 12559 "odoc_args.ml" 290 12557 12571
+type(
+  string
+)
+"odoc_args.ml" 290 12557 12581 "odoc_args.ml" 290 12557 12599
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_dot.dot_types
+)
+"odoc_args.ml" 290 12557 12573 "odoc_args.ml" 290 12557 12599
+type(
+  Arg.spec
+)
+"odoc_args.ml" 290 12557 12601 "odoc_args.ml" 290 12557 12612
+type(
+  string
+)
+ident(
+  ext_ref M.dot_types
+)
+"odoc_args.ml" 290 12557 12559 "odoc_args.ml" 290 12557 12612
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 291 12615 12617 "odoc_args.ml" 291 12615 12630
+type(
+  string
+)
+"odoc_args.ml" 291 12615 12640 "odoc_args.ml" 291 12615 12659
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_dot.dot_reduce
+)
+"odoc_args.ml" 291 12615 12632 "odoc_args.ml" 291 12615 12659
+type(
+  Arg.spec
+)
+"odoc_args.ml" 291 12615 12661 "odoc_args.ml" 291 12615 12673
+type(
+  string
+)
+ident(
+  ext_ref M.dot_reduce
+)
+"odoc_args.ml" 291 12615 12673 "odoc_args.ml" 291 12615 12674
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_args.ml" 292 12675 12677 "odoc_args.ml" 292 12675 12711
+type(
+  string
+)
+"odoc_args.ml" 291 12615 12661 "odoc_args.ml" 292 12675 12711
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 291 12615 12617 "odoc_args.ml" 292 12675 12711
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 295 12737 12739 "odoc_args.ml" 295 12737 12750
+type(
+  string
+)
+"odoc_args.ml" 295 12737 12760 "odoc_args.ml" 295 12737 12777
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_man.man_mini
+)
+"odoc_args.ml" 295 12737 12752 "odoc_args.ml" 295 12737 12777
+type(
+  Arg.spec
+)
+"odoc_args.ml" 295 12737 12779 "odoc_args.ml" 295 12737 12789
+type(
+  string
+)
+ident(
+  ext_ref M.man_mini
+)
+"odoc_args.ml" 295 12737 12739 "odoc_args.ml" 295 12737 12789
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 296 12792 12794 "odoc_args.ml" 296 12792 12807
+type(
+  string
+)
+"odoc_args.ml" 296 12792 12825 "odoc_args.ml" 296 12792 12826
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 296 12792 12830 "odoc_args.ml" 296 12792 12854
+)
+"odoc_args.ml" 296 12792 12830 "odoc_args.ml" 296 12792 12849
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_man.man_suffix
+)
+"odoc_args.ml" 296 12792 12850 "odoc_args.ml" 296 12792 12852
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 296 12792 12853 "odoc_args.ml" 296 12792 12854
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 296 12792 12825 "odoc_args.ml" 296 12792 12826
+)
+"odoc_args.ml" 296 12792 12830 "odoc_args.ml" 296 12792 12854
+type(
+  unit
+)
+"odoc_args.ml" 296 12792 12820 "odoc_args.ml" 296 12792 12855
+type(
+  string -> unit
+)
+"odoc_args.ml" 296 12792 12809 "odoc_args.ml" 296 12792 12855
+type(
+  Arg.spec
+)
+"odoc_args.ml" 296 12792 12857 "odoc_args.ml" 296 12792 12869
+type(
+  string
+)
+ident(
+  ext_ref M.man_suffix
+)
+"odoc_args.ml" 296 12792 12794 "odoc_args.ml" 296 12792 12869
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 297 12872 12874 "odoc_args.ml" 297 12872 12888
+type(
+  string
+)
+"odoc_args.ml" 297 12872 12906 "odoc_args.ml" 297 12872 12907
+type(
+  string
+)
+ident(
+  def s "odoc_args.ml" 297 12872 12911 "odoc_args.ml" 297 12872 12936
+)
+"odoc_args.ml" 297 12872 12911 "odoc_args.ml" 297 12872 12931
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_man.man_section
+)
+"odoc_args.ml" 297 12872 12932 "odoc_args.ml" 297 12872 12934
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 297 12872 12935 "odoc_args.ml" 297 12872 12936
+type(
+  string
+)
+ident(
+  int_ref s "odoc_args.ml" 297 12872 12906 "odoc_args.ml" 297 12872 12907
+)
+"odoc_args.ml" 297 12872 12911 "odoc_args.ml" 297 12872 12936
+type(
+  unit
+)
+"odoc_args.ml" 297 12872 12901 "odoc_args.ml" 297 12872 12937
+type(
+  string -> unit
+)
+"odoc_args.ml" 297 12872 12890 "odoc_args.ml" 297 12872 12937
+type(
+  Arg.spec
+)
+"odoc_args.ml" 297 12872 12939 "odoc_args.ml" 297 12872 12952
+type(
+  string
+)
+ident(
+  ext_ref M.man_section
+)
+"odoc_args.ml" 297 12872 12874 "odoc_args.ml" 297 12872 12952
+type(
+  string * Arg.spec * string
+)
+"odoc_args.ml" 176 6301 6323 "odoc_args.ml" 299 12956 12957
+type(
+  (string * Arg.spec * string) list
+)
+"odoc_args.ml" 301 12959 12963 "odoc_args.ml" 301 12959 12970
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  def options "odoc_args.ml" 303 12994 12994 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 301 12959 12973 "odoc_args.ml" 301 12959 12976
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ->
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"odoc_args.ml" 301 12959 12977 "odoc_args.ml" 301 12959 12992
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  int_ref default_options "odoc_args.ml" 176 6301 6305 "odoc_args.ml" 176 6301 6320
+)
+"odoc_args.ml" 301 12959 12973 "odoc_args.ml" 301 12959 12992
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+"odoc_args.ml" 303 12994 12998 "odoc_args.ml" 303 12994 13014
+type(
+  unit -> bool
+)
+ident(
+  def modified_options "odoc_args.ml" 306 13051 13051 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 303 12994 13015 "odoc_args.ml" 303 12994 13017
+type(
+  unit
+)
+"odoc_args.ml" 304 13020 13022 "odoc_args.ml" 304 13020 13023
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref ->
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 304 13020 13023 "odoc_args.ml" 304 13020 13030
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  int_ref options "odoc_args.ml" 301 12959 12963 "odoc_args.ml" 301 12959 12970
+)
+"odoc_args.ml" 304 13020 13022 "odoc_args.ml" 304 13020 13030
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 304 13020 13031 "odoc_args.ml" 304 13020 13033
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ->
+  (Arg.key * Arg.spec * Arg.doc) list -> bool
+)
+ident(
+  ext_ref Pervasives.( != )
+)
+"odoc_args.ml" 304 13020 13034 "odoc_args.ml" 304 13020 13049
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  int_ref default_options "odoc_args.ml" 176 6301 6305 "odoc_args.ml" 176 6301 6320
+)
+"odoc_args.ml" 304 13020 13022 "odoc_args.ml" 304 13020 13049
+type(
+  bool
+)
+"odoc_args.ml" 306 13051 13055 "odoc_args.ml" 306 13051 13070
+type(
+  string -> unit
+)
+ident(
+  def append_last_doc "odoc_args.ml" 313 13292 13292 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 306 13051 13071 "odoc_args.ml" 306 13051 13077
+type(
+  string
+)
+ident(
+  def suffix "odoc_args.ml" 307 13080 13082 "odoc_args.ml" 310 13201 13213
+)
+"odoc_args.ml" 307 13080 13088 "odoc_args.ml" 307 13080 13096
+type(
+  (Arg.key * Arg.spec * Arg.doc) list -> (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref List.rev
+)
+"odoc_args.ml" 307 13080 13097 "odoc_args.ml" 307 13080 13098
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref ->
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 307 13080 13098 "odoc_args.ml" 307 13080 13105
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  int_ref options "odoc_args.ml" 301 12959 12963 "odoc_args.ml" 301 12959 12970
+)
+"odoc_args.ml" 307 13080 13097 "odoc_args.ml" 307 13080 13105
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 307 13080 13088 "odoc_args.ml" 307 13080 13105
+call(
+  stack
+)
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 308 13111 13116 "odoc_args.ml" 308 13111 13119
+type(
+  Arg.key
+)
+ident(
+  def key "odoc_args.ml" 309 13141 13147 "odoc_args.ml" 309 13141 13200
+)
+"odoc_args.ml" 308 13111 13121 "odoc_args.ml" 308 13111 13125
+type(
+  Arg.spec
+)
+ident(
+  def spec "odoc_args.ml" 309 13141 13147 "odoc_args.ml" 309 13141 13200
+)
+"odoc_args.ml" 308 13111 13127 "odoc_args.ml" 308 13111 13130
+type(
+  Arg.doc
+)
+ident(
+  def doc "odoc_args.ml" 309 13141 13147 "odoc_args.ml" 309 13141 13200
+)
+"odoc_args.ml" 308 13111 13115 "odoc_args.ml" 308 13111 13131
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"odoc_args.ml" 308 13111 13135 "odoc_args.ml" 308 13111 13137
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  def tl "odoc_args.ml" 309 13141 13147 "odoc_args.ml" 309 13141 13200
+)
+"odoc_args.ml" 308 13111 13115 "odoc_args.ml" 308 13111 13137
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 309 13141 13147 "odoc_args.ml" 309 13141 13154
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  int_ref options "odoc_args.ml" 301 12959 12963 "odoc_args.ml" 301 12959 12970
+)
+"odoc_args.ml" 309 13141 13155 "odoc_args.ml" 309 13141 13157
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref ->
+  (Arg.key * Arg.spec * Arg.doc) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 309 13141 13158 "odoc_args.ml" 309 13141 13166
+type(
+  (Arg.key * Arg.spec * Arg.doc) list -> (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref List.rev
+)
+"odoc_args.ml" 309 13141 13169 "odoc_args.ml" 309 13141 13172
+type(
+  Arg.key
+)
+ident(
+  int_ref key "odoc_args.ml" 308 13111 13116 "odoc_args.ml" 308 13111 13119
+)
+"odoc_args.ml" 309 13141 13174 "odoc_args.ml" 309 13141 13178
+type(
+  Arg.spec
+)
+ident(
+  int_ref spec "odoc_args.ml" 308 13111 13121 "odoc_args.ml" 308 13111 13125
+)
+"odoc_args.ml" 309 13141 13180 "odoc_args.ml" 309 13141 13183
+type(
+  Arg.doc
+)
+ident(
+  int_ref doc "odoc_args.ml" 308 13111 13127 "odoc_args.ml" 308 13111 13130
+)
+"odoc_args.ml" 309 13141 13184 "odoc_args.ml" 309 13141 13185
+type(
+  Arg.doc -> string -> Arg.doc
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_args.ml" 309 13141 13186 "odoc_args.ml" 309 13141 13192
+type(
+  string
+)
+ident(
+  int_ref suffix "odoc_args.ml" 306 13051 13071 "odoc_args.ml" 306 13051 13077
+)
+"odoc_args.ml" 309 13141 13180 "odoc_args.ml" 309 13141 13192
+call(
+  stack
+)
+type(
+  Arg.doc
+)
+"odoc_args.ml" 309 13141 13168 "odoc_args.ml" 309 13141 13193
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"odoc_args.ml" 309 13141 13197 "odoc_args.ml" 309 13141 13199
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  int_ref tl "odoc_args.ml" 308 13111 13135 "odoc_args.ml" 308 13111 13137
+)
+"odoc_args.ml" 309 13141 13167 "odoc_args.ml" 309 13141 13200
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 309 13141 13158 "odoc_args.ml" 309 13141 13200
+call(
+  stack
+)
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 309 13141 13147 "odoc_args.ml" 309 13141 13200
+type(
+  unit
+)
+"odoc_args.ml" 310 13201 13205 "odoc_args.ml" 310 13201 13207
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 310 13201 13211 "odoc_args.ml" 310 13201 13213
+type(
+  unit
+)
+"odoc_args.ml" 307 13080 13082 "odoc_args.ml" 310 13201 13213
+type(
+  unit
+)
+"odoc_args.ml" 313 13292 13296 "odoc_args.ml" 313 13292 13308
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  def help_options "odoc_args.ml" 314 13318 13318 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 313 13292 13311 "odoc_args.ml" 313 13292 13314
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ->
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"odoc_args.ml" 313 13292 13315 "odoc_args.ml" 313 13292 13317
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 313 13292 13311 "odoc_args.ml" 313 13292 13317
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+"odoc_args.ml" 314 13318 13322 "odoc_args.ml" 314 13318 13333
+type(
+  unit -> unit
+)
+ident(
+  def help_action "odoc_args.ml" 320 13459 13459 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 314 13318 13334 "odoc_args.ml" 314 13318 13336
+type(
+  unit
+)
+"odoc_args.ml" 315 13339 13345 "odoc_args.ml" 315 13339 13348
+type(
+  string
+)
+ident(
+  def msg "odoc_args.ml" 319 13440 13442 "odoc_args.ml" 319 13440 13458
+)
+"odoc_args.ml" 316 13351 13355 "odoc_args.ml" 316 13351 13371
+type(
+  (Arg.key * Arg.spec * Arg.doc) list -> Arg.usage_msg -> string
+)
+ident(
+  ext_ref Arg.usage_string
+)
+"odoc_args.ml" 317 13372 13379 "odoc_args.ml" 317 13372 13380
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref ->
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 317 13372 13380 "odoc_args.ml" 317 13372 13387
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  int_ref options "odoc_args.ml" 301 12959 12963 "odoc_args.ml" 301 12959 12970
+)
+"odoc_args.ml" 317 13372 13379 "odoc_args.ml" 317 13372 13387
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 317 13372 13388 "odoc_args.ml" 317 13372 13389
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ->
+  (Arg.key * Arg.spec * Arg.doc) list -> (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_args.ml" 317 13372 13390 "odoc_args.ml" 317 13372 13391
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref ->
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 317 13372 13391 "odoc_args.ml" 317 13372 13403
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  int_ref help_options "odoc_args.ml" 313 13292 13296 "odoc_args.ml" 313 13292 13308
+)
+"odoc_args.ml" 317 13372 13390 "odoc_args.ml" 317 13372 13403
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 317 13372 13378 "odoc_args.ml" 317 13372 13404
+call(
+  stack
+)
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 318 13405 13412 "odoc_args.ml" 318 13405 13419
+type(
+  string
+)
+ident(
+  ext_ref M.usage
+)
+"odoc_args.ml" 318 13405 13420 "odoc_args.ml" 318 13405 13421
+type(
+  string -> string -> Arg.usage_msg
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_args.ml" 318 13405 13422 "odoc_args.ml" 318 13405 13435
+type(
+  string
+)
+ident(
+  ext_ref M.options_are
+)
+"odoc_args.ml" 318 13405 13411 "odoc_args.ml" 318 13405 13436
+call(
+  stack
+)
+type(
+  Arg.usage_msg
+)
+"odoc_args.ml" 316 13351 13355 "odoc_args.ml" 318 13405 13436
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 319 13440 13442 "odoc_args.ml" 319 13440 13454
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"odoc_args.ml" 319 13440 13455 "odoc_args.ml" 319 13440 13458
+type(
+  string
+)
+ident(
+  int_ref msg "odoc_args.ml" 315 13339 13345 "odoc_args.ml" 315 13339 13348
+)
+"odoc_args.ml" 319 13440 13442 "odoc_args.ml" 319 13440 13458
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_args.ml" 315 13339 13341 "odoc_args.ml" 319 13440 13458
+type(
+  unit
+)
+"odoc_args.ml" 320 13459 13463 "odoc_args.ml" 320 13459 13465
+type(
+  unit
+)
+"odoc_args.ml" 321 13468 13470 "odoc_args.ml" 321 13468 13482
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  int_ref help_options "odoc_args.ml" 313 13292 13296 "odoc_args.ml" 313 13292 13308
+)
+"odoc_args.ml" 321 13468 13483 "odoc_args.ml" 321 13468 13485
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref ->
+  (Arg.key * Arg.spec * Arg.doc) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 322 13488 13492 "odoc_args.ml" 322 13488 13499
+type(
+  Arg.key
+)
+"odoc_args.ml" 322 13488 13510 "odoc_args.ml" 322 13488 13521
+type(
+  unit -> unit
+)
+ident(
+  int_ref help_action "odoc_args.ml" 314 13318 13322 "odoc_args.ml" 314 13318 13333
+)
+"odoc_args.ml" 322 13488 13501 "odoc_args.ml" 322 13488 13521
+type(
+  Arg.spec
+)
+"odoc_args.ml" 322 13488 13523 "odoc_args.ml" 322 13488 13529
+type(
+  Arg.doc
+)
+ident(
+  ext_ref M.help
+)
+"odoc_args.ml" 322 13488 13492 "odoc_args.ml" 322 13488 13529
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"odoc_args.ml" 323 13532 13536 "odoc_args.ml" 323 13532 13544
+type(
+  Arg.key
+)
+"odoc_args.ml" 323 13532 13555 "odoc_args.ml" 323 13532 13566
+type(
+  unit -> unit
+)
+ident(
+  int_ref help_action "odoc_args.ml" 314 13318 13322 "odoc_args.ml" 314 13318 13333
+)
+"odoc_args.ml" 323 13532 13546 "odoc_args.ml" 323 13532 13566
+type(
+  Arg.spec
+)
+"odoc_args.ml" 323 13532 13568 "odoc_args.ml" 323 13532 13574
+type(
+  Arg.doc
+)
+ident(
+  ext_ref M.help
+)
+"odoc_args.ml" 323 13532 13536 "odoc_args.ml" 323 13532 13574
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"odoc_args.ml" 321 13468 13486 "odoc_args.ml" 324 13575 13576
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 321 13468 13470 "odoc_args.ml" 324 13575 13576
+type(
+  unit
+)
+"odoc_args.ml" 326 13578 13582 "odoc_args.ml" 326 13578 13592
+type(
+  Arg.key * Arg.spec * Arg.doc -> unit
+)
+ident(
+  def add_option "odoc_args.ml" 340 13897 13897 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 326 13578 13593 "odoc_args.ml" 326 13578 13594
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+ident(
+  def o "odoc_args.ml" 327 13597 13599 "odoc_args.ml" 338 13869 13895
+)
+"odoc_args.ml" 327 13597 13602 "odoc_args.ml" 327 13597 13605
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"odoc_args.ml" 327 13597 13607 "odoc_args.ml" 327 13597 13623
+type(
+  unit -> bool
+)
+ident(
+  int_ref modified_options "odoc_args.ml" 303 12994 12998 "odoc_args.ml" 303 12994 13014
+)
+"odoc_args.ml" 327 13597 13624 "odoc_args.ml" 327 13597 13626
+type(
+  unit
+)
+"odoc_args.ml" 327 13597 13606 "odoc_args.ml" 327 13597 13627
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_args.ml" 327 13597 13602 "odoc_args.ml" 327 13597 13627
+type(
+  bool
+)
+"odoc_args.ml" 328 13633 13637 "odoc_args.ml" 328 13633 13652
+type(
+  string -> unit
+)
+ident(
+  int_ref append_last_doc "odoc_args.ml" 306 13051 13055 "odoc_args.ml" 306 13051 13070
+)
+"odoc_args.ml" 328 13633 13653 "odoc_args.ml" 328 13633 13692
+type(
+  string
+)
+"odoc_args.ml" 328 13633 13637 "odoc_args.ml" 328 13633 13692
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_args.ml" 327 13597 13599 "odoc_args.ml" 328 13633 13692
+type(
+  unit
+)
+"odoc_args.ml" 329 13694 13701 "odoc_args.ml" 329 13694 13702
+type(
+  Arg.key
+)
+ident(
+  def s "odoc_args.ml" 330 13715 13717 "odoc_args.ml" 338 13869 13895
+)
+"odoc_args.ml" 329 13694 13703 "odoc_args.ml" 329 13694 13704
+type(
+  Arg.spec
+)
+"odoc_args.ml" 329 13694 13705 "odoc_args.ml" 329 13694 13706
+type(
+  Arg.doc
+)
+"odoc_args.ml" 329 13694 13700 "odoc_args.ml" 329 13694 13707
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"odoc_args.ml" 329 13694 13710 "odoc_args.ml" 329 13694 13711
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+ident(
+  int_ref o "odoc_args.ml" 326 13578 13593 "odoc_args.ml" 326 13578 13594
+)
+"odoc_args.ml" 330 13715 13725 "odoc_args.ml" 330 13715 13729
+type(
+  (Arg.key * Arg.spec * Arg.doc) list -> (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  def iter "odoc_args.ml" 330 13715 13717 "odoc_args.ml" 338 13869 13895
+)
+"odoc_args.ml" 331 13741 13747 "odoc_args.ml" 331 13741 13749
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 331 13741 13754 "odoc_args.ml" 331 13741 13755
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+ident(
+  int_ref o "odoc_args.ml" 326 13578 13593 "odoc_args.ml" 326 13578 13594
+)
+"odoc_args.ml" 331 13741 13753 "odoc_args.ml" 331 13741 13756
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 332 13757 13764 "odoc_args.ml" 332 13757 13766
+type(
+  Arg.key
+)
+ident(
+  def s2 "odoc_args.ml" 333 13780 13788 "odoc_args.ml" 336 13833 13863
+)
+"odoc_args.ml" 332 13757 13767 "odoc_args.ml" 332 13757 13768
+type(
+  Arg.spec
+)
+ident(
+  def f "odoc_args.ml" 333 13780 13788 "odoc_args.ml" 336 13833 13863
+)
+"odoc_args.ml" 332 13757 13769 "odoc_args.ml" 332 13757 13770
+type(
+  Arg.doc
+)
+ident(
+  def m "odoc_args.ml" 333 13780 13788 "odoc_args.ml" 336 13833 13863
+)
+"odoc_args.ml" 332 13757 13763 "odoc_args.ml" 332 13757 13771
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"odoc_args.ml" 332 13757 13775 "odoc_args.ml" 332 13757 13776
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  def q "odoc_args.ml" 333 13780 13788 "odoc_args.ml" 336 13833 13863
+)
+"odoc_args.ml" 332 13757 13763 "odoc_args.ml" 332 13757 13776
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 333 13780 13791 "odoc_args.ml" 333 13780 13792
+type(
+  Arg.key
+)
+ident(
+  int_ref s "odoc_args.ml" 329 13694 13701 "odoc_args.ml" 329 13694 13702
+)
+"odoc_args.ml" 333 13780 13793 "odoc_args.ml" 333 13780 13794
+type(
+  Arg.key -> Arg.key -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"odoc_args.ml" 333 13780 13795 "odoc_args.ml" 333 13780 13797
+type(
+  Arg.key
+)
+ident(
+  int_ref s2 "odoc_args.ml" 332 13757 13764 "odoc_args.ml" 332 13757 13766
+)
+"odoc_args.ml" 333 13780 13791 "odoc_args.ml" 333 13780 13797
+type(
+  bool
+)
+"odoc_args.ml" 334 13803 13813 "odoc_args.ml" 334 13803 13814
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+ident(
+  int_ref o "odoc_args.ml" 326 13578 13593 "odoc_args.ml" 326 13578 13594
+)
+"odoc_args.ml" 334 13803 13818 "odoc_args.ml" 334 13803 13819
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  int_ref q "odoc_args.ml" 332 13757 13775 "odoc_args.ml" 332 13757 13776
+)
+"odoc_args.ml" 334 13803 13813 "odoc_args.ml" 334 13803 13819
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 336 13833 13844 "odoc_args.ml" 336 13833 13846
+type(
+  Arg.key
+)
+ident(
+  int_ref s2 "odoc_args.ml" 332 13757 13764 "odoc_args.ml" 332 13757 13766
+)
+"odoc_args.ml" 336 13833 13847 "odoc_args.ml" 336 13833 13848
+type(
+  Arg.spec
+)
+ident(
+  int_ref f "odoc_args.ml" 332 13757 13767 "odoc_args.ml" 332 13757 13768
+)
+"odoc_args.ml" 336 13833 13849 "odoc_args.ml" 336 13833 13850
+type(
+  Arg.doc
+)
+ident(
+  int_ref m "odoc_args.ml" 332 13757 13769 "odoc_args.ml" 332 13757 13770
+)
+"odoc_args.ml" 336 13833 13843 "odoc_args.ml" 336 13833 13851
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"odoc_args.ml" 336 13833 13856 "odoc_args.ml" 336 13833 13860
+type(
+  (Arg.key * Arg.spec * Arg.doc) list -> (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  int_ref iter "odoc_args.ml" 330 13715 13725 "odoc_args.ml" 330 13715 13729
+)
+"odoc_args.ml" 336 13833 13861 "odoc_args.ml" 336 13833 13862
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  int_ref q "odoc_args.ml" 332 13757 13775 "odoc_args.ml" 332 13757 13776
+)
+"odoc_args.ml" 336 13833 13855 "odoc_args.ml" 336 13833 13863
+call(
+  stack
+)
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 336 13833 13843 "odoc_args.ml" 336 13833 13863
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 333 13780 13788 "odoc_args.ml" 336 13833 13863
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 330 13715 13732 "odoc_args.ml" 336 13833 13863
+type(
+  (Arg.key * Arg.spec * Arg.doc) list -> (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 338 13869 13871 "odoc_args.ml" 338 13869 13878
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  int_ref options "odoc_args.ml" 301 12959 12963 "odoc_args.ml" 301 12959 12970
+)
+"odoc_args.ml" 338 13869 13879 "odoc_args.ml" 338 13869 13881
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref ->
+  (Arg.key * Arg.spec * Arg.doc) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 338 13869 13882 "odoc_args.ml" 338 13869 13886
+type(
+  (Arg.key * Arg.spec * Arg.doc) list -> (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  int_ref iter "odoc_args.ml" 330 13715 13725 "odoc_args.ml" 330 13715 13729
+)
+"odoc_args.ml" 338 13869 13887 "odoc_args.ml" 338 13869 13888
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref ->
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 338 13869 13888 "odoc_args.ml" 338 13869 13895
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  int_ref options "odoc_args.ml" 301 12959 12963 "odoc_args.ml" 301 12959 12970
+)
+"odoc_args.ml" 338 13869 13887 "odoc_args.ml" 338 13869 13895
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 338 13869 13882 "odoc_args.ml" 338 13869 13895
+call(
+  stack
+)
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 338 13869 13871 "odoc_args.ml" 338 13869 13895
+type(
+  unit
+)
+"odoc_args.ml" 330 13715 13717 "odoc_args.ml" 338 13869 13895
+type(
+  unit
+)
+"odoc_args.ml" 329 13694 13696 "odoc_args.ml" 338 13869 13895
+type(
+  unit
+)
+"odoc_args.ml" 327 13597 13599 "odoc_args.ml" 338 13869 13895
+type(
+  unit
+)
+"odoc_args.ml" 340 13897 13901 "odoc_args.ml" 340 13897 13906
+type(
+  unit -> unit
+)
+ident(
+  def parse "odoc_args.ml" 366 14714 14791 "odoc_args.ml" 1 0 -1
+)
+"odoc_args.ml" 340 13897 13907 "odoc_args.ml" 340 13897 13909
+type(
+  unit
+)
+"odoc_args.ml" 341 13912 13918 "odoc_args.ml" 341 13912 13927
+type(
+  string -> unit
+)
+ident(
+  def anonymous "odoc_args.ml" 356 14343 14345 "odoc_args.ml" 366 14714 14791
+)
+"odoc_args.ml" 341 13912 13928 "odoc_args.ml" 341 13912 13929
+type(
+  string
+)
+ident(
+  def f "odoc_args.ml" 342 13932 13936 "odoc_args.ml" 354 14287 14337
+)
+"odoc_args.ml" 342 13932 13940 "odoc_args.ml" 342 13932 13942
+type(
+  Odoc_global.source_file
+)
+ident(
+  def sf "odoc_args.ml" 354 14287 14291 "odoc_args.ml" 354 14287 14337
+)
+"odoc_args.ml" 343 13945 13954 "odoc_args.ml" 343 13945 13975
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Filename.check_suffix
+)
+"odoc_args.ml" 343 13945 13976 "odoc_args.ml" 343 13945 13977
+type(
+  string
+)
+ident(
+  int_ref f "odoc_args.ml" 341 13912 13928 "odoc_args.ml" 341 13912 13929
+)
+"odoc_args.ml" 343 13945 13978 "odoc_args.ml" 343 13945 13982
+type(
+  string
+)
+"odoc_args.ml" 343 13945 13954 "odoc_args.ml" 343 13945 13982
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_args.ml" 344 13988 14018 "odoc_args.ml" 344 13988 14019
+type(
+  string
+)
+ident(
+  int_ref f "odoc_args.ml" 341 13912 13928 "odoc_args.ml" 341 13912 13929
+)
+"odoc_args.ml" 344 13988 13996 "odoc_args.ml" 344 13988 14019
+type(
+  Odoc_global.source_file
+)
+"odoc_args.ml" 346 14031 14042 "odoc_args.ml" 346 14031 14063
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Filename.check_suffix
+)
+"odoc_args.ml" 346 14031 14064 "odoc_args.ml" 346 14031 14065
+type(
+  string
+)
+ident(
+  int_ref f "odoc_args.ml" 341 13912 13928 "odoc_args.ml" 341 13912 13929
+)
+"odoc_args.ml" 346 14031 14066 "odoc_args.ml" 346 14031 14071
+type(
+  string
+)
+"odoc_args.ml" 346 14031 14042 "odoc_args.ml" 346 14031 14071
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_args.ml" 347 14077 14109 "odoc_args.ml" 347 14077 14110
+type(
+  string
+)
+ident(
+  int_ref f "odoc_args.ml" 341 13912 13928 "odoc_args.ml" 341 13912 13929
+)
+"odoc_args.ml" 347 14077 14087 "odoc_args.ml" 347 14077 14110
+type(
+  Odoc_global.source_file
+)
+"odoc_args.ml" 349 14124 14137 "odoc_args.ml" 349 14124 14158
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Filename.check_suffix
+)
+"odoc_args.ml" 349 14124 14159 "odoc_args.ml" 349 14124 14160
+type(
+  string
+)
+ident(
+  int_ref f "odoc_args.ml" 341 13912 13928 "odoc_args.ml" 341 13912 13929
+)
+"odoc_args.ml" 349 14124 14161 "odoc_args.ml" 349 14124 14166
+type(
+  string
+)
+"odoc_args.ml" 349 14124 14137 "odoc_args.ml" 349 14124 14166
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_args.ml" 350 14172 14206 "odoc_args.ml" 350 14172 14207
+type(
+  string
+)
+ident(
+  int_ref f "odoc_args.ml" 341 13912 13928 "odoc_args.ml" 341 13912 13929
+)
+"odoc_args.ml" 350 14172 14184 "odoc_args.ml" 350 14172 14207
+type(
+  Odoc_global.source_file
+)
+"odoc_args.ml" 352 14223 14235 "odoc_args.ml" 352 14223 14243
+type(
+  string -> Odoc_global.source_file
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"odoc_args.ml" 352 14223 14245 "odoc_args.ml" 352 14223 14276
+type(
+  string -> string
+)
+ident(
+  ext_ref Odoc_messages.unknown_extension
+)
+"odoc_args.ml" 352 14223 14277 "odoc_args.ml" 352 14223 14278
+type(
+  string
+)
+ident(
+  int_ref f "odoc_args.ml" 341 13912 13928 "odoc_args.ml" 341 13912 13929
+)
+"odoc_args.ml" 352 14223 14244 "odoc_args.ml" 352 14223 14279
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_args.ml" 352 14223 14235 "odoc_args.ml" 352 14223 14279
+call(
+  stack
+)
+type(
+  Odoc_global.source_file
+)
+"odoc_args.ml" 349 14124 14134 "odoc_args.ml" 352 14223 14279
+type(
+  Odoc_global.source_file
+)
+"odoc_args.ml" 346 14031 14039 "odoc_args.ml" 352 14223 14279
+type(
+  Odoc_global.source_file
+)
+"odoc_args.ml" 343 13945 13951 "odoc_args.ml" 352 14223 14279
+type(
+  Odoc_global.source_file
+)
+"odoc_args.ml" 354 14287 14291 "odoc_args.ml" 354 14287 14308
+type(
+  Odoc_global.source_file list ref
+)
+ident(
+  ext_ref Odoc_global.files
+)
+"odoc_args.ml" 354 14287 14309 "odoc_args.ml" 354 14287 14311
+type(
+  Odoc_global.source_file list ref -> Odoc_global.source_file list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 354 14287 14312 "odoc_args.ml" 354 14287 14313
+type(
+  Odoc_global.source_file list ref -> Odoc_global.source_file list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 354 14287 14313 "odoc_args.ml" 354 14287 14330
+type(
+  Odoc_global.source_file list ref
+)
+ident(
+  ext_ref Odoc_global.files
+)
+"odoc_args.ml" 354 14287 14312 "odoc_args.ml" 354 14287 14330
+type(
+  Odoc_global.source_file list
+)
+"odoc_args.ml" 354 14287 14331 "odoc_args.ml" 354 14287 14332
+type(
+  Odoc_global.source_file list ->
+  Odoc_global.source_file list -> Odoc_global.source_file list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_args.ml" 354 14287 14334 "odoc_args.ml" 354 14287 14336
+type(
+  Odoc_global.source_file
+)
+ident(
+  int_ref sf "odoc_args.ml" 342 13932 13940 "odoc_args.ml" 342 13932 13942
+)
+"odoc_args.ml" 354 14287 14333 "odoc_args.ml" 354 14287 14337
+type(
+  Odoc_global.source_file list
+)
+"odoc_args.ml" 354 14287 14312 "odoc_args.ml" 354 14287 14337
+call(
+  stack
+)
+type(
+  Odoc_global.source_file list
+)
+"odoc_args.ml" 354 14287 14291 "odoc_args.ml" 354 14287 14337
+type(
+  unit
+)
+"odoc_args.ml" 342 13932 13936 "odoc_args.ml" 354 14287 14337
+type(
+  unit
+)
+"odoc_args.ml" 356 14343 14348 "odoc_args.ml" 356 14343 14364
+type(
+  unit -> bool
+)
+ident(
+  int_ref modified_options "odoc_args.ml" 303 12994 12998 "odoc_args.ml" 303 12994 13014
+)
+"odoc_args.ml" 356 14343 14365 "odoc_args.ml" 356 14343 14367
+type(
+  unit
+)
+"odoc_args.ml" 356 14343 14348 "odoc_args.ml" 356 14343 14367
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_args.ml" 356 14343 14373 "odoc_args.ml" 356 14343 14388
+type(
+  string -> unit
+)
+ident(
+  int_ref append_last_doc "odoc_args.ml" 306 13051 13055 "odoc_args.ml" 306 13051 13070
+)
+"odoc_args.ml" 356 14343 14389 "odoc_args.ml" 356 14343 14393
+type(
+  string
+)
+"odoc_args.ml" 356 14343 14373 "odoc_args.ml" 356 14343 14393
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_args.ml" 356 14343 14345 "odoc_args.ml" 356 14343 14393
+type(
+  unit
+)
+"odoc_args.ml" 357 14395 14401 "odoc_args.ml" 357 14395 14408
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  def options "odoc_args.ml" 358 14439 14441 "odoc_args.ml" 366 14714 14791
+)
+"odoc_args.ml" 357 14395 14411 "odoc_args.ml" 357 14395 14412
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref ->
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 357 14395 14412 "odoc_args.ml" 357 14395 14419
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  int_ref options "odoc_args.ml" 301 12959 12963 "odoc_args.ml" 301 12959 12970
+)
+"odoc_args.ml" 357 14395 14411 "odoc_args.ml" 357 14395 14419
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 357 14395 14420 "odoc_args.ml" 357 14395 14421
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ->
+  (Arg.key * Arg.spec * Arg.doc) list -> (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"odoc_args.ml" 357 14395 14422 "odoc_args.ml" 357 14395 14423
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref ->
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 357 14395 14423 "odoc_args.ml" 357 14395 14435
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ref
+)
+ident(
+  int_ref help_options "odoc_args.ml" 313 13292 13296 "odoc_args.ml" 313 13292 13308
+)
+"odoc_args.ml" 357 14395 14422 "odoc_args.ml" 357 14395 14435
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 357 14395 14411 "odoc_args.ml" 357 14395 14435
+call(
+  stack
+)
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"odoc_args.ml" 358 14439 14445 "odoc_args.ml" 358 14439 14446
+type(
+  unit
+)
+"odoc_args.ml" 358 14439 14449 "odoc_args.ml" 358 14439 14458
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ->
+  Arg.anon_fun -> Arg.usage_msg -> unit
+)
+ident(
+  ext_ref Arg.parse
+)
+"odoc_args.ml" 358 14439 14459 "odoc_args.ml" 358 14439 14466
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  int_ref options "odoc_args.ml" 357 14395 14401 "odoc_args.ml" 357 14395 14408
+)
+"odoc_args.ml" 359 14467 14473 "odoc_args.ml" 359 14467 14482
+type(
+  Arg.anon_fun
+)
+ident(
+  int_ref anonymous "odoc_args.ml" 341 13912 13918 "odoc_args.ml" 341 13912 13927
+)
+"odoc_args.ml" 360 14483 14490 "odoc_args.ml" 360 14483 14497
+type(
+  string
+)
+ident(
+  ext_ref M.usage
+)
+"odoc_args.ml" 360 14483 14497 "odoc_args.ml" 360 14483 14498
+type(
+  string -> string -> Arg.usage_msg
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_args.ml" 360 14483 14498 "odoc_args.ml" 360 14483 14511
+type(
+  string
+)
+ident(
+  ext_ref M.options_are
+)
+"odoc_args.ml" 360 14483 14489 "odoc_args.ml" 360 14483 14512
+call(
+  stack
+)
+type(
+  Arg.usage_msg
+)
+"odoc_args.ml" 358 14439 14449 "odoc_args.ml" 360 14483 14512
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_args.ml" 365 14682 14684 "odoc_args.ml" 365 14682 14710
+type(
+  string list ref
+)
+ident(
+  ext_ref Odoc_global.hidden_modules
+)
+"odoc_args.ml" 365 14682 14711 "odoc_args.ml" 365 14682 14713
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_args.ml" 366 14714 14718 "odoc_args.ml" 366 14714 14727
+type(
+  (string -> string -> int) -> string list -> string list
+)
+ident(
+  ext_ref List.sort
+)
+"odoc_args.ml" 366 14714 14733 "odoc_args.ml" 366 14714 14734
+type(
+  string
+)
+ident(
+  def a "odoc_args.ml" 366 14714 14738 "odoc_args.ml" 366 14714 14762
+)
+"odoc_args.ml" 366 14714 14742 "odoc_args.ml" 366 14714 14743
+type(
+  string
+)
+ident(
+  def b "odoc_args.ml" 366 14714 14747 "odoc_args.ml" 366 14714 14762
+)
+"odoc_args.ml" 366 14714 14747 "odoc_args.ml" 366 14714 14748
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.( ~- )
+)
+"odoc_args.ml" 366 14714 14750 "odoc_args.ml" 366 14714 14757
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"odoc_args.ml" 366 14714 14758 "odoc_args.ml" 366 14714 14759
+type(
+  string
+)
+ident(
+  int_ref a "odoc_args.ml" 366 14714 14733 "odoc_args.ml" 366 14714 14734
+)
+"odoc_args.ml" 366 14714 14760 "odoc_args.ml" 366 14714 14761
+type(
+  string
+)
+ident(
+  int_ref b "odoc_args.ml" 366 14714 14742 "odoc_args.ml" 366 14714 14743
+)
+"odoc_args.ml" 366 14714 14749 "odoc_args.ml" 366 14714 14762
+type(
+  int
+)
+"odoc_args.ml" 366 14714 14747 "odoc_args.ml" 366 14714 14762
+type(
+  int
+)
+"odoc_args.ml" 366 14714 14738 "odoc_args.ml" 366 14714 14762
+type(
+  string -> int
+)
+"odoc_args.ml" 366 14714 14728 "odoc_args.ml" 366 14714 14763
+type(
+  string -> string -> int
+)
+"odoc_args.ml" 366 14714 14764 "odoc_args.ml" 366 14714 14765
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_args.ml" 366 14714 14765 "odoc_args.ml" 366 14714 14791
+type(
+  string list ref
+)
+ident(
+  ext_ref Odoc_global.hidden_modules
+)
+"odoc_args.ml" 366 14714 14764 "odoc_args.ml" 366 14714 14791
+type(
+  string list
+)
+"odoc_args.ml" 366 14714 14718 "odoc_args.ml" 366 14714 14791
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc_args.ml" 365 14682 14684 "odoc_args.ml" 366 14714 14791
+type(
+  unit
+)
+"odoc_args.ml" 358 14439 14441 "odoc_args.ml" 366 14714 14791
+type(
+  unit
+)
+"odoc_args.ml" 357 14395 14397 "odoc_args.ml" 366 14714 14791
+type(
+  unit
+)
+"odoc_args.ml" 356 14343 14345 "odoc_args.ml" 366 14714 14791
+type(
+  unit
+)
+"odoc_args.ml" 341 13912 13914 "odoc_args.ml" 366 14714 14791
+type(
+  unit
+)

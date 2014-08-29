@@ -1,0 +1,211 @@
+"odoc_gen.ml" 23 1042 1101 "odoc_gen.ml" 23 1042 1102
+type(
+  Odoc_module.t_module list
+)
+ident(
+  def l "odoc_gen.ml" 23 1042 1105 "odoc_gen.ml" 23 1042 1107
+)
+"odoc_gen.ml" 23 1042 1105 "odoc_gen.ml" 23 1042 1107
+type(
+  unit
+)
+"odoc_gen.ml" 42 1909 1913 "odoc_gen.ml" 42 1909 1934
+type(
+  generator -> doc_generator
+)
+ident(
+  def get_minimal_generator "odoc_gen.ml" 60 2506 2525 "odoc_gen.ml" 1 0 -1
+)
+"odoc_gen.ml" 43 1946 1953 "odoc_gen.ml" 43 1946 1954
+type(
+  (module Odoc_html.Html_generator)
+)
+ident(
+  def m "odoc_gen.ml" 44 1958 1962 "odoc_gen.ml" 45 2015 2048
+)
+"odoc_gen.ml" 43 1946 1948 "odoc_gen.ml" 43 1946 1954
+type(
+  generator
+)
+"odoc_gen.ml" 44 1958 1982 "odoc_gen.ml" 44 1958 1983
+type(
+  (module Odoc_html.Html_generator)
+)
+type(
+  (module Odoc_html.Html_generator)
+)
+ident(
+  int_ref m "odoc_gen.ml" 43 1946 1953 "odoc_gen.ml" 43 1946 1954
+)
+"odoc_gen.ml" 45 2015 2020 "odoc_gen.ml" 45 2015 2030
+type(
+  doc_generator
+)
+type(
+  M.html
+)
+"odoc_gen.ml" 44 1958 1962 "odoc_gen.ml" 45 2015 2048
+type(
+  doc_generator
+)
+"odoc_gen.ml" 46 2049 2057 "odoc_gen.ml" 46 2049 2058
+type(
+  (module Odoc_latex.Latex_generator)
+)
+ident(
+  def m "odoc_gen.ml" 47 2062 2066 "odoc_gen.ml" 48 2121 2155
+)
+"odoc_gen.ml" 46 2049 2051 "odoc_gen.ml" 46 2049 2058
+type(
+  generator
+)
+"odoc_gen.ml" 47 2062 2086 "odoc_gen.ml" 47 2062 2087
+type(
+  (module Odoc_latex.Latex_generator)
+)
+type(
+  (module Odoc_latex.Latex_generator)
+)
+ident(
+  int_ref m "odoc_gen.ml" 46 2049 2057 "odoc_gen.ml" 46 2049 2058
+)
+"odoc_gen.ml" 48 2121 2126 "odoc_gen.ml" 48 2121 2137
+type(
+  doc_generator
+)
+type(
+  M.latex
+)
+"odoc_gen.ml" 47 2062 2066 "odoc_gen.ml" 48 2121 2155
+type(
+  doc_generator
+)
+"odoc_gen.ml" 49 2156 2162 "odoc_gen.ml" 49 2156 2163
+type(
+  (module Odoc_man.Man_generator)
+)
+ident(
+  def m "odoc_gen.ml" 50 2167 2171 "odoc_gen.ml" 51 2222 2254
+)
+"odoc_gen.ml" 49 2156 2158 "odoc_gen.ml" 49 2156 2163
+type(
+  generator
+)
+"odoc_gen.ml" 50 2167 2191 "odoc_gen.ml" 50 2167 2192
+type(
+  (module Odoc_man.Man_generator)
+)
+type(
+  (module Odoc_man.Man_generator)
+)
+ident(
+  int_ref m "odoc_gen.ml" 49 2156 2162 "odoc_gen.ml" 49 2156 2163
+)
+"odoc_gen.ml" 51 2222 2227 "odoc_gen.ml" 51 2222 2236
+type(
+  doc_generator
+)
+type(
+  M.man
+)
+"odoc_gen.ml" 50 2167 2171 "odoc_gen.ml" 51 2222 2254
+type(
+  doc_generator
+)
+"odoc_gen.ml" 52 2255 2262 "odoc_gen.ml" 52 2255 2263
+type(
+  (module Odoc_texi.Texi_generator)
+)
+ident(
+  def m "odoc_gen.ml" 53 2267 2271 "odoc_gen.ml" 54 2324 2357
+)
+"odoc_gen.ml" 52 2255 2257 "odoc_gen.ml" 52 2255 2263
+type(
+  generator
+)
+"odoc_gen.ml" 53 2267 2291 "odoc_gen.ml" 53 2267 2292
+type(
+  (module Odoc_texi.Texi_generator)
+)
+type(
+  (module Odoc_texi.Texi_generator)
+)
+ident(
+  int_ref m "odoc_gen.ml" 52 2255 2262 "odoc_gen.ml" 52 2255 2263
+)
+"odoc_gen.ml" 54 2324 2329 "odoc_gen.ml" 54 2324 2339
+type(
+  doc_generator
+)
+type(
+  M.texi
+)
+"odoc_gen.ml" 53 2267 2271 "odoc_gen.ml" 54 2324 2357
+type(
+  doc_generator
+)
+"odoc_gen.ml" 55 2358 2364 "odoc_gen.ml" 55 2358 2365
+type(
+  (module Odoc_dot.Dot_generator)
+)
+ident(
+  def m "odoc_gen.ml" 56 2369 2373 "odoc_gen.ml" 57 2424 2456
+)
+"odoc_gen.ml" 55 2358 2360 "odoc_gen.ml" 55 2358 2365
+type(
+  generator
+)
+"odoc_gen.ml" 56 2369 2393 "odoc_gen.ml" 56 2369 2394
+type(
+  (module Odoc_dot.Dot_generator)
+)
+type(
+  (module Odoc_dot.Dot_generator)
+)
+ident(
+  int_ref m "odoc_gen.ml" 55 2358 2364 "odoc_gen.ml" 55 2358 2365
+)
+"odoc_gen.ml" 57 2424 2429 "odoc_gen.ml" 57 2424 2438
+type(
+  doc_generator
+)
+type(
+  M.dot
+)
+"odoc_gen.ml" 56 2369 2373 "odoc_gen.ml" 57 2424 2456
+type(
+  doc_generator
+)
+"odoc_gen.ml" 58 2457 2464 "odoc_gen.ml" 58 2457 2465
+type(
+  (module Base)
+)
+ident(
+  def m "odoc_gen.ml" 59 2469 2473 "odoc_gen.ml" 60 2506 2525
+)
+"odoc_gen.ml" 58 2457 2459 "odoc_gen.ml" 58 2457 2465
+type(
+  generator
+)
+"odoc_gen.ml" 59 2469 2493 "odoc_gen.ml" 59 2469 2494
+type(
+  (module Base)
+)
+type(
+  (module Base)
+)
+ident(
+  int_ref m "odoc_gen.ml" 58 2457 2464 "odoc_gen.ml" 58 2457 2465
+)
+"odoc_gen.ml" 60 2506 2510 "odoc_gen.ml" 60 2506 2525
+type(
+  doc_generator
+)
+"odoc_gen.ml" 59 2469 2473 "odoc_gen.ml" 60 2506 2525
+type(
+  doc_generator
+)
+"odoc_gen.ml" 42 1909 1937 "odoc_gen.ml" 60 2506 2525
+type(
+  generator -> doc_generator
+)

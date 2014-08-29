@@ -1,0 +1,563 @@
+"tools.ml" 24 958 962 "tools.ml" 24 958 966
+type(
+  Format.formatter -> string list -> unit
+)
+ident(
+  def pp_l "tools.ml" 26 994 994 "tools.ml" 1 0 -1
+)
+"tools.ml" 24 958 969 "tools.ml" 24 958 979
+type(
+  (Format.formatter -> string -> unit) ->
+  Format.formatter -> string list -> unit
+)
+ident(
+  ext_ref My_std.List.print
+)
+"tools.ml" 24 958 980 "tools.ml" 24 958 992
+type(
+  Format.formatter -> string -> unit
+)
+ident(
+  ext_ref My_std.String.print
+)
+"tools.ml" 24 958 969 "tools.ml" 24 958 992
+call(
+  stack
+)
+type(
+  Format.formatter -> string list -> unit
+)
+"tools.ml" 26 994 998 "tools.ml" 26 994 1014
+type(
+  Pathname.t -> Tags.t
+)
+ident(
+  def tags_of_pathname "tools.ml" 31 1136 1136 "tools.ml" 1 0 -1
+)
+"tools.ml" 26 994 1015 "tools.ml" 26 994 1016
+type(
+  Pathname.t
+)
+ident(
+  def p "tools.ml" 27 1019 1021 "tools.ml" 29 1091 1134
+)
+"tools.ml" 27 1019 1021 "tools.ml" 27 1019 1051
+type(
+  string -> Tags.t
+)
+ident(
+  ext_ref Configuration.tags_of_filename
+)
+"tools.ml" 27 1019 1053 "tools.ml" 27 1019 1071
+type(
+  Pathname.t -> string
+)
+ident(
+  ext_ref Pathname.to_string
+)
+"tools.ml" 27 1019 1072 "tools.ml" 27 1019 1073
+type(
+  Pathname.t
+)
+ident(
+  int_ref p "tools.ml" 26 994 1015 "tools.ml" 26 994 1016
+)
+"tools.ml" 27 1019 1052 "tools.ml" 27 1019 1074
+call(
+  stack
+)
+type(
+  string
+)
+"tools.ml" 27 1019 1021 "tools.ml" 27 1019 1074
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"tools.ml" 28 1075 1077 "tools.ml" 28 1075 1079
+type(
+  Tags.t -> Tags.elt -> Tags.t
+)
+ident(
+  ext_ref Tags.Operators.( ++ )
+)
+"tools.ml" 28 1075 1080 "tools.ml" 28 1075 1087
+type(
+  string
+)
+"tools.ml" 28 1075 1087 "tools.ml" 28 1075 1088
+type(
+  string -> Pathname.t -> Tags.elt
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"tools.ml" 28 1075 1088 "tools.ml" 28 1075 1089
+type(
+  Pathname.t
+)
+ident(
+  int_ref p "tools.ml" 26 994 1015 "tools.ml" 26 994 1016
+)
+"tools.ml" 28 1075 1079 "tools.ml" 28 1075 1090
+call(
+  stack
+)
+type(
+  Tags.elt
+)
+"tools.ml" 27 1019 1021 "tools.ml" 28 1075 1090
+call(
+  stack
+)
+type(
+  Tags.t
+)
+"tools.ml" 29 1091 1093 "tools.ml" 29 1091 1095
+type(
+  Tags.t -> Tags.elt -> Tags.t
+)
+ident(
+  ext_ref Tags.Operators.( ++ )
+)
+"tools.ml" 29 1091 1096 "tools.ml" 29 1091 1108
+type(
+  string
+)
+"tools.ml" 29 1091 1108 "tools.ml" 29 1091 1109
+type(
+  string -> string -> Tags.elt
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"tools.ml" 29 1091 1109 "tools.ml" 29 1091 1131
+type(
+  Pathname.t -> string
+)
+ident(
+  ext_ref Pathname.get_extension
+)
+"tools.ml" 29 1091 1132 "tools.ml" 29 1091 1133
+type(
+  Pathname.t
+)
+ident(
+  int_ref p "tools.ml" 26 994 1015 "tools.ml" 26 994 1016
+)
+"tools.ml" 29 1091 1109 "tools.ml" 29 1091 1133
+call(
+  stack
+)
+type(
+  string
+)
+"tools.ml" 29 1091 1095 "tools.ml" 29 1091 1134
+call(
+  stack
+)
+type(
+  Tags.elt
+)
+"tools.ml" 27 1019 1021 "tools.ml" 29 1091 1134
+call(
+  tail
+)
+type(
+  Tags.t
+)
+"tools.ml" 31 1136 1140 "tools.ml" 31 1136 1149
+type(
+  (Format.formatter -> 'a -> unit) -> Format.formatter -> 'a option -> unit
+)
+ident(
+  def opt_print "tools.ml" 36 1261 1261 "tools.ml" 1 0 -1
+)
+"tools.ml" 31 1136 1150 "tools.ml" 31 1136 1153
+type(
+  Format.formatter -> 'a -> unit
+)
+ident(
+  def elt "tools.ml" 31 1136 1154 "tools.ml" 34 1221 1259
+)
+"tools.ml" 31 1136 1154 "tools.ml" 31 1136 1157
+type(
+  Format.formatter
+)
+ident(
+  def ppf "tools.ml" 32 1160 1162 "tools.ml" 34 1221 1259
+)
+"tools.ml" 33 1171 1180 "tools.ml" 33 1171 1181
+type(
+  'a
+)
+ident(
+  def x "tools.ml" 33 1171 1185 "tools.ml" 33 1171 1220
+)
+"tools.ml" 33 1171 1175 "tools.ml" 33 1171 1181
+type(
+  'a option
+)
+"tools.ml" 33 1171 1185 "tools.ml" 33 1171 1192
+type(
+  Format.formatter ->
+  ((Format.formatter -> 'a -> unit) -> 'a -> unit, Format.formatter, unit)
+  format -> (Format.formatter -> 'a -> unit) -> 'a -> unit
+)
+ident(
+  ext_ref Format.fprintf
+)
+"tools.ml" 33 1171 1193 "tools.ml" 33 1171 1196
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "tools.ml" 31 1136 1154 "tools.ml" 31 1136 1157
+)
+"tools.ml" 33 1171 1197 "tools.ml" 33 1171 1214
+type(
+  ((Format.formatter -> 'a -> unit) -> 'a -> unit, Format.formatter, unit)
+  format
+)
+"tools.ml" 33 1171 1215 "tools.ml" 33 1171 1218
+type(
+  Format.formatter -> 'a -> unit
+)
+ident(
+  int_ref elt "tools.ml" 31 1136 1150 "tools.ml" 31 1136 1153
+)
+"tools.ml" 33 1171 1219 "tools.ml" 33 1171 1220
+type(
+  'a
+)
+ident(
+  int_ref x "tools.ml" 33 1171 1180 "tools.ml" 33 1171 1181
+)
+"tools.ml" 33 1171 1185 "tools.ml" 33 1171 1220
+call(
+  tail
+)
+type(
+  unit
+)
+"tools.ml" 34 1221 1225 "tools.ml" 34 1221 1229
+type(
+  'a option
+)
+"tools.ml" 34 1221 1233 "tools.ml" 34 1221 1248
+type(
+  Format.formatter -> string -> unit
+)
+ident(
+  ext_ref Format.pp_print_string
+)
+"tools.ml" 34 1221 1249 "tools.ml" 34 1221 1252
+type(
+  Format.formatter
+)
+ident(
+  int_ref ppf "tools.ml" 31 1136 1154 "tools.ml" 31 1136 1157
+)
+"tools.ml" 34 1221 1253 "tools.ml" 34 1221 1259
+type(
+  string
+)
+"tools.ml" 34 1221 1233 "tools.ml" 34 1221 1259
+call(
+  tail
+)
+type(
+  unit
+)
+"tools.ml" 32 1160 1162 "tools.ml" 34 1221 1259
+type(
+  'a option -> unit
+)
+"tools.ml" 36 1261 1265 "tools.ml" 36 1261 1291
+type(
+  Pathname.t -> Pathname.t list
+)
+ident(
+  def path_and_context_of_string "tools.ml" 46 1626 1636 "tools.ml" 1 0 -1
+)
+"tools.ml" 36 1261 1292 "tools.ml" 36 1261 1293
+type(
+  Pathname.t
+)
+ident(
+  def s "tools.ml" 37 1296 1298 "tools.ml" 46 1626 1636
+)
+"tools.ml" 37 1296 1301 "tools.ml" 37 1296 1321
+type(
+  Pathname.t -> bool
+)
+ident(
+  ext_ref Pathname.is_implicit
+)
+"tools.ml" 37 1296 1322 "tools.ml" 37 1296 1323
+type(
+  Pathname.t
+)
+ident(
+  int_ref s "tools.ml" 36 1261 1292 "tools.ml" 36 1261 1293
+)
+"tools.ml" 37 1296 1301 "tools.ml" 37 1296 1323
+call(
+  stack
+)
+type(
+  bool
+)
+"tools.ml" 38 1329 1337 "tools.ml" 38 1329 1338
+type(
+  Pathname.t
+)
+ident(
+  def b "tools.ml" 39 1364 1368 "tools.ml" 45 1563 1625
+)
+"tools.ml" 38 1329 1341 "tools.ml" 38 1329 1358
+type(
+  Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Pathname.basename
+)
+"tools.ml" 38 1329 1359 "tools.ml" 38 1329 1360
+type(
+  Pathname.t
+)
+ident(
+  int_ref s "tools.ml" 36 1261 1292 "tools.ml" 36 1261 1293
+)
+"tools.ml" 38 1329 1341 "tools.ml" 38 1329 1360
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"tools.ml" 39 1364 1372 "tools.ml" 39 1364 1373
+type(
+  Pathname.t
+)
+ident(
+  def d "tools.ml" 40 1398 1402 "tools.ml" 45 1563 1625
+)
+"tools.ml" 39 1364 1376 "tools.ml" 39 1364 1392
+type(
+  Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Pathname.dirname
+)
+"tools.ml" 39 1364 1393 "tools.ml" 39 1364 1394
+type(
+  Pathname.t
+)
+ident(
+  int_ref s "tools.ml" 36 1261 1292 "tools.ml" 36 1261 1293
+)
+"tools.ml" 39 1364 1376 "tools.ml" 39 1364 1394
+call(
+  stack
+)
+type(
+  Pathname.t
+)
+"tools.ml" 40 1398 1405 "tools.ml" 40 1398 1406
+type(
+  Pathname.t
+)
+ident(
+  int_ref d "tools.ml" 39 1364 1372 "tools.ml" 39 1364 1373
+)
+"tools.ml" 40 1398 1407 "tools.ml" 40 1398 1409
+type(
+  Pathname.t -> Pathname.t -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"tools.ml" 40 1398 1410 "tools.ml" 40 1398 1435
+type(
+  Pathname.t
+)
+ident(
+  ext_ref Pathname.current_dir_name
+)
+"tools.ml" 40 1398 1405 "tools.ml" 40 1398 1435
+type(
+  bool
+)
+"tools.ml" 41 1441 1451 "tools.ml" 41 1441 1453
+type(
+  unit
+)
+"tools.ml" 41 1441 1456 "tools.ml" 41 1441 1479
+type(
+  Pathname.t -> Pathname.t list -> unit
+)
+ident(
+  ext_ref Pathname.define_context
+)
+"tools.ml" 41 1441 1480 "tools.ml" 41 1441 1481
+type(
+  Pathname.t
+)
+ident(
+  int_ref d "tools.ml" 39 1364 1372 "tools.ml" 39 1364 1373
+)
+"tools.ml" 41 1441 1483 "tools.ml" 41 1441 1484
+type(
+  Pathname.t
+)
+ident(
+  int_ref d "tools.ml" 39 1364 1372 "tools.ml" 39 1364 1373
+)
+"tools.ml" 41 1441 1482 "tools.ml" 41 1441 1485
+type(
+  Pathname.t list
+)
+"tools.ml" 41 1441 1456 "tools.ml" 41 1441 1485
+call(
+  stack
+)
+type(
+  unit
+)
+"tools.ml" 42 1489 1496 "tools.ml" 42 1489 1497
+type(
+  Pathname.t
+)
+ident(
+  int_ref s "tools.ml" 36 1261 1292 "tools.ml" 36 1261 1293
+)
+"tools.ml" 42 1489 1495 "tools.ml" 42 1489 1498
+type(
+  Pathname.t list
+)
+"tools.ml" 41 1441 1447 "tools.ml" 42 1489 1498
+type(
+  Pathname.t list
+)
+"tools.ml" 44 1508 1518 "tools.ml" 44 1508 1530
+type(
+  string list
+)
+ident(
+  def include_dirs "tools.ml" 45 1563 1569 "tools.ml" 45 1563 1625
+)
+"tools.ml" 44 1508 1533 "tools.ml" 44 1508 1557
+type(
+  Pathname.t -> string list
+)
+ident(
+  ext_ref Pathname.include_dirs_of
+)
+"tools.ml" 44 1508 1558 "tools.ml" 44 1508 1559
+type(
+  Pathname.t
+)
+ident(
+  int_ref d "tools.ml" 39 1364 1372 "tools.ml" 39 1364 1373
+)
+"tools.ml" 44 1508 1533 "tools.ml" 44 1508 1559
+call(
+  stack
+)
+type(
+  string list
+)
+"tools.ml" 45 1563 1569 "tools.ml" 45 1563 1577
+type(
+  (Pathname.t -> Pathname.t) -> Pathname.t list -> Pathname.t list
+)
+ident(
+  ext_ref My_std.List.map
+)
+"tools.ml" 45 1563 1583 "tools.ml" 45 1563 1594
+type(
+  Pathname.t
+)
+ident(
+  def include_dir "tools.ml" 45 1563 1598 "tools.ml" 45 1563 1611
+)
+"tools.ml" 45 1563 1598 "tools.ml" 45 1563 1609
+type(
+  Pathname.t
+)
+ident(
+  int_ref include_dir "tools.ml" 45 1563 1583 "tools.ml" 45 1563 1594
+)
+"tools.ml" 45 1563 1609 "tools.ml" 45 1563 1610
+type(
+  Pathname.t -> Pathname.t -> Pathname.t
+)
+ident(
+  ext_ref Pathname.Operators.( / )
+)
+"tools.ml" 45 1563 1610 "tools.ml" 45 1563 1611
+type(
+  Pathname.t
+)
+ident(
+  int_ref b "tools.ml" 38 1329 1337 "tools.ml" 38 1329 1338
+)
+"tools.ml" 45 1563 1598 "tools.ml" 45 1563 1611
+call(
+  tail
+)
+type(
+  Pathname.t
+)
+"tools.ml" 45 1563 1578 "tools.ml" 45 1563 1612
+type(
+  Pathname.t -> Pathname.t
+)
+"tools.ml" 45 1563 1613 "tools.ml" 45 1563 1625
+type(
+  Pathname.t list
+)
+ident(
+  int_ref include_dirs "tools.ml" 44 1508 1518 "tools.ml" 44 1508 1530
+)
+"tools.ml" 45 1563 1569 "tools.ml" 45 1563 1625
+call(
+  tail
+)
+type(
+  Pathname.t list
+)
+"tools.ml" 44 1508 1514 "tools.ml" 45 1563 1625
+type(
+  Pathname.t list
+)
+"tools.ml" 40 1398 1402 "tools.ml" 45 1563 1625
+type(
+  Pathname.t list
+)
+"tools.ml" 39 1364 1368 "tools.ml" 45 1563 1625
+type(
+  Pathname.t list
+)
+"tools.ml" 38 1329 1333 "tools.ml" 45 1563 1625
+type(
+  Pathname.t list
+)
+"tools.ml" 46 1626 1634 "tools.ml" 46 1626 1635
+type(
+  Pathname.t
+)
+ident(
+  int_ref s "tools.ml" 36 1261 1292 "tools.ml" 36 1261 1293
+)
+"tools.ml" 46 1626 1633 "tools.ml" 46 1626 1636
+type(
+  Pathname.t list
+)
+"tools.ml" 37 1296 1298 "tools.ml" 46 1626 1636
+type(
+  Pathname.t list
+)

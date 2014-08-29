@@ -1,0 +1,390 @@
+"parameters.ml" 20 971 975 "parameters.ml" 20 971 989
+type(
+  bool ref
+)
+ident(
+  def program_loaded "parameters.ml" 21 1002 1002 "parameters.ml" 1 0 -1
+)
+"parameters.ml" 20 971 992 "parameters.ml" 20 971 995
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"parameters.ml" 20 971 996 "parameters.ml" 20 971 1001
+type(
+  bool
+)
+"parameters.ml" 20 971 992 "parameters.ml" 20 971 1001
+type(
+  bool ref
+)
+"parameters.ml" 21 1002 1006 "parameters.ml" 21 1002 1018
+type(
+  string ref
+)
+ident(
+  def program_name "parameters.ml" 22 1028 1028 "parameters.ml" 1 0 -1
+)
+"parameters.ml" 21 1002 1021 "parameters.ml" 21 1002 1024
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"parameters.ml" 21 1002 1025 "parameters.ml" 21 1002 1027
+type(
+  string
+)
+"parameters.ml" 21 1002 1021 "parameters.ml" 21 1002 1027
+type(
+  string ref
+)
+"parameters.ml" 22 1028 1032 "parameters.ml" 22 1028 1043
+type(
+  string ref
+)
+ident(
+  def socket_name "parameters.ml" 23 1053 1053 "parameters.ml" 1 0 -1
+)
+"parameters.ml" 22 1028 1046 "parameters.ml" 22 1028 1049
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"parameters.ml" 22 1028 1050 "parameters.ml" 22 1028 1052
+type(
+  string
+)
+"parameters.ml" 22 1028 1046 "parameters.ml" 22 1028 1052
+type(
+  string ref
+)
+"parameters.ml" 23 1053 1057 "parameters.ml" 23 1053 1066
+type(
+  string ref
+)
+ident(
+  def arguments "parameters.ml" 25 1077 1077 "parameters.ml" 1 0 -1
+)
+"parameters.ml" 23 1053 1069 "parameters.ml" 23 1053 1072
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"parameters.ml" 23 1053 1073 "parameters.ml" 23 1053 1075
+type(
+  string
+)
+"parameters.ml" 23 1053 1069 "parameters.ml" 23 1053 1075
+type(
+  string ref
+)
+"parameters.ml" 25 1077 1081 "parameters.ml" 25 1077 1098
+type(
+  string list ref
+)
+ident(
+  def default_load_path "parameters.ml" 28 1163 1163 "parameters.ml" 1 0 -1
+)
+"parameters.ml" 26 1101 1103 "parameters.ml" 26 1101 1106
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"parameters.ml" 26 1101 1109 "parameters.ml" 26 1101 1134
+type(
+  string
+)
+ident(
+  ext_ref Filename.current_dir_name
+)
+"parameters.ml" 26 1101 1136 "parameters.ml" 26 1101 1159
+type(
+  string
+)
+ident(
+  ext_ref Config.standard_library
+)
+"parameters.ml" 26 1101 1107 "parameters.ml" 26 1101 1161
+type(
+  string list
+)
+"parameters.ml" 26 1101 1103 "parameters.ml" 26 1101 1161
+type(
+  string list ref
+)
+"parameters.ml" 28 1163 1167 "parameters.ml" 28 1163 1175
+type(
+  string -> unit
+)
+ident(
+  def add_path "parameters.ml" 32 1251 1251 "parameters.ml" 1 0 -1
+)
+"parameters.ml" 28 1163 1176 "parameters.ml" 28 1163 1179
+type(
+  string
+)
+ident(
+  def dir "parameters.ml" 29 1182 1184 "parameters.ml" 30 1227 1249
+)
+"parameters.ml" 29 1182 1184 "parameters.ml" 29 1182 1193
+type(
+  string list ref
+)
+ident(
+  ext_ref Config.load_path
+)
+"parameters.ml" 29 1182 1194 "parameters.ml" 29 1182 1196
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"parameters.ml" 29 1182 1197 "parameters.ml" 29 1182 1200
+type(
+  string
+)
+ident(
+  int_ref dir "parameters.ml" 28 1163 1176 "parameters.ml" 28 1163 1179
+)
+"parameters.ml" 29 1182 1204 "parameters.ml" 29 1182 1210
+type(
+  string -> string list -> string list
+)
+ident(
+  ext_ref Primitives.except
+)
+"parameters.ml" 29 1182 1211 "parameters.ml" 29 1182 1214
+type(
+  string
+)
+ident(
+  int_ref dir "parameters.ml" 28 1163 1176 "parameters.ml" 28 1163 1179
+)
+"parameters.ml" 29 1182 1215 "parameters.ml" 29 1182 1216
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"parameters.ml" 29 1182 1216 "parameters.ml" 29 1182 1225
+type(
+  string list ref
+)
+ident(
+  ext_ref Config.load_path
+)
+"parameters.ml" 29 1182 1215 "parameters.ml" 29 1182 1225
+type(
+  string list
+)
+"parameters.ml" 29 1182 1204 "parameters.ml" 29 1182 1225
+call(
+  stack
+)
+type(
+  string list
+)
+"parameters.ml" 29 1182 1197 "parameters.ml" 29 1182 1225
+type(
+  string list
+)
+"parameters.ml" 29 1182 1184 "parameters.ml" 29 1182 1225
+type(
+  unit
+)
+"parameters.ml" 30 1227 1229 "parameters.ml" 30 1227 1247
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Envaux.reset_cache
+)
+"parameters.ml" 30 1227 1247 "parameters.ml" 30 1227 1249
+type(
+  unit
+)
+"parameters.ml" 30 1227 1229 "parameters.ml" 30 1227 1249
+call(
+  tail
+)
+type(
+  unit
+)
+"parameters.ml" 29 1182 1184 "parameters.ml" 30 1227 1249
+type(
+  unit
+)
+"parameters.ml" 32 1251 1255 "parameters.ml" 32 1251 1267
+type(
+  string -> string -> unit
+)
+ident(
+  def add_path_for "parameters.ml" 37 1421 1421 "parameters.ml" 1 0 -1
+)
+"parameters.ml" 32 1251 1268 "parameters.ml" 32 1251 1271
+type(
+  string
+)
+ident(
+  def mdl "parameters.ml" 32 1251 1272 "parameters.ml" 34 1349 1397
+)
+"parameters.ml" 32 1251 1272 "parameters.ml" 32 1251 1275
+type(
+  string
+)
+ident(
+  def dir "parameters.ml" 33 1278 1280 "parameters.ml" 34 1349 1397
+)
+"parameters.ml" 33 1278 1284 "parameters.ml" 33 1278 1287
+type(
+  string list
+)
+ident(
+  def old "parameters.ml" 34 1349 1351 "parameters.ml" 34 1349 1397
+)
+"parameters.ml" 33 1278 1294 "parameters.ml" 33 1278 1306
+type(
+  (string, string list) Hashtbl.t -> string -> string list
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"parameters.ml" 33 1278 1307 "parameters.ml" 33 1278 1320
+type(
+  (string, string list) Hashtbl.t
+)
+ident(
+  ext_ref Debugger_config.load_path_for
+)
+"parameters.ml" 33 1278 1321 "parameters.ml" 33 1278 1324
+type(
+  string
+)
+ident(
+  int_ref mdl "parameters.ml" 32 1251 1268 "parameters.ml" 32 1251 1271
+)
+"parameters.ml" 33 1278 1294 "parameters.ml" 33 1278 1324
+call(
+  stack
+)
+type(
+  string list
+)
+"parameters.ml" 33 1278 1330 "parameters.ml" 33 1278 1339
+type(
+  exn
+)
+"parameters.ml" 33 1278 1343 "parameters.ml" 33 1278 1345
+type(
+  string list
+)
+"parameters.ml" 33 1278 1290 "parameters.ml" 33 1278 1345
+type(
+  string list
+)
+"parameters.ml" 34 1349 1351 "parameters.ml" 34 1349 1366
+type(
+  (string, string list) Hashtbl.t -> string -> string list -> unit
+)
+ident(
+  ext_ref Hashtbl.replace
+)
+"parameters.ml" 34 1349 1367 "parameters.ml" 34 1349 1380
+type(
+  (string, string list) Hashtbl.t
+)
+ident(
+  ext_ref Debugger_config.load_path_for
+)
+"parameters.ml" 34 1349 1381 "parameters.ml" 34 1349 1384
+type(
+  string
+)
+ident(
+  int_ref mdl "parameters.ml" 32 1251 1268 "parameters.ml" 32 1251 1271
+)
+"parameters.ml" 34 1349 1386 "parameters.ml" 34 1349 1389
+type(
+  string
+)
+ident(
+  int_ref dir "parameters.ml" 32 1251 1272 "parameters.ml" 32 1251 1275
+)
+"parameters.ml" 34 1349 1393 "parameters.ml" 34 1349 1396
+type(
+  string list
+)
+ident(
+  int_ref old "parameters.ml" 33 1278 1284 "parameters.ml" 33 1278 1287
+)
+"parameters.ml" 34 1349 1385 "parameters.ml" 34 1349 1397
+type(
+  string list
+)
+"parameters.ml" 34 1349 1351 "parameters.ml" 34 1349 1397
+call(
+  tail
+)
+type(
+  unit
+)
+"parameters.ml" 33 1278 1280 "parameters.ml" 34 1349 1397
+type(
+  unit
+)
+"parameters.ml" 37 1421 1425 "parameters.ml" 37 1421 1430
+type(
+  bool ref
+)
+ident(
+  def emacs "parameters.ml" 39 1444 1444 "parameters.ml" 1 0 -1
+)
+"parameters.ml" 37 1421 1433 "parameters.ml" 37 1421 1436
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"parameters.ml" 37 1421 1437 "parameters.ml" 37 1421 1442
+type(
+  bool
+)
+"parameters.ml" 37 1421 1433 "parameters.ml" 37 1421 1442
+type(
+  bool ref
+)
+"parameters.ml" 39 1444 1448 "parameters.ml" 39 1444 1464
+type(
+  bool ref
+)
+ident(
+  def machine_readable "parameters.ml" 39 1444 1476 "parameters.ml" 1 0 -1
+)
+"parameters.ml" 39 1444 1467 "parameters.ml" 39 1444 1470
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"parameters.ml" 39 1444 1471 "parameters.ml" 39 1444 1476
+type(
+  bool
+)
+"parameters.ml" 39 1444 1467 "parameters.ml" 39 1444 1476
+type(
+  bool ref
+)

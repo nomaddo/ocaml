@@ -1,0 +1,1830 @@
+"my_unix.ml" 49 1844 1848 "my_unix.ml" 49 1844 1859
+type(
+  bool
+)
+ident(
+  def is_degraded "my_unix.ml" 51 1868 1868 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 49 1844 1862 "my_unix.ml" 49 1844 1866
+type(
+  bool
+)
+"my_unix.ml" 51 1868 1872 "my_unix.ml" 51 1868 1876
+type(
+  string -> stats
+)
+ident(
+  def stat "my_unix.ml" 61 2102 2102 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 51 1868 1877 "my_unix.ml" 51 1868 1878
+type(
+  string
+)
+ident(
+  def f "my_unix.ml" 52 1881 1883 "my_unix.ml" 59 2035 2100
+)
+"my_unix.ml" 52 1881 1896 "my_unix.ml" 52 1881 1897
+type(
+  string
+)
+ident(
+  int_ref f "my_unix.ml" 51 1868 1877 "my_unix.ml" 51 1868 1878
+)
+"my_unix.ml" 54 1920 1929 "my_unix.ml" 54 1920 1944
+type(
+  string -> bool
+)
+ident(
+  ext_ref My_std.sys_file_exists
+)
+"my_unix.ml" 54 1920 1945 "my_unix.ml" 54 1920 1946
+type(
+  string
+)
+ident(
+  int_ref f "my_unix.ml" 51 1868 1877 "my_unix.ml" 51 1868 1878
+)
+"my_unix.ml" 54 1920 1929 "my_unix.ml" 54 1920 1946
+call(
+  stack
+)
+type(
+  bool
+)
+"my_unix.ml" 55 1952 1963 "my_unix.ml" 55 1952 1979
+type(
+  string -> bool
+)
+ident(
+  ext_ref Sys.is_directory
+)
+"my_unix.ml" 55 1952 1980 "my_unix.ml" 55 1952 1981
+type(
+  string
+)
+ident(
+  int_ref f "my_unix.ml" 51 1868 1877 "my_unix.ml" 51 1868 1878
+)
+"my_unix.ml" 55 1952 1963 "my_unix.ml" 55 1952 1981
+type(
+  bool
+)
+"my_unix.ml" 56 1987 1997 "my_unix.ml" 56 1987 2003
+type(
+  file_kind
+)
+"my_unix.ml" 58 2017 2027 "my_unix.ml" 58 2017 2034
+type(
+  file_kind
+)
+"my_unix.ml" 55 1952 1960 "my_unix.ml" 58 2017 2034
+type(
+  file_kind
+)
+"my_unix.ml" 59 2035 2050 "my_unix.ml" 59 2035 2051
+type(
+  char
+)
+"my_unix.ml" 59 2035 2054 "my_unix.ml" 59 2035 2069
+type(
+  ?bin:bool -> string -> (in_channel -> char) -> char
+)
+ident(
+  ext_ref My_std.with_input_file
+)
+"my_unix.ml" 59 2035 2070 "my_unix.ml" 59 2035 2071
+type(
+  string
+)
+ident(
+  int_ref f "my_unix.ml" 51 1868 1877 "my_unix.ml" 51 1868 1878
+)
+"my_unix.ml" 59 2035 2072 "my_unix.ml" 59 2035 2082
+type(
+  in_channel -> char
+)
+ident(
+  ext_ref Pervasives.input_char
+)
+"my_unix.ml" 59 2035 2054 "my_unix.ml" 59 2035 2082
+call(
+  stack
+)
+type(
+  char
+)
+"my_unix.ml" 59 2035 2093 "my_unix.ml" 59 2035 2098
+type(
+  bool
+)
+"my_unix.ml" 59 2035 2086 "my_unix.ml" 59 2035 2098
+type(
+  file_kind
+)
+"my_unix.ml" 59 2035 2046 "my_unix.ml" 59 2035 2098
+type(
+  file_kind
+)
+"my_unix.ml" 54 1920 1926 "my_unix.ml" 59 2035 2098
+type(
+  file_kind
+)
+"my_unix.ml" 52 1881 1883 "my_unix.ml" 59 2035 2100
+type(
+  stats
+)
+"my_unix.ml" 61 2102 2106 "my_unix.ml" 61 2102 2118
+type(
+  string -> (in_channel -> 'a) -> 'a
+)
+ident(
+  def run_and_open "my_unix.ml" 69 2370 2370 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 61 2102 2119 "my_unix.ml" 61 2102 2120
+type(
+  string
+)
+ident(
+  def s "my_unix.ml" 61 2102 2121 "my_unix.ml" 67 2363 2368
+)
+"my_unix.ml" 61 2102 2121 "my_unix.ml" 61 2102 2125
+type(
+  in_channel -> 'a
+)
+ident(
+  def kont "my_unix.ml" 62 2128 2130 "my_unix.ml" 67 2363 2368
+)
+"my_unix.ml" 62 2128 2130 "my_unix.ml" 62 2128 2144
+type(
+  string -> string -> (string -> 'a) -> 'a
+)
+ident(
+  ext_ref My_std.with_temp_file
+)
+"my_unix.ml" 62 2128 2145 "my_unix.ml" 62 2128 2157
+type(
+  string
+)
+"my_unix.ml" 62 2128 2158 "my_unix.ml" 62 2128 2163
+type(
+  string
+)
+"my_unix.ml" 62 2128 2174 "my_unix.ml" 62 2128 2177
+type(
+  string
+)
+ident(
+  def tmp "my_unix.ml" 63 2181 2185 "my_unix.ml" 66 2334 2362
+)
+"my_unix.ml" 63 2181 2189 "my_unix.ml" 63 2181 2190
+type(
+  string
+)
+ident(
+  def s "my_unix.ml" 64 2229 2233 "my_unix.ml" 66 2334 2362
+)
+"my_unix.ml" 63 2181 2193 "my_unix.ml" 63 2181 2207
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"my_unix.ml" 63 2181 2208 "my_unix.ml" 63 2181 2219
+type(
+  (string -> string -> string, unit, string) format
+)
+"my_unix.ml" 63 2181 2220 "my_unix.ml" 63 2181 2221
+type(
+  string
+)
+ident(
+  int_ref s "my_unix.ml" 61 2102 2119 "my_unix.ml" 61 2102 2120
+)
+"my_unix.ml" 63 2181 2222 "my_unix.ml" 63 2181 2225
+type(
+  string
+)
+ident(
+  int_ref tmp "my_unix.ml" 62 2128 2174 "my_unix.ml" 62 2128 2177
+)
+"my_unix.ml" 63 2181 2193 "my_unix.ml" 63 2181 2225
+call(
+  stack
+)
+type(
+  string
+)
+"my_unix.ml" 64 2229 2237 "my_unix.ml" 64 2229 2239
+type(
+  int
+)
+ident(
+  def st "my_unix.ml" 65 2259 2263 "my_unix.ml" 66 2334 2362
+)
+"my_unix.ml" 64 2229 2242 "my_unix.ml" 64 2229 2253
+type(
+  string -> int
+)
+ident(
+  ext_ref My_std.sys_command
+)
+"my_unix.ml" 64 2229 2254 "my_unix.ml" 64 2229 2255
+type(
+  string
+)
+ident(
+  int_ref s "my_unix.ml" 63 2181 2189 "my_unix.ml" 63 2181 2190
+)
+"my_unix.ml" 64 2229 2242 "my_unix.ml" 64 2229 2255
+call(
+  stack
+)
+type(
+  int
+)
+"my_unix.ml" 65 2259 2266 "my_unix.ml" 65 2259 2268
+type(
+  int
+)
+ident(
+  int_ref st "my_unix.ml" 64 2229 2237 "my_unix.ml" 64 2229 2239
+)
+"my_unix.ml" 65 2259 2269 "my_unix.ml" 65 2259 2271
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"my_unix.ml" 65 2259 2272 "my_unix.ml" 65 2259 2273
+type(
+  int
+)
+"my_unix.ml" 65 2259 2266 "my_unix.ml" 65 2259 2273
+type(
+  bool
+)
+"my_unix.ml" 65 2259 2279 "my_unix.ml" 65 2259 2287
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"my_unix.ml" 65 2259 2289 "my_unix.ml" 65 2259 2303
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"my_unix.ml" 65 2259 2304 "my_unix.ml" 65 2259 2329
+type(
+  (string -> string, unit, string) format
+)
+"my_unix.ml" 65 2259 2330 "my_unix.ml" 65 2259 2331
+type(
+  string
+)
+ident(
+  int_ref s "my_unix.ml" 63 2181 2189 "my_unix.ml" 63 2181 2190
+)
+"my_unix.ml" 65 2259 2288 "my_unix.ml" 65 2259 2332
+call(
+  stack
+)
+type(
+  string
+)
+"my_unix.ml" 65 2259 2279 "my_unix.ml" 65 2259 2332
+call(
+  stack
+)
+type(
+  unit
+)
+"my_unix.ml" 65 2259 2263 "my_unix.ml" 65 2259 2332
+type(
+  unit
+)
+"my_unix.ml" 66 2334 2338 "my_unix.ml" 66 2334 2353
+type(
+  ?bin:bool -> string -> (in_channel -> 'a) -> 'a
+)
+ident(
+  ext_ref My_std.with_input_file
+)
+"my_unix.ml" 66 2334 2354 "my_unix.ml" 66 2334 2357
+type(
+  string
+)
+ident(
+  int_ref tmp "my_unix.ml" 62 2128 2174 "my_unix.ml" 62 2128 2177
+)
+"my_unix.ml" 66 2334 2358 "my_unix.ml" 66 2334 2362
+type(
+  in_channel -> 'a
+)
+ident(
+  int_ref kont "my_unix.ml" 61 2102 2121 "my_unix.ml" 61 2102 2125
+)
+"my_unix.ml" 66 2334 2338 "my_unix.ml" 66 2334 2362
+call(
+  tail
+)
+type(
+  'a
+)
+"my_unix.ml" 65 2259 2263 "my_unix.ml" 66 2334 2362
+type(
+  'a
+)
+"my_unix.ml" 64 2229 2233 "my_unix.ml" 66 2334 2362
+type(
+  'a
+)
+"my_unix.ml" 63 2181 2185 "my_unix.ml" 66 2334 2362
+type(
+  'a
+)
+"my_unix.ml" 62 2128 2164 "my_unix.ml" 67 2363 2368
+type(
+  string -> 'a
+)
+"my_unix.ml" 62 2128 2130 "my_unix.ml" 67 2363 2368
+call(
+  tail
+)
+type(
+  'a
+)
+"my_unix.ml" 73 2459 2463 "my_unix.ml" 73 2459 2474
+type(
+  string -> string
+)
+ident(
+  def readlinkcmd "my_unix.ml" 83 2755 2755 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 74 2477 2483 "my_unix.ml" 74 2477 2488
+type(
+  (string, string) Hashtbl.t
+)
+ident(
+  def cache "my_unix.ml" 75 2512 2514 "my_unix.ml" 81 2744 2753
+)
+"my_unix.ml" 74 2477 2491 "my_unix.ml" 74 2477 2505
+type(
+  ?random:bool -> int -> (string, string) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"my_unix.ml" 74 2477 2506 "my_unix.ml" 74 2477 2508
+type(
+  int
+)
+"my_unix.ml" 74 2477 2491 "my_unix.ml" 74 2477 2508
+call(
+  stack
+)
+type(
+  (string, string) Hashtbl.t
+)
+"my_unix.ml" 75 2512 2518 "my_unix.ml" 75 2512 2519
+type(
+  string
+)
+ident(
+  def x "my_unix.ml" 76 2523 2527 "my_unix.ml" 81 2744 2753
+)
+"my_unix.ml" 76 2523 2531 "my_unix.ml" 76 2523 2543
+type(
+  (string, string) Hashtbl.t -> string -> string
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"my_unix.ml" 76 2523 2544 "my_unix.ml" 76 2523 2549
+type(
+  (string, string) Hashtbl.t
+)
+ident(
+  int_ref cache "my_unix.ml" 74 2477 2483 "my_unix.ml" 74 2477 2488
+)
+"my_unix.ml" 76 2523 2550 "my_unix.ml" 76 2523 2551
+type(
+  string
+)
+ident(
+  int_ref x "my_unix.ml" 75 2512 2518 "my_unix.ml" 75 2512 2519
+)
+"my_unix.ml" 76 2523 2531 "my_unix.ml" 76 2523 2551
+call(
+  stack
+)
+type(
+  string
+)
+"my_unix.ml" 77 2552 2561 "my_unix.ml" 77 2552 2570
+type(
+  exn
+)
+"my_unix.ml" 78 2574 2580 "my_unix.ml" 78 2574 2592
+type(
+  string -> (in_channel -> string) -> string
+)
+ident(
+  int_ref run_and_open "my_unix.ml" 61 2102 2106 "my_unix.ml" 61 2102 2118
+)
+"my_unix.ml" 78 2574 2594 "my_unix.ml" 78 2574 2608
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"my_unix.ml" 78 2574 2609 "my_unix.ml" 78 2574 2622
+type(
+  (string -> string, unit, string) format
+)
+"my_unix.ml" 78 2574 2624 "my_unix.ml" 78 2574 2638
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.quote
+)
+"my_unix.ml" 78 2574 2639 "my_unix.ml" 78 2574 2640
+type(
+  string
+)
+ident(
+  int_ref x "my_unix.ml" 75 2512 2518 "my_unix.ml" 75 2512 2519
+)
+"my_unix.ml" 78 2574 2623 "my_unix.ml" 78 2574 2641
+call(
+  stack
+)
+type(
+  string
+)
+"my_unix.ml" 78 2574 2593 "my_unix.ml" 78 2574 2642
+call(
+  stack
+)
+type(
+  string
+)
+"my_unix.ml" 78 2574 2653 "my_unix.ml" 78 2574 2655
+type(
+  in_channel
+)
+ident(
+  def ic "my_unix.ml" 79 2659 2667 "my_unix.ml" 80 2707 2743
+)
+"my_unix.ml" 79 2659 2671 "my_unix.ml" 79 2659 2672
+type(
+  string
+)
+ident(
+  def y "my_unix.ml" 80 2707 2715 "my_unix.ml" 80 2707 2743
+)
+"my_unix.ml" 79 2659 2675 "my_unix.ml" 79 2659 2687
+type(
+  string -> string
+)
+ident(
+  ext_ref My_std.String.chomp
+)
+"my_unix.ml" 79 2659 2689 "my_unix.ml" 79 2659 2699
+type(
+  in_channel -> string
+)
+ident(
+  ext_ref Pervasives.input_line
+)
+"my_unix.ml" 79 2659 2700 "my_unix.ml" 79 2659 2702
+type(
+  in_channel
+)
+ident(
+  int_ref ic "my_unix.ml" 78 2574 2653 "my_unix.ml" 78 2574 2655
+)
+"my_unix.ml" 79 2659 2688 "my_unix.ml" 79 2659 2703
+call(
+  stack
+)
+type(
+  string
+)
+"my_unix.ml" 79 2659 2675 "my_unix.ml" 79 2659 2703
+call(
+  stack
+)
+type(
+  string
+)
+"my_unix.ml" 80 2707 2715 "my_unix.ml" 80 2707 2730
+type(
+  (string, string) Hashtbl.t -> string -> string -> unit
+)
+ident(
+  ext_ref Hashtbl.replace
+)
+"my_unix.ml" 80 2707 2731 "my_unix.ml" 80 2707 2736
+type(
+  (string, string) Hashtbl.t
+)
+ident(
+  int_ref cache "my_unix.ml" 74 2477 2483 "my_unix.ml" 74 2477 2488
+)
+"my_unix.ml" 80 2707 2737 "my_unix.ml" 80 2707 2738
+type(
+  string
+)
+ident(
+  int_ref x "my_unix.ml" 75 2512 2518 "my_unix.ml" 75 2512 2519
+)
+"my_unix.ml" 80 2707 2739 "my_unix.ml" 80 2707 2740
+type(
+  string
+)
+ident(
+  int_ref y "my_unix.ml" 79 2659 2671 "my_unix.ml" 79 2659 2672
+)
+"my_unix.ml" 80 2707 2715 "my_unix.ml" 80 2707 2740
+call(
+  stack
+)
+type(
+  unit
+)
+"my_unix.ml" 80 2707 2742 "my_unix.ml" 80 2707 2743
+type(
+  string
+)
+ident(
+  int_ref y "my_unix.ml" 79 2659 2671 "my_unix.ml" 79 2659 2672
+)
+"my_unix.ml" 80 2707 2715 "my_unix.ml" 80 2707 2743
+type(
+  string
+)
+"my_unix.ml" 79 2659 2667 "my_unix.ml" 80 2707 2743
+type(
+  string
+)
+"my_unix.ml" 78 2574 2643 "my_unix.ml" 81 2744 2753
+type(
+  in_channel -> string
+)
+"my_unix.ml" 78 2574 2580 "my_unix.ml" 81 2744 2753
+call(
+  tail
+)
+type(
+  string
+)
+"my_unix.ml" 76 2523 2527 "my_unix.ml" 81 2744 2753
+type(
+  string
+)
+"my_unix.ml" 75 2512 2514 "my_unix.ml" 81 2744 2753
+type(
+  string -> string
+)
+"my_unix.ml" 74 2477 2479 "my_unix.ml" 81 2744 2753
+type(
+  string -> string
+)
+"my_unix.ml" 83 2755 2763 "my_unix.ml" 83 2755 2771
+type(
+  string -> string
+)
+ident(
+  def readlink "my_unix.ml" 83 2755 2755 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 83 2755 2772 "my_unix.ml" 83 2755 2773
+type(
+  string
+)
+ident(
+  def x "my_unix.ml" 84 2776 2778 "my_unix.ml" 89 2978 3003
+)
+"my_unix.ml" 84 2776 2781 "my_unix.ml" 84 2776 2796
+type(
+  string -> bool
+)
+ident(
+  ext_ref My_std.sys_file_exists
+)
+"my_unix.ml" 84 2776 2797 "my_unix.ml" 84 2776 2798
+type(
+  string
+)
+ident(
+  int_ref x "my_unix.ml" 83 2755 2772 "my_unix.ml" 83 2755 2773
+)
+"my_unix.ml" 84 2776 2781 "my_unix.ml" 84 2776 2798
+call(
+  stack
+)
+type(
+  bool
+)
+"my_unix.ml" 86 2812 2822 "my_unix.ml" 86 2812 2823
+type(
+  string
+)
+ident(
+  def y "my_unix.ml" 87 2843 2849 "my_unix.ml" 87 2843 2937
+)
+"my_unix.ml" 86 2812 2826 "my_unix.ml" 86 2812 2837
+type(
+  string -> string
+)
+ident(
+  int_ref readlinkcmd "my_unix.ml" 73 2459 2463 "my_unix.ml" 73 2459 2474
+)
+"my_unix.ml" 86 2812 2838 "my_unix.ml" 86 2812 2839
+type(
+  string
+)
+ident(
+  int_ref x "my_unix.ml" 83 2755 2772 "my_unix.ml" 83 2755 2773
+)
+"my_unix.ml" 86 2812 2826 "my_unix.ml" 86 2812 2839
+call(
+  stack
+)
+type(
+  string
+)
+"my_unix.ml" 87 2843 2853 "my_unix.ml" 87 2843 2858
+type(
+  string -> stats
+)
+ident(
+  int_ref lstat "my_unix.ml" 95 3097 3101 "my_unix.ml" 95 3097 3106
+)
+"my_unix.ml" 87 2843 2859 "my_unix.ml" 87 2843 2860
+type(
+  string
+)
+ident(
+  int_ref y "my_unix.ml" 86 2812 2822 "my_unix.ml" 86 2812 2823
+)
+"my_unix.ml" 87 2843 2852 "my_unix.ml" 87 2843 2861
+call(
+  stack
+)
+type(
+  stats
+)
+"my_unix.ml" 87 2843 2852 "my_unix.ml" 87 2843 2876
+type(
+  file_kind
+)
+"my_unix.ml" 87 2843 2877 "my_unix.ml" 87 2843 2878
+type(
+  file_kind -> file_kind -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"my_unix.ml" 87 2843 2879 "my_unix.ml" 87 2843 2885
+type(
+  file_kind
+)
+"my_unix.ml" 87 2843 2852 "my_unix.ml" 87 2843 2885
+type(
+  bool
+)
+"my_unix.ml" 87 2843 2891 "my_unix.ml" 87 2843 2896
+type(
+  exn -> string
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"my_unix.ml" 87 2843 2897 "my_unix.ml" 87 2843 2930
+type(
+  exn
+)
+"my_unix.ml" 87 2843 2891 "my_unix.ml" 87 2843 2930
+type(
+  string
+)
+"my_unix.ml" 87 2843 2936 "my_unix.ml" 87 2843 2937
+type(
+  string
+)
+ident(
+  int_ref y "my_unix.ml" 86 2812 2822 "my_unix.ml" 86 2812 2823
+)
+"my_unix.ml" 87 2843 2849 "my_unix.ml" 87 2843 2937
+type(
+  string
+)
+"my_unix.ml" 86 2812 2818 "my_unix.ml" 87 2843 2937
+type(
+  string
+)
+"my_unix.ml" 88 2938 2954 "my_unix.ml" 88 2938 2957
+type(
+  string
+)
+"my_unix.ml" 88 2938 2947 "my_unix.ml" 88 2938 2957
+type(
+  exn
+)
+"my_unix.ml" 88 2938 2961 "my_unix.ml" 88 2938 2966
+type(
+  exn -> string
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"my_unix.ml" 88 2938 2967 "my_unix.ml" 88 2938 2977
+type(
+  exn
+)
+"my_unix.ml" 88 2938 2961 "my_unix.ml" 88 2938 2977
+type(
+  string
+)
+"my_unix.ml" 85 2804 2808 "my_unix.ml" 88 2938 2977
+type(
+  string
+)
+"my_unix.ml" 89 2978 2985 "my_unix.ml" 89 2978 2990
+type(
+  exn -> string
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"my_unix.ml" 89 2978 2991 "my_unix.ml" 89 2978 3003
+type(
+  exn
+)
+"my_unix.ml" 89 2978 2985 "my_unix.ml" 89 2978 3003
+type(
+  string
+)
+"my_unix.ml" 84 2776 2778 "my_unix.ml" 89 2978 3003
+type(
+  string
+)
+"my_unix.ml" 91 3005 3009 "my_unix.ml" 91 3005 3016
+type(
+  string -> bool
+)
+ident(
+  def is_link "my_unix.ml" 83 2755 2755 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 91 3005 3017 "my_unix.ml" 91 3005 3018
+type(
+  string
+)
+ident(
+  def x "my_unix.ml" 92 3021 3023 "my_unix.ml" 93 3057 3095
+)
+"my_unix.ml" 92 3021 3027 "my_unix.ml" 92 3021 3033
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"my_unix.ml" 92 3021 3034 "my_unix.ml" 92 3021 3042
+type(
+  string -> string
+)
+ident(
+  int_ref readlink "my_unix.ml" 83 2755 2763 "my_unix.ml" 83 2755 2771
+)
+"my_unix.ml" 92 3021 3043 "my_unix.ml" 92 3021 3044
+type(
+  string
+)
+ident(
+  int_ref x "my_unix.ml" 91 3005 3017 "my_unix.ml" 91 3005 3018
+)
+"my_unix.ml" 92 3021 3033 "my_unix.ml" 92 3021 3045
+call(
+  stack
+)
+type(
+  string
+)
+"my_unix.ml" 92 3021 3027 "my_unix.ml" 92 3021 3045
+type(
+  unit
+)
+"my_unix.ml" 92 3021 3047 "my_unix.ml" 92 3021 3051
+type(
+  bool
+)
+"my_unix.ml" 92 3021 3027 "my_unix.ml" 92 3021 3051
+type(
+  bool
+)
+"my_unix.ml" 93 3057 3061 "my_unix.ml" 93 3057 3073
+type(
+  exn
+)
+"my_unix.ml" 93 3057 3076 "my_unix.ml" 93 3057 3086
+type(
+  exn
+)
+"my_unix.ml" 93 3057 3061 "my_unix.ml" 93 3057 3086
+type(
+  exn
+)
+"my_unix.ml" 93 3057 3090 "my_unix.ml" 93 3057 3095
+type(
+  bool
+)
+"my_unix.ml" 92 3021 3023 "my_unix.ml" 93 3057 3095
+type(
+  bool
+)
+"my_unix.ml" 95 3097 3101 "my_unix.ml" 95 3097 3106
+type(
+  string -> stats
+)
+ident(
+  def lstat "my_unix.ml" 83 2755 2755 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 95 3097 3107 "my_unix.ml" 95 3097 3108
+type(
+  string
+)
+ident(
+  def x "my_unix.ml" 96 3111 3113 "my_unix.ml" 96 3111 3185
+)
+"my_unix.ml" 96 3111 3116 "my_unix.ml" 96 3111 3123
+type(
+  string -> bool
+)
+ident(
+  int_ref is_link "my_unix.ml" 91 3005 3009 "my_unix.ml" 91 3005 3016
+)
+"my_unix.ml" 96 3111 3124 "my_unix.ml" 96 3111 3125
+type(
+  string
+)
+ident(
+  int_ref x "my_unix.ml" 95 3097 3107 "my_unix.ml" 95 3097 3108
+)
+"my_unix.ml" 96 3111 3116 "my_unix.ml" 96 3111 3125
+call(
+  stack
+)
+type(
+  bool
+)
+"my_unix.ml" 96 3111 3144 "my_unix.ml" 96 3111 3145
+type(
+  string
+)
+ident(
+  int_ref x "my_unix.ml" 95 3097 3107 "my_unix.ml" 95 3097 3108
+)
+"my_unix.ml" 96 3111 3164 "my_unix.ml" 96 3111 3171
+type(
+  file_kind
+)
+"my_unix.ml" 96 3111 3131 "my_unix.ml" 96 3111 3173
+type(
+  stats
+)
+"my_unix.ml" 96 3111 3179 "my_unix.ml" 96 3111 3183
+type(
+  string -> stats
+)
+ident(
+  int_ref stat "my_unix.ml" 51 1868 1872 "my_unix.ml" 51 1868 1876
+)
+"my_unix.ml" 96 3111 3184 "my_unix.ml" 96 3111 3185
+type(
+  string
+)
+ident(
+  int_ref x "my_unix.ml" 95 3097 3107 "my_unix.ml" 95 3097 3108
+)
+"my_unix.ml" 96 3111 3179 "my_unix.ml" 96 3111 3185
+call(
+  tail
+)
+type(
+  stats
+)
+"my_unix.ml" 96 3111 3113 "my_unix.ml" 96 3111 3185
+type(
+  stats
+)
+"my_unix.ml" 98 3187 3191 "my_unix.ml" 98 3187 3197
+type(
+  implem
+)
+ident(
+  def implem "my_unix.ml" 116 3692 3692 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 100 3204 3222 "my_unix.ml" 100 3204 3226
+type(
+  bool
+)
+"my_unix.ml" 102 3229 3240 "my_unix.ml" 102 3229 3244
+type(
+  string -> stats
+)
+ident(
+  int_ref stat "my_unix.ml" 51 1868 1872 "my_unix.ml" 51 1868 1876
+)
+"my_unix.ml" 103 3246 3258 "my_unix.ml" 103 3246 3263
+type(
+  string -> stats
+)
+ident(
+  int_ref lstat "my_unix.ml" 95 3097 3101 "my_unix.ml" 95 3097 3106
+)
+"my_unix.ml" 104 3265 3280 "my_unix.ml" 104 3265 3288
+type(
+  string -> string
+)
+ident(
+  int_ref readlink "my_unix.ml" 83 2755 2763 "my_unix.ml" 83 2755 2771
+)
+"my_unix.ml" 105 3290 3304 "my_unix.ml" 105 3290 3311
+type(
+  string -> bool
+)
+ident(
+  int_ref is_link "my_unix.ml" 91 3005 3009 "my_unix.ml" 91 3005 3016
+)
+"my_unix.ml" 106 3313 3332 "my_unix.ml" 106 3313 3344
+type(
+  string -> (in_channel -> 'a) -> 'a
+)
+ident(
+  int_ref run_and_open "my_unix.ml" 61 2102 2106 "my_unix.ml" 61 2102 2118
+)
+"my_unix.ml" 109 3444 3463 "my_unix.ml" 109 3444 3470
+type(
+  (unit -> unit) -> unit
+)
+ident(
+  ext_ref Pervasives.at_exit
+)
+"my_unix.ml" 110 3472 3496 "my_unix.ml" 110 3472 3497
+type(
+  Format.formatter
+)
+"my_unix.ml" 110 3472 3501 "my_unix.ml" 110 3472 3506
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"my_unix.ml" 110 3472 3491 "my_unix.ml" 110 3472 3507
+type(
+  Format.formatter -> exn -> unit
+)
+"my_unix.ml" 111 3509 3533 "my_unix.ml" 111 3509 3535
+type(
+  unit
+)
+"my_unix.ml" 111 3509 3546 "my_unix.ml" 111 3509 3551
+type(
+  bool
+)
+"my_unix.ml" 111 3509 3539 "my_unix.ml" 111 3509 3551
+type(
+  float
+)
+"my_unix.ml" 111 3509 3528 "my_unix.ml" 111 3509 3552
+type(
+  unit -> float
+)
+"my_unix.ml" 112 3554 3579 "my_unix.ml" 112 3554 3581
+type(
+  unit
+)
+"my_unix.ml" 112 3554 3585 "my_unix.ml" 112 3554 3590
+type(
+  bool
+)
+"my_unix.ml" 112 3554 3574 "my_unix.ml" 112 3554 3591
+type(
+  unit -> bool
+)
+"my_unix.ml" 113 3593 3628 "my_unix.ml" 113 3593 3629
+type(
+  int option
+)
+"my_unix.ml" 113 3593 3640 "my_unix.ml" 113 3593 3641
+type(
+  (unit -> unit) option
+)
+"my_unix.ml" 113 3593 3652 "my_unix.ml" 113 3593 3653
+type(
+  float option
+)
+"my_unix.ml" 113 3593 3665 "my_unix.ml" 113 3593 3666
+type(
+  ((out_channel -> unit) -> unit) option
+)
+"my_unix.ml" 113 3593 3668 "my_unix.ml" 113 3593 3669
+type(
+  (unit -> string) list list
+)
+"my_unix.ml" 113 3593 3680 "my_unix.ml" 113 3593 3685
+type(
+  bool
+)
+"my_unix.ml" 113 3593 3673 "my_unix.ml" 113 3593 3685
+type(
+  (bool list * exn) option
+)
+"my_unix.ml" 113 3593 3612 "my_unix.ml" 113 3593 3686
+type(
+  ?max_jobs:int ->
+  ?ticker:(unit -> unit) ->
+  ?period:float ->
+  ?display:((out_channel -> unit) -> unit) ->
+  (unit -> string) list list -> (bool list * exn) option
+)
+"my_unix.ml" 99 3200 3202 "my_unix.ml" 114 3687 3690
+type(
+  implem
+)
+"my_unix.ml" 116 3692 3696 "my_unix.ml" 116 3692 3707
+type(
+  bool lazy_t
+)
+ident(
+  def is_degraded "my_unix.ml" 117 3734 3734 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 116 3692 3715 "my_unix.ml" 116 3692 3721
+type(
+  implem
+)
+ident(
+  int_ref implem "my_unix.ml" 98 3187 3191 "my_unix.ml" 98 3187 3197
+)
+"my_unix.ml" 116 3692 3715 "my_unix.ml" 116 3692 3733
+type(
+  bool
+)
+"my_unix.ml" 116 3692 3710 "my_unix.ml" 116 3692 3733
+type(
+  bool lazy_t
+)
+"my_unix.ml" 117 3734 3738 "my_unix.ml" 117 3734 3742
+type(
+  string -> stats
+)
+ident(
+  def stat "my_unix.ml" 118 3761 3761 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 117 3734 3743 "my_unix.ml" 117 3734 3744
+type(
+  string
+)
+ident(
+  def x "my_unix.ml" 117 3734 3747 "my_unix.ml" 117 3734 3760
+)
+"my_unix.ml" 117 3734 3747 "my_unix.ml" 117 3734 3753
+type(
+  implem
+)
+ident(
+  int_ref implem "my_unix.ml" 98 3187 3191 "my_unix.ml" 98 3187 3197
+)
+"my_unix.ml" 117 3734 3747 "my_unix.ml" 117 3734 3758
+type(
+  string -> stats
+)
+"my_unix.ml" 117 3734 3759 "my_unix.ml" 117 3734 3760
+type(
+  string
+)
+ident(
+  int_ref x "my_unix.ml" 117 3734 3743 "my_unix.ml" 117 3734 3744
+)
+"my_unix.ml" 117 3734 3747 "my_unix.ml" 117 3734 3760
+call(
+  tail
+)
+type(
+  stats
+)
+"my_unix.ml" 118 3761 3765 "my_unix.ml" 118 3761 3770
+type(
+  string -> stats
+)
+ident(
+  def lstat "my_unix.ml" 119 3790 3790 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 118 3761 3771 "my_unix.ml" 118 3761 3772
+type(
+  string
+)
+ident(
+  def x "my_unix.ml" 118 3761 3775 "my_unix.ml" 118 3761 3789
+)
+"my_unix.ml" 118 3761 3775 "my_unix.ml" 118 3761 3781
+type(
+  implem
+)
+ident(
+  int_ref implem "my_unix.ml" 98 3187 3191 "my_unix.ml" 98 3187 3197
+)
+"my_unix.ml" 118 3761 3775 "my_unix.ml" 118 3761 3787
+type(
+  string -> stats
+)
+"my_unix.ml" 118 3761 3788 "my_unix.ml" 118 3761 3789
+type(
+  string
+)
+ident(
+  int_ref x "my_unix.ml" 118 3761 3771 "my_unix.ml" 118 3761 3772
+)
+"my_unix.ml" 118 3761 3775 "my_unix.ml" 118 3761 3789
+call(
+  tail
+)
+type(
+  stats
+)
+"my_unix.ml" 119 3790 3794 "my_unix.ml" 119 3790 3802
+type(
+  string -> string
+)
+ident(
+  def readlink "my_unix.ml" 120 3825 3825 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 119 3790 3803 "my_unix.ml" 119 3790 3804
+type(
+  string
+)
+ident(
+  def x "my_unix.ml" 119 3790 3807 "my_unix.ml" 119 3790 3824
+)
+"my_unix.ml" 119 3790 3807 "my_unix.ml" 119 3790 3813
+type(
+  implem
+)
+ident(
+  int_ref implem "my_unix.ml" 98 3187 3191 "my_unix.ml" 98 3187 3197
+)
+"my_unix.ml" 119 3790 3807 "my_unix.ml" 119 3790 3822
+type(
+  string -> string
+)
+"my_unix.ml" 119 3790 3823 "my_unix.ml" 119 3790 3824
+type(
+  string
+)
+ident(
+  int_ref x "my_unix.ml" 119 3790 3803 "my_unix.ml" 119 3790 3804
+)
+"my_unix.ml" 119 3790 3807 "my_unix.ml" 119 3790 3824
+call(
+  tail
+)
+type(
+  string
+)
+"my_unix.ml" 120 3825 3829 "my_unix.ml" 120 3825 3836
+type(
+  string -> bool
+)
+ident(
+  def is_link "my_unix.ml" 121 3858 3858 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 120 3825 3837 "my_unix.ml" 120 3825 3838
+type(
+  string
+)
+ident(
+  def x "my_unix.ml" 120 3825 3841 "my_unix.ml" 120 3825 3857
+)
+"my_unix.ml" 120 3825 3841 "my_unix.ml" 120 3825 3847
+type(
+  implem
+)
+ident(
+  int_ref implem "my_unix.ml" 98 3187 3191 "my_unix.ml" 98 3187 3197
+)
+"my_unix.ml" 120 3825 3841 "my_unix.ml" 120 3825 3855
+type(
+  string -> bool
+)
+"my_unix.ml" 120 3825 3856 "my_unix.ml" 120 3825 3857
+type(
+  string
+)
+ident(
+  int_ref x "my_unix.ml" 120 3825 3837 "my_unix.ml" 120 3825 3838
+)
+"my_unix.ml" 120 3825 3841 "my_unix.ml" 120 3825 3857
+call(
+  tail
+)
+type(
+  bool
+)
+"my_unix.ml" 121 3858 3862 "my_unix.ml" 121 3858 3874
+type(
+  string -> (in_channel -> 'a) -> 'a
+)
+ident(
+  def run_and_open "my_unix.ml" 122 3901 3901 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 121 3858 3875 "my_unix.ml" 121 3858 3876
+type(
+  string
+)
+ident(
+  def x "my_unix.ml" 121 3858 3879 "my_unix.ml" 121 3858 3900
+)
+"my_unix.ml" 121 3858 3879 "my_unix.ml" 121 3858 3885
+type(
+  implem
+)
+ident(
+  int_ref implem "my_unix.ml" 98 3187 3191 "my_unix.ml" 98 3187 3197
+)
+"my_unix.ml" 121 3858 3879 "my_unix.ml" 121 3858 3898
+type(
+  string -> (in_channel -> 'a) -> 'a
+)
+"my_unix.ml" 121 3858 3899 "my_unix.ml" 121 3858 3900
+type(
+  string
+)
+ident(
+  int_ref x "my_unix.ml" 121 3858 3875 "my_unix.ml" 121 3858 3876
+)
+"my_unix.ml" 121 3858 3879 "my_unix.ml" 121 3858 3900
+call(
+  tail
+)
+type(
+  (in_channel -> 'a) -> 'a
+)
+"my_unix.ml" 122 3901 3905 "my_unix.ml" 122 3901 3917
+type(
+  (unit -> unit) -> unit
+)
+ident(
+  def at_exit_once "my_unix.ml" 123 3944 3944 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 122 3901 3918 "my_unix.ml" 122 3901 3919
+type(
+  unit -> unit
+)
+ident(
+  def x "my_unix.ml" 122 3901 3922 "my_unix.ml" 122 3901 3943
+)
+"my_unix.ml" 122 3901 3922 "my_unix.ml" 122 3901 3928
+type(
+  implem
+)
+ident(
+  int_ref implem "my_unix.ml" 98 3187 3191 "my_unix.ml" 98 3187 3197
+)
+"my_unix.ml" 122 3901 3922 "my_unix.ml" 122 3901 3941
+type(
+  (unit -> unit) -> unit
+)
+"my_unix.ml" 122 3901 3942 "my_unix.ml" 122 3901 3943
+type(
+  unit -> unit
+)
+ident(
+  int_ref x "my_unix.ml" 122 3901 3918 "my_unix.ml" 122 3901 3919
+)
+"my_unix.ml" 122 3901 3922 "my_unix.ml" 122 3901 3943
+call(
+  tail
+)
+type(
+  unit
+)
+"my_unix.ml" 123 3944 3948 "my_unix.ml" 123 3944 3960
+type(
+  Format.formatter -> exn -> unit
+)
+ident(
+  def report_error "my_unix.ml" 124 3987 3987 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 123 3944 3961 "my_unix.ml" 123 3944 3962
+type(
+  Format.formatter
+)
+ident(
+  def x "my_unix.ml" 123 3944 3965 "my_unix.ml" 123 3944 3986
+)
+"my_unix.ml" 123 3944 3965 "my_unix.ml" 123 3944 3971
+type(
+  implem
+)
+ident(
+  int_ref implem "my_unix.ml" 98 3187 3191 "my_unix.ml" 98 3187 3197
+)
+"my_unix.ml" 123 3944 3965 "my_unix.ml" 123 3944 3984
+type(
+  Format.formatter -> exn -> unit
+)
+"my_unix.ml" 123 3944 3985 "my_unix.ml" 123 3944 3986
+type(
+  Format.formatter
+)
+ident(
+  int_ref x "my_unix.ml" 123 3944 3961 "my_unix.ml" 123 3944 3962
+)
+"my_unix.ml" 123 3944 3965 "my_unix.ml" 123 3944 3986
+call(
+  tail
+)
+type(
+  exn -> unit
+)
+"my_unix.ml" 124 3987 3991 "my_unix.ml" 124 3987 4003
+type(
+  unit -> float
+)
+ident(
+  def gettimeofday "my_unix.ml" 125 4030 4030 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 124 3987 4004 "my_unix.ml" 124 3987 4005
+type(
+  unit
+)
+ident(
+  def x "my_unix.ml" 124 3987 4008 "my_unix.ml" 124 3987 4029
+)
+"my_unix.ml" 124 3987 4008 "my_unix.ml" 124 3987 4014
+type(
+  implem
+)
+ident(
+  int_ref implem "my_unix.ml" 98 3187 3191 "my_unix.ml" 98 3187 3197
+)
+"my_unix.ml" 124 3987 4008 "my_unix.ml" 124 3987 4027
+type(
+  unit -> float
+)
+"my_unix.ml" 124 3987 4028 "my_unix.ml" 124 3987 4029
+type(
+  unit
+)
+ident(
+  int_ref x "my_unix.ml" 124 3987 4004 "my_unix.ml" 124 3987 4005
+)
+"my_unix.ml" 124 3987 4008 "my_unix.ml" 124 3987 4029
+call(
+  tail
+)
+type(
+  float
+)
+"my_unix.ml" 125 4030 4034 "my_unix.ml" 125 4030 4047
+type(
+  unit -> bool
+)
+ident(
+  def stdout_isatty "my_unix.ml" 126 4075 4075 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 125 4030 4048 "my_unix.ml" 125 4030 4049
+type(
+  unit
+)
+ident(
+  def x "my_unix.ml" 125 4030 4052 "my_unix.ml" 125 4030 4074
+)
+"my_unix.ml" 125 4030 4052 "my_unix.ml" 125 4030 4058
+type(
+  implem
+)
+ident(
+  int_ref implem "my_unix.ml" 98 3187 3191 "my_unix.ml" 98 3187 3197
+)
+"my_unix.ml" 125 4030 4052 "my_unix.ml" 125 4030 4072
+type(
+  unit -> bool
+)
+"my_unix.ml" 125 4030 4073 "my_unix.ml" 125 4030 4074
+type(
+  unit
+)
+ident(
+  int_ref x "my_unix.ml" 125 4030 4048 "my_unix.ml" 125 4030 4049
+)
+"my_unix.ml" 125 4030 4052 "my_unix.ml" 125 4030 4074
+call(
+  tail
+)
+type(
+  bool
+)
+"my_unix.ml" 126 4075 4079 "my_unix.ml" 126 4075 4091
+type(
+  ?max_jobs:int ->
+  ?ticker:(unit -> unit) ->
+  ?period:float ->
+  ?display:((out_channel -> unit) -> unit) ->
+  (unit -> string) list list -> (bool list * exn) option
+)
+ident(
+  def execute_many "my_unix.ml" 128 4135 4135 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 126 4075 4093 "my_unix.ml" 126 4075 4101
+type(
+  int option
+)
+ident(
+  def max_jobs "my_unix.ml" 126 4075 4104 "my_unix.ml" 126 4075 4133
+)
+"my_unix.ml" 126 4075 4104 "my_unix.ml" 126 4075 4110
+type(
+  implem
+)
+ident(
+  int_ref implem "my_unix.ml" 98 3187 3191 "my_unix.ml" 98 3187 3197
+)
+"my_unix.ml" 126 4075 4104 "my_unix.ml" 126 4075 4123
+type(
+  ?max_jobs:int ->
+  ?ticker:(unit -> unit) ->
+  ?period:float ->
+  ?display:((out_channel -> unit) -> unit) ->
+  (unit -> string) list list -> (bool list * exn) option
+)
+"my_unix.ml" 126 4075 4125 "my_unix.ml" 126 4075 4133
+type(
+  int option
+)
+ident(
+  int_ref max_jobs "my_unix.ml" 126 4075 4093 "my_unix.ml" 126 4075 4101
+)
+"my_unix.ml" 126 4075 4104 "my_unix.ml" 126 4075 4133
+call(
+  tail
+)
+type(
+  ?ticker:(unit -> unit) ->
+  ?period:float ->
+  ?display:((out_channel -> unit) -> unit) ->
+  (unit -> string) list list -> (bool list * exn) option
+)
+"my_unix.ml" 128 4135 4139 "my_unix.ml" 128 4135 4151
+type(
+  string -> string
+)
+ident(
+  def run_and_read "my_unix.ml" 140 4512 4517 "my_unix.ml" 1 0 -1
+)
+"my_unix.ml" 128 4135 4152 "my_unix.ml" 128 4135 4155
+type(
+  string
+)
+ident(
+  def cmd "my_unix.ml" 129 4158 4160 "my_unix.ml" 140 4512 4517
+)
+"my_unix.ml" 129 4158 4164 "my_unix.ml" 129 4158 4170
+type(
+  int
+)
+ident(
+  def bufsiz "my_unix.ml" 130 4181 4183 "my_unix.ml" 140 4512 4517
+)
+"my_unix.ml" 129 4158 4173 "my_unix.ml" 129 4158 4177
+type(
+  int
+)
+"my_unix.ml" 130 4181 4187 "my_unix.ml" 130 4181 4190
+type(
+  bytes
+)
+ident(
+  def buf "my_unix.ml" 131 4216 4218 "my_unix.ml" 140 4512 4517
+)
+"my_unix.ml" 130 4181 4193 "my_unix.ml" 130 4181 4205
+type(
+  int -> bytes
+)
+ident(
+  ext_ref Bytes.create
+)
+"my_unix.ml" 130 4181 4206 "my_unix.ml" 130 4181 4212
+type(
+  int
+)
+ident(
+  int_ref bufsiz "my_unix.ml" 129 4158 4164 "my_unix.ml" 129 4158 4170
+)
+"my_unix.ml" 130 4181 4193 "my_unix.ml" 130 4181 4212
+type(
+  bytes
+)
+"my_unix.ml" 131 4216 4222 "my_unix.ml" 131 4216 4230
+type(
+  Buffer.t
+)
+ident(
+  def totalbuf "my_unix.ml" 132 4255 4257 "my_unix.ml" 140 4512 4517
+)
+"my_unix.ml" 131 4216 4233 "my_unix.ml" 131 4216 4246
+type(
+  int -> Buffer.t
+)
+ident(
+  ext_ref Buffer.create
+)
+"my_unix.ml" 131 4216 4247 "my_unix.ml" 131 4216 4251
+type(
+  int
+)
+"my_unix.ml" 131 4216 4233 "my_unix.ml" 131 4216 4251
+call(
+  stack
+)
+type(
+  Buffer.t
+)
+"my_unix.ml" 132 4255 4257 "my_unix.ml" 132 4255 4263
+type(
+  implem
+)
+ident(
+  int_ref implem "my_unix.ml" 98 3187 3191 "my_unix.ml" 98 3187 3197
+)
+"my_unix.ml" 132 4255 4257 "my_unix.ml" 132 4255 4276
+type(
+  string -> (in_channel -> string) -> string
+)
+"my_unix.ml" 132 4255 4277 "my_unix.ml" 132 4255 4280
+type(
+  string
+)
+ident(
+  int_ref cmd "my_unix.ml" 128 4135 4152 "my_unix.ml" 128 4135 4155
+)
+"my_unix.ml" 132 4255 4291 "my_unix.ml" 132 4255 4293
+type(
+  in_channel
+)
+ident(
+  def ic "my_unix.ml" 133 4297 4301 "my_unix.ml" 139 4472 4511
+)
+"my_unix.ml" 133 4297 4309 "my_unix.ml" 133 4297 4313
+type(
+  int -> unit
+)
+ident(
+  def loop "my_unix.ml" 133 4297 4301 "my_unix.ml" 139 4472 4511
+)
+"my_unix.ml" 133 4297 4314 "my_unix.ml" 133 4297 4317
+type(
+  int
+)
+ident(
+  def pos "my_unix.ml" 134 4320 4326 "my_unix.ml" 138 4462 4471
+)
+"my_unix.ml" 134 4320 4330 "my_unix.ml" 134 4320 4333
+type(
+  int
+)
+ident(
+  def len "my_unix.ml" 135 4361 4367 "my_unix.ml" 138 4462 4471
+)
+"my_unix.ml" 134 4320 4336 "my_unix.ml" 134 4320 4341
+type(
+  in_channel -> bytes -> int -> int -> int
+)
+ident(
+  ext_ref Pervasives.input
+)
+"my_unix.ml" 134 4320 4342 "my_unix.ml" 134 4320 4344
+type(
+  in_channel
+)
+ident(
+  int_ref ic "my_unix.ml" 132 4255 4291 "my_unix.ml" 132 4255 4293
+)
+"my_unix.ml" 134 4320 4345 "my_unix.ml" 134 4320 4348
+type(
+  bytes
+)
+ident(
+  int_ref buf "my_unix.ml" 130 4181 4187 "my_unix.ml" 130 4181 4190
+)
+"my_unix.ml" 134 4320 4349 "my_unix.ml" 134 4320 4350
+type(
+  int
+)
+"my_unix.ml" 134 4320 4351 "my_unix.ml" 134 4320 4357
+type(
+  int
+)
+ident(
+  int_ref bufsiz "my_unix.ml" 129 4158 4164 "my_unix.ml" 129 4158 4170
+)
+"my_unix.ml" 134 4320 4336 "my_unix.ml" 134 4320 4357
+call(
+  stack
+)
+type(
+  int
+)
+"my_unix.ml" 135 4361 4370 "my_unix.ml" 135 4361 4373
+type(
+  int
+)
+ident(
+  int_ref len "my_unix.ml" 134 4320 4330 "my_unix.ml" 134 4320 4333
+)
+"my_unix.ml" 135 4361 4374 "my_unix.ml" 135 4361 4375
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"my_unix.ml" 135 4361 4376 "my_unix.ml" 135 4361 4377
+type(
+  int
+)
+"my_unix.ml" 135 4361 4370 "my_unix.ml" 135 4361 4377
+type(
+  bool
+)
+"my_unix.ml" 136 4389 4397 "my_unix.ml" 136 4389 4416
+type(
+  Buffer.t -> bytes -> int -> int -> unit
+)
+ident(
+  ext_ref Buffer.add_subbytes
+)
+"my_unix.ml" 136 4389 4417 "my_unix.ml" 136 4389 4425
+type(
+  Buffer.t
+)
+ident(
+  int_ref totalbuf "my_unix.ml" 131 4216 4222 "my_unix.ml" 131 4216 4230
+)
+"my_unix.ml" 136 4389 4426 "my_unix.ml" 136 4389 4429
+type(
+  bytes
+)
+ident(
+  int_ref buf "my_unix.ml" 130 4181 4187 "my_unix.ml" 130 4181 4190
+)
+"my_unix.ml" 136 4389 4430 "my_unix.ml" 136 4389 4431
+type(
+  int
+)
+"my_unix.ml" 136 4389 4432 "my_unix.ml" 136 4389 4435
+type(
+  int
+)
+ident(
+  int_ref len "my_unix.ml" 134 4320 4330 "my_unix.ml" 134 4320 4333
+)
+"my_unix.ml" 136 4389 4397 "my_unix.ml" 136 4389 4435
+call(
+  stack
+)
+type(
+  unit
+)
+"my_unix.ml" 137 4437 4445 "my_unix.ml" 137 4437 4449
+type(
+  int -> unit
+)
+ident(
+  int_ref loop "my_unix.ml" 133 4297 4309 "my_unix.ml" 133 4297 4313
+)
+"my_unix.ml" 137 4437 4451 "my_unix.ml" 137 4437 4454
+type(
+  int
+)
+ident(
+  int_ref pos "my_unix.ml" 133 4297 4314 "my_unix.ml" 133 4297 4317
+)
+"my_unix.ml" 137 4437 4455 "my_unix.ml" 137 4437 4456
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"my_unix.ml" 137 4437 4457 "my_unix.ml" 137 4437 4460
+type(
+  int
+)
+ident(
+  int_ref len "my_unix.ml" 134 4320 4330 "my_unix.ml" 134 4320 4333
+)
+"my_unix.ml" 137 4437 4450 "my_unix.ml" 137 4437 4461
+type(
+  int
+)
+"my_unix.ml" 137 4437 4445 "my_unix.ml" 137 4437 4461
+call(
+  tail
+)
+type(
+  unit
+)
+"my_unix.ml" 135 4361 4383 "my_unix.ml" 138 4462 4471
+type(
+  unit
+)
+"my_unix.ml" 135 4361 4367 "my_unix.ml" 138 4462 4471
+type(
+  unit
+)
+"my_unix.ml" 134 4320 4326 "my_unix.ml" 138 4462 4471
+type(
+  unit
+)
+"my_unix.ml" 139 4472 4479 "my_unix.ml" 139 4472 4483
+type(
+  int -> unit
+)
+ident(
+  int_ref loop "my_unix.ml" 133 4297 4309 "my_unix.ml" 133 4297 4313
+)
+"my_unix.ml" 139 4472 4484 "my_unix.ml" 139 4472 4485
+type(
+  int
+)
+"my_unix.ml" 139 4472 4479 "my_unix.ml" 139 4472 4485
+call(
+  stack
+)
+type(
+  unit
+)
+"my_unix.ml" 139 4472 4487 "my_unix.ml" 139 4472 4502
+type(
+  Buffer.t -> string
+)
+ident(
+  ext_ref Buffer.contents
+)
+"my_unix.ml" 139 4472 4503 "my_unix.ml" 139 4472 4511
+type(
+  Buffer.t
+)
+ident(
+  int_ref totalbuf "my_unix.ml" 131 4216 4222 "my_unix.ml" 131 4216 4230
+)
+"my_unix.ml" 139 4472 4487 "my_unix.ml" 139 4472 4511
+call(
+  tail
+)
+type(
+  string
+)
+"my_unix.ml" 139 4472 4479 "my_unix.ml" 139 4472 4511
+type(
+  string
+)
+"my_unix.ml" 133 4297 4301 "my_unix.ml" 139 4472 4511
+type(
+  string
+)
+"my_unix.ml" 132 4255 4281 "my_unix.ml" 140 4512 4517
+type(
+  in_channel -> string
+)
+"my_unix.ml" 132 4255 4257 "my_unix.ml" 140 4512 4517
+call(
+  tail
+)
+type(
+  string
+)
+"my_unix.ml" 131 4216 4218 "my_unix.ml" 140 4512 4517
+type(
+  string
+)
+"my_unix.ml" 130 4181 4183 "my_unix.ml" 140 4512 4517
+type(
+  string
+)
+"my_unix.ml" 129 4158 4160 "my_unix.ml" 140 4512 4517
+type(
+  string
+)

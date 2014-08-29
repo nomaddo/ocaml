@@ -1,0 +1,289 @@
+"graphicsX11.ml" 21 1064 1068 "graphicsX11.ml" 21 1064 1078
+type(
+  (window_id, unit) Hashtbl.t
+)
+ident(
+  def subwindows "graphicsX11.ml" 23 1100 1100 "graphicsX11.ml" 1 0 -1
+)
+"graphicsX11.ml" 21 1064 1081 "graphicsX11.ml" 21 1064 1095
+type(
+  ?random:bool -> int -> (window_id, unit) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"graphicsX11.ml" 21 1064 1096 "graphicsX11.ml" 21 1064 1098
+type(
+  int
+)
+"graphicsX11.ml" 21 1064 1081 "graphicsX11.ml" 21 1064 1098
+call(
+  stack
+)
+type(
+  (window_id, unit) Hashtbl.t
+)
+"graphicsX11.ml" 28 1273 1277 "graphicsX11.ml" 28 1273 1291
+type(
+  x:int -> y:int -> width:int -> height:int -> window_id
+)
+ident(
+  def open_subwindow "graphicsX11.ml" 34 1405 1405 "graphicsX11.ml" 1 0 -1
+)
+"graphicsX11.ml" 28 1273 1293 "graphicsX11.ml" 28 1273 1294
+type(
+  int
+)
+ident(
+  def x "graphicsX11.ml" 28 1273 1295 "graphicsX11.ml" 31 1395 1400
+)
+"graphicsX11.ml" 28 1273 1296 "graphicsX11.ml" 28 1273 1297
+type(
+  int
+)
+ident(
+  def y "graphicsX11.ml" 28 1273 1298 "graphicsX11.ml" 31 1395 1400
+)
+"graphicsX11.ml" 28 1273 1299 "graphicsX11.ml" 28 1273 1304
+type(
+  int
+)
+ident(
+  def width "graphicsX11.ml" 28 1273 1305 "graphicsX11.ml" 31 1395 1400
+)
+"graphicsX11.ml" 28 1273 1306 "graphicsX11.ml" 28 1273 1312
+type(
+  int
+)
+ident(
+  def height "graphicsX11.ml" 29 1315 1317 "graphicsX11.ml" 31 1395 1400
+)
+"graphicsX11.ml" 29 1315 1321 "graphicsX11.ml" 29 1315 1324
+type(
+  window_id
+)
+ident(
+  def wid "graphicsX11.ml" 30 1362 1364 "graphicsX11.ml" 31 1395 1400
+)
+"graphicsX11.ml" 29 1315 1327 "graphicsX11.ml" 29 1315 1341
+type(
+  int -> int -> int -> int -> window_id
+)
+ident(
+  int_ref open_subwindow "graphicsX11.ml" 23 1100 1100 "graphicsX11.ml" 24 1164 1194
+)
+"graphicsX11.ml" 29 1315 1342 "graphicsX11.ml" 29 1315 1343
+type(
+  int
+)
+ident(
+  int_ref x "graphicsX11.ml" 28 1273 1293 "graphicsX11.ml" 28 1273 1294
+)
+"graphicsX11.ml" 29 1315 1344 "graphicsX11.ml" 29 1315 1345
+type(
+  int
+)
+ident(
+  int_ref y "graphicsX11.ml" 28 1273 1296 "graphicsX11.ml" 28 1273 1297
+)
+"graphicsX11.ml" 29 1315 1346 "graphicsX11.ml" 29 1315 1351
+type(
+  int
+)
+ident(
+  int_ref width "graphicsX11.ml" 28 1273 1299 "graphicsX11.ml" 28 1273 1304
+)
+"graphicsX11.ml" 29 1315 1352 "graphicsX11.ml" 29 1315 1358
+type(
+  int
+)
+ident(
+  int_ref height "graphicsX11.ml" 28 1273 1306 "graphicsX11.ml" 28 1273 1312
+)
+"graphicsX11.ml" 29 1315 1327 "graphicsX11.ml" 29 1315 1358
+type(
+  window_id
+)
+"graphicsX11.ml" 30 1362 1364 "graphicsX11.ml" 30 1362 1375
+type(
+  (window_id, unit) Hashtbl.t -> window_id -> unit -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"graphicsX11.ml" 30 1362 1376 "graphicsX11.ml" 30 1362 1386
+type(
+  (window_id, unit) Hashtbl.t
+)
+ident(
+  int_ref subwindows "graphicsX11.ml" 21 1064 1068 "graphicsX11.ml" 21 1064 1078
+)
+"graphicsX11.ml" 30 1362 1387 "graphicsX11.ml" 30 1362 1390
+type(
+  window_id
+)
+ident(
+  int_ref wid "graphicsX11.ml" 29 1315 1321 "graphicsX11.ml" 29 1315 1324
+)
+"graphicsX11.ml" 30 1362 1391 "graphicsX11.ml" 30 1362 1393
+type(
+  unit
+)
+"graphicsX11.ml" 30 1362 1364 "graphicsX11.ml" 30 1362 1393
+call(
+  stack
+)
+type(
+  unit
+)
+"graphicsX11.ml" 31 1395 1397 "graphicsX11.ml" 31 1395 1400
+type(
+  window_id
+)
+ident(
+  int_ref wid "graphicsX11.ml" 29 1315 1321 "graphicsX11.ml" 29 1315 1324
+)
+"graphicsX11.ml" 30 1362 1364 "graphicsX11.ml" 31 1395 1400
+type(
+  window_id
+)
+"graphicsX11.ml" 29 1315 1317 "graphicsX11.ml" 31 1395 1400
+type(
+  window_id
+)
+"graphicsX11.ml" 34 1405 1409 "graphicsX11.ml" 34 1405 1424
+type(
+  window_id -> unit
+)
+ident(
+  def close_subwindow "graphicsX11.ml" 39 1544 1624 "graphicsX11.ml" 1 0 -1
+)
+"graphicsX11.ml" 34 1405 1425 "graphicsX11.ml" 34 1405 1428
+type(
+  window_id
+)
+ident(
+  def wid "graphicsX11.ml" 35 1431 1433 "graphicsX11.ml" 39 1544 1624
+)
+"graphicsX11.ml" 35 1431 1436 "graphicsX11.ml" 35 1431 1447
+type(
+  (window_id, unit) Hashtbl.t -> window_id -> bool
+)
+ident(
+  ext_ref Hashtbl.mem
+)
+"graphicsX11.ml" 35 1431 1448 "graphicsX11.ml" 35 1431 1458
+type(
+  (window_id, unit) Hashtbl.t
+)
+ident(
+  int_ref subwindows "graphicsX11.ml" 21 1064 1068 "graphicsX11.ml" 21 1064 1078
+)
+"graphicsX11.ml" 35 1431 1459 "graphicsX11.ml" 35 1431 1462
+type(
+  window_id
+)
+ident(
+  int_ref wid "graphicsX11.ml" 34 1405 1425 "graphicsX11.ml" 34 1405 1428
+)
+"graphicsX11.ml" 35 1431 1436 "graphicsX11.ml" 35 1431 1462
+call(
+  stack
+)
+type(
+  bool
+)
+"graphicsX11.ml" 36 1474 1478 "graphicsX11.ml" 36 1474 1493
+type(
+  window_id -> unit
+)
+ident(
+  int_ref close_subwindow "graphicsX11.ml" 25 1195 1195 "graphicsX11.ml" 26 1240 1271
+)
+"graphicsX11.ml" 36 1474 1494 "graphicsX11.ml" 36 1474 1497
+type(
+  window_id
+)
+ident(
+  int_ref wid "graphicsX11.ml" 34 1405 1425 "graphicsX11.ml" 34 1405 1428
+)
+"graphicsX11.ml" 36 1474 1478 "graphicsX11.ml" 36 1474 1497
+type(
+  unit
+)
+"graphicsX11.ml" 37 1499 1503 "graphicsX11.ml" 37 1499 1517
+type(
+  (window_id, unit) Hashtbl.t -> window_id -> unit
+)
+ident(
+  ext_ref Hashtbl.remove
+)
+"graphicsX11.ml" 37 1499 1518 "graphicsX11.ml" 37 1499 1528
+type(
+  (window_id, unit) Hashtbl.t
+)
+ident(
+  int_ref subwindows "graphicsX11.ml" 21 1064 1068 "graphicsX11.ml" 21 1064 1078
+)
+"graphicsX11.ml" 37 1499 1529 "graphicsX11.ml" 37 1499 1532
+type(
+  window_id
+)
+ident(
+  int_ref wid "graphicsX11.ml" 34 1405 1425 "graphicsX11.ml" 34 1405 1428
+)
+"graphicsX11.ml" 37 1499 1503 "graphicsX11.ml" 37 1499 1532
+call(
+  tail
+)
+type(
+  unit
+)
+"graphicsX11.ml" 35 1431 1468 "graphicsX11.ml" 38 1533 1538
+type(
+  unit
+)
+"graphicsX11.ml" 39 1544 1548 "graphicsX11.ml" 39 1544 1553
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"graphicsX11.ml" 39 1544 1580 "graphicsX11.ml" 39 1544 1618
+type(
+  string
+)
+"graphicsX11.ml" 39 1544 1618 "graphicsX11.ml" 39 1544 1619
+type(
+  string -> window_id -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"graphicsX11.ml" 39 1544 1619 "graphicsX11.ml" 39 1544 1622
+type(
+  window_id
+)
+ident(
+  int_ref wid "graphicsX11.ml" 34 1405 1425 "graphicsX11.ml" 34 1405 1428
+)
+"graphicsX11.ml" 39 1544 1579 "graphicsX11.ml" 39 1544 1623
+call(
+  stack
+)
+type(
+  string
+)
+"graphicsX11.ml" 39 1544 1554 "graphicsX11.ml" 39 1544 1624
+type(
+  exn
+)
+"graphicsX11.ml" 39 1544 1548 "graphicsX11.ml" 39 1544 1624
+type(
+  unit
+)
+"graphicsX11.ml" 35 1431 1433 "graphicsX11.ml" 39 1544 1624
+type(
+  unit
+)

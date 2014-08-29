@@ -1,0 +1,1946 @@
+"odoc_dot.ml" 20 959 963 "odoc_dot.ml" 20 959 978
+type(
+  bool ref
+)
+ident(
+  def dot_include_all "odoc_dot.ml" 22 992 992 "odoc_dot.ml" 1 0 -1
+)
+"odoc_dot.ml" 20 959 981 "odoc_dot.ml" 20 959 984
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"odoc_dot.ml" 20 959 985 "odoc_dot.ml" 20 959 990
+type(
+  bool
+)
+"odoc_dot.ml" 20 959 981 "odoc_dot.ml" 20 959 990
+type(
+  bool ref
+)
+"odoc_dot.ml" 22 992 996 "odoc_dot.ml" 22 992 1005
+type(
+  bool ref
+)
+ident(
+  def dot_types "odoc_dot.ml" 24 1019 1019 "odoc_dot.ml" 1 0 -1
+)
+"odoc_dot.ml" 22 992 1008 "odoc_dot.ml" 22 992 1011
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"odoc_dot.ml" 22 992 1012 "odoc_dot.ml" 22 992 1017
+type(
+  bool
+)
+"odoc_dot.ml" 22 992 1008 "odoc_dot.ml" 22 992 1017
+type(
+  bool ref
+)
+"odoc_dot.ml" 24 1019 1023 "odoc_dot.ml" 24 1019 1033
+type(
+  bool ref
+)
+ident(
+  def dot_reduce "odoc_dot.ml" 26 1047 1047 "odoc_dot.ml" 1 0 -1
+)
+"odoc_dot.ml" 24 1019 1036 "odoc_dot.ml" 24 1019 1039
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"odoc_dot.ml" 24 1019 1040 "odoc_dot.ml" 24 1019 1045
+type(
+  bool
+)
+"odoc_dot.ml" 24 1019 1036 "odoc_dot.ml" 24 1019 1045
+type(
+  bool ref
+)
+"odoc_dot.ml" 26 1047 1051 "odoc_dot.ml" 26 1047 1061
+type(
+  string list ref
+)
+ident(
+  def dot_colors "odoc_dot.ml" 28 1118 1118 "odoc_dot.ml" 1 0 -1
+)
+"odoc_dot.ml" 26 1047 1065 "odoc_dot.ml" 26 1047 1068
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"odoc_dot.ml" 26 1047 1070 "odoc_dot.ml" 26 1047 1082
+type(
+  string list list -> string list
+)
+ident(
+  ext_ref List.flatten
+)
+"odoc_dot.ml" 26 1047 1083 "odoc_dot.ml" 26 1047 1115
+type(
+  string list list
+)
+ident(
+  ext_ref Odoc_messages.default_dot_colors
+)
+"odoc_dot.ml" 26 1047 1069 "odoc_dot.ml" 26 1047 1116
+call(
+  stack
+)
+type(
+  string list
+)
+"odoc_dot.ml" 26 1047 1065 "odoc_dot.ml" 26 1047 1116
+type(
+  string list ref
+)
+"odoc_dot.ml" 33 1234 1243 "odoc_dot.ml" 33 1234 1249
+type(
+  < generate : Odoc_info.Module.t_module list -> unit;
+    generate_for_module : F.formatter -> Odoc_info.Module.t_module -> unit;
+    generate_for_type : F.formatter ->
+                        Odoc_info.Type.t_type * Odoc_info.Name.t list -> unit;
+    generate_modules : Odoc_info.Module.t_module list -> unit;
+    generate_types : Odoc_info.Type.t_type list -> unit;
+    get_one_color : string option; header : string;
+    node_color : Odoc_info.Name.t -> string option;
+    print_module_atts : F.formatter -> Odoc_info.Module.t_module -> unit;
+    print_one_dep : F.formatter ->
+                    Odoc_info.Name.t -> Odoc_info.Name.t -> unit;
+    print_type_atts : F.formatter -> Odoc_info.Type.t_type -> unit; .. >
+)
+"odoc_dot.ml" 36 1318 1347 "odoc_dot.ml" 36 1318 1349
+type(
+  (Odoc_info.Name.t * string) list
+)
+"odoc_dot.ml" 39 1391 1417 "odoc_dot.ml" 39 1391 1419
+type(
+  Odoc_info.Module.t_module list
+)
+"odoc_dot.ml" 42 1485 1510 "odoc_dot.ml" 42 1485 1511
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_dot.ml" 42 1485 1511 "odoc_dot.ml" 42 1485 1521
+type(
+  string list ref
+)
+ident(
+  int_ref dot_colors "odoc_dot.ml" 26 1047 1051 "odoc_dot.ml" 26 1047 1061
+)
+"odoc_dot.ml" 42 1485 1510 "odoc_dot.ml" 42 1485 1521
+type(
+  string list
+)
+"odoc_dot.ml" 46 1568 1574 "odoc_dot.ml" 46 1568 1589
+type(
+  string
+)
+"odoc_dot.ml" 46 1568 1589 "odoc_dot.ml" 46 1568 1590
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_dot.ml" 47 1591 1597 "odoc_dot.ml" 47 1591 1619
+type(
+  string
+)
+"odoc_dot.ml" 47 1591 1619 "odoc_dot.ml" 47 1591 1620
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_dot.ml" 48 1621 1627 "odoc_dot.ml" 48 1621 1648
+type(
+  string
+)
+"odoc_dot.ml" 48 1621 1648 "odoc_dot.ml" 48 1621 1649
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_dot.ml" 49 1650 1656 "odoc_dot.ml" 49 1650 1672
+type(
+  string
+)
+"odoc_dot.ml" 49 1650 1672 "odoc_dot.ml" 49 1650 1673
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_dot.ml" 50 1674 1680 "odoc_dot.ml" 50 1674 1704
+type(
+  string
+)
+"odoc_dot.ml" 50 1674 1704 "odoc_dot.ml" 50 1674 1705
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"odoc_dot.ml" 51 1706 1712 "odoc_dot.ml" 51 1706 1732
+type(
+  string
+)
+"odoc_dot.ml" 50 1674 1680 "odoc_dot.ml" 51 1706 1732
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_dot.ml" 49 1650 1656 "odoc_dot.ml" 51 1706 1732
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_dot.ml" 48 1621 1627 "odoc_dot.ml" 51 1706 1732
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_dot.ml" 47 1591 1597 "odoc_dot.ml" 51 1706 1732
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_dot.ml" 46 1568 1574 "odoc_dot.ml" 51 1706 1732
+call(
+  tail
+)
+type(
+  string
+)
+type(
+  string
+)
+"odoc_dot.ml" 54 1761 1773 "odoc_dot.ml" 54 1761 1779
+type(
+  string list
+)
+ident(
+  ext_ref colors
+)
+"odoc_dot.ml" 55 1785 1793 "odoc_dot.ml" 55 1785 1795
+type(
+  string list
+)
+"odoc_dot.ml" 55 1785 1799 "odoc_dot.ml" 55 1785 1803
+type(
+  string option
+)
+"odoc_dot.ml" 56 1804 1812 "odoc_dot.ml" 56 1804 1813
+type(
+  string
+)
+ident(
+  def h "odoc_dot.ml" 57 1822 1832 "odoc_dot.ml" 58 1846 1862
+)
+"odoc_dot.ml" 56 1804 1817 "odoc_dot.ml" 56 1804 1818
+type(
+  string list
+)
+ident(
+  def q "odoc_dot.ml" 57 1822 1832 "odoc_dot.ml" 58 1846 1862
+)
+"odoc_dot.ml" 56 1804 1812 "odoc_dot.ml" 56 1804 1818
+type(
+  string list
+)
+"odoc_dot.ml" 57 1822 1842 "odoc_dot.ml" 57 1822 1843
+type(
+  string list
+)
+ident(
+  int_ref q "odoc_dot.ml" 56 1804 1817 "odoc_dot.ml" 56 1804 1818
+)
+"odoc_dot.ml" 57 1822 1832 "odoc_dot.ml" 57 1822 1843
+type(
+  unit
+)
+"odoc_dot.ml" 58 1846 1861 "odoc_dot.ml" 58 1846 1862
+type(
+  string
+)
+ident(
+  int_ref h "odoc_dot.ml" 56 1804 1812 "odoc_dot.ml" 56 1804 1813
+)
+"odoc_dot.ml" 58 1846 1856 "odoc_dot.ml" 58 1846 1862
+type(
+  string option
+)
+"odoc_dot.ml" 57 1822 1832 "odoc_dot.ml" 58 1846 1862
+type(
+  string option
+)
+"odoc_dot.ml" 54 1761 1767 "odoc_dot.ml" 58 1846 1862
+type(
+  string option
+)
+type(
+  string option
+)
+"odoc_dot.ml" 60 1864 1886 "odoc_dot.ml" 60 1864 1887
+type(
+  Odoc_info.Name.t
+)
+ident(
+  def s "odoc_dot.ml" 61 1890 1896 "odoc_dot.ml" 68 2101 2121
+)
+"odoc_dot.ml" 61 1890 1906 "odoc_dot.ml" 61 1890 1916
+type(
+  Odoc_info.Name.t -> (Odoc_info.Name.t * string) list -> string
+)
+ident(
+  ext_ref List.assoc
+)
+"odoc_dot.ml" 61 1890 1917 "odoc_dot.ml" 61 1890 1918
+type(
+  Odoc_info.Name.t
+)
+ident(
+  int_ref s "odoc_dot.ml" 60 1864 1886 "odoc_dot.ml" 60 1864 1887
+)
+"odoc_dot.ml" 61 1890 1919 "odoc_dot.ml" 61 1890 1929
+type(
+  (Odoc_info.Name.t * string) list
+)
+ident(
+  ext_ref loc_colors
+)
+"odoc_dot.ml" 61 1890 1905 "odoc_dot.ml" 61 1890 1930
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_dot.ml" 61 1890 1900 "odoc_dot.ml" 61 1890 1930
+type(
+  string option
+)
+"odoc_dot.ml" 63 1942 1950 "odoc_dot.ml" 63 1942 1959
+type(
+  exn
+)
+"odoc_dot.ml" 64 1963 1979 "odoc_dot.ml" 64 1963 1983
+type(
+  < generate : Odoc_info.Module.t_module list -> unit;
+    generate_for_module : F.formatter -> Odoc_info.Module.t_module -> unit;
+    generate_for_type : F.formatter ->
+                        Odoc_info.Type.t_type * Odoc_info.Name.t list -> unit;
+    generate_modules : Odoc_info.Module.t_module list -> unit;
+    generate_types : Odoc_info.Type.t_type list -> unit;
+    get_one_color : string option; header : string;
+    node_color : Odoc_info.Name.t -> string option;
+    print_module_atts : F.formatter -> Odoc_info.Module.t_module -> unit;
+    print_one_dep : F.formatter ->
+                    Odoc_info.Name.t -> Odoc_info.Name.t -> unit;
+    print_type_atts : F.formatter -> Odoc_info.Type.t_type -> unit; .. >
+  as 'a
+)
+ident(
+  int_ref self "odoc_dot.ml" 33 1234 1243 "odoc_dot.ml" 33 1234 1249
+)
+"odoc_dot.ml" 64 1963 1979 "odoc_dot.ml" 64 1963 1997
+call(
+  stack
+)
+type(
+  string option
+)
+"odoc_dot.ml" 65 2003 2015 "odoc_dot.ml" 65 2003 2019
+type(
+  string option
+)
+"odoc_dot.ml" 65 2003 2023 "odoc_dot.ml" 65 2003 2027
+type(
+  string option
+)
+"odoc_dot.ml" 66 2028 2045 "odoc_dot.ml" 66 2028 2046
+type(
+  string
+)
+ident(
+  def c "odoc_dot.ml" 67 2050 2064 "odoc_dot.ml" 68 2101 2121
+)
+"odoc_dot.ml" 66 2028 2040 "odoc_dot.ml" 66 2028 2046
+type(
+  string option
+)
+"odoc_dot.ml" 67 2050 2079 "odoc_dot.ml" 67 2050 2080
+type(
+  Odoc_info.Name.t
+)
+ident(
+  int_ref s "odoc_dot.ml" 60 1864 1886 "odoc_dot.ml" 60 1864 1887
+)
+"odoc_dot.ml" 67 2050 2082 "odoc_dot.ml" 67 2050 2083
+type(
+  string
+)
+ident(
+  int_ref c "odoc_dot.ml" 66 2028 2045 "odoc_dot.ml" 66 2028 2046
+)
+"odoc_dot.ml" 67 2050 2078 "odoc_dot.ml" 67 2050 2084
+type(
+  Odoc_info.Name.t * string
+)
+"odoc_dot.ml" 67 2050 2088 "odoc_dot.ml" 67 2050 2098
+type(
+  (Odoc_info.Name.t * string) list
+)
+ident(
+  ext_ref loc_colors
+)
+"odoc_dot.ml" 67 2050 2078 "odoc_dot.ml" 67 2050 2098
+type(
+  (Odoc_info.Name.t * string) list
+)
+"odoc_dot.ml" 67 2050 2064 "odoc_dot.ml" 67 2050 2098
+type(
+  unit
+)
+"odoc_dot.ml" 68 2101 2120 "odoc_dot.ml" 68 2101 2121
+type(
+  string
+)
+ident(
+  int_ref c "odoc_dot.ml" 66 2028 2045 "odoc_dot.ml" 66 2028 2046
+)
+"odoc_dot.ml" 68 2101 2115 "odoc_dot.ml" 68 2101 2121
+type(
+  string option
+)
+"odoc_dot.ml" 67 2050 2064 "odoc_dot.ml" 68 2101 2121
+type(
+  string option
+)
+"odoc_dot.ml" 64 1963 1973 "odoc_dot.ml" 68 2101 2121
+type(
+  string option
+)
+"odoc_dot.ml" 61 1890 1896 "odoc_dot.ml" 68 2101 2121
+type(
+  string option
+)
+"odoc_dot.ml" 70 2123 2152 "odoc_dot.ml" 70 2123 2155
+type(
+  F.formatter
+)
+ident(
+  def fmt "odoc_dot.ml" 70 2123 2156 "odoc_dot.ml" 73 2247 2337
+)
+"odoc_dot.ml" 70 2123 2156 "odoc_dot.ml" 70 2123 2157
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  def m "odoc_dot.ml" 71 2160 2166 "odoc_dot.ml" 73 2247 2337
+)
+"odoc_dot.ml" 71 2160 2172 "odoc_dot.ml" 71 2160 2176
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_dot.ml" 33 1234 1243 "odoc_dot.ml" 33 1234 1249
+)
+"odoc_dot.ml" 71 2160 2172 "odoc_dot.ml" 71 2160 2187
+call(
+  stack
+)
+type(
+  Odoc_info.Name.t -> string option
+)
+"odoc_dot.ml" 71 2160 2189 "odoc_dot.ml" 71 2160 2205
+type(
+  string -> Odoc_info.Name.t
+)
+ident(
+  ext_ref Filename.dirname
+)
+"odoc_dot.ml" 71 2160 2206 "odoc_dot.ml" 71 2160 2207
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  int_ref m "odoc_dot.ml" 70 2123 2156 "odoc_dot.ml" 70 2123 2157
+)
+"odoc_dot.ml" 71 2160 2206 "odoc_dot.ml" 71 2160 2221
+type(
+  string
+)
+"odoc_dot.ml" 71 2160 2188 "odoc_dot.ml" 71 2160 2222
+call(
+  stack
+)
+type(
+  Odoc_info.Name.t
+)
+"odoc_dot.ml" 71 2160 2172 "odoc_dot.ml" 71 2160 2222
+type(
+  string option
+)
+"odoc_dot.ml" 72 2228 2236 "odoc_dot.ml" 72 2228 2240
+type(
+  string option
+)
+"odoc_dot.ml" 72 2228 2244 "odoc_dot.ml" 72 2228 2246
+type(
+  unit
+)
+"odoc_dot.ml" 73 2247 2260 "odoc_dot.ml" 73 2247 2263
+type(
+  string
+)
+ident(
+  def col "odoc_dot.ml" 73 2247 2267 "odoc_dot.ml" 73 2247 2337
+)
+"odoc_dot.ml" 73 2247 2255 "odoc_dot.ml" 73 2247 2263
+type(
+  string option
+)
+"odoc_dot.ml" 73 2247 2267 "odoc_dot.ml" 73 2247 2276
+type(
+  F.formatter ->
+  (Odoc_info.Name.t -> string -> unit, F.formatter, unit) format ->
+  Odoc_info.Name.t -> string -> unit
+)
+ident(
+  ext_ref F.fprintf
+)
+"odoc_dot.ml" 73 2247 2277 "odoc_dot.ml" 73 2247 2280
+type(
+  F.formatter
+)
+ident(
+  int_ref fmt "odoc_dot.ml" 70 2123 2152 "odoc_dot.ml" 70 2123 2155
+)
+"odoc_dot.ml" 73 2247 2281 "odoc_dot.ml" 73 2247 2317
+type(
+  (Odoc_info.Name.t -> string -> unit, F.formatter, unit) format
+)
+"odoc_dot.ml" 73 2247 2318 "odoc_dot.ml" 73 2247 2319
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  int_ref m "odoc_dot.ml" 70 2123 2156 "odoc_dot.ml" 70 2123 2157
+)
+"odoc_dot.ml" 73 2247 2318 "odoc_dot.ml" 73 2247 2333
+type(
+  Odoc_info.Name.t
+)
+"odoc_dot.ml" 73 2247 2334 "odoc_dot.ml" 73 2247 2337
+type(
+  string
+)
+ident(
+  int_ref col "odoc_dot.ml" 73 2247 2260 "odoc_dot.ml" 73 2247 2263
+)
+"odoc_dot.ml" 73 2247 2267 "odoc_dot.ml" 73 2247 2337
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_dot.ml" 71 2160 2166 "odoc_dot.ml" 73 2247 2337
+type(
+  unit
+)
+"odoc_dot.ml" 75 2339 2366 "odoc_dot.ml" 75 2339 2369
+type(
+  F.formatter
+)
+ident(
+  def fmt "odoc_dot.ml" 75 2339 2370 "odoc_dot.ml" 78 2455 2544
+)
+"odoc_dot.ml" 75 2339 2370 "odoc_dot.ml" 75 2339 2371
+type(
+  Odoc_info.Type.t_type
+)
+ident(
+  def t "odoc_dot.ml" 76 2374 2380 "odoc_dot.ml" 78 2455 2544
+)
+"odoc_dot.ml" 76 2374 2386 "odoc_dot.ml" 76 2374 2390
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_dot.ml" 33 1234 1243 "odoc_dot.ml" 33 1234 1249
+)
+"odoc_dot.ml" 76 2374 2386 "odoc_dot.ml" 76 2374 2401
+call(
+  stack
+)
+type(
+  Odoc_info.Name.t -> string option
+)
+"odoc_dot.ml" 76 2374 2403 "odoc_dot.ml" 76 2374 2414
+type(
+  Odoc_info.Name.t -> Odoc_info.Name.t
+)
+ident(
+  ext_ref Odoc_info.Name.father
+)
+"odoc_dot.ml" 76 2374 2415 "odoc_dot.ml" 76 2374 2416
+type(
+  Odoc_info.Type.t_type
+)
+ident(
+  int_ref t "odoc_dot.ml" 75 2339 2370 "odoc_dot.ml" 75 2339 2371
+)
+"odoc_dot.ml" 76 2374 2415 "odoc_dot.ml" 76 2374 2429
+type(
+  Odoc_info.Name.t
+)
+"odoc_dot.ml" 76 2374 2402 "odoc_dot.ml" 76 2374 2430
+call(
+  stack
+)
+type(
+  Odoc_info.Name.t
+)
+"odoc_dot.ml" 76 2374 2386 "odoc_dot.ml" 76 2374 2430
+type(
+  string option
+)
+"odoc_dot.ml" 77 2436 2444 "odoc_dot.ml" 77 2436 2448
+type(
+  string option
+)
+"odoc_dot.ml" 77 2436 2452 "odoc_dot.ml" 77 2436 2454
+type(
+  unit
+)
+"odoc_dot.ml" 78 2455 2468 "odoc_dot.ml" 78 2455 2471
+type(
+  string
+)
+ident(
+  def col "odoc_dot.ml" 78 2455 2475 "odoc_dot.ml" 78 2455 2544
+)
+"odoc_dot.ml" 78 2455 2463 "odoc_dot.ml" 78 2455 2471
+type(
+  string option
+)
+"odoc_dot.ml" 78 2455 2475 "odoc_dot.ml" 78 2455 2484
+type(
+  F.formatter ->
+  (Odoc_info.Name.t -> string -> unit, F.formatter, unit) format ->
+  Odoc_info.Name.t -> string -> unit
+)
+ident(
+  ext_ref F.fprintf
+)
+"odoc_dot.ml" 78 2455 2485 "odoc_dot.ml" 78 2455 2488
+type(
+  F.formatter
+)
+ident(
+  int_ref fmt "odoc_dot.ml" 75 2339 2366 "odoc_dot.ml" 75 2339 2369
+)
+"odoc_dot.ml" 78 2455 2489 "odoc_dot.ml" 78 2455 2525
+type(
+  (Odoc_info.Name.t -> string -> unit, F.formatter, unit) format
+)
+"odoc_dot.ml" 78 2455 2526 "odoc_dot.ml" 78 2455 2527
+type(
+  Odoc_info.Type.t_type
+)
+ident(
+  int_ref t "odoc_dot.ml" 75 2339 2370 "odoc_dot.ml" 75 2339 2371
+)
+"odoc_dot.ml" 78 2455 2526 "odoc_dot.ml" 78 2455 2540
+type(
+  Odoc_info.Name.t
+)
+"odoc_dot.ml" 78 2455 2541 "odoc_dot.ml" 78 2455 2544
+type(
+  string
+)
+ident(
+  int_ref col "odoc_dot.ml" 78 2455 2468 "odoc_dot.ml" 78 2455 2471
+)
+"odoc_dot.ml" 78 2455 2475 "odoc_dot.ml" 78 2455 2544
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_dot.ml" 76 2374 2380 "odoc_dot.ml" 78 2455 2544
+type(
+  unit
+)
+"odoc_dot.ml" 80 2546 2571 "odoc_dot.ml" 80 2546 2574
+type(
+  F.formatter
+)
+ident(
+  def fmt "odoc_dot.ml" 80 2546 2575 "odoc_dot.ml" 81 2586 2636
+)
+"odoc_dot.ml" 80 2546 2575 "odoc_dot.ml" 80 2546 2578
+type(
+  Odoc_info.Name.t
+)
+ident(
+  def src "odoc_dot.ml" 80 2546 2579 "odoc_dot.ml" 81 2586 2636
+)
+"odoc_dot.ml" 80 2546 2579 "odoc_dot.ml" 80 2546 2583
+type(
+  Odoc_info.Name.t
+)
+ident(
+  def dest "odoc_dot.ml" 81 2586 2592 "odoc_dot.ml" 81 2586 2636
+)
+"odoc_dot.ml" 81 2586 2592 "odoc_dot.ml" 81 2586 2601
+type(
+  F.formatter ->
+  (Odoc_info.Name.t -> Odoc_info.Name.t -> unit, F.formatter, unit) format ->
+  Odoc_info.Name.t -> Odoc_info.Name.t -> unit
+)
+ident(
+  ext_ref F.fprintf
+)
+"odoc_dot.ml" 81 2586 2602 "odoc_dot.ml" 81 2586 2605
+type(
+  F.formatter
+)
+ident(
+  int_ref fmt "odoc_dot.ml" 80 2546 2571 "odoc_dot.ml" 80 2546 2574
+)
+"odoc_dot.ml" 81 2586 2606 "odoc_dot.ml" 81 2586 2627
+type(
+  (Odoc_info.Name.t -> Odoc_info.Name.t -> unit, F.formatter, unit) format
+)
+"odoc_dot.ml" 81 2586 2628 "odoc_dot.ml" 81 2586 2631
+type(
+  Odoc_info.Name.t
+)
+ident(
+  int_ref src "odoc_dot.ml" 80 2546 2575 "odoc_dot.ml" 80 2546 2578
+)
+"odoc_dot.ml" 81 2586 2632 "odoc_dot.ml" 81 2586 2636
+type(
+  Odoc_info.Name.t
+)
+ident(
+  int_ref dest "odoc_dot.ml" 80 2546 2579 "odoc_dot.ml" 80 2546 2583
+)
+"odoc_dot.ml" 81 2586 2592 "odoc_dot.ml" 81 2586 2636
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_dot.ml" 83 2638 2669 "odoc_dot.ml" 83 2638 2672
+type(
+  F.formatter
+)
+ident(
+  def fmt "odoc_dot.ml" 83 2638 2673 "odoc_dot.ml" 91 2896 2954
+)
+"odoc_dot.ml" 83 2638 2673 "odoc_dot.ml" 83 2638 2674
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  def m "odoc_dot.ml" 84 2677 2683 "odoc_dot.ml" 91 2896 2954
+)
+"odoc_dot.ml" 84 2677 2687 "odoc_dot.ml" 84 2677 2688
+type(
+  Odoc_info.Name.t list
+)
+ident(
+  def l "odoc_dot.ml" 90 2860 2866 "odoc_dot.ml" 91 2896 2954
+)
+"odoc_dot.ml" 84 2677 2691 "odoc_dot.ml" 84 2677 2702
+type(
+  (Odoc_info.Name.t -> bool) ->
+  Odoc_info.Name.t list -> Odoc_info.Name.t list
+)
+ident(
+  ext_ref List.filter
+)
+"odoc_dot.ml" 85 2703 2718 "odoc_dot.ml" 85 2703 2719
+type(
+  Odoc_info.Name.t
+)
+ident(
+  def n "odoc_dot.ml" 86 2723 2735 "odoc_dot.ml" 87 2755 2819
+)
+"odoc_dot.ml" 86 2723 2735 "odoc_dot.ml" 86 2723 2736
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_dot.ml" 86 2723 2736 "odoc_dot.ml" 86 2723 2751
+type(
+  bool ref
+)
+ident(
+  int_ref dot_include_all "odoc_dot.ml" 20 959 963 "odoc_dot.ml" 20 959 978
+)
+"odoc_dot.ml" 86 2723 2735 "odoc_dot.ml" 86 2723 2751
+type(
+  bool
+)
+"odoc_dot.ml" 86 2723 2752 "odoc_dot.ml" 86 2723 2754
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"odoc_dot.ml" 87 2755 2768 "odoc_dot.ml" 87 2755 2779
+type(
+  (Odoc_info.Module.t_module -> bool) ->
+  Odoc_info.Module.t_module list -> bool
+)
+ident(
+  ext_ref List.exists
+)
+"odoc_dot.ml" 87 2755 2785 "odoc_dot.ml" 87 2755 2786
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  def m "odoc_dot.ml" 87 2755 2790 "odoc_dot.ml" 87 2755 2809
+)
+"odoc_dot.ml" 87 2755 2790 "odoc_dot.ml" 87 2755 2791
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  int_ref m "odoc_dot.ml" 87 2755 2785 "odoc_dot.ml" 87 2755 2786
+)
+"odoc_dot.ml" 87 2755 2790 "odoc_dot.ml" 87 2755 2805
+type(
+  Odoc_info.Name.t
+)
+"odoc_dot.ml" 87 2755 2806 "odoc_dot.ml" 87 2755 2807
+type(
+  Odoc_info.Name.t -> Odoc_info.Name.t -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"odoc_dot.ml" 87 2755 2808 "odoc_dot.ml" 87 2755 2809
+type(
+  Odoc_info.Name.t
+)
+ident(
+  int_ref n "odoc_dot.ml" 85 2703 2718 "odoc_dot.ml" 85 2703 2719
+)
+"odoc_dot.ml" 87 2755 2790 "odoc_dot.ml" 87 2755 2809
+type(
+  bool
+)
+"odoc_dot.ml" 87 2755 2780 "odoc_dot.ml" 87 2755 2810
+type(
+  Odoc_info.Module.t_module -> bool
+)
+"odoc_dot.ml" 87 2755 2811 "odoc_dot.ml" 87 2755 2818
+type(
+  Odoc_info.Module.t_module list
+)
+ident(
+  ext_ref modules
+)
+"odoc_dot.ml" 87 2755 2767 "odoc_dot.ml" 87 2755 2819
+call(
+  tail
+)
+type(
+  bool
+)
+"odoc_dot.ml" 86 2723 2735 "odoc_dot.ml" 87 2755 2819
+type(
+  bool
+)
+"odoc_dot.ml" 85 2703 2713 "odoc_dot.ml" 87 2755 2820
+type(
+  Odoc_info.Name.t -> bool
+)
+"odoc_dot.ml" 88 2821 2831 "odoc_dot.ml" 88 2821 2832
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  int_ref m "odoc_dot.ml" 83 2638 2673 "odoc_dot.ml" 83 2638 2674
+)
+"odoc_dot.ml" 88 2821 2831 "odoc_dot.ml" 88 2821 2850
+type(
+  Odoc_info.Name.t list
+)
+"odoc_dot.ml" 84 2677 2691 "odoc_dot.ml" 88 2821 2850
+call(
+  stack
+)
+type(
+  Odoc_info.Name.t list
+)
+"odoc_dot.ml" 90 2860 2866 "odoc_dot.ml" 90 2860 2870
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_dot.ml" 33 1234 1243 "odoc_dot.ml" 33 1234 1249
+)
+"odoc_dot.ml" 90 2860 2866 "odoc_dot.ml" 90 2860 2888
+call(
+  stack
+)
+type(
+  F.formatter -> Odoc_info.Module.t_module -> unit
+)
+"odoc_dot.ml" 90 2860 2889 "odoc_dot.ml" 90 2860 2892
+type(
+  F.formatter
+)
+ident(
+  int_ref fmt "odoc_dot.ml" 83 2638 2669 "odoc_dot.ml" 83 2638 2672
+)
+"odoc_dot.ml" 90 2860 2893 "odoc_dot.ml" 90 2860 2894
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  int_ref m "odoc_dot.ml" 83 2638 2673 "odoc_dot.ml" 83 2638 2674
+)
+"odoc_dot.ml" 90 2860 2866 "odoc_dot.ml" 90 2860 2894
+type(
+  unit
+)
+"odoc_dot.ml" 91 2896 2902 "odoc_dot.ml" 91 2896 2911
+type(
+  (Odoc_info.Name.t -> unit) -> Odoc_info.Name.t list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_dot.ml" 91 2896 2913 "odoc_dot.ml" 91 2896 2917
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_dot.ml" 33 1234 1243 "odoc_dot.ml" 33 1234 1249
+)
+"odoc_dot.ml" 91 2896 2913 "odoc_dot.ml" 91 2896 2931
+call(
+  stack
+)
+type(
+  F.formatter -> Odoc_info.Name.t -> Odoc_info.Name.t -> unit
+)
+"odoc_dot.ml" 91 2896 2932 "odoc_dot.ml" 91 2896 2935
+type(
+  F.formatter
+)
+ident(
+  int_ref fmt "odoc_dot.ml" 83 2638 2669 "odoc_dot.ml" 83 2638 2672
+)
+"odoc_dot.ml" 91 2896 2936 "odoc_dot.ml" 91 2896 2937
+type(
+  Odoc_info.Module.t_module
+)
+ident(
+  int_ref m "odoc_dot.ml" 83 2638 2673 "odoc_dot.ml" 83 2638 2674
+)
+"odoc_dot.ml" 91 2896 2936 "odoc_dot.ml" 91 2896 2951
+type(
+  Odoc_info.Name.t
+)
+"odoc_dot.ml" 91 2896 2912 "odoc_dot.ml" 91 2896 2952
+type(
+  Odoc_info.Name.t -> unit
+)
+"odoc_dot.ml" 91 2896 2953 "odoc_dot.ml" 91 2896 2954
+type(
+  Odoc_info.Name.t list
+)
+ident(
+  int_ref l "odoc_dot.ml" 84 2677 2687 "odoc_dot.ml" 84 2677 2688
+)
+"odoc_dot.ml" 91 2896 2902 "odoc_dot.ml" 91 2896 2954
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_dot.ml" 90 2860 2866 "odoc_dot.ml" 91 2896 2954
+type(
+  unit
+)
+"odoc_dot.ml" 84 2677 2683 "odoc_dot.ml" 91 2896 2954
+type(
+  unit
+)
+"odoc_dot.ml" 93 2956 2985 "odoc_dot.ml" 93 2956 2988
+type(
+  F.formatter
+)
+ident(
+  def fmt "odoc_dot.ml" 93 2956 2989 "odoc_dot.ml" 97 3096 3105
+)
+"odoc_dot.ml" 93 2956 2990 "odoc_dot.ml" 93 2956 2991
+type(
+  Odoc_info.Type.t_type
+)
+ident(
+  def t "odoc_dot.ml" 94 2998 3004 "odoc_dot.ml" 97 3096 3105
+)
+"odoc_dot.ml" 93 2956 2993 "odoc_dot.ml" 93 2956 2994
+type(
+  Odoc_info.Name.t list
+)
+ident(
+  def l "odoc_dot.ml" 94 2998 3004 "odoc_dot.ml" 97 3096 3105
+)
+"odoc_dot.ml" 93 2956 2989 "odoc_dot.ml" 93 2956 2995
+type(
+  Odoc_info.Type.t_type * Odoc_info.Name.t list
+)
+"odoc_dot.ml" 94 2998 3004 "odoc_dot.ml" 94 2998 3008
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_dot.ml" 33 1234 1243 "odoc_dot.ml" 33 1234 1249
+)
+"odoc_dot.ml" 94 2998 3004 "odoc_dot.ml" 94 2998 3024
+call(
+  stack
+)
+type(
+  F.formatter -> Odoc_info.Type.t_type -> unit
+)
+"odoc_dot.ml" 94 2998 3025 "odoc_dot.ml" 94 2998 3028
+type(
+  F.formatter
+)
+ident(
+  int_ref fmt "odoc_dot.ml" 93 2956 2985 "odoc_dot.ml" 93 2956 2988
+)
+"odoc_dot.ml" 94 2998 3029 "odoc_dot.ml" 94 2998 3030
+type(
+  Odoc_info.Type.t_type
+)
+ident(
+  int_ref t "odoc_dot.ml" 93 2956 2990 "odoc_dot.ml" 93 2956 2991
+)
+"odoc_dot.ml" 94 2998 3004 "odoc_dot.ml" 94 2998 3030
+type(
+  unit
+)
+"odoc_dot.ml" 95 3032 3038 "odoc_dot.ml" 95 3032 3047
+type(
+  (Odoc_info.Name.t -> unit) -> Odoc_info.Name.t list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_dot.ml" 96 3048 3057 "odoc_dot.ml" 96 3048 3061
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_dot.ml" 33 1234 1243 "odoc_dot.ml" 33 1234 1249
+)
+"odoc_dot.ml" 96 3048 3057 "odoc_dot.ml" 96 3048 3075
+call(
+  stack
+)
+type(
+  F.formatter -> Odoc_info.Name.t -> Odoc_info.Name.t -> unit
+)
+"odoc_dot.ml" 96 3048 3076 "odoc_dot.ml" 96 3048 3079
+type(
+  F.formatter
+)
+ident(
+  int_ref fmt "odoc_dot.ml" 93 2956 2985 "odoc_dot.ml" 93 2956 2988
+)
+"odoc_dot.ml" 96 3048 3080 "odoc_dot.ml" 96 3048 3081
+type(
+  Odoc_info.Type.t_type
+)
+ident(
+  int_ref t "odoc_dot.ml" 93 2956 2990 "odoc_dot.ml" 93 2956 2991
+)
+"odoc_dot.ml" 96 3048 3080 "odoc_dot.ml" 96 3048 3094
+type(
+  Odoc_info.Name.t
+)
+"odoc_dot.ml" 96 3048 3056 "odoc_dot.ml" 96 3048 3095
+type(
+  Odoc_info.Name.t -> unit
+)
+"odoc_dot.ml" 97 3096 3104 "odoc_dot.ml" 97 3096 3105
+type(
+  Odoc_info.Name.t list
+)
+ident(
+  int_ref l "odoc_dot.ml" 93 2956 2993 "odoc_dot.ml" 93 2956 2994
+)
+"odoc_dot.ml" 95 3032 3038 "odoc_dot.ml" 97 3096 3105
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_dot.ml" 94 2998 3004 "odoc_dot.ml" 97 3096 3105
+type(
+  unit
+)
+"odoc_dot.ml" 99 3107 3133 "odoc_dot.ml" 99 3107 3138
+type(
+  Odoc_info.Type.t_type list
+)
+ident(
+  def types "odoc_dot.ml" 100 3141 3147 "odoc_dot.ml" 114 3570 3597
+)
+"odoc_dot.ml" 101 3151 3163 "odoc_dot.ml" 101 3151 3165
+type(
+  out_channel
+)
+ident(
+  def oc "odoc_dot.ml" 102 3197 3205 "odoc_dot.ml" 111 3515 3535
+)
+"odoc_dot.ml" 101 3151 3168 "odoc_dot.ml" 101 3151 3176
+type(
+  string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out
+)
+"odoc_dot.ml" 101 3151 3177 "odoc_dot.ml" 101 3151 3178
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_dot.ml" 101 3151 3178 "odoc_dot.ml" 101 3151 3193
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_info.Global.out_file
+)
+"odoc_dot.ml" 101 3151 3177 "odoc_dot.ml" 101 3151 3193
+type(
+  string
+)
+"odoc_dot.ml" 101 3151 3168 "odoc_dot.ml" 101 3151 3193
+call(
+  stack
+)
+type(
+  out_channel
+)
+"odoc_dot.ml" 102 3197 3209 "odoc_dot.ml" 102 3197 3212
+type(
+  F.formatter
+)
+ident(
+  def fmt "odoc_dot.ml" 103 3248 3256 "odoc_dot.ml" 111 3515 3535
+)
+"odoc_dot.ml" 102 3197 3215 "odoc_dot.ml" 102 3197 3241
+type(
+  out_channel -> F.formatter
+)
+ident(
+  ext_ref F.formatter_of_out_channel
+)
+"odoc_dot.ml" 102 3197 3242 "odoc_dot.ml" 102 3197 3244
+type(
+  out_channel
+)
+ident(
+  int_ref oc "odoc_dot.ml" 101 3151 3163 "odoc_dot.ml" 101 3151 3165
+)
+"odoc_dot.ml" 102 3197 3215 "odoc_dot.ml" 102 3197 3244
+call(
+  stack
+)
+type(
+  F.formatter
+)
+"odoc_dot.ml" 103 3248 3256 "odoc_dot.ml" 103 3248 3265
+type(
+  F.formatter -> (string -> unit, F.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref F.fprintf
+)
+"odoc_dot.ml" 103 3248 3266 "odoc_dot.ml" 103 3248 3269
+type(
+  F.formatter
+)
+ident(
+  int_ref fmt "odoc_dot.ml" 102 3197 3209 "odoc_dot.ml" 102 3197 3212
+)
+"odoc_dot.ml" 103 3248 3270 "odoc_dot.ml" 103 3248 3274
+type(
+  (string -> unit, F.formatter, unit) format
+)
+"odoc_dot.ml" 103 3248 3275 "odoc_dot.ml" 103 3248 3279
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_dot.ml" 33 1234 1243 "odoc_dot.ml" 33 1234 1249
+)
+"odoc_dot.ml" 103 3248 3275 "odoc_dot.ml" 103 3248 3286
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_dot.ml" 103 3248 3256 "odoc_dot.ml" 103 3248 3286
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dot.ml" 104 3288 3300 "odoc_dot.ml" 104 3288 3305
+type(
+  (Odoc_info.Type.t_type * Odoc_info.Name.t list) list
+)
+ident(
+  def graph "odoc_dot.ml" 108 3398 3406 "odoc_dot.ml" 111 3515 3535
+)
+"odoc_dot.ml" 104 3288 3308 "odoc_dot.ml" 104 3288 3335
+type(
+  ?kernel:bool ->
+  Odoc_info.Type.t_type list ->
+  (Odoc_info.Type.t_type * Odoc_info.Name.t list) list
+)
+ident(
+  ext_ref Odoc_info.Dep.deps_of_types
+)
+"odoc_dot.ml" 105 3336 3357 "odoc_dot.ml" 105 3336 3358
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_dot.ml" 105 3336 3358 "odoc_dot.ml" 105 3336 3368
+type(
+  bool ref
+)
+ident(
+  int_ref dot_reduce "odoc_dot.ml" 24 1019 1023 "odoc_dot.ml" 24 1019 1033
+)
+"odoc_dot.ml" 105 3336 3357 "odoc_dot.ml" 105 3336 3368
+type(
+  bool
+)
+"odoc_dot.ml" 106 3369 3381 "odoc_dot.ml" 106 3369 3386
+type(
+  Odoc_info.Type.t_type list
+)
+ident(
+  int_ref types "odoc_dot.ml" 99 3107 3133 "odoc_dot.ml" 99 3107 3138
+)
+"odoc_dot.ml" 104 3288 3308 "odoc_dot.ml" 106 3369 3386
+call(
+  stack
+)
+type(
+  (Odoc_info.Type.t_type * Odoc_info.Name.t list) list
+)
+"odoc_dot.ml" 108 3398 3406 "odoc_dot.ml" 108 3398 3415
+type(
+  (Odoc_info.Type.t_type * Odoc_info.Name.t list -> unit) ->
+  (Odoc_info.Type.t_type * Odoc_info.Name.t list) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_dot.ml" 108 3398 3417 "odoc_dot.ml" 108 3398 3421
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_dot.ml" 33 1234 1243 "odoc_dot.ml" 33 1234 1249
+)
+"odoc_dot.ml" 108 3398 3417 "odoc_dot.ml" 108 3398 3439
+call(
+  stack
+)
+type(
+  F.formatter -> Odoc_info.Type.t_type * Odoc_info.Name.t list -> unit
+)
+"odoc_dot.ml" 108 3398 3440 "odoc_dot.ml" 108 3398 3443
+type(
+  F.formatter
+)
+ident(
+  int_ref fmt "odoc_dot.ml" 102 3197 3209 "odoc_dot.ml" 102 3197 3212
+)
+"odoc_dot.ml" 108 3398 3416 "odoc_dot.ml" 108 3398 3444
+type(
+  Odoc_info.Type.t_type * Odoc_info.Name.t list -> unit
+)
+"odoc_dot.ml" 108 3398 3445 "odoc_dot.ml" 108 3398 3450
+type(
+  (Odoc_info.Type.t_type * Odoc_info.Name.t list) list
+)
+ident(
+  int_ref graph "odoc_dot.ml" 104 3288 3300 "odoc_dot.ml" 104 3288 3305
+)
+"odoc_dot.ml" 108 3398 3406 "odoc_dot.ml" 108 3398 3450
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dot.ml" 109 3452 3460 "odoc_dot.ml" 109 3452 3469
+type(
+  F.formatter -> (unit, F.formatter, unit) format -> unit
+)
+ident(
+  ext_ref F.fprintf
+)
+"odoc_dot.ml" 109 3452 3470 "odoc_dot.ml" 109 3452 3473
+type(
+  F.formatter
+)
+ident(
+  int_ref fmt "odoc_dot.ml" 102 3197 3209 "odoc_dot.ml" 102 3197 3212
+)
+"odoc_dot.ml" 109 3452 3474 "odoc_dot.ml" 109 3452 3479
+type(
+  (unit, F.formatter, unit) format
+)
+"odoc_dot.ml" 109 3452 3460 "odoc_dot.ml" 109 3452 3479
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dot.ml" 110 3482 3490 "odoc_dot.ml" 110 3482 3506
+type(
+  F.formatter -> unit -> unit
+)
+ident(
+  ext_ref F.pp_print_flush
+)
+"odoc_dot.ml" 110 3482 3507 "odoc_dot.ml" 110 3482 3510
+type(
+  F.formatter
+)
+ident(
+  int_ref fmt "odoc_dot.ml" 102 3197 3209 "odoc_dot.ml" 102 3197 3212
+)
+"odoc_dot.ml" 110 3482 3511 "odoc_dot.ml" 110 3482 3513
+type(
+  unit
+)
+"odoc_dot.ml" 110 3482 3490 "odoc_dot.ml" 110 3482 3513
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dot.ml" 111 3515 3523 "odoc_dot.ml" 111 3515 3532
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"odoc_dot.ml" 111 3515 3533 "odoc_dot.ml" 111 3515 3535
+type(
+  out_channel
+)
+ident(
+  int_ref oc "odoc_dot.ml" 101 3151 3163 "odoc_dot.ml" 101 3151 3165
+)
+"odoc_dot.ml" 111 3515 3523 "odoc_dot.ml" 111 3515 3535
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dot.ml" 110 3482 3490 "odoc_dot.ml" 111 3515 3535
+type(
+  unit
+)
+"odoc_dot.ml" 109 3452 3460 "odoc_dot.ml" 111 3515 3535
+type(
+  unit
+)
+"odoc_dot.ml" 108 3398 3406 "odoc_dot.ml" 111 3515 3535
+type(
+  unit
+)
+"odoc_dot.ml" 104 3288 3296 "odoc_dot.ml" 111 3515 3535
+type(
+  unit
+)
+"odoc_dot.ml" 103 3248 3256 "odoc_dot.ml" 111 3515 3535
+type(
+  unit
+)
+"odoc_dot.ml" 102 3197 3205 "odoc_dot.ml" 111 3515 3535
+type(
+  unit
+)
+"odoc_dot.ml" 101 3151 3159 "odoc_dot.ml" 111 3515 3535
+type(
+  unit
+)
+"odoc_dot.ml" 113 3547 3565 "odoc_dot.ml" 113 3547 3566
+type(
+  string
+)
+ident(
+  def s "odoc_dot.ml" 114 3570 3580 "odoc_dot.ml" 114 3570 3597
+)
+"odoc_dot.ml" 113 3547 3555 "odoc_dot.ml" 113 3547 3566
+type(
+  exn
+)
+"odoc_dot.ml" 114 3570 3580 "odoc_dot.ml" 114 3570 3585
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"odoc_dot.ml" 114 3570 3595 "odoc_dot.ml" 114 3570 3596
+type(
+  string
+)
+ident(
+  int_ref s "odoc_dot.ml" 113 3547 3565 "odoc_dot.ml" 113 3547 3566
+)
+"odoc_dot.ml" 114 3570 3586 "odoc_dot.ml" 114 3570 3597
+type(
+  exn
+)
+"odoc_dot.ml" 114 3570 3580 "odoc_dot.ml" 114 3570 3597
+type(
+  unit
+)
+"odoc_dot.ml" 100 3141 3147 "odoc_dot.ml" 114 3570 3597
+type(
+  unit
+)
+"odoc_dot.ml" 116 3599 3627 "odoc_dot.ml" 116 3599 3639
+type(
+  Odoc_info.Module.t_module list
+)
+ident(
+  def modules_list "odoc_dot.ml" 117 3642 3648 "odoc_dot.ml" 132 4095 4122
+)
+"odoc_dot.ml" 118 3652 3671 "odoc_dot.ml" 118 3652 3683
+type(
+  Odoc_info.Module.t_module list
+)
+ident(
+  int_ref modules_list "odoc_dot.ml" 116 3599 3627 "odoc_dot.ml" 116 3599 3639
+)
+"odoc_dot.ml" 118 3652 3660 "odoc_dot.ml" 118 3652 3683
+type(
+  unit
+)
+"odoc_dot.ml" 119 3686 3698 "odoc_dot.ml" 119 3686 3700
+type(
+  out_channel
+)
+ident(
+  def oc "odoc_dot.ml" 120 3732 3740 "odoc_dot.ml" 129 4040 4060
+)
+"odoc_dot.ml" 119 3686 3703 "odoc_dot.ml" 119 3686 3711
+type(
+  string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out
+)
+"odoc_dot.ml" 119 3686 3712 "odoc_dot.ml" 119 3686 3713
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_dot.ml" 119 3686 3713 "odoc_dot.ml" 119 3686 3728
+type(
+  string ref
+)
+ident(
+  ext_ref Odoc_info.Global.out_file
+)
+"odoc_dot.ml" 119 3686 3712 "odoc_dot.ml" 119 3686 3728
+type(
+  string
+)
+"odoc_dot.ml" 119 3686 3703 "odoc_dot.ml" 119 3686 3728
+call(
+  stack
+)
+type(
+  out_channel
+)
+"odoc_dot.ml" 120 3732 3744 "odoc_dot.ml" 120 3732 3747
+type(
+  F.formatter
+)
+ident(
+  def fmt "odoc_dot.ml" 121 3783 3791 "odoc_dot.ml" 129 4040 4060
+)
+"odoc_dot.ml" 120 3732 3750 "odoc_dot.ml" 120 3732 3776
+type(
+  out_channel -> F.formatter
+)
+ident(
+  ext_ref F.formatter_of_out_channel
+)
+"odoc_dot.ml" 120 3732 3777 "odoc_dot.ml" 120 3732 3779
+type(
+  out_channel
+)
+ident(
+  int_ref oc "odoc_dot.ml" 119 3686 3698 "odoc_dot.ml" 119 3686 3700
+)
+"odoc_dot.ml" 120 3732 3750 "odoc_dot.ml" 120 3732 3779
+call(
+  stack
+)
+type(
+  F.formatter
+)
+"odoc_dot.ml" 121 3783 3791 "odoc_dot.ml" 121 3783 3800
+type(
+  F.formatter -> (string -> unit, F.formatter, unit) format -> string -> unit
+)
+ident(
+  ext_ref F.fprintf
+)
+"odoc_dot.ml" 121 3783 3801 "odoc_dot.ml" 121 3783 3804
+type(
+  F.formatter
+)
+ident(
+  int_ref fmt "odoc_dot.ml" 120 3732 3744 "odoc_dot.ml" 120 3732 3747
+)
+"odoc_dot.ml" 121 3783 3805 "odoc_dot.ml" 121 3783 3809
+type(
+  (string -> unit, F.formatter, unit) format
+)
+"odoc_dot.ml" 121 3783 3810 "odoc_dot.ml" 121 3783 3814
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_dot.ml" 33 1234 1243 "odoc_dot.ml" 33 1234 1249
+)
+"odoc_dot.ml" 121 3783 3810 "odoc_dot.ml" 121 3783 3821
+call(
+  stack
+)
+type(
+  string
+)
+"odoc_dot.ml" 121 3783 3791 "odoc_dot.ml" 121 3783 3821
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dot.ml" 123 3824 3835 "odoc_dot.ml" 123 3824 3836
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_dot.ml" 123 3824 3836 "odoc_dot.ml" 123 3824 3846
+type(
+  bool ref
+)
+ident(
+  int_ref dot_reduce "odoc_dot.ml" 24 1019 1023 "odoc_dot.ml" 24 1019 1033
+)
+"odoc_dot.ml" 123 3824 3835 "odoc_dot.ml" 123 3824 3846
+type(
+  bool
+)
+"odoc_dot.ml" 124 3852 3862 "odoc_dot.ml" 124 3852 3898
+type(
+  Odoc_info.Module.t_module list -> unit
+)
+ident(
+  ext_ref Odoc_info.Dep.kernel_deps_of_modules
+)
+"odoc_dot.ml" 124 3852 3899 "odoc_dot.ml" 124 3852 3911
+type(
+  Odoc_info.Module.t_module list
+)
+ident(
+  int_ref modules_list "odoc_dot.ml" 116 3599 3627 "odoc_dot.ml" 116 3599 3639
+)
+"odoc_dot.ml" 124 3852 3862 "odoc_dot.ml" 124 3852 3911
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dot.ml" 123 3824 3832 "odoc_dot.ml" 124 3852 3911
+type(
+  unit
+)
+"odoc_dot.ml" 126 3914 3922 "odoc_dot.ml" 126 3914 3931
+type(
+  (Odoc_info.Module.t_module -> unit) ->
+  Odoc_info.Module.t_module list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_dot.ml" 126 3914 3933 "odoc_dot.ml" 126 3914 3937
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_dot.ml" 33 1234 1243 "odoc_dot.ml" 33 1234 1249
+)
+"odoc_dot.ml" 126 3914 3933 "odoc_dot.ml" 126 3914 3957
+call(
+  stack
+)
+type(
+  F.formatter -> Odoc_info.Module.t_module -> unit
+)
+"odoc_dot.ml" 126 3914 3958 "odoc_dot.ml" 126 3914 3961
+type(
+  F.formatter
+)
+ident(
+  int_ref fmt "odoc_dot.ml" 120 3732 3744 "odoc_dot.ml" 120 3732 3747
+)
+"odoc_dot.ml" 126 3914 3932 "odoc_dot.ml" 126 3914 3962
+type(
+  Odoc_info.Module.t_module -> unit
+)
+"odoc_dot.ml" 126 3914 3963 "odoc_dot.ml" 126 3914 3975
+type(
+  Odoc_info.Module.t_module list
+)
+ident(
+  int_ref modules_list "odoc_dot.ml" 116 3599 3627 "odoc_dot.ml" 116 3599 3639
+)
+"odoc_dot.ml" 126 3914 3922 "odoc_dot.ml" 126 3914 3975
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dot.ml" 127 3977 3985 "odoc_dot.ml" 127 3977 3994
+type(
+  F.formatter -> (unit, F.formatter, unit) format -> unit
+)
+ident(
+  ext_ref F.fprintf
+)
+"odoc_dot.ml" 127 3977 3995 "odoc_dot.ml" 127 3977 3998
+type(
+  F.formatter
+)
+ident(
+  int_ref fmt "odoc_dot.ml" 120 3732 3744 "odoc_dot.ml" 120 3732 3747
+)
+"odoc_dot.ml" 127 3977 3999 "odoc_dot.ml" 127 3977 4004
+type(
+  (unit, F.formatter, unit) format
+)
+"odoc_dot.ml" 127 3977 3985 "odoc_dot.ml" 127 3977 4004
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dot.ml" 128 4007 4015 "odoc_dot.ml" 128 4007 4031
+type(
+  F.formatter -> unit -> unit
+)
+ident(
+  ext_ref F.pp_print_flush
+)
+"odoc_dot.ml" 128 4007 4032 "odoc_dot.ml" 128 4007 4035
+type(
+  F.formatter
+)
+ident(
+  int_ref fmt "odoc_dot.ml" 120 3732 3744 "odoc_dot.ml" 120 3732 3747
+)
+"odoc_dot.ml" 128 4007 4036 "odoc_dot.ml" 128 4007 4038
+type(
+  unit
+)
+"odoc_dot.ml" 128 4007 4015 "odoc_dot.ml" 128 4007 4038
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dot.ml" 129 4040 4048 "odoc_dot.ml" 129 4040 4057
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"odoc_dot.ml" 129 4040 4058 "odoc_dot.ml" 129 4040 4060
+type(
+  out_channel
+)
+ident(
+  int_ref oc "odoc_dot.ml" 119 3686 3698 "odoc_dot.ml" 119 3686 3700
+)
+"odoc_dot.ml" 129 4040 4048 "odoc_dot.ml" 129 4040 4060
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_dot.ml" 128 4007 4015 "odoc_dot.ml" 129 4040 4060
+type(
+  unit
+)
+"odoc_dot.ml" 127 3977 3985 "odoc_dot.ml" 129 4040 4060
+type(
+  unit
+)
+"odoc_dot.ml" 126 3914 3922 "odoc_dot.ml" 129 4040 4060
+type(
+  unit
+)
+"odoc_dot.ml" 123 3824 3832 "odoc_dot.ml" 129 4040 4060
+type(
+  unit
+)
+"odoc_dot.ml" 121 3783 3791 "odoc_dot.ml" 129 4040 4060
+type(
+  unit
+)
+"odoc_dot.ml" 120 3732 3740 "odoc_dot.ml" 129 4040 4060
+type(
+  unit
+)
+"odoc_dot.ml" 119 3686 3694 "odoc_dot.ml" 129 4040 4060
+type(
+  unit
+)
+"odoc_dot.ml" 118 3652 3660 "odoc_dot.ml" 129 4040 4060
+type(
+  unit
+)
+"odoc_dot.ml" 131 4072 4090 "odoc_dot.ml" 131 4072 4091
+type(
+  string
+)
+ident(
+  def s "odoc_dot.ml" 132 4095 4105 "odoc_dot.ml" 132 4095 4122
+)
+"odoc_dot.ml" 131 4072 4080 "odoc_dot.ml" 131 4072 4091
+type(
+  exn
+)
+"odoc_dot.ml" 132 4095 4105 "odoc_dot.ml" 132 4095 4110
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"odoc_dot.ml" 132 4095 4120 "odoc_dot.ml" 132 4095 4121
+type(
+  string
+)
+ident(
+  int_ref s "odoc_dot.ml" 131 4072 4090 "odoc_dot.ml" 131 4072 4091
+)
+"odoc_dot.ml" 132 4095 4111 "odoc_dot.ml" 132 4095 4122
+type(
+  exn
+)
+"odoc_dot.ml" 132 4095 4105 "odoc_dot.ml" 132 4095 4122
+type(
+  unit
+)
+"odoc_dot.ml" 117 3642 3648 "odoc_dot.ml" 132 4095 4122
+type(
+  unit
+)
+"odoc_dot.ml" 135 4197 4218 "odoc_dot.ml" 135 4197 4230
+type(
+  Odoc_info.Module.t_module list
+)
+ident(
+  def modules_list "odoc_dot.ml" 136 4267 4273 "odoc_dot.ml" 140 4398 4440
+)
+"odoc_dot.ml" 136 4267 4283 "odoc_dot.ml" 136 4267 4284
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_dot.ml" 136 4267 4284 "odoc_dot.ml" 136 4267 4294
+type(
+  string list ref
+)
+ident(
+  int_ref dot_colors "odoc_dot.ml" 26 1047 1051 "odoc_dot.ml" 26 1047 1061
+)
+"odoc_dot.ml" 136 4267 4283 "odoc_dot.ml" 136 4267 4294
+type(
+  string list
+)
+"odoc_dot.ml" 136 4267 4273 "odoc_dot.ml" 136 4267 4294
+type(
+  unit
+)
+"odoc_dot.ml" 137 4296 4305 "odoc_dot.ml" 137 4296 4306
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_dot.ml" 137 4296 4306 "odoc_dot.ml" 137 4296 4315
+type(
+  bool ref
+)
+ident(
+  int_ref dot_types "odoc_dot.ml" 22 992 996 "odoc_dot.ml" 22 992 1005
+)
+"odoc_dot.ml" 137 4296 4305 "odoc_dot.ml" 137 4296 4315
+type(
+  bool
+)
+"odoc_dot.ml" 138 4321 4329 "odoc_dot.ml" 138 4321 4333
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_dot.ml" 33 1234 1243 "odoc_dot.ml" 33 1234 1249
+)
+"odoc_dot.ml" 138 4321 4329 "odoc_dot.ml" 138 4321 4348
+call(
+  tail
+)
+type(
+  Odoc_info.Type.t_type list -> unit
+)
+"odoc_dot.ml" 138 4321 4350 "odoc_dot.ml" 138 4321 4372
+type(
+  Odoc_info.Module.t_module list -> Odoc_info.Type.t_type list
+)
+ident(
+  ext_ref Odoc_info.Search.types
+)
+"odoc_dot.ml" 138 4321 4373 "odoc_dot.ml" 138 4321 4385
+type(
+  Odoc_info.Module.t_module list
+)
+ident(
+  int_ref modules_list "odoc_dot.ml" 135 4197 4218 "odoc_dot.ml" 135 4197 4230
+)
+"odoc_dot.ml" 138 4321 4349 "odoc_dot.ml" 138 4321 4386
+call(
+  stack
+)
+type(
+  Odoc_info.Type.t_type list
+)
+"odoc_dot.ml" 138 4321 4329 "odoc_dot.ml" 138 4321 4386
+type(
+  unit
+)
+"odoc_dot.ml" 140 4398 4406 "odoc_dot.ml" 140 4398 4410
+type(
+  'a
+)
+ident(
+  int_ref self "odoc_dot.ml" 33 1234 1243 "odoc_dot.ml" 33 1234 1249
+)
+"odoc_dot.ml" 140 4398 4406 "odoc_dot.ml" 140 4398 4427
+call(
+  tail
+)
+type(
+  Odoc_info.Module.t_module list -> unit
+)
+"odoc_dot.ml" 140 4398 4428 "odoc_dot.ml" 140 4398 4440
+type(
+  Odoc_info.Module.t_module list
+)
+ident(
+  int_ref modules_list "odoc_dot.ml" 135 4197 4218 "odoc_dot.ml" 135 4197 4230
+)
+"odoc_dot.ml" 140 4398 4406 "odoc_dot.ml" 140 4398 4440
+type(
+  unit
+)
+"odoc_dot.ml" 137 4296 4302 "odoc_dot.ml" 140 4398 4440
+type(
+  unit
+)
+"odoc_dot.ml" 136 4267 4273 "odoc_dot.ml" 140 4398 4440
+type(
+  unit
+)

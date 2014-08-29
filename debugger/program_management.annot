@@ -1,0 +1,2429 @@
+"program_management.ml" 30 1198 1202 "program_management.ml" 30 1198 1211
+type(
+  string option ref
+)
+ident(
+  def file_name "program_management.ml" 33 1276 1276 "program_management.ml" 1 0 -1
+)
+"program_management.ml" 30 1198 1214 "program_management.ml" 30 1198 1217
+type(
+  string option -> string option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"program_management.ml" 30 1198 1219 "program_management.ml" 30 1198 1223
+type(
+  string option
+)
+type(
+  string option
+)
+"program_management.ml" 30 1198 1214 "program_management.ml" 30 1198 1240
+type(
+  string option ref
+)
+"program_management.ml" 33 1276 1280 "program_management.ml" 33 1276 1286
+type(
+  bytes
+)
+ident(
+  def buffer "program_management.ml" 34 1307 1307 "program_management.ml" 1 0 -1
+)
+"program_management.ml" 33 1276 1289 "program_management.ml" 33 1276 1301
+type(
+  int -> bytes
+)
+ident(
+  ext_ref Bytes.create
+)
+"program_management.ml" 33 1276 1302 "program_management.ml" 33 1276 1306
+type(
+  int
+)
+"program_management.ml" 33 1276 1289 "program_management.ml" 33 1276 1306
+type(
+  bytes
+)
+"program_management.ml" 34 1307 1311 "program_management.ml" 34 1307 1329
+type(
+  int -> Primitives.io_channel -> unit
+)
+ident(
+  def control_connection "program_management.ml" 44 1566 1566 "program_management.ml" 1 0 -1
+)
+"program_management.ml" 34 1307 1330 "program_management.ml" 34 1307 1333
+type(
+  int
+)
+ident(
+  def pid "program_management.ml" 34 1307 1334 "program_management.ml" 41 1509 1516
+)
+"program_management.ml" 34 1307 1334 "program_management.ml" 34 1307 1336
+type(
+  Primitives.io_channel
+)
+ident(
+  def fd "program_management.ml" 35 1339 1341 "program_management.ml" 41 1509 1516
+)
+"program_management.ml" 35 1339 1345 "program_management.ml" 35 1339 1349
+type(
+  Unix.file_descr -> bytes -> int -> int -> int
+)
+ident(
+  ext_ref Unix.read
+)
+"program_management.ml" 35 1339 1350 "program_management.ml" 35 1339 1352
+type(
+  Primitives.io_channel
+)
+ident(
+  int_ref fd "program_management.ml" 34 1307 1334 "program_management.ml" 34 1307 1336
+)
+"program_management.ml" 35 1339 1350 "program_management.ml" 35 1339 1358
+type(
+  Unix.file_descr
+)
+"program_management.ml" 35 1339 1359 "program_management.ml" 35 1339 1365
+type(
+  bytes
+)
+ident(
+  int_ref buffer "program_management.ml" 33 1276 1280 "program_management.ml" 33 1276 1286
+)
+"program_management.ml" 35 1339 1366 "program_management.ml" 35 1339 1367
+type(
+  int
+)
+"program_management.ml" 35 1339 1368 "program_management.ml" 35 1339 1372
+type(
+  int
+)
+"program_management.ml" 35 1339 1344 "program_management.ml" 35 1339 1373
+call(
+  stack
+)
+type(
+  int
+)
+"program_management.ml" 35 1339 1374 "program_management.ml" 35 1339 1375
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"program_management.ml" 35 1339 1376 "program_management.ml" 35 1339 1377
+type(
+  int
+)
+"program_management.ml" 35 1339 1344 "program_management.ml" 35 1339 1377
+type(
+  bool
+)
+"program_management.ml" 36 1383 1387 "program_management.ml" 36 1383 1401
+type(
+  Primitives.io_channel -> int -> unit
+)
+ident(
+  ext_ref Time_travel.forget_process
+)
+"program_management.ml" 36 1383 1402 "program_management.ml" 36 1383 1404
+type(
+  Primitives.io_channel
+)
+ident(
+  int_ref fd "program_management.ml" 34 1307 1334 "program_management.ml" 34 1307 1336
+)
+"program_management.ml" 36 1383 1405 "program_management.ml" 36 1383 1408
+type(
+  int
+)
+ident(
+  int_ref pid "program_management.ml" 34 1307 1330 "program_management.ml" 34 1307 1333
+)
+"program_management.ml" 36 1383 1387 "program_management.ml" 36 1383 1408
+call(
+  tail
+)
+type(
+  unit
+)
+"program_management.ml" 38 1422 1426 "program_management.ml" 38 1422 1438
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_string
+)
+"program_management.ml" 38 1422 1439 "program_management.ml" 38 1422 1467
+type(
+  string
+)
+"program_management.ml" 38 1422 1426 "program_management.ml" 38 1422 1467
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 39 1469 1473 "program_management.ml" 39 1469 1482
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_int
+)
+"program_management.ml" 39 1469 1483 "program_management.ml" 39 1469 1486
+type(
+  int
+)
+ident(
+  int_ref pid "program_management.ml" 34 1307 1330 "program_management.ml" 34 1307 1333
+)
+"program_management.ml" 39 1469 1473 "program_management.ml" 39 1469 1486
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 40 1488 1492 "program_management.ml" 40 1488 1505
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"program_management.ml" 40 1488 1506 "program_management.ml" 40 1488 1508
+type(
+  string
+)
+"program_management.ml" 40 1488 1492 "program_management.ml" 40 1488 1508
+call(
+  tail
+)
+type(
+  unit
+)
+"program_management.ml" 39 1469 1473 "program_management.ml" 40 1488 1508
+type(
+  unit
+)
+"program_management.ml" 37 1409 1416 "program_management.ml" 41 1509 1516
+type(
+  unit
+)
+"program_management.ml" 35 1339 1341 "program_management.ml" 41 1509 1516
+type(
+  unit
+)
+"program_management.ml" 44 1566 1570 "program_management.ml" 44 1566 1587
+type(
+  (unit -> unit) -> Primitives.io_channel -> unit
+)
+ident(
+  def accept_connection "program_management.ml" 60 2081 2081 "program_management.ml" 1 0 -1
+)
+"program_management.ml" 44 1566 1588 "program_management.ml" 44 1566 1596
+type(
+  unit -> unit
+)
+ident(
+  def continue "program_management.ml" 44 1566 1597 "program_management.ml" 57 2043 2050
+)
+"program_management.ml" 44 1566 1597 "program_management.ml" 44 1566 1599
+type(
+  Primitives.io_channel
+)
+ident(
+  def fd "program_management.ml" 45 1602 1604 "program_management.ml" 57 2043 2050
+)
+"program_management.ml" 45 1602 1609 "program_management.ml" 45 1602 1613
+type(
+  Unix.file_descr
+)
+ident(
+  def sock "program_management.ml" 46 1639 1641 "program_management.ml" 57 2043 2050
+)
+"program_management.ml" 45 1602 1615 "program_management.ml" 45 1602 1616
+type(
+  Unix.sockaddr
+)
+"program_management.ml" 45 1602 1608 "program_management.ml" 45 1602 1617
+type(
+  Unix.file_descr * Unix.sockaddr
+)
+"program_management.ml" 45 1602 1620 "program_management.ml" 45 1602 1626
+type(
+  Unix.file_descr -> Unix.file_descr * Unix.sockaddr
+)
+ident(
+  ext_ref Unix.accept
+)
+"program_management.ml" 45 1602 1627 "program_management.ml" 45 1602 1629
+type(
+  Primitives.io_channel
+)
+ident(
+  int_ref fd "program_management.ml" 44 1566 1597 "program_management.ml" 44 1566 1599
+)
+"program_management.ml" 45 1602 1627 "program_management.ml" 45 1602 1635
+type(
+  Unix.file_descr
+)
+"program_management.ml" 45 1602 1620 "program_management.ml" 45 1602 1635
+call(
+  stack
+)
+type(
+  Unix.file_descr * Unix.sockaddr
+)
+"program_management.ml" 46 1639 1645 "program_management.ml" 46 1639 1652
+type(
+  Primitives.io_channel
+)
+ident(
+  def io_chan "program_management.ml" 47 1683 1685 "program_management.ml" 57 2043 2050
+)
+"program_management.ml" 46 1639 1655 "program_management.ml" 46 1639 1674
+type(
+  Unix.file_descr -> Primitives.io_channel
+)
+ident(
+  ext_ref Primitives.io_channel_of_descr
+)
+"program_management.ml" 46 1639 1675 "program_management.ml" 46 1639 1679
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref sock "program_management.ml" 45 1602 1609 "program_management.ml" 45 1602 1613
+)
+"program_management.ml" 46 1639 1655 "program_management.ml" 46 1639 1679
+call(
+  stack
+)
+type(
+  Primitives.io_channel
+)
+"program_management.ml" 47 1683 1689 "program_management.ml" 47 1683 1692
+type(
+  int
+)
+ident(
+  def pid "program_management.ml" 48 1729 1731 "program_management.ml" 57 2043 2050
+)
+"program_management.ml" 47 1683 1695 "program_management.ml" 47 1683 1711
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"program_management.ml" 47 1683 1712 "program_management.ml" 47 1683 1719
+type(
+  Primitives.io_channel
+)
+ident(
+  int_ref io_chan "program_management.ml" 46 1639 1645 "program_management.ml" 46 1639 1652
+)
+"program_management.ml" 47 1683 1712 "program_management.ml" 47 1683 1725
+type(
+  in_channel
+)
+"program_management.ml" 47 1683 1695 "program_management.ml" 47 1683 1725
+call(
+  stack
+)
+type(
+  int
+)
+"program_management.ml" 48 1729 1734 "program_management.ml" 48 1729 1737
+type(
+  int
+)
+ident(
+  int_ref pid "program_management.ml" 47 1683 1689 "program_management.ml" 47 1683 1692
+)
+"program_management.ml" 48 1729 1738 "program_management.ml" 48 1729 1739
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"program_management.ml" 48 1729 1740 "program_management.ml" 48 1729 1742
+type(
+  int
+)
+"program_management.ml" 48 1729 1734 "program_management.ml" 48 1729 1742
+type(
+  bool
+)
+"program_management.ml" 49 1754 1762 "program_management.ml" 49 1754 1766
+type(
+  int
+)
+ident(
+  def pid' "program_management.ml" 50 1803 1807 "program_management.ml" 52 1899 1914
+)
+"program_management.ml" 49 1754 1769 "program_management.ml" 49 1754 1785
+type(
+  in_channel -> int
+)
+ident(
+  ext_ref Pervasives.input_binary_int
+)
+"program_management.ml" 49 1754 1786 "program_management.ml" 49 1754 1793
+type(
+  Primitives.io_channel
+)
+ident(
+  int_ref io_chan "program_management.ml" 46 1639 1645 "program_management.ml" 46 1639 1652
+)
+"program_management.ml" 49 1754 1786 "program_management.ml" 49 1754 1799
+type(
+  in_channel
+)
+"program_management.ml" 49 1754 1769 "program_management.ml" 49 1754 1799
+call(
+  stack
+)
+type(
+  int
+)
+"program_management.ml" 50 1803 1807 "program_management.ml" 50 1803 1821
+type(
+  int -> Primitives.io_channel -> unit
+)
+ident(
+  ext_ref Time_travel.new_checkpoint
+)
+"program_management.ml" 50 1803 1822 "program_management.ml" 50 1803 1826
+type(
+  int
+)
+ident(
+  int_ref pid' "program_management.ml" 49 1754 1762 "program_management.ml" 49 1754 1766
+)
+"program_management.ml" 50 1803 1827 "program_management.ml" 50 1803 1834
+type(
+  Primitives.io_channel
+)
+ident(
+  int_ref io_chan "program_management.ml" 46 1639 1645 "program_management.ml" 46 1639 1652
+)
+"program_management.ml" 50 1803 1807 "program_management.ml" 50 1803 1834
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 51 1836 1840 "program_management.ml" 51 1836 1863
+type(
+  Primitives.io_channel -> (Primitives.io_channel -> unit) -> unit
+)
+ident(
+  ext_ref Input_handling.add_file
+)
+"program_management.ml" 51 1836 1864 "program_management.ml" 51 1836 1871
+type(
+  Primitives.io_channel
+)
+ident(
+  int_ref io_chan "program_management.ml" 46 1639 1645 "program_management.ml" 46 1639 1652
+)
+"program_management.ml" 51 1836 1873 "program_management.ml" 51 1836 1891
+type(
+  int -> Primitives.io_channel -> unit
+)
+ident(
+  int_ref control_connection "program_management.ml" 34 1307 1311 "program_management.ml" 34 1307 1329
+)
+"program_management.ml" 51 1836 1892 "program_management.ml" 51 1836 1896
+type(
+  int
+)
+ident(
+  int_ref pid' "program_management.ml" 49 1754 1762 "program_management.ml" 49 1754 1766
+)
+"program_management.ml" 51 1836 1872 "program_management.ml" 51 1836 1897
+call(
+  stack
+)
+type(
+  Primitives.io_channel -> unit
+)
+"program_management.ml" 51 1836 1840 "program_management.ml" 51 1836 1897
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 52 1899 1903 "program_management.ml" 52 1899 1911
+type(
+  unit -> unit
+)
+ident(
+  int_ref continue "program_management.ml" 44 1566 1588 "program_management.ml" 44 1566 1596
+)
+"program_management.ml" 52 1899 1912 "program_management.ml" 52 1899 1914
+type(
+  unit
+)
+"program_management.ml" 52 1899 1903 "program_management.ml" 52 1899 1914
+call(
+  tail
+)
+type(
+  unit
+)
+"program_management.ml" 51 1836 1840 "program_management.ml" 52 1899 1914
+type(
+  unit
+)
+"program_management.ml" 50 1803 1807 "program_management.ml" 52 1899 1914
+type(
+  unit
+)
+"program_management.ml" 48 1729 1748 "program_management.ml" 53 1915 1922
+type(
+  unit
+)
+"program_management.ml" 55 1936 1943 "program_management.ml" 55 1936 1962
+type(
+  int -> Primitives.io_channel -> bool
+)
+ident(
+  ext_ref Time_travel.set_file_descriptor
+)
+"program_management.ml" 55 1936 1963 "program_management.ml" 55 1936 1966
+type(
+  int
+)
+ident(
+  int_ref pid "program_management.ml" 47 1683 1689 "program_management.ml" 47 1683 1692
+)
+"program_management.ml" 55 1936 1967 "program_management.ml" 55 1936 1974
+type(
+  Primitives.io_channel
+)
+ident(
+  int_ref io_chan "program_management.ml" 46 1639 1645 "program_management.ml" 46 1639 1652
+)
+"program_management.ml" 55 1936 1943 "program_management.ml" 55 1936 1974
+call(
+  stack
+)
+type(
+  bool
+)
+"program_management.ml" 56 1980 1986 "program_management.ml" 56 1980 2009
+type(
+  Primitives.io_channel -> (Primitives.io_channel -> unit) -> unit
+)
+ident(
+  ext_ref Input_handling.add_file
+)
+"program_management.ml" 56 1980 2010 "program_management.ml" 56 1980 2017
+type(
+  Primitives.io_channel
+)
+ident(
+  int_ref io_chan "program_management.ml" 46 1639 1645 "program_management.ml" 46 1639 1652
+)
+"program_management.ml" 56 1980 2019 "program_management.ml" 56 1980 2037
+type(
+  int -> Primitives.io_channel -> unit
+)
+ident(
+  int_ref control_connection "program_management.ml" 34 1307 1311 "program_management.ml" 34 1307 1329
+)
+"program_management.ml" 56 1980 2038 "program_management.ml" 56 1980 2041
+type(
+  int
+)
+ident(
+  int_ref pid "program_management.ml" 47 1683 1689 "program_management.ml" 47 1683 1692
+)
+"program_management.ml" 56 1980 2018 "program_management.ml" 56 1980 2042
+call(
+  stack
+)
+type(
+  Primitives.io_channel -> unit
+)
+"program_management.ml" 56 1980 1986 "program_management.ml" 56 1980 2042
+call(
+  tail
+)
+type(
+  unit
+)
+"program_management.ml" 54 1923 1930 "program_management.ml" 57 2043 2050
+type(
+  unit
+)
+"program_management.ml" 48 1729 1731 "program_management.ml" 57 2043 2050
+type(
+  unit
+)
+"program_management.ml" 47 1683 1685 "program_management.ml" 57 2043 2050
+type(
+  unit
+)
+"program_management.ml" 46 1639 1641 "program_management.ml" 57 2043 2050
+type(
+  unit
+)
+"program_management.ml" 45 1602 1604 "program_management.ml" 57 2043 2050
+type(
+  unit
+)
+"program_management.ml" 60 2081 2085 "program_management.ml" 60 2081 2100
+type(
+  string -> (unit -> unit) -> unit
+)
+ident(
+  def open_connection "program_management.ml" 83 2835 2835 "program_management.ml" 1 0 -1
+)
+"program_management.ml" 60 2081 2101 "program_management.ml" 60 2081 2108
+type(
+  string
+)
+ident(
+  def address "program_management.ml" 60 2081 2109 "program_management.ml" 80 2748 2809
+)
+"program_management.ml" 60 2081 2109 "program_management.ml" 60 2081 2117
+type(
+  unit -> unit
+)
+ident(
+  def continue "program_management.ml" 61 2120 2122 "program_management.ml" 80 2748 2809
+)
+"program_management.ml" 62 2126 2135 "program_management.ml" 62 2126 2146
+type(
+  Unix.socket_domain
+)
+ident(
+  def sock_domain "program_management.ml" 63 2191 2197 "program_management.ml" 77 2669 2708
+)
+"program_management.ml" 62 2126 2148 "program_management.ml" 62 2126 2160
+type(
+  Unix.sockaddr
+)
+ident(
+  def sock_address "program_management.ml" 63 2191 2197 "program_management.ml" 77 2669 2708
+)
+"program_management.ml" 62 2126 2134 "program_management.ml" 62 2126 2161
+type(
+  Unix.socket_domain * Unix.sockaddr
+)
+"program_management.ml" 62 2126 2164 "program_management.ml" 62 2126 2179
+type(
+  string -> Unix.socket_domain * Unix.sockaddr
+)
+ident(
+  ext_ref Unix_tools.convert_address
+)
+"program_management.ml" 62 2126 2180 "program_management.ml" 62 2126 2187
+type(
+  string
+)
+ident(
+  int_ref address "program_management.ml" 60 2081 2101 "program_management.ml" 60 2081 2108
+)
+"program_management.ml" 62 2126 2164 "program_management.ml" 62 2126 2187
+call(
+  stack
+)
+type(
+  Unix.socket_domain * Unix.sockaddr
+)
+"program_management.ml" 63 2191 2197 "program_management.ml" 63 2191 2206
+type(
+  string option ref
+)
+ident(
+  int_ref file_name "program_management.ml" 30 1198 1202 "program_management.ml" 30 1198 1211
+)
+"program_management.ml" 63 2191 2207 "program_management.ml" 63 2191 2209
+type(
+  string option ref -> string option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"program_management.ml" 64 2210 2225 "program_management.ml" 64 2210 2237
+type(
+  Unix.sockaddr
+)
+ident(
+  int_ref sock_address "program_management.ml" 62 2126 2148 "program_management.ml" 62 2126 2160
+)
+"program_management.ml" 65 2243 2264 "program_management.ml" 65 2243 2268
+type(
+  string
+)
+ident(
+  def file "program_management.ml" 66 2272 2285 "program_management.ml" 66 2272 2294
+)
+"program_management.ml" 65 2243 2254 "program_management.ml" 65 2243 2268
+type(
+  Unix.sockaddr
+)
+"program_management.ml" 66 2272 2290 "program_management.ml" 66 2272 2294
+type(
+  string
+)
+ident(
+  int_ref file "program_management.ml" 65 2243 2264 "program_management.ml" 65 2243 2268
+)
+"program_management.ml" 66 2272 2285 "program_management.ml" 66 2272 2294
+type(
+  string option
+)
+"program_management.ml" 67 2295 2306 "program_management.ml" 67 2295 2307
+type(
+  Unix.sockaddr
+)
+"program_management.ml" 68 2311 2324 "program_management.ml" 68 2311 2328
+type(
+  string option
+)
+"program_management.ml" 64 2210 2218 "program_management.ml" 68 2311 2329
+type(
+  string option
+)
+"program_management.ml" 63 2191 2197 "program_management.ml" 68 2311 2329
+type(
+  unit
+)
+"program_management.ml" 69 2331 2341 "program_management.ml" 69 2331 2345
+type(
+  Unix.file_descr
+)
+ident(
+  def sock "program_management.ml" 70 2384 2392 "program_management.ml" 77 2669 2708
+)
+"program_management.ml" 69 2331 2348 "program_management.ml" 69 2331 2354
+type(
+  Unix.socket_domain -> Unix.socket_type -> int -> Unix.file_descr
+)
+ident(
+  ext_ref Unix.socket
+)
+"program_management.ml" 69 2331 2355 "program_management.ml" 69 2331 2366
+type(
+  Unix.socket_domain
+)
+ident(
+  int_ref sock_domain "program_management.ml" 62 2126 2135 "program_management.ml" 62 2126 2146
+)
+"program_management.ml" 69 2331 2367 "program_management.ml" 69 2331 2378
+type(
+  Unix.socket_type
+)
+"program_management.ml" 69 2331 2379 "program_management.ml" 69 2331 2380
+type(
+  int
+)
+"program_management.ml" 69 2331 2348 "program_management.ml" 69 2331 2380
+call(
+  stack
+)
+type(
+  Unix.file_descr
+)
+"program_management.ml" 71 2397 2408 "program_management.ml" 71 2397 2412
+type(
+  Unix.file_descr -> Unix.sockaddr -> unit
+)
+ident(
+  ext_ref Unix.bind
+)
+"program_management.ml" 71 2397 2413 "program_management.ml" 71 2397 2417
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref sock "program_management.ml" 69 2331 2341 "program_management.ml" 69 2331 2345
+)
+"program_management.ml" 71 2397 2418 "program_management.ml" 71 2397 2430
+type(
+  Unix.sockaddr
+)
+ident(
+  int_ref sock_address "program_management.ml" 62 2126 2148 "program_management.ml" 62 2126 2160
+)
+"program_management.ml" 71 2397 2408 "program_management.ml" 71 2397 2430
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 72 2432 2443 "program_management.ml" 72 2432 2453
+type(
+  Unix.file_descr -> Unix.socket_bool_option -> bool -> unit
+)
+ident(
+  ext_ref Unix.setsockopt
+)
+"program_management.ml" 72 2432 2454 "program_management.ml" 72 2432 2458
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref sock "program_management.ml" 69 2331 2341 "program_management.ml" 69 2331 2345
+)
+"program_management.ml" 72 2432 2459 "program_management.ml" 72 2432 2471
+type(
+  Unix.socket_bool_option
+)
+"program_management.ml" 72 2432 2472 "program_management.ml" 72 2432 2476
+type(
+  bool
+)
+"program_management.ml" 72 2432 2443 "program_management.ml" 72 2432 2476
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 73 2478 2489 "program_management.ml" 73 2478 2495
+type(
+  Unix.file_descr -> int -> unit
+)
+ident(
+  ext_ref Unix.listen
+)
+"program_management.ml" 73 2478 2496 "program_management.ml" 73 2478 2500
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref sock "program_management.ml" 69 2331 2341 "program_management.ml" 69 2331 2345
+)
+"program_management.ml" 73 2478 2501 "program_management.ml" 73 2478 2502
+type(
+  int
+)
+"program_management.ml" 73 2478 2489 "program_management.ml" 73 2478 2502
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 74 2504 2515 "program_management.ml" 74 2504 2525
+type(
+  Primitives.io_channel ref
+)
+ident(
+  ext_ref Program_loading.connection
+)
+"program_management.ml" 74 2504 2526 "program_management.ml" 74 2504 2528
+type(
+  Primitives.io_channel ref -> Primitives.io_channel -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"program_management.ml" 74 2504 2529 "program_management.ml" 74 2504 2548
+type(
+  Unix.file_descr -> Primitives.io_channel
+)
+ident(
+  ext_ref Primitives.io_channel_of_descr
+)
+"program_management.ml" 74 2504 2549 "program_management.ml" 74 2504 2553
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref sock "program_management.ml" 69 2331 2341 "program_management.ml" 69 2331 2345
+)
+"program_management.ml" 74 2504 2529 "program_management.ml" 74 2504 2553
+call(
+  stack
+)
+type(
+  Primitives.io_channel
+)
+"program_management.ml" 74 2504 2515 "program_management.ml" 74 2504 2553
+type(
+  unit
+)
+"program_management.ml" 75 2555 2566 "program_management.ml" 75 2555 2589
+type(
+  Primitives.io_channel -> (Primitives.io_channel -> unit) -> unit
+)
+ident(
+  ext_ref Input_handling.add_file
+)
+"program_management.ml" 75 2555 2590 "program_management.ml" 75 2555 2591
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 75 2555 2591 "program_management.ml" 75 2555 2601
+type(
+  Primitives.io_channel ref
+)
+ident(
+  ext_ref Program_loading.connection
+)
+"program_management.ml" 75 2555 2590 "program_management.ml" 75 2555 2601
+type(
+  Primitives.io_channel
+)
+"program_management.ml" 75 2555 2603 "program_management.ml" 75 2555 2620
+type(
+  (unit -> unit) -> Primitives.io_channel -> unit
+)
+ident(
+  int_ref accept_connection "program_management.ml" 44 1566 1570 "program_management.ml" 44 1566 1587
+)
+"program_management.ml" 75 2555 2621 "program_management.ml" 75 2555 2629
+type(
+  unit -> unit
+)
+ident(
+  int_ref continue "program_management.ml" 60 2081 2109 "program_management.ml" 60 2081 2117
+)
+"program_management.ml" 75 2555 2602 "program_management.ml" 75 2555 2630
+call(
+  stack
+)
+type(
+  Primitives.io_channel -> unit
+)
+"program_management.ml" 75 2555 2566 "program_management.ml" 75 2555 2630
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 76 2632 2643 "program_management.ml" 76 2632 2660
+type(
+  bool ref
+)
+ident(
+  ext_ref Program_loading.connection_opened
+)
+"program_management.ml" 76 2632 2661 "program_management.ml" 76 2632 2663
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"program_management.ml" 76 2632 2664 "program_management.ml" 76 2632 2668
+type(
+  bool
+)
+"program_management.ml" 76 2632 2643 "program_management.ml" 76 2632 2668
+type(
+  unit
+)
+"program_management.ml" 75 2555 2566 "program_management.ml" 76 2632 2668
+type(
+  unit
+)
+"program_management.ml" 74 2504 2515 "program_management.ml" 76 2632 2668
+type(
+  unit
+)
+"program_management.ml" 73 2478 2489 "program_management.ml" 76 2632 2668
+type(
+  unit
+)
+"program_management.ml" 72 2432 2443 "program_management.ml" 76 2632 2668
+type(
+  unit
+)
+"program_management.ml" 71 2397 2408 "program_management.ml" 76 2632 2668
+type(
+  unit
+)
+"program_management.ml" 77 2669 2683 "program_management.ml" 77 2669 2684
+type(
+  exn
+)
+ident(
+  def x "program_management.ml" 77 2669 2688 "program_management.ml" 77 2669 2707
+)
+"program_management.ml" 77 2669 2688 "program_management.ml" 77 2669 2693
+type(
+  Unix.file_descr -> unit
+)
+ident(
+  ext_ref Unix.close
+)
+"program_management.ml" 77 2669 2694 "program_management.ml" 77 2669 2698
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref sock "program_management.ml" 69 2331 2341 "program_management.ml" 69 2331 2345
+)
+"program_management.ml" 77 2669 2688 "program_management.ml" 77 2669 2698
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 77 2669 2700 "program_management.ml" 77 2669 2705
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"program_management.ml" 77 2669 2706 "program_management.ml" 77 2669 2707
+type(
+  exn
+)
+ident(
+  int_ref x "program_management.ml" 77 2669 2683 "program_management.ml" 77 2669 2684
+)
+"program_management.ml" 77 2669 2700 "program_management.ml" 77 2669 2707
+type(
+  unit
+)
+"program_management.ml" 77 2669 2688 "program_management.ml" 77 2669 2707
+type(
+  unit
+)
+"program_management.ml" 70 2384 2392 "program_management.ml" 77 2669 2708
+type(
+  unit
+)
+"program_management.ml" 69 2331 2337 "program_management.ml" 77 2669 2708
+type(
+  unit
+)
+"program_management.ml" 63 2191 2197 "program_management.ml" 77 2669 2708
+type(
+  unit
+)
+"program_management.ml" 62 2126 2130 "program_management.ml" 77 2669 2708
+type(
+  unit
+)
+"program_management.ml" 79 2716 2728 "program_management.ml" 79 2716 2729
+type(
+  string
+)
+"program_management.ml" 79 2716 2720 "program_management.ml" 79 2716 2729
+type(
+  exn
+)
+"program_management.ml" 79 2716 2733 "program_management.ml" 79 2716 2738
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"program_management.ml" 79 2716 2739 "program_management.ml" 79 2716 2747
+type(
+  exn
+)
+"program_management.ml" 79 2716 2733 "program_management.ml" 79 2716 2747
+type(
+  unit
+)
+"program_management.ml" 80 2748 2764 "program_management.ml" 80 2748 2765
+type(
+  string
+)
+type(
+  string
+)
+type(
+  Unix.error
+)
+"program_management.ml" 80 2748 2752 "program_management.ml" 80 2748 2766
+type(
+  exn
+)
+"program_management.ml" 80 2748 2770 "program_management.ml" 80 2748 2773
+ident(
+  def err "program_management.ml" 80 2748 2777 "program_management.ml" 80 2748 2809
+)
+"program_management.ml" 80 2748 2752 "program_management.ml" 80 2748 2773
+type(
+  exn
+)
+"program_management.ml" 80 2748 2777 "program_management.ml" 80 2748 2789
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Unix_tools.report_error
+)
+"program_management.ml" 80 2748 2790 "program_management.ml" 80 2748 2793
+type(
+  exn
+)
+ident(
+  int_ref err "program_management.ml" 80 2748 2752 "program_management.ml" 80 2748 2773
+)
+"program_management.ml" 80 2748 2777 "program_management.ml" 80 2748 2793
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 80 2748 2795 "program_management.ml" 80 2748 2800
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"program_management.ml" 80 2748 2801 "program_management.ml" 80 2748 2809
+type(
+  exn
+)
+"program_management.ml" 80 2748 2795 "program_management.ml" 80 2748 2809
+type(
+  unit
+)
+"program_management.ml" 80 2748 2777 "program_management.ml" 80 2748 2809
+type(
+  unit
+)
+"program_management.ml" 61 2120 2122 "program_management.ml" 80 2748 2809
+type(
+  unit
+)
+"program_management.ml" 83 2835 2839 "program_management.ml" 83 2835 2855
+type(
+  unit -> unit
+)
+ident(
+  def close_connection "program_management.ml" 96 3121 3121 "program_management.ml" 1 0 -1
+)
+"program_management.ml" 83 2835 2856 "program_management.ml" 83 2835 2858
+type(
+  unit
+)
+"program_management.ml" 84 2861 2866 "program_management.ml" 84 2861 2867
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 84 2861 2867 "program_management.ml" 84 2861 2884
+type(
+  bool ref
+)
+ident(
+  ext_ref Program_loading.connection_opened
+)
+"program_management.ml" 84 2861 2866 "program_management.ml" 84 2861 2884
+type(
+  bool
+)
+"program_management.ml" 85 2896 2900 "program_management.ml" 85 2896 2917
+type(
+  bool ref
+)
+ident(
+  ext_ref Program_loading.connection_opened
+)
+"program_management.ml" 85 2896 2918 "program_management.ml" 85 2896 2920
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"program_management.ml" 85 2896 2921 "program_management.ml" 85 2896 2926
+type(
+  bool
+)
+"program_management.ml" 85 2896 2900 "program_management.ml" 85 2896 2926
+type(
+  unit
+)
+"program_management.ml" 86 2928 2932 "program_management.ml" 86 2928 2958
+type(
+  Primitives.io_channel -> unit
+)
+ident(
+  ext_ref Input_handling.remove_file
+)
+"program_management.ml" 86 2928 2959 "program_management.ml" 86 2928 2960
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 86 2928 2960 "program_management.ml" 86 2928 2970
+type(
+  Primitives.io_channel ref
+)
+ident(
+  ext_ref Program_loading.connection
+)
+"program_management.ml" 86 2928 2959 "program_management.ml" 86 2928 2970
+type(
+  Primitives.io_channel
+)
+"program_management.ml" 86 2928 2932 "program_management.ml" 86 2928 2970
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 87 2972 2976 "program_management.ml" 87 2972 2984
+type(
+  Primitives.io_channel -> unit
+)
+ident(
+  ext_ref Primitives.close_io
+)
+"program_management.ml" 87 2972 2985 "program_management.ml" 87 2972 2986
+type(
+  Primitives.io_channel ref -> Primitives.io_channel
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 87 2972 2986 "program_management.ml" 87 2972 2996
+type(
+  Primitives.io_channel ref
+)
+ident(
+  ext_ref Program_loading.connection
+)
+"program_management.ml" 87 2972 2985 "program_management.ml" 87 2972 2996
+type(
+  Primitives.io_channel
+)
+"program_management.ml" 87 2972 2976 "program_management.ml" 87 2972 2996
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 88 2998 3008 "program_management.ml" 88 2998 3009
+type(
+  string option ref -> string option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 88 2998 3009 "program_management.ml" 88 2998 3018
+type(
+  string option ref
+)
+ident(
+  int_ref file_name "program_management.ml" 30 1198 1202 "program_management.ml" 30 1198 1211
+)
+"program_management.ml" 88 2998 3008 "program_management.ml" 88 2998 3018
+type(
+  string option
+)
+"program_management.ml" 89 3024 3035 "program_management.ml" 89 3024 3039
+type(
+  string
+)
+ident(
+  def file "program_management.ml" 90 3043 3051 "program_management.ml" 90 3043 3062
+)
+"program_management.ml" 89 3024 3030 "program_management.ml" 89 3024 3039
+type(
+  string option
+)
+"program_management.ml" 90 3043 3051 "program_management.ml" 90 3043 3057
+type(
+  string -> unit
+)
+ident(
+  ext_ref Unix.unlink
+)
+"program_management.ml" 90 3043 3058 "program_management.ml" 90 3043 3062
+type(
+  string
+)
+ident(
+  int_ref file "program_management.ml" 89 3024 3035 "program_management.ml" 89 3024 3039
+)
+"program_management.ml" 90 3043 3051 "program_management.ml" 90 3043 3062
+call(
+  tail
+)
+type(
+  unit
+)
+"program_management.ml" 91 3063 3069 "program_management.ml" 91 3063 3073
+type(
+  string option
+)
+"program_management.ml" 92 3077 3085 "program_management.ml" 92 3077 3087
+type(
+  unit
+)
+"program_management.ml" 88 2998 3002 "program_management.ml" 92 3077 3087
+type(
+  unit
+)
+"program_management.ml" 87 2972 2976 "program_management.ml" 92 3077 3087
+type(
+  unit
+)
+"program_management.ml" 86 2928 2932 "program_management.ml" 92 3077 3087
+type(
+  unit
+)
+"program_management.ml" 84 2861 2890 "program_management.ml" 93 3088 3095
+type(
+  unit
+)
+"program_management.ml" 84 2861 2863 "program_management.ml" 93 3088 3095
+type(
+  unit
+)
+"program_management.ml" 96 3121 3125 "program_management.ml" 96 3121 3131
+type(
+  bool ref
+)
+ident(
+  def loaded "program_management.ml" 98 3145 3145 "program_management.ml" 1 0 -1
+)
+"program_management.ml" 96 3121 3134 "program_management.ml" 96 3121 3137
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"program_management.ml" 96 3121 3138 "program_management.ml" 96 3121 3143
+type(
+  bool
+)
+"program_management.ml" 96 3121 3134 "program_management.ml" 96 3121 3143
+type(
+  bool ref
+)
+"program_management.ml" 98 3145 3149 "program_management.ml" 98 3145 3161
+type(
+  unit -> unit
+)
+ident(
+  def kill_program "program_management.ml" 105 3305 3305 "program_management.ml" 1 0 -1
+)
+"program_management.ml" 98 3145 3162 "program_management.ml" 98 3145 3164
+type(
+  unit
+)
+"program_management.ml" 99 3167 3169 "program_management.ml" 99 3167 3203
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Breakpoints.remove_all_breakpoints
+)
+"program_management.ml" 99 3167 3204 "program_management.ml" 99 3167 3206
+type(
+  unit
+)
+"program_management.ml" 99 3167 3169 "program_management.ml" 99 3167 3206
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 100 3208 3210 "program_management.ml" 100 3208 3231
+type(
+  unit -> unit
+)
+ident(
+  ext_ref History.empty_history
+)
+"program_management.ml" 100 3208 3232 "program_management.ml" 100 3208 3234
+type(
+  unit
+)
+"program_management.ml" 100 3208 3210 "program_management.ml" 100 3208 3234
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 101 3236 3238 "program_management.ml" 101 3236 3258
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Time_travel.kill_all_checkpoints
+)
+"program_management.ml" 101 3236 3259 "program_management.ml" 101 3236 3261
+type(
+  unit
+)
+"program_management.ml" 101 3236 3238 "program_management.ml" 101 3236 3261
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 102 3263 3265 "program_management.ml" 102 3263 3271
+type(
+  bool ref
+)
+ident(
+  int_ref loaded "program_management.ml" 96 3121 3125 "program_management.ml" 96 3121 3131
+)
+"program_management.ml" 102 3263 3272 "program_management.ml" 102 3263 3274
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"program_management.ml" 102 3263 3275 "program_management.ml" 102 3263 3280
+type(
+  bool
+)
+"program_management.ml" 102 3263 3265 "program_management.ml" 102 3263 3280
+type(
+  unit
+)
+"program_management.ml" 103 3282 3284 "program_management.ml" 103 3282 3300
+type(
+  unit -> unit
+)
+ident(
+  int_ref close_connection "program_management.ml" 83 2835 2839 "program_management.ml" 83 2835 2855
+)
+"program_management.ml" 103 3282 3301 "program_management.ml" 103 3282 3303
+type(
+  unit
+)
+"program_management.ml" 103 3282 3284 "program_management.ml" 103 3282 3303
+call(
+  tail
+)
+type(
+  unit
+)
+"program_management.ml" 102 3263 3265 "program_management.ml" 103 3282 3303
+type(
+  unit
+)
+"program_management.ml" 101 3236 3238 "program_management.ml" 103 3282 3303
+type(
+  unit
+)
+"program_management.ml" 100 3208 3210 "program_management.ml" 103 3282 3303
+type(
+  unit
+)
+"program_management.ml" 99 3167 3169 "program_management.ml" 103 3282 3303
+type(
+  unit
+)
+"program_management.ml" 105 3305 3309 "program_management.ml" 105 3305 3325
+type(
+  unit -> bool
+)
+ident(
+  def ask_kill_program "program_management.ml" 116 3554 3554 "program_management.ml" 1 0 -1
+)
+"program_management.ml" 105 3305 3326 "program_management.ml" 105 3305 3328
+type(
+  unit
+)
+"program_management.ml" 106 3331 3336 "program_management.ml" 106 3331 3339
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"program_management.ml" 106 3331 3340 "program_management.ml" 106 3331 3341
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 106 3331 3341 "program_management.ml" 106 3331 3347
+type(
+  bool ref
+)
+ident(
+  int_ref loaded "program_management.ml" 96 3121 3125 "program_management.ml" 96 3121 3131
+)
+"program_management.ml" 106 3331 3340 "program_management.ml" 106 3331 3347
+type(
+  bool
+)
+"program_management.ml" 106 3331 3336 "program_management.ml" 106 3331 3347
+type(
+  bool
+)
+"program_management.ml" 107 3353 3357 "program_management.ml" 107 3353 3361
+type(
+  bool
+)
+"program_management.ml" 109 3369 3377 "program_management.ml" 109 3369 3383
+type(
+  bool
+)
+ident(
+  def answer "program_management.ml" 110 3446 3452 "program_management.ml" 112 3492 3504
+)
+"program_management.ml" 109 3369 3386 "program_management.ml" 109 3369 3395
+type(
+  string -> bool
+)
+ident(
+  ext_ref Question.yes_or_no
+)
+"program_management.ml" 109 3369 3396 "program_management.ml" 109 3369 3442
+type(
+  string
+)
+"program_management.ml" 109 3369 3386 "program_management.ml" 109 3369 3442
+call(
+  stack
+)
+type(
+  bool
+)
+"program_management.ml" 110 3446 3455 "program_management.ml" 110 3446 3461
+type(
+  bool
+)
+ident(
+  int_ref answer "program_management.ml" 109 3369 3377 "program_management.ml" 109 3369 3383
+)
+"program_management.ml" 111 3467 3475 "program_management.ml" 111 3467 3487
+type(
+  unit -> unit
+)
+ident(
+  int_ref kill_program "program_management.ml" 98 3145 3149 "program_management.ml" 98 3145 3161
+)
+"program_management.ml" 111 3467 3488 "program_management.ml" 111 3467 3490
+type(
+  unit
+)
+"program_management.ml" 111 3467 3475 "program_management.ml" 111 3467 3490
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 110 3446 3452 "program_management.ml" 111 3467 3490
+type(
+  unit
+)
+"program_management.ml" 112 3492 3498 "program_management.ml" 112 3492 3504
+type(
+  bool
+)
+ident(
+  int_ref answer "program_management.ml" 109 3369 3377 "program_management.ml" 109 3369 3383
+)
+"program_management.ml" 110 3446 3452 "program_management.ml" 112 3492 3504
+type(
+  bool
+)
+"program_management.ml" 109 3369 3373 "program_management.ml" 112 3492 3504
+type(
+  bool
+)
+"program_management.ml" 106 3331 3333 "program_management.ml" 112 3492 3504
+type(
+  bool
+)
+"program_management.ml" 116 3554 3558 "program_management.ml" 116 3554 3576
+type(
+  unit -> unit
+)
+ident(
+  def initialize_loading "program_management.ml" 138 4248 4248 "program_management.ml" 1 0 -1
+)
+"program_management.ml" 116 3554 3577 "program_management.ml" 116 3554 3579
+type(
+  unit
+)
+"program_management.ml" 117 3582 3587 "program_management.ml" 117 3582 3588
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 117 3582 3588 "program_management.ml" 117 3582 3601
+type(
+  bool ref
+)
+ident(
+  ext_ref Program_loading.debug_loading
+)
+"program_management.ml" 117 3582 3587 "program_management.ml" 117 3582 3601
+type(
+  bool
+)
+"program_management.ml" 118 3613 3617 "program_management.ml" 118 3613 3630
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"program_management.ml" 118 3613 3631 "program_management.ml" 118 3613 3665
+type(
+  string
+)
+"program_management.ml" 118 3613 3617 "program_management.ml" 118 3613 3665
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 119 3667 3671 "program_management.ml" 119 3667 3685
+type(
+  out_channel -> (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"program_management.ml" 119 3667 3686 "program_management.ml" 119 3667 3703
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stderr
+)
+"program_management.ml" 119 3667 3704 "program_management.ml" 119 3667 3725
+type(
+  (string -> unit, out_channel, unit) format
+)
+"program_management.ml" 119 3667 3726 "program_management.ml" 119 3667 3727
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 119 3667 3727 "program_management.ml" 119 3667 3739
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.program_name
+)
+"program_management.ml" 119 3667 3726 "program_management.ml" 119 3667 3739
+type(
+  string
+)
+"program_management.ml" 119 3667 3671 "program_management.ml" 119 3667 3740
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 117 3582 3607 "program_management.ml" 120 3741 3746
+type(
+  unit
+)
+"program_management.ml" 117 3582 3584 "program_management.ml" 120 3741 3746
+type(
+  unit
+)
+"program_management.ml" 121 3748 3760 "program_management.ml" 121 3748 3766
+type(
+  string -> Unix.access_permission list -> unit
+)
+ident(
+  ext_ref Unix.access
+)
+"program_management.ml" 121 3748 3767 "program_management.ml" 121 3748 3768
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 121 3748 3768 "program_management.ml" 121 3748 3780
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.program_name
+)
+"program_management.ml" 121 3748 3767 "program_management.ml" 121 3748 3780
+type(
+  string
+)
+"program_management.ml" 121 3748 3782 "program_management.ml" 121 3748 3786
+type(
+  Unix.access_permission
+)
+"program_management.ml" 121 3748 3781 "program_management.ml" 121 3748 3787
+type(
+  Unix.access_permission list
+)
+"program_management.ml" 121 3748 3760 "program_management.ml" 121 3748 3787
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 122 3788 3806 "program_management.ml" 122 3788 3807
+type(
+  string
+)
+type(
+  string
+)
+type(
+  Unix.error
+)
+"program_management.ml" 122 3788 3795 "program_management.ml" 122 3788 3807
+type(
+  exn
+)
+"program_management.ml" 123 3811 3815 "program_management.ml" 123 3811 3828
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"program_management.ml" 123 3811 3829 "program_management.ml" 123 3811 3849
+type(
+  string
+)
+"program_management.ml" 123 3811 3815 "program_management.ml" 123 3811 3849
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 124 3851 3855 "program_management.ml" 124 3851 3860
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"program_management.ml" 124 3851 3861 "program_management.ml" 124 3851 3869
+type(
+  exn
+)
+"program_management.ml" 124 3851 3855 "program_management.ml" 124 3851 3870
+type(
+  unit
+)
+"program_management.ml" 123 3811 3815 "program_management.ml" 124 3851 3870
+type(
+  unit
+)
+"program_management.ml" 121 3748 3750 "program_management.ml" 125 3871 3876
+type(
+  unit
+)
+"program_management.ml" 126 3878 3880 "program_management.ml" 126 3878 3900
+type(
+  string -> unit
+)
+ident(
+  ext_ref Symbols.read_symbols
+)
+"program_management.ml" 126 3878 3901 "program_management.ml" 126 3878 3902
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 126 3878 3902 "program_management.ml" 126 3878 3914
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.program_name
+)
+"program_management.ml" 126 3878 3901 "program_management.ml" 126 3878 3914
+type(
+  string
+)
+"program_management.ml" 126 3878 3880 "program_management.ml" 126 3878 3914
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 127 3916 3918 "program_management.ml" 127 3916 3934
+type(
+  string list ref
+)
+ident(
+  ext_ref Config.load_path
+)
+"program_management.ml" 127 3916 3935 "program_management.ml" 127 3916 3937
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"program_management.ml" 127 3916 3938 "program_management.ml" 127 3916 3939
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 127 3916 3939 "program_management.ml" 127 3916 3955
+type(
+  string list ref
+)
+ident(
+  ext_ref Config.load_path
+)
+"program_management.ml" 127 3916 3938 "program_management.ml" 127 3916 3955
+type(
+  string list
+)
+"program_management.ml" 127 3916 3956 "program_management.ml" 127 3916 3957
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"program_management.ml" 127 3916 3958 "program_management.ml" 127 3916 3959
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 127 3916 3959 "program_management.ml" 127 3916 3986
+type(
+  string list ref
+)
+ident(
+  ext_ref Symbols.program_source_dirs
+)
+"program_management.ml" 127 3916 3958 "program_management.ml" 127 3916 3986
+type(
+  string list
+)
+"program_management.ml" 127 3916 3938 "program_management.ml" 127 3916 3986
+call(
+  stack
+)
+type(
+  string list
+)
+"program_management.ml" 127 3916 3918 "program_management.ml" 127 3916 3986
+type(
+  unit
+)
+"program_management.ml" 128 3988 3990 "program_management.ml" 128 3988 4008
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Envaux.reset_cache
+)
+"program_management.ml" 128 3988 4009 "program_management.ml" 128 3988 4011
+type(
+  unit
+)
+"program_management.ml" 128 3988 3990 "program_management.ml" 128 3988 4011
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 129 4013 4018 "program_management.ml" 129 4013 4019
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 129 4013 4019 "program_management.ml" 129 4013 4032
+type(
+  bool ref
+)
+ident(
+  ext_ref Program_loading.debug_loading
+)
+"program_management.ml" 129 4013 4018 "program_management.ml" 129 4013 4032
+type(
+  bool
+)
+"program_management.ml" 130 4038 4042 "program_management.ml" 130 4038 4055
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"program_management.ml" 130 4038 4056 "program_management.ml" 130 4038 4077
+type(
+  string
+)
+"program_management.ml" 130 4038 4042 "program_management.ml" 130 4038 4077
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 129 4013 4015 "program_management.ml" 130 4038 4077
+type(
+  unit
+)
+"program_management.ml" 131 4079 4081 "program_management.ml" 131 4079 4096
+type(
+  string -> (unit -> unit) -> unit
+)
+ident(
+  int_ref open_connection "program_management.ml" 60 2081 2085 "program_management.ml" 60 2081 2100
+)
+"program_management.ml" 131 4079 4097 "program_management.ml" 131 4079 4098
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 131 4079 4098 "program_management.ml" 131 4079 4109
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.socket_name
+)
+"program_management.ml" 131 4079 4097 "program_management.ml" 131 4079 4109
+type(
+  string
+)
+"program_management.ml" 132 4110 4124 "program_management.ml" 132 4110 4126
+type(
+  unit
+)
+"program_management.ml" 133 4130 4136 "program_management.ml" 133 4130 4141
+type(
+  int64 -> unit
+)
+ident(
+  ext_ref Time_travel.go_to
+)
+"program_management.ml" 133 4130 4142 "program_management.ml" 133 4130 4144
+type(
+  int64
+)
+ident(
+  ext_ref Int64ops._0
+)
+"program_management.ml" 133 4130 4136 "program_management.ml" 133 4130 4144
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 134 4146 4152 "program_management.ml" 134 4146 4174
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Symbols.set_all_events
+)
+"program_management.ml" 134 4146 4174 "program_management.ml" 134 4146 4176
+type(
+  unit
+)
+"program_management.ml" 134 4146 4152 "program_management.ml" 134 4146 4176
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 135 4178 4184 "program_management.ml" 135 4178 4198
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Input_handling.exit_main_loop
+)
+"program_management.ml" 135 4178 4199 "program_management.ml" 135 4178 4201
+type(
+  unit
+)
+"program_management.ml" 135 4178 4184 "program_management.ml" 135 4178 4201
+call(
+  tail
+)
+type(
+  unit
+)
+"program_management.ml" 134 4146 4152 "program_management.ml" 135 4178 4201
+type(
+  unit
+)
+"program_management.ml" 133 4130 4136 "program_management.ml" 135 4178 4201
+type(
+  unit
+)
+"program_management.ml" 132 4110 4114 "program_management.ml" 135 4178 4202
+type(
+  unit -> unit
+)
+"program_management.ml" 131 4079 4081 "program_management.ml" 135 4178 4202
+call(
+  tail
+)
+type(
+  unit
+)
+"program_management.ml" 129 4013 4015 "program_management.ml" 135 4178 4202
+type(
+  unit
+)
+"program_management.ml" 128 3988 3990 "program_management.ml" 135 4178 4202
+type(
+  unit
+)
+"program_management.ml" 127 3916 3918 "program_management.ml" 135 4178 4202
+type(
+  unit
+)
+"program_management.ml" 126 3878 3880 "program_management.ml" 135 4178 4202
+type(
+  unit
+)
+"program_management.ml" 121 3748 3750 "program_management.ml" 135 4178 4202
+type(
+  unit
+)
+"program_management.ml" 117 3582 3584 "program_management.ml" 135 4178 4202
+type(
+  unit
+)
+"program_management.ml" 138 4248 4252 "program_management.ml" 138 4248 4265
+type(
+  unit -> unit
+)
+ident(
+  def ensure_loaded "program_management.ml" 158 4752 4757 "program_management.ml" 1 0 -1
+)
+"program_management.ml" 138 4248 4266 "program_management.ml" 138 4248 4268
+type(
+  unit
+)
+"program_management.ml" 139 4271 4276 "program_management.ml" 139 4271 4279
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"program_management.ml" 139 4271 4280 "program_management.ml" 139 4271 4281
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 139 4271 4281 "program_management.ml" 139 4271 4287
+type(
+  bool ref
+)
+ident(
+  int_ref loaded "program_management.ml" 96 3121 3125 "program_management.ml" 96 3121 3131
+)
+"program_management.ml" 139 4271 4280 "program_management.ml" 139 4271 4287
+type(
+  bool
+)
+"program_management.ml" 139 4271 4276 "program_management.ml" 139 4271 4287
+type(
+  bool
+)
+"program_management.ml" 140 4299 4303 "program_management.ml" 140 4299 4315
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"program_management.ml" 140 4299 4316 "program_management.ml" 140 4299 4337
+type(
+  string
+)
+"program_management.ml" 140 4299 4303 "program_management.ml" 140 4299 4337
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 141 4339 4343 "program_management.ml" 141 4339 4348
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"program_management.ml" 141 4339 4349 "program_management.ml" 141 4339 4366
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stdout
+)
+"program_management.ml" 141 4339 4343 "program_management.ml" 141 4339 4366
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 142 4368 4375 "program_management.ml" 142 4368 4376
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 142 4368 4376 "program_management.ml" 142 4368 4388
+type(
+  string ref
+)
+ident(
+  ext_ref Parameters.program_name
+)
+"program_management.ml" 142 4368 4375 "program_management.ml" 142 4368 4388
+type(
+  string
+)
+"program_management.ml" 142 4368 4389 "program_management.ml" 142 4368 4390
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"program_management.ml" 142 4368 4391 "program_management.ml" 142 4368 4393
+type(
+  string
+)
+"program_management.ml" 142 4368 4375 "program_management.ml" 142 4368 4393
+type(
+  bool
+)
+"program_management.ml" 143 4405 4411 "program_management.ml" 143 4405 4424
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"program_management.ml" 143 4405 4425 "program_management.ml" 143 4405 4448
+type(
+  string
+)
+"program_management.ml" 143 4405 4411 "program_management.ml" 143 4405 4448
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 144 4450 4456 "program_management.ml" 144 4450 4461
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"program_management.ml" 144 4450 4462 "program_management.ml" 144 4450 4470
+type(
+  exn
+)
+"program_management.ml" 144 4450 4456 "program_management.ml" 144 4450 4470
+type(
+  unit
+)
+"program_management.ml" 142 4368 4399 "program_management.ml" 145 4471 4478
+type(
+  unit
+)
+"program_management.ml" 142 4368 4372 "program_management.ml" 145 4471 4478
+type(
+  unit
+)
+"program_management.ml" 147 4488 4494 "program_management.ml" 147 4488 4512
+type(
+  unit -> unit
+)
+ident(
+  int_ref initialize_loading "program_management.ml" 116 3554 3558 "program_management.ml" 116 3554 3576
+)
+"program_management.ml" 147 4488 4512 "program_management.ml" 147 4488 4514
+type(
+  unit
+)
+"program_management.ml" 147 4488 4494 "program_management.ml" 147 4488 4514
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 148 4516 4522 "program_management.ml" 148 4516 4523
+type(
+  (unit -> unit) ref -> unit -> unit
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 148 4516 4523 "program_management.ml" 148 4516 4537
+type(
+  (unit -> unit) ref
+)
+ident(
+  ext_ref Program_loading.launching_func
+)
+"program_management.ml" 148 4516 4522 "program_management.ml" 148 4516 4537
+type(
+  unit -> unit
+)
+"program_management.ml" 148 4516 4538 "program_management.ml" 148 4516 4540
+type(
+  unit
+)
+"program_management.ml" 148 4516 4522 "program_management.ml" 148 4516 4540
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 149 4542 4551 "program_management.ml" 149 4542 4552
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"program_management.ml" 149 4542 4552 "program_management.ml" 149 4542 4565
+type(
+  bool ref
+)
+ident(
+  ext_ref Program_loading.debug_loading
+)
+"program_management.ml" 149 4542 4551 "program_management.ml" 149 4542 4565
+type(
+  bool
+)
+"program_management.ml" 150 4571 4579 "program_management.ml" 150 4571 4592
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"program_management.ml" 150 4571 4593 "program_management.ml" 150 4571 4620
+type(
+  string
+)
+"program_management.ml" 150 4571 4579 "program_management.ml" 150 4571 4620
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 149 4542 4548 "program_management.ml" 150 4571 4620
+type(
+  unit
+)
+"program_management.ml" 151 4622 4628 "program_management.ml" 151 4622 4637
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Input_handling.main_loop
+)
+"program_management.ml" 151 4622 4638 "program_management.ml" 151 4622 4640
+type(
+  unit
+)
+"program_management.ml" 151 4622 4628 "program_management.ml" 151 4622 4640
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 152 4642 4648 "program_management.ml" 152 4642 4654
+type(
+  bool ref
+)
+ident(
+  int_ref loaded "program_management.ml" 96 3121 3125 "program_management.ml" 96 3121 3131
+)
+"program_management.ml" 152 4642 4655 "program_management.ml" 152 4642 4657
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"program_management.ml" 152 4642 4658 "program_management.ml" 152 4642 4662
+type(
+  bool
+)
+"program_management.ml" 152 4642 4648 "program_management.ml" 152 4642 4662
+type(
+  unit
+)
+"program_management.ml" 153 4664 4670 "program_management.ml" 153 4664 4683
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.prerr_endline
+)
+"program_management.ml" 153 4664 4684 "program_management.ml" 153 4664 4691
+type(
+  string
+)
+"program_management.ml" 153 4664 4670 "program_management.ml" 153 4664 4691
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 152 4642 4648 "program_management.ml" 153 4664 4691
+type(
+  unit
+)
+"program_management.ml" 151 4622 4628 "program_management.ml" 153 4664 4691
+type(
+  unit
+)
+"program_management.ml" 149 4542 4548 "program_management.ml" 153 4664 4691
+type(
+  unit
+)
+"program_management.ml" 148 4516 4522 "program_management.ml" 153 4664 4691
+type(
+  unit
+)
+"program_management.ml" 147 4488 4494 "program_management.ml" 153 4664 4691
+type(
+  unit
+)
+"program_management.ml" 155 4701 4707 "program_management.ml" 155 4701 4708
+type(
+  exn
+)
+ident(
+  def x "program_management.ml" 156 4712 4720 "program_management.ml" 157 4736 4751
+)
+"program_management.ml" 156 4712 4720 "program_management.ml" 156 4712 4732
+type(
+  unit -> unit
+)
+ident(
+  int_ref kill_program "program_management.ml" 98 3145 3149 "program_management.ml" 98 3145 3161
+)
+"program_management.ml" 156 4712 4732 "program_management.ml" 156 4712 4734
+type(
+  unit
+)
+"program_management.ml" 156 4712 4720 "program_management.ml" 156 4712 4734
+call(
+  stack
+)
+type(
+  unit
+)
+"program_management.ml" 157 4736 4744 "program_management.ml" 157 4736 4749
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"program_management.ml" 157 4736 4750 "program_management.ml" 157 4736 4751
+type(
+  exn
+)
+ident(
+  int_ref x "program_management.ml" 155 4701 4707 "program_management.ml" 155 4701 4708
+)
+"program_management.ml" 157 4736 4744 "program_management.ml" 157 4736 4751
+type(
+  unit
+)
+"program_management.ml" 156 4712 4720 "program_management.ml" 157 4736 4751
+type(
+  unit
+)
+"program_management.ml" 146 4480 4484 "program_management.ml" 157 4736 4751
+type(
+  unit
+)
+"program_management.ml" 142 4368 4372 "program_management.ml" 157 4736 4751
+type(
+  unit
+)
+"program_management.ml" 141 4339 4343 "program_management.ml" 157 4736 4751
+type(
+  unit
+)
+"program_management.ml" 139 4271 4293 "program_management.ml" 158 4752 4757
+type(
+  unit
+)
+"program_management.ml" 139 4271 4273 "program_management.ml" 158 4752 4757
+type(
+  unit
+)

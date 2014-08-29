@@ -1,0 +1,1427 @@
+"arith_status.ml" 16 909 913 "arith_status.ml" 16 909 944
+type(
+  unit -> bool
+)
+ident(
+  def get_error_when_null_denominator "arith_status.ml" 21 1078 1078 "arith_status.ml" 1 0 -1
+)
+"arith_status.ml" 16 909 945 "arith_status.ml" 16 909 947
+type(
+  unit
+)
+"arith_status.ml" 17 950 952 "arith_status.ml" 17 950 953
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"arith_status.ml" 17 950 953 "arith_status.ml" 17 950 985
+type(
+  bool ref
+)
+ident(
+  ext_ref Arith_flags.error_when_null_denominator_flag
+)
+"arith_status.ml" 17 950 952 "arith_status.ml" 17 950 985
+type(
+  bool
+)
+"arith_status.ml" 18 986 990 "arith_status.ml" 18 986 1021
+type(
+  bool -> unit
+)
+ident(
+  def set_error_when_null_denominator "arith_status.ml" 21 1078 1078 "arith_status.ml" 1 0 -1
+)
+"arith_status.ml" 18 986 1022 "arith_status.ml" 18 986 1028
+type(
+  bool
+)
+ident(
+  def choice "arith_status.ml" 19 1031 1032 "arith_status.ml" 19 1031 1074
+)
+"arith_status.ml" 19 1031 1032 "arith_status.ml" 19 1031 1064
+type(
+  bool ref
+)
+ident(
+  ext_ref Arith_flags.error_when_null_denominator_flag
+)
+"arith_status.ml" 19 1031 1065 "arith_status.ml" 19 1031 1067
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"arith_status.ml" 19 1031 1068 "arith_status.ml" 19 1031 1074
+type(
+  bool
+)
+ident(
+  int_ref choice "arith_status.ml" 18 986 1022 "arith_status.ml" 18 986 1028
+)
+"arith_status.ml" 19 1031 1032 "arith_status.ml" 19 1031 1074
+type(
+  unit
+)
+"arith_status.ml" 21 1078 1082 "arith_status.ml" 21 1078 1101
+type(
+  unit -> bool
+)
+ident(
+  def get_normalize_ratio "arith_status.ml" 24 1196 1196 "arith_status.ml" 1 0 -1
+)
+"arith_status.ml" 21 1078 1102 "arith_status.ml" 21 1078 1104
+type(
+  unit
+)
+"arith_status.ml" 21 1078 1107 "arith_status.ml" 21 1078 1108
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"arith_status.ml" 21 1078 1108 "arith_status.ml" 21 1078 1128
+type(
+  bool ref
+)
+ident(
+  ext_ref Arith_flags.normalize_ratio_flag
+)
+"arith_status.ml" 21 1078 1107 "arith_status.ml" 21 1078 1128
+type(
+  bool
+)
+"arith_status.ml" 22 1129 1133 "arith_status.ml" 22 1129 1152
+type(
+  bool -> unit
+)
+ident(
+  def set_normalize_ratio "arith_status.ml" 24 1196 1196 "arith_status.ml" 1 0 -1
+)
+"arith_status.ml" 22 1129 1153 "arith_status.ml" 22 1129 1159
+type(
+  bool
+)
+ident(
+  def choice "arith_status.ml" 22 1129 1162 "arith_status.ml" 22 1129 1192
+)
+"arith_status.ml" 22 1129 1162 "arith_status.ml" 22 1129 1182
+type(
+  bool ref
+)
+ident(
+  ext_ref Arith_flags.normalize_ratio_flag
+)
+"arith_status.ml" 22 1129 1183 "arith_status.ml" 22 1129 1185
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"arith_status.ml" 22 1129 1186 "arith_status.ml" 22 1129 1192
+type(
+  bool
+)
+ident(
+  int_ref choice "arith_status.ml" 22 1129 1153 "arith_status.ml" 22 1129 1159
+)
+"arith_status.ml" 22 1129 1162 "arith_status.ml" 22 1129 1192
+type(
+  unit
+)
+"arith_status.ml" 24 1196 1200 "arith_status.ml" 24 1196 1233
+type(
+  unit -> bool
+)
+ident(
+  def get_normalize_ratio_when_printing "arith_status.ml" 29 1373 1373 "arith_status.ml" 1 0 -1
+)
+"arith_status.ml" 24 1196 1234 "arith_status.ml" 24 1196 1236
+type(
+  unit
+)
+"arith_status.ml" 25 1239 1241 "arith_status.ml" 25 1239 1242
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"arith_status.ml" 25 1239 1242 "arith_status.ml" 25 1239 1276
+type(
+  bool ref
+)
+ident(
+  ext_ref Arith_flags.normalize_ratio_when_printing_flag
+)
+"arith_status.ml" 25 1239 1241 "arith_status.ml" 25 1239 1276
+type(
+  bool
+)
+"arith_status.ml" 26 1277 1281 "arith_status.ml" 26 1277 1314
+type(
+  bool -> unit
+)
+ident(
+  def set_normalize_ratio_when_printing "arith_status.ml" 29 1373 1373 "arith_status.ml" 1 0 -1
+)
+"arith_status.ml" 26 1277 1315 "arith_status.ml" 26 1277 1321
+type(
+  bool
+)
+ident(
+  def choice "arith_status.ml" 27 1324 1325 "arith_status.ml" 27 1324 1369
+)
+"arith_status.ml" 27 1324 1325 "arith_status.ml" 27 1324 1359
+type(
+  bool ref
+)
+ident(
+  ext_ref Arith_flags.normalize_ratio_when_printing_flag
+)
+"arith_status.ml" 27 1324 1360 "arith_status.ml" 27 1324 1362
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"arith_status.ml" 27 1324 1363 "arith_status.ml" 27 1324 1369
+type(
+  bool
+)
+ident(
+  int_ref choice "arith_status.ml" 26 1277 1315 "arith_status.ml" 26 1277 1321
+)
+"arith_status.ml" 27 1324 1325 "arith_status.ml" 27 1324 1369
+type(
+  unit
+)
+"arith_status.ml" 29 1373 1377 "arith_status.ml" 29 1373 1399
+type(
+  unit -> int
+)
+ident(
+  def get_floating_precision "arith_status.ml" 32 1483 1483 "arith_status.ml" 1 0 -1
+)
+"arith_status.ml" 29 1373 1400 "arith_status.ml" 29 1373 1402
+type(
+  unit
+)
+"arith_status.ml" 29 1373 1405 "arith_status.ml" 29 1373 1406
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"arith_status.ml" 29 1373 1406 "arith_status.ml" 29 1373 1424
+type(
+  int ref
+)
+ident(
+  ext_ref Arith_flags.floating_precision
+)
+"arith_status.ml" 29 1373 1405 "arith_status.ml" 29 1373 1424
+type(
+  int
+)
+"arith_status.ml" 30 1425 1429 "arith_status.ml" 30 1425 1451
+type(
+  int -> unit
+)
+ident(
+  def set_floating_precision "arith_status.ml" 32 1483 1483 "arith_status.ml" 1 0 -1
+)
+"arith_status.ml" 30 1425 1452 "arith_status.ml" 30 1425 1453
+type(
+  int
+)
+ident(
+  def i "arith_status.ml" 30 1425 1456 "arith_status.ml" 30 1425 1479
+)
+"arith_status.ml" 30 1425 1456 "arith_status.ml" 30 1425 1474
+type(
+  int ref
+)
+ident(
+  ext_ref Arith_flags.floating_precision
+)
+"arith_status.ml" 30 1425 1475 "arith_status.ml" 30 1425 1477
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"arith_status.ml" 30 1425 1478 "arith_status.ml" 30 1425 1479
+type(
+  int
+)
+ident(
+  int_ref i "arith_status.ml" 30 1425 1452 "arith_status.ml" 30 1425 1453
+)
+"arith_status.ml" 30 1425 1456 "arith_status.ml" 30 1425 1479
+type(
+  unit
+)
+"arith_status.ml" 32 1483 1487 "arith_status.ml" 32 1483 1506
+type(
+  unit -> bool
+)
+ident(
+  def get_approx_printing "arith_status.ml" 35 1591 1591 "arith_status.ml" 1 0 -1
+)
+"arith_status.ml" 32 1483 1507 "arith_status.ml" 32 1483 1509
+type(
+  unit
+)
+"arith_status.ml" 32 1483 1512 "arith_status.ml" 32 1483 1513
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"arith_status.ml" 32 1483 1513 "arith_status.ml" 32 1483 1533
+type(
+  bool ref
+)
+ident(
+  ext_ref Arith_flags.approx_printing_flag
+)
+"arith_status.ml" 32 1483 1512 "arith_status.ml" 32 1483 1533
+type(
+  bool
+)
+"arith_status.ml" 33 1534 1538 "arith_status.ml" 33 1534 1557
+type(
+  bool -> unit
+)
+ident(
+  def set_approx_printing "arith_status.ml" 35 1591 1591 "arith_status.ml" 1 0 -1
+)
+"arith_status.ml" 33 1534 1558 "arith_status.ml" 33 1534 1559
+type(
+  bool
+)
+ident(
+  def b "arith_status.ml" 33 1534 1562 "arith_status.ml" 33 1534 1587
+)
+"arith_status.ml" 33 1534 1562 "arith_status.ml" 33 1534 1582
+type(
+  bool ref
+)
+ident(
+  ext_ref Arith_flags.approx_printing_flag
+)
+"arith_status.ml" 33 1534 1583 "arith_status.ml" 33 1534 1585
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"arith_status.ml" 33 1534 1586 "arith_status.ml" 33 1534 1587
+type(
+  bool
+)
+ident(
+  int_ref b "arith_status.ml" 33 1534 1558 "arith_status.ml" 33 1534 1559
+)
+"arith_status.ml" 33 1534 1562 "arith_status.ml" 33 1534 1587
+type(
+  unit
+)
+"arith_status.ml" 35 1591 1595 "arith_status.ml" 35 1591 1613
+type(
+  string -> unit
+)
+ident(
+  def arith_print_string "arith_status.ml" 37 1658 1658 "arith_status.ml" 1 0 -1
+)
+"arith_status.ml" 35 1591 1614 "arith_status.ml" 35 1591 1615
+type(
+  string
+)
+ident(
+  def s "arith_status.ml" 35 1591 1618 "arith_status.ml" 35 1591 1654
+)
+"arith_status.ml" 35 1591 1618 "arith_status.ml" 35 1591 1630
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"arith_status.ml" 35 1591 1631 "arith_status.ml" 35 1591 1632
+type(
+  string
+)
+ident(
+  int_ref s "arith_status.ml" 35 1591 1614 "arith_status.ml" 35 1591 1615
+)
+"arith_status.ml" 35 1591 1618 "arith_status.ml" 35 1591 1632
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 35 1591 1634 "arith_status.ml" 35 1591 1646
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"arith_status.ml" 35 1591 1647 "arith_status.ml" 35 1591 1654
+type(
+  string
+)
+"arith_status.ml" 35 1591 1634 "arith_status.ml" 35 1591 1654
+call(
+  tail
+)
+type(
+  unit
+)
+"arith_status.ml" 35 1591 1618 "arith_status.ml" 35 1591 1654
+type(
+  unit
+)
+"arith_status.ml" 37 1658 1662 "arith_status.ml" 37 1658 1678
+type(
+  bool -> unit
+)
+ident(
+  def arith_print_bool "arith_status.ml" 42 1748 1748 "arith_status.ml" 1 0 -1
+)
+"arith_status.ml" 38 1690 1692 "arith_status.ml" 38 1690 1696
+type(
+  bool
+)
+"arith_status.ml" 38 1690 1700 "arith_status.ml" 38 1690 1712
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"arith_status.ml" 38 1690 1713 "arith_status.ml" 38 1690 1717
+type(
+  string
+)
+"arith_status.ml" 38 1690 1700 "arith_status.ml" 38 1690 1717
+call(
+  tail
+)
+type(
+  unit
+)
+"arith_status.ml" 39 1718 1720 "arith_status.ml" 39 1718 1721
+type(
+  bool
+)
+"arith_status.ml" 39 1718 1725 "arith_status.ml" 39 1718 1737
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"arith_status.ml" 39 1718 1738 "arith_status.ml" 39 1718 1743
+type(
+  string
+)
+"arith_status.ml" 39 1718 1725 "arith_status.ml" 39 1718 1743
+call(
+  tail
+)
+type(
+  unit
+)
+"arith_status.ml" 37 1658 1681 "arith_status.ml" 39 1718 1743
+type(
+  bool -> unit
+)
+"arith_status.ml" 42 1748 1752 "arith_status.ml" 42 1748 1764
+type(
+  unit -> unit
+)
+ident(
+  def arith_status "arith_status.ml" 97 3586 3604 "arith_status.ml" 1 0 -1
+)
+"arith_status.ml" 42 1748 1765 "arith_status.ml" 42 1748 1767
+type(
+  unit
+)
+"arith_status.ml" 43 1770 1772 "arith_status.ml" 43 1770 1785
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 43 1770 1786 "arith_status.ml" 43 1770 1788
+type(
+  unit
+)
+"arith_status.ml" 43 1770 1772 "arith_status.ml" 43 1770 1788
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 45 1791 1793 "arith_status.ml" 45 1791 1811
+type(
+  string -> unit
+)
+ident(
+  int_ref arith_print_string "arith_status.ml" 35 1591 1595 "arith_status.ml" 35 1591 1613
+)
+"arith_status.ml" 46 1812 1814 "arith_status.ml" 46 1812 1848
+type(
+  string
+)
+"arith_status.ml" 45 1791 1793 "arith_status.ml" 46 1812 1848
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 47 1850 1852 "arith_status.ml" 47 1850 1868
+type(
+  bool -> unit
+)
+ident(
+  int_ref arith_print_bool "arith_status.ml" 37 1658 1662 "arith_status.ml" 37 1658 1678
+)
+"arith_status.ml" 47 1850 1870 "arith_status.ml" 47 1850 1889
+type(
+  unit -> bool
+)
+ident(
+  int_ref get_normalize_ratio "arith_status.ml" 21 1078 1082 "arith_status.ml" 21 1078 1101
+)
+"arith_status.ml" 47 1850 1890 "arith_status.ml" 47 1850 1892
+type(
+  unit
+)
+"arith_status.ml" 47 1850 1869 "arith_status.ml" 47 1850 1893
+call(
+  stack
+)
+type(
+  bool
+)
+"arith_status.ml" 47 1850 1852 "arith_status.ml" 47 1850 1893
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 48 1895 1897 "arith_status.ml" 48 1895 1910
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 48 1895 1911 "arith_status.ml" 48 1895 1913
+type(
+  unit
+)
+"arith_status.ml" 48 1895 1897 "arith_status.ml" 48 1895 1913
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 49 1915 1917 "arith_status.ml" 49 1915 1929
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"arith_status.ml" 49 1915 1930 "arith_status.ml" 49 1915 1973
+type(
+  string
+)
+"arith_status.ml" 49 1915 1917 "arith_status.ml" 49 1915 1973
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 50 1975 1977 "arith_status.ml" 50 1975 1990
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 50 1975 1991 "arith_status.ml" 50 1975 1993
+type(
+  unit
+)
+"arith_status.ml" 50 1975 1977 "arith_status.ml" 50 1975 1993
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 51 1995 1997 "arith_status.ml" 51 1995 2009
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"arith_status.ml" 51 1995 2010 "arith_status.ml" 51 1995 2068
+type(
+  string
+)
+"arith_status.ml" 51 1995 1997 "arith_status.ml" 51 1995 2068
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 52 2070 2072 "arith_status.ml" 52 2070 2085
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 52 2070 2086 "arith_status.ml" 52 2070 2088
+type(
+  unit
+)
+"arith_status.ml" 52 2070 2072 "arith_status.ml" 52 2070 2088
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 53 2090 2092 "arith_status.ml" 53 2090 2105
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 53 2090 2106 "arith_status.ml" 53 2090 2108
+type(
+  unit
+)
+"arith_status.ml" 53 2090 2092 "arith_status.ml" 53 2090 2108
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 55 2111 2113 "arith_status.ml" 55 2111 2131
+type(
+  string -> unit
+)
+ident(
+  int_ref arith_print_string "arith_status.ml" 35 1591 1595 "arith_status.ml" 35 1591 1613
+)
+"arith_status.ml" 56 2132 2134 "arith_status.ml" 56 2132 2163
+type(
+  string
+)
+"arith_status.ml" 55 2111 2113 "arith_status.ml" 56 2132 2163
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 57 2165 2167 "arith_status.ml" 57 2165 2183
+type(
+  bool -> unit
+)
+ident(
+  int_ref arith_print_bool "arith_status.ml" 37 1658 1662 "arith_status.ml" 37 1658 1678
+)
+"arith_status.ml" 57 2165 2185 "arith_status.ml" 57 2165 2218
+type(
+  unit -> bool
+)
+ident(
+  int_ref get_normalize_ratio_when_printing "arith_status.ml" 24 1196 1200 "arith_status.ml" 24 1196 1233
+)
+"arith_status.ml" 57 2165 2219 "arith_status.ml" 57 2165 2221
+type(
+  unit
+)
+"arith_status.ml" 57 2165 2184 "arith_status.ml" 57 2165 2222
+call(
+  stack
+)
+type(
+  bool
+)
+"arith_status.ml" 57 2165 2167 "arith_status.ml" 57 2165 2222
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 58 2224 2226 "arith_status.ml" 58 2224 2239
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 58 2224 2240 "arith_status.ml" 58 2224 2242
+type(
+  unit
+)
+"arith_status.ml" 58 2224 2226 "arith_status.ml" 58 2224 2242
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 59 2244 2246 "arith_status.ml" 59 2244 2258
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"arith_status.ml" 60 2259 2261 "arith_status.ml" 60 2259 2318
+type(
+  string
+)
+"arith_status.ml" 59 2244 2246 "arith_status.ml" 60 2259 2318
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 61 2320 2322 "arith_status.ml" 61 2320 2335
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 61 2320 2336 "arith_status.ml" 61 2320 2338
+type(
+  unit
+)
+"arith_status.ml" 61 2320 2322 "arith_status.ml" 61 2320 2338
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 62 2340 2342 "arith_status.ml" 62 2340 2354
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"arith_status.ml" 63 2355 2357 "arith_status.ml" 63 2355 2429
+type(
+  string
+)
+"arith_status.ml" 62 2340 2342 "arith_status.ml" 63 2355 2429
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 64 2431 2433 "arith_status.ml" 64 2431 2446
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 64 2431 2447 "arith_status.ml" 64 2431 2449
+type(
+  unit
+)
+"arith_status.ml" 64 2431 2433 "arith_status.ml" 64 2431 2449
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 65 2451 2453 "arith_status.ml" 65 2451 2466
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 65 2451 2467 "arith_status.ml" 65 2451 2469
+type(
+  unit
+)
+"arith_status.ml" 65 2451 2453 "arith_status.ml" 65 2451 2469
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 67 2472 2474 "arith_status.ml" 67 2472 2492
+type(
+  string -> unit
+)
+ident(
+  int_ref arith_print_string "arith_status.ml" 35 1591 1595 "arith_status.ml" 35 1591 1613
+)
+"arith_status.ml" 68 2493 2495 "arith_status.ml" 68 2493 2556
+type(
+  string
+)
+"arith_status.ml" 67 2472 2474 "arith_status.ml" 68 2493 2556
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 69 2558 2560 "arith_status.ml" 69 2558 2576
+type(
+  bool -> unit
+)
+ident(
+  int_ref arith_print_bool "arith_status.ml" 37 1658 1662 "arith_status.ml" 37 1658 1678
+)
+"arith_status.ml" 69 2558 2578 "arith_status.ml" 69 2558 2597
+type(
+  unit -> bool
+)
+ident(
+  int_ref get_approx_printing "arith_status.ml" 32 1483 1487 "arith_status.ml" 32 1483 1506
+)
+"arith_status.ml" 69 2558 2598 "arith_status.ml" 69 2558 2600
+type(
+  unit
+)
+"arith_status.ml" 69 2558 2577 "arith_status.ml" 69 2558 2601
+call(
+  stack
+)
+type(
+  bool
+)
+"arith_status.ml" 69 2558 2560 "arith_status.ml" 69 2558 2601
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 70 2603 2605 "arith_status.ml" 70 2603 2618
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 70 2603 2619 "arith_status.ml" 70 2603 2621
+type(
+  unit
+)
+"arith_status.ml" 70 2603 2605 "arith_status.ml" 70 2603 2621
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 71 2623 2625 "arith_status.ml" 71 2623 2637
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"arith_status.ml" 72 2638 2640 "arith_status.ml" 72 2638 2683
+type(
+  string
+)
+"arith_status.ml" 71 2623 2625 "arith_status.ml" 72 2638 2683
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 73 2685 2687 "arith_status.ml" 73 2685 2700
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 73 2685 2701 "arith_status.ml" 73 2685 2703
+type(
+  unit
+)
+"arith_status.ml" 73 2685 2687 "arith_status.ml" 73 2685 2703
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 74 2705 2707 "arith_status.ml" 74 2705 2719
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"arith_status.ml" 75 2720 2722 "arith_status.ml" 75 2720 2780
+type(
+  string
+)
+"arith_status.ml" 74 2705 2707 "arith_status.ml" 75 2720 2780
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 76 2782 2784 "arith_status.ml" 76 2782 2797
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 76 2782 2798 "arith_status.ml" 76 2782 2800
+type(
+  unit
+)
+"arith_status.ml" 76 2782 2784 "arith_status.ml" 76 2782 2800
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 77 2802 2809 "arith_status.ml" 77 2802 2828
+type(
+  unit -> bool
+)
+ident(
+  int_ref get_approx_printing "arith_status.ml" 32 1483 1487 "arith_status.ml" 32 1483 1506
+)
+"arith_status.ml" 77 2802 2829 "arith_status.ml" 77 2802 2831
+type(
+  unit
+)
+"arith_status.ml" 77 2802 2808 "arith_status.ml" 77 2802 2832
+call(
+  stack
+)
+type(
+  bool
+)
+"arith_status.ml" 78 2833 2845 "arith_status.ml" 78 2833 2857
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"arith_status.ml" 78 2833 2858 "arith_status.ml" 78 2833 2882
+type(
+  string
+)
+"arith_status.ml" 78 2833 2845 "arith_status.ml" 78 2833 2882
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 79 2884 2896 "arith_status.ml" 79 2884 2905
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.print_int
+)
+"arith_status.ml" 79 2884 2907 "arith_status.ml" 79 2884 2929
+type(
+  unit -> int
+)
+ident(
+  int_ref get_floating_precision "arith_status.ml" 29 1373 1377 "arith_status.ml" 29 1373 1399
+)
+"arith_status.ml" 79 2884 2930 "arith_status.ml" 79 2884 2932
+type(
+  unit
+)
+"arith_status.ml" 79 2884 2906 "arith_status.ml" 79 2884 2933
+call(
+  stack
+)
+type(
+  int
+)
+"arith_status.ml" 79 2884 2896 "arith_status.ml" 79 2884 2933
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 80 2935 2947 "arith_status.ml" 80 2935 2960
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 80 2935 2961 "arith_status.ml" 80 2935 2963
+type(
+  unit
+)
+"arith_status.ml" 80 2935 2947 "arith_status.ml" 80 2935 2963
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 81 2965 2977 "arith_status.ml" 81 2965 2989
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"arith_status.ml" 81 2965 2990 "arith_status.ml" 81 2965 3036
+type(
+  string
+)
+"arith_status.ml" 81 2965 2977 "arith_status.ml" 81 2965 3036
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 82 3038 3050 "arith_status.ml" 82 3038 3063
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 82 3038 3064 "arith_status.ml" 82 3038 3066
+type(
+  unit
+)
+"arith_status.ml" 82 3038 3050 "arith_status.ml" 82 3038 3066
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 83 3068 3080 "arith_status.ml" 83 3068 3092
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"arith_status.ml" 84 3093 3107 "arith_status.ml" 84 3093 3168
+type(
+  string
+)
+"arith_status.ml" 83 3068 3080 "arith_status.ml" 84 3093 3168
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 85 3170 3182 "arith_status.ml" 85 3170 3195
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 85 3170 3196 "arith_status.ml" 85 3170 3198
+type(
+  unit
+)
+"arith_status.ml" 85 3170 3182 "arith_status.ml" 85 3170 3198
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 86 3200 3212 "arith_status.ml" 86 3200 3225
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 86 3200 3226 "arith_status.ml" 86 3200 3228
+type(
+  unit
+)
+"arith_status.ml" 86 3200 3212 "arith_status.ml" 86 3200 3228
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 85 3170 3182 "arith_status.ml" 86 3200 3228
+type(
+  unit
+)
+"arith_status.ml" 83 3068 3080 "arith_status.ml" 86 3200 3228
+type(
+  unit
+)
+"arith_status.ml" 82 3038 3050 "arith_status.ml" 86 3200 3228
+type(
+  unit
+)
+"arith_status.ml" 81 2965 2977 "arith_status.ml" 86 3200 3228
+type(
+  unit
+)
+"arith_status.ml" 80 2935 2947 "arith_status.ml" 86 3200 3228
+type(
+  unit
+)
+"arith_status.ml" 79 2884 2896 "arith_status.ml" 86 3200 3228
+type(
+  unit
+)
+"arith_status.ml" 78 2833 2844 "arith_status.ml" 86 3200 3229
+type(
+  unit
+)
+"arith_status.ml" 87 3230 3241 "arith_status.ml" 87 3230 3254
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 87 3230 3254 "arith_status.ml" 87 3230 3256
+type(
+  unit
+)
+"arith_status.ml" 87 3230 3241 "arith_status.ml" 87 3230 3256
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 77 2802 2804 "arith_status.ml" 87 3230 3257
+type(
+  unit
+)
+"arith_status.ml" 89 3260 3262 "arith_status.ml" 89 3260 3280
+type(
+  string -> unit
+)
+ident(
+  int_ref arith_print_string "arith_status.ml" 35 1591 1595 "arith_status.ml" 35 1591 1613
+)
+"arith_status.ml" 90 3281 3283 "arith_status.ml" 90 3281 3326
+type(
+  string
+)
+"arith_status.ml" 89 3260 3262 "arith_status.ml" 90 3281 3326
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 91 3328 3330 "arith_status.ml" 91 3328 3346
+type(
+  bool -> unit
+)
+ident(
+  int_ref arith_print_bool "arith_status.ml" 37 1658 1662 "arith_status.ml" 37 1658 1678
+)
+"arith_status.ml" 91 3328 3348 "arith_status.ml" 91 3328 3379
+type(
+  unit -> bool
+)
+ident(
+  int_ref get_error_when_null_denominator "arith_status.ml" 16 909 913 "arith_status.ml" 16 909 944
+)
+"arith_status.ml" 91 3328 3380 "arith_status.ml" 91 3328 3382
+type(
+  unit
+)
+"arith_status.ml" 91 3328 3347 "arith_status.ml" 91 3328 3383
+call(
+  stack
+)
+type(
+  bool
+)
+"arith_status.ml" 91 3328 3330 "arith_status.ml" 91 3328 3383
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 92 3385 3387 "arith_status.ml" 92 3385 3400
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 92 3385 3401 "arith_status.ml" 92 3385 3403
+type(
+  unit
+)
+"arith_status.ml" 92 3385 3387 "arith_status.ml" 92 3385 3403
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 93 3405 3407 "arith_status.ml" 93 3405 3419
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"arith_status.ml" 93 3405 3420 "arith_status.ml" 93 3405 3475
+type(
+  string
+)
+"arith_status.ml" 93 3405 3407 "arith_status.ml" 93 3405 3475
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 94 3477 3479 "arith_status.ml" 94 3477 3492
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 94 3477 3493 "arith_status.ml" 94 3477 3495
+type(
+  unit
+)
+"arith_status.ml" 94 3477 3479 "arith_status.ml" 94 3477 3495
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 95 3497 3499 "arith_status.ml" 95 3497 3511
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"arith_status.ml" 96 3512 3514 "arith_status.ml" 96 3512 3584
+type(
+  string
+)
+"arith_status.ml" 95 3497 3499 "arith_status.ml" 96 3512 3584
+call(
+  stack
+)
+type(
+  unit
+)
+"arith_status.ml" 97 3586 3588 "arith_status.ml" 97 3586 3601
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"arith_status.ml" 97 3586 3602 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 97 3586 3588 "arith_status.ml" 97 3586 3604
+call(
+  tail
+)
+type(
+  unit
+)
+"arith_status.ml" 95 3497 3499 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 94 3477 3479 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 93 3405 3407 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 92 3385 3387 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 91 3328 3330 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 89 3260 3262 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 77 2802 2804 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 76 2782 2784 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 74 2705 2707 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 73 2685 2687 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 71 2623 2625 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 70 2603 2605 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 69 2558 2560 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 67 2472 2474 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 65 2451 2453 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 64 2431 2433 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 62 2340 2342 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 61 2320 2322 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 59 2244 2246 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 58 2224 2226 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 57 2165 2167 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 55 2111 2113 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 53 2090 2092 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 52 2070 2072 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 51 1995 1997 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 50 1975 1977 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 49 1915 1917 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 48 1895 1897 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 47 1850 1852 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 45 1791 1793 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)
+"arith_status.ml" 43 1770 1772 "arith_status.ml" 97 3586 3604
+type(
+  unit
+)

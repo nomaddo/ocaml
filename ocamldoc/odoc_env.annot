@@ -1,0 +1,4312 @@
+"odoc_env.ml" 32 1316 1320 "odoc_env.ml" 32 1316 1325
+type(
+  env
+)
+ident(
+  def empty "odoc_env.ml" 43 1534 1534 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 33 1330 1345 "odoc_env.ml" 33 1330 1347
+type(
+  env_element list
+)
+"odoc_env.ml" 34 1350 1364 "odoc_env.ml" 34 1350 1366
+type(
+  env_element list
+)
+"odoc_env.ml" 35 1369 1389 "odoc_env.ml" 35 1369 1391
+type(
+  env_element list
+)
+"odoc_env.ml" 36 1394 1410 "odoc_env.ml" 36 1394 1412
+type(
+  env_element list
+)
+"odoc_env.ml" 37 1415 1431 "odoc_env.ml" 37 1415 1433
+type(
+  env_element list
+)
+"odoc_env.ml" 38 1436 1457 "odoc_env.ml" 38 1436 1459
+type(
+  env_element list
+)
+"odoc_env.ml" 39 1462 1481 "odoc_env.ml" 39 1462 1483
+type(
+  env_element list
+)
+"odoc_env.ml" 32 1316 1328 "odoc_env.ml" 40 1486 1489
+type(
+  env
+)
+"odoc_env.ml" 43 1534 1542 "odoc_env.ml" 43 1534 1555
+type(
+  env -> Name.t -> ?rel:Name.t -> Types.signature -> env
+)
+ident(
+  def add_signature "odoc_env.ml" 43 1534 1534 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 43 1534 1556 "odoc_env.ml" 43 1534 1559
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 43 1534 1560 "odoc_env.ml" 78 3357 3386
+)
+"odoc_env.ml" 43 1534 1560 "odoc_env.ml" 43 1534 1564
+type(
+  Name.t
+)
+ident(
+  def root "odoc_env.ml" 43 1534 1565 "odoc_env.ml" 78 3357 3386
+)
+"odoc_env.ml" 43 1534 1566 "odoc_env.ml" 43 1534 1569
+type(
+  Name.t option
+)
+ident(
+  def rel "odoc_env.ml" 43 1534 1570 "odoc_env.ml" 78 3357 3386
+)
+"odoc_env.ml" 43 1534 1570 "odoc_env.ml" 43 1534 1576
+type(
+  Types.signature
+)
+ident(
+  def signat "odoc_env.ml" 44 1579 1581 "odoc_env.ml" 78 3357 3386
+)
+"odoc_env.ml" 44 1579 1585 "odoc_env.ml" 44 1579 1592
+type(
+  Ident.t -> Name.t
+)
+ident(
+  def qualify "odoc_env.ml" 45 1639 1641 "odoc_env.ml" 78 3357 3386
+)
+"odoc_env.ml" 44 1579 1593 "odoc_env.ml" 44 1579 1595
+type(
+  Ident.t
+)
+ident(
+  def id "odoc_env.ml" 44 1579 1598 "odoc_env.ml" 44 1579 1635
+)
+"odoc_env.ml" 44 1579 1598 "odoc_env.ml" 44 1579 1609
+type(
+  Name.t -> Name.t -> Name.t
+)
+ident(
+  ext_ref Name.concat
+)
+"odoc_env.ml" 44 1579 1610 "odoc_env.ml" 44 1579 1614
+type(
+  Name.t
+)
+ident(
+  int_ref root "odoc_env.ml" 43 1534 1560 "odoc_env.ml" 43 1534 1564
+)
+"odoc_env.ml" 44 1579 1616 "odoc_env.ml" 44 1579 1631
+type(
+  Ident.t -> Name.t
+)
+ident(
+  ext_ref Name.from_ident
+)
+"odoc_env.ml" 44 1579 1632 "odoc_env.ml" 44 1579 1634
+type(
+  Ident.t
+)
+ident(
+  int_ref id "odoc_env.ml" 44 1579 1593 "odoc_env.ml" 44 1579 1595
+)
+"odoc_env.ml" 44 1579 1615 "odoc_env.ml" 44 1579 1635
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 44 1579 1598 "odoc_env.ml" 44 1579 1635
+call(
+  tail
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 45 1639 1645 "odoc_env.ml" 45 1639 1653
+type(
+  Ident.t -> Name.t
+)
+ident(
+  def rel_name "odoc_env.ml" 51 1765 1767 "odoc_env.ml" 78 3357 3386
+)
+"odoc_env.ml" 45 1639 1654 "odoc_env.ml" 45 1639 1656
+type(
+  Ident.t
+)
+ident(
+  def id "odoc_env.ml" 46 1659 1663 "odoc_env.ml" 49 1728 1759
+)
+"odoc_env.ml" 46 1659 1667 "odoc_env.ml" 46 1659 1668
+type(
+  Name.t
+)
+ident(
+  def n "odoc_env.ml" 47 1693 1697 "odoc_env.ml" 49 1728 1759
+)
+"odoc_env.ml" 46 1659 1671 "odoc_env.ml" 46 1659 1686
+type(
+  Ident.t -> Name.t
+)
+ident(
+  ext_ref Name.from_ident
+)
+"odoc_env.ml" 46 1659 1687 "odoc_env.ml" 46 1659 1689
+type(
+  Ident.t
+)
+ident(
+  int_ref id "odoc_env.ml" 45 1639 1654 "odoc_env.ml" 45 1639 1656
+)
+"odoc_env.ml" 46 1659 1671 "odoc_env.ml" 46 1659 1689
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 47 1693 1703 "odoc_env.ml" 47 1693 1706
+type(
+  Name.t option
+)
+ident(
+  int_ref rel "odoc_env.ml" 43 1534 1566 "odoc_env.ml" 43 1534 1569
+)
+"odoc_env.ml" 48 1712 1718 "odoc_env.ml" 48 1712 1722
+type(
+  Name.t option
+)
+"odoc_env.ml" 48 1712 1726 "odoc_env.ml" 48 1712 1727
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 46 1659 1667 "odoc_env.ml" 46 1659 1668
+)
+"odoc_env.ml" 49 1728 1739 "odoc_env.ml" 49 1728 1740
+type(
+  Name.t
+)
+ident(
+  def r "odoc_env.ml" 49 1728 1744 "odoc_env.ml" 49 1728 1759
+)
+"odoc_env.ml" 49 1728 1734 "odoc_env.ml" 49 1728 1740
+type(
+  Name.t option
+)
+"odoc_env.ml" 49 1728 1744 "odoc_env.ml" 49 1728 1755
+type(
+  Name.t -> Name.t -> Name.t
+)
+ident(
+  ext_ref Name.concat
+)
+"odoc_env.ml" 49 1728 1756 "odoc_env.ml" 49 1728 1757
+type(
+  Name.t
+)
+ident(
+  int_ref r "odoc_env.ml" 49 1728 1739 "odoc_env.ml" 49 1728 1740
+)
+"odoc_env.ml" 49 1728 1758 "odoc_env.ml" 49 1728 1759
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 46 1659 1667 "odoc_env.ml" 46 1659 1668
+)
+"odoc_env.ml" 49 1728 1744 "odoc_env.ml" 49 1728 1759
+call(
+  tail
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 47 1693 1697 "odoc_env.ml" 49 1728 1759
+type(
+  Name.t
+)
+"odoc_env.ml" 46 1659 1663 "odoc_env.ml" 49 1728 1759
+type(
+  Name.t
+)
+"odoc_env.ml" 51 1765 1771 "odoc_env.ml" 51 1765 1772
+type(
+  env -> Types.signature_item -> env
+)
+ident(
+  def f "odoc_env.ml" 78 3357 3359 "odoc_env.ml" 78 3357 3386
+)
+"odoc_env.ml" 51 1765 1773 "odoc_env.ml" 51 1765 1776
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 51 1765 1777 "odoc_env.ml" 76 3222 3351
+)
+"odoc_env.ml" 51 1765 1777 "odoc_env.ml" 51 1765 1781
+type(
+  Types.signature_item
+)
+ident(
+  def item "odoc_env.ml" 52 1784 1788 "odoc_env.ml" 76 3222 3351
+)
+"odoc_env.ml" 52 1784 1794 "odoc_env.ml" 52 1784 1798
+type(
+  Types.signature_item
+)
+ident(
+  int_ref item "odoc_env.ml" 51 1765 1777 "odoc_env.ml" 51 1765 1781
+)
+"odoc_env.ml" 53 1804 1827 "odoc_env.ml" 53 1804 1832
+type(
+  Ident.t
+)
+ident(
+  def ident "odoc_env.ml" 53 1804 1840 "odoc_env.ml" 53 1804 1915
+)
+"odoc_env.ml" 53 1804 1834 "odoc_env.ml" 53 1804 1835
+type(
+  Types.value_description
+)
+"odoc_env.ml" 53 1804 1810 "odoc_env.ml" 53 1804 1836
+type(
+  Types.signature_item
+)
+"odoc_env.ml" 53 1804 1842 "odoc_env.ml" 53 1804 1845
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 51 1765 1773 "odoc_env.ml" 51 1765 1776
+)
+"odoc_env.ml" 53 1804 1865 "odoc_env.ml" 53 1804 1873
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref rel_name "odoc_env.ml" 45 1639 1645 "odoc_env.ml" 45 1639 1653
+)
+"odoc_env.ml" 53 1804 1874 "odoc_env.ml" 53 1804 1879
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 53 1804 1827 "odoc_env.ml" 53 1804 1832
+)
+"odoc_env.ml" 53 1804 1865 "odoc_env.ml" 53 1804 1879
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 53 1804 1881 "odoc_env.ml" 53 1804 1888
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref qualify "odoc_env.ml" 44 1579 1585 "odoc_env.ml" 44 1579 1592
+)
+"odoc_env.ml" 53 1804 1889 "odoc_env.ml" 53 1804 1894
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 53 1804 1827 "odoc_env.ml" 53 1804 1832
+)
+"odoc_env.ml" 53 1804 1881 "odoc_env.ml" 53 1804 1894
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 53 1804 1864 "odoc_env.ml" 53 1804 1895
+type(
+  env_element
+)
+"odoc_env.ml" 53 1804 1899 "odoc_env.ml" 53 1804 1902
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 51 1765 1773 "odoc_env.ml" 51 1765 1776
+)
+"odoc_env.ml" 53 1804 1899 "odoc_env.ml" 53 1804 1913
+type(
+  env_element list
+)
+"odoc_env.ml" 53 1804 1864 "odoc_env.ml" 53 1804 1913
+type(
+  env_element list
+)
+"odoc_env.ml" 53 1804 1840 "odoc_env.ml" 53 1804 1915
+type(
+  env
+)
+"odoc_env.ml" 54 1916 1938 "odoc_env.ml" 54 1916 1943
+type(
+  Ident.t
+)
+ident(
+  def ident "odoc_env.ml" 54 1916 1952 "odoc_env.ml" 54 1916 2025
+)
+"odoc_env.ml" 54 1916 1944 "odoc_env.ml" 54 1916 1945
+type(
+  Types.type_declaration
+)
+"odoc_env.ml" 54 1916 1946 "odoc_env.ml" 54 1916 1947
+type(
+  Types.rec_status
+)
+"odoc_env.ml" 54 1916 1922 "odoc_env.ml" 54 1916 1948
+type(
+  Types.signature_item
+)
+"odoc_env.ml" 54 1916 1954 "odoc_env.ml" 54 1916 1957
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 51 1765 1773 "odoc_env.ml" 51 1765 1776
+)
+"odoc_env.ml" 54 1916 1976 "odoc_env.ml" 54 1916 1984
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref rel_name "odoc_env.ml" 45 1639 1645 "odoc_env.ml" 45 1639 1653
+)
+"odoc_env.ml" 54 1916 1985 "odoc_env.ml" 54 1916 1990
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 54 1916 1938 "odoc_env.ml" 54 1916 1943
+)
+"odoc_env.ml" 54 1916 1976 "odoc_env.ml" 54 1916 1990
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 54 1916 1992 "odoc_env.ml" 54 1916 1999
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref qualify "odoc_env.ml" 44 1579 1585 "odoc_env.ml" 44 1579 1592
+)
+"odoc_env.ml" 54 1916 2000 "odoc_env.ml" 54 1916 2005
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 54 1916 1938 "odoc_env.ml" 54 1916 1943
+)
+"odoc_env.ml" 54 1916 1992 "odoc_env.ml" 54 1916 2005
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 54 1916 1975 "odoc_env.ml" 54 1916 2006
+type(
+  env_element
+)
+"odoc_env.ml" 54 1916 2010 "odoc_env.ml" 54 1916 2013
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 51 1765 1773 "odoc_env.ml" 51 1765 1776
+)
+"odoc_env.ml" 54 1916 2010 "odoc_env.ml" 54 1916 2023
+type(
+  env_element list
+)
+"odoc_env.ml" 54 1916 1975 "odoc_env.ml" 54 1916 2023
+type(
+  env_element list
+)
+"odoc_env.ml" 54 1916 1952 "odoc_env.ml" 54 1916 2025
+type(
+  env
+)
+"odoc_env.ml" 55 2026 2050 "odoc_env.ml" 55 2026 2055
+type(
+  Ident.t
+)
+ident(
+  def ident "odoc_env.ml" 55 2026 2066 "odoc_env.ml" 55 2026 2149
+)
+"odoc_env.ml" 55 2026 2057 "odoc_env.ml" 55 2026 2058
+type(
+  Types.extension_constructor
+)
+"odoc_env.ml" 55 2026 2060 "odoc_env.ml" 55 2026 2061
+type(
+  Types.ext_status
+)
+"odoc_env.ml" 55 2026 2032 "odoc_env.ml" 55 2026 2062
+type(
+  Types.signature_item
+)
+"odoc_env.ml" 55 2026 2068 "odoc_env.ml" 55 2026 2071
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 51 1765 1773 "odoc_env.ml" 51 1765 1776
+)
+"odoc_env.ml" 55 2026 2095 "odoc_env.ml" 55 2026 2103
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref rel_name "odoc_env.ml" 45 1639 1645 "odoc_env.ml" 45 1639 1653
+)
+"odoc_env.ml" 55 2026 2104 "odoc_env.ml" 55 2026 2109
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 55 2026 2050 "odoc_env.ml" 55 2026 2055
+)
+"odoc_env.ml" 55 2026 2095 "odoc_env.ml" 55 2026 2109
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 55 2026 2111 "odoc_env.ml" 55 2026 2118
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref qualify "odoc_env.ml" 44 1579 1585 "odoc_env.ml" 44 1579 1592
+)
+"odoc_env.ml" 55 2026 2119 "odoc_env.ml" 55 2026 2124
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 55 2026 2050 "odoc_env.ml" 55 2026 2055
+)
+"odoc_env.ml" 55 2026 2111 "odoc_env.ml" 55 2026 2124
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 55 2026 2094 "odoc_env.ml" 55 2026 2125
+type(
+  env_element
+)
+"odoc_env.ml" 55 2026 2129 "odoc_env.ml" 55 2026 2132
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 51 1765 1773 "odoc_env.ml" 51 1765 1776
+)
+"odoc_env.ml" 55 2026 2129 "odoc_env.ml" 55 2026 2147
+type(
+  env_element list
+)
+"odoc_env.ml" 55 2026 2094 "odoc_env.ml" 55 2026 2147
+type(
+  env_element list
+)
+"odoc_env.ml" 55 2026 2066 "odoc_env.ml" 55 2026 2149
+type(
+  env
+)
+"odoc_env.ml" 56 2150 2174 "odoc_env.ml" 56 2150 2179
+type(
+  Ident.t
+)
+ident(
+  def ident "odoc_env.ml" 57 2191 2199 "odoc_env.ml" 62 2463 2550
+)
+"odoc_env.ml" 56 2150 2181 "odoc_env.ml" 56 2150 2183
+type(
+  Types.module_declaration
+)
+ident(
+  def md "odoc_env.ml" 57 2191 2199 "odoc_env.ml" 62 2463 2550
+)
+"odoc_env.ml" 56 2150 2185 "odoc_env.ml" 56 2150 2186
+type(
+  Types.rec_status
+)
+"odoc_env.ml" 56 2150 2156 "odoc_env.ml" 56 2150 2187
+type(
+  Types.signature_item
+)
+"odoc_env.ml" 57 2191 2203 "odoc_env.ml" 57 2191 2207
+type(
+  env
+)
+ident(
+  def env2 "odoc_env.ml" 62 2463 2471 "odoc_env.ml" 62 2463 2550
+)
+"odoc_env.ml" 58 2210 2226 "odoc_env.ml" 58 2210 2228
+type(
+  Types.module_declaration
+)
+ident(
+  int_ref md "odoc_env.ml" 56 2150 2181 "odoc_env.ml" 56 2150 2183
+)
+"odoc_env.ml" 58 2210 2226 "odoc_env.ml" 58 2210 2242
+type(
+  Types.module_type
+)
+"odoc_env.ml" 59 2334 2366 "odoc_env.ml" 59 2334 2367
+type(
+  Types.signature
+)
+ident(
+  def s "odoc_env.ml" 59 2334 2371 "odoc_env.ml" 59 2334 2429
+)
+"odoc_env.ml" 59 2334 2346 "odoc_env.ml" 59 2334 2367
+type(
+  Types.module_type
+)
+"odoc_env.ml" 59 2334 2371 "odoc_env.ml" 59 2334 2384
+type(
+  env -> Name.t -> ?rel:Name.t -> Types.signature -> env
+)
+ident(
+  int_ref add_signature "odoc_env.ml" 43 1534 1542 "odoc_env.ml" 43 1534 1555
+)
+"odoc_env.ml" 59 2334 2385 "odoc_env.ml" 59 2334 2388
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 51 1765 1773 "odoc_env.ml" 51 1765 1776
+)
+"odoc_env.ml" 59 2334 2390 "odoc_env.ml" 59 2334 2397
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref qualify "odoc_env.ml" 44 1579 1585 "odoc_env.ml" 44 1579 1592
+)
+"odoc_env.ml" 59 2334 2398 "odoc_env.ml" 59 2334 2403
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 56 2150 2174 "odoc_env.ml" 56 2150 2179
+)
+"odoc_env.ml" 59 2334 2389 "odoc_env.ml" 59 2334 2404
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 59 2334 2412 "odoc_env.ml" 59 2334 2420
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref rel_name "odoc_env.ml" 45 1639 1645 "odoc_env.ml" 45 1639 1653
+)
+"odoc_env.ml" 59 2334 2421 "odoc_env.ml" 59 2334 2426
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 56 2150 2174 "odoc_env.ml" 56 2150 2179
+)
+"odoc_env.ml" 59 2334 2411 "odoc_env.ml" 59 2334 2427
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 59 2334 2428 "odoc_env.ml" 59 2334 2429
+type(
+  Types.signature
+)
+ident(
+  int_ref s "odoc_env.ml" 59 2334 2366 "odoc_env.ml" 59 2334 2367
+)
+"odoc_env.ml" 59 2334 2371 "odoc_env.ml" 59 2334 2429
+call(
+  stack
+)
+type(
+  env
+)
+"odoc_env.ml" 60 2430 2443 "odoc_env.ml" 60 2430 2444
+type(
+  Types.module_type
+)
+"odoc_env.ml" 60 2430 2448 "odoc_env.ml" 60 2430 2451
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 51 1765 1773 "odoc_env.ml" 51 1765 1776
+)
+"odoc_env.ml" 58 2210 2220 "odoc_env.ml" 60 2430 2451
+type(
+  env
+)
+"odoc_env.ml" 62 2463 2473 "odoc_env.ml" 62 2463 2477
+type(
+  env
+)
+ident(
+  int_ref env2 "odoc_env.ml" 57 2191 2203 "odoc_env.ml" 57 2191 2207
+)
+"odoc_env.ml" 62 2463 2498 "odoc_env.ml" 62 2463 2506
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref rel_name "odoc_env.ml" 45 1639 1645 "odoc_env.ml" 45 1639 1653
+)
+"odoc_env.ml" 62 2463 2507 "odoc_env.ml" 62 2463 2512
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 56 2150 2174 "odoc_env.ml" 56 2150 2179
+)
+"odoc_env.ml" 62 2463 2498 "odoc_env.ml" 62 2463 2512
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 62 2463 2514 "odoc_env.ml" 62 2463 2521
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref qualify "odoc_env.ml" 44 1579 1585 "odoc_env.ml" 44 1579 1592
+)
+"odoc_env.ml" 62 2463 2522 "odoc_env.ml" 62 2463 2527
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 56 2150 2174 "odoc_env.ml" 56 2150 2179
+)
+"odoc_env.ml" 62 2463 2514 "odoc_env.ml" 62 2463 2527
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 62 2463 2497 "odoc_env.ml" 62 2463 2528
+type(
+  env_element
+)
+"odoc_env.ml" 62 2463 2532 "odoc_env.ml" 62 2463 2536
+type(
+  env
+)
+ident(
+  int_ref env2 "odoc_env.ml" 57 2191 2203 "odoc_env.ml" 57 2191 2207
+)
+"odoc_env.ml" 62 2463 2532 "odoc_env.ml" 62 2463 2548
+type(
+  env_element list
+)
+"odoc_env.ml" 62 2463 2497 "odoc_env.ml" 62 2463 2548
+type(
+  env_element list
+)
+"odoc_env.ml" 62 2463 2471 "odoc_env.ml" 62 2463 2550
+type(
+  env
+)
+"odoc_env.ml" 57 2191 2199 "odoc_env.ml" 62 2463 2550
+type(
+  env
+)
+"odoc_env.ml" 63 2551 2576 "odoc_env.ml" 63 2551 2581
+type(
+  Ident.t
+)
+ident(
+  def ident "odoc_env.ml" 64 2600 2608 "odoc_env.ml" 74 3007 3104
+)
+"odoc_env.ml" 63 2551 2583 "odoc_env.ml" 63 2551 2595
+type(
+  Types.modtype_declaration
+)
+ident(
+  def modtype_decl "odoc_env.ml" 64 2600 2608 "odoc_env.ml" 74 3007 3104
+)
+"odoc_env.ml" 63 2551 2557 "odoc_env.ml" 63 2551 2596
+type(
+  Types.signature_item
+)
+"odoc_env.ml" 64 2600 2612 "odoc_env.ml" 64 2600 2616
+type(
+  env
+)
+ident(
+  def env2 "odoc_env.ml" 74 3007 3015 "odoc_env.ml" 74 3007 3104
+)
+"odoc_env.ml" 65 2619 2635 "odoc_env.ml" 65 2619 2647
+type(
+  Types.modtype_declaration
+)
+ident(
+  int_ref modtype_decl "odoc_env.ml" 63 2551 2583 "odoc_env.ml" 63 2551 2595
+)
+"odoc_env.ml" 65 2619 2635 "odoc_env.ml" 65 2619 2662
+type(
+  Types.module_type option
+)
+"odoc_env.ml" 66 2668 2680 "odoc_env.ml" 66 2668 2684
+type(
+  Types.module_type option
+)
+"odoc_env.ml" 67 2688 2702 "odoc_env.ml" 67 2688 2705
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 51 1765 1773 "odoc_env.ml" 51 1765 1776
+)
+"odoc_env.ml" 68 2706 2723 "odoc_env.ml" 68 2706 2730
+type(
+  Types.module_type
+)
+ident(
+  def modtype "odoc_env.ml" 69 2734 2748 "odoc_env.ml" 72 2970 2995
+)
+"odoc_env.ml" 68 2706 2718 "odoc_env.ml" 68 2706 2730
+type(
+  Types.module_type option
+)
+"odoc_env.ml" 69 2734 2754 "odoc_env.ml" 69 2734 2761
+type(
+  Types.module_type
+)
+ident(
+  int_ref modtype "odoc_env.ml" 68 2706 2723 "odoc_env.ml" 68 2706 2730
+)
+"odoc_env.ml" 71 2870 2906 "odoc_env.ml" 71 2870 2907
+type(
+  Types.signature
+)
+ident(
+  def s "odoc_env.ml" 71 2870 2911 "odoc_env.ml" 71 2870 2969
+)
+"odoc_env.ml" 71 2870 2886 "odoc_env.ml" 71 2870 2907
+type(
+  Types.module_type
+)
+"odoc_env.ml" 71 2870 2911 "odoc_env.ml" 71 2870 2924
+type(
+  env -> Name.t -> ?rel:Name.t -> Types.signature -> env
+)
+ident(
+  int_ref add_signature "odoc_env.ml" 43 1534 1542 "odoc_env.ml" 43 1534 1555
+)
+"odoc_env.ml" 71 2870 2925 "odoc_env.ml" 71 2870 2928
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 51 1765 1773 "odoc_env.ml" 51 1765 1776
+)
+"odoc_env.ml" 71 2870 2930 "odoc_env.ml" 71 2870 2937
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref qualify "odoc_env.ml" 44 1579 1585 "odoc_env.ml" 44 1579 1592
+)
+"odoc_env.ml" 71 2870 2938 "odoc_env.ml" 71 2870 2943
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 63 2551 2576 "odoc_env.ml" 63 2551 2581
+)
+"odoc_env.ml" 71 2870 2929 "odoc_env.ml" 71 2870 2944
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 71 2870 2952 "odoc_env.ml" 71 2870 2960
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref rel_name "odoc_env.ml" 45 1639 1645 "odoc_env.ml" 45 1639 1653
+)
+"odoc_env.ml" 71 2870 2961 "odoc_env.ml" 71 2870 2966
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 63 2551 2576 "odoc_env.ml" 63 2551 2581
+)
+"odoc_env.ml" 71 2870 2951 "odoc_env.ml" 71 2870 2967
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 71 2870 2968 "odoc_env.ml" 71 2870 2969
+type(
+  Types.signature
+)
+ident(
+  int_ref s "odoc_env.ml" 71 2870 2906 "odoc_env.ml" 71 2870 2907
+)
+"odoc_env.ml" 71 2870 2911 "odoc_env.ml" 71 2870 2969
+call(
+  stack
+)
+type(
+  env
+)
+"odoc_env.ml" 72 2970 2987 "odoc_env.ml" 72 2970 2988
+type(
+  Types.module_type
+)
+"odoc_env.ml" 72 2970 2992 "odoc_env.ml" 72 2970 2995
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 51 1765 1773 "odoc_env.ml" 51 1765 1776
+)
+"odoc_env.ml" 69 2734 2748 "odoc_env.ml" 72 2970 2995
+type(
+  env
+)
+"odoc_env.ml" 65 2619 2629 "odoc_env.ml" 72 2970 2995
+type(
+  env
+)
+"odoc_env.ml" 74 3007 3017 "odoc_env.ml" 74 3007 3021
+type(
+  env
+)
+ident(
+  int_ref env2 "odoc_env.ml" 64 2600 2612 "odoc_env.ml" 64 2600 2616
+)
+"odoc_env.ml" 74 3007 3047 "odoc_env.ml" 74 3007 3055
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref rel_name "odoc_env.ml" 45 1639 1645 "odoc_env.ml" 45 1639 1653
+)
+"odoc_env.ml" 74 3007 3056 "odoc_env.ml" 74 3007 3061
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 63 2551 2576 "odoc_env.ml" 63 2551 2581
+)
+"odoc_env.ml" 74 3007 3047 "odoc_env.ml" 74 3007 3061
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 74 3007 3063 "odoc_env.ml" 74 3007 3070
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref qualify "odoc_env.ml" 44 1579 1585 "odoc_env.ml" 44 1579 1592
+)
+"odoc_env.ml" 74 3007 3071 "odoc_env.ml" 74 3007 3076
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 63 2551 2576 "odoc_env.ml" 63 2551 2581
+)
+"odoc_env.ml" 74 3007 3063 "odoc_env.ml" 74 3007 3076
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 74 3007 3046 "odoc_env.ml" 74 3007 3077
+type(
+  env_element
+)
+"odoc_env.ml" 74 3007 3081 "odoc_env.ml" 74 3007 3085
+type(
+  env
+)
+ident(
+  int_ref env2 "odoc_env.ml" 64 2600 2612 "odoc_env.ml" 64 2600 2616
+)
+"odoc_env.ml" 74 3007 3081 "odoc_env.ml" 74 3007 3102
+type(
+  env_element list
+)
+"odoc_env.ml" 74 3007 3046 "odoc_env.ml" 74 3007 3102
+type(
+  env_element list
+)
+"odoc_env.ml" 74 3007 3015 "odoc_env.ml" 74 3007 3104
+type(
+  env
+)
+"odoc_env.ml" 64 2600 2608 "odoc_env.ml" 74 3007 3104
+type(
+  env
+)
+"odoc_env.ml" 75 3105 3128 "odoc_env.ml" 75 3105 3133
+type(
+  Ident.t
+)
+ident(
+  def ident "odoc_env.ml" 75 3105 3144 "odoc_env.ml" 75 3105 3221
+)
+"odoc_env.ml" 75 3105 3135 "odoc_env.ml" 75 3105 3136
+type(
+  Types.class_declaration
+)
+"odoc_env.ml" 75 3105 3138 "odoc_env.ml" 75 3105 3139
+type(
+  Types.rec_status
+)
+"odoc_env.ml" 75 3105 3111 "odoc_env.ml" 75 3105 3140
+type(
+  Types.signature_item
+)
+"odoc_env.ml" 75 3105 3146 "odoc_env.ml" 75 3105 3149
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 51 1765 1773 "odoc_env.ml" 51 1765 1776
+)
+"odoc_env.ml" 75 3105 3170 "odoc_env.ml" 75 3105 3178
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref rel_name "odoc_env.ml" 45 1639 1645 "odoc_env.ml" 45 1639 1653
+)
+"odoc_env.ml" 75 3105 3179 "odoc_env.ml" 75 3105 3184
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 75 3105 3128 "odoc_env.ml" 75 3105 3133
+)
+"odoc_env.ml" 75 3105 3170 "odoc_env.ml" 75 3105 3184
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 75 3105 3186 "odoc_env.ml" 75 3105 3193
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref qualify "odoc_env.ml" 44 1579 1585 "odoc_env.ml" 44 1579 1592
+)
+"odoc_env.ml" 75 3105 3194 "odoc_env.ml" 75 3105 3199
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 75 3105 3128 "odoc_env.ml" 75 3105 3133
+)
+"odoc_env.ml" 75 3105 3186 "odoc_env.ml" 75 3105 3199
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 75 3105 3169 "odoc_env.ml" 75 3105 3200
+type(
+  env_element
+)
+"odoc_env.ml" 75 3105 3204 "odoc_env.ml" 75 3105 3207
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 51 1765 1773 "odoc_env.ml" 51 1765 1776
+)
+"odoc_env.ml" 75 3105 3204 "odoc_env.ml" 75 3105 3219
+type(
+  env_element list
+)
+"odoc_env.ml" 75 3105 3169 "odoc_env.ml" 75 3105 3219
+type(
+  env_element list
+)
+"odoc_env.ml" 75 3105 3144 "odoc_env.ml" 75 3105 3221
+type(
+  env
+)
+"odoc_env.ml" 76 3222 3250 "odoc_env.ml" 76 3222 3255
+type(
+  Ident.t
+)
+ident(
+  def ident "odoc_env.ml" 76 3222 3266 "odoc_env.ml" 76 3222 3351
+)
+"odoc_env.ml" 76 3222 3257 "odoc_env.ml" 76 3222 3258
+type(
+  Types.class_type_declaration
+)
+"odoc_env.ml" 76 3222 3260 "odoc_env.ml" 76 3222 3261
+type(
+  Types.rec_status
+)
+"odoc_env.ml" 76 3222 3228 "odoc_env.ml" 76 3222 3262
+type(
+  Types.signature_item
+)
+"odoc_env.ml" 76 3222 3268 "odoc_env.ml" 76 3222 3271
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 51 1765 1773 "odoc_env.ml" 51 1765 1776
+)
+"odoc_env.ml" 76 3222 3296 "odoc_env.ml" 76 3222 3304
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref rel_name "odoc_env.ml" 45 1639 1645 "odoc_env.ml" 45 1639 1653
+)
+"odoc_env.ml" 76 3222 3305 "odoc_env.ml" 76 3222 3310
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 76 3222 3250 "odoc_env.ml" 76 3222 3255
+)
+"odoc_env.ml" 76 3222 3296 "odoc_env.ml" 76 3222 3310
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 76 3222 3312 "odoc_env.ml" 76 3222 3319
+type(
+  Ident.t -> Name.t
+)
+ident(
+  int_ref qualify "odoc_env.ml" 44 1579 1585 "odoc_env.ml" 44 1579 1592
+)
+"odoc_env.ml" 76 3222 3320 "odoc_env.ml" 76 3222 3325
+type(
+  Ident.t
+)
+ident(
+  int_ref ident "odoc_env.ml" 76 3222 3250 "odoc_env.ml" 76 3222 3255
+)
+"odoc_env.ml" 76 3222 3312 "odoc_env.ml" 76 3222 3325
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 76 3222 3295 "odoc_env.ml" 76 3222 3326
+type(
+  env_element
+)
+"odoc_env.ml" 76 3222 3330 "odoc_env.ml" 76 3222 3333
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 51 1765 1773 "odoc_env.ml" 51 1765 1776
+)
+"odoc_env.ml" 76 3222 3330 "odoc_env.ml" 76 3222 3349
+type(
+  env_element list
+)
+"odoc_env.ml" 76 3222 3295 "odoc_env.ml" 76 3222 3349
+type(
+  env_element list
+)
+"odoc_env.ml" 76 3222 3266 "odoc_env.ml" 76 3222 3351
+type(
+  env
+)
+"odoc_env.ml" 52 1784 1788 "odoc_env.ml" 76 3222 3351
+type(
+  env
+)
+"odoc_env.ml" 78 3357 3359 "odoc_env.ml" 78 3357 3373
+type(
+  (env -> Types.signature_item -> env) -> env -> Types.signature -> env
+)
+ident(
+  ext_ref List.fold_left
+)
+"odoc_env.ml" 78 3357 3374 "odoc_env.ml" 78 3357 3375
+type(
+  env -> Types.signature_item -> env
+)
+ident(
+  int_ref f "odoc_env.ml" 51 1765 1771 "odoc_env.ml" 51 1765 1772
+)
+"odoc_env.ml" 78 3357 3376 "odoc_env.ml" 78 3357 3379
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 43 1534 1556 "odoc_env.ml" 43 1534 1559
+)
+"odoc_env.ml" 78 3357 3380 "odoc_env.ml" 78 3357 3386
+type(
+  Types.signature
+)
+ident(
+  int_ref signat "odoc_env.ml" 43 1534 1570 "odoc_env.ml" 43 1534 1576
+)
+"odoc_env.ml" 78 3357 3359 "odoc_env.ml" 78 3357 3386
+call(
+  tail
+)
+type(
+  env
+)
+"odoc_env.ml" 51 1765 1767 "odoc_env.ml" 78 3357 3386
+type(
+  env
+)
+"odoc_env.ml" 45 1639 1641 "odoc_env.ml" 78 3357 3386
+type(
+  env
+)
+"odoc_env.ml" 44 1579 1581 "odoc_env.ml" 78 3357 3386
+type(
+  env
+)
+"odoc_env.ml" 80 3388 3392 "odoc_env.ml" 80 3388 3405
+type(
+  env -> Name.t -> env
+)
+ident(
+  def add_extension "odoc_env.ml" 84 3547 3547 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 80 3388 3406 "odoc_env.ml" 80 3388 3409
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 80 3388 3410 "odoc_env.ml" 82 3467 3545
+)
+"odoc_env.ml" 80 3388 3410 "odoc_env.ml" 80 3388 3419
+type(
+  Name.t
+)
+ident(
+  def full_name "odoc_env.ml" 81 3422 3424 "odoc_env.ml" 82 3467 3545
+)
+"odoc_env.ml" 81 3422 3428 "odoc_env.ml" 81 3422 3439
+type(
+  Name.t
+)
+ident(
+  def simple_name "odoc_env.ml" 82 3467 3469 "odoc_env.ml" 82 3467 3545
+)
+"odoc_env.ml" 81 3422 3442 "odoc_env.ml" 81 3422 3453
+type(
+  Name.t -> Name.t
+)
+ident(
+  ext_ref Name.simple
+)
+"odoc_env.ml" 81 3422 3454 "odoc_env.ml" 81 3422 3463
+type(
+  Name.t
+)
+ident(
+  int_ref full_name "odoc_env.ml" 80 3388 3410 "odoc_env.ml" 80 3388 3419
+)
+"odoc_env.ml" 81 3422 3442 "odoc_env.ml" 81 3422 3463
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 82 3467 3471 "odoc_env.ml" 82 3467 3474
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 80 3388 3406 "odoc_env.ml" 80 3388 3409
+)
+"odoc_env.ml" 82 3467 3498 "odoc_env.ml" 82 3467 3509
+type(
+  Name.t
+)
+ident(
+  int_ref simple_name "odoc_env.ml" 81 3422 3428 "odoc_env.ml" 81 3422 3439
+)
+"odoc_env.ml" 82 3467 3511 "odoc_env.ml" 82 3467 3520
+type(
+  Name.t
+)
+ident(
+  int_ref full_name "odoc_env.ml" 80 3388 3410 "odoc_env.ml" 80 3388 3419
+)
+"odoc_env.ml" 82 3467 3497 "odoc_env.ml" 82 3467 3521
+type(
+  env_element
+)
+"odoc_env.ml" 82 3467 3525 "odoc_env.ml" 82 3467 3528
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 80 3388 3406 "odoc_env.ml" 80 3388 3409
+)
+"odoc_env.ml" 82 3467 3525 "odoc_env.ml" 82 3467 3543
+type(
+  env_element list
+)
+"odoc_env.ml" 82 3467 3497 "odoc_env.ml" 82 3467 3543
+type(
+  env_element list
+)
+"odoc_env.ml" 82 3467 3469 "odoc_env.ml" 82 3467 3545
+type(
+  env
+)
+"odoc_env.ml" 81 3422 3424 "odoc_env.ml" 82 3467 3545
+type(
+  env
+)
+"odoc_env.ml" 84 3547 3551 "odoc_env.ml" 84 3547 3559
+type(
+  env -> Name.t -> env
+)
+ident(
+  def add_type "odoc_env.ml" 88 3691 3691 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 84 3547 3560 "odoc_env.ml" 84 3547 3563
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 84 3547 3564 "odoc_env.ml" 86 3621 3689
+)
+"odoc_env.ml" 84 3547 3564 "odoc_env.ml" 84 3547 3573
+type(
+  Name.t
+)
+ident(
+  def full_name "odoc_env.ml" 85 3576 3578 "odoc_env.ml" 86 3621 3689
+)
+"odoc_env.ml" 85 3576 3582 "odoc_env.ml" 85 3576 3593
+type(
+  Name.t
+)
+ident(
+  def simple_name "odoc_env.ml" 86 3621 3623 "odoc_env.ml" 86 3621 3689
+)
+"odoc_env.ml" 85 3576 3596 "odoc_env.ml" 85 3576 3607
+type(
+  Name.t -> Name.t
+)
+ident(
+  ext_ref Name.simple
+)
+"odoc_env.ml" 85 3576 3608 "odoc_env.ml" 85 3576 3617
+type(
+  Name.t
+)
+ident(
+  int_ref full_name "odoc_env.ml" 84 3547 3564 "odoc_env.ml" 84 3547 3573
+)
+"odoc_env.ml" 85 3576 3596 "odoc_env.ml" 85 3576 3617
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 86 3621 3625 "odoc_env.ml" 86 3621 3628
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 84 3547 3560 "odoc_env.ml" 84 3547 3563
+)
+"odoc_env.ml" 86 3621 3647 "odoc_env.ml" 86 3621 3658
+type(
+  Name.t
+)
+ident(
+  int_ref simple_name "odoc_env.ml" 85 3576 3582 "odoc_env.ml" 85 3576 3593
+)
+"odoc_env.ml" 86 3621 3660 "odoc_env.ml" 86 3621 3669
+type(
+  Name.t
+)
+ident(
+  int_ref full_name "odoc_env.ml" 84 3547 3564 "odoc_env.ml" 84 3547 3573
+)
+"odoc_env.ml" 86 3621 3646 "odoc_env.ml" 86 3621 3670
+type(
+  env_element
+)
+"odoc_env.ml" 86 3621 3674 "odoc_env.ml" 86 3621 3677
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 84 3547 3560 "odoc_env.ml" 84 3547 3563
+)
+"odoc_env.ml" 86 3621 3674 "odoc_env.ml" 86 3621 3687
+type(
+  env_element list
+)
+"odoc_env.ml" 86 3621 3646 "odoc_env.ml" 86 3621 3687
+type(
+  env_element list
+)
+"odoc_env.ml" 86 3621 3623 "odoc_env.ml" 86 3621 3689
+type(
+  env
+)
+"odoc_env.ml" 85 3576 3578 "odoc_env.ml" 86 3621 3689
+type(
+  env
+)
+"odoc_env.ml" 88 3691 3695 "odoc_env.ml" 88 3691 3704
+type(
+  env -> Name.t -> env
+)
+ident(
+  def add_value "odoc_env.ml" 92 3838 3838 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 88 3691 3705 "odoc_env.ml" 88 3691 3708
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 88 3691 3709 "odoc_env.ml" 90 3766 3836
+)
+"odoc_env.ml" 88 3691 3709 "odoc_env.ml" 88 3691 3718
+type(
+  Name.t
+)
+ident(
+  def full_name "odoc_env.ml" 89 3721 3723 "odoc_env.ml" 90 3766 3836
+)
+"odoc_env.ml" 89 3721 3727 "odoc_env.ml" 89 3721 3738
+type(
+  Name.t
+)
+ident(
+  def simple_name "odoc_env.ml" 90 3766 3768 "odoc_env.ml" 90 3766 3836
+)
+"odoc_env.ml" 89 3721 3741 "odoc_env.ml" 89 3721 3752
+type(
+  Name.t -> Name.t
+)
+ident(
+  ext_ref Name.simple
+)
+"odoc_env.ml" 89 3721 3753 "odoc_env.ml" 89 3721 3762
+type(
+  Name.t
+)
+ident(
+  int_ref full_name "odoc_env.ml" 88 3691 3709 "odoc_env.ml" 88 3691 3718
+)
+"odoc_env.ml" 89 3721 3741 "odoc_env.ml" 89 3721 3762
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 90 3766 3770 "odoc_env.ml" 90 3766 3773
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 88 3691 3705 "odoc_env.ml" 88 3691 3708
+)
+"odoc_env.ml" 90 3766 3793 "odoc_env.ml" 90 3766 3804
+type(
+  Name.t
+)
+ident(
+  int_ref simple_name "odoc_env.ml" 89 3721 3727 "odoc_env.ml" 89 3721 3738
+)
+"odoc_env.ml" 90 3766 3806 "odoc_env.ml" 90 3766 3815
+type(
+  Name.t
+)
+ident(
+  int_ref full_name "odoc_env.ml" 88 3691 3709 "odoc_env.ml" 88 3691 3718
+)
+"odoc_env.ml" 90 3766 3792 "odoc_env.ml" 90 3766 3816
+type(
+  env_element
+)
+"odoc_env.ml" 90 3766 3820 "odoc_env.ml" 90 3766 3823
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 88 3691 3705 "odoc_env.ml" 88 3691 3708
+)
+"odoc_env.ml" 90 3766 3820 "odoc_env.ml" 90 3766 3834
+type(
+  env_element list
+)
+"odoc_env.ml" 90 3766 3792 "odoc_env.ml" 90 3766 3834
+type(
+  env_element list
+)
+"odoc_env.ml" 90 3766 3768 "odoc_env.ml" 90 3766 3836
+type(
+  env
+)
+"odoc_env.ml" 89 3721 3723 "odoc_env.ml" 90 3766 3836
+type(
+  env
+)
+"odoc_env.ml" 92 3838 3842 "odoc_env.ml" 92 3838 3852
+type(
+  env -> Name.t -> env
+)
+ident(
+  def add_module "odoc_env.ml" 96 3988 3988 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 92 3838 3853 "odoc_env.ml" 92 3838 3856
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 92 3838 3857 "odoc_env.ml" 94 3914 3986
+)
+"odoc_env.ml" 92 3838 3857 "odoc_env.ml" 92 3838 3866
+type(
+  Name.t
+)
+ident(
+  def full_name "odoc_env.ml" 93 3869 3871 "odoc_env.ml" 94 3914 3986
+)
+"odoc_env.ml" 93 3869 3875 "odoc_env.ml" 93 3869 3886
+type(
+  Name.t
+)
+ident(
+  def simple_name "odoc_env.ml" 94 3914 3916 "odoc_env.ml" 94 3914 3986
+)
+"odoc_env.ml" 93 3869 3889 "odoc_env.ml" 93 3869 3900
+type(
+  Name.t -> Name.t
+)
+ident(
+  ext_ref Name.simple
+)
+"odoc_env.ml" 93 3869 3901 "odoc_env.ml" 93 3869 3910
+type(
+  Name.t
+)
+ident(
+  int_ref full_name "odoc_env.ml" 92 3838 3857 "odoc_env.ml" 92 3838 3866
+)
+"odoc_env.ml" 93 3869 3889 "odoc_env.ml" 93 3869 3910
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 94 3914 3918 "odoc_env.ml" 94 3914 3921
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 92 3838 3853 "odoc_env.ml" 92 3838 3856
+)
+"odoc_env.ml" 94 3914 3942 "odoc_env.ml" 94 3914 3953
+type(
+  Name.t
+)
+ident(
+  int_ref simple_name "odoc_env.ml" 93 3869 3875 "odoc_env.ml" 93 3869 3886
+)
+"odoc_env.ml" 94 3914 3955 "odoc_env.ml" 94 3914 3964
+type(
+  Name.t
+)
+ident(
+  int_ref full_name "odoc_env.ml" 92 3838 3857 "odoc_env.ml" 92 3838 3866
+)
+"odoc_env.ml" 94 3914 3941 "odoc_env.ml" 94 3914 3965
+type(
+  env_element
+)
+"odoc_env.ml" 94 3914 3969 "odoc_env.ml" 94 3914 3972
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 92 3838 3853 "odoc_env.ml" 92 3838 3856
+)
+"odoc_env.ml" 94 3914 3969 "odoc_env.ml" 94 3914 3984
+type(
+  env_element list
+)
+"odoc_env.ml" 94 3914 3941 "odoc_env.ml" 94 3914 3984
+type(
+  env_element list
+)
+"odoc_env.ml" 94 3914 3916 "odoc_env.ml" 94 3914 3986
+type(
+  env
+)
+"odoc_env.ml" 93 3869 3871 "odoc_env.ml" 94 3914 3986
+type(
+  env
+)
+"odoc_env.ml" 96 3988 3992 "odoc_env.ml" 96 3988 4007
+type(
+  env -> Name.t -> env
+)
+ident(
+  def add_module_type "odoc_env.ml" 100 4153 4153 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 96 3988 4008 "odoc_env.ml" 96 3988 4011
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 96 3988 4012 "odoc_env.ml" 98 4069 4151
+)
+"odoc_env.ml" 96 3988 4012 "odoc_env.ml" 96 3988 4021
+type(
+  Name.t
+)
+ident(
+  def full_name "odoc_env.ml" 97 4024 4026 "odoc_env.ml" 98 4069 4151
+)
+"odoc_env.ml" 97 4024 4030 "odoc_env.ml" 97 4024 4041
+type(
+  Name.t
+)
+ident(
+  def simple_name "odoc_env.ml" 98 4069 4071 "odoc_env.ml" 98 4069 4151
+)
+"odoc_env.ml" 97 4024 4044 "odoc_env.ml" 97 4024 4055
+type(
+  Name.t -> Name.t
+)
+ident(
+  ext_ref Name.simple
+)
+"odoc_env.ml" 97 4024 4056 "odoc_env.ml" 97 4024 4065
+type(
+  Name.t
+)
+ident(
+  int_ref full_name "odoc_env.ml" 96 3988 4012 "odoc_env.ml" 96 3988 4021
+)
+"odoc_env.ml" 97 4024 4044 "odoc_env.ml" 97 4024 4065
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 98 4069 4073 "odoc_env.ml" 98 4069 4076
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 96 3988 4008 "odoc_env.ml" 96 3988 4011
+)
+"odoc_env.ml" 98 4069 4102 "odoc_env.ml" 98 4069 4113
+type(
+  Name.t
+)
+ident(
+  int_ref simple_name "odoc_env.ml" 97 4024 4030 "odoc_env.ml" 97 4024 4041
+)
+"odoc_env.ml" 98 4069 4115 "odoc_env.ml" 98 4069 4124
+type(
+  Name.t
+)
+ident(
+  int_ref full_name "odoc_env.ml" 96 3988 4012 "odoc_env.ml" 96 3988 4021
+)
+"odoc_env.ml" 98 4069 4101 "odoc_env.ml" 98 4069 4125
+type(
+  env_element
+)
+"odoc_env.ml" 98 4069 4129 "odoc_env.ml" 98 4069 4132
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 96 3988 4008 "odoc_env.ml" 96 3988 4011
+)
+"odoc_env.ml" 98 4069 4129 "odoc_env.ml" 98 4069 4149
+type(
+  env_element list
+)
+"odoc_env.ml" 98 4069 4101 "odoc_env.ml" 98 4069 4149
+type(
+  env_element list
+)
+"odoc_env.ml" 98 4069 4071 "odoc_env.ml" 98 4069 4151
+type(
+  env
+)
+"odoc_env.ml" 97 4024 4026 "odoc_env.ml" 98 4069 4151
+type(
+  env
+)
+"odoc_env.ml" 100 4153 4157 "odoc_env.ml" 100 4153 4166
+type(
+  env -> Name.t -> env
+)
+ident(
+  def add_class "odoc_env.ml" 108 4440 4440 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 100 4153 4167 "odoc_env.ml" 100 4153 4170
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 100 4153 4171 "odoc_env.ml" 106 4435 4438
+)
+"odoc_env.ml" 100 4153 4171 "odoc_env.ml" 100 4153 4180
+type(
+  Name.t
+)
+ident(
+  def full_name "odoc_env.ml" 101 4183 4185 "odoc_env.ml" 106 4435 4438
+)
+"odoc_env.ml" 101 4183 4189 "odoc_env.ml" 101 4183 4200
+type(
+  Name.t
+)
+ident(
+  def simple_name "odoc_env.ml" 102 4228 4230 "odoc_env.ml" 106 4435 4438
+)
+"odoc_env.ml" 101 4183 4203 "odoc_env.ml" 101 4183 4214
+type(
+  Name.t -> Name.t
+)
+ident(
+  ext_ref Name.simple
+)
+"odoc_env.ml" 101 4183 4215 "odoc_env.ml" 101 4183 4224
+type(
+  Name.t
+)
+ident(
+  int_ref full_name "odoc_env.ml" 100 4153 4171 "odoc_env.ml" 100 4153 4180
+)
+"odoc_env.ml" 101 4183 4203 "odoc_env.ml" 101 4183 4224
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 102 4228 4232 "odoc_env.ml" 102 4228 4235
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 100 4153 4167 "odoc_env.ml" 100 4153 4170
+)
+"odoc_env.ml" 103 4241 4260 "odoc_env.ml" 103 4241 4271
+type(
+  Name.t
+)
+ident(
+  int_ref simple_name "odoc_env.ml" 101 4183 4189 "odoc_env.ml" 101 4183 4200
+)
+"odoc_env.ml" 103 4241 4273 "odoc_env.ml" 103 4241 4282
+type(
+  Name.t
+)
+ident(
+  int_ref full_name "odoc_env.ml" 100 4153 4171 "odoc_env.ml" 100 4153 4180
+)
+"odoc_env.ml" 103 4241 4259 "odoc_env.ml" 103 4241 4283
+type(
+  env_element
+)
+"odoc_env.ml" 103 4241 4287 "odoc_env.ml" 103 4241 4290
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 100 4153 4167 "odoc_env.ml" 100 4153 4170
+)
+"odoc_env.ml" 103 4241 4287 "odoc_env.ml" 103 4241 4302
+type(
+  env_element list
+)
+"odoc_env.ml" 103 4241 4259 "odoc_env.ml" 103 4241 4302
+type(
+  env_element list
+)
+"odoc_env.ml" 105 4377 4394 "odoc_env.ml" 105 4377 4405
+type(
+  Name.t
+)
+ident(
+  int_ref simple_name "odoc_env.ml" 101 4183 4189 "odoc_env.ml" 101 4183 4200
+)
+"odoc_env.ml" 105 4377 4407 "odoc_env.ml" 105 4377 4416
+type(
+  Name.t
+)
+ident(
+  int_ref full_name "odoc_env.ml" 100 4153 4171 "odoc_env.ml" 100 4153 4180
+)
+"odoc_env.ml" 105 4377 4393 "odoc_env.ml" 105 4377 4417
+type(
+  env_element
+)
+"odoc_env.ml" 105 4377 4421 "odoc_env.ml" 105 4377 4424
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 100 4153 4167 "odoc_env.ml" 100 4153 4170
+)
+"odoc_env.ml" 105 4377 4421 "odoc_env.ml" 105 4377 4434
+type(
+  env_element list
+)
+"odoc_env.ml" 105 4377 4393 "odoc_env.ml" 105 4377 4434
+type(
+  env_element list
+)
+"odoc_env.ml" 102 4228 4230 "odoc_env.ml" 106 4435 4438
+type(
+  env
+)
+"odoc_env.ml" 101 4183 4185 "odoc_env.ml" 106 4435 4438
+type(
+  env
+)
+"odoc_env.ml" 108 4440 4444 "odoc_env.ml" 108 4440 4458
+type(
+  env -> Name.t -> env
+)
+ident(
+  def add_class_type "odoc_env.ml" 116 4745 4745 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 108 4440 4459 "odoc_env.ml" 108 4440 4462
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 108 4440 4463 "odoc_env.ml" 114 4740 4743
+)
+"odoc_env.ml" 108 4440 4463 "odoc_env.ml" 108 4440 4472
+type(
+  Name.t
+)
+ident(
+  def full_name "odoc_env.ml" 109 4475 4477 "odoc_env.ml" 114 4740 4743
+)
+"odoc_env.ml" 109 4475 4481 "odoc_env.ml" 109 4475 4492
+type(
+  Name.t
+)
+ident(
+  def simple_name "odoc_env.ml" 110 4520 4522 "odoc_env.ml" 114 4740 4743
+)
+"odoc_env.ml" 109 4475 4495 "odoc_env.ml" 109 4475 4506
+type(
+  Name.t -> Name.t
+)
+ident(
+  ext_ref Name.simple
+)
+"odoc_env.ml" 109 4475 4507 "odoc_env.ml" 109 4475 4516
+type(
+  Name.t
+)
+ident(
+  int_ref full_name "odoc_env.ml" 108 4440 4463 "odoc_env.ml" 108 4440 4472
+)
+"odoc_env.ml" 109 4475 4495 "odoc_env.ml" 109 4475 4516
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 110 4520 4524 "odoc_env.ml" 110 4520 4527
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 108 4440 4459 "odoc_env.ml" 108 4440 4462
+)
+"odoc_env.ml" 111 4533 4556 "odoc_env.ml" 111 4533 4567
+type(
+  Name.t
+)
+ident(
+  int_ref simple_name "odoc_env.ml" 109 4475 4481 "odoc_env.ml" 109 4475 4492
+)
+"odoc_env.ml" 111 4533 4569 "odoc_env.ml" 111 4533 4578
+type(
+  Name.t
+)
+ident(
+  int_ref full_name "odoc_env.ml" 108 4440 4463 "odoc_env.ml" 108 4440 4472
+)
+"odoc_env.ml" 111 4533 4555 "odoc_env.ml" 111 4533 4579
+type(
+  env_element
+)
+"odoc_env.ml" 111 4533 4583 "odoc_env.ml" 111 4533 4586
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 108 4440 4459 "odoc_env.ml" 108 4440 4462
+)
+"odoc_env.ml" 111 4533 4583 "odoc_env.ml" 111 4533 4602
+type(
+  env_element list
+)
+"odoc_env.ml" 111 4533 4555 "odoc_env.ml" 111 4533 4602
+type(
+  env_element list
+)
+"odoc_env.ml" 113 4682 4699 "odoc_env.ml" 113 4682 4710
+type(
+  Name.t
+)
+ident(
+  int_ref simple_name "odoc_env.ml" 109 4475 4481 "odoc_env.ml" 109 4475 4492
+)
+"odoc_env.ml" 113 4682 4712 "odoc_env.ml" 113 4682 4721
+type(
+  Name.t
+)
+ident(
+  int_ref full_name "odoc_env.ml" 108 4440 4463 "odoc_env.ml" 108 4440 4472
+)
+"odoc_env.ml" 113 4682 4698 "odoc_env.ml" 113 4682 4722
+type(
+  env_element
+)
+"odoc_env.ml" 113 4682 4726 "odoc_env.ml" 113 4682 4729
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 108 4440 4459 "odoc_env.ml" 108 4440 4462
+)
+"odoc_env.ml" 113 4682 4726 "odoc_env.ml" 113 4682 4739
+type(
+  env_element list
+)
+"odoc_env.ml" 113 4682 4698 "odoc_env.ml" 113 4682 4739
+type(
+  env_element list
+)
+"odoc_env.ml" 110 4520 4522 "odoc_env.ml" 114 4740 4743
+type(
+  env
+)
+"odoc_env.ml" 109 4475 4477 "odoc_env.ml" 114 4740 4743
+type(
+  env
+)
+"odoc_env.ml" 116 4745 4749 "odoc_env.ml" 116 4745 4765
+type(
+  env -> Name.t -> Name.t
+)
+ident(
+  def full_module_name "odoc_env.ml" 123 4896 4896 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 116 4745 4766 "odoc_env.ml" 116 4745 4769
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 116 4745 4770 "odoc_env.ml" 121 4889 4894
+)
+"odoc_env.ml" 116 4745 4770 "odoc_env.ml" 116 4745 4771
+type(
+  Name.t
+)
+ident(
+  def n "odoc_env.ml" 117 4774 4776 "odoc_env.ml" 121 4889 4894
+)
+"odoc_env.ml" 117 4774 4780 "odoc_env.ml" 117 4774 4790
+type(
+  Name.t -> env_element list -> Name.t
+)
+ident(
+  ext_ref List.assoc
+)
+"odoc_env.ml" 117 4774 4791 "odoc_env.ml" 117 4774 4792
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 116 4745 4770 "odoc_env.ml" 116 4745 4771
+)
+"odoc_env.ml" 117 4774 4793 "odoc_env.ml" 117 4774 4796
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 116 4745 4766 "odoc_env.ml" 116 4745 4769
+)
+"odoc_env.ml" 117 4774 4793 "odoc_env.ml" 117 4774 4808
+type(
+  env_element list
+)
+"odoc_env.ml" 117 4774 4780 "odoc_env.ml" 117 4774 4808
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 118 4809 4816 "odoc_env.ml" 118 4809 4825
+type(
+  exn
+)
+"odoc_env.ml" 121 4889 4893 "odoc_env.ml" 121 4889 4894
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 116 4745 4770 "odoc_env.ml" 116 4745 4771
+)
+"odoc_env.ml" 117 4774 4776 "odoc_env.ml" 121 4889 4894
+type(
+  Name.t
+)
+"odoc_env.ml" 123 4896 4900 "odoc_env.ml" 123 4896 4921
+type(
+  env -> Name.t -> Name.t
+)
+ident(
+  def full_module_type_name "odoc_env.ml" 130 5057 5057 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 123 4896 4922 "odoc_env.ml" 123 4896 4925
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 123 4896 4926 "odoc_env.ml" 128 5050 5055
+)
+"odoc_env.ml" 123 4896 4926 "odoc_env.ml" 123 4896 4927
+type(
+  Name.t
+)
+ident(
+  def n "odoc_env.ml" 124 4930 4932 "odoc_env.ml" 128 5050 5055
+)
+"odoc_env.ml" 124 4930 4936 "odoc_env.ml" 124 4930 4946
+type(
+  Name.t -> env_element list -> Name.t
+)
+ident(
+  ext_ref List.assoc
+)
+"odoc_env.ml" 124 4930 4947 "odoc_env.ml" 124 4930 4948
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 123 4896 4926 "odoc_env.ml" 123 4896 4927
+)
+"odoc_env.ml" 124 4930 4949 "odoc_env.ml" 124 4930 4952
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 123 4896 4922 "odoc_env.ml" 123 4896 4925
+)
+"odoc_env.ml" 124 4930 4949 "odoc_env.ml" 124 4930 4969
+type(
+  env_element list
+)
+"odoc_env.ml" 124 4930 4936 "odoc_env.ml" 124 4930 4969
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 125 4970 4977 "odoc_env.ml" 125 4970 4986
+type(
+  exn
+)
+"odoc_env.ml" 128 5050 5054 "odoc_env.ml" 128 5050 5055
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 123 4896 4926 "odoc_env.ml" 123 4896 4927
+)
+"odoc_env.ml" 124 4930 4932 "odoc_env.ml" 128 5050 5055
+type(
+  Name.t
+)
+"odoc_env.ml" 130 5057 5061 "odoc_env.ml" 130 5057 5092
+type(
+  env -> Name.t -> Name.t
+)
+ident(
+  def full_module_or_module_type_name "odoc_env.ml" 134 5185 5185 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 130 5057 5093 "odoc_env.ml" 130 5057 5096
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 130 5057 5097 "odoc_env.ml" 132 5136 5183
+)
+"odoc_env.ml" 130 5057 5097 "odoc_env.ml" 130 5057 5098
+type(
+  Name.t
+)
+ident(
+  def n "odoc_env.ml" 131 5101 5103 "odoc_env.ml" 132 5136 5183
+)
+"odoc_env.ml" 131 5101 5107 "odoc_env.ml" 131 5101 5117
+type(
+  Name.t -> env_element list -> Name.t
+)
+ident(
+  ext_ref List.assoc
+)
+"odoc_env.ml" 131 5101 5118 "odoc_env.ml" 131 5101 5119
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 130 5057 5097 "odoc_env.ml" 130 5057 5098
+)
+"odoc_env.ml" 131 5101 5120 "odoc_env.ml" 131 5101 5123
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 130 5057 5093 "odoc_env.ml" 130 5057 5096
+)
+"odoc_env.ml" 131 5101 5120 "odoc_env.ml" 131 5101 5135
+type(
+  env_element list
+)
+"odoc_env.ml" 131 5101 5107 "odoc_env.ml" 131 5101 5135
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 132 5136 5143 "odoc_env.ml" 132 5136 5152
+type(
+  exn
+)
+"odoc_env.ml" 132 5136 5156 "odoc_env.ml" 132 5136 5177
+type(
+  env -> Name.t -> Name.t
+)
+ident(
+  int_ref full_module_type_name "odoc_env.ml" 123 4896 4900 "odoc_env.ml" 123 4896 4921
+)
+"odoc_env.ml" 132 5136 5178 "odoc_env.ml" 132 5136 5181
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 130 5057 5093 "odoc_env.ml" 130 5057 5096
+)
+"odoc_env.ml" 132 5136 5182 "odoc_env.ml" 132 5136 5183
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 130 5057 5097 "odoc_env.ml" 130 5057 5098
+)
+"odoc_env.ml" 132 5136 5156 "odoc_env.ml" 132 5136 5183
+call(
+  tail
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 131 5101 5103 "odoc_env.ml" 132 5136 5183
+type(
+  Name.t
+)
+"odoc_env.ml" 134 5185 5189 "odoc_env.ml" 134 5185 5203
+type(
+  env -> Name.t -> Name.t
+)
+ident(
+  def full_type_name "odoc_env.ml" 145 5438 5438 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 134 5185 5204 "odoc_env.ml" 134 5185 5207
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 134 5185 5208 "odoc_env.ml" 143 5431 5436
+)
+"odoc_env.ml" 134 5185 5208 "odoc_env.ml" 134 5185 5209
+type(
+  Name.t
+)
+ident(
+  def n "odoc_env.ml" 135 5212 5214 "odoc_env.ml" 143 5431 5436
+)
+"odoc_env.ml" 136 5218 5226 "odoc_env.ml" 136 5218 5230
+type(
+  Name.t
+)
+ident(
+  def full "odoc_env.ml" 139 5332 5336 "odoc_env.ml" 139 5332 5340
+)
+"odoc_env.ml" 136 5218 5233 "odoc_env.ml" 136 5218 5243
+type(
+  Name.t -> env_element list -> Name.t
+)
+ident(
+  ext_ref List.assoc
+)
+"odoc_env.ml" 136 5218 5244 "odoc_env.ml" 136 5218 5245
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 134 5185 5208 "odoc_env.ml" 134 5185 5209
+)
+"odoc_env.ml" 136 5218 5246 "odoc_env.ml" 136 5218 5249
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 134 5185 5204 "odoc_env.ml" 134 5185 5207
+)
+"odoc_env.ml" 136 5218 5246 "odoc_env.ml" 136 5218 5259
+type(
+  env_element list
+)
+"odoc_env.ml" 136 5218 5233 "odoc_env.ml" 136 5218 5259
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 139 5332 5336 "odoc_env.ml" 139 5332 5340
+type(
+  Name.t
+)
+ident(
+  int_ref full "odoc_env.ml" 136 5218 5226 "odoc_env.ml" 136 5218 5230
+)
+"odoc_env.ml" 136 5218 5222 "odoc_env.ml" 139 5332 5340
+type(
+  Name.t
+)
+"odoc_env.ml" 140 5341 5348 "odoc_env.ml" 140 5341 5357
+type(
+  exn
+)
+"odoc_env.ml" 143 5431 5435 "odoc_env.ml" 143 5431 5436
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 134 5185 5208 "odoc_env.ml" 134 5185 5209
+)
+"odoc_env.ml" 135 5212 5214 "odoc_env.ml" 143 5431 5436
+type(
+  Name.t
+)
+"odoc_env.ml" 145 5438 5442 "odoc_env.ml" 145 5438 5457
+type(
+  env -> Name.t -> Name.t
+)
+ident(
+  def full_value_name "odoc_env.ml" 149 5523 5523 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 145 5438 5458 "odoc_env.ml" 145 5438 5461
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 145 5438 5462 "odoc_env.ml" 147 5500 5521
+)
+"odoc_env.ml" 145 5438 5462 "odoc_env.ml" 145 5438 5463
+type(
+  Name.t
+)
+ident(
+  def n "odoc_env.ml" 146 5466 5468 "odoc_env.ml" 147 5500 5521
+)
+"odoc_env.ml" 146 5466 5472 "odoc_env.ml" 146 5466 5482
+type(
+  Name.t -> env_element list -> Name.t
+)
+ident(
+  ext_ref List.assoc
+)
+"odoc_env.ml" 146 5466 5483 "odoc_env.ml" 146 5466 5484
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 145 5438 5462 "odoc_env.ml" 145 5438 5463
+)
+"odoc_env.ml" 146 5466 5485 "odoc_env.ml" 146 5466 5488
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 145 5438 5458 "odoc_env.ml" 145 5438 5461
+)
+"odoc_env.ml" 146 5466 5485 "odoc_env.ml" 146 5466 5499
+type(
+  env_element list
+)
+"odoc_env.ml" 146 5466 5472 "odoc_env.ml" 146 5466 5499
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 147 5500 5507 "odoc_env.ml" 147 5500 5516
+type(
+  exn
+)
+"odoc_env.ml" 147 5500 5520 "odoc_env.ml" 147 5500 5521
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 145 5438 5462 "odoc_env.ml" 145 5438 5463
+)
+"odoc_env.ml" 146 5466 5468 "odoc_env.ml" 147 5500 5521
+type(
+  Name.t
+)
+"odoc_env.ml" 149 5523 5527 "odoc_env.ml" 149 5523 5558
+type(
+  env -> Name.t -> Name.t
+)
+ident(
+  def full_extension_constructor_name "odoc_env.ml" 156 5692 5692 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 149 5523 5559 "odoc_env.ml" 149 5523 5562
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 149 5523 5563 "odoc_env.ml" 154 5685 5690
+)
+"odoc_env.ml" 149 5523 5563 "odoc_env.ml" 149 5523 5564
+type(
+  Name.t
+)
+ident(
+  def n "odoc_env.ml" 150 5567 5569 "odoc_env.ml" 154 5685 5690
+)
+"odoc_env.ml" 150 5567 5573 "odoc_env.ml" 150 5567 5583
+type(
+  Name.t -> env_element list -> Name.t
+)
+ident(
+  ext_ref List.assoc
+)
+"odoc_env.ml" 150 5567 5584 "odoc_env.ml" 150 5567 5585
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 149 5523 5563 "odoc_env.ml" 149 5523 5564
+)
+"odoc_env.ml" 150 5567 5586 "odoc_env.ml" 150 5567 5589
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 149 5523 5559 "odoc_env.ml" 149 5523 5562
+)
+"odoc_env.ml" 150 5567 5586 "odoc_env.ml" 150 5567 5604
+type(
+  env_element list
+)
+"odoc_env.ml" 150 5567 5573 "odoc_env.ml" 150 5567 5604
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 151 5605 5612 "odoc_env.ml" 151 5605 5621
+type(
+  exn
+)
+"odoc_env.ml" 154 5685 5689 "odoc_env.ml" 154 5685 5690
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 149 5523 5563 "odoc_env.ml" 149 5523 5564
+)
+"odoc_env.ml" 150 5567 5569 "odoc_env.ml" 154 5685 5690
+type(
+  Name.t
+)
+"odoc_env.ml" 156 5692 5696 "odoc_env.ml" 156 5692 5711
+type(
+  env -> Name.t -> Name.t
+)
+ident(
+  def full_class_name "odoc_env.ml" 163 5842 5842 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 156 5692 5712 "odoc_env.ml" 156 5692 5715
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 156 5692 5716 "odoc_env.ml" 161 5835 5840
+)
+"odoc_env.ml" 156 5692 5716 "odoc_env.ml" 156 5692 5717
+type(
+  Name.t
+)
+ident(
+  def n "odoc_env.ml" 157 5720 5722 "odoc_env.ml" 161 5835 5840
+)
+"odoc_env.ml" 157 5720 5726 "odoc_env.ml" 157 5720 5736
+type(
+  Name.t -> env_element list -> Name.t
+)
+ident(
+  ext_ref List.assoc
+)
+"odoc_env.ml" 157 5720 5737 "odoc_env.ml" 157 5720 5738
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 156 5692 5716 "odoc_env.ml" 156 5692 5717
+)
+"odoc_env.ml" 157 5720 5739 "odoc_env.ml" 157 5720 5742
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 156 5692 5712 "odoc_env.ml" 156 5692 5715
+)
+"odoc_env.ml" 157 5720 5739 "odoc_env.ml" 157 5720 5754
+type(
+  env_element list
+)
+"odoc_env.ml" 157 5720 5726 "odoc_env.ml" 157 5720 5754
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 158 5755 5762 "odoc_env.ml" 158 5755 5771
+type(
+  exn
+)
+"odoc_env.ml" 161 5835 5839 "odoc_env.ml" 161 5835 5840
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 156 5692 5716 "odoc_env.ml" 156 5692 5717
+)
+"odoc_env.ml" 157 5720 5722 "odoc_env.ml" 161 5835 5840
+type(
+  Name.t
+)
+"odoc_env.ml" 163 5842 5846 "odoc_env.ml" 163 5842 5866
+type(
+  env -> Name.t -> Name.t
+)
+ident(
+  def full_class_type_name "odoc_env.ml" 170 6001 6001 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 163 5842 5867 "odoc_env.ml" 163 5842 5870
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 163 5842 5871 "odoc_env.ml" 168 5994 5999
+)
+"odoc_env.ml" 163 5842 5871 "odoc_env.ml" 163 5842 5872
+type(
+  Name.t
+)
+ident(
+  def n "odoc_env.ml" 164 5875 5877 "odoc_env.ml" 168 5994 5999
+)
+"odoc_env.ml" 164 5875 5881 "odoc_env.ml" 164 5875 5891
+type(
+  Name.t -> env_element list -> Name.t
+)
+ident(
+  ext_ref List.assoc
+)
+"odoc_env.ml" 164 5875 5892 "odoc_env.ml" 164 5875 5893
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 163 5842 5871 "odoc_env.ml" 163 5842 5872
+)
+"odoc_env.ml" 164 5875 5894 "odoc_env.ml" 164 5875 5897
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 163 5842 5867 "odoc_env.ml" 163 5842 5870
+)
+"odoc_env.ml" 164 5875 5894 "odoc_env.ml" 164 5875 5913
+type(
+  env_element list
+)
+"odoc_env.ml" 164 5875 5881 "odoc_env.ml" 164 5875 5913
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 165 5914 5921 "odoc_env.ml" 165 5914 5930
+type(
+  exn
+)
+"odoc_env.ml" 168 5994 5998 "odoc_env.ml" 168 5994 5999
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 163 5842 5871 "odoc_env.ml" 163 5842 5872
+)
+"odoc_env.ml" 164 5875 5877 "odoc_env.ml" 168 5994 5999
+type(
+  Name.t
+)
+"odoc_env.ml" 170 6001 6005 "odoc_env.ml" 170 6001 6034
+type(
+  env -> Name.t -> Name.t
+)
+ident(
+  def full_class_or_class_type_name "odoc_env.ml" 174 6126 6126 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 170 6001 6035 "odoc_env.ml" 170 6001 6038
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 170 6001 6039 "odoc_env.ml" 172 6078 6124
+)
+"odoc_env.ml" 170 6001 6039 "odoc_env.ml" 170 6001 6040
+type(
+  Name.t
+)
+ident(
+  def n "odoc_env.ml" 171 6043 6045 "odoc_env.ml" 172 6078 6124
+)
+"odoc_env.ml" 171 6043 6049 "odoc_env.ml" 171 6043 6059
+type(
+  Name.t -> env_element list -> Name.t
+)
+ident(
+  ext_ref List.assoc
+)
+"odoc_env.ml" 171 6043 6060 "odoc_env.ml" 171 6043 6061
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 170 6001 6039 "odoc_env.ml" 170 6001 6040
+)
+"odoc_env.ml" 171 6043 6062 "odoc_env.ml" 171 6043 6065
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 170 6001 6035 "odoc_env.ml" 170 6001 6038
+)
+"odoc_env.ml" 171 6043 6062 "odoc_env.ml" 171 6043 6077
+type(
+  env_element list
+)
+"odoc_env.ml" 171 6043 6049 "odoc_env.ml" 171 6043 6077
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 172 6078 6085 "odoc_env.ml" 172 6078 6094
+type(
+  exn
+)
+"odoc_env.ml" 172 6078 6098 "odoc_env.ml" 172 6078 6118
+type(
+  env -> Name.t -> Name.t
+)
+ident(
+  int_ref full_class_type_name "odoc_env.ml" 163 5842 5846 "odoc_env.ml" 163 5842 5866
+)
+"odoc_env.ml" 172 6078 6119 "odoc_env.ml" 172 6078 6122
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 170 6001 6035 "odoc_env.ml" 170 6001 6038
+)
+"odoc_env.ml" 172 6078 6123 "odoc_env.ml" 172 6078 6124
+type(
+  Name.t
+)
+ident(
+  int_ref n "odoc_env.ml" 170 6001 6039 "odoc_env.ml" 170 6001 6040
+)
+"odoc_env.ml" 172 6078 6098 "odoc_env.ml" 172 6078 6124
+call(
+  tail
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 171 6043 6045 "odoc_env.ml" 172 6078 6124
+type(
+  Name.t
+)
+"odoc_env.ml" 174 6126 6130 "odoc_env.ml" 174 6126 6145
+type(
+  env -> unit
+)
+ident(
+  def print_env_types "odoc_env.ml" 177 6228 6228 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 174 6126 6146 "odoc_env.ml" 174 6126 6149
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 175 6152 6154 "odoc_env.ml" 175 6152 6226
+)
+"odoc_env.ml" 175 6152 6154 "odoc_env.ml" 175 6152 6163
+type(
+  (env_element -> unit) -> env_element list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"odoc_env.ml" 175 6152 6170 "odoc_env.ml" 175 6152 6172
+type(
+  Name.t
+)
+ident(
+  def s1 "odoc_env.ml" 175 6152 6180 "odoc_env.ml" 175 6152 6211
+)
+"odoc_env.ml" 175 6152 6173 "odoc_env.ml" 175 6152 6175
+type(
+  Name.t
+)
+ident(
+  def s2 "odoc_env.ml" 175 6152 6180 "odoc_env.ml" 175 6152 6211
+)
+"odoc_env.ml" 175 6152 6169 "odoc_env.ml" 175 6152 6176
+type(
+  env_element
+)
+"odoc_env.ml" 175 6152 6180 "odoc_env.ml" 175 6152 6193
+type(
+  (Name.t -> Name.t -> unit, out_channel, unit) format ->
+  Name.t -> Name.t -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"odoc_env.ml" 175 6152 6194 "odoc_env.ml" 175 6152 6205
+type(
+  (Name.t -> Name.t -> unit, out_channel, unit) format
+)
+"odoc_env.ml" 175 6152 6206 "odoc_env.ml" 175 6152 6208
+type(
+  Name.t
+)
+ident(
+  int_ref s1 "odoc_env.ml" 175 6152 6170 "odoc_env.ml" 175 6152 6172
+)
+"odoc_env.ml" 175 6152 6209 "odoc_env.ml" 175 6152 6211
+type(
+  Name.t
+)
+ident(
+  int_ref s2 "odoc_env.ml" 175 6152 6173 "odoc_env.ml" 175 6152 6175
+)
+"odoc_env.ml" 175 6152 6180 "odoc_env.ml" 175 6152 6211
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_env.ml" 175 6152 6164 "odoc_env.ml" 175 6152 6212
+type(
+  env_element -> unit
+)
+"odoc_env.ml" 175 6152 6213 "odoc_env.ml" 175 6152 6216
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 174 6126 6146 "odoc_env.ml" 174 6126 6149
+)
+"odoc_env.ml" 175 6152 6213 "odoc_env.ml" 175 6152 6226
+type(
+  env_element list
+)
+"odoc_env.ml" 175 6152 6154 "odoc_env.ml" 175 6152 6226
+call(
+  tail
+)
+type(
+  unit
+)
+"odoc_env.ml" 177 6228 6232 "odoc_env.ml" 177 6228 6242
+type(
+  env -> Types.type_expr -> Types.type_expr
+)
+ident(
+  def subst_type "odoc_env.ml" 217 7538 7538 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 177 6228 6243 "odoc_env.ml" 177 6228 6246
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 177 6228 6247 "odoc_env.ml" 214 7532 7535
+)
+"odoc_env.ml" 177 6228 6247 "odoc_env.ml" 177 6228 6248
+type(
+  Types.type_expr
+)
+ident(
+  def t "odoc_env.ml" 183 6341 6343 "odoc_env.ml" 214 7532 7535
+)
+"odoc_env.ml" 183 6341 6343 "odoc_env.ml" 183 6341 6362
+type(
+  Types.type_expr -> unit
+)
+ident(
+  ext_ref Printtyp.mark_loops
+)
+"odoc_env.ml" 183 6341 6363 "odoc_env.ml" 183 6341 6364
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_env.ml" 177 6228 6247 "odoc_env.ml" 177 6228 6248
+)
+"odoc_env.ml" 183 6341 6343 "odoc_env.ml" 183 6341 6364
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_env.ml" 184 6366 6372 "odoc_env.ml" 184 6366 6379
+type(
+  Types.type_expr list ref
+)
+ident(
+  def deja_vu "odoc_env.ml" 185 6392 6394 "odoc_env.ml" 214 7532 7535
+)
+"odoc_env.ml" 184 6366 6382 "odoc_env.ml" 184 6366 6385
+type(
+  Types.type_expr list -> Types.type_expr list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"odoc_env.ml" 184 6366 6386 "odoc_env.ml" 184 6366 6388
+type(
+  Types.type_expr list
+)
+"odoc_env.ml" 184 6366 6382 "odoc_env.ml" 184 6366 6388
+type(
+  Types.type_expr list ref
+)
+"odoc_env.ml" 185 6392 6402 "odoc_env.ml" 185 6392 6406
+type(
+  Types.type_expr -> unit
+)
+ident(
+  def iter "odoc_env.ml" 185 6392 6394 "odoc_env.ml" 214 7532 7535
+)
+"odoc_env.ml" 185 6392 6407 "odoc_env.ml" 185 6392 6408
+type(
+  Types.type_expr
+)
+ident(
+  def t "odoc_env.ml" 186 6411 6415 "odoc_env.ml" 211 7509 7516
+)
+"odoc_env.ml" 186 6411 6418 "odoc_env.ml" 186 6411 6427
+type(
+  Types.type_expr -> Types.type_expr list -> bool
+)
+ident(
+  ext_ref List.memq
+)
+"odoc_env.ml" 186 6411 6428 "odoc_env.ml" 186 6411 6429
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_env.ml" 185 6392 6407 "odoc_env.ml" 185 6392 6408
+)
+"odoc_env.ml" 186 6411 6430 "odoc_env.ml" 186 6411 6431
+type(
+  Types.type_expr list ref -> Types.type_expr list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_env.ml" 186 6411 6431 "odoc_env.ml" 186 6411 6438
+type(
+  Types.type_expr list ref
+)
+ident(
+  int_ref deja_vu "odoc_env.ml" 184 6366 6372 "odoc_env.ml" 184 6366 6379
+)
+"odoc_env.ml" 186 6411 6430 "odoc_env.ml" 186 6411 6438
+type(
+  Types.type_expr list
+)
+"odoc_env.ml" 186 6411 6418 "odoc_env.ml" 186 6411 6438
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_env.ml" 186 6411 6444 "odoc_env.ml" 186 6411 6446
+type(
+  unit
+)
+"odoc_env.ml" 187 6458 6464 "odoc_env.ml" 187 6458 6471
+type(
+  Types.type_expr list ref
+)
+ident(
+  int_ref deja_vu "odoc_env.ml" 184 6366 6372 "odoc_env.ml" 184 6366 6379
+)
+"odoc_env.ml" 187 6458 6472 "odoc_env.ml" 187 6458 6474
+type(
+  Types.type_expr list ref -> Types.type_expr list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_env.ml" 187 6458 6475 "odoc_env.ml" 187 6458 6476
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_env.ml" 185 6392 6407 "odoc_env.ml" 185 6392 6408
+)
+"odoc_env.ml" 187 6458 6480 "odoc_env.ml" 187 6458 6481
+type(
+  Types.type_expr list ref -> Types.type_expr list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"odoc_env.ml" 187 6458 6481 "odoc_env.ml" 187 6458 6488
+type(
+  Types.type_expr list ref
+)
+ident(
+  int_ref deja_vu "odoc_env.ml" 184 6366 6372 "odoc_env.ml" 184 6366 6379
+)
+"odoc_env.ml" 187 6458 6480 "odoc_env.ml" 187 6458 6488
+type(
+  Types.type_expr list
+)
+"odoc_env.ml" 187 6458 6475 "odoc_env.ml" 187 6458 6488
+type(
+  Types.type_expr list
+)
+"odoc_env.ml" 187 6458 6464 "odoc_env.ml" 187 6458 6488
+type(
+  unit
+)
+"odoc_env.ml" 188 6490 6496 "odoc_env.ml" 188 6490 6516
+type(
+  (Types.type_expr -> unit) -> Types.type_expr -> unit
+)
+ident(
+  ext_ref Btype.iter_type_expr
+)
+"odoc_env.ml" 188 6490 6517 "odoc_env.ml" 188 6490 6521
+type(
+  Types.type_expr -> unit
+)
+ident(
+  int_ref iter "odoc_env.ml" 185 6392 6402 "odoc_env.ml" 185 6392 6406
+)
+"odoc_env.ml" 188 6490 6522 "odoc_env.ml" 188 6490 6523
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_env.ml" 185 6392 6407 "odoc_env.ml" 185 6392 6408
+)
+"odoc_env.ml" 188 6490 6496 "odoc_env.ml" 188 6490 6523
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_env.ml" 189 6525 6537 "odoc_env.ml" 189 6525 6538
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_env.ml" 185 6392 6407 "odoc_env.ml" 185 6392 6408
+)
+"odoc_env.ml" 189 6525 6537 "odoc_env.ml" 189 6525 6549
+type(
+  Types.type_desc
+)
+"odoc_env.ml" 190 6555 6578 "odoc_env.ml" 190 6555 6579
+type(
+  Path.t
+)
+ident(
+  def p "odoc_env.ml" 190 6555 6595 "odoc_env.ml" 191 6629 6641
+)
+"odoc_env.ml" 190 6555 6582 "odoc_env.ml" 190 6555 6584
+type(
+  Types.type_expr
+)
+ident(
+  def ty "odoc_env.ml" 190 6555 6595 "odoc_env.ml" 191 6629 6641
+)
+"odoc_env.ml" 190 6555 6581 "odoc_env.ml" 190 6555 6585
+type(
+  Types.type_expr list
+)
+"odoc_env.ml" 190 6555 6587 "odoc_env.ml" 190 6555 6588
+type(
+  Types.abbrev_memo ref
+)
+ident(
+  def a "odoc_env.ml" 190 6555 6595 "odoc_env.ml" 191 6629 6641
+)
+"odoc_env.ml" 190 6555 6563 "odoc_env.ml" 190 6555 6589
+type(
+  Types.type_desc
+)
+"odoc_env.ml" 190 6555 6595 "odoc_env.ml" 190 6555 6604
+type(
+  Path.t -> Path.t -> bool
+)
+ident(
+  ext_ref Path.same
+)
+"odoc_env.ml" 190 6555 6605 "odoc_env.ml" 190 6555 6606
+type(
+  Path.t
+)
+ident(
+  int_ref p "odoc_env.ml" 190 6555 6578 "odoc_env.ml" 190 6555 6579
+)
+"odoc_env.ml" 190 6555 6607 "odoc_env.ml" 190 6555 6625
+type(
+  Path.t
+)
+ident(
+  ext_ref Predef.path_option
+)
+"odoc_env.ml" 190 6555 6595 "odoc_env.ml" 190 6555 6625
+call(
+  stack
+)
+type(
+  bool
+)
+"odoc_env.ml" 191 6629 6639 "odoc_env.ml" 191 6629 6641
+type(
+  unit
+)
+"odoc_env.ml" 192 6642 6665 "odoc_env.ml" 192 6642 6666
+type(
+  Path.t
+)
+ident(
+  def p "odoc_env.ml" 193 6677 6687 "odoc_env.ml" 195 6777 6830
+)
+"odoc_env.ml" 192 6642 6668 "odoc_env.ml" 192 6642 6669
+type(
+  Types.type_expr list
+)
+ident(
+  def l "odoc_env.ml" 193 6677 6687 "odoc_env.ml" 195 6777 6830
+)
+"odoc_env.ml" 192 6642 6671 "odoc_env.ml" 192 6642 6672
+type(
+  Types.abbrev_memo ref
+)
+ident(
+  def a "odoc_env.ml" 193 6677 6687 "odoc_env.ml" 195 6777 6830
+)
+"odoc_env.ml" 192 6642 6650 "odoc_env.ml" 192 6642 6673
+type(
+  Types.type_desc
+)
+"odoc_env.ml" 193 6677 6691 "odoc_env.ml" 193 6677 6696
+type(
+  Path.t
+)
+ident(
+  def new_p "odoc_env.ml" 195 6777 6787 "odoc_env.ml" 195 6777 6830
+)
+"odoc_env.ml" 194 6699 6711 "odoc_env.ml" 194 6699 6728
+type(
+  Odoc_name.t -> Path.t
+)
+ident(
+  ext_ref Odoc_name.to_path
+)
+"odoc_env.ml" 194 6699 6730 "odoc_env.ml" 194 6699 6744
+type(
+  env -> Name.t -> Name.t
+)
+ident(
+  int_ref full_type_name "odoc_env.ml" 134 5185 5189 "odoc_env.ml" 134 5185 5203
+)
+"odoc_env.ml" 194 6699 6745 "odoc_env.ml" 194 6699 6748
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 177 6228 6243 "odoc_env.ml" 177 6228 6246
+)
+"odoc_env.ml" 194 6699 6750 "odoc_env.ml" 194 6699 6769
+type(
+  Path.t -> Odoc_name.t
+)
+ident(
+  ext_ref Odoc_name.from_path
+)
+"odoc_env.ml" 194 6699 6770 "odoc_env.ml" 194 6699 6771
+type(
+  Path.t
+)
+ident(
+  int_ref p "odoc_env.ml" 192 6642 6665 "odoc_env.ml" 192 6642 6666
+)
+"odoc_env.ml" 194 6699 6749 "odoc_env.ml" 194 6699 6772
+call(
+  stack
+)
+type(
+  Odoc_name.t
+)
+"odoc_env.ml" 194 6699 6729 "odoc_env.ml" 194 6699 6773
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 194 6699 6711 "odoc_env.ml" 194 6699 6773
+call(
+  stack
+)
+type(
+  Path.t
+)
+"odoc_env.ml" 195 6777 6787 "odoc_env.ml" 195 6777 6788
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_env.ml" 185 6392 6407 "odoc_env.ml" 185 6392 6408
+)
+"odoc_env.ml" 195 6777 6818 "odoc_env.ml" 195 6777 6823
+type(
+  Path.t
+)
+ident(
+  int_ref new_p "odoc_env.ml" 193 6677 6691 "odoc_env.ml" 193 6677 6696
+)
+"odoc_env.ml" 195 6777 6825 "odoc_env.ml" 195 6777 6826
+type(
+  Types.type_expr list
+)
+ident(
+  int_ref l "odoc_env.ml" 192 6642 6668 "odoc_env.ml" 192 6642 6669
+)
+"odoc_env.ml" 195 6777 6828 "odoc_env.ml" 195 6777 6829
+type(
+  Types.abbrev_memo ref
+)
+ident(
+  int_ref a "odoc_env.ml" 192 6642 6671 "odoc_env.ml" 192 6642 6672
+)
+"odoc_env.ml" 195 6777 6803 "odoc_env.ml" 195 6777 6830
+type(
+  Types.type_desc
+)
+"odoc_env.ml" 195 6777 6787 "odoc_env.ml" 195 6777 6830
+type(
+  unit
+)
+"odoc_env.ml" 193 6677 6687 "odoc_env.ml" 195 6777 6830
+type(
+  unit
+)
+"odoc_env.ml" 196 6831 6855 "odoc_env.ml" 196 6831 6856
+type(
+  Path.t
+)
+ident(
+  def p "odoc_env.ml" 197 6867 6877 "odoc_env.ml" 199 6974 7028
+)
+"odoc_env.ml" 196 6831 6858 "odoc_env.ml" 196 6831 6859
+type(
+  Longident.t list
+)
+ident(
+  def n "odoc_env.ml" 197 6867 6877 "odoc_env.ml" 199 6974 7028
+)
+"odoc_env.ml" 196 6831 6861 "odoc_env.ml" 196 6831 6862
+type(
+  Types.type_expr list
+)
+ident(
+  def l "odoc_env.ml" 197 6867 6877 "odoc_env.ml" 199 6974 7028
+)
+"odoc_env.ml" 196 6831 6839 "odoc_env.ml" 196 6831 6863
+type(
+  Types.type_desc
+)
+"odoc_env.ml" 197 6867 6881 "odoc_env.ml" 197 6867 6886
+type(
+  Path.t
+)
+ident(
+  def new_p "odoc_env.ml" 199 6974 6984 "odoc_env.ml" 199 6974 7028
+)
+"odoc_env.ml" 198 6889 6901 "odoc_env.ml" 198 6889 6918
+type(
+  Odoc_name.t -> Path.t
+)
+ident(
+  ext_ref Odoc_name.to_path
+)
+"odoc_env.ml" 198 6889 6920 "odoc_env.ml" 198 6889 6941
+type(
+  env -> Name.t -> Name.t
+)
+ident(
+  int_ref full_module_type_name "odoc_env.ml" 123 4896 4900 "odoc_env.ml" 123 4896 4921
+)
+"odoc_env.ml" 198 6889 6942 "odoc_env.ml" 198 6889 6945
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 177 6228 6243 "odoc_env.ml" 177 6228 6246
+)
+"odoc_env.ml" 198 6889 6947 "odoc_env.ml" 198 6889 6966
+type(
+  Path.t -> Odoc_name.t
+)
+ident(
+  ext_ref Odoc_name.from_path
+)
+"odoc_env.ml" 198 6889 6967 "odoc_env.ml" 198 6889 6968
+type(
+  Path.t
+)
+ident(
+  int_ref p "odoc_env.ml" 196 6831 6855 "odoc_env.ml" 196 6831 6856
+)
+"odoc_env.ml" 198 6889 6946 "odoc_env.ml" 198 6889 6969
+call(
+  stack
+)
+type(
+  Odoc_name.t
+)
+"odoc_env.ml" 198 6889 6919 "odoc_env.ml" 198 6889 6970
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 198 6889 6901 "odoc_env.ml" 198 6889 6970
+call(
+  stack
+)
+type(
+  Path.t
+)
+"odoc_env.ml" 199 6974 6984 "odoc_env.ml" 199 6974 6985
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_env.ml" 185 6392 6407 "odoc_env.ml" 185 6392 6408
+)
+"odoc_env.ml" 199 6974 7016 "odoc_env.ml" 199 6974 7021
+type(
+  Path.t
+)
+ident(
+  int_ref new_p "odoc_env.ml" 197 6867 6881 "odoc_env.ml" 197 6867 6886
+)
+"odoc_env.ml" 199 6974 7023 "odoc_env.ml" 199 6974 7024
+type(
+  Longident.t list
+)
+ident(
+  int_ref n "odoc_env.ml" 196 6831 6858 "odoc_env.ml" 196 6831 6859
+)
+"odoc_env.ml" 199 6974 7026 "odoc_env.ml" 199 6974 7027
+type(
+  Types.type_expr list
+)
+ident(
+  int_ref l "odoc_env.ml" 196 6831 6861 "odoc_env.ml" 196 6831 6862
+)
+"odoc_env.ml" 199 6974 7000 "odoc_env.ml" 199 6974 7028
+type(
+  Types.type_desc
+)
+"odoc_env.ml" 199 6974 6984 "odoc_env.ml" 199 6974 7028
+type(
+  unit
+)
+"odoc_env.ml" 197 6867 6877 "odoc_env.ml" 199 6974 7028
+type(
+  unit
+)
+"odoc_env.ml" 200 7029 7052 "odoc_env.ml" 200 7029 7053
+type(
+  Types.type_expr
+)
+"odoc_env.ml" 200 7029 7071 "odoc_env.ml" 200 7029 7072
+type(
+  Path.t
+)
+ident(
+  def p "odoc_env.ml" 201 7089 7099 "odoc_env.ml" 203 7189 7221
+)
+"odoc_env.ml" 200 7029 7073 "odoc_env.ml" 200 7029 7076
+type(
+  Types.type_expr list
+)
+ident(
+  def tyl "odoc_env.ml" 201 7089 7099 "odoc_env.ml" 203 7189 7221
+)
+"odoc_env.ml" 200 7029 7070 "odoc_env.ml" 200 7029 7077
+type(
+  Path.t * Types.type_expr list
+)
+"odoc_env.ml" 200 7029 7066 "odoc_env.ml" 200 7029 7077
+type(
+  (Path.t * Types.type_expr list) option
+)
+"odoc_env.ml" 200 7029 7056 "odoc_env.ml" 200 7029 7078
+type(
+  (Path.t * Types.type_expr list) option ref
+)
+"odoc_env.ml" 200 7029 7082 "odoc_env.ml" 200 7029 7083
+ident(
+  def r "odoc_env.ml" 201 7089 7099 "odoc_env.ml" 203 7189 7221
+)
+"odoc_env.ml" 200 7029 7055 "odoc_env.ml" 200 7029 7084
+type(
+  (Path.t * Types.type_expr list) option ref
+)
+"odoc_env.ml" 200 7029 7037 "odoc_env.ml" 200 7029 7085
+type(
+  Types.type_desc
+)
+"odoc_env.ml" 201 7089 7103 "odoc_env.ml" 201 7089 7108
+type(
+  Path.t
+)
+ident(
+  def new_p "odoc_env.ml" 203 7189 7199 "odoc_env.ml" 203 7189 7221
+)
+"odoc_env.ml" 202 7111 7123 "odoc_env.ml" 202 7111 7140
+type(
+  Odoc_name.t -> Path.t
+)
+ident(
+  ext_ref Odoc_name.to_path
+)
+"odoc_env.ml" 202 7111 7142 "odoc_env.ml" 202 7111 7156
+type(
+  env -> Name.t -> Name.t
+)
+ident(
+  int_ref full_type_name "odoc_env.ml" 134 5185 5189 "odoc_env.ml" 134 5185 5203
+)
+"odoc_env.ml" 202 7111 7157 "odoc_env.ml" 202 7111 7160
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 177 6228 6243 "odoc_env.ml" 177 6228 6246
+)
+"odoc_env.ml" 202 7111 7162 "odoc_env.ml" 202 7111 7181
+type(
+  Path.t -> Odoc_name.t
+)
+ident(
+  ext_ref Odoc_name.from_path
+)
+"odoc_env.ml" 202 7111 7182 "odoc_env.ml" 202 7111 7183
+type(
+  Path.t
+)
+ident(
+  int_ref p "odoc_env.ml" 200 7029 7071 "odoc_env.ml" 200 7029 7072
+)
+"odoc_env.ml" 202 7111 7161 "odoc_env.ml" 202 7111 7184
+call(
+  stack
+)
+type(
+  Odoc_name.t
+)
+"odoc_env.ml" 202 7111 7141 "odoc_env.ml" 202 7111 7185
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 202 7111 7123 "odoc_env.ml" 202 7111 7185
+call(
+  stack
+)
+type(
+  Path.t
+)
+"odoc_env.ml" 203 7189 7199 "odoc_env.ml" 203 7189 7200
+type(
+  (Path.t * Types.type_expr list) option ref
+)
+ident(
+  int_ref r "odoc_env.ml" 200 7029 7055 "odoc_env.ml" 200 7029 7084
+)
+"odoc_env.ml" 203 7189 7201 "odoc_env.ml" 203 7189 7203
+type(
+  (Path.t * Types.type_expr list) option ref ->
+  (Path.t * Types.type_expr list) option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"odoc_env.ml" 203 7189 7210 "odoc_env.ml" 203 7189 7215
+type(
+  Path.t
+)
+ident(
+  int_ref new_p "odoc_env.ml" 201 7089 7103 "odoc_env.ml" 201 7089 7108
+)
+"odoc_env.ml" 203 7189 7217 "odoc_env.ml" 203 7189 7220
+type(
+  Types.type_expr list
+)
+ident(
+  int_ref tyl "odoc_env.ml" 200 7029 7073 "odoc_env.ml" 200 7029 7076
+)
+"odoc_env.ml" 203 7189 7209 "odoc_env.ml" 203 7189 7221
+type(
+  Path.t * Types.type_expr list
+)
+"odoc_env.ml" 203 7189 7204 "odoc_env.ml" 203 7189 7221
+type(
+  (Path.t * Types.type_expr list) option
+)
+"odoc_env.ml" 203 7189 7199 "odoc_env.ml" 203 7189 7221
+type(
+  unit
+)
+"odoc_env.ml" 201 7089 7099 "odoc_env.ml" 203 7189 7221
+type(
+  unit
+)
+"odoc_env.ml" 204 7222 7267 "odoc_env.ml" 204 7222 7268
+type(
+  Path.t
+)
+ident(
+  def p "odoc_env.ml" 205 7287 7297 "odoc_env.ml" 208 7413 7482
+)
+"odoc_env.ml" 204 7222 7270 "odoc_env.ml" 204 7222 7273
+type(
+  Types.type_expr list
+)
+ident(
+  def tyl "odoc_env.ml" 205 7287 7297 "odoc_env.ml" 208 7413 7482
+)
+"odoc_env.ml" 204 7222 7266 "odoc_env.ml" 204 7222 7274
+type(
+  Path.t * Types.type_expr list
+)
+"odoc_env.ml" 204 7222 7262 "odoc_env.ml" 204 7222 7274
+type(
+  (Path.t * Types.type_expr list) option
+)
+"odoc_env.ml" 204 7222 7246 "odoc_env.ml" 204 7222 7275
+type(
+  Types.row_desc
+)
+"odoc_env.ml" 204 7222 7279 "odoc_env.ml" 204 7222 7282
+ident(
+  def row "odoc_env.ml" 205 7287 7297 "odoc_env.ml" 208 7413 7482
+)
+"odoc_env.ml" 204 7222 7245 "odoc_env.ml" 204 7222 7283
+type(
+  Types.row_desc
+)
+"odoc_env.ml" 204 7222 7230 "odoc_env.ml" 204 7222 7283
+type(
+  Types.type_desc
+)
+"odoc_env.ml" 205 7287 7301 "odoc_env.ml" 205 7287 7306
+type(
+  Path.t
+)
+ident(
+  def new_p "odoc_env.ml" 207 7387 7397 "odoc_env.ml" 208 7413 7482
+)
+"odoc_env.ml" 206 7309 7321 "odoc_env.ml" 206 7309 7338
+type(
+  Odoc_name.t -> Path.t
+)
+ident(
+  ext_ref Odoc_name.to_path
+)
+"odoc_env.ml" 206 7309 7340 "odoc_env.ml" 206 7309 7354
+type(
+  env -> Name.t -> Name.t
+)
+ident(
+  int_ref full_type_name "odoc_env.ml" 134 5185 5189 "odoc_env.ml" 134 5185 5203
+)
+"odoc_env.ml" 206 7309 7355 "odoc_env.ml" 206 7309 7358
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 177 6228 6243 "odoc_env.ml" 177 6228 6246
+)
+"odoc_env.ml" 206 7309 7360 "odoc_env.ml" 206 7309 7379
+type(
+  Path.t -> Odoc_name.t
+)
+ident(
+  ext_ref Odoc_name.from_path
+)
+"odoc_env.ml" 206 7309 7380 "odoc_env.ml" 206 7309 7381
+type(
+  Path.t
+)
+ident(
+  int_ref p "odoc_env.ml" 204 7222 7267 "odoc_env.ml" 204 7222 7268
+)
+"odoc_env.ml" 206 7309 7359 "odoc_env.ml" 206 7309 7382
+call(
+  stack
+)
+type(
+  Odoc_name.t
+)
+"odoc_env.ml" 206 7309 7339 "odoc_env.ml" 206 7309 7383
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 206 7309 7321 "odoc_env.ml" 206 7309 7383
+call(
+  stack
+)
+type(
+  Path.t
+)
+"odoc_env.ml" 207 7387 7397 "odoc_env.ml" 207 7387 7398
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_env.ml" 185 6392 6407 "odoc_env.ml" 185 6392 6408
+)
+"odoc_env.ml" 208 7413 7441 "odoc_env.ml" 208 7413 7444
+type(
+  Types.row_desc
+)
+ident(
+  int_ref row "odoc_env.ml" 204 7222 7245 "odoc_env.ml" 204 7222 7283
+)
+"odoc_env.ml" 208 7413 7470 "odoc_env.ml" 208 7413 7475
+type(
+  Path.t
+)
+ident(
+  int_ref new_p "odoc_env.ml" 205 7287 7301 "odoc_env.ml" 205 7287 7306
+)
+"odoc_env.ml" 208 7413 7477 "odoc_env.ml" 208 7413 7480
+type(
+  Types.type_expr list
+)
+ident(
+  int_ref tyl "odoc_env.ml" 204 7222 7270 "odoc_env.ml" 204 7222 7273
+)
+"odoc_env.ml" 208 7413 7469 "odoc_env.ml" 208 7413 7481
+type(
+  Path.t * Types.type_expr list
+)
+"odoc_env.ml" 208 7413 7465 "odoc_env.ml" 208 7413 7481
+type(
+  (Path.t * Types.type_expr list) option
+)
+"odoc_env.ml" 208 7413 7440 "odoc_env.ml" 208 7413 7482
+type(
+  Types.row_desc
+)
+"odoc_env.ml" 208 7413 7425 "odoc_env.ml" 208 7413 7482
+type(
+  Types.type_desc
+)
+"odoc_env.ml" 207 7387 7397 "odoc_env.ml" 208 7413 7482
+type(
+  unit
+)
+"odoc_env.ml" 205 7287 7297 "odoc_env.ml" 208 7413 7482
+type(
+  unit
+)
+"odoc_env.ml" 209 7483 7491 "odoc_env.ml" 209 7483 7492
+type(
+  Types.type_desc
+)
+"odoc_env.ml" 210 7496 7506 "odoc_env.ml" 210 7496 7508
+type(
+  unit
+)
+"odoc_env.ml" 189 6525 6531 "odoc_env.ml" 210 7496 7508
+type(
+  unit
+)
+"odoc_env.ml" 188 6490 6496 "odoc_env.ml" 210 7496 7508
+type(
+  unit
+)
+"odoc_env.ml" 186 6411 6452 "odoc_env.ml" 211 7509 7516
+type(
+  unit
+)
+"odoc_env.ml" 186 6411 6415 "odoc_env.ml" 211 7509 7516
+type(
+  unit
+)
+"odoc_env.ml" 213 7522 7524 "odoc_env.ml" 213 7522 7528
+type(
+  Types.type_expr -> unit
+)
+ident(
+  int_ref iter "odoc_env.ml" 185 6392 6402 "odoc_env.ml" 185 6392 6406
+)
+"odoc_env.ml" 213 7522 7529 "odoc_env.ml" 213 7522 7530
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_env.ml" 177 6228 6247 "odoc_env.ml" 177 6228 6248
+)
+"odoc_env.ml" 213 7522 7524 "odoc_env.ml" 213 7522 7530
+call(
+  stack
+)
+type(
+  unit
+)
+"odoc_env.ml" 214 7532 7534 "odoc_env.ml" 214 7532 7535
+type(
+  Types.type_expr
+)
+ident(
+  int_ref t "odoc_env.ml" 177 6228 6247 "odoc_env.ml" 177 6228 6248
+)
+"odoc_env.ml" 213 7522 7524 "odoc_env.ml" 214 7532 7535
+type(
+  Types.type_expr
+)
+"odoc_env.ml" 185 6392 6394 "odoc_env.ml" 214 7532 7535
+type(
+  Types.type_expr
+)
+"odoc_env.ml" 184 6366 6368 "odoc_env.ml" 214 7532 7535
+type(
+  Types.type_expr
+)
+"odoc_env.ml" 183 6341 6343 "odoc_env.ml" 214 7532 7535
+type(
+  Types.type_expr
+)
+"odoc_env.ml" 217 7538 7542 "odoc_env.ml" 217 7538 7559
+type(
+  env -> Types.module_type -> Types.module_type
+)
+ident(
+  def subst_module_type "odoc_env.ml" 231 7940 7940 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 217 7538 7560 "odoc_env.ml" 217 7538 7563
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 217 7538 7564 "odoc_env.ml" 229 7930 7938
+)
+"odoc_env.ml" 217 7538 7564 "odoc_env.ml" 217 7538 7565
+type(
+  Types.module_type
+)
+ident(
+  def t "odoc_env.ml" 218 7568 7570 "odoc_env.ml" 229 7930 7938
+)
+"odoc_env.ml" 218 7568 7578 "odoc_env.ml" 218 7568 7582
+type(
+  Types.module_type -> Types.module_type
+)
+ident(
+  def iter "odoc_env.ml" 218 7568 7570 "odoc_env.ml" 229 7930 7938
+)
+"odoc_env.ml" 218 7568 7583 "odoc_env.ml" 218 7568 7584
+type(
+  Types.module_type
+)
+ident(
+  def t "odoc_env.ml" 219 7587 7591 "odoc_env.ml" 227 7861 7924
+)
+"odoc_env.ml" 219 7587 7597 "odoc_env.ml" 219 7587 7598
+type(
+  Types.module_type
+)
+ident(
+  int_ref t "odoc_env.ml" 218 7568 7583 "odoc_env.ml" 218 7568 7584
+)
+"odoc_env.ml" 220 7604 7626 "odoc_env.ml" 220 7604 7627
+type(
+  Path.t
+)
+ident(
+  def p "odoc_env.ml" 221 7631 7639 "odoc_env.ml" 222 7724 7753
+)
+"odoc_env.ml" 220 7604 7610 "odoc_env.ml" 220 7604 7627
+type(
+  Types.module_type
+)
+"odoc_env.ml" 221 7631 7643 "odoc_env.ml" 221 7631 7648
+type(
+  Path.t
+)
+ident(
+  def new_p "odoc_env.ml" 222 7724 7732 "odoc_env.ml" 222 7724 7753
+)
+"odoc_env.ml" 221 7631 7651 "odoc_env.ml" 221 7631 7668
+type(
+  Odoc_name.t -> Path.t
+)
+ident(
+  ext_ref Odoc_name.to_path
+)
+"odoc_env.ml" 221 7631 7670 "odoc_env.ml" 221 7631 7691
+type(
+  env -> Name.t -> Name.t
+)
+ident(
+  int_ref full_module_type_name "odoc_env.ml" 123 4896 4900 "odoc_env.ml" 123 4896 4921
+)
+"odoc_env.ml" 221 7631 7692 "odoc_env.ml" 221 7631 7695
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 217 7538 7560 "odoc_env.ml" 217 7538 7563
+)
+"odoc_env.ml" 221 7631 7697 "odoc_env.ml" 221 7631 7716
+type(
+  Path.t -> Odoc_name.t
+)
+ident(
+  ext_ref Odoc_name.from_path
+)
+"odoc_env.ml" 221 7631 7717 "odoc_env.ml" 221 7631 7718
+type(
+  Path.t
+)
+ident(
+  int_ref p "odoc_env.ml" 220 7604 7626 "odoc_env.ml" 220 7604 7627
+)
+"odoc_env.ml" 221 7631 7696 "odoc_env.ml" 221 7631 7719
+call(
+  stack
+)
+type(
+  Odoc_name.t
+)
+"odoc_env.ml" 221 7631 7669 "odoc_env.ml" 221 7631 7720
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 221 7631 7651 "odoc_env.ml" 221 7631 7720
+call(
+  stack
+)
+type(
+  Path.t
+)
+"odoc_env.ml" 222 7724 7748 "odoc_env.ml" 222 7724 7753
+type(
+  Path.t
+)
+ident(
+  int_ref new_p "odoc_env.ml" 221 7631 7643 "odoc_env.ml" 221 7631 7648
+)
+"odoc_env.ml" 222 7724 7732 "odoc_env.ml" 222 7724 7753
+type(
+  Types.module_type
+)
+"odoc_env.ml" 221 7631 7639 "odoc_env.ml" 222 7724 7753
+type(
+  Types.module_type
+)
+"odoc_env.ml" 223 7754 7776 "odoc_env.ml" 223 7754 7777
+type(
+  Path.t
+)
+"odoc_env.ml" 223 7754 7760 "odoc_env.ml" 223 7754 7777
+type(
+  Types.module_type
+)
+"odoc_env.ml" 224 7778 7804 "odoc_env.ml" 224 7778 7805
+type(
+  Types.signature
+)
+"odoc_env.ml" 224 7778 7784 "odoc_env.ml" 224 7778 7805
+type(
+  Types.module_type
+)
+"odoc_env.ml" 223 7754 7760 "odoc_env.ml" 224 7778 7805
+type(
+  Types.module_type
+)
+"odoc_env.ml" 225 7809 7817 "odoc_env.ml" 225 7809 7818
+type(
+  Types.module_type
+)
+ident(
+  int_ref t "odoc_env.ml" 218 7568 7583 "odoc_env.ml" 218 7568 7584
+)
+"odoc_env.ml" 226 7819 7844 "odoc_env.ml" 226 7819 7846
+type(
+  Ident.t
+)
+ident(
+  def id "odoc_env.ml" 227 7861 7869 "odoc_env.ml" 227 7861 7924
+)
+"odoc_env.ml" 226 7819 7848 "odoc_env.ml" 226 7819 7851
+type(
+  Types.module_type option
+)
+ident(
+  def mt1 "odoc_env.ml" 227 7861 7869 "odoc_env.ml" 227 7861 7924
+)
+"odoc_env.ml" 226 7819 7853 "odoc_env.ml" 226 7819 7856
+type(
+  Types.module_type
+)
+ident(
+  def mt2 "odoc_env.ml" 227 7861 7869 "odoc_env.ml" 227 7861 7924
+)
+"odoc_env.ml" 226 7819 7825 "odoc_env.ml" 226 7819 7857
+type(
+  Types.module_type
+)
+"odoc_env.ml" 227 7861 7888 "odoc_env.ml" 227 7861 7890
+type(
+  Ident.t
+)
+ident(
+  int_ref id "odoc_env.ml" 226 7819 7844 "odoc_env.ml" 226 7819 7846
+)
+"odoc_env.ml" 227 7861 7892 "odoc_env.ml" 227 7861 7904
+type(
+  (Types.module_type -> Types.module_type) ->
+  Types.module_type option -> Types.module_type option
+)
+ident(
+  ext_ref Misc.may_map
+)
+"odoc_env.ml" 227 7861 7905 "odoc_env.ml" 227 7861 7909
+type(
+  Types.module_type -> Types.module_type
+)
+ident(
+  int_ref iter "odoc_env.ml" 218 7568 7578 "odoc_env.ml" 218 7568 7582
+)
+"odoc_env.ml" 227 7861 7910 "odoc_env.ml" 227 7861 7913
+type(
+  Types.module_type option
+)
+ident(
+  int_ref mt1 "odoc_env.ml" 226 7819 7848 "odoc_env.ml" 226 7819 7851
+)
+"odoc_env.ml" 227 7861 7892 "odoc_env.ml" 227 7861 7913
+call(
+  stack
+)
+type(
+  Types.module_type option
+)
+"odoc_env.ml" 227 7861 7915 "odoc_env.ml" 227 7861 7919
+type(
+  Types.module_type -> Types.module_type
+)
+ident(
+  int_ref iter "odoc_env.ml" 218 7568 7578 "odoc_env.ml" 218 7568 7582
+)
+"odoc_env.ml" 227 7861 7920 "odoc_env.ml" 227 7861 7923
+type(
+  Types.module_type
+)
+ident(
+  int_ref mt2 "odoc_env.ml" 226 7819 7853 "odoc_env.ml" 226 7819 7856
+)
+"odoc_env.ml" 227 7861 7915 "odoc_env.ml" 227 7861 7923
+call(
+  stack
+)
+type(
+  Types.module_type
+)
+"odoc_env.ml" 227 7861 7869 "odoc_env.ml" 227 7861 7924
+type(
+  Types.module_type
+)
+"odoc_env.ml" 219 7587 7591 "odoc_env.ml" 227 7861 7924
+type(
+  Types.module_type
+)
+"odoc_env.ml" 229 7930 7932 "odoc_env.ml" 229 7930 7936
+type(
+  Types.module_type -> Types.module_type
+)
+ident(
+  int_ref iter "odoc_env.ml" 218 7568 7578 "odoc_env.ml" 218 7568 7582
+)
+"odoc_env.ml" 229 7930 7937 "odoc_env.ml" 229 7930 7938
+type(
+  Types.module_type
+)
+ident(
+  int_ref t "odoc_env.ml" 217 7538 7564 "odoc_env.ml" 217 7538 7565
+)
+"odoc_env.ml" 229 7930 7932 "odoc_env.ml" 229 7930 7938
+call(
+  tail
+)
+type(
+  Types.module_type
+)
+"odoc_env.ml" 218 7568 7570 "odoc_env.ml" 229 7930 7938
+type(
+  Types.module_type
+)
+"odoc_env.ml" 231 7940 7944 "odoc_env.ml" 231 7940 7960
+type(
+  env -> Types.class_type -> Types.class_type
+)
+ident(
+  def subst_class_type "odoc_env.ml" 247 8552 8560 "odoc_env.ml" 1 0 -1
+)
+"odoc_env.ml" 231 7940 7961 "odoc_env.ml" 231 7940 7964
+type(
+  env
+)
+ident(
+  def env "odoc_env.ml" 231 7940 7965 "odoc_env.ml" 247 8552 8560
+)
+"odoc_env.ml" 231 7940 7965 "odoc_env.ml" 231 7940 7966
+type(
+  Types.class_type
+)
+ident(
+  def t "odoc_env.ml" 232 7969 7971 "odoc_env.ml" 247 8552 8560
+)
+"odoc_env.ml" 232 7969 7979 "odoc_env.ml" 232 7969 7983
+type(
+  Types.class_type -> Types.class_type
+)
+ident(
+  def iter "odoc_env.ml" 232 7969 7971 "odoc_env.ml" 247 8552 8560
+)
+"odoc_env.ml" 232 7969 7984 "odoc_env.ml" 232 7969 7985
+type(
+  Types.class_type
+)
+ident(
+  def t "odoc_env.ml" 233 7988 7992 "odoc_env.ml" 245 8501 8546
+)
+"odoc_env.ml" 233 7988 7998 "odoc_env.ml" 233 7988 7999
+type(
+  Types.class_type
+)
+ident(
+  int_ref t "odoc_env.ml" 232 7969 7984 "odoc_env.ml" 232 7969 7985
+)
+"odoc_env.ml" 234 8005 8029 "odoc_env.ml" 234 8005 8030
+type(
+  Path.t
+)
+ident(
+  def p "odoc_env.ml" 235 8048 8056 "odoc_env.ml" 238 8233 8288
+)
+"odoc_env.ml" 234 8005 8031 "odoc_env.ml" 234 8005 8040
+type(
+  Types.type_expr list
+)
+ident(
+  def texp_list "odoc_env.ml" 235 8048 8056 "odoc_env.ml" 238 8233 8288
+)
+"odoc_env.ml" 234 8005 8041 "odoc_env.ml" 234 8005 8043
+type(
+  Types.class_type
+)
+ident(
+  def ct "odoc_env.ml" 235 8048 8056 "odoc_env.ml" 238 8233 8288
+)
+"odoc_env.ml" 234 8005 8011 "odoc_env.ml" 234 8005 8044
+type(
+  Types.class_type
+)
+"odoc_env.ml" 235 8048 8060 "odoc_env.ml" 235 8048 8065
+type(
+  Path.t
+)
+ident(
+  def new_p "odoc_env.ml" 236 8134 8142 "odoc_env.ml" 238 8233 8288
+)
+"odoc_env.ml" 235 8048 8068 "odoc_env.ml" 235 8048 8085
+type(
+  Odoc_name.t -> Path.t
+)
+ident(
+  ext_ref Odoc_name.to_path
+)
+"odoc_env.ml" 235 8048 8087 "odoc_env.ml" 235 8048 8101
+type(
+  env -> Name.t -> Name.t
+)
+ident(
+  int_ref full_type_name "odoc_env.ml" 134 5185 5189 "odoc_env.ml" 134 5185 5203
+)
+"odoc_env.ml" 235 8048 8102 "odoc_env.ml" 235 8048 8105
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 231 7940 7961 "odoc_env.ml" 231 7940 7964
+)
+"odoc_env.ml" 235 8048 8107 "odoc_env.ml" 235 8048 8126
+type(
+  Path.t -> Odoc_name.t
+)
+ident(
+  ext_ref Odoc_name.from_path
+)
+"odoc_env.ml" 235 8048 8127 "odoc_env.ml" 235 8048 8128
+type(
+  Path.t
+)
+ident(
+  int_ref p "odoc_env.ml" 234 8005 8029 "odoc_env.ml" 234 8005 8030
+)
+"odoc_env.ml" 235 8048 8106 "odoc_env.ml" 235 8048 8129
+call(
+  stack
+)
+type(
+  Odoc_name.t
+)
+"odoc_env.ml" 235 8048 8086 "odoc_env.ml" 235 8048 8130
+call(
+  stack
+)
+type(
+  Name.t
+)
+"odoc_env.ml" 235 8048 8068 "odoc_env.ml" 235 8048 8130
+call(
+  stack
+)
+type(
+  Path.t
+)
+"odoc_env.ml" 236 8134 8146 "odoc_env.ml" 236 8134 8159
+type(
+  Types.type_expr list
+)
+ident(
+  def new_texp_list "odoc_env.ml" 237 8201 8209 "odoc_env.ml" 238 8233 8288
+)
+"odoc_env.ml" 236 8134 8162 "odoc_env.ml" 236 8134 8170
+type(
+  (Types.type_expr -> Types.type_expr) ->
+  Types.type_expr list -> Types.type_expr list
+)
+ident(
+  ext_ref List.map
+)
+"odoc_env.ml" 236 8134 8172 "odoc_env.ml" 236 8134 8182
+type(
+  env -> Types.type_expr -> Types.type_expr
+)
+ident(
+  int_ref subst_type "odoc_env.ml" 177 6228 6232 "odoc_env.ml" 177 6228 6242
+)
+"odoc_env.ml" 236 8134 8183 "odoc_env.ml" 236 8134 8186
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 231 7940 7961 "odoc_env.ml" 231 7940 7964
+)
+"odoc_env.ml" 236 8134 8171 "odoc_env.ml" 236 8134 8187
+call(
+  stack
+)
+type(
+  Types.type_expr -> Types.type_expr
+)
+"odoc_env.ml" 236 8134 8188 "odoc_env.ml" 236 8134 8197
+type(
+  Types.type_expr list
+)
+ident(
+  int_ref texp_list "odoc_env.ml" 234 8005 8031 "odoc_env.ml" 234 8005 8040
+)
+"odoc_env.ml" 236 8134 8162 "odoc_env.ml" 236 8134 8197
+call(
+  stack
+)
+type(
+  Types.type_expr list
+)
+"odoc_env.ml" 237 8201 8213 "odoc_env.ml" 237 8201 8219
+type(
+  Types.class_type
+)
+ident(
+  def new_ct "odoc_env.ml" 238 8233 8241 "odoc_env.ml" 238 8233 8288
+)
+"odoc_env.ml" 237 8201 8222 "odoc_env.ml" 237 8201 8226
+type(
+  Types.class_type -> Types.class_type
+)
+ident(
+  int_ref iter "odoc_env.ml" 232 7969 7979 "odoc_env.ml" 232 7969 7983
+)
+"odoc_env.ml" 237 8201 8227 "odoc_env.ml" 237 8201 8229
+type(
+  Types.class_type
+)
+ident(
+  int_ref ct "odoc_env.ml" 234 8005 8041 "odoc_env.ml" 234 8005 8043
+)
+"odoc_env.ml" 237 8201 8222 "odoc_env.ml" 237 8201 8229
+call(
+  stack
+)
+type(
+  Types.class_type
+)
+"odoc_env.ml" 238 8233 8259 "odoc_env.ml" 238 8233 8264
+type(
+  Path.t
+)
+ident(
+  int_ref new_p "odoc_env.ml" 235 8048 8060 "odoc_env.ml" 235 8048 8065
+)
+"odoc_env.ml" 238 8233 8266 "odoc_env.ml" 238 8233 8279
+type(
+  Types.type_expr list
+)
+ident(
+  int_ref new_texp_list "odoc_env.ml" 236 8134 8146 "odoc_env.ml" 236 8134 8159
+)
+"odoc_env.ml" 238 8233 8281 "odoc_env.ml" 238 8233 8287
+type(
+  Types.class_type
+)
+ident(
+  int_ref new_ct "odoc_env.ml" 237 8201 8213 "odoc_env.ml" 237 8201 8219
+)
+"odoc_env.ml" 238 8233 8241 "odoc_env.ml" 238 8233 8288
+type(
+  Types.class_type
+)
+"odoc_env.ml" 237 8201 8209 "odoc_env.ml" 238 8233 8288
+type(
+  Types.class_type
+)
+"odoc_env.ml" 236 8134 8142 "odoc_env.ml" 238 8233 8288
+type(
+  Types.class_type
+)
+"odoc_env.ml" 235 8048 8056 "odoc_env.ml" 238 8233 8288
+type(
+  Types.class_type
+)
+"odoc_env.ml" 239 8289 8315 "odoc_env.ml" 239 8289 8317
+type(
+  Types.class_signature
+)
+ident(
+  def cs "odoc_env.ml" 241 8374 8382 "odoc_env.ml" 241 8374 8383
+)
+"odoc_env.ml" 239 8289 8295 "odoc_env.ml" 239 8289 8317
+type(
+  Types.class_type
+)
+"odoc_env.ml" 241 8374 8382 "odoc_env.ml" 241 8374 8383
+type(
+  Types.class_type
+)
+ident(
+  int_ref t "odoc_env.ml" 232 7969 7984 "odoc_env.ml" 232 7969 7985
+)
+"odoc_env.ml" 242 8384 8407 "odoc_env.ml" 242 8384 8408
+type(
+  Asttypes.label
+)
+ident(
+  def l "odoc_env.ml" 243 8423 8431 "odoc_env.ml" 245 8501 8546
+)
+"odoc_env.ml" 242 8384 8410 "odoc_env.ml" 242 8384 8414
+type(
+  Types.type_expr
+)
+ident(
+  def texp "odoc_env.ml" 243 8423 8431 "odoc_env.ml" 245 8501 8546
+)
+"odoc_env.ml" 242 8384 8416 "odoc_env.ml" 242 8384 8418
+type(
+  Types.class_type
+)
+ident(
+  def ct "odoc_env.ml" 243 8423 8431 "odoc_env.ml" 245 8501 8546
+)
+"odoc_env.ml" 242 8384 8390 "odoc_env.ml" 242 8384 8419
+type(
+  Types.class_type
+)
+"odoc_env.ml" 243 8423 8435 "odoc_env.ml" 243 8423 8443
+type(
+  Types.type_expr
+)
+ident(
+  def new_texp "odoc_env.ml" 244 8469 8477 "odoc_env.ml" 245 8501 8546
+)
+"odoc_env.ml" 243 8423 8446 "odoc_env.ml" 243 8423 8456
+type(
+  env -> Types.type_expr -> Types.type_expr
+)
+ident(
+  int_ref subst_type "odoc_env.ml" 177 6228 6232 "odoc_env.ml" 177 6228 6242
+)
+"odoc_env.ml" 243 8423 8457 "odoc_env.ml" 243 8423 8460
+type(
+  env
+)
+ident(
+  int_ref env "odoc_env.ml" 231 7940 7961 "odoc_env.ml" 231 7940 7964
+)
+"odoc_env.ml" 243 8423 8461 "odoc_env.ml" 243 8423 8465
+type(
+  Types.type_expr
+)
+ident(
+  int_ref texp "odoc_env.ml" 242 8384 8410 "odoc_env.ml" 242 8384 8414
+)
+"odoc_env.ml" 243 8423 8446 "odoc_env.ml" 243 8423 8465
+call(
+  stack
+)
+type(
+  Types.type_expr
+)
+"odoc_env.ml" 244 8469 8481 "odoc_env.ml" 244 8469 8487
+type(
+  Types.class_type
+)
+ident(
+  def new_ct "odoc_env.ml" 245 8501 8509 "odoc_env.ml" 245 8501 8546
+)
+"odoc_env.ml" 244 8469 8490 "odoc_env.ml" 244 8469 8494
+type(
+  Types.class_type -> Types.class_type
+)
+ident(
+  int_ref iter "odoc_env.ml" 232 7969 7979 "odoc_env.ml" 232 7969 7983
+)
+"odoc_env.ml" 244 8469 8495 "odoc_env.ml" 244 8469 8497
+type(
+  Types.class_type
+)
+ident(
+  int_ref ct "odoc_env.ml" 242 8384 8416 "odoc_env.ml" 242 8384 8418
+)
+"odoc_env.ml" 244 8469 8490 "odoc_env.ml" 244 8469 8497
+call(
+  stack
+)
+type(
+  Types.class_type
+)
+"odoc_env.ml" 245 8501 8526 "odoc_env.ml" 245 8501 8527
+type(
+  Asttypes.label
+)
+ident(
+  int_ref l "odoc_env.ml" 242 8384 8407 "odoc_env.ml" 242 8384 8408
+)
+"odoc_env.ml" 245 8501 8529 "odoc_env.ml" 245 8501 8537
+type(
+  Types.type_expr
+)
+ident(
+  int_ref new_texp "odoc_env.ml" 243 8423 8435 "odoc_env.ml" 243 8423 8443
+)
+"odoc_env.ml" 245 8501 8539 "odoc_env.ml" 245 8501 8545
+type(
+  Types.class_type
+)
+ident(
+  int_ref new_ct "odoc_env.ml" 244 8469 8481 "odoc_env.ml" 244 8469 8487
+)
+"odoc_env.ml" 245 8501 8509 "odoc_env.ml" 245 8501 8546
+type(
+  Types.class_type
+)
+"odoc_env.ml" 244 8469 8477 "odoc_env.ml" 245 8501 8546
+type(
+  Types.class_type
+)
+"odoc_env.ml" 243 8423 8431 "odoc_env.ml" 245 8501 8546
+type(
+  Types.class_type
+)
+"odoc_env.ml" 233 7988 7992 "odoc_env.ml" 245 8501 8546
+type(
+  Types.class_type
+)
+"odoc_env.ml" 247 8552 8554 "odoc_env.ml" 247 8552 8558
+type(
+  Types.class_type -> Types.class_type
+)
+ident(
+  int_ref iter "odoc_env.ml" 232 7969 7979 "odoc_env.ml" 232 7969 7983
+)
+"odoc_env.ml" 247 8552 8559 "odoc_env.ml" 247 8552 8560
+type(
+  Types.class_type
+)
+ident(
+  int_ref t "odoc_env.ml" 231 7940 7965 "odoc_env.ml" 231 7940 7966
+)
+"odoc_env.ml" 247 8552 8554 "odoc_env.ml" 247 8552 8560
+call(
+  tail
+)
+type(
+  Types.class_type
+)
+"odoc_env.ml" 232 7969 7971 "odoc_env.ml" 247 8552 8560
+type(
+  Types.class_type
+)

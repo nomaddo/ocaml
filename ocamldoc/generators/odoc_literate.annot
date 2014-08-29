@@ -1,0 +1,2601 @@
+"generators/odoc_literate.ml" 18 941 945 "generators/odoc_literate.ml" 18 941 946
+type(
+  Buffer.t -> ('a, Buffer.t, unit) format -> 'a
+)
+ident(
+  def p "generators/odoc_literate.ml" 19 964 964 "generators/odoc_literate.ml" 1 0 -1
+)
+"generators/odoc_literate.ml" 18 941 949 "generators/odoc_literate.ml" 18 941 963
+type(
+  Buffer.t -> ('a, Buffer.t, unit) format -> 'a
+)
+ident(
+  ext_ref Printf.bprintf
+)
+"generators/odoc_literate.ml" 19 964 968 "generators/odoc_literate.ml" 19 964 970
+type(
+  Buffer.t -> ('a, Buffer.t, unit) format -> 'a
+)
+ident(
+  def bp "generators/odoc_literate.ml" 20 988 988 "generators/odoc_literate.ml" 1 0 -1
+)
+"generators/odoc_literate.ml" 19 964 973 "generators/odoc_literate.ml" 19 964 987
+type(
+  Buffer.t -> ('a, Buffer.t, unit) format -> 'a
+)
+ident(
+  ext_ref Printf.bprintf
+)
+"generators/odoc_literate.ml" 20 988 992 "generators/odoc_literate.ml" 20 988 994
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  def bs "generators/odoc_literate.ml" 22 1016 1016 "generators/odoc_literate.ml" 1 0 -1
+)
+"generators/odoc_literate.ml" 20 988 997 "generators/odoc_literate.ml" 20 988 1014
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  ext_ref Buffer.add_string
+)
+"generators/odoc_literate.ml" 25 1042 1051 "generators/odoc_literate.ml" 25 1042 1052
+type(
+  Odoc_gen.generator option ref -> Odoc_gen.generator option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"generators/odoc_literate.ml" 25 1042 1052 "generators/odoc_literate.ml" 25 1042 1079
+type(
+  Odoc_gen.generator option ref
+)
+ident(
+  ext_ref Odoc_args.current_generator
+)
+"generators/odoc_literate.ml" 25 1042 1051 "generators/odoc_literate.ml" 25 1042 1079
+type(
+  Odoc_gen.generator option
+)
+"generators/odoc_literate.ml" 26 1085 1090 "generators/odoc_literate.ml" 26 1085 1094
+type(
+  Odoc_gen.generator option
+)
+"generators/odoc_literate.ml" 27 1154 1179 "generators/odoc_literate.ml" 27 1154 1180
+type(
+  (module Odoc_html.Html_generator)
+)
+ident(
+  def m "generators/odoc_literate.ml" 27 1154 1185 "generators/odoc_literate.ml" 27 1154 1186
+)
+"generators/odoc_literate.ml" 27 1154 1164 "generators/odoc_literate.ml" 27 1154 1181
+type(
+  Odoc_gen.generator
+)
+"generators/odoc_literate.ml" 27 1154 1159 "generators/odoc_literate.ml" 27 1154 1181
+type(
+  Odoc_gen.generator option
+)
+"generators/odoc_literate.ml" 27 1154 1185 "generators/odoc_literate.ml" 27 1154 1186
+type(
+  (module Odoc_html.Html_generator)
+)
+ident(
+  int_ref m "generators/odoc_literate.ml" 27 1154 1179 "generators/odoc_literate.ml" 27 1154 1180
+)
+"generators/odoc_literate.ml" 28 1187 1192 "generators/odoc_literate.ml" 28 1187 1193
+type(
+  Odoc_gen.generator option
+)
+"generators/odoc_literate.ml" 29 1197 1204 "generators/odoc_literate.ml" 29 1197 1212
+type(
+  string -> (module Odoc_html.Html_generator)
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"generators/odoc_literate.ml" 30 1213 1222 "generators/odoc_literate.ml" 30 1213 1304
+type(
+  string
+)
+"generators/odoc_literate.ml" 29 1197 1204 "generators/odoc_literate.ml" 30 1213 1304
+call(
+  stack
+)
+type(
+  (module Odoc_html.Html_generator)
+)
+"generators/odoc_literate.ml" 24 1037 1040 "generators/odoc_literate.ml" 31 1305 1308
+type(
+  (module Odoc_html.Html_generator)
+)
+type(
+  (module Odoc_html.Html_generator)
+)
+"generators/odoc_literate.ml" 37 1380 1389 "generators/odoc_literate.ml" 37 1380 1395
+type(
+  < character_encoding : unit -> string; constructor : string -> string;
+    create_fully_qualified_idents_links : Odoc_info.Name.t ->
+                                          Odoc_info.Name.t -> string;
+    create_fully_qualified_module_idents_links : Odoc_info.Name.t ->
+                                                 Odoc_info.Name.t -> string;
+    create_title_label : int * string option * Odoc_info.text -> string;
+    escape : Odoc_info.Name.t -> Odoc_info.Name.t;
+    generate : Odoc_info.Module.t_module list -> unit;
+    generate_attributes_index : Odoc_info.Module.t_module list -> unit;
+    generate_class_inheritance_info : Buffer.t ->
+                                      Odoc_info.Class.t_class -> unit;
+    generate_class_type_inheritance_info : Buffer.t ->
+                                           Odoc_info.Class.t_class_type ->
+                                           unit;
+    generate_class_types_index : Odoc_info.Module.t_module list -> unit;
+    generate_classes_index : Odoc_info.Module.t_module list -> unit;
+    generate_elements : 'a.
+                          ('a option -> 'a option -> 'a -> unit) ->
+                          'a list -> unit;
+    generate_elements_index : 'a.
+                                'a list ->
+                                ('a -> Odoc_info.Name.t) ->
+                                ('a -> Odoc_info.info option) ->
+                                ('a -> string) ->
+                                Odoc_info.Name.t -> string -> unit;
+    generate_exceptions_index : Odoc_info.Module.t_module list -> unit;
+    generate_extensions_index : Odoc_info.Module.t_module list -> unit;
+    generate_for_class : Odoc_info.Class.t_class option ->
+                         Odoc_info.Class.t_class option ->
+                         Odoc_info.Class.t_class -> unit;
+    generate_for_class_type : Odoc_info.Class.t_class_type option ->
+                              Odoc_info.Class.t_class_type option ->
+                              Odoc_info.Class.t_class_type -> unit;
+    generate_for_module : Odoc_info.Module.t_module option ->
+                          Odoc_info.Module.t_module option ->
+                          Odoc_info.Module.t_module -> unit;
+    generate_for_module_type : Odoc_info.Module.t_module_type option ->
+                               Odoc_info.Module.t_module_type option ->
+                               Odoc_info.Module.t_module_type -> unit;
+    generate_index : Odoc_info.Module.t_module list -> unit;
+    generate_inheritance_info : Buffer.t ->
+                                Odoc_info.Class.inherited_class list -> unit;
+    generate_methods_index : Odoc_info.Module.t_module list -> unit;
+    generate_module_types_index : Odoc_info.Module.t_module list -> unit;
+    generate_modules_index : Odoc_info.Module.t_module list -> unit;
+    generate_types_index : Odoc_info.Module.t_module list -> unit;
+    generate_values_index : Odoc_info.Module.t_module list -> unit;
+    html_of_Block : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Bold : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Center : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Code : Buffer.t -> Odoc_info.Name.t -> unit;
+    html_of_CodePre : Buffer.t -> string -> unit;
+    html_of_Emphasize : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Enum : Buffer.t -> Odoc_info.text list -> unit;
+    html_of_Index_list : Buffer.t -> unit;
+    html_of_Italic : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Latex : Buffer.t -> string -> unit;
+    html_of_Left : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Link : Buffer.t -> string -> Odoc_info.text -> unit;
+    html_of_List : Buffer.t -> Odoc_info.text list -> unit;
+    html_of_Module_list : Buffer.t -> Odoc_info.Name.t list -> unit;
+    html_of_Newline : Buffer.t -> unit;
+    html_of_Raw : Buffer.t -> Odoc_info.Name.t -> unit;
+    html_of_Ref : Buffer.t ->
+                  Odoc_info.Name.t ->
+                  Odoc_info.ref_kind option -> Odoc_info.text option -> unit;
+    html_of_Right : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Subscript : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Superscript : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Target : Buffer.t -> target:string -> code:string -> unit;
+    html_of_Title : Buffer.t ->
+                    int -> string option -> Odoc_info.text -> unit;
+    html_of_Verbatim : Buffer.t -> Odoc_info.Name.t -> unit;
+    html_of_attribute : Buffer.t -> Odoc_info.Value.t_attribute -> unit;
+    html_of_author_list : Buffer.t -> string list -> unit;
+    html_of_before : Buffer.t -> (string * Odoc_info.text) list -> unit;
+    html_of_class : Buffer.t ->
+                    ?complete:bool ->
+                    ?with_link:bool -> Odoc_info.Class.t_class -> unit;
+    html_of_class_comment : Buffer.t -> Odoc_info.text -> unit;
+    html_of_class_element : Buffer.t -> Odoc_info.Class.class_element -> unit;
+    html_of_class_kind : Buffer.t ->
+                         Odoc_info.Name.t ->
+                         ?cl:Odoc_info.Class.t_class ->
+                         Odoc_info.Class.class_kind -> unit;
+    html_of_class_parameter_list : Buffer.t ->
+                                   Odoc_info.Name.t ->
+                                   Odoc_info.Class.t_class -> unit;
+    html_of_class_type : Buffer.t ->
+                         ?complete:bool ->
+                         ?with_link:bool ->
+                         Odoc_info.Class.t_class_type -> unit;
+    html_of_class_type_kind : Buffer.t ->
+                              Odoc_info.Name.t ->
+                              ?ct:Odoc_info.Class.t_class_type ->
+                              Odoc_info.Class.class_type_kind -> unit;
+    html_of_class_type_param_expr_list : Buffer.t ->
+                                         Odoc_info.Name.t ->
+                                         Types.type_expr list -> unit;
+    html_of_code : Buffer.t -> ?with_pre:bool -> Odoc_info.Name.t -> unit;
+    html_of_custom : Buffer.t -> (string * Odoc_info.text) list -> unit;
+    html_of_custom_text : Buffer.t -> string -> Odoc_info.text -> unit;
+    html_of_dag : (Odoc_info.Name.t * Odoc_info.Class.cct option)
+                  Odoc_dag2html.dag -> string;
+    html_of_described_parameter_list : Buffer.t ->
+                                       Odoc_info.Name.t ->
+                                       Odoc_info.Parameter.parameter list ->
+                                       unit;
+    html_of_exception : Buffer.t -> Odoc_info.Exception.t_exception -> unit;
+    html_of_included_module : Buffer.t ->
+                              Odoc_info.Module.included_module -> unit;
+    html_of_info : ?cls:string ->
+                   ?indent:bool -> Buffer.t -> Odoc_info.info option -> unit;
+    html_of_info_first_sentence : Buffer.t -> Odoc_info.info option -> unit;
+    html_of_method : Buffer.t -> Odoc_info.Value.t_method -> unit;
+    html_of_modtype : Buffer.t ->
+                      ?info:bool ->
+                      ?complete:bool ->
+                      ?with_link:bool ->
+                      Odoc_info.Module.t_module_type -> unit;
+    html_of_module : Buffer.t ->
+                     ?info:bool ->
+                     ?complete:bool ->
+                     ?with_link:bool -> Odoc_info.Module.t_module -> unit;
+    html_of_module_comment : Buffer.t -> Odoc_info.text -> unit;
+    html_of_module_element : Buffer.t ->
+                             Odoc_info.Name.t ->
+                             Odoc_info.Module.module_element -> unit;
+    html_of_module_kind : Buffer.t ->
+                          Odoc_info.Name.t ->
+                          ?modu:Odoc_info.Module.t_module ->
+                          Odoc_info.Module.module_kind -> unit;
+    html_of_module_parameter : Buffer.t ->
+                               Odoc_info.Name.t ->
+                               Odoc_info.Module.module_parameter -> unit;
+    html_of_module_parameter_list : Buffer.t ->
+                                    Odoc_info.Name.t ->
+                                    (Odoc_info.Module.module_parameter *
+                                     Odoc_info.text option)
+                                    list -> unit;
+    html_of_module_parameter_type : Buffer.t ->
+                                    Odoc_info.Name.t ->
+                                    Odoc_info.Module.module_parameter -> unit;
+    html_of_module_type : Buffer.t ->
+                          ?code:string ->
+                          Odoc_info.Name.t -> Types.module_type -> unit;
+    html_of_module_type_kind : Buffer.t ->
+                               Odoc_info.Name.t ->
+                               ?modu:Odoc_info.Module.t_module ->
+                               ?mt:Odoc_info.Module.t_module_type ->
+                               Odoc_info.Module.module_type_kind -> unit;
+    html_of_parameter_description : Buffer.t ->
+                                    Odoc_info.Parameter.parameter -> unit;
+    html_of_parameter_list : Buffer.t ->
+                             Odoc_info.Name.t ->
+                             Odoc_info.Parameter.parameter list -> unit;
+    html_of_raised_exceptions : Buffer.t ->
+                                (string * Odoc_info.text) list -> unit;
+    html_of_return_opt : Buffer.t -> Odoc_info.text option -> unit;
+    html_of_see : Buffer.t -> Odoc_info.see_ref * Odoc_info.text -> unit;
+    html_of_sees : Buffer.t ->
+                   (Odoc_info.see_ref * Odoc_info.text) list -> unit;
+    html_of_since_opt : Buffer.t -> string option -> unit;
+    html_of_text : Buffer.t -> Odoc_info.text -> unit;
+    html_of_text_element : Buffer.t -> Odoc_info.text_element -> unit;
+    html_of_type : Buffer.t -> Odoc_info.Type.t_type -> unit;
+    html_of_type_expr : Buffer.t ->
+                        Odoc_info.Name.t -> Types.type_expr -> unit;
+    html_of_type_expr_list : ?par:bool ->
+                             Buffer.t ->
+                             Odoc_info.Name.t ->
+                             string -> Types.type_expr list -> unit;
+    html_of_type_expr_param_list : Buffer.t ->
+                                   Odoc_info.Name.t ->
+                                   Odoc_info.Type.t_type -> unit;
+    html_of_type_extension : Buffer.t ->
+                             Odoc_info.Name.t ->
+                             Odoc_info.Extension.t_type_extension -> unit;
+    html_of_value : Buffer.t -> Odoc_info.Value.t_value -> unit;
+    html_of_version_opt : Buffer.t -> string option -> unit;
+    html_sections_links : Buffer.t -> Odoc_info.text list -> unit;
+    index : string; index_attributes : string; index_class_types : string;
+    index_classes : string; index_exceptions : string;
+    index_extensions : string; index_methods : string;
+    index_module_types : string; index_modules : string;
+    index_prefix : string; index_types : string; index_values : string;
+    init_style : unit; inner_title : Odoc_info.Name.t -> Odoc_info.Name.t;
+    keep_alpha_num : string -> string; keyword : string -> string;
+    label_of_text : Odoc_info.text -> string;
+    list_attributes : Odoc_info.Value.t_attribute list;
+    list_class_types : Odoc_info.Class.t_class_type list;
+    list_classes : Odoc_info.Class.t_class list;
+    list_exceptions : Odoc_info.Exception.t_exception list;
+    list_extensions : Odoc_info.Extension.t_extension_constructor list;
+    list_methods : Odoc_info.Value.t_method list;
+    list_module_types : Odoc_info.Module.t_module_type list;
+    list_modules : Odoc_info.Module.t_module list;
+    list_types : Odoc_info.Type.t_type list;
+    list_values : Odoc_info.Value.t_value list;
+    output_class_type : Odoc_info.Name.t ->
+                        string -> Types.class_type -> unit;
+    output_module_type : Odoc_info.Name.t ->
+                         string -> Types.module_type -> unit;
+    prepare_header : Odoc_info.Module.t_module list -> unit;
+    print_header : Buffer.t ->
+                   ?nav:(Odoc_info.Name.t option * Odoc_info.Name.t option *
+                         Odoc_info.Name.t)
+                        option ->
+                   ?comments:Odoc_info.text list -> Odoc_info.Name.t -> unit;
+    print_navbar : Buffer.t ->
+                   Odoc_info.Name.t option ->
+                   Odoc_info.Name.t option -> Odoc_info.Name.t -> unit;
+    title : Odoc_info.Name.t; .. >
+)
+"generators/odoc_literate.ml" 40 1427 1469 "generators/odoc_literate.ml" 40 1427 1470
+type(
+  Buffer.t
+)
+ident(
+  def b "generators/odoc_literate.ml" 40 1427 1471 "generators/odoc_literate.ml" 49 1743 1779
+)
+"generators/odoc_literate.ml" 40 1427 1471 "generators/odoc_literate.ml" 40 1427 1475
+type(
+  Odoc_info.text
+)
+ident(
+  def text "generators/odoc_literate.ml" 41 1478 1484 "generators/odoc_literate.ml" 49 1743 1779
+)
+"generators/odoc_literate.ml" 41 1478 1488 "generators/odoc_literate.ml" 41 1478 1491
+type(
+  bool
+)
+ident(
+  def br1 "generators/odoc_literate.ml" 47 1680 1686 "generators/odoc_literate.ml" 49 1743 1779
+)
+"generators/odoc_literate.ml" 41 1478 1493 "generators/odoc_literate.ml" 41 1478 1496
+type(
+  bool
+)
+ident(
+  def br2 "generators/odoc_literate.ml" 47 1680 1686 "generators/odoc_literate.ml" 49 1743 1779
+)
+"generators/odoc_literate.ml" 41 1478 1488 "generators/odoc_literate.ml" 41 1478 1496
+type(
+  bool * bool
+)
+"generators/odoc_literate.ml" 42 1499 1513 "generators/odoc_literate.ml" 42 1499 1517
+type(
+  Odoc_info.text
+)
+ident(
+  int_ref text "generators/odoc_literate.ml" 40 1427 1471 "generators/odoc_literate.ml" 40 1427 1475
+)
+"generators/odoc_literate.ml" 43 1523 1552 "generators/odoc_literate.ml" 43 1523 1553
+type(
+  int
+)
+ident(
+  def n "generators/odoc_literate.ml" 43 1523 1570 "generators/odoc_literate.ml" 43 1523 1582
+)
+"generators/odoc_literate.ml" 43 1523 1555 "generators/odoc_literate.ml" 43 1523 1560
+type(
+  string option
+)
+ident(
+  def l_opt "generators/odoc_literate.ml" 43 1523 1570 "generators/odoc_literate.ml" 43 1523 1582
+)
+"generators/odoc_literate.ml" 43 1523 1562 "generators/odoc_literate.ml" 43 1523 1563
+type(
+  Odoc_info.text
+)
+ident(
+  def t "generators/odoc_literate.ml" 43 1523 1570 "generators/odoc_literate.ml" 43 1523 1582
+)
+"generators/odoc_literate.ml" 43 1523 1534 "generators/odoc_literate.ml" 43 1523 1565
+type(
+  Odoc_info.text_element
+)
+"generators/odoc_literate.ml" 43 1523 1533 "generators/odoc_literate.ml" 43 1523 1566
+type(
+  Odoc_info.text
+)
+"generators/odoc_literate.ml" 43 1523 1570 "generators/odoc_literate.ml" 43 1523 1575
+type(
+  bool
+)
+"generators/odoc_literate.ml" 43 1523 1577 "generators/odoc_literate.ml" 43 1523 1582
+type(
+  bool
+)
+"generators/odoc_literate.ml" 43 1523 1570 "generators/odoc_literate.ml" 43 1523 1582
+type(
+  bool * bool
+)
+"generators/odoc_literate.ml" 44 1583 1611 "generators/odoc_literate.ml" 44 1583 1612
+type(
+  int
+)
+ident(
+  def n "generators/odoc_literate.ml" 44 1583 1633 "generators/odoc_literate.ml" 44 1583 1644
+)
+"generators/odoc_literate.ml" 44 1583 1614 "generators/odoc_literate.ml" 44 1583 1619
+type(
+  string option
+)
+ident(
+  def l_opt "generators/odoc_literate.ml" 44 1583 1633 "generators/odoc_literate.ml" 44 1583 1644
+)
+"generators/odoc_literate.ml" 44 1583 1621 "generators/odoc_literate.ml" 44 1583 1622
+type(
+  Odoc_info.text
+)
+ident(
+  def t "generators/odoc_literate.ml" 44 1583 1633 "generators/odoc_literate.ml" 44 1583 1644
+)
+"generators/odoc_literate.ml" 44 1583 1593 "generators/odoc_literate.ml" 44 1583 1624
+type(
+  Odoc_info.text_element
+)
+"generators/odoc_literate.ml" 44 1583 1628 "generators/odoc_literate.ml" 44 1583 1629
+type(
+  Odoc_info.text_element list
+)
+"generators/odoc_literate.ml" 44 1583 1593 "generators/odoc_literate.ml" 44 1583 1629
+type(
+  Odoc_info.text
+)
+"generators/odoc_literate.ml" 44 1583 1633 "generators/odoc_literate.ml" 44 1583 1638
+type(
+  bool
+)
+"generators/odoc_literate.ml" 44 1583 1640 "generators/odoc_literate.ml" 44 1583 1644
+type(
+  bool
+)
+"generators/odoc_literate.ml" 44 1583 1633 "generators/odoc_literate.ml" 44 1583 1644
+type(
+  bool * bool
+)
+"generators/odoc_literate.ml" 45 1645 1655 "generators/odoc_literate.ml" 45 1645 1656
+type(
+  Odoc_info.text
+)
+"generators/odoc_literate.ml" 45 1645 1660 "generators/odoc_literate.ml" 45 1645 1664
+type(
+  bool
+)
+"generators/odoc_literate.ml" 45 1645 1666 "generators/odoc_literate.ml" 45 1645 1670
+type(
+  bool
+)
+"generators/odoc_literate.ml" 45 1645 1660 "generators/odoc_literate.ml" 45 1645 1670
+type(
+  bool * bool
+)
+"generators/odoc_literate.ml" 42 1499 1507 "generators/odoc_literate.ml" 45 1645 1670
+type(
+  bool * bool
+)
+"generators/odoc_literate.ml" 47 1680 1689 "generators/odoc_literate.ml" 47 1680 1692
+type(
+  bool
+)
+ident(
+  int_ref br1 "generators/odoc_literate.ml" 41 1478 1488 "generators/odoc_literate.ml" 41 1478 1491
+)
+"generators/odoc_literate.ml" 47 1680 1698 "generators/odoc_literate.ml" 47 1680 1699
+type(
+  Buffer.t -> (unit, Buffer.t, unit) format -> unit
+)
+ident(
+  int_ref p "generators/odoc_literate.ml" 18 941 945 "generators/odoc_literate.ml" 18 941 946
+)
+"generators/odoc_literate.ml" 47 1680 1700 "generators/odoc_literate.ml" 47 1680 1701
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 40 1427 1469 "generators/odoc_literate.ml" 40 1427 1470
+)
+"generators/odoc_literate.ml" 47 1680 1702 "generators/odoc_literate.ml" 47 1680 1709
+type(
+  (unit, Buffer.t, unit) format
+)
+"generators/odoc_literate.ml" 47 1680 1698 "generators/odoc_literate.ml" 47 1680 1709
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_literate.ml" 47 1680 1686 "generators/odoc_literate.ml" 47 1680 1709
+type(
+  unit
+)
+"generators/odoc_literate.ml" 48 1711 1717 "generators/odoc_literate.ml" 48 1711 1721
+type(
+  < character_encoding : unit -> string; constructor : string -> string;
+    create_fully_qualified_idents_links : Odoc_info.Name.t ->
+                                          Odoc_info.Name.t -> string;
+    create_fully_qualified_module_idents_links : Odoc_info.Name.t ->
+                                                 Odoc_info.Name.t -> string;
+    create_title_label : int * string option * Odoc_info.text -> string;
+    escape : Odoc_info.Name.t -> Odoc_info.Name.t;
+    generate : Odoc_info.Module.t_module list -> unit;
+    generate_attributes_index : Odoc_info.Module.t_module list -> unit;
+    generate_class_inheritance_info : Buffer.t ->
+                                      Odoc_info.Class.t_class -> unit;
+    generate_class_type_inheritance_info : Buffer.t ->
+                                           Odoc_info.Class.t_class_type ->
+                                           unit;
+    generate_class_types_index : Odoc_info.Module.t_module list -> unit;
+    generate_classes_index : Odoc_info.Module.t_module list -> unit;
+    generate_elements : 'a.
+                          ('a option -> 'a option -> 'a -> unit) ->
+                          'a list -> unit;
+    generate_elements_index : 'a.
+                                'a list ->
+                                ('a -> Odoc_info.Name.t) ->
+                                ('a -> Odoc_info.info option) ->
+                                ('a -> string) ->
+                                Odoc_info.Name.t -> string -> unit;
+    generate_exceptions_index : Odoc_info.Module.t_module list -> unit;
+    generate_extensions_index : Odoc_info.Module.t_module list -> unit;
+    generate_for_class : Odoc_info.Class.t_class option ->
+                         Odoc_info.Class.t_class option ->
+                         Odoc_info.Class.t_class -> unit;
+    generate_for_class_type : Odoc_info.Class.t_class_type option ->
+                              Odoc_info.Class.t_class_type option ->
+                              Odoc_info.Class.t_class_type -> unit;
+    generate_for_module : Odoc_info.Module.t_module option ->
+                          Odoc_info.Module.t_module option ->
+                          Odoc_info.Module.t_module -> unit;
+    generate_for_module_type : Odoc_info.Module.t_module_type option ->
+                               Odoc_info.Module.t_module_type option ->
+                               Odoc_info.Module.t_module_type -> unit;
+    generate_index : Odoc_info.Module.t_module list -> unit;
+    generate_inheritance_info : Buffer.t ->
+                                Odoc_info.Class.inherited_class list -> unit;
+    generate_methods_index : Odoc_info.Module.t_module list -> unit;
+    generate_module_types_index : Odoc_info.Module.t_module list -> unit;
+    generate_modules_index : Odoc_info.Module.t_module list -> unit;
+    generate_types_index : Odoc_info.Module.t_module list -> unit;
+    generate_values_index : Odoc_info.Module.t_module list -> unit;
+    html_of_Block : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Bold : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Center : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Code : Buffer.t -> Odoc_info.Name.t -> unit;
+    html_of_CodePre : Buffer.t -> string -> unit;
+    html_of_Emphasize : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Enum : Buffer.t -> Odoc_info.text list -> unit;
+    html_of_Index_list : Buffer.t -> unit;
+    html_of_Italic : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Latex : Buffer.t -> string -> unit;
+    html_of_Left : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Link : Buffer.t -> string -> Odoc_info.text -> unit;
+    html_of_List : Buffer.t -> Odoc_info.text list -> unit;
+    html_of_Module_list : Buffer.t -> Odoc_info.Name.t list -> unit;
+    html_of_Newline : Buffer.t -> unit;
+    html_of_Raw : Buffer.t -> Odoc_info.Name.t -> unit;
+    html_of_Ref : Buffer.t ->
+                  Odoc_info.Name.t ->
+                  Odoc_info.ref_kind option -> Odoc_info.text option -> unit;
+    html_of_Right : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Subscript : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Superscript : Buffer.t -> Odoc_info.text -> unit;
+    html_of_Target : Buffer.t -> target:string -> code:string -> unit;
+    html_of_Title : Buffer.t ->
+                    int -> string option -> Odoc_info.text -> unit;
+    html_of_Verbatim : Buffer.t -> Odoc_info.Name.t -> unit;
+    html_of_attribute : Buffer.t -> Odoc_info.Value.t_attribute -> unit;
+    html_of_author_list : Buffer.t -> string list -> unit;
+    html_of_before : Buffer.t -> (string * Odoc_info.text) list -> unit;
+    html_of_class : Buffer.t ->
+                    ?complete:bool ->
+                    ?with_link:bool -> Odoc_info.Class.t_class -> unit;
+    html_of_class_comment : Buffer.t -> Odoc_info.text -> unit;
+    html_of_class_element : Buffer.t -> Odoc_info.Class.class_element -> unit;
+    html_of_class_kind : Buffer.t ->
+                         Odoc_info.Name.t ->
+                         ?cl:Odoc_info.Class.t_class ->
+                         Odoc_info.Class.class_kind -> unit;
+    html_of_class_parameter_list : Buffer.t ->
+                                   Odoc_info.Name.t ->
+                                   Odoc_info.Class.t_class -> unit;
+    html_of_class_type : Buffer.t ->
+                         ?complete:bool ->
+                         ?with_link:bool ->
+                         Odoc_info.Class.t_class_type -> unit;
+    html_of_class_type_kind : Buffer.t ->
+                              Odoc_info.Name.t ->
+                              ?ct:Odoc_info.Class.t_class_type ->
+                              Odoc_info.Class.class_type_kind -> unit;
+    html_of_class_type_param_expr_list : Buffer.t ->
+                                         Odoc_info.Name.t ->
+                                         Types.type_expr list -> unit;
+    html_of_code : Buffer.t -> ?with_pre:bool -> Odoc_info.Name.t -> unit;
+    html_of_custom : Buffer.t -> (string * Odoc_info.text) list -> unit;
+    html_of_custom_text : Buffer.t -> string -> Odoc_info.text -> unit;
+    html_of_dag : (Odoc_info.Name.t * Odoc_info.Class.cct option)
+                  Odoc_dag2html.dag -> string;
+    html_of_described_parameter_list : Buffer.t ->
+                                       Odoc_info.Name.t ->
+                                       Odoc_info.Parameter.parameter list ->
+                                       unit;
+    html_of_exception : Buffer.t -> Odoc_info.Exception.t_exception -> unit;
+    html_of_included_module : Buffer.t ->
+                              Odoc_info.Module.included_module -> unit;
+    html_of_info : ?cls:string ->
+                   ?indent:bool -> Buffer.t -> Odoc_info.info option -> unit;
+    html_of_info_first_sentence : Buffer.t -> Odoc_info.info option -> unit;
+    html_of_method : Buffer.t -> Odoc_info.Value.t_method -> unit;
+    html_of_modtype : Buffer.t ->
+                      ?info:bool ->
+                      ?complete:bool ->
+                      ?with_link:bool ->
+                      Odoc_info.Module.t_module_type -> unit;
+    html_of_module : Buffer.t ->
+                     ?info:bool ->
+                     ?complete:bool ->
+                     ?with_link:bool -> Odoc_info.Module.t_module -> unit;
+    html_of_module_comment : Buffer.t -> Odoc_info.text -> unit;
+    html_of_module_element : Buffer.t ->
+                             Odoc_info.Name.t ->
+                             Odoc_info.Module.module_element -> unit;
+    html_of_module_kind : Buffer.t ->
+                          Odoc_info.Name.t ->
+                          ?modu:Odoc_info.Module.t_module ->
+                          Odoc_info.Module.module_kind -> unit;
+    html_of_module_parameter : Buffer.t ->
+                               Odoc_info.Name.t ->
+                               Odoc_info.Module.module_parameter -> unit;
+    html_of_module_parameter_list : Buffer.t ->
+                                    Odoc_info.Name.t ->
+                                    (Odoc_info.Module.module_parameter *
+                                     Odoc_info.text option)
+                                    list -> unit;
+    html_of_module_parameter_type : Buffer.t ->
+                                    Odoc_info.Name.t ->
+                                    Odoc_info.Module.module_parameter -> unit;
+    html_of_module_type : Buffer.t ->
+                          ?code:string ->
+                          Odoc_info.Name.t -> Types.module_type -> unit;
+    html_of_module_type_kind : Buffer.t ->
+                               Odoc_info.Name.t ->
+                               ?modu:Odoc_info.Module.t_module ->
+                               ?mt:Odoc_info.Module.t_module_type ->
+                               Odoc_info.Module.module_type_kind -> unit;
+    html_of_parameter_description : Buffer.t ->
+                                    Odoc_info.Parameter.parameter -> unit;
+    html_of_parameter_list : Buffer.t ->
+                             Odoc_info.Name.t ->
+                             Odoc_info.Parameter.parameter list -> unit;
+    html_of_raised_exceptions : Buffer.t ->
+                                (string * Odoc_info.text) list -> unit;
+    html_of_return_opt : Buffer.t -> Odoc_info.text option -> unit;
+    html_of_see : Buffer.t -> Odoc_info.see_ref * Odoc_info.text -> unit;
+    html_of_sees : Buffer.t ->
+                   (Odoc_info.see_ref * Odoc_info.text) list -> unit;
+    html_of_since_opt : Buffer.t -> string option -> unit;
+    html_of_text : Buffer.t -> Odoc_info.text -> unit;
+    html_of_text_element : Buffer.t -> Odoc_info.text_element -> unit;
+    html_of_type : Buffer.t -> Odoc_info.Type.t_type -> unit;
+    html_of_type_expr : Buffer.t ->
+                        Odoc_info.Name.t -> Types.type_expr -> unit;
+    html_of_type_expr_list : ?par:bool ->
+                             Buffer.t ->
+                             Odoc_info.Name.t ->
+                             string -> Types.type_expr list -> unit;
+    html_of_type_expr_param_list : Buffer.t ->
+                                   Odoc_info.Name.t ->
+                                   Odoc_info.Type.t_type -> unit;
+    html_of_type_extension : Buffer.t ->
+                             Odoc_info.Name.t ->
+                             Odoc_info.Extension.t_type_extension -> unit;
+    html_of_value : Buffer.t -> Odoc_info.Value.t_value -> unit;
+    html_of_version_opt : Buffer.t -> string option -> unit;
+    html_sections_links : Buffer.t -> Odoc_info.text list -> unit;
+    index : string; index_attributes : string; index_class_types : string;
+    index_classes : string; index_exceptions : string;
+    index_extensions : string; index_methods : string;
+    index_module_types : string; index_modules : string;
+    index_prefix : string; index_types : string; index_values : string;
+    init_style : unit; inner_title : Odoc_info.Name.t -> Odoc_info.Name.t;
+    keep_alpha_num : string -> string; keyword : string -> string;
+    label_of_text : Odoc_info.text -> string;
+    list_attributes : Odoc_info.Value.t_attribute list;
+    list_class_types : Odoc_info.Class.t_class_type list;
+    list_classes : Odoc_info.Class.t_class list;
+    list_exceptions : Odoc_info.Exception.t_exception list;
+    list_extensions : Odoc_info.Extension.t_extension_constructor list;
+    list_methods : Odoc_info.Value.t_method list;
+    list_module_types : Odoc_info.Module.t_module_type list;
+    list_modules : Odoc_info.Module.t_module list;
+    list_types : Odoc_info.Type.t_type list;
+    list_values : Odoc_info.Value.t_value list;
+    output_class_type : Odoc_info.Name.t ->
+                        string -> Types.class_type -> unit;
+    output_module_type : Odoc_info.Name.t ->
+                         string -> Types.module_type -> unit;
+    prepare_header : Odoc_info.Module.t_module list -> unit;
+    print_header : Buffer.t ->
+                   ?nav:(Odoc_info.Name.t option * Odoc_info.Name.t option *
+                         Odoc_info.Name.t)
+                        option ->
+                   ?comments:Odoc_info.text list -> Odoc_info.Name.t -> unit;
+    print_navbar : Buffer.t ->
+                   Odoc_info.Name.t option ->
+                   Odoc_info.Name.t option -> Odoc_info.Name.t -> unit;
+    title : Odoc_info.Name.t; .. >
+  as 'b
+)
+ident(
+  int_ref self "generators/odoc_literate.ml" 37 1380 1389 "generators/odoc_literate.ml" 37 1380 1395
+)
+"generators/odoc_literate.ml" 48 1711 1717 "generators/odoc_literate.ml" 48 1711 1734
+call(
+  stack
+)
+type(
+  Buffer.t -> Odoc_info.text -> unit
+)
+"generators/odoc_literate.ml" 48 1711 1735 "generators/odoc_literate.ml" 48 1711 1736
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 40 1427 1469 "generators/odoc_literate.ml" 40 1427 1470
+)
+"generators/odoc_literate.ml" 48 1711 1737 "generators/odoc_literate.ml" 48 1711 1741
+type(
+  Odoc_info.text
+)
+ident(
+  int_ref text "generators/odoc_literate.ml" 40 1427 1471 "generators/odoc_literate.ml" 40 1427 1475
+)
+"generators/odoc_literate.ml" 48 1711 1717 "generators/odoc_literate.ml" 48 1711 1741
+type(
+  unit
+)
+"generators/odoc_literate.ml" 49 1743 1752 "generators/odoc_literate.ml" 49 1743 1755
+type(
+  bool
+)
+ident(
+  int_ref br2 "generators/odoc_literate.ml" 41 1478 1493 "generators/odoc_literate.ml" 41 1478 1496
+)
+"generators/odoc_literate.ml" 49 1743 1761 "generators/odoc_literate.ml" 49 1743 1762
+type(
+  Buffer.t -> (unit, Buffer.t, unit) format -> unit
+)
+ident(
+  int_ref p "generators/odoc_literate.ml" 18 941 945 "generators/odoc_literate.ml" 18 941 946
+)
+"generators/odoc_literate.ml" 49 1743 1763 "generators/odoc_literate.ml" 49 1743 1764
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 40 1427 1469 "generators/odoc_literate.ml" 40 1427 1470
+)
+"generators/odoc_literate.ml" 49 1743 1765 "generators/odoc_literate.ml" 49 1743 1779
+type(
+  (unit, Buffer.t, unit) format
+)
+"generators/odoc_literate.ml" 49 1743 1761 "generators/odoc_literate.ml" 49 1743 1779
+call(
+  tail
+)
+type(
+  unit
+)
+"generators/odoc_literate.ml" 49 1743 1749 "generators/odoc_literate.ml" 49 1743 1779
+type(
+  unit
+)
+"generators/odoc_literate.ml" 48 1711 1717 "generators/odoc_literate.ml" 49 1743 1779
+type(
+  unit
+)
+"generators/odoc_literate.ml" 47 1680 1686 "generators/odoc_literate.ml" 49 1743 1779
+type(
+  unit
+)
+"generators/odoc_literate.ml" 41 1478 1484 "generators/odoc_literate.ml" 49 1743 1779
+type(
+  unit
+)
+"generators/odoc_literate.ml" 51 1781 1814 "generators/odoc_literate.ml" 51 1781 1815
+type(
+  Buffer.t
+)
+ident(
+  def b "generators/odoc_literate.ml" 51 1781 1816 "generators/odoc_literate.ml" 56 2002 2022
+)
+"generators/odoc_literate.ml" 51 1781 1816 "generators/odoc_literate.ml" 51 1781 1817
+type(
+  int
+)
+ident(
+  def n "generators/odoc_literate.ml" 51 1781 1818 "generators/odoc_literate.ml" 56 2002 2022
+)
+"generators/odoc_literate.ml" 51 1781 1818 "generators/odoc_literate.ml" 51 1781 1823
+type(
+  string option
+)
+ident(
+  def l_opt "generators/odoc_literate.ml" 51 1781 1824 "generators/odoc_literate.ml" 56 2002 2022
+)
+"generators/odoc_literate.ml" 51 1781 1824 "generators/odoc_literate.ml" 51 1781 1825
+type(
+  Odoc_info.text
+)
+ident(
+  def t "generators/odoc_literate.ml" 52 1828 1834 "generators/odoc_literate.ml" 56 2002 2022
+)
+"generators/odoc_literate.ml" 52 1828 1838 "generators/odoc_literate.ml" 52 1828 1844
+type(
+  string
+)
+ident(
+  def label1 "generators/odoc_literate.ml" 53 1888 1894 "generators/odoc_literate.ml" 56 2002 2022
+)
+"generators/odoc_literate.ml" 52 1828 1847 "generators/odoc_literate.ml" 52 1828 1851
+type(
+  'b
+)
+ident(
+  int_ref self "generators/odoc_literate.ml" 37 1380 1389 "generators/odoc_literate.ml" 37 1380 1395
+)
+"generators/odoc_literate.ml" 52 1828 1847 "generators/odoc_literate.ml" 52 1828 1870
+call(
+  stack
+)
+type(
+  int * string option * Odoc_info.text -> string
+)
+"generators/odoc_literate.ml" 52 1828 1872 "generators/odoc_literate.ml" 52 1828 1873
+type(
+  int
+)
+ident(
+  int_ref n "generators/odoc_literate.ml" 51 1781 1816 "generators/odoc_literate.ml" 51 1781 1817
+)
+"generators/odoc_literate.ml" 52 1828 1875 "generators/odoc_literate.ml" 52 1828 1880
+type(
+  string option
+)
+ident(
+  int_ref l_opt "generators/odoc_literate.ml" 51 1781 1818 "generators/odoc_literate.ml" 51 1781 1823
+)
+"generators/odoc_literate.ml" 52 1828 1882 "generators/odoc_literate.ml" 52 1828 1883
+type(
+  Odoc_info.text
+)
+ident(
+  int_ref t "generators/odoc_literate.ml" 51 1781 1824 "generators/odoc_literate.ml" 51 1781 1825
+)
+"generators/odoc_literate.ml" 52 1828 1871 "generators/odoc_literate.ml" 52 1828 1884
+type(
+  int * string option * Odoc_info.text
+)
+"generators/odoc_literate.ml" 52 1828 1847 "generators/odoc_literate.ml" 52 1828 1884
+type(
+  string
+)
+"generators/odoc_literate.ml" 53 1888 1894 "generators/odoc_literate.ml" 53 1888 1895
+type(
+  Buffer.t -> (string -> unit, Buffer.t, unit) format -> string -> unit
+)
+ident(
+  int_ref p "generators/odoc_literate.ml" 18 941 945 "generators/odoc_literate.ml" 18 941 946
+)
+"generators/odoc_literate.ml" 53 1888 1896 "generators/odoc_literate.ml" 53 1888 1897
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 51 1781 1814 "generators/odoc_literate.ml" 51 1781 1815
+)
+"generators/odoc_literate.ml" 53 1888 1898 "generators/odoc_literate.ml" 53 1888 1921
+type(
+  (string -> unit, Buffer.t, unit) format
+)
+"generators/odoc_literate.ml" 53 1888 1923 "generators/odoc_literate.ml" 53 1888 1942
+type(
+  string -> string
+)
+ident(
+  ext_ref Naming.label_target
+)
+"generators/odoc_literate.ml" 53 1888 1943 "generators/odoc_literate.ml" 53 1888 1949
+type(
+  string
+)
+ident(
+  int_ref label1 "generators/odoc_literate.ml" 52 1828 1838 "generators/odoc_literate.ml" 52 1828 1844
+)
+"generators/odoc_literate.ml" 53 1888 1922 "generators/odoc_literate.ml" 53 1888 1950
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 53 1888 1894 "generators/odoc_literate.ml" 53 1888 1950
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_literate.ml" 54 1952 1958 "generators/odoc_literate.ml" 54 1952 1959
+type(
+  Buffer.t -> (int -> unit, Buffer.t, unit) format -> int -> unit
+)
+ident(
+  int_ref p "generators/odoc_literate.ml" 18 941 945 "generators/odoc_literate.ml" 18 941 946
+)
+"generators/odoc_literate.ml" 54 1952 1960 "generators/odoc_literate.ml" 54 1952 1961
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 51 1781 1814 "generators/odoc_literate.ml" 51 1781 1815
+)
+"generators/odoc_literate.ml" 54 1952 1962 "generators/odoc_literate.ml" 54 1952 1969
+type(
+  (int -> unit, Buffer.t, unit) format
+)
+"generators/odoc_literate.ml" 54 1952 1970 "generators/odoc_literate.ml" 54 1952 1971
+type(
+  int
+)
+ident(
+  int_ref n "generators/odoc_literate.ml" 51 1781 1816 "generators/odoc_literate.ml" 51 1781 1817
+)
+"generators/odoc_literate.ml" 54 1952 1958 "generators/odoc_literate.ml" 54 1952 1971
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_literate.ml" 55 1973 1979 "generators/odoc_literate.ml" 55 1973 1983
+type(
+  'b
+)
+ident(
+  int_ref self "generators/odoc_literate.ml" 37 1380 1389 "generators/odoc_literate.ml" 37 1380 1395
+)
+"generators/odoc_literate.ml" 55 1973 1979 "generators/odoc_literate.ml" 55 1973 1996
+call(
+  stack
+)
+type(
+  Buffer.t -> Odoc_info.text -> unit
+)
+"generators/odoc_literate.ml" 55 1973 1997 "generators/odoc_literate.ml" 55 1973 1998
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 51 1781 1814 "generators/odoc_literate.ml" 51 1781 1815
+)
+"generators/odoc_literate.ml" 55 1973 1999 "generators/odoc_literate.ml" 55 1973 2000
+type(
+  Odoc_info.text
+)
+ident(
+  int_ref t "generators/odoc_literate.ml" 51 1781 1824 "generators/odoc_literate.ml" 51 1781 1825
+)
+"generators/odoc_literate.ml" 55 1973 1979 "generators/odoc_literate.ml" 55 1973 2000
+type(
+  unit
+)
+"generators/odoc_literate.ml" 56 2002 2008 "generators/odoc_literate.ml" 56 2002 2009
+type(
+  Buffer.t -> (int -> unit, Buffer.t, unit) format -> int -> unit
+)
+ident(
+  int_ref p "generators/odoc_literate.ml" 18 941 945 "generators/odoc_literate.ml" 18 941 946
+)
+"generators/odoc_literate.ml" 56 2002 2010 "generators/odoc_literate.ml" 56 2002 2011
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 51 1781 1814 "generators/odoc_literate.ml" 51 1781 1815
+)
+"generators/odoc_literate.ml" 56 2002 2012 "generators/odoc_literate.ml" 56 2002 2020
+type(
+  (int -> unit, Buffer.t, unit) format
+)
+"generators/odoc_literate.ml" 56 2002 2021 "generators/odoc_literate.ml" 56 2002 2022
+type(
+  int
+)
+ident(
+  int_ref n "generators/odoc_literate.ml" 51 1781 1816 "generators/odoc_literate.ml" 51 1781 1817
+)
+"generators/odoc_literate.ml" 56 2002 2008 "generators/odoc_literate.ml" 56 2002 2022
+call(
+  tail
+)
+type(
+  unit
+)
+"generators/odoc_literate.ml" 55 1973 1979 "generators/odoc_literate.ml" 56 2002 2022
+type(
+  unit
+)
+"generators/odoc_literate.ml" 54 1952 1958 "generators/odoc_literate.ml" 56 2002 2022
+type(
+  unit
+)
+"generators/odoc_literate.ml" 53 1888 1894 "generators/odoc_literate.ml" 56 2002 2022
+type(
+  unit
+)
+"generators/odoc_literate.ml" 52 1828 1834 "generators/odoc_literate.ml" 56 2002 2022
+type(
+  unit
+)
+"generators/odoc_literate.ml" 58 2024 2050 "generators/odoc_literate.ml" 58 2024 2051
+type(
+  int
+)
+"generators/odoc_literate.ml" 59 2052 2082 "generators/odoc_literate.ml" 59 2052 2083
+type(
+  Buffer.t
+)
+ident(
+  def b "generators/odoc_literate.ml" 59 2052 2084 "generators/odoc_literate.ml" 65 2559 2590
+)
+"generators/odoc_literate.ml" 59 2052 2084 "generators/odoc_literate.ml" 59 2052 2088
+type(
+  Odoc_info.Name.t
+)
+ident(
+  def code "generators/odoc_literate.ml" 60 2091 2097 "generators/odoc_literate.ml" 65 2559 2590
+)
+"generators/odoc_literate.ml" 60 2091 2108 "generators/odoc_literate.ml" 60 2091 2115
+type(
+  int
+)
+ident(
+  ext_ref code_id
+)
+"generators/odoc_literate.ml" 60 2091 2116 "generators/odoc_literate.ml" 60 2091 2117
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"generators/odoc_literate.ml" 60 2091 2118 "generators/odoc_literate.ml" 60 2091 2119
+type(
+  int
+)
+"generators/odoc_literate.ml" 60 2091 2108 "generators/odoc_literate.ml" 60 2091 2119
+type(
+  int
+)
+"generators/odoc_literate.ml" 60 2091 2097 "generators/odoc_literate.ml" 60 2091 2119
+type(
+  unit
+)
+"generators/odoc_literate.ml" 61 2121 2127 "generators/odoc_literate.ml" 61 2121 2141
+type(
+  Buffer.t ->
+  (int -> int -> int -> unit, Buffer.t, unit) format ->
+  int -> int -> int -> unit
+)
+ident(
+  ext_ref Printf.bprintf
+)
+"generators/odoc_literate.ml" 61 2121 2142 "generators/odoc_literate.ml" 61 2121 2143
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 59 2052 2082 "generators/odoc_literate.ml" 59 2052 2083
+)
+"generators/odoc_literate.ml" 62 2144 2150 "generators/odoc_literate.ml" 62 2144 2427
+type(
+  (int -> int -> int -> unit, Buffer.t, unit) format
+)
+"generators/odoc_literate.ml" 62 2144 2428 "generators/odoc_literate.ml" 62 2144 2435
+type(
+  int
+)
+ident(
+  ext_ref code_id
+)
+"generators/odoc_literate.ml" 62 2144 2436 "generators/odoc_literate.ml" 62 2144 2443
+type(
+  int
+)
+ident(
+  ext_ref code_id
+)
+"generators/odoc_literate.ml" 62 2144 2444 "generators/odoc_literate.ml" 62 2144 2451
+type(
+  int
+)
+ident(
+  ext_ref code_id
+)
+"generators/odoc_literate.ml" 61 2121 2127 "generators/odoc_literate.ml" 62 2144 2451
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_literate.ml" 63 2453 2459 "generators/odoc_literate.ml" 63 2453 2473
+type(
+  Buffer.t -> (int -> unit, Buffer.t, unit) format -> int -> unit
+)
+ident(
+  ext_ref Printf.bprintf
+)
+"generators/odoc_literate.ml" 63 2453 2474 "generators/odoc_literate.ml" 63 2453 2475
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 59 2052 2082 "generators/odoc_literate.ml" 59 2052 2083
+)
+"generators/odoc_literate.ml" 63 2453 2476 "generators/odoc_literate.ml" 63 2453 2517
+type(
+  (int -> unit, Buffer.t, unit) format
+)
+"generators/odoc_literate.ml" 63 2453 2518 "generators/odoc_literate.ml" 63 2453 2525
+type(
+  int
+)
+ident(
+  ext_ref code_id
+)
+"generators/odoc_literate.ml" 63 2453 2459 "generators/odoc_literate.ml" 63 2453 2525
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_literate.ml" 64 2527 2533 "generators/odoc_literate.ml" 64 2527 2537
+type(
+  'b
+)
+ident(
+  int_ref self "generators/odoc_literate.ml" 37 1380 1389 "generators/odoc_literate.ml" 37 1380 1395
+)
+"generators/odoc_literate.ml" 64 2527 2533 "generators/odoc_literate.ml" 64 2527 2550
+call(
+  stack
+)
+type(
+  Buffer.t -> ?with_pre:bool -> Odoc_info.Name.t -> unit
+)
+"generators/odoc_literate.ml" 64 2527 2551 "generators/odoc_literate.ml" 64 2527 2552
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 59 2052 2082 "generators/odoc_literate.ml" 59 2052 2083
+)
+"generators/odoc_literate.ml" 64 2527 2553 "generators/odoc_literate.ml" 64 2527 2557
+type(
+  Odoc_info.Name.t
+)
+ident(
+  int_ref code "generators/odoc_literate.ml" 59 2052 2084 "generators/odoc_literate.ml" 59 2052 2088
+)
+"generators/odoc_literate.ml" 64 2527 2533 "generators/odoc_literate.ml" 64 2527 2557
+type(
+  unit
+)
+"generators/odoc_literate.ml" 65 2559 2565 "generators/odoc_literate.ml" 65 2559 2579
+type(
+  Buffer.t -> (unit, Buffer.t, unit) format -> unit
+)
+ident(
+  ext_ref Printf.bprintf
+)
+"generators/odoc_literate.ml" 65 2559 2580 "generators/odoc_literate.ml" 65 2559 2581
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 59 2052 2082 "generators/odoc_literate.ml" 59 2052 2083
+)
+"generators/odoc_literate.ml" 65 2559 2582 "generators/odoc_literate.ml" 65 2559 2590
+type(
+  (unit, Buffer.t, unit) format
+)
+"generators/odoc_literate.ml" 65 2559 2565 "generators/odoc_literate.ml" 65 2559 2590
+call(
+  tail
+)
+type(
+  unit
+)
+"generators/odoc_literate.ml" 64 2527 2533 "generators/odoc_literate.ml" 65 2559 2590
+type(
+  unit
+)
+"generators/odoc_literate.ml" 63 2453 2459 "generators/odoc_literate.ml" 65 2559 2590
+type(
+  unit
+)
+"generators/odoc_literate.ml" 61 2121 2127 "generators/odoc_literate.ml" 65 2559 2590
+type(
+  unit
+)
+"generators/odoc_literate.ml" 60 2091 2097 "generators/odoc_literate.ml" 65 2559 2590
+type(
+  unit
+)
+"generators/odoc_literate.ml" 68 2632 2665 "generators/odoc_literate.ml" 68 2632 2666
+type(
+  Buffer.t
+)
+ident(
+  def b "generators/odoc_literate.ml" 68 2632 2667 "generators/odoc_literate.ml" 91 3413 3420
+)
+"generators/odoc_literate.ml" 68 2632 2667 "generators/odoc_literate.ml" 68 2632 2668
+type(
+  Odoc_info.Value.t_value
+)
+ident(
+  def v "generators/odoc_literate.ml" 69 2671 2677 "generators/odoc_literate.ml" 91 3413 3420
+)
+"generators/odoc_literate.ml" 69 2671 2677 "generators/odoc_literate.ml" 69 2671 2703
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Odoc_info.reset_type_names
+)
+"generators/odoc_literate.ml" 69 2671 2704 "generators/odoc_literate.ml" 69 2671 2706
+type(
+  unit
+)
+"generators/odoc_literate.ml" 69 2671 2677 "generators/odoc_literate.ml" 69 2671 2706
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_literate.ml" 70 2708 2714 "generators/odoc_literate.ml" 70 2708 2718
+type(
+  'b
+)
+ident(
+  int_ref self "generators/odoc_literate.ml" 37 1380 1389 "generators/odoc_literate.ml" 37 1380 1395
+)
+"generators/odoc_literate.ml" 70 2708 2714 "generators/odoc_literate.ml" 70 2708 2731
+call(
+  stack
+)
+type(
+  ?cls:string -> ?indent:bool -> Buffer.t -> Odoc_info.info option -> unit
+)
+"generators/odoc_literate.ml" 70 2708 2732 "generators/odoc_literate.ml" 70 2708 2733
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 68 2632 2665 "generators/odoc_literate.ml" 68 2632 2666
+)
+"generators/odoc_literate.ml" 70 2708 2734 "generators/odoc_literate.ml" 70 2708 2735
+type(
+  Odoc_info.Value.t_value
+)
+ident(
+  int_ref v "generators/odoc_literate.ml" 68 2632 2667 "generators/odoc_literate.ml" 68 2632 2668
+)
+"generators/odoc_literate.ml" 70 2708 2734 "generators/odoc_literate.ml" 70 2708 2744
+type(
+  Odoc_info.info option
+)
+"generators/odoc_literate.ml" 70 2708 2714 "generators/odoc_literate.ml" 70 2708 2744
+type(
+  unit
+)
+"generators/odoc_literate.ml" 71 2746 2752 "generators/odoc_literate.ml" 71 2746 2754
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  int_ref bs "generators/odoc_literate.ml" 20 988 992 "generators/odoc_literate.ml" 20 988 994
+)
+"generators/odoc_literate.ml" 71 2746 2755 "generators/odoc_literate.ml" 71 2746 2756
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 68 2632 2665 "generators/odoc_literate.ml" 68 2632 2666
+)
+"generators/odoc_literate.ml" 71 2746 2757 "generators/odoc_literate.ml" 71 2746 2764
+type(
+  string
+)
+"generators/odoc_literate.ml" 71 2746 2752 "generators/odoc_literate.ml" 71 2746 2764
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_literate.ml" 72 2766 2772 "generators/odoc_literate.ml" 72 2766 2774
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  int_ref bs "generators/odoc_literate.ml" 20 988 992 "generators/odoc_literate.ml" 20 988 994
+)
+"generators/odoc_literate.ml" 72 2766 2775 "generators/odoc_literate.ml" 72 2766 2776
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 68 2632 2665 "generators/odoc_literate.ml" 68 2632 2666
+)
+"generators/odoc_literate.ml" 72 2766 2778 "generators/odoc_literate.ml" 72 2766 2782
+type(
+  'b
+)
+ident(
+  int_ref self "generators/odoc_literate.ml" 37 1380 1389 "generators/odoc_literate.ml" 37 1380 1395
+)
+"generators/odoc_literate.ml" 72 2766 2778 "generators/odoc_literate.ml" 72 2766 2790
+call(
+  stack
+)
+type(
+  string -> string
+)
+"generators/odoc_literate.ml" 72 2766 2791 "generators/odoc_literate.ml" 72 2766 2796
+type(
+  string
+)
+"generators/odoc_literate.ml" 72 2766 2777 "generators/odoc_literate.ml" 72 2766 2797
+type(
+  string
+)
+"generators/odoc_literate.ml" 72 2766 2772 "generators/odoc_literate.ml" 72 2766 2797
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_literate.ml" 73 2799 2805 "generators/odoc_literate.ml" 73 2799 2807
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  int_ref bs "generators/odoc_literate.ml" 20 988 992 "generators/odoc_literate.ml" 20 988 994
+)
+"generators/odoc_literate.ml" 73 2799 2808 "generators/odoc_literate.ml" 73 2799 2809
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 68 2632 2665 "generators/odoc_literate.ml" 68 2632 2666
+)
+"generators/odoc_literate.ml" 73 2799 2810 "generators/odoc_literate.ml" 73 2799 2813
+type(
+  string
+)
+"generators/odoc_literate.ml" 73 2799 2805 "generators/odoc_literate.ml" 73 2799 2813
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_literate.ml" 75 2837 2843 "generators/odoc_literate.ml" 75 2837 2845
+type(
+  Buffer.t -> (string -> unit, Buffer.t, unit) format -> string -> unit
+)
+ident(
+  int_ref bp "generators/odoc_literate.ml" 19 964 968 "generators/odoc_literate.ml" 19 964 970
+)
+"generators/odoc_literate.ml" 75 2837 2846 "generators/odoc_literate.ml" 75 2837 2847
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 68 2632 2665 "generators/odoc_literate.ml" 68 2632 2666
+)
+"generators/odoc_literate.ml" 75 2837 2848 "generators/odoc_literate.ml" 75 2837 2869
+type(
+  (string -> unit, Buffer.t, unit) format
+)
+"generators/odoc_literate.ml" 75 2837 2871 "generators/odoc_literate.ml" 75 2837 2890
+type(
+  Odoc_info.Value.t_value -> string
+)
+ident(
+  ext_ref Naming.value_target
+)
+"generators/odoc_literate.ml" 75 2837 2891 "generators/odoc_literate.ml" 75 2837 2892
+type(
+  Odoc_info.Value.t_value
+)
+ident(
+  int_ref v "generators/odoc_literate.ml" 68 2632 2667 "generators/odoc_literate.ml" 68 2632 2668
+)
+"generators/odoc_literate.ml" 75 2837 2870 "generators/odoc_literate.ml" 75 2837 2893
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 75 2837 2843 "generators/odoc_literate.ml" 75 2837 2893
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_literate.ml" 76 2895 2901 "generators/odoc_literate.ml" 76 2895 2903
+type(
+  Buffer.t -> Odoc_info.Name.t -> unit
+)
+ident(
+  int_ref bs "generators/odoc_literate.ml" 20 988 992 "generators/odoc_literate.ml" 20 988 994
+)
+"generators/odoc_literate.ml" 76 2895 2904 "generators/odoc_literate.ml" 76 2895 2905
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 68 2632 2665 "generators/odoc_literate.ml" 68 2632 2666
+)
+"generators/odoc_literate.ml" 76 2895 2907 "generators/odoc_literate.ml" 76 2895 2911
+type(
+  'b
+)
+ident(
+  int_ref self "generators/odoc_literate.ml" 37 1380 1389 "generators/odoc_literate.ml" 37 1380 1395
+)
+"generators/odoc_literate.ml" 76 2895 2907 "generators/odoc_literate.ml" 76 2895 2918
+call(
+  stack
+)
+type(
+  Odoc_info.Name.t -> Odoc_info.Name.t
+)
+"generators/odoc_literate.ml" 76 2895 2920 "generators/odoc_literate.ml" 76 2895 2931
+type(
+  Odoc_info.Name.t -> Odoc_info.Name.t
+)
+ident(
+  ext_ref Odoc_info.Name.simple
+)
+"generators/odoc_literate.ml" 76 2895 2932 "generators/odoc_literate.ml" 76 2895 2933
+type(
+  Odoc_info.Value.t_value
+)
+ident(
+  int_ref v "generators/odoc_literate.ml" 68 2632 2667 "generators/odoc_literate.ml" 68 2632 2668
+)
+"generators/odoc_literate.ml" 76 2895 2932 "generators/odoc_literate.ml" 76 2895 2942
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_literate.ml" 76 2895 2919 "generators/odoc_literate.ml" 76 2895 2943
+call(
+  stack
+)
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_literate.ml" 76 2895 2906 "generators/odoc_literate.ml" 76 2895 2944
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_literate.ml" 76 2895 2901 "generators/odoc_literate.ml" 76 2895 2944
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_literate.ml" 77 2946 2952 "generators/odoc_literate.ml" 77 2946 2954
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  int_ref bs "generators/odoc_literate.ml" 20 988 992 "generators/odoc_literate.ml" 20 988 994
+)
+"generators/odoc_literate.ml" 77 2946 2955 "generators/odoc_literate.ml" 77 2946 2956
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 68 2632 2665 "generators/odoc_literate.ml" 68 2632 2666
+)
+"generators/odoc_literate.ml" 77 2946 2957 "generators/odoc_literate.ml" 77 2946 2962
+type(
+  string
+)
+"generators/odoc_literate.ml" 77 2946 2952 "generators/odoc_literate.ml" 77 2946 2962
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_literate.ml" 78 2964 2970 "generators/odoc_literate.ml" 78 2964 2974
+type(
+  'b
+)
+ident(
+  int_ref self "generators/odoc_literate.ml" 37 1380 1389 "generators/odoc_literate.ml" 37 1380 1395
+)
+"generators/odoc_literate.ml" 78 2964 2970 "generators/odoc_literate.ml" 78 2964 2992
+call(
+  stack
+)
+type(
+  Buffer.t -> Odoc_info.Name.t -> Types.type_expr -> unit
+)
+"generators/odoc_literate.ml" 78 2964 2993 "generators/odoc_literate.ml" 78 2964 2994
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 68 2632 2665 "generators/odoc_literate.ml" 68 2632 2666
+)
+"generators/odoc_literate.ml" 78 2964 2996 "generators/odoc_literate.ml" 78 2964 3007
+type(
+  Odoc_info.Name.t -> Odoc_info.Name.t
+)
+ident(
+  ext_ref Odoc_info.Name.father
+)
+"generators/odoc_literate.ml" 78 2964 3008 "generators/odoc_literate.ml" 78 2964 3009
+type(
+  Odoc_info.Value.t_value
+)
+ident(
+  int_ref v "generators/odoc_literate.ml" 68 2632 2667 "generators/odoc_literate.ml" 68 2632 2668
+)
+"generators/odoc_literate.ml" 78 2964 3008 "generators/odoc_literate.ml" 78 2964 3018
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_literate.ml" 78 2964 2995 "generators/odoc_literate.ml" 78 2964 3019
+call(
+  stack
+)
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_literate.ml" 78 2964 3020 "generators/odoc_literate.ml" 78 2964 3021
+type(
+  Odoc_info.Value.t_value
+)
+ident(
+  int_ref v "generators/odoc_literate.ml" 68 2632 2667 "generators/odoc_literate.ml" 68 2632 2668
+)
+"generators/odoc_literate.ml" 78 2964 3020 "generators/odoc_literate.ml" 78 2964 3030
+type(
+  Types.type_expr
+)
+"generators/odoc_literate.ml" 78 2964 2970 "generators/odoc_literate.ml" 78 2964 3030
+type(
+  unit
+)
+"generators/odoc_literate.ml" 79 3032 3038 "generators/odoc_literate.ml" 79 3032 3040
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  int_ref bs "generators/odoc_literate.ml" 20 988 992 "generators/odoc_literate.ml" 20 988 994
+)
+"generators/odoc_literate.ml" 79 3032 3041 "generators/odoc_literate.ml" 79 3032 3042
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 68 2632 2665 "generators/odoc_literate.ml" 68 2632 2666
+)
+"generators/odoc_literate.ml" 79 3032 3043 "generators/odoc_literate.ml" 79 3032 3051
+type(
+  string
+)
+"generators/odoc_literate.ml" 79 3032 3038 "generators/odoc_literate.ml" 79 3032 3051
+call(
+  stack
+)
+type(
+  unit
+)
+"generators/odoc_literate.ml" 81 3061 3071 "generators/odoc_literate.ml" 81 3061 3072
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"generators/odoc_literate.ml" 81 3061 3072 "generators/odoc_literate.ml" 81 3061 3101
+type(
+  bool ref
+)
+ident(
+  ext_ref Odoc_html.with_parameter_list
+)
+"generators/odoc_literate.ml" 81 3061 3071 "generators/odoc_literate.ml" 81 3061 3101
+type(
+  bool
+)
+"generators/odoc_literate.ml" 82 3107 3116 "generators/odoc_literate.ml" 82 3107 3120
+type(
+  'b
+)
+ident(
+  int_ref self "generators/odoc_literate.ml" 37 1380 1389 "generators/odoc_literate.ml" 37 1380 1395
+)
+"generators/odoc_literate.ml" 82 3107 3116 "generators/odoc_literate.ml" 82 3107 3143
+call(
+  stack
+)
+type(
+  Buffer.t -> Odoc_info.Name.t -> Odoc_info.Parameter.parameter list -> unit
+)
+"generators/odoc_literate.ml" 82 3107 3144 "generators/odoc_literate.ml" 82 3107 3145
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 68 2632 2665 "generators/odoc_literate.ml" 68 2632 2666
+)
+"generators/odoc_literate.ml" 82 3107 3147 "generators/odoc_literate.ml" 82 3107 3158
+type(
+  Odoc_info.Name.t -> Odoc_info.Name.t
+)
+ident(
+  ext_ref Odoc_info.Name.father
+)
+"generators/odoc_literate.ml" 82 3107 3159 "generators/odoc_literate.ml" 82 3107 3160
+type(
+  Odoc_info.Value.t_value
+)
+ident(
+  int_ref v "generators/odoc_literate.ml" 68 2632 2667 "generators/odoc_literate.ml" 68 2632 2668
+)
+"generators/odoc_literate.ml" 82 3107 3159 "generators/odoc_literate.ml" 82 3107 3169
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_literate.ml" 82 3107 3146 "generators/odoc_literate.ml" 82 3107 3170
+call(
+  stack
+)
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_literate.ml" 82 3107 3171 "generators/odoc_literate.ml" 82 3107 3172
+type(
+  Odoc_info.Value.t_value
+)
+ident(
+  int_ref v "generators/odoc_literate.ml" 68 2632 2667 "generators/odoc_literate.ml" 68 2632 2668
+)
+"generators/odoc_literate.ml" 82 3107 3171 "generators/odoc_literate.ml" 82 3107 3187
+type(
+  Odoc_info.Parameter.parameter list
+)
+"generators/odoc_literate.ml" 82 3107 3116 "generators/odoc_literate.ml" 82 3107 3187
+type(
+  unit
+)
+"generators/odoc_literate.ml" 84 3200 3209 "generators/odoc_literate.ml" 84 3200 3213
+type(
+  'b
+)
+ident(
+  int_ref self "generators/odoc_literate.ml" 37 1380 1389 "generators/odoc_literate.ml" 37 1380 1395
+)
+"generators/odoc_literate.ml" 84 3200 3209 "generators/odoc_literate.ml" 84 3200 3246
+call(
+  stack
+)
+type(
+  Buffer.t -> Odoc_info.Name.t -> Odoc_info.Parameter.parameter list -> unit
+)
+"generators/odoc_literate.ml" 84 3200 3247 "generators/odoc_literate.ml" 84 3200 3248
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 68 2632 2665 "generators/odoc_literate.ml" 68 2632 2666
+)
+"generators/odoc_literate.ml" 84 3200 3250 "generators/odoc_literate.ml" 84 3200 3261
+type(
+  Odoc_info.Name.t -> Odoc_info.Name.t
+)
+ident(
+  ext_ref Odoc_info.Name.father
+)
+"generators/odoc_literate.ml" 84 3200 3262 "generators/odoc_literate.ml" 84 3200 3263
+type(
+  Odoc_info.Value.t_value
+)
+ident(
+  int_ref v "generators/odoc_literate.ml" 68 2632 2667 "generators/odoc_literate.ml" 68 2632 2668
+)
+"generators/odoc_literate.ml" 84 3200 3262 "generators/odoc_literate.ml" 84 3200 3272
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_literate.ml" 84 3200 3249 "generators/odoc_literate.ml" 84 3200 3273
+call(
+  stack
+)
+type(
+  Odoc_info.Name.t
+)
+"generators/odoc_literate.ml" 84 3200 3274 "generators/odoc_literate.ml" 84 3200 3275
+type(
+  Odoc_info.Value.t_value
+)
+ident(
+  int_ref v "generators/odoc_literate.ml" 68 2632 2667 "generators/odoc_literate.ml" 68 2632 2668
+)
+"generators/odoc_literate.ml" 84 3200 3274 "generators/odoc_literate.ml" 84 3200 3290
+type(
+  Odoc_info.Parameter.parameter list
+)
+"generators/odoc_literate.ml" 84 3200 3209 "generators/odoc_literate.ml" 84 3200 3290
+type(
+  unit
+)
+"generators/odoc_literate.ml" 80 3053 3059 "generators/odoc_literate.ml" 85 3291 3298
+type(
+  unit
+)
+"generators/odoc_literate.ml" 87 3308 3321 "generators/odoc_literate.ml" 87 3308 3322
+type(
+  Odoc_info.Value.t_value
+)
+ident(
+  int_ref v "generators/odoc_literate.ml" 68 2632 2667 "generators/odoc_literate.ml" 68 2632 2668
+)
+"generators/odoc_literate.ml" 87 3308 3321 "generators/odoc_literate.ml" 87 3308 3331
+type(
+  string option
+)
+"generators/odoc_literate.ml" 88 3337 3346 "generators/odoc_literate.ml" 88 3337 3350
+type(
+  string option
+)
+"generators/odoc_literate.ml" 88 3337 3354 "generators/odoc_literate.ml" 88 3337 3356
+type(
+  unit
+)
+"generators/odoc_literate.ml" 89 3357 3371 "generators/odoc_literate.ml" 89 3357 3375
+type(
+  string
+)
+ident(
+  def code "generators/odoc_literate.ml" 90 3379 3390 "generators/odoc_literate.ml" 90 3379 3412
+)
+"generators/odoc_literate.ml" 89 3357 3366 "generators/odoc_literate.ml" 89 3357 3375
+type(
+  string option
+)
+"generators/odoc_literate.ml" 90 3379 3390 "generators/odoc_literate.ml" 90 3379 3394
+type(
+  'b
+)
+ident(
+  int_ref self "generators/odoc_literate.ml" 37 1380 1389 "generators/odoc_literate.ml" 37 1380 1395
+)
+"generators/odoc_literate.ml" 90 3379 3390 "generators/odoc_literate.ml" 90 3379 3405
+call(
+  tail
+)
+type(
+  Buffer.t -> Odoc_info.Name.t -> unit
+)
+"generators/odoc_literate.ml" 90 3379 3406 "generators/odoc_literate.ml" 90 3379 3407
+type(
+  Buffer.t
+)
+ident(
+  int_ref b "generators/odoc_literate.ml" 68 2632 2665 "generators/odoc_literate.ml" 68 2632 2666
+)
+"generators/odoc_literate.ml" 90 3379 3408 "generators/odoc_literate.ml" 90 3379 3412
+type(
+  Odoc_info.Name.t
+)
+ident(
+  int_ref code "generators/odoc_literate.ml" 89 3357 3371 "generators/odoc_literate.ml" 89 3357 3375
+)
+"generators/odoc_literate.ml" 90 3379 3390 "generators/odoc_literate.ml" 90 3379 3412
+type(
+  unit
+)
+"generators/odoc_literate.ml" 86 3300 3306 "generators/odoc_literate.ml" 91 3413 3420
+type(
+  unit
+)
+"generators/odoc_literate.ml" 80 3053 3059 "generators/odoc_literate.ml" 91 3413 3420
+type(
+  unit
+)
+"generators/odoc_literate.ml" 79 3032 3038 "generators/odoc_literate.ml" 91 3413 3420
+type(
+  unit
+)
+"generators/odoc_literate.ml" 78 2964 2970 "generators/odoc_literate.ml" 91 3413 3420
+type(
+  unit
+)
+"generators/odoc_literate.ml" 77 2946 2952 "generators/odoc_literate.ml" 91 3413 3420
+type(
+  unit
+)
+"generators/odoc_literate.ml" 76 2895 2901 "generators/odoc_literate.ml" 91 3413 3420
+type(
+  unit
+)
+"generators/odoc_literate.ml" 75 2837 2843 "generators/odoc_literate.ml" 91 3413 3420
+type(
+  unit
+)
+"generators/odoc_literate.ml" 73 2799 2805 "generators/odoc_literate.ml" 91 3413 3420
+type(
+  unit
+)
+"generators/odoc_literate.ml" 72 2766 2772 "generators/odoc_literate.ml" 91 3413 3420
+type(
+  unit
+)
+"generators/odoc_literate.ml" 71 2746 2752 "generators/odoc_literate.ml" 91 3413 3420
+type(
+  unit
+)
+"generators/odoc_literate.ml" 70 2708 2714 "generators/odoc_literate.ml" 91 3413 3420
+type(
+  unit
+)
+"generators/odoc_literate.ml" 69 2671 2677 "generators/odoc_literate.ml" 91 3413 3420
+type(
+  unit
+)
+"generators/odoc_literate.ml" 123 4324 4333 "generators/odoc_literate.ml" 123 4324 4388
+type(
+  string
+)
+"generators/odoc_literate.ml" 124 4391 4401 "generators/odoc_literate.ml" 124 4391 4452
+type(
+  string
+)
+"generators/odoc_literate.ml" 125 4455 4465 "generators/odoc_literate.ml" 125 4455 4539
+type(
+  string
+)
+"generators/odoc_literate.ml" 126 4542 4552 "generators/odoc_literate.ml" 126 4542 4607
+type(
+  string
+)
+"generators/odoc_literate.ml" 127 4610 4620 "generators/odoc_literate.ml" 127 4610 4667
+type(
+  string
+)
+"generators/odoc_literate.ml" 128 4670 4680 "generators/odoc_literate.ml" 128 4670 4714
+type(
+  string
+)
+"generators/odoc_literate.ml" 129 4717 4727 "generators/odoc_literate.ml" 129 4717 4763
+type(
+  string
+)
+"generators/odoc_literate.ml" 130 4766 4776 "generators/odoc_literate.ml" 130 4766 4810
+type(
+  string
+)
+"generators/odoc_literate.ml" 131 4813 4823 "generators/odoc_literate.ml" 131 4813 4851
+type(
+  string
+)
+"generators/odoc_literate.ml" 132 4854 4864 "generators/odoc_literate.ml" 132 4854 4895
+type(
+  string
+)
+"generators/odoc_literate.ml" 133 4898 4908 "generators/odoc_literate.ml" 133 4898 4935
+type(
+  string
+)
+"generators/odoc_literate.ml" 134 4938 4948 "generators/odoc_literate.ml" 134 4938 4976
+type(
+  string
+)
+"generators/odoc_literate.ml" 135 4979 4989 "generators/odoc_literate.ml" 135 4979 5036
+type(
+  string
+)
+"generators/odoc_literate.ml" 136 5039 5049 "generators/odoc_literate.ml" 136 5039 5077
+type(
+  string
+)
+"generators/odoc_literate.ml" 137 5079 5089 "generators/odoc_literate.ml" 137 5079 5161
+type(
+  string
+)
+"generators/odoc_literate.ml" 138 5164 5174 "generators/odoc_literate.ml" 138 5164 5203
+type(
+  string
+)
+"generators/odoc_literate.ml" 139 5206 5216 "generators/odoc_literate.ml" 139 5206 5263
+type(
+  string
+)
+"generators/odoc_literate.ml" 141 5267 5277 "generators/odoc_literate.ml" 141 5267 5330
+type(
+  string
+)
+"generators/odoc_literate.ml" 141 5267 5330 "generators/odoc_literate.ml" 141 5267 5331
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 142 5332 5344 "generators/odoc_literate.ml" 142 5332 5382
+type(
+  string
+)
+"generators/odoc_literate.ml" 142 5332 5382 "generators/odoc_literate.ml" 142 5332 5383
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 143 5384 5396 "generators/odoc_literate.ml" 143 5384 5445
+type(
+  string
+)
+"generators/odoc_literate.ml" 143 5384 5445 "generators/odoc_literate.ml" 143 5384 5446
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 144 5447 5459 "generators/odoc_literate.ml" 144 5447 5476
+type(
+  string
+)
+"generators/odoc_literate.ml" 143 5384 5396 "generators/odoc_literate.ml" 144 5447 5476
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 142 5332 5344 "generators/odoc_literate.ml" 144 5447 5476
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 141 5267 5277 "generators/odoc_literate.ml" 144 5447 5476
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 146 5480 5490 "generators/odoc_literate.ml" 146 5480 5543
+type(
+  string
+)
+"generators/odoc_literate.ml" 146 5480 5543 "generators/odoc_literate.ml" 146 5480 5544
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 147 5545 5557 "generators/odoc_literate.ml" 147 5545 5595
+type(
+  string
+)
+"generators/odoc_literate.ml" 147 5545 5595 "generators/odoc_literate.ml" 147 5545 5596
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 148 5597 5609 "generators/odoc_literate.ml" 148 5597 5658
+type(
+  string
+)
+"generators/odoc_literate.ml" 148 5597 5658 "generators/odoc_literate.ml" 148 5597 5659
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 149 5660 5672 "generators/odoc_literate.ml" 149 5660 5689
+type(
+  string
+)
+"generators/odoc_literate.ml" 148 5597 5609 "generators/odoc_literate.ml" 149 5660 5689
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 147 5545 5557 "generators/odoc_literate.ml" 149 5660 5689
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 146 5480 5490 "generators/odoc_literate.ml" 149 5660 5689
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 151 5693 5703 "generators/odoc_literate.ml" 151 5693 5756
+type(
+  string
+)
+"generators/odoc_literate.ml" 151 5693 5756 "generators/odoc_literate.ml" 151 5693 5757
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 152 5758 5770 "generators/odoc_literate.ml" 152 5758 5808
+type(
+  string
+)
+"generators/odoc_literate.ml" 152 5758 5808 "generators/odoc_literate.ml" 152 5758 5809
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 153 5810 5822 "generators/odoc_literate.ml" 153 5810 5871
+type(
+  string
+)
+"generators/odoc_literate.ml" 153 5810 5871 "generators/odoc_literate.ml" 153 5810 5872
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 154 5873 5885 "generators/odoc_literate.ml" 154 5873 5902
+type(
+  string
+)
+"generators/odoc_literate.ml" 153 5810 5822 "generators/odoc_literate.ml" 154 5873 5902
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 152 5758 5770 "generators/odoc_literate.ml" 154 5873 5902
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 151 5693 5703 "generators/odoc_literate.ml" 154 5873 5902
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 156 5906 5916 "generators/odoc_literate.ml" 156 5906 5969
+type(
+  string
+)
+"generators/odoc_literate.ml" 156 5906 5969 "generators/odoc_literate.ml" 156 5906 5970
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 157 5971 5983 "generators/odoc_literate.ml" 157 5971 6021
+type(
+  string
+)
+"generators/odoc_literate.ml" 157 5971 6021 "generators/odoc_literate.ml" 157 5971 6022
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 158 6023 6035 "generators/odoc_literate.ml" 158 6023 6084
+type(
+  string
+)
+"generators/odoc_literate.ml" 158 6023 6084 "generators/odoc_literate.ml" 158 6023 6085
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 159 6086 6098 "generators/odoc_literate.ml" 159 6086 6115
+type(
+  string
+)
+"generators/odoc_literate.ml" 158 6023 6035 "generators/odoc_literate.ml" 159 6086 6115
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 157 5971 5983 "generators/odoc_literate.ml" 159 6086 6115
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 156 5906 5916 "generators/odoc_literate.ml" 159 6086 6115
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 161 6119 6129 "generators/odoc_literate.ml" 161 6119 6182
+type(
+  string
+)
+"generators/odoc_literate.ml" 161 6119 6182 "generators/odoc_literate.ml" 161 6119 6183
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 162 6184 6196 "generators/odoc_literate.ml" 162 6184 6234
+type(
+  string
+)
+"generators/odoc_literate.ml" 162 6184 6234 "generators/odoc_literate.ml" 162 6184 6235
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 163 6236 6248 "generators/odoc_literate.ml" 163 6236 6298
+type(
+  string
+)
+"generators/odoc_literate.ml" 163 6236 6298 "generators/odoc_literate.ml" 163 6236 6299
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 164 6300 6312 "generators/odoc_literate.ml" 164 6300 6329
+type(
+  string
+)
+"generators/odoc_literate.ml" 163 6236 6248 "generators/odoc_literate.ml" 164 6300 6329
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 162 6184 6196 "generators/odoc_literate.ml" 164 6300 6329
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 161 6119 6129 "generators/odoc_literate.ml" 164 6300 6329
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 166 6333 6343 "generators/odoc_literate.ml" 166 6333 6400
+type(
+  string
+)
+"generators/odoc_literate.ml" 166 6333 6400 "generators/odoc_literate.ml" 166 6333 6401
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 167 6402 6414 "generators/odoc_literate.ml" 167 6402 6452
+type(
+  string
+)
+"generators/odoc_literate.ml" 167 6402 6452 "generators/odoc_literate.ml" 167 6402 6453
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 168 6454 6466 "generators/odoc_literate.ml" 168 6454 6516
+type(
+  string
+)
+"generators/odoc_literate.ml" 168 6454 6516 "generators/odoc_literate.ml" 168 6454 6517
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 169 6518 6530 "generators/odoc_literate.ml" 169 6518 6547
+type(
+  string
+)
+"generators/odoc_literate.ml" 168 6454 6466 "generators/odoc_literate.ml" 169 6518 6547
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 167 6402 6414 "generators/odoc_literate.ml" 169 6518 6547
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 166 6333 6343 "generators/odoc_literate.ml" 169 6518 6547
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 171 6551 6561 "generators/odoc_literate.ml" 171 6551 6618
+type(
+  string
+)
+"generators/odoc_literate.ml" 171 6551 6618 "generators/odoc_literate.ml" 171 6551 6619
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 172 6620 6632 "generators/odoc_literate.ml" 172 6620 6670
+type(
+  string
+)
+"generators/odoc_literate.ml" 172 6620 6670 "generators/odoc_literate.ml" 172 6620 6671
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 173 6672 6684 "generators/odoc_literate.ml" 173 6672 6734
+type(
+  string
+)
+"generators/odoc_literate.ml" 173 6672 6734 "generators/odoc_literate.ml" 173 6672 6735
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 174 6736 6748 "generators/odoc_literate.ml" 174 6736 6765
+type(
+  string
+)
+"generators/odoc_literate.ml" 173 6672 6684 "generators/odoc_literate.ml" 174 6736 6765
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 172 6620 6632 "generators/odoc_literate.ml" 174 6736 6765
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 171 6551 6561 "generators/odoc_literate.ml" 174 6736 6765
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 176 6769 6779 "generators/odoc_literate.ml" 176 6769 6836
+type(
+  string
+)
+"generators/odoc_literate.ml" 176 6769 6836 "generators/odoc_literate.ml" 176 6769 6837
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 177 6838 6850 "generators/odoc_literate.ml" 177 6838 6888
+type(
+  string
+)
+"generators/odoc_literate.ml" 177 6838 6888 "generators/odoc_literate.ml" 177 6838 6889
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 178 6890 6902 "generators/odoc_literate.ml" 178 6890 6952
+type(
+  string
+)
+"generators/odoc_literate.ml" 178 6890 6952 "generators/odoc_literate.ml" 178 6890 6953
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 179 6954 6966 "generators/odoc_literate.ml" 179 6954 6983
+type(
+  string
+)
+"generators/odoc_literate.ml" 178 6890 6902 "generators/odoc_literate.ml" 179 6954 6983
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 177 6838 6850 "generators/odoc_literate.ml" 179 6954 6983
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 176 6769 6779 "generators/odoc_literate.ml" 179 6954 6983
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 181 6987 6997 "generators/odoc_literate.ml" 181 6987 7035
+type(
+  string
+)
+"generators/odoc_literate.ml" 182 7038 7048 "generators/odoc_literate.ml" 182 7038 7087
+type(
+  string
+)
+"generators/odoc_literate.ml" 183 7090 7100 "generators/odoc_literate.ml" 183 7090 7158
+type(
+  string
+)
+"generators/odoc_literate.ml" 184 7161 7171 "generators/odoc_literate.ml" 184 7161 7206
+type(
+  string
+)
+"generators/odoc_literate.ml" 185 7209 7219 "generators/odoc_literate.ml" 185 7209 7252
+type(
+  string
+)
+"generators/odoc_literate.ml" 186 7255 7265 "generators/odoc_literate.ml" 186 7255 7339
+type(
+  string
+)
+"generators/odoc_literate.ml" 187 7342 7352 "generators/odoc_literate.ml" 187 7342 7399
+type(
+  string
+)
+"generators/odoc_literate.ml" 187 7342 7399 "generators/odoc_literate.ml" 187 7342 7400
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 188 7401 7413 "generators/odoc_literate.ml" 188 7401 7459
+type(
+  string
+)
+"generators/odoc_literate.ml" 188 7401 7459 "generators/odoc_literate.ml" 188 7401 7460
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 189 7461 7473 "generators/odoc_literate.ml" 189 7461 7506
+type(
+  string
+)
+"generators/odoc_literate.ml" 189 7461 7506 "generators/odoc_literate.ml" 189 7461 7507
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 190 7508 7520 "generators/odoc_literate.ml" 190 7508 7537
+type(
+  string
+)
+"generators/odoc_literate.ml" 189 7461 7473 "generators/odoc_literate.ml" 190 7508 7537
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 188 7401 7413 "generators/odoc_literate.ml" 190 7508 7537
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 187 7342 7352 "generators/odoc_literate.ml" 190 7508 7537
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 191 7540 7550 "generators/odoc_literate.ml" 191 7540 7584
+type(
+  string
+)
+"generators/odoc_literate.ml" 193 7588 7598 "generators/odoc_literate.ml" 193 7588 7616
+type(
+  string
+)
+"generators/odoc_literate.ml" 193 7588 7616 "generators/odoc_literate.ml" 193 7588 7617
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 194 7618 7630 "generators/odoc_literate.ml" 194 7618 7683
+type(
+  string
+)
+"generators/odoc_literate.ml" 194 7618 7683 "generators/odoc_literate.ml" 194 7618 7684
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 195 7685 7697 "generators/odoc_literate.ml" 195 7685 7734
+type(
+  string
+)
+"generators/odoc_literate.ml" 195 7685 7734 "generators/odoc_literate.ml" 195 7685 7735
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 196 7736 7748 "generators/odoc_literate.ml" 196 7736 7823
+type(
+  string
+)
+"generators/odoc_literate.ml" 195 7685 7697 "generators/odoc_literate.ml" 196 7736 7823
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 194 7618 7630 "generators/odoc_literate.ml" 196 7736 7823
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 193 7588 7598 "generators/odoc_literate.ml" 196 7736 7823
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 198 7827 7837 "generators/odoc_literate.ml" 198 7827 7916
+type(
+  string
+)
+"generators/odoc_literate.ml" 198 7827 7916 "generators/odoc_literate.ml" 198 7827 7917
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"generators/odoc_literate.ml" 199 7918 7928 "generators/odoc_literate.ml" 199 7918 7951
+type(
+  string
+)
+"generators/odoc_literate.ml" 198 7827 7837 "generators/odoc_literate.ml" 199 7918 7951
+call(
+  stack
+)
+type(
+  string
+)
+"generators/odoc_literate.ml" 123 4324 4332 "generators/odoc_literate.ml" 200 7953 7962
+type(
+  string list
+)
+"generators/odoc_literate.ml" 122 4293 4299 "generators/odoc_literate.ml" 200 7953 7963
+type(
+  'b -> unit
+)
+type(
+  unit
+)
+"generators/odoc_literate.ml" 204 7975 7983 "generators/odoc_literate.ml" 204 7975 8006
+type(
+  Odoc_gen.generator -> unit
+)
+ident(
+  ext_ref Odoc_args.set_generator
+)
+"generators/odoc_literate.ml" 205 8007 8008 "generators/odoc_literate.ml" 205 8007 8069
+type(
+  Odoc_gen.generator
+)
+"generators/odoc_literate.ml" 204 7975 7983 "generators/odoc_literate.ml" 205 8007 8069
+call(
+  stack
+)
+type(
+  unit
+)
