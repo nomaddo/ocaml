@@ -28,7 +28,7 @@ val output_c_object : bool ref
 val all_ccopts : string list ref
 val classic : bool ref
 val nopervasives : bool ref
-val open_module : string list ref
+val open_modules : string list ref
 val preprocessor : string option ref
 val all_ppx : string list ref
 val annotations : bool ref
@@ -47,6 +47,7 @@ val principal : bool ref
 val real_paths : bool ref
 val recursive_types : bool ref
 val strict_sequence : bool ref
+val strict_formats : bool ref
 val applicative_functors : bool ref
 val make_runtime : bool ref
 val gprofile : bool ref
@@ -94,3 +95,4 @@ val keep_locs : bool ref
 val unsafe_string : bool ref
 
 val mydump : bool ref (* -mydump. tokuda added *)
+val opaque : bool ref
