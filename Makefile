@@ -17,8 +17,8 @@ include stdlib/StdlibModules
 
 CAMLC=boot/ocamlrun boot/ocamlc -nostdlib -I boot -g
 CAMLOPT=boot/ocamlrun ./ocamlopt -nostdlib -I stdlib -I otherlibs/dynlink -g
-# [tokuda] [XXX] add "-26" to not stop compiling
-COMPFLAGS=-strict-sequence -w +33..39+48 -warn-error A-26 -bin-annot \
+# [tokuda] [XXX] add "-3-26" to not stop compiling
+COMPFLAGS=-strict-sequence -w +33..39+48 -warn-error A-3-26 -bin-annot \
           -safe-string $(INCLUDES)
 LINKFLAGS=
 

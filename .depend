@@ -1111,14 +1111,14 @@ tools/depend.cmo : parsing/parsetree.cmi utils/misc.cmi \
 tools/depend.cmx : parsing/parsetree.cmi utils/misc.cmx \
     parsing/longident.cmx parsing/location.cmx parsing/asttypes.cmi \
     tools/depend.cmi
-tools/dumpobj.cmo : utils/tbl.cmi tools/opnames.cmo bytecomp/opcodes.cmo \
-    parsing/location.cmi bytecomp/lambda.cmi bytecomp/instruct.cmi \
-    typing/ident.cmi utils/config.cmi bytecomp/cmo_format.cmi \
-    bytecomp/bytesections.cmi parsing/asttypes.cmi
-tools/dumpobj.cmx : utils/tbl.cmx tools/opnames.cmx bytecomp/opcodes.cmx \
-    parsing/location.cmx bytecomp/lambda.cmx bytecomp/instruct.cmx \
-    typing/ident.cmx utils/config.cmx bytecomp/cmo_format.cmi \
-    bytecomp/bytesections.cmx parsing/asttypes.cmi
+tools/dumpobj.cmo : utils/tbl.cmi bytecomp/opcodes.cmo parsing/location.cmi \
+    bytecomp/lambda.cmi bytecomp/instruct.cmi typing/ident.cmi \
+    utils/config.cmi bytecomp/cmo_format.cmi bytecomp/bytesections.cmi \
+    parsing/asttypes.cmi
+tools/dumpobj.cmx : utils/tbl.cmx bytecomp/opcodes.cmx parsing/location.cmx \
+    bytecomp/lambda.cmx bytecomp/instruct.cmx typing/ident.cmx \
+    utils/config.cmx bytecomp/cmo_format.cmi bytecomp/bytesections.cmx \
+    parsing/asttypes.cmi
 tools/eqparsetree.cmo : parsing/parsetree.cmi parsing/longident.cmi \
     parsing/location.cmi parsing/asttypes.cmi
 tools/eqparsetree.cmx : parsing/parsetree.cmi parsing/longident.cmx \
@@ -1139,10 +1139,8 @@ tools/ocamldep.cmo : driver/pparse.cmi parsing/parsetree.cmi \
 tools/ocamldep.cmx : driver/pparse.cmx parsing/parsetree.cmi \
     parsing/parse.cmx utils/misc.cmx parsing/location.cmx tools/depend.cmx \
     utils/config.cmx driver/compenv.cmx utils/clflags.cmx
-tools/ocamlmklib.cmo : tools/ocamlmklibconfig.cmo
-tools/ocamlmklib.cmx : tools/ocamlmklibconfig.cmx
-tools/ocamlmklibconfig.cmo :
-tools/ocamlmklibconfig.cmx :
+tools/ocamlmklib.cmo :
+tools/ocamlmklib.cmx :
 tools/ocamlmktop.cmo : utils/ccomp.cmi
 tools/ocamlmktop.cmx : utils/ccomp.cmx
 tools/ocamloptp.cmo : driver/main_args.cmi
@@ -1151,8 +1149,6 @@ tools/ocamlprof.cmo : utils/warnings.cmi parsing/parsetree.cmi \
     parsing/parse.cmi parsing/location.cmi
 tools/ocamlprof.cmx : utils/warnings.cmx parsing/parsetree.cmi \
     parsing/parse.cmx parsing/location.cmx
-tools/opnames.cmo :
-tools/opnames.cmx :
 tools/primreq.cmo : utils/config.cmi bytecomp/cmo_format.cmi
 tools/primreq.cmx : utils/config.cmx bytecomp/cmo_format.cmi
 tools/profiling.cmo : tools/profiling.cmi
