@@ -232,7 +232,11 @@ and expression context exp =
               let lidentloc = name_mangle lidentloc suffix in
               Texp_ident (path, lidentloc, vdesc)
           with Fail_to_unify | Poly_variant -> Texp_ident (path, lidentloc, vdesc)
-
+             | exn -> begin     (* XXX: fix immediately *)
+                 Printf.eprintf "expression: unexpected exception\n";
+                 Location.print Format.std_formatter lidentloc.Asttypes.loc;
+                 Texp_ident (path, lidentloc, vdesc)
+               end
         end
       | Texp_let (rec_flag, vbs, exp) ->
         let new_vbs, new_contexts = List.map (value_binding context) vbs

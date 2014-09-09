@@ -70,7 +70,8 @@ COMP=bytecomp/lambda.cmo bytecomp/printlambda.cmo \
   bytecomp/translclass.cmo bytecomp/translmod.cmo \
   bytecomp/simplif.cmo bytecomp/runtimedef.cmo \
   driver/pparse.cmo driver/main_args.cmo \
-  driver/compenv.cmo driver/compmisc.cmo
+  driver/compenv.cmo driver/compmisc.cmo \
+  driver/dupfun.cmo driver/rename_ident.cmo
 
 COMMON=$(UTILS) $(PARSING) $(TYPING) $(COMP) tools/untypeast.cmo
 
@@ -78,7 +79,7 @@ BYTECOMP=bytecomp/meta.cmo bytecomp/instruct.cmo bytecomp/bytegen.cmo \
   bytecomp/printinstr.cmo bytecomp/opcodes.cmo bytecomp/emitcode.cmo \
   bytecomp/bytesections.cmo bytecomp/dll.cmo bytecomp/symtable.cmo \
   bytecomp/bytelink.cmo bytecomp/bytelibrarian.cmo bytecomp/bytepackager.cmo \
-  driver/errors.cmo driver/dupfun.cmo driver/rename_ident.cmo driver/compile.cmo
+  driver/errors.cmo driver/compile.cmo
 
 ASMCOMP=asmcomp/arch.cmo asmcomp/debuginfo.cmo \
   asmcomp/cmm.cmo asmcomp/printcmm.cmo \
@@ -97,8 +98,7 @@ ASMCOMP=asmcomp/arch.cmo asmcomp/debuginfo.cmo \
   asmcomp/schedgen.cmo asmcomp/scheduling.cmo \
   asmcomp/emitaux.cmo asmcomp/emit.cmo asmcomp/asmgen.cmo \
   asmcomp/asmlink.cmo asmcomp/asmlibrarian.cmo asmcomp/asmpackager.cmo \
-  driver/opterrors.cmo \
-  driver/dupfun.cmo driver/rename_ident.cmo driver/optcompile.cmo
+  driver/opterrors.cmo driver/optcompile.cmo
 
 TOPLEVEL=toplevel/genprintval.cmo toplevel/toploop.cmo \
   toplevel/trace.cmo toplevel/topdirs.cmo toplevel/topmain.cmo
@@ -500,7 +500,7 @@ partialclean::
 # The bytecode compiler compiled with the native-code compiler
 
 compilerlibs/ocamlbytecomp.cmxa: $(ASMCOMP:.cmo=.cmx) $(BYTECOMP:.cmo=.cmx)
-	$(CAMLOPT) -a -o $@ $(BYTECOMP:.cmo=.cmx)
+	$(CAMLOPT) -a -o $@ $(ASMCOMP:.cmo=.cmx) $(BYTECOMP:.cmo=.cmx)
 partialclean::
 	rm -f compilerlibs/ocamlbytecomp.cmxa compilerlibs/ocamlbytecomp.a
 
