@@ -1,3 +1,9 @@
+## 2014年  9月  9日 火曜日 21:00:00 JST
+make opt.optのときだけインターフェイスを作りなおすのは無理だという結論
+ocamlcを改造しようとしてるがrename_ident.mlまわりのバグに出会う
+モウダメ
+
+
 ## 2014年  8月 30日 土曜日 09:30:05 JST
 [http://qiita.com/xtetsuji/items/555a1ef19ed21ee42873](upstreamの設定)
 

@@ -185,7 +185,8 @@ let name_inference context (id, optty) =
       end
     | _ -> begin
         Format.eprintf "error. Unexpedted type [%a]@." Printtyp.type_expr ty;
-        assert(false)
+        I                       (* XXX : fix me *)
+        (* assert(false) *)
       end in
   match optty with
   | None -> I

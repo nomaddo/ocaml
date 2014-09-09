@@ -21,6 +21,19 @@ open Compenv
 
 (* Keep in sync with the copy in optcompile.ml *)
 
+module Dup_debug_flag = struct
+  let moded_t = false             (* affect compile.ml and optcompile.ml *)
+  let fun_trace = false           (* affect mod.ml *)
+  let var_trace = false           (* affect mod.ml *)
+  let too_big = true              (* affect mod.ml *)
+  let dup_fun_table = false       (* affect mod.ml *)
+  let stage_debug = false         (* affect compile and optcompile *)
+  let unification_result = false  (* affect dmod.ml *)
+  let dmod_stack_flag = false      (* affect dmod.ml *)
+  let dmod_dup_fun_table = false   (* affect dmod.ml *)
+  let inference = false           (* affect dmod.ml *)
+end
+
 let tool_name = "ocamlc"
 
 let interface ppf sourcefile outputprefix =
@@ -56,7 +69,9 @@ let print_if ppf flag printer arg =
 let (++) x f = f x
 
 let implementation ppf sourcefile outputprefix =
+  print_endline "kaizou ocamlc";
   Compmisc.init_path false;
+  Clflags.mydump := false;
   let modulename = module_of_filename ppf sourcefile outputprefix in
   Env.set_unit_name modulename;
   let env = Compmisc.initial_env() in
@@ -83,7 +98,29 @@ let implementation ppf sourcefile outputprefix =
       ast
       ++ print_if ppf Clflags.dump_parsetree Printast.implementation
       ++ print_if ppf Clflags.dump_source Pprintast.structure
+      (* [begin tokuda] *)
+      ++ (fun ptree ->
+          if !Clflags.mydump then
+            Format.eprintf "[begin tokuda]\n%a\n[end tokuda]@."
+              Pprintast.structure ptree;
+          ptree)
+      (* [end tokuda] *)
       ++ Typemod.type_implementation sourcefile outputprefix modulename env
+
+      (* [begin tokuda] do the duplication *)
+      ++ (fun (typedtree, module_corcion) ->
+          Dupfun.structure typedtree |> Rename_ident.structure, module_corcion)
+      (* [end tokuda] *)
+      (* untyping and 2nd typing *)
+      ++ (fun (tree, _) ->
+          let ptree = Untypeast.untype_structure tree in
+          (* [XXX] which of these initialiations are necessary? *)
+          Compmisc.init_path false;
+          Env.set_unit_name modulename;
+          let env = Compmisc.initial_env () in
+          Compilenv.reset ?packname:!Clflags.for_package modulename;
+          Typemod.type_implementation sourcefile outputprefix modulename env ptree
+        )
       ++ print_if ppf Clflags.dump_typedtree
                   Printtyped.implementation_with_coercion
       ++ Translmod.transl_implementation modulename

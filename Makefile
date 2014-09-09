@@ -18,7 +18,7 @@ include stdlib/StdlibModules
 CAMLC=boot/ocamlrun boot/ocamlc -nostdlib -I boot -g
 CAMLOPT=boot/ocamlrun ./ocamlopt -nostdlib -I stdlib -I otherlibs/dynlink -g
 # [tokuda] [XXX] add "-3-26" to not stop compiling
-COMPFLAGS=-strict-sequence -w +33..39+48 -warn-error A-3-26 -bin-annot \
+COMPFLAGS=-strict-sequence -w +33..39+48 -warn-error A-3-26-32 -bin-annot \
           -safe-string $(INCLUDES)
 LINKFLAGS=
 
@@ -78,7 +78,7 @@ BYTECOMP=bytecomp/meta.cmo bytecomp/instruct.cmo bytecomp/bytegen.cmo \
   bytecomp/printinstr.cmo bytecomp/opcodes.cmo bytecomp/emitcode.cmo \
   bytecomp/bytesections.cmo bytecomp/dll.cmo bytecomp/symtable.cmo \
   bytecomp/bytelink.cmo bytecomp/bytelibrarian.cmo bytecomp/bytepackager.cmo \
-  driver/errors.cmo driver/compile.cmo
+  driver/errors.cmo driver/dupfun.cmo driver/rename_ident.cmo driver/compile.cmo
 
 ASMCOMP=asmcomp/arch.cmo asmcomp/debuginfo.cmo \
   asmcomp/cmm.cmo asmcomp/printcmm.cmo \
@@ -380,8 +380,8 @@ partialclean::
 
 # The bytecode compiler
 
-compilerlibs/ocamlbytecomp.cma: $(BYTECOMP)
-	$(CAMLC) -a -o $@ $(BYTECOMP)
+compilerlibs/ocamlbytecomp.cma: $(ASMCOMP) $(BYTECOMP)
+	$(CAMLC) -a -o $@ $(ASMCOMP) $(BYTECOMP)
 partialclean::
 	rm -f compilerlibs/ocamlbytecomp.cma
 
@@ -499,7 +499,7 @@ partialclean::
 
 # The bytecode compiler compiled with the native-code compiler
 
-compilerlibs/ocamlbytecomp.cmxa: $(BYTECOMP:.cmo=.cmx)
+compilerlibs/ocamlbytecomp.cmxa: $(ASMCOMP:.cmo=.cmx) $(BYTECOMP:.cmo=.cmx)
 	$(CAMLOPT) -a -o $@ $(BYTECOMP:.cmo=.cmx)
 partialclean::
 	rm -f compilerlibs/ocamlbytecomp.cmxa compilerlibs/ocamlbytecomp.a
