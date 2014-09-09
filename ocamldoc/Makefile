@@ -16,8 +16,8 @@ include ../config/Makefile
 ##########################
 ROOTDIR   = ..
 OCAMLRUN  = $(ROOTDIR)/boot/ocamlrun
-OCAMLC    = $(OCAMLRUN) $(ROOTDIR)/ocamlc -nostdlib -I $(ROOTDIR)/stdlib
-OCAMLOPT  = $(OCAMLRUN) $(ROOTDIR)/ocamlopt -nostdlib -I $(ROOTDIR)/stdlib
+OCAMLC    = $(OCAMLRUN) $(ROOTDIR)/ocamlc -nostdlib -g -I $(ROOTDIR)/stdlib
+OCAMLOPT  = $(OCAMLRUN) $(ROOTDIR)/ocamlopt -nostdlib -g -I $(ROOTDIR)/stdlib
 OCAMLDEP  = $(OCAMLRUN) $(ROOTDIR)/tools/ocamldep
 OCAMLLEX  = $(OCAMLRUN) $(ROOTDIR)/boot/ocamllex
 OCAMLYACC = $(ROOTDIR)/yacc/ocamlyacc
@@ -76,8 +76,8 @@ INCLUDES_NODEP=	-I $(OCAMLSRCDIR)/stdlib \
 
 INCLUDES=$(INCLUDES_DEP) $(INCLUDES_NODEP)
 
-COMPFLAGS=$(INCLUDES) -warn-error A-3-26 -safe-string # [tokuda] [XXX] fix untypeast.ml so that this "-26" is not required?
-LINKFLAGS=$(INCLUDES) -nostdlib
+COMPFLAGS=$(INCLUDES) -warn-error A-3-26-32 -safe-string # [tokuda] [XXX] fix untypeast.ml so that this "-26" is not required?
+LINKFLAGS=$(INCLUDES) -nostdlib -g
 
 CMOFILES= odoc_config.cmo \
 	odoc_messages.cmo\

@@ -129,7 +129,7 @@ in an
 .BR emacs (1)
 window.
 .TP
-.B \-nostdlib
+.B \-nostdlib -g
 Do not include the standard library directory in the list of
 directories searched for source and compiled files.
 .TP

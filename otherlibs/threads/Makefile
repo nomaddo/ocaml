@@ -16,10 +16,10 @@ include ../../config/Makefile
 CC=$(BYTECC)
 CFLAGS=-I../../byterun -O $(BYTECCCOMPOPTS) $(SHAREDCCCOMPOPTS) -g
 ROOTDIR=../..
-CAMLC=$(ROOTDIR)/boot/ocamlrun $(ROOTDIR)/ocamlc -nostdlib \
+CAMLC=$(ROOTDIR)/boot/ocamlrun $(ROOTDIR)/ocamlc -nostdlib -g \
       -I $(ROOTDIR)/stdlib -I $(ROOTDIR)/otherlibs/unix
 MKLIB=../../boot/ocamlrun ../../tools/ocamlmklib
-COMPFLAGS=-w +33..39 -warn-error A-3-26 -bin-annot -safe-string
+COMPFLAGS=-w +33..39 -warn-error A-3-26-32 -bin-annot -safe-string
 
 C_OBJS=scheduler.o
 
