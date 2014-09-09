@@ -27,8 +27,8 @@ module Dup_debug_flag = struct
   let dup_fun_table = false       (* affect mod.ml *)
   let stage_debug = false         (* affect compile and optcompile *)
   let unification_result = false  (* affect dmod.ml *)
-  let dmod_stack_flag = true      (* affect dmod.ml *)
-  let dmod_dup_fun_table = true   (* affect dmod.ml *)
+  let dmod_stack_flag = false      (* affect dmod.ml *)
+  let dmod_dup_fun_table = false   (* affect dmod.ml *)
   let inference = false           (* affect dmod.ml *)
 end
 (* [end tokuda] *)
@@ -74,6 +74,7 @@ let (+++) (x, y) f = (x, f y)
 
 let implementation ppf sourcefile outputprefix =
   Compmisc.init_path true;
+  Clflags.mydump := false;
   let modulename = module_of_filename ppf sourcefile outputprefix in
   Env.set_unit_name modulename;
   let env = Compmisc.initial_env() in
@@ -114,7 +115,7 @@ let implementation ppf sourcefile outputprefix =
           x)
       ++ (fun (str, module_coercion) -> (* for Dup_debug_flag.stage_debug *)
           let ptree = Untypeast.untype_structure str in
-          if true then
+          if !Clflags.mydump then
             Format.eprintf "[begin tokuda]\n%a\n[end tokuda]@."
               Pprintast.structure ptree;
           ptree)
