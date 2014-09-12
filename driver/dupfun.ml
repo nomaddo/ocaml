@@ -196,7 +196,7 @@ let rec value_binding freetyvars vb =
     if List.length gtyvars <= max_size
     then List.length gtyvars
     else begin
-      Format.eprintf "DEBGU: too big: %d@." @| List.length gtyvars;
+      Format.eprintf "DEBUG: too big: %d@." @| List.length gtyvars;
       List.iter2 (Format.eprintf "%s %d@.") names stamps;
       Format.eprintf "type: %s@." @| str_of_type ty;
       Format.eprintf "@.";

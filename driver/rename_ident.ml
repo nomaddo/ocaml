@@ -184,7 +184,7 @@ let name_inference context (id, optty) =
           end
       end
     | _ -> begin
-        Format.eprintf "error. Unexpedted type [%a]@." Printtyp.type_expr ty;
+        Format.eprintf "error: unexpected type [%a]@." Printtyp.type_expr ty;
         I                       (* XXX : fix me *)
         (* assert(false) *)
       end in
@@ -233,7 +233,7 @@ and expression context exp =
               Texp_ident (path, lidentloc, vdesc)
           with Fail_to_unify | Poly_variant -> Texp_ident (path, lidentloc, vdesc)
              | exn -> begin     (* XXX: fix immediately *)
-                 Printf.eprintf "expression: unexpected exception\n";
+                 Format.eprintf "expression: unexpected exception %s@." (Printexc.to_string exn);
                  Location.print Format.std_formatter lidentloc.Asttypes.loc;
                  Texp_ident (path, lidentloc, vdesc)
                end
