@@ -14,6 +14,7 @@
 
 type t = { stamp: int; name: string; mutable flags: int }
 
+val print: Format.formatter -> t -> unit
 val create: string -> t
 val create_persistent: string -> t
 val create_predef_exn: string -> t

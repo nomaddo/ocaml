@@ -1,3 +1,20 @@
+## 2014年  9月 13日 土曜日 20:24:26 JST
+../boot/ocamlrun ../ocamlopt -strict-sequence -w +33..39 -g -warn-error A-3-26-32 -bin-annot -nostdlib -safe-string `./Compflags camlinternalFormat.cmx` -c camlinternalFormat.ml
+
+## 2014年  9月 13日 土曜日 04:04:40 JST
+今まで見てなかった例外が起きる原因
+* unifyのTconstrのassertionが失敗する
+ocamlbuildのPathname.t と stringのunifyとか
+Pathname.tはmliファイルでシグニチャをincludeしており、
+その中にtype t = stringと書いてある
+なんでfull_expand_typeで展開してないのか
+
+* Path.headの例外
+見ている値では、Papplyの場合は現れないのだけど
+Path.lastで代用できる？（IDは手に入らない）
+IDがないとshadowingしていたりすると、一意に決まらない？
+
+
 ## 2014年  9月 10日 水曜日 00:04:41 JST
 ブートストラップ成功した
 そのためにrename_ident.mlを本来例外を投げて死ぬべきところを変更してある(234行目)

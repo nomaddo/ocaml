@@ -67,6 +67,16 @@ and commutable =
   | Cunknown
   | Clink of commutable ref
 
+let rec print_field_kind ppf = function
+  | Fvar optref ->
+      let p_optref ppf optref =
+        match !optref with
+        | None -> Format.fprintf ppf "None"
+        | Some e -> print_field_kind ppf e in
+      Format.fprintf ppf "Fvar (%a)" p_optref optref
+  | Fpresent -> Format.fprintf ppf "Fpresent"
+  | Fabsent ->  Format.fprintf ppf "Fabsent"
+
 module TypeOps = struct
   type t = type_expr
   let compare t1 t2 = t1.id - t2.id

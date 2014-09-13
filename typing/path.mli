@@ -17,6 +17,8 @@ type t =
   | Pdot of t * string * int
   | Papply of t * t
 
+val print : Format.formatter -> t -> unit
+
 val same: t -> t -> bool
 val isfree: Ident.t -> t -> bool
 val binding_time: t -> int

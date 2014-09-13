@@ -1,47 +1,60 @@
 open Typedtree
 open Types
+open Format
 
 exception Fail_to_unify
 exception Poly_variant
+
+let flag = false
 
 let table = ref (Obj.magic 1)
 
 let (>>) e r =
   r := e :: !r
 
-let print_type = Printtyp.type_expr Format.std_formatter
+let print_type = Dupfun.print_type
 
 module Unify = struct
   let rec unify_typexpr ty1 ty2 =
     match ty1.desc, ty2.desc with
     | Tvar _, _ ->
-      [(ty1.id, ty2)]
+        [(ty1.id, ty2)]
     | Tlink ty , _ ->
-      unify_typexpr ty ty2
+        unify_typexpr ty ty2
     | _, Tlink ty ->
-      unify_typexpr ty1 ty
+        unify_typexpr ty1 ty
     | Tarrow (_, tyx, tyy, _),
       Tarrow (_, tyx', tyy', _) ->
-      unify_typexpr tyx tyx'
-      @ unify_typexpr tyy tyy'
+        unify_typexpr tyx tyx'
+        @ unify_typexpr tyy tyy'
     | Ttuple tylist, Ttuple tylist' ->
-      List.map2 unify_typexpr tylist tylist'
-      |> List.flatten
-    | Tconstr (p1, tylist, _),
-      Tconstr (p2, tylist', _) ->
-        assert(Path.head p1 = Path.head p2);
         List.map2 unify_typexpr tylist tylist'
         |> List.flatten
+    | Tconstr (p1, tylist, _),
+      Tconstr (p2, tylist', _) ->
+        if Path.head p1 = Path.head p2
+        then List.map2 unify_typexpr tylist tylist'
+             |> List.flatten
+        else begin
+          if flag then begin
+            eprintf "unify: type name mismatch\n";
+            eprintf "ty1: %a@." print_type ty1;
+            eprintf "ty2: %a@." print_type ty2;
+          end;
+          assert(false)
+        end
     | Tfield (_, _, tyx, tyy),
       Tfield (_, _, tyx', tyy') ->
       unify_typexpr tyx tyx' @ unify_typexpr tyy tyy'
     | Tvariant r1, Tvariant r2 ->
       raise Poly_variant
-    | _ ->
-      Format.eprintf "Error:@.ty1: %a@.ty2: %a@."
-        Printtyp.type_expr ty1
-        Printtyp.type_expr ty2;
-      raise Fail_to_unify
+    | _ -> begin
+        if flag
+        then eprintf "Fail Unify:\nty1: %a@.ty2: %a@."
+            Printtyp.type_expr ty1
+            Printtyp.type_expr ty2
+      end; raise Fail_to_unify
+
 (*
   and unify_row r1 r2 =
     let rec _uni = function
@@ -174,17 +187,20 @@ let name_inference context (id, optty) =
         try
           List.assoc ty.id context
         with Not_found -> begin
-            str_of_type ty |> Format.printf "name_inference: %s@.";
-            Format.printf "context: ";
+            (*
+            str_of_type ty |> printf "name_inference: %s@.";
+            printf "context: ";
             List.iter (fun (i, l) ->
-              Format.printf "%d %s, " i (str_of_literal l)) context;
-            Format.printf "@.%d@." id;
+                printf "%d %s, " i (str_of_literal l)) context;
+            printf "@.%d@." id;
+            *)
             (* assert(false) *)
             I
           end
       end
     | _ -> begin
-        Format.eprintf "error: unexpected type [%a]@." Printtyp.type_expr ty;
+        if flag then eprintf "inference: Unexpected type [%a]@."
+            print_type ty;
         I                       (* XXX : fix me *)
         (* assert(false) *)
       end in
@@ -227,19 +243,28 @@ and expression context exp =
             | Some dupfun ->
               let general_type = dupfun.Dupfun.ty in
               let gtyvars = dupfun.Dupfun.gtyvars in
-              let env = exp.exp_env |> Envaux.env_of_only_summary in
-              let suffix = inference env gtyvars context general_type exp.exp_type in
+              let env = exp.exp_env
+                        |> Envaux.env_of_only_summary in
+              let suffix =
+                inference env gtyvars context general_type exp.exp_type in
               let lidentloc = name_mangle lidentloc suffix in
               Texp_ident (path, lidentloc, vdesc)
-          with Fail_to_unify | Poly_variant -> Texp_ident (path, lidentloc, vdesc)
+          with Fail_to_unify
+             | Poly_variant -> Texp_ident (path, lidentloc, vdesc)
              | exn -> begin     (* XXX: fix immediately *)
-                 Format.eprintf "expression: unexpected exception %s@." (Printexc.to_string exn);
-                 Location.print Format.std_formatter lidentloc.Asttypes.loc;
+                 if flag
+                 then begin
+                   eprintf "expression: Unexpected exn %s@."
+                     (Printexc.to_string exn);
+                   Location.print std_formatter lidentloc.Asttypes.loc;
+                   Printexc.get_backtrace () |> print_endline;
+                 end;
                  Texp_ident (path, lidentloc, vdesc)
                end
         end
       | Texp_let (rec_flag, vbs, exp) ->
-        let new_vbs, new_contexts = List.map (value_binding context) vbs
+        let new_vbs, new_contexts =
+          List.map (value_binding context) vbs
           |> List.split in
         let new_context = List.flatten new_contexts in
         let new_exp = expression new_context exp in
@@ -328,7 +353,8 @@ and expression context exp =
     in
     {exp with exp_desc = desc}
   with exn -> begin
-      Format.eprintf "Error: expression at [%a]" Location.print exp.exp_loc;
+      if flag
+      then eprintf "expression: at [%a]" Location.print exp.exp_loc;
       raise exn
     end
 

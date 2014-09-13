@@ -17,6 +17,8 @@ type t =
   | Ldot of t * string
   | Lapply of t * t
 
+val print: Format.formatter -> t -> unit (* tokuda added *)
+
 val flatten: t -> string list
 val last: t -> string
 val parse: string -> t
