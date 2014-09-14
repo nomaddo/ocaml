@@ -35,7 +35,7 @@ let dupfun_table : dupfun list ref = ref []
 let (>>) e r = r := e::!r
 let (@|) f x = f x
 
-let max_size = 5
+let max_size = 3
 
 module G = struct (* for get bound idents with type *)
   let idents = ref([]: (Ident.t * Types.type_expr) list)
@@ -77,6 +77,12 @@ let rec iter3 f l1 l2 l3 =
     ([], [], []) -> ()
   | (a1::l1, a2::l2, a3::l3) -> f a1 a2 a3; iter3 f l1 l2 l3
   | (_, _, _) -> invalid_arg "List.iter3"
+
+let rec print_list s p ppf = function
+    | [] -> fprintf ppf ""
+    | x::[] -> fprintf ppf "%a" p x
+    | x::xs -> fprintf ppf "%a %s %a"
+                 p x s (print_list s p) xs
 
 (* entry table *)
 
@@ -124,12 +130,6 @@ and print_int_list = function
 
 and print_type ppf ty =
   let open Types in
-  let rec print_list s p ppf = function
-    | [] -> fprintf ppf ""
-    | x::[] -> fprintf ppf "%a" p x
-    | x::xs -> fprintf ppf "%a %s %a"
-                 p x s (print_list s p) xs
-  in
   match ty.desc with
   | Tvar stropt -> begin
       match stropt with
@@ -221,6 +221,27 @@ and rename_lidentloc lindentloc suffix =
   in
   {lindentloc with txt = add_suffix lindentloc.txt suffix}
 
+let rec check_ignore_case ty =
+  let open Types in
+  let check_list l =
+    List.map check_ignore_case l
+    |> List.fold_left (fun a b -> a && b) true in
+  match ty.desc with
+  | Tvar _ -> true
+  | Tarrow (_, ty1,ty2,_) ->
+      check_ignore_case ty1 && check_ignore_case ty2
+  | Ttuple tyl -> check_list tyl
+  | Tconstr (_,tyl, _) -> check_list tyl
+  | Tobject _ -> false
+  | Tfield _ -> false
+  | Tnil -> false
+  | Tlink ty -> check_ignore_case ty
+  | Tsubst _ -> false
+  | Tvariant _ -> false
+  | Tunivar _ -> false
+  | Tpoly _ -> false
+  | Tpackage _ -> false
+
 (* XXX: value_binding return value_binding list. Must be flatten. *)
 (* XXX: freetyvars and gtyvars are int list! (Types.type_expr.id list) *)
 let rec value_binding freetyvars vb =
@@ -240,7 +261,16 @@ let rec value_binding freetyvars vb =
       Format.eprintf "@.";
       0
     end in
-  if size = 0 then [vb] else begin
+  if size = 0 then [vb] else
+  if not @| check_ignore_case ty
+  then begin
+    if true
+    then printf "ignore_case: %a %a@."
+        (print_list "," (fun ppf -> fprintf ppf "%s")) names
+        print_type ty;
+    [vb]
+  end
+  else begin
     let suffixes = make_suffixes size in
     let new_vbs =
       List.map (map_vb gtyvars freetyvars vb) suffixes in
@@ -255,6 +285,7 @@ let rec value_binding freetyvars vb =
           ~ty:ty) names stamps types;
     map_vb gtyvars freetyvars vb [] :: new_vbs
   end
+
 
 and map_vb gtyvars freetyvars vb suffix =
   let new_pat = rename_pat suffix vb.vb_pat in

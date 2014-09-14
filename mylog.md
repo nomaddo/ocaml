@@ -1,3 +1,12 @@
+## 2014年  9月 14日 日曜日 12:48:01 JST
+too bigな関数たち、format系以外
+型変数の上限、4くらいにはしたい
+
+util/misc.ml fst4
+ocamlbuild/ocaml_compiler.ml link_from_file
+parsing/asp_mapper.ml map_tuple, map_tuple3
+
+
 ## 2014年  9月 13日 土曜日 20:24:26 JST
 ../boot/ocamlrun ../ocamlopt -strict-sequence -w +33..39 -g -warn-error A-3-26-32 -bin-annot -nostdlib -safe-string `./Compflags camlinternalFormat.cmx` -c camlinternalFormat.ml
 
@@ -10,10 +19,9 @@ Pathname.tはmliファイルでシグニチャをincludeしており、
 なんでfull_expand_typeで展開してないのか
 
 * Path.headの例外
-見ている値では、Papplyの場合は現れないのだけど
-Path.lastで代用できる？（IDは手に入らない）
 IDがないとshadowingしていたりすると、一意に決まらない？
 
+*
 
 ## 2014年  9月 10日 水曜日 00:04:41 JST
 ブートストラップ成功した
