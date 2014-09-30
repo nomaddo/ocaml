@@ -5,7 +5,7 @@ open Format
 exception Fail_to_unify
 exception Poly_variant
 
-let flag = false
+let flag = true
 
 let table = ref (Obj.magic 1)
 
@@ -32,7 +32,7 @@ module Unify = struct
         |> List.flatten
     | Tconstr (p1, tylist, _),
       Tconstr (p2, tylist', _) ->
-        if Path.head p1 = Path.head p2
+        if p1 = p2
         then List.map2 unify_typexpr tylist tylist'
              |> List.flatten
         else begin
@@ -41,62 +41,28 @@ module Unify = struct
             eprintf "ty1: %a@." print_type ty1;
             eprintf "ty2: %a@." print_type ty2;
           end;
-          assert(false)
+          raise Fail_to_unify
         end
     | Tfield (_, _, tyx, tyy),
       Tfield (_, _, tyx', tyy') ->
       unify_typexpr tyx tyx' @ unify_typexpr tyy tyy'
     | Tvariant r1, Tvariant r2 ->
       raise Poly_variant
+    | Tpoly (ty1, _), _ -> unify_typexpr ty1 ty2
+    | _, Tpoly (ty2, _) -> unify_typexpr ty1 ty2
     | _ -> begin
         if flag
         then eprintf "Fail Unify:\nty1: %a@.ty2: %a@."
             Printtyp.type_expr ty1
             Printtyp.type_expr ty2
       end; raise Fail_to_unify
-
-(*
-  and unify_row r1 r2 =
-    let rec _uni = function
-      | [] -> []
-      | (label, rowf1)::xs ->
-        let m = List.find_all (fun (l, _) -> l = label) r2.row_fields in
-        let _ = assert (List.length m = 1) in
-        let (_, rowf2) = List.hd m in
-        (row_field rowf1 rowf2) :: _uni xs
-    in
-    _uni r1.row_fields
-    |> List.flatten
-
-  and row_field f1 f2 = (* f1のほうがgeneral *)
-    match f1, f2 with
-    | Rabsent, _ -> assert(false)
-    | _, Rabsent -> assert(false)
-    | Rpresent None, _ -> []
-    | Rpresent (Some tyexpr), Rpresent None -> assert(false)
-    | Rpresent (Some tyexpr1), Rpresent (Some tyexpr2) ->
-      unify_typexpr tyexpr1 tyexpr2
-    | Rpresent (Some tyexpr), Reither (_, lty, _, _) ->
-      Format.eprintf "DEBUG: Reither occuar1@.";
-      assert(false)
-    | Reither (_, lty1, _, _), Reither (_, lty2, _, _) ->
-      Format.eprintf "DEBUG: Reither occuar2@."; []
-    (* assert(List.length lty1 = 1); *)
-    (* assert(List.length lty2 = 1); *)
-    | Reither (_, lty1, _, _), Rpresent (Some tyexpr) ->
-
-    | _ ->
-        ignore f1;
-        ignore f2;
-        assert(false)
-*)
 end
 
 let name_mangle (lidentloc : Longident.t Asttypes.loc) suffix =
   let open Longident in
   let open Asttypes in
   let str_suffix = List.map Dupfun.str_of_literal suffix
-    |> String.concat "" in
+                   |> String.concat "" in
   let rec name_mangle' lident =
     match lident with
     | Lident name -> Lident (name ^ str_suffix)
@@ -107,7 +73,8 @@ let name_mangle (lidentloc : Longident.t Asttypes.loc) suffix =
 
 let str_split str =
   let pos = String.index str '#' in
-  (String.sub str 0 pos, String.sub str pos (String.length str - pos))
+  (String.sub str 0 pos,
+   String.sub str pos (String.length str - pos))
 
 let access_table str i =        (* str as orig_name *)
   try
@@ -175,7 +142,7 @@ let name_inference context (id, optty) =
     | Tarrow _ -> P
     | Ttuple _ -> P
     | Tconstr (path,tylist,_) ->
-      if tylist != [] then P
+      if tylist <> [] then P
       else begin match path with
       | Pident ident -> ident_name ident.name
       | _ -> P (* XXX: TODO: fix me *)
@@ -183,7 +150,7 @@ let name_inference context (id, optty) =
     | Tobject _ -> P
     | Tfield _ -> P
     | Tlink ty -> inference ty
-    | Tvar _ -> begin
+    | Tvar _ | Tunivar _ -> begin
         try
           List.assoc ty.id context
         with Not_found -> begin
@@ -226,7 +193,7 @@ let rec value_binding context vb =
   in
   let names, stamps, _ = Dupfun.G.name_stamp_type [vb] in
   let c = List.map2 make_new_context names stamps
-    |> List.concat in
+          |> List.concat in
   let exp = expression (c @ context) vb.vb_expr in
   let new_vb = {vb with vb_expr = exp} in
   (new_vb, c @ context)
@@ -235,7 +202,10 @@ and expression context exp =
   try
     let desc =
       match exp.exp_desc with
-      | Texp_ident (path, lidentloc, vdesc) as self-> begin
+      | Texp_ident (path, lidentloc, vdesc) as self -> begin
+          match path with
+          | Path.Papply _ -> Texp_ident (path, lidentloc, vdesc)
+          | _ ->
           try
             let {Ident.name; stamp} = Path.head path in
             match access_table name stamp with

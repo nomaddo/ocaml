@@ -265,9 +265,8 @@ let rec value_binding freetyvars vb =
   if not @| check_ignore_case ty
   then begin
     if true
-    then printf "ignore_case: %a %a@."
-        (print_list "," (fun ppf -> fprintf ppf "%s")) names
-        print_type ty;
+    then printf "ignore_case: %a@."
+        (print_list "," (fun ppf -> fprintf ppf "%s")) names;
     [vb]
   end
   else begin

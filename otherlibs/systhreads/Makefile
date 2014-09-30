@@ -19,7 +19,7 @@ CAMLC=$(ROOTDIR)/boot/ocamlrun $(ROOTDIR)/ocamlc -nostdlib -g \
 CAMLOPT=$(ROOTDIR)/boot/ocamlrun $(ROOTDIR)/ocamlopt -nostdlib -g \
         -I $(ROOTDIR)/stdlib -I $(ROOTDIR)/otherlibs/unix
 MKLIB=../../boot/ocamlrun ../../tools/ocamlmklib
-COMPFLAGS=-w +33..39 -warn-error A-3-26-32 -g -bin-annot -safe-string
+COMPFLAGS=-w +33..39-26 -warn-error A-3-26-32 -g -bin-annot -safe-string -g
 
 BYTECODE_C_OBJS=st_stubs_b.o
 NATIVECODE_C_OBJS=st_stubs_n.o

@@ -69,7 +69,6 @@ let print_if ppf flag printer arg =
 let (++) x f = f x
 
 let implementation ppf sourcefile outputprefix =
-  print_endline "kaizou ocamlc";
   Compmisc.init_path false;
   Clflags.mydump := false;
   let modulename = module_of_filename ppf sourcefile outputprefix in

@@ -14,12 +14,12 @@
 include ../config/Makefile
 RUNTIME=../boot/ocamlrun
 COMPILER=../ocamlc
-CAMLC=$(RUNTIME) $(COMPILER)
+CAMLC=$(RUNTIME) $(COMPILER) -g
 # [tokuda] [XXX] ad hoc work-around "-26" for stdlib/parsing.ml; should fix untypeast.ml?
-COMPFLAGS=-strict-sequence -w +33..39 -g -warn-error A-3-26-32 -bin-annot -nostdlib \
+COMPFLAGS=-strict-sequence -w +33..39-26 -g -warn-error A-3-26-32 -bin-annot -nostdlib \
           -safe-string
 OPTCOMPILER=../ocamlopt
-CAMLOPT=$(RUNTIME) $(OPTCOMPILER)
+CAMLOPT=$(RUNTIME) $(OPTCOMPILER) -g
 CAMLDEP=../boot/ocamlrun ../tools/ocamldep
 
 OBJS=camlinternalFormatBasics.cmo pervasives.cmo $(OTHERS)

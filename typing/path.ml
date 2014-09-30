@@ -58,6 +58,7 @@ let rec head = function
   | Pdot(p, s, pos) -> head p
   | Papply(p1, p2) as whole ->
       print Format.std_formatter whole;
+      print_endline "";
       assert false
 
 let rec last = function
