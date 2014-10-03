@@ -506,6 +506,7 @@ module type Common_options = sig
 end;;
 
 module type Compiler_options =  sig
+  val _mydump : unit -> unit
   val _a : unit -> unit
   val _annot : unit -> unit
   val _binannot : unit -> unit
@@ -598,7 +599,6 @@ module type Optcomp_options = sig
   val _pp : string -> unit
   val _S : unit -> unit
   val _shared : unit -> unit
-  val _mydump : unit -> unit
   val _opaque :  unit -> unit
 end;;
 
@@ -620,6 +620,7 @@ end;;
 module Make_bytecomp_options (F : Bytecomp_options) =
 struct
   let list = [
+    mk_mydump F._mydump;        (* tokuda added *)
     mk_a F._a;
     mk_absname F._absname;
     mk_annot F._annot;
@@ -733,6 +734,7 @@ struct
     mk_drawlambda F._drawlambda;
     mk_dlambda F._dlambda;
     mk_dinstr F._dinstr;
+
   ]
 end;;
 

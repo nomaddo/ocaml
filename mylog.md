@@ -1,3 +1,14 @@
+## 2014年  9月 30日 火曜日 21:01:26 JST
+An analysis of ocamlbuild/ocaml_compiler.ml
+It seems that the env does not have definition of Pathname.t
+[evidence/20140930/env.types.txt](log)
+Just search by "occur" in below text file by "Pathname"
+
+Of course, pathname.cmi import pathname.t and indicate it as string.
+
+It could be good the compiler source table includes ocamlbuild and ocamldoc.
+It is real product using usual OCaml's features.
+
 ## 2014年  9月 14日 日曜日 12:48:01 JST
 too bigな関数たち、format系以外
 型変数の上限、4くらいにはしたい
@@ -5,7 +16,6 @@ too bigな関数たち、format系以外
 util/misc.ml fst4
 ocamlbuild/ocaml_compiler.ml link_from_file
 parsing/asp_mapper.ml map_tuple, map_tuple3
-
 
 ## 2014年  9月 13日 土曜日 20:24:26 JST
 ../boot/ocamlrun ../ocamlopt -strict-sequence -w +33..39 -g -warn-error A-3-26-32 -bin-annot -nostdlib -safe-string `./Compflags camlinternalFormat.cmx` -c camlinternalFormat.ml
@@ -20,8 +30,6 @@ Pathname.tはmliファイルでシグニチャをincludeしており、
 
 * Path.headの例外
 IDがないとshadowingしていたりすると、一意に決まらない？
-
-*
 
 ## 2014年  9月 10日 水曜日 00:04:41 JST
 ブートストラップ成功した

@@ -45,6 +45,7 @@ module type Common_options = sig
 end
 
 module type Compiler_options =  sig
+  val _mydump : unit -> unit
   val _a : unit -> unit
   val _annot : unit -> unit
   val _binannot : unit -> unit
@@ -138,7 +139,6 @@ module type Optcomp_options = sig
   val _pp : string -> unit
   val _S : unit -> unit
   val _shared : unit -> unit
-  val _mydump : unit -> unit
   val _opaque :  unit -> unit
 end;;
 
