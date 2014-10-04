@@ -4299,6 +4299,61 @@ let rec nondep_type_rec env id ty =
       end;
     ty'
 
+(* tokuda add *)
+let rec my_nondep_type_rec env ty =
+  match ty.desc with
+    Tvar _ | Tunivar _ -> ty
+  | Tlink ty -> my_nondep_type_rec env ty
+  | _ -> try TypeHash.find nondep_hash ty
+  with Not_found ->
+    let ty' = newgenvar () in        (* Stub *)
+    TypeHash.add nondep_hash ty ty';
+    ty'.desc <-
+      begin match ty.desc with
+      | Tconstr (p, tl, abbrev) ->
+          begin try
+            Tlink (my_nondep_type_rec env
+                     (try_expand_safe env (newty2 ty.level ty.desc)))
+          with Cannot_expand ->
+            Tconstr(p, List.map (my_nondep_type_rec env) tl, ref Mnil)
+          end
+      | Tpackage(p, nl, tl) ->
+          let p' = normalize_package_path env p in
+          Tpackage (p', nl, List.map
+                      (my_nondep_type_rec env) tl)
+      | Tobject (t1, name) ->
+          Tobject (my_nondep_type_rec env t1,
+                 ref (match !name with
+                        None -> None
+                      | Some (p, tl) ->
+                          Some (p, List.map
+                                  (my_nondep_type_rec env) tl)))
+      | Tvariant row ->
+          let row = row_repr row in
+          let more = repr row.row_more in
+          (* We must keep sharing according to the row variable *)
+          begin try
+            let ty2 = TypeHash.find nondep_variants more in
+            (* This variant type has been already copied *)
+            TypeHash.add nondep_hash ty ty2;
+            Tlink ty2
+          with Not_found ->
+            (* Register new type first for recursion *)
+            TypeHash.add nondep_variants more ty';
+            let static = static_row row in
+            let more' = if static then newgenty Tnil else more in
+            (* Return a new copy *)
+            let row =
+              copy_row (my_nondep_type_rec env) true row true more' in
+            match row.row_name with
+              Some (p, tl) ->
+                Tvariant {row with row_name = None}
+            | _ -> Tvariant row
+          end
+      | _ -> copy_type_desc (my_nondep_type_rec env) ty.desc
+      end;
+    ty'
+
 let nondep_type env id ty =
   try
     let ty' = nondep_type_rec env id ty in

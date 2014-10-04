@@ -106,7 +106,7 @@ let rec unalias_type env ty = (* Env.t -> type_expr -> type_expr *)
       let types = List.map (unalias_type env) types in
       let desc = Tconstr (path, types, abbrev_memo_ref) in
       let ty = {ty with desc} in
-      Ctype.full_expand env ty
+      Ctype.my_nondep_type_rec env ty
     end
   | Tvar _ -> ty
   | Tarrow (l, ty1, ty2, com) ->
