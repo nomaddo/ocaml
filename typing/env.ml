@@ -661,7 +661,7 @@ and lookup_module ~load lid env : Path.t =
         if !Clflags.transparent_modules && not load then
           try ignore (find_pers_struct ~check:false s)
           with Not_found ->
-	    Location.prerr_warning Location.none (Warnings.No_cmi_file s)
+            Location.prerr_warning Location.none (Warnings.No_cmi_file s)
         else ignore (find_pers_struct s);
         Pident(Ident.create_persistent s)
       end
@@ -1052,7 +1052,7 @@ let rec scrape_alias env ?path mty =
         scrape_alias env (find_module path env).md_type ~path
       with Not_found ->
         (*Location.prerr_warning Location.none
-	  (Warnings.No_cmi_file (Path.name path));*)
+          (Warnings.No_cmi_file (Path.name path));*)
         mty
       end
   | mty, Some path ->

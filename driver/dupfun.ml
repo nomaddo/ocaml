@@ -37,6 +37,10 @@ let (@|) f x = f x
 
 let max_size = 3
 
+module DMap = Map(struct type t = Ident.t let compare = compare end)
+
+let map = ref DMap.empty
+
 module G = struct (* for get bound idents with type *)
   let idents = ref([]: (Ident.t * Types.type_expr) list)
 
@@ -70,6 +74,22 @@ module G = struct (* for get bound idents with type *)
     let names = List.map (fun id -> id.Ident.name) ids
     and stamps = List.map (fun id -> id.Ident.stamp) ids in
     (names, stamps, types)
+end
+
+module SigUtil = struct
+  let sg = ref (Obj.magic ())
+  let exists = ref false
+
+  let set_flag = function
+    | None -> exists := false
+    | Some _ -> exists := false
+
+  let find_value sg id =
+    let find = function
+      | Sig_value (ident, vdesc) -> Ident.same id ident
+      | _ -> false in
+    try Some List.find find sg
+    with Not_found -> None
 end
 
 let rec iter3 f l1 l2 l3 =
@@ -269,7 +289,8 @@ let rec value_binding freetyvars vb =
         (print_list "," (fun ppf -> fprintf ppf "%s")) names;
     [vb]
   end
-  else begin
+  else match SigUtil.find_value !SigUtil.sg vb.
+    begin
     let suffixes = make_suffixes size in
     let new_vbs =
       List.map (map_vb gtyvars freetyvars vb) suffixes in
@@ -475,8 +496,10 @@ and structure str =
   let items = List.map structure_item str.str_items in
   {str with str_items = items}
 
-let structure str =
+let structure str sg =
   let str = structure str in
+  SigUtil.sg := sg;
+  SigUtil.exists sg;
   if !Clflags.dump_typedtree
   then List.iter print_dupfun !dupfun_table;
   str

@@ -104,11 +104,12 @@ let implementation ppf sourcefile outputprefix =
               Pprintast.structure ptree;
           ptree)
       (* [end tokuda] *)
-      ++ Typemod.type_implementation sourcefile outputprefix modulename env
+      ++ Typemod.type_implementation_with_sig sourcefile outputprefix modulename env
 
       (* [begin tokuda] do the duplication *)
-      ++ (fun (typedtree, module_corcion) ->
-          Dupfun.structure typedtree |> Rename_ident.structure, module_corcion)
+      ++ (fun (typedtree, module_corcion, _sig) ->
+          Dupfun.structure typedtree _sig
+          |> Rename_ident.structure, module_corcion)
       (* [end tokuda] *)
       (* untyping and 2nd typing *)
       ++ (fun (tree, _) ->
