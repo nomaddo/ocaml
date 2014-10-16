@@ -37,9 +37,9 @@ let (@|) f x = f x
 
 let max_size = 3
 
-module DMap = Map(struct type t = Ident.t let compare = compare end)
+(* module DMap = Map.Make(struct type t = Ident.t let compare = compare end) *)
 
-let map = ref DMap.empty
+(* let map = ref DMap.empty *)
 
 module G = struct (* for get bound idents with type *)
   let idents = ref([]: (Ident.t * Types.type_expr) list)
@@ -77,19 +77,19 @@ module G = struct (* for get bound idents with type *)
 end
 
 module SigUtil = struct
-  let sg = ref (Obj.magic ())
+  let sg : Types.signature option ref = ref (Obj.magic ())
   let exists = ref false
 
   let set_flag = function
     | None -> exists := false
     | Some _ -> exists := false
 
-  let find_value sg id =
-    let find = function
-      | Sig_value (ident, vdesc) -> Ident.same id ident
-      | _ -> false in
-    try Some List.find find sg
-    with Not_found -> None
+  (* let find_value sg id = *)
+  (*   let find = function *)
+  (*     | Tsig_value (ident, vdesc) -> Ident.same id ident *)
+  (*     | _ -> false in *)
+  (*   try Some (List.find find sg) *)
+  (*   with Not_found -> None *)
 end
 
 let rec iter3 f l1 l2 l3 =
@@ -288,8 +288,7 @@ let rec value_binding freetyvars vb =
     then printf "ignore_case: %a@."
         (print_list "," (fun ppf -> fprintf ppf "%s")) names;
     [vb]
-  end
-  else match SigUtil.find_value !SigUtil.sg vb.
+  end else
     begin
     let suffixes = make_suffixes size in
     let new_vbs =
@@ -499,7 +498,7 @@ and structure str =
 let structure str sg =
   let str = structure str in
   SigUtil.sg := sg;
-  SigUtil.exists sg;
+  SigUtil.set_flag sg;
   if !Clflags.dump_typedtree
   then List.iter print_dupfun !dupfun_table;
   str

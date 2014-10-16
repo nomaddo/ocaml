@@ -1,3 +1,6 @@
+## 2014年 10月  8日 水曜日 20:55:01 JST
+lex.ml, compact.ml
+
 ## 2014年  9月 30日 火曜日 21:01:26 JST
 An analysis of ocamlbuild/ocaml_compiler.ml
 It seems that the env does not have definition of Pathname.t
