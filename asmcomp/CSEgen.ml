@@ -164,13 +164,8 @@ let insert_move srcs dsts i =
   | l -> (* Parallel move: first copy srcs into tmps one by one,
             then copy tmps into dsts one by one *)
          let tmps = Reg.createv_like srcs in
-<<<<<<< HEAD
-         array_fold2 insert_single_move
-           (array_fold2 insert_single_move i srcs tmps) tmps dsts
-=======
          let i1 = array_fold2 insert_single_move i tmps dsts in
          array_fold2 insert_single_move i1 srcs tmps
->>>>>>> refs/remotes/upstream/4.02
 
 (* Classification of operations *)
 
