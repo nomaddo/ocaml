@@ -27,8 +27,8 @@ module Dup_debug_flag = struct
   let dup_fun_table = false       (* affect mod.ml *)
   let stage_debug = false         (* affect compile and optcompile *)
   let unification_result = false  (* affect dmod.ml *)
-  let dmod_stack_flag = true      (* affect dmod.ml *)
-  let dmod_dup_fun_table = true   (* affect dmod.ml *)
+  let dmod_stack_flag = false      (* affect dmod.ml *)
+  let dmod_dup_fun_table = false   (* affect dmod.ml *)
   let inference = false           (* affect dmod.ml *)
 end
 (* [end tokuda] *)
@@ -37,12 +37,14 @@ end
 
 (* Keep in sync with the copy in compile.ml *)
 
+let tool_name = "ocamlopt"
+
 let interface ppf sourcefile outputprefix =
   Compmisc.init_path false;
   let modulename = module_of_filename ppf sourcefile outputprefix in
   Env.set_unit_name modulename;
   let initial_env = Compmisc.initial_env () in
-  let ast = Pparse.parse_interface ppf sourcefile in
+  let ast = Pparse.parse_interface ~tool_name ppf sourcefile in
   if !Clflags.dump_parsetree then fprintf ppf "%a@." Printast.interface ast;
   if !Clflags.dump_source then fprintf ppf "%a@." Pprintast.signature ast;
   let tsg = Typemod.type_interface initial_env ast in
@@ -72,6 +74,7 @@ let (+++) (x, y) f = (x, f y)
 
 let implementation ppf sourcefile outputprefix =
   Compmisc.init_path true;
+  (* Clflags.mydump := false; *)
   let modulename = module_of_filename ppf sourcefile outputprefix in
   Env.set_unit_name modulename;
   let env = Compmisc.initial_env() in
@@ -99,11 +102,11 @@ let implementation ppf sourcefile outputprefix =
               Pprintast.structure ptree;
           ptree)
       (* [end tokuda] *)
-      ++ Typemod.type_implementation sourcefile outputprefix modulename env
+      ++ Typemod.type_implementation_with_sig sourcefile outputprefix modulename env
 
       (* [begin tokuda] do the duplication *)
-      ++ (fun (typedtree, module_corcion) ->
-        Dupfun.structure typedtree
+      ++ (fun (typedtree, module_corcion, _sig) ->
+        Dupfun.structure typedtree _sig
         |> Rename_ident.structure, module_corcion)
       (* [end tokuda] *)
       ++ (fun x ->
@@ -112,7 +115,7 @@ let implementation ppf sourcefile outputprefix =
           x)
       ++ (fun (str, module_coercion) -> (* for Dup_debug_flag.stage_debug *)
           let ptree = Untypeast.untype_structure str in
-          if true then
+          if !Clflags.mydump then
             Format.eprintf "[begin tokuda]\n%a\n[end tokuda]@."
               Pprintast.structure ptree;
           ptree)
@@ -156,7 +159,7 @@ let implementation ppf sourcefile outputprefix =
     Warnings.check_fatal ();
     Stypes.dump (Some (outputprefix ^ ".annot"))
   in
-  try comp (Pparse.parse_implementation ppf sourcefile)
+  try comp (Pparse.parse_implementation ~tool_name ppf sourcefile)
   with x ->
     Stypes.dump (Some (outputprefix ^ ".annot"));
     remove_file objfile;

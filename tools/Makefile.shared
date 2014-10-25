@@ -13,12 +13,12 @@
 include ../config/Makefile
 
 CAMLRUN=../boot/ocamlrun
-CAMLC=$(CAMLRUN) ../boot/ocamlc -nostdlib -I ../boot
-CAMLOPT=$(CAMLRUN) ../ocamlopt -nostdlib -I ../stdlib
+CAMLC=$(CAMLRUN) ../boot/ocamlc -nostdlib -g -I ../boot
+CAMLOPT=$(CAMLRUN) ../ocamlopt -nostdlib -g -I ../stdlib
 CAMLLEX=$(CAMLRUN) ../boot/ocamllex
 INCLUDES=-I ../utils -I ../parsing -I ../typing -I ../bytecomp -I ../asmcomp \
 	 -I ../driver -I ../toplevel
-COMPFLAGS= -strict-sequence -w +27+32..39 -g -warn-error A-26 -safe-string $(INCLUDES)
+COMPFLAGS= -strict-sequence -w +27+32..39 -g -warn-error A-3-26-32 -safe-string $(INCLUDES)
 LINKFLAGS=$(INCLUDES)
 
 all: ocamldep ocamlprof ocamlcp ocamloptp ocamlmktop ocamlmklib dumpobj \
@@ -39,7 +39,7 @@ CAMLDEP_OBJ=depend.cmo ocamldep.cmo
 CAMLDEP_IMPORTS=misc.cmo config.cmo clflags.cmo terminfo.cmo \
   warnings.cmo location.cmo longident.cmo \
   syntaxerr.cmo ast_helper.cmo parser.cmo lexer.cmo parse.cmo \
-  ccomp.cmo pparse.cmo compenv.cmo
+  ccomp.cmo ast_mapper.cmo pparse.cmo compenv.cmo
 
 ocamldep: depend.cmi $(CAMLDEP_OBJ)
 	$(CAMLC) $(LINKFLAGS) -compat-32 -o ocamldep $(CAMLDEP_IMPORTS) $(CAMLDEP_OBJ)

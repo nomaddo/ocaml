@@ -14,15 +14,16 @@ include ../config/Makefile
 
 ROOTDIR   = ..
 OCAMLRUN  = $(ROOTDIR)/boot/ocamlrun
-OCAMLC    = $(OCAMLRUN) $(ROOTDIR)/ocamlc -nostdlib -I $(ROOTDIR)/stdlib
-OCAMLOPT  = $(OCAMLRUN) $(ROOTDIR)/ocamlopt -nostdlib -I $(ROOTDIR)/stdlib
+OCAMLC    = $(OCAMLRUN) $(ROOTDIR)/ocamlc -nostdlib -g -I $(ROOTDIR)/stdlib
+OCAMLOPT  = $(OCAMLRUN) $(ROOTDIR)/ocamlopt -nostdlib -g -I $(ROOTDIR)/stdlib
 OCAMLDEP  = $(OCAMLRUN) $(ROOTDIR)/tools/ocamldep
 OCAMLLEX  = $(OCAMLRUN) $(ROOTDIR)/boot/ocamllex
 CP        = cp
-COMPFLAGS= -warn-error A-26 -w L -w R -w Z -I ../otherlibs/$(UNIXLIB) -safe-string
-LINKFLAGS= -I ../otherlibs/$(UNIXLIB)
+COMPFLAGS= -g -warn-error A-3-26-32 -w L -w R -w Z -I ../otherlibs/$(UNIXLIB) -safe-string
+LINKFLAGS= -g -I ../otherlibs/$(UNIXLIB)
 
 PACK_CMO=\
+  const.cmo \
   loc.cmo \
   discard_printf.cmo \
   signatures.cmi \

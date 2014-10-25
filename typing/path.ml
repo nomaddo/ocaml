@@ -15,6 +15,16 @@ type t =
   | Pdot of t * string * int
   | Papply of t * t
 
+let rec print ppf = function (* tokuda added *)
+  | Pident ident -> Format.fprintf ppf
+                      "Pident (%a)@?" Ident.print ident
+  | Pdot (t, str, i) ->
+      Format.fprintf ppf "Pdot (%a, %s, %d)@?"
+        print t str i
+  | Papply (t1, t2) ->
+      Format.fprintf ppf "Paplly (%a, %a)@?"
+        print t1 print t2
+
 let nopos = -1
 
 let rec same p1 p2 =
@@ -46,7 +56,10 @@ let rec name ?(paren=kfalse) = function
 let rec head = function
     Pident id -> id
   | Pdot(p, s, pos) -> head p
-  | Papply(p1, p2) -> assert false
+  | Papply(p1, p2) as whole ->
+      print Format.std_formatter whole;
+      print_endline "";
+      assert false
 
 let rec last = function
   | Pident id -> Ident.name id

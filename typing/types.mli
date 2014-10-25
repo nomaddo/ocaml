@@ -67,6 +67,8 @@ and commutable =
   | Cunknown
   | Clink of commutable ref
 
+val print_field_kind : Format.formatter -> field_kind -> unit
+
 module TypeOps : sig
   type t = type_expr
   val compare : t -> t -> int

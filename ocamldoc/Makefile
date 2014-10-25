@@ -16,8 +16,8 @@ include ../config/Makefile
 ##########################
 ROOTDIR   = ..
 OCAMLRUN  = $(ROOTDIR)/boot/ocamlrun
-OCAMLC    = $(OCAMLRUN) $(ROOTDIR)/ocamlc -nostdlib -I $(ROOTDIR)/stdlib
-OCAMLOPT  = $(OCAMLRUN) $(ROOTDIR)/ocamlopt -nostdlib -I $(ROOTDIR)/stdlib
+OCAMLC    = $(OCAMLRUN) $(ROOTDIR)/ocamlc -nostdlib -g -I $(ROOTDIR)/stdlib
+OCAMLOPT  = $(OCAMLRUN) $(ROOTDIR)/ocamlopt -nostdlib -g -I $(ROOTDIR)/stdlib
 OCAMLDEP  = $(OCAMLRUN) $(ROOTDIR)/tools/ocamldep
 OCAMLLEX  = $(OCAMLRUN) $(ROOTDIR)/boot/ocamllex
 OCAMLYACC = $(ROOTDIR)/yacc/ocamlyacc
@@ -76,8 +76,8 @@ INCLUDES_NODEP=	-I $(OCAMLSRCDIR)/stdlib \
 
 INCLUDES=$(INCLUDES_DEP) $(INCLUDES_NODEP)
 
-COMPFLAGS=$(INCLUDES) -warn-error A-26 -safe-string # [tokuda] [XXX] fix untypeast.ml so that this "-26" is not required?
-LINKFLAGS=$(INCLUDES) -nostdlib
+COMPFLAGS=$(INCLUDES) -warn-error A-3-26-32 -safe-string # [tokuda] [XXX] fix untypeast.ml so that this "-26" is not required?
+LINKFLAGS=$(INCLUDES) -nostdlib -g
 
 CMOFILES= odoc_config.cmo \
 	odoc_messages.cmo\
@@ -148,6 +148,7 @@ OCAMLCMXFILES=$(OCAMLCMOFILES:.cmo=.cmx)
 
 
 STDLIB_MLIS=../stdlib/*.mli \
+  ../parsing/*.mli \
 	../otherlibs/$(UNIXLIB)/unix.mli \
 	../otherlibs/str/str.mli \
 	../otherlibs/bigarray/bigarray.mli \
@@ -172,14 +173,20 @@ debug:
 	$(MAKE) OCAMLPP=""
 
 $(OCAMLDOC): $(EXECMOFILES)
-	$(OCAMLC) -o $@ -linkall unix.cma str.cma dynlink.cma $(OCAMLSRCDIR)/compilerlibs/ocamlcommon.cma $(LINKFLAGS) $(OCAMLCMOFILES) $(EXECMOFILES)
+	$(OCAMLC) -o $@ -linkall unix.cma str.cma dynlink.cma \
+	          $(OCAMLSRCDIR)/compilerlibs/ocamlcommon.cma \
+	          $(LINKFLAGS) $(OCAMLCMOFILES) $(EXECMOFILES)
 $(OCAMLDOC_OPT): $(EXECMXFILES)
-	$(OCAMLOPT) -o $@ -linkall unix.cmxa str.cmxa dynlink.cmxa $(OCAMLSRCDIR)/compilerlibs/ocamlcommon.cmxa $(LINKFLAGS) $(OCAMLCMXFILES) $(EXECMXFILES)
+	$(OCAMLOPT) -o $@ -linkall unix.cmxa str.cmxa dynlink.cmxa \
+	            $(OCAMLSRCDIR)/compilerlibs/ocamlcommon.cmxa \
+	            $(LINKFLAGS) $(OCAMLCMXFILES) $(EXECMXFILES)
 
 $(OCAMLDOC_LIBCMA): $(LIBCMOFILES)
-	$(OCAMLC) -a -o $@ $(LINKFLAGS) $(OCAMLSRCDIR)/tools/depend.cmo $(LIBCMOFILES)
+	$(OCAMLC) -a -o $@ $(LINKFLAGS) $(OCAMLSRCDIR)/tools/depend.cmo \
+	          $(LIBCMOFILES)
 $(OCAMLDOC_LIBCMXA): $(LIBCMXFILES)
-	$(OCAMLOPT) -a -o $@ $(LINKFLAGS)	$(OCAMLSRCDIR)/tools/depend.cmx $(LIBCMXFILES)
+	$(OCAMLOPT) -a -o $@ $(LINKFLAGS) $(OCAMLSRCDIR)/tools/depend.cmx \
+	            $(LIBCMXFILES)
 
 manpages: stdlib_man/Pervasives.3o
 html_doc: stdlib_html/Pervasives.html
@@ -244,7 +251,7 @@ install: dummy
 	if test -d stdlib_man; then $(CP) stdlib_man/* $(INSTALL_MANODIR); else : ; fi
 
 installopt:
-	if test -f $(OCAMLDOC_OPT) ; then $(MAKE) installopt_really ; fi
+	if test -f $(OCAMLDOC_OPT); then $(MAKE) installopt_really ; fi
 
 installopt_really:
 	if test -d $(INSTALL_BINDIR); then : ; else $(MKDIR) $(INSTALL_BINDIR); fi

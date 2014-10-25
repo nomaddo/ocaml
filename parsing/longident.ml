@@ -10,10 +10,19 @@
 (*                                                                     *)
 (***********************************************************************)
 
+open Format
+
 type t =
     Lident of string
   | Ldot of t * string
   | Lapply of t * t
+
+let rec print ppf = function
+  | Lident str -> fprintf ppf "Lident %s" str
+  | Ldot (t, str) ->
+      fprintf ppf "Ldot (%a, %s)" print t str
+  | Lapply (t1, t2) ->
+      fprintf ppf "Lapply (%a, %a)" print t1 print t2
 
 let rec flat accu = function
     Lident s -> s :: accu

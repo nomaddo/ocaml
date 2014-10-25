@@ -14,12 +14,12 @@
 include ../../config/Makefile
 
 ROOTDIR=../..
-CAMLC=$(ROOTDIR)/boot/ocamlrun $(ROOTDIR)/ocamlc -nostdlib \
+CAMLC=$(ROOTDIR)/boot/ocamlrun $(ROOTDIR)/ocamlc -nostdlib -g \
       -I $(ROOTDIR)/stdlib -I $(ROOTDIR)/otherlibs/unix
-CAMLOPT=$(ROOTDIR)/boot/ocamlrun $(ROOTDIR)/ocamlopt -nostdlib \
+CAMLOPT=$(ROOTDIR)/boot/ocamlrun $(ROOTDIR)/ocamlopt -nostdlib -g \
         -I $(ROOTDIR)/stdlib -I $(ROOTDIR)/otherlibs/unix
 MKLIB=../../boot/ocamlrun ../../tools/ocamlmklib
-COMPFLAGS=-w +33..39 -warn-error A-26 -g -bin-annot -safe-string
+COMPFLAGS=-w +33..39-26 -warn-error A-3-26-32 -g -bin-annot -safe-string -g
 
 BYTECODE_C_OBJS=st_stubs_b.o
 NATIVECODE_C_OBJS=st_stubs_n.o
@@ -31,7 +31,7 @@ all: libthreads.a threads.cma
 allopt: libthreadsnat.a threads.cmxa
 
 libthreads.a: $(BYTECODE_C_OBJS)
-	$(MKLIB) -o threads $(BYTECODE_C_OBJS) -lpthread
+	$(MKLIB) -o threads $(BYTECODE_C_OBJS) $(PTHREAD_LINK)
 
 st_stubs_b.o: st_stubs.c st_posix.h
 	$(BYTECC) -O -I../../byterun $(BYTECCCOMPOPTS) $(SHAREDCCCOMPOPTS) \
@@ -51,12 +51,12 @@ st_stubs_n.o: st_stubs.c st_posix.h
 
 threads.cma: $(THREAD_OBJS)
 	$(MKLIB) -ocamlc '$(CAMLC)' -o threads $(THREAD_OBJS) \
-	  -cclib -lunix $(PTHREAD_LINK)
+	  -cclib -lunix $(PTHREAD_CAML_LINK)
 
 # See remark above: force static linking of libthreadsnat.a
 threads.cmxa: $(THREAD_OBJS:.cmo=.cmx)
 	$(CAMLOPT) -a -o threads.cmxa $(THREAD_OBJS:.cmo=.cmx) \
-	  -cclib -lthreadsnat $(PTHREAD_LINK)
+	  -cclib -lthreadsnat $(PTHREAD_CAML_LINK)
 
 # Note: I removed "-cclib -lunix" from the line above.
 # Indeed, if we link threads.cmxa, then we must also link unix.cmxa,

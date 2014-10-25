@@ -1,3 +1,95 @@
+## 2014年 10月  8日 水曜日 20:55:01 JST
+lex.ml, compact.ml
+
+## 2014年  9月 30日 火曜日 21:01:26 JST
+An analysis of ocamlbuild/ocaml_compiler.ml
+It seems that the env does not have definition of Pathname.t
+[evidence/20140930/env.types.txt](log)
+Just search by "occur" in below text file by "Pathname"
+
+Of course, pathname.cmi import pathname.t and indicate it as string.
+
+It could be good the compiler source table includes ocamlbuild and ocamldoc.
+It is real product using usual OCaml's features.
+
+## 2014年  9月 14日 日曜日 12:48:01 JST
+too bigな関数たち、format系以外
+型変数の上限、4くらいにはしたい
+
+util/misc.ml fst4
+ocamlbuild/ocaml_compiler.ml link_from_file
+parsing/asp_mapper.ml map_tuple, map_tuple3
+
+## 2014年  9月 13日 土曜日 20:24:26 JST
+../boot/ocamlrun ../ocamlopt -strict-sequence -w +33..39 -g -warn-error A-3-26-32 -bin-annot -nostdlib -safe-string `./Compflags camlinternalFormat.cmx` -c camlinternalFormat.ml
+
+## 2014年  9月 13日 土曜日 04:04:40 JST
+今まで見てなかった例外が起きる原因
+* unifyのTconstrのassertionが失敗する
+ocamlbuildのPathname.t と stringのunifyとか
+Pathname.tはmliファイルでシグニチャをincludeしており、
+その中にtype t = stringと書いてある
+なんでfull_expand_typeで展開してないのか
+
+* Path.headの例外
+IDがないとshadowingしていたりすると、一意に決まらない？
+
+## 2014年  9月 10日 水曜日 00:04:41 JST
+ブートストラップ成功した
+そのためにrename_ident.mlを本来例外を投げて死ぬべきところを変更してある(234行目)
+むなしい
+
+## 2014年  9月  9日 火曜日 21:00:00 JST
+make opt.optのときだけインターフェイスを作りなおすのは無理だという結論
+ocamlcを改造しようとしてるがrename_ident.mlまわりのバグに出会う
+モウダメ
+
+
+## 2014年  8月 30日 土曜日 09:30:05 JST
+[http://qiita.com/xtetsuji/items/555a1ef19ed21ee42873](upstreamの設定)
+
+に書いてあるとおりに、upstreamを設定し本家と追従してみる
+今ある4.02のコードは3ヶ月前までの内容
+本家に追従したら今起きてるエラー解決しないかなーとか思ったけど甘かった
+git mergeしてコンパイル通そうとしたら別のエラーでコンパイルできない
+FormatまわりでcamlinternalFormatBasicとか読めないので諦める
+コンパイル改造とかめんどくさすぎてやめたい
+4.02にはバグもあるだろうし本家に追従したほうがいいんだろうけど
+
+一時的にmergeしたものをgit stashして保管しておこうとしたけど
+git stash popするときにUntruckなファイルが変更されてると
+popできないらしくgit merge "stash@{1}"とか書くことに成る
+
+git生産性悪いんじゃないかと思い始める、githubにおいて
+オープンな開発するわけじゃあるまいし
+
+## 2014年  8月 26日 火曜日 23:43:31 JST
+型の展開は何とかなったので、次の問題をとく
+コード生成部分をリンクするときにmake inconsistent assumptionをおこす
+
+boot/ocamlrun ./ocamlopt -nostdlib -I stdlib -I otherlibs/dynlink -g -strict-sequence -w +33..39+48 -warn-error A-26 -bin-annot -safe-string -I utils -I parsing -I typing -I bytecomp -I asmcomp -I driver -I toplevel -I tools -c asmcomp/mach.ml
+File "asmcomp/mach.ml", line 1:
+Error: The files asmcomp/arch.cmi and asmcomp/mach.cmi
+       make inconsistent assumptions over interface Arch
+
+しらべたことまとめ
+* origin/4.02とdiffをとってみるけどコード生成部分のコードは全く一緒である
+* mach.cmiとarch.cmiをrmしてからコンパイルすると通るがリンク時にcmoが不整合と言われる
+* http://caml.inria.fr/mantis/view.php?id=6344 に同様の問題があるが解決法が書いてない！
+
+## 2014年  8月 18日 月曜日 21:27:16 JST
+* 型の展開、full_expandは恐らく最初の型のデータ構造しか見てないため
+(Head系の展開関数しか呼んでない)展開できてなかった模様
+ぜんぜんfull_expanではない、なんじゃこれ。
+* Env.tの型隠蔽がなくなるようにmliを編集
+
+## 2014年  8月 16日 土曜日 17:50:13 JST
+* rename_ident.ml のUnifyを変更、前言っていたAssertionでは落ちなくなった
+* 別のAssertionに失敗する、Unify.unify_typexprのTconstrのときのパターン
+問題は型の展開が完全でないせい。あらたに追加した/test_file/alias.mlでもAssertで
+落ちる。Ctype.full_expandではうまく展開できていない？
+
+
 ## 2014年  7月 31日 木曜日 02:26:54 JST
 
 * rename_ident.mlを作成

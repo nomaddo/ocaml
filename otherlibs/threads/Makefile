@@ -16,10 +16,10 @@ include ../../config/Makefile
 CC=$(BYTECC)
 CFLAGS=-I../../byterun -O $(BYTECCCOMPOPTS) $(SHAREDCCCOMPOPTS) -g
 ROOTDIR=../..
-CAMLC=$(ROOTDIR)/boot/ocamlrun $(ROOTDIR)/ocamlc -nostdlib \
+CAMLC=$(ROOTDIR)/boot/ocamlrun $(ROOTDIR)/ocamlc -nostdlib -g \
       -I $(ROOTDIR)/stdlib -I $(ROOTDIR)/otherlibs/unix
 MKLIB=../../boot/ocamlrun ../../tools/ocamlmklib
-COMPFLAGS=-w +33..39 -warn-error A-26 -bin-annot -safe-string
+COMPFLAGS=-w +33..39-26 -warn-error A-3-26-32 -bin-annot -safe-string -g
 
 C_OBJS=scheduler.o
 
@@ -27,21 +27,21 @@ CAML_OBJS=thread.cmo mutex.cmo condition.cmo event.cmo threadUnix.cmo
 
 LIB=../../stdlib
 
-LIB_OBJS=$(LIB)/camlinternalFormatBasics.cmo pervasives.cmo \
-  $(LIB)/array.cmo $(LIB)/list.cmo $(LIB)/char.cmo $(LIB)/string.cmo        \
-  $(LIB)/sys.cmo $(LIB)/sort.cmo marshal.cmo $(LIB)/obj.cmo                 \
-  $(LIB)/int32.cmo $(LIB)/int64.cmo $(LIB)/nativeint.cmo                    \
-  $(LIB)/lexing.cmo $(LIB)/parsing.cmo $(LIB)/set.cmo $(LIB)/map.cmo        \
-  $(LIB)/stack.cmo $(LIB)/queue.cmo $(LIB)/camlinternalLazy.cmo             \
-  $(LIB)/lazy.cmo $(LIB)/stream.cmo $(LIB)/buffer.cmo                       \
-  $(LIB)/printf.cmo $(LIB)/arg.cmo $(LIB)/printexc.cmo $(LIB)/gc.cmo        \
-  $(LIB)/digest.cmo $(LIB)/random.cmo $(LIB)/hashtbl.cmo                    \
-  $(LIB)/format.cmo $(LIB)/scanf.cmo $(LIB)/callback.cmo \
-  $(LIB)/camlinternalOO.cmo              \
-  $(LIB)/oo.cmo $(LIB)/camlinternalMod.cmo $(LIB)/genlex.cmo                \
-  $(LIB)/weak.cmo $(LIB)/filename.cmo                   \
-  $(LIB)/complex.cmo $(LIB)/arrayLabels.cmo $(LIB)/listLabels.cmo           \
-  $(LIB)/stringLabels.cmo $(LIB)/stdLabels.cmo $(LIB)/moreLabels.cmo
+LIB_OBJS=$(LIB)/camlinternalFormatBasics.cmo pervasives.cmo		\
+  $(LIB)/array.cmo $(LIB)/list.cmo $(LIB)/char.cmo $(LIB)/bytes.cmo	\
+  $(LIB)/string.cmo $(LIB)/sys.cmo $(LIB)/sort.cmo $(LIB)/marshal.cmo	\
+  $(LIB)/obj.cmo $(LIB)/int32.cmo $(LIB)/int64.cmo			\
+  $(LIB)/nativeint.cmo $(LIB)/lexing.cmo $(LIB)/parsing.cmo		\
+  $(LIB)/set.cmo $(LIB)/map.cmo $(LIB)/stack.cmo $(LIB)/queue.cmo	\
+  $(LIB)/camlinternalLazy.cmo $(LIB)/lazy.cmo $(LIB)/stream.cmo		\
+  $(LIB)/buffer.cmo $(LIB)/camlinternalFormat.cmo $(LIB)/printf.cmo	\
+  $(LIB)/arg.cmo $(LIB)/printexc.cmo $(LIB)/gc.cmo $(LIB)/digest.cmo	\
+  $(LIB)/random.cmo $(LIB)/hashtbl.cmo $(LIB)/format.cmo		\
+  $(LIB)/scanf.cmo $(LIB)/callback.cmo $(LIB)/camlinternalOO.cmo	\
+  $(LIB)/oo.cmo $(LIB)/camlinternalMod.cmo $(LIB)/genlex.cmo		\
+  $(LIB)/weak.cmo $(LIB)/filename.cmo $(LIB)/complex.cmo		\
+  $(LIB)/arrayLabels.cmo $(LIB)/listLabels.cmo $(LIB)/bytesLabels.cmo	\
+  $(LIB)/stringLabels.cmo $(LIB)/moreLabels.cmo $(LIB)/stdLabels.cmo
 
 UNIXLIB=../unix
 

@@ -1,8 +1,8 @@
-(**** file testinterp/t301-object.ml 
-   suggested by Jacques Garrigue to Basile Starynkevitch 
+(**** file testinterp/t301-object.ml
+   suggested by Jacques Garrigue to Basile Starynkevitch
 
    compilable with
-ocamlc -nostdlib -I ../../stdlib \
+ocamlc -nostdlib -g -I ../../stdlib \
   ../../stdlib/pervasives.cmo ../../stdlib/camlinternalOO.cmo \
   t301-object.ml -o t301-object.byte
 

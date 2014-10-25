@@ -13,8 +13,8 @@
 include ../config/Makefile
 
 ROOTDIR=..
-CAMLC=$(ROOTDIR)/boot/ocamlrun $(ROOTDIR)/ocamlc -nostdlib -I $(ROOTDIR)/stdlib
-COMPFLAGS=-warn-error A-26 -safe-string $(INCLUDES)
+CAMLC=$(ROOTDIR)/boot/ocamlrun $(ROOTDIR)/ocamlc -nostdlib -g -I $(ROOTDIR)/stdlib
+COMPFLAGS=-warn-error A-3-26-32 -safe-string $(INCLUDES)
 LINKFLAGS=-linkall -I $(UNIXDIR)
 CAMLYACC=../boot/ocamlyacc
 YACCFLAGS=

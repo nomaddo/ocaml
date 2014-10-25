@@ -1,6 +1,7 @@
 open Asttypes
 open Ident
 open Typedtree
+open Format
 
 type literal = I | F | P
 type suffix = literal list
@@ -35,6 +36,10 @@ let (>>) e r = r := e::!r
 let (@|) f x = f x
 
 let max_size = 3
+
+(* module DMap = Map.Make(struct type t = Ident.t let compare = compare end) *)
+
+(* let map = ref DMap.empty *)
 
 module G = struct (* for get bound idents with type *)
   let idents = ref([]: (Ident.t * Types.type_expr) list)
@@ -71,11 +76,33 @@ module G = struct (* for get bound idents with type *)
     (names, stamps, types)
 end
 
+module SigUtil = struct
+  let sg : Types.signature option ref = ref (Obj.magic ())
+  let exists = ref false
+
+  let set_flag = function
+    | None -> exists := false
+    | Some _ -> exists := false
+
+  (* let find_value sg id = *)
+  (*   let find = function *)
+  (*     | Tsig_value (ident, vdesc) -> Ident.same id ident *)
+  (*     | _ -> false in *)
+  (*   try Some (List.find find sg) *)
+  (*   with Not_found -> None *)
+end
+
 let rec iter3 f l1 l2 l3 =
   match (l1, l2, l3) with
     ([], [], []) -> ()
   | (a1::l1, a2::l2, a3::l3) -> f a1 a2 a3; iter3 f l1 l2 l3
   | (_, _, _) -> invalid_arg "List.iter3"
+
+let rec print_list s p ppf = function
+    | [] -> fprintf ppf ""
+    | x::[] -> fprintf ppf "%a" p x
+    | x::xs -> fprintf ppf "%a %s %a"
+                 p x s (print_list s p) xs
 
 (* entry table *)
 
@@ -110,7 +137,7 @@ and print_dupfun {orig_name; ty; suffixes; gtyvars; stamp; loc} =
   Format.printf "$$$$$$$$$$$$$$$$$$$$$$$$$@.";
   Printf.printf "name: %s, stamp: %d\n" orig_name stamp;
   List.iter print_suffix_cell suffixes;
-  print_string "type: "; print_endline (str_of_type ty);
+  printf "type: %a" print_type ty;
   print_string "gtyvars: "; print_int_list gtyvars;
   (* Location.print Format.std_formatter loc; *)
   Format.printf "$$$$$$$$$$$$$$$$$$$$$$$$$@."
@@ -121,36 +148,67 @@ and print_int_list = function
 
 (* print type *)
 
-and str_of_path = function
-  | Path.Pident id -> id.Ident.name
-  | Path.Pdot (t, str, int) -> str ^ "." ^ (str_of_path t)
-  | Path.Papply (t1, t2) -> ""
-
-and str_of_type type_expr =
+and print_type ppf ty =
   let open Types in
-  match type_expr.desc with
-  | Tlink e -> str_of_type e
-  | Tvar stropt  ->
-     let s =
-       match stropt with
-       | Some str -> str ^ " "
-       | None -> "V" in
-     s ^ "(" ^ (string_of_int type_expr.id) ^ ")"
-  | Tarrow (l, tyer1, tyer2, _) ->
-     str_of_type tyer1
-     ^ " -> "
-     ^ str_of_type tyer2
-  | Ttuple ls ->
-     List.map (fun tyer -> str_of_type tyer ^ ", ") ls
-     |> List.fold_left (fun a b -> a ^ b) ""
-  | Tconstr (path, tyer_list, _) ->
-     "("
-     ^ (List.map (fun tyer -> str_of_type tyer ^ ", ") tyer_list
-        |> List.fold_left (fun a b -> a ^ b) "")
-     ^ ") "
-     ^ (str_of_path path)
-  | Tobject (tyer, opref) -> ""
-  | _ -> "p_other"
+  match ty.desc with
+  | Tvar stropt -> begin
+      match stropt with
+      | Some str -> fprintf ppf "V(%s[%d])" str ty.id
+      | None -> fprintf ppf "V[%d]" ty.id
+    end
+  | Tarrow (label, ty1, ty2, _) -> begin
+      match label with
+      | "" -> fprintf ppf "(%a -> %a)"
+                print_type ty1 print_type ty2
+      | _ -> fprintf ppf "([~%s]:%a -> %a)"
+               label print_type ty1 print_type ty2
+    end
+  | Ttuple tys ->
+      fprintf ppf "(%a)" (print_list "*" print_type) tys
+  | Tconstr (path, tys, _) -> begin
+      try
+        fprintf ppf "[%a] %a"
+          (print_list "," print_type) tys Printtyp.path path
+      with Assert_failure _ ->
+        fprintf ppf "[%a] %a"
+          (print_list "," print_type) tys Printtyp.path path
+    end
+  | Tobject (ty, optref) ->
+      let p ppf (path, tys) =
+        fprintf ppf "%a [%a]"
+          Path.print path
+          (print_list "," print_type) tys in
+      let p_optref ppf optref =
+        match !optref with
+        | None -> fprintf ppf "None"
+        | Some l -> p ppf l in
+      fprintf ppf "Tobject (%a,[%a])"
+        print_type ty p_optref optref
+  | Tfield (str, fkind, ty1, ty2) ->
+      fprintf ppf "Tfield (%s, %a, %a, %a)" str
+        Types.print_field_kind fkind
+        print_type ty1
+        print_type ty2
+  | Tnil ->
+      fprintf ppf "Tnil"
+  | Tlink ty -> print_type ppf ty
+  | Tsubst ty -> fprintf ppf "Tsubst (%a)" print_type ty
+  | Tvariant row_desc -> Printtyp.raw_type_expr ppf ty
+  | Tunivar stropt ->
+      let s =
+        match stropt with
+        | None -> "None"
+        | Some str -> sprintf "Some(%s)" str in
+      fprintf ppf "Tunivar (%s)" s
+  | Tpoly (ty, tys) ->
+      fprintf ppf "Tpoly (%a, [%a])"
+        print_type ty
+        (print_list ";" print_type) tys
+  | Tpackage (path, lidents, tys) ->
+      fprintf ppf "Tpackage (%a, [%a], [%a])"
+        Path.print path
+        (print_list ";" Longident.print) lidents
+        (print_list ";" print_type) tys
 
 (* for duplication *)
 let make_suffixes num =
@@ -183,6 +241,27 @@ and rename_lidentloc lindentloc suffix =
   in
   {lindentloc with txt = add_suffix lindentloc.txt suffix}
 
+let rec check_ignore_case ty =
+  let open Types in
+  let check_list l =
+    List.map check_ignore_case l
+    |> List.fold_left (fun a b -> a && b) true in
+  match ty.desc with
+  | Tvar _ -> true
+  | Tarrow (_, ty1,ty2,_) ->
+      check_ignore_case ty1 && check_ignore_case ty2
+  | Ttuple tyl -> check_list tyl
+  | Tconstr (_,tyl, _) -> check_list tyl
+  | Tobject _ -> false
+  | Tfield _ -> false
+  | Tnil -> false
+  | Tlink ty -> check_ignore_case ty
+  | Tsubst _ -> false
+  | Tvariant _ -> false
+  | Tunivar _ -> false
+  | Tpoly _ -> false
+  | Tpackage _ -> false
+
 (* XXX: value_binding return value_binding list. Must be flatten. *)
 (* XXX: freetyvars and gtyvars are int list! (Types.type_expr.id list) *)
 let rec value_binding freetyvars vb =
@@ -196,13 +275,21 @@ let rec value_binding freetyvars vb =
     if List.length gtyvars <= max_size
     then List.length gtyvars
     else begin
-      Format.eprintf "DEBGU: too big: %d@." @| List.length gtyvars;
+      Format.eprintf "DEBUG: too big: %d@." @| List.length gtyvars;
       List.iter2 (Format.eprintf "%s %d@.") names stamps;
-      Format.eprintf "type: %s@." @| str_of_type ty;
+      Format.eprintf "type: %a@." print_type ty;
       Format.eprintf "@.";
       0
     end in
-  if size = 0 then [vb] else begin
+  if size = 0 then [vb] else
+  if not @| check_ignore_case ty
+  then begin
+    if true
+    then printf "ignore_case: %a@."
+        (print_list "," (fun ppf -> fprintf ppf "%s")) names;
+    [vb]
+  end else
+    begin
     let suffixes = make_suffixes size in
     let new_vbs =
       List.map (map_vb gtyvars freetyvars vb) suffixes in
@@ -217,6 +304,7 @@ let rec value_binding freetyvars vb =
           ~ty:ty) names stamps types;
     map_vb gtyvars freetyvars vb [] :: new_vbs
   end
+
 
 and map_vb gtyvars freetyvars vb suffix =
   let new_pat = rename_pat suffix vb.vb_pat in
@@ -397,7 +485,9 @@ and module_expr mod_expr =
       module_expr mod_expr2
   | Tmod_functor (ident, strloc, modtyopt, mod_expr2) ->
       let new_mod_expr = module_expr mod_expr2 in
-      let mod_desc = Tmod_functor (ident, strloc, modtyopt, new_mod_expr) in
+      let mod_desc =
+        Tmod_functor
+          (ident, strloc, modtyopt, new_mod_expr) in
       {mod_expr with mod_desc}
   | _ -> mod_expr
 
@@ -405,7 +495,10 @@ and structure str =
   let items = List.map structure_item str.str_items in
   {str with str_items = items}
 
-let structure str =
+let structure str sg =
   let str = structure str in
-  if !Clflags.dump_typedtree then List.iter print_dupfun !dupfun_table;
+  SigUtil.sg := sg;
+  SigUtil.set_flag sg;
+  if !Clflags.dump_typedtree
+  then List.iter print_dupfun !dupfun_table;
   str

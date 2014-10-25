@@ -73,9 +73,10 @@ let mk_dtypes f =
   "-dtypes", Arg.Unit f, " (deprecated) same as -annot"
 ;;
 
-let mk_for_pack_byt () =
-  "-for-pack", Arg.String ignore,
-  "<ident>  Ignored (for compatibility with ocamlopt)"
+let mk_for_pack_byt f =
+  "-for-pack", Arg.String f,
+  "<ident>  Generate code that can later be `packed' with\n\
+  \     ocamlc -pack -o <ident>.cmo"
 ;;
 
 let mk_for_pack_opt f =
@@ -446,6 +447,21 @@ let mk_dstartup f =
   "-dstartup", Arg.Unit f, " (undocumented)"
 ;;
 
+let mk_opaque f =
+  "-opaque", Arg.Unit f,
+  " Does not generate cross-module optimization information\n\
+  \     (reduces necessary recompilation on module change)"
+;;
+
+let mk_strict_formats f =
+  "-strict-formats", Arg.Unit f,
+  " Reject invalid formats accepted by legacy implementations\n\
+  \     (Warning: Invalid formats may behave differently from\n\
+  \      previous OCaml versions, and will become always-rejected\n\
+  \      in future OCaml versions. You should use this flag\n\
+  \      to detect and fix invalid formats.)"
+;;
+
 let mk__ f =
   "-", Arg.String f,
   "<file>  Treat <file> as a file name (even if it starts with `-')"
@@ -471,6 +487,7 @@ module type Common_options = sig
   val _safe_string : unit -> unit
   val _short_paths : unit -> unit
   val _strict_sequence : unit -> unit
+  val _strict_formats : unit -> unit
   val _unsafe : unit -> unit
   val _unsafe_string : unit -> unit
   val _version : unit -> unit
@@ -489,6 +506,7 @@ module type Common_options = sig
 end;;
 
 module type Compiler_options =  sig
+  val _mydump : unit -> unit
   val _a : unit -> unit
   val _annot : unit -> unit
   val _binannot : unit -> unit
@@ -497,6 +515,7 @@ module type Compiler_options =  sig
   val _cclib : string -> unit
   val _ccopt : string -> unit
   val _config : unit -> unit
+  val _for_pack : string -> unit
   val _g : unit -> unit
   val _i : unit -> unit
   val _impl : string -> unit
@@ -518,7 +537,6 @@ module type Compiler_options =  sig
   val _v : unit -> unit
   val _verbose : unit -> unit
   val _where : unit -> unit
-
   val _nopervasives : unit -> unit
 end
 ;;
@@ -575,14 +593,13 @@ module type Optcomp_options = sig
   include Common_options
   include Compiler_options
   include Optcommon_options
-  val _for_pack : string -> unit
   val _no_float_const_prop : unit -> unit
   val _nodynlink : unit -> unit
   val _p : unit -> unit
   val _pp : string -> unit
   val _S : unit -> unit
   val _shared : unit -> unit
-  val _mydump : unit -> unit
+  val _opaque :  unit -> unit
 end;;
 
 module type Opttop_options = sig
@@ -596,6 +613,22 @@ module type Opttop_options = sig
   val _stdin : unit -> unit
 end;;
 
+module type Ocamldoc_options = sig
+  include Common_options
+  val _impl : string -> unit
+  val _intf : string -> unit
+  val _intf_suffix : string -> unit
+  val _pp : string -> unit
+  val _principal : unit -> unit
+  val _rectypes : unit -> unit
+  val _safe_string : unit -> unit
+  val _short_paths : unit -> unit
+  val _thread : unit -> unit
+  val _v : unit -> unit
+  val _verbose : unit -> unit
+  val _vmthread : unit -> unit
+end;;
+
 module type Arg_list = sig
     val list : (string * Arg.spec * string) list
 end;;
@@ -603,6 +636,7 @@ end;;
 module Make_bytecomp_options (F : Bytecomp_options) =
 struct
   let list = [
+    mk_mydump F._mydump;        (* tokuda added *)
     mk_a F._a;
     mk_absname F._absname;
     mk_annot F._annot;
@@ -617,7 +651,7 @@ struct
     mk_dllib F._dllib;
     mk_dllpath F._dllpath;
     mk_dtypes F._annot;
-    mk_for_pack_byt ();
+    mk_for_pack_byt F._for_pack;
     mk_g_byt F._g;
     mk_i F._i;
     mk_I F._I;
@@ -649,6 +683,7 @@ struct
     mk_safe_string F._safe_string;
     mk_short_paths F._short_paths;
     mk_strict_sequence F._strict_sequence;
+    mk_strict_formats F._strict_formats;
     mk_thread F._thread;
     mk_unsafe F._unsafe;
     mk_unsafe_string F._unsafe_string;
@@ -699,6 +734,7 @@ struct
     mk_short_paths F._short_paths;
     mk_stdin F._stdin;
     mk_strict_sequence F._strict_sequence;
+    mk_strict_formats F._strict_formats;
     mk_unsafe F._unsafe;
     mk_unsafe_string F._unsafe_string;
     mk_version F._version;
@@ -714,6 +750,7 @@ struct
     mk_drawlambda F._drawlambda;
     mk_dlambda F._dlambda;
     mk_dinstr F._dinstr;
+
   ]
 end;;
 
@@ -765,6 +802,7 @@ struct
     mk_shared F._shared;
     mk_short_paths F._short_paths;
     mk_strict_sequence F._strict_sequence;
+    mk_strict_formats F._strict_formats;
     mk_thread F._thread;
     mk_unsafe F._unsafe;
     mk_unsafe_string F._unsafe_string;
@@ -800,7 +838,7 @@ struct
     mk_dscheduling F._dscheduling;
     mk_dlinear F._dlinear;
     mk_dstartup F._dstartup;
-
+    mk_opaque F._opaque;
   ]
 end;;
 
@@ -829,6 +867,7 @@ module Make_opttop_options (F : Opttop_options) = struct
     mk_short_paths F._short_paths;
     mk_stdin F._stdin;
     mk_strict_sequence F._strict_sequence;
+    mk_strict_formats F._strict_formats;
     mk_unsafe F._unsafe;
     mk_unsafe_string F._unsafe_string;
     mk_version F._version;
@@ -857,5 +896,42 @@ module Make_opttop_options (F : Opttop_options) = struct
     mk_dscheduling F._dscheduling;
     mk_dlinear F._dlinear;
     mk_dstartup F._dstartup;
+  ]
+end;;
+
+module Make_ocamldoc_options (F : Ocamldoc_options) =
+struct
+  let list = [
+    mk_absname F._absname;
+    mk_I F._I;
+    mk_impl F._impl;
+    mk_intf F._intf;
+    mk_intf_suffix F._intf_suffix;
+    mk_intf_suffix_2 F._intf_suffix;
+    mk_labels F._labels;
+    mk_modern F._labels;
+    mk_no_alias_deps F._no_alias_deps;
+    mk_no_app_funct F._no_app_funct;
+    mk_noassert F._noassert;
+    mk_nolabels F._nolabels;
+    mk_nostdlib F._nostdlib;
+    mk_open F._open;
+    mk_pp F._pp;
+    mk_ppx F._ppx;
+    mk_principal F._principal;
+    mk_rectypes F._rectypes;
+    mk_safe_string F._safe_string;
+    mk_short_paths F._short_paths;
+    mk_strict_sequence F._strict_sequence;
+    mk_strict_formats F._strict_formats;
+    mk_thread F._thread;
+    mk_unsafe_string F._unsafe_string;
+    mk_v F._v;
+    mk_verbose F._verbose;
+    mk_version F._version;
+    mk_vmthread F._vmthread;
+    mk_vnum F._vnum;
+    mk_w F._w;
+    mk__ F.anonymous;
   ]
 end;;

@@ -11,9 +11,9 @@
 #########################################################################
 
 # The lexer generator
-CAMLC=../boot/ocamlrun ../boot/ocamlc -strict-sequence -nostdlib -I ../boot
-CAMLOPT=../boot/ocamlrun ../ocamlopt -nostdlib -I ../stdlib
-COMPFLAGS=-w +33..39 -warn-error A-26 -bin-annot -safe-string
+CAMLC=../boot/ocamlrun ../boot/ocamlc -strict-sequence -nostdlib -g -I ../boot
+CAMLOPT=../boot/ocamlrun ../ocamlopt -nostdlib -g -I ../stdlib
+COMPFLAGS=-w +33..39-26 -warn-error A-3-26-32 -bin-annot -safe-string
 CAMLYACC=../boot/ocamlyacc
 YACCFLAGS=-v
 CAMLLEX=../boot/ocamlrun ../boot/ocamllex

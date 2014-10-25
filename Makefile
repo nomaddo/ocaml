@@ -17,10 +17,10 @@ include stdlib/StdlibModules
 
 CAMLC=boot/ocamlrun boot/ocamlc -nostdlib -I boot -g
 CAMLOPT=boot/ocamlrun ./ocamlopt -nostdlib -I stdlib -I otherlibs/dynlink -g
-# [tokuda] [XXX] add "-26" to not stop compiling
-COMPFLAGS=-strict-sequence -w +33..39+48 -warn-error A-26 -bin-annot \
+# [tokuda] [XXX] add "-3-26-32" to not stop compiling
+COMPFLAGS=-g -strict-sequence -w +33..39+48-26 -warn-error A-3-26-32 -bin-annot \
           -safe-string $(INCLUDES)
-LINKFLAGS=
+LINKFLAGS=-g
 
 CAMLYACC=boot/ocamlyacc
 YACCFLAGS=-v
@@ -70,7 +70,8 @@ COMP=bytecomp/lambda.cmo bytecomp/printlambda.cmo \
   bytecomp/translclass.cmo bytecomp/translmod.cmo \
   bytecomp/simplif.cmo bytecomp/runtimedef.cmo \
   driver/pparse.cmo driver/main_args.cmo \
-  driver/compenv.cmo driver/compmisc.cmo
+  driver/compenv.cmo driver/compmisc.cmo \
+  driver/dupfun.cmo driver/rename_ident.cmo
 
 COMMON=$(UTILS) $(PARSING) $(TYPING) $(COMP) tools/untypeast.cmo
 
@@ -97,8 +98,7 @@ ASMCOMP=asmcomp/arch.cmo asmcomp/debuginfo.cmo \
   asmcomp/schedgen.cmo asmcomp/scheduling.cmo \
   asmcomp/emitaux.cmo asmcomp/emit.cmo asmcomp/asmgen.cmo \
   asmcomp/asmlink.cmo asmcomp/asmlibrarian.cmo asmcomp/asmpackager.cmo \
-  driver/opterrors.cmo \
-  driver/dupfun.cmo driver/rename_ident.cmo driver/optcompile.cmo
+  driver/opterrors.cmo driver/optcompile.cmo
 
 TOPLEVEL=toplevel/genprintval.cmo toplevel/toploop.cmo \
   toplevel/trace.cmo toplevel/topdirs.cmo toplevel/topmain.cmo
@@ -369,19 +369,26 @@ installoptopt:
 	cd $(INSTALL_COMPLIBDIR) && $(RANLIB) ocamlcommon.a ocamlbytecomp.a \
 	   ocamloptcomp.a
 
+# Run all tests
+
+tests: opt.opt
+	cd testsuite; $(MAKE) clean && $(MAKE) all
+
+# The clean target
+
 clean:: partialclean
 
 # Shared parts of the system
 
 compilerlibs/ocamlcommon.cma: $(COMMON)
-	$(CAMLC) -a -o $@ $(COMMON)
+	$(CAMLC) -a -linkall -o $@ $(COMMON)
 partialclean::
 	rm -f compilerlibs/ocamlcommon.cma
 
 # The bytecode compiler
 
-compilerlibs/ocamlbytecomp.cma: $(BYTECOMP)
-	$(CAMLC) -a -o $@ $(BYTECOMP)
+compilerlibs/ocamlbytecomp.cma: $(ASMCOMP) $(BYTECOMP)
+	$(CAMLC) -a -o $@ $(ASMCOMP) $(BYTECOMP)
 partialclean::
 	rm -f compilerlibs/ocamlbytecomp.cma
 
@@ -493,14 +500,14 @@ beforedepend:: parsing/lexer.ml
 # Shared parts of the system compiled with the native-code compiler
 
 compilerlibs/ocamlcommon.cmxa: $(COMMON:.cmo=.cmx)
-	$(CAMLOPT) -a -o $@ $(COMMON:.cmo=.cmx)
+	$(CAMLOPT) -a -linkall -o $@ $(COMMON:.cmo=.cmx)
 partialclean::
 	rm -f compilerlibs/ocamlcommon.cmxa compilerlibs/ocamlcommon.a
 
 # The bytecode compiler compiled with the native-code compiler
 
-compilerlibs/ocamlbytecomp.cmxa: $(BYTECOMP:.cmo=.cmx)
-	$(CAMLOPT) -a -o $@ $(BYTECOMP:.cmo=.cmx)
+compilerlibs/ocamlbytecomp.cmxa: $(ASMCOMP:.cmo=.cmx) $(BYTECOMP:.cmo=.cmx)
+	$(CAMLOPT) -a -o $@ $(ASMCOMP:.cmo=.cmx) $(BYTECOMP:.cmo=.cmx)
 partialclean::
 	rm -f compilerlibs/ocamlbytecomp.cmxa compilerlibs/ocamlbytecomp.a
 
