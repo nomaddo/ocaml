@@ -867,9 +867,9 @@ driver/compile.cmo : utils/warnings.cmi tools/untypeast.cmi \
     bytecomp/printlambda.cmi bytecomp/printinstr.cmi parsing/printast.cmi \
     parsing/pprintast.cmi driver/pparse.cmi utils/misc.cmi \
     parsing/location.cmi typing/includemod.cmi typing/env.cmi \
-    bytecomp/emitcode.cmi driver/dupfun.cmo driver/compmisc.cmi \
-    asmcomp/compilenv.cmi driver/compenv.cmi utils/clflags.cmi \
-    utils/ccomp.cmi bytecomp/bytegen.cmi driver/compile.cmi
+    bytecomp/emitcode.cmi driver/dupfun.cmo driver/delete.cmo \
+    driver/compmisc.cmi asmcomp/compilenv.cmi driver/compenv.cmi \
+    utils/clflags.cmi utils/ccomp.cmi bytecomp/bytegen.cmi driver/compile.cmi
 driver/compile.cmx : utils/warnings.cmx tools/untypeast.cmx \
     typing/typemod.cmx typing/typedtree.cmx typing/typecore.cmx \
     bytecomp/translmod.cmx typing/stypes.cmx bytecomp/simplif.cmx \
@@ -877,9 +877,9 @@ driver/compile.cmx : utils/warnings.cmx tools/untypeast.cmx \
     bytecomp/printlambda.cmx bytecomp/printinstr.cmx parsing/printast.cmx \
     parsing/pprintast.cmx driver/pparse.cmx utils/misc.cmx \
     parsing/location.cmx typing/includemod.cmx typing/env.cmx \
-    bytecomp/emitcode.cmx driver/dupfun.cmx driver/compmisc.cmx \
-    asmcomp/compilenv.cmx driver/compenv.cmx utils/clflags.cmx \
-    utils/ccomp.cmx bytecomp/bytegen.cmx driver/compile.cmi
+    bytecomp/emitcode.cmx driver/dupfun.cmx driver/delete.cmx \
+    driver/compmisc.cmx asmcomp/compilenv.cmx driver/compenv.cmx \
+    utils/clflags.cmx utils/ccomp.cmx bytecomp/bytegen.cmx driver/compile.cmi
 driver/compmisc.cmo : typing/typemod.cmi utils/misc.cmi \
     parsing/longident.cmi parsing/location.cmi typing/ident.cmi \
     typing/env.cmi utils/config.cmi driver/compenv.cmi utils/clflags.cmi \
@@ -888,6 +888,10 @@ driver/compmisc.cmx : typing/typemod.cmx utils/misc.cmx \
     parsing/longident.cmx parsing/location.cmx typing/ident.cmx \
     typing/env.cmx utils/config.cmx driver/compenv.cmx utils/clflags.cmx \
     parsing/asttypes.cmi driver/compmisc.cmi
+driver/delete.cmo : typing/types.cmi typing/typedtree.cmi \
+    driver/rename_ident.cmo typing/ident.cmi driver/dupfun.cmo
+driver/delete.cmx : typing/types.cmx typing/typedtree.cmx \
+    driver/rename_ident.cmx typing/ident.cmx driver/dupfun.cmx
 driver/dupfun.cmo : typing/types.cmi typing/typedtree.cmi \
     typing/printtyp.cmi typing/path.cmi parsing/longident.cmi \
     parsing/location.cmi typing/ident.cmi typing/ctype.cmi utils/clflags.cmi \
@@ -916,7 +920,7 @@ driver/optcompile.cmo : utils/warnings.cmi tools/untypeast.cmi \
     driver/rename_ident.cmo typing/printtyped.cmi typing/printtyp.cmi \
     bytecomp/printlambda.cmi parsing/printast.cmi parsing/pprintast.cmi \
     driver/pparse.cmi utils/misc.cmi typing/includemod.cmi typing/env.cmi \
-    driver/dupfun.cmo utils/config.cmi driver/compmisc.cmi \
+    driver/dupfun.cmo driver/delete.cmo utils/config.cmi driver/compmisc.cmi \
     asmcomp/compilenv.cmi driver/compenv.cmi utils/clflags.cmi \
     utils/ccomp.cmi asmcomp/asmgen.cmi driver/optcompile.cmi
 driver/optcompile.cmx : utils/warnings.cmx tools/untypeast.cmx \
@@ -925,7 +929,7 @@ driver/optcompile.cmx : utils/warnings.cmx tools/untypeast.cmx \
     driver/rename_ident.cmx typing/printtyped.cmx typing/printtyp.cmx \
     bytecomp/printlambda.cmx parsing/printast.cmx parsing/pprintast.cmx \
     driver/pparse.cmx utils/misc.cmx typing/includemod.cmx typing/env.cmx \
-    driver/dupfun.cmx utils/config.cmx driver/compmisc.cmx \
+    driver/dupfun.cmx driver/delete.cmx utils/config.cmx driver/compmisc.cmx \
     asmcomp/compilenv.cmx driver/compenv.cmx utils/clflags.cmx \
     utils/ccomp.cmx asmcomp/asmgen.cmx driver/optcompile.cmi
 driver/opterrors.cmo : parsing/location.cmi driver/opterrors.cmi

@@ -139,6 +139,7 @@ module Options = Main_args.Make_bytecomp_options (struct
   let _dinstr = set dump_instr
   let anonymous = anonymous
   let _mydump = set mydump
+  let _tbl = set tbl
 end)
 
 let main () =

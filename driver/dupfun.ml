@@ -11,6 +11,7 @@ type suffix_cell = {
   mutable is_used: bool
 }
 
+let dup_label = "Duplicated"
 
 (* TODO: XXX: rename suffix_cell  *)
 
@@ -76,21 +77,21 @@ module G = struct (* for get bound idents with type *)
     (names, stamps, types)
 end
 
-module SigUtil = struct
-  let sg : Types.signature option ref = ref (Obj.magic ())
-  let exists = ref false
+(* module SigUtil = struct *)
+(*   let sg : Types.signature option ref = ref (Obj.magic ()) *)
+(*   let exists = ref false *)
 
-  let set_flag = function
-    | None -> exists := false
-    | Some _ -> exists := false
+(*   let set_flag = function *)
+(*     | None -> exists := false *)
+(*     | Some _ -> exists := false *)
 
-  (* let find_value sg id = *)
-  (*   let find = function *)
-  (*     | Tsig_value (ident, vdesc) -> Ident.same id ident *)
-  (*     | _ -> false in *)
-  (*   try Some (List.find find sg) *)
-  (*   with Not_found -> None *)
-end
+(*   (\* let find_value sg id = *\) *)
+(*   (\*   let find = function *\) *)
+(*   (\*     | Tsig_value (ident, vdesc) -> Ident.same id ident *\) *)
+(*   (\*     | _ -> false in *\) *)
+(*   (\*   try Some (List.find find sg) *\) *)
+(*   (\*   with Not_found -> None *\) *)
+(* end *)
 
 let rec iter3 f l1 l2 l3 =
   match (l1, l2, l3) with
@@ -106,13 +107,14 @@ let rec print_list s p ppf = function
 
 (* entry table *)
 
-let entry_table ~orig_name ~suffixes ~gtyvars ~ty ~stamp ~loc =
-  let contexts =
-    List.map (fun suffix -> List.combine gtyvars suffix) suffixes in
-  let suffixes =
-    List.map2 (fun suffix context ->
-      {suffix; context; is_used=false}) suffixes contexts in
-  {orig_name; suffixes; gtyvars; stamp; loc; ty}
+let make_cell suffix context =
+  {suffix; context; is_used=false}
+
+let make_context gtyvars suffixes =
+  List.map (fun suffix -> List.combine gtyvars suffix) suffixes
+
+let entry_table ~orig_name ~gtyvars ~cells ~ty ~stamp ~loc =
+  {orig_name; suffixes=cells; gtyvars; stamp; loc; ty}
   >> dupfun_table
 
 (* for print dupfun_table *)
@@ -127,23 +129,22 @@ and str_of_suffix suffix =
 
 and print_suffix (suffix: suffix) =
   str_of_suffix suffix
-  |> print_string
+  |> printf "%s"
 
 and print_suffix_cell {suffix; is_used} =
   print_suffix suffix;
-  Printf.printf " is_used: %b\n" is_used
+  printf " is_used: %b@." is_used
 
 and print_dupfun {orig_name; ty; suffixes; gtyvars; stamp; loc} =
-  Format.printf "$$$$$$$$$$$$$$$$$$$$$$$$$@.";
-  Printf.printf "name: %s, stamp: %d\n" orig_name stamp;
+  printf "$$$$$$$$$$$$$$$$$$$$$$$$$@.";
+  printf "name: %s, stamp: %d\n" orig_name stamp;
   List.iter print_suffix_cell suffixes;
-  printf "type: %a" print_type ty;
-  print_string "gtyvars: "; print_int_list gtyvars;
+  printf "gtyvars: "; print_flush (); print_int_list gtyvars;
   (* Location.print Format.std_formatter loc; *)
-  Format.printf "$$$$$$$$$$$$$$$$$$$$$$$$$@."
+  printf "$$$$$$$$$$$$$$$$$$$$$$$$$@."
 
 and print_int_list = function
-  | [] -> print_endline ""
+  | [] -> printf "@."
   | x::xs -> Printf.printf "%d " x; print_int_list xs
 
 (* print type *)
@@ -290,26 +291,34 @@ let rec value_binding freetyvars vb =
     [vb]
   end else
     begin
-    let suffixes = make_suffixes size in
-    let new_vbs =
-      List.map (map_vb gtyvars freetyvars vb) suffixes in
-    let loc = vb.vb_pat.pat_loc in
-    iter3 (fun name stamp ty->
-        entry_table
-          ~orig_name:name
-          ~suffixes:suffixes
-          ~gtyvars:gtyvars
-          ~stamp:stamp
-          ~loc:loc
-          ~ty:ty) names stamps types;
-    map_vb gtyvars freetyvars vb [] :: new_vbs
-  end
+      let suffixes = make_suffixes size in
+      let contexts = make_context gtyvars suffixes in
+      let cells = List.map2 make_cell suffixes contexts in
+      let new_vbs =
+        List.map2 (mangle_vb gtyvars freetyvars vb) cells suffixes in
+      let loc = vb.vb_pat.pat_loc in
+      iter3 (fun name stamp ty->
+          entry_table
+            ~orig_name:name
+            ~cells:cells
+            ~gtyvars:gtyvars
+            ~stamp:stamp
+            ~loc:loc
+            ~ty:ty) names stamps types;
+      map_vb gtyvars freetyvars vb :: new_vbs
+    end
 
+and map_vb gtyvars freetyvars vb =
+  let new_expr = expression (freetyvars @ gtyvars) vb.vb_expr in
+  {vb with vb_expr = new_expr}
 
-and map_vb gtyvars freetyvars vb suffix =
+and mangle_vb gtyvars freetyvars vb cell suffix =
+  let vb_attributes =
+    let re = {Asttypes.txt = dup_label; loc = Obj.magic (ref cell)} in
+    (re, Parsetree.PStr []) :: vb.vb_attributes in
   let new_pat = rename_pat suffix vb.vb_pat in
   let new_expr = expression (freetyvars @ gtyvars) vb.vb_expr in
-  {vb with vb_pat = new_pat; vb_expr = new_expr}
+  {vb with vb_pat = new_pat; vb_expr = new_expr; vb_attributes}
 
 and expression freetyvars exp =
   let desc =
@@ -495,10 +504,8 @@ and structure str =
   let items = List.map structure_item str.str_items in
   {str with str_items = items}
 
-let structure str sg =
+let structure str =
   let str = structure str in
-  SigUtil.sg := sg;
-  SigUtil.set_flag sg;
   if !Clflags.dump_typedtree
   then List.iter print_dupfun !dupfun_table;
   str

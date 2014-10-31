@@ -106,8 +106,9 @@ let implementation ppf sourcefile outputprefix =
 
       (* [begin tokuda] do the duplication *)
       ++ (fun (typedtree, module_corcion, _sig) ->
-        Dupfun.structure typedtree _sig
-        |> Rename_ident.structure, module_corcion)
+          Dupfun.structure typedtree
+          |> Rename_ident.structure
+          |> Delete.structure _sig, module_corcion)
       (* [end tokuda] *)
       ++ (fun x ->
           (if Dup_debug_flag.stage_debug

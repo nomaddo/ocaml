@@ -70,7 +70,6 @@ let (++) x f = f x
 
 let implementation ppf sourcefile outputprefix =
   Compmisc.init_path false;
-  Clflags.mydump := false;
   let modulename = module_of_filename ppf sourcefile outputprefix in
   Env.set_unit_name modulename;
   let env = Compmisc.initial_env() in
@@ -97,24 +96,20 @@ let implementation ppf sourcefile outputprefix =
       ast
       ++ print_if ppf Clflags.dump_parsetree Printast.implementation
       ++ print_if ppf Clflags.dump_source Pprintast.structure
-      (* [begin tokuda] *)
-      ++ (fun ptree ->
-          if !Clflags.mydump then
-            Format.eprintf "[begin tokuda]\n%a\n[end tokuda]@."
-              Pprintast.structure ptree;
-          ptree)
-      (* [end tokuda] *)
       ++ Typemod.type_implementation_with_sig sourcefile outputprefix modulename env
-
       (* [begin tokuda] do the duplication *)
       ++ (fun (typedtree, module_corcion, _sig) ->
-          Dupfun.structure typedtree _sig
-          |> Rename_ident.structure, module_corcion)
+          Dupfun.structure typedtree
+          |> Rename_ident.structure
+          |> Delete.structure _sig, module_corcion)
       (* [end tokuda] *)
       (* untyping and 2nd typing *)
       ++ (fun (tree, _) ->
           let ptree = Untypeast.untype_structure tree in
           (* [XXX] which of these initialiations are necessary? *)
+          if !Clflags.mydump then
+            Format.eprintf "[begin tokuda]\n%a\n[end tokuda]@."
+              Pprintast.structure ptree;
           Compmisc.init_path false;
           Env.set_unit_name modulename;
           let env = Compmisc.initial_env () in

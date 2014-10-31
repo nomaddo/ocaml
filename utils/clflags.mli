@@ -95,4 +95,5 @@ val keep_locs : bool ref
 val unsafe_string : bool ref
 
 val mydump : bool ref (* -mydump. tokuda added *)
+val tbl : bool ref
 val opaque : bool ref

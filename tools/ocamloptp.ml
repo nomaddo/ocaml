@@ -124,6 +124,7 @@ module Options = Main_args.Make_optcomp_options (struct
   let _opaque = option "-opaque"
 
   let _mydump = option "tokuda added"
+  let _tbl = option "tokuda added"
   let _opaque = option "-opaque"
 
   let anonymous = process_file
