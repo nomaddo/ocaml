@@ -71,7 +71,7 @@ COMP=bytecomp/lambda.cmo bytecomp/printlambda.cmo \
   bytecomp/simplif.cmo bytecomp/runtimedef.cmo \
   driver/pparse.cmo driver/main_args.cmo \
   driver/compenv.cmo driver/compmisc.cmo \
-  driver/dupfun.cmo driver/rename_ident.cmo
+  driver/dupfun.cmo driver/rename_ident.cmo driver/delete.cmo
 
 COMMON=$(UTILS) $(PARSING) $(TYPING) $(COMP) tools/untypeast.cmo
 

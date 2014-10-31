@@ -471,6 +471,10 @@ let mk_mydump f =
   "-mydump", Arg.Unit f, " print source code twice (before dup and after dup)"
 ;;
 
+let mk_tbl f =
+  "-tbl", Arg.Unit f, " print tbl"
+;;
+
 module type Common_options = sig
   val _absname : unit -> unit
   val _I : string -> unit
@@ -507,6 +511,7 @@ end;;
 
 module type Compiler_options =  sig
   val _mydump : unit -> unit
+  val _tbl : unit -> unit
   val _a : unit -> unit
   val _annot : unit -> unit
   val _binannot : unit -> unit
@@ -637,6 +642,7 @@ module Make_bytecomp_options (F : Bytecomp_options) =
 struct
   let list = [
     mk_mydump F._mydump;        (* tokuda added *)
+    mk_tbl F._tbl;
     mk_a F._a;
     mk_absname F._absname;
     mk_annot F._annot;
@@ -757,6 +763,8 @@ end;;
 module Make_optcomp_options (F : Optcomp_options) =
 struct
   let list = [
+    mk_mydump F._mydump;        (* tokuda added *)
+    mk_tbl F._tbl;
     mk_a F._a;
     mk_absname F._absname;
     mk_annot F._annot;
@@ -822,7 +830,6 @@ struct
     mk_dtypedtree F._dtypedtree;
     mk_drawlambda F._drawlambda;
     mk_dlambda F._dlambda;
-    mk_mydump F._mydump;        (* tokuda added *)
     mk_dclambda F._dclambda;
     mk_dcmm F._dcmm;
     mk_dsel F._dsel;

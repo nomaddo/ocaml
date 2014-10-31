@@ -107,6 +107,7 @@ module Options = Main_args.Make_bytecomp_options (struct
   let _dinstr = option "-dinstr"
   let anonymous = process_file
   let _mydump = option "-mydump"
+  let _tbl = option "-tbl"
 end);;
 
 let add_profarg s =
