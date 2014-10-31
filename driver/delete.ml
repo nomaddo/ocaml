@@ -9,7 +9,7 @@ let exists = ref false
 let set_sig optintf =
   match optintf with
   | None -> ()
-  | Some intf -> sig_intf := intf
+  | Some intf -> exists := true; sig_intf := intf
 
 let is_public id =
   let rec search = function
