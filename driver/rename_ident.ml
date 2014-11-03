@@ -17,16 +17,16 @@ let print_type = Dupfun.print_type
 let list_map f l =
   let rec map acc f = function
     | x :: xs -> map ((f x) :: acc) f xs
-    | [] -> acc in
-  List.rev (map [] f l)
+    | [] -> List.rev acc in
+  map [] f l
 
 let list_map2 f a b =
   let rec map acc f a b =
     match a, b with
     | x :: xs, y :: ys -> map ((f x y)::acc) f xs ys
-    | [] , [] -> acc
+    | [] , [] -> List.rev acc
     | [], _ | _, [] -> raise (Invalid_argument "list_map2") in
-  List.rev (map [] f a b)
+  map [] f a b
 
 module Unify = struct
   let rec unify_typexpr ty1 ty2 =
@@ -220,6 +220,7 @@ let rec value_binding context scope vb =
 
 and expression context scope exp =
   try
+    if !Clflags.mydump then Location.print_loc std_formatter exp.exp_loc;
     let desc =
       match exp.exp_desc with
       | Texp_ident (path, lidentloc, vdesc) as self when not_papply path -> begin
