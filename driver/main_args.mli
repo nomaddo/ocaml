@@ -50,6 +50,7 @@ end
 module type Compiler_options =  sig
   val _mydump : unit -> unit
   val _tbl : unit -> unit
+  val _stage : unit -> unit
   val _a : unit -> unit
   val _annot : unit -> unit
   val _binannot : unit -> unit

@@ -25,7 +25,6 @@ module Dup_debug_flag = struct
   let var_trace = false           (* affect mod.ml *)
   let too_big = true              (* affect mod.ml *)
   let dup_fun_table = false       (* affect mod.ml *)
-  let stage_debug = false         (* affect compile and optcompile *)
   let unification_result = false  (* affect dmod.ml *)
   let dmod_stack_flag = false      (* affect dmod.ml *)
   let dmod_dup_fun_table = false   (* affect dmod.ml *)
@@ -74,7 +73,6 @@ let (+++) (x, y) f = (x, f y)
 
 let implementation ppf sourcefile outputprefix =
   Compmisc.init_path true;
-  (* Clflags.mydump := false; *)
   let modulename = module_of_filename ppf sourcefile outputprefix in
   Env.set_unit_name modulename;
   let env = Compmisc.initial_env() in
@@ -95,13 +93,6 @@ let implementation ppf sourcefile outputprefix =
       ast
       ++ print_if ppf Clflags.dump_parsetree Printast.implementation
       ++ print_if ppf Clflags.dump_source Pprintast.structure
-      (* [begin tokuda] *)
-      ++ (fun ptree ->
-          if !Clflags.mydump then
-            Format.eprintf "[begin tokuda]\n%a\n[end tokuda]@."
-              Pprintast.structure ptree;
-          ptree)
-      (* [end tokuda] *)
       ++ Typemod.type_implementation_with_sig sourcefile outputprefix modulename env
 
       (* [begin tokuda] do the duplication *)
@@ -111,22 +102,19 @@ let implementation ppf sourcefile outputprefix =
           |> Delete.structure _sig, module_corcion)
       (* [end tokuda] *)
       ++ (fun x ->
-          (if Dup_debug_flag.stage_debug
+          (if !Clflags.stage
            then Format.eprintf "DEBUG: before Untypeast.untype_structure@.");
           x)
       ++ (fun (str, module_coercion) -> (* for Dup_debug_flag.stage_debug *)
           let ptree = Untypeast.untype_structure str in
-          if !Clflags.mydump then
-            Format.eprintf "[begin tokuda]\n%a\n[end tokuda]@."
-              Pprintast.structure ptree;
           ptree)
       ++ (fun x ->
-          (if Dup_debug_flag.stage_debug
+          (if !Clflags.stage
            then Format.eprintf "DEBUG: end Untypeast.untype_structure@.");
           x)
       (* 2nd typing *)
       ++ (fun x ->
-          (if Dup_debug_flag.stage_debug
+          (if !Clflags.stage
            then Format.eprintf "DEBUG: before 2nd typing@.");
           x)
       ++ (fun ptree ->
@@ -138,7 +126,7 @@ let implementation ppf sourcefile outputprefix =
           Typemod.type_implementation sourcefile outputprefix modulename env ptree
       )
       ++ (fun x ->
-          (if Dup_debug_flag.stage_debug
+          (if !Clflags.stage
            then Format.eprintf "DEBUG: after 2nd typing@.");
           x)
       (* 2nd untyping *)

@@ -153,6 +153,8 @@ module Options = Main_args.Make_optcomp_options (struct
   let _opaque = set opaque
 
   let _mydump = set mydump
+  let _tbl = set tbl
+  let _stage = set stage
   let _opaque = set opaque
   let anonymous = anonymous
 end);;
@@ -213,7 +215,7 @@ let main () =
     end;
     exit 0
   with x ->
-      Location.report_exception ppf x;
-      exit 2
+    Location.report_exception ppf x;
+    exit 2
 
 let _ = main ()

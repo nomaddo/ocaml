@@ -96,4 +96,5 @@ val unsafe_string : bool ref
 
 val mydump : bool ref (* -mydump. tokuda added *)
 val tbl : bool ref
+val stage : bool ref
 val opaque : bool ref
