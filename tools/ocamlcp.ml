@@ -108,6 +108,7 @@ module Options = Main_args.Make_bytecomp_options (struct
   let anonymous = process_file
   let _mydump = option "-mydump"
   let _tbl = option "-tbl"
+  let _stage = option "-stage"
 end);;
 
 let add_profarg s =

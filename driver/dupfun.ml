@@ -31,12 +31,12 @@ type dupfun =
    stamp: int;
    loc: Location.t}
 
-let dupfun_table : dupfun list ref = ref []
+let dupfun_table = Hashtbl.create 100
 
 let (>>) e r = r := e::!r
 let (@|) f x = f x
 
-let max_size = 3
+let max_size = 6
 
 (* module DMap = Map.Make(struct type t = Ident.t let compare = compare end) *)
 
@@ -114,8 +114,8 @@ let make_context gtyvars suffixes =
   List.map (fun suffix -> List.combine gtyvars suffix) suffixes
 
 let entry_table ~orig_name ~gtyvars ~cells ~ty ~stamp ~loc =
-  {orig_name; suffixes=cells; gtyvars; stamp; loc; ty}
-  >> dupfun_table
+  Hashtbl.add dupfun_table (orig_name, stamp)
+    {orig_name; suffixes=cells; gtyvars; stamp; loc; ty}
 
 (* for print dupfun_table *)
 let rec str_of_literal = function
@@ -507,5 +507,5 @@ and structure str =
 let structure str =
   let str = structure str in
   if !Clflags.dump_typedtree
-  then List.iter print_dupfun !dupfun_table;
+  then Hashtbl.iter (fun _ d -> print_dupfun d) dupfun_table;
   str

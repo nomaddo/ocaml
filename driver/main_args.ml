@@ -473,6 +473,9 @@ let mk_mydump f =
 
 let mk_tbl f =
   "-tbl", Arg.Unit f, " print tbl"
+
+let mk_stage f =
+  "-stage", Arg.Unit f, " print stage"
 ;;
 
 module type Common_options = sig
@@ -512,6 +515,7 @@ end;;
 module type Compiler_options =  sig
   val _mydump : unit -> unit
   val _tbl : unit -> unit
+  val _stage : unit -> unit
   val _a : unit -> unit
   val _annot : unit -> unit
   val _binannot : unit -> unit
@@ -643,6 +647,7 @@ struct
   let list = [
     mk_mydump F._mydump;        (* tokuda added *)
     mk_tbl F._tbl;
+    mk_stage F._stage;
     mk_a F._a;
     mk_absname F._absname;
     mk_annot F._annot;

@@ -140,10 +140,11 @@ module Options = Main_args.Make_bytecomp_options (struct
   let anonymous = anonymous
   let _mydump = set mydump
   let _tbl = set tbl
+  let _stage = set stage
 end)
 
 let main () =
-  try
+  (* try *)
     readenv ppf Before_args;
     Arg.parse Options.list anonymous usage;
     readenv ppf Before_link;
@@ -193,8 +194,8 @@ let main () =
       Warnings.check_fatal ();
     end;
     exit 0
-  with x ->
-    Location.report_exception ppf x;
-    exit 2
+  (* with x -> *)
+  (*   Location.report_exception ppf x; *)
+  (*   exit 2 *)
 
 let _ = main ()

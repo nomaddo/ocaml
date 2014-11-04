@@ -96,6 +96,7 @@ let dont_write_files = ref false        (* set to true under ocamldoc *)
 
 let mydump = ref false                  (* -mydump. tokuda added *)
 let tbl = ref false
+let stage = ref false
 
 let std_include_flag prefix =
   if !no_std_include then ""
