@@ -220,7 +220,7 @@ let rec value_binding context scope vb =
 
 and expression context scope exp =
   try
-    if !Clflags.mydump then Location.print_loc std_formatter exp.exp_loc;
+    if !Clflags.stage then Location.print std_formatter exp.exp_loc;
     let desc =
       match exp.exp_desc with
       | Texp_ident (path, lidentloc, vdesc) as self when not_papply path -> begin

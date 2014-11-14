@@ -299,10 +299,11 @@ let build_fields level =
   List.fold_right
     (fun (s, k, ty1) ty2 -> newty2 level (Tfield(s, k, ty1, ty2)))
 
+(* XXX : tokuda added the type annotation to make the type mono *)
 let associate_fields fields1 fields2 =
   let rec associate p s s' =
     function
-      (l, []) ->
+      ((l:(string * field_kind * type_expr) list), ([]:(string * field_kind * type_expr) list)) ->
         (List.rev p, (List.rev s) @ l, List.rev s')
     | ([], l') ->
         (List.rev p, List.rev s, (List.rev s') @ l')

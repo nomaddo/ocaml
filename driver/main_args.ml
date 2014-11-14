@@ -770,6 +770,7 @@ struct
   let list = [
     mk_mydump F._mydump;        (* tokuda added *)
     mk_tbl F._tbl;
+    mk_stage F._stage;
     mk_a F._a;
     mk_absname F._absname;
     mk_annot F._annot;

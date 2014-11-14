@@ -431,7 +431,16 @@ let sort_pattern_variables vs =
       Pervasives.compare (Ident.name x) (Ident.name y))
     vs
 
-let enter_orpat_variables loc env  p1_vs p2_vs =
+let enter_orpat_variables : Location.t ->
+  Env.t ->
+  (Ident.t * Types.type_expr *
+   string Asttypes.loc * Ast_helper.loc *
+   bool)
+    list ->
+  (Ident.t * Types.type_expr *
+   string Asttypes.loc * Ast_helper.loc *
+   bool)
+    list -> (Ident.t * Ident.t) list = fun loc env  p1_vs p2_vs ->
   (* unify_vars operate on sorted lists *)
 
   let p1_vs = sort_pattern_variables p1_vs

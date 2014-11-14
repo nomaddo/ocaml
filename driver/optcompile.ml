@@ -94,13 +94,14 @@ let implementation ppf sourcefile outputprefix =
       ++ print_if ppf Clflags.dump_parsetree Printast.implementation
       ++ print_if ppf Clflags.dump_source Pprintast.structure
       ++ Typemod.type_implementation_with_sig sourcefile outputprefix modulename env
-
+      ++ (fun x -> if !Clflags.stage then eprintf "DEBUG: before duplication@."; x)
       (* [begin tokuda] do the duplication *)
       ++ (fun (typedtree, module_corcion, _sig) ->
           Dupfun.structure typedtree
           |> Rename_ident.structure
           |> Delete.structure _sig, module_corcion)
       (* [end tokuda] *)
+      ++ (fun x -> if !Clflags.stage then eprintf "DEBUG: end duplication@."; x)
       ++ (fun x ->
           (if !Clflags.stage
            then Format.eprintf "DEBUG: before Untypeast.untype_structure@.");
