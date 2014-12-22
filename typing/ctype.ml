@@ -524,6 +524,7 @@ let rec free_vars_rec real ty =
   end
 
 let free_vars ?env ty =
+  (* output *)
   free_variables := [];
   really_closed := env;
   free_vars_rec true ty;
@@ -4492,3 +4493,13 @@ let rec collapse_conj env visited ty =
 
 let collapse_conj_params env params =
   List.iter (collapse_conj env []) params
+
+module TvarSet = struct
+  (* let real_variables ty = *)
+  (*   let l = free_vars ty in *)
+  (*   unmark_type ty; *)
+  (*   List.map fst (List.filter snd l) *)
+  let extract ty =
+    let tvars = free_variables ty in
+    List.filter (fun {level} -> generic_level = level) tvars
+end

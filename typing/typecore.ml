@@ -1257,8 +1257,11 @@ let add_pattern_variables ?check ?check_as env =
      (fun (id, ty, name, loc, as_var) env ->
        let check = if as_var then check_as else check in
        Env.add_value ?check id
-         {val_type = ty; val_kind = Val_reg; Types.val_loc = loc;
+         {val_type = ty;
+          val_kind = Val_reg;
+          Types.val_loc = loc;
           val_attributes = [];
+          val_tvars = [];
          } env
      )
      pv env,
@@ -1299,11 +1302,12 @@ let type_class_arg_pattern cl_num val_env met_env l spat =
            else Warnings.Unused_var_strict s in
          let id' = Ident.create (Ident.name id) in
          ((id', name, id, ty)::pv,
-          Env.add_value id' {val_type = ty;
-                             val_kind = Val_ivar (Immutable, cl_num);
-                             val_attributes = [];
-                             Types.val_loc = loc;
-                            } ~check
+          Env.add_value id'
+            {val_type = ty;
+             val_kind = Val_ivar (Immutable, cl_num);
+             val_attributes = [];
+             Types.val_loc = loc;
+             val_tvars = []} ~check
             env))
       !pattern_variables ([], met_env)
   in
@@ -1326,24 +1330,28 @@ let type_self_pattern cl_num privty val_env met_env par_env spat =
   pattern_variables := [];
   let (val_env, met_env, par_env) =
     List.fold_right
-      (fun (id, ty, name, loc, as_var) (val_env, met_env, par_env) ->
-         (Env.add_value id {val_type = ty;
-                            val_kind = Val_unbound;
-                            val_attributes = [];
-                            Types.val_loc = loc;
-                           } val_env,
-          Env.add_value id {val_type = ty;
-                            val_kind = Val_self (meths, vars, cl_num, privty);
-                            val_attributes = [];
-                            Types.val_loc = loc;
-                           }
+      (fun (id, ty, name, loc, as_var)
+        (val_env, met_env, par_env) ->
+         (Env.add_value id
+            {val_type = ty;
+             val_kind = Val_unbound;
+             val_attributes = [];
+             Types.val_loc = loc;
+             val_tvars = []} val_env,
+          Env.add_value id
+            { val_type = ty;
+              val_kind = Val_self (meths, vars, cl_num, privty);
+              val_attributes = [];
+              Types.val_loc = loc;
+              val_tvars = []}
             ~check:(fun s -> if as_var then Warnings.Unused_var s
                              else Warnings.Unused_var_strict s)
             met_env,
-          Env.add_value id {val_type = ty; val_kind = Val_unbound;
-                            val_attributes = [];
-                            Types.val_loc = loc;
-                           } par_env))
+          Env.add_value id
+            {val_type = ty; val_kind = Val_unbound;
+             val_attributes = [];
+             Types.val_loc = loc;
+             val_tvars = []} par_env))
       pv (val_env, met_env, par_env)
   in
   (pat, meths, vars, val_env, met_env, par_env)
@@ -1607,7 +1615,8 @@ let create_package_type loc env (p, l) =
        Exp.letmodule ~loc:sexp.pexp_loc
          name
          (Mod.unpack ~loc
-            (Exp.ident ~loc:name.loc (mkloc (Longident.Lident name.txt) name.loc)))
+            (Exp.ident ~loc:name.loc
+               (mkloc (Longident.Lident name.txt) name.loc)))
          sexp
      )
     sexp unpacks
@@ -2194,9 +2203,13 @@ and type_expect_ ?in_function env sexp ty_expected =
         match param.ppat_desc with
         | Ppat_any -> Ident.create "_for", env
         | Ppat_var {txt} ->
-            Env.enter_value txt {val_type = instance_def Predef.type_int;
-                                 val_attributes = [];
-                                 val_kind = Val_reg; Types.val_loc = loc; } env
+            let ty = instance_def Predef.type_int in
+            Env.enter_value txt
+              {val_type = ty;
+               val_attributes = [];
+               val_kind = Val_reg;
+               Types.val_loc = loc;
+               val_tvars = []} env
               ~check:(fun s -> Warnings.Unused_for_index s)
         | _ ->
             raise (Error (param.ppat_loc, env, Invalid_for_loop_index))
@@ -2353,12 +2366,14 @@ and type_expect_ ?in_function env sexp ty_expected =
                   unify env obj_ty desc.val_type;
                   unify env res_ty (instance env typ);
                   let exp =
-                    Texp_apply({exp_desc =
-                                Texp_ident(Path.Pident method_id, lid,
-                                           {val_type = method_type;
-                                            val_kind = Val_reg;
-                                            val_attributes = [];
-                                            Types.val_loc = Location.none});
+                    Texp_apply(
+                      {exp_desc =
+                         Texp_ident(Path.Pident method_id, lid,
+                                    {val_type = method_type;
+                                     val_kind = Val_reg;
+                                     val_attributes = [];
+                                     Types.val_loc = Location.none;
+                                     val_tvars = []});
                                 exp_loc = loc; exp_extra = [];
                                 exp_type = method_type;
                                 exp_attributes = []; (* check *)
@@ -3093,9 +3108,11 @@ and type_argument env sarg ty_expected' ty_expected =
          exp_extra = []; exp_attributes = [];
          exp_desc =
          Texp_ident(Path.Pident id, mknoloc (Longident.Lident name),
-                    {val_type = ty; val_kind = Val_reg;
+                    {val_type = ty;
+                     val_kind = Val_reg;
                      val_attributes = [];
-                     Types.val_loc = Location.none})}
+                     Types.val_loc = Location.none;
+                     val_tvars = []})}
       in
       let eta_pat, eta_var = var_pair "eta" ty_arg in
       let func texp =
@@ -3715,6 +3732,15 @@ and type_let ?(check = fun s -> Warnings.Unused_var s)
          vb_loc=pvb.pvb_loc;
         })
       l spat_sexp_list
+  in
+  (* update val_tvars included in now target let bindings *)
+  let new_env =
+    Typedtree.let_bound_idents l
+    |> List.fold_left (fun env id ->
+        let vb = Env.find_value (Path.Pident id) new_env in
+        let tvars = Ctype.TvarSet.extract vb.val_type in
+        Env.add_value id {vb with val_tvars = tvars} env)
+      new_env
   in
   (l, new_env, unpacks)
 
