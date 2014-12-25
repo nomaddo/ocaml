@@ -129,6 +129,7 @@ and comparison =
 
 and array_kind =
     Pgenarray | Paddrarray | Pintarray | Pfloatarray
+  | Ptvar of string * int
 
 and boxed_integer =
     Pnativeint | Pint32 | Pint64

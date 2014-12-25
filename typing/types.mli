@@ -86,6 +86,7 @@ type value_description =
     val_kind: value_kind;
     val_loc: Location.t;
     val_attributes: Parsetree.attributes;
+    mutable val_tvars : type_expr list
    }
 
 and value_kind =
