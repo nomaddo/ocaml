@@ -1074,7 +1074,7 @@ and split_constr cls args def k =
 
 and precompile_var  args cls def k = match args with
 | []  -> assert false
-| _::((Lvar v as av,_) as arg)::rargs ->
+| _::((Lvar (v, _) as av,_) as arg)::rargs ->
     begin match cls with
     | [ps,_] -> (* as splitted as it can *)
         dont_precompile_var args cls def k
@@ -1144,7 +1144,7 @@ and precompile_or argo cls ors args def k = match ors with
 
           let mk_new_action vs =
             Lstaticraise
-              (or_num, List.map (fun v -> Lvar v) vs) in
+              (or_num, List.map (fun v -> Lvar (v, [])) vs) in
 
           let do_optrec,body,handlers = do_cases rem in
           do_opt && do_optrec,
@@ -1490,7 +1490,7 @@ let get_mod_field modname field =
       with Not_found ->
         fatal_error ("Primitive "^modname^"."^field^" not found.")
       in
-      Lprim(Pfield p, [Lprim(Pgetglobal mod_ident, [])])
+      Lprim(Pfield p, [Lprim(Pgetglobal (mod_ident, []), [])])
     with Not_found -> fatal_error ("Module "^modname^" unavailable.")
   )
 
@@ -1510,7 +1510,7 @@ let code_force_lazy_block =
 
 let inline_lazy_force_cond arg loc =
   let idarg = Ident.create "lzarg" in
-  let varg = Lvar idarg in
+  let varg = Lvar (idarg, []) in
   let tag = Ident.create "tag" in
   let force_fun = Lazy.force code_force_lazy_block in
   Llet(Strict, idarg, arg,
@@ -1518,19 +1518,19 @@ let inline_lazy_force_cond arg loc =
             Lifthenelse(
               (* if (tag == Obj.forward_tag) then varg.(0) else ... *)
               Lprim(Pintcomp Ceq,
-                    [Lvar tag; Lconst(Const_base(Const_int Obj.forward_tag))]),
+                    [Lvar (tag, []); Lconst(Const_base(Const_int Obj.forward_tag))]),
               Lprim(Pfield 0, [varg]),
               Lifthenelse(
                 (* ... if (tag == Obj.lazy_tag) then Lazy.force varg else ... *)
                 Lprim(Pintcomp Ceq,
-                      [Lvar tag; Lconst(Const_base(Const_int Obj.lazy_tag))]),
+                      [Lvar (tag, []); Lconst(Const_base(Const_int Obj.lazy_tag))]),
                 Lapply(force_fun, [varg], loc),
                 (* ... arg *)
                   varg))))
 
 let inline_lazy_force_switch arg loc =
   let idarg = Ident.create "lzarg" in
-  let varg = Lvar idarg in
+  let varg = Lvar (idarg, []) in
   let force_fun = Lazy.force code_force_lazy_block in
   Llet(Strict, idarg, arg,
        Lifthenelse(
@@ -1716,7 +1716,7 @@ let bind_sw arg k = match arg with
 | Lvar _ -> k arg
 | _ ->
     let id = Ident.create "switch" in
-    Llet (Strict,id,arg,k (Lvar id))
+    Llet (Strict,id,arg,k (Lvar (id, [])))
 
 
 (* Sequential equality tests *)
@@ -1944,10 +1944,10 @@ module SArg = struct
 
   let bind arg body =
     let newvar,newarg = match arg with
-    | Lvar v -> v,arg
+    | Lvar (v, _) -> v,arg
     | _      ->
         let newvar = Ident.create "switcher" in
-        newvar,Lvar newvar in
+        newvar,Lvar (newvar, []) in
     bind Alias newvar arg (body newarg)
   let make_const i = Lconst (Const_base (Const_int i))
   let make_isout h arg = Lprim (Pisout, [h ; arg])
@@ -2398,7 +2398,7 @@ let combine_constructor arg ex_pat cstr partial ctx def
               List.fold_right
                 (fun (path, act) rem ->
                    Lifthenelse(Lprim(Pintcomp Ceq,
-                                     [Lvar tag;
+                                     [Lvar (tag, []);
                                       transl_path ex_pat.pat_env path]),
                                act, rem))
                 nonconsts
@@ -2472,7 +2472,7 @@ let call_switcher_variant_constr fail arg int_lambda_list =
   let v = Ident.create "variant" in
   Llet(Alias, v, Lprim(Pfield 0, [arg]),
        call_switcher
-         fail (Lvar v) min_int max_int int_lambda_list)
+         fail (Lvar (v, [])) min_int max_int int_lambda_list)
 
 let combine_variant row arg partial ctx def (tag_lambda_list, total1, pats) =
   let row = Btype.row_repr row in
@@ -2535,7 +2535,7 @@ let combine_array arg kind partial ctx def
     let newvar = Ident.create "len" in
     let switch =
       call_switcher
-        fail (Lvar newvar)
+        fail (Lvar (newvar, []))
         0 max_int len_lambda_list in
     bind
       Alias newvar (Lprim(Parraylength kind, [arg])) switch in
@@ -2650,7 +2650,7 @@ let rec approx_present v = function
       List.exists (fun lam -> approx_present v lam) args
   | Llet (Alias, _, l1, l2) ->
       approx_present v l1 || approx_present v l2
-  | Lvar vv -> Ident.same v vv
+  | Lvar (vv, _) -> Ident.same v vv
   | _ -> true
 
 let rec lower_bind v arg lam = match lam with
@@ -2737,10 +2737,10 @@ let rec name_pattern default = function
   | _ -> Ident.create default
 
 let arg_to_var arg cls = match arg with
-| Lvar v -> v,arg
+| Lvar (v, _) -> v,arg
 | _ ->
     let v = name_pattern "match" cls in
-    v,Lvar v
+    v,(Lvar (v, []))
 
 
 (*
@@ -2972,7 +2972,7 @@ let partial_function loc () =
   (* [Location.get_pos_info] is too expensive *)
   let (fname, line, char) = Location.get_pos_info loc.Location.loc_start in
   Lprim(Praise Raise_regular, [Lprim(Pmakeblock(0, Immutable),
-          [transl_normal_path Predef.path_match_failure;
+          [transl_normal_path [] Predef.path_match_failure;
            Lconst(Const_block(0,
               [Const_base(Const_string (fname, None));
                Const_base(Const_int line);
@@ -2999,7 +2999,7 @@ let for_tupled_function loc paraml pats_act_list partial =
   let omegas = [List.map (fun _ -> omega) paraml] in
   let pm =
     { cases = pats_act_list;
-      args = List.map (fun id -> (Lvar id, Strict)) paraml ;
+      args = List.map (fun id -> (Lvar (id, []) , Strict)) paraml ;
       default = [omegas,raise_num]
     } in
   try
@@ -3097,7 +3097,7 @@ let do_for_multiple_match loc paraml pat_act_list partial =
 
       let size = List.length paraml
       and idl = List.map (fun _ -> Ident.create "match") paraml in
-      let args =  List.map (fun id -> Lvar id, Alias) idl in
+      let args =  List.map (fun id -> Lvar (id, []), Alias) idl in
 
       let flat_next = flatten_precompiled size args next
       and flat_nexts =
@@ -3132,14 +3132,14 @@ let do_for_multiple_match loc paraml pat_act_list partial =
    may not be side effect free. *)
 
 let arg_to_var arg cls = match arg with
-| Lvar v -> v,arg
+| Lvar (v, _) -> v,arg
 | _ ->
     let v = name_pattern "match" cls in
-    v,Lvar v
+    v,Lvar (v, [])
 
 
 let param_to_var param = match param with
-| Lvar v -> v,None
+| Lvar (v, _) -> v,None
 | _ -> Ident.create "match",Some param
 
 let bind_opt (v,eo) k = match eo with
@@ -3148,6 +3148,6 @@ let bind_opt (v,eo) k = match eo with
 
 let for_multiple_match loc paraml pat_act_list partial =
   let v_paraml = List.map param_to_var paraml in
-  let paraml = List.map (fun (v,_) -> Lvar v) v_paraml in
+  let paraml = List.map (fun (v,_) -> Lvar (v, [])) v_paraml in
   List.fold_right bind_opt v_paraml
     (do_for_multiple_match loc paraml pat_act_list partial)

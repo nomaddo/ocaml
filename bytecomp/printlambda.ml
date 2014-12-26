@@ -100,7 +100,7 @@ let primitive ppf = function
   | Prevapply _ -> fprintf ppf "revapply"
   | Pdirapply _ -> fprintf ppf "dirapply"
   | Ploc kind -> fprintf ppf "%s" (string_of_loc_kind kind)
-  | Pgetglobal id -> fprintf ppf "global %a" Ident.print id
+  | Pgetglobal (id, l) -> fprintf ppf "global %a" Ident.print id
   | Psetglobal id -> fprintf ppf "setglobal %a" Ident.print id
   | Pmakeblock(tag, Immutable) -> fprintf ppf "makeblock %i" tag
   | Pmakeblock(tag, Mutable) -> fprintf ppf "makemutable %i" tag
@@ -239,9 +239,22 @@ let primitive ppf = function
   | Pbbswap(bi) -> print_boxed_integer "bswap" ppf bi
   | Pint_as_pointer -> fprintf ppf "int_as_pointer"
 
+let type_kind ppf = function
+  | I -> fprintf ppf "I"
+  | F -> fprintf ppf "F"
+  | P -> fprintf ppf "P"
+
+let rec type_kind_list ppf = function
+  | x::[] -> fprintf ppf "%a" type_kind x
+  | x::xs -> fprintf ppf "%a," type_kind x; type_kind_list ppf xs
+  | [] -> ()
+
 let rec lam ppf = function
-  | Lvar id ->
-      Ident.print ppf id
+  | Lvar (id, l) ->
+      begin match l with
+      | [] -> Ident.print ppf id
+      | _ -> fprintf ppf "%a(%a)" Ident.print id type_kind_list l
+      end
   | Lconst cst ->
       struct_const ppf cst
   | Lapply(lfun, largs, _) ->

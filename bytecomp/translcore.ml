@@ -413,7 +413,7 @@ let transl_primitive loc p =
   | Plazyforce ->
       let parm = Ident.create "prim" in
       Lfunction(Curried, [parm],
-                Matching.inline_lazy_force (Lvar parm) Location.none)
+                Matching.inline_lazy_force (Lvar (parm, [])) Location.none)
   | Ploc kind ->
     let lam = lam_of_loc kind loc in
     begin match p.prim_arity with
@@ -421,7 +421,7 @@ let transl_primitive loc p =
       | 1 -> (* TODO: we should issue a warning ? *)
         let param = Ident.create "prim" in
         Lfunction(Curried, [param],
-          Lprim(Pmakeblock(0, Immutable), [lam; Lvar param]))
+          Lprim(Pmakeblock(0, Immutable), [lam; Lvar (param, [])]))
       | _ -> assert false
     end
   | _ ->
@@ -429,13 +429,13 @@ let transl_primitive loc p =
         if n <= 0 then [] else Ident.create "prim" :: make_params (n-1) in
       let params = make_params p.prim_arity in
       Lfunction(Curried, params,
-                Lprim(prim, List.map (fun id -> Lvar id) params))
+                Lprim(prim, List.map (fun id -> Lvar (id, [])) params))
 
 (* To check the well-formedness of r.h.s. of "let rec" definitions *)
 
 let check_recursive_lambda idlist lam =
   let rec check_top idlist = function
-    | Lvar v -> not (List.mem v idlist)
+    | Lvar (v, _) -> not (List.mem v idlist)
     | Llet (_, _, _, _) as lam when check_recursive_recordwith idlist lam ->
         true
     | Llet(str, id, arg, body) ->
@@ -489,10 +489,10 @@ let check_recursive_lambda idlist lam =
     | _ -> false
 
   and check_recordwith_updates idlist id1 = function
-    | Lsequence (Lprim ((Psetfield _ | Psetfloatfield _), [Lvar id2; e1]), cont)
+    | Lsequence (Lprim ((Psetfield _ | Psetfloatfield _), [Lvar (id2, _); e1]), cont)
         -> id2 = id1 && check idlist e1
            && check_recordwith_updates idlist id1 cont
-    | Lvar id2 -> id2 = id1
+    | Lvar (id2, _) -> id2 = id1
     | _ -> false
 
   in check_top idlist lam
@@ -611,7 +611,7 @@ let assert_failed exp =
     Location.get_pos_info exp.exp_loc.Location.loc_start in
   Lprim(Praise Raise_regular, [event_after exp
     (Lprim(Pmakeblock(0, Immutable),
-          [transl_normal_path Predef.path_assert_failure;
+          [transl_normal_path [] Predef.path_assert_failure;
            Lconst(Const_block(0,
               [Const_base(Const_string (fname, None));
                Const_base(Const_int line);
@@ -644,20 +644,28 @@ and transl_exp0 e =
       if public_send || p.prim_name = "%sendself" then
         let kind = if public_send then Public else Self in
         let obj = Ident.create "obj" and meth = Ident.create "meth" in
-        Lfunction(Curried, [obj; meth], Lsend(kind, Lvar meth, Lvar obj, [],
+        Lfunction(Curried, [obj; meth], Lsend(kind, Lvar (meth, []), Lvar (obj, []), [],
                                               e.exp_loc))
       else if p.prim_name = "%sendcache" then
         let obj = Ident.create "obj" and meth = Ident.create "meth" in
         let cache = Ident.create "cache" and pos = Ident.create "pos" in
         Lfunction(Curried, [obj; meth; cache; pos],
-                  Lsend(Cached, Lvar meth, Lvar obj, [Lvar cache; Lvar pos],
-                        e.exp_loc))
+                  Lsend(Cached, Lvar (meth, []), Lvar (obj, []),
+                        [Lvar (cache, []); Lvar (pos, [])], e.exp_loc))
       else
         transl_primitive e.exp_loc p
   | Texp_ident(path, _, {val_kind = Val_anc _}) ->
       raise(Error(e.exp_loc, Free_super_var))
-  | Texp_ident(path, _, {val_kind = Val_reg | Val_self _}) ->
-      transl_path ~loc:e.exp_loc e.exp_env path
+  | Texp_ident(path, _, ({val_kind = Val_reg | Val_self _} as vdesc)) ->
+      let tys = match vdesc.val_tvars with
+        | [] -> []
+        | tys ->
+            let arr = Array.make (List.length tys) Ctype.none in
+            let ty = Ctype.TvarSet.instance e.exp_env arr tys vdesc.val_type in
+            Ctype.unify e.exp_env ty e.exp_type;
+            Array.map Lambda.to_type_kind arr |> Array.to_list
+      in
+      transl_path ~loc:e.exp_loc ~tys e.exp_env path
   | Texp_ident _ -> fatal_error "Translcore.transl_exp: bad Texp_ident"
   | Texp_constant cst ->
       Lconst(Const_base cst)
@@ -703,7 +711,7 @@ and transl_exp0 e =
             let targ = List.hd argl in
             let k =
               match k, targ with
-              | Raise_regular, Lvar id
+              | Raise_regular, Lvar (id, _)
                 when Hashtbl.mem try_ids id ->
                   Raise_reraise
               | _ ->
@@ -732,7 +740,7 @@ and transl_exp0 e =
   | Texp_try(body, pat_expr_list) ->
       let id = name_pattern "exn" pat_expr_list in
       Ltrywith(transl_exp body, id,
-               Matching.for_trywith (Lvar id) (transl_cases_try pat_expr_list))
+               Matching.for_trywith (Lvar (id, [])) (transl_cases_try pat_expr_list))
   | Texp_tuple el ->
       let ll = transl_list el in
       begin try
@@ -801,7 +809,9 @@ and transl_exp0 e =
           | Pfloatarray ->
               Lconst(Const_float_array(List.map extract_float cl))
           | Pgenarray ->
-              raise Not_constant in             (* can this really happen? *)
+              raise Not_constant              (* can this really happen? *)
+          | Ptvar (str, nth) -> raise Not_constant
+in
         Lprim(Pccall prim_obj_dup, [master])
       with Not_constant ->
         Lprim(Pmakearray kind, ll)
@@ -826,7 +836,7 @@ and transl_exp0 e =
       let obj = transl_exp expr in
       let lam =
         match met with
-          Tmeth_val id -> Lsend (Self, Lvar id, obj, [], e.exp_loc)
+          Tmeth_val id -> Lsend (Self, Lvar (id, []), obj, [], e.exp_loc)
         | Tmeth_name nm ->
             let (tag, cache) = Translobj.meth obj nm in
             let kind = if cache = [] then Public else Cached in

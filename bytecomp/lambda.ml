@@ -28,6 +28,8 @@ type loc_kind =
   | Loc_LOC
   | Loc_POS
 
+type type_kind = I | F | P
+
 type primitive =
     Pidentity
   | Pignore
@@ -35,7 +37,7 @@ type primitive =
   | Pdirapply of Location.t
   | Ploc of loc_kind
     (* Globals *)
-  | Pgetglobal of Ident.t
+  | Pgetglobal of Ident.t * type_kind list
   | Psetglobal of Ident.t
   (* Operations on heap blocks *)
   | Pmakeblock of int * mutable_flag
@@ -169,7 +171,7 @@ type meth_kind = Self | Public | Cached
 type shared_code = (int * int) list
 
 type lambda =
-    Lvar of Ident.t
+    Lvar of Ident.t * type_kind list
   | Lconst of structured_constant
   | Lapply of lambda * lambda list * Location.t
   | Lfunction of function_kind * Ident.t list * lambda
@@ -230,11 +232,12 @@ let make_key e =
     incr count ;
     if !count > max_raw then raise Not_simple ; (* Too big ! *)
     match e with
-    | Lvar id ->
-      begin
-        try Ident.find_same id env
+    | Lvar (id, l) ->
+        begin try match Ident.find_same id env with
+          | Lvar (id', _) ->  Lvar (id', l)
+          | _ -> assert(false)
         with Not_found -> e
-      end
+        end
     | Lconst  (Const_base (Const_string _)|Const_float_array _) ->
         (* Mutable constants are not shared *)
         raise Not_simple
@@ -248,7 +251,7 @@ let make_key e =
      (* Because of side effects, keep other lets with normalized names *)
         let ex = tr_rec env ex in
         let y = make_key x in
-        Llet (str,y,ex,tr_rec (Ident.add x (Lvar y) env) e)
+        Llet (str,y,ex,tr_rec (Ident.add x (Lvar (y,[])) env) e)
     | Lprim (p,es) ->
         Lprim (p,tr_recs env es)
     | Lswitch (e,sw) ->
@@ -300,17 +303,17 @@ let make_key e =
 
 let name_lambda strict arg fn =
   match arg with
-    Lvar id -> fn id
+    Lvar (id, _) -> fn id
   | _ -> let id = Ident.create "let" in Llet(strict, id, arg, fn id)
 
 let name_lambda_list args fn =
   let rec name_list names = function
     [] -> fn (List.rev names)
-  | (Lvar id as arg) :: rem ->
+  | (Lvar (id, _) as arg) :: rem ->
       name_list (arg :: names) rem
   | arg :: rem ->
       let id = Ident.create "let" in
-      Llet(Strict, id, arg, name_list (Lvar id :: names) rem) in
+      Llet(Strict, id, arg, name_list (Lvar (id, []) :: names) rem) in
   name_list [] args
 
 
@@ -398,10 +401,10 @@ let free_ids get l =
   in free l; !fv
 
 let free_variables l =
-  free_ids (function Lvar id -> [id] | _ -> []) l
+  free_ids (function Lvar (id, _) -> [id] | _ -> []) l
 
 let free_methods l =
-  free_ids (function Lsend(Self, Lvar meth, obj, _, _) -> [meth] | _ -> []) l
+  free_ids (function Lsend(Self, Lvar (meth, []), obj, _, _) -> [meth] | _ -> []) l
 
 (* Check if an action has a "when" guard *)
 let raise_count = ref 0
@@ -436,18 +439,20 @@ let rec patch_guarded patch = function
 
 (* Translate an access path *)
 
-let rec transl_normal_path = function
+let rec transl_normal_path ?tys path =
+  let tys = match tys with None -> [] | Some x -> x in
+  match path with
     Pident id ->
-      if Ident.global id then Lprim(Pgetglobal id, []) else Lvar id
+      if Ident.global id then Lprim(Pgetglobal (id, tys), []) else Lvar (id, tys)
   | Pdot(p, s, pos) ->
-      Lprim(Pfield pos, [transl_normal_path p])
+      Lprim(Pfield pos, [transl_normal_path ~tys p])
   | Papply(p1, p2) ->
       fatal_error "Lambda.transl_path"
 
 (* Translation of value identifiers *)
 
-let transl_path ?(loc=Location.none) env path =
-  transl_normal_path (Env.normalize_path (Some loc) env path)
+let transl_path ?(loc=Location.none) ?(tys=[]) env path =
+  transl_normal_path ~tys (Env.normalize_path (Some loc) env path)
 
 (* Compile a sequence of expressions *)
 
@@ -465,7 +470,7 @@ let rec make_sequence fn = function
 
 let subst_lambda s lam =
   let rec subst = function
-    Lvar id as l ->
+    Lvar (id, _) as l ->
       begin try Ident.find_same id s with Not_found -> l end
   | Lconst sc as l -> l
   | Lapply(fn, args, loc) -> Lapply(subst fn, List.map subst args, loc)
@@ -506,7 +511,7 @@ let subst_lambda s lam =
 
 let bind str var exp body =
   match exp with
-    Lvar var' when Ident.same var var' -> body
+    Lvar (var', _) when Ident.same var var' -> body
   | _ -> Llet(str, var, exp, body)
 
 and commute_comparison = function
@@ -552,3 +557,29 @@ let lam_of_loc kind loc =
 
 let reset () =
   raise_count := 0
+
+let to_type_kind ty =
+  let ident_name = function
+    | "bool" | "int" | "char" -> I
+    | "float" -> F
+    | "string" -> P
+    | _ -> I in
+  let rec inference ty =
+    let open Ident in
+    let open Types in
+    match ty.desc with
+    | Tarrow _ -> P
+    | Ttuple _ -> P
+    | Tconstr (path,tylist,_) ->
+        if tylist <> [] then P
+        else begin match path with
+          | Path.Pident ident -> ident_name ident.name
+          | _ -> P (* XXX: TODO: fix me *)
+        end
+    | Tobject _ -> P
+    | Tfield _ -> P
+    | Tlink ty -> inference ty
+    | Tvar _ | Tunivar _ -> I
+    | _ -> I
+  in
+  inference ty

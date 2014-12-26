@@ -21,7 +21,7 @@ open Lambda
 let oo_prim name =
   try
     transl_normal_path
-      (fst (Env.lookup_value (Ldot (Lident "CamlinternalOO", name)) Env.empty))
+      [] (fst (Env.lookup_value (Ldot (Lident "CamlinternalOO", name)) Env.empty))
   with Not_found ->
     fatal_error ("Primitive " ^ name ^ " not found.")
 
@@ -33,11 +33,11 @@ let share c =
   match c with
     Const_block (n, l) when l <> [] ->
       begin try
-        Lvar (Hashtbl.find consts c)
+        Lvar ((Hashtbl.find consts c), [])
       with Not_found ->
         let id = Ident.create "shared" in
         Hashtbl.add consts c id;
-        Lvar id
+        Lvar (id, [])
       end
   | _ -> Lconst c
 
@@ -102,7 +102,7 @@ let transl_label_init expr =
   in
   let expr =
     List.fold_right
-      (fun id expr -> Lsequence(Lprim(Pgetglobal id, []), expr))
+      (fun id expr -> Lsequence(Lprim(Pgetglobal (id, []), []), expr))
       (Env.get_required_globals ()) expr
   in
   Env.reset_required_globals ();
@@ -110,14 +110,14 @@ let transl_label_init expr =
   expr
 
 let transl_store_label_init glob size f arg =
-  method_cache := Lprim(Pfield size, [Lprim(Pgetglobal glob, [])]);
+  method_cache := Lprim(Pfield size, [Lprim(Pgetglobal (glob, []), [])]);
   let expr = f arg in
   let (size, expr) =
     if !method_count = 0 then (size, expr) else
     (size+1,
      Lsequence(
      Lprim(Psetfield(size, false),
-           [Lprim(Pgetglobal glob, []);
+           [Lprim(Pgetglobal (glob, []), []);
             Lprim (Pccall prim_makearray, [int !method_count; int 0])]),
      expr))
   in

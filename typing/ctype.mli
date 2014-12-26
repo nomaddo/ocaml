@@ -278,4 +278,6 @@ val package_subtype :
 
 module TvarSet : sig
   val extract : type_expr -> type_expr list
+  val instance :
+    ?partial:bool -> Env.t -> type_expr array -> type_expr list -> type_expr -> type_expr
 end

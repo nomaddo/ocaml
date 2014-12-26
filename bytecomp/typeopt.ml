@@ -62,7 +62,7 @@ let array_element_kind env ty =
         try
           match Env.find_type p env with
             {type_kind = Type_abstract} ->
-              Pgenarray
+               Pgenarray
           | {type_kind = Type_variant cstrs}
             when List.for_all (fun c -> c.Types.cd_args = []) cstrs ->
               Pintarray

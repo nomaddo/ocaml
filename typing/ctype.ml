@@ -970,8 +970,8 @@ let abbreviations = ref (ref Mnil)
 
 (* partial: we may not wish to copy the non generic types
    before we call type_pat *)
-let rec copy ?env ?partial ?keep_names ty =
-  let copy = copy ?env ?partial ?keep_names in
+let rec copy ?env ?partial ?keep_names ?tys ?arr ty =
+  let copy = copy ?env ?partial ?keep_names ?tys ?arr in
   let ty = repr ty in
   match ty.desc with
     Tsubst ty -> ty
@@ -1089,8 +1089,18 @@ let rec copy ?env ?partial ?keep_names ty =
           Tobject (copy ty1, ref None)
       | _ -> copy_type_desc ?keep_names copy desc
       end;
-    t
-
+    begin match tys, arr with
+    | None, None -> ()
+    | Some _, None | None, Some _ -> assert(false)
+    | Some tys, Some arr ->
+        let rec nth f l i =
+          match l with
+          | x::xs -> if f x then Some i else nth f xs (i + 1)
+          | [] -> None in
+        begin match nth ((==) ty) tys 0 with
+        | None -> ()
+        | Some i -> arr.(i) <- t end
+    end; t
 let simple_copy t = copy t
 
 (**** Variants of instantiations ****)
@@ -4495,11 +4505,18 @@ let collapse_conj_params env params =
   List.iter (collapse_conj env []) params
 
 module TvarSet = struct
-  (* let real_variables ty = *)
-  (*   let l = free_vars ty in *)
-  (*   unmark_type ty; *)
-  (*   List.map fst (List.filter snd l) *)
   let extract ty =
     let tvars = free_variables ty in
     List.filter (fun {level} -> generic_level = level) tvars
+
+  let instance ?partial env arr tys sch =
+    let env = gadt_env env in
+    let partial =
+      match partial with
+        None -> None
+      | Some keep -> Some (compute_univars sch, keep)
+    in
+    let ty = copy ?env ?partial ~tys ~arr sch in
+    cleanup_types ();
+    ty
 end

@@ -28,6 +28,8 @@ type loc_kind =
   | Loc_LOC
   | Loc_POS
 
+type type_kind = I | F | P
+
 type primitive =
     Pidentity
   | Pignore
@@ -35,7 +37,7 @@ type primitive =
   | Pdirapply of Location.t
   | Ploc of loc_kind
     (* Globals *)
-  | Pgetglobal of Ident.t
+  | Pgetglobal of Ident.t * type_kind list
   | Psetglobal of Ident.t
   (* Operations on heap blocks *)
   | Pmakeblock of int * mutable_flag
@@ -129,6 +131,7 @@ and comparison =
 
 and array_kind =
     Pgenarray | Paddrarray | Pintarray | Pfloatarray
+  | Ptvar of string * int
 
 and boxed_integer =
     Pnativeint | Pint32 | Pint64
@@ -177,7 +180,7 @@ type meth_kind = Self | Public | Cached
 type shared_code = (int * int) list     (* stack size -> code label *)
 
 type lambda =
-    Lvar of Ident.t
+    Lvar of Ident.t * type_kind list
   | Lconst of structured_constant
   | Lapply of lambda * lambda list * Location.t
   | Lfunction of function_kind * Ident.t list * lambda
@@ -230,8 +233,9 @@ module IdentSet: Set.S with type elt = Ident.t
 val free_variables: lambda -> IdentSet.t
 val free_methods: lambda -> IdentSet.t
 
-val transl_normal_path: Path.t -> lambda   (* Path.t is already normal *)
-val transl_path: ?loc:Location.t -> Env.t -> Path.t -> lambda
+val transl_normal_path: type_kind list -> Path.t -> lambda
+  (* Path.t is already normal *)
+val transl_path: ?loc:Location.t -> ?tys:type_kind list -> Env.t -> Path.t -> lambda
 val make_sequence: ('a -> lambda) -> 'a list -> lambda
 
 val subst_lambda: lambda Ident.tbl -> lambda -> lambda
@@ -262,3 +266,5 @@ val raise_kind: raise_kind -> string
 val lam_of_loc : loc_kind -> Location.t -> lambda
 
 val reset: unit -> unit
+
+val to_type_kind : Types.type_expr -> type_kind
