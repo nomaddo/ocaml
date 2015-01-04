@@ -23,6 +23,8 @@ exception Real_reference
 let rec eliminate_ref id = function
     Lvar v as lam ->
       if Ident.same v id then raise Real_reference else lam
+  | Lspecialized (lam, l) ->
+      Lspecialized (eliminate_ref id lam, l)
   | Lconst cst as lam -> lam
   | Lapply(e1, el, loc) ->
       Lapply(eliminate_ref id e1, List.map (eliminate_ref id) el, loc)
@@ -106,6 +108,7 @@ let simplify_exits lam =
 
   let rec count = function
   | (Lvar _| Lconst _) -> ()
+  | Lspecialized (lam, _) -> count lam
   | Lapply(l1, ll, _) -> count l1; List.iter count ll
   | Lfunction(kind, params, l) -> count l
   | Llet(str, v, l1, l2) ->
@@ -193,6 +196,7 @@ let simplify_exits lam =
 
   let rec simplif = function
   | (Lvar _|Lconst _) as l -> l
+  | Lspecialized (lam, l) -> Lspecialized (simplif lam, l)
   | Lapply(l1, ll, loc) -> Lapply(simplif l1, List.map simplif ll, loc)
   | Lfunction(kind, params, l) -> Lfunction(kind, params, simplif l)
   | Llet(kind, v, l1, l2) -> Llet(kind, v, simplif l1, simplif l2)
@@ -202,18 +206,18 @@ let simplify_exits lam =
     let ll = List.map simplif ll in
     match p, ll with
         (* Simplify %revapply, for n-ary functions with n > 1 *)
-      | Prevapply loc, [x; Lapply(f, args, _)]
-      | Prevapply loc, [x; Levent (Lapply(f, args, _),_)] ->
+    | Prevapply loc, [x; Lapply(f, args, _)]
+    | Prevapply loc, [x; Levent (Lapply(f, args, _),_)] ->
         Lapply(f, args@[x], loc)
-      | Prevapply loc, [x; f] -> Lapply(f, [x], loc)
+    | Prevapply loc, [x; f] -> Lapply(f, [x], loc)
 
-        (* Simplify %apply, for n-ary functions with n > 1 *)
-      | Pdirapply loc, [Lapply(f, args, _); x]
-      | Pdirapply loc, [Levent (Lapply(f, args, _),_); x] ->
+    (* Simplify %apply, for n-ary functions with n > 1 *)
+    | Pdirapply loc, [Lapply(f, args, _); x]
+    | Pdirapply loc, [Levent (Lapply(f, args, _),_); x] ->
         Lapply(f, args@[x], loc)
-      | Pdirapply loc, [f; x] -> Lapply(f, [x], loc)
+    | Pdirapply loc, [f; x] -> Lapply(f, [x], loc)
 
-      | _ -> Lprim(p, ll)
+    | _ -> Lprim(p, ll)
      end
   | Lswitch(l, sw) ->
       let new_l = simplif l
@@ -338,6 +342,7 @@ let simplify_lets lam =
   | Lconst cst -> ()
   | Lvar v ->
       use_var bv v 1
+  | Lspecialized (lam, l) -> count bv lam
   | Lapply(Lfunction(Curried, params, body), args, _)
     when optimize && List.length params = List.length args ->
       count bv (beta_reduce params body args)
@@ -429,6 +434,13 @@ let simplify_lets lam =
       with Not_found ->
         l
       end
+  | Lspecialized (Lvar v, tyks) as l ->
+      begin try
+        Lambda.subst_array_kind v tyks (Hashtbl.find subst v)
+      with Not_found ->
+        l
+      end
+  | Lspecialized (lam, tyks) as l -> l
   | Lconst cst as l -> l
   | Lapply(Lfunction(Curried, params, body), args, _)
     when optimize && List.length params = List.length args ->
@@ -515,6 +527,7 @@ let rec emit_tail_infos is_tail lambda =
    else Annot.Stack in
   match lambda with
   | Lvar _ -> ()
+  | Lspecialized (lam, tyks) -> ()
   | Lconst _ -> ()
   | Lapply (func, l, loc) ->
       list_emit_tail_infos false l;

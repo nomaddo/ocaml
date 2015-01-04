@@ -16,6 +16,10 @@ open Primitive
 open Types
 open Lambda
 
+let type_kind ppf = function
+  | I -> fprintf ppf "I"
+  | F -> fprintf ppf "F"
+  | P -> fprintf ppf "P"
 
 let rec struct_const ppf = function
   | Const_base(Const_int n) -> fprintf ppf "%i" n
@@ -242,6 +246,9 @@ let primitive ppf = function
 let rec lam ppf = function
   | Lvar id ->
       Ident.print ppf id
+  | Lspecialized (l, ks) ->
+      let p ppf l = List.iter (fprintf ppf "%a " type_kind) l in
+      fprintf ppf "sp(%a, [%a])" lam l p ks
   | Lconst cst ->
       struct_const ppf cst
   | Lapply(lfun, largs, _) ->

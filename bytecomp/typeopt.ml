@@ -20,6 +20,9 @@ open Lambda
 let scrape env ty =
   (Ctype.repr (Ctype.expand_head_opt env (Ctype.correct_levels ty))).desc
 
+let scrape2 env ty =
+  (Ctype.repr (Ctype.expand_head_opt env (Ctype.correct_levels ty)))
+
 let has_base_type exp base_ty_path =
   match scrape exp.exp_env exp.exp_type with
   | Tconstr(p, _, _) -> Path.same p base_ty_path
@@ -43,10 +46,32 @@ let maybe_pointer exp =
       end
   | _ -> true
 
+
+(* XXX : should change the function name *)
+(* stack : (Ident.t * type_expr list) Stack.t
+   stack is passed by transl_exp
+*)
+let ptvar_gen ty =
+  let rec nth f i = function
+    | x :: xs -> if f x then Some i else nth f (i + 1) xs
+    | [] -> None in
+  let s = Stack.copy Translcore.stack in
+  let rec loop () =
+    if Stack.is_empty s then None else
+      let (id, tys) = Stack.pop s in
+      match nth ((=) ty) 0 tys with
+      | Some i -> Some (id, i) | None -> loop () in
+  loop ()
+
 let array_element_kind env ty =
-  match scrape env ty with
-  | Tvar _ | Tunivar _ ->
-      Pgenarray
+  let ty = scrape2 env ty in
+  match ty.desc with
+  | Tvar _ ->
+      begin match ptvar_gen ty with
+      | Some (id, i) -> Ptvar (id, i)
+      | None -> Pgenarray
+      end
+  | Tunivar _ -> Pgenarray
   | Tconstr(p, args, abbrev) ->
       if Path.same p Predef.path_int || Path.same p Predef.path_char then
         Pintarray

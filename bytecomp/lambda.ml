@@ -129,7 +129,7 @@ and comparison =
 
 and array_kind =
     Pgenarray | Paddrarray | Pintarray | Pfloatarray
-  | Ptvar of string * int
+  | Ptvar of Ident.t * int
 
 and boxed_integer =
     Pnativeint | Pint32 | Pint64
@@ -168,8 +168,11 @@ type meth_kind = Self | Public | Cached
 
 type shared_code = (int * int) list
 
+type type_kind = I | F | P
+
 type lambda =
     Lvar of Ident.t
+  | Lspecialized of lambda * type_kind list
   | Lconst of structured_constant
   | Lapply of lambda * lambda list * Location.t
   | Lfunction of function_kind * Ident.t list * lambda
@@ -235,6 +238,8 @@ let make_key e =
         try Ident.find_same id env
         with Not_found -> e
       end
+    | Lspecialized (lam, tys) ->
+        Lspecialized (tr_rec env lam, tys)
     | Lconst  (Const_base (Const_string _)|Const_float_array _) ->
         (* Mutable constants are not shared *)
         raise Not_simple
@@ -321,6 +326,8 @@ let iter_opt f = function
 let iter f = function
     Lvar _
   | Lconst _ -> ()
+  | Lspecialized (lam, _) ->
+      f lam
   | Lapply(fn, args, _) ->
       f fn; List.iter f args
   | Lfunction(kind, params, body) ->
@@ -391,6 +398,7 @@ let free_ids get l =
         fv := IdentSet.remove v !fv
     | Lassign(id, e) ->
         fv := IdentSet.add id !fv
+    | Lspecialized (lam, _) -> free lam
     | Lvar _ | Lconst _ | Lapply _
     | Lprim _ | Lswitch _ | Lstringswitch _ | Lstaticraise _
     | Lifthenelse _ | Lsequence _ | Lwhile _
@@ -467,6 +475,7 @@ let subst_lambda s lam =
   let rec subst = function
     Lvar id as l ->
       begin try Ident.find_same id s with Not_found -> l end
+  | Lspecialized (lam, l) -> Lspecialized (subst lam, l)
   | Lconst sc as l -> l
   | Lapply(fn, args, loc) -> Lapply(subst fn, List.map subst args, loc)
   | Lfunction(kind, params, body) -> Lfunction(kind, params, subst body)
@@ -552,3 +561,96 @@ let lam_of_loc kind loc =
 
 let reset () =
   raise_count := 0
+
+let gen_kind id1 id2 tyks i k =
+  try
+    if Ident.same id1 id2 then
+      match List.nth tyks i with
+      | I -> Pintarray | F -> Pfloatarray | P -> Paddrarray
+    else k
+  with Not_found -> k
+
+let rec subst_array_kind v tyks lam =
+  let subst = subst_array_kind v tyks in
+  let subst_decl (id, exp) = (id, subst exp)
+  and subst_case (key, case) = (key, subst case)
+  and subst_strcase (key, case) = (key, subst case)
+  and subst_opt = function
+    | None -> None
+    | Some e -> Some (subst e) in
+  match lam with
+    Lvar _ as l -> l
+  | Lspecialized (lam, l) -> Lspecialized (subst lam, l)
+  | Lconst _ as l -> l
+  | Lapply(fn, args, loc) -> Lapply(subst fn, List.map subst args, loc)
+  | Lfunction(kind, params, body) -> Lfunction(kind, params, subst body)
+  | Llet(str, id, arg, body) -> Llet(str, id, subst arg, subst body)
+  | Lletrec(decl, body) -> Lletrec(List.map subst_decl decl, subst body)
+  | Lprim(prim, args) ->
+      begin match prim with
+      | Pmakearray ((Ptvar (id, i)) as k) ->
+          let k = gen_kind v id tyks i k in
+          Lprim(Pmakearray k, List.map subst args)
+      | Parraylength ((Ptvar (id, i)) as k) ->
+          let k = gen_kind v id tyks i k in
+          Lprim(Parraylength k, List.map subst args)
+      | Parrayrefu ((Ptvar (id, i)) as k) ->
+          let k = gen_kind v id tyks i k in
+          Lprim(Parrayrefu k, List.map subst args)
+      | Parraysetu ((Ptvar (id, i)) as k) ->
+          let k = gen_kind v id tyks i k in
+          Lprim(Parraysetu k, List.map subst args)
+      | Parrayrefs ((Ptvar (id, i)) as k) ->
+          let k = gen_kind v id tyks i k in
+          Lprim(Parrayrefs k, List.map subst args)
+      | Parraysets ((Ptvar (id, i)) as k) ->
+          let k = gen_kind v id tyks i k in
+          Lprim(Parraysets k, List.map subst args)
+      | _ -> Lprim(prim, List.map subst args)
+      end
+  | Lswitch(arg, sw) ->
+      Lswitch(subst arg,
+              {sw with sw_consts = List.map subst_case sw.sw_consts;
+                       sw_blocks = List.map subst_case sw.sw_blocks;
+                       sw_failaction = subst_opt  sw.sw_failaction; })
+  | Lstringswitch (arg,cases,default) ->
+      Lstringswitch
+        (subst arg,List.map subst_strcase cases,subst_opt default)
+  | Lstaticraise (i,args) ->  Lstaticraise (i, List.map subst args)
+  | Lstaticcatch(e1, io, e2) -> Lstaticcatch(subst e1, io, subst e2)
+  | Ltrywith(e1, exn, e2) -> Ltrywith(subst e1, exn, subst e2)
+  | Lifthenelse(e1, e2, e3) -> Lifthenelse(subst e1, subst e2, subst e3)
+  | Lsequence(e1, e2) -> Lsequence(subst e1, subst e2)
+  | Lwhile(e1, e2) -> Lwhile(subst e1, subst e2)
+  | Lfor(v, e1, e2, dir, e3) -> Lfor(v, subst e1, subst e2, dir, subst e3)
+  | Lassign(id, e) -> Lassign(id, subst e)
+  | Lsend (k, met, obj, args, loc) ->
+      Lsend (k, subst met, subst obj, List.map subst args, loc)
+  | Levent (lam, evt) -> Levent (subst lam, evt)
+  | Lifused (v, e) -> Lifused (v, subst e)
+
+
+
+let to_type_kind ty =
+  let ident_name = function
+    | "int" | "char" -> I
+    | "float" -> F
+    | "string" -> P
+    | _ -> I in
+  let rec inference ty =
+    let open Types in
+    match ty.desc with
+    | Tarrow _ | Ttuple _ | Tobject _ | Tfield _ -> P
+    | Tvar _ | Tunivar _ -> I
+    | Tlink ty -> inference ty
+    | Tconstr (path,tylist,_) ->
+        if tylist <> [] then P
+        else begin match path with
+          | Path.Pident ident -> ident_name ident.Ident.name
+          | _ -> P (* XXX: TODO: fix me *)
+        end
+    | _ ->
+        Format.eprintf "unexpected type: %a\n"
+          Printtyp.type_expr ty;
+        I in
+  inference ty

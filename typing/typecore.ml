@@ -3733,7 +3733,7 @@ and type_let ?(check = fun s -> Warnings.Unused_var s)
         })
       l spat_sexp_list
   in
-  (* update val_tvars included in now target let bindings *)
+  (* update val_tvars included in target let bindings *)
   let new_env =
     Typedtree.let_bound_idents l
     |> List.fold_left (fun env id ->

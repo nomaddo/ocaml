@@ -29,6 +29,10 @@ type error =
 
 exception Error of Location.t * error
 
+(* stack to generate array_kind Ltvar *)
+let stack : (Ident.t * Types.type_expr list) Stack.t
+  = Stack.create ()
+
 (* Forward declaration -- to be filled in by Translmod.transl_module *)
 let transl_module =
   ref((fun cc rootpath modl -> assert false) :
@@ -656,13 +660,35 @@ and transl_exp0 e =
         transl_primitive e.exp_loc p
   | Texp_ident(path, _, {val_kind = Val_anc _}) ->
       raise(Error(e.exp_loc, Free_super_var))
-  | Texp_ident(path, _, {val_kind = Val_reg | Val_self _}) ->
-      transl_path ~loc:e.exp_loc e.exp_env path
+  | Texp_ident(path, _, ({val_kind = Val_reg | Val_self _} as vdesc)) ->
+      let lam = transl_path ~loc:e.exp_loc e.exp_env path in
+      if vdesc.val_tvars = []
+      then
+        let instance = Ctype.instance_parameterized_type in
+        let tys, ty = instance vdesc.val_tvars vdesc.val_type in
+        Ctype.unify e.exp_env e.exp_type ty;
+        let tys = List.map
+            (fun ty -> Lambda.to_type_kind (Ctype.repr ty)) tys in
+        assert((function Lvar _ | Lprim (Pgetglobal _, _) -> true | _ -> false) lam);
+        Lspecialized (lam, tys)
+      else
+        lam
   | Texp_ident _ -> fatal_error "Translcore.transl_exp: bad Texp_ident"
   | Texp_constant cst ->
       Lconst(Const_base cst)
-  | Texp_let(rec_flag, pat_expr_list, body) ->
-      transl_let rec_flag pat_expr_list (event_before body (transl_exp body))
+  | Texp_let(rec_flag, vbs, body) ->
+      let ids = Typedtree.let_bound_idents vbs in
+      let num = ref 0 in
+      let l = List.fold_left (fun s id ->
+        try
+          let vb = Env.find_value (Path.Pident id) e.exp_env in
+          incr num; (id, vb.val_tvars) :: s
+        with Not_found -> s
+      ) [] ids in
+      List.iter (fun p -> Stack.push p stack) l;
+      let lam = transl_let rec_flag vbs (event_before body (transl_exp body)) in
+      for _ = 1 to !num do ignore (Stack.pop stack) done;
+      lam
   | Texp_function (_, pat_expr_list, partial) ->
       let ((kind, params), body) =
         event_function e
@@ -801,7 +827,9 @@ and transl_exp0 e =
           | Pfloatarray ->
               Lconst(Const_float_array(List.map extract_float cl))
           | Pgenarray ->
-              raise Not_constant in             (* can this really happen? *)
+              raise Not_constant                (* can this really happen? *)
+          | Ptvar (id, i) ->
+              raise Not_constant in
         Lprim(Pccall prim_obj_dup, [master])
       with Not_constant ->
         Lprim(Pmakearray kind, ll)

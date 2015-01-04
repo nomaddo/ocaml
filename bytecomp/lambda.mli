@@ -129,6 +129,7 @@ and comparison =
 
 and array_kind =
     Pgenarray | Paddrarray | Pintarray | Pfloatarray
+  | Ptvar of Ident.t * int
 
 and boxed_integer =
     Pnativeint | Pint32 | Pint64
@@ -176,8 +177,11 @@ type meth_kind = Self | Public | Cached
 
 type shared_code = (int * int) list     (* stack size -> code label *)
 
+type type_kind = I | F | P
+
 type lambda =
     Lvar of Ident.t
+  | Lspecialized of lambda * type_kind list
   | Lconst of structured_constant
   | Lapply of lambda * lambda list * Location.t
   | Lfunction of function_kind * Ident.t list * lambda
@@ -262,3 +266,9 @@ val raise_kind: raise_kind -> string
 val lam_of_loc : loc_kind -> Location.t -> lambda
 
 val reset: unit -> unit
+
+
+(* for array_kind Ptvar *)
+val to_type_kind: Types.type_expr -> type_kind
+
+val subst_array_kind: Ident.t -> type_kind list -> lambda -> lambda

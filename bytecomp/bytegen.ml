@@ -443,6 +443,7 @@ let rec comp_expr env exp sz cont =
       with Not_found ->
         fatal_error ("Bytegen.comp_expr: var " ^ Ident.unique_name id)
       end
+  | Lspecialized (lam, _) -> comp_expr env lam sz cont
   | Lconst cst ->
       Kconst cst :: cont
   | Lapply(func, args, loc) ->
@@ -618,6 +619,7 @@ let rec comp_expr env exp sz cont =
           comp_args env args sz (Kmakeblock(List.length args, 0) :: cont)
       | Pfloatarray ->
           comp_args env args sz (Kmakefloatblock(List.length args) :: cont)
+      | Ptvar _ (* ignore this *)
       | Pgenarray ->
           if args = []
           then Kmakeblock(0, 0) :: cont
