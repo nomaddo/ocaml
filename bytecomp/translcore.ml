@@ -664,17 +664,21 @@ and transl_exp0 e =
       let lam = transl_path ~loc:e.exp_loc e.exp_env path in
       if vdesc.val_tvars <> []
       then
-        let instance = Ctype.instance_parameterized_type in
-        let tys, ty = instance vdesc.val_tvars vdesc.val_type in
-        Ctype.unify e.exp_env e.exp_type ty;
-        let tys = List.map
-            (fun ty -> Lambda.to_type_kind (Ctype.repr ty)) tys in
-        Lspecialized (lam, tys)
-        (* if (function Lvar _ | Lprim (Pgetglobal _, _) -> true | _ -> false) lam *)
-        (* then begin *)
-        (*   Format.printf "%a@." Printlambda.lambda lam; *)
-        (*   assert(false) end *)
-        (* else Lspecialized (lam, tys) *)
+        try
+          let instance = Ctype.instance_parameterized_type ~keep_names:true in
+          let tys, ty1 = instance vdesc.val_tvars (Ctype.repr vdesc.val_type) in
+          let ty2 = Ctype.instance e.exp_env e.exp_type in
+          Ctype.generalize_global ty1;
+          Ctype.unify e.exp_env ty1 ty2;
+          let tys = List.map
+              (fun ty -> Lambda.to_type_kind (Ctype.repr ty)) tys in
+          Lspecialized (lam, tys)
+          (* if (function Lvar _ | Lprim (Pgetglobal _, _) -> true | _ -> false) lam *)
+          (* then begin *)
+          (*   Format.printf "%a@." Printlambda.lambda lam; *)
+          (*   assert(false) end *)
+          (* else Lspecialized (lam, tys) *)
+        with Ctype.Unify _ -> lam
       else
         lam
   | Texp_ident _ -> fatal_error "Translcore.transl_exp: bad Texp_ident"

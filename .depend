@@ -573,13 +573,11 @@ bytecomp/translobj.cmx : typing/primitive.cmx utils/misc.cmx \
     utils/clflags.cmx typing/btype.cmx parsing/asttypes.cmi \
     bytecomp/translobj.cmi
 bytecomp/typeopt.cmo : typing/types.cmi typing/typedtree.cmi \
-    bytecomp/translcore.cmi typing/predef.cmi typing/path.cmi \
-    bytecomp/lambda.cmi typing/ident.cmi typing/env.cmi typing/ctype.cmi \
-    bytecomp/typeopt.cmi
+    typing/predef.cmi typing/path.cmi bytecomp/lambda.cmi typing/ident.cmi \
+    typing/env.cmi typing/ctype.cmi bytecomp/typeopt.cmi
 bytecomp/typeopt.cmx : typing/types.cmx typing/typedtree.cmx \
-    bytecomp/translcore.cmx typing/predef.cmx typing/path.cmx \
-    bytecomp/lambda.cmx typing/ident.cmx typing/env.cmx typing/ctype.cmx \
-    bytecomp/typeopt.cmi
+    typing/predef.cmx typing/path.cmx bytecomp/lambda.cmx typing/ident.cmx \
+    typing/env.cmx typing/ctype.cmx bytecomp/typeopt.cmi
 asmcomp/CSEgen.cmi : asmcomp/mach.cmi
 asmcomp/asmgen.cmi : bytecomp/lambda.cmi asmcomp/cmm.cmi
 asmcomp/asmlibrarian.cmi :
