@@ -48,14 +48,11 @@ let maybe_pointer exp =
 
 
 (* XXX : should change the function name *)
-(* stack : (Ident.t * type_expr list) Stack.t
-   stack is passed by transl_exp
-*)
-let ptvar_gen ty =
+let ptvar_gen stack ty =
   let rec nth f i = function
     | x :: xs -> if f x then Some i else nth f (i + 1) xs
     | [] -> None in
-  let s = Stack.copy Translcore.stack in
+  let s = Stack.copy stack in
   let rec loop () =
     if Stack.is_empty s then None else
       let (id, tys) = Stack.pop s in
@@ -63,11 +60,11 @@ let ptvar_gen ty =
       | Some i -> Some (id, i) | None -> loop () in
   loop ()
 
-let array_element_kind env ty =
+let array_element_kind env stack ty =
   let ty = scrape2 env ty in
   match ty.desc with
   | Tvar _ ->
-      begin match ptvar_gen ty with
+      begin match ptvar_gen stack ty with
       | Some (id, i) -> Ptvar (id, i)
       | None -> Pgenarray
       end
@@ -102,18 +99,18 @@ let array_element_kind env ty =
   | _ ->
       Paddrarray
 
-let array_kind_gen ty env =
+let array_kind_gen stack ty env =
   match scrape env ty with
   | Tconstr(p, [elt_ty], _) | Tpoly({desc = Tconstr(p, [elt_ty], _)}, _)
     when Path.same p Predef.path_array ->
-      array_element_kind env elt_ty
+      array_element_kind env stack elt_ty
   | _ ->
       (* This can happen with e.g. Obj.field *)
       Pgenarray
 
-let array_kind exp = array_kind_gen exp.exp_type exp.exp_env
+let array_kind stack exp = array_kind_gen stack exp.exp_type exp.exp_env
 
-let array_pattern_kind pat = array_kind_gen pat.pat_type pat.pat_env
+let array_pattern_kind ?(stack=Stack.create ()) pat = array_kind_gen stack pat.pat_type pat.pat_env
 
 let bigarray_decode_type env ty tbl dfl =
   match scrape env ty with

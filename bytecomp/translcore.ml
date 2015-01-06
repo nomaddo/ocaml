@@ -379,11 +379,11 @@ let transl_prim loc prim args =
     (* Try strength reduction based on the type of the argument *)
     begin match (p, args) with
         (Psetfield(n, _), [arg1; arg2]) -> Psetfield(n, maybe_pointer arg2)
-      | (Parraylength Pgenarray, [arg])   -> Parraylength(array_kind arg)
-      | (Parrayrefu Pgenarray, arg1 :: _) -> Parrayrefu(array_kind arg1)
-      | (Parraysetu Pgenarray, arg1 :: _) -> Parraysetu(array_kind arg1)
-      | (Parrayrefs Pgenarray, arg1 :: _) -> Parrayrefs(array_kind arg1)
-      | (Parraysets Pgenarray, arg1 :: _) -> Parraysets(array_kind arg1)
+      | (Parraylength Pgenarray, [arg])   -> Parraylength(array_kind stack arg)
+      | (Parrayrefu Pgenarray, arg1 :: _) -> Parrayrefu(array_kind stack arg1)
+      | (Parraysetu Pgenarray, arg1 :: _) -> Parraysetu(array_kind stack arg1)
+      | (Parrayrefs Pgenarray, arg1 :: _) -> Parrayrefs(array_kind stack arg1)
+      | (Parraysets Pgenarray, arg1 :: _) -> Parraysets(array_kind stack arg1)
       | (Pbigarrayref(unsafe, n, Pbigarray_unknown, Pbigarray_unknown_layout),
                       arg1 :: _) ->
             let (k, l) = bigarray_kind_and_layout arg1 in
@@ -662,15 +662,19 @@ and transl_exp0 e =
       raise(Error(e.exp_loc, Free_super_var))
   | Texp_ident(path, _, ({val_kind = Val_reg | Val_self _} as vdesc)) ->
       let lam = transl_path ~loc:e.exp_loc e.exp_env path in
-      if vdesc.val_tvars = []
+      if vdesc.val_tvars <> []
       then
         let instance = Ctype.instance_parameterized_type in
         let tys, ty = instance vdesc.val_tvars vdesc.val_type in
         Ctype.unify e.exp_env e.exp_type ty;
         let tys = List.map
             (fun ty -> Lambda.to_type_kind (Ctype.repr ty)) tys in
-        assert((function Lvar _ | Lprim (Pgetglobal _, _) -> true | _ -> false) lam);
         Lspecialized (lam, tys)
+        (* if (function Lvar _ | Lprim (Pgetglobal _, _) -> true | _ -> false) lam *)
+        (* then begin *)
+        (*   Format.printf "%a@." Printlambda.lambda lam; *)
+        (*   assert(false) end *)
+        (* else Lspecialized (lam, tys) *)
       else
         lam
   | Texp_ident _ -> fatal_error "Translcore.transl_exp: bad Texp_ident"
@@ -814,7 +818,7 @@ and transl_exp0 e =
         | Record_float -> Psetfloatfield lbl.lbl_pos in
       Lprim(access, [transl_exp arg; transl_exp newval])
   | Texp_array expr_list ->
-      let kind = array_kind e in
+      let kind = array_kind stack e in
       let ll = transl_list expr_list in
       begin try
         (* Deactivate constant optimization if array is small enough *)
