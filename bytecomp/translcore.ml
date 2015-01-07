@@ -668,7 +668,6 @@ and transl_exp0 e =
           let instance = Ctype.instance_parameterized_type ~keep_names:true in
           let tys, ty1 = instance vdesc.val_tvars (Ctype.repr vdesc.val_type) in
           let ty2 = Ctype.instance e.exp_env e.exp_type in
-          Ctype.generalize_global ty1;
           Ctype.unify e.exp_env ty1 ty2;
           let tys = List.map
               (fun ty -> Lambda.to_type_kind (Ctype.repr ty)) tys in
