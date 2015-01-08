@@ -631,6 +631,17 @@ let rec cut n l =
 
 let try_ids = Hashtbl.create 8
 
+let extract env ids =
+  let num = ref 0 in
+  let extract' env ids =
+    List.fold_left (fun s id ->
+      try
+        let vb = Env.find_value (Path.Pident id) env in
+        incr num; (id, vb.val_tvars) :: s
+      with Not_found -> s
+    ) [] ids in
+  (extract' env ids, !num)
+
 let rec transl_exp e =
   let eval_once =
     (* Whether classes for immediate objects must be cached *)
@@ -664,37 +675,33 @@ and transl_exp0 e =
       let lam = transl_path ~loc:e.exp_loc e.exp_env path in
       if vdesc.val_tvars <> []
       then
+          let instance = Ctype.instance_parameterized_type in
+          let tys, ty1 = instance vdesc.val_tvars vdesc.val_type in
+          let ty2 = e.exp_type in
         try
-          let instance = Ctype.instance_parameterized_type ~keep_names:true in
-          let tys, ty1 = instance vdesc.val_tvars (Ctype.repr vdesc.val_type) in
-          let ty2 = Ctype.instance e.exp_env e.exp_type in
           Ctype.unify e.exp_env ty1 ty2;
           let tys = List.map
               (fun ty -> Lambda.to_type_kind (Ctype.repr ty)) tys in
           Lspecialized (lam, tys)
-          (* if (function Lvar _ | Lprim (Pgetglobal _, _) -> true | _ -> false) lam *)
-          (* then begin *)
-          (*   Format.printf "%a@." Printlambda.lambda lam; *)
-          (*   assert(false) end *)
-          (* else Lspecialized (lam, tys) *)
-        with Ctype.Unify _ -> lam
+        with Ctype.Unify _ ->
+          Format.printf "unify error: %a\n%a\n%a\n@."
+            Location.print_loc e.exp_loc
+            Printtyp.raw_type_expr ty1
+            Printtyp.raw_type_expr ty2;
+          lam
       else
         lam
   | Texp_ident _ -> fatal_error "Translcore.transl_exp: bad Texp_ident"
   | Texp_constant cst ->
       Lconst(Const_base cst)
   | Texp_let(rec_flag, vbs, body) ->
-      let ids = Typedtree.let_bound_idents vbs in
-      let num = ref 0 in
-      let l = List.fold_left (fun s id ->
-        try
-          let vb = Env.find_value (Path.Pident id) e.exp_env in
-          incr num; (id, vb.val_tvars) :: s
-        with Not_found -> s
-      ) [] ids in
-      List.iter (fun p -> Stack.push p stack) l;
-      let lam = transl_let rec_flag vbs (event_before body (transl_exp body)) in
-      for _ = 1 to !num do ignore (Stack.pop stack) done;
+      (* let ids = Typedtree.let_bound_idents vbs in *)
+      (* let l, num = extract body.exp_env ids in *)
+      (* List.iter (fun p -> Stack.push p stack) l; *)
+      let lam =
+        transl_let body.exp_env rec_flag vbs
+          (event_before body (transl_exp body)) in
+      (* for _ = 1 to num do ignore (Stack.pop stack) done; *)
       lam
   | Texp_function (_, pat_expr_list, partial) ->
       let ((kind, params), body) =
@@ -1074,29 +1081,35 @@ and transl_function loc untuplify_fn repr partial cases =
        Matching.for_function loc repr (Lvar param)
          (transl_cases cases) partial)
 
-and transl_let rec_flag pat_expr_list body =
-  match rec_flag with
-    Nonrecursive ->
-      let rec transl = function
-        [] ->
-          body
-      | {vb_pat=pat; vb_expr=expr} :: rem ->
-          Matching.for_let pat.pat_loc (transl_exp expr) pat (transl rem)
-      in transl pat_expr_list
-  | Recursive ->
-      let idlist =
-        List.map
-          (fun {vb_pat=pat} -> match pat.pat_desc with
-              Tpat_var (id,_) -> id
-            | Tpat_alias ({pat_desc=Tpat_any}, id,_) -> id
-            | _ -> raise(Error(pat.pat_loc, Illegal_letrec_pat)))
-        pat_expr_list in
-      let transl_case {vb_pat=pat; vb_expr=expr} id =
-        let lam = transl_exp expr in
-        if not (check_recursive_lambda idlist lam) then
-          raise(Error(expr.exp_loc, Illegal_letrec_expr));
-        (id, lam) in
-      Lletrec(List.map2 transl_case pat_expr_list idlist, body)
+and transl_let env rec_flag pat_expr_list body =
+  let ids = Typedtree.let_bound_idents pat_expr_list in
+  let tvars, num = extract env ids in
+  List.iter (fun p -> Stack.push p stack) tvars;
+  let lam =
+    match rec_flag with
+      Nonrecursive ->
+        let rec transl = function
+          [] ->
+            body
+        | {vb_pat=pat; vb_expr=expr} :: rem ->
+            Matching.for_let pat.pat_loc (transl_exp expr) pat (transl rem)
+        in transl pat_expr_list
+    | Recursive ->
+        let idlist =
+          List.map
+            (fun {vb_pat=pat} -> match pat.pat_desc with
+                Tpat_var (id,_) -> id
+              | Tpat_alias ({pat_desc=Tpat_any}, id,_) -> id
+              | _ -> raise(Error(pat.pat_loc, Illegal_letrec_pat)))
+          pat_expr_list in
+        let transl_case {vb_pat=pat; vb_expr=expr} id =
+          let lam = transl_exp expr in
+          if not (check_recursive_lambda idlist lam) then
+            raise(Error(expr.exp_loc, Illegal_letrec_expr));
+          (id, lam) in
+        Lletrec(List.map2 transl_case pat_expr_list idlist, body) in
+  for _ = 1 to num do ignore (Stack.pop stack) done;
+  lam
 
 and transl_setinstvar self var expr =
   Lprim(Parraysetu (if maybe_pointer expr then Paddrarray else Pintarray),

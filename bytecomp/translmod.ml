@@ -121,7 +121,7 @@ and wrap_id_pos_list id_pos_list get_field lam =
       (lam, Ident.empty) id_pos_list
   in
   if s == Ident.empty then lam else subst_lambda s lam
-  
+
 
 (* Compose two coercions
    apply_coercion c1 (apply_coercion c2 e) behaves like
@@ -400,8 +400,8 @@ and transl_structure fields cc rootpath = function
       Lsequence(transl_exp expr, transl_structure fields cc rootpath rem)
   | Tstr_value(rec_flag, pat_expr_list) ->
       let ext_fields = rev_let_bound_idents pat_expr_list @ fields in
-      transl_let rec_flag pat_expr_list
-                 (transl_structure ext_fields cc rootpath rem)
+      transl_let item.str_env rec_flag pat_expr_list
+        (transl_structure ext_fields cc rootpath rem)
   | Tstr_primitive descr ->
       record_primitive descr.val_val;
       transl_structure fields cc rootpath rem
@@ -590,7 +590,7 @@ let transl_store_structure glob map prims str =
                 transl_store rootpath subst rem)
   | Tstr_value(rec_flag, pat_expr_list) ->
       let ids = let_bound_idents pat_expr_list in
-      let lam = transl_let rec_flag pat_expr_list (store_idents ids) in
+      let lam = transl_let item.str_env rec_flag pat_expr_list (store_idents ids) in
       Lsequence(subst_lambda subst lam,
                 transl_store rootpath (add_idents false ids subst) rem)
   | Tstr_primitive descr ->
@@ -816,7 +816,7 @@ let transl_toplevel_item item =
       transl_exp expr
   | Tstr_value(rec_flag, pat_expr_list) ->
       let idents = let_bound_idents pat_expr_list in
-      transl_let rec_flag pat_expr_list
+      transl_let item.str_env rec_flag pat_expr_list
                  (make_sequence toploop_setvalue_id idents)
   | Tstr_typext(tyext) ->
       let idents =

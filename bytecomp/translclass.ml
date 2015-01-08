@@ -185,7 +185,7 @@ let rec build_object_init cl_table obj params inh_init obj_init cl =
       let (inh_init, obj_init) =
         build_object_init cl_table obj (vals @ params) inh_init obj_init cl
       in
-      (inh_init, Translcore.transl_let rec_flag defs obj_init)
+      (inh_init, Translcore.transl_let cl.cl_env rec_flag defs obj_init)
   | Tcl_constraint (cl, _, vals, pub_meths, concr_meths) ->
       build_object_init cl_table obj params inh_init obj_init cl
 
@@ -378,7 +378,7 @@ let rec build_class_lets cl ids =
     Tcl_let (rec_flag, defs, vals, cl') ->
       let env, wrap = build_class_lets cl' [] in
       (env, fun x ->
-        let lam = Translcore.transl_let rec_flag defs (wrap x) in
+        let lam = Translcore.transl_let cl.cl_env rec_flag defs (wrap x) in
         (* Check recursion in toplevel let-definitions *)
         if ids = [] || Translcore.check_recursive_lambda ids lam then lam
         else raise(Error(cl.cl_loc, Illegal_class_expr)))
@@ -424,7 +424,7 @@ let rec transl_class_rebind obj_init cl vf =
       (path, transl_apply obj_init oexprs Location.none)
   | Tcl_let (rec_flag, defs, vals, cl) ->
       let path, obj_init = transl_class_rebind obj_init cl vf in
-      (path, Translcore.transl_let rec_flag defs obj_init)
+      (path, Translcore.transl_let cl.cl_env rec_flag defs obj_init)
   | Tcl_structure _ -> raise Exit
   | Tcl_constraint (cl', _, _, _, _) ->
       let path, obj_init = transl_class_rebind obj_init cl' vf in
@@ -440,7 +440,7 @@ let rec transl_class_rebind_0 self obj_init cl vf =
   match cl.cl_desc with
     Tcl_let (rec_flag, defs, vals, cl) ->
       let path, obj_init = transl_class_rebind_0 self obj_init cl vf in
-      (path, Translcore.transl_let rec_flag defs obj_init)
+      (path, Translcore.transl_let cl.cl_env rec_flag defs obj_init)
   | _ ->
       let path, obj_init = transl_class_rebind obj_init cl vf in
       (path, lfunction [self] obj_init)

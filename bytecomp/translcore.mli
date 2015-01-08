@@ -22,7 +22,7 @@ val stack : (Ident.t * Types.type_expr list) Stack.t
 val transl_exp: expression -> lambda
 val transl_apply: lambda -> (label * expression option * optional) list
                   -> Location.t -> lambda
-val transl_let: rec_flag -> value_binding list -> lambda -> lambda
+val transl_let: Env.t -> rec_flag -> value_binding list -> lambda -> lambda
 val transl_primitive: Location.t -> Primitive.description -> lambda
 
 val check_recursive_lambda: Ident.t list -> lambda -> bool

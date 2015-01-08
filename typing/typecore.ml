@@ -1852,7 +1852,7 @@ and type_expect_ ?in_function env sexp ty_expected =
         exp_loc = loc; exp_extra = [];
         exp_type = body.exp_type;
         exp_attributes = sexp.pexp_attributes;
-        exp_env = env }
+        exp_env = (* new_ *) env } (* XXX : change env to new_env here *)
   | Pexp_fun (l, Some default, spat, sexp) ->
       assert(is_optional l); (* default allowed only with optional argument *)
       let open Ast_helper in
