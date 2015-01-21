@@ -268,8 +268,5 @@ val lam_of_loc : loc_kind -> Location.t -> lambda
 
 val reset: unit -> unit
 
-
 (* for array_kind Ptvar *)
 val to_type_kind: Types.type_expr -> type_kind
-
-val subst_array_kind: Ident.t -> type_kind list -> lambda -> lambda

@@ -57,6 +57,7 @@ let occurs_var var u =
   let rec occurs = function
       Uvar v -> v = var
     | Uconst _ -> false
+    | Uspecialized (u, l) -> occurs u
     | Udirect_apply(lbl, args, _) -> List.exists occurs args
     | Ugeneric_apply(funct, args, _) -> occurs funct || List.exists occurs args
     | Uclosure(fundecls, clos) -> List.exists occurs clos
@@ -177,6 +178,7 @@ let lambda_smaller lam threshold =
     match lam with
       Uvar v -> ()
     | Uconst _ -> incr size
+    | Uspecialized (u, l) -> lambda_size u
     | Udirect_apply(fn, args, _) ->
         size := !size + 4; lambda_list_size args
     | Ugeneric_apply(fn, args, _) ->
@@ -528,11 +530,74 @@ let approx_ulam = function
     Uconst c -> Value_const c
   | _ -> Value_unknown
 
+
+let rec subst_array_kind v tyks ulam =
+  let subst = subst_array_kind v tyks in
+  match ulam with
+  | Uprim (prim, args, dinfo) ->
+    begin match prim with
+    | Pmakearray ((Ptvar (id, i)) as k) ->
+        let k = Simplif.gen_kind v id tyks i k in
+        Uprim (Pmakearray k, List.map subst args, dinfo)
+    | Parraylength ((Ptvar (id, i)) as k) ->
+        let k = Simplif.gen_kind v id tyks i k in
+        Uprim (Parraylength k, List.map subst args, dinfo)
+    | Parrayrefu ((Ptvar (id, i)) as k) ->
+        let k = Simplif.gen_kind v id tyks i k in
+        Uprim (Parrayrefu k, List.map subst args, dinfo)
+    | Parraysetu ((Ptvar (id, i)) as k) ->
+        let k = Simplif.gen_kind v id tyks i k in
+        Uprim (Parraysetu k, List.map subst args, dinfo)
+    | Parrayrefs ((Ptvar (id, i)) as k) ->
+        let k = Simplif.gen_kind v id tyks i k in
+        Uprim (Parrayrefs k, List.map subst args, dinfo)
+    | Parraysets ((Ptvar (id, i)) as k) ->
+        let k = Simplif.gen_kind v id tyks i k in
+        Uprim (Parraysets k, List.map subst args, dinfo)
+    | _ -> Uprim (prim, List.map subst args, dinfo)
+    end
+  | Uvar _ as u -> u
+  | Uconst _ as u -> u
+  | Uspecialized (u, tyks) -> Uspecialized (subst u, tyks)
+  | Udirect_apply (function_label, us, dinfo) ->
+    Udirect_apply (function_label, List.map subst us, dinfo)
+  | Ugeneric_apply (u, us, dinfo) ->
+    Ugeneric_apply (subst u, List.map subst us, dinfo)
+  | Uclosure (ufuncs, ulams) ->
+    let subst_fun ufun = {ufun with body = subst body} in
+    Uclosure (List.map subst_fun ufuncs, List.map subst ulams)
+  | Uoffset (ulam, i) -> Uoffset (subst ulam, i)
+  | Ulet (id, u1, u2) ->
+    Ulet (id, subst u1, subst u2)
+  | Uletrec (idus, u) ->
+    let subst_pair (id, u) = (id, subst u) in
+    Uletrec (List.map subst_pair idus, subst u)
+  | Uswitch (ulam, ulamswitch) ->
+    let subst_switch sw =
+      {sw with us_actions_blocks = Array.map subst sw.us_actions_blocks;
+               us_actions_consts =Array.map subst sw.us_actions_consts} in
+    Uswitch (subst ulam, List.map subst_switch ulamswitch)
+
+  (* | Ustringswitch of ulambda * (string * ulambda) list * ulambda option *)
+  (* | Ustaticfail of int * ulambda list *)
+  (* | Ucatch of int * Ident.t list * ulambda * ulambda *)
+  (* | Utrywith of ulambda * Ident.t * ulambda *)
+  (* | Uifthenelse of ulambda * ulambda * ulambda *)
+  (* | Usequence of ulambda * ulambda *)
+  (* | Uwhile of ulambda * ulambda *)
+  (* | Ufor of Ident.t * ulambda * ulambda * direction_flag * ulambda *)
+  (* | Uassign of Ident.t * ulambda *)
+  (* | Usend of meth_kind * ulambda * ulambda * ulambda list * Debuginfo.t *)
+
 let rec substitute fpc sb ulam =
   match ulam with
     Uvar v ->
       begin try Tbl.find v sb with Not_found -> ulam end
   | Uconst _ -> ulam
+  | Uspecialized (Uvar v as var, tyks) ->
+      begin try
+        subst_array_kind v tyks (Tbl.find v sb)
+      with Not_found -> l end
   | Udirect_apply(lbl, args, dbg) ->
       Udirect_apply(lbl, List.map (substitute fpc sb) args, dbg)
   | Ugeneric_apply(fn, args, dbg) ->
@@ -809,6 +874,9 @@ let rec close fenv cenv = function
         | Const_base(Const_nativeint x) -> str (Uconst_nativeint x)
       in
       make_const (transl cst)
+  | Lspecialized (lam, tykinds) ->
+      (* XXX : Need more procedures ? *)
+      Uspecialized (close fenv cenv lam, tykinds)
   | Lfunction(kind, params, body) as funct ->
       close_one_function fenv cenv (Ident.create "fun") funct
 
