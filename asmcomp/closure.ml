@@ -530,7 +530,6 @@ let approx_ulam = function
     Uconst c -> Value_const c
   | _ -> Value_unknown
 
-
 let rec subst_array_kind v tyks ulam =
   let subst = subst_array_kind v tyks in
   match ulam with
@@ -564,7 +563,7 @@ let rec subst_array_kind v tyks ulam =
   | Ugeneric_apply (u, us, dinfo) ->
     Ugeneric_apply (subst u, List.map subst us, dinfo)
   | Uclosure (ufuncs, ulams) ->
-    let subst_fun ufun = {ufun with body = subst body} in
+    let subst_fun ufun = {ufun with body = subst ufun.body} in
     Uclosure (List.map subst_fun ufuncs, List.map subst ulams)
   | Uoffset (ulam, i) -> Uoffset (subst ulam, i)
   | Ulet (id, u1, u2) ->
@@ -576,18 +575,38 @@ let rec subst_array_kind v tyks ulam =
     let subst_switch sw =
       {sw with us_actions_blocks = Array.map subst sw.us_actions_blocks;
                us_actions_consts =Array.map subst sw.us_actions_consts} in
-    Uswitch (subst ulam, List.map subst_switch ulamswitch)
-
-  (* | Ustringswitch of ulambda * (string * ulambda) list * ulambda option *)
-  (* | Ustaticfail of int * ulambda list *)
-  (* | Ucatch of int * Ident.t list * ulambda * ulambda *)
-  (* | Utrywith of ulambda * Ident.t * ulambda *)
-  (* | Uifthenelse of ulambda * ulambda * ulambda *)
-  (* | Usequence of ulambda * ulambda *)
-  (* | Uwhile of ulambda * ulambda *)
-  (* | Ufor of Ident.t * ulambda * ulambda * direction_flag * ulambda *)
-  (* | Uassign of Ident.t * ulambda *)
-  (* | Usend of meth_kind * ulambda * ulambda * ulambda list * Debuginfo.t *)
+    Uswitch (subst ulam, subst_switch ulamswitch)
+  | Ustringswitch (ulam, l, uopt) ->
+      let map_pair = (fun (s, u) -> (s, subst u)) in
+      let map_opt = function None -> None | Some e -> Some (subst e) in
+      Ustringswitch (subst ulam, List.map map_pair l, map_opt uopt)
+  (* of ulambda * (string * ulambda) list * ulambda option *)
+  | Ustaticfail (i, ulams) ->
+      Ustaticfail (i, List.map subst ulams)
+  (* of int * ulambda list *)
+  | Ucatch (i, ids, ulam1, ulam2) ->
+      Ucatch (i, ids,  subst ulam1, subst ulam2)
+  (* of int * Ident.t list * ulambda * ulambda *)
+  | Utrywith (ulam1, id, ulam2) ->
+      Utrywith (subst ulam1, id, subst ulam2)
+  (* of ulambda * Ident.t * ulambda *)
+  | Uifthenelse (ulam1, ulam2, ulam3) ->
+      Uifthenelse (subst ulam1, subst ulam2, subst ulam3)
+  (* of ulambda * ulambda * ulambda *)
+  | Usequence (ulam1, ulam2) ->
+      Usequence (subst ulam1, subst ulam2)
+  (* of ulambda * ulambda *)
+  | Uwhile (ulam1, ulam2) -> Uwhile (subst ulam1, subst ulam2)
+  (* of ulambda * ulambda *)
+  | Ufor (id, ulam1, ulam2, df, ulam3) ->
+      Ufor (id, subst ulam1, subst ulam2, df, subst ulam3)
+  (* of Ident.t * ulambda * ulambda * direction_flag * ulambda *)
+  | Uassign (id, ulam) ->
+      Uassign (id, subst ulam)
+  (* of Ident.t * ulambda *)
+  | Usend (meth_kind, ulam1, ulam2, ulams, dinfo) ->
+      Usend (meth_kind, subst ulam1, subst ulam2, List.map subst ulams, dinfo)
+  (* of meth_kind * ulambda * ulambda * ulambda list * Debuginfo.t *)
 
 let rec substitute fpc sb ulam =
   match ulam with
@@ -876,7 +895,8 @@ let rec close fenv cenv = function
       make_const (transl cst)
   | Lspecialized (lam, tykinds) ->
       (* XXX : Need more procedures ? *)
-      Uspecialized (close fenv cenv lam, tykinds)
+      let ulam, approx = close fenv cenv lam in
+      ulam, approx
   | Lfunction(kind, params, body) as funct ->
       close_one_function fenv cenv (Ident.create "fun") funct
 
@@ -1358,7 +1378,7 @@ let intro size lam =
   let id = Compilenv.make_symbol None in
   global_approx := Array.init size (fun i -> Value_global_field (id, i));
   Compilenv.set_global_approx(Value_tuple !global_approx);
-  let (ulam, approx) = close Tbl.empty Tbl.empty lam in
+  let (ulam, _) = close Tbl.empty Tbl.empty lam in
   if !Clflags.opaque
   then Compilenv.set_global_approx(Value_unknown)
   else collect_exported_structured_constants (Value_tuple !global_approx);
