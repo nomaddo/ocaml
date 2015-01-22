@@ -613,10 +613,13 @@ let rec substitute fpc sb ulam =
     Uvar v ->
       begin try Tbl.find v sb with Not_found -> ulam end
   | Uconst _ -> ulam
-  | Uspecialized (Uvar v as var, tyks) ->
+  | Uspecialized (Uvar v, tyks) ->
       begin try
         subst_array_kind v tyks (Tbl.find v sb)
-      with Not_found -> l end
+      with Not_found -> ulam end
+  | Uspecialized (ulam, _) ->
+      Format.printf "Error in substite:\n %a" Printclambda.clambda ulam;
+      assert(false)
   | Udirect_apply(lbl, args, dbg) ->
       Udirect_apply(lbl, List.map (substitute fpc sb) args, dbg)
   | Ugeneric_apply(fn, args, dbg) ->
@@ -1338,6 +1341,7 @@ let collect_exported_structured_constants a =
   and ulam = function
     | Uvar _ -> ()
     | Uconst c -> const c
+    | Uspecialized (u, _) -> ulam u
     | Udirect_apply (_, ul, _) -> List.iter ulam ul
     | Ugeneric_apply (u, ul, _) -> ulam u; List.iter ulam ul
     | Uclosure (fl, ul) ->

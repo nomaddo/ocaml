@@ -757,7 +757,8 @@ let make_unsigned_int bi arg =
 (* Big arrays *)
 
 let bigarray_elt_size = function
-    Pbigarray_unknown -> assert false
+  | Pbigarray_unknown -> assert false
+  | Pbigtvar _ -> assert false
   | Pbigarray_float32 -> 4
   | Pbigarray_float64 -> 8
   | Pbigarray_sint8 -> 1
@@ -804,7 +805,8 @@ let bigarray_indexing unsafe elt_kind layout b args dbg =
   Cop(Cadda, [Cop(Cload Word, [field_address b 1]); byte_offset])
 
 let bigarray_word_kind = function
-    Pbigarray_unknown -> assert false
+  | Pbigarray_unknown -> assert false
+  | Pbigtvar _ -> assert false
   | Pbigarray_float32 -> Single
   | Pbigarray_float64 -> Double
   | Pbigarray_sint8 -> Byte_signed
@@ -1288,8 +1290,10 @@ let strmatch_compile =
   S.compile
 
 let rec transl = function
-    Uvar id ->
+  | Uvar id ->
       Cvar id
+  | Uspecialized (u, _) ->      (* ignore type specialization here *)
+      transl u
   | Uconst sc ->
       transl_constant sc
   | Uclosure(fundecls, []) ->
@@ -1391,7 +1395,8 @@ let rec transl = function
           transl_structured_constant (Uconst_block(0, []))
       | (Pmakearray kind, args) ->
           begin match kind with
-            Pgenarray ->
+            | Ptvar _
+            | Pgenarray ->
               Cop(Cextcall("caml_make_array", typ_addr, true, Debuginfo.none),
                   [make_alloc 0 (List.map transl args)])
           | Paddrarray | Pintarray ->
@@ -1601,7 +1606,8 @@ and transl_prim_1 p arg dbg =
   (* Array operations *)
   | Parraylength kind ->
       begin match kind with
-        Pgenarray ->
+      | Ptvar _
+      | Pgenarray ->
           let len =
             if wordsize_shift = numfloat_shift then
               Cop(Clsr, [header(transl arg); Cconst_int wordsize_shift])
@@ -1783,7 +1789,7 @@ and transl_prim_2 p arg1 arg2 dbg =
   (* Array operations *)
   | Parrayrefu kind ->
       begin match kind with
-        Pgenarray ->
+      | Ptvar _ | Pgenarray ->
           bind "arr" (transl arg1) (fun arr ->
             bind "index" (transl arg2) (fun idx ->
               Cifthenelse(is_addr_array_ptr arr,
@@ -1796,7 +1802,7 @@ and transl_prim_2 p arg1 arg2 dbg =
       end
   | Parrayrefs kind ->
       begin match kind with
-      | Pgenarray ->
+      | Ptvar _ | Pgenarray ->
           bind "index" (transl arg2) (fun idx ->
           bind "arr" (transl arg1) (fun arr ->
           bind "header" (header arr) (fun hdr ->
@@ -1897,7 +1903,7 @@ and transl_prim_3 p arg1 arg2 arg3 dbg =
   (* Array operations *)
   | Parraysetu kind ->
       return_unit(begin match kind with
-        Pgenarray ->
+        | Ptvar _ | Pgenarray ->
           bind "newval" (transl arg3) (fun newval ->
             bind "index" (transl arg2) (fun index ->
               bind "arr" (transl arg1) (fun arr ->
@@ -1913,7 +1919,7 @@ and transl_prim_3 p arg1 arg2 arg3 dbg =
       end)
   | Parraysets kind ->
       return_unit(begin match kind with
-      | Pgenarray ->
+      | Ptvar _ | Pgenarray ->
           bind "newval" (transl arg3) (fun newval ->
           bind "index" (transl arg2) (fun idx ->
           bind "arr" (transl arg1) (fun arr ->

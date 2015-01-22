@@ -294,6 +294,12 @@ let beta_reduce params body args =
 
 (* Simplification of lets *)
 
+let gen_kind id1 id2 tyks i k =
+  if Ident.same id1 id2 then
+    match List.nth tyks i with
+    | I -> Pintarray | F -> Pfloatarray | P -> Paddrarray
+  else k
+
 let simplify_lets lam =
 
   (* Disable optimisations for bytecode compilation with -g flag *)
@@ -426,12 +432,6 @@ let simplify_lets lam =
   | Lvar w when optimize && Ident.same v w -> e1
   | _ -> Llet (kind,v,e1,e2) in
 
-  let gen_kind id1 id2 tyks i k =
-    if Ident.same id1 id2 then
-      match List.nth tyks i with
-      | I -> Pintarray | F -> Pfloatarray | P -> Paddrarray
-    else k in
-
   let rec subst_array_kind v tyks lam =
     let subst = subst_array_kind v tyks in
     let subst_decl (id, exp) = (id, subst exp)
@@ -498,7 +498,7 @@ let simplify_lets lam =
       with Not_found ->
         l
       end
-  | Lspecialized (Lvar v as var, tyks) as l ->
+  | Lspecialized (Lvar v, tyks) as l ->
       begin try
         subst_array_kind v tyks (Hashtbl.find subst v)
       with Not_found -> l end
