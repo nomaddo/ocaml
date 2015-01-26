@@ -240,6 +240,7 @@ let lambda_smaller lam threshold =
 
 let rec is_pure_clambda = function
     Uvar v -> true
+  | Uspecialized _ -> true
   | Uconst _ -> true
   | Uprim((Psetglobal _ | Psetfield _ | Psetfloatfield _ | Pduprecord _ |
            Pccall _ | Praise _ | Poffsetref _ | Pstringsetu | Pstringsets |
@@ -710,7 +711,7 @@ let rec substitute fpc sb ulam =
 (* Perform an inline expansion *)
 
 let is_simple_argument = function
-  | Uvar _  | Uconst _ -> true
+  | Uvar _  | Uconst _ | Uspecialized _ -> true
   | _ -> false
 
 let no_effects = function
@@ -750,6 +751,7 @@ let bind_params fpc params args body =
 
 let rec is_pure = function
     Lvar v -> true
+  | Lspecialized _ -> true
   | Lconst cst -> true
   | Lprim((Psetglobal _ | Psetfield _ | Psetfloatfield _ | Pduprecord _ |
            Pccall _ | Praise _ | Poffsetref _ | Pstringsetu | Pstringsets |
