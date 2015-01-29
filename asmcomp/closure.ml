@@ -617,7 +617,10 @@ let rec substitute fpc sb ulam =
   | Uspecialized (Uvar v, tyks) ->
       begin try
         subst_array_kind v tyks (Tbl.find v sb)
-      with Not_found -> ulam end
+      with Not_found ->
+        Format.printf "%s@." v.Ident.name; assert false
+      end
+  (* | Uspecialized (Uprim (Pfield i, args, dbg), tykinds) -> *)
   | Uspecialized (ulam, _) ->
       Format.printf "Error in substite:\n %a" Printclambda.clambda ulam;
       assert(false)
@@ -899,9 +902,19 @@ let rec close fenv cenv = function
       in
       make_const (transl cst)
   | Lspecialized (lam, tykinds) ->
-      (* XXX : Need more procedures ? *)
+      (* XXX : Need more procedures
+         _____Need to extend type_kind____.
+
+           let f a = a.(0) let g x = f x
+           let _ = ignore (g [|1.0; 2.0|])
+
+         The Compiler expand f's definition in g.
+         But f is specialized in g. Need to substitute type_kind.
+         Now, f is inlined in g and g is inlined inside ignore.
+         Tvar ("f", 0) remain in expr inside `ignore`.
+      *)
       let ulam, approx = close fenv cenv lam in
-      ulam, approx
+      Uspecialized (ulam, tykinds), approx
   | Lfunction(kind, params, body) as funct ->
       close_one_function fenv cenv (Ident.create "fun") funct
 
@@ -959,14 +972,14 @@ let rec close fenv cenv = function
       let (uobj, _) = close fenv cenv obj in
       (Usend(kind, umet, uobj, close_list fenv cenv args, Debuginfo.none),
        Value_unknown)
-  | Llet(str, id, lam, body) ->
+  | Llet(let_kind, id, lam, body) ->
       let (ulam, alam) = close_named fenv cenv id lam in
-      begin match (str, alam) with
+      begin match (let_kind, alam) with
         (Variable, _) ->
           let (ubody, abody) = close fenv cenv body in
           (Ulet(id, ulam, ubody), abody)
       | (_, Value_const _)
-        when str = Alias || is_pure lam ->
+        when let_kind = Alias || is_pure lam ->
           close (Tbl.add id alam fenv) cenv body
       | (_, _) ->
           let (ubody, abody) = close (Tbl.add id alam fenv) cenv body in

@@ -578,7 +578,7 @@ let nat_toplevel_name id =
   with Not_found ->
     fatal_error("Translmod.nat_toplevel_name: " ^ Ident.unique_name id)
 
-let transl_store_structure glob map prims str =
+let transl_store_structure glob map prims env str =
   let rec transl_store rootpath subst = function
     [] ->
       transl_store_subst := subst;
@@ -590,7 +590,7 @@ let transl_store_structure glob map prims str =
                 transl_store rootpath subst rem)
   | Tstr_value(rec_flag, pat_expr_list) ->
       let ids = let_bound_idents pat_expr_list in
-      let lam = transl_let item.str_env rec_flag pat_expr_list (store_idents ids) in
+      let lam = transl_let env rec_flag pat_expr_list (store_idents ids) in
       Lsequence(subst_lambda subst lam,
                 transl_store rootpath (add_idents false ids subst) rem)
   | Tstr_primitive descr ->
@@ -601,14 +601,14 @@ let transl_store_structure glob map prims str =
   | Tstr_typext(tyext) ->
       let ids = List.map (fun ext -> ext.ext_id) tyext.tyext_constructors in
       let lam =
-        transl_type_extension item.str_env rootpath tyext (store_idents ids)
+        transl_type_extension env rootpath tyext (store_idents ids)
       in
         Lsequence(subst_lambda subst lam,
                   transl_store rootpath (add_idents false ids subst) rem)
   | Tstr_exception ext ->
       let id = ext.ext_id in
       let path = field_path rootpath id in
-      let lam = transl_extension_constructor item.str_env path ext in
+      let lam = transl_extension_constructor env path ext in
       Lsequence(Llet(Strict, id, subst_lambda subst lam, store_ident id),
                 transl_store rootpath (add_ident false id subst) rem)
   | Tstr_module{mb_id=id; mb_expr={mod_desc = Tmod_structure str}} ->
@@ -752,7 +752,7 @@ let build_ident_map restr idlist more_ids =
 (* Compile an implementation using transl_store_structure
    (for the native-code compiler). *)
 
-let transl_store_gen module_name ({ str_items = str }, restr) topl =
+let transl_store_gen module_name ({ str_items = str; str_final_env = env }, restr) topl =
   reset_labels ();
   primitive_declarations := [];
   let module_id = Ident.create_persistent module_name in
@@ -762,7 +762,7 @@ let transl_store_gen module_name ({ str_items = str }, restr) topl =
     | [ { str_desc = Tstr_eval (expr, _attrs) } ] when topl ->
         assert (size = 0);
         subst_lambda !transl_store_subst (transl_exp expr)
-    | str -> transl_store_structure module_id map prims str in
+    | str -> transl_store_structure module_id map prims env str in
   transl_store_label_init module_id size f str
   (*size, transl_label_init (transl_store_structure module_id map prims str)*)
 
@@ -810,23 +810,27 @@ let close_toplevel_term lam =
   IdentSet.fold (fun id l -> Llet(Strict, id, toploop_getvalue id, l))
                 (free_variables lam) lam
 
-let transl_toplevel_item item =
+let transl_toplevel_item env item =
+  (* TK:
+     item.str_env does not include type info of itself
+     so we pass str_final_env here.
+  *)
   match item.str_desc with
     Tstr_eval (expr, _attrs) ->
       transl_exp expr
   | Tstr_value(rec_flag, pat_expr_list) ->
       let idents = let_bound_idents pat_expr_list in
-      transl_let item.str_env rec_flag pat_expr_list
+      transl_let env rec_flag pat_expr_list
                  (make_sequence toploop_setvalue_id idents)
   | Tstr_typext(tyext) ->
       let idents =
         List.map (fun ext -> ext.ext_id) tyext.tyext_constructors
       in
-        transl_type_extension item.str_env None tyext
+        transl_type_extension env None tyext
           (make_sequence toploop_setvalue_id idents)
   | Tstr_exception ext ->
       toploop_setvalue ext.ext_id
-        (transl_extension_constructor item.str_env None ext)
+        (transl_extension_constructor env None ext)
   | Tstr_module {mb_id=id; mb_expr=modl} ->
       (* we need to use the unique name for the module because of issues
          with "open" (PR#1672) *)
@@ -872,12 +876,19 @@ let transl_toplevel_item item =
   | Tstr_attribute _ ->
       lambda_unit
 
-let transl_toplevel_item_and_close itm =
-  close_toplevel_term (transl_label_init (transl_toplevel_item itm))
+let transl_toplevel_item_and_close env itm =
+  close_toplevel_term (transl_label_init (transl_toplevel_item env itm))
 
 let transl_toplevel_definition str =
   reset_labels ();
-  make_sequence transl_toplevel_item_and_close str.str_items
+  let rec make_sequence fn env = function
+    (* TK : copied from lambda.ml to pass str.str_final_env *)
+    [] -> lambda_unit
+  | [x] -> fn env x
+  | x::rem ->
+      let lam = fn env x in
+      Lsequence(lam, make_sequence fn env rem) in
+  make_sequence transl_toplevel_item_and_close str.str_final_env str.str_items
 
 (* Compile the initialization code for a packed library *)
 
