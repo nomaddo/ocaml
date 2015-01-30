@@ -68,7 +68,7 @@ let array_element_kind env stack ty =
       | Some (id, i) -> Ptvar (id, i)
       | None -> Pgenarray
       end
-  | Tunivar _ -> Pgenarray
+  | Tunivar _ -> Pgenarray (* XXX: is it okey ? *)
   | Tconstr(p, args, abbrev) ->
       if Path.same p Predef.path_int || Path.same p Predef.path_char then
         Pintarray

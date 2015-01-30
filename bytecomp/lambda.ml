@@ -169,7 +169,7 @@ type meth_kind = Self | Public | Cached
 
 type shared_code = (int * int) list
 
-type type_kind = I | F | P
+type type_kind = I | F | P | Tvar of Ident.t * int
 
 type lambda =
     Lvar of Ident.t
