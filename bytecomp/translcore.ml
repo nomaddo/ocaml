@@ -30,7 +30,9 @@ type error =
 exception Error of Location.t * error
 
 (* stack to generate array_kind Ltvar *)
-let stack : Types.type_expr list Stack.t = Stack.create ()
+module IntS = Typeopt.IntS
+
+let stack : IntS.t Stack.t = Stack.create ()
 
 (* Forward declaration -- to be filled in by Translmod.transl_module *)
 let transl_module =
@@ -631,13 +633,15 @@ let rec cut n l =
 let try_ids = Hashtbl.create 8
 
 let extract env ids =
+  let is_tvar = function Tvar _ -> true | _ -> false in
   let extract' env ids =
     List.fold_left (fun s id ->
       try
         let vb = Env.find_value (Path.Pident id) env in
-        vb.val_tvars @ s
+        let is = List.map (fun {desc; id} -> assert (is_tvar desc); id) vb.val_tvars in
+        List.fold_left (fun s i -> IntS.add i s) s is
       with Not_found -> s
-    ) [] ids in
+    ) IntS.empty ids in
   extract' env ids
 
 let rec transl_exp e =
@@ -678,9 +682,10 @@ and transl_exp0 e =
           let ty2 = e.exp_type in
         try
           Ctype.unify e.exp_env ty1 ty2;
-          let tys = List.map
-              (fun ty -> Lambda.to_type_kind (Ctype.repr ty)) tys in
-          Lspecialized (lam, tys)
+          let map = List.map2
+              (fun ty1 ty2 -> (ty1.id, Lambda.to_type_kind (Ctype.repr ty2)))
+              vdesc.val_tvars tys in
+          Lspecialized (lam, map)
         with Ctype.Unify _ ->
           Format.printf "unify error: %a\n%a\n%a\n@."
             Location.print_loc e.exp_loc

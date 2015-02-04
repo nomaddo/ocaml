@@ -531,34 +531,34 @@ let approx_ulam = function
     Uconst c -> Value_const c
   | _ -> Value_unknown
 
-let rec subst_array_kind v tyks ulam =
-  let subst = subst_array_kind v tyks in
+let rec subst_array_kind v map ulam =
+  let subst = subst_array_kind v map in
   match ulam with
   | Uprim (prim, args, dinfo) ->
     begin match prim with
-    | Pmakearray ((Ptvar (id, i)) as k) ->
-        let k = Simplif.gen_kind v id tyks i k in
+    | Pmakearray (Ptvar i as k) ->
+        let k = Simplif.gen_kind map i k in
         Uprim (Pmakearray k, List.map subst args, dinfo)
-    | Parraylength ((Ptvar (id, i)) as k) ->
-        let k = Simplif.gen_kind v id tyks i k in
+    | Parraylength (Ptvar i as k)  ->
+        let k = Simplif.gen_kind map i k in
         Uprim (Parraylength k, List.map subst args, dinfo)
-    | Parrayrefu ((Ptvar (id, i)) as k) ->
-        let k = Simplif.gen_kind v id tyks i k in
+    | Parrayrefu (Ptvar i as k)  ->
+        let k = Simplif.gen_kind map i k in
         Uprim (Parrayrefu k, List.map subst args, dinfo)
-    | Parraysetu ((Ptvar (id, i)) as k) ->
-        let k = Simplif.gen_kind v id tyks i k in
+    | Parraysetu (Ptvar i as k)  ->
+        let k = Simplif.gen_kind map i k in
         Uprim (Parraysetu k, List.map subst args, dinfo)
-    | Parrayrefs ((Ptvar (id, i)) as k) ->
-        let k = Simplif.gen_kind v id tyks i k in
+    | Parrayrefs (Ptvar i as k)  ->
+        let k = Simplif.gen_kind map i k in
         Uprim (Parrayrefs k, List.map subst args, dinfo)
-    | Parraysets ((Ptvar (id, i)) as k) ->
-        let k = Simplif.gen_kind v id tyks i k in
+    | Parraysets (Ptvar i as k)  ->
+        let k = Simplif.gen_kind map i k in
         Uprim (Parraysets k, List.map subst args, dinfo)
     | _ -> Uprim (prim, List.map subst args, dinfo)
     end
   | Uvar _ as u -> u
   | Uconst _ as u -> u
-  | Uspecialized (u, tyks) -> Uspecialized (subst u, tyks)
+  | Uspecialized (u, map) -> Uspecialized (subst u, map)
   | Udirect_apply (function_label, us, dinfo) ->
     Udirect_apply (function_label, List.map subst us, dinfo)
   | Ugeneric_apply (u, us, dinfo) ->
@@ -614,9 +614,9 @@ let rec substitute fpc sb ulam =
     Uvar v ->
       begin try Tbl.find v sb with Not_found -> ulam end
   | Uconst _ -> ulam
-  | Uspecialized (Uvar v, tyks) ->
+  | Uspecialized (Uvar v, map) ->
       begin try
-        subst_array_kind v tyks (Tbl.find v sb)
+        subst_array_kind v map (Tbl.find v sb)
       with Not_found ->
         Format.printf "%s@." v.Ident.name; assert false
       end

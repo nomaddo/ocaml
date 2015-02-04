@@ -43,8 +43,7 @@ let rec lam ppf = function
       Ident.print ppf id
   | Uconst c -> uconstant ppf c
   | Uspecialized (u, l) ->
-      let p ppf l = List.iter (fprintf ppf "%a " Printlambda.type_kind) l in
-      fprintf ppf "sp(%a, [%a])" lam u p l
+      fprintf ppf "sp(%a, [%a])" lam u Printlambda.kind_map l
   | Udirect_apply(f, largs, _) ->
       let lams ppf largs =
         List.iter (fun l -> fprintf ppf "@ %a" lam l) largs in

@@ -19,7 +19,7 @@ open Lambda
 
 val simplify_lambda: lambda -> lambda
 
-val gen_kind : Ident.t -> Ident.t -> type_kind list -> int -> array_kind -> array_kind
+val gen_kind : (int * type_kind) list -> int -> array_kind -> array_kind
 
 (* To be filled by asmcomp/selectgen.ml *)
 val is_tail_native_heuristic: (int -> bool) ref

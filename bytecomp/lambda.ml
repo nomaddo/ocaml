@@ -169,11 +169,13 @@ type meth_kind = Self | Public | Cached
 
 type shared_code = (int * int) list
 
-type type_kind = I | F | P (* | Tvar of Ident.t * int *)
+type type_kind = I | F | P | Kvar of int
+
+type kind_map = int * type_kind
 
 type lambda =
     Lvar of Ident.t
-  | Lspecialized of lambda * type_kind list
+  | Lspecialized of lambda * kind_map list
   | Lconst of structured_constant
   | Lapply of lambda * lambda list * Location.t
   | Lfunction of function_kind * Ident.t list * lambda
@@ -565,7 +567,7 @@ let reset () =
 
 let to_type_kind ty =
   let ident_name = function
-    | "int" | "char" -> I
+    | "int" | "char" | "bool" -> I
     | "float" -> F
     | "string" -> P
     | _ -> I in
@@ -573,7 +575,8 @@ let to_type_kind ty =
     let open Types in
     match ty.desc with
     | Tarrow _ | Ttuple _ | Tobject _ | Tfield _ -> P
-    | Tvar _ | Tunivar _ -> I
+    | Tvar _ -> Kvar ty.id
+    | Tunivar _ -> Kvar ty.id (* XXX : Is it really okey ??? *)
     | Tlink ty -> inference ty
     | Tconstr (path,tylist,_) ->
         if tylist <> [] then P

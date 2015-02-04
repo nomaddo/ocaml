@@ -17,7 +17,7 @@ open Asttypes
 open Typedtree
 open Lambda
 
-val stack : Types.type_expr list Stack.t
+val stack : Typeopt.IntS.t Stack.t
 
 val transl_exp: expression -> lambda
 val transl_apply: lambda -> (label * expression option * optional) list

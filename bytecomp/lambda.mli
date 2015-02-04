@@ -178,11 +178,12 @@ type meth_kind = Self | Public | Cached
 
 type shared_code = (int * int) list     (* stack size -> code label *)
 
-type type_kind = I | F | P
+type type_kind = I | F | P | Kvar of int
+type kind_map = int * type_kind
 
 type lambda =
     Lvar of Ident.t
-  | Lspecialized of lambda * type_kind list
+  | Lspecialized of lambda * kind_map list
   | Lconst of structured_constant
   | Lapply of lambda * lambda list * Location.t
   | Lfunction of function_kind * Ident.t list * lambda

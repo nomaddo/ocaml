@@ -17,6 +17,8 @@ open Types
 open Typedtree
 open Lambda
 
+module IntS = Set.Make(struct type t = int let compare = compare end)
+
 let scrape env ty =
   (Ctype.repr (Ctype.expand_head_opt env (Ctype.correct_levels ty))).desc
 
@@ -49,17 +51,15 @@ let maybe_pointer exp =
 
 (* XXX : should change the function name *)
 let ptvar_gen stack ty =
-  let eq t1 t2 = t1.id = t2.id in
-  let search tys ty =
-    try Some (List.find (eq ty) tys) with Not_found -> None in
+  let search set ty =
+    try Some (IntS.find ty.id set) with Not_found -> None in
   let s = Stack.copy stack in
   let rec loop () =
     if Stack.is_empty s then None else
       let tys = Stack.pop s in
       match search tys ty with
-      | Some ty ->
-          assert ((function Tvar _ -> true | _ -> false) (Ctype.repr ty).desc);
-          Some ty.id
+      | Some i ->
+          Some i
       | None -> loop () in
   loop ()
 

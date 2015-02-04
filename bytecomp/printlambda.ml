@@ -20,6 +20,12 @@ let type_kind ppf = function
   | I -> fprintf ppf "I"
   | F -> fprintf ppf "F"
   | P -> fprintf ppf "P"
+  | Kvar i -> fprintf ppf "Var %d" i
+
+let rec kind_map ppf = function
+  | [] -> assert false
+  | (i, k) :: [] -> fprintf ppf "%d -> %a" i type_kind k
+  | (i, k) :: xs -> fprintf ppf "%d -> %a" i type_kind k; kind_map ppf xs
 
 let array_kind ppf = function
     Pgenarray -> fprintf ppf "Pgen"
@@ -257,9 +263,8 @@ let primitive ppf = function
 let rec lam ppf = function
   | Lvar id ->
       Ident.print ppf id
-  | Lspecialized (l, ks) ->
-      let p ppf l = List.iter (fprintf ppf "%a " type_kind) l in
-      fprintf ppf "sp(%a, [%a])" lam l p ks
+  | Lspecialized (l, map) ->
+      fprintf ppf "sp(%a, [%a])" lam l kind_map map
   | Lconst cst ->
       struct_const ppf cst
   | Lapply(lfun, largs, _) ->
