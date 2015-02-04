@@ -26,7 +26,7 @@ let array_kind ppf = function
   | Paddrarray -> fprintf ppf "Paddr"
   | Pintarray -> fprintf ppf "Pint"
   | Pfloatarray -> fprintf ppf "Pfloat"
-  | Ptvar (id, int) -> fprintf ppf "Ptvar (%a, %d)" Ident.print id int
+  | Ptvar int -> fprintf ppf "Ptvar %d"  int
 
 let rec struct_const ppf = function
   | Const_base(Const_int n) -> fprintf ppf "%i" n

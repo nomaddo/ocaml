@@ -49,15 +49,18 @@ let maybe_pointer exp =
 
 (* XXX : should change the function name *)
 let ptvar_gen stack ty =
-  let rec nth f i = function
-    | x :: xs -> if f x then Some i else nth f (i + 1) xs
-    | [] -> None in
+  let eq t1 t2 = t1.id = t2.id in
+  let search tys ty =
+    try Some (List.find (eq ty) tys) with Not_found -> None in
   let s = Stack.copy stack in
   let rec loop () =
     if Stack.is_empty s then None else
-      let (id, tys) = Stack.pop s in
-      match nth ((=) ty) 0 tys with
-      | Some i -> Some (id, i) | None -> loop () in
+      let tys = Stack.pop s in
+      match search tys ty with
+      | Some ty ->
+          assert ((function Tvar _ -> true | _ -> false) (Ctype.repr ty).desc);
+          Some ty.id
+      | None -> loop () in
   loop ()
 
 let array_element_kind env stack ty =
@@ -65,7 +68,7 @@ let array_element_kind env stack ty =
   match ty.desc with
   | Tvar _ ->
       begin match ptvar_gen stack ty with
-      | Some (id, i) -> Ptvar (id, i)
+      | Some i -> Ptvar i
       | None -> Pgenarray
       end
   | Tunivar _ -> Pgenarray (* XXX: is it okey ? *)

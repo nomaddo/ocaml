@@ -129,7 +129,7 @@ and comparison =
 
 and array_kind =
     Pgenarray | Paddrarray | Pintarray | Pfloatarray
-  | Ptvar of Ident.t * int
+  | Ptvar of int
 
 and boxed_integer =
     Pnativeint | Pint32 | Pint64

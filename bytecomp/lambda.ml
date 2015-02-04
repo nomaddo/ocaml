@@ -129,7 +129,7 @@ and comparison =
 
 and array_kind =
     Pgenarray | Paddrarray | Pintarray | Pfloatarray
-  | Ptvar of Ident.t * int
+  | Ptvar of int
 
 and boxed_integer =
     Pnativeint | Pint32 | Pint64
@@ -169,7 +169,7 @@ type meth_kind = Self | Public | Cached
 
 type shared_code = (int * int) list
 
-type type_kind = I | F | P | Tvar of Ident.t * int
+type type_kind = I | F | P (* | Tvar of Ident.t * int *)
 
 type lambda =
     Lvar of Ident.t

@@ -30,8 +30,7 @@ type error =
 exception Error of Location.t * error
 
 (* stack to generate array_kind Ltvar *)
-let stack : (Ident.t * Types.type_expr list) Stack.t
-  = Stack.create ()
+let stack : Types.type_expr list Stack.t = Stack.create ()
 
 (* Forward declaration -- to be filled in by Translmod.transl_module *)
 let transl_module =
@@ -632,15 +631,14 @@ let rec cut n l =
 let try_ids = Hashtbl.create 8
 
 let extract env ids =
-  let num = ref 0 in
   let extract' env ids =
     List.fold_left (fun s id ->
       try
         let vb = Env.find_value (Path.Pident id) env in
-        incr num; (id, vb.val_tvars) :: s
+        vb.val_tvars @ s
       with Not_found -> s
     ) [] ids in
-  (extract' env ids, !num)
+  extract' env ids
 
 let rec transl_exp e =
   let eval_once =
@@ -842,7 +840,7 @@ and transl_exp0 e =
               Lconst(Const_float_array(List.map extract_float cl))
           | Pgenarray ->
               raise Not_constant                (* can this really happen? *)
-          | Ptvar (id, i) ->
+          | Ptvar _ ->
               raise Not_constant in
         Lprim(Pccall prim_obj_dup, [master])
       with Not_constant ->
@@ -1083,8 +1081,8 @@ and transl_function loc untuplify_fn repr partial cases =
 
 and transl_let env rec_flag pat_expr_list body =
   let ids = Typedtree.let_bound_idents pat_expr_list in
-  let tvars, num = extract env ids in
-  List.iter (fun p -> Stack.push p stack) tvars;
+  let tvars = extract env ids in
+  Stack.push tvars stack;
   let lam =
     match rec_flag with
       Nonrecursive ->
@@ -1108,7 +1106,7 @@ and transl_let env rec_flag pat_expr_list body =
             raise(Error(expr.exp_loc, Illegal_letrec_expr));
           (id, lam) in
         Lletrec(List.map2 transl_case pat_expr_list idlist, body) in
-  for _ = 1 to num do ignore (Stack.pop stack) done;
+  ignore (Stack.pop stack);
   lam
 
 and transl_setinstvar self var expr =
