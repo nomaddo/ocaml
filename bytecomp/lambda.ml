@@ -585,7 +585,7 @@ let to_type_kind ty =
           | _ -> P (* XXX: TODO: fix me *)
         end
     | _ ->
-        Format.eprintf "unexpected type: %a\n"
-          Printtyp.type_expr ty;
+        (* Format.eprintf "unexpected type: %a\n" *)
+        (*   Printtyp.type_expr ty; *)
         I in
   inference ty

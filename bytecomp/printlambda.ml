@@ -25,7 +25,7 @@ let type_kind ppf = function
 let rec kind_map ppf = function
   | [] -> assert false
   | (i, k) :: [] -> fprintf ppf "%d -> %a" i type_kind k
-  | (i, k) :: xs -> fprintf ppf "%d -> %a" i type_kind k; kind_map ppf xs
+  | (i, k) :: xs -> fprintf ppf "%d -> %a, " i type_kind k; kind_map ppf xs
 
 let array_kind ppf = function
     Pgenarray -> fprintf ppf "Pgen"

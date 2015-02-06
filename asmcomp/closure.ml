@@ -618,11 +618,15 @@ let rec substitute fpc sb ulam =
       begin try
         subst_array_kind v map (Tbl.find v sb)
       with Not_found ->
-        Format.printf "%s@." v.Ident.name; assert false
+        Format.printf "substitute1: %s@." v.Ident.name; (* assert false *)
+        ulam                               (* XXX : FIX ME! *)
       end
-  (* | Uspecialized (Uprim (Pfield i, args, dbg), tykinds) -> *)
+  | Uspecialized (Uprim (Pfield i, args, dbg) as u, map) ->
+      (* XXX : FIX ME *)
+      Format.printf "substitute2: %a" Printclambda.clambda ulam;
+      Uspecialized (substitute fpc sb u, map)
   | Uspecialized (ulam, _) ->
-      Format.printf "Error in substite:\n %a" Printclambda.clambda ulam;
+      Format.printf "Error in substite:@. %a" Printclambda.clambda ulam;
       assert(false)
   | Udirect_apply(lbl, args, dbg) ->
       Udirect_apply(lbl, List.map (substitute fpc sb) args, dbg)
@@ -901,20 +905,15 @@ let rec close fenv cenv = function
         | Const_base(Const_nativeint x) -> str (Uconst_nativeint x)
       in
       make_const (transl cst)
-  | Lspecialized (lam, tykinds) ->
-      (* XXX : Need more procedures
-         _____Need to extend type_kind____.
-
-           let f a = a.(0) let g x = f x
-           let _ = ignore (g [|1.0; 2.0|])
-
-         The Compiler expand f's definition in g.
-         But f is specialized in g. Need to substitute type_kind.
-         Now, f is inlined in g and g is inlined inside ignore.
-         Tvar ("f", 0) remain in expr inside `ignore`.
+  | Lspecialized (lam, map) ->
+      (* `close` may return clam Uvar and Uprim (Pfield ...)
+         Need to remove Uspecialized here.
       *)
       let ulam, approx = close fenv cenv lam in
-      Uspecialized (ulam, tykinds), approx
+      begin match ulam with
+      | Uvar _ | Uprim ((Pfield _), _, _) -> (Uspecialized (ulam, map), approx)
+      | _ -> (ulam, approx)
+      end
   | Lfunction(kind, params, body) as funct ->
       close_one_function fenv cenv (Ident.create "fun") funct
 

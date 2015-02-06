@@ -685,12 +685,17 @@ and transl_exp0 e =
           let map = List.map2
               (fun ty1 ty2 -> (ty1.id, Lambda.to_type_kind (Ctype.repr ty2)))
               vdesc.val_tvars tys in
+          let assert_lspecialized lam =
+            match lam with
+            | Lvar _ | Lprim (Pfield _, _) -> ()
+            | _ -> assert false in
+          assert_lspecialized lam;
           Lspecialized (lam, map)
         with Ctype.Unify _ ->
-          Format.printf "unify error: %a\n%a\n%a\n@."
-            Location.print_loc e.exp_loc
-            Printtyp.raw_type_expr ty1
-            Printtyp.raw_type_expr ty2;
+          (* Format.printf "unify error: %a\n%a\n%a\n@." *)
+          (*   Location.print_loc e.exp_loc *)
+          (*   Printtyp.raw_type_expr ty1 *)
+          (*   Printtyp.raw_type_expr ty2; *)
           lam
       else
         lam
