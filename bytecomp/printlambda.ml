@@ -94,6 +94,12 @@ let string_of_loc_kind = function
   | Loc_POS -> "loc_POS"
   | Loc_LOC -> "loc_LOC"
 
+let array_kind ppf = function
+    Pgenarray ->   fprintf ppf "[gen]"
+  | Paddrarray ->  fprintf ppf "[addr]"
+  | Pintarray ->   fprintf ppf "[int]"
+  | Pfloatarray -> fprintf ppf "[float]"
+
 let primitive ppf = function
   | Pidentity -> fprintf ppf "id"
   | Pignore -> fprintf ppf "ignore"
@@ -157,11 +163,11 @@ let primitive ppf = function
   | Pstringrefs -> fprintf ppf "string.get"
   | Pstringsets -> fprintf ppf "string.set"
   | Parraylength _ -> fprintf ppf "array.length"
-  | Pmakearray _ -> fprintf ppf "makearray "
-  | Parrayrefu _ -> fprintf ppf "array.unsafe_get"
-  | Parraysetu _ -> fprintf ppf "array.unsafe_set"
-  | Parrayrefs _ -> fprintf ppf "array.get"
-  | Parraysets _ -> fprintf ppf "array.set"
+  | Pmakearray k -> fprintf ppf "makearray%a" array_kind k
+  | Parrayrefu k -> fprintf ppf "array.unsafe_get%a" array_kind k
+  | Parraysetu k -> fprintf ppf "array.unsafe_set%a" array_kind k
+  | Parrayrefs k -> fprintf ppf "array.get%a" array_kind k
+  | Parraysets k -> fprintf ppf "array.set%a" array_kind k
   | Pctconst c ->
      let const_name = match c with
        | Big_endian -> "big_endian"
