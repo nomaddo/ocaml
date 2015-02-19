@@ -34,6 +34,23 @@ module IntS = Typeopt.IntS
 
 let stack : IntS.t Stack.t = Stack.create ()
 
+let make_map env sp param sch =
+  let instance = Ctype.instance_parameterized_type in
+  let tys, ty = instance param sch in
+  try
+    Ctype.unify_var env ty sp;
+    List.map2
+      (fun ty1 ty2 -> (ty1.id, Lambda.to_type_kind (Ctype.repr ty2)))
+      param tys
+  with Ctype.Unify l as exn ->
+    Format.eprintf "Unify Failure@.%a, %a\n@."
+      Printtyp.type_expr sp
+      Printtyp.type_expr sch;
+    (* List.iter (fun (s, t) -> *)
+    (*   Format.eprintf "A: %a\nB: %a@." *)
+    (*     Printtyp.raw_type_expr s Printtyp.raw_type_expr t) l; *)
+    raise exn
+
 (* Forward declaration -- to be filled in by Translmod.transl_module *)
 let transl_module =
   ref((fun cc rootpath modl -> assert false) :
@@ -676,27 +693,15 @@ and transl_exp0 e =
   | Texp_ident(path, _, ({val_kind = Val_reg | Val_self _} as vdesc)) ->
       let lam = transl_path ~loc:e.exp_loc e.exp_env path in
       if vdesc.val_tvars <> []
-      then
-          let instance = Ctype.instance_parameterized_type in
-          let tys, ty1 = instance vdesc.val_tvars vdesc.val_type in
-          let ty2 = e.exp_type in
-        try
-          Ctype.unify e.exp_env ty1 ty2;
-          let map = List.map2
-              (fun ty1 ty2 -> (ty1.id, Lambda.to_type_kind (Ctype.repr ty2)))
-              vdesc.val_tvars tys in
+      then try
           let assert_lspecialized lam =
             match lam with
             | Lvar _ | Lprim (Pfield _, _) -> ()
             | _ -> assert false in
           assert_lspecialized lam;
-          Lspecialized (lam, map)
-        with Ctype.Unify _ ->
-          (* Format.printf "unify error: %a\n%a\n%a\n@." *)
-          (*   Location.print_loc e.exp_loc *)
-          (*   Printtyp.raw_type_expr ty1 *)
-          (*   Printtyp.raw_type_expr ty2; *)
-          lam
+          let map = make_map e.exp_env e.exp_type vdesc.val_tvars vdesc.val_type in
+          Lspecialized (lam, map, e.exp_type, e.exp_env)
+        with Ctype.Unify _ -> lam
       else
         lam
   | Texp_ident _ -> fatal_error "Translcore.transl_exp: bad Texp_ident"

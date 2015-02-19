@@ -443,7 +443,7 @@ let rec comp_expr env exp sz cont =
       with Not_found ->
         fatal_error ("Bytegen.comp_expr: var " ^ Ident.unique_name id)
       end
-  | Lspecialized (lam, _) -> comp_expr env lam sz cont
+  | Lspecialized (lam, _, _, _) -> comp_expr env lam sz cont
   | Lconst cst ->
       Kconst cst :: cont
   | Lapply(func, args, loc) ->

@@ -57,7 +57,7 @@ let occurs_var var u =
   let rec occurs = function
       Uvar v -> v = var
     | Uconst _ -> false
-    | Uspecialized (u, l) -> occurs u
+    | Uspecialized (u, _, _, _) -> occurs u
     | Udirect_apply(lbl, args, _) -> List.exists occurs args
     | Ugeneric_apply(funct, args, _) -> occurs funct || List.exists occurs args
     | Uclosure(fundecls, clos) -> List.exists occurs clos
@@ -178,7 +178,7 @@ let lambda_smaller lam threshold =
     match lam with
       Uvar v -> ()
     | Uconst _ -> incr size
-    | Uspecialized (u, l) -> lambda_size u
+    | Uspecialized (u, _, _, _) -> lambda_size u
     | Udirect_apply(fn, args, _) ->
         size := !size + 4; lambda_list_size args
     | Ugeneric_apply(fn, args, _) ->
@@ -531,8 +531,8 @@ let approx_ulam = function
     Uconst c -> Value_const c
   | _ -> Value_unknown
 
-let rec subst_array_kind v map ulam =
-  let subst = subst_array_kind v map in
+let rec subst_array_kind map ulam =
+  let subst = subst_array_kind map in
   match ulam with
   | Uprim (prim, args, dinfo) ->
     begin match prim with
@@ -558,7 +558,7 @@ let rec subst_array_kind v map ulam =
     end
   | Uvar _ as u -> u
   | Uconst _ as u -> u
-  | Uspecialized (u, map) -> Uspecialized (subst u, map)
+  | Uspecialized (u, map, ty, env) -> Uspecialized (subst u, map, ty, env)
   | Udirect_apply (function_label, us, dinfo) ->
     Udirect_apply (function_label, List.map subst us, dinfo)
   | Ugeneric_apply (u, us, dinfo) ->
@@ -614,18 +614,18 @@ let rec substitute fpc sb ulam =
     Uvar v ->
       begin try Tbl.find v sb with Not_found -> ulam end
   | Uconst _ -> ulam
-  | Uspecialized (Uvar v, map) ->
+  | Uspecialized (Uvar v, map, ty, env) ->
       begin try
-        subst_array_kind v map (Tbl.find v sb)
+        subst_array_kind map (Tbl.find v sb)
       with Not_found ->
         Format.printf "substitute1: %s@." v.Ident.name; (* assert false *)
         ulam                               (* XXX : FIX ME! *)
       end
-  | Uspecialized (Uprim (Pfield i, args, dbg) as u, map) ->
+  | Uspecialized (Uprim (Pfield i, args, dbg) as u, map, ty, env) ->
       (* XXX : FIX ME *)
       Format.printf "substitute2: %a" Printclambda.clambda ulam;
-      Uspecialized (substitute fpc sb u, map)
-  | Uspecialized (ulam, _) ->
+      Uspecialized (substitute fpc sb u, map, ty, env)
+  | Uspecialized (ulam, _, _, _) ->
       Format.printf "Error in substite:@. %a" Printclambda.clambda ulam;
       assert(false)
   | Udirect_apply(lbl, args, dbg) ->
@@ -773,11 +773,18 @@ let direct_apply fundesc funct ufunct uargs =
   let app_args =
     if fundesc.fun_closed then uargs else uargs @ [ufunct] in
   let app =
-    match fundesc.fun_inline with
-    | None ->
+    match ufunct, fundesc.fun_inline with
+    | Uspecialized (ulam, _, sp, env), Some (params, body, Some (ty, typrms))  ->
+        begin try
+          let map = Translcore.make_map env sp typrms ty in
+          let body = subst_array_kind map body in
+          bind_params fundesc.fun_float_const_prop params app_args body
+        with _ -> bind_params fundesc.fun_float_const_prop params app_args body end
+    | _, None ->
         Udirect_apply(fundesc.fun_label, app_args, Debuginfo.none)
-    | Some(params, body) ->
-        bind_params fundesc.fun_float_const_prop params app_args body in
+    | _, Some (params, body, _) ->
+        bind_params fundesc.fun_float_const_prop params app_args body
+  in
   (* If ufunct can contain side-effects or function definitions,
      we must make sure that it is evaluated exactly once.
      If the function is not closed, we evaluate ufunct as part of the
@@ -905,13 +912,14 @@ let rec close fenv cenv = function
         | Const_base(Const_nativeint x) -> str (Uconst_nativeint x)
       in
       make_const (transl cst)
-  | Lspecialized (lam, map) ->
+  | Lspecialized (lam, map, ty, env) ->
       (* `close` may return clam Uvar and Uprim (Pfield ...)
          Need to remove Uspecialized here.
       *)
       let ulam, approx = close fenv cenv lam in
       begin match ulam with
-      | Uvar _ | Uprim ((Pfield _), _, _) -> (Uspecialized (ulam, map), approx)
+      | Uvar _ | Uprim ((Pfield _), _, _) ->
+          (Uspecialized (ulam, map, ty, env), approx)
       | _ -> (ulam, approx)
       end
   | Lfunction(kind, params, body) as funct ->
@@ -1238,8 +1246,12 @@ and close_functions fenv cenv fun_defs =
     in
     if lambda_smaller ubody
         (!Clflags.inline_threshold + n)
-    then fundesc.fun_inline <- Some(fun_params, ubody);
-
+    then begin try
+        let o = Hashtbl.find Typetbl.tbl id in
+        match o with
+        | None -> fundesc.fun_inline <- Some(fun_params, ubody, None)
+        | Some ty -> fundesc.fun_inline <- Some(fun_params, ubody, Some ty)
+      with Not_found -> () end;
     (f, (id, env_pos, Value_closure(fundesc, approx))) in
   (* Translate all function definitions. *)
   let clos_info_list =
@@ -1336,7 +1348,7 @@ let collect_exported_structured_constants a =
     | Value_closure (fd, a) ->
         approx a;
         begin match fd.fun_inline with
-        | Some (_, u) -> ulam u
+        | Some (_, u, _) -> ulam u
         | None -> ()
         end
     | Value_tuple a -> Array.iter approx a
@@ -1355,7 +1367,7 @@ let collect_exported_structured_constants a =
   and ulam = function
     | Uvar _ -> ()
     | Uconst c -> const c
-    | Uspecialized (u, _) -> ulam u
+    | Uspecialized (u, _, _, _) -> ulam u
     | Udirect_apply (_, ul, _) -> List.iter ulam ul
     | Ugeneric_apply (u, ul, _) -> ulam u; List.iter ulam ul
     | Uclosure (fl, ul) ->

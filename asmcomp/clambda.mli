@@ -35,7 +35,7 @@ and uconstant =
 type ulambda =
     Uvar of Ident.t
   | Uconst of uconstant
-  | Uspecialized of ulambda * Lambda.kind_map list
+  | Uspecialized of ulambda * Lambda.kind_map list * Types.type_expr * Env.t
   | Udirect_apply of function_label * ulambda list * Debuginfo.t
   | Ugeneric_apply of ulambda * ulambda list * Debuginfo.t
   | Uclosure of ufunction list * ulambda list
@@ -75,7 +75,8 @@ type function_description =
   { fun_label: function_label;          (* Label of direct entry point *)
     fun_arity: int;                     (* Number of arguments *)
     mutable fun_closed: bool;           (* True if environment not used *)
-    mutable fun_inline: (Ident.t list * ulambda) option;
+    mutable fun_inline:
+      (Ident.t list * ulambda * (Types.type_expr * Types.type_expr list) option) option;
     mutable fun_float_const_prop: bool  (* Can propagate FP consts *)
   }
 

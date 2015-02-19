@@ -1292,7 +1292,7 @@ let strmatch_compile =
 let rec transl = function
   | Uvar id ->
       Cvar id
-  | Uspecialized (u, _) ->      (* ignore type specialization here *)
+  | Uspecialized (u, _, _, _) ->      (* ignore type specialization here *)
       transl u
   | Uconst sc ->
       transl_constant sc
