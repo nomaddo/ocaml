@@ -779,11 +779,13 @@ let direct_apply fundesc funct ufunct uargs =
           let map = Translcore.make_map env sp typrms ty in
           let body = subst_array_kind map body in
           bind_params fundesc.fun_float_const_prop params app_args body
+        (* XXX : why need exception hadling ? *)
         with _ -> bind_params fundesc.fun_float_const_prop params app_args body end
     | _, None ->
         Udirect_apply(fundesc.fun_label, app_args, Debuginfo.none)
     | _, Some (params, body, _) ->
         bind_params fundesc.fun_float_const_prop params app_args body
+    (* | _ -> assert false *)
   in
   (* If ufunct can contain side-effects or function definitions,
      we must make sure that it is evaluated exactly once.
