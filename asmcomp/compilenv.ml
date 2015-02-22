@@ -171,6 +171,70 @@ let get_global_info global_ident = (
 let cache_unit_info ui =
   Hashtbl.add global_infos_table ui.ui_name (Some ui)
 
+(* Delete `Uspecialized` for cmx *)
+
+let rec ulambda u =
+  let map = List.map ulambda in
+  let map_pair l = List.map (fun (id, u) -> (id, ulambda u)) l in
+  let option = function
+    | None -> None | Some u -> Some (ulambda u) in
+  match u with
+    Uvar _ as self -> self
+  | Uconst _ as self -> self
+  | Uspecialized (u, _, _, _) -> u
+  | Udirect_apply (function_label, us, dbg) ->
+      Udirect_apply (function_label, map us, dbg)
+  | Ugeneric_apply (u, us, dgb) ->
+      Ugeneric_apply (ulambda u, map us, dgb)
+  | Uclosure (ufuncts, us) ->
+      Uclosure (ufuncts, map us)
+  | Uoffset (u, i) ->
+      Uoffset (ulambda u, i)
+  | Ulet (ident, u1, u2) ->
+      Ulet (ident, ulambda u1, ulambda u2)
+  | Uletrec (l, u) ->
+      let l = map_pair l in
+      let u = ulambda u in
+      Uletrec (l, u)
+  | Uprim (primitive, us, dbg) ->
+      Uprim (primitive, map us, dbg)
+  | Uswitch (u, uswitch) -> Uswitch (ulambda u, uswitch)
+  | Ustringswitch (u, l, uopt) ->
+      Ustringswitch (ulambda u, map_pair l, option uopt)
+  | Ustaticfail (i, us) ->
+      Ustaticfail (i, map us)
+  | Ucatch (i, ids, u1, u2) ->
+      Ucatch (i, ids, ulambda u1, ulambda u2)
+  | Utrywith (u1, id, u2) ->
+      Utrywith (ulambda u1, id, ulambda u2)
+  | Uifthenelse (u1, u2, u3) ->
+      Uifthenelse (ulambda u1, ulambda u2, ulambda u3)
+  | Usequence (u1, u2) ->
+      Usequence (ulambda u1, ulambda u2)
+  | Uwhile (u1, u2) ->
+      Uwhile (ulambda u1, ulambda u2)
+  | Ufor (id, u1, u2, direction_flag, u3) ->
+      Ufor (id, ulambda u1, ulambda u2, direction_flag, ulambda u3)
+  | Uassign (id, u) ->
+      Uassign (id, ulambda u)
+  | Usend (meth_kind, u1, u2, us, dbg) ->
+      Usend (meth_kind, ulambda u1, ulambda u2, map us, dbg)
+
+let rec delete_approx = function
+  | Value_tuple arr -> Value_tuple (Array.map delete_approx arr)
+  | Value_closure (desc, approx) ->
+      let approx = delete_approx approx in
+      let desc = delete_desc desc in
+      Value_closure (desc, approx)
+  | _ as self -> self
+
+and delete_desc desc =
+  let map = function
+    | Some (ids, u, opt) -> Some (ids, ulambda u, opt)
+    | None -> None in
+  desc.fun_inline <-  map desc.fun_inline;
+  desc
+
 (* Return the approximation of a global identifier *)
 
 let toplevel_approx = Hashtbl.create 16
@@ -200,7 +264,7 @@ let symbol_for_global id =
 (* Register the approximation of the module being compiled *)
 
 let set_global_approx approx =
-  current_unit.ui_approx <- approx
+  current_unit.ui_approx <- delete_approx approx
 
 (* Record that a currying function or application function is needed *)
 
@@ -221,8 +285,8 @@ let need_send_fun n =
 let write_unit_info (info: Cmx_format.unit_infos) filename =
   let oc = open_out_bin filename in
   output_string oc cmx_magic_number;
-  Marshal.to_channel oc info [Marshal.Closures];
-  (* output_value oc info; *)
+  (* Marshal.to_channel oc info [Marshal.Closures]; *)
+  output_value oc info;
   flush oc;
   let crc = Digest.file filename in
   Digest.output oc crc;
