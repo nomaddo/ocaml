@@ -691,31 +691,19 @@ and transl_exp0 e =
   | Texp_ident(path, _, {val_kind = Val_anc _}) ->
       raise(Error(e.exp_loc, Free_super_var))
   | Texp_ident(path, _, ({val_kind = Val_reg | Val_self _} as vdesc)) ->
-      let lam = transl_path ~loc:e.exp_loc e.exp_env path in
-      if vdesc.val_tvars <> []
-      then try
-          let assert_lspecialized lam =
-            match lam with
-            | Lvar _ | Lprim (Pfield _, _) -> ()
-            | _ -> assert false in
-          assert_lspecialized lam;
-          let map = make_map e.exp_env e.exp_type vdesc.val_tvars vdesc.val_type in
-          Lspecialized (lam, map, e.exp_type, e.exp_env)
-        with Ctype.Unify _ -> lam
-      else
-        lam
+     let lam = transl_path ~loc:e.exp_loc e.exp_env path in
+     if vdesc.val_tvars <> []
+     then try
+         let map = make_map e.exp_env e.exp_type vdesc.val_tvars vdesc.val_type in
+         Lspecialized (lam, map, e.exp_type, e.exp_env)
+       with Ctype.Unify _ -> lam
+     else lam
   | Texp_ident _ -> fatal_error "Translcore.transl_exp: bad Texp_ident"
   | Texp_constant cst ->
       Lconst(Const_base cst)
   | Texp_let(rec_flag, vbs, body) ->
-      (* let ids = Typedtree.let_bound_idents vbs in *)
-      (* let l, num = extract body.exp_env ids in *)
-      (* List.iter (fun p -> Stack.push p stack) l; *)
-      let lam =
-        transl_let body.exp_env rec_flag vbs
-          (event_before body (transl_exp body)) in
-      (* for _ = 1 to num do ignore (Stack.pop stack) done; *)
-      lam
+      transl_let body.exp_env rec_flag vbs
+        (event_before body (transl_exp body))
   | Texp_function (_, pat_expr_list, partial) ->
       let ((kind, params), body) =
         event_function e
