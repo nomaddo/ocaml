@@ -43,7 +43,7 @@ let make_map env sp param sch =
       (fun ty1 ty2 -> (ty1.id, Lambda.to_type_kind (Ctype.repr ty2)))
       param tys
   with Ctype.Unify l as exn ->
-    Format.eprintf "Unify Failure@.%a, %a\n@."
+    Format.eprintf "Unify Failure\n%a\n%a\n@."
       Printtyp.type_expr sp
       Printtyp.type_expr sch;
     (* List.iter (fun (s, t) -> *)

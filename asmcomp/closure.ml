@@ -617,16 +617,18 @@ let rec substitute fpc sb ulam =
   | Uspecialized (Uvar v, map, ty, env) ->
       begin try
         subst_array_kind map (Tbl.find v sb)
-      with Not_found ->
-        Format.printf "substitute1: %s@." v.Ident.name; (* assert false *)
-        ulam                               (* XXX : FIX ME! *)
+      with Not_found -> ulam
+      (* When Not_found is raised ? *)
       end
   | Uspecialized (Uprim (Pfield i, args, dbg) as u, map, ty, env) ->
-      (* XXX : FIX ME *)
-      Format.printf "substitute2: %a" Printclambda.clambda ulam;
-      Uspecialized (substitute fpc sb u, map, ty, env)
+      let u = substitute fpc sb u in
+      begin match u with
+      | Uvar _ | Uprim ((Pfield _), _, _) ->
+          Uspecialized (u, map, ty, env)
+      | _ -> u
+      end
   | Uspecialized (ulam, _, _, _) ->
-      Format.printf "Error in substite:@. %a" Printclambda.clambda ulam;
+      Format.printf "Error in substite:\n %a@." Printclambda.clambda ulam;
       assert(false)
   | Udirect_apply(lbl, args, dbg) ->
       Udirect_apply(lbl, List.map (substitute fpc sb) args, dbg)
@@ -780,12 +782,17 @@ let direct_apply fundesc funct ufunct uargs =
           let body = subst_array_kind map body in
           bind_params fundesc.fun_float_const_prop params app_args body
         (* XXX : why need exception hadling ? *)
-        with _ -> bind_params fundesc.fun_float_const_prop params app_args body end
+        with _ ->
+          Format.printf "direct_apply1: %s@." fundesc.fun_label;
+          bind_params fundesc.fun_float_const_prop params app_args body end
     | _, None ->
         Udirect_apply(fundesc.fun_label, app_args, Debuginfo.none)
-    | _, Some (params, body, _) ->
+    | _, Some (params, body, None) ->
         bind_params fundesc.fun_float_const_prop params app_args body
-    (* | _ -> assert false *)
+    | _, Some (params, body, Some _) -> begin
+        Format.printf "direct_apply2: %s@." fundesc.fun_label;
+        bind_params fundesc.fun_float_const_prop params app_args body
+      end
   in
   (* If ufunct can contain side-effects or function definitions,
      we must make sure that it is evaluated exactly once.
@@ -915,8 +922,8 @@ let rec close fenv cenv = function
       in
       make_const (transl cst)
   | Lspecialized (lam, map, ty, env) ->
-      (* `close` may return clam Uvar and Uprim (Pfield ...)
-         Need to remove Uspecialized here.
+      (* `close` may not return clam Uvar and Uprim (Pfield ...)
+         Then, need to remove Uspecialized here.
       *)
       let ulam, approx = close fenv cenv lam in
       begin match ulam with
