@@ -264,7 +264,7 @@ let symbol_for_global id =
 (* Register the approximation of the module being compiled *)
 
 let set_global_approx approx =
-  current_unit.ui_approx <- delete_approx approx
+  current_unit.ui_approx <- approx
 
 (* Record that a currying function or application function is needed *)
 

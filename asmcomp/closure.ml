@@ -927,7 +927,7 @@ let rec close fenv cenv = function
       *)
       let ulam, approx = close fenv cenv lam in
       begin match ulam with
-      | Uvar _ | Uprim ((Pfield _), _, _) ->
+      | Uvar _ | Uprim ((Pfield _), _, _) | Uprim ((Pgetglobal _), _, _) ->
           (Uspecialized (ulam, map, ty, env), approx)
       | _ -> (ulam, approx)
       end
@@ -980,7 +980,7 @@ let rec close fenv cenv = function
           (Ugeneric_apply(direct_apply fundesc funct ufunct first_args,
                           rem_args, Debuginfo.none),
            Value_unknown)
-      | ((ufunct, _), uargs) ->
+      | ((ufunct, _approx), uargs) ->
           (Ugeneric_apply(ufunct, uargs, Debuginfo.none), Value_unknown)
       end
   | Lsend(kind, met, obj, args, _) ->
@@ -1410,6 +1410,49 @@ let reset () =
   global_approx := [||];
   function_nesting_depth := 0
 
+let delete_specialized () =
+  let function_description f =
+    let inline = f.fun_inline in
+    let rec ulam u =
+      let map = List.map ulam in
+      match u with
+      | Uspecialized (u, _, _, _) -> ulam u (* delete here *)
+      | Uvar _ | Uconst _ -> u
+      | Uletrec (l, u) ->
+          let l = List.map (fun (id, u) -> (id, ulam u)) l in
+          Uletrec (l, u)
+      | Uprim (p, ul, dbg) -> Uprim (p, map ul, dbg)
+      | Uswitch (u, sw) -> Uswitch (ulam u, sw)
+      | Uclosure (fl, ul) -> Uclosure (List.map ufunction fl, map ul)
+      | Udirect_apply (a1, ul, a2) -> Udirect_apply (a1, map ul, a2)
+      | Ugeneric_apply (u, ul, a) -> Ugeneric_apply (ulam u, map ul, a)
+      | Uoffset(u, a) -> Uoffset (ulam u, a)
+      | Ulet (a, u1, u2) -> Ulet (a, ulam u1, ulam u2)
+      | Ustringswitch (u,sw,d) -> Ustringswitch (ulam u,sw,d)
+      | Ustaticfail (a, ul) -> Ustaticfail (a, map ul)
+      | Ucatch (a, b, u1, u2) -> Ucatch (a, b, ulam u1, ulam u2)
+      | Utrywith (u1, a, u2) -> Utrywith (ulam u1, a, ulam u2)
+      | Usequence (u1, u2) -> Usequence (ulam u1, ulam u2)
+      | Uwhile (u1, u2)  -> Uwhile (ulam u1, ulam u2)
+      | Uifthenelse (u1, u2, u3) -> Uifthenelse (ulam u1, ulam u2, ulam u3)
+      | Ufor (a, u1, u2, b, u3) -> Ufor (a, ulam u1, ulam u2, b, ulam u3)
+      | Uassign (a, u) -> Uassign (a, ulam u)
+      | Usend (a, u1, u2, ul, b) -> Usend (a, ulam u1, ulam u2, map ul, b)
+    and ufunction ufunct =
+      {ufunct with body = ulam ufunct.body} in
+      match inline with
+      | None -> f
+      | Some (ids, u, opt) -> {f with fun_inline = Some (ids, ulam u, opt)} in
+  let rec delete a =
+    match a with
+    | Value_closure (fundesc, approx) ->
+        Value_closure (function_description fundesc, delete approx)
+    | Value_tuple arr -> Value_tuple (Array.map delete arr)
+    | Value_unknown | Value_const _ | Value_global_field _ -> a in
+  for i = 0 to Array.length !global_approx - 1 do
+    !global_approx.(i) <- delete !global_approx.(i)
+  done
+
 (* The entry point *)
 
 let intro size lam =
@@ -1418,6 +1461,7 @@ let intro size lam =
   global_approx := Array.init size (fun i -> Value_global_field (id, i));
   Compilenv.set_global_approx(Value_tuple !global_approx);
   let (ulam, _) = close Tbl.empty Tbl.empty lam in
+  delete_specialized ();
   if !Clflags.opaque
   then Compilenv.set_global_approx(Value_unknown)
   else collect_exported_structured_constants (Value_tuple !global_approx);
