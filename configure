@@ -375,10 +375,15 @@ case "$bytecc,$target" in
   *,powerpc-*-aix*)
     bytecccompopts="-D_XOPEN_SOURCE=500";;
   *gcc*,*-*-cygwin*)
+    case $target in
+      i686-*) flavor=cygwin;;
+      x86_64-*) flavor=cygwin64;;
+      *) err "unknown cygwin variant";;
+    esac
     bytecccompopts="-fno-defer-pop $gcc_warnings -U_WIN32"
     dllccompopts="-U_WIN32 -DCAML_DLL"
     if test $with_sharedlibs = yes; then
-      flexlink="flexlink -chain cygwin -merge-manifest -stack 16777216"
+      flexlink="flexlink -chain $flavor -merge-manifest -stack 16777216"
       flexdir=`$flexlink -where | dos2unix`
       if test -z "$flexdir"; then
         wrn "flexlink not found: native shared libraries won't be available."
@@ -1299,6 +1304,15 @@ if sh ./hasgot pwrite; then
   echo "#define HAS_PWRITE" >> s.h
 fi
 
+nanosecond_stat=none
+for i in 1 2 3; do
+  if sh ./trycompile -DHAS_NANOSECOND_STAT=$i nanosecond_stat.c; then nanosecond_stat=$i; break; fi
+done
+if test $nanosecond_stat != "none"; then
+  inf "stat() supports nanosecond precision."
+  echo "#define HAS_NANOSECOND_STAT $nanosecond_stat" >> s.h
+fi
+
 nargs=none
 for i in 5 6; do
   if sh ./trycompile -DNUM_ARGS=${i} gethostbyname.c; then nargs=$i; break; fi
@@ -1645,6 +1659,12 @@ fi
 if $no_naked_pointers; then
   echo "#define NO_NAKED_POINTERS" >> m.h
 fi
+
+# Add Unix-style optimization flag
+bytecccompopts="-O $bytecccompopts"
+dllcccompopts="-O $dllcccompopts"
+nativecccompopts="-O $nativecccompopts"
+sharedcccompopts="-O $sharedcccompopts"
 
 # Final twiddling of compiler options to work around known bugs
 

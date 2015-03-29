@@ -24,7 +24,7 @@ ocamlrun$(EXE): libcamlrun.$(A) prims.$(O)
 	         $(EXTRALIBS) libcamlrun.$(A)
 
 ocamlrund$(EXE): libcamlrund.$(A) prims.$(O) main.$(O)
-	$(MKEXE) -o ocamlrun$(EXE) $(BYTECCDBGCOMPOPTS) prims.$(O) \
+	$(MKEXE) -o ocamlrund$(EXE) $(BYTECCDBGCOMPOPTS) prims.$(O) \
 	         $(call SYSLIB,ws2_32) $(EXTRALIBS) libcamlrund.$(A)
 
 libcamlrun.$(A): $(OBJS)
@@ -33,14 +33,11 @@ libcamlrun.$(A): $(OBJS)
 libcamlrund.$(A): $(DOBJS)
 	$(call MKLIB,libcamlrund.$(A),$(DOBJS))
 
-.SUFFIXES: .$(O) .$(DBGO)
-
-.c.$(O):
+%.$(O): %.c
 	$(CC) $(CFLAGS) $(BYTECCCOMPOPTS) -c $<
 
-.c.$(DBGO):
-	$(CC) $(CFLAGS) $(BYTECCDBGCOMPOPTS) -c $<
-	mv $*.$(O) $*.$(DBGO)
+%.$(DBGO): %.c
+	$(CC) $(CFLAGS) $(BYTECCDBGCOMPOPTS) -c -o $@ $<
 
 .depend.nt: .depend
 	rm -f .depend.win32

@@ -13,7 +13,7 @@
 
 include Makefile.common
 
-CFLAGS=-DCAML_NAME_SPACE -O $(BYTECCCOMPOPTS) $(IFLEXDIR)
+CFLAGS=-DCAML_NAME_SPACE $(BYTECCCOMPOPTS) $(IFLEXDIR)
 DFLAGS=-DCAML_NAME_SPACE -g -DDEBUG $(BYTECCCOMPOPTS) $(IFLEXDIR)
 
 OBJS=$(COMMONOBJS) $(UNIX_OR_WIN32).o main.o
@@ -51,20 +51,11 @@ install::
 clean::
 	rm -f libcamlrun_shared.so
 
-.SUFFIXES: .d.o .pic.o
+%.d.o: %.c
+	$(CC) -c $(DFLAGS) $< -o $@
 
-.c.d.o:
-	ln -s -f $*.c $*.d.c
-	$(CC) -c $(DFLAGS) $*.d.c
-	rm $*.d.c
-
-.c.pic.o:
-	ln -s -f $*.c $*.pic.c
-	$(CC) -c $(CFLAGS) $(SHAREDCCCOMPOPTS) $*.pic.c
-	rm $*.pic.c
-
-clean::
-	rm -f *.pic.c *.d.c
+%.pic.o: %.c
+	$(CC) -c $(CFLAGS) $(SHAREDCCCOMPOPTS) $< -o $@
 
 depend : prims.c opnames.h jumptbl.h version.h
 	-gcc -MM $(BYTECCCOMPOPTS) *.c > .depend

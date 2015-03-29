@@ -405,7 +405,7 @@ and transl_structure fields cc rootpath = function
   | Tstr_primitive descr ->
       record_primitive descr.val_val;
       transl_structure fields cc rootpath rem
-  | Tstr_type(decls) ->
+  | Tstr_type decls ->
       transl_structure fields cc rootpath rem
   | Tstr_typext(tyext) ->
       let ids = List.map (fun ext -> ext.ext_id) tyext.tyext_constructors in
@@ -596,7 +596,7 @@ let transl_store_structure glob map prims env str =
   | Tstr_primitive descr ->
       record_primitive descr.val_val;
       transl_store rootpath subst rem
-  | Tstr_type(decls) ->
+  | Tstr_type decls ->
       transl_store rootpath subst rem
   | Tstr_typext(tyext) ->
       let ids = List.map (fun ext -> ext.ext_id) tyext.tyext_constructors in
