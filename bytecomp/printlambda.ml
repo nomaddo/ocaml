@@ -311,7 +311,7 @@ let rec lam ppf = function
   | Lprim(prim, largs) ->
       let lams ppf largs =
         List.iter (fun l -> fprintf ppf "@ %a" lam l) largs in
-      fprintf ppf "@[<2>pr(%a%a)@]" primitive prim lams largs
+      fprintf ppf "@[<2>(%a%a)@]" primitive prim lams largs
   | Lswitch(larg, sw) ->
       let switch ppf sw =
         let spc = ref false in
