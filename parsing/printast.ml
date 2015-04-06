@@ -640,7 +640,7 @@ and signature_item i ppf x =
   | Psig_value vd ->
       line i ppf "Psig_value\n";
       value_description i ppf vd;
-  | Psig_type (l) ->
+  | Psig_type l ->
       line i ppf "Psig_type\n";
       list i type_declaration ppf l;
   | Psig_typext te ->

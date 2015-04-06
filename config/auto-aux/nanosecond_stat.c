@@ -2,29 +2,27 @@
 /*                                                                     */
 /*                                OCaml                                */
 /*                                                                     */
-/*            Xavier Leroy, projet Cristal, INRIA Rocquencourt         */
+/*                 Jeremie Dimino, Jane Street Group, LLC              */
 /*                                                                     */
-/*  Copyright 1996 Institut National de Recherche en Informatique et   */
+/*  Copyright 2015 Institut National de Recherche en Informatique et   */
 /*  en Automatique.  All rights reserved.  This file is distributed    */
 /*  under the terms of the GNU Library General Public License, with    */
 /*  the special exception on linking described in file ../../LICENSE.  */
 /*                                                                     */
 /***********************************************************************/
 
-#include <mlvalues.h>
-#include <alloc.h>
-#include <time.h>
+#define _GNU_SOURCE
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
 
-#include "unixsupport.h"
+#include "../../otherlibs/unix/nanosecond_stat.h"
 
-/* Unix epoch as a Windows timestamp in hundreds of ns */
-#define epoch_ft 116444736000000000.0;
-
-CAMLprim value unix_gettimeofday(value unit)
-{
-  FILETIME ft;
-  double tm;
-  GetSystemTimeAsFileTime(&ft);
-  tm = *(uint64 *)&ft - epoch_ft; /* shift to Epoch-relative time */
-  return copy_double(tm * 1e-7);  /* tm is in 100ns */
+int main() {
+  struct stat *buf;
+  double a, m, c;
+  a = (double)NSEC(buf, a);
+  m = (double)NSEC(buf, m);
+  c = (double)NSEC(buf, c);
+  return 0;
 }

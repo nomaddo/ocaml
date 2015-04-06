@@ -59,6 +59,8 @@ static value *weak_prev;
 static unsigned long major_gc_counter = 0;
 #endif
 
+void (*caml_major_gc_hook)(void) = NULL;
+
 static void realloc_gray_vals (void)
 {
   value *new;
@@ -145,6 +147,7 @@ static void mark_slice (intnat work)
   int marking_closure = 0;
 #endif
 
+  if (caml_major_slice_begin_hook != NULL) (*caml_major_slice_begin_hook) ();
   caml_gc_message (0x40, "Marking %ld words\n", work);
   caml_gc_message (0x40, "Subphase = %ld\n", caml_gc_subphase);
   gray_vals_ptr = gray_vals_cur;
@@ -307,6 +310,7 @@ static void mark_slice (intnat work)
         limit = chunk + Chunk_size (chunk);
         work = 0;
         caml_fl_size_at_phase_change = caml_fl_cur_size;
+        if (caml_major_gc_hook) (*caml_major_gc_hook)();
       }
         break;
       default: Assert (0);
@@ -314,6 +318,7 @@ static void mark_slice (intnat work)
     }
   }
   gray_vals_cur = gray_vals_ptr;
+  if (caml_major_slice_end_hook != NULL) (*caml_major_slice_end_hook) ();
 }
 
 static void sweep_slice (intnat work)
@@ -321,6 +326,7 @@ static void sweep_slice (intnat work)
   char *hp;
   header_t hd;
 
+  if (caml_major_slice_begin_hook != NULL) (*caml_major_slice_begin_hook) ();
   caml_gc_message (0x40, "Sweeping %ld words\n", work);
   while (work > 0){
     if (caml_gc_sweep_hp < limit){
@@ -359,6 +365,7 @@ static void sweep_slice (intnat work)
       }
     }
   }
+  if (caml_major_slice_end_hook != NULL) (*caml_major_slice_end_hook) ();
 }
 
 /* The main entry point for the GC.  Called after each minor GC.
