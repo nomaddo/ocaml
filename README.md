@@ -42,6 +42,7 @@ Benchmark
 I just tried one following benchmark program.
 
 a.ml
+
     let get a i = a.(i - 1)
      
     let sum a =
@@ -53,6 +54,7 @@ a.ml
       Array.init 10000000 (fun i -> Array.make 9 i)
 
 b.ml
+
     let () =
       let r = ref 0 in
       let arr = A.arr () in
@@ -62,6 +64,7 @@ b.ml
 
 
 result:
+
     [~/ocaml/bench] time ./my 
     449999955000000
        
@@ -81,6 +84,7 @@ Representation of clambda
 I modified the compiler to print `array_kind` explicitly and compile `b.ml` with `-dclambda`
 
 original one:
+
     (seq
       (let
         (match/1011
@@ -114,6 +118,7 @@ original one:
       0a)
 
 modified one:
+
      (seq
        (let
          (match/1011
