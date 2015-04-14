@@ -33,6 +33,8 @@ OCamlbuild:
   (Peter Zotov)
 - PR#6720: pass -g to C compilers when tag 'debug' is set
   (Peter Zotov, Gabriel Scherer)
+- PR#6774: new menhir-specific flags "only_tokens" and "external_tokens(Foo)"
+  (François Pottier)
 
 Libraries:
 - PR#6781: Add higher baud rates to Unix termios
@@ -58,6 +60,9 @@ Bug fixes:
   (Damien Doligez, report by Didier Le Botlan)
 - PR#5836, PR#6684: printing lazy values in ocamldebug may segfault
   (Gabriel Scherer)
+- PR#5887: move the byterun/*.h headers to byterun/caml/*.h to avoid
+  header name clashes
+  (Jérôme Vouillon and Adrien Nader and Peter Zotov)
 - PR#6573: extern "C" for systhreads/threads.h
   (Mickaël Delahaye)
 - PR#6607: The manual doesn't mention 0x200 flag for OCAMLRUNPARAM=v
@@ -96,9 +101,12 @@ Bug fixes:
 - PR#6790: otherlibs should be built with -g
 - PR#6791: "%s@[", "%s@{" regression in Scanf
   (Benoît Vaugon)
+- PR#6793: ocamlbuild passes nonsensical "-ocamlc ..." commands to menhir
+  (Gabriel Scherer, report by Damien Doligez)
 - PR#6799: include guards missing for unixsupport.h and other files
 - PR#6812: -short-paths and -no-alias-deps can create inconsistent assumptions
 - PR#6817: GADT exhaustiveness breakage with modules
+- PR#6836: Assertion failure using -short-paths
 - GPR#143: fix getsockopt behaviour for boolean socket options
   (Anil Madhavapeddy and Andrew Ray)
 - ocamlbuild on cygwin cannot find ocamlfind
