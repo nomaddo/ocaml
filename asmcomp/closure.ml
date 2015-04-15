@@ -783,14 +783,14 @@ let direct_apply fundesc funct ufunct uargs =
           bind_params fundesc.fun_float_const_prop params app_args body
         (* XXX : why need exception hadling ? *)
         with _ ->
-          Format.printf "direct_apply1: %s@." fundesc.fun_label;
+          (* Format.printf "direct_apply1: %s@." fundesc.fun_label; *)
           bind_params fundesc.fun_float_const_prop params app_args body end
     | _, None ->
         Udirect_apply(fundesc.fun_label, app_args, Debuginfo.none)
     | _, Some (params, body, None) ->
         bind_params fundesc.fun_float_const_prop params app_args body
     | _, Some (params, body, Some _) -> begin
-        Format.printf "direct_apply2: %s@." fundesc.fun_label;
+        (* Format.printf "direct_apply2: %s@." fundesc.fun_label; *)
         bind_params fundesc.fun_float_const_prop params app_args body
       end
   in
