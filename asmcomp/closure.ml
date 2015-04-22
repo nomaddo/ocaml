@@ -1410,25 +1410,34 @@ let reset () =
   global_approx := [||];
   function_nesting_depth := 0
 
+(* XXX: This doesn't seems enough to delete all specialized
+   As adhoc aid, I add Closure flag when outputiig
+*)
+
 let delete_specialized () =
   let function_description f =
-    let inline = f.fun_inline in
     let rec ulam u =
-      let map = List.map ulam in
+      let map l = List.map ulam l in
+      let map_pair l = List.map (fun (any, u) -> (any, ulam u)) l in
+      let option = function
+        | None -> None
+        | Some u -> Some (ulam u) in
+      let ulambda_switch sw =
+        {sw with us_actions_consts = Array.map ulam sw.us_actions_consts;
+                 us_actions_blocks = Array.map ulam sw.us_actions_blocks} in
       match u with
       | Uspecialized (u, _, _, _) -> ulam u (* delete here *)
       | Uvar _ | Uconst _ -> u
       | Uletrec (l, u) ->
-          let l = List.map (fun (id, u) -> (id, ulam u)) l in
-          Uletrec (l, u)
+          Uletrec (map_pair l, ulam u)
       | Uprim (p, ul, dbg) -> Uprim (p, map ul, dbg)
-      | Uswitch (u, sw) -> Uswitch (ulam u, sw)
+      | Uswitch (u, sw) -> Uswitch (ulam u, ulambda_switch sw)
       | Uclosure (fl, ul) -> Uclosure (List.map ufunction fl, map ul)
       | Udirect_apply (a1, ul, a2) -> Udirect_apply (a1, map ul, a2)
       | Ugeneric_apply (u, ul, a) -> Ugeneric_apply (ulam u, map ul, a)
       | Uoffset(u, a) -> Uoffset (ulam u, a)
       | Ulet (a, u1, u2) -> Ulet (a, ulam u1, ulam u2)
-      | Ustringswitch (u,sw,d) -> Ustringswitch (ulam u,sw,d)
+      | Ustringswitch (u, sw, d) -> Ustringswitch (ulam u, map_pair sw, option d)
       | Ustaticfail (a, ul) -> Ustaticfail (a, map ul)
       | Ucatch (a, b, u1, u2) -> Ucatch (a, b, ulam u1, ulam u2)
       | Utrywith (u1, a, u2) -> Utrywith (ulam u1, a, ulam u2)
@@ -1440,9 +1449,10 @@ let delete_specialized () =
       | Usend (a, u1, u2, ul, b) -> Usend (a, ulam u1, ulam u2, map ul, b)
     and ufunction ufunct =
       {ufunct with body = ulam ufunct.body} in
-      match inline with
-      | None -> f
-      | Some (ids, u, opt) -> {f with fun_inline = Some (ids, ulam u, opt)} in
+    let inline = f.fun_inline in
+    match inline with
+    | None -> f
+    | Some (ids, u, opt) -> {f with fun_inline = Some (ids, ulam u, opt)} in
   let rec delete a =
     match a with
     | Value_closure (fundesc, approx) ->
