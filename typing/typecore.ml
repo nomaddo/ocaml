@@ -3738,7 +3738,10 @@ and type_let ?(check = fun s -> Warnings.Unused_var s)
     Typedtree.let_bound_idents l
     |> List.fold_left (fun env id ->
         let vb = Env.find_value (Path.Pident id) new_env in
-        let tvars = Ctype.TvarSet.extract vb.val_type in
+        let tvars =
+          if TvarSet.include_gadt env vb.val_type
+          then []
+          else TvarSet.extract vb.val_type in
         if tvars <> []
         then Hashtbl.add Typetbl.tbl id (Some (vb.val_type, tvars))
         else Hashtbl.add Typetbl.tbl id None;

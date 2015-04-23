@@ -36,9 +36,10 @@ let stack : IntS.t Stack.t = Stack.create ()
 
 let make_map env sp param sch =
   let instance = Ctype.instance_parameterized_type in
+  let sp' = Ctype.newobj sp in
   let tys, ty = instance param sch in
   try
-    Ctype.unify env ty sp;
+    Ctype.unify env ty sp';
     List.map2
       (fun ty1 ty2 -> (ty1.id, Lambda.to_type_kind (Ctype.repr ty2)))
       param tys

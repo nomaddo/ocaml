@@ -4503,6 +4503,37 @@ let collapse_conj_params env params =
   List.iter (collapse_conj env []) params
 
 module TvarSet = struct
+  let is_gadt_tbl : (Path.t, bool ) Hashtbl.t =
+    Hashtbl.create 100
+
+  let is_gadt : Env.t -> Path.t -> bool = fun env path ->
+    match Hashtbl.find_all is_gadt_tbl path with
+    | [] -> begin (*  first case *)
+        let type_decl = Env.find_type path env in
+        let ans = match type_decl.type_kind with
+          | Type_abstract | Type_record _ | Type_open -> false
+          | Type_variant cds -> begin try
+                List.iter
+                  (fun {cd_res} -> match cd_res with
+                     | None -> ()
+                     | Some _ -> raise Exit) cds
+                |> ignore; false
+              with Exit -> true end in
+        Hashtbl.add is_gadt_tbl path ans; ans
+      end
+    | [ans] -> ans
+    | _ -> assert false
+
+  let include_gadt : Env.t -> type_expr -> bool = fun env ty ->
+    try
+      Btype.iter_type_expr (fun {desc} ->
+          match desc with
+          | Tconstr (path, tys, abbrev) ->
+              if is_gadt env path then raise Exit
+          | _ -> ()) ty;
+      false
+    with Exit -> true
+
   let extract ty =
     let tvars = free_variables ty in
     List.filter (fun {level} -> generic_level = level) tvars
