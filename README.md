@@ -41,47 +41,34 @@ I extend the intermediate languages, `lambda` and `clambda`, to represent how po
       | Uspecialized of ulambda * Lambda.kind_map list * Types.type_expr * Env.t
         ...
 
-Benchmark
----------
-I just tried one following benchmark program with option `-unsafe -inline 10000`.
+<!-- Benchmark -->
+<!-- --------- -->
+<!-- I just tried one following benchmark program with option `-unsafe -inline 10000`. -->
 
-a.ml
+<!-- a.ml -->
 
-    let get a i = a.(i - 1)
+<!--     let get a i = a.(i - 1) -->
 
-    let sum a =
-      get a 1 + get a 2 + get a 3 +
-      get a 4 + get a 5 + get a 6 +
-      get a 7 + get a 8 + get a 9
+<!--     let sum a = -->
+<!--       get a 1 + get a 2 + get a 3 + -->
+<!--       get a 4 + get a 5 + get a 6 + -->
+<!--       get a 7 + get a 8 + get a 9 -->
 
-    let arr () =
-      Array.init 10000000 (fun i -> Array.make 9 i)
+<!--     let arr () = -->
+<!--       Array.init 10000000 (fun i -> Array.make 9 i) -->
 
-b.ml
+<!-- b.ml -->
 
-    let () =
-      let r = ref 0 in
-      let arr = A.arr () in
-      for i = 1 to Array.length arr do
-        r := !r + A.sum (A.get arr i)
-      done; print_int !r; print_endline ""
+<!--     let () = -->
+<!--       let r = ref 0 in -->
+<!--       let arr = A.arr () in -->
+<!--       for i = 1 to Array.length arr do -->
+<!--         r := !r + A.sum (A.get arr i) -->
+<!--       done; print_int !r; print_endline "" -->
 
 
-result:
+<!-- result:  -->
 
-    [~/ocaml/bench] time ./my
-    449999955000000
-
-    real    0m2.361s
-    user    0m1.976s
-    sys     0m0.352s
-
-     [~/ocaml/bench] time ./vanilla
-     449999955000000
-
-     real	0m3.905s
-     user	0m3.592s
-     sys	0m0.268s
 
 Representation of clambda
 ----------------------
