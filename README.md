@@ -71,7 +71,7 @@ b.ml
         r := !r +. A.sum (A.get arr i)
       done
 
-An average of 100 executions of `time -f "%e %U %S" ./a.out`
+An average of 100 times executions of `time -f "%e %U %S" ./a.out`
 
     vanilla   5.038400 4.783000 0.240800
     modified  4.981300 4.737200 0.229600
