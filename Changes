@@ -17,6 +17,9 @@ Compilers:
   incrementally (Jacques Garrigue)
 - PR#6642: replace $CAMLORIGIN in -ccopt with the path to cma or cmxa
   (Peter Zotov, Gabriel Scherer, review by Damien Doligez)
+- PR#6797: new option -output-complete-obj
+  to output an object file with included runtime and autolink libraries
+  (Peter Zotov)
 - GPR#159: Better locations for structure/signature items
   (Leo White)
 
@@ -101,6 +104,7 @@ Bug fixes:
 - PR#6770: (duplicate of PR#6686)
 - PR#6775: Digest.file leaks file descriptor on error
   (Valentin Gatien-Baron)
+- PR#6779: Cross-compilers cannot link bytecode using custom primitives
 - PR#6787: Soundness bug with polymorphic variants
 - PR#6790: otherlibs should be built with -g
 - PR#6791: "%s@[", "%s@{" regression in Scanf
@@ -112,15 +116,20 @@ Bug fixes:
 - PR#6817: GADT exhaustiveness breakage with modules
 - PR#6824: fix buffer sharing on partial application of Format.asprintf
   (Gabriel Scherer, report by Alain Frisch)
+- PR#6831: Build breaks for -aspp gcc on solaris-like OSs
 - PR#6836: Assertion failure using -short-paths
 - PR#6841: Changing compilation unit name with -o breaks ocamldebug
 - PR#6842: export Typemod.modtype_of_package
+- PR#6843: record weak dependencies even when the .cmi is missing
+  (Leo White, Gabriel Scherer)
 - GPR#143: fix getsockopt behaviour for boolean socket options
   (Anil Madhavapeddy and Andrew Ray)
 - ocamlbuild on cygwin cannot find ocamlfind
   (user 'algoriddle')
 - allow android build with pthreads support (since SDK r10c)
   (Peter Zotov)
+- GPR#171: allow custom warning printers / catchers
+  (Benjamin Canou, review by Damien Doligez)
 
 OCaml 4.02.1:
 -------------
@@ -926,6 +935,7 @@ Feature wishes:
   (Benedikt Meurer)
 - PR#5243: improve the ocamlbuild API documentation in signatures.mli
   (Christophe Troestler)
+- PR#5418 (comments) : generate dependencies with $(CC) instead of gcc
 - PR#5546: moving a function into an internal module slows down its use
   (Alain Frisch, report by Fabrice Le Fessant)
 - PR#5597: add instruction trace option 't' to OCAMLRUNPARAM
