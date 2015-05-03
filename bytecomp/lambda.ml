@@ -570,7 +570,7 @@ let to_type_kind ty =
     | "int" | "char" | "bool" -> I
     | "float" -> F
     | "string" -> P
-    | _ -> I in
+    | _ -> P in
   let rec inference ty =
     let open Types in
     match ty.desc with
