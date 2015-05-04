@@ -224,6 +224,9 @@ val nondep_type: Env.t -> Ident.t -> type_expr -> type_expr
         (* Return a type equivalent to the given type but without
            references to the given module identifier. Raise [Not_found]
            if no such type exists. *)
+
+val unalias_type: Env.t -> type_expr -> type_expr
+
 val nondep_type_decl:
         Env.t -> Ident.t -> Ident.t -> bool -> type_declaration ->
         type_declaration

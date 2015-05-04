@@ -301,6 +301,7 @@ let gen_kind maps i k =
   | Some F -> Pfloatarray
   | Some P -> Paddrarray
   | Some (Kvar i) -> Ptvar i
+  | Some Gen -> Pgenarray
   | None -> Format.printf "gen_kind: not found@."; k
 
 let simplify_lets lam =

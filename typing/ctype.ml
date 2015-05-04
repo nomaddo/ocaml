@@ -4317,6 +4317,62 @@ let nondep_type env id ty =
     clear_hash ();
     raise Not_found
 
+(* copy from nondep_type_rec and modify to unalias types *)
+let rec unalias_type env ty =
+  let open Types in
+  match ty.desc with
+    Tvar _ | Tunivar _ -> ty
+  | Tlink ty -> unalias_type env ty
+  | _ -> try TypeHash.find nondep_hash ty
+  with Not_found ->
+    let ty' = newgenvar () in        (* Stub *)
+    TypeHash.add nondep_hash ty ty';
+    ty'.desc <-
+      begin match ty.desc with
+      | Tconstr (p, tl, abbrev) ->
+          begin try
+            Tlink (unalias_type env
+                     (try_expand_safe env (newty2 ty.level ty.desc)))
+          with Cannot_expand ->
+            Tconstr(p, List.map (unalias_type env) tl, ref Mnil)
+          end
+      | Tpackage(p, nl, tl) ->
+          let p' = normalize_package_path env p in
+          Tpackage (p', nl, List.map
+                      (unalias_type env) tl)
+      | Tobject (t1, name) ->
+          Tobject (unalias_type env t1,
+                 ref (match !name with
+                        None -> None
+                      | Some (p, tl) ->
+                          Some (p, List.map
+                                  (unalias_type env) tl)))
+      | Tvariant row ->
+          let row = row_repr row in
+          let more = repr row.row_more in
+          (* We must keep sharing according to the row variable *)
+          begin try
+            let ty2 = TypeHash.find nondep_variants more in
+            (* This variant type has been already copied *)
+            TypeHash.add nondep_hash ty ty2;
+            Tlink ty2
+          with Not_found ->
+            (* Register new type first for recursion *)
+            TypeHash.add nondep_variants more ty';
+            let static = static_row row in
+            let more' = if static then newgenty Tnil else more in
+            (* Return a new copy *)
+            let row =
+              copy_row (unalias_type env) true row true more' in
+            match row.row_name with
+              Some (p, tl) ->
+                Tvariant {row with row_name = None}
+            | _ -> Tvariant row
+          end
+      | _ -> copy_type_desc (unalias_type env) ty.desc
+      end;
+    ty'
+
 let () = nondep_type' := nondep_type
 
 let unroll_abbrev id tl ty =

@@ -102,7 +102,7 @@ let make_map env sp param sch =
   try
     Ctype.unify env ty sp';
     List.map2
-      (fun ty1 ty2 -> (ty1.id, Lambda.to_type_kind (Ctype.repr ty2)))
+      (fun ty1 ty2 -> (ty1.id, Lambda.to_type_kind env (Ctype.repr ty2)))
       param tys
   with Ctype.Unify l as exn ->
     (* Format.eprintf "Unify Failure\n%a\n%a\n@." *)

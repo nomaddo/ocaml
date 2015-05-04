@@ -178,7 +178,7 @@ type meth_kind = Self | Public | Cached
 
 type shared_code = (int * int) list     (* stack size -> code label *)
 
-type type_kind = I | F | P | Kvar of int
+type type_kind = I | F | P | Kvar of int | Gen
 type kind_map = int * type_kind
 
 type lambda =
@@ -270,4 +270,4 @@ val lam_of_loc : loc_kind -> Location.t -> lambda
 val reset: unit -> unit
 
 (* for array_kind Ptvar *)
-val to_type_kind: Types.type_expr -> type_kind
+val to_type_kind: Env.t -> Types.type_expr -> type_kind

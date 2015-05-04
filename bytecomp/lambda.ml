@@ -169,7 +169,7 @@ type meth_kind = Self | Public | Cached
 
 type shared_code = (int * int) list
 
-type type_kind = I | F | P | Kvar of int
+type type_kind = I | F | P | Kvar of int | Gen
 
 type kind_map = int * type_kind
 
@@ -565,27 +565,35 @@ let lam_of_loc kind loc =
 let reset () =
   raise_count := 0
 
-let to_type_kind ty =
-  let ident_name = function
-    | "int" | "char" | "bool" -> I
-    | "float" -> F
-    | "string" -> P
-    | _ -> P in
+let to_type_kind env ty =
+  let open Types in
+  let query_env path =
+    let tydecl = Env.find_type path env in
+    match tydecl.type_kind with
+    | Type_abstract -> Gen
+    | Type_record _ -> P
+    | Type_variant _ -> P
+    | Type_open -> P in
+  let path p =
+    match p with
+    | Path.Pident ident -> begin
+        match ident.Ident.name with
+        | "int" | "char" | "bool" | "unit" -> I
+        | "float" -> F
+        | "string" | "byte" -> P
+        | "array" -> P
+        | _ -> query_env p end
+    | Path.Pdot _ -> query_env p
+    | Path.Papply _ -> Gen in
   let rec inference ty =
-    let open Types in
     match ty.desc with
     | Tarrow _ | Ttuple _ | Tobject _ | Tfield _ -> P
     | Tvar _ -> Kvar ty.id
     | Tunivar _ -> Kvar ty.id (* XXX : Is it really okey ??? *)
     | Tlink ty -> inference ty
-    | Tconstr (path,tylist,_) ->
-        if tylist <> [] then P
-        else begin match path with
-          | Path.Pident ident -> ident_name ident.Ident.name
-          | _ -> P (* XXX: TODO: fix me *)
-        end
+    | Tconstr (p, _, _) -> path p
     | _ ->
         (* Format.eprintf "unexpected type: %a\n" *)
         (*   Printtyp.type_expr ty; *)
-        I in
-  inference ty
+        Gen in
+  inference (Ctype.unalias_type env ty)

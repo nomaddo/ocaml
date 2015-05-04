@@ -21,7 +21,7 @@ let type_kind ppf = function
   | F -> fprintf ppf "F"
   | P -> fprintf ppf "P"
   | Kvar i -> fprintf ppf "Var %d" i
-
+  | Gen -> fprintf ppf "Gen"
 let rec kind_map ppf = function
   | [] -> assert false
   | (i, k) :: [] -> fprintf ppf "%d -> %a" i type_kind k
