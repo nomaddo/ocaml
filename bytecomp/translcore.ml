@@ -32,72 +32,11 @@ exception Error of Location.t * error
 (* stack to generate array_kind Ltvar *)
 module IntS = Typeopt.IntS
 
-module AbbrevSet = Set.Make(struct type t = Types.abbrev_memo let compare = compare end)
-
-module TypeSet = struct
-  include Set.Make(struct type t = Types.type_expr let compare = compare end)
-  let set = ref empty
-  let mem ty = mem ty !set
-  let update e = set := add e !set
-  let reset () = set := empty
-end
-
-let rec copy ty =
-  TypeSet.update ty;
-  if TypeSet.mem ty then ty else
-  let map l = List.map copy l in
-  let copy_optref optref =
-    let opt = !optref in
-    match opt with
-    | None -> optref
-    | Some (p, l) -> ref (Some (p, map l)) in
-  let set = ref AbbrevSet.empty in
-  let abbrev_memo m =
-    let update m = set := AbbrevSet.add m !set in
-    let rec abbrev_memo m =
-      update m;
-      match m with
-      | Mnil -> m
-      | Mcons (flag, path, t1, t2, m') ->
-          Mcons (flag, path, copy t1, copy t2, abbrev_memo m')
-      | Mlink refmemo ->
-          if AbbrevSet.mem !refmemo !set
-          then Mlink refmemo
-          else Mlink (ref (abbrev_memo !refmemo)) in
-    abbrev_memo m in
-  let row_desc row =
-    let map' (p, l) = (p, map l) in
-    {row with row_more = copy row.row_more;
-              row_name = match row.row_name with None -> None | Some l -> Some (map' l)} in
-  match ty.desc with
-  | Tvar _ -> Btype.newty2 ty.level ty.desc
-  | _ -> begin
-      let desc = match ty.desc with
-        | Tarrow (label, t1, t2, commutable) ->
-            Tarrow (label, copy t1, copy t2, commutable)
-        | Ttuple l -> Ttuple (map l)
-        | Tconstr (path, l, memo)  -> Tconstr (path, map l, ref (abbrev_memo !memo))
-        | Tobject (t1, optref) -> Tobject (copy t1, copy_optref optref)
-        | Tfield (str, kind, t1, t2) ->
-            Tfield (str, kind, copy t1, copy t2)
-        | Tvariant row -> Tvariant (row_desc row)
-        | Tnil  | Tunivar _ -> ty.desc
-        | Tpoly (t1, l) -> Tpoly (copy t1, map l)
-        | Tpackage (path, ids, l) -> Tpackage (path, ids, map l)
-        | Tlink t -> Tlink (copy t)
-        | Tvar _ | Tsubst _ -> assert false in
-      {ty with desc}
-    end
-
-let copy ty =
-  TypeSet.reset ();
-  copy ty
-
 let stack : IntS.t Stack.t = Stack.create ()
 
 let make_map env sp param sch =
   let instance = Ctype.instance_parameterized_type in
-  let sp' = copy (Ctype.repr sp) in
+  let sp' = Ctype.duplicate_whole_type (Ctype.repr sp) in
   let tys, ty = instance param sch in
   try
     Ctype.unify env ty sp';
