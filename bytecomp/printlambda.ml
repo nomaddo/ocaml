@@ -177,8 +177,8 @@ let primitive ppf = function
   | Pstringsetu -> fprintf ppf "string.unsafe_set"
   | Pstringrefs -> fprintf ppf "string.get"
   | Pstringsets -> fprintf ppf "string.set"
-  | Parraylength _ -> fprintf ppf "array.length"
-  | Pmakearray k -> fprintf ppf "makearray[%a]" array_kind k
+  | Parraylength k -> fprintf ppf "array.length[%a]" array_kind k
+  | Pmakearray k -> fprintf ppf "makearray[%a] " array_kind k
   | Parrayrefu k -> fprintf ppf "array.unsafe_get[%a]" array_kind k
   | Parraysetu k -> fprintf ppf "array.unsafe_set[%a]" array_kind k
   | Parrayrefs k -> fprintf ppf "array.get[%a]" array_kind k
