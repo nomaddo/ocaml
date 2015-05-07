@@ -506,7 +506,7 @@ let emit_instr i =
         begin match size with
         | 16 ->
             `	rev16	{emit_wreg i.res.(0)}, {emit_wreg i.arg.(0)}\n`;
-            `	ubfm	{emit_reg i.res.(0)}, {emit_reg i.res.(0)}, #0, #16\n`
+            `	ubfm	{emit_reg i.res.(0)}, {emit_reg i.res.(0)}, #0, #15\n`
         | 32 ->
             `	rev	{emit_wreg i.res.(0)}, {emit_wreg i.arg.(0)}\n`
         | 64 ->
@@ -654,8 +654,10 @@ let fundecl fundecl =
   let n = frame_size() in
   if n > 0 then
     emit_stack_adjustment (-n);
-  if !contains_calls then
-    `	str	x30, [sp, #{emit_int (n-8)}]\n`;
+  if !contains_calls then begin
+    cfi_offset ~reg:30 (* return address *) ~offset:(-8);
+    `	str	x30, [sp, #{emit_int (n-8)}]\n`
+  end;
   `{emit_label !tailrec_entry_point}:\n`;
   emit_all fundecl.fun_body;
   List.iter emit_call_gc !call_gc_sites;

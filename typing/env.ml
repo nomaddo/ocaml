@@ -429,6 +429,9 @@ let reset_cache_toplevel () =
 let set_unit_name name =
   current_unit := name
 
+let get_unit_name () =
+  !current_unit
+
 (* Lookup by identifier *)
 
 let rec find_module_descr path env =
@@ -948,7 +951,7 @@ let iter_env_cont = ref []
 let rec scrape_alias_safe env mty =
   match mty with
   | Mty_alias (Pident id) when Ident.persistent id -> false
-  | Mty_alias path ->
+  | Mty_alias path -> (* PR#6600: find_module may raise Not_found *)
       scrape_alias_safe env (find_module path env).md_type
   | _ -> true
 
@@ -959,7 +962,8 @@ let iter_env proj1 proj2 f env () =
       let safe =
         match EnvLazy.get_arg mcomps with
           None -> true
-        | Some (env, sub, path, mty) -> scrape_alias_safe env mty
+        | Some (env, sub, path, mty) ->
+            try scrape_alias_safe env mty with Not_found -> false
       in
       if not safe then () else
       match EnvLazy.force !components_of_module_maker' mcomps with
