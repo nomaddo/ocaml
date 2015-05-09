@@ -240,7 +240,7 @@ let lambda_smaller lam threshold =
 
 let rec is_pure_clambda = function
     Uvar v -> true
-  | Uspecialized _ -> true
+  | Uspecialized (u, _, _, _) -> is_pure_clambda u
   | Uconst _ -> true
   | Uprim((Psetglobal _ | Psetfield _ | Psetfloatfield _ | Pduprecord _ |
            Pccall _ | Praise _ | Poffsetref _ | Pstringsetu | Pstringsets |
@@ -620,10 +620,11 @@ let rec substitute fpc sb ulam =
       with Not_found -> ulam
       (* When Not_found is raised ? *)
       end
-  | Uspecialized (Uprim (Pfield i, args, dbg) as u, map, ty, env) ->
+  | Uspecialized (Uprim ((Pfield _), _, _) as u, map, ty, env)
+  | Uspecialized (Uprim ((Pgetglobal _), _, _) as u, map, ty, env) ->
       let u = substitute fpc sb u in
       begin match u with
-      | Uvar _ | Uprim ((Pfield _), _, _) ->
+      | Uvar _ | Uprim ((Pfield _), _, _) | Uprim ((Pgetglobal _), _, _) ->
           Uspecialized (u, map, ty, env)
       | _ -> u
       end
@@ -719,8 +720,9 @@ let rec substitute fpc sb ulam =
 
 (* Perform an inline expansion *)
 
-let is_simple_argument = function
-  | Uvar _  | Uconst _ | Uspecialized _ -> true
+let rec is_simple_argument = function
+  | Uvar _  | Uconst _ -> true
+  | Uspecialized (u, _, _, _) -> is_simple_argument u
   | _ -> false
 
 let no_effects = function
@@ -1260,7 +1262,7 @@ and close_functions fenv cenv fun_defs =
         match o with
         | None -> fundesc.fun_inline <- Some(fun_params, ubody, None)
         | Some ty -> fundesc.fun_inline <- Some(fun_params, ubody, Some ty)
-      with Not_found -> () end;
+      with Not_found -> fundesc.fun_inline <- Some(fun_params, ubody, None) end;
     (f, (id, env_pos, Value_closure(fundesc, approx))) in
   (* Translate all function definitions. *)
   let clos_info_list =
