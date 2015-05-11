@@ -401,7 +401,7 @@ let free_ids get l =
         fv := IdentSet.remove v !fv
     | Lassign(id, e) ->
         fv := IdentSet.add id !fv
-    | Lspecialized (lam, _, _, _) -> free lam
+    | Lspecialized (lam, _, _, _) -> ()
     | Lvar _ | Lconst _ | Lapply _
     | Lprim _ | Lswitch _ | Lstringswitch _ | Lstaticraise _
     | Lifthenelse _ | Lsequence _ | Lwhile _

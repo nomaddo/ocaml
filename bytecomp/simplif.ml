@@ -506,7 +506,7 @@ let simplify_lets lam =
       begin try
         subst_array_kind maps (Hashtbl.find subst v)
       with Not_found -> l end
-  | Lspecialized (lam, map, ty, env) as l -> l
+  | Lspecialized (lam, map, ty, env) -> Lspecialized (simplif lam, map, ty, env)
   | Lconst cst as l -> l
   | Lapply(Lfunction(Curried, params, body), args, _)
     when optimize && List.length params = List.length args ->
