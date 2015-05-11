@@ -16,6 +16,11 @@ open Primitive
 open Types
 open Lambda
 
+let array_kind ppf = function
+    Pgenarray -> fprintf ppf "Pgen"
+  | Paddrarray -> fprintf ppf "Paddr"
+  | Pintarray -> fprintf ppf "Pint"
+  | Pfloatarray -> fprintf ppf "Pfloat"
 
 let rec struct_const ppf = function
   | Const_base(Const_int n) -> fprintf ppf "%i" n
@@ -156,12 +161,12 @@ let primitive ppf = function
   | Pstringsetu -> fprintf ppf "string.unsafe_set"
   | Pstringrefs -> fprintf ppf "string.get"
   | Pstringsets -> fprintf ppf "string.set"
-  | Parraylength _ -> fprintf ppf "array.length"
-  | Pmakearray _ -> fprintf ppf "makearray "
-  | Parrayrefu _ -> fprintf ppf "array.unsafe_get"
-  | Parraysetu _ -> fprintf ppf "array.unsafe_set"
-  | Parrayrefs _ -> fprintf ppf "array.get"
-  | Parraysets _ -> fprintf ppf "array.set"
+  | Parraylength k -> fprintf ppf "array.length[%a]" array_kind k
+  | Pmakearray k -> fprintf ppf "makearray[%a] " array_kind k
+  | Parrayrefu k -> fprintf ppf "array.unsafe_get[%a]" array_kind k
+  | Parraysetu k -> fprintf ppf "array.unsafe_set[%a]" array_kind k
+  | Parrayrefs k -> fprintf ppf "array.get[%a]" array_kind k
+  | Parraysets k -> fprintf ppf "array.set[%a]" array_kind k
   | Pctconst c ->
      let const_name = match c with
        | Big_endian -> "big_endian"
