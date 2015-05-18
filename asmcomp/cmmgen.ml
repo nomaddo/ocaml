@@ -1300,6 +1300,12 @@ let strmatch_compile =
       end) in
   S.compile
 
+let insert_count =
+  Cop(Capply ([||], Debuginfo.none),
+      [Cconst_symbol "camlMust__count_1009";
+       Cconst_pointer 1;
+       Cop (Cload Word, [Cconst_symbol "camlMust"])])
+
 let rec transl = function
   | Uvar id ->
       Cvar id
@@ -1803,9 +1809,10 @@ and transl_prim_2 p arg1 arg2 dbg =
       | Ptvar _ | Pgenarray ->
           bind "arr" (transl arg1) (fun arr ->
             bind "index" (transl arg2) (fun idx ->
-              Cifthenelse(is_addr_array_ptr arr,
-                          addr_array_ref arr idx,
-                          float_array_ref arr idx)))
+                  Csequence (insert_count,
+                    Cifthenelse(is_addr_array_ptr arr,
+                                addr_array_ref arr idx,
+                                float_array_ref arr idx))))
       | Paddrarray | Pintarray ->
           addr_array_ref (transl arg1) (transl arg2)
       | Pfloatarray ->
@@ -1818,10 +1825,11 @@ and transl_prim_2 p arg1 arg2 dbg =
           bind "arr" (transl arg1) (fun arr ->
           bind "header" (header arr) (fun hdr ->
             if wordsize_shift = numfloat_shift then
+              Csequence(insert_count,
               Csequence(make_checkbound dbg [addr_array_length hdr; idx],
                         Cifthenelse(is_addr_array_hdr hdr,
                                     addr_array_ref arr idx,
-                                    float_array_ref arr idx))
+                                    float_array_ref arr idx)))
             else
               Cifthenelse(is_addr_array_hdr hdr,
                 Csequence(make_checkbound dbg [addr_array_length hdr; idx],
