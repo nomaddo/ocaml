@@ -1300,11 +1300,18 @@ let strmatch_compile =
       end) in
   S.compile
 
-let insert_count =
+let gen_count =
   Cop(Capply ([||], Debuginfo.none),
-      [Cconst_symbol "camlMust__count_1009";
+      [Cconst_symbol "camlMust__count1_1010";
        Cconst_pointer 1;
        Cop (Cload Word, [Cconst_symbol "camlMust"])])
+
+let mono_count =
+  Cop(Capply ([||], Debuginfo.none),
+      [Cconst_symbol "camlMust__count2_1011";
+       Cconst_pointer 1;
+       Cop (Cload Word, [Cconst_symbol "camlMust"])])
+
 
 let rec transl = function
   | Uvar id ->
@@ -1414,13 +1421,15 @@ let rec transl = function
           begin match kind with
             | Ptvar _
             | Pgenarray ->
+              Csequence (gen_count,
               Cop(Cextcall("caml_make_array", typ_addr, true, Debuginfo.none),
-                  [make_alloc 0 (List.map transl args)])
+                  [make_alloc 0 (List.map transl args)]))
           | Paddrarray | Pintarray ->
-              make_alloc 0 (List.map transl args)
+              Csequence (mono_count, make_alloc 0 (List.map transl args))
           | Pfloatarray ->
-              make_float_alloc Obj.double_array_tag
-                              (List.map transl_unbox_float args)
+              Csequence (mono_count,
+                make_float_alloc Obj.double_array_tag
+                  (List.map transl_unbox_float args))
           end
       | (Pbigarrayref(unsafe, num_dims, elt_kind, layout), arg1 :: argl) ->
           let elt =
@@ -1809,14 +1818,16 @@ and transl_prim_2 p arg1 arg2 dbg =
       | Ptvar _ | Pgenarray ->
           bind "arr" (transl arg1) (fun arr ->
             bind "index" (transl arg2) (fun idx ->
-                  Csequence (insert_count,
-                    Cifthenelse(is_addr_array_ptr arr,
-                                addr_array_ref arr idx,
-                                float_array_ref arr idx))))
+              Csequence (gen_count,
+                Cifthenelse(is_addr_array_ptr arr,
+                            addr_array_ref arr idx,
+                            float_array_ref arr idx))))
       | Paddrarray | Pintarray ->
-          addr_array_ref (transl arg1) (transl arg2)
+          Csequence (mono_count,
+            addr_array_ref (transl arg1) (transl arg2))
       | Pfloatarray ->
-          float_array_ref (transl arg1) (transl arg2)
+          Csequence (mono_count,
+            float_array_ref (transl arg1) (transl arg2))
       end
   | Parrayrefs kind ->
       begin match kind with
@@ -1825,29 +1836,32 @@ and transl_prim_2 p arg1 arg2 dbg =
           bind "arr" (transl arg1) (fun arr ->
           bind "header" (header arr) (fun hdr ->
             if wordsize_shift = numfloat_shift then
-              Csequence(insert_count,
+              Csequence(gen_count,
               Csequence(make_checkbound dbg [addr_array_length hdr; idx],
                         Cifthenelse(is_addr_array_hdr hdr,
                                     addr_array_ref arr idx,
                                     float_array_ref arr idx)))
             else
+              Csequence (gen_count,
               Cifthenelse(is_addr_array_hdr hdr,
                 Csequence(make_checkbound dbg [addr_array_length hdr; idx],
                           addr_array_ref arr idx),
                 Csequence(make_checkbound dbg [float_array_length hdr; idx],
-                          float_array_ref arr idx)))))
+                          float_array_ref arr idx))))))
       | Paddrarray | Pintarray ->
           bind "index" (transl arg2) (fun idx ->
           bind "arr" (transl arg1) (fun arr ->
-            Csequence(make_checkbound dbg [addr_array_length(header arr); idx],
-                      addr_array_ref arr idx)))
+            Csequence (mono_count,
+              Csequence(make_checkbound dbg [addr_array_length(header arr); idx],
+                      addr_array_ref arr idx))))
       | Pfloatarray ->
           box_float(
             bind "index" (transl arg2) (fun idx ->
             bind "arr" (transl arg1) (fun arr ->
-              Csequence(make_checkbound dbg
-                                        [float_array_length(header arr); idx],
-                        unboxed_float_array_ref arr idx))))
+              Csequence (mono_count,
+                Csequence(make_checkbound dbg
+                            [float_array_length(header arr); idx],
+                          unboxed_float_array_ref arr idx)))))
       end
 
   (* Operations on bitvects *)
@@ -1925,16 +1939,20 @@ and transl_prim_3 p arg1 arg2 arg3 dbg =
         | Ptvar _ | Pgenarray ->
           bind "newval" (transl arg3) (fun newval ->
             bind "index" (transl arg2) (fun index ->
-              bind "arr" (transl arg1) (fun arr ->
+            bind "arr" (transl arg1) (fun arr ->
+              Csequence (gen_count,
                 Cifthenelse(is_addr_array_ptr arr,
                             addr_array_set arr index newval,
-                            float_array_set arr index (unbox_float newval)))))
+                            float_array_set arr index (unbox_float newval))))))
       | Paddrarray ->
-          addr_array_set (transl arg1) (transl arg2) (transl arg3)
+          Csequence (mono_count,
+            addr_array_set (transl arg1) (transl arg2) (transl arg3))
       | Pintarray ->
-          int_array_set (transl arg1) (transl arg2) (transl arg3)
+          Csequence (mono_count,
+            int_array_set (transl arg1) (transl arg2) (transl arg3))
       | Pfloatarray ->
-          float_array_set (transl arg1) (transl arg2) (transl_unbox_float arg3)
+          Csequence (mono_count,
+            float_array_set (transl arg1) (transl arg2) (transl_unbox_float arg3))
       end)
   | Parraysets kind ->
       return_unit(begin match kind with
@@ -1944,36 +1962,41 @@ and transl_prim_3 p arg1 arg2 arg3 dbg =
           bind "arr" (transl arg1) (fun arr ->
           bind "header" (header arr) (fun hdr ->
             if wordsize_shift = numfloat_shift then
+              Csequence (gen_count,
               Csequence(make_checkbound dbg [addr_array_length hdr; idx],
                         Cifthenelse(is_addr_array_hdr hdr,
                                     addr_array_set arr idx newval,
                                     float_array_set arr idx
-                                                    (unbox_float newval)))
+                                                    (unbox_float newval))))
             else
+              Csequence (gen_count,
               Cifthenelse(is_addr_array_hdr hdr,
                 Csequence(make_checkbound dbg [addr_array_length hdr; idx],
                           addr_array_set arr idx newval),
                 Csequence(make_checkbound dbg [float_array_length hdr; idx],
                           float_array_set arr idx
-                                          (unbox_float newval)))))))
+                                          (unbox_float newval))))))))
       | Paddrarray ->
           bind "newval" (transl arg3) (fun newval ->
           bind "index" (transl arg2) (fun idx ->
           bind "arr" (transl arg1) (fun arr ->
-            Csequence(make_checkbound dbg [addr_array_length(header arr); idx],
-                      addr_array_set arr idx newval))))
+            Csequence (mono_count,
+              Csequence(make_checkbound dbg [addr_array_length(header arr); idx],
+                      addr_array_set arr idx newval)))))
       | Pintarray ->
           bind "newval" (transl arg3) (fun newval ->
           bind "index" (transl arg2) (fun idx ->
           bind "arr" (transl arg1) (fun arr ->
+          Csequence (mono_count,
             Csequence(make_checkbound dbg [addr_array_length(header arr); idx],
-                      int_array_set arr idx newval))))
+                      int_array_set arr idx newval)))))
       | Pfloatarray ->
           bind "newval" (transl_unbox_float arg3) (fun newval ->
           bind "index" (transl arg2) (fun idx ->
           bind "arr" (transl arg1) (fun arr ->
+          Csequence (mono_count,
             Csequence(make_checkbound dbg [float_array_length(header arr);idx],
-                      float_array_set arr idx newval))))
+                      float_array_set arr idx newval)))))
       end)
 
   | Pstring_set_16(unsafe) ->
