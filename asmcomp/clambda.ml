@@ -35,7 +35,7 @@ and uconstant =
 type ulambda =
     Uvar of Ident.t
   | Uconst of uconstant
-  | Uspecialized of ulambda * Lambda.kind_map list * Types.type_expr * Env.t
+  | Uspecialized of ulambda * Lambda.kind_map * Types.type_expr * Env.t
   | Udirect_apply of function_label * ulambda list * Debuginfo.t
   | Ugeneric_apply of ulambda * ulambda list * Debuginfo.t
   | Uclosure of ufunction list * ulambda list
