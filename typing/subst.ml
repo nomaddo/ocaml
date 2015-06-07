@@ -175,12 +175,6 @@ let rec typexp s ty =
       end;
     ty'
 
-(* for Types.value_description.val_tvars *)
-
-let map_tvar : (type_expr * type_expr) list ref = ref []
-let add_map ty ty' = map_tvar := (ty, ty') :: !map_tvar
-let refresh_map () = map_tvar := []
-
 let rec typexp2 s ty =
   let ty = repr ty in
   match ty.desc with
@@ -191,7 +185,7 @@ let rec typexp2 s ty =
           else newty2 ty.level desc
         in
         save_desc ty desc; ty.desc <- Tsubst ty';
-        add_map ty ty'; ty'
+        ty'
       else ty
   | Tsubst ty ->
       ty
@@ -381,13 +375,12 @@ let class_type s cty =
   cleanup_types ();
   cty
 
+(* for reconstruction of val_tvars *)
+let free_variables = ref (Obj.magic ())
+
 let value_description s descr =
   let ty = type_expr s descr.val_type in
-  let tvars = List.map
-      (fun ty -> try
-          List.assoc ty !map_tvar
-        with Not_found -> ty) descr.val_tvars in
-  refresh_map ();
+  let tvars = !free_variables ty in
   { val_type = ty;
     val_kind = descr.val_kind;
     val_loc = loc s descr.val_loc;

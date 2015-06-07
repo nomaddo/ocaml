@@ -811,7 +811,7 @@ let close_toplevel_term lam =
                 (free_variables lam) lam
 
 let transl_toplevel_item env item =
-  (* TK:
+  (* XXX :
      item.str_env does not include type info of itself
      so we pass str_final_env here.
   *)

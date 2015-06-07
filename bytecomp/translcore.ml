@@ -29,20 +29,20 @@ type error =
 
 exception Error of Location.t * error
 
-(* stack to generate array_kind Ltvar *)
+(* stack to generate array_kind Ktvar *)
 module IntS = Typeopt.IntS
 
 let stack : IntS.t Stack.t = Stack.create ()
 
-let make_map env sp param sch =
+let make_map env specialized params sch =
   let instance = Ctype.instance_parameterized_type in
-  let sp' = Ctype.duplicate_whole_type (Ctype.repr sp) in
-  let tys, ty = instance param sch in
+  let specialized' = Ctype.duplicate_whole_type (Ctype.repr specialized) in
+  let params', sch' = instance params sch in
   try
-    Ctype.unify env ty sp';
+    Ctype.unify env sch' specialized';
     List.map2
       (fun ty1 ty2 -> (ty1.id, Lambda.to_type_kind env (Ctype.repr ty2)))
-      param tys
+      params params'
   with Ctype.Unify l as exn ->
     (* Format.eprintf "Unify Failure\n%a\n%a\n@." *)
     (*   Printtyp.type_expr sp *)

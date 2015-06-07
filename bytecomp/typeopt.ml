@@ -66,7 +66,7 @@ let ptvar_gen stack ty =
 let array_element_kind env stack ty =
   let ty = scrape2 env ty in
   match ty.desc with
-  | Tvar _ ->
+  | Tvar _ -> (* Ptvar ty.id *)
       begin match ptvar_gen stack ty with
       | Some i -> Ptvar i
       | None -> Pgenarray

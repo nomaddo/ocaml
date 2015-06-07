@@ -4596,3 +4596,5 @@ module TvarSet = struct
     let tvars = free_variables ty in
     List.filter (fun {level} -> generic_level = level) tvars
 end
+
+let _ = Subst.free_variables := free_variables ?env:None

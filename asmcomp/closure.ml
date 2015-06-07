@@ -982,7 +982,7 @@ let rec close fenv cenv = function
           (Ugeneric_apply(direct_apply fundesc funct ufunct first_args,
                           rem_args, Debuginfo.none),
            Value_unknown)
-      | ((ufunct, _approx), uargs) ->
+      | ((ufunct, _), uargs) ->
           (Ugeneric_apply(ufunct, uargs, Debuginfo.none), Value_unknown)
       end
   | Lsend(kind, met, obj, args, _) ->
@@ -1411,10 +1411,6 @@ let collect_exported_structured_constants a =
 let reset () =
   global_approx := [||];
   function_nesting_depth := 0
-
-(* XXX: This doesn't seems enough to delete all specialized
-   As adhoc aid, I add Closure flag when outputiig
-*)
 
 let delete_specialized () =
   let function_description f =

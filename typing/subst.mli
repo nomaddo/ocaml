@@ -57,3 +57,5 @@ val class_signature: t -> class_signature -> class_signature
 (* Composition of substitutions:
      apply (compose s1 s2) x = apply s2 (apply s1 x) *)
 val compose: t -> t -> t
+
+val free_variables: (type_expr -> type_expr list) ref
