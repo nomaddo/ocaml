@@ -17,7 +17,7 @@ open Asttypes
 open Typedtree
 open Lambda
 open Types
-val stack : Typeopt.IntS.t Stack.t
+
 val make_map :
   Env.t -> type_expr -> type_expr list -> type_expr -> (int * Lambda.type_kind) list
 

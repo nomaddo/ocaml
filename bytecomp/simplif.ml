@@ -294,15 +294,14 @@ let beta_reduce params body args =
 
 (* Simplification of lets *)
 
-let gen_kind maps i k =
-  let find i l = try Some (List.assoc i l) with Not_found -> None in
-  match find i maps with
-  | Some I -> Pintarray
-  | Some F -> Pfloatarray
-  | Some P -> Paddrarray
-  | Some (Kvar i) -> Ptvar i
-  | Some Gen -> Pgenarray
-  | None -> Format.printf "gen_kind: not found@."; k
+let gen_kind map i k =
+  match List.assoc i map with
+  | I -> Pintarray
+  | F -> Pfloatarray
+  | P -> Paddrarray
+  | Kvar i -> Ptvar i
+  | Gen -> Pgenarray
+  | exception Not_found -> k
 
 let simplify_lets lam =
 
