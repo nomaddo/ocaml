@@ -762,7 +762,7 @@ let bind_params fpc params args body =
 
 let rec is_pure = function
     Lvar v -> true
-  | Lspecialized _ -> true
+  | Lspecialized (arg, _, _, _) -> is_pure arg
   | Lconst cst -> true
   | Lprim((Psetglobal _ | Psetfield _ | Psetfloatfield _ | Pduprecord _ |
            Pccall _ | Praise _ | Poffsetref _ | Pstringsetu | Pstringsets |

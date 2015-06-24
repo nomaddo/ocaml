@@ -387,7 +387,7 @@ let class_type s cty =
   cty
 
 (* for reconstruction of val_tvars *)
-let free_variables = ref (Obj.magic ())
+let free_variables = (fun _ -> failwith "undefined free_variables")
 
 let value_description s descr =
   let ty = type_expr s descr.val_type in
