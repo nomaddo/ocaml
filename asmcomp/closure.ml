@@ -1412,6 +1412,7 @@ let reset () =
   global_approx := [||];
   function_nesting_depth := 0
 
+(* Delete every Uspecialized for exporting *)
 let delete_specialized () =
   let function_description f =
     let rec ulam u =

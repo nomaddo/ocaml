@@ -284,6 +284,5 @@ val package_subtype :
 
 module TvarSet : sig
   val extract : type_expr -> type_expr list
-  val is_gadt : Env.t -> Path.t -> bool
   val include_gadt : Env.t -> type_expr -> bool
 end

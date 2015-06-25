@@ -4567,7 +4567,7 @@ module TvarSet = struct
 
   let is_gadt : Env.t -> Path.t -> bool = fun env path ->
     match Hashtbl.find_all is_gadt_tbl path with
-    | [] -> begin (*  first case *)
+    | [] -> begin (* first case *)
         let type_decl = Env.find_type path env in
         let ans = match type_decl.type_kind with
           | Type_abstract | Type_record _ | Type_open -> false
@@ -4580,7 +4580,7 @@ module TvarSet = struct
               with Exit -> true end in
         Hashtbl.add is_gadt_tbl path ans; ans
       end
-    | [ans] -> ans
+    | [ans] -> ans              (* return cached result *)
     | _ -> assert false
 
   let include_gadt : Env.t -> type_expr -> bool = fun env ty ->
