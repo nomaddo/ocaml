@@ -882,7 +882,7 @@ let transl_toplevel_item_and_close env itm =
 let transl_toplevel_definition str =
   reset_labels ();
   let rec make_sequence fn env = function
-    (* TK : copied from lambda.ml to pass str.str_final_env *)
+    (* copied from lambda.ml to pass str.str_final_env *)
     [] -> lambda_unit
   | [x] -> fn env x
   | x::rem ->

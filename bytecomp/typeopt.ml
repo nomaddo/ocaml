@@ -92,7 +92,7 @@ let array_kind_gen ty env =
 
 let array_kind exp = array_kind_gen exp.exp_type exp.exp_env
 
-let array_pattern_kind  pat = array_kind_gen pat.pat_type pat.pat_env
+let array_pattern_kind pat = array_kind_gen pat.pat_type pat.pat_env
 
 let bigarray_decode_type env ty tbl dfl =
   match scrape env ty with

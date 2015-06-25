@@ -292,8 +292,7 @@ let beta_reduce params body args =
   List.fold_left2 (fun l param arg -> Llet(Strict, param, arg, l))
                   body params args
 
-(* Simplification of lets *)
-
+(* Create array_kind from type_kind *)
 let gen_kind map i k =
   match List.assoc i map with
   | I -> Pintarray
@@ -302,6 +301,8 @@ let gen_kind map i k =
   | Kvar i -> Ptvar i
   | Gen -> Pgenarray
   | exception Not_found -> k
+
+(* Simplification of lets *)
 
 let simplify_lets lam =
 
@@ -435,8 +436,8 @@ let simplify_lets lam =
   | Lvar w when optimize && Ident.same v w -> e1
   | _ -> Llet (kind,v,e1,e2) in
 
-  let rec subst_array_kind maps lam =
-    let subst = subst_array_kind maps in
+  let rec subst_array_kind map lam =
+    let subst = subst_array_kind map in
     let subst_decl (id, exp) = (id, subst exp)
     and subst_case (key, case) = (key, subst case)
     and subst_strcase (key, case) = (key, subst case)
@@ -454,22 +455,22 @@ let simplify_lets lam =
     | Lprim(prim, args) ->
         begin match prim with
         | Pmakearray (Ptvar id as k) ->
-            let k = gen_kind maps id k in
+            let k = gen_kind map id k in
             Lprim(Pmakearray k, List.map subst args)
         | Parraylength (Ptvar id as k) ->
-            let k = gen_kind maps id k in
+            let k = gen_kind map id k in
             Lprim(Parraylength k, List.map subst args)
         | Parrayrefu (Ptvar id as k) ->
-            let k = gen_kind maps id k in
+            let k = gen_kind map id k in
             Lprim(Parrayrefu k, List.map subst args)
         | Parraysetu (Ptvar id as k) ->
-            let k = gen_kind maps id k in
+            let k = gen_kind map id k in
             Lprim(Parraysetu k, List.map subst args)
         | Parrayrefs (Ptvar id as k) ->
-            let k = gen_kind maps id k in
+            let k = gen_kind map id k in
             Lprim(Parrayrefs k, List.map subst args)
         | Parraysets (Ptvar id as k) ->
-            let k = gen_kind maps id k in
+            let k = gen_kind map id k in
             Lprim(Parraysets k, List.map subst args)
         | _ -> Lprim(prim, List.map subst args)
         end
@@ -501,9 +502,9 @@ let simplify_lets lam =
       with Not_found ->
         l
       end
-  | Lspecialized (Lvar v, maps, ty, env) as l ->
+  | Lspecialized (Lvar v, map, ty, env) as l ->
       begin try
-        subst_array_kind maps (Hashtbl.find subst v)
+        subst_array_kind map (Hashtbl.find subst v)
       with Not_found -> l end
   | Lspecialized (lam, map, ty, env) -> Lspecialized (simplif lam, map, ty, env)
   | Lconst cst as l -> l
@@ -592,7 +593,7 @@ let rec emit_tail_infos is_tail lambda =
    else Annot.Stack in
   match lambda with
   | Lvar _ -> ()
-  | Lspecialized (lam, _, _, _) -> ()
+  | Lspecialized (lam, _, _, _) -> emit_tail_infos is_tail lam
   | Lconst _ -> ()
   | Lapply (func, l, loc) ->
       list_emit_tail_infos false l;
