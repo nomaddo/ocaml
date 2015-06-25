@@ -3753,8 +3753,8 @@ and type_let ?(check = fun s -> Warnings.Unused_var s)
           then []
           else TvarSet.extract vb.val_type in
         if tvars <> []
-        then Hashtbl.add Typetbl.tbl id (Some (vb.val_type, tvars))
-        else Hashtbl.add Typetbl.tbl id None;
+        then Hashtbl.add Env.typetbl id (Some (vb.val_type, tvars))
+        else Hashtbl.add Env.typetbl id None;
         Env.add_value id {vb with val_tvars = tvars} env)
       new_env
   in

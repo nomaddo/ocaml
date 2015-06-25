@@ -4561,13 +4561,14 @@ let rec collapse_conj env visited ty =
 let collapse_conj_params env params =
   List.iter (collapse_conj env []) params
 
+(* utility for creating val_tvars and judging wheather gadt is *)
 module TvarSet = struct
   let is_gadt_tbl : (Path.t, bool ) Hashtbl.t =
     Hashtbl.create 100
 
-  let is_gadt : Env.t -> Path.t -> bool = fun env path ->
+  let is_gadt env path =
     match Hashtbl.find_all is_gadt_tbl path with
-    | [] -> begin (* first case *)
+    | [] -> begin               (* if we see the path first *)
         let type_decl = Env.find_type path env in
         let ans = match type_decl.type_kind with
           | Type_abstract | Type_record _ | Type_open -> false
@@ -4583,7 +4584,7 @@ module TvarSet = struct
     | [ans] -> ans              (* return cached result *)
     | _ -> assert false
 
-  let include_gadt : Env.t -> type_expr -> bool = fun env ty ->
+  let include_gadt  env ty =
     try
       Btype.iter_type_expr (fun {desc} ->
           match desc with
