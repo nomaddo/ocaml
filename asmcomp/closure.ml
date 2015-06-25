@@ -789,10 +789,10 @@ let direct_apply fundesc funct ufunct uargs =
           bind_params fundesc.fun_float_const_prop params app_args body end
     | _, None ->
         Udirect_apply(fundesc.fun_label, app_args, Debuginfo.none)
-    | _, Some (params, body, None) ->
+    | _, Some (params, body, None) -> (* inlined body exists, but not polymorphic *)
         bind_params fundesc.fun_float_const_prop params app_args body
-    | _, Some (params, body, Some _) -> begin
-        (* Format.printf "direct_apply2: %s@." fundesc.fun_label; *)
+    | _, Some (params, body, Some _) -> begin (* XXX: when enter this case ? *)
+        Format.printf "direct_apply2: %s@." fundesc.fun_label;
         bind_params fundesc.fun_float_const_prop params app_args body
       end
   in
