@@ -1258,7 +1258,7 @@ and close_functions fenv cenv fun_defs =
     if lambda_smaller ubody
         (!Clflags.inline_threshold + n)
     then begin try
-        let o = Hashtbl.find Typeopt.typetbl id in
+        let o = Hashtbl.find Typetbl.tbl id in
         match o with
         | None -> fundesc.fun_inline <- Some(fun_params, ubody, None)
         | Some ty -> fundesc.fun_inline <- Some(fun_params, ubody, Some ty)
