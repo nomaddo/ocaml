@@ -93,7 +93,6 @@ let print_bigarray name unsafe kind ppf layout =
      | Pbigarray_native_int -> "nativeint"
      | Pbigarray_complex32 -> "complex32"
      | Pbigarray_complex64 -> "complex64")
-
     (match layout with
     |  Pbigarray_unknown_layout -> "unknown"
      | Pbigarray_c_layout -> "C"

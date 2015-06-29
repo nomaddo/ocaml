@@ -186,95 +186,12 @@ let rec typexp s ty =
       end;
     ty'
 
-let rec typexp2 s ty =
-  let ty = repr ty in
-  match ty.desc with
-    Tvar _ | Tunivar _ as desc ->
-      if s.for_saving || ty.id < 0 then
-        let ty' =
-          if s.for_saving then newpersty (norm desc)
-          else newty2 ty.level desc
-        in
-        save_desc ty desc; ty.desc <- Tsubst ty';
-        ty'
-      else ty
-  | Tsubst ty ->
-      ty
-(* cannot do it, since it would omit subsitution
-  | Tvariant row when not (static_row row) ->
-      ty
-*)
-  | _ ->
-    let desc = ty.desc in
-    save_desc ty desc;
-    (* Make a stub *)
-    let ty' = if s.for_saving then newpersty (Tvar None) else newgenvar () in
-    ty.desc <- Tsubst ty';
-    ty'.desc <-
-      begin match desc with
-      | Tconstr(p, tl, abbrev) ->
-          Tconstr(type_path s p, List.map (typexp2 s) tl, ref Mnil)
-      | Tpackage(p, n, tl) ->
-          Tpackage(modtype_path s p, n, List.map (typexp2 s) tl)
-      | Tobject (t1, name) ->
-          Tobject (typexp2 s t1,
-                 ref (match !name with
-                        None -> None
-                      | Some (p, tl) ->
-                          Some (type_path s p, List.map (typexp2 s) tl)))
-      | Tfield (m, k, t1, t2)
-        when s == identity && ty.level < generic_level && m = dummy_method ->
-          (* not allowed to lower the level of the dummy method *)
-          Tfield (m, k, t1, typexp2 s t2)
-      | Tvariant row ->
-          let row = row_repr row in
-          let more = repr row.row_more in
-          (* We must substitute in a subtle way *)
-          (* Tsubst takes a tuple containing the row var and the variant *)
-          begin match more.desc with
-            Tsubst {desc = Ttuple [_;ty2]} ->
-              (* This variant type has been already copied *)
-              ty.desc <- Tsubst ty2; (* avoid Tlink in the new type *)
-              Tlink ty2
-          | _ ->
-              let dup =
-                s.for_saving || more.level = generic_level || static_row row ||
-                match more.desc with Tconstr _ -> true | _ -> false in
-              (* Various cases for the row variable *)
-              let more' =
-                match more.desc with
-                  Tsubst ty -> ty
-                | Tconstr _ | Tnil -> typexp2 s more
-                | Tunivar _ | Tvar _ ->
-                    save_desc more more.desc;
-                    if s.for_saving then newpersty (norm more.desc) else
-                    if dup && is_Tvar more then newgenty more.desc else more
-                | _ -> assert false
-              in
-              (* Register new type first for recursion *)
-              more.desc <- Tsubst(newgenty(Ttuple[more';ty']));
-              (* Return a new copy *)
-              let row =
-                copy_row (typexp2 s) true row (not dup) more' in
-              match row.row_name with
-                Some (p, tl) ->
-                  Tvariant {row with row_name = Some (type_path s p, tl)}
-              | None ->
-                  Tvariant row
-          end
-      | Tfield(label, kind, t1, t2) when field_kind_repr kind = Fabsent ->
-          Tlink (typexp2 s t2)
-      | _ -> copy_type_desc (typexp2 s) desc
-      end;
-    ty'
-
-
 (*
    Always make a copy of the type. If this is not done, type levels
    might not be correct.
 *)
 let type_expr s ty =
-  let ty' = typexp2 s ty in
+  let ty' = typexp s ty in
   cleanup_types ();
   ty'
 
@@ -392,7 +309,7 @@ let free_variables = ref (fun _ -> failwith "undefined free_variables")
 let value_description s descr =
   let ty = type_expr s descr.val_type in
   let tvars = !free_variables ty in
-  { val_type = ty;
+  { val_type = type_expr s descr.val_type;
     val_kind = descr.val_kind;
     val_loc = loc s descr.val_loc;
     val_attributes = attrs s descr.val_attributes;

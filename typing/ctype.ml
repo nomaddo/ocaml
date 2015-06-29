@@ -524,7 +524,6 @@ let rec free_vars_rec real ty =
   end
 
 let free_vars ?env ty =
-  (* output *)
   free_variables := [];
   really_closed := env;
   free_vars_rec true ty;

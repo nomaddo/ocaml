@@ -203,23 +203,20 @@ let rc node =
 (* Enter a value in the method environment only *)
 let enter_met_env ?check loc lab kind ty val_env met_env par_env =
   let (id, val_env) =
-    Env.enter_value lab
-      {val_type = ty; val_kind = Val_unbound;
-       val_attributes = [];
-       Types.val_loc = loc;
-       val_tvars = Ctype.TvarSet.extract ty} val_env
+    Env.enter_value lab {val_type = ty; val_kind = Val_unbound;
+                         val_attributes = [];
+                         Types.val_loc = loc;
+                         val_tvars = Ctype.TvarSet.extract ty} val_env
   in
   (id, val_env,
-   Env.add_value ?check id
-     {val_type = ty; val_kind = kind;
-      val_attributes = [];
-      Types.val_loc = loc;
-      val_tvars = Ctype.TvarSet.extract ty} met_env,
-   Env.add_value id
-     {val_type = ty; val_kind = Val_unbound;
-      val_attributes = [];
-      Types.val_loc = loc;
-      val_tvars = Ctype.TvarSet.extract ty} par_env)
+   Env.add_value ?check id {val_type = ty; val_kind = kind;
+                            val_attributes = [];
+                            Types.val_loc = loc;
+                            val_tvars = Ctype.TvarSet.extract ty} met_env,
+   Env.add_value id {val_type = ty; val_kind = Val_unbound;
+                     val_attributes = [];
+                     Types.val_loc = loc;
+                     val_tvars = Ctype.TvarSet.extract ty} par_env)
 
 (* Enter an instance variable in the environment *)
 let enter_val cl_num vars inh lab mut virt ty val_env met_env par_env loc =
@@ -1106,8 +1103,8 @@ and class_expr cl_num val_env met_env scl =
              Ctype.end_def ();
              Ctype.generalize expr.exp_type;
              let desc =
-               {val_type = expr.exp_type;
-                val_kind = Val_ivar (Immutable, cl_num);
+               {val_type = expr.exp_type; val_kind = Val_ivar (Immutable,
+                                                               cl_num);
                 val_attributes = [];
                 Types.val_loc = vd.Types.val_loc;
                 val_tvars = Ctype.TvarSet.extract expr.exp_type

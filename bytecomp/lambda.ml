@@ -565,14 +565,14 @@ let reset () =
 
 let to_type_kind env ty =
   let open Types in
-  let query_env path =
+  let query_env env path =
     let tydecl = Env.find_type path env in
     match tydecl.type_kind with
     | Type_abstract -> Gen
     | Type_record _ -> P
     | Type_variant _ -> P
     | Type_open -> P in
-  let path p =
+  let path env p =
     match p with
     | Path.Pident ident -> begin
         match ident.Ident.name with
@@ -580,18 +580,18 @@ let to_type_kind env ty =
         | "float" -> F
         | "string" | "byte" -> P
         | "array" -> P
-        | _ -> query_env p end
-    | Path.Pdot _ -> query_env p
+        | _ -> query_env env p end
+    | Path.Pdot _ -> query_env env p
     | Path.Papply _ -> Gen in
-  let rec inference ty =
+  let rec inference env ty =
     match ty.desc with
     | Tarrow _ | Ttuple _ | Tobject _ | Tfield _ -> P
     | Tvar _ -> Kvar ty.id
     | Tunivar _ -> Kvar ty.id (* XXX : Is it really okey ??? *)
-    | Tlink ty -> inference ty
-    | Tconstr (p, _, _) -> path p
+    | Tlink ty -> inference env ty
+    | Tconstr (p, _, _) -> path env p
     | _ ->
         (* Format.eprintf "unexpected type: %a\n" *)
         (*   Printtyp.type_expr ty; *)
         Gen in
-  inference (Ctype.unalias_type env ty)
+  inference env (Ctype.unalias_type env ty)

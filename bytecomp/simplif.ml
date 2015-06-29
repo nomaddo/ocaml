@@ -206,18 +206,18 @@ let simplify_exits lam =
     let ll = List.map simplif ll in
     match p, ll with
         (* Simplify %revapply, for n-ary functions with n > 1 *)
-    | Prevapply loc, [x; Lapply(f, args, _)]
-    | Prevapply loc, [x; Levent (Lapply(f, args, _),_)] ->
+      | Prevapply loc, [x; Lapply(f, args, _)]
+      | Prevapply loc, [x; Levent (Lapply(f, args, _),_)] ->
         Lapply(f, args@[x], loc)
-    | Prevapply loc, [x; f] -> Lapply(f, [x], loc)
+      | Prevapply loc, [x; f] -> Lapply(f, [x], loc)
 
-    (* Simplify %apply, for n-ary functions with n > 1 *)
-    | Pdirapply loc, [Lapply(f, args, _); x]
-    | Pdirapply loc, [Levent (Lapply(f, args, _),_); x] ->
+        (* Simplify %apply, for n-ary functions with n > 1 *)
+      | Pdirapply loc, [Lapply(f, args, _); x]
+      | Pdirapply loc, [Levent (Lapply(f, args, _),_); x] ->
         Lapply(f, args@[x], loc)
-    | Pdirapply loc, [f; x] -> Lapply(f, [x], loc)
+      | Pdirapply loc, [f; x] -> Lapply(f, [x], loc)
 
-    | _ -> Lprim(p, ll)
+      | _ -> Lprim(p, ll)
      end
   | Lswitch(l, sw) ->
       let new_l = simplif l
@@ -352,7 +352,7 @@ let simplify_lets lam =
   | Lconst cst -> ()
   | Lvar v ->
       use_var bv v 1
-  | Lspecialized (lam, map, ty, env) -> count bv lam
+  | Lspecialized (lam, _, _, _) -> count bv lam
   | Lapply(Lfunction(Curried, params, body), args, _)
     when optimize && List.length params = List.length args ->
       count bv (beta_reduce params body args)
@@ -502,10 +502,10 @@ let simplify_lets lam =
       with Not_found ->
         l
       end
-  | Lspecialized (Lvar v, map, ty, env) as l ->
+  | Lspecialized (Lvar v, map, ty, env) as lam ->
       begin try
         subst_array_kind map (Hashtbl.find subst v)
-      with Not_found -> l end
+      with Not_found -> lam end
   | Lspecialized (lam, map, ty, env) -> Lspecialized (simplif lam, map, ty, env)
   | Lconst cst as l -> l
   | Lapply(Lfunction(Curried, params, body), args, _)

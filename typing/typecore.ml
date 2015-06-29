@@ -1261,9 +1261,7 @@ let add_pattern_variables ?check ?check_as env =
      (fun (id, ty, name, loc, as_var) env ->
        let check = if as_var then check_as else check in
        Env.add_value ?check id
-         {val_type = ty;
-          val_kind = Val_reg;
-          Types.val_loc = loc;
+         {val_type = ty; val_kind = Val_reg; Types.val_loc = loc;
           val_attributes = [];
           val_tvars = [];
          } env
@@ -1306,12 +1304,11 @@ let type_class_arg_pattern cl_num val_env met_env l spat =
            else Warnings.Unused_var_strict s in
          let id' = Ident.create (Ident.name id) in
          ((id', name, id, ty)::pv,
-          Env.add_value id'
-            {val_type = ty;
-             val_kind = Val_ivar (Immutable, cl_num);
-             val_attributes = [];
-             Types.val_loc = loc;
-             val_tvars = []} ~check
+          Env.add_value id' {val_type = ty;
+                             val_kind = Val_ivar (Immutable, cl_num);
+                             val_attributes = [];
+                             Types.val_loc = loc;
+                             val_tvars = []} ~check
             env))
       !pattern_variables ([], met_env)
   in
@@ -1334,28 +1331,24 @@ let type_self_pattern cl_num privty val_env met_env par_env spat =
   pattern_variables := [];
   let (val_env, met_env, par_env) =
     List.fold_right
-      (fun (id, ty, name, loc, as_var)
-        (val_env, met_env, par_env) ->
-         (Env.add_value id
-            {val_type = ty;
-             val_kind = Val_unbound;
-             val_attributes = [];
-             Types.val_loc = loc;
-             val_tvars = []} val_env,
-          Env.add_value id
-            { val_type = ty;
-              val_kind = Val_self (meths, vars, cl_num, privty);
-              val_attributes = [];
-              Types.val_loc = loc;
-              val_tvars = []}
+      (fun (id, ty, name, loc, as_var) (val_env, met_env, par_env) ->
+         (Env.add_value id {val_type = ty;
+                            val_kind = Val_unbound;
+                            val_attributes = [];
+                            Types.val_loc = loc;
+                            val_tvars = []} val_env,
+          Env.add_value id {val_type = ty;
+                            val_kind = Val_self (meths, vars, cl_num, privty);
+                            val_attributes = [];
+                            Types.val_loc = loc;
+                            val_tvars = []}
             ~check:(fun s -> if as_var then Warnings.Unused_var s
                              else Warnings.Unused_var_strict s)
             met_env,
-          Env.add_value id
-            {val_type = ty; val_kind = Val_unbound;
-             val_attributes = [];
-             Types.val_loc = loc;
-             val_tvars = []} par_env))
+          Env.add_value id {val_type = ty; val_kind = Val_unbound;
+                            val_attributes = [];
+                            Types.val_loc = loc;
+                            val_tvars = []} par_env))
       pv (val_env, met_env, par_env)
   in
   (pat, meths, vars, val_env, met_env, par_env)
@@ -1619,8 +1612,7 @@ let create_package_type loc env (p, l) =
        Exp.letmodule ~loc:sexp.pexp_loc
          name
          (Mod.unpack ~loc
-            (Exp.ident ~loc:name.loc
-               (mkloc (Longident.Lident name.txt) name.loc)))
+            (Exp.ident ~loc:name.loc (mkloc (Longident.Lident name.txt) name.loc)))
          sexp
      )
     sexp unpacks
@@ -1856,7 +1848,7 @@ and type_expect_ ?in_function env sexp ty_expected =
         exp_loc = loc; exp_extra = [];
         exp_type = body.exp_type;
         exp_attributes = sexp.pexp_attributes;
-        exp_env = (* new_ *) env } (* XXX : change env to new_env here *)
+        exp_env = new_env } (* XXX : change env to new_env here *)
   | Pexp_fun (l, Some default, spat, sexp) ->
       assert(is_optional l); (* default allowed only with optional argument *)
       let open Ast_helper in
