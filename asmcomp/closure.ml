@@ -778,9 +778,9 @@ let direct_apply fundesc funct ufunct uargs =
     if fundesc.fun_closed then uargs else uargs @ [ufunct] in
   let app =
     match ufunct, fundesc.fun_inline with
-    | Uspecialized (ulam, _, sp, env), Some (params, body, Some (ty, typrms))  ->
+    | Uspecialized (ulam, _, mono, env), Some (params, body, Some (poly, typrms))  ->
         begin try
-          let map = Translcore.make_map env sp typrms ty in
+          let map = Translcore.make_map env mono (typrms, poly) in
           let body = subst_array_kind map body in
           bind_params fundesc.fun_float_const_prop params app_args body
         (* XXX : why need exception hadling ? *)
@@ -924,8 +924,8 @@ let rec close fenv cenv = function
       in
       make_const (transl cst)
   | Lspecialized (lam, map, ty, env) ->
-      (* `close` may not return clam Uvar and Uprim (Pfield ...)
-         Then, need to remove Uspecialized here.
+      (* `close` may not return `Uvar` and `Uprim (Pfield ...)`.
+         Then we need to remove `Uspecialized` here.
       *)
       let ulam, approx = close fenv cenv lam in
       begin match ulam with
@@ -990,14 +990,14 @@ let rec close fenv cenv = function
       let (uobj, _) = close fenv cenv obj in
       (Usend(kind, umet, uobj, close_list fenv cenv args, Debuginfo.none),
        Value_unknown)
-  | Llet(let_kind, id, lam, body) ->
+  | Llet(str, id, lam, body) ->
       let (ulam, alam) = close_named fenv cenv id lam in
-      begin match (let_kind, alam) with
+      begin match (str, alam) with
         (Variable, _) ->
           let (ubody, abody) = close fenv cenv body in
           (Ulet(id, ulam, ubody), abody)
       | (_, Value_const _)
-        when let_kind = Alias || is_pure lam ->
+        when str = Alias || is_pure lam ->
           close (Tbl.add id alam fenv) cenv body
       | (_, _) ->
           let (ubody, abody) = close (Tbl.add id alam fenv) cenv body in
@@ -1469,7 +1469,7 @@ let intro size lam =
   let id = Compilenv.make_symbol None in
   global_approx := Array.init size (fun i -> Value_global_field (id, i));
   Compilenv.set_global_approx(Value_tuple !global_approx);
-  let (ulam, _) = close Tbl.empty Tbl.empty lam in
+  let (ulam, approx) = close Tbl.empty Tbl.empty lam in
   delete_specialized ();
   if !Clflags.opaque
   then Compilenv.set_global_approx(Value_unknown)

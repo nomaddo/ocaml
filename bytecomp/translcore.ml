@@ -31,19 +31,19 @@ exception Error of Location.t * error
 
 module IntS = Set.Make(struct type t = int let compare = compare end)
 
-let make_map env specialized params sch =
+let make_map env mono (params, poly) =
   let instance = Ctype.instance_parameterized_type in
-  let specialized' = Ctype.duplicate_whole_type (Ctype.repr specialized) in
-  let params', sch' = instance params sch in
+  let mono' = Ctype.duplicate_whole_type (Ctype.repr mono) in
+  let params', poly' = instance params poly in
   try
-    Ctype.unify env sch' specialized';
+    Ctype.unify env poly' mono';
     List.map2
       (fun ty1 ty2 -> (ty1.id, Lambda.to_type_kind env (Ctype.repr ty2)))
       params params'
   with Ctype.Unify l as exn ->
     (* Format.eprintf "Unify Failure\n%a\n%a\n@." *)
     (*   Printtyp.type_expr sp *)
-    (*   Printtyp.type_expr sch; *)
+    (*   Printtyp.type_expr poly; *)
     (* List.iter (fun (s, t) -> *)
     (*   Format.eprintf "A: %a\nB: %a@." *)
     (*     Printtyp.raw_type_expr s Printtyp.raw_type_expr t) l; *)
@@ -569,8 +569,7 @@ let rec push_defaults loc bindings cases partial =
         { exp with exp_loc = loc; exp_desc =
           Texp_match
             ({exp with exp_type = pat.pat_type; exp_desc =
-              Texp_ident (Path.Pident param, mknoloc
-                            (Longident.Lident name),
+              Texp_ident (Path.Pident param, mknoloc (Longident.Lident name),
                           {val_type = pat.pat_type; val_kind = Val_reg;
                            val_attributes = [];
                            Types.val_loc = Location.none;
@@ -648,13 +647,13 @@ let rec cut n l =
 let try_ids = Hashtbl.create 8
 
 let extract env ids =
-  let is_tvar = function Tvar _ -> true | _ -> false in
   let extract' env ids =
     List.fold_left (fun s id ->
       try
         let vb = Env.find_value (Path.Pident id) env in
-        let is = List.map (fun {desc; id} -> assert (is_tvar desc); id) vb.val_tvars in
-        List.fold_left (fun s i -> IntS.add i s) s is
+        let ids' = List.map (fun typ ->
+            assert (Btype.is_Tvar typ); typ.id) vb.val_tvars in
+        List.fold_left (fun s i -> IntS.add i s) s ids'
       with Not_found -> s
     ) IntS.empty ids in
   extract' env ids
@@ -690,18 +689,18 @@ and transl_exp0 e =
       raise(Error(e.exp_loc, Free_super_var))
   | Texp_ident(path, _, ({val_kind = Val_reg | Val_self _} as vdesc)) ->
      let lam = transl_path ~loc:e.exp_loc e.exp_env path in
-     if vdesc.val_tvars <> []
-     then try
-         let map = make_map e.exp_env e.exp_type vdesc.val_tvars vdesc.val_type in
+     if vdesc.val_tvars = [] then lam (* This ident is not polymorphic *)
+     else begin try
+         let map =
+           make_map e.exp_env e.exp_type (vdesc.val_tvars, vdesc.val_type) in
          Lspecialized (lam, map, e.exp_type, e.exp_env)
        with Ctype.Unify _ -> lam
-     else lam
+     end
   | Texp_ident _ -> fatal_error "Translcore.transl_exp: bad Texp_ident"
   | Texp_constant cst ->
       Lconst(Const_base cst)
-  | Texp_let(rec_flag, vbs, body) ->
-      transl_let body.exp_env rec_flag vbs
-        (event_before body (transl_exp body))
+  | Texp_let(rec_flag, pat_expr_list, body) ->
+      transl_let rec_flag pat_expr_list (event_before body (transl_exp body))
   | Texp_function (_, pat_expr_list, partial) ->
       let ((kind, params), body) =
         event_function e
@@ -839,10 +838,8 @@ and transl_exp0 e =
               Lconst(Const_block(0, cl))
           | Pfloatarray ->
               Lconst(Const_float_array(List.map extract_float cl))
-          | Pgenarray ->
-              raise Not_constant                (* can this really happen? *)
-          | Ptvar _ ->
-              raise Not_constant in
+          | Pgenarray | Ptvar _ ->
+              raise Not_constant in             (* can this really happen? *)
         Lprim(Pccall prim_obj_dup, [master])
       with Not_constant ->
         Lprim(Pmakearray kind, ll)
@@ -1080,31 +1077,29 @@ and transl_function loc untuplify_fn repr partial cases =
        Matching.for_function loc repr (Lvar param)
          (transl_cases cases) partial)
 
-and transl_let env rec_flag pat_expr_list body =
-  let lam =
-    match rec_flag with
-      Nonrecursive ->
-        let rec transl = function
-          [] ->
-            body
-        | {vb_pat=pat; vb_expr=expr} :: rem ->
-            Matching.for_let pat.pat_loc (transl_exp expr) pat (transl rem)
-        in transl pat_expr_list
-    | Recursive ->
-        let idlist =
-          List.map
-            (fun {vb_pat=pat} -> match pat.pat_desc with
-                Tpat_var (id,_) -> id
-              | Tpat_alias ({pat_desc=Tpat_any}, id,_) -> id
-              | _ -> raise(Error(pat.pat_loc, Illegal_letrec_pat)))
-          pat_expr_list in
-        let transl_case {vb_pat=pat; vb_expr=expr} id =
-          let lam = transl_exp expr in
-          if not (check_recursive_lambda idlist lam) then
-            raise(Error(expr.exp_loc, Illegal_letrec_expr));
-          (id, lam) in
-        Lletrec(List.map2 transl_case pat_expr_list idlist, body) in
-  lam
+and transl_let rec_flag pat_expr_list body =
+  match rec_flag with
+    Nonrecursive ->
+      let rec transl = function
+        [] ->
+          body
+      | {vb_pat=pat; vb_expr=expr} :: rem ->
+          Matching.for_let pat.pat_loc (transl_exp expr) pat (transl rem)
+      in transl pat_expr_list
+  | Recursive ->
+      let idlist =
+        List.map
+          (fun {vb_pat=pat} -> match pat.pat_desc with
+              Tpat_var (id,_) -> id
+            | Tpat_alias ({pat_desc=Tpat_any}, id,_) -> id
+            | _ -> raise(Error(pat.pat_loc, Illegal_letrec_pat)))
+        pat_expr_list in
+      let transl_case {vb_pat=pat; vb_expr=expr} id =
+        let lam = transl_exp expr in
+        if not (check_recursive_lambda idlist lam) then
+          raise(Error(expr.exp_loc, Illegal_letrec_expr));
+        (id, lam) in
+      Lletrec(List.map2 transl_case pat_expr_list idlist, body)
 
 and transl_setinstvar self var expr =
   Lprim(Parraysetu (if maybe_pointer expr then Paddrarray else Pintarray),
