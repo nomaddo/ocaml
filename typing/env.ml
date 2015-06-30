@@ -1866,9 +1866,6 @@ let report_error ppf = function
       fprintf ppf "'%s' is not a valid value identifier."
         name
 
-let typetbl : (Ident.t, (type_expr * type_expr list) option) Hashtbl.t =
-  Hashtbl.create 100
-
 let () =
   Location.register_error_of_exn
     (function

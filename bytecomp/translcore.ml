@@ -689,6 +689,9 @@ and transl_exp0 e =
       raise(Error(e.exp_loc, Free_super_var))
   | Texp_ident(path, _, ({val_kind = Val_reg | Val_self _} as vdesc)) ->
      let lam = transl_path ~loc:e.exp_loc e.exp_env path in
+     begin match lam with 
+     | Lvar _ | Lprim ((Pfield _), _) | Lprim ((Pgetglobal _), _) -> () 
+     | _ -> assert false end;
      if vdesc.val_tvars = [] then lam (* This ident is not polymorphic *)
      else begin try
          let map =

@@ -117,6 +117,8 @@ let snd3 (_,x,_) = x
 let case lhs rhs =
   {c_lhs = lhs; c_guard = None; c_rhs = rhs}
 
+let poly_funs = Hashtbl.create 100
+
 (* Upper approximation of free identifiers on the parse tree *)
 
 let iter_expression f e =
@@ -3744,9 +3746,9 @@ and type_let ?(check = fun s -> Warnings.Unused_var s)
           if TvarSet.include_gadt env vb.val_type
           then []
           else TvarSet.extract vb.val_type in
-        if tvars <> []
-        then Hashtbl.add Env.typetbl id (Some (vb.val_type, tvars))
-        else Hashtbl.add Env.typetbl id None;
+        begin
+          if tvars <> []
+          then Hashtbl.add poly_funs id (vb.val_type, tvars) end;
         Env.add_value id {vb with val_tvars = tvars} env)
       new_env
   in

@@ -778,6 +778,10 @@ let direct_apply fundesc funct ufunct uargs =
     if fundesc.fun_closed then uargs else uargs @ [ufunct] in
   let app =
     match ufunct, fundesc.fun_inline with
+    | _, None ->
+        Udirect_apply(fundesc.fun_label, app_args, Debuginfo.none)
+    | _, Some (params, body, None) -> (* inlined but not polymorphic *)
+        bind_params fundesc.fun_float_const_prop params app_args body
     | Uspecialized (ulam, _, mono, env), Some (params, body, Some (poly, typrms))  ->
         begin try
           let map = Translcore.make_map env mono (typrms, poly) in
@@ -787,12 +791,8 @@ let direct_apply fundesc funct ufunct uargs =
         with _ ->
           (* Format.printf "direct_apply1: %s@." fundesc.fun_label; *)
           bind_params fundesc.fun_float_const_prop params app_args body end
-    | _, None ->
-        Udirect_apply(fundesc.fun_label, app_args, Debuginfo.none)
-    | _, Some (params, body, None) -> (* inlined body exists, but not polymorphic *)
-        bind_params fundesc.fun_float_const_prop params app_args body
-    | _, Some (params, body, Some _) -> begin (* XXX: when enter this case ? *)
-        Format.printf "direct_apply2: %s@." fundesc.fun_label;
+    | _, Some (params, body, Some _) -> begin (* XXX: when is this case ? *)
+        Format.printf "direct_apply2: %s@.%a@." fundesc.fun_label Printclambda.clambda ufunct;
         bind_params fundesc.fun_float_const_prop params app_args body
       end
   in
@@ -1258,11 +1258,10 @@ and close_functions fenv cenv fun_defs =
     if lambda_smaller ubody
         (!Clflags.inline_threshold + n)
     then begin try
-        let o = Hashtbl.find Env.typetbl id in
-        match o with
-        | None -> fundesc.fun_inline <- Some(fun_params, ubody, None)
-        | Some ty -> fundesc.fun_inline <- Some(fun_params, ubody, Some ty)
-      with Not_found -> fundesc.fun_inline <- Some(fun_params, ubody, None) end;
+        let o = Hashtbl.find Typecore.poly_funs id in
+        fundesc.fun_inline <- Some(fun_params, ubody, Some o)
+      with Not_found ->
+        fundesc.fun_inline <- Some(fun_params, ubody, None) end;
     (f, (id, env_pos, Value_closure(fundesc, approx))) in
   (* Translate all function definitions. *)
   let clos_info_list =

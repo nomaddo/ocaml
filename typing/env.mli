@@ -261,6 +261,3 @@ val fold_cltypes:
 (** Utilities *)
 val scrape_alias: t -> module_type -> module_type
 val check_value_name: string -> Location.t -> unit
-
-(** For array_kind optimization *)
-val typetbl : (Ident.t, (type_expr * type_expr list) option) Hashtbl.t
