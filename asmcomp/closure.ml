@@ -773,28 +773,26 @@ let rec is_pure = function
 
 (* Generate a direct application *)
 
-let direct_apply fundesc funct ufunct uargs =
+let direct_apply ?mono ?env fundesc funct ufunct uargs =
   let app_args =
     if fundesc.fun_closed then uargs else uargs @ [ufunct] in
   let app =
-    match ufunct, fundesc.fun_inline with
-    | _, None ->
+    match fundesc.fun_inline with
+    | None ->
         Udirect_apply(fundesc.fun_label, app_args, Debuginfo.none)
-    | _, Some (params, body, None) -> (* inlined but not polymorphic *)
+    | Some (params, body, None) -> (* inlined but not polymorphic *)
         bind_params fundesc.fun_float_const_prop params app_args body
-    | Uspecialized (ulam, _, mono, env), Some (params, body, Some (poly, typrms))  ->
-        begin try
-          let map = Translcore.make_map env mono (typrms, poly) in
-          let body = subst_array_kind map body in
-          bind_params fundesc.fun_float_const_prop params app_args body
-        (* XXX : why need exception hadling ? *)
-        with _ ->
-          (* Format.printf "direct_apply1: %s@." fundesc.fun_label; *)
-          bind_params fundesc.fun_float_const_prop params app_args body end
-    | _, Some (params, body, Some _) -> begin (* XXX: when is this case ? *)
-        Format.printf "direct_apply2: %s@.%a@." fundesc.fun_label Printclambda.clambda ufunct;
-        bind_params fundesc.fun_float_const_prop params app_args body
-      end
+    | Some (params, body, Some (poly, tys)) ->
+        begin match mono, env with
+        | Some mono, Some env -> begin
+            let map = Translcore.make_map env mono (tys, poly) in
+            bind_params fundesc.fun_float_const_prop params app_args body
+            |> subst_array_kind map
+          end
+        | _ ->
+            Format.printf "direct_apply: %s\n%a@." fundesc.fun_label Printclambda.clambda ufunct;
+            bind_params fundesc.fun_float_const_prop params app_args body
+        end
   in
   (* If ufunct can contain side-effects or function definitions,
      we must make sure that it is evaluated exactly once.
@@ -923,19 +921,56 @@ let rec close fenv cenv = function
         | Const_base(Const_nativeint x) -> str (Uconst_nativeint x)
       in
       make_const (transl cst)
-  | Lspecialized (lam, map, ty, env) ->
-      (* `close` may not return `Uvar` and `Uprim (Pfield ...)`.
-         Then we need to remove `Uspecialized` here.
-      *)
-      let ulam, approx = close fenv cenv lam in
-      begin match ulam with
-      | Uvar _ | Uprim ((Pfield _), _, _) | Uprim ((Pgetglobal _), _, _) ->
-          (Uspecialized (ulam, map, ty, env), approx)
-      | _ -> (ulam, approx)
-      end
+  | Lspecialized (lam, map, ty, env) -> close fenv cenv lam
   | Lfunction(kind, params, body) as funct ->
       close_one_function fenv cenv (Ident.create "fun") funct
+  | Lapply(Lspecialized(lam, _, mono, env), args, loc) ->
+      let nargs = List.length args in
+      begin match (close fenv cenv lam, close_list fenv cenv args) with
+        ((ufunct, Value_closure(fundesc, approx_res)),
+         [Uprim(Pmakeblock(_, _), uargs, _)])
+        when List.length uargs = - fundesc.fun_arity ->
+          let app = direct_apply ~mono ~env fundesc lam ufunct uargs in
+          (app, strengthen_approx app approx_res)
+      | ((ufunct, Value_closure(fundesc, approx_res)), uargs)
+        when nargs = fundesc.fun_arity ->
+          let app = direct_apply ~mono ~env fundesc lam ufunct uargs in
+          (app, strengthen_approx app approx_res)
 
+      | ((ufunct, Value_closure(fundesc, approx_res)), uargs)
+          when nargs < fundesc.fun_arity ->
+        let first_args = List.map (fun arg ->
+          (Ident.create "arg", arg) ) uargs in
+        let final_args =
+          Array.to_list (Array.init (fundesc.fun_arity - nargs)
+                                    (fun _ -> Ident.create "arg")) in
+        let rec iter args body =
+          match args with
+              [] -> body
+            | (arg1, arg2) :: args ->
+              iter args
+                (Ulet ( arg1, arg2, body))
+        in
+        let internal_args =
+          (List.map (fun (arg1, arg2) -> Lvar arg1) first_args)
+          @ (List.map (fun arg -> Lvar arg ) final_args)
+        in
+        let (new_fun, approx) = close fenv cenv
+          (Lfunction(
+            Curried, final_args, Lapply(lam, internal_args, loc)))
+        in
+        let new_fun = iter first_args new_fun in
+        (new_fun, approx)
+
+      | ((ufunct, Value_closure(fundesc, approx_res)), uargs)
+        when fundesc.fun_arity > 0 && nargs > fundesc.fun_arity ->
+          let (first_args, rem_args) = split_list fundesc.fun_arity uargs in
+          (Ugeneric_apply(direct_apply ~mono ~env fundesc lam ufunct first_args,
+                          rem_args, Debuginfo.none),
+           Value_unknown)
+      | ((ufunct, _), uargs) ->
+          (Ugeneric_apply(ufunct, uargs, Debuginfo.none), Value_unknown)
+      end
     (* We convert [f a] to [let a' = a in fun b c -> f a' b c]
        when fun_arity > nargs *)
   | Lapply(funct, args, loc) ->
