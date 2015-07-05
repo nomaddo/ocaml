@@ -105,7 +105,7 @@ let compile_implementation ?toplevel prefixname ppf (size, lam) =
     then prefixname ^ ext_asm
     else Filename.temp_file "camlasm" ext_asm in
   let oc = open_out asmfile in
-  begin try
+  begin (* try *)
     Emitaux.output_channel := oc;
     Emit.begin_assembly();
     Closure.intro size lam
@@ -128,10 +128,10 @@ let compile_implementation ?toplevel prefixname ppf (size, lam) =
 
     Emit.end_assembly();
     close_out oc
-  with x ->
-    close_out oc;
-    if !keep_asm_file then () else remove_file asmfile;
-    raise x
+  (* with x -> *)
+  (*   close_out oc; *)
+  (*   if !keep_asm_file then () else remove_file asmfile; *)
+  (*   raise x *)
   end;
   if Proc.assemble_file asmfile (prefixname ^ ext_obj) <> 0
   then raise(Error(Assembler_error asmfile));
