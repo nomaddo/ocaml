@@ -790,7 +790,7 @@ let direct_apply ?mono ?env fundesc funct ufunct uargs =
             |> subst_array_kind map
           end
         | _ ->
-            Format.printf "direct_apply: %s\n%a@." fundesc.fun_label Printclambda.clambda ufunct;
+            Format.printf "direct_apply: %s\n%a@." fundesc.fun_label Printlambda.lambda funct;
             bind_params fundesc.fun_float_const_prop params app_args body
         end
   in

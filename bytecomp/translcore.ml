@@ -32,21 +32,20 @@ exception Error of Location.t * error
 module IntS = Set.Make(struct type t = int let compare = compare end)
 
 let make_map env mono (params, poly) =
-  let instance = Ctype.instance_parameterized_type in
   let mono' = Ctype.duplicate_whole_type (Ctype.repr mono) in
-  let params', poly' = instance params poly in
+  let params', poly' = Ctype.instance_parameterized_type params poly in
   try
     Ctype.unify env poly' mono';
     List.map2
       (fun ty1 ty2 -> (ty1.id, Lambda.to_type_kind env (Ctype.repr ty2)))
       params params'
   with Ctype.Unify l as exn ->
-    (* Format.eprintf "Unify Failure\n%a\n%a\n@." *)
-    (*   Printtyp.type_expr sp *)
-    (*   Printtyp.type_expr poly; *)
-    (* List.iter (fun (s, t) -> *)
-    (*   Format.eprintf "A: %a\nB: %a@." *)
-    (*     Printtyp.raw_type_expr s Printtyp.raw_type_expr t) l; *)
+    Format.eprintf "Unify Failure\n%a\n%a\n@."
+      Printtyp.type_expr mono
+      Printtyp.type_expr poly;
+    List.iter (fun (s, t) ->
+      Format.eprintf "A: %a\nB: %a@."
+        Printtyp.raw_type_expr s Printtyp.raw_type_expr t) l;
     raise exn
 
 (* Forward declaration -- to be filled in by Translmod.transl_module *)
@@ -689,8 +688,8 @@ and transl_exp0 e =
       raise(Error(e.exp_loc, Free_super_var))
   | Texp_ident(path, _, ({val_kind = Val_reg | Val_self _} as vdesc)) ->
      let lam = transl_path ~loc:e.exp_loc e.exp_env path in
-     begin match lam with 
-     | Lvar _ | Lprim ((Pfield _), _) | Lprim ((Pgetglobal _), _) -> () 
+     begin match lam with
+     | Lvar _ | Lprim ((Pfield _), _) | Lprim ((Pgetglobal _), _) -> ()
      | _ -> assert false end;
      if vdesc.val_tvars = [] then lam (* This ident is not polymorphic *)
      else begin try
