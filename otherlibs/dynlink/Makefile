@@ -27,7 +27,7 @@ INCLUDES=-I ../../utils -I ../../typing -I ../../bytecomp -I ../../asmcomp
 COMPFLAGS=-w +33..39 -warn-error A -bin-annot -g -safe-string \
           -I ../../stdlib $(INCLUDES)
 
-OBJS=dynlinkaux.cmo dynlink.cmo
+OBJS=../../typing/inner_map.cmo dynlinkaux.cmo dynlink.cmo
 
 COMPILEROBJS=\
   ../../utils/misc.cmo ../../utils/config.cmo ../../utils/clflags.cmo \
@@ -39,7 +39,7 @@ COMPILEROBJS=\
   ../../parsing/ast_mapper.cmo \
   ../../typing/ident.cmo ../../typing/path.cmo \
   ../../typing/primitive.cmo ../../typing/types.cmo \
-  ../../typing/btype.cmo ../../typing/subst.cmo ../../typing/predef.cmo \
+  ../../typing/btype.cmo ../../typing/inner_map.cmo ../../typing/subst.cmo ../../typing/predef.cmo \
   ../../typing/datarepr.cmo ../../typing/cmi_format.cmo ../../typing/env.cmo \
   ../../typing/ctype.cmo ../../typing/oprint.cmo ../../typing/printtyp.cmo \
   ../../bytecomp/lambda.cmo ../../bytecomp/instruct.cmo \

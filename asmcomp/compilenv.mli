@@ -45,6 +45,7 @@ val set_global_approx: Clambda.value_approximation -> unit
 val record_global_approx_toplevel: unit -> unit
         (* Record the current approximation for the current toplevel phrase *)
 
+val get_global_info: Ident.t -> Cmx_format.unit_infos option
 
 val need_curry_fun: int -> unit
 val need_apply_fun: int -> unit

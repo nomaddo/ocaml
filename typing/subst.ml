@@ -114,6 +114,7 @@ let rec typexp s ty =
           if s.for_saving then newpersty (norm desc)
           else newty2 ty.level desc
         in
+        Inner_map.add ty'.id ty.id;
         save_desc ty desc; ty.desc <- Tsubst ty'; ty'
       else ty
   | Tsubst ty ->
@@ -309,7 +310,7 @@ let free_variables = ref (fun _ -> failwith "undefined free_variables")
 let value_description s descr =
   let ty = type_expr s descr.val_type in
   let tvars = !free_variables ty in
-  { val_type = type_expr s descr.val_type;
+  { val_type = ty;
     val_kind = descr.val_kind;
     val_loc = loc s descr.val_loc;
     val_attributes = attrs s descr.val_attributes;

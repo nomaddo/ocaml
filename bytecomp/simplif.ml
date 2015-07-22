@@ -23,8 +23,8 @@ exception Real_reference
 let rec eliminate_ref id = function
     Lvar v as lam ->
       if Ident.same v id then raise Real_reference else lam
-  | Lspecialized (lam, map, ty, env) ->
-      Lspecialized (eliminate_ref id lam, map, ty, env)
+  | Lspecialized (lam, kind_map, inner_map) ->
+      Lspecialized (eliminate_ref id lam, kind_map, inner_map)
   | Lconst cst as lam -> lam
   | Lapply(e1, el, loc) ->
       Lapply(eliminate_ref id e1, List.map (eliminate_ref id) el, loc)
@@ -108,7 +108,7 @@ let simplify_exits lam =
 
   let rec count = function
   | (Lvar _| Lconst _) -> ()
-  | Lspecialized (lam, _, _, _) -> count lam
+  | Lspecialized (lam, _, _) -> count lam
   | Lapply(l1, ll, _) -> count l1; List.iter count ll
   | Lfunction(kind, params, l) -> count l
   | Llet(str, v, l1, l2) ->
@@ -196,7 +196,7 @@ let simplify_exits lam =
 
   let rec simplif = function
   | (Lvar _|Lconst _) as l -> l
-  | Lspecialized (lam, map, ty, env) -> Lspecialized (simplif lam, map, ty, env)
+  | Lspecialized (lam, kind_map, inner_map) -> Lspecialized (simplif lam, kind_map, inner_map)
   | Lapply(l1, ll, loc) -> Lapply(simplif l1, List.map simplif ll, loc)
   | Lfunction(kind, params, l) -> Lfunction(kind, params, simplif l)
   | Llet(kind, v, l1, l2) -> Llet(kind, v, simplif l1, simplif l2)
@@ -352,7 +352,7 @@ let simplify_lets lam =
   | Lconst cst -> ()
   | Lvar v ->
       use_var bv v 1
-  | Lspecialized (lam, _, _, _) -> count bv lam
+  | Lspecialized (lam, _, _) -> count bv lam
   | Lapply(Lfunction(Curried, params, body), args, _)
     when optimize && List.length params = List.length args ->
       count bv (beta_reduce params body args)
@@ -446,7 +446,7 @@ let simplify_lets lam =
       | Some e -> Some (subst e) in
     match lam with
       Lvar _ as l -> l
-    | Lspecialized (lam, map, ty, env) -> Lspecialized (subst lam, map, ty, env)
+    | Lspecialized (lam, kind_map, inner_map) -> Lspecialized (subst lam, kind_map, inner_map)
     | Lconst _ as l -> l
     | Lapply(fn, args, loc) -> Lapply(subst fn, List.map subst args, loc)
     | Lfunction(kind, params, body) -> Lfunction(kind, params, subst body)
@@ -502,11 +502,11 @@ let simplify_lets lam =
       with Not_found ->
         l
       end
-  | Lspecialized (Lvar v, map, ty, env) as lam ->
+  | Lspecialized (Lvar v, kind_map, inner_map) as lam ->
       begin try
-        subst_array_kind map (Hashtbl.find subst v)
+        subst_array_kind kind_map (Hashtbl.find subst v)
       with Not_found -> lam end
-  | Lspecialized (lam, map, ty, env) -> Lspecialized (simplif lam, map, ty, env)
+  | Lspecialized (lam, kind_map, inner_map) -> Lspecialized (simplif lam, kind_map, inner_map)
   | Lconst cst as l -> l
   | Lapply(Lfunction(Curried, params, body), args, _)
     when optimize && List.length params = List.length args ->
@@ -593,7 +593,7 @@ let rec emit_tail_infos is_tail lambda =
    else Annot.Stack in
   match lambda with
   | Lvar _ -> ()
-  | Lspecialized (lam, _, _, _) -> emit_tail_infos is_tail lam
+  | Lspecialized (lam, _, _) -> emit_tail_infos is_tail lam
   | Lconst _ -> ()
   | Lapply (func, l, loc) ->
       list_emit_tail_infos false l;

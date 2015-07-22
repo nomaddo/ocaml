@@ -59,6 +59,7 @@ let current_unit =
     ui_imports_cmi = [];
     ui_imports_cmx = [];
     ui_approx = Value_unknown;
+    ui_tvar_map = Hashtbl.create 1;
     ui_curry_fun = [];
     ui_apply_fun = [];
     ui_send_fun = [];

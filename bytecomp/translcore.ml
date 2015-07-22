@@ -40,12 +40,13 @@ let make_map env mono (params, poly) =
       (fun ty1 ty2 -> (ty1.id, Lambda.to_type_kind env (Ctype.repr ty2)))
       params params'
   with Ctype.Unify l as exn ->
-    Format.eprintf "Unify Failure\n%a\n%a\n@."
-      Printtyp.type_expr mono
-      Printtyp.type_expr poly;
-    List.iter (fun (s, t) ->
-      Format.eprintf "A: %a\nB: %a@."
-        Printtyp.raw_type_expr s Printtyp.raw_type_expr t) l;
+    Format.eprintf "Unify Failure@.";
+    (* Format.eprintf "Unify Failure\n%a\n%a\n@." *)
+    (*   Printtyp.type_expr mono *)
+    (*   Printtyp.type_expr poly; *)
+    (* List.iter (fun (s, t) -> *)
+    (*   Format.eprintf "A: %a\nB: %a@." *)
+    (*     Printtyp.raw_type_expr s Printtyp.raw_type_expr t) l; *)
     raise exn
 
 (* Forward declaration -- to be filled in by Translmod.transl_module *)
@@ -693,11 +694,10 @@ and transl_exp0 e =
      | _ -> assert false end;
      if vdesc.val_tvars = [] then lam (* This ident is not polymorphic *)
      else begin try
-         let map =
-           make_map e.exp_env e.exp_type (vdesc.val_tvars, vdesc.val_type) in
-         Lspecialized (lam, map, e.exp_type, e.exp_env)
-       with Ctype.Unify _ -> lam
-     end
+       let kind_map = make_map e.exp_env e.exp_type (vdesc.val_tvars, vdesc.val_type) in
+       let inner_map = Inner_map.get_map path in
+       Lspecialized (lam, kind_map, inner_map)
+       with _ -> lam end
   | Texp_ident _ -> fatal_error "Translcore.transl_exp: bad Texp_ident"
   | Texp_constant cst ->
       Lconst(Const_base cst)

@@ -1231,6 +1231,7 @@ let rec components_of_module env sub path mty =
 and components_of_module_maker (env, sub, path, mty) =
   (match scrape_alias env mty with
     Mty_signature sg ->
+      Inner_map.begin_create_tbl path;
       let c =
         { comp_values = Tbl.empty;
           comp_constrs = Tbl.empty;
@@ -1313,8 +1314,9 @@ and components_of_module_maker (env, sub, path, mty) =
           fcomp_subst = sub;
           fcomp_cache = Hashtbl.create 17;
           fcomp_subst_cache = Hashtbl.create 17 }
-  | Mty_ident _
-  | Mty_alias _ ->
+  | Mty_ident p
+  | Mty_alias p ->
+        Inner_map.create_alias path p;
         Structure_comps {
           comp_values = Tbl.empty;
           comp_constrs = Tbl.empty;
@@ -1674,6 +1676,7 @@ let save_signature_with_imports sg modname filename imports =
   List.iter (fun (name, crc) -> prerr_endline name) imports;*)
   Btype.cleanup_abbrev ();
   Subst.reset_for_saving ();
+  Inner_map.begin_cmi_export ();
   let sg = Subst.signature (Subst.for_saving Subst.identity) sg in
   let oc = open_out_bin filename in
   try
