@@ -839,7 +839,7 @@ let rec add_debug_info ev u =
       end
   | _ -> u
 
-let recreate_kind_map inner_map outer_map kind_map =
+let recreate_kind_map (inner_map: Inner_map.tvar_map) (outer_map: Inner_map.tvar_map) kind_map =
   List.map (fun (tvar, kind) ->
       let tvar =
         Hashtbl.find inner_map tvar
@@ -900,12 +900,10 @@ let rec close fenv cenv = function
   | Lspecialized (lam, _, _) -> close fenv cenv lam
   | Lfunction(kind, params, body) as funct ->
       close_one_function fenv cenv (Ident.create "fun") funct
-  | Lapply(Lspecialized(lam, kind_map, opt_inner_map), args, loc) ->
+  | Lapply(Lspecialized(lam, kind_map, Some inner_map), args, loc) ->
       let nargs = List.length args in
       begin match lam with
-      | Lvar _ | Lprim (Pfield _, _) -> close fenv cenv (Lapply (lam, args, loc))
-      | Lprim (Pgetglobal ident, _) ->
-      let inner_map = match opt_inner_map with None -> assert false | Some m -> m in
+      | Lprim (Pfield _, [Lprim (Pgetglobal ident, _)]) ->
       let outer_map =
         Compilenv.get_global_info ident
         |> function None -> assert false | Some unit_infos -> unit_infos.Cmx_format.ui_tvar_map in
@@ -954,7 +952,7 @@ let rec close fenv cenv = function
       | ((ufunct, _), uargs) ->
           (Ugeneric_apply(ufunct, uargs, Debuginfo.none), Value_unknown)
       end
-      | _ -> assert false
+      | _ -> close fenv cenv (Lapply (lam, args, loc))
       end
     (* We convert [f a] to [let a' = a in fun b c -> f a' b c]
        when fun_arity > nargs *)

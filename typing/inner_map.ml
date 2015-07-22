@@ -35,8 +35,7 @@ let add id1 id2 = Hashtbl.add !current_tbl id1 id2
 let get_map = function
   | Path.Pident _ -> None
   | Path.Papply _ -> raise Exit
-  | Path.Pdot (path, _, _) ->
-      match Hashtbl.find_all map_tbl path with
-      | [x] -> Some x
-      | [] -> Format.printf "get_map: not_found: %a@." print_map_tbl map_tbl; assert false
-      | _ -> Format.printf "get_map: invalid status: %a@." print_map_tbl map_tbl; assert false
+  | Path.Pdot (path, _, _) -> match Hashtbl.find_all map_tbl path with
+    | [x] -> Some x
+    | [] -> Format.printf "get_map: not_found: %a@." print_map_tbl map_tbl; assert false
+    | _ -> Format.printf "get_map: invalid status: %a@." print_map_tbl map_tbl; assert false
