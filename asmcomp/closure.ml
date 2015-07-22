@@ -903,7 +903,7 @@ let rec close fenv cenv = function
   | Lapply(Lspecialized(lam, kind_map, opt_inner_map), args, loc) ->
       let nargs = List.length args in
       begin match lam with
-      | Lvar _ | Lprim (Pfield _, _) -> close fenv cenv lam
+      | Lvar _ | Lprim (Pfield _, _) -> close fenv cenv (Lapply (lam, args, loc))
       | Lprim (Pgetglobal ident, _) ->
       let inner_map = match opt_inner_map with None -> assert false | Some m -> m in
       let outer_map =
