@@ -1594,6 +1594,7 @@ let () =
 (* Typecheck an implementation file *)
 
 let type_implementation sourcefile outputprefix modulename initial_env ast =
+  Inner_map.reset ();
   Cmt_format.clear ();
   try
   Typecore.reset_delayed_checks ();
@@ -1606,6 +1607,8 @@ let type_implementation sourcefile outputprefix modulename initial_env ast =
   let (str, sg, finalenv) =
     type_structure initial_env ast (Location.in_file sourcefile) in
   let simple_sg = simplify_signature sg in
+  Inner_map.current_tbl := (None, Hashtbl.create 100);
+  Inner_map.switch := Inner_map.Neg_to_pos;
   if !Clflags.print_types then begin
     Printtyp.wrap_printing_env initial_env
       (fun () -> fprintf std_formatter "%a@." Printtyp.signature simple_sg);

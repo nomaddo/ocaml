@@ -2,9 +2,13 @@ type tvar_map = (int, int) Hashtbl.t
 type map_tbl = (Path.t, tvar_map) Hashtbl.t
 
 let map_tbl : map_tbl = Hashtbl.create 100
-let current_tbl = ref (Hashtbl.create 100)
+let current_tbl = ref (None, Hashtbl.create 100)
 
 let print_path = ref (fun _ -> failwith "not implemented")
+
+type order = Pos_to_neg | Neg_to_pos
+
+let switch = ref Pos_to_neg
 
 (* for debug *)
 let tvar_map fmt (h: tvar_map) =
@@ -17,20 +21,35 @@ let print_map_tbl fmt (t: map_tbl) =
 let begin_create_tbl path =
   try
     let h = Hashtbl.find map_tbl path in
-    current_tbl := h
+    current_tbl := (Some path, h)
   with Not_found ->
     let new_tbl = Hashtbl.create 1000 in
     Hashtbl.add map_tbl path new_tbl;
-    current_tbl := new_tbl
+    current_tbl := (Some path, new_tbl)
 
 let begin_cmi_export () =
-  current_tbl := Hashtbl.create 100
+  current_tbl := (None, Hashtbl.create 100)
+
+let reset () =
+  Hashtbl.clear map_tbl;
+  current_tbl := (None, Hashtbl.create 100);
+  switch := Pos_to_neg
 
 let create_alias p1 p2 =
   let h = Hashtbl.find map_tbl p1 in
   Hashtbl.add map_tbl p2 h
 
-let add id1 id2 = Hashtbl.add !current_tbl id1 id2
+let add id1 id2 =
+  let tbl = snd !current_tbl in
+  match !switch with
+  | Pos_to_neg ->
+      if id1 > id2
+      then Hashtbl.add tbl id1 id2
+      else Hashtbl.add tbl id2 id1
+  | Neg_to_pos ->
+      if id1 > id2
+      then Hashtbl.add tbl id2 id1
+      else Hashtbl.add tbl id1 id2
 
 let get_map = function
   | Path.Pident _ -> None

@@ -114,7 +114,7 @@ let rec typexp s ty =
           if s.for_saving then newpersty (norm desc)
           else newty2 ty.level desc
         in
-        Inner_map.add ty'.id ty.id;
+        Inner_map.add ty.id ty'.id;
         save_desc ty desc; ty.desc <- Tsubst ty'; ty'
       else ty
   | Tsubst ty ->

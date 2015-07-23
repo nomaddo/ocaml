@@ -19,8 +19,17 @@
 
 (** {6 Generic interface} *)
 
+type ('a, 'b) t =
+  { mutable size: int;                        (* number of entries *)
+    mutable data: ('a, 'b) bucketlist array;  (* the buckets *)
+    mutable seed: int;                        (* for randomization *)
+    initial_size: int;                        (* initial array size *)
+  }
 
-type ('a, 'b) t
+and ('a, 'b) bucketlist =
+    Empty
+  | Cons of 'a * 'b * ('a, 'b) bucketlist
+
 (** The type of hash tables from type ['a] to type ['b]. *)
 
 val create : ?random:bool -> int -> ('a, 'b) t

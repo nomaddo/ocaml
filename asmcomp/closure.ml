@@ -839,7 +839,8 @@ let rec add_debug_info ev u =
       end
   | _ -> u
 
-let recreate_kind_map (inner_map: Inner_map.tvar_map) (outer_map: Inner_map.tvar_map) kind_map =
+let recreate_kind_map (inner_map: Inner_map.tvar_map)
+    (outer_map: Inner_map.tvar_map) (kind_map: Lambda.kind_map) =
   List.map (fun (tvar, kind) ->
       let tvar =
         Hashtbl.find inner_map tvar
@@ -900,7 +901,7 @@ let rec close fenv cenv = function
   | Lspecialized (lam, _, _) -> close fenv cenv lam
   | Lfunction(kind, params, body) as funct ->
       close_one_function fenv cenv (Ident.create "fun") funct
-  | Lapply(Lspecialized(lam, kind_map, Some inner_map), args, loc) ->
+  | Lapply(Lspecialized(lam, kind_map, Some inner_map), args, loc) -> (
       let nargs = List.length args in
       begin match lam with
       | Lprim (Pfield _, [Lprim (Pgetglobal ident, _)]) ->
@@ -955,7 +956,7 @@ let rec close fenv cenv = function
       | _ -> close fenv cenv (Lapply (lam, args, loc))
       end
     (* We convert [f a] to [let a' = a in fun b c -> f a' b c]
-       when fun_arity > nargs *)
+       when fun_arity > nargs *))
   | Lapply(funct, args, loc) ->
       let nargs = List.length args in
       begin match (close fenv cenv funct, close_list fenv cenv args) with
