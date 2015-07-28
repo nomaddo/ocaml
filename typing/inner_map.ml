@@ -58,3 +58,12 @@ let get_map = function
     | [x] -> Some x
     | [] -> Format.printf "get_map: not_found: %a@." print_map_tbl map_tbl; assert false
     | _ -> Format.printf "get_map: invalid status: %a@." print_map_tbl map_tbl; assert false
+
+let cmi_tbl : tvar_map option ref = ref None
+
+let add_cmi_tbl id1 id2 =
+  (if !cmi_tbl = None
+   then cmi_tbl := Some (Hashtbl.create 100));
+  match  !cmi_tbl with
+  | Some h -> Hashtbl.add h id1 id2
+  | None -> assert false

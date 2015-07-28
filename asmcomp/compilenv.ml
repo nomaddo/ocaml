@@ -230,7 +230,10 @@ let write_unit_info (info: Cmx_format.unit_infos) filename =
 
 let save_unit_info filename =
   current_unit.ui_imports_cmi <- Env.imports();
-  current_unit.ui_tvar_map <- snd !Inner_map.current_tbl;
+  current_unit.ui_tvar_map <-
+    begin match !Inner_map.cmi_tbl with
+    | None -> snd !Inner_map.current_tbl
+    | Some h -> h end;
   write_unit_info current_unit filename
 
 

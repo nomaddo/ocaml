@@ -274,6 +274,22 @@ and try_modtypes2 env cxt mty1 mty2 =
   | (_, _) ->
       assert false
 
+(* For creating tvar map *)
+
+and make_tvarmap_from_sig env item1 item2 =
+  (* item2 is intf signature *)
+  match item1, item2 with
+  | Sig_value (id1, vdesc1), Sig_value (id2, vdesc2) ->
+      Ctype.TvarSet.unify env vdesc1.val_type vdesc2.val_type
+  | Sig_module  (id1, mod1, _), Sig_module  (id2, mod2, _) ->
+      begin match mod1.md_type, mod2.md_type with
+      | Mty_signature sg1, Mty_signature sg2 ->
+          List.map2 (make_tvarmap_from_sig env) sg1 sg2
+          |> List.flatten
+      | _ -> []
+      end
+  | _ -> []
+
 (* Inclusion between signatures *)
 
 and signatures env cxt subst sig1 sig2 =
@@ -337,6 +353,8 @@ and signatures env cxt subst sig1 sig2 =
         in
         begin try
           let (id1, item1, pos1) = Tbl.find name2 comps1 in
+          make_tvarmap_from_sig env item1 item2
+          |> List.iter (fun (id1, id2) -> Inner_map.add_cmi_tbl id1 id2);
           let new_subst =
             match item2 with
               Sig_type _ ->
