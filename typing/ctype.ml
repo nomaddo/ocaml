@@ -4615,6 +4615,7 @@ and unify' t1 t2 =
     begin match d1, d2 with
     | Tunivar _, Tunivar _  | Tvar _, Tvar _ ->
         [(t1.id, t2.id)]
+    | Tvar _, _ -> []   (* XXX: intf may be more concrete *)
     | Tarrow (_, ty1, ty1', _), Tarrow (_, ty2, ty2', _) ->
         unify' ty1 ty2 @ unify' ty1' ty2'
     | Ttuple tys1, Ttuple tys2 ->
@@ -4623,34 +4624,42 @@ and unify' t1 t2 =
     | Tconstr (_, tys1, _), Tconstr (_, tys2, _) ->
         List.map2 unify' tys1 tys2
         |> List.flatten
-    | Tobject (t1, l1), Tobject (t2, l2) ->
-        let tys =
-          match !l1, !l2 with
-          | None, None -> []
-          | Some (p1, l1'), Some (p2, l2') ->
-              assert (Path.same p1 p2);
-              List.map2 unify' l1' l2' |> List.flatten
-          | _ -> assert false in
-        tys @ unify' t1 t2
-    | Tfield (_, _, t1, t1'), Tfield (_, _, t2, t2') ->
-        unify' t1 t2 @ unify' t1' t2'
+    | Tobject (t1, l1), Tobject (t2, l2) -> []
+    (* XXX: ignore objects *)
+        (* let tys = *)
+        (*   match !l1, !l2 with *)
+        (*   | None, None -> [] *)
+        (*   | Some (p1, l1'), Some (p2, l2') -> *)
+        (*       assert (Path.same p1 p2); *)
+        (*       List.map2 unify' l1' l2' |> List.flatten *)
+        (*   | _ -> assert false in *)
+        (* tys @ unify' t1 t2 *)
+
+    | Tfield (_, _, t1, t1'), Tfield (_, _, t2, t2') -> []
+    (* XXX: ignore methods *)
+        (* unify' t1 t2 @ unify' t1' t2' *)
     | Tlink ty, _ -> unify' ty t2
     | _, Tlink ty -> unify' t1 ty
-    | Tvariant r1, Tvariant r2 ->
-        unify' r1.row_more r2.row_more
-        @ (match r1.row_name , r2.row_name with
-            | None, None -> []
-            | Some (p1, l1), Some (p2, l2) ->
-                assert (Path.same p1 p2);
-                List.map2 unify' l1 l2 |> List.flatten
-            | _ -> assert false
-          )
+    | Tvariant _, _ -> []
+    | _, Tvariant _ -> []
+    (* XXX: ignore polymorphic variants *)
+
+    (* | Tvariant r1, Tvariant r2 -> *)
+    (*     unify' r1.row_more r2.row_more *)
+    (*     @ (match r1.row_name , r2.row_name with *)
+    (*         | None, None -> [] *)
+    (*         | Some (p1, l1), Some (p2, l2) -> *)
+    (*             assert (Path.same p1 p2); *)
+    (*             List.map2 unify' l1 l2 |> List.flatten *)
+    (*         | _ -> assert false *)
+    (*       ) *)
     | Tpoly (t1, tys1), Tpoly (t2, tys2) ->
         let tys = List.map2 unify' tys1 tys2 |> List.flatten in
         unify' t1 t2 @ tys
     | Tpackage (_, _, tys1), Tpackage (_, _, tys2) ->
         List.map2 unify' tys1 tys2
         |> List.flatten
+    | Tnil, Tnil -> []
     | _ -> raise (Unify [(t1, t2)])
     end
   end

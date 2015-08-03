@@ -105,11 +105,11 @@ let norm = function
   | d -> d
 
 (* Similar to [Ctype.nondep_type_rec]. *)
-let rec typexp s ty =
+let rec typexp ?(save_id=false) s ty =
   let ty = repr ty in
   match ty.desc with
     Tvar _ | Tunivar _ as desc ->
-      if s.for_saving || ty.id < 0 then
+      if (not save_id) && (s.for_saving || ty.id < 0) then
         let ty' =
           if s.for_saving then newpersty (norm desc)
           else newty2 ty.level desc
@@ -132,19 +132,19 @@ let rec typexp s ty =
     ty'.desc <-
       begin match desc with
       | Tconstr(p, tl, abbrev) ->
-          Tconstr(type_path s p, List.map (typexp s) tl, ref Mnil)
+          Tconstr(type_path s p, List.map (typexp ~save_id s) tl, ref Mnil)
       | Tpackage(p, n, tl) ->
-          Tpackage(modtype_path s p, n, List.map (typexp s) tl)
+          Tpackage(modtype_path s p, n, List.map (typexp ~save_id s) tl)
       | Tobject (t1, name) ->
-          Tobject (typexp s t1,
+          Tobject (typexp ~save_id s t1,
                  ref (match !name with
                         None -> None
                       | Some (p, tl) ->
-                          Some (type_path s p, List.map (typexp s) tl)))
+                          Some (type_path s p, List.map (typexp ~save_id s) tl)))
       | Tfield (m, k, t1, t2)
         when s == identity && ty.level < generic_level && m = dummy_method ->
           (* not allowed to lower the level of the dummy method *)
-          Tfield (m, k, t1, typexp s t2)
+          Tfield (m, k, t1, typexp ~save_id s t2)
       | Tvariant row ->
           let row = row_repr row in
           let more = repr row.row_more in
@@ -163,7 +163,7 @@ let rec typexp s ty =
               let more' =
                 match more.desc with
                   Tsubst ty -> ty
-                | Tconstr _ | Tnil -> typexp s more
+                | Tconstr _ | Tnil -> typexp ~save_id s more
                 | Tunivar _ | Tvar _ ->
                     save_desc more more.desc;
                     if s.for_saving then newpersty (norm more.desc) else
@@ -174,7 +174,7 @@ let rec typexp s ty =
               more.desc <- Tsubst(newgenty(Ttuple[more';ty']));
               (* Return a new copy *)
               let row =
-                copy_row (typexp s) true row (not dup) more' in
+                copy_row (typexp ~save_id s) true row (not dup) more' in
               match row.row_name with
                 Some (p, tl) ->
                   Tvariant {row with row_name = Some (type_path s p, tl)}
@@ -182,8 +182,8 @@ let rec typexp s ty =
                   Tvariant row
           end
       | Tfield(label, kind, t1, t2) when field_kind_repr kind = Fabsent ->
-          Tlink (typexp s t2)
-      | _ -> copy_type_desc (typexp s) desc
+          Tlink (typexp ~save_id s t2)
+      | _ -> copy_type_desc (typexp ~save_id s) desc
       end;
     ty'
 
@@ -191,8 +191,8 @@ let rec typexp s ty =
    Always make a copy of the type. If this is not done, type levels
    might not be correct.
 *)
-let type_expr s ty =
-  let ty' = typexp s ty in
+let type_expr ?(save_id=false) s ty =
+  let ty' = typexp ~save_id s ty in
   cleanup_types ();
   ty'
 
@@ -307,8 +307,8 @@ let class_type s cty =
 (* for reconstruction of val_tvars *)
 let free_variables = ref (fun _ -> failwith "undefined free_variables")
 
-let value_description s descr =
-  let ty = type_expr s descr.val_type in
+let value_description ?(save_id=false) s descr =
+  let ty = type_expr ~save_id s descr.val_type in
   let tvars = !free_variables ty in
   { val_type = ty;
     val_kind = descr.val_kind;

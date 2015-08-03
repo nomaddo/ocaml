@@ -1595,6 +1595,7 @@ let () =
 
 let type_implementation sourcefile outputprefix modulename initial_env ast =
   Cmt_format.clear ();
+  Inner_map.reset ();
   try
   Typecore.reset_delayed_checks ();
   Env.reset_required_globals ();
@@ -1606,6 +1607,7 @@ let type_implementation sourcefile outputprefix modulename initial_env ast =
   let (str, sg, finalenv) =
     type_structure initial_env ast (Location.in_file sourcefile) in
   let simple_sg = simplify_signature sg in
+  Inner_map.switch := Inner_map.Neg_to_pos;
   if !Clflags.print_types then begin
     Printtyp.wrap_printing_env initial_env
       (fun () -> fprintf std_formatter "%a@." Printtyp.signature simple_sg);
@@ -1614,6 +1616,7 @@ let type_implementation sourcefile outputprefix modulename initial_env ast =
     let sourceintf =
       Misc.chop_extension_if_any sourcefile ^ !Config.interface_suffix in
     if Sys.file_exists sourceintf then begin
+      Inner_map.begin_coercion ();
       let intf_file =
         try
           find_in_path_uncap !Config.load_path (modulename ^ ".cmi")

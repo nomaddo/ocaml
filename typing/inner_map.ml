@@ -30,11 +30,6 @@ let begin_create_tbl path =
 let begin_cmi_export () =
   current_tbl := (None, Hashtbl.create 100)
 
-let reset () =
-  Hashtbl.clear map_tbl;
-  current_tbl := (None, Hashtbl.create 100);
-  switch := Pos_to_neg
-
 let create_alias p1 p2 =
   let h = Hashtbl.find map_tbl p1 in
   Hashtbl.add map_tbl p2 h
@@ -60,10 +55,16 @@ let get_map = function
     | _ -> Format.printf "get_map: invalid status: %a@." print_map_tbl map_tbl; assert false
 
 let cmi_tbl : tvar_map option ref = ref None
+let begin_coercion () =
+  cmi_tbl := Some (Hashtbl.create 10)
 
 let add_cmi_tbl id1 id2 =
-  (if !cmi_tbl = None
-   then cmi_tbl := Some (Hashtbl.create 100));
-  match  !cmi_tbl with
-  | Some h -> Hashtbl.add h id1 id2
+  match !cmi_tbl with
+  | Some h -> Hashtbl.add h id2 id1
   | None -> assert false
+
+let reset () =
+  Hashtbl.clear map_tbl;
+  current_tbl := (None, Hashtbl.create 100);
+  switch := Pos_to_neg;
+  cmi_tbl := None

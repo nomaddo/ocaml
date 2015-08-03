@@ -48,11 +48,24 @@ exception Error of error list
    i.e. that x1 is the type of an implementation that fulfills the
    specification x2. If not, Error is raised with a backtrace of the error. *)
 
+(* For creating tvar map *)
+
+let make_tvarmap_from_sig env vd1 vd2 =
+  (* vd2 is intf signature *)
+  Ctype.TvarSet.unify env vd1.val_type vd2.val_type
+
+
 (* Inclusion between value descriptions *)
 
 let value_descriptions env cxt subst id vd1 vd2 =
   Cmt_format.record_value_dependency vd1 vd2;
   Env.mark_value_used env (Ident.name id) vd1;
+  begin match !Inner_map.cmi_tbl with
+  | None -> ()
+  | Some _ ->
+      let vd = Subst.value_description ~save_id:true subst vd2 in
+      let map = make_tvarmap_from_sig env vd1 vd in
+      List.iter (fun (id1, id2) -> Inner_map.add_cmi_tbl id1 id2) map end;
   let vd2 = Subst.value_description subst vd2 in
   try
     Includecore.value_descriptions env vd1 vd2
@@ -274,22 +287,6 @@ and try_modtypes2 env cxt mty1 mty2 =
   | (_, _) ->
       assert false
 
-(* For creating tvar map *)
-
-and make_tvarmap_from_sig env item1 item2 =
-  (* item2 is intf signature *)
-  match item1, item2 with
-  | Sig_value (id1, vdesc1), Sig_value (id2, vdesc2) ->
-      Ctype.TvarSet.unify env vdesc1.val_type vdesc2.val_type
-  | Sig_module  (id1, mod1, _), Sig_module  (id2, mod2, _) ->
-      begin match mod1.md_type, mod2.md_type with
-      | Mty_signature sg1, Mty_signature sg2 ->
-          List.map2 (make_tvarmap_from_sig env) sg1 sg2
-          |> List.flatten
-      | _ -> []
-      end
-  | _ -> []
-
 (* Inclusion between signatures *)
 
 and signatures env cxt subst sig1 sig2 =
@@ -353,8 +350,6 @@ and signatures env cxt subst sig1 sig2 =
         in
         begin try
           let (id1, item1, pos1) = Tbl.find name2 comps1 in
-          make_tvarmap_from_sig env item1 item2
-          |> List.iter (fun (id1, id2) -> Inner_map.add_cmi_tbl id1 id2);
           let new_subst =
             match item2 with
               Sig_type _ ->

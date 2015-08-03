@@ -39,9 +39,9 @@ val reset_for_saving: unit -> unit
 val module_path: t -> Path.t -> Path.t
 val type_path: t -> Path.t -> Path.t
 
-val type_expr: t -> type_expr -> type_expr
+val type_expr: ?save_id: bool -> t -> type_expr -> type_expr
 val class_type: t -> class_type -> class_type
-val value_description: t -> value_description -> value_description
+val value_description: ?save_id: bool -> t -> value_description -> value_description
 val type_declaration: t -> type_declaration -> type_declaration
 val extension_constructor:
         t -> extension_constructor -> extension_constructor
@@ -51,7 +51,7 @@ val modtype: t -> module_type -> module_type
 val signature: t -> signature -> signature
 val modtype_declaration: t -> modtype_declaration -> modtype_declaration
 val module_declaration: t -> module_declaration -> module_declaration
-val typexp : t -> Types.type_expr -> Types.type_expr
+val typexp : ?save_id: bool -> t -> Types.type_expr -> Types.type_expr
 val class_signature: t -> class_signature -> class_signature
 
 (* Composition of substitutions:

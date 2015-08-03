@@ -762,7 +762,7 @@ let direct_apply ?map fundesc funct ufunct uargs =
         bind_params fundesc.fun_float_const_prop params app_args body
     | Some(params, body), Some map ->
         bind_params fundesc.fun_float_const_prop params app_args body
-        |> subst_array_kind map in
+        |> subst_array_kind (Lazy.force map) in
   (* If ufunct can contain side-effects or function definitions,
      we must make sure that it is evaluated exactly once.
      If the function is not closed, we evaluate ufunct as part of the
@@ -842,10 +842,16 @@ let rec add_debug_info ev u =
 let recreate_kind_map (inner_map: Inner_map.tvar_map)
     (outer_map: Inner_map.tvar_map) (kind_map: Lambda.kind_map) =
   List.map (fun (tvar, kind) ->
-      let tvar =
-        Hashtbl.find inner_map tvar
-        |> Hashtbl.find outer_map in
-      (tvar, kind)) kind_map
+      try
+        let tvar =
+          Hashtbl.find inner_map tvar
+          |> Hashtbl.find outer_map in
+        (tvar, kind)
+      with Not_found -> begin
+          Format.printf "%d:\n%a@.%a@." tvar
+            Inner_map.tvar_map inner_map Inner_map.tvar_map outer_map;
+          assert false
+        end) kind_map
 
 (* Uncurry an expression and explicitate closures.
    Also return the approximation of the expression.
@@ -908,7 +914,7 @@ let rec close fenv cenv = function
       let outer_map =
         Compilenv.get_global_info ident
         |> function None -> assert false | Some unit_infos -> unit_infos.Cmx_format.ui_tvar_map in
-      let kind_map = recreate_kind_map inner_map outer_map kind_map in
+      let kind_map = lazy (recreate_kind_map inner_map outer_map kind_map) in
       begin match (close fenv cenv lam, close_list fenv cenv args) with
         ((ufunct, Value_closure(fundesc, approx_res)),
          [Uprim(Pmakeblock(_, _), uargs, _)])
