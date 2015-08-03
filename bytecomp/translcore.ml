@@ -31,6 +31,67 @@ exception Error of Location.t * error
 
 module IntS = Set.Make(struct type t = int let compare = compare end)
 
+let rec open_mod env t =
+  Env.find_module t env
+  |> fun mod_decl -> match mod_decl.md_type with
+  | Mty_ident p -> open_mod env p
+  | Mty_signature sg -> Env.open_signature Asttypes.Override t sg env
+  | Mty_functor (id, mt1, mt2) -> assert false
+  | Mty_alias p -> open_mod env p
+
+let rec ignore_dot env path = match path with
+  | Path.Pident _ -> path
+  | Path.Pdot (t, str, _) ->
+      let new_env = open_mod env t in
+      Env.lookup_type (Longident.Lident str) new_env |> fst
+  | Path.Papply (t1, t2) -> Path.Papply (ignore_dot env t1, ignore_dot env t2)
+
+let rec ignore_mod env ty =
+  let open Types in
+  let desc = match ty.desc with
+  | Tvar _ -> ty.desc
+  | Tarrow (label, t1, t2, com) ->
+      Tarrow (label, ignore_mod env t1, ignore_mod env t2, com)
+  | Ttuple tys -> Ttuple (List.map (ignore_mod env) tys)
+  | Tconstr (path, tys, abbrev_memo) ->
+      Tconstr (ignore_dot env path, List.map (ignore_mod env) tys, abbrev_memo)
+  | Tobject (t1, opt) ->
+      let conv optref = match !optref with
+        | None -> optref
+        | Some (p, tys) ->
+            ref (Some (ignore_dot env p, List.map (ignore_mod env) tys)) in
+      Tobject (ignore_mod env t1, conv opt)
+  | Tfield (str, fkind, t1, t2) ->
+      Tfield (str, fkind, ignore_mod env t1, ignore_mod env t2)
+  | Tnil -> Tnil
+  | Tlink ty -> Tlink (ignore_mod env ty)
+  | Tsubst ty -> Tsubst (ignore_mod env ty)
+  | Tvariant desc -> Tvariant (row_desc env desc)
+  | Tunivar stropt -> ty.desc
+  | Tpoly (ty, tys) -> Tpoly (ignore_mod env ty, List.map (ignore_mod env) tys)
+  | Tpackage (p, lidents, tys) -> Tpackage (ignore_dot env p, lidents, List.map (ignore_mod env) tys)
+  in
+  {ty with desc}
+
+and row_desc env desc =
+  {desc with
+   row_fields = List.map (fun (label, rf) ->
+       (label, row_field env rf)) desc.row_fields;
+   row_more = ignore_mod env desc.row_more;
+   row_name = match desc.row_name with
+       None -> None
+     | Some (p, tys) -> Some (ignore_dot env p, List.map (ignore_mod env) tys)
+  }
+
+and row_field env = function
+  | Rpresent tyopt -> begin Rpresent (match tyopt with
+    | None -> None | Some ty -> Some (ignore_mod env ty)) end
+  | Reither (b1, tys, b2, rfoptref) ->
+      Reither (b1, List.map (ignore_mod env) tys, b2,
+               match !rfoptref with None -> rfoptref
+                                  | Some rf -> ref (Some (row_field env rf)))
+  | Rabsent as self -> self
+
 let make_map env mono (params, poly) =
   let mono' = Ctype.duplicate_whole_type (Ctype.repr mono) in
   let params', poly' = Ctype.instance_parameterized_type params poly in
@@ -39,14 +100,22 @@ let make_map env mono (params, poly) =
     List.map2
       (fun ty1 ty2 -> (ty1.id, Lambda.to_type_kind env (Ctype.repr ty2)))
       params params'
-  with Ctype.Unify l as exn ->
-    Format.eprintf "Unify Failure\n%a\n%a\n@."
-      Printtyp.type_expr mono
-      Printtyp.type_expr poly;
-    List.iter (fun (s, t) ->
-      Format.eprintf "A: %a\nB: %a@."
-        Printtyp.raw_type_expr s Printtyp.raw_type_expr t) l;
-    raise exn
+  with Ctype.Unify l (* as exn *) ->
+    (* Format.eprintf "Unify Failure\n%a\n%a\n@." *)
+    (*   Printtyp.type_expr mono *)
+    (*   Printtyp.type_expr poly; *)
+    let mono'' = ignore_mod env mono' in
+    let params'', poly'' =
+      ignore_mod env poly'
+      |> Ctype.instance_parameterized_type params in
+    Ctype.unify env poly'' mono'';
+    List.map2
+      (fun ty1 ty2 -> (ty1.id, Lambda.to_type_kind env (Ctype.repr ty2)))
+      params params''
+    (* List.iter (fun (s, t) -> *)
+    (*   Format.eprintf "A: %a\nB: %a@." *)
+    (*     Printtyp.raw_type_expr s Printtyp.raw_type_expr t) l; *)
+    (* raise exn *)
 
 (* Forward declaration -- to be filled in by Translmod.transl_module *)
 let transl_module =
