@@ -234,6 +234,8 @@ let save_unit_info filename =
     begin match !Inner_map.cmi_tbl with
     | None -> snd !Inner_map.current_tbl
     | Some h -> h end;
+  Format.printf "save as outer_map:\n%a@." Inner_map.tvar_map current_unit.ui_tvar_map;
+  Format.printf "inlined body\n%a@." Printclambda.inlined_bodies current_unit.ui_approx;
   write_unit_info current_unit filename
 
 

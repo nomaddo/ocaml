@@ -762,7 +762,7 @@ let direct_apply ?map fundesc funct ufunct uargs =
         bind_params fundesc.fun_float_const_prop params app_args body
     | Some(params, body), Some map ->
         bind_params fundesc.fun_float_const_prop params app_args body
-        |> subst_array_kind (Lazy.force map) in
+        |> subst_array_kind map in
   (* If ufunct can contain side-effects or function definitions,
      we must make sure that it is evaluated exactly once.
      If the function is not closed, we evaluate ufunct as part of the
@@ -844,11 +844,11 @@ let recreate_kind_map (inner_map: Inner_map.tvar_map)
   List.map (fun (tvar, kind) ->
       try
         let tvar =
-          Hashtbl.find inner_map tvar
-          |> Hashtbl.find outer_map in
+          Hashtbl.find inner_map tvar |> Hashtbl.find outer_map in
+        Format.printf "recreate successful!@.";
         (tvar, kind)
       with Not_found -> begin
-          Format.printf "%d:\n%a@.%a@." tvar
+          Format.printf "%d:\ninner_map:\n%a@.outer_map:\n%a@." tvar
             Inner_map.tvar_map inner_map Inner_map.tvar_map outer_map;
           assert false
         end) kind_map
@@ -914,16 +914,16 @@ let rec close fenv cenv = function
       let outer_map =
         Compilenv.get_global_info ident
         |> function None -> assert false | Some unit_infos -> unit_infos.Cmx_format.ui_tvar_map in
-      let kind_map = lazy (recreate_kind_map inner_map outer_map kind_map) in
+      let kind_map' = (recreate_kind_map inner_map outer_map kind_map) in
       begin match (close fenv cenv lam, close_list fenv cenv args) with
         ((ufunct, Value_closure(fundesc, approx_res)),
          [Uprim(Pmakeblock(_, _), uargs, _)])
         when List.length uargs = - fundesc.fun_arity ->
-          let app = direct_apply ~map:kind_map fundesc lam ufunct uargs in
+          let app = direct_apply ~map:kind_map' fundesc lam ufunct uargs in
           (app, strengthen_approx app approx_res)
       | ((ufunct, Value_closure(fundesc, approx_res)), uargs)
         when nargs = fundesc.fun_arity ->
-          let app = direct_apply ~map:kind_map fundesc lam ufunct uargs in
+          let app = direct_apply ~map:kind_map' fundesc lam ufunct uargs in
           (app, strengthen_approx app approx_res)
       | ((ufunct, Value_closure(fundesc, approx_res)), uargs)
           when nargs < fundesc.fun_arity ->
@@ -953,7 +953,7 @@ let rec close fenv cenv = function
       | ((ufunct, Value_closure(fundesc, approx_res)), uargs)
         when fundesc.fun_arity > 0 && nargs > fundesc.fun_arity ->
           let (first_args, rem_args) = split_list fundesc.fun_arity uargs in
-          (Ugeneric_apply(direct_apply ~map:kind_map fundesc lam ufunct first_args,
+          (Ugeneric_apply(direct_apply ~map:kind_map' fundesc lam ufunct first_args,
                           rem_args, Debuginfo.none),
            Value_unknown)
       | ((ufunct, _), uargs) ->
@@ -1435,6 +1435,7 @@ let reset () =
 (* The entry point *)
 
 let intro size lam =
+  Format.printf "%a@." Inner_map.print_map_tbl Inner_map.map_tbl;
   reset ();
   let id = Compilenv.make_symbol None in
   global_approx := Array.init size (fun i -> Value_global_field (id, i));

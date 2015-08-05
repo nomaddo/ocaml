@@ -1245,7 +1245,7 @@ and components_of_module_maker (env, sub, path, mty) =
       List.iter2 (fun item path ->
         match item with
           Sig_value(id, decl) ->
-            let decl' = Subst.value_description sub decl in
+            let decl' = Subst.value_description ~store_id:true sub decl in
             c.comp_values <-
               Tbl.add (Ident.name id) (decl', !pos) c.comp_values;
             begin match decl.val_kind with
@@ -1677,7 +1677,7 @@ let save_signature_with_imports sg modname filename imports =
   Btype.cleanup_abbrev ();
   Subst.reset_for_saving ();
   Inner_map.begin_cmi_export ();
-  let sg = Subst.signature (Subst.for_saving Subst.identity) sg in
+  let sg = Subst.signature ~store_id:true (Subst.for_saving Subst.identity) sg in
   let oc = open_out_bin filename in
   try
     let cmi = {
