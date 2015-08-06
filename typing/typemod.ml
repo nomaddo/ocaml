@@ -69,6 +69,7 @@ let extract_sig_open env loc mty =
 
 let type_open_ ?toplevel ovf env loc lid =
   let path, md = Typetexp.find_module env lid.loc lid.txt in
+  Inner_map.begin_create_tbl path;
   let sg = extract_sig_open env lid.loc md.md_type in
   path, Env.open_signature ~loc ?toplevel ovf path sg env
 

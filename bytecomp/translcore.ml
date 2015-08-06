@@ -32,7 +32,7 @@ exception Error of Location.t * error
 module IntS = Set.Make(struct type t = int let compare = compare end)
 
 let make_map env mono (params, poly) =
-  let mono' = Ctype.duplicate_whole_type (Ctype.repr mono) in
+  let mono' = Ctype.instance env (Ctype.repr mono) in
   let params', poly' = Ctype.instance_parameterized_type params poly in
   try
     Ctype.unify env poly' mono';

@@ -636,9 +636,6 @@ let duplicate_type ty =
 let duplicate_class_type ty =
   Subst.class_type Subst.identity ty
 
-let duplicate_whole_type ty =
-  Subst.type_expr (Subst.for_saving Subst.identity) ty
-
                          (*****************************)
                          (*  Type level manipulation  *)
                          (*****************************)
