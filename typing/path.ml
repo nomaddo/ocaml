@@ -52,3 +52,8 @@ let rec last = function
   | Pident id -> Ident.name id
   | Pdot(_, s, _) -> s
   | Papply(_, p) -> last p
+
+let rec print fmt = function
+  | Pident id -> Ident.print fmt id
+  | Pdot(p, s, _) -> Format.fprintf fmt "%a.%s" print p s
+  | Papply(p1, p2) -> Format.fprintf fmt "%a(%a)" print p1 print p2

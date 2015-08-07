@@ -69,7 +69,6 @@ let extract_sig_open env loc mty =
 
 let type_open_ ?toplevel ovf env loc lid =
   let path, md = Typetexp.find_module env lid.loc lid.txt in
-  Inner_map.begin_create_tbl path;
   let sg = extract_sig_open env lid.loc md.md_type in
   path, Env.open_signature ~loc ?toplevel ovf path sg env
 
@@ -1596,7 +1595,7 @@ let () =
 
 let type_implementation sourcefile outputprefix modulename initial_env ast =
   Cmt_format.clear ();
-  Inner_map.reset ();
+  (* Inner_map.reset (); *)
   try
   Typecore.reset_delayed_checks ();
   Env.reset_required_globals ();

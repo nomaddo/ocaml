@@ -695,7 +695,7 @@ and transl_exp0 e =
      if vdesc.val_tvars = [] then lam (* This ident is not polymorphic *)
      else begin try
        let kind_map = make_map e.exp_env e.exp_type (vdesc.val_tvars, vdesc.val_type) in
-       let inner_map = Inner_map.get_map path in
+       let inner_map = try Some (Inner_map.get_map path) with Not_found -> None in
        Lspecialized (lam, kind_map, inner_map)
        with _ -> lam end
   | Texp_ident _ -> fatal_error "Translcore.transl_exp: bad Texp_ident"

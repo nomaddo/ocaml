@@ -163,7 +163,7 @@ let rec typexp ?(store_id=false) ?(save_id=false) s ty =
               let more' =
                 match more.desc with
                   Tsubst ty -> ty
-                | Tconstr _ | Tnil -> typexp s more
+                | Tconstr _ | Tnil -> typexp ~save_id ~store_id s more
                 | Tunivar _ | Tvar _ ->
                     save_desc more more.desc;
                     if s.for_saving then newpersty (norm more.desc) else
@@ -419,3 +419,9 @@ let compose s1 s2 =
     modules = merge_tbls (module_path s2) s1.modules s2.modules;
     modtypes = merge_tbls (modtype s2) s1.modtypes s2.modtypes;
     for_saving = false }
+
+let print fmt {types; modules} =
+  let ident_path_tbl = Tbl.print Ident.print Path.print in
+  Format.fprintf fmt "type: %a@. moudles: %a@. modtypes: ()):"
+    ident_path_tbl types
+    ident_path_tbl modules

@@ -1178,13 +1178,13 @@ let subst_signature sub sg =
     (fun item ->
       match item with
       | Sig_value(id, decl) ->
-          Sig_value (id, Subst.value_description sub decl)
+          Sig_value (id, Subst.value_description ~store_id:true sub decl)
       | Sig_type(id, decl, x) ->
           Sig_type(id, Subst.type_declaration sub decl, x)
       | Sig_typext(id, ext, es) ->
           Sig_typext (id, Subst.extension_constructor sub ext, es)
       | Sig_module(id, mty, x) ->
-          Sig_module(id, Subst.module_declaration sub mty,x)
+          Sig_module(id, Subst.module_declaration ~store_id:true sub mty,x)
       | Sig_modtype(id, decl) ->
           Sig_modtype(id, Subst.modtype_declaration sub decl)
       | Sig_class(id, decl, x) ->
@@ -1231,7 +1231,6 @@ let rec components_of_module env sub path mty =
 and components_of_module_maker (env, sub, path, mty) =
   (match scrape_alias env mty with
     Mty_signature sg ->
-      Inner_map.begin_create_tbl path;
       let c =
         { comp_values = Tbl.empty;
           comp_constrs = Tbl.empty;
@@ -1243,6 +1242,7 @@ and components_of_module_maker (env, sub, path, mty) =
       let env = ref env in
       let pos = ref 0 in
       List.iter2 (fun item path ->
+        Inner_map.begin_create_tbl path;
         match item with
           Sig_value(id, decl) ->
             let decl' = Subst.value_description ~store_id:true sub decl in

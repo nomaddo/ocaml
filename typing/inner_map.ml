@@ -4,8 +4,6 @@ type map_tbl = (Path.t, tvar_map) Hashtbl.t
 let map_tbl : map_tbl = Hashtbl.create 100
 let current_tbl = ref (None, Hashtbl.create 100)
 
-let print_path = ref (fun _ -> failwith "not implemented")
-
 type order = Pos_to_neg | Neg_to_pos
 
 let switch = ref Pos_to_neg
@@ -16,7 +14,7 @@ let tvar_map fmt (h: tvar_map) =
   print_endline ""
 
 let print_map_tbl fmt (t: map_tbl) =
-  Hashtbl.iter (fun k v -> Format.fprintf fmt "%a:@.%a@." !print_path k tvar_map v) t
+  Hashtbl.iter (fun k v -> Format.fprintf fmt "%a: %a@." Path.print k tvar_map v) t
 
 let begin_create_tbl path =
   try
@@ -46,13 +44,7 @@ let add id1 id2 =
       then Hashtbl.add tbl id2 id1
       else Hashtbl.add tbl id1 id2
 
-let get_map = function
-  | Path.Pident _ -> None
-  | Path.Papply _ -> raise Exit
-  | Path.Pdot (path, _, _) -> match Hashtbl.find_all map_tbl path with
-    | [x] -> Some x
-    | [] -> Format.printf "get_map: not_found: %a@." print_map_tbl map_tbl; assert false
-    | _ -> Format.printf "get_map: invalid status: %a@." print_map_tbl map_tbl; assert false
+let get_map path = Hashtbl.find map_tbl path
 
 let cmi_tbl : tvar_map option ref = ref None
 let begin_coercion () =

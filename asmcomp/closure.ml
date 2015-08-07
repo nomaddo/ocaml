@@ -914,7 +914,11 @@ let rec close fenv cenv = function
       let outer_map =
         Compilenv.get_global_info ident
         |> function None -> assert false | Some unit_infos -> unit_infos.Cmx_format.ui_tvar_map in
-      let kind_map' = (recreate_kind_map inner_map outer_map kind_map) in
+      let kind_map' = try
+          recreate_kind_map inner_map outer_map kind_map
+        with _ ->
+          Format.printf "lam: %a@." Printlambda.lambda lam;
+          [] in
       begin match (close fenv cenv lam, close_list fenv cenv args) with
         ((ufunct, Value_closure(fundesc, approx_res)),
          [Uprim(Pmakeblock(_, _), uargs, _)])

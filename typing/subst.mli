@@ -59,3 +59,5 @@ val class_signature: t -> class_signature -> class_signature
 val compose: t -> t -> t
 
 val free_variables: (type_expr -> type_expr list) ref
+
+val print : Format.formatter -> t -> unit
