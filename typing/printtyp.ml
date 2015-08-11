@@ -1510,3 +1510,11 @@ let report_ambiguous_type_error ppf env (tp0, tp0') tpl txt1 txt2 txt3 =
            @]"
           txt2 type_path_list tpl
           txt3 (type_path_expansion tp0) tp0')
+
+let env fmt env =
+  Env.fold_values (fun str path vdesc () ->
+      Format.fprintf fmt "%a: %a: %a@."
+        Path.print path
+        type_expr vdesc.val_type
+        (fun fmt -> List.iter (Format.fprintf fmt "%a " raw_type)) vdesc.val_tvars
+    ) None env ()

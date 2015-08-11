@@ -27,7 +27,7 @@ INCLUDES=-I ../../utils -I ../../typing -I ../../bytecomp -I ../../asmcomp
 COMPFLAGS=-w +33..39 -warn-error A -bin-annot -g -safe-string \
           -I ../../stdlib $(INCLUDES)
 
-OBJS=../../typing/inner_map.cmo dynlinkaux.cmo dynlink.cmo
+OBJS=dynlinkaux.cmo dynlink.cmo
 
 COMPILEROBJS=\
   ../../utils/misc.cmo ../../utils/config.cmo ../../utils/clflags.cmo \

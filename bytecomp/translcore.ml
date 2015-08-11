@@ -573,7 +573,7 @@ let rec push_defaults loc bindings cases partial =
                           {val_type = pat.pat_type; val_kind = Val_reg;
                            val_attributes = [];
                            Types.val_loc = Location.none;
-                           val_tvars = Ctype.TvarSet.extract pat.pat_type
+                           val_tvars = Ctype.TvarSet.create_tvars exp.exp_env pat.pat_type
                           })},
              cases, [], partial) }
       in

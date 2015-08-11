@@ -12,7 +12,7 @@
 
 (* The batch compiler *)
 
-(* open Misc *)
+open Misc
 open Config
 open Format
 open Typedtree
@@ -62,9 +62,10 @@ let implementation ppf sourcefile outputprefix =
   let modulename = module_of_filename ppf sourcefile outputprefix in
   Env.set_unit_name modulename;
   let env = Compmisc.initial_env() in
+  Inner_map.initialize ();
   Compilenv.reset ?packname:!Clflags.for_package modulename;
   let cmxfile = outputprefix ^ ".cmx" in
-  let _objfile = outputprefix ^ ext_obj in
+  let objfile = outputprefix ^ ext_obj in
   let comp ast =
     let (typedtree, coercion) =
       ast
@@ -86,12 +87,12 @@ let implementation ppf sourcefile outputprefix =
     Warnings.check_fatal ();
     Stypes.dump (Some (outputprefix ^ ".annot"))
   in
-  (* try *) comp (Pparse.parse_implementation ~tool_name ppf sourcefile)
-  (* with x -> *)
-  (*   Stypes.dump (Some (outputprefix ^ ".annot")); *)
-  (*   remove_file objfile; *)
-  (*   remove_file cmxfile; *)
-  (*   raise x *)
+  try comp (Pparse.parse_implementation ~tool_name ppf sourcefile)
+  with x ->
+    Stypes.dump (Some (outputprefix ^ ".annot"));
+    remove_file objfile;
+    remove_file cmxfile;
+    raise x
 
 let c_file name =
   if Ccomp.compile_file name <> 0 then exit 2

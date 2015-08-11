@@ -3742,10 +3742,7 @@ and type_let ?(check = fun s -> Warnings.Unused_var s)
     Typedtree.let_bound_idents l
     |> List.fold_left (fun env id ->
         let vb = Env.find_value (Path.Pident id) new_env in
-        let tvars =
-          if TvarSet.include_gadt env vb.val_type
-          then []
-          else TvarSet.extract vb.val_type in
+        let tvars = TvarSet.create_tvars env vb.val_type in
         begin
           if tvars <> []
           then Hashtbl.add poly_funs id (vb.val_type, tvars) end;

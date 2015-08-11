@@ -1322,7 +1322,7 @@ let transl_value_decl env loc valdecl =
     [] ->
       { val_type = ty; val_kind = Val_reg; Types.val_loc = loc;
         val_attributes = valdecl.pval_attributes;
-        val_tvars = Ctype.TvarSet.extract ty}
+        val_tvars = Ctype.TvarSet.create_tvars env ty}
   | decl ->
       let arity = Ctype.arity ty in
       let prim = Primitive.parse_declaration arity decl in
@@ -1334,7 +1334,7 @@ let transl_value_decl env loc valdecl =
       then raise(Error(valdecl.pval_type.ptyp_loc, Missing_native_external));
       { val_type = ty; val_kind = Val_prim prim; Types.val_loc = loc;
         val_attributes = valdecl.pval_attributes;
-        val_tvars = Ctype.TvarSet.extract ty}
+        val_tvars = Ctype.TvarSet.create_tvars env ty}
   in
   let (id, newenv) =
     Env.enter_value valdecl.pval_name.txt v env

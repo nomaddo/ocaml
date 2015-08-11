@@ -845,7 +845,6 @@ let recreate_kind_map (inner_map: Inner_map.tvar_map)
       try
         let tvar =
           Hashtbl.find inner_map tvar |> Hashtbl.find outer_map in
-        Format.printf "recreate successful!@.";
         (tvar, kind)
       with Not_found -> begin
           Format.printf "%d:\ninner_map:\n%a@.outer_map:\n%a@." tvar
@@ -914,11 +913,11 @@ let rec close fenv cenv = function
       let outer_map =
         Compilenv.get_global_info ident
         |> function None -> assert false | Some unit_infos -> unit_infos.Cmx_format.ui_tvar_map in
-      let kind_map' = try
+      let kind_map' = (* try *)
           recreate_kind_map inner_map outer_map kind_map
-        with _ ->
-          Format.printf "lam: %a@." Printlambda.lambda lam;
-          [] in
+        (* with _ -> *)
+        (*   Format.printf "lam: %a@." Printlambda.lambda lam; *)
+        (*   [] *) in
       begin match (close fenv cenv lam, close_list fenv cenv args) with
         ((ufunct, Value_closure(fundesc, approx_res)),
          [Uprim(Pmakeblock(_, _), uargs, _)])
@@ -1439,7 +1438,7 @@ let reset () =
 (* The entry point *)
 
 let intro size lam =
-  Format.printf "%a@." Inner_map.print_map_tbl Inner_map.map_tbl;
+  Format.printf "%a@." Inner_map.print_map_tbl !Inner_map.map_tbl;
   reset ();
   let id = Compilenv.make_symbol None in
   global_approx := Array.init size (fun i -> Value_global_field (id, i));

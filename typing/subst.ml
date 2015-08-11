@@ -167,7 +167,12 @@ let rec typexp ?(store_id=false) ?(save_id=false) s ty =
                 | Tunivar _ | Tvar _ ->
                     save_desc more more.desc;
                     if s.for_saving then newpersty (norm more.desc) else
-                    if dup && is_Tvar more then newgenty more.desc else more
+                    if dup && is_Tvar more
+                    then begin
+                      let ty' = newgenty more.desc in
+                      begin if store_id then Inner_map.add more.id ty'.id end;
+                      ty' end
+                    else more
                 | _ -> assert false
               in
               (* Register new type first for recursion *)
@@ -309,7 +314,7 @@ let free_variables = ref (fun _ -> failwith "undefined free_variables")
 
 let value_description ?(store_id=false) ?(save_id=false) s descr =
   let ty = type_expr ~store_id ~save_id s descr.val_type in
-  let tvars = !free_variables ty in
+  let tvars = if descr.val_tvars = [] then [] else !free_variables ty in
   { val_type = ty;
     val_kind = descr.val_kind;
     val_loc = loc s descr.val_loc;

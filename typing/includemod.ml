@@ -63,9 +63,9 @@ let value_descriptions env cxt subst id vd1 vd2 =
   begin match !Inner_map.cmi_tbl with
   | None -> ()
   | Some _ ->
-      let vd = Subst.value_description ~save_id:true subst vd2 in
-      let map = make_tvarmap_from_sig env vd1 vd in
-      List.iter (fun (id1, id2) -> Inner_map.add_cmi_tbl id1 id2) map end;
+      let ty = Subst.type_expr ~save_id:true subst vd2.val_type in
+      let map = Ctype.TvarSet.unify env vd1.val_type ty in
+      List.iter (fun (id1, id2) -> Inner_map.add_to_cmi id1 id2) map end;
   let vd2 = Subst.value_description subst vd2 in
   try
     Includecore.value_descriptions env vd1 vd2
