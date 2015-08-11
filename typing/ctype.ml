@@ -4581,27 +4581,34 @@ module TvarSet = struct
     | _ -> assert false
 
   let include_gadt env ty =
+    let rec iter env ty = match ty.desc with
+      | Tconstr (path, tys, abbrev) -> if is_gadt env path then raise Exit
+      | Tlink ty -> iter env ty
+      | _ -> Btype.iter_type_expr (iter env) ty in
     try
-      Btype.iter_type_expr (fun {desc} ->
-          match desc with
-          | Tconstr (path, tys, abbrev) ->
-              if is_gadt env path then raise Exit
-          | _ -> ()) ty;
-      false
+      iter env ty; false
     with Exit -> true
 
   let include_tvariant ty =
-    let is_tvariant ty = match ty.desc with
-      | Tvariant _ -> raise Exit | _ -> () in
-    try Btype.iter_type_expr is_tvariant ty; false
+    let rec is_tvariant ty = match ty.desc with
+      | Tvariant _ -> raise Exit | Tlink ty -> is_tvariant ty
+      | _ -> Btype.iter_type_expr is_tvariant ty in
+    try is_tvariant ty; false
     with Exit -> true
+
+  let include_obj ty =
+    let rec is_obj ty = match ty.desc with
+      | Tobject _ | Tfield _ -> raise Exit
+      | Tlink ty -> is_obj ty
+      | _ -> Btype.iter_type_expr is_obj ty in
+    try is_obj ty; false with Exit -> true
 
   let extract ty =
     let tvars = free_variables ty in
     List.filter (fun {level} -> generic_level = level) tvars
 
   let create_tvars env ty =
-    if include_tvariant ty || include_gadt env ty then []
+    if include_obj ty || (include_tvariant ty || include_gadt env ty) then []
     else extract ty
 
   let rec unify env t1 t2 =

@@ -1438,7 +1438,7 @@ let reset () =
 (* The entry point *)
 
 let intro size lam =
-  Format.printf "%a@." Inner_map.print_map_tbl !Inner_map.map_tbl;
+  (* Format.printf "%a@." Inner_map.print_map_tbl !Inner_map.map_tbl; *)
   reset ();
   let id = Compilenv.make_symbol None in
   global_approx := Array.init size (fun i -> Value_global_field (id, i));

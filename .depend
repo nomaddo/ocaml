@@ -757,14 +757,12 @@ asmcomp/comballoc.cmo : asmcomp/reg.cmi asmcomp/mach.cmi utils/config.cmi \
     asmcomp/arch.cmo asmcomp/comballoc.cmi
 asmcomp/comballoc.cmx : asmcomp/reg.cmx asmcomp/mach.cmx utils/config.cmx \
     asmcomp/arch.cmx asmcomp/comballoc.cmi
-asmcomp/compilenv.cmo : asmcomp/printclambda.cmi utils/misc.cmi \
-    parsing/location.cmi typing/inner_map.cmo typing/ident.cmi typing/env.cmi \
-    utils/config.cmi asmcomp/cmx_format.cmi asmcomp/clambda.cmi \
-    asmcomp/compilenv.cmi
-asmcomp/compilenv.cmx : asmcomp/printclambda.cmx utils/misc.cmx \
-    parsing/location.cmx typing/inner_map.cmx typing/ident.cmx typing/env.cmx \
-    utils/config.cmx asmcomp/cmx_format.cmi asmcomp/clambda.cmx \
-    asmcomp/compilenv.cmi
+asmcomp/compilenv.cmo : utils/misc.cmi parsing/location.cmi \
+    typing/inner_map.cmo typing/ident.cmi typing/env.cmi utils/config.cmi \
+    asmcomp/cmx_format.cmi asmcomp/clambda.cmi asmcomp/compilenv.cmi
+asmcomp/compilenv.cmx : utils/misc.cmx parsing/location.cmx \
+    typing/inner_map.cmx typing/ident.cmx typing/env.cmx utils/config.cmx \
+    asmcomp/cmx_format.cmi asmcomp/clambda.cmx asmcomp/compilenv.cmi
 asmcomp/deadcode.cmo : asmcomp/reg.cmi asmcomp/proc.cmi asmcomp/mach.cmi \
     asmcomp/deadcode.cmi
 asmcomp/deadcode.cmx : asmcomp/reg.cmx asmcomp/proc.cmx asmcomp/mach.cmx \
