@@ -59,10 +59,10 @@ let (+++) (x, y) f = (x, f y)
 
 let implementation ppf sourcefile outputprefix =
   Compmisc.init_path true;
+  Inner_map.reset ();
   let modulename = module_of_filename ppf sourcefile outputprefix in
   Env.set_unit_name modulename;
   let env = Compmisc.initial_env() in
-  Inner_map.initialize ();
   Compilenv.reset ?packname:!Clflags.for_package modulename;
   let cmxfile = outputprefix ^ ".cmx" in
   let objfile = outputprefix ^ ext_obj in

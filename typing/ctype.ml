@@ -4582,7 +4582,8 @@ module TvarSet = struct
 
   let include_gadt env ty =
     let rec iter env ty = match ty.desc with
-      | Tconstr (path, tys, abbrev) -> if is_gadt env path then raise Exit
+      | Tconstr (path, tys, abbrev) ->
+          if is_gadt env path then raise Exit else List.iter (iter env) tys
       | Tlink ty -> iter env ty
       | _ -> Btype.iter_type_expr (iter env) ty in
     try

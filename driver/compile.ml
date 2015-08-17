@@ -57,10 +57,10 @@ let (++) x f = f x
 
 let implementation ppf sourcefile outputprefix =
   Compmisc.init_path false;
+  Inner_map.reset ();
   let modulename = module_of_filename ppf sourcefile outputprefix in
   Env.set_unit_name modulename;
   let env = Compmisc.initial_env() in
-  Inner_map.initialize ();
   try
     let (typedtree, coercion) =
       Pparse.parse_implementation ~tool_name ppf sourcefile

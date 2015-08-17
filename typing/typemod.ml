@@ -1595,7 +1595,6 @@ let () =
 
 let type_implementation sourcefile outputprefix modulename initial_env ast =
   Cmt_format.clear ();
-  Inner_map.reset ();
   try
   Typecore.reset_delayed_checks ();
   Env.reset_required_globals ();

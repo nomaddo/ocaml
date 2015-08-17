@@ -10,18 +10,18 @@ let switch = ref Pos_to_neg
 
 (* for debug *)
 let tvar_map fmt (h: tvar_map) =
-  Hashtbl.iter (fun k v -> Format.fprintf fmt "(%d %d) " k v) h;
-  print_endline ""
+  Hashtbl.iter (fun k v -> Format.fprintf fmt "(%d %d) " k v) h
 
 let print_map_tbl fmt (t: map_tbl) =
-  Hashtbl.iter (fun k v -> Format.fprintf fmt "%a: %a@." Path.print k tvar_map v) t
+  Hashtbl.iter (fun k v -> Format.fprintf fmt "%a: %a@."
+                   Path.print k tvar_map v) t
 
 let add_tbl path =
   try
     let h = Hashtbl.find !map_tbl path in
     current_tbl := (Some path, h)
   with Not_found ->
-    let new_tbl = Hashtbl.create 1000 in
+    let new_tbl = Hashtbl.create 1 in
     Hashtbl.add !map_tbl path new_tbl;
     current_tbl := (Some path, new_tbl)
 
@@ -29,17 +29,11 @@ let add_tbl path =
 let begin_cmi_export () =
   current_tbl := (None, Hashtbl.create 10)
 
-let begin_transl () = failwith ""
-
-let initial_tbl = map_tbl
-
-let initialize () =
-  map_tbl := Hashtbl.copy !initial_tbl;
-  current_tbl := (None, Hashtbl.create 10)
-
-(* let create_alias p1 p2 = *)
-(*   let h = Hashtbl.find !map_tbl p1 in *)
-(*   Hashtbl.add !map_tbl p2 h *)
+let deep_copy h =
+  let len = Hashtbl.length h in
+  Hashtbl.fold (fun k v acc ->
+    let h = Hashtbl.copy v in
+    Hashtbl.add acc k h; acc) h (Hashtbl.create len)
 
 let add id1 id2 =
   let tbl = snd !current_tbl in
@@ -65,7 +59,7 @@ let add_to_cmi id1 id2 =
   | None -> assert false
 
 let reset () =
-  map_tbl := Hashtbl.copy !initial_tbl;
-  current_tbl := (None, Hashtbl.create 100);
+  current_tbl := (None, Hashtbl.create 10);
+  !map_tbl |> Hashtbl.reset;
   switch := Pos_to_neg;
   cmi_tbl := None
