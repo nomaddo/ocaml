@@ -4569,47 +4569,38 @@ module TvarSet = struct
         let ans = match type_decl.type_kind with
           | Type_abstract | Type_record _ | Type_open -> false
           | Type_variant cds -> begin try
-                List.iter
-                  (fun {cd_res} -> match cd_res with
-                     | None -> ()
-                     | Some _ -> raise Exit) cds
-                |> ignore; false
+                List.iter (fun {cd_res} -> match cd_res with
+                    | None -> ()
+                    | Some _ -> raise Exit) cds;
+                false
               with Exit -> true end in
         Hashtbl.add is_gadt_tbl path ans; ans
       end
     | [ans] -> ans              (* return cached result *)
     | _ -> assert false
 
-  let include_gadt env ty =
-    let rec iter env ty = match ty.desc with
-      | Tconstr (path, tys, abbrev) ->
-          if is_gadt env path then raise Exit else List.iter (iter env) tys
-      | Tlink ty -> iter env ty
-      | _ -> Btype.iter_type_expr (iter env) ty in
+  (* XXX: advaince menas objects, poly-variant and gadts *)
+  let include_adv_features env ty =
+    let rec loop tyl ty =
+      if List.memq ty !tyl then () else begin
+        tyl := ty :: !tyl;
+        match ty.desc with
+        | Tconstr (path, tys, abbrev) ->
+            if is_gadt env path then raise Exit else List.iter (loop tyl) tys
+        | Tlink ty -> loop tyl ty
+        | Tobject _ | Tfield _ | Tvariant _ -> raise Exit
+        | _ -> Btype.iter_type_expr (loop tyl) ty
+      end in
     try
-      iter env ty; false
+      loop (ref []) ty; false
     with Exit -> true
-
-  let include_tvariant ty =
-    let rec is_tvariant ty = match ty.desc with
-      | Tvariant _ -> raise Exit | Tlink ty -> is_tvariant ty
-      | _ -> Btype.iter_type_expr is_tvariant ty in
-    try is_tvariant ty; false
-    with Exit -> true
-
-  let include_obj ty =
-    let rec is_obj ty = match ty.desc with
-      | Tobject _ | Tfield _ -> raise Exit
-      | Tlink ty -> is_obj ty
-      | _ -> Btype.iter_type_expr is_obj ty in
-    try is_obj ty; false with Exit -> true
 
   let extract ty =
     let tvars = free_variables ty in
     List.filter (fun {level} -> generic_level = level) tvars
 
   let create_tvars env ty =
-    if include_obj ty || (include_tvariant ty || include_gadt env ty) then []
+    if include_adv_features env ty then []
     else extract ty
 
   let rec unify env t1 t2 =

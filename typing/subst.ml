@@ -105,11 +105,11 @@ let norm = function
   | d -> d
 
 (* Similar to [Ctype.nondep_type_rec]. *)
-let rec typexp ?(store_id=false) ?(save_id=false) s ty =
+let rec typexp ?(store_id=false) ?(save_id=false) ?(copy_all=false) s ty =
   let ty = repr ty in
   match ty.desc with
     Tvar _ | Tunivar _ as desc ->
-      if (not save_id) && (s.for_saving || ty.id < 0) then
+      if copy_all || ((not save_id) && (s.for_saving || ty.id < 0)) then
         let ty' =
           if s.for_saving then newpersty (norm desc)
           else newty2 ty.level desc
@@ -132,15 +132,15 @@ let rec typexp ?(store_id=false) ?(save_id=false) s ty =
     ty'.desc <-
       begin match desc with
       | Tconstr(p, tl, abbrev) ->
-          Tconstr(type_path s p, List.map (typexp ~store_id ~save_id s) tl, ref Mnil)
+          Tconstr(type_path s p, List.map (typexp ~store_id ~save_id ~copy_all s) tl, ref Mnil)
       | Tpackage(p, n, tl) ->
-          Tpackage(modtype_path s p, n, List.map (typexp ~store_id ~save_id s) tl)
+          Tpackage(modtype_path s p, n, List.map (typexp ~store_id ~save_id ~copy_all s) tl)
       | Tobject (t1, name) ->
-          Tobject (typexp ~store_id ~save_id s t1,
+          Tobject (typexp ~store_id ~save_id ~copy_all s t1,
                  ref (match !name with
                         None -> None
                       | Some (p, tl) ->
-                          Some (type_path s p, List.map (typexp ~store_id ~save_id s) tl)))
+                          Some (type_path s p, List.map (typexp ~store_id ~save_id ~copy_all s) tl)))
       | Tfield (m, k, t1, t2)
         when s == identity && ty.level < generic_level && m = dummy_method ->
           (* not allowed to lower the level of the dummy method *)
@@ -179,7 +179,7 @@ let rec typexp ?(store_id=false) ?(save_id=false) s ty =
               more.desc <- Tsubst(newgenty(Ttuple[more';ty']));
               (* Return a new copy *)
               let row =
-                copy_row (typexp s) true row (not dup) more' in
+                copy_row (typexp ~store_id ~save_id ~copy_all s) true row (not dup) more' in
               match row.row_name with
                 Some (p, tl) ->
                   Tvariant {row with row_name = Some (type_path s p, tl)}
@@ -187,8 +187,8 @@ let rec typexp ?(store_id=false) ?(save_id=false) s ty =
                   Tvariant row
           end
       | Tfield(label, kind, t1, t2) when field_kind_repr kind = Fabsent ->
-          Tlink (typexp ~store_id ~save_id s t2)
-      | _ -> copy_type_desc (typexp ~store_id ~save_id s) desc
+          Tlink (typexp ~store_id ~save_id ~copy_all s t2)
+      | _ -> copy_type_desc (typexp ~store_id ~save_id ~copy_all s) desc
       end;
     ty'
 
@@ -196,8 +196,8 @@ let rec typexp ?(store_id=false) ?(save_id=false) s ty =
    Always make a copy of the type. If this is not done, type levels
    might not be correct.
 *)
-let type_expr ?(store_id=false) ?(save_id=false) s ty =
-  let ty' = typexp ~store_id ~save_id s ty in
+let type_expr ?(store_id=false) ?(save_id=false) ?(copy_all=false) s ty =
+  let ty' = typexp ~store_id ~save_id ~copy_all s ty in
   cleanup_types ();
   ty'
 
