@@ -144,7 +144,7 @@ let rec typexp ?(store_id=false) ?(save_id=false) ?(copy_all=false) s ty =
       | Tfield (m, k, t1, t2)
         when s == identity && ty.level < generic_level && m = dummy_method ->
           (* not allowed to lower the level of the dummy method *)
-          Tfield (m, k, t1, typexp s t2)
+          Tfield (m, k, t1, typexp ~store_id ~save_id ~copy_all s t2)
       | Tvariant row ->
           let row = row_repr row in
           let more = repr row.row_more in
