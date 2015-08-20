@@ -21,11 +21,14 @@ module TypeSet  : Set.S with type elt = type_expr
 module TypeMap  : Map.S with type key = type_expr
 module TypeHash : Hashtbl.S with type key = type_expr
 
+(* Forward declaration *)
+val add_tbl: (int -> int -> unit) ref
+
 (**** Levels ****)
 
 val generic_level: int
 
-val newty2: int -> type_desc -> type_expr
+val newty2: ?old_id:int -> int -> type_desc -> type_expr
         (* Create a type *)
 val newgenty: type_desc -> type_expr
         (* Create a generic type *)

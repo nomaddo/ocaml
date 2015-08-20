@@ -1244,7 +1244,7 @@ and components_of_module_maker (env, sub, path, mty) =
       let env = ref env in
       let pos = ref 0 in
       List.iter2 (fun item path ->
-        (if !Inner_map.switch = Inner_map.Pos_to_neg then Inner_map.add_tbl path);
+        (if !Inner_map.switch = Inner_map.Typing then Inner_map.add_tbl path);
         match item with
           Sig_value(id, decl) ->
             let decl' = Subst.value_description ~store_id:true sub decl in

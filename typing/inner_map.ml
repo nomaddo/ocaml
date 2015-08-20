@@ -4,9 +4,11 @@ type map_tbl = (Path.t, tvar_map) Hashtbl.t
 let map_tbl : map_tbl ref = ref (Hashtbl.create 10)
 let current_tbl = ref (None, Hashtbl.create 10)
 
-type order = Pos_to_neg | Neg_to_pos
+type phase = Typing | Transl | MakingCmi
+let string_of_phase = function
+  Typing -> "Typing" | Transl -> "Transl" | MakingCmi -> "MakingCmi"
 
-let switch = ref Pos_to_neg
+let switch = ref Typing
 
 (* for debug *)
 let tvar_map fmt (h: tvar_map) =
@@ -27,25 +29,22 @@ let add_tbl path =
 
 (* for cutting each phases *)
 let begin_cmi_export () =
+  switch := MakingCmi;
   current_tbl := (None, Hashtbl.create 10)
 
-let deep_copy h =
-  let len = Hashtbl.length h in
-  Hashtbl.fold (fun k v acc ->
-    let h = Hashtbl.copy v in
-    Hashtbl.add acc k h; acc) h (Hashtbl.create len)
-
 let add id1 id2 =
-  let tbl = snd !current_tbl in
+  (* Format.printf "%s: %a: %d %d@." (string_of_phase !switch) *)
+  (*   (fun fmt opt -> match opt with None -> Format.fprintf fmt "None" *)
+  (*                                | Some path -> Path.print fmt path) (fst !current_tbl) id1 id2; *)
   match !switch with
-  | Pos_to_neg ->
-      if id1 > id2
-      then Hashtbl.add tbl id1 id2
-      else Hashtbl.add tbl id2 id1
-  | Neg_to_pos ->
-      if id1 > id2
-      then Hashtbl.add tbl id2 id1
-      else Hashtbl.add tbl id1 id2
+  | Typing ->
+      let tbl = snd !current_tbl in
+      Hashtbl.add tbl id2 id1
+  | Transl -> ()
+  | MakingCmi ->
+      let opt, tbl = !current_tbl in
+      assert (opt = None);
+      Hashtbl.add tbl id1 id2
 
 let get_map path = Hashtbl.find !map_tbl path
 
@@ -61,5 +60,8 @@ let add_to_cmi id1 id2 =
 let reset () =
   current_tbl := (None, Hashtbl.create 10);
   !map_tbl |> Hashtbl.reset;
-  switch := Pos_to_neg;
+  switch := Typing;
   cmi_tbl := None
+
+let () =
+  Btype.add_tbl := add

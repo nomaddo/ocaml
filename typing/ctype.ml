@@ -184,7 +184,7 @@ let newty2             = Btype.newty2
 let newty desc         = newty2 !current_level desc
 let new_global_ty desc = newty2 !global_level desc
 
-let newvar ?name ()         = newty2 !current_level (Tvar name)
+let newvar ?name ?old_id ()         = newty2 ?old_id !current_level (Tvar name)
 let newvar2 ?name level     = newty2 level (Tvar name)
 let new_global_var ?name () = newty2 !global_level (Tvar name)
 
@@ -989,7 +989,7 @@ let rec copy ?env ?partial ?keep_names ty =
     if forget <> generic_level then newty2 forget (Tvar None) else
     let desc = ty.desc in
     save_desc ty desc;
-    let t = newvar() in          (* Stub *)
+    let t = newvar ~old_id:ty.id () in          (* Stub *)
     begin match env with
       Some env when Env.has_local_constraints env ->
         begin match Env.gadt_instance_level env ty with
@@ -4603,6 +4603,8 @@ module TvarSet = struct
     if include_adv_features env ty then []
     else extract ty
 
+  exception FailUnify of type_expr * type_expr
+
   let rec unify env t1 t2 =
     typ_tbl := [];
     if t1 == t2 then [] else
@@ -4665,7 +4667,7 @@ module TvarSet = struct
           List.map2 unify' tys1 tys2
           |> List.flatten
       | Tnil, Tnil -> []
-      | _ -> raise (Unify [(t1, t2)])
+      | _ -> raise (FailUnify (t1, t2))
       end
     end
 

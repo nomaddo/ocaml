@@ -472,6 +472,7 @@ let _ =
 
 let transl_implementation module_name (str, cc) =
   reset_labels ();
+  Inner_map.switch := Inner_map.Transl;
   primitive_declarations := [];
   let module_id = Ident.create_persistent module_name in
   Lprim(Psetglobal module_id,
@@ -770,6 +771,7 @@ let transl_store_phrases module_name str =
   transl_store_gen module_name (str,Tcoerce_none) true
 
 let transl_store_implementation module_name (str, restr) =
+  Inner_map.switch := Inner_map.Transl;
   let s = !transl_store_subst in
   transl_store_subst := Ident.empty;
   let r = transl_store_gen module_name (str, restr) false in

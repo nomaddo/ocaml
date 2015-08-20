@@ -93,3 +93,5 @@ val compare_structured_constants:
         ustructured_constant -> ustructured_constant -> int
 val compare_constants:
         uconstant -> uconstant -> int
+
+val subst_array_kind: Lambda.kind_map -> ulambda -> ulambda

@@ -528,83 +528,6 @@ let approx_ulam = function
     Uconst c -> Value_const c
   | _ -> Value_unknown
 
-let rec subst_array_kind map ulam =
-  let subst = subst_array_kind map in
-  match ulam with
-  | Uprim (prim, args, dinfo) ->
-    begin match prim with
-    | Pmakearray (Ptvar i as k) ->
-        let k = Simplif.gen_kind map i k in
-        Uprim (Pmakearray k, List.map subst args, dinfo)
-    | Parraylength (Ptvar i as k)  ->
-        let k = Simplif.gen_kind map i k in
-        Uprim (Parraylength k, List.map subst args, dinfo)
-    | Parrayrefu (Ptvar i as k)  ->
-        let k = Simplif.gen_kind map i k in
-        Uprim (Parrayrefu k, List.map subst args, dinfo)
-    | Parraysetu (Ptvar i as k)  ->
-        let k = Simplif.gen_kind map i k in
-        Uprim (Parraysetu k, List.map subst args, dinfo)
-    | Parrayrefs (Ptvar i as k)  ->
-        let k = Simplif.gen_kind map i k in
-        Uprim (Parrayrefs k, List.map subst args, dinfo)
-    | Parraysets (Ptvar i as k)  ->
-        let k = Simplif.gen_kind map i k in
-        Uprim (Parraysets k, List.map subst args, dinfo)
-    | _ -> Uprim (prim, List.map subst args, dinfo)
-    end
-  | Uvar _ as u -> u
-  | Uconst _ as u -> u
-  | Udirect_apply (function_label, us, dinfo) ->
-    Udirect_apply (function_label, List.map subst us, dinfo)
-  | Ugeneric_apply (u, us, dinfo) ->
-    Ugeneric_apply (subst u, List.map subst us, dinfo)
-  | Uclosure (ufuncs, ulams) ->
-    let subst_fun ufun = {ufun with body = subst ufun.body} in
-    Uclosure (List.map subst_fun ufuncs, List.map subst ulams)
-  | Uoffset (ulam, i) -> Uoffset (subst ulam, i)
-  | Ulet (id, u1, u2) ->
-    Ulet (id, subst u1, subst u2)
-  | Uletrec (idus, u) ->
-    let subst_pair (id, u) = (id, subst u) in
-    Uletrec (List.map subst_pair idus, subst u)
-  | Uswitch (ulam, ulamswitch) ->
-    let subst_switch sw =
-      {sw with us_actions_blocks = Array.map subst sw.us_actions_blocks;
-               us_actions_consts =Array.map subst sw.us_actions_consts} in
-    Uswitch (subst ulam, subst_switch ulamswitch)
-  | Ustringswitch (ulam, l, uopt) ->
-      let map_pair = (fun (s, u) -> (s, subst u)) in
-      let map_opt = function None -> None | Some e -> Some (subst e) in
-      Ustringswitch (subst ulam, List.map map_pair l, map_opt uopt)
-  (* of ulambda * (string * ulambda) list * ulambda option *)
-  | Ustaticfail (i, ulams) ->
-      Ustaticfail (i, List.map subst ulams)
-  (* of int * ulambda list *)
-  | Ucatch (i, ids, ulam1, ulam2) ->
-      Ucatch (i, ids,  subst ulam1, subst ulam2)
-  (* of int * Ident.t list * ulambda * ulambda *)
-  | Utrywith (ulam1, id, ulam2) ->
-      Utrywith (subst ulam1, id, subst ulam2)
-  (* of ulambda * Ident.t * ulambda *)
-  | Uifthenelse (ulam1, ulam2, ulam3) ->
-      Uifthenelse (subst ulam1, subst ulam2, subst ulam3)
-  (* of ulambda * ulambda * ulambda *)
-  | Usequence (ulam1, ulam2) ->
-      Usequence (subst ulam1, subst ulam2)
-  (* of ulambda * ulambda *)
-  | Uwhile (ulam1, ulam2) -> Uwhile (subst ulam1, subst ulam2)
-  (* of ulambda * ulambda *)
-  | Ufor (id, ulam1, ulam2, df, ulam3) ->
-      Ufor (id, subst ulam1, subst ulam2, df, subst ulam3)
-  (* of Ident.t * ulambda * ulambda * direction_flag * ulambda *)
-  | Uassign (id, ulam) ->
-      Uassign (id, subst ulam)
-  (* of Ident.t * ulambda *)
-  | Usend (meth_kind, ulam1, ulam2, ulams, dinfo) ->
-      Usend (meth_kind, subst ulam1, subst ulam2, List.map subst ulams, dinfo)
-  (* of meth_kind * ulambda * ulambda * ulambda list * Debuginfo.t *)
-
 let rec substitute fpc sb ulam =
   match ulam with
     Uvar v ->
@@ -762,7 +685,7 @@ let direct_apply ?map fundesc funct ufunct uargs =
         bind_params fundesc.fun_float_const_prop params app_args body
     | Some(params, body), Some map ->
         bind_params fundesc.fun_float_const_prop params app_args body
-        |> subst_array_kind map in
+        |> Clambda.subst_array_kind map in
   (* If ufunct can contain side-effects or function definitions,
      we must make sure that it is evaluated exactly once.
      If the function is not closed, we evaluate ufunct as part of the
@@ -839,18 +762,15 @@ let rec add_debug_info ev u =
       end
   | _ -> u
 
-let recreate_kind_map (inner_map: Inner_map.tvar_map)
-    (outer_map: Inner_map.tvar_map) (kind_map: Lambda.kind_map) =
-  List.map (fun (tvar, kind) ->
-      try
-        let tvar =
-          Hashtbl.find inner_map tvar |> Hashtbl.find outer_map in
-        (tvar, kind)
-      with Not_found -> begin
-          Format.printf "%d:\ninner_map:\n%a@.outer_map:\n%a@." tvar
-            Inner_map.tvar_map inner_map Inner_map.tvar_map outer_map;
-          assert false
-        end) kind_map
+let recreate_kind_map (inner_map: Inner_map.tvar_map) (kind_map: Lambda.kind_map) =
+  let rec goto_min id map =
+    let lower = try Some (Hashtbl.find map id) with Not_found -> None in
+    match lower with
+    | None -> id
+    | Some id' ->
+        assert (id > id');
+        goto_min id' map in
+  List.map (fun (id, kind) -> (goto_min id inner_map, kind)) kind_map
 
 (* Uncurry an expression and explicitate closures.
    Also return the approximation of the expression.
@@ -910,11 +830,8 @@ let rec close fenv cenv = function
       let nargs = List.length args in
       begin match lam with
       | Lprim (Pfield _, [Lprim (Pgetglobal ident, _)]) ->
-      let outer_map =
-        Compilenv.get_global_info ident
-        |> function None -> assert false | Some unit_infos -> unit_infos.Cmx_format.ui_tvar_map in
       let kind_map' = (* try *)
-          recreate_kind_map inner_map outer_map kind_map
+          recreate_kind_map inner_map kind_map
         (* with _ -> *)
         (*   Format.printf "lam: %a@." Printlambda.lambda lam; *)
         (*   [] *) in

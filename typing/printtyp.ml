@@ -409,7 +409,8 @@ let name_of_type t =
           !current_name
       | _ ->
           (* No name available, create a new one *)
-          new_name ()
+          (* new_name () *)
+          string_of_int t.id
     in
     (* Exception for type declarations *)
     if name <> "_" then names := (t, name) :: !names;

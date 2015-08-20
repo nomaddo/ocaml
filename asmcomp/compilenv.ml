@@ -59,7 +59,6 @@ let current_unit =
     ui_imports_cmi = [];
     ui_imports_cmx = [];
     ui_approx = Value_unknown;
-    ui_tvar_map = Hashtbl.create 1;
     ui_curry_fun = [];
     ui_apply_fun = [];
     ui_send_fun = [];
@@ -228,14 +227,25 @@ let write_unit_info (info: Cmx_format.unit_infos) filename =
   Digest.output oc crc;
   close_out oc
 
+let rec subst_array_kind map approx = match approx with
+  | Clambda.Value_closure (fundesc, approx) -> function_description map fundesc
+  | Clambda.Value_tuple approxs -> Array.iter (subst_array_kind map) approxs
+  | Clambda.Value_unknown -> ()
+  | Clambda.Value_const _ -> ()
+  | Clambda.Value_global_field _ -> ()
+
+and function_description map desc =
+  match desc.Clambda.fun_inline with
+  | None -> ()
+  | Some (ids, ulam) -> desc.Clambda.fun_inline <- Some (ids, Clambda.subst_array_kind map ulam)
+
 let save_unit_info filename =
   current_unit.ui_imports_cmi <- Env.imports();
-  current_unit.ui_tvar_map <-
-    begin match !Inner_map.cmi_tbl with
-    | None -> snd !Inner_map.current_tbl
-    | Some h -> h end;
-  (* Format.printf "save as outer_map:\n%a@." Inner_map.tvar_map current_unit.ui_tvar_map; *)
-  (* Format.printf "inlined body\n%a@." Printclambda.inlined_bodies current_unit.ui_approx; *)
+  let h = match !Inner_map.cmi_tbl with
+    | None -> assert (fst !Inner_map.current_tbl = None); snd !Inner_map.current_tbl
+    | Some h -> h in
+  let map = Hashtbl.fold (fun k v acc -> (v, Lambda.Kvar k) :: acc) h [] in
+  subst_array_kind map current_unit.ui_approx;
   write_unit_info current_unit filename
 
 

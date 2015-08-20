@@ -1763,6 +1763,7 @@ and type_expect_ ?in_function env sexp ty_expected =
           let name = Path.name ~paren:Oprint.parenthesized_ident path in
           Stypes.record (Stypes.An_ident (loc, name, annot))
         end;
+        Inner_map.add_tbl path;
         rue {
           exp_desc =
             begin match desc.val_kind with
