@@ -174,7 +174,7 @@ type kind_map = (int * type_kind) list
 
 type lambda =
     Lvar of Ident.t
-  | Lspecialized of lambda * kind_map * Inner_map.tvar_map option
+  | Lspecialized of lambda * kind_map
   | Lconst of structured_constant
   | Lapply of lambda * lambda list * Location.t
   | Lfunction of function_kind * Ident.t list * lambda
@@ -240,8 +240,8 @@ let make_key e =
         try Ident.find_same id env
         with Not_found -> e
       end
-    | Lspecialized (lam, kind_map, inner_map) ->
-        Lspecialized (tr_rec env lam, kind_map, inner_map)
+    | Lspecialized (lam, kind_map) ->
+        Lspecialized (tr_rec env lam, kind_map)
     | Lconst  (Const_base (Const_string _)|Const_float_array _) ->
         (* Mutable constants are not shared *)
         raise Not_simple
@@ -328,7 +328,7 @@ let iter_opt f = function
 let iter f = function
     Lvar _
   | Lconst _ -> ()
-  | Lspecialized (lam, _, _) ->
+  | Lspecialized (lam, _) ->
       f lam
   | Lapply(fn, args, _) ->
       f fn; List.iter f args
@@ -400,7 +400,7 @@ let free_ids get l =
         fv := IdentSet.remove v !fv
     | Lassign(id, e) ->
         fv := IdentSet.add id !fv
-    | Lspecialized (lam, _, _) -> ()
+    | Lspecialized (lam, _) -> ()
     | Lvar _ | Lconst _ | Lapply _
     | Lprim _ | Lswitch _ | Lstringswitch _ | Lstaticraise _
     | Lifthenelse _ | Lsequence _ | Lwhile _
@@ -477,7 +477,7 @@ let subst_lambda s lam =
   let rec subst = function
     Lvar id as l ->
       begin try Ident.find_same id s with Not_found -> l end
-  | Lspecialized (lam, m1, m2) -> Lspecialized (subst lam, m1, m2)
+  | Lspecialized (lam, m1) -> Lspecialized (subst lam, m1)
   | Lconst sc as l -> l
   | Lapply(fn, args, loc) -> Lapply(subst fn, List.map subst args, loc)
   | Lfunction(kind, params, body) -> Lfunction(kind, params, subst body)

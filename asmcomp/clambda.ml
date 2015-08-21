@@ -34,6 +34,7 @@ and uconstant =
 
 type ulambda =
     Uvar of Ident.t
+  | Uspecialized of ulambda * kind_map
   | Uconst of uconstant
   | Udirect_apply of function_label * ulambda list * Debuginfo.t
   | Ugeneric_apply of ulambda * ulambda list * Debuginfo.t
@@ -175,6 +176,7 @@ let rec subst_array_kind map ulam =
     | _ -> Uprim (prim, List.map subst args, dinfo)
     end
   | Uvar _ as u -> u
+  | Uspecialized (u, kind_map) -> Uspecialized (subst u, kind_map)
   | Uconst _ as u -> u
   | Udirect_apply (function_label, us, dinfo) ->
     Udirect_apply (function_label, List.map subst us, dinfo)

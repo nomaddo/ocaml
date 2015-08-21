@@ -1179,7 +1179,6 @@ let subst_signature sub pl sg =
     (fun item path ->
       match item with
       | Sig_value(id, decl) ->
-          Inner_map.add_tbl path;
           Sig_value (id, Subst.value_description ~store_id:true sub decl)
       | Sig_type(id, decl, x) ->
           Sig_type(id, Subst.type_declaration sub decl, x)
@@ -1244,7 +1243,6 @@ and components_of_module_maker (env, sub, path, mty) =
       let env = ref env in
       let pos = ref 0 in
       List.iter2 (fun item path ->
-        (if !Inner_map.switch = Inner_map.Typing then Inner_map.add_tbl path);
         match item with
           Sig_value(id, decl) ->
             let decl' = Subst.value_description ~store_id:true sub decl in
@@ -1318,7 +1316,6 @@ and components_of_module_maker (env, sub, path, mty) =
           fcomp_subst_cache = Hashtbl.create 17 }
   | Mty_ident p
   | Mty_alias p ->
-        (* Inner_map.create_alias path p; *)
         Structure_comps {
           comp_values = Tbl.empty;
           comp_constrs = Tbl.empty;

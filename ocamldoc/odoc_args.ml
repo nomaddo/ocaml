@@ -231,6 +231,8 @@ module Options = Main_args.Make_ocamldoc_options(struct
   let _dlambda = set Clflags.dump_lambda
   let _dinstr = set Clflags.dump_instr
   let anonymous = anonymous
+
+  (* let _daddvar = set Clflags.dump_addvar *)
 end)
 
 (** The default option list *)

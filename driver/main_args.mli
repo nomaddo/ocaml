@@ -43,7 +43,7 @@ module type Common_options = sig
   val _dtypedtree : unit -> unit
   val _drawlambda : unit -> unit
   val _dlambda : unit -> unit
-
+  (* val _daddvar : unit -> unit *)
   val anonymous : string -> unit
 end
 

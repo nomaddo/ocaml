@@ -259,7 +259,7 @@ let primitive ppf = function
 let rec lam ppf = function
   | Lvar id ->
       Ident.print ppf id
-  | Lspecialized (l, map, _) ->
+  | Lspecialized (l, map) ->
       fprintf ppf "sp(%a, [%a])" lam l kind_map map
   | Lconst cst ->
       struct_const ppf cst

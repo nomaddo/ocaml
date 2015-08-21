@@ -241,10 +241,8 @@ and function_description map desc =
 
 let save_unit_info filename =
   current_unit.ui_imports_cmi <- Env.imports();
-  let h = match !Inner_map.cmi_tbl with
-    | None -> assert (fst !Inner_map.current_tbl = None); snd !Inner_map.current_tbl
-    | Some h -> h in
-  let map = Hashtbl.fold (fun k v acc -> (v, Lambda.Kvar k) :: acc) h [] in
+  let h = Inner_map.cmi_tbl in
+  let map = Hashtbl.fold (fun k v acc -> (k, Lambda.Kvar v) :: acc) h [] in
   subst_array_kind map current_unit.ui_approx;
   write_unit_info current_unit filename
 

@@ -1301,6 +1301,7 @@ let strmatch_compile =
 let rec transl = function
     Uvar id ->
       Cvar id
+  | Uspecialized (ulam, _) -> transl ulam
   | Uconst sc ->
       transl_constant sc
   | Uclosure(fundecls, []) ->

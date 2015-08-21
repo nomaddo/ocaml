@@ -1426,7 +1426,7 @@ and type_structure ?(toplevel = false) funct_body anchor env sstr scope =
         let smodl = sincl.pincl_mod in
         let modl = type_module true funct_body None env smodl in
         (* Rename all identifiers bound by this signature to avoid clashes *)
-        let sg = Subst.signature Subst.identity
+        let sg = Subst.signature ~store_id:true Subst.identity
             (extract_sig_open env smodl.pmod_loc modl.mod_type) in
         let sg =
           match modl.mod_desc with
@@ -1614,7 +1614,6 @@ let type_implementation sourcefile outputprefix modulename initial_env ast =
     let sourceintf =
       Misc.chop_extension_if_any sourcefile ^ !Config.interface_suffix in
     if Sys.file_exists sourceintf then begin
-      Inner_map.begin_coercion ();
       let intf_file =
         try
           find_in_path_uncap !Config.load_path (modulename ^ ".cmi")

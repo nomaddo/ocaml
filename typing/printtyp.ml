@@ -390,16 +390,16 @@ let rec new_name () =
   then new_name ()
   else name
 
-let name_of_type t =
+let name_of_type t = (* string_of_int t.id *)
   (* We've already been through repr at this stage, so t is our representative
      of the union-find class. *)
   try List.assq t !names with Not_found ->
     let name =
       match t.desc with
         Tvar (Some name) | Tunivar (Some name) ->
-          (* Some part of the type we've already printed has assigned another
-           * unification variable to that name. We want to keep the name, so try
-           * adding a number until we find a name that's not taken. *)
+          (* (\* Some part of the type we've already printed has assigned another *)
+          (*  * unification variable to that name. We want to keep the name, so try *)
+          (*  * adding a number until we find a name that's not taken. *\) *)
           let current_name = ref name in
           let i = ref 0 in
           while List.exists (fun (_, name') -> !current_name = name') !names do
@@ -409,8 +409,7 @@ let name_of_type t =
           !current_name
       | _ ->
           (* No name available, create a new one *)
-          (* new_name () *)
-          string_of_int t.id
+          new_name ()
     in
     (* Exception for type declarations *)
     if name <> "_" then names := (t, name) :: !names;

@@ -141,6 +141,8 @@ module Options = Main_args.Make_bytecomp_options (struct
   let _drawlambda = set dump_rawlambda
   let _dlambda = set dump_lambda
   let _dinstr = set dump_instr
+  (* let _daddvar = set dump_addvar *)
+
   let anonymous = anonymous
 end)
 

@@ -41,6 +41,8 @@ and uconstant ppf = function
 let rec lam ppf = function
   | Uvar id ->
       Ident.print ppf id
+  | Uspecialized (ulam, map) ->
+      fprintf ppf "@[<2>(specialized*@ %a %a)@]" lam ulam Printlambda.kind_map map
   | Uconst c -> uconstant ppf c
   | Udirect_apply(f, largs, _) ->
       let lams ppf largs =

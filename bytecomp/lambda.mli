@@ -182,7 +182,7 @@ type kind_map = (int * type_kind) list
 
 type lambda =
     Lvar of Ident.t
-  | Lspecialized of lambda * kind_map * Inner_map.tvar_map option
+  | Lspecialized of lambda * kind_map
   | Lconst of structured_constant
   | Lapply of lambda * lambda list * Location.t
   | Lfunction of function_kind * Ident.t list * lambda

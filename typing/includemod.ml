@@ -60,12 +60,12 @@ let make_tvarmap_from_sig env vd1 vd2 =
 let value_descriptions env cxt subst id vd1 vd2 =
   Cmt_format.record_value_dependency vd1 vd2;
   Env.mark_value_used env (Ident.name id) vd1;
-  begin match !Inner_map.cmi_tbl with
-  | None -> ()
-  | Some _ ->
-      let ty = Subst.type_expr ~save_id:true subst vd2.val_type in
-      let map = Ctype.TvarSet.unify env vd1.val_type ty in
-      List.iter (fun (id1, id2) -> Inner_map.add_to_cmi id1 id2) map end;
+  begin
+    let ty = Subst.type_expr ~save_id:true subst vd2.val_type in
+    let map = Ctype.TvarSet.unify env vd1.val_type ty in
+    List.iter (fun (id1, id2) ->
+        if id1 = id2 then () else Inner_map.add_to_cmi id1 id2) map
+  end;
   let vd2 = Subst.value_description subst vd2 in
   try
     Includecore.value_descriptions env vd1 vd2

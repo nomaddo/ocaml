@@ -72,6 +72,8 @@ and dump_lambda = ref false             (* -dlambda *)
 and dump_clambda = ref false            (* -dclambda *)
 and dump_instr = ref false              (* -dinstr *)
 
+(* let dump_addvar = ref false                (\* -daddvar *\) *)
+
 let keep_asm_file = ref false           (* -S *)
 let optimize_for_speed = ref true       (* -compact *)
 and opaque = ref false                  (* -opaque *)

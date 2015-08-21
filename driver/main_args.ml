@@ -460,6 +460,9 @@ let mk_dstartup f =
   "-dstartup", Arg.Unit f, " (undocumented)"
 ;;
 
+(* let mk_daddvar f = *)
+(*   "-daddvar", Arg.Unit f, " (undocumented)" *)
+
 let mk_opaque f =
   "-opaque", Arg.Unit f,
   " Does not generate cross-module optimization information\n\
@@ -510,6 +513,8 @@ module type Common_options = sig
   val _dtypedtree : unit -> unit
   val _drawlambda : unit -> unit
   val _dlambda : unit -> unit
+
+  (* val _daddvar : unit -> unit *)
 
   val anonymous : string -> unit
 end;;
@@ -722,6 +727,8 @@ struct
     mk_drawlambda F._drawlambda;
     mk_dlambda F._dlambda;
     mk_dinstr F._dinstr;
+
+    (* mk_daddvar F._daddvar; *)
   ]
 end;;
 
@@ -764,6 +771,7 @@ struct
     mk_drawlambda F._drawlambda;
     mk_dlambda F._dlambda;
     mk_dinstr F._dinstr;
+    (* mk_daddvar F._daddvar; *)
   ]
 end;;
 
@@ -836,6 +844,9 @@ struct
     mk_dparsetree F._dparsetree;
     mk_dtypedtree F._dtypedtree;
     mk_drawlambda F._drawlambda;
+
+    (* mk_daddvar F._daddvar; *)
+
     mk_dlambda F._dlambda;
     mk_dclambda F._dclambda;
     mk_dcmm F._dcmm;
@@ -895,6 +906,7 @@ module Make_opttop_options (F : Opttop_options) = struct
     mk_dparsetree F._dparsetree;
     mk_dtypedtree F._dtypedtree;
     mk_drawlambda F._drawlambda;
+    (* mk_daddvar F._daddvar; *)
     mk_dclambda F._dclambda;
     mk_dcmm F._dcmm;
     mk_dsel F._dsel;
