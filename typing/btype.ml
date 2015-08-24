@@ -47,8 +47,8 @@ let newty2 ?old_id level desc  =
   begin match old_id with None -> () | Some id' -> !add_tbl id' id end;
   { desc; level; id }
 
-let newgenty desc      = newty2 generic_level desc
-let newgenvar ?name () = newgenty (Tvar name)
+let newgenty ?old_id desc      = newty2 ?old_id generic_level desc
+let newgenvar ?name ?old_id () = newgenty ?old_id (Tvar name)
 (*
 let newmarkedvar level =
   incr new_id; { desc = Tvar; level = pivot_level - level; id = !new_id }

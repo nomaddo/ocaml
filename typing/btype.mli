@@ -30,9 +30,9 @@ val generic_level: int
 
 val newty2: ?old_id:int -> int -> type_desc -> type_expr
         (* Create a type *)
-val newgenty: type_desc -> type_expr
+val newgenty: ?old_id:int -> type_desc -> type_expr
         (* Create a generic type *)
-val newgenvar: ?name:string -> unit -> type_expr
+val newgenvar: ?name:string -> ?old_id:int -> unit -> type_expr
         (* Return a fresh generic variable *)
 
 (* Use Tsubst instead

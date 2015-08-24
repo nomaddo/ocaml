@@ -92,8 +92,9 @@ let type_path s = function
 let new_id = ref (-1)
 let reset_for_saving () = new_id := -1
 
-let newpersty desc =
+let newpersty ?(old_id) desc =
   decr new_id;
+  begin match old_id with None -> () | Some id -> Inner_map.add id !new_id end;
   { desc = desc; level = generic_level; id = !new_id }
 
 (* ensure that all occurrences of 'Tvar None' are physically shared *)
@@ -111,10 +112,9 @@ let rec typexp ?(store_id=false) ?(save_id=false) ?(copy_all=false) s ty =
     Tvar _ | Tunivar _ as desc ->
       if copy_all || ((not save_id) && (s.for_saving || ty.id < 0)) then
         let ty' =
-          if s.for_saving then newpersty (norm desc)
-          else newty2 ty.level desc
+          if s.for_saving then newpersty ~old_id:ty.id (norm desc)
+          else newty2 ~old_id:ty.id ty.level desc
         in
-        begin if store_id then Inner_map.add ty.id ty'.id end;
         save_desc ty desc; ty.desc <- Tsubst ty'; ty'
       else ty
   | Tsubst ty ->
@@ -127,7 +127,10 @@ let rec typexp ?(store_id=false) ?(save_id=false) ?(copy_all=false) s ty =
     let desc = ty.desc in
     save_desc ty desc;
     (* Make a stub *)
-    let ty' = if s.for_saving then newpersty (Tvar None) else newgenvar () in
+    let ty' =
+      if s.for_saving
+      then newpersty ~old_id:ty.id (Tvar None)
+      else newgenvar ~old_id:ty.id () in
     ty.desc <- Tsubst ty';
     ty'.desc <-
       begin match desc with
@@ -166,11 +169,10 @@ let rec typexp ?(store_id=false) ?(save_id=false) ?(copy_all=false) s ty =
                 | Tconstr _ | Tnil -> typexp ~save_id ~store_id s more
                 | Tunivar _ | Tvar _ ->
                     save_desc more more.desc;
-                    if s.for_saving then newpersty (norm more.desc) else
+                    if s.for_saving then newpersty ~old_id:more.id (norm more.desc) else
                     if dup && is_Tvar more
                     then begin
-                      let ty' = newgenty more.desc in
-                      begin if store_id then Inner_map.add more.id ty'.id end;
+                      let ty' = newgenty ~old_id:more.id more.desc in
                       ty' end
                     else more
                 | _ -> assert false
