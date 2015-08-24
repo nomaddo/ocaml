@@ -106,7 +106,7 @@ let norm = function
   | d -> d
 
 (* Similar to [Ctype.nondep_type_rec]. *)
-let rec typexp ?(store_id=false) ?(save_id=false) ?(copy_all=false) s ty =
+let rec typexp ?(save_id=false) ?(copy_all=false) s ty =
   let ty = repr ty in
   match ty.desc with
     Tvar _ | Tunivar _ as desc ->
@@ -135,19 +135,19 @@ let rec typexp ?(store_id=false) ?(save_id=false) ?(copy_all=false) s ty =
     ty'.desc <-
       begin match desc with
       | Tconstr(p, tl, abbrev) ->
-          Tconstr(type_path s p, List.map (typexp ~store_id ~save_id ~copy_all s) tl, ref Mnil)
+          Tconstr(type_path s p, List.map (typexp ~save_id ~copy_all s) tl, ref Mnil)
       | Tpackage(p, n, tl) ->
-          Tpackage(modtype_path s p, n, List.map (typexp ~store_id ~save_id ~copy_all s) tl)
+          Tpackage(modtype_path s p, n, List.map (typexp ~save_id ~copy_all s) tl)
       | Tobject (t1, name) ->
-          Tobject (typexp ~store_id ~save_id ~copy_all s t1,
+          Tobject (typexp ~save_id ~copy_all s t1,
                  ref (match !name with
                         None -> None
                       | Some (p, tl) ->
-                          Some (type_path s p, List.map (typexp ~store_id ~save_id ~copy_all s) tl)))
+                          Some (type_path s p, List.map (typexp ~save_id ~copy_all s) tl)))
       | Tfield (m, k, t1, t2)
         when s == identity && ty.level < generic_level && m = dummy_method ->
           (* not allowed to lower the level of the dummy method *)
-          Tfield (m, k, t1, typexp ~store_id ~save_id ~copy_all s t2)
+          Tfield (m, k, t1, typexp ~save_id ~copy_all s t2)
       | Tvariant row ->
           let row = row_repr row in
           let more = repr row.row_more in
@@ -166,7 +166,7 @@ let rec typexp ?(store_id=false) ?(save_id=false) ?(copy_all=false) s ty =
               let more' =
                 match more.desc with
                   Tsubst ty -> ty
-                | Tconstr _ | Tnil -> typexp ~save_id ~store_id s more
+                | Tconstr _ | Tnil -> typexp ~save_id s more
                 | Tunivar _ | Tvar _ ->
                     save_desc more more.desc;
                     if s.for_saving then newpersty ~old_id:more.id (norm more.desc) else
@@ -181,7 +181,7 @@ let rec typexp ?(store_id=false) ?(save_id=false) ?(copy_all=false) s ty =
               more.desc <- Tsubst(newgenty(Ttuple[more';ty']));
               (* Return a new copy *)
               let row =
-                copy_row (typexp ~store_id ~save_id ~copy_all s) true row (not dup) more' in
+                copy_row (typexp ~save_id ~copy_all s) true row (not dup) more' in
               match row.row_name with
                 Some (p, tl) ->
                   Tvariant {row with row_name = Some (type_path s p, tl)}
@@ -189,8 +189,8 @@ let rec typexp ?(store_id=false) ?(save_id=false) ?(copy_all=false) s ty =
                   Tvariant row
           end
       | Tfield(label, kind, t1, t2) when field_kind_repr kind = Fabsent ->
-          Tlink (typexp ~store_id ~save_id ~copy_all s t2)
-      | _ -> copy_type_desc (typexp ~store_id ~save_id ~copy_all s) desc
+          Tlink (typexp ~save_id ~copy_all s t2)
+      | _ -> copy_type_desc (typexp ~save_id ~copy_all s) desc
       end;
     ty'
 
@@ -198,8 +198,8 @@ let rec typexp ?(store_id=false) ?(save_id=false) ?(copy_all=false) s ty =
    Always make a copy of the type. If this is not done, type levels
    might not be correct.
 *)
-let type_expr ?(store_id=false) ?(save_id=false) ?(copy_all=false) s ty =
-  let ty' = typexp ~store_id ~save_id ~copy_all s ty in
+let type_expr ?(save_id=false) ?(copy_all=false) s ty =
+  let ty' = typexp ~save_id ~copy_all s ty in
   cleanup_types ();
   ty'
 
@@ -314,8 +314,8 @@ let class_type s cty =
 (* for reconstruction of val_tvars *)
 let free_variables = ref (fun _ -> failwith "undefined free_variables")
 
-let value_description ?(store_id=false) ?(save_id=false) s descr =
-  let ty = type_expr ~store_id ~save_id s descr.val_type in
+let value_description ?(save_id=false) s descr =
+  let ty = type_expr ~save_id s descr.val_type in
   let tvars = if descr.val_tvars = [] then [] else !free_variables ty in
   { val_type = ty;
     val_kind = descr.val_kind;
@@ -354,7 +354,7 @@ let rec rename_bound_idents s idents = function
       let id' = Ident.rename id in
       rename_bound_idents s (id' :: idents) sg
 
-let rec modtype ?(store_id=false) s = function
+let rec modtype s = function
     Mty_ident p as mty ->
       begin match p with
         Pident id ->
@@ -365,7 +365,7 @@ let rec modtype ?(store_id=false) s = function
           fatal_error "Subst.modtype"
       end
   | Mty_signature sg ->
-      Mty_signature(signature ~store_id s sg)
+      Mty_signature(signature s sg)
   | Mty_functor(id, arg, res) ->
       let id' = Ident.rename id in
       Mty_functor(id', may_map (modtype s) arg,
@@ -373,24 +373,24 @@ let rec modtype ?(store_id=false) s = function
   | Mty_alias p ->
       Mty_alias(module_path s p)
 
-and signature ?(store_id=false) s sg =
+and signature s sg =
   (* Components of signature may be mutually recursive (e.g. type declarations
      or class and type declarations), so first build global renaming
      substitution... *)
   let (new_idents, s') = rename_bound_idents s [] sg in
   (* ... then apply it to each signature component in turn *)
-  List.map2 (signature_component ~store_id s') sg new_idents
+  List.map2 (signature_component s') sg new_idents
 
-and signature_component ?(store_id=false) s comp newid =
+and signature_component s comp newid =
   match comp with
     Sig_value(id, d) ->
-      Sig_value(newid, value_description ~store_id s d)
+      Sig_value(newid, value_description s d)
   | Sig_type(id, d, rs) ->
       Sig_type(newid, type_declaration s d, rs)
   | Sig_typext(id, ext, es) ->
       Sig_typext(newid, extension_constructor s ext, es)
   | Sig_module(id, d, rs) ->
-      Sig_module(newid, module_declaration ~store_id s d, rs)
+      Sig_module(newid, module_declaration s d, rs)
   | Sig_modtype(id, d) ->
       Sig_modtype(newid, modtype_declaration s d)
   | Sig_class(id, d, rs) ->
@@ -398,9 +398,9 @@ and signature_component ?(store_id=false) s comp newid =
   | Sig_class_type(id, d, rs) ->
       Sig_class_type(newid, cltype_declaration s d, rs)
 
-and module_declaration ?(store_id=false) s decl =
+and module_declaration s decl =
   {
-    md_type = modtype ~store_id s decl.md_type;
+    md_type = modtype s decl.md_type;
     md_attributes = attrs s decl.md_attributes;
     md_loc = loc s decl.md_loc;
   }

@@ -1426,7 +1426,7 @@ and type_structure ?(toplevel = false) funct_body anchor env sstr scope =
         let smodl = sincl.pincl_mod in
         let modl = type_module true funct_body None env smodl in
         (* Rename all identifiers bound by this signature to avoid clashes *)
-        let sg = Subst.signature ~store_id:true Subst.identity
+        let sg = Subst.signature Subst.identity
             (extract_sig_open env smodl.pmod_loc modl.mod_type) in
         let sg =
           match modl.mod_desc with

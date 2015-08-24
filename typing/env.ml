@@ -1179,13 +1179,13 @@ let subst_signature sub pl sg =
     (fun item path ->
       match item with
       | Sig_value(id, decl) ->
-          Sig_value (id, Subst.value_description ~store_id:true sub decl)
+          Sig_value (id, Subst.value_description sub decl)
       | Sig_type(id, decl, x) ->
           Sig_type(id, Subst.type_declaration sub decl, x)
       | Sig_typext(id, ext, es) ->
           Sig_typext (id, Subst.extension_constructor sub ext, es)
       | Sig_module(id, mty, x) ->
-          Sig_module(id, Subst.module_declaration ~store_id:true sub mty,x)
+          Sig_module(id, Subst.module_declaration sub mty,x)
       | Sig_modtype(id, decl) ->
           Sig_modtype(id, Subst.modtype_declaration sub decl)
       | Sig_class(id, decl, x) ->
@@ -1245,7 +1245,7 @@ and components_of_module_maker (env, sub, path, mty) =
       List.iter2 (fun item path ->
         match item with
           Sig_value(id, decl) ->
-            let decl' = Subst.value_description ~store_id:true sub decl in
+            let decl' = Subst.value_description sub decl in
             c.comp_values <-
               Tbl.add (Ident.name id) (decl', !pos) c.comp_values;
             begin match decl.val_kind with
@@ -1676,7 +1676,7 @@ let save_signature_with_imports sg modname filename imports =
   Btype.cleanup_abbrev ();
   Subst.reset_for_saving ();
   Inner_map.begin_cmi_export ();
-  let sg = Subst.signature ~store_id:true (Subst.for_saving Subst.identity) sg in
+  let sg = Subst.signature (Subst.for_saving Subst.identity) sg in
   let oc = open_out_bin filename in
   try
     let cmi = {
