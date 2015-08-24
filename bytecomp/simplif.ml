@@ -295,11 +295,11 @@ let beta_reduce params body args =
 (* Create array_kind from type_kind *)
 let gen_kind map i k =
   match List.assoc i map with
-  | I -> Pintarray
-  | F -> Pfloatarray
-  | P -> Paddrarray
-  | Kvar i -> Ptvar i
-  | Gen -> Pgenarray
+  | Inner_map.I -> Pintarray
+  | Inner_map.F -> Pfloatarray
+  | Inner_map.P -> Paddrarray
+  | Inner_map.Kvar i -> Ptvar i
+  | Inner_map.Gen -> Pgenarray
   | exception Not_found -> k
 
 (* Simplification of lets *)

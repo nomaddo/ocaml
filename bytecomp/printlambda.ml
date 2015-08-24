@@ -17,11 +17,11 @@ open Types
 open Lambda
 
 let type_kind ppf = function
-  | I -> fprintf ppf "I"
-  | F -> fprintf ppf "F"
-  | P -> fprintf ppf "P"
-  | Kvar i -> fprintf ppf "Var %d" i
-  | Gen -> fprintf ppf "Gen"
+  | Inner_map.I -> fprintf ppf "I"
+  | Inner_map.F -> fprintf ppf "F"
+  | Inner_map.P -> fprintf ppf "P"
+  | Inner_map.Kvar i -> fprintf ppf "Var %d" i
+  | Inner_map.Gen -> fprintf ppf "Gen"
 let rec kind_map ppf = function
   | [] -> assert false
   | (i, k) :: [] -> fprintf ppf "%d -> %a" i type_kind k

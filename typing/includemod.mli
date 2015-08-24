@@ -16,6 +16,8 @@ open Typedtree
 open Types
 open Format
 
+val unify: Env.t -> type_expr -> type_expr -> (int * Inner_map.type_kind) list
+
 val modtypes: Env.t -> module_type -> module_type -> module_coercion
 val signatures: Env.t -> signature -> signature -> module_coercion
 val compunit:

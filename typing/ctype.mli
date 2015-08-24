@@ -283,6 +283,4 @@ val package_subtype :
 module TvarSet : sig
   val extract : type_expr -> type_expr list
   val create_tvars : Env.t -> type_expr -> type_expr list
-  val unify :
-    Env.t -> Btype.TypeHash.key -> Btype.TypeHash.key -> (int * int) list
 end

@@ -19,7 +19,7 @@ open Lambda
 open Types
 
 val make_map :
-  Env.t -> type_expr -> type_expr list * type_expr -> (int * Lambda.type_kind) list
+  Env.t -> type_expr -> type_expr -> (int * Lambda.type_kind) list
 
 val transl_exp: expression -> lambda
 val transl_apply: lambda -> (label * expression option * optional) list
