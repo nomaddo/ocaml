@@ -100,7 +100,7 @@ and unify' env t1 t2 =
     typ_tbl := t1 :: t2 :: !typ_tbl;
     let d1 = t1.desc and d2 = t2.desc in
     begin match d1, d2 with
-    | Tunivar _, Tunivar _  | Tvar _, Tvar _ -> [(t1.id, Inner_map.Kvar t1.id)]
+    | Tunivar _, Tunivar _  | Tvar _, Tvar _ -> [(t1.id, Inner_map.Kvar t2.id)]
     | Tvar _, _ ->  [(t1.id, to_type_kind env t2)]
     | Tarrow (_, ty1, ty1', _), Tarrow (_, ty2, ty2', _) ->
         unify' env ty1 ty2 @ unify' env ty1' ty2'
