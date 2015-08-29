@@ -390,16 +390,16 @@ let rec new_name () =
   then new_name ()
   else name
 
-let name_of_type t =
+let name_of_type t = (* string_of_int t.id *)
   (* We've already been through repr at this stage, so t is our representative
      of the union-find class. *)
   try List.assq t !names with Not_found ->
     let name =
       match t.desc with
         Tvar (Some name) | Tunivar (Some name) ->
-          (* Some part of the type we've already printed has assigned another
-           * unification variable to that name. We want to keep the name, so try
-           * adding a number until we find a name that's not taken. *)
+          (* (\* Some part of the type we've already printed has assigned another *)
+          (*  * unification variable to that name. We want to keep the name, so try *)
+          (*  * adding a number until we find a name that's not taken. *\) *)
           let current_name = ref name in
           let i = ref 0 in
           while List.exists (fun (_, name') -> !current_name = name') !names do
@@ -1510,3 +1510,36 @@ let report_ambiguous_type_error ppf env (tp0, tp0') tpl txt1 txt2 txt3 =
            @]"
           txt2 type_path_list tpl
           txt3 (type_path_expansion tp0) tp0')
+
+let module_type fmt = function
+  | Mty_ident path -> Path.print fmt path
+  | Mty_signature sg ->
+      List.iter (function
+            Sig_value (ident, vdesc) ->
+              Format.fprintf fmt "%a: %a: %a"
+                Ident.print ident
+                type_expr vdesc.val_type
+                (fun fmt l -> List.iter (Format.fprintf fmt "%a " raw_type) l; Format.fprintf fmt "@.")
+                vdesc.val_tvars
+          | Sig_type (id, _, _)       -> Format.fprintf fmt "%a@." Ident.print id
+          | Sig_typext (id, _, _)     -> Format.fprintf fmt "%a@." Ident.print id
+          | Sig_module (id, _, _)     -> Format.fprintf fmt "%a@." Ident.print id
+          | Sig_modtype (id, _)       -> Format.fprintf fmt "%a@." Ident.print id
+          | Sig_class (id, _, _)      -> Format.fprintf fmt "%a@." Ident.print id
+          | Sig_class_type (id, _, _) -> Format.fprintf fmt "%a@." Ident.print id
+        ) sg
+  | Mty_functor (id, _, _) -> Ident.print fmt id
+  | Mty_alias path ->  Path.print fmt path
+
+let env fmt env =
+  Env.fold_values (fun str path vdesc () ->
+      Format.fprintf fmt "%a: %a: %a@."
+        Path.print path
+        type_expr vdesc.val_type
+        (fun fmt -> List.iter (Format.fprintf fmt "%a " raw_type)) vdesc.val_tvars
+    ) None env ();
+  Env.fold_modules (fun str path mdesc () ->
+      Format.fprintf fmt "%a: %a@."
+        Path.print path
+        module_type mdesc.md_type
+    ) None env ()

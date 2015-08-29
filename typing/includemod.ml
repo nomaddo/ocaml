@@ -48,11 +48,123 @@ exception Error of error list
    i.e. that x1 is the type of an implementation that fulfills the
    specification x2. If not, Error is raised with a backtrace of the error. *)
 
+let to_type_kind env ty =
+  let open Types in
+  let open Inner_map in
+  let query_env env path =
+    let tydecl = Env.find_type path env in
+    match tydecl.type_kind with
+    | Type_abstract -> Gen
+    | Type_record _ -> P
+    | Type_variant _ -> P
+    | Type_open -> P in
+  let path env p =
+    match p with
+    | Path.Pident _ ->
+        let open Predef in
+        if p = path_int || p = path_char || p = path_bool || p = path_unit then I else
+        if p = path_float then F else
+        if p = path_string || p = path_exn || p = path_array || p = path_list ||
+           p = path_list || p = path_nativeint || p = path_int32 || p = path_int64 ||
+           p = path_lazy_t then P else query_env env p
+    | Path.Pdot _ -> query_env env p
+    | Path.Papply _ -> Gen in
+  let rec inference env ty =
+    match ty.desc with
+    | Tarrow _ | Ttuple _ | Tobject _ | Tfield _ -> P
+    | Tvar _ -> Kvar ty.id
+    | Tunivar _ -> Kvar ty.id (* XXX : Is it really okey ??? *)
+    | Tlink ty -> inference env ty
+    | Tconstr (p, _, _) -> path env p
+    | _ ->
+        (* Format.eprintf "unexpected type: %a\n" *)
+        (*   Printtyp.type_expr ty; *)
+        Gen in
+  inference env (Ctype.unalias_type env ty)
+
+exception FailUnify of Types.type_expr * Types.type_expr
+
+let rec unify env t1 t2 =
+  typ_tbl := [];
+  if t1 == t2 then [] else
+    let t1 = Ctype.unalias_type env t1 |> Ctype.repr in
+    let t2 = Ctype.unalias_type env t2 |> Ctype.repr in
+    unify' env t1 t2
+
+and typ_tbl = ref []
+
+and unify' env t1 t2 =
+  let open Types in
+  if List.exists ((==) t1) !typ_tbl && List.exists ((==) t2) !typ_tbl
+  then [] else begin
+    typ_tbl := t1 :: t2 :: !typ_tbl;
+    let d1 = t1.desc and d2 = t2.desc in
+    begin match d1, d2 with
+    | Tunivar _, Tunivar _  | Tvar _, Tvar _ -> [(t1.id, Inner_map.Kvar t2.id)]
+    | Tvar _, _ ->  [(t1.id, to_type_kind env t2)]
+    | Tarrow (_, ty1, ty1', _), Tarrow (_, ty2, ty2', _) ->
+        unify' env ty1 ty2 @ unify' env ty1' ty2'
+    | Ttuple tys1, Ttuple tys2 ->
+        List.map2 (unify' env) tys1 tys2
+        |> List.flatten
+    | Tconstr (_, tys1, _), Tconstr (_, tys2, _) ->
+        List.map2 (unify' env) tys1 tys2
+        |> List.flatten
+    | Tobject (t1, l1), Tobject (t2, l2) -> []
+    (* XXX: ignore objects *)
+    (* let tys = *)
+    (*   match !l1, !l2 with *)
+    (*   | None, None -> [] *)
+    (*   | Some (p1, l1'), Some (p2, l2') -> *)
+    (*       assert (Path.same p1 p2); *)
+    (*       List.map2 unify' l1' l2' |> List.flatten *)
+    (*   | _ -> assert false in *)
+    (* tys @ unify' t1 t2 *)
+
+    | Tfield (_, _, t1, t1'), Tfield (_, _, t2, t2') -> []
+    (* XXX: ignore methods *)
+    (* unify' t1 t2 @ unify' t1' t2' *)
+    | Tlink ty, _ -> unify' env ty t2
+    | _, Tlink ty -> unify' env t1 ty
+    | Tvariant _, _ -> []
+    | _, Tvariant _ -> []
+    (* ignore polymorphic variants *)
+    (* | Tvariant r1, Tvariant r2 -> *)
+    (*     unify' r1.row_more r2.row_more *)
+    (*     @ (match r1.row_name , r2.row_name with *)
+    (*         | None, None -> [] *)
+    (*         | Some (p1, l1), Some (p2, l2) -> *)
+    (*             assert (Path.same p1 p2); *)
+    (*             List.map2 unify' l1 l2 |> List.flatten *)
+    (*         | _ -> assert false *)
+    (*       ) *)
+    | Tpoly (t1, tys1), Tpoly (t2, tys2) ->
+        let tys = List.map2 (unify' env) tys1 tys2 |> List.flatten in
+        unify' env t1 t2 @ tys
+    | Tpackage (_, _, tys1), Tpackage (_, _, tys2) ->
+        List.map2 (unify' env) tys1 tys2
+        |> List.flatten
+    | Tnil, Tnil -> []
+    | _ -> begin
+        Format.printf "%a\n%a@." Printtyp.type_expr t1 Printtyp.type_expr t2;
+        raise (FailUnify (t1, t2))
+      end
+    end
+  end
+
 (* Inclusion between value descriptions *)
 
 let value_descriptions env cxt subst id vd1 vd2 =
   Cmt_format.record_value_dependency vd1 vd2;
   Env.mark_value_used env (Ident.name id) vd1;
+  begin
+    let ty = Subst.type_expr ~save_id:true subst vd2.val_type in
+    let map = unify env vd1.val_type ty in
+    List.iter (function
+          (id1, (Inner_map.Kvar id2 as kind)) ->
+            if not (id1 = id2) then Inner_map.add_to_cmi id1 kind
+        | (id, kind) -> Inner_map.add_to_cmi id kind) map
+  end;
   let vd2 = Subst.value_description subst vd2 in
   try
     Includecore.value_descriptions env vd1 vd2

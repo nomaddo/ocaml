@@ -351,8 +351,8 @@ let mod_int c1 c2 dbg =
                         [Cconst_symbol "caml_exn_Division_by_zero"]))
   | (c1, Cconst_int (1 | (-1))) ->
       Csequence(c1, Cconst_int 0)
-  | (Cconst_int(0 | 1 | (-1)) as c1, c2) ->
-      Csequence(c2, c1)
+  | (Cconst_int 0, c2) ->
+      Csequence(c2, Cconst_int 0)
   | (Cconst_int n1, Cconst_int n2) ->
       Cconst_int (n1 mod n2)
   | (c1, (Cconst_int n as c2)) when n <> min_int ->
@@ -757,8 +757,7 @@ let make_unsigned_int bi arg =
 (* Big arrays *)
 
 let bigarray_elt_size = function
-  | Pbigarray_unknown -> assert false
-  | Pbigtvar _ -> assert false
+    Pbigarray_unknown -> assert false
   | Pbigarray_float32 -> 4
   | Pbigarray_float64 -> 8
   | Pbigarray_sint8 -> 1
@@ -805,8 +804,7 @@ let bigarray_indexing unsafe elt_kind layout b args dbg =
   Cop(Cadda, [Cop(Cload Word, [field_address b 1]); byte_offset])
 
 let bigarray_word_kind = function
-  | Pbigarray_unknown -> assert false
-  | Pbigtvar _ -> assert false
+    Pbigarray_unknown -> assert false
   | Pbigarray_float32 -> Single
   | Pbigarray_float64 -> Double
   | Pbigarray_sint8 -> Byte_signed
@@ -1314,10 +1312,9 @@ let mono_count =
 
 
 let rec transl = function
-  | Uvar id ->
+    Uvar id ->
       Cvar id
-  | Uspecialized (u, _, _, _) ->      (* ignore type specialization here *)
-      transl u
+  | Uspecialized (ulam, _) -> transl ulam
   | Uconst sc ->
       transl_constant sc
   | Uclosure(fundecls, []) ->
@@ -1632,8 +1629,7 @@ and transl_prim_1 p arg dbg =
   (* Array operations *)
   | Parraylength kind ->
       begin match kind with
-      | Ptvar _
-      | Pgenarray ->
+      | Ptvar _ | Pgenarray ->
           let len =
             if wordsize_shift = numfloat_shift then
               Cop(Clsr, [header(transl arg); Cconst_int wordsize_shift])

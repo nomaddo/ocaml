@@ -19,8 +19,17 @@
 
 (** {6 Generic interface} *)
 
+type ('a, 'b) t =
+  { mutable size: int;                        (* number of entries *)
+    mutable data: ('a, 'b) bucketlist array;  (* the buckets *)
+    mutable seed: int;                        (* for randomization *)
+    initial_size: int;                        (* initial array size *)
+  }
 
-type ('a, 'b) t
+and ('a, 'b) bucketlist =
+    Empty
+  | Cons of 'a * 'b * ('a, 'b) bucketlist
+
 (** The type of hash tables from type ['a] to type ['b]. *)
 
 val create : ?random:bool -> int -> ('a, 'b) t
@@ -345,7 +354,9 @@ val hash_param : int -> int -> 'a -> int
    hashing. Hashing performs a breadth-first, left-to-right traversal
    of the structure [x], stopping after [meaningful] meaningful nodes
    were encountered, or [total] nodes (meaningful or not) were
-   encountered. Meaningful nodes are: integers; floating-point
+   encountered.  If [total] as specified by the user exceeds a certain
+   value, currently 256, then it is capped to that value.
+   Meaningful nodes are: integers; floating-point
    numbers; strings; characters; booleans; and constant
    constructors. Larger values of [meaningful] and [total] means that
    more nodes are taken into account to compute the final hash value,

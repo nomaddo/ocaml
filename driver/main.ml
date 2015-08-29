@@ -83,6 +83,7 @@ module Options = Main_args.Make_bytecomp_options (struct
   let _compat_32 = set bytecode_compatible_32
   let _config = show_config
   let _custom = set custom_runtime
+  let _no_check_prims = set no_check_prims
   let _dllib s = dllibs := Misc.rev_split_words s @ !dllibs
   let _dllpath s = dllpaths := !dllpaths @ [s]
   let _for_pack s = for_package := Some s
@@ -92,6 +93,7 @@ module Options = Main_args.Make_bytecomp_options (struct
   let _impl = impl
   let _intf = intf
   let _intf_suffix s = Config.interface_suffix := s
+  let _keep_docs = set keep_docs
   let _keep_locs = set keep_locs
   let _labels = unset classic
   let _linkall = set link_everything
@@ -139,6 +141,8 @@ module Options = Main_args.Make_bytecomp_options (struct
   let _drawlambda = set dump_rawlambda
   let _dlambda = set dump_lambda
   let _dinstr = set dump_instr
+  (* let _daddvar = set dump_addvar *)
+
   let anonymous = anonymous
 end)
 

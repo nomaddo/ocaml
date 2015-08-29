@@ -17,11 +17,11 @@ open Types
 open Lambda
 
 let type_kind ppf = function
-  | I -> fprintf ppf "I"
-  | F -> fprintf ppf "F"
-  | P -> fprintf ppf "P"
-  | Kvar i -> fprintf ppf "Var %d" i
-  | Gen -> fprintf ppf "Gen"
+  | Inner_map.I -> fprintf ppf "I"
+  | Inner_map.F -> fprintf ppf "F"
+  | Inner_map.P -> fprintf ppf "P"
+  | Inner_map.Kvar i -> fprintf ppf "Var %d" i
+  | Inner_map.Gen -> fprintf ppf "Gen"
 let rec kind_map ppf = function
   | [] -> assert false
   | (i, k) :: [] -> fprintf ppf "%d -> %a" i type_kind k
@@ -92,11 +92,7 @@ let print_bigarray name unsafe kind ppf layout =
      | Pbigarray_caml_int -> "camlint"
      | Pbigarray_native_int -> "nativeint"
      | Pbigarray_complex32 -> "complex32"
-     | Pbigarray_complex64 -> "complex64"
-     | Pbigtvar (ident, i) ->
-         sprintf "bigtvar(%s, %d, %d)"
-           ident.Ident.name ident.Ident.stamp i)
-
+     | Pbigarray_complex64 -> "complex64")
     (match layout with
     |  Pbigarray_unknown_layout -> "unknown"
      | Pbigarray_c_layout -> "C"
@@ -263,8 +259,8 @@ let primitive ppf = function
 let rec lam ppf = function
   | Lvar id ->
       Ident.print ppf id
-  | Lspecialized (l, map, ty, _) ->
-      fprintf ppf "sp(%a, [%a], %a)" lam l kind_map map Printtyp.type_expr ty
+  | Lspecialized (l, map) ->
+      fprintf ppf "sp(%a, [%a])" lam l kind_map map
   | Lconst cst ->
       struct_const ppf cst
   | Lapply(lfun, largs, _) ->

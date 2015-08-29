@@ -81,3 +81,5 @@ val report_ambiguous_type_error:
 
 (* for toploop *)
 val hide_rec_items: signature_item list -> unit
+
+val env: formatter -> Env.t -> unit

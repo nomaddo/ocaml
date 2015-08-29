@@ -34,8 +34,8 @@ and uconstant =
 
 type ulambda =
     Uvar of Ident.t
+  | Uspecialized of ulambda * kind_map
   | Uconst of uconstant
-  | Uspecialized of ulambda * Lambda.kind_map list * Types.type_expr * Env.t
   | Udirect_apply of function_label * ulambda list * Debuginfo.t
   | Ugeneric_apply of ulambda * ulambda list * Debuginfo.t
   | Uclosure of ufunction list * ulambda list
@@ -75,8 +75,7 @@ type function_description =
   { fun_label: function_label;          (* Label of direct entry point *)
     fun_arity: int;                     (* Number of arguments *)
     mutable fun_closed: bool;           (* True if environment not used *)
-    mutable fun_inline:
-      (Ident.t list * ulambda * (Types.type_expr * Types.type_expr list) option) option;
+    mutable fun_inline: (Ident.t list * ulambda) option;
     mutable fun_float_const_prop: bool  (* Can propagate FP consts *)
   }
 
@@ -150,3 +149,71 @@ let compare_structured_constants c1 c2 =
   | Uconst_string s1, Uconst_string s2 -> String.compare s1 s2
   | _, _ -> rank_structured_constant c1 - rank_structured_constant c2
                 (* no overflow possible here *)
+
+let rec subst_array_kind map ulam =
+  let subst = subst_array_kind map in
+  match ulam with
+  | Uprim (prim, args, dinfo) ->
+    begin match prim with
+    | Pmakearray (Ptvar i as k) ->
+        let k = Simplif.gen_kind map i k in
+        Uprim (Pmakearray k, List.map subst args, dinfo)
+    | Parraylength (Ptvar i as k)  ->
+        let k = Simplif.gen_kind map i k in
+        Uprim (Parraylength k, List.map subst args, dinfo)
+    | Parrayrefu (Ptvar i as k)  ->
+        let k = Simplif.gen_kind map i k in
+        Uprim (Parrayrefu k, List.map subst args, dinfo)
+    | Parraysetu (Ptvar i as k)  ->
+        let k = Simplif.gen_kind map i k in
+        Uprim (Parraysetu k, List.map subst args, dinfo)
+    | Parrayrefs (Ptvar i as k)  ->
+        let k = Simplif.gen_kind map i k in
+        Uprim (Parrayrefs k, List.map subst args, dinfo)
+    | Parraysets (Ptvar i as k)  ->
+        let k = Simplif.gen_kind map i k in
+        Uprim (Parraysets k, List.map subst args, dinfo)
+    | _ -> Uprim (prim, List.map subst args, dinfo)
+    end
+  | Uvar _ as u -> u
+  | Uspecialized (u, kind_map) -> Uspecialized (subst u, kind_map)
+  | Uconst _ as u -> u
+  | Udirect_apply (function_label, us, dinfo) ->
+    Udirect_apply (function_label, List.map subst us, dinfo)
+  | Ugeneric_apply (u, us, dinfo) ->
+    Ugeneric_apply (subst u, List.map subst us, dinfo)
+  | Uclosure (ufuncs, ulams) ->
+    let subst_fun ufun = {ufun with body = subst ufun.body} in
+    Uclosure (List.map subst_fun ufuncs, List.map subst ulams)
+  | Uoffset (ulam, i) -> Uoffset (subst ulam, i)
+  | Ulet (id, u1, u2) ->
+    Ulet (id, subst u1, subst u2)
+  | Uletrec (idus, u) ->
+    let subst_pair (id, u) = (id, subst u) in
+    Uletrec (List.map subst_pair idus, subst u)
+  | Uswitch (ulam, ulamswitch) ->
+    let subst_switch sw =
+      {sw with us_actions_blocks = Array.map subst sw.us_actions_blocks;
+               us_actions_consts =Array.map subst sw.us_actions_consts} in
+    Uswitch (subst ulam, subst_switch ulamswitch)
+  | Ustringswitch (ulam, l, uopt) ->
+      let map_pair = (fun (s, u) -> (s, subst u)) in
+      let map_opt = function None -> None | Some e -> Some (subst e) in
+      Ustringswitch (subst ulam, List.map map_pair l, map_opt uopt)
+  | Ustaticfail (i, ulams) ->
+      Ustaticfail (i, List.map subst ulams)
+  | Ucatch (i, ids, ulam1, ulam2) ->
+      Ucatch (i, ids,  subst ulam1, subst ulam2)
+  | Utrywith (ulam1, id, ulam2) ->
+      Utrywith (subst ulam1, id, subst ulam2)
+  | Uifthenelse (ulam1, ulam2, ulam3) ->
+      Uifthenelse (subst ulam1, subst ulam2, subst ulam3)
+  | Usequence (ulam1, ulam2) ->
+      Usequence (subst ulam1, subst ulam2)
+  | Uwhile (ulam1, ulam2) -> Uwhile (subst ulam1, subst ulam2)
+  | Ufor (id, ulam1, ulam2, df, ulam3) ->
+      Ufor (id, subst ulam1, subst ulam2, df, subst ulam3)
+  | Uassign (id, ulam) ->
+      Uassign (id, subst ulam)
+  | Usend (meth_kind, ulam1, ulam2, ulams, dinfo) ->
+      Usend (meth_kind, subst ulam1, subst ulam2, List.map subst ulams, dinfo)

@@ -42,11 +42,22 @@ let remove_loc =
   let open Ast_mapper in
   {default_mapper with location = (fun _this _loc -> Location.none)}
 
-let attrs s x =
-  if s.for_saving && not !Clflags.keep_locs
-  then remove_loc.Ast_mapper.attributes remove_loc x
-  else x
+let is_not_doc = function
+  | ({Location.txt = "ocaml.doc"}, _) -> false
+  | ({Location.txt = "ocaml.text"}, _) -> false
+  | ({Location.txt = "doc"}, _) -> false
+  | ({Location.txt = "text"}, _) -> false
+  | _ -> true
 
+let attrs s x =
+  let x =
+    if s.for_saving && not !Clflags.keep_docs then
+      List.filter is_not_doc x
+    else x
+  in
+    if s.for_saving && not !Clflags.keep_locs
+    then remove_loc.Ast_mapper.attributes remove_loc x
+    else x
 
 let rec module_path s = function
     Pident id as p ->
@@ -81,8 +92,9 @@ let type_path s = function
 let new_id = ref (-1)
 let reset_for_saving () = new_id := -1
 
-let newpersty desc =
+let newpersty ?(old_id) desc =
   decr new_id;
+  begin match old_id with None -> () | Some id -> Inner_map.add id !new_id end;
   { desc = desc; level = generic_level; id = !new_id }
 
 (* ensure that all occurrences of 'Tvar None' are physically shared *)
@@ -94,14 +106,14 @@ let norm = function
   | d -> d
 
 (* Similar to [Ctype.nondep_type_rec]. *)
-let rec typexp s ty =
+let rec typexp ?(save_id=false) ?(copy_all=false) s ty =
   let ty = repr ty in
   match ty.desc with
     Tvar _ | Tunivar _ as desc ->
-      if s.for_saving || ty.id < 0 then
+      if copy_all || ((not save_id) && (s.for_saving || ty.id < 0)) then
         let ty' =
-          if s.for_saving then newpersty (norm desc)
-          else newty2 ty.level desc
+          if s.for_saving then newpersty ~old_id:ty.id (norm desc)
+          else newty2 ~old_id:ty.id ty.level desc
         in
         save_desc ty desc; ty.desc <- Tsubst ty'; ty'
       else ty
@@ -115,24 +127,27 @@ let rec typexp s ty =
     let desc = ty.desc in
     save_desc ty desc;
     (* Make a stub *)
-    let ty' = if s.for_saving then newpersty (Tvar None) else newgenvar () in
+    let ty' =
+      if s.for_saving
+      then newpersty ~old_id:ty.id (Tvar None)
+      else newgenvar ~old_id:ty.id () in
     ty.desc <- Tsubst ty';
     ty'.desc <-
       begin match desc with
       | Tconstr(p, tl, abbrev) ->
-          Tconstr(type_path s p, List.map (typexp s) tl, ref Mnil)
+          Tconstr(type_path s p, List.map (typexp ~save_id ~copy_all s) tl, ref Mnil)
       | Tpackage(p, n, tl) ->
-          Tpackage(modtype_path s p, n, List.map (typexp s) tl)
+          Tpackage(modtype_path s p, n, List.map (typexp ~save_id ~copy_all s) tl)
       | Tobject (t1, name) ->
-          Tobject (typexp s t1,
+          Tobject (typexp ~save_id ~copy_all s t1,
                  ref (match !name with
                         None -> None
                       | Some (p, tl) ->
-                          Some (type_path s p, List.map (typexp s) tl)))
+                          Some (type_path s p, List.map (typexp ~save_id ~copy_all s) tl)))
       | Tfield (m, k, t1, t2)
         when s == identity && ty.level < generic_level && m = dummy_method ->
           (* not allowed to lower the level of the dummy method *)
-          Tfield (m, k, t1, typexp s t2)
+          Tfield (m, k, t1, typexp ~save_id ~copy_all s t2)
       | Tvariant row ->
           let row = row_repr row in
           let more = repr row.row_more in
@@ -151,18 +166,22 @@ let rec typexp s ty =
               let more' =
                 match more.desc with
                   Tsubst ty -> ty
-                | Tconstr _ | Tnil -> typexp s more
+                | Tconstr _ | Tnil -> typexp ~save_id s more
                 | Tunivar _ | Tvar _ ->
                     save_desc more more.desc;
-                    if s.for_saving then newpersty (norm more.desc) else
-                    if dup && is_Tvar more then newgenty more.desc else more
+                    if s.for_saving then newpersty ~old_id:more.id (norm more.desc) else
+                    if dup && is_Tvar more
+                    then begin
+                      let ty' = newgenty ~old_id:more.id more.desc in
+                      ty' end
+                    else more
                 | _ -> assert false
               in
               (* Register new type first for recursion *)
               more.desc <- Tsubst(newgenty(Ttuple[more';ty']));
               (* Return a new copy *)
               let row =
-                copy_row (typexp s) true row (not dup) more' in
+                copy_row (typexp ~save_id ~copy_all s) true row (not dup) more' in
               match row.row_name with
                 Some (p, tl) ->
                   Tvariant {row with row_name = Some (type_path s p, tl)}
@@ -170,106 +189,17 @@ let rec typexp s ty =
                   Tvariant row
           end
       | Tfield(label, kind, t1, t2) when field_kind_repr kind = Fabsent ->
-          Tlink (typexp s t2)
-      | _ -> copy_type_desc (typexp s) desc
+          Tlink (typexp ~save_id ~copy_all s t2)
+      | _ -> copy_type_desc (typexp ~save_id ~copy_all s) desc
       end;
     ty'
-
-(* for Types.value_description.val_tvars *)
-
-let map_tvar : (type_expr * type_expr) list ref = ref []
-let add_map ty ty' = map_tvar := (ty, ty') :: !map_tvar
-let refresh_map () = map_tvar := []
-
-let rec typexp2 s ty =
-  let ty = repr ty in
-  match ty.desc with
-    Tvar _ | Tunivar _ as desc ->
-      if s.for_saving || ty.id < 0 then
-        let ty' =
-          if s.for_saving then newpersty (norm desc)
-          else newty2 ty.level desc
-        in
-        save_desc ty desc; ty.desc <- Tsubst ty';
-        add_map ty ty'; ty'
-      else ty
-  | Tsubst ty ->
-      ty
-(* cannot do it, since it would omit subsitution
-  | Tvariant row when not (static_row row) ->
-      ty
-*)
-  | _ ->
-    let desc = ty.desc in
-    save_desc ty desc;
-    (* Make a stub *)
-    let ty' = if s.for_saving then newpersty (Tvar None) else newgenvar () in
-    ty.desc <- Tsubst ty';
-    ty'.desc <-
-      begin match desc with
-      | Tconstr(p, tl, abbrev) ->
-          Tconstr(type_path s p, List.map (typexp2 s) tl, ref Mnil)
-      | Tpackage(p, n, tl) ->
-          Tpackage(modtype_path s p, n, List.map (typexp2 s) tl)
-      | Tobject (t1, name) ->
-          Tobject (typexp2 s t1,
-                 ref (match !name with
-                        None -> None
-                      | Some (p, tl) ->
-                          Some (type_path s p, List.map (typexp2 s) tl)))
-      | Tfield (m, k, t1, t2)
-        when s == identity && ty.level < generic_level && m = dummy_method ->
-          (* not allowed to lower the level of the dummy method *)
-          Tfield (m, k, t1, typexp2 s t2)
-      | Tvariant row ->
-          let row = row_repr row in
-          let more = repr row.row_more in
-          (* We must substitute in a subtle way *)
-          (* Tsubst takes a tuple containing the row var and the variant *)
-          begin match more.desc with
-            Tsubst {desc = Ttuple [_;ty2]} ->
-              (* This variant type has been already copied *)
-              ty.desc <- Tsubst ty2; (* avoid Tlink in the new type *)
-              Tlink ty2
-          | _ ->
-              let dup =
-                s.for_saving || more.level = generic_level || static_row row ||
-                match more.desc with Tconstr _ -> true | _ -> false in
-              (* Various cases for the row variable *)
-              let more' =
-                match more.desc with
-                  Tsubst ty -> ty
-                | Tconstr _ | Tnil -> typexp2 s more
-                | Tunivar _ | Tvar _ ->
-                    save_desc more more.desc;
-                    if s.for_saving then newpersty (norm more.desc) else
-                    if dup && is_Tvar more then newgenty more.desc else more
-                | _ -> assert false
-              in
-              (* Register new type first for recursion *)
-              more.desc <- Tsubst(newgenty(Ttuple[more';ty']));
-              (* Return a new copy *)
-              let row =
-                copy_row (typexp2 s) true row (not dup) more' in
-              match row.row_name with
-                Some (p, tl) ->
-                  Tvariant {row with row_name = Some (type_path s p, tl)}
-              | None ->
-                  Tvariant row
-          end
-      | Tfield(label, kind, t1, t2) when field_kind_repr kind = Fabsent ->
-          Tlink (typexp2 s t2)
-      | _ -> copy_type_desc (typexp2 s) desc
-      end;
-    ty'
-
 
 (*
    Always make a copy of the type. If this is not done, type levels
    might not be correct.
 *)
-let type_expr s ty =
-  let ty' = typexp2 s ty in
+let type_expr ?(save_id=false) ?(copy_all=false) s ty =
+  let ty' = typexp ~save_id ~copy_all s ty in
   cleanup_types ();
   ty'
 
@@ -381,13 +311,12 @@ let class_type s cty =
   cleanup_types ();
   cty
 
-let value_description s descr =
-  let ty = type_expr s descr.val_type in
-  let tvars = List.map
-      (fun ty -> try
-          List.assoc ty !map_tvar
-        with Not_found -> ty) descr.val_tvars in
-  refresh_map ();
+(* for reconstruction of val_tvars *)
+let free_variables = ref (fun _ -> failwith "undefined free_variables")
+
+let value_description ?(save_id=false) s descr =
+  let ty = type_expr ~save_id s descr.val_type in
+  let tvars = if descr.val_tvars = [] then [] else !free_variables ty in
   { val_type = ty;
     val_kind = descr.val_kind;
     val_loc = loc s descr.val_loc;
@@ -497,3 +426,9 @@ let compose s1 s2 =
     modules = merge_tbls (module_path s2) s1.modules s2.modules;
     modtypes = merge_tbls (modtype s2) s1.modtypes s2.modtypes;
     for_saving = false }
+
+let print fmt {types; modules} =
+  let ident_path_tbl = Tbl.print Ident.print Path.print in
+  Format.fprintf fmt "type: %a@. moudles: %a@. modtypes: ()):"
+    ident_path_tbl types
+    ident_path_tbl modules

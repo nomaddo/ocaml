@@ -56,8 +56,8 @@ let getglobal id =
 let occurs_var var u =
   let rec occurs = function
       Uvar v -> v = var
+    | Uspecialized (ulam, _) -> occurs ulam
     | Uconst _ -> false
-    | Uspecialized (u, _, _, _) -> occurs u
     | Udirect_apply(lbl, args, _) -> List.exists occurs args
     | Ugeneric_apply(funct, args, _) -> occurs funct || List.exists occurs args
     | Uclosure(fundecls, clos) -> List.exists occurs clos
@@ -177,8 +177,8 @@ let lambda_smaller lam threshold =
     if !size > threshold then raise Exit;
     match lam with
       Uvar v -> ()
+    | Uspecialized (ulam, _) -> lambda_size ulam
     | Uconst _ -> incr size
-    | Uspecialized (u, _, _, _) -> lambda_size u
     | Udirect_apply(fn, args, _) ->
         size := !size + 4; lambda_list_size args
     | Ugeneric_apply(fn, args, _) ->
@@ -240,7 +240,6 @@ let lambda_smaller lam threshold =
 
 let rec is_pure_clambda = function
     Uvar v -> true
-  | Uspecialized (u, _, _, _) -> is_pure_clambda u
   | Uconst _ -> true
   | Uprim((Psetglobal _ | Psetfield _ | Psetfloatfield _ | Pduprecord _ |
            Pccall _ | Praise _ | Poffsetref _ | Pstringsetu | Pstringsets |
@@ -531,106 +530,12 @@ let approx_ulam = function
     Uconst c -> Value_const c
   | _ -> Value_unknown
 
-let rec subst_array_kind map ulam =
-  let subst = subst_array_kind map in
-  match ulam with
-  | Uprim (prim, args, dinfo) ->
-    begin match prim with
-    | Pmakearray (Ptvar i as k) ->
-        let k = Simplif.gen_kind map i k in
-        Uprim (Pmakearray k, List.map subst args, dinfo)
-    | Parraylength (Ptvar i as k)  ->
-        let k = Simplif.gen_kind map i k in
-        Uprim (Parraylength k, List.map subst args, dinfo)
-    | Parrayrefu (Ptvar i as k)  ->
-        let k = Simplif.gen_kind map i k in
-        Uprim (Parrayrefu k, List.map subst args, dinfo)
-    | Parraysetu (Ptvar i as k)  ->
-        let k = Simplif.gen_kind map i k in
-        Uprim (Parraysetu k, List.map subst args, dinfo)
-    | Parrayrefs (Ptvar i as k)  ->
-        let k = Simplif.gen_kind map i k in
-        Uprim (Parrayrefs k, List.map subst args, dinfo)
-    | Parraysets (Ptvar i as k)  ->
-        let k = Simplif.gen_kind map i k in
-        Uprim (Parraysets k, List.map subst args, dinfo)
-    | _ -> Uprim (prim, List.map subst args, dinfo)
-    end
-  | Uvar _ as u -> u
-  | Uconst _ as u -> u
-  | Uspecialized (u, map, ty, env) -> Uspecialized (subst u, map, ty, env)
-  | Udirect_apply (function_label, us, dinfo) ->
-    Udirect_apply (function_label, List.map subst us, dinfo)
-  | Ugeneric_apply (u, us, dinfo) ->
-    Ugeneric_apply (subst u, List.map subst us, dinfo)
-  | Uclosure (ufuncs, ulams) ->
-    let subst_fun ufun = {ufun with body = subst ufun.body} in
-    Uclosure (List.map subst_fun ufuncs, List.map subst ulams)
-  | Uoffset (ulam, i) -> Uoffset (subst ulam, i)
-  | Ulet (id, u1, u2) ->
-    Ulet (id, subst u1, subst u2)
-  | Uletrec (idus, u) ->
-    let subst_pair (id, u) = (id, subst u) in
-    Uletrec (List.map subst_pair idus, subst u)
-  | Uswitch (ulam, ulamswitch) ->
-    let subst_switch sw =
-      {sw with us_actions_blocks = Array.map subst sw.us_actions_blocks;
-               us_actions_consts =Array.map subst sw.us_actions_consts} in
-    Uswitch (subst ulam, subst_switch ulamswitch)
-  | Ustringswitch (ulam, l, uopt) ->
-      let map_pair = (fun (s, u) -> (s, subst u)) in
-      let map_opt = function None -> None | Some e -> Some (subst e) in
-      Ustringswitch (subst ulam, List.map map_pair l, map_opt uopt)
-  (* of ulambda * (string * ulambda) list * ulambda option *)
-  | Ustaticfail (i, ulams) ->
-      Ustaticfail (i, List.map subst ulams)
-  (* of int * ulambda list *)
-  | Ucatch (i, ids, ulam1, ulam2) ->
-      Ucatch (i, ids,  subst ulam1, subst ulam2)
-  (* of int * Ident.t list * ulambda * ulambda *)
-  | Utrywith (ulam1, id, ulam2) ->
-      Utrywith (subst ulam1, id, subst ulam2)
-  (* of ulambda * Ident.t * ulambda *)
-  | Uifthenelse (ulam1, ulam2, ulam3) ->
-      Uifthenelse (subst ulam1, subst ulam2, subst ulam3)
-  (* of ulambda * ulambda * ulambda *)
-  | Usequence (ulam1, ulam2) ->
-      Usequence (subst ulam1, subst ulam2)
-  (* of ulambda * ulambda *)
-  | Uwhile (ulam1, ulam2) -> Uwhile (subst ulam1, subst ulam2)
-  (* of ulambda * ulambda *)
-  | Ufor (id, ulam1, ulam2, df, ulam3) ->
-      Ufor (id, subst ulam1, subst ulam2, df, subst ulam3)
-  (* of Ident.t * ulambda * ulambda * direction_flag * ulambda *)
-  | Uassign (id, ulam) ->
-      Uassign (id, subst ulam)
-  (* of Ident.t * ulambda *)
-  | Usend (meth_kind, ulam1, ulam2, ulams, dinfo) ->
-      Usend (meth_kind, subst ulam1, subst ulam2, List.map subst ulams, dinfo)
-  (* of meth_kind * ulambda * ulambda * ulambda list * Debuginfo.t *)
-
 let rec substitute fpc sb ulam =
   match ulam with
     Uvar v ->
       begin try Tbl.find v sb with Not_found -> ulam end
+  | Uspecialized (ulam, kind_map) -> substitute fpc sb ulam
   | Uconst _ -> ulam
-  | Uspecialized (Uvar v, map, ty, env) ->
-      begin try
-        subst_array_kind map (Tbl.find v sb)
-      with Not_found -> ulam
-      (* When Not_found is raised ? *)
-      end
-  | Uspecialized (Uprim ((Pfield _), _, _) as u, map, ty, env)
-  | Uspecialized (Uprim ((Pgetglobal _), _, _) as u, map, ty, env) ->
-      let u = substitute fpc sb u in
-      begin match u with
-      | Uvar _ | Uprim ((Pfield _), _, _) | Uprim ((Pgetglobal _), _, _) ->
-          Uspecialized (u, map, ty, env)
-      | _ -> u
-      end
-  | Uspecialized (ulam, _, _, _) ->
-      Format.printf "Error in substite:\n %a@." Printclambda.clambda ulam;
-      assert(false)
   | Udirect_apply(lbl, args, dbg) ->
       Udirect_apply(lbl, List.map (substitute fpc sb) args, dbg)
   | Ugeneric_apply(fn, args, dbg) ->
@@ -720,9 +625,8 @@ let rec substitute fpc sb ulam =
 
 (* Perform an inline expansion *)
 
-let rec is_simple_argument = function
+let is_simple_argument = function
   | Uvar _  | Uconst _ -> true
-  | Uspecialized (u, _, _, _) -> is_simple_argument u
   | _ -> false
 
 let no_effects = function
@@ -762,7 +666,7 @@ let bind_params fpc params args body =
 
 let rec is_pure = function
     Lvar v -> true
-  | Lspecialized _ -> true
+  | Lspecialized (arg, _) -> is_pure arg
   | Lconst cst -> true
   | Lprim((Psetglobal _ | Psetfield _ | Psetfloatfield _ | Pduprecord _ |
            Pccall _ | Praise _ | Poffsetref _ | Pstringsetu | Pstringsets |
@@ -773,29 +677,31 @@ let rec is_pure = function
 
 (* Generate a direct application *)
 
+let recreate_kind_map (kind_map: Lambda.kind_map) =
+  let rec goto_min id =
+    let lower = try Some (Hashtbl.find Inner_map.inter_tbl id) with Not_found -> None in
+    match lower with
+    | None -> id
+    | Some id' ->
+        assert (id > id');
+        goto_min id' in
+  List.map (fun (id, kind) ->
+      let min = goto_min id in
+      (min, kind)) kind_map
+
 let direct_apply fundesc funct ufunct uargs =
   let app_args =
     if fundesc.fun_closed then uargs else uargs @ [ufunct] in
   let app =
     match ufunct, fundesc.fun_inline with
-    | Uspecialized (ulam, _, sp, env), Some (params, body, Some (ty, typrms))  ->
-        begin try
-          let map = Translcore.make_map env sp typrms ty in
-          let body = subst_array_kind map body in
-          bind_params fundesc.fun_float_const_prop params app_args body
-        (* XXX : why need exception hadling ? *)
-        with _ ->
-          (* Format.printf "direct_apply1: %s@." fundesc.fun_label; *)
-          bind_params fundesc.fun_float_const_prop params app_args body end
     | _, None ->
         Udirect_apply(fundesc.fun_label, app_args, Debuginfo.none)
-    | _, Some (params, body, None) ->
+    | Uspecialized (ulam, kind_map), Some(params, body) ->
+        let map = try recreate_kind_map kind_map with _ -> [] in
         bind_params fundesc.fun_float_const_prop params app_args body
-    | _, Some (params, body, Some _) -> begin
-        (* Format.printf "direct_apply2: %s@." fundesc.fun_label; *)
-        bind_params fundesc.fun_float_const_prop params app_args body
-      end
-  in
+        |> Clambda.subst_array_kind map
+    | _, Some(params, body) ->
+        bind_params fundesc.fun_float_const_prop params app_args body in
   (* If ufunct can contain side-effects or function definitions,
      we must make sure that it is evaluated exactly once.
      If the function is not closed, we evaluate ufunct as part of the
@@ -923,19 +829,57 @@ let rec close fenv cenv = function
         | Const_base(Const_nativeint x) -> str (Uconst_nativeint x)
       in
       make_const (transl cst)
-  | Lspecialized (lam, map, ty, env) ->
-      (* `close` may not return clam Uvar and Uprim (Pfield ...)
-         Then, need to remove Uspecialized here.
-      *)
+  | Lspecialized (lam, map) ->
       let ulam, approx = close fenv cenv lam in
-      begin match ulam with
-      | Uvar _ | Uprim ((Pfield _), _, _) | Uprim ((Pgetglobal _), _, _) ->
-          (Uspecialized (ulam, map, ty, env), approx)
-      | _ -> (ulam, approx)
-      end
+      Uspecialized (ulam, map), approx
   | Lfunction(kind, params, body) as funct ->
       close_one_function fenv cenv (Ident.create "fun") funct
+  (* | Lapply(Lspecialized(lam, kind_map), args, loc) -> ( *)
+  (*     let nargs = List.length args in *)
+  (*     begin match (close fenv cenv lam, close_list fenv cenv args) with *)
+  (*       ((ufunct, Value_closure(fundesc, approx_res)), *)
+  (*        [Uprim(Pmakeblock(_, _), uargs, _)]) *)
+  (*       when List.length uargs = - fundesc.fun_arity -> *)
+  (*         let app = direct_apply ~map:(kind_map, fundesc.fun_modname) fundesc lam ufunct uargs in *)
+  (*         (app, strengthen_approx app approx_res) *)
+  (*     | ((ufunct, Value_closure(fundesc, approx_res)), uargs) *)
+  (*       when nargs = fundesc.fun_arity -> *)
+  (*         let app = direct_apply ~map:(kind_map, fundesc.fun_modname) fundesc lam ufunct uargs in *)
+  (*         (app, strengthen_approx app approx_res) *)
+  (*     | ((ufunct, Value_closure(fundesc, approx_res)), uargs) *)
+  (*         when nargs < fundesc.fun_arity -> *)
+  (*       let first_args = List.map (fun arg -> *)
+  (*         (Ident.create "arg", arg) ) uargs in *)
+  (*       let final_args = *)
+  (*         Array.to_list (Array.init (fundesc.fun_arity - nargs) *)
+  (*                                   (fun _ -> Ident.create "arg")) in *)
+  (*       let rec iter args body = *)
+  (*         match args with *)
+  (*             [] -> body *)
+  (*           | (arg1, arg2) :: args -> *)
+  (*             iter args *)
+  (*               (Ulet ( arg1, arg2, body)) *)
+  (*       in *)
+  (*       let internal_args = *)
+  (*         (List.map (fun (arg1, arg2) -> Lvar arg1) first_args) *)
+  (*         @ (List.map (fun arg -> Lvar arg ) final_args) *)
+  (*       in *)
+  (*       let (new_fun, approx) = close fenv cenv *)
+  (*         (Lfunction( *)
+  (*           Curried, final_args, Lapply(lam, internal_args, loc))) *)
+  (*       in *)
+  (*       let new_fun = iter first_args new_fun in *)
+  (*       (new_fun, approx) *)
 
+  (*     | ((ufunct, Value_closure(fundesc, approx_res)), uargs) *)
+  (*       when fundesc.fun_arity > 0 && nargs > fundesc.fun_arity -> *)
+  (*         let (first_args, rem_args) = split_list fundesc.fun_arity uargs in *)
+  (*         (Ugeneric_apply(direct_apply ~map:(kind_map, fundesc.fun_modname) fundesc lam ufunct first_args, *)
+  (*                         rem_args, Debuginfo.none), *)
+  (*          Value_unknown) *)
+  (*     | ((ufunct, _), uargs) -> *)
+  (*         (Ugeneric_apply(ufunct, uargs, Debuginfo.none), Value_unknown) *)
+  (*     end *)
     (* We convert [f a] to [let a' = a in fun b c -> f a' b c]
        when fun_arity > nargs *)
   | Lapply(funct, args, loc) ->
@@ -982,7 +926,7 @@ let rec close fenv cenv = function
           (Ugeneric_apply(direct_apply fundesc funct ufunct first_args,
                           rem_args, Debuginfo.none),
            Value_unknown)
-      | ((ufunct, _approx), uargs) ->
+      | ((ufunct, _), uargs) ->
           (Ugeneric_apply(ufunct, uargs, Debuginfo.none), Value_unknown)
       end
   | Lsend(kind, met, obj, args, _) ->
@@ -990,14 +934,14 @@ let rec close fenv cenv = function
       let (uobj, _) = close fenv cenv obj in
       (Usend(kind, umet, uobj, close_list fenv cenv args, Debuginfo.none),
        Value_unknown)
-  | Llet(let_kind, id, lam, body) ->
+  | Llet(str, id, lam, body) ->
       let (ulam, alam) = close_named fenv cenv id lam in
-      begin match (let_kind, alam) with
+      begin match (str, alam) with
         (Variable, _) ->
           let (ubody, abody) = close fenv cenv body in
           (Ulet(id, ulam, ubody), abody)
       | (_, Value_const _)
-        when let_kind = Alias || is_pure lam ->
+        when str = Alias || is_pure lam ->
           close (Tbl.add id alam fenv) cenv body
       | (_, _) ->
           let (ubody, abody) = close (Tbl.add id alam fenv) cenv body in
@@ -1257,12 +1201,8 @@ and close_functions fenv cenv fun_defs =
     in
     if lambda_smaller ubody
         (!Clflags.inline_threshold + n)
-    then begin try
-        let o = Hashtbl.find Typetbl.tbl id in
-        match o with
-        | None -> fundesc.fun_inline <- Some(fun_params, ubody, None)
-        | Some ty -> fundesc.fun_inline <- Some(fun_params, ubody, Some ty)
-      with Not_found -> fundesc.fun_inline <- Some(fun_params, ubody, None) end;
+    then fundesc.fun_inline <- Some(fun_params, ubody);
+
     (f, (id, env_pos, Value_closure(fundesc, approx))) in
   (* Translate all function definitions. *)
   let clos_info_list =
@@ -1359,7 +1299,7 @@ let collect_exported_structured_constants a =
     | Value_closure (fd, a) ->
         approx a;
         begin match fd.fun_inline with
-        | Some (_, u, _) -> ulam u
+        | Some (_, u) -> ulam u
         | None -> ()
         end
     | Value_tuple a -> Array.iter approx a
@@ -1377,8 +1317,8 @@ let collect_exported_structured_constants a =
     | Uconst_float_array _ | Uconst_string _ -> ()
   and ulam = function
     | Uvar _ -> ()
+    | Uspecialized (u, _) -> ulam u
     | Uconst c -> const c
-    | Uspecialized (u, _, _, _) -> ulam u
     | Udirect_apply (_, ul, _) -> List.iter ulam ul
     | Ugeneric_apply (u, ul, _) -> ulam u; List.iter ulam ul
     | Uclosure (fl, ul) ->
@@ -1412,59 +1352,6 @@ let reset () =
   global_approx := [||];
   function_nesting_depth := 0
 
-(* XXX: This doesn't seems enough to delete all specialized
-   As adhoc aid, I add Closure flag when outputiig
-*)
-
-let delete_specialized () =
-  let function_description f =
-    let rec ulam u =
-      let map l = List.map ulam l in
-      let map_pair l = List.map (fun (any, u) -> (any, ulam u)) l in
-      let option = function
-        | None -> None
-        | Some u -> Some (ulam u) in
-      let ulambda_switch sw =
-        {sw with us_actions_consts = Array.map ulam sw.us_actions_consts;
-                 us_actions_blocks = Array.map ulam sw.us_actions_blocks} in
-      match u with
-      | Uspecialized (u, _, _, _) -> ulam u (* delete here *)
-      | Uvar _ | Uconst _ -> u
-      | Uletrec (l, u) ->
-          Uletrec (map_pair l, ulam u)
-      | Uprim (p, ul, dbg) -> Uprim (p, map ul, dbg)
-      | Uswitch (u, sw) -> Uswitch (ulam u, ulambda_switch sw)
-      | Uclosure (fl, ul) -> Uclosure (List.map ufunction fl, map ul)
-      | Udirect_apply (a1, ul, a2) -> Udirect_apply (a1, map ul, a2)
-      | Ugeneric_apply (u, ul, a) -> Ugeneric_apply (ulam u, map ul, a)
-      | Uoffset(u, a) -> Uoffset (ulam u, a)
-      | Ulet (a, u1, u2) -> Ulet (a, ulam u1, ulam u2)
-      | Ustringswitch (u, sw, d) -> Ustringswitch (ulam u, map_pair sw, option d)
-      | Ustaticfail (a, ul) -> Ustaticfail (a, map ul)
-      | Ucatch (a, b, u1, u2) -> Ucatch (a, b, ulam u1, ulam u2)
-      | Utrywith (u1, a, u2) -> Utrywith (ulam u1, a, ulam u2)
-      | Usequence (u1, u2) -> Usequence (ulam u1, ulam u2)
-      | Uwhile (u1, u2)  -> Uwhile (ulam u1, ulam u2)
-      | Uifthenelse (u1, u2, u3) -> Uifthenelse (ulam u1, ulam u2, ulam u3)
-      | Ufor (a, u1, u2, b, u3) -> Ufor (a, ulam u1, ulam u2, b, ulam u3)
-      | Uassign (a, u) -> Uassign (a, ulam u)
-      | Usend (a, u1, u2, ul, b) -> Usend (a, ulam u1, ulam u2, map ul, b)
-    and ufunction ufunct =
-      {ufunct with body = ulam ufunct.body} in
-    let inline = f.fun_inline in
-    match inline with
-    | None -> f
-    | Some (ids, u, opt) -> {f with fun_inline = Some (ids, ulam u, opt)} in
-  let rec delete a =
-    match a with
-    | Value_closure (fundesc, approx) ->
-        Value_closure (function_description fundesc, delete approx)
-    | Value_tuple arr -> Value_tuple (Array.map delete arr)
-    | Value_unknown | Value_const _ | Value_global_field _ -> a in
-  for i = 0 to Array.length !global_approx - 1 do
-    !global_approx.(i) <- delete !global_approx.(i)
-  done
-
 (* The entry point *)
 
 let intro size lam =
@@ -1472,8 +1359,7 @@ let intro size lam =
   let id = Compilenv.make_symbol None in
   global_approx := Array.init size (fun i -> Value_global_field (id, i));
   Compilenv.set_global_approx(Value_tuple !global_approx);
-  let (ulam, _) = close Tbl.empty Tbl.empty lam in
-  delete_specialized ();
+  let (ulam, approx) = close Tbl.empty Tbl.empty lam in
   if !Clflags.opaque
   then Compilenv.set_global_approx(Value_unknown)
   else collect_exported_structured_constants (Value_tuple !global_approx);

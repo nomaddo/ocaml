@@ -441,7 +441,7 @@ let rec find_module_descr path env =
         let (p, desc) = EnvTbl.find_same id env.components
         in desc
       with Not_found ->
-        if Ident.persistent id
+        if Ident.persistent id && not (Ident.name id = !current_unit)
         then (find_pers_struct (Ident.name id)).ps_comps
         else raise Not_found
       end
@@ -505,7 +505,7 @@ let find_module ~alias path env =
         let (p, data) = EnvTbl.find_same id env.modules
         in data
       with Not_found ->
-        if Ident.persistent id then
+        if Ident.persistent id && not (Ident.name id = !current_unit) then
           let ps = find_pers_struct (Ident.name id) in
           md (Mty_signature(ps.ps_sig))
         else raise Not_found
@@ -1173,9 +1173,10 @@ let rec prefix_idents root pos sub = function
       let (pl, final_sub) = prefix_idents root pos sub rem in
       (p::pl, final_sub)
 
-let subst_signature sub sg =
-  List.map
-    (fun item ->
+let subst_signature sub pl sg =
+  let module M = Set.Make(struct type t = string let compare = compare end) in
+  List.map2
+    (fun item path ->
       match item with
       | Sig_value(id, decl) ->
           Sig_value (id, Subst.value_description sub decl)
@@ -1192,12 +1193,12 @@ let subst_signature sub sg =
       | Sig_class_type(id, decl, x) ->
           Sig_class_type(id, Subst.cltype_declaration sub decl, x)
     )
-    sg
+    sg pl
 
 
 let prefix_idents_and_subst root sub sg =
   let (pl, sub) = prefix_idents root 0 sub sg in
-  pl, sub, lazy (subst_signature sub sg)
+  pl, sub, lazy (subst_signature sub pl sg)
 
 let prefix_idents_and_subst root sub sg =
   if sub = Subst.identity then
@@ -1313,8 +1314,8 @@ and components_of_module_maker (env, sub, path, mty) =
           fcomp_subst = sub;
           fcomp_cache = Hashtbl.create 17;
           fcomp_subst_cache = Hashtbl.create 17 }
-  | Mty_ident _
-  | Mty_alias _ ->
+  | Mty_ident p
+  | Mty_alias p ->
         Structure_comps {
           comp_values = Tbl.empty;
           comp_constrs = Tbl.empty;
@@ -1674,6 +1675,7 @@ let save_signature_with_imports sg modname filename imports =
   List.iter (fun (name, crc) -> prerr_endline name) imports;*)
   Btype.cleanup_abbrev ();
   Subst.reset_for_saving ();
+  Inner_map.begin_cmi_export ();
   let sg = Subst.signature (Subst.for_saving Subst.identity) sg in
   let oc = open_out_bin filename in
   try

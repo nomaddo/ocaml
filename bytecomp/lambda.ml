@@ -142,7 +142,6 @@ and bigarray_kind =
   | Pbigarray_int32 | Pbigarray_int64
   | Pbigarray_caml_int | Pbigarray_native_int
   | Pbigarray_complex32 | Pbigarray_complex64
-  | Pbigtvar of Ident.t * int
 
 and bigarray_layout =
     Pbigarray_unknown_layout
@@ -169,13 +168,13 @@ type meth_kind = Self | Public | Cached
 
 type shared_code = (int * int) list
 
-type type_kind = I | F | P | Kvar of int | Gen
+type type_kind = Inner_map.type_kind
 
-type kind_map = int * type_kind
+type kind_map = (int * type_kind) list
 
 type lambda =
     Lvar of Ident.t
-  | Lspecialized of lambda * kind_map list * Types.type_expr * Env.t
+  | Lspecialized of lambda * kind_map
   | Lconst of structured_constant
   | Lapply of lambda * lambda list * Location.t
   | Lfunction of function_kind * Ident.t list * lambda
@@ -241,8 +240,8 @@ let make_key e =
         try Ident.find_same id env
         with Not_found -> e
       end
-    | Lspecialized (lam, map, ty, e) ->
-        Lspecialized (tr_rec env lam, map, ty, e)
+    | Lspecialized (lam, kind_map) ->
+        Lspecialized (tr_rec env lam, kind_map)
     | Lconst  (Const_base (Const_string _)|Const_float_array _) ->
         (* Mutable constants are not shared *)
         raise Not_simple
@@ -329,7 +328,7 @@ let iter_opt f = function
 let iter f = function
     Lvar _
   | Lconst _ -> ()
-  | Lspecialized (lam, _, _, _) ->
+  | Lspecialized (lam, _) ->
       f lam
   | Lapply(fn, args, _) ->
       f fn; List.iter f args
@@ -401,7 +400,7 @@ let free_ids get l =
         fv := IdentSet.remove v !fv
     | Lassign(id, e) ->
         fv := IdentSet.add id !fv
-    | Lspecialized (lam, _, _, _) -> ()
+    | Lspecialized (lam, _) -> ()
     | Lvar _ | Lconst _ | Lapply _
     | Lprim _ | Lswitch _ | Lstringswitch _ | Lstaticraise _
     | Lifthenelse _ | Lsequence _ | Lwhile _
@@ -478,7 +477,7 @@ let subst_lambda s lam =
   let rec subst = function
     Lvar id as l ->
       begin try Ident.find_same id s with Not_found -> l end
-  | Lspecialized (lam, map, ty, env) -> Lspecialized (subst lam, map, ty, env)
+  | Lspecialized (lam, m1) -> Lspecialized (subst lam, m1)
   | Lconst sc as l -> l
   | Lapply(fn, args, loc) -> Lapply(subst fn, List.map subst args, loc)
   | Lfunction(kind, params, body) -> Lfunction(kind, params, subst body)
@@ -563,36 +562,3 @@ let lam_of_loc kind loc =
 
 let reset () =
   raise_count := 0
-
-let to_type_kind env ty =
-  let open Types in
-  let query_env path =
-    let tydecl = Env.find_type path env in
-    match tydecl.type_kind with
-    | Type_abstract -> Gen
-    | Type_record _ -> P
-    | Type_variant _ -> P
-    | Type_open -> P in
-  let path p =
-    match p with
-    | Path.Pident ident -> begin
-        match ident.Ident.name with
-        | "int" | "char" | "bool" | "unit" -> I
-        | "float" -> F
-        | "string" | "byte" -> P
-        | "array" -> P
-        | _ -> query_env p end
-    | Path.Pdot _ -> query_env p
-    | Path.Papply _ -> Gen in
-  let rec inference ty =
-    match ty.desc with
-    | Tarrow _ | Ttuple _ | Tobject _ | Tfield _ -> P
-    | Tvar _ -> Kvar ty.id
-    | Tunivar _ -> Kvar ty.id (* XXX : Is it really okey ??? *)
-    | Tlink ty -> inference ty
-    | Tconstr (p, _, _) -> path p
-    | _ ->
-        (* Format.eprintf "unexpected type: %a\n" *)
-        (*   Printtyp.type_expr ty; *)
-        Gen in
-  inference (Ctype.unalias_type env ty)

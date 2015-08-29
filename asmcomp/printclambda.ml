@@ -41,9 +41,9 @@ and uconstant ppf = function
 let rec lam ppf = function
   | Uvar id ->
       Ident.print ppf id
+  | Uspecialized (ulam, map) ->
+      fprintf ppf "@[<2>(specialized*@ %a %a)@]" lam ulam Printlambda.kind_map map
   | Uconst c -> uconstant ppf c
-  | Uspecialized (u, map, ty, _) ->
-      fprintf ppf "sp(%a, [%a], %a)" lam u Printlambda.kind_map map Printtyp.type_expr ty
   | Udirect_apply(f, largs, _) ->
       let lams ppf largs =
         List.iter (fun l -> fprintf ppf "@ %a" lam l) largs in
@@ -193,3 +193,18 @@ let rec approx ppf = function
       fprintf ppf "@[const(%a)@]" uconstant c
   | Value_global_field (s, i) ->
       fprintf ppf "@[global(%s,%i)@]" s i
+
+let rec inlined_bodies ppf = function
+    Value_closure(fundesc, a) ->
+      Format.fprintf ppf "@[<2>function %s: " fundesc.fun_label;
+      begin match fundesc.fun_inline with
+      | None -> Format.fprintf ppf "empty@."
+      | Some body -> Format.fprintf ppf "\n%a@." (fun fmt (_, body) -> clambda fmt body) body end
+  | Value_tuple a ->
+      let tuple ppf a =
+        for i = 0 to Array.length a - 1 do
+          if i > 0 then Format.fprintf ppf ";@ ";
+          Format.fprintf ppf "%i: %a" i inlined_bodies a.(i)
+        done in
+      Format.fprintf ppf "@[<hov 1>(%a)@]" tuple a
+  | _ -> ()

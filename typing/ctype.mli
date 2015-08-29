@@ -39,7 +39,7 @@ val restore_global_level: int -> unit
         (* This pair of functions is only used in Typetexp *)
 
 val newty: type_desc -> type_expr
-val newvar: ?name:string -> unit -> type_expr
+val newvar: ?name:string -> ?old_id:int -> unit -> type_expr
 val newvar2: ?name:string -> int -> type_expr
         (* Return a fresh variable *)
 val new_global_var: ?name:string -> unit -> type_expr
@@ -52,8 +52,6 @@ val none: type_expr
 
 val repr: type_expr -> type_expr
         (* Return the canonical representative of a type. *)
-
-val duplicate_whole_type: type_expr -> type_expr
 
 val object_fields: type_expr -> type_expr
 val flatten_fields:
@@ -146,6 +144,7 @@ val try_expand_once_opt: Env.t -> type_expr -> type_expr
 val expand_head_opt: Env.t -> type_expr -> type_expr
 (** The compiler's own version of [expand_head] necessary for type-based
     optimisations. *)
+
 val full_expand: Env.t -> type_expr -> type_expr
 val extract_concrete_typedecl:
         Env.t -> type_expr -> Path.t * Path.t * type_declaration
@@ -283,6 +282,5 @@ val package_subtype :
 
 module TvarSet : sig
   val extract : type_expr -> type_expr list
-  val is_gadt : Env.t -> Path.t -> bool
-  val include_gadt : Env.t -> type_expr -> bool
+  val create_tvars : Env.t -> type_expr -> type_expr list
 end

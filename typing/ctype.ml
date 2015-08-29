@@ -184,7 +184,7 @@ let newty2             = Btype.newty2
 let newty desc         = newty2 !current_level desc
 let new_global_ty desc = newty2 !global_level desc
 
-let newvar ?name ()         = newty2 !current_level (Tvar name)
+let newvar ?name ?old_id ()         = newty2 ?old_id !current_level (Tvar name)
 let newvar2 ?name level     = newty2 level (Tvar name)
 let new_global_var ?name () = newty2 !global_level (Tvar name)
 
@@ -524,7 +524,6 @@ let rec free_vars_rec real ty =
   end
 
 let free_vars ?env ty =
-  (* output *)
   free_variables := [];
   really_closed := env;
   free_vars_rec true ty;
@@ -636,9 +635,6 @@ let duplicate_type ty =
 (* Same, for class types *)
 let duplicate_class_type ty =
   Subst.class_type Subst.identity ty
-
-let duplicate_whole_type ty =
-  Subst.type_expr (Subst.for_saving Subst.identity) ty
 
                          (*****************************)
                          (*  Type level manipulation  *)
@@ -993,7 +989,7 @@ let rec copy ?env ?partial ?keep_names ty =
     if forget <> generic_level then newty2 forget (Tvar None) else
     let desc = ty.desc in
     save_desc ty desc;
-    let t = newvar() in          (* Stub *)
+    let t = newvar ~old_id:ty.id () in          (* Stub *)
     begin match env with
       Some env when Env.has_local_constraints env ->
         begin match Env.gadt_instance_level env ty with
@@ -1670,10 +1666,11 @@ exception Occur
 
 let rec occur_rec env visited ty0 ty =
   if ty == ty0  then raise Occur;
+  let occur_ok = !Clflags.recursive_types && is_contractive env ty in
   match ty.desc with
     Tconstr(p, tl, abbrev) ->
       begin try
-        if List.memq ty visited || !Clflags.recursive_types then raise Occur;
+        if occur_ok || List.memq ty visited then raise Occur;
         iter_type_expr (occur_rec env (ty::visited) ty0) ty
       with Occur -> try
         let ty' = try_expand_head try_expand_once env ty in
@@ -1684,15 +1681,15 @@ let rec occur_rec env visited ty0 ty =
         match ty'.desc with
           Tobject _ | Tvariant _ -> ()
         | _ ->
-            if not !Clflags.recursive_types then
+            if not (!Clflags.recursive_types && is_contractive env ty') then
               iter_type_expr (occur_rec env (ty'::visited) ty0) ty'
       with Cannot_expand ->
-        if not !Clflags.recursive_types then raise Occur
+        if not occur_ok then raise Occur
       end
   | Tobject _ | Tvariant _ ->
       ()
   | _ ->
-      if not !Clflags.recursive_types then
+      if not occur_ok then
         iter_type_expr (occur_rec env visited ty0) ty
 
 let type_changed = ref false (* trace possible changes to the studied type *)
@@ -4560,39 +4557,51 @@ let rec collapse_conj env visited ty =
 let collapse_conj_params env params =
   List.iter (collapse_conj env []) params
 
+(* utility for creating val_tvars and judging wheather gadt is *)
 module TvarSet = struct
   let is_gadt_tbl : (Path.t, bool ) Hashtbl.t =
     Hashtbl.create 100
 
-  let is_gadt : Env.t -> Path.t -> bool = fun env path ->
+  let is_gadt env path =
     match Hashtbl.find_all is_gadt_tbl path with
-    | [] -> begin (*  first case *)
+    | [] -> begin               (* if we see the path first *)
         let type_decl = Env.find_type path env in
         let ans = match type_decl.type_kind with
           | Type_abstract | Type_record _ | Type_open -> false
           | Type_variant cds -> begin try
-                List.iter
-                  (fun {cd_res} -> match cd_res with
-                     | None -> ()
-                     | Some _ -> raise Exit) cds
-                |> ignore; false
+                List.iter (fun {cd_res} -> match cd_res with
+                    | None -> ()
+                    | Some _ -> raise Exit) cds;
+                false
               with Exit -> true end in
         Hashtbl.add is_gadt_tbl path ans; ans
       end
-    | [ans] -> ans
+    | [ans] -> ans              (* return cached result *)
     | _ -> assert false
 
-  let include_gadt : Env.t -> type_expr -> bool = fun env ty ->
+  (* XXX: advaince menas objects, poly-variant and gadts *)
+  let include_adv_features env ty =
+    let rec loop tyl ty =
+      if List.memq ty !tyl then () else begin
+        tyl := ty :: !tyl;
+        match ty.desc with
+        | Tconstr (path, tys, abbrev) ->
+            if is_gadt env path then raise Exit else List.iter (loop tyl) tys
+        | Tlink ty -> loop tyl ty
+        | Tobject _ | Tfield _ | Tvariant _ -> raise Exit
+        | _ -> Btype.iter_type_expr (loop tyl) ty
+      end in
     try
-      Btype.iter_type_expr (fun {desc} ->
-          match desc with
-          | Tconstr (path, tys, abbrev) ->
-              if is_gadt env path then raise Exit
-          | _ -> ()) ty;
-      false
+      loop (ref []) ty; false
     with Exit -> true
 
   let extract ty =
     let tvars = free_variables ty in
     List.filter (fun {level} -> generic_level = level) tvars
+
+  let create_tvars env ty =
+    if include_adv_features env ty then []
+    else extract ty
 end
+
+let _ = Subst.free_variables := free_variables ?env:None;

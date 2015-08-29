@@ -24,5 +24,11 @@ case $1 in
   printf.cm[io]|format.cm[io]|scanf.cm[io]) echo ' -w Ae';;
   scanf.cmx|scanf.p.cmx) echo ' -inline 9';;
   *Labels.cm[ox]|*Labels.p.cmx) echo ' -nolabels -no-alias-deps';;
+  array.cmx|array.p.cmx) echo '-inline 100000000';;
   *) echo ' ';;
+esac
+
+str=$1
+case ${str##*.} in
+    cmx) echo '-inline 100000000';;
 esac

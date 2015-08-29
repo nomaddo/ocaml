@@ -142,7 +142,6 @@ and bigarray_kind =
   | Pbigarray_int32 | Pbigarray_int64
   | Pbigarray_caml_int | Pbigarray_native_int
   | Pbigarray_complex32 | Pbigarray_complex64
-  | Pbigtvar of Ident.t * int
 
 and bigarray_layout =
     Pbigarray_unknown_layout
@@ -178,12 +177,12 @@ type meth_kind = Self | Public | Cached
 
 type shared_code = (int * int) list     (* stack size -> code label *)
 
-type type_kind = I | F | P | Kvar of int | Gen
-type kind_map = int * type_kind
+type type_kind = Inner_map.type_kind
+type kind_map = (int * type_kind) list
 
 type lambda =
     Lvar of Ident.t
-  | Lspecialized of lambda * kind_map list * Types.type_expr * Env.t
+  | Lspecialized of lambda * kind_map
   | Lconst of structured_constant
   | Lapply of lambda * lambda list * Location.t
   | Lfunction of function_kind * Ident.t list * lambda
@@ -268,6 +267,3 @@ val raise_kind: raise_kind -> string
 val lam_of_loc : loc_kind -> Location.t -> lambda
 
 val reset: unit -> unit
-
-(* for array_kind Ptvar *)
-val to_type_kind: Env.t -> Types.type_expr -> type_kind

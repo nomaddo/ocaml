@@ -128,6 +128,7 @@ type rhs_kind =
   | RHS_block of int
   | RHS_floatblock of int
   | RHS_nonrec
+  | RHS_function of int * int
 ;;
 
 let rec check_recordwith_updates id e =
@@ -140,7 +141,7 @@ let rec check_recordwith_updates id e =
 
 let rec size_of_lambda = function
   | Lfunction(kind, params, body) as funct ->
-      RHS_block (1 + IdentSet.cardinal(free_variables funct))
+      RHS_function (1 + IdentSet.cardinal(free_variables funct), List.length params)
   | Llet (Strict, id, Lprim (Pduprecord (kind, size), _), body)
     when check_recordwith_updates id body ->
       begin match kind with
@@ -348,15 +349,19 @@ let comp_primitive p args =
   | Pstring_set_64(_) -> Kccall("caml_string_set64", 3)
   | Parraylength kind -> Kvectlength
   | Parrayrefs Pgenarray -> Kccall("caml_array_get", 2)
+  | Parrayrefs (Ptvar _) -> Kccall("caml_array_get", 2)
   | Parrayrefs Pfloatarray -> Kccall("caml_array_get_float", 2)
   | Parrayrefs _ -> Kccall("caml_array_get_addr", 2)
   | Parraysets Pgenarray -> Kccall("caml_array_set", 3)
+  | Parraysets (Ptvar _) -> Kccall("caml_array_set", 3)
   | Parraysets Pfloatarray -> Kccall("caml_array_set_float", 3)
   | Parraysets _ -> Kccall("caml_array_set_addr", 3)
   | Parrayrefu Pgenarray -> Kccall("caml_array_unsafe_get", 2)
+  | Parrayrefu (Ptvar _) -> Kccall("caml_array_unsafe_get", 2)
   | Parrayrefu Pfloatarray -> Kccall("caml_array_unsafe_get_float", 2)
   | Parrayrefu _ -> Kgetvectitem
   | Parraysetu Pgenarray -> Kccall("caml_array_unsafe_set", 3)
+  | Parraysetu (Ptvar _) -> Kccall("caml_array_unsafe_set", 3)
   | Parraysetu Pfloatarray -> Kccall("caml_array_unsafe_set_float", 3)
   | Parraysetu _ -> Ksetvectitem
   | Pctconst c ->
@@ -443,7 +448,7 @@ let rec comp_expr env exp sz cont =
       with Not_found ->
         fatal_error ("Bytegen.comp_expr: var " ^ Ident.unique_name id)
       end
-  | Lspecialized (lam, _, _, _) -> comp_expr env lam sz cont
+  | Lspecialized (lam, _) -> comp_expr env lam sz cont
   | Lconst cst ->
       Kconst cst :: cont
   | Lapply(func, args, loc) ->
@@ -535,19 +540,25 @@ let rec comp_expr env exp sz cont =
               Kconst(Const_base(Const_int blocksize)) ::
               Kccall("caml_alloc_dummy", 1) :: Kpush ::
               comp_init (add_var id (sz+1) new_env) (sz+1) rem
+          | (id, exp, RHS_function (blocksize,arity)) :: rem ->
+              Kconst(Const_base(Const_int arity)) ::
+              Kpush ::
+              Kconst(Const_base(Const_int blocksize)) ::
+              Kccall("caml_alloc_dummy_function", 2) :: Kpush ::
+              comp_init (add_var id (sz+1) new_env) (sz+1) rem
           | (id, exp, RHS_nonrec) :: rem ->
               Kconst(Const_base(Const_int 0)) :: Kpush ::
               comp_init (add_var id (sz+1) new_env) (sz+1) rem
         and comp_nonrec new_env sz i = function
           | [] -> comp_rec new_env sz ndecl decl_size
-          | (id, exp, (RHS_block _ | RHS_floatblock _)) :: rem ->
+          | (id, exp, (RHS_block _ | RHS_floatblock _ | RHS_function _)) :: rem ->
               comp_nonrec new_env sz (i-1) rem
           | (id, exp, RHS_nonrec) :: rem ->
               comp_expr new_env exp sz
                 (Kassign (i-1) :: comp_nonrec new_env sz (i-1) rem)
         and comp_rec new_env sz i = function
           | [] -> comp_expr new_env body sz (add_pop ndecl cont)
-          | (id, exp, (RHS_block _ | RHS_floatblock _)) :: rem ->
+          | (id, exp, (RHS_block _ | RHS_floatblock _ | RHS_function _)) :: rem ->
               comp_expr new_env exp sz
                 (Kpush :: Kacc i :: Kccall("caml_update_dummy", 2) ::
                  comp_rec new_env sz (i-1) rem)

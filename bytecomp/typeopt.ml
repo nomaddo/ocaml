@@ -17,8 +17,6 @@ open Types
 open Typedtree
 open Lambda
 
-module IntS = Set.Make(struct type t = int let compare = compare end)
-
 let scrape env ty =
   (Ctype.repr (Ctype.expand_head_opt env (Ctype.correct_levels ty))).desc
 
@@ -48,29 +46,10 @@ let maybe_pointer exp =
       end
   | _ -> true
 
-
-(* XXX : should change the function name *)
-let ptvar_gen stack ty =
-  let search set ty =
-    try Some (IntS.find ty.id set) with Not_found -> None in
-  let s = Stack.copy stack in
-  let rec loop () =
-    if Stack.is_empty s then None else
-      let tys = Stack.pop s in
-      match search tys ty with
-      | Some i ->
-          Some i
-      | None -> loop () in
-  loop ()
-
-let array_element_kind env stack ty =
+let array_element_kind env ty =
   let ty = scrape2 env ty in
   match ty.desc with
-  | Tvar _ ->
-      begin match ptvar_gen stack ty with
-      | Some i -> Ptvar i
-      | None -> Pgenarray
-      end
+  | Tvar _ -> Ptvar ty.id
   | Tunivar _ -> Pgenarray (* XXX: is it okey ? *)
   | Tconstr(p, args, abbrev) ->
       if Path.same p Predef.path_int || Path.same p Predef.path_char then
@@ -102,18 +81,18 @@ let array_element_kind env stack ty =
   | _ ->
       Paddrarray
 
-let array_kind_gen stack ty env =
+let array_kind_gen ty env =
   match scrape env ty with
   | Tconstr(p, [elt_ty], _) | Tpoly({desc = Tconstr(p, [elt_ty], _)}, _)
     when Path.same p Predef.path_array ->
-      array_element_kind env stack elt_ty
+      array_element_kind env elt_ty
   | _ ->
       (* This can happen with e.g. Obj.field *)
       Pgenarray
 
-let array_kind stack exp = array_kind_gen stack exp.exp_type exp.exp_env
+let array_kind exp = array_kind_gen exp.exp_type exp.exp_env
 
-let array_pattern_kind ?(stack=Stack.create ()) pat = array_kind_gen stack pat.pat_type pat.pat_env
+let array_pattern_kind pat = array_kind_gen pat.pat_type pat.pat_env
 
 let bigarray_decode_type env ty tbl dfl =
   match scrape env ty with

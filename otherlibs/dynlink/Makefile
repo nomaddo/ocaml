@@ -16,11 +16,12 @@
 # FIXME reduce redundancy by including ../Makefile
 
 include ../../config/Makefile
+CAMLRUN ?= ../../boot/ocamlrun
+CAMLYACC ?= ../../boot/ocamlyacc
 
 ROOTDIR   = ../..
-OCAMLRUN  = $(ROOTDIR)/boot/ocamlrun
-OCAMLC    = $(OCAMLRUN) $(ROOTDIR)/ocamlc -nostdlib -I $(ROOTDIR)/stdlib
-OCAMLOPT  = $(OCAMLRUN) $(ROOTDIR)/ocamlopt -nostdlib -I $(ROOTDIR)/stdlib
+OCAMLC    = $(CAMLRUN) $(ROOTDIR)/ocamlc -nostdlib -I $(ROOTDIR)/stdlib
+OCAMLOPT  = $(CAMLRUN) $(ROOTDIR)/ocamlopt -nostdlib -I $(ROOTDIR)/stdlib
 
 INCLUDES=-I ../../utils -I ../../typing -I ../../bytecomp -I ../../asmcomp
 COMPFLAGS=-w +33..39 -warn-error A -bin-annot -g -safe-string \
@@ -34,11 +35,11 @@ COMPILEROBJS=\
   ../../utils/terminfo.cmo ../../utils/warnings.cmo \
   ../../parsing/asttypes.cmi \
   ../../parsing/location.cmo ../../parsing/longident.cmo \
-  ../../parsing/ast_helper.cmo \
+  ../../parsing/docstrings.cmo ../../parsing/ast_helper.cmo \
   ../../parsing/ast_mapper.cmo \
   ../../typing/ident.cmo ../../typing/path.cmo \
   ../../typing/primitive.cmo ../../typing/types.cmo \
-  ../../typing/btype.cmo ../../typing/subst.cmo ../../typing/predef.cmo \
+  ../../typing/btype.cmo ../../typing/inner_map.cmo ../../typing/subst.cmo ../../typing/predef.cmo \
   ../../typing/datarepr.cmo ../../typing/cmi_format.cmo ../../typing/env.cmo \
   ../../typing/ctype.cmo ../../typing/oprint.cmo ../../typing/printtyp.cmo \
   ../../bytecomp/lambda.cmo ../../bytecomp/instruct.cmo \
@@ -72,7 +73,7 @@ dynlink.cmx: dynlink.cmi natdynlink.ml
 	rm -f dynlink.mlopt
 
 extract_crc: dynlink.cma extract_crc.cmo
-	$(OCAMLC) $(COMPFLAGS) -o extract_crc dynlink.cma extract_crc.cmo
+	$(OCAMLC) -o extract_crc dynlink.cma extract_crc.cmo
 
 INSTALL_LIBDIR=$(DESTDIR)$(LIBDIR)
 

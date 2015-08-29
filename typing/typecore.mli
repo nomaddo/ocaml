@@ -41,6 +41,9 @@ val type_self_pattern:
         (Ident.t * Asttypes.mutable_flag * Asttypes.virtual_flag * type_expr)
             Vars.t ref *
         Env.t * Env.t * Env.t
+val check_partial:
+        ?lev:int -> Env.t -> type_expr ->
+	Location.t -> Typedtree.case list -> Typedtree.partial
 val type_expect:
         ?in_function:(Location.t * type_expr) ->
         Env.t -> Parsetree.expression -> type_expr -> Typedtree.expression
@@ -133,3 +136,6 @@ val type_package:
 val create_package_type : Location.t -> Env.t ->
   Longident.t * (Longident.t * Parsetree.core_type) list ->
   Path.t * (Longident.t * Typedtree.core_type) list * Types.type_expr
+
+(* For array_kind optimization *)
+val poly_funs : (Ident.t, (type_expr * type_expr list)) Hashtbl.t

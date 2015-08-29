@@ -117,6 +117,8 @@ let snd3 (_,x,_) = x
 let case lhs rhs =
   {c_lhs = lhs; c_guard = None; c_rhs = rhs}
 
+let poly_funs = Hashtbl.create 100
+
 (* Upper approximation of free identifiers on the parse tree *)
 
 let iter_expression f e =
@@ -282,6 +284,7 @@ let extract_concrete_record env ty =
 let extract_concrete_variant env ty =
   match extract_concrete_typedecl env ty with
     (p0, p, {type_kind=Type_variant cstrs}) -> (p0, p, cstrs)
+  | (p0, p, {type_kind=Type_open}) -> (p0, p, [])
   | _ -> raise Not_found
 
 let extract_label_names sexp env ty =
@@ -596,7 +599,7 @@ end) = struct
   open Name
 
   let get_type_path env d =
-    match (get_type d).desc with
+    match (repr (get_type d)).desc with
     | Tconstr(p, _, _) -> p
     | _ -> assert false
 
@@ -1241,6 +1244,9 @@ let partial_pred ~lev env expected_ty constrs labels p =
     backtrack snap;
     None
 
+let check_partial ?(lev=get_current_level ()) env expected_ty =
+  Parmatch.check_partial_gadt (partial_pred ~lev env expected_ty)
+
 let rec iter3 f lst1 lst2 lst3 =
   match lst1,lst2,lst3 with
   | x1::xs1,x2::xs2,x3::xs3 ->
@@ -1257,9 +1263,7 @@ let add_pattern_variables ?check ?check_as env =
      (fun (id, ty, name, loc, as_var) env ->
        let check = if as_var then check_as else check in
        Env.add_value ?check id
-         {val_type = ty;
-          val_kind = Val_reg;
-          Types.val_loc = loc;
+         {val_type = ty; val_kind = Val_reg; Types.val_loc = loc;
           val_attributes = [];
           val_tvars = [];
          } env
@@ -1302,12 +1306,11 @@ let type_class_arg_pattern cl_num val_env met_env l spat =
            else Warnings.Unused_var_strict s in
          let id' = Ident.create (Ident.name id) in
          ((id', name, id, ty)::pv,
-          Env.add_value id'
-            {val_type = ty;
-             val_kind = Val_ivar (Immutable, cl_num);
-             val_attributes = [];
-             Types.val_loc = loc;
-             val_tvars = []} ~check
+          Env.add_value id' {val_type = ty;
+                             val_kind = Val_ivar (Immutable, cl_num);
+                             val_attributes = [];
+                             Types.val_loc = loc;
+                             val_tvars = []} ~check
             env))
       !pattern_variables ([], met_env)
   in
@@ -1330,28 +1333,24 @@ let type_self_pattern cl_num privty val_env met_env par_env spat =
   pattern_variables := [];
   let (val_env, met_env, par_env) =
     List.fold_right
-      (fun (id, ty, name, loc, as_var)
-        (val_env, met_env, par_env) ->
-         (Env.add_value id
-            {val_type = ty;
-             val_kind = Val_unbound;
-             val_attributes = [];
-             Types.val_loc = loc;
-             val_tvars = []} val_env,
-          Env.add_value id
-            { val_type = ty;
-              val_kind = Val_self (meths, vars, cl_num, privty);
-              val_attributes = [];
-              Types.val_loc = loc;
-              val_tvars = []}
+      (fun (id, ty, name, loc, as_var) (val_env, met_env, par_env) ->
+         (Env.add_value id {val_type = ty;
+                            val_kind = Val_unbound;
+                            val_attributes = [];
+                            Types.val_loc = loc;
+                            val_tvars = []} val_env,
+          Env.add_value id {val_type = ty;
+                            val_kind = Val_self (meths, vars, cl_num, privty);
+                            val_attributes = [];
+                            Types.val_loc = loc;
+                            val_tvars = []}
             ~check:(fun s -> if as_var then Warnings.Unused_var s
                              else Warnings.Unused_var_strict s)
             met_env,
-          Env.add_value id
-            {val_type = ty; val_kind = Val_unbound;
-             val_attributes = [];
-             Types.val_loc = loc;
-             val_tvars = []} par_env))
+          Env.add_value id {val_type = ty; val_kind = Val_unbound;
+                            val_attributes = [];
+                            Types.val_loc = loc;
+                            val_tvars = []} par_env))
       pv (val_env, met_env, par_env)
   in
   (pat, meths, vars, val_env, met_env, par_env)
@@ -1615,8 +1614,7 @@ let create_package_type loc env (p, l) =
        Exp.letmodule ~loc:sexp.pexp_loc
          name
          (Mod.unpack ~loc
-            (Exp.ident ~loc:name.loc
-               (mkloc (Longident.Lident name.txt) name.loc)))
+            (Exp.ident ~loc:name.loc (mkloc (Longident.Lident name.txt) name.loc)))
          sexp
      )
     sexp unpacks
@@ -1852,7 +1850,7 @@ and type_expect_ ?in_function env sexp ty_expected =
         exp_loc = loc; exp_extra = [];
         exp_type = body.exp_type;
         exp_attributes = sexp.pexp_attributes;
-        exp_env = (* new_ *) env } (* XXX : change env to new_env here *)
+        exp_env = new_env } (* XXX : change env to new_env here *)
   | Pexp_fun (l, Some default, spat, sexp) ->
       assert(is_optional l); (* default allowed only with optional argument *)
       let open Ast_helper in
@@ -2874,6 +2872,7 @@ and type_format loc str env =
         | Bool_ty rest      -> mk_constr "Bool_ty"      [ mk_fmtty rest ]
         | Alpha_ty rest     -> mk_constr "Alpha_ty"     [ mk_fmtty rest ]
         | Theta_ty rest     -> mk_constr "Theta_ty"     [ mk_fmtty rest ]
+        | Any_ty rest       -> mk_constr "Any_ty"       [ mk_fmtty rest ]
         | Reader_ty rest    -> mk_constr "Reader_ty"    [ mk_fmtty rest ]
         | Ignored_reader_ty rest ->
           mk_constr "Ignored_reader_ty" [ mk_fmtty rest ]
@@ -2993,6 +2992,10 @@ and type_format loc str env =
           mk_constr "Ignored_param" [ mk_ignored ign; mk_fmt rest ]
         | End_of_format ->
           mk_constr "End_of_format" []
+        | Custom _ ->
+          (* Custom formatters have no syntax so they will never appear
+             in formats parsed from strings. *)
+          assert false
       in
       let legacy_behavior = not !Clflags.strict_formats in
       let Fmt_EBB fmt = fmt_ebb_of_string ~legacy_behavior str in
@@ -3535,7 +3538,7 @@ and type_cases ?in_function env ty_arg ty_res partial_flag loc caselist =
   end;
   let partial =
     if partial_flag then
-      Parmatch.check_partial_gadt (partial_pred ~lev env ty_arg) loc cases
+      check_partial ~lev env ty_arg loc cases
     else
       Partial
   in
@@ -3713,7 +3716,8 @@ and type_let ?(check = fun s -> Warnings.Unused_var s)
     Location.prerr_warning (List.hd spat_sexp_list).pvb_pat.ppat_loc
       Warnings.Unused_rec_flag;
   List.iter2
-    (fun pat exp -> ignore(Parmatch.check_partial pat.pat_loc [case pat exp]))
+    (fun pat exp ->
+      ignore(check_partial env pat.pat_type pat.pat_loc [case pat exp]))
     pat_list exp_list;
   end_def();
   List.iter2
@@ -3733,18 +3737,15 @@ and type_let ?(check = fun s -> Warnings.Unused_var s)
         })
       l spat_sexp_list
   in
-  (* update val_tvars included in target let bindings *)
+  (* update val_tvars *)
   let new_env =
     Typedtree.let_bound_idents l
     |> List.fold_left (fun env id ->
         let vb = Env.find_value (Path.Pident id) new_env in
-        let tvars =
-          if TvarSet.include_gadt env vb.val_type
-          then []
-          else TvarSet.extract vb.val_type in
-        if tvars <> []
-        then Hashtbl.add Typetbl.tbl id (Some (vb.val_type, tvars))
-        else Hashtbl.add Typetbl.tbl id None;
+        let tvars = TvarSet.create_tvars env vb.val_type in
+        begin
+          if tvars <> []
+          then Hashtbl.add poly_funs id (vb.val_type, tvars) end;
         Env.add_value id {vb with val_tvars = tvars} env)
       new_env
   in

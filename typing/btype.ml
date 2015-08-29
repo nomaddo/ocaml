@@ -26,6 +26,8 @@ module TypeHash = Hashtbl.Make(TypeOps)
 let print_raw =
   ref (fun _ -> assert false : Format.formatter -> type_expr -> unit)
 
+let add_tbl = ref (fun _ -> failwith "not implemented")
+
 (**** Type level management ****)
 
 let generic_level = 100000000
@@ -39,10 +41,14 @@ let pivot_level = 2 * lowest_level - 1
 
 let new_id = ref (-1)
 
-let newty2 level desc  =
-  incr new_id; { desc; level; id = !new_id }
-let newgenty desc      = newty2 generic_level desc
-let newgenvar ?name () = newgenty (Tvar name)
+let newty2 ?old_id level desc  =
+  incr new_id;
+  let id = !new_id in
+  begin match old_id with None -> () | Some id' -> !add_tbl id' id end;
+  { desc; level; id }
+
+let newgenty ?old_id desc      = newty2 ?old_id generic_level desc
+let newgenvar ?name ?old_id () = newgenty ?old_id (Tvar name)
 (*
 let newmarkedvar level =
   incr new_id; { desc = Tvar; level = pivot_level - level; id = !new_id }

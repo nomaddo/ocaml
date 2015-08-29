@@ -17,14 +17,14 @@ open Asttypes
 open Typedtree
 open Lambda
 open Types
-val stack : Typeopt.IntS.t Stack.t
+
 val make_map :
-  Env.t -> type_expr -> type_expr list -> type_expr -> (int * Lambda.type_kind) list
+  Env.t -> type_expr -> type_expr -> (int * Lambda.type_kind) list
 
 val transl_exp: expression -> lambda
 val transl_apply: lambda -> (label * expression option * optional) list
                   -> Location.t -> lambda
-val transl_let: Env.t -> rec_flag -> value_binding list -> lambda -> lambda
+val transl_let: rec_flag -> value_binding list -> lambda -> lambda
 val transl_primitive: Location.t -> Primitive.description -> lambda
 
 val check_recursive_lambda: Ident.t list -> lambda -> bool

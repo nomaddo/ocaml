@@ -126,6 +126,10 @@ let mk_intf_suffix_2 f =
   "-intf_suffix", Arg.String f, "<string>  (deprecated) same as -intf-suffix"
 ;;
 
+let mk_keep_docs f =
+  "-keep-docs", Arg.Unit f, " Keep documentation strings in .cmi files"
+;;
+
 let mk_keep_locs f =
   "-keep-locs", Arg.Unit f, " Keep locations in .cmi files"
 ;;
@@ -158,6 +162,10 @@ let mk_no_alias_deps f =
 
 let mk_no_app_funct f =
   "-no-app-funct", Arg.Unit f, " Deactivate applicative functors"
+;;
+
+let mk_no_check_prims f =
+  "-no-check-prims", Arg.Unit f, " Do not check runtime for primitives"
 ;;
 
 let mk_no_float_const_prop f =
@@ -452,6 +460,9 @@ let mk_dstartup f =
   "-dstartup", Arg.Unit f, " (undocumented)"
 ;;
 
+(* let mk_daddvar f = *)
+(*   "-daddvar", Arg.Unit f, " (undocumented)" *)
+
 let mk_opaque f =
   "-opaque", Arg.Unit f,
   " Does not generate cross-module optimization information\n\
@@ -503,6 +514,8 @@ module type Common_options = sig
   val _drawlambda : unit -> unit
   val _dlambda : unit -> unit
 
+  (* val _daddvar : unit -> unit *)
+
   val anonymous : string -> unit
 end;;
 
@@ -521,6 +534,7 @@ module type Compiler_options = sig
   val _impl : string -> unit
   val _intf : string -> unit
   val _intf_suffix : string -> unit
+  val _keep_docs : unit -> unit
   val _keep_locs : unit -> unit
   val _linkall : unit -> unit
   val _noautolink : unit -> unit
@@ -547,6 +561,7 @@ module type Bytecomp_options = sig
   include Compiler_options
   val _compat_32 : unit -> unit
   val _custom : unit -> unit
+  val _no_check_prims : unit -> unit
   val _dllib : string -> unit
   val _dllpath : string -> unit
   val _make_runtime : unit -> unit
@@ -648,6 +663,7 @@ struct
     mk_compat_32 F._compat_32;
     mk_config F._config;
     mk_custom F._custom;
+    mk_custom F._no_check_prims;
     mk_dllib F._dllib;
     mk_dllpath F._dllpath;
     mk_dtypes F._annot;
@@ -659,6 +675,7 @@ struct
     mk_intf F._intf;
     mk_intf_suffix F._intf_suffix;
     mk_intf_suffix_2 F._intf_suffix;
+    mk_keep_docs F._keep_docs;
     mk_keep_locs F._keep_locs;
     mk_labels F._labels;
     mk_linkall F._linkall;
@@ -667,6 +684,7 @@ struct
     mk_modern F._labels;
     mk_no_alias_deps F._no_alias_deps;
     mk_no_app_funct F._no_app_funct;
+    mk_no_check_prims F._no_check_prims;
     mk_noassert F._noassert;
     mk_noautolink_byt F._noautolink;
     mk_nolabels F._nolabels;
@@ -709,6 +727,8 @@ struct
     mk_drawlambda F._drawlambda;
     mk_dlambda F._dlambda;
     mk_dinstr F._dinstr;
+
+    (* mk_daddvar F._daddvar; *)
   ]
 end;;
 
@@ -751,6 +771,7 @@ struct
     mk_drawlambda F._drawlambda;
     mk_dlambda F._dlambda;
     mk_dinstr F._dinstr;
+    (* mk_daddvar F._daddvar; *)
   ]
 end;;
 
@@ -776,6 +797,7 @@ struct
     mk_inline F._inline;
     mk_intf F._intf;
     mk_intf_suffix F._intf_suffix;
+    mk_keep_docs F._keep_docs;
     mk_keep_locs F._keep_locs;
     mk_labels F._labels;
     mk_linkall F._linkall;
@@ -822,6 +844,9 @@ struct
     mk_dparsetree F._dparsetree;
     mk_dtypedtree F._dtypedtree;
     mk_drawlambda F._drawlambda;
+
+    (* mk_daddvar F._daddvar; *)
+
     mk_dlambda F._dlambda;
     mk_dclambda F._dclambda;
     mk_dcmm F._dcmm;
@@ -881,6 +906,7 @@ module Make_opttop_options (F : Opttop_options) = struct
     mk_dparsetree F._dparsetree;
     mk_dtypedtree F._dtypedtree;
     mk_drawlambda F._drawlambda;
+    (* mk_daddvar F._daddvar; *)
     mk_dclambda F._dclambda;
     mk_dcmm F._dcmm;
     mk_dsel F._dsel;
