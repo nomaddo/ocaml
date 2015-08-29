@@ -233,8 +233,8 @@ typing/includemod.cmx : typing/types.cmx typing/typedtree.cmx utils/tbl.cmx \
     parsing/location.cmx typing/inner_map.cmx typing/includecore.cmx \
     typing/includeclass.cmx typing/ident.cmx typing/env.cmx typing/ctype.cmx \
     typing/cmt_format.cmx utils/clflags.cmx typing/includemod.cmi
-typing/inner_map.cmo : typing/subst.cmi typing/btype.cmi
-typing/inner_map.cmx : typing/subst.cmx typing/btype.cmx
+typing/inner_map.cmo : typing/btype.cmi
+typing/inner_map.cmx : typing/btype.cmx
 typing/mtype.cmo : typing/types.cmi typing/subst.cmi typing/path.cmi \
     utils/misc.cmi parsing/location.cmi typing/ident.cmi typing/env.cmi \
     typing/ctype.cmi utils/clflags.cmi typing/btype.cmi parsing/asttypes.cmi \
@@ -290,11 +290,13 @@ typing/stypes.cmo : typing/typedtree.cmi typing/printtyp.cmi \
 typing/stypes.cmx : typing/typedtree.cmx typing/printtyp.cmx \
     parsing/location.cmx utils/clflags.cmx typing/annot.cmi typing/stypes.cmi
 typing/subst.cmo : typing/types.cmi utils/tbl.cmi typing/path.cmi \
-    utils/misc.cmi parsing/location.cmi typing/ident.cmi utils/clflags.cmi \
-    typing/btype.cmi parsing/ast_mapper.cmi typing/subst.cmi
+    utils/misc.cmi parsing/location.cmi typing/inner_map.cmo typing/ident.cmi \
+    utils/clflags.cmi typing/btype.cmi parsing/ast_mapper.cmi \
+    typing/subst.cmi
 typing/subst.cmx : typing/types.cmx utils/tbl.cmx typing/path.cmx \
-    utils/misc.cmx parsing/location.cmx typing/ident.cmx utils/clflags.cmx \
-    typing/btype.cmx parsing/ast_mapper.cmx typing/subst.cmi
+    utils/misc.cmx parsing/location.cmx typing/inner_map.cmx typing/ident.cmx \
+    utils/clflags.cmx typing/btype.cmx parsing/ast_mapper.cmx \
+    typing/subst.cmi
 typing/typeclass.cmo : utils/warnings.cmi typing/typetexp.cmi \
     typing/types.cmi typing/typedtree.cmi typing/typedecl.cmi \
     typing/typecore.cmi parsing/syntaxerr.cmi typing/subst.cmi \
