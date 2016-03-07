@@ -678,15 +678,13 @@ let rec is_pure = function
 (* Generate a direct application *)
 
 let recreate_kind_map (kind_map: Lambda.kind_map) =
-  let rec goto_min id =
+  let map id =
     let lower = try Some (Hashtbl.find Inner_map.inter_tbl id) with Not_found -> None in
     match lower with
     | None -> id
-    | Some id' ->
-        assert (id > id');
-        goto_min id' in
+    | Some id' -> id' in
   List.map (fun (id, kind) ->
-      let min = goto_min id in
+      let min = map id in
       (min, kind)) kind_map
 
 let direct_apply fundesc funct ufunct uargs =
@@ -696,8 +694,8 @@ let direct_apply fundesc funct ufunct uargs =
     match ufunct, fundesc.fun_inline with
     | _, None ->
         Udirect_apply(fundesc.fun_label, app_args, Debuginfo.none)
-    | Uspecialized (ulam, kind_map), Some(params, body) ->
-        let map = try recreate_kind_map kind_map with _ -> [] in
+    | Uspecialized (ulam, map), Some(params, body) ->
+        (* let map = try recreate_kind_map kind_map with _ -> [] in *)
         bind_params fundesc.fun_float_const_prop params app_args body
         |> Clambda.subst_array_kind map
     | _, Some(params, body) ->
@@ -934,6 +932,29 @@ let rec close fenv cenv = function
       let (uobj, _) = close fenv cenv obj in
       (Usend(kind, umet, uobj, close_list fenv cenv args, Debuginfo.none),
        Value_unknown)
+  (* special case for type specialization *)
+  | Llet(str, id, Lspecialized (lam, map), body) ->
+      let rec subst_approx map = function
+        | Value_closure (desc, approx) ->
+            Value_closure
+              ({desc with fun_inline = match desc.fun_inline with
+                             | None -> None
+                             | Some (ids, u) -> Some (ids, Clambda.subst_array_kind map u)},
+               subst_approx map approx)
+        | _ as self -> self in
+      let (ulam, alam) = close_named fenv cenv id lam in
+      let alam = subst_approx (recreate_kind_map map) alam in
+      begin match (str, alam) with
+        (Variable, _) ->
+          let (ubody, abody) = close fenv cenv body in
+          (Ulet(id, ulam, ubody), abody)
+      | (_, Value_const _)
+        when str = Alias || is_pure lam ->
+          close (Tbl.add id alam fenv) cenv body
+      | (_, _) ->
+          let (ubody, abody) = close (Tbl.add id alam fenv) cenv body in
+          (Ulet(id, ulam, ubody), abody)
+      end
   | Llet(str, id, lam, body) ->
       let (ulam, alam) = close_named fenv cenv id lam in
       begin match (str, alam) with
@@ -1359,6 +1380,7 @@ let intro size lam =
   let id = Compilenv.make_symbol None in
   global_approx := Array.init size (fun i -> Value_global_field (id, i));
   Compilenv.set_global_approx(Value_tuple !global_approx);
+  (if !Clflags.dump_clambda then Format.printf "%a\n" Inner_map.tvar_map Inner_map.inter_tbl);
   let (ulam, approx) = close Tbl.empty Tbl.empty lam in
   if !Clflags.opaque
   then Compilenv.set_global_approx(Value_unknown)

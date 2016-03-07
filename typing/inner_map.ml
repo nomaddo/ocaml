@@ -3,9 +3,9 @@ type map_tbl = (string, tvar_map) Hashtbl.t
 
 let inter_tbl : tvar_map = Hashtbl.create 10
 
-type phase = Typing | Transl | MakingCmi
+type phase = Typing | MakingCmi
 let string_of_phase = function
-  Typing -> "Typing" | Transl -> "Transl" | MakingCmi -> "MakingCmi"
+  Typing -> "Typing" | MakingCmi -> "MakingCmi"
 
 let switch = ref Typing
 
@@ -19,25 +19,20 @@ let print_map_tbl fmt (t: map_tbl) =
   Hashtbl.iter (fun k v -> Format.fprintf fmt "%s: %a@."
                    k tvar_map v) t
 
-let cmi_tbl: (int, type_kind) Hashtbl.t = Hashtbl.create 10
+let cmi_tbl = Hashtbl.create 10
 
 (* for cutting each phases *)
 let begin_cmi_export () =
   switch := MakingCmi
 
-let add old new_ =
-  (* begin if !Clflags.dump_addvar then *)
-  (*   Format.printf "%s: %d %d@." *)
-  (*     (string_of_phase !switch) old new_ end; *)
-  match !switch with
-  | Typing ->
-      Hashtbl.add inter_tbl new_ old
-  | Transl -> ()
-  | MakingCmi ->
-      Hashtbl.add cmi_tbl old (Kvar new_)
-
 let add_to_cmi id kind =
   Hashtbl.add cmi_tbl id kind
+
+let add old new_ =
+  match !switch with
+  | Typing ->
+      if not (old > 0) then Hashtbl.add inter_tbl new_ old
+  | MakingCmi -> add_to_cmi old (Kvar new_)
 
 let reset () =
   Hashtbl.reset inter_tbl;

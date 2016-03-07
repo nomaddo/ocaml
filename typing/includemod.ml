@@ -161,9 +161,9 @@ let value_descriptions env cxt subst id vd1 vd2 =
     let ty = Subst.type_expr ~save_id:true subst vd2.val_type in
     let map = unify env vd1.val_type ty in
     List.iter (function
-          (id1, (Inner_map.Kvar id2 as kind)) ->
-            if not (id1 = id2) then Inner_map.add_to_cmi id1 kind
-        | (id, kind) -> Inner_map.add_to_cmi id kind) map
+      | (id1, Inner_map.Kvar id2) ->
+          if not (id1 = id2) then Inner_map.add_to_cmi id1 (Inner_map.Kvar id2)
+      | (id, kind) -> assert false) map
   end;
   let vd2 = Subst.value_description subst vd2 in
   try
